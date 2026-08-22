@@ -1,0 +1,329 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2142239943_constraints_become_connection_affine_space": {
+      "boundary_or_failure": "Boundary and representation dependency: the reduction uses the specified noncommutative-torus generators, their canonical derivations, a chosen projective module, and existence of one connection. The physical compactification variables are one realization of this algebraic connection problem, while the cited classification and existence results are outside the artifact.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_c373fbdcbd805bfe72a8825c5734c71c664ac03b77d5e6f346ca8be5da071b04",
+        "agnostic_oa_critic_7fd97d49334c0156ed1e226f7a57be93791490a91e46f87030d3b272873806b5"
+      ],
+      "interpretation": "Inference: the covariance equations become tractable after separating a discrete carrier choice from affine freedom. Selecting the module fixes what may carry the symmetry, its endomorphism algebra fixes allowable homogeneous variations, and one connection supplies the origin from which every remaining configuration is measured.",
+      "nonparaphrase_operation": "Recognize a covariance commutator as a Leibniz rule, then factor classification into three layers: choose the module, compute its endomorphism algebra, and construct one compatible connection. Obtain all further solutions by adding endomorphism-valued components, keeping carrier selection distinct from continuous variation.",
+      "quality_reason": "The candidate accurately distinguishes the discrete carrier-module choice from the affine freedom obtained by adding arbitrary endomorphism-valued components to one compatible connection, including the stated parity for fermionic terms.",
+      "source_support": "Source fact: for the noncommutative torus the artifact rewrites the compactification relation as the defining equation of a connection, prescribes fixing a projective module, its endomorphism algebra, and one connection, and then expresses all bosonic and fermionic components through that base connection plus arbitrary elements of the endomorphism algebra with stated parity.",
+      "uncertainty": "The parameterization is explicit conditional on the module and base connection, but this excerpt does not establish which modules admit them or resolve equivalence among the resulting configurations.",
+      "unit_id": "agnostic_oa_w2142239943_constraints_become_connection_affine_space"
+    },
+    "agnostic_oa_w2142239943_dimension_charge_and_index": {
+      "boundary_or_failure": "Boundary and representation dependency: the dimension formulas, ordered K-theory cone, normalized trace, and curvature-index statement belong to the two-dimensional noncommutative torus setting. Their equivalence and index-theoretic justification are invoked rather than proved in the artifact.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_57fa6df413ee136dcd7dbe1bc04fc743250625c37ddba96ccaaa9a76ce4603d0",
+        "agnostic_oa_critic_26f5fdbdf1f2e6b049b8dd763550d4d239d78b94cbf22a9f95ebaf7bd06af841"
+      ],
+      "interpretation": "Inference: deformation need not make every invariant vary in the same way. Module size may cease to be integral because it is measured by trace or asymptotic generator density, while integrated curvature stays quantized because it factors through an index; continuous size and discrete charge therefore encode different structural questions.",
+      "nonparaphrase_operation": "When two quantities appear to conflict, compare how each is constructed and where it lands: compute size through a normalized additive trace or asymptotic growth, locate actual objects inside the positive cone of virtual classes, and test whether the other quantity factors through an integer-valued index before inferring any loss of discreteness.",
+      "quality_reason": "The candidate accurately separates a possibly nonintegral size invariant defined by trace or asymptotic generator growth from quantized integrated curvature, whose discreteness is attributed in the source to a Fredholm index.",
+      "source_support": "Source fact: the text defines module dimension both as the trace of a representing projection and as an asymptotic generator ratio, describes projective modules through an ordered rank-two K-group whose positive cone selects actual modules, and states that integrated curvature is connection-independent and quantized because it computes a Fredholm index.",
+      "uncertainty": "The artifact asserts the agreement of the two dimension constructions and the curvature-index mechanism but supplies no local proof, so only the stated distinction between size and quantized charge is supported here.",
+      "unit_id": "agnostic_oa_w2142239943_dimension_charge_and_index"
+    },
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": {
+      "boundary_or_failure": "The geometric setup depends on the smooth star-algebra completion, invariant trace, projective module, Hermitian metric, and compatible connection, while the conditions under which the endomorphism algebra is itself a noncommutative torus are not specified in this span. Strong Morita equivalence is not literal algebra isomorphism, and the source states that the endomorphism algebra has a trace rather than constructing that trace by transport through the module.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_e7013cfb6f632a70b02d65b9c237aef5e3911954d57aa1682afe1875a2ca9b6e",
+        "agnostic_oa_critic_15c1a533ca665e20475df918fc660e3204a3b3ebea8effd438b759a86454dd57",
+        "agnostic_oa_revision_92f46aa0b85548728dfad0a0aec7de850646c4f1ee21acb0719156b27bf65449"
+      ],
+      "interpretation": "Inference: the endomorphism algebra supplies a Morita-equivalent presentation of the module's geometry, with the connection inducing an action on endomorphisms under which its stated trace is invariant. This preserves the structural comparison expressed by strong Morita equivalence while allowing the concrete presentation to change from a torus to a matrix algebra over one, so equivalence should be assessed at the Morita/module level rather than by identifying the algebras literally.",
+      "nonparaphrase_operation": "Given a projective module with compatible connection, pass to its endomorphism algebra, use commutators with the connection as the induced action, check closure and the trace-zero condition for those commutators, and then separate Morita-level structure from presentation-specific features such as matrix factors.",
+      "quality_reason": "Accepted after bounded revision because the interpretation performs a concrete change-of-presentation and preservation audit, retains the source's hypotheses and unspecified-condition boundary, and removes the unsupported claim that the trace is transported through the module.",
+      "source_support": "Source fact: the smooth noncommutative torus is equipped with an involution, invariant trace, projective modules with Hermitian metrics, and compatible connections. The span states that the endomorphism algebra can under certain conditions be a dual noncommutative torus, can in more complicated situations be a matrix algebra over one, always has a trace, is strongly Morita equivalent to the original algebra, and satisfies [∇a,e] in the endomorphism algebra with Tr[∇a,e]=0.",
+      "uncertainty": "The exact hypotheses for the torus rather than matrix-algebra form, the proof of strong Morita equivalence, and the construction of the endomorphism-algebra trace are outside the assigned span; no stronger transport claim is inferred.",
+      "unit_id": "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence"
+    },
+    "agnostic_oa_w2142239943_general_solution_via_commutant": {
+      "boundary_or_failure": "Boundary and representation dependency: the dual-algebra description is established here for a particular continuous-discrete module with coprime integer data, chosen generators, and phase conventions; the source states locally, rather than proves, that those generators exhaust the common commutant.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f969f0ddb92491eec80d9c084950994df894178a4f5ffae53c5edebae860148b",
+        "agnostic_oa_critic_f9057c95ee56e994e76be53463370c7a425bb1e95c9547494b0148f04e0ab9aa"
+      ],
+      "interpretation": "Inference: once the covariance operators are fixed, the constrained solution problem splits into a chosen base solution and residual freedom invisible to those operators. In the displayed module that residual algebra is itself a noncommutative torus, so the same degrees of freedom can be viewed as fields on a dual algebra rather than merely as corrections to the base solution.",
+      "nonparaphrase_operation": "For an inhomogeneous operator constraint, first construct one basepoint, then subtract it from an arbitrary solution, derive the homogeneous commuting conditions, compute the common commutant, and parameterize the full solution set as an affine translate of that algebra; only then identify any geometric meaning of the commutant.",
+      "quality_reason": "The candidate accurately separates a particular solution from homogeneous freedom in the common commutant and correctly reports that, for the displayed module, the commutant is generated by two operators satisfying a noncommutative-torus relation.",
+      "source_support": "Source fact: the text writes every constrained coordinate as a particular solution plus an element commuting with both fixed translation operators, makes the other coordinates and fermions arbitrary elements of the same commutant with the appropriate parity, and presents two generators whose relation identifies that commutant with another noncommutative torus.",
+      "uncertainty": "The structural affine-commutant conclusion is explicit, but exhaustiveness of the displayed commutant generators and the formula-sensitive realization are not independently established in the artifact.",
+      "unit_id": "agnostic_oa_w2142239943_general_solution_via_commutant"
+    },
+    "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities": {
+      "boundary_or_failure": "Boundary and representation dependency: the construction is for marked two-dimensional noncommutative tori and uses cyclic homology, both K-groups, a foliation with a chosen transversal, Morita equivalence, and flat metrics. The rational case requires adjoining a boundary point, and several canonicality claims are summarized rather than demonstrated.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_22a9dc1a9e540cb8d395d3e7cd572b0e0d97ea7ccdaa62992abd7c5df2562555",
+        "agnostic_oa_critic_0721d6a2074eac4494f79be454e8830e3da1193716881759830b0b0996f8140f"
+      ],
+      "interpretation": "Inference: a marking turns an invariant lattice from an untracked abstract group into transportable coordinates, allowing an equivalence module to induce a definite symmetry action. A separately marked odd invariant controls metric moduli; commutation of the two actions and preservation of the boundary relation then serve as compatibility tests between the algebraic and metric descriptions.",
+      "nonparaphrase_operation": "To define a controlled duality, first mark the relevant invariant lattice, use an equivalence object to transport that marking, derive the resulting parameter action, and independently construct any second symmetry from its own invariant data; then test commutation and preservation of incidence or boundary relations rather than identifying the actions by analogy.",
+      "quality_reason": "The candidate correctly explains that marking makes the K-theory coordinates trackable under monodromy and Morita equivalence, and it keeps the even- and odd-K-group modular actions distinct before reporting their commutation and boundary compatibility.",
+      "source_support": "Source fact: the artifact introduces a marking of the even K-group to track parameter monodromy, reconstructs geometric foliation data, defines a new commutant algebra from a module and transports the marking by Morita equivalence to obtain a modular action, then introduces an odd-K-group marking for flat metrics and states that the two modular actions commute and preserve the boundary relation between their parameter spaces.",
+      "uncertainty": "The stated reconstruction, canonical representatives, commuting actions, and boundary compatibility depend on results not proved in the excerpt; the interpretation therefore treats them as source claims, not independently verified facts.",
+      "unit_id": "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities"
+    },
+    "agnostic_oa_w2142239943_noncommutativity_as_deformed_product": {
+      "boundary_or_failure": "Boundary and representation dependency: the realization uses a chosen Fourier-symbol identification, basis phases, constant deformation parameter, and a particular two-torus module. Exact signs and normalizations in the displayed star-product formulas are convention- and OCR-sensitive, and the later gauge action is not needed for the structural representation change.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_7ef45218ff8559bb126e1f26deb200f8a751ae98a59ea323eeb50fb78f9524b1",
+        "agnostic_oa_critic_f6f0fc7ff62636993b18455da8bb97b5db71b7ddc6eb5d6b699d18539039c7b4"
+      ],
+      "interpretation": "Inference: noncommutativity can be relocated rather than removed. The elements may be represented as ordinary functions, while their multiplication becomes deformed; algebraic derivations, traces, and commutators then reappear as differentiation, integration, and a deformed bracket, preserving operational structure under a more familiar carrier representation.",
+      "nonparaphrase_operation": "Choose a symbol map from algebra elements to familiar functions, transfer multiplication through that map instead of retaining pointwise multiplication, derive the images of involution, trace, derivations, and commutators, and keep a convention ledger so that familiar-looking functions are not mistaken for a commutative algebra.",
+      "quality_reason": "The candidate accurately states that ordinary functions serve as symbols while multiplication is transferred to a star product, with trace, connection commutator, and algebra commutator represented by integration, differentiation, and a deformed bracket.",
+      "source_support": "Source fact: the text identifies elements of the dual noncommutative torus with ordinary functions through a Fourier basis, maps the algebra trace to integration and a connection commutator to ordinary differentiation, represents multiplication by a star product, and represents algebra commutators by the associated deformed bracket.",
+      "uncertainty": "The structural correspondences are explicit, but this generation does not rely on the artifact's formula-sensitive phase, sign, or normalization details and does not generalize the construction beyond the stated representation.",
+      "unit_id": "agnostic_oa_w2142239943_noncommutativity_as_deformed_product"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2142239943_constraints_become_connection_affine_space": "c95b71b683a494a4a2b25c471c67db91cf3ff2b4ab033ad5bec3e2d3b87b810b",
+    "agnostic_oa_w2142239943_dimension_charge_and_index": "62317d4e4fb56d9a2ba1947de5e2b4404a5b62e6dffcb757d6f05e76808aeec8",
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": "1d8c32bf3295951b0f8274345b4f1fbc0dc2557fba2142d35d11e9164ef9bac7",
+    "agnostic_oa_w2142239943_general_solution_via_commutant": "c85b9f5844cce783febfb03c3b2d5a4261efdbe0ad97dc44370c7c1af31485d7",
+    "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities": "f8d0eaf5be91d756a12653345461761600a1bbd5fd56d5a631cdf6eb5988e62a",
+    "agnostic_oa_w2142239943_noncommutativity_as_deformed_product": "4d2a8d65b65fe15c65c99a419d9fece35de8007753339fb19ac927d9b7835252"
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "model_visible_packet_sha256": "4607ba5f822ba67bf1f5aa8a88b76e4b9e9bfadc89a1c6cf8f2d738a59573a89",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2142239943_db2de8ae_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "stage": "audit",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_general_solution_via_commutant.txt",
+      "artifact_bytes": 4909,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_general_solution_via_commutant.txt",
+      "artifact_sha256": "f00f3b17e99d9406ae4d9d71e6b319707a943e9a6ff8052d12ade3b4c85bbe61",
+      "context_note": "For fixed noncommuting translation operators, the source first chooses one solution of the covariance equations and then identifies every other solution as that base solution plus operators in the common commutant. In the explicit two-dimensional module, the commutant is generated by another pair of noncommuting operators and is itself a noncommutative torus whose parameter is related by a fractional-linear transformation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_general_solution_via_commutant",
+            "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+            "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a disciplined duality pattern in which a module's commutant becomes a Morita-equivalent geometry and marked K-theory is transported to define modular actions. The assignment supplied the lens identifier; parent-corpus overlap and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 474,
+      "line_start": 394,
+      "representation_dependency": "The explicit realization uses a Schwartz-function module on a continuous-discrete product, coprime integer data, chosen generators, and formula-sensitive phase conventions. The assertion that the displayed generators exhaust the commutant is stated rather than proved locally, and the interpretation as a dual torus is specific to this module.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This is a reusable structural move: solve an inhomogeneous constraint once, compute the algebra of operators invisible to the fixed symmetry action, and recognize the residual degrees of freedom as an affine space modeled on that commutant.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Parameterize all solutions by the commutant of the constraints",
+      "unit_id": "agnostic_oa_w2142239943_general_solution_via_commutant",
+      "unit_type": "duality-by-commutant"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_constraints_become_connection_affine_space.txt",
+      "artifact_bytes": 2254,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_constraints_become_connection_affine_space.txt",
+      "artifact_sha256": "40556be9ea30540ba5bdeade2578095da1052745e0c6488930d16620ed6d1bb2",
+      "context_note": "For a noncommutative torus algebra, the compactification covariance relation is rewritten exactly as the Leibniz relation for a connection on a projective module. The source then organizes the classification problem into three steps: choose the module, compute its endomorphism algebra, and choose one connection; every general configuration is the base connection plus arbitrary endomorphism-valued terms.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_space_algebra_bundle_module",
+            "agnostic_oa_w2142239943_constraints_become_connection_affine_space",
+            "agnostic_oa_w2142239943_noncommutativity_as_deformed_product"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly preserves structural roles while moving among spaces, function algebras, projective modules, connection operators, and ordinary functions with deformed multiplication. This is source-grounded support for the assignment-routed lens, not a claim of novelty or independent correctness."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_space_algebra_bundle_module",
+            "agnostic_oa_w2142239943_constraints_become_connection_affine_space"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source does not clearly ground projectivization as a generic move: its `projective` objects are direct-summand modules, while `compactification` is principally a physics boundary condition. Those notions should not be conflated or forced into one lens without separate evidence; novelty and relation to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 671,
+      "line_start": 632,
+      "representation_dependency": "Depends on the chosen noncommutative-torus relations, derivations, projectivity of the module, and an identified base connection. The physical matrix coordinates are only one application of the algebraic connection equation, and existence/classification results are deferred to cited work.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This separates discrete structural choices from continuous freedom: first select the carrier module, then expose all remaining solutions as a translate of its endomorphism algebra, making equivalence and gauge questions more tractable.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Reframe covariance constraints as an affine space of connections",
+      "unit_id": "agnostic_oa_w2142239943_constraints_become_connection_affine_space",
+      "unit_type": "affine-parameterization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence.txt",
+      "artifact_bytes": 3110,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence.txt",
+      "artifact_sha256": "2e6d819575ee8883699598decf9044a601bb1e90b8553c6c76ebce072f64f261",
+      "context_note": "After selecting a smooth completion, involution, trace, and invariant derivations, projective modules receive Hermitian metrics and compatible connections. The endomorphism algebra of a module can be another noncommutative torus or a matrix algebra over one; the source states that it is strongly Morita equivalent to the original algebra, with a compatible trace and induced derivation action.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_general_solution_via_commutant",
+            "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+            "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a disciplined duality pattern in which a module's commutant becomes a Morita-equivalent geometry and marked K-theory is transported to define modular actions. The assignment supplied the lens identifier; parent-corpus overlap and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 719,
+      "line_start": 674,
+      "representation_dependency": "The geometry depends materially on the smooth completion, star structure, invariant trace, Hermitian metric, projective module, and compatibility conditions. Strong Morita equivalence preserves module-theoretic structure but is not literal algebra isomorphism, and higher-dimensional endomorphism algebras may have matrix factors.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It is a disciplined duality pattern: pass from an algebra to the endomorphisms of a suitable module, transport trace and derivations, and use Morita equivalence to state what structural information is preserved while retaining representation differences.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Treat an endomorphism algebra as an equivalent geometry without identifying it literally",
+      "unit_id": "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+      "unit_type": "invariant-preserving-equivalence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_dimension_charge_and_index.txt",
+      "artifact_bytes": 1604,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_dimension_charge_and_index.txt",
+      "artifact_sha256": "9dc25f4ab7085b5df4645c7855fcd15fff55149ce777a683f21bd2637957d6eb",
+      "context_note": "The dimension of a projective module is defined through the trace of a representing projection and alternatively through asymptotic generator growth. K-theory records virtual module classes with a positive cone selecting actual modules. Although dimension can be nonintegral, integrated curvature remains quantized because it computes a Fredholm index.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 794,
+      "line_start": 763,
+      "representation_dependency": "The numerical formulas and positive cone are specific to the two-dimensional noncommutative torus and its normalized trace. Equality of the two dimension descriptions and the curvature-index relation rely on established operator-algebraic and index-theoretic results not derived here.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This is a useful conceptual distinction: an invariant measuring size may vary continuously under deformation while a different invariant stays quantized because it factors through an index, so nonintegral dimension does not imply loss of discrete topology.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Separate continuous size from discrete topological charge",
+      "unit_id": "agnostic_oa_w2142239943_dimension_charge_and_index",
+      "unit_type": "invariant-comparison"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities.txt",
+      "artifact_bytes": 4866,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities.txt",
+      "artifact_sha256": "1a7afd3050cc8935b7ef23354a6c01a9a8ae69869a51b43d16016d3595880ea0",
+      "context_note": "The source marks the K-theory lattice, maps it into cyclic homology, and represents the algebra through a foliation and transversal. Passing to the commutant endomorphism algebra of a module gives a Morita-equivalent algebra and transports the marking, producing a modular action by fractional-linear transformations. A second modular action arises from the odd K-group and flat metrics; the two actions commute and preserve a boundary relation between their parameter spaces.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_general_solution_via_commutant",
+            "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+            "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a disciplined duality pattern in which a module's commutant becomes a Morita-equivalent geometry and marked K-theory is transported to define modular actions. The assignment supplied the lens identifier; parent-corpus overlap and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 880,
+      "line_start": 798,
+      "representation_dependency": "The construction is specific to marked two-dimensional noncommutative tori and uses cyclic homology, Chern character, foliations, transversals, Morita equivalence, and both K-groups. Several canonicality and reconstruction claims are summarized without local proof, and rational parameters require adding a boundary point.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It provides a generic recipe for controlled duality: mark the invariant lattice, transport it functorially across an equivalence object, derive the parameter action, and verify whether independently defined symmetry actions commute and preserve their incidence relation.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Define duality on marked invariants and check compatibility of symmetry actions",
+      "unit_id": "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities",
+      "unit_type": "symmetry-action"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_noncommutativity_as_deformed_product.txt",
+      "artifact_bytes": 3282,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_noncommutativity_as_deformed_product.txt",
+      "artifact_sha256": "f5881af71a646499bf61c8a564d648b7b8f8f0c4f9394b74e85a95378bee256a",
+      "context_note": "Elements of the dual noncommutative torus are represented by ordinary functions on a commutative torus, while algebra multiplication is transferred to a star product. Commutators become Moyal-type brackets, and an algebraic derivation becomes ordinary differentiation in this representation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_space_algebra_bundle_module",
+            "agnostic_oa_w2142239943_constraints_become_connection_affine_space",
+            "agnostic_oa_w2142239943_noncommutativity_as_deformed_product"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly preserves structural roles while moving among spaces, function algebras, projective modules, connection operators, and ordinary functions with deformed multiplication. This is source-grounded support for the assignment-routed lens, not a claim of novelty or independent correctness."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 959,
+      "line_start": 903,
+      "representation_dependency": "The identification uses a chosen Fourier basis, phase convention, constant deformation parameter, and the particular two-torus algebra. Exact exponential differential operators, signs, and normalization are OCR-sensitive; the subsequent gauge-theory action is not part of this generic unit.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It is a reusable representation change: keep the underlying function space familiar but deform composition, then translate algebraic commutators and derivations into bracket and differential operations while tracking which structures changed.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Move noncommutativity from objects into the multiplication law",
+      "unit_id": "agnostic_oa_w2142239943_noncommutativity_as_deformed_product",
+      "unit_type": "deformed-representation"
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2146626751",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2146626751_6f3a813a_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The source moves from a fluctuation density to dual classical boundary curves, then to Fourier-related quantum boundary states, and finally to a Jost phase whose zero count reproduces the input fluctuation under explicit analytic assumptions.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146626751_v2_u05",
+          "openalex_w2146626751_v2_u06",
+          "openalex_w2146626751_v2_u13",
+          "openalex_w2146626751_v2_u14",
+          "openalex_w2146626751_v2_u15"
+        ],
+        "proposed_limit": "This is an internally proposed reconstruction and its analyticity/decay premise is not established.",
+        "source_id": "openalex_w2146626751",
+        "synthesis_id": "riemann_v2_within_c04e27577430c2d9ede29a90",
+        "title": "Boundary geometry, boundary states, and spectral phase are three representations of one control variable"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the exchange-symmetry constraint needed for uniqueness at the semiclassical level.",
+          "line_end": 465,
+          "line_start": 311,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; area integrals, derivatives, and the monotonicity inequality require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes sharp cutoffs to dual boundary curves, derives their contribution to the state count, and inverts the density fluctuation into a boundary function subject to a monotonicity condition whose failure produces multivalued discontinuous solutions.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            9,
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Wiggly phase-space boundaries encode a prescribed spectral fluctuation",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u05.txt",
+          "unit_bytes": 8875,
+          "unit_id": "openalex_w2146626751_v2_u05",
+          "unit_sha256": "37dd3c2d5647ce8f76ad6a77d5377a753575dc15fae851cd3ed7ef55e8bd5f65",
+          "unit_type": "inverse-boundary construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Spectral fluctuations are encoded as boundary geometry rather than as a new bulk Hamiltonian. Differentiating compresses the area calculation to local boundary data, and symmetry makes the inverse reconstruction unique in the monotone regime.",
+            "nonparaphrase_operation": "The bridge runs from the desired density fluctuation to logarithmic boundary displacement, then from energy-parametrized intersections to a phase-space curve.",
+            "quality_reason": "The span derives the boundary contribution to N(E), imposes xp exchange symmetry, inverts n'_fl into boundary values, and states the monotonicity condition and its multivalued failure. No quantum or exact spectral claim is added. The density-to-geometry bridge is substantive because the output specifies the logarithmic displacement and inversion step.",
+            "source_support": "Positive curves xcl(p) and pcl(x) replace constant cutoffs. Integrating the allowed area gives N(E)=NBK(E)+nfl(E). Under the xp exchange symmetry, the derivative n'fl determines both boundary values; inversion to pcl(x) is single-valued when 1+pi E n''fl(E)>0.",
+            "speculation_status": "If the monotonicity condition fails, energy cannot be inverted globally and the boundary becomes multivalued with discontinuous branches. The entire construction remains semiclassical and assumes a unique initial intersection. The conceptual inverse map is source-supported, but its integrals, derivative factors, and monotonicity inequality are formula-critical and need scan checking. Calling this an inverse semiclassical reconstruction and noting that differentiation localizes the area calculation are supported conceptual readings. Integrals, derivatives, and the monotonicity inequality require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The boundary-state correspondence is a model ansatz justified operationally in the following transport unit.",
+          "line_end": 526,
+          "line_start": 471,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; operator ordering and normalization are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Quantizes xp on the positive half-line, fixes its continuum eigenbasis, and represents the two boundary curves by real states in an antisymmetric Hermitian interaction that pairs energies E and -E.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Classical boundaries become a rank-two interaction between boundary wavefunctions",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u06.txt",
+          "unit_bytes": 2650,
+          "unit_id": "openalex_w2146626751_v2_u06",
+          "unit_sha256": "47ee837cc41e5c96e7f802949cc94ef081adc94ff3b08ec784b1d6b98a820423",
+          "unit_type": "quantum representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation change replaces extended walls by two vectors and their overlaps. It isolates all boundary dependence in a rank-two interaction while preserving an exactly soluble free dilation basis.",
+            "nonparaphrase_operation": "Classical cutoff curves are mapped to boundary wavefunctions, and geometric transport is delegated to projection between those states.",
+            "quality_reason": "The symmetrically ordered dilation operator, continuum basis, rank-two antisymmetric interaction, real boundary states, and E to -E pairing are all stated. The output correctly identifies the boundary-state correspondence as an ansatz rather than a derived quantization. Compression language is generic but tied to the explicit rank-two operator.",
+            "source_support": "On x>0 the symmetrically ordered H0=(xp+px)/2 has continuum eigenfunctions proportional to x^(-1/2+iE). The proposed Hamiltonian is H=H0+i(|psia><psib|-|psib><psia|), with real psia and psib associated to the two classical boundary functions; the antisymmetry pairs energies E and -E.",
+            "speculation_status": "The boundary-state correspondence is a model ansatz in this span, not derived from quantization of the classical curves. Its operational justification and spectrum lie in following units. Operator ordering and normalization are extraction-sensitive; the stated representation change is clearer than its exact constants. Viewing the two extended walls as vectors carrying all boundary dependence is a faithful representation change. Operator ordering and normalization are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Assumes the fluctuation count is odd to pass between Fourier conventions.",
+          "line_end": 1321,
+          "line_start": 1231,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; operator and transform signs should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Promotes logarithmic boundary equations to operators, solves the position-side condition in the dilation eigenbasis, and obtains a boundary Mellin transform whose phase is the integrated spectral fluctuation.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A fluctuation density becomes a phase in the boundary state's Mellin amplitude",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u13.txt",
+          "unit_bytes": 4927,
+          "unit_id": "openalex_w2146626751_v2_u13",
+          "unit_sha256": "32053d4e0f8c891238456d61afdb08839feeadf15a9f983145663a616b8d8562",
+          "unit_type": "operator-defined boundary reconstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The density perturbation becomes a gauge-like spectral phase rather than an amplitude change. Integration in energy converts local density information into cumulative counting information.",
+            "nonparaphrase_operation": "Diagonalizing H0 and representing log x as differentiation bridges an operator constraint to a solvable phase equation for the boundary Mellin transform.",
+            "quality_reason": "The operator boundary equation, dilation-basis derivative identity, first-order ODE, pure Mellin phase, and oddness assumption all appear in the span. The output does not claim arbitrary fluctuations yield an admissible Jost function. The gauge metaphor is dispensable, but the output anchors it to an unchanged amplitude and explicit phase.",
+            "source_support": "The position-side boundary equation uses log x plus pi n'fl(H0). In the dilation eigenbasis, log x acts as a derivative of a delta distribution, reducing the operator equation to a first-order ODE. Its solution gives bb(E)=b0 lx^(iE) exp(-i pi nfl(E)), assuming nfl is odd for the stated Fourier convention.",
+            "speculation_status": "Oddness of nfl is assumed, and this span reconstructs only one of the dual boundary states. It does not establish that an arbitrary prescribed fluctuation yields an admissible analytic Jost function. Operator signs and Fourier conventions are extraction-sensitive and should be scan-checked. Describing integration of density into cumulative counting phase is mathematically faithful; 'gauge-like' is clearly marked as analogy. Operator and Fourier signs need checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction deliberately restricts to Neumann and Dirichlet extensions.",
+          "line_end": 1432,
+          "line_start": 1330,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; basis normalizations and derivative-distribution algebra need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the self-adjoint extensions of p-squared on the half-line to define log absolute p, derives even/odd overlap phases, solves the momentum-side boundary equation, and recovers Fourier duality with the position-side state.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Half-line momentum ambiguity splits the dual boundary into cosine and sine sectors",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u14.txt",
+          "unit_bytes": 5844,
+          "unit_id": "openalex_w2146626751_v2_u14",
+          "unit_sha256": "6f69f0b54a5ea053102fc7068210cbdcf1d63f027f7d34d3a8b7ee4534c5e55a",
+          "unit_type": "self-adjoint-extension and dual solution",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A domain ambiguity becomes a parity choice with observable spectral consequences. Self-adjointness supplies the legitimate representation in which the boundary duality can be imposed.",
+            "nonparaphrase_operation": "Extension theory bridges half-line momentum to cosine or sine spectral bases; their overlaps with dilation eigenstates supply the L-function gamma phases.",
+            "quality_reason": "The non-self-adjoint half-line momentum, p-squared extensions, selected Neumann/Dirichlet bases, definition of log absolute p, matrix elements, and dual solution are all source facts. The output correctly notes that only two extensions are selected and that global analyticity is not established. Extension-theory bridge language remains tied to explicit bases and overlaps.",
+            "source_support": "On x>0, p is not self-adjoint, while p squared has extensions indexed by a boundary condition at zero. The source restricts to Neumann and Dirichlet cases, giving cosine and sine bases, defines log absolute p through one half log p squared, computes its dilation-basis matrix elements, and solves the momentum-side boundary equation. The result is Fourier-dual to the position-side state with even or odd phase theta eta.",
+            "speculation_status": "Only two extensions from the larger family are considered. Recovering duality does not prove that the constructed boundary factor has the necessary global analyticity. Basis normalizations and derivative-distribution algebra are very formula-sensitive and require PDF verification. Treating the domain ambiguity as a parity choice with spectral consequences is justified. Normalizations and distributional derivatives are very formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The analyticity assumption is not proved and is revisited as a limitation at lines 1800-1804.",
+          "line_end": 1500,
+          "line_start": 1433,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how the two reconstructed boundary phases enter off-diagonal kernels and, under a stated upper-half-plane analyticity and decay assumption, produce a Jost determinant whose zeros follow the proposed smooth-plus-fluctuating count.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Analytic continuation of an interpolating count collapses the Jost function to a zero-counting phase",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u15.txt",
+          "unit_bytes": 3980,
+          "unit_id": "openalex_w2146626751_v2_u15",
+          "unit_sha256": "8f488b8279adc8f945eb7e85bac77b9781fee8348ca7bacfccb6b52729257bd5",
+          "unit_type": "conditional Jost-count derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analyticity acts as a selection rule that converts an integral, nonlocal boundary response into pointwise phase matching.",
+            "nonparaphrase_operation": "The Cauchy transform bridges a continuous interpolating count to the Jost determinant; the coupling condition then turns phase crossings into candidate levels.",
+            "quality_reason": "The off-diagonal phase, upper-half-plane analyticity and decay assumption, collapsed Cauchy terms, simplified F, and resulting conditional counting formula are explicit. No proof of the decisive analytic assumption is supplied or implied. The bridge wording is anchored to a specific Cauchy transform and coupling condition.",
+            "source_support": "The reconstructed boundary amplitudes have constant diagonal products and off-diagonal phase exp(2 pi i n plus/minus(E)), with n plus/minus=theta plus/minus/pi+nfl. Assuming this phase is analytic and decays in the upper half-plane makes one Cauchy term equal to the phase and the other vanish, reducing F to 1+a0 b0 exp(2 pi i n)+(a0 b0/2)^2 and hence a zero-counting condition after coupling is fixed.",
+            "speculation_status": "Upper-half-plane analyticity and decay of exp(2 pi i n) are assumed, not proved. Without them the simplified F and the resulting count do not follow. The conditional status is explicit; exact phases and constants remain formula-sensitive. Calling analyticity a selection rule for a pointwise phase condition is a faithful conceptual compression. Exact phases and constants require formula checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+        "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same interacting dilation model supports a continuum associated with open trajectories and isolated normalizable states associated with closed boundary transport, combining zeros-as-levels with missing-line language.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146626751_v2_u01",
+          "openalex_w2146626751_v2_u07",
+          "openalex_w2146626751_v2_u08",
+          "openalex_w2146626751_v2_u09"
+        ],
+        "proposed_limit": "The worked trap verifies the mechanism only for tuned model boundaries, not for zeta.",
+        "source_id": "openalex_w2146626751",
+        "synthesis_id": "riemann_v2_within_807f5f5755a114441cd9b599",
+        "title": "Embedded bound states reconcile two regularization-dependent spectral pictures"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Historical framing supplied by this paper; it reports motivations, not independent validation of the proposed Hamiltonians.",
+          "line_end": 117,
+          "line_start": 40,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; prose carries the comparisons.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects zeros-as-eigenvalues, primes-as-classical lengths or periods, broken time reversal, Connes's missing-lines interpretation, and the regularization dependence of the xp count while keeping the approaches distinct.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Trace formulas, GUE statistics, and sign mismatch constrain a Hilbert-Polya model in different ways",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u01.txt",
+          "unit_bytes": 5978,
+          "unit_id": "openalex_w2146626751_v2_u01",
+          "unit_sha256": "c238820b1c595f99b171cd2afc29ba1fd8f9739bd374eec64d50bfc6bd073145",
+          "unit_type": "spectral-viewpoint comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "These are complementary filters on a Hilbert-Polya model rather than cumulative proof steps: spectral statistics constrain symmetry, trace formulas constrain orbit data, and the sign constrains whether zeros are present levels or absences in a continuum.",
+            "nonparaphrase_operation": "The principal bridges are zeros to eigenvalues, primes to geodesic lengths or classical periods, and regularized phase-space volume to the smooth zero count. Changing the regularization changes the spectral interpretation while preserving the bare dilation Hamiltonian.",
+            "quality_reason": "The span itself compares the explicit and Selberg trace formulas, reports GUE motivation, gives the prime-period dictionary, records Connes's sign objection, and contrasts the two xp regularizations. No material adjacent result is imported; the output correctly labels the history and physics as heuristic. The filter and bridge vocabulary is generic, but it remains anchored to symmetry class, orbit data, sign, and regularization.",
+            "source_support": "The span relates the Riemann explicit formula to the Selberg trace formula, reports GUE local statistics for zeros, associates a prime p with a periodic-orbit period log p, records Connes's overall-sign objection, and contrasts two semiclassical regularizations of H=xp.",
+            "speculation_status": "No Hamiltonian satisfying all constraints is constructed here; the xp results are explicitly semiclassical, and the cited Connes trace formula is described as unproved. Historical motivation is not independent evidence for the paper's later model. The prose comparisons are clear, but their status is reported history and heuristic physics. Formula-level reuse outside this low-dependency span would still require the retained PDF. Treating these observations as distinct filters on a candidate Hilbert-Polya model is a faithful synthesis rather than a source theorem. The prose comparison is reliable, while any formula-level reuse beyond the span would need the retained PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact quantum spectrum validating this heuristic follows in Section IV.",
+          "line_end": 613,
+          "line_start": 527,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figure 3 is useful but dispensable because the transport maps are stated in prose and equations.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Interprets the interaction as projection-and-reinjection between dual boundaries: one direction creates periodic finite-area trajectories and bound states, while the inverse direction creates unbounded continuum trajectories, reconciling Berry-Keating and Connes pictures.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Boundary transport closes allowed trajectories and opens forbidden ones",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u07.txt",
+          "unit_bytes": 4968,
+          "unit_id": "openalex_w2146626751_v2_u07",
+          "unit_sha256": "12de3e38e5cdfafb00530f12633c582dfc200652436c90cb2b3c24f9dd3c86c4",
+          "unit_type": "transport mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Allowed versus forbidden behavior is not encoded by separate Hamiltonians but by which side of the same reversible transport is composed with free dilation. This reconciles bound-level and missing-line pictures at the mechanism level.",
+            "nonparaphrase_operation": "Projection-and-reinjection is the quantum bridge for the classical boundary jump; periodic finite-area trajectories correspond semiclassically to bound states, while open infinite-area trajectories correspond to scattering states.",
+            "quality_reason": "The span explicitly composes free dilation with energy-preserving boundary transport to close allowed trajectories and uses inverse transport to produce unbounded forbidden trajectories. The output does not assert exact quantum validation or identify Riemann energies in this unit. Projection-and-reinjection is concrete operator content, not a free-floating bridge label.",
+            "source_support": "Free xp evolution carries an allowed point to the pcl boundary; an energy-preserving transport sends it to the xcl boundary and subsequent free flow returns it, creating a periodic orbit. Quantum mechanically the rank-one maps project onto one boundary state and reinject into the other. The inverse transport applied in the forbidden region leads to x tending to infinity and an infinite-area continuum.",
+            "speculation_status": "The exact quantum validation is deferred. The trajectory argument is heuristic and does not itself identify Riemann energies. The transport maps and qualitative distinction are prose-supported; exact periods and boundary coordinates depend on extracted formulas. Reading the same reversible transport as the mechanism behind embedded discrete and continuum behavior follows the source's own reconciliation claim. Exact periods and boundary coordinates need formula checking; the qualitative maps are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the shuffle and reality identities because they establish the symmetry and phase properties of F.",
+          "line_end": 839,
+          "line_start": 619,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; matrices, Fourier transforms, and integral identities need the retained PDF for exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The logarithmic coordinate reduces the eigenproblem to integral equations; their determinant F(E) controls asymptotic amplitudes, with nonzero F giving scattering states and real zeros giving normalizable embedded bound states.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeros of a Jost determinant select bound states embedded in a continuum",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u08.txt",
+          "unit_bytes": 11531,
+          "unit_id": "openalex_w2146626751_v2_u08",
+          "unit_sha256": "2de22cdad49db465174495ade4b25125f90c2fea580c55a154b6a6914127e4a4",
+          "unit_type": "exact spectral solution",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A distributed normalizability question is reduced to a scalar determinant condition. F simultaneously records whether boundary transport cancels leakage and, through its phase, the scattering shift.",
+            "nonparaphrase_operation": "Fourier transforms in log position turn scale dynamics into translation, and the determinant of boundary overlaps bridges finite-rank linear algebra to the continuum spectrum.",
+            "quality_reason": "The log-coordinate integral equations, determinant F, shuffle and reality identities, scattering case, and conditional embedded-bound-state case are all in the span. No zeta identification is supplied, and normalizability remains conditional on boundary-state decay. Finite-rank linear algebra to continuum spectrum is a precise bridge here, not generic style.",
+            "source_support": "The logarithmic coordinate q=log x reduces the eigenvalue equation to a first-order integral equation. Ordered overlap integrals form two 2 by 2 systems whose determinant is F(E); shuffle and reality identities relate the two ends. For real E, F(E) nonzero gives scattering states with C0 and Cinfinity nonzero, whereas F(E)=0 allows both constants to vanish and, under decay conditions on the boundary states, yields a bound state embedded in the real continuum.",
+            "speculation_status": "Normalizability at a zero still requires suitable decay of psia and psib. This generic solution contains no zeta identification by itself. The mechanism is explicit, but the matrices, shuffle identities, and transform signs are very formula-dependent and require the PDF for exact use. Calling F a scalar leakage-cancellation test is consistent with the vanishing of both asymptotic constants. Matrices, Fourier signs, and ordered integrals are very formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an illustrative finite trap, not yet a zeta model.",
+          "line_end": 947,
+          "line_start": 844,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figure 5 is dispensable; exact coupling signs and wavefunctions are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes F explicitly for two localized boundary states, recovers semiclassical level spacing, and shows how periodic or antiperiodic tuning confines the wavefunction while detuning turns bound states into resonances.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            19,
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A two-delta boundary trap shows that embedded binding requires fine tuning",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u09.txt",
+          "unit_bytes": 5284,
+          "unit_id": "openalex_w2146626751_v2_u09",
+          "unit_sha256": "29b025d6bab998978c5f5ac1216b2dc6839fb285a0cf43850127fa9456a174a8",
+          "unit_type": "worked mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The example identifies destructive interference, not the mere presence of walls, as the confinement mechanism. Coupling signs select the phase accumulated around the transported loop.",
+            "nonparaphrase_operation": "A finite spatial interval is represented by two point boundary states; their rank-two interaction translates boundary conditions into zeros of F.",
+            "quality_reason": "The explicit two-delta Jost function, coupling condition, phase-shifted level sequences, confined wavefunction, and resonance on detuning are source facts. The output correctly refuses to treat this illustrative trap as a zeta model. Fine-tuning is not stock rhetoric here; it is the displayed condition a0 b0/2=plus or minus one.",
+            "source_support": "Two delta-localized boundary states at xb and xa give an explicit Jost function. It has real zeros only when a0 b0/2 is plus or minus one, producing periodic or antiperiodic level sequences that agree asymptotically with the semiclassical trap count; the bound wavefunction is supported between the two boundaries.",
+            "speculation_status": "This is an illustrative finite trap, not a zeta model. Away from the tuned couplings the embedded eigenvalues disappear into resonances. The fine-tuning claim and confinement picture are clear; exact signs, level offsets, and wavefunction pieces are formula-sensitive. Interpreting tuned cancellation as destructive interference is a reasonable reading of the exterior amplitude vanishing. Signs, offsets, and piecewise wavefunctions need PDF checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+        "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Fourier/Mellin dual boundary sectors reproduce gamma phases and motivate a zeta-like invariant sum, after which a smoothed Riemann-Siegel factor supplies candidate spectral data.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146626751_v2_u11",
+          "openalex_w2146626751_v2_u16",
+          "openalex_w2146626751_v2_u19",
+          "openalex_w2146626751_v2_u20"
+        ],
+        "proposed_limit": "Off-critical zeros are not excluded, and auxiliary-factor analyticity and real-axis nonvanishing remain unproved.",
+        "source_id": "openalex_w2146626751",
+        "synthesis_id": "riemann_v2_within_ea4d87c6133ccdfacc72ee5b",
+        "title": "Functional-equation duality guides the model but does not supply RH"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the quantum analogue of the earlier exchange symmetry.",
+          "line_end": 1099,
+          "line_start": 1012,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; transform constants and gamma ratios require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Sharp position and absolute-momentum cutoffs become cosine/sine Fourier pairs; Mellin transformation turns that boundary exchange into gamma-ratio phases equal to those of even and odd Dirichlet L-functions.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cosine and sine boundary dualities reproduce even and odd functional-equation phases",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u11.txt",
+          "unit_bytes": 5603,
+          "unit_id": "openalex_w2146626751_v2_u11",
+          "unit_sha256": "85281b052c39eef4edd4f027f91b3db4119a7efbae9c3042644a65655dc7d3d2",
+          "unit_type": "Fourier-Mellin duality",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parity resolves a quantization ambiguity and exposes arithmetic functional-equation data through a standard harmonic transform. The gamma phase is not inserted separately; it is generated by transforming the boundary pair.",
+            "nonparaphrase_operation": "The chain is sharp cutoff to boundary distribution, cosine or sine Fourier transform, then Mellin amplitude and L-function gamma phase.",
+            "quality_reason": "The delta position boundary, real cosine/sine momentum choices, Fourier duality, Mellin transforms, and even/odd gamma phases all occur in the span. The output correctly stops short of equality with an L-function or its zero set. The three-step bridge is concrete and does not reduce to generic representation prose.",
+            "source_support": "A delta state at x=lx represents the position boundary. Reality makes the absolute-momentum boundary a cosine or sine wave rather than a single plane wave. These are Fourier duals, and Mellin transformation yields ba plus/minus(E) proportional to exp(2 i theta plus/minus(E)) bb(-E), where the phases are the gamma-factor phases for even and odd L-functions.",
+            "speculation_status": "This establishes phase compatibility, not equality with an L-function or its zero set. The construction is tied to real boundary states and the chosen sharp Berry-Keating cutoffs. Transform constants and gamma ratios are highly extraction-sensitive and need PDF verification; the parity mechanism is clear. Saying parity resolves a quantization ambiguity and generates rather than inserts the gamma phase is a faithful reading. Transform constants and gamma ratios require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source notes that zeta zeros may instead come from the proportionality factor, especially absent simplicity.",
+          "line_end": 1566,
+          "line_start": 1506,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; phase and conjugation conventions are formula-critical.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Chooses the zeta sector, observes that the sum of boundary amplitudes transforms like zeta, and factors the Riemann-Siegel Z function into a proportionality factor times the cosine whose zeros are candidate bound states.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dual boundary amplitudes are matched to zeta through a functional-equation-invariant sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u16.txt",
+          "unit_bytes": 2866,
+          "unit_id": "openalex_w2146626751_v2_u16",
+          "unit_sha256": "991d7bc1fdbffe84bb6fd252d327b49e2bf616a26458986e9544c783d022bc2c",
+          "unit_type": "functional-equation factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The factorization cleanly separates the model's phase quantization from unexplained residual arithmetic information. It also prevents equivalence from being inferred from one-way zero inclusion.",
+            "nonparaphrase_operation": "The bridge is the shared functional-equation transformation of zeta and the sum of dual boundary amplitudes.",
+            "quality_reason": "The functional-equation transformation of the two amplitudes, invariant sum, proposed rho factor, Z factorization, and asymmetric zero implications all appear in the span. The output does not derive rho or assume its nonvanishing, and it retains the multiple-zero caveat. Factorization language is substantive because the output tracks zeros and poles of rho.",
+            "source_support": "For chosen zeta-sector parameters, two boundary amplitudes are interchanged by the zeta functional-equation phase and their sum is invariant. The source posits zeta(1/2-it)=rho(t)(a-hat(t)+b-hat(t)), obtaining Z(t)=2 rho(t) cos(pi n(t)). Thus zeros of the cosine are zeros of Z if rho has no poles, while zeros of Z can instead arise from rho or both factors.",
+            "speculation_status": "The proportionality factor is introduced rather than derived. Poles or zeros of rho, and possible multiple zeta zeros, obstruct identifying the two zero sets. Phase and conjugation conventions are formula-critical, but the source explicitly states the zero-set ambiguity. Separating model phase quantization from residual arithmetic information is a faithful logical reading. Phase and conjugation conventions are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The suggested non-Hermitian extension away from the critical line is exploratory.",
+          "line_end": 1799,
+          "line_start": 1701,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; contours, branch points, error-function kernels, and gamma factors require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses an integral smoothing kernel to obtain an exact decomposition zeta equals a functional-equation phase times f(t) plus f(-t), relates it to the approximate functional equation, and maps its two sums to position and momentum axes of xp.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Berry-Keating smoothing replaces the discontinuous Riemann-Siegel cutoff by an analytic spectral factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u19.txt",
+          "unit_bytes": 5244,
+          "unit_id": "openalex_w2146626751_v2_u19",
+          "unit_sha256": "1f582205ea6368f21b62ddcbe1fadcf7793b677d42919688fa1e0ebd4ac1958d",
+          "unit_type": "smoothing and exact decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing preserves the dual functional structure while removing discontinuities introduced by an integer cutoff. The reflected pair, rather than either truncated sum alone, is the stable object.",
+            "nonparaphrase_operation": "Contour smoothing bridges Riemann-Siegel arithmetic to analytic boundary amplitudes; the approximate functional equation then maps the dual sums to the two axes of dilation phase space.",
+            "quality_reason": "The contour-defined smoothing, exact reflected decomposition, smooth error-function approximation, approximate-functional-equation comparison, and xp mapping are in the span. The output correctly labels the off-critical non-Hermitian Hamiltonian exploratory and does not give the kernels a derived physical meaning. The smoothing bridge is concrete, not stylistic shorthand.",
+            "source_support": "An infinite sum with contour-defined beta_n(t) gives Z(t), leading to the exact decomposition zeta(1/2-it)=exp(2 i theta(t)) f(t)+f(-t). Error-function weights provide a smooth leading approximation. The span also places this beside the Hardy-Littlewood approximate functional equation and identifies its two sums with position and momentum ranges satisfying the xp hyperbola.",
+            "speculation_status": "The suggested non-Hermitian Hamiltonian away from Re(s)=1/2 is exploratory, and the exact contour kernels are not given a physical derivation here. Contours, branch points, gamma factors, and smoothing parameters are very formula-sensitive and need PDF verification. Treating the reflected pair as the stable functional-equation object is well supported. Contours, cuts, gamma factors, and smoothing parameters require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the source's own boundary on its RH claim: partial support, not proof.",
+          "line_end": 1833,
+          "line_start": 1800,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that the Jost reduction needs upper-half-plane analyticity and decay, that the fluctuation phase needs f(t) nonzero on the real axis, and that no classical interpretation of the interaction or primes has been found.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            36
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The construction still depends on unproved analyticity and nonvanishing of its auxiliary factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u20.txt",
+          "unit_bytes": 2432,
+          "unit_id": "openalex_w2146626751_v2_u20",
+          "unit_sha256": "eb73b8e29c84024e9a4c3974b316aae87a7705f06434afbe21e178339952117f",
+          "unit_type": "explicit obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The residual factor is not harmless normalization; its zeros determine whether the proposed spectral factorization has explanatory force. The absent classical interpretation also leaves the prime-orbit side unconnected.",
+            "nonparaphrase_operation": "A valid Jost realization would bridge zeta analyticity to quantum spectral constraints, while a classical limit could bridge the interaction back to primes. Both bridges remain incomplete.",
+            "quality_reason": "The source explicitly lists the unproved analyticity/decay and real-axis nonvanishing requirements, the conditional zeta factorization, absent classical interaction, and unresolved role of primes. The output adds no neighboring proof and correctly reports support rather than proof of RH. Bridge language here identifies two explicit missing links rather than inventing depth.",
+            "source_support": "The source states two unproved needs: exp(2 pi i n(t)) must be analytic and decay in the upper half-plane, and f(t) must not vanish on the real axis. Under nonvanishing, zeta factors as f(-t)F(t); without it, zeta zeros need not be Jost zeros. The interaction lacks an identified classical limit and no location of primes in the model is established.",
+            "speculation_status": "These are source-explicit limitations, so the construction supplies support rather than a proof of RH. The prose is direct and low-dependency; no missing mathematical step should be reconstructed from neighboring sections. Calling f a non-harmless residual factor and linking the missing classical limit to the unclosed prime side are faithful readings. The low-dependency prose is reliable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+        "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Phase-space area gives the leading count, Fourier-dual sharp boundaries give asymptotic resonances, and Riemann-Siegel boundary data improve individual zero placement and wavefunctions.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146626751_v2_u03",
+          "openalex_w2146626751_v2_u12",
+          "openalex_w2146626751_v2_u17",
+          "openalex_w2146626751_v2_u22"
+        ],
+        "proposed_limit": "Each upgrade remains model- and assumption-dependent; numerical agreement is not an RH certificate.",
+        "source_id": "openalex_w2146626751",
+        "synthesis_id": "riemann_v2_within_575381a79f76c0040f578383",
+        "title": "The paper progressively upgrades smooth spectral agreement without conflating it with exact proof"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a semiclassical heuristic rather than a spectral theorem.",
+          "line_end": 191,
+          "line_start": 165,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; equations (2.1)-(2.5) are readable but formula normalization should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The hyperbolic xp flow has no discrete count until position and momentum cutoffs create finite phase-space area, whose Weyl count matches the leading smooth zero-counting asymptotic.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Planck-cell cutoff turns unbounded dilation flow into the smooth Riemann zero count",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u03.txt",
+          "unit_bytes": 1726,
+          "unit_id": "openalex_w2146626751_v2_u03",
+          "unit_sha256": "5928d5c6a3a50f705ae6f7360110955ccf5f4580e19cbd3af0fc6e6bf6a7d0ac",
+          "unit_type": "semiclassical counting construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Discreteness is not attributed to the local dynamics but to restricting its otherwise infinite phase-space volume. The leading zero density is thereby represented geometrically as a Weyl count.",
+            "nonparaphrase_operation": "The bridge is phase-space area divided by a Planck cell: a continuous dilation flow becomes a finite counting problem after boundary data are added.",
+            "quality_reason": "The unbounded xp trajectories, phase-space cutoffs, Planck-cell area count, and asymptotic match to the smooth zero count all occur in the span. No individual-zero, exact-spectrum, or RH conclusion is imported. The bridge wording adds little by itself, but the area divided by a Planck cell is a concrete operation.",
+            "source_support": "For H=xp the trajectories are x(t)=x0 exp(t), p(t)=p0 exp(-t). Imposing |x|>lx and |p|>lp with lx lp=2 pi hbar makes the area below xp=E finite, and A/(2 pi hbar) gives the Berry-Keating count agreeing asymptotically with the smooth zero count.",
+            "speculation_status": "The agreement concerns only the leading smooth asymptotic and is explicitly semiclassical; it neither produces individual zeros nor proves a discrete quantum spectrum. The mechanism is readable, but constants and normalized formulas should be checked against the PDF before exact reuse. Saying the boundary creates the finite count and represents smooth density as a Weyl count is faithful to the calculation. Constants and signs remain extraction-sensitive even though the qualitative construction is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly calls these resonances/asymptotic bound states, not exact Riemann zeros.",
+          "line_end": 1225,
+          "line_start": 1100,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high for Hilbert transforms, pole expansions, and O(1/E) terms.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Splits the functional-equation phase into upper/lower-half-plane pieces, evaluates the Jost function, and shows that special coupling choices place asymptotic resonances at smooth even or odd L-function zero counts.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Berry-Keating boundary pair yields the smooth zero sequence only asymptotically",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u12.txt",
+          "unit_bytes": 7045,
+          "unit_id": "openalex_w2146626751_v2_u12",
+          "unit_sha256": "cc2a4c4760064f5cfb2a2c92cf996c231b2d2e525f17febe41d5c8ee06efb9e3",
+          "unit_type": "smooth-spectrum realization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic projection discards the wrong-half-plane poles and compresses the boundary response to a phase condition. The coupling sign chooses which phase lattice is sampled.",
+            "nonparaphrase_operation": "Hilbert-transform decomposition bridges functional-equation phase data to an asymptotic Jost determinant and hence to resonance locations.",
+            "quality_reason": "The phase split, Hilbert-transform evaluation, asymptotic Jost formula, coupling choices, and smooth even/odd level rules are stated. The output does not promote the resonances to exact Riemann zeros and preserves the O(1/E) remainder. The phase-lattice wording is interpretive but tied to the two explicit quantization conditions.",
+            "source_support": "For the sharp boundary pair, diagonal overlap kernels are constant and the phase exp(2 i theta) is decomposed into upper- and lower-half-plane pieces. Their Hilbert transforms yield F(E)=1+a0 b0 exp(2 i theta(E))+(a0 b0/2)^2+O(1/E). Tuning a0 b0/2 to plus or minus one gives two smooth quantization rules; the sine sector analogously treats odd L-functions.",
+            "speculation_status": "The source calls these asymptotic bound states or resonances, not exact Riemann zeros; O(1/E) terms remain. Pole expansions, Hilbert-transform signs, and error terms are very formula-sensitive and require the PDF. Analytic projection and coupling-sign selection accurately summarize the computation. Pole expansions and Hilbert-transform signs are very formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Accuracy depends on remainder terms and the truncation jumps noted by the source.",
+          "line_end": 1641,
+          "line_start": 1567,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; summation cutoff and phase branch matter.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the cosine and sine parts of the Riemann-Siegel main sum, packages them as a complex f(t), and takes its argument as the boundary fluctuation used by the model, while distinguishing smooth interpolation from the exact step count.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A truncated Dirichlet sum supplies an approximate fluctuation phase and smooth interpolating count",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u17.txt",
+          "unit_bytes": 3998,
+          "unit_id": "openalex_w2146626751_v2_u17",
+          "unit_sha256": "509172291d77c682ae20ff0bbcdfaf8d4e64e8a55a501f2c5ac8d4a52b296bb6",
+          "unit_type": "Riemann-Siegel phase reconstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite Dirichlet polynomial is used as a phase estimator, not merely a value approximation. Its argument carries the oscillatory correction that the boundary model lacks.",
+            "nonparaphrase_operation": "Riemann-Siegel decomposition bridges an arithmetic truncated sum to the phase of a quantum boundary amplitude.",
+            "quality_reason": "The Riemann-Siegel main sum, complex f, phase definition for n_fl, low-zero numerical comparison, moving cutoff, and difference from the exact step count are all stated. The output does not claim exactness or suppress remainder and branch dependence. The arithmetic-to-boundary bridge is concrete through the displayed truncated sum.",
+            "source_support": "Separating cosine and sine parts of the Riemann-Siegel main sum suggests f(t)=rho(t) exp(i pi nfl(t)) approximately equal to the sum over n up to floor(sqrt(t/(2 pi))) of n^(-1/2-it). The model then sets nfl=(1/pi) Im log f. The resulting NQM is reported to agree well with low zero counts but can jump when the cutoff changes.",
+            "speculation_status": "The relation is approximate and depends on omitted remainder terms, a moving integer cutoff, and a chosen branch of log. The interpolating count is not the exact step function. The truncation and phase branch are formula-sensitive; numerical agreement described by the source is illustrative rather than a proof. Calling f a phase estimator accurately distinguishes its use from a mere value approximation. Cutoff and log branch are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The plotted numerical examples illustrate the model and do not certify eigenstates beyond its assumptions.",
+          "line_end": 2062,
+          "line_start": 1967,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figures 9-10 are useful but dispensable; the hypergeometric formula and truncation require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes a closed-form smooth-zero wavefunction, states its decay condition, and contrasts it with numerically truncated exact-zero wavefunctions that retain common structure but show more erratic behavior.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            39,
+            40
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth and exact-zero boundary data produce analytically and numerically distinct localized waves",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u22.txt",
+          "unit_bytes": 4574,
+          "unit_id": "openalex_w2146626751_v2_u22",
+          "unit_sha256": "7e1c896aac75ebe9752ac2711e8751861d67ce49fef8da129730906469c277be",
+          "unit_type": "concrete wavefunction comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The comparison separates a tractable coarse spectral geometry from fine arithmetic fluctuations. Retaining the same reconstruction formula makes their differing wave shapes attributable to boundary phase data rather than a changed bulk operator.",
+            "nonparaphrase_operation": "Mellin-space boundary amplitudes are transformed into position-space localized waves, providing a concrete visualization of smooth versus fluctuating spectral input.",
+            "quality_reason": "The smooth boundary case is evaluated analytically with a decay condition; the exact-fluctuation case is only numerically truncated and is reported to share features while appearing more random. The output does not promote plots or truncations to certified exact eigenstates. Coarse versus fine spectral texture is interpretive but anchored to the two explicit boundary choices.",
+            "source_support": "For smooth-zero boundary amplitudes the localized-state integral is evaluated in hypergeometric form and decays when the smooth phase condition holds. For boundary amplitudes built from the exact fluctuation model, no analytic integral is given; truncation around each energy produces numerical plots with shared features and more irregular behavior.",
+            "speculation_status": "The numerical truncation and plots do not certify exact eigenstates beyond the model's earlier assumptions, and the exact case lacks a closed-form evaluation. The figures are illustrative; the hypergeometric expression, normalization, and truncation need PDF or numerical verification for reuse. Attributing the contrast to boundary phase data while holding the reconstruction formula fixed is a reasonable model-internal comparison. The hypergeometric expression, normalization, figures, and cutoff require independent checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+        "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+      }
+    }
+  ]
+}

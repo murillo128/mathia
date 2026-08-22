@@ -1,0 +1,367 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w3205780793_d6e5dd32_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w3205780793",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the roadmap separating positive-probability extraction, concentration, coefficient control, and dilated examples.",
+      "line_end": 212,
+      "line_start": 175,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact norm notation is formula-sensitive; the structural distinction is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines pNB and gNB as genuinely different placements of expectation and records Jensen's implication pNB⇒gNB, which governs the rest of the paper's logic.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Randomize inside or outside the squared approximation error",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u02.txt",
+      "unit_bytes": 2555,
+      "unit_id": "openalex_w3205780793_v2_u02",
+      "unit_sha256": "b1d42629d68ea9a4f520460ac5b1431b7c98569d55b168b28a1583c218629682",
+      "unit_type": "probabilistic criterion design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "Theorem 3. [BD05, Theorem 1.2] Let f : (0, ∞) → R be a good kernel. If RH holds then\n(1.7)                            f ∈ spanH {t 7→ P f (nt), n ≥ 1} .\nConversely, if (1.7) is satisfied for a good kernel f that is compactly supported and whose Mellin\ntransform has no zeros in the critical strip {1/2 < σ < 1}, then RH holds.\n   The extension of the sufficient criterion for kernels f that are not compactly supported is left\nopen in [BD05]. The compactness assumption prevents from using analytical kernels, which are\ncrucial for regularization and explicit calculations of the Müntz transform. One contribution of\nour paper is the extension of Theorem 3 to a class of non-compactly supported kernels.\n",
+          "sha256": "98a0440c6d2eedb6bdaaaae87718efa676ae3f27c7db984b8d523a720229c59e"
+        },
+        "after": {
+          "line_start": 213,
+          "line_end": 220,
+          "text": "\n                                      2. The pNB criterion\n2.1. Probabilistic framework and preliminaries.\n   The Hilbert space H = L2 (Ω, H) ≃ L2 (Ω × (0, ∞)) is endowed with the scalar product\n                                                            Z ∞\n                   hZ, Z ′ iH = EhZ(ω, ·), Z ′ (ω, ·)iH = E     Z(ω, t)Z ′ (ω, t)dt.\n                                                                 0\n                                                                                                 \b\n",
+          "sha256": "2774d9006621f33240831d9fdb250f0dade93eea5ae5c449cb660b2855409931"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 213,
+            "line_start": 32,
+            "mathematical_role": "Reviews deterministic Nyman-Beurling, Báez-Duarte, and general strong criteria; defines pNB and gNB and states the concentration and noncompact-support program."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 212,
+          "line_start": 175,
+          "title": "Randomize inside or outside the squared approximation error",
+          "unit_id": "openalex_w3205780793_v2_u02",
+          "unit_type": "probabilistic criterion design",
+          "why_material": "Defines pNB and gNB as genuinely different placements of expectation and records Jensen's implication pNB⇒gNB, which governs the rest of the paper's logic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the roadmap separating positive-probability extraction, concentration, coefficient control, and dilated examples.",
+          "representation_dependency": "Exact norm notation is formula-sensitive; the structural distinction is clear.",
+          "unit_id": "openalex_w3205780793_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 174,
+            "line_start": 98,
+            "title": "Mellin transforms turn fractional-part approximation into zero exclusion",
+            "unit_id": "openalex_w3205780793_v2_u01",
+            "unit_type": "equivalent-criteria bridge",
+            "why_material": "Shows how the fractional-part kernel has Mellin transform proportional to zeta, states NB and discrete Báez-Duarte closure criteria, and identifies compact support as the obstacle in the general strong criterion."
+          },
+          {
+            "line_end": 285,
+            "line_start": 214,
+            "title": "Control random Beurling functions by moments of their dilation",
+            "unit_id": "openalex_w3205780793_v2_u03",
+            "unit_type": "random-kernel integrability toolkit",
+            "why_material": "Computes the L2 norm of {X/t} as a constant times EX and bounds its large-t tail from a higher moment, providing the analytic conditions used by both probabilistic criteria."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "pNB implies RH when a uniform positive-probability event simultaneously keeps every dilation in the deterministic admissible range; the smallest dilation also controls a quantitative lower bound on how well the random family can approximate.",
+            "limit": "Expected approximation without the joint support event does not by itself produce an admissible deterministic witness.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_v2_u02",
+              "openalex_w3205780793_v2_u04",
+              "openalex_w3205780793_v2_u05"
+            ],
+            "title": "Positive probability converts random approximation into deterministic existence"
+          },
+          {
+            "claim": "Jensen makes pNB stronger than gNB, but pNB needs a positive-probability admissibility route whereas gNB needs analytic target and coefficient-tail controls to recover RH.",
+            "limit": "The paper does not claim the two criteria coincide for general correlated families; correlations are explicitly left unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_v2_u02",
+              "openalex_w3205780793_v2_u04",
+              "openalex_w3205780793_v2_u08",
+              "openalex_w3205780793_v2_u11"
+            ],
+            "title": "Expectation placement changes both strength and proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_v2_u02",
+          "spontaneous_reading": "The two probabilistic criteria differ by where expectation is taken: pNB averages the squared random approximation error, whereas gNB first averages each kernel and then measures deterministic error. Jensen gives only pNB implies gNB, so they support different extraction and tail arguments."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_v2_u02",
+          "source_grounded_mathematics": "For triangular arrays Z_{k,n}, pNB asks coefficients to make E of the L2 squared error tend to zero; gNB asks the L2 error of the expected fractional-part kernels to tend to zero. The inequality between square of expectation and expectation of square gives D-bar_n^2 at most D_n^2. The roadmap associates pNB with positive-probability extraction and concentration near 1/k, while gNB requires moment and coefficient-tail control for noncompact variables.",
+          "conceptual_reading": "Moving expectation across a nonlinear squared norm changes the information retained. pNB controls samplewise performance strongly enough to seek a deterministic realization; gNB controls only the averaged representation and needs separate anti-tail conditions.",
+          "representation_or_bridge": "Random Beurling functions and the placement of expectation relative to the Hilbert norm form the exact bridge between the two criteria.",
+          "boundary_or_failure": "The Jensen implication is one-way; gNB alone does not provide pNB or a good sample. Additional assumptions are essential in both later converses.",
+          "uncertainty": "The distinction and implication are explicit. Some norm typography is degraded, but it does not affect the logical separation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3205780793_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The definitions place expectation outside the squared H-error for pNB and inside each kernel before squaring for gNB, and Jensen gives the one-way implication pNB to gNB.",
+          "The roadmap separately assigns later positive-probability extraction, concentration, moment, and coefficient-tail hypotheses to the respective theorems."
+        ],
+        "inference": [
+          "Interpreting the placement of expectation as a change in retained information is sound."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says pNB 'controls samplewise performance strongly enough' to extract a deterministic realization, but expected squared error alone does not do so; the later theorem also needs Assumption (P).",
+          "Likewise gNB is not shown in this unit to intrinsically require anti-tail conditions; those are sufficient hypotheses of the later noncompact converse."
+        ],
+        "paraphrase_or_style_risk": [
+          "The information-retention template risks hiding the precise inequality and the fact that both conclusions depend on later auxiliary assumptions."
+        ],
+        "context_or_ocr_risk": [
+          "The two distance symbols are visually collapsed by extraction, but their formulas and Jensen direction remain distinguishable."
+        ],
+        "missed_mechanism": [
+          "pNB controls the measure of large-error outcomes via Markov only after choosing a small expected error; a separate uniformly positive admissible-support event is what makes intersection possible."
+        ],
+        "revision_instructions": [
+          "Replace claims of inherent samplewise extraction or required anti-tail conditions with conditional statements tied to the later assumptions; retain only the exact Jensen implication at this unit's evidence level."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument is an existence proof: positive expected performance alone is insufficient without the support event.",
+      "line_end": 347,
+      "line_start": 287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and inequalities are coherent; exact ε normalization should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Markov's inequality and a uniformly positive event on which every random dilation lies in (0,1] to select one outcome satisfying the classical Nyman-Beurling criterion.",
+      "source_id": "openalex_w3205780793",
+      "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Intersect good approximation with admissible support to recover a deterministic witness",
+      "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u04.txt",
+      "unit_bytes": 3505,
+      "unit_id": "openalex_w3205780793_v2_u04",
+      "unit_sha256": "d23ba41aab08f0d788a0d8a5f4670bdb6e34219ebcb2a1017602e65993959629",
+      "unit_type": "probabilistic-method extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w3205780793",
+        "title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+        "authors": [
+          "Erwan Hillion",
+          "Sébastien Darses"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "function-space",
+          "nyman-beurling"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "But, by the Cauchy-Schwarz and Markov’s inequalities,\n                               p                      uα √\n                  E[1uZ≥M Z] ≤ P(uZ ≥ M )kZk2 ≤ α EZ 2α kZk2 .\n                                                      M\n            √\n                        α        α\nNoting that EZ 2α = kZk2α ≤ kZk2 we obtained the desired result.                                          \u0003\n\n",
+          "sha256": "3c30645c220097f7c03c168c7cb1c2f887f21513f0680c8f21c3f9f83466b76c"
+        },
+        "after": {
+          "line_start": 348,
+          "line_end": 355,
+          "text": "2.2.1. A lower bound. Let (Zk,n ) be a family of r.v. in L2+ (Ω). Set\n                           mn     =      min Zk,n ,\n                                        1≤k≤n\n                           Mn     =      max Zk,n ,\n                                        1≤k≤n\n                                                                    n\n                                                                    X            \u001a          \u001b\n                                                                                     Zk,n\n",
+          "sha256": "cf77c1d6c3b34c24773ac1492dac303c0fae9f7cb453909c0f87e9078deeeb8d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2 pNB implies RH under a mild condition",
+            "line_end": 398,
+            "line_start": 287,
+            "mathematical_role": "Uses a uniform positive-probability support event and the probabilistic method to recover a deterministic NB approximant, then proves a lower bound from the smallest random dilation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 347,
+          "line_start": 287,
+          "title": "Intersect good approximation with admissible support to recover a deterministic witness",
+          "unit_id": "openalex_w3205780793_v2_u04",
+          "unit_type": "probabilistic-method extraction",
+          "why_material": "Uses Markov's inequality and a uniformly positive event on which every random dilation lies in (0,1] to select one outcome satisfying the classical Nyman-Beurling criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument is an existence proof: positive expected performance alone is insufficient without the support event.",
+          "representation_dependency": "Prose and inequalities are coherent; exact ε normalization should be checked.",
+          "unit_id": "openalex_w3205780793_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 214,
+            "title": "Control random Beurling functions by moments of their dilation",
+            "unit_id": "openalex_w3205780793_v2_u03",
+            "unit_type": "random-kernel integrability toolkit",
+            "why_material": "Computes the L2 norm of {X/t} as a constant times EX and bounds its large-t tail from a higher moment, providing the analytic conditions used by both probabilistic criteria."
+          },
+          {
+            "line_end": 397,
+            "line_start": 348,
+            "title": "The smallest random dilation limits approximation quality",
+            "unit_id": "openalex_w3205780793_v2_u05",
+            "unit_type": "obstruction lower bound",
+            "why_material": "Transfers a deterministic distance lower bound to the random family on its admissible-support event and shows pNB error cannot decay faster than a logarithmic quantity governed by E|log mn|."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "pNB implies RH when a uniform positive-probability event simultaneously keeps every dilation in the deterministic admissible range; the smallest dilation also controls a quantitative lower bound on how well the random family can approximate.",
+            "limit": "Expected approximation without the joint support event does not by itself produce an admissible deterministic witness.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_v2_u02",
+              "openalex_w3205780793_v2_u04",
+              "openalex_w3205780793_v2_u05"
+            ],
+            "title": "Positive probability converts random approximation into deterministic existence"
+          },
+          {
+            "claim": "Jensen makes pNB stronger than gNB, but pNB needs a positive-probability admissibility route whereas gNB needs analytic target and coefficient-tail controls to recover RH.",
+            "limit": "The paper does not claim the two criteria coincide for general correlated families; correlations are explicitly left unexplored.",
+            "parent_local_unit_ids": [
+              "openalex_w3205780793_v2_u02",
+              "openalex_w3205780793_v2_u04",
+              "openalex_w3205780793_v2_u08",
+              "openalex_w3205780793_v2_u11"
+            ],
+            "title": "Expectation placement changes both strength and proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3205780793_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w3205780793_v2_u04",
+          "spontaneous_reading": "Small expected random error is converted into one deterministic Nyman-Beurling witness by intersecting two positive-probability events: good approximation and simultaneous support in (0,1]. The uniformly positive support probability is the indispensable extraction condition."
+        },
+        "directed": {
+          "unit_id": "openalex_w3205780793_v2_u04",
+          "source_grounded_mathematics": "Assumption P requires a uniform lower bound nu on the probability that every Z_{k,n} lies in (0,1]. Given pNB, Markov's inequality makes the event of L2 error at most epsilon have probability greater than 1-nu for a suitable n. Since the support event has probability greater than nu, their intersection is nonempty, and evaluating the variables at one outcome supplies a deterministic NB approximation; hence RH.",
+          "conceptual_reading": "This is a probabilistic-method existence proof: expectation controls the size of a bad set, while support admissibility ensures a good sample also lies in the deterministic dictionary.",
+          "representation_or_bridge": "The events A_n and B_n bridge a random Hilbert-space approximation to deterministic parameters theta_k accepted by the classical criterion.",
+          "boundary_or_failure": "pNB without a uniformly positive admissible-support event is insufficient for this extraction. The proof establishes existence of a witness, not a constructive way to find the outcome.",
+          "uncertainty": "The event argument is explicit and formula-light. Exact epsilon scaling is readable but should be checked if reused quantitatively."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w3205780793_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "Assumption (P) gives a uniform positive probability that all random dilations are in (0,1], and Markov makes the small-error event have probability above 1-nu.",
+          "The strict sum of event probabilities forces nonempty intersection, whose one outcome supplies deterministic Nyman-Beurling parameters and hence RH."
+        ],
+        "inference": [
+          "Calling this a probabilistic-method existence proof is exact and source-grounded."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement that pNB without uniformly positive admissible support 'is insufficient' asserts necessity not proved by this theorem; the source establishes only that pNB plus (P) suffices and that this extraction proof uses (P).",
+          "Calling (P) 'indispensable' should be limited to this intersection mechanism, not all possible pNB-to-RH arguments."
+        ],
+        "paraphrase_or_style_risk": [
+          "The event-intersection description is concrete, but necessity language can make a sufficient technical condition sound like a conceptual law."
+        ],
+        "context_or_ocr_risk": [
+          "The event definitions and epsilon scaling are clear; no material boundary loss is present."
+        ],
+        "missed_mechanism": [
+          "The proof uses strict inequalities P(A)>1-nu and P(B)>nu so that P(A intersection B)>0; equality would not suffice for the displayed argument."
+        ],
+        "revision_instructions": [
+          "Change 'pNB without (P) is insufficient' to 'this theorem and extraction argument do not cover pNB without (P)' and qualify indispensability as proof-specific."
+        ]
+      }
+    }
+  ]
+}

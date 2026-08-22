@@ -1,0 +1,254 @@
+{
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w2146492295",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w2146492295_83a1c9cf_part_01.jsonl",
+  "item_count": 3,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_5e53234983b5124f3e4223b38a7a8c09a116d74eb9e536607781874bf45e4f3c",
+      "object_role": "interpretation",
+      "proposed_content": "Source-grounded mathematics: for an exact polynomial with the stated simple-root condition, a Sturm chain turns endpoint sign-variation differences into the number of real roots on [a,b]. The reported algorithm applies this to successive Jensen polynomials and uses Newton continuation only to approximate a complex root as a check. Conceptual interpretation: the computation is reframed from locating every root to deciding whether all roots are real. A root-count deficit supports the desired conclusion only when the interval contains every real root and the numerically evaluated Sturm signs are validated; floating-point sign computation is a separate obligation from the exact Sturm theorem. Uncertainty: interval and precision details continue in later units, and minor OCR substitutions affect polynomial notation.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c815f806b525ce12f67b6523f6b13e9af2e42fa5b5c5447cf4988b2bb12d57bf",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "content_sha256": "a44522af2098dcbb9ba664cce5ea23adf24ab67951faa5ad58e5f7a241f33578",
+          "artifact_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "artifact_bytes": 3921
+        }
+      ],
+      "audit_context_group": "source:openalex_w2146492295",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 5
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_2b8e34f114cecea2c49b8b41d6e6de16f07c6d1ae6fa713b8827e77cc1f757bb",
+      "object_role": "synthesis",
+      "proposed_content": "For this obstruction-search algorithm, the finite computations nearer zero combine two worsening features: the reported smallest Jensen degree with a nonreal witness rises from 16 at λ=-50 to 406 at λ=-5, while the displayed conjugate pair approaches the real axis. The method responds by replacing full root enumeration with a Sturm decision about whether all roots are real and by increasing working precision when sign sequences and counts become unstable, with interval enlargement addressing a separate possible cause of an apparent deficit. The table, algorithm choice, and diagnostics together explain the reported computational bottleneck without asserting a general complexity law.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_c815f806b525ce12f67b6523f6b13e9af2e42fa5b5c5447cf4988b2bb12d57bf",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "content_sha256": "a44522af2098dcbb9ba664cce5ea23adf24ab67951faa5ad58e5f7a241f33578",
+          "artifact_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "artifact_bytes": 3921
+        },
+        {
+          "source_object_id": "mathia_source_c80017ef39ab29ebf6cdb748feb35889608b482e688d5eebe9a9c561f754f400",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u03.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u03.txt",
+          "content_sha256": "fa41468ddbff901fa7cfe46d79bbb582e61ca844d0638af47008069d91723bdc",
+          "artifact_sha256": "25fa26b496e6d9c8c406bb5a2efb0d4308f216b1288316981a351a4590591dd0",
+          "artifact_bytes": 2504
+        },
+        {
+          "source_object_id": "mathia_source_a99499529c027070aa15a130e0a25fc50219aca2a063421a62556479d7444d96",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "content_sha256": "e4e97369972f8d48125437920f326731f1fb2d311cd1cabfbf78581768503757",
+          "artifact_sha256": "3b931136c54c0b84f30cc3a4ff2e61d27829fa5042bc8432065082544cde15dc",
+          "artifact_bytes": 2364
+        }
+      ],
+      "audit_context_group": "source:openalex_w2146492295",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 5
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_b22b3e2257acb2e80c45ef84130f68ab20568bc88c5acd2b7cd44cc7143d51ea",
+      "object_role": "synthesis",
+      "proposed_content": "The source's reported lower-bound computation is a dependency chain: the cited Jensen implication turns one nonreal Jensen zero into a bound on Λ; the moments and quadrature construct the polynomial coefficients while separately controlling the integral tail and kernel-series truncation and empirically checking mesh stability; Sturm counting replaces enumeration of every zero; and a real-root deficit is interpretable only after the interval is made large enough to contain all real roots and the finite-precision sign pattern is stabilized. No one parent supplies this complete relation among analytic reduction, coefficient construction, algebraic decision procedure, and numerical preconditions.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_4dff5b370e4e0108cdd322a48c1991184625d837f76b093b2e447cb472bd9321",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u01"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u01.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u01.txt",
+          "content_sha256": "e7829bc6cedbeb9baadbf6d1ae9ff808f3036e430afac4cf558b678a87a9894e",
+          "artifact_sha256": "76b5d81dbd6dec2cf1d3ba3e67c7bd8c298d606ee3a02c8d50ef3c0f4e74812d",
+          "artifact_bytes": 2990
+        },
+        {
+          "source_object_id": "mathia_source_c815f806b525ce12f67b6523f6b13e9af2e42fa5b5c5447cf4988b2bb12d57bf",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u02"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "content_sha256": "a44522af2098dcbb9ba664cce5ea23adf24ab67951faa5ad58e5f7a241f33578",
+          "artifact_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "artifact_bytes": 3921
+        },
+        {
+          "source_object_id": "mathia_source_40c104580b84cf1f95836fbbc615c55bebaa57f36856bfc5c683464544337972",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u04.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u04.txt",
+          "content_sha256": "50f538b8d20cc0ccd215170bbae8db2b1a18cb5c0e5b142ee6e893d4f9f37176",
+          "artifact_sha256": "198f3d13eb78113629c1e50d7f80cd4cc9c37fe63cb6fd5639b499e0a92490f2",
+          "artifact_bytes": 3801
+        },
+        {
+          "source_object_id": "mathia_source_a99499529c027070aa15a130e0a25fc50219aca2a063421a62556479d7444d96",
+          "source_id": "openalex_w2146492295",
+          "source_unit_ids": [
+            "openalex_w2146492295_v2_u05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "source_title": "A new lower bound for the de Bruijn-Newman constant",
+          "source_year": 1990,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "debruijn-newman",
+            "heat-flow",
+            "obstruction"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "content_sha256": "e4e97369972f8d48125437920f326731f1fb2d311cd1cabfbf78581768503757",
+          "artifact_sha256": "3b931136c54c0b84f30cc3a4ff2e61d27829fa5042bc8432065082544cde15dc",
+          "artifact_bytes": 2364
+        }
+      ],
+      "audit_context_group": "source:openalex_w2146492295",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "montgomery1973_pair_correlation",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_montgomery1973_pair_correlation_aa4f770d_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Different positive Fourier kernels extract multiplicity, simplicity, and small-gap information from the same pair-correlation estimate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "montgomery1973_v2_u01",
+          "montgomery1973_v2_u08",
+          "montgomery1973_v2_u09"
+        ],
+        "proposed_limit": "Support constraints and nonoptimal kernels limit constants and prevent the conjectural full-strength conclusions.",
+        "source_id": "montgomery1973_pair_correlation",
+        "synthesis_id": "riemann_v2_within_1977807ee2d2cacc9cd19b56",
+        "title": "Kernel choice translates a two-point law into distinct downstream properties"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the operational bridge from the theorem to every corollary.",
+          "line_end": 86,
+          "line_start": 38,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fourier-transform notation is degraded to question marks in places, but the transform pair and support restriction are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Equation (3) makes test-kernel choice the interface between F(alpha) and spacing sums; because the theorem controls only |alpha|<1, admissible Fourier support explicitly limits which statistics can be proved.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Convolution converts frequency information into selectable zero-difference statistics",
+          "unit_artifact_relpath": "depth/units/montgomery1973_v2_u01.txt",
+          "unit_bytes": 1418,
+          "unit_id": "montgomery1973_v2_u01",
+          "unit_sha256": "c9ab0221be19865185826822718a0461623b8bbaa6577278785b854bd39be3f5",
+          "unit_type": "fourier-kernel-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Frequency information becomes selectable spacing statistics only through a test function, so the theorem is an oracle with a support-limited interface rather than a complete zero description.",
+            "nonparaphrase_operation": "The test function r, its Fourier transform, and the convolution identity bridge F(alpha) to weighted zero-difference sums.",
+            "quality_reason": "Source fact: (3) converts a weighted zero-difference sum into an integral of F against the Fourier transform of a test kernel, and the text explicitly restricts that transform to [-1+delta,1-delta] because F is poorly controlled at alpha>=1. None identified; the reading does not reconstruct damaged transform normalization or import information beyond the span. The 'query language' and 'oracle' metaphors are stylistic, but each is anchored to the non-paraphrase operation of selecting a test function and enforcing Fourier support.",
+            "source_support": "Equation (3) expresses a weighted double sum over zero ordinates as an integral of F(alpha) against the Fourier transform of a test function r. Since the theorem gives little information at or beyond alpha=1, that transform is generally required to vanish outside a slightly smaller interval than [-1,1].",
+            "speculation_status": "A kernel with Fourier mass outside the controlled alpha-range imports information absent from the theorem. Transform symbols and normalization are scan-damaged, but the convolution and support restriction are clear. Reasonable inference: calling the kernel a support-limited query interface accurately compresses the source's convolution-and-support mechanism without claiming a new theorem. The transform glyphs and constants are OCR-damaged, and the output appropriately confines certainty to convolution and support."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Makes explicit how a pair statistic controls a one-point multiplicity property.",
+          "line_end": 708,
+          "line_start": 634,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact proportions are degraded in scan extraction; symbolic constants need checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof computes the convolution for supported sinc kernels, identifies repeated zeros with the diagonal multiplicity sum, and bounds that sum to obtain a positive proportion of simple zeros.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A positive sinc-squared kernel converts the correlation bound into a multiplicity bound",
+          "unit_artifact_relpath": "depth/units/montgomery1973_v2_u08.txt",
+          "unit_bytes": 2521,
+          "unit_id": "montgomery1973_v2_u08",
+          "unit_sha256": "d9939983a47a9f2468138a3085947b94179eaf0619dc7e8e4dfc93dc9d605e49",
+          "unit_type": "kernel-to-simplicity-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Multiplicity is encoded indirectly as diagonal mass, and positivity prevents off-diagonal cancellation from hiding it.",
+            "nonparaphrase_operation": "The diagonal multiplicity identity and squared-sinc kernel bridge pair correlation to simplicity.",
+            "quality_reason": "Source fact: counting zeros with multiplicity makes the y=y' double sum equal the squared-multiplicity mass; a positive squared-sinc kernel and the pair estimate bound that mass and yield a positive proportion of simple zeros. None identified; the output retains RH conditionality, the positive-proportion scope, and the author's nonoptimal-kernel caveat. 'Makes repeated zeros visible' is a faithful description of the explicit diagonal identity rather than a content-free visual metaphor.",
+            "source_support": "The diagonal pair count equals a sum of squared zero multiplicities. Positivity and the squared-sinc pair asymptotic bound this sum; comparison with total multiplicity gives a positive lower proportion of simple zeros.",
+            "speculation_status": "The RH-conditional method proves only a positive proportion, and the author says the kernel is nonoptimal. The exact proportion is degraded; the diagonal calculation is clear. Reasonable inference: positivity prevents non-diagonal cancellation from concealing diagonal multiplicity mass. The exact proportion is degraded, so omitting its numerical reconstruction is appropriate."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The author notes the chosen kernel is not optimal, separating proof of existence from best-constant optimization.",
+          "line_end": 752,
+          "line_start": 709,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The cosine-integral expression and numerical threshold are legible but should be checked for exact typography.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A nonnegative compactly supported kernel lower-bounds close zero pairs; subtracting the diagonal leaves a positive contribution once a computable kernel functional C(A) becomes positive.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A triangular frequency kernel forces positive density of sufficiently small gaps",
+          "unit_artifact_relpath": "depth/units/montgomery1973_v2_u09.txt",
+          "unit_bytes": 1704,
+          "unit_id": "montgomery1973_v2_u09",
+          "unit_sha256": "bcaa62d254e677078e3fb474548b037045bd51bbb38d834f4f247287763542de",
+          "unit_type": "kernel-optimization-for-gaps",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The kernel turns the support theorem into a threshold test, and optimizing the gap becomes an extremal-kernel problem.",
+            "nonparaphrase_operation": "The triangular transform, close-pair window, diagonal subtraction, and C(A) bridge frequency support to gaps.",
+            "quality_reason": "Source fact: the triangular compactly supported transform is nonnegative, the theorem gives a lower bound, the diagonal is subtracted, and C(A)>0 forces a positive close-pair contribution; the source verifies A=0.68 and states the kernel is not optimal. None identified; the output does not call 0.68 optimal or infer the full gap distribution. The 'threshold test' phrase names the actual sign condition C(A)>0 and therefore adds mechanism beyond restatement.",
+            "source_support": "A compactly supported nonnegative transform gives a lower bound for its F-integral. After the diagonal contribution is removed, the close-pair sum is positive whenever C(A)>0; continuity and calculation make A=0.68 admissible.",
+            "speculation_status": "The kernel is not optimized, so 0.68 is certified rather than best possible. The cosine-integral typography should be checked, though the threshold is legible. Reasonable inference: choosing A turns the argument into a threshold test and varying the kernel defines an extremal-kernel problem. Cosine-integral typography is scan-sensitive, and the output advises checking it rather than reconstructing it."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e4555dc47e4bd5720bdaba4599b00fb448f36f8eb0727d8495373a15edead747",
+        "dossier_sha256": "d58b993054425429fdde63343f34653624d51941e54865b723cb40d8b870b7c8"
+      }
+    }
+  ]
+}

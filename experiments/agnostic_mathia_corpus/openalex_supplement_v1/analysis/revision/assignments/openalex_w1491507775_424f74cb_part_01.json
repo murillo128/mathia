@@ -1,0 +1,90 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_reflexive_face_duality": {
+      "analysis_id": "agnostic_oa_generation_7da514591b389fda665093205dfaca653aa83214de6d0d6ed2c2f43491b65a83",
+      "boundary_or_failure": "Polarity does not preserve integrality for every integral polytope; reflexivity is the additional closure condition. The construction also requires an interior origin and a lattice pairing, and dual ambient polytopes alone do not establish every proposed mirror-symmetry consequence.",
+      "interpretation": "Reflexivity makes polar duality remain inside the same discrete category while reversing incidence dimensions: vertices and facets exchange, and intermediate faces acquire complementary dimensions. In the source, the same compatibility condition aligns the ambient line-bundle data with the Calabi-Yau hypersurface requirement.",
+      "nonparaphrase_operation": "Apply a representation-reversing duality, test whether the result remains integral, and use that closure test to identify the admissible subclass while tracking how faces and the distinguished origin are transported.",
+      "source_support": "The source defines the polar of an integral polytope containing the origin, observes that the polar need not be integral, and calls the integral-polar case reflexive. It states that duality exchanges vertices with boundary faces, sends a face to a complementary-dimensional face, and equates reflexivity with the relevant anticanonical line-bundle condition; the origin indexes the boundary-product deformation.",
+      "uncertainty": "The polar inequality, dimensional notation, and line-bundle equation are OCR-damaged, so exact sign and index conventions need the typeset source. The artifact cites the mathematical correspondence but does not prove it in full.",
+      "unit_id": "agnostic_oa_reflexive_face_duality"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_reflexive_face_duality": {
+      "critic_sha256": "43bf3bf0c787c8fa0e759312b7787afb041654c78a8b4bed547aff6bf0ffeefe",
+      "generation_sha256": "538eb3eeafdcf8b2f5a497ebbaaa0f2878d29e11fff0801230c6d5118304a19f"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_reflexive_face_duality": {
+      "analysis_id": "agnostic_oa_critic_2c55cc1a286f4c4a052330cef002da42697025c11c876011556061753ded6ae1",
+      "context_risk": "The polar inequality, dimension indices, and bundle equation are OCR-damaged, but the prose clearly states the integrality condition, reflexive closure, complementary face dimensions, Calabi-Yau bundle equivalence, and the origin's deformation role.",
+      "decision": "revise",
+      "faithfulness": "The interpretation, boundary conditions, and source support are faithful, but the nonparaphrase operation's phrase about tracking how the distinguished origin is transported conflates two separate source claims: polarity transports face incidence, while the origin indexes the boundary-product deformation.",
+      "missed_mechanism": "The candidate includes all central mechanisms, but it should state the origin's deformation-indexing role separately from the complementary-dimensional face correspondence to avoid inventing a point-transport rule.",
+      "paraphrase_risk": "The closure-under-integral-polarity test and dimension-reversing incidence map are substantive operations, so paraphrase risk is low once the imprecise origin-transport wording is repaired.",
+      "revision_instructions": "Replace the final clause of the nonparaphrase operation with wording that tracks complementary face correspondence under polarity and, separately, records that the interior origin labels the boundary-product deformation; do not say or imply that polarity transports the origin as it transports faces.",
+      "unit_id": "agnostic_oa_reflexive_face_duality",
+      "unsupported_or_imported": "The sole bounded overreach is the implied transport of the distinguished origin; the source supports its presence and deformation correspondence but does not define such a transport. The remaining claims are source-grounded."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_reflexive_face_duality": "agnostic_oa_revision_089c1ec14616ba2c849b7c7139b7b02a6e49b78ee3f198d72690c3f29d429595"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "1b9b6994a65f2f80f2640e226133203a89ec3ab3944182ef6e4ee476829e056a",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1491507775_424f74cb_part_01.jsonl",
+  "source_id": "openalex_w1491507775",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reflexive_face_duality.txt",
+      "artifact_bytes": 3473,
+      "artifact_relpath": "depth/units/agnostic_oa_reflexive_face_duality.txt",
+      "artifact_sha256": "da439338dc67c03e29265f04135840fe58dfa43b10c07d37eecddbde387b355f",
+      "content_sha256": "988e511ee01215961b16a5abbe23d5d4df60c0733275815260fb4875a32ce47b",
+      "context_note": "The source states the face correspondence, involutive reflexivity, and equivalence with the Calabi-Yau hypersurface condition, citing Batyrev. Its later physical mirror explanation is explicitly non-rigorous and is not used to strengthen these claims. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_integral_points_sections",
+            "agnostic_oa_lattice_index_singularity",
+            "agnostic_oa_reflexive_face_duality",
+            "agnostic_oa_open_dual_dimension_drop"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source uses integral lattices, indices, monomials, and reflexive polytopes, but its mathematical mechanisms are toric combinatorics and complex geometry rather than arithmetic geometry in the usual number-theoretic sense. It therefore challenges routing based only on words such as integral or lattice. Whether this corrects any actual #44 assignment is unconfirmed because #44 was not inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1491507775",
+      "line_end": 564,
+      "line_start": 507,
+      "representation_dependency": "Extraction limit: the polar inequality, dimension indices, and line-bundle equation are OCR-damaged; exact conventions require the PDF. Representation limit: the construction depends on an integral polytope with the origin in its interior and a chosen lattice pairing. Scope limit: a polar of an arbitrary integral polytope need not be integral, and reflexive duality of ambient polytopes does not by itself prove every asserted mirror-symmetry property.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Polar duality converts each supporting face into a dual vertex and, more generally, a face of one dimension into a complementary-dimensional face. Integrality is not automatic; requiring both the polytope and its polar to be integral singles out reflexive polytopes. In the source, that same condition matches the anticanonical bundle requirement for the hypersurface, and the origin supplies the distinguished boundary-product deformation. The reusable pattern is to identify the compatibility condition that makes a dual representation stay inside the original discrete category.",
+      "source_id": "openalex_w1491507775",
+      "source_normalized_sha256": "46fd93e8622f34f9ab489154d1640188739277963f72ec75a31cc1badc1eb535",
+      "title": "Use reflexivity to make polar duality integral and reverse face dimensions",
+      "unit_id": "agnostic_oa_reflexive_face_duality",
+      "unit_type": "duality-and-canonicality"
+    }
+  ]
+}

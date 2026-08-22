@@ -1,0 +1,361 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_harper2014_zeta_course_part1_c31ad953_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "harper2014_zeta_course_part1",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Proof is omitted in the source; the unit records the stated structural consequence only.",
+      "line_end": 1485,
+      "line_start": 1453,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The functional equation and gamma recursion are readable; no omitted proof is reconstructed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the completed-zeta symmetry, uses it to define values on the left, and derives trivial zeros as cancellations of gamma poles.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional equation reflects zeta across the critical line",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u25.txt",
+      "unit_bytes": 1862,
+      "unit_id": "harper2014_zeta_course_part1_u25",
+      "unit_sha256": "0b3f3c97f556e75fef65ed9367b086a0485c9256eab42b2ec927f4f4f1104244",
+      "unit_type": "symmetry-and-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u25.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1445,
+          "line_end": 1452,
+          "text": "                                                     −T 1 + |t|             T\n                   = x + O x log2 x e−c(log x)/ log(T +2) + e− log T .\n                                                                    \u0001\u0001\n\n                     √\nChoosing T = exp{ log x} to balance the two terms, the theorem follows.              \u0003\n\n\n",
+          "sha256": "300117414df77cafa3578b5e6d6a82a918213c70fe1e56a3432d76275c86d0fa"
+        },
+        "after": {
+          "line_start": 1486,
+          "line_end": 1493,
+          "text": "\nRemark 6.3. Chapter 2 of Titchmarsh’s book [2] contains seven different proofs of the\nfunctional equation (a particularly famous one, due to Riemann, using a functional\nequation for ∞       −n2 πx\n             P\n               n=−∞ e       )!\n\nRemark 6.4. It is speculated that the reason the Riemann Hypothesis should hold is\n",
+          "sha256": "7d83129feaf38d990195bb9112277e20320ce01c21b126a5dcf0b7e3db84b027"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Other facts about the zeta function",
+            "line_end": 1516,
+            "line_start": 1453,
+            "mathematical_role": "States the global functional equation, its symmetry and trivial-zero consequences, and the explicit formula linking prime counts directly to zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1485,
+          "line_start": 1453,
+          "title": "Functional equation reflects zeta across the critical line",
+          "unit_id": "harper2014_zeta_course_part1_u25",
+          "unit_type": "symmetry-and-consequence",
+          "why_material": "States the completed-zeta symmetry, uses it to define values on the left, and derives trivial zeros as cancellations of gamma poles."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Proof is omitted in the source; the unit records the stated structural consequence only.",
+          "representation_dependency": "The functional equation and gamma recursion are readable; no omitted proof is reconstructed.",
+          "unit_id": "harper2014_zeta_course_part1_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1450,
+            "line_start": 1395,
+            "title": "Classical zero-free width yields the square-root-log PNT error",
+            "unit_id": "harper2014_zeta_course_part1_u24",
+            "unit_type": "contour-optimization",
+            "why_material": "Repeats the Perron contour decomposition with the wider logarithmic zero-free region and logarithmic-derivative bound, then balances horizontal truncation and vertical displacement by taking log T at the square-root-log scale."
+          },
+          {
+            "line_end": 1497,
+            "line_start": 1493,
+            "title": "Euler product and functional equation suggest complementary zero constraints",
+            "unit_id": "harper2014_zeta_course_part1_u26",
+            "unit_type": "heuristic-limitation",
+            "why_material": "Records a clearly labeled speculation that multiplicative structure may draw zeros toward the critical line while symmetry may force exact placement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "One may repeatedly move a truncated Perron contour within a zero-free region to bound Psi, or move farther left and record residues at zeros to obtain an explicit formula, using the functional equation to control the remote line.",
+            "limit": "The functional equation and explicit formula are stated without proof, so this synthesis records the source's mechanism rather than supplying missing derivations.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u09",
+              "harper2014_zeta_course_part1_u24",
+              "harper2014_zeta_course_part1_u25",
+              "harper2014_zeta_course_part1_u27"
+            ],
+            "title": "Two routes from zeros back to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly says the course does not realize this route; this is a heuristic, not evidence for RH.",
+      "line_end": 1497,
+      "line_start": 1493,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Entirely prose-based.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records a clearly labeled speculation that multiplicative structure may draw zeros toward the critical line while symmetry may force exact placement.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product and functional equation suggest complementary zero constraints",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u26.txt",
+      "unit_bytes": 403,
+      "unit_id": "harper2014_zeta_course_part1_u26",
+      "unit_sha256": "1059036018e2a06c041f83f60bc1e2da1994925d9f9645b6a2c84989b30ca16f",
+      "unit_type": "heuristic-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u26.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1485,
+          "line_end": 1492,
+          "text": "0 < <(s) < 1).\n\nRemark 6.3. Chapter 2 of Titchmarsh’s book [2] contains seven different proofs of the\nfunctional equation (a particularly famous one, due to Riemann, using a functional\nequation for ∞       −n2 πx\n             P\n               n=−∞ e       )!\n\n",
+          "sha256": "54151b17d6c01f5cde9872937dbf9ea6672174b27ec14e6b2064cd625abc719f"
+        },
+        "after": {
+          "line_start": 1498,
+          "line_end": 1505,
+          "text": "\n   As an alternative to repeatedly using the truncated Perron formula, with the line of\nintegration moved to different positions, to study Ψ(x), one can use an explicit formula\nthat directly links Ψ(x) and the zeros of the zeta function. We state a version of this\nbelow.\n\nTheorem 6.5 (Explicit formula, von Mangoldt, 1895). For any 2 ≤ T ≤ x, we have\n                                  X xρ           x log2 x\n",
+          "sha256": "3ef26d8c055a5057ca7381b2b0a16e9a8f0d580e44e03e94c136ce20ef83d8fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Other facts about the zeta function",
+            "line_end": 1516,
+            "line_start": 1453,
+            "mathematical_role": "States the global functional equation, its symmetry and trivial-zero consequences, and the explicit formula linking prime counts directly to zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1497,
+          "line_start": 1493,
+          "title": "Euler product and functional equation suggest complementary zero constraints",
+          "unit_id": "harper2014_zeta_course_part1_u26",
+          "unit_type": "heuristic-limitation",
+          "why_material": "Records a clearly labeled speculation that multiplicative structure may draw zeros toward the critical line while symmetry may force exact placement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly says the course does not realize this route; this is a heuristic, not evidence for RH.",
+          "representation_dependency": "Entirely prose-based.",
+          "unit_id": "harper2014_zeta_course_part1_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1485,
+            "line_start": 1453,
+            "title": "Functional equation reflects zeta across the critical line",
+            "unit_id": "harper2014_zeta_course_part1_u25",
+            "unit_type": "symmetry-and-consequence",
+            "why_material": "States the completed-zeta symmetry, uses it to define values on the left, and derives trivial zeros as cancellations of gamma poles."
+          },
+          {
+            "line_end": 1515,
+            "line_start": 1499,
+            "title": "Contour residues turn zeros into prime-counting fluctuations",
+            "unit_id": "harper2014_zeta_course_part1_u27",
+            "unit_type": "explicit-formula",
+            "why_material": "States an explicit formula relating Psi to a sum over zeta zeros and explains it as Perron inversion followed by a far-left contour shift whose crossed zero poles contribute residues."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Proof details are omitted and attributed to use of the functional equation on the shifted line.",
+      "line_end": 1515,
+      "line_start": 1499,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed zero sum is compact but line-broken; the prose fixes the residue mechanism and truncation role.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States an explicit formula relating Psi to a sum over zeta zeros and explains it as Perron inversion followed by a far-left contour shift whose crossed zero poles contribute residues.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour residues turn zeros into prime-counting fluctuations",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u27.txt",
+      "unit_bytes": 1017,
+      "unit_id": "harper2014_zeta_course_part1_u27",
+      "unit_sha256": "0b6ecc4b92c1ed34de991be1e53d04765825b12da9d72f26f7c5d4616977c125",
+      "unit_type": "explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u27.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1491,
+          "line_end": 1498,
+          "text": "               n=−∞ e       )!\n\nRemark 6.4. It is speculated that the reason the Riemann Hypothesis should hold is\nbecause the Euler product should force all the non-trivial zeros of the zeta function to lie\nclose to the critical line <(s) = 1/2, and then the functional equation should somehow\nforce them to lie exactly on the line. In this course we will not get close to the critical\nline and will not need the functional equation.\n\n",
+          "sha256": "31eb626738b1243a5d6ca62ee62a10e734a13f1eafe99fe72835d4778e6b5252"
+        },
+        "after": {
+          "line_start": 1516,
+          "line_end": 1523,
+          "text": "\n                                          References\n [1] A. Ivić. The Riemann zeta-function: theory and applications. Dover edition, published by Dover\n     Publications, Inc.. 2003\n [2] E. C. Titchmarsh. The Theory of the Riemann Zeta-function. Second edition, revised by D. R.\n     Heath-Brown, published by Oxford University Press. 1986\n\n   Jesus College, Cambridge, CB5 8BL\n",
+          "sha256": "62647fb1c6bf167e5237e114874849b3c518fd8e4f818924edd3a5586f4040fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Other facts about the zeta function",
+            "line_end": 1516,
+            "line_start": 1453,
+            "mathematical_role": "States the global functional equation, its symmetry and trivial-zero consequences, and the explicit formula linking prime counts directly to zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1515,
+          "line_start": 1499,
+          "title": "Contour residues turn zeros into prime-counting fluctuations",
+          "unit_id": "harper2014_zeta_course_part1_u27",
+          "unit_type": "explicit-formula",
+          "why_material": "States an explicit formula relating Psi to a sum over zeta zeros and explains it as Perron inversion followed by a far-left contour shift whose crossed zero poles contribute residues."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Proof details are omitted and attributed to use of the functional equation on the shifted line.",
+          "representation_dependency": "The displayed zero sum is compact but line-broken; the prose fixes the residue mechanism and truncation role.",
+          "unit_id": "harper2014_zeta_course_part1_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1497,
+            "line_start": 1493,
+            "title": "Euler product and functional equation suggest complementary zero constraints",
+            "unit_id": "harper2014_zeta_course_part1_u26",
+            "unit_type": "heuristic-limitation",
+            "why_material": "Records a clearly labeled speculation that multiplicative structure may draw zeros toward the critical line while symmetry may force exact placement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "One may repeatedly move a truncated Perron contour within a zero-free region to bound Psi, or move farther left and record residues at zeros to obtain an explicit formula, using the functional equation to control the remote line.",
+            "limit": "The functional equation and explicit formula are stated without proof, so this synthesis records the source's mechanism rather than supplying missing derivations.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u09",
+              "harper2014_zeta_course_part1_u24",
+              "harper2014_zeta_course_part1_u25",
+              "harper2014_zeta_course_part1_u27"
+            ],
+            "title": "Two routes from zeros back to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "22fef886d57473ed56c533768b3e6de2a3703739c84fb1f731bf69fd61fdb287"
+}

@@ -1,0 +1,581 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_68.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Ghaith A. Hiary"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 3124,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 14,
+          "text": "Abstract"
+        },
+        {
+          "line": 31,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 58,
+          "text": "892 G. A. HIARY"
+        },
+        {
+          "line": 103,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 893"
+        },
+        {
+          "line": 157,
+          "text": "894 G. A. HIARY"
+        },
+        {
+          "line": 206,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 895"
+        },
+        {
+          "line": 213,
+          "text": "2. Outline of fast methods to compute ζ(1/2 + it)"
+        },
+        {
+          "line": 217,
+          "text": "X −1 »"
+        },
+        {
+          "line": 235,
+          "text": "P +K−1"
+        },
+        {
+          "line": 236,
+          "text": "X P +2K−1"
+        },
+        {
+          "line": 245,
+          "text": "X K−1"
+        },
+        {
+          "line": 262,
+          "text": "896 G. A. HIARY"
+        },
+        {
+          "line": 273,
+          "text": "1 X K−1 Ä ä"
+        },
+        {
+          "line": 287,
+          "text": "1 K−1"
+        },
+        {
+          "line": 315,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 897"
+        },
+        {
+          "line": 324,
+          "text": "5/26 4/13 1 1 K −13/5"
+        },
+        {
+          "line": 325,
+          "text": "1/5 3/10 1 1 K −5/2"
+        },
+        {
+          "line": 326,
+          "text": "1/4 1/4 1 1 K −2"
+        },
+        {
+          "line": 327,
+          "text": "3/10 1/5 1 1 K −5/3 K −10/3"
+        },
+        {
+          "line": 328,
+          "text": "1/3 1/6 1 1 K −3/2 K −6/2 K −9/2"
+        },
+        {
+          "line": 337,
+          "text": "1 K−1"
+        },
+        {
+          "line": 366,
+          "text": "898 G. A. HIARY"
+        },
+        {
+          "line": 373,
+          "text": "1 XK Ä ä"
+        },
+        {
+          "line": 424,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 899"
+        },
+        {
+          "line": 471,
+          "text": "900 G. A. HIARY"
+        },
+        {
+          "line": 521,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 901"
+        },
+        {
+          "line": 545,
+          "text": "X Q X"
+        },
+        {
+          "line": 601,
+          "text": "902 G. A. HIARY"
+        },
+        {
+          "line": 668,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 903"
+        },
+        {
+          "line": 718,
+          "text": "904 G. A. HIARY"
+        },
+        {
+          "line": 749,
+          "text": "3. The idea of the algorithm to compute cubic exponential"
+        },
+        {
+          "line": 754,
+          "text": "X X Z"
+        },
+        {
+          "line": 758,
+          "text": "2 m=−∞ 0"
+        },
+        {
+          "line": 771,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 905"
+        },
+        {
+          "line": 797,
+          "text": "2 ba+2bKc Å ã"
+        },
+        {
+          "line": 829,
+          "text": "906 G. A. HIARY"
+        },
+        {
+          "line": 843,
+          "text": "Section 2, we could obtain faster methods to compute the zeta function. One"
+        },
+        {
+          "line": 878,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 907"
+        },
+        {
+          "line": 903,
+          "text": "27 c (m − a) 5 189 c (m − a)6"
+        },
+        {
+          "line": 906,
+          "text": "128 b7 512 b9"
+        },
+        {
+          "line": 933,
+          "text": "908 G. A. HIARY"
+        },
+        {
+          "line": 947,
+          "text": "A A 1 ˜"
+        },
+        {
+          "line": 979,
+          "text": "A √ 1 −J˜"
+        },
+        {
+          "line": 985,
+          "text": "|E ˜ ˜"
+        },
+        {
+          "line": 998,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 909"
+        },
+        {
+          "line": 1023,
+          "text": "J J+ ˜"
+        },
+        {
+          "line": 1047,
+          "text": "910 G. A. HIARY"
+        },
+        {
+          "line": 1094,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 911"
+        },
+        {
+          "line": 1140,
+          "text": "912 G. A. HIARY"
+        },
+        {
+          "line": 1150,
+          "text": "Z 1/2"
+        },
+        {
+          "line": 1153,
+          "text": "K −1/2"
+        },
+        {
+          "line": 1161,
+          "text": "1 K X"
+        },
+        {
+          "line": 1192,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 913"
+        },
+        {
+          "line": 1196,
+          "text": "Z N Z 1/4"
+        },
+        {
+          "line": 1218,
+          "text": "Z N Z 1/4"
+        },
+        {
+          "line": 1245,
+          "text": "914 G. A. HIARY"
+        },
+        {
+          "line": 1261,
+          "text": "4. The algorithm for cubic exponential sums"
+        },
+        {
+          "line": 1292,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 915"
+        },
+        {
+          "line": 1326,
+          "text": "4.1. The first phase: decoupling the cubic and quadratic sums. As before,"
+        },
+        {
+          "line": 1329,
+          "text": "1 K X"
+        },
+        {
+          "line": 1342,
+          "text": "916 G. A. HIARY"
+        },
+        {
+          "line": 1363,
+          "text": "Z 1/2 KZ"
+        },
+        {
+          "line": 1366,
+          "text": "K 1/4 0"
+        },
+        {
+          "line": 1390,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 917"
+        },
+        {
+          "line": 1424,
+          "text": "R 1/2"
+        },
+        {
+          "line": 1438,
+          "text": "918 G. A. HIARY"
+        },
+        {
+          "line": 1444,
+          "text": "Z 1/4 Z N"
+        },
+        {
+          "line": 1453,
+          "text": "4.2. The second phase: the algorithm for quadratic sums. Each term in"
+        },
+        {
+          "line": 1488,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 919"
+        },
+        {
+          "line": 1543,
+          "text": "920 G. A. HIARY"
+        },
+        {
+          "line": 1597,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 921"
+        },
+        {
+          "line": 1607,
+          "text": "N 0 −1/4"
+        },
+        {
+          "line": 1622,
+          "text": "Z 1/4"
+        },
+        {
+          "line": 1658,
+          "text": "922 G. A. HIARY"
+        },
+        {
+          "line": 1673,
+          "text": "1 and 0 ≤ λ0 − αl x ≤ 1 over x ∈ [w, z)). Substituting λ + αl x for ωal +αl x we"
+        },
+        {
+          "line": 1712,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 923"
+        },
+        {
+          "line": 1754,
+          "text": "Z N Z 1/4"
+        },
+        {
+          "line": 1766,
+          "text": "924 G. A. HIARY"
+        },
+        {
+          "line": 1769,
+          "text": "4.3. Some saddle-point calculations. In this subsection, we extract the"
+        },
+        {
+          "line": 1778,
+          "text": "Z N Z 1/4"
+        },
+        {
+          "line": 1779,
+          "text": "1 j 3"
+        },
+        {
+          "line": 1825,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 925"
+        },
+        {
+          "line": 1887,
+          "text": "926 G. A. HIARY"
+        },
+        {
+          "line": 1949,
+          "text": "Section 5 of [Hia11] of length ≤ M terms (the latter also reduce to usual qua-"
+        },
+        {
+          "line": 1955,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 927"
+        },
+        {
+          "line": 1973,
+          "text": "1 M X"
+        },
+        {
+          "line": 1987,
+          "text": "4.4. The FFT precomputation. We will show any sum of the form (4.42)"
+        },
+        {
+          "line": 2009,
+          "text": "928 G. A. HIARY"
+        },
+        {
+          "line": 2069,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 929"
+        },
+        {
+          "line": 2118,
+          "text": "Y ¶ ©"
+        },
+        {
+          "line": 2129,
+          "text": "Y ¶ ©"
+        },
+        {
+          "line": 2135,
+          "text": "930 G. A. HIARY"
+        },
+        {
+          "line": 2152,
+          "text": "Section 2 is slower, which leads to higher degree exponential sums (4.42)."
+        },
+        {
+          "line": 2175,
+          "text": "N 1 1"
+        },
+        {
+          "line": 2177,
+          "text": "M3 M2 M2"
+        },
+        {
+          "line": 2184,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 931"
+        },
+        {
+          "line": 2245,
+          "text": "932 G. A. HIARY"
+        },
+        {
+          "line": 2291,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 933"
+        },
+        {
+          "line": 2294,
+          "text": "5. Auxiliary results"
+        },
+        {
+          "line": 2301,
+          "text": "K Z K"
+        },
+        {
+          "line": 2314,
+          "text": "10 (2M )"
+        },
+        {
+          "line": 2350,
+          "text": "934 G. A. HIARY"
+        },
+        {
+          "line": 2413,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 935"
+        },
+        {
+          "line": 2432,
+          "text": "X 2 1"
+        },
+        {
+          "line": 2471,
+          "text": "936 G. A. HIARY"
+        },
+        {
+          "line": 2499,
+          "text": "2 K−k"
+        },
+        {
+          "line": 2532,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 937"
+        },
+        {
+          "line": 2543,
+          "text": "(K1 ) C"
+        },
+        {
+          "line": 2590,
+          "text": "938 G. A. HIARY"
+        },
+        {
+          "line": 2615,
+          "text": "Z K1 Z 1"
+        },
+        {
+          "line": 2647,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 939"
+        },
+        {
+          "line": 2703,
+          "text": "940 G. A. HIARY"
+        },
+        {
+          "line": 2727,
+          "text": "3 1 ∞ Z"
+        },
+        {
+          "line": 2733,
+          "text": "1 j 2πicy 3 +2πiη̃y 1"
+        },
+        {
+          "line": 2748,
+          "text": "1 j 2πicy 3 +2πiη̃y e"
+        },
+        {
+          "line": 2764,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 941"
+        },
+        {
+          "line": 2792,
+          "text": "1 j 2πicy 3 +2πiηy 1"
+        },
+        {
+          "line": 2831,
+          "text": "942 G. A. HIARY"
+        },
+        {
+          "line": 2896,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 943"
+        },
+        {
+          "line": 2963,
+          "text": "944 G. A. HIARY"
+        },
+        {
+          "line": 3012,
+          "text": "2 K −bΛ2 c Z 1 eπi/3 (y+n)τk eπi/6 (y+n)2"
+        },
+        {
+          "line": 3013,
+          "text": "1 X 2 l −2π +2π"
+        },
+        {
+          "line": 3020,
+          "text": "1 to show they can be expressed using O(ν(K, j, ε)2 ) bits throughout, as do"
+        },
+        {
+          "line": 3025,
+          "text": "FAST METHODS TO COMPUTE THE RIEMANN ZETA FUNCTION 945"
+        },
+        {
+          "line": 3085,
+          "text": "946 G. A. HIARY"
+        },
+        {
+          "line": 3088,
+          "text": "References"
+        },
+        {
+          "line": 3099,
+          "text": "CBO9780511661976."
+        }
+      ],
+      "normalized_bytes": 187363,
+      "normalized_page_count": 56,
+      "normalized_relpath": "normalized/openalex_w2138245810.txt",
+      "normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "prior_v1_units": [
+        {
+          "line_end": 79,
+          "line_start": 31,
+          "unit_id": "full_openalex_w2138245810_u01",
+          "unit_type": "algorithmic-complexity theorem"
+        },
+        {
+          "line_end": 1259,
+          "line_start": 1203,
+          "unit_id": "full_openalex_w2138245810_u02",
+          "unit_type": "phase-transition cost reduction"
+        },
+        {
+          "line_end": 1453,
+          "line_start": 1326,
+          "unit_id": "full_openalex_w2138245810_u03",
+          "unit_type": "first-phase cubic-to-quadratic reduction"
+        },
+        {
+          "line_end": 1600,
+          "line_start": 1453,
+          "unit_id": "full_openalex_w2138245810_u04",
+          "unit_type": "second-phase quadratic descent"
+        },
+        {
+          "line_end": 1880,
+          "line_start": 1769,
+          "unit_id": "full_openalex_w2138245810_u05",
+          "unit_type": "saddle-point extraction"
+        }
+      ],
+      "source_id": "openalex_w2138245810",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Fast methods to compute the Riemann zeta function",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "random-matrix",
+        "heuristic-bridge"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2011,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2138245810.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "d56064d8f4032d5f9f882ce19046e73c5ee4df420ae9ea91a2c9183b5e1c182d"
+}

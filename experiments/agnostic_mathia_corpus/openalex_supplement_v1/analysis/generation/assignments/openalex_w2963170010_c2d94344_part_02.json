@@ -1,0 +1,119 @@
+{
+  "expected_analysis_ids": {
+    "agnostic_oa_stochastic_control_transport_bridge": "agnostic_oa_generation_63c9da9fd722cffe8efafed262c5cda477c14691ecf049bf329310bda99131be",
+    "agnostic_oa_unbounded_entropy_renormalization": "agnostic_oa_generation_83f7205755c17e1a83569930ca10f111749a8ae8d669216a603209d0408e4f8c"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "interpretation",
+    "nonparaphrase_operation",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Source-grounded interpretations for nearby units from one source only; keep outputs separate and distinguish source fact, inference, representation dependence, and uncertainty.",
+  "model_visible_packet_sha256": "0120ffc79301744330f38cbca7f2c796eeafe034b281ac097dcaaf2804edc94f",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/generation/batches/openalex_w2963170010_c2d94344_part_02.jsonl",
+  "source_id": "openalex_w2963170010",
+  "stage": "generation",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_stochastic_control_transport_bridge.txt",
+      "artifact_bytes": 3133,
+      "artifact_relpath": "depth/units/agnostic_oa_stochastic_control_transport_bridge.txt",
+      "artifact_sha256": "17c818533cac2aa0bdb8af36439860f373185c507e3b77facd7e67f40cfe515a",
+      "content_sha256": "257d1677676914e60085ff8791454140d2372f6d48800943b051cf2e940d3c8b",
+      "context_note": "The survey cites the control and zero-noise results and explicitly warns that the convergence is unclear for nonquadratic Lagrangians; this limitation is part of the unit.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 2043,
+      "line_start": 1998,
+      "representation_dependency": "The clean bridge relies on Brownian noise, quadratic action matched to Girsanov entropy, admissible progressively measurable controls, and a zero-noise limit.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "For Brownian reference, the entropy problem is represented as minimizing expected quadratic control action subject to endpoint laws, and the zero-noise limit connects this stochastic control formulation to deterministic dynamic transport.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Noise turns deterministic transport control into entropy-minimizing stochastic control",
+      "unit_id": "agnostic_oa_stochastic_control_transport_bridge",
+      "unit_type": "control-representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_unbounded_entropy_renormalization.txt",
+      "artifact_bytes": 3999,
+      "artifact_relpath": "depth/units/agnostic_oa_unbounded_entropy_renormalization.txt",
+      "artifact_sha256": "22282cdeb6c9c0ae2c5a95e76e74af376dad823f171c2b2512ea0dfa93f05a7e",
+      "content_sha256": "aee127abb1e1e7ddc300192ac631580f757e0b0edb7cdd986a7dbec0205e4297",
+      "context_note": "This appendix supplies the exact foundation used earlier for unbounded path measures. Formula layout is damaged but the reference-change invariant and variational characterization are readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 2123,
+      "line_start": 2064,
+      "representation_dependency": "The definition requires a sigma-finite reference, an exponential weight with finite normalizer, finite weight expectation under the candidate probability, and a topology/function class compatible with the variational formula.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A sigma-finite reference is normalized by an exponential weight, and entropy is corrected by the expected weight and normalizer; the source proves the value is independent of the admissible weight and retains strict convexity and variational lower semicontinuity.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Exponential reference change defines entropy for sigma-finite measures without changing its intrinsic value",
+      "unit_id": "agnostic_oa_unbounded_entropy_renormalization",
+      "unit_type": "invariant-renormalization"
+    }
+  ]
+}

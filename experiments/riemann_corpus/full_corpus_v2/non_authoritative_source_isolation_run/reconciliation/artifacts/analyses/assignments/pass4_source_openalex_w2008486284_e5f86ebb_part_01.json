@@ -1,0 +1,183 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2008486284_e5f86ebb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2008486284",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is numerical evidence and the underlying cause is explicitly left open.",
+      "line_end": 315,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on figures; captions and prose recover the comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "CUE, COE, independent uniform roots, and zeta-prime data share a second bump at varying locations, demonstrating a robust phenomenon not explained by the small-gap asymptotic alone.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative-root distances show bimodality across distinct root ensembles",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_v2_u04.txt",
+      "unit_bytes": 1153,
+      "unit_id": "openalex_w2008486284_v2_u04",
+      "unit_sha256": "91b44f74cae71a85c6585aa3d57cee03044e266236e92609ec549c39b532c2ea",
+      "unit_type": "unexplained-empirical-phenomenon",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "                                                    4 1/2\n                            Q(s) = lim Q(s; N ) =     s + O(s).                          (3.19)\n                                   N →∞            3π\n    Note that it remains an unsolved\n                                 R ∞ problem to show that Q(s) is a proper probability\ndistribution. That is, to show 0 Q(s)ds = 1. This is the random matrix analogue of\nSoundararajan’s conjecture m(a) → 1 as a → ∞.\n\n",
+          "sha256": "09e4a903df4010e9c3d346d0b10bec30b52a0dbccbb2be74b2a07c0aa9b80cef"
+        },
+        "after": {
+          "line_start": 316,
+          "line_end": 323,
+          "text": "\n                                  5. Proof of theorem 3.1\n   Suppose f (z) is a degree-N polynomial having all zeros on the unit circle, for which two\nzeros z1 , z2 are very close together. Then the derivative f 0 (z) will have a zero close to the\nmidpoint (z1 + z2 )/2. This follows because, if z1 = z2 (that is, if f (z) has a multiple root at\nz1 ), then z1 is also a root of the derivative f 0 (z), and the roots of f 0 are continuous functions\nof the roots of f . By a rotation we can assume that\n                               f (z) = F (z)(z − e−iΘ/2 )(z − eiΘ/2 ),                         (5.1)\n",
+          "sha256": "746facb8a3e92bb775780f9677faae480de5070bd2f1cbf8dbba9c4f57879104"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_99a8a6c21d612702bed927ea90ac417ce30a26aac0c942bc16bc9ec14c1adead",
+        "dossier_sha256": "c8918575f23e099bd9d1683f4c25906ff144891cb01b561effc233f085e4aabf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Data comparison",
+            "line_end": 316,
+            "line_start": 302,
+            "mathematical_role": "Compares unitary, orthogonal, independent-root, and zeta-prime data and records unexplained bimodality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 315,
+          "line_start": 302,
+          "title": "Derivative-root distances show bimodality across distinct root ensembles",
+          "unit_id": "openalex_w2008486284_v2_u04",
+          "unit_type": "unexplained-empirical-phenomenon",
+          "why_material": "CUE, COE, independent uniform roots, and zeta-prime data share a second bump at varying locations, demonstrating a robust phenomenon not explained by the small-gap asymptotic alone."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is numerical evidence and the underlying cause is explicitly left open.",
+          "representation_dependency": "Depends on figures; captions and prose recover the comparison.",
+          "unit_id": "openalex_w2008486284_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 300,
+            "line_start": 207,
+            "title": "A nearest-neighbor spacing expansion pushes forward to a square-root derivative-root density",
+            "unit_id": "openalex_w2008486284_v2_u03",
+            "unit_type": "spacing-to-critical-point-law",
+            "why_material": "The CUE joint density gives a small-gap expansion; analytic motion of the corresponding critical point starts quadratically in the gap, yielding the leading s to the one-half density and its correction."
+          },
+          {
+            "line_end": 563,
+            "line_start": 317,
+            "title": "Analytic dependence turns a close root pair into an even power series for the nearby critical point",
+            "unit_id": "openalex_w2008486284_v2_u05",
+            "unit_type": "implicit-root-expansion",
+            "why_material": "Factoring off the close pair, expanding the logarithmic derivative, and using symmetry plus the implicit-function theorem gives a correctly rescaled critical point with explicit quadratic and quartic coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair theorem rigorously controls one boundary regime, while stable second bumps across ensembles show that other configurations of roots materially shape the full distribution.",
+            "limit": "The paper identifies but does not explain the second mode.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_v2_u03",
+              "openalex_w2008486284_v2_u04",
+              "openalex_w2008486284_v2_u10"
+            ],
+            "title": "Local asymptotics do not explain global bimodality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2008486284_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2008486284_v2_u04",
+          "spontaneous_reading": "The second bump survives across ensembles with very different root correlations, suggesting that the small-gap asymptotic explains only one regime of derivative-root geometry."
+        },
+        "directed": {
+          "unit_id": "openalex_w2008486284_v2_u04",
+          "source_grounded_mathematics": "Numerical distributions of normalized derivative-root distances are compared for CUE, COE, independent uniform unit-circle roots, and zeta prime. Each shows a second bump, though its location changes by ensemble.",
+          "conceptual_reading": "Cross-ensemble persistence is evidence for a robust mechanism, while the moving bump location indicates sensitivity to the ambient root process rather than a universal constant.",
+          "representation_or_bridge": "The bridge is an empirical comparison of the same derivative-root statistic across random-polynomial ensembles and zeta data.",
+          "boundary_or_failure": "No cause of the second bump is given, and the evidence depends on plots rather than an analytic derivation.",
+          "uncertainty": "The prose supports bimodality and varying locations, but quantitative shape claims would require the figures and generation details."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2008486284_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span compares CUE, COE, independent uniform roots, and zeta-prime data and reports a second bump at different locations.",
+          "The output correctly says the evidence is numerical and the cause is not supplied."
+        ],
+        "inference": [
+          "The changing location reasonably suggests ensemble sensitivity, and the bump reasonably indicates that the small-s asymptotic does not describe the whole distribution."
+        ],
+        "unsupported_or_imported": [
+          "Calling the cross-ensemble persistence evidence for a robust mechanism overstates the span: it establishes a robust phenomenon while explicitly leaving the underlying cause unknown."
+        ],
+        "paraphrase_or_style_risk": [
+          "Apart from the mechanism overclaim, the comparison identifies a real cross-ensemble operation rather than merely rephrasing the title."
+        ],
+        "context_or_ocr_risk": [
+          "Quantitative shape and location depend on figures not reproduced numerically in the prose."
+        ],
+        "missed_mechanism": [
+          "The source's central epistemic point is precisely that no common mechanism has been identified."
+        ],
+        "revision_instructions": [
+          "Replace 'evidence for a robust mechanism' with 'evidence for a robust qualitative phenomenon'; retain that a common cause is unknown and that bump locations vary by ensemble."
+        ]
+      }
+    }
+  ]
+}

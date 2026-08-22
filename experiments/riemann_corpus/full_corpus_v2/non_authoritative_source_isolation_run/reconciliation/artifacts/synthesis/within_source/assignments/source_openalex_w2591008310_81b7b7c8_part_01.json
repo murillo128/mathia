@@ -1,0 +1,178 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2591008310",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2591008310_81b7b7c8_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Subharmonic and density estimates remove a small family of zero-contaminated intervals, allowing a stable Dirichlet-polynomial branch whose diagonal coefficient mass then forces a lower mean and, through finite differences, derivative means.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2591008310_v2_u03",
+          "openalex_w2591008310_v2_u04",
+          "openalex_w2591008310_v2_u05",
+          "openalex_w2591008310_v2_u06"
+        ],
+        "proposed_limit": "All quantitative exponents are OCR-sensitive and the argument assumes the source's Euler-product hypotheses.",
+        "source_id": "openalex_w2591008310",
+        "synthesis_id": "riemann_v2_within_e21de08742b2216ab6c8443d",
+        "title": "Zeros are handled by excision before coefficients are used as the positive signal"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Lemmas 1 and 2 and the explicit subharmonic averaging argument.",
+          "line_end": 281,
+          "line_start": 217,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several radii and powers are damaged; the subharmonic mechanism is recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof turns failure of Theorem 1 into a uniform integral bound, then uses subharmonicity/Jensen averaging to control the maximum of F away from boundaries, preparing both zero counts and contour shifts.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Assuming the lower bound fails supplies global mean control and a subharmonic pointwise ceiling",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u03.txt",
+          "unit_bytes": 2927,
+          "unit_id": "openalex_w2591008310_v2_u03",
+          "unit_sha256": "d82d133b1a2ef52f12744f19f0c0e2918d5d207c9185bc4ecd43ee24cdedca37",
+          "unit_type": "contradiction-and-pointwise-control-setup",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The negation of Theorem 1 supplies the integral control recorded in Lemma 1, while Lemma 2 turns averaged control into a pointwise interior ceiling. Its concrete mechanism is local: form an auxiliary product over the zeros inside a disk so that its boundary modulus agrees with |F|, use the center-versus-boundary logarithmic inequality, pass to a disk-area average, and then apply the integral mean inequality to |F|^{2k}. This gains pointwise control from an average but only after choosing a disk that stays away from the t-interval edges; it does not itself contradict the assumed failure. Zero counting and contour use are downstream context, not results of this span.",
+            "nonparaphrase_operation": "Decomposes the mean-to-supremum bridge into zero removal, boundary averaging, area averaging, and an interior-radius constraint. This replaces the unsupported compactness analogy with the actual analytic conversion and identifies its loss of boundary coverage.",
+            "quality_reason": "Accepted because the disk-average mechanism and its interior restriction are legible despite formula damage. The revision removes the imported compactness metaphor, foregrounds the zero-removal step, and does not attribute later proof stages to this unit.",
+            "source_support": "The span explicitly assumes Theorem 1 false, states Lemma 1's integral bound, states an interior maximum bound in Lemma 2, and proves it using subharmonicity. The proof treats zeros in the disk with an auxiliary product, equates boundary moduli, derives circular and area-average inequalities, and chooses a suitable radius. The endpoint restriction is visible, while the radius and powers are OCR-damaged.",
+            "speculation_status": "No compactness claim is made. The role of this ceiling in later zero counts or contour shifts is labeled downstream only; exact radii, constants, and powers require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes immutable v1 unit full_openalex_w2591008310_u02 as the central density/asymptotic lemma package.",
+          "line_end": 382,
+          "line_start": 282,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "OCR is poor around all exponents and interval widths; use the scan for exact constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Jensen bounds zeros in unit-height boxes, a zero-detecting reciprocal Dirichlet polynomial gives a density estimate, and removing neighborhoods of the few bad boxes leaves most of the interval inside zero-free strips suitable for approximation.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero density carves the t-interval into long regions where a logarithmic branch is controllable",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u04.txt",
+          "unit_bytes": 4555,
+          "unit_id": "openalex_w2591008310_v2_u04",
+          "unit_sha256": "22f156766ca52b5f1fda75314b35b65fbf231b69221d04a0058e77148bb7d3e8",
+          "unit_type": "zero-excision-and-density-package",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts zero control into a usable domain in three stages: Jensen's inequality bounds zeros in unit-height disks; the truncated Dirichlet series M_H for F^{-1} enters through F(s)M_H(s)-1 as a zero detector yielding a density estimate; then logarithmic t-blocks containing zeros, together with neighboring margins, are deleted to form the retained set I_3. The key conceptual operation is therefore not a topological removal but a quantitative pipeline from an analytic detector to a count and then to a geometric restriction of the integration domain. It gains zero-free regions on which the subsequent coefficient asymptotic is posed, while losing bad blocks and edge regions and giving no everywhere-in-t conclusion.",
+            "nonparaphrase_operation": "Factors the construction by function: reciprocal-polynomial truncation detects zeros, density bounds limit contaminated blocks, and block excision converts that count into a restricted analytic domain. This also makes explicit the tradeoff between a coherent good set and the loss of uniform coverage.",
+            "quality_reason": "Accepted because the Jensen, reciprocal-polynomial detector, block deletion, and I_3 mechanisms are directly identifiable. The revision removes unsupported topological language and limits quantitative claims to the qualitative size-loss structure warranted by the OCR-degraded span.",
+            "source_support": "Lemmas 3–5 state a Jensen zero count and progressively stronger qualitative density bounds. Lemma 4 explicitly identifies F(s)M_H(s)-1, with M_H the first H terms of the Dirichlet series for F^{-1}, as the zero-detecting function and says Lemma 1 is used. The span then partitions the t-interval, removes zero-containing blocks and margins, names the remaining intervals I_3, and states Lemma 6's asymptotic over I_3. Exact exponents, widths, and discarded-length bounds are OCR-unsafe.",
+            "speculation_status": "The sparse-defect description is only a qualitative compression of the stated density-and-excision construction. No numerical density exponent, block width, measure loss, or branch parameter is recovered from the damaged formulas; all such quantities require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the missing proof continuation for Lemma 6 in the carried v1 package.",
+          "line_end": 460,
+          "line_start": 383,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The contour and smoothing formula are heavily damaged, but the approximation/error/diagonal sequence is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "On good intervals the chosen branch of F to the k is represented by a smoothed Dirichlet polynomial plus a shifted-contour error; second- and fourth-moment bounds control replacement errors, leaving the diagonal coefficient sum.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Mellin-smoothed Dirichlet polynomial recovers the coefficient square mass on zero-free intervals",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u05.txt",
+          "unit_bytes": 3501,
+          "unit_id": "openalex_w2591008310_v2_u05",
+          "unit_sha256": "c3e619d0a55eb6db68df9fb1e1c47dc2cfa57235aa86560e69db6944fe226644",
+          "unit_type": "dirichlet-polynomial-asymptotic-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing and zero excision together create a finite representation that retains the mean-square mass but forgets analytically awkward branch behavior. The diagonal coefficient norm becomes the sufficient statistic.",
+            "nonparaphrase_operation": "Mellin inversion bridges F^k to P(t), and mean-square orthogonality bridges P to its coefficient-square sum.",
+            "quality_reason": "The span gives the missing continuation of Lemma 6: a smoothed Dirichlet polynomial plus contour error on I_3, moment bounds for the error, restoration of excised intervals, and diagonal mean-value evaluation. The output correctly limits the result to a mean asymptotic on good regions rather than pointwise approximation. The phrase 'sufficient statistic' is interpretive and must remain local to this mean-square calculation. Exact contour, smoothing, truncation, and error claims cannot be transcribed safely from the OCR. The output identifies both representation replacement and the estimates that justify it, so it is not paraphrase-only.",
+            "source_support": "The proof of Lemma 6 writes F(s_0)^k=P(t)+E on I_3 using a smoothed finite sum of coefficients d_k(n) and a shifted-contour integral. A bound for E plus second and fourth moments controls replacing |F^k|² by |P|² and restoring the excised interval. A standard Dirichlet-polynomial mean value then gives H times Σ|d_k(n)|²n^{-2α}, with truncation errors bounded by the chosen X.",
+            "speculation_status": "The approximation depends on zero-free intervals, contour-error estimates, and selected smoothing length. It recovers an asymptotic mean on the good set, not pointwise approximation everywhere. The proof sequence is explicit in prose, but the contour, smoothing factor, and powers are heavily OCR-damaged. Treating the coefficient-square diagonal as the retained summary after smoothing is a reasonable conceptual interpretation of the proof. The formulas are heavily damaged, but the approximation-error-diagonal sequence is explicit in prose and displayed structure. The good set I_3 is defined in the preceding unit, which this unit intentionally continues; that lineage should remain linked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the source's refinement using a broader two-sided Euler-product growth condition.",
+          "line_end": 574,
+          "line_start": 461,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact coefficient exponents and finite-difference scales are badly OCR-degraded; only the semantic mechanism is safe without the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A local Euler-product estimate supplies the coefficient square mass, a repeated finite-difference identity converts separated vertical-line values into derivatives, and contradiction handles the weaker non-Galois hypothesis with an adjusted exponent.",
+          "source_id": "openalex_w2591008310",
+          "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-product coefficient growth and finite differences convert mean mass into derivative lower bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u06.txt",
+          "unit_bytes": 5111,
+          "unit_id": "openalex_w2591008310_v2_u06",
+          "unit_sha256": "e5898bdd53034f48baf6b55f881715b2b73093c91ba023f8b3eea016a1f99798",
+          "unit_type": "coefficient-mass-to-derivative-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof composes two independent resources: multiplicativity supplies mass, while discrete calculus forces some derivative to register variation of that mass across nearby lines.",
+            "nonparaphrase_operation": "S(α) bridges Euler factors to mean size; finite differences bridge values of F^{2k} on separated lines to integrals of its derivatives.",
+            "quality_reason": "The span states a coefficient-square estimate under the Euler-product hypotheses, an m-fold finite-difference identity, and uses separated sigma values to pass from value means to derivative means. It also records a modified result under a broader two-sided Euler-product growth condition. The word 'forces' should be understood inside the contradiction proof and not as an unconditional derivative principle. Exact derivative exponents and line spacings are too damaged for reliable transcription. The output performs nontrivial synthesis by separating the two proof resources, rather than simply renaming lemmas.",
+            "source_support": "Lemma 7 estimates the coefficient-square Dirichlet series S(α) under the two Euler-product hypotheses. Lemma 8 gives the m-fold finite-difference integral formula. Choosing several σ-values separated on a log-log-H/log-H scale, the source uses Lemmas 6–8 to prove the lower bound for m=0 and transfer it to derivatives; under the weaker hypothesis it argues by contradiction and records an adjusted exponent for a broader two-sided growth condition.",
+            "speculation_status": "The precise derivative exponent changes between hypotheses, and the contradiction argument uses chosen constants and line spacing. The method remains tied to Euler-product coefficient estimates. The semantic mechanism is readable, but exact exponents, scales, and even parts of Lemma 7 are badly OCR-degraded; numerical transcription is unsafe. Describing the proof as composing multiplicative mass with discrete calculus is a reasonable mechanism-level interpretation. Lemma 7 and the subsequent exponents are badly OCR-degraded. The finite-difference identity itself and the qualitative transfer are legible."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+        "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1"
+      }
+    }
+  ]
+}

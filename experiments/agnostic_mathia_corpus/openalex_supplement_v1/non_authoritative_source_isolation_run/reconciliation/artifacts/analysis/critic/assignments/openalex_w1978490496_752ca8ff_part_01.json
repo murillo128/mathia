@@ -1,0 +1,742 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_character_group_inversion_reduction": {
+      "analysis_id": "agnostic_oa_generation_620688c384154c965226ffbf614bef6ede13d15db3192838cf28aaed4affd948",
+      "boundary_or_failure": "The group interpretation needs a suitable completion of the enveloping algebra and a target field K for characters. A multiplicative character is essential; an arbitrary linear evaluation is not a group point. The stated primitive reduction is made in the source's formal renormalization setting and does not by itself verify convergence or physical correctness.",
+      "interpretation": "Treating the commutative Hopf algebra as coordinates on a formal group turns a character H_R to K into a K-valued group point, equivalently a group-like element in a completion of the dual enveloping algebra. Recursive subtraction is then group inversion. Because composite tree coordinates are generated through the coproduct from primitive, no-subdivergence inputs, the representation change isolates those primitives as the irreducible data from which the full inverse is synthesized.",
+      "nonparaphrase_operation": "Replace a termwise subtraction recurrence by evaluation of the inverse character: verify multiplicativity, move to the completed character group, invert using the Hopf antipode, and track which inputs are primitive. This gives a diagnostic boundary—if the evaluation is not a character, the group-inversion reduction is unavailable.",
+      "source_support": "The artifact states that H_R is the coordinate algebra of a nilpotent formal group, identifies K-points with characters and with group-like elements in a suitable completion, and says this structure reduces renormalization computation to primitive elements. The diagnostic workflow spells out the conditions implicit in those statements.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "This short span states rather than fully proves the application-level reduction, and its target is a formal-power-series field. The exact completion and analytic status are not specified here; no novelty claim is made.",
+      "unit_id": "agnostic_oa_character_group_inversion_reduction"
+    },
+    "agnostic_oa_cut_insertion_lie_duality": {
+      "analysis_id": "agnostic_oa_generation_57cd7cffdc7587452d89a11ef66524b1dab6251d8b66f722851bfc6066d228e6",
+      "boundary_or_failure": "The operation counts single admissible cuts in the chosen rooted-tree basis and is explicitly not the operadic transplantation operation. The dual enveloping-algebra statement relies on the graded/commutative Hopf setting in which the relevant dual products are defined; arbitrary decomposition coalgebras need not yield the same pre-Lie-type symmetry.",
+      "interpretation": "Dualization reverses the decomposition encoded by the coproduct: a coefficient counting cuts with branch T1 and trunk T2 becomes the coefficient for synthesizing T from Z_T1 and Z_T2. The insertion-like product is not associative, but its associator counts two-branch simple cuts and is symmetric in the two inserted branches. That symmetry makes antisymmetrization satisfy Jacobi and identifies the dual Hopf algebra as an enveloping algebra of tree-indexed primitives.",
+      "nonparaphrase_operation": "Transpose cut incidence into an insertion matrix, then classify two-step insertions by whether the corresponding pair of cuts is jointly admissible. The unmatched terms are precisely symmetric under exchanging the two branches; antisymmetrizing kills this associator defect and yields the Lie bracket.",
+      "source_support": "The artifact defines the star product by numbers of single cuts, proves the associator counts cardinality-two simple cuts and is symmetric in its first two inputs, derives Jacobi for the commutator, and proves that the rooted-tree Hopf algebra is dual to the enveloping algebra of the resulting Lie algebra. The matrix-transpose language is interpretive.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "Long summations and dual-pairing notation are extraction-sensitive, though the combinatorial proof is complete in prose. Exact cut multiplicities require the typeset basis conventions; no novelty or operadic identification is asserted.",
+      "unit_id": "agnostic_oa_cut_insertion_lie_duality"
+    },
+    "agnostic_oa_formal_diffeomorphism_duality": {
+      "analysis_id": "agnostic_oa_generation_46750d57fedcf5a7c524f85893d1ba1f444383536fca0dfbbe430c120cf9a424",
+      "boundary_or_failure": "The identification is for a one-dimensional formal group of diffeomorphisms tangent to the identity and uses graded/finite-jet duals and appropriate completions. It does not identify arbitrary Hopf algebras with diffeomorphism groups, and coefficient formulas in delta and PBW coordinates are basis-dependent.",
+      "interpretation": "Passing from the commutative delta-coordinate algebra to its dual enveloping algebra exposes formal vector fields; passing back identifies those coordinates with functions on formal diffeomorphisms. Under this bridge, the coproduct represents composition of formal maps and the antipode represents compositional inversion, explaining why its delta-coordinate polynomial is complicated although inversion itself is natural at the group level.",
+      "nonparaphrase_operation": "Change from recursive coordinate polynomials to the represented group action, perform inversion there, and pull the result back to coordinates. Comparing two coordinate bases separates the invariant operation—composition/inversion—from the basis-dependent coefficients used to express it.",
+      "source_support": "The artifact derives the dual Lie algebra of formal vector fields, introduces PBW coordinates, computes sample antipode coordinates, and states Theorem 8 identifying the Hopf algebra with coordinates on the group G2 of formal diffeomorphisms. It explicitly interprets the antipode as psi mapping to psi inverse. The representation-change procedure is inferred from that theorem.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The theorem-level bridge is clear, but OCR and layout make the jet scalings, transpose notation, and displayed coefficients unsafe to reproduce verbatim. The proof of the final canonical identification is referred to another work, and no novelty comparison was performed.",
+      "unit_id": "agnostic_oa_formal_diffeomorphism_duality"
+    },
+    "agnostic_oa_grafting_coassociativity": {
+      "analysis_id": "agnostic_oa_generation_57c43aa45d4b9559ddba8de86ca5ba221a6d65eeb7e3352dfe858e6a450efb4a",
+      "boundary_or_failure": "The induction depends on the precise grafting compatibility Delta L=L tensor 1+(id tensor L)Delta and on coassociativity at lower degree. A recursively defined constructor without such a cocycle identity does not inherit coassociativity. The proof is for the commutative rooted-tree algebra with simple cuts.",
+      "interpretation": "Grafting L creates a new root above a forest. Every cut of the grafted tree is either the top contribution L(a) tensor 1 or comes from independently cutting the input forest and grafting its retained side, giving a local identity for Delta composed with L. Because every nontrivial tree is obtained by grafting lower-degree trees, that identity turns the global coassociativity check into induction on constructor depth.",
+      "nonparaphrase_operation": "Fuse the two coassociativity diagrams through the grafting identity: expand each side only once at the outer constructor, replace the remaining triple coproduct of the input by the induction hypothesis, and compare the same three terms. This avoids enumerating double cuts and generalizes as a proof template only when an analogous constructor law is available.",
+      "source_support": "The artifact defines simple cuts and grafting L, proves Delta composed with L equals L tensor 1 plus (id tensor L) composed with Delta by a cut correspondence, and then proves coassociativity inductively by expanding both sides into identical three-term expressions. The diagram-fusion description restates the proof mechanism.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "Dense tensor typography is extraction-sensitive, especially operator placement, but the direction of the grafting identity and inductive architecture are explicit. No claim is made that every cut-based coalgebra satisfies it or that the result is novel.",
+      "unit_id": "agnostic_oa_grafting_coassociativity"
+    },
+    "agnostic_oa_growth_extension_formal_vector_fields": {
+      "analysis_id": "agnostic_oa_generation_8dd9841d51c0490da78bafecbbffd32e09441fe458b1b2e1c0e4b14a3b3ce913",
+      "boundary_or_failure": "The resulting Lie map is surjective, not injective: distinct tree shapes of the same degree can collapse to the same formal-vector-field generator, weighted by growth multiplicity. The extension uses the particular grading, natural-growth derivation, and extra generators Z_0 and Z_-1; its formula should not be transferred without the coproduct compatibility identity.",
+      "interpretation": "Natural growth is almost a coderivation, with a controlled correction involving the one-vertex tree and the grading. Transposing it lowers tree generators, and adjoining grading and translation elements extends the tree Lie algebra. The map Theta sends each tree T to its growth-history multiplicity times the formal vector field of degree deg(T), making the indexed diffeomorphism calculus an explicit quotient of the shape-sensitive tree calculus.",
+      "nonparaphrase_operation": "Compute the kernel-visible information loss of the representation change: retain only vertex degree and aggregate growth multiplicity, and identify any shape contrast annihilated by Theta. The coproduct case split proves this coarse statistic still intertwines the Lie structure, while noninjectivity records which dependency geometry it forgets.",
+      "source_support": "The artifact proves the corrected coproduct identity for N by separating whether the new edge is cut and where it lies, extends the Hopf and Lie algebras, and states Theorem 8 giving a surjective Lie homomorphism Theta(Z_T)=n(T)Z_n. The quotient/information-loss analysis follows from the explicit surjection and formula.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The derivation identities and indices are formula-dense, so exact coefficients and generator normalization need typeset verification. Surjectivity and the preserved degree/multiplicity statistic are explicit; the full kernel is not characterized in this unit and novelty is unassessed.",
+      "unit_id": "agnostic_oa_growth_extension_formal_vector_fields"
+    },
+    "agnostic_oa_ht_recursive_hopf_structure": {
+      "analysis_id": "agnostic_oa_generation_eeb134a22f34364a158824085a01d8b609095e48eabcf85b91a84a8ebf3a61e7",
+      "boundary_or_failure": "The explicit presentation concerns the codimension-one transverse-geometry Hopf algebra and its chosen generators Y, X, and delta_n. Triangularity is crucial: if a coproduct of a new generator were allowed to depend non-well-foundedly on equally or more complex generators, the stated recursive construction of the antipode would not follow. Exact low-degree coefficients are extraction-sensitive.",
+      "interpretation": "The coproduct records how each generator decomposes under composition, with Delta(delta_n)=delta_n tensor 1+1 tensor delta_n plus terms involving lower stages. This triangular dependency makes the convolution equation for the antipode solvable recursively: inversion is not an extra termwise trick but a consequence of supplying compatible multiplication, coproduct, counit, and grading-like complexity.",
+      "nonparaphrase_operation": "Extract a dependency order from the coproduct and run convolutional back-substitution: solve the inverse on primitive generators, then on each higher generator using only already-solved lower terms. This turns compositional decomposition data into a terminating inversion algorithm and predicts failure when the dependency order has cycles.",
+      "source_support": "The artifact presents the algebra relations, defines the coproduct on Y, X, and delta_1, extends Delta(delta_n) inductively, proves the bialgebra is Hopf, and characterizes S as convolution inverse. Lemma 2 explicitly places the reduced coproduct of delta_n in lower-generator augmentation ideals. The back-substitution description is an inference from this triangular form.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The semantic mechanism is explicit, but exact displayed coefficients and whether a downstream normalization uses S or its transpose should be checked against the typeset source. The source notes that S squared is not the identity, so no involutivity is inferred; novelty is unassessed.",
+      "unit_id": "agnostic_oa_ht_recursive_hopf_structure"
+    },
+    "agnostic_oa_natural_growth_subalgebra": {
+      "analysis_id": "agnostic_oa_generation_17ac4d87b10400683d20cb0765c104ec7b799c1c880c4409dd0180ae83d3f237",
+      "boundary_or_failure": "Closure is proved for the specially weighted combinations delta_k=N^k(e), not for an identification of every individual tree with a single indexed generator. Multiplicities and grading matter, and the four cut cases use rooted-tree admissibility. The later map to formal vector fields is therefore a coarsening, not an isomorphism of the full tree algebra.",
+      "interpretation": "Natural growth N attaches one new leaf at every vertex and extends derivationally to forests. Sorting cuts of a grown tree by whether the new edge is cut and whether growth occurs in the branch or trunk yields the same triangular coproduct recurrence as the indexed delta-generators. Thus sums of tree shapes with growth multiplicities close as a Hopf subalgebra and provide a concrete refinement of the formal-diffeomorphism coordinates.",
+      "nonparaphrase_operation": "Define an aggregation map that forgets individual shape but weights each tree by the number of growth histories producing it. Prove it is structure-preserving by a four-way partition of cuts around the new edge; the partition explains both the recurrence and why omitting multiplicities would generally break the bridge.",
+      "source_support": "The artifact defines N, delta_k=N^k(e), its derivation rule, states that the delta_k span a closed Hopf subalgebra, and derives the coproduct recurrence by classifying how cuts interact with the newly grown vertex. It explicitly notes nontrivial multiplicities. The aggregation interpretation follows from these formulas.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "Figure 13 is damaged and several indexed recurrence terms are layout-sensitive, so coefficients should be verified in the typeset source. Confidence is high in the cut classification, derivation property, and subalgebra claim; novelty was not assessed.",
+      "unit_id": "agnostic_oa_natural_growth_subalgebra"
+    },
+    "agnostic_oa_overlaps_as_decorated_primitives": {
+      "analysis_id": "agnostic_oa_generation_b2a08c8683fed88359db27a826068e245ae432d705fbfdcd8819c737410bce97",
+      "boundary_or_failure": "The argument is a construction outline whose detailed proof is deferred. It assumes an extension containing the rooted-tree Hopf algebra, a matching reduced coproduct in that subalgebra, and recursive reduction of proper subobjects; it does not show that arbitrary overlapping dependency systems admit such a decorated-tree presentation.",
+      "interpretation": "For an overlapping object t_Gamma, choose a linear combination T_Gamma of rooted trees with the same reduced coproduct. Their residual U=t_Gamma-T_Gamma then has zero reduced coproduct, hence is primitive. Rather than changing the decomposition algebra, one can add U as a new primitive vertex decoration and repeat recursively for deeper overlaps. The overlap complexity moves into irreducible labels while the cut/grafting calculus remains unchanged.",
+      "nonparaphrase_operation": "Perform coproduct residualization: match the decomposable part in the existing tree basis, subtract it, test whether the residual is primitive, and promote a primitive residual to a decoration. This is analogous to adjoining a basis element for the kernel of the reduced coproduct and predicts failure if no matching decomposable part or well-founded recursion exists.",
+      "source_support": "The artifact writes the coproduct of an overlapping graph element, asserts existence of T_Gamma in H_R with the same reduced term R_Gamma, computes U as primitive, and says enlarging the decorations and recursing handles the excluded cases. It explicitly notes that a detailed version appears elsewhere. The kernel language is an algebraic interpretation of the displayed subtraction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The existence of the matching tree combination is justified only by reference to prior constructions/maximal forests, and the general recursive argument is not self-contained here. The conclusion is therefore retained as source-supported outline within its Hopf assumptions, with novelty unconfirmed.",
+      "unit_id": "agnostic_oa_overlaps_as_decorated_primitives"
+    },
+    "agnostic_oa_scheme_invariant_recursive_subtraction": {
+      "analysis_id": "agnostic_oa_generation_57a2e5f875e9f808a81daeda0d31f3e428e6b17114f0a18d7a112a63e782a378",
+      "boundary_or_failure": "The argument is demonstrated for the regularized-integral toy model and assumes the bracket evaluation leaves the relevant divergent part unchanged. It does not show that every projection-like map is an admissible scheme, nor does combinatorial pairing alone establish physical renormalization or convergence of unrelated analytic problems.",
+      "interpretation": "Cuts induce nested bracket evaluations of counterterms. Each normal-cut contribution X is paired with a full-cut contribution carrying one extra evaluation [X], so their difference X-[X] has its obstructing part canceled whenever the evaluation preserves that part. The antipode fixes the recursive subtraction architecture, while the particular admissible evaluation chooses a scheme without changing the cancellation mechanism.",
+      "nonparaphrase_operation": "Pass to a quotient that records only the obstructing component. The preservation hypothesis makes X and [X] equal in that quotient, so every paired difference vanishes there; because the antipode partitions the expansion into these pairs, the total corrected expression has no obstructing component. This derives scheme tolerance from an invariant quotient rather than from evaluating the toy integrals.",
+      "source_support": "The artifact relates forests to cuts, derives bracket structure from the antipode, lists several evaluation schemes, and states that finiteness follows because normal/full-cut pairs contribute X-[X] while bracket evaluation preserves the divergent part. The quotient formulation is an abstraction of this explicit cancellation argument.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The source uses informal language about preserving the divergent part and does not axiomatize every admissible evaluation in this span. Exact bracket nesting is formula-sensitive; the accepted conclusion is the conditional cancellation mechanism, not a novelty or physics claim.",
+      "unit_id": "agnostic_oa_scheme_invariant_recursive_subtraction"
+    },
+    "agnostic_oa_tree_cuts_coproduct_antipode": {
+      "analysis_id": "agnostic_oa_generation_7e6bcfb58aaa9a95aeeb3cf4fca4a1651ac57320a6517474117dd9d2044c60e3",
+      "boundary_or_failure": "The cut calculus relies on a rooted, simply connected, laminar structure and admissibility—at most one cut along each root path. Hopf-algebraic cancellation alone does not prove analytic finiteness under an arbitrary evaluation; that needs the later preservation condition. Damaged figures prevent exact reconstruction of every example term.",
+      "interpretation": "An admissible cut decomposes a tree into a rooted trunk R^C(t) and a product of pruned branches P^C(t). Summing all such decompositions defines the coproduct, while the antipode recursively subtracts every proper decomposition. In the all-cuts form, each normal cut pairs with the corresponding full cut of opposite parity, making convolutional cancellation visible as an involution on cut choices rather than a mysterious expansion.",
+      "nonparaphrase_operation": "Reindex the antipode proof by pairing every normal cut with the full cut obtained by adding the distinguished edge. The paired terms have the same branch/trunk product and opposite signs, which supplies a sign-reversing cancellation certificate; admissibility simultaneously prevents incompatible nested cuts in the coproduct.",
+      "source_support": "The artifact defines root removal and grafting, admissible cuts, branch and trunk factors, the recursive and cut-sum coproducts, the recursive antipode, and the nonrecursive all-full-cuts formula. It explicitly proves cancellation by normal/full-cut pairs with cardinalities differing by one. The certificate framing is an interpretation of that proof.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The definitions and cancellation logic are readable, but exact small-tree multiplicities depend on damaged figures and formula layout. No analytic or physical claim is inferred from the combinatorial identity alone, and novelty is unconfirmed.",
+      "unit_id": "agnostic_oa_tree_cuts_coproduct_antipode"
+    },
+    "agnostic_oa_tree_dependency_encoding": {
+      "analysis_id": "agnostic_oa_generation_c100c5bbf375576271cad16e3be983e52f040a3e1b8c57b3fafa41fe2c30180f",
+      "boundary_or_failure": "A single rooted tree faithfully encodes laminar dependencies—nested or disjoint—not genuinely overlapping ones. It preserves incidence and nesting while forgetting analytic kernels, integration values, labels unless decorated, and other domain semantics. The motivating regularized integrals and figure-dependent examples are not independently evaluated here.",
+      "interpretation": "A vertex stands for a subproblem, an edge toward the root says its dependency is nested inside its parent, and separate branches say the dependencies are disjoint. The tree therefore factors analytic expressions into a structural dependency skeleton and local vertex data, allowing arbitrarily deep nesting and parallel decomposition to share one recursive calculus.",
+      "nonparaphrase_operation": "Apply a laminarity test to a family of subproblems: nested pairs become ancestor relations and disjoint pairs become separate branches. If every pair passes, synthesize the unique dependency tree up to relabeling; an overlapping pair is a witness that a single undecorated tree representation is insufficient.",
+      "source_support": "The artifact defines functions indexed by rooted trees and explicitly states that edges toward the root represent nested integrations while unconnected vertices represent disjoint integrations. It then introduces rooted-tree operations motivated by this encoding. The laminarity test and information-loss account are conceptual consequences of those statements.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "Several pictured low-degree trees are damaged, but the nesting-versus-disjointness semantics is explicit in prose. Transfer beyond laminar dependency systems requires a separate representation argument, and novelty relative to any corpus was not checked.",
+      "unit_id": "agnostic_oa_tree_dependency_encoding"
+    },
+    "agnostic_oa_universal_cocycle_characterization": {
+      "analysis_id": "agnostic_oa_generation_372bf699692e03fff96eae7f1e500e0f1ea4e13f8f2a0fea935efc1051bb1aab",
+      "boundary_or_failure": "Universality is in the stated category of commutative Hopf algebras equipped with this augmentation-based Hochschild one-cocycle, and the morphism direction is from the rooted-tree object to each such pair. Changing commutativity, coefficients, cocycle convention, or compatibility condition changes the universal problem; this is not an unrestricted uniqueness claim about tree representations.",
+      "interpretation": "The grafting map L is a nontrivial one-cocycle because its coproduct compatibility is exactly the cocycle equation and L(1) is nonzero whereas coboundaries vanish at 1. More strongly, rooted trees are freely generated by iterating grafting and multiplication: specifying any compatible cocycle L1 in another commutative Hopf algebra recursively fixes a unique Hopf morphism, so the tree algebra is characterized by its mapping property rather than by a chosen list of trees.",
+      "nonparaphrase_operation": "Given a target cocycle, evaluate a tree bottom-up: send the one-vertex tree to L1(1), multiply the images of its root branches, then apply L1. Induction simultaneously proves that this forced algebra map respects the coproduct, converting the universal property into an explicit recursion and a test for uniqueness.",
+      "source_support": "The artifact defines the relevant cochain differential, proves L is a non-coboundary one-cocycle, states the universal theorem, and constructs the unique morphism recursively on grafted tree generators before checking coproduct compatibility by induction. The bottom-up evaluator is extracted from equations 89-94.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 12 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "Cochain signs and tensor placement are formula-sensitive in the normalized text. The theorem and morphism direction are clear, but any use in a different Hochschild convention needs rechecking; no novelty comparison was made.",
+      "unit_id": "agnostic_oa_universal_cocycle_characterization"
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_character_group_inversion_reduction": "agnostic_oa_critic_8b72a6d1842c8e039143c21c3c8bbf9e2abe16235deddb87addf505614b0d42b",
+    "agnostic_oa_cut_insertion_lie_duality": "agnostic_oa_critic_991c725a5d3eca9c416a5a97ab9033918919f7394269fd81e772ad61196da396",
+    "agnostic_oa_formal_diffeomorphism_duality": "agnostic_oa_critic_4a4432a62ac7078dc822d6586e2e13cafa0054d925a508f7f3fb1a0a43e2d625",
+    "agnostic_oa_grafting_coassociativity": "agnostic_oa_critic_014c08ca55dfdafe698dd31fe6ed7cd217d60d3b80079bc8ea314f34caa1790b",
+    "agnostic_oa_growth_extension_formal_vector_fields": "agnostic_oa_critic_89d313b9578d4a4b6c643cb68740ce4f323370bf13bf1adc38eefb98965c2281",
+    "agnostic_oa_ht_recursive_hopf_structure": "agnostic_oa_critic_6586fa3606ecfe82d9e649f1972d76b6dd9402060022f8b497174cd4047db1a9",
+    "agnostic_oa_natural_growth_subalgebra": "agnostic_oa_critic_1a5d1006feec17a726d396d23859cef592be80947396f19a8922430c5fbd5f64",
+    "agnostic_oa_overlaps_as_decorated_primitives": "agnostic_oa_critic_4dd43eedbd35b4394154212a935f131ab871c7237fdf51b996c516b4622a2fd6",
+    "agnostic_oa_scheme_invariant_recursive_subtraction": "agnostic_oa_critic_ee811fe88e6c14f4726f2e00e3b39abbcdefbb5d10133eb813430471d23a0ed3",
+    "agnostic_oa_tree_cuts_coproduct_antipode": "agnostic_oa_critic_61deb12b52277de80679e9d8d8335c7348260c830a1ffe728038a793db53ca7b",
+    "agnostic_oa_tree_dependency_encoding": "agnostic_oa_critic_8e6a99293295dd7a2419c16556c66057a12fa5362a4527f42f1782559e5dbb74",
+    "agnostic_oa_universal_cocycle_characterization": "agnostic_oa_critic_8126fb7fe5e12a2c0ade908321a39a10f79e59a16bfff92ef5f93260c8827b3f"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w1978490496_752ca8ff_part_01.jsonl",
+  "source_id": "openalex_w1978490496",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_ht_recursive_hopf_structure.txt",
+      "artifact_bytes": 4059,
+      "artifact_relpath": "depth/units/agnostic_oa_ht_recursive_hopf_structure.txt",
+      "artifact_sha256": "f8a41123883f17d1736ef9e938288b190ebeca5682a7a5c04718d2f2628c8cf7",
+      "content_sha256": "f5010e37ef60b6043912b475d5717cb3a3aac0dcfd8790f483da04d18f8f70d2",
+      "context_note": "The presentation is for the codimension-one transverse-geometry Hopf algebra; exact low-degree coproduct coefficients are formula-sensitive, but the recursive semantic mechanism is explicit.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_ht_recursive_hopf_structure",
+            "agnostic_oa_formal_diffeomorphism_duality",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_growth_extension_formal_vector_fields",
+            "agnostic_oa_character_group_inversion_reduction"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies several internally linked instances where dualization or passage to a coordinate group exposes composition, inversion, insertion, and primitive constraints. This supports the routed lens but does not establish novelty relative to #44."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 161,
+      "line_start": 74,
+      "representation_dependency": "Depends on the chosen generators Y, X, and delta_n for formulas, while the coproduct-plus-antipode pattern is representation-independent.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Generators and relations are equipped with a coproduct whose triangular recursion makes the antipode constructible as convolution inverse. The reusable move is to encode how a composite object splits, then obtain inversion or cancellation from the coalgebra rather than by ad hoc term manipulation.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Recursive Hopf structure turns composition data into an inverse operation",
+      "unit_id": "agnostic_oa_ht_recursive_hopf_structure",
+      "unit_type": "construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_formal_diffeomorphism_duality.txt",
+      "artifact_bytes": 14848,
+      "artifact_relpath": "depth/units/agnostic_oa_formal_diffeomorphism_duality.txt",
+      "artifact_sha256": "c06a6411eea3b29f36bec3433a082dcb639ab2d2fa6533ab285d632d38c839e0",
+      "content_sha256": "1f025f95d0e90a0e098e9590edd1ee59e9cf6552e13122b854eee523bd61ce89",
+      "context_note": "The theorem-level identification is clear, although the intervening PBW calculations and displayed coordinate formulas contain glyph and layout risk and should not be copied coefficient-for-coefficient without the PDF.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_ht_recursive_hopf_structure",
+            "agnostic_oa_formal_diffeomorphism_duality",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_growth_extension_formal_vector_fields",
+            "agnostic_oa_character_group_inversion_reduction"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies several internally linked instances where dualization or passage to a coordinate group exposes composition, inversion, insertion, and primitive constraints. This supports the routed lens but does not establish novelty relative to #44."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 453,
+      "line_start": 162,
+      "representation_dependency": "The coordinate formulas depend strongly on the delta_n and jet bases; the duality and composition/inversion interpretation survives a change of coordinates.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source passes from a commutative coordinate Hopf algebra to the enveloping algebra of formal vector fields and then identifies the coordinate algebra with formal diffeomorphisms. Under this bridge, the antipode acquires the concrete semantic meaning of compositional inversion, showing how a difficult recursive algebraic operation becomes natural in a group representation.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Dualization identifies Hopf coordinates with composition and inversion of formal diffeomorphisms",
+      "unit_id": "agnostic_oa_formal_diffeomorphism_duality",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tree_dependency_encoding.txt",
+      "artifact_bytes": 2666,
+      "artifact_relpath": "depth/units/agnostic_oa_tree_dependency_encoding.txt",
+      "artifact_sha256": "da8ccef9cfcbd37bf915a2c3b1b02da2b3461b0cac5724505b22e4452a6aac13",
+      "content_sha256": "2c6fccc67b199061315fa0590dfe5232910bf62bed419b22a87367cc6b928609",
+      "context_note": "The motivating functions are regularized integrals, but the accepted content is only the generic dependency-to-tree encoding; the displayed examples are partly figure-dependent.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_grafting_coassociativity",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Nested, disjoint, and overlapping dependency relations are converted into rooted trees, cuts, trunks, branches, and primitive decorations. The representation makes decomposition and recursive cancellation explicit; novelty relative to existing records remains untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 698,
+      "line_start": 644,
+      "representation_dependency": "Uses rooted trees as the chosen representation; the underlying distinction between nesting and disjointness is invariant under relabeling and independent of the QFT application.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A nested dependency is represented by an edge toward the root and independent dependencies by separate branches. This compresses arbitrarily nested or disjoint subproblem structure into one generic combinatorial object and separates structural bookkeeping from the analytic expressions that motivated it.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Rooted trees encode nested and disjoint dependency structure",
+      "unit_id": "agnostic_oa_tree_dependency_encoding",
+      "unit_type": "abstraction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tree_cuts_coproduct_antipode.txt",
+      "artifact_bytes": 13895,
+      "artifact_relpath": "depth/units/agnostic_oa_tree_cuts_coproduct_antipode.txt",
+      "artifact_sha256": "0c25b346db9629d3d2a2fa588a69f2bb73ba40cde07493d72afd9943434c177b",
+      "content_sha256": "3571505a24f2859a1323ab4a0f5fe4d593765f39e45890dcde8a248836e3912d",
+      "context_note": "Several small-tree examples are conveyed only by damaged figures, so the unit supports the definitions and proofs but not exact recovery of every pictured term.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_grafting_coassociativity",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Nested, disjoint, and overlapping dependency relations are converted into rooted trees, cuts, trunks, branches, and primitive decorations. The representation makes decomposition and recursive cancellation explicit; novelty relative to existing records remains untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1009,
+      "line_start": 699,
+      "representation_dependency": "The formulas use rooted trees and a distinguished root, but the move generalizes to recursively decomposable structures with compatible cuts.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Root removal and grafting decompose and synthesize trees, while admissible cuts partition a tree into pruned branches and a rooted trunk. Summing these decompositions defines a coassociative coproduct, and recursive or all-cuts formulas define an antipode whose cancellation follows by pairing normal and full cuts with opposite sign.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Admissible cuts turn decomposition into a coproduct and recursive cancellation into an antipode",
+      "unit_id": "agnostic_oa_tree_cuts_coproduct_antipode",
+      "unit_type": "construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_scheme_invariant_recursive_subtraction.txt",
+      "artifact_bytes": 3455,
+      "artifact_relpath": "depth/units/agnostic_oa_scheme_invariant_recursive_subtraction.txt",
+      "artifact_sha256": "92dffe2185a1d57276d8068392f0960f14b2269a31e2dffd79605bcaea198cee",
+      "content_sha256": "0cc6a3d717b03b5cecac7bc48ff0a4f973c3825454d34aed3dd3acff5219011b",
+      "context_note": "The claim is demonstrated on a renormalization toy model; acceptance concerns the abstract cancellation-under-preservation argument, not evaluation of the integrals or physical validity.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1073,
+      "line_start": 1010,
+      "representation_dependency": "The bracket notation and divergence extractor are scheme-specific, whereas the preservation condition and paired recursive cancellation are structural.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Cuts induce nested brackets, and the antipode pairs an expression with its evaluated subtraction. Finiteness follows from cancellation in each normal/full-cut pair whenever the evaluation preserves the divergent part, yielding a reusable principle: isolate a bad component with a projection-like operation and organize recursive correction independently of the particular admissible evaluation scheme.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Recursive subtraction remains valid across evaluations that preserve the obstructing part",
+      "unit_id": "agnostic_oa_scheme_invariant_recursive_subtraction",
+      "unit_type": "invariance"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_natural_growth_subalgebra.txt",
+      "artifact_bytes": 4768,
+      "artifact_relpath": "depth/units/agnostic_oa_natural_growth_subalgebra.txt",
+      "artifact_sha256": "8c48cd7c803114bcff4c046bbd5e74647fc9032a8bf4713a4f93833cca933ee1",
+      "content_sha256": "edf41869f3a3be9cc899a0faf875d9997dcfcfc1e68a30e4304b1c5d012a691e",
+      "context_note": "Figure 13 is damaged, but the four-way cut classification and algebraic recurrence are recoverable from prose and formulas.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1305,
+      "line_start": 1217,
+      "representation_dependency": "The growth operator is defined on rooted trees and the target uses indexed coordinates; the existence of a structure-preserving bridge, not the labels, is the reusable content.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Natural growth attaches a new vertex in all possible positions and acts derivationally on forests. Classifying how a cut interacts with the new edge gives a recursive coproduct relation and shows that the grown combinations form a closed Hopf subalgebra, thereby constructing a precise bridge from tree labels to the integer-indexed formal-diffeomorphism presentation.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "A growth derivation exposes a structured subalgebra shared by two representations",
+      "unit_id": "agnostic_oa_natural_growth_subalgebra",
+      "unit_type": "bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_grafting_coassociativity.txt",
+      "artifact_bytes": 7141,
+      "artifact_relpath": "depth/units/agnostic_oa_grafting_coassociativity.txt",
+      "artifact_sha256": "f54568d10d5ddb63364f006e146829c8441fc5b80ee4a643367e00a03ce21026",
+      "content_sha256": "6fa4a9e8be50e8d0eb35c7256379ae6313d1303b4b84f5f4c4db270090fdc29e",
+      "context_note": "Dense tensor displays are somewhat layout-sensitive, but the proof architecture and the cut-to-grafting correspondence remain readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_grafting_coassociativity",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Nested, disjoint, and overlapping dependency relations are converted into rooted trees, cuts, trunks, branches, and primitive decorations. The representation makes decomposition and recursive cancellation explicit; novelty relative to existing records remains untested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1430,
+      "line_start": 1306,
+      "representation_dependency": "The proof is expressed through rooted-tree grafting, yet the constructor-compatibility induction applies to other recursively generated coalgebras.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The formal tree Hopf algebra is built from simple cuts. Instead of enumerating all double cuts directly, the proof introduces grafting L and establishes Delta composed with L equals L tensor 1 plus identity tensor L after Delta; induction then reduces coassociativity at the next degree to the previous degree. This is a reusable strategy for proving a global coherence law from a constructor-compatible local identity.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Grafting reduces coassociativity to a recursive compatibility identity",
+      "unit_id": "agnostic_oa_grafting_coassociativity",
+      "unit_type": "proof-strategy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_universal_cocycle_characterization.txt",
+      "artifact_bytes": 4559,
+      "artifact_relpath": "depth/units/agnostic_oa_universal_cocycle_characterization.txt",
+      "artifact_sha256": "00070a1f0be84132b9be8ba3ec489a804838b4ac54a9ed707180a480fc20f204",
+      "content_sha256": "ad4b20a9c95f96594d6b854f1b7a39f2b6a4a612a93a6ec34975dcb6360f1015",
+      "context_note": "This is a theorem with an explicit inductive existence-and-uniqueness argument; exact cochain signs remain formula-sensitive in the normalized extraction.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1520,
+      "line_start": 1431,
+      "representation_dependency": "The rooted-tree model realizes the universal object, while the characterization by unique compatible morphisms is presentation-independent.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The grafting operator is recognized as a nontrivial Hochschild one-cocycle, and the pair consisting of the Hopf algebra and this cocycle is shown universal: every comparable pair receives a unique compatible Hopf morphism. The construction upgrades an example-dependent combinatorics into a canonical object specified by what maps out of it.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "A universal cocycle property characterizes the rooted-tree Hopf algebra",
+      "unit_id": "agnostic_oa_universal_cocycle_characterization",
+      "unit_type": "universal-property"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_cut_insertion_lie_duality.txt",
+      "artifact_bytes": 6397,
+      "artifact_relpath": "depth/units/agnostic_oa_cut_insertion_lie_duality.txt",
+      "artifact_sha256": "cfcc60736da649a210413a5b23d76540dfb306baaa240f68803479e95d6fb104",
+      "content_sha256": "a8c655bb11d6ed67504c22e51b04363ad94038b9696cc2b518ab47698497b0af",
+      "context_note": "The proof is algebraically complete in the text, though long summations are extraction-sensitive and the source cautions that this operation is not the same as operadic transplantation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_ht_recursive_hopf_structure",
+            "agnostic_oa_formal_diffeomorphism_duality",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_growth_extension_formal_vector_fields",
+            "agnostic_oa_character_group_inversion_reduction"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies several internally linked instances where dualization or passage to a coordinate group exposes composition, inversion, insertion, and primitive constraints. This supports the routed lens but does not establish novelty relative to #44."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1655,
+      "line_start": 1540,
+      "representation_dependency": "The cut counts and tree basis determine coefficients; the deeper decomposition-to-insertion duality does not depend on the physical decorations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Dualizing the commutative tree Hopf algebra yields an enveloping algebra whose primitive generators are indexed by trees. Counting single cuts defines an insertion-like product; symmetry of its associator makes antisymmetrization satisfy Jacobi, so decomposition data in the coproduct becomes synthesis data and a Lie bracket in the dual representation.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Single cuts dualize to insertion and an antisymmetric Lie bracket",
+      "unit_id": "agnostic_oa_cut_insertion_lie_duality",
+      "unit_type": "duality"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_growth_extension_formal_vector_fields.txt",
+      "artifact_bytes": 9873,
+      "artifact_relpath": "depth/units/agnostic_oa_growth_extension_formal_vector_fields.txt",
+      "artifact_sha256": "43b855d111a520916ee0e3e78f5bd7757d5f57a1ea40b8c3dc9fae88ebaea1ea",
+      "content_sha256": "94bee74f7a1ea7ce7249884654bd7879b3ee52ea7a61329ee9d6fbfb7f9df94d",
+      "context_note": "The derivation identities are formula-dense, but the case split on whether the new edge is cut and the resulting structure-preserving map are readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_ht_recursive_hopf_structure",
+            "agnostic_oa_formal_diffeomorphism_duality",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_growth_extension_formal_vector_fields",
+            "agnostic_oa_character_group_inversion_reduction"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies several internally linked instances where dualization or passage to a coordinate group exposes composition, inversion, insertion, and primitive constraints. This supports the routed lens but does not establish novelty relative to #44."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1852,
+      "line_start": 1656,
+      "representation_dependency": "The map forgets detailed tree shape through multiplicities and retains the formal-vector-field degree, explicitly exhibiting what the coarser representation preserves and forgets.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The source derives how natural growth interacts with the coproduct, extends the Hopf and Lie structures by grading and translation generators, and constructs a surjective Lie homomorphism from the refined tree algebra to formal vector fields. This makes precise that the tree calculus refines, rather than merely resembles, the ordinary composition calculus.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Extending the growth operator produces a quotient map to formal vector fields",
+      "unit_id": "agnostic_oa_growth_extension_formal_vector_fields",
+      "unit_type": "structure-preserving-map"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_character_group_inversion_reduction.txt",
+      "artifact_bytes": 1670,
+      "artifact_relpath": "depth/units/agnostic_oa_character_group_inversion_reduction.txt",
+      "artifact_sha256": "461e1608da409b59f6b4b2157caed53b53aa1b4dfd250946e356e36b8a780808",
+      "content_sha256": "6f4cd32a24dedfe129dc5f1aad67c97adbd8a3fbcf2c9a9909d326fc42560a06",
+      "context_note": "The application sentence is stated for regularized Feynman diagrams, but the character-group and primitive-reduction mechanism is generic Hopf algebra mathematics.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_ht_recursive_hopf_structure",
+            "agnostic_oa_formal_diffeomorphism_duality",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_growth_extension_formal_vector_fields",
+            "agnostic_oa_character_group_inversion_reduction"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies several internally linked instances where dualization or passage to a coordinate group exposes composition, inversion, insertion, and primitive constraints. This supports the routed lens but does not establish novelty relative to #44."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1879,
+      "line_start": 1853,
+      "representation_dependency": "Requires a suitable completion and a target coefficient field for characters; the reduction to primitive elements follows from the Hopf structure rather than the QFT interpretation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Viewing the Hopf algebra as coordinates on a formal group identifies algebra characters with group-like elements. Inversion in this group reduces the full recursive subtraction problem to primitive inputs, illustrating how a representation change can isolate irreducible cases and synthesize all composite corrections.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Characters convert recursive subtraction into group inversion and reduce work to primitives",
+      "unit_id": "agnostic_oa_character_group_inversion_reduction",
+      "unit_type": "reduction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_overlaps_as_decorated_primitives.txt",
+      "artifact_bytes": 4735,
+      "artifact_relpath": "depth/units/agnostic_oa_overlaps_as_decorated_primitives.txt",
+      "artifact_sha256": "987215deea093cf7c075c50a144aaa676b571db38bb4b119e37f86f625b2ccb6",
+      "content_sha256": "e8659e4ef0e0509edd23263bf68e53851dfaa23f5f0d15ed4c980482f106ae40",
+      "context_note": "The argument is sketched and its detailed proof is deferred; the result should be treated as a supported construction outline, not a fully self-contained general theorem for arbitrary dependency systems.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_grafting_coassociativity",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Nested, disjoint, and overlapping dependency relations are converted into rooted trees, cuts, trunks, branches, and primitive decorations. The representation makes decomposition and recursive cancellation explicit; novelty relative to existing records remains untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 2162,
+      "line_start": 2064,
+      "representation_dependency": "The conclusion is internal to the specified Hopf-algebra conditions and decorated-tree representation; transfer to unrelated overlap systems requires independently checking the coproduct and primitive assumptions.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "For an object with overlapping substructures, the source matches its reduced coproduct with that of a linear combination of rooted trees. Their difference is primitive, so the apparent extension is absorbed by enlarging the decoration set and recursing. The reusable move is to preserve the decomposition algebra while relocating irreducible residual complexity into primitive labels.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Overlapping dependencies reduce to tree combinations plus enlarged primitive decorations",
+      "unit_id": "agnostic_oa_overlaps_as_decorated_primitives",
+      "unit_type": "normal-form-reduction"
+    }
+  ]
+}

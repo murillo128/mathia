@@ -1,0 +1,146 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2066135483",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2066135483_e85600ca_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After squarefree Poisson summation, zero frequency supplies the primary residues, square nonzero frequencies supply a necessary secondary term, and only their combined pole cancellation yields the regular mean value.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "b25_openalex_w2066135483_u09",
+          "b25_openalex_w2066135483_u12",
+          "b25_openalex_w2066135483_u13"
+        ],
+        "proposed_limit": "The exact hierarchy is tied to quadratic Gauss sums and the selected family.",
+        "source_id": "openalex_w2066135483",
+        "synthesis_id": "riemann_v2_within_3b09fcf74ec53447cb9df583",
+        "title": "Poisson frequency hierarchy for quadratic families"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The three lemmas are selected together because their composition, not any isolated bound, drives Proposition 2.3.",
+          "line_end": 800,
+          "line_start": 693,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the prime-power cases and transforms require reliable formula layout.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Links prime-power Gauss evaluations and real-character moment bounds to a Poisson formula that turns a squarefree character average into zero and nonzero dual frequencies.",
+          "source_id": "openalex_w2066135483",
+          "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gauss-sum local structure, quadratic large sieve, and Poisson dualization",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u09.txt",
+          "unit_bytes": 5173,
+          "unit_id": "b25_openalex_w2066135483_u09",
+          "unit_sha256": "1b946f2596c62bd00156eae8c4e92471079bab2b3faa992e9850055acd2787b3",
+          "unit_type": "analytic toolkit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local arithmetic evaluation determines which dual frequencies can contribute, while global averaging inequalities bound what remains. The zero frequency is positioned to yield a principal term and nonzero frequencies to yield oscillatory structure or error.",
+            "nonparaphrase_operation": "Quadratic Gauss sums bridge characters to additive Fourier modes; Poisson summation bridges the discriminant average to the dual k-sum; the large sieve supplies norm control.",
+            "quality_reason": "The span states the prime-power Gauss-sum cases, two real-character large-sieve or moment bounds, and the Poisson formula with a full dual k-sum. The output correctly warns that conductors, coprimality, local cases, and normalizations are essential.",
+            "source_support": "Lemma 3.3 gives multiplicativity and case-by-case values of Gk(p^β). Lemmas 3.4–3.5 state real-character large-sieve and L-moment bounds. Lemma 3.6 gives a Poisson formula for the truncated squarefree average with Gauss weights Gk(n) and transformed test function F̃.",
+            "speculation_status": "The lemmas must be composed with correct conductors, coprimality, and prime-power cases. Formula extraction errors would change vanishings or local factors. The role of each lemma is clear, but exact case conditions and normalization of Gk and F̃ require scan verification. Positioning the zero dual frequency as a likely principal term and the nonzero frequencies as oscillatory structure is a reasonable forward inference from the displayed Poisson decomposition. Exact prime-power cases and transformed-test-function normalization are formula sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Ends at the decomposition R0 equals remainder plus secondary principal term.",
+          "line_end": 1460,
+          "line_start": 1194,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; residue locations, Euler factors, and transform bounds depend on formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Poisson summation first isolates the square condition in the zero frequency and its Euler product, then Mellin dualization shows that poles from square dual frequencies must be retained as a second main term rather than discarded as error.",
+          "source_id": "openalex_w2066135483",
+          "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+          "source_page_markers_inside_unit": [
+            20,
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero frequency gives residues; square nonzero frequencies create a secondary principal term",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u12.txt",
+          "unit_bytes": 15078,
+          "unit_id": "b25_openalex_w2066135483_u12",
+          "unit_sha256": "355d0aac5711728c8f09a05b2821b94a66db2c83e6f5fd86dfbc030ac5dbd2df",
+          "unit_type": "Poisson main-term extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Dualization reveals a hierarchy invisible in the original character average: zero frequency gives the expected diagonal, but arithmetic degeneracy at square nonzero frequencies is coherent enough to survive averaging at main-term scale.",
+            "nonparaphrase_operation": "Poisson summation and Gauss sums bridge discriminants to dual frequencies; Euler products and Mellin contours bridge square conditions to residues.",
+            "quality_reason": "The proof explicitly applies Poisson summation, separates k=0 from k nonzero, uses G0 to impose the square condition, extracts four residues, and finds additional poles when negative k is a square. The output correctly identifies the square nonzero frequencies as a secondary principal term and notes that the artifact ends at the incomplete R0=R+Q definition.",
+            "source_support": "The proof expands the averaged Aδ,τ expression and applies Lemma 3.6, defining P(l) from k=0 and R0(l) from k≠0. For P(l), G0(ln) vanishes unless ln is a square, reducing n to l1m² and producing residues at ±τ and ±δ. Mellin analysis of R0 shows that when −k is a square, zeta factors have poles at w=±δ, motivating a second main term Q(l).",
+            "speculation_status": "Treating every nonzero frequency as error would lose Q(l). The artifact stops just as R0=R+Q is introduced, so later formulas are outside this unit. The final line is visibly truncated at the definition of Q and R; no missing formula should be reconstructed from memory. Calling the square dual frequencies coherent enough to survive at principal scale is a faithful interpretation of their poles. The last definition is physically truncated; the output correctly refuses to reconstruct it."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the auxiliary bilinear estimate because it is the reason the averaged remainder is acceptable.",
+          "line_end": 1995,
+          "line_start": 1486,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; local factors and several exponent inequalities should be scan verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Analytically continues the secondary series, exploits an even functional equation to pair contour integrals, proves individual and averaged remainder bounds, and shows cancellation of the delta-poles between the two principal contributions.",
+          "source_id": "openalex_w2066135483",
+          "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+          "source_page_markers_inside_unit": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry cancels spurious poles while two-scale bounds control the remainder",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u13.txt",
+          "unit_bytes": 28589,
+          "unit_id": "b25_openalex_w2066135483_u13",
+          "unit_sha256": "2f4949218dae63a86b5631cf278a953b7b0cd54047ca5789916cba46b97da8b7",
+          "unit_type": "cancellation and error architecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Apparent singularities are artifacts of decomposition. Functional symmetry is the invariant that identifies which residues are structural and which must cancel when the two frequency sectors are recombined.",
+            "nonparaphrase_operation": "Euler factorization bridges square dual frequencies to zeta products; the even J-function bridges opposite contours; bilinear averaging bridges large individual remainders to acceptable family error.",
+            "quality_reason": "The span factors and analytically continues the secondary series, derives the even J identity, reflects contours, proves individual and bilinear averaged remainder bounds, and explicitly cancels the delta residues between primary and secondary terms. The output correctly states that the averaged remainder estimate is essential and that exact local factors are required for cancellation.",
+            "source_support": "The section factors the square-frequency series H, extends it analytically, derives an identity Jμ,δ(s;l)=Jμ,δ(−s;l), and uses contour reflection to evaluate the secondary principal integral. It proves pointwise and averaged bounds for R(l), the latter through a bilinear lemma and large-sieve estimates, then shows the ±δ residues from P2 cancel those from P, leaving the ±τ main terms of Proposition 2.3.",
+            "speculation_status": "The cancellation requires exact local factors and both principal pieces. Bounding only individual R(l) would be too weak for the later sum, so the averaged estimate is essential. Many local factors and exponent inequalities are extraction-sensitive; the cancellation and error architecture are explicit, but formula-level reproduction needs scan checking. Interpreting the canceled poles as artifacts of splitting the frequency sectors is directly warranted by their disappearance only after recombination. Local factors and exponent inequalities are extraction-sensitive, though the symmetry and cancellation architecture is clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_056c08d4fc1a9d560ee626f9ace134e5540406f057b8c071149af82aef37ac63",
+        "dossier_sha256": "4d0991a0cdc275b455a8017f7680c9de5410a3494e20c8b1da26a42c131b2c7b"
+      }
+    }
+  ]
+}

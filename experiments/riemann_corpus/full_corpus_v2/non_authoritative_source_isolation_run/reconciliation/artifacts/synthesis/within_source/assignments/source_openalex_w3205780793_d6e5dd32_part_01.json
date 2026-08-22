@@ -1,0 +1,589 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w3205780793",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w3205780793_d6e5dd32_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "pNB implies RH when a uniform positive-probability event simultaneously keeps every dilation in the deterministic admissible range; the smallest dilation also controls a quantitative lower bound on how well the random family can approximate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3205780793_v2_u02",
+          "openalex_w3205780793_v2_u04",
+          "openalex_w3205780793_v2_u05"
+        ],
+        "proposed_limit": "Expected approximation without the joint support event does not by itself produce an admissible deterministic witness.",
+        "source_id": "openalex_w3205780793",
+        "synthesis_id": "riemann_v2_within_8272260ece3110e184c58f37",
+        "title": "Positive probability converts random approximation into deterministic existence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the roadmap separating positive-probability extraction, concentration, coefficient control, and dilated examples.",
+          "line_end": 212,
+          "line_start": 175,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact norm notation is formula-sensitive; the structural distinction is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines pNB and gNB as genuinely different placements of expectation and records Jensen's implication pNB⇒gNB, which governs the rest of the paper's logic.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Randomize inside or outside the squared approximation error",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u02.txt",
+          "unit_bytes": 2555,
+          "unit_id": "openalex_w3205780793_v2_u02",
+          "unit_sha256": "b1d42629d68ea9a4f520460ac5b1431b7c98569d55b168b28a1583c218629682",
+          "unit_type": "probabilistic criterion design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The placement of expectation changes the controlled object: pNB controls the expected squared Hilbert-space norm of the random residual, whereas gNB controls only the squared norm of its expectation. Jensen therefore gives pNB implies gNB, while averaging in gNB can discard sample-to-sample variation, so no reverse implication follows here. The later routes to RH are conditional rather than intrinsic to these definitions: the roadmap pairs pNB with Assumption (P), and pairs the stated gNB converse with a moment assumption and coefficient-growth condition (C).",
+            "nonparaphrase_operation": "Comparing the two representations isolates the information lost by averaging before measuring error: gNB can retain a small mean residual even when individual residuals vary, while pNB also penalizes that variation. This explains the Jensen direction without treating either later set of sufficient hypotheses as part of the criteria themselves.",
+            "quality_reason": "Accepted after replacing inherent extraction and anti-tail claims with the exact Jensen relation and proof-route-specific conditional statements; the OCR-collapsed distance typography does not obscure the two formulas or implication direction.",
+            "source_support": "Definition 1 displays expectation outside the squared approximation error for pNB and inside each fractional-part kernel for gNB. The source then invokes (EX)^2 <= E(X^2) for the one-way pNB-to-gNB implication, and Section 1.4 separately states the auxiliary assumptions used by the later pNB- and gNB-to-RH results.",
+            "speculation_status": "No speculative equivalence or necessity claim is made; the implication and later sufficient assumptions are source-explicit, while the information-loss description is a direct interpretation of Jensen's inequality."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The argument is an existence proof: positive expected performance alone is insufficient without the support event.",
+          "line_end": 347,
+          "line_start": 287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and inequalities are coherent; exact ε normalization should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses Markov's inequality and a uniformly positive event on which every random dilation lies in (0,1] to select one outcome satisfying the classical Nyman-Beurling criterion.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Intersect good approximation with admissible support to recover a deterministic witness",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u04.txt",
+          "unit_bytes": 3505,
+          "unit_id": "openalex_w3205780793_v2_u04",
+          "unit_sha256": "d23ba41aab08f0d788a0d8a5f4670bdb6e34219ebcb2a1017602e65993959629",
+          "unit_type": "probabilistic-method extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts a random approximation into a deterministic Nyman-Beurling witness by satisfying two constraints at one outcome. pNB and Markov yield a strict lower bound P(A_n)>1-nu for the small-error event, while Assumption (P) gives P(B_n)>nu for simultaneous admissibility 0<Z_{k,n}<=1. Their strict probability sum exceeds one, forcing P(A_n intersect B_n)>0; evaluating at an outcome in that intersection supplies both the approximation and admissible deterministic parameters. This theorem and this extraction argument do not cover pNB without (P), but they do not prove that every possible pNB-to-RH argument requires (P).",
+            "nonparaphrase_operation": "Factoring the witness requirement into approximation and dictionary admissibility shows exactly what each event contributes and why strict slack matters: non-strict bounds summing only to one would not force a positive intersection in the displayed calculation. Assumption (P) is thus essential to this proof mechanism, not established as a universal necessity.",
+            "quality_reason": "Accepted after narrowing the candidate's necessity language and making the missed strict-inequality mechanism explicit; the event definitions and epsilon scaling are sufficiently clear in the exact span.",
+            "source_support": "Definition 2 states the uniform bound P(B_n)>nu. In Theorem 4, pNB supplies D_n^2<epsilon^2 nu; Markov gives P(A_n)>1-nu, and the displayed inclusion-exclusion calculation gives positive intersection probability. The chosen outcome defines theta_k=Z_{k,n}(omega) with error at most epsilon and 0<theta_k<=1, allowing the classical criterion to be applied.",
+            "speculation_status": "No claim is made that (P) is necessary for the implication itself; only its explicit role in this theorem's sufficient event-intersection construction is retained."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides a diagnostic obstruction complementary to the sufficient positive-probability argument.",
+          "line_end": 397,
+          "line_start": 348,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The precise lower-bound constant and logarithm require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transfers a deterministic distance lower bound to the random family on its admissible-support event and shows pNB error cannot decay faster than a logarithmic quantity governed by E|log mn|.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smallest random dilation limits approximation quality",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u05.txt",
+          "unit_bytes": 3239,
+          "unit_id": "openalex_w3205780793_v2_u05",
+          "unit_sha256": "ca521c05c5c5a3bd576f33fda047710594ee71147819c5deb21ed1df3ca89e62",
+          "unit_type": "obstruction lower bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Randomization does not erase geometric limitations of the approximation dictionary. Extreme small scales determine how rapidly the span can approach the target.",
+            "nonparaphrase_operation": "Conditioning on the admissible-support event and substituting the random minimum into the deterministic distance d(lambda) bridge fixed-parameter obstruction to a random-family lower bound.",
+            "quality_reason": "On the event M_n at most one, the deterministic lower bound with minimum parameter m_n applies, and Assumption (P) keeps that event uniformly nonnegligible. Cauchy-Schwarz and expectation then yield the stated inverse-logarithmic lower bound involving E|log m_n|. The analysis correctly treats the result as a rate obstruction rather than a converse or nonconvergence theorem. 'Randomization does not erase geometry' is rhetorical, but the conditioned deterministic distance d(m_n) provides the exact mechanism.",
+            "source_support": "Let m_n be the minimum and M_n the maximum of the random dilations. On the event M_n<=1, a known deterministic lower bound for approximants whose parameters are at least lambda applies with lambda=m_n. Assumption P gives this event uniformly positive probability, and Cauchy-Schwarz transfers the bound to the expected random error, yielding D_n^2 bounded below up to constants by 1/(log 2+E|log m_n|).",
+            "speculation_status": "The lower bound is diagnostic rather than a converse criterion and depends on Assumption P and integrability of the logarithmic minimum. It constrains rates, not merely convergence versus nonconvergence. The transfer mechanism is clear, but the implied constant and precise logarithmic expression are formula-sensitive and should be verified from the PDF. Interpreting the random minimum as the geometric bottleneck inherited from the deterministic dictionary is source-specific and useful. The implied constant and log expression are display-sensitive; the proof direction and dependencies are readable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "When random dilations stay sufficiently close to 1/k, explicit Möbius-weighted deterministic approximants survive perturbation because low frequencies are controlled by variance and high frequencies by zeta growth and kernel moments.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3205780793_v2_u01",
+          "openalex_w3205780793_v2_u03",
+          "openalex_w3205780793_v2_u06"
+        ],
+        "proposed_limit": "The converse uses RH twice and depends on strong quantitative concentration; it is not a general stability theorem for arbitrary random dilations.",
+        "source_id": "openalex_w3205780793",
+        "synthesis_id": "riemann_v2_within_722359810b29ece673853adf",
+        "title": "Concentration makes deterministic Báez-Duarte approximants stable under randomization"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the distance interpretation and the open need for analytic noncompact kernels.",
+          "line_end": 174,
+          "line_start": 98,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The criteria are readable; exact Mellin domains, constants, and distance asymptotics should be verified against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how the fractional-part kernel has Mellin transform proportional to zeta, states NB and discrete Báez-Duarte closure criteria, and identifies compact support as the obstacle in the general strong criterion.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin transforms turn fractional-part approximation into zero exclusion",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u01.txt",
+          "unit_bytes": 5082,
+          "unit_id": "openalex_w3205780793_v2_u01",
+          "unit_sha256": "8ee5669b62afbae91d6f8b4477f3a4b3932bd9afa49c4cece0bee28697b65c68",
+          "unit_type": "equivalent-criteria bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Approximation error is converted into analytic information because a hypothetical zero annihilates the kernel transforms but not the target transform. Restricting the dictionary and broadening the target kernel reveal different proof burdens.",
+            "nonparaphrase_operation": "The fractional-part function, Mellin transform, Hilbert-space closure, Muntz operator, and distance d_n bridge approximation theory to the zero set of zeta.",
+            "quality_reason": "The span gives the Mellin transform of fractional-part kernels, the Nyman-Beurling and discrete Baez-Duarte equivalences, the failure of pointwise Moebius convergence in H, and distance bounds. It also states the general good-kernel criterion with a compact-support and zero-free-Mellin converse and identifies noncompact analytic kernels as the open obstruction. The answer does not claim the noncompact converse without extra conditions and correctly separates pointwise from L2 convergence. 'Approximation becomes zero exclusion' is common language, but the exact Mellin multiplier -theta^s zeta(s)/s and closure criteria make it source-specific.",
+            "source_support": "The Mellin transform of rho_theta(t)={theta/t} is -theta^s zeta(s)/s in the critical strip. Nyman-Beurling states RH equivalently as L2 approximation of the indicator by such functions with theta in (0,1], and Baez-Duarte restricts to theta=1/n. A general strong criterion uses Muntz transforms of good kernels; RH gives approximation, while the stated converse assumes compact support and a zero-free Mellin transform.",
+            "speculation_status": "Pointwise Mobius convergence is not L2 convergence, lower bounds limit approximation rates, and the general converse does not automatically cover noncompact analytic kernels. The criteria and structural obstacle are clear. Exact Hilbert-space conventions, constants in the distance asymptotic, and Mellin domains should be verified from the PDF. Describing a hypothetical zeta zero as annihilating transformed approximants but not the target accurately anticipates the proof mechanism signposted in this span. Hilbert-space typography, distance constants, and precise Mellin domains need PDF verification; the logical directions are legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the Hilbert-space setup, Fubini identity, exact norm, and tail estimate together.",
+          "line_end": 285,
+          "line_start": 214,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constant log(2π)-γ and the tail exponent should be PDF-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the L2 norm of {X/t} as a constant times EX and bounds its large-t tail from a higher moment, providing the analytic conditions used by both probabilistic criteria.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Control random Beurling functions by moments of their dilation",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u03.txt",
+          "unit_bytes": 4411,
+          "unit_id": "openalex_w3205780793_v2_u03",
+          "unit_sha256": "b1dd3347b087ff4885d0b566e5828bed02eb26acfdde96c7987c3c487161243e",
+          "unit_type": "random-kernel integrability toolkit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Scaling separates the universal fractional-part kernel from the law of X: the law enters the total norm through one moment and tail regularity through stronger moments. This makes integrability assumptions transparent rather than hidden.",
+            "nonparaphrase_operation": "The product Hilbert space, the change t=Xu, the tail indicator, and moment inequalities connect random variables to deterministic norm estimates.",
+            "quality_reason": "Proposition 2.1 uses t=Xu to factor the random law from the universal fractional-part integral and obtains an exact squared norm proportional to E X. Proposition 2.2 uses a tail indicator, Cauchy-Schwarz, and Markov to obtain a stronger moment-dependent large-t bound. No later theorem is smuggled in; the answer explicitly says a first moment alone does not provide the stronger tail estimate. 'Scaling separates universal kernel from law' is broad but directly realized by the change of variables and the exact constant log(2pi)-gamma.",
+            "source_support": "The random Beurling function rho_X(t)={X/t} is placed in L2(Omega times (0,infinity)). A change of variables gives its exact squared norm as (log(2pi)-gamma) E X. For X in L2 and alpha in (0,1), Fubini, Cauchy-Schwarz, and Markov inequalities bound the tail integral from M to infinity after multiplication by M^alpha in terms of a moment norm of X.",
+            "speculation_status": "A finite first moment proves membership but does not by itself give the stronger uniform tail bounds needed later. The second proposition requires stronger positivity and moment assumptions. The proof structure is clear. The exact exponent and norm notation in the tail estimate are extraction-sensitive and should be PDF-checked. Calling first and higher moments different forms of analytic currency is a reasonable conceptual compression of membership versus tail control. The exponent and norm notation on the right side of Proposition 2.2 are damaged, so exact quantitative reuse needs the PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "RH enters both through quantitative Báez-Duarte approximation and through Lindelöf growth; the proof makes these uses explicit.",
+          "line_end": 555,
+          "line_start": 399,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense; Gamma parameters, variance exponent, cutoff tuning, and Plancherel constants require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves RH⇔pNB for random variables whose square roots have the right means, uniformly tiny variances, and a nondegenerate first coordinate, using explicit Möbius-weighted approximants and frequency-split Plancherel estimates.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Small perturbations of 1/k preserve the Báez-Duarte approximation",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u06.txt",
+          "unit_bytes": 10450,
+          "unit_id": "openalex_w3205780793_v2_u06",
+          "unit_sha256": "360b7b511291f5eb8214b574ec333a13b34d9f8be473280ff3d1c6d634fc69b1",
+          "unit_type": "concentration-stability theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof is a stability theorem for an approximation dictionary. It identifies the perturbation scale small enough that a known deterministic RH witness survives randomization.",
+            "nonparaphrase_operation": "Square-root variables linearize the critical-line power bound; Mobius coefficients, Mellin-Plancherel, zeta on the critical line, and the tunable cutoff T_n connect concentration to Hilbert error.",
+            "quality_reason": "The theorem states the exact mean, variance-decay, and first-coordinate conditions and proves pNB equivalent to RH. The reverse direction verifies Assumption (P) using union and Chebyshev bounds; the forward construction under RH uses bounded Moebius coefficients, Mellin-Plancherel, a square-root power inequality, Lindeloef, and a tuned frequency split. The answer explicitly records both uses of RH and does not present the result as assumption-free evidence. 'Stability theorem' is a generic label, but the mean at 1/sqrt(k), n^{-3-vartheta} variance, critical-line split, and two RH inputs make it discriminating.",
+            "source_support": "For Y_{k,n}=sqrt(X_{k,n}) with mean 1/sqrt(k), uniformly tiny variance, and a nondegenerate first coordinate, the theorem proves RH iff pNB. The reverse direction verifies Assumption P by union and Chebyshev bounds. Under RH, Mobius-weighted Baez-Duarte approximants are perturbed from rho_{1/k} to rho_{X_{k,n}}; Plancherel expresses the error on Re s=1/2, an inequality bounds powers through Y variance, and a frequency split at T_n=n^alpha is balanced using Lindelof growth.",
+            "speculation_status": "Both directions need the stated mean, variance, and first-coordinate conditions. RH is used in two independent ways, so the result is not evidence free of RH assumptions. The proof architecture is clear, but gamma parameters, variance exponent, cutoff inequalities, and Plancherel constants are OCR-sensitive and require PDF verification. Calling the theorem stability of the Baez-Duarte approximation dictionary under sufficiently small random perturbations is a faithful conceptual synthesis. Gamma parameters, cutoff inequalities, variance powers, and Plancherel constants are OCR-sensitive; the architecture is clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The survival function of X turns E{X/t} into a Müntz transform, allowing deterministic good-kernel results to supply gNB approximants while a coefficient-weighted tail condition replaces compact support in the reverse zero-exclusion argument.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3205780793_v2_u07",
+          "openalex_w3205780793_v2_u08",
+          "openalex_w3205780793_v2_u09",
+          "openalex_w3205780793_v2_u10"
+        ],
+        "proposed_limit": "The equivalence is established for the stated dilated laws and moment assumptions, not for every noncompact kernel or every random family.",
+        "source_id": "openalex_w3205780793",
+        "synthesis_id": "riemann_v2_within_f07e5a504f684d63f2953d41",
+        "title": "Müntz transforms are expectations of randomized fractional-part kernels"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This deterministic proof is retained because Section 3.2 reuses its architecture with moving tails.",
+          "line_end": 626,
+          "line_start": 557,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers and coefficient identity are display-sensitive but the proof structure is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Assumes a zero, evaluates the Mellin transform of an approximant to a nonzero constant, and shows both the near-zero and tail pieces vanish by Cauchy-Schwarz and coefficient control, yielding a contradiction.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Split the NB error at one to rule out a zero in the half strip",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u07.txt",
+          "unit_bytes": 5463,
+          "unit_id": "openalex_w3205780793_v2_u07",
+          "unit_sha256": "dd69d0494bb49cb1c139f356a8f021e27e53d0664ead9c9e8a48eafb0c2d0693",
+          "unit_type": "Mellin contradiction template",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The zero acts as an annihilator of the approximating span but not of the target. Domain splitting isolates two different control mechanisms needed to make that functional continuous along the approximating sequence.",
+            "nonparaphrase_operation": "Mellin evaluation at a putative zero, the split at one, and the tail coefficient identity bridge Hilbert approximation to zero exclusion.",
+            "quality_reason": "At a putative zero in the half strip, the Mellin transform of every approximating fractional-part kernel is annihilated while the target contributes 1/s. The source splits at t=1, bounds the local part by Cauchy-Schwarz and d_n, and uses theta_k at most one to reduce every tail fractional part to theta_k/t and control the coefficient sum by the same error. No converse beyond the displayed deterministic NB sufficient direction is claimed, and the answer correctly limits transfer to noncompact random kernels. 'Annihilator of the span' is abstract terminology but exactly predicts why the Mellin identity becomes 1/s at a zero.",
+            "source_support": "Assuming NB approximation and a zero zeta(s)=0 with one-half<Re s<1, Mellin transforming the error gives exactly 1/s. On (0,1), Cauchy-Schwarz bounds the transform by d_n divided by a factor depending on Re s. On (1,infinity), the fractional parts reduce to theta_k/t and the coefficient sum is bounded by the same L2 error, so both pieces tend to zero, contradicting 1/s.",
+            "speculation_status": "The deterministic proof relies on theta_k in (0,1] and on the special tail form of fractional parts. Noncompact random kernels need a moving cutoff and extra tail assumptions instead. The contradiction structure is explicit. Exact powers and the coefficient identity are display-sensitive but the logical mechanism is stable. Describing the zero as an annihilating functional and the split as isolating two continuity mechanisms is a precise conceptual reading. Some powers and the coefficient identity are display-sensitive, though the proof's inequalities and logical contradiction are intact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The three-stage tail split explains precisely why condition (C), rather than compact support, closes the proof.",
+          "line_end": 845,
+          "line_start": 627,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; quantifiers in the moment and tail assumptions and all cutoff powers need source verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the Mellin contradiction to an admissible target by choosing a moving cutoff, controlling the local term by approximation error, and using moment plus coefficient-tail assumptions for the far term.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pay for noncompact kernels with coefficient-weighted tail control",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u08.txt",
+          "unit_bytes": 15549,
+          "unit_id": "openalex_w3205780793_v2_u08",
+          "unit_sha256": "b2910fd39f5a45b187f5572828774921ac34894ca2692c71a8e42a5e42db2c2b",
+          "unit_type": "controlled-noncompact sufficiency",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Compact support is replaced by an explicit accounting system: probability tails are harmless only when weighted by the coefficients that amplify them. The moving boundary synchronizes local approximation quality with global escape control.",
+            "nonparaphrase_operation": "The Mellin transform at a putative zero, M_n, event split Z<=M_n versus Z>=M_n, moment condition, and coefficient-tail condition C form the proof bridge.",
+            "quality_reason": "The theorem states admissibility, summed moment control, gNB, and coefficient-weighted condition (C), then evaluates the Mellin error at a hypothetical zero. It chooses a moving M_n synchronized with D_n, controls the near part by gNB, and decomposes the far fractional-part term by whether Z exceeds M_n, using moments, target tails, and condition (C). The answer does not claim gNB alone is enough and keeps the result to the stated half strip and admissible targets. 'Moving boundary synchronizes local and global control' is polished, but the exact requirement M_n^(2sigma-1)D_n^2 to zero makes it substantive.",
+            "source_support": "For an admissible target with nonzero Mellin transform in the half strip and a uniform tail bound, Theorem 8 assumes gNB, summed moment control of Z_{k,n}, and condition C on coefficients times P(Z_{k,n}>=M_n). At a hypothetical zeta zero, the Mellin transform of the error equals the nonzero target transform. Choosing M_n tending to infinity with M_n^{2sigma-1}D_n^2 tending to zero, the proof bounds the near integral by gNB and decomposes the far integral according to whether Z exceeds M_n, using Cauchy-Schwarz, moments, target tails, and C to make every term vanish.",
+            "speculation_status": "gNB alone is insufficient for noncompact kernels; condition C and admissibility are substantive extra hypotheses. The theorem excludes zeros only in the stated half strip and does not prove that arbitrary analytic kernels qualify. The three-stage architecture is clear, but quantifiers, moment exponents, cutoff powers, and constants are highly formula-dependent and must be verified against the PDF. Calling this an accounting system that replaces compact support and makes coefficient amplification of rare tails explicit is a strong, source-grounded abstraction. Moment exponents, quantifiers, and cutoff powers are highly formula-dependent and should be PDF-verified before exact reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains why a continuous density with integrable moment gives a good kernel.",
+          "line_end": 893,
+          "line_start": 853,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The identity and derivation are readable; sign and transform convention should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the tail-integral representation of expectation and a partition into unit intervals to derive E{X/t}=-Pf(t), converting a random-dilation kernel into a deterministic analytic kernel.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expected fractional parts are negative Müntz transforms of survival functions",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u09.txt",
+          "unit_bytes": 2816,
+          "unit_id": "openalex_w3205780793_v2_u09",
+          "unit_sha256": "97478ea3d2d19c72b6839eb6008b7a675068f9d8265929f35dd85c6f78034805",
+          "unit_type": "probabilistic representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Expectation is not merely averaging noise here; it performs a representation change from random fractional parts to a deterministic transform with known Mellin behavior.",
+            "nonparaphrase_operation": "The survival function f, unit-interval decomposition, scaling, and Muntz operator bridge probability laws to function-space approximation.",
+            "quality_reason": "The lemma derives E{X/t}=-Pf(t) from the survival function using tail integration, unit-interval decomposition, and scaling. The source separately shows that a positive integrable variable with continuous density yields a good kernel and recovers the identity by integrating against f'. No later approximation theorem is claimed in this unit; the answer keeps the regularity requirements for calling f good. 'Bridge probability laws to approximation' is broad, but the exact survival-function identity and sign make it mathematically testable.",
+            "source_support": "For positive integrable X with survival function f(x)=P(X>=x), tail integration and decomposition into unit intervals give E{X} as the integral of f minus its integer samples. Scaling X by t yields E{X/t}=-P f(t), where P is the Muntz transform. If X has a continuous density with suitable integrability, f is a good kernel and the same identity follows by integration against f'.",
+            "speculation_status": "The basic identity needs integrability, and calling f a good kernel requires additional regularity such as a continuous density and an integrable weighted derivative. The identity and derivation are readable. The sign and exact convention for the Muntz operator should be checked before reuse. Treating expectation as a representation change from random fractional parts to a deterministic Muntz transform is exact and non-paraphrastic. The sign and convention for P are legible but should still be checked before formula reuse because earlier extraction uses degraded symbols."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Together with the Section 3.2 theorem this yields an equivalence for the stated class.",
+          "line_end": 936,
+          "line_start": 895,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact coefficient indexing and moment tail bound require formula checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines bounded Báez-Duarte coefficients with the good-kernel theorem and a q-moment tail bound to establish gNB plus condition (C) for dilated random variables under RH.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Use the Müntz identity to transfer RH to gNB for X/k",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u10.txt",
+          "unit_bytes": 2295,
+          "unit_id": "openalex_w3205780793_v2_u10",
+          "unit_sha256": "72130c7cfb76b466d739544b8a8128d2a1e8a220e7882fb6b15869f41ead8f21",
+          "unit_type": "dilation equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The construction reuses one witness across representations. Analytic approximation supplies the coefficients, while probabilistic moments certify that noncompact support does not overwhelm them.",
+            "nonparaphrase_operation": "The good-kernel theorem, survival-function Muntz identity, bounded Baez-Duarte coefficients, and q-moment Markov bound connect RH to gNB plus C.",
+            "quality_reason": "Under RH, the source invokes one coefficient family uniformly bounded in k and n, transfers its approximation to a good survival kernel by Baez-Duarte plus Lemma 2, and obtains gNB for X/k. A q-moment Markov bound and convergence of the k^{-q} sum verify condition (C) for q greater than one. The answer correctly limits the proved direction to RH implying gNB plus (C) for variables with continuous density and finite q moment; it sends the converse to the separate theorem. 'Analytic coefficients plus probabilistic tails' is general language, but the bounded c_k,n, survival Muntz identity, and k^{-q} summability provide specific obligations.",
+            "source_support": "Assuming RH, bounded coefficients from quantitative Baez-Duarte approximation transfer to any good survival kernel f(t)=P(X>=t). Lemma 2 identifies P f(kt) with -E{X/(kt)}, yielding gNB for Z_k=X/k. If X has a finite q moment for q>1, Markov's inequality gives P(X/k>=M_n)<=E X^q/(k^q M_n^q); bounded coefficients and convergence of sum k^{-q} imply condition C.",
+            "speculation_status": "The direction proved is RH to gNB plus C for this dilated class. It requires a continuous density and q>1; the converse comes only by combining with the separate controlled-noncompact theorem and its target assumptions. The logic is clear, but exact coefficient indexing and tail normalization should be source-checked. Calling this reuse of one witness across analytic and probabilistic representations is a faithful conceptual extraction. Coefficient indexing and exact target notation are mildly degraded; the proof is otherwise self-contained."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Jensen makes pNB stronger than gNB, but pNB needs a positive-probability admissibility route whereas gNB needs analytic target and coefficient-tail controls to recover RH.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3205780793_v2_u02",
+          "openalex_w3205780793_v2_u04",
+          "openalex_w3205780793_v2_u08",
+          "openalex_w3205780793_v2_u11"
+        ],
+        "proposed_limit": "The paper does not claim the two criteria coincide for general correlated families; correlations are explicitly left unexplored.",
+        "source_id": "openalex_w3205780793",
+        "synthesis_id": "riemann_v2_within_2aae1e2fd591e2c0d108eafe",
+        "title": "Expectation placement changes both strength and proof obligations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the roadmap separating positive-probability extraction, concentration, coefficient control, and dilated examples.",
+          "line_end": 212,
+          "line_start": 175,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact norm notation is formula-sensitive; the structural distinction is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines pNB and gNB as genuinely different placements of expectation and records Jensen's implication pNB⇒gNB, which governs the rest of the paper's logic.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Randomize inside or outside the squared approximation error",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u02.txt",
+          "unit_bytes": 2555,
+          "unit_id": "openalex_w3205780793_v2_u02",
+          "unit_sha256": "b1d42629d68ea9a4f520460ac5b1431b7c98569d55b168b28a1583c218629682",
+          "unit_type": "probabilistic criterion design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The placement of expectation changes the controlled object: pNB controls the expected squared Hilbert-space norm of the random residual, whereas gNB controls only the squared norm of its expectation. Jensen therefore gives pNB implies gNB, while averaging in gNB can discard sample-to-sample variation, so no reverse implication follows here. The later routes to RH are conditional rather than intrinsic to these definitions: the roadmap pairs pNB with Assumption (P), and pairs the stated gNB converse with a moment assumption and coefficient-growth condition (C).",
+            "nonparaphrase_operation": "Comparing the two representations isolates the information lost by averaging before measuring error: gNB can retain a small mean residual even when individual residuals vary, while pNB also penalizes that variation. This explains the Jensen direction without treating either later set of sufficient hypotheses as part of the criteria themselves.",
+            "quality_reason": "Accepted after replacing inherent extraction and anti-tail claims with the exact Jensen relation and proof-route-specific conditional statements; the OCR-collapsed distance typography does not obscure the two formulas or implication direction.",
+            "source_support": "Definition 1 displays expectation outside the squared approximation error for pNB and inside each fractional-part kernel for gNB. The source then invokes (EX)^2 <= E(X^2) for the one-way pNB-to-gNB implication, and Section 1.4 separately states the auxiliary assumptions used by the later pNB- and gNB-to-RH results.",
+            "speculation_status": "No speculative equivalence or necessity claim is made; the implication and later sufficient assumptions are source-explicit, while the information-loss description is a direct interpretation of Jensen's inequality."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The argument is an existence proof: positive expected performance alone is insufficient without the support event.",
+          "line_end": 347,
+          "line_start": 287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and inequalities are coherent; exact ε normalization should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses Markov's inequality and a uniformly positive event on which every random dilation lies in (0,1] to select one outcome satisfying the classical Nyman-Beurling criterion.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Intersect good approximation with admissible support to recover a deterministic witness",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u04.txt",
+          "unit_bytes": 3505,
+          "unit_id": "openalex_w3205780793_v2_u04",
+          "unit_sha256": "d23ba41aab08f0d788a0d8a5f4670bdb6e34219ebcb2a1017602e65993959629",
+          "unit_type": "probabilistic-method extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof converts a random approximation into a deterministic Nyman-Beurling witness by satisfying two constraints at one outcome. pNB and Markov yield a strict lower bound P(A_n)>1-nu for the small-error event, while Assumption (P) gives P(B_n)>nu for simultaneous admissibility 0<Z_{k,n}<=1. Their strict probability sum exceeds one, forcing P(A_n intersect B_n)>0; evaluating at an outcome in that intersection supplies both the approximation and admissible deterministic parameters. This theorem and this extraction argument do not cover pNB without (P), but they do not prove that every possible pNB-to-RH argument requires (P).",
+            "nonparaphrase_operation": "Factoring the witness requirement into approximation and dictionary admissibility shows exactly what each event contributes and why strict slack matters: non-strict bounds summing only to one would not force a positive intersection in the displayed calculation. Assumption (P) is thus essential to this proof mechanism, not established as a universal necessity.",
+            "quality_reason": "Accepted after narrowing the candidate's necessity language and making the missed strict-inequality mechanism explicit; the event definitions and epsilon scaling are sufficiently clear in the exact span.",
+            "source_support": "Definition 2 states the uniform bound P(B_n)>nu. In Theorem 4, pNB supplies D_n^2<epsilon^2 nu; Markov gives P(A_n)>1-nu, and the displayed inclusion-exclusion calculation gives positive intersection probability. The chosen outcome defines theta_k=Z_{k,n}(omega) with error at most epsilon and 0<theta_k<=1, allowing the classical criterion to be applied.",
+            "speculation_status": "No claim is made that (P) is necessary for the implication itself; only its explicit role in this theorem's sufficient event-intersection construction is retained."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The three-stage tail split explains precisely why condition (C), rather than compact support, closes the proof.",
+          "line_end": 845,
+          "line_start": 627,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; quantifiers in the moment and tail assumptions and all cutoff powers need source verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the Mellin contradiction to an admissible target by choosing a moving cutoff, controlling the local term by approximation error, and using moment plus coefficient-tail assumptions for the far term.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pay for noncompact kernels with coefficient-weighted tail control",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u08.txt",
+          "unit_bytes": 15549,
+          "unit_id": "openalex_w3205780793_v2_u08",
+          "unit_sha256": "b2910fd39f5a45b187f5572828774921ac34894ca2692c71a8e42a5e42db2c2b",
+          "unit_type": "controlled-noncompact sufficiency",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Compact support is replaced by an explicit accounting system: probability tails are harmless only when weighted by the coefficients that amplify them. The moving boundary synchronizes local approximation quality with global escape control.",
+            "nonparaphrase_operation": "The Mellin transform at a putative zero, M_n, event split Z<=M_n versus Z>=M_n, moment condition, and coefficient-tail condition C form the proof bridge.",
+            "quality_reason": "The theorem states admissibility, summed moment control, gNB, and coefficient-weighted condition (C), then evaluates the Mellin error at a hypothetical zero. It chooses a moving M_n synchronized with D_n, controls the near part by gNB, and decomposes the far fractional-part term by whether Z exceeds M_n, using moments, target tails, and condition (C). The answer does not claim gNB alone is enough and keeps the result to the stated half strip and admissible targets. 'Moving boundary synchronizes local and global control' is polished, but the exact requirement M_n^(2sigma-1)D_n^2 to zero makes it substantive.",
+            "source_support": "For an admissible target with nonzero Mellin transform in the half strip and a uniform tail bound, Theorem 8 assumes gNB, summed moment control of Z_{k,n}, and condition C on coefficients times P(Z_{k,n}>=M_n). At a hypothetical zeta zero, the Mellin transform of the error equals the nonzero target transform. Choosing M_n tending to infinity with M_n^{2sigma-1}D_n^2 tending to zero, the proof bounds the near integral by gNB and decomposes the far integral according to whether Z exceeds M_n, using Cauchy-Schwarz, moments, target tails, and C to make every term vanish.",
+            "speculation_status": "gNB alone is insufficient for noncompact kernels; condition C and admissibility are substantive extra hypotheses. The theorem excludes zeros only in the stated half strip and does not prove that arbitrary analytic kernels qualify. The three-stage architecture is clear, but quantifiers, moment exponents, cutoff powers, and constants are highly formula-dependent and must be verified against the PDF. Calling this an accounting system that replaces compact support and makes coefficient amplification of rare tails explicit is a strong, source-grounded abstraction. Moment exponents, quantifiers, and cutoff powers are highly formula-dependent and should be PDF-verified before exact reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The summary diagram distinguishes logical implication from unstudied correlation structure.",
+          "line_end": 983,
+          "line_start": 938,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Gamma parameters are degraded in extraction and must be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Checks the abstract assumptions on two contrasting families and highlights that pNB can imply RH without the coefficient-tail condition required by the gNB route.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Exponential dilation and Gamma concentration realize different criteria",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u11.txt",
+          "unit_bytes": 3202,
+          "unit_id": "openalex_w3205780793_v2_u11",
+          "unit_sha256": "0095804db828614027bfc10adfa9c3671ef6046393f4fb7bc195909b484cc649",
+          "unit_type": "hypothesis stress test",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The examples stress-test hypotheses by assigning concrete laws to two distinct mechanisms rather than suggesting one universal probabilistic criterion. They show that pNB may imply RH without condition C even when gNB needs it.",
+            "nonparaphrase_operation": "Dilation by 1/k instantiates the Muntz route; Gamma concentration around 1/sqrt(k) instantiates perturbative stability of Baez-Duarte kernels.",
+            "quality_reason": "The examples instantiate the dilation route with exponential variables and the concentration route with squared Gamma variables having the stated means, variance scale, and first-coordinate limit. The source explicitly says condition (C) is not necessary for the pNB-to-RH implication in the concentrated example and leaves correlation effects unexplored. The answer does not claim numerical efficiency, necessity of (C), or any result about correlations. 'Stress-test hypotheses' is general phrasing, but the exponential dilation, Gamma concentration, implication diagram, and separate theorem dependencies make it specific.",
+            "source_support": "For X_k=X/k with X exponential, all q moments exist and the earlier gNB and condition-C theorems apply. For squared Gamma variables whose square roots have mean 1/sqrt(k) and variance of order n^{-4}, the concentration theorem gives pNB iff RH, while fourth-moment bounds also verify the summed moment hypothesis used in the gNB converse. The diagram records implications among these examples, RH, pNB, and gNB plus C.",
+            "speculation_status": "Condition C is not claimed necessary for the pNB implication, and the possible role of correlations among variables is not analyzed. The examples illustrate theorem coverage rather than compare numerical efficiency. The qualitative implication diagram is clear, but Gamma shape/rate parameters and displayed moment estimates are OCR-degraded and require PDF verification. Contrasting the two laws as realizations of distinct theorem mechanisms rather than one universal criterion is a source-grounded synthesis. Gamma shape/rate parameters and fourth-moment estimates are visibly degraded, so only the qualitative implication structure is reliable without PDF checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+        "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+      }
+    }
+  ]
+}

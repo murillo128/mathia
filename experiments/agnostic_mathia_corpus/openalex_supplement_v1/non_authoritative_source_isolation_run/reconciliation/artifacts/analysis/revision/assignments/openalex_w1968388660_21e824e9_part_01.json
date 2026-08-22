@@ -1,0 +1,342 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_background_invariant_recombination": {
+      "analysis_id": "agnostic_oa_generation_4feb82a7ecbfc2321b34c3366e860768fbee4928f8da41e0845f0ab41f750852",
+      "boundary_or_failure": "The construction first assumes theta is invertible and varies it at fixed rank, fixed closed metric g, and fixed local-frame components C_a. Holding coordinate components C_i or the open metric fixed is a different operation and need not preserve the action. The rank-one relation Q=-(B+F)^{-1} also has its own pole.",
+      "interpretation": "Writing D_i as a derivative commuting with coordinates minus iC_i removes derivative-bearing dependence from the curvature: F-hat=theta^{-1}-i[C_i,C_j]. Identifying all fixed-rank coordinate algebras with one abstract algebra and holding C_a fixed in a closed-metric frame separates background choice from the internal operator. The presentation-dependent theta and F-hat then recombine into Q=theta F-hat theta-theta, which remains fixed and, in the constant abelian case, is a function of the ordinary invariant B+F.",
+      "nonparaphrase_operation": "Strip a background split into an abstract commutator datum plus a frame map, vary only the frame/deformation, and solve for combinations annihilated by that variation. This predicts Q as the invariant coordinate and explains why F-hat or theta alone should not be compared across backgrounds.",
+      "source_support": "The artifact distinguishes background change from regulator change, rewrites covariant derivatives using C_i, identifies the fixed-rank algebra through y-coordinates, specifies holding g and C_a fixed, and states invariance of Q=theta F-hat theta-theta. It also gives Q=-(B+F)^{-1} in the constant rank-one case. The strip-and-recombine workflow is inferred from these steps.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 12 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "The formula chain is dense and index placement should be checked in the typeset source. Invariance is conditional on the specified abstract-algebra/frame identification; it is not claimed across rank changes or at the displayed poles, and novelty was not assessed.",
+      "unit_id": "agnostic_oa_background_invariant_recombination"
+    },
+    "agnostic_oa_chart_breakdown_detected_by_poles": {
+      "analysis_id": "agnostic_oa_generation_1b132a376ae4d2d2d13ef673143d34ca1ff323f46c1285ddbc8d2427e5b2b215",
+      "boundary_or_failure": "The closed formula is derived only for rank-one constant curvature. Noninvertibility of 1+F theta blocks this coordinate expression, but a pole in the map does not by itself prove that the underlying gauge-equivalence class or theory is singular. Matrix ordering and the inverse chart require separate checking outside this special case.",
+      "interpretation": "For constant rank-one curvature, deformation transport integrates to F-hat=(1+F theta)^{-1}F. The determinant-zero locus of 1+F theta is therefore a boundary of the ordinary-to-noncommutative coordinate chart. Since a reverse parametrization can have a different denominator, the two descriptions can fail on different loci even when they encode overlapping regular objects away from those loci.",
+      "nonparaphrase_operation": "Use denominator invertibility as a chart-domain test: before applying the field map, compute whether 1+F theta is invertible; if not, report representation failure rather than propagating an infinite coordinate as an intrinsic singularity. On overlapping domains, compare invariant combinations instead of extrapolating through the pole.",
+      "source_support": "The artifact gives the constant-curvature transport equation delta F-hat=-F-hat delta-theta F-hat and its solution F-hat=(1+F theta)^{-1}F. The interpretation of denominator failure as a chart boundary, rather than automatically an intrinsic singularity, is a conservative inference from the representation map.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 12 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "The excerpt does not display the inverse-map pole analysis, so only the forward denominator is directly supported here; the assignment records the two-chart interpretation. Exact matrix order should be source-checked, and no general singularity theorem is asserted.",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles"
+    },
+    "agnostic_oa_distinguish_field_redefinition_from_duality": {
+      "analysis_id": "agnostic_oa_generation_faa5cfc480b1351cc3f1f0ab71a52347994582c47af38ea61f86e5cc127e36cf",
+      "boundary_or_failure": "The fractional T-duality laws are for noncommutative tori in the specified zero-slope setting. They can be singular when a+bTheta is noninvertible, so the nominal integral duality group need not act everywhere. The same-space field redefinition has different virtues and does not preserve a simple polynomial action; the two transformations are not interchangeable.",
+      "interpretation": "Two equivalences have different structural signatures. The perturbative field redefinition exists for arbitrary Theta on the same torus (or R^n), preserves gauge rank, and trades a simple noncommutative action for a complicated ordinary one. T-duality acts fractionally on Theta and also changes metric, coupling, volume and potentially rank; for rational Theta it can reach a commutative algebra on a smaller torus while preserving a simple-form theory, but some group elements hit singular denominators.",
+      "nonparaphrase_operation": "Classify a claimed equivalence by an invariant ledger—base space, algebra parameter, volume, rank, action form, and domain. If two maps disagree on any of these, do not compose or identify them merely because both end in a commutative description. Test a+bTheta for invertibility before invoking the duality action.",
+      "source_support": "The artifact gives the fractional transformations, the rational-Theta commutative dual with changed volume, singular elements with vanishing metric/divergent Theta, and explicitly contrasts this with the section-3 field redefinition that keeps space and rank fixed but complicates the action. The ledger is an organization of these contrasts.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 12 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "Transformation matrices and convention swaps are formula-sensitive, and the excerpt notes a conjugation difference from other literature. The categorical/physical scope remains the source's torus setting; no new duality family or novelty is claimed.",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality"
+    },
+    "agnostic_oa_equivalence_relation_without_group_isomorphism": {
+      "analysis_id": "agnostic_oa_generation_50bd825d6bb9ac78e0ab523ad3ad9237bd5da1a97904b9b9481c27a23ddd0bd3",
+      "boundary_or_failure": "The map is local only to each finite order in theta, and the source explicitly leaves convergence/nonperturbative validity open. Preserving gauge-related pairs does not automatically prove a bijection of all orbit spaces without additional global properties. The field dependence of the transformed parameter is essential, not an ignorable complication.",
+      "interpretation": "A group isomorphism is impossible already in rank one because the ordinary gauge group is abelian while the star-gauge group is nonabelian. The weaker relevant object is the equivalence relation on fields: A maps to A-hat so that an ordinary transformation by lambda maps to a star-gauge transformation whose parameter lambda-hat(lambda,A) depends on both generator and base field. Thus quotient-level classes can correspond even when their chosen generating groups do not.",
+      "nonparaphrase_operation": "Descend from actions to orbit relations: test the cocycle-like compatibility A-hat(A+delta_lambda A)=A-hat(A)+delta_hat-lambda A-hat rather than seeking a homomorphism lambda to lambda-hat. Field dependence diagnoses why the construction can preserve relatedness while failing to identify group multiplication.",
+      "source_support": "The artifact contrasts the abelian and nonabelian rank-one laws, rejects a gauge-group isomorphism, states that only gauge equivalence must be preserved, and gives a field-dependent lambda-hat together with the compatibility equation. The orbit-relation framing is directly motivated by the source's explanation.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 12 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "The perturbative local construction is clear, but global injectivity, surjectivity, and convergence are not shown in this span. The source itself cites small-instanton breakdown as evidence against unrestricted nonperturbative use; novelty is unassessed.",
+      "unit_id": "agnostic_oa_equivalence_relation_without_group_isomorphism"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_background_invariant_recombination": {
+      "analysis_id": "agnostic_oa_critic_14a9c8ddeb1c04b6556604b6b114266007f974b5112dd84c5564ad2f9903351b",
+      "context_risk": "Moderate. The artifact is rich enough to support background-versus-regulator separation, the fixed-rank abstract-algebra identification, and invariance of N=F-hat-theta^{-1} at fixed C_i. It ends at that equation; fixed local-frame C_a, Q invariance, and Q=-(B+F)^{-1} are in the following artifact.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1968388660",
+        "exact_service_checkpoint": "unknown exact service checkpoint (not exposed); GPT-5 Codex family",
+        "kind": "fresh-source-only-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md; the task-supplied critic brief/prompt; the exact openalex_w1968388660_21e824e9_part_01 assignment and its 12 SHA-bound local artifacts; and the supplement-local schema/validator contract only. No network, acquisition, GitHub issues, unrelated sources, prior critic outputs, or generation material beyond the compact candidates embedded in the assignment."
+      },
+      "decision": "revise",
+      "faithfulness": "The change D_i=partial'_i-iC_i, commutator curvature, and use of a fixed abstract algebra at fixed rank are faithful. The candidate then crosses the unit boundary and presents the stronger fixed-frame Q construction as though this artifact stated it. Its formula F-hat=theta^{-1}-i[C_i,C_j] also suppresses the index-aware inverse shown in the OCR and should be handled cautiously.",
+      "missed_mechanism": "The unit's own distinctive mechanism is the split between internal x arguments, which may be re-expressed through fixed y generators, and the explicit x in partial'_i, which is deliberately not transformed. This asymmetry is what makes N=-i[C_i,C_j] invariant in the displayed step and deserves priority over the imported Q result.",
+      "paraphrase_risk": "Medium. 'Strip and recombine' is a useful abstraction, but predicting Q makes the operation look cleaner and more general than the evidence span permits and obscures the source's very specific coordinate/internal-variable maneuver.",
+      "revision_instructions": "Rebuild this unit around the directly shown invariant N_ij=F-hat_ij-theta^{-1}_ij=-i[C_i,C_j] under fixed-rank abstract-algebra identification at fixed C_i. Explain the internal-versus-explicit-coordinate asymmetry. Remove fixed C_a, Q, the B+F inverse, and their pole from this unit, or accurately attribute them to the next artifact and rebind the evidence before acceptance.",
+      "unit_id": "agnostic_oa_background_invariant_recombination",
+      "unsupported_or_imported": "Fixed local-frame components C_a, Q=theta F-hat theta-theta, its background invariance, and Q=-(B+F)^{-1} do not appear in this unit's SHA-bound artifact; they appear in the next assigned artifact. The source-support sentence therefore misattributes neighboring evidence to 'the artifact.'"
+    },
+    "agnostic_oa_chart_breakdown_detected_by_poles": {
+      "analysis_id": "agnostic_oa_critic_ba08541bcbfbb79338afcc16d01d758b5b68f47df2279efa62625531ce23bc20",
+      "context_risk": "High enough to require repair. The bound artifact gives the forward constant-curvature solution but ends before any inverse-map analysis, explicit pole interpretation, or comparison with B+F. Unit metadata summarizes those ideas, but it is not a substitute for the unit's evidence span.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1968388660",
+        "exact_service_checkpoint": "unknown exact service checkpoint (not exposed); GPT-5 Codex family",
+        "kind": "fresh-source-only-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md; the task-supplied critic brief/prompt; the exact openalex_w1968388660_21e824e9_part_01 assignment and its 12 SHA-bound local artifacts; and the supplement-local schema/validator contract only. No network, acquisition, GitHub issues, unrelated sources, prior critic outputs, or generation material beyond the compact candidates embedded in the assignment."
+      },
+      "decision": "revise",
+      "faithfulness": "The forward formula F-hat=(1+F theta)^{-1}F and its rank-one constant-curvature scope are faithful. Reading failure of the denominator as failure of this coordinate expression is a reasonable conservative inference. The claim that reverse parametrization has a different denominator and that the two charts fail on different loci is not shown in the bound excerpt.",
+      "missed_mechanism": "The directly supported mechanism is narrower: integrating the deformation equation yields a rational expression whose use requires invertibility of 1+F theta. Any conclusion about a second chart, overlapping regular objects, or an invariant B+F comparison requires an explicit adjacent span or a separate derivation.",
+      "paraphrase_risk": "Medium-low. The denominator-domain test is a useful operation, but the chart vocabulary risks laundering an inferred geometric picture into a source result when the excerpt only displays one rational formula.",
+      "revision_instructions": "Restrict the interpretation and operation to the forward map: test invertibility before using the displayed solution and label denominator failure as failure of that formula, not intrinsic singularity. Remove the reverse denominator, two-chart comparison, and invariant-combination instruction unless the exact supporting span is rebound to this unit. State that the determinant-zero language is an inference for matrices.",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles",
+      "unsupported_or_imported": "The reverse parametrization, different failure locus, overlapping regular objects, and B+F comparison are imported from assignment metadata or other source context, not demonstrated by this artifact. The determinant criterion is algebraically natural but not stated in the excerpt and should remain explicitly inferential."
+    },
+    "agnostic_oa_distinguish_field_redefinition_from_duality": {
+      "analysis_id": "agnostic_oa_critic_f864cf1b16f43d747def1e4230c4a96cbe666f6b95e6dd6e7f5d5b2c72ce8b8d",
+      "context_risk": "Moderate. This artifact directly supports the fractional zero-slope transformation, rational cases reaching a commutative smaller torus, and singular denominators. The explicit contrast with the section-3 same-space field redefinition begins in the next assigned artifact, and the rank-changing/simple-action continuation is clipped.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1968388660",
+        "exact_service_checkpoint": "unknown exact service checkpoint (not exposed); GPT-5 Codex family",
+        "kind": "fresh-source-only-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md; the task-supplied critic brief/prompt; the exact openalex_w1968388660_21e824e9_part_01 assignment and its 12 SHA-bound local artifacts; and the supplement-local schema/validator contract only. No network, acquisition, GitHub issues, unrelated sources, prior critic outputs, or generation material beyond the compact candidates embedded in the assignment."
+      },
+      "decision": "revise",
+      "faithfulness": "The T-duality domain ledger is faithful for theta, metric, coupling, volume, rational commutativization, and singular a+bTheta. The same-space field-redefinition contrast is also visible in neighboring source text, but the candidate incorrectly says it is in this artifact and adds that T-duality potentially changes rank and preserves a simple-form theory beyond the displayed evidence.",
+      "missed_mechanism": "The strongest directly grounded discriminator is domain plus changed base-space volume: rational T-duality may reach a smaller commutative torus, whereas the neighboring contrast says the section-3 map stays on the same torus and keeps rank while complicating the action. Each ledger entry should be tied to the span that actually states it.",
+      "paraphrase_risk": "Low. The invariant ledger is a concrete and reusable disambiguation procedure. Risk arises only where unchecked ledger columns are filled from metadata or a clipped continuation.",
+      "revision_instructions": "Retain the ledger but source-bind its entries. Attribute the same-torus/arbitrary-theta/rank-preserving/complicated-action comparison to the following artifact, not this one. Remove claims that the T-duality changes rank or preserves a simple-form action unless an exact continuation is added. Phrase singularity as failure of particular transformations to act regularly, matching the source.",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality",
+      "unsupported_or_imported": "The artifact ends before the explicit field-redefinition contrast, which appears in the next assigned artifact. Potential rank change and preservation of a simple-form theory are not established in either displayed bound span. The source-support sentence therefore overstates what this artifact contains."
+    },
+    "agnostic_oa_equivalence_relation_without_group_isomorphism": {
+      "analysis_id": "agnostic_oa_critic_92e5655bcba3e79027fdd870e01f71f895060e89e35c007091b3f2a396e221d4",
+      "context_risk": "Moderate. The bound unit excerpt ends after explaining the field dependence of the transformed parameter; the displayed compatibility equation and the nonconvergence/small-instanton discussion occur in the next assigned excerpt. This boundary matters for unit-level provenance even though the material is nearby and from the same source.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w1968388660",
+        "exact_service_checkpoint": "unknown exact service checkpoint (not exposed); GPT-5 Codex family",
+        "kind": "fresh-source-only-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md; the task-supplied critic brief/prompt; the exact openalex_w1968388660_21e824e9_part_01 assignment and its 12 SHA-bound local artifacts; and the supplement-local schema/validator contract only. No network, acquisition, GitHub issues, unrelated sources, prior critic outputs, or generation material beyond the compact candidates embedded in the assignment."
+      },
+      "decision": "revise",
+      "faithfulness": "The central distinction is faithful: rank-one ordinary transformations are abelian, star-gauge transformations are nonabelian, and a field-dependent transformed parameter can preserve gauge-relatedness without defining a group isomorphism. However, 'quotient-level classes can correspond' is stronger than the excerpt's demonstrated direction unless bijectivity on orbit spaces is separately established.",
+      "missed_mechanism": "The candidate should make the logical strength of the condition explicit: the source asks that ordinarily gauge-equivalent fields map to noncommutatively gauge-equivalent fields. That preservation of related pairs is weaker than a bijection or full equivalence of quotient sets.",
+      "paraphrase_risk": "Medium-low. Descending from generating groups to an equivalence relation is a genuine conceptual move, but 'cocycle-like compatibility' is teacher-style terminology not supplied or needed by the source and can suggest extra structure.",
+      "revision_instructions": "Replace 'quotient-level classes can correspond' with the one-way, finite-order preservation claim actually established. Remove 'cocycle-like' unless formally defined. Attribute the compatibility equation and convergence example to neighboring same-source context, or omit them from this unit's direct source-support sentence; keep global injectivity/surjectivity explicitly unproved.",
+      "unit_id": "agnostic_oa_equivalence_relation_without_group_isomorphism",
+      "unsupported_or_imported": "The compatibility equation and small-instanton/nonconvergence evidence are not in this unit's SHA-bound artifact, although they occur in the immediately following assigned artifact. 'Cocycle-like' and a correspondence of quotient classes are interpretive imports; the former is unnecessary and the latter risks overstating the proven direction."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_background_invariant_recombination": "agnostic_oa_revision_75b194a1e100e81710d297a03bb3d6769ec8b41bc2d88835c72133bc8692c928",
+    "agnostic_oa_chart_breakdown_detected_by_poles": "agnostic_oa_revision_c710ee60b904b4e37c2043079c82fdeabb3f6de969eae85f8acfbb48ee4ba3e3",
+    "agnostic_oa_distinguish_field_redefinition_from_duality": "agnostic_oa_revision_3f59d998bbc2b952bb536aac4f6ad66bff031402a418055e384db5f7b7855dea",
+    "agnostic_oa_equivalence_relation_without_group_isomorphism": "agnostic_oa_revision_93ed0c3d9f4636e515842afde00da6647a504a82cfc942c9aa64fea06421532d"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1968388660_21e824e9_part_01.jsonl",
+  "source_id": "openalex_w1968388660",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_equivalence_relation_without_group_isomorphism.txt",
+      "artifact_bytes": 4010,
+      "artifact_relpath": "depth/units/agnostic_oa_equivalence_relation_without_group_isomorphism.txt",
+      "artifact_sha256": "b8c06f5a4d5d0b0dfdd65be46739f34911012537bd57eeda088a6e0ac349665a",
+      "content_sha256": "d8f54b106ada15078252dc1543b3026ca4dd15b4647384263a9bba920fbb8f92",
+      "context_note": "The construction is asserted only order by order in the deformation parameter; the source explicitly warns that the nonperturbative map may fail through nonconvergence. The gauge-theory example supplies the mechanism but does not make it universal.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1356,
+      "line_start": 1295,
+      "representation_dependency": "The map of gauge parameters depends on both the original parameter and field, so it identifies equivalence relations rather than defining a homomorphism between the ordinary and noncommutative gauge groups.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "An abelian/nonabelian obstruction rules out group isomorphism, after which the source identifies the weaker sufficient target: a field-dependent map preserving the gauge-equivalence relation. This is a generic distinction between presentation-level generators and quotient-level structure.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Preserve equivalence classes without identifying their generating groups",
+      "unit_id": "agnostic_oa_equivalence_relation_without_group_isomorphism",
+      "unit_type": "quotient_structure"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_chart_breakdown_detected_by_poles.txt",
+      "artifact_bytes": 2688,
+      "artifact_relpath": "depth/units/agnostic_oa_chart_breakdown_detected_by_poles.txt",
+      "artifact_sha256": "49beb36925ed9fe7370fbf03ec15cf25688aa063ec30103cc7323c00a50c7bf4",
+      "content_sha256": "a57fdabf468819c58f0a9ce6ea73c47d5243509751e741b6db956171e9dce07a",
+      "context_note": "The demonstration is a rank-one constant-curvature special case. A pole is evidence of description breakdown, not by itself evidence that the underlying object or theory is singular.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1502,
+      "line_start": 1460,
+      "representation_dependency": "The singular sets depend on which of F or its transformed counterpart is used as coordinate; only the invariant combination B+F explains the boundary in the ordinary presentation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "Solving the transport for constant curvature exposes reciprocal formulas whose poles distinguish failure of the noncommutative chart from failure of the commutative chart. This is a reusable warning that an equivalence map can be locally meaningful while individual representations have different domains.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Poles delimit where one representation ceases to exist",
+      "unit_id": "agnostic_oa_chart_breakdown_detected_by_poles",
+      "unit_type": "domain_boundary"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_background_invariant_recombination.txt",
+      "artifact_bytes": 7331,
+      "artifact_relpath": "depth/units/agnostic_oa_background_invariant_recombination.txt",
+      "artifact_sha256": "5f0d31bbd2fadbd437a9661437dff75e508ebf6298b0afa4c09cfae5d806747f",
+      "content_sha256": "14e84320a6b6f961f384c5d434ce743f1e9157818052982702639e82cfc3ed28",
+      "context_note": "The core construction initially assumes invertible deformation tensor and fixed closed metric, and it is motivated within noncommutative gauge theory. Equations are formula-dense and require source-level verification before materialization.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 1832,
+      "line_start": 1721,
+      "representation_dependency": "Curvature and the deformation tensor separately vary with the background split, while the commutator form and Q=theta Fhat theta-theta remain fixed under the specified change; this invariance depends on the chosen abstract-algebra and local-frame identification.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "By separating background change from regulator change, replacing derivative-bearing coordinates with an abstract fixed-rank algebra, and holding local-frame components fixed, the source constructs invariant combinations of curvature and deformation data.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Recombine presentation-dependent variables into a background-invariant object",
+      "unit_id": "agnostic_oa_background_invariant_recombination",
+      "unit_type": "invariant_construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_distinguish_field_redefinition_from_duality.txt",
+      "artifact_bytes": 6097,
+      "artifact_relpath": "depth/units/agnostic_oa_distinguish_field_redefinition_from_duality.txt",
+      "artifact_sha256": "97d355b787de34d18e8618562201b5cbbbf71e08717a7b587d8543d418ff9d1d",
+      "content_sha256": "8ff36acbb1ba41166ec42d7fbef518cffc177b4bbb2ade3313a620c7066a8a9e",
+      "context_note": "The transformation laws arise from torus T-duality and are formula-sensitive. The reusable content is the explicit comparison of what each equivalence preserves, changes, and where it becomes singular; it does not establish a new general duality family.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_regulator_dependent_presentations",
+            "agnostic_oa_equivalence_relation_without_group_isomorphism",
+            "agnostic_oa_perturbative_transport_between_deformations",
+            "agnostic_oa_chart_breakdown_detected_by_poles",
+            "agnostic_oa_background_invariant_recombination",
+            "agnostic_oa_equivalence_modulo_declared_approximation",
+            "agnostic_oa_moduli_space_vs_representatives",
+            "agnostic_oa_distinguish_field_redefinition_from_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly separates invariant or quotient-level content from regulator-, coordinate-, background-, and representative-dependent descriptions, while recording approximation and domain boundaries. This supports the assignment-proposed lens; novelty relative to #44 was not checked."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_measure_and_center_constraints_on_background_change",
+            "agnostic_oa_distinguish_field_redefinition_from_duality",
+            "agnostic_oa_bimodule_from_commuting_endpoint_actions",
+            "agnostic_oa_projectivity_and_topological_invariants",
+            "agnostic_oa_morita_transport_by_balanced_tensor_product"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies concrete duality objects—bimodules, commutants, balanced tensor products, projective modules—and explicit constraints on rank, center, measure, and transformation domain. This reinforces the assignment-proposed lens without asserting a new family or independent mathematical novelty."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968388660",
+      "line_end": 3370,
+      "line_start": 3280,
+      "representation_dependency": "The field redefinition works for arbitrary deformation on the same torus and rank but complicates the action; the rational duality changes torus volume and rank while mapping a simple action to another simple action. Singular transformations restrict the effective action of the nominal duality group.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound depth assignment, and normalized source openalex_w1968388660 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source tracks the domain of a fractional transformation, identifies rational cases that become commutative, records singular group elements, and then distinguishes this duality from a different change of variables that leaves the space and rank fixed.",
+      "source_id": "openalex_w1968388660",
+      "source_normalized_sha256": "54cba14835e9886ac1d5cb361000497736622169dabd785c5d3fe26cef35cb50",
+      "title": "Disambiguate same-space field redefinition from space-changing duality",
+      "unit_id": "agnostic_oa_distinguish_field_redefinition_from_duality",
+      "unit_type": "equivalence_disambiguation"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1978698814_b2a012e0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1978698814",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical exposition only; it does not derive the Riemann-Siegel formula here.",
+      "line_end": 132,
+      "line_start": 91,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; displayed series and fraction glyphs are needed for exact notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Euler's convergent sum/product, Riemann's analytic continuation, and Siegel's two-sum saddle-point representation whose leading cancellation is centered at real part one-half.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the Dirichlet convergence domain to Riemann-Siegel cancellation",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u01.txt",
+      "unit_bytes": 2726,
+      "unit_id": "b25_openalex_w1978698814_u01",
+      "unit_sha256": "ae8a524e5dda4f05fe2bede0610d8dfff187f86838cae5782b62d9d29a2648ab",
+      "unit_type": "historical representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u01.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 83,
+          "line_end": 90,
+          "text": "1. Introduction\n\nThe analytic continuation of a function [1] is an important tool in complex analysis. According\nto Schrödinger, entanglement of two quantum systems is the trade mark [2] of quantum theory.\nIn this paper we connect these key ideas of two seemingly distinct branches of science. We\nuse an entangled quantum system consisting of a harmonic oscillator and a two-level atom to\nconstruct an analogue computer whose output is the Riemann zeta function [3].\n\n",
+          "sha256": "294a8e432572c59b7602bfd02333af2d1bd663e63fcb4aa9036dc771191823b0"
+        },
+        "after": {
+          "line_start": 133,
+          "line_end": 140,
+          "text": "\n1.2. Riemann zeta function from time evolution\nOur approach toward the Riemann zeta function takes advantage of the time evolution of two\ninteracting quantum systems followed by a joint measurement [10]. Here, the fact that the\ninteraction has entangled the two systems is of utmost importance. Indeed, a single quantum\nsystem does not [11] allow us to obtain the behavior of ζ along the critical line σ = 1/2.\nConservation of probability restricts us to a domain of the complex plane to the right of σ = 1\nwhere ζ is defined by the Dirichlet sum (1). This fundamental law cannot be violated for a single\n",
+          "sha256": "e0ef4480a75ab0725571bd85319cc2fa1e097b9e31178bf6a24c1bc1156333f5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8e8d30dfc824b711558a966dfce547c96090dd6714cf81f93816e8aa04be06e6",
+        "dossier_sha256": "c0fb0e1cc93059d760bbca191151a2650a3325b8c85d9b45e200d3a2d009ff8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 238,
+            "line_start": 83,
+            "mathematical_role": "Contrasts the Dirichlet convergence wall with a two-system entanglement construction and outlines the phase-space analysis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 132,
+          "line_start": 91,
+          "title": "From the Dirichlet convergence domain to Riemann-Siegel cancellation",
+          "unit_id": "b25_openalex_w1978698814_u01",
+          "unit_type": "historical representation change",
+          "why_material": "Connects Euler's convergent sum/product, Riemann's analytic continuation, and Siegel's two-sum saddle-point representation whose leading cancellation is centered at real part one-half."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical exposition only; it does not derive the Riemann-Siegel formula here.",
+          "representation_dependency": "Medium; displayed series and fraction glyphs are needed for exact notation.",
+          "unit_id": "b25_openalex_w1978698814_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 206,
+            "line_start": 143,
+            "title": "Joint measurement bypasses the single-system normalization wall",
+            "unit_id": "full_openalex_w1978698814_u02",
+            "unit_type": "entanglement-based construction overview",
+            "why_material": "Specifies preparation, logarithmic interaction, and joint measurement as the operational replacement for analytic continuation and explains why the second system creates the conjugate-time superposition."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w1978698814_u01",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w1978698814_u01",
+          "spontaneous_reading": "The historical thread is a sequence of representation changes: Euler exposes primes by an infinite product, Riemann escapes the Dirichlet convergence half-plane by analytic continuation, and the Riemann–Siegel saddle-point formula replaces the continued function by two nearly symmetric sums whose leading cancellation is centered at 1/2."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w1978698814_u01",
+          "source_grounded_mathematics": "The source gives the Dirichlet series for Re(s)>1, recalls Euler's prime product and Riemann's continuation and conjecture, and says Siegel reconstructed a saddle-point derivation producing two similar sums. In the lowest-order Riemann–Siegel representation, cancellation can occur at real part 1/2.",
+          "conceptual_reading": "A representation adapted to continuation also makes the critical line structurally visible: the two branches have complementary exponents and balance at their symmetry point.",
+          "representation_or_bridge": "The Euler product bridges ζ to primes, while the saddle-point two-sum representation bridges analytic continuation to phase cancellation.",
+          "boundary_or_failure": "This historical unit does not derive the Riemann–Siegel formula, and leading-order cancellation does not prove that every exact zero lies on the critical line.",
+          "uncertainty": "The qualitative history is explicit; exact series typography is partially degraded and should be checked before formula-level reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w1978698814_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The historical span gives the Dirichlet domain, Euler product, Riemann continuation, and Siegel's reconstruction of a two-sum saddle-point representation whose lowest-order cancellation occurs at sigma one-half.",
+          "The output correctly says the unit does not derive the Riemann-Siegel formula and that lowest-order cancellation is not an RH proof."
+        ],
+        "inference": [
+          "Viewing the history as successive representation changes is a reasonable organizing inference."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says the two branches have complementary exponents, but no exponents or Riemann-Siegel formula are displayed in this frozen span.",
+          "Calling the two-sum expression an analytic-continuation bridge goes beyond the source's historical statement unless explicitly labeled as interpretation."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Structurally visible' risks turning the source's observation of lowest-order cancellation into a stronger explanatory mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed Dirichlet series is degraded, although the qualitative historical assertions are clear."
+        ],
+        "missed_mechanism": [
+          "The source-visible mechanism is only saddle-point conversion to two similar sums and reported lowest-order cancellation at one-half; complementary exponents belong to a later unit."
+        ],
+        "revision_instructions": [
+          "Remove the claim about complementary exponents or label it as later-context information.",
+          "Keep the reading at the historical evidential level of this span and preserve the distinction between an approximation's cancellation center and exact zero location."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The physical realizability of this exact logarithmic Hamiltonian is deferred to Appendix B.",
+      "line_end": 332,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the operator formula is central.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces photon number by its logarithm in a detuned two-level interaction so atomic branches acquire the phase-conjugate evolutions needed by the Riemann-Siegel representation.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional logarithmic Hamiltonian creates opposite time directions",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u03.txt",
+      "unit_bytes": 1452,
+      "unit_id": "b25_openalex_w1978698814_u03",
+      "unit_sha256": "caddb045f7d14c855ef560b9acbee30d59331f1f3886fd21444399c24611b2cd",
+      "unit_type": "interaction design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u03.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "Hence we have replaced in (7) the quantum number n by ln(n + 1).\n     We conclude by noting that the Hamiltonian\n                 Ĥ R ≡ h̄ ln(n̂ + 1)                                                         (9)\ngives rise to the time evolution\n                    i\n                 e− h̄ Ĥ R t |σ, 0in 0 = |σ, τ in 0                                          (10)\nof the truncated zeta state with τ ≡ t.\n\n",
+          "sha256": "791527354da93302bc848069413a4ff238679563a44f1192ecf5992216d613e5"
+        },
+        "after": {
+          "line_start": 333,
+          "line_end": 340,
+          "text": "3.1. Dirichlet representation\nWith the help of the zeta states (4) we can summarize the engineering of the Dirichlet sum (1)\nin a compact way. Indeed, when we choose the initial state\n                    |9(0)i ≡ |σ, 0i|ei\nof the combined system consisting of field plus atom, the time-evolved state\n                           \u0012           \u0013\n                                i\n              |9(t)i ≡ exp − Ĥ RS t |9(0)i\n",
+          "sha256": "5a0dec6ed17fbadba9c66d526dc0dd9b8fb249ba3de3c5bec9d0e1b451b12cf8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8e8d30dfc824b711558a966dfce547c96090dd6714cf81f93816e8aa04be06e6",
+        "dossier_sha256": "c0fb0e1cc93059d760bbca191151a2650a3325b8c85d9b45e200d3a2d009ff8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "State engineering",
+            "line_end": 518,
+            "line_start": 308,
+            "mathematical_role": "Constructs the single-system Dirichlet overlap and the entangled Riemann-Siegel state/reference overlap."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 332,
+          "line_start": 308,
+          "title": "Conditional logarithmic Hamiltonian creates opposite time directions",
+          "unit_id": "b25_openalex_w1978698814_u03",
+          "unit_type": "interaction design",
+          "why_material": "Replaces photon number by its logarithm in a detuned two-level interaction so atomic branches acquire the phase-conjugate evolutions needed by the Riemann-Siegel representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The physical realizability of this exact logarithmic Hamiltonian is deferred to Appendix B.",
+          "representation_dependency": "Medium; the operator formula is central.",
+          "unit_id": "b25_openalex_w1978698814_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 306,
+            "line_start": 239,
+            "title": "Zeta-state normalizability reproduces the Dirichlet wall",
+            "unit_id": "b25_openalex_w1978698814_u02",
+            "unit_type": "state construction",
+            "why_material": "Defines finite and infinite photon-number superpositions with n-power amplitudes, shows that normalization is inverse zeta and therefore exists only for real part greater than one, and generates logarithmic phases by time evolution."
+          },
+          {
+            "line_end": 391,
+            "line_start": 333,
+            "title": "Autocorrelation implements the Dirichlet representation and exposes its conservation law",
+            "unit_id": "full_openalex_w1978698814_u01",
+            "unit_type": "physical realization construction",
+            "why_material": "Shows that the initial/time-evolved zeta-state overlap is normalized zeta along a vertical line and interprets convergence as total intensity conservation in a classical interferometer."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w1978698814_u03",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w1978698814_u03",
+          "spontaneous_reading": "A two-level control system converts one logarithmic spectrum into two phase-conjugate evolutions. The atomic branches supply the opposite signs needed for the paired sums of the Riemann–Siegel representation."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w1978698814_u03",
+          "source_grounded_mathematics": "The interaction Hamiltonian is ħΩ log(n+1)(|e><e|−|g><g|), motivated by a strongly detuned Jaynes–Cummings Hamiltonian with n replaced by log(n+1). The field's initial occupation encodes σ and evolution time encodes τ; projection of the joint state is intended to yield ζ.",
+          "conceptual_reading": "Conditional dynamics duplicates one initial representation into conjugate branches without running time backward globally. The control degree of freedom carries the sign of the phase.",
+          "representation_or_bridge": "The atom is a branch label, the oscillator number is the Dirichlet index, and the logarithmic Hamiltonian bridges time evolution to factors e^(±iτ log n).",
+          "boundary_or_failure": "The exact logarithmic interaction is posited here; its realizability is deferred. The unit specifies an encoding mechanism, not analytic continuation or RH by itself.",
+          "uncertainty": "The operator formula is central and legible, but physical implementation claims require the later appendix."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w1978698814_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives the two-level conditional logarithmic Hamiltonian with opposite signs on the atomic branches, its detuned Jaynes-Cummings motivation, and the stated goal of obtaining zeta by projection.",
+          "It explicitly maps sigma to initial occupation and tau to evolution time."
+        ],
+        "inference": [
+          "Opposite Hamiltonian signs reasonably imply phase-conjugate time evolutions, although the actual evolved state is not shown here."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous and conceptual readings say these branches supply the paired sums of the Riemann-Siegel representation, but this span never mentions Riemann-Siegel or displays the two-sum continuation.",
+          "The source only asserts that an appropriate projection yields zeta; the projection and its normalization are outside the boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Conditional dynamics duplicates one initial representation' is more specific than the equations shown in this short setup span."
+        ],
+        "context_or_ocr_risk": [
+          "The operator formula is legible, but implementation and projection details are deferred."
+        ],
+        "missed_mechanism": [
+          "The reliable unit-level mechanism is conditional sign reversal of log(n+1) phases; how that realizes the analytic continuation belongs to the following construction."
+        ],
+        "revision_instructions": [
+          "Restrict the reading to the conditional logarithmic Hamiltonian and opposite phase directions.",
+          "Move the Riemann-Siegel connection to unsupported or adjacent context unless the unit boundary is widened."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses only the lowest Riemann-Siegel approximation, with truncation n0 depending on the target height; the reference-state parameter is matched to that target.",
+      "line_end": 512,
+      "line_start": 393,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; coefficients, normalizations, and the gamma-factor phase require exact formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps the two opposite-phase Dirichlet sums to atomic branches, chooses a parameter-dependent reference state to supply the functional-equation coefficient, and shows that the reference disentangles specifically on the critical line.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel state plus matched reference state produces the two-sum continuation",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u04.txt",
+      "unit_bytes": 7174,
+      "unit_id": "b25_openalex_w1978698814_u04",
+      "unit_sha256": "c25155c8a8e20070cbab6e78800a92329e128d116ff998cb8ac78b6ad7354958",
+      "unit_type": "entangled continuation construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u04.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 385,
+          "line_end": 392,
+          "text": "by the index n. This realization shows that the convergence condition of the Dirichlet sum\ncorresponds to the requirement of conservation of intensity. Indeed, as σ approaches unity from\nabove, more and more arms are necessary to implement ζ . Still, the intensities in the individual\narms have to add up to the intensity entering the interferometer. This classical example translates\nthe mathematical convergence criterion of the Dirichlet sum into the physical conservation law\nof intensity and clearly demonstrates that a single-system approach cannot lead us beyond the\nDirichlet wall at σ = 1.\n\n",
+          "sha256": "3a769b048471bd517113c37bbd605c88a7240067ebeedc045c18a4b7bbba1a7c"
+        },
+        "after": {
+          "line_start": 513,
+          "line_end": 520,
+          "text": "\nNew Journal of Physics 15 (2013) 063009 (http://www.njp.org/)\n\n<!-- source-page: 11 -->\n\n10\n4. Riemann zeta function from Wigner phase space\n\n",
+          "sha256": "696cd9bbfd3a795dfa891ec0e3288eb842a19c1217a2d50fb17b908e05c291f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8e8d30dfc824b711558a966dfce547c96090dd6714cf81f93816e8aa04be06e6",
+        "dossier_sha256": "c0fb0e1cc93059d760bbca191151a2650a3325b8c85d9b45e200d3a2d009ff8b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "State engineering",
+            "line_end": 518,
+            "line_start": 308,
+            "mathematical_role": "Constructs the single-system Dirichlet overlap and the entangled Riemann-Siegel state/reference overlap."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 512,
+          "line_start": 393,
+          "title": "Riemann-Siegel state plus matched reference state produces the two-sum continuation",
+          "unit_id": "b25_openalex_w1978698814_u04",
+          "unit_type": "entangled continuation construction",
+          "why_material": "Maps the two opposite-phase Dirichlet sums to atomic branches, chooses a parameter-dependent reference state to supply the functional-equation coefficient, and shows that the reference disentangles specifically on the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses only the lowest Riemann-Siegel approximation, with truncation n0 depending on the target height; the reference-state parameter is matched to that target.",
+          "representation_dependency": "Very high; coefficients, normalizations, and the gamma-factor phase require exact formulas.",
+          "unit_id": "b25_openalex_w1978698814_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 391,
+            "line_start": 333,
+            "title": "Autocorrelation implements the Dirichlet representation and exposes its conservation law",
+            "unit_id": "full_openalex_w1978698814_u01",
+            "unit_type": "physical realization construction",
+            "why_material": "Shows that the initial/time-evolved zeta-state overlap is normalized zeta along a vertical line and interprets convergence as total intensity conservation in a classical interferometer."
+          },
+          {
+            "line_end": 618,
+            "line_start": 519,
+            "title": "Wigner overlap represents the modulus squared of zeta",
+            "unit_id": "b25_openalex_w1978698814_u05",
+            "unit_type": "phase-space overlap",
+            "why_material": "Expands the zeta-state Wigner function, interprets logarithmic dispersion as a curling wedge with interference negativity, and identifies the phase-space overlap with the squared zeta autocorrelation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Infinite-state normalization or conserved interferometer intensity realizes the Dirichlet convergence wall, while an entangled pair of phase-conjugate evolutions plus a matched reference state realizes a finite Riemann-Siegel continuation formula.",
+            "limit": "The construction is truncated, target-parameter dependent, and initially uses only the lowest Riemann-Siegel approximation.",
+            "parent_local_unit_ids": [
+              "b25_openalex_w1978698814_u02",
+              "full_openalex_w1978698814_u01",
+              "b25_openalex_w1978698814_u04"
+            ],
+            "title": "Physical dictionary for convergence and continuation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w1978698814_u04",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w1978698814_u04",
+          "spontaneous_reading": "The construction represents the two Riemann–Siegel sums as opposite atomic branches and puts the functional-equation coefficient into a specially matched reference state. Analytic continuation is thus moved into an engineered overlap, with the reference depending on the target parameter."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w1978698814_u04",
+          "source_grounded_mathematics": "Using the lowest Riemann–Siegel approximation with cutoff n0(τ), the evolved joint state contains truncated zeta states with phases ±τ. A reference state with coefficient β proportional to χ(σ+iτ) makes its overlap proportional to ζRS; at σ=1/2 the reference state factorizes because χ has unit modulus and supplies only a phase.",
+          "conceptual_reading": "The two-sum continuation is synthesized by distributing complementary exponents across branches. Rather than asking one normalized infinite state to cross the convergence wall, the method uses finite sums plus an externally encoded functional-equation coefficient.",
+          "representation_or_bridge": "Entanglement holds the two conjugate Dirichlet branches, and the matched reference state bridges their overlap to the approximate continued function.",
+          "boundary_or_failure": "The reference is parameter-matched to the requested τ, the cutoff also depends on τ, and only the lowest approximation is used. Product form on the critical line is a property of this construction, not evidence that zeros must lie there.",
+          "uncertainty": "Exact gamma factors and normalization constants are extraction-sensitive; the dependence on approximation and target-matched reference data is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w1978698814_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly writes the lowest two-sum Riemann-Siegel approximation, evolves equal-weight atomic branches with opposite phases, and chooses a parameter-dependent reference coefficient beta so the overlap equals the approximate function.",
+          "It explicitly notes that cutoff and reference data depend on the target tau and that the reference becomes a product state at sigma one-half."
+        ],
+        "inference": [
+          "Saying analytic continuation is represented by an engineered overlap of finite sums is a reasonable conceptual description."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The phrase 'distributing complementary exponents across branches' is misleading: the evolved branches in equation (19) share the same sigma-state amplitudes; the complementary exponent in the second Riemann-Siegel sum is created by overlap with the specially chosen 2-3sigma reference branch.",
+          "Calling the evolved states themselves 'conjugate Dirichlet branches' is acceptable for their opposite phases but should not imply that they alone encode both complementary powers."
+        ],
+        "context_or_ocr_risk": [
+          "Gamma factors, normalization constants, and beta are extraction-sensitive, though the target dependence and lowest-order status are explicit."
+        ],
+        "missed_mechanism": [
+          "The key synthesis is not just entanglement: it is the interaction between same-sigma opposite-phase evolved branches and an asymmetrically weighted, target-matched reference state."
+        ],
+        "revision_instructions": [
+          "Correct the conceptual reading so the complementary exponent and functional-equation coefficient are attributed to the reference-state overlap, not to the evolved branches by themselves.",
+          "Retain the strong boundary statement that product form on the critical line is engineered and has no zero-location implication."
+        ]
+      }
+    }
+  ]
+}

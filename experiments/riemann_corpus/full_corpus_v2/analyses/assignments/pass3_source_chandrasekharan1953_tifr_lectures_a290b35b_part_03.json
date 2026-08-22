@@ -1,0 +1,133 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_chandrasekharan1953_tifr_lectures_a290b35b_part_03.jsonl",
+  "prior_output_paths": {},
+  "source_id": "chandrasekharan1953_tifr_lectures",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the source's chain from zeta boundary behavior to the magnitude of the nth prime.",
+      "line_end": 6863,
+      "line_start": 6833,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One pi symbol is OCR-rendered as tau, but the surrounding statements identify the intended counting function; verify against scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers between a monotone counting function and its generalized inverse using logarithmic equivalence and adjacent-prime squeezing.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-counting asymptotics are equivalent to nth-prime asymptotics",
+      "unit_artifact_relpath": "depth/units/ch53_u49.txt",
+      "unit_bytes": 1260,
+      "unit_id": "ch53_u49",
+      "unit_sha256": "b948644cc0b427f548caad98a37f08231efe2330d43ecf78e10f467d730dfa85",
+      "unit_type": "equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u49.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6825,
+          "line_end": 6832,
+          "text": "                                 (σ − 1)φ(σ + it)\nwould tend to a limit different from zero, namely the residue of φ(s) at\nthe simple pole 1 + it.\n\n<!-- source-page: 152 -->\n\n146                          17. The Zeta Function of Riemann (Contd)\n\n",
+          "sha256": "d7c56727003b3dd08c307bf09bb57756b22b3e8bf4e67e9c415042281f16da97"
+        },
+        "after": {
+          "line_start": 6864,
+          "line_end": 6871,
+          "text": "<!-- source-page: 153 -->\n\nBibliography\n\n [1] L.Bieberbach: Lehrbuch der Funktionentheorie I & II, Chelsea, 153\n     1945\n\n [2] S.Bochner: Vorlesungen über Fouriersche Integrale, Leipzig, 1932\n",
+          "sha256": "d00f69b009b74e0ad878a1dc1059715a40838fab09be5d357eaa1df56fdc453b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 17: Prime Number Theorem",
+            "line_end": 6865,
+            "line_start": 6272,
+            "mathematical_role": "Chebyshev reductions, Wiener-Ikehara Tauberian theorem, PNT, and equivalent formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6863,
+          "line_start": 6833,
+          "title": "Prime-counting asymptotics are equivalent to nth-prime asymptotics",
+          "unit_id": "ch53_u49",
+          "unit_type": "equivalent criterion",
+          "why_material": "Transfers between a monotone counting function and its generalized inverse using logarithmic equivalence and adjacent-prime squeezing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the source's chain from zeta boundary behavior to the magnitude of the nth prime.",
+          "representation_dependency": "One pi symbol is OCR-rendered as tau, but the surrounding statements identify the intended counting function; verify against scan.",
+          "unit_id": "ch53_u49"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 6827,
+            "line_start": 6768,
+            "title": "Prime number theorem from zero-freeness, and zero-freeness back from PNT",
+            "unit_id": "ch53_u48",
+            "unit_type": "theorem application and equivalence",
+            "why_material": "Applies Wiener-Ikehara to the von Mangoldt transform using zeta's sole boundary pole and zero-free line, then reverses the logic by showing a PNT error transform cannot have a pole at 1+it."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "ch53_u49",
+        "spontaneous": {
+          "unit_id": "ch53_u49",
+          "spontaneous_reading": "The mathematical work comes from treating the prime-counting function and the ordered primes as generalized-inverse descriptions. At prime arguments the identity π(p_n)=n transfers the counting asymptotic to p_n, while for arbitrary x the bracket p_n≤x<p_{n+1} and the asymptotic agreement of adjacent prime scales transfer it back."
+        },
+        "directed": {
+          "unit_id": "ch53_u49",
+          "source_grounded_mathematics": "The span proves the equivalence of π(x)∼x/log x and p_n∼n log n. In the forward direction, the counting asymptotic gives log π(x)/log x→1 and hence π(x)log π(x)/x→1; setting x=p_n and using π(p_n)=n yields p_n∼n log n. Conversely, choosing n by p_n≤x<p_{n+1}, the assumed nth-prime asymptotic makes both endpoints asymptotic to n log n, so x∼n log n; with y=π(x)=n and log x∼log y, this gives y∼x/log x.",
+          "conceptual_reading": "A monotone counting function and its generalized inverse carry the same leading asymptotic once the logarithmic factor is shown stable under the change of variables. The proof separates an exact inverse relation at jump points from a squeeze argument between jumps.",
+          "representation_or_bridge": "The bridge objects are the exact identity π(p_n)=n, the interval p_n≤x<p_{n+1}, and the logarithmic comparison log π(x)/log x→1. Together they move between the continuous-variable counting representation and the discrete enumeration representation without estimating individual prime gaps.",
+          "boundary_or_failure": "The argument establishes only leading asymptotic equivalence, with no error term or rate. It relies on monotone indexing and on adjacent scales (n+1)log(n+1) and n log n being asymptotically equal; it does not by itself transfer sharper remainders. The first displayed counting-function symbol is OCR-rendered as τ.",
+          "uncertainty": "The surrounding equations identify the OCR τ in (1) as the prime-counting function π, but the supplied text span alone does not verify the glyph against the scan. No missing formula has been reconstructed."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "65c705055c02b5d506b1f96bbd87418b6e5b9065795e588141918198cd5db2c0"
+}

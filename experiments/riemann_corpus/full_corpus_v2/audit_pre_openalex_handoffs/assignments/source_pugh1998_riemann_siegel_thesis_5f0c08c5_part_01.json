@@ -1,0 +1,430 @@
+{
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_pugh1998_riemann_siegel_thesis_5f0c08c5_part_01.jsonl",
+  "item_count": 5,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_10c6851ddd1e18da5239065f218479da6ddbede13590a77735ca6bece0490f36",
+      "object_role": "interpretation",
+      "proposed_content": "Local sign detection and global zero counting are different representations of the verification problem. The argument principle counts all zeros, including off-line ones, but pointwise contour control is too fragile for repeated computation.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_396a7a780facc37046f4b6639ddd54d554879e7ce197b7a4ba8dfd7d9baa893c",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u12"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u12.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u12.txt",
+          "content_sha256": "6f898c784f0a6be613d69eadc979c2afc3e5b16bf758ca8def18c5daebfa9a2b",
+          "artifact_sha256": "7c14538115b0697fd12183c2ae3f5b8d2fe13d2d5e2c10bae3d16eb05b894aa3",
+          "artifact_bytes": 3524
+        }
+      ],
+      "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "masters-thesis"
+        ],
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "ocr": false,
+        "long_form": true,
+        "depth": 19
+      }
+    },
+    {
+      "object_id": "mathia_interpretation_fe8ee71322e5d66df3c8f822d5d000238c169a952a8d2c4626f1975af0f95d1a",
+      "object_role": "interpretation",
+      "proposed_content": "The source separates two limitations. Under its explicit idealization of infinite-precision arithmetic and untruncated C(n,z) Taylor series, roots counted on the critical line are genuine, yet local sampling can still miss crossings that remain within the tolerance between nearby zeros. In the actual twenty-digit implementation, input/phase error and accumulation over the main cosine sum grow with t; the quoted crossover near 6.5 million is an assumption-based estimate, not a certified or universal limit.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_1184aee21aa876e8fd97fcba7ea1ee2ec20bbe9d465d59d0aff85655e0dbc52a",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u18"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+          "content_sha256": "ad1bcefd6eeea8b6ee1e0695756d94d952905d1f4f56c7f767083dc5255dd470",
+          "artifact_sha256": "5dccf0e68c96844b827849a7707810b4864cd49f6fc4d6fa2d543929c2e07988",
+          "artifact_bytes": 2004
+        }
+      ],
+      "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "masters-thesis"
+        ],
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "ocr": false,
+        "long_form": true,
+        "depth": 19
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_26104d2b44cf446a1d584d03e7c453258b6125f582f020fde9c5224697f59b67",
+      "object_role": "synthesis",
+      "proposed_content": "The derivation preserves an exact finite-sum-plus-contour-remainder identity through the saddle-guided contour deformation, then exposes approximation debt step by step: discarding remote contour pieces, truncating the local residual series, extending the integration path, and finally evaluating with finite-precision arithmetic.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_38b222a3bf63863b623205f00a35b29d2a2354728d82f9c905c9b0d8c8e82dd8",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u06"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u06.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u06.txt",
+          "content_sha256": "6e46ef0ae9c442816ec550aafaad348744dceb237462344d6c14625a2a7a0314",
+          "artifact_sha256": "0af55f3c0418c8b1cf57bece9708b16264a53d0c2cebdfdcca95785b1321049f",
+          "artifact_bytes": 11720
+        },
+        {
+          "source_object_id": "mathia_source_30850a0632e53e22fabfff906754f149ea261624009c952db38e7d8bf79b707d",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u07"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u07.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u07.txt",
+          "content_sha256": "60bc3679b1ca44fc65203916f9425f7198e247194f18ec662bdcd94e04ce8764",
+          "artifact_sha256": "d8da6c8201b760447999c085a2a28d96db4a2d72d6d6bab166ef452c407f0003",
+          "artifact_bytes": 3598
+        },
+        {
+          "source_object_id": "mathia_source_4e8f1903458414518ce361e2b3def875d6e38850280a3ebe12293d25dc34952e",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u08"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u08.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u08.txt",
+          "content_sha256": "91ad8d5cf0188e48186fd7392626be957d9ac1ea5b8f81bddb805d73a87741af",
+          "artifact_sha256": "0fae0854998ea1e20222008fb7ff54b61fa1ae8722c54e24e3ed96e730cfee20",
+          "artifact_bytes": 5046
+        },
+        {
+          "source_object_id": "mathia_source_75283e82891139af068d143e67a4239304a59ca38f383fdf189412e54d9da9da",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u10"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u10.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u10.txt",
+          "content_sha256": "760e809f3be3f6ed9bad3f72d79df996457fa8797324fd55142d0197527ad400",
+          "artifact_sha256": "8143d022fb25cf5a7247582f55ecf83bbda910397e042c8061b34d003c972aa2",
+          "artifact_bytes": 4127
+        }
+      ],
+      "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "masters-thesis"
+        ],
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "ocr": false,
+        "long_form": true,
+        "depth": 19
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_5e0116ce6c768864166eefeb194321171e4f140bd414618b5d88e429fce2300a",
+      "object_role": "synthesis",
+      "proposed_content": "The source links phase normalization, local sign search, and an independent global count: real Z(t) supplies critical-line zero witnesses, while Turing's parity and averaged-discrepancy argument can show that the witness count exhausts all strip zeros at a chosen finite Gram height.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_5671ea20d0122c4013d042ae011a93c94b0f64bcf5df37d63f8ddbc0deebba2b",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u04.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u04.txt",
+          "content_sha256": "125118fd943b859ae7babe99ddfedacdf1df7ef47db8d20db36cc5e6c42d02c5",
+          "artifact_sha256": "356a87efe6e05abbd14019472d8f0c7f8b5c0b9bcbde74c8c403c84cde1b798c",
+          "artifact_bytes": 4002
+        },
+        {
+          "source_object_id": "mathia_source_6bfa796f492d720ec45ed63715a10c672f70e554cd57eb39132ba0096166f868",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u11"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u11.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u11.txt",
+          "content_sha256": "b2801ea50bebe89d1a82aee0debbb109192050e5a8b0c25c25e8e512bd4013b7",
+          "artifact_sha256": "8a95474a882dd430a429425467523204f68cc8a1c5170054e3d8c6cf10f61141",
+          "artifact_bytes": 6364
+        },
+        {
+          "source_object_id": "mathia_source_af9bc98ddff19332b52b49bd489236b37c5cb55cb9f62230133904903ed85829",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u13"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u13.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u13.txt",
+          "content_sha256": "0b8c745d87ae3b2e72dc1fb8c9a572e9318f73b4076f592ab4528eb208959f7c",
+          "artifact_sha256": "083f50a9d0454090a705ea82ee5feb3120870b5558be438e246f41ae12c4b335",
+          "artifact_bytes": 7837
+        },
+        {
+          "source_object_id": "mathia_source_4ad757925cc02d1bac99bde272b35e11c1860cd43fa7aef7ba71e210aee106f6",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u14"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u14.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u14.txt",
+          "content_sha256": "6018dd8affa456c1eb08dfe478d65856480c30a2a9e0192024a0aa13c6a6d95a",
+          "artifact_sha256": "c514571dbdeb11f15ff66fac18b37929de46638520f14de78f4bcb318557a377",
+          "artifact_bytes": 5279
+        }
+      ],
+      "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "masters-thesis"
+        ],
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "ocr": false,
+        "long_form": true,
+        "depth": 19
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_9c529527b19a84cb3d6c3a3b188a9051d3ff336a14daa68afa73ac3db939eb7d",
+      "object_role": "synthesis",
+      "proposed_content": "Offline correction-table construction and a selectable correction count support a cheap-first evaluator: ordinary Gram tests use two correction terms, failed error-margin tests trigger five-term reevaluation and deeper partition search, while fixed-precision failure and batch precomputation belong to separate reliability and throughput regimes.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_006555e2db279dc64ca333bf01cd4e56fc8e16c9ed7d99d73f9ede7d5b47c6c6",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u15"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u15.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u15.txt",
+          "content_sha256": "45b40d99e6dc938b3fa7a52aa80d3f45f79eded8e129b989d4b34c87764fabba",
+          "artifact_sha256": "f2e942c4303a991c943e6d883243e6d7d94a8fb657c4e582e636477d26daf7e1",
+          "artifact_bytes": 1178
+        },
+        {
+          "source_object_id": "mathia_source_d37ebf8c2e4366d4b7fdf3186c82a1f7910f699f46b7b8b46e6804f8076b86b3",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u16"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u16.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u16.txt",
+          "content_sha256": "ff23d1896fe064cbdaace5d3d6cdb5dc2c9e4f61e5c9ce5b37b53c6152e6fc84",
+          "artifact_sha256": "1b009d001b1653e4c0f74ecf39843a89fb2f64986e01abf5f7adfd32f2a2c858",
+          "artifact_bytes": 5165
+        },
+        {
+          "source_object_id": "mathia_source_1184aee21aa876e8fd97fcba7ea1ee2ec20bbe9d465d59d0aff85655e0dbc52a",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u18"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+          "content_sha256": "ad1bcefd6eeea8b6ee1e0695756d94d952905d1f4f56c7f767083dc5255dd470",
+          "artifact_sha256": "5dccf0e68c96844b827849a7707810b4864cd49f6fc4d6fa2d543929c2e07988",
+          "artifact_bytes": 2004
+        },
+        {
+          "source_object_id": "mathia_source_a198be81b4a0d05b2e733c6ff150bcf8ffdb3c36ae0d7272e0dc7278ffbefecc",
+          "source_id": "pugh1998_riemann_siegel_thesis",
+          "source_unit_ids": [
+            "pugh1998_depth_u19"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/pugh1998_depth_u19.txt",
+          "source_title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+          "source_year": 1998,
+          "source_type": "masters-thesis",
+          "viewpoint_tags": [
+            "explicit-computation",
+            "riemann-siegel",
+            "verification-epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": true,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u19.txt",
+          "content_sha256": "f4c3758a3b55f544e158370482032a8dc1bbe2b4810f78b22d034b74ce756d69",
+          "artifact_sha256": "f0c0a2d594ea7df6da3e2e561a9496a9be4c5404f8700087d786b64b047665f0",
+          "artifact_bytes": 3163
+        }
+      ],
+      "audit_context_group": "source:pugh1998_riemann_siegel_thesis",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "masters-thesis"
+        ],
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "ocr": false,
+        "long_form": true,
+        "depth": 19
+      }
+    }
+  ]
+}

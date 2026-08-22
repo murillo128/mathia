@@ -1,0 +1,1356 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2090804474_71dee00f_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2090804474",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates the arithmetic local-factor calculation from the final Cauchy-Schwarz error transfer.",
+      "line_end": 1435,
+      "line_start": 1370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the multiplicative sum prime by prime, obtains 1/(e^gamma log X), and controls replacement of the truncated reciprocal product to complete the k=1 proof.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local Euler factors produce the critical normalization for k=1",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_025.txt",
+      "unit_bytes": 5069,
+      "unit_id": "openalex_w2090804474_depth_025",
+      "unit_sha256": "c2c5488734c62e26b52dfe9e8c4a05bbe8738d9d38c413801f9b8d2c26f3d2d8",
+      "unit_type": "local-factor-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_025.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1362,
+          "line_end": 1369,
+          "text": "                                          n∈S(X)\n                                                                     2\n                                                  X φ(g)   X α−1 (gn)                \u0001\n                                          = log T                     + O (log X)10 .\n                                                     g 2        n\n                                                       g∈S(X)                n∈S(X)\n\n\n",
+          "sha256": "96ad5d201ccf19915f19e885fe0c1329008a3fedcf625a3bb457858ea232d583"
+        },
+        "after": {
+          "line_start": 1436,
+          "line_end": 1443,
+          "text": "  We now prove Theorem 3 for k = 2. By Lemma 2 we may again replace PX ( 21 + ıt) by PX∗ ( 12 + ıt).\nFurthermore, G2 (3)/G(5) = 1/12, so it suffices to show that\n                  Z                                                     \u0012         \u00134\n                1 2T                                2      1               log T\n                       ζ( 21 + ıt)2 PX∗ ( 12 + ıt)−2 dt =    (1 + o (1)) γ                     (38)\n                T T                                       12              e log X\nfor X ≪ (log T )2−ǫ . By (16) (see (31) also and the remark following it), we have\n                                             X α−2 (n)        \u0010          \u0011\n",
+          "sha256": "0b41d44dda9e43948ec16a1c1dcbb588944d72c305e99648016396bc00b7c50f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=1",
+            "line_end": 1435,
+            "line_start": 1162,
+            "mathematical_role": "Combines a truncated reciprocal Euler product with a twisted zeta second moment, gcd reorganization, and Euler factors to prove the split for k=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1435,
+          "line_start": 1370,
+          "title": "Local Euler factors produce the critical normalization for k=1",
+          "unit_id": "openalex_w2090804474_depth_025",
+          "unit_type": "local-factor-evaluation",
+          "why_material": "Evaluates the multiplicative sum prime by prime, obtains 1/(e^gamma log X), and controls replacement of the truncated reciprocal product to complete the k=1 proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Separates the arithmetic local-factor calculation from the final Cauchy-Schwarz error transfer.",
+          "representation_dependency": "Strongly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1367,
+            "line_start": 1232,
+            "title": "Gcd decomposition turns the k=1 diagonal into an Euler product",
+            "unit_id": "openalex_w2090804474_depth_024",
+            "unit_type": "decomposition-and-tail-control",
+            "why_material": "Groups coefficient pairs by their gcd, uses the divisor identity for gcd weights, extends finite smooth sums with controlled tails, and reaches a multiplicative infinite sum."
+          },
+          {
+            "line_end": 1545,
+            "line_start": 1436,
+            "title": "k=2 requires a fourth-moment Dirichlet-polynomial decomposition",
+            "unit_id": "openalex_w2090804474_depth_026",
+            "unit_type": "method-comparison",
+            "why_material": "Explains why the k=2 case uses a stronger twisted fourth-moment formula and decomposes the target into one diagonal term and two off-diagonal terms T1-T2-T3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the cube-free coefficients, polynomial length restriction, auxiliary ranges, and coefficient weights.",
+      "line_end": 1545,
+      "line_start": 1436,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; the multi-line Gaggero formula has extraction-layout risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why the k=2 case uses a stronger twisted fourth-moment formula and decomposes the target into one diagonal term and two off-diagonal terms T1-T2-T3.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "k=2 requires a fourth-moment Dirichlet-polynomial decomposition",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_026.txt",
+      "unit_bytes": 7915,
+      "unit_id": "openalex_w2090804474_depth_026",
+      "unit_sha256": "5579b9d1ec17e1972ce94c56d4519f6acf9e2fea11293364ee333e3edad18187",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_026.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1428,
+          "line_end": 1435,
+          "text": "                   ≪ 1+ǫ/200 T 2 log2 T / log X        ≪ T −ǫ/400 .\n                     T\nFrom these estimates and (37), we may now conclude that\n                   Z                                               \u0012       \u0012       \u0013\u0013\n                  1 2T      1        ∗ 1       −1 2        log T               1\n                        |ζ( 2 + ıt)PX ( 2 + ıt) | dt = γ             1+O\n                 T T                                     e log X             log X\nfor X = O(log T )2−ǫ . This completes the proof of Theorem 3 in the case k = 1.\n",
+          "sha256": "495fa5a6ebc37f70a60321d17448074be14195a9f7adc0c245726cbf0eeb3016"
+        },
+        "after": {
+          "line_start": 1546,
+          "line_end": 1553,
+          "text": "\n<!-- source-page: 22 -->\n\n22                           S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n  Let us denote the sum in T1 by S1 . Grouping together those terms for which (m, n) = g and\nthen replacing m by mg and n by ng, we obtain\n",
+          "sha256": "49fb080cc20579a5c86979033ee3bf935b4c67a6524be61706766e6ea41c457f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1545,
+          "line_start": 1436,
+          "title": "k=2 requires a fourth-moment Dirichlet-polynomial decomposition",
+          "unit_id": "openalex_w2090804474_depth_026",
+          "unit_type": "method-comparison",
+          "why_material": "Explains why the k=2 case uses a stronger twisted fourth-moment formula and decomposes the target into one diagonal term and two off-diagonal terms T1-T2-T3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the cube-free coefficients, polynomial length restriction, auxiliary ranges, and coefficient weights.",
+          "representation_dependency": "Highly formula-dependent; the multi-line Gaggero formula has extraction-layout risk.",
+          "unit_id": "openalex_w2090804474_depth_026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1435,
+            "line_start": 1370,
+            "title": "Local Euler factors produce the critical normalization for k=1",
+            "unit_id": "openalex_w2090804474_depth_025",
+            "unit_type": "local-factor-evaluation",
+            "why_material": "Evaluates the multiplicative sum prime by prime, obtains 1/(e^gamma log X), and controls replacement of the truncated reciprocal product to complete the k=1 proof."
+          },
+          {
+            "line_end": 1669,
+            "line_start": 1552,
+            "title": "Cube-free support organizes the k=2 diagonal by square-free layers",
+            "unit_id": "openalex_w2090804474_depth_027",
+            "unit_type": "combinatorial-reorganization",
+            "why_material": "Rewrites the diagonal using gcd variables, the unique g=g1 g2^2 decomposition, and coprimality constraints, then extends the remaining smooth sums to multiplicative divisor sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows how support restrictions convert a dense gcd expression into locally factorable data.",
+      "line_end": 1669,
+      "line_start": 1552,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive; a line refers to an equation number with apparent extraction/OCR ambiguity, so exact symbolic reuse needs PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the diagonal using gcd variables, the unique g=g1 g2^2 decomposition, and coprimality constraints, then extends the remaining smooth sums to multiplicative divisor sums.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cube-free support organizes the k=2 diagonal by square-free layers",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_027.txt",
+      "unit_bytes": 7862,
+      "unit_id": "openalex_w2090804474_depth_027",
+      "unit_sha256": "cd5e84c08cdb6773bad86007a0a871e0d32fec50053a8212234770793ea5ff67",
+      "unit_type": "combinatorial-reorganization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_027.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1544,
+          "line_end": 1551,
+          "text": "\nsay.\n\n<!-- source-page: 22 -->\n\n22                           S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n",
+          "sha256": "f21dc272e732376892ca00ab88a39b82a91dce44a64eb5d73637cf5bf416c2af"
+        },
+        "after": {
+          "line_start": 1670,
+          "line_end": 1677,
+          "text": "\n  We now define the following multiplicative functions:\n                   X α−2 (d)δ(d)         Y\u0012             α−2 (p)δ(p)        α−2 (pa )δ(pa )\n                                                                                            \u0013\n           A(n) =                     =          1+                  ··· +                    ,\n                              d                              p                     pa\n                    d|n                 pa ||n\n                   X α−2 (d)δ(d)         Y\u0012             α−2 (p)δ(p)            α−2 (pa )δ(pa )\n",
+          "sha256": "ff4ddca528622c93e056ecf8045b77034380c09b7deccdc10a9319427b4c0c3e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1669,
+          "line_start": 1552,
+          "title": "Cube-free support organizes the k=2 diagonal by square-free layers",
+          "unit_id": "openalex_w2090804474_depth_027",
+          "unit_type": "combinatorial-reorganization",
+          "why_material": "Rewrites the diagonal using gcd variables, the unique g=g1 g2^2 decomposition, and coprimality constraints, then extends the remaining smooth sums to multiplicative divisor sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Shows how support restrictions convert a dense gcd expression into locally factorable data.",
+          "representation_dependency": "Formula-sensitive; a line refers to an equation number with apparent extraction/OCR ambiguity, so exact symbolic reuse needs PDF checking.",
+          "unit_id": "openalex_w2090804474_depth_027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1545,
+            "line_start": 1436,
+            "title": "k=2 requires a fourth-moment Dirichlet-polynomial decomposition",
+            "unit_id": "openalex_w2090804474_depth_026",
+            "unit_type": "method-comparison",
+            "why_material": "Explains why the k=2 case uses a stronger twisted fourth-moment formula and decomposes the target into one diagonal term and two off-diagonal terms T1-T2-T3."
+          },
+          {
+            "line_end": 1737,
+            "line_start": 1671,
+            "title": "Nested divisor sums compress to one diagonal Euler product",
+            "unit_id": "openalex_w2090804474_depth_028",
+            "unit_type": "multiplicative-compression",
+            "why_material": "Introduces multiplicative functions A through F to evaluate nested M,N,r,s,g2 sums from the inside out and reduce S1 to independent local prime factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The named functions are temporary proof devices, not a proposed ontology.",
+      "line_end": 1737,
+      "line_start": 1671,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent; two product-index glyphs appear degraded in extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces multiplicative functions A through F to evaluate nested M,N,r,s,g2 sums from the inside out and reduce S1 to independent local prime factors.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nested divisor sums compress to one diagonal Euler product",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_028.txt",
+      "unit_bytes": 4768,
+      "unit_id": "openalex_w2090804474_depth_028",
+      "unit_sha256": "6ac8dd8d88d426a2457ba57b29cdbf72b77e1f9d42bdf83a383751b100ee4d07",
+      "unit_type": "multiplicative-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_028.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1663,
+          "line_end": 1670,
+          "text": "                                g1 |P               g2 |(P/g1 )                    r|g1                  s|(g1 /r)\n                                            X         α−2 (N )δ(N )                 X           α−2 (M )δ(M )\n                                                                                                              .\n                                                    2\n                                                           N                                  2\n                                                                                                     M\n                                        N |(P/g1 g2 )                        M |(P/N g1 g2 )\n\n",
+          "sha256": "f5fa78e7d16c9e7a5860f3e83eb586dfad9e034b134573e2debe7df12fc17f16"
+        },
+        "after": {
+          "line_start": 1738,
+          "line_end": 1745,
+          "text": "\nBy the definitions of C and D we see that\n                                     \u0012                   \u0013\n                                           α−2 (p2 )δ(p)     α−2 (p2 )δ(p)\n                         C(p)D(p) = 1 +                    +                                                       (45)\n                                             α−2 (p)p         α−2 (p)p\n                                                2\n                                          α−2 (p )δ(p)\n",
+          "sha256": "c79649a4ecdfb892e6c21a44e7db2097b5a6ea5d0d321a8a8329fee44c3f62a4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1737,
+          "line_start": 1671,
+          "title": "Nested divisor sums compress to one diagonal Euler product",
+          "unit_id": "openalex_w2090804474_depth_028",
+          "unit_type": "multiplicative-compression",
+          "why_material": "Introduces multiplicative functions A through F to evaluate nested M,N,r,s,g2 sums from the inside out and reduce S1 to independent local prime factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The named functions are temporary proof devices, not a proposed ontology.",
+          "representation_dependency": "Strongly formula-dependent; two product-index glyphs appear degraded in extraction.",
+          "unit_id": "openalex_w2090804474_depth_028"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1669,
+            "line_start": 1552,
+            "title": "Cube-free support organizes the k=2 diagonal by square-free layers",
+            "unit_id": "openalex_w2090804474_depth_027",
+            "unit_type": "combinatorial-reorganization",
+            "why_material": "Rewrites the diagonal using gcd variables, the unique g=g1 g2^2 decomposition, and coprimality constraints, then extends the remaining smooth sums to multiplicative divisor sums."
+          },
+          {
+            "line_end": 1834,
+            "line_start": 1739,
+            "title": "Prime-range local factors yield the k=2 diagonal constant",
+            "unit_id": "openalex_w2090804474_depth_029",
+            "unit_type": "local-factor-evaluation",
+            "why_material": "Evaluates the local factors separately below and above sqrt(X), combines them with Mertens-type products, and obtains T1~(1/12)(log T/(e^gamma log X))^4."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Captures the origin of both the universal 1/12 and the X-dependent scale.",
+      "line_end": 1834,
+      "line_start": 1739,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; displayed algebra and prime-range boundaries require PDF fidelity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluates the local factors separately below and above sqrt(X), combines them with Mertens-type products, and obtains T1~(1/12)(log T/(e^gamma log X))^4.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-range local factors yield the k=2 diagonal constant",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_029.txt",
+      "unit_bytes": 5886,
+      "unit_id": "openalex_w2090804474_depth_029",
+      "unit_sha256": "6b1e54b056f653d2ef0d2023a47bc4b2d57f9defa07e49c62f4498844706f16a",
+      "unit_type": "local-factor-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_029.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1731,
+          "line_end": 1738,
+          "text": "                         = (1 + o(1)) A(P )B(P )E(P )F (P ) .\nUsing the expression for F (P ) as a product, we see that this is the same as\n                                    Y\u0012                                        \u0013\n                                           2      2         α−2 (p)2 C(p)D(p)\n                   S1 = (1 + o(1))      A(p )B(p )E(p) +                        .                                  (44)\n                                                                     p\n                                         p|P\n\n",
+          "sha256": "db0ef43a1109995f631b38c522d58a9aa4d4f4712e57b0f0e9b3c5e9105fbc2d"
+        },
+        "after": {
+          "line_start": 1835,
+          "line_end": 1842,
+          "text": "\n  To treat the second term on the right-hand side of (41), T2 , we require two lemmas.\nLemma 7. Suppose that a and b are positive integers with (a, b) = 1. Then for b ⩽ x, we have\n                           X 1         φ(b)\n                                    =       log x + O(log log 2b) .\n                                  n      b\n                                  n⩽x\n                                (an,b)=1\n",
+          "sha256": "2cff6d3e4af8e57c657e6feff7a5560ec53f0330c996097d795c2036cc3e2578"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1834,
+          "line_start": 1739,
+          "title": "Prime-range local factors yield the k=2 diagonal constant",
+          "unit_id": "openalex_w2090804474_depth_029",
+          "unit_type": "local-factor-evaluation",
+          "why_material": "Evaluates the local factors separately below and above sqrt(X), combines them with Mertens-type products, and obtains T1~(1/12)(log T/(e^gamma log X))^4."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Captures the origin of both the universal 1/12 and the X-dependent scale.",
+          "representation_dependency": "Highly formula-dependent; displayed algebra and prime-range boundaries require PDF fidelity.",
+          "unit_id": "openalex_w2090804474_depth_029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1737,
+            "line_start": 1671,
+            "title": "Nested divisor sums compress to one diagonal Euler product",
+            "unit_id": "openalex_w2090804474_depth_028",
+            "unit_type": "multiplicative-compression",
+            "why_material": "Introduces multiplicative functions A through F to evaluate nested M,N,r,s,g2 sums from the inside out and reduce S1 to independent local prime factors."
+          },
+          {
+            "line_end": 1994,
+            "line_start": 1836,
+            "title": "Coprime harmonic sums supply off-diagonal local densities",
+            "unit_id": "openalex_w2090804474_depth_030",
+            "unit_type": "lemma-package",
+            "why_material": "Proves a coprime harmonic-sum estimate and iterates it to evaluate the constrained u,v sum with multiplicative density factors kappa(md)kappa(nd)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These lemmas isolate a reusable way to turn coprimality constraints into logarithms and local Euler corrections.",
+      "line_end": 1994,
+      "line_start": 1836,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves a coprime harmonic-sum estimate and iterates it to evaluate the constrained u,v sum with multiplicative density factors kappa(md)kappa(nd).",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coprime harmonic sums supply off-diagonal local densities",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_030.txt",
+      "unit_bytes": 10433,
+      "unit_id": "openalex_w2090804474_depth_030",
+      "unit_sha256": "698357923eb6ff82d0582679a0dfd88c86aa9210565f308f804d43be34358ac3",
+      "unit_type": "lemma-package",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_030.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1828,
+          "line_end": 1835,
+          "text": "                                T 1 = S1        + O(ǫ1 ) log4 T\n                                           2π 2\nand ǫ1 > 0 may be taken as small as we like, we now see that\n                                     \u0012          \u0013\u0012           \u00134\n                                       1             log T\n                              T1 =        + o(1)                .                                  (46)\n                                       12           eγ log X\n\n",
+          "sha256": "245072bab731071a1762ebc1710b5d28e3457486d1b92cbb5bd4ca67eb4d5e9b"
+        },
+        "after": {
+          "line_start": 1995,
+          "line_end": 2002,
+          "text": "\n<!-- source-page: 28 -->\n\n28                               S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n     Returning to T2 in (41) and using Lemma 8, we have\n                          X α−2 (m)α−2 (n) X (m, d)(n, d) \u0012              \u0013\n",
+          "sha256": "5b7bd00261950514de3e43c5bfc7fd17e792e37261921fb82a86ddba49e63ee2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1994,
+          "line_start": 1836,
+          "title": "Coprime harmonic sums supply off-diagonal local densities",
+          "unit_id": "openalex_w2090804474_depth_030",
+          "unit_type": "lemma-package",
+          "why_material": "Proves a coprime harmonic-sum estimate and iterates it to evaluate the constrained u,v sum with multiplicative density factors kappa(md)kappa(nd)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These lemmas isolate a reusable way to turn coprimality constraints into logarithms and local Euler corrections.",
+          "representation_dependency": "Strongly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1834,
+            "line_start": 1739,
+            "title": "Prime-range local factors yield the k=2 diagonal constant",
+            "unit_id": "openalex_w2090804474_depth_029",
+            "unit_type": "local-factor-evaluation",
+            "why_material": "Evaluates the local factors separately below and above sqrt(X), combines them with Mertens-type products, and obtains T1~(1/12)(log T/(e^gamma log X))^4."
+          },
+          {
+            "line_end": 2035,
+            "line_start": 2001,
+            "title": "The first off-diagonal term becomes a square of a multiplicative sum",
+            "unit_id": "openalex_w2090804474_depth_031",
+            "unit_type": "reduction",
+            "why_material": "Applies the local-density lemma, interchanges summations, and reduces T2 to a d-sum weighted by the square of a single coefficient sum S(d)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This compression is the entry point for the remaining cube-free factorization.",
+      "line_end": 2035,
+      "line_start": 2001,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the local-density lemma, interchanges summations, and reduces T2 to a d-sum weighted by the square of a single coefficient sum S(d).",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first off-diagonal term becomes a square of a multiplicative sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_031.txt",
+      "unit_bytes": 2421,
+      "unit_id": "openalex_w2090804474_depth_031",
+      "unit_sha256": "461499a734ec88e1ad657612fad8326ed169f4b63df80f2cee561487ca435cfc",
+      "unit_type": "reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_031.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1993,
+          "line_end": 2000,
+          "text": "\n                                                                                                                                    \u0003\n\n<!-- source-page: 28 -->\n\n28                               S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n",
+          "sha256": "20ed698b3e4e05db4326046f4711980778645d0a846c35076b4952cbc86fdeeb"
+        },
+        "after": {
+          "line_start": 2036,
+          "line_end": 2043,
+          "text": "for which (n, d) = e, say, we obtain\n                         X X α−2 (n) κ(n/e)                    X X α−2 (eN ) κ(N )\n      S(d) = (1 + o(1))      e                    = (1 + o(1))                           .\n                                          n                                     N\n                           e|d    n∈S(X)                                                e|d N ∈S(X)\n                                  (n,d)=e                                                   (N,d/e)=1\n\nSince α−2 is supported only on cube-free numbers in S(X), we may assume that e | P 2 . Therefore,\n",
+          "sha256": "ad0a9da4727aed3c29b8f9e63200304ae57725439d73229d0a5352da124a2955"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2035,
+          "line_start": 2001,
+          "title": "The first off-diagonal term becomes a square of a multiplicative sum",
+          "unit_id": "openalex_w2090804474_depth_031",
+          "unit_type": "reduction",
+          "why_material": "Applies the local-density lemma, interchanges summations, and reduces T2 to a d-sum weighted by the square of a single coefficient sum S(d)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This compression is the entry point for the remaining cube-free factorization.",
+          "representation_dependency": "Strongly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_031"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1994,
+            "line_start": 1836,
+            "title": "Coprime harmonic sums supply off-diagonal local densities",
+            "unit_id": "openalex_w2090804474_depth_030",
+            "unit_type": "lemma-package",
+            "why_material": "Proves a coprime harmonic-sum estimate and iterates it to evaluate the constrained u,v sum with multiplicative density factors kappa(md)kappa(nd)."
+          },
+          {
+            "line_end": 2154,
+            "line_start": 2036,
+            "title": "Cube-free cancellation forces D2 to the upper-prime range",
+            "unit_id": "openalex_w2090804474_depth_032",
+            "unit_type": "obstruction-and-factorization",
+            "why_material": "Factors d against the square of the primorial, shows S(d) vanishes unless its squared component uses only primes above sqrt(X), and evaluates surviving S(d) through G and H Euler factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The vanishing condition is a structural cancellation, not merely an estimate.",
+      "line_end": 2154,
+      "line_start": 2036,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; many dense divisor conditions should be scan-verified before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factors d against the square of the primorial, shows S(d) vanishes unless its squared component uses only primes above sqrt(X), and evaluates surviving S(d) through G and H Euler factors.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cube-free cancellation forces D2 to the upper-prime range",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_032.txt",
+      "unit_bytes": 9090,
+      "unit_id": "openalex_w2090804474_depth_032",
+      "unit_sha256": "eb2692d4a1cc9286f7a0cc980a5d453cd1fdf96143783cda555efc88a72d5ad6",
+      "unit_type": "obstruction-and-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_032.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2028,
+          "line_end": 2035,
+          "text": " T2 =      (1 + O(ǫ1 )) log2 T                                                                 . (48)\n        π2                                            d                         n             \n                                 0<d<Y /4                                       n⩽Y\n                                  d∈S(X)                                       n∈S(X)\n\n\n   Denote the inner sum by S(d). As on previous occasions, extending the sum to all of S(X), we\nintroduce an error term that is o(1) times the main term. Thus, grouping together terms in S(d)\n",
+          "sha256": "1803ec45db589cc6d8619041952c8e4d0ed5c101dfe55293bee24d50677641f9"
+        },
+        "after": {
+          "line_start": 2155,
+          "line_end": 2162,
+          "text": "   We use this in (48). Recall that for each d < Y /4 we had set (d, P 2 ) = D1 D22 with D1 | P and\nD2 | (P/D1 ). Recall also that P = P1 P2 and Y = T ǫ1 . We therefore have that\n      6                      X (log(Y /4d) + O(1))\nT2 = 2 (1 + O(ǫ1 )) log 2 T                            S(d)2\n      π                                     d\n                              0<d<Y /4\n                               d∈S(X)\n                                                                                                                        \u0001\n",
+          "sha256": "1b559b77b46fcfe1469c80250af671595cd205e538ec74f6c2008fe0f32bd2fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2154,
+          "line_start": 2036,
+          "title": "Cube-free cancellation forces D2 to the upper-prime range",
+          "unit_id": "openalex_w2090804474_depth_032",
+          "unit_type": "obstruction-and-factorization",
+          "why_material": "Factors d against the square of the primorial, shows S(d) vanishes unless its squared component uses only primes above sqrt(X), and evaluates surviving S(d) through G and H Euler factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The vanishing condition is a structural cancellation, not merely an estimate.",
+          "representation_dependency": "Highly formula-dependent; many dense divisor conditions should be scan-verified before reuse.",
+          "unit_id": "openalex_w2090804474_depth_032"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2035,
+            "line_start": 2001,
+            "title": "The first off-diagonal term becomes a square of a multiplicative sum",
+            "unit_id": "openalex_w2090804474_depth_031",
+            "unit_type": "reduction",
+            "why_material": "Applies the local-density lemma, interchanges summations, and reduces T2 to a d-sum weighted by the square of a single coefficient sum S(d)."
+          },
+          {
+            "line_end": 2248,
+            "line_start": 2155,
+            "title": "Multiplicative bounds make both k=2 off-diagonal terms negligible",
+            "unit_id": "openalex_w2090804474_depth_033",
+            "unit_type": "error-bound-and-proof-completion",
+            "why_material": "Substitutes the factorized S(d), bounds the residual coprime sum and Euler products, obtains the required small bound for T2, transfers it to T3, and completes Theorem 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Makes explicit that the same mechanism controls both off-diagonal terms while T1 supplies the main term.",
+      "line_end": 2248,
+      "line_start": 2155,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substitutes the factorized S(d), bounds the residual coprime sum and Euler products, obtains the required small bound for T2, transfers it to T3, and completes Theorem 3.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiplicative bounds make both k=2 off-diagonal terms negligible",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_033.txt",
+      "unit_bytes": 5959,
+      "unit_id": "openalex_w2090804474_depth_033",
+      "unit_sha256": "0b00bd00cca017143b2fe109bb9467a04267be8c17cc05a296d22e9d36780724",
+      "unit_type": "error-bound-and-proof-completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_033.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2147,
+          "line_end": 2154,
+          "text": "                                                                                             2p\n                                                                              p|D1\n                                                                = µ(D1 )H(D1 ) ,\nsay. Thus,\n                                                                               µ(D1 )H(D1 )\n                            S(d) = S(D1 D22 ) = (1 + o(1)) G(P )                            ,                             (51)\n                                                                               G(D1 )G(D2 )\nprovided D2 | P2 ; otherwise S(d) = 0.\n",
+          "sha256": "053c8f33fa982d0a0bb8bcef4256cfd6d921e9aefbd4c0fdcbd6cabae7b6c9ee"
+        },
+        "after": {
+          "line_start": 2249,
+          "line_end": 2256,
+          "text": "\n\n\n                                        Appendix A. Graphs\n\n  To illustrate Theorem 1, in Figures 1–3 we have plotted |ZX ( 12 +ıt)| and |PX ( 12 +ıt)| for t near the\n1012 th zero for two values of X, and have compared their product with the Riemann zeta function.\nThe values of X used are X = 26.31 ≈ log γ1012 and X = 1000. Though the functions PX and ZX\n",
+          "sha256": "49a2bab937e66a54c52b7cf598b347d814b473e3f43083862fb4fb5f9a26a377"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The Proof of Theorem 3, k=2",
+            "line_end": 2251,
+            "line_start": 1436,
+            "mathematical_role": "Uses a fourth-moment-with-Dirichlet-polynomial formula and detailed multiplicative analysis of diagonal and off-diagonal terms to prove the split for k=2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2248,
+          "line_start": 2155,
+          "title": "Multiplicative bounds make both k=2 off-diagonal terms negligible",
+          "unit_id": "openalex_w2090804474_depth_033",
+          "unit_type": "error-bound-and-proof-completion",
+          "why_material": "Substitutes the factorized S(d), bounds the residual coprime sum and Euler products, obtains the required small bound for T2, transfers it to T3, and completes Theorem 3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Makes explicit that the same mechanism controls both off-diagonal terms while T1 supplies the main term.",
+          "representation_dependency": "Highly formula-dependent.",
+          "unit_id": "openalex_w2090804474_depth_033"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2154,
+            "line_start": 2036,
+            "title": "Cube-free cancellation forces D2 to the upper-prime range",
+            "unit_id": "openalex_w2090804474_depth_032",
+            "unit_type": "obstruction-and-factorization",
+            "why_material": "Factors d against the square of the primorial, shows S(d) vanishes unless its squared component uses only primes above sqrt(X), and evaluates surviving S(d) through G and H Euler factors."
+          },
+          {
+            "line_end": 2276,
+            "line_start": 2252,
+            "title": "Pointwise prime-zero compensation across two X values",
+            "unit_id": "openalex_w2090804474_depth_034",
+            "unit_type": "computational-illustration",
+            "why_material": "Reports that PX and ZX change with X but their product largely cancels that dependence and closely approximates zeta near a high zero; it also defines the actual plotted sharp/unsmoothed factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For k=1 and k=2, reciprocal prime factors become short smooth-number polynomials; twisted zeta moments, gcd decompositions, and local Euler-factor cancellations isolate the predicted main term and suppress off-diagonal contributions.",
+            "limit": "The k=2 machinery is substantially specialized and does not itself establish the conjecture for higher or nonintegral k.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_023",
+              "openalex_w2090804474_depth_024",
+              "openalex_w2090804474_depth_025",
+              "openalex_w2090804474_depth_026",
+              "openalex_w2090804474_depth_027",
+              "openalex_w2090804474_depth_028",
+              "openalex_w2090804474_depth_029",
+              "openalex_w2090804474_depth_030",
+              "openalex_w2090804474_depth_031",
+              "openalex_w2090804474_depth_032",
+              "openalex_w2090804474_depth_033"
+            ],
+            "title": "Two levels of rigorous splitting verification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The textual claim and setup are preserved, but the curves themselves are absent from the normalized text layer.",
+      "line_end": 2276,
+      "line_start": 2252,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Image-dependent for independent assessment of accuracy; formulas are extraction-sensitive and the claim is only an illustration.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports that PX and ZX change with X but their product largely cancels that dependence and closely approximates zeta near a high zero; it also defines the actual plotted sharp/unsmoothed factors.",
+      "source_id": "openalex_w2090804474",
+      "source_normalized_sha256": "627b1f2776fec3f351bfcb8803f61668044c091aa381fc5897e8b1e08412e843",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pointwise prime-zero compensation across two X values",
+      "unit_artifact_relpath": "depth/units/openalex_w2090804474_depth_034.txt",
+      "unit_bytes": 1608,
+      "unit_id": "openalex_w2090804474_depth_034",
+      "unit_sha256": "e311ec085e683872beccd9ef2c6b7c7c208a8247991d280711070fb5ac0f14bd",
+      "unit_type": "computational-illustration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2090804474_depth_034.txt",
+      "source": {
+        "source_id": "openalex_w2090804474",
+        "title": "A hybrid Euler-Hadamard product for the Riemann zeta function",
+        "authors": [
+          "S. M. Gonek",
+          "C. P. Hughes",
+          "Jonathan P. Keating"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "heuristic-bridge",
+          "primes-zeros",
+          "random-matrix",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2244,
+          "line_end": 2251,
+          "text": "\n   The treatment of T3 is almost identical and leads to the same bound. Thus, combining our\nestimates for T1 (see (46)), T2 , and T3 with (41), and noting that we may take ǫ1 > 0 as small as\nwe like, we obtain (38). This completes the proof of the case k = 2 of Theorem 3 and thus, also\nthe proof of the theorem.\n\n\n\n",
+          "sha256": "ae2a2e4dca7a8d0ae180d54bb6a727d0f05d5423c55862f7f6c56e191bea5dda"
+        },
+        "after": {
+          "line_start": 2277,
+          "line_end": 2284,
+          "text": "\n<!-- source-page: 32 -->\n\n32                         S.M. GONEK, C.P. HUGHES, AND J.P. KEATING\n\n\n\n                   7\n",
+          "sha256": "5e472f82695c6bfa065d5dc4b10dbefc0701fbe829d9ac1fda82b7f559d99cb4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b772421ebe9038f3cff5d56e85d32015e65d06d4946c0746b725f0c71ed1b049",
+        "dossier_sha256": "03e10daf2c241e2c58684f55f21c17b2201090076cf48a7377dfe0d91b035b92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Graphs",
+            "line_end": 2342,
+            "line_start": 2252,
+            "mathematical_role": "Describes a pointwise numerical illustration of complementary X-dependence; the normalized text preserves prose and captions but not the plotted curves."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2276,
+          "line_start": 2252,
+          "title": "Pointwise prime-zero compensation across two X values",
+          "unit_id": "openalex_w2090804474_depth_034",
+          "unit_type": "computational-illustration",
+          "why_material": "Reports that PX and ZX change with X but their product largely cancels that dependence and closely approximates zeta near a high zero; it also defines the actual plotted sharp/unsmoothed factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The textual claim and setup are preserved, but the curves themselves are absent from the normalized text layer.",
+          "representation_dependency": "Image-dependent for independent assessment of accuracy; formulas are extraction-sensitive and the claim is only an illustration.",
+          "unit_id": "openalex_w2090804474_depth_034"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2248,
+            "line_start": 2155,
+            "title": "Multiplicative bounds make both k=2 off-diagonal terms negligible",
+            "unit_id": "openalex_w2090804474_depth_033",
+            "unit_type": "error-bound-and-proof-completion",
+            "why_material": "Substitutes the factorized S(d), bounds the residual coprime sum and Euler products, obtains the required small bound for T2, transfers it to T3, and completes Theorem 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Changing X alters PX and ZX individually, but both the moment calculation and the reported pointwise experiment show compensating dependence in their product.",
+            "limit": "The appendix plots are unavailable in the normalized text and constitute an illustration rather than independent proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2090804474_depth_003",
+              "openalex_w2090804474_depth_006",
+              "openalex_w2090804474_depth_007",
+              "openalex_w2090804474_depth_034"
+            ],
+            "title": "Theoretical and pointwise X cancellation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 2336,
+              "line_start": 2277,
+              "reason": "The three graphical curves are reduced to page markers, axis numbers, and captions, so their visual evidence cannot be audited from normalized text."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "0271f03b1d2c6f08bd6d33e3300febf8fbef4465b8a53738d8fc8541777e62c0"
+}

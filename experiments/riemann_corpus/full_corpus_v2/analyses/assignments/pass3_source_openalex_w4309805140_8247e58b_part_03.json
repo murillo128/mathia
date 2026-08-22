@@ -1,0 +1,529 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w4309805140_8247e58b_part_03.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4309805140",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the distinct suggestion to inspect unusually small carrier-wave regions, presented as speculation.",
+      "line_end": 4161,
+      "line_start": 4126,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Runs the large-gap story backward, notes distant off-line zeros need not create visible anomalies, and argues that computational search should be conditioned on an explicit failure mechanism.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        67
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A search for off-line zeros needs a failure model",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d49.txt",
+      "unit_bytes": 2193,
+      "unit_id": "openalex_w4309805140_d49",
+      "unit_sha256": "31374cf69475f9f68d77fa0f36c67a2643d0a1178cfe6d090567d52201090f43",
+      "unit_type": "counterfactual search design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d49.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4118,
+          "line_end": 4125,
+          "text": "than 1000, and in subsequent work [109], found a value of Z(t) even larger than\nthat found by Bober and Hiary [21]. So, a Notion may be wrong or misleading,\nyet still serve as the seed for a new discovery.\n    Although it is out of reach to compute in regions where the carrier wave,\nand not the local zero gaps, provide the main contribution to the size of Z(t),\nit would still be of theoretical interest to find heuristics for locating truly large\nvalues.\n\n",
+          "sha256": "c63444dd902af4613805450d41be42959196d36ff203ff74338a2974e4b265ed"
+        },
+        "after": {
+          "line_start": 4162,
+          "line_end": 4169,
+          "text": "\n14.4 Gram’s law, as it was originally formulated\nMistaken Notion 4.6 contains two statements: that Gram points are special,\nand that Gram’s law is helpful for understanding properties of the zeros. First\nwe address Gram’s law. For reasons why Gram points are not special, see Sub-\nsection 14.5.\n    Gram’s law, as usually stated, misses a key point of Gram’s original obser-\nvation. What Gram noted is that the zeros and the Gram points “separate\n",
+          "sha256": "5ac474944bbbb1aa0bbe7c9fab14e3beee0aae85e4dc5f39181d04d1e8bc9b96"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "14 Discussion of the Mistaken Notions",
+            "line_end": 4442,
+            "line_start": 4050,
+            "mathematical_role": "Revisits computational filters, counterexample search, precise Gram law, sloshing, and finite-size random-matrix controls."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4161,
+          "line_start": 4126,
+          "title": "A search for off-line zeros needs a failure model",
+          "unit_id": "openalex_w4309805140_d49",
+          "unit_type": "counterfactual search design",
+          "why_material": "Runs the large-gap story backward, notes distant off-line zeros need not create visible anomalies, and argues that computational search should be conditioned on an explicit failure mechanism."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with the distinct suggestion to inspect unusually small carrier-wave regions, presented as speculation.",
+          "representation_dependency": "Prose.",
+          "unit_id": "openalex_w4309805140_d49"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4124,
+            "line_start": 4050,
+            "title": "Wrong large-value notions can still be productive filters",
+            "unit_id": "openalex_w4309805140_d48",
+            "unit_type": "method reassessment",
+            "why_material": "Separates asymptotically false causal stories from finite-height algorithms that successfully locate records, while showing why truncated initial terms cannot capture the true extreme scale."
+          },
+          {
+            "line_end": 4260,
+            "line_start": 4163,
+            "title": "Precise Gram law fails under zero sloshing",
+            "unit_id": "openalex_w4309805140_d50",
+            "unit_type": "definition repair and multiscale synthesis",
+            "why_material": "Restores Gram's original indexed interlacing, gives an S(t) necessary condition showing its asymptotic rarity, and reframes long coherent displacements as the same density wave that controls carrier amplitude."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An observation is not skeptical evidence if it occurs in unitary models where the RH analogue is built in or only inside verified computation; a credible failure claim needs an L-function-specific mechanism and a model for off-line zeros.",
+            "limit": "Passing this filter would make evidence relevant, not prove RH false; random-matrix transfer itself remains statistical and approximate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d40",
+              "openalex_w4309805140_d41",
+              "openalex_w4309805140_d42",
+              "openalex_w4309805140_d47",
+              "openalex_w4309805140_d49"
+            ],
+            "title": "A disciplined filter for evidence against RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4309805140_d49",
+        "spontaneous": {
+          "unit_id": "openalex_w4309805140_d49",
+          "spontaneous_reading": "The mathematical work is a reversal of the proposed large-gap diagnostic. Large gaps already occur for unitary-polynomial zeros without violating their constrained location, while a hypothetical nearby off-line pair would be expected to make only a modest critical-line gap with small, not large, Z inside it. Thus a search must start from a mechanism for failure and derive its observable signature; the closing suggestion redirects attention, speculatively, to wide regions where the carrier wave is unusually small."
+        },
+        "directed": {
+          "unit_id": "openalex_w4309805140_d49",
+          "source_grounded_mathematics": "The unit rejects the implication from a large critical-line zero gap to off-line zeros by comparison with random unitary polynomials and by running the implication backward. It argues that a near-line off-line pair would only slightly enlarge a neighboring critical-line gap and suppress Z there, whereas zeros far from the line could have little visible effect on Z or local gaps. It then suggests searching where the initial Riemann–Siegel terms nearly cancel and the carrier wave stays small.",
+          "conceptual_reading": "This is mechanism-conditioned falsification: posit a concrete failure mode, propagate it to observables, and only then design a computational filter. Reversing the proposed causal story exposes that an extreme gap is neither necessary nor discriminating evidence for failure.",
+          "representation_or_bridge": "The bridge maps a zero configuration to two observable summaries, local critical-line gap size and Z-amplitude, with the carrier wave and the initial Riemann–Siegel terms as intermediate objects. That summary is useful for search design but can forget off-line zeros whose influence on the line is weak.",
+          "boundary_or_failure": "Unitary-polynomial gaps refute a naive diagnostic, not RH; the counterfactual effects of off-line zeros are heuristic, and no complete failure model or detection algorithm is supplied. A low-carrier-wave region is proposed only as a possible vulnerability and is not shown to contain off-line zeros.",
+          "uncertainty": "The extracted fractional σ-locations are visibly corrupted, so no numerical claim about them is retained. The final search proposal is explicitly speculative, and the span supplies qualitative rather than quantified influence estimates."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the open problem of directly generating density waves and the proposed next structural level beyond them.",
+      "line_end": 4260,
+      "line_start": 4163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose with a simple inequality; no figure dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restores Gram's original indexed interlacing, gives an S(t) necessary condition showing its asymptotic rarity, and reframes long coherent displacements as the same density wave that controls carrier amplitude.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        68
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Precise Gram law fails under zero sloshing",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d50.txt",
+      "unit_bytes": 6470,
+      "unit_id": "openalex_w4309805140_d50",
+      "unit_sha256": "48e72814a348f7a121fabf7944ef054aa4edd1970fd2419656d4186ee7a4397d",
+      "unit_type": "definition repair and multiscale synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d50.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4155,
+          "line_end": 4162,
+          "text": "<!-- source-page: 67 -->\n\nThe carrier wave frequently causes the Z-function to stay very small over\na wide span of zeros. In that region a slight perturbation would cause many\nzeros to fall off the critical line. Maybe attempts to computationally disprove\nRH should begin by looking for regions where the initial terms in the Riemann-\nSiegel formula mostly cancel to nothing?\n\n",
+          "sha256": "793bd7f4673266a82562354fb8e35377890218b75ee4c74abb65241aa088d60a"
+        },
+        "after": {
+          "line_start": 4261,
+          "line_end": 4268,
+          "text": "\n14.5 Gram points are of transient interest\nA recent paper of Shanker [105] used computational data for the ζ-function to\nmake two conjectures about Gram intervals, and to suggest that “Gram points\nhave interesting properties which distinguish them from random points on the\ncritical line”. We examine that work in the context of the Principles, reaching\na different conclusion.\n\n",
+          "sha256": "d68b8ecac5a27e42f451f1f95ee0ebad5e83a387676c3f4c225439c5ad0ec23d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "14 Discussion of the Mistaken Notions",
+            "line_end": 4442,
+            "line_start": 4050,
+            "mathematical_role": "Revisits computational filters, counterexample search, precise Gram law, sloshing, and finite-size random-matrix controls."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4260,
+          "line_start": 4163,
+          "title": "Precise Gram law fails under zero sloshing",
+          "unit_id": "openalex_w4309805140_d50",
+          "unit_type": "definition repair and multiscale synthesis",
+          "why_material": "Restores Gram's original indexed interlacing, gives an S(t) necessary condition showing its asymptotic rarity, and reframes long coherent displacements as the same density wave that controls carrier amplitude."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the open problem of directly generating density waves and the proposed next structural level beyond them.",
+          "representation_dependency": "Prose with a simple inequality; no figure dependency.",
+          "unit_id": "openalex_w4309805140_d50"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4161,
+            "line_start": 4126,
+            "title": "A search for off-line zeros needs a failure model",
+            "unit_id": "openalex_w4309805140_d49",
+            "unit_type": "counterfactual search design",
+            "why_material": "Runs the large-gap story backward, notes distant off-line zeros need not create visible anomalies, and argues that computational search should be conditioned on an explicit failure mechanism."
+          },
+          {
+            "line_end": 4435,
+            "line_start": 4262,
+            "title": "Random-matrix controls make Gram-point effects transient",
+            "unit_id": "openalex_w4309805140_d51",
+            "unit_type": "finite-size control experiment",
+            "why_material": "Derives sign/reversal conjectures from CUE symmetries, matches zeta data at the prescribed finite matrix size, and uses increasing N plus lower-order damping to explain both similarities and statistically significant differences."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Early Gram interlacing comes from functional-equation frequency dominance, whereas growing S(t) produces coherent sloshing that destroys indexed interlacing while leaving local one-zero frequencies near their random-matrix limit.",
+            "limit": "Finite-size tables support the interpretation but do not by themselves prove every claimed convergence rate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d07",
+              "openalex_w4309805140_d11",
+              "openalex_w4309805140_d50",
+              "openalex_w4309805140_d51"
+            ],
+            "title": "Gram structure is a finite-conductor shadow of the highest tone"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4309805140_d50",
+        "spontaneous": {
+          "unit_id": "openalex_w4309805140_d50",
+          "spontaneous_reading": "The key refinement is to separate mere one-zero occupancy of a Gram interval from indexed interlacing: the precise law demands the correctly indexed zero. S(t) then compresses cumulative displacement, explaining how long blocks can slosh coherently away from their expected intervals even while local spacing statistics remain stable. Density/carrier waves become the intermediate object to model directly, rather than an effect recovered only after constructing a huge matrix."
+        },
+        "directed": {
+          "unit_id": "openalex_w4309805140_d50",
+          "source_grounded_mathematics": "The precise Gram law is defined by requiring (g_m,g_{m+1}) to contain exactly the (m+2)nd zero and no other. The unit gives |S⁺(g_n)| ≤ 1 as a necessary, not sufficient, condition and invokes Selberg's CLT to argue that this condition has limiting frequency zero. By contrast, ordinary one-zero occupancy remains common because normalized local spacings concentrate near one. Large |S(t)| is interpreted as coherent left/right sloshing of long zero blocks, linked to density waves and carrier-wave amplitude, and the stated problem asks for a direct random model of such waves, preferably for CUE.",
+          "conceptual_reading": "The unit decomposes two scales that a coarse statistic can conflate: local regularity of spacings and global rigidity of labels. Local universality can survive while accumulated count discrepancy destroys indexed interlacing. This blocks the inference from persistent ordinary Gram-law frequency to a permanent special alignment.",
+          "representation_or_bridge": "S(t) serves as a cumulative count/phase coordinate that exposes displacement invisible to nearest-neighbor statistics. A density wave is a scale-dependent coarse representation of the same collective behavior, while the carrier wave represents its amplitude effect on Z. Directly generating that mesoscopic object is proposed as a bridge from matrix eigenvalues to larger-scale structure without first materializing the entire matrix spectrum.",
+          "boundary_or_failure": "The inequality is only necessary, the density-wave model is posed as an open problem, and the proposed hierarchy beyond carrier waves is speculative. The definition of density depends on the measurement window, so a generative model must specify scale rather than treating the wave as canonical.",
+          "uncertainty": "The argument for asymptotic rarity is stated through Selberg's CLT rather than proved in this span. The claimed density-wave/carrier-wave equivalence is the author's modeling synthesis, and no direct construction or theorem is provided here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definitions, tables, asymptotic interpretation, and finite-size caveat.",
+      "line_end": 4435,
+      "line_start": 4262,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables are readable; one entry at line 4401 appears suspicious in extraction and should not be used numerically without source verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives sign/reversal conjectures from CUE symmetries, matches zeta data at the prescribed finite matrix size, and uses increasing N plus lower-order damping to explain both similarities and statistically significant differences.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        69,
+        70,
+        71
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random-matrix controls make Gram-point effects transient",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d51.txt",
+      "unit_bytes": 10412,
+      "unit_id": "openalex_w4309805140_d51",
+      "unit_sha256": "289eb225d1b4206028f80c29902f69bd60d04c4c0120cdd59d8a27669340e35c",
+      "unit_type": "finite-size control experiment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d51.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4254,
+          "line_end": 4261,
+          "text": "\n            local zero spacing : carrier wave :: carrier wave : ?????.       (14.2)\n\nIf one could directly produce density/carrier waves, then perhaps those can\nbe generated without needing to first directly produce an enormous random\nmatrix and then compute its eigenvalues. This may allow one to exhibit inter-\nesting (self similar?) structures, as mentioned in Subsection 11.3.\n\n",
+          "sha256": "38e0a60fbccba313fae1c50511f981745e4017f64982faf48709b133756bb2c4"
+        },
+        "after": {
+          "line_start": 4436,
+          "line_end": 4443,
+          "text": "\n\n\n                                        71\n\n<!-- source-page: 72 -->\n\n15 The chicken or the egg?\n",
+          "sha256": "e728d36a19c83c1a2db382a2ab742c5b14c962ac7c2ea4cffdf0c9580b4ae222"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "14 Discussion of the Mistaken Notions",
+            "line_end": 4442,
+            "line_start": 4050,
+            "mathematical_role": "Revisits computational filters, counterexample search, precise Gram law, sloshing, and finite-size random-matrix controls."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4435,
+          "line_start": 4262,
+          "title": "Random-matrix controls make Gram-point effects transient",
+          "unit_id": "openalex_w4309805140_d51",
+          "unit_type": "finite-size control experiment",
+          "why_material": "Derives sign/reversal conjectures from CUE symmetries, matches zeta data at the prescribed finite matrix size, and uses increasing N plus lower-order damping to explain both similarities and statistically significant differences."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definitions, tables, asymptotic interpretation, and finite-size caveat.",
+          "representation_dependency": "Tables are readable; one entry at line 4401 appears suspicious in extraction and should not be used numerically without source verification.",
+          "unit_id": "openalex_w4309805140_d51"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4260,
+            "line_start": 4163,
+            "title": "Precise Gram law fails under zero sloshing",
+            "unit_id": "openalex_w4309805140_d50",
+            "unit_type": "definition repair and multiscale synthesis",
+            "why_material": "Restores Gram's original indexed interlacing, gives an S(t) necessary condition showing its asymptotic rarity, and reframes long coherent displacements as the same density wave that controls carrier amplitude."
+          },
+          {
+            "line_end": 4463,
+            "line_start": 4443,
+            "title": "Function-first skepticism versus zero-first explanation",
+            "unit_id": "openalex_w4309805140_d52",
+            "unit_type": "conceptual synthesis",
+            "why_material": "Contrasts accidental-zero and structural-zero worldviews and summarizes how density waves let the zeros determine both scale and local corrections."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Early Gram interlacing comes from functional-equation frequency dominance, whereas growing S(t) produces coherent sloshing that destroys indexed interlacing while leaving local one-zero frequencies near their random-matrix limit.",
+            "limit": "Finite-size tables support the interpretation but do not by themselves prove every claimed convergence rate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d07",
+              "openalex_w4309805140_d11",
+              "openalex_w4309805140_d50",
+              "openalex_w4309805140_d51"
+            ],
+            "title": "Gram structure is a finite-conductor shadow of the highest tone"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4309805140_d51",
+        "spontaneous": {
+          "unit_id": "openalex_w4309805140_d51",
+          "spontaneous_reading": "A matched finite-size CUE experiment is used as a control for claims that Gram points are intrinsically special. Symmetry explains the sign, reversal, and reciprocal-shift phenomena, while the effective-size rule selects N=62 for comparison with the zeta data. Increasing N separates transient phase alignment from stable local spacing, and statistically real zeta–CUE differences are assigned to lower-order terms rather than hidden Gram-point structure."
+        },
+        "directed": {
+          "unit_id": "openalex_w4309805140_d51",
+          "source_grounded_mathematics": "For an even-dimensional unitary characteristic polynomial, matrix Gram points are defined as extrema of the leading cosine term, at phases θ_A+2πn/N. The unit derives the even/odd sign relation, reversal symmetry of Gram blocks, and the relation between shifts by kδ and −kδ from unitary-model symmetries and the Keating–Snaith framework. Using N=log(t/2π), it matches the cited zeta sample to N=62 CUE data; larger N tables show good/bad distinctions weakening and shifted Type-II/Type-I ratios tending toward one. It also notes statistically significant residual zeta–CUE differences, especially for rare events, and attributes their direction to lower-order terms that make random-matrix extremes more likely.",
+          "conceptual_reading": "The control distinguishes an invariant mechanism from a coordinate artifact. If an alleged signature appears in a model where the relevant constraint is built in and follows from symmetry, it is not independent evidence that the sampling points encode new arithmetic structure. Varying N then tests whether the effect is transient rather than merely comparing one finite dataset with a limit.",
+          "representation_or_bridge": "The leading cosine supplies a common phase coordinate for zeta and characteristic polynomials, and the effective matrix size N=log(t/2π) bridges height to finite conductor. Good/bad labels, block reversal, and displaced-interval ratios are diagnostic summaries; comparing them across matched and increasing N reveals which information is symmetry-controlled, finite-size, or lower-order.",
+          "boundary_or_failure": "Agreement at matched N and qualitative convergence across three sizes support the transient interpretation but do not prove every asymptotic claim. Keating–Snaith transfer is a modeling law, not an identity between zeta and CUE, and significant lower-order discrepancies remain rather than being erased by the comparison.",
+          "uncertainty": "One extracted N=1000 table entry is flagged as suspicious and is not used numerically. The conclusions here therefore rely on the stated qualitative trends and symmetries, not that individual value; convergence rates and the lower-order explanation are not derived within the unit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A philosophical conclusion grounded in the mechanisms developed earlier, not independent evidence for RH.",
+      "line_end": 4463,
+      "line_start": 4443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts accidental-zero and structural-zero worldviews and summarizes how density waves let the zeros determine both scale and local corrections.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Function-first skepticism versus zero-first explanation",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d52.txt",
+      "unit_bytes": 1503,
+      "unit_id": "openalex_w4309805140_d52",
+      "unit_sha256": "76ae3e74ce0e48e005282a44e10930085c9769131101bc1526336be924ff9fe8",
+      "unit_type": "conceptual synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d52.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4435,
+          "line_end": 4442,
+          "text": "are secondary terms which make extreme events more likely.\n\n\n\n                                        71\n\n<!-- source-page: 72 -->\n\n",
+          "sha256": "ddb4f1929e7f01562b011a8448f4442d0f28dccdbbe0a540e094ab6684b8cb92"
+        },
+        "after": {
+          "line_start": 4464,
+          "line_end": 4471,
+          "text": "\n\nBibliography\n[1]   Louis-Pierre Arguin and Emma Bailey, Large Deviation Estimates of\n      Selberg’s Central Limit Theorem and Applications, IMRN no. 23, 2023\n      (2023) pp. 20574-20612.arXiv: 2202.06799;\n[2]   Louis-Pierre Arguin and Emma Bailey, Lower bounds for the large devi-\n      ations of Selberg’s central limit theorem, Mathematika no. 1, 71 (2025)\n",
+          "sha256": "5564c0fc13603ce7186115017ec18db195b79b42327019f242b9ca784a2060a8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "15 The chicken or the egg?",
+            "line_end": 4465,
+            "line_start": 4443,
+            "mathematical_role": "Contrasts function-first and zero-first explanatory stances and synthesizes the density-wave viewpoint."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4463,
+          "line_start": 4443,
+          "title": "Function-first skepticism versus zero-first explanation",
+          "unit_id": "openalex_w4309805140_d52",
+          "unit_type": "conceptual synthesis",
+          "why_material": "Contrasts accidental-zero and structural-zero worldviews and summarizes how density waves let the zeros determine both scale and local corrections."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A philosophical conclusion grounded in the mechanisms developed earlier, not independent evidence for RH.",
+          "representation_dependency": "Prose.",
+          "unit_id": "openalex_w4309805140_d52"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4435,
+            "line_start": 4262,
+            "title": "Random-matrix controls make Gram-point effects transient",
+            "unit_id": "openalex_w4309805140_d51",
+            "unit_type": "finite-size control experiment",
+            "why_material": "Derives sign/reversal conjectures from CUE symmetries, matches zeta data at the prescribed finite matrix size, and uses increasing N plus lower-order damping to explain both similarities and statistically significant differences."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4309805140_d52",
+        "spontaneous": {
+          "unit_id": "openalex_w4309805140_d52",
+          "spontaneous_reading": "The closing synthesis changes explanatory direction. A function-first view treats zeros as outputs whose critical-line placement can look accidental; a zero-first view treats the zero configuration as a generative representation, with density waves fixing scale and local arrangement supplying lower-order corrections. The explicit formula is invoked as a consistency bridge showing that even a small error in the zero data would affect the reconstructed arithmetic object."
+        },
+        "directed": {
+          "unit_id": "openalex_w4309805140_d52",
+          "source_grounded_mathematics": "The unit contrasts defining ζ or Z from a Dirichlet-series/Riemann–Siegel expression with reconstructing the function from its zeros. In the zero-first account, the density wave sets the scale and local zero positions provide lower-order adjustments; the Weil explicit formula is cited as a way a small error in a purported zero list could be detected. The earlier proposal to search low-carrier regions is judged differently under the two viewpoints.",
+          "conceptual_reading": "This is a comparison of explanatory factorizations, not two competing calculations. Choosing zeros as the basic representation turns their collective density and local corrections into structural causes, whereas choosing the function first makes zero placement appear as a fragile consequence. The unit argues for the compression and explanatory reach of the former perspective.",
+          "representation_or_bridge": "The bridge is bidirectional: analytic formulas produce zeros, while zero data feed product/explicit-formula style reconstruction and arithmetic consistency checks. Splitting zero information into a density-wave scale and local corrections exposes a multiscale representation of the function.",
+          "boundary_or_failure": "The passage is a philosophical synthesis grounded in mechanisms developed earlier, not independent evidence for RH. It does not establish that zeros determine every relevant feature without auxiliary normalization, nor that any hypothetical off-line zero must have a purposeful interpretation.",
+          "uncertainty": "Claims about what is 'accidental' or 'meaningful' express explanatory stance and should not be read as formal necessity. The unit contains no new proof, quantitative test, or direct validation of the zero-first worldview."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "e2173f84fcce20797feb9f418a76aae15eac666a12ae6d12bb97aa725c73a8a8"
+}

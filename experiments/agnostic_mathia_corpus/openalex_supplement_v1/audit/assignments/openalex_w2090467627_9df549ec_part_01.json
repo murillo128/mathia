@@ -1,0 +1,310 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2090467627_compare_extremizers_by_equations": {
+      "boundary_or_failure": "The calculation is specific to the L^{a,b,c} family and its charge constraints. Equality of reduced stationarity systems establishes agreement for the retained admissible branch, not equality of the original objective functions or a general equivalence of the two extremization principles. Algebraic solution steps can also introduce forbidden zero-charge branches or exclude denominator-zero cases, so admissibility cannot be inferred from formal equation matching alone.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_44adf389eb052a1b14aca6f4bcb2ec5bd58966b2561709d0d79c6511c4389d35",
+        "agnostic_oa_critic_92aea073d04b528c48cb83c8a47f5b5b87503b7f722ebacd11e724c51c35b102"
+      ],
+      "interpretation": "Source fact: after a common three-variable parametrization, the field-theoretic stationarity equations reduce to the same system as the geometric calculation, and only one of three formal solutions has nonzero field charges and is a local maximum. Interpretive inference: compare competing extremal descriptions through their reduced critical equations, but treat branch selection, domain constraints, and extremum type as logically separate checks.",
+      "nonparaphrase_operation": "Map both descriptions into common variables, derive their stationarity systems without comparing objective names, and reduce the systems while recording divisions and eliminated branches. Match the resulting equations, then independently filter solutions by domain constraints, nondegeneracy, and a second-order or equivalent local-maximum test.",
+      "quality_reason": "The candidate accurately reports the common parametrization, stationarity equations, rejection of zero-R-charge branches, retained local maximum, and the source's family-specific conclusion.",
+      "source_support": "The excerpt parametrizes six R-charges by x,y,z so that the beta-function constraints vanish, writes the trial cubic central charge, and gives its three stationarity equations. It reports three formal solutions after reduction, rejects those producing zero R-charges, identifies the remaining solution as a local maximum, and states that its reduced equations are identical to the geometric system (3.36).",
+      "uncertainty": "The comparison target (3.36) is not reproduced inside this isolated artifact, so identity with it is a source assertion rather than independently checkable here. The excerpt establishes a local maximum on the selected branch but does not, in this unit alone, supply a general global-optimality or cross-family argument.",
+      "unit_id": "agnostic_oa_w2090467627_compare_extremizers_by_equations"
+    },
+    "agnostic_oa_w2090467627_constraints_leave_phase_parameter": {
+      "boundary_or_failure": "The equations constrain multiplicities within the source's torus-tiling and superconformal gauge-theory model; a nonnegative integer solution of the count equations alone does not prove that a compatible periodic labelled tiling exists. The four-node classification assumes a generic phase, and the source warns that duality can produce non-generic phases with additional interactions, nodes, and fields.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_800e6eefa0b490e4686f628204704c135edc6ca280a56cc120e4971660274ef1",
+        "agnostic_oa_critic_db270b5be0b82fbd795cc35aacb5e2ff85e7f88eee6d0af5fb3cd17cb2e81b65"
+      ],
+      "interpretation": "Source fact: global counting, charge, R-charge, parity, and field-incidence conditions fix much of the construction but leave one free integer parameter among node multiplicities. Interpretive inference: residual freedom after constraints should be represented as a feasible parameter space of realizations, not erased by an arbitrary choice or misreported as uniqueness; exceptional strata must be kept separate from the generic family.",
+      "nonparaphrase_operation": "Assemble the global and local constraints into a linear system, compute its rank and integer nullspace, intersect the affine solution set with nonnegativity and realization conditions, and parameterize the remaining family. Then test whether admissible local moves connect solutions and audit separately the loci where the generic object classification degenerates.",
+      "quality_reason": "The candidate faithfully distinguishes fixed global and local constraints from the residual one-parameter multiplicity family and correctly keeps non-generic phases outside the four-node classification.",
+      "source_support": "The excerpt uses the torus Euler relation N_W=N_f-N_g, neutrality and beta-function constraints, and even node valence to obtain four generic node types. Field multiplicities give n_C=a, n_B+2n_A=2(b-c), and n_B+2n_D=2(c-a), which do not uniquely determine n_A,n_B,n_D. The source interprets the alternatives as different dual phases and explicitly notes non-generic exceptions.",
+      "uncertainty": "The excerpt states that at least one generic phase exists and postpones the duality demonstration to a later section. It does not establish from the count equations alone the completeness of all phases or the periodic realizability of every formally feasible parameter value.",
+      "unit_id": "agnostic_oa_w2090467627_constraints_leave_phase_parameter"
+    },
+    "agnostic_oa_w2090467627_determinant_topology_multiplicity": {
+      "boundary_or_failure": "The determinant-to-Lens-space step assumes the smooth toric submanifold and its torus-fibration description. The subsequent interpretation of flat line bundles as distinct wrapped-brane states and of their count as a bifundamental-field multiplicity depends on the source's AdS/CFT and dibaryon correspondence, which it labels conjectural at the operator-identification step. A bare determinant does not count application objects unless both bridges are justified.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_1805a86c156376ecdb51cf79bd986e8eb4c8f98c81c3a62db73a1295f5afa5e8",
+        "agnostic_oa_critic_aea4f54e9dc54881fc18c8dce02f28811cf3ec7c9924afdceda1894901b35f21"
+      ],
+      "interpretation": "Source fact: the adjacent-normal determinant equals the order of the fundamental group of the associated Lens space, and that finite group also classifies its torsion line bundles. Interpretive inference: an apparently combinatorial multiplicity can be explained by factoring it through topology--first identify the integer as a topological group order, then identify the counted choices as geometric structures classified by that group.",
+      "nonparaphrase_operation": "To explain an integer multiplicity, construct two independently checkable bridges: derive the integer as the order of a topological invariant from local combinatorial data, then classify the candidate objects by that invariant. Keep any final domain-specific identification as a separate hypothesis rather than folding it into the topological calculation.",
+      "quality_reason": "The candidate faithfully follows the source's two-step mechanism: the determinant gives the cyclic fundamental-group order, and the corresponding torsion line-bundle classes supply m flat-bundle choices before the physical multiplicity interpretation is applied.",
+      "source_support": "For adjacent normals the excerpt gives m_A=|det(v_{A-1},v_A,v_{A+1})|. After an integral basis change, the associated submanifold is a Lens space L(n_1,n_2), the determinant is n_1, and pi_1 is the cyclic group of order n_1. It further states that H^2, H_1, and the abelian fundamental group classify m torsion line bundles admitting flat connections, which the source uses to explain m wrapped-brane states.",
+      "uncertainty": "The mathematical determinant and cyclic-group calculation are explicit in the excerpt, but the physical multiplicity depends on identifying distinct flat-bundle charges with distinct gauge-theory operators. The isolated unit does not independently validate that correspondence or extend it beyond the stated toric setting.",
+      "unit_id": "agnostic_oa_w2090467627_determinant_topology_multiplicity"
+    },
+    "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity": {
+      "boundary_or_failure": "For a fixed quotient-basis vector, the allowable lifts are integral representatives in alpha_0+Upsilon, equivalently alpha_0+ker_Z(A), not arbitrary points of the real kernel of A. This controls representative ambiguity only within the source's toric quotient and gauge-theory dictionary. Separately, changing the basis of the two flavour generators can mix the two charge coordinates; the excerpt supplies neither a canonical lift nor a preferred flavour basis.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_92d3fb4d99e90ea9dae010470c0f6ed007c105d1e00f8850250430f2026a8775",
+        "agnostic_oa_critic_1efb81878720d96f8ac7a85a28e3cef3a7287ce85baa0d1bb67dbe7220bf8d54",
+        "agnostic_oa_revision_10afc41a74b617d0da5f38db0338d6c7a600948273e907dfcc894ecce3ff21be"
+      ],
+      "interpretation": "Source fact: each integral lift alpha_i in Z^D of a chosen flavour-basis vector is defined modulo the kernel lattice Upsilon, and its components give the corresponding coordinate charges. Interpretive inference: the meaningful datum for a fixed quotient basis is a coset of integral representatives, so replacing a lift by its coset removes an arbitrary choice while retaining the precise baryonic-shift law. Any quantity claimed to be independent of that choice still bears the proof burden of descending to the coset, while quantities that do not descend must expose their Upsilon-dependent coordinates.",
+      "nonparaphrase_operation": "Replace a request for a unique lift by the affine lattice coset alpha_0+Upsilon. For every proposed observable F, test F(alpha+k)=F(alpha) for all k in Upsilon; if the test fails, report the change in a kernel-lattice basis instead of treating it as noise. Handle a change of the two flavour generators as a separate basis transformation of the charge pair rather than conflating it with addition of a baryonic lattice vector.",
+      "quality_reason": "Accepted after the critic's bounded repair: the revision restricts shifts to the integral kernel lattice, keeps flavour-basis mixing separate, and preserves the substantive descent test. The operation is source-grounded and goes beyond paraphrase without inventing a preferred representative or importing nonintegral lifts.",
+      "source_support": "The excerpt defines A:R^D to R^3, says its kernel data generate a rank D-3 sublattice Upsilon of Z^D, and identifies Z^D/Upsilon with Z^3 through the induced map. It chooses alpha_1,alpha_2 in Z^D mapping to (0,1,0) and (0,0,1), states that each is defined only up to Upsilon, reads their components as charges, and identifies those shifts with baryonic mixing; it also explicitly notes that flavour symmetries may mix with each other.",
+      "uncertainty": "The excerpt does not choose a preferred integral lift, specify an extra property that could select one, or prove invariance for any further observable. Its physical flavour/baryon interpretation is application-specific even though the quotient-lattice operation is generic, and no stronger canonicality claim is warranted.",
+      "unit_id": "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity"
+    },
+    "agnostic_oa_w2090467627_metric_free_extremal_geometry": {
+      "boundary_or_failure": "The reduction is stated for toric Sasaki--Einstein geometry and a trial Reeb vector living in R^3. The excerpt omits the formula for Z, the admissible-domain conditions, and the proof of the asserted unique minimizer, so those conditions must be obtained and checked before the extremization is applied. Calling the construction a geometric analogue of a-maximisation does not establish a general equivalence of the two principles.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_da2c7af303ff4542562f305c987973ad594569397e95ea779f796916cbf49efe",
+        "agnostic_oa_critic_8d3d72e67625ff9a8716dcb430c1eafd0c95f7530f65e1ed0ec24ea488f40060",
+        "agnostic_oa_revision_b9e147f7ebf520d6d98fa61925a183dceae54c46124583c502107ea3a6b11168"
+      ],
+      "interpretation": "Source fact: toric data define a function Z of a trial Reeb vector whose minimization determines the Sasaki--Einstein Reeb vector and the listed volume data without constructing an explicit metric. Interpretive inference: when specified target functionals are certified to factor through a lower-dimensional structural parameter, solving for that parameter can replace reconstruction of the full object. The gain is access to those functionals from toric data; the loss is the unreconstructed metric and any information not shown to factor through the Reeb data, while the missing domain and uniqueness arguments remain proof obligations.",
+      "nonparaphrase_operation": "First identify the structural parameterization and obtain its exact admissibility conditions; then verify that each desired functional is covered by the stated reduction, minimize Z on the justified domain, and recover only the certified volumes and induced R-charges. Use the displayed volume identity and R-charge sum as consistency checks, while making no inference to an explicit metric or to a general equivalence with field-theoretic maximization.",
+      "quality_reason": "Accepted after removing the candidate's unsupported admissible-cone assertion. The revision retains the source-backed finite-dimensional reframing, makes the missing domain and uniqueness proof explicit, and limits recovery to stated functionals, so it is substantive without overstating what the isolated excerpt verifies.",
+      "source_support": "The excerpt says that toric data are encoded by a function Z of a trial Reeb vector in R^3, that minimizing Z uniquely determines the Sasaki--Einstein Reeb vector, and that this yields vol(Y) and the volumes of the toric submanifolds Sigma_A without an explicit metric. It states R[X_A]=pi vol(Sigma_A)/(3 vol(Y)) and pi sum_A vol(Sigma_A)=6 vol(Y), hence sum_A R[X_A]=2, and describes the extremization only as a geometric analogue of a-maximisation.",
+      "uncertainty": "Because the isolated unit attributes the extremization result to another reference and does not state Z or its admissible domain, it supports the conceptual reduction and displayed identities but not an independent verification of the minimization theorem or uniqueness. It also does not show which quantities beyond the listed volumes and R-charges are recoverable.",
+      "unit_id": "agnostic_oa_w2090467627_metric_free_extremal_geometry"
+    },
+    "agnostic_oa_w2090467627_tiling_local_duality": {
+      "boundary_or_failure": "The elementary blocks, edge labels, and their physical interpretation are specific to the source's brane tilings, and important local shapes are carried by figures. The analysis deliberately excludes dualizations that leave the four-block generic family. Preserving a local boundary label sequence and updating block counts are necessary interface checks, but they do not alone prove global periodic compatibility or validity of the resulting tiling.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_a3e4b15bcbd6561879ca706ac4e9aef37ea9aa5d1426df6d8c2ae92aea698012",
+        "agnostic_oa_critic_37c87297e42f3a58a925709c8f527644659f800b19166a72a254c79c09569f13"
+      ],
+      "interpretation": "Source fact: dualizing a suitable local square either leaves block counts unchanged or replaces two B blocks by one A and one D while preserving labels on the boundary of the affected sub-tiling. Interpretive inference: distinct global presentations can be navigated by local rewrites whose external interface is invariant; internal counts may change while the surrounding representation remains composable.",
+      "nonparaphrase_operation": "Specify each local rewrite as a pair of patches with the same ordered boundary interface, verify the internal count update, and substitute it only when the surrounding periodic gluing remains valid. Build a graph of global realizations connected by certified rewrites, while placing rewrites that introduce new block types in a separate non-generic stratum.",
+      "quality_reason": "The candidate faithfully states the two generic local behaviors, the count update replacing two B blocks by A and D, invariance of boundary edge labels, and the exclusion of moves that leave the four-block family.",
+      "source_support": "The excerpt encodes the construction with four labelled elementary blocks and states that matching edge labels determine their gluing into a periodic tiling. Its one-parameter count family admits the update (n_A,n_B,n_C,n_D)->(n_A+1,n_B-2,n_C,n_D+1). For the displayed self-dual-node transformation, the boundary edge labels of the local sub-tiling are unchanged, so blocks outside it are not modified; the source also identifies cases not expressible with the four generic blocks.",
+      "uncertainty": "Because the decisive patches are figure-dependent, their detailed combinatorics cannot be reconstructed from prose alone. The excerpt supports the two stated local behaviors in the generic family, but it does not prove here that every feasible global phase is connected by these moves or classify all non-generic outcomes.",
+      "unit_id": "agnostic_oa_w2090467627_tiling_local_duality"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2090467627_compare_extremizers_by_equations": "9de22d178a26ba886e6266b160babc3af738126f0713f6fba818a1afb66299df",
+    "agnostic_oa_w2090467627_constraints_leave_phase_parameter": "df0e534bfdaca01a79d1e325c35570c3ff804698d100c672b415e41c5f9471ab",
+    "agnostic_oa_w2090467627_determinant_topology_multiplicity": "a3d13435ac9acf65f72cec808a6bccbbeb56de007195b0fcbf06d00cc543f862",
+    "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity": "21bf4e67051047943c0dced62d5787cb6a2b5cb60fc93e13eefbab62a6064bb7",
+    "agnostic_oa_w2090467627_metric_free_extremal_geometry": "7530218fa2e802edfb6a17e32a48577782767c18a6bdf5f89256e14d295289df",
+    "agnostic_oa_w2090467627_tiling_local_duality": "83e342c037d2e030d8baf78fe18368bcbb806baf787bfa54f2d610ff84a6cedb"
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "model_visible_packet_sha256": "32efa065492f34f404a77e118ca34cfb7be1ad0602c49a2a7b09068106abcdd7",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2090467627_9df549ec_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "stage": "audit",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_determinant_topology_multiplicity.txt",
+      "artifact_bytes": 5772,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_determinant_topology_multiplicity.txt",
+      "artifact_sha256": "58a612e80439a6da248e55c7976e84478add8ae4e703983dbfe20265a66674eb",
+      "context_note": "For adjacent toric normals, a determinant is related to the order of a Lens-space fundamental group and hence to torsion line bundles or flat connections. The source uses this topology to explain a multiplicity appearing in its physical construction.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 444,
+      "line_start": 358,
+      "representation_dependency": "The determinant and Lens-space topology are mathematical, but interpreting their cardinality as a field multiplicity depends on the source's distinguished-divisor and wrapped-brane conjectures.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It demonstrates a reusable explanatory bridge from an integer determinant to a finite fundamental group and then to a count of torsion geometric structures, while keeping the application-specific final interpretation explicit.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Explain a combinatorial multiplicity through topology",
+      "unit_id": "agnostic_oa_w2090467627_determinant_topology_multiplicity",
+      "unit_type": "bridge-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity.txt",
+      "artifact_bytes": 4278,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity.txt",
+      "artifact_sha256": "ea19e3b79f198c3047237ad2f751f58922f2f137436153c1c610309421c150e5",
+      "context_note": "Flavor-charge representatives are constructed by lifting basis vectors through a quotient map. Two choices of lift differ by an element of the kernel lattice, which the source interprets as ambiguity from mixing with baryonic charges.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity",
+            "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The quotient-lift ambiguity and the one-parameter family of constrained tiling phases provide source-grounded examples of treating residual freedom as a parameter space of representations. The identifier is assignment-routed and carries no claim of novelty or of absence from the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 599,
+      "line_start": 537,
+      "representation_dependency": "The quotient-and-lift ambiguity is generic lattice algebra; the labels flavor and baryonic, and the physical meaning assigned to the ambiguity, are application-specific.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "This is a reusable move for parameter spaces and quotient objects: replace apparently arbitrary representatives by an explicit affine family modulo a kernel, then identify which quantities are invariant under that freedom.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Treat non-unique lifts as a controlled kernel ambiguity",
+      "unit_id": "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity",
+      "unit_type": "abstraction-compression"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_metric_free_extremal_geometry.txt",
+      "artifact_bytes": 2552,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_metric_free_extremal_geometry.txt",
+      "artifact_sha256": "ae5d463d1bbca2ff06f93b6839a3ac1f95d432b743f85a7316e77b6257d8bbdb",
+      "context_note": "The source formulates a geometric extremal problem in the Reeb-vector parameters that determines volume data from toric information without first constructing an explicit metric. It calls this the geometric analogue of a separate field-theoretic maximization.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 644,
+      "line_start": 600,
+      "representation_dependency": "The construction assumes the toric Sasaki--Einstein setting and its admissible Reeb cone. The source does not prove general equivalence with field-theoretic a-maximization and later reiterates that limitation.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It illustrates how geometric quantities can sometimes be inferred by optimizing over structural parameters rather than solving for a full object, a broadly useful compression provided the admissible domain and equivalence claims remain qualified.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Replace an unavailable metric by a finite-dimensional extremal problem",
+      "unit_id": "agnostic_oa_w2090467627_metric_free_extremal_geometry",
+      "unit_type": "reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_constraints_leave_phase_parameter.txt",
+      "artifact_bytes": 6152,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_constraints_leave_phase_parameter.txt",
+      "artifact_sha256": "7993bfdea11a05624f241c1f64072f7cb5d7ed3d4c48e74ae1fbbc5f7d585c3b",
+      "context_note": "Euler, charge, and R-charge constraints restrict possible tiling node types and their multiplicities but leave a one-parameter family rather than a unique combinatorial realization. The source associates the alternatives with different dual phases and notes additional non-generic phases.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity",
+            "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The quotient-lift ambiguity and the one-parameter family of constrained tiling phases provide source-grounded examples of treating residual freedom as a parameter space of representations. The identifier is assignment-routed and carries no claim of novelty or of absence from the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 1249,
+      "line_start": 1146,
+      "representation_dependency": "The constraints are derived in the torus-tiling and supersymmetric gauge-theory model; the physical duality interpretation and completeness of the listed phases are not representation-independent conclusions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "This gives a transferable diagnostic: solve global and local constraints, count the remaining degrees of freedom, and treat the residual parameter as meaningful structure instead of forcing uniqueness.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Recognize when constraints define a family rather than a unique object",
+      "unit_id": "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+      "unit_type": "moduli-analysis"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_compare_extremizers_by_equations.txt",
+      "artifact_bytes": 4122,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_compare_extremizers_by_equations.txt",
+      "artifact_sha256": "b4bdf2151bf920742b744f30fcf88f9fba41d1a61441f8537bf5bae8e0228408",
+      "context_note": "For the parameterized family, the source reduces a constrained cubic maximization to stationarity equations, compares those equations with a geometric system, and selects the admissible local maximum among formal critical solutions.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 1317,
+      "line_start": 1252,
+      "representation_dependency": "The calculation is family-specific and embedded in physical charge constraints. Agreement of the reduced equations in this family is evidence, not a proof that the two extremization principles are generally equivalent.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It supplies a conservative comparison strategy: reduce both descriptions to common variables, compare their defining equations, and separately check domain admissibility rather than identifying objectives merely from matching examples.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Compare two extremal descriptions through reduced equations and admissibility",
+      "unit_id": "agnostic_oa_w2090467627_compare_extremizers_by_equations",
+      "unit_type": "structural-comparison"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_tiling_local_duality.txt",
+      "artifact_bytes": 8192,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_tiling_local_duality.txt",
+      "artifact_sha256": "119cb4a34645399e9c6ac79a03958aa509afb48f3f7a3daf04d08154ddb5b766",
+      "context_note": "A brane tiling encodes a quiver and interactions, while local transformations on particular tiles change building-block counts but preserve boundary data and are used to relate different global phases. The text flags periodicity subtleties and treats non-generic phases separately.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_compact_tiling_encoding",
+            "agnostic_oa_w2090467627_toric_multirepresentation",
+            "agnostic_oa_w2090467627_charges_as_cycle_classes",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source strongly grounds the move of changing among geometric, lattice, quotient, fibration, and tiling representations so that different invariants become visible. The identifier is assignment-routed; overlap with the frozen parent corpus and external novelty have not been assessed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity",
+            "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The quotient-lift ambiguity and the one-parameter family of constrained tiling phases provide source-grounded examples of treating residual freedom as a parameter space of representations. The identifier is assignment-routed and carries no claim of novelty or of absence from the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 1441,
+      "line_start": 1321,
+      "representation_dependency": "Exact block shapes and gluing rules are figure-dependent, and the interpretation as Seiberg duality is physical. Boundary preservation and periodic compatibility must be checked in the represented tiling rather than inferred from the count update alone.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It is a reusable pattern for moduli of representations: identify local moves, record their invariant boundary interface, and analyze how repeated moves connect distinct presentations without claiming literal equality of their internal descriptions.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Use local representation moves to navigate a family of global realizations",
+      "unit_id": "agnostic_oa_w2090467627_tiling_local_duality",
+      "unit_type": "local-to-global"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2090467627_charges_as_cycle_classes": {
+      "analysis_id": "agnostic_oa_generation_f1d71f83395a762f4a0d1593f9f6c2e8f310a90beedb37fafb687f5731622ee3",
+      "boundary_or_failure": "The homology basis uses a smooth, simply connected link with the stated torus fibration. Chern-class and Poincare-duality relations are geometric; calling their coefficients baryonic charges additionally uses the wrapped-D3 dictionary. Torsion or orbifold cases can change the homology description.",
+      "interpretation": "Each quotient circle gives a line bundle M_I with Poincare-dual cycle C_I. A coordinate Z_A is a section of L_A=tensor_I M_I^{Q_I^A}, and its zero locus is Sigma_A. Applying c_1 and Poincare duality gives [Sigma_A]=sum_I Q_I^A C_I, so Q_I^A is simultaneously a quotient weight, bundle exponent, cycle coordinate and, under the source's physical dictionary, a baryonic charge.",
+      "nonparaphrase_operation": "Convert characters to line bundles, take first Chern classes to linearize tensor powers, and then Poincare duals to obtain cycle relations. This derives charge conservation from the quotient matrix rather than assigning charges independently.",
+      "source_support": "The artifact constructs M_I and C_I, states the tensor-product formula for L_A, identifies its zero section with Sigma_A, and derives the homology and charge formulas. The pipeline reorganizes that proof.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 9 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "Index placement and duality conventions are typography-sensitive. The physical naming and novelty are not independently assessed.",
+      "unit_id": "agnostic_oa_w2090467627_charges_as_cycle_classes"
+    },
+    "agnostic_oa_w2090467627_compact_tiling_encoding": {
+      "analysis_id": "agnostic_oa_generation_4b9e44f159ae0e0cf1f725565f56f3444d6a10123aee1d8ccbb33fa0db585a2e",
+      "boundary_or_failure": "The joint encoding is established in the source's four-dimensional N=1 toric quiver/dimer setting. A generic bipartite tiling does not automatically encode gauge groups, anomaly cancellation, or a toric diagram; periodicity, even-sided faces, edge labels, and the Kasteleyn prescription are structural requirements.",
+      "interpretation": "One periodic bipartite tiling coordinates several semantic layers: faces encode gauge groups, edges encode bifundamental fields, and black/white vertices encode signed superpotential terms. A weighted Kasteleyn matrix produces a partition function whose exponents recover the toric diagram, so local incidence constrains both the quiver and its interactions while an algebraic invariant decodes geometry.",
+      "nonparaphrase_operation": "Build a typed cell complex and decoder table—2-cells to objects, 1-cells to relations, 0-cells to interactions—then apply the Kasteleyn invariant to reconstruct lattice data. Validate it by round-tripping the decoded field/interactions and toric polygon.",
+      "source_support": "The artifact assigns faces, edges, and vertices to gauge groups, bifundamentals, and superpotential terms, relates even-sided polygons to anomaly freedom, and states that the Kasteleyn partition function encodes the toric diagram. The typed decoder and round-trip test are inferences from these correspondences.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 9 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "The excerpt does not reproduce the full Kasteleyn algorithm or independently prove the correspondence. Exact signs and fundamental-domain conventions require the detailed source setup; no novelty claim is made.",
+      "unit_id": "agnostic_oa_w2090467627_compact_tiling_encoding"
+    },
+    "agnostic_oa_w2090467627_compare_extremizers_by_equations": {
+      "analysis_id": "agnostic_oa_generation_44adf389eb052a1b14aca6f4bcb2ec5bd58966b2561709d0d79c6511c4389d35",
+      "boundary_or_failure": "The equation match is for the L^{a,b,c} family after its charge and beta-function constraints. Equal stationarity systems do not generally imply equal objectives or global extrema. Formal branches with zero R-charges are rejected, and the survivor must be the admissible local maximum.",
+      "interpretation": "Field-theoretic a-maximization reduces six charges to x,y,z and a cubic trial central charge. Its stationarity equations reduce to the same system used geometrically, but yield three formal branches. Only the branch with nonzero admissible R-charges and local-maximum behavior remains, so equation matching and domain selection are distinct obligations.",
+      "nonparaphrase_operation": "Express both systems in common variables, eliminate auxiliaries, enumerate every algebraic branch, and filter by nonvanishing/positivity and local-maximum conditions. Do not infer objective-level identity from a shared critical equation.",
+      "source_support": "The artifact writes the trial cubic and stationarity equations, reduces them to the geometric system, and states that among three solutions only one avoids zero R-charges and is the local maximum. The staged procedure abstracts this calculation.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 9 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "Coefficients should be checked before reuse. The family-specific agreement does not prove general equivalence or novelty.",
+      "unit_id": "agnostic_oa_w2090467627_compare_extremizers_by_equations"
+    },
+    "agnostic_oa_w2090467627_constraints_leave_phase_parameter": {
+      "analysis_id": "agnostic_oa_generation_800e6eefa0b490e4686f628204704c135edc6ca280a56cc120e4971660274ef1",
+      "boundary_or_failure": "The count equations do not guarantee every nonnegative solution glues to a periodic tiling. The A/B/C/D classification assumes a generic phase; the source allows non-generic phases with new nodes, fields and interactions. The Seiberg-duality interpretation is physical.",
+      "interpretation": "Euler's torus relation, charge neutrality, beta-function vanishing, even valence and field multiplicities restrict generic nodes to four types. Yet their counts obey only n_C=a, n_B+2n_A=2(b-c), and n_B+2n_D=2(c-a), leaving one integer parameter such as n_D. Geometry fixes global content without selecting a unique combinatorial phase.",
+      "nonparaphrase_operation": "Form the integer constraint matrix, compute rank and kernel, and intersect the affine solution with nonnegative-integrality and gluing constraints. A nonzero kernel is a phase parameter to classify, not a variable to fix artificially.",
+      "source_support": "The artifact derives Euler's relation, node conditions, four types and the three count equations, then states that different solutions give quivers for the same singularity and indexes them by n_D. The kernel diagnosis follows directly.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 9 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "Periodic realizability and completeness are not proved by counts alone. Non-generic exceptions are source-acknowledged; no novelty is asserted.",
+      "unit_id": "agnostic_oa_w2090467627_constraints_leave_phase_parameter"
+    },
+    "agnostic_oa_w2090467627_metric_free_extremal_geometry": {
+      "analysis_id": "agnostic_oa_generation_da2c7af303ff4542562f305c987973ad594569397e95ea779f796916cbf49efe",
+      "boundary_or_failure": "The reduction is specific to toric Sasaki-Einstein geometry and trial Reeb vectors in the admissible cone. A stationary point outside that domain, or not the stated minimum, does not define the desired geometry. The source calls this analogous to a-maximization but does not prove general equivalence.",
+      "interpretation": "Instead of constructing an explicit Ricci-flat cone metric, the source packages toric normals into a volume function Z of a trial Reeb vector. Minimizing Z selects the Sasaki-Einstein Reeb vector and determines total and divisor-link volumes, after which R-charges follow from volume ratios. A difficult geometric object is compressed to a constrained finite-dimensional extremal problem.",
+      "nonparaphrase_operation": "Retain toric data as sufficient statistics, define the admissible Reeb domain, solve for the unique minimum, and compute only downstream volume ratios. Validate feasibility and extremum type rather than mere stationarity.",
+      "source_support": "The artifact says total and submanifold volumes follow from toric data via Z, that minimizing it uniquely determines the Reeb vector, and gives the R-charge/volume relation. The sufficient-statistic framing is an inference.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task-supplied generation brief/prompt, the exact assignment, and its 9 SHA-bound source artifacts only; no network, acquisition, other sources, prior analyses, or novelty comparison."
+      },
+      "uncertainty": "The excerpt cites rather than reproduces the extremal formula/proof. Equivalence with field-theory maximization and novelty remain unconfirmed.",
+      "unit_id": "agnostic_oa_w2090467627_metric_free_extremal_geometry"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2090467627_charges_as_cycle_classes": {
+      "analysis_id": "agnostic_oa_critic_cc14e7551bdcb18e3ebdc11d23803b94762bfdc750002e2ba161fcfa9493f029",
+      "context_risk": "The basis statement uses a smooth, simply connected link and the specified torus fibration; the baryonic interpretation uses Kaluza-Klein reduction and the wrapped-D3 dictionary. Orbifold or torsion settings are not covered by the displayed free-homology argument.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2090467627",
+        "exact_service_checkpoint": "not exposed by service; GPT-5 family",
+        "kind": "source-grounded-critique",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment, and its 9 SHA-bound local source artifacts only; no network, acquisition, other sources, issues, prior outputs, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "The bundle tensor-product relation, application of first Chern class and Poincare duality, cycle relation, and baryonic-charge identification are all faithfully reported. The last sentence of the proposed operation conflates this transport with charge conservation.",
+      "missed_mechanism": "Two deductions must remain separate: the Chern-class calculation yields the cycle coordinates and hence the charge identification, whereas the sum-to-zero relation uses the Calabi-Yau condition in addition to the quotient matrix. The further relation involving the normal components is another distinct statement.",
+      "paraphrase_risk": "Low. Transporting one relation matrix through characters, bundles, characteristic classes, and homology is a real conceptual operation, not merely rewording the source.",
+      "revision_instructions": "Keep the interpretation and the Chern-class/Poincare-duality pipeline. Replace 'This derives charge conservation from the quotient matrix' with 'This transports the quotient weights into cycle coordinates and, under the physical dictionary, baryonic charges.' If conservation is retained, state separately that the source derives sum_A Q_I^A=0 using the Calabi-Yau condition.",
+      "unit_id": "agnostic_oa_w2090467627_charges_as_cycle_classes",
+      "unsupported_or_imported": "The claim that the bundle/Chern-class pipeline itself derives charge conservation is overstated; the displayed conservation equation additionally invokes the Calabi-Yau condition. The candidate otherwise labels the physical import correctly."
+    },
+    "agnostic_oa_w2090467627_compact_tiling_encoding": {
+      "analysis_id": "agnostic_oa_critic_3d15fb8d300736f1b571b839eb9e2ea37108792c113fcccd573a9b369447ebe4",
+      "context_risk": "This introductory excerpt summarizes a brane-tiling correspondence and points to earlier work; it does not provide the Kasteleyn prescription, its sign conventions, a fundamental-domain construction, or a proof that reconstruction is invertible. The claims remain specific to four-dimensional N=1 toric quiver/dimer models.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2090467627",
+        "exact_service_checkpoint": "not exposed by service; GPT-5 family",
+        "kind": "source-grounded-critique",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment, and its 9 SHA-bound local source artifacts only; no network, acquisition, other sources, issues, prior outputs, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "The central face/edge/vertex correspondence and the claim that a weighted Kasteleyn partition function encodes toric-diagram data are faithful. The candidate becomes more specific than the artifact when it assigns signed superpotential terms to black/white vertices and says that partition-function exponents recover the diagram.",
+      "missed_mechanism": "The artifact establishes a compact joint encoding only at summary level: periodicity, even-sided faces, bipartite coloring, weighted adjacency, and the partition function are named, but the decoder and reconstruction map are not shown. The critique should preserve that distinction instead of converting the summary into a complete round-trip algorithm.",
+      "paraphrase_risk": "Moderate. The typed-cell-complex framing is a useful abstraction beyond sentence-level paraphrase, but the proposed round-trip validation borrows procedural detail that the excerpt does not supply and therefore risks generic method style rather than a source-grounded operation.",
+      "revision_instructions": "Retain the face-to-gauge-group, edge-to-bifundamental, and vertex-to-superpotential correspondences. Replace 'signed superpotential terms' with the artifact's weaker vertex correspondence, and replace 'whose exponents recover the toric diagram' with 'whose partition function encodes the toric diagram.' Recast the operation as building and checking a typed decoder under the stated periodic/even-sided/bipartite conditions; do not claim a full round trip unless the missing Kasteleyn and fundamental-domain conventions are supplied.",
+      "unit_id": "agnostic_oa_w2090467627_compact_tiling_encoding",
+      "unsupported_or_imported": "The black/white sign assignment, exponent-level recovery claim, and complete round-trip test are not established in this artifact. Edge-label requirements appear in a later construction, not in this introductory mechanism itself."
+    },
+    "agnostic_oa_w2090467627_compare_extremizers_by_equations": {
+      "analysis_id": "agnostic_oa_critic_92aea073d04b528c48cb83c8a47f5b5b87503b7f722ebacd11e724c51c35b102",
+      "context_risk": "The geometric system numbered (3.36), its domain, and its derivation are absent from this artifact, so equivalence can only be reported as the source's claim here. The calculation is family-specific and follows the L^{a,b,c} charge and beta-function parametrization.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2090467627",
+        "exact_service_checkpoint": "not exposed by service; GPT-5 family",
+        "kind": "source-grounded-critique",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment, and its 9 SHA-bound local source artifacts only; no network, acquisition, other sources, issues, prior outputs, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "The candidate faithfully describes the reduction to x,y,z, the cubic trial quantity, three stationary branches, and the source's selection of the unique branch with no zero field R-charges that is a local maximum. It properly warns that matching stationary equations is weaker than identifying objectives or global extrema.",
+      "missed_mechanism": "The artifact does not show the other two branches or the eliminated geometric equations, so neither exhaustive branch checking nor the claimed equivalence can be reproduced from this unit alone. The actual local filters evidenced here are nonzero field R-charges and local maximality, not a separately stated positivity domain.",
+      "paraphrase_risk": "Low. Common-variable elimination plus branch and extremum filtering is a substantive comparison protocol; its value is precisely the separation between equation matching and admissibility.",
+      "revision_instructions": "Attribute equivalence with (3.36) explicitly to the source because that system is not present. Remove 'positivity' and generic 'admissible R-charges' unless a domain is supplied; use the evidenced tests 'no zero field R-charges' and 'local maximum.' Preserve the warning that shared stationarity equations do not prove equality of objectives or a global maximum.",
+      "unit_id": "agnostic_oa_w2090467627_compare_extremizers_by_equations",
+      "unsupported_or_imported": "Positivity is not stated as a branch filter in this artifact. The equivalence to (3.36) and enumeration of all three branches are asserted by the source but cannot be independently verified from the excerpt because the geometric system and discarded branches are omitted."
+    },
+    "agnostic_oa_w2090467627_constraints_leave_phase_parameter": {
+      "analysis_id": "agnostic_oa_critic_db270b5be0b82fbd795cc35aacb5e2ff85e7f88eee6d0af5fb3cd17cb2e81b65",
+      "context_risk": "The four node types and count equations apply to generic L^{a,b,c} phases and depend on the source's superpotential building blocks and physical charge/beta-function constraints. Non-generic dual phases may introduce new fields, nodes, and interactions, and the integer counts alone do not establish periodic realizability.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2090467627",
+        "exact_service_checkpoint": "not exposed by service; GPT-5 family",
+        "kind": "source-grounded-critique",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment, and its 9 SHA-bound local source artifacts only; no network, acquisition, other sources, issues, prior outputs, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "The candidate correctly reports the constraints, four generic node types, three count equations, and the resulting residual freedom. Its source-support sentence inaccurately says this artifact explicitly indexes the solutions by n_D; that parametrization is an immediate algebraic choice and is stated in the later tiling unit, not in this excerpt.",
+      "missed_mechanism": "The null direction can be made explicit: with n_C fixed, the count equations are invariant under (delta n_A,delta n_B,delta n_C,delta n_D)=(1,-2,0,1). This directly exposes the one-parameter freedom while leaving periodic gluing and physical equivalence as separate obligations.",
+      "paraphrase_risk": "Low. Rank, kernel, integrality, and feasibility convert the displayed count relations into a reusable diagnostic rather than merely restating them.",
+      "revision_instructions": "Keep the interpretation and constraint-matrix operation, but change source_support to say that the displayed equations imply one free integer parameter, which may be chosen as n_D; do not say this exact artifact states that indexing. Add the explicit kernel direction (1,-2,0,1), and continue to treat nonnegative integrality and periodic gluing as necessary extra checks rather than consequences of rank alone.",
+      "unit_id": "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+      "unsupported_or_imported": "Only the attribution of the n_D indexing to this exact artifact is unsupported. The one-dimensional kernel itself follows directly from the equations, while realizability of every nonnegative solution is not established and is already correctly bounded."
+    },
+    "agnostic_oa_w2090467627_metric_free_extremal_geometry": {
+      "analysis_id": "agnostic_oa_critic_8d3d72e67625ff9a8716dcb430c1eafd0c95f7530f65e1ed0ec24ea488f40060",
+      "context_risk": "This artifact is a brief report of results from another reference: it does not display Z, define the allowed trial-Reeb domain, or prove existence, uniqueness, or extremum type. The volume-to-R-charge step also uses the AdS/CFT interpretation.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2090467627",
+        "exact_service_checkpoint": "not exposed by service; GPT-5 family",
+        "kind": "source-grounded-critique",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment, and its 9 SHA-bound local source artifacts only; no network, acquisition, other sources, issues, prior outputs, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "The core compression from toric data to a finite-dimensional Z-minimization, followed by volume and R-charge ratios, is faithful to the artifact's summary. The candidate appropriately denies a proved general equivalence with a-maximization, but presents an admissible Reeb cone as though it were specified locally.",
+      "missed_mechanism": "The key limitation is evidential: the artifact asserts the extremal result but omits the function and feasibility conditions that would let a reader verify stationarity, minimality, or uniqueness. A source-grounded operation can require feasibility checks, but must mark their concrete definition as absent here.",
+      "paraphrase_risk": "Low to moderate. The sufficient-statistics framing is a useful abstraction, but without the missing formula it can slide into generic optimization advice if it names a domain or validation procedure more specifically than the artifact permits.",
+      "revision_instructions": "Retain the metric-free extremal framing and volume-ratio step. Change the boundary to say that the cited construction has a required trial-Reeb domain that this excerpt does not define. In the operation, require using the source-defined domain and verifying the claimed minimum when those definitions are available; do not present an 'admissible cone' or uniqueness proof as locally established.",
+      "unit_id": "agnostic_oa_w2090467627_metric_free_extremal_geometry",
+      "unsupported_or_imported": "The 'admissible Reeb cone' is not specified in the artifact. The excerpt attributes unique minimization to reference [46] but supplies neither the formula nor a local proof, so feasibility and uniqueness cannot be independently checked from this unit."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2090467627_charges_as_cycle_classes": "agnostic_oa_revision_042508cd1b87d08e6dea382a5830e847062ce322e2cb62f1f6b9178478c4a8ef",
+    "agnostic_oa_w2090467627_compact_tiling_encoding": "agnostic_oa_revision_1440ebf7c54943403125e790121963feb3053c517fdfe5d2c210f0d4ab1ea298",
+    "agnostic_oa_w2090467627_compare_extremizers_by_equations": "agnostic_oa_revision_9eb71ed41fc0217ccd8527f4000fae1feb4df55cd654df6c3f525069cfc7e26a",
+    "agnostic_oa_w2090467627_constraints_leave_phase_parameter": "agnostic_oa_revision_5fa217ca3e7150cbe3f8733351bc170fe4b035af187e941fbfa447ee1f2c4c43",
+    "agnostic_oa_w2090467627_metric_free_extremal_geometry": "agnostic_oa_revision_b9e147f7ebf520d6d98fa61925a183dceae54c46124583c502107ea3a6b11168"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2090467627_9df549ec_part_01.jsonl",
+  "source_id": "openalex_w2090467627",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_compact_tiling_encoding.txt",
+      "artifact_bytes": 10594,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_compact_tiling_encoding.txt",
+      "artifact_sha256": "a79e408dcab379a3068fd26a0d0f309efd6e297a7bfa15f898d89a0dfe249fae",
+      "content_sha256": "3c2386747d1e7e8ffd9e5f5e77634dbf8b7d36049134c4b41c146d4750735f16",
+      "context_note": "The introduction presents a periodic bipartite tiling as a compact joint representation: faces, edges, and vertices encode different parts of a quiver-style system, while a Kasteleyn construction recovers toric-diagram data. This is useful as a generic example of one combinatorial object coordinating several linked structures, but the identifications rely on the source's brane/quiver and dimer-model setting.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_compact_tiling_encoding",
+            "agnostic_oa_w2090467627_toric_multirepresentation",
+            "agnostic_oa_w2090467627_charges_as_cycle_classes",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source strongly grounds the move of changing among geometric, lattice, quotient, fibration, and tiling representations so that different invariants become visible. The identifier is assignment-routed; overlap with the frozen parent corpus and external novelty have not been assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 231,
+      "line_start": 97,
+      "representation_dependency": "Depends on the periodic tiling/quiver correspondence and Kasteleyn representation used by the source; the text does not supply a representation-independent proof, and its comparison of geometric and field-theoretic extremization is explicitly not general.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It illustrates a reusable conceptual move: seek a compact representation whose different cell types expose distinct semantic roles and whose algebraic invariant reconstructs another representation.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "A periodic bipartite tiling compresses several linked structures",
+      "unit_id": "agnostic_oa_w2090467627_compact_tiling_encoding",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_charges_as_cycle_classes.txt",
+      "artifact_bytes": 5314,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_charges_as_cycle_classes.txt",
+      "artifact_sha256": "5130ce261a49a380d3708b8a850b4fbedc8b0876cb6b0a1e69ac4f3ce9c03876",
+      "content_sha256": "ce51de61b612267af91a14af673a15dd69de8610d5eb5a8b4899950a5aa869ee",
+      "context_note": "The quotient construction supplies line bundles whose first Chern classes and Poincare dual cycles are related by the same charge matrix used in the symplectic quotient. The source then interprets these cycle classes as baryonic charges.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_compact_tiling_encoding",
+            "agnostic_oa_w2090467627_toric_multirepresentation",
+            "agnostic_oa_w2090467627_charges_as_cycle_classes",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source strongly grounds the move of changing among geometric, lattice, quotient, fibration, and tiling representations so that different invariants become visible. The identifier is assignment-routed; overlap with the frozen parent corpus and external novelty have not been assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 532,
+      "line_start": 446,
+      "representation_dependency": "The bundle, Chern-class, and Poincare-duality statements are geometric; their naming as field-theoretic charges depends on the AdS/CFT application and the stated fibration hypotheses.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It shows how one relation matrix can be transported across quotient coordinates, line bundles, characteristic classes, and homology, revealing preserved structure under a change of mathematical language.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Translate quotient relations into bundle and cycle classes",
+      "unit_id": "agnostic_oa_w2090467627_charges_as_cycle_classes",
+      "unit_type": "bridge-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_metric_free_extremal_geometry.txt",
+      "artifact_bytes": 2552,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_metric_free_extremal_geometry.txt",
+      "artifact_sha256": "ae5d463d1bbca2ff06f93b6839a3ac1f95d432b743f85a7316e77b6257d8bbdb",
+      "content_sha256": "e9ec890e1e557068e9301c828d737bcc06e660e33b8e0f7c91c7463eb763f83a",
+      "context_note": "The source formulates a geometric extremal problem in the Reeb-vector parameters that determines volume data from toric information without first constructing an explicit metric. It calls this the geometric analogue of a separate field-theoretic maximization.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 644,
+      "line_start": 600,
+      "representation_dependency": "The construction assumes the toric Sasaki--Einstein setting and its admissible Reeb cone. The source does not prove general equivalence with field-theoretic a-maximization and later reiterates that limitation.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It illustrates how geometric quantities can sometimes be inferred by optimizing over structural parameters rather than solving for a full object, a broadly useful compression provided the admissible domain and equivalence claims remain qualified.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Replace an unavailable metric by a finite-dimensional extremal problem",
+      "unit_id": "agnostic_oa_w2090467627_metric_free_extremal_geometry",
+      "unit_type": "reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_constraints_leave_phase_parameter.txt",
+      "artifact_bytes": 6152,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_constraints_leave_phase_parameter.txt",
+      "artifact_sha256": "7993bfdea11a05624f241c1f64072f7cb5d7ed3d4c48e74ae1fbbc5f7d585c3b",
+      "content_sha256": "ac3a5a6ca1b83962b5e5637425499b36c938852eb3806b2ee79672f41c366511",
+      "context_note": "Euler, charge, and R-charge constraints restrict possible tiling node types and their multiplicities but leave a one-parameter family rather than a unique combinatorial realization. The source associates the alternatives with different dual phases and notes additional non-generic phases.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2090467627_lifts_mod_kernel_ambiguity",
+            "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+            "agnostic_oa_w2090467627_tiling_local_duality"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "The quotient-lift ambiguity and the one-parameter family of constrained tiling phases provide source-grounded examples of treating residual freedom as a parameter space of representations. The identifier is assignment-routed and carries no claim of novelty or of absence from the frozen parent corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 1249,
+      "line_start": 1146,
+      "representation_dependency": "The constraints are derived in the torus-tiling and supersymmetric gauge-theory model; the physical duality interpretation and completeness of the listed phases are not representation-independent conclusions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "This gives a transferable diagnostic: solve global and local constraints, count the remaining degrees of freedom, and treat the residual parameter as meaningful structure instead of forcing uniqueness.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Recognize when constraints define a family rather than a unique object",
+      "unit_id": "agnostic_oa_w2090467627_constraints_leave_phase_parameter",
+      "unit_type": "moduli-analysis"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2090467627_compare_extremizers_by_equations.txt",
+      "artifact_bytes": 4122,
+      "artifact_relpath": "depth/units/agnostic_oa_w2090467627_compare_extremizers_by_equations.txt",
+      "artifact_sha256": "b4bdf2151bf920742b744f30fcf88f9fba41d1a61441f8537bf5bae8e0228408",
+      "content_sha256": "bd37b4a720b9925c80518fff9519da227639ba4c3624444a8f9753084b0b63e2",
+      "context_note": "For the parameterized family, the source reduces a constrained cubic maximization to stationarity equations, compares those equations with a geometric system, and selects the admissible local maximum among formal critical solutions.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2090467627",
+      "line_end": 1317,
+      "line_start": 1252,
+      "representation_dependency": "The calculation is family-specific and embedded in physical charge constraints. Agreement of the reduced equations in this family is evidence, not a proof that the two extremization principles are generally equivalent.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from the bound assignment and its exact normalized source only; no other source, parent-corpus record, prior plan, OpenAlex record, or network resource was consulted."
+      },
+      "selection_reason": "It supplies a conservative comparison strategy: reduce both descriptions to common variables, compare their defining equations, and separately check domain admissibility rather than identifying objectives merely from matching examples.",
+      "source_id": "openalex_w2090467627",
+      "source_normalized_sha256": "9093496846947e702587430c169bf91f8e4c389780a96a5643310626a657158f",
+      "title": "Compare two extremal descriptions through reduced equations and admissibility",
+      "unit_id": "agnostic_oa_w2090467627_compare_extremizers_by_equations",
+      "unit_type": "structural-comparison"
+    }
+  ]
+}

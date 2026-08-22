@@ -1,0 +1,183 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2141554589_u01": {
+      "analysis_id": "agnostic_oa_generation_bbf52af41cef8eb8b5c029ae8253f39dbf64fa4174362d62495a227ed1dd70e0",
+      "boundary_or_failure": "The discriminant criterion locates singular fibers of this Weierstrass presentation, but it does not by itself identify their physical interpretation or validate the paper's proposed dualities. The parameter count also depends on the stated degree bounds, the base P1, and quotienting by exactly SL(2,C) and the displayed C-star rescaling; special equations can have extra stabilizers or nongeneric degeneracies.",
+      "interpretation": "The source represents a varying elliptic curve by y^2=x^3+f(z)x+g(z), then separates genuine family parameters from coordinate redundancy before reading geometric failure from Delta=4f^3+27g^2. Thus the same coefficient data serves two linked purposes: after quotienting it parametrizes the family, while its discriminant cuts out the locus where the smooth-fiber description breaks down.",
+      "nonparaphrase_operation": "Given a coefficient family on P1, first form its moduli description by removing base-coordinate and Weierstrass rescaling redundancies; then compute the discriminant as a section on the base and use its zero divisor, rather than individual coefficient zeros, to mark fiber degeneration. This converts raw polynomial coefficients into quotient-level deformation data plus a geometrically meaningful exceptional locus.",
+      "source_support": "{\"source_facts\":[\"The source takes f and g of degrees at most 8 and 12, counts 9+13 coefficients, and subtracts three SL(2,C) parameters and one rescaling to obtain 18 complex parameters.\",\"It states that generic degeneration occurs at 24 points on P1 defined by Delta=4f^3+27g^2=0.\"],\"inference\":\"Treating the discriminant divisor as the failure set of the smooth family, after parameter redundancies have been removed, is a source-grounded geometric reading rather than an additional claim about string duality.\",\"representation_dependency\":\"The count and discriminant are tied to the Weierstrass equation over P1, the degrees of f and g, and the weights y->mu^3 y, x->mu^2 x, f->mu^4 f, g->mu^6 g.\"}",
+      "uncertainty": "{\"level\":\"medium\",\"statement\":\"The extracted formulas are readable, but the source itself qualifies the exact arithmetic quotient group in a footnote, and no scan was consulted to settle weighted-projective normalization or any tentative duality identification.\"}",
+      "unit_id": "agnostic_oa_w2141554589_u01"
+    },
+    "agnostic_oa_w2141554589_u05": {
+      "analysis_id": "agnostic_oa_generation_90380d04a6784b6d79e320783d220fb7ddd8334620945f2315f2e502f5d210c6",
+      "boundary_or_failure": "This is a cited classification summary, not a proof contained in the unit. It assumes an elliptic Calabi-Yau threefold whose base has at worst the stated orbifold/log-terminal singularities, and then explicitly excludes several base types because their holomorphic one- or two-forms yield extra supersymmetry. Dropping those assumptions invalidates the short remaining list.",
+      "interpretation": "The classification is a two-stage filter. First resolve the allowed base singularities and constrain the resolved surface to a small birational menu; then use holomorphic forms to separate the higher-symmetry cases from the class under study. What remains—Enriques, blowups of P2 or F_n, and qualifying orbifold quotients of these—is therefore conditional output of both the canonical-bundle geometry and an explicit exclusion criterion.",
+      "nonparaphrase_operation": "When a global construction admits many possible bases, classify only after recording the singularity class, pass to a resolution to invoke the surface list, and then apply invariants such as holomorphic one- and two-forms as exclusion tests. Preserve the rejected exceptional families, because they show exactly which hypothesis narrows the classification.",
+      "source_support": "{\"source_facts\":[\"The source states that the base has at worst orbifold singularities and, together with the singular-fiber curves, satisfies a log-terminal condition.\",\"After resolution it lists surfaces with 12K_B=0, quotients (T^2 x P1)/G, and blowups of P2 or F_n.\",\"It excludes K3, complex-torus, hyperelliptic, and (T^2 x P1)/G cases because holomorphic one- or two-forms imply extra supersymmetry, leaving the stated restricted list.\"],\"inference\":\"The useful structure is the conditional filtration—resolve, classify, then exclude by holomorphic-form invariants—rather than an unconditional assertion that every relevant surface is rational.\",\"representation_dependency\":\"The terms orbifold, log-terminal, resolution, and 12K_B=0 carry the hypotheses; replacing them by an informal 'mildly singular base' would lose the classification boundary.\"}",
+      "uncertainty": "{\"level\":\"medium\",\"statement\":\"The unit attributes the classification to cited literature and supplies only a summary. Its exclusions are clear, but completeness and the precise singularity hypotheses were not independently checked outside the isolated artifact.\"}",
+      "unit_id": "agnostic_oa_w2141554589_u05"
+    },
+    "agnostic_oa_w2141554589_u08": {
+      "analysis_id": "agnostic_oa_generation_2beb0110687e875558cb1b17b0da8055eafc3aafaa668c8d27b4e92bc3fb25ee",
+      "boundary_or_failure": "A wall of the Kahler cone does not specify a unique transition: fibers may collapse at infinite distance, while curves or divisors contract at finite distance, and only some resulting singularities admit smoothing to a new branch. The del Pezzo discussion assumes the exceptional surface is smooth, generally excludes generalized del Pezzo singularities, requires contraction to a point, and explicitly says the Hodge-change picture is not fully verified in the literature, especially for non-Q-factorial cases.",
+      "interpretation": "The source resolves the broad label 'extremal transition' into an ordered diagnosis: identify what dimensional cycle collapses, determine the contraction singularity and whether it has a crepant blowup, then ask independently whether complex deformations smooth it. For a smooth del Pezzo exceptional surface, the image rank k of H^{1,1}(X) in H^{1,1}(S) measures lost divisor directions, while the orthogonal lattice to c1(S) carries E_d root-system structure that organizes exceptional curve classes.",
+      "nonparaphrase_operation": "At a candidate Kahler-cone wall, classify the collapsing locus by dimension and destination, test whether the contraction produces an isolated canonical singularity with crepant blowup, identify the exceptional surface, and only then evaluate smoothing. Track invariant change using the restriction-map rank k and inspect the c1-orthogonal intersection lattice for root-system symmetries; do not combine flop, divisorial contraction, and smoothing into one undifferentiated step.",
+      "source_support": "{\"source_facts\":[\"The source lists five codimension-one boundary behaviors, distinguishing fibration collapse, a 2-cycle shrinking, a 4-cycle shrinking to a curve, and a 4-cycle shrinking to a point; it separates infinite- from finite-distance cases.\",\"For case (v) it describes isolated canonical singularities with a crepant blowup whose exceptional 4-cycle is a generalized del Pezzo surface, then restricts mainly to smooth del Pezzo surfaces.\",\"It states proposed changes h^{1,1}(X')=h^{1,1}(X)-k and h^{2,1}(X')=h^{2,1}(X)+c_d-k after smoothing.\",\"For blowups of P2 it identifies the lattice orthogonal to c1(S) with E_d and describes the Weyl action on line classes.\"],\"inference\":\"The contraction type, crepant resolution data, and smoothing availability are logically distinct gates, and the lattice records structure of the exceptional surface rather than proving that a smoothing exists.\",\"representation_dependency\":\"The values of d and k depend on the chosen exceptional surface, its intersection form, and the restriction H^{1,1}(X)->H^{1,1}(S); the local singularity normal forms are coordinate- and degree-sensitive.\"}",
+      "uncertainty": "{\"level\":\"high\",\"statement\":\"The source itself marks parts of the smoothing and Hodge-change account as not fully verified and treats singular generalized del Pezzo surfaces only partially. Root counts, intersection signs, and local normal forms were not checked against a scan.\"}",
+      "unit_id": "agnostic_oa_w2141554589_u08"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2141554589_u01": {
+      "critic_sha256": "e86f23222c32a136209d4e9d18dc142e977b861f5ef38720acf421dfe4115f44",
+      "generation_sha256": "5658c7fe964e5eae135ab6592161de4abb18acb74c64bbc1858b0ad3fd41f3bf"
+    },
+    "agnostic_oa_w2141554589_u05": {
+      "critic_sha256": "c5b56324448b485e4abe693d7535da0e28f2cfe27699bc365fe70ec460434353",
+      "generation_sha256": "fd5ab5dd5e226edfc60150284641306a199c606d57b9afe75e4b881e4f04f3c3"
+    },
+    "agnostic_oa_w2141554589_u08": {
+      "critic_sha256": "d222d0e6abbd96ba7cebd8a97dfaa6ec9c02985823458e5dd0b489486a19f22b",
+      "generation_sha256": "3f5040f576b84f522f19b81b5297f0baeebb4c2941b8cf147ee4d1d2a9ad6be8"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2141554589_u01": {
+      "analysis_id": "agnostic_oa_critic_ac569441bf8dfaa78ac506a30fe3f196f37bb9d45da0c4715be2c500f19e8a7a",
+      "context_risk": "The artifact continues into tentative heterotic/F-theory and 7-brane identifications outside this unit. The candidate correctly excludes those claims, but its description of the source footnote attaches uncertainty to the wrong quotient.",
+      "decision": "revise",
+      "faithfulness": "The core account is faithful: the source counts 9+13 coefficients, removes three SL(2,C) parameters and one displayed rescaling, and identifies generic degeneration at the zeros of 4f^3+27g^2. The quotient-level reading and use of the discriminant rather than coefficient zeros are defensible inferences.",
+      "missed_mechanism": "The candidate does not distinguish the explicit SL(2,C) and C-star coefficient redundancies from the footnote's separate uncertainty about the arithmetic group Gamma describing the global moduli space. That distinction is needed to keep the uncertainty attached to the correct claim.",
+      "paraphrase_risk": "Low. The proposed operation combines quotienting parameter redundancy with forming a discriminant failure locus, rather than merely restating either formula.",
+      "revision_instructions": "Remove the unsupported assertion about extra stabilizers and nongeneric degeneracies unless it is explicitly labeled as outside mathematical background. Replace the arithmetic-quotient caveat with the exact point that the footnote questions whether Gamma equals SO(18,2;Z), not the displayed SL(2,C) and C-star parameter quotient. Retain the generic qualification on the 24 discriminant points.",
+      "unit_id": "agnostic_oa_w2141554589_u01",
+      "unsupported_or_imported": "The claim that special equations can have extra stabilizers or nongeneric degeneracies is not stated in the frozen span. The uncertainty statement's reference to an exact arithmetic quotient group is also misleading: the footnote concerns Gamma in the global orthogonal moduli-space description, not the explicit coordinate and Weierstrass rescalings used for the coefficient count."
+    },
+    "agnostic_oa_w2141554589_u05": {
+      "analysis_id": "agnostic_oa_critic_129a4a09d3ef3099803742fd39caa459406cd9e6990ed6a0f995590dcf696b09",
+      "context_risk": "The span reports a cited classification rather than proving it, and the precise orbifold/log-terminal hypotheses must remain attached. A loose reformulation of the final orbifold-singular case can change the asserted geometry.",
+      "decision": "revise",
+      "faithfulness": "The two-stage filtering mechanism is otherwise faithful: resolve the allowed base singularities, use the cited surface list, and exclude cases with holomorphic one- or two-forms because the source assigns them extra supersymmetry.",
+      "missed_mechanism": "The candidate collapses the source's exact final branch. The source permits a surface with orbifold singularities whose resolution is one of the retained surface types; it does not say that this surface is an orbifold quotient of a retained surface.",
+      "paraphrase_risk": "Low. Resolution followed by invariant-based exclusion is a useful operation and not merely a restatement of the surviving list.",
+      "revision_instructions": "Replace 'qualifying orbifold quotients of these' with 'surfaces with orbifold singularities whose resolutions are among the retained types.' Preserve that the classification is cited, conditional on the stated singularity assumptions, and not proved in the unit.",
+      "unit_id": "agnostic_oa_w2141554589_u05",
+      "unsupported_or_imported": "The phrase 'qualifying orbifold quotients of these' is stronger than the frozen source. The source specifies the type of the resolution, not a quotient construction for every orbifold-singular base."
+    },
+    "agnostic_oa_w2141554589_u08": {
+      "analysis_id": "agnostic_oa_critic_3de6d8501c2accf59362f31026f29e68fd7f8b32c5674baac514375c5a407053",
+      "context_risk": "The source expressly says the smoothing and Hodge-change picture is not fully verified and flags non-Q-factorial cases. Its root-lattice discussion also begins only after imposing d at least three and excluding P1 x P1.",
+      "decision": "revise",
+      "faithfulness": "The ordered diagnosis of a Kähler-cone wall, contraction type, crepant blowup, and separate smoothing question is faithful. The use of the restriction-map rank k to track the proposed Hodge change also preserves the source's stated evidential limits.",
+      "missed_mechanism": "The candidate loses the hypothesis on the E_d lattice mechanism: the source assumes d is at least three, takes S to be a blowup of P2 at d general points, and excludes P1 x P1 before identifying the c1-orthogonal lattice with E_d.",
+      "paraphrase_risk": "Low. Separating collapse, contraction, resolution, and smoothing into distinct gates is a substantive conceptual operation.",
+      "revision_instructions": "Restrict the E_d root-lattice and Weyl-action claim to the source's stated regime d at least three with S a blowup of P2 and S not equal to P1 x P1. Do not imply that every smooth del Pezzo surface in the preceding classification carries this exact E_d description. Keep the not-fully-verified and non-Q-factorial caveats.",
+      "unit_id": "agnostic_oa_w2141554589_u08",
+      "unsupported_or_imported": "The interpretation and operation currently suggest that the c1-orthogonal E_d lattice applies to any smooth del Pezzo exceptional surface. That is broader than the frozen span's explicit assumptions."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2141554589_u01": "agnostic_oa_revision_173abd65873d20190ecbcfd06001457bb1d8e1f555bef0b75929babf765fb338",
+    "agnostic_oa_w2141554589_u05": "agnostic_oa_revision_97d4bc7d61ba2ea7f0fbf08df7c3f529b9cdc060ca3c21961ef1e7af4fdd342a",
+    "agnostic_oa_w2141554589_u08": "agnostic_oa_revision_10481ce0a27de482703d7a0d60434770416d1aecfbc583754f1ffde4ac656f41"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "e4437aea08d376b6915b87eeed3905cfe4cd4c1d5ac87c0c986b09d7c3e0ed73",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2141554589_392fc80a_part_01.jsonl",
+  "source_id": "openalex_w2141554589",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u01.txt",
+      "artifact_bytes": 9517,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u01.txt",
+      "artifact_sha256": "28f07fe62fced21221fb187def85528bdc3c986d9225fd0b9bc56c26001f6c83",
+      "content_sha256": "5e10ac0be58391e51e3f82d21c7389f0a4736d03de985facacc8be5faf91f9bd",
+      "context_note": "Retain parameter quotient and discriminant mechanism; exclude the subsequent physical identification of degeneration points.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 237,
+      "line_start": 109,
+      "representation_dependency": "Degrees, rescaling weights, and the discriminant are readable, but exact weighted-projective normalization and tentative duality claims must not be imported.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "A family of cubic equations packages elliptic fibers by coefficient sections; quotienting parameter redundancies gives the moduli count, and the discriminant identifies where smooth fibers degenerate.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Weierstrass data turns a varying elliptic fiber into a global discriminant geometry",
+      "unit_id": "agnostic_oa_w2141554589_u01",
+      "unit_type": "representation-and-degeneracy-locus"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u05.txt",
+      "artifact_bytes": 2559,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u05.txt",
+      "artifact_sha256": "50a7d3cd52aefef990f6a73fcc4538f89d8a587f5593cf2a686ff09633ae0bdc",
+      "content_sha256": "ba014fad344edc8b82be464cc706dbb3b4f5fff2cede61122ae2c11c6d0a79ba",
+      "context_note": "This is a cited classification summary rather than a proof reproduced in the source.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 613,
+      "line_start": 580,
+      "representation_dependency": "Orbifold/log-terminal terminology and exclusions must retain their stated assumptions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Resolving allowed base singularities and imposing the Calabi-Yau condition reduces possible bases to a short birational list, with holomorphic forms separating exceptional higher-symmetry cases.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Global canonical constraints sharply restrict admissible fibration bases",
+      "unit_id": "agnostic_oa_w2141554589_u05",
+      "unit_type": "global-classification-filter"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u08.txt",
+      "artifact_bytes": 6572,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u08.txt",
+      "artifact_sha256": "8cd84aa08ebd437c5b4ea261e9915ad235bf68ab4d4766675f43f11cc6046fe1",
+      "content_sha256": "1c65f62583e2f7e6a5c6b89507bc5839524e34018621c0f69c62e723fc5fac8f",
+      "context_note": "Some classification assertions are explicitly not fully verified; retain them as source claims with limits, not settled novelty.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u08",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "multi_stage_birational_transition_sequence",
+          "kind": "saturation_probe_challenged",
+          "summary": "A single transition label hides materially different sequences: flop, divisorial contraction, crepant resolution, and smoothing change different structures and may leave the elliptic sublocus. Novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 987,
+      "line_start": 891,
+      "representation_dependency": "Intersection forms, del Pezzo indices, root counts, and Hodge changes are dense and partly table-dependent.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "The source distinguishes flops from divisorial contractions, asks whether the contracted singularity admits smoothing, and relates exceptional del Pezzo geometry, root lattices, and Weyl actions to changes across branches.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Extremal transitions separate contraction type, smoothing availability, and invariant change",
+      "unit_id": "agnostic_oa_w2141554589_u08",
+      "unit_type": "birational-transition-taxonomy"
+    }
+  ]
+}

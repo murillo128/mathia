@@ -1,0 +1,2395 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2016676915_6fb91ffc_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2016676915",
+  "unit_count": 18,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the weighted inner product, the vectors gamma_l and gamma, the definition of totality, and the entire theorem statement so the criterion is coherent without outside reconstruction.",
+      "line_end": 51,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The norm, inner product, and gamma_l displays are formula-dependent and visibly split across lines 31-40; verify those displays against the retained scan before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is the source's most discrete criterion: a constant vector lies in the closed span of simple fractional-part sequences exactly when those sequences are total, and both conditions are equivalent to RH.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH as closure and totality of periodic sequences",
+      "unit_artifact_relpath": "depth/units/u01_sequence_space_equivalence.txt",
+      "unit_bytes": 2299,
+      "unit_id": "u01_sequence_space_equivalence",
+      "unit_sha256": "8d66a672285f603b4613444d40cbdf93dcfaadd62a3c3b16b89289cc13efc427",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u01_sequence_space_equivalence.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "                                                         Abstract. There has been a surge of interest of late in an old result of Nyman and\n                                                         Beurling giving a Hilbert space formulation of the Riemann hypothesis. Many authors\n                                                         have contributed to this circle of ideas, culminating in a beautiful refinement due to\n                                                         Baez-Duarte. The purpose of this little survey is to dis-entangle the resulting web of\n                                                         complications, and reveal the essential simplicity of the main results.\n\n                                                         Keywords.      Riemann hypothesis; Hilbert space; total set; semigroups.\n\n",
+          "sha256": "e937f200264aef774bce04ef544e6b53902c4ab2dd77184a4103b31fbdee4be0"
+        },
+        "after": {
+          "line_start": 52,
+          "line_end": 59,
+          "text": "                                                We hasten to add that this is not the statement that the reader will see in Baez-Duarte’s\n                                             paper. For one thing, the implications (ii) =⇒ (iii) and (iii) =⇒ (i) are not mentioned in\n                                             this paper: perhaps the author thinks of them as ‘well-known to experts’. (In such con-\n                                             texts, an expert is usually defined to be a person who has the relevant piece of informa-\n                                             tion.) Moreover, the main result in [2] is not the implication (i) =⇒ (ii) itself, but a ‘uni-\n                                             tarily equivalent’ version thereof. More precisely, the result actually proved in [2] is the\n\n                                                                                                                                           137\n",
+          "sha256": "072e58c0de8b912943342ea75f9e6989788b5a1a8c8b1eef0a5e552080a2b64a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weighted sequence-space criterion",
+            "line_end": 77,
+            "line_start": 31,
+            "mathematical_role": "Defines the weighted Hilbert space and periodic fractional-part sequences, states the three-way RH equivalence, and explains totality and weight robustness."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 51,
+          "line_start": 31,
+          "title": "RH as closure and totality of periodic sequences",
+          "unit_id": "u01_sequence_space_equivalence",
+          "unit_type": "equivalent-criterion",
+          "why_material": "This is the source's most discrete criterion: a constant vector lies in the closed span of simple fractional-part sequences exactly when those sequences are total, and both conditions are equivalent to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the weighted inner product, the vectors gamma_l and gamma, the definition of totality, and the entire theorem statement so the criterion is coherent without outside reconstruction.",
+          "representation_dependency": "The norm, inner product, and gamma_l displays are formula-dependent and visibly split across lines 31-40; verify those displays against the retained scan before exact reuse.",
+          "unit_id": "u01_sequence_space_equivalence"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 77,
+            "line_start": 52,
+            "title": "Harmonic approximation meaning and robustness to equivalent weights",
+            "unit_id": "u02_totality_and_weight_invariance",
+            "unit_type": "motivation-and-invariance",
+            "why_material": "The text interprets totality as approximation of arbitrary mildly growing sequences by simple periodic ones and shows that the criterion is invariant under any quadratically comparable weight through an invertible identity map."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The unitary sequence criterion makes RH equivalent to vanishing distance from gamma to growing finite spans, suggesting Gram determinants as finite observables of the density problem.",
+            "limit": "The paper explicitly says the resulting determinant formulas are unsuitable for effective estimation and presents no successful bound.",
+            "parent_local_unit_ids": [
+              "u01_sequence_space_equivalence",
+              "u17_unitary_sequence_bridge",
+              "u18_distance_gram_route"
+            ],
+            "title": "From qualitative density to a finite-dimensional distance observable"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 30,
+              "line_start": 23,
+              "reason": "Abstract and keywords orient the survey but add no mechanism beyond the selected units."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Begins with the distinction between the survey's theorem and the cited paper, then supplies both the approximation interpretation and the norm-equivalence argument.",
+      "line_end": 77,
+      "line_start": 52,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low apart from a stray extraction artifact on line 70; the substantive claims are stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text interprets totality as approximation of arbitrary mildly growing sequences by simple periodic ones and shows that the criterion is invariant under any quadratically comparable weight through an invertible identity map.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Harmonic approximation meaning and robustness to equivalent weights",
+      "unit_artifact_relpath": "depth/units/u02_totality_and_weight_invariance.txt",
+      "unit_bytes": 2168,
+      "unit_id": "u02_totality_and_weight_invariance",
+      "unit_sha256": "da69a6b37e24295b41b3b7313e078bf31a7ffa353e6ed7e974d2e39648a285cb",
+      "unit_type": "motivation-and-invariance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u02_totality_and_weight_invariance.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 44,
+          "line_end": 51,
+          "text": "                                             Recall that a set A of vectors in a Hilbert space H is said to be total if the set of all finite\n                                             linear combinations of elements of A is dense in H , i.e., if no proper closed subspace\n                                             of the Hilbert space contains the set A. In terms of these few notions and notations, the\n                                             recent result of Baez-Duarte from [2] can be given the following dramatic formulation.\n                                             Theorem 1. The following statements are equivalent:\n                                               (i) The Riemann hypothesis,\n                                              (ii) γ belongs to the closed linear span of {γl : l = 1, 2, 3, . . . }, and\n                                             (iii) the set {γl : l = 1, 2, 3, . . . } is total in H .\n",
+          "sha256": "dcab850b42beeb88b54eb66da33b8fe76f4f281ab6e89f2344d0fc75d68865ce"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "   In what follows, we shall adopt the standard practice (in analytic number theory) of\ndenoting a complex variable by s = σ +it. Thus σ and t are the real and imaginary parts of\nthe complex number s. Recall that Riemann’s zeta function is the analytic function defined\non the half-plane {σ > 1} by the absolutely convergent series ζ (s) = ∑∞          −s\n                                                                             n=1 n . The com-\npleted zeta function ζ is defined on this half-plane by ζ (s) = π\n                         ∗                                     ∗        −s/2 Γ(s/2)ζ (s), where\nΓ is Euler’s gamma function. As Riemann discovered, ζ ∗ has a meromorphic continuation\n",
+          "sha256": "27a5bb8c0adc7a77c762c5cce02a8c9bee7ec66a3268814210859bd5125c0e38"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weighted sequence-space criterion",
+            "line_end": 77,
+            "line_start": 31,
+            "mathematical_role": "Defines the weighted Hilbert space and periodic fractional-part sequences, states the three-way RH equivalence, and explains totality and weight robustness."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 52,
+          "title": "Harmonic approximation meaning and robustness to equivalent weights",
+          "unit_id": "u02_totality_and_weight_invariance",
+          "unit_type": "motivation-and-invariance",
+          "why_material": "The text interprets totality as approximation of arbitrary mildly growing sequences by simple periodic ones and shows that the criterion is invariant under any quadratically comparable weight through an invertible identity map."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Begins with the distinction between the survey's theorem and the cited paper, then supplies both the approximation interpretation and the norm-equivalence argument.",
+          "representation_dependency": "Low apart from a stray extraction artifact on line 70; the substantive claims are stated in prose.",
+          "unit_id": "u02_totality_and_weight_invariance"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 51,
+            "line_start": 31,
+            "title": "RH as closure and totality of periodic sequences",
+            "unit_id": "u01_sequence_space_equivalence",
+            "unit_type": "equivalent-criterion",
+            "why_material": "This is the source's most discrete criterion: a constant vector lies in the closed span of simple fractional-part sequences exactly when those sequences are total, and both conditions are equivalent to RH."
+          },
+          {
+            "line_end": 129,
+            "line_start": 78,
+            "title": "Zero-free RH formulation inside a Hardy space",
+            "unit_id": "u03_zero_free_hardy_setting",
+            "unit_type": "representation-setup",
+            "why_material": "It reframes RH as analyticity of reciprocal zeta on the right half of the critical strip and places the later closure argument in a functional Hilbert space whose norm is controlled by critical-line boundary values."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 70,
+              "line_start": 70,
+              "reason": "A stray control character corrupts part of the periodic-sequence phrase; adjacent prose supplies only the qualitative interpretation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the zeta symmetry argument, the definition of the half-plane Omega, the Hardy-space norm, and the boundary-value identification needed later.",
+      "line_end": 129,
+      "line_start": 78,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The set display for Omega and the norm/boundary-value displays at lines 96-120 are extraction-damaged; their prose-level roles are recoverable, but exact formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It reframes RH as analyticity of reciprocal zeta on the right half of the critical strip and places the later closure argument in a functional Hilbert space whose norm is controlled by critical-line boundary values.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free RH formulation inside a Hardy space",
+      "unit_artifact_relpath": "depth/units/u03_zero_free_hardy_setting.txt",
+      "unit_bytes": 3332,
+      "unit_id": "u03_zero_free_hardy_setting",
+      "unit_sha256": "cb566c633699d5d483027d2eba26138e82d3fbd4bddf50c98873a26c2fe4a995",
+      "unit_type": "representation-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u03_zero_free_hardy_setting.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 70,
+          "line_end": 77,
+          "text": "                                                                          \b 1 γl ).\ntions of a class of simple periodic sequences (in this instance, the sequences\n   A second point worth noting is that the particular weight sequence n(n+1)        used above\nis not crucial for the validity of Theorem 1 (though this is the sequence which occurs\nnaturally in its proof). Indeed, any weight sequence {wn : n = 1, 2, 3, . . .} satisfying nc12 ≤\nwn ≤ nc22 for all n (for constants 0 < c1 ≤ c2 ) would serve equally well. This is because\nthe identity map is an invertible linear operator (hence carrying total sets to total sets)\nbetween any two of these weighted l 2 -spaces.\n",
+          "sha256": "e61f77652f3a0e11d774910837270ca9b087ae4742eb7f28801fabb35759dcde"
+        },
+        "after": {
+          "line_start": 130,
+          "line_end": 137,
+          "text": "  For 0 ≤ λ ≤ 1, let Fλ ∈ H 2 (Ω) be defined by\n\n                                    ζ (s)\n             Fλ (s) = (λ s − λ )          ,      s ∈ Ω.\n                                      s\nNotice that the zero of the first factor at s = 1 cancels the pole of the second factor, so that\nFλ , thus defined, is analytic on Ω. Also, in view of the well-known elementary estimate\n(see [7])\n",
+          "sha256": "698625cbb3278983890a869f34944b8a5e192571501276f6528226e02a8d282b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic and Hardy-space setup",
+            "line_end": 129,
+            "line_start": 78,
+            "mathematical_role": "Fixes RH as zero-freeness/analyticity of reciprocal zeta on the half-plane and introduces the Hardy-space boundary-norm setting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 129,
+          "line_start": 78,
+          "title": "Zero-free RH formulation inside a Hardy space",
+          "unit_id": "u03_zero_free_hardy_setting",
+          "unit_type": "representation-setup",
+          "why_material": "It reframes RH as analyticity of reciprocal zeta on the right half of the critical strip and places the later closure argument in a functional Hilbert space whose norm is controlled by critical-line boundary values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the zeta symmetry argument, the definition of the half-plane Omega, the Hardy-space norm, and the boundary-value identification needed later.",
+          "representation_dependency": "The set display for Omega and the norm/boundary-value displays at lines 96-120 are extraction-damaged; their prose-level roles are recoverable, but exact formulas require scan verification.",
+          "unit_id": "u03_zero_free_hardy_setting"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 77,
+            "line_start": 52,
+            "title": "Harmonic approximation meaning and robustness to equivalent weights",
+            "unit_id": "u02_totality_and_weight_invariance",
+            "unit_type": "motivation-and-invariance",
+            "why_material": "The text interprets totality as approximation of arbitrary mildly growing sequences by simple periodic ones and shows that the criterion is invariant under any quadratically comparable weight through an invertible identity map."
+          },
+          {
+            "line_end": 175,
+            "line_start": 130,
+            "title": "Parameterized zeta functions encode the Hardy-space closure criterion",
+            "unit_id": "u04_function_family_equivalence",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The family F_lambda and discrete subfamily G_l package a zeta factor with a pole-cancelling coefficient, yielding equivalent continuous-parameter and discrete closed-span formulations of RH."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 70,
+              "line_start": 70,
+              "reason": "A stray control character corrupts part of the periodic-sequence phrase; adjacent prose supplies only the qualitative interpretation."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 99,
+              "line_start": 96,
+              "reason": "The displayed set defining Omega has broken braces and line order; the surrounding prose states the intended half-plane."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 120,
+              "line_start": 108,
+              "reason": "Hardy norm and boundary-value displays are fragmented; only their prose-described functional role is retained pending scan verification."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes membership motivation, the target vector E, the complete theorem statement, and the stated implication order.",
+      "line_end": 175,
+      "line_start": 130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: exact powers and normalizations in F_lambda, G_l, and E should be checked against the scan before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The family F_lambda and discrete subfamily G_l package a zeta factor with a pole-cancelling coefficient, yielding equivalent continuous-parameter and discrete closed-span formulations of RH.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parameterized zeta functions encode the Hardy-space closure criterion",
+      "unit_artifact_relpath": "depth/units/u04_function_family_equivalence.txt",
+      "unit_bytes": 2267,
+      "unit_id": "u04_function_family_equivalence",
+      "unit_sha256": "e3490280f1b51257d683fda4bdc08469a8afa6f606ef622bee0a9536fa368867",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u04_function_family_equivalence.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 122,
+          "line_end": 129,
+          "text": "space of the L2 -space of the critical line with respect to the Lebesgue measure scaled by\n\n<!-- source-page: 3 -->\n\nHilbert space reformulation of the Riemann hypothesis                         139\n\nthe factor 21π . (This scaling is to ensure that the Mellin transform ̥, defined while proving\nTheorem 5 below, is an isometry.)\n",
+          "sha256": "60268e0c76b52132a7e0921863a48957bb05be73f5a870fc989384f80b27efcb"
+        },
+        "after": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "represented by an absolutely convergent Dirichlet series\n               ∞\n                                1\n              ∑ µ (l)l −s = ζ (s) .                                                          (2)\n              l=1\n\n<!-- source-page: 4 -->\n\n",
+          "sha256": "b230174c1d1feba74eb366f0eaca847be0e67317df09bc2a47049509352e7927"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hardy-space closure theorem and analytic input",
+            "line_end": 204,
+            "line_start": 130,
+            "mathematical_role": "Defines the parameterized zeta functions, states the closure criterion, and records the Littlewood bound needed for the constructive implication."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 175,
+          "line_start": 130,
+          "title": "Parameterized zeta functions encode the Hardy-space closure criterion",
+          "unit_id": "u04_function_family_equivalence",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The family F_lambda and discrete subfamily G_l package a zeta factor with a pole-cancelling coefficient, yielding equivalent continuous-parameter and discrete closed-span formulations of RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes membership motivation, the target vector E, the complete theorem statement, and the stated implication order.",
+          "representation_dependency": "Formula-sensitive: exact powers and normalizations in F_lambda, G_l, and E should be checked against the scan before symbolic use.",
+          "unit_id": "u04_function_family_equivalence"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 129,
+            "line_start": 78,
+            "title": "Zero-free RH formulation inside a Hardy space",
+            "unit_id": "u03_zero_free_hardy_setting",
+            "unit_type": "representation-setup",
+            "why_material": "It reframes RH as analyticity of reciprocal zeta on the right half of the critical strip and places the later closure argument in a functional Hilbert space whose norm is controlled by critical-line boundary values."
+          },
+          {
+            "line_end": 204,
+            "line_start": 176,
+            "title": "Uniform Mobius Dirichlet bounds under RH",
+            "unit_id": "u05_littlewood_uniform_input",
+            "unit_type": "analytic-input",
+            "why_material": "The proof requires more than pointwise reciprocal-zeta convergence: a quantitative Littlewood lemma supplies uniform control of finite Mobius sums on shifted half-planes, enabling later dominated convergence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          },
+          {
+            "claim": "The equivalence has asymmetric mechanisms: RH constructs norm-convergent approximants, whereas failure of RH supplies a single continuous evaluation functional that separates the target from the whole generating span.",
+            "limit": "This contrast is specific to the stated functional Hilbert space and does not measure approximation rates.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u08_common_zero_obstruction"
+            ],
+            "title": "Constructive closure versus common-zero obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 185,
+              "line_start": 182,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the reciprocal Dirichlet series, the distinction between the unnecessary arithmetic description of Mobius and the needed analytic statement, and the lemma's relation to Littlewood's theorem.",
+      "line_end": 204,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summation display in lines 197-199 is compacted by extraction; the qualitative uniformity and parameter dependence are explicit in prose, while the exact bound is formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof requires more than pointwise reciprocal-zeta convergence: a quantitative Littlewood lemma supplies uniform control of finite Mobius sums on shifted half-planes, enabling later dominated convergence.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform Mobius Dirichlet bounds under RH",
+      "unit_artifact_relpath": "depth/units/u05_littlewood_uniform_input.txt",
+      "unit_bytes": 1788,
+      "unit_id": "u05_littlewood_uniform_input",
+      "unit_sha256": "9b1a88d1b1520a8474578a09a98cc53fac789b39e7689ea2222dc59144ca3574",
+      "unit_type": "analytic-input",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u05_littlewood_uniform_input.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "  (i) The Riemann hypothesis,\n (ii) E belongs to the closed linear span of the set {Gl : l = 1, 2, 3, . . . }, and\n(iii) E belongs to the closed linear span of the set {Fλ : 0 ≤ λ ≤ 1}.\n\n\n  The plan of the proof is to verify (i) =⇒ (ii) =⇒ (iii) =⇒ (i). As we shall see in a little\nwhile, except for the first implication ((i) =⇒ (ii)), all these implications are fairly straight\nforward. In order to prove (i) =⇒ (ii), we need recall that on the half-plane {σ > 1}, ζ1 is\n",
+          "sha256": "b454227fb74617b12c90f1f4a080d7170974f76401c8321e2cb83121916a7e8a"
+        },
+        "after": {
+          "line_start": 205,
+          "line_end": 212,
+          "text": "\nProof of Theorem 2. (i) ⇒ (ii). Assume RH. For positive integers L and any small real\nnumber ε > 0, let HL,ε ∈ H 2 (Ω) be defined by\n                       L\n                         µ (l)\n             HL,ε = ∑       ε\n                               Gl .\n                      l=1 l\n",
+          "sha256": "d77ed372fbf32459d25cdc9a1a7959b8e48df12cc90be342288b22a132750bfe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hardy-space closure theorem and analytic input",
+            "line_end": 204,
+            "line_start": 130,
+            "mathematical_role": "Defines the parameterized zeta functions, states the closure criterion, and records the Littlewood bound needed for the constructive implication."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 204,
+          "line_start": 176,
+          "title": "Uniform Mobius Dirichlet bounds under RH",
+          "unit_id": "u05_littlewood_uniform_input",
+          "unit_type": "analytic-input",
+          "why_material": "The proof requires more than pointwise reciprocal-zeta convergence: a quantitative Littlewood lemma supplies uniform control of finite Mobius sums on shifted half-planes, enabling later dominated convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the reciprocal Dirichlet series, the distinction between the unnecessary arithmetic description of Mobius and the needed analytic statement, and the lemma's relation to Littlewood's theorem.",
+          "representation_dependency": "The summation display in lines 197-199 is compacted by extraction; the qualitative uniformity and parameter dependence are explicit in prose, while the exact bound is formula-dependent.",
+          "unit_id": "u05_littlewood_uniform_input"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 130,
+            "title": "Parameterized zeta functions encode the Hardy-space closure criterion",
+            "unit_id": "u04_function_family_equivalence",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The family F_lambda and discrete subfamily G_l package a zeta factor with a pole-cancelling coefficient, yielding equivalent continuous-parameter and discrete closed-span formulations of RH."
+          },
+          {
+            "line_end": 253,
+            "line_start": 206,
+            "title": "Two-stage construction of an approximate inverse",
+            "unit_id": "u06_mobius_approximants",
+            "unit_type": "construction",
+            "why_material": "Mobius-weighted finite combinations first converge in Hardy norm to shifted reciprocal-zeta approximants H_epsilon, after which the shift tends to zero toward E; this exposes the constructive core of the closure implication."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The constructive direction treats partial sums of reciprocal zeta's Mobius series as approximate inverses, uses zero geometry for norm domination, and automatically restricts the necessary generators to square-free indices.",
+            "limit": "The argument is conditional on RH and on substantial analytic estimates whose proofs are omitted; approximation here is Hilbert-space closure, not pointwise inversion everywhere.",
+            "parent_local_unit_ids": [
+              "u05_littlewood_uniform_input",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u09_squarefree_thinning",
+              "u14_approximate_inverse_viewpoint"
+            ],
+            "title": "Mobius approximate inverses with support thinning"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 185,
+              "line_start": 182,
+              "reason": "Page boundary and running header."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 205,
+              "line_start": 205,
+              "reason": "Blank transition into the proof."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the definitions of H_{L,epsilon} and H_epsilon, both convergence stages, and the precise remaining domination obligation.",
+      "line_end": 253,
+      "line_start": 206,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence in lines 206-242; coefficient powers, the H_epsilon display, and limit directions require scan verification even though the two-stage mechanism is clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mobius-weighted finite combinations first converge in Hardy norm to shifted reciprocal-zeta approximants H_epsilon, after which the shift tends to zero toward E; this exposes the constructive core of the closure implication.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-stage construction of an approximate inverse",
+      "unit_artifact_relpath": "depth/units/u06_mobius_approximants.txt",
+      "unit_bytes": 2276,
+      "unit_id": "u06_mobius_approximants",
+      "unit_sha256": "0f141fd7dfc236e5f1a51874a2cf0a17c794159342ae5c3d00afbe03615f1496",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u06_mobius_approximants.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 198,
+          "line_end": 205,
+          "text": "∑Ll=1 µ (l)l −s =\bO((|t| + 1)δ ) uniformly for L = 1, 2, 3, . . . and uniformly for s = σ + it in\nthe half-plane σ > 21 + ε . (Thus the implied constant depends only on ε and δ .)\n\n  Since Lemma 3 is more or less well-known, we omit its proof. It may be proved by a\nminor variation in the original proof of Littlewood’s theorem quoted above. (Note that,\nwith the aid of a little ‘normal family’ argument, Littlewood’s theorem itself is an easy\nconsequence of this lemma.)\n\n",
+          "sha256": "06f193f747e22505041f8865da9f80319f8f945233069df2451edbed6a2d5c33"
+        },
+        "after": {
+          "line_start": 254,
+          "line_end": 261,
+          "text": "\nConsider the entire function ξ (s) : = s(1 − s)ζ ∗ (s) = s(1 − s)π −s/2 Γ 2s ζ (s). It has the\n                                                                            \u0001\n\nHadamard factorisation\n                           \u0012         \u0013\n                                   s\n           ξ (s) = ξ (0) ∏ 1 −         ,\n",
+          "sha256": "9cbaab01881270ab54c546c89f65ec131c47cbdfebc8c0706799914d5c8d3055"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the Hardy-space criterion",
+            "line_end": 309,
+            "line_start": 205,
+            "mathematical_role": "Builds Mobius-weighted approximants, proves norm convergence via factorization bounds, gives the common-zero obstruction, and extracts square-free thinning."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 253,
+          "line_start": 206,
+          "title": "Two-stage construction of an approximate inverse",
+          "unit_id": "u06_mobius_approximants",
+          "unit_type": "construction",
+          "why_material": "Mobius-weighted finite combinations first converge in Hardy norm to shifted reciprocal-zeta approximants H_epsilon, after which the shift tends to zero toward E; this exposes the constructive core of the closure implication."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the definitions of H_{L,epsilon} and H_epsilon, both convergence stages, and the precise remaining domination obligation.",
+          "representation_dependency": "High formula dependence in lines 206-242; coefficient powers, the H_epsilon display, and limit directions require scan verification even though the two-stage mechanism is clear from prose.",
+          "unit_id": "u06_mobius_approximants"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 204,
+            "line_start": 176,
+            "title": "Uniform Mobius Dirichlet bounds under RH",
+            "unit_id": "u05_littlewood_uniform_input",
+            "unit_type": "analytic-input",
+            "why_material": "The proof requires more than pointwise reciprocal-zeta convergence: a quantitative Littlewood lemma supplies uniform control of finite Mobius sums on shifted half-planes, enabling later dominated convergence."
+          },
+          {
+            "line_end": 292,
+            "line_start": 255,
+            "title": "Zero geometry yields the domination needed for norm convergence",
+            "unit_id": "u07_hadamard_domination",
+            "unit_type": "proof-mechanism",
+            "why_material": "Under RH, pairing zeros in the Hadamard product gives monotonic control of the completed zeta function under a real shift; gamma asymptotics then yield an integrable bound for H_epsilon and complete the constructive implication."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The constructive direction treats partial sums of reciprocal zeta's Mobius series as approximate inverses, uses zero geometry for norm domination, and automatically restricts the necessary generators to square-free indices.",
+            "limit": "The argument is conditional on RH and on substantial analytic estimates whose proofs are omitted; approximation here is Hilbert-space closure, not pointwise inversion everywhere.",
+            "parent_local_unit_ids": [
+              "u05_littlewood_uniform_input",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u09_squarefree_thinning",
+              "u14_approximate_inverse_viewpoint"
+            ],
+            "title": "Mobius approximate inverses with support thinning"
+          },
+          {
+            "claim": "The equivalence has asymmetric mechanisms: RH constructs norm-convergent approximants, whereas failure of RH supplies a single continuous evaluation functional that separates the target from the whole generating span.",
+            "limit": "This contrast is specific to the stated functional Hilbert space and does not measure approximation rates.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u08_common_zero_obstruction"
+            ],
+            "title": "Constructive closure versus common-zero obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 205,
+              "line_start": 205,
+              "reason": "Blank transition into the proof."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 247,
+              "line_start": 244,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the factorization, the shift inequality (also noted as an RH reformulation), the gamma-ratio estimate, and the final square-integrable majorant.",
+      "line_end": 292,
+      "line_start": 255,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent throughout; several products, ratios, and exponents are visually fragile in extraction, so exact inequalities and constants must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under RH, pairing zeros in the Hadamard product gives monotonic control of the completed zeta function under a real shift; gamma asymptotics then yield an integrable bound for H_epsilon and complete the constructive implication.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero geometry yields the domination needed for norm convergence",
+      "unit_artifact_relpath": "depth/units/u07_hadamard_domination.txt",
+      "unit_bytes": 2025,
+      "unit_id": "u07_hadamard_domination",
+      "unit_sha256": "f9745a20ed3b3f6b1d41748183bc432469f5facfa2991765fc199ccf8518c9fa",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u07_hadamard_domination.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 247,
+          "line_end": 254,
+          "text": "\nTherefore, in order to show that E is in the closed linear span of {Gl : l = 1, 2, 3, . . . } and\nthus complete this part of the proof, it suffices to show that Hε , 0 < ε < 21 , are uniformly\nbounded in modulus on the critical line by an absolutely square integrable function. Then,\nanother application of Lebesgue’s dominated convergence theorem would yield\n\n             Hε −→ E in the norm of H 2 (Ω) as ε ց 0.\n\n",
+          "sha256": "8864bc4825d9cd68d747350a747ed4286e8f0b5ade57db65bb82a6189c1214f9"
+        },
+        "after": {
+          "line_start": 293,
+          "line_end": 300,
+          "text": "   Since {Gl : l = 1, 2, 3, . . . } ⊆ {Fλ : 0 ≤ λ ≤ 1}, the implication (ii) ⇒ (iii) is trivial. To\nprove (iii) ⇒ (i), suppose RH is false. Then there is a zeta-zero ρ ∈ Ω. Since ζ (ρ ) = 0, it\nfollows that Fλ (ρ ) = 0 for all λ ∈ (0, 1]. Thus the set {Fλ : λ ∈ (0, 1]} (and hence also its\nclosed linear span) is contained in the proper closed subspace {F ∈ H 2 (Ω): F(ρ ) = 0} of\nH 2 (Ω). (It is a closed subspace since evaluation at any fixed ρ ∈ Ω is a continuous linear\nfunctional: H 2 (Ω) is a functional Hilbert space.) Since E belongs to the closed linear\nspan of this set, it follows that 0 = E(ρ ) = ρ1 . Hence 0 = 1: the ultimate contradiction!\nThis proves (iii) =⇒ (i).\n",
+          "sha256": "b24d16d6c046a6f6d8bf87a33a9e9023df7286517030408ae5c10619cb50225d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the Hardy-space criterion",
+            "line_end": 309,
+            "line_start": 205,
+            "mathematical_role": "Builds Mobius-weighted approximants, proves norm convergence via factorization bounds, gives the common-zero obstruction, and extracts square-free thinning."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 292,
+          "line_start": 255,
+          "title": "Zero geometry yields the domination needed for norm convergence",
+          "unit_id": "u07_hadamard_domination",
+          "unit_type": "proof-mechanism",
+          "why_material": "Under RH, pairing zeros in the Hadamard product gives monotonic control of the completed zeta function under a real shift; gamma asymptotics then yield an integrable bound for H_epsilon and complete the constructive implication."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the factorization, the shift inequality (also noted as an RH reformulation), the gamma-ratio estimate, and the final square-integrable majorant.",
+          "representation_dependency": "Formula-dependent throughout; several products, ratios, and exponents are visually fragile in extraction, so exact inequalities and constants must be checked against the scan.",
+          "unit_id": "u07_hadamard_domination"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 253,
+            "line_start": 206,
+            "title": "Two-stage construction of an approximate inverse",
+            "unit_id": "u06_mobius_approximants",
+            "unit_type": "construction",
+            "why_material": "Mobius-weighted finite combinations first converge in Hardy norm to shifted reciprocal-zeta approximants H_epsilon, after which the shift tends to zero toward E; this exposes the constructive core of the closure implication."
+          },
+          {
+            "line_end": 300,
+            "line_start": 293,
+            "title": "A zero in Omega forces the entire generating family into a proper kernel",
+            "unit_id": "u08_common_zero_obstruction",
+            "unit_type": "obstruction",
+            "why_material": "The reverse implication is a concise functional-analytic obstruction: any off-line zeta zero annihilates every F_lambda, so their closed span lies in a proper evaluation kernel and cannot contain the nonvanishing target E."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The constructive direction treats partial sums of reciprocal zeta's Mobius series as approximate inverses, uses zero geometry for norm domination, and automatically restricts the necessary generators to square-free indices.",
+            "limit": "The argument is conditional on RH and on substantial analytic estimates whose proofs are omitted; approximation here is Hilbert-space closure, not pointwise inversion everywhere.",
+            "parent_local_unit_ids": [
+              "u05_littlewood_uniform_input",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u09_squarefree_thinning",
+              "u14_approximate_inverse_viewpoint"
+            ],
+            "title": "Mobius approximate inverses with support thinning"
+          },
+          {
+            "claim": "The equivalence has asymmetric mechanisms: RH constructs norm-convergent approximants, whereas failure of RH supplies a single continuous evaluation functional that separates the target from the whole generating span.",
+            "limit": "This contrast is specific to the stated functional Hilbert space and does not measure approximation rates.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u08_common_zero_obstruction"
+            ],
+            "title": "Constructive closure versus common-zero obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 247,
+              "line_start": 244,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inclusion of the continuity of point evaluation is essential to closedness of the obstructing subspace.",
+      "line_end": 300,
+      "line_start": 293,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; only the final E(rho)=1/rho display is formula-dependent and is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The reverse implication is a concise functional-analytic obstruction: any off-line zeta zero annihilates every F_lambda, so their closed span lies in a proper evaluation kernel and cannot contain the nonvanishing target E.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero in Omega forces the entire generating family into a proper kernel",
+      "unit_artifact_relpath": "depth/units/u08_common_zero_obstruction.txt",
+      "unit_bytes": 727,
+      "unit_id": "u08_common_zero_obstruction",
+      "unit_sha256": "b24d16d6c046a6f6d8bf87a33a9e9023df7286517030408ae5c10619cb50225d",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u08_common_zero_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 285,
+          "line_end": 292,
+          "text": "                         ≤ c|s|ε /2 ,     s ∈ Ω̄,\n              ζ (s + ε )\nfor some other absolute constant c > 0. In conjunction with the estimate (1), this implies\n\n             |Hε (s)| ≤ c|s|−3/4 ,      s ∈ Ω̄,\n\nfor 0 < ε < 12 . Since s 7−→ c|s|−3/4 is square integrable on the critical line, we are done.\nThis proves the implication (i) ⇒ (ii).\n",
+          "sha256": "ea8865664af85d7f6684782d0eb88ebf37b00acd99004c1f9fc4001b573ade4e"
+        },
+        "after": {
+          "line_start": 301,
+          "line_end": 308,
+          "text": "\n<!-- source-page: 6 -->\n\n142              Bhaskar Bagchi\n\nRemark 4. Since µ (l) = 0 unless l is square-free, the functions HL,ε introduced in the\ncourse of the above proof are in the linear span of the set {Gl : l square-free}. Thus,\nthe proof actually shows that RH implies (and hence is equivalent to) that E belongs to\n",
+          "sha256": "af9c19309e18cbb12a84f1bbebf1df30c0d9dc1dccf16e2246073b9069b44abb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the Hardy-space criterion",
+            "line_end": 309,
+            "line_start": 205,
+            "mathematical_role": "Builds Mobius-weighted approximants, proves norm convergence via factorization bounds, gives the common-zero obstruction, and extracts square-free thinning."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 300,
+          "line_start": 293,
+          "title": "A zero in Omega forces the entire generating family into a proper kernel",
+          "unit_id": "u08_common_zero_obstruction",
+          "unit_type": "obstruction",
+          "why_material": "The reverse implication is a concise functional-analytic obstruction: any off-line zeta zero annihilates every F_lambda, so their closed span lies in a proper evaluation kernel and cannot contain the nonvanishing target E."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inclusion of the continuity of point evaluation is essential to closedness of the obstructing subspace.",
+          "representation_dependency": "Low; only the final E(rho)=1/rho display is formula-dependent and is legible.",
+          "unit_id": "u08_common_zero_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 292,
+            "line_start": 255,
+            "title": "Zero geometry yields the domination needed for norm convergence",
+            "unit_id": "u07_hadamard_domination",
+            "unit_type": "proof-mechanism",
+            "why_material": "Under RH, pairing zeros in the Hadamard product gives monotonic control of the completed zeta function under a real shift; gamma asymptotics then yield an integrable bound for H_epsilon and complete the constructive implication."
+          },
+          {
+            "line_end": 309,
+            "line_start": 306,
+            "title": "The discrete generating family can be thinned to square-free indices",
+            "unit_id": "u09_squarefree_thinning",
+            "unit_type": "refinement",
+            "why_material": "Because Mobius coefficients vanish off square-free integers, the same construction proves the closure criterion using a strictly thinner family, separating the essential support of the approximants from the full indexing set."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The equivalence has asymmetric mechanisms: RH constructs norm-convergent approximants, whereas failure of RH supplies a single continuous evaluation functional that separates the target from the whole generating span.",
+            "limit": "This contrast is specific to the stated functional Hilbert space and does not measure approximation rates.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u08_common_zero_obstruction"
+            ],
+            "title": "Constructive closure versus common-zero obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 305,
+              "line_start": 301,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a direct source-local consequence of the previously defined approximants.",
+      "line_end": 309,
+      "line_start": 306,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because Mobius coefficients vanish off square-free integers, the same construction proves the closure criterion using a strictly thinner family, separating the essential support of the approximants from the full indexing set.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The discrete generating family can be thinned to square-free indices",
+      "unit_artifact_relpath": "depth/units/u09_squarefree_thinning.txt",
+      "unit_bytes": 343,
+      "unit_id": "u09_squarefree_thinning",
+      "unit_sha256": "4ced8343be40c20aaab617dc8255604bf1fa85578ecc1bb3b6619b85355b552f",
+      "unit_type": "refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u09_squarefree_thinning.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 298,
+          "line_end": 305,
+          "text": "functional: H 2 (Ω) is a functional Hilbert space.) Since E belongs to the closed linear\nspan of this set, it follows that 0 = E(ρ ) = ρ1 . Hence 0 = 1: the ultimate contradiction!\nThis proves (iii) =⇒ (i).\n\n<!-- source-page: 6 -->\n\n142              Bhaskar Bagchi\n\n",
+          "sha256": "3d7b4f5135aff5f00b68c4e553fed798e5e26ccae653bccb2941786d70ef64a2"
+        },
+        "after": {
+          "line_start": 310,
+          "line_end": 317,
+          "text": "  Now let L2 ((0, 1]) be the Hilbert space of complex-valued absolutely square integrable\nfunctions (modulo almost everywhere equality) on the interval (0, 1]. For 0 ≤ λ ≤ 1, let\nfλ ∈ L2 ((0, 1]) be defined by\n                         λ\n                      \u001a \u001b       \u001a \u001b\n                                  1\n             fλ (x) =        −λ        , x ∈ (0, 1].\n                         x        x\n",
+          "sha256": "da32676302e4f054e385540929543c325489f4c8b585216e1fc9a0b08751c04f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the Hardy-space criterion",
+            "line_end": 309,
+            "line_start": 205,
+            "mathematical_role": "Builds Mobius-weighted approximants, proves norm convergence via factorization bounds, gives the common-zero obstruction, and extracts square-free thinning."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 309,
+          "line_start": 306,
+          "title": "The discrete generating family can be thinned to square-free indices",
+          "unit_id": "u09_squarefree_thinning",
+          "unit_type": "refinement",
+          "why_material": "Because Mobius coefficients vanish off square-free integers, the same construction proves the closure criterion using a strictly thinner family, separating the essential support of the approximants from the full indexing set."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a direct source-local consequence of the previously defined approximants.",
+          "representation_dependency": "Low.",
+          "unit_id": "u09_squarefree_thinning"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 300,
+            "line_start": 293,
+            "title": "A zero in Omega forces the entire generating family into a proper kernel",
+            "unit_id": "u08_common_zero_obstruction",
+            "unit_type": "obstruction",
+            "why_material": "The reverse implication is a concise functional-analytic obstruction: any off-line zeta zero annihilates every F_lambda, so their closed span lies in a proper evaluation kernel and cannot contain the nonvanishing target E."
+          },
+          {
+            "line_end": 327,
+            "line_start": 310,
+            "title": "Fractional-part functions give the original L2 closure and totality criterion",
+            "unit_id": "u10_nyman_beurling_l2_criterion",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The theorem realizes RH as approximation of the constant function and, equivalently, totality of a parameterized family of fractional-part functions in L2((0,1])."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The constructive direction treats partial sums of reciprocal zeta's Mobius series as approximate inverses, uses zero geometry for norm domination, and automatically restricts the necessary generators to square-free indices.",
+            "limit": "The argument is conditional on RH and on substantial analytic estimates whose proofs are omitted; approximation here is Hilbert-space closure, not pointwise inversion everywhere.",
+            "parent_local_unit_ids": [
+              "u05_littlewood_uniform_input",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u09_squarefree_thinning",
+              "u14_approximate_inverse_viewpoint"
+            ],
+            "title": "Mobius approximate inverses with support thinning"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 305,
+              "line_start": 301,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the ambient Hilbert space, definitions of f_lambda and the constant target, and all three equivalent statements.",
+      "line_end": 327,
+      "line_start": 310,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The defining fractional-part formula at lines 313-317 is extraction-sensitive; verify its exact bracketing and coefficients against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem realizes RH as approximation of the constant function and, equivalently, totality of a parameterized family of fractional-part functions in L2((0,1]).",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional-part functions give the original L2 closure and totality criterion",
+      "unit_artifact_relpath": "depth/units/u10_nyman_beurling_l2_criterion.txt",
+      "unit_bytes": 907,
+      "unit_id": "u10_nyman_beurling_l2_criterion",
+      "unit_sha256": "b800eb365f686ff3560998929e69c6dc8553908fde09d25caca48ad7f56052a2",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u10_nyman_beurling_l2_criterion.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 302,
+          "line_end": 309,
+          "text": "<!-- source-page: 6 -->\n\n142              Bhaskar Bagchi\n\nRemark 4. Since µ (l) = 0 unless l is square-free, the functions HL,ε introduced in the\ncourse of the above proof are in the linear span of the set {Gl : l square-free}. Thus,\nthe proof actually shows that RH implies (and hence is equivalent to) that E belongs to\nthe closed linear span of the thinner set {Gl : l square-free} in H 2 (Ω).\n",
+          "sha256": "261ada0dc7e68d75e51b24f9cf48215dbf7071e5fcbea25a645dee95d5734c0f"
+        },
+        "after": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "Proof. One defines the Fourier–Mellin transform ̥: L2 ((0, 1]) −→ H 2 (Ω) by\n                           Z ∞\n             ̥( f )(s) =         xs−1 f (x)dx,    s ∈ Ω, f ∈ L2 ((0, 1]).                  (3)\n                            0\nIt is well-known that ̥, thus defined, is an isometry. For completeness, we sketch a proof.\nSince s 7−→ (x 7−→ xs−1 ) is an L2 ((0, 1])-valued analytic function on Ω, it follows that\n̥( f ) is analytic on Ω for each f ∈ L2 ((0, 1]). For λ ∈ [0, 1], let Ψλ ∈ L2 ((0, 1]) denote\nthe indicator function of the interval (0, λ ). Using the well-known identity\n",
+          "sha256": "3918c44f99f56779cf7a4c61e01c5268e60f8206a9dc199dcf7cbc65c45bd15e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Nyman-Beurling L2 representation",
+            "line_end": 450,
+            "line_start": 310,
+            "mathematical_role": "States the fractional-part-function criterion, connects it to the Hardy formulation by an isometric Mellin transform, and uses a multiplicative semigroup to derive totality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 327,
+          "line_start": 310,
+          "title": "Fractional-part functions give the original L2 closure and totality criterion",
+          "unit_id": "u10_nyman_beurling_l2_criterion",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The theorem realizes RH as approximation of the constant function and, equivalently, totality of a parameterized family of fractional-part functions in L2((0,1])."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the ambient Hilbert space, definitions of f_lambda and the constant target, and all three equivalent statements.",
+          "representation_dependency": "The defining fractional-part formula at lines 313-317 is extraction-sensitive; verify its exact bracketing and coefficients against the scan.",
+          "unit_id": "u10_nyman_beurling_l2_criterion"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 309,
+            "line_start": 306,
+            "title": "The discrete generating family can be thinned to square-free indices",
+            "unit_id": "u09_squarefree_thinning",
+            "unit_type": "refinement",
+            "why_material": "Because Mobius coefficients vanish off square-free integers, the same construction proves the closure criterion using a strictly thinner family, separating the essential support of the approximants from the full indexing set."
+          },
+          {
+            "line_end": 345,
+            "line_start": 328,
+            "title": "An isometric Mellin transform transports the L2 problem to Hardy space",
+            "unit_id": "u11_mellin_isometric_bridge",
+            "unit_type": "representation-change",
+            "why_material": "The transform supplies the structural bridge between interval functions and analytic functions, with indicator functions furnishing a total family that establishes isometry on the whole source space."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 305,
+              "line_start": 301,
+              "reason": "Page boundary and running header."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 341,
+              "line_start": 328,
+              "reason": "The transform and auxiliary integral displays contain a suspect upper limit and fragmented notation; their exact formulas need the scan."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains analyticity, the norm-preservation argument on interval indicators, and their totality.",
+      "line_end": 345,
+      "line_start": 328,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed transform and auxiliary integral are damaged: line 329 appears to show an inconsistent upper limit and lines 336-341 are fragmented. Do not reconstruct them from memory; scan verification is required for exact formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The transform supplies the structural bridge between interval functions and analytic functions, with indicator functions furnishing a total family that establishes isometry on the whole source space.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An isometric Mellin transform transports the L2 problem to Hardy space",
+      "unit_artifact_relpath": "depth/units/u11_mellin_isometric_bridge.txt",
+      "unit_bytes": 1127,
+      "unit_id": "u11_mellin_isometric_bridge",
+      "unit_sha256": "97fb6fab5369d59490f8c0781aa300bdb866f757be86931e56c676e68872e12d",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u11_mellin_isometric_bridge.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 320,
+          "line_end": 327,
+          "text": "             1(x) = 1, x ∈ (0, 1].\nIn terms of these notations, the original theorem of Nyman and Beurling may be stated as\nfollows:\nTheorem 5. The following statements are equivalent:\n  (i) The Riemann hypothesis,\n (ii) 1 is in the closed linear span in L2 ((0, 1]) of the set { fλ : 0 ≤ λ ≤ 1},\n(iii) the set { fλ : 0 ≤ λ ≤ 1} is total in L2 ((0, 1]).\n\n",
+          "sha256": "e1b78bca61d2e340bc00d75229173fb40269a8f459193c845dcce9b4f1ad3724"
+        },
+        "after": {
+          "line_start": 346,
+          "line_end": 353,
+          "text": "  We begin with a computation of the Melin transform of fλ .\nClaim.\n             ̥( fλ ) = −Fλ ,       0 ≤ λ ≤ 1.                                              (4)\nTo verify this claim, begin with s = σ + it, σ > 1. Then,\n                   λ                                   λ s−1\n             Z 1\u001a \u001b                Z 1            Z 1\u0016 \u0017\n                       xs−1 dx = λ     xs−2 dx −         x dx\n              0    x                0              0   x\n",
+          "sha256": "5835a4ce1fb19dda1b5dfc78c93609984957c31aa499b15cf951df6f600a86ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Nyman-Beurling L2 representation",
+            "line_end": 450,
+            "line_start": 310,
+            "mathematical_role": "States the fractional-part-function criterion, connects it to the Hardy formulation by an isometric Mellin transform, and uses a multiplicative semigroup to derive totality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 345,
+          "line_start": 328,
+          "title": "An isometric Mellin transform transports the L2 problem to Hardy space",
+          "unit_id": "u11_mellin_isometric_bridge",
+          "unit_type": "representation-change",
+          "why_material": "The transform supplies the structural bridge between interval functions and analytic functions, with indicator functions furnishing a total family that establishes isometry on the whole source space."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains analyticity, the norm-preservation argument on interval indicators, and their totality.",
+          "representation_dependency": "The displayed transform and auxiliary integral are damaged: line 329 appears to show an inconsistent upper limit and lines 336-341 are fragmented. Do not reconstruct them from memory; scan verification is required for exact formulas.",
+          "unit_id": "u11_mellin_isometric_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 327,
+            "line_start": 310,
+            "title": "Fractional-part functions give the original L2 closure and totality criterion",
+            "unit_id": "u10_nyman_beurling_l2_criterion",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The theorem realizes RH as approximation of the constant function and, equivalently, totality of a parameterized family of fractional-part functions in L2((0,1])."
+          },
+          {
+            "line_end": 400,
+            "line_start": 346,
+            "title": "Fractional-part generators map to the analytic zeta family",
+            "unit_id": "u12_fractional_part_transform_identity",
+            "unit_type": "representation-change",
+            "why_material": "The calculation identifies the Mellin image of each f_lambda with minus F_lambda, making the two closure problems genuinely equivalent rather than merely analogous."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 341,
+              "line_start": 328,
+              "reason": "The transform and auxiliary integral displays contain a suspect upper limit and fragmented notation; their exact formulas need the scan."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the initial half-plane calculation, telescoping series, subtraction step, and analytic continuation to Omega.",
+      "line_end": 400,
+      "line_start": 346,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: integral limits, fractional-part brackets, powers, and the telescoping identity are formula-dependent and partially garbled in lines 351-398; exact reuse requires comparison with the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The calculation identifies the Mellin image of each f_lambda with minus F_lambda, making the two closure problems genuinely equivalent rather than merely analogous.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional-part generators map to the analytic zeta family",
+      "unit_artifact_relpath": "depth/units/u12_fractional_part_transform_identity.txt",
+      "unit_bytes": 2324,
+      "unit_id": "u12_fractional_part_transform_identity",
+      "unit_sha256": "79e07db34e46f68e42bf650aaaa3b7ea3a0ef4a65860f39ab586ba17ee43f6bc",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u12_fractional_part_transform_identity.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 338,
+          "line_end": 345,
+          "text": "             1\n                             dx = e−|u| ,        u ∈ R,\n             π    −∞ 1 + x\n                           2\n\none sees that k̥(Ψλ )k2 = kΨλ k2 < ∞ – hence ̥(Ψλ ) ∈ H 2 (Ω) – and, more generally,\nk̥(Ψλ ) − ̥(Ψµ )k2 = kΨλ − Ψµ k2 for λ , µ ∈ [0, 1]. Since {Ψλ : λ ∈ [0, 1]} is a total\nsubset of L2 ((0, 1]), this implies that ̥ maps L2 ((0, 1]) isometrically into H 2 (Ω).\n",
+          "sha256": "034f7f9293c96ae049511aaf251bba39646f0c91a7e9eaa058f5f8cafb21348c"
+        },
+        "after": {
+          "line_start": 401,
+          "line_end": 408,
+          "text": "(i) =⇒ (ii). Assume RH. Then, by Theorem 2, E = ̥(1) belongs to the closed linear span\nof {Fλ = −̥( fλ ): 0 ≤ λ ≤ 1}. Since ̥ is an isometry, this shows that 1 belongs to the\nclosed linear span of the set { fλ : 0 ≤ λ ≤ 1}. Thus (i) =⇒ (ii).\n(ii) =⇒ (iii). Let 1 be in the closed linear span in L2 ((0, 1]) of { fλ : 0 ≤ λ ≤ 1}. Applying\n̥, it follows that E is in the closed linear span (say N ) of {Fλ : 0 ≤ λ ≤ 1}. For µ ∈ (0, 1],\nlet Θµ ∈ H ∞ (Ω) (the Banach algebra of bounded analytic functions on Ω) be defined by\n                           1\n            Θµ (s) = µ s− 2 ,   s ∈ Ω.\n",
+          "sha256": "00872280da659b034ee6b3642a1c8cebc4862c09b70aad46936db5e25906728d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Nyman-Beurling L2 representation",
+            "line_end": 450,
+            "line_start": 310,
+            "mathematical_role": "States the fractional-part-function criterion, connects it to the Hardy formulation by an isometric Mellin transform, and uses a multiplicative semigroup to derive totality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 400,
+          "line_start": 346,
+          "title": "Fractional-part generators map to the analytic zeta family",
+          "unit_id": "u12_fractional_part_transform_identity",
+          "unit_type": "representation-change",
+          "why_material": "The calculation identifies the Mellin image of each f_lambda with minus F_lambda, making the two closure problems genuinely equivalent rather than merely analogous."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the initial half-plane calculation, telescoping series, subtraction step, and analytic continuation to Omega.",
+          "representation_dependency": "High: integral limits, fractional-part brackets, powers, and the telescoping identity are formula-dependent and partially garbled in lines 351-398; exact reuse requires comparison with the scan.",
+          "unit_id": "u12_fractional_part_transform_identity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 345,
+            "line_start": 328,
+            "title": "An isometric Mellin transform transports the L2 problem to Hardy space",
+            "unit_id": "u11_mellin_isometric_bridge",
+            "unit_type": "representation-change",
+            "why_material": "The transform supplies the structural bridge between interval functions and analytic functions, with indicator functions furnishing a total family that establishes isometry on the whole source space."
+          },
+          {
+            "line_end": 439,
+            "line_start": 401,
+            "title": "Semigroup invariance promotes one-vector containment to totality",
+            "unit_id": "u13_continuous_semigroup_totality",
+            "unit_type": "proof-mechanism",
+            "why_material": "After transporting the closure statement, multiplication by inner functions preserves the span and generates transforms of a total indicator family from E, converting approximation of one target into totality of all fractional-part generators."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 341,
+              "line_start": 328,
+              "reason": "The transform and auxiliary integral displays contain a suspect upper limit and fragmented notation; their exact formulas need the scan."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 363,
+              "line_start": 360,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Starts with the isometric transfer of RH to L2 and retains the full invariant-subspace argument for the implication from closure to totality.",
+      "line_end": 439,
+      "line_start": 401,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive normalizations in Theta_mu, M_mu(F_lambda), and the indicator transform should be scan-checked; the invariant-subspace logic is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After transporting the closure statement, multiplication by inner functions preserves the span and generates transforms of a total indicator family from E, converting approximation of one target into totality of all fractional-part generators.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Semigroup invariance promotes one-vector containment to totality",
+      "unit_artifact_relpath": "depth/units/u13_continuous_semigroup_totality.txt",
+      "unit_bytes": 2272,
+      "unit_id": "u13_continuous_semigroup_totality",
+      "unit_sha256": "357dc745bc18a9bd961065c35643f7aef0fe4353b3c1254acaccf24406251e43",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u13_continuous_semigroup_totality.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 393,
+          "line_end": 400,
+          "text": "Multiplying the second equation by λ and subtracting the result from the first, we arrive at\n\n                                                ζ (s)\n            Z 1\n                  fλ (x)xs−1 dx = −(λ s − λ )         = −Fλ (s)\n              0                                   s\nfor s in the half-plane {σ > 1}. Since both sides of this equation are analytic in the bigger\nhalf-plane Ω, this equation continues to hold for s ∈ Ω. This proves the Claim.\n",
+          "sha256": "8a31a3f5a2d3d3ac53da53455650673e59ff419e6a869352d21ff1113288b354"
+        },
+        "after": {
+          "line_start": 440,
+          "line_end": 447,
+          "text": "Remark 6. It is instructive to compare the proof of Theorem 5 with Beurling’s original\nproof as given in [4]. Our proof makes it clear that the heart of the matter is very simple:\nRiemann hypothesis amounts to the existence of approximate inverses to the zeta function\nin a suitable function space (viz. the weighted Hardy space of analytic functions on Ω with\nthe weight function |E(s)|2 ). The simplification in its proof is achieved by Baez-Duarte’s\nperfectly natural and yet vastly illuminating observation that, under RH, these approxi-\nmate inverses are provided by the partial sums of the Dirichlet series for ζ1 . In contrast,\nBeurling’s original proof is a clever and ill-motivated application of Phragmen–Lindelof\n",
+          "sha256": "345e3369b784fc02ddb41b0706b0565838d5df8711f30962b2ccca1ab18c5934"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Nyman-Beurling L2 representation",
+            "line_end": 450,
+            "line_start": 310,
+            "mathematical_role": "States the fractional-part-function criterion, connects it to the Hardy formulation by an isometric Mellin transform, and uses a multiplicative semigroup to derive totality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 439,
+          "line_start": 401,
+          "title": "Semigroup invariance promotes one-vector containment to totality",
+          "unit_id": "u13_continuous_semigroup_totality",
+          "unit_type": "proof-mechanism",
+          "why_material": "After transporting the closure statement, multiplication by inner functions preserves the span and generates transforms of a total indicator family from E, converting approximation of one target into totality of all fractional-part generators."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Starts with the isometric transfer of RH to L2 and retains the full invariant-subspace argument for the implication from closure to totality.",
+          "representation_dependency": "Formula-sensitive normalizations in Theta_mu, M_mu(F_lambda), and the indicator transform should be scan-checked; the invariant-subspace logic is explicit in prose.",
+          "unit_id": "u13_continuous_semigroup_totality"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 400,
+            "line_start": 346,
+            "title": "Fractional-part generators map to the analytic zeta family",
+            "unit_id": "u12_fractional_part_transform_identity",
+            "unit_type": "representation-change",
+            "why_material": "The calculation identifies the Mellin image of each f_lambda with minus F_lambda, making the two closure problems genuinely equivalent rather than merely analogous."
+          },
+          {
+            "line_end": 450,
+            "line_start": 440,
+            "title": "The closure proof is an approximate-inverse problem for zeta",
+            "unit_id": "u14_approximate_inverse_viewpoint",
+            "unit_type": "method-comparison",
+            "why_material": "The author identifies the conceptual heart as constructing approximate inverses to zeta in a weighted Hardy space and contrasts the natural Mobius partial sums with the less motivated original complex-analytic route, while acknowledging where difficult estimates remain hidden."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "In both continuous and discrete representations, an invariant closed span that contains one target vector must contain the orbit-generated indicator family, and that known-total family forces totality.",
+            "limit": "The source proves this only for its particular multiplication and dilation semigroups; no general cyclicity theorem is asserted.",
+            "parent_local_unit_ids": [
+              "u13_continuous_semigroup_totality",
+              "u16_discrete_semigroup_totality"
+            ],
+            "title": "Semigroup invariance as a cyclic-to-total promotion principle"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 429,
+              "line_start": 426,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves both the simplifying interpretation and its limitation: the conditional estimate and Littlewood lemma still contain omitted Phragmen-Lindelof-type work.",
+      "line_end": 450,
+      "line_start": 440,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the weight |E(s)|^2 is the only formula-level dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author identifies the conceptual heart as constructing approximate inverses to zeta in a weighted Hardy space and contrasts the natural Mobius partial sums with the less motivated original complex-analytic route, while acknowledging where difficult estimates remain hidden.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The closure proof is an approximate-inverse problem for zeta",
+      "unit_artifact_relpath": "depth/units/u14_approximate_inverse_viewpoint.txt",
+      "unit_bytes": 982,
+      "unit_id": "u14_approximate_inverse_viewpoint",
+      "unit_sha256": "6074f14e254ad95dbc2387666f011aa65c8459f642bc9d4cb93b57f48d311f46",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u14_approximate_inverse_viewpoint.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 432,
+          "line_end": 439,
+          "text": "              ̥(Ψλ ) = λ 1/2 Mλ (E),          0 < λ ≤ 1.\nThus, {̥(Ψλ ): 0 ≤ λ ≤ 1} is contained in the closed linear span N of {̥( fλ ): 0 ≤ λ ≤\n1}. Since ̥ is an isometry, it follows that {Ψλ : 0 ≤ λ ≤ 1} is contained in the closed\nlinear span in L2 ((0, 1]) of the set { fλ : 0 ≤ λ ≤ 1}. Since the first set is clearly total in\nL2 ((0, 1]), it follows that so is the second. Thus (ii) =⇒ (iii).\n(iii) =⇒ (i). Clearly (iii) implies that the closed linear span of { fλ : 0 ≤ λ ≤ 1} contains 1\nand hence, applying ̥, the closed linear span of {Fλ : 0 ≤ λ ≤ 1} contains E. Therefore,\nby Theorem 2, Riemann hypothesis follows. Thus (iii) =⇒ (i).\n",
+          "sha256": "69f8104f00087cd61ee75dbf61f0e243ad6beeef3c4fdb1ae388ed52f9178412"
+        },
+        "after": {
+          "line_start": 451,
+          "line_end": 458,
+          "text": "   Let M be the closed subspace of L2 ((0, 1]) consisting of the    \u0003 functions which are almost\n                                                               1 1\neverywhere constant on each of the sub-intervals n+1             , n , n = 1, 2, 3, . . . . Since each\nelement of M is almost everywhere equal to a unique function which is everywhere\nconstant on these sub-intervals, we may (and do) think of M as the space of all such\n(genuine) piece-wise constant functions. As a closed subspace of a Hilbert space, M is a\nHilbert space in its own right.\n   For l = 1, 2, 3, . . . , let gl ∈ L2 ((0, 1]) be defined by\n",
+          "sha256": "56a2ed37aa90d69f8dc2107ad9b2b64400dad9107f865c91b9854635860271e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Nyman-Beurling L2 representation",
+            "line_end": 450,
+            "line_start": 310,
+            "mathematical_role": "States the fractional-part-function criterion, connects it to the Hardy formulation by an isometric Mellin transform, and uses a multiplicative semigroup to derive totality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 450,
+          "line_start": 440,
+          "title": "The closure proof is an approximate-inverse problem for zeta",
+          "unit_id": "u14_approximate_inverse_viewpoint",
+          "unit_type": "method-comparison",
+          "why_material": "The author identifies the conceptual heart as constructing approximate inverses to zeta in a weighted Hardy space and contrasts the natural Mobius partial sums with the less motivated original complex-analytic route, while acknowledging where difficult estimates remain hidden."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves both the simplifying interpretation and its limitation: the conditional estimate and Littlewood lemma still contain omitted Phragmen-Lindelof-type work.",
+          "representation_dependency": "Low; the weight |E(s)|^2 is the only formula-level dependency.",
+          "unit_id": "u14_approximate_inverse_viewpoint"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 439,
+            "line_start": 401,
+            "title": "Semigroup invariance promotes one-vector containment to totality",
+            "unit_id": "u13_continuous_semigroup_totality",
+            "unit_type": "proof-mechanism",
+            "why_material": "After transporting the closure statement, multiplication by inner functions preserves the span and generates transforms of a total indicator family from E, converting approximation of one target into totality of all fractional-part generators."
+          },
+          {
+            "line_end": 479,
+            "line_start": 451,
+            "title": "A step-function subspace turns reciprocal parameters into discrete generators",
+            "unit_id": "u15_piecewise_constant_discretization",
+            "unit_type": "representation-change",
+            "why_material": "The closed subspace of functions constant on reciprocal intervals supports generators g_l=f_{1/l}; their intervalwise values make the later unitary identification with periodic sequences possible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The constructive direction treats partial sums of reciprocal zeta's Mobius series as approximate inverses, uses zero geometry for norm domination, and automatically restricts the necessary generators to square-free indices.",
+            "limit": "The argument is conditional on RH and on substantial analytic estimates whose proofs are omitted; approximation here is Hilbert-space closure, not pointwise inversion everywhere.",
+            "parent_local_unit_ids": [
+              "u05_littlewood_uniform_input",
+              "u06_mobius_approximants",
+              "u07_hadamard_domination",
+              "u09_squarefree_thinning",
+              "u14_approximate_inverse_viewpoint"
+            ],
+            "title": "Mobius approximate inverses with support thinning"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the subspace definition, the discrete family, its membership in the subspace, and the statement that this is the Baez-Duarte refinement.",
+      "line_end": 479,
+      "line_start": 451,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interval endpoints and equation (5) are visibly garbled in lines 451-474. The prose supports the discretization and membership claim, but exact pointwise values must be verified against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The closed subspace of functions constant on reciprocal intervals supports generators g_l=f_{1/l}; their intervalwise values make the later unitary identification with periodic sequences possible.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A step-function subspace turns reciprocal parameters into discrete generators",
+      "unit_artifact_relpath": "depth/units/u15_piecewise_constant_discretization.txt",
+      "unit_bytes": 1933,
+      "unit_id": "u15_piecewise_constant_discretization",
+      "unit_sha256": "6fc865e2b9e17f3de1adbf113aa7cd8287e8cfacf27c5d53c9701eb5691c46eb",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u15_piecewise_constant_discretization.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 443,
+          "line_end": 450,
+          "text": "in a suitable function space (viz. the weighted Hardy space of analytic functions on Ω with\nthe weight function |E(s)|2 ). The simplification in its proof is achieved by Baez-Duarte’s\nperfectly natural and yet vastly illuminating observation that, under RH, these approxi-\nmate inverses are provided by the partial sums of the Dirichlet series for ζ1 . In contrast,\nBeurling’s original proof is a clever and ill-motivated application of Phragmen–Lindelof\ntype arguments. (We have not seen Nyman’s original proof.) To be fair, we should how-\never point out that such arguments are now hidden under the carpet: they occur in the\nproofs (not presented here) of the conditional estimate (1) and Lemma 3.\n",
+          "sha256": "87083d871763b90acc6cd942d7e477f2b68050202fce89e5bbfe2503b28135cf"
+        },
+        "after": {
+          "line_start": 480,
+          "line_end": 487,
+          "text": "\n<!-- source-page: 9 -->\n\nHilbert space reformulation of the Riemann hypothesis                            145\n\nTheorem 7. The following are equivalent:\n\n  (i) The Riemann hypothesis,\n",
+          "sha256": "187e11816777f8a61c2cbf4688c6f9b0fc9c2c46e12c2868fe4158d4affef930"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Piecewise-constant discretization",
+            "line_end": 480,
+            "line_start": 451,
+            "mathematical_role": "Restricts to a closed step-function subspace and introduces the reciprocal-integer subfamily used for the discrete refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 479,
+          "line_start": 451,
+          "title": "A step-function subspace turns reciprocal parameters into discrete generators",
+          "unit_id": "u15_piecewise_constant_discretization",
+          "unit_type": "representation-change",
+          "why_material": "The closed subspace of functions constant on reciprocal intervals supports generators g_l=f_{1/l}; their intervalwise values make the later unitary identification with periodic sequences possible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the subspace definition, the discrete family, its membership in the subspace, and the statement that this is the Baez-Duarte refinement.",
+          "representation_dependency": "The interval endpoints and equation (5) are visibly garbled in lines 451-474. The prose supports the discretization and membership claim, but exact pointwise values must be verified against the scan.",
+          "unit_id": "u15_piecewise_constant_discretization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 450,
+            "line_start": 440,
+            "title": "The closure proof is an approximate-inverse problem for zeta",
+            "unit_id": "u14_approximate_inverse_viewpoint",
+            "unit_type": "method-comparison",
+            "why_material": "The author identifies the conceptual heart as constructing approximate inverses to zeta in a weighted Hardy space and contrasts the natural Mobius partial sums with the less motivated original complex-analytic route, while acknowledging where difficult estimates remain hidden."
+          },
+          {
+            "line_end": 527,
+            "line_start": 485,
+            "title": "Discrete dilations upgrade the Baez-Duarte closure criterion to totality",
+            "unit_id": "u16_discrete_semigroup_totality",
+            "unit_type": "proof-mechanism",
+            "why_material": "Theorem 7 combines the reciprocal-indexed closure criterion with a semigroup of isometries whose orbit of the constant function contains a total family of interval indicators, proving the discrete family is total exactly under RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 474,
+              "line_start": 464,
+              "reason": "Interval notation and the pointwise formula for g_l are substantially garbled; exact values are not reconstructed."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 484,
+              "line_start": 481,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the equivalence statement, Mellin transfer for the constructive direction, the dilation-semigroup invariant-span argument, and the reverse transfer.",
+      "line_end": 527,
+      "line_start": 485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The piecewise definition of T_m and the identity for T_m(g_l) at lines 500-514 are extraction-defective. Their exact scaling and indices require scan verification; only the surrounding stated isometry, semigroup, and invariance consequences are safely recoverable from text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 7 combines the reciprocal-indexed closure criterion with a semigroup of isometries whose orbit of the constant function contains a total family of interval indicators, proving the discrete family is total exactly under RH.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrete dilations upgrade the Baez-Duarte closure criterion to totality",
+      "unit_artifact_relpath": "depth/units/u16_discrete_semigroup_totality.txt",
+      "unit_bytes": 2080,
+      "unit_id": "u16_discrete_semigroup_totality",
+      "unit_sha256": "816a09a5d23b79e0b167df53796dba2ba615712bbae60f92865fa0ab6cd98006",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u16_discrete_semigroup_totality.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 477,
+          "line_end": 484,
+          "text": "The refinement due to Baez-Duarte of the Beurling–Nyman theorem may now be stated\nas follows. (However, as already stated, the implication (i) =⇒ (ii) of this theorem is its\nonly part which explicitly occurs in [2].)\n\n<!-- source-page: 9 -->\n\nHilbert space reformulation of the Riemann hypothesis                            145\n\n",
+          "sha256": "e722098b2e52b00977753ce579dfc344183b2ebe3009b6f8a8ed658a537b42fe"
+        },
+        "after": {
+          "line_start": 528,
+          "line_end": 535,
+          "text": "\nProof of Theorem 1. Let U: M −→ H be the unitary defined by\n                   \u001a \u0012 \u0013                       \u001b\n                        1\n           U( f ) = f      : n = 1, 2, 3, . . . , f ∈ M .\n                        n\n\nSince U(1) = γ and (in view of equation (5)) U(gl ) = γl , this theorem is a straightforward\n",
+          "sha256": "fe1ce781949cddc88c48955d73954df436ece1cc4e1a3aaf60b1dbb1b8e38f96"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Baez-Duarte discrete criterion and sequence bridge",
+            "line_end": 541,
+            "line_start": 481,
+            "mathematical_role": "Proves totality with a discrete dilation semigroup and transfers the result unitarily to weighted sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 527,
+          "line_start": 485,
+          "title": "Discrete dilations upgrade the Baez-Duarte closure criterion to totality",
+          "unit_id": "u16_discrete_semigroup_totality",
+          "unit_type": "proof-mechanism",
+          "why_material": "Theorem 7 combines the reciprocal-indexed closure criterion with a semigroup of isometries whose orbit of the constant function contains a total family of interval indicators, proving the discrete family is total exactly under RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the equivalence statement, Mellin transfer for the constructive direction, the dilation-semigroup invariant-span argument, and the reverse transfer.",
+          "representation_dependency": "The piecewise definition of T_m and the identity for T_m(g_l) at lines 500-514 are extraction-defective. Their exact scaling and indices require scan verification; only the surrounding stated isometry, semigroup, and invariance consequences are safely recoverable from text.",
+          "unit_id": "u16_discrete_semigroup_totality"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 479,
+            "line_start": 451,
+            "title": "A step-function subspace turns reciprocal parameters into discrete generators",
+            "unit_id": "u15_piecewise_constant_discretization",
+            "unit_type": "representation-change",
+            "why_material": "The closed subspace of functions constant on reciprocal intervals supports generators g_l=f_{1/l}; their intervalwise values make the later unitary identification with periodic sequences possible."
+          },
+          {
+            "line_end": 540,
+            "line_start": 529,
+            "title": "Sampling on reciprocal integers unitarily transfers totality to weighted sequences",
+            "unit_id": "u17_unitary_sequence_bridge",
+            "unit_type": "representation-change",
+            "why_material": "A unitary sampling map sends the constant step function to gamma and each discrete generator to gamma_l, making the opening sequence theorem a direct reformulation and carrying over square-free thinning."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          },
+          {
+            "claim": "In both continuous and discrete representations, an invariant closed span that contains one target vector must contain the orbit-generated indicator family, and that known-total family forces totality.",
+            "limit": "The source proves this only for its particular multiplication and dilation semigroups; no general cyclicity theorem is asserted.",
+            "parent_local_unit_ids": [
+              "u13_continuous_semigroup_totality",
+              "u16_discrete_semigroup_totality"
+            ],
+            "title": "Semigroup invariance as a cyclic-to-total promotion principle"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 484,
+              "line_start": 481,
+              "reason": "Page boundary and running header."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 507,
+              "line_start": 500,
+              "reason": "The piecewise formula defining T_m has broken interval brackets and line order; exact definition requires the scan."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 514,
+              "line_start": 512,
+              "reason": "The displayed action of T_m on g_l is fragmented; indices and scaling are not reconstructed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition and both named images of the unitary map plus the square-free refinement.",
+      "line_end": 540,
+      "line_start": 529,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sampling display is formula-dependent but readable; equation (5), on which the image of g_l depends, remains scan-dependent as flagged in u15.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A unitary sampling map sends the constant step function to gamma and each discrete generator to gamma_l, making the opening sequence theorem a direct reformulation and carrying over square-free thinning.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sampling on reciprocal integers unitarily transfers totality to weighted sequences",
+      "unit_artifact_relpath": "depth/units/u17_unitary_sequence_bridge.txt",
+      "unit_bytes": 554,
+      "unit_id": "u17_unitary_sequence_bridge",
+      "unit_sha256": "e960e180071f684b282a8ad97cfb3a998f919d8853217383221286ef0b118641",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u17_unitary_sequence_bridge.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 521,
+          "line_end": 528,
+          "text": "\nThus, if K contains 1 = Φ1 then it contains Φn for all n. Since {Φn : n = 1, 2, 3, . . . } is\nclearly a total subset of M , it then follows that K = M , so that {gl : l = 1, 2, 3, . . . } is a\ntotal subset of M . Thus (ii) =⇒ (iii).\n   Lastly, if {gl : l = 1, 2, 3, . . .} is a total subset of M then, in particular its closed linear\nspan contains 1, and hence the closed linear span of {Gl = −̥(gl )} contains E = ̥(1),\nso that RH follows by Theorem 2. Thus (iii) =⇒ (i).\n\n",
+          "sha256": "e14119a1152b405821054c7dcfeb2bbd51528cdeaa68c712cc44ad92f4b2ec3d"
+        },
+        "after": {
+          "line_start": 541,
+          "line_end": 548,
+          "text": "\n<!-- source-page: 10 -->\n\n146             Bhaskar Bagchi\n\n    So where does the undoubtedly elegant reformulation of RH in Theorem 1 leave us?\nOne possible approach is as follows. For positive integers L, let D(L) denote the dis-\ntance of the vector γ ∈ H from the (L − 1)-dimensional subspace of H spanned by\n",
+          "sha256": "5494768380ff84615ed1f29e5d17113993d22fe07088c49e4e229e558e8ac74c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Baez-Duarte discrete criterion and sequence bridge",
+            "line_end": 541,
+            "line_start": 481,
+            "mathematical_role": "Proves totality with a discrete dilation semigroup and transfers the result unitarily to weighted sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 540,
+          "line_start": 529,
+          "title": "Sampling on reciprocal integers unitarily transfers totality to weighted sequences",
+          "unit_id": "u17_unitary_sequence_bridge",
+          "unit_type": "representation-change",
+          "why_material": "A unitary sampling map sends the constant step function to gamma and each discrete generator to gamma_l, making the opening sequence theorem a direct reformulation and carrying over square-free thinning."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definition and both named images of the unitary map plus the square-free refinement.",
+          "representation_dependency": "The sampling display is formula-dependent but readable; equation (5), on which the image of g_l depends, remains scan-dependent as flagged in u15.",
+          "unit_id": "u17_unitary_sequence_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 527,
+            "line_start": 485,
+            "title": "Discrete dilations upgrade the Baez-Duarte closure criterion to totality",
+            "unit_id": "u16_discrete_semigroup_totality",
+            "unit_type": "proof-mechanism",
+            "why_material": "Theorem 7 combines the reciprocal-indexed closure criterion with a semigroup of isometries whose orbit of the constant function contains a total family of interval indicators, proving the discrete family is total exactly under RH."
+          },
+          {
+            "line_end": 559,
+            "line_start": 546,
+            "title": "Finite-dimensional distance decay is equivalent to RH but Gram formulas resist estimation",
+            "unit_id": "u18_distance_gram_route",
+            "unit_type": "computational-route-and-obstruction",
+            "why_material": "The source converts density into decay of distances to initial finite spans, proposes a strong asymptotic, and explains that the resulting ratio of Gram determinants is explicit yet poorly suited to calculation or estimation, recording both a possible route and its bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Isometric or unitary maps preserve the same closure/totality question while progressively changing analytic functions into fractional-part functions, step functions, and weighted sequences.",
+            "limit": "The exact formulas for both transforms and the step-function sampling identity are scan-dependent; this synthesis establishes source-stated equivalence, not a new proof beyond those bridges.",
+            "parent_local_unit_ids": [
+              "u04_function_family_equivalence",
+              "u10_nyman_beurling_l2_criterion",
+              "u11_mellin_isometric_bridge",
+              "u12_fractional_part_transform_identity",
+              "u15_piecewise_constant_discretization",
+              "u16_discrete_semigroup_totality",
+              "u17_unitary_sequence_bridge"
+            ],
+            "title": "One criterion across four Hilbert representations"
+          },
+          {
+            "claim": "The unitary sequence criterion makes RH equivalent to vanishing distance from gamma to growing finite spans, suggesting Gram determinants as finite observables of the density problem.",
+            "limit": "The paper explicitly says the resulting determinant formulas are unsuitable for effective estimation and presents no successful bound.",
+            "parent_local_unit_ids": [
+              "u01_sequence_space_equivalence",
+              "u17_unitary_sequence_bridge",
+              "u18_distance_gram_route"
+            ],
+            "title": "From qualitative density to a finite-dimensional distance observable"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 545,
+              "line_start": 542,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the definition of D(L), its RH equivalence, the conjectural squared-distance scale, the determinant representation, and the author's negative assessment.",
+      "line_end": 559,
+      "line_start": 546,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants in the conjectured asymptotic and the finite-sum formulas alluded to are formula-dependent; the inner-product sums themselves are not displayed, so no reconstruction is attempted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source converts density into decay of distances to initial finite spans, proposes a strong asymptotic, and explains that the resulting ratio of Gram determinants is explicit yet poorly suited to calculation or estimation, recording both a possible route and its bottleneck.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-dimensional distance decay is equivalent to RH but Gram formulas resist estimation",
+      "unit_artifact_relpath": "depth/units/u18_distance_gram_route.txt",
+      "unit_bytes": 1268,
+      "unit_id": "u18_distance_gram_route",
+      "unit_sha256": "7cc806f90f644e9cf91e623bf2837d9b06ebcb054b66e2c10d4572bbb81b53fd",
+      "unit_type": "computational-route-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u18_distance_gram_route.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 538,
+          "line_end": 545,
+          "text": "Remark 8. In view of Remark 4, Riemann hypothesis actually implies (and hence is\nequivalent to) the statement that γ belongs to the closed linear span in H of the much\nthinner set {γl : l square-free}.\n\n<!-- source-page: 10 -->\n\n146             Bhaskar Bagchi\n\n",
+          "sha256": "9cba9d210651f329960193317e23f84d072f692c13428bff16f04014c3366888"
+        },
+        "after": {
+          "line_start": 560,
+          "line_end": 567,
+          "text": "\n\nReferences\n[1] Beurling A, A closure problem related to the Riemann zeta function, Proc. Natl. Acad.\n    Sci. 41 (1955) 312–314\n[2] Baez-Duarte L, A strengthening of the Nyman–Beurling criterion for the Riemann\n    hypothesis, Atti Acad. Naz. Lincei 14 (2003) 5–11\n[3] Baez-Duarte L, Balazard M, Landreau B and Saias E, Notes sur la fonction ζ de Riemann\n",
+          "sha256": "6d274b1e05dabbb67155be80958947578985e836f03ba5dc5e4406645bb6bc48"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_28abfd9644444cb0725099ec53720d705d331c044e1b4dc4d54b04ff3264f16e",
+        "dossier_sha256": "c8b4ccc9c07e753a8d138e418d990e338dafa73e75df7c8706938716df381e96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Distance formulation and limitation",
+            "line_end": 561,
+            "line_start": 542,
+            "mathematical_role": "Turns the closure criterion into decay of finite-dimensional distances and evaluates the Gram-determinant route as computationally ill-conditioned for estimation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 559,
+          "line_start": 546,
+          "title": "Finite-dimensional distance decay is equivalent to RH but Gram formulas resist estimation",
+          "unit_id": "u18_distance_gram_route",
+          "unit_type": "computational-route-and-obstruction",
+          "why_material": "The source converts density into decay of distances to initial finite spans, proposes a strong asymptotic, and explains that the resulting ratio of Gram determinants is explicit yet poorly suited to calculation or estimation, recording both a possible route and its bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the definition of D(L), its RH equivalence, the conjectural squared-distance scale, the determinant representation, and the author's negative assessment.",
+          "representation_dependency": "Exact constants in the conjectured asymptotic and the finite-sum formulas alluded to are formula-dependent; the inner-product sums themselves are not displayed, so no reconstruction is attempted.",
+          "unit_id": "u18_distance_gram_route"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 540,
+            "line_start": 529,
+            "title": "Sampling on reciprocal integers unitarily transfers totality to weighted sequences",
+            "unit_id": "u17_unitary_sequence_bridge",
+            "unit_type": "representation-change",
+            "why_material": "A unitary sampling map sends the constant step function to gamma and each discrete generator to gamma_l, making the opening sequence theorem a direct reformulation and carrying over square-free thinning."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The unitary sequence criterion makes RH equivalent to vanishing distance from gamma to growing finite spans, suggesting Gram determinants as finite observables of the density problem.",
+            "limit": "The paper explicitly says the resulting determinant formulas are unsuitable for effective estimation and presents no successful bound.",
+            "parent_local_unit_ids": [
+              "u01_sequence_space_equivalence",
+              "u17_unitary_sequence_bridge",
+              "u18_distance_gram_route"
+            ],
+            "title": "From qualitative density to a finite-dimensional distance observable"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 545,
+              "line_start": 542,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2e0d1625d7ed4081edd730112051d80d4158c3cf4a05c966787df32394e6c1e2"
+}

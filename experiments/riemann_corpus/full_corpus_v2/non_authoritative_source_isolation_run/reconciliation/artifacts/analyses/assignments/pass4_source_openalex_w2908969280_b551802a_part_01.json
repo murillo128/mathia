@@ -1,0 +1,182 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2908969280_b551802a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2908969280",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Highlights why the truncation parameter grows with positive θ.",
+      "line_end": 2107,
+      "line_start": 2016,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact definitions and error powers require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An L2 estimate at one point is amplified by discretization to uniform control over logθ T, converting off-axis zeta into an exponential prime field suitable for probabilistic analysis.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A short Möbius mollifier inverts zeta uniformly over the full interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280_v2_u17.txt",
+      "unit_bytes": 4815,
+      "unit_id": "openalex_w2908969280_v2_u17",
+      "unit_sha256": "10aaa4f77f96e58f96d151a48e8fd4d2014895e02840b521b36eee1c0f1afd91",
+      "unit_type": "mollifier-as-approximate-inverse",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2008,
+          "line_end": 2015,
+          "text": "(3.29)                   \n (log T )dθe+`+1 · 2β` (log T )β(2+`) · (log T )−100(β+1)(dθe+`+1)\n\n                         \n (log T )−96(β+1)·(dθe+`+1) .\nThus, on S(T ), the contribution of the sum on the right-hand side of (3.26) is negligible.\nThe claim follows by combining Equations (3.24), (3.25) and (3.26).\n\n",
+          "sha256": "b9be4350462d9f1fd5ef1e35187dbfb77eeaf43660d6b480cf9cc7a1f3ab26c3"
+        },
+        "after": {
+          "line_start": 2108,
+          "line_end": 2115,
+          "text": "\n   3.3. Approximation of the mollifier. We now approximate the mollifier M by the\nexponential of a Dirichlet polynomial. If we let\n                                              XX 1\n(3.39)                         Pe1−K −1 (s) =           ks\n                                                           ,\n                                              k≥1 p≤X\n                                                      kp\n",
+          "sha256": "a85d62b57ec3f128926804d011c54eb1e59e619f41de4b6267452e3a86330af1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_833b81e550f260e31e7f3fbf559cdc11949dccf441e405d12b4e7d54713117c3",
+        "dossier_sha256": "b2ea948ff4b43b1a7b5e5a343812df21b4bef652c1c150c50ada8989b6ce1c28",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 Mollification and 3.3 mollifier approximation",
+            "line_end": 2169,
+            "line_start": 2016,
+            "mathematical_role": "Constructs a short inverse to zeta and replaces it uniformly by an exponential prime polynomial."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2107,
+          "line_start": 2016,
+          "title": "A short Möbius mollifier inverts zeta uniformly over the full interval",
+          "unit_id": "openalex_w2908969280_v2_u17",
+          "unit_type": "mollifier-as-approximate-inverse",
+          "why_material": "An L2 estimate at one point is amplified by discretization to uniform control over logθ T, converting off-axis zeta into an exponential prime field suitable for probabilistic analysis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Highlights why the truncation parameter grows with positive θ.",
+          "representation_dependency": "Exact definitions and error powers require PDF checking.",
+          "unit_id": "openalex_w2908969280_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2014,
+            "line_start": 1785,
+            "title": "An entire rectangle cutoff localizes strip convexity without leaking distant critical-line mass",
+            "unit_id": "openalex_w2908969280_v2_u16",
+            "unit_type": "analytic-localization-construction",
+            "why_material": "A Fourier-built entire function approximates a rectangle indicator, decays outside an enlarged interval, and permits smoothing and unsmoothing of Gabriel's inequality, yielding the off-axis-to-critical-line moment comparison."
+          },
+          {
+            "line_end": 2164,
+            "line_start": 2109,
+            "title": "Rankin truncation replaces the mollifier by the exponential of a prime-power polynomial",
+            "unit_id": "openalex_w2908969280_v2_u18",
+            "unit_type": "mollifier-representation-change",
+            "why_material": "Euler-product expansion isolates integers with too many prime factors as the only discrepancy, and a mean-square plus discretization estimate makes that discrepancy uniformly negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Successive finite representations remove the shared small-prime component and replace zeta by a short exponential prime field while preserving the target moment scale.",
+            "limit": "Each replacement is high-probability or averaged and carries explicit parameter-dependent errors.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280_v2_u07",
+              "openalex_w2908969280_v2_u12",
+              "openalex_w2908969280_v2_u17",
+              "openalex_w2908969280_v2_u18"
+            ],
+            "title": "Representation stripping isolates the fertile stochastic core"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2908969280_v2_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w2908969280_v2_u17",
+          "spontaneous_reading": "A short Möbius polynomial acts as an approximate inverse to ζ slightly off the critical line; very strong one-point L² control is upgraded by discretization to uniform control over the entire θ-dependent interval."
+        },
+        "directed": {
+          "unit_id": "openalex_w2908969280_v2_u17",
+          "source_grounded_mathematics": "The unit defines a Möbius mollifier with prime and Ω cutoffs and an off-axis σ₀, states that ζM is uniformly close to 1 with probability 1-o(1), and for θ>0 derives this from an L² estimate strong enough to pay for log^{1+θ} T samples.",
+          "conceptual_reading": "Approximate inversion removes ζ's multiplicative complexity and reveals an exponential prime field. The cutoff ν_θ is enlarged precisely to make a pointwise error survive the entropy cost of uniformization.",
+          "representation_or_bridge": "M bridges ζ to its finite Euler-product inverse; discretization bridges pointwise mean square to a uniform interval statement.",
+          "boundary_or_failure": "The inverse is approximate, probabilistic, and off-axis. Its length and Ω cutoff depend on interval size, and the argument would fail if the L² saving did not dominate the sample count.",
+          "uncertainty": "Exact definitions and error exponents are formula-sensitive; the uniform approximate-inverse role is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2908969280_v2_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines a θ-dependent Möbius mollifier and off-axis point, proves strong one-point L2 control, and pays the log^{1+θ}T sampling cost to obtain uniform approximate inversion."
+        ],
+        "inference": [
+          "Interpreting the larger Ω cutoff as the saving needed to survive uniformization is directly supported by the error calculation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that approximate inversion ‘reveals an exponential prime field’ belongs to the next unit, where M is compared with exp(-P-tilde); it is not established in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Approximate-inverse language is substantive here, but the prime-field bridge becomes a generic representation slogan unless deferred to its actual source unit."
+        ],
+        "context_or_ocr_risk": [
+          "Exact mollifier definitions and saving exponents are formula-sensitive; the source’s stated probability conclusion is clear."
+        ],
+        "missed_mechanism": [
+          "The key local mechanism is the θ-dependent L2 saving plus discretization, not yet Euler-product replacement of M."
+        ],
+        "revision_instructions": [
+          "Remove the exponential-prime-field consequence from this unit; restrict the interpretation to probabilistic off-axis approximate inversion and uniformization over the interval."
+        ]
+      }
+    }
+  ]
+}

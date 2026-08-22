@@ -1,0 +1,469 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2670735437",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2670735437_55d5644b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Smoothing removes discontinuity, but an order-one incomplete-gamma parameter makes asymptotic correction terms force K of order t; s-dependent or logarithmic smoothing can retain a square-root cutoff, while aggressive powers shorten the useful correction series.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2670735437_v2_u01",
+          "openalex_w2670735437_v2_u04",
+          "openalex_w2670735437_v2_u06",
+          "openalex_w2670735437_v2_u07"
+        ],
+        "proposed_limit": "The transition between order-one and s-scaled parameter regimes is explicitly left open, and the numerical parameter comparison is limited to selected cases.",
+        "source_id": "openalex_w2670735437",
+        "synthesis_id": "riemann_v2_within_eb64f1b2444e6ca609b6c339",
+        "title": "Cutoff smoothness, parameter scaling, and computational length form one tradeoff"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The cost comparison concerns the number of main-sum terms and does not by itself compare every implementation cost or error constant.",
+          "line_end": 100,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; formulas (1.1)-(1.4), cutoff definitions, and OCR-confused symbols require the original scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction compares O(t) Euler-Maclaurin/Gram evaluation with the square-root-length Riemann-Siegel sum, reviews smooth error-function cutoffs, and isolates the paper's finding that a simpler real smoothing forces the effective cutoff back to O(t).",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smoothing removes cutoff discontinuities but its parameter dependence decides whether the cost is Gram- or Riemann-Siegel-type",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u01.txt",
+          "unit_bytes": 4782,
+          "unit_id": "openalex_w2670735437_v2_u01",
+          "unit_sha256": "0690dd8b1c96b54d8ee17477a1b30186375851dcb3c62ed67552d31a06ae3653",
+          "unit_type": "computational method comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A smoother representation is not automatically cheaper: regularity at the cutoff trades against the asymptotic behavior of the correction series.",
+            "nonparaphrase_operation": "Incomplete gamma and complementary error functions bridge sharp finite sums to convergent smoothed sums, preserving zeta values while redistributing work between the main sum and corrections.",
+            "quality_reason": "The introduction contrasts order-t Gram/Euler-Maclaurin evaluation with the square-root-length Riemann-Siegel sum, reviews smooth cutoffs, and says the proposed simple real smoothing returns to order-t cutoff.",
+            "source_support": "The introduction contrasts Euler-Maclaurin or Gram evaluation using order t main terms with Riemann-Siegel using order sqrt(t) terms, reviews complementary-error-function and incomplete-gamma smoothings, and states that the paper's simpler real smoothing requires an order-t effective cutoff.",
+            "speculation_status": "The comparison concerns leading main-sum lengths, not every implementation cost or error constant, and the formulas in this scan are badly OCR-damaged. Equations (1.1)-(1.4), phase conventions, and cutoff definitions require direct inspection of the original pages. The cost depends on smoother parameter scaling rather than smoothness alone is a faithful synthesis of the comparison. Equations and symbols are heavily OCR-damaged; the output appropriately keeps quantitative claims provisional."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The positive-integer restriction on p is adopted for simplicity and is not mathematically necessary.",
+          "line_end": 369,
+          "line_start": 318,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; expansion (4.2), term sequence, optimal M formula, and parameter inequalities need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Setting the incomplete-gamma parameter to one makes the main sum exponentially smoothed, but asymptotic decrease of the correction terms requires K greater than t/(2pi), hence a Gram-type cutoff; the free power p accelerates decay while lowering optimal truncation and attainable accuracy.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Real exponential smoothing forces a length-t cutoff and a finite optimal correction series",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u04.txt",
+          "unit_bytes": 3440,
+          "unit_id": "openalex_w2670735437_v2_u04",
+          "unit_sha256": "c9e66edb2af4e3abca564c6ab62b3d5f6f7f247272104f40016f53fc8b326fd4",
+          "unit_type": "asymptotic tradeoff analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Two truncations are coupled: sharpening the main-sum filter changes the asymptotic correction sequence. Local simplification can therefore increase global cost.",
+            "nonparaphrase_operation": "The parameters K and p bridge smoothing shape to computational length and least-term size, making the cost-accuracy tradeoff explicit.",
+            "quality_reason": "The span sets a=1, obtains exponential smoothing, derives the necessity K>t/(2pi) for an asymptotic correction sequence, gives an approximate optimal truncation, and explains the competing effects of increasing p.",
+            "source_support": "Setting the incomplete-gamma parameter a=1 yields exp[-(n/K)^(2p)] smoothing. Large-m behavior of the correction terms requires K>t/(2pi), giving a Gram-type order-t main sum; an approximate optimal M is derived, and increasing p both accelerates main-sum decay and reduces eventual correction accuracy.",
+            "speculation_status": "The positive-integer restriction on p is for convenience, the correction expansion is asymptotic rather than convergent, and excessive p destroys its useful decreasing regime. Expansion (4.2), the term sequence, optimal-M formula, and parameter inequalities are highly OCR-sensitive. Coupled main-sum and correction truncations are a direct and useful interpretation of those parameter constraints. Expansion, least-term formula and inequalities require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusions are empirical for the displayed t, K, p, and capped truncation choices, although they match the preceding asymptotic analysis.",
+          "line_end": 495,
+          "line_start": 471,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Table 5 is essential and requires scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The final numerical comparison separates two effects: larger K extends the effective main sum and improves attainable accuracy, whereas larger p sharpens exponential decay but shortens the asymptotic correction series enough to reduce total accuracy.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Increasing cutoff scale buys accuracy, while increasing smoothing power can destroy it",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u06.txt",
+          "unit_bytes": 1361,
+          "unit_id": "openalex_w2670735437_v2_u06",
+          "unit_sha256": "c925883446a4279f72e5108cbb914844a26218df098a837bf32e2a7cdd2c7a2e",
+          "unit_type": "parameter tradeoff experiment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Sharper suppression is not monotone in total quality because main-sum decay and correction-series depth are competing resources.",
+            "nonparaphrase_operation": "The parameter grid is a small empirical bridge between the asymptotic formulas and practical evaluation, isolating the effects of scale K from shape p.",
+            "quality_reason": "Table 5 and its discussion explicitly separate the accuracy gain and longer cutoff from increasing K from the loss of attainable accuracy caused by increasing p.",
+            "source_support": "For t=100 and a capped number of correction terms, Table 5 compares errors across p and two values of K. The discussion reports improved accuracy for larger K at the cost of a longer effective main sum, but decreasing accuracy for sufficiently larger p despite faster exponential decay.",
+            "speculation_status": "These conclusions are empirical for one t and the displayed capped truncations, though they agree with the preceding asymptotic analysis. Table 5's exponents and parameter values require direct scan verification. Calling scale and shape competing resources is a fair summary of the displayed parameter experiment. The conclusion is empirical for t=100 and M=min(M0,30), which the output preserves."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The possibility of enormous optimal-truncation accuracy is conditional on an unproved asymptotic character of the expansion.",
+          "line_end": 543,
+          "line_start": 497,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The complementary-error-function expansion and remainder bound are badly OCR-damaged; the comparison prose is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The conclusion compares exponential and complementary-error-function choices, explains why the Berry-Keating logarithmic cutoff remains square-root length, identifies a transition from order-one to s-dependent parameters as open, and attributes remainder-bound failure to crude loss of oscillation.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Changing the smoothing shape preserves the Gram cost unless the parameter scales with s",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u07.txt",
+          "unit_bytes": 2901,
+          "unit_id": "openalex_w2670735437_v2_u07",
+          "unit_sha256": "5dd17fb19191ad3b82a686c1a2e06aaf7af20cebaa3e3aafa416ec7188e1c96e",
+          "unit_type": "alternative smoothing and open obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The computational class is governed by parameter geometry, not the name of the smoothing function. A crude absolute-value bound forgets cancellation and can conceal the representation's true accuracy.",
+            "nonparaphrase_operation": "The family parameter a provides a bridge between Gram- and Riemann-Siegel-type regimes, while the oscillatory remainder integral identifies where sharper analysis might recover lost information.",
+            "quality_reason": "The conclusion compares a=1 and a=1/2 smoothing, contrasts them with logarithmic and s-dependent choices, poses the transition as open, and attributes the weak bound to crude estimates that ignore oscillation.",
+            "source_support": "The conclusion compares a=1 exponential smoothing with a=1/2 complementary-error-function smoothing and finds both Gram-type when a is order one. Berry-Keating's logarithmic cutoff remains Riemann-Siegel-type, while a proportional-to-s choice supplies another such case; the remainder-bound deterioration is attributed to discarding oscillation.",
+            "speculation_status": "The transition domain is posed as an open problem, and the enormous optimal-truncation accuracy is conditional on an unproved asymptotic character. The displayed error-function expansion and remainder formula are heavily OCR-corrupted; only the comparison prose is secure from this artifact. Parameter geometry rather than the smoother's name is a well-grounded interpretation. The displayed alternative expansion is severely corrupted; the output relies mainly on secure comparison prose and flags conditional accuracy."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_31559dea7262f5a83f7b266167123b76a02427daa1cd81e1b52aef3443004300",
+        "dossier_sha256": "0be994e8b7ba6967983b830c686e96a38ffed5200f0ff256b53ec2d993e10042"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Mellin-contour construction produces the expansion, gamma-ratio monotonicity yields a computable error certificate, and comparison with actual errors reveals that the certificate is realistic only for modest truncation and fails near the formal optimum.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2670735437_v2_u02",
+          "openalex_w2670735437_v2_u03",
+          "openalex_w2670735437_v2_u05"
+        ],
+        "proposed_limit": "Because exact displays are OCR-damaged, the synthesis supports only the source's prose-level mechanism until formulas are verified from the scan.",
+        "source_id": "openalex_w2670735437",
+        "synthesis_id": "riemann_v2_within_ad2a6c93b4a0ac9b4cebaf3e",
+        "title": "A rigorous computational expansion needs derivation, a remainder bound, and a sharpness audit"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Computational usefulness also requires the shifted zeta values in the coefficients to lie in a convergent-series region.",
+          "line_end": 206,
+          "line_start": 103,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential original-page dependency: equations (2.1)-(2.8) are substantially OCR-damaged, though the prose derivation and restrictions are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Absolute convergence licenses exchanging the sum and contour integral; moving the path collects the zeta and pole terms, then the functional equation and gamma-pole residues produce finite corrections plus a remainder, with a free smoothing parameter containing a known formula as a special case.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An incomplete-gamma Mellin transform generates a family of smoothed zeta expansions",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u02.txt",
+          "unit_bytes": 5614,
+          "unit_id": "openalex_w2670735437_v2_u02",
+          "unit_sha256": "8d7b89942995f1b3156231c182e5246d9b4f19aa75fac661e408f91646c63b02",
+          "unit_type": "Mellin-contour construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The free smoothing parameters arise from an exact integral representation rather than ad hoc damping, so changing them systematically redistributes information among main sum, residues, and remainder.",
+            "nonparaphrase_operation": "The incomplete-gamma Mellin transform bridges smoothing in n-space to contour geometry in a complex parameter; residues convert that geometry into explicit correction terms.",
+            "quality_reason": "Despite damaged formulas, the prose explicitly licenses sum-integral interchange by absolute convergence, identifies the poles crossed, invokes the functional equation, and describes the finite correction series, remainder and specialization.",
+            "source_support": "Absolute convergence permits interchanging an incomplete-gamma sum with a Mellin integral. Moving the contour picks up the zeta term and pole contribution; moving farther across gamma poles and using the zeta functional equation gives a finite correction series plus a remainder, with the earlier formula as a specialization.",
+            "speculation_status": "Computational usefulness additionally requires the shifted zeta values in the coefficients to lie where their Dirichlet series converges, and excluded pole coincidences need separate treatment. Equations (2.1)-(2.8) are substantially OCR-corrupted; exact parameters, pole locations, and coefficients must be read from the scan. Redistributing an exact representation among main sum, residues and remainder is a reasonable conceptual reading. Exact parameters, pole locations and coefficients cannot be trusted from the text layer without the scan; the output flags this clearly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The monotonicity inputs are deferred to Appendix B, and the table shows the coefficient ceasing to be order one rather than proving sharpness of the final remainder bound.",
+          "line_end": 314,
+          "line_start": 209,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential scan verification for equations (3.1)-(3.8), gamma ratios, and Table 1.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "After reflecting zeta and recentering the contour, the proof bounds the integral with an even increasing gamma ratio, rescales it by a decreasing function, evaluates the tail as an incomplete gamma function, and obtains a numerical remainder bound whose coefficient growth diagnoses the useful truncation range.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gamma-ratio monotonicity converts the contour remainder into a computable incomplete-gamma bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u03.txt",
+          "unit_bytes": 5255,
+          "unit_id": "openalex_w2670735437_v2_u03",
+          "unit_sha256": "7ec3e9e16a061f29ab55289af72d02ec65913d2a9730c4861bcaed743b0b12c8",
+          "unit_type": "remainder-bound mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof isolates all difficult parameter dependence into a monotone auxiliary factor, then replaces a contour integral by a standard positive tail quantity.",
+            "nonparaphrase_operation": "Gamma-ratio scaling bridges complex-analytic remainder control to a real monotonicity problem, and the incomplete gamma function makes the resulting bound numerically evaluable.",
+            "quality_reason": "The source uses an increasing gamma ratio F, a scaled ratio G with proved monotonicity range, evaluates the remaining tail by an incomplete gamma function, and tabulates where the coefficient ceases to be order one.",
+            "source_support": "After applying the zeta functional equation and recentering the contour, the source bounds the remainder integral using an even increasing gamma ratio F. Scaling F gives a decreasing G in the proved range, enabling an incomplete-gamma estimate and the coefficient C_p(M;t); Table 1 shows when G_p ceases to be order one.",
+            "speculation_status": "The monotonicity inputs are deferred to Appendix B, and the table diagnoses coefficient growth but does not prove sharpness of the remainder bound. Equations (3.1)-(3.8), parameter names, gamma ratios, and table headings require scan verification. Isolating difficult parameter dependence in a monotone auxiliary factor accurately captures the proof mechanism. Equations, variable names and table headings are OCR-sensitive; the analytic versus numerical monotonicity distinction is preserved."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The tables test selected t and parameters and do not prove global error behavior.",
+          "line_end": 470,
+          "line_start": 370,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential: formulas (4.5)-(4.6) and Tables 2-4 must be read from the original pages because the OCR is poor.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A concrete critical-line specialization supplies a computable Z(t) expansion and analytic remainder bound; tables compare optimal and deliberately suboptimal truncations, showing high accuracy for modest M but rapid deterioration of the bound well before the formal least term.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Actual critical-line errors validate suboptimal truncation but expose a nonuniform remainder bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u05.txt",
+          "unit_bytes": 5672,
+          "unit_id": "openalex_w2670735437_v2_u05",
+          "unit_sha256": "29123cdea34ad95e574822c2429f01be3ea31bb99d21f81319c8f19b7df963f1",
+          "unit_type": "numerical validation and bound audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit separates algorithm performance from certificate quality: a representation may compute accurately even when the available proof technique cannot certify its best regime.",
+            "nonparaphrase_operation": "The Hardy Z-function supplies a real test value, and side-by-side actual and bounded errors bridge asymptotic analysis to numerical audit.",
+            "quality_reason": "The source specializes to the critical line, states a remainder bound, and compares actual and bounded errors across truncations, explicitly saying the bound is realistic for modest M and useless near optimal truncation.",
+            "source_support": "The source specializes the expansion on the critical line, gives an analytic bound for R_M, and tabulates optimal truncation scales, computed Z(t), actual errors, and bounds. For the displayed t, modest M gives high accuracy, but the bound becomes useless near formal optimal truncation.",
+            "speculation_status": "The tables sample selected parameters and do not establish uniform behavior; the analytic bound's crudeness prevents it from proving the expansion's full asymptotic character. Formulas (4.5)-(4.6) and Tables 2-4 are OCR-damaged and need verification from the scanned pages. Separating numerical performance from certificate quality is a source-grounded conceptual distinction. Tables and formulas are OCR-damaged and need scan checking; the output does not overclaim uniformity."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_31559dea7262f5a83f7b266167123b76a02427daa1cd81e1b52aef3443004300",
+        "dossier_sha256": "0be994e8b7ba6967983b830c686e96a38ffed5200f0ff256b53ec2d993e10042"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Appendix A proves the generalized expansion really contains the earlier critical-line formula, while Appendix B supplies the monotonicity properties invoked to bound the remainder, connecting representation consistency and error control back to the main construction.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2670735437_v2_u02",
+          "openalex_w2670735437_v2_u03",
+          "openalex_w2670735437_v2_u08",
+          "openalex_w2670735437_v2_u09"
+        ],
+        "proposed_limit": "The appendix formulas require original-page reconstruction, and the numerically wider monotonicity range is not proved.",
+        "source_id": "openalex_w2670735437",
+        "synthesis_id": "riemann_v2_within_0b0a82ac09d7ae89bc532370",
+        "title": "The appendices close two hidden dependencies of the main argument"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Computational usefulness also requires the shifted zeta values in the coefficients to lie in a convergent-series region.",
+          "line_end": 206,
+          "line_start": 103,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential original-page dependency: equations (2.1)-(2.8) are substantially OCR-damaged, though the prose derivation and restrictions are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Absolute convergence licenses exchanging the sum and contour integral; moving the path collects the zeta and pole terms, then the functional equation and gamma-pole residues produce finite corrections plus a remainder, with a free smoothing parameter containing a known formula as a special case.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An incomplete-gamma Mellin transform generates a family of smoothed zeta expansions",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u02.txt",
+          "unit_bytes": 5614,
+          "unit_id": "openalex_w2670735437_v2_u02",
+          "unit_sha256": "8d7b89942995f1b3156231c182e5246d9b4f19aa75fac661e408f91646c63b02",
+          "unit_type": "Mellin-contour construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The free smoothing parameters arise from an exact integral representation rather than ad hoc damping, so changing them systematically redistributes information among main sum, residues, and remainder.",
+            "nonparaphrase_operation": "The incomplete-gamma Mellin transform bridges smoothing in n-space to contour geometry in a complex parameter; residues convert that geometry into explicit correction terms.",
+            "quality_reason": "Despite damaged formulas, the prose explicitly licenses sum-integral interchange by absolute convergence, identifies the poles crossed, invokes the functional equation, and describes the finite correction series, remainder and specialization.",
+            "source_support": "Absolute convergence permits interchanging an incomplete-gamma sum with a Mellin integral. Moving the contour picks up the zeta term and pole contribution; moving farther across gamma poles and using the zeta functional equation gives a finite correction series plus a remainder, with the earlier formula as a specialization.",
+            "speculation_status": "Computational usefulness additionally requires the shifted zeta values in the coefficients to lie where their Dirichlet series converges, and excluded pole coincidences need separate treatment. Equations (2.1)-(2.8) are substantially OCR-corrupted; exact parameters, pole locations, and coefficients must be read from the scan. Redistributing an exact representation among main sum, residues and remainder is a reasonable conceptual reading. Exact parameters, pole locations and coefficients cannot be trusted from the text layer without the scan; the output flags this clearly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The monotonicity inputs are deferred to Appendix B, and the table shows the coefficient ceasing to be order one rather than proving sharpness of the final remainder bound.",
+          "line_end": 314,
+          "line_start": 209,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential scan verification for equations (3.1)-(3.8), gamma ratios, and Table 1.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "After reflecting zeta and recentering the contour, the proof bounds the integral with an even increasing gamma ratio, rescales it by a decreasing function, evaluates the tail as an incomplete gamma function, and obtains a numerical remainder bound whose coefficient growth diagnoses the useful truncation range.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gamma-ratio monotonicity converts the contour remainder into a computable incomplete-gamma bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u03.txt",
+          "unit_bytes": 5255,
+          "unit_id": "openalex_w2670735437_v2_u03",
+          "unit_sha256": "7ec3e9e16a061f29ab55289af72d02ec65913d2a9730c4861bcaed743b0b12c8",
+          "unit_type": "remainder-bound mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof isolates all difficult parameter dependence into a monotone auxiliary factor, then replaces a contour integral by a standard positive tail quantity.",
+            "nonparaphrase_operation": "Gamma-ratio scaling bridges complex-analytic remainder control to a real monotonicity problem, and the incomplete gamma function makes the resulting bound numerically evaluable.",
+            "quality_reason": "The source uses an increasing gamma ratio F, a scaled ratio G with proved monotonicity range, evaluates the remaining tail by an incomplete gamma function, and tabulates where the coefficient ceases to be order one.",
+            "source_support": "After applying the zeta functional equation and recentering the contour, the source bounds the remainder integral using an even increasing gamma ratio F. Scaling F gives a decreasing G in the proved range, enabling an incomplete-gamma estimate and the coefficient C_p(M;t); Table 1 shows when G_p ceases to be order one.",
+            "speculation_status": "The monotonicity inputs are deferred to Appendix B, and the table diagnoses coefficient growth but does not prove sharpness of the remainder bound. Equations (3.1)-(3.8), parameter names, gamma ratios, and table headings require scan verification. Isolating difficult parameter dependence in a monotone auxiliary factor accurately captures the proof mechanism. Equations, variable names and table headings are OCR-sensitive; the analytic versus numerical monotonicity distinction is preserved."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This appendix checks consistency of representations rather than introducing a new computational advantage.",
+          "line_end": 589,
+          "line_start": 548,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Essential scan dependency: equations (A.1)-(A.4) are severely corrupted in the text layer.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specializing the free parameters cancels gamma poles against trivial zeta zeros, reflection transforms the residual contour into the companion smoothed sum, and analytic continuation extends the identity before the critical-line parameter choice recovers formula (1.4).",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pole cancellation and analytic continuation recover the earlier two-sided incomplete-gamma formula",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u08.txt",
+          "unit_bytes": 2380,
+          "unit_id": "openalex_w2670735437_v2_u08",
+          "unit_sha256": "614cbd5162b7552b321f308893aad47d7dd645f12a621383a34496e2d3bf6a7a",
+          "unit_type": "specialization consistency check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The appendix supplies a structural compatibility test for the generalized expansion: after its free parameters are specialized, cancellation between gamma poles and trivial zeta zeros reduces the contour correction; the zeta functional equation and reflection of the integration variable turn what remains into the companion smoothed sum, and absolute convergence supports continuation to the domain in which the earlier two-sided incomplete-gamma expansion is recovered. The conceptual gain is that containment is certified by singularity and symmetry structure rather than termwise coincidence; the loss is that this check establishes no new computational or accuracy advantage, and the proof burden remains in the contour and pole accounting, the convergence sector, analytic continuation, and the final critical-line and conjugacy specialization. The normalized formulas are too damaged to certify exact parameter values, a surviving residue, or individual factors.",
+            "nonparaphrase_operation": "Reframes the specialization as a compatibility map between representations: singularity cancellation followed by functional-equation reflection sends the generalized contour expression to the earlier symmetric smoothed expansion, isolating the analytic invariants that make the descriptions agree and separating representational consistency from computational improvement.",
+            "quality_reason": "Accepted because the continuous prose supports the qualitative cancellation, reflection, convergence, continuation, and recovery chain despite formula-layer corruption. Acceptance is bounded to that mechanism: it neither certifies the damaged formulas nor claims an efficiency or accuracy gain.",
+            "source_support": "The continuous prose says that (2.2) contains (1.4) as a special case, attributes cancellation of gamma-function poles to trivial zeta zeros, invokes the zeta functional relation and a change from z to -z, identifies the transformed integral with the form in (2.1), states absolute convergence of both sums in a sector, and then uses analytic continuation and a critical-line specialization to obtain (1.4). Equations (A.1)-(A.4) and several surrounding symbols are OCR-corrupted, so this text layer does not reliably support exact constants or parameter placement.",
+            "speculation_status": "No cross-source claim is made. The structural compatibility reading is an inference from the stated mechanism. Exact specialization parameters, the number or value of surviving residues, individual factors in (A.1)-(A.4), and the exact critical-line parameter choice remain uncertain unless checked against the original scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The wider threshold near 0.63605 is numerical evidence, while the written proof establishes the stronger sufficient condition a greater than one for G.",
+          "line_end": 686,
+          "line_start": 591,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; equations (B.1)-(B.6), parameter symbols, and the kernel inequality require original-page verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A gamma-product logarithmic derivative proves F is even and increasing above a parameter threshold; scaling removes its power growth, and an integral-kernel sign argument proves G decreases in the stated analytic range, with numerical computation suggesting a wider range.",
+          "source_id": "openalex_w2670735437",
+          "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Product and integral representations establish the gamma-ratio monotonicities used by the remainder estimate",
+          "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u09.txt",
+          "unit_bytes": 4431,
+          "unit_id": "openalex_w2670735437_v2_u09",
+          "unit_sha256": "b113d41f66d0d7cc26da63045e48c19d3386d166c58adb0d5c121e583a48736f",
+          "unit_type": "auxiliary monotonicity proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Normalization converts unbounded growth into a quantity approaching one, exposing monotonic order that can safely control the contour bound.",
+            "nonparaphrase_operation": "Gamma products bridge complex ratios to positive series, and the integral kernel bridges derivative sign to monotonicity of a real auxiliary function.",
+            "quality_reason": "The appendix derives monotonicity of F from a gamma product, scales to G, proves G decreasing for a>1 by an integral-kernel argument, and reports the lower numerical threshold separately.",
+            "source_support": "Logarithmic differentiation of a gamma-product representation shows F is even and increasing for the stated parameter range. Removing its power growth defines G; integral representations and two integrations by parts show G decreases for a>1, while computation suggests the wider threshold a approximately 0.63605.",
+            "speculation_status": "The written proof gives the stronger sufficient condition a>1 for G; the lower numerical threshold is evidence, not an analytic theorem. Equations (B.1)-(B.6), symbols, and the kernel inequality are highly OCR-sensitive and need original-page verification. Normalization exposing order after removing power growth is a faithful conceptual move. Several displayed equations are OCR-sensitive, but the analytic sufficient range and numerical evidence are clear in prose and correctly distinguished."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_31559dea7262f5a83f7b266167123b76a02427daa1cd81e1b52aef3443004300",
+        "dossier_sha256": "0be994e8b7ba6967983b830c686e96a38ffed5200f0ff256b53ec2d993e10042"
+      }
+    }
+  ]
+}

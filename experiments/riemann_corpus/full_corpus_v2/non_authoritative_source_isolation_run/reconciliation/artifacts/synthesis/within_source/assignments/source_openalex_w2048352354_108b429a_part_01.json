@@ -1,0 +1,393 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2048352354",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2048352354_108b429a_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Evaluating a characteristic polynomial or zeta a distance of order one local spacing from a zero produces a single crossover law: its zero-offset scaling yields derivative moments, while large scaled displacement forgets the conditioning and yields ordinary moments.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2048352354_v2_u02",
+          "openalex_w2048352354_v2_u03",
+          "openalex_w2048352354_v2_u06"
+        ],
+        "proposed_limit": "The crossover is proved for Haar-unitary matrices but only conjectured for zeta.",
+        "source_id": "openalex_w2048352354",
+        "synthesis_id": "riemann_v2_within_08d8ca2772906454674622ad",
+        "title": "Microscopic displacement is the bridge between a function and its derivative at zeros"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the prior derivative conjecture, the announced crossover factor, and the intended zeta analogue at displacement alpha divided by local density.",
+          "line_end": 166,
+          "line_start": 104,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers, simplicity assumption, and offset normalization require verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places discrete derivative moments beside continuous moments and proposes one offset characteristic-polynomial statistic whose large-offset and zero-offset limits recover both.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interpolate between field moments and derivative moments by moving microscopically off a zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u02.txt",
+          "unit_bytes": 3476,
+          "unit_id": "openalex_w2048352354_v2_u02",
+          "unit_sha256": "310a404f0a19ab4893bf152df2f639771b16069cdbb67cee5ba21e283bbb8111",
+          "unit_type": "problem synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Microscopic displacement is the control parameter that reveals how vanishing at an eigenvalue crosses over to generic field behavior.",
+            "nonparaphrase_operation": "The offset characteristic-polynomial moment and its zeta analogue bridge derivative moments, discrete shifted moments, and continuous moments.",
+            "quality_reason": "The span places derivative moments beside field moments and announces a shifted characteristic-polynomial/zeta statistic whose alpha-to-zero and large-displacement limits are intended to recover both regimes. The analysis does not treat the endpoint limits as proved and correctly flags simplicity, normalization, and uniformity requirements. Low: the synthesis identifies two named moment conjectures and the exact offset operation intended to unify them.",
+            "source_support": "The source places discrete ζ′ moments beside continuous ζ moments and proposes averaging a characteristic polynomial or ζ at a displacement α divided by local density, with α→0 and large displacement intended to recover the derivative and field regimes.",
+            "speculation_status": "The derivative conjecture assumes simple zeros, and recovering the endpoint requires precise normalization and uniformity, not only pointwise asymptotics. The synthesis is prose-clear; exact powers, shifts, simplicity condition, and scaling by density need source verification. Reading microscopic displacement as a control parameter for the crossover from pinned vanishing to generic field behavior is specific to the proposed statistic. Powers, simplicity assumptions, density scaling, and offsets require source verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Theorem 3, the Haar-integral reduction, Taylor-series identification of Fk, and the extension from microscopic to bounded macroscopic angles.",
+          "line_end": 264,
+          "line_start": 169,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense; Bessel indices, uniformity range, and error term need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Conditions on an eigenangle, reduces the average to a mixed characteristic-polynomial moment, and obtains a uniform large-N formula whose Bessel combination tends from a zero-sensitive power law to one at macroscopic offset.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A spherical-Bessel factor controls the microscopic eigenangle crossover",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u03.txt",
+          "unit_bytes": 5094,
+          "unit_id": "openalex_w2048352354_v2_u03",
+          "unit_sha256": "ab92891b8024225bb228ab88de2d8bc8f7ee3f636eb666d6c5e0eb486f9bf856",
+          "unit_type": "random-matrix theorem and crossover representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The crossover function quantifies how rapidly local conditioning loses influence as the observation point moves away from the spectral zero.",
+            "nonparaphrase_operation": "Haar invariance, the mixed characteristic-polynomial moment, and spherical Bessel functions bridge a conditioned finite-N integral to a universal scaling law.",
+            "quality_reason": "The span conditions on an eigenangle through Haar invariance, reduces to a mixed moment in one lower dimension, identifies the scaling series with a spherical-Bessel factor, and extends the leading term to bounded macroscopic angles. The analysis keeps the zeta transfer separate and conjectural and does not overstate the theorem's range or error control. Low: conditioning, lower-dimensional reduction, mixed moment, and Bessel identification are concrete operations.",
+            "source_support": "The source reduces a characteristic-polynomial average near an eigenangle to a mixed moment in one lower dimension, invokes its asymptotics, identifies the series with a Bessel combination F_k, and extends the leading behavior from microscopic to bounded macroscopic angles.",
+            "speculation_status": "The theorem's range, error control, and analytic continuation in k matter; the zeta transfer remains conjectural and separate. The mechanism is clear, but Bessel indices, factors of two, uniformity range, and error term require PDF verification. Interpreting F_k as quantifying loss of influence from the pinned eigenvalue as the offset grows is a reasonable conceptual reading of its small- and large-offset roles. Bessel indices, factors of two, k domain, uniformity range, and error term require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Uniformity is what permits exchanging the derivative and asymptotic limits; the far-offset result is explicitly a discrete analogue of the continuous mean.",
+          "line_end": 615,
+          "line_start": 530,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "All normalizations, limits, and k domains require exact checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the source's central conjecture with the same universal Fk and arithmetic factor, then obtains derivative moments as the alpha-to-zero limit and continuous-moment behavior as the fixed-distance limit.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Transfer the Bessel crossover to discrete zeta moments",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u06.txt",
+          "unit_bytes": 4843,
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "unit_sha256": "200bac640a418c5e53a1617c960a4ca5c9b422f1a5df57cfc535a1344ec04cb8",
+          "unit_type": "zeta crossover conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conjecture 5 uses the local-density coordinate α/L to transfer the matrix crossover F_k(2πα) into a discrete shifted-zeta moment while retaining separate arithmetic and Barnes-G factors. This one proposed law links two distinct limits: α→0, provided the stated uniformity really licenses interchange with T→∞, yields derivative moments at zeros; taking α=Lβ as the zero density grows is meant to erase local zero conditioning and recover ordinary-moment scaling in a discrete mean. The latter passage is not justified over the full stated range β>0 by the displayed uniformity alone: |α|≤L covers α=Lβ directly only for 0<β≤1, so β>1 requires a wider uniformity statement or another argument.",
+            "nonparaphrase_operation": "Reading α as a density-scaled coordinate organizes the formula by what the representation preserves and forgets: microscopic displacement preserves conditioning by a nearby zero and exposes derivative behavior, whereas fixed physical displacement corresponds to a growing scaled coordinate intended to forget that conditioning. Auditing those regimes against the conjecture's quantified domain reveals that the same crossover mechanism supports the derivative passage under its stated uniformity but leaves a proof-domain gap in the far-offset passage for β>1.",
+            "quality_reason": "Accepted after the bounded critic repair: the exact span supports the crossover mechanism, density rescaling, derivative-limit dependency, and discrete-versus-continuous distinction, while the revision now exposes rather than inherits the α=Lβ domain tension. Formula-sensitive constants and normalizations are reported only at the level visible in the source and are not repaired from memory.",
+            "source_support": "The span states Conjecture 5 for fixed Re(k)>−1/2, uniformly for |α|≤L, with displacement α/L and factors a(k), Barnes G, and F_k(2πα). Corollary 5.1 explicitly uses the small-α behavior of F_k and uniformity to swap the α→0 and asymptotic limits. Corollary 5.2 uses lim_{α→∞} F_k(2πα)=1 and sets α=Lβ for arbitrary fixed β>0; its remark describes the result as a discrete analogue of a continuous mean, not the continuous mean itself.",
+            "speculation_status": "The shifted-moment law is explicitly conjectural, so both corollaries remain conditional. The derivative limit additionally depends on the claimed limit interchange. The fixed-offset discrete-mean interpretation is heuristic, and the claimed all-β range is not supplied by the displayed |α|≤L uniformity when β>1."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3f9ae1dd7a716873adba0b22e878cd01bef5b88f11aa7aae0ee7e116899b1606",
+        "dossier_sha256": "44f710c72d5361141a000713617731e81ea11942741e18d46fd4ffc2c622448c"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Barnes-G and Bessel factors come from the random-matrix local model, while zeta retains a multiplicative arithmetic factor; agreement in theorem-accessible cases calibrates this product structure.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2048352354_v2_u01",
+          "openalex_w2048352354_v2_u03",
+          "openalex_w2048352354_v2_u06",
+          "openalex_w2048352354_v2_u07"
+        ],
+        "proposed_limit": "Calibration at k=1 and truncated k=2 does not prove the full conjecture or its uniformity.",
+        "source_id": "openalex_w2048352354",
+        "synthesis_id": "riemann_v2_within_bec4e782c7117de1c32dd0c6",
+        "title": "Universal matrix structure and arithmetic correction remain separate"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the RH assumption used to enumerate real ordinates and the known/conjectured low moments that motivate the model.",
+          "line_end": 102,
+          "line_start": 22,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Euler factors, Barnes-G ratios, and admissible k range are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Builds the Keating-Snaith bridge by setting unitary dimension equal to logarithmic zero density, separates the universal Barnes-G factor from the arithmetic Euler product, and states the continuous-moment conjecture.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Match matrix size to local zero density and continuous zeta moments",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u01.txt",
+          "unit_bytes": 5695,
+          "unit_id": "openalex_w2048352354_v2_u01",
+          "unit_sha256": "dc52841deb9145c7465dfebf5fd3fe7176381e9e9acfcbe76f9ae820a0220bc7",
+          "unit_type": "universality dictionary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The model deliberately separates structure expected from local spectral universality from prime-dependent corrections that random matrices do not encode.",
+            "nonparaphrase_operation": "The map N↔log(T/2π) and the characteristic polynomial Z_U bridge unitary spectra to ζ near height T.",
+            "quality_reason": "The span assumes RH to list real ordinates, reviews continuous zeta moments, defines Haar-unitary characteristic-polynomial moments, matches N to log(T/2pi), and states the Keating-Snaith conjecture with universal and arithmetic factors. The analysis does not claim random matrices derive the arithmetic Euler product or turn the zeta moment conjecture into a theorem. Low: the universality dictionary is expressed through explicit size, moment, and factor correspondences.",
+            "source_support": "Assuming RH to enumerate real ordinates, the source reviews continuous zeta moments, defines characteristic-polynomial moments for Haar unitary matrices, sets N≈log(T/2π), and states the Keating-Snaith moment conjecture with universal and arithmetic factors.",
+            "speculation_status": "The result is a conjectural model for zeta moments, uses RH for the stated zero enumeration, and does not derive the arithmetic Euler product from random matrices. The dictionary is clear; Euler factors, Barnes-G ratios, normalization, and admissible k range are formula-sensitive. Separating the Barnes-G matrix factor from the Euler-product arithmetic factor is a well-grounded conceptual reading of the stated conjectural dictionary. Euler factors, Barnes-G ratios, k domains, and logarithmic normalization are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Theorem 3, the Haar-integral reduction, Taylor-series identification of Fk, and the extension from microscopic to bounded macroscopic angles.",
+          "line_end": 264,
+          "line_start": 169,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense; Bessel indices, uniformity range, and error term need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Conditions on an eigenangle, reduces the average to a mixed characteristic-polynomial moment, and obtains a uniform large-N formula whose Bessel combination tends from a zero-sensitive power law to one at macroscopic offset.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A spherical-Bessel factor controls the microscopic eigenangle crossover",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u03.txt",
+          "unit_bytes": 5094,
+          "unit_id": "openalex_w2048352354_v2_u03",
+          "unit_sha256": "ab92891b8024225bb228ab88de2d8bc8f7ee3f636eb666d6c5e0eb486f9bf856",
+          "unit_type": "random-matrix theorem and crossover representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The crossover function quantifies how rapidly local conditioning loses influence as the observation point moves away from the spectral zero.",
+            "nonparaphrase_operation": "Haar invariance, the mixed characteristic-polynomial moment, and spherical Bessel functions bridge a conditioned finite-N integral to a universal scaling law.",
+            "quality_reason": "The span conditions on an eigenangle through Haar invariance, reduces to a mixed moment in one lower dimension, identifies the scaling series with a spherical-Bessel factor, and extends the leading term to bounded macroscopic angles. The analysis keeps the zeta transfer separate and conjectural and does not overstate the theorem's range or error control. Low: conditioning, lower-dimensional reduction, mixed moment, and Bessel identification are concrete operations.",
+            "source_support": "The source reduces a characteristic-polynomial average near an eigenangle to a mixed moment in one lower dimension, invokes its asymptotics, identifies the series with a Bessel combination F_k, and extends the leading behavior from microscopic to bounded macroscopic angles.",
+            "speculation_status": "The theorem's range, error control, and analytic continuation in k matter; the zeta transfer remains conjectural and separate. The mechanism is clear, but Bessel indices, factors of two, uniformity range, and error term require PDF verification. Interpreting F_k as quantifying loss of influence from the pinned eigenvalue as the offset grows is a reasonable conceptual reading of its small- and large-offset roles. Bessel indices, factors of two, k domain, uniformity range, and error term require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Uniformity is what permits exchanging the derivative and asymptotic limits; the far-offset result is explicitly a discrete analogue of the continuous mean.",
+          "line_end": 615,
+          "line_start": 530,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "All normalizations, limits, and k domains require exact checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the source's central conjecture with the same universal Fk and arithmetic factor, then obtains derivative moments as the alpha-to-zero limit and continuous-moment behavior as the fixed-distance limit.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Transfer the Bessel crossover to discrete zeta moments",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u06.txt",
+          "unit_bytes": 4843,
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "unit_sha256": "200bac640a418c5e53a1617c960a4ca5c9b422f1a5df57cfc535a1344ec04cb8",
+          "unit_type": "zeta crossover conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conjecture 5 uses the local-density coordinate α/L to transfer the matrix crossover F_k(2πα) into a discrete shifted-zeta moment while retaining separate arithmetic and Barnes-G factors. This one proposed law links two distinct limits: α→0, provided the stated uniformity really licenses interchange with T→∞, yields derivative moments at zeros; taking α=Lβ as the zero density grows is meant to erase local zero conditioning and recover ordinary-moment scaling in a discrete mean. The latter passage is not justified over the full stated range β>0 by the displayed uniformity alone: |α|≤L covers α=Lβ directly only for 0<β≤1, so β>1 requires a wider uniformity statement or another argument.",
+            "nonparaphrase_operation": "Reading α as a density-scaled coordinate organizes the formula by what the representation preserves and forgets: microscopic displacement preserves conditioning by a nearby zero and exposes derivative behavior, whereas fixed physical displacement corresponds to a growing scaled coordinate intended to forget that conditioning. Auditing those regimes against the conjecture's quantified domain reveals that the same crossover mechanism supports the derivative passage under its stated uniformity but leaves a proof-domain gap in the far-offset passage for β>1.",
+            "quality_reason": "Accepted after the bounded critic repair: the exact span supports the crossover mechanism, density rescaling, derivative-limit dependency, and discrete-versus-continuous distinction, while the revision now exposes rather than inherits the α=Lβ domain tension. Formula-sensitive constants and normalizations are reported only at the level visible in the source and are not repaired from memory.",
+            "source_support": "The span states Conjecture 5 for fixed Re(k)>−1/2, uniformly for |α|≤L, with displacement α/L and factors a(k), Barnes G, and F_k(2πα). Corollary 5.1 explicitly uses the small-α behavior of F_k and uniformity to swap the α→0 and asymptotic limits. Corollary 5.2 uses lim_{α→∞} F_k(2πα)=1 and sets α=Lβ for arbitrary fixed β>0; its remark describes the result as a discrete analogue of a continuous mean, not the continuous mean itself.",
+            "speculation_status": "The shifted-moment law is explicitly conjectural, so both corollaries remain conditional. The derivative limit additionally depends on the claimed limit interchange. The fixed-offset discrete-mean interpretation is heuristic, and the claimed all-β range is not supplied by the displayed |α|≤L uniformity when β>1."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derived fourth derivative-moment corollary is conditional on that conjectural endpoint extension.",
+          "line_end": 698,
+          "line_start": 617,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem's eta range, series evaluation, and constants are formula-sensitive and must be source-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows exact agreement with Gonek's k=1 theorem, compares k=2 with a GRH theorem for a truncated Dirichlet polynomial, and explicitly notes that setting its length parameter to one is outside the theorem before naming the resulting statement a conjecture.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Check the crossover where theorems exist and label the forbidden endpoint extrapolation",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u07.txt",
+          "unit_bytes": 3984,
+          "unit_id": "openalex_w2048352354_v2_u07",
+          "unit_sha256": "35bce9476460e8735db44e1f2d38a87c67f6aa9a31dc96ff4c3240b0166b36e4",
+          "unit_type": "number-theoretic calibration and extrapolation boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Known cases validate normalization and shape, but extrapolating a parameter beyond a theorem's domain creates a new hypothesis rather than extending the proof.",
+            "nonparaphrase_operation": "The truncated Dirichlet polynomial provides a partial number-theoretic bridge from rigorous moment estimates to the random-matrix crossover prediction.",
+            "quality_reason": "The span records exact k=1 agreement under RH, states a GRH theorem for a truncated polynomial with eta in (0,1/2), formally inserts eta=1 outside that theorem, and labels the resulting k=2 and derivative statements conjectural. No theorem is extended to eta=1 by fiat; the analysis preserves that the fourth derivative-moment consequence inherits the forbidden extrapolation. Low: theorem-range checking and endpoint extrapolation are explicit non-paraphrase operations.",
+            "source_support": "The source notes exact agreement of the k=1 crossover with Gonek's RH-conditional theorem, compares k=2 with a GRH theorem for a truncated Dirichlet polynomial of length exponent η<1/2, then formally sets η=1 and labels the resulting statement and derivative corollary conjectural.",
+            "speculation_status": "η=1 is forbidden by the theorem as stated; therefore the fourth derivative-moment consequence inherits conjectural status. The logical boundary is explicit, while η ranges, series evaluation, and constants are formula-sensitive. Using overlap with proved ranges as calibration while treating an endpoint substitution as a new hypothesis accurately captures the logic. Eta ranges, series indices, constants, and the evaluation of F2 require exact source checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3f9ae1dd7a716873adba0b22e878cd01bef5b88f11aa7aae0ee7e116899b1606",
+        "dossier_sha256": "44f710c72d5361141a000713617731e81ea11942741e18d46fd4ffc2c622448c"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A number-theoretic theorem for a shortened Dirichlet polynomial reproduces the predicted crossover algebra, but the full zeta statement requires moving to an endpoint explicitly excluded by that theorem.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2048352354_v2_u06",
+          "openalex_w2048352354_v2_u07"
+        ],
+        "proposed_limit": "The matching expression is evidence for the conjecture, not authorization to treat the endpoint substitution as proved.",
+        "source_id": "openalex_w2048352354",
+        "synthesis_id": "riemann_v2_within_cb4aa3fb24ce2410f76d3b9f",
+        "title": "The theorem-conjecture boundary is visible at the endpoint eta equals one"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Uniformity is what permits exchanging the derivative and asymptotic limits; the far-offset result is explicitly a discrete analogue of the continuous mean.",
+          "line_end": 615,
+          "line_start": 530,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "All normalizations, limits, and k domains require exact checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the source's central conjecture with the same universal Fk and arithmetic factor, then obtains derivative moments as the alpha-to-zero limit and continuous-moment behavior as the fixed-distance limit.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Transfer the Bessel crossover to discrete zeta moments",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u06.txt",
+          "unit_bytes": 4843,
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "unit_sha256": "200bac640a418c5e53a1617c960a4ca5c9b422f1a5df57cfc535a1344ec04cb8",
+          "unit_type": "zeta crossover conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conjecture 5 uses the local-density coordinate α/L to transfer the matrix crossover F_k(2πα) into a discrete shifted-zeta moment while retaining separate arithmetic and Barnes-G factors. This one proposed law links two distinct limits: α→0, provided the stated uniformity really licenses interchange with T→∞, yields derivative moments at zeros; taking α=Lβ as the zero density grows is meant to erase local zero conditioning and recover ordinary-moment scaling in a discrete mean. The latter passage is not justified over the full stated range β>0 by the displayed uniformity alone: |α|≤L covers α=Lβ directly only for 0<β≤1, so β>1 requires a wider uniformity statement or another argument.",
+            "nonparaphrase_operation": "Reading α as a density-scaled coordinate organizes the formula by what the representation preserves and forgets: microscopic displacement preserves conditioning by a nearby zero and exposes derivative behavior, whereas fixed physical displacement corresponds to a growing scaled coordinate intended to forget that conditioning. Auditing those regimes against the conjecture's quantified domain reveals that the same crossover mechanism supports the derivative passage under its stated uniformity but leaves a proof-domain gap in the far-offset passage for β>1.",
+            "quality_reason": "Accepted after the bounded critic repair: the exact span supports the crossover mechanism, density rescaling, derivative-limit dependency, and discrete-versus-continuous distinction, while the revision now exposes rather than inherits the α=Lβ domain tension. Formula-sensitive constants and normalizations are reported only at the level visible in the source and are not repaired from memory.",
+            "source_support": "The span states Conjecture 5 for fixed Re(k)>−1/2, uniformly for |α|≤L, with displacement α/L and factors a(k), Barnes G, and F_k(2πα). Corollary 5.1 explicitly uses the small-α behavior of F_k and uniformity to swap the α→0 and asymptotic limits. Corollary 5.2 uses lim_{α→∞} F_k(2πα)=1 and sets α=Lβ for arbitrary fixed β>0; its remark describes the result as a discrete analogue of a continuous mean, not the continuous mean itself.",
+            "speculation_status": "The shifted-moment law is explicitly conjectural, so both corollaries remain conditional. The derivative limit additionally depends on the claimed limit interchange. The fixed-offset discrete-mean interpretation is heuristic, and the claimed all-β range is not supplied by the displayed |α|≤L uniformity when β>1."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derived fourth derivative-moment corollary is conditional on that conjectural endpoint extension.",
+          "line_end": 698,
+          "line_start": 617,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem's eta range, series evaluation, and constants are formula-sensitive and must be source-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows exact agreement with Gonek's k=1 theorem, compares k=2 with a GRH theorem for a truncated Dirichlet polynomial, and explicitly notes that setting its length parameter to one is outside the theorem before naming the resulting statement a conjecture.",
+          "source_id": "openalex_w2048352354",
+          "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Check the crossover where theorems exist and label the forbidden endpoint extrapolation",
+          "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u07.txt",
+          "unit_bytes": 3984,
+          "unit_id": "openalex_w2048352354_v2_u07",
+          "unit_sha256": "35bce9476460e8735db44e1f2d38a87c67f6aa9a31dc96ff4c3240b0166b36e4",
+          "unit_type": "number-theoretic calibration and extrapolation boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Known cases validate normalization and shape, but extrapolating a parameter beyond a theorem's domain creates a new hypothesis rather than extending the proof.",
+            "nonparaphrase_operation": "The truncated Dirichlet polynomial provides a partial number-theoretic bridge from rigorous moment estimates to the random-matrix crossover prediction.",
+            "quality_reason": "The span records exact k=1 agreement under RH, states a GRH theorem for a truncated polynomial with eta in (0,1/2), formally inserts eta=1 outside that theorem, and labels the resulting k=2 and derivative statements conjectural. No theorem is extended to eta=1 by fiat; the analysis preserves that the fourth derivative-moment consequence inherits the forbidden extrapolation. Low: theorem-range checking and endpoint extrapolation are explicit non-paraphrase operations.",
+            "source_support": "The source notes exact agreement of the k=1 crossover with Gonek's RH-conditional theorem, compares k=2 with a GRH theorem for a truncated Dirichlet polynomial of length exponent η<1/2, then formally sets η=1 and labels the resulting statement and derivative corollary conjectural.",
+            "speculation_status": "η=1 is forbidden by the theorem as stated; therefore the fourth derivative-moment consequence inherits conjectural status. The logical boundary is explicit, while η ranges, series evaluation, and constants are formula-sensitive. Using overlap with proved ranges as calibration while treating an endpoint substitution as a new hypothesis accurately captures the logic. Eta ranges, series indices, constants, and the evaluation of F2 require exact source checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3f9ae1dd7a716873adba0b22e878cd01bef5b88f11aa7aae0ee7e116899b1606",
+        "dossier_sha256": "44f710c72d5361141a000713617731e81ea11942741e18d46fd4ffc2c622448c"
+      }
+    }
+  ]
+}

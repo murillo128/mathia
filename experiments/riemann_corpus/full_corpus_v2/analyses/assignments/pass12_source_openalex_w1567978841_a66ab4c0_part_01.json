@@ -1,0 +1,821 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1567978841_a66ab4c0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1567978841",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the whole introduction because the OCR has dropped many Greek letters and derivative indices; the surrounding prose is needed to recover which prior results are being contrasted.",
+      "line_end": 48,
+      "line_start": 19,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is recoverable, but exact inequalities, derivative orders, and symbols require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction distinguishes earlier high-derivative and first-derivative results, isolates the open left half of the critical strip as the RH-conditional target, and announces a modified-conjecture/functional-equation route rather than treating the theorem as an isolated claim.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From earlier derivative zero-free regions to an RH-only target",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d01.txt",
+      "unit_bytes": 1655,
+      "unit_id": "openalex_w1567978841_d01",
+      "unit_sha256": "45d828cd36574b59888e1f250fc39cd2f58e5818d021dd78f2b1bc01bd2bf924",
+      "unit_type": "problem positioning and proof strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d01.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 11,
+          "line_end": 18,
+          "text": "only real zeros of the derivative. It is further shown that the Riemann\nhypothesis is equivalent to the condition that ’(s) increases as Re s moves\n\n\n\n\n                                               _\nleft from 1/2 for Im s sufficiently large.\n",
+          "sha256": "605dee82dd99ff70524f4a1ed914f1c18c46a59893c1fc626b4a6a606456a962"
+        },
+        "after": {
+          "line_start": 49,
+          "line_end": 56,
+          "text": "                       2. Results on the zeros of\n  THEOREM 1. The Riemann hypothesis implies ’(s)       0 for 0     r     1/2.\nIf s > 165, then ’(s) has only real zeros for (r O, and exactly one real zero\nin each open interal (--1 2n, 1     2n), n 1, 2,          ....\n   Received November 2, 1970.\n    The work in this paper was done with the support of a National Science Foundation\ngrant.\n                                         147\n",
+          "sha256": "b6a3e5a1cb5cfffe7964dff0d173362c027ec68996be18a2fdd68cd012dec244"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 48,
+            "line_start": 19,
+            "mathematical_role": "Prior zero-free and zero-location results, the sharper first-derivative target, and the paper's functional-equation strategy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 48,
+          "line_start": 19,
+          "title": "From earlier derivative zero-free regions to an RH-only target",
+          "unit_id": "openalex_w1567978841_d01",
+          "unit_type": "problem positioning and proof strategy",
+          "why_material": "The introduction distinguishes earlier high-derivative and first-derivative results, isolates the open left half of the critical strip as the RH-conditional target, and announces a modified-conjecture/functional-equation route rather than treating the theorem as an isolated claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the whole introduction because the OCR has dropped many Greek letters and derivative indices; the surrounding prose is needed to recover which prior results are being contrasted.",
+          "representation_dependency": "Prose is recoverable, but exact inequalities, derivative orders, and symbols require scan verification.",
+          "unit_id": "openalex_w1567978841_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 197,
+            "line_start": 49,
+            "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+            "unit_id": "openalex_w1567978841_d02",
+            "unit_type": "RH-conditional logarithmic-derivative sign proof",
+            "why_material": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 18,
+              "line_start": 7,
+              "reason": "Abstract repeats the paper's principal results and orients the detailed units below."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 183-197 are essential completion context for the immutable v1 span ending at line 182: they finish the parameter range and explain how the earlier computation and reflected bound supply the theorem's first conclusion and reduce the second.",
+      "line_end": 197,
+      "line_start": 49,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The strategic chain is clear in prose; equations (1)-(13), constants, inequalities, and variable ranges are OCR-fragile and must be checked against page images before exact mathematical reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d02.txt",
+      "unit_bytes": 5399,
+      "unit_id": "openalex_w1567978841_d02",
+      "unit_sha256": "ac334cfe0c4420f6aa358eb1f9f434dc437f0bbbe8018d61b4ca8fea5a0c1be2",
+      "unit_type": "RH-conditional logarithmic-derivative sign proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d02.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 41,
+          "line_end": 48,
+          "text": "\n                                                     _\n0 <_ < 1/2. In ths paper, it is shown that the Riemann hypothesis alone\nimplies that ’(s)      0 for 0 < < 1/2, and also the situation in the closed left\nhalf plane is settled up to the point of a feasible calculation. The method is to\nshow a modified form of the conjecture of [6], using the Riemann hypothesis\nfor results in the critical strip. Results are also given on the increase of\ni(s) as tends to --oo from 1/2.\n",
+          "sha256": "d7d3655ef65fbb489536ae06db327c5b2ae654df0e0aaa4b8f411478b9aa446e"
+        },
+        "after": {
+          "line_start": 198,
+          "line_end": 205,
+          "text": "   For this strip, we apply the method of [7]. We have by the functional\nequation\n             -’(1         s)/2(2r)   -= (s)F’(s) cos (s/2)\n(14)\n                                         + r(s)/cos (rs/2) (’(s)        (log 2)i(s))\n                                             sin (s/2)((r/2)(s))}\n                                         f(s) + g(s),\nwhere f(s) is defined by (s)r’(s) cos (rs/2). Next, we apply Rouch’s\n",
+          "sha256": "7d90e7213b0b238874655ba62fe2ade23caa3f0b41c6cf622d68fe8f1447582d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 and logarithmic-derivative estimates",
+            "line_end": 197,
+            "line_start": 49,
+            "mathematical_role": "States the main zero-location theorem and derives a positive-real-part bound from the functional equation, RH zero geometry, gamma-factor estimates, and a prior finite calculation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 197,
+          "line_start": 49,
+          "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+          "unit_id": "openalex_w1567978841_d02",
+          "unit_type": "RH-conditional logarithmic-derivative sign proof",
+          "why_material": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 183-197 are essential completion context for the immutable v1 span ending at line 182: they finish the parameter range and explain how the earlier computation and reflected bound supply the theorem's first conclusion and reduce the second.",
+          "representation_dependency": "The strategic chain is clear in prose; equations (1)-(13), constants, inequalities, and variable ranges are OCR-fragile and must be checked against page images before exact mathematical reuse.",
+          "unit_id": "openalex_w1567978841_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 48,
+            "line_start": 19,
+            "title": "From earlier derivative zero-free regions to an RH-only target",
+            "unit_id": "openalex_w1567978841_d01",
+            "unit_type": "problem positioning and proof strategy",
+            "why_material": "The introduction distinguishes earlier high-derivative and first-derivative results, isolates the open left half of the critical strip as the RH-conditional target, and announces a modified-conjecture/functional-equation route rather than treating the theorem as an isolated claim."
+          },
+          {
+            "line_end": 250,
+            "line_start": 198,
+            "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+            "unit_id": "openalex_w1567978841_d03",
+            "unit_type": "Rouché zero-counting construction",
+            "why_material": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A logarithmic-derivative sign estimate controls the critical-strip side while Rouché counting controls the far-left trivial-zero geometry, leaving only a bounded residual region.",
+            "limit": "The exact inequalities are OCR-fragile, RH is used for the critical-strip component, and the bounded residual calculation is not executed here.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d03"
+            ],
+            "title": "Complementary global control from sign and counting arguments"
+          },
+          {
+            "claim": "The same real-part sign controlling derivative zeros also describes horizontal growth of the derivative modulus and supports an RH-equivalent formulation at sufficient height.",
+            "limit": "The height threshold and exact notation must be recovered from the scan; the criterion is not asserted uniformly at every height.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d06"
+            ],
+            "title": "The proof estimate as a geometric monotonicity criterion"
+          },
+          {
+            "claim": "The functional-equation/logarithmic-derivative architecture may transfer to Dirichlet L-functions because a conductor term strengthens the key inequality, shifting the bottleneck to origin data.",
+            "limit": "This is a proposed extension, not a proved result in the source, and its exact normalization is OCR-unsafe.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d07"
+            ],
+            "title": "Conditional transfer through a changed arithmetic term"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the complementary mechanism completing the closed-left-half-plane conclusion outside a bounded region and should not be severed from the rectangle definition, domination condition, and realness argument.",
+      "line_end": 250,
+      "line_start": 198,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The factorization and argument are legible from prose, but signs, rectangle vertices, bounds (15)-(17), and the reflected coordinate convention require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d03.txt",
+      "unit_bytes": 2359,
+      "unit_id": "openalex_w1567978841_d03",
+      "unit_sha256": "8b849adbb8b742ba8fa287cf5b90c7bedc92d01194ed57160cca4fa7a930716f",
+      "unit_type": "Rouché zero-counting construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d03.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 190,
+          "line_end": 197,
+          "text": "on), so we have shown the first part of the theorem. Further, since the\n                                                                           0 for\n                                                                                0\n\n\ninequality sl _> 165 implies the inequality I1         s _> 164, we have the\nsecond result of the theorem for the closed left half-plane except for a strip of\nwidth 4 centered on the negative real axis.\n",
+          "sha256": "503e414767dc1c5afe9718699c28bc6faf7ae8559c046147013c94f20f33b17d"
+        },
+        "after": {
+          "line_start": 251,
+          "line_end": 258,
+          "text": "                       3. Feasibility of the calculation\n  It is possible to reduce further the region where i\"(s) may be zero. Indeed,\nfrom\n          i\"(1 s)/2(2r)-SI If(s) + g(s) >_ If(s) l--- ]g(s)\nwe will have i\"(1      s)     0 if If(s) > Ig(s)I. For example, using (17),\nfor _> 3,     -> 2, it suffices to take s -> 38. Hence t’(s) 0 for    -> 2,\n   _< -2, sl >_ 39. Thus, the region of uncertainty naturally falls into\nthree pieces:\n",
+          "sha256": "d2dc578bb62c2ffccc1b65ef31ce2495c6aa5e27a437cf2e46b1f111f0a390e7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rouché completion in the far-left strip",
+            "line_end": 250,
+            "line_start": 198,
+            "mathematical_role": "Uses a differentiated functional equation, boundary domination on rectangles, and conjugate pairing to count and locate derivative zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 250,
+          "line_start": 198,
+          "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+          "unit_id": "openalex_w1567978841_d03",
+          "unit_type": "Rouché zero-counting construction",
+          "why_material": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the complementary mechanism completing the closed-left-half-plane conclusion outside a bounded region and should not be severed from the rectangle definition, domination condition, and realness argument.",
+          "representation_dependency": "The factorization and argument are legible from prose, but signs, rectangle vertices, bounds (15)-(17), and the reflected coordinate convention require scan verification.",
+          "unit_id": "openalex_w1567978841_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 197,
+            "line_start": 49,
+            "title": "RH turns zero symmetry into a zero-free region for the first derivative",
+            "unit_id": "openalex_w1567978841_d02",
+            "unit_type": "RH-conditional logarithmic-derivative sign proof",
+            "why_material": "The proof applies the functional equation to a reflected logarithmic derivative, uses RH to make each zero contribution have the needed real-part sign, controls gamma and trigonometric terms explicitly, and combines the resulting positivity with a finite prior calculation to exclude derivative zeros in the open left half of the critical strip."
+          },
+          {
+            "line_end": 276,
+            "line_start": 251,
+            "title": "A three-region decomposition makes the unresolved zero search finite and representation-aware",
+            "unit_id": "openalex_w1567978841_d04",
+            "unit_type": "computational certification plan",
+            "why_material": "The paper converts the analytic bounds into three bounded uncertainty regions and assigns distinct numerical representations: Euler-Maclaurin in the central region, the asymptotic gamma logarithmic derivative farther left, recurrence translations near the origin, and Euler-Maclaurin again for zeta terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A logarithmic-derivative sign estimate controls the critical-strip side while Rouché counting controls the far-left trivial-zero geometry, leaving only a bounded residual region.",
+            "limit": "The exact inequalities are OCR-fragile, RH is used for the critical-strip component, and the bounded residual calculation is not executed here.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d03"
+            ],
+            "title": "Complementary global control from sign and counting arguments"
+          },
+          {
+            "claim": "Explicit domination bounds turn a global zero-location question into a finite set of regions whose numerical treatment changes with the stable local representation.",
+            "limit": "This source argues feasibility and cites earlier computation but does not supply a new auditable table of computed values.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d03",
+              "openalex_w1567978841_d04"
+            ],
+            "title": "Analytic reduction paired with region-specific computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span presents feasibility rather than completed certification; it preserves the region partition and the rationale for changing computational representation.",
+      "line_end": 276,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The method comparison is prose-stable, while exact region inequalities, derivative notation, and recurrence signs need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper converts the analytic bounds into three bounded uncertainty regions and assigns distinct numerical representations: Euler-Maclaurin in the central region, the asymptotic gamma logarithmic derivative farther left, recurrence translations near the origin, and Euler-Maclaurin again for zeta terms.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A three-region decomposition makes the unresolved zero search finite and representation-aware",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d04.txt",
+      "unit_bytes": 1365,
+      "unit_id": "openalex_w1567978841_d04",
+      "unit_sha256": "b3b628efb3c4fdff5c4a3a6e4abb2fc1eb34b04769d7a5d5729c16fd80507e5e",
+      "unit_type": "computational certification plan",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d04.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "(17)\n                    q- (2 q- (2_ 1) log 2)/(- 1)22\nwhich holds for >_ 32. Now from (17), we see that the right hand side of\n(7) is > 0, so r’(s) has no zeros in the rectangle with vertices 2n 4- 2i,\n2n + 2 4- 2i. Thus, there is exactly one zero of i\"(s) in the reflected rec-\ntangle corresponding to the zero of cos (rs/2). As in [7], this zero must lie\non the real axis, since non-real zeros occur in conjugate pairs. Thus, the\ntheorem is proved, for the strip of width 4 and indeed for   _< -31.\n",
+          "sha256": "0375f67947cd9084be3db3efd3f121109071926ace4ad1d0292bfa4f53f7bec7"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "   Finally, the author remarks that the theory for the location of zeros of\n()(s), the k-th derivative of the Riemann -function, is much simpler.\nBy a theorem of Laguerre [9, p. 266], if the Riemann hypothesis is true, then\nall zeros of ()(s) are real.\n                             4. Results on ](s)\n  In Spire [6], it ws conjectured that\n\n(18)\n",
+          "sha256": "c8dae3fda8360b742a449b9d5bfb827e1227d5685bae82e7c4333622aee1472f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Feasibility and higher derivatives",
+            "line_end": 280,
+            "line_start": 251,
+            "mathematical_role": "Partitions the remaining bounded uncertainty, selects computational representations by region, and records a Laguerre consequence for higher derivatives under RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 251,
+          "title": "A three-region decomposition makes the unresolved zero search finite and representation-aware",
+          "unit_id": "openalex_w1567978841_d04",
+          "unit_type": "computational certification plan",
+          "why_material": "The paper converts the analytic bounds into three bounded uncertainty regions and assigns distinct numerical representations: Euler-Maclaurin in the central region, the asymptotic gamma logarithmic derivative farther left, recurrence translations near the origin, and Euler-Maclaurin again for zeta terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span presents feasibility rather than completed certification; it preserves the region partition and the rationale for changing computational representation.",
+          "representation_dependency": "The method comparison is prose-stable, while exact region inequalities, derivative notation, and recurrence signs need the scan.",
+          "unit_id": "openalex_w1567978841_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 250,
+            "line_start": 198,
+            "title": "Boundary domination and conjugate pairing force one real zero per far-left rectangle",
+            "unit_id": "openalex_w1567978841_d03",
+            "unit_type": "Rouché zero-counting construction",
+            "why_material": "The differentiated functional equation is split into a dominant factor and an error term; explicit boundary estimates establish Rouché domination on a family of rectangles, transferring the cosine-factor zero count, while conjugate pairing forces the unique zero to be real."
+          },
+          {
+            "line_end": 280,
+            "line_start": 277,
+            "title": "Laguerre's theorem gives RH-conditional real zeros for higher zeta derivatives",
+            "unit_id": "openalex_w1567978841_d05",
+            "unit_type": "higher-derivative consequence",
+            "why_material": "The author contrasts the difficult first-derivative localization with a simpler higher-derivative theory, invoking a general real-zero preservation theorem to obtain a strong conditional conclusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicit domination bounds turn a global zero-location question into a finite set of regions whose numerical treatment changes with the stable local representation.",
+            "limit": "This source argues feasibility and cites earlier computation but does not supply a new auditable table of computed values.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d03",
+              "openalex_w1567978841_d04"
+            ],
+            "title": "Analytic reduction paired with region-specific computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short self-contained remark; its notation is damaged but the prose explicitly identifies the k-th derivative and the conditional all-real-zero conclusion.",
+      "line_end": 280,
+      "line_start": 277,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual claim is recoverable from prose; the exact displayed function notation and scope should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author contrasts the difficult first-derivative localization with a simpler higher-derivative theory, invoking a general real-zero preservation theorem to obtain a strong conditional conclusion.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Laguerre's theorem gives RH-conditional real zeros for higher zeta derivatives",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d05.txt",
+      "unit_bytes": 253,
+      "unit_id": "openalex_w1567978841_d05",
+      "unit_sha256": "71ed4371a89178f2b239484660d10b0eba5bea097635da4a26c083d35690a257",
+      "unit_type": "higher-derivative consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d05.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 269,
+          "line_end": 276,
+          "text": "ever, when a lies in the more negative regions, the formula becomes difficult\nto apply. Using the differentiated functional equation (14) is impractical\nbecause of the size of I’ and I\". However, in the form (1), it becomes reason-\nable if one uses the asymptotic series for F’/I’ whose first few terms are given\nby (5). For s near the origin one can perform a number of translations using\n                     (r’/r) (s)   (r’/r) (s + 1)     1Is\nto get rapid convergence. For i\"(s) and ’(s) in (1), one would again use the\nEuler-Maclaurin formula. Thus, the calculation is feasible.\n",
+          "sha256": "870617de6652ac0c941db6d210680df54d71ecd9a8b976b5358b16b54510b7a2"
+        },
+        "after": {
+          "line_start": 281,
+          "line_end": 288,
+          "text": "                             4. Results on ](s)\n  In Spire [6], it ws conjectured that\n\n(18)\n       Re (’7’)(s) _-< -1/2 log    + 1/2 log 2r\n                                                            O<<1/2,1tl>to,\nand from (13) above, we have that the Riemarm hypothesis implies\n        Re (\"/S)(s) _< -1/2 log lt -k K -k O(1/It[),\n",
+          "sha256": "4fe79c05c40716ae94eaf179938eeaf193f497f2d8ae60dc567a0cead09c89e1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Feasibility and higher derivatives",
+            "line_end": 280,
+            "line_start": 251,
+            "mathematical_role": "Partitions the remaining bounded uncertainty, selects computational representations by region, and records a Laguerre consequence for higher derivatives under RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 280,
+          "line_start": 277,
+          "title": "Laguerre's theorem gives RH-conditional real zeros for higher zeta derivatives",
+          "unit_id": "openalex_w1567978841_d05",
+          "unit_type": "higher-derivative consequence",
+          "why_material": "The author contrasts the difficult first-derivative localization with a simpler higher-derivative theory, invoking a general real-zero preservation theorem to obtain a strong conditional conclusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short self-contained remark; its notation is damaged but the prose explicitly identifies the k-th derivative and the conditional all-real-zero conclusion.",
+          "representation_dependency": "The conceptual claim is recoverable from prose; the exact displayed function notation and scope should be scan-checked.",
+          "unit_id": "openalex_w1567978841_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 276,
+            "line_start": 251,
+            "title": "A three-region decomposition makes the unresolved zero search finite and representation-aware",
+            "unit_id": "openalex_w1567978841_d04",
+            "unit_type": "computational certification plan",
+            "why_material": "The paper converts the analytic bounds into three bounded uncertainty regions and assigns distinct numerical representations: Euler-Maclaurin in the central region, the asymptotic gamma logarithmic derivative farther left, recurrence translations near the origin, and Euler-Maclaurin again for zeta terms."
+          },
+          {
+            "line_end": 301,
+            "line_start": 281,
+            "title": "Leftward growth of the derivative's modulus is equivalent to RH at sufficient height",
+            "unit_id": "openalex_w1567978841_d06",
+            "unit_type": "equivalent monotonicity criterion",
+            "why_material": "The earlier logarithmic-derivative estimate is reinterpreted as a sign for the horizontal derivative of log modulus, yielding leftward monotonic growth in the indicated regions; in the critical strip the paper states both the RH implication and the converse."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Include the conjectured bound, the weaker proved constant, the derivative identity, and the converse together so the criterion is not mistaken for a one-way corollary.",
+      "line_end": 301,
+      "line_start": 281,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose supports the direction and equivalence, but OCR loss affects the function symbol, constants, real-part inequalities, and precise height/strip ranges.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The earlier logarithmic-derivative estimate is reinterpreted as a sign for the horizontal derivative of log modulus, yielding leftward monotonic growth in the indicated regions; in the critical strip the paper states both the RH implication and the converse.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Leftward growth of the derivative's modulus is equivalent to RH at sufficient height",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d06.txt",
+      "unit_bytes": 1032,
+      "unit_id": "openalex_w1567978841_d06",
+      "unit_sha256": "024b1fd265f38b0cef38c541e60e4c3740b827e0550e830389a40c8ddd9e1737",
+      "unit_type": "equivalent monotonicity criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d06.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 273,
+          "line_end": 280,
+          "text": "by (5). For s near the origin one can perform a number of translations using\n                     (r’/r) (s)   (r’/r) (s + 1)     1Is\nto get rapid convergence. For i\"(s) and ’(s) in (1), one would again use the\nEuler-Maclaurin formula. Thus, the calculation is feasible.\n   Finally, the author remarks that the theory for the location of zeros of\n()(s), the k-th derivative of the Riemann -function, is much simpler.\nBy a theorem of Laguerre [9, p. 266], if the Riemann hypothesis is true, then\nall zeros of ()(s) are real.\n",
+          "sha256": "43b5018f7e9ad4c2a00bf8a51856186b99756c3e8f8aa778a0cd3d751bccfbf1"
+        },
+        "after": {
+          "line_start": 302,
+          "line_end": 309,
+          "text": "    The results obtained do not appear-to be easily extendable to i’()(s) for\n/ > 1. However, they do appear to go over to the Dirichlet L-functions.\nIn these cases, the inequality is assisted by a term log k, and it may be that the\ninequality (19) will be provable for the entire left half of the critical strip for\n/c sufficiently large where we consider L (s)/s instead of L (s) in case L (0)  0).\n\n<!-- source-page: 6 -->\n\n",
+          "sha256": "87d84f9eeab1f9f20d2be64f4fa7ec73f4c1e19da4e65ff3fec7c101f1806f19"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Log-modulus monotonicity and transfer limits",
+            "line_end": 313,
+            "line_start": 281,
+            "mathematical_role": "Recasts the sign estimate as leftward growth of the derivative, states the RH converse, and identifies both obstacles and a possible Dirichlet-L analogue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 301,
+          "line_start": 281,
+          "title": "Leftward growth of the derivative's modulus is equivalent to RH at sufficient height",
+          "unit_id": "openalex_w1567978841_d06",
+          "unit_type": "equivalent monotonicity criterion",
+          "why_material": "The earlier logarithmic-derivative estimate is reinterpreted as a sign for the horizontal derivative of log modulus, yielding leftward monotonic growth in the indicated regions; in the critical strip the paper states both the RH implication and the converse."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Include the conjectured bound, the weaker proved constant, the derivative identity, and the converse together so the criterion is not mistaken for a one-way corollary.",
+          "representation_dependency": "The prose supports the direction and equivalence, but OCR loss affects the function symbol, constants, real-part inequalities, and precise height/strip ranges.",
+          "unit_id": "openalex_w1567978841_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 280,
+            "line_start": 277,
+            "title": "Laguerre's theorem gives RH-conditional real zeros for higher zeta derivatives",
+            "unit_id": "openalex_w1567978841_d05",
+            "unit_type": "higher-derivative consequence",
+            "why_material": "The author contrasts the difficult first-derivative localization with a simpler higher-derivative theory, invoking a general real-zero preservation theorem to obtain a strong conditional conclusion."
+          },
+          {
+            "line_end": 313,
+            "line_start": 302,
+            "title": "The method resists higher zeta derivatives but suggests a conductor-assisted Dirichlet-L transfer",
+            "unit_id": "openalex_w1567978841_d07",
+            "unit_type": "extension diagnosis",
+            "why_material": "The closing paragraph records a negative method boundary for higher zeta derivatives and a positive transfer hypothesis for Dirichlet L-functions, where a conductor term may help; it isolates estimation of the logarithmic derivative at the origin as the remaining bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same real-part sign controlling derivative zeros also describes horizontal growth of the derivative modulus and supports an RH-equivalent formulation at sufficient height.",
+            "limit": "The height threshold and exact notation must be recovered from the scan; the criterion is not asserted uniformly at every height.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d06"
+            ],
+            "title": "The proof estimate as a geometric monotonicity criterion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 312-313 complete the sentence begun before the page break and are needed to state the actual reduction rather than only the speculative analogy.",
+      "line_end": 313,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The qualitative obstruction and reduction are readable; exact L-function normalization, conductor notation, and the exceptional zero-at-origin parenthetical require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The closing paragraph records a negative method boundary for higher zeta derivatives and a positive transfer hypothesis for Dirichlet L-functions, where a conductor term may help; it isolates estimation of the logarithmic derivative at the origin as the remaining bottleneck.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The method resists higher zeta derivatives but suggests a conductor-assisted Dirichlet-L transfer",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_d07.txt",
+      "unit_bytes": 565,
+      "unit_id": "openalex_w1567978841_d07",
+      "unit_sha256": "e6196df0691fd1725420fb7a76d6d66baa42f267365e1e43426d2dac35b43f9a",
+      "unit_type": "extension diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_d07.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "  As remarked after (13) we have\n(20)      Re’(1- s)/’(1- s) < 0,      Itl _> 2,_> 1, Is[ _> 164\nand on the Riemann hypothesis also for 1/2 < < 1. Since\n                         Re ’/(s)       O/&r log i’(s) [.\nwe have for the regions indicated that log i’(s) I, and hence I(s) is an\nincreasing function of as moves leftward, using the Riemann hypothesis\nin the critical strip. It is also clear that if i’(s) so increases in the critical\nstrip, then the Riemann hypothesis holds.\n",
+          "sha256": "f4ba18a1c5cd6a9315b92261da19816bb5fa577514c5c7e0f78ac2115bb56870"
+        },
+        "after": {
+          "line_start": 314,
+          "line_end": 321,
+          "text": "                                      IEFERENCES\n1. R. D. DIXON AND L. SCHOENFELD, The size of the Riemann zeta function at places\n          symmetric to the point 1/2, Duke Math. J., vol. 33 (1966), pp. 291-292.\n2. E. LXNDXU, Handbuch der Lehre yon der Verteilung der Primzahlen, 2nd ed., Chelsea,\n          New York, 1953.\n3. R. SPIRX, An inequality for the Riemann zeta function, Duke Math. J., vol. 32 (1965),\n          pp. 247-250.\n4.,       Check values, zeros and Fortran programs for the Riemann zeta function and its\n",
+          "sha256": "1fd35e26d7c57e46d368d2a1e947a2fc9d68255b7cd8c965df920f7246b91f37"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96603d59500a80c2178e4cda137e4bd1e8d787a195321d2a500bb854d75fb5ea",
+        "dossier_sha256": "f9b6df34154e93526fd4b59d9829cf2e1a7e452bc009f09721751780b2f11d16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Log-modulus monotonicity and transfer limits",
+            "line_end": 313,
+            "line_start": 281,
+            "mathematical_role": "Recasts the sign estimate as leftward growth of the derivative, states the RH converse, and identifies both obstacles and a possible Dirichlet-L analogue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 313,
+          "line_start": 302,
+          "title": "The method resists higher zeta derivatives but suggests a conductor-assisted Dirichlet-L transfer",
+          "unit_id": "openalex_w1567978841_d07",
+          "unit_type": "extension diagnosis",
+          "why_material": "The closing paragraph records a negative method boundary for higher zeta derivatives and a positive transfer hypothesis for Dirichlet L-functions, where a conductor term may help; it isolates estimation of the logarithmic derivative at the origin as the remaining bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 312-313 complete the sentence begun before the page break and are needed to state the actual reduction rather than only the speculative analogy.",
+          "representation_dependency": "The qualitative obstruction and reduction are readable; exact L-function normalization, conductor notation, and the exceptional zero-at-origin parenthetical require scan verification.",
+          "unit_id": "openalex_w1567978841_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 301,
+            "line_start": 281,
+            "title": "Leftward growth of the derivative's modulus is equivalent to RH at sufficient height",
+            "unit_id": "openalex_w1567978841_d06",
+            "unit_type": "equivalent monotonicity criterion",
+            "why_material": "The earlier logarithmic-derivative estimate is reinterpreted as a sign for the horizontal derivative of log modulus, yielding leftward monotonic growth in the indicated regions; in the critical strip the paper states both the RH implication and the converse."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The functional-equation/logarithmic-derivative architecture may transfer to Dirichlet L-functions because a conductor term strengthens the key inequality, shifting the bottleneck to origin data.",
+            "limit": "This is a proposed extension, not a proved result in the source, and its exact normalization is OCR-unsafe.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_d02",
+              "openalex_w1567978841_d07"
+            ],
+            "title": "Conditional transfer through a changed arithmetic term"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "cec3d03c870eeb8d0daa5fac6d3d773422efa3ab79b74ac18b4ecd49bc03c9f8"
+}

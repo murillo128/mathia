@@ -1,0 +1,499 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2591008310_81b7b7c8_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2591008310",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Stops before the L-function specialization, which is preserved in the carried v1 unit.",
+      "line_end": 156,
+      "line_start": 120,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The hypotheses and main exponent are formula-dependent and badly OCR-degraded; verify against the scan before exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two alternative hypotheses on the prime factors lead to Theorem 1, which lower-bounds the maximum short-interval mean over a narrow family of vertical lines and tracks how derivatives change the logarithmic exponent.",
+      "source_id": "openalex_w2591008310",
+      "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local Euler-factor mass forces a large mean on some line near one",
+      "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u02.txt",
+      "unit_bytes": 1673,
+      "unit_id": "openalex_w2591008310_v2_u02",
+      "unit_sha256": "8d8307e3af83fa8aaf0e3e383d3df84eccca6dcfd32f4232355612e156731b0c",
+      "unit_type": "euler-product-lower-bound-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2591008310",
+        "title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+        "authors": [
+          "K. Ramachandra"
+        ],
+        "year": 1978,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 112,
+          "line_end": 119,
+          "text": "    § 2.      Notation\n                                                                                     ., '\n\n     The letter C with or without subscriptadenotes a positive\n.ct>nstant depending only on a The letter K with or· witbollt\n~~bscripts denotes constants to be chosen later approp'riately\n in a proof. At so the constant C may not be tl:J.e ·same at each\n occurrence.\n",
+          "sha256": "2253b3bae1551467b00d8bed03c610c941b495335fd3b01e4d7fcc1f63d610a7"
+        },
+        "after": {
+          "line_start": 157,
+          "line_end": 164,
+          "text": "Theorem 2\n    Let L fs) denote either the Dedekind zeta-function or the\nHeeke L-series of an algebraic number field of degree · n and\naccording as it is Galois or not we put a = n or 1 and also\nm1 = m or min (1, m). Then we have with 2k;;;;.: 1,\n           1\n           H\n             JT+H\n",
+          "sha256": "d592e9e66f6bbffffa3ca10d5017cf06820db1b3b5777b29731e22110ba9ba74"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+        "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2. Notation and Section 3. The case of Euler product",
+            "line_end": 574,
+            "line_start": 112,
+            "mathematical_role": "States Euler-product hypotheses and lower-bound theorems, transfers an optimized vertical-line mean to the target line, removes neighborhoods of zeros, approximates by smooth Dirichlet polynomials, and converts coefficient growth into derivative lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 156,
+          "line_start": 120,
+          "title": "Local Euler-factor mass forces a large mean on some line near one",
+          "unit_id": "openalex_w2591008310_v2_u02",
+          "unit_type": "euler-product-lower-bound-theorem",
+          "why_material": "Two alternative hypotheses on the prime factors lead to Theorem 1, which lower-bounds the maximum short-interval mean over a narrow family of vertical lines and tracks how derivatives change the logarithmic exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Stops before the L-function specialization, which is preserved in the carried v1 unit.",
+          "representation_dependency": "The hypotheses and main exponent are formula-dependent and badly OCR-degraded; verify against the scan before exact transcription.",
+          "unit_id": "openalex_w2591008310_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 76,
+            "line_start": 10,
+            "title": "Short-interval lower means divide sharply according to whether an Euler product is available",
+            "unit_id": "openalex_w2591008310_v2_u01",
+            "unit_type": "problem-scope-and-method-split",
+            "why_material": "The source defines fractional powers of a general Dirichlet series away from zeros, poses lower bounds for derivative means on short intervals, and explains why Euler products permit strong results while the general case is restricted to the first absolute moment."
+          },
+          {
+            "line_end": 216,
+            "line_start": 157,
+            "title": "Cauchy transfer moves an optimized vertical-line mean to Dedekind and Hecke L-functions",
+            "unit_id": "full_openalex_w2591008310_u01",
+            "unit_type": "mean-value transfer argument",
+            "why_material": "Theorem 2 specializes the Euler-product lower bound and uses a rectangular Cauchy integral with a high-order kernel to transfer control from the maximizing line toward the target line while suppressing the other contour sides."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2591008310_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2591008310_v2_u02",
+          "spontaneous_reading": "The theorem converts persistent local mass in Euler factors into the inevitability of a large short-interval mean on at least one vertical line close to one. Maximizing over a narrow σ-range is the flexibility that lets coefficient growth become an observable analytic lower bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w2591008310_v2_u02",
+          "source_grounded_mathematics": "The source assumes F has an Euler product with bounded local data and one of two stated lower-growth hypotheses for the prime factors. Theorem 1 then lower-bounds the maximum of Q(σ) over lines σ just to the right of 1, with logarithmic powers depending on k and the derivative order; zeta and Hecke L-series are cited as included cases.",
+          "conceptual_reading": "Local multiplicative information is aggregated into a global mass that cannot remain small on every nearby line. The maximum over σ absorbs the need to locate where that mass becomes visible.",
+          "representation_or_bridge": "The Euler product is the bridge from primewise lower information to Dirichlet coefficients and then to short-interval derivative means.",
+          "boundary_or_failure": "The result requires one of the explicit Euler-factor hypotheses and does not give the same strength for arbitrary Dirichlet series. It ensures some line is large rather than prescribing a fixed line.",
+          "uncertainty": "The theorem's qualitative meaning is clear, but its exact exponents and hypotheses are badly OCR-degraded and must not be reconstructed from this artifact alone."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2591008310_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span visibly states two alternative Euler-product hypotheses and a theorem taking a maximum of Q over lines just to the right of one.",
+          "The introduction/source context supports inclusion of zeta and Hecke L-series as examples."
+        ],
+        "inference": [
+          "Interpreting the maximum over nearby lines as flexibility for locating visible coefficient mass is reasonable but belongs in the inference layer."
+        ],
+        "unsupported_or_imported": [
+          "The exact logarithmic exponent, the derivative dependence, and details of the two hypotheses are too damaged to support the directed summary at formula level.",
+          "The phrase 'local Euler-factor mass forces' is a conceptual interpretation of later proof components, not a theorem statement readable in full from this slice."
+        ],
+        "paraphrase_or_style_risk": [
+          "Without exact hypotheses, the current bridge language can sound like a generic local-to-global template."
+        ],
+        "context_or_ocr_risk": [
+          "The theorem statement is badly OCR-degraded at precisely the hypotheses and exponent that distinguish its cases.",
+          "The qualitative existence of a lower bound on some nearby line is recoverable, so full quarantine is not necessary if the record is restricted accordingly."
+        ],
+        "missed_mechanism": [
+          "The output should emphasize that this unit states the result and begins a contradiction proof; it does not yet show the coefficient-mass mechanism."
+        ],
+        "revision_instructions": [
+          "Restrict the source-grounded content to the qualitative theorem shape, move the local-mass explanation to labeled inference, and require scan verification before stating hypotheses or exponents."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemmas 1 and 2 and the explicit subharmonic averaging argument.",
+      "line_end": 281,
+      "line_start": 217,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several radii and powers are damaged; the subharmonic mechanism is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof turns failure of Theorem 1 into a uniform integral bound, then uses subharmonicity/Jensen averaging to control the maximum of F away from boundaries, preparing both zero counts and contour shifts.",
+      "source_id": "openalex_w2591008310",
+      "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Assuming the lower bound fails supplies global mean control and a subharmonic pointwise ceiling",
+      "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u03.txt",
+      "unit_bytes": 2927,
+      "unit_id": "openalex_w2591008310_v2_u03",
+      "unit_sha256": "d82d133b1a2ef52f12744f19f0c0e2918d5d207c9185bc4ecd43ee24cdedca37",
+      "unit_type": "contradiction-and-pointwise-control-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2591008310",
+        "title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+        "authors": [
+          "K. Ramachandra"
+        ],
+        "year": 1978,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 209,
+          "line_end": 216,
+          "text": "                                                          (W-s)2b   dW\n                                                      e             W-s\n\nTheorem 2 now follows on integrating with respect to s and\n                                 log log H\nalso using the fact that u - t >    log H   . We have to\nremember that if the field is Galois, condition (ii) is satisfied ;\notherwise the condition {i) is satisfied.\n",
+          "sha256": "16b44298d0ed623dfb6110a89be2d2a3541b4aba1c8b99a53af83b5434b1ee52"
+        },
+        "after": {
+          "line_start": 282,
+          "line_end": 289,
+          "text": "Lemma 3 : Let N (cl., T;, T 2 ) denote the number of zeros of\n                                          31og log H)\nF (~) in a ::> cl. .( cl. > l +              log H  , and T 1 < t..;; T2 ·\nThen ifT + (log H) 8 ..;; t < T + H- (log H)B,\n                      N (cl., t, t + I) ..;; (log H)•.\n\n<!-- source-page: 7 -->\n\n",
+          "sha256": "63d7a139ef12d090222322c3a3dbbf19e67b0b85bf93994d5185b4013e08761d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+        "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2. Notation and Section 3. The case of Euler product",
+            "line_end": 574,
+            "line_start": 112,
+            "mathematical_role": "States Euler-product hypotheses and lower-bound theorems, transfers an optimized vertical-line mean to the target line, removes neighborhoods of zeros, approximates by smooth Dirichlet polynomials, and converts coefficient growth into derivative lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 281,
+          "line_start": 217,
+          "title": "Assuming the lower bound fails supplies global mean control and a subharmonic pointwise ceiling",
+          "unit_id": "openalex_w2591008310_v2_u03",
+          "unit_type": "contradiction-and-pointwise-control-setup",
+          "why_material": "The proof turns failure of Theorem 1 into a uniform integral bound, then uses subharmonicity/Jensen averaging to control the maximum of F away from boundaries, preparing both zero counts and contour shifts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Lemmas 1 and 2 and the explicit subharmonic averaging argument.",
+          "representation_dependency": "Several radii and powers are damaged; the subharmonic mechanism is recoverable from prose.",
+          "unit_id": "openalex_w2591008310_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 216,
+            "line_start": 157,
+            "title": "Cauchy transfer moves an optimized vertical-line mean to Dedekind and Hecke L-functions",
+            "unit_id": "full_openalex_w2591008310_u01",
+            "unit_type": "mean-value transfer argument",
+            "why_material": "Theorem 2 specializes the Euler-product lower bound and uses a rectangular Cauchy integral with a high-order kernel to transfer control from the maximizing line toward the target line while suppressing the other contour sides."
+          },
+          {
+            "line_end": 382,
+            "line_start": 282,
+            "title": "Zero density carves the t-interval into long regions where a logarithmic branch is controllable",
+            "unit_id": "openalex_w2591008310_v2_u04",
+            "unit_type": "zero-excision-and-density-package",
+            "why_material": "Jensen bounds zeros in unit-height boxes, a zero-detecting reciprocal Dirichlet polynomial gives a density estimate, and removing neighborhoods of the few bad boxes leaves most of the interval inside zero-free strips suitable for approximation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Subharmonic and density estimates remove a small family of zero-contaminated intervals, allowing a stable Dirichlet-polynomial branch whose diagonal coefficient mass then forces a lower mean and, through finite differences, derivative means.",
+            "limit": "All quantitative exponents are OCR-sensitive and the argument assumes the source's Euler-product hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w2591008310_v2_u03",
+              "openalex_w2591008310_v2_u04",
+              "openalex_w2591008310_v2_u05",
+              "openalex_w2591008310_v2_u06"
+            ],
+            "title": "Zeros are handled by excision before coefficients are used as the positive signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2591008310_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2591008310_v2_u03",
+          "spontaneous_reading": "Negating the desired lower bound provides a global mean ceiling, and subharmonic averaging converts that ceiling into a pointwise bound away from interval edges. This is the compactness-like control needed before zeros can be counted or contours moved."
+        },
+        "directed": {
+          "unit_id": "openalex_w2591008310_v2_u03",
+          "source_grounded_mathematics": "Assuming Theorem 1 false, Lemma 1 bounds an integral involving F and its derivatives over the candidate σ-range. Lemma 2 uses subharmonicity of |F|^{2k}, proved through circular and disk averages after removing zeros, to bound the maximum of |F(σ+it)| on an interior rectangle by a power of H.",
+          "conceptual_reading": "The contradiction assumption is not only a negation; it generates uniform control. Subharmonicity transfers averaged smallness across a two-dimensional neighborhood into local pointwise control.",
+          "representation_or_bridge": "Jensen/mean-value averaging over discs bridges the integral hypothesis to a supremum estimate, which feeds the later zero-density argument.",
+          "boundary_or_failure": "The pointwise estimate holds only away from interval endpoints and for σ in the specified right-half-plane strip. It is preparatory and does not itself contradict the assumed failure.",
+          "uncertainty": "The subharmonic mechanism is clear, but radii and powers are OCR-damaged; exact constants require the original scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2591008310_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly assumes failure of Theorem 1, derives an integral bound in Lemma 1, and proves a pointwise bound from subharmonic disk averaging in Lemma 2.",
+          "The restriction away from interval boundaries is present."
+        ],
+        "inference": [
+          "Saying the contradiction assumption generates useful uniform control is a sound conceptual observation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous phrase 'compactness-like control' is an unsupported analogy; no compactness statement or limiting argument appears.",
+          "The output's reference to preparing zero counts and contour shifts comes from the next proof stages, not a result established in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The compactness analogy sounds deep but teaches style rather than the actual subharmonic mean-value mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "Radii and powers are OCR-damaged, but the disk-average proof is legible.",
+          "The next use in zero-density estimates lies outside the exact unit boundary and should be labeled as downstream context."
+        ],
+        "missed_mechanism": [
+          "Removing zeros with a finite Blaschke-like product before applying the boundary average is the concrete step that justifies the subharmonic inequality and should replace the loose compactness metaphor."
+        ],
+        "revision_instructions": [
+          "Remove 'compactness-like,' describe the zero-removal and disk-average argument directly, and label zero-count/contour use as downstream rather than source content of this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes immutable v1 unit full_openalex_w2591008310_u02 as the central density/asymptotic lemma package.",
+      "line_end": 382,
+      "line_start": 282,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "OCR is poor around all exponents and interval widths; use the scan for exact constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Jensen bounds zeros in unit-height boxes, a zero-detecting reciprocal Dirichlet polynomial gives a density estimate, and removing neighborhoods of the few bad boxes leaves most of the interval inside zero-free strips suitable for approximation.",
+      "source_id": "openalex_w2591008310",
+      "source_normalized_sha256": "5a5f1a1501bb024c6914b57527e53ec2abe88a0a6b503715b904db6bc80ced4c",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero density carves the t-interval into long regions where a logarithmic branch is controllable",
+      "unit_artifact_relpath": "depth/units/openalex_w2591008310_v2_u04.txt",
+      "unit_bytes": 4555,
+      "unit_id": "openalex_w2591008310_v2_u04",
+      "unit_sha256": "22f156766ca52b5f1fda75314b35b65fbf231b69221d04a0058e77148bb7d3e8",
+      "unit_type": "zero-excision-and-density-package",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2591008310_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2591008310",
+        "title": "Some remarks on the mean value of the Riemann zeta-function and other Dirichlet series 1",
+        "authors": [
+          "K. Ramachandra"
+        ],
+        "year": 1978,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "partial-results",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 274,
+          "line_end": 281,
+          "text": "                                                    f\n                                               ls-s 0 i<;r\n                                                                IF(s)l 2\"dv.\n\n\n                                                   log log H             ·\nBy taking a suitable radius say                      log H we get the lemma .\n\n",
+          "sha256": "61a73f80ba172b0ec79a73f3bee0df36bdb3b95cade06ffc77e1e55c99fe85b7"
+        },
+        "after": {
+          "line_start": 383,
+          "line_end": 390,
+          "text": "\n<!-- source-page: 9 -->\n\nMEAN VALUE OF THE RIEMANN ZETA-FUNCTION                                     9\n\n     Proof: The proof of this lemma is nearly standard. We\nwill merely sketch the proof. For t in ! 3 we have with\n             J.\n",
+          "sha256": "41cdd6fcb0d014951856cf3301f9b181c8146ae06ebed71f7e844e70782b9b1e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_014149a945b0ab5cbd2ae21583b50fe7ceb50207a7f4733ae4ed8872ef4b0ec4",
+        "dossier_sha256": "cf4d07fef877769a8969d9b2958b4e5e13e23a9cb647ff514a29358029985ab1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2. Notation and Section 3. The case of Euler product",
+            "line_end": 574,
+            "line_start": 112,
+            "mathematical_role": "States Euler-product hypotheses and lower-bound theorems, transfers an optimized vertical-line mean to the target line, removes neighborhoods of zeros, approximates by smooth Dirichlet polynomials, and converts coefficient growth into derivative lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 382,
+          "line_start": 282,
+          "title": "Zero density carves the t-interval into long regions where a logarithmic branch is controllable",
+          "unit_id": "openalex_w2591008310_v2_u04",
+          "unit_type": "zero-excision-and-density-package",
+          "why_material": "Jensen bounds zeros in unit-height boxes, a zero-detecting reciprocal Dirichlet polynomial gives a density estimate, and removing neighborhoods of the few bad boxes leaves most of the interval inside zero-free strips suitable for approximation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes immutable v1 unit full_openalex_w2591008310_u02 as the central density/asymptotic lemma package.",
+          "representation_dependency": "OCR is poor around all exponents and interval widths; use the scan for exact constants.",
+          "unit_id": "openalex_w2591008310_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 281,
+            "line_start": 217,
+            "title": "Assuming the lower bound fails supplies global mean control and a subharmonic pointwise ceiling",
+            "unit_id": "openalex_w2591008310_v2_u03",
+            "unit_type": "contradiction-and-pointwise-control-setup",
+            "why_material": "The proof turns failure of Theorem 1 into a uniform integral bound, then uses subharmonicity/Jensen averaging to control the maximum of F away from boundaries, preparing both zero counts and contour shifts."
+          },
+          {
+            "line_end": 382,
+            "line_start": 313,
+            "title": "Zero detection and interval excision yield an asymptotic mean-square formula off bad boxes",
+            "unit_id": "full_openalex_w2591008310_u02",
+            "unit_type": "zero-detecting asymptotic lemma package",
+            "why_material": "The v1 span combines the density estimate, decomposition into good and bad intervals, and the statement of the Dirichlet-coefficient asymptotic that drives the Euler-product proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Subharmonic and density estimates remove a small family of zero-contaminated intervals, allowing a stable Dirichlet-polynomial branch whose diagonal coefficient mass then forces a lower mean and, through finite differences, derivative means.",
+            "limit": "All quantitative exponents are OCR-sensitive and the argument assumes the source's Euler-product hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w2591008310_v2_u03",
+              "openalex_w2591008310_v2_u04",
+              "openalex_w2591008310_v2_u05",
+              "openalex_w2591008310_v2_u06"
+            ],
+            "title": "Zeros are handled by excision before coefficients are used as the positive signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2591008310_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2591008310_v2_u04",
+          "spontaneous_reading": "Zeros are treated as sparse defects in the t-interval. A Jensen bound and a reciprocal-polynomial zero detector show that only few logarithmic boxes are contaminated; deleting neighborhoods of those boxes leaves long regions where one branch and one polynomial approximation can be used coherently."
+        },
+        "directed": {
+          "unit_id": "openalex_w2591008310_v2_u04",
+          "source_grounded_mathematics": "Lemma 3 bounds zeros of F in unit-height boxes using Jensen and the pointwise bound. Lemma 4 uses F(s)M_H(s)-1, with M_H a truncation of the Dirichlet series for F^{-1}, to obtain a zero-density estimate, and Lemma 5 strengthens it to a negligible count farther right. The t-interval is divided into logarithmic blocks; blocks containing zeros and neighboring margins are removed, leaving a large union I_3 for Lemma 6.",
+          "conceptual_reading": "Instead of controlling a logarithmic branch across every zero, the proof localizes and excises the obstruction. Density converts a topological problem into a small-measure loss.",
+          "representation_or_bridge": "The reciprocal Dirichlet polynomial is a zero detector; interval partitioning translates its density estimate into geometric zero-free regions.",
+          "boundary_or_failure": "The construction discards bad intervals and edge regions, so the later asymptotic applies on I_3 rather than everywhere. The strength depends on the assumed mean bound and carefully chosen logarithmic scales.",
+          "uncertainty": "OCR is poor around exponents, widths, and constants. The excision mechanism is reliable, but exact quantitative claims need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2591008310_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states a Jensen zero count, a zero detector F(s)M_H(s)-1, a density estimate, and interval removal leaving the good set I_3.",
+          "The output correctly says the later branch approximation is available only on retained zero-free intervals."
+        ],
+        "inference": [
+          "Viewing zeros as sparse defects that can be excised is a reasonable compression of the interval construction."
+        ],
+        "unsupported_or_imported": [
+          "Calling the branch issue 'topological' is unsupported and overly general; the source performs quantitative zero counting and interval deletion.",
+          "The exact strength and measure loss cannot be safely recovered from the damaged exponents."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Density converts a topological problem into small-measure loss' is a generic Mathia slogan that obscures the reciprocal-polynomial detector and explicit block construction."
+        ],
+        "context_or_ocr_risk": [
+          "All decisive exponents, block widths, and constants are badly OCR-degraded.",
+          "The source boundary is otherwise sufficient to identify the zero-detection/excision mechanism."
+        ],
+        "missed_mechanism": [
+          "The reciprocal Dirichlet polynomial approximating F^{-1} is the mechanism that detects zeros; the revised analysis should foreground it over geometric metaphors."
+        ],
+        "revision_instructions": [
+          "Replace topological language with the concrete Jensen plus reciprocal-polynomial density estimate and state only qualitative size loss unless the scan is checked."
+        ]
+      }
+    }
+  ]
+}

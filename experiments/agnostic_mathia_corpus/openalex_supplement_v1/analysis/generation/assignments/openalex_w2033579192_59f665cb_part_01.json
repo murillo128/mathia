@@ -1,0 +1,618 @@
+{
+  "expected_analysis_ids": {
+    "agnostic_oa_bundle_topology_from_structure_group": "agnostic_oa_generation_3e90ae2afcb3502e1be78a5ee9e2623ac6aa45d2b2243d035a5eb62c6ee28c4a",
+    "agnostic_oa_calibration_by_form_volume_match": "agnostic_oa_generation_c09e1ea73a1b8d7fe9d51fd373c04f9a56b7871d33cef9aa8bd342a77321bbb4",
+    "agnostic_oa_delzant_kernel_to_quotient": "agnostic_oa_generation_a30f69fa694e3ff4fd05ca825e741c9c3541590758f3f3dc7305a828c539327b",
+    "agnostic_oa_equivariant_match_by_fixed_strata": "agnostic_oa_generation_4274435be1e99914e2bbb2609eb3174a437a11a1262e7c88f21004798bf61e07",
+    "agnostic_oa_gluing_separates_topology_from_complex_structure": "agnostic_oa_generation_790322b981db065a88b3629b962a7c4296e28c438b5c72abe29907e3cd1ea868",
+    "agnostic_oa_good_cone_lattice_constraints": "agnostic_oa_generation_84de3e9dfbdd05614fab4ae8b672b0b826beb7509db876d7625a11bb708f29b2",
+    "agnostic_oa_kahler_quotient_parameter_semantics": "agnostic_oa_generation_5bec32ff17b80763fa5fddf989f2c22138364de16abcaed2465fd0e215b056c5",
+    "agnostic_oa_moment_map_cohomology_obstruction": "agnostic_oa_generation_8a0baa3d69c76f5ace36b96dfce02f88fff23e57b6ec925e9f080efe177da0c1",
+    "agnostic_oa_orbit_closure_classifies_actions": "agnostic_oa_generation_b274cb22830e3fd4d27aaf80736dea25c1f0418a7edbf2446cb78d2e68f436df",
+    "agnostic_oa_polygon_relations_control_resolutions": "agnostic_oa_generation_8e08e050999d1c6e8afac3b4d6b9b565763cd23981fe8cfd4474c583a8064325",
+    "agnostic_oa_polytope_fibration_and_label_loss": "agnostic_oa_generation_e0f46ea280c1e515787b93c83cf66b4f7e9b87f3f33ff8e2ae3f83a709092bb0",
+    "agnostic_oa_rational_characteristic_slice": "agnostic_oa_generation_b705a8a080a98f9a95a2be0254d003e457aeaeb19d5be104e9bee3185044a713",
+    "agnostic_oa_rational_direction_controls_orbit_closure": "agnostic_oa_generation_bfd1786e47e268e3a1c410d2bf8724fa3692a768cfc7b5dfd0494db3b7de731c",
+    "agnostic_oa_topology_from_normal_lattice": "agnostic_oa_generation_cb762216f18a42eb115d9cf84eb5f4e69d198533d60244fb35fabb9d816b8981"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "interpretation",
+    "nonparaphrase_operation",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Source-grounded interpretations for nearby units from one source only; keep outputs separate and distinguish source fact, inference, representation dependence, and uncertainty.",
+  "model_visible_packet_sha256": "7a8c8f8cef491928ea11db927f90fae186718f437dc52dd78c23580fad050e54",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/generation/batches/openalex_w2033579192_59f665cb_part_01.jsonl",
+  "source_id": "openalex_w2033579192",
+  "stage": "generation",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_orbit_closure_classifies_actions.txt",
+      "artifact_bytes": 4563,
+      "artifact_relpath": "depth/units/agnostic_oa_orbit_closure_classifies_actions.txt",
+      "artifact_sha256": "c66978e4af9b1d4decde8d586b7a599512c5656ef7e38b53a4b05bf1292d99e4",
+      "content_sha256": "eb673aaee8c72ce8649025b53867024be5fa00083042793315d42102ac468b8f",
+      "context_note": "The terminology is specialized to Sasaki–Einstein geometry, but the distinctions among free quotients, orbifold quotients, and absence of a quotient are generic. The cited compact-isometry-group fact supplies the closure argument; novelty is not assessed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_orbit_closure_classifies_actions",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_kahler_quotient_parameter_semantics",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "Orbit types determine whether quotient parameter spaces are manifolds, orbifolds, or unavailable, while quotient levels control Kähler classes, topology, cone limits, and resolution chambers. These mechanisms support the proposed lens without asserting a new family."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 385,
+      "line_start": 313,
+      "representation_dependency": "The classification depends on the global orbits of the distinguished vector field, not on local metric regularity. Replacing the flow by its compact closure changes an irregular one-parameter action into a torus action and records its rank.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source organizes regular, quasi-regular, and irregular cases by increasingly weaker orbit behavior: free circle action, locally free action with finite stabilizers, and nonclosed one-parameter orbits whose closure is a higher-dimensional torus. This is a reusable classification by action and quotient structure.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Classify actions by freeness, finite isotropy, and orbit closure",
+      "unit_id": "agnostic_oa_orbit_closure_classifies_actions",
+      "unit_type": "group_action_classification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_bundle_topology_from_structure_group.txt",
+      "artifact_bytes": 2176,
+      "artifact_relpath": "depth/units/agnostic_oa_bundle_topology_from_structure_group.txt",
+      "artifact_sha256": "1f302393c5ddf22adb78fe5c0e1008a6a3406e898bf523aadced5f11e24cc683",
+      "content_sha256": "ac002cd50449cb4c93d0e1529fba6351e5b4558a4e9e39af5a8e9a8200bef77b",
+      "context_note": "This is a concrete S2-over-S2 example and relies on standard classification facts. The reusable move is to pass characteristic data through a structure-group inclusion before inferring total-space topology.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 484,
+      "line_start": 448,
+      "representation_dependency": "The tangent bundle is described with U(1)-valued transitions, while the associated sphere bundle uses SO(3)-valued transitions; only the image of the class under the induced Z-to-Z2 map is relevant to the latter.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source identifies an oriented sphere bundle by tracing the transition functions through the induced map on fundamental groups; reduction of the original Chern number modulo two makes the associated bundle topologically trivial.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Reduce a characteristic class through the structure-group map to identify an associated bundle",
+      "unit_id": "agnostic_oa_bundle_topology_from_structure_group",
+      "unit_type": "bundle_topology"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_rational_direction_controls_orbit_closure.txt",
+      "artifact_bytes": 1862,
+      "artifact_relpath": "depth/units/agnostic_oa_rational_direction_controls_orbit_closure.txt",
+      "artifact_sha256": "e82b62583f163d565d1fe6cc1567ff51c65e2abe3292b251faf4bba90a9103f1",
+      "content_sha256": "7d3be7f05617c5cceab1651c5a2ec612166ffa741ba79c6f91d77115847520c8",
+      "context_note": "The displayed coefficient and its Diophantine specialization belong to the Y^{p,q} family. The generic content is the arithmetic criterion for a one-parameter subgroup of a torus; exact coefficients are extraction-sensitive.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 597,
+      "line_start": 568,
+      "representation_dependency": "Closedness is transparent only after choosing generators with canonical periods. A non-integral coordinate basis can obscure whether the direction is rational in the torus lattice.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "After expressing the distinguished vector as a linear combination of periodic generators, the source uses rational versus irrational coefficients to decide whether generic orbits close or densely fill a two-torus.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Rationality of a torus direction distinguishes closed from dense orbits",
+      "unit_id": "agnostic_oa_rational_direction_controls_orbit_closure",
+      "unit_type": "arithmetic_dynamics"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_calibration_by_form_volume_match.txt",
+      "artifact_bytes": 2649,
+      "artifact_relpath": "depth/units/agnostic_oa_calibration_by_form_volume_match.txt",
+      "artifact_sha256": "30391ea0e63d47e7f0a448781eca54fef9d15dfb270387421931f96a39f4aa4e",
+      "content_sha256": "8fdd347e2a6de8409d31268e3723e622cf1fe0a4335eae5c10208bec409d8cb6",
+      "context_note": "The accepted mechanism is the comparison method, not the extracted numerical formulas or the physical supersymmetry interpretation. Equation layout, roots, and normalizations require checking the preserved typeset source before exact reuse.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 766,
+      "line_start": 724,
+      "representation_dependency": "The same submanifold is described as a special orbit, a cone over a lens space, and a divisor; the calibration equality is what links the differential-form and metric-volume representations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source turns a geometric claim into a local structural check: restrict the calibrating form to the candidate cycles, compute the induced volume form, and use a defining relation to prove equality.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Verify a candidate calibrated submanifold by matching a pulled-back form to its volume form",
+      "unit_id": "agnostic_oa_calibration_by_form_volume_match",
+      "unit_type": "geometric_verification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_moment_map_cohomology_obstruction.txt",
+      "artifact_bytes": 2780,
+      "artifact_relpath": "depth/units/agnostic_oa_moment_map_cohomology_obstruction.txt",
+      "artifact_sha256": "92e1f01e59d16753cfb7c88efb2fd61f0848098bc6b3ea8a2750ca9198d01cb9",
+      "content_sha256": "8cb1051645b1eaa0b6be9a5692d38d8d1f1ef28180238f7e9e23b554745b62fe",
+      "context_note": "This is review material rather than a novel theorem. Sign conventions and the additive constant of the moment map are representation choices, but the cohomological obstruction is invariant.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 858,
+      "line_start": 818,
+      "representation_dependency": "The moment map is a scalar/vector-valued potential for contractions with chosen Lie-algebra basis vectors and is only unique up to an additive constant; changing the torus basis changes its coordinate components.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "Starting from invariance of a closed symplectic form, the source derives a closed contracted one-form and identifies its first-cohomology class as the obstruction to a moment map. Vanishing H1 gives a clean sufficient condition for every symplectic circle action to be Hamiltonian.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "A symplectic action is Hamiltonian exactly when the contraction class can be integrated",
+      "unit_id": "agnostic_oa_moment_map_cohomology_obstruction",
+      "unit_type": "existence_obstruction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_polytope_fibration_and_label_loss.txt",
+      "artifact_bytes": 4502,
+      "artifact_relpath": "depth/units/agnostic_oa_polytope_fibration_and_label_loss.txt",
+      "artifact_sha256": "c606c600218ff8effec80839503647c9632a126a79b2c26429e5279d2e6b3c40",
+      "content_sha256": "e1a4e3ea6f19b3a555ecfae6a19729f802de23d5f0d288d55d9a4c3985121366",
+      "context_note": "The reconstruction statements are standard Delzant and orbifold results cited by the source. The weighted-projective-line example demonstrates information loss; it is not independent novelty.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 922,
+      "line_start": 859,
+      "representation_dependency": "Primitive normals encode which circle collapses, whereas positive facet labels encode how much finite isotropy the bare polytope image forgets. Dropping labels can identify non-isomorphic orbifolds with the same interval or polytope.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source explains how facets, faces, and vertices encode successive torus-fibre collapses and how Delzant data reconstruct a smooth toric manifold. It also gives an explicit failure mode: the unlabelled image forgets finite isotropy, which must be restored by facet labels.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "A moment polytope records fibre collapse but may forget orbifold multiplicity",
+      "unit_id": "agnostic_oa_polytope_fibration_and_label_loss",
+      "unit_type": "combinatorial_encoding"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_good_cone_lattice_constraints.txt",
+      "artifact_bytes": 5352,
+      "artifact_relpath": "depth/units/agnostic_oa_good_cone_lattice_constraints.txt",
+      "artifact_sha256": "bf9090d9f22bfed2677e921f66de1a5a711f0e5f54415819ed3256914232d0b4",
+      "content_sha256": "ce8185fbdbebb7e7a64929237c3c43f6f412a2a8f69fa9657c1b4f8b59e70ab9",
+      "context_note": "The construction assumes a symplectic toric cone of Reeb type. The cone is not a canonical coordinate object: it is determined only up to an integral change of torus basis.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1007,
+      "line_start": 923,
+      "representation_dependency": "Facet inequalities depend on a chosen lattice basis and moment-map constant, while goodness is preserved under SL(n,Z). Nonprimitive or non-basis normals signal finite or worse singular behavior.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "For toric cones the source replaces vertex smoothness by a facewise condition: normals to a codimension-m face must form an integral basis of the lattice of the collapsing m-torus. It also makes explicit the minimality, primitivity, strict convexity, and basis-change ambiguities of the cone data.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Good cone conditions translate smoothness into integral lattice bases",
+      "unit_id": "agnostic_oa_good_cone_lattice_constraints",
+      "unit_type": "lattice_regularity"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_rational_characteristic_slice.txt",
+      "artifact_bytes": 1415,
+      "artifact_relpath": "depth/units/agnostic_oa_rational_characteristic_slice.txt",
+      "artifact_sha256": "3246e1cad922b041a4e6312abececf1154ac14f0fa44419d2c6c456b1b65005b",
+      "content_sha256": "7b6999bf5a2c42cf92ed0a4547a32db40c6a3e1b316b60fac44b31f849212f9e",
+      "context_note": "The statement is made for toric Calabi–Yau/Sasaki geometry and relies on cited toric contact results. It complements, rather than independently proves, the earlier orbit-closure criterion.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_orbit_closure_classifies_actions",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_kahler_quotient_parameter_semantics",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "Orbit types determine whether quotient parameter spaces are manifolds, orbifolds, or unavailable, while quotient levels control Kähler classes, topology, cone limits, and resolution chambers. These mechanisms support the proposed lens without asserting a new family."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1029,
+      "line_start": 1008,
+      "representation_dependency": "The cone may be rational while a hyperplane slice is irrational because the slicing vector is irrational in the torus lattice; the quotient interpretation therefore depends on both cone data and the chosen direction.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source intersects a rational moment cone with the hyperplane selected by the Reeb vector and shows that rationality of that vector is exactly the condition for a rational characteristic polytope and an orbifold circle quotient.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Rationality of the slicing direction controls whether a characteristic quotient is an orbifold",
+      "unit_id": "agnostic_oa_rational_characteristic_slice",
+      "unit_type": "arithmetic_quotient_criterion"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_kahler_quotient_parameter_semantics.txt",
+      "artifact_bytes": 2438,
+      "artifact_relpath": "depth/units/agnostic_oa_kahler_quotient_parameter_semantics.txt",
+      "artifact_sha256": "09e678fd7ab9f4f5479dfdbb24b62df8becca6bbe57b7de8927e56c19329b9a8",
+      "content_sha256": "d3b6d54ca948fffe420b44a4afb68d9b7979093d164b150b1c6a6f4866f9287d",
+      "context_note": "The charge-sum criterion for c1=0 is stated in the abelian linear-sigma-model setting, and the induced quotient metric is explicitly not asserted to be Ricci-flat. Exact charge matrices are not generic training targets.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_orbit_closure_classifies_actions",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_kahler_quotient_parameter_semantics",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "Orbit types determine whether quotient parameter spaces are manifolds, orbifolds, or unavailable, while quotient levels control Kähler classes, topology, cone limits, and resolution chambers. These mechanisms support the proposed lens without asserting a new family."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1295,
+      "line_start": 1255,
+      "representation_dependency": "The same quotient is described physically as a vacuum and geometrically as symplectic/Kähler reduction. Level parameters are genuine moduli of the quotient presentation, not removable notation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source describes a Kähler quotient as constraint imposition followed by removal of group directions, tracks the dimension loss, and explains how level parameters vary the Kähler class and sometimes topology, with the zero level producing a cone.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Quotient constraints, group removal, and level parameters control dimension and geometry",
+      "unit_id": "agnostic_oa_kahler_quotient_parameter_semantics",
+      "unit_type": "quotient_parameter_space"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_delzant_kernel_to_quotient.txt",
+      "artifact_bytes": 2703,
+      "artifact_relpath": "depth/units/agnostic_oa_delzant_kernel_to_quotient.txt",
+      "artifact_sha256": "3a30387a5a5d499370bcd3a0c5711cdac270c2ec8df54d98d9b871dd082a293a",
+      "content_sha256": "a4f525144f4061f2c63fdb413b1a815b10af5d85c06a3020af09621140e4bfa2",
+      "context_note": "Smoothness and surjectivity use the Delzant conditions; the cone version additionally requires goodness. Orbifold cases need finite-group data when the normals fail to form a lattice basis.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1338,
+      "line_start": 1296,
+      "representation_dependency": "Facet normals become columns of a linear map, integer kernel relations become quotient charges, and the quotient realizes the original combinatorial object geometrically. Different integral bases of the same kernel change charges without changing the quotient action up to equivalence.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source gives the reconstruction chain explicitly: map the standard lattice basis to primitive facet normals, take the kernel torus, reduce affine space by that torus, and inherit the residual torus action whose moment image is the original polytope.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Recover a toric space by taking the kernel of the facet-normal map",
+      "unit_id": "agnostic_oa_delzant_kernel_to_quotient",
+      "unit_type": "reconstruction_pipeline"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_topology_from_normal_lattice.txt",
+      "artifact_bytes": 1490,
+      "artifact_relpath": "depth/units/agnostic_oa_topology_from_normal_lattice.txt",
+      "artifact_sha256": "20d19f421710a2b87bfcd10143ee75895317f60ae08cf2423f64b482f505fd51",
+      "content_sha256": "8f2e04a90a8b25924abddd07432378c1452baef907297862ec6fdaf00251321c",
+      "context_note": "The theorem is cited and assumes a Reeb-type toric cone. The Y^{p,q} calculations are verification examples, not evidence of new topology beyond the theorem.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1393,
+      "line_start": 1369,
+      "representation_dependency": "Changing the normal-vector basis preserves the lattice quotient, while failure of the normals to span the full lattice produces a finite fundamental group. Redundant/nonminimal facets would corrupt the facet-count readout.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source applies general formulas that identify the fundamental group as a lattice quotient and the rank of the second homotopy group as facets minus torus dimension, then cross-checks them against independently known topology.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Read fundamental and second homotopy data from lattice span and facet count",
+      "unit_id": "agnostic_oa_topology_from_normal_lattice",
+      "unit_type": "topological_invariant_readout"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_gluing_separates_topology_from_complex_structure.txt",
+      "artifact_bytes": 4796,
+      "artifact_relpath": "depth/units/agnostic_oa_gluing_separates_topology_from_complex_structure.txt",
+      "artifact_sha256": "90cbd3d1cd7ffbce14bbc088d55a3d1b2b38f21e6d4a8020fca76be22143c9c7",
+      "content_sha256": "375e4e343b6b6bba0dcc5884eb64db4cf00b61901a6fa444205ceb6f1575f10b",
+      "context_note": "The calculation is specialized to a weighted quotient and contains extraction-sensitive monomials. Its reusable value is the disciplined separation of topological identification from holomorphic identification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1475,
+      "line_start": 1412,
+      "representation_dependency": "Conjugated versus holomorphic fibre coordinates can yield the same underlying real bundle but different complex structures. The conclusion is therefore deliberately limited to topology and group action.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source builds quotient charts from invariant coordinates, glues them across overlaps to identify line bundles and a sphere bundle, and explicitly notes that complex conjugation in the coordinates preserves the needed topology and group actions while changing the inherited complex structure.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Use invariant charts and transition maps to recover topology while tracking lost complex structure",
+      "unit_id": "agnostic_oa_gluing_separates_topology_from_complex_structure",
+      "unit_type": "local_to_global_gluing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_equivariant_match_by_fixed_strata.txt",
+      "artifact_bytes": 4088,
+      "artifact_relpath": "depth/units/agnostic_oa_equivariant_match_by_fixed_strata.txt",
+      "artifact_sha256": "eb27e5fa4f23857a2be3022bea3fbc826ec8e65ad7675c145ee4976a74af7b83",
+      "content_sha256": "471cdb332f2aa873fca16a9a85ffbc63786b41358ac9753251eb28dd88fcd64e",
+      "context_note": "The vector identities are specific to the charge family and must be checked against the typeset equations before formula reuse. The generic proof strategy is stronger than matching dimensions or topology alone.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1566,
+      "line_start": 1508,
+      "representation_dependency": "One presentation uses coordinate-rotation weights and quotient charges; the other uses Killing fields and facet normals. Modding out the trivial action is essential before comparing generators.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source identifies codimension-two fixed sets on both sides, relates their circle generators modulo the trivially acting charge vector, and concludes that the moment cones coincide and the spaces are equivariantly symplectomorphic.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Prove equivalence of two presentations by matching fixed strata and symmetry generators",
+      "unit_id": "agnostic_oa_equivariant_match_by_fixed_strata",
+      "unit_type": "equivalence_verification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_polygon_relations_control_resolutions.txt",
+      "artifact_bytes": 2444,
+      "artifact_relpath": "depth/units/agnostic_oa_polygon_relations_control_resolutions.txt",
+      "artifact_sha256": "2294e90fc4cce95f1bdf0b1a5974c8f5f3ed1dd41a32b57022896a5ee96ae839",
+      "content_sha256": "4aadf03f9b0172719a73b19d42b0023a9472eecf76bbedf307a1fef8a7005a06",
+      "context_note": "These are standard toric-geometry mechanisms reviewed and applied by the source. Interior-point enumeration and exact charge vectors are execution-heavy and extraction-sensitive; novelty relative to the corpus is unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_moment_map_cohomology_obstruction",
+            "agnostic_oa_polytope_fibration_and_label_loss",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_delzant_kernel_to_quotient",
+            "agnostic_oa_gluing_separates_topology_from_complex_structure",
+            "agnostic_oa_equivariant_match_by_fixed_strata",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source provides a source-grounded chain from continuous geometric actions to combinatorial images, lattice kernels, quotients, invariant charts, and resolution data, while explicitly recording information lost by each representation. This reinforces the assignment-proposed lens; novelty relative to #44 was not checked."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_orbit_closure_classifies_actions",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_kahler_quotient_parameter_semantics",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "moduli_and_parameter_spaces",
+          "kind": "reinforced_44_lens",
+          "summary": "Orbit types determine whether quotient parameter spaces are manifolds, orbifolds, or unavailable, while quotient levels control Kähler classes, topology, cone limits, and resolution chambers. These mechanisms support the proposed lens without asserting a new family."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_bundle_topology_from_structure_group",
+            "agnostic_oa_rational_direction_controls_orbit_closure",
+            "agnostic_oa_good_cone_lattice_constraints",
+            "agnostic_oa_rational_characteristic_slice",
+            "agnostic_oa_topology_from_normal_lattice",
+            "agnostic_oa_polygon_relations_control_resolutions"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "Integral lattices, rational directions, primitive normals, lattice quotients, integer relations, and characteristic-class reduction govern orbit closure, smoothness, topology, and resolutions. This is evidence for the assignment-proposed arithmetic-geometry lens, with no corpus-level novelty claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2033579192",
+      "line_end": 1607,
+      "line_start": 1567,
+      "representation_dependency": "Using every lattice point preserves access to all toric crepant resolutions but is redundant for the singularity itself; using only vertices compresses the presentation and forgets explicit resolution directions. A finite lattice quotient may still be required if the selected points do not span the full lattice.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the single bound assignment openalex_w2033579192_59f665cb, and normalized source openalex_w2033579192 only; no network, OpenAlex, #44 records, other sources, or prior plans"
+      },
+      "selection_reason": "The source reconstructs a toric Gorenstein singularity from integral diagram points, uses all integer relations with zero total charge as a quotient matrix, and explains how FI parameters produce partial or full resolutions while a vertex-only subset gives a minimal singular presentation.",
+      "source_id": "openalex_w2033579192",
+      "source_normalized_sha256": "5fa30b776d90c05a52656ac18865e49ea91d006b82765ba3f16abac292b67c67",
+      "title": "Integer relations among diagram points encode quotient charges and resolution parameters",
+      "unit_id": "agnostic_oa_polygon_relations_control_resolutions",
+      "unit_type": "toric_resolution_encoding"
+    }
+  ]
+}

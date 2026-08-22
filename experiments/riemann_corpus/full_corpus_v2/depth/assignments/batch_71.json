@@ -1,0 +1,770 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_71.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Alain Connes"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 2515,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 13,
+          "text": "Abstract"
+        },
+        {
+          "line": 36,
+          "text": "Contents"
+        },
+        {
+          "line": 37,
+          "text": "1 Introduction 3"
+        },
+        {
+          "line": 39,
+          "text": "2 Encounter with the Riemann zeta function 6"
+        },
+        {
+          "line": 40,
+          "text": "2.1 Classical Analytic Number Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+        },
+        {
+          "line": 41,
+          "text": "2.1.1 Prime Number Theorem (PNT): . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+        },
+        {
+          "line": 42,
+          "text": "2.1.2 Riemann’s formula, von Mangoldt paper . . . . . . . . . . . . . . . . . . . . . 7"
+        },
+        {
+          "line": 43,
+          "text": "2.1.3 Explicit formulas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8"
+        },
+        {
+          "line": 44,
+          "text": "2.1.4 Changes of sign of π ( x) − Li( x) . . . . . . . . . . . . . . . . . . . . . . . . . . 9"
+        },
+        {
+          "line": 45,
+          "text": "2.1.5 Hardy and Littlewood . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9"
+        },
+        {
+          "line": 46,
+          "text": "2.1.6 Selberg’s early contributions (1940s–1950s): . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 47,
+          "text": "2.1.7 Proportion of zeros on the critical line: . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 48,
+          "text": "2.1.8 Zero-free regions and zero-density estimates: . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 49,
+          "text": "2.1.9 The Lindelöf Hypothesis: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 50,
+          "text": "2.2 Theory of Entire and Meromorphic Functions . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 51,
+          "text": "2.2.1 Hadamard factorization theorem . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 52,
+          "text": "2.2.2 Nevanlinna theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+        },
+        {
+          "line": 53,
+          "text": "2.2.3 Average behavior of log |ζ (s)| and zeros of ζ (s) − x . . . . . . . . . . . . . . . 12"
+        },
+        {
+          "line": 54,
+          "text": "2.2.4 Voronin’s Universality Theorem, zeta as a chameleon . . . . . . . . . . . . . . 12"
+        },
+        {
+          "line": 61,
+          "text": "3 A Century and a Half of Theory Building towards RH 13"
+        },
+        {
+          "line": 62,
+          "text": "3.1 Harmonic Analysis and Functional Analysis . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 63,
+          "text": "3.1.1 Hilbert spaces and spectral theory: . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 64,
+          "text": "3.1.2 Scattering theory and spectral interpretation: . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 65,
+          "text": "3.2 Algebraic and Arithmetic Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 66,
+          "text": "3.2.1 Weil’s proof for function fields: . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+        },
+        {
+          "line": 67,
+          "text": "3.2.2 Grothendieck’s schemes and étale cohomology: . . . . . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 68,
+          "text": "3.2.3 Motives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 69,
+          "text": "3.3 Automorphic Forms and Representation Theory . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 70,
+          "text": "3.3.1 Langlands Program: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 71,
+          "text": "3.3.2 Modular forms and L-functions: . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 72,
+          "text": "3.3.3 Selberg trace formula and zeta functions: . . . . . . . . . . . . . . . . . . . . . 15"
+        },
+        {
+          "line": 73,
+          "text": "3.4 Random Matrix Theory and Quantum Chaos . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 74,
+          "text": "3.4.1 Montgomery’s pair correlation: . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 75,
+          "text": "3.4.2 Odlyzko’s statistics: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+        },
+        {
+          "line": 76,
+          "text": "3.4.3 Quantum chaos: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 77,
+          "text": "3.4.4 Katz-Sarnak theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 78,
+          "text": "3.4.5 Moments and unitary matrices (Keating–Snaith): . . . . . . . . . . . . . . . . 17"
+        },
+        {
+          "line": 79,
+          "text": "3.5 Noncommutative Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+        },
+        {
+          "line": 80,
+          "text": "3.5.1 Connes’ trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18"
+        },
+        {
+          "line": 81,
+          "text": "3.5.2 Knots, primes and class field theory . . . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 82,
+          "text": "3.6 p-adic and Motivic L-functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 83,
+          "text": "3.6.1 p-adic L-functions and Iwasawa theory: . . . . . . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 84,
+          "text": "3.6.2 Motivic L-functions and Bloch–Kato conjectures: . . . . . . . . . . . . . . . . . 19"
+        },
+        {
+          "line": 85,
+          "text": "3.7 Computational and Experimental Mathematics . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 86,
+          "text": "3.7.1 High-precision computations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 88,
+          "text": "4 Equivalent Formulations 20"
+        },
+        {
+          "line": 89,
+          "text": "4.1 Weil’s Positivity Criterion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 90,
+          "text": "4.2 Beurling–Nyman criterion: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+        },
+        {
+          "line": 91,
+          "text": "4.3 Li’s criterion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+        },
+        {
+          "line": 92,
+          "text": "4.4 Elementary Number-Theoretic Formulations . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 93,
+          "text": "4.4.1 Robin’s Criterion (1984) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 94,
+          "text": "4.4.2 Lagarias’ Criterion (2002) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 96,
+          "text": "5 A Letter to Professor Bernhard Riemann 23"
+        },
+        {
+          "line": 98,
+          "text": "6 The strategy and the next small steps 26"
+        },
+        {
+          "line": 99,
+          "text": "6.1 The Fourier transform of θ x has all its zeros on the real line . . . . . . . . . . . . . . . 26"
+        },
+        {
+          "line": 100,
+          "text": "6.2 Riemann’s Ξ function and Hermite functions . . . . . . . . . . . . . . . . . . . . . . . 26"
+        },
+        {
+          "line": 101,
+          "text": "6.3 The prolate wave functions enter the scene . . . . . . . . √ . . . . . . . . . . . . . . . . 27"
+        },
+        {
+          "line": 102,
+          "text": "6.4 The Poisson formula and the approximation kλ of θ x , λ = x. . . . . . . . . . . . . . 28"
+        },
+        {
+          "line": 103,
+          "text": "6.5 Convergence of the Fourier tranforms b kλ → b k . . . . . . . . . . . . . . . . . . . . . . . 29"
+        },
+        {
+          "line": 104,
+          "text": "6.6 Remaining steps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30"
+        },
+        {
+          "line": 106,
+          "text": "7 Geometric Perspectives 30"
+        },
+        {
+          "line": 107,
+          "text": "7.1 Archimedean trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30"
+        },
+        {
+          "line": 108,
+          "text": "7.2 Archimedean Weil positivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+        },
+        {
+          "line": 109,
+          "text": "7.3 The semilocal adele class space . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31"
+        },
+        {
+          "line": 110,
+          "text": "7.4 The semilocal trace formula . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+        },
+        {
+          "line": 111,
+          "text": "7.5 The infrared and ultraviolet regimes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+        },
+        {
+          "line": 112,
+          "text": "7.6 The prolate wave operator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33"
+        },
+        {
+          "line": 114,
+          "text": "8 Conclusion 34"
+        },
+        {
+          "line": 122,
+          "text": "1 Introduction"
+        },
+        {
+          "line": 250,
+          "text": "13 and computing with the method described, one obtains an approximation of the first 50 zeros"
+        },
+        {
+          "line": 289,
+          "text": "1 meaning that the associated eigenfunction is even"
+        },
+        {
+          "line": 327,
+          "text": "2 Encounter with the Riemann zeta function"
+        },
+        {
+          "line": 328,
+          "text": "2.1 Classical Analytic Number Theory"
+        },
+        {
+          "line": 329,
+          "text": "2.1.1 Prime Number Theorem (PNT):"
+        },
+        {
+          "line": 340,
+          "text": "2 log 2 3 log 3 5 log 5 7 log 7"
+        },
+        {
+          "line": 399,
+          "text": "2.1.2 Riemann’s formula, von Mangoldt paper"
+        },
+        {
+          "line": 410,
+          "text": "2 which he sent to Chebyshev"
+        },
+        {
+          "line": 433,
+          "text": "1. If v > 0 , then"
+        },
+        {
+          "line": 439,
+          "text": "2. If v = 0, then"
+        },
+        {
+          "line": 444,
+          "text": "3. If v < 0 , then"
+        },
+        {
+          "line": 458,
+          "text": "2.1.3 Explicit formulas"
+        },
+        {
+          "line": 502,
+          "text": "Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 505,
+          "text": "1 x x − x−1"
+        },
+        {
+          "line": 507,
+          "text": "2.1.4 Changes of sign of π ( x) − Li( x)"
+        },
+        {
+          "line": 514,
+          "text": "B = 1010"
+        },
+        {
+          "line": 522,
+          "text": "2.1.5 Hardy and Littlewood"
+        },
+        {
+          "line": 526,
+          "text": "1 t t"
+        },
+        {
+          "line": 554,
+          "text": "2.1.6 Selberg’s early contributions (1940s–1950s):"
+        },
+        {
+          "line": 566,
+          "text": "2.1.7 Proportion of zeros on the critical line:"
+        },
+        {
+          "line": 576,
+          "text": "2.1.8 Zero-free regions and zero-density estimates:"
+        },
+        {
+          "line": 589,
+          "text": "2.1.9 The Lindelöf Hypothesis:"
+        },
+        {
+          "line": 598,
+          "text": "2.2 Theory of Entire and Meromorphic Functions"
+        },
+        {
+          "line": 599,
+          "text": "2.2.1 Hadamard factorization theorem"
+        },
+        {
+          "line": 641,
+          "text": "Ξ(0) = − √ ∼ 0.497121"
+        },
+        {
+          "line": 646,
+          "text": "2.2.2 Nevanlinna theory"
+        },
+        {
+          "line": 668,
+          "text": "6 The infinite product is defined here as the limit as T → ∞ of the product over ρ with |ρ | < T"
+        },
+        {
+          "line": 670,
+          "text": "7 using the identity 1 − 2 +is = 1− a"
+        },
+        {
+          "line": 682,
+          "text": "2.2.3 Average behavior of log |ζ (s)| and zeros of ζ (s) − x"
+        },
+        {
+          "line": 700,
+          "text": "2.2.4 Voronin’s Universality Theorem, zeta as a chameleon"
+        },
+        {
+          "line": 751,
+          "text": "3 A Century and a Half of Theory Building towards RH"
+        },
+        {
+          "line": 759,
+          "text": "3.1 Harmonic Analysis and Functional Analysis"
+        },
+        {
+          "line": 760,
+          "text": "3.1.1 Hilbert spaces and spectral theory:"
+        },
+        {
+          "line": 767,
+          "text": "3.1.2 Scattering theory and spectral interpretation:"
+        },
+        {
+          "line": 776,
+          "text": "3.2 Algebraic and Arithmetic Geometry"
+        },
+        {
+          "line": 782,
+          "text": "3.2.1 Weil’s proof for function fields:"
+        },
+        {
+          "line": 816,
+          "text": "3.2.2 Grothendieck’s schemes and étale cohomology:"
+        },
+        {
+          "line": 845,
+          "text": "3.2.3 Motives"
+        },
+        {
+          "line": 860,
+          "text": "3.3 Automorphic Forms and Representation Theory"
+        },
+        {
+          "line": 874,
+          "text": "3.3.1 Langlands Program:"
+        },
+        {
+          "line": 886,
+          "text": "3.3.2 Modular forms and L-functions:"
+        },
+        {
+          "line": 903,
+          "text": "3.3.3 Selberg trace formula and zeta functions:"
+        },
+        {
+          "line": 940,
+          "text": "3.4 Random Matrix Theory and Quantum Chaos"
+        },
+        {
+          "line": 941,
+          "text": "3.4.1 Montgomery’s pair correlation:"
+        },
+        {
+          "line": 963,
+          "text": "3.4.2 Odlyzko’s statistics:"
+        },
+        {
+          "line": 1006,
+          "text": "3.4.3 Quantum chaos:"
+        },
+        {
+          "line": 1014,
+          "text": "3.4.4 Katz-Sarnak theory"
+        },
+        {
+          "line": 1033,
+          "text": "3.4.5 Moments and unitary matrices (Keating–Snaith):"
+        },
+        {
+          "line": 1079,
+          "text": "3.5 Noncommutative Geometry"
+        },
+        {
+          "line": 1080,
+          "text": "3.5.1 Connes’ trace formula"
+        },
+        {
+          "line": 1109,
+          "text": "3.5.2 Knots, primes and class field theory"
+        },
+        {
+          "line": 1135,
+          "text": "3.6 p-adic and Motivic L-functions"
+        },
+        {
+          "line": 1136,
+          "text": "3.6.1 p-adic L-functions and Iwasawa theory:"
+        },
+        {
+          "line": 1149,
+          "text": "3.6.2 Motivic L-functions and Bloch–Kato conjectures:"
+        },
+        {
+          "line": 1165,
+          "text": "3.7 Computational and Experimental Mathematics"
+        },
+        {
+          "line": 1166,
+          "text": "3.7.1 High-precision computations"
+        },
+        {
+          "line": 1189,
+          "text": "4 Equivalent Formulations"
+        },
+        {
+          "line": 1199,
+          "text": "4.1 Weil’s Positivity Criterion"
+        },
+        {
+          "line": 1239,
+          "text": "1 x − x−1"
+        },
+        {
+          "line": 1265,
+          "text": "4.2 Beurling–Nyman criterion:"
+        },
+        {
+          "line": 1276,
+          "text": "4.3 Li’s criterion"
+        },
+        {
+          "line": 1289,
+          "text": "4.4 Elementary Number-Theoretic Formulations"
+        },
+        {
+          "line": 1305,
+          "text": "4.4.1 Robin’s Criterion (1984)"
+        },
+        {
+          "line": 1311,
+          "text": "4.4.2 Lagarias’ Criterion (2002)"
+        },
+        {
+          "line": 1349,
+          "text": "5 A Letter to Professor Bernhard Riemann"
+        },
+        {
+          "line": 1362,
+          "text": "T O P ROFESSOR B ERNHARD R IEMANN"
+        },
+        {
+          "line": 1447,
+          "text": "9 The Mellin transform of φ ( u ) is defined as M(φ )( s ) ="
+        },
+        {
+          "line": 1449,
+          "text": "0 u φ(u)du"
+        },
+        {
+          "line": 1450,
+          "text": "10 See §6.1"
+        },
+        {
+          "line": 1451,
+          "text": "11 Which is normalized here as the imaginary line"
+        },
+        {
+          "line": 1474,
+          "text": "D IFFERENCES B ETWEEN VALUES ( USING PRIMES ≤ 13)"
+        },
+        {
+          "line": 1494,
+          "text": "13 here, the corresponding set of zeros will converge towards the zeros of zeta."
+        },
+        {
+          "line": 1508,
+          "text": "13 uniformly on compact subsets"
+        },
+        {
+          "line": 1517,
+          "text": "6 The strategy and the next small steps"
+        },
+        {
+          "line": 1544,
+          "text": "6.1 The Fourier transform of θ x has all its zeros on the real line"
+        },
+        {
+          "line": 1562,
+          "text": "6.2 Riemann’s Ξ function and Hermite functions"
+        },
+        {
+          "line": 1567,
+          "text": "14 It is used for the trigonometric truncation at N = 100 in the computation presented in the letter"
+        },
+        {
+          "line": 1583,
+          "text": "1 dx 2"
+        },
+        {
+          "line": 1593,
+          "text": "Z ∞ Z ∞"
+        },
+        {
+          "line": 1615,
+          "text": "6.3 The prolate wave functions enter the scene"
+        },
+        {
+          "line": 1631,
+          "text": "15 The traditional notation for this function is Ξ ( t ) instead of Riemann’s ξ (t )."
+        },
+        {
+          "line": 1632,
+          "text": "16 C. E. Shannon, Communication in the Presence of Noise, Proc. IRE 37 (1949), 10–21."
+        },
+        {
+          "line": 1633,
+          "text": "17 The normalized Fourier transform is defined by"
+        },
+        {
+          "line": 1689,
+          "text": "6.4 The Poisson formula and the approximation kλ of θ x , λ = x."
+        },
+        {
+          "line": 1708,
+          "text": "18 With our normalization, time duration is T = 2λ and bandlimit is W = λ."
+        },
+        {
+          "line": 1709,
+          "text": "19 see [47], Theorem 1. Note that χ ( λ )2 = λ ( a ) with a ="
+        },
+        {
+          "line": 1756,
+          "text": "6.5 kλ → b"
+        },
+        {
+          "line": 1775,
+          "text": "6.6 Remaining steps"
+        },
+        {
+          "line": 1782,
+          "text": "7 Geometric Perspectives"
+        },
+        {
+          "line": 1806,
+          "text": "7.1 Archimedean trace formula"
+        },
+        {
+          "line": 1813,
+          "text": "\u0010 \u0011 Z"
+        },
+        {
+          "line": 1834,
+          "text": "7.2 Archimedean Weil positivity"
+        },
+        {
+          "line": 1850,
+          "text": "7.3 The semilocal adele class space"
+        },
+        {
+          "line": 1877,
+          "text": "2. The stalk of O ⋊ Gm at the generic point is the global cross product S(AQ ) ⋊ Q× ."
+        },
+        {
+          "line": 1878,
+          "text": "3. The global sections of O ⋊ Gm form the cross product S(R) ⋊ {±1}."
+        },
+        {
+          "line": 1887,
+          "text": "7.4 The semilocal trace formula"
+        },
+        {
+          "line": 1910,
+          "text": "7.5 The infrared and ultraviolet regimes"
+        },
+        {
+          "line": 1961,
+          "text": "1 j 2k"
+        },
+        {
+          "line": 1964,
+          "text": "2 j=0"
+        },
+        {
+          "line": 1978,
+          "text": "7.6 The prolate wave operator"
+        },
+        {
+          "line": 2052,
+          "text": "8 Conclusion"
+        },
+        {
+          "line": 2089,
+          "text": "chapter in this ongoing story."
+        },
+        {
+          "line": 2111,
+          "text": "2 Selberg’s mollifier was of the form"
+        },
+        {
+          "line": 2120,
+          "text": "3 For a meromorphic function f in the complex plane, the Nevanlinna characteristic is defined by"
+        },
+        {
+          "line": 2137,
+          "text": "Z \u0010 \u0011"
+        },
+        {
+          "line": 2147,
+          "text": "4 The theorem states that for fixed σ > 1 / 2, the values"
+        },
+        {
+          "line": 2176,
+          "text": "6 It is of the form"
+        },
+        {
+          "line": 2205,
+          "text": "8 More precisely one has"
+        },
+        {
+          "line": 2224,
+          "text": "11 The module extends to a multiplicative map | • | from the ring A ="
+        },
+        {
+          "line": 2253,
+          "text": "References"
+        },
+        {
+          "line": 2366,
+          "text": "(N.S.) 23 (1990), 147–182."
+        },
+        {
+          "line": 2507,
+          "text": "A LAIN C ONNES"
+        }
+      ],
+      "normalized_bytes": 170695,
+      "normalized_page_count": 42,
+      "normalized_relpath": "normalized/connes2026_rh_past_present_b4257c16f11d.txt",
+      "normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "prior_v1_units": [],
+      "source_id": "connes2026_rh_past_present",
+      "source_type": "survey-with-new-research-program",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "historical-foundational",
+        "weil-positivity",
+        "trace-formula",
+        "speculative-program"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2026,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/connes2026_rh_past_present_b4257c16f11d.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "41c38a17f8c6bdb38e0d930319187967b9f736fbf004ff049c0cc8c17c229b3d"
+}

@@ -1,0 +1,203 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w986718947_337aa4e1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w986718947",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact main terms, error exponents, and moment formulas are absent from the normalized extraction. Only the dependency structure among Theorems 1-3 and the stated strip restrictions is safe to retain.",
+      "line_end": 110,
+      "line_start": 16,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Critical scan dependency: theorem displays at lines 20-34, 53-67, and 91-99 are missing. Verify every quantitative claim, parameter range, and exponent against the PDF before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction explains that the sought critical-strip analogue of Atkinson's formula fills a known methodological gap. A parameterized corollary is then estimated and optimized to obtain the mean-square error bound, while a higher-moment result follows by the same architecture. The source also identifies the line sigma=3/4 as a structural barrier rather than a cosmetic endpoint.",
+      "source_id": "openalex_w986718947",
+      "source_normalized_sha256": "bb793dfe0069eaf9368f551cb696bb65cbffa80c0cd633a143a08a706788b6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An explicit Atkinson-type formula becomes the intermediate object from which error and moment results are derived",
+      "unit_artifact_relpath": "depth/units/w986718947_atkinson_formula_organizes_mean_square_errors.txt",
+      "unit_bytes": 3469,
+      "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+      "unit_sha256": "60449a08fefdf2803b8897b9a5ac5ad5bebaed11c2c330310f571ff5535cb5f3",
+      "unit_type": "result_architecture_and_barrier",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w986718947_atkinson_formula_organizes_mean_square_errors.txt",
+      "source": {
+        "source_id": "openalex_w986718947",
+        "title": "The mean square of the Riemann zeta-function in the critical strip",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 1989,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 8,
+          "line_end": 15,
+          "text": "                                  in     the   critical   strip\n\n\n                                  By Kohji MATSUMOTO\n\n                                 (Received April 20, 1987)\n\n\n",
+          "sha256": "ad8e78df6bfbb4ea053b2af4a933a274053dd0a005a8ce998ed778277e4ebf4f"
+        },
+        "after": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "      The aim of the following sections is to prove Theorem 2. In the next\nsection, we first prepare some results on the sums of the arithmetic function\na1-2Q(n).\n\n\n        §2.   Lemmas     on the divisor     function      ai-2a('l)\n        Let\n\n",
+          "sha256": "3c6572c8cdb552cf3619c5578dd3612e2aae6f7afecc80ea48bffc3d42356707"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_be979ee9905aaa3a46b92d521d297868172e125752ea05431e7fb8fe3bd4443d",
+        "dossier_sha256": "e03ef65b9091dd78368e49fb3b2bfe44ffc14e8687ff33664f1eeee2d873da19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statement of results",
+            "line_end": 115,
+            "line_start": 16,
+            "mathematical_role": "announces a sharpened mean-square error, an Atkinson-type formula, moment consequences, and the three-quarter barrier; core displays are missing"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 110,
+          "line_start": 16,
+          "title": "An explicit Atkinson-type formula becomes the intermediate object from which error and moment results are derived",
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "unit_type": "result_architecture_and_barrier",
+          "why_material": "The introduction explains that the sought critical-strip analogue of Atkinson's formula fills a known methodological gap. A parameterized corollary is then estimated and optimized to obtain the mean-square error bound, while a higher-moment result follows by the same architecture. The source also identifies the line sigma=3/4 as a structural barrier rather than a cosmetic endpoint."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact main terms, error exponents, and moment formulas are absent from the normalized extraction. Only the dependency structure among Theorems 1-3 and the stated strip restrictions is safe to retain.",
+          "representation_dependency": "Critical scan dependency: theorem displays at lines 20-34, 53-67, and 91-99 are missing. Verify every quantitative claim, parameter range, and exponent against the PDF before reuse.",
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 174,
+            "line_start": 116,
+            "title": "Use the full Voronoi expansion for structure and a truncated version for robust upper bounds",
+            "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+            "unit_type": "representation_choice_and_convergence_boundary",
+            "why_material": "The source imports Oppenheim's Voronoi-type formula for a generalized divisor summatory function, notes that its bounded convergence fails beyond the three-quarter threshold, and then switches to a finite truncation better suited to estimation. Choosing the truncation parameter yields the lemma needed later for error control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source points to convergence of the main infinite series, the continuation region of a difficult component, absolute convergence of saddle-point remainders, and removal of the final cut as independent places requiring sigma below three quarters.",
+            "limit": "Because the defining series and exponents are absent, the exact equivalence or sharpness of these restrictions must be rechecked in the PDF.",
+            "parent_local_unit_ids": [
+              "w986718947_atkinson_formula_organizes_mean_square_errors",
+              "w986718947_voronoi_full_vs_truncated_forms",
+              "w986718947_componentwise_continuation_isolates_obstruction",
+              "w986718947_saddle_point_evaluation_pipeline",
+              "w986718947_remove_cuts_and_assemble"
+            ],
+            "title": "The three-quarter line appears through multiple convergence obligations, not one arbitrary theorem range"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 34,
+              "line_start": 24,
+              "reason": "Theorem 1's central display and error estimate are absent; only its strip and dependency are visible."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 47,
+              "line_start": 35,
+              "reason": "Notation conventions, critical-line comparison, and motivation for an Atkinson analogue."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 67,
+              "line_start": 48,
+              "reason": "Theorem 2's Atkinson-type formula and definitions are missing from normalized text."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 99,
+              "line_start": 91,
+              "reason": "Theorem 3 and its corollary have no surviving displayed statements."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 124,
+              "line_start": 116,
+              "reason": "Introduces the generalized divisor summatory function and Oppenheim's result."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+        "spontaneous": {
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "spontaneous_reading": "The central mathematical move is to make an explicit Atkinson-type formula the intermediate object rather than estimate the mean-square error directly. A parameterized consequence can then be bounded and optimized for the error theorem, while the same representation supports a higher-moment consequence; the line σ=3/4 appears as a convergence barrier shared by these deductions."
+        },
+        "directed": {
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "source_grounded_mathematics": "The introduction announces a sharpening of a mean-square asymptotic for 1/2<σ<3/4, an Atkinson-type formula in the same strip, and a higher-moment theorem and corollary derived analogously from that formula. It says Theorem 1 follows from a parameterized corollary to Theorem 2 by trivial estimation and a choice of the parameter, while Theorem 3 follows by an argument parallel to the critical-line case. It also states that convergence of the main infinite series and a vanishing exponent at σ=3/4 expose that line as a barrier.",
+          "conceptual_reading": "The explicit formula separates representation from estimation: it is a reusable structural description from which different outputs are obtained by different bounding or moment arguments. Parameter optimization belongs to the downstream estimate, not to the identity itself, and the strip boundary records a proof obligation rather than a cosmetic theorem range.",
+          "representation_or_bridge": "The bridge is Theorem 2's Atkinson-type representation, followed by a parameterized corollary whose right-hand side is estimated and optimized to reach Theorem 1; the same representation is cited as the basis for Theorem 3. The actual series, main terms, and error terms are absent.",
+          "boundary_or_failure": "The displays for Theorems 1-3 and the corollary did not survive normalization. No exponent, coefficient, main term, parameter range beyond the prose-visible strip, or exact moment formula is safe to transcribe.",
+          "uncertainty": "Low uncertainty about theorem dependency and the stated three-quarter barrier; critical uncertainty about all quantitative statements."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+        "critic_decision": "revise",
+        "supported": [
+          "The source presents Theorem 2 as an Atkinson-type formula in the strip 1/2<sigma<3/4 and explicitly says Theorem 1 is deduced from a parameterized corollary by trivial estimation and a parameter choice.",
+          "It explicitly says Theorem 3 is deduced from Theorem 2 by an argument similar to the critical-line case.",
+          "The source identifies sigma=3/4 as a barrier through convergence of an infinite main-term series and through an exponent in the corollary that vanishes at that line."
+        ],
+        "inference": [
+          "Treating the Atkinson-type formula as a reusable intermediate representation and separating it from downstream optimization is a reasonable conceptual synthesis of the stated theorem dependencies.",
+          "Calling the strip boundary a proof obligation rather than a cosmetic range is interpretive but consistent with the source's statement that the main reason for the restriction lies in the proof of Theorem 2."
+        ],
+        "unsupported_or_imported": [
+          "The surviving text does not establish that Theorem 3 and its corollary are specifically a higher-moment result because their displayed statements are absent; describing them that way is more specific than the recoverable evidence."
+        ],
+        "paraphrase_or_style_risk": [
+          "The polished language about representation, reuse, and optimization is an analytical abstraction rather than the source's terminology, but it does not otherwise change the dependency structure."
+        ],
+        "context_or_ocr_risk": [
+          "All substantive displays for Theorems 1-3, the corollary, and equation (1.3) are missing or corrupted, so no exact main term, exponent, coefficient, moment order, or parameter formula can be checked.",
+          "OCR confuses sigma with other characters throughout the strip statements."
+        ],
+        "missed_mechanism": [
+          "The candidate could more clearly preserve the source's distinction between convergence of the main series as one visible reason for sigma<3/4 and the proof of Theorem 2 as the stated main reason."
+        ],
+        "revision_instructions": [
+          "Replace 'higher-moment theorem' and 'higher-moment consequence' with the source-safe description 'a further theorem and corollary concerning the order of the error term' unless the missing displays are recovered.",
+          "Keep all quantitative content excluded and state the two distinct roles assigned to the sigma=3/4 barrier: main-series convergence and the proof restriction in Theorem 2."
+        ]
+      }
+    }
+  ]
+}

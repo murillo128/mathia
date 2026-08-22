@@ -1,0 +1,2226 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2511750669_11bed05b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2511750669",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the authors' overview; the supporting constructions and their qualifications occur later. It is a conditional program, not an established self-adjoint realization or an RH proof.",
+      "line_end": 88,
+      "line_start": 47,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (1), fractions, operator ordering, and the critical-line notation are formula-bearing and should be checked against the retained PDF before exact symbolic reuse; the prose-level claims are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states its central construction and separates several consequences: the origin boundary condition maps spectral parameters to nontrivial zeta zeros, the commuting limit is 2xp, modified PT symmetry supplies a possible reality route, a new inner product is proposed, and off-critical zeros would produce degeneracy.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Difference-conjugated Hamiltonian as a conditional zero spectrum",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u01.txt",
+      "unit_bytes": 5285,
+      "unit_id": "openalex_w2511750669_u01",
+      "unit_sha256": "e1e6608e4d17de9229f2bb627a32930b97974833047d9e9d8e5a38db2926267e",
+      "unit_type": "construction-and-conditional-claim",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u01.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 39,
+          "line_end": 46,
+          "text": "                                                                kz    Γ(z) 0      et − 1                    trices have the same distribution [2–4]. Berry and Keat-\n                                                               k=1\n                                                                                                            ing conjectured that the classical counterpart of such a\n                                           (The integral reduces to the sum if the denominator of           Hamiltonian would have the form H = xp [5, 6]. How-\n                                           the integrand is expanded in a geometric series.) Both           ever, a Hamiltonian possessing this property has hith-\n                                           representations converge and define ζ(z) as an analytic          erto not been found (see [7] for a detailed account of the\n                                           function when ℜ(z) > 1. These representations diverge            Berry-Keating programme and its extensions).\n                                           when z = 1 because the zeta function has a simple pole\n",
+          "sha256": "02ad744ff1aeaf7d3b9c4051a5ed7e8c90f4793c7b4e9e49ee3efb448538995a"
+        },
+        "after": {
+          "line_start": 89,
+          "line_end": 96,
+          "text": "Preliminaries. The Hamiltonian Ĥ in (1) is a similarity\n                                                                                1           1\n                                                                                                Z\ntransformation of the formally Hermitian local Hamilto-                                 =         du eu un+z−2 ,\nnian x̂p̂ + p̂x̂ via the nonlocal operator ∆ˆ := 1 − e−ip̂ .             Γ(2 − z − n)      2πi C\nWe must therefore identify properties of the operators\n ˆ and ∆ ˆ −1 . We work in units for which ~ = 1, so the       where C denotes a Hankel contour that encircles the\n∆\n",
+          "sha256": "cccf349da2e625844458f2399ee43fff39d77f2a7722c1402c591584c5fd575a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta background and spectral proposal",
+            "line_end": 88,
+            "line_start": 34,
+            "mathematical_role": "Introduces zeta representations and the RH/Hilbert-Polya motivation, then states the Hamiltonian and the paper's five principal conditional findings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 88,
+          "line_start": 47,
+          "title": "Difference-conjugated Hamiltonian as a conditional zero spectrum",
+          "unit_id": "openalex_w2511750669_u01",
+          "unit_type": "construction-and-conditional-claim",
+          "why_material": "The source states its central construction and separates several consequences: the origin boundary condition maps spectral parameters to nontrivial zeta zeros, the commuting limit is 2xp, modified PT symmetry supplies a possible reality route, a new inner product is proposed, and off-critical zeros would produce degeneracy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the authors' overview; the supporting constructions and their qualifications occur later. It is a conditional program, not an established self-adjoint realization or an RH proof.",
+          "representation_dependency": "Equation (1), fractions, operator ordering, and the critical-line notation are formula-bearing and should be checked against the retained PDF before exact symbolic reuse; the prose-level claims are legible.",
+          "unit_id": "openalex_w2511750669_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 144,
+            "line_start": 89,
+            "title": "Finite difference, its kernel, and a decay-qualified inverse",
+            "unit_id": "openalex_w2511750669_u02",
+            "unit_type": "operator-domain-construction",
+            "why_material": "Writing the proposed Hamiltonian as a similarity transform through Delta exposes the key structural issue: Delta is a unit shift difference, annihilates unit-periodic functions, and therefore has no inverse on all smooth functions. The authors restrict attention to functions vanishing at infinity and give a Bernoulli/Borel prescription whose right-inverse property is tied to that boundary choice."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 46,
+              "line_start": 34,
+              "reason": "Standard zeta representations, convergence region, pole, reflection-formula route to trivial zeros, and broad motivation orient the construction but do not supply its novel reusable mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u01",
+          "spontaneous_reading": "The mathematical work is done by conjugating a dilation-type operator with a finite-difference operator and then using a boundary value at the origin to turn its spectral parameter into a zeta zero. The remaining claims are a conditional program for reality, an inner product, and degeneracy, not a completed spectral realization."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u01",
+          "source_grounded_mathematics": "The source proposes a non-Hermitian Hamiltonian formed by placing the symmetrized dilation operator between a unit-shift difference and its formal inverse. Requiring every eigenfunction to vanish at the origin is said to make one half of one minus i times each eigenvalue a nontrivial zero of ζ; the overview also states a 2xp commuting limit, modified PT symmetry, a new pairing, and a degeneracy consequence for off-critical zeros.",
+          "conceptual_reading": "Similarity transport is used to recode analytic zero data as boundary-selected spectral data. The key compression is that one boundary condition is intended to perform both zero selection and later operator-theoretic work.",
+          "representation_or_bridge": "The bridge objects are the finite-difference operator, the symmetrized dilation Hamiltonian, the spectral parameter z, and the origin evaluation of the eventual Hurwitz-zeta eigenfunction.",
+          "boundary_or_failure": "Every headline conclusion remains formal or conditional here. In particular, the span does not establish a self-adjoint domain, spectral completeness, or reality of the proposed eigenvalues, so it is not an RH proof.",
+          "uncertainty": "The operator ordering, fractions, and critical-line typography are extraction-sensitive; only the prose-supported structure and conditional claims are secure from this artifact."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inverse is formal for some functions and is explicitly described as Borel summable; no unrestricted operator inverse or complete domain is established.",
+      "line_end": 144,
+      "line_start": 89,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two-column extraction interleaves equations (2)-(4), contour integrals, and prose. Exact coefficients, contour orientation, and inverse-operator placement require original-PDF verification, while the kernel and boundary-at-infinity mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Writing the proposed Hamiltonian as a similarity transform through Delta exposes the key structural issue: Delta is a unit shift difference, annihilates unit-periodic functions, and therefore has no inverse on all smooth functions. The authors restrict attention to functions vanishing at infinity and give a Bernoulli/Borel prescription whose right-inverse property is tied to that boundary choice.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite difference, its kernel, and a decay-qualified inverse",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u02.txt",
+      "unit_bytes": 5019,
+      "unit_id": "openalex_w2511750669_u02",
+      "unit_sha256": "c001163ace0903a1cc0239127be4f0d0c31a7eac23d6fb6d7ccd2404bc535536",
+      "unit_type": "operator-domain-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u02.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "for all ϕ(x) and ψ(x) belonging to the linear span of the                             ∞\neigenstates of Ĥ. (v) If the Riemann hypothesis is cor-          ˆ −1 x−z ∼ Γ(2 − z)\n                                                                                      X    (−1)n x1−z−n\n                                                                  ∆                     Bn                   ,            (4)\nrect, then the eigenvalues of Ĥ are nondegenerate, and                       1 − z n=0      n! Γ(2 − z − n)\nconversely if there are nontrivial roots of ζ(z) for which\nℜ(z) 6= 12 then the corresponding eigenvalues and eigen-       which is valid in the limit as x → ∞. To obtain the Borel\nstates are both degenerate.                                    sum [10] of the series, we use the integral representation\n",
+          "sha256": "96e63013e006d8be0787405467757973950289946aa9fb038589e017062deff6"
+        },
+        "after": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "Eigenfunctions and eigenvalues. The solutions to the           differential operator, we impose just one boundary con-\neigenvalue differential equation Ĥψ = Eψ are given in         dition.) The choice of the boundary condition ψz (0) = 0,\nterms of the Hurwitz zeta function ψz (x) = −ζ(z, x + 1)       as discussed below, is motivated by our requirement that\non the positive half line R+ (the negative sign is our         p̂ should be symmetric. Because −ψz (0) = ζ(z) is the\nconvention), with eigenvalues i(2z − 1). To see this, we       Riemann zeta function, the boundary condition that we\nmultiply the eigenvalue equation Ĥψ = Eψ on the left          have used implies that z must belong to the discrete set\nby ∆.ˆ This gives a first-order linear differential equation   of zeros of ζ(z).\n            ˆ = E ∆ψ\n",
+          "sha256": "f51944eb90f5269ae7a3fd41b3b0852d79551248f5c4d0dea64a0e7dcf2d3d94"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Preliminaries: difference operator and restricted inverse",
+            "line_end": 144,
+            "line_start": 89,
+            "mathematical_role": "Represents the Hamiltonian as a similarity transform of the dilation Hamiltonian, identifies the finite-difference kernel obstruction, and defines an inverse only with decay-at-infinity and Borel-summation qualifications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 144,
+          "line_start": 89,
+          "title": "Finite difference, its kernel, and a decay-qualified inverse",
+          "unit_id": "openalex_w2511750669_u02",
+          "unit_type": "operator-domain-construction",
+          "why_material": "Writing the proposed Hamiltonian as a similarity transform through Delta exposes the key structural issue: Delta is a unit shift difference, annihilates unit-periodic functions, and therefore has no inverse on all smooth functions. The authors restrict attention to functions vanishing at infinity and give a Bernoulli/Borel prescription whose right-inverse property is tied to that boundary choice."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inverse is formal for some functions and is explicitly described as Borel summable; no unrestricted operator inverse or complete domain is established.",
+          "representation_dependency": "The two-column extraction interleaves equations (2)-(4), contour integrals, and prose. Exact coefficients, contour orientation, and inverse-operator placement require original-PDF verification, while the kernel and boundary-at-infinity mechanism is explicit in prose.",
+          "unit_id": "openalex_w2511750669_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 88,
+            "line_start": 47,
+            "title": "Difference-conjugated Hamiltonian as a conditional zero spectrum",
+            "unit_id": "openalex_w2511750669_u01",
+            "unit_type": "construction-and-conditional-claim",
+            "why_material": "The source states its central construction and separates several consequences: the origin boundary condition maps spectral parameters to nontrivial zeta zeros, the commuting limit is 2xp, modified PT symmetry supplies a possible reality route, a new inner product is proposed, and off-critical zeros would produce degeneracy."
+          },
+          {
+            "line_end": 151,
+            "line_start": 118,
+            "title": "Hurwitz-zeta eigenfunctions and boundary selection of zeta zeros",
+            "unit_id": "openalex_w2511750669_u03",
+            "unit_type": "eigenfunction-derivation",
+            "why_material": "The Borel-summed inverse applied to a power is recognized as a Hurwitz-zeta representation. The resulting eigenfunction is minus the Hurwitz zeta, and imposing its value at the origin to vanish makes the spectral parameter a zero of the Riemann zeta function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's core chain is representation-theoretic: conjugate a dilation operator by a decay-qualified finite difference inverse, identify the resulting power inverse with a Hurwitz-zeta eigenfunction, impose the origin value to select Riemann-zeta zeros, and use asymptotics to exclude trivial-zero states from the proposed domain.",
+            "limit": "The inverse, domain, and displayed formulas are formal or extraction-sensitive, and the chain does not establish self-adjointness or completeness.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u03",
+              "openalex_w2511750669_u04"
+            ],
+            "title": "From finite difference to zeta-zero boundary spectrum"
+          },
+          {
+            "claim": "The source relates the nonlocal finite-difference Hamiltonian to Berry-Keating-type representatives both by similarity transport of the boundary condition and by shrinking an epsilon-scaled difference toward a momentum-conjugated dilation operator.",
+            "limit": "The exact transported quantization formula and limiting operator order require scan verification, and neither bridge supplies a self-adjoint domain.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u08",
+              "openalex_w2511750669_u15"
+            ],
+            "title": "Difference-scale deformation toward Berry-Keating form"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u02",
+          "spontaneous_reading": "The finite difference is not merely notation: its periodic kernel forces a domain choice, and decay at infinity supplies the missing boundary data for a qualified inverse. Borel summation then turns that inverse into the mechanism that produces a Hurwitz-zeta function."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u02",
+          "source_grounded_mathematics": "With momentum represented by differentiation, Δ acts as f(x) minus f(x−1). It annihilates unit-periodic functions and therefore has no inverse on all smooth functions. The source restricts attention to functions vanishing at infinity, defines a Bernoulli-series inverse with an integration boundary at infinity, notes that the series may require Borel summation, and identifies its action on a power with minus a Hurwitz-zeta representation.",
+          "conceptual_reading": "The inverse is a boundary-conditioned reconstruction from discrete increments: it forgets periodic components, and the decay condition chooses a representative. This exposes the domain choice rather than hiding it inside a formal similarity transform.",
+          "representation_or_bridge": "The bridge runs from the shift difference Δ, through a Bernoulli expansion and Hankel-contour Borel sum, to the Hurwitz zeta function. The power x to a complex exponent is the intermediate eigenfunction representation before inversion.",
+          "boundary_or_failure": "Δ has a nontrivial periodic kernel, and the claimed inverse is only qualified by decay and summability. No unrestricted inverse, full operator domain, or bounded similarity map is established.",
+          "uncertainty": "The interleaved extraction makes exact coefficients, contour details, and inverse placement unsafe to reuse without the retained PDF; the kernel and boundary-at-infinity mechanism are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The additive unit-periodic ambiguity is removed by the eigenvalue equation according to the source. The single origin condition is motivated by the similarity to a first-order differential operator and later by momentum symmetry.",
+      "line_end": 151,
+      "line_start": 118,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed contour and eigenvalue formulas are extraction-risky; verify them in the PDF for exact normalization and signs. The identification, periodic-ambiguity statement, and boundary-to-zero implication are recoverable from the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Borel-summed inverse applied to a power is recognized as a Hurwitz-zeta representation. The resulting eigenfunction is minus the Hurwitz zeta, and imposing its value at the origin to vanish makes the spectral parameter a zero of the Riemann zeta function.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hurwitz-zeta eigenfunctions and boundary selection of zeta zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u03.txt",
+      "unit_bytes": 3307,
+      "unit_id": "openalex_w2511750669_u03",
+      "unit_sha256": "00f1723f0e6507ef3a3219bc24f10cbf50eb4327ee893c7410037cf39dec815e",
+      "unit_type": "eigenfunction-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u03.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 110,
+          "line_end": 117,
+          "text": "                                                                                     Z\n              ˆ\n              ∆f (x) = f (x) − f (x − 1).               (2)            =         x      du           .\n                                                                           2πi        C    1 − e−u/x\nBecause ∆ˆ annihilates unit-periodic functions, it does not\n                                                               Finally, we let u/x = t and get\nhave an inverse in the space of all smooth functions. How-\never, we shall be interested in functions that vanish as\n",
+          "sha256": "91f9d4f47910c63b18d4e90b3d95417a66de566ab4af9349c72a3e150efa5774"
+        },
+        "after": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "            ˆ = E ∆ψ\n(x̂p̂+ p̂x̂)∆ψ      ˆ for the function ∆ψ,\n                                        ˆ whose solution          The zeros of the Riemann zeta function may be ei-\n                             ˆ      −z\nis unique and is given by ∆ψ = x for some z ∈ C, up            ther trivial or nontrivial. It follows from (4) that for\nto a multiplicative constant. To proceed, let us calculate     the trivial zeros z = −2n (n = 1, 2, 3, . . .) we have\n                                                               ψz (x) = −B2n+1 (x + 1)/(2n + 1), where Bn (x) is a\n                           ∞\n",
+          "sha256": "d40f5ba15b16ea45f441846cea7781970907ccc018241fcce5b50e8587055424"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Preliminaries: difference operator and restricted inverse",
+            "line_end": 144,
+            "line_start": 89,
+            "mathematical_role": "Represents the Hamiltonian as a similarity transform of the dilation Hamiltonian, identifies the finite-difference kernel obstruction, and defines an inverse only with decay-at-infinity and Borel-summation qualifications."
+          },
+          {
+            "label": "Eigenfunctions, zeros, and asymptotic domain discrimination",
+            "line_end": 202,
+            "line_start": 145,
+            "mathematical_role": "Derives Hurwitz-zeta eigenfunctions, turns the origin boundary condition into the zeta-zero condition, contrasts trivial and nontrivial asymptotics, and marks the subsequent reality argument as heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 151,
+          "line_start": 118,
+          "title": "Hurwitz-zeta eigenfunctions and boundary selection of zeta zeros",
+          "unit_id": "openalex_w2511750669_u03",
+          "unit_type": "eigenfunction-derivation",
+          "why_material": "The Borel-summed inverse applied to a power is recognized as a Hurwitz-zeta representation. The resulting eigenfunction is minus the Hurwitz zeta, and imposing its value at the origin to vanish makes the spectral parameter a zero of the Riemann zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The additive unit-periodic ambiguity is removed by the eigenvalue equation according to the source. The single origin condition is motivated by the similarity to a first-order differential operator and later by momentum symmetry.",
+          "representation_dependency": "Displayed contour and eigenvalue formulas are extraction-risky; verify them in the PDF for exact normalization and signs. The identification, periodic-ambiguity statement, and boundary-to-zero implication are recoverable from the prose.",
+          "unit_id": "openalex_w2511750669_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 144,
+            "line_start": 89,
+            "title": "Finite difference, its kernel, and a decay-qualified inverse",
+            "unit_id": "openalex_w2511750669_u02",
+            "unit_type": "operator-domain-construction",
+            "why_material": "Writing the proposed Hamiltonian as a similarity transform through Delta exposes the key structural issue: Delta is a unit shift difference, annihilates unit-periodic functions, and therefore has no inverse on all smooth functions. The authors restrict attention to functions vanishing at infinity and give a Bernoulli/Borel prescription whose right-inverse property is tied to that boundary choice."
+          },
+          {
+            "line_end": 186,
+            "line_start": 154,
+            "title": "Asymptotics separate trivial-zero states from the proposed domain",
+            "unit_id": "openalex_w2511750669_u04",
+            "unit_type": "asymptotic-domain-test",
+            "why_material": "The source contrasts polynomially growing Bernoulli-polynomial states at trivial zeros with sublinear nontrivial-zero states, and correspondingly distinguishes whether Delta applied to the state vanishes at infinity. Together with the later orthogonality behavior, this is used to exclude trivial-zero states from the Hamiltonian domain while retaining a discrete spectrum indexed by nontrivial zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's core chain is representation-theoretic: conjugate a dilation operator by a decay-qualified finite difference inverse, identify the resulting power inverse with a Hurwitz-zeta eigenfunction, impose the origin value to select Riemann-zeta zeros, and use asymptotics to exclude trivial-zero states from the proposed domain.",
+            "limit": "The inverse, domain, and displayed formulas are formal or extraction-sensitive, and the chain does not establish self-adjointness or completeness.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u03",
+              "openalex_w2511750669_u04"
+            ],
+            "title": "From finite difference to zeta-zero boundary spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u03",
+          "spontaneous_reading": "Multiplying the eigenvalue equation by the finite difference reduces it to a first-order problem whose solution is a power. Inverting the difference converts that simple power into a Hurwitz-zeta eigenfunction, and evaluation at zero collapses the spectral condition to ζ(z)=0."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u03",
+          "source_grounded_mathematics": "After applying Δ, the eigenvalue equation has a power-law solution parametrized by z. The decay-qualified inverse gives ψz(x)=−ζ(z,x+1), while the eigenvalue equation removes the possible additive unit-periodic term. The single condition ψz(0)=0 then implies that z lies in the discrete zero set of the Riemann zeta function, with eigenvalue proportional to 2z−1.",
+          "conceptual_reading": "A nonlocal eigenproblem is decomposed into a local first-order equation plus an inverse-difference reconstruction. Boundary evaluation is the selector that converts a continuous complex parameter into discrete arithmetic spectral data.",
+          "representation_or_bridge": "The intermediate power law, inverse finite difference, Hurwitz zeta function, and its specialization ζ(z,1)=ζ(z) form the explicit bridge from operator eigenstates to zeta zeros.",
+          "boundary_or_failure": "The construction relies on the restricted inverse and on the assertion that the eigenvalue equation eliminates all periodic ambiguity. The origin condition selects zeros but does not by itself prove that the resulting states form a valid self-adjoint spectral domain.",
+          "uncertainty": "The contour normalization, signs, and displayed eigenvalue formula are extraction-sensitive; the identification and boundary-to-zero implication are clear in the prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claimed RH equivalence is only that reality of these formally obtained eigenvalues matches real part one-half for the selected zeros; it does not establish that the operator realization is self-adjoint.",
+      "line_end": 186,
+      "line_start": 154,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Page-boundary and two-column extraction split several asymptotic formulas. Check the Bernoulli-polynomial normalization, powers, and eigenvalue-to-zero formula against the PDF; the growth comparison and domain conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts polynomially growing Bernoulli-polynomial states at trivial zeros with sublinear nontrivial-zero states, and correspondingly distinguishes whether Delta applied to the state vanishes at infinity. Together with the later orthogonality behavior, this is used to exclude trivial-zero states from the Hamiltonian domain while retaining a discrete spectrum indexed by nontrivial zeros.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotics separate trivial-zero states from the proposed domain",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u04.txt",
+      "unit_bytes": 3069,
+      "unit_id": "openalex_w2511750669_u04",
+      "unit_sha256": "c69b9b9de98964d73d23eda3adc7748a5c27356a2fe760388344ad3625df372a",
+      "unit_type": "asymptotic-domain-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u04.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 146,
+          "line_end": 153,
+          "text": "eigenvalue differential equation Ĥψ = Eψ are given in         dition.) The choice of the boundary condition ψz (0) = 0,\nterms of the Hurwitz zeta function ψz (x) = −ζ(z, x + 1)       as discussed below, is motivated by our requirement that\non the positive half line R+ (the negative sign is our         p̂ should be symmetric. Because −ψz (0) = ζ(z) is the\nconvention), with eigenvalues i(2z − 1). To see this, we       Riemann zeta function, the boundary condition that we\nmultiply the eigenvalue equation Ĥψ = Eψ on the left          have used implies that z must belong to the discrete set\nby ∆.ˆ This gives a first-order linear differential equation   of zeros of ζ(z).\n            ˆ = E ∆ψ\n(x̂p̂+ p̂x̂)∆ψ      ˆ for the function ∆ψ,\n",
+          "sha256": "06c304153d377739fd35865b5d5d3ea11a15860d716357e0188a1f82fadc3d71"
+        },
+        "after": {
+          "line_start": 187,
+          "line_end": 194,
+          "text": "                                                                                                                             −z\n                                                                                                                                .\n   The analysis above establishes a complex extended ver-           The associated Hamiltonian ĥ is unique up to unitary\nsion of the Berry-Keating conjecture [12]. We are not            transformations, so there are infinitely many formally\nable to prove that the eigenvalues of Ĥ are real; neverthe-     Hermitian Hamiltonians that are similar to Ĥ [12]. If\nless, in what follows we present a heuristic analysis that       both η̂ and η̂ −1 are positive, bounded, and Hermitian,\nsuggests that the eigenvalues are real. Specifically, we         then the Hamiltonians Ĥ and ĥ are isospectral [17]. As-\nfirst investigate symmetry properties of Ĥ, which shows         suming that p̂ is Hermitian, these operators are indeed\n",
+          "sha256": "e01b60f11ea59333f12bac59b0dad45bbdeb19052820b09cf54ced28232a25e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Eigenfunctions, zeros, and asymptotic domain discrimination",
+            "line_end": 202,
+            "line_start": 145,
+            "mathematical_role": "Derives Hurwitz-zeta eigenfunctions, turns the origin boundary condition into the zeta-zero condition, contrasts trivial and nontrivial asymptotics, and marks the subsequent reality argument as heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 186,
+          "line_start": 154,
+          "title": "Asymptotics separate trivial-zero states from the proposed domain",
+          "unit_id": "openalex_w2511750669_u04",
+          "unit_type": "asymptotic-domain-test",
+          "why_material": "The source contrasts polynomially growing Bernoulli-polynomial states at trivial zeros with sublinear nontrivial-zero states, and correspondingly distinguishes whether Delta applied to the state vanishes at infinity. Together with the later orthogonality behavior, this is used to exclude trivial-zero states from the Hamiltonian domain while retaining a discrete spectrum indexed by nontrivial zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claimed RH equivalence is only that reality of these formally obtained eigenvalues matches real part one-half for the selected zeros; it does not establish that the operator realization is self-adjoint.",
+          "representation_dependency": "Page-boundary and two-column extraction split several asymptotic formulas. Check the Bernoulli-polynomial normalization, powers, and eigenvalue-to-zero formula against the PDF; the growth comparison and domain conclusion are explicit in prose.",
+          "unit_id": "openalex_w2511750669_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 118,
+            "title": "Hurwitz-zeta eigenfunctions and boundary selection of zeta zeros",
+            "unit_id": "openalex_w2511750669_u03",
+            "unit_type": "eigenfunction-derivation",
+            "why_material": "The Borel-summed inverse applied to a power is recognized as a Hurwitz-zeta representation. The resulting eigenfunction is minus the Hurwitz zeta, and imposing its value at the origin to vanish makes the spectral parameter a zero of the Riemann zeta function."
+          },
+          {
+            "line_end": 202,
+            "line_start": 189,
+            "title": "Reality of the spectrum is left to a heuristic symmetry analysis",
+            "unit_id": "openalex_w2511750669_u05",
+            "unit_type": "epistemic-and-method-boundary",
+            "why_material": "The authors explicitly distinguish their complex extension of the Berry-Keating idea from the missing proof that the eigenvalues are real, and announce the limited route they pursue: modified PT symmetry, pseudo-Hermiticity, an isospectral Berry-Keating representative, and a biorthogonal inner product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's core chain is representation-theoretic: conjugate a dilation operator by a decay-qualified finite difference inverse, identify the resulting power inverse with a Hurwitz-zeta eigenfunction, impose the origin value to select Riemann-zeta zeros, and use asymptotics to exclude trivial-zero states from the proposed domain.",
+            "limit": "The inverse, domain, and displayed formulas are formal or extraction-sensitive, and the chain does not establish self-adjointness or completeness.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u03",
+              "openalex_w2511750669_u04"
+            ],
+            "title": "From finite difference to zeta-zero boundary spectrum"
+          },
+          {
+            "claim": "Growth, excessive distributional divergence, self-orthogonality, Jordan coalescence, infinite norm, and missing completeness function as distinct diagnostics of which proposed states or operator claims fail and why.",
+            "limit": "Some diagnostics are conditional consequences of the formal model or of RH itself and therefore cannot serve as independent evidence for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u04",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u12",
+              "openalex_w2511750669_u13",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Internal diagnostics for a failed spectral realization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u04",
+          "spontaneous_reading": "Asymptotic growth acts as a domain filter. Trivial-zero states become growing Bernoulli polynomials whose finite differences blow up, whereas the proposed nontrivial-zero states grow sublinearly and have differences tending to zero, so the same inverse boundary condition separates the two classes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u04",
+          "source_grounded_mathematics": "For negative even z, the Hurwitz-zeta eigenfunctions reduce to Bernoulli polynomials and grow polynomially; for nontrivial zeros they oscillate and are stated to grow sublinearly. Accordingly, Δψ blows up for trivial-zero states but tends to zero for nontrivial-zero states. Together with a later orthogonality test, the source uses this contrast to exclude trivial-zero states and retain a discrete spectrum indexed by nontrivial zeros.",
+          "conceptual_reading": "The asymptotic condition is doing selection work that the origin boundary condition alone cannot do: both zero classes satisfy ζ(z)=0, but only one is compatible with the decay-qualified reconstruction.",
+          "representation_or_bridge": "Bernoulli-polynomial realization and large-x Hurwitz-zeta asymptotics translate the analytic distinction between trivial and nontrivial zeros into proposed operator-domain behavior.",
+          "boundary_or_failure": "The domain exclusion is an asymptotic and later biorthogonal argument, not a completed domain theorem. Reality of the formally assigned eigenvalues is equivalent to the critical-line condition only inside this proposed spectral correspondence.",
+          "uncertainty": "Page-split formulas, powers, and normalizations require PDF verification; the growth comparison and intended domain conclusion are prose-supported."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is important negative information: it prevents the ensuing formal calculations from being misread as a completed proof.",
+      "line_end": 202,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable despite two-column interleaving; exact representative formulas mentioned in the adjacent column are treated in separate units and require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explicitly distinguish their complex extension of the Berry-Keating idea from the missing proof that the eigenvalues are real, and announce the limited route they pursue: modified PT symmetry, pseudo-Hermiticity, an isospectral Berry-Keating representative, and a biorthogonal inner product.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reality of the spectrum is left to a heuristic symmetry analysis",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u05.txt",
+      "unit_bytes": 1573,
+      "unit_id": "openalex_w2511750669_u05",
+      "unit_sha256": "8400c3fdb269bfc1312eecdf406ebfc61f34c43435373222df072259c4a83ad4",
+      "unit_type": "epistemic-and-method-boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u05.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "the boundary condition ψ(0) = 0, the nth eigenstate of           we obtain ĥ = x̂ p̂ + p̂ x̂ + ~p̂. We include Planck’s con-\nthe Hamiltonian (1) is ψn (x) = −ζ(zn , x + 1); the eigen-       stant ~ explicitly here because it indicates that the linear\nvalues En = i(2zn − 1) are discrete and zn = 12 (1 − iEn )       momentum term is a quantum anomaly; this term van-\nare the nontrivial zeros of the Riemann zeta function.           ishes in the classical limit ~ → 0 [15]. Alternatively, by\nThe Riemann hypothesis is valid if and only if these             letting ρ̂ = ∆   ˆ we obtain the Berry-Keating Hamiltonian\neigenvalues are real.                                            ĥBK = x̂ p̂ + p̂ x̂, whose eigenstates are φBK   z (x) = x\n                                                                                                                             −z\n                                                                                                                                .\n",
+          "sha256": "8aa469b179f0b5de2c41a330c7c2817bf8ea8dfce921e311958d399a98ba8470"
+        },
+        "after": {
+          "line_start": 203,
+          "line_end": 210,
+          "text": "Relation to pseudo-Hermiticity. To gain some intuition\n                                                                 sociated Hamiltonians explicitly by using the relation\nabout the reality of the eigenvalues of the Hamiltonian,\n                                                                 2i sin 21 p̂ ψz (x) = ψz (x + 21 ) − ψz (x − 21 ). For the Berry-\nwe remark first that iĤ is PT symmetric [13, 14] in the\n                                                                 Keating Hamiltonian, the condition ψz (0) = 0 leads to\nfollowing sense. Under conventional parity-time reflec-\ntion, if p̂ is a momentum and x̂ is a coordinate, we have\n",
+          "sha256": "99e0602cca4a32a3fca9cf4f1f2371dadff6df08140ba30d30ed7ca492b832bd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Eigenfunctions, zeros, and asymptotic domain discrimination",
+            "line_end": 202,
+            "line_start": 145,
+            "mathematical_role": "Derives Hurwitz-zeta eigenfunctions, turns the origin boundary condition into the zeta-zero condition, contrasts trivial and nontrivial asymptotics, and marks the subsequent reality argument as heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 202,
+          "line_start": 189,
+          "title": "Reality of the spectrum is left to a heuristic symmetry analysis",
+          "unit_id": "openalex_w2511750669_u05",
+          "unit_type": "epistemic-and-method-boundary",
+          "why_material": "The authors explicitly distinguish their complex extension of the Berry-Keating idea from the missing proof that the eigenvalues are real, and announce the limited route they pursue: modified PT symmetry, pseudo-Hermiticity, an isospectral Berry-Keating representative, and a biorthogonal inner product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is important negative information: it prevents the ensuing formal calculations from being misread as a completed proof.",
+          "representation_dependency": "The prose is recoverable despite two-column interleaving; exact representative formulas mentioned in the adjacent column are treated in separate units and require formula verification.",
+          "unit_id": "openalex_w2511750669_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 186,
+            "line_start": 154,
+            "title": "Asymptotics separate trivial-zero states from the proposed domain",
+            "unit_id": "openalex_w2511750669_u04",
+            "unit_type": "asymptotic-domain-test",
+            "why_material": "The source contrasts polynomially growing Bernoulli-polynomial states at trivial zeros with sublinear nontrivial-zero states, and correspondingly distinguishes whether Delta applied to the state vanishes at infinity. Together with the later orthogonality behavior, this is used to exclude trivial-zero states from the Hamiltonian domain while retaining a discrete spectrum indexed by nontrivial zeros."
+          },
+          {
+            "line_end": 232,
+            "line_start": 203,
+            "title": "Modified parity-time reflection gives a conditional spectral-reality route",
+            "unit_id": "openalex_w2511750669_u06",
+            "unit_type": "symmetry-criterion",
+            "why_material": "After interchanging the usual roles assigned to coordinate and momentum, the source defines PT to fix x and reverse p, making iH invariant. It then uses the broken/unbroken PT eigenvalue alternatives to state that maximal breaking for iH would make the spectrum of H real, while distinguishing the behavior asserted for nontrivial and trivial zero states."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u05",
+          "spontaneous_reading": "The most important content is the explicit epistemic stop: the source has not proved spectral reality. It changes the task from proving reality to assembling heuristic compatibility checks through PT symmetry, pseudo-Hermiticity, similarity representatives, and biorthogonality."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u05",
+          "source_grounded_mathematics": "The authors call the preceding construction a complex extension of the Berry–Keating conjecture and state that they cannot prove the eigenvalues real. They propose a heuristic route using PT symmetry of iH, pseudo-Hermiticity of H, an isospectral Berry–Keating representative, and a biorthogonal inner product. They also note that the inverse metric is unbounded even though the metric and its formal ingredients are nonnegative or Hermitian under assumptions.",
+          "conceptual_reading": "Several formally equivalent representations are being used as consistency probes. The unbounded inverse is not a minor technicality: it blocks automatic transfer of spectral properties through standard bounded-similarity results.",
+          "representation_or_bridge": "The metric η, a similarity map ρ, formally Hermitian representatives, and the biorthogonal eigenbasis are the proposed bridges from a non-Hermitian operator to a reality claim.",
+          "boundary_or_failure": "The source explicitly labels the analysis heuristic. Momentum symmetry, bounded invertibility, the operator domains, and spectral reality remain unproved.",
+          "uncertainty": "The prose-level limitation is clear despite column interleaving; exact formulas belonging to adjacent arguments are not relied upon here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Broken PT symmetry by itself is not presented as sufficient for RH; the needed condition is maximal breaking in the spectral sense stated by the authors.",
+      "line_end": 232,
+      "line_start": 203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transformation laws and PT action on eigenstates contain symbols vulnerable to extraction. Verify exact signs and subscripts in the PDF before symbolic reuse; the conditional logic is readable in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After interchanging the usual roles assigned to coordinate and momentum, the source defines PT to fix x and reverse p, making iH invariant. It then uses the broken/unbroken PT eigenvalue alternatives to state that maximal breaking for iH would make the spectrum of H real, while distinguishing the behavior asserted for nontrivial and trivial zero states.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Modified parity-time reflection gives a conditional spectral-reality route",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u06.txt",
+      "unit_bytes": 3135,
+      "unit_id": "openalex_w2511750669_u06",
+      "unit_sha256": "2cbfb4ed77022f5143baf6e0e2db2f3110037cff3a5191c6dd7cd306327b28f2",
+      "unit_type": "symmetry-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u06.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "that iĤ is PT -symmetric and Ĥ is pseudo-Hermitian.            Hermitian and nonnegative, but η̂ −1 is not bounded.\nThis allows us to obtain a quantization of the Berry-            Nevertheless, we can show by a direct calculation that\nKeating Hamiltonian ĥBK = x̂ p̂ + p̂ x̂ that is isospectral     Ĥ and ĥ are in fact isospectral. Furthermore, since the\nto Ĥ. We then make use of the biorthogonality proper-           map from the eigenstates {ψn (x)} of Ĥ to the eigen-\nties of the eigenstates of Ĥ to introduce an inner product\n                                                                 states {φn (x)} of ĥ is governed by ρ̂, we can identify\nwhich makes Ĥ Hermitian.\n                                                                 the quantisation condition for the eigenstates of the as-\n",
+          "sha256": "2000ea55eeb006adf8deccc54adecfeee1e7514b118b7c09a6eda5a2817cddc5"
+        },
+        "after": {
+          "line_start": 233,
+          "line_end": 240,
+          "text": "                                                                                      R ∞ ψ(x) and ϕ(x) is then defined by\n   Let us now assume that the momentum operator p̂ is            hϕ, ψi = hϕ̃|ψi := 0 ϕ̃(x)ψ(x)dx. Alternatively stated,\nHermitian (symmetric); that is, the action of p̂† agrees         since ϕ̃(x) = η̂ϕ(x), we have hϕ, ψi = hϕ|η̂|ψi; that is,\nwith that of p̂ on the domain of Ĥ. Here † denotes the          the positive Hermitian operator η̂ plays the role of the\nadjoint with respect to the standard inner product on            metric (or equivalently the CP operator [18]).\nL2 (R+ ). Then the Hermitian adjoint of Ĥ is                       For Ĥ in (1) the inner-product space constructed above\n                                                1                is not a Hilbert space because, as we will see, the elements\n           Ĥ † = (1 − eip̂ ) (x̂p̂ + p̂x̂)            .   (5)   of the vector space have infinite norm. However, the ele-\n",
+          "sha256": "b244fd1a023504dc6ed5f8383d4f238f166895616d5f32528185339e7af2aad9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified PT, pseudo-Hermiticity, Berry-Keating representatives, and biorthogonal setup",
+            "line_end": 252,
+            "line_start": 203,
+            "mathematical_role": "Develops the conditional symmetry route, related Hermitian representatives and quantization condition, adjoint eigenstates, and the metric-defined inner product."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 232,
+          "line_start": 203,
+          "title": "Modified parity-time reflection gives a conditional spectral-reality route",
+          "unit_id": "openalex_w2511750669_u06",
+          "unit_type": "symmetry-criterion",
+          "why_material": "After interchanging the usual roles assigned to coordinate and momentum, the source defines PT to fix x and reverse p, making iH invariant. It then uses the broken/unbroken PT eigenvalue alternatives to state that maximal breaking for iH would make the spectrum of H real, while distinguishing the behavior asserted for nontrivial and trivial zero states."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Broken PT symmetry by itself is not presented as sufficient for RH; the needed condition is maximal breaking in the spectral sense stated by the authors.",
+          "representation_dependency": "The transformation laws and PT action on eigenstates contain symbols vulnerable to extraction. Verify exact signs and subscripts in the PDF before symbolic reuse; the conditional logic is readable in prose.",
+          "unit_id": "openalex_w2511750669_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 202,
+            "line_start": 189,
+            "title": "Reality of the spectrum is left to a heuristic symmetry analysis",
+            "unit_id": "openalex_w2511750669_u05",
+            "unit_type": "epistemic-and-method-boundary",
+            "why_material": "The authors explicitly distinguish their complex extension of the Berry-Keating idea from the missing proof that the eigenvalues are real, and announce the limited route they pursue: modified PT symmetry, pseudo-Hermiticity, an isospectral Berry-Keating representative, and a biorthogonal inner product."
+          },
+          {
+            "line_end": 247,
+            "line_start": 177,
+            "title": "Conditional metric and formally Hermitian representatives",
+            "unit_id": "openalex_w2511750669_u07",
+            "unit_type": "pseudo-hermitian-representation-change",
+            "why_material": "Assuming the momentum operator is symmetric on the eventual domain, the source computes an adjoint relation with a nonnegative metric based on sin-squared of half the momentum, then discusses similarity transforms yielding a Hamiltonian with a quantum-anomaly momentum term or the Berry-Keating dilation Hamiltonian. It also records the decisive obstruction that the inverse metric is unbounded."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u06",
+          "spontaneous_reading": "By swapping the usual coordinate and momentum roles, the source chooses a modified PT action under which iH is invariant. This symmetry constrains possible eigenvalues to a real sector or conjugate pairs, but reality of H requires the stronger, explicitly conditional claim of maximal PT breaking."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u06",
+          "source_grounded_mathematics": "The modified parity-time reflection fixes x, reverses p, and conjugates i, making iH invariant. Standard PT alternatives then place eigenvalues of iH either on the real axis for unbroken symmetry or in complex-conjugate pairs for broken symmetry. The source states that maximal breaking would make all eigenvalues of H real, reports broken PT behavior for complex z parameters, and contrasts unbroken behavior for trivial-zero states.",
+          "conceptual_reading": "The symmetry does not directly produce real eigenvalues; it reorganizes the failure modes. The desired spectrum corresponds to a particular symmetry phase rather than following from invariance alone.",
+          "representation_or_bridge": "The bridge is the modified PT involution acting on the operator and its z-indexed eigenfunctions, translating conjugation symmetry of spectral parameters into paired eigenvalue structure.",
+          "boundary_or_failure": "Broken PT symmetry in individual cases is weaker than a proof of maximal breaking across the proposed spectrum. The argument also presupposes that the formal eigenfunctions and operator action belong to a valid domain.",
+          "uncertainty": "Exact transformation signs and subscripts are formula-sensitive, but the conditional symmetry logic is readable in the artifact."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This page is physically interleaved by two-column extraction. The construction depends on the unproved domain-level symmetry of momentum, and standard bounded-metric isospectral criteria do not directly apply because the inverse is unbounded; the authors instead claim a direct calculation.",
+      "line_end": 247,
+      "line_start": 177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "All metric, adjoint, rho, and transformed-Hamiltonian formulas should be checked against the retained PDF. Accepted content is restricted to the prose-supported conditional construction and its stated unbounded-inverse limitation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assuming the momentum operator is symmetric on the eventual domain, the source computes an adjoint relation with a nonnegative metric based on sin-squared of half the momentum, then discusses similarity transforms yielding a Hamiltonian with a quantum-anomaly momentum term or the Berry-Keating dilation Hamiltonian. It also records the decisive obstruction that the inverse metric is unbounded.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional metric and formally Hermitian representatives",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u07.txt",
+      "unit_bytes": 7983,
+      "unit_id": "openalex_w2511750669_u07",
+      "unit_sha256": "86a9edaa48ea6c398098d118830d8f7c239fb3671a4242688dc46aaebfe0f308",
+      "unit_type": "pseudo-hermitian-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u07.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 169,
+          "line_end": 176,
+          "text": "                                                                                      ˆ\n                                                               the nontrivial zeros ∆ψz (x) goes to zero as x → ∞.\nSince ip̂ = ∂x and ∂xn xµ = [Γ(µ + 1)/Γ(µ − n + 1)] xµ−n ,     The eigenstates associated with the trivial zeros violate\n\n<!-- source-page: 3 -->\n\n3\n\n",
+          "sha256": "2315704ac46e9f3e8d3c4bf4896b115656fe6f50b51fa247a010f6da74afb446"
+        },
+        "after": {
+          "line_start": 248,
+          "line_end": 255,
+          "text": "                                                                     ψ̃m (x) = ∆   ˆ n (x) = ∆\n                                                                                             ˆ †∆\n                                                                                                ˆ∆            ˆ † x−zm ,\n                                                                                                  ˆ −1 x−zm = ∆\n\n<!-- source-page: 4 -->\n\n4\n",
+          "sha256": "ff0a1b9630a57c13fa04f9c58e6bf586afbed0656aa3945db9858f8fa30b841c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Eigenfunctions, zeros, and asymptotic domain discrimination",
+            "line_end": 202,
+            "line_start": 145,
+            "mathematical_role": "Derives Hurwitz-zeta eigenfunctions, turns the origin boundary condition into the zeta-zero condition, contrasts trivial and nontrivial asymptotics, and marks the subsequent reality argument as heuristic."
+          },
+          {
+            "label": "Modified PT, pseudo-Hermiticity, Berry-Keating representatives, and biorthogonal setup",
+            "line_end": 252,
+            "line_start": 203,
+            "mathematical_role": "Develops the conditional symmetry route, related Hermitian representatives and quantization condition, adjoint eigenstates, and the metric-defined inner product."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 247,
+          "line_start": 177,
+          "title": "Conditional metric and formally Hermitian representatives",
+          "unit_id": "openalex_w2511750669_u07",
+          "unit_type": "pseudo-hermitian-representation-change",
+          "why_material": "Assuming the momentum operator is symmetric on the eventual domain, the source computes an adjoint relation with a nonnegative metric based on sin-squared of half the momentum, then discusses similarity transforms yielding a Hamiltonian with a quantum-anomaly momentum term or the Berry-Keating dilation Hamiltonian. It also records the decisive obstruction that the inverse metric is unbounded."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This page is physically interleaved by two-column extraction. The construction depends on the unproved domain-level symmetry of momentum, and standard bounded-metric isospectral criteria do not directly apply because the inverse is unbounded; the authors instead claim a direct calculation.",
+          "representation_dependency": "All metric, adjoint, rho, and transformed-Hamiltonian formulas should be checked against the retained PDF. Accepted content is restricted to the prose-supported conditional construction and its stated unbounded-inverse limitation.",
+          "unit_id": "openalex_w2511750669_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 232,
+            "line_start": 203,
+            "title": "Modified parity-time reflection gives a conditional spectral-reality route",
+            "unit_id": "openalex_w2511750669_u06",
+            "unit_type": "symmetry-criterion",
+            "why_material": "After interchanging the usual roles assigned to coordinate and momentum, the source defines PT to fix x and reverse p, making iH invariant. It then uses the broken/unbroken PT eigenvalue alternatives to state that maximal breaking for iH would make the spectrum of H real, while distinguishing the behavior asserted for nontrivial and trivial zero states."
+          },
+          {
+            "line_end": 216,
+            "line_start": 185,
+            "title": "Boundary transport to a Berry-Keating quantization condition",
+            "unit_id": "openalex_w2511750669_u08",
+            "unit_type": "representation-change-and-quantization",
+            "why_material": "A similarity representative with Berry-Keating Hamiltonian has power-law eigenstates, and the source transports the original origin boundary condition through a sine-of-momentum relation to an explicit limiting quantization condition involving the Hurwitz zeta function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u07",
+          "spontaneous_reading": "The source tries to move the problem into representations where Hermiticity is visible: a sine-of-momentum metric gives pseudo-Hermiticity, while different square-root-like similarity maps yield a dilation Hamiltonian with a momentum anomaly or the Berry–Keating operator. The unbounded inverse metric prevents this formal transport from settling the spectrum."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u07",
+          "source_grounded_mathematics": "Assuming momentum is symmetric on the eventual domain, the source derives a formal adjoint relation and introduces a nonnegative bounded metric built from the square of sin(p/2), so that H is pseudo-Hermitian. Similarity choices are stated to produce either a symmetrized dilation Hamiltonian with a linear momentum quantum-anomaly term or the Berry–Keating dilation Hamiltonian. The inverse metric is explicitly unbounded, and the induced space later has infinite-norm states.",
+          "conceptual_reading": "Changing representation exposes simple local dilation dynamics hidden behind the nonlocal difference Hamiltonian, but spectral equivalence is only as strong as the similarity map and its domains. The anomaly term records a quantum correction that disappears in the commuting limit.",
+          "representation_or_bridge": "The formal adjoint, metric η, similarity map ρ, sine or difference operators, and the two dilation-type representatives connect non-Hermitian and formally Hermitian descriptions.",
+          "boundary_or_failure": "Momentum symmetry is assumed, not derived at this stage; the inverse metric is unbounded, and positivity, domains, completeness, and self-adjointness are unresolved. Thus standard bounded-metric isospectral theorems do not directly apply.",
+          "uncertainty": "The source page is heavily interleaved, so exact metric factors and operator ordering require PDF verification; this reading retains only the prose-supported construction and obstruction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a formal transport of the boundary condition, not a proof that a self-adjoint Berry-Keating domain with the desired spectrum exists.",
+      "line_end": 216,
+      "line_start": 185,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The power, half-shifts, limits, and arguments in the displayed quantization condition are visually fragmented. Original-PDF verification is required before using the exact condition; only the representation-change mechanism is accepted from the extracted text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A similarity representative with Berry-Keating Hamiltonian has power-law eigenstates, and the source transports the original origin boundary condition through a sine-of-momentum relation to an explicit limiting quantization condition involving the Hurwitz zeta function.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary transport to a Berry-Keating quantization condition",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u08.txt",
+      "unit_bytes": 3352,
+      "unit_id": "openalex_w2511750669_u08",
+      "unit_sha256": "e2a3519af31f4ee71ab80389e1018b0249ec5480caebd3d33d3fe2d391497ecb",
+      "unit_type": "representation-change-and-quantization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u08.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 177,
+          "line_end": 184,
+          "text": "the orthogonality relation discussed below and the eigen-        Hermitian in the sense of [16]. Assuming that p̂ is Her-\nstates associated with the nontrivial zeros do not. These        mitian, there exists an associated Hermitian Hamiltonian\nindicate that the eigenstates associated with the trivial        ĥ obtained by conjugating Ĥ with an operator ρ̂ satis-\nzeros do not belong to the domain of Ĥ. Therefore, under        fying ρ̂† ρ̂ = η̂, that is, ρ̂Ĥ ρ̂−1 = ĥ. Letting ρ̂ = sin 21 p̂,\nthe boundary condition ψ(0) = 0, the nth eigenstate of           we obtain ĥ = x̂ p̂ + p̂ x̂ + ~p̂. We include Planck’s con-\nthe Hamiltonian (1) is ψn (x) = −ζ(zn , x + 1); the eigen-       stant ~ explicitly here because it indicates that the linear\nvalues En = i(2zn − 1) are discrete and zn = 12 (1 − iEn )       momentum term is a quantum anomaly; this term van-\nare the nontrivial zeros of the Riemann zeta function.           ishes in the classical limit ~ → 0 [15]. Alternatively, by\n",
+          "sha256": "0316f8367b5c0e36f6307e657ccbaee71dc508a706571c3f916a18cbaaa266bb"
+        },
+        "after": {
+          "line_start": 217,
+          "line_end": 224,
+          "text": "reflection as PT : (x̂, p̂) −→ (x̂, −p̂). Therefore, since       Biorthogonal states. Let us proceed under the assump-\nPT : i −→ −i, we deduce that iĤ is invariant under this         tion that p̂ is Hermitian. Because Ĥ is not Hermitian,\nmodified PT reflection. It follows that the eigenvalues of       its eigenstates {ψn (x)} are not orthogonal. Nevertheless,\niĤ are either real (if the PT symmetry is unbroken in the       by considering the eigenstates {ψ̃n (x)} of Ĥ † we obtain\nsense that the associated eigenstates are also eigenstates       a biorthogonal set of eigenstates [17], provided that Ĥ †\nof PT ), or else they form complex-conjugate pairs (if the       is the Hermitian adjoint of Ĥ. Bearing in mind that ∆   ˆ†\nPT symmetry is broken in the sense that the associated           is the forward difference operator, a calculation shows\neigenstates are not eigenstates of PT ). If the PT sym-          that ψ̃n (x) = x−zn − (x + 1)−zn and that Ĥ † ψ̃n (x) =\n",
+          "sha256": "ba721d1a7127fca3028bc19c20b616ebc7a32863b4a6f94e99aa7bf3ccaadbe9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Eigenfunctions, zeros, and asymptotic domain discrimination",
+            "line_end": 202,
+            "line_start": 145,
+            "mathematical_role": "Derives Hurwitz-zeta eigenfunctions, turns the origin boundary condition into the zeta-zero condition, contrasts trivial and nontrivial asymptotics, and marks the subsequent reality argument as heuristic."
+          },
+          {
+            "label": "Modified PT, pseudo-Hermiticity, Berry-Keating representatives, and biorthogonal setup",
+            "line_end": 252,
+            "line_start": 203,
+            "mathematical_role": "Develops the conditional symmetry route, related Hermitian representatives and quantization condition, adjoint eigenstates, and the metric-defined inner product."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 216,
+          "line_start": 185,
+          "title": "Boundary transport to a Berry-Keating quantization condition",
+          "unit_id": "openalex_w2511750669_u08",
+          "unit_type": "representation-change-and-quantization",
+          "why_material": "A similarity representative with Berry-Keating Hamiltonian has power-law eigenstates, and the source transports the original origin boundary condition through a sine-of-momentum relation to an explicit limiting quantization condition involving the Hurwitz zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a formal transport of the boundary condition, not a proof that a self-adjoint Berry-Keating domain with the desired spectrum exists.",
+          "representation_dependency": "The power, half-shifts, limits, and arguments in the displayed quantization condition are visually fragmented. Original-PDF verification is required before using the exact condition; only the representation-change mechanism is accepted from the extracted text.",
+          "unit_id": "openalex_w2511750669_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 247,
+            "line_start": 177,
+            "title": "Conditional metric and formally Hermitian representatives",
+            "unit_id": "openalex_w2511750669_u07",
+            "unit_type": "pseudo-hermitian-representation-change",
+            "why_material": "Assuming the momentum operator is symmetric on the eventual domain, the source computes an adjoint relation with a nonnegative metric based on sin-squared of half the momentum, then discusses similarity transforms yielding a Hamiltonian with a quantum-anomaly momentum term or the Berry-Keating dilation Hamiltonian. It also records the decisive obstruction that the inverse metric is unbounded."
+          },
+          {
+            "line_end": 251,
+            "line_start": 217,
+            "title": "Adjoint eigenstates define a metric pairing for the non-Hermitian eigenbasis",
+            "unit_id": "openalex_w2511750669_u09",
+            "unit_type": "biorthogonal-metric-construction",
+            "why_material": "The source replaces ordinary orthogonality by eigenstates of the formal adjoint, gives their forward-difference form, and defines an associated-state map and inner product on the span of the original eigenstates. This makes the metric operator the bridge between non-Hermitian spectral data and a symmetry claim."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source relates the nonlocal finite-difference Hamiltonian to Berry-Keating-type representatives both by similarity transport of the boundary condition and by shrinking an epsilon-scaled difference toward a momentum-conjugated dilation operator.",
+            "limit": "The exact transported quantization formula and limiting operator order require scan verification, and neither bridge supplies a self-adjoint domain.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u08",
+              "openalex_w2511750669_u15"
+            ],
+            "title": "Difference-scale deformation toward Berry-Keating form"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u08",
+          "spontaneous_reading": "A similarity transform does more than change the Hamiltonian: it must also transport the boundary condition. The source uses a sine-of-momentum finite-difference identity to rewrite the origin condition for Hurwitz-zeta states as a limiting quantization condition on power-law Berry–Keating states."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u08",
+          "source_grounded_mathematics": "One formal representative is the Berry–Keating symmetrized dilation Hamiltonian with power-law eigenstates. The map from the original Hurwitz-zeta eigenstates to these powers is governed by the similarity operator. Using the relation between sin(p/2) and half-unit shifts, the source transports ψz(0)=0 to an explicit limit involving the power state and a Hurwitz zeta function.",
+          "conceptual_reading": "Spectra cannot be transferred independently of domains and boundary data. The construction makes the quantization condition the invariant content that must accompany a representation change.",
+          "representation_or_bridge": "Power-law eigenstates, Hurwitz-zeta eigenstates, the similarity map, half-shift finite differences, and the transported limiting boundary value form the bridge between the two operator pictures.",
+          "boundary_or_failure": "This is a formal transport of a condition, not construction of a self-adjoint Berry–Keating domain with that spectrum. The limiting evaluation also needs analytic and domain control.",
+          "uncertainty": "The extracted powers, half-shifts, and exact limiting formula are fragmented, so only the representation-change mechanism is secure without PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction is conditional on the displayed operator actually being the Hermitian adjoint on a suitable domain. The source also warns that the resulting space is not a Hilbert space because the states have infinite norm.",
+      "line_end": 251,
+      "line_start": 217,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The adjoint formula, forward-difference state, metric, and integral pairing are formula-dependent and should be verified in the PDF; their roles and the non-Hilbert-space warning are legible in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source replaces ordinary orthogonality by eigenstates of the formal adjoint, gives their forward-difference form, and defines an associated-state map and inner product on the span of the original eigenstates. This makes the metric operator the bridge between non-Hermitian spectral data and a symmetry claim.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adjoint eigenstates define a metric pairing for the non-Hermitian eigenbasis",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u09.txt",
+      "unit_bytes": 4049,
+      "unit_id": "openalex_w2511750669_u09",
+      "unit_sha256": "4a4ae196c94fc2056e5b9df66bba5fac891a7911328ed16e9f5232d2dbb23674",
+      "unit_type": "biorthogonal-metric-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u09.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 209,
+          "line_end": 216,
+          "text": "following sense. Under conventional parity-time reflec-\ntion, if p̂ is a momentum and x̂ is a coordinate, we have\n                                                                                lim φBK\n                                                                                   \u0002                    \u0003\n                                                                                     z (x) − ζ(z, x − 1) = 0,\nPT : (x̂, p̂) −→ (−x̂, p̂). However, we consider instead                       x→0\nthe variables where the roles of position x̂ and momen-\ntum p̂ are interchanged [15]. We then define parity-time         or equivalently, limx→1 φBKz (x) = − limx→1 ζ(z, x + 1).\n",
+          "sha256": "8a80da42bf392de68ed84dd46ea73d12b4ac005acb4a964a855534e0b87ffa7c"
+        },
+        "after": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "\n<!-- source-page: 4 -->\n\n4\n\n                            ˆ −1 x−z , we find that\nand recalling that ψn (x) = ∆                                        Encouraged by this observation, we ask whether the\n                       Z ∞                                        momentum operator p̂ is Hermitian (symmetric) on the\n",
+          "sha256": "e5a9e431c105bf841dd488a2434ddce54440ba51a56e49eba1889215915988d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified PT, pseudo-Hermiticity, Berry-Keating representatives, and biorthogonal setup",
+            "line_end": 252,
+            "line_start": 203,
+            "mathematical_role": "Develops the conditional symmetry route, related Hermitian representatives and quantization condition, adjoint eigenstates, and the metric-defined inner product."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 251,
+          "line_start": 217,
+          "title": "Adjoint eigenstates define a metric pairing for the non-Hermitian eigenbasis",
+          "unit_id": "openalex_w2511750669_u09",
+          "unit_type": "biorthogonal-metric-construction",
+          "why_material": "The source replaces ordinary orthogonality by eigenstates of the formal adjoint, gives their forward-difference form, and defines an associated-state map and inner product on the span of the original eigenstates. This makes the metric operator the bridge between non-Hermitian spectral data and a symmetry claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The construction is conditional on the displayed operator actually being the Hermitian adjoint on a suitable domain. The source also warns that the resulting space is not a Hilbert space because the states have infinite norm.",
+          "representation_dependency": "The adjoint formula, forward-difference state, metric, and integral pairing are formula-dependent and should be verified in the PDF; their roles and the non-Hilbert-space warning are legible in prose.",
+          "unit_id": "openalex_w2511750669_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 216,
+            "line_start": 185,
+            "title": "Boundary transport to a Berry-Keating quantization condition",
+            "unit_id": "openalex_w2511750669_u08",
+            "unit_type": "representation-change-and-quantization",
+            "why_material": "A similarity representative with Berry-Keating Hamiltonian has power-law eigenstates, and the source transports the original origin boundary condition through a sine-of-momentum relation to an explicit limiting quantization condition involving the Hurwitz zeta function."
+          },
+          {
+            "line_end": 276,
+            "line_start": 257,
+            "title": "Distributional pairing distinguishes nontrivial from trivial states",
+            "unit_id": "openalex_w2511750669_u10",
+            "unit_type": "distributional-orthogonality-test",
+            "why_material": "The biorthogonal pairing is reduced to a scale-invariant power integral. Under the source's RH-conditioned conjugacy relation it is interpreted as a Dirac delta, giving off-diagonal biorthogonality, whereas the analogous integral for trivial-zero states diverges too strongly even as a tempered distribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u09",
+          "spontaneous_reading": "Ordinary orthogonality is replaced by a paired left-right eigenbasis. Forward differences of power laws supply candidate adjoint eigenstates, and an associated-state map turns their pairing with the Hurwitz-zeta states into a metric inner product."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u09",
+          "source_grounded_mathematics": "Under the assumption that the displayed operator is the Hermitian adjoint, its eigenstates are given as forward differences of z-indexed power functions. The source maps each linear combination of H eigenstates to the corresponding combination of adjoint eigenstates and defines a pairing by integrating the associated state against the original state. Equivalently, η acts as the metric. The source warns that the resulting space is not a Hilbert space because its elements have infinite norm.",
+          "conceptual_reading": "Biorthogonality separates the role of a state from that of its dual when the operator is non-Hermitian. The metric is a representation of this duality, not by itself evidence that the space is complete or physically normalizable.",
+          "representation_or_bridge": "The formal adjoint eigenfunctions, forward difference, associated-state map, metric η, and integral pairing bridge the right eigenbasis to a candidate dual basis.",
+          "boundary_or_failure": "The entire construction depends on having the correct adjoint on a suitable domain. Infinite norms, possible incompleteness, and the non-Hilbert character prevent an immediate self-adjoint spectral conclusion.",
+          "uncertainty": "Exact adjoint and metric formulas are extraction-sensitive; their functional roles and the infinite-norm warning are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is distributional rather than Hilbert-space normalizability, and its RH-conditioned step cannot independently establish RH.",
+      "line_end": 276,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (6), its exponent, the delta normalization, and conjugations are extraction-sensitive and require PDF verification. The contrast between distributional nontrivial-state pairing and excessive trivial-state divergence is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The biorthogonal pairing is reduced to a scale-invariant power integral. Under the source's RH-conditioned conjugacy relation it is interpreted as a Dirac delta, giving off-diagonal biorthogonality, whereas the analogous integral for trivial-zero states diverges too strongly even as a tempered distribution.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Distributional pairing distinguishes nontrivial from trivial states",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u10.txt",
+      "unit_bytes": 2109,
+      "unit_id": "openalex_w2511750669_u10",
+      "unit_sha256": "8ebc79a4a7f1f3d16f98e2e67cf5d839365028b941672b615cfae18dd70d6970",
+      "unit_type": "distributional-orthogonality-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u10.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "                                                                                             ˆ †∆\n                                                                                                ˆ∆            ˆ † x−zm ,\n                                                                                                  ˆ −1 x−zm = ∆\n\n<!-- source-page: 4 -->\n\n4\n\n",
+          "sha256": "1ad2db20b36fa12cfc0271b436fb52e898818d01c2d014fd2f621610c97b9afe"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "                                                                  a function of the canonical variables (x̂, p̂), we have re-\n   In terms of the inner product introduced above, and\n                                                                  ferred to it as a Hamiltonian. However, the connection of\nassuming that p̂ is Hermitian (symmetric), we find, using\n ˆ †∆\n    ˆ = η̂, that                                                  this Hamiltonian to physical systems is at best tenuous\n∆\n                                                                  because the eigenstates of Ĥ in our inner-product space\n",
+          "sha256": "97645dc04d2c3402101a6c1cc0d60ea2ad8c760c62433aee725b5dfb64d9083c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Biorthogonality, boundary terms, degeneracies, regularization, and open domain problem",
+            "line_end": 341,
+            "line_start": 253,
+            "mathematical_role": "Uses a distributional pairing to distinguish nontrivial from trivial states, relates the origin boundary condition to momentum symmetry, states exceptional-point consequences, notes infinite norms and a cutoff regularization, and isolates domain/completeness as open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 257,
+          "title": "Distributional pairing distinguishes nontrivial from trivial states",
+          "unit_id": "openalex_w2511750669_u10",
+          "unit_type": "distributional-orthogonality-test",
+          "why_material": "The biorthogonal pairing is reduced to a scale-invariant power integral. Under the source's RH-conditioned conjugacy relation it is interpreted as a Dirac delta, giving off-diagonal biorthogonality, whereas the analogous integral for trivial-zero states diverges too strongly even as a tempered distribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is distributional rather than Hilbert-space normalizability, and its RH-conditioned step cannot independently establish RH.",
+          "representation_dependency": "Equation (6), its exponent, the delta normalization, and conjugations are extraction-sensitive and require PDF verification. The contrast between distributional nontrivial-state pairing and excessive trivial-state divergence is explicit.",
+          "unit_id": "openalex_w2511750669_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 251,
+            "line_start": 217,
+            "title": "Adjoint eigenstates define a metric pairing for the non-Hermitian eigenbasis",
+            "unit_id": "openalex_w2511750669_u09",
+            "unit_type": "biorthogonal-metric-construction",
+            "why_material": "The source replaces ordinary orthogonality by eigenstates of the formal adjoint, gives their forward-difference form, and defines an associated-state map and inner product on the span of the original eigenstates. This makes the metric operator the bridge between non-Hermitian spectral data and a symmetry claim."
+          },
+          {
+            "line_end": 300,
+            "line_start": 257,
+            "title": "The origin boundary condition is reused to suppress integration-by-parts terms",
+            "unit_id": "openalex_w2511750669_u11",
+            "unit_type": "boundary-and-symmetry-argument",
+            "why_material": "Because the metric commutes with momentum, the source reduces momentum symmetry to vanishing boundary terms in paired original and adjoint states. The adjoint state diverges at the origin, so sufficient vanishing of the original state is needed; the already imposed condition at zero is said to suffice. Under that assumption, a formal integral rearrangement makes H symmetric in the new inner product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          },
+          {
+            "claim": "Growth, excessive distributional divergence, self-orthogonality, Jordan coalescence, infinite norm, and missing completeness function as distinct diagnostics of which proposed states or operator claims fail and why.",
+            "limit": "Some diagnostics are conditional consequences of the formal model or of RH itself and therefore cannot serve as independent evidence for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u04",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u12",
+              "openalex_w2511750669_u13",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Internal diagnostics for a failed spectral realization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u10",
+          "spontaneous_reading": "The proposed biorthogonal pairing compresses to a scale-invariant power integral. Under an RH-conditioned reality relation it becomes a Dirac delta, while trivial-zero powers diverge too strongly even distributionally, so distribution theory is used both as an orthogonality mechanism and a domain diagnostic."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u10",
+          "source_grounded_mathematics": "The pairing of an adjoint state with an original state is reduced to an integral over the positive half-line of a complex power of x. If the relevant eigenvalue conjugacy reduces to reality, which the source identifies with RH, this is interpreted as a Dirac delta in the eigenvalue difference and yields off-diagonal biorthogonality. For trivial zeros, the corresponding integral is said to diverge too rapidly to define a tempered distribution.",
+          "conceptual_reading": "Passing to logarithmic scale turns multiplicative powers into Fourier modes, explaining the delta-type orthogonality. The acceptable generalized-function divergence threshold distinguishes the proposed nontrivial sector from the trivial sector.",
+          "representation_or_bridge": "The bridge is the Mellin-like power integral, equivalently a Fourier integral after logarithmic reparametrization, linking spectral differences to distributional delta orthogonality.",
+          "boundary_or_failure": "The calculation supplies distributional pairing, not finite norm or Hilbert-space normalizability. Its key reality substitution assumes the RH-conditioned conclusion and therefore cannot independently prove RH.",
+          "uncertainty": "The exponent, conjugations, and delta normalization require PDF verification; the distributional-versus-excessive-divergence contrast is explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument links spectral selection and operator symmetry through the same boundary condition, but it remains conditional on the domain and adjoint assumptions and does not prove self-adjointness.",
+      "line_end": 300,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integration-by-parts expressions and operator rearrangement across lines 281-296 are heavily interleaved. Verify exact algebra in the PDF; the boundary-term logic and conditional conclusion are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because the metric commutes with momentum, the source reduces momentum symmetry to vanishing boundary terms in paired original and adjoint states. The adjoint state diverges at the origin, so sufficient vanishing of the original state is needed; the already imposed condition at zero is said to suffice. Under that assumption, a formal integral rearrangement makes H symmetric in the new inner product.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The origin boundary condition is reused to suppress integration-by-parts terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u11.txt",
+      "unit_bytes": 4211,
+      "unit_id": "openalex_w2511750669_u11",
+      "unit_sha256": "f0c4144451e3d7dcb2856b85bb90bb26b86e61faff7c031fa65b899729603545",
+      "unit_type": "boundary-and-symmetry-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u11.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "                                                                                             ˆ †∆\n                                                                                                ˆ∆            ˆ † x−zm ,\n                                                                                                  ˆ −1 x−zm = ∆\n\n<!-- source-page: 4 -->\n\n4\n\n",
+          "sha256": "1ad2db20b36fa12cfc0271b436fb52e898818d01c2d014fd2f621610c97b9afe"
+        },
+        "after": {
+          "line_start": 301,
+          "line_end": 308,
+          "text": "   As a further consequence of (6) and (7), if the Rie-           in the renormalized theory is Λ/ ln Λ, which for large Λ\nmann hypothesis is true, then the eigenvalues of Ĥ are           gives the leading term in the counting of prime numbers\nnondegenerate. Conversely, if the Riemann hypothesis is           smaller than Λ.\nfalse, then the eigenstates of Ĥ that correspond to non-\n                                                                  Discussion. We have presented a formal argument show-\ntrivial zeros for which ℜ(z) 6= 12 coalesce to give rise to\n                                                                  ing that the eigenvalues of the Hamiltonian Ĥ in (1),\nJordan block structures in the Hamiltonian. This follows\n",
+          "sha256": "9533ef49a0729ec1c6236a2e5f0e9260fcd97ce705a20f871ba3f98dd0617f8a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Biorthogonality, boundary terms, degeneracies, regularization, and open domain problem",
+            "line_end": 341,
+            "line_start": 253,
+            "mathematical_role": "Uses a distributional pairing to distinguish nontrivial from trivial states, relates the origin boundary condition to momentum symmetry, states exceptional-point consequences, notes infinite norms and a cutoff regularization, and isolates domain/completeness as open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 300,
+          "line_start": 257,
+          "title": "The origin boundary condition is reused to suppress integration-by-parts terms",
+          "unit_id": "openalex_w2511750669_u11",
+          "unit_type": "boundary-and-symmetry-argument",
+          "why_material": "Because the metric commutes with momentum, the source reduces momentum symmetry to vanishing boundary terms in paired original and adjoint states. The adjoint state diverges at the origin, so sufficient vanishing of the original state is needed; the already imposed condition at zero is said to suffice. Under that assumption, a formal integral rearrangement makes H symmetric in the new inner product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument links spectral selection and operator symmetry through the same boundary condition, but it remains conditional on the domain and adjoint assumptions and does not prove self-adjointness.",
+          "representation_dependency": "The integration-by-parts expressions and operator rearrangement across lines 281-296 are heavily interleaved. Verify exact algebra in the PDF; the boundary-term logic and conditional conclusion are prose-supported.",
+          "unit_id": "openalex_w2511750669_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 276,
+            "line_start": 257,
+            "title": "Distributional pairing distinguishes nontrivial from trivial states",
+            "unit_id": "openalex_w2511750669_u10",
+            "unit_type": "distributional-orthogonality-test",
+            "why_material": "The biorthogonal pairing is reduced to a scale-invariant power integral. Under the source's RH-conditioned conjugacy relation it is interpreted as a Dirac delta, giving off-diagonal biorthogonality, whereas the analogous integral for trivial-zero states diverges too strongly even as a tempered distribution."
+          },
+          {
+            "line_end": 333,
+            "line_start": 301,
+            "title": "Off-critical zeros are represented as exceptional-point degeneracies",
+            "unit_id": "openalex_w2511750669_u12",
+            "unit_type": "degeneracy-and-obstruction-consequence",
+            "why_material": "The source claims that if RH is false, eigenstates associated with off-critical nontrivial zeros coalesce into Jordan-block structures and satisfy self-orthogonality. It then connects spectral nondegeneracy to simplicity of zeros, but explicitly makes the strongest simplicity conclusion depend on a one-to-one correspondence between eigenstate boundary conditions and the secular equation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u11",
+          "spontaneous_reading": "The origin boundary condition is reused as operator-theoretic glue. Because the metric commutes with momentum, symmetry reduces to integration-by-parts boundary terms; the divergence of the dual state forces sufficient vanishing of the original state, and ψ(0)=0 is claimed to provide it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u11",
+          "source_grounded_mathematics": "Since momentum commutes with the proposed metric, its symmetry in the new pairing is reduced to vanishing endpoint contributions when original and adjoint states are paired. The adjoint states diverge at zero, while the original states' growth at infinity is said to be compensated by decay of their partners. The source states that ψn(0)=0 kills the origin term and, assuming momentum symmetry, formally rearranges the pairing to show H symmetric.",
+          "conceptual_reading": "One boundary condition performs two linked tasks: it selects zeta zeros and removes the integration-by-parts obstruction. This is a structural economy, but it makes the spectral and operator-domain claims dependent on the same delicate endpoint behavior.",
+          "representation_or_bridge": "Endpoint asymptotics, the metric-commutation relation, paired left-right eigenstates, and integration by parts connect the zero-selecting boundary condition to formal Hermiticity.",
+          "boundary_or_failure": "The cancellation is conditional on the proposed domain, adjoint identification, and convergence of the pairings. Formal symmetry in this pairing is not established self-adjointness.",
+          "uncertainty": "The interleaved displayed algebra is unsafe for exact reuse; the boundary-term logic and conditional conclusion are stated clearly in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exceptional-point and simplicity statements are consequences within the formal spectral model. The one-to-one correspondence needed for the all-roots simplicity conclusion is posed conditionally, not proved here.",
+      "line_end": 333,
+      "line_start": 301,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The key claims are readable in prose; the self-orthogonality notation and critical-line fraction should be checked against the PDF for exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source claims that if RH is false, eigenstates associated with off-critical nontrivial zeros coalesce into Jordan-block structures and satisfy self-orthogonality. It then connects spectral nondegeneracy to simplicity of zeros, but explicitly makes the strongest simplicity conclusion depend on a one-to-one correspondence between eigenstate boundary conditions and the secular equation.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Off-critical zeros are represented as exceptional-point degeneracies",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u12.txt",
+      "unit_bytes": 3043,
+      "unit_id": "openalex_w2511750669_u12",
+      "unit_sha256": "c6c8e3bc9fe30cdf7a3937296d4394794cfd8fba2fd2693df09fe2dde1cb1f93",
+      "unit_type": "degeneracy-and-obstruction-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u12.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 293,
+          "line_end": 300,
+          "text": "                   dx ϕ̄(x)∆   ˆ∆ ˆ −1 (x̂ p̂ + p̂ x̂) ˆ\n                                                      ∆ψ(x)\n                0                                                   A possible way of making a connection to quantum\n           = hϕ, Ĥψi.                                            theory is to introduce a regularization scheme, for ex-\n                                                                  ample, by letting x ∈ [Λ−1 , Λ], renormalizing the states\nThis shows that, from the assumption that p̂ is Hermi-            according to ψn (x) → (ln Λ)−1/2 ψn (x), and then taking\ntian, we may conclude that Ĥ is Hermitian (symmetric)            the limit Λ → ∞. Interestingly, the expectation value of\nwith respect to the new inner product.                            the position operator ρ̂−1 x̂ρ̂ in the state ψn (x) for any n\n",
+          "sha256": "4acd306c757b2386ad6f84ec42b3477c2798dc34ed0a7be93448837550be4b1f"
+        },
+        "after": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "Boundary condition revisited. For finite-dimensional non-         and the Russian Science Foundation for support (project\ndegenerate matrices, the biorthogonality relation (7) im-         16-11-10218). MPM thanks D. Schleicher for discus-\nplies that Ĥ † defined in (5) is the Hermitian adjoint of        sions. MPM is supported in part by the Canada Re-\nĤ. However, in infinite-dimensional vector spaces the            search Chairs program. Research at Perimeter Institute\ncompleteness of the states {ψn (x)} is required to arrive         is supported by the Government of Canada through Inno-\nat this conclusion. Nevertheless, the relation (7) suggests       vation, Science and Economic Development Canada and\nthat our Hermiticity assumption of p̂ is valid, making ĥ         by the Province of Ontario through the Ministry of Re-\nmanifestly Hermitian.                                             search, Innovation and Science.\n",
+          "sha256": "b981592b461713218743e8d1a8df931b493e4b386b3f104eece09a85941ed579"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Biorthogonality, boundary terms, degeneracies, regularization, and open domain problem",
+            "line_end": 341,
+            "line_start": 253,
+            "mathematical_role": "Uses a distributional pairing to distinguish nontrivial from trivial states, relates the origin boundary condition to momentum symmetry, states exceptional-point consequences, notes infinite norms and a cutoff regularization, and isolates domain/completeness as open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 333,
+          "line_start": 301,
+          "title": "Off-critical zeros are represented as exceptional-point degeneracies",
+          "unit_id": "openalex_w2511750669_u12",
+          "unit_type": "degeneracy-and-obstruction-consequence",
+          "why_material": "The source claims that if RH is false, eigenstates associated with off-critical nontrivial zeros coalesce into Jordan-block structures and satisfy self-orthogonality. It then connects spectral nondegeneracy to simplicity of zeros, but explicitly makes the strongest simplicity conclusion depend on a one-to-one correspondence between eigenstate boundary conditions and the secular equation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exceptional-point and simplicity statements are consequences within the formal spectral model. The one-to-one correspondence needed for the all-roots simplicity conclusion is posed conditionally, not proved here.",
+          "representation_dependency": "The key claims are readable in prose; the self-orthogonality notation and critical-line fraction should be checked against the PDF for exact transcription.",
+          "unit_id": "openalex_w2511750669_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 300,
+            "line_start": 257,
+            "title": "The origin boundary condition is reused to suppress integration-by-parts terms",
+            "unit_id": "openalex_w2511750669_u11",
+            "unit_type": "boundary-and-symmetry-argument",
+            "why_material": "Because the metric commutes with momentum, the source reduces momentum symmetry to vanishing boundary terms in paired original and adjoint states. The adjoint state diverges at the origin, so sufficient vanishing of the original state is needed; the already imposed condition at zero is said to suffice. Under that assumption, a formal integral rearrangement makes H symmetric in the new inner product."
+          },
+          {
+            "line_end": 303,
+            "line_start": 275,
+            "title": "Infinite norms motivate a finite-window regularization",
+            "unit_id": "openalex_w2511750669_u13",
+            "unit_type": "normalization-obstruction-and-regularization",
+            "why_material": "The source separates its formal Hamiltonian analysis from ordinary quantum mechanics because the states are not normalizable, then proposes a symmetric multiplicative cutoff, logarithmic state renormalization, and a limit. It reports that the transformed-position expectation has the same leading scale as prime counting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Growth, excessive distributional divergence, self-orthogonality, Jordan coalescence, infinite norm, and missing completeness function as distinct diagnostics of which proposed states or operator claims fail and why.",
+            "limit": "Some diagnostics are conditional consequences of the formal model or of RH itself and therefore cannot serve as independent evidence for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u04",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u12",
+              "openalex_w2511750669_u13",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Internal diagnostics for a failed spectral realization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u12",
+          "spontaneous_reading": "The formal model recodes an off-critical zero as an exceptional point: paired spectral data coalesce into a Jordan structure and the eigenstate becomes self-orthogonal. This turns failure of the critical-line condition into a specific non-diagonalizable spectral pathology rather than merely a nonreal eigenvalue."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u12",
+          "source_grounded_mathematics": "The source states that RH would make the proposed eigenvalues nondegenerate, whereas an off-critical nontrivial zero would produce coalescing eigenstates, a Jordan block, and self-orthogonality at a complex exceptional point. It then discusses simplicity of zeta zeros: the strongest conclusion that RH implies all zeros simple is explicitly conditioned on a one-to-one correspondence between eigenfunction boundary conditions and the secular equation.",
+          "conceptual_reading": "Degeneracy and self-orthogonality are used as obstruction signatures. The representation aims to distinguish critical-line zeros through diagonalizable spectral behavior and off-critical zeros through exceptional-point behavior.",
+          "representation_or_bridge": "Functional pairing of zeta zeros, the eigenvalue parametrization, biorthogonal self-pairing, and Jordan blocks bridge analytic zero location to non-Hermitian degeneracy.",
+          "boundary_or_failure": "These are consequences inside the formal spectral model, not independent evidence for RH. The required one-to-one boundary/secular correspondence and a valid operator domain are not proved, so the global simplicity claim remains conditional.",
+          "uncertainty": "The prose claims are legible; exact self-orthogonality notation and critical-line fractions remain extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is offered as a possible physical connection, not as validation of the spectral construction or an exact prime-counting theorem.",
+      "line_end": 303,
+      "line_start": 275,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cutoff interval, normalization power, transformed position, and asymptotic expectation are formula-bearing and require original-PDF verification before quantitative use; the obstruction and proposed regularization are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates its formal Hamiltonian analysis from ordinary quantum mechanics because the states are not normalizable, then proposes a symmetric multiplicative cutoff, logarithmic state renormalization, and a limit. It reports that the transformed-position expectation has the same leading scale as prime counting.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Infinite norms motivate a finite-window regularization",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u13.txt",
+      "unit_bytes": 2580,
+      "unit_id": "openalex_w2511750669_u13",
+      "unit_sha256": "bbbdbec1b99084c040ddbd7dc34aa2ee003bd8eb7e401543a748f29f227e1213",
+      "unit_type": "normalization-obstruction-and-regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u13.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 267,
+          "line_end": 274,
+          "text": "Thus, if Ēm = Em (that is, if the Riemann hypothesis is          fast at x = 0 to ensure the vanishing of the boundary\ncorrect), then (6) is a Dirac delta function 4πδ(En −Em ).        terms. [The divergence of {ψn (x)} at x = ∞ is compen-\nIt follows that for m 6= n we have                                sated by the vanishing of {ψ̃n (x)} as x → ∞.] One can\n                      hψ̃m |ψn i = 0                       (7)    verify that imposing ψn (0) = 0 is sufficient to guarantee\n                                                                  the vanishing of the boundary term at the origin. Thus,\nin the distributional sense, as required by the biorthog-         the Hermiticity of p̂ on h·, ·i follows from the boundary\nonality condition. In contrast, for the trivial zeros, the        condition ψn (0) = 0.\nintegral (6) diverges too rapidly to be interpreted as a\n",
+          "sha256": "fd6bf9518e7652f96ae56b8773349fe2c1f271900d3d39c3cade6d6b80e096ad"
+        },
+        "after": {
+          "line_start": 304,
+          "line_end": 311,
+          "text": "false, then the eigenstates of Ĥ that correspond to non-\n                                                                  Discussion. We have presented a formal argument show-\ntrivial zeros for which ℜ(z) 6= 12 coalesce to give rise to\n                                                                  ing that the eigenvalues of the Hamiltonian Ĥ in (1),\nJordan block structures in the Hamiltonian. This follows\n                                                                  whose classical limit is 2xp, correspond to the nontrivial\nfrom the fact that at such complex degeneracies (often\n                                                                  zeros of the Riemann zeta function. Identifying the do-\n",
+          "sha256": "6652e9c55e04775d617349f2f2e21d87ac48c00c20227aa95070436282370436"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Biorthogonality, boundary terms, degeneracies, regularization, and open domain problem",
+            "line_end": 341,
+            "line_start": 253,
+            "mathematical_role": "Uses a distributional pairing to distinguish nontrivial from trivial states, relates the origin boundary condition to momentum symmetry, states exceptional-point consequences, notes infinite norms and a cutoff regularization, and isolates domain/completeness as open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 303,
+          "line_start": 275,
+          "title": "Infinite norms motivate a finite-window regularization",
+          "unit_id": "openalex_w2511750669_u13",
+          "unit_type": "normalization-obstruction-and-regularization",
+          "why_material": "The source separates its formal Hamiltonian analysis from ordinary quantum mechanics because the states are not normalizable, then proposes a symmetric multiplicative cutoff, logarithmic state renormalization, and a limit. It reports that the transformed-position expectation has the same leading scale as prime counting."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is offered as a possible physical connection, not as validation of the spectral construction or an exact prime-counting theorem.",
+          "representation_dependency": "The cutoff interval, normalization power, transformed position, and asymptotic expectation are formula-bearing and require original-PDF verification before quantitative use; the obstruction and proposed regularization are prose-supported.",
+          "unit_id": "openalex_w2511750669_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 333,
+            "line_start": 301,
+            "title": "Off-critical zeros are represented as exceptional-point degeneracies",
+            "unit_id": "openalex_w2511750669_u12",
+            "unit_type": "degeneracy-and-obstruction-consequence",
+            "why_material": "The source claims that if RH is false, eigenstates associated with off-critical nontrivial zeros coalesce into Jordan-block structures and satisfy self-orthogonality. It then connects spectral nondegeneracy to simplicity of zeros, but explicitly makes the strongest simplicity conclusion depend on a one-to-one correspondence between eigenstate boundary conditions and the secular equation."
+          },
+          {
+            "line_end": 341,
+            "line_start": 305,
+            "title": "Domain and completeness remain the unresolved self-adjointness bottleneck",
+            "unit_id": "openalex_w2511750669_u14",
+            "unit_type": "open-domain-and-completeness-obstruction",
+            "why_material": "The discussion identifies the domain of H and establishment of self-adjointness as difficult open problems. The boundary-condition revisit further notes that finite-dimensional biorthogonality logic does not automatically pass to the infinite-dimensional setting: completeness of the proposed eigenstates is needed to identify the displayed operator as the Hermitian adjoint."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Growth, excessive distributional divergence, self-orthogonality, Jordan coalescence, infinite norm, and missing completeness function as distinct diagnostics of which proposed states or operator claims fail and why.",
+            "limit": "Some diagnostics are conditional consequences of the formal model or of RH itself and therefore cannot serve as independent evidence for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u04",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u12",
+              "openalex_w2511750669_u13",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Internal diagnostics for a failed spectral realization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u13",
+          "spontaneous_reading": "Infinite norm blocks the ordinary quantum interpretation, so the source proposes a multiplicatively symmetric finite window and logarithmic renormalization. The resulting transformed-position expectation scales like the leading prime-counting term, offering a suggestive asymptotic connection rather than validating the spectral construction."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u13",
+          "source_grounded_mathematics": "The source says the proposed eigenstates are not normalizable and the connection to a physical system is tenuous. As a possible regularization it restricts x to the interval from Λ inverse to Λ, rescales each state by the inverse square root of log Λ, and takes Λ to infinity. It reports that the expectation of a similarity-transformed position operator grows as Λ divided by log Λ, the leading scale for the count of primes below Λ.",
+          "conceptual_reading": "The cutoff is natural for scale-invariant states because it is symmetric in logarithmic coordinates, and logarithmic normalization matches their distributional character. The prime-counting scale is an asymptotic resonance, not an identified causal mechanism.",
+          "representation_or_bridge": "A finite log-scale window, state renormalization, the transformed position observable, and the Λ/log Λ asymptotic connect generalized spectral states to a familiar number-theoretic scale.",
+          "boundary_or_failure": "The regularization does not prove convergence of an operator theory, physical normalizability, self-adjointness, or an exact prime-counting identity. It is presented only as a possible physical connection.",
+          "uncertainty": "The cutoff, normalization exponent, transformed observable, and quantitative asymptotic are formula-bearing and should be checked in the PDF before exact use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This limitation is source-specific and blocks upgrading formal symmetry or pseudo-Hermiticity to a rigorous RH implication.",
+      "line_end": 341,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mathematical caveat is stated in prose and is not dependent on reconstructing damaged formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discussion identifies the domain of H and establishment of self-adjointness as difficult open problems. The boundary-condition revisit further notes that finite-dimensional biorthogonality logic does not automatically pass to the infinite-dimensional setting: completeness of the proposed eigenstates is needed to identify the displayed operator as the Hermitian adjoint.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Domain and completeness remain the unresolved self-adjointness bottleneck",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u14.txt",
+      "unit_bytes": 3593,
+      "unit_id": "openalex_w2511750669_u14",
+      "unit_sha256": "3ec1ab80fa8803313ed10e2af6737d22b3c2fe49a35ffd2775a785cee6d10e40",
+      "unit_type": "open-domain-and-completeness-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u14.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "                                                                  ample, by letting x ∈ [Λ−1 , Λ], renormalizing the states\nThis shows that, from the assumption that p̂ is Hermi-            according to ψn (x) → (ln Λ)−1/2 ψn (x), and then taking\ntian, we may conclude that Ĥ is Hermitian (symmetric)            the limit Λ → ∞. Interestingly, the expectation value of\nwith respect to the new inner product.                            the position operator ρ̂−1 x̂ρ̂ in the state ψn (x) for any n\n   As a further consequence of (6) and (7), if the Rie-           in the renormalized theory is Λ/ ln Λ, which for large Λ\nmann hypothesis is true, then the eigenvalues of Ĥ are           gives the leading term in the counting of prime numbers\nnondegenerate. Conversely, if the Riemann hypothesis is           smaller than Λ.\nfalse, then the eigenstates of Ĥ that correspond to non-\n",
+          "sha256": "c4e4dcec67a191f7e4659cd87af05ac0da81d648dce05910dcbd0b7a86aeaa7d"
+        },
+        "after": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "\n<!-- source-page: 5 -->\n\n5\n\n                                                                      summations. J. Comp. App. Math. 178, 347-360 (2005);\n                                                                      Fractional sums and Euler-like identities. Ramanujan J.\n                                                                      21, 123-143 (2010); How to add a noninteger number\n",
+          "sha256": "cbec7f698f874fad4bd9cd23d75b6df5984e5e8dff1d04c255ecc507818fcff5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Biorthogonality, boundary terms, degeneracies, regularization, and open domain problem",
+            "line_end": 341,
+            "line_start": 253,
+            "mathematical_role": "Uses a distributional pairing to distinguish nontrivial from trivial states, relates the origin boundary condition to momentum symmetry, states exceptional-point consequences, notes infinite norms and a cutoff regularization, and isolates domain/completeness as open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 341,
+          "line_start": 305,
+          "title": "Domain and completeness remain the unresolved self-adjointness bottleneck",
+          "unit_id": "openalex_w2511750669_u14",
+          "unit_type": "open-domain-and-completeness-obstruction",
+          "why_material": "The discussion identifies the domain of H and establishment of self-adjointness as difficult open problems. The boundary-condition revisit further notes that finite-dimensional biorthogonality logic does not automatically pass to the infinite-dimensional setting: completeness of the proposed eigenstates is needed to identify the displayed operator as the Hermitian adjoint."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This limitation is source-specific and blocks upgrading formal symmetry or pseudo-Hermiticity to a rigorous RH implication.",
+          "representation_dependency": "The mathematical caveat is stated in prose and is not dependent on reconstructing damaged formulas.",
+          "unit_id": "openalex_w2511750669_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 275,
+            "title": "Infinite norms motivate a finite-window regularization",
+            "unit_id": "openalex_w2511750669_u13",
+            "unit_type": "normalization-obstruction-and-regularization",
+            "why_material": "The source separates its formal Hamiltonian analysis from ordinary quantum mechanics because the states are not normalizable, then proposes a symmetric multiplicative cutoff, logarithmic state renormalization, and a limit. It reports that the transformed-position expectation has the same leading scale as prime counting."
+          },
+          {
+            "line_end": 362,
+            "line_start": 352,
+            "title": "An epsilon-family interpolates the finite difference toward a power-law representative",
+            "unit_id": "openalex_w2511750669_u15",
+            "unit_type": "deformation-and-limit",
+            "why_material": "A substantive note embedded among the references replaces the unit difference by an epsilon-scaled difference, gives Hurwitz-zeta eigenstates with rescaled argument and unchanged spectral parameter, and states that the zero-epsilon limit yields a momentum-conjugated dilation Hamiltonian with a power-law eigenstate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified PT symmetry, a pseudo-Hermitian metric, adjoint eigenstates, and a biorthogonal pairing are assembled to make H formally symmetric under the same boundary condition that selects zeros.",
+            "limit": "Every upgrade to a rigorous reality result depends on unresolved domain, adjoint, boundedness, completeness, and self-adjointness questions; distributional orthogonality is not normalizability.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u05",
+              "openalex_w2511750669_u06",
+              "openalex_w2511750669_u07",
+              "openalex_w2511750669_u09",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u11",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Conditional non-Hermitian route from symmetry to spectral reality"
+          },
+          {
+            "claim": "Growth, excessive distributional divergence, self-orthogonality, Jordan coalescence, infinite norm, and missing completeness function as distinct diagnostics of which proposed states or operator claims fail and why.",
+            "limit": "Some diagnostics are conditional consequences of the formal model or of RH itself and therefore cannot serve as independent evidence for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u04",
+              "openalex_w2511750669_u10",
+              "openalex_w2511750669_u12",
+              "openalex_w2511750669_u13",
+              "openalex_w2511750669_u14"
+            ],
+            "title": "Internal diagnostics for a failed spectral realization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u14",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u14",
+          "spontaneous_reading": "The decisive unresolved object is not another formal eigenfunction but the operator domain. In infinite dimensions, biorthogonality does not identify the true adjoint without completeness, so the formal chain from boundary condition to momentum symmetry to pseudo-Hermiticity cannot yet be closed."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u14",
+          "source_grounded_mathematics": "The discussion calls identification of the Hamiltonian domain and establishment of self-adjointness difficult open problems. Revisiting the boundary condition, it contrasts finite-dimensional nondegenerate matrices, where biorthogonality can identify the adjoint, with the infinite-dimensional setting, where completeness of the proposed eigenstates is additionally required. The observed pairing is said only to suggest the momentum-Hermiticity assumption.",
+          "conceptual_reading": "Completeness is the missing bridge between formal eigenvector algebra and operator theory. Without it, a candidate dual basis and vanishing boundary terms do not determine the adjoint or certify spectral reality.",
+          "representation_or_bridge": "The bridge that remains to be built consists of a precise domain, a complete eigenstate system, control of the adjoint, and a self-adjoint or otherwise adequate closed realization.",
+          "boundary_or_failure": "This limitation blocks upgrading the pseudo-Hermitian and biorthogonal calculations to a rigorous RH implication. Formal symmetry, self-adjointness, completeness, and spectral reality must remain distinct.",
+          "uncertainty": "The central caveat is prose-level and not dependent on damaged formulas; uncertainty concerns the unresolved mathematics itself rather than extraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The note supplies a representation-level bridge between the nonlocal difference construction and a limiting Berry-Keating-type operator; it does not resolve the domain or self-adjointness problem.",
+      "line_end": 362,
+      "line_start": 352,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scaled difference, proportionality, limiting operator, and eigenstate exponent are formula-dependent. Verify equation typography and operator order against the retained PDF before exact use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A substantive note embedded among the references replaces the unit difference by an epsilon-scaled difference, gives Hurwitz-zeta eigenstates with rescaled argument and unchanged spectral parameter, and states that the zero-epsilon limit yields a momentum-conjugated dilation Hamiltonian with a power-law eigenstate.",
+      "source_id": "openalex_w2511750669",
+      "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An epsilon-family interpolates the finite difference toward a power-law representative",
+      "unit_artifact_relpath": "depth/units/openalex_w2511750669_u15.txt",
+      "unit_bytes": 1132,
+      "unit_id": "openalex_w2511750669_u15",
+      "unit_sha256": "1cd49af5773be200d682944a1d7a6a94d6ebb5b1ca23c676ec5c26b088d5c450",
+      "unit_type": "deformation-and-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u15.txt",
+      "source": {
+        "source_id": "openalex_w2511750669",
+        "title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+        "authors": [
+          "Carl M. Bender",
+          "Dorje C. Brody",
+          "Markus P. Müller"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "explicit-formula",
+          "noncommutative-geometry",
+          "primes-zeros",
+          "spectral",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 344,
+          "line_end": 351,
+          "text": "\n5\n\n                                                                      summations. J. Comp. App. Math. 178, 347-360 (2005);\n                                                                      Fractional sums and Euler-like identities. Ramanujan J.\n                                                                      21, 123-143 (2010); How to add a noninteger number\n [1] B. Riemann, Ueber die Anzahl der Primzahlen unter                of terms: from axioms to new identities. Amer. Math.\n     einer gegebenen Grösse. Monatsberichte der Berliner             Month. 118, 136-152 (2011).\n",
+          "sha256": "c630e5acd22cd348421b4c78c25183833836932ac1cd185d688964663e10043c"
+        },
+        "after": {
+          "line_start": 363,
+          "line_end": 370,
+          "text": "     zeros of the zeta function. Mathematics of Computation\n                                                                 [13] C. M. Bender, Making sense of non-Hermitian Hamilto-\n     48, 273-308 (1987).\n                                                                      nians. Rep. Prog. Phys. 70, 947-1018 (2007).\n [4] M. V. Berry, Riemann’s zeta function: A model for quan-\n                                                                 [14] D. C. Brody, Consistency of PT-symmetric quantum me-\n     tum chaos? In Quantum Chaos and Statistical Nuclear\n                                                                      chanics. J. Phys. A: Math. Theor. 49, 10LT03 (2016).\n",
+          "sha256": "71f8feebcc7abfe4a6fb43722db61d673e8422bffd7bc42f01264b1bc20f045b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+        "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "References and epsilon-family note",
+            "line_end": 403,
+            "line_start": 342,
+            "mathematical_role": "Contains bibliography plus a substantive note deforming the difference operator through an epsilon-family whose limiting representative has power-law eigenstates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 362,
+          "line_start": 352,
+          "title": "An epsilon-family interpolates the finite difference toward a power-law representative",
+          "unit_id": "openalex_w2511750669_u15",
+          "unit_type": "deformation-and-limit",
+          "why_material": "A substantive note embedded among the references replaces the unit difference by an epsilon-scaled difference, gives Hurwitz-zeta eigenstates with rescaled argument and unchanged spectral parameter, and states that the zero-epsilon limit yields a momentum-conjugated dilation Hamiltonian with a power-law eigenstate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The note supplies a representation-level bridge between the nonlocal difference construction and a limiting Berry-Keating-type operator; it does not resolve the domain or self-adjointness problem.",
+          "representation_dependency": "The scaled difference, proportionality, limiting operator, and eigenstate exponent are formula-dependent. Verify equation typography and operator order against the retained PDF before exact use.",
+          "unit_id": "openalex_w2511750669_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 341,
+            "line_start": 305,
+            "title": "Domain and completeness remain the unresolved self-adjointness bottleneck",
+            "unit_id": "openalex_w2511750669_u14",
+            "unit_type": "open-domain-and-completeness-obstruction",
+            "why_material": "The discussion identifies the domain of H and establishment of self-adjointness as difficult open problems. The boundary-condition revisit further notes that finite-dimensional biorthogonality logic does not automatically pass to the infinite-dimensional setting: completeness of the proposed eigenstates is needed to identify the displayed operator as the Hermitian adjoint."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source relates the nonlocal finite-difference Hamiltonian to Berry-Keating-type representatives both by similarity transport of the boundary condition and by shrinking an epsilon-scaled difference toward a momentum-conjugated dilation operator.",
+            "limit": "The exact transported quantization formula and limiting operator order require scan verification, and neither bridge supplies a self-adjoint domain.",
+            "parent_local_unit_ids": [
+              "openalex_w2511750669_u02",
+              "openalex_w2511750669_u08",
+              "openalex_w2511750669_u15"
+            ],
+            "title": "Difference-scale deformation toward Berry-Keating form"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2511750669_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w2511750669_u15",
+          "spontaneous_reading": "Introducing a difference scale ε reveals a deformation from the nonlocal zeta construction toward a local dilation representative. Hurwitz-zeta eigenstates with rescaled argument persist at finite ε, while the zero-scale limit becomes a momentum-conjugated dilation operator with a power-law eigenstate."
+        },
+        "directed": {
+          "unit_id": "openalex_w2511750669_u15",
+          "source_grounded_mathematics": "The note replaces the unit difference by an ε-scaled shift difference and defines a one-parameter Hamiltonian family. Its eigenstates are proportional to minus ζ(z,1+x/ε) with the same eigenvalue parametrization. As ε tends to zero, the source states that the Hamiltonian tends to a momentum-conjugated symmetrized dilation operator and the eigenstate tends to a power proportional to x raised to 1−z.",
+          "conceptual_reading": "The deformation separates scale-dependent finite-difference structure from the scale-free dilation core. It offers a controlled representation-level interpolation rather than treating the Berry–Keating form as an unrelated analogy.",
+          "representation_or_bridge": "The scaled shift Δε, rescaled Hurwitz-zeta state, unchanged spectral parameter, and ε-to-zero power-law limit connect discrete translation dynamics to a differential dilation operator.",
+          "boundary_or_failure": "A formal small-ε limit does not transport a self-adjoint domain, boundary condition, completeness, or spectral equivalence automatically, so it does not resolve the main operator-theoretic obstruction.",
+          "uncertainty": "The scaled-difference normalization, limiting operator order, proportionality, and exponent are formula-sensitive and require PDF verification before exact symbolic reuse."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "721c0c34bc263d75089ecc016f2bf4b2fc8bb397829638ac887bd3f4fae75a58"
+}

@@ -1,0 +1,456 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2155775981",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2155775981_faa564e9_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Choosing contours on which Lambda or Phi is real turns the functional equation into geometric crossing, monotonicity, and local-zero information, with Gram points as the shared critical-line anchors.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2155775981_v2_u01",
+          "openalex_w2155775981_v2_u04",
+          "openalex_w2155775981_v2_u05",
+          "openalex_w2155775981_v2_u06",
+          "openalex_w2155775981_v2_u07"
+        ],
+        "proposed_limit": "The contour descriptions are asymptotic at large height and the phase-portrait labels do not locate off-line zeros.",
+        "source_id": "openalex_w2155775981",
+        "synthesis_id": "riemann_v2_within_efb88cc99b7364a29f2340ec",
+        "title": "Functional-equation phase geometry selects sampling curves adapted to zeta reality"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "All later contour and average claims depend on these conventions.",
+          "line_end": 48,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; several real/imaginary glyphs are degraded, but definitions and relations are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines xi, the Hardy Z-function, theta, Gram points, and Lambda, relating two functional-equation forms and introducing the phase portrait that generates the paper's geometric objects.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completed zeta and its multiplier phases make critical-line values real and select Gram points",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u01.txt",
+          "unit_bytes": 1721,
+          "unit_id": "openalex_w2155775981_v2_u01",
+          "unit_sha256": "a6e66e19aa7a53e0e1b260ee5f8f6b585597bb5af7b1824eb7886170c1cafddd",
+          "unit_type": "functional-equation phase setup",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion and phase normalization do more than restate the functional equation: they choose coordinates where complex conjugation and reflection become real-valued constraints. The resulting phase portrait supplies geometric objects—points and contours—adapted to zeta's symmetry.",
+            "nonparaphrase_operation": "Z(t) bridges ζ on the critical line to a real function; ϑ indexes Gram points; Λ and Φ bridge alternative forms of the functional equation to contour families.",
+            "quality_reason": "The definitions of Phi, xi, theta, Hardy Z, Gram points, and Lambda, together with both functional equations and Lambda(s)Lambda(1-s)=1, occur in the span. The output correctly refuses to infer Gram's law, RH, or later average results from these definitions. The coordinate language is tied to explicit real-value and reflection identities.",
+            "source_support": "The source defines the completed function ξ using Φ, records its symmetric functional equation, and defines the Hardy Z-function using the phase ϑ so that Z(t) is real and detects critical-line zeros. Gram points satisfy ϑ(g_n)=nπ, hence ζ is real there. A second multiplier Λ is introduced through ζ(1-s)=Λ(s)ζ(s), with Λ(s)Λ(1-s)=1 and Λ(s)=Φ(1-s)/Φ(s).",
+            "speculation_status": "These definitions establish correspondence and symmetry, not Gram's law or RH. The phase-portrait motivation does not by itself prove later contour or average claims. Definitions and relationships are recoverable, though several real/imaginary glyphs and normalizing constants are degraded and should be scan-checked for exact transcription. Calling the multipliers phase gauges and symmetry-adapted coordinates is a reasonable interpretation of the real-valued normalizations. Real/imaginary glyphs and normalizing constants are visibly degraded, as acknowledged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The dynamical center/node language comes from the phase-portrait interpretation.",
+          "line_end": 182,
+          "line_start": 159,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; signs and conjugations should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses Lambda(s)Lambda(1-s)=1 and the zeta functional equation to prove symmetric crossings at Lambda equal to plus or minus one, distinguishing real from imaginary zeta values and the local type of simple zeros.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Lambda-real contours cross symmetrically and classify critical-line zeros as centers or nodes",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u04.txt",
+          "unit_bytes": 1832,
+          "unit_id": "openalex_w2155775981_v2_u04",
+          "unit_sha256": "864eb7fcffd6a6ce7ce0d146feffc2b7c1c6c0aa12c5bc06cdb59b1dcc0e381d",
+          "unit_type": "functional-symmetry geometry",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Reflection symmetry plus a fixed-point line converts a multiplicative relation into a discrete sign invariant. That invariant organizes both value phase and local zero geometry.",
+            "nonparaphrase_operation": "Λ=±1 at crossings is the bridge between the functional equation and the real/imaginary classification of ζ and ζ'. The phase-portrait center/node terminology packages the derivative direction geometrically.",
+            "quality_reason": "The symmetry of Lambda-real contours, Lambda=+/-1 on the critical line, corresponding real/pure-imaginary zeta values, simple-zero center/node classification, and absence of nonreal Lambda zeros are all in Lemma 2. The output preserves the simple-zero restriction on the local classification. The phase-portrait terminology is source terminology, not a free analogy.",
+            "source_support": "Using Λ(P+)Λ(P-)=1 for points symmetric about Re(s)=1/2, Lemma 2 proves symmetry of Im Λ=0 contours. On the critical line a real Λ must satisfy Λ²=1. The functional equation then makes ζ real when Λ=1 and purely imaginary when Λ=-1. Differentiating at a simple zero makes ζ' imaginary in the first case and real in the second, labeled respectively center and node; Λ has no nonreal zeros.",
+            "speculation_status": "The center/node conclusion is stated for simple zeros; multiplicity changes the local dynamical picture. This contour classification does not locate zeros or establish that a given Gram line is positive. The logical proof is explicit, but OCR-degraded real/imaginary symbols and conjugation marks should be verified for exact notation. Describing Lambda=+/-1 as a discrete sign invariant is a reasonable abstraction of the fixed-line argument. Conjugation and real/imaginary OCR marks should be scan-checked for exact notation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The intervening figure is visual support and not required for the derivation.",
+          "line_end": 243,
+          "line_start": 216,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high for the displayed expansion; exact coefficients require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives an implicit contour equation to one-over-t accuracy, distinguishes even Gram crossings from odd imaginary-value crossings, and verifies consistency with the usual theta expansion.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Stirling expansion shows Gram lines deviate from horizontal intervals by only order one over height",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u05.txt",
+          "unit_bytes": 1739,
+          "unit_id": "openalex_w2155775981_v2_u05",
+          "unit_sha256": "b41af5be4794279565d59dedceb43191c9ffa29d86797c8aa7fac6f1df0a3024",
+          "unit_type": "asymptotic-contour geometry",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A complicated transcendental level set becomes a small perturbation of a simple foliation at large height. This asymptotic straightening justifies replacing movement along Gram contours by horizontal sampling in later average estimates, up to controlled error.",
+            "nonparaphrase_operation": "The implicit Stirling equation is the bridge from gamma-factor phase to contour position; the θ expansion checks consistency at the critical-line anchor.",
+            "quality_reason": "Lemma 3 gives the implicit Stirling equation, even/odd crossing distinction, O(1/t) deviation, and consistency with the theta expansion at sigma=1/2. The output correctly limits the statement to asymptotic large-height geometry and denies positivity or zero-count consequences. The 'simple foliation' language is grounded by the explicit O(1/t) level-set equation.",
+            "source_support": "Lemma 3 expands Λ(s)=conjugate Λ(s) using Stirling's series through the 1/t term and obtains an implicit equation for Im Λ=0 contours. Even indices pass through Gram points and odd indices through points where ζ is imaginary. The equation agrees with the standard expansion of ϑ at σ=1/2, and the contours differ from horizontal intervals by O(1/t).",
+            "speculation_status": "The result is asymptotic for sufficiently large height and retains only specified error order. Near low heights the contours need not be uniformly close to horizontal, and the unit does not establish positivity or zero counts. The qualitative O(1/t) geometry is clear; exact coefficients in both Stirling-derived displays are highly extraction-sensitive. Using asymptotic straightening to motivate horizontal approximation is reasonable, though its later use is contextual rather than proved in this slice. Exact Stirling coefficients are highly extraction-sensitive, as stated."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivative comparison applies to zeros of any order, with the stated simple-zero corollary.",
+          "line_end": 323,
+          "line_start": 276,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the asymptotic multiplier modulus and derivative order are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the Gram-line phase equation with Stirling asymptotics to obtain a signed power law in sigma, proves strict monotonicity, and transfers it through the differentiated functional equation to unequal derivatives at symmetric zeros.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Real Lambda grows strictly across a Gram line, so symmetric zeta zeros cannot have equal derivative modulus",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u06.txt",
+          "unit_bytes": 2627,
+          "unit_id": "openalex_w2155775981_v2_u06",
+          "unit_sha256": "f7a127aeb272943901bf1cc07a23ec0727912d55162ea0c4c0bef6eb39466d29",
+          "unit_type": "monotonicity-and-asymmetry consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The functional equation relates reflected zeros, but the multiplier records an orientation and scale that breaks equality between their local analytic data. A global symmetry therefore coexists with a quantitative local asymmetry away from its fixed line.",
+            "nonparaphrase_operation": "The asymptotic modulus of Λ is the bridge from contour position σ to the ratio of derivatives at reflected zeros. Differentiation at the first nonzero derivative order removes lower product-rule terms.",
+            "quality_reason": "Lemma 4 states the signed power asymptotic and strict monotonicity for sufficiently large t; Lemma 5 differentiates at the zero's first nonzero derivative order and obtains the strict reflected-derivative modulus inequality. The output correctly notes the large-height qualification and that the inequality does not exclude off-line symmetric zeros. The bridge language names the precise multiplier modulus and mth derivative, so it is not merely stylistic.",
+            "source_support": "Lemma 4 derives Re Λ(s)=(-1)^n(t/2π)^{σ-1/2}(1+O(t^{-2})) on Im Λ=0 contours and proves strict monotonicity in σ for large t. Lemma 5 considers symmetric zeros P± of order m, differentiates ζ(1-s)=Λ(s)ζ(s) m times, and obtains |ζ^{(m)}(P-)|>|ζ^{(m)}(P+)|; for simple zeros the derivatives cannot differ only by sign.",
+            "speculation_status": "Strict monotonicity requires sufficiently large t and the stated asymptotic control; the final numerical threshold is asserted from an implied-constant check. The derivative inequality does not rule out off-line symmetric zeros. The comparison and its all-multiplicity form are clear, but exact signs, powers, and the threshold depend on formula-level extraction. The coexistence of functional symmetry and local derivative asymmetry is a reasonable conceptual summary. Exact signs, powers, and the stated t>10 implied-constant check remain formula-level details."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final derivation is abbreviated by the source as analogous to the Lambda calculation.",
+          "line_end": 357,
+          "line_start": 325,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high for argument and slope formulas; the qualitative comparison is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares arguments at points symmetric about the critical line and derives a distinct implicit equation, showing that two natural functional-equation factors encode different contour geometry despite agreeing at Gram points.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Phi-real contours share Gram crossings but acquire a logarithmically small negative slope",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u07.txt",
+          "unit_bytes": 1935,
+          "unit_id": "openalex_w2155775981_v2_u07",
+          "unit_sha256": "37eb4ebec7947c7bcf023cfbc8a9cc386c32f48e4d36ecbc4a33ad8b20850d81",
+          "unit_type": "alternative-contour comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a controlled comparison of two natural phase gauges. Both preserve the Gram-point fixed set, but their off-line level sets retain different information from the gamma factors, so the choice of multiplier matters for geometric arguments.",
+            "nonparaphrase_operation": "The symmetric argument difference for Φ bridges gamma asymptotics to contour slope. Gram points serve as common anchors that make the mismatch with Λ-real contours directly comparable.",
+            "quality_reason": "The span gives the Phi argument difference, proves critical-line crossings at Gram points, states the asymptotic slope -pi/(2 log t), and says the remaining derivation is omitted as analogous. The output correctly refuses to transfer Lambda monotonicity or derivative consequences to Phi contours. The representation comparison is contentful because the common crossing set and distinct slopes are explicit.",
+            "source_support": "Lemma 6 compares arg Φ at points symmetric about the critical line and obtains a leading difference proportional to their horizontal separation. Lemma 7 shows Im Φ=0 contours cross the critical line at Gram points, derives an implicit Stirling-type equation, and states their asymptotic angle -π/(2 log t) with O(1/t) deviation from intervals at that slope.",
+            "speculation_status": "Shared crossings do not transfer Λ's monotonicity or derivative conclusions to Φ contours. The source abbreviates the final derivation as analogous, so the detailed error analysis is not present in this unit. The qualitative slope comparison is supported; exact argument signs and coefficients are extraction-sensitive. Treating Phi and Lambda as two phase gauges with shared anchors but different off-line information is a reasonable comparison. The omitted derivation and damaged argument signs justify the recorded uncertainty."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d77c5f4a5626089b975ad2078c6de8579aa8f26a624e748bb1e9b0d5e366038b",
+        "dossier_sha256": "eba165696fa291aa8bf5ba434cdfa11aab97e03e31b79623377fee1151257f29"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Gram-point phase makes the functional-equation multiplier almost real, so one dual Dirichlet contribution becomes an explicit mean term while the remaining oscillations cancel by curvature bounds.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2155775981_v2_u02",
+          "openalex_w2155775981_v2_u08",
+          "openalex_w2155775981_v2_u09",
+          "openalex_w2155775981_v2_u10"
+        ],
+        "proposed_limit": "The proof covers fixed sigma greater than zero; the numerically suggested extension to sigma at most zero is unproved.",
+        "source_id": "openalex_w2155775981",
+        "synthesis_id": "riemann_v2_within_ec397e615ae244b0b286f011",
+        "title": "The corrected Gram mean is the dual side of the approximate functional equation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly says the extension to sigma at most zero remains unproved.",
+          "line_end": 129,
+          "line_start": 49,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for asymptotic equations and error exponents; the theorem's conceptual correction is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the asymptotic Gram-line equation and monotonicity, contrasts Phi-real contour slopes, gives the corrected average theorem uniform for sigma greater than zero, and records numerical evidence beyond the proved domain.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Multiplier-real contours are nearly horizontal and a dual correction extends the Gram-point mean across the right half-plane",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u02.txt",
+          "unit_bytes": 4418,
+          "unit_id": "openalex_w2155775981_v2_u02",
+          "unit_sha256": "269126526f70a4c07a295d84150c5cec3028f387bd1c8bdc2f365ce57f5feb6a",
+          "unit_type": "theorem-and-geometry overview",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The same critical-line anchors do not determine a unique off-line geometry; the multiplier choice controls how phase propagates. In the average problem, functional-equation duality contributes a coherent term that is invisible at σ=1/2 only because it then has constant size.",
+            "nonparaphrase_operation": "Λ-real and Φ-real contours bridge functional equations to geometry. The corrected summand Re ζ(σ+ig_n)-1-(g_n/2π)^{1/2-σ} bridges Titchmarsh's critical-line mean to the right half-plane.",
+            "quality_reason": "The overview states the distinct Lambda-real and Phi-real contour geometries, strict Lambda monotonicity, the corrected Gram-point average theorem uniformly for sigma>0, and only numerical evidence to the left. The output preserves the proved domain and explicitly denies implications to whole-line positivity or zero counting. The 'same anchors, different geometry' summary identifies the concrete slopes and crossings rather than offering an empty analogy.",
+            "source_support": "The overview states that Im Λ=0 contours cross the critical strip almost horizontally, meet the critical line at Gram or imaginary-zeta points, and carry strictly monotone Re Λ. Im Φ=0 contours meet at Gram points but have asymptotic slope -π/(2 log t). Theorem 1 gives a uniform estimate for sums of Re ζ(σ+ig_n) after subtracting 1 and the explicit correction (g_n/2π)^{1/2-σ}, for σ>0, and notes numerical evidence for an unproved extension leftward.",
+            "speculation_status": "The theorem is proved only for σ>0; numerical evidence at σ≤0 is not a theorem. Nearly horizontal contour geometry and average positivity do not imply positivity along entire Gram lines or a zero-count result. The conceptual correction and domains are clear, but exact asymptotic equations and error exponents are formula-sensitive in the extraction. Interpreting the correction as the coherent functional-equation dual contribution is reasonable and is borne out by the theorem's displayed term. Exact theorem exponents and asymptotic equations remain formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes numerical averages as motivation; the analytic lemma is the reusable result.",
+          "line_end": 454,
+          "line_start": 359,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for derivative asymptotics and the exact logarithmic loss; proof flow is prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines continuous Gram ordinates, differentiates their inverse phase, obtains a positive second-derivative lower bound, and applies a van der Corput estimate uniformly in the integer frequency needed for zeta averaging.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Curvature of the inverse Gram map enables square-root cancellation in fixed-frequency cosine sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u08.txt",
+          "unit_bytes": 5204,
+          "unit_id": "openalex_w2155775981_v2_u08",
+          "unit_sha256": "6df32fe7c23e6d55c9249bf50768a4c20f0c7310062df7de022b3f2192ebdfea",
+          "unit_type": "oscillatory-sum bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Nonuniform sampling is not an obstacle here; its controlled curvature is the source of cancellation. The Gram indexing straightens the phase enough that a second-derivative criterion can replace direct analysis of individual oscillations.",
+            "nonparaphrase_operation": "The continuous inverse t_ν of the theta phase is the bridge between Gram points and a smooth phase function. The lower bound on φ'' connects asymptotic geometry to van der Corput cancellation.",
+            "quality_reason": "The continuous inverse Gram map, phase phi, differentiated inverse relation, positive lower bound for -phi'', van der Corput application, and O(N^1/2 log N) cosine bound with absolute constant are explicit. The output correctly notes that the lemma alone does not justify an unbounded Dirichlet-sum interchange. The geometric language retains the exact inverse map and van der Corput operation.",
+            "source_support": "The source extends Gram ordinates continuously by ϑ(t_ν)=νπ, defines φ(ν)=t_ν log n/(2π), and differentiates through the inverse relation. Standard asymptotics for ϑ, ϑ', and ϑ'' give a positive lower bound for -φ'' across an interval. A van der Corput estimate then yields ∑_{ν=M+1}^N cos(g_ν log n)=O(N^{1/2}log N), with an absolute implied constant for integer n≥2.",
+            "speculation_status": "The lemma bounds fixed-frequency cosine sums and does not alone justify interchanging an unbounded Dirichlet sum with the Gram average. Initial terms and small ν are separated, and uniformity depends on n≥2. The proof flow is clear, though exact derivative asymptotics, logarithmic factors, and the numerical form of the curvature bound should be PDF-checked. Calling curvature the source of cancellation is a direct reading of the second-derivative estimate. Exact derivative asymptotics and logarithmic factors are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This explains why Titchmarsh's uncorrected mean two is special to sigma one-half.",
+          "line_end": 593,
+          "line_start": 457,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely high for the approximate functional equation and error absorption; the representation-level conclusion is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Treats sigma above one by absolute convergence, then for smaller sigma evaluates the approximate functional equation where the multiplier is nearly real, isolating a correction (gn/2pi) to the one-half-minus-sigma and two cosine sums plus a controlled error.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "At Gram points the dual Dirichlet sum contributes an explicit growing mean that must be subtracted",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u09.txt",
+          "unit_bytes": 7002,
+          "unit_id": "openalex_w2155775981_v2_u09",
+          "unit_sha256": "60376abc1076c25b2512dc926860e0dd7588d80eed9667c24c90ad5eaa222a75",
+          "unit_type": "approximate-functional-equation decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Functional-equation duality creates a structured bias under phase-locked sampling. The correction is not an arbitrary renormalization: it isolates the coherent part so oscillatory cancellation applies to what remains.",
+            "nonparaphrase_operation": "The approximate functional equation is the bridge from ζ values to two finite Dirichlet sums; evaluation at Gram ordinates and the asymptotic phase of χ expose the deterministic correction.",
+            "quality_reason": "The proof splits sigma above and below sigma_N, uses absolute convergence in the first range, and in the second evaluates an approximate functional equation at Gram ordinates to isolate 1, the explicit dual correction, two cosine sums, and an error. The output correctly says the span only sets up, rather than finishes, the estimates for F1 and F2. The 'structured bias' phrasing is grounded by the displayed deterministic power term.",
+            "source_support": "For σ above a variable threshold greater than one, absolute convergence and the cosine-sum lemma control the average directly. For 0<σ below that threshold, the proof evaluates an approximate functional equation at t=g_ν. Lemma 4 makes χ nearly real there, yielding Re ζ(σ+ig_ν) as 1 plus the explicit factor (g_ν/2π)^{1/2-σ}, two truncated cosine sums with reciprocal exponents, and a controlled error. These are named f1 and f2 for separate summation.",
+            "speculation_status": "The decomposition relies on σ>0, the truncation/error form of the approximate functional equation, and high-enough Gram ordinates. The unit sets up but does not complete the uniform estimates for the two cosine-sum families. The representation-level conclusion is clear, while several extracted exponents and absorbed error terms are highly formula-sensitive. Calling the correction a coherent phase-locked dual contribution is a reasonable interpretation of the Gram-point evaluation. Several exponents and absorbed errors are visibly extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The algebra is retained through the final combination because the sigma-uniformity depends on the balance.",
+          "line_end": 686,
+          "line_start": 595,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; extracted exponents and the minimizer formula should be verified against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Bounds each cosine-sum family by changing summation order and partial summation, then chooses a slowly varying sigma_N to balance the absolutely convergent and approximate-functional-equation estimates into one uniform theorem.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Reversing the Gram-point and Dirichlet summations yields two sigma regimes joined by an optimized threshold",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u10.txt",
+          "unit_bytes": 5383,
+          "unit_id": "openalex_w2155775981_v2_u10",
+          "unit_sha256": "daa15465e2e0615544b0525354f0f763a6caa21de1f0371ffffd4c0f1bb342ad",
+          "unit_type": "range-splitting error optimization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Range splitting is an optimization over proof representations: neither expansion is uniformly best, so the argument selects where to switch and chooses the boundary to equalize their costs.",
+            "nonparaphrase_operation": "Reversed double sums make the fixed-frequency cancellation lemma applicable; partial summation transfers it through a varying amplitude. The threshold σ_N bridges the absolute-convergence and dual-sum regimes.",
+            "quality_reason": "The span reverses the F1 sums, uses partial summation for F2, derives two sigma-dependent errors, defines g_N, chooses sigma_N, and combines all ranges to prove the uniform theorem. The output preserves that this is an average estimate and that the threshold balance is needed to avoid a range gap. The optimization language is anchored to the explicit g_N minimizer and sigma_N threshold.",
+            "source_support": "The proof reverses the Gram-index and Dirichlet-index sums for F1 and applies Lemma 8. It treats F2 by partial summation against the growing factor g_ν^{1/2-σ}, again using the cosine bound. The resulting two σ-dependent error terms are packaged into a function g_N(σ); a calculated threshold σ_N near one balances them and also controls the factor 1/(σ_N-1) from the absolutely convergent range. Combining all cases proves Theorem 1 uniformly for σ>0.",
+            "speculation_status": "Uniformity depends on the precise balance of exponents and logarithmic losses; a different threshold can leave a gap or worsen the bound. The proof establishes an average estimate, not pointwise behavior at Gram points. The case structure is recoverable, but exact exponents and the displayed minimizer are OCR-sensitive and should be checked before formal reuse. Describing the range split as choosing between proof representations is a reasonable conceptual synthesis. Exact exponents and the minimizer formula need scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d77c5f4a5626089b975ad2078c6de8579aa8f26a624e748bb1e9b0d5e366038b",
+        "dossier_sha256": "eba165696fa291aa8bf5ba434cdfa11aab97e03e31b79623377fee1151257f29"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Positive corrected averages force infinitely many positive real zeta values at Gram ordinates, supporting the motivation that positivity might make the argument-principle count exact.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2155775981_v2_u03",
+          "openalex_w2155775981_v2_u11"
+        ],
+        "proposed_limit": "Pointwise positivity at one ordinate does not imply positivity along the full horizontal or Gram-line segment required by the nearest-integer zero count.",
+        "source_id": "openalex_w2155775981",
+        "synthesis_id": "riemann_v2_within_a93e2c5d76cf00307b6b195f",
+        "title": "Average positivity is evidence for a zero-counting route but not its missing uniform statement"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper supplies average positivity evidence, not a lower density of entirely positive lines.",
+          "line_end": 158,
+          "line_start": 136,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the contour integral formula; the nearest-integer implication is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a single-valued logarithm and the argument principle to show that positivity on a boundary interval forces N(T) to be the nearest integer to theta(T)/pi plus one, motivating the search for many positive Gram lines.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Positivity of real zeta along a top segment would turn argument variation into exact integer rounding",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u03.txt",
+          "unit_bytes": 1589,
+          "unit_id": "openalex_w2155775981_v2_u03",
+          "unit_sha256": "319624dda07d9b96900d1a2ec3aaaba47cc79c78f860d17bbbfdf20070aa8554",
+          "unit_type": "zero-counting motivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A continuous sign condition is used as a certificate that eliminates winding ambiguity. It is much stronger than a positive average: local boundary control is precisely what turns a real-valued approximation into an exact integer statement.",
+            "nonparaphrase_operation": "The single-valued log ζ on the boundary segment is the bridge from pointwise positivity to bounded argument variation; nearest-integer rounding bridges that bound to N(T).",
+            "quality_reason": "The positivity hypothesis on the full top segment, unique logarithm, argument-principle formula, residual interval (-1/2,1/2), and nearest-integer conclusion are explicit. The output correctly distinguishes whole-segment positivity from isolated positive samples or positive averages. The certificate language retains the exact boundary interval and rounding mechanism.",
+            "source_support": "For a rectangle spanning the critical strip to height T, the source assumes Re ζ(s)>0 on the top segment from 1+ε+iT to 1/2+iT. This makes log ζ single-valued there. Combining its logarithmic derivative with the argument principle puts the residual integral between -1/2 and 1/2, so N(T) is the nearest integer to ϑ(T)/π+1. The observed positivity tendency on Gram lines motivates seeking infinitely many such heights.",
+            "speculation_status": "The paper supplies motivation and later average evidence but no lower bound for the proportion of wholly positive Gram lines. Positivity at isolated Gram points or positive total average is insufficient for the boundary-segment hypothesis. The implication is clear, while exact contour orientation and real/imaginary extraction symbols should be checked if the formula is quoted verbatim. Calling positivity a certificate that removes winding ambiguity is a faithful interpretation of the single-valued-log step. Contour orientation and damaged real/imaginary symbols need checking only for verbatim formula reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Average positivity does not establish positivity along whole Gram lines or the desired zero-count rounding on a positive proportion of heights.",
+          "line_end": 716,
+          "line_start": 687,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; corollary exponents are formula-sensitive but conclusions are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the conjectural leftward extension, derives the limiting corrected mean for every sigma greater than zero, and converts the asymptotic sum into infinitely many positive real zeta values for zero less than sigma less than one.",
+          "source_id": "openalex_w2155775981",
+          "source_normalized_sha256": "bd08e542a1a18016c9c876671dc09db3e9357e0d3c61c4c2ddf8d284c02ab610",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Corrected mean convergence implies positive total real part and infinitely many positive Gram values",
+          "unit_artifact_relpath": "depth/units/openalex_w2155775981_v2_u11.txt",
+          "unit_bytes": 1343,
+          "unit_id": "openalex_w2155775981_v2_u11",
+          "unit_sha256": "e23af0b26825b078b83fbb8f4f3def0e40873d012cecec23b435f34aa59ddaff",
+          "unit_type": "average-to-existence corollaries",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2155775981_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An average asymptotic is converted into an existence statement by a simple contradiction: if only finitely many sampled values were positive, the positive linear total could not persist. The conclusion retains only pointwise positivity at infinitely many samples, not geometric control between them.",
+            "nonparaphrase_operation": "The corrected average bridges the analytic theorem to a lower bound on the uncorrected total; that aggregate inequality bridges in turn to infinitely many positive values.",
+            "quality_reason": "The conjectural extension to sigma<=0, corrected mean convergence for sigma>0, positive total lower bound, and infinitely many positive Gram values for 0<sigma<1 are all stated. The output clearly denies positive density, whole-contour positivity, or nearest-integer zero counting. The aggregate-to-existence bridge identifies the actual logical operation rather than merely restating the corollary.",
+            "source_support": "The source conjectures extension of the average result to σ=0 and farther left, while Corollary 9 proves corrected mean convergence for every σ>0. Corollary 10 deduces that the sum of Re ζ(σ+ig_n) is at least (1-ε)N for sufficiently large N, and Corollary 11 concludes that for 0<σ<1 infinitely many Gram ordinates have positive real zeta value.",
+            "speculation_status": "The extension to σ≤0 is conjectural. Neither positive total nor infinitely many positive sample values supplies a positive density, positivity along entire horizontal/Gram contours, or the boundary condition needed for nearest-integer zero counting. The logical corollaries and their domains are explicit; only their exact error exponents are formula-sensitive. The contradiction explanation for converting a positive linear total to infinitely many positive values is reasonable and elementary. Only exact error exponents are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d77c5f4a5626089b975ad2078c6de8579aa8f26a624e748bb1e9b0d5e366038b",
+        "dossier_sha256": "eba165696fa291aa8bf5ba434cdfa11aab97e03e31b79623377fee1151257f29"
+      }
+    }
+  ]
+}

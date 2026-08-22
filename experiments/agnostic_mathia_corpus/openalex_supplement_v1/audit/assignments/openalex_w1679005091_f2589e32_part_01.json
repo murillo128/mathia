@@ -1,0 +1,431 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_blowup_categorical_decomposition": {
+      "boundary_or_failure": "Boundary: the statements concern blowing up a smooth variety along a smooth center; they do not justify the same decomposition for singular centers or unrelated modifications. Representation dependence: the pieces are ordered functor images with line-bundle twists, not independent factors in an unordered product.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_a38b10a50865e62f10296eba1238d55a66181d9bcfdfb7f809e6ecb2271226f3",
+        "agnostic_oa_critic_d59ce124ed801f5d72a0585ed8c5fc43a49d0f631163362e9c0b2c0b20151d81"
+      ],
+      "interpretation": "Inference: the categorical effect of geometric surgery can be read as a conservation-and-localization ledger: the pre-surgery category persists through pullback, while the genuinely added information is isolated into repeated components supported through the exceptional locus and inherited from the center.",
+      "nonparaphrase_operation": "Reusable operation: transport the old structure fully faithfully into the modified setting, localize the new contribution at the modification center, separate its twisted copies, and order all pieces by vanishing relations to expose what changed.",
+      "quality_reason": "The candidate accurately reads the smooth blow-up decomposition as the fully faithful old category together with successive twisted images of the center routed through the exceptional divisor, and it preserves that these are ordered semiorthogonal pieces rather than product factors.",
+      "source_support": "Source fact: for the displayed smooth blow-up, the passage states full faithfulness of pullback from the original variety and of functors from the center through the exceptional divisor. It then states a semiorthogonal decomposition of the blown-up derived category into the original image and a sequence of twisted center images.",
+      "uncertainty": "Uncertainty: the survey states and attributes the proposition and theorem without proofs, while the normalized blow-up diagram, twists, and decomposition layout are damaged; no exact symbolic indexing is introduced.",
+      "unit_id": "agnostic_oa_blowup_categorical_decomposition"
+    },
+    "agnostic_oa_categorical_desingularization": {
+      "boundary_or_failure": "Boundary: quotient recovery is stated for a proper birational map to a variety with rational singularities, while existence, uniqueness, and universal minimality are expectations or conjectures under additional hypotheses. Representation dependence: a candidate resolution may be a module category over a sheaf of endomorphism algebras rather than the derived category of an ordinary smooth space.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f873766ab8acdc755bc1584862634ffa19c42a0b1a2388a6ec4106acc425617b",
+        "agnostic_oa_critic_ff31b5b61e50cde7ea72e10f2b087c5bef3c968b531cfc2942fbf8fbb42253bd"
+      ],
+      "interpretation": "Inference: desingularization has two logically separate parts: an ambient finite-homological model supplies regularity, while quotienting by its invisible kernel recovers the singular target. Minimality is then better expressed as a universal embedding relation among models than as informal geometric smallness.",
+      "nonparaphrase_operation": "Reusable operation: represent recovery as ambient category modulo an explicitly named invisible subcategory, widen admissible ambient models to algebra-module categories when needed, and compare candidates by fully faithful embeddings into competitors.",
+      "quality_reason": "The candidate faithfully separates quotient recovery of the singular category from the additional finite-homological ambient model, then keeps universal minimality, the finite-cover candidate, and crepant equivalence at their stated expected or conjectural status.",
+      "source_support": "Source fact: the passage says derived pushforward for the stated birational situation identifies the singular derived category with a quotient by its kernel and defines categorical desingularization accordingly. It proposes a minimal object embedding into every other desingularization, defines a noncommutative endomorphism-algebra candidate of finite homological dimension, and states a conjectural finite-cover construction with a crepant equivalence expectation.",
+      "uncertainty": "Uncertainty: the universal minimality claim and finite-cover construction are not proved in this excerpt, and normalized quotient, resolution, and endomorphism-sheaf notation is partly malformed; their conjectural status is retained.",
+      "unit_id": "agnostic_oa_categorical_desingularization"
+    },
+    "agnostic_oa_flip_embedding_equivalence": {
+      "boundary_or_failure": "Boundary: the proved statement in the excerpt is a special flip/flop model; the general flip embedding and flop equivalence are presented as a conjecture, with selected cases reported. Representation dependence: the functor direction depends on the chosen birational correspondence, and the passage explicitly warns that a naive pull-push construction is not always fully faithful.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_998af6588ec7184467bbc20d20e5c692596e1007b8e10848bfedb49b73904127",
+        "agnostic_oa_critic_8be53438ab99d5b53054c746922fc9988c694efc4b71a71730ed99ee33f6ca5c"
+      ],
+      "interpretation": "Inference: embedding versus equivalence supplies a categorical test for whether a birational change is directionally simplifying or reversibly representational: a nonzero orthogonal records structure discarded in the flip direction, whereas its disappearance in the flop case signals no categorical remainder.",
+      "nonparaphrase_operation": "Reusable operation: orient a transformation by a fully faithful embedding, complete its image by the appropriate orthogonal, and classify the change as loss-aware simplification or reversible re-expression according to whether the residual survives.",
+      "quality_reason": "The candidate correctly distinguishes the proved elementary flip/flop statement from the general conjecture, preserves the embedding direction, notes failure of the naive pull-push construction in general, and reads equivalence in the flop case as a trivial residual.",
+      "source_support": "Source fact: the special theorem states a fully faithful functor in the flip direction and an equivalence in the balanced flop case. The passage says a fully faithful embedding yields a semiorthogonal decomposition whose right orthogonal is trivial for flops, then conjectures the analogous general statement and reports a dimension-specific proof and other cases.",
+      "uncertainty": "Uncertainty: the normalized birational diagram, pull-push direction, and divisor comparison are damaged, so no exact formula is reproduced; the proposed minimization and moduli interpretation remain suggestive beyond the stated cases.",
+      "unit_id": "agnostic_oa_flip_embedding_equivalence"
+    },
+    "agnostic_oa_koszul_noncommutative_component": {
+      "boundary_or_failure": "Boundary: the theorem is stated for smooth complete intersections of quadrics over an algebraically closed characteristic-zero field under its dimension condition; commutative recovery in examples additionally depends on center, parity, and Azumaya or Brauer behavior. Representation dependence: the persistent component is a derived category of right modules over a sheaf of finite noncommutative algebras, not necessarily a space's sheaf category.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f1dfd2a8c2993be300994a113654aea37c14efbce2fc3c09d90901d3ad043a42",
+        "agnostic_oa_critic_9ce94f2c24171d90caefb3833df1be5338df61eacf262edaad6acab0fda8cb9d"
+      ],
+      "interpretation": "Inference: when a commutative parameter space no longer carries enough information, Koszul duality preserves the hidden categorical core by moving the missing structure into algebra coefficients; exceptional objects then measure the ambient commutative remainder rather than replacing that core.",
+      "nonparaphrase_operation": "Reusable operation: dualize the defining quadratic presentation, extract a finite algebra over a central parameter base, sheafify it, use its module category as the candidate hidden component, and determine whether residual exceptional pieces remain or the component exhausts the target.",
+      "quality_reason": "The candidate accurately traces the quadratic presentation through Koszul duality to a generalized Clifford algebra and an even sheaf algebra, then preserves the theorem's fully faithful component, exceptional complement in the strict inequality case, and equivalence at equality.",
+      "source_support": "Source fact: the passage constructs a generalized Clifford algebra from the quadratic dual, passes to an even subalgebra sheaf over the parameter space, and states a fully faithful embedding of its coherent-module derived category. It states that the strict dimension case has additional exceptional line-bundle components, while the equality case is an equivalence, and explains special commutative and genuinely Azumaya interpretations.",
+      "uncertainty": "Uncertainty: the survey supplies no proof of the stated theorem, and normalized graded-algebra, center, sheafification, and decomposition formulas have displaced indices; exact symbolic constants and indexing are therefore not reproduced.",
+      "unit_id": "agnostic_oa_koszul_noncommutative_component"
+    },
+    "agnostic_oa_point_object_faithfulness_test": {
+      "boundary_or_failure": "Boundary: the equivalence criterion applies to a kernel-represented functor between the stated smooth algebraic varieties and tests closed-point skyscraper sheaves in homological grading. It establishes neither the later noncommutative-moduli expectation nor the indicated differential-graded extension without orthogonality.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_4234419bd30a28210dd4a6e17b8f3d1f2dadb9ae51de1188e6ccdea9ce9f18da",
+        "agnostic_oa_critic_fae822b4a60b987ff67bb79e3cc8fdde28cfa4bdc2cbd52645b7e6a6c3f15b13",
+        "agnostic_oa_revision_4f534890689bcbc25f421231ebf093fb4276974afd9233ef228925dabdd80515"
+      ],
+      "interpretation": "Inference: a canonical family of point objects can diagnose a global mapping property when an explicit theorem licenses the reduction: images of distinct points must remain separated in every homological degree, while each image must be simple in degree zero and have no self-Homs outside degrees zero through dim M. The criterion does not determine the positive self-Ext groups within that interval.",
+      "nonparaphrase_operation": "Reusable operation: select an intrinsically meaningful probe family, test pairwise separation together with precisely bounded self-interaction, and promote those local tests to a global full-faithfulness conclusion only under a proved spanning-family criterion; do not infer an entire local Ext profile from simplicity and an amplitude bound.",
+      "quality_reason": "Accepted after bounded repair: the interpretation performs a source-licensed local-to-global reduction and now states the asymmetric self-test exactly at the supported level, while keeping the subsequent moduli construction explicitly prospective.",
+      "source_support": "Source fact: Theorem 3.3 states that the kernel functor is fully faithful if and only if images of skyscraper sheaves at distinct closed points have zero Hom in every degree, each point image has degree-zero endomorphism space k, and its self-Homs vanish outside the interval from zero to dim M. The following passage presents moduli of pairwise orthogonal objects as a principle from which one can expect a fully faithful module-category embedding and only indicates a differential-graded generalization when orthogonality is removed.",
+      "uncertainty": "Uncertainty: OCR displaces subscripts and the notation for the excluded degree range, so the symbolic formula is paraphrased rather than reconstructed; the readable text nevertheless supports distinct-point vanishing, scalar degree-zero endomorphisms, and vanishing outside the stated interval. The broader moduli and differential-graded claims remain expectations rather than proved consequences here.",
+      "unit_id": "agnostic_oa_point_object_faithfulness_test"
+    },
+    "agnostic_oa_semiorthogonal_completion": {
+      "boundary_or_failure": "Boundary: the passage states completion for a fully faithful functor between the displayed derived categories; it does not establish such a completion for every arbitrary triangulated subcategory. Representation dependence: semiorthogonality is ordered and expressed by directional morphism vanishing, so the right complement is not an undirected remainder.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_cdd3e1554f24b07e0f3f9d890e9ce4e3d0b0dd333959785174aea05a44cf3791",
+        "agnostic_oa_critic_13c2ab8730ba50ec985f754eec89bf0932b415be81fbe7c061c58cf78c770c0c"
+      ],
+      "interpretation": "Inference: full faithfulness certifies conservation of the source's internal morphism structure but not exhaustiveness of the target; the orthogonal component therefore turns the qualitative gap between embedding and equivalence into an object of analysis.",
+      "nonparaphrase_operation": "Reusable operation: after establishing structure-preserving inclusion, form the directionally orthogonal residual, verify that image and residual generate the target, and inspect the residual to determine what the inclusion leaves unaccounted for.",
+      "quality_reason": "The candidate correctly distinguishes full faithfulness from exhaustiveness, identifies the complement as the right orthogonal, preserves the ordered nature of semiorthogonality, and keeps the motivic analogy at proposal status.",
+      "source_support": "Source fact: the passage defines fully faithful functors, right and left orthogonals, and ordered semiorthogonal decompositions, and states that a fully faithful functor between the displayed derived categories decomposes the target into the source image and its right orthogonal. It separately proposes, rather than proves, a motivic interpretation of this simplification.",
+      "uncertainty": "Uncertainty: the excerpt gives definitions and examples but no proof of the completion statement, and its normalized orthogonal and decomposition typography is displaced; the motive analogy retains proposal status.",
+      "unit_id": "agnostic_oa_semiorthogonal_completion"
+    },
+    "agnostic_oa_serre_reconstruction": {
+      "boundary_or_failure": "Boundary: the reconstruction theorem is stated only for smooth irreducible projective varieties with ample canonical or anticanonical sheaf; the excerpt does not support dropping that hypothesis. Representation dependence: recognition takes place in a graded derived category equipped with translation and Serre functors, and recovery is only up to the stated equivalence and isomorphism.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_86c208e8fbfeb92aac981387bcb802c3245ceb13d7747c2964368e64a4cc57de",
+        "agnostic_oa_critic_d61901af5ac3006a56ba220e3508ca3c45915d0d7f55f940d84adb258f3a971f"
+      ],
+      "interpretation": "Inference: the Serre functor serves as an internal calibration device: ampleness makes its interaction with objects restrictive enough to isolate point-like atoms, after which geometry can be reconstructed as successive relational layers rather than assumed as an external presentation.",
+      "nonparaphrase_operation": "Reusable operation: identify atomic probes by an intrinsic canonical endofunctor, transport those probes across an equivalence, and rebuild first their underlying collection and then progressively richer incidence, topology, and local-structure data.",
+      "quality_reason": "The candidate accurately preserves the smooth projective and canonical-or-anticanonical ampleness boundary, the Serre functor's role in recognizing skyscraper sheaves, and the source's staged recovery of the set, line bundles, topology, and structure sheaf.",
+      "source_support": "Source fact: the Serre functor is unique up to graded natural isomorphism and, for a smooth variety, realizes the canonical sheaf categorically. The stated theorem says a graded derived equivalence determines the variety under the ampleness condition; its proof sketch recognizes skyscraper sheaves and then reconstructs the set, line bundles, Zariski topology, and structure sheaf.",
+      "uncertainty": "Uncertainty: the survey excerpt supplies only the proof idea, not a proof; normalized shift, tensor, and dual notation may obscure exact conventions, so no stronger reconstruction claim is inferred.",
+      "unit_id": "agnostic_oa_serre_reconstruction"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_blowup_categorical_decomposition": "7ad3b6c4cd31a46ac0d8d3f8be8a8de19d52d926fc3f0af3b0ed207c9d05715d",
+    "agnostic_oa_categorical_desingularization": "2475d3bc19d5ec35906d05b7c260f5777ed478b62c0b3063f9d4db79800e4024",
+    "agnostic_oa_flip_embedding_equivalence": "c7a7ce2b13292fc15c7f107cf40790daf89fabb9ed40a9581cbe724b52b8cb7d",
+    "agnostic_oa_koszul_noncommutative_component": "3aa114df6ab987383b219db210b63c0dc9711ca1e9d0566193b15add0a78edc8",
+    "agnostic_oa_point_object_faithfulness_test": "9f2c186133fa273c2034c10e28efe96b2d0b16096b9e21eb58f957bd56792be2",
+    "agnostic_oa_semiorthogonal_completion": "46ffbcac1a5acf02bc88cf9dbb1182f3b98fb7475e98e5b99767735e8f9d0bdf",
+    "agnostic_oa_serre_reconstruction": "4c0d33c638d4cf397f55bb30894bc561adebd9f9b25859eadeb2c5c72818608b"
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "model_visible_packet_sha256": "6a06ed3e079718cf42568f34e58e60940558147eee0099937ec08d575371dfdf",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w1679005091_f2589e32_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "stage": "audit",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_serre_reconstruction.txt",
+      "artifact_bytes": 2475,
+      "artifact_relpath": "depth/units/agnostic_oa_serre_reconstruction.txt",
+      "artifact_sha256": "31f89b7f6863cf54818fd44a5b5f1f8af3675081256572ca0e363a350dfdb258",
+      "context_note": "Theorem 2.2 is stated for smooth irreducible projective varieties with ample canonical or anticanonical sheaf and attributed to prior work; this survey gives only the proof idea. The orbifold extension is separately attributed. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_serre_reconstruction",
+            "agnostic_oa_functor_kernel_representation",
+            "agnostic_oa_point_object_faithfulness_test",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operationalized through intrinsic point recognition, uniqueness of a functor kernel, a spanning-family criterion, and a conjectural minimal-resolution comparison by embeddings. The last is explicitly not established, so the source strengthens both positive tests and proof-status discipline for universal-property probes. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_serre_reconstruction"
+          ],
+          "identifier": "canonical_polarity_enables_intrinsic_reconstruction",
+          "kind": "new_geometry_dependency",
+          "summary": "The source ties reconstruction from the derived category to ampleness of the canonical or anticanonical bundle, which lets the Serre functor distinguish point objects. This is a source-grounded candidate geometry dependency; whether it is new or already represented elsewhere is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 110,
+      "line_start": 71,
+      "representation_dependency": "Extraction limit: shift, dual, and tensor notation is mostly readable but exact categorical conventions should be checked in the typeset source/cited theorem. Representation limit: recognition occurs inside a graded derived category equipped with its Serre and translation functors, and reconstruction is only up to the stated equivalence/isomorphism. Scope limit: ampleness is essential in the theorem as stated; derived-equivalent varieties outside this regime need not be isomorphic, so the method cannot be generalized by dropping the hypothesis.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source uses the Serre functor as an internal categorical incarnation of the canonical bundle. Under an ampleness condition, point-supported objects can be recognized without external labels; from those objects one first recovers the underlying set, then line bundles, the Zariski topology, and finally the structure sheaf. The reusable move is staged reconstruction from intrinsic probes: identify atomic objects by a canonical endofunctor, then rebuild successively richer relations and structure rather than assuming the original presentation.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Reconstruct geometry by intrinsically recognizing its point objects",
+      "unit_id": "agnostic_oa_serre_reconstruction",
+      "unit_type": "intrinsic-reconstruction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_semiorthogonal_completion.txt",
+      "artifact_bytes": 2277,
+      "artifact_relpath": "depth/units/agnostic_oa_semiorthogonal_completion.txt",
+      "artifact_sha256": "21fbcdc01d9555e8b5882169d43e53b09ea7e2dc1a6408353ca6c1e53998342d",
+      "context_note": "The passage gives definitions and examples via exceptional sequences, then proposes a motivic interpretation of semiorthogonal simplification. The definitions and decomposition mechanism are retained; the motive analogy is explicitly a proposal. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_semiorthogonal_completion",
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_koszul_noncommutative_component"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "This source makes decomposition directional and semantic: an image is completed by an orthogonal, blow-up adds center-supported pieces, flips remove a nontrivial summand while flops do not, and a noncommutative component can coexist with exceptional objects. This strengthens a source-only saturation probe that asks what each component represents and whether decomposition signals reversible equivalence or information loss. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 161,
+      "line_start": 128,
+      "representation_dependency": "Extraction limit: orthogonal superscripts and angle-bracket decomposition notation are partially displaced by normalization. Representation limit: the complement is directional because semiorthogonality is ordered; left and right orthogonals need not coincide. Scope limit: a fully faithful image yields the claimed decomposition here in the admissible smooth-projective derived setting; an arbitrary full subcategory need not have adjoints or generate a semiorthogonal completion.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "A fully faithful functor preserves all morphism data of its source but need not fill the target. The source identifies the unaccounted portion as an orthogonal subcategory and organizes the image plus complement into an ordered semiorthogonal decomposition that generates the target. This separates embedding from equivalence and turns a vague notion of extra information into a structurally testable component.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Complete a fully faithful image by its orthogonal complement",
+      "unit_id": "agnostic_oa_semiorthogonal_completion",
+      "unit_type": "decomposition-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_point_object_faithfulness_test.txt",
+      "artifact_bytes": 1259,
+      "artifact_relpath": "depth/units/agnostic_oa_point_object_faithfulness_test.txt",
+      "artifact_sha256": "69f77fcd8c7225f01e24f8b45c39c06502767d47cd641c80842c30660b3edf71",
+      "context_note": "Theorem 3.3 gives the iff criterion under its stated hypotheses. The subsequent claim about moduli spaces with sheaves of noncommutative algebras is called an important principle and an expectation; the DG extension is only indicated. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_serre_reconstruction",
+            "agnostic_oa_functor_kernel_representation",
+            "agnostic_oa_point_object_faithfulness_test",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operationalized through intrinsic point recognition, uniqueness of a functor kernel, a spanning-family criterion, and a conjectural minimal-resolution comparison by embeddings. The last is explicitly not established, so the source strengthens both positive tests and proof-status discipline for universal-property probes. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 204,
+      "line_start": 179,
+      "representation_dependency": "Extraction limit: degree ranges and point subscripts are OCR-damaged in places, so the exact Ext conditions require typeset checking. Representation limit: the test uses closed-point skyscraper sheaves and a functor already represented by a kernel. Scope limit: the criterion assumes the stated smooth varieties and derived setting; the broader noncommutative moduli construction is not proved by the criterion and loss of orthogonality requires additional DG structure.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "Instead of comparing every pair of objects, the source tests a kernel functor on skyscraper sheaves of closed points: distinct points must map to homologically orthogonal objects, while each image must have the prescribed self-Hom and Ext amplitude. This compresses a global functor property into pairwise tests on a canonical family and motivates constructing embeddings from moduli of orthogonal objects.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Test full faithfulness on a spanning family of point objects",
+      "unit_id": "agnostic_oa_point_object_faithfulness_test",
+      "unit_type": "local-to-global-criterion"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_blowup_categorical_decomposition.txt",
+      "artifact_bytes": 2348,
+      "artifact_relpath": "depth/units/agnostic_oa_blowup_categorical_decomposition.txt",
+      "artifact_sha256": "0fca799493ec78224e80786a568714375af64245a99e9c9d70d62189b9d13cfd",
+      "context_note": "Proposition 4.1 and Theorem 4.2 are stated for a smooth variety blown up along a smooth center of codimension r and attributed to prior work. The survey does not reproduce their proofs. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_semiorthogonal_completion",
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_koszul_noncommutative_component"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "This source makes decomposition directional and semantic: an image is completed by an orthogonal, blow-up adds center-supported pieces, flips remove a nontrivial summand while flops do not, and a noncommutative component can coexist with exceptional objects. This strengthens a source-only saturation probe that asks what each component represents and whether decomposition signals reversible equivalence or information loss. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "categorical_birational_order",
+          "kind": "new_family",
+          "summary": "The source suggests a provisional family in which equivalence, fully faithful embedding, and quotient encode different birational relationships: reversible change, directional simplification, and forgetting a kernel. General minimality claims remain conjectural, and corpus novelty of the family is explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 252,
+      "line_start": 207,
+      "representation_dependency": "Extraction limit: the blow-up square, exceptional divisor notation, twists, and decomposition brackets are layout-damaged and require typeset verification. Representation limit: the components are functor images with an order and line-bundle twists, not a direct product of categories. Scope limit: smoothness of ambient variety and center and the standard blow-up geometry are essential; singular centers or other modifications need different formulas.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "For a smooth blow-up, pullback preserves the original derived category fully faithfully, while functors through the exceptional divisor embed copies of the center's category with successive twists. Ordering these images produces a semiorthogonal decomposition of the blown-up category. The semantic move is to express a geometric surgery as preservation of the old component plus explicitly localized new information supported on the surgery center.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Decompose a blow-up into the original category and repeated center components",
+      "unit_id": "agnostic_oa_blowup_categorical_decomposition",
+      "unit_type": "geometric-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_flip_embedding_equivalence.txt",
+      "artifact_bytes": 3428,
+      "artifact_relpath": "depth/units/agnostic_oa_flip_embedding_equivalence.txt",
+      "artifact_sha256": "e0feca9b47abc01daf2822b16d1ff62de4f008f98794bf8ab4ad991b18ae8c31",
+      "context_note": "Theorem 4.3 proves the special flip/flop statement under explicit projective normal-bundle hypotheses. Conjecture 4.4 generalizes it; the source notes a dimension-three proof and some special cases, while the minimal-model minimization language and moduli construction are suggestive. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_semiorthogonal_completion",
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_koszul_noncommutative_component"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "This source makes decomposition directional and semantic: an image is completed by an orthogonal, blow-up adds center-supported pieces, flips remove a nontrivial summand while flops do not, and a noncommutative component can coexist with exceptional objects. This strengthens a source-only saturation probe that asks what each component represents and whether decomposition signals reversible equivalence or information loss. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "categorical_birational_order",
+          "kind": "new_family",
+          "summary": "The source suggests a provisional family in which equivalence, fully faithful embedding, and quotient encode different birational relationships: reversible change, directional simplification, and forgetting a kernel. General minimality claims remain conjectural, and corpus novelty of the family is explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 337,
+      "line_start": 283,
+      "representation_dependency": "Extraction limit: the birational diagram, pull-push functor direction, divisor comparison, and some superscripts are damaged. Representation limit: direction is controlled by the canonical-divisor discrepancy and by a chosen correspondence/resolution. Scope limit: the general flip embedding and flop equivalence are conjectural as stated in the survey except for cited cases; a naive pull-push functor is explicitly said not always to be fully faithful.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "In the proved elementary model, a flip gives a fully faithful functor in one direction, whereas the balanced flop case gives an equivalence. The source then interprets the general expected embedding as a semiorthogonal decomposition whose nontrivial orthogonal is removed when passing toward the birationally simpler model; for a flop the orthogonal vanishes. This provides a reusable distinction between loss-aware simplification and reversible change of representation.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Read birational direction as embedding, and crepant symmetry as equivalence",
+      "unit_id": "agnostic_oa_flip_embedding_equivalence",
+      "unit_type": "directional-comparison"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_categorical_desingularization.txt",
+      "artifact_bytes": 2664,
+      "artifact_relpath": "depth/units/agnostic_oa_categorical_desingularization.txt",
+      "artifact_sha256": "6a9ea48bad8f445517f9f5ff83833faa1ca47e6958a3bd5a35759328ddfe32b2",
+      "context_note": "The quotient observation is stated for proper birational maps to rational singularities. Existence/uniqueness of a minimal categorical desingularization is an expectation; Definition and Conjecture 5.1 give the noncommutative proposal, with the McKay relation as context. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_serre_reconstruction",
+            "agnostic_oa_functor_kernel_representation",
+            "agnostic_oa_point_object_faithfulness_test",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "saturation_probe_strengthened",
+          "summary": "Canonicality is operationalized through intrinsic point recognition, uniqueness of a functor kernel, a spanning-family criterion, and a conjectural minimal-resolution comparison by embeddings. The last is explicitly not established, so the source strengthens both positive tests and proof-status discipline for universal-property probes. Corpus novelty is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_categorical_desingularization"
+          ],
+          "identifier": "categorical_birational_order",
+          "kind": "new_family",
+          "summary": "The source suggests a provisional family in which equivalence, fully faithful embedding, and quotient encode different birational relationships: reversible change, directional simplification, and forgetting a kernel. General minimality claims remain conjectural, and corpus novelty of the family is explicitly unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 382,
+      "line_start": 343,
+      "representation_dependency": "Extraction limit: quotient-category, endomorphism-sheaf, and resolution symbols are partially malformed. Representation limit: the proposed resolution may be noncommutative and is represented by coherent modules over a sheaf algebra, not by points of a smooth space. Scope limit: rational/canonical singularity, finite homological dimension, finite cover, and crepancy hypotheses matter; minimality and universal embedding are conjectural, not consequences of the definition alone.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "A geometric resolution maps its derived category onto the singular category by quotienting out the invisible kernel. The source abstracts this as a categorical desingularization, then proposes a minimal one characterized by fully faithful embedding into every competitor. A sheaf of endomorphism algebras supplies a noncommutative candidate whose module category has finite homological dimension. The reusable move is to state explicitly what a resolution forgets under quotient and to compare resolutions by embeddings rather than by size metaphors.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Separate quotient recovery from minimal categorical resolution",
+      "unit_id": "agnostic_oa_categorical_desingularization",
+      "unit_type": "quotient-and-resolution-framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_koszul_noncommutative_component.txt",
+      "artifact_bytes": 4888,
+      "artifact_relpath": "depth/units/agnostic_oa_koszul_noncommutative_component.txt",
+      "artifact_sha256": "ad0addcb0504e9cd5a7130dcdd793a029a3dcfa6119994222008a20cea93c18e",
+      "context_note": "Theorem 6.1 is stated without proof in the survey, followed by commutative, Azumaya, K3, moduli, and Koszul-duality interpretations. Exact status is a stated theorem under the listed hypotheses; generalization beyond them is only noted. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_semiorthogonal_completion",
+            "agnostic_oa_blowup_categorical_decomposition",
+            "agnostic_oa_flip_embedding_equivalence",
+            "agnostic_oa_koszul_noncommutative_component"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "saturation_probe_strengthened",
+          "summary": "This source makes decomposition directional and semantic: an image is completed by an orthogonal, blow-up adds center-supported pieces, flips remove a nontrivial summand while flops do not, and a noncommutative component can coexist with exceptional objects. This strengthens a source-only saturation probe that asks what each component represents and whether decomposition signals reversible equivalence or information loss. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1679005091",
+      "line_end": 454,
+      "line_start": 386,
+      "representation_dependency": "Extraction limit: the graded-algebra, center, Veronese, sheafification, and decomposition formulas have displaced indices and require typeset verification. Representation limit: the component is D b of coherent right modules over a sheaf of finite noncommutative algebras and need not equal the derived category of an ordinary variety. Scope limit: the theorem assumes a smooth complete intersection of quadrics over an algebraically closed characteristic-zero field with the stated dimension inequality; commutative recovery additionally depends on parity, the center cover, and Brauer/Azumaya conditions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, cited underlying paper, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "For intersections of quadrics, a familiar commutative parameter curve accounts for a categorical component only in special low-dimensional cases. The source constructs the quadratic dual Clifford algebra, sheafifies an even subalgebra over the parameter space, and uses its module category as the persistent component. When ambient dimension exceeds twice the number of equations, exceptional objects form the complement; at equality, the noncommutative component is the entire category. The generic move is to preserve a dual description by widening from spaces to sheaves of algebras when commutative geometry no longer suffices.",
+      "source_id": "openalex_w1679005091",
+      "source_normalized_sha256": "202995498141ba09fe25d8b6f4e364f4cd5368bd727e8cfa37e520e488f98c26",
+      "title": "Replace a missing commutative component by a Koszul-dual sheaf algebra",
+      "unit_id": "agnostic_oa_koszul_noncommutative_component",
+      "unit_type": "duality-and-hidden-component"
+    }
+  ]
+}

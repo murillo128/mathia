@@ -1,0 +1,2438 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_batch_13.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_13.jsonl",
+    "pass3": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_13.jsonl"
+  },
+  "unit_count": 54,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly emphasizes that the second lemma does not require RH or Lindelof.",
+      "line_end": 159,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents and half-plane endpoints are formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a zero-free-half-plane estimate for partial Mobius sums under RH, while deriving a zeta-quotient growth bound solely from the functional equation and gamma asymptotics.",
+      "source_id": "baezduarte2003_nyman",
+      "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two estimates deliberately separate the RH-dependent inclusion step from the unconditional damping limit",
+      "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u03.txt",
+      "unit_bytes": 1912,
+      "unit_id": "baezduarte2003_v2_u03",
+      "unit_sha256": "011956a50e577063945760d1f33d8e42841cb69a61f8ec70d32bf0e6e5a4fdd6",
+      "unit_type": "conditional-and-unconditional estimate pair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u03.txt",
+      "source": {
+        "source_id": "baezduarte2003_nyman",
+        "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez-Duarte"
+        ],
+        "year": 2003,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria",
+          "approximation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Pointwise convergence alone is insufficient; the remainder of the proof upgrades both limits to Hilbert norm.",
+      "line_end": 197,
+      "line_start": 160,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Finite-sum and floor identities are cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines finite elements of the natural Beurling span, rewrites them so the pointwise limit is explicit, and identifies the epsilon-to-zero limit with minus the interval indicator by Mobius inversion.",
+      "source_id": "baezduarte2003_nyman",
+      "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite damped natural sums have an explicit reciprocal-zeta correction and the correct pointwise target",
+      "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u04.txt",
+      "unit_bytes": 1489,
+      "unit_id": "baezduarte2003_v2_u04",
+      "unit_sha256": "9614056d4511b5100b07d9bfdd201eca6d9b0dafeee2ce754b090b92de715c78",
+      "unit_type": "pointwise-limit construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u04.txt",
+      "source": {
+        "source_id": "baezduarte2003_nyman",
+        "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez-Duarte"
+        ],
+        "year": 2003,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria",
+          "approximation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A separate tail bound removes the auxiliary multiplication by x to a small power when returning to the original Hilbert space.",
+      "line_end": 278,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier-Mellin normalization and zeta quotient are formula-sensitive but substantially recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves the problem from L2 on the positive line to an L2 spectral variable, expresses transformed approximants through zeta and partial Mobius sums, and combines RH-derived bounds with dominated convergence to put each damped limit in the natural closure.",
+      "source_id": "baezduarte2003_nyman",
+      "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Mellin-Plancherel isometry turns closure convergence into a dominated zeta-quotient limit",
+      "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u05.txt",
+      "unit_bytes": 3484,
+      "unit_id": "baezduarte2003_v2_u05",
+      "unit_sha256": "ff49ae8bc44184305046d94a761920ef03f5424483a3a8e73560c010136b0dea",
+      "unit_type": "representation-and-norm transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u05.txt",
+      "source": {
+        "source_id": "baezduarte2003_nyman",
+        "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez-Duarte"
+        ],
+        "year": 2003,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria",
+          "approximation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This modular proof architecture isolates the sole RH dependence in proving natural-closure membership at fixed damping.",
+      "line_end": 301,
+      "line_start": 279,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quotient display is recoverable; exact normalization should be checked before quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the unconditional quotient bound to dominate the transformed damped family as epsilon tends to zero, transfers convergence back through the isometry, and identifies the pointwise limit as the desired indicator.",
+      "source_id": "baezduarte2003_nyman",
+      "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry removes the damping without spending RH a second time",
+      "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u06.txt",
+      "unit_bytes": 880,
+      "unit_id": "baezduarte2003_v2_u06",
+      "unit_sha256": "bf71e5b39bed5e2ff665387ffd34574e08d1c7c91f38f2b324c3caab6196b2e4",
+      "unit_type": "unconditional limit identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u06.txt",
+      "source": {
+        "source_id": "baezduarte2003_nyman",
+        "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez-Duarte"
+        ],
+        "year": 2003,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria",
+          "approximation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed Lp and alternative-summability directions are suggestions, not results proved here.",
+      "line_end": 319,
+      "line_start": 303,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extracts a new RH equivalence from the proof, interprets damping as a summability method for the failed natural sequence, and relates the unused quantitative partial-sum dependence to the known slow approximation rate.",
+      "source_id": "baezduarte2003_nyman",
+      "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The strengthened criterion is equivalently convergence of a damped natural summability scheme",
+      "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u07.txt",
+      "unit_bytes": 1107,
+      "unit_id": "baezduarte2003_v2_u07",
+      "unit_sha256": "62f8ebb279955e3862228223381ed05a2df6a2edf10a3cca6b120899b038fd9d",
+      "unit_type": "summability interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u07.txt",
+      "source": {
+        "source_id": "baezduarte2003_nyman",
+        "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez-Duarte"
+        ],
+        "year": 2003,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria",
+          "approximation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite exceptional set below 5041 is checked to be 5-free, allowing the final equivalence to avoid an excluded finite interval.",
+      "line_end": 103,
+      "line_start": 26,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Text-layer extraction is reliable; the divisor-sum display should be checked for exact notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starts from the exact RH equivalence and narrows potential counterexamples through squarefree, odd, squarefull, and 5-free results until only integers divisible by a nontrivial fifth power remain.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Robin's criterion can be restricted to integers containing a fifth power",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u01.txt",
+      "unit_bytes": 4693,
+      "unit_id": "openalex_w2101718938_v2_u01",
+      "unit_sha256": "ab84fd923d0d158b71b07057ca0630c519aa1b21731c934ee9ecea96c3082f60",
+      "unit_type": "equivalent-domain reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Small exceptional products are isolated before the general dichotomy.",
+      "line_end": 233,
+      "line_start": 110,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formulas are well extracted with minor line wrapping.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inducts on the number of prime factors: a largest prime above log n permits removal while preserving the inequality, whereas a smaller largest prime lets a prime-reciprocal bound dominate the logarithmic target.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A largest-prime dichotomy proves the squarefree class by either descent or Mertens control",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u02.txt",
+      "unit_bytes": 6102,
+      "unit_id": "openalex_w2101718938_v2_u02",
+      "unit_sha256": "f208e4840ea9349ae0437a31e87778a1da5e94e7a10a7cabf16ae2744da73383",
+      "unit_type": "largest-prime induction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A finite family with only small prime divisors handles the exceptional kernel cases.",
+      "line_end": 303,
+      "line_start": 235,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product inequality and kernel identity are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Upper-bounds sigma(n)/n by n/phi(n), observes the latter depends only on the squarefree kernel, and maps an odd squarefree product to a smaller even squarefree number whose Robin bound controls the original.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The totient ratio transfers an odd problem to a squarefree kernel and then to the squarefree theorem",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u03.txt",
+      "unit_bytes": 3675,
+      "unit_id": "openalex_w2101718938_v2_u03",
+      "unit_sha256": "06d17ed6ee4802c2b37fad032cebf0ae282cb6495d00db80865de387645a5726",
+      "unit_type": "majorant-and-kernel transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This explicitly records a failed route rather than silently changing majorants.",
+      "line_end": 324,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and inequalities are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that n/phi(n) can exceed or fall below the Robin-scale target along primorials depending on RH, so the convenient stronger surrogate used for odd integers cannot prove the full even case.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primorial oscillation blocks extension of the stronger totient inequality to even integers",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u04.txt",
+      "unit_bytes": 1396,
+      "unit_id": "openalex_w2101718938_v2_u04",
+      "unit_sha256": "36d8a18521b4aace3ca949f74fff6efd17546c0a88eeed855db122283acc0c7d",
+      "unit_type": "failed-generalization diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unique representation as a square times a cube supplies an efficient generator for the finite search.",
+      "line_end": 395,
+      "line_start": 327,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Text layer is clear; numerical bounds are directly stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses an explicit Mertens product and a Chebyshev lower bound to cap the number of distinct prime factors, then uses squarefullness to bound the integer itself and reduces the theorem to an enumerated finite check.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-product bounds force any squarefull exception into a small finite search",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u05.txt",
+      "unit_bytes": 2792,
+      "unit_id": "openalex_w2101718938_v2_u05",
+      "unit_sha256": "8886791437e473291d61a363b0199559d8402354dca5ad53acd7232fca8833a3",
+      "unit_type": "finite-reduction argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The odd variant removes the prime two factor and the theorem's other cases follow by specializing or taking limits in t.",
+      "line_end": 527,
+      "line_start": 401,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula extraction is strong; exact limsup constants should still be checked when quoted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates prime divisors above log n, bounds their aggregate effect, applies Mertens and the zeta Euler product below log n, and constructs matching extremal sequences from fixed prime exponents.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-product truncation determines maximal divisor ratios on t-free classes",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u06.txt",
+      "unit_bytes": 7280,
+      "unit_id": "openalex_w2101718938_v2_u06",
+      "unit_sha256": "000d78a1349beb55d6edc548fd686193fd0070d6ad932b14e28f8c322841fb34",
+      "unit_type": "constrained-extremal asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remaining lines apply the general extremal lemma to the listed constrained sets.",
+      "line_end": 554,
+      "line_start": 529,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and conclusion are reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines Robin's infinitely-many-counterexamples conclusion with bounded limsups on every fixed t-free class to show that counterexamples cannot remain within any fixed exponent cap.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "If RH fails, dangerous exponent multiplicities must grow without bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u07.txt",
+      "unit_bytes": 1252,
+      "unit_id": "openalex_w2101718938_v2_u07",
+      "unit_sha256": "f9c9fdb9e06f4b10fcc70fa282e944a59ae1a0d0cd75336b8cfc29c74d257766",
+      "unit_type": "counterexample-complexity consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This compresses a vast integer search into one representative per exponent partition.",
+      "line_end": 641,
+      "line_start": 559,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The swap and maximum formulas are cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves a swap monotonicity lemma, defines the canonical Hardy-Ramanujan realization of an exponent pattern, and shows it is both the smallest integer and the largest sigma(n)/n among all realizations, so verifying it certifies the entire pattern class.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sorting larger exponents onto smaller primes maximizes the divisor ratio for a fixed pattern",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u08.txt",
+      "unit_bytes": 4399,
+      "unit_id": "openalex_w2101718938_v2_u08",
+      "unit_sha256": "6c74767ea211870a7c9560a9a4b6ef49b87572bc28efb0ec9854d989440790f1",
+      "unit_type": "canonical extremizer construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Small cofactors are discharged using the earlier finite exceptional set.",
+      "line_end": 684,
+      "line_start": 644,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral inequality and multiplicative comparison are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Removes the largest prime, invokes minimality on the cofactor, and shows that a prime at least log n would make the multiplicative increase in sigma too small relative to the increase in log log n.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A minimal t-free counterexample must have largest prime below its logarithm",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u09.txt",
+      "unit_bytes": 2361,
+      "unit_id": "openalex_w2101718938_v2_u09",
+      "unit_sha256": "5a283f1b6484bc29a299e7db1f1f3c7ea50509b0fd5650c2235ffe7409578d11",
+      "unit_type": "minimal-counterexample descent",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A separate finite verification covers all 5-free Hardy-Ramanujan integers supported on primes at most 73.",
+      "line_end": 772,
+      "line_start": 685,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The analytical inequalities are readable; two product lines around 691-695 have awkward extraction but are restated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds the t-free divisor ratio by a truncated Euler product plus an explicit tail, turns failure of Robin's inequality into a bound on log n, and repeatedly feeds the improved bound back to lower the possible largest prime.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-product tail bounds cascade the largest-prime threshold down to 73",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u10.txt",
+      "unit_bytes": 5011,
+      "unit_id": "openalex_w2101718938_v2_u10",
+      "unit_sha256": "3a94b7bb5cae78ce365968258d26e5b39c5bc535b4d874ee8eaa2003ddcf30fb",
+      "unit_type": "analytic-to-finite cascade",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines the analytic prime bound, pattern reduction, and finite computation into the proof of the 5-free theorem.",
+      "line_end": 797,
+      "line_start": 774,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The text and numerical conclusion are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps the exponent pattern to its canonical minimum; minimality rules out a distinct canonical representative above 5040, while a representative below the cutoff yields a final bounded-support estimate and finite contradiction.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Minimality forces the final 5-free counterexample to be Hardy-Ramanujan",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u11.txt",
+      "unit_bytes": 1455,
+      "unit_id": "openalex_w2101718938_v2_u11",
+      "unit_sha256": "f6622b84ee15032057f4795e5eb2e7ad7ed05cb991f0a9b01f73576087939592",
+      "unit_type": "counterexample-canonicalization proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a scoped failure report, not evidence that the stronger statement is false.",
+      "line_end": 809,
+      "line_start": 804,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records that strengthening the exponent cutoff would require substantial computation and points to a structurally different proposed approach.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same method does not cheaply advance from 5-free to 6-free",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u12.txt",
+      "unit_bytes": 459,
+      "unit_id": "openalex_w2101718938_v2_u12",
+      "unit_sha256": "6ace7620e612fe56fabaaeba811c8808986798057d4a8cc9c309c6b71f45a22d",
+      "unit_type": "method limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The examples that follow instantiate this common architecture at several degrees.",
+      "line_end": 90,
+      "line_start": 29,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "OCR damages the exact products and coefficients; the prose-level construction is recoverable, but formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the governing representation change from prime-local factors to an Euler product and Dirichlet series, and frames L-functions as the point where local data can control global problems.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler products package local arithmetic data into global analytic objects",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u01.txt",
+      "unit_bytes": 2372,
+      "unit_id": "openalex_w2121902984_v2_u01",
+      "unit_sha256": "9039f71751a945b3871dedb17a14eb82baad23a31ee3169700c08557b2687922",
+      "unit_type": "local-to-global definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Rankin-Selberg products because their analytic properties and coefficient positivity are repeatedly reused later.",
+      "line_end": 320,
+      "line_start": 240,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy OCR is degraded; exact gamma factors, exponents, and root-number normalization must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines standard automorphic L-functions from local representation parameters, adds gamma factors, states analytic continuation and the contragredient functional equation, and identifies cuspidal standard functions as independent building blocks.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completed automorphic L-functions add archimedean factors, conductor, and functional symmetry",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u02.txt",
+      "unit_bytes": 4172,
+      "unit_id": "openalex_w2121902984_v2_u02",
+      "unit_sha256": "dca84b5e295462c98f7a9b0ba08865ccfcf9040f83cb22046f6068d0db86c3d3",
+      "unit_type": "automorphic completion framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical status statements reflect the 2000 publication and are retained only as the source's mechanism, not current status.",
+      "line_end": 370,
+      "line_start": 321,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is reliable; exact local-factor displays are OCR-fragile.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how triple products and symmetric powers create higher-degree L-functions whose analytic continuation can feed back into bounds for the original local data, and links arithmetic-geometric objects to automorphic forms.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tensor and symmetric-power lifts enlarge the analytic information available about local parameters",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u03.txt",
+      "unit_bytes": 2009,
+      "unit_id": "openalex_w2121902984_v2_u03",
+      "unit_sha256": "50df8c3ccb340702173a2e6aa8c53bb71afc3ddd6f650ff5e054033f70dde0d4",
+      "unit_type": "functorial-extension overview",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also separates numerical and function-field evidence from proof over number fields.",
+      "line_end": 421,
+      "line_start": 382,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The critical-line fraction is frequently OCR-damaged, but the statement and interpretation are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States GRH for completed L-functions and explains its operational meaning as square-root-scale cancellation in coefficient sums, while distinguishing a single zeta statement from the stronger family-wide conjecture.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "GRH is a uniform square-root-cancellation principle connecting local coefficients to global behavior",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u04.txt",
+      "unit_bytes": 2155,
+      "unit_id": "openalex_w2121902984_v2_u04",
+      "unit_sha256": "6a166104a92712fd9e1b2ba008e613e0f99b2d7b697a1a6fcb1dea82367b64a2",
+      "unit_type": "semantic interpretation of GRH",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction between varying t, conductor, and archimedean parameters is part of the problem formulation.",
+      "line_end": 483,
+      "line_start": 431,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact conductor and exponent formulas require scan verification; surrounding prose recovers the hierarchy.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the scale against which central values are measured, derives the convexity baseline from functional symmetry, and isolates any fixed power saving as a basic substitute target for Lindelof.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic conductor organizes Lindelof, convexity, and subconvexity as progressively stronger critical-line bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u05.txt",
+      "unit_bytes": 2183,
+      "unit_id": "openalex_w2121902984_v2_u05",
+      "unit_sha256": "274255f9c01f65735725cd97b9922eb7a7507c8c79921524dc27602f5c27e86c",
+      "unit_type": "bound hierarchy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a central example of embedding a local unknown into a family of global positive observables.",
+      "line_end": 613,
+      "line_start": 485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many parameter inequalities are OCR-damaged; the limiting positivity mechanism is clearly stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Presents generalized Ramanujan as the local analogue of GRH, then shows how global analytic control of arbitrarily high symmetric-power Rankin-Selberg functions and positivity yields the local tempered bound in the limit.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic tensor powers and positive coefficients force bounds on individual local parameters",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u06.txt",
+      "unit_bytes": 5121,
+      "unit_id": "openalex_w2121902984_v2_u06",
+      "unit_sha256": "d5195e3c432418b6af7194663e473ba7e5cc616ef2ff6d476f3d95c068b70509",
+      "unit_type": "global-to-local positivity argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Relevant as a caution that critical-line location alone does not answer special-value questions.",
+      "line_end": 659,
+      "line_start": 615,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The central point glyph is OCR-imperfect but the conceptual statement is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Birch-Swinnerton-Dyer to distinguish forced central vanishing from deeper arithmetic multiplicity and exhibits a local Euler-product invariant predicting a global rational-point rank.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Central vanishing can encode a global geometric rank rather than merely functional-equation parity",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u07.txt",
+      "unit_bytes": 1844,
+      "unit_id": "openalex_w2121902984_v2_u07",
+      "unit_sha256": "997d1236036cbe8ee07fd5b6d044a56728f77d450f3ef5066c94cf8fbda2286a",
+      "unit_type": "local-global central-value conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument distinguishes rationality and functional equation from the additional purity theorem.",
+      "line_end": 733,
+      "line_start": 663,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed rational functions are unreadable without the scan; prose gives the representation chain.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites curve point counts as a rational zeta function, identifies zeros with inverse Frobenius eigenvalues on cohomological data, and locates positivity in the endomorphism/cohomology structure as the step forcing the correct absolute values.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius turns point counts into a spectrum whose purity is the function-field RH",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u08.txt",
+      "unit_bytes": 3371,
+      "unit_id": "openalex_w2121902984_v2_u08",
+      "unit_sha256": "90b9710112fd26f9d3ee35cc50e03186bac09b8e4599a7ef3ef5266f52749ff4",
+      "unit_type": "function-field spectral proof pattern",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly compared to deducing generalized Ramanujan from symmetric-power analytic properties.",
+      "line_end": 765,
+      "line_start": 734,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and recoverable; cohomological indices are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains Deligne's methodological shift: use monodromy representations of a parameterized family, locate poles by invariant theory, and combine arbitrarily high tensor powers with positivity to force every local eigenvalue onto the target circle.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Purity emerges from placing one variety in a family and testing all tensor powers",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u09.txt",
+      "unit_bytes": 1574,
+      "unit_id": "openalex_w2121902984_v2_u09",
+      "unit_sha256": "c56ec6905d77f30884f4b184d8dae2bf35c95b083531ddce76e48abbec7cd4cb",
+      "unit_type": "family-monodromy proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact Bombieri-Vinogradov and large-modulus inequalities are scan-dependent; the substitution principle is explicit.",
+      "line_end": 833,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "OCR seriously degrades formulas and ranges; use only the checked prose without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why mean control of primes in many progressions is as useful as individual GRH estimates when the application already averages, and links this to zero-density theorems and results beyond the pointwise GRH range.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaging over characters can replace pointwise GRH in applications",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u10.txt",
+      "unit_bytes": 2142,
+      "unit_id": "openalex_w2121902984_v2_u10",
+      "unit_sha256": "518e06c50e8aeb8a6884bf5e90cbc531a7f549e21727613c1134820f0ee3062d",
+      "unit_type": "average-GRH substitute",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This anticipates the general family amplification mechanism in Section 7.",
+      "line_end": 868,
+      "line_start": 834,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is clear; exact exponents and sum notation require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts explicit-coefficient methods with convexity and shows how high powers expose complete finite-field character sums, where function-field RH supplies nontrivial bounds even in ranges number-field GRH does not resolve.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Burgess gains cancellation by shifting a short character sum and taking high moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u11.txt",
+      "unit_bytes": 1428,
+      "unit_id": "openalex_w2121902984_v2_u11",
+      "unit_sha256": "75a301c6b0e1ec2343a165f3d0f46a39bef6d77922620e26f05a9c05a84ddf1d",
+      "unit_type": "moment-amplification precursor",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates nonvanishing from GRH: locating zeros on the critical line does not determine whether the center vanishes.",
+      "line_end": 994,
+      "line_start": 872,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Central-value formulas and numerical proportions are OCR-damaged and need the scan; the proof strategies are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows central values represented as squares of Fourier coefficients or periods, then uses mollification to prove nonvanishing proportions and connect a quantitative improvement to eliminating the Landau-Siegel exceptional-zero gap.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periods and mollified families convert central-value questions into positive or averaged observables",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u12.txt",
+      "unit_bytes": 5136,
+      "unit_id": "openalex_w2121902984_v2_u12",
+      "unit_sha256": "850693939c079acd8cd070bfcb732ea7f2b99bdaccc05009a51a14547d9182be",
+      "unit_type": "positivity-and-mollification route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The resulting finite thresholds can be ineffective because the main-term lower bound uses Siegel's ineffective estimate.",
+      "line_end": 1175,
+      "line_start": 1082,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several weights and exponents are OCR-fragile; the main-term/error comparison is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes a theta series into Eisenstein and cusp parts, identifies the former with local masses, and uses subconvexity-equivalent Fourier bounds to make the latter negligible, yielding representation and equidistribution consequences.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A power saving makes the cusp error smaller than the local-density main term",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u13.txt",
+      "unit_bytes": 6037,
+      "unit_id": "openalex_w2121902984_v2_u13",
+      "unit_sha256": "694585f3b7fc5a642d602759d9356c39dfccda93b3b64536710ed54a0b18cccd",
+      "unit_type": "subconvexity-to-local-global transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument also explains why the Hecke condition is essential for the holomorphic family considered.",
+      "line_end": 1293,
+      "line_start": 1190,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral and factorization formulas require scan verification; the reduction to subconvexity is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Translates eigenfunction mass against a test form into a central triple-product value, then shows that a subconvex bound in the eigenvalue or weight aspect is enough for equidistribution without proving the full GRH.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Triple-product subconvexity implies arithmetic quantum mass equidistribution",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u14.txt",
+      "unit_bytes": 5254,
+      "unit_id": "openalex_w2121902984_v2_u14",
+      "unit_sha256": "a221b7ad27eecad07de20774903646b2baea3bff20846d22a0327e365a747d99",
+      "unit_type": "targeted-GRH bypass",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Further dualization cannot help because the functional equation has already been spent in forming the sum.",
+      "line_end": 1333,
+      "line_start": 1295,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The central display is OCR-poor; its scale and role are stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the Dirichlet series and functional equation to obtain a smooth sum of length about the square root of analytic conductor, explains why average coefficient bounds give convexity, and identifies cancellation in this finite sum as the remaining task.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry compresses a central value to one conductor-length coefficient sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u15.txt",
+      "unit_bytes": 1582,
+      "unit_id": "openalex_w2121902984_v2_u15",
+      "unit_sha256": "a6e43721753781c685b1c369a1de7e7347d88bdd74f66d6dd52d9d76ffbc7ebf",
+      "unit_type": "approximate-functional-equation reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes fake families because useful orthogonality need not come from genuine L-functions.",
+      "line_end": 1425,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment and amplified-sum formulas are damaged, but the family-size tradeoff and off-diagonal mechanism are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Embeds a difficult L-function in a family, uses orthogonality and positivity for moment bounds, then weights short coefficient sums to amplify the target; the gain is reduced to cancellation in explicit off-diagonal correlations.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        27,
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Amplification shortens a family arithmetically while making one target member large",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u16.txt",
+      "unit_bytes": 3979,
+      "unit_id": "openalex_w2121902984_v2_u16",
+      "unit_sha256": "5a9e2c38a7b0aa91236d239553640b40b645fbd905c6287dbe88c8f26ee2dcab",
+      "unit_type": "family amplification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the methodological loop between spectral families and finite-field exponential sums.",
+      "line_end": 1507,
+      "line_start": 1427,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The trace formulas are substantially OCR-defective; only the prose-level mapping is safe without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns family averages into a diagonal plus geometric exponential sums, uses finite-field RH bounds and spectral density estimates as substitutes for unavailable local conjectures, and can also run in reverse to detect cancellation among Kloosterman sums.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Petersson and Kuznetsov formulas exchange automorphic averages for Kloosterman sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u17.txt",
+      "unit_bytes": 2747,
+      "unit_id": "openalex_w2121902984_v2_u17",
+      "unit_sha256": "d7a127bc24d974aded6e9f2d9c6abcb1b1c49b7b5f494927615349c254b94bdc",
+      "unit_type": "spectral trace conversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The discussion assumes GRH when writing zeros on the critical line; empirical agreement is evidence, not proof.",
+      "line_end": 1590,
+      "line_start": 1530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is readable; zero-scaling formulas and some fractions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the local statistics of high zeros of a fixed primitive L-function from low zeros across a family, identifies monodromy/random-matrix symmetry as the governing structure, and relates symmetry type to nonvanishing proportions and moment predictions.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High zeros show universal unitary statistics while low zeros reveal family symmetry type",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u18.txt",
+      "unit_bytes": 3581,
+      "unit_id": "openalex_w2121902984_v2_u18",
+      "unit_sha256": "ce09c63e1b74c423437a919d9ff4ca7d794d046be067b952f021005a08bd0009",
+      "unit_type": "symmetry classification of zeros",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final scenarios are explicitly speculative and must not be treated as established routes to GRH.",
+      "line_end": 1635,
+      "line_start": 1591,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and reliable despite scattered OCR artifacts.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates candidate spectral interpretations to the explicit formula joining zeros and primes, notes that such interpretations have not yet controlled the zeros, and proposes family averages plus positivity as either a pre-spectral shortcut or the analysis layer of a future spectrum.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula supplies a trace-like bridge, but families and positivity remain the effective engine",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u19.txt",
+      "unit_bytes": 2916,
+      "unit_id": "openalex_w2121902984_v2_u19",
+      "unit_sha256": "58e5a42fb4826c5ef1364ca4ba85f95d21a4fed61959b67d1e5735c024ad22bc",
+      "unit_type": "attack-route comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the warning that repeated Poisson summation only makes progress because the phase is normalized between applications.",
+      "line_end": 202,
+      "line_start": 87,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; several displayed sums have fragmented symbols but their roles are stated in surrounding text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates cheap rotation and remainder terms from the main Dirichlet sum, compares direct, amortized, FFT, and Gauss-sum approaches, and identifies repeated Poisson summation with intervening normalization as the route to shorter related sums.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Riemann-Siegel main sum exposes polynomial-phase acceleration as the reusable target",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u06.txt",
+      "unit_bytes": 6970,
+      "unit_id": "openalex_w2138245810_v2_u06",
+      "unit_sha256": "904221bf2d6b31c59722e7012dbae2b9d6b2a4df33dbd0467387f8d15937b440",
+      "unit_type": "bottleneck-and-method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Tables 1 and 2 are retained because they make the degree/coefficient/complexity tradeoff explicit.",
+      "line_end": 358,
+      "line_start": 213,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but well extracted; exact coefficient powers should be verified before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Partitions the Riemann-Siegel sum into common-structure blocks, Taylor-expands the logarithmic phase, and shows how the scale parameter trades fewer blocks for higher-degree exponential sums with increasingly broad coefficient ranges.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Block length determines both phase degree and attainable zeta complexity",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u07.txt",
+      "unit_bytes": 8202,
+      "unit_id": "openalex_w2138245810_v2_u07",
+      "unit_sha256": "345bbce66683e2822985f30a5019718c4fc352988be6cc5a103249ff38f463d3",
+      "unit_type": "scale-to-representation reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the cleanest abstract instance of amortizing many related phase evaluations through a reusable grid.",
+      "line_end": 448,
+      "line_start": 369,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Taylor and lattice displays are legible, with minor glyph risk in indices.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that nearby quadratic phases are recovered by a short Taylor expansion from a lattice, balances lattice precomputation against the number of blocks, and explains why FFT and direct precomputation give different optimal scales.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lattice interpolation and FFT cost recover the Schoenhage and direct-precompute exponents",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u08.txt",
+      "unit_bytes": 4645,
+      "unit_id": "openalex_w2138245810_v2_u08",
+      "unit_sha256": "af5f561f09a93019db27c6040e9781b5fdcd490b9c807cc37e7617d5eba3ad75",
+      "unit_type": "precomputation-balance argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cubic theorem's parameter range is essential; it is not an unrestricted cubic-sum algorithm.",
+      "line_end": 483,
+      "line_start": 449,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem statements are recoverable; constants and bit exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the two exponential-sum interfaces consumed by the zeta reduction and isolates the cubic-coefficient restriction that controls precomputation size.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic sums need no precomputation while small-cubic sums trade precomputation for polylog queries",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u09.txt",
+      "unit_bytes": 2171,
+      "unit_id": "openalex_w2138245810_v2_u09",
+      "unit_sha256": "5fa3c6f736623e8d649ed49a5e867c2e12b088cd7e72545dfdc01af1893ddd8e",
+      "unit_type": "algorithmic interface theorem pair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes remainder lengths, accumulated-error budgeting, and both cubic-size regimes because each is necessary for the final exponent.",
+      "line_end": 729,
+      "line_start": 484,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formulas are mostly recoverable; exact truncation indices and constants require text-layer checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls amplitude and phase truncations uniformly, reduces every block to normalized polynomial-phase queries, and specializes the general reduction to quadratic and small-cubic cases, splitting the latter between direct lattice FFT and the cubic algorithm.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic Riemann-Siegel subdivision converts exponential-sum query bounds into zeta bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u10.txt",
+      "unit_bytes": 14156,
+      "unit_id": "openalex_w2138245810_v2_u10",
+      "unit_sha256": "950f7a338dce6eed995831fa7d670a78b21cc2392660077c1d9cdf262d4a73a7",
+      "unit_type": "full complexity reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are scoped observations, not proved improved algorithms.",
+      "line_end": 747,
+      "line_start": 730,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant and reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Locates the obstruction in precomputation for larger cubic coefficients, notes possible amortized multi-value transfer, and shows the quadratic method is not tied to the Riemann-Siegel remainder formula.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The coefficient-range bottleneck identifies what must improve beyond exponent four thirteenths",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u11.txt",
+      "unit_bytes": 1373,
+      "unit_id": "openalex_w2138245810_v2_u11",
+      "unit_sha256": "6ab338c423fc7d7da9460fa51d8653e14d6f78077e02c714a0c24511c63a3c0a",
+      "unit_type": "limitation-and-transfer analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the conceptual baseline against which the cubic obstruction is defined.",
+      "line_end": 847,
+      "line_start": 749,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The iteration formula is legible but exact remainder bounds are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how saddle contributions form a shorter quadratic sum, why normalization guarantees at least halving, and why the computational burden lies in efficiently handling non-saddle remainders.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Van der Corput iteration shortens quadratic sums because Gaussian phase structure closes under transformation",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u12.txt",
+      "unit_bytes": 5785,
+      "unit_id": "openalex_w2138245810_v2_u12",
+      "unit_sha256": "9374af21770675de809754b6ee597bd7b55af6c5800bdfaed4bfa3c9911398f0",
+      "unit_type": "self-similarity comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two inequalities on the cubic and quadratic coefficients delimit when the transformed sum remains cubic.",
+      "line_end": 994,
+      "line_start": 848,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core prose and transformed parameters are recoverable; series coefficients and numerical constants should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies loss of self-similarity through a square root, uses coefficient smallness to expand quartic and higher effects away, and produces a controlled linear combination of new cubic sums plus a no-saddle remainder.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A small cubic coefficient restores closure by expanding the nonpolynomial saddle phase",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u13.txt",
+      "unit_bytes": 8765,
+      "unit_id": "openalex_w2138245810_v2_u13",
+      "unit_sha256": "9274577ddeb9eec52ab6071ef168ce786923c340af6987fb069615ecd9fbbe27",
+      "unit_type": "approximate-closure construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prototypical scale calculation makes the K-to-K-mu transition and fourth-power grid cost explicit.",
+      "line_end": 1136,
+      "line_start": 1019,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is reliable; several exponent displays are fragmented but interpretable from adjacent sentences.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how lengths shrink while cubic coefficients grow, classifies halting cases, derives the final precomputation scale, and explains why the implementation is reorganized to reuse the existing quadratic algorithm.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated shortening terminates at direct, Euler-Maclaurin, or precomputed high-degree boundary cases",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u14.txt",
+      "unit_bytes": 8022,
+      "unit_id": "openalex_w2138245810_v2_u14",
+      "unit_sha256": "13657ffdf9622c81011c579f47f8a2fce69f11f415ecaecec37c3b80954d0d31",
+      "unit_type": "recursive algorithm and stopping logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the second phase and records the final parameter inequalities needed for saddle extraction.",
+      "line_end": 1762,
+      "line_start": 1601,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several triple-integral displays are fragile; the case split and reduction targets are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands accumulated remainder functions into elementary and incomplete-gamma types, partitions parameter intervals to stabilize floors, and reduces each case to the same controlled double-integral interface.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic-algorithm remainders reduce to bounded integral families already handled by the auxiliary toolkit",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u15.txt",
+      "unit_bytes": 10656,
+      "unit_id": "openalex_w2138245810_v2_u15",
+      "unit_sha256": "0ad029502fb8b9605d14684de1823f19759ac7ecb20be2d0b23544105b7013f3",
+      "unit_type": "remainder closure mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Tail terms excluded from the bulk contain only polylogarithmically many summands and are treated directly.",
+      "line_end": 1986,
+      "line_start": 1889,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense contour and coefficient displays require exact verification, but the reduction chain is textually clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates both sides of each saddle, evaluates endpoint and central contributions, truncates the phase series at a scale chosen by the length ratio, and obtains finite sums whose high-degree coefficients decay geometrically.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour decomposition converts saddle integrals into polynomial-phase sums with restricted higher coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u16.txt",
+      "unit_bytes": 5638,
+      "unit_id": "openalex_w2138245810_v2_u16",
+      "unit_sha256": "74ceb66bbfa2cd322d49c6c38c92e08585db9867c45cb353e17a23c096d23887",
+      "unit_type": "saddle-to-polynomial reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The moderate-length regime has uniformly bounded phase degree, keeping the naive independent-coordinate grid affordable.",
+      "line_end": 2149,
+      "line_start": 1987,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and legible with some index ambiguity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes an arbitrary length into powers of two, transports coefficients under shifts, bounds their growth, and discretizes each transformed phase finely enough for Taylor recovery from FFT-computed grid values.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        38,
+        39,
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic length normalization turns arbitrary terminal sums into reusable FFT queries",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u17.txt",
+      "unit_bytes": 9151,
+      "unit_id": "openalex_w2138245810_v2_u17",
+      "unit_sha256": "dbf540141703d5e09e89a49406233412dd4977a2300d472d3b43bab671d7b301",
+      "unit_type": "dyadic-grid precomputation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This replaces an otherwise inferior direct-evaluation branch for very short terminal sums.",
+      "line_end": 2287,
+      "line_start": 2150,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact grid spacings and derivative bounds are formula-sensitive; the six-parameter compression is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Recognizes that terminal high-degree coefficients arise from only three shared parameters, reformulates the sum accordingly, uses multivariate Cauchy bounds for interpolation, and reduces the number of required discretizations enough to meet the target precomputation cost.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        41,
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coupling higher phase coefficients prevents a high-dimensional grid explosion",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u18.txt",
+      "unit_bytes": 9451,
+      "unit_id": "openalex_w2138245810_v2_u18",
+      "unit_sha256": "1c190ff97879de17fde73bbf9b7b2a9587000663ad6f6dac2178a61012b38cc6",
+      "unit_type": "dependency-aware compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is auxiliary but materially closes a hidden complexity assumption in the main algorithm.",
+      "line_end": 2376,
+      "line_start": 2294,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Derivative formulas are extractable; exact constants should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds all required derivatives through a polynomial recursion and chooses only logarithmically many correction terms, certifying the repeated use of Euler-Maclaurin in boundary regimes.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative recursions make short-cubic Euler-Maclaurin truncation uniformly cheap",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u19.txt",
+      "unit_bytes": 4880,
+      "unit_id": "openalex_w2138245810_v2_u19",
+      "unit_sha256": "c4f0722d1533f929bca6a283a804ad76dfce81db53058d4818ebba35a680eb5e",
+      "unit_type": "Euler-Maclaurin certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour treatment of the main no-saddle integral is included because it supplies exponential decay before local expansion.",
+      "line_end": 2582,
+      "line_start": 2377,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several integral displays are OCR-fragile but the small/large frequency dichotomy is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits oscillatory integrals by whether a linear frequency is small, uses local Taylor expansion or explicit integration accordingly, and reduces every resulting expression to quadratic sums or their already-supported weighted variants.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        45,
+        46,
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin corrections and no-saddle double integrals collapse to quadratic sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u20.txt",
+      "unit_bytes": 12118,
+      "unit_id": "openalex_w2138245810_v2_u20",
+      "unit_sha256": "457b0af8589f84727dfeca5864b2b1337a172a039f5016c898f1c757bb2b8fa1",
+      "unit_type": "correction-term reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Captures the reusable decision rule: extract an interior saddle; otherwise move to steepest descent.",
+      "line_end": 2850,
+      "line_start": 2583,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; contour orientations and exact bounds require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Partitions parameter space by the location of the stationary point, rotates contours to create decay, truncates and locally expands the decaying pieces, and reduces both cases to a controlled Airy-type integral, ultimately an incomplete gamma computation.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Saddle/no-saddle contour choices reduce the remaining two-variable kernels to Airy-type integrals",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u21.txt",
+      "unit_bytes": 16709,
+      "unit_id": "openalex_w2138245810_v2_u21",
+      "unit_sha256": "3565c97876b5669119049af7d7d37af9e75c1f3a9317bd63e8d214442fbde9eb",
+      "unit_type": "Airy-integral boundary solver",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the auxiliary proof that enlarging the saddle contour in the main phase introduces no expensive remainder.",
+      "line_end": 3078,
+      "line_start": 2851,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact complex phases are extraction-sensitive; the decay estimates and final reduction are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves both integration variables to decaying contours, separates full-line Gaussian contributions from rapidly decaying complements, and repeatedly reduces the resulting expressions to computable weighted quadratic sums.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        53,
+        54,
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exterior contour tails regain quadratic structure after Gaussian completion and decay truncation",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u22.txt",
+      "unit_bytes": 14794,
+      "unit_id": "openalex_w2138245810_v2_u22",
+      "unit_sha256": "654b632a180704fbd9a6e8027d9ffc052f6b8ea66b968887a968df7a20eccc8f",
+      "unit_type": "exterior-tail certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The low-zero contribution is separately bounded at the target size, leaving only the controlled tail.",
+      "line_end": 104,
+      "line_start": 62,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The OCR of the zero sums and exponents is poor; the interval, truncation, and summability mechanism is explicit in prose but quantitative reuse needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Truncates the explicit formula, bounds the high-zero contribution on each multiplicative interval using zero counts, applies a mean-square exceptional-set estimate, and chooses logarithmic cutoffs so the exceptional logarithmic measures form a convergent series.",
+      "source_id": "openalex_w998105725",
+      "source_normalized_sha256": "48197b68802308f5b6d98e2b82ea4172ae2c94fbf770fe2934628adb1bcd2233",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A logarithmic L2 zero-tail bound becomes finite logarithmic measure by geometric scale summation",
+      "unit_artifact_relpath": "depth/units/openalex_w998105725_v2_u04.txt",
+      "unit_bytes": 823,
+      "unit_id": "openalex_w998105725_v2_u04",
+      "unit_sha256": "763aa7cccc84d2a799e95e29598899e7406ea572a1f309c2147724a3744d8e6a",
+      "unit_type": "exceptional-set conversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w998105725_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w998105725",
+        "title": "Some consequences of the Riemann hypothesis",
+        "authors": [
+          "P. Gallagher"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

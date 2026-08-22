@@ -1,0 +1,324 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2031072746_94b54312_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2031072746",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The spacing discussion is heuristic where explicitly stated.",
+      "line_end": 593,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mild formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The coefficient cutoff needed to resolve local zero spacing matches approximate-functional-equation scale in the self-dual case, while rare small gaps can be harder; this positions the method as a fast low-zero estimator and independent computation check.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uncertainty ties zero resolution to analytic-conductor cost",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u07.txt",
+      "unit_bytes": 2135,
+      "unit_id": "openalex_w2031072746_v2_u07",
+      "unit_sha256": "20b69e81ba9db5264f431767fede65a142866a71b726832d13318b3a469a3299",
+      "unit_type": "method-scope comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 556,
+          "line_end": 563,
+          "text": "   The sum over zeros in (3.3) is then a positive definite quadratic form in the numbers\nan and bn . To compute the matrix of the form essentially involves computing the explicit\nformula for functions g that are translates of a fixed function of small compact support.\nThat requires almost no extra work, since we may compute the formula for all localized\ntest functions simultaneously. Once the matrix is known, the infemum in (3.3) over this\nrestricted class of test functions is easily found as the minimum of the quadratic form\nsubject to the linear constraint h(t0 ) = 1. This involves inverting the matrix, after which\nthe minimum may be found quickly for many different values of t0 .\n",
+          "sha256": "19513f2dcb667d804d4ae49924a19db37aa6f649635a248e545886318ab04fca"
+        },
+        "after": {
+          "line_start": 594,
+          "line_end": 601,
+          "text": "\n                                          4. Turing’s method\n  Turing’s method for verifying the Riemann hypothesis is described well in his paper\n[Tur53], although there are some errors in the details that were later corrected by Lehman\n[Leh70]. The method has subsequently been extended to Dirichlet L-functions by Rumely\n[Rum93] and Dedekind zeta functions by Tollis [Tol97]2. Our contribution is to work out\nthe details necessary to apply it to an arbitrary L-function with simple zeros.\n  Our argument essentially follows that of Turing. We begin by setting some notation to\n",
+          "sha256": "c7511219cbcfe48852152417883ec4f378064ea350b393f66ff8e0f6cea0487c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_12ea07471b1c12856b3a4e30a12339d46f2d65e36587617c4f206e65e348135d",
+        "dossier_sha256": "1a9d1a21f812079eb4fc4aab2c423254f74a064c9e7f56eb1a523f09fc325657",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Locating zeros via the explicit formula",
+            "line_end": 594,
+            "line_start": 481,
+            "mathematical_role": "Constructs positive bandlimited test functions whose optimized explicit-formula cost excludes ordinates or localizes zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 593,
+          "line_start": 564,
+          "title": "Uncertainty ties zero resolution to analytic-conductor cost",
+          "unit_id": "openalex_w2031072746_v2_u07",
+          "unit_type": "method-scope comparison",
+          "why_material": "The coefficient cutoff needed to resolve local zero spacing matches approximate-functional-equation scale in the self-dual case, while rare small gaps can be harder; this positions the method as a fast low-zero estimator and independent computation check."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The spacing discussion is heuristic where explicitly stated.",
+          "representation_dependency": "Mild formula dependence.",
+          "unit_id": "openalex_w2031072746_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 563,
+            "line_start": 481,
+            "title": "A constrained quadratic-form minimum becomes a zero-exclusion certificate",
+            "unit_id": "openalex_w2031072746_v2_u06",
+            "unit_type": "positive explicit-formula localization",
+            "why_material": "Weil's explicit formula evaluates bandlimited spectral probes from finitely many coefficients; positivity and normalization at a test ordinate turn the best probe into a computable infimum whose value below one rules out a zero."
+          },
+          {
+            "line_end": 714,
+            "line_start": 595,
+            "title": "Turing's method upgrades sign changes by recovering an absolute zero count",
+            "unit_id": "openalex_w2031072746_v2_u08",
+            "unit_type": "zero-count certification",
+            "why_material": "The argument principle separates the explicit gamma phase from S(t); integrating one-sided sign-change counts near endpoints and using the mean-zero behavior of S determines the missing integer offset, while the bulk needs only observed sign changes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_v2_u07",
+          "spontaneous_reading": "The uncertainty principle makes the coefficient cutoff track local zero density, so the explicit-formula locator has approximate-functional-equation scale in self-dual cases but can become expensive at rare unusually small gaps. Its strength is fast low-zero estimation and independent validation rather than replacing all certification layers."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_v2_u07",
+          "source_grounded_mathematics": "Using the approximate zero density for degree r and conductor N, the source estimates that resolving height T requires coefficients to about N(T/2 pi)^r, reduced to its square root in the self-dual even-test-function setting. It notes that random-matrix heuristics predict arbitrarily small normalized gaps, which may demand more coefficients. Compact support removes truncation error from the explicit formula itself, making the method clean for low zeros and fast coefficients, but the minimization relies on RH and is used mainly to tune and validate rigorous computations.",
+          "conceptual_reading": "Resolution cost is governed by spectral crowding rather than height alone. The method occupies a diagnostic role: it cheaply proposes and cross-checks local structure while a logically independent count closes the proof.",
+          "representation_or_bridge": "The coefficient support X mediates the uncertainty tradeoff between arithmetic work and spectral localization; self-duality halves the effective spectral content through even probes.",
+          "boundary_or_failure": "The small-gap discussion is heuristic, and the locator's rigor is conditional on RH. It may require atypically large input for close pairs and does not by itself supply Turing's absolute count.",
+          "uncertainty": "The asymptotic scale is stated approximately and mildly formula-dependent; no universal practical cutoff is claimed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031072746_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The approximate zero density, coefficient cutoff scale, square-root reduction in the self-dual setting, rare-small-gap heuristic, low-zero utility, RH dependence, and validation role are supported."
+        ],
+        "inference": [
+          "Saying resolution cost depends on local crowding and assigning the method a diagnostic role are reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'self-duality halves the effective spectral content' is not the source's mechanism and may be false as stated; the source says restricting to even tests/dividing the final formula changes the needed coefficient bound to its square root."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Uncertainty tradeoff' is useful only if the actual coefficient cutoff and conditional rigor are retained."
+        ],
+        "context_or_ocr_risk": [
+          "The scale is approximate and the small-gap claim is explicitly heuristic."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes absence of explicit-formula truncation error for compactly supported g from the separate RH assumption; these should not be conflated into unconditional rigor."
+        ],
+        "revision_instructions": [
+          "Replace the vague halving claim with the exact square-root coefficient-range statement for self-dual even tests. Keep small gaps heuristic and the locator conditional/diagnostic."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical results establish finite-height evidence, not Artin's conjecture or RH in general.",
+      "line_end": 1924,
+      "line_start": 1703,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables and numerical parameters are readable but exact values remain PDF-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The implementation chooses damping from a rigorous error budget, computes local factors efficiently, uses explicit-formula spikes both as zero estimates and coefficient checks, evaluates the FFT with interval arithmetic, compares two independent zero locators, and finishes with Turing certification.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        32,
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Independent spectral estimates, interval arithmetic, and Turing counts triangulate the zero computation",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u14.txt",
+      "unit_bytes": 12233,
+      "unit_id": "openalex_w2031072746_v2_u14",
+      "unit_sha256": "4b4bb34b6be9ecc19fbe46ba12111fc20c898ed2c926e53574f8904f82552825",
+      "unit_type": "computational certification pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1695,
+          "line_end": 1702,
+          "text": "zeros of ζ(s). Twisting by χ, we see similarly that L(s, ρ′4 ) and L(s, ρ′5 ) are holomorphic\naway from the zeros of L(s, χ). Moreover, we learn from GAP that the representations\nρ4 ⊕ ρ6 , ρ′4 ⊕ ρ6 , ρ5 ⊕ ρ′4 ⊕ χ and ρ′5 ⊕ ρ4 ⊕ 1 are all monomial. Thus, in order to verify the\nholomorphy of L(s, ρ4 ), L(s, ρ′4 ), L(s, ρ5 ) and L(s, ρ′5 ) it is enough to check that L(s, ρ6 ) and\nL(s, ρ′4 ⊕ χ) are non-vanishing at zeros of ζ(s) and, similarly, that L(s, ρ6 ) and L(s, ρ4 ⊕ 1)\ndo not vanish at the zeros of L(s, χ). Applying Turing’s method to these functions as well\nas L(s, ρ5 ⊕ 1) and L(s, ρ′5 ⊕ χ), we can deduce both Artin’s conjecture and the Riemann\nhypothesis (up to the tested height) for all representations.\n",
+          "sha256": "a9bc4ca3797e3c4cb934f50171a6c1e5e530068992250c3c7b4a9449b7eeda53"
+        },
+        "after": {
+          "line_start": 1925,
+          "line_end": 1932,
+          "text": "<!-- source-page: 35 -->\n\nARTIN’S CONJECTURE, TURING’S METHOD AND THE RIEMANN HYPOTHESIS                               35\n\n      3\n                                                                                |G(u)|\n\n 2.5\n",
+          "sha256": "58b144fc2dbf1ac9965d3a6363734bfa67c6319dda676c77df36b5b408fc2a83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_12ea07471b1c12856b3a4e30a12339d46f2d65e36587617c4f206e65e348135d",
+        "dossier_sha256": "1a9d1a21f812079eb4fc4aab2c423254f74a064c9e7f56eb1a523f09fc325657",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the full certification pipeline for S5 and A5 fields, including representation selection, interval arithmetic, cross-checks, and final Turing counts."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1924,
+          "line_start": 1703,
+          "title": "Independent spectral estimates, interval arithmetic, and Turing counts triangulate the zero computation",
+          "unit_id": "openalex_w2031072746_v2_u14",
+          "unit_type": "computational certification pipeline",
+          "why_material": "The implementation chooses damping from a rigorous error budget, computes local factors efficiently, uses explicit-formula spikes both as zero estimates and coefficient checks, evaluates the FFT with interval arithmetic, compares two independent zero locators, and finishes with Turing certification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical results establish finite-height evidence, not Artin's conjecture or RH in general.",
+          "representation_dependency": "Tables and numerical parameters are readable but exact values remain PDF-dependent.",
+          "unit_id": "openalex_w2031072746_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1702,
+            "line_start": 1654,
+            "title": "Monomial sums choose the smallest family of L-functions needed for simultaneous certification",
+            "unit_id": "openalex_w2031072746_v2_u13",
+            "unit_type": "experimental representation design",
+            "why_material": "For S5, representation identities identify which known-entire sums and nonvanishing checks suffice to infer holomorphy and RH for all irreducibles, avoiding a separate direct test of every target factor."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The explicit formula cheaply predicts and cross-checks zeros, while Turing's mean argument bound certifies completeness from sign changes produced by a rigorously bounded evaluator.",
+            "limit": "The explicit-formula minimization itself assumes RH and therefore is not the final RH certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_v2_u06",
+              "openalex_w2031072746_v2_u08",
+              "openalex_w2031072746_v2_u14"
+            ],
+            "title": "Fast estimation and formal certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_v2_u14",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_v2_u14",
+          "spontaneous_reading": "The computation gains credibility by triangulation rather than one numerical trace: algebraic local factors generate coefficients, explicit-formula spikes both predict zeros and audit those coefficients, interval FFT evaluation brackets signs, and Turing's count certifies completeness."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_v2_u14",
+          "source_grounded_mathematics": "For the six-dimensional S5 representation, the source chooses eta=0.98 from a comparison of rigorous truncation errors with function size and works mostly at 30 digits. It computes coefficients using Dedekind-zeta identities at ramified primes and Frobenius classes from modular factorization otherwise; explicit-formula FX spikes estimate low zeros and validate coefficients. MPFI interval arithmetic is used for kernel tables, convolution sums, FFT values, and Turing analysis. A large coefficient table, Taylor approximations, a 2^20-point FFT, and comparison of the FFT Z-function with FX culminate in rapid Turing certification.",
+          "conceptual_reading": "Independent representations of the same spectrum expose different failure modes: arithmetic mistakes spoil explicit-formula spikes, analytic/numerical errors spoil interval signs, and missed zeros spoil the global Turing count. Agreement across them is stronger than visual agreement alone because the final layer is a count certificate.",
+          "representation_or_bridge": "Local Euler factors, FX, Taylor-tabulated G, interval FFT values, and Turing counts form a chain from exact arithmetic input to certified finite-height spectral conclusions.",
+          "boundary_or_failure": "Results are bounded to the tested height and conditional on the runtime isolation pattern used for factor reconstruction. Numerical parameter choices are specific to the conductor, gamma factors, precision, and available coefficient range.",
+          "uncertainty": "Tables and some parameter exponents are extraction-sensitive. The source reports interval arithmetic and cross-checks, but exact reproducibility requires its code/data and scan-verified constants."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031072746_v2_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The eta/error-budget choice, coefficient construction routes, explicit-formula zero estimates, MPFI use, Taylor tables, FFT dimensions, Z/F_X comparison, and final Turing step are supported."
+        ],
+        "inference": [
+          "Viewing the stages as checks with different failure sensitivities is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "Calling the spectral estimates 'independent' and F_X spikes an 'audit' or validation of coefficient correctness overstates the evidence: the explicit-formula and FFT paths share coefficient/model inputs, and the source says height-one spikes indicate correctness rather than certify it."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Triangulation' sounds stronger than the actual dependency structure unless shared inputs and the final count's role are made explicit."
+        ],
+        "context_or_ocr_risk": [
+          "Parameter exponents, table values, the source's steps-3-through-7 wording, and exact interval setup require code/data and scan verification."
+        ],
+        "missed_mechanism": [
+          "The strongest exact layer is interval evaluation plus Turing completeness under the runtime isolation/group reconstruction assumptions; visual F_X/Z agreement remains diagnostic evidence."
+        ],
+        "revision_instructions": [
+          "Replace 'independent triangulation/audit' with 'partly redundant cross-checks sharing arithmetic inputs'. Treat F_X spikes and Z agreement as diagnostics, and reserve certification language for interval arithmetic plus the Turing count and group-theoretic runtime conditions."
+        ]
+      }
+    }
+  ]
+}

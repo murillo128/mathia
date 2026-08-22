@@ -1,0 +1,198 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2048352354_108b429a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2048352354",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uniformity is what permits exchanging the derivative and asymptotic limits; the far-offset result is explicitly a discrete analogue of the continuous mean.",
+      "line_end": 615,
+      "line_start": 530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "All normalizations, limits, and k domains require exact checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the source's central conjecture with the same universal Fk and arithmetic factor, then obtains derivative moments as the alpha-to-zero limit and continuous-moment behavior as the fixed-distance limit.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transfer the Bessel crossover to discrete zeta moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_v2_u06.txt",
+      "unit_bytes": 4843,
+      "unit_id": "openalex_w2048352354_v2_u06",
+      "unit_sha256": "200bac640a418c5e53a1617c960a4ca5c9b422f1a5df57cfc535a1344ec04cb8",
+      "unit_type": "zeta crossover conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "                                       (2k + n)n\n                                G(p, n) =             F (p, n)\n                                   (n − p − 1)(k + p)\n(the (2k + n)n/(n − p − 1)(k + p) being calculated by Zeilberger’s algorithm).\nSumming both sides of (2.7) over n, we see that the right-hand side telescopes to\nzero, which shows that the left-hand side of (2.6) must be a constant, independent\nof p. Putting p = 0, direct calculation shows that constant is 1.               \u0003\n\n",
+          "sha256": "d1ece432cf759f610ca6545c94e9052e7dbc157209b572949e632174d8400768"
+        },
+        "after": {
+          "line_start": 616,
+          "line_end": 623,
+          "text": "\n3.1. Comparison with the zeta function. Gonek [9] showed that if the Riemann\nHypothesis is true then\n                X                               \u0012         \u00132 !\n         1              1\n                                        \u00012        sin(πα)          T\n                      ζ 2 + i (γn + α/L)   ∼ 1−                log\n       N (T )                                        πα            2π\n",
+          "sha256": "c3a16e52dc885cefaf070b9c423c771ca035703e8e3442de8ded30810293de61"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f9ae1dd7a716873adba0b22e878cd01bef5b88f11aa7aae0ee7e116899b1606",
+        "dossier_sha256": "44f710c72d5361141a000713617731e81ea11942741e18d46fd4ffc2c622448c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Conjecture about the zeta function",
+            "line_end": 704,
+            "line_start": 530,
+            "mathematical_role": "Transfers the crossover to zeta, derives derivative and far-offset corollaries, and compares them with known theorems and a clearly marked extrapolation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 615,
+          "line_start": 530,
+          "title": "Transfer the Bessel crossover to discrete zeta moments",
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "unit_type": "zeta crossover conjecture",
+          "why_material": "States the source's central conjecture with the same universal Fk and arithmetic factor, then obtains derivative moments as the alpha-to-zero limit and continuous-moment behavior as the fixed-distance limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uniformity is what permits exchanging the derivative and asymptotic limits; the far-offset result is explicitly a discrete analogue of the continuous mean.",
+          "representation_dependency": "All normalizations, limits, and k domains require exact checking.",
+          "unit_id": "openalex_w2048352354_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 528,
+            "line_start": 404,
+            "title": "Collapse the double expansion with a Wilf-Zeilberger telescoping identity",
+            "unit_id": "openalex_w2048352354_v2_u05",
+            "unit_type": "asymptotic closure technique",
+            "why_material": "Transforms the finite-N hypergeometric sum, identifies its coefficientwise large-N limit, and proves the required single-series Bessel coefficient identity by a telescoping WZ pair."
+          },
+          {
+            "line_end": 698,
+            "line_start": 617,
+            "title": "Check the crossover where theorems exist and label the forbidden endpoint extrapolation",
+            "unit_id": "openalex_w2048352354_v2_u07",
+            "unit_type": "number-theoretic calibration and extrapolation boundary",
+            "why_material": "Shows exact agreement with Gonek's k=1 theorem, compares k=2 with a GRH theorem for a truncated Dirichlet polynomial, and explicitly notes that setting its length parameter to one is outside the theorem before naming the resulting statement a conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Evaluating a characteristic polynomial or zeta a distance of order one local spacing from a zero produces a single crossover law: its zero-offset scaling yields derivative moments, while large scaled displacement forgets the conditioning and yields ordinary moments.",
+            "limit": "The crossover is proved for Haar-unitary matrices but only conjectured for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_v2_u02",
+              "openalex_w2048352354_v2_u03",
+              "openalex_w2048352354_v2_u06"
+            ],
+            "title": "Microscopic displacement is the bridge between a function and its derivative at zeros"
+          },
+          {
+            "claim": "The Barnes-G and Bessel factors come from the random-matrix local model, while zeta retains a multiplicative arithmetic factor; agreement in theorem-accessible cases calibrates this product structure.",
+            "limit": "Calibration at k=1 and truncated k=2 does not prove the full conjecture or its uniformity.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_v2_u01",
+              "openalex_w2048352354_v2_u03",
+              "openalex_w2048352354_v2_u06",
+              "openalex_w2048352354_v2_u07"
+            ],
+            "title": "Universal matrix structure and arithmetic correction remain separate"
+          },
+          {
+            "claim": "A number-theoretic theorem for a shortened Dirichlet polynomial reproduces the predicted crossover algebra, but the full zeta statement requires moving to an endpoint explicitly excluded by that theorem.",
+            "limit": "The matching expression is evidence for the conjecture, not authorization to treat the endpoint substitution as proved.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_v2_u06",
+              "openalex_w2048352354_v2_u07"
+            ],
+            "title": "The theorem-conjecture boundary is visible at the endpoint eta equals one"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "spontaneous_reading": "The random-matrix crossover function is transplanted wholesale into a zeta conjecture, with uniformity serving as the crucial permission to take the derivative limit at zero displacement."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_v2_u06",
+          "source_grounded_mathematics": "The source conjectures a discrete shifted ζ moment with arithmetic factor a(k), Barnes-G factor, and F_k(2πα), then derives derivative moments as α→0 and a fixed-distance discrete analogue of continuous moments as α grows with local density.",
+          "conceptual_reading": "One interpolating law is proposed to organize two regimes, but its force comes from controlled limits rather than surface similarity of formulas.",
+          "representation_or_bridge": "Local zero density maps α to physical displacement, while F_k transports the matrix crossover into the zeta statistic.",
+          "boundary_or_failure": "The central statement is conjectural; exchanging α→0 with T→∞ depends on the stated uniformity, and the far-offset result is discrete rather than literally the continuous mean.",
+          "uncertainty": "All normalizations, domains of k, uniformity bounds, and limiting constants need exact checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2048352354_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the shifted-zeta moment conjecture with F_k, derives the derivative-moment limit using uniformity near alpha=0, and presents a fixed-physical-offset discrete analogue of the continuous moment."
+        ],
+        "inference": [
+          "Treating one crossover function as organizing derivative and field regimes is well grounded, and identifying uniformity as necessary for the derivative limit is explicit in the proof."
+        ],
+        "unsupported_or_imported": [
+          "The analysis misses a domain tension inside the span: Conjecture 5 states uniformity only for |alpha|<=L, while Corollary 5.2 substitutes alpha=L beta and is stated for arbitrary fixed beta>0; beta>1 lies outside the displayed uniformity range unless additional extension is supplied."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: the crossover is tied to the exact density rescaling and two limiting operations."
+        ],
+        "context_or_ocr_risk": [
+          "All powers, Barnes-G and arithmetic factors, k domains, uniformity quantifiers, and limiting constants are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The far-offset passage needs not only the large-alpha asymptotic of F_k but also authorization to evaluate the conjecture at alpha=L beta throughout the stated beta range."
+        ],
+        "revision_instructions": [
+          "Retain the conjectural interpolation and derivative-limit account, but flag that the fixed-offset corollary is directly covered by the displayed |alpha|<=L range only when |beta|<=1, absent a wider uniformity statement."
+        ]
+      }
+    }
+  ]
+}

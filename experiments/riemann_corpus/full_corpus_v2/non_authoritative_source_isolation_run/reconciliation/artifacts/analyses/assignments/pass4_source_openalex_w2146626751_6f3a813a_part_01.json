@@ -1,0 +1,165 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2146626751_6f3a813a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2146626751",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zero-location proof is referred to earlier work and only sketched here.",
+      "line_end": 1006,
+      "line_start": 953,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; principal-value and i-epsilon signs must be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reexpresses the ordered integral as a Cauchy transform, locating poles below the real axis and thereby restricting Jost zeros to the real axis or lower half-plane.",
+      "source_id": "openalex_w2146626751",
+      "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Causal integral ordering makes the Jost function analytic above the real energy axis",
+      "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u10.txt",
+      "unit_bytes": 3302,
+      "unit_id": "openalex_w2146626751_v2_u10",
+      "unit_sha256": "79f7070626cf2c849ce5f9f5e5b435b1726030751b212d2aadd9d06268c2acd9",
+      "unit_type": "analyticity constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2146626751",
+        "title": "A quantum mechanical model of the Riemann zeros",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 945,
+          "line_end": 952,
+          "text": "the quantum level the confinement requires the fine tuning of the couplings (see eq. (4.35)),\nwhich introduces periodic or antiperiodic boundary conditions depending on the sign of ǫ.\nWhen |ǫ| 6= 1 the particle can scape the trap and the bound states become resonances.\n\n\nV.     ANALYTICITY PROPERTIES OF F(E)\n\n\n",
+          "sha256": "a865c71484a18d6e1a7355da42b52b030d1d778ac77ab0b5aa6697202a530d78"
+        },
+        "after": {
+          "line_start": 1007,
+          "line_end": 1014,
+          "text": "\n\nVI.   THE QUANTUM VERSION OF THE BERRY-KEATING MODEL\n\n\n   Let us consider the BK constraints x > lx and |p| > lp . It is rather natural to associate\nconstraint x > lx with the wave function\n\n",
+          "sha256": "45c2ba621f9214022da14ae7848f703d753bb00254cfc47063a0779dbbec6383"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+        "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Analyticity properties of F(E)",
+            "line_end": 1008,
+            "line_start": 950,
+            "mathematical_role": "Derives the upper-half-plane analyticity and allowed zero location from causal integral representations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1006,
+          "line_start": 953,
+          "title": "Causal integral ordering makes the Jost function analytic above the real energy axis",
+          "unit_id": "openalex_w2146626751_v2_u10",
+          "unit_type": "analyticity constraint",
+          "why_material": "Reexpresses the ordered integral as a Cauchy transform, locating poles below the real axis and thereby restricting Jost zeros to the real axis or lower half-plane."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zero-location proof is referred to earlier work and only sketched here.",
+          "representation_dependency": "High; principal-value and i-epsilon signs must be scan-checked.",
+          "unit_id": "openalex_w2146626751_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 947,
+            "line_start": 844,
+            "title": "A two-delta boundary trap shows that embedded binding requires fine tuning",
+            "unit_id": "openalex_w2146626751_v2_u09",
+            "unit_type": "worked mechanism",
+            "why_material": "Computes F explicitly for two localized boundary states, recovers semiclassical level spacing, and shows how periodic or antiperiodic tuning confines the wavefunction while detuning turns bound states into resonances."
+          },
+          {
+            "line_end": 1099,
+            "line_start": 1012,
+            "title": "Cosine and sine boundary dualities reproduce even and odd functional-equation phases",
+            "unit_id": "openalex_w2146626751_v2_u11",
+            "unit_type": "Fourier-Mellin duality",
+            "why_material": "Sharp position and absolute-momentum cutoffs become cosine/sine Fourier pairs; Mellin transformation turns that boundary exchange into gamma-ratio phases equal to those of even and odd Dirichlet L-functions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146626751_v2_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2146626751_v2_u10",
+          "spontaneous_reading": "Causality appears as analytic half-plane control: ordering one integration limit produces an i-epsilon Cauchy transform whose singularities lie below the real energy axis."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146626751_v2_u10",
+          "source_grounded_mathematics": "The ordered kernel Sf,g is rewritten using Fourier transforms as a principal-value expression and then as a Cauchy integral with E'-E-i epsilon in the denominator. For suitable transformed boundary functions it is analytic in the upper half-plane; the source states that the resulting Jost function has zeros only on the real axis or in the lower half-plane.",
+          "conceptual_reading": "Temporal or causal ordering is converted into a geometric restriction on complex spectral data. This analytic asymmetry is the feature needed to rule out growing upper-half-plane modes within the model.",
+          "representation_or_bridge": "The distribution identity for the half-line ordered integral bridges dynamics in q-space to Hardy-type analyticity in energy.",
+          "boundary_or_failure": "The zero-location argument is only referred to earlier work and uses a finite-interval regularization. Good behavior of the Fourier data is assumed.",
+          "uncertainty": "Principal-value signs and the i-epsilon convention require scan verification; the prose claim about upper-half-plane analyticity is supported."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146626751_v2_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The ordered integral is rewritten as a principal-value and i-epsilon Cauchy transform; the source states upper-half-plane analyticity and zeros on or below the real axis under suitable behavior."
+        ],
+        "inference": [
+          "Relating ordering to analytic half-plane asymmetry is faithful."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this specifically rules out growing upper-half-plane modes is not made in the span, and 'Hardy-type' analyticity imports terminology not used or established here."
+        ],
+        "paraphrase_or_style_risk": [
+          "Causality-to-geometry language can obscure that the zero-location proof is merely referred to earlier work."
+        ],
+        "context_or_ocr_risk": [
+          "Principal-value and i-epsilon signs require the PDF; the zero-location proof is only sketched by citation and regularization."
+        ],
+        "missed_mechanism": [
+          "The output otherwise preserves the assumed regularity of the Fourier data and the proof gap."
+        ],
+        "revision_instructions": [
+          "Remove 'Hardy-type' and the growing-mode claim; state only the source-supported half-plane analyticity and conditional zero-location result."
+        ]
+      }
+    }
+  ]
+}

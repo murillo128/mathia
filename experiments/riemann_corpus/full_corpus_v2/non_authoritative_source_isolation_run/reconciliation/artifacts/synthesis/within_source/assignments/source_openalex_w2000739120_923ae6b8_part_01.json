@@ -1,0 +1,102 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2000739120",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2000739120_923ae6b8_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Summatory totient asymptotics, Farey weighting, and periodic horocycle equidistribution are different representations of the baseline vague convergence whose refined error is then analyzed by Mellin methods.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2000739120_v2u02",
+          "openalex_w2000739120_v2u03"
+        ],
+        "proposed_limit": "The paper cites rather than redevelops the full modular-orbifold correspondence.",
+        "source_id": "openalex_w2000739120",
+        "synthesis_id": "riemann_v2_within_705e203063b9991912f2dfa7",
+        "title": "Arithmetic and dynamics realize the same equidistribution statement"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the geometric provenance from Zagier and the distinction between smooth and characteristic tests.",
+          "line_end": 167,
+          "line_start": 114,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations (5)-(7) are badly degraded; the prose-supported O(y log y)-type baseline and geometric interpretation require scan checking for exact exponents.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses summatory totient asymptotics plus Abel summation to pass from interval indicators to compactly supported test functions, then identifies the same statement as equidistribution of periodic horocycle measures.",
+          "source_id": "openalex_w2000739120",
+          "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mertens totient asymptotics yield vague convergence and a horocycle interpretation",
+          "unit_artifact_relpath": "depth/units/openalex_w2000739120_v2u02.txt",
+          "unit_bytes": 2661,
+          "unit_id": "openalex_w2000739120_v2u02",
+          "unit_sha256": "e535fd219d7df810f88afece37ca7947893b1f188244615e7afd7453bcf3be24",
+          "unit_type": "equidistribution-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_v2u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The arithmetic estimate and the dynamical equidistribution statement are two realizations of one weak-convergence mechanism.",
+            "nonparaphrase_operation": "Abel summation is the bridge from discrete cumulative counts to test-function integrals; the modular-orbifold interpretation transports the measure family to horocycle dynamics.",
+            "quality_reason": "The source uses Mertens' summatory totient estimate for interval indicators, Abel summation for C1 compactly supported tests, and explicitly identifies the result with periodic-horocycle equidistribution. The output correctly separates the rough-test baseline from later smooth-test rates. No exact exponent is asserted beyond what the degraded display safely supports. The Abel-summation and horocycle mechanisms make the conceptual reading concrete.",
+            "source_support": "The span derives convergence first for characteristic intervals from the totient asymptotic, extends it to C1 tests by Abel summation, and identifies the same limit with equidistribution of periodic horocycle measures.",
+            "speculation_status": "The baseline error for rough tests should not be conflated with the faster rates available from smooth Mellin decay. Equations defining constants and exact y-exponents are degraded and need scan verification. Treating arithmetic weak convergence and horocycle equidistribution as two realizations of the same measure limit is source-supported. Constants and y-exponents in equations (5)-(7) are damaged and must be scan-checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes convergence as a distribution-valued transform, the Farey/logarithmic representation, pole classification, and functional equation.",
+          "line_end": 286,
+          "line_start": 173,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Critical formulas (8), (10), (13), and the functional equation are partially missing or garbled; exact zeta arguments and constants must be read from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why zeta arises naturally: exchange the totient-weighted sum with the Mellin integral, factor out the entire test-function Mellin transform, and continue meromorphically so poles correspond to zeros of a denominator zeta factor.",
+          "source_id": "openalex_w2000739120",
+          "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The measure Mellin transform exposes a shifted zeta ratio",
+          "unit_artifact_relpath": "depth/units/openalex_w2000739120_v2u03.txt",
+          "unit_bytes": 5154,
+          "unit_id": "openalex_w2000739120_v2u03",
+          "unit_sha256": "fa82d3669578814f2e6c3e1921f894aa3202af3018a19439b58c5cfa3f486e45",
+          "unit_type": "mellin-factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_v2u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mellin space diagonalizes scaling, isolating universal arithmetic singularities from the chosen test function.",
+            "nonparaphrase_operation": "The test-function Mellin transform bridges dilation of atoms to multiplication, while the totient Dirichlet series produces the shifted zeta ratio.",
+            "quality_reason": "The source exchanges the totient-weighted sum with the Mellin integral, defines the entire test-function transform, continues the result meromorphically, and says possible poles include zeros of zeta(2s). It also notes the distribution-valued interpretation and the Farey/logarithmic representation. The exact shifted zeta ratio is not safely readable; the output appropriately confines exact arguments to its uncertainty field. The representation claim is tied to an actual sum-integral exchange and pole classification.",
+            "source_support": "After establishing transform convergence, the text exchanges the totient sum and Mellin integral, obtains a factorization involving zeta functions, continues it meromorphically, and classifies possible poles.",
+            "speculation_status": "A test factor can cancel a particular pole, so converse arguments must choose tests that do not vanish at the zero under examination. Critical formulas and exact shifted zeta arguments are partially missing or garbled in OCR. Saying Mellin space diagonalizes scaling and separates the test factor from arithmetic singularities is a reasonable mathematical reading. Equations (8), (10), (13), and the functional equation are partially absent or garbled."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c79ce5781bc07f825a938938e3a8727e20e148fb592083c2f17470b2bce24d3a",
+        "dossier_sha256": "3efb4648467f8cd0a658b6bf30f8ee1e7180654fa243a2f00d77ad3934cd7d8b"
+      }
+    }
+  ]
+}

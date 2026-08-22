@@ -1,0 +1,338 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1553683873_a1169a7d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1553683873",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The purely imaginary mean-zero statement is unconditional because its first-moment main term vanishes.",
+      "line_end": 234,
+      "line_start": 178,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper derives the geometric mean circle under RH, explains the positive-real bias, and proves arbitrarily large real and direction-constrained critical-line values from moment growth.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Directional moments imply conditional means and unconditional large values on prescribed half-lines",
+      "unit_artifact_relpath": "depth/units/openalex_w1553683873_v2_u03.txt",
+      "unit_bytes": 3455,
+      "unit_id": "openalex_w1553683873_v2_u03",
+      "unit_sha256": "cfd03d1f5aef09fc23cfadd98c573604834c9622d5b6bd21162a6d0308f8cdb0",
+      "unit_type": "directional-consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1553683873_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 170,
+          "line_end": 177,
+          "text": "information for the value-distribution of the zeta-function on the critical line. As\nan immediate consequence of (4) in combination with (5) we note\n\n<!-- source-page: 4 -->\n\n4                         JUSTAS KALPOKAS, JÖRN STEUDING\n\n\n",
+          "sha256": "2cf8a25587930da40e0b5b5de16c6fc108725aa36d57f177f97e24f6ad6c550c"
+        },
+        "after": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "    Finally, we give a lower bound for the number of roots of ∆( 21 +it)−e2iφ distinct\nfrom ordinates of zeta zeros:\n\n<!-- source-page: 5 -->\n\nVALUE-DISTRIBUTION OF THE ZETA-FUNCTION ON THE CRITICAL LINE                  5\n\n\n",
+          "sha256": "3b8564712ba9e5885aaddd70e441427ab79f9f0c6a66241a72b01f0500d0d00a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37cb00d2f0ac6631afe7667d551e80f37e29ff840515641be55b70a14f5e6851",
+        "dossier_sha256": "954b9d729986b1b89dc175055d0ac045454b07b4647298485e8ff3200b4fb5ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and main results",
+            "line_end": 280,
+            "line_start": 27,
+            "mathematical_role": "Defines phase-line intersections and counting functions, states counting and moment theorems, and derives directional consequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 234,
+          "line_start": 178,
+          "title": "Directional moments imply conditional means and unconditional large values on prescribed half-lines",
+          "unit_id": "openalex_w1553683873_v2_u03",
+          "unit_type": "directional-consequences",
+          "why_material": "The paper derives the geometric mean circle under RH, explains the positive-real bias, and proves arbitrarily large real and direction-constrained critical-line values from moment growth."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The purely imaginary mean-zero statement is unconditional because its first-moment main term vanishes.",
+          "representation_dependency": "Low.",
+          "unit_id": "openalex_w1553683873_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 108,
+            "title": "Phase intersections have T log T density and explicit first and second directional moments",
+            "unit_id": "openalex_w1553683873_v2_u02",
+            "unit_type": "counting-and-discrete-moment-theorems",
+            "why_material": "Theorems 1 and 2 jointly quantify how often each direction is hit and how the directional values average, with the second leading term independent of direction and the first sensitive to phase."
+          },
+          {
+            "line_end": 325,
+            "line_start": 281,
+            "title": "Clockwise phase winding gives the asymptotic count of directional intersections",
+            "unit_id": "openalex_w1553683873_v2_u04",
+            "unit_type": "winding-number-count",
+            "why_material": "A logarithmic-derivative asymptotic shows monotone accelerating rotation of Delta; integrating the winding number yields the count, with endpoint adjustment contributing only logarithmic error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first moment records the phase-dependent mean circle while the leading second moment is phase-independent, and their combination forces large values with controlled directional sign.",
+            "limit": "The full directional mean uses RH except in the purely imaginary case; large values themselves are unconditional.",
+            "parent_local_unit_ids": [
+              "openalex_w1553683873_v2_u02",
+              "openalex_w1553683873_v2_u03",
+              "openalex_w1553683873_v2_u07"
+            ],
+            "title": "Moments separate directional bias from direction-independent size"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 274,
+              "line_start": 235,
+              "reason": "Additional nonzero-intersection corollary, figure, conjectural equidistribution context, and paper roadmap."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1553683873_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1553683873_v2_u03",
+          "spontaneous_reading": "Moment information is converted into geometry and extremes: normalized first moments trace a circle of directional means, while second-moment growth forces large values on every prescribed line. The purely imaginary slice is special because its zero mean is unconditional."
+        },
+        "directed": {
+          "unit_id": "openalex_w1553683873_v2_u03",
+          "source_grounded_mathematics": "Under RH, or almost-all critical-line zeros, the mean on e^{iφ}R is e^{iφ}cosφ; for φ=π/2 the mean is unconditionally zero. The paper also states that every sufficiently large dyadic interval contains a directional value of magnitude at least (log t)^{1/2}, with both signs in the imaginary case.",
+          "conceptual_reading": "Low moments impose both a macroscopic center and a minimum scale for rare values. The circle of means visualizes positive-real bias without claiming a complete value distribution.",
+          "representation_or_bridge": "Normalization by the directional counting function turns moment sums into geometric means; comparison of second-moment mass with a uniform cap yields large-value existence.",
+          "boundary_or_failure": "Most directional mean identities are conditional. Moment bounds establish existence, not density or a distribution law, and the mean circle does not describe individual trajectories.",
+          "uncertainty": "The stated corollaries are clear; the large-value mechanism is proved later in the source and is not contained in full detail here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1553683873_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the conditional directional mean e^{i phi}cos phi, the unconditional imaginary mean zero, the circle-of-means picture, and dyadic large-value corollaries including both imaginary signs."
+        ],
+        "inference": [
+          "Reading the mean circle as positive-real bias without a distribution law is reasonable; deriving large values by comparing count and second-moment mass is plausible but the proof is outside this span."
+        ],
+        "unsupported_or_imported": [
+          "The claimed uniform-cap contradiction mechanism is imported from the later proof, not shown here, though the analysis acknowledges that fact."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Low moments impose a macroscopic center' is polished summary language; its useful content is the exact conditional mean and square-root-log existence claim."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed inequalities are legible enough at the level of hypotheses and orders, but signs and 1/2 exponents should be checked before exact quotation."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes a half-line large-value claim from the full-line mean; that orientation and the exceptional imaginary second sign should remain explicit."
+        ],
+        "revision_instructions": [
+          "Label the moment-to-large-value proof as inference from later material, keep the conditional/unconditional split, and avoid presenting existence as density or a complete distribution."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sign argument uses the nonzero first moment except in the purely imaginary case, where symmetry supplies both signs.",
+      "line_end": 720,
+      "line_start": 666,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Normalizing by the intersection count gives directional means; comparing the second moment with a hypothetical uniform cap forces square-root-log large values, and Cauchy-Schwarz bounds the number of nonzero phase intersections.",
+      "source_id": "openalex_w1553683873",
+      "source_normalized_sha256": "f7dd6883905cb1590ddb05c2a34f6f733df68027522237f2058e47abd25af42e",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Counting plus second moments force large values, while the first moment fixes their sign balance",
+      "unit_artifact_relpath": "depth/units/openalex_w1553683873_v2_u07.txt",
+      "unit_bytes": 3266,
+      "unit_id": "openalex_w1553683873_v2_u07",
+      "unit_sha256": "0958d6e04ffbc1a8b7d0a2f980eeb22e6835acd35330a7d0ef4edf2715ec81dd",
+      "unit_type": "moment-to-extreme-value-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1553683873_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1553683873",
+        "title": "On the value-distribution of the Riemann zeta-function on the critical line",
+        "authors": [
+          "Justas Kalpokas",
+          "Jörn Steuding"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 658,
+          "line_end": 665,
+          "text": "                              J2 = e−2iφ                 + O (log T )3 .\n                                                                      \u0001\n                                                 log\n                                              2π     2πe\nCollecting together, formula (6) of the theorem follows in just the same way as the\nfirst moment asymptotics. This finishes the proof of Theorem 2.\n\n\n",
+          "sha256": "06a7bdbe11fbe9129c3602184bdb59094bd6f2377ee3f335c92cf631fcad536d"
+        },
+        "after": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "\n                                         5. Gram points\n\n     The roots of the equation ∆( 12 + it) = 1 constitute the so-called Gram points tn\nwhich are usually defined by the roots of the equation ϑ(t) = πn for n ∈ N, where\n                               1\nexp(iϑ(t)) = ∆( 12 + it)− 2 . The function\n\n",
+          "sha256": "717e1d007da64dae2e0d68e3c06a1ecb31aa8451257ed8bbd88cbd417799aa57"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37cb00d2f0ac6631afe7667d551e80f37e29ff840515641be55b70a14f5e6851",
+        "dossier_sha256": "954b9d729986b1b89dc175055d0ac045454b07b4647298485e8ff3200b4fb5ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proofs of corollaries",
+            "line_end": 721,
+            "line_start": 666,
+            "mathematical_role": "Converts counting and moments into conditional means, unconditional large values, and nonzero-intersection lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 720,
+          "line_start": 666,
+          "title": "Counting plus second moments force large values, while the first moment fixes their sign balance",
+          "unit_id": "openalex_w1553683873_v2_u07",
+          "unit_type": "moment-to-extreme-value-transfer",
+          "why_material": "Normalizing by the intersection count gives directional means; comparing the second moment with a hypothetical uniform cap forces square-root-log large values, and Cauchy-Schwarz bounds the number of nonzero phase intersections."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sign argument uses the nonzero first moment except in the purely imaginary case, where symmetry supplies both signs.",
+          "representation_dependency": "Low.",
+          "unit_id": "openalex_w1553683873_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 663,
+            "line_start": 548,
+            "title": "The same contour mechanism plus the divisor problem yields the second directional moment",
+            "unit_id": "openalex_w1553683873_v2_u06",
+            "unit_type": "second-moment-extension",
+            "why_material": "Replacing zeta by the product zeta(s)zeta(1-s) preserves the contour architecture while the inner Dirichlet convolution introduces the classical divisor-sum asymptotic and its logarithmic-square main term."
+          },
+          {
+            "line_end": 797,
+            "line_start": 722,
+            "title": "Directional moment formulas translate into moment bounds for Hardy's Z at Gram points",
+            "unit_id": "openalex_w1553683873_v2_u08",
+            "unit_type": "gram-point-transfer",
+            "why_material": "The phi-zero specialization relates failures of Gram's law to negative real zeta values, recovers first and second Z moments, and uses Cauchy-Schwarz to prove a fourth-moment lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first moment records the phase-dependent mean circle while the leading second moment is phase-independent, and their combination forces large values with controlled directional sign.",
+            "limit": "The full directional mean uses RH except in the purely imaginary case; large values themselves are unconditional.",
+            "parent_local_unit_ids": [
+              "openalex_w1553683873_v2_u02",
+              "openalex_w1553683873_v2_u03",
+              "openalex_w1553683873_v2_u07"
+            ],
+            "title": "Moments separate directional bias from direction-independent size"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1553683873_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w1553683873_v2_u07",
+          "spontaneous_reading": "The corollaries are inequality transfers: count plus second moment rules out a uniformly small directional sample, first moment prevents all forced large values from having the wrong sign, and Cauchy–Schwarz compares nonzero counts with the first two moments."
+        },
+        "directed": {
+          "unit_id": "openalex_w1553683873_v2_u07",
+          "source_grounded_mathematics": "On (T,2T], NφΔ is asymptotic to T log T while the sum of squared directional values is asymptotic to T(log T)^2. A hypothetical bound below the square-root-log scale contradicts these orders. Formula (5) supplies sign information except in the imaginary case, where symmetry and the zero-mean estimate supply both signs. Cauchy–Schwarz gives a count bound.",
+          "conceptual_reading": "Aggregate mass and sample size force an extreme value; a separate signed statistic is needed to orient that extreme. This cleanly separates magnitude forcing from sign forcing.",
+          "representation_or_bridge": "Moment inequalities bridge average information to pointwise existence and to lower bounds on the number of nonzero intersections.",
+          "boundary_or_failure": "The argument proves existence in dyadic intervals, not a sharp maximum or frequency. The sign step differs in the purely imaginary case because the first main term vanishes.",
+          "uncertainty": "The proof is explicit and low-risk; the exact statement of Corollary 5 is outside the retained span, though its Cauchy–Schwarz mechanism is present."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1553683873_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly compares T log T sample size with T(log T)^2 second-moment mass, uses the first moment for orientation, treats the imaginary case separately, and applies Cauchy-Schwarz for the next corollary."
+        ],
+        "inference": [
+          "Separating magnitude forcing from sign forcing is a sound conceptual reading of the two statistics."
+        ],
+        "unsupported_or_imported": [
+          "The analysis says symmetry supplies both imaginary signs, but this proof span attributes the step to the zero-mean estimate (15) together with the moment argument, not to a separate symmetry argument."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'moment inequalities bridge average information' sentence is generic unless retained with the exact dyadic orders and distinct sign step."
+        ],
+        "context_or_ocr_risk": [
+          "The exact statement of Corollary 5 is outside the unit, so only its displayed Cauchy-Schwarz mechanism is source-bounded here."
+        ],
+        "missed_mechanism": [
+          "The imaginary case needs the vanishing first moment plus nontrivial second-moment mass; it should not be collapsed into an unexplained symmetry appeal."
+        ],
+        "revision_instructions": [
+          "Remove the unsupported symmetry attribution, state that the source invokes (15) in the imaginary case, and keep Corollary 5's conclusion provisional because its statement lies outside the span."
+        ]
+      }
+    }
+  ]
+}

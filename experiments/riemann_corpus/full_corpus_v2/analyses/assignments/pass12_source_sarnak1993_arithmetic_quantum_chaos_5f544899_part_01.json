@@ -1,0 +1,3064 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_sarnak1993_arithmetic_quantum_chaos_5f544899_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "sarnak1993_arithmetic_quantum_chaos",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Hamiltonian, Laplace-Beltrami quantization, stationary states, and the correspondence question; lines 11-25 supply only lecture-level motivation.",
+      "line_end": 72,
+      "line_start": 27,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core meaning is recoverable from prose; displayed metric and operator formulas are OCR-degraded and should be checked against the scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies quantum chaos as the semiclassical study of a quantized chaotic Hamiltonian and, for geodesic flow, turns the limit of Planck scale into the high-Laplacian-eigenvalue limit. This is the source's governing representation change between dynamics and spectral geometry.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Semiclassical geodesic dictionary",
+      "unit_artifact_relpath": "depth/units/r110_u001.txt",
+      "unit_bytes": 1912,
+      "unit_id": "r110_u001",
+      "unit_sha256": "d8c7b81dc7d6e3cc57f241cc3b4de917997c44029325e1660ee3bc5858ad68df",
+      "unit_type": "framing-and-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u001.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 19,
+          "line_end": 26,
+          "text": "issues. It turns out that some of these key issues are intimately connected with\nwell known problems in the analytic theory of L-functions. In much of theoretical\nphysics the theory revolves around certain well understood examples (harmonic os-\ncillator, hydrogen atom...). With time as more is established about the spectra of\narithmetic hyperbolic manifolds we hope that they become central models for Q.C.\nThe new results (see Section 3) described in these lectures have been obtained in\nseparate collaborations with H. Iwaniec, W. Luo and Z. Rudnick.\n\n",
+          "sha256": "42d4578ad242137cdbebc4de86c5e65657b158e03500c740ff23587c530e775e"
+        },
+        "after": {
+          "line_start": 73,
+          "line_end": 80,
+          "text": "\nIf the classical flow is completely integrable (see [A-A] for definitions) then the\nh — 0 limit for eigenvalues and eigenfunctions is quite well understood, see Colin-\nde-Verdiere [CDi]. In this case the quantization condition was given by Bohr-\nSommerfeld and Einstein. If p,q are generalized coordinates, H(p,q) the Hamil-\n\ntonian and T an invariant torus for the full set of integrals of the motion then the\n\n",
+          "sha256": "e9b23941cceb0379711423edbfa841eab68c46eedfb4325cb12a336e30e9fa12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 72,
+          "line_start": 27,
+          "title": "Semiclassical geodesic dictionary",
+          "unit_id": "r110_u001",
+          "unit_type": "framing-and-representation-change",
+          "why_material": "Identifies quantum chaos as the semiclassical study of a quantized chaotic Hamiltonian and, for geodesic flow, turns the limit of Planck scale into the high-Laplacian-eigenvalue limit. This is the source's governing representation change between dynamics and spectral geometry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Hamiltonian, Laplace-Beltrami quantization, stationary states, and the correspondence question; lines 11-25 supply only lecture-level motivation.",
+          "representation_dependency": "Core meaning is recoverable from prose; displayed metric and operator formulas are OCR-degraded and should be checked against the scan before formula-level reuse.",
+          "unit_id": "r110_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 131,
+            "line_start": 74,
+            "title": "Integrable torus quantization produces localized quasimodes",
+            "unit_id": "r110_u002",
+            "unit_type": "construction-and-example",
+            "why_material": "Explains how invariant tori yield quantization conditions and quasimodes localized on the torus, then makes the mechanism geometric through the whispering-gallery example. It gives the comparison class against which chaotic localization is judged."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 26,
+              "line_start": 9,
+              "reason": "Section heading, audience, motivation, collaborators, and lecture roadmap."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The ellipse example supplies the invariant-caustic picture and physical projection of phase-space localization.",
+      "line_end": 131,
+      "line_start": 74,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual chain is prose-safe; the Bohr-Sommerfeld and action-variable formulas and figure details require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how invariant tori yield quantization conditions and quasimodes localized on the torus, then makes the mechanism geometric through the whispering-gallery example. It gives the comparison class against which chaotic localization is judged.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrable torus quantization produces localized quasimodes",
+      "unit_artifact_relpath": "depth/units/r110_u002.txt",
+      "unit_bytes": 2295,
+      "unit_id": "r110_u002",
+      "unit_sha256": "d3a8c768ac85a43186911200808188fee054c947e1e8b63f44bad0db3ee129de",
+      "unit_type": "construction-and-example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u002.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 66,
+          "line_end": 73,
+          "text": "\nIt is well known that the eigenvalues 0 = Ay < Ai < Az... are discrete and that the\n1bx’s can be chosen to be an orthonormal basis (0.n.b.). From (1.4) we see that for\nthe geodesic flow the semi-classical limit fi — 0 is in this case the same as the large\neigenvalue limit 4, — co. Hence the basic problem in this case is to understand the\nbehavior of \\; and %, as k — oo and especially their relation to the geodesic flow\n(correspondence principle). It is this form of the problem that we will examine.\n\n",
+          "sha256": "3453bb084e7b01c0de6e0b7d577419d4abfd0c49b33cf173fbc1d7d3917324d0"
+        },
+        "after": {
+          "line_start": 132,
+          "line_end": 139,
+          "text": "\nIt was recognized early on (see Einstein [EI]) that if H is not integrable then such\nquantization conditions (as fh — 0) are not available and perhaps do not exist. This\nin fact was the key stumbling block of the old quantum theory [PA, Chapter 10].\nThis applies especially if the classical mechanics is chaotic. For the case at hand\nviz the geodesic flow on T*(X) it is well known [SI1, A-A] that if X has negative\n\nsectional curvature then the classical flow is ergodic, Anosov... and in particular\n",
+          "sha256": "a367d634323e81a51163f956ab5d47efb10e30fb2ec715771bb5e36c81d873c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 131,
+          "line_start": 74,
+          "title": "Integrable torus quantization produces localized quasimodes",
+          "unit_id": "r110_u002",
+          "unit_type": "construction-and-example",
+          "why_material": "Explains how invariant tori yield quantization conditions and quasimodes localized on the torus, then makes the mechanism geometric through the whispering-gallery example. It gives the comparison class against which chaotic localization is judged."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The ellipse example supplies the invariant-caustic picture and physical projection of phase-space localization.",
+          "representation_dependency": "The conceptual chain is prose-safe; the Bohr-Sommerfeld and action-variable formulas and figure details require scan verification.",
+          "unit_id": "r110_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 72,
+            "line_start": 27,
+            "title": "Semiclassical geodesic dictionary",
+            "unit_id": "r110_u001",
+            "unit_type": "framing-and-representation-change",
+            "why_material": "Identifies quantum chaos as the semiclassical study of a quantized chaotic Hamiltonian and, for geodesic flow, turns the limit of Planck scale into the high-Laplacian-eigenvalue limit. This is the source's governing representation change between dynamics and spectral geometry."
+          },
+          {
+            "line_end": 182,
+            "line_start": 133,
+            "title": "Stable periodic orbits organize spectrum; unstable ones pose the chaos problem",
+            "unit_id": "r110_u003",
+            "unit_type": "method-comparison-and-obstruction",
+            "why_material": "Contrasts the failure of integrable quantization in chaotic negative curvature with the strong spectral and quasimode influence of a stable closed geodesic. The unresolved influence of unstable periodic orbits is isolated as a central quantum-chaos obstruction."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the stable-orbit theorem, its Weyl-law scale, and singular limiting measure, which together make the contrast operational rather than rhetorical.",
+      "line_end": 182,
+      "line_start": 133,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The stable-versus-unstable conclusion is clear in prose; theorem asymptotics and constants are formula-sensitive OCR.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the failure of integrable quantization in chaotic negative curvature with the strong spectral and quasimode influence of a stable closed geodesic. The unresolved influence of unstable periodic orbits is isolated as a central quantum-chaos obstruction.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stable periodic orbits organize spectrum; unstable ones pose the chaos problem",
+      "unit_artifact_relpath": "depth/units/r110_u003.txt",
+      "unit_bytes": 2230,
+      "unit_id": "r110_u003",
+      "unit_sha256": "788f9d37ae28188c6d4ba2e8f8ff376e8612edbda351701c5b9e66bb854a524c",
+      "unit_type": "method-comparison-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u003.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 125,
+          "line_end": 132,
+          "text": "° z—\n\nne = Fens Jeo ken sr '5in406 with eigenvalue 15 = 65.012,\nThe existence of such localized modes near the boundary of a smooth convex region\nexplains the whispering gallery effect: that sonorous vibrations have a tendency\nto cling to the boundary of a convex surface. For details see Rayleigh [RAY] and\nKeller-Rubinow [K-R].\n\n",
+          "sha256": "754875aa6ce0147b4d0d876dc0e706d5323ff1e1b0ff95905b7b93a5da0945d0"
+        },
+        "after": {
+          "line_start": 183,
+          "line_end": 190,
+          "text": "\n<!-- source-page: 6 -->\n\n6 Sarnak\n\nIn general we may define probability densities as in (1.8) with , replacing um.\nWe denote by py; the corresponding probability measure on X. The quantum me-\nchanical interpretation that ; is the probability density of a particle in the state\n",
+          "sha256": "10513f25c6cc172be6c6c3249259f71125ef1208ab4058c9707d7e81e89c5654"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 182,
+          "line_start": 133,
+          "title": "Stable periodic orbits organize spectrum; unstable ones pose the chaos problem",
+          "unit_id": "r110_u003",
+          "unit_type": "method-comparison-and-obstruction",
+          "why_material": "Contrasts the failure of integrable quantization in chaotic negative curvature with the strong spectral and quasimode influence of a stable closed geodesic. The unresolved influence of unstable periodic orbits is isolated as a central quantum-chaos obstruction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the stable-orbit theorem, its Weyl-law scale, and singular limiting measure, which together make the contrast operational rather than rhetorical.",
+          "representation_dependency": "The stable-versus-unstable conclusion is clear in prose; theorem asymptotics and constants are formula-sensitive OCR.",
+          "unit_id": "r110_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 131,
+            "line_start": 74,
+            "title": "Integrable torus quantization produces localized quasimodes",
+            "unit_id": "r110_u002",
+            "unit_type": "construction-and-example",
+            "why_material": "Explains how invariant tori yield quantization conditions and quasimodes localized on the torus, then makes the mechanism geometric through the whispering-gallery example. It gives the comparison class against which chaotic localization is judged."
+          },
+          {
+            "line_end": 230,
+            "line_start": 188,
+            "title": "Quantum ergodicity constrains most states but leaves exceptional quantum limits",
+            "unit_id": "r110_u004",
+            "unit_type": "theorem-and-open-problem",
+            "why_material": "Defines eigenfunction probability measures and quantum limits, states full-density equidistribution, and records geodesic-flow invariance of any limit. It sharply separates an almost-everywhere theorem from the unresolved possibility of exceptional localization or scarring."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 187,
+              "line_start": 183,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The phase-space strengthening and examples of invariant singular measures are needed to understand what quantum ergodicity does not exclude.",
+      "line_end": 230,
+      "line_start": 188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The measure-theoretic content is recoverable from prose; notation in the displayed convergence and projection identity should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines eigenfunction probability measures and quantum limits, states full-density equidistribution, and records geodesic-flow invariance of any limit. It sharply separates an almost-everywhere theorem from the unresolved possibility of exceptional localization or scarring.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantum ergodicity constrains most states but leaves exceptional quantum limits",
+      "unit_artifact_relpath": "depth/units/r110_u004.txt",
+      "unit_bytes": 2012,
+      "unit_id": "r110_u004",
+      "unit_sha256": "c37dbddc2b20e6f6944d9a8beb06c233a7a652f249ae2b2da2b93fdd8d8ab656",
+      "unit_type": "theorem-and-open-problem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u004.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "negative, then its influence on the spectrum (even as h > 0) is unclear. This is one\n\nof the central problems of Q.C.\n\n<!-- source-page: 6 -->\n\n6 Sarnak\n\n",
+          "sha256": "14e1cd67a881e527d07cf5ad369f62f7abab811af50a39a291f9cc733c29d6d0"
+        },
+        "after": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "\nThe central question then in the chaotic case is whether individiual eigenfunctions\nlocalize or scar or show any relation to the classical dynamics or do they as has been\nsuggested by Berry [B1] behave like random waves. See Heller [HEL2] and Berry\n[B1] for discussions on the models for random waves. As a test of the random wave\nmodel note that the analogue of the central limit theorem [S-Z] would require that\nthe distribution function of the v,’s tend to a Gaussian. Also the analogue of the\nLaw of the Iterated Logarithm [S-Z] would require that\n",
+          "sha256": "4a228013b009882c8490f70c6c9299a254ae02ef20c8b0781e75bdfb64651ab7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 230,
+          "line_start": 188,
+          "title": "Quantum ergodicity constrains most states but leaves exceptional quantum limits",
+          "unit_id": "r110_u004",
+          "unit_type": "theorem-and-open-problem",
+          "why_material": "Defines eigenfunction probability measures and quantum limits, states full-density equidistribution, and records geodesic-flow invariance of any limit. It sharply separates an almost-everywhere theorem from the unresolved possibility of exceptional localization or scarring."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The phase-space strengthening and examples of invariant singular measures are needed to understand what quantum ergodicity does not exclude.",
+          "representation_dependency": "The measure-theoretic content is recoverable from prose; notation in the displayed convergence and projection identity should be scan-checked.",
+          "unit_id": "r110_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 182,
+            "line_start": 133,
+            "title": "Stable periodic orbits organize spectrum; unstable ones pose the chaos problem",
+            "unit_id": "r110_u003",
+            "unit_type": "method-comparison-and-obstruction",
+            "why_material": "Contrasts the failure of integrable quantization in chaotic negative curvature with the strong spectral and quasimode influence of a stable closed geodesic. The unresolved influence of unstable periodic orbits is isolated as a central quantum-chaos obstruction."
+          },
+          {
+            "line_end": 242,
+            "line_start": 232,
+            "title": "Random-wave behavior yields Gaussian and extreme-value diagnostics",
+            "unit_id": "r110_u005",
+            "unit_type": "prediction-and-falsification",
+            "why_material": "Turns the random-wave proposal for individual chaotic eigenfunctions into falsifiable distributional and sup-norm expectations rather than leaving it as a visual analogy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The progression from full-density quantum ergodicity to exclusion of geodesic singular supports and finally individual equidistribution uses two complementary arithmetic routes: nonlocal correspondence separation and subconvex control of Rankin-Selberg periods.",
+            "limit": "The no-scarring theorem is restricted to Hecke arithmetic settings, while full QUE remains conjectural in this source.",
+            "parent_local_unit_ids": [
+              "r110_u004",
+              "r110_u019",
+              "r110_u032",
+              "r110_u035"
+            ],
+            "title": "Quantum unique ergodicity as a correspondence-to-subconvexity program"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 187,
+              "line_start": 183,
+              "reason": "Page boundary and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit follows the exceptional-limit gap and motivates the later numerical and norm investigations.",
+      "line_end": 242,
+      "line_start": 232,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gaussian prediction is prose-safe; the iterated-logarithm-style displayed asymptotic is OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the random-wave proposal for individual chaotic eigenfunctions into falsifiable distributional and sup-norm expectations rather than leaving it as a visual analogy.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random-wave behavior yields Gaussian and extreme-value diagnostics",
+      "unit_artifact_relpath": "depth/units/r110_u005.txt",
+      "unit_bytes": 665,
+      "unit_id": "r110_u005",
+      "unit_sha256": "701fbf269c906e4ca69d92ab975c7afa2093f92e61930d3f2356571f6a3ba99c",
+      "unit_type": "prediction-and-falsification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u005.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 224,
+          "line_end": 231,
+          "text": "<!-- source-page: 7 -->\n\nArithmetic Quantum Chaos 7\n\nmanifold a closed geodesic can be the support of a quantum limit is not answered\nby Theorem 1.2. This question has been raised by Colin-de-Verdiere on a number of\noccasions [CD2-CD3]. It is closely related to scarring which will be defined below.\n\n",
+          "sha256": "0435406e51313226d0c217b98b5dd00136fa787015e52a4ca3cdd3f287512290"
+        },
+        "after": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "presenting the numerical experiments. We turn now to the fine structure of the\ndistribution of the eigenvalues. Assume n = 2 and Weyl’s Law is normalized to\nread\n\nN(D):=#{5|AVST}~T. (1.11)\n\nSo on average the eigenvalues occur with unit spacing. In Figure 1.3 some examples\nof 50 such spectral lines (high in the spectrum) are given. The Figure except for\n",
+          "sha256": "2798dcca0c0d50a8df0351735b5fe677b5e9a50e957fc01d536a2d27bdae3866"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 242,
+          "line_start": 232,
+          "title": "Random-wave behavior yields Gaussian and extreme-value diagnostics",
+          "unit_id": "r110_u005",
+          "unit_type": "prediction-and-falsification",
+          "why_material": "Turns the random-wave proposal for individual chaotic eigenfunctions into falsifiable distributional and sup-norm expectations rather than leaving it as a visual analogy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit follows the exceptional-limit gap and motivates the later numerical and norm investigations.",
+          "representation_dependency": "Gaussian prediction is prose-safe; the iterated-logarithm-style displayed asymptotic is OCR-sensitive.",
+          "unit_id": "r110_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 188,
+            "title": "Quantum ergodicity constrains most states but leaves exceptional quantum limits",
+            "unit_id": "r110_u004",
+            "unit_type": "theorem-and-open-problem",
+            "why_material": "Defines eigenfunction probability measures and quantum limits, states full-density equidistribution, and records geodesic-flow invariance of any limit. It sharply separates an almost-everywhere theorem from the unresolved possibility of exceptional localization or scarring."
+          },
+          {
+            "line_end": 348,
+            "line_start": 243,
+            "title": "Number variance separates Poisson from random-matrix rigidity",
+            "unit_id": "r110_u006",
+            "unit_type": "statistic-and-model-comparison",
+            "why_material": "Defines a local spectral statistic and compares its scale under Poisson, Gaussian orthogonal, and Gaussian unitary models. It supplies the quantitative language of clustering versus rigidity used throughout the source."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes rescaling to unit mean spacing, ensemble invariance, and the contrast between linear and logarithmic growth of variance.",
+      "line_end": 348,
+      "line_start": 243,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Model roles and growth contrast are clear; exact normalizations, ensemble density, and asymptotic constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a local spectral statistic and compares its scale under Poisson, Gaussian orthogonal, and Gaussian unitary models. It supplies the quantitative language of clustering versus rigidity used throughout the source.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Number variance separates Poisson from random-matrix rigidity",
+      "unit_artifact_relpath": "depth/units/r110_u006.txt",
+      "unit_bytes": 3614,
+      "unit_id": "r110_u006",
+      "unit_sha256": "1f742fb7a0fb8576c42cc55ce1c392e2efc8cbb118460aa1959c204c93891cb7",
+      "unit_type": "statistic-and-model-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u006.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "[B1] for discussions on the models for random waves. As a test of the random wave\nmodel note that the analogue of the central limit theorem [S-Z] would require that\nthe distribution function of the v,’s tend to a Gaussian. Also the analogue of the\nLaw of the Iterated Logarithm [S-Z] would require that\n\nIIPElloo © Vlog Ax - (1.10)\n\nWe will look again at questions concerning the behavior of eigenfunctions after\n",
+          "sha256": "3b8929e34c82453f145ace159ce2a16135a0f59b784deffb466d6b2ebbf89346"
+        },
+        "after": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "\n<!-- source-page: 10 -->\n\n10 Sarnak\n\nAfter Wigner, Dyson, Mehta, Bohigas, Berry, Tabor and others it is now believed\nthat for integrable systems the eigenvalues follow the Poisson behavior while for\nchaotic systems they follow the GOE distribution. Put another way the spectrum\n",
+          "sha256": "ddd6c8d9f695099090af388899d70d5a999d66f928416263bdea3d6ccf8ffcb7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 348,
+          "line_start": 243,
+          "title": "Number variance separates Poisson from random-matrix rigidity",
+          "unit_id": "r110_u006",
+          "unit_type": "statistic-and-model-comparison",
+          "why_material": "Defines a local spectral statistic and compares its scale under Poisson, Gaussian orthogonal, and Gaussian unitary models. It supplies the quantitative language of clustering versus rigidity used throughout the source."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes rescaling to unit mean spacing, ensemble invariance, and the contrast between linear and logarithmic growth of variance.",
+          "representation_dependency": "Model roles and growth contrast are clear; exact normalizations, ensemble density, and asymptotic constants require scan verification.",
+          "unit_id": "r110_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 242,
+            "line_start": 232,
+            "title": "Random-wave behavior yields Gaussian and extreme-value diagnostics",
+            "unit_id": "r110_u005",
+            "unit_type": "prediction-and-falsification",
+            "why_material": "Turns the random-wave proposal for individual chaotic eigenfunctions into falsifiable distributional and sup-norm expectations rather than leaving it as a visual analogy."
+          },
+          {
+            "line_end": 376,
+            "line_start": 354,
+            "title": "Universal statistics have a finite spectral window",
+            "unit_id": "r110_u007",
+            "unit_type": "scale-separation",
+            "why_material": "Records the integrable-Poisson and chaotic-GOE heuristic only within a universal range, beyond which system-specific periodic-orbit oscillations take over. This guards against treating random-matrix behavior as scale-free."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source assumes two dimensions for the stated crossover scale and flags analogous rigidity conjectures.",
+      "line_end": 376,
+      "line_start": 354,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scale distinction is prose-safe; the exact OCR rendering of the upper crossover scale should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the integrable-Poisson and chaotic-GOE heuristic only within a universal range, beyond which system-specific periodic-orbit oscillations take over. This guards against treating random-matrix behavior as scale-free.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universal statistics have a finite spectral window",
+      "unit_artifact_relpath": "depth/units/r110_u007.txt",
+      "unit_bytes": 842,
+      "unit_id": "r110_u007",
+      "unit_sha256": "94747f13bd50c682ed8889c6621697a70452171096739a7312cd1ae5985565af",
+      "unit_type": "scale-separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u007.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 346,
+          "line_end": 353,
+          "text": "and (iii) than it is for (i). We express this by saying that the spectrum in (ii) and\n\n(iii) is rigid.\n\n<!-- source-page: 10 -->\n\n10 Sarnak\n\n",
+          "sha256": "6473f32b563d44047c566b052f1f184fb67008c787c6bd387e2ca00623b27333"
+        },
+        "after": {
+          "line_start": 377,
+          "line_end": 384,
+          "text": "\nThis completes our discussion of general background, we turn now to numerical\nexperiments on the behaviors of eigenfunctions and eigenvalues of chaotic systems.\nIn Section 3 we describe results concerning the eigenvalues and eigenfunctions of\narithmetic hyperbolic manifolds. In Section 4 we review the theory of L-functions\n\nand relate them to the problems of Q.C. In Section 5 we outline some proofs.\n\n",
+          "sha256": "8e57bdafb6d849c19b5f32051ffa77790c03995b4920c10c0b705da4c8a44b3b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 1. Background",
+            "line_end": 384,
+            "line_start": 9,
+            "mathematical_role": "Sets the semiclassical geodesic model, contrasts integrable localization with chaotic quantum limits, and introduces random-wave and spectral-statistics diagnostics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 376,
+          "line_start": 354,
+          "title": "Universal statistics have a finite spectral window",
+          "unit_id": "r110_u007",
+          "unit_type": "scale-separation",
+          "why_material": "Records the integrable-Poisson and chaotic-GOE heuristic only within a universal range, beyond which system-specific periodic-orbit oscillations take over. This guards against treating random-matrix behavior as scale-free."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source assumes two dimensions for the stated crossover scale and flags analogous rigidity conjectures.",
+          "representation_dependency": "The scale distinction is prose-safe; the exact OCR rendering of the upper crossover scale should be verified.",
+          "unit_id": "r110_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 348,
+            "line_start": 243,
+            "title": "Number variance separates Poisson from random-matrix rigidity",
+            "unit_id": "r110_u006",
+            "unit_type": "statistic-and-model-comparison",
+            "why_material": "Defines a local spectral statistic and compares its scale under Poisson, Gaussian orthogonal, and Gaussian unitary models. It supplies the quantitative language of clustering versus rigidity used throughout the source."
+          },
+          {
+            "line_end": 444,
+            "line_start": 398,
+            "title": "Stadium dynamics separates visual scars from persistent strong scarring",
+            "unit_id": "r110_u008",
+            "unit_type": "example-definition-and-distinction",
+            "why_material": "The stadium combines global ergodicity with measure-zero bouncing-ball families that influence the spectrum. The source then distinguishes finite-energy enhancement near unstable orbits from strong scarring defined through singular support of a limiting measure."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 397,
+              "line_start": 377,
+              "reason": "Background wrap-up, section roadmap, page transition, and numerical-report preface."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The boundary extension of quantum ergodicity makes clear that exceptional-looking modes coexist with almost-all equidistribution.",
+      "line_end": 444,
+      "line_start": 398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions and distinctions are prose-recoverable; visual claims depend on omitted figures and should not be used without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The stadium combines global ergodicity with measure-zero bouncing-ball families that influence the spectrum. The source then distinguishes finite-energy enhancement near unstable orbits from strong scarring defined through singular support of a limiting measure.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stadium dynamics separates visual scars from persistent strong scarring",
+      "unit_artifact_relpath": "depth/units/r110_u008.txt",
+      "unit_bytes": 2032,
+      "unit_id": "r110_u008",
+      "unit_sha256": "868fc4f6b503cfdc3cd28f0db0908bc1bcbca42b86d114595cc684a08b78496a",
+      "unit_type": "example-definition-and-distinction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u008.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 390,
+          "line_end": 397,
+          "text": "\nOur report on numerical experiments concerning the spectra of chaotic systems\nhave been done by various groups: Heller, Bohigas Schmit, Steiner Aurich Steil,\nHejhal and Rackner. They have used different methods to compute the eigenvalues\nand eigenfunctions. Indeed ingeneous methods are needed in order to compute such\nlarge eigenvalues for these problems. The reader should consult the original articles\ncited below for details.\n\n",
+          "sha256": "edef405c37205bce8e0a7a001794b5eb074424876e4bfb52843118060a85a12c"
+        },
+        "after": {
+          "line_start": 445,
+          "line_end": 452,
+          "text": "\n<!-- source-page: 13 -->\n\nArithmetic Quantum Chaos 13\n\nFigure 2.3. Density plot of |@(z)|? for eigenstates of the stadium (Black signifies\nhigh density) for eigenvalues V/A = k, where going from top to bottom, k = 110.389,\n119.413, 119.417, 119.451, 119.499, 119.512, 119.512, 119.525, 119.547, 119.587,\n",
+          "sha256": "a892c4ed1dd6b3945202d06ae0752a4dbe4d79f02df8b36ebd661f619237d898"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.1. The Stadium",
+            "line_end": 469,
+            "line_start": 385,
+            "mathematical_role": "Uses a chaotic billiard with bouncing-ball families to distinguish finite-energy visual scarring from persistent strong scarring."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 444,
+          "line_start": 398,
+          "title": "Stadium dynamics separates visual scars from persistent strong scarring",
+          "unit_id": "r110_u008",
+          "unit_type": "example-definition-and-distinction",
+          "why_material": "The stadium combines global ergodicity with measure-zero bouncing-ball families that influence the spectrum. The source then distinguishes finite-energy enhancement near unstable orbits from strong scarring defined through singular support of a limiting measure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The boundary extension of quantum ergodicity makes clear that exceptional-looking modes coexist with almost-all equidistribution.",
+          "representation_dependency": "Definitions and distinctions are prose-recoverable; visual claims depend on omitted figures and should not be used without the scan.",
+          "unit_id": "r110_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 376,
+            "line_start": 354,
+            "title": "Universal statistics have a finite spectral window",
+            "unit_id": "r110_u007",
+            "unit_type": "scale-separation",
+            "why_material": "Records the integrable-Poisson and chaotic-GOE heuristic only within a universal range, beyond which system-specific periodic-orbit oscillations take over. This guards against treating random-matrix behavior as scale-free."
+          },
+          {
+            "line_end": 490,
+            "line_start": 470,
+            "title": "Hyperbolic quotients provide controlled chaotic models",
+            "unit_id": "r110_u009",
+            "unit_type": "construction-and-classification",
+            "why_material": "Realizes constant-negative-curvature systems as discrete-group quotients in upper-half-plane or disk models and introduces compact/orbifold and Hecke-triangle examples. This is the geometric substrate for the later arithmetic/nonarithmetic comparison."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 397,
+              "line_start": 377,
+              "reason": "Background wrap-up, section roadmap, page transition, and numerical-report preface."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 469,
+              "line_start": 445,
+              "reason": "Figure pages and captions whose mathematical evidence is primarily visual and unavailable safely from OCR alone."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The fundamental-domain descriptions are enough for role identification; the figures are not needed for the abstract quotient construction.",
+      "line_end": 490,
+      "line_start": 470,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Quotient meaning is prose-safe; group generators, angle notation, and figure geometry are OCR/scan dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Realizes constant-negative-curvature systems as discrete-group quotients in upper-half-plane or disk models and introduces compact/orbifold and Hecke-triangle examples. This is the geometric substrate for the later arithmetic/nonarithmetic comparison.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hyperbolic quotients provide controlled chaotic models",
+      "unit_artifact_relpath": "depth/units/r110_u009.txt",
+      "unit_bytes": 1255,
+      "unit_id": "r110_u009",
+      "unit_sha256": "3764a11fa516506984f52ea4b207e800a318964b0f4793e05c6a0ea1aa877a78",
+      "unit_type": "construction-and-classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u009.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 462,
+          "line_end": 469,
+          "text": "\nunstable periodic orbits corresponding to the scars.\n\n<!-- source-page: 15 -->\n\nArithmetic Quantum Chaos 15\n\nFigure 2.5\n",
+          "sha256": "e0d5a271e78b72f06654cc1b9c5cbaefa71ea9e6b46f09618ac69b8ecd98e450"
+        },
+        "after": {
+          "line_start": 491,
+          "line_end": 498,
+          "text": "\nAurich and Steiner [A-S] have computed the eigenstates for the group whose\nfundamental domain in U is the octagon in Figure 2.8. With the sides identified\nas indicated X = I'\\H? is a genus 2 hyperbolic surface. Figures 2.9, 2.10, and 2.11\n\ngive plots of the density |¢;(z)|? for states with the energy indicated. They found\n\n<!-- source-page: 16 -->\n",
+          "sha256": "bf03342d8ef2e3e569c10503a941e9e51bfd17eb8ec1af6c316a952739f11fe5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.2. Hyperbolic Surfaces",
+            "line_end": 703,
+            "line_start": 470,
+            "mathematical_role": "Introduces hyperbolic quotient models and numerical evidence for Gaussian, nonlocalized eigenfunctions on compact and modular examples."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 490,
+          "line_start": 470,
+          "title": "Hyperbolic quotients provide controlled chaotic models",
+          "unit_id": "r110_u009",
+          "unit_type": "construction-and-classification",
+          "why_material": "Realizes constant-negative-curvature systems as discrete-group quotients in upper-half-plane or disk models and introduces compact/orbifold and Hecke-triangle examples. This is the geometric substrate for the later arithmetic/nonarithmetic comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The fundamental-domain descriptions are enough for role identification; the figures are not needed for the abstract quotient construction.",
+          "representation_dependency": "Quotient meaning is prose-safe; group generators, angle notation, and figure geometry are OCR/scan dependent.",
+          "unit_id": "r110_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 444,
+            "line_start": 398,
+            "title": "Stadium dynamics separates visual scars from persistent strong scarring",
+            "unit_id": "r110_u008",
+            "unit_type": "example-definition-and-distinction",
+            "why_material": "The stadium combines global ergodicity with measure-zero bouncing-ball families that influence the spectrum. The source then distinguishes finite-energy enhancement near unstable orbits from strong scarring defined through singular support of a limiting measure."
+          },
+          {
+            "line_end": 539,
+            "line_start": 492,
+            "title": "Compact and modular hyperbolic spectra test the random-wave picture",
+            "unit_id": "r110_u010",
+            "unit_type": "computational-evidence-and-representation-split",
+            "why_material": "Reports nonlocalized, approximately Gaussian eigenstates on a compact hyperbolic surface, then distinguishes the modular surface's continuous Eisenstein spectrum from its embedded discrete cusp forms. The same chaotic geometry thus supports different spectral representations that must not be conflated."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 469,
+              "line_start": 445,
+              "reason": "Figure pages and captions whose mathematical evidence is primarily visual and unavailable safely from OCR alone."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Figure evidence is summarized only at the level asserted by the checked prose; modular cusp-form plots continue after an extraction-heavy interval.",
+      "line_end": 539,
+      "line_start": 492,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Qualitative conclusions are prose-grounded; plots and numerical thresholds require original-scan inspection.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports nonlocalized, approximately Gaussian eigenstates on a compact hyperbolic surface, then distinguishes the modular surface's continuous Eisenstein spectrum from its embedded discrete cusp forms. The same chaotic geometry thus supports different spectral representations that must not be conflated.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compact and modular hyperbolic spectra test the random-wave picture",
+      "unit_artifact_relpath": "depth/units/r110_u010.txt",
+      "unit_bytes": 1319,
+      "unit_id": "r110_u010",
+      "unit_sha256": "d7979f948aaed16510ffd30fb901afef4435a6c624bf4d9afc75902ccf668169",
+      "unit_type": "computational-evidence-and-representation-split",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u010.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\nR,, Ro, R3 as shown, is discrete. It has the Hecke group I, generated by es z\n\n0 1\nmodular group SL2(Z) and is of special interest. Note that I, \\H? is not compact.\n\naaa E a, as an index two subgroup. The case m = 3 is the classical\n\n",
+          "sha256": "9ff392885ec822b8a97bb0d515db889dfbe77407492b41eaa4bbc098d723cf87"
+        },
+        "after": {
+          "line_start": 540,
+          "line_end": 547,
+          "text": "as they are called in this setting). Figures 2.13 shows the nodal lines for the cusp\nform with r = Yr—1/4 = 125.13840. Figures 2.14 and 2.15 give density plots\n\n<!-- source-page: 18 -->\n\n18 Sarnak\n\nFigure 2.9. The intensity %,(z)? of the eigenstate at energy \\ = 2000.695 is shown\n",
+          "sha256": "c025c3c63bb53baf8482f97ee678e0677994e4d2fae60434c9a715d021a6dbe2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.2. Hyperbolic Surfaces",
+            "line_end": 703,
+            "line_start": 470,
+            "mathematical_role": "Introduces hyperbolic quotient models and numerical evidence for Gaussian, nonlocalized eigenfunctions on compact and modular examples."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 539,
+          "line_start": 492,
+          "title": "Compact and modular hyperbolic spectra test the random-wave picture",
+          "unit_id": "r110_u010",
+          "unit_type": "computational-evidence-and-representation-split",
+          "why_material": "Reports nonlocalized, approximately Gaussian eigenstates on a compact hyperbolic surface, then distinguishes the modular surface's continuous Eisenstein spectrum from its embedded discrete cusp forms. The same chaotic geometry thus supports different spectral representations that must not be conflated."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Figure evidence is summarized only at the level asserted by the checked prose; modular cusp-form plots continue after an extraction-heavy interval.",
+          "representation_dependency": "Qualitative conclusions are prose-grounded; plots and numerical thresholds require original-scan inspection.",
+          "unit_id": "r110_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 490,
+            "line_start": 470,
+            "title": "Hyperbolic quotients provide controlled chaotic models",
+            "unit_id": "r110_u009",
+            "unit_type": "construction-and-classification",
+            "why_material": "Realizes constant-negative-curvature systems as discrete-group quotients in upper-half-plane or disk models and introduces compact/orbifold and Hecke-triangle examples. This is the geometric substrate for the later arithmetic/nonarithmetic comparison."
+          },
+          {
+            "line_end": 702,
+            "line_start": 692,
+            "title": "Modular cusp forms motivate a Gaussian distribution conjecture",
+            "unit_id": "r110_u011",
+            "unit_type": "conjecture-from-computation",
+            "why_material": "Converts repeated numerical observations of no localization and Gaussian amplitude behavior into a limiting distribution conjecture for modular eigenfunctions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 691,
+              "line_start": 540,
+              "reason": "Plot- and image-dominated pages with fragmented axes, captions, and OCR; qualitative claims resume in prose at line 692."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is computational and heuristic evidence, not an independent proof of random-wave behavior.",
+      "line_end": 702,
+      "line_start": 692,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conjectural Gaussian claim is clear; its OCR-rendered normalization parameter should be verified against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Converts repeated numerical observations of no localization and Gaussian amplitude behavior into a limiting distribution conjecture for modular eigenfunctions.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Modular cusp forms motivate a Gaussian distribution conjecture",
+      "unit_artifact_relpath": "depth/units/r110_u011.txt",
+      "unit_bytes": 561,
+      "unit_id": "r110_u011",
+      "unit_sha256": "9c75e70766d8e0337f54b84575552ec094976857155ee9f09f379bb26f3172ff",
+      "unit_type": "conjecture-from-computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u011.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 684,
+          "line_end": 691,
+          "text": "L»(Z).\n\nform with R = 125.13840 for\n\n<!-- source-page: 23 -->\n\nArithmetic Quantum Chaos 23\n\n",
+          "sha256": "3baa7fc0659954a3e91d9ef6a46afc5e7d81362b660ead05ed79bb365418de65"
+        },
+        "after": {
+          "line_start": 703,
+          "line_end": 710,
+          "text": "\nSection 2.3. Fine structure of the spectrum.\n\nFigure 2.17 displays the first 250 even (i.e. invariant by z > —Z) eigenvalues of\nSL2(Z) as computed recently by Steil [SL]. Previously, in his seminal computations\nHejhal [H3] had determined the first 50 eigenvalues. Perhaps the most important\npoint to note is that the spectrum is simple. In fact Steil has now checked this\nup to the 3000* eigenvalue. The conjecture that the spectrum is simple has some\n",
+          "sha256": "7f4f098c70fd954876322e1b28285c991ea87fb675abe7716f1517afe3114bff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.2. Hyperbolic Surfaces",
+            "line_end": 703,
+            "line_start": 470,
+            "mathematical_role": "Introduces hyperbolic quotient models and numerical evidence for Gaussian, nonlocalized eigenfunctions on compact and modular examples."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 702,
+          "line_start": 692,
+          "title": "Modular cusp forms motivate a Gaussian distribution conjecture",
+          "unit_id": "r110_u011",
+          "unit_type": "conjecture-from-computation",
+          "why_material": "Converts repeated numerical observations of no localization and Gaussian amplitude behavior into a limiting distribution conjecture for modular eigenfunctions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is computational and heuristic evidence, not an independent proof of random-wave behavior.",
+          "representation_dependency": "The conjectural Gaussian claim is clear; its OCR-rendered normalization parameter should be verified against the scan.",
+          "unit_id": "r110_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 539,
+            "line_start": 492,
+            "title": "Compact and modular hyperbolic spectra test the random-wave picture",
+            "unit_id": "r110_u010",
+            "unit_type": "computational-evidence-and-representation-split",
+            "why_material": "Reports nonlocalized, approximately Gaussian eigenstates on a compact hyperbolic surface, then distinguishes the modular surface's continuous Eisenstein spectrum from its embedded discrete cusp forms. The same chaotic geometry thus supports different spectral representations that must not be conflated."
+          },
+          {
+            "line_end": 721,
+            "line_start": 704,
+            "title": "Simplicity and number variance test distinct spectral features",
+            "unit_id": "r110_u012",
+            "unit_type": "diagnostic-comparison",
+            "why_material": "Separates the conjectural simplicity of the modular spectrum from number-variance comparisons: an integrable billiard follows Poisson while the chaotic stadium follows GOE in the universal range, with bouncing-ball effects predicted later."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic surfaces can display random-wave-like eigenfunctions while their Laplace eigenvalues are Poisson-like rather than GOE; arithmetic length multiplicities explain the spectral exception, and random-matrix structure reappears for Hecke operators.",
+            "limit": "The eigenfunction side is partly numerical/conjectural and the claims are dimension- and operator-specific.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u014",
+              "r110_u016",
+              "r110_u026"
+            ],
+            "title": "Arithmetic chaos splits eigenvalue and eigenfunction universality"
+          },
+          {
+            "claim": "Gaussian numerical behavior and no-geodesic-scar results do not imply universal random-wave norms: in dimension three, theta-lift subsequences are forced large by arithmetic vanishing even without classical focusing.",
+            "limit": "The exceptional construction is arithmetic and three-dimensional; it does not refute the stated surface conjectures.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u019",
+              "r110_u024"
+            ],
+            "title": "Theta lifts are an adversarial boundary for random-wave heuristics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 691,
+              "line_start": 540,
+              "reason": "Plot- and image-dominated pages with fragmented axes, captions, and OCR; qualitative claims resume in prose at line 692."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The modular simplicity observation becomes an assumption in a later bound-state result; the variance comparison is a control, not evidence about arithmetic surfaces yet.",
+      "line_end": 721,
+      "line_start": 704,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose claims are recoverable; exact computed eigenvalues and plotted curves are not included in the unit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the conjectural simplicity of the modular spectrum from number-variance comparisons: an integrable billiard follows Poisson while the chaotic stadium follows GOE in the universal range, with bouncing-ball effects predicted later.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simplicity and number variance test distinct spectral features",
+      "unit_artifact_relpath": "depth/units/r110_u012.txt",
+      "unit_bytes": 1102,
+      "unit_id": "r110_u012",
+      "unit_sha256": "8842afefcbf17fe7ade7af84e91a8ca2868a8fa138100174e37067121ccaba3e",
+      "unit_type": "diagnostic-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u012.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 696,
+          "line_end": 703,
+          "text": "\nheuristic arguments for a local Gaussian behavior and they are led to\n\nConjecture 2.1 ([H-R]). The distribution functions of the eigenfunctions ¢;(z)\nof X =T'\\E? tend to a Gaussian with mean 0 and standard deviation Vol (1),\n\nas k - oo.\n\n",
+          "sha256": "6b1ef8a02bdd67be24b60574e099b5d6ff22f03460849e786a003c5aac01c80e"
+        },
+        "after": {
+          "line_start": 722,
+          "line_end": 729,
+          "text": "\nTo describe the numerical results for the spectral statistics for T\\H? we need to\n\nintroduce the notion of an arithmetic group. These are the main objects of these\n\n*Indeed this effect for the stadium has been confirmed recently in a physical experiment, see\n[G-H-L-L-R-R-S-W].\n\n",
+          "sha256": "2be00e9a2651ab9023b789743972d601b9aeb4497f1a544f38da7883dc901c6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.3. Fine structure of the spectrum",
+            "line_end": 1174,
+            "line_start": 704,
+            "mathematical_role": "Compares simplicity and number variance across integrable, nonarithmetic chaotic, and arithmetic chaotic spectra, including the arithmetic trace criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 721,
+          "line_start": 704,
+          "title": "Simplicity and number variance test distinct spectral features",
+          "unit_id": "r110_u012",
+          "unit_type": "diagnostic-comparison",
+          "why_material": "Separates the conjectural simplicity of the modular spectrum from number-variance comparisons: an integrable billiard follows Poisson while the chaotic stadium follows GOE in the universal range, with bouncing-ball effects predicted later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The modular simplicity observation becomes an assumption in a later bound-state result; the variance comparison is a control, not evidence about arithmetic surfaces yet.",
+          "representation_dependency": "Prose claims are recoverable; exact computed eigenvalues and plotted curves are not included in the unit.",
+          "unit_id": "r110_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 702,
+            "line_start": 692,
+            "title": "Modular cusp forms motivate a Gaussian distribution conjecture",
+            "unit_id": "r110_u011",
+            "unit_type": "conjecture-from-computation",
+            "why_material": "Converts repeated numerical observations of no localization and Gaussian amplitude behavior into a limiting distribution conjecture for modular eigenfunctions."
+          },
+          {
+            "line_end": 1124,
+            "line_start": 1091,
+            "title": "Arithmeticity is encoded by trace fields and bounded conjugates",
+            "unit_id": "r110_u013",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Presents Takeuchi's trace-based characterization of arithmetic lattices and a stronger condition for quaternion-algebra origin, then classifies the arithmetic Hecke triangles. It recasts a geometric group property into algebraic data used later for spectral clustering."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 729,
+              "line_start": 722,
+              "reason": "Transition to arithmetic groups and an experimental footnote."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The quaternion-group example begins the concrete realization but its formula is secondary to the criterion.",
+      "line_end": 1124,
+      "line_start": 1091,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Criterion clauses are prose-recoverable; set notation and the quaternion formula are degraded and need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Presents Takeuchi's trace-based characterization of arithmetic lattices and a stronger condition for quaternion-algebra origin, then classifies the arithmetic Hecke triangles. It recasts a geometric group property into algebraic data used later for spectral clustering.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmeticity is encoded by trace fields and bounded conjugates",
+      "unit_artifact_relpath": "depth/units/r110_u013.txt",
+      "unit_bytes": 1162,
+      "unit_id": "r110_u013",
+      "unit_sha256": "0fbad7fd84a2fabd81cd6ce21cc314093a76fe1f466552ba6442d1d341d0a8d6",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u013.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1083,
+          "line_end": 1090,
+          "text": "28 Sarnak\n\nrw\n\nas\n\nFigure 2.18\n\n",
+          "sha256": "e957c984fc312ec8e833018f123ff6f6fe1bf8743d7d79c4a2e88e6220a5e062"
+        },
+        "after": {
+          "line_start": 1125,
+          "line_end": 1132,
+          "text": "\nSchmit [SCH] has computed 5?(A,Z) for both arithmetic and nonarithmetic\ntriangle groups (see also [B-G-G-S], [B-S-S]). In Figure 2.19 the results for an arith-\nmetic triangle group are shown. Surprisingly ©? is close to Poisson in the universal\nrange. Other arithmetic triangles have been studied and they all have the same\nbehavior. This includes the modular group = SL2(Z) for which one can see the\nPoisson like behavior from the energy level plot in Figure 1.3. On the other hand\nin Figure 2.20, the number variance, computed by Schmit for a nonarithmetic tri-\n",
+          "sha256": "f95c53241bf007111f8d7a82028f0d5881b7c53d19ef369b1ade0fc0e897181a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.3. Fine structure of the spectrum",
+            "line_end": 1174,
+            "line_start": 704,
+            "mathematical_role": "Compares simplicity and number variance across integrable, nonarithmetic chaotic, and arithmetic chaotic spectra, including the arithmetic trace criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1124,
+          "line_start": 1091,
+          "title": "Arithmeticity is encoded by trace fields and bounded conjugates",
+          "unit_id": "r110_u013",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Presents Takeuchi's trace-based characterization of arithmetic lattices and a stronger condition for quaternion-algebra origin, then classifies the arithmetic Hecke triangles. It recasts a geometric group property into algebraic data used later for spectral clustering."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The quaternion-group example begins the concrete realization but its formula is secondary to the criterion.",
+          "representation_dependency": "Criterion clauses are prose-recoverable; set notation and the quaternion formula are degraded and need scan verification.",
+          "unit_id": "r110_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 721,
+            "line_start": 704,
+            "title": "Simplicity and number variance test distinct spectral features",
+            "unit_id": "r110_u012",
+            "unit_type": "diagnostic-comparison",
+            "why_material": "Separates the conjectural simplicity of the modular spectrum from number-variance comparisons: an integrable billiard follows Poisson while the chaotic stadium follows GOE in the universal range, with bouncing-ball effects predicted later."
+          },
+          {
+            "line_end": 1160,
+            "line_start": 1126,
+            "title": "Arithmetic chaos violates the naive GOE universality rule",
+            "unit_id": "r110_u014",
+            "unit_type": "adversarial-model-comparison",
+            "why_material": "Numerical number variance is Poisson-like for arithmetic hyperbolic triangles but GOE-like for nonarithmetic ones, despite both being chaotic. This is the source's central counterexample to identifying classical chaos with one universal spectral ensemble."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1090,
+              "line_start": 730,
+              "reason": "Figure panels, raw numerical eigenvalue table, captions, and page furniture; these do not add a reusable mechanism beyond adjacent prose."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The summary also notes that eigenfunction random-wave behavior appears in both classes, separating eigenvalue and eigenfunction phenomena.",
+      "line_end": 1160,
+      "line_start": 1126,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The comparison is explicit in prose; the plotted variance curves and precise numerical range require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Numerical number variance is Poisson-like for arithmetic hyperbolic triangles but GOE-like for nonarithmetic ones, despite both being chaotic. This is the source's central counterexample to identifying classical chaos with one universal spectral ensemble.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic chaos violates the naive GOE universality rule",
+      "unit_artifact_relpath": "depth/units/r110_u014.txt",
+      "unit_bytes": 1371,
+      "unit_id": "r110_u014",
+      "unit_sha256": "b90a8ae99cfa5cf0abc169f475a65b5de44b3f28b8748cf9a5ba809bcb073aff",
+      "unit_type": "adversarial-model-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u014.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1118,
+          "line_end": 1125,
+          "text": "Pa ={ is. ell) So —Siy/e ,0} = az} — ba} + abe} = 1} (2.2)\n\n<!-- source-page: 29 -->\n\nArithmetic Quantum Chaos 29\n\n(see S. Katok [K]).\n\n",
+          "sha256": "3a8f10b5d54dea16318e50b2b864371c427345f49ee44fa6bcf7f0df03a2ca6a"
+        },
+        "after": {
+          "line_start": 1161,
+          "line_end": 1168,
+          "text": "\n<!-- source-page: 30 -->\n\n30 Sarnak\n\ncor! é o£.\n\nrq\n",
+          "sha256": "128870fa2217a05039f1cc02281724fdb4cb001a504029da2f83229ea6dbed7d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 2.3. Fine structure of the spectrum",
+            "line_end": 1174,
+            "line_start": 704,
+            "mathematical_role": "Compares simplicity and number variance across integrable, nonarithmetic chaotic, and arithmetic chaotic spectra, including the arithmetic trace criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1160,
+          "line_start": 1126,
+          "title": "Arithmetic chaos violates the naive GOE universality rule",
+          "unit_id": "r110_u014",
+          "unit_type": "adversarial-model-comparison",
+          "why_material": "Numerical number variance is Poisson-like for arithmetic hyperbolic triangles but GOE-like for nonarithmetic ones, despite both being chaotic. This is the source's central counterexample to identifying classical chaos with one universal spectral ensemble."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The summary also notes that eigenfunction random-wave behavior appears in both classes, separating eigenvalue and eigenfunction phenomena.",
+          "representation_dependency": "The comparison is explicit in prose; the plotted variance curves and precise numerical range require the scan.",
+          "unit_id": "r110_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1124,
+            "line_start": 1091,
+            "title": "Arithmeticity is encoded by trace fields and bounded conjugates",
+            "unit_id": "r110_u013",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Presents Takeuchi's trace-based characterization of arithmetic lattices and a stronger condition for quaternion-algebra origin, then classifies the arithmetic Hecke triangles. It recasts a geometric group property into algebraic data used later for spectral clustering."
+          },
+          {
+            "line_end": 1213,
+            "line_start": 1177,
+            "title": "Families of periodic trajectories force long-range spectral nonrigidity",
+            "unit_id": "r110_u015",
+            "unit_type": "mechanism-and-theorem",
+            "why_material": "Explains why a measure-zero positive-dimensional family of equal-period trajectories can force a variance lower bound outside the GOE window. The stadium, Sinai billiard, and integrable examples connect the trace mechanism to concrete systems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic surfaces can display random-wave-like eigenfunctions while their Laplace eigenvalues are Poisson-like rather than GOE; arithmetic length multiplicities explain the spectral exception, and random-matrix structure reappears for Hecke operators.",
+            "limit": "The eigenfunction side is partly numerical/conjectural and the claims are dimension- and operator-specific.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u014",
+              "r110_u016",
+              "r110_u026"
+            ],
+            "title": "Arithmetic chaos splits eigenvalue and eigenfunction universality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1174,
+              "line_start": 1161,
+              "reason": "Page transition and a plot with unreadable OCR labels."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition is stated for closed manifolds while the stadium application is explicitly analogical and later noted as confirmed.",
+      "line_end": 1213,
+      "line_start": 1177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mechanism and hypotheses are prose-safe; the exact averaged counting formula and lower-bound exponent are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why a measure-zero positive-dimensional family of equal-period trajectories can force a variance lower bound outside the GOE window. The stadium, Sinai billiard, and integrable examples connect the trace mechanism to concrete systems.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Families of periodic trajectories force long-range spectral nonrigidity",
+      "unit_artifact_relpath": "depth/units/r110_u015.txt",
+      "unit_bytes": 1801,
+      "unit_id": "r110_u015",
+      "unit_sha256": "f4b5a4b313cc8d6174bf29298b8376f2dc3301bb634665b55b4825016c32dc62",
+      "unit_type": "mechanism-and-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u015.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1169,
+          "line_end": 1176,
+          "text": "\nlin!\nos} - oath hy ly! i} ita\n\nFigure 2.20: 5? for a Nonarithmetic Triangle\n\nSECTION 3. ARITHMETIC MANIFOLDS\n\n",
+          "sha256": "c6c96614a62be006bd8ce2f1f8241fc36dc0e062e08dc1f44000a347ad93325f"
+        },
+        "after": {
+          "line_start": 1214,
+          "line_end": 1221,
+          "text": "\nWe turn to the number variance for arithmetic surfaces. The following lower\nbounds show that these are highly nonrigid. Let E’ denote the average of D? over\nL, i.e.\n\nL\nErAD=7 [Sere (3)\n0\n",
+          "sha256": "2caa947c51d7c2a7b23042ad44fca5fc0f6fcd3a1b94776012cfcbbdc2625703"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1213,
+          "line_start": 1177,
+          "title": "Families of periodic trajectories force long-range spectral nonrigidity",
+          "unit_id": "r110_u015",
+          "unit_type": "mechanism-and-theorem",
+          "why_material": "Explains why a measure-zero positive-dimensional family of equal-period trajectories can force a variance lower bound outside the GOE window. The stadium, Sinai billiard, and integrable examples connect the trace mechanism to concrete systems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposition is stated for closed manifolds while the stadium application is explicitly analogical and later noted as confirmed.",
+          "representation_dependency": "Mechanism and hypotheses are prose-safe; the exact averaged counting formula and lower-bound exponent are OCR-sensitive.",
+          "unit_id": "r110_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1160,
+            "line_start": 1126,
+            "title": "Arithmetic chaos violates the naive GOE universality rule",
+            "unit_id": "r110_u014",
+            "unit_type": "adversarial-model-comparison",
+            "why_material": "Numerical number variance is Poisson-like for arithmetic hyperbolic triangles but GOE-like for nonarithmetic ones, despite both being chaotic. This is the source's central counterexample to identifying classical chaos with one universal spectral ensemble."
+          },
+          {
+            "line_end": 1275,
+            "line_start": 1215,
+            "title": "Length multiplicity and bounded clustering drive arithmetic nonrigidity",
+            "unit_id": "r110_u016",
+            "unit_type": "theorem-mechanism-and-limit",
+            "why_material": "States arithmetic number-variance lower bounds and identifies high multiplicity of the length spectrum, compressed into a bounded-clustering property of traces, as their cause. It also records the important asymmetry that useful lower bounds exist while upper bounds remain unavailable."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Positive-dimensional periodic families create trace singularities, while repeated arithmetic lengths create large diagonal mass in a smoothed Selberg trace analysis; both mechanisms force variance lower bounds through different sources of coherent recurrence.",
+            "limit": "The resulting arguments are lower-bound mechanisms and do not provide the missing upper bounds or unsmoothed control.",
+            "parent_local_unit_ids": [
+              "r110_u015",
+              "r110_u016",
+              "r110_u033",
+              "r110_u034"
+            ],
+            "title": "Trace formulas expose both dynamical and arithmetic nonrigidity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1174,
+              "line_start": 1161,
+              "reason": "Page transition and a plot with unreadable OCR labels."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The quaternion-algebra case gains a stronger range because its spacing structure is easier to exploit than bounded clustering alone.",
+      "line_end": 1275,
+      "line_start": 1215,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Causal interpretation is prose-grounded; theorem ranges, exponents, and displayed B-C cardinality need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States arithmetic number-variance lower bounds and identifies high multiplicity of the length spectrum, compressed into a bounded-clustering property of traces, as their cause. It also records the important asymmetry that useful lower bounds exist while upper bounds remain unavailable.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Length multiplicity and bounded clustering drive arithmetic nonrigidity",
+      "unit_artifact_relpath": "depth/units/r110_u016.txt",
+      "unit_bytes": 2101,
+      "unit_id": "r110_u016",
+      "unit_sha256": "ba6f6e0fa3f60a5435eff0d7509671aae39916fe12da5049c255aea8be9b3d4f",
+      "unit_type": "theorem-mechanism-and-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u016.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1207,
+          "line_end": 1214,
+          "text": "a flat torus or more generally any case with integrable geodesic flow. For the case\nof the flat torus the lower bound implied by Proposition 3.1 gives a lower bound for\nthe counting of lattice points in a circle radius Vi. In this case this lower bound is\nthe well known Hardy-Landau Theorem [H-L]. Concerning the statistics of the level\nspacings for integrable Hamiltonians some interesting progress has been by Sinai\n[S12] and Blecher [BL] for surfaces of revolution and by Uribe and Zelditch [U-Z]\nfor Zoll surfaces.\n\n",
+          "sha256": "de275390b894cfbd0dd5a49ba76daee7b4f9f89020ac61c2325e90a0ad5d64f0"
+        },
+        "after": {
+          "line_start": 1276,
+          "line_end": 1283,
+          "text": "\nWe turn now to the behavior of the eigenfunctions for arithmetic quotients.\nFirstly we will also allow higher dimensional hyperbolic manifolds and specifi-\ncally n = 3. Examples of arithmetic hyperbolic 3-folds are gotten from quadratic\n\n*The (B-C) property may well be a geometric charcterization of arithmeticity.\n\n<!-- source-page: 33 -->\n",
+          "sha256": "512560e41bc559a94b04a90f9a1dcc866f9045e18f382bd20ed1f75d89098cd9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1275,
+          "line_start": 1215,
+          "title": "Length multiplicity and bounded clustering drive arithmetic nonrigidity",
+          "unit_id": "r110_u016",
+          "unit_type": "theorem-mechanism-and-limit",
+          "why_material": "States arithmetic number-variance lower bounds and identifies high multiplicity of the length spectrum, compressed into a bounded-clustering property of traces, as their cause. It also records the important asymmetry that useful lower bounds exist while upper bounds remain unavailable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The quaternion-algebra case gains a stronger range because its spacing structure is easier to exploit than bounded clustering alone.",
+          "representation_dependency": "Causal interpretation is prose-grounded; theorem ranges, exponents, and displayed B-C cardinality need scan verification.",
+          "unit_id": "r110_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1213,
+            "line_start": 1177,
+            "title": "Families of periodic trajectories force long-range spectral nonrigidity",
+            "unit_id": "r110_u015",
+            "unit_type": "mechanism-and-theorem",
+            "why_material": "Explains why a measure-zero positive-dimensional family of equal-period trajectories can force a variance lower bound outside the GOE window. The stadium, Sinai billiard, and integrable examples connect the trace mechanism to concrete systems."
+          },
+          {
+            "line_end": 1339,
+            "line_start": 1277,
+            "title": "Arithmetic manifolds carry nonlocal correspondences",
+            "unit_id": "r110_u017",
+            "unit_type": "construction-and-abstraction",
+            "why_material": "Constructs arithmetic hyperbolic three-manifolds from quadratic forms, then abstracts a correspondence as a multivalued local-isometry relation and associates a Laplacian-commuting operator. Margulis's commensurator dichotomy makes an infinite correspondence family equivalent to arithmeticity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic surfaces can display random-wave-like eigenfunctions while their Laplace eigenvalues are Poisson-like rather than GOE; arithmetic length multiplicities explain the spectral exception, and random-matrix structure reappears for Hecke operators.",
+            "limit": "The eigenfunction side is partly numerical/conjectural and the claims are dimension- and operator-specific.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u014",
+              "r110_u016",
+              "r110_u026"
+            ],
+            "title": "Arithmetic chaos splits eigenvalue and eigenfunction universality"
+          },
+          {
+            "claim": "Positive-dimensional periodic families create trace singularities, while repeated arithmetic lengths create large diagonal mass in a smoothed Selberg trace analysis; both mechanisms force variance lower bounds through different sources of coherent recurrence.",
+            "limit": "The resulting arguments are lower-bound mechanisms and do not provide the missing upper bounds or unsmoothed control.",
+            "parent_local_unit_ids": [
+              "r110_u015",
+              "r110_u016",
+              "r110_u033",
+              "r110_u034"
+            ],
+            "title": "Trace formulas expose both dynamical and arithmetic nonrigidity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the nonlocal structure that later bypasses spectral averaging barriers and separates singular supports.",
+      "line_end": 1339,
+      "line_start": 1277,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The construction and equivalence are prose-recoverable; quadratic-form example, cosets, and operator normalization require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs arithmetic hyperbolic three-manifolds from quadratic forms, then abstracts a correspondence as a multivalued local-isometry relation and associates a Laplacian-commuting operator. Margulis's commensurator dichotomy makes an infinite correspondence family equivalent to arithmeticity.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic manifolds carry nonlocal correspondences",
+      "unit_artifact_relpath": "depth/units/r110_u017.txt",
+      "unit_bytes": 3002,
+      "unit_id": "r110_u017",
+      "unit_sha256": "90f753f3e796883cc95d383bdcdad3efe94c6ca41a47801f52559c071c8b2ef4",
+      "unit_type": "construction-and-abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u017.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1269,
+          "line_end": 1276,
+          "text": "|IC(T)A[m,m+1]|< Cl) formeZ. (3.3)\n\nThis (B-C) property is technically difficult to work with, which is the reason for\nTheorem 3.2 being weaker than Theorem 3.3.* We will outline a proof of Theorem\n3.2 in Section 5. While Theorem 3.2 explains the nonrigidity of the spectrum for the\narithmetic quotients we emphasize that we have no upper bounds for the number\nvariance.\n\n",
+          "sha256": "3cfae2a4c6ce60bf31bdbbb91f39d5d4c962a826d579caf720a89cf0a92a5cdb"
+        },
+        "after": {
+          "line_start": 1340,
+          "line_end": 1347,
+          "text": "\nExamples 3.5. (i) For! = PSL,(Z) in PGL,(R), COM(T) = PGL2(Q). If\n\nn21,6=(5 :\n\nTy: L2(T\\H?) > L?(T\\HP) defined by (see [SER])\n\n€ COM(L) and it gives rise to the classical Hecke operators\n",
+          "sha256": "fef0a93b4d1eebbb3b488751e953ffcf84171fd0fe39d42afc3b54e69d6644dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1339,
+          "line_start": 1277,
+          "title": "Arithmetic manifolds carry nonlocal correspondences",
+          "unit_id": "r110_u017",
+          "unit_type": "construction-and-abstraction",
+          "why_material": "Constructs arithmetic hyperbolic three-manifolds from quadratic forms, then abstracts a correspondence as a multivalued local-isometry relation and associates a Laplacian-commuting operator. Margulis's commensurator dichotomy makes an infinite correspondence family equivalent to arithmeticity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the nonlocal structure that later bypasses spectral averaging barriers and separates singular supports.",
+          "representation_dependency": "The construction and equivalence are prose-recoverable; quadratic-form example, cosets, and operator normalization require scan verification.",
+          "unit_id": "r110_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1275,
+            "line_start": 1215,
+            "title": "Length multiplicity and bounded clustering drive arithmetic nonrigidity",
+            "unit_id": "r110_u016",
+            "unit_type": "theorem-mechanism-and-limit",
+            "why_material": "States arithmetic number-variance lower bounds and identifies high multiplicity of the length spectrum, compressed into a bounded-clustering property of traces, as their cause. It also records the important asymmetry that useful lower bounds exist while upper bounds remain unavailable."
+          },
+          {
+            "line_end": 1384,
+            "line_start": 1341,
+            "title": "A commuting self-adjoint Hecke algebra refines Laplace eigenstates",
+            "unit_id": "r110_u018",
+            "unit_type": "operator-algebra-and-basis-choice",
+            "why_material": "Shows how classical and quaternionic correspondences form commuting self-adjoint Hecke operators, allowing simultaneous eigenbases. This extra spectral labeling is the arithmetic resource used to study individual eigenfunctions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same nonlocal arithmetic correspondences refine the eigenbasis, move singular support away from itself, overcome local pretrace barriers, and create resonances at CM points, unifying upper, lower, and delocalization arguments.",
+            "limit": "Each use requires different algebraic input; correspondence abundance alone does not automatically supply every lemma or optimal bound.",
+            "parent_local_unit_ids": [
+              "r110_u017",
+              "r110_u018",
+              "r110_u022",
+              "r110_u035",
+              "r110_u036",
+              "r110_u037"
+            ],
+            "title": "Hecke correspondences are both separators and amplifiers"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text notes that simplicity would make the Hecke-basis condition automatic, but retains it as an explicit assumption.",
+      "line_end": 1384,
+      "line_start": 1341,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator-algebra role is clear; explicit Hecke sums, multiplication law, and quaternion norm formulas are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how classical and quaternionic correspondences form commuting self-adjoint Hecke operators, allowing simultaneous eigenbases. This extra spectral labeling is the arithmetic resource used to study individual eigenfunctions.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A commuting self-adjoint Hecke algebra refines Laplace eigenstates",
+      "unit_artifact_relpath": "depth/units/r110_u018.txt",
+      "unit_bytes": 1785,
+      "unit_id": "r110_u018",
+      "unit_sha256": "7e71776a610f15c3a12f534b153b7d84af675288c80de3cce7f39cd754436bed",
+      "unit_type": "operator-algebra-and-basis-choice",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u018.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1333,
+          "line_end": 1340,
+          "text": "is of most significance when the commensurator COM(T) = {6 € G | 67T6N\nT is finite index in both}, is large. For G = SL2, or SO(n, 1) (or any other semisim-\nple Lie group for that matter) Margulis [M] has shown that COM(C) is dense in\nG(R) iff T’ is arithmetic. In fact if I is not arithmetic then COM(L)/T is a fi-\nnite group. Hence being arithmetic is equivalent to having an infinite family of\n\ncorrespondences.\n\n",
+          "sha256": "79436188894c65fbb47cd1bc1d9fbc109ad515d2427eb788bb4037b2c00b68d9"
+        },
+        "after": {
+          "line_start": 1385,
+          "line_end": 1392,
+          "text": "\nIn connection with the behavior of the eigenfunctions our first result is that\n\nstrong scarring on closed geodesics does not occur.\n\nTheorem 3.6 (Rudnick-Sarnak [R-S]).\n\nLet X be a congruence arithmetic manifold of dimension 2 or 3 then there is no\n",
+          "sha256": "c29c33c11955a98233b8a2b6f61197be3fd9de1f8ae81dfe86cd3ace5f672afc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1384,
+          "line_start": 1341,
+          "title": "A commuting self-adjoint Hecke algebra refines Laplace eigenstates",
+          "unit_id": "r110_u018",
+          "unit_type": "operator-algebra-and-basis-choice",
+          "why_material": "Shows how classical and quaternionic correspondences form commuting self-adjoint Hecke operators, allowing simultaneous eigenbases. This extra spectral labeling is the arithmetic resource used to study individual eigenfunctions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text notes that simplicity would make the Hecke-basis condition automatic, but retains it as an explicit assumption.",
+          "representation_dependency": "Operator-algebra role is clear; explicit Hecke sums, multiplication law, and quaternion norm formulas are OCR-sensitive.",
+          "unit_id": "r110_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1339,
+            "line_start": 1277,
+            "title": "Arithmetic manifolds carry nonlocal correspondences",
+            "unit_id": "r110_u017",
+            "unit_type": "construction-and-abstraction",
+            "why_material": "Constructs arithmetic hyperbolic three-manifolds from quadratic forms, then abstracts a correspondence as a multivalued local-isometry relation and associates a Laplacian-commuting operator. Margulis's commensurator dichotomy makes an infinite correspondence family equivalent to arithmeticity."
+          },
+          {
+            "line_end": 1427,
+            "line_start": 1386,
+            "title": "Hecke structure rules out geodesic strong scars and motivates QUE",
+            "unit_id": "r110_u019",
+            "unit_type": "theorem-to-conjecture",
+            "why_material": "States that quantum limits for congruence arithmetic manifolds cannot have singular support confined to proper geodesic submanifolds, then formulates individual equidistribution as quantum unique ergodicity. It also highlights the counterfactual contrast: quantum uniqueness is expected although chaotic classical flow has many invariant measures."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same nonlocal arithmetic correspondences refine the eigenbasis, move singular support away from itself, overcome local pretrace barriers, and create resonances at CM points, unifying upper, lower, and delocalization arguments.",
+            "limit": "Each use requires different algebraic input; correspondence abundance alone does not automatically supply every lemma or optimal bound.",
+            "parent_local_unit_ids": [
+              "r110_u017",
+              "r110_u018",
+              "r110_u022",
+              "r110_u035",
+              "r110_u036",
+              "r110_u037"
+            ],
+            "title": "Hecke correspondences are both separators and amplifiers"
+          },
+          {
+            "claim": "Arithmetic symmetries provide Hecke labels for bound states, whereas under deformation the nonvanishing of Rankin-Selberg values can dissolve cusp forms; spectral persistence is therefore controlled by both operator symmetry and special-value obstructions.",
+            "limit": "The deformation conclusions include simplicity or multiplicity hypotheses and generic statements, not a classification of every surface.",
+            "parent_local_unit_ids": [
+              "r110_u018",
+              "r110_u025",
+              "r110_u032"
+            ],
+            "title": "Arithmeticity can stabilize or dissolve spectral states through different L-data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is conditional on congruence/Hecke structure; the broader negative-curvature conjecture is not claimed as proved.",
+      "line_end": 1427,
+      "line_start": 1386,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The support and equidistribution statements are prose-safe; quantitative rate notation at line 1418 should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States that quantum limits for congruence arithmetic manifolds cannot have singular support confined to proper geodesic submanifolds, then formulates individual equidistribution as quantum unique ergodicity. It also highlights the counterfactual contrast: quantum uniqueness is expected although chaotic classical flow has many invariant measures.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hecke structure rules out geodesic strong scars and motivates QUE",
+      "unit_artifact_relpath": "depth/units/r110_u019.txt",
+      "unit_bytes": 1944,
+      "unit_id": "r110_u019",
+      "unit_sha256": "0fdcfb423ed6fa907b6fed969d75e8b30520136217f7dae9e588e9723d979c4b",
+      "unit_type": "theorem-to-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u019.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1378,
+          "line_end": 1385,
+          "text": "to define a correspondence Cn:I',3\\H — Ta3\\H. One can also form the Hecke\noperators T;, (see Eichler [ET]).\n\nWe say I’ is a congruence group if I is a subgroup the unit group of a quaternion\nalgebra and I’ contains I'(g) for some q, where I'(q) = {a €T | a = 1(mod q)}. For\nthese we have a commutative self adjoint Hecke algebra. In this case we will always\nassume that the basis of eigenfunctions ¢; are also Hecke eigenfunctions.\n\n",
+          "sha256": "745134e7e13bdf4f4907314c9bf2d658196baead039f7ca63406dc1388db2a2d"
+        },
+        "after": {
+          "line_start": 1428,
+          "line_end": 1435,
+          "text": "\nAll of the above is consistent with the experiments and the random wave model.\nTo examine this further we investigate the sizes of the eigenfunctions. For a general\n\ncompact X we define\n\nDefiniton 3.8. For 2< p< © let\n\n",
+          "sha256": "3703304a86ec3222e4226cedce6b7c0bebd01a51dc4483171fae76dbbfc1401b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1427,
+          "line_start": 1386,
+          "title": "Hecke structure rules out geodesic strong scars and motivates QUE",
+          "unit_id": "r110_u019",
+          "unit_type": "theorem-to-conjecture",
+          "why_material": "States that quantum limits for congruence arithmetic manifolds cannot have singular support confined to proper geodesic submanifolds, then formulates individual equidistribution as quantum unique ergodicity. It also highlights the counterfactual contrast: quantum uniqueness is expected although chaotic classical flow has many invariant measures."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is conditional on congruence/Hecke structure; the broader negative-curvature conjecture is not claimed as proved.",
+          "representation_dependency": "The support and equidistribution statements are prose-safe; quantitative rate notation at line 1418 should be scan-checked.",
+          "unit_id": "r110_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1384,
+            "line_start": 1341,
+            "title": "A commuting self-adjoint Hecke algebra refines Laplace eigenstates",
+            "unit_id": "r110_u018",
+            "unit_type": "operator-algebra-and-basis-choice",
+            "why_material": "Shows how classical and quaternionic correspondences form commuting self-adjoint Hecke operators, allowing simultaneous eigenbases. This extra spectral labeling is the arithmetic resource used to study individual eigenfunctions."
+          },
+          {
+            "line_end": 1483,
+            "line_start": 1429,
+            "title": "Local eigenfunction bounds are too geometry-blind for quantum chaos",
+            "unit_id": "r110_u020",
+            "unit_type": "bound-comparison",
+            "why_material": "Defines extremal eigenfunction norms, contrasts general local bounds with improved torus behavior, and ties that improvement to absolute continuity of quantum limits. The discussion isolates the need for global geometry or arithmetic to improve on local restriction-theoretic barriers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The progression from full-density quantum ergodicity to exclusion of geodesic singular supports and finally individual equidistribution uses two complementary arithmetic routes: nonlocal correspondence separation and subconvex control of Rankin-Selberg periods.",
+            "limit": "The no-scarring theorem is restricted to Hecke arithmetic settings, while full QUE remains conjectural in this source.",
+            "parent_local_unit_ids": [
+              "r110_u004",
+              "r110_u019",
+              "r110_u032",
+              "r110_u035"
+            ],
+            "title": "Quantum unique ergodicity as a correspondence-to-subconvexity program"
+          },
+          {
+            "claim": "Gaussian numerical behavior and no-geodesic-scar results do not imply universal random-wave norms: in dimension three, theta-lift subsequences are forced large by arithmetic vanishing even without classical focusing.",
+            "limit": "The exceptional construction is arithmetic and three-dimensional; it does not refute the stated surface conjectures.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u019",
+              "r110_u024"
+            ],
+            "title": "Theta lifts are an adversarial boundary for random-wave heuristics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Multiplicity complicates even integrable tori, preventing a simplistic integrable-versus-chaotic norm dichotomy.",
+      "line_end": 1483,
+      "line_start": 1429,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Comparative message is prose-grounded; piecewise exponents and individual norm inequalities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines extremal eigenfunction norms, contrasts general local bounds with improved torus behavior, and ties that improvement to absolute continuity of quantum limits. The discussion isolates the need for global geometry or arithmetic to improve on local restriction-theoretic barriers.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local eigenfunction bounds are too geometry-blind for quantum chaos",
+      "unit_artifact_relpath": "depth/units/r110_u020.txt",
+      "unit_bytes": 1832,
+      "unit_id": "r110_u020",
+      "unit_sha256": "d63b8984f6dd810391a3b4d0fe4a7b4d70a4d8a31286d0b2b40d9ce5b70ef069",
+      "unit_type": "bound-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u020.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1421,
+          "line_end": 1428,
+          "text": "smaller (c.f. the question in [CD-3, pp. ]). Conjecture 3.7 if true is remarkable\nsince it asserts that at the quantum level one has unique ergodicity (the conjecture\nextends to the jiz’s in (1.9) and asserts the uniqueness of such quantum limits)\nwhile classically unique ergodicity (i.e. uniqueness of invariant measures for the\nHamiltonian flow) is never satisfied by chaotic systems. The proof of Theorem 3.6\nis based on X having a large family of correspondences and the ¢’s being Hecke\neigenforms, see Section 5.\n\n",
+          "sha256": "c6a53ddf3d0337a499427127e21f2fcb9babd3e10a2c69ab2b355c3715d5908d"
+        },
+        "after": {
+          "line_start": 1484,
+          "line_end": 1491,
+          "text": "\nReturning to the chaotic case the following is our main conjecture.\n\nConjecture 3.10. Forn =2 and K <0\n\nMoxo(A) = O.(A*°) foralle >0.\n\n<!-- source-page: 38 -->\n",
+          "sha256": "37b3255c20024ab60bed86f18f5b142718f0bb7345e9b97a5f4c5b7b93597da6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1483,
+          "line_start": 1429,
+          "title": "Local eigenfunction bounds are too geometry-blind for quantum chaos",
+          "unit_id": "r110_u020",
+          "unit_type": "bound-comparison",
+          "why_material": "Defines extremal eigenfunction norms, contrasts general local bounds with improved torus behavior, and ties that improvement to absolute continuity of quantum limits. The discussion isolates the need for global geometry or arithmetic to improve on local restriction-theoretic barriers."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Multiplicity complicates even integrable tori, preventing a simplistic integrable-versus-chaotic norm dichotomy.",
+          "representation_dependency": "Comparative message is prose-grounded; piecewise exponents and individual norm inequalities require scan verification.",
+          "unit_id": "r110_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1427,
+            "line_start": 1386,
+            "title": "Hecke structure rules out geodesic strong scars and motivates QUE",
+            "unit_id": "r110_u019",
+            "unit_type": "theorem-to-conjecture",
+            "why_material": "States that quantum limits for congruence arithmetic manifolds cannot have singular support confined to proper geodesic submanifolds, then formulates individual equidistribution as quantum unique ergodicity. It also highlights the counterfactual contrast: quantum uniqueness is expected although chaotic classical flow has many invariant measures."
+          },
+          {
+            "line_end": 1508,
+            "line_start": 1485,
+            "title": "The chaotic sup-norm conjecture links random waves to Lindelof",
+            "unit_id": "r110_u021",
+            "unit_type": "conjecture-and-bridge",
+            "why_material": "Formulates subpolynomial sup-norm growth for negatively curved surfaces, derives it heuristically from random waves, and identifies it as an eigenfunction analogue of Ramanujan whose arithmetic cases would imply Lindelof-type bounds."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The analogy to Sato-Tate is separately assigned to the Gaussian distribution conjecture; neither analogy is proof.",
+      "line_end": 1508,
+      "line_start": 1485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conceptual correspondences are clear; the exact exponent in the conjectured bound is OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Formulates subpolynomial sup-norm growth for negatively curved surfaces, derives it heuristically from random waves, and identifies it as an eigenfunction analogue of Ramanujan whose arithmetic cases would imply Lindelof-type bounds.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The chaotic sup-norm conjecture links random waves to Lindelof",
+      "unit_artifact_relpath": "depth/units/r110_u021.txt",
+      "unit_bytes": 1255,
+      "unit_id": "r110_u021",
+      "unit_sha256": "5387048ab981b5d6c551b3df9a1d1d93065c3eee90499153a7c1c52f08539a6f",
+      "unit_type": "conjecture-and-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u021.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1477,
+          "line_end": 1484,
+          "text": "\nwhich is due to Zygmund [Z]. This last estimate shows that on R?/Z? every quantum\nlimit is absolutely continuous. For n > 3 a bound like (3.10) for some p > 2 is not\nknown. However Bourgain [BO] has recently shown that for n > 4 and p> 2),\nM,(A)) << \\*7°-Bt*, Moreover in this range these estimates are essentially\n\nsharp.\n\n",
+          "sha256": "a9e6c604e7b6e5dba4cb42b92562f7136e14f9066dd974ea35e8730eadbc4089"
+        },
+        "after": {
+          "line_start": 1509,
+          "line_end": 1516,
+          "text": "\nTheorem 3.11 (Iwaniec-Sarnak [I-S]). IfT\\H? is a congruence quotient then\n(a) Meo(A) = Oc(A5/?44©) for e > 0.\n(b) Moo(A;) > c,/loglog 4; for c > 0 and infinitely many j’s.\n\nRemarks 3.12.\n\n(i) Part (b) of Theorem 3.11 shows in particular that the ¢;’s are not uniformly\n",
+          "sha256": "0519867034b5f42d6115870c0648a4aaf37e68be3441354366eda9c9898f0d28"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1508,
+          "line_start": 1485,
+          "title": "The chaotic sup-norm conjecture links random waves to Lindelof",
+          "unit_id": "r110_u021",
+          "unit_type": "conjecture-and-bridge",
+          "why_material": "Formulates subpolynomial sup-norm growth for negatively curved surfaces, derives it heuristically from random waves, and identifies it as an eigenfunction analogue of Ramanujan whose arithmetic cases would imply Lindelof-type bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The analogy to Sato-Tate is separately assigned to the Gaussian distribution conjecture; neither analogy is proof.",
+          "representation_dependency": "Conceptual correspondences are clear; the exact exponent in the conjectured bound is OCR-sensitive.",
+          "unit_id": "r110_u021"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1483,
+            "line_start": 1429,
+            "title": "Local eigenfunction bounds are too geometry-blind for quantum chaos",
+            "unit_id": "r110_u020",
+            "unit_type": "bound-comparison",
+            "why_material": "Defines extremal eigenfunction norms, contrasts general local bounds with improved torus behavior, and ties that improvement to absolute continuity of quantum limits. The discussion isolates the need for global geometry or arithmetic to improve on local restriction-theoretic barriers."
+          },
+          {
+            "line_end": 1540,
+            "line_start": 1510,
+            "title": "Hecke amplification beats the local sup-norm barrier",
+            "unit_id": "r110_u022",
+            "unit_type": "partial-result-and-method",
+            "why_material": "Records an arithmetic improvement over the general convexity-like sup-norm bound and a lower-growth result showing eigenfunctions are not uniformly bounded. Weighted Hecke spectral sums access individual states and reveal large values at a dense set of CM points."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "General local sup-norm bounds play the role of convexity, while CM evaluation identities translate improved pointwise eigenfunction control into Lindelof-type central-value bounds; Hecke amplification supplies a partial subconvex analogue.",
+            "limit": "The identities are special to arithmetic eigenfunctions and selected evaluation points, so the analogy is not a general equivalence for all chaotic manifolds.",
+            "parent_local_unit_ids": [
+              "r110_u021",
+              "r110_u022",
+              "r110_u027",
+              "r110_u030",
+              "r110_u031"
+            ],
+            "title": "Eigenfunction size and L-function growth share a convexity barrier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly contrasts arithmetic amplification with the still-missing use of chaotic dynamics as a global ingredient.",
+      "line_end": 1540,
+      "line_start": 1510,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Method and qualitative consequences are prose-safe; theorem exponents and constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an arithmetic improvement over the general convexity-like sup-norm bound and a lower-growth result showing eigenfunctions are not uniformly bounded. Weighted Hecke spectral sums access individual states and reveal large values at a dense set of CM points.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hecke amplification beats the local sup-norm barrier",
+      "unit_artifact_relpath": "depth/units/r110_u022.txt",
+      "unit_bytes": 1694,
+      "unit_id": "r110_u022",
+      "unit_sha256": "6334dcacb5e6685f7eaf2c5cbaa01ddd8969bc4b1390e5b39e2684f3469900b7",
+      "unit_type": "partial-result-and-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u022.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1502,
+          "line_end": 1509,
+          "text": "jecture 3.10 in the arithmetic quotient case. We show in Section 4 that it implies\nthe Lindelof Hypothesis for the Riemann zeta function as well as certain other L-\nfunctions. Thus if true the conjecture is very deep. It also puts these analytic\nquestions about L-functions in a new context. The next theorem gives a partial\nresult towards Conjecture 3.10. It gives the first improvement over the “convexity\nbound” (3.8) (recall that when dealing with congruence groups we are assuming ¢’s\nare Hecke eigenforms).\n\n",
+          "sha256": "17f6e2ac49900c62d1b987a5bb7115b33aa4fd3921d2d9db384e95b19cc09f8c"
+        },
+        "after": {
+          "line_start": 1541,
+          "line_end": 1548,
+          "text": "\n(iii) The proof of Theorem 3.11 applied for Hecke eigenbases only. In general it\n\nis easy to see that the multiplicity (A) of eigenvalue 4 satisfies\n\n(A) < (Moo(A))? - (3.11)\n\nHence the main Conjecture 3.10 implies that\n",
+          "sha256": "fa50cfb482144f024776c4f90a5e63887fc6d491cfe44c7489d7edf29be210dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1540,
+          "line_start": 1510,
+          "title": "Hecke amplification beats the local sup-norm barrier",
+          "unit_id": "r110_u022",
+          "unit_type": "partial-result-and-method",
+          "why_material": "Records an arithmetic improvement over the general convexity-like sup-norm bound and a lower-growth result showing eigenfunctions are not uniformly bounded. Weighted Hecke spectral sums access individual states and reveal large values at a dense set of CM points."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly contrasts arithmetic amplification with the still-missing use of chaotic dynamics as a global ingredient.",
+          "representation_dependency": "Method and qualitative consequences are prose-safe; theorem exponents and constants require scan verification.",
+          "unit_id": "r110_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1508,
+            "line_start": 1485,
+            "title": "The chaotic sup-norm conjecture links random waves to Lindelof",
+            "unit_id": "r110_u021",
+            "unit_type": "conjecture-and-bridge",
+            "why_material": "Formulates subpolynomial sup-norm growth for negatively curved surfaces, derives it heuristically from random waves, and identifies it as an eigenfunction analogue of Ramanujan whose arithmetic cases would imply Lindelof-type bounds."
+          },
+          {
+            "line_end": 1557,
+            "line_start": 1542,
+            "title": "Sup-norm control would constrain spectral multiplicity",
+            "unit_id": "r110_u023",
+            "unit_type": "deduction-and-bottleneck",
+            "why_material": "Derives an inequality from eigenvalue multiplicity to extremal sup norm, so the chaotic norm conjecture would imply subpolynomial multiplicity. The gap between this and known bounds exposes a major bottleneck despite numerical simplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same nonlocal arithmetic correspondences refine the eigenbasis, move singular support away from itself, overcome local pretrace barriers, and create resonances at CM points, unifying upper, lower, and delocalization arguments.",
+            "limit": "Each use requires different algebraic input; correspondence abundance alone does not automatically supply every lemma or optimal bound.",
+            "parent_local_unit_ids": [
+              "r110_u017",
+              "r110_u018",
+              "r110_u022",
+              "r110_u035",
+              "r110_u036",
+              "r110_u037"
+            ],
+            "title": "Hecke correspondences are both separators and amplifiers"
+          },
+          {
+            "claim": "General local sup-norm bounds play the role of convexity, while CM evaluation identities translate improved pointwise eigenfunction control into Lindelof-type central-value bounds; Hecke amplification supplies a partial subconvex analogue.",
+            "limit": "The identities are special to arithmetic eigenfunctions and selected evaluation points, so the analogy is not a general equivalence for all chaotic manifolds.",
+            "parent_local_unit_ids": [
+              "r110_u021",
+              "r110_u022",
+              "r110_u027",
+              "r110_u030",
+              "r110_u031"
+            ],
+            "title": "Eigenfunction size and L-function growth share a convexity barrier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Applies beyond a chosen Hecke basis and therefore distinguishes basis-dependent amplification from eigenspace multiplicity.",
+      "line_end": 1557,
+      "line_start": 1542,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Logical implication is prose-recoverable; displayed inequalities and powers need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives an inequality from eigenvalue multiplicity to extremal sup norm, so the chaotic norm conjecture would imply subpolynomial multiplicity. The gap between this and known bounds exposes a major bottleneck despite numerical simplicity.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sup-norm control would constrain spectral multiplicity",
+      "unit_artifact_relpath": "depth/units/r110_u023.txt",
+      "unit_bytes": 524,
+      "unit_id": "r110_u023",
+      "unit_sha256": "16d812bd2984b387d2bf23f679966e6affdb310e24613e508f9bc229e4e439c5",
+      "unit_type": "deduction-and-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u023.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1534,
+          "line_end": 1541,
+          "text": "to bring in the chaotic dynamics as the global ingredient (rather than arithmetic) to\nestablish a result like (a). However at present no technique is known to do so. Part\n(a) actually leads to non-trivial bounds for the zeta function (see Section 4) on the\nline Re(s) = 1/2 (by the same method used to show that Conjecture 3.10 implies\nthe Lindelof-Hypothesis). While better results are known for the zeta function this\n\ndoes place Theorem 3.11 (a) in context.\n\n",
+          "sha256": "8cf4251b5eefa9469fc069c45125d798c250c030bf0905ffe2417aa59d34ad24"
+        },
+        "after": {
+          "line_start": 1558,
+          "line_end": 1565,
+          "text": "\nAll of the above results are consistent with the random wave model for eigen-\nfunctions. However for n = 3 andT arithmetic the eigenfunctions can display\n\nmuch more drastic variations. At least a certain subset of the eigenfunctions do\n\n<!-- source-page: 40 -->\n\n",
+          "sha256": "2a1820a094ecf702abccf6c18d20027f7eb1523d38fced145c0623d555a19a65"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1557,
+          "line_start": 1542,
+          "title": "Sup-norm control would constrain spectral multiplicity",
+          "unit_id": "r110_u023",
+          "unit_type": "deduction-and-bottleneck",
+          "why_material": "Derives an inequality from eigenvalue multiplicity to extremal sup norm, so the chaotic norm conjecture would imply subpolynomial multiplicity. The gap between this and known bounds exposes a major bottleneck despite numerical simplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Applies beyond a chosen Hecke basis and therefore distinguishes basis-dependent amplification from eigenspace multiplicity.",
+          "representation_dependency": "Logical implication is prose-recoverable; displayed inequalities and powers need scan verification.",
+          "unit_id": "r110_u023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1540,
+            "line_start": 1510,
+            "title": "Hecke amplification beats the local sup-norm barrier",
+            "unit_id": "r110_u022",
+            "unit_type": "partial-result-and-method",
+            "why_material": "Records an arithmetic improvement over the general convexity-like sup-norm bound and a lower-growth result showing eigenfunctions are not uniformly bounded. Weighted Hecke spectral sums access individual states and reveal large values at a dense set of CM points."
+          },
+          {
+            "line_end": 1613,
+            "line_start": 1559,
+            "title": "Theta lifts delimit random-wave universality in dimension three",
+            "unit_id": "r110_u024",
+            "unit_type": "counterexample-and-mechanism",
+            "why_material": "An infinite subsequence of arithmetic three-dimensional eigenfunctions violates random-wave norm expectations. A special-point vanishing law explains the mechanism: most states vanish there, forcing the surviving states to be exceptionally large."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source flags the open problem of finding a geometric rather than purely arithmetic explanation in a chaotic system without caustics or focusing.",
+      "line_end": 1613,
+      "line_start": 1559,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Counterexample and vanishing mechanism are prose-safe; norm ranges, counting asymptotics, and the special quadratic-form coordinates require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An infinite subsequence of arithmetic three-dimensional eigenfunctions violates random-wave norm expectations. A special-point vanishing law explains the mechanism: most states vanish there, forcing the surviving states to be exceptionally large.",
+      "source_id": "sarnak1993_arithmetic_quantum_chaos",
+      "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+      "source_page_markers_inside_unit": [
+        40,
+        41
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta lifts delimit random-wave universality in dimension three",
+      "unit_artifact_relpath": "depth/units/r110_u024.txt",
+      "unit_bytes": 2250,
+      "unit_id": "r110_u024",
+      "unit_sha256": "b4391ba8fc3585b7ad96ac8554be9c6bd0bb4da5efbd0bacffbc85d0da835a59",
+      "unit_type": "counterexample-and-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u024.txt",
+      "source": {
+        "source_id": "sarnak1993_arithmetic_quantum_chaos",
+        "title": "Arithmetic Quantum Chaos",
+        "authors": [
+          "Peter Sarnak"
+        ],
+        "year": 1993,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "arithmetic-quantum-chaos",
+          "trace-formula",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1551,
+          "line_end": 1558,
+          "text": "Unfortunately for arithmetic hyperbolic surfaces we know of no better bound for\nu(A) than\n\n(A) = O(A1/? /log 4) (3.13)\n\nwhich follows from Berard [BD]. This is a sad state of affairs since recall that for\nT = SL2(Z), (A) < 1 is most likely true (see the beginning of Section 2.3).\n\n",
+          "sha256": "7ef33188c81e24391236b88d70b8676faa068a0b59881effee88fcd7a6e64df8"
+        },
+        "after": {
+          "line_start": 1614,
+          "line_end": 1621,
+          "text": "\nBefore ending this Section we report briefly on some recent developments con-\ncerning existence of bound states (that is cusp forms) for noncompact but finite area\nsurfaces ['\\H?. Some years ago [SA2] we made the conjecture that the existence of\ninfinitely many such forms is intimately tied to the arithmeticity of [. For exam-\nple consider the triangles Ti in Figure 2.7. We seek nonconstant L?-solutions to\nAu+Au = 0, O,u = 0 on ST (that is Neumann boundary conditions). According\nto the arithmeticity remarks on page 27, our Conjecture concerning the existence\n",
+          "sha256": "9832c14d111a0d871609c1eeb1c704ee64b6ef7709d3242500a5aa24aeaace1e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+        "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Section 3. Arithmetic Manifolds",
+            "line_end": 1676,
+            "line_start": 1175,
+            "mathematical_role": "Develops length-spectrum multiplicity, Hecke correspondences, scarring and norm conjectures, exceptional theta lifts, cusp-form deformation, and the shifted role of random-matrix ideas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1613,
+          "line_start": 1559,
+          "title": "Theta lifts delimit random-wave universality in dimension three",
+          "unit_id": "r110_u024",
+          "unit_type": "counterexample-and-mechanism",
+          "why_material": "An infinite subsequence of arithmetic three-dimensional eigenfunctions violates random-wave norm expectations. A special-point vanishing law explains the mechanism: most states vanish there, forcing the surviving states to be exceptionally large."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source flags the open problem of finding a geometric rather than purely arithmetic explanation in a chaotic system without caustics or focusing.",
+          "representation_dependency": "Counterexample and vanishing mechanism are prose-safe; norm ranges, counting asymptotics, and the special quadratic-form coordinates require scan verification.",
+          "unit_id": "r110_u024"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1557,
+            "line_start": 1542,
+            "title": "Sup-norm control would constrain spectral multiplicity",
+            "unit_id": "r110_u023",
+            "unit_type": "deduction-and-bottleneck",
+            "why_material": "Derives an inequality from eigenvalue multiplicity to extremal sup norm, so the chaotic norm conjecture would imply subpolynomial multiplicity. The gap between this and known bounds exposes a major bottleneck despite numerical simplicity."
+          },
+          {
+            "line_end": 1656,
+            "line_start": 1615,
+            "title": "Special L-values govern dissolution of cusp forms under deformation",
+            "unit_id": "r110_u025",
+            "unit_type": "deformation-and-obstruction",
+            "why_material": "Connects persistence of bound states on noncompact hyperbolic surfaces to arithmeticity and explains generic dissolution through nonvanishing Rankin-Selberg values, interpreted as a Fermi-golden-rule condition. A conditional finiteness theorem exposes spectral simplicity/multiplicity as the controlling unresolved input."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gaussian numerical behavior and no-geodesic-scar results do not imply universal random-wave norms: in dimension three, theta-lift subsequences are forced large by arithmetic vanishing even without classical focusing.",
+            "limit": "The exceptional construction is arithmetic and three-dimensional; it does not refute the stated surface conjectures.",
+            "parent_local_unit_ids": [
+              "r110_u011",
+              "r110_u019",
+              "r110_u024"
+            ],
+            "title": "Theta lifts are an adversarial boundary for random-wave heuristics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+            "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5d06ed96164090053a0f2d6cd7668c3b4fcbaed8369f1a8ffed03a3e4625551d"
+}

@@ -1,0 +1,571 @@
+{
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_42.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "issue-46-immutable-offline-handoff",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Ömer Eğeci̇oğlu",
+        "Timothy Redmond",
+        "Charles Ryavec"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF text extraction may degrade formulas or reading order; raw retained"
+      ],
+      "line_count": 2727,
+      "lineage": "issue-46-offline-handoff",
+      "machine_section_outline": [
+        {
+          "line": 11,
+          "text": "3965 Freedom Circle, Santa Clara, CA 95054"
+        },
+        {
+          "line": 25,
+          "text": "Abstract"
+        },
+        {
+          "line": 65,
+          "text": "Contents"
+        },
+        {
+          "line": 66,
+          "text": "1 Introduction 3"
+        },
+        {
+          "line": 68,
+          "text": "2 The 3-Conjecture 6"
+        },
+        {
+          "line": 70,
+          "text": "3 The 6-Conjecture 11"
+        },
+        {
+          "line": 72,
+          "text": "4 Moments 12"
+        },
+        {
+          "line": 74,
+          "text": "5 Very Special Hankel Determinants 22"
+        },
+        {
+          "line": 76,
+          "text": "6 Positivity is Insufficient 24"
+        },
+        {
+          "line": 78,
+          "text": "7 Certain Macdonald-type Integrals 25"
+        },
+        {
+          "line": 80,
+          "text": "8 Equivalent forms for ∆n 28"
+        },
+        {
+          "line": 82,
+          "text": "9 ASM, vertical symmetry, lattice path models 33"
+        },
+        {
+          "line": 84,
+          "text": "10 Path Interpretations & Hankel Determinants 37"
+        },
+        {
+          "line": 86,
+          "text": "11 Higher Order ∆n 44"
+        },
+        {
+          "line": 88,
+          "text": "12 Epilogue 45"
+        },
+        {
+          "line": 90,
+          "text": "13 APPENDIX I (Derivation of the 4-term recursion) 48"
+        },
+        {
+          "line": 92,
+          "text": "14 APPENDIX II (Renormalized 4-term recursion) 50"
+        },
+        {
+          "line": 99,
+          "text": "1 Introduction"
+        },
+        {
+          "line": 249,
+          "text": "section 10."
+        },
+        {
+          "line": 252,
+          "text": "2 The 3-Conjecture"
+        },
+        {
+          "line": 286,
+          "text": "C= 2 ."
+        },
+        {
+          "line": 350,
+          "text": "1. Fix N large and restrict attention to the polynomials. (qn (x))0≤n<N ."
+        },
+        {
+          "line": 352,
+          "text": "2. Show that if C is sufficiently large then the zeros of (qn (x))0≤n<N are real and interleaved."
+        },
+        {
+          "line": 354,
+          "text": "3. If for some C, the zeros of (qn (x))0≤n<N are not real and interleaved then as C decreases"
+        },
+        {
+          "line": 358,
+          "text": "4. Fix C and x0 to be this transition point and assume that C ≥ 3. Let t1 , t2 , t3 be the roots"
+        },
+        {
+          "line": 362,
+          "text": "5. Show that two of the roots must be equal."
+        },
+        {
+          "line": 364,
+          "text": "6. Dispose of the double root case."
+        },
+        {
+          "line": 366,
+          "text": "7. Dispose of the triple root case."
+        },
+        {
+          "line": 440,
+          "text": "1 tk+2"
+        },
+        {
+          "line": 441,
+          "text": "2 tk+2"
+        },
+        {
+          "line": 447,
+          "text": "1 tk+3"
+        },
+        {
+          "line": 448,
+          "text": "2 tk+3"
+        },
+        {
+          "line": 543,
+          "text": "3 The 6-Conjecture"
+        },
+        {
+          "line": 580,
+          "text": "4 Moments"
+        },
+        {
+          "line": 600,
+          "text": "Q4 =  −C 0 1 0 0 "
+        },
+        {
+          "line": 603,
+          "text": " −1 −2C 0 1 0 "
+        },
+        {
+          "line": 604,
+          "text": "C2 −2 −3C 0 1"
+        },
+        {
+          "line": 631,
+          "text": "1. The (n, 0)-th entry of Q−1"
+        },
+        {
+          "line": 634,
+          "text": "2. The sum of the weights of all lattice paths from the origin to the point (n, 0) with elementary"
+        },
+        {
+          "line": 643,
+          "text": "3. The sum of the monomials C n2 (T ) over all 2-3–trees T on n + 1 nodes, where n2 (T ) ="
+        },
+        {
+          "line": 646,
+          "text": "4. The coefficient of xn in"
+        },
+        {
+          "line": 650,
+          "text": "5. The sum !"
+        },
+        {
+          "line": 651,
+          "text": "1 X n+1"
+        },
+        {
+          "line": 659,
+          "text": "6. For C ≥ 3, the integral moment Z t1"
+        },
+        {
+          "line": 666,
+          "text": "7. For C = 3, the integral moment"
+        },
+        {
+          "line": 667,
+          "text": "√ Z 1"
+        },
+        {
+          "line": 668,
+          "text": "3 n+4"
+        },
+        {
+          "line": 669,
+          "text": "3 f n (u)g(u)du (15)"
+        },
+        {
+          "line": 678,
+          "text": "8. For C = 3, the expression"
+        },
+        {
+          "line": 693,
+          "text": "9. For C = 3, the expression"
+        },
+        {
+          "line": 759,
+          "text": "1 C 1 1"
+        },
+        {
+          "line": 761,
+          "text": "1 1 C 1"
+        },
+        {
+          "line": 868,
+          "text": "1 t0 (z)tn (z)"
+        },
+        {
+          "line": 895,
+          "text": "1 X n+1"
+        },
+        {
+          "line": 911,
+          "text": "C 1 1 1"
+        },
+        {
+          "line": 914,
+          "text": "C 1 1 1"
+        },
+        {
+          "line": 917,
+          "text": "C 1 1 1"
+        },
+        {
+          "line": 924,
+          "text": "2 − H 3"
+        },
+        {
+          "line": 930,
+          "text": "H1 = G + −"
+        },
+        {
+          "line": 934,
+          "text": "H2 = G − −"
+        },
+        {
+          "line": 937,
+          "text": "G = 1+ + 2( )3"
+        },
+        {
+          "line": 983,
+          "text": "-C C+2"
+        },
+        {
+          "line": 1028,
+          "text": "√ Z 2"
+        },
+        {
+          "line": 1029,
+          "text": "3 t1 1 1"
+        },
+        {
+          "line": 1069,
+          "text": "Z 1 √ √"
+        },
+        {
+          "line": 1081,
+          "text": "√ Z 1"
+        },
+        {
+          "line": 1148,
+          "text": "Z ∞ !"
+        },
+        {
+          "line": 1188,
+          "text": "5 Very Special Hankel Determinants"
+        },
+        {
+          "line": 1249,
+          "text": "∆1 = C"
+        },
+        {
+          "line": 1250,
+          "text": "∆2 = −1 + C 3 (25)"
+        },
+        {
+          "line": 1252,
+          "text": "∆3 = −2 − 3C + C"
+        },
+        {
+          "line": 1253,
+          "text": "∆4 = −14C − 6C 7 + C 10"
+        },
+        {
+          "line": 1254,
+          "text": "∆5 = 18 − 120C 3 − 30C 6 + 15C 9 − 10C 12 + C 15"
+        },
+        {
+          "line": 1274,
+          "text": "6 Positivity is Insufficient"
+        },
+        {
+          "line": 1285,
+          "text": "H−2 = H−1 = 0"
+        },
+        {
+          "line": 1290,
+          "text": "L[H0 ] = 1"
+        },
+        {
+          "line": 1331,
+          "text": "7 Certain Macdonald-type Integrals"
+        },
+        {
+          "line": 1341,
+          "text": "3 n+1 3(n+1)(3n+4) Y Y"
+        },
+        {
+          "line": 1361,
+          "text": "B = 3"
+        },
+        {
+          "line": 1463,
+          "text": "= M0 M2 − M12"
+        },
+        {
+          "line": 1479,
+          "text": "= M0 M2 M4 − M0 M32 − M12 M4 + 2M1 M2 M3 − M23"
+        },
+        {
+          "line": 1483,
+          "text": "8 Equivalent forms for ∆n"
+        },
+        {
+          "line": 1487,
+          "text": "2. The determinant ∆n (3) itself can be expressed in a number of different forms as the following"
+        },
+        {
+          "line": 1492,
+          "text": "1. ak = k+1 k ,"
+        },
+        {
+          "line": 1494,
+          "text": "2. ak = bk (x) = kj=0 k+1 k−j x for any x. In particular det[bi+j (x)]0≤i,j≤n evaluates to"
+        },
+        {
+          "line": 1498,
+          "text": "3. ak = k+1 k ,"
+        },
+        {
+          "line": 1500,
+          "text": "4. ak = 3k+2"
+        },
+        {
+          "line": 1511,
+          "text": "3 k+4 1 k"
+        },
+        {
+          "line": 1525,
+          "text": "! √ Z"
+        },
+        {
+          "line": 1531,
+          "text": "√ Z 1"
+        },
+        {
+          "line": 1773,
+          "text": "9 ASM, vertical symmetry, lattice path models"
+        },
+        {
+          "line": 1776,
+          "text": "1. every row and column has sum 1,"
+        },
+        {
+          "line": 1778,
+          "text": "2. in every row and column, the non-zero entries start with 1 and alternate in sign."
+        },
+        {
+          "line": 1844,
+          "text": "1. Non-intersecting if no two paths πi , πj have a common point,"
+        },
+        {
+          "line": 1846,
+          "text": "2. Osculating if the paths are allowed to meet at lattice points only, but without crossing."
+        },
+        {
+          "line": 1897,
+          "text": "1. A1,i = Ai,1 = n + 1 − i for i = 1, 2, . . . , n,"
+        },
+        {
+          "line": 1899,
+          "text": "2. Ai,j − Ai,j+1 and Ai,j − Ai+1,j are in {0, 1} for 1 ≤ i, j ≤ n."
+        },
+        {
+          "line": 1908,
+          "text": "1 of lemma 1, these can be viewed as paths in the n × n grid. The rows start with the points"
+        },
+        {
+          "line": 1934,
+          "text": "1. In c, the entries of A from bottom up are 1, 1, 2, 2, . . . , n + 1, n + 1, n + 2."
+        },
+        {
+          "line": 1936,
+          "text": "2. In R1 , the entries of A from bottom up are 0, 1, 1, 2, 2, . . . , n + 1, n + 1."
+        },
+        {
+          "line": 1941,
+          "text": "4. In the last row in R1 , R2 , . . . , Rn+1 the entries of A are 0."
+        },
+        {
+          "line": 1953,
+          "text": "5 B0 B1 B2 B3 B4"
+        },
+        {
+          "line": 1954,
+          "text": "-1 1 0 0 0 0 5 4 3 2 1 A0"
+        },
+        {
+          "line": 1956,
+          "text": "-1 1 0 -1 0 1 4 4 3 2 2 1 A1 3 2 2 1"
+        },
+        {
+          "line": 1958,
+          "text": "-1 1 -1 1 0 0 3 3 2 1 1 0 A2 2 1 1 0"
+        },
+        {
+          "line": 1960,
+          "text": "-1 0 0 1 0 0 2 2 2 1 0 0 A3 2 1 0 0"
+        },
+        {
+          "line": 1962,
+          "text": "-1 1 0 0 0 0 1 1 0 0 0 0 A4 0 0 0 0"
+        },
+        {
+          "line": 1979,
+          "text": "10 Path Interpretations & Hankel Determinants"
+        },
+        {
+          "line": 2051,
+          "text": "A0 C0"
+        },
+        {
+          "line": 2053,
+          "text": "A1 C2"
+        },
+        {
+          "line": 2095,
+          "text": "N M −1"
+        },
+        {
+          "line": 2101,
+          "text": "M N −1"
+        },
+        {
+          "line": 2109,
+          "text": "N M −1 N −1 M −1"
+        },
+        {
+          "line": 2114,
+          "text": "M N −1 M −1 N −1"
+        },
+        {
+          "line": 2177,
+          "text": "N N −1"
+        },
+        {
+          "line": 2185,
+          "text": "N N −1"
+        },
+        {
+          "line": 2194,
+          "text": "N N −1"
+        },
+        {
+          "line": 2224,
+          "text": "A0 B1"
+        },
+        {
+          "line": 2225,
+          "text": "A1 B0"
+        },
+        {
+          "line": 2259,
+          "text": "2. There are no two paths in Π such that one passes through (−i, −j), and the other through"
+        },
+        {
+          "line": 2310,
+          "text": "1. the entries are bounded by n,"
+        },
+        {
+          "line": 2312,
+          "text": "2. the first cell in row i is labeled i,"
+        },
+        {
+          "line": 2314,
+          "text": "3. entries are weakly-increasing down the anti-diagonals."
+        },
+        {
+          "line": 2347,
+          "text": "11 Higher Order ∆n"
+        },
+        {
+          "line": 2370,
+          "text": "L[1] = 1"
+        },
+        {
+          "line": 2412,
+          "text": "12 Epilogue"
+        },
+        {
+          "line": 2470,
+          "text": "References"
+        },
+        {
+          "line": 2518,
+          "text": "13 APPENDIX I (Derivation of the 4-term recursion)"
+        },
+        {
+          "line": 2592,
+          "text": "M1 = 1"
+        },
+        {
+          "line": 2624,
+          "text": "14 APPENDIX II (Renormalized 4-term recursion)"
+        },
+        {
+          "line": 2681,
+          "text": "A = CB 3"
+        },
+        {
+          "line": 2691,
+          "text": "C= 2 ."
+        }
+      ],
+      "normalized_bytes": 150666,
+      "normalized_page_count": null,
+      "normalized_relpath": "openalex_handoffs/riemann_fulltext_v1/normalized/w1602172244.txt",
+      "normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "prior_v1_units": [],
+      "source_id": "openalex_w1602172244",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "riemann_hypothesis"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2001,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1/normalized/w1602172244.txt"
+    }
+  ]
+}

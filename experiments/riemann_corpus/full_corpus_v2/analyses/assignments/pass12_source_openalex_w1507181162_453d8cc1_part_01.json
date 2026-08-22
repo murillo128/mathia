@@ -1,0 +1,1110 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1507181162_453d8cc1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1507181162",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a missed v1 mechanism connecting the heuristic to the actual proof architecture; later extension and constant previews are not needed for coherence.",
+      "line_end": 214,
+      "line_start": 164,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the reusable mechanism is stated almost entirely in prose, with only a simple exponential-product display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the incompatible length-versus-moment constraint and the loss from reconstructing tails by Markov bounds, then replaces both with blockwise powers, first-bad-block exceptional sets, and direct truncated exponential moments.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why one polynomial and tail bounds lose sharpness",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u06.txt",
+      "unit_bytes": 3430,
+      "unit_id": "full_openalex_w1507181162_u06",
+      "unit_sha256": "f1cf29af338856caea73e4329b7a4c4c206569a689f4dee30a2a53d408dbf988",
+      "unit_type": "method-obstruction-and-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u06.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "where the pieces ℜ xi−1 <p≤xi pU1/2\n                  P              p\n                                    are independent of one another, and have mean zero\n                  P\nand variance (1/2) xi−1 <p≤xi 1/p ≈ (1/2) log(log xi / log xi−1 ). In particular, the latter\nterms in the sum may not contribute much to the variance, and so will not contribute\nmuch to the typical size.\n\n",
+          "sha256": "ce3d9285da1023d522cce4b3c40b36336b4a704e6e66a371fd9e7357a9b68510"
+        },
+        "after": {
+          "line_start": 215,
+          "line_end": 222,
+          "text": "                                                    R 2T                               2\n   As in the proof of the conditional estimate T |ζ(1/2 + it)|2k dt ≪k,ǫ T logk +ǫ T ,\nour proof of Theorem 1 is very general and extends to give (presumably) sharp upper\nbounds3 for other moments of L-functions. We discuss this in §5, below. Straightforward\n                                                                           R T +T θ\nadaptations would also yield sharp bounds for the short interval moments T          |ζ(1/2+\nit)|2k dt considered by Ivić [7], where 0 < θ ≤ 1 and k ≥ 0.\n   The last section of this paper is a discussion about the implicit constant in Theorem\n",
+          "sha256": "c0c46a41e710fcd3bfd0fe1fa609d229df0eb2b458075d1b4b8257b8b813bbed"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 252,
+            "line_start": 30,
+            "mathematical_role": "States Theorem 1, develops the random Euler-product and independent-increment heuristic, identifies two losses in the prior method, and previews the multiscale direct-moment repair and constant problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 214,
+          "line_start": 164,
+          "title": "Why one polynomial and tail bounds lose sharpness",
+          "unit_id": "full_openalex_w1507181162_u06",
+          "unit_type": "method-obstruction-and-repair",
+          "why_material": "Identifies the incompatible length-versus-moment constraint and the loss from reconstructing tails by Markov bounds, then replaces both with blockwise powers, first-bad-block exceptional sets, and direct truncated exponential moments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a missed v1 mechanism connecting the heuristic to the actual proof architecture; later extension and constant previews are not needed for coherence.",
+          "representation_dependency": "Low: the reusable mechanism is stated almost entirely in prose, with only a simple exponential-product display.",
+          "unit_id": "full_openalex_w1507181162_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 163,
+            "line_start": 74,
+            "title": "Zeros as a one-sided error and prime blocks as independent increments",
+            "unit_id": "full_openalex_w1507181162_u02",
+            "unit_type": "random-euler-product heuristics",
+            "why_material": "Connects moments to the distribution of log zeta, motivates discarding the zero contribution for upper bounds, models prime phases independently, and observes that later prime blocks have decreasing variance."
+          },
+          {
+            "line_end": 307,
+            "line_start": 253,
+            "title": "One-sided log-zeta majorant and cosine-product pairing rule",
+            "unit_id": "full_openalex_w1507181162_u03",
+            "unit_type": "log-zeta upper-bound toolkit",
+            "why_material": "Provides the two analytic interfaces used throughout: a length-flexible RH-conditional upper bound for log zeta and an exact main-term/error formula for products of prime cosine factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof operationalizes the random model without assuming it: decreasing block variances license decreasing truncation degrees, positivity permits full-interval integration, and even-prime pairing supplies the Gaussian exponential combinatorially.",
+            "limit": "The bridge is conditional on the log-zeta majorant under RH and only proves an upper bound; it does not establish a distributional Gaussian limit.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u06",
+              "full_openalex_w1507181162_u03",
+              "full_openalex_w1507181162_u04",
+              "full_openalex_w1507181162_u07",
+              "full_openalex_w1507181162_u08",
+              "full_openalex_w1507181162_u09"
+            ],
+            "title": "From independent prime increments to a deterministic multiscale moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 252,
+              "line_start": 215,
+              "reason": "Previews family extensions and constant behavior, gives credits and footnotes; substantive mechanisms are developed in units from sections 5 and 6."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The local notation and exact reason for introducing squares are contained in the span.",
+      "line_end": 578,
+      "line_start": 504,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the truncated series is display-heavy, but the positivity and truncation arguments are explicitly explained in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how bounded block values permit short exponential series while writing each exponential as a square makes the truncated integrand nonnegative, so integration over the good set can safely be enlarged to the full interval.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square the truncated exponential before enlarging the domain",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u07.txt",
+      "unit_bytes": 4754,
+      "unit_id": "full_openalex_w1507181162_u07",
+      "unit_sha256": "8693718986e1673972cd4bab4bef8dc57dc876e1a50d84b80fe3373f43e040a7",
+      "unit_type": "positive-truncation construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u07.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 496,
+          "line_end": 503,
+          "text": "\n                                                                                               Q.E.D.\n\n\n\n\n                                  4. Proofs of the Lemmas\n\n",
+          "sha256": "43d1aed6f337d6641a41a8ac3a5214533d2934cc3575b8f28143a91e900805eb"
+        },
+        "after": {
+          "line_start": 579,
+          "line_end": 586,
+          "text": "   Now if we expand all of the j-th powers, the squares, and the product over i, and\nrecall that\n                     X         cos(t log p) log(T βI /p)\n       ℜFi (t) =              1/2+1/(βI log T ) log(T βI )\n                                                           ∀1 ≤ i ≤ I, T ≤ t ≤ 2T,\n                  β       β\n                            p\n                       T i−1 <p≤T i\n",
+          "sha256": "23582c1416ba5d0510281efc0a14115913d59b43bc7834430d7e5a3c4c288d87"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Lemma 1",
+            "line_end": 779,
+            "line_start": 502,
+            "mathematical_role": "Controls the good set by positive squared exponential truncations, converts the integral to prime-pairing combinatorics, and reassembles the main term into an Euler-product exponential."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 578,
+          "line_start": 504,
+          "title": "Square the truncated exponential before enlarging the domain",
+          "unit_id": "full_openalex_w1507181162_u07",
+          "unit_type": "positive-truncation construction",
+          "why_material": "Shows how bounded block values permit short exponential series while writing each exponential as a square makes the truncated integrand nonnegative, so integration over the good set can safely be enlarged to the full interval."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The local notation and exact reason for introducing squares are contained in the span.",
+          "representation_dependency": "Medium: the truncated series is display-heavy, but the positivity and truncation arguments are explicitly explained in prose.",
+          "unit_id": "full_openalex_w1507181162_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 496,
+            "line_start": 334,
+            "title": "Geometric blocks, good/first-bad strata, and theorem deduction",
+            "unit_id": "full_openalex_w1507181162_u04",
+            "unit_type": "multi-polynomial decomposition setup",
+            "why_material": "Defines a multiscale prime partition, classifies every height by the first block that violates its expected scale, states the typical/bad-set bounds, and shows how their penalties offset the majorant's truncation cost."
+          },
+          {
+            "line_end": 735,
+            "line_start": 579,
+            "title": "Prime pairing converts the analytic integral into a multiplicative product",
+            "unit_id": "full_openalex_w1507181162_u08",
+            "unit_type": "orthogonality-to-product reduction",
+            "why_material": "Expands all block polynomials, verifies the total Dirichlet length is short enough for the mean-value error, uses even-multiplicity pairing and coefficient domination, and reassembles the surviving main terms blockwise."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof operationalizes the random model without assuming it: decreasing block variances license decreasing truncation degrees, positivity permits full-interval integration, and even-prime pairing supplies the Gaussian exponential combinatorially.",
+            "limit": "The bridge is conditional on the log-zeta majorant under RH and only proves an upper bound; it does not establish a distributional Gaussian limit.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u06",
+              "full_openalex_w1507181162_u03",
+              "full_openalex_w1507181162_u04",
+              "full_openalex_w1507181162_u07",
+              "full_openalex_w1507181162_u08",
+              "full_openalex_w1507181162_u09"
+            ],
+            "title": "From independent prime increments to a deterministic multiscale moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span carries the full bridge from the positive polynomial integral to the square-supported combinatorial sum; the final evaluation is separated into the next unit.",
+      "line_end": 735,
+      "line_start": 579,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: dense multi-line products are extraction-fragmented, so later use should retain the checked source span or consult the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands all block polynomials, verifies the total Dirichlet length is short enough for the mean-value error, uses even-multiplicity pairing and coefficient domination, and reassembles the surviving main terms blockwise.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime pairing converts the analytic integral into a multiplicative product",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u08.txt",
+      "unit_bytes": 10146,
+      "unit_id": "full_openalex_w1507181162_u08",
+      "unit_sha256": "6e43f9ea3ff8f9e04f16eef340bd2ed9ee6c5fa68035af68e8bb7a68f172d0c6",
+      "unit_type": "orthogonality-to-product reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u08.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 571,
+          "line_end": 578,
+          "text": "                                                 T   1≤i≤I              −3/4\n                                                             0≤j≤100kβi\n\nHere [·] denotes the integer part of ·, and in the ﬁnal line we completed the range of\nintegration to the entire interval [T, 2T ], which is permissible since we are seeking an\nupper bound and the integrand is always positive. Obtaining this positivity is the reason\nthat we wrote exp (2kℜFi (t)) = (exp (kℜFi (t)))2 in the ﬁrst place, rather than looking\ndirectly at the series expansion of exp (2kℜFi (t)).\n",
+          "sha256": "e93d202d10e82c17b85e6cf957ef4264b435027bd9a53fc6a7685efa95b49814"
+        },
+        "after": {
+          "line_start": 736,
+          "line_end": 743,
+          "text": "   The function f is supported on squares, so we can certainly restrict the sum over m\nto even terms m = 2n. Thus the above expression is equal to\n   Y        X        (2k)2n      X            f (p21 ...p2n ) #{(q1 , ..., q2n ) : q1 ...q2n = p21 ...p2n }\nT                                                                                                           ,\n  1≤i≤I         −3/4\n                      (2n)!  β              β\n                                                p 1 ...p n    #{(q 1 , ..., qn ) : q1 ...qn = p 1 ...p n }\n         0≤n≤100kβi                         T i−1 <p1 ,...,pn≤T i\n",
+          "sha256": "81b818923f7874cb533a2700d46f6b9bd0911a3bf75a0038c74e1e9db2e2cc27"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Lemma 1",
+            "line_end": 779,
+            "line_start": 502,
+            "mathematical_role": "Controls the good set by positive squared exponential truncations, converts the integral to prime-pairing combinatorics, and reassembles the main term into an Euler-product exponential."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 735,
+          "line_start": 579,
+          "title": "Prime pairing converts the analytic integral into a multiplicative product",
+          "unit_id": "full_openalex_w1507181162_u08",
+          "unit_type": "orthogonality-to-product reduction",
+          "why_material": "Expands all block polynomials, verifies the total Dirichlet length is short enough for the mean-value error, uses even-multiplicity pairing and coefficient domination, and reassembles the surviving main terms blockwise."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span carries the full bridge from the positive polynomial integral to the square-supported combinatorial sum; the final evaluation is separated into the next unit.",
+          "representation_dependency": "High: dense multi-line products are extraction-fragmented, so later use should retain the checked source span or consult the scan.",
+          "unit_id": "full_openalex_w1507181162_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 578,
+            "line_start": 504,
+            "title": "Square the truncated exponential before enlarging the domain",
+            "unit_id": "full_openalex_w1507181162_u07",
+            "unit_type": "positive-truncation construction",
+            "why_material": "Shows how bounded block values permit short exponential series while writing each exponential as a square makes the truncated integrand nonnegative, so integration over the good set can safely be enlarged to the full interval."
+          },
+          {
+            "line_end": 778,
+            "line_start": 736,
+            "title": "Square support collapses multiplicities to the Gaussian exponential",
+            "unit_id": "full_openalex_w1507181162_u09",
+            "unit_type": "combinatorial-collapse",
+            "why_material": "Restricts to even total degree, computes the correction for repeated primes, and bounds the result by exp(k squared times the prime harmonic sum), yielding the sharp log-power."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof operationalizes the random model without assuming it: decreasing block variances license decreasing truncation degrees, positivity permits full-interval integration, and even-prime pairing supplies the Gaussian exponential combinatorially.",
+            "limit": "The bridge is conditional on the log-zeta majorant under RH and only proves an upper bound; it does not establish a distributional Gaussian limit.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u06",
+              "full_openalex_w1507181162_u03",
+              "full_openalex_w1507181162_u04",
+              "full_openalex_w1507181162_u07",
+              "full_openalex_w1507181162_u08",
+              "full_openalex_w1507181162_u09"
+            ],
+            "title": "From independent prime increments to a deterministic multiscale moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the Lemma 1 mechanism after the preceding orthogonality reduction.",
+      "line_end": 778,
+      "line_start": 736,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: factorial and multiplicity displays are formula-dependent, although the square-support conclusion and final exponential bound are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restricts to even total degree, computes the correction for repeated primes, and bounds the result by exp(k squared times the prime harmonic sum), yielding the sharp log-power.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square support collapses multiplicities to the Gaussian exponential",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u09.txt",
+      "unit_bytes": 3434,
+      "unit_id": "full_openalex_w1507181162_u09",
+      "unit_sha256": "8602b0fb35b9e3c194c2e3d9f996b9ac8d9a9d7ae67eb4f8d89600195fa7605f",
+      "unit_type": "combinatorial-collapse",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u09.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 728,
+          "line_end": 735,
+          "text": "                                                        −3/4\n                                                        i\n                                                                        T βi−1 <p1 ,...,pm≤T iβ\n\n\nThe reader may note that we have now undone the “introduction of squares” (by split-\nting exp (2kℜFi (t)) as (exp (kℜFi (t)))2 ) that we performed earlier, and recovered an\nexpression involving powers of 2k.\n",
+          "sha256": "89de483c7e516cd25413383256eb56ece7a0f6a1a900c600a65fc196373fb087"
+        },
+        "after": {
+          "line_start": 779,
+          "line_end": 786,
+          "text": "\n4.2. Proof of Lemma 2. The proof of Lemma 2 is a direct modiﬁcation of the proof\nof Lemma 1, so we shall simply outline the main details. We have\n                                                                         \n                                                                   βj\n                                               1              log(T /p) \n      Z                       X\n               exp 2kℜ                                                      dt\n",
+          "sha256": "f6b60dc783e967408f80898541e16ec7b5bb5bb16174eb7c3ba1e269a3d1370f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Lemma 1",
+            "line_end": 779,
+            "line_start": 502,
+            "mathematical_role": "Controls the good set by positive squared exponential truncations, converts the integral to prime-pairing combinatorics, and reassembles the main term into an Euler-product exponential."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 778,
+          "line_start": 736,
+          "title": "Square support collapses multiplicities to the Gaussian exponential",
+          "unit_id": "full_openalex_w1507181162_u09",
+          "unit_type": "combinatorial-collapse",
+          "why_material": "Restricts to even total degree, computes the correction for repeated primes, and bounds the result by exp(k squared times the prime harmonic sum), yielding the sharp log-power."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the Lemma 1 mechanism after the preceding orthogonality reduction.",
+          "representation_dependency": "High: factorial and multiplicity displays are formula-dependent, although the square-support conclusion and final exponential bound are legible.",
+          "unit_id": "full_openalex_w1507181162_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 735,
+            "line_start": 579,
+            "title": "Prime pairing converts the analytic integral into a multiplicative product",
+            "unit_id": "full_openalex_w1507181162_u08",
+            "unit_type": "orthogonality-to-product reduction",
+            "why_material": "Expands all block polynomials, verifies the total Dirichlet length is short enough for the mean-value error, uses even-multiplicity pairing and coefficient domination, and reassembles the surviving main terms blockwise."
+          },
+          {
+            "line_end": 928,
+            "line_start": 780,
+            "title": "An oversized block becomes its own high-moment penalty",
+            "unit_id": "full_openalex_w1507181162_u10",
+            "unit_type": "exceptional-stratum suppression",
+            "why_material": "On each first-bad stratum, inserts a high even power of the offending block, uses disjoint prime ranges and the same pairing calculus, and obtains a penalty exponential in inverse block scale that dominates the truncation cost."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof operationalizes the random model without assuming it: decreasing block variances license decreasing truncation degrees, positivity permits full-interval integration, and even-prime pairing supplies the Gaussian exponential combinatorially.",
+            "limit": "The bridge is conditional on the log-zeta majorant under RH and only proves an upper bound; it does not establish a distributional Gaussian limit.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u06",
+              "full_openalex_w1507181162_u03",
+              "full_openalex_w1507181162_u04",
+              "full_openalex_w1507181162_u07",
+              "full_openalex_w1507181162_u08",
+              "full_openalex_w1507181162_u09"
+            ],
+            "title": "From independent prime increments to a deterministic multiscale moment bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is a deliberate modification of Lemma 1, so its reusable contribution is the witness-power and penalty mechanism rather than repeated algebra.",
+      "line_end": 928,
+      "line_start": 780,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: quantitative exponents and products are display-dependent; the prose still identifies independence from the later cutoff and the source of the error term.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "On each first-bad stratum, inserts a high even power of the offending block, uses disjoint prime ranges and the same pairing calculus, and obtains a penalty exponential in inverse block scale that dominates the truncation cost.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An oversized block becomes its own high-moment penalty",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u10.txt",
+      "unit_bytes": 10437,
+      "unit_id": "full_openalex_w1507181162_u10",
+      "unit_sha256": "3d90ffdcca143f7ee2ba562b8b1ad83e9175e33c95b2e1d341b1d0c5e51bcd2f",
+      "unit_type": "exceptional-stratum suppression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u10.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 772,
+          "line_end": 779,
+          "text": "\n<!-- source-page: 12 -->\n\n12                                                 ADAM J HARPER\n                                                                2\nThis is indeed ≤ T exp(k 2 log log T ) = T logk T , as claimed in Lemma 1.\n                                                                                                                    Q.E.D.\n\n",
+          "sha256": "5202ec85ce386bd6d2b68dd793c3afa24efcb7d864a686703f101c625d4d89e4"
+        },
+        "after": {
+          "line_start": 929,
+          "line_end": 936,
+          "text": "\n\n4.3. Proof of Lemma 3. To prove Lemma 3 we need to show, ﬁrstly, that\n                                                                    \n                                              β         X (1/2)\n                            1            log(T I /p)\nZ\n                                                                       dt ≪k T logk2 T.\n",
+          "sha256": "e58e35b3216fa421affa2e2ab95ed6f8a743fdd09f65d6eb45e3b7425b4996d6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Lemma 2",
+            "line_end": 930,
+            "line_start": 780,
+            "mathematical_role": "Uses a high even power of the first oversized block as a witness and obtains an exponential penalty that makes every bad stratum summable."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 928,
+          "line_start": 780,
+          "title": "An oversized block becomes its own high-moment penalty",
+          "unit_id": "full_openalex_w1507181162_u10",
+          "unit_type": "exceptional-stratum suppression",
+          "why_material": "On each first-bad stratum, inserts a high even power of the offending block, uses disjoint prime ranges and the same pairing calculus, and obtains a penalty exponential in inverse block scale that dominates the truncation cost."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is a deliberate modification of Lemma 1, so its reusable contribution is the witness-power and penalty mechanism rather than repeated algebra.",
+          "representation_dependency": "High: quantitative exponents and products are display-dependent; the prose still identifies independence from the later cutoff and the source of the error term.",
+          "unit_id": "full_openalex_w1507181162_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 778,
+            "line_start": 736,
+            "title": "Square support collapses multiplicities to the Gaussian exponential",
+            "unit_id": "full_openalex_w1507181162_u09",
+            "unit_type": "combinatorial-collapse",
+            "why_material": "Restricts to even total degree, computes the correction for repeated primes, and bounds the result by exp(k squared times the prime harmonic sum), yielding the sharp log-power."
+          },
+          {
+            "line_end": 1082,
+            "line_start": 931,
+            "title": "Dyadic control of the fluctuating prime-square term",
+            "unit_id": "full_openalex_w1507181162_u11",
+            "unit_type": "secondary-exceptional-decomposition",
+            "why_material": "Builds a second good/first-bad hierarchy for dyadic prime-square pieces, discards very large scales by measure and Cauchy-Schwarz, and combines the remaining high-moment penalty with disjointness from the main prime sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partitioning by the first oversized block converts failure of typical control into a high-moment witness whose exponential penalty more than pays the majorant's shorter-cutoff cost.",
+            "limit": "The available penalty forces an exponentially small terminal scale in k and is precisely where sharp dependence of the implicit constant is lost.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u04",
+              "full_openalex_w1507181162_u10"
+            ],
+            "title": "First-bad-block localization pays for an otherwise illegal long polynomial"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This isolates why the secondary polynomial in the log-zeta majorant cannot simply be treated as a uniform constant.",
+      "line_end": 1082,
+      "line_start": 931,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: powers and dyadic sums are extraction-fragmented, but definitions, range reductions, and the final summability claim are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a second good/first-bad hierarchy for dyadic prime-square pieces, discards very large scales by measure and Cauchy-Schwarz, and combines the remaining high-moment penalty with disjointness from the main prime sum.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic control of the fluctuating prime-square term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u11.txt",
+      "unit_bytes": 10471,
+      "unit_id": "full_openalex_w1507181162_u11",
+      "unit_sha256": "a094562f9e91b79c074759b65311ef9ad622d82384802a1e86f7ae3e1fb9bc90",
+      "unit_type": "secondary-exceptional-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u11.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 923,
+          "line_end": 930,
+          "text": "                                                                                            2            −1\n                                                                            ≪ T logk T · e−βj+1 log(1/βj+1 )/21 ,\n\nas also claimed in Lemma 2.\n\n                                                                                                                   Q.E.D.\n\n\n",
+          "sha256": "c0f08dcd8ff3b5995f6527bfb8ca80419c7f619452a57a5c8c75360640e4314c"
+        },
+        "after": {
+          "line_start": 1083,
+          "line_end": 1090,
+          "text": "\n                                  5. Other moments of L-functions\n\n   As promised in the introduction, in this section we indicate how the proof of The-\norem 1 can be adapted to yield (presumably) sharp bounds for other moments of L-\nfunctions. Similarly as in Soundararajan’s work [17], all that one really needs is an\nanalogue of Proposition 1 (upper bound by Dirichlet polynomials) and Proposition 2\n(mean value/orthogonality result) for the L-functions under consideration.\n",
+          "sha256": "a56acba167f895a549240ade94ffc3cd245496a011061042ebbdb38e379383dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Lemma 3",
+            "line_end": 1083,
+            "line_start": 931,
+            "mathematical_role": "Introduces dyadic exceptional sets for the prime-square polynomial and proves that its extra fluctuation can be absorbed without spoiling the sharp logarithmic exponent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1082,
+          "line_start": 931,
+          "title": "Dyadic control of the fluctuating prime-square term",
+          "unit_id": "full_openalex_w1507181162_u11",
+          "unit_type": "secondary-exceptional-decomposition",
+          "why_material": "Builds a second good/first-bad hierarchy for dyadic prime-square pieces, discards very large scales by measure and Cauchy-Schwarz, and combines the remaining high-moment penalty with disjointness from the main prime sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This isolates why the secondary polynomial in the log-zeta majorant cannot simply be treated as a uniform constant.",
+          "representation_dependency": "High: powers and dyadic sums are extraction-fragmented, but definitions, range reductions, and the final summability claim are recoverable.",
+          "unit_id": "full_openalex_w1507181162_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 928,
+            "line_start": 780,
+            "title": "An oversized block becomes its own high-moment penalty",
+            "unit_id": "full_openalex_w1507181162_u10",
+            "unit_type": "exceptional-stratum suppression",
+            "why_material": "On each first-bad stratum, inserts a high even power of the offending block, uses disjoint prime ranges and the same pairing calculus, and obtains a penalty exponential in inverse block scale that dominates the truncation cost."
+          },
+          {
+            "line_end": 1218,
+            "line_start": 1084,
+            "title": "Porting the two-tool architecture to quadratic Dirichlet L-functions",
+            "unit_id": "full_openalex_w1507181162_u05",
+            "unit_type": "quadratic-character family extension",
+            "why_material": "States the family moment bound, replaces time orthogonality by character square-detection, explains why prime squares contribute a fixed shift rather than a fluctuating polynomial, and reconstructs the good/bad block proof with the resulting exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The prime-square part of the zeta majorant is not uniformly bounded, so a dyadic good/first-bad partition is nested around it and coupled to the main prime sum through disjoint supports.",
+            "limit": "This mechanism is specific to the form of the zeta majorant; in the quadratic-character family the square contribution becomes an essentially fixed logarithmic shift.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u03",
+              "full_openalex_w1507181162_u11"
+            ],
+            "title": "A secondary fluctuating term needs its own scale hierarchy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the rigorous diagnostic before comparison with conjectural models.",
+      "line_end": 1263,
+      "line_start": 1226,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the bound is display-heavy, while the dominant-term diagnosis and scale relation are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracks constants through good and bad strata and shows that the main loss comes from the terminal scale forced to be exponentially small in k, producing a double-exponential dependence.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The shortest terminal block drives the double-exponential constant",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u12.txt",
+      "unit_bytes": 2215,
+      "unit_id": "full_openalex_w1507181162_u12",
+      "unit_sha256": "1ab0e2526d9920311bd98893b10fa935a98825f41d6606fc0ea97b7d76d52426",
+      "unit_type": "constant-loss-accounting",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u12.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1218,
+          "line_end": 1225,
+          "text": "completes the proof of Theorem 2.\n\n   In §4 of Soundararajan’s paper [17], he also discusses the moment corresponding to\nall primitive characters to a given (prime) modulus, and the moment corresponding to\nquadratic twists of an elliptic curve L-function. The author expects that the proofs of\nTheorems 1 and 2 should adapt to those cases also, but has not checked all details.\n\n\n",
+          "sha256": "3544f25180ee1b74bb2a7906ffdf19cb499095a2c9d7fadf2e0ac21ede7680af"
+        },
+        "after": {
+          "line_start": 1264,
+          "line_end": 1271,
+          "text": "   This situation is a little disappointing, because the celebrated random matrix theory\napproach of Keating and Snaith [8], now extensively developed, suggests that for any\nﬁxed k ≥ 0 one should have\n                Z T\n                                                         2\n                     |ζ(1/2 + it)|2k dt ∼ a(k)f (k)T logk T    as T → ∞,\n                  0\n\n",
+          "sha256": "2b6e931d05d890d00db8b39594248e390c4d7f18dd52d50a94c6a71d4bbad59d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Implicit constant",
+            "line_end": 1372,
+            "line_start": 1226,
+            "mathematical_role": "Tracks the double-exponential rigorous constant, compares it with random-matrix factors, optimizes the Gaussian Euler-product heuristic, and locates the unavailable long-polynomial estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1263,
+          "line_start": 1226,
+          "title": "The shortest terminal block drives the double-exponential constant",
+          "unit_id": "full_openalex_w1507181162_u12",
+          "unit_type": "constant-loss-accounting",
+          "why_material": "Tracks constants through good and bad strata and shows that the main loss comes from the terminal scale forced to be exponentially small in k, producing a double-exponential dependence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the rigorous diagnostic before comparison with conjectural models.",
+          "representation_dependency": "Medium: the bound is display-heavy, while the dominant-term diagnosis and scale relation are explicit in prose.",
+          "unit_id": "full_openalex_w1507181162_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1218,
+            "line_start": 1084,
+            "title": "Porting the two-tool architecture to quadratic Dirichlet L-functions",
+            "unit_id": "full_openalex_w1507181162_u05",
+            "unit_type": "quadratic-character family extension",
+            "why_material": "States the family moment bound, replaces time orthogonality by character square-detection, explains why prime squares contribute a fixed shift rather than a fluctuating polynomial, and reconstructs the good/bad block proof with the resulting exponent."
+          },
+          {
+            "line_end": 1296,
+            "line_start": 1264,
+            "title": "Random-matrix arithmetic and matrix factors predict a much smaller constant",
+            "unit_id": "full_openalex_w1507181162_u13",
+            "unit_type": "conjectural-constant-benchmark",
+            "why_material": "Records the conjectural moment constant as arithmetic and random-matrix factors and identifies their large-k decay, creating a quantitative benchmark for the proof's loss."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Random-matrix and Gaussian Euler-product pictures agree on a much smaller large-k scale; optimizing the heuristic exposes that rigor would need control of prime polynomials as long as T to the power 2 over k.",
+            "limit": "The Gaussian calculation neglects zeros and treats small primes too generously, so agreement of scales is a diagnostic rather than a proof of the full conjectural constant.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u12",
+              "full_openalex_w1507181162_u13",
+              "full_openalex_w1507181162_u14"
+            ],
+            "title": "Constant mismatch isolates the unresolved analytic capacity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1225,
+              "line_start": 1219,
+              "reason": "Names plausible further family extensions while explicitly noting that their details were not checked."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit is a comparison benchmark, not evidence that the conjectured asymptotic has been proved.",
+      "line_end": 1296,
+      "line_start": 1264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: Euler and gamma products require the displayed formulas; asymptotic roles are explained in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the conjectural moment constant as arithmetic and random-matrix factors and identifies their large-k decay, creating a quantitative benchmark for the proof's loss.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random-matrix arithmetic and matrix factors predict a much smaller constant",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u13.txt",
+      "unit_bytes": 1962,
+      "unit_id": "full_openalex_w1507181162_u13",
+      "unit_sha256": "f5729f190bdf5006d5ad8784f8cc2f19f895207a075bf9c1ec8bbdfca3a15803",
+      "unit_type": "conjectural-constant-benchmark",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u13.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1256,
+          "line_end": 1263,
+          "text": "term in the above is clearly the third one, as expected since it corresponds to most of\nthe integral, and since e−1000k ≤ βI ≤ 20e−1000k when T is large we indeed ﬁnd that\n                           Z 2T\n                                                       O(k)   2\n                                |ζ(1/2 + it)|2k dt ≪ ee T logk T,\n                          T\n\nwith an absolute implied constant, when k and T are large.\n",
+          "sha256": "a3dfa6d7f54180b1dd78503ee15460ba1418cba9ec4593c4ac99631a51d1e04e"
+        },
+        "after": {
+          "line_start": 1297,
+          "line_end": 1304,
+          "text": "   The basic reason that we obtain a poor constant in Theorem 1 is because we choose\nβI ≍ e−1000k rather small, so that the Dirichlet polynomial we work with in Lemma 1\nis somewhat short. This is forced upon us by the step (3.1) in the proof of Theorem\n1 where we sum the contribution coming from Lemma 2 over j. As discussed in the\nintroduction, we look upon Lemmas 1, 2 and 3 as statements that certain integrals\ninvolving Dirichlet polynomials behave in the same way as random (e.g. Gaussian)\nmodels for those polynomials. Thus we might ask what conjectural result we would\nobtain by simply assuming that our Dirichlet polynomials behave in the same way as\n",
+          "sha256": "a696dd3f73216b3a463eebed248fdd4912fd2da8e76df206a5ddb4ac33730799"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Implicit constant",
+            "line_end": 1372,
+            "line_start": 1226,
+            "mathematical_role": "Tracks the double-exponential rigorous constant, compares it with random-matrix factors, optimizes the Gaussian Euler-product heuristic, and locates the unavailable long-polynomial estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1296,
+          "line_start": 1264,
+          "title": "Random-matrix arithmetic and matrix factors predict a much smaller constant",
+          "unit_id": "full_openalex_w1507181162_u13",
+          "unit_type": "conjectural-constant-benchmark",
+          "why_material": "Records the conjectural moment constant as arithmetic and random-matrix factors and identifies their large-k decay, creating a quantitative benchmark for the proof's loss."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit is a comparison benchmark, not evidence that the conjectured asymptotic has been proved.",
+          "representation_dependency": "High: Euler and gamma products require the displayed formulas; asymptotic roles are explained in prose.",
+          "unit_id": "full_openalex_w1507181162_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1263,
+            "line_start": 1226,
+            "title": "The shortest terminal block drives the double-exponential constant",
+            "unit_id": "full_openalex_w1507181162_u12",
+            "unit_type": "constant-loss-accounting",
+            "why_material": "Tracks constants through good and bad strata and shows that the main loss comes from the terminal scale forced to be exponentially small in k, producing a double-exponential dependence."
+          },
+          {
+            "line_end": 1371,
+            "line_start": 1297,
+            "title": "Optimizing the Gaussian Euler-product length recovers the predicted decay",
+            "unit_id": "full_openalex_w1507181162_u14",
+            "unit_type": "heuristic-optimization-and-obstruction",
+            "why_material": "Treats the prime polynomial as Gaussian, balances the majorant penalty against its variance, selects length T to the power 2 over k, recovers the expected large-k constant scale, and pinpoints the missing long-polynomial control in the bad-block lemma."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Random-matrix and Gaussian Euler-product pictures agree on a much smaller large-k scale; optimizing the heuristic exposes that rigor would need control of prime polynomials as long as T to the power 2 over k.",
+            "limit": "The Gaussian calculation neglects zeros and treats small primes too generously, so agreement of scales is a diagnostic rather than a proof of the full conjectural constant.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u12",
+              "full_openalex_w1507181162_u13",
+              "full_openalex_w1507181162_u14"
+            ],
+            "title": "Constant mismatch isolates the unresolved analytic capacity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly conjectural and neglects zero effects and small-prime non-Gaussian structure; it diagnoses a method limit rather than proving the constant.",
+      "line_end": 1371,
+      "line_start": 1297,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the Gaussian moment-generating calculation and optimization are formula-dependent, but the balance, optimizer, and obstruction are stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Treats the prime polynomial as Gaussian, balances the majorant penalty against its variance, selects length T to the power 2 over k, recovers the expected large-k constant scale, and pinpoints the missing long-polynomial control in the bad-block lemma.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimizing the Gaussian Euler-product length recovers the predicted decay",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1507181162_u14.txt",
+      "unit_bytes": 5464,
+      "unit_id": "full_openalex_w1507181162_u14",
+      "unit_sha256": "0980afae84ac2dba87f66859214d299d34f5776d8a8815201b8cce71170a0e9e",
+      "unit_type": "heuristic-optimization-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1507181162_u14.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1289,
+          "line_end": 1296,
+          "text": "In particular, one can show that a(k) = e−k log log k+O(k ) as k → ∞, (the main contribu-\n                                                        2        2\ntion coming from primes p ≤ k 2 ), and that f (k) = e−k log k+O(k ) , (the main contribution\n                                                      2\ncoming from k ≤ j ≤ N), so that a(k)f (k) ≤ e−k log k for large ﬁxed k. See e.g. the\nintroduction to Conrey and Gonek’s paper [3], and the papers of Conrey and Farmer [2]\nand of Diaconu, Goldfeld and Hoﬀstein [4], for more discussion about the size of the\nconstants in moment conjectures, from the random matrix and other points of view.\n",
+          "sha256": "ed3b881230b2ad130a619104d922583fc854f2701a80447e7841484d265003a5"
+        },
+        "after": {
+          "line_start": 1372,
+          "line_end": 1379,
+          "text": "\n<!-- source-page: 20 -->\n\n20                                       ADAM J HARPER\n\nAcknowledgements. The author would like to thank Sandro Bettin, Andrew Granville,\nMaksym Radziwill and Kannan Soundararajan for some helpful remarks and discus-\nsions.\n",
+          "sha256": "5e861d026cce62baeb380b35b4c652c9675733274e4e9434578c3ad110d277fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9c80ac4ce9882d39294d2c3b17790310477f2e8c1b92d31dd177b7eb23530434",
+        "dossier_sha256": "2d49772ae5ee47e879a7e17b086570ee278408d1757bf3683b50a6ca80cca760",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Implicit constant",
+            "line_end": 1372,
+            "line_start": 1226,
+            "mathematical_role": "Tracks the double-exponential rigorous constant, compares it with random-matrix factors, optimizes the Gaussian Euler-product heuristic, and locates the unavailable long-polynomial estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1371,
+          "line_start": 1297,
+          "title": "Optimizing the Gaussian Euler-product length recovers the predicted decay",
+          "unit_id": "full_openalex_w1507181162_u14",
+          "unit_type": "heuristic-optimization-and-obstruction",
+          "why_material": "Treats the prime polynomial as Gaussian, balances the majorant penalty against its variance, selects length T to the power 2 over k, recovers the expected large-k constant scale, and pinpoints the missing long-polynomial control in the bad-block lemma."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly conjectural and neglects zero effects and small-prime non-Gaussian structure; it diagnoses a method limit rather than proving the constant.",
+          "representation_dependency": "High: the Gaussian moment-generating calculation and optimization are formula-dependent, but the balance, optimizer, and obstruction are stated.",
+          "unit_id": "full_openalex_w1507181162_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1296,
+            "line_start": 1264,
+            "title": "Random-matrix arithmetic and matrix factors predict a much smaller constant",
+            "unit_id": "full_openalex_w1507181162_u13",
+            "unit_type": "conjectural-constant-benchmark",
+            "why_material": "Records the conjectural moment constant as arithmetic and random-matrix factors and identifies their large-k decay, creating a quantitative benchmark for the proof's loss."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Random-matrix and Gaussian Euler-product pictures agree on a much smaller large-k scale; optimizing the heuristic exposes that rigor would need control of prime polynomials as long as T to the power 2 over k.",
+            "limit": "The Gaussian calculation neglects zeros and treats small primes too generously, so agreement of scales is a diagnostic rather than a proof of the full conjectural constant.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "full_openalex_w1507181162_u12",
+              "full_openalex_w1507181162_u13",
+              "full_openalex_w1507181162_u14"
+            ],
+            "title": "Constant mismatch isolates the unresolved analytic capacity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4c3433c387bf7bd424ab2be072807ab79905a4529569148f0023c794dff73c1d"
+}

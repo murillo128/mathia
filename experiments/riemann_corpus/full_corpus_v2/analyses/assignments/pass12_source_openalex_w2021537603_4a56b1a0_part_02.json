@@ -1,0 +1,383 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2021537603_4a56b1a0_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2021537603",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The stronger assumption on the smoothing width is explicitly presented as a simplification, not a fundamental limit.",
+      "line_end": 1779,
+      "line_start": 1749,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact logarithmic powers and range endpoints in (6.12)-(6.17) require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reexpresses the kernel as an outer beta-type integral and an inner oscillatory integral, treats very small parameters by splitting and integration by parts, treats positive parameters by contour rotation, and isolates a negative spectral regime where a saddle contributes.",
+      "source_id": "openalex_w2021537603",
+      "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eliminate small and positive spectral parameters before saddle analysis",
+      "unit_artifact_relpath": "depth/units/openalex_w2021537603_u025.txt",
+      "unit_bytes": 1676,
+      "unit_id": "openalex_w2021537603_u025",
+      "unit_sha256": "eef77ae3334ae696a48a919551a1e7a771c664de5bf0c5e456c6c06eb734c51b",
+      "unit_type": "regime-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u025.txt",
+      "source": {
+        "source_id": "openalex_w2021537603",
+        "title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1741,
+          "line_end": 1748,
+          "text": "\n                                             Irl ~< T ( l o g T)5                                   (6.11)\n\n<!-- source-page: 35 -->\n\nA FORMULA FOR THE FOURTH P O W E R MEAN OF THE RIEMANN ZETA-FUNCTION                            215\n\n\n",
+          "sha256": "337ef18a9b362639eb169c15313faf92a026c07c098ac81b5a41e6313b47a23c"
+        },
+        "after": {
+          "line_start": 1780,
+          "line_end": 1787,
+          "text": "The saddle point is located at Y=Y0:\n\n                                y0 = 2lrl ( T - I r l + ( ( T - I r l ) 2   +4xTIrl)l/2) -x,        (6.18)\n\nwhich is approximately Irl/T. This lies between 0 and 2A -1 log5T because of (6.16).\nWe move the path in (6.13) to the one consisting of two segments $1, $2 and a half line\n83:\n                                  Sl----- {Y= A(1--~ exp(17ri)) ; 0 ~<)~ ~<Y0},\n",
+          "sha256": "4e5e24de29d16bbd1c177f64a395260fc2ac067bb0f290e22df815a6188a7309"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Asymptotics",
+            "line_end": 1952,
+            "line_start": 1640,
+            "mathematical_role": "Obtains uniform spectral-kernel bounds, localizes the relevant Maass range, performs the saddle-point calculation, and assembles the asymptotic corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1779,
+          "line_start": 1749,
+          "title": "Eliminate small and positive spectral parameters before saddle analysis",
+          "unit_id": "openalex_w2021537603_u025",
+          "unit_type": "regime-reduction",
+          "why_material": "Reexpresses the kernel as an outer beta-type integral and an inner oscillatory integral, treats very small parameters by splitting and integration by parts, treats positive parameters by contour rotation, and isolates a negative spectral regime where a saddle contributes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The stronger assumption on the smoothing width is explicitly presented as a simplification, not a fundamental limit.",
+          "representation_dependency": "High: exact logarithmic powers and range endpoints in (6.12)-(6.17) require scan verification.",
+          "unit_id": "openalex_w2021537603_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1742,
+            "line_start": 1712,
+            "title": "Complex path deformation localizes the moderate spectral range",
+            "unit_id": "openalex_w2021537603_u024",
+            "unit_type": "contour-localization",
+            "why_material": "For moderate real spectral parameters, deforms the hypergeometric integral onto a short segment plus a tilted ray, obtains exponential damping on both pieces, and combines this with the large-parameter estimate to restrict the spectral analysis to a finite T-dependent window."
+          },
+          {
+            "line_end": 1911,
+            "line_start": 1780,
+            "title": "Uniform saddle extraction for the negative Maass range",
+            "unit_id": "openalex_w2021537603_u026",
+            "unit_type": "saddle-point-analysis",
+            "why_material": "Locates the saddle, deforms the inner contour into negligible tails plus a steepest-descent segment, proves uniform truncation and Taylor control including the Gaussian weight, evaluates the resulting Gaussian, and applies a second saddle computation to the outer integral to obtain the oscillatory kernel with explicit damping."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The asymptotic proof first removes holomorphic, large, small, and positive spectral ranges by uniform contour estimates, leaving a negative Maass window in which a two-stage saddle calculation yields the oscillatory main contribution; a spectral mean-value estimate then controls aggregation error.",
+            "limit": "The localized ranges depend on sufficient smoothing hypotheses chosen partly for simplicity and are not claimed optimal.",
+            "parent_local_unit_ids": [
+              "openalex_w2021537603_u023",
+              "openalex_w2021537603_u024",
+              "openalex_w2021537603_u025",
+              "openalex_w2021537603_u026",
+              "openalex_w2021537603_u027"
+            ],
+            "title": "Spectral localization precedes saddle extraction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conceptual plan for the two-level saddle method; exact phase, amplitude, and error in (6.18)-(6.26) are scan-dependent.",
+      "line_end": 1911,
+      "line_start": 1780,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the text layer damages several contour parametrizations and displayed phases, so the retained scan is required for any exact asymptotic formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Locates the saddle, deforms the inner contour into negligible tails plus a steepest-descent segment, proves uniform truncation and Taylor control including the Gaussian weight, evaluates the resulting Gaussian, and applies a second saddle computation to the outer integral to obtain the oscillatory kernel with explicit damping.",
+      "source_id": "openalex_w2021537603",
+      "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+      "source_page_markers_inside_unit": [
+        36,
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform saddle extraction for the negative Maass range",
+      "unit_artifact_relpath": "depth/units/openalex_w2021537603_u026.txt",
+      "unit_bytes": 6074,
+      "unit_id": "openalex_w2021537603_u026",
+      "unit_sha256": "635426da5c0efa0a546fdc89ebcd51efbadcbf1cb7c5ddb01283facba20a144f",
+      "unit_type": "saddle-point-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u026.txt",
+      "source": {
+        "source_id": "openalex_w2021537603",
+        "title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1772,
+          "line_end": 1779,
+          "text": "\nFor these r we compute S(ir; PT) asymptotically. To this end we impose a rather drastic\ncondition on A:\n                               T 112 ~<A ~<T(log T) -25.                         (6.17)\n\nThis is only for the sake of simplicity; in fact the computation may well be carried out\non the assumption (6.6) only. Note that the upper bound of A is implied by (6.16).\n     Now, we apply the saddle point method to V(x, r) on the condition (6.16) and (6.17).\n",
+          "sha256": "2a9d91812483a64896c4f8cb7edd014509e6a35da7b6201400c186a7af13bd29"
+        },
+        "after": {
+          "line_start": 1912,
+          "line_end": 1919,
+          "text": "    We can now finish the proof of (1.19). First, (1.14), (1.15) and (6.3) imply that\nthe contribution of the holomorphic cusp forms, i.e., the double sum in (1.16), can be\nneglected. Next, collecting (1.6), (1.11), (5.14), (6.5), (6.10), (6.14) and (6.15), we see\nthat the contribution of the non-holomorphic cusp forms is equal to\n                      1\n                                    Z                c~jHj(1)3Re{~(-ixj;PT))+O(1)\"\n                          0og T)3O~<~,j< ~ (logT)6\nWe should stress here that this holds on the condition (6.6) only. If T(log T) -2~ <A~<\n",
+          "sha256": "fe51476677e0422cbca84b937f0fff6a4eb55758345ba25631695ae156b3b633"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Asymptotics",
+            "line_end": 1952,
+            "line_start": 1640,
+            "mathematical_role": "Obtains uniform spectral-kernel bounds, localizes the relevant Maass range, performs the saddle-point calculation, and assembles the asymptotic corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1911,
+          "line_start": 1780,
+          "title": "Uniform saddle extraction for the negative Maass range",
+          "unit_id": "openalex_w2021537603_u026",
+          "unit_type": "saddle-point-analysis",
+          "why_material": "Locates the saddle, deforms the inner contour into negligible tails plus a steepest-descent segment, proves uniform truncation and Taylor control including the Gaussian weight, evaluates the resulting Gaussian, and applies a second saddle computation to the outer integral to obtain the oscillatory kernel with explicit damping."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a conceptual plan for the two-level saddle method; exact phase, amplitude, and error in (6.18)-(6.26) are scan-dependent.",
+          "representation_dependency": "Very high: the text layer damages several contour parametrizations and displayed phases, so the retained scan is required for any exact asymptotic formula.",
+          "unit_id": "openalex_w2021537603_u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1779,
+            "line_start": 1749,
+            "title": "Eliminate small and positive spectral parameters before saddle analysis",
+            "unit_id": "openalex_w2021537603_u025",
+            "unit_type": "regime-reduction",
+            "why_material": "Reexpresses the kernel as an outer beta-type integral and an inner oscillatory integral, treats very small parameters by splitting and integration by parts, treats positive parameters by contour rotation, and isolates a negative spectral regime where a saddle contributes."
+          },
+          {
+            "line_end": 1948,
+            "line_start": 1912,
+            "title": "Assemble the corollary from spectral truncation and mean-value control",
+            "unit_id": "openalex_w2021537603_u027",
+            "unit_type": "asymptotic-assembly",
+            "why_material": "Uses rapid decay to discard the holomorphic spectrum, inserts the saddle asymptotic into the surviving negative Maass range, controls the error by a spectral mean value for Hecke L-functions, and shows the continuous spectrum is negligible using classical zeta bounds, thereby proving the announced corollary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The asymptotic proof first removes holomorphic, large, small, and positive spectral ranges by uniform contour estimates, leaving a negative Maass window in which a two-stage saddle calculation yields the oscillatory main contribution; a spectral mean-value estimate then controls aggregation error.",
+            "limit": "The localized ranges depend on sufficient smoothing hypotheses chosen partly for simplicity and are not claimed optimal.",
+            "parent_local_unit_ids": [
+              "openalex_w2021537603_u023",
+              "openalex_w2021537603_u024",
+              "openalex_w2021537603_u025",
+              "openalex_w2021537603_u026",
+              "openalex_w2021537603_u027"
+            ],
+            "title": "Spectral localization precedes saddle extraction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cited external estimates are invoked rather than reproved; this unit records their logical role in the assembly.",
+      "line_end": 1948,
+      "line_start": 1912,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high for the exact spectral window, oscillatory phase, and error exponent in (6.27); scan and cited-result verification are needed for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses rapid decay to discard the holomorphic spectrum, inserts the saddle asymptotic into the surviving negative Maass range, controls the error by a spectral mean value for Hecke L-functions, and shows the continuous spectrum is negligible using classical zeta bounds, thereby proving the announced corollary.",
+      "source_id": "openalex_w2021537603",
+      "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+      "source_page_markers_inside_unit": [
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Assemble the corollary from spectral truncation and mean-value control",
+      "unit_artifact_relpath": "depth/units/openalex_w2021537603_u027.txt",
+      "unit_bytes": 2088,
+      "unit_id": "openalex_w2021537603_u027",
+      "unit_sha256": "521b69a73ce390076ac88f4467c08d19bd41a54bca10f4bf4188d0262984203b",
+      "unit_type": "asymptotic-assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_u027.txt",
+      "source": {
+        "source_id": "openalex_w2021537603",
+        "title": "An explicit formula for the fourth power mean of the Riemann zeta-function",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1993,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "computation",
+          "numerical-evidence",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1904,
+          "line_end": 1911,
+          "text": "                                                               log 2~ T\n      7*~(ir;PT):---i21/27r(T]r[)-1/2exp(\n                                     irlOg ]?'[4\"~-,2T\n                                                 (Ar ]~2~(1-[-0(----~))                                (6.26)\n\n\nwhere the implied constant is absolute. This ends our discussion on S(ir; PT) when r is\nreal.\n",
+          "sha256": "a4c27d8d67d78ce0cacaf90b3afab47add5113ab555b73a63097f96b085b7c26"
+        },
+        "after": {
+          "line_start": 1949,
+          "line_end": 1956,
+          "text": "\n\n\n\n                                              References\n  [1] ATKINSON, F.V., The mean value of the Riemann zeta-function. Acta Math., 81 (1949),\n          353-376.\n  [2] IriS, A., The Riemann Zeta-function. John Wiley & Sons, Inc., New York, 1985.\n",
+          "sha256": "88c2194a9298ab70b926f59fee1c43712cb0bbb385ce246e2636eb5f4b0abee5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f13c9c84c24765ecda03fd560f2ab4151eb36f92efda102b62ff7dd01e2c7662",
+        "dossier_sha256": "f4af96a61f66746f700c69821dc4f4b6e29797f57281249aab88770411069723",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Asymptotics",
+            "line_end": 1952,
+            "line_start": 1640,
+            "mathematical_role": "Obtains uniform spectral-kernel bounds, localizes the relevant Maass range, performs the saddle-point calculation, and assembles the asymptotic corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1948,
+          "line_start": 1912,
+          "title": "Assemble the corollary from spectral truncation and mean-value control",
+          "unit_id": "openalex_w2021537603_u027",
+          "unit_type": "asymptotic-assembly",
+          "why_material": "Uses rapid decay to discard the holomorphic spectrum, inserts the saddle asymptotic into the surviving negative Maass range, controls the error by a spectral mean value for Hecke L-functions, and shows the continuous spectrum is negligible using classical zeta bounds, thereby proving the announced corollary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cited external estimates are invoked rather than reproved; this unit records their logical role in the assembly.",
+          "representation_dependency": "Very high for the exact spectral window, oscillatory phase, and error exponent in (6.27); scan and cited-result verification are needed for exact reuse.",
+          "unit_id": "openalex_w2021537603_u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1911,
+            "line_start": 1780,
+            "title": "Uniform saddle extraction for the negative Maass range",
+            "unit_id": "openalex_w2021537603_u026",
+            "unit_type": "saddle-point-analysis",
+            "why_material": "Locates the saddle, deforms the inner contour into negligible tails plus a steepest-descent segment, proves uniform truncation and Taylor control including the Gaussian weight, evaluates the resulting Gaussian, and applies a second saddle computation to the outer integral to obtain the oscillatory kernel with explicit damping."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The asymptotic proof first removes holomorphic, large, small, and positive spectral ranges by uniform contour estimates, leaving a negative Maass window in which a two-stage saddle calculation yields the oscillatory main contribution; a spectral mean-value estimate then controls aggregation error.",
+            "limit": "The localized ranges depend on sufficient smoothing hypotheses chosen partly for simplicity and are not claimed optimal.",
+            "parent_local_unit_ids": [
+              "openalex_w2021537603_u023",
+              "openalex_w2021537603_u024",
+              "openalex_w2021537603_u025",
+              "openalex_w2021537603_u026",
+              "openalex_w2021537603_u027"
+            ],
+            "title": "Spectral localization precedes saddle extraction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "30368ca9fd8f2d2b536fc44f478fbf1f44f3034daa140d14018762912f074063"
+}

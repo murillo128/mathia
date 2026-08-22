@@ -1,0 +1,789 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_75.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "author-hosted-manuscript",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Glendon Ralph Pugh"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 3633,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "THE RIEMANN-SIEGEL FORMULA AND LARGE"
+        },
+        {
+          "line": 4,
+          "text": "SCALE COMPUTATIONS OF THE RIEMANN ZETA"
+        },
+        {
+          "line": 5,
+          "text": "FUNCTION"
+        },
+        {
+          "line": 8,
+          "text": "GLENDON RALPH PUGH"
+        },
+        {
+          "line": 12,
+          "text": "A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF"
+        },
+        {
+          "line": 14,
+          "text": "THE REQUIREMENTS FOR THE DEGREE OF"
+        },
+        {
+          "line": 16,
+          "text": "MASTER OF SCIENCE"
+        },
+        {
+          "line": 20,
+          "text": "THE FACULTY OF GRADUATE STUDIES"
+        },
+        {
+          "line": 37,
+          "text": "THE UNIVERSITY OF BRITISH COLUMBIA"
+        },
+        {
+          "line": 69,
+          "text": "Abstract"
+        },
+        {
+          "line": 105,
+          "text": "Chapter 1. Introduction 1"
+        },
+        {
+          "line": 107,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function 4"
+        },
+        {
+          "line": 113,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula 14"
+        },
+        {
+          "line": 126,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis 33"
+        },
+        {
+          "line": 131,
+          "text": "Chapter 5. Riemann-Siegel At Work 46"
+        },
+        {
+          "line": 147,
+          "text": "5.4.4 The Function gramblock(n,m,FILE) . . . . . . . . . . . . . . . . . . . . . . . . . . 52"
+        },
+        {
+          "line": 148,
+          "text": "5.4.5 The Main Root Counting Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53"
+        },
+        {
+          "line": 149,
+          "text": "5.4.6 The Turing Method Program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53"
+        },
+        {
+          "line": 152,
+          "text": "Chapter 6. Conclusion and Future Work 55"
+        },
+        {
+          "line": 154,
+          "text": "Appendix A. C Functions Used in Main Programs 57"
+        },
+        {
+          "line": 156,
+          "text": "Appendix B. C Program for Simple Evaluation of Z(t) 67"
+        },
+        {
+          "line": 158,
+          "text": "Appendix C. C Program for Counting Roots of Z(t) 69"
+        },
+        {
+          "line": 160,
+          "text": "Appendix D. C Program for Locating Turing Adjustments 73"
+        },
+        {
+          "line": 193,
+          "text": "Chapter 1"
+        },
+        {
+          "line": 194,
+          "text": "Introduction"
+        },
+        {
+          "line": 225,
+          "text": "Chapter 1. Introduction"
+        },
+        {
+          "line": 262,
+          "text": "Chapter 1. Introduction"
+        },
+        {
+          "line": 265,
+          "text": "chapter we mention some familiar properties of the function and derive a global"
+        },
+        {
+          "line": 270,
+          "text": "chapter examines the Riemann Hypothesis verification process. Major contributions"
+        },
+        {
+          "line": 284,
+          "text": "Chapter 2"
+        },
+        {
+          "line": 291,
+          "text": "2.1 Introduction"
+        },
+        {
+          "line": 302,
+          "text": "2.2 The Function ζ(s)"
+        },
+        {
+          "line": 320,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 330,
+          "text": "1 Y \u0001−1"
+        },
+        {
+          "line": 345,
+          "text": "2.3 Global Representation of ζ(s)"
+        },
+        {
+          "line": 371,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 419,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 435,
+          "text": "K K Z ∞"
+        },
+        {
+          "line": 442,
+          "text": "Z ∞ X !"
+        },
+        {
+          "line": 450,
+          "text": "K Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 458,
+          "text": "K Z ∞\u0012 \u0013"
+        },
+        {
+          "line": 465,
+          "text": "Z ∞ \u0012 \u0013"
+        },
+        {
+          "line": 468,
+          "text": "0 K→∞ et − 1"
+        },
+        {
+          "line": 473,
+          "text": "0 et − 1"
+        },
+        {
+          "line": 476,
+          "text": "∞ Z ∞"
+        },
+        {
+          "line": 494,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 516,
+          "text": "Γ1 (\u000f)"
+        },
+        {
+          "line": 517,
+          "text": "Γ2 (\u000f)"
+        },
+        {
+          "line": 525,
+          "text": "Γ3 (\u000f)"
+        },
+        {
+          "line": 534,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 540,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 569,
+          "text": "Z ∞ X∞"
+        },
+        {
+          "line": 571,
+          "text": "2 dt = 2 Π(s − 1) < ∞."
+        },
+        {
+          "line": 572,
+          "text": "0 e −1"
+        },
+        {
+          "line": 578,
+          "text": "Z 0 Z 0"
+        },
+        {
+          "line": 604,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 630,
+          "text": "Z Z +∞"
+        },
+        {
+          "line": 635,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 656,
+          "text": "\u000f→0 C"
+        },
+        {
+          "line": 681,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 711,
+          "text": "1. The Π(−s) factor in (2.11) has singularities when s is a positive integer. The"
+        },
+        {
+          "line": 717,
+          "text": "2. Although we have derived (2.11) under the assumption that s ∈ R , s > 1, for"
+        },
+        {
+          "line": 742,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 744,
+          "text": "2.4 Properties of the Zeta Function"
+        },
+        {
+          "line": 788,
+          "text": "Chapter 2. Overview of the Riemann Zeta Function"
+        },
+        {
+          "line": 835,
+          "text": "Chapter 3"
+        },
+        {
+          "line": 842,
+          "text": "3.1 Introduction"
+        },
+        {
+          "line": 867,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 887,
+          "text": "3.2 The Formula"
+        },
+        {
+          "line": 906,
+          "text": "R ≈ (−1)N −1 C0 + C1 + C2 + C3 + C4"
+        },
+        {
+          "line": 913,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 928,
+          "text": "C2 = 4"
+        },
+        {
+          "line": 934,
+          "text": "C3 = − 6"
+        },
+        {
+          "line": 941,
+          "text": "C4 = 8"
+        },
+        {
+          "line": 973,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 976,
+          "text": "3.3 Derivation of Z(t)"
+        },
+        {
+          "line": 1021,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1023,
+          "text": "Z ! Z"
+        },
+        {
+          "line": 1093,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1124,
+          "text": "2 j=1"
+        },
+        {
+          "line": 1137,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1154,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1168,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1170,
+          "text": "\u0012 \u0013 XN"
+        },
+        {
+          "line": 1173,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1187,
+          "text": "\u0012 \u0013 XN"
+        },
+        {
+          "line": 1190,
+          "text": "2 n=1"
+        },
+        {
+          "line": 1212,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1271,
+          "text": "= SN + RN . (3.6)"
+        },
+        {
+          "line": 1278,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1288,
+          "text": "3.4 Saddle Point Argument"
+        },
+        {
+          "line": 1325,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1379,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1388,
+          "text": "3.5 First Approximation"
+        },
+        {
+          "line": 1402,
+          "text": "3.6 Change of Variables"
+        },
+        {
+          "line": 1423,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1430,
+          "text": "R1,N = (−1)N −1"
+        },
+        {
+          "line": 1456,
+          "text": "3.7 Second Approximation"
+        },
+        {
+          "line": 1462,
+          "text": "R1,N ≈ R2,N = (−1)N −1"
+        },
+        {
+          "line": 1477,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1483,
+          "text": "3.8 Third Approximation"
+        },
+        {
+          "line": 1524,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1531,
+          "text": "3.9 Fourth Approximation"
+        },
+        {
+          "line": 1595,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1642,
+          "text": "2 j=0 2j! (n − 2j)!"
+        },
+        {
+          "line": 1655,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1657,
+          "text": "3.10 An Example"
+        },
+        {
+          "line": 1659,
+          "text": "Appendix B contains an implementation of the Riemann-Siegel method written in"
+        },
+        {
+          "line": 1670,
+          "text": "8 Z(t), 6×106 ≤ t ≤ 6×106 +10"
+        },
+        {
+          "line": 1692,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1694,
+          "text": "3.11 Errors in the Approximation"
+        },
+        {
+          "line": 1731,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1769,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula"
+        },
+        {
+          "line": 1780,
+          "text": "Chapter 4"
+        },
+        {
+          "line": 1787,
+          "text": "4.1 Introduction"
+        },
+        {
+          "line": 1813,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1820,
+          "text": "4.2 Gram’s Observations"
+        },
+        {
+          "line": 1829,
+          "text": "2. The zeros of Z(t) tend to alternate with the zeros of sin ϑ(t)."
+        },
+        {
+          "line": 1845,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1891,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1934,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1970,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 1995,
+          "text": "4.3 The Number of Roots to Height T"
+        },
+        {
+          "line": 2007,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2052,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2086,
+          "text": "S(T ) = N(T ) − −1 ."
+        },
+        {
+          "line": 2105,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2147,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2192,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2239,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2290,
+          "text": "Chapter 4. Verification of the Riemann Hypothesis"
+        },
+        {
+          "line": 2304,
+          "text": "Chapter 5"
+        },
+        {
+          "line": 2310,
+          "text": "5.1 Introduction"
+        },
+        {
+          "line": 2319,
+          "text": "5.2 Results"
+        },
+        {
+          "line": 2325,
+          "text": "1. g12 193 873 = 6 000 000.485 999"
+        },
+        {
+          "line": 2327,
+          "text": "2. There are at least 12 193 874 zeros of ζ(1/2 + it) for 0 ≤ t ≤ g12 193 873 ."
+        },
+        {
+          "line": 2329,
+          "text": "3. There are 1 518 045 Gram blocks containing 3 317 645 of these roots."
+        },
+        {
+          "line": 2331,
+          "text": "4. The longest Gram block in the range 0 ≤ t ≤ g12 193 873 is"
+        },
+        {
+          "line": 2339,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2341,
+          "text": "5. The data for twenty Gram points used to apply Turing’s method (see"
+        },
+        {
+          "line": 2342,
+          "text": "Section 4.3) is as follows:"
+        },
+        {
+          "line": 2370,
+          "text": "S(T ) = N(T ) − −1 ,"
+        },
+        {
+          "line": 2380,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2436,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2438,
+          "text": "5.3 Computation"
+        },
+        {
+          "line": 2442,
+          "text": "Appendix C, while the program to produce the data needed for Turing’s method is"
+        },
+        {
+          "line": 2473,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2475,
+          "text": "5.4 Programs"
+        },
+        {
+          "line": 2485,
+          "text": "5.4.1 The Function C(n,z)"
+        },
+        {
+          "line": 2517,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2519,
+          "text": "5.4.2 The Function Z(t,n)"
+        },
+        {
+          "line": 2530,
+          "text": "5.4.3 The Function gram(n)"
+        },
+        {
+          "line": 2561,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2563,
+          "text": "5.4.4 The Function gramblock(n,m,FILE)"
+        },
+        {
+          "line": 2598,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2600,
+          "text": "5.4.5 The Main Root Counting Program"
+        },
+        {
+          "line": 2619,
+          "text": "5.4.6 The Turing Method Program"
+        },
+        {
+          "line": 2636,
+          "text": "Chapter 5. Riemann-Siegel At Work"
+        },
+        {
+          "line": 2638,
+          "text": "5.5 Effective Domain of the Algorithms"
+        },
+        {
+          "line": 2674,
+          "text": "Chapter 6"
+        },
+        {
+          "line": 2692,
+          "text": "1020 th zero of the zeta function where t ≈ 1.5 × 1019 ."
+        },
+        {
+          "line": 2710,
+          "text": "Chapter 6. Conclusion and Future Work"
+        },
+        {
+          "line": 2721,
+          "text": "N X 1"
+        },
+        {
+          "line": 2741,
+          "text": "Appendix A"
+        },
+        {
+          "line": 2784,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2822,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2875,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2928,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 2979,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3003,
+          "text": "ZZ = 0.0L; /* */"
+        },
+        {
+          "line": 3004,
+          "text": "R = 0.0L; /* */"
+        },
+        {
+          "line": 3019,
+          "text": "ZZ = 2.0L * ZZ; /* */"
+        },
+        {
+          "line": 3028,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3049,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3102,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3155,
+          "text": "Appendix A. C Functions Used in Main Programs"
+        },
+        {
+          "line": 3205,
+          "text": "Appendix B"
+        },
+        {
+          "line": 3247,
+          "text": "Appendix B. C Program for Simple Evaluation of Z(t)"
+        },
+        {
+          "line": 3282,
+          "text": "Appendix C"
+        },
+        {
+          "line": 3325,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3379,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3432,
+          "text": "Appendix C. C Program for Counting Roots of Z(t)"
+        },
+        {
+          "line": 3461,
+          "text": "Appendix D"
+        },
+        {
+          "line": 3504,
+          "text": "Appendix D. C Program for Locating Turing Adjustments"
+        },
+        {
+          "line": 3557,
+          "text": "Appendix D. C Program for Locating Turing Adjustments"
+        },
+        {
+          "line": 3610,
+          "text": "Bibliography"
+        }
+      ],
+      "normalized_bytes": 158390,
+      "normalized_page_count": 82,
+      "normalized_relpath": "normalized/pugh1998_riemann_siegel_thesis_765c55a8110d.txt",
+      "normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "prior_v1_units": [],
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_type": "masters-thesis",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "explicit-computation",
+        "riemann-siegel",
+        "verification-epistemic-limits"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 1998,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/pugh1998_riemann_siegel_thesis_765c55a8110d.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "c8c918323cf782fde886e0cf73d7d2fe1620ad9b8b6ca75d72dfa9315f44531e"
+}

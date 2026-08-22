@@ -1,0 +1,1232 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2515894720_c78c1a63_part_03.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2515894720",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the separate treatment of large shifts and the lack of a pole for the truncated factor.",
+      "line_end": 4060,
+      "line_start": 3858,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Titchmarsh integral lemma, truncation of the Dirichlet series, residue calculus, and contour error estimates reduce both full and mixed shifted moments to the divisor sums of the previous unit.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        63,
+        64
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The functional equation converts shifted critical-line moments into divisor-sum asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u049.txt",
+      "unit_bytes": 12434,
+      "unit_id": "openalex_w2515894720_u049",
+      "unit_sha256": "a0f48722f3f82e00c91e0be3fb959b89cf3356d404ddd9dfd6be92204e697181",
+      "unit_type": "functional-equation-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u049.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3850,
+          "line_end": 3857,
+          "text": "\n<!-- source-page: 62 -->\n\n62                               E. SAKSMAN AND C. WEBB\n\n  Establishing the analogous estimate for T −1 Dia (T ; N) is even simpler as we can\nrepeat our steps starting from (A.7) and this time apply (A.3) to bound ζN (s + ia)\nuniformly by CN .                                                                  \u0003\n",
+          "sha256": "be4f58a4c24e4934a1b29e25a30155e93cbbbeddbb8377777ee77c1c4bab3f25"
+        },
+        "after": {
+          "line_start": 4061,
+          "line_end": 4068,
+          "text": "\n<!-- source-page: 65 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                     65\n\n  We note that ζ has the Laurent expansion\n(A.13)                           ζ(1 + s) = s−1 + γ0 + O(s)\nfor small s, where γ0 is the Euler-Mascheroni constant, see [81, equation (2.1.16)].\n",
+          "sha256": "df54bf745da1343c6e4ea9d742feef6febceae81173b9232373ddc616b787354"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: shifted second moment",
+            "line_end": 4196,
+            "line_start": 3643,
+            "mathematical_role": "Derives full, mixed, and truncated two-point asymptotics through contour shifts, divisor sums, and the functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4060,
+          "line_start": 3858,
+          "title": "The functional equation converts shifted critical-line moments into divisor-sum asymptotics",
+          "unit_id": "openalex_w2515894720_u049",
+          "unit_type": "functional-equation-method",
+          "why_material": "A Titchmarsh integral lemma, truncation of the Dirichlet series, residue calculus, and contour error estimates reduce both full and mixed shifted moments to the divisor sums of the previous unit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the separate treatment of large shifts and the lack of a pole for the truncated factor.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u049"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3857,
+            "line_start": 3699,
+            "title": "Shifted products become divisor sums whose Perron contours reveal two main terms",
+            "unit_id": "openalex_w2515894720_u048",
+            "unit_type": "dirichlet-series-asymptotic",
+            "why_material": "Encoding zeta times a shifted zeta or truncated Euler product by generalized divisor sums allows an effective Perron formula and contour shift to derive the needed uniform summatory asymptotics."
+          },
+          {
+            "line_end": 4191,
+            "line_start": 4066,
+            "title": "Large-shift bounds and range symmetrization complete the two-point theorem",
+            "unit_id": "openalex_w2515894720_u050",
+            "unit_type": "uniformization-proof",
+            "why_material": "The proof first recovers the classical mean square as the zero-shift limit, then partitions spatial shifts, symmetrizes the time interval, applies the functional equation, and uses finite phase equidistribution for the fully truncated kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper can prove the second shifted moment needed for generalized-function convergence, but real and imaginary chaos for actual zeta would demand substantially stronger absolute and multipoint correlations, with zeros adding an extra obstruction for the imaginary part.",
+            "limit": "A proof-search failure or missing estimate would not refute the conjectured chaos picture; it identifies the present analytic bottleneck.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u014",
+              "openalex_w2515894720_u015",
+              "openalex_w2515894720_u018",
+              "openalex_w2515894720_u047",
+              "openalex_w2515894720_u048",
+              "openalex_w2515894720_u049",
+              "openalex_w2515894720_u050"
+            ],
+            "title": "Moment asymptotics are the bridge still missing for actual zeta chaos"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u049",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u049",
+          "spontaneous_reading": "The kernel supplied by the zeta functional equation acts as a soft cutoff that turns a shifted critical-line correlation into a summatory generalized-divisor problem. The decisive structural distinction is analytic: the full zeta factor contributes a residue and hence a second main term, whereas the finite truncation has no corresponding pole."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u049",
+          "source_grounded_mathematics": "Proposition A.5 expands zeta(s+ia)zeta(s) into coefficients sigma_{-ia}(n), applies Titchmarsh's integral lemma to n up to T/(2 pi), and obtains (2 pi/T)D_{ia}(T/(2 pi)) as the main contribution. Moving the remaining contour to Re(s)=c>1 exposes the pole at s=1-ia in the full case; horizontal and vertical estimates control the remainder uniformly in a. Substituting the earlier divisor-sum asymptotic gives the two zeta main terms, while replacing the shifted factor by zeta_N removes the pole and leaves the zeta_N(1+ia) term.",
+          "conceptual_reading": "The proof changes representation twice: the functional equation changes a line correlation into a chi-weighted Dirichlet series, and contour displacement separates coefficient mass from singularity data. This makes the dual main term legible as a residue rather than as an unexplained feature of the moment formula; analyticity of the truncated factor then explains why that term disappears.",
+          "representation_or_bridge": "The bridge objects are the generalized divisor coefficients sigma_{-ia}(n), their partial sums D_{ia}(x) and D_{ia}(x;N), the chi-kernel integral of Lemma A.4, and the pole crossed during the contour shift. Proposition A.3 supplies the final passage from divisor sums to explicit zeta expressions.",
+          "boundary_or_failure": "The derivation initially excludes a=0 and recovers it only by a limit. Large shifts close to or beyond the contour height require separate treatment, and the final error combines this contour argument with a prior divisor-sum estimate. The absence of a pole is specific to the truncated shifted factor and should not be transferred to the full product.",
+          "uncertainty": "The prose-level mechanism and case distinctions are clear, but the normalized extraction is formula-sensitive; exact powers, constants, signs, and the placement of shifts or conjugations should be checked against the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The normalized extraction has formula risk here; the prose clearly supports the case split and uniformity claims but exact conjugations should be scan-verified.",
+      "line_end": 4191,
+      "line_start": 4066,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof first recovers the classical mean square as the zero-shift limit, then partitions spatial shifts, symmetrizes the time interval, applies the functional equation, and uses finite phase equidistribution for the fully truncated kernel.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-shift bounds and range symmetrization complete the two-point theorem",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u050.txt",
+      "unit_bytes": 7193,
+      "unit_id": "openalex_w2515894720_u050",
+      "unit_sha256": "4e812e50e2eda81e6c22d7a3ee9cadf5dfded38d1014e6208e2c16ab97a5de9e",
+      "unit_type": "uniformization-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u050.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4058,
+          "line_end": 4065,
+          "text": "a repetition of the whole argument produces analogous estimates. Finally, by again\n                                                             (2)\ncombining with Proposition A.3 we obtain the claim for I2 (a).                        \u0003\n\n<!-- source-page: 65 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                     65\n\n",
+          "sha256": "14b4d4fc993c436e9dc9f32b9196ac0f560733fee883b1df827a2e4a142bc91c"
+        },
+        "after": {
+          "line_start": 4192,
+          "line_end": 4199,
+          "text": "\n<!-- source-page: 67 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                            67\n\n         Appendix B. Proof of the Gaussian approximation result\n  In this appendix we provide a self contained proof of Proposition 3.4 for the reader’\nconvenience. We commence with by considering some general facts about coupling of\n",
+          "sha256": "2e35ea897d800513bd911130cb0912d04bdf4a6811741b3e74444463f3854ba6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: shifted second moment",
+            "line_end": 4196,
+            "line_start": 3643,
+            "mathematical_role": "Derives full, mixed, and truncated two-point asymptotics through contour shifts, divisor sums, and the functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4191,
+          "line_start": 4066,
+          "title": "Large-shift bounds and range symmetrization complete the two-point theorem",
+          "unit_id": "openalex_w2515894720_u050",
+          "unit_type": "uniformization-proof",
+          "why_material": "The proof first recovers the classical mean square as the zero-shift limit, then partitions spatial shifts, symmetrizes the time interval, applies the functional equation, and uses finite phase equidistribution for the fully truncated kernel."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The normalized extraction has formula risk here; the prose clearly supports the case split and uniformity claims but exact conjugations should be scan-verified.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u050"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4060,
+            "line_start": 3858,
+            "title": "The functional equation converts shifted critical-line moments into divisor-sum asymptotics",
+            "unit_id": "openalex_w2515894720_u049",
+            "unit_type": "functional-equation-method",
+            "why_material": "A Titchmarsh integral lemma, truncation of the Dirichlet series, residue calculus, and contour error estimates reduce both full and mixed shifted moments to the divisor sums of the previous unit."
+          },
+          {
+            "line_end": 4291,
+            "line_start": 4197,
+            "title": "Fourier discrepancy and tail mass bound Wasserstein distance",
+            "unit_id": "openalex_w2515894720_u051",
+            "unit_type": "coupling-bound",
+            "why_material": "A shared diagonal coupling removes common mass, and truncating to a ball turns total-variation control into an L1 Fourier-density bound plus tail integrals, yielding a reusable quantitative coupling inequality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper can prove the second shifted moment needed for generalized-function convergence, but real and imaginary chaos for actual zeta would demand substantially stronger absolute and multipoint correlations, with zeros adding an extra obstruction for the imaginary part.",
+            "limit": "A proof-search failure or missing estimate would not refute the conjectured chaos picture; it identifies the present analytic bottleneck.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u014",
+              "openalex_w2515894720_u015",
+              "openalex_w2515894720_u018",
+              "openalex_w2515894720_u047",
+              "openalex_w2515894720_u048",
+              "openalex_w2515894720_u049",
+              "openalex_w2515894720_u050"
+            ],
+            "title": "Moment asymptotics are the bridge still missing for actual zeta chaos"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u050",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u050",
+          "spontaneous_reading": "Uniformity is obtained by stitching together representations suited to different regimes: crude growth bounds absorb shifts larger than the averaging scale, range symmetrization exposes only the difference x-y for moderate shifts, and finite phase dynamics handle the fully truncated kernel without contour singularities."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u050",
+          "source_grounded_mathematics": "Letting the shift tend to zero in Proposition A.5 and using the Laurent expansion of zeta at 1 recovers the classical mean-square formula. For Theorem 2.8, the proof first treats max(x,y)>T by rough size estimates. When max(x,y)<=T, it extends and shifts the integration interval, bounds the short end segments, applies the functional equation, and reduces the full and mixed kernels to Proposition A.5 with a=x-y. For fixed N, absolute convergence permits finite polynomial approximation of both truncated products, and finite phase equidistribution yields the uniform limit zeta_N(1+i(x-y)).",
+          "conceptual_reading": "The argument is a uniformization scheme rather than one global calculation. Sum-direction dependence is pushed into controllable boundary segments, while difference-direction dependence becomes the spectral parameter in a standard shifted moment. For the finite Euler product, truncating its absolutely convergent expansion makes time averaging an averaging problem on a finite torus.",
+          "representation_or_bridge": "Time-range translation and the functional equation bridge the original two-point kernel to the chi-weighted contour integral. In the fully truncated case, finite Dirichlet polynomials and their prime phases bridge analytic averaging to equidistribution, with zeta_N(1+i(x-y)) encoding the surviving diagonal frequencies.",
+          "boundary_or_failure": "The large-shift regime is only shown to fit inside the allowed error, not to possess the same detailed asymptotic mechanism. The equidistribution conclusion takes T to infinity with N fixed and relies on uniform absolute convergence before finite truncation. The zero-shift mean square is obtained by cancellation in a limiting Laurent expansion.",
+          "uncertainty": "The case split, limit order, and uniformity claims are well supported by the text. Exact conjugations, phase signs, and displayed error exponents remain scan-sensitive because of formula extraction risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix result is general probability machinery later specialized to Gaussian approximation.",
+      "line_end": 4291,
+      "line_start": 4197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A shared diagonal coupling removes common mass, and truncating to a ball turns total-variation control into an L1 Fourier-density bound plus tail integrals, yielding a reusable quantitative coupling inequality.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        68
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier discrepancy and tail mass bound Wasserstein distance",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u051.txt",
+      "unit_bytes": 4971,
+      "unit_id": "openalex_w2515894720_u051",
+      "unit_sha256": "14a5796055127930f839e8f8b974e50ed403ef20ff3d7ed03b693fc9bacf61bc",
+      "unit_type": "coupling-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u051.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4189,
+          "line_end": 4196,
+          "text": "          lim       ζN     + it + ix ζN     − it − iy dt = ζN (1 + i(x − y)),\n         T →∞ T 0        2                2\nuniformly over x, y ∈ R, which was precisely the claim.                                        \u0003\n\n<!-- source-page: 67 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                            67\n\n",
+          "sha256": "801aca0f735637729f19b81db8de316eb632ca26b3d2705e0a88459e8162bc83"
+        },
+        "after": {
+          "line_start": 4292,
+          "line_end": 4299,
+          "text": "     We are ready for\nProof of Proposition 3.4. All the unspecified constants (and the O(·) terms) in the\nproof are universal in the sense that they may depend only on the the quantities\nd, b0 , b1 , b2 , b3 . We P\n                          let Cj = Cov(Hj ) stand for the covariance matrix of the variable\nHj . Denote ℓn := ( nj=1 cj )1/2 and observe that\n                                    −1/2 1/2               1/2\n(B.4)                              b0   n      ≤ ℓn ≤ b0 n1/2 .\n",
+          "sha256": "ccb2674838a7fc6e6bd0fee2640a98c9d1e94a04644ddf9654d4df3bfc257250"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B: Gaussian approximation coupling",
+            "line_end": 4563,
+            "line_start": 4197,
+            "mathematical_role": "Proves Wasserstein Gaussian coupling and the exponential error estimates used in the prime-block construction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4291,
+          "line_start": 4197,
+          "title": "Fourier discrepancy and tail mass bound Wasserstein distance",
+          "unit_id": "openalex_w2515894720_u051",
+          "unit_type": "coupling-bound",
+          "why_material": "A shared diagonal coupling removes common mass, and truncating to a ball turns total-variation control into an L1 Fourier-density bound plus tail integrals, yielding a reusable quantitative coupling inequality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This appendix result is general probability machinery later specialized to Gaussian approximation.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u051"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4191,
+            "line_start": 4066,
+            "title": "Large-shift bounds and range symmetrization complete the two-point theorem",
+            "unit_id": "openalex_w2515894720_u050",
+            "unit_type": "uniformization-proof",
+            "why_material": "The proof first recovers the classical mean square as the zero-shift limit, then partitions spatial shifts, symmetrizes the time interval, applies the functional equation, and uses finite phase equidistribution for the fully truncated kernel."
+          },
+          {
+            "line_end": 4504,
+            "line_start": 4292,
+            "title": "Smoothing characteristic functions couples normalized sums to covariance-matched Gaussians",
+            "unit_id": "openalex_w2515894720_u052",
+            "unit_type": "quantitative-gaussian-coupling",
+            "why_material": "A small auxiliary Gaussian regularizes the normalized sum, Taylor expansion controls its characteristic function on the main region, tail estimates control the complement, and low-rank covariance cases are split off to obtain a polynomial Wasserstein error."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u051",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u051",
+          "spontaneous_reading": "The coupling construction spends no transport cost on the mass the two laws already share: that mass is placed on the diagonal, and only the positive and negative parts of their discrepancy are cross-coupled. Localizing this residual transport to a ball separates a bounded-distance discrepancy from genuinely long-range tail cost."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u051",
+          "source_grounded_mathematics": "For probability laws mu and nu on a separable metric space, the proof forms their common submeasure beta and a diagonal coupling of beta, then couples the unmatched Jordan parts by a product measure. Splitting the resulting transport integral over a ball and its complement bounds W1 by a radius times local total variation plus an integral of tail discrepancies. For absolutely continuous laws on R^d, Fourier inversion bounds the local density difference by an L1 discrepancy of Fourier transforms, giving Corollary B.2 with separate Fourier and tail terms.",
+          "conceptual_reading": "This is a localization principle for probability metrics: global transport is compressed into a tunable interior-versus-tail tradeoff. The diagonal coupling explicitly forgets common mass, while the radius parameter controls how much geometric information must be paid for in the remaining mismatch.",
+          "representation_or_bridge": "Jordan decomposition converts a signed measure difference into a concrete coupling. Ball truncation converts metric cost into local total variation and tail mass, and Fourier inversion then converts the local variation term into an analytic norm of characteristic-function discrepancy.",
+          "boundary_or_failure": "The Fourier corollary requires absolute continuity and an integrable Fourier-transform difference; without tail control, local Fourier agreement alone does not control W1. The bounds are intentionally nonoptimal and the first lemma is a one-sided estimate, not an equivalence of metrics.",
+          "uncertainty": "The coupling and localization argument is clear. Numerical constants and Fourier normalization are formula-sensitive in the extracted text and are not conceptually essential here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retain the possible degeneracy of the covariance and the special sharper isotropic bound.",
+      "line_end": 4504,
+      "line_start": 4292,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A small auxiliary Gaussian regularizes the normalized sum, Taylor expansion controls its characteristic function on the main region, tail estimates control the complement, and low-rank covariance cases are split off to obtain a polynomial Wasserstein error.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        69,
+        70,
+        71
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothing characteristic functions couples normalized sums to covariance-matched Gaussians",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u052.txt",
+      "unit_bytes": 12513,
+      "unit_id": "openalex_w2515894720_u052",
+      "unit_sha256": "8507adf54259d332bbf0539de10e4ee3dc6eaa15eda364df003d4fc8140706ba",
+      "unit_type": "quantitative-gaussian-coupling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u052.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4284,
+          "line_end": 4291,
+          "text": "\nProof. Let f (resp. g) stand for the density of µ (resp. ν). The desired statement\nfollows from the previous lemma as soon as we observe that\n            Z\n                  |f (x) − g(x)|dx ≤ Cd Rd kf − gkL∞ (Rd ) ≤ Cd′′ Rd kfb − gbkL1 (Rd ) .\n              B(0,R)\n\n                                                                                                    \u0003\n",
+          "sha256": "6ac770edc4a4d3d74265e7efab27a6a342b13fb96c0f1eca0387986167d7aee7"
+        },
+        "after": {
+          "line_start": 4505,
+          "line_end": 4512,
+          "text": "    We turn to estimating the exponential moments. Their proof is based solely on (3.8)\nand the uniform exponential estimates of V which follow from those of W and from the\nautomatic ones for the Gaussian approximation. By invoking the Bernstein estimate\n(B.14) and using the double exponential decay (with constants depending on d) of our\nGaussian approximation U we obtain universal (i.e. depending only on d) constants\nb4 , b5 such that\n                                           2                                √\n(B.17)        P(|V | ≥ u) ≤ b4 e−2λu e4b4 λ  for any u > 0 and λ ∈ (0, b5 n).\n",
+          "sha256": "5d0d70cf3184f62dcf96937ddbaf1ff411df040e624dab4550010395f83d2557"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B: Gaussian approximation coupling",
+            "line_end": 4563,
+            "line_start": 4197,
+            "mathematical_role": "Proves Wasserstein Gaussian coupling and the exponential error estimates used in the prime-block construction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4504,
+          "line_start": 4292,
+          "title": "Smoothing characteristic functions couples normalized sums to covariance-matched Gaussians",
+          "unit_id": "openalex_w2515894720_u052",
+          "unit_type": "quantitative-gaussian-coupling",
+          "why_material": "A small auxiliary Gaussian regularizes the normalized sum, Taylor expansion controls its characteristic function on the main region, tail estimates control the complement, and low-rank covariance cases are split off to obtain a polynomial Wasserstein error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retain the possible degeneracy of the covariance and the special sharper isotropic bound.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u052"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4291,
+            "line_start": 4197,
+            "title": "Fourier discrepancy and tail mass bound Wasserstein distance",
+            "unit_id": "openalex_w2515894720_u051",
+            "unit_type": "coupling-bound",
+            "why_material": "A shared diagonal coupling removes common mass, and truncating to a ball turns total-variation control into an L1 Fourier-density bound plus tail integrals, yielding a reusable quantitative coupling inequality."
+          },
+          {
+            "line_end": 4562,
+            "line_start": 4505,
+            "title": "Mean coupling error plus concentration yields exponential and Gaussian-tail moment bounds",
+            "unit_id": "openalex_w2515894720_u053",
+            "unit_type": "exponential-error-upgrade",
+            "why_material": "Bernstein or Azuma concentration and a cutoff decomposition upgrade the first-moment coupling estimate to exponential control, which is what the smooth-error series requires."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u052",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u052",
+          "spontaneous_reading": "A deliberately tiny, anisotropic Gaussian perturbation is used as a mollifier: it makes Fourier comparison effective without overwhelming the covariance of the normalized sum. Near-singular covariance is not forced into a uniform elliptic argument; instead, significant directions are approximated and the remaining low-variance directions are discarded at controlled mean cost."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u052",
+          "source_grounded_mathematics": "After normalizing the independent sum W and rotating so its covariance A is diagonal, the proof first assumes a lower bound on the smallest eigenvalue. Third-order Taylor expansion of the summands' characteristic functions gives a Gaussian quadratic term plus an n^{-1/2} cubic error. Adding an auxiliary Gaussian G with covariance chosen from a lower comparison matrix regularizes W. A three-region Fourier integral estimate, followed by Corollary B.2 and exponential tail bounds, couples W to a Gaussian with polynomially decaying mean error up to logarithms. If A is nearly degenerate, the coordinates are split at an eigenvalue threshold: the leading block is treated by the same argument and the low-variance block is bounded in L1. The isotropic case permits the sharper choice delta=0.",
+          "conceptual_reading": "Smoothing converts a local central-limit expansion into a global coupling statement. Diagonalizing covariance reveals which directions can sustain Fourier inversion and which contain too little variance to justify it; projection then replaces a failing full-rank approximation by a lower-dimensional one whose discarded component is quantitatively negligible.",
+          "representation_or_bridge": "The covariance eigenbasis, the comparison matrix A-tilde, the smoothing covariance B, and the characteristic-function decomposition T1+T2+T3 are the operative intermediate objects. The Fourier-to-Wasserstein inequality from the previous unit bridges analytic discrepancy and an actual joint coupling.",
+          "boundary_or_failure": "The result depends on independence, uniform exponential-moment and covariance-size hypotheses, and fixed dimension. Rates are not optimized. In the near-degenerate branch the Gaussian is extended by zero in low-variance directions, so exact full-covariance matching is replaced by an approximation whose omitted variance is controlled; the sharper bound belongs to the nondegenerate or isotropic setting.",
+          "uncertainty": "The proof architecture and degeneracy split are clear, but exact threshold exponents, logarithmic powers, and covariance matrices are extraction-sensitive and should be scan-verified before numerical reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bounded-summand case gives the stronger squared-exponential estimate.",
+      "line_end": 4562,
+      "line_start": 4505,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bernstein or Azuma concentration and a cutoff decomposition upgrade the first-moment coupling estimate to exponential control, which is what the smooth-error series requires.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean coupling error plus concentration yields exponential and Gaussian-tail moment bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u053.txt",
+      "unit_bytes": 3828,
+      "unit_id": "openalex_w2515894720_u053",
+      "unit_sha256": "37f71c01d1480308addf00d62fb1e49c9b68bd6454f5f3aab553ac59af2b5498",
+      "unit_type": "exponential-error-upgrade",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u053.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4497,
+          "line_end": 4504,
+          "text": "                                                d\n                                                X                         −1\n              E |W ′′| ≤ (E |W ′′|2 )1/2 = (             λk )1/2 . n−(2d+6)    . n−β0\n                                               k=k0 +1\n\nFinally,\n                         E |V | ≤ E |W ′ − U ′ | + E |W ′′| . n−β0 .\nThis proves the desired estimate (3.8).\n",
+          "sha256": "ff53b4bcb75128dfd70ade90d9bd9a4f89966d81b76550da025e37e1965cf5a3"
+        },
+        "after": {
+          "line_start": 4563,
+          "line_end": 4570,
+          "text": "\n     Appendix C. Gaussian multiplicative chaos and Random unitary\n                           matrices – the global scale\n   In this appendix we prove that on the global scale, the characteristic polynomial\nof a Haar distributed random unitary matrix converges to a multiplicative chaos dis-\ntribution. The proof is very similar to the zeta case, though naturally the moment\ncalculations are different. For these, we use known results from [26, 28]\n   To fix notation, let UN be a N × N random unitary matrix whose law is the Haar\n",
+          "sha256": "0775bfc17baf61d2f387f41ad5f49d53dce8608bb07b83b3a0914b539de49a84"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B: Gaussian approximation coupling",
+            "line_end": 4563,
+            "line_start": 4197,
+            "mathematical_role": "Proves Wasserstein Gaussian coupling and the exponential error estimates used in the prime-block construction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4562,
+          "line_start": 4505,
+          "title": "Mean coupling error plus concentration yields exponential and Gaussian-tail moment bounds",
+          "unit_id": "openalex_w2515894720_u053",
+          "unit_type": "exponential-error-upgrade",
+          "why_material": "Bernstein or Azuma concentration and a cutoff decomposition upgrade the first-moment coupling estimate to exponential control, which is what the smooth-error series requires."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bounded-summand case gives the stronger squared-exponential estimate.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u053"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4504,
+            "line_start": 4292,
+            "title": "Smoothing characteristic functions couples normalized sums to covariance-matched Gaussians",
+            "unit_id": "openalex_w2515894720_u052",
+            "unit_type": "quantitative-gaussian-coupling",
+            "why_material": "A small auxiliary Gaussian regularizes the normalized sum, Taylor expansion controls its characteristic function on the main region, tail estimates control the complement, and low-rank covariance cases are split off to obtain a polynomial Wasserstein error."
+          },
+          {
+            "line_end": 4805,
+            "line_start": 4564,
+            "title": "Toeplitz asymptotics control characteristic-polynomial truncation in negative Sobolev space",
+            "unit_id": "openalex_w2515894720_u054",
+            "unit_type": "random-matrix-approximation",
+            "why_material": "Exact determinant correlations, Fisher-Hartwig asymptotics for cross terms, and strong Szego asymptotics for truncated terms show that Haar-unitary characteristic polynomials are approximated in mean square by exponential trace truncations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u053",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u053",
+          "spontaneous_reading": "A small first-moment coupling error becomes much stronger only after it is spliced with an independent concentration estimate. The cutoff M is the balancing variable: below it the mean error pays for the exponential, while above it the concentration tail pays, and choosing M from the error scale makes the two costs meet."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u053",
+          "source_grounded_mathematics": "Starting from E|V|<=delta and a Bernstein-derived tail estimate for V=U-W, the proof splits E exp(lambda|V|) into the region |V|<=M, the event |V|>M, and a tail integral. Monotonicity of (exp(lambda t)-1)/t bounds the first region by the mean error; the tail estimate bounds the other two, and M is chosen so delta=exp(-lambda M). When the summands are uniformly bounded, Azuma gives a sub-Gaussian tail, and the analogous decomposition for exp(r|V|^2), with delta=exp(-rM^2), yields the stronger squared-exponential moment estimate.",
+          "conceptual_reading": "This is an error-upgrade mechanism: a weak transport statement supplies small mass near the origin, concentration supplies shape away from it, and truncation interpolates between them. Bounded summands change the available tail geometry and therefore the natural Orlicz scale from exponential to Gaussian.",
+          "representation_or_bridge": "Layer-cake tail integrals and the auxiliary cutoff M bridge E|V| control to exponential moments. Bernstein concentration applies in the general exponential-moment setting, while Azuma is the stronger bridge available under uniform boundedness.",
+          "boundary_or_failure": "The argument does not produce concentration from the mean coupling error alone; it inherits uniform tails from both the normalized sum and its Gaussian approximation. The squared-exponential conclusion requires bounded summands, and constants and the admissible lambda range depend on the preceding hypotheses and dimension.",
+          "uncertainty": "The qualitative upgrade and the two choices of cutoff are explicit. Exact constants, parameter names, and powers in the displayed estimates are formula-sensitive in the normalized extraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the order of limits: matrix size first, then trace cutoff, with uniformity in the angular variables.",
+      "line_end": 4805,
+      "line_start": 4564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exact determinant correlations, Fisher-Hartwig asymptotics for cross terms, and strong Szego asymptotics for truncated terms show that Haar-unitary characteristic polynomials are approximated in mean square by exponential trace truncations.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        73,
+        74,
+        75
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Toeplitz asymptotics control characteristic-polynomial truncation in negative Sobolev space",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u054.txt",
+      "unit_bytes": 14970,
+      "unit_id": "openalex_w2515894720_u054",
+      "unit_sha256": "a66565e9763bc6880bd15ac6870f0e7252a98b860db4479565d305a1e254538a",
+      "unit_type": "random-matrix-approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u054.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4556,
+          "line_end": 4563,
+          "text": "                2             rM 2              −1               rM 2        −2rM 2                     2\n     E exp(r|V | ) ≤ 1 + δ(e          − 1)M          + s(e              − 1)e         +s         2rxe−rx dx\n                                                                                           M\n                               −1 rM 2               −rM 2\n                    ≤ 1 + δM      e       + 2se              .\n                                                                                           √            2\nThe desired estimate is obtained by this time choosing M so that                               δ = e−rM .     \u0003\n\n",
+          "sha256": "f4281515da53c77f0ee7f452b0a3273e3f35febf7c141c863cfac1a96440e241"
+        },
+        "after": {
+          "line_start": 4806,
+          "line_end": 4813,
+          "text": "\n<!-- source-page: 76 -->\n\n76                                  E. SAKSMAN AND C. WEBB\n\n  The next step in proving that υN converges in H−α is to show that if we first let\nN → ∞ and then M → ∞, then νN,M converges in H−α . Let us prove this now.\nLemma C.2. If we first let N → ∞ and then M → ∞, then υN,M converges in law\n",
+          "sha256": "706898a98dc011c5dc929944d6913c63359a814b61c578ee7c6187bcdb3b6eaf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix C: unitary matrices on the global scale",
+            "line_end": 4898,
+            "line_start": 4564,
+            "mathematical_role": "Uses determinant and Toeplitz asymptotics plus Gaussian trace limits to construct the CUE global chaos limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4805,
+          "line_start": 4564,
+          "title": "Toeplitz asymptotics control characteristic-polynomial truncation in negative Sobolev space",
+          "unit_id": "openalex_w2515894720_u054",
+          "unit_type": "random-matrix-approximation",
+          "why_material": "Exact determinant correlations, Fisher-Hartwig asymptotics for cross terms, and strong Szego asymptotics for truncated terms show that Haar-unitary characteristic polynomials are approximated in mean square by exponential trace truncations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the order of limits: matrix size first, then trace cutoff, with uniformity in the angular variables.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u054"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4562,
+            "line_start": 4505,
+            "title": "Mean coupling error plus concentration yields exponential and Gaussian-tail moment bounds",
+            "unit_id": "openalex_w2515894720_u053",
+            "unit_type": "exponential-error-upgrade",
+            "why_material": "Bernstein or Azuma concentration and a cutoff decomposition upgrade the first-moment coupling estimate to exponential control, which is what the smooth-error series requires."
+          },
+          {
+            "line_end": 4895,
+            "line_start": 4811,
+            "title": "Gaussian trace limits become an H-valued multiplicative-chaos martingale",
+            "unit_id": "openalex_w2515894720_u055",
+            "unit_type": "random-matrix-chaos-limit",
+            "why_material": "Diaconis-Shahshahani finite-trace convergence passes through a continuous exponential map, and the resulting Gaussian exponential truncations form an L2-bounded negative-Sobolev martingale, identifying the global random-matrix chaos limit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Toeplitz determinant asymptotics replace zeta divisor-sum estimates, Gaussian trace limits replace prime-phase equidistribution, and dilation plus Brownian coupling then recover the same mesoscopic chaos component.",
+            "limit": "The global inputs are model-specific and the paper does not claim that all microscopic statistics coincide.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u008",
+              "openalex_w2515894720_u054",
+              "openalex_w2515894720_u055",
+              "openalex_w2515894720_u056",
+              "openalex_w2515894720_u057"
+            ],
+            "title": "Random-matrix transfer uses different exact inputs but the same approximation architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u054",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u054",
+          "spontaneous_reading": "Negative Sobolev space makes determinant truncation a covariance-matching problem: after expanding the squared norm, the full determinant, its exponential trace truncation, and their cross term can all be reduced to weighted two-point kernels. Exact CUE correlations and two different Toeplitz asymptotics then make the three limiting quadratic terms coincide and cancel."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u054",
+          "source_grounded_mathematics": "For the Haar-unitary characteristic polynomial v_N(theta)=det(I-e^{-i theta}U_N), the unit defines v_{N,M} by exponentiating the first M traces and proves, for alpha>1/2, that lim_{M to infinity} limsup_{N to infinity} E||v_N-v_{N,M}||_{H^{-alpha}}^2=0. The full-full term uses an exact determinant correlation that is a finite Fourier sum. The full-truncated cross term is a Toeplitz determinant with a Fisher-Hartwig singularity, and the truncated-truncated term is handled by a uniform strong Szego asymptotic. Uniformity in the two angular variables permits integration, and the iterated limits of all three terms equal the same convergent weighted Fourier sum.",
+          "conceptual_reading": "The trace exponential is an effective intermediate representation because it linearizes the logarithm of the characteristic polynomial while retaining the covariance seen by a coarse distributional topology. The proof does not compare fields pointwise; it compares exactly the quadratic information that the negative Sobolev norm preserves.",
+          "representation_or_bridge": "The H^{-alpha} Fourier weights turn norm control into integrated two-point functions. Heine-Szego converts eigenvalue expectations to Toeplitz determinants; Fisher-Hartwig asymptotics handle the determinant singularity in the mixed term, whereas strong Szego handles the smooth truncated symbol.",
+          "boundary_or_failure": "The order of limits is essential: N tends to infinity for fixed M before M tends to infinity, and no uniform joint M,N regime is established. The condition alpha>1/2 ensures summability. The proof relies on cited Toeplitz asymptotics and an asserted angular uniformity derived from uniform Riemann-Hilbert bounds.",
+          "uncertainty": "The cancellation mechanism and limit order are clear. Exact symbol phases, signs, conjugations, and normalization constants are extraction-sensitive and should be checked against the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final full-characteristic-polynomial convergence uses both this limit and the previous truncation estimate.",
+      "line_end": 4895,
+      "line_start": 4811,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Diaconis-Shahshahani finite-trace convergence passes through a continuous exponential map, and the resulting Gaussian exponential truncations form an L2-bounded negative-Sobolev martingale, identifying the global random-matrix chaos limit.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        77
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian trace limits become an H-valued multiplicative-chaos martingale",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u055.txt",
+      "unit_bytes": 5037,
+      "unit_id": "openalex_w2515894720_u055",
+      "unit_sha256": "7b6039db72479ac048d8bc603f5690a187c9ab6e4645d3dc1f0a713ab73a2162",
+      "unit_type": "random-matrix-chaos-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u055.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4803,
+          "line_end": 4810,
+          "text": "                                          lim lim E ||υN − υN,M ||2−α = 0.\n                                      M →∞ N →∞\n                                                                                                                           \u0003\n\n<!-- source-page: 76 -->\n\n76                                  E. SAKSMAN AND C. WEBB\n\n",
+          "sha256": "29512afad0c4a7395213d6ebf67a84af805a03d9b68c89acbfd98eda319a838c"
+        },
+        "after": {
+          "line_start": 4896,
+          "line_end": 4903,
+          "text": "\n\n\n    Appendix D. Gaussian multiplicative chaos and Random unitary\n                         matrices – the mesoscopic scale\n   The goal of this appendix is to prove Theorem 1.3. While we expect that an identical\nresult as in the zeta case can be indeed proven with slightly more effort, this would\ninvolve mainly analysis of purely Gaussian multiplicative chaos with no questions re-\n",
+          "sha256": "95d02a0825be37d50d6f6e6776d377dfa89931650e51a57c9bac6f3a303f33fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix C: unitary matrices on the global scale",
+            "line_end": 4898,
+            "line_start": 4564,
+            "mathematical_role": "Uses determinant and Toeplitz asymptotics plus Gaussian trace limits to construct the CUE global chaos limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4895,
+          "line_start": 4811,
+          "title": "Gaussian trace limits become an H-valued multiplicative-chaos martingale",
+          "unit_id": "openalex_w2515894720_u055",
+          "unit_type": "random-matrix-chaos-limit",
+          "why_material": "Diaconis-Shahshahani finite-trace convergence passes through a continuous exponential map, and the resulting Gaussian exponential truncations form an L2-bounded negative-Sobolev martingale, identifying the global random-matrix chaos limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final full-characteristic-polynomial convergence uses both this limit and the previous truncation estimate.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u055"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4805,
+            "line_start": 4564,
+            "title": "Toeplitz asymptotics control characteristic-polynomial truncation in negative Sobolev space",
+            "unit_id": "openalex_w2515894720_u054",
+            "unit_type": "random-matrix-approximation",
+            "why_material": "Exact determinant correlations, Fisher-Hartwig asymptotics for cross terms, and strong Szego asymptotics for truncated terms show that Haar-unitary characteristic polynomials are approximated in mean square by exponential trace truncations."
+          },
+          {
+            "line_end": 5026,
+            "line_start": 4899,
+            "title": "Local Sobolev dilation transfers the global CUE limit to a slowly shrinking arc",
+            "unit_id": "openalex_w2515894720_u056",
+            "unit_type": "scale-transfer",
+            "why_material": "A lattice Fourier-sampling estimate proves the circle-to-line dilation bound, allowing a scale sequence on which the coupled global characteristic-polynomial error remains negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Toeplitz determinant asymptotics replace zeta divisor-sum estimates, Gaussian trace limits replace prime-phase equidistribution, and dilation plus Brownian coupling then recover the same mesoscopic chaos component.",
+            "limit": "The global inputs are model-specific and the paper does not claim that all microscopic statistics coincide.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u008",
+              "openalex_w2515894720_u054",
+              "openalex_w2515894720_u055",
+              "openalex_w2515894720_u056",
+              "openalex_w2515894720_u057"
+            ],
+            "title": "Random-matrix transfer uses different exact inputs but the same approximation architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u055",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u055",
+          "spontaneous_reading": "Finite trace convergence becomes an infinite random field through two controlled lifts: a continuous exponential map sends each fixed trace vector into negative Sobolev space, and an L2-bounded martingale then adds the Gaussian modes one at a time. This separates the random-matrix limit from construction of the limiting chaos."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u055",
+          "source_grounded_mathematics": "For fixed M, the Diaconis-Shahshahani theorem sends the normalized trace vector (Tr U_N^k/sqrt(k))_{k<=M} to independent standard complex Gaussians. The exponential map F from C^M to H^{-alpha} is shown continuous for alpha>1/2 by uniform Fourier-coefficient bounds on finite-dimensional balls, so the continuous mapping argument gives convergence of v_{N,M}. Realizing all Gaussian modes together makes F(Z_1,...,Z_M) an H^{-alpha}-valued L2-bounded martingale, hence it converges almost surely to v, formally exp(H). Combining this limit with the preceding truncation estimate yields convergence of the full characteristic polynomial and the stated W2 convergence.",
+          "conceptual_reading": "The finite vector of traces is sufficient at each cutoff because exponentiation is continuous only after choosing a topology weak enough to absorb the rough field. Martingale completion supplies a canonical compatible infinite-mode limit rather than taking unrelated limits for each cutoff.",
+          "representation_or_bridge": "The bridge is the map from normalized traces to an exponential Fourier series in H^{-alpha}. Finite-dimensional distributional convergence passes through this map, while the shared Gaussian probability space and the bounded Sobolev second moments bridge finite cutoffs to the full multiplicative-chaos object.",
+          "boundary_or_failure": "The construction requires alpha>1/2 and preserves the iterated order N then M. The expression v=exp(H) is explicitly formal because H itself has only negative regularity. The final W2 argument is omitted as analogous to the zeta case and depends on both this convergence and the prior mean-square truncation bound.",
+          "uncertainty": "The functional-analytic mechanism is well supported. Exact signs and mode conventions in F and H, and the apparent v/nu glyph variation in extraction, should be checked in the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bound restricts alpha to the stated interval and supplies existence rather than an optimal shrinking rate.",
+      "line_end": 5026,
+      "line_start": 4899,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A lattice Fourier-sampling estimate proves the circle-to-line dilation bound, allowing a scale sequence on which the coupled global characteristic-polynomial error remains negligible.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        78,
+        79
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local Sobolev dilation transfers the global CUE limit to a slowly shrinking arc",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u056.txt",
+      "unit_bytes": 7345,
+      "unit_id": "openalex_w2515894720_u056",
+      "unit_sha256": "45f8207b7ff4eaad9c04120a7ff1a0d145b3dd11195cf8f7e1a6a39d9f06cee0",
+      "unit_type": "scale-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u056.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4891,
+          "line_end": 4898,
+          "text": "Proposition C.3. For α > 1/2, υN converges in law (with respect to the topology of\nH−α ) to υ when we let N → ∞, and\n\n                                     lim W2 (υN , υ)H−α = 0.\n                                  N →∞\n\n\n\n",
+          "sha256": "4b62d27e40669e860e85e95e8d782e4fe19046a9eccf6b799894c758f8e1cfd2"
+        },
+        "after": {
+          "line_start": 5027,
+          "line_end": 5034,
+          "text": "It remains for us to understand how υ(εθ) behaves as ε → 0. By our construction, we\nmay actually restrict to the case where εN = 1/MN , where MN is some integer. For\nthis situation we make the following statement.\nLemma D.4. There is a C < ∞ such that for M ≥ 1 and f ∈ C0∞ (R) (and a suitable\nversion of η) it holds that\n                   P −1 1\n                              Z                  Z\n                 − M     √ Zj                2\n",
+          "sha256": "68c03f963ef09f56ba3d9292c32875216a3d5267bfbfabcd24ab9dde1fae4180"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix D: unitary matrices on the mesoscopic scale",
+            "line_end": 5291,
+            "line_start": 4899,
+            "mathematical_role": "Combines dilation, Fourier sampling, and Brownian coupling to identify the CUE mesoscopic chaos."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5026,
+          "line_start": 4899,
+          "title": "Local Sobolev dilation transfers the global CUE limit to a slowly shrinking arc",
+          "unit_id": "openalex_w2515894720_u056",
+          "unit_type": "scale-transfer",
+          "why_material": "A lattice Fourier-sampling estimate proves the circle-to-line dilation bound, allowing a scale sequence on which the coupled global characteristic-polynomial error remains negligible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bound restricts alpha to the stated interval and supplies existence rather than an optimal shrinking rate.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u056"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4895,
+            "line_start": 4811,
+            "title": "Gaussian trace limits become an H-valued multiplicative-chaos martingale",
+            "unit_id": "openalex_w2515894720_u055",
+            "unit_type": "random-matrix-chaos-limit",
+            "why_material": "Diaconis-Shahshahani finite-trace convergence passes through a continuous exponential map, and the resulting Gaussian exponential truncations form an L2-bounded negative-Sobolev martingale, identifying the global random-matrix chaos limit."
+          },
+          {
+            "line_end": 5290,
+            "line_start": 5030,
+            "title": "Block Brownian coupling identifies the mesoscopic CUE chaos and controls regularization uniformly",
+            "unit_id": "openalex_w2515894720_u057",
+            "unit_type": "brownian-coupling",
+            "why_material": "Trace Gaussians are coupled to Brownian increments so discrete exponential covariances become spectral-integral covariances; an epsilon regularization separates limits, with uniform L2 bounds and Fourier sampling justifying its removal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Toeplitz determinant asymptotics replace zeta divisor-sum estimates, Gaussian trace limits replace prime-phase equidistribution, and dilation plus Brownian coupling then recover the same mesoscopic chaos component.",
+            "limit": "The global inputs are model-specific and the paper does not claim that all microscopic statistics coincide.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u008",
+              "openalex_w2515894720_u054",
+              "openalex_w2515894720_u055",
+              "openalex_w2515894720_u056",
+              "openalex_w2515894720_u057"
+            ],
+            "title": "Random-matrix transfer uses different exact inputs but the same approximation architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u056",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u056",
+          "spontaneous_reading": "Mesoscopic transfer is governed by how dilation amplifies weak-topology error. A lattice Fourier-sampling estimate controls the periodic-to-line conversion, and the resulting power-law loss allows one to choose a shrinking arc slowly enough that the already-established global coupling error still vanishes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u056",
+          "source_grounded_mathematics": "Lemma D.1 bounds sampled Fourier values M^{-1} sum_n |g-hat(n/M)|^2 by a weighted L2 norm of g, first at M=1 and then by scaling. Lemma D.2 records an exponential generating-function identity and a harmonic-sum approximation uniform in M as the damping tends to zero. Lemma D.3 localizes a circle distribution with a smooth cutoff and estimates the W^{-alpha,2}(0,1) dilation for alpha in (1/2,1); its proof controls the squared norm by a factor epsilon^{-1-2alpha} times the H^{-alpha} squared norm. Applied to a Wasserstein coupling of v_N-v, this supplies the existence of a sequence epsilon_N tending to zero for which the dilated error vanishes.",
+          "conceptual_reading": "The global-to-local step is a continuity problem with a deteriorating modulus: zooming in magnifies negative-Sobolev discrepancies, but only polynomially. Since the undilated discrepancy tends to zero, a diagonal choice of scale can trade slower shrinking for retained convergence.",
+          "representation_or_bridge": "A smooth cutoff spreads the periodic Fourier series onto the real line, where translated copies of the cutoff transform connect circle coefficients to a real Sobolev norm. The lattice sampling lemma controls their overlap, and the dilation inequality connects global H^{-alpha} coupling to local W^{-alpha,2} coupling.",
+          "boundary_or_failure": "The argument proves existence of a sufficiently slow scale sequence, not an explicit or optimal shrinking rate and not convergence for every mesoscopic scale. It uses alpha strictly between 1/2 and 1. The displayed norm statement and its squared-norm proof should be distinguished when quoting the precise epsilon exponent.",
+          "uncertainty": "The existence mechanism and parameter range are clear, but the exact exponent as typeset is formula-sensitive and the normalized statement may obscure whether a norm or squared norm is being bounded; the retained PDF should be consulted for exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the nested limits and uniformity in the mesoscopic block size; exact formulas are extraction-sensitive.",
+      "line_end": 5290,
+      "line_start": 5030,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Trace Gaussians are coupled to Brownian increments so discrete exponential covariances become spectral-integral covariances; an epsilon regularization separates limits, with uniform L2 bounds and Fourier sampling justifying its removal.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        80,
+        81,
+        82
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Block Brownian coupling identifies the mesoscopic CUE chaos and controls regularization uniformly",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u057.txt",
+      "unit_bytes": 16008,
+      "unit_id": "openalex_w2515894720_u057",
+      "unit_sha256": "afde5439bc2e22df59fd8bb9f31a3b68c263d92c2d92c330a7bea63ebba8dcf2",
+      "unit_type": "brownian-coupling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u057.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5022,
+          "line_end": 5029,
+          "text": "\n   As in the ζ-case in Section 5, one applies the above observation to ϕ(εN ·) = υN (εN ·)−\nυ(εN ·), where the coupling is the one given through the Wasserstein distance. At this\nstage Proposition C.3 and Lemma D.3 together verify that there exists some εN under\nwhich the Wasserstein distance between υN (εN ·) − υ(εN ·) tends to zero as N → ∞.\nIt remains for us to understand how υ(εθ) behaves as ε → 0. By our construction, we\nmay actually restrict to the case where εN = 1/MN , where MN is some integer. For\nthis situation we make the following statement.\n",
+          "sha256": "2c0d44780ceff0a6b45fed41d0e3f0205e141a4b3f6cba8d8dbb2c54280ab40e"
+        },
+        "after": {
+          "line_start": 5291,
+          "line_end": 5298,
+          "text": "\n                                           References\n [1] L.-P. Arguin, D. Belius, and A. Harper: Maxima of a randomized Riemann Zeta function, and\n     branching random walks. Ann. Appl. Probab. 27 (2017), no. 1, 178–215.\n [2] L.-P. Arguin, D. Belius, and P. Bourgade: Maximum of the characteristic polynomial of ran-\n     dom unitary matrices. Maximum of the Characteristic Polynomial of Random Unitary Matrices.\n     Comm. Math. Phys. 349 (2017), no. 2, 703–751.\n [3] L.-P. Arguin, D. Belius, P. Bourgade, M.Radziwill and K. Soundararajan: Maximum of the\n",
+          "sha256": "d7e23d5a7a6e19e8ac8871443e27ab490b50487d57953059f0be475e6d230193"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix D: unitary matrices on the mesoscopic scale",
+            "line_end": 5291,
+            "line_start": 4899,
+            "mathematical_role": "Combines dilation, Fourier sampling, and Brownian coupling to identify the CUE mesoscopic chaos."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5290,
+          "line_start": 5030,
+          "title": "Block Brownian coupling identifies the mesoscopic CUE chaos and controls regularization uniformly",
+          "unit_id": "openalex_w2515894720_u057",
+          "unit_type": "brownian-coupling",
+          "why_material": "Trace Gaussians are coupled to Brownian increments so discrete exponential covariances become spectral-integral covariances; an epsilon regularization separates limits, with uniform L2 bounds and Fourier sampling justifying its removal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the nested limits and uniformity in the mesoscopic block size; exact formulas are extraction-sensitive.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u057"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5026,
+            "line_start": 4899,
+            "title": "Local Sobolev dilation transfers the global CUE limit to a slowly shrinking arc",
+            "unit_id": "openalex_w2515894720_u056",
+            "unit_type": "scale-transfer",
+            "why_material": "A lattice Fourier-sampling estimate proves the circle-to-line dilation bound, allowing a scale sequence on which the coupled global characteristic-polynomial error remains negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Toeplitz determinant asymptotics replace zeta divisor-sum estimates, Gaussian trace limits replace prime-phase equidistribution, and dilation plus Brownian coupling then recover the same mesoscopic chaos component.",
+            "limit": "The global inputs are model-specific and the paper does not claim that all microscopic statistics coincide.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u008",
+              "openalex_w2515894720_u054",
+              "openalex_w2515894720_u055",
+              "openalex_w2515894720_u056",
+              "openalex_w2515894720_u057"
+            ],
+            "title": "Random-matrix transfer uses different exact inputs but the same approximation architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u057",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u057",
+          "spontaneous_reading": "The discrete Gaussian trace modes are aligned with a continuum log-correlated field by coupling each mode to a Brownian increment over one spectral block. An auxiliary exponential damping removes the singular limit-exchange problem: fixed damping turns sums into Riemann integrals, while separate uniform estimates permit the damping to be removed afterward."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u057",
+          "source_grounded_mathematics": "Lemma D.4 compares the rescaled global chaos v(x/M), after removing its first M-1 Gaussian modes, with the line chaos eta when tested against compactly supported smooth f, and supplies uniform L2 bounds. It defines discrete fields U_{N,M}, damped versions U_{N,M}^{(epsilon)}, and a Brownian-integral field eta^{(epsilon)}, coupling Z_j to normalized complex Brownian increments on [j/M,(j+1)/M]. The L2 difference is split into a discrete regularization error, a fixed-epsilon discrete-to-continuum error, and a continuum regularization error. Lemma D.5 handles the middle term by covariance calculations, dominated convergence, and Riemann-sum limits; Lemma D.6 removes damping uniformly in M using the sampling and combinatorial estimates. The resulting test-function bounds permit dominated convergence over Fourier probes and finish the mesoscopic Sobolev convergence.",
+          "conceptual_reading": "Block Brownian coupling identifies the common spectral object behind discrete trace Gaussians and the continuum field. Regularization is not part of the target representation; it is a temporary interface that separates ultraviolet control from the continuum approximation and makes the nested limits auditable.",
+          "representation_or_bridge": "The normalized Brownian block increments are the coupling bridge, while exponential covariance kernels translate Gaussian field comparison into deterministic sum-versus-integral convergence. Smooth test functions, Fourier sampling, and uniform L2 bounds then lift scalar comparisons to the local negative-Sobolev topology.",
+          "boundary_or_failure": "The proof uses nested limits: the finite upper mode cutoff is removed, then M grows for fixed epsilon, while epsilon is removed through estimates uniform in M. It establishes the stated coupled mesoscopic limit for suitable versions and compactly supported tests, not equality of all microscopic statistics or an arbitrary rate. Exact covariance formulas are essential and extraction-sensitive.",
+          "uncertainty": "The three-error decomposition, Brownian block coupling, and uniformity requirements are clear. Exact endpoints, complex conjugations, phase signs, and normalizing factors in the displayed Gaussian covariances should be checked against the retained PDF."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3874d3d2df4efde92e54da7da182ba147fbf49fcf61a304bd411cef0cfca8103"
+}

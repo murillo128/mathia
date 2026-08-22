@@ -1,0 +1,1783 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2278237719_fd8428e7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2278237719",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem, historical comparison, resonance declaration, GCD upper bound, and claimed optimality belong together because they define both the gain and its controlling resource.",
+      "line_end": 80,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Radicals, asymptotic exponents, the zeta argument, and the GCD sum are layout-degraded; exact constants and ranges must be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main theorem improves the scale of known lower bounds for |ζ(1/2+it)|, and the introduction identifies the new causal ingredient: a large GCD form inserted into Soundararajan's resonance method, with optimality of the GCD exponent as a parallel consequence.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extreme ζ values are reduced to a near-optimal GCD sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u01.txt",
+      "unit_bytes": 4138,
+      "unit_id": "openalex_w2278237719_v2_u01",
+      "unit_sha256": "4f3caa8f678c499042d4f4efac7de4ee6f0df8f7985810d165b4cbd98be314f6",
+      "unit_type": "result-and-method-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                                                        sup              p         ≪ N exp A                        ,\n                                                                    1≤n 1 <···<n N k,ℓ=1  nk nℓ                    log log N\n\n                                                   established in a recent paper of ours, cannot be taken smaller than 1.\n\n\n\n\n",
+          "sha256": "c6eb9678143f018c6da126afdc7b0bd7a0c8319dd7aac666b5bb2df4aac1174c"
+        },
+        "after": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "\nTheorem 2. Suppose that 0 < γ < 1 is given. Then for every sufficiently large integer N there\nexist integers 1 ≤ n 1 < · · · < n N and positive numbers c1 , ..., c N such that\n                                                               Ã s                     !\n                    N\n                    X           gcd(n k , n ℓ ) ³ N\n                                                 X 2´              log N log log log N\n(2)                     ck cℓ p                ≥      c j · exp γ                        .\n",
+          "sha256": "9c23ccbe1cc77961bf2f23830b6fab4af61ec1490e294f638bb007b5be3251a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 159,
+            "line_start": 25,
+            "mathematical_role": "States the main zeta and GCD theorems, places them against prior bounds, explains the extremal-set-to-resonator bridge, and sketches extensions and limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 80,
+          "line_start": 25,
+          "title": "Extreme ζ values are reduced to a near-optimal GCD sum",
+          "unit_id": "openalex_w2278237719_v2_u01",
+          "unit_type": "result-and-method-map",
+          "why_material": "The main theorem improves the scale of known lower bounds for |ζ(1/2+it)|, and the introduction identifies the new causal ingredient: a large GCD form inserted into Soundararajan's resonance method, with optimality of the GCD exponent as a parallel consequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem, historical comparison, resonance declaration, GCD upper bound, and claimed optimality belong together because they define both the gain and its controlling resource.",
+          "representation_dependency": "Radicals, asymptotic exponents, the zeta argument, and the GCD sum are layout-degraded; exact constants and ranges must be checked in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 82,
+            "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+            "unit_id": "openalex_w2278237719_v2_u02",
+            "unit_type": "weighted-extremal-form",
+            "why_material": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The weighted theorem, matrix viewpoint, historical σ-regimes, and near-extremizer interpretation are retained as one structural unit.",
+      "line_end": 123,
+      "line_start": 82,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The kernel gcd(nk,nℓ)/√(nknℓ), powers, and exponential scale are visually fragmented; verify the exact normalization and constants in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u02.txt",
+      "unit_bytes": 3190,
+      "unit_id": "openalex_w2278237719_v2_u02",
+      "unit_sha256": "8e4193ab221480f9538d4c731ab5455af2fb146e0d5796dff9600a9230f6ceb0",
+      "unit_type": "weighted-extremal-form",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 74,
+          "line_end": 81,
+          "text": "                                    k ℓ\n(1)                             p         ≤ N exp A\n                          k,ℓ=1  n k nℓ                   log log N\n\nfor arbitrary integers 1 ≤ n 1 < · · · < n N and N sufficiently large. The following result is essential\nfor the proof of Theorem 1 and will as well lead to the conclusion that (1) is optimal in the\nsense that it does not hold if A < 1.\n\n",
+          "sha256": "200784353433f59f8fe942382223aa16351f84a76bd0728fd24e87676fb3cb6e"
+        },
+        "after": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "  The version of the resonance method used in this paper can also be employed to prove\nexistence of large values of |ζ(σ + i t )| in the range 1/2 < σ < 1. In particular, we may offer a\nnew approach to Montgomery’s result [15] which asserts that there exists a positive constant\nc depending on σ such that for all sufficiently large T , we have\n                              ¯ ¡        ´¯       µ               ¶\n                              ¯           ¯          (log T )1−σ\n(4)                           ¯ζ σ + i t ¯ ≥ exp c\n                                                    (log log T )σ\n",
+          "sha256": "c8947b7db1cb1e65929ef97ddf7bf14c1307ff6df00037b7ee199d528675c7ea"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 159,
+            "line_start": 25,
+            "mathematical_role": "States the main zeta and GCD theorems, places them against prior bounds, explains the extremal-set-to-resonator bridge, and sketches extensions and limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 123,
+          "line_start": 82,
+          "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+          "unit_id": "openalex_w2278237719_v2_u02",
+          "unit_type": "weighted-extremal-form",
+          "why_material": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The weighted theorem, matrix viewpoint, historical σ-regimes, and near-extremizer interpretation are retained as one structural unit.",
+          "representation_dependency": "The kernel gcd(nk,nℓ)/√(nknℓ), powers, and exponential scale are visually fragmented; verify the exact normalization and constants in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 80,
+            "line_start": 25,
+            "title": "Extreme ζ values are reduced to a near-optimal GCD sum",
+            "unit_id": "openalex_w2278237719_v2_u01",
+            "unit_type": "result-and-method-map",
+            "why_material": "The main theorem improves the scale of known lower bounds for |ζ(1/2+it)|, and the introduction identifies the new causal ingredient: a large GCD form inserted into Soundararajan's resonance method, with optimality of the GCD exponent as a parallel consequence."
+          },
+          {
+            "line_end": 159,
+            "line_start": 124,
+            "title": "The same resonator predicts a smooth transition across vertical lines",
+            "unit_id": "openalex_w2278237719_v2_u03",
+            "unit_type": "method-transfer-and-capacity-prediction",
+            "why_material": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A GCD kernel measures multiplicative overlap among square-free integers; clustering preserves the ratios encoding that overlap, and the resonator converts those ratios into frequencies whose positive contribution amplifies a smoothed zeta moment.",
+            "limit": "The exact numerical gain depends on formula-sensitive normalizations and on cited resonance estimates, so raw-PDF verification is required.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u09",
+              "openalex_w2278237719_v2_u13"
+            ],
+            "title": "Arithmetic similarity becomes spectral resonance"
+          },
+          {
+            "claim": "Comparing optimized and uniform quadratic forms converts a weighted lower bound into arbitrarily large unweighted configurations, proving that the exponent in the general GCD upper bound cannot be improved below one.",
+            "limit": "The argument first produces a subsequence; a stronger all-large-N statement needs monotonicity machinery deliberately omitted here.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u08"
+            ],
+            "title": "A weighted extremizer can certify an unweighted obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is strategic perspective rather than a proof in this paper and is retained because it identifies which representation feature should vary with σ.",
+      "line_end": 159,
+      "line_start": 124,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The νσ asymptotics and endpoint arrows are extraction-sensitive; exact formulas require the PDF. The detailed proof is explicitly deferred to later work, so the claim here is a reported method prediction, not established local evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same resonator predicts a smooth transition across vertical lines",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u03.txt",
+      "unit_bytes": 2430,
+      "unit_id": "openalex_w2278237719_v2_u03",
+      "unit_sha256": "0be0d59d386e40516b2866742e476b498232475fc8649df2635c7925a3cfd776",
+      "unit_type": "method-transfer-and-capacity-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "large GCD sums with Hilberdink’s version of the resonance method [9]. This led Aistleitner to\na new proof of Montgomery’s Ω-results for ζ(σ + i t ) in the range 1/2 < σ < 1 [15].\n  Inspired by Aisleitner’s work, the proof of Theorem 2 relies on our understanding of ex-\ntremal sets of square-free numbers as described in [4]. We are not able to identify an actual\nextremal set, so that, strictly speaking, we are dealing only with “nearly maximal” GCD sums.\nBut we come sufficiently close to reach the desired conclusion that our estimate from [4] is op-\ntimal, and we are thus led to what appears to be an essentially optimal “resonating” Dirichlet\npolynomial in Soundararajan’s method.\n",
+          "sha256": "3d7d3110feaf0bfa63ba5a8ffba8256f5b5fe232082a9c47d681afd5e4151c33"
+        },
+        "after": {
+          "line_start": 160,
+          "line_end": 167,
+          "text": "\n\n                                         2. P ROOF OF T HEOREM 2\n\n    We begin by fixing a large integer N . To simplify the writing, we will use the short-hand\nnotation log2 N := loglog N , log3 N := log log log N , and log4 N := log log log log N .\n    We will construct c j and n j satisfying (2) using a suitable multiplicative function. To this\nend, we let P be the set of all primes p such that\n",
+          "sha256": "b49156d3edce60648f8ccb1426d2bbad840019b6c4edafecb03401549d2106a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 159,
+            "line_start": 25,
+            "mathematical_role": "States the main zeta and GCD theorems, places them against prior bounds, explains the extremal-set-to-resonator bridge, and sketches extensions and limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 159,
+          "line_start": 124,
+          "title": "The same resonator predicts a smooth transition across vertical lines",
+          "unit_id": "openalex_w2278237719_v2_u03",
+          "unit_type": "method-transfer-and-capacity-prediction",
+          "why_material": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is strategic perspective rather than a proof in this paper and is retained because it identifies which representation feature should vary with σ.",
+          "representation_dependency": "The νσ asymptotics and endpoint arrows are extraction-sensitive; exact formulas require the PDF. The detailed proof is explicitly deferred to later work, so the claim here is a reported method prediction, not established local evidence.",
+          "unit_id": "openalex_w2278237719_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 82,
+            "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+            "unit_id": "openalex_w2278237719_v2_u02",
+            "unit_type": "weighted-extremal-form",
+            "why_material": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer."
+          },
+          {
+            "line_end": 230,
+            "line_start": 162,
+            "title": "Prime-local weights factor the GCD objective into an Euler product",
+            "unit_id": "openalex_w2278237719_v2_u04",
+            "unit_type": "multiplicative-extremizer-construction",
+            "why_material": "The proof chooses a controlled band of primes, defines a multiplicative function on square-free integers, rewrites the weighted GCD form into divisor sums, and factorizes the normalized quantity into local prime contributions; two lemmas then isolate size and truncation obligations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 161,
+              "line_start": 160,
+              "reason": "Blank separator before Section 2."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prime set, weight f(p), divisor-sum rewrite, Euler product, and two reduction lemmas must remain together to expose the design rather than just its result.",
+      "line_end": 230,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The defining interval for primes, f(p), nested divisor sums, and Euler factors contain broken radicals and line ordering; exact symbolic use requires the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof chooses a controlled band of primes, defines a multiplicative function on square-free integers, rewrites the weighted GCD form into divisor sums, and factorizes the normalized quantity into local prime contributions; two lemmas then isolate size and truncation obligations.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-local weights factor the GCD objective into an Euler product",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u04.txt",
+      "unit_bytes": 3982,
+      "unit_id": "openalex_w2278237719_v2_u04",
+      "unit_sha256": "1f634db0381cd87a9055fd850e5f519c75d57d25f8145add78c5a1363a8fff44",
+      "unit_type": "multiplicative-extremizer-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "cations of our version of the resonance method, shows that the smoothness of the numbers\ninvolved in an essentially optimal resonator decreases in an interesting and nontrivial way\nwhen σ decreases from 1 to 1/2.\n    We will prove Theorem 2 in the next section, where we also show how this result leads to the\nfailure of (1) for A < 1. Section 3 gives the proof of Theorem 1, as well as a remark indicating\nthat (1) is a severe obstacle for further improvements using the resonance method.\n\n\n",
+          "sha256": "58f8366a5c8c161e009abe396e74cbbca597400ff20332e3a99885c7065280ea"
+        },
+        "after": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "\n6                                   ANDRIY BONDARENKO AND KRISTIAN SEIP\n\nProof of Lemma 1. Since f (p) < (log3 N )−1/2 for all p in P , it follows from (7) that\n                                                                                 Ã              !\n                           Y 1 + f (p)2 + f (p)p −1/2                                   X f (p)\n                    AN =                                               = exp (1 + o(1))     p     .\n                           p∈P             1 + f (p)2                                   p∈P   p\n",
+          "sha256": "a94054ade43440b36cca4214092e09f82395a133c2635b66a7d286fd04c454d8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction and proof of the large GCD sum",
+            "line_end": 408,
+            "line_start": 160,
+            "mathematical_role": "Builds multiplicative weights on square-free numbers, evaluates their Euler product, and constructs a divisor-closed truncation retaining the required weighted mass."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 230,
+          "line_start": 162,
+          "title": "Prime-local weights factor the GCD objective into an Euler product",
+          "unit_id": "openalex_w2278237719_v2_u04",
+          "unit_type": "multiplicative-extremizer-construction",
+          "why_material": "The proof chooses a controlled band of primes, defines a multiplicative function on square-free integers, rewrites the weighted GCD form into divisor sums, and factorizes the normalized quantity into local prime contributions; two lemmas then isolate size and truncation obligations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prime set, weight f(p), divisor-sum rewrite, Euler product, and two reduction lemmas must remain together to expose the design rather than just its result.",
+          "representation_dependency": "The defining interval for primes, f(p), nested divisor sums, and Euler factors contain broken radicals and line ordering; exact symbolic use requires the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 159,
+            "line_start": 124,
+            "title": "The same resonator predicts a smooth transition across vertical lines",
+            "unit_id": "openalex_w2278237719_v2_u03",
+            "unit_type": "method-transfer-and-capacity-prediction",
+            "why_material": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes."
+          },
+          {
+            "line_end": 257,
+            "line_start": 234,
+            "title": "Taking logarithms turns the Euler product gain into a prime-density integral",
+            "unit_id": "openalex_w2278237719_v2_u05",
+            "unit_type": "product-to-integral-asymptotic",
+            "why_material": "Small local weights permit logarithmic linearization of the Euler product, and a prime-number-theorem approximation converts the accumulated gain over the chosen prime band into the target iterated-logarithm exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A GCD kernel measures multiplicative overlap among square-free integers; clustering preserves the ratios encoding that overlap, and the resonator converts those ratios into frequencies whose positive contribution amplifies a smoothed zeta moment.",
+            "limit": "The exact numerical gain depends on formula-sensitive normalizations and on cited resonance estimates, so raw-PDF verification is required.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u09",
+              "openalex_w2278237719_v2_u13"
+            ],
+            "title": "Arithmetic similarity becomes spectral resonance"
+          },
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 161,
+              "line_start": 160,
+              "reason": "Blank separator before Section 2."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 233,
+              "line_start": 231,
+              "reason": "Page transition and running header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This short proof is a reusable compression from multiplicative local design to a global asymptotic payoff.",
+      "line_end": 257,
+      "line_start": 234,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The square-root prefactor, integration limits, and iterated logarithms are heavily line-broken; the transformation is clear but constants need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Small local weights permit logarithmic linearization of the Euler product, and a prime-number-theorem approximation converts the accumulated gain over the chosen prime band into the target iterated-logarithm exponent.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Taking logarithms turns the Euler product gain into a prime-density integral",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u05.txt",
+      "unit_bytes": 1729,
+      "unit_id": "openalex_w2278237719_v2_u05",
+      "unit_sha256": "9f9573f60b9f74f9af4d0931ced1b13242945f5114bf500b906234ba83d9545f",
+      "unit_type": "product-to-integral-asymptotic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 226,
+          "line_end": 233,
+          "text": "                 P           2\n                                    f (m) f (n) p        ≥ (1 + o(1))A N ,                    N → ∞,\n                  i ∈N f (i ) m,n∈M               mn\n\nand hence Theorem 2 has been established.\n\n6                                   ANDRIY BONDARENKO AND KRISTIAN SEIP\n\n",
+          "sha256": "28d33a9d2c192a590b7f67d2113738597189325adfd4d5b016aa722e6918ebda"
+        },
+        "after": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "                                                                                                                             \u0004\n\nProof of Lemma 2. To prove the lemma, we introduce some new notation. Let P k be the set of\nall primes p such that e k log N log2 N < p ≤ e k+1 log N log2 N , k = 1, . . ., [(log2 N )γ ]. Fix 1 < a <\n                                                                                         a log N\n1/γ. Then let Mk be the set of integers that have at least k 2 log N prime divisors in P k , and let\n                                                                                             3\n\n",
+          "sha256": "0c9f92c427438f755c31700259fc0d3e6aaba7b6ebe2cbaf636184de623b83fc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction and proof of the large GCD sum",
+            "line_end": 408,
+            "line_start": 160,
+            "mathematical_role": "Builds multiplicative weights on square-free numbers, evaluates their Euler product, and constructs a divisor-closed truncation retaining the required weighted mass."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 257,
+          "line_start": 234,
+          "title": "Taking logarithms turns the Euler product gain into a prime-density integral",
+          "unit_id": "openalex_w2278237719_v2_u05",
+          "unit_type": "product-to-integral-asymptotic",
+          "why_material": "Small local weights permit logarithmic linearization of the Euler product, and a prime-number-theorem approximation converts the accumulated gain over the chosen prime band into the target iterated-logarithm exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This short proof is a reusable compression from multiplicative local design to a global asymptotic payoff.",
+          "representation_dependency": "The square-root prefactor, integration limits, and iterated logarithms are heavily line-broken; the transformation is clear but constants need PDF verification.",
+          "unit_id": "openalex_w2278237719_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 162,
+            "title": "Prime-local weights factor the GCD objective into an Euler product",
+            "unit_id": "openalex_w2278237719_v2_u04",
+            "unit_type": "multiplicative-extremizer-construction",
+            "why_material": "The proof chooses a controlled band of primes, defines a multiplicative function on square-free integers, rewrites the weighted GCD form into divisor sums, and factorizes the normalized quantity into local prime contributions; two lemmas then isolate size and truncation obligations."
+          },
+          {
+            "line_end": 320,
+            "line_start": 260,
+            "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+            "unit_id": "openalex_w2278237719_v2_u06",
+            "unit_type": "divisor-closed-compression",
+            "why_material": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 233,
+              "line_start": 231,
+              "reason": "Page transition and running header."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 259,
+              "line_start": 258,
+              "reason": "Proof terminator and blank separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The block definition, occupancy threshold, divisor closure, and entropy-style cardinality estimate form one compression mechanism.",
+      "line_end": 320,
+      "line_start": 260,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Block endpoints, occupancy thresholds, floors, products, and binomial estimates are extraction-sensitive; exact inequalities and exponents require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u06.txt",
+      "unit_bytes": 3670,
+      "unit_id": "openalex_w2278237719_v2_u06",
+      "unit_sha256": "ea960b89e1d177bf30a532648b048e23bbcbe73d6bab3a0559af2be68e0dbbad",
+      "unit_type": "divisor-closed-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "                                 log3 N           1+log2 N+log 3 N                       t (t − log2 N − log3 N )\n                           s\n                               log N log3 N\n            = (γ + o(1))                      .\n                                  log2 N\n\n                                                                                                                             \u0004\n\n",
+          "sha256": "d6fbef3879ec95b672c3034363e4a7188c6d64421de6ecbdffcccc3cc642dc92"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "  To prove (8), we begin by noting that\n                                                                                            γ\n                1                 X\n                             f (n) X       p           1               2 N) ] X f (n) X\n                                                                  [(logX                        p\n(11)    P           2\n                              p      f (d )  d ≤    P           2\n                                                                                  p       f (d ) d .\n",
+          "sha256": "980cbb4f14707f12ab62e43442b97481cbf644bc493f438485fa3717459a9450"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction and proof of the large GCD sum",
+            "line_end": 408,
+            "line_start": 160,
+            "mathematical_role": "Builds multiplicative weights on square-free numbers, evaluates their Euler product, and constructs a divisor-closed truncation retaining the required weighted mass."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 260,
+          "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+          "unit_id": "openalex_w2278237719_v2_u06",
+          "unit_type": "divisor-closed-compression",
+          "why_material": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The block definition, occupancy threshold, divisor closure, and entropy-style cardinality estimate form one compression mechanism.",
+          "representation_dependency": "Block endpoints, occupancy thresholds, floors, products, and binomial estimates are extraction-sensitive; exact inequalities and exponents require the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 257,
+            "line_start": 234,
+            "title": "Taking logarithms turns the Euler product gain into a prime-density integral",
+            "unit_id": "openalex_w2278237719_v2_u05",
+            "unit_type": "product-to-integral-asymptotic",
+            "why_material": "Small local weights permit logarithmic linearization of the Euler product, and a prime-number-theorem approximation converts the accumulated gain over the chosen prime band into the target iterated-logarithm exponent."
+          },
+          {
+            "line_end": 407,
+            "line_start": 321,
+            "title": "An exponential tilt proves the discarded multiplicative mass is negligible",
+            "unit_id": "openalex_w2278237719_v2_u07",
+            "unit_type": "weighted-tail-suppression",
+            "why_material": "A union bound reduces discarded mass to blockwise tails; inserting a tilt b>1, factorizing over primes, and balancing its gain against the occupancy penalty yields a negative exponent and proves the truncation preserves the Euler-product main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 259,
+              "line_start": 258,
+              "reason": "Proof terminator and blank separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The tail decomposition, tilted product, local square-mass estimate, and choice b−1−a log b<0 are one concentration argument.",
+      "line_end": 407,
+      "line_start": 321,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested sums, products, and exponents are densely fragmented; the sign-selection mechanism is readable, but exact factors must be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A union bound reduces discarded mass to blockwise tails; inserting a tilt b>1, factorizing over primes, and balancing its gain against the occupancy penalty yields a negative exponent and proves the truncation preserves the Euler-product main term.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An exponential tilt proves the discarded multiplicative mass is negligible",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u07.txt",
+      "unit_bytes": 5672,
+      "unit_id": "openalex_w2278237719_v2_u07",
+      "unit_sha256": "307a8f6e65e73bf8026e43d48bb02a574baff647198531797d30e1e2331db176",
+      "unit_type": "weighted-tail-suppression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 313,
+          "line_end": 320,
+          "text": "                        Ã         µγ                                                                      ¶!\n                            XN) ]\n                        [(log2\n                                          a log N ¡                       ¢\n                ≤ exp                  1+ 2        k + 2 + log4 N + 2 logk + k + 1 + log2 N                    ≤N\n                             k=1         k log3 N\n\nwhen N is large enough, since aγ < 1.\n",
+          "sha256": "407404213bde27d11228bf1d6bc61448a41c05d3ec58ea01653e0c8feb3f3199"
+        },
+        "after": {
+          "line_start": 408,
+          "line_end": 415,
+          "text": "\n    We close this section by showing that Theorem 2 implies that (1) fails for A < 1.\n\n\nCorollary 1. For every γ, 0 < γ < 1 and any given positive number R, there exists an integer\nN ≥ R and associated integers 1 ≤ n 1 < · · · < n N such that\n                                                    Ã s                      !\n                      XN gcd(n , n )                     log N log log log N\n",
+          "sha256": "b23318e436abce59f107a214388c32e309b0f753fc394cfa6f8f8cbca8864d62"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction and proof of the large GCD sum",
+            "line_end": 408,
+            "line_start": 160,
+            "mathematical_role": "Builds multiplicative weights on square-free numbers, evaluates their Euler product, and constructs a divisor-closed truncation retaining the required weighted mass."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 407,
+          "line_start": 321,
+          "title": "An exponential tilt proves the discarded multiplicative mass is negligible",
+          "unit_id": "openalex_w2278237719_v2_u07",
+          "unit_type": "weighted-tail-suppression",
+          "why_material": "A union bound reduces discarded mass to blockwise tails; inserting a tilt b>1, factorizing over primes, and balancing its gain against the occupancy penalty yields a negative exponent and proves the truncation preserves the Euler-product main term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The tail decomposition, tilted product, local square-mass estimate, and choice b−1−a log b<0 are one concentration argument.",
+          "representation_dependency": "Nested sums, products, and exponents are densely fragmented; the sign-selection mechanism is readable, but exact factors must be checked in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 320,
+            "line_start": 260,
+            "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+            "unit_id": "openalex_w2278237719_v2_u06",
+            "unit_type": "divisor-closed-compression",
+            "why_material": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N."
+          },
+          {
+            "line_end": 460,
+            "line_start": 409,
+            "title": "Spectral comparison transfers a weighted extremizer to unweighted GCD configurations",
+            "unit_id": "openalex_w2278237719_v2_u08",
+            "unit_type": "weighted-to-unweighted-transfer",
+            "why_material": "The paper compares the uniform GCD average Γ(N) with the optimized quadratic form Λ(N); a known inequality between them converts Theorem 2 into arbitrarily large unweighted examples and proves the upper-bound exponent cannot be below one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 408,
+              "line_start": 408,
+              "reason": "Blank separator before the optimality corollary."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two extremal quantities, comparison inequality, subsequence conclusion, and monotonicity caveat are kept together because they explain exactly what is and is not transferred.",
+      "line_end": 460,
+      "line_start": 409,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definitions of Γ and Λ and the maxima over n≤N are visually misaligned; exact constants and quantifiers require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper compares the uniform GCD average Γ(N) with the optimized quadratic form Λ(N); a known inequality between them converts Theorem 2 into arbitrarily large unweighted examples and proves the upper-bound exponent cannot be below one.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral comparison transfers a weighted extremizer to unweighted GCD configurations",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u08.txt",
+      "unit_bytes": 3401,
+      "unit_id": "openalex_w2278237719_v2_u08",
+      "unit_sha256": "a4e7152af2539948c16e2f1f8c7f08e20b95733ea86429f1f9e951252bda7db2",
+      "unit_type": "weighted-to-unweighted-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 401,
+          "line_end": 408,
+          "text": "                               µ                                 ¶\n                                                         log N\n                           exp (b − 1 − a log b + o(1)) 2          .\n                                                       k log3 N\n\nChoosing b sufficiently close to 1, we obtain b − 1 − a logb < 0. Returning to (11), we therefore\nsee that the desired relation (8) has been established.                                                          \u0004\n\n",
+          "sha256": "c9c015b43a907a452a192c938bbab38ea2a0dc11abea4c23c9ef3698a6aaba43"
+        },
+        "after": {
+          "line_start": 461,
+          "line_end": 468,
+          "text": "\n\n                                         3. P ROOF OF T HEOREM 1\n\n  Following Soundararajan’s method, we seek a Dirichlet polynomial\n                                                        X\n                                            R(t ) =            r (m)m −i t\n                                                      m∈M ′\n",
+          "sha256": "efc01c9a4b43ebd681d451fcf17627e324ff6dcb70f4a2b8c064f75558ab0b71"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Optimality consequence for unweighted GCD sums",
+            "line_end": 462,
+            "line_start": 409,
+            "mathematical_role": "Transfers the weighted lower bound to arbitrarily large unweighted GCD configurations and records a monotonicity gap not needed for the main theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 460,
+          "line_start": 409,
+          "title": "Spectral comparison transfers a weighted extremizer to unweighted GCD configurations",
+          "unit_id": "openalex_w2278237719_v2_u08",
+          "unit_type": "weighted-to-unweighted-transfer",
+          "why_material": "The paper compares the uniform GCD average Γ(N) with the optimized quadratic form Λ(N); a known inequality between them converts Theorem 2 into arbitrarily large unweighted examples and proves the upper-bound exponent cannot be below one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two extremal quantities, comparison inequality, subsequence conclusion, and monotonicity caveat are kept together because they explain exactly what is and is not transferred.",
+          "representation_dependency": "The definitions of Γ and Λ and the maxima over n≤N are visually misaligned; exact constants and quantifiers require the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 407,
+            "line_start": 321,
+            "title": "An exponential tilt proves the discarded multiplicative mass is negligible",
+            "unit_id": "openalex_w2278237719_v2_u07",
+            "unit_type": "weighted-tail-suppression",
+            "why_material": "A union bound reduces discarded mass to blockwise tails; inserting a tilt b>1, factorizing over primes, and balancing its gain against the occupancy penalty yields a negative exponent and proves the truncation preserves the Euler-product main term."
+          },
+          {
+            "line_end": 531,
+            "line_start": 463,
+            "title": "Multiplicative ratios, not integer size, determine the resonator geometry",
+            "unit_id": "openalex_w2278237719_v2_u09",
+            "unit_type": "frequency-clustered-resonator",
+            "why_material": "The resonance ratio reduces a pointwise maximum to two smoothed moments. The key design abandons matching the zeta approximant's length: logarithmically close elements of the long multiplicative set are clustered, and their squared weights are aggregated into a short enough Dirichlet polynomial because relevant frequencies depend on m/n."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Comparing optimized and uniform quadratic forms converts a weighted lower bound into arbitrarily large unweighted configurations, proving that the exponent in the general GCD upper bound cannot be improved below one.",
+            "limit": "The argument first produces a subsequence; a stronger all-large-N statement needs monotonicity machinery deliberately omitted here.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u08"
+            ],
+            "title": "A weighted extremizer can certify an unweighted obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 408,
+              "line_start": 408,
+              "reason": "Blank separator before the optimality corollary."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 462,
+              "line_start": 461,
+              "reason": "Blank separator before Section 3."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The moment ratio, positivity requirements on the smoother, frequency explanation, clustering rule, and coefficient aggregation together define the modified resonator.",
+      "line_end": 531,
+      "line_start": 463,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier notation, interval intersections, M′, and the square-root definition of r(m) are broken across lines; exact construction requires the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The resonance ratio reduces a pointwise maximum to two smoothed moments. The key design abandons matching the zeta approximant's length: logarithmically close elements of the long multiplicative set are clustered, and their squared weights are aggregated into a short enough Dirichlet polynomial because relevant frequencies depend on m/n.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiplicative ratios, not integer size, determine the resonator geometry",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u09.txt",
+      "unit_bytes": 4360,
+      "unit_id": "openalex_w2278237719_v2_u09",
+      "unit_sha256": "e210cc7431934acf8d426cc88111a3b0664939add95b83baa7e73bd60703d867",
+      "unit_type": "frequency-clustered-resonator",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 455,
+          "line_end": 462,
+          "text": "\n  Note that if we knew that N 7→ Γ(N ) is an increasing function, then we could immedi-\n                                                ³ p                     ´\nately have made the stronger conclusion that exp γ log N log3 N / log2 N ≤ Γ(N ) for all suf-\nficiently large N . This inequality does indeed hold, but its proof requires additional techni-\ncalities which we choose not to supply since they are not needed for the proof of Theorem 1.\n\n\n",
+          "sha256": "3f129b12c7889ffc0bdbe8d0524673bf4f09a030f376b114c8897022b5da23e5"
+        },
+        "after": {
+          "line_start": 532,
+          "line_end": 539,
+          "text": "  The proof of Theorem 1 will also require two additional estimates which we state as sepa-\nrate lemmas. The first is related to the quantity A N defined in (6).\n\nLemma 3. Let M be the set constructed in the proof of Lemma 2 and ε be a positive number.\nThen\n\n                          1        X f (n)    X             p\n(18)                P            2\n",
+          "sha256": "193f6b5d23d134483b08b70ccb170af879e550d4b45c4597b2edaf50cc36a966"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 531,
+          "line_start": 463,
+          "title": "Multiplicative ratios, not integer size, determine the resonator geometry",
+          "unit_id": "openalex_w2278237719_v2_u09",
+          "unit_type": "frequency-clustered-resonator",
+          "why_material": "The resonance ratio reduces a pointwise maximum to two smoothed moments. The key design abandons matching the zeta approximant's length: logarithmically close elements of the long multiplicative set are clustered, and their squared weights are aggregated into a short enough Dirichlet polynomial because relevant frequencies depend on m/n."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The moment ratio, positivity requirements on the smoother, frequency explanation, clustering rule, and coefficient aggregation together define the modified resonator.",
+          "representation_dependency": "Fourier notation, interval intersections, M′, and the square-root definition of r(m) are broken across lines; exact construction requires the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 460,
+            "line_start": 409,
+            "title": "Spectral comparison transfers a weighted extremizer to unweighted GCD configurations",
+            "unit_id": "openalex_w2278237719_v2_u08",
+            "unit_type": "weighted-to-unweighted-transfer",
+            "why_material": "The paper compares the uniform GCD average Γ(N) with the optimized quadratic form Λ(N); a known inequality between them converts Theorem 2 into arbitrarily large unweighted examples and proves the upper-bound exponent cannot be below one."
+          },
+          {
+            "line_end": 565,
+            "line_start": 535,
+            "title": "Large divisor ratios contribute negligibly to the resonator's arithmetic mass",
+            "unit_id": "openalex_w2278237719_v2_u10",
+            "unit_type": "resonator-tail-control",
+            "why_material": "Lemma 3 rewrites the unwanted divisor range by complementary divisors and uses a fractional-power penalty plus multiplicativity to show it is uniformly negligible over the compressed support."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A GCD kernel measures multiplicative overlap among square-free integers; clustering preserves the ratios encoding that overlap, and the resonator converts those ratios into frequencies whose positive contribution amplifies a smoothed zeta moment.",
+            "limit": "The exact numerical gain depends on formula-sensitive normalizations and on cited resonance estimates, so raw-PDF verification is required.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u09",
+              "openalex_w2278237719_v2_u13"
+            ],
+            "title": "Arithmetic similarity becomes spectral resonance"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 462,
+              "line_start": 461,
+              "reason": "Blank separator before Section 3."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reindexing and multiplicative product estimate are retained with the lemma because they justify later restricting to frequency-compatible divisors.",
+      "line_end": 565,
+      "line_start": 535,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The divisor thresholds, fractional powers, and final Euler product are extraction-sensitive; verify exact exponents in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 3 rewrites the unwanted divisor range by complementary divisors and uses a fractional-power penalty plus multiplicativity to show it is uniformly negligible over the compressed support.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large divisor ratios contribute negligibly to the resonator's arithmetic mass",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u10.txt",
+      "unit_bytes": 1801,
+      "unit_id": "openalex_w2278237719_v2_u10",
+      "unit_sha256": "f96802a2bd62ecbf6063ef0a5eed1aac16d970d16d8a76ed99c3ea97d7d828c4",
+      "unit_type": "resonator-tail-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 527,
+          "line_end": 534,
+          "text": "                                                           X                                   2\n                        r (m) :=                                                        f (n)\n                                   n∈M ,1−T −1 (log T )2 ≤n/m≤1+T −1 (log T )2\n\nfor every m in M ′ . Note that plainly |M ′ | ≤ |M | ≤ N .\n  The proof of Theorem 1 will also require two additional estimates which we state as sepa-\nrate lemmas. The first is related to the quantity A N defined in (6).\n\n",
+          "sha256": "d18e7af523546e5d14890535638d272175e0cb2fdc1cf6b5c846aa480af3472f"
+        },
+        "after": {
+          "line_start": 566,
+          "line_end": 573,
+          "text": "\n  Our second estimate deals with the action of the resonator in the interval |t | ≤ T β .\n\nLemma 4. For an arbitrary positive number M, we have\n                  ¯ X            ZT β µ ¶i t ³\n                  ¯                    M       log T ´ ¯¯\n                  ¯       n −1/2\n                                            Φ       t d t ¯ ≪ max(T β , T 1/2 log T ),\n",
+          "sha256": "5892aa62f7e31416bf1b958f7a34cf53c9f25b7ece5aa99ff9d110e21067c9d6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 565,
+          "line_start": 535,
+          "title": "Large divisor ratios contribute negligibly to the resonator's arithmetic mass",
+          "unit_id": "openalex_w2278237719_v2_u10",
+          "unit_type": "resonator-tail-control",
+          "why_material": "Lemma 3 rewrites the unwanted divisor range by complementary divisors and uses a fractional-power penalty plus multiplicativity to show it is uniformly negligible over the compressed support."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The reindexing and multiplicative product estimate are retained with the lemma because they justify later restricting to frequency-compatible divisors.",
+          "representation_dependency": "The divisor thresholds, fractional powers, and final Euler product are extraction-sensitive; verify exact exponents in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 531,
+            "line_start": 463,
+            "title": "Multiplicative ratios, not integer size, determine the resonator geometry",
+            "unit_id": "openalex_w2278237719_v2_u09",
+            "unit_type": "frequency-clustered-resonator",
+            "why_material": "The resonance ratio reduces a pointwise maximum to two smoothed moments. The key design abandons matching the zeta approximant's length: logarithmically close elements of the long multiplicative set are clustered, and their squared weights are aggregated into a short enough Dirichlet polynomial because relevant frequencies depend on m/n."
+          },
+          {
+            "line_end": 629,
+            "line_start": 567,
+            "title": "Frequency spacing controls the excluded low-height interval",
+            "unit_id": "openalex_w2278237719_v2_u11",
+            "unit_type": "oscillatory-range-separation",
+            "why_material": "An oscillatory-integral estimate gives the minimum of interval length and inverse frequency; separating near, medium, and far multiplicative ratios then bounds the part of the zeta-resonator integral below the target height."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 566,
+              "line_start": 566,
+              "reason": "Blank separator before the oscillatory estimate."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The base oscillatory estimate, dyadic-like ratio shells, and summed bound form one range-separation mechanism.",
+      "line_end": 629,
+      "line_start": 567,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logarithmic denominator, shell definition, and integral bounds are visually fragmented; exact constants and endpoints require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An oscillatory-integral estimate gives the minimum of interval length and inverse frequency; separating near, medium, and far multiplicative ratios then bounds the part of the zeta-resonator integral below the target height.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frequency spacing controls the excluded low-height interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u11.txt",
+      "unit_bytes": 3902,
+      "unit_id": "openalex_w2278237719_v2_u11",
+      "unit_sha256": "08425e4c1522df898a56b78a6250c50b2ff31606d6142e323c6d05944489c232",
+      "unit_type": "oscillatory-range-separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 559,
+          "line_end": 566,
+          "text": "                                                                             Y                     1\n                              p ≤N                         1/4\n                                                                 =N                    1+                     = o(1)\n             k|n,k>N ε f (k)   k              k|n f (k)k                     p|n            p 1/4 f (p)\n\nas required. The last identity is clear because 1/(p 1/4 f (p)) = o(1) uniformly for all p in P and\nthe integer n has at most 2a log N / log3 N prime divisors.                                                            \u0004\n\n",
+          "sha256": "646807fe445efc0aedfc29e4d6ad6d44440a08d38270ac197373e863964127ba"
+        },
+        "after": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "\n     With the resonator and Lemma 3 and Lemma 4 in place, we now turn to the estimates for\nM1 (R, T ) and M2 (R, T ).\n\nProof of Theorem 1. We begin by finding an upper bound for M1 (R, T ):\n                      Z∞                         p\n                                 2\n                                   ³ log T ´       2πT X                  ³ T        m´\n",
+          "sha256": "038c8b11c3cd048127a4a2389739d3c961a8f0450269b839d933898ab8a30f2a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 629,
+          "line_start": 567,
+          "title": "Frequency spacing controls the excluded low-height interval",
+          "unit_id": "openalex_w2278237719_v2_u11",
+          "unit_type": "oscillatory-range-separation",
+          "why_material": "An oscillatory-integral estimate gives the minimum of interval length and inverse frequency; separating near, medium, and far multiplicative ratios then bounds the part of the zeta-resonator integral below the target height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The base oscillatory estimate, dyadic-like ratio shells, and summed bound form one range-separation mechanism.",
+          "representation_dependency": "The logarithmic denominator, shell definition, and integral bounds are visually fragmented; exact constants and endpoints require the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 565,
+            "line_start": 535,
+            "title": "Large divisor ratios contribute negligibly to the resonator's arithmetic mass",
+            "unit_id": "openalex_w2278237719_v2_u10",
+            "unit_type": "resonator-tail-control",
+            "why_material": "Lemma 3 rewrites the unwanted divisor range by complementary divisors and uses a fractional-power penalty plus multiplicativity to show it is uniformly negligible over the compressed support."
+          },
+          {
+            "line_end": 674,
+            "line_start": 631,
+            "title": "Fast Fourier decay bounds the resonator's normalization cost",
+            "unit_id": "openalex_w2278237719_v2_u12",
+            "unit_type": "normalization-moment-bound",
+            "why_material": "Expanding the smoothed square of the resonator converts the denominator moment into a Fourier-weighted pair sum; frequency clustering and rapid decay suppress separated pairs and bound nearby pairs by the total multiplicative mass."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof succeeds by separately budgeting low-height oscillation, denominator normalization, and positive numerator gain; after those losses are controlled, the remaining ceiling is the available GCD-sum bound rather than smoothing or truncation throughput.",
+            "limit": "This is a solver-architecture-specific obstruction: a materially different method need not inherit the same ceiling.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u11",
+              "openalex_w2278237719_v2_u12",
+              "openalex_w2278237719_v2_u13",
+              "openalex_w2278237719_v2_u14"
+            ],
+            "title": "Proof-budget separation reveals the resonance bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 566,
+              "line_start": 566,
+              "reason": "Blank separator before the oscillatory estimate."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 630,
+              "line_start": 630,
+              "reason": "Blank separator before the moment estimates."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the cost side of the resonance ratio and must be represented separately from the gain side.",
+      "line_end": 674,
+      "line_start": 631,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier-transform normalization, Gaussian factors, and pair restrictions are extraction-sensitive; exact powers of log T require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expanding the smoothed square of the resonator converts the denominator moment into a Fourier-weighted pair sum; frequency clustering and rapid decay suppress separated pairs and bound nearby pairs by the total multiplicative mass.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fast Fourier decay bounds the resonator's normalization cost",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u12.txt",
+      "unit_bytes": 2967,
+      "unit_id": "openalex_w2278237719_v2_u12",
+      "unit_sha256": "833c562823f4a122d90e9f55f1e0e032f50b912060e7b8591c0902a10b30a890",
+      "unit_type": "normalization-moment-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 623,
+          "line_end": 630,
+          "text": "                                   n −1/2 ¯       ¯≪                             ≪ M 1/2 log M ≤ T 1/2 log T.\n                       1/2 n∈S m\n                                          ¯ log M ¯                         m\n                                                                     M 1/2\n             1≤m≤ M 2                             n         1≤m≤      2\n\nReturning to (20), we obtain the assertion of the lemma.                                                                 \u0004\n\n",
+          "sha256": "91c7b667aca4946e65214312a9af1d500ceccde35967a5b4d0c907ba43149aff"
+        },
+        "after": {
+          "line_start": 675,
+          "line_end": 682,
+          "text": "  We next turn to the lower bound for M2 (R, T ). We use the classical approximation\n\n                                              X                    T 1/2−i t\n(23)                        ζ(1/2 + i t ) =         n −1/2−i t −             + O(T −1/2 ),\n                                              n≤T                  1/2 − i t\n\nwhich is valid for |t | ≤ T (see [19, Theorem 4.11]). Hence, using also the trivial estimate\n            P\n",
+          "sha256": "2640c9a7c22f2b920f192ec0f3e5ab4424f621c5d0ce07d34501446b483c070f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 674,
+          "line_start": 631,
+          "title": "Fast Fourier decay bounds the resonator's normalization cost",
+          "unit_id": "openalex_w2278237719_v2_u12",
+          "unit_type": "normalization-moment-bound",
+          "why_material": "Expanding the smoothed square of the resonator converts the denominator moment into a Fourier-weighted pair sum; frequency clustering and rapid decay suppress separated pairs and bound nearby pairs by the total multiplicative mass."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the cost side of the resonance ratio and must be represented separately from the gain side.",
+          "representation_dependency": "The Fourier-transform normalization, Gaussian factors, and pair restrictions are extraction-sensitive; exact powers of log T require the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 629,
+            "line_start": 567,
+            "title": "Frequency spacing controls the excluded low-height interval",
+            "unit_id": "openalex_w2278237719_v2_u11",
+            "unit_type": "oscillatory-range-separation",
+            "why_material": "An oscillatory-integral estimate gives the minimum of interval length and inverse frequency; separating near, medium, and far multiplicative ratios then bounds the part of the zeta-resonator integral below the target height."
+          },
+          {
+            "line_end": 779,
+            "line_start": 675,
+            "title": "Positivity selects arithmetic coincidences that reproduce the large GCD sum",
+            "unit_id": "openalex_w2278237719_v2_u13",
+            "unit_type": "positive-subcollection-lower-bound",
+            "why_material": "A classical finite Dirichlet approximation to ζ turns the numerator moment into a positive triple sum. Positivity permits restriction to multiplicative coincidences, clustering and Cauchy–Schwarz recover weighted divisor pairs, tail lemmas replace them by the full GCD quantity, and the numerator/denominator ratio yields the extreme-value theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof succeeds by separately budgeting low-height oscillation, denominator normalization, and positive numerator gain; after those losses are controlled, the remaining ceiling is the available GCD-sum bound rather than smoothing or truncation throughput.",
+            "limit": "This is a solver-architecture-specific obstruction: a materially different method need not inherit the same ceiling.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u11",
+              "openalex_w2278237719_v2_u12",
+              "openalex_w2278237719_v2_u13",
+              "openalex_w2278237719_v2_u14"
+            ],
+            "title": "Proof-budget separation reveals the resonance bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 630,
+              "line_start": 630,
+              "reason": "Blank separator before the moment estimates."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zeta approximation, low-range removal, positive Fourier sum, selected subcollection, GCD comparison, and final ratio are one complete gain mechanism.",
+      "line_end": 779,
+      "line_start": 675,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span contains dense triple sums, Fourier factors, ratio constraints, and asymptotic exponents; the strategic chain is prose-supported, but every exact formula should be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A classical finite Dirichlet approximation to ζ turns the numerator moment into a positive triple sum. Positivity permits restriction to multiplicative coincidences, clustering and Cauchy–Schwarz recover weighted divisor pairs, tail lemmas replace them by the full GCD quantity, and the numerator/denominator ratio yields the extreme-value theorem.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity selects arithmetic coincidences that reproduce the large GCD sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u13.txt",
+      "unit_bytes": 6547,
+      "unit_id": "openalex_w2278237719_v2_u13",
+      "unit_sha256": "535e46f08b15773854226501d44b96008accd65f5729b5b1732a999c11897118",
+      "unit_type": "positive-subcollection-lower-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 667,
+          "line_end": 674,
+          "text": "                                                              ≪ (log T )4                f (n)2 ,\n                                                                                n∈M\n\nwe may therefore return to (21) and conclude that\n                                                                      X\n(22)                                 M1 (R, T ) ≪ T (log T )3                f (n)2 .\n                                                                    n∈M\n\n",
+          "sha256": "04c7846c4d94be299c61c17b72c572c19f2e73fd7c0bdc92b5b2f5f38bf66741"
+        },
+        "after": {
+          "line_start": 780,
+          "line_end": 787,
+          "text": "\n  Note that it was used several times in the proof that the set M ′ has cardinality not exceed-\ning T κ with κ ≤ 1/2. In Soundararajan’s original proof, one had the same bound with κ < 1\nfor this cardinality. In either case, it seems hard to dispense with a restriction like this. Tak-\ning into account the step leading to the crucial estimate (25), we see that (1) combined with\nthe right inequality in (16) indicates that the only improvement we could hope for following\nSoundararajan’s method is to find a slightly larger c in Theorem 1.\n\n",
+          "sha256": "530c985808e9e500ee5517a8d09b177589e544f94ca8254d0bf7329a7d40836a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 779,
+          "line_start": 675,
+          "title": "Positivity selects arithmetic coincidences that reproduce the large GCD sum",
+          "unit_id": "openalex_w2278237719_v2_u13",
+          "unit_type": "positive-subcollection-lower-bound",
+          "why_material": "A classical finite Dirichlet approximation to ζ turns the numerator moment into a positive triple sum. Positivity permits restriction to multiplicative coincidences, clustering and Cauchy–Schwarz recover weighted divisor pairs, tail lemmas replace them by the full GCD quantity, and the numerator/denominator ratio yields the extreme-value theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zeta approximation, low-range removal, positive Fourier sum, selected subcollection, GCD comparison, and final ratio are one complete gain mechanism.",
+          "representation_dependency": "This span contains dense triple sums, Fourier factors, ratio constraints, and asymptotic exponents; the strategic chain is prose-supported, but every exact formula should be checked in the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 674,
+            "line_start": 631,
+            "title": "Fast Fourier decay bounds the resonator's normalization cost",
+            "unit_id": "openalex_w2278237719_v2_u12",
+            "unit_type": "normalization-moment-bound",
+            "why_material": "Expanding the smoothed square of the resonator converts the denominator moment into a Fourier-weighted pair sum; frequency clustering and rapid decay suppress separated pairs and bound nearby pairs by the total multiplicative mass."
+          },
+          {
+            "line_end": 786,
+            "line_start": 781,
+            "title": "The GCD upper bound is a ceiling for this resonance architecture",
+            "unit_id": "openalex_w2278237719_v2_u14",
+            "unit_type": "method-specific-obstruction",
+            "why_material": "The authors trace cardinality restrictions and the crucial numerator estimate back to the GCD upper bound and conclude that only a modest constant improvement is available without changing the method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A GCD kernel measures multiplicative overlap among square-free integers; clustering preserves the ratios encoding that overlap, and the resonator converts those ratios into frequencies whose positive contribution amplifies a smoothed zeta moment.",
+            "limit": "The exact numerical gain depends on formula-sensitive normalizations and on cited resonance estimates, so raw-PDF verification is required.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u02",
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u09",
+              "openalex_w2278237719_v2_u13"
+            ],
+            "title": "Arithmetic similarity becomes spectral resonance"
+          },
+          {
+            "claim": "The proof succeeds by separately budgeting low-height oscillation, denominator normalization, and positive numerator gain; after those losses are controlled, the remaining ceiling is the available GCD-sum bound rather than smoothing or truncation throughput.",
+            "limit": "This is a solver-architecture-specific obstruction: a materially different method need not inherit the same ceiling.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u11",
+              "openalex_w2278237719_v2_u12",
+              "openalex_w2278237719_v2_u13",
+              "openalex_w2278237719_v2_u14"
+            ],
+            "title": "Proof-budget separation reveals the resonance bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This source-specific negative result prevents interpreting the successful resonator as an open-ended route to arbitrary improvements.",
+      "line_end": 786,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction defect beyond ordinary mathematical symbols; the limitation is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors trace cardinality restrictions and the crucial numerator estimate back to the GCD upper bound and conclude that only a modest constant improvement is available without changing the method.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The GCD upper bound is a ceiling for this resonance architecture",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u14.txt",
+      "unit_bytes": 552,
+      "unit_id": "openalex_w2278237719_v2_u14",
+      "unit_sha256": "4f32bdeb309dd02c892296c01b728815cd2b6a96643be27374717fbccd76647c",
+      "unit_type": "method-specific-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "                                                       Ã s                !\n                                    ¯           ¯          log T log  3 T\n                              max ¯ζ(1/2 + i t )¯ ≥ exp c\n                              β\n                             T ≤t≤T                           log 2 T\n                                                p\nfor all sufficiently large T since we have c < κ by our choice of κ.                                            \u0004\n\n",
+          "sha256": "3e36cb74dd1bcecb7592d8a988b01f3ec3290d4bd9329dc68c69dc6b9b635d96"
+        },
+        "after": {
+          "line_start": 787,
+          "line_end": 794,
+          "text": "\n                                          ACKNOWLEDGEMENTS\n\n  We are grateful to Christoph Aistleitner, Maksym Radziwiłł, and Oleksandr Rudenko for\nseveral fruitful discussions. We would also like to thank Maksym Radziwiłł for some pertinent\ncomments on a preliminary version of the paper.\n\n                                                R EFERENCES\n",
+          "sha256": "8e1c9b3f495ca0522c8b647f187da1c6a977e05c38f5d8d0afafa25e81782988"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resonance proof of the zeta extreme-value theorem",
+            "line_end": 787,
+            "line_start": 463,
+            "mathematical_role": "Constructs a clustered long resonator, controls truncation and the low-height interval, compares its two smoothed moments, imports the GCD lower bound, and identifies the method's bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 786,
+          "line_start": 781,
+          "title": "The GCD upper bound is a ceiling for this resonance architecture",
+          "unit_id": "openalex_w2278237719_v2_u14",
+          "unit_type": "method-specific-obstruction",
+          "why_material": "The authors trace cardinality restrictions and the crucial numerator estimate back to the GCD upper bound and conclude that only a modest constant improvement is available without changing the method."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This source-specific negative result prevents interpreting the successful resonator as an open-ended route to arbitrary improvements.",
+          "representation_dependency": "No material extraction defect beyond ordinary mathematical symbols; the limitation is explicit in prose.",
+          "unit_id": "openalex_w2278237719_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 675,
+            "title": "Positivity selects arithmetic coincidences that reproduce the large GCD sum",
+            "unit_id": "openalex_w2278237719_v2_u13",
+            "unit_type": "positive-subcollection-lower-bound",
+            "why_material": "A classical finite Dirichlet approximation to ζ turns the numerator moment into a positive triple sum. Positivity permits restriction to multiplicative coincidences, clustering and Cauchy–Schwarz recover weighted divisor pairs, tail lemmas replace them by the full GCD quantity, and the numerator/denominator ratio yields the extreme-value theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof succeeds by separately budgeting low-height oscillation, denominator normalization, and positive numerator gain; after those losses are controlled, the remaining ceiling is the available GCD-sum bound rather than smoothing or truncation throughput.",
+            "limit": "This is a solver-architecture-specific obstruction: a materially different method need not inherit the same ceiling.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u11",
+              "openalex_w2278237719_v2_u12",
+              "openalex_w2278237719_v2_u13",
+              "openalex_w2278237719_v2_u14"
+            ],
+            "title": "Proof-budget separation reveals the resonance bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ]
+}

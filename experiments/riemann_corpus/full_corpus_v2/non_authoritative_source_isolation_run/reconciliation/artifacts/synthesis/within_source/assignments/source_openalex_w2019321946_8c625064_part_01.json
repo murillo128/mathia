@@ -1,0 +1,469 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2019321946",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2019321946_8c625064_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Restricting to periodic antisymmetric functions yields an explicit Fourier basis in which the RH closure condition becomes convergence of arithmetic coordinate sequences.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2019321946_v2_u02",
+          "openalex_w2019321946_v2_u03",
+          "openalex_w2019321946_v2_u05",
+          "openalex_w2019321946_v2_u06"
+        ],
+        "proposed_limit": "The smaller space preserves the criterion only because the coefficient-correction argument is proved; arbitrary symmetry restriction would not.",
+        "source_id": "openalex_w2019321946",
+        "synthesis_id": "riemann_v2_within_26781ace04364c155787e254",
+        "title": "Symmetry compression makes Nyman-Beurling computational"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The family is not complete in the ambient Hilbert space, motivating the restricted space HP.",
+          "line_end": 126,
+          "line_start": 70,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed integrals are readable with moderate OCR risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates the weighted sine-product integral by a min formula and uses four cancellations to prove orthonormality, then defines the two symmetry constraints of the closed span.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Adjacent sine differences form an orthonormal family",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u02.txt",
+          "unit_bytes": 2830,
+          "unit_id": "openalex_w2019321946_v2_u02",
+          "unit_sha256": "451be9a434e76a107cb113561bcb37c21b9daccd061a10f9c4a9c05b5f750e4d",
+          "unit_type": "orthonormal construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The adjacent sine differences E_n are tailored to the weighted sine-product kernel. That kernel evaluates to a multiple of min(p,q); expanding the inner product of two adjacent differences produces four neighboring min terms that cancel off the diagonal and leave one on it. Period-one and reflection-antisymmetry conditions then identify HP as the natural subspace in which this orthonormal family is stated to be complete, while it is explicitly incomplete in the ambient H.",
+            "nonparaphrase_operation": "Recognizes adjacent differencing as the discrete operation that diagonalizes the min kernel and links completeness to a symmetry-selected subspace.",
+            "quality_reason": "Accepted as a precise, critic-approved mechanism rather than a generic Fourier analogy.",
+            "source_support": "The span defines E_n, proves the min-kernel lemma and four-term orthonormality, defines HP by two symmetries, and states the basis theorem there. Integral normalizations have moderate OCR risk.",
+            "speculation_status": "No speculation. Completeness is attributed only to HP and is merely stated, not reproved, in this unit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The transformation is an isometric isomorphism and makes coordinates explicit.",
+          "line_end": 211,
+          "line_start": 126,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The weight-folding formulas are dense but the Fourier conclusion is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves completeness in HP by folding the weighted norm to the unit interval, multiplying by a sine factor, and identifying the transformed basis with the canonical odd-frequency cosine basis.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Periodic antisymmetry turns HP into an odd-cosine Fourier space",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u03.txt",
+          "unit_bytes": 4346,
+          "unit_id": "openalex_w2019321946_v2_u03",
+          "unit_sha256": "172c29f311047c86c63b22dc838bbf4ca4cf7b7b9164b1cf8595e7c876d1a7e8",
+          "unit_type": "Hilbert-space representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The completeness proof folds the weighted half-line onto one period, uses reflection antisymmetry to combine the folded contributions, and absorbs the resulting sine-squared weight into an isometric multiplier. Under this map, the specialized E_n become the standard odd-frequency cosine basis. The two original symmetries eliminate sine and even-cosine modes, so Parseval transfers ordinary Fourier completeness back to HP without asserting completeness in all of H.",
+            "nonparaphrase_operation": "Identifies a norm-preserving representation in which the unfamiliar basis and its lost modes become standard Fourier data.",
+            "quality_reason": "Accepted because the critic confirmed every step of the representation change and boundary.",
+            "source_support": "The span performs the norm folding, defines the isometry, displays the vanishing modes, maps E_n to odd cosines, and concludes with Parseval. The exact square-root and sine factors need scan checking.",
+            "speculation_status": "No speculation. The dependence on both symmetries and the restriction to HP are explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The correction uses symmetry to control the sum of coefficients, making the smaller-space formulation exact rather than merely sufficient.",
+          "line_end": 331,
+          "line_start": 274,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose fixes the equivalence; a few norms and coefficient sums are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transfers the standard Nyman-Beurling/Baez-Duarte statement through a known isometry and proves that any fractional-part approximation can be corrected to one using eq(t)={qt}-{t} without losing convergence.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH is equivalent to approximating E1 by fractional-part differences inside HP",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u05.txt",
+          "unit_bytes": 3355,
+          "unit_id": "openalex_w2019321946_v2_u05",
+          "unit_sha256": "a800737f19b7a73b786e2e7d8a0b4144e9445487a378502f32bf9133252e2c24",
+          "unit_type": "equivalent RH criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The restriction from fractional-part generators {qt} in H to difference generators e_q={qt}-{t} in HP is justified by a quantitative correction. Pairing an approximation error at t and 1-t bounds the total coefficient sum; adding that small sum times {t} converts the approximant to e_q generators while preserving convergence. The smaller-space criterion is therefore equivalent to the known RH approximation criterion because the symmetry-violating component is controlled, not merely discarded.",
+            "nonparaphrase_operation": "Identifies and bounds the exact component lost by changing generator families, thereby auditing why the restriction preserves rather than strengthens the closure statement.",
+            "quality_reason": "Accepted as critic-approved because the concrete correction mechanism carries the conceptual claim.",
+            "source_support": "The unit transports the Nyman-Beurling/Baez-Duarte criterion by an isometry and proves the reverse restriction using the reflection identity, coefficient-sum bound, and corrected errors. Constants are formula-sensitive.",
+            "speculation_status": "No speculation. Rational-point exceptions are null at the L2 level, and membership alone is not treated as proving equivalence."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the core representation change from functions to explicit arithmetic sequences.",
+          "line_end": 388,
+          "line_start": 335,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The integration-by-parts chain is OCR-dense; endpoint formula is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the exact coordinates of each eq by converting fractional-part integrals into harmonic sums over p/q at most k below p, enabling all later approximation calculations.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A basis coordinate is a logarithm minus a short harmonic interval",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u06.txt",
+          "unit_bytes": 2750,
+          "unit_id": "openalex_w2019321946_v2_u06",
+          "unit_sha256": "d05a8db8cfc2c21efd1317d20096506928569ef07ac0f4380a75f3cc379c21e1",
+          "unit_type": "coordinate formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The inner product of E_p with e_q collapses from an infinite weighted fractional-part integral to log q minus a finite harmonic sum over the half-open interval p/q <= k < p. This changes the approximation problem from functions to explicit arithmetic coordinates. The interval incidence gives the coordinate array a triangular structure that later Moebius cancellation can exploit, while the endpoint convention remains essential for exact cancellation.",
+            "nonparaphrase_operation": "Extracts the discrete incidence structure hidden in the analytic inner product and states what it enables without claiming norm convergence.",
+            "quality_reason": "Accepted because the critic confirmed the formula-to-arithmetic representation change and its precise limitation.",
+            "source_support": "The span derives the coordinate by partitioning, rescaling, summing sine terms, and integrating by parts, ending with the stated logarithm-minus-harmonic formula. The derivation is OCR-dense but the endpoint formula is clear.",
+            "speculation_status": "No speculation. The identity supplies entries of the approximation problem only; convergence remains a separate burden."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c59e751ab40d027eb982c00a5f2eaeeed1f72e5620ff0efd798c18cbedcf53fe",
+        "dossier_sha256": "c57d27c51e15645f125d85e452287c8d030d86e3420131119a71b1475512e16b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "All three approximations hit every fixed coordinate asymptotically and have controlled far tails, so their unresolved content is exactly uniform square-summable domination on a moving finite range.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2019321946_v2_u08",
+          "openalex_w2019321946_v2_u09",
+          "openalex_w2019321946_v2_u10",
+          "openalex_w2019321946_v2_u11"
+        ],
+        "proposed_limit": "None of the three unconditional analyses supplies that dominator; treating fixed-coordinate convergence as sufficient would be invalid.",
+        "source_id": "openalex_w2019321946",
+        "synthesis_id": "riemann_v2_within_80e5d148f01943a891a87b42",
+        "title": "Coordinatewise convergence is not Hilbert-space convergence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The finite exact cancellation motivates both the coefficient choice and the later natural approximation.",
+          "line_end": 593,
+          "line_start": 424,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient formulas are extraction-sensitive but the cancellation system is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses Moebius-weighted coefficients plus two boundary corrections to solve a triangular coordinate system, leaving an explicit tail beginning at n+1 and proving every fixed coordinate has the target limit.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite coefficients cancel the first n basis errors exactly",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u08.txt",
+          "unit_bytes": 7196,
+          "unit_id": "openalex_w2019321946_v2_u08",
+          "unit_sha256": "10682125376abb742fdc113f1096b39d2843c933c13c0d49a1ed870265cac67e",
+          "unit_type": "triangular interpolation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The triangular construction uses Moebius-weighted interior coefficients and two terminal corrections. Divisor cancellation plus two scalar equations force the first n basis coordinates to equal the target coordinates exactly, leaving an explicit error supported only on indices p >= n+1. This is finite interpolation, not Hilbert convergence: even if every fixed coordinate eventually vanishes, norm mass may move outward, so a uniform square-summable tail dominator is still required.",
+            "nonparaphrase_operation": "Separates exact finite-coordinate cancellation from moving-tail control and explains the distinct jobs of Moebius interior terms and boundary repairs.",
+            "quality_reason": "Accepted because the critic approved the triangular mechanism and its central unresolved global obligation.",
+            "source_support": "The unit defines the coefficients, proves the divisor identity, solves the two boundary equations, and expands the residual tail from n+1. Signs and terminal formulas are extraction-sensitive, while the cancellation structure is recoverable.",
+            "speculation_status": "No speculation. Coordinatewise convergence is not promoted to norm convergence."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Coordinatewise convergence alone is insufficient; this criterion makes the missing domination precise.",
+          "line_end": 641,
+          "line_start": 594,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Asymptotic symbols are slightly degraded; range and mechanism are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves a far-tail bound of order n squared over p log n and isolates the only uncontrolled indices, n+1 through n to the fourth, where a common square-summable bound along infinitely many n would imply RH.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The triangular tail reduces RH to uniform control on a moving intermediate range",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u09.txt",
+          "unit_bytes": 2217,
+          "unit_id": "openalex_w2019321946_v2_u09",
+          "unit_sha256": "709eb6b1bce4dd7f81aeb41ce1bf77399dc0a779a35979bef6346e88300a45f1",
+          "unit_type": "dominated-convergence criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Euler-Maclaurin estimates give x_{n,p}=O(n^2/(p log n)), and for p at least n^4 this supplies the stated square-summable far-tail comparison. Combined with fixed-coordinate convergence, the estimate localizes the uncontrolled norm mass to the moving window n+1 through n^4. The artifact begins a domination condition on that window but ends before its quantifier and conclusion, so this unit alone does not certify an RH criterion.",
+            "nonparaphrase_operation": "Partitions the error into fixed, intermediate, and far-tail regimes and identifies which regime remains uncontrolled, while auditing the missing logical conclusion.",
+            "quality_reason": "Accepted after the critic's correction because the proved tail localization is useful and the incomplete criterion is explicitly bounded rather than reconstructed.",
+            "source_support": "The unit proves the asymptotic decay, derives the far-tail bound, and displays the intermediate-range inequality before the semantic boundary cuts the criterion. Exact asymptotic glyphs are mildly degraded.",
+            "speculation_status": "No speculation. Any claim about infinitely many n or implication to RH is withheld because it lies outside the frozen span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source calls these simultaneous conditions difficult and invokes a square-root Omega obstruction for the summatory Moebius function.",
+          "line_end": 779,
+          "line_start": 645,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact squared-norm identity is formula-heavy; its stated consequence is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves the natural Moebius approximation has the right coordinate limits and a controllable far tail, states its RH criterion, then computes the low-mode squared mass and shows domination would require simultaneous strong bounds on two Moebius sums.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moebius/q coefficients converge coordinatewise but force restrictive low-mode sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u10.txt",
+          "unit_bytes": 6201,
+          "unit_id": "openalex_w2019321946_v2_u10",
+          "unit_sha256": "85b0d6413b378b2319b9f1fa5b094e600a2b98d0887b6ed51a7a02cd6240d465",
+          "unit_type": "natural approximation and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The natural coefficients mu(q)/q give the correct limit in every fixed basis coordinate and an O(n/p) estimate controlling the far tail. The exact squared-mass identity for modes two through n+1 then shows where the difficulty remains: two explicit summatory Moebius quantities must satisfy simultaneous restrictive bounds. Thus local divisor algebra and far-tail decay coexist with a potentially large moving low-frequency block; the source calls the needed joint behavior difficult but does not prove it.",
+            "nonparaphrase_operation": "Uses Parseval-style mode separation to diagnose the exact arithmetic quantities controlling the unresolved norm, without importing the missing Omega theorem.",
+            "quality_reason": "Accepted after applying the critic's boundary correction; the central moving-block obstruction is fully visible in the unit.",
+            "source_support": "The unit proves fixed-coordinate limits, the O(n/p) bound, states a square-summable domination criterion, computes the low-mode norm identity, and derives the simultaneous inequalities. It ends before the promised external obstruction.",
+            "speculation_status": "No speculation. The simultaneous bounds remain unproved, and neither an Omega statement nor an RH-conditional rate from adjacent context is included."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper establishes the criterion as sufficient; the cited converse-rate result under RH does not itself furnish an unconditional proof.",
+          "line_end": 869,
+          "line_start": 781,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The epsilon glyph is corrupted in extraction but assumptions and tail estimates are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adds q to the minus-epsilon damping, chooses epsilon at least twice log log n over log n, controls the omitted Dirichlet-series tails directly, and states a square-summable criterion known under RH to hold for a slower explicit epsilon.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A vanishing exponent regularizes the Moebius tail without changing coordinate limits",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u11.txt",
+          "unit_bytes": 4439,
+          "unit_id": "openalex_w2019321946_v2_u11",
+          "unit_sha256": "fbc2db739eb34e380777307b389286878324da1dd933632c6bf46afda3bea25c",
+          "unit_type": "smoothed approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n) introduces a bias that vanishes on fixed coordinates while making the omitted reciprocal-zeta Dirichlet tails directly estimable. The lower bound on epsilon_n prevents smoothing from disappearing too quickly, and epsilon_n tending to zero preserves the target local limit; the O(n/p) far-tail control remains. This improves truncation regularity but does not finish the argument, because Criterion 3 still assumes an unproved common square-summable dominator on the remaining range.",
+            "nonparaphrase_operation": "Identifies the exact bias-versus-tail tradeoff and separates absolute truncation control from the still-missing Hilbert-norm domination.",
+            "quality_reason": "Accepted after the critic-mandated removal because the mechanism and remaining obligation are source-clear despite glyph corruption.",
+            "source_support": "The span gives the smoothed coefficients, the recoverable lower and vanishing conditions on epsilon_n, direct tail estimates, fixed-coordinate limits, far-tail bound, and domination criterion. The epsilon glyph is corrupted, and the final Balazard result is cut off.",
+            "speculation_status": "No speculation. The uncontained Balazard/RH rate claim is deleted, and smoothing is not presented as solving the criterion."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c59e751ab40d027eb982c00a5f2eaeeed1f72e5620ff0efd798c18cbedcf53fe",
+        "dossier_sha256": "c57d27c51e15645f125d85e452287c8d030d86e3420131119a71b1475512e16b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Boundary-corrected coefficients annihilate initial modes, pure Moebius coefficients simplify the construction but expose restrictive summatory behavior, and a small exponent damps the arithmetic tail while preserving the limit.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2019321946_v2_u08",
+          "openalex_w2019321946_v2_u10",
+          "openalex_w2019321946_v2_u11"
+        ],
+        "proposed_limit": "Smoothing improves the criterion's plausibility and conditional rate but remains tied to unproved uniform bounds.",
+        "source_id": "openalex_w2019321946",
+        "synthesis_id": "riemann_v2_within_ef886f76aac39783935ed0e5",
+        "title": "Exact cancellation, natural coefficients, and smoothing trade local error against arithmetic regularity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The finite exact cancellation motivates both the coefficient choice and the later natural approximation.",
+          "line_end": 593,
+          "line_start": 424,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient formulas are extraction-sensitive but the cancellation system is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses Moebius-weighted coefficients plus two boundary corrections to solve a triangular coordinate system, leaving an explicit tail beginning at n+1 and proving every fixed coordinate has the target limit.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite coefficients cancel the first n basis errors exactly",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u08.txt",
+          "unit_bytes": 7196,
+          "unit_id": "openalex_w2019321946_v2_u08",
+          "unit_sha256": "10682125376abb742fdc113f1096b39d2843c933c13c0d49a1ed870265cac67e",
+          "unit_type": "triangular interpolation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The triangular construction uses Moebius-weighted interior coefficients and two terminal corrections. Divisor cancellation plus two scalar equations force the first n basis coordinates to equal the target coordinates exactly, leaving an explicit error supported only on indices p >= n+1. This is finite interpolation, not Hilbert convergence: even if every fixed coordinate eventually vanishes, norm mass may move outward, so a uniform square-summable tail dominator is still required.",
+            "nonparaphrase_operation": "Separates exact finite-coordinate cancellation from moving-tail control and explains the distinct jobs of Moebius interior terms and boundary repairs.",
+            "quality_reason": "Accepted because the critic approved the triangular mechanism and its central unresolved global obligation.",
+            "source_support": "The unit defines the coefficients, proves the divisor identity, solves the two boundary equations, and expands the residual tail from n+1. Signs and terminal formulas are extraction-sensitive, while the cancellation structure is recoverable.",
+            "speculation_status": "No speculation. Coordinatewise convergence is not promoted to norm convergence."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source calls these simultaneous conditions difficult and invokes a square-root Omega obstruction for the summatory Moebius function.",
+          "line_end": 779,
+          "line_start": 645,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact squared-norm identity is formula-heavy; its stated consequence is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves the natural Moebius approximation has the right coordinate limits and a controllable far tail, states its RH criterion, then computes the low-mode squared mass and shows domination would require simultaneous strong bounds on two Moebius sums.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moebius/q coefficients converge coordinatewise but force restrictive low-mode sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u10.txt",
+          "unit_bytes": 6201,
+          "unit_id": "openalex_w2019321946_v2_u10",
+          "unit_sha256": "85b0d6413b378b2319b9f1fa5b094e600a2b98d0887b6ed51a7a02cd6240d465",
+          "unit_type": "natural approximation and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The natural coefficients mu(q)/q give the correct limit in every fixed basis coordinate and an O(n/p) estimate controlling the far tail. The exact squared-mass identity for modes two through n+1 then shows where the difficulty remains: two explicit summatory Moebius quantities must satisfy simultaneous restrictive bounds. Thus local divisor algebra and far-tail decay coexist with a potentially large moving low-frequency block; the source calls the needed joint behavior difficult but does not prove it.",
+            "nonparaphrase_operation": "Uses Parseval-style mode separation to diagnose the exact arithmetic quantities controlling the unresolved norm, without importing the missing Omega theorem.",
+            "quality_reason": "Accepted after applying the critic's boundary correction; the central moving-block obstruction is fully visible in the unit.",
+            "source_support": "The unit proves fixed-coordinate limits, the O(n/p) bound, states a square-summable domination criterion, computes the low-mode norm identity, and derives the simultaneous inequalities. It ends before the promised external obstruction.",
+            "speculation_status": "No speculation. The simultaneous bounds remain unproved, and neither an Omega statement nor an RH-conditional rate from adjacent context is included."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper establishes the criterion as sufficient; the cited converse-rate result under RH does not itself furnish an unconditional proof.",
+          "line_end": 869,
+          "line_start": 781,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The epsilon glyph is corrupted in extraction but assumptions and tail estimates are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adds q to the minus-epsilon damping, chooses epsilon at least twice log log n over log n, controls the omitted Dirichlet-series tails directly, and states a square-summable criterion known under RH to hold for a slower explicit epsilon.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A vanishing exponent regularizes the Moebius tail without changing coordinate limits",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u11.txt",
+          "unit_bytes": 4439,
+          "unit_id": "openalex_w2019321946_v2_u11",
+          "unit_sha256": "fbc2db739eb34e380777307b389286878324da1dd933632c6bf46afda3bea25c",
+          "unit_type": "smoothed approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n) introduces a bias that vanishes on fixed coordinates while making the omitted reciprocal-zeta Dirichlet tails directly estimable. The lower bound on epsilon_n prevents smoothing from disappearing too quickly, and epsilon_n tending to zero preserves the target local limit; the O(n/p) far-tail control remains. This improves truncation regularity but does not finish the argument, because Criterion 3 still assumes an unproved common square-summable dominator on the remaining range.",
+            "nonparaphrase_operation": "Identifies the exact bias-versus-tail tradeoff and separates absolute truncation control from the still-missing Hilbert-norm domination.",
+            "quality_reason": "Accepted after the critic-mandated removal because the mechanism and remaining obligation are source-clear despite glyph corruption.",
+            "source_support": "The span gives the smoothed coefficients, the recoverable lower and vanishing conditions on epsilon_n, direct tail estimates, fixed-coordinate limits, far-tail bound, and domination criterion. The epsilon glyph is corrupted, and the final Balazard result is cut off.",
+            "speculation_status": "No speculation. The uncontained Balazard/RH rate claim is deleted, and smoothing is not presented as solving the criterion."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c59e751ab40d027eb982c00a5f2eaeeed1f72e5620ff0efd798c18cbedcf53fe",
+        "dossier_sha256": "c57d27c51e15645f125d85e452287c8d030d86e3420131119a71b1475512e16b"
+      }
+    }
+  ]
+}

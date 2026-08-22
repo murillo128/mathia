@@ -1,0 +1,335 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w49097981_a981f1dd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w49097981",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This clarifies what is structurally new about the kernel without claiming uniqueness.",
+      "line_end": 194,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive; the prose explanation of poles and residues is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the new integral with standard Fermi-Dirac/Gamma and Ramanujan representations and observes that the sinh poles and the 1/y subtraction independently explain the alternating residues and removal of the zero pole.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The hyperbolic kernel exposes both neighboring formulas and a residue interpretation",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u02.txt",
+      "unit_bytes": 1314,
+      "unit_id": "openalex_w49097981_v2_u02",
+      "unit_sha256": "68ee37365e763539c3767d8c270ed2c087ddf3511228682e9964bdcfb2b35e77",
+      "unit_type": "representation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "               π s−1        \u0010 πs \u0011 Z ∞      \u0012            \u0013\n                                         −s   1    1\n    ζ (s) =             sin            y        −          dy              0 < Re [s] < 2.     (2.8)\n            (1 − 21−s )       2     0         y sinh (y)\n\nNote that Eqs. (2.7) and (2.8) are valid for 0 < Re [s] < 2. However, the Riemann zeta\nfunction has a simple pole on s = 1. Thus, these equations make sense only when Im[s] 6= 0\nfor Re[s] = 1.\n",
+          "sha256": "dbd773be6526a3c3493b1f4fe13fd9f1d361ec6894b1a5c1185d187a9796a7c7"
+        },
+        "after": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "\n\n                                                       4\n\n<!-- source-page: 5 -->\n\nIII.   NEW FUNCTIONAL IDENTITY\n\n",
+          "sha256": "9399acaa55b23579ca5e3a63a5a3a207ef0b3395a413e67b8c492b894ea7c2e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3576cb81ff00a73d737e99335d14fd3d98bcc0c79e1d28cb51aa1416d896be31",
+        "dossier_sha256": "888440a906a40b39d4efed3a446ae61a38c08b90f84702a32ebe310196b9b378",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. A new representation",
+            "line_end": 200,
+            "line_start": 58,
+            "mathematical_role": "Designs the residue kernel, interchanges sum and integral, extends the result analytically, and compares related integral forms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 194,
+          "line_start": 171,
+          "title": "The hyperbolic kernel exposes both neighboring formulas and a residue interpretation",
+          "unit_id": "openalex_w49097981_v2_u02",
+          "unit_type": "representation comparison",
+          "why_material": "Compares the new integral with standard Fermi-Dirac/Gamma and Ramanujan representations and observes that the sinh poles and the 1/y subtraction independently explain the alternating residues and removal of the zero pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This clarifies what is structurally new about the kernel without claiming uniqueness.",
+          "representation_dependency": "Formula-sensitive; the prose explanation of poles and residues is clear.",
+          "unit_id": "openalex_w49097981_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 169,
+            "line_start": 58,
+            "title": "Residue-kernel design makes the alternating zeta series summable under an integral",
+            "unit_id": "openalex_w49097981_v2_u01",
+            "unit_type": "integral representation derivation",
+            "why_material": "Starts on the critical line, chooses x^4+n^2 so residues generate n^{-1/2-ib} while unwanted factors cancel, uses a closed alternating rational sum, and reinterprets complex b to extend the resulting integral to 0<Re(s)<2."
+          },
+          {
+            "line_end": 268,
+            "line_start": 201,
+            "title": "Expanding sinh(y)-y converts the integral into shifted zeta values and Gamma factors",
+            "unit_id": "openalex_w49097981_v2_u03",
+            "unit_type": "functional-identity derivation",
+            "why_material": "Rewrites the kernel so its Taylor series can be integrated termwise with a standard sinh integral, obtains a series of Gamma(2n-s+1)zeta(2n-s+1), and analytically sums the zeta-free part to isolate a convergent correction identity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The combination 1/y-1/sinh(y) cancels the kernel's zero singularity while retaining alternating nonzero residues, explaining both convergence near the origin and compatibility with the alternating zeta continuation.",
+            "limit": "This is a within-source interpretation of the displayed kernel, not a uniqueness statement about possible integral representations.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u02"
+            ],
+            "title": "Pole subtraction is the common structural feature of the new representation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 200,
+              "line_start": 170,
+              "reason": "Pole caveat, comparisons with known formulas, residue interpretation, and page transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w49097981_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w49097981_v2_u02",
+          "spontaneous_reading": "Comparing neighboring integral formulas shows what is distinctive in the new kernel: sinh poles generate alternating residues, while subtracting 1/y removes the otherwise unwanted zero pole."
+        },
+        "directed": {
+          "unit_id": "openalex_w49097981_v2_u02",
+          "source_grounded_mathematics": "The source places the new sinh-kernel integral beside Fermi–Dirac/Gamma and Ramanujan representations. It observes that poles of 1/sinh(y) occur at integer multiples with alternating residues and that the 1/y subtraction cancels the pole at zero.",
+          "conceptual_reading": "The comparison identifies the representation's internal mechanism rather than claiming mere novelty. Pole placement encodes the alternating discrete data, and local subtraction regularizes the origin.",
+          "representation_or_bridge": "Residue calculus bridges the hyperbolic kernel to the alternating series; neighboring formulas clarify which gamma or logarithmic weights differ.",
+          "boundary_or_failure": "The unit does not prove uniqueness or superiority of the new representation, and the Ramanujan formula has a different stated domain.",
+          "uncertainty": "The pole explanation is prose-clear; exact formula domains and factors remain scan-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w49097981_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The source compares the new integral with two neighboring formulas and offers a residue interpretation involving the zeros of sinh and cancellation at the origin."
+        ],
+        "inference": [
+          "Using the comparison to identify kernel roles rather than claim superiority is appropriate."
+        ],
+        "unsupported_or_imported": [
+          "The pass says poles of 1/sinh(y) occur at 'integer multiples' with alternating residues, but under the standard variable they occur at imaginary multiples of pi; the source's own prose says 'integers' imprecisely, so the analysis should not silently repair or repeat it as a precise fact."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: pole placement and origin regularization are contentful, not decorative comparison."
+        ],
+        "context_or_ocr_risk": [
+          "The kernel sign/order and pole variable are formula-sensitive; a scan or original derivation is needed before stating exact residue locations."
+        ],
+        "missed_mechanism": [
+          "The key audit issue is whether the displayed kernel is 1/y-1/sinh(y) and along which contour its nonzero poles contribute."
+        ],
+        "revision_instructions": [
+          "Keep the neighboring-formula comparison, but attribute the residue interpretation to the source and quarantine exact pole locations/residues until the scan confirms the variable and contour."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source calls the final identity new and notes related Milgram identities later; no independent novelty audit is made here.",
+      "line_end": 268,
+      "line_start": 201,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; exact convergence domain is not restated beside equations (3.5)-(3.7), so scan/source verification is required before applying them.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the kernel so its Taylor series can be integrated termwise with a standard sinh integral, obtains a series of Gamma(2n-s+1)zeta(2n-s+1), and analytically sums the zeta-free part to isolate a convergent correction identity.",
+      "source_id": "openalex_w49097981",
+      "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expanding sinh(y)-y converts the integral into shifted zeta values and Gamma factors",
+      "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u03.txt",
+      "unit_bytes": 3952,
+      "unit_id": "openalex_w49097981_v2_u03",
+      "unit_sha256": "c694f60983dac570b6ad9aa89ae07d3777031c4a5201d4fcbc2481adb2afe371",
+      "unit_type": "functional-identity derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w49097981",
+        "title": "A new integral representation for the Riemann Zeta function",
+        "authors": [
+          "Sandeep Tyagi",
+          "Christian Holm"
+        ],
+        "year": 2007,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "exposition",
+          "hilbert-polya",
+          "history",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 193,
+          "line_end": 200,
+          "text": "with residues (−1)n . The presence of 1/y is basically to remove the pole at n = 0. Thus 2.8\ncan be derived using residue theorem as well.\n\n\n                                                       4\n\n<!-- source-page: 5 -->\n\n",
+          "sha256": "87891e8ba0dd29c894e1c138135a1d92ff77af99abd7a446d87a50b373d11f50"
+        },
+        "after": {
+          "line_start": 269,
+          "line_end": 276,
+          "text": "\n                                               5\n\n<!-- source-page: 6 -->\n\nIV.     CONCLUSION\n\n\n",
+          "sha256": "a0e3479d4ea75435f08b98a9f0bcbb0a340452d58beb8df6941fd54771241b95"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3576cb81ff00a73d737e99335d14fd3d98bcc0c79e1d28cb51aa1416d896be31",
+        "dossier_sha256": "888440a906a40b39d4efed3a446ae61a38c08b90f84702a32ebe310196b9b378",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. New functional identity",
+            "line_end": 273,
+            "line_start": 201,
+            "mathematical_role": "Expands the new kernel, applies a standard hyperbolic integral, and isolates a zeta-Gamma series identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 268,
+          "line_start": 201,
+          "title": "Expanding sinh(y)-y converts the integral into shifted zeta values and Gamma factors",
+          "unit_id": "openalex_w49097981_v2_u03",
+          "unit_type": "functional-identity derivation",
+          "why_material": "Rewrites the kernel so its Taylor series can be integrated termwise with a standard sinh integral, obtains a series of Gamma(2n-s+1)zeta(2n-s+1), and analytically sums the zeta-free part to isolate a convergent correction identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source calls the final identity new and notes related Milgram identities later; no independent novelty audit is made here.",
+          "representation_dependency": "Highly formula-dependent; exact convergence domain is not restated beside equations (3.5)-(3.7), so scan/source verification is required before applying them.",
+          "unit_id": "openalex_w49097981_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 171,
+            "title": "The hyperbolic kernel exposes both neighboring formulas and a residue interpretation",
+            "unit_id": "openalex_w49097981_v2_u02",
+            "unit_type": "representation comparison",
+            "why_material": "Compares the new integral with standard Fermi-Dirac/Gamma and Ramanujan representations and observes that the sinh poles and the 1/y subtraction independently explain the alternating residues and removal of the zero pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Choosing a residue kernel that both reproduces the alternating-series power and admits a closed n-sum yields an integral whose hyperbolic Taylor expansion then expresses zeta(s) through zeta values shifted to 2n-s+1 with Gamma weights.",
+            "limit": "The final identity's convergence domain and claimed novelty are not independently established in this source-depth plan; exact formulas require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w49097981_v2_u01",
+              "openalex_w49097981_v2_u03"
+            ],
+            "title": "Kernel engineering connects analytic continuation to a shifted-value identity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 200,
+              "line_start": 170,
+              "reason": "Pole caveat, comparisons with known formulas, residue interpretation, and page transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w49097981_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w49097981_v2_u03",
+          "spontaneous_reading": "Expanding only the regularized numerator sinh(y)-y turns the kernel into integrable monomials, producing shifted zeta values and gamma factors; subtracting one from those zeta values isolates a better-convergent correction."
+        },
+        "directed": {
+          "unit_id": "openalex_w49097981_v2_u03",
+          "source_grounded_mathematics": "The source rewrites the integral using sinh(y)-y, expands it in odd powers, integrates termwise via ∫y^k/sinh(y), and obtains a series in Γ(2n-s+1)ζ(2n-s+1). It analytically sums the same gamma series without zeta, yielding an identity with ζ(2n-s+1)-1 plus explicit gamma terms.",
+          "conceptual_reading": "Regularization at the origin enables a basis expansion whose terms have a standard Mellin evaluation. Separating the zeta-free part removes the limiting value one and improves the conceptual convergence of the remainder.",
+          "representation_or_bridge": "Taylor expansion bridges the hyperbolic kernel to monomials; the standard sinh Mellin integral bridges each monomial to gamma and shifted zeta factors.",
+          "boundary_or_failure": "The source's novelty claim is not independently audited, and the convergence domain is not restated beside the final identities. Termwise integration therefore should not be extended beyond the established range without proof.",
+          "uncertainty": "The derivation pattern is clear, but equations (3.5)–(3.7) are highly formula-dependent and require source verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w49097981_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source expands sinh(y)-y, integrates monomials with a standard sinh formula, obtains shifted zeta and gamma factors, separately sums the gamma-only series, and rewrites the result with zeta(...)-1 plus explicit terms."
+        ],
+        "inference": [
+          "Viewing origin regularization as enabling the monomial/Mellin basis is a sound conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous and conceptual readings claim that subtracting one gives a 'better-convergent correction' or 'improves conceptual convergence'; the span does not state or prove a convergence improvement for the final series."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'conceptual convergence' is vague style language rather than a mathematical property."
+        ],
+        "context_or_ocr_risk": [
+          "The final identities are highly formula-dependent, and their convergence domain is not restated locally."
+        ],
+        "missed_mechanism": [
+          "The actual supported purpose of the gamma-only summation is algebraic separation of the zeta-free part; any quantitative convergence benefit remains unestablished."
+        ],
+        "revision_instructions": [
+          "Replace convergence-benefit claims with the exact algebraic operation: subtract and sum the zeta-free gamma series, leaving zeta(...)-1 terms; preserve the domain and termwise-integration warning."
+        ]
+      }
+    }
+  ]
+}

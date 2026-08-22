@@ -1,0 +1,1738 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_21.jsonl",
+  "prior_output_paths": {},
+  "unit_count": 38,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the carried toolkit rather than treating Lemma 3 as a black box.",
+      "line_end": 435,
+      "line_start": 365,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants are formula-sensitive; interval logic is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The phase range is partitioned around integers; Kusmin-Landau controls the separated portions, trivial length bounds control small neighborhoods, and optimizing their width produces the square-root W dependence.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bad neighborhoods of integral derivative values are balanced against good cancellation intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w2013189454_v2_u01.txt",
+      "unit_bytes": 2568,
+      "unit_id": "openalex_w2013189454_v2_u01",
+      "unit_sha256": "6ef1623a8cd7deb56d69788f4c19789328236c045f0cf847eb254187b856de9a",
+      "unit_type": "second-derivative subdivision proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2013189454_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The trivial estimate below the optimization threshold is retained because it closes the claimed uniform range.",
+      "line_end": 662,
+      "line_start": 442,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense constants and powers are OCR-fragile; exact numerical optimization needs the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The n-range from t^alpha to t is split geometrically, partial summation removes n^(-1/2), derivative bounds are applied blockwise, and geometric series collect the six error types before constants are optimized separately for alpha two-thirds and one-half.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        10,
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scale-adapted blocks turn a second-derivative bound into high-range zeta estimates",
+      "unit_artifact_relpath": "depth/units/openalex_w2013189454_v2_u02.txt",
+      "unit_bytes": 9375,
+      "unit_id": "openalex_w2013189454_v2_u02",
+      "unit_sha256": "124441045f18e6bf5bc2cfde7491bd1790568ae395fc2fc1d23f0a535c38c7ca",
+      "unit_type": "geometric-block exponential-sum estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2013189454_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the A-process that changes the exponent pair used in the middle range.",
+      "line_end": 807,
+      "line_start": 663,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Summation endpoints are formula-sensitive but the correlation reduction is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Weyl differencing, Cauchy-Schwarz, and a reindexing by shift express the squared original sum in terms of weighted correlation sums S_m, creating phases whose second derivatives are stronger.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaged shifts convert one exponential sum into shorter phase-difference correlations",
+      "unit_artifact_relpath": "depth/units/openalex_w2013189454_v2_u03.txt",
+      "unit_bytes": 5696,
+      "unit_id": "openalex_w2013189454_v2_u03",
+      "unit_sha256": "5d9136ca9e56ef7ab0b2eea8dceb48e4f33c509a2ed92cd7ff0cc9b5b06d5c07",
+      "unit_type": "weyl-differencing construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2013189454_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact synthesis of the proof architecture and its quantitative interface.",
+      "line_end": 1151,
+      "line_start": 1144,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Crossover values and constants should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion explicitly assembles the truncation lemma, high-range estimates, and middle-range Weyl estimate, selecting crossover heights so the complicated theorem cluster implies the portable 3 t^(1/6) log t corollary.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Different estimates dominate at different heights, producing a simple global bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2013189454_v2_u04.txt",
+      "unit_bytes": 425,
+      "unit_id": "openalex_w2013189454_v2_u04",
+      "unit_sha256": "1dcbcc3d71f755ad9935802beeea8d9680768a1689502f32546de402e9637157",
+      "unit_type": "range-splicing conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2013189454_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is deferred until after the continuous and piecewise-constant representations are developed.",
+      "line_end": 77,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sequence definition is formula-sensitive but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 condenses RH into approximation of the constant sequence, and further into totality of a simple periodic family in a weighted l2 space; equivalence under all quadratically comparable weights exposes which representation details are inessential.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periodic fractional-part sequences are total exactly when RH holds",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u01.txt",
+      "unit_bytes": 4467,
+      "unit_id": "openalex_w2016676915_v2_u01",
+      "unit_sha256": "beb71eb3f596ce5cd717f4611065982b8f744aa990a18fc307f659bee3d6a87e",
+      "unit_type": "weighted-sequence RH equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zeta growth input proving the generators belong to H2 and the exact implication plan.",
+      "line_end": 181,
+      "line_start": 78,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hardy norm and generator formulas should be scan-checked for exact normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The critical half-plane Hardy space makes boundary L2 convergence and interior point evaluation simultaneously available; functions F_lambda cancel zeta's pole at one, and RH is stated as whether 1/s lies in their continuous or discrete closed span.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-freeness is encoded by closure of zeta-weighted dilation differences",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u02.txt",
+      "unit_bytes": 5831,
+      "unit_id": "openalex_w2016676915_v2_u02",
+      "unit_sha256": "40ee13fa0f15305562d0a7ef77f0c26711a8b9a936efc9237a9ad3d05c6cfe19",
+      "unit_type": "hardy-space closure criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the two limits L to infinity and epsilon to zero separate, including the uniform square-integrable majorant needed for the second.",
+      "line_end": 292,
+      "line_start": 186,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The xi-product and gamma-ratio inequalities are formula-sensitive but the limiting mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Littlewood's compact-uniform control lets finite Möbius combinations of the discrete generators converge first at fixed epsilon and then, via a Hadamard-product bound and dominated convergence, to E=1/s in Hardy norm.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius partial sums provide approximate inverses to zeta under RH",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u03.txt",
+      "unit_bytes": 5801,
+      "unit_id": "openalex_w2016676915_v2_u03",
+      "unit_sha256": "6f1cf41bb4a3ab5f0eeaecada25815ab8a0745ba9d191a60fdd63995a6927278",
+      "unit_type": "mobius approximate-inverse construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A concise obstruction explaining why the closure criterion is equivalent rather than merely RH-conditional.",
+      "line_end": 300,
+      "line_start": 293,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "If RH fails, every F_lambda vanishes at an interior zeta zero while E does not; continuity of point evaluation makes their closed span a proper subspace and gives the reverse implication immediately.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A single off-line zero traps every generator in a proper evaluation kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u04.txt",
+      "unit_bytes": 727,
+      "unit_id": "openalex_w2016676915_v2_u04",
+      "unit_sha256": "b24d16d6c046a6f6d8bf87a33a9e9023df7286517030408ae5c10619cb50225d",
+      "unit_type": "zero-evaluation obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This sharpening later transfers to the weighted sequence formulation.",
+      "line_end": 309,
+      "line_start": 306,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because Möbius coefficients vanish off square-free integers, the actual construction proves the same RH equivalence for a strictly thinner discrete generator family.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The approximate-inverse proof needs only square-free dilation indices",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u05.txt",
+      "unit_bytes": 343,
+      "unit_id": "openalex_w2016676915_v2_u05",
+      "unit_sha256": "4ced8343be40c20aaab617dc8255604bf1fa85578ecc1bb3b6619b85355b552f",
+      "unit_type": "square-free thinning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This makes the classical L2 criterion a unitary copy of the Hardy-space theorem rather than a separate phenomenon.",
+      "line_end": 403,
+      "line_start": 310,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The telescoping Mellin computation is formula-dense and should be checked against the scan for exact signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states the Nyman-Beurling L2 closure/totality criterion, proves the Mellin transform is isometric on a total family of interval indicators, and computes that each fractional-part generator maps exactly to minus F_lambda.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Fourier-Mellin transform turns fractional-part functions into Hardy generators",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u06.txt",
+      "unit_bytes": 4622,
+      "unit_id": "openalex_w2016676915_v2_u06",
+      "unit_sha256": "155556b63615d65ee7ce59e261c2fadef7490c3f151e996a5d35d791e135f460",
+      "unit_type": "mellin-unitary representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remark identifies approximate inversion of zeta as the conceptual core and locates hidden analytic work in the omitted conditional estimates.",
+      "line_end": 450,
+      "line_start": 404,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator normalizations are formula-sensitive; invariant-subspace logic is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The closed span of the Hardy generators is invariant under a semigroup of inner-function isometries; once it contains E, it contains the Mellin images of all initial-interval indicators, a total set, proving totality of the fractional-part family.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Invariance under multiplicative dilations upgrades one-vector approximation to totality",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u07.txt",
+      "unit_bytes": 2990,
+      "unit_id": "openalex_w2016676915_v2_u07",
+      "unit_sha256": "c3f363d9ecdb5c9e3e518d31896d8b8729bb2032e67cd65af1703d21a23f8e43",
+      "unit_type": "semigroup totality upgrade",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Theorem 7, its semigroup proof, the final sequence-space reformulation, and square-free thinning.",
+      "line_end": 540,
+      "line_start": 451,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fractional-part identities and T_m scaling are formula-sensitive but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restricting to intervals (1/(n+1),1/n] produces generators g_l whose integer dilation semigroup propagates the constant vector to a total indicator family; evaluation at 1/n then gives a unitary map to the weighted sequences of Theorem 1.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Piecewise-constant discretization preserves the closure criterion and exposes an integer semigroup",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u08.txt",
+      "unit_bytes": 4680,
+      "unit_id": "openalex_w2016676915_v2_u08",
+      "unit_sha256": "17aeede48f5a4b18187383b7d810974c41a2e6d38cd660756b14b580ca30339a",
+      "unit_type": "discretization-and-unitary-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conjectured asymptotic is explicitly described as stronger than RH, not as an established rate.",
+      "line_end": 559,
+      "line_start": 546,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The proposed constant and determinant ratio are formula-dependent; the limitation is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The distance from the constant sequence to the first L periodic generators tends to zero exactly under RH and has a Gram-determinant expression, but the source warns that determinant formulas are computationally ill-conditioned and conceptually unlikely to supply the missing deep idea.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-span distance gives a quantitative but potentially brute-force RH proxy",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u09.txt",
+      "unit_bytes": 1268,
+      "unit_id": "openalex_w2016676915_v2_u09",
+      "unit_sha256": "7cc806f90f644e9cf91e623bf2837d9b06ebcb054b66e2c10d4572bbb81b53fd",
+      "unit_type": "finite-dimensional-distance diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried unit because it records the method comparison and the exact source-internal motivation for the later representations.",
+      "line_end": 218,
+      "line_start": 168,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low prose risk; exact asymptotic coefficients depend on displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1, Gallagher's half-integral construction, the two-delta obstruction, and the three-part roadmap distinguish an easy explicit family from the weighted extremizer and from the kernel quantity that limits any such bounds.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The extremal gap separates explicit Selberg bounds from genuinely optimal pair-correlation bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u01.txt",
+      "unit_bytes": 3865,
+      "unit_id": "openalex_w2044551895_v2_u01",
+      "unit_sha256": "8ca6054bff2538c5313fb7fbe533ae6b5c84746b56352ea8d8f0a7d1af3809ec",
+      "unit_type": "method-gap-and-research-roadmap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition of the two-delta infimum, the kernel construction, Theorems 3-4, and the asymptotic comparison with Selberg bounds.",
+      "line_end": 416,
+      "line_start": 306,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Kernel coefficients are densely displayed and OCR-fragile; the minimization mechanism is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Equivalence of the pair-correlation and Paley-Wiener norms creates a functional Hilbert space; its explicit kernel converts minimum mass under two point constraints into a two-vector Gram problem with a closed-form extremizer.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A weighted Paley-Wiener kernel solves the two-point interpolation obstruction",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u02.txt",
+      "unit_bytes": 7702,
+      "unit_id": "openalex_w2044551895_v2_u02",
+      "unit_sha256": "fc77e8305f39cbaec0a365ebc4f4dccd35cda67e2f50307acaf7dd214ef1bcac",
+      "unit_type": "reproducing-kernel two-delta solution",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes verification of the four structural properties needed for later quadrature bases.",
+      "line_end": 536,
+      "line_start": 417,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact formulas for E, A, B, and the asymptotic non-membership check require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source introduces Hermite-Biehler data and its kernel, reconstructs E from the pair-correlation kernel, and proves equality of the weighted norms, permitting interpolation and orthogonality tools unavailable in the original measure representation.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The pair-correlation Hilbert space is identified isometrically with a de Branges space",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u03.txt",
+      "unit_bytes": 7118,
+      "unit_id": "openalex_w2044551895_v2_u03",
+      "unit_sha256": "3a22c6ba538b586e08ccb95770e1f9c14cf62a8fb7756fc92d11131e7c4639b7",
+      "unit_type": "de-branges representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span also transfers the theorem back to the pair-correlation metric and relates the difference of interval extremizers to the two-delta optimum.",
+      "line_end": 692,
+      "line_start": 537,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Quadrature sums and auxiliary-function definitions are formula-sensitive; regime logic is clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The general weighted majorant/minorant problem is classified by whether the interval endpoint is a zero of A or B or lies between interlacing zeros, with auxiliary E_beta spaces supplying the generic interpolation nodes and exact quadrature sums.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Interlacing kernel nodes split the optimal interval problem into four regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u04.txt",
+      "unit_bytes": 10965,
+      "unit_id": "openalex_w2044551895_v2_u04",
+      "unit_sha256": "8206db8daf99dc5e58fdd8587ed24da33ec9fdead34e5ed95c829c7bd267e198",
+      "unit_type": "general de-branges interval extremal theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also locates the q-aspect extension as a stronger Fourier-support calibration of the same interface.",
+      "line_end": 770,
+      "line_start": 693,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The numerical thresholds depend on evaluated formulas and should be verified before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains when an extremal minorant becomes nontrivial, states the improved 0.606894 threshold, and shows that either simplicity transfers the count bound to consecutive gaps or infinitely many multiple zeros force gap liminf zero.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive pair-count lower bound yields a small-gap result even without a simplicity dichotomy",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u05.txt",
+      "unit_bytes": 4175,
+      "unit_id": "openalex_w2044551895_v2_u05",
+      "unit_sha256": "23195aca94a2cc79a5255fb6c787da55d32496ad47c4032d7b9c1ad922404961",
+      "unit_type": "small-gap consequence-and-interface-diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the discarded two-explicit-formula route, clarifying why Montgomery's convolution is the simpler representation.",
+      "line_end": 887,
+      "line_start": 771,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Growth conditions and error terms are display-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 8 isolates the error condition under which fixed-band Selberg functions still control a growing pair window, separates the multiplicity correction, and derives unconditional-on-simplicity corollaries from a multiplicity bound.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform control of Montgomery's Fourier statistic permits beta to grow with height",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u06.txt",
+      "unit_bytes": 8180,
+      "unit_id": "openalex_w2044551895_v2_u06",
+      "unit_sha256": "f8d7a85d79ed35c3eae9841b96a7281d979c75f34ef0b6791be2c6d288e35812",
+      "unit_type": "variable-window pair-correlation bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines the transform lemma with the proof of the height-varying upper and lower bounds.",
+      "line_end": 1020,
+      "line_start": 888,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependency; exact transform signs and Lipschitz constants require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Fourier transforms of the Selberg functions are computed explicitly, inserted into Montgomery's uniform formula, and compared with weighted interval counts while diagonal multiplicities are kept separate.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Montgomery's nonnegative statistic evaluates admissible zero-difference sums on the known Fourier band",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u07.txt",
+      "unit_bytes": 9294,
+      "unit_id": "openalex_w2044551895_v2_u07",
+      "unit_sha256": "4de38c279f48944d6d5c09fd53e1223ddb71c779d8c03efa3826ad90718e27dc",
+      "unit_type": "fourier-convolution proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the proof whose exact evaluation is carried in the preceding v1 unit.",
+      "line_end": 1302,
+      "line_start": 1172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Series identities and coefficients are formula-dependent; the constancy mechanism is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uniform convergence, Morera's theorem, differentiation under the series, and Riemann-Lebesgue cancellation show that the oscillatory component is constant; evaluating at zero produces the beta-asymptotic for arbitrary bandwidth.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An analytic periodic series is shown constant, isolating the first correction to Selberg cost",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u08.txt",
+      "unit_bytes": 7993,
+      "unit_id": "openalex_w2044551895_v2_u08",
+      "unit_sha256": "0ce087adddb754132517e8c6bde07e5e7351e1b7a3d16b0a150383c4236cd219",
+      "unit_type": "asymptotic-series-cancellation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the functional-analytic prerequisite that makes evaluation continuous and the explicit kernel legitimate.",
+      "line_end": 1350,
+      "line_start": 1307,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low extraction risk; constants are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Donoho-Stark uncertainty supplies a uniform amount of L2 mass away from the origin, proving the pair-correlation weight and Lebesgue measure define equivalent norms on the Paley-Wiener class.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An uncertainty principle prevents bandlimited mass from hiding at the zero of the weight",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u09.txt",
+      "unit_bytes": 2382,
+      "unit_id": "openalex_w2044551895_v2_u09",
+      "unit_sha256": "21501ee3a10ddedab6212d7cb3a78498021560d92446eed593cdd0d54153b85c",
+      "unit_type": "uncertainty-norm-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the kernel asymptotic needed to interpret the optimum for large beta.",
+      "line_end": 1668,
+      "line_start": 1505,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equality-case formulas are OCR-sensitive; the geometric reduction is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A general Hilbert-space lemma solves the minimum-norm problem under two modulus constraints; Krein factorization turns every nonnegative admissible function into a vector, so the lemma proves the two-delta formula and classifies equality.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        22,
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two pointwise constraints reduce to the geometry of two equal-norm kernel vectors",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u10.txt",
+      "unit_bytes": 10381,
+      "unit_id": "openalex_w2044551895_v2_u10",
+      "unit_sha256": "2394d5736a067be9253a0c9ff69919d1d6ec40adea921a944d9b6f23503225ed",
+      "unit_type": "hilbert-geometry extremal proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A one-constraint specialization that clarifies the two-delta construction by comparison.",
+      "line_end": 1727,
+      "line_start": 1669,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact numeric constant and extremizer require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Cauchy-Schwarz at the reproducing kernel gives the exact minimum mass of a nonnegative admissible function fixed at zero, identifies the unique extremizer, and feeds back into a sharper average-multiplicity estimate.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The one-point kernel norm recovers the optimal zero-multiplicity majorant",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u11.txt",
+      "unit_bytes": 3927,
+      "unit_id": "openalex_w2044551895_v2_u11",
+      "unit_sha256": "b3d84524d00dea91a79097e107af4349a8a0bfb0fedfef5a3a91ef316dfdfec8",
+      "unit_type": "one-delta multiplicity bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These identities are the optimality certificate for every interpolation construction in the next unit.",
+      "line_end": 1814,
+      "line_start": 1728,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Node weights are display-sensitive but the basis-to-quadrature mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The auxiliary Hermite-Biehler spaces preserve the needed structural properties, while Krein factorization plus orthogonal kernel bases yields quadrature formulas at zeros of A, B, A_beta, or B_beta.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kernel bases convert nonnegative weighted integrals into exact node sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u12.txt",
+      "unit_bytes": 6039,
+      "unit_id": "openalex_w2044551895_v2_u12",
+      "unit_sha256": "d7fe932141159c9c6436e7585bdae80f49d8831fef30215241ade66cdc91bb4a",
+      "unit_type": "de-branges quadrature toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Covers all cases and their relation to the two-delta problem.",
+      "line_end": 1944,
+      "line_start": 1815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Construction formulas require scan verification; the case logic is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generic endpoints use auxiliary interpolation nodes, endpoints already at A/B zeros use Holt-Vaaler extremizers, and very short intervals have zero minorant plus a squared monotone factor majorant; quadrature proves optimality and the two-delta solution proves generic uniqueness.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        27,
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Interpolation, quadrature, and a monotone Laguerre-Polya factor solve all endpoint regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u13.txt",
+      "unit_bytes": 8713,
+      "unit_id": "openalex_w2044551895_v2_u13",
+      "unit_sha256": "7b517e8f017bbfaf71dba68d69f8150458438ebe89b4ca5952e8b0f131441969",
+      "unit_type": "three-regime extremal construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical endpoint is explicitly a computation based on the displayed integral.",
+      "line_end": 2085,
+      "line_start": 1945,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier pairs, integration bounds, and 0.606894 require scan/numerical verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A triangular test gives a lower bound for an integrated unknown portion of F; integrating a nonnegative minorant twice by parts then injects that lower bound into the pair count and improves the numerical threshold.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second use of Montgomery's formula recovers positive mass beyond the known Fourier band",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u14.txt",
+      "unit_bytes": 8673,
+      "unit_id": "openalex_w2044551895_v2_u14",
+      "unit_sha256": "9fcbbd1df252b9e76f1d83761635b39bb1798b024e08d2482588823005218dec",
+      "unit_type": "two-test-function small-gap argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps generalized RH and asymptotic simplicity as separate assumptions for upper and lower bounds.",
+      "line_end": 2251,
+      "line_start": 2086,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Family normalizations and asymptotic constants are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Weighted q-aspect counts and a family correlation statistic isolate the same extremal interface as zeta; asymptotic-large-sieve control to frequency two permits bandwidth nearly two and halves the endpoint loss in the resulting bounds.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        31,
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A wider proven Fourier band strengthens pair-correlation bounds for primitive Dirichlet L-functions",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u15.txt",
+      "unit_bytes": 10950,
+      "unit_id": "openalex_w2044551895_v2_u15",
+      "unit_sha256": "a5de769e3bd4bb95fdc2628b8c632deeeb72f579ed43e22cf505a52d41fbcdab",
+      "unit_type": "q-aspect transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the representational step deferred from the introduction.",
+      "line_end": 2308,
+      "line_start": 2252,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low prose risk; determinant signs and normalizations are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Positivity, conjugation symmetry, and zero-shifting invariance yield the de Branges determinant identity; choosing one upper-half-plane base point then proves both the Hermite-Biehler inequality and the claimed kernel representation.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Abstract reproducing-kernel identities manufacture the Hermite-Biehler generator",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u16.txt",
+      "unit_bytes": 3075,
+      "unit_id": "openalex_w2044551895_v2_u16",
+      "unit_sha256": "e1c86b9be7fd924e56ffb6dd2668e71ba7d8f5ec360a9b2b95413d21a10b7ecf",
+      "unit_type": "kernel-to-hermite-biehler certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Selected as reusable support rather than as an RH criterion itself.",
+      "line_end": 421,
+      "line_start": 281,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several nested fractions are OCR-sensitive; verify constants from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The auxiliary lemmas transport relative x-y bounds through log and log-log factors and establish monotonicity inequalities later used to compare consecutive abundant numbers.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-multiplicative bounds can be inverted without losing logarithmic control",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u01.txt",
+      "unit_bytes": 7453,
+      "unit_id": "openalex_w2282130622_v2_u01",
+      "unit_sha256": "6dba93a6413dfef635b26a267e68c33163c0b159197f1b257d6212c02a43a56d",
+      "unit_type": "logarithmic-comparison toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes which inputs are computationally patched below thresholds and which are asymptotic theorems.",
+      "line_end": 660,
+      "line_start": 422,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical cutoffs and constants are display-dependent and should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Upper and lower estimates for theta, psi, pi, prime gaps, and the Mertens product provide both finite effective inequalities and sign-changing asymptotics used to separate SA, CA, and XA behavior.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        9,
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit Chebyshev bounds and oscillations connect largest prime factors to log n",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u02.txt",
+      "unit_bytes": 12392,
+      "unit_id": "openalex_w2282130622_v2_u02",
+      "unit_sha256": "43674077d41ec15a3ed2d7315f786c0525378179ca2880a136b6927dd75837dd",
+      "unit_type": "explicit-prime-function toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines local exchange arguments with the global prime-factor scale.",
+      "line_end": 883,
+      "line_start": 675,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exponent inequalities are formula-sensitive but the competitor method is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Comparing a superabundant number with multiplicatively modified competitors constrains every prime exponent by the largest prime, yields p asymptotic to log n, and identifies psi(p) as a lower structural bound for log n.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        13,
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Record maximality forces ordered prime exponents and psi(p) below log n",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u03.txt",
+      "unit_bytes": 9874,
+      "unit_id": "openalex_w2282130622_v2_u03",
+      "unit_sha256": "e40c3c3965642ccbc261b00d15d0a6996ec70058bbd0b5e15876181b40e6a262",
+      "unit_type": "superabundant exponent structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides setup used by the following asymptotic divisor-ratio unit.",
+      "line_end": 966,
+      "line_start": 885,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants and sufficiently-large thresholds require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounding the contribution of repeated small-prime powers compares log n with theta(p), then explicit prime-function estimates invert the relationship to place p inside a narrow relative window around log n.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit theta and psi estimates give two-sided control of p around log n for SA numbers",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u04.txt",
+      "unit_bytes": 3879,
+      "unit_id": "openalex_w2282130622_v2_u04",
+      "unit_sha256": "74689dc670cff97f91e100c12405cafd7d38c6dd7b2514f33ea2a0a13fb27ce4",
+      "unit_type": "largest-prime effective comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A reusable pattern for turning ratio records into additive or exponential monotonicity; some later analogous propositions are left as supporting context.",
+      "line_end": 1231,
+      "line_start": 1057,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense exponent displays are OCR-fragile; proof logic is prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source proves monotonicity of sigma(n)-n and stronger log-log adjusted or exponentiated expressions along SA by combining consecutive-record inequalities with bounded ratios and the asymptotic lower bound for sigma(n).",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Record dominance can persist under nonlinear divisor-sum transformations",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u05.txt",
+      "unit_bytes": 9507,
+      "unit_id": "openalex_w2282130622_v2_u05",
+      "unit_sha256": "f72657dccfcb6706c21e1dbae0773b84f422cb907aae64caf419c96fa87aa3ce",
+      "unit_type": "record-sequence monotonic transformations",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates structural parameterization from the later XA transfer.",
+      "line_end": 1403,
+      "line_start": 1317,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product endpoint conventions are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The CA variational definition yields threshold functions x_k and a finite Euler-product construction, including the exceptional ambiguity when a threshold is prime; Robin's adjacent-CA maximum theorem then makes CA a scaffold for f-records.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A single epsilon parameter converts CA maximality into prime-by-prime exponent thresholds",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u06.txt",
+      "unit_bytes": 4377,
+      "unit_id": "openalex_w2282130622_v2_u06",
+      "unit_sha256": "4df83782416b93b436986fc2b4ca3bde867ba7e11e103d99ee224512d79fbf21",
+      "unit_type": "colossally-abundant parameterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A short but conceptually complete consequence combining two independently proved structural mechanisms.",
+      "line_end": 1520,
+      "line_start": 1515,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4.31 supplies infinitely many CA values with p greater than log N, while every XA has p below log n, so the two abundant classes cannot eventually coincide.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Opposite largest-prime inequalities force infinitely many CA numbers outside XA",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u07.txt",
+      "unit_bytes": 275,
+      "unit_id": "openalex_w2282130622_v2_u07",
+      "unit_sha256": "c8c32ef14d202ef52093ae12f45213c2ce6a16855d3d7316ddc5cb5c695161da",
+      "unit_type": "class-separation consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports that the hypotheses were checked only through a finite XA range.",
+      "line_end": 1585,
+      "line_start": 1521,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constant-sensitive inequalities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof balances the gain in the XA divisor-ratio record against the totient loss from a new largest prime, using explicit prime-product estimates and a lower bound on the multiplicative gap.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A gap condition makes sigma(n)/n plus phi(n)/n increase across XA records",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u08.txt",
+      "unit_bytes": 3539,
+      "unit_id": "openalex_w2282130622_v2_u08",
+      "unit_sha256": "f807a3f534608fa5a8fcdf1179f8463201a97d0db093992a1a3d6815008feb91",
+      "unit_type": "XA monotonicity criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "All statements remain explicitly bounded by C1 or C2 and are not promoted to theorems.",
+      "line_end": 1785,
+      "line_start": 1588,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables and primorial factorizations are extraction-sensitive; provenance is a cited external SA list rather than a reproduced computation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The numerical section records bounded exponent changes between consecutive XA values, monotone largest prime and divisor count, counterexamples to stronger implications, and multiple empirically monotone compositions that can seed later conjectures.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite XA data suggest rigid exponent transitions, monotone prime support, and gap laws",
+      "unit_artifact_relpath": "depth/units/openalex_w2282130622_v2_u09.txt",
+      "unit_bytes": 8233,
+      "unit_id": "openalex_w2282130622_v2_u09",
+      "unit_sha256": "e2d43c3969f6f34e43957ca2524ee27cbbd7a3914122313421737f5abf399991",
+      "unit_type": "finite-computational-structure-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2282130622_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

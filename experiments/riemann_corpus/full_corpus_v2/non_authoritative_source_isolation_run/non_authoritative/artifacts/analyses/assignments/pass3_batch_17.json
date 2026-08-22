@@ -1,0 +1,3018 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_17.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_17.jsonl"
+  },
+  "unit_count": 66,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the motivation and parameter freedom missing from the first v1 span.",
+      "line_end": 78,
+      "line_start": 39,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Key displayed definitions are nearly absent from extraction; only the prose-level comparison and freedom are safe without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts Levinson's fixed coefficients with polynomial mollifier weights and a more general combination of xi derivatives, deferring the final choices until a variational optimization.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A polynomial-weighted Möbius mollifier and flexible differential combination create optimization freedom",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u01.txt",
+      "unit_bytes": 1850,
+      "unit_id": "conrey1989_two_fifths_v2_u01",
+      "unit_sha256": "51877122380e193f2165edb8ef66305dc5dfe4ed8329c231d6eda546626b1195",
+      "unit_type": "representation-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u01.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Prior historical bounds provide the comparison baseline.",
+      "line_end": 186,
+      "line_start": 168,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem prose is clear despite damaged inequality glyphs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates the proportion of all critical-line zeros from the proportion that are simple and states the 0.4077 and 0.401 bounds, with the latter giving more than two fifths simple.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The method yields distinct lower bounds for critical-line and simple critical-line zeros",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u02.txt",
+      "unit_bytes": 526,
+      "unit_id": "conrey1989_two_fifths_v2_u02",
+      "unit_sha256": "7c8bc947cc33d2d29e6e58aeb2e0c241df6b5c2bcda65c9feb34025ea1056d14",
+      "unit_type": "quantitative-partial-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u02.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the choice of shift, mollifier length, and the passage from a zero count to a logarithm of an average squared modulus.",
+      "line_end": 325,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe formula loss affects eta, V, and the precise inequality. The reduction direction and role of each object are prose-recoverable, but exact reuse requires the original scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reality parity of xi derivatives turns zeta zeros into sign changes of the real part of eta; the argument principle and Littlewood's lemma then bound missing changes through the mean square of a shifted mollified approximation.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line zero counting is reduced to zeros of a mollified differential combination",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u03.txt",
+      "unit_bytes": 4784,
+      "unit_id": "conrey1989_two_fifths_v2_u03",
+      "unit_sha256": "477cc14d6e6948d661b038c5ef23dd2fc4885ade3eb2c90d756135682cd31f64",
+      "unit_type": "argument-principle-to-mean-square-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u03.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the additional degree-one restriction explicit.",
+      "line_end": 394,
+      "line_start": 353,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The crucial identity is unreadable in extraction; the logical implication is stated in prose and must be formula-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The argument distinguishes zeros of the auxiliary real part from zeros of eta itself; under a specialized coefficient condition, the former imply a zeta zero while the latter exclusion guarantees nonvanishing derivative and hence simplicity.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A linear differential choice converts surviving sign changes into simple zeta zeros",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u04.txt",
+      "unit_bytes": 1502,
+      "unit_id": "conrey1989_two_fifths_v2_u04",
+      "unit_sha256": "3005d98ac80fccc1668853d579817f5d98bb0566f4c24110b55f3b5927a663c8",
+      "unit_type": "simple-zero-specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u04.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the separate linear-Q optimization for simple zeros and the numerical parameter selection.",
+      "line_end": 555,
+      "line_start": 398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many formulas, including the full theorem statement and functional, are badly OCR-damaged. The variational structure, boundary conditions, and reported numerical output are prose-supported; exact coefficients require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 supplies the asymptotic for mollifiers shorter than T^(4/7); its main term is organized into a quadratic functional of P, whose boundary-constrained Euler-Lagrange solution gives the optimized numerical proportions.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The mollified mean square becomes a quadratic functional minimized by an Euler-Lagrange equation",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u05.txt",
+      "unit_bytes": 4033,
+      "unit_id": "conrey1989_two_fifths_v2_u05",
+      "unit_sha256": "129f2e9dfa43e907cc2c82e0e6cb97c7bc6de00400ac672271837c01e3cc70b6",
+      "unit_type": "mean-value-and-variational-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u05.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This isolates the reusable device of proving a parameterized identity before differentiating.",
+      "line_end": 646,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The proposition's displayed main term is largely missing; only its uniformity and analytic-differentiation role are reliable without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof packages the mollified zeta pair into a function analytic in two small shifts, applies a uniform asymptotic, and uses Cauchy's formula to recover the differential polynomial V and hence Theorem 2.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A two-shift local mean proposition generates the required differentiated global mean",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u06.txt",
+      "unit_bytes": 2130,
+      "unit_id": "conrey1989_two_fifths_v2_u06",
+      "unit_sha256": "cfd6959c54538d237b712953c32e14d0187fb192e22fdd782b4159ba5d1a43ac",
+      "unit_type": "uniform-shift-proposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u06.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly labels the arithmetic evaluation as a sketch and cites the detailed predecessor proof.",
+      "line_end": 739,
+      "line_start": 649,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient formulas are badly damaged; the factorization sequence and identity's role are prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first lemma changes summation order by the common divisor and evaluates the separated sums using earlier arithmetic lemmas; a second symmetry identity converts the paired shifts into the proposition's concise main term.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "GCD factorization and a shift-reversal identity collapse the mollifier coefficient sum",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u07.txt",
+      "unit_bytes": 2628,
+      "unit_id": "conrey1989_two_fifths_v2_u07",
+      "unit_sha256": "f91fb7c06602e20115fb44b11c72696db8db8c9570537892732eca1535a3252e",
+      "unit_type": "coefficient-main-term-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u07.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the path changes, crossed pole, and the statement that both symmetric pieces yield the same main term.",
+      "line_end": 1040,
+      "line_start": 742,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span is highly formula- and scan-dependent. Exact Estermann functions, kernels, and residues are not safely reconstructible from OCR; only the prose-supported architecture is accepted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An additive divisor Dirichlet series is analytically continued and functionally transformed; Mellin inversion and contour displacement split the result into main, remainder, and error pieces, with a local residue lemma evaluating the main contribution.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Estermann functional equations and contour residues isolate the mollified mean's diagonal main term",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u08.txt",
+      "unit_bytes": 9758,
+      "unit_id": "conrey1989_two_fifths_v2_u08",
+      "unit_sha256": "5c55261e1272bd598ae5c2099efe4d279809eaa562d8e9335edf406288cfb417",
+      "unit_type": "contour-main-term-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u08.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Records separately the auxiliary stronger y<=T^(8/13) range needed inside Lemma 8.",
+      "line_end": 1169,
+      "line_start": 1043,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Most displayed bounds are damaged; the reduction, case split, and final exponent comparison are stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rapidly decaying remainder terms are discarded, the surviving error is organized by gcd and dyadic ranges, and Lemmas 7-8 convert kernel decay plus an arithmetic exponential-sum estimate into the threshold theta<4/7.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic decomposition reduces all off-diagonal errors to one averaged Kloosterman bound",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u09.txt",
+      "unit_bytes": 4490,
+      "unit_id": "conrey1989_two_fifths_v2_u09",
+      "unit_sha256": "d6050011526e3982abcc0ac60472f37638308ff95445c84eb39ed107f2c70ffe",
+      "unit_type": "off-diagonal-error-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u09.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the separate treatments of S1, S2, and S3 and the final range verification.",
+      "line_end": 1396,
+      "line_start": 1170,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact coefficient definitions and exponent tuples are formula-sensitive and partially unreadable; scan verification is mandatory for quantitative reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separating the gcd-dependent weights and decomposing Möbius coefficients produces three bilinear sums; medium ranges use the Deshouillers-Iwaniec averaged bound, while short ranges use Weil's bound, and the resulting exponent checks close Lemma 8.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vaughan's identity creates bilinear forms matched to averaged and individual Kloosterman estimates",
+      "unit_artifact_relpath": "depth/units/conrey1989_two_fifths_v2_u10.txt",
+      "unit_bytes": 7719,
+      "unit_id": "conrey1989_two_fifths_v2_u10",
+      "unit_sha256": "3fd0f132892a564ba5abeee9cf6448dc542c94ace212592dffd1f1ebbedcecd5",
+      "unit_type": "bilinear-decomposition-and-kloosterman-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_two_fifths_v2_u10.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes comparison with the analogous extremal treatment of S(t) and separates known lower bounds from conjectured maxima.",
+      "line_end": 55,
+      "line_start": 16,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The leading asymptotic formulas are clean; exact constants are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction identifies the limit of earlier constants and proposes a new interface: replace the kernel arising from zeros by the best minorant whose Fourier support is bounded, so the explicit formula controls its zero sum.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounding zeta on RH is reframed as optimal bandlimited minorization of a zero kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u01.txt",
+      "unit_bytes": 4612,
+      "unit_id": "openalex_w1913535681_v2_u01",
+      "unit_sha256": "f14ce5e6ecfe4359372b8e5a6884dc99c86557b061d41b9c871cb70c95d4b9b6",
+      "unit_type": "problem-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the representation change that makes the extremal problem possible.",
+      "line_end": 100,
+      "line_start": 64,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends essentially on RH and on the exact completion; all displayed factors are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under RH, termwise division of the absolutely convergent Hadamard products pairs each zero with a factor involving (t-gamma)^2; Stirling then isolates log t minus one half the sum of a fixed logarithmic kernel.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A ratio of completed zeta values turns log|zeta| into a positive zero-distance kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u02.txt",
+      "unit_bytes": 2299,
+      "unit_id": "openalex_w1913535681_v2_u02",
+      "unit_sha256": "0453b2519c553d73a7e5fba6a65b10470352d410aea85bb2c6e66886839d6de9",
+      "unit_type": "hadamard-ratio-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the four roles distinct rather than treating bandlimiting alone as sufficient.",
+      "line_end": 123,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction defect.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 2.1 specifies all properties needed downstream: domination from below, complex growth sufficient for the explicit formula, a frequency cutoff, and a computable integral deficit that becomes the main constant.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The required minorant combines pointwise order, exponential type, compact Fourier support, and exact L1 loss",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u03.txt",
+      "unit_bytes": 1253,
+      "unit_id": "openalex_w1913535681_v2_u03",
+      "unit_sha256": "0ce437c9c0871e051fe6196176ce46e38ea213d08d39b7e218a20e4e1ec0a830",
+      "unit_type": "extremal-minorant-contract",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the parameter choice that yields the theorem rather than only the formal inequality.",
+      "line_end": 175,
+      "line_start": 128,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prime sum and error terms are formula-sensitive but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing the zero kernel by its minorant permits the zeta explicit formula; the L1 deficit supplies the log t term, compact support truncates the prime sum, and choosing Delta balances that sum against exponential-type errors.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula converts minorant quality into a prime sum and an optimizable bandwidth error",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u04.txt",
+      "unit_bytes": 3160,
+      "unit_id": "openalex_w1913535681_v2_u04",
+      "unit_sha256": "bd6e8635785e5acda25497fd20435f1f07cec98dbf18745c8930c9870d6e135a",
+      "unit_type": "explicit-formula-bound-and-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the derivative check used to identify the measure representation.",
+      "line_end": 237,
+      "line_start": 177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interpolation series and measure density are exact-formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The kernel is expressed, after scaling and an additive normalization, as an integral of exponential kernels against a nonnegative measure; the general interpolation formula then supplies the optimal entire minorant.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive measure representation places the logarithmic kernel inside the Carneiro-Vaaler class",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u05.txt",
+      "unit_bytes": 3789,
+      "unit_id": "openalex_w1913535681_v2_u05",
+      "unit_sha256": "914e15b1f673483bb1e5b85aebf52973997c99105f68dbad59068e2a7ae032d9",
+      "unit_type": "extremal-function-specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source notes that global nonnegativity is expected but proves only the weaker lower bound actually needed.",
+      "line_end": 339,
+      "line_start": 238,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several Fourier-integral formulas are dense but cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Sinc interpolation controls complex growth and a real lower bound, the Carneiro-Vaaler transform formula proves compact support, and an exact integral computes the L1 deficit; rescaling then gives every part of Proposition 2.1.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Interpolation bounds and Fourier identities verify the minorant after rescaling",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u06.txt",
+      "unit_bytes": 5953,
+      "unit_id": "openalex_w1913535681_v2_u06",
+      "unit_sha256": "d0b2752c09295759df85305e13d5c913a4b29647b36e3ad8b0073fd352b21bdb",
+      "unit_type": "property-verification-and-scaling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates optimality for one kernel from robustness across related shifted kernels.",
+      "line_end": 397,
+      "line_start": 341,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact comparison inequalities require formula preservation; the methodological conclusion is prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discussion compares the optimal construction with an earlier convolution-based minorant and explains that further pointwise improvement requires nontrivial control of the resulting short prime sum; the less optimal construction remains useful for kernels outside the extremal theorem's class.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimal minorization improves the constant but leaves the prime Dirichlet polynomial as the barrier",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u07.txt",
+      "unit_bytes": 4122,
+      "unit_id": "openalex_w1913535681_v2_u07",
+      "unit_sha256": "bcccd9a3135e3d15c7f1d9f3a9d1f961c49fb1bf5f483c1e5bbefba5e0c06a9f",
+      "unit_type": "method-comparison-and-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps GRH, entire-order, functional-equation, and Ramanujan assumptions explicit.",
+      "line_end": 447,
+      "line_start": 398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conductor and coefficient normalizations are formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hadamard and explicit-formula steps extend to completed degree-d L-functions on GRH; coefficient bounds from Ramanujan give the zeta-level leading constant, while only absolute Euler-product convergence forces a threefold loss.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The minorant method transfers to analytic conductor, with Ramanujan control determining the constant loss",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_v2_u08.txt",
+      "unit_bytes": 3468,
+      "unit_id": "openalex_w1913535681_v2_u08",
+      "unit_sha256": "0f86a54150cab5396eba4db0c3c279712bc7412559815ca17236317c3dbc9f2b",
+      "unit_type": "family-generalization-and-assumption-cost",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the regrouping needed for convergence and the definition and basic closure properties of the DL class.",
+      "line_end": 166,
+      "line_start": 94,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several product and coefficient displays are line-broken; the divisor mechanism and conclusions are prose-recoverable, while exact series transcription should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source interprets zeta values as Newton sums of the sine divisor, then isolates the structural requirement that the entire divisor lie on a line and relates a one-line divisor to reflection symmetry.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler's sine product turns special-value computation into a divisor problem",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u01.txt",
+      "unit_bytes": 4114,
+      "unit_id": "perezmarco2017_rh_notes_v2_u01",
+      "unit_sha256": "e805193ee4830a121c29f9b1a8a99f7a05b117675d0af36542a84e97327ab582",
+      "unit_type": "divisor-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u01.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The p-adic interpolation preview is retained because it identifies which sampled values later support a different analytic representation.",
+      "line_end": 216,
+      "line_start": 174,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive but the factorization and interpolation claims are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The gamma divisor and Weierstrass product place zeta in a broader interpolation framework and show how reflection factors decompose a symmetric divisor.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gamma interpolation links factorial poles, sine reflection, and zeta Newton sums",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u02.txt",
+      "unit_bytes": 2451,
+      "unit_id": "perezmarco2017_rh_notes_v2_u02",
+      "unit_sha256": "766583f2d658c164ac9cff1bdd1759d33049fa71a0f5f0903ee19d161a6f590d",
+      "unit_type": "interpolation-and-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u02.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the explicitly heuristic Transalgebraic Principle rather than treating it as a theorem.",
+      "line_end": 257,
+      "line_start": 217,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The obstruction is prose-stable; the principle is philosophical and not validated mathematical evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text identifies a reusable obstruction to transalgebraic reasoning: multiplication by an exponential changes Taylor coefficients without changing zeros, so Newton-style manipulations need a minimal-growth normalization.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential factors preserve divisors but destroy naive coefficient-to-root inference",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u03.txt",
+      "unit_bytes": 2604,
+      "unit_id": "perezmarco2017_rh_notes_v2_u03",
+      "unit_sha256": "a91e3df24ffafd01a948d6204a977d57befc9027bc9bbd089bc8686047a0e6c9",
+      "unit_type": "representation-ambiguity-and-heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u03.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the author's explicit statement that the support is weak and conjectural.",
+      "line_end": 359,
+      "line_start": 297,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The local sine rescaling is display-dependent but readable; the global inference is a heuristic, not a proof of RH.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Each Euler factor has a vertical periodic divisor and rationally independent prime frequency; extrapolating this structure suggests a DL conjecture, while the Davenport-Heilbronn example limits the claim to genuinely Eulerian functions.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local divisor-line structure suggests an arithmetic Euler-product conjecture, with a sharp non-Eulerian warning",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u04.txt",
+      "unit_bytes": 3749,
+      "unit_id": "perezmarco2017_rh_notes_v2_u04",
+      "unit_sha256": "d716bcc316a5551cc518ad08ca432b0ae3b40ad8ba0a86ba73bb7afa434e6f78",
+      "unit_type": "euler-product-heuristic-and-counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u04.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes path independence, the jump across the cut, and the residue calculation at one.",
+      "line_end": 515,
+      "line_start": 415,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour geometry depends on Figure 1 and several displays; the prose makes the deformation logic recoverable, but exact orientation signs should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Riemann's integral is deformed around the exponential kernel's singularities, producing an entire contour integral whose gamma factor locates and then eliminates all candidate poles except the simple pole at one.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Hankel contour removes the half-plane restriction from the Mellin representation",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u05.txt",
+      "unit_bytes": 5269,
+      "unit_id": "perezmarco2017_rh_notes_v2_u05",
+      "unit_sha256": "dea91ab0cb235d0e560adf8641dbe97ae620e72c550f68bc581bfa018c692809",
+      "unit_type": "analytic-continuation-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u05.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the Bernoulli setup and residue step together.",
+      "line_end": 557,
+      "line_start": 517,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Bernoulli signs and indices are formula-sensitive; verify from the source scan before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expanding the kernel at zero makes zeta at non-positive integers a coefficient-extraction problem and identifies the negative even zeros as a separate, structurally explained divisor.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bernoulli expansion converts the continuation formula into negative special values and trivial zeros",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u06.txt",
+      "unit_bytes": 2271,
+      "unit_id": "perezmarco2017_rh_notes_v2_u06",
+      "unit_sha256": "a2d55c2c1b0b53ecac8c3f7bb4a0ffd8aa4cffe54942804eb85e6ca7beebccff",
+      "unit_type": "special-value-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u06.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the passage from the asymmetric equation to the entire xi-function.",
+      "line_end": 645,
+      "line_start": 563,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some residue displays are degraded, but the contour-to-functional-equation route and zero symmetries are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A contour enclosing the nonzero exponential singularities converts their residue sum into zeta at one minus s; completion removes poles and makes the critical-strip and reflection-conjugation symmetries explicit.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues at the kernel lattice yield the functional equation and fourfold zero symmetry",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u07.txt",
+      "unit_bytes": 4346,
+      "unit_id": "perezmarco2017_rh_notes_v2_u07",
+      "unit_sha256": "b21e328e9e40164ec5ee3c93cf0836ce6898e376a9cd9dbcbdc67532fc2fef66",
+      "unit_type": "functional-equation-and-zero-symmetry",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u07.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides an independent representation whose symmetry is visible before analytic manipulation.",
+      "line_end": 722,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The final cosine-transform form has line-broken exponents; the representation change is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Mellin transform of the half-theta series is split at one, reciprocity changes the small-x part into a large-x part, and the resulting symmetric integral directly exhibits s ↔ 1-s.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta reciprocity transfers Poisson symmetry to the zeta functional equation",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u08.txt",
+      "unit_bytes": 4311,
+      "unit_id": "perezmarco2017_rh_notes_v2_u08",
+      "unit_sha256": "87944dfde2a0731a9a11c48c322949f23a2636725c88b14eba24c1d739b7ade6",
+      "unit_type": "modular-transform-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u08.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit preserves the conjectural status of the motivating intuition and the distinct analytic equivalence.",
+      "line_end": 821,
+      "line_start": 723,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prime-error exponents are readable but formula-sensitive; the DL argument is authorial speculation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates Riemann's numerical observation from a speculative DL minimality heuristic, then states how real parts of zeros control oscillatory prime-error magnitude and why the square-root error is equivalent to RH.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Minimal divisor-line placement links RH to optimal prime-counting error",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u09.txt",
+      "unit_bytes": 5648,
+      "unit_id": "perezmarco2017_rh_notes_v2_u09",
+      "unit_sha256": "710805a75544fedeb54ac4da232f3d58de010e38e93829c61d5cd20df7d5f08f",
+      "unit_type": "strategic-hypothesis-and-equivalent-error",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u09.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes enough product setup to identify why zeros become poles of the logarithmic derivative.",
+      "line_end": 912,
+      "line_start": 822,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The paired-zero product convention and exact constants require formula verification; the equivalence and obstruction are prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Differentiating both the Euler product and Hadamard product gives the prime-zero bridge; inversion of zeta recasts RH as square-root cancellation of the Mertens function and records the failure to prove convergence left of one.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic derivatives expose primes through zeros, while Möbius cancellation remains inaccessible",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u10.txt",
+      "unit_bytes": 4402,
+      "unit_id": "perezmarco2017_rh_notes_v2_u10",
+      "unit_sha256": "c68d4dd38d4d9d5978c0e5561b7922a2e2f167a5aadbdac51187f5f3b04c3cb4",
+      "unit_type": "equivalent-criterion-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u10.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the convergence warning that the zero series cannot be uniformly convergent across jumps.",
+      "line_end": 1063,
+      "line_start": 914,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several integrals and zero sums are densely extracted; exact normalizations should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The weighted step function is chosen because its Mellin transform is log zeta; Fourier-Mellin inversion, integration by parts, and the completed product then isolate the pole, zeros, archimedean term, and Möbius inversion to prime counts.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin inversion converts weighted prime powers into a main term plus zero oscillations",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u11.txt",
+      "unit_bytes": 7730,
+      "unit_id": "perezmarco2017_rh_notes_v2_u11",
+      "unit_sha256": "e55e38eeef9ac78e930cd41df48bf3bd82ef72d6d533a6968d6838c50a283586",
+      "unit_type": "explicit-formula-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u11.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the distinction between recurrence and full-density versions.",
+      "line_end": 1107,
+      "line_start": 1064,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The unit is a conjectural historical reinterpretation, not evidence that the asserted set is unbounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A numerically false uniform claim is weakened into the structurally testable conjecture that nearest-integer agreement recurs arbitrarily far out, with density posed separately.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ramanujan's prime approximation is reframed as an unbounded recurrence question",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u12.txt",
+      "unit_bytes": 2433,
+      "unit_id": "perezmarco2017_rh_notes_v2_u12",
+      "unit_sha256": "77618a5f7d96a4ae0388f0aebd9189484e6ebf1d930cf88fb83064792097647c",
+      "unit_type": "empirical-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u12.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Groups related interpretations without asserting that any proposed trace formula has been proved for zeta.",
+      "line_end": 1238,
+      "line_start": 1116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Delsarte distribution is formula-heavy and should be scan-verified before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contour integration and test functions produce a distributional prime-zero identity; Weil positivity, Selberg trace analogies, and Connes's proposal show how the same bridge can be recast as spectral or positivity structure.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Distributional explicit formulas turn prime-zero duality into trace and positivity criteria",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+      "unit_bytes": 6669,
+      "unit_id": "perezmarco2017_rh_notes_v2_u13",
+      "unit_sha256": "7e1bae22929ba0b7f12af5bab6a3f3191fac314ed8db5f72ca4921635d96585e",
+      "unit_type": "explicit-formula-and-positivity-framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the general inverse-Laplace version and gamma example.",
+      "line_end": 1333,
+      "line_start": 1253,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient multi-index notation is extraction-sensitive; conceptual specializations are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A divisor distribution for finite-order Dirichlet series equals an inverse-Laplace frequency distribution; specializations recover Poisson summation, Newton relations, the zeta explicit formula, and the Selberg trace formula without requiring a functional equation.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson-Newton unifies Fourier summation, polynomial Newton identities, and zeta trace formulas",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u14.txt",
+      "unit_bytes": 4647,
+      "unit_id": "perezmarco2017_rh_notes_v2_u14",
+      "unit_sha256": "a0d11961037a011ecd78916dd2d65ae09c94f821559b29a1c7b8657bad838021",
+      "unit_type": "unifying-distributional-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u14.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the author's skeptical interpretation as an evidence audit, not a refutation of Hilbert-Polya.",
+      "line_end": 1384,
+      "line_start": 1335,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The pair-correlation limit is formula-sensitive; the methodological distinction is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes Montgomery's conditional statistic and numerical GUE agreement from the stronger spectral-existence claim, offering a Fourier-window explanation for shared statistics.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation supports a statistical analogy but not by itself a Hilbert-Polya operator",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u15.txt",
+      "unit_bytes": 3012,
+      "unit_id": "perezmarco2017_rh_notes_v2_u15",
+      "unit_sha256": "eaf859b087dfa173744e09f5de6dd51f49ee4e8cc2c0918877487784d1aa430a",
+      "unit_type": "evidence-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u15.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the alternative that common trace formalism, rather than a literal physical system, may explain the match.",
+      "line_end": 1481,
+      "line_start": 1386,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several semiclassical amplitudes are damaged; exact physics formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Matching the explicit zero density to a semiclassical periodic-orbit expansion predicts logarithmic prime periods and Lyapunov data, while the opposite oscillatory sign and absence of a canonical system constrain the analogy.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantum-chaos matching identifies prime periods but also a decisive sign mismatch",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u16.txt",
+      "unit_bytes": 5606,
+      "unit_id": "perezmarco2017_rh_notes_v2_u16",
+      "unit_sha256": "b708a0375bc2843bd96fc60503b210f0364c88d14f252de7a5319a26b5a975de",
+      "unit_type": "method-comparison-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u16.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contrast between same-function Montgomery behavior and cross-function mating.",
+      "line_end": 1624,
+      "line_start": 1482,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical histograms are image-dependent and the claims are empirical; the stated locations and comparisons are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Unnormalized differences reveal low zeros through large zeros, persist across distinct Dirichlet L-functions, and point to the product character, a behavior the single-system quantum analogy does not explain.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-difference deficits compose across L-functions rather than behaving as ordinary pair correlation",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u17.txt",
+      "unit_bytes": 5896,
+      "unit_id": "perezmarco2017_rh_notes_v2_u17",
+      "unit_sha256": "5755b14f59a6f0a6366c3837940bc7d14f495522c23be08dc0ffdace9e51c9ba",
+      "unit_type": "cross-family-statistical-structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u17.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the normalization and the stated limitation that global divisor convolution need not remain discrete.",
+      "line_end": 1691,
+      "line_start": 1624,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The formal product is recoverable but symbol extraction is fragile; the final RH argument is explicitly heuristic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A second product on local rational factors extends primewise to arithmetic Dirichlet series, predicts which zeros appear in cross-family difference statistics, and supplies a speculative RH obstruction to off-line zeros.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The ene-product turns local Euler-factor multiplication into additive divisor convolution",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u18.txt",
+      "unit_bytes": 3620,
+      "unit_id": "perezmarco2017_rh_notes_v2_u18",
+      "unit_sha256": "5dab448e0001aa5cf2d2c6078cbb9ba24bfa713ef9fe09babbbf99e4e7aa39e7",
+      "unit_type": "algebraic-divisor-convolution",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u18.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the arithmetic/analytic mixture diagnosis that motivates the construction.",
+      "line_end": 1808,
+      "line_start": 1697,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Idele notation and Haar normalizations are formula-sensitive; the local-global mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Local transforms over all completions produce the p-adic Euler factors and the archimedean gamma factor, while global Fourier duality supplies the functional equation and the product formula explains why the places must be considered together.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tate's Fourier-Mellin construction puts finite and infinite Euler factors on one footing",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+      "unit_bytes": 5870,
+      "unit_id": "perezmarco2017_rh_notes_v2_u19",
+      "unit_sha256": "686f4fadcb2b92bf2875967ebaaf7ad3507aa16c3ab49a0d28e9f9bd1f6d96b0",
+      "unit_type": "adelic-local-global-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u19.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows how to distinguish self-duality from the more general family-level GRH statement.",
+      "line_end": 1900,
+      "line_start": 1840,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact conductor and root-number normalization should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Character multiplicativity creates the Euler product, gamma and root-number data give a conjugate functional equation, and multiplying conjugate partners restores the self-symmetry needed for the same critical-line formulation.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pairing conjugate Dirichlet L-functions restores a self-functional equation without changing their zero union",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u20.txt",
+      "unit_bytes": 3657,
+      "unit_id": "perezmarco2017_rh_notes_v2_u20",
+      "unit_sha256": "ffeca56668345e7647341cfcd09c2a4d9f74a8281947a6a5c71116211fc48d49",
+      "unit_type": "family-extension-and-symmetry-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u20.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transition to Hecke characters and Tate's uniform local treatment.",
+      "line_end": 1948,
+      "line_start": 1902,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The completed-factor powers and residue constant are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Unique factorization of ideals yields the Euler product, completion yields the number-field functional equation, and the residue at one packages regulator, class number, roots of unity, and discriminant.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dedekind zeta encodes ideal factorization and class-number data in analytic singularities",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u21.txt",
+      "unit_bytes": 2571,
+      "unit_id": "perezmarco2017_rh_notes_v2_u21",
+      "unit_sha256": "c0ab9c9445e6af81d13ad81f29185902c3585324ba85797986a72b816ac8bfd6",
+      "unit_type": "arithmetic-encoding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u21.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the two-step reduction rather than implying analytic continuation is direct from the product.",
+      "line_end": 2014,
+      "line_start": 1950,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Local representation notation is readable but formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Frobenius acting on inertia invariants defines higher-degree local factors, yet the Euler product alone offers little analytic access; class field theory and character induction recover continuation only by identification with better-understood L-functions.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Artin local characteristic polynomials generalize Euler factors but hide analytic continuation",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u22.txt",
+      "unit_bytes": 3605,
+      "unit_id": "perezmarco2017_rh_notes_v2_u22",
+      "unit_sha256": "b2d1978302d3bce40649cd8e87edebf595d928fd1dab02d7637f0905ea09bb6e",
+      "unit_type": "representation-theoretic-construction-and-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u22.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates rationality, duality, degree identification, and Deligne's RH as distinct steps.",
+      "line_end": 2093,
+      "line_start": 2020,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Weil-conjecture factorization is densely typeset; exact weights and degrees require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The exponential point-count series is conjecturally rational; etale cohomology identifies its factors with Frobenius actions, Poincare duality gives the functional equation, and positivity supplies the critical absolute-value bound.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-field point counts become Frobenius eigenvalues and a cohomological RH",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u23.txt",
+      "unit_bytes": 4930,
+      "unit_id": "perezmarco2017_rh_notes_v2_u23",
+      "unit_sha256": "1ad9c3f500f9ffef54e3f826b24989eb783df4a70f211e02d5138091ab93b0e3",
+      "unit_type": "cohomological-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u23.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes modularity as a contrasting successful bridge that imports analytic structure.",
+      "line_end": 2186,
+      "line_start": 2105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conclusion is the author's methodological assessment, not a formal impossibility theorem.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hasse-Weil zeta multiplies rational finite-field factors over incommensurable prime frequencies; the source argues that proving each local divisor constraint leaves untouched the analytic problem created by the infinite global product.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        39,
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local rational RH does not resolve the transcendental difficulty of a global Euler product",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u24.txt",
+      "unit_bytes": 4544,
+      "unit_id": "perezmarco2017_rh_notes_v2_u24",
+      "unit_sha256": "a5d52bc0a3b481885ef3d939ec668b9f308dc2f84d50c98c63e796dfc0ceaa47",
+      "unit_type": "local-global-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u24.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the contragredient functional equation and analytic gap together.",
+      "line_end": 2234,
+      "line_start": 2195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Sketch-level exposition; exact gamma convention is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adelic GL(n) representations determine finite polynomial factors and archimedean parameters, suggesting Langlands unification and a grand RH, while the source emphasizes that an Euler-product definition does not itself prove continuation.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        41
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Automorphic local data propose a universal L-function class but still require analytic realization",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u25.txt",
+      "unit_bytes": 2159,
+      "unit_id": "perezmarco2017_rh_notes_v2_u25",
+      "unit_sha256": "ad0b7c4a6de73d94578fec2b6e72994ab65aec0598e4e272076331b9b0248a16",
+      "unit_type": "automorphic-unification-and-definition-gap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u25.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the selection mechanism rather than treating every modular form as equally arithmetic.",
+      "line_end": 2336,
+      "line_start": 2235,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hecke-operator normalization and gamma factors require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Modularity alone does not guarantee the desired arithmetic; simultaneous Hecke diagonalization selects forms whose Fourier coefficients satisfy multiplicative relations, producing Euler products, continuation, and functional equations.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hecke eigenvectors convert modular symmetry into multiplicative coefficients and Euler factors",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u26.txt",
+      "unit_bytes": 5313,
+      "unit_id": "perezmarco2017_rh_notes_v2_u26",
+      "unit_sha256": "9351fd5b322582544082a9cdb962c3f1672d4bd034b0b16afabe27fc52bb4283",
+      "unit_type": "spectral-selection-to-euler-product",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u26.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Eisenstein example as the motivating bridge.",
+      "line_end": 2438,
+      "line_start": 2337,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Bessel and gamma formulas are extraction-sensitive; the construction sequence is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Laplacian and Hecke eigenfunctions yield multiplicative Fourier coefficients and completed L-functions; Iwasawa decomposition then exposes the higher-rank analogue and its weaker analytic convolution theory.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        43,
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maass spectral data replace holomorphy and extend the L-function construction toward GL(n)",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u27.txt",
+      "unit_bytes": 5051,
+      "unit_id": "perezmarco2017_rh_notes_v2_u27",
+      "unit_sha256": "149e3ca35cccb5675bb59635d0e497bc5210b46210b84810e66e63347b410c3d",
+      "unit_type": "nonholomorphic-and-higher-rank-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u27.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explains why apparent analytic rationality is actually finite symbolic compression.",
+      "line_end": 2525,
+      "line_start": 2439,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The determinant identity is clean; the geometric coding argument is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fixed-point counts become traces of powers of a transition matrix, whose exponential generating series is a determinant; Markov partitions transfer this finite combinatorics to hyperbolic systems up to boundary redundancy.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A finite Markov coding makes periodic-orbit zeta functions rational",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u28.txt",
+      "unit_bytes": 5065,
+      "unit_id": "perezmarco2017_rh_notes_v2_u28",
+      "unit_sha256": "0f52d111fb7e2d034030fd1007430021ad458065368f9799d83b1395e4b31edc",
+      "unit_type": "symbolic-dynamics-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u28.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes only the four defining conditions and the conjectural status.",
+      "line_end": 2576,
+      "line_start": 2533,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma-factor and coefficient-bound conventions are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The class makes explicit which joint properties are believed to support RH, preventing a functional equation or Dirichlet series alone from being mistaken for sufficient structure.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Selberg class isolates analytic continuation, coefficient growth, symmetry, and Euler structure as separate axioms",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u29.txt",
+      "unit_bytes": 2121,
+      "unit_id": "perezmarco2017_rh_notes_v2_u29",
+      "unit_sha256": "cfd78371bd0b253fce8e95d2f450d65f85e74ec4a383ab623bb4cc68133bc958",
+      "unit_type": "axiomatic-family-definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u29.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows interpolation as a change of ambient topology rather than another complex L-function family.",
+      "line_end": 2602,
+      "line_start": 2577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Parity and normalization formulas should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fixing a residue class modulo p-1 makes negative zeta values converge p-adically after removing a local factor, producing an analytic interpolation in a representation unrelated to the complex variable.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kummer congruences support a p-adic analytic continuation through sampled special values",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u30.txt",
+      "unit_bytes": 1505,
+      "unit_id": "perezmarco2017_rh_notes_v2_u30",
+      "unit_sha256": "28c0ea714e7b3ddfd26549aca6fa20aa3aa300942f515efbb7e7a7fc9a4c9217",
+      "unit_type": "p-adic-interpolation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u30.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Beurling perturbations as evidence that the exact frequencies matter.",
+      "line_end": 2709,
+      "line_start": 2623,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This is a strategic assessment with polemical language, not a theorem ruling out analytic or algebraic approaches.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source audits numerical checks, positive proportions, toy models, and spectral analogies, then identifies the unresolved combination of resumming the Euler product beyond convergence and exploiting rational independence of prime frequencies.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Current evidence does not overcome the coupled analytic and arithmetic bottleneck",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+      "unit_bytes": 5387,
+      "unit_id": "perezmarco2017_rh_notes_v2_u31",
+      "unit_sha256": "d8681f8521064a85f5eed505668b2b800cd870afb8e7ecfa59a6bb7cdafee4f6",
+      "unit_type": "evidence-and-bottleneck-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u31.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Recorded as a source-specific strategic hypothesis, not an accepted blueprint for an RH proof.",
+      "line_end": 2782,
+      "line_start": 2750,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No formula dependency; all ingredients remain conjectural forecasts.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposed ingredients synthesize repeated mechanisms in the survey and explicitly note that positivity alone may prove only a weaker exclusion of finitely many off-line zeros.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A plausible proof architecture combines hidden family structure, positivity, a global Euler proxy, and Fourier-complex analysis",
+      "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u32.txt",
+      "unit_bytes": 1961,
+      "unit_id": "perezmarco2017_rh_notes_v2_u32",
+      "unit_sha256": "25f9f30d29ce98f1781616380691e4cab5371ce1b79c60c5231b0b551ec98847",
+      "unit_type": "proof-ingredient-hypothesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u32.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the heuristic integral comparison and its rigorous repair.",
+      "line_end": 123,
+      "line_start": 32,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed estimates are clean enough to recover, though exact constants are suppressed by big-Oh notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewriting each tail term as an integral converts the integer-counting discrepancy into a controlled error, yielding a finite Dirichlet polynomial plus x^(1-s)/(s-1) and a logarithmic vertical bound.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tail integration approximates zeta and exposes the pole-scale correction",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u01.txt",
+      "unit_bytes": 4387,
+      "unit_id": "harper2014_zeta_course_part1_v2_u01",
+      "unit_sha256": "7ba208b2bd66b1c1c2dc0f973bfb021a047ac9d665b1fc439f3725f1270bdcdb",
+      "unit_type": "sum-integral-approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u01.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the convergence justification rather than using the product formally.",
+      "line_end": 196,
+      "line_start": 124,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction defect.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Finite products of geometric series enumerate exactly the integers with bounded prime factors; a convergent tail estimate then passes to the infinite Euler product and separates arithmetic from analytic representations.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Absolute convergence and unique factorization turn the integer series into a prime product",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u02.txt",
+      "unit_bytes": 4221,
+      "unit_id": "harper2014_zeta_course_part1_v2_u02",
+      "unit_sha256": "8918619dcaeff07b0bb57ee41d22ba81736a7980a8ccaacb6b394045390ac101",
+      "unit_type": "euler-product-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u02.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison of Psi with the unweighted prime count.",
+      "line_end": 270,
+      "line_start": 202,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The series manipulations rely on absolute and uniform convergence, which the text explicitly checks.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The von Mangoldt function absorbs all powers of a prime so that differentiation of the logarithm of each Euler factor gives one simple Dirichlet series, making zeros analytically relevant to prime counts.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-power weights are selected because their Dirichlet series is -zeta'/zeta",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+      "unit_bytes": 3595,
+      "unit_id": "harper2014_zeta_course_part1_v2_u03",
+      "unit_sha256": "65349d7e7ec84f5c73edf421e5ed23f8081cfd83421c02117840b9e7e944f393",
+      "unit_type": "weight-selection-and-logarithmic-derivative",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u03.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the half-weight convention at a jump and the smooth-weight improvement remark.",
+      "line_end": 418,
+      "line_start": 273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour orientations and the near-diagonal logarithmic denominator are formula-sensitive but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Residue evaluation of y^s/s constructs an approximate step function; summing it against arbitrary coefficients yields an inversion formula whose error shrinks as the vertical frequency window widens.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A truncated Perron kernel approximately inverts a Dirichlet series with frequency-controlled error",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u04.txt",
+      "unit_bytes": 8637,
+      "unit_id": "harper2014_zeta_course_part1_v2_u04",
+      "unit_sha256": "5d8260df24aeefebe96a623372b2a1ce95db7e455cde1359f9b9b293af2dcbe8",
+      "unit_type": "truncated-transform-inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u04.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text explicitly contrasts direct evaluation on the one-line with the later contour-deformation strategy.",
+      "line_end": 480,
+      "line_start": 436,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact logarithmic powers in the error are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Choosing the line just right of one controls the truncation error and leaves an integral whose poles after continuation will encode the main term and zero contributions.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perron inversion reduces Psi to a contour integral of the logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u05.txt",
+      "unit_bytes": 3422,
+      "unit_id": "harper2014_zeta_course_part1_v2_u05",
+      "unit_sha256": "4d5f2c4d0d2bde0e4436084e9d9ef7ef29427de9931954f55e846b241127d551",
+      "unit_type": "prime-counting-transform-pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u05.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps well-definedness and the resulting analytic estimates together.",
+      "line_end": 605,
+      "line_start": 484,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several long derivative displays are line-broken but the integral representation and bounds are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing the integer-counting function by w minus its fractional part isolates an integral convergent for Re(s)>0, proves independence of the truncation point, and gives vertical bounds for zeta and its derivative near the one-line.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The fractional-part discrepancy extends zeta while preserving the finite-sum approximation",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u06.txt",
+      "unit_bytes": 6952,
+      "unit_id": "harper2014_zeta_course_part1_v2_u06",
+      "unit_sha256": "d2434d4a2b47455178fffea7bbbe36085954f2e10a9b4d74779eae0245772879",
+      "unit_type": "analytic-continuation-by-discrepancy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u06.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Fourier-mode proof sketch and the length-as-complexity interpretation.",
+      "line_end": 787,
+      "line_start": 606,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some intermediate Abel-summation displays are crowded, but hypotheses and conclusion are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A van der Corput lemma compares a slowly oscillating sum with its integral; applied to the logarithmic phase, it cancels the tail of zeta and produces a length-|t| Dirichlet polynomial with O(x^-sigma) error.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        10,
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Slow phase variation upgrades the zeta approximation to the full right half-plane",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u07.txt",
+      "unit_bytes": 10489,
+      "unit_id": "harper2014_zeta_course_part1_v2_u07",
+      "unit_sha256": "871cb4efc5a4d70796e8f79a1f01dc03960bc940e66d39f00476c95e72eda474",
+      "unit_type": "oscillatory-sum-to-integral-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u07.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Records the target before the separate construction of the strip and contour proof.",
+      "line_end": 847,
+      "line_start": 789,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material extraction defect.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem pair makes the causal channel explicit: excluding zeros only slightly left of one permits a contour shift and already yields a strong asymptotic for weighted primes.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-free strip is the exact contour resource needed for a quantitative prime number theorem",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u08.txt",
+      "unit_bytes": 3315,
+      "unit_id": "harper2014_zeta_course_part1_v2_u08",
+      "unit_sha256": "1e5eb4cf6262d6ab392c2927e2935ec9a963e2671415f492357f87407b5fde87",
+      "unit_type": "signal-to-asymptotic-contract",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u08.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the reusable de la Vallée Poussin positivity mechanism.",
+      "line_end": 921,
+      "line_start": 848,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact logarithmic exponents are proof-specific and should be preserved from the displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The identity 3+4 cos(theta)+cos(2 theta)>=0 couples zeta at three heights; pole growth and vertical bounds then force a quantitative lower bound that transfers a short distance left of one.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nonnegative trigonometric combination of Euler products prevents zeta from becoming too small near one",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u09.txt",
+      "unit_bytes": 4544,
+      "unit_id": "harper2014_zeta_course_part1_v2_u09",
+      "unit_sha256": "e8888db2652868da6c91ed002e5f45d94c32670171b83333e7dda3110af6729c",
+      "unit_type": "positive-trigonometric-zero-free-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u09.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the later absorption of logarithmic factors into a smaller exponential constant.",
+      "line_end": 1040,
+      "line_start": 926,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense contour displays are extraction-sensitive; the segment-by-segment error budget is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moving Perron's contour left crosses only the pole at one; bounds on the two horizontal and one vertical segments produce competing errors, and optimizing the height gives the final subexponential decay.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The weak zero-free region yields PNT by balancing shifted-contour decay against truncation",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u10.txt",
+      "unit_bytes": 7213,
+      "unit_id": "harper2014_zeta_course_part1_v2_u10",
+      "unit_sha256": "c25b67b9886553251a41c7459729ba6b278a186c5c44ca0840678a0e1f7a435d",
+      "unit_type": "contour-shift-and-error-balance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u10.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the concrete parameter choice and symmetry extension to negative heights.",
+      "line_end": 1150,
+      "line_start": 1055,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No serious extraction defect; constants are implicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The result abstracts the widening step: analytic size control across width 1/w(t) plus the Euler-product positivity identity excludes zeros at scale 1/(phi w), immediately yielding the classical 1/log t region.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Landau's theorem converts moderate growth in a left neighborhood into a narrower zero-free region",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u11.txt",
+      "unit_bytes": 6222,
+      "unit_id": "harper2014_zeta_course_part1_v2_u11",
+      "unit_sha256": "bc7d82a287c16e6087eb833379c4696cc61be48e92f8bf728862ba6d0df9ef3f",
+      "unit_type": "growth-to-zero-free-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u11.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the complex-analytic engine used in the Landau theorem.",
+      "line_end": 1236,
+      "line_start": 1156,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The real-part inequalities are legible; exact numerical constants are nonessential to the mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A local product divides out zeros, Borel-Caratheodory controls the logarithm of the zero-free remainder, and Cauchy's formula converts that size bound into a logarithmic-derivative inequality with explicit positive zero terms.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing nearby zeros and bounding the remaining logarithm controls f'/f",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u12.txt",
+      "unit_bytes": 5014,
+      "unit_id": "harper2014_zeta_course_part1_v2_u12",
+      "unit_sha256": "1a61ea04c08edd2b8c7f07ef8449872017900687bf2ed79eb16e4f6fd97ca5de",
+      "unit_type": "local-zero-factorization-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u12.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the parameter choice r=1/w and the estimate of the normalization denominator.",
+      "line_end": 1334,
+      "line_start": 1239,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "A few inequalities are badly line-wrapped, but the two-sided squeeze and final scale are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The three-height logarithmic-derivative identity supplies a lower bound, while the local factorization lemma makes an assumed zero contribute a positive reciprocal-distance term; choosing the disc radius from the available growth strip yields the exclusion.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-product positivity and local zero terms force any nearby zero left of a quantitative boundary",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+      "unit_bytes": 6914,
+      "unit_id": "harper2014_zeta_course_part1_v2_u13",
+      "unit_sha256": "e0a3c1b7ad00209e98eaca63eb931f5fc3dfc441f3cc35bc8cae758406dfc78d",
+      "unit_type": "zero-repulsion-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u13.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source labels this proof non-examinable and sketches rather than fully details it.",
+      "line_end": 1393,
+      "line_start": 1337,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Sketch-level but prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The same local zero factorization first gives a lower bound for the real part; a second disc argument converts it into a modulus bound throughout a slightly narrower classical zero-free region.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Once zeros are excluded, Borel-Caratheodory upgrades real-part control to a full zeta'/zeta bound",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u14.txt",
+      "unit_bytes": 3084,
+      "unit_id": "harper2014_zeta_course_part1_v2_u14",
+      "unit_sha256": "e6b02795f5f7019f91642af7bc129cd6c159d0040ca05487c637b35473a8319c",
+      "unit_type": "zero-free-logarithmic-derivative-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u14.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Useful as a controlled comparison showing exactly where stronger analytic input changes the arithmetic output.",
+      "line_end": 1450,
+      "line_start": 1395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants are suppressed; the scale transfer is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeating the earlier Perron contour proof with a 1/log T shift and the new logarithmic-derivative bound changes the optimization to T=exp(sqrt(log x)), producing the classical error term.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The classical zero-free scale propagates directly to the classical PNT error scale",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u15.txt",
+      "unit_bytes": 3407,
+      "unit_id": "harper2014_zeta_course_part1_v2_u15",
+      "unit_sha256": "04e90a3291e18b154e5ee039ca67e9cc8be1f56116e334d087f51550a4cadaca",
+      "unit_type": "improved-contour-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u15.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These results are stated without proof and should be treated as orientation for later course material.",
+      "line_end": 1515,
+      "line_start": 1453,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The functional equation and explicit formula are cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completion extends zeta to the whole plane, explains the trivial zeros and critical-line reflection, and permits Perron's contour to move far enough left that nontrivial zero residues appear explicitly in the prime count.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The functional equation completes the zero geometry and supports a direct zero-sum formula for Psi",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_v2_u16.txt",
+      "unit_bytes": 3539,
+      "unit_id": "harper2014_zeta_course_part1_v2_u16",
+      "unit_sha256": "af8061e4f8c94e04b5a5bf376d1b62976fe21735f083ff9420354a8a1c9cb26c",
+      "unit_type": "global-symmetry-and-explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_v2_u16.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

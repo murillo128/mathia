@@ -1,0 +1,106 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_sourced_cohomology_obstruction": {
+      "analysis_id": "agnostic_oa_generation_a34c5096779eb2e3515eec56cb0c58de8c3aa7637fe47c7822e757c823ac79b7",
+      "boundary_or_failure": "Cohomological neutrality is a global necessary gate in this compact sourced-form problem, not a general analytic existence theorem: it does not by itself control regularity near delta sources, boundary conditions, or solutions for unrelated operators. The uniqueness statement also depends on imposing Z2 oddness and cohomological triviality, and the flattened formulas require the typeset source for exact coefficients.",
+      "interpretation": "For the Bianchi equation dG = J on the compact Calabi-Yau-orbifold set-up, the combined distributional source J must represent the zero cohomology class, because an exact left-hand side cannot carry a nonzero class. Boundary gauge and curvature sources give the usual cancellation condition, while five-branes add the Poincare-dual classes of their holomorphic curves. At the stated first perturbative order, the source says that the divergence equation together with the Bianchi equation then has a solution, and that restricting G to be Z2-odd and cohomologically trivial removes the remaining homogeneous freedom. Thus local source prescriptions are admitted only after a global quotient test and an explicit normalization of the kernel.",
+      "nonparaphrase_operation": "Given a proposed collection of local currents, map every term to the common cohomology group and sum their classes before attempting a local PDE construction. Reject the prescription if the sum is nonzero; if it vanishes, solve for a representative and state separately which parity or cohomology condition kills homogeneous additions. This turns a potentially expensive local construction into a global obstruction test followed by a normalized solve.",
+      "source_support": "The exact unit states dG = sources and a divergence equation for G, says the Bianchi identity is solvable only when all source terms sum to zero cohomologically, writes the modified class cancellation including five-brane curve classes, and states existence and uniqueness after requiring Z2 oddness and cohomological triviality. Treating the class projection as a reusable pre-solve test is an inference from those source facts.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty relative to other corpora or literature was not assessed and is unconfirmed. Exact signs, normalizations, and the analytic behavior of distributional solutions were not independently verified; the interpretation is confined to the source's compactification and perturbative order.",
+      "unit_id": "agnostic_oa_sourced_cohomology_obstruction"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_sourced_cohomology_obstruction": {
+      "analysis_id": "agnostic_oa_critic_64bcdf8977b4f5de0a6fa771a5d462198e972e4cd60f4f23f3eb7417ffebddec",
+      "context_risk": "Medium. The candidate correctly confines the existence and uniqueness claim to the compactification and perturbative setting, but its interpretation crosses the exact-unit boundary by incorporating the five-brane class formula from the following unit. Its generic reject/solve recipe should also remain explicitly conditional on this cohomological sourced-form setting, because class neutrality alone is not a general analytic existence criterion.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2085099209",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound critic assignment including its compact candidates, and the five exact assigned local unit artifacts only; no network, issues, other sources, or other outputs."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly faithful. The exact artifact supports the obstruction that the sources must sum to zero cohomologically, the stated existence of a solution to the divergence and Bianchi equations, and uniqueness after imposing Z2 oddness and cohomological triviality. The candidate is not fully faithful to the exact unit when it says that this unit gives the modified cancellation with five-brane curve classes.",
+      "missed_mechanism": "The core quotient obstruction and removal of the homogeneous kernel are captured. The revision should preserve the source's separation between the necessary cohomology test and the source-specific Hodge-type existence statement, rather than making vanishing of the class sound sufficient for arbitrary local-current PDEs.",
+      "paraphrase_risk": "Low. The pre-solve projection to cohomology and subsequent kernel normalization are a genuine reusable operation, not merely a restatement. The risk is overgeneralization, not explanation-style paraphrase.",
+      "revision_instructions": "Remove the sentence that five-branes add Poincare-dual curve classes and remove the source_support claim that the exact unit writes that modified cancellation; the exact artifact only states the no-five-brane cancellation while mentioning five-brane delta sources generically. Recast the generic procedure as conditional: in this compact sourced-form problem a nonzero total class obstructs dG=J, while a zero class passes only the global obstruction and the source separately asserts existence for its paired equations. Retain the explicit Z2-odd and cohomologically-trivial conditions as the normalization that yields uniqueness.",
+      "unit_id": "agnostic_oa_sourced_cohomology_obstruction",
+      "unsupported_or_imported": "The modified cancellation formula containing the Poincare-dual classes of holomorphic five-brane curves is imported from the adjacent source_type_compatibility artifact, not supported by this exact artifact. No other material imported claim was found."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_sourced_cohomology_obstruction": "agnostic_oa_revision_d2b15003f6aebe65d94f9157e39eacfd2990f9b5d2ec19d6cd7c5752c630c3e6"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2085099209_eb971e46_part_01.jsonl",
+  "source_id": "openalex_w2085099209",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_sourced_cohomology_obstruction.txt",
+      "artifact_bytes": 5639,
+      "artifact_relpath": "depth/units/agnostic_oa_sourced_cohomology_obstruction.txt",
+      "artifact_sha256": "4e1ffc295268e4f4998e09932ce1d145625eb44601c9436a6651b8f734b249be",
+      "content_sha256": "5689107855f3aa2fd623bf34cbd2b5f557098c5790a4f514a58f3c3506468f56",
+      "context_note": "The cohomological neutrality condition and uniqueness claim are made within the source's eleven-dimensional supergravity set-up and stated perturbative order. Five-brane contributions extend the source class in the following unit. This is source-grounded conditional reasoning, not an unconditional theorem for arbitrary singular PDEs. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_sourced_cohomology_obstruction",
+            "agnostic_oa_source_type_compatibility",
+            "agnostic_oa_reference_metric_scalar_bootstrap"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "saturation_probe_challenged",
+          "summary": "The title's use of compactification denotes physical dimensional reduction, while the retained mathematics concerns sourced differential forms, cohomology, Hodge theory, and warped metrics. This source therefore challenges keyword-only routing to a projectivization/compactification lens. Whether this challenge is novel relative to #44 or the corpus is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_sourced_cohomology_obstruction",
+            "agnostic_oa_source_type_compatibility",
+            "agnostic_oa_hodge_kernel_moduli"
+          ],
+          "identifier": "hodge_solvability_with_singular_sources",
+          "kind": "new_geometry_dependency",
+          "summary": "Within this source, solvability depends jointly on global cohomological neutrality, compatibility of graded source type, and Hodge-theoretic choice modulo a harmonic kernel. This is a source-grounded candidate geometry dependency; its novelty and coverage elsewhere in the ecosystem are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2085099209",
+      "line_end": 477,
+      "line_start": 403,
+      "representation_dependency": "Extraction limit: the normalized Bianchi formulas, coefficients, and parity notation are flattened and must be checked against the typeset source for exact use. Representation limit: the argument is expressed for differential forms with distributional sources, an involution, and a cohomology class constraint. Scope limit: vanishing total source class is necessary here and paired with a stated Hodge-type solution claim; it does not by itself guarantee analytic existence, regularity, boundary behavior, or uniqueness for arbitrary operators or singular spaces.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other source or plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The source separates a sourced differential problem into an equation of motion and a Bianchi identity, then observes that local delta-function sources can be integrated into a global field only when their total class vanishes. After this existence gate, parity and a chosen trivial cohomology class remove the harmonic freedom and select a unique solution. The reusable move is to test a local source prescription first against the global quotient that annihilates exact data, then state the normalization that makes the solution canonical.",
+      "source_id": "openalex_w2085099209",
+      "source_normalized_sha256": "406a71d371d69e0f9dd02a573c9fb82fea3b9ed22b0b4ef2d6c3848dfb7ef70e",
+      "title": "Convert local source data into a global cohomological obstruction",
+      "unit_id": "agnostic_oa_sourced_cohomology_obstruction",
+      "unit_type": "solvability-principle"
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1964245943",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1964245943_99cd568c_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A convergence-controlled transformed multiset sum detects escape from a half-plane through dominant aligned phases; conjugation and functional-equation reflection then force the two half-plane tests to coincide with critical-line containment.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bl_03",
+          "bl_04",
+          "bl_05"
+        ],
+        "proposed_limit": "The claim uses the source's precise summability and symmetry hypotheses, whose formulas must be scan-verified before formal reuse.",
+        "source_id": "openalex_w1964245943",
+        "synthesis_id": "riemann_v2_within_ecb2ceda181bdfd5edda2f57",
+        "title": "Symmetry converts a universal half-plane detector into Li's critical-line criterion"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These hypotheses are necessary setup for treating infinite zero multisets without silently rearranging conditionally convergent sums.",
+          "line_end": 105,
+          "line_start": 76,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact weights, exceptional points, and transformed summand require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper defines a multiplicity-aware symmetric limiting convention and gives summability hypotheses under which the transformed sums are absolutely or symmetrically convergent; conjugation invariance makes the limiting value real.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Symmetric convergence makes multiset zero sums well defined",
+          "unit_artifact_relpath": "depth/units/bl_03.txt",
+          "unit_bytes": 910,
+          "unit_id": "bl_03",
+          "unit_sha256": "e9aec71aaaba98dd39d5bede2146587d853b1a679fa589a5e1bb65d0d397024f",
+          "unit_type": "convergence-definition-and-lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The convergence convention is structural bookkeeping that prevents rearrangement from creating spurious coefficients. It separates a conditionally convergent linear part from an absolutely controlled nonlinear remainder.",
+            "nonparaphrase_operation": "Star-convergence is the bridge that makes infinite multiset expressions compatible with the symmetric ordering naturally used for zeta zeros.",
+            "quality_reason": "The source defines multiplicity-aware star-convergence through a symmetric height cutoff, states a weighted summability condition for absolute convergence of transformed terms, transfers star-convergence from the reciprocal sum to the Li-type sum, and notes reality under conjugation symmetry. No exact rearrangement theorem or zeta-specific result is imported; the analysis remains at the level of convergence roles for an abstract multiset. Low: the conceptual reading identifies the linear reciprocal contribution, controlled transformed remainder, multiplicity, and symmetric ordering.",
+            "source_support": "The paper defines star-convergence by a symmetric height limit over a multiset, counting multiplicity. Under a weighted summability hypothesis it proves absolute convergence for certain transformed sums, and if the reciprocal sum is star-convergent then the Li-type sum is also star-convergent. Conjugation invariance makes the reciprocal limit real.",
+            "speculation_status": "Multiplicity, exceptional points, and the precise truncation matter. Formal termwise algebra on an unordered conditionally convergent zero sum is not justified without these hypotheses. Exact weights, excluded values, powers, and transformed summands are formula-dependent and require scan verification; the convergence roles are source-grounded. The bookkeeping interpretation and the warning against rearranging conditionally convergent sums are mathematically reasonable consequences of fixing this limiting convention. Weights, exceptional points, exponents, and transformed summands are formula-dependent and corrupt; exact conditions require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The direct proof works even when the formal generating product is not well defined; the conformal-map remark explains the corresponding holomorphy/growth interpretation when it is.",
+          "line_end": 201,
+          "line_start": 116,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact assumptions, transform powers, half-plane boundary, growth bound, conformal map, and asymptotic constants are scan-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The theorem equates half-plane containment with positivity and subexponential one-sided bounds for a sequence of transformed multiset sums. If containment fails, finitely many maximal-modulus offenders dominate and simultaneous Diophantine approximation aligns their phases, forcing exponentially large negative values infinitely often.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "One-sided transformed sums characterize multiset containment in a half-plane",
+          "unit_artifact_relpath": "depth/units/bl_04.txt",
+          "unit_bytes": 2925,
+          "unit_id": "bl_04",
+          "unit_sha256": "d20a280511e7701b25dfa4d58c6e2e266000a5a9f1d158ddb2f41330fa5bcdd4",
+          "unit_type": "general-equivalence-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A geometric outlier becomes an asymptotic oscillatory witness. The proof needs only one-sided information because exponential dominance amplifies any point beyond the boundary until cancellation can be defeated on selected indices.",
+            "nonparaphrase_operation": "The Möbius-type transform from the half-plane to a disk-modulus condition, followed by power sums, bridges spatial containment to coefficient growth and sign.",
+            "quality_reason": "The theorem equates half-plane containment with positivity and one-sided subexponential bounds for transformed multiset sums; its converse isolates finitely many maximal-modulus offenders, controls the remainder by a smaller exponential rate times polynomial factors, and aligns offender phases by simultaneous Diophantine approximation. No generating-product argument is falsely treated as necessary; the analysis correctly notes that the source's direct proof applies even when the formal product is undefined. Low: 'exponential dominance defeats cancellation' is supported by the maximal-modulus split, cosine phase sum, and aligned subsequence.",
+            "source_support": "The theorem equates containment of a summable complex multiset in a half-plane with positivity of all transformed real sums and with a weaker family of subexponential lower bounds. For the converse, failure of containment yields finitely many maximal-modulus offenders. The remaining terms are exponentially smaller up to polynomial factors, while simultaneous Diophantine approximation aligns the offenders' phases and forces exponentially large negative values infinitely often.",
+            "speculation_status": "The formal generating product is not always defined, so the direct multiset proof is essential. The equivalence also depends on the stated summability and exclusion assumptions; finite positivity checks cannot establish containment. The exact assumptions, transform powers, boundary coordinate, growth rate, conformal map, and constants are OCR-sensitive and require the scan. Interpreting an outlier as an amplified oscillatory witness and the transform-plus-power-sum construction as a bridge from geometry to coefficient signs is faithful to the proof. Hypotheses, transform powers, half-plane boundary, growth bound, and constants are OCR-sensitive and require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the precise conceptual move that recovers Li's criterion from a general geometric inequality.",
+          "line_end": 229,
+          "line_start": 203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact symmetry notation, coefficient formula, inequality signs, and relaxed summability condition require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For a multiset invariant under conjugation and reflection across the functional-equation center, applying the general theorem to the multiset and its reflection makes the transformed sums real and equates coefficient positivity with every element lying on the critical line.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional-equation symmetry upgrades the half-plane test to a critical-line test",
+          "unit_artifact_relpath": "depth/units/bl_05.txt",
+          "unit_bytes": 803,
+          "unit_id": "bl_05",
+          "unit_sha256": "b338a53ca8316eb18db18c38e65d015276a86dab0fb7086fbfde80b7f5cf6ea6",
+          "unit_type": "symmetry-reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry converts two inequalities into equality. The general theorem controls one side of the line, while invariance ensures the mirrored control needed on the other side without a new analytic argument.",
+            "nonparaphrase_operation": "The reflected multiset is the bridge from a half-plane criterion to a critical-line criterion, and the Li coefficients retain the resulting two-sided information.",
+            "quality_reason": "Under conjugation and functional-equation reflection symmetry, the corollary gives equivalent critical-line, coefficient, and lower-bound conditions; it makes the sums real, relates positive and negative indices, and applies the general theorem to the multiset and its reflection. No line-containment conclusion is asserted without symmetry, and the analysis preserves summability and multiplicity as necessary hypotheses. Low: the reflection operation and two applications of the half-plane theorem make the symmetry reading mathematically specific.",
+            "source_support": "For a multiset invariant under complex conjugation and reflection by the functional equation, with a summability condition, the corollary states equivalence between every point lying on the critical line and Li-type coefficient positivity or corresponding lower bounds. Symmetry makes the sums real and relates positive and negative indices; the proof applies the general theorem to the multiset and to its reflection.",
+            "speculation_status": "Without functional-equation symmetry, one-sided positivity yields only half-plane containment, not line containment. Convergence and multiplicity hypotheses remain essential. Exact symmetry notation, coefficient formula, inequality signs, and the relaxed summability remark require scan verification because of OCR degradation. Saying that symmetry converts two one-sided containments into equality is an exact conceptual compression of the proof. The exact symmetry maps, coefficient summand, inequality signs, boundary coordinate, and relaxed summability statement are damaged and need the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same coefficients defined from the completed function and its zeros arise by inserting a specially constructed inverse-Mellin family into the explicit formula, after a cutoff and a prime-number-theorem justification of the limit.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bl_01",
+          "bl_07",
+          "bl_08",
+          "bl_09",
+          "bl_10"
+        ],
+        "proposed_limit": "The OCR supports the representation bridge and proof architecture, not the exact coefficient formula or normalization.",
+        "source_id": "openalex_w1964245943",
+        "synthesis_id": "riemann_v2_within_8a98ac7c19e6023bb91fc149",
+        "title": "Li's coefficients are both zero-geometric and arithmetic test-function data"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The same criterion is said to extend to Dedekind zeta functions; the exact displayed definitions are not safely readable in OCR.",
+          "line_end": 52,
+          "line_start": 20,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Scan verification required for the completed-function normalization, derivative formula, zero-sum summand, and convergence convention.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction states that positivity of a derivative-defined sequence is equivalent to RH and rewrites the same coefficients as a symmetrically interpreted sum over nontrivial zeros, establishing the two representations studied in the paper.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Li coefficients encode the Riemann Hypothesis",
+          "unit_artifact_relpath": "depth/units/bl_01.txt",
+          "unit_bytes": 830,
+          "unit_id": "bl_01",
+          "unit_sha256": "ec2f193a86b3ab961babc135fc23d3cc5dbec81f9fccfba44b20a2182346d9ea",
+          "unit_type": "equivalent-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Li's sequence changes the representation of RH from a location condition on every nontrivial zero to sign tests on scalar coefficients. The logarithmic-derivative description reads each coefficient from completed-function data near a distinguished point, while the symmetrically interpreted sum makes it an aggregate of the global zero set. This compression gains a countable positivity interface but loses the location of any individual zero: the equivalence requires every coefficient, and the symmetric convergence prescription is part of the criterion rather than dispensable notation.",
+            "nonparaphrase_operation": "Compares the derivative and global-zero-set representations, then identifies the gain from scalar compression and the remaining all-indices and convergence burdens.",
+            "quality_reason": "Accepted because the prose securely supports the equivalence and dual representation, while the interpretation preserves the quantifier and convergence boundary and marks every formula-level OCR limitation.",
+            "source_support": "The introduction defines the coefficients through logarithmic derivatives of a completed zeta function, states that RH is equivalent to positivity for every positive index, rewrites each coefficient as a sum over nontrivial zeros under a specified symmetric limiting convention, and reports the analogous Dedekind-zeta result. The OCR does not safely preserve the completion normalization, derivative formula, summand, or exact cutoff expression.",
+            "speculation_status": "The local-versus-global-zero-set contrast is an explicit conceptual reading of the two source representations; no spectral interpretation or formula reconstruction is imported."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof is a change of variables from Weil's form plus a finite-part calculation split across zero and infinity.",
+          "line_end": 361,
+          "line_start": 252,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong scan dependency: exact involution, transform normalization, contours, explicit-formula terms, finite-part prescription, and constants are not reliable in OCR.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Regularity and decay conditions define a test-function class with an involution and Mellin transform; the explicit formula then represents a symmetric sum over zeros by arithmetic prime-power terms and continuous correction terms.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin test functions translate zero sums into prime and archimedean terms",
+          "unit_artifact_relpath": "depth/units/bl_07.txt",
+          "unit_bytes": 2609,
+          "unit_id": "bl_07",
+          "unit_sha256": "1b4d286932fef7c6574eba0bbad7fb83dc78f7175f97f563ce2c1ee57d38144a",
+          "unit_type": "representation-change-and-explicit-formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A spectral quantity becomes arithmetically observable only after choosing an admissible test function. The involution exposes functional-equation symmetry, while regularity and decay pay for exchanging transforms, sums, and limits.",
+            "nonparaphrase_operation": "The Mellin test function and explicit formula jointly bridge nontrivial zeros to prime powers and continuous gamma-factor corrections.",
+            "quality_reason": "The span specifies regularity and two-sided growth conditions, defines a multiplicative involution and Mellin transform with inversion, states the zeta explicit formula, and derives it from Weil by a change of variables plus a split and finite-part calculation. No sign conclusion is imported from the identity, and the analysis correctly states that the formula translates a sum without making positivity automatic. Low: the representation-switch language is anchored in Mellin transformation, the reciprocal involution, prime-power evaluations, archimedean corrections, and finite-part regularization.",
+            "source_support": "The span specifies a piecewise-smooth, decaying class of functions on the positive half-line, defines a multiplicative involution and Mellin transform with an inversion strip, and states a zeta explicit formula. Its proof changes variables from Weil's Fourier-form statement and evaluates a finite-part term by splitting at the multiplicative identity and pairing x with its reciprocal.",
+            "speculation_status": "The identity is not available for arbitrary formal test functions; endpoint values, decay, symmetric zero summation, and finite-part regularization are proof burdens. It translates a sum but does not make its sign automatic. Transform normalizations, contours, involution, prime terms, finite-part prescription, and constants are strongly OCR-dependent and must be recovered from the scan. Describing admissible test functions as the observation interface and regularity/decay as the cost of exchanging sums, transforms, and limits is a reasonable interpretation of the hypotheses and proof. Nearly all transform normalizations, contours, explicit-formula terms, constants, and finite-part details are corrupt; scan recovery is essential for exact use."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction is conceptually recoverable from the prose and support cases even though the polynomial display is lost.",
+          "line_end": 386,
+          "line_start": 362,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact polynomial coefficients, endpoint value, support inequalities, and transform identity require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The authors identify an inverse Mellin transform supported on one side of the multiplicative identity and express it through an explicit polynomial, producing the test function later inserted into the explicit formula.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Li's transformed summand has a concrete inverse-Mellin test function",
+          "unit_artifact_relpath": "depth/units/bl_08.txt",
+          "unit_bytes": 397,
+          "unit_id": "bl_08",
+          "unit_sha256": "31216ff34210189905d2cd2cd1c9896981656388ddfb719c58d291a6a737759a",
+          "unit_type": "test-function-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Inverse Mellin transformation turns the rational expression associated with a Li summand into a concrete test object in the multiplicative variable: it is supported on one side of the multiplicative identity, polynomial in the logarithm there, and separately prescribed at the boundary. This representation gains visible support and piecewise structure from an abstract transform expression, but the damaged display prevents formula-level evaluation. Within this span the mechanism is algebraic expansion of the transform; no admissibility or truncation conclusion is established here.",
+            "nonparaphrase_operation": "Tracks what the inverse-Mellin representation exposes and withholds, and isolates algebraic expansion as the local construction mechanism from later regularization questions.",
+            "quality_reason": "Accepted because the structural inverse-Mellin construction is recoverable despite formula corruption, and the revision confines its claim to that construction while recording the unusable details.",
+            "source_support": "The lemma states the inverse-Mellin identification and gives the one-sided, logarithmic-polynomial, and endpoint cases; the proof expands the transform expression algebraically and says this proves the identity. OCR loss obscures the polynomial coefficients, exact inequalities, boundary normalization, and exact transform formula.",
+            "speculation_status": "No adjacent-unit truncation claim is imported; prospective arithmetic use is left unstated, and every exact formula component remains scan-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unit preserves the regularization mechanism and term provenance, not the unreadable exact formula.",
+          "line_end": 479,
+          "line_start": 388,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact theorem statement, cutoff definition, prime sum, integrals, combinatorial coefficients, constants, and limits all require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Because the raw inverse-Mellin function violates the decay hypothesis, the proof truncates it, applies the explicit formula to the admissible approximation, and sends the cutoff to zero after evaluating prime and continuous terms, yielding an arithmetic expression for the Li coefficients.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncating the Li test function exposes an arithmetic coefficient formula",
+          "unit_artifact_relpath": "depth/units/bl_09.txt",
+          "unit_bytes": 1564,
+          "unit_id": "bl_09",
+          "unit_sha256": "6f5f79595b50a98c57438ff736e926e8e53990ceb1b708d4b74379b93f9c086f",
+          "unit_type": "arithmetic-formula-via-regularization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularization is not a cosmetic approximation: it creates a legal bridge between two representations while retaining enough term provenance to recover the desired coefficient after the singular limit.",
+            "nonparaphrase_operation": "The truncated test function is the intermediate object connecting the formal Li inverse Mellin transform to the rigorous explicit formula.",
+            "quality_reason": "The source explicitly says the natural inverse Mellin function fails condition (B), replaces it by an endpoint-adjusted truncation satisfying the hypotheses, applies the explicit formula, evaluates terms, and studies the cutoff-zero limit to obtain an arithmetic Li expression. No direct application to the inadmissible function is implied, and the analysis correctly treats the cutoff limit as a separate proof obligation. Low: the interpretation is fixed to a specific failed decay hypothesis, truncation, explicit-formula application, and singular-limit sequence.",
+            "source_support": "The theorem gives an arithmetic expression for the Li-type zero sum. Its proof observes that the inverse Mellin function fails the explicit formula's decay hypothesis, replaces it by a truncated endpoint-adjusted function that satisfies the admissibility conditions, applies the explicit formula, evaluates the resulting terms, and studies their limit as the cutoff tends to zero.",
+            "speculation_status": "Taking the cutoff limit is a separate proof obligation; applying the explicit formula directly to the untruncated function would be invalid. The arithmetic identity also inherits convergence and normalization choices from the explicit formula. The theorem formula, cutoff definition, prime sum, integrals, coefficients, constants, and intermediate limits are unreadable in places and require the scan. Calling regularization a legal bridge that preserves term provenance is a reasonable conceptual account of why truncation precedes limit removal. The theorem statement, cutoff cases, prime sums, integrals, coefficients, constants, and limits are severely corrupt; only the regularization architecture is reliable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supplies the analytic justification that the regularized explicit formula really returns the desired symmetric zero sum.",
+          "line_end": 530,
+          "line_start": 480,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact bounds, summands, regions, constants, and rates are formula-dependent and need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remaining zero-side limit is controlled using the prime number theorem with error term and a classical zero-free region, which make the discarded contributions decay faster than any negative power of the logarithmic cutoff.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-number estimates justify removal of the test-function cutoff",
+          "unit_artifact_relpath": "depth/units/bl_10.txt",
+          "unit_bytes": 1033,
+          "unit_id": "bl_10",
+          "unit_sha256": "b1a4c46d2b5f67effafbde3b899ebc6e01c615fae5f8940fc6c5dc9656b86d1a",
+          "unit_type": "limit-justification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The regularization limit is where zeta-specific analytic number theory enters. Formal transform convergence is upgraded to a quantitative tail estimate strong enough to dominate the logarithmic growth of the test polynomial.",
+            "nonparaphrase_operation": "The zero-free region and PNT error estimate bridge cutoff-level explicit formulas to the unregularized symmetric zero sum.",
+            "quality_reason": "The span invokes the prime number theorem with error term and a de la Vallee-Poussin zero-free region to make two discarded zero contributions decay faster than any negative power of the cutoff logarithm, completing the cutoff removal. No claim is made that test-function algebra alone supplies the result, and the analysis appropriately limits the rate claim to the cited arithmetic estimates. Low: the bridge is specified by named analytic results, the cutoff power, reciprocal-square sums, and the required logarithmic rate.",
+            "source_support": "The source proves convergence of the regularized zero-side expression to the desired symmetric Li sum. It estimates the difference in a central strip by a logarithmic polynomial times a cutoff power, then invokes a de la Vallee-Poussin zero-free region and the prime number theorem with error term to control sums involving the real parts and reciprocal squares of zeros at the required rapid rate.",
+            "speculation_status": "This step is not part of the general multiset criterion and does not follow from test-function algebra alone. Weaker zero information might not support the claimed rate or interchange of limits. Exact summands, regions, constants, exponents, and rates are formula-dependent and OCR-degraded; the cited analytic mechanism is clear. Locating the zeta-specific analytic input at the regularization limit and saying it dominates logarithmic polynomial growth are faithful conceptual interpretations of the estimates. The target limit, summands, strip, zero-free region, constants, and exponents are formula-dependent and badly OCRed; exact verification requires the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The multiset theorem supplies sufficiency for a concrete sequence of Li test functions, while convolution and Mellin positivity explain why their sign condition has the same critical-line meaning as Weil's broader criterion.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bl_04",
+          "bl_05",
+          "bl_11"
+        ],
+        "proposed_limit": "This does not say the Li family exhausts Weil's admissible test functions; exact identities are scan-dependent.",
+        "source_id": "openalex_w1964245943",
+        "synthesis_id": "riemann_v2_within_65af3d67e39e1c7f595b4ec3",
+        "title": "Li gives a simple sufficient subfamily inside Weil's positivity framework"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The direct proof works even when the formal generating product is not well defined; the conformal-map remark explains the corresponding holomorphy/growth interpretation when it is.",
+          "line_end": 201,
+          "line_start": 116,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact assumptions, transform powers, half-plane boundary, growth bound, conformal map, and asymptotic constants are scan-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The theorem equates half-plane containment with positivity and subexponential one-sided bounds for a sequence of transformed multiset sums. If containment fails, finitely many maximal-modulus offenders dominate and simultaneous Diophantine approximation aligns their phases, forcing exponentially large negative values infinitely often.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "One-sided transformed sums characterize multiset containment in a half-plane",
+          "unit_artifact_relpath": "depth/units/bl_04.txt",
+          "unit_bytes": 2925,
+          "unit_id": "bl_04",
+          "unit_sha256": "d20a280511e7701b25dfa4d58c6e2e266000a5a9f1d158ddb2f41330fa5bcdd4",
+          "unit_type": "general-equivalence-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A geometric outlier becomes an asymptotic oscillatory witness. The proof needs only one-sided information because exponential dominance amplifies any point beyond the boundary until cancellation can be defeated on selected indices.",
+            "nonparaphrase_operation": "The Möbius-type transform from the half-plane to a disk-modulus condition, followed by power sums, bridges spatial containment to coefficient growth and sign.",
+            "quality_reason": "The theorem equates half-plane containment with positivity and one-sided subexponential bounds for transformed multiset sums; its converse isolates finitely many maximal-modulus offenders, controls the remainder by a smaller exponential rate times polynomial factors, and aligns offender phases by simultaneous Diophantine approximation. No generating-product argument is falsely treated as necessary; the analysis correctly notes that the source's direct proof applies even when the formal product is undefined. Low: 'exponential dominance defeats cancellation' is supported by the maximal-modulus split, cosine phase sum, and aligned subsequence.",
+            "source_support": "The theorem equates containment of a summable complex multiset in a half-plane with positivity of all transformed real sums and with a weaker family of subexponential lower bounds. For the converse, failure of containment yields finitely many maximal-modulus offenders. The remaining terms are exponentially smaller up to polynomial factors, while simultaneous Diophantine approximation aligns the offenders' phases and forces exponentially large negative values infinitely often.",
+            "speculation_status": "The formal generating product is not always defined, so the direct multiset proof is essential. The equivalence also depends on the stated summability and exclusion assumptions; finite positivity checks cannot establish containment. The exact assumptions, transform powers, boundary coordinate, growth rate, conformal map, and constants are OCR-sensitive and require the scan. Interpreting an outlier as an amplified oscillatory witness and the transform-plus-power-sum construction as a bridge from geometry to coefficient signs is faithful to the proof. Hypotheses, transform powers, half-plane boundary, growth bound, and constants are OCR-sensitive and require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the precise conceptual move that recovers Li's criterion from a general geometric inequality.",
+          "line_end": 229,
+          "line_start": 203,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact symmetry notation, coefficient formula, inequality signs, and relaxed summability condition require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For a multiset invariant under conjugation and reflection across the functional-equation center, applying the general theorem to the multiset and its reflection makes the transformed sums real and equates coefficient positivity with every element lying on the critical line.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional-equation symmetry upgrades the half-plane test to a critical-line test",
+          "unit_artifact_relpath": "depth/units/bl_05.txt",
+          "unit_bytes": 803,
+          "unit_id": "bl_05",
+          "unit_sha256": "b338a53ca8316eb18db18c38e65d015276a86dab0fb7086fbfde80b7f5cf6ea6",
+          "unit_type": "symmetry-reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry converts two inequalities into equality. The general theorem controls one side of the line, while invariance ensures the mirrored control needed on the other side without a new analytic argument.",
+            "nonparaphrase_operation": "The reflected multiset is the bridge from a half-plane criterion to a critical-line criterion, and the Li coefficients retain the resulting two-sided information.",
+            "quality_reason": "Under conjugation and functional-equation reflection symmetry, the corollary gives equivalent critical-line, coefficient, and lower-bound conditions; it makes the sums real, relates positive and negative indices, and applies the general theorem to the multiset and its reflection. No line-containment conclusion is asserted without symmetry, and the analysis preserves summability and multiplicity as necessary hypotheses. Low: the reflection operation and two applications of the half-plane theorem make the symmetry reading mathematically specific.",
+            "source_support": "For a multiset invariant under complex conjugation and reflection by the functional equation, with a summability condition, the corollary states equivalence between every point lying on the critical line and Li-type coefficient positivity or corresponding lower bounds. Symmetry makes the sums real and relates positive and negative indices; the proof applies the general theorem to the multiset and to its reflection.",
+            "speculation_status": "Without functional-equation symmetry, one-sided positivity yields only half-plane containment, not line containment. Convergence and multiplicity hypotheses remain essential. Exact symmetry notation, coefficient formula, inequality signs, and the relaxed summability remark require scan verification because of OCR degradation. Saying that symmetry converts two one-sided containments into equality is an exact conceptual compression of the proof. The exact symmetry maps, coefficient summand, inequality signs, boundary coordinate, and relaxed summability statement are damaged and need the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The distinction is coverage: Weil uses a broad positivity class, whereas Li provides a concrete countable family whose sufficiency was established by the multiset theorem.",
+          "line_end": 563,
+          "line_start": 532,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact conjugation convention, convolution, transform identity, and test-function equality require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Multiplicative convolution turns into product under Mellin transform; self-convolution therefore gives a transform positive on the critical line. A source-stated identity shows the Li test functions fit this pattern, so their positivity has Weil's meaning while requiring only a simple explicit family.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Li positivity is an explicit test-function slice of Weil positivity",
+          "unit_artifact_relpath": "depth/units/bl_11.txt",
+          "unit_bytes": 1324,
+          "unit_id": "bl_11",
+          "unit_sha256": "e1d488e48d7bffc5d0062007eeebd14dddd35f109e32d16f7595b889998993f7",
+          "unit_type": "criterion-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mellin transformation transports multiplicative convolution into multiplication, so pairing a function with its conjugate-reflected partner produces the reported real positive transform on the critical line: a convolution-square positivity certificate. The displayed inverse-Mellin identity places the symmetrized Li test function in this pattern, and invariance of the explicit formula under the involution connects its sign to Weil's positivity framework. Li's gain is a simple explicit family for verification; the restricted family does not visibly exhaust Weil's broader class, and this span does not supply the separate proof mechanism that makes Li's family sufficient.",
+            "nonparaphrase_operation": "Decomposes the criterion bridge into its algebraic positivity mechanism, the broad-versus-explicit-family tradeoff, and a distinct unresolved sufficiency attribution.",
+            "quality_reason": "Accepted because the convolution/Mellin mechanism and Li-Weil comparison are locally supported, while the revision keeps formula uncertainty and the separate sufficiency proof burden explicit.",
+            "source_support": "The concluding remarks define multiplicative convolution, state its Mellin product rule, report positivity on the critical line for the conjugate-reflected convolution, recall Weil's necessity and sufficiency, give an identity for the symmetrized Li test function, invoke invariance of the explicit formula, and emphasize Li's explicit simple test functions. The exact involution, convolution measure, product, and identity are OCR-damaged and require scan verification.",
+            "speculation_status": "The positivity-certificate language and family comparison are interpretations of this span; attribution of Li-family sufficiency to the earlier multiset theorem is deliberately not imported."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The paper presents the arithmetic explicit-formula expression and a direct generating-series change of variables as two routes to formulas for the Li coefficients in terms of zeta expansion constants.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "bl_09",
+          "bl_12"
+        ],
+        "proposed_limit": "Only the existence and relationship of the routes are prose-recoverable; exact constants and polynomial identities require the scan.",
+        "source_id": "openalex_w1964245943",
+        "synthesis_id": "riemann_v2_within_532da558e6fe0a03c4e5ef81",
+        "title": "Explicit-formula and local-power-series routes meet at the same coefficients"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unit preserves the regularization mechanism and term provenance, not the unreadable exact formula.",
+          "line_end": 479,
+          "line_start": 388,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact theorem statement, cutoff definition, prime sum, integrals, combinatorial coefficients, constants, and limits all require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Because the raw inverse-Mellin function violates the decay hypothesis, the proof truncates it, applies the explicit formula to the admissible approximation, and sends the cutoff to zero after evaluating prime and continuous terms, yielding an arithmetic expression for the Li coefficients.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncating the Li test function exposes an arithmetic coefficient formula",
+          "unit_artifact_relpath": "depth/units/bl_09.txt",
+          "unit_bytes": 1564,
+          "unit_id": "bl_09",
+          "unit_sha256": "6f5f79595b50a98c57438ff736e926e8e53990ceb1b708d4b74379b93f9c086f",
+          "unit_type": "arithmetic-formula-via-regularization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularization is not a cosmetic approximation: it creates a legal bridge between two representations while retaining enough term provenance to recover the desired coefficient after the singular limit.",
+            "nonparaphrase_operation": "The truncated test function is the intermediate object connecting the formal Li inverse Mellin transform to the rigorous explicit formula.",
+            "quality_reason": "The source explicitly says the natural inverse Mellin function fails condition (B), replaces it by an endpoint-adjusted truncation satisfying the hypotheses, applies the explicit formula, evaluates terms, and studies the cutoff-zero limit to obtain an arithmetic Li expression. No direct application to the inadmissible function is implied, and the analysis correctly treats the cutoff limit as a separate proof obligation. Low: the interpretation is fixed to a specific failed decay hypothesis, truncation, explicit-formula application, and singular-limit sequence.",
+            "source_support": "The theorem gives an arithmetic expression for the Li-type zero sum. Its proof observes that the inverse Mellin function fails the explicit formula's decay hypothesis, replaces it by a truncated endpoint-adjusted function that satisfies the admissibility conditions, applies the explicit formula, evaluates the resulting terms, and studies their limit as the cutoff tends to zero.",
+            "speculation_status": "Taking the cutoff limit is a separate proof obligation; applying the explicit formula directly to the untruncated function would be invalid. The arithmetic identity also inherits convergence and normalization choices from the explicit formula. The theorem formula, cutoff definition, prime sum, integrals, coefficients, constants, and intermediate limits are unreadable in places and require the scan. Calling regularization a legal bridge that preserves term provenance is a reasonable conceptual account of why truncation precedes limit removal. The theorem statement, cutoff cases, prime sums, integrals, coefficients, constants, and limits are severely corrupt; only the regularization architecture is reliable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This records a within-source alternative derivation and the relation between two families of local expansion data.",
+          "line_end": 617,
+          "line_start": 564,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "All limit definitions, series coefficients, polynomial relations, and change-of-variable formulas are OCR-degraded and require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The arithmetic constants from the explicit-formula expression are compared with Stieltjes constants, related through generating-series expansions, and said to yield coefficient formulas directly after the same conformal change of variable, without invoking the explicit formula.",
+          "source_id": "openalex_w1964245943",
+          "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Stieltjes-type constants give a second route to the Li coefficients",
+          "unit_artifact_relpath": "depth/units/bl_12.txt",
+          "unit_bytes": 1075,
+          "unit_id": "bl_12",
+          "unit_sha256": "8e6906d7292b858eb6f6ac128589b8e7b9196b90722f23c89908847fe7ca86df",
+          "unit_type": "alternative-arithmetic-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The coefficient is triangulated through two representations: a global explicit-formula route using primes and zeros, and a local analytic route using Laurent/Taylor data. Agreement offers structural cross-checking without making either representation intrinsically primary.",
+            "nonparaphrase_operation": "Generating functions and the conformal substitution between the spectral variable and a disk variable bridge Stieltjes-type constants to Li coefficients.",
+            "quality_reason": "The span defines prime-sum limit constants analogous to Stieltjes constants, compares two local series expansions, states polynomial relations between the families, derives Li-coefficient formulas using the previous theorem, and announces a direct route after the same conformal substitution without the explicit formula. No exact identity is inferred merely from analogy; the analysis explicitly retains dependence on normalizations, indices, and the stated polynomial relations. Low to moderate: 'triangulated through two representations' is useful only because the revision names the prime/zero explicit-formula route, Laurent/Taylor data, and conformal variable change.",
+            "source_support": "The source defines a family of prime-sum limit constants analogous to the Stieltjes constants, recalls a Laurent expansion involving the latter, and compares two power-series expansions of a logarithm built from zeta. This expresses the new constants as polynomials in Stieltjes constants and, combined with the previous theorem, gives Li coefficients in terms of local expansion data. It says the same result can be derived directly after the conformal change of variable used earlier.",
+            "speculation_status": "The span states an alternative derivation rather than carrying out all coefficient algebra. Polynomial relations depend on exact normalizations and indexing, so conceptual similarity between the constant families is not an identity without those details. All limit definitions, series coefficients, polynomial relations, and change-of-variable formulas are OCR-degraded and require scan verification. Describing the explicit-formula and local-series routes as two representations that can structurally cross-check each other is a reasonable inference, not a claim that the source performs an independent numerical check. Every limit definition, coefficient, series, polynomial relation, and substitution is OCR-degraded and must be recovered from the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_70c4747d3c0ea9b7538a40c4bdab3af5e25e7af907041408316253a5aad78e1e",
+        "dossier_sha256": "f3347e7e2fb261261edfd2c4da19b80297cbda517432a4468c0271f7a86b4dc8"
+      }
+    }
+  ]
+}

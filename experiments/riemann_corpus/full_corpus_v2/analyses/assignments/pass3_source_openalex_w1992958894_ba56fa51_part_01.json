@@ -1,0 +1,2285 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1992958894_ba56fa51_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1992958894",
+  "unit_count": 16,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a programmatic claim; the derivation and precise limits occur later in the source.",
+      "line_end": 22,
+      "line_start": 11,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the prose claim; the two-column layout is visually interleaved but the abstract remains recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The abstract proposes a directly comparable experimental observable whose exact circle-billiard formulas are sums over zeta zeros, establishing the paper's bridge from escape dynamics to RH.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One-versus-two-hole escape as a probe of internal dynamics",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u001.txt",
+      "unit_bytes": 1033,
+      "unit_id": "openalex_w1992958894_u001",
+      "unit_sha256": "441909d190a3b627689e67fef7814ca2303baa37f6eff10c27d9b44025e6fa48",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u001.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3,
+          "line_end": 10,
+          "text": "Open circular billiards and the Riemann hypothesis\n\n                                                                                                 L. A. Bunimovich\n                                                         Southeast Applied Analysis Center, Georgia Institute of Technology, Atlanta GA 30332-1060, USA\n\n                                                                                                  C. P. Dettmann\n                                                                        School of Mathematics, University of Bristol, Bristol BS8 1TW, UK\n                                                                                            (Dated: October 24, 2018)\n",
+          "sha256": "48c3feccd1930d094cdb1865260201468517eaad2c4aae0a2e03080520e38a92"
+        },
+        "after": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "\n                                                          PACS numbers: 02.10.De,02.30.Ik,05.60.Cd,45.50.Dd\n\n\n                                                Billiard systems, in which a point particle moves freely         At long times, the probability of a particle remaining\n                                             except for specular reflections from rigid walls, permit         in an integrable billiard with a hole is well known to ex-\n                                             close connections between rigorous mathematics and ex-           hibit power law decay, in contrast to exponential decay\n                                             perimental physics. Very general physical situations, in         from strongly chaotic billiards [19], however the coeffi-\n",
+          "sha256": "94112d51822e23fb054c7f0ead411136d46041a0f4e5ac99587cdc391387339c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and abstract",
+            "line_end": 26,
+            "line_start": 1,
+            "mathematical_role": "States the proposed experimental comparison of one- and two-hole escape and its expression through zeros of the Riemann zeta function."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 22,
+          "line_start": 11,
+          "title": "One-versus-two-hole escape as a probe of internal dynamics",
+          "unit_id": "openalex_w1992958894_u001",
+          "unit_type": "motivation",
+          "why_material": "The abstract proposes a directly comparable experimental observable whose exact circle-billiard formulas are sums over zeta zeros, establishing the paper's bridge from escape dynamics to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a programmatic claim; the derivation and precise limits occur later in the source.",
+          "representation_dependency": "Low for the prose claim; the two-column layout is visually interleaved but the abstract remains recoverable.",
+          "unit_id": "openalex_w1992958894_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 36,
+            "line_start": 27,
+            "title": "Escape-law contrast and the short-time masking confound",
+            "unit_id": "openalex_w1992958894_u002",
+            "unit_type": "method-comparison",
+            "why_material": "The source contrasts power-law survival in an integrable billiard with exponential survival in a strongly chaotic one and warns that a transient exponential contribution can mask the integrable asymptotic in simulations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 24,
+              "line_start": 11,
+              "reason": "Abstract and classification metadata frame the experimental-to-zeta objective; the mathematical program is retained as unit u001."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u001",
+          "spontaneous_reading": "The operative idea is to compare escape through one hole with escape through two: changing only the opening configuration turns a measurable survival statistic into a probe of the billiard's internal dynamics, and in the circular case the resulting exact quantities are said to resolve into sums over zeta zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u001",
+          "source_grounded_mathematics": "The abstract states that exact one-hole and two-hole escape formulas are obtained for a circular billiard and that the corresponding quantities are expressed as sums over zeros of the Riemann zeta function.",
+          "conceptual_reading": "The comparison is a controlled perturbation: the container dynamics is held fixed while the observation geometry changes, so differences in escape can expose structure that a single measurement may confound.",
+          "representation_or_bridge": "The bridge runs from experimentally accessible escape rates to exact circular-billiard formulas and then to a spectral description by zeta zeros.",
+          "boundary_or_failure": "This span states the program but contains neither the formulas nor a derivation, so it does not establish how the zeros enter or what asymptotic regime is meant.",
+          "uncertainty": "Low uncertainty about the stated aim; high uncertainty about constants, hypotheses, and the exact zero-sum representation because they lie outside this unit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The coefficient called an escape rate here is the coefficient of the long-time power law, not an exponential decay constant.",
+      "line_end": 36,
+      "line_start": 27,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the prose; left- and right-column sentences are interleaved on each normalized line.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts power-law survival in an integrable billiard with exponential survival in a strongly chaotic one and warns that a transient exponential contribution can mask the integrable asymptotic in simulations.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Escape-law contrast and the short-time masking confound",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u002.txt",
+      "unit_bytes": 1664,
+      "unit_id": "openalex_w1992958894_u002",
+      "unit_sha256": "71fd50c4576f1adbf7869991de0671bd17c71988bbdd301136c8e8fe5d3f1231",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u002.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 19,
+          "line_end": 26,
+          "text": "arXiv:nlin/0408009v2 [nlin.SI] 16 Feb 2005\n                                                          are expressed as sums over zeroes of the Riemann zeta function. Thus we demonstrate a direct\n                                                          connection between recent experiments and a major unsolved problem in mathematics, the Riemann\n                                                          hypothesis.\n\n                                                          PACS numbers: 02.10.De,02.30.Ik,05.60.Cd,45.50.Dd\n\n\n",
+          "sha256": "dd2bd7328a203f9b97c4c5c7b0027ba72ed2551dd4d19cadc59fc6bf72ecddb8"
+        },
+        "after": {
+          "line_start": 37,
+          "line_end": 44,
+          "text": "                                             wave guides [4], visible light reflected from mirrors [5],          Here we consider the circle billiard, which is integrable\n                                             phonons in quartz blocks [6], electrons in semiconduc-           due to angular momentum conservation. Some three di-\n                                             tors confined by electric potentials [7, 8], and atoms in-       mensional cases, namely the cylinder and sphere, can be\n                                             teracting with laser beams [9, 10, 11]. Experiments em-          treated analogously. The circle billiard of unit radius\n                                             ploy both two and three [12] dimensional geometries,             has collisions defined by the angle around the circum-\n                                             and both closed and open systems. For instance, es-              ference β ∈ (−π, π] and the angle between the outward\n                                             cape of cold atoms from a laser trap with a hole was             trajectory and the normal ψ ∈ (−π/2, π/2). The billiard\n                                             studied in [9, 10]. Closed systems exhibit energy level          map is then (β, ψ) → (β + π − 2ψ, ψ) where angles are\n",
+          "sha256": "722db262e84efdb3bc61c0fae42191664486cc9fa3679e662c88fc8c8f45c385"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Physical motivation and circle-billiard model",
+            "line_end": 67,
+            "line_start": 27,
+            "mathematical_role": "Contrasts integrable and chaotic escape laws, defines the circle map, distinguishes periodic from equidistributed trajectories, and specifies invariant measure, holes, and escape time."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 36,
+          "line_start": 27,
+          "title": "Escape-law contrast and the short-time masking confound",
+          "unit_id": "openalex_w1992958894_u002",
+          "unit_type": "method-comparison",
+          "why_material": "The source contrasts power-law survival in an integrable billiard with exponential survival in a strongly chaotic one and warns that a transient exponential contribution can mask the integrable asymptotic in simulations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The coefficient called an escape rate here is the coefficient of the long-time power law, not an exponential decay constant.",
+          "representation_dependency": "Low for the prose; left- and right-column sentences are interleaved on each normalized line.",
+          "unit_id": "openalex_w1992958894_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 22,
+            "line_start": 11,
+            "title": "One-versus-two-hole escape as a probe of internal dynamics",
+            "unit_id": "openalex_w1992958894_u001",
+            "unit_type": "motivation",
+            "why_material": "The abstract proposes a directly comparable experimental observable whose exact circle-billiard formulas are sums over zeta zeros, establishing the paper's bridge from escape dynamics to RH."
+          },
+          {
+            "line_end": 67,
+            "line_start": 37,
+            "title": "Circle map, orbit dichotomy, invariant measure, and hole observable",
+            "unit_id": "openalex_w1992958894_u003",
+            "unit_type": "construction",
+            "why_material": "The unit-radius circle map preserves the collision angle, rational angle choices give equally spaced periodic collisions, irrational choices are uniformly distributed around the boundary, and holes convert these dynamics into a survival-time observable under an invariant boundary measure."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 24,
+              "line_start": 11,
+              "reason": "Abstract and classification metadata frame the experimental-to-zeta objective; the mathematical program is retained as unit u001."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u002",
+          "spontaneous_reading": "The key obstruction is scale separation: integrable escape has a long-time power-law tail, but a short-time exponential contribution can hide it, making finite simulations misidentify both the decay type and its coefficient."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u002",
+          "source_grounded_mathematics": "The source contrasts power-law survival at long times for an integrable billiard with exponential decay for a strongly chaotic billiard, and notes that the coefficient of the integrable power law had not been computed exactly there. It warns that a transient exponential term may mask the power law numerically.",
+          "conceptual_reading": "Decay form is a dynamical classifier only after the correct asymptotic regime is isolated; fitting the transient can erase the structural distinction between integrable and chaotic motion.",
+          "representation_or_bridge": "The survival curve compresses underlying dynamics into a time-dependent observable, with its asymptotic exponent and coefficient carrying different information.",
+          "boundary_or_failure": "A numerical exponential fit at short times does not refute an eventual power law, and the word 'escape rate' here denotes the coefficient of the power-law tail rather than an exponential rate constant.",
+          "uncertainty": "The prose comparison is clear, but the two-column extraction interleaves motivation and decay discussion and supplies no quantitative crossover criterion."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two holes are boundary intervals beginning at 0 and theta; theta=0 is the one-hole case, and continuous escape time is collision count times the free-flight time.",
+      "line_end": 67,
+      "line_start": 37,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the prose is clear, but beta, psi, interval endpoints, and the map are formula-bearing and should be checked against the retained PDF before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unit-radius circle map preserves the collision angle, rational angle choices give equally spaced periodic collisions, irrational choices are uniformly distributed around the boundary, and holes convert these dynamics into a survival-time observable under an invariant boundary measure.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Circle map, orbit dichotomy, invariant measure, and hole observable",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u003.txt",
+      "unit_bytes": 4959,
+      "unit_id": "openalex_w1992958894_u003",
+      "unit_sha256": "9b1ca19e554182cc8574f16f234498de60f58f143901876ba397ce5f33e2e16c",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u003.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 29,
+          "line_end": 36,
+          "text": "                                             close connections between rigorous mathematics and ex-           hibit power law decay, in contrast to exponential decay\n                                             perimental physics. Very general physical situations, in         from strongly chaotic billiards [19], however the coeffi-\n                                             which particles or waves are confined to cavities or other       cient of the power (“escape rate”) in the integrable case\n                                             homogeneous regions, are related to well understood              has not been computed exactly to our knowledge. Nu-\n                                             billiard dynamical systems, directly for particles and           merical simulations can lead not only to uncertainty in\n                                             via semiclassical (short wavelength) theories for waves.         the coefficient, but also misleading conclusions, for ex-\n                                             Precise billiard experiments have used microwaves in             ample the power law decay of an integrable billiard can\n                                             metal [1, 2] and superconducting [3] cavities and with           be masked by an exponential term at short times.\n",
+          "sha256": "75bc5ca8b0588dc2186283f6f6d9dd5a9c28275d5493d81c062ec19df5cba8f5"
+        },
+        "after": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "\n<!-- source-page: 2 -->\n\n2\n\n                                                                                x2 x > 0\n                                                                            \u001a\n                                                                  g(x) =                                                 (2)\n",
+          "sha256": "68e3c03eb42597961beca1c3a27af04ef232fd6bb711bdd6b3d4de6b83bd8f26"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Physical motivation and circle-billiard model",
+            "line_end": 67,
+            "line_start": 27,
+            "mathematical_role": "Contrasts integrable and chaotic escape laws, defines the circle map, distinguishes periodic from equidistributed trajectories, and specifies invariant measure, holes, and escape time."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 67,
+          "line_start": 37,
+          "title": "Circle map, orbit dichotomy, invariant measure, and hole observable",
+          "unit_id": "openalex_w1992958894_u003",
+          "unit_type": "construction",
+          "why_material": "The unit-radius circle map preserves the collision angle, rational angle choices give equally spaced periodic collisions, irrational choices are uniformly distributed around the boundary, and holes convert these dynamics into a survival-time observable under an invariant boundary measure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two holes are boundary intervals beginning at 0 and theta; theta=0 is the one-hole case, and continuous escape time is collision count times the free-flight time.",
+          "representation_dependency": "Medium: the prose is clear, but beta, psi, interval endpoints, and the map are formula-bearing and should be checked against the retained PDF before exact reuse.",
+          "unit_id": "openalex_w1992958894_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 36,
+            "line_start": 27,
+            "title": "Escape-law contrast and the short-time masking confound",
+            "unit_id": "openalex_w1992958894_u002",
+            "unit_type": "method-comparison",
+            "why_material": "The source contrasts power-law survival in an integrable billiard with exponential survival in a strongly chaotic one and warns that a transient exponential contribution can mask the integrable asymptotic in simulations."
+          },
+          {
+            "line_end": 104,
+            "line_start": 73,
+            "title": "Ramanujan compression of the periodic-orbit escape sum",
+            "unit_id": "openalex_w1992958894_u004",
+            "unit_type": "representation-change",
+            "why_material": "After defining the positive-part square function, the source rewrites trigonometric orbit contributions as exponentials and applies the Ramanujan identity, replacing a sum over coprime phases by Möbius and totient weights in the long-time coefficient."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 72,
+              "line_start": 68,
+              "reason": "Page break, source-page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u003",
+          "spontaneous_reading": "Conservation of the collision angle reduces the circular billiard to rigid rotation of the boundary coordinate. Rational rotations close into equally spaced periodic orbits, irrational rotations equidistribute, and adding boundary intervals converts this arithmetic dichotomy into an escape-time observable."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u003",
+          "source_grounded_mathematics": "For the unit circle the collision map is (beta, psi) mapped to (beta + pi - 2 psi, psi), with free-flight time 2 cos(psi). Values psi = pi/2 - m pi/n for coprime m<n yield period-n orbits with boundary collisions spaced by 2 pi/n, while irrational multiples give uniform distribution in beta. The invariant boundary measure is cos(psi) d beta d psi/(4 pi), and holes occupy [0,epsilon] and [theta,theta+epsilon], with theta=0 giving one hole.",
+          "conceptual_reading": "The conserved angle fibers phase space into rotations, so a geometric dynamics problem becomes arithmetic classification by rationality. Opening the boundary tests how each rotation class intersects forbidden intervals.",
+          "representation_or_bridge": "The circle map is the bridge from billiard trajectories to rotations on a circle; the invariant measure then turns orbit interception into a survival probability, while collision count is converted to physical time by the free-flight factor.",
+          "boundary_or_failure": "Equidistribution describes irrational trajectories but does not by itself give a finite-time escape law. Overlapping holes and the conversion from discrete collisions to continuous time must also be handled.",
+          "uncertainty": "The mechanism is well supported, but exact reuse of symbols, interval endpoints, and normalization should account for formula risk in the extracted two-column text."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The relevant periods are restricted by the hole width, and the result is the finite coefficient denoted P-infinity in equation (4).",
+      "line_end": 104,
+      "line_start": 73,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the prose securely supports the Ramanujan-to-Möbius mechanism, but the displayed definition and equation (4) are column-interleaved and require scan verification for exact constants and arguments.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After defining the positive-part square function, the source rewrites trigonometric orbit contributions as exponentials and applies the Ramanujan identity, replacing a sum over coprime phases by Möbius and totient weights in the long-time coefficient.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ramanujan compression of the periodic-orbit escape sum",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u004.txt",
+      "unit_bytes": 3135,
+      "unit_id": "openalex_w1992958894_u004",
+      "unit_sha256": "2280412f1279adaa74b841d233faa94fec564994ce541d982e9a815f4fdffecc",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u004.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "                                             most famous unsolved mathematical problem, the Rie-              number of collisions to escape is some function N (β0 , ψ0 )\n                                             mann Hypothesis.                                                 (possibly infinite) of the initial conditions and the time\n                                                                                                              to escape is t = N T = 2 cos ψN (β0 , ψ0 ). Considering\n\n<!-- source-page: 2 -->\n\n2\n\n",
+          "sha256": "c76f4de24ab8353f3b362fb5d5454135fbd90f4293be983e4b3b488350b5b697"
+        },
+        "after": {
+          "line_start": 105,
+          "line_end": 112,
+          "text": "   From above, the only trajectories which do not escape          Here φ(n) is the Euler totient function, giving the number\nare some of the periodic orbits with period n < 2π/ǫ.             of positive integers m ≤ n with gcd(m, n) = 1. Conven-\nFor an arbitrary aperiodic (finite time) orbit we define          tionally φ(1) = 1. Of course P∞ depends on both ǫ and\nthe period n to be the smallest positive integer for which        θ, but this is suppressed for brevity.\n|φn − φ0 | ≤ ǫ. For the largest possible value of n <                P∞ is a finite sum, piecewise smooth when considered\n2π/ǫ, the n + 1 points φ0 , φ1 , . . . φn automatically have      as a function of ǫ and/or θ with the number of terms\na minimum distance ≤ ǫ on the circle, so the inequality           unbounded in the limit of small ǫ. For small holes we\nis satisfied by this definition. In units of n collisions, the    can extract the asymptotic\n",
+          "sha256": "e63a79a619a4e1623257707302c4933b3033864999e1770d0821c51b4873a03e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Periodic-orbit survival and Mellin representation",
+            "line_end": 155,
+            "line_start": 68,
+            "mathematical_role": "Identifies near-periodic trajectories as the long-time survivors, integrates their phase-space neighborhoods, compresses the orbit sum with the Ramanujan identity, and introduces Mellin inversion for small-hole asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 104,
+          "line_start": 73,
+          "title": "Ramanujan compression of the periodic-orbit escape sum",
+          "unit_id": "openalex_w1992958894_u004",
+          "unit_type": "representation-change",
+          "why_material": "After defining the positive-part square function, the source rewrites trigonometric orbit contributions as exponentials and applies the Ramanujan identity, replacing a sum over coprime phases by Möbius and totient weights in the long-time coefficient."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The relevant periods are restricted by the hole width, and the result is the finite coefficient denoted P-infinity in equation (4).",
+          "representation_dependency": "High: the prose securely supports the Ramanujan-to-Möbius mechanism, but the displayed definition and equation (4) are column-interleaved and require scan verification for exact constants and arguments.",
+          "unit_id": "openalex_w1992958894_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 37,
+            "title": "Circle map, orbit dichotomy, invariant measure, and hole observable",
+            "unit_id": "openalex_w1992958894_u003",
+            "unit_type": "construction",
+            "why_material": "The unit-radius circle map preserves the collision angle, rational angle choices give equally spaced periodic collisions, irrational choices are uniformly distributed around the boundary, and holes convert these dynamics into a survival-time observable under an invariant boundary measure."
+          },
+          {
+            "line_end": 155,
+            "line_start": 95,
+            "title": "Near-periodic trajectories control long-time survival",
+            "unit_id": "openalex_w1992958894_u005",
+            "unit_type": "proof-fragment",
+            "why_material": "The source argues that exact non-escape is confined to certain short periodic orbits and that very long finite survival comes from slow precession near them; it parameterizes the angular deviation, describes the surviving boundary intervals, and integrates their invariant measure to obtain the leading 1/t contribution."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 72,
+              "line_start": 68,
+              "reason": "Page break, source-page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u004",
+          "spontaneous_reading": "A sum over coprime periodic-orbit phases is compressed by expanding trigonometric terms into exponentials and applying a Ramanujan sum identity. The many orbit representatives then collapse into arithmetic weights involving the Möbius and Euler totient functions."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u004",
+          "source_grounded_mathematics": "The calculation restricts coprime orbit labels to periods below 2 pi/epsilon, rewrites sine contributions using exponentials, and invokes the Ramanujan identity summing exp(2 pi i m/n) over reduced residues to obtain mu(n). The resulting long-time coefficient P_infinity is presented as a finite period sum weighted by n(phi(n)-mu(n)) and positive-part functions encoding hole placement.",
+          "conceptual_reading": "Character-like cancellation removes explicit enumeration of coprime phases while preserving precisely the arithmetic information relevant to the orbit family. This is a genuine compression from geometric orbit representatives to multiplicative weights.",
+          "representation_or_bridge": "Ramanujan sums bridge the Fourier representation of angular orbit contributions to Möbius and totient data in the escape coefficient.",
+          "boundary_or_failure": "The extraction interleaves columns and damages the definition of the positive-part function and equation (4); exact prefactors, arguments, and constants cannot be certified from this text alone.",
+          "uncertainty": "High for the exact displayed formula, low for the stated exponential-sum-to-Möbius mechanism and the finite-period restriction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The normalized span also contains the parallel right-column arithmetic derivation; the trajectory argument is read down the left column and culminates in the displayed asymptotic near lines 150-154.",
+      "line_end": 155,
+      "line_start": 95,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the geometric mechanism is prose-recoverable, while the interval formula, modular notation, and final normalization are damaged by two-column extraction and need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source argues that exact non-escape is confined to certain short periodic orbits and that very long finite survival comes from slow precession near them; it parameterizes the angular deviation, describes the surviving boundary intervals, and integrates their invariant measure to obtain the leading 1/t contribution.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-periodic trajectories control long-time survival",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u005.txt",
+      "unit_bytes": 5951,
+      "unit_id": "openalex_w1992958894_u005",
+      "unit_sha256": "d5c50c0525615f86fe1a590d4586aacb3471ddc24d81b77d346ad50df9f31af4",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u005.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 87,
+          "line_end": 94,
+          "text": "                                                                                               e2πim/n = µ(n)            (3)\n                                                                                     m=0\n                                                                                  gcd(m,n)=1\n\n                                                                  where µ is the Möbius function, defined by µ(1) =\n              FIG. 1: Geometry of the billiard.\n                                                                  1, µ(p) = −1 for primes p, µ(mn) = µ(m)µ(n) if\n                                                                  gcd(m, n) = 1, otherwise µ(mn) = 0. The result is\n",
+          "sha256": "53234f9d635152bb676714bc3626a0dc6cd85bf7f29756539fa0eeb24c0bebe5"
+        },
+        "after": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "<!-- source-page: 3 -->\n\n3\n\n  Let us consider the required sum\n                                                                                 20\n                           X            φ(n) − µ(n)\n                                                                       (6)\n",
+          "sha256": "1fcaab1579aa7ce662db053e2d353f50f334564efbed52366de4b8723efacb8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Periodic-orbit survival and Mellin representation",
+            "line_end": 155,
+            "line_start": 68,
+            "mathematical_role": "Identifies near-periodic trajectories as the long-time survivors, integrates their phase-space neighborhoods, compresses the orbit sum with the Ramanujan identity, and introduces Mellin inversion for small-hole asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 155,
+          "line_start": 95,
+          "title": "Near-periodic trajectories control long-time survival",
+          "unit_id": "openalex_w1992958894_u005",
+          "unit_type": "proof-fragment",
+          "why_material": "The source argues that exact non-escape is confined to certain short periodic orbits and that very long finite survival comes from slow precession near them; it parameterizes the angular deviation, describes the surviving boundary intervals, and integrates their invariant measure to obtain the leading 1/t contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The normalized span also contains the parallel right-column arithmetic derivation; the trajectory argument is read down the left column and culminates in the displayed asymptotic near lines 150-154.",
+          "representation_dependency": "High: the geometric mechanism is prose-recoverable, while the interval formula, modular notation, and final normalization are damaged by two-column extraction and need scan verification.",
+          "unit_id": "openalex_w1992958894_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 104,
+            "line_start": 73,
+            "title": "Ramanujan compression of the periodic-orbit escape sum",
+            "unit_id": "openalex_w1992958894_u004",
+            "unit_type": "representation-change",
+            "why_material": "After defining the positive-part square function, the source rewrites trigonometric orbit contributions as exponentials and applies the Ramanujan identity, replacing a sum over coprime phases by Möbius and totient weights in the long-time coefficient."
+          },
+          {
+            "line_end": 155,
+            "line_start": 105,
+            "title": "Mellin inversion converts small-hole behavior into a residue problem",
+            "unit_id": "openalex_w1992958894_u006",
+            "unit_type": "representation-change",
+            "why_material": "The finite, piecewise-smooth long-time coefficient is Mellin transformed in hole width, the orbit sum is interchanged with the integral in a convergence half-plane, and inverse Mellin integration makes the small-hole expansion a sum of residues."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 159,
+              "line_start": 156,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u005",
+          "spontaneous_reading": "Long survival is localized near short periodic rotations: a small angular deviation produces slow precession, and the measure of initial conditions whose drift has not yet crossed either hole shrinks like 1/t. Integrating these narrow survivor strips around all relevant periodic families produces the tail coefficient."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u005",
+          "source_grounded_mathematics": "The source says only some periodic orbits with n<2 pi/epsilon never escape and that, at large finite times, survivors lie near them. Writing psi=psi_mn+eta makes the reduced boundary coordinate drift by -2 eta per collision. The admissible beta intervals before a hole is reached are integrated with the invariant cos(psi) weight and a factor for equivalence modulo 2 pi/n, yielding a sum with P(t) asymptotic to a coefficient times 1/t.",
+          "conceptual_reading": "Near-periodic orbit neighborhoods are the useful intermediate objects: exact periodicity explains permanent survival, while the thickness of slowly drifting neighborhoods controls the asymptotic measure of long-lived but escaping trajectories.",
+          "representation_or_bridge": "Local coordinates (periodic label m,n, phase beta modulo 2 pi/n, and detuning eta) bridge phase-space geometry to an arithmetic sum over periods.",
+          "boundary_or_failure": "The unit mixes the geometric argument with a parallel Mellin discussion, and its interval union, modular notation, and normalization are extraction-damaged. Approximating cos(psi) near an orbit also discards faster-decaying time terms.",
+          "uncertainty": "The slow-precession mechanism and 1/t conclusion are clear; exact survivor intervals and coefficients require page-image verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The fractional-part weights depend on theta; the closing lines introduce rational theta=2pi r/q as the case where those weights become residue-class data.",
+      "line_end": 155,
+      "line_start": 105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the transform-and-residue strategy is explicit in prose, but equations (4)-(5), powers, and prefactors should be verified from the retained page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite, piecewise-smooth long-time coefficient is Mellin transformed in hole width, the orbit sum is interchanged with the integral in a convergence half-plane, and inverse Mellin integration makes the small-hole expansion a sum of residues.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin inversion converts small-hole behavior into a residue problem",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u006.txt",
+      "unit_bytes": 4949,
+      "unit_id": "openalex_w1992958894_u006",
+      "unit_sha256": "d4e2efc205b0d7163f5b1a023f9b4e03e226a270d81d913aebaae7057e36d9f4",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u006.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "                                                                        P∞ ≡ lim tP (t) =            n(φ(n) − µ(n))\nof 2; only the discrete time calculation will be required                         t→∞         8π n=1\nfor the leading (in time) behavior of escape, that is, the                          \u0014 \u0012\n                                                                                        2π\n                                                                                                   \u0013            \u0015\ncoefficient of 1/t for the density remaining at time t. The                       × g      − θ′ − ǫ + g (θ′ − ǫ)         (4)\n                                                                                         n\ngeometry of the billiard is shown in Fig. 1.\n",
+          "sha256": "4f86f3da95ea5589dceca3e3cc494f41c46992f77a5f07f5ba39df07b20fbf87"
+        },
+        "after": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "<!-- source-page: 3 -->\n\n3\n\n  Let us consider the required sum\n                                                                                 20\n                           X            φ(n) − µ(n)\n                                                                       (6)\n",
+          "sha256": "1fcaab1579aa7ce662db053e2d353f50f334564efbed52366de4b8723efacb8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Periodic-orbit survival and Mellin representation",
+            "line_end": 155,
+            "line_start": 68,
+            "mathematical_role": "Identifies near-periodic trajectories as the long-time survivors, integrates their phase-space neighborhoods, compresses the orbit sum with the Ramanujan identity, and introduces Mellin inversion for small-hole asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 155,
+          "line_start": 105,
+          "title": "Mellin inversion converts small-hole behavior into a residue problem",
+          "unit_id": "openalex_w1992958894_u006",
+          "unit_type": "representation-change",
+          "why_material": "The finite, piecewise-smooth long-time coefficient is Mellin transformed in hole width, the orbit sum is interchanged with the integral in a convergence half-plane, and inverse Mellin integration makes the small-hole expansion a sum of residues."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The fractional-part weights depend on theta; the closing lines introduce rational theta=2pi r/q as the case where those weights become residue-class data.",
+          "representation_dependency": "High: the transform-and-residue strategy is explicit in prose, but equations (4)-(5), powers, and prefactors should be verified from the retained page image.",
+          "unit_id": "openalex_w1992958894_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 155,
+            "line_start": 95,
+            "title": "Near-periodic trajectories control long-time survival",
+            "unit_id": "openalex_w1992958894_u005",
+            "unit_type": "proof-fragment",
+            "why_material": "The source argues that exact non-escape is confined to certain short periodic orbits and that very long finite survival comes from slow precession near them; it parameterizes the angular deviation, describes the surviving boundary intervals, and integrates their invariant measure to obtain the leading 1/t contribution."
+          },
+          {
+            "line_end": 193,
+            "line_start": 147,
+            "title": "Rational hole separation becomes residue-class harmonic analysis",
+            "unit_id": "openalex_w1992958894_u007",
+            "unit_type": "representation-change",
+            "why_material": "For rational theta, the orbit-period sum splits by congruence classes modulo q; dividing by the class gcd produces coprime reduced data, and Dirichlet-character orthogonality acts as the projector selecting a residue class."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 159,
+              "line_start": 156,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u006",
+          "spontaneous_reading": "Mellin transformation changes a small-hole asymptotic question into a singularity-location problem: powers of the hole width become poles, so moving the inverse contour left organizes the expansion by residues rather than by directly expanding a growing, piecewise-smooth finite orbit sum."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u006",
+          "source_grounded_mathematics": "The finite coefficient P_infinity(epsilon,theta) vanishes for epsilon>pi and has increasingly many terms as epsilon shrinks. The source defines its Mellin transform in epsilon, inverts it on a vertical line to the right of all poles, and, in a convergence region, interchanges the period sum with the epsilon integral. Fractional-part weights f(n theta/(2 pi)) remain in the resulting integrand, and rational theta is then introduced as the case where they depend only on residue class.",
+          "conceptual_reading": "The transform trades nonsmooth dependence and a moving summation cutoff for meromorphic structure. Residues provide a hierarchy of asymptotic contributions, while rationality of the separation determines whether the remaining weights admit finite arithmetic decomposition.",
+          "representation_or_bridge": "Mellin inversion bridges hole-size scaling to complex poles; fractional parts bridge geometric separation to arithmetic data indexed by n.",
+          "boundary_or_failure": "Contour shifting requires convergence, analytic continuation, and control of added arcs, not merely a formal inverse transform. The extracted equations do not safely preserve powers or prefactors.",
+          "uncertainty": "Low uncertainty about the transform strategy and rational-angle transition; high uncertainty about the exact integrand normalization because of interleaved formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definitions of reduced a-prime and q-prime and the character convention that vanishes off the units modulo q-prime are part of the required setup.",
+      "line_end": 193,
+      "line_start": 147,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium-high: the group and orthogonality prose is clear, but primes, congruences, and the displayed delta identity need scan verification because columns and symbols are interleaved.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For rational theta, the orbit-period sum splits by congruence classes modulo q; dividing by the class gcd produces coprime reduced data, and Dirichlet-character orthogonality acts as the projector selecting a residue class.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rational hole separation becomes residue-class harmonic analysis",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u007.txt",
+      "unit_bytes": 3658,
+      "unit_id": "openalex_w1992958894_u007",
+      "unit_sha256": "2112d053b51f88adf1c401e3263ce255ce1587add5c3963235827ad8365a2474",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u007.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 139,
+          "line_end": 146,
+          "text": "                  ηt                           ηt       2π                   1\n   β0′ ∈ ǫ +            , θ′      θ′ + ǫ +            ,            P∞ =\n               cos ψm,n                     cos ψm,n n                      2πi c−i∞ 2s(s + 1)(s + 2) n=1  ns+1\n                                                            (1)               (\u0014     \u0012 \u0013\u0015s+2        \u0012 \u0013s+2 )\nfor η > 0 and similar expressions for η < 0. Integrat-                                nθ              nθ\n                                                                            × 1−f              +f               (5)\ning over this region, including the cos ψ weighting for the                           2π              2π\ninvariant measure and a factor n to account for the equiv-\n",
+          "sha256": "3c0e114c870fca0f3357d23ea3cd1d216eeeaf88c9e53fe16abaae4dd4172f19"
+        },
+        "after": {
+          "line_start": 194,
+          "line_end": 201,
+          "text": "   Inserting the orthogonality relation into the sum al-                     thus\nlows n′ to be summed over Q all integers and decomposed                                                       Y\ninto prime factors n′ = p pαp ,                                                               L(s, 1) = ζ(s) (1 − p−s )                (13)\n                                                                                                                 p|q′\n         X           φ(n) − µ(n)\n                        ns+1                                                 Our first main result is the exact expression for the prob-\n   n≡a     (mod q)\n                                                                             ability P (t) of remaining in the unit circular billiard with\n",
+          "sha256": "13ee7d01da339ee55a2a3fed2c522dfb7e7342bb73d2b0e1aa7c769cbd55521f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Periodic-orbit survival and Mellin representation",
+            "line_end": 155,
+            "line_start": 68,
+            "mathematical_role": "Identifies near-periodic trajectories as the long-time survivors, integrates their phase-space neighborhoods, compresses the orbit sum with the Ramanujan identity, and introduces Mellin inversion for small-hole asymptotics."
+          },
+          {
+            "label": "Rational separation and character reduction",
+            "line_end": 253,
+            "line_start": 156,
+            "mathematical_role": "Splits orbit periods into residue classes, uses Dirichlet-character orthogonality and Euler products, and obtains the rational two-hole Mellin integrand in terms of L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 193,
+          "line_start": 147,
+          "title": "Rational hole separation becomes residue-class harmonic analysis",
+          "unit_id": "openalex_w1992958894_u007",
+          "unit_type": "representation-change",
+          "why_material": "For rational theta, the orbit-period sum splits by congruence classes modulo q; dividing by the class gcd produces coprime reduced data, and Dirichlet-character orthogonality acts as the projector selecting a residue class."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definitions of reduced a-prime and q-prime and the character convention that vanishes off the units modulo q-prime are part of the required setup.",
+          "representation_dependency": "Medium-high: the group and orthogonality prose is clear, but primes, congruences, and the displayed delta identity need scan verification because columns and symbols are interleaved.",
+          "unit_id": "openalex_w1992958894_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 155,
+            "line_start": 105,
+            "title": "Mellin inversion converts small-hole behavior into a residue problem",
+            "unit_id": "openalex_w1992958894_u006",
+            "unit_type": "representation-change",
+            "why_material": "The finite, piecewise-smooth long-time coefficient is Mellin transformed in hole width, the orbit sum is interchanged with the integral in a convergence half-plane, and inverse Mellin integration makes the small-hole expansion a sum of residues."
+          },
+          {
+            "line_end": 253,
+            "line_start": 194,
+            "title": "Euler products turn the congruence sum into Dirichlet L-function ratios",
+            "unit_id": "openalex_w1992958894_u008",
+            "unit_type": "derivation",
+            "why_material": "Inserting character orthogonality permits a sum over all integers; prime factorization then separates the totient and Möbius contributions into Euler factors, yielding a character sum involving L(s,chi) over L(s+1,chi). The trivial character recovers zeta with factors at primes dividing the modulus removed."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          },
+          {
+            "claim": "Rational separation supports finite residue-class decomposition and Dirichlet-character analysis, whereas irrational separation is treated only at leading order through equidistribution and mean values after the source says the analytic continuation route breaks down.",
+            "limit": "The proposed density of critical-line poles in the irrational case is explicitly speculative, and the mean-field calculation does not recover the full correction structure.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u011",
+              "openalex_w1992958894_u012"
+            ],
+            "title": "Rational and irrational separations require different arithmetic representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 159,
+              "line_start": 156,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u007",
+          "spontaneous_reading": "Rational hole separation makes the fractional-part weights periodic in the orbit period. Splitting periods modulo q, reducing each class by its gcd with q, and applying Dirichlet-character orthogonality turns a congruence restriction into a finite harmonic projector."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u007",
+          "source_grounded_mathematics": "For theta=2 pi r/q with gcd(r,q)=1, the required period sum splits into classes n congruent to a modulo q. With b=gcd(a,q), the source sets n'=n/b, a'=a/b, and q'=q/b, so a' is coprime to q'. Dirichlet characters modulo q' are extended by zero off the units, and their orthogonality relation represents the residue-class delta.",
+          "conceptual_reading": "The gcd reduction isolates the invertible residue data needed for group characters. Orthogonality then replaces a hard congruence constraint by a superposition of multiplicative modes that can be factored prime by prime.",
+          "representation_or_bridge": "Dirichlet characters are the bridge from additive residue-class selection to multiplicative harmonic analysis and ultimately to L-functions.",
+          "boundary_or_failure": "The finite character projector applies because theta is rational and the weights are residue-class data; it does not extend directly to irrational separation. Formula symbols and congruences are partially interleaved with a figure.",
+          "uncertainty": "The algebraic setup is clear in prose, though the exact normalization of the displayed orthogonality identity should be checked against the original page for symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit supplies the arithmetic engine used in the exact rational two-hole Mellin formula.",
+      "line_end": 253,
+      "line_start": 194,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: prose supports the factorization and L-function relationship, but equations (9)-(13) are visibly fragmented; exact Euler factors, powers, and normalizations must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inserting character orthogonality permits a sum over all integers; prime factorization then separates the totient and Möbius contributions into Euler factors, yielding a character sum involving L(s,chi) over L(s+1,chi). The trivial character recovers zeta with factors at primes dividing the modulus removed.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler products turn the congruence sum into Dirichlet L-function ratios",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u008.txt",
+      "unit_bytes": 5648,
+      "unit_id": "openalex_w1992958894_u008",
+      "unit_sha256": "c02dfc1c6798078b091d75e16f3ad37766bd21e1918c78004ddf9c1e9b671e1d",
+      "unit_type": "derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u008.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 186,
+          "line_end": 193,
+          "text": "   A central result in representation theory is the orthog-                  Eq. 5 is given.\nonality theorem, here [21]\n                     1 X                                                     is the Dirichlet L function, which in the case q ′ = 1 (ie\n                             χ̄(a′ )χ(n′ ) = δa′ ,n′                   (8)\n                   φ(q ′ ) χ                                                 χ(n) = 1 for all n) reduces to the Riemann zeta function.\n                                                                             For each q ′ there is a trivial character for which χ(a′ ) = 1\nwhere δa′ ,n′ = 1 if a′ ≡ n′ (mod q ′ ), zero otherwise, and                 for all a′ coprime to q ′ ; this gives the same product as\nthe bar indicates complex conjugation.                                       the Riemann zeta function, excluding primes dividing q ′ ,\n",
+          "sha256": "8630fb21234f0e11eef8bf2d2ef1085be6f0cb0b05f53c7176da00d467f8437d"
+        },
+        "after": {
+          "line_start": 254,
+          "line_end": 261,
+          "text": "<!-- source-page: 4 -->\n\n4\n\n          q                       P̃ (s)(q/2π)s+1                               shown to be equivalent using the functional equation [22]\n                                   ζ(s)−1\n          1                  2s(s+1)(s+2)ζ(s+1)\n                                                                                relating ζ(s) and ζ(1 − s). Thus this celebrated unsolved\n",
+          "sha256": "6c39f94cc8b25ee828c85b6fc851814a59ef064b3d7f4357f6036b556a52174f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rational separation and character reduction",
+            "line_end": 253,
+            "line_start": 156,
+            "mathematical_role": "Splits orbit periods into residue classes, uses Dirichlet-character orthogonality and Euler products, and obtains the rational two-hole Mellin integrand in terms of L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 253,
+          "line_start": 194,
+          "title": "Euler products turn the congruence sum into Dirichlet L-function ratios",
+          "unit_id": "openalex_w1992958894_u008",
+          "unit_type": "derivation",
+          "why_material": "Inserting character orthogonality permits a sum over all integers; prime factorization then separates the totient and Möbius contributions into Euler factors, yielding a character sum involving L(s,chi) over L(s+1,chi). The trivial character recovers zeta with factors at primes dividing the modulus removed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit supplies the arithmetic engine used in the exact rational two-hole Mellin formula.",
+          "representation_dependency": "High: prose supports the factorization and L-function relationship, but equations (9)-(13) are visibly fragmented; exact Euler factors, powers, and normalizations must be checked against the PDF.",
+          "unit_id": "openalex_w1992958894_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 193,
+            "line_start": 147,
+            "title": "Rational hole separation becomes residue-class harmonic analysis",
+            "unit_id": "openalex_w1992958894_u007",
+            "unit_type": "representation-change",
+            "why_material": "For rational theta, the orbit-period sum splits by congruence classes modulo q; dividing by the class gcd produces coprime reduced data, and Dirichlet-character orthogonality acts as the projector selecting a residue class."
+          },
+          {
+            "line_end": 247,
+            "line_start": 199,
+            "title": "Exact rational two-hole escape as residues of an L-function integrand",
+            "unit_id": "openalex_w1992958894_u009",
+            "unit_type": "theorem-plus-method",
+            "why_material": "The first main result expresses the long-time two-hole survival coefficient as residues of a Mellin integrand assembled from congruence data and Dirichlet L-functions, and justifies shifting the contour left by controlling large negative real and imaginary parts."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 257,
+              "line_start": 254,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u008",
+          "spontaneous_reading": "Once character orthogonality removes the congruence restriction, prime factorization makes the totient and Möbius pieces separable. Their Euler factors recombine into a ratio built from L(s,chi) and L(s+1,chi), exposing the singularities that govern escape asymptotics."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u008",
+          "source_grounded_mathematics": "The source inserts the character projector, sums n' over all positive integers, and factors n' into primes. It handles the totient contribution with geometric series and the Möbius restriction with squarefree local choices, obtaining a character sum whose displayed core contains (phi(b)L(s,chi)-mu(b))/L(s+1,chi) with corrections from primes dividing b. For the trivial character, L(s,1) is zeta(s) with Euler factors at primes dividing q' removed.",
+          "conceptual_reading": "Multiplicativity is the decisive simplifier: local prime data replaces a globally constrained period sum. The denominator shifts attention from the original orbit enumeration to zeros of L-functions as potential poles of the Mellin integrand.",
+          "representation_or_bridge": "Euler products bridge arithmetic functions on orbit periods to Dirichlet L-functions; the trivial character recovers the zeta sector while nontrivial characters retain residue-class information.",
+          "boundary_or_failure": "Equations (9)-(13) are fragmented by two-column extraction, so exact Euler factors, exponents, and exceptional-prime terms should not be reconstructed from this unit alone.",
+          "uncertainty": "High for exact displayed identities, but low for the supported factorization mechanism and the emergence of the L(s,chi)/L(s+1,chi) structure."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Here theta=2pi r/q, with b, a-prime, and q-prime defined by gcd reduction; poles arise through the displayed formula (14), including its L(s+1,chi) denominator.",
+      "line_end": 247,
+      "line_start": 199,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the theorem's conceptual content and contour conditions are recoverable from prose, but the exact residue formula is split across columns and must be scan-verified before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first main result expresses the long-time two-hole survival coefficient as residues of a Mellin integrand assembled from congruence data and Dirichlet L-functions, and justifies shifting the contour left by controlling large negative real and imaginary parts.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact rational two-hole escape as residues of an L-function integrand",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u009.txt",
+      "unit_bytes": 4716,
+      "unit_id": "openalex_w1992958894_u009",
+      "unit_sha256": "10e4633b66e6f94d2e2df6303c12747a1c3f7bc17f593066df89bac2ce051124",
+      "unit_type": "theorem-plus-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u009.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "                                                                             For each q ′ there is a trivial character for which χ(a′ ) = 1\nwhere δa′ ,n′ = 1 if a′ ≡ n′ (mod q ′ ), zero otherwise, and                 for all a′ coprime to q ′ ; this gives the same product as\nthe bar indicates complex conjugation.                                       the Riemann zeta function, excluding primes dividing q ′ ,\n   Inserting the orthogonality relation into the sum al-                     thus\nlows n′ to be summed over Q all integers and decomposed                                                       Y\ninto prime factors n′ = p pαp ,                                                               L(s, 1) = ζ(s) (1 − p−s )                (13)\n                                                                                                                 p|q′\n         X           φ(n) − µ(n)\n",
+          "sha256": "68f206c96395f487e5cf382a88b56571872bb3d31cda269cb8b7539d8e3a825b"
+        },
+        "after": {
+          "line_start": 248,
+          "line_end": 255,
+          "text": "                           X χ(n)              Y     χ(p)                       We now consider specific values of q; recall that the\n            L(s, χ) =                      =     (1 − s )             (12)\n                           n=1\n                                   ns          p\n                                                      p                      angle separating the holes is θ = 2πr/q. Thus q = 1 is a\n\n<!-- source-page: 4 -->\n\n",
+          "sha256": "bcc542e5f93d0fed956789a766ffb07ad29cf0510852bb3c1f0725edb06457f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Rational separation and character reduction",
+            "line_end": 253,
+            "line_start": 156,
+            "mathematical_role": "Splits orbit periods into residue classes, uses Dirichlet-character orthogonality and Euler products, and obtains the rational two-hole Mellin integrand in terms of L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 247,
+          "line_start": 199,
+          "title": "Exact rational two-hole escape as residues of an L-function integrand",
+          "unit_id": "openalex_w1992958894_u009",
+          "unit_type": "theorem-plus-method",
+          "why_material": "The first main result expresses the long-time two-hole survival coefficient as residues of a Mellin integrand assembled from congruence data and Dirichlet L-functions, and justifies shifting the contour left by controlling large negative real and imaginary parts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Here theta=2pi r/q, with b, a-prime, and q-prime defined by gcd reduction; poles arise through the displayed formula (14), including its L(s+1,chi) denominator.",
+          "representation_dependency": "High: the theorem's conceptual content and contour conditions are recoverable from prose, but the exact residue formula is split across columns and must be scan-verified before symbolic use.",
+          "unit_id": "openalex_w1992958894_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 253,
+            "line_start": 194,
+            "title": "Euler products turn the congruence sum into Dirichlet L-function ratios",
+            "unit_id": "openalex_w1992958894_u008",
+            "unit_type": "derivation",
+            "why_material": "Inserting character orthogonality permits a sum over all integers; prime factorization then separates the totient and Möbius contributions into Euler factors, yielding a character sum involving L(s,chi) over L(s+1,chi). The trivial character recovers zeta with factors at primes dividing the modulus removed."
+          },
+          {
+            "line_end": 279,
+            "line_start": 258,
+            "title": "RH as a small-hole escape asymptotic",
+            "unit_id": "openalex_w1992958894_u010",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The source states that RH is equivalent to two families of nested limits: one compares one-hole survival with its leading 2/epsilon term, and the other compares one-hole survival with twice the symmetric two-hole survival, with errors tested against every positive delta."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central chain passes from conserved-angle circle dynamics to near-periodic survivor measure, then from a finite arithmetic orbit sum through Mellin inversion and character Euler products to residues governed by Dirichlet L-functions.",
+            "limit": "The extracted displays do not safely preserve every constant or Euler factor, so this synthesis supports the mechanism but requires scan verification for a symbolic reconstruction.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u003",
+              "openalex_w1992958894_u005",
+              "openalex_w1992958894_u006",
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u008",
+              "openalex_w1992958894_u009"
+            ],
+            "title": "From integrable rotations to L-function poles"
+          },
+          {
+            "claim": "Removing the leading geometric hole-size contribution by either subtraction in the one-hole case or comparison with twice the symmetric two-hole case leaves a correction whose stated small-hole bound is equivalent to RH.",
+            "limit": "This is the paper's stated equivalence for its exact escape model; it is not independent evidence that RH is true, and the precise displayed limit must be checked against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u009",
+              "openalex_w1992958894_u010",
+              "openalex_w1992958894_u013"
+            ],
+            "title": "One-hole versus symmetric two-hole cancellation isolates RH-sensitive corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 257,
+              "line_start": 254,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u009",
+          "spontaneous_reading": "The rational two-hole problem is recast as residue calculus: all geometric and congruence information is packaged into a Mellin integrand, and the long-time coefficient becomes a sum over its poles. The proof burden shifts to locating those poles and justifying that the displaced contour contributes nothing."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u009",
+          "source_grounded_mathematics": "For holes [0,epsilon] and [2 pi r/q,2 pi r/q+epsilon], the source states an exact expression in which lim_{t to infinity} tP(t) is the sum of residues of P-tilde(s) epsilon^{-s}. The displayed P-tilde combines fractional-part weights, gcd-reduced residue classes, character sums, and a denominator L(s+1,chi). The contour starts at c>1; a left semicircle avoiding poles is added, with decay attributed to the (2 pi)^{s+1} factor for large negative real part and a cubic denominator for large imaginary part.",
+          "conceptual_reading": "Residue calculus assembles the earlier geometric and arithmetic reductions into a single asymptotic machine. Each pole represents a scaling contribution, so L-function zeros become dynamically visible through the denominator.",
+          "representation_or_bridge": "The Mellin integrand is the bridge object joining hole geometry, congruence classes, Dirichlet characters, and the escape coefficient.",
+          "boundary_or_failure": "A formal pole sum is valid only with the claimed continuation and contour-decay estimates. The exact formula (14) is column-split, so constants and local factors cannot be safely certified here.",
+          "uncertainty": "The theorem's architecture and contour conditions are explicit; the exact residue formula has high transcription uncertainty."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "P1 and P2 denote the one-hole and symmetric two-hole problems, and the time limit is taken before the small-hole limit in the displayed criteria (15)-(16).",
+      "line_end": 279,
+      "line_start": 258,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the prose explicitly asserts equivalence, but the precise epsilon exponent, factors, and order of limits should be checked against the retained PDF because the equations share lines with a damaged table.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states that RH is equivalent to two families of nested limits: one compares one-hole survival with its leading 2/epsilon term, and the other compares one-hole survival with twice the symmetric two-hole survival, with errors tested against every positive delta.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH as a small-hole escape asymptotic",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u010.txt",
+      "unit_bytes": 2438,
+      "unit_id": "openalex_w1992958894_u010",
+      "unit_sha256": "3e59bfb022903fa60e064278cc854e3db67f105100eb452ba87633a6c5c9a5b4",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u010.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 250,
+          "line_end": 257,
+          "text": "                           n=1\n                                   ns          p\n                                                      p                      angle separating the holes is θ = 2πr/q. Thus q = 1 is a\n\n<!-- source-page: 4 -->\n\n4\n\n",
+          "sha256": "33f2b942a351339d877e8e6473b8cd5a23dba10c34e45402be52390f4df868c6"
+        },
+        "after": {
+          "line_start": 280,
+          "line_end": 287,
+          "text": " 1 2                        13\n                          − 12                           3        119           θ the above analysis breaks down; presumably the poles\n                                                        2π   5760π 2 ζ ′ (−2)\n                                                                                on the critical line become dense, blocking analytic con-\n 2 1                       − 61                         0    − 720π21ζ ′ (−2)\n                                                                                tinuation. However the leading order (in ǫ) term can be\n 3 1                 − 14 − 95 ln\n                               ln 2\n",
+          "sha256": "6b3e005a5660c80b20f039c557cf47f6b8407243709a04798388dcb5b641cbc3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Residues, RH/GRH criteria, and irrational separation",
+            "line_end": 348,
+            "line_start": 254,
+            "mathematical_role": "Specializes rational configurations, states RH-equivalent escape limits, relates rational corrections to GRH, explains the irrational-angle obstruction, and derives its leading mean-field term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 279,
+          "line_start": 258,
+          "title": "RH as a small-hole escape asymptotic",
+          "unit_id": "openalex_w1992958894_u010",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The source states that RH is equivalent to two families of nested limits: one compares one-hole survival with its leading 2/epsilon term, and the other compares one-hole survival with twice the symmetric two-hole survival, with errors tested against every positive delta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "P1 and P2 denote the one-hole and symmetric two-hole problems, and the time limit is taken before the small-hole limit in the displayed criteria (15)-(16).",
+          "representation_dependency": "High: the prose explicitly asserts equivalence, but the precise epsilon exponent, factors, and order of limits should be checked against the retained PDF because the equations share lines with a damaged table.",
+          "unit_id": "openalex_w1992958894_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 247,
+            "line_start": 199,
+            "title": "Exact rational two-hole escape as residues of an L-function integrand",
+            "unit_id": "openalex_w1992958894_u009",
+            "unit_type": "theorem-plus-method",
+            "why_material": "The first main result expresses the long-time two-hole survival coefficient as residues of a Mellin integrand assembled from congruence data and Dirichlet L-functions, and justifies shifting the contour left by controlling large negative real and imaginary parts."
+          },
+          {
+            "line_end": 307,
+            "line_start": 273,
+            "title": "Rational GRH corrections versus the irrational-angle analytic barrier",
+            "unit_id": "openalex_w1992958894_u011",
+            "unit_type": "method-comparison-and-obstruction",
+            "why_material": "For rational two-hole separation, the source relates correction size to generalized RH for the participating L-functions; for irrational separation it says the residue-class analysis breaks down and proposes that dense critical-line poles obstruct analytic continuation, while retaining a theta-independent leading term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing the leading geometric hole-size contribution by either subtraction in the one-hole case or comparison with twice the symmetric two-hole case leaves a correction whose stated small-hole bound is equivalent to RH.",
+            "limit": "This is the paper's stated equivalence for its exact escape model; it is not independent evidence that RH is true, and the precise displayed limit must be checked against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u009",
+              "openalex_w1992958894_u010",
+              "openalex_w1992958894_u013"
+            ],
+            "title": "One-hole versus symmetric two-hole cancellation isolates RH-sensitive corrections"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 257,
+              "line_start": 254,
+              "reason": "Page marker, page number, and blank layout residue."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u010",
+          "spontaneous_reading": "Two cancellations isolate the zeta-sensitive remainder: subtract the leading 2/epsilon term from one-hole escape, or subtract twice the symmetric two-hole escape from the one-hole quantity. Requiring the remainder to beat the half-power threshold, after taking the long-time limit first, is stated to be equivalent to RH."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u010",
+          "source_grounded_mathematics": "The source states that for every delta>0, RH is equivalent to nested limits in which t tends to infinity before epsilon tends to zero: epsilon^{delta-1/2}(tP_1(t)-2/epsilon) tends to zero, and alternatively epsilon^{delta-1/2}(tP_1(t)-2tP_2(t)) tends to zero. P_1 is the one-hole problem and P_2 the symmetric two-hole problem.",
+          "conceptual_reading": "Subtracting the dominant geometric contribution exposes a smaller correction controlled by zeta-zero locations. The one-versus-two comparison performs this cancellation experimentally without requiring the leading term to be inserted separately.",
+          "representation_or_bridge": "The nested small-hole and long-time survival limits translate a spectral zero-location assertion into a dynamical asymptotic criterion.",
+          "boundary_or_failure": "This is the paper's asserted equivalence for its exact model, not evidence that RH is true. Reversing the order of limits or changing the normalization would define a different claim.",
+          "uncertainty": "The prose and displayed limit order are recoverable, but the equation shares extracted lines with a damaged table, so exact typography and powers warrant scan verification before quotation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The density of poles is presented as a presumption, not a proved result; the leading irrational term is developed separately by averaging.",
+      "line_end": 307,
+      "line_start": 273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the comparison is prose-recoverable; exact correction exponents and the damaged table entries require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For rational two-hole separation, the source relates correction size to generalized RH for the participating L-functions; for irrational separation it says the residue-class analysis breaks down and proposes that dense critical-line poles obstruct analytic continuation, while retaining a theta-independent leading term.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rational GRH corrections versus the irrational-angle analytic barrier",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u011.txt",
+      "unit_bytes": 3285,
+      "unit_id": "openalex_w1992958894_u011",
+      "unit_sha256": "836daea1df4db9efd891beada11298820bb1f43353cd0c283778886c84c887fb",
+      "unit_type": "method-comparison-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u011.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "          3             2s(s+1)(s+2)(3s+1 −1)ζ(s+1)                                          lim lim ǫδ−1/2 (tP1 (t) − 2/ǫ)                = 0       (15)\n                2s (13ζ(s)+3s+2 (ζ(s)−1)+3)−ζ(s)(3s+2 +5)                                    ǫ→0 t→∞\n          4             4s(s+1)(s+2)(2s+1 −1)ζ(s+1)\n                                                                                         lim lim ǫδ−1/2 (tP1 (t) − 2tP2 (t))               = 0       (16)\n                                                                                         ǫ→0 t→∞\n              [(π/3)s+1 (6s +8.12s −25.30s +(1−3.2s −13.3s −8.4s\n          6 +25.5s +27.6s −25.10s +8.12s −25.15s +25.30s )ζ(s))]                for every δ > 0, and the subscript indicates the one or\n                ×[2s(s+1)(s+2)(2s+1 −1)(3s+1 −1)ζ(s+1)]−1\n",
+          "sha256": "2154707e8003ef1de08213f6c72e0c90df03db312dec3d65e933abfaecc58d11"
+        },
+        "after": {
+          "line_start": 308,
+          "line_end": 315,
+          "text": "                                                                                            \u0012             \u0013\nTABLE II: Some residues of P̃ (s)ǫ−s given in table I divided                                 2π\nby the factor ǫ−s . The ln ǫ appears for q = 6 due to a double                           hg       − θ − ǫ + g (θ′ − ǫ)i\n                                                                                                     ′\n                                                                                               n\npole at s = −1. There are also poles for further negative odd                                Z 2π/n \u0014 \u0012              \u0013             \u0015\ns, and along the critical line Re s = −1/2. .                                             n               2π\n                                                                                      =               g      − θ′ − ǫ + g (θ′ − ǫ) dθ′\n",
+          "sha256": "57d9711b83c4da2765166c62be5b981fca3c33ba647dee8f489ef054a2b921a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Residues, RH/GRH criteria, and irrational separation",
+            "line_end": 348,
+            "line_start": 254,
+            "mathematical_role": "Specializes rational configurations, states RH-equivalent escape limits, relates rational corrections to GRH, explains the irrational-angle obstruction, and derives its leading mean-field term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 307,
+          "line_start": 273,
+          "title": "Rational GRH corrections versus the irrational-angle analytic barrier",
+          "unit_id": "openalex_w1992958894_u011",
+          "unit_type": "method-comparison-and-obstruction",
+          "why_material": "For rational two-hole separation, the source relates correction size to generalized RH for the participating L-functions; for irrational separation it says the residue-class analysis breaks down and proposes that dense critical-line poles obstruct analytic continuation, while retaining a theta-independent leading term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The density of poles is presented as a presumption, not a proved result; the leading irrational term is developed separately by averaging.",
+          "representation_dependency": "Medium: the comparison is prose-recoverable; exact correction exponents and the damaged table entries require scan verification.",
+          "unit_id": "openalex_w1992958894_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 279,
+            "line_start": 258,
+            "title": "RH as a small-hole escape asymptotic",
+            "unit_id": "openalex_w1992958894_u010",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The source states that RH is equivalent to two families of nested limits: one compares one-hole survival with its leading 2/epsilon term, and the other compares one-hole survival with twice the symmetric two-hole survival, with errors tested against every positive delta."
+          },
+          {
+            "line_end": 329,
+            "line_start": 292,
+            "title": "Mean-field averaging for irrational hole separation",
+            "unit_id": "openalex_w1992958894_u012",
+            "unit_type": "approximation",
+            "why_material": "Uniform distribution of the fractional parts for irrational theta permits averaging the hole-overlap weight, while mean values for the totient and Möbius functions replace the remaining arithmetic factors; the resulting integral gives the leading tP(t) approximately equal to 1/epsilon."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rational separation supports finite residue-class decomposition and Dirichlet-character analysis, whereas irrational separation is treated only at leading order through equidistribution and mean values after the source says the analytic continuation route breaks down.",
+            "limit": "The proposed density of critical-line poles in the irrational case is explicitly speculative, and the mean-field calculation does not recover the full correction structure.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u011",
+              "openalex_w1992958894_u012"
+            ],
+            "title": "Rational and irrational separations require different arithmetic representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u011",
+          "spontaneous_reading": "Rational and irrational separations force different arithmetic representations. Finite residue classes lead to finitely many L-functions and GRH-scaled corrections; irrational separation destroys that decomposition, and the source only conjectures that dense critical-line poles block analytic continuation before switching to leading-order averaging."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u011",
+          "source_grounded_mathematics": "For rational two-hole separation, the source says generalized RH for the participating L-functions implies corrections of order epsilon^{delta+1/2}. It then states that the preceding analysis breaks down for irrational theta and presumes that critical-line poles become dense and obstruct analytic continuation. Nevertheless it claims the leading small-epsilon term is independent of theta for theta>0.",
+          "conceptual_reading": "Rationality is not a cosmetic parameter choice: it determines whether the geometric weights close into finite arithmetic data. When that compression fails, only coarse averaged behavior is retained.",
+          "representation_or_bridge": "Finite Dirichlet-character expansions mediate the rational case; equidistribution and mean-field averages replace them for the irrational leading term.",
+          "boundary_or_failure": "The density-of-poles claim is explicitly speculative, and failure of this analytic continuation route is not proof that no other representation can treat irrational theta.",
+          "uncertainty": "Moderate because correction exponents and table entries are extraction-sensitive; low about the source's explicit distinction between proved rational machinery and presumed irrational obstruction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source claims this leading term is theta-independent for theta greater than zero; it does not extend the rational analytic continuation argument to irrational theta.",
+      "line_end": 329,
+      "line_start": 292,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the averaging logic and final leading term are explicit in prose, but equations (17)-(18) and their constants are interleaved with corrupted table material and should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uniform distribution of the fractional parts for irrational theta permits averaging the hole-overlap weight, while mean values for the totient and Möbius functions replace the remaining arithmetic factors; the resulting integral gives the leading tP(t) approximately equal to 1/epsilon.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean-field averaging for irrational hole separation",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u012.txt",
+      "unit_bytes": 3941,
+      "unit_id": "openalex_w1992958894_u012",
+      "unit_sha256": "d5606db994b4c3a0481a663c2d77d06cd1f94cc41e234e501cb77342803140b3",
+      "unit_type": "approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u012.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 284,
+          "line_end": 291,
+          "text": " 2 1                       − 61                         0    − 720π21ζ ′ (−2)\n                                                                                tinuation. However the leading order (in ǫ) term can be\n 3 1                 − 14 − 95 ln\n                               ln 2\n                                  3\n                                                         3\n                                                        4π\n                                                                   49\n",
+          "sha256": "c9a6a8e7c8cfc86058dbec0dc90f563b01e2823fc30de4c967bee77db0938c9c"
+        },
+        "after": {
+          "line_start": 330,
+          "line_end": 337,
+          "text": "to rational numbers with small denominators. Particular\nvalues of P̃ (s) are given in table I and residues of the triv-                 as required.\nial poles at integer s are given in table II. Some points                          We now present some numerical tests. The main re-\nto note are that the leading behavior at s = 1, that is,                        sults of this paper are exact. However there are some\nof order ǫ−1 is purely given by the total size of the holes.                    related questions to do with rates of convergence of vari-\nThe q = 1 case is twice as large since there is only a                          ous limits which are of great importance to numerical or\nsingle hole in this case. The next possible term would                          experimental extensions of this work. The rate of con-\nbe s = 0, however the residue is zero since the ζ(s + 1)                        vergence of tP (t) as t → ∞ is considered in Fig. 3. The\n",
+          "sha256": "a3b147820ec7e99168643f498298fbd45229231bd0be5db3a626a732b6e2d36c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Residues, RH/GRH criteria, and irrational separation",
+            "line_end": 348,
+            "line_start": 254,
+            "mathematical_role": "Specializes rational configurations, states RH-equivalent escape limits, relates rational corrections to GRH, explains the irrational-angle obstruction, and derives its leading mean-field term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 329,
+          "line_start": 292,
+          "title": "Mean-field averaging for irrational hole separation",
+          "unit_id": "openalex_w1992958894_u012",
+          "unit_type": "approximation",
+          "why_material": "Uniform distribution of the fractional parts for irrational theta permits averaging the hole-overlap weight, while mean values for the totient and Möbius functions replace the remaining arithmetic factors; the resulting integral gives the leading tP(t) approximately equal to 1/epsilon."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source claims this leading term is theta-independent for theta greater than zero; it does not extend the rational analytic continuation argument to irrational theta.",
+          "representation_dependency": "High: the averaging logic and final leading term are explicit in prose, but equations (17)-(18) and their constants are interleaved with corrupted table material and should be scan-verified.",
+          "unit_id": "openalex_w1992958894_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 307,
+            "line_start": 273,
+            "title": "Rational GRH corrections versus the irrational-angle analytic barrier",
+            "unit_id": "openalex_w1992958894_u011",
+            "unit_type": "method-comparison-and-obstruction",
+            "why_material": "For rational two-hole separation, the source relates correction size to generalized RH for the participating L-functions; for irrational separation it says the residue-class analysis breaks down and proposes that dense critical-line poles obstruct analytic continuation, while retaining a theta-independent leading term."
+          },
+          {
+            "line_end": 348,
+            "line_start": 319,
+            "title": "Residue hierarchy separates hole geometry from zeta-zero corrections",
+            "unit_id": "openalex_w1992958894_u013",
+            "unit_type": "asymptotic-analysis",
+            "why_material": "The source identifies the leading inverse-hole-width residue with total hole size, explains the vanishing candidate constant term, records special logarithmic and simple integer-pole terms, and places the next-order contributions at nontrivial zeros of zeta, yielding its RH condition on their real parts."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rational separation supports finite residue-class decomposition and Dirichlet-character analysis, whereas irrational separation is treated only at leading order through equidistribution and mean values after the source says the analytic continuation route breaks down.",
+            "limit": "The proposed density of critical-line poles in the irrational case is explicitly speculative, and the mean-field calculation does not recover the full correction structure.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u007",
+              "openalex_w1992958894_u011",
+              "openalex_w1992958894_u012"
+            ],
+            "title": "Rational and irrational separations require different arithmetic representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u012",
+          "spontaneous_reading": "For irrational separation, equidistribution turns the oscillating fractional-part overlap into an average over one period, while mean values replace phi(n) and mu(n). This removes fine arithmetic fluctuations and leaves a continuum integral whose leading value is tP(t) approximately 1/epsilon."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u012",
+          "source_grounded_mathematics": "The source treats irrational theta by averaging the uniformly distributed fractional parts, replacing the overlap weight by an integral over theta'. It also uses mean values <phi(n)>=6n/pi^2 and <mu(n)>=0, replaces the period sum by an integral up to 2 pi/epsilon, and obtains the leading approximation tP(t) approximately equal to 1/epsilon.",
+          "conceptual_reading": "Averaging deliberately forgets residue-class fluctuations and preserves only the bulk density of orbit periods and hole overlap. That loss of information explains why it yields the leading term but not the L-function correction hierarchy.",
+          "representation_or_bridge": "Equidistribution bridges irrational rotations to a uniform phase average; arithmetic mean values and continuum integration bridge the discrete orbit sum to its leading asymptotic.",
+          "boundary_or_failure": "This is a mean-field approximation, not the rational analytic-continuation argument, and it does not control lower-order corrections or justify the speculative dense-pole picture.",
+          "uncertainty": "The leading mechanism and 1/epsilon conclusion are explicit, but equations (17)-(18) are interleaved with corrupted table content, making exact intermediate constants less secure."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The especially simple rational separations q=1,2,3,4,6 involve only zeta according to the source; q=6 has a double-pole epsilon log epsilon term.",
+      "line_end": 348,
+      "line_start": 319,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the qualitative pole taxonomy is supported by prose, while table values, residue constants, multiplicity powers, and the extracted square-root artifact need verification from the original page.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies the leading inverse-hole-width residue with total hole size, explains the vanishing candidate constant term, records special logarithmic and simple integer-pole terms, and places the next-order contributions at nontrivial zeros of zeta, yielding its RH condition on their real parts.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residue hierarchy separates hole geometry from zeta-zero corrections",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u013.txt",
+      "unit_bytes": 3738,
+      "unit_id": "openalex_w1992958894_u013",
+      "unit_sha256": "3416e78fbc3e8ce7c46ee868ec330a72fdcd722d3074de839ca45db7ad04d46d",
+      "unit_type": "asymptotic-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u013.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 311,
+          "line_end": 318,
+          "text": "                                                                                                     ′\n                                                                                               n\npole at s = −1. There are also poles for further negative odd                                Z 2π/n \u0014 \u0012              \u0013             \u0015\ns, and along the critical line Re s = −1/2. .                                             n               2π\n                                                                                      =               g      − θ′ − ǫ + g (θ′ − ǫ) dθ′\n                                                                                         2π 0             n\n                                                                                             \u0012         \u00133\n                                                                                          n 2π\n",
+          "sha256": "9815421905b0e45edf0bcd89646022c0003d7776a8316d778e14f5c9f737211c"
+        },
+        "after": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "\n<!-- source-page: 5 -->\n\n5\n              10\n                                                                                                 for example in the design of microlasers [24].\n\n                                                            \u000f   = 0:001; : : : ; 0:1\n",
+          "sha256": "ad4dbcb77a75adf97df3bf888289e44d63d1d25f86c4fed50a805f164c375ede"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Residues, RH/GRH criteria, and irrational separation",
+            "line_end": 348,
+            "line_start": 254,
+            "mathematical_role": "Specializes rational configurations, states RH-equivalent escape limits, relates rational corrections to GRH, explains the irrational-angle obstruction, and derives its leading mean-field term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 348,
+          "line_start": 319,
+          "title": "Residue hierarchy separates hole geometry from zeta-zero corrections",
+          "unit_id": "openalex_w1992958894_u013",
+          "unit_type": "asymptotic-analysis",
+          "why_material": "The source identifies the leading inverse-hole-width residue with total hole size, explains the vanishing candidate constant term, records special logarithmic and simple integer-pole terms, and places the next-order contributions at nontrivial zeros of zeta, yielding its RH condition on their real parts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The especially simple rational separations q=1,2,3,4,6 involve only zeta according to the source; q=6 has a double-pole epsilon log epsilon term.",
+          "representation_dependency": "High: the qualitative pole taxonomy is supported by prose, while table values, residue constants, multiplicity powers, and the extracted square-root artifact need verification from the original page.",
+          "unit_id": "openalex_w1992958894_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 329,
+            "line_start": 292,
+            "title": "Mean-field averaging for irrational hole separation",
+            "unit_id": "openalex_w1992958894_u012",
+            "unit_type": "approximation",
+            "why_material": "Uniform distribution of the fractional parts for irrational theta permits averaging the hole-overlap weight, while mean values for the totient and Möbius functions replace the remaining arithmetic factors; the resulting integral gives the leading tP(t) approximately equal to 1/epsilon."
+          },
+          {
+            "line_end": 342,
+            "line_start": 332,
+            "title": "Complex poles are required for the survival function's step structure",
+            "unit_id": "openalex_w1992958894_u014",
+            "unit_type": "representation-insight",
+            "why_material": "The numerical discussion observes that retaining only real poles would produce an analytic integer-power series, whereas complex poles are essential to reconstruct the nonanalytic step structure of the exact finite orbit sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing the leading geometric hole-size contribution by either subtraction in the one-hole case or comparison with twice the symmetric two-hole case leaves a correction whose stated small-hole bound is equivalent to RH.",
+            "limit": "This is the paper's stated equivalence for its exact escape model; it is not independent evidence that RH is true, and the precise displayed limit must be checked against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u009",
+              "openalex_w1992958894_u010",
+              "openalex_w1992958894_u013"
+            ],
+            "title": "One-hole versus symmetric two-hole cancellation isolates RH-sensitive corrections"
+          },
+          {
+            "claim": "Integer poles organize leading geometric and analytic terms, while nontrivial complex poles control RH-sensitive corrections and are needed to reproduce the exact escape coefficient's step structure; the figures test convergence in these two representations.",
+            "limit": "The normalized text retains captions but not an inspectable rendering of the curves, so the reported numerical behavior cannot be independently quantified here.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u013",
+              "openalex_w1992958894_u014",
+              "openalex_w1992958894_u015",
+              "openalex_w1992958894_u016"
+            ],
+            "title": "Pole content controls both asymptotic order and visible nonsmoothness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 353,
+              "line_start": 349,
+              "reason": "Page transition, marker, page number, whitespace, and an isolated plot-axis label."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u013",
+          "spontaneous_reading": "The residue hierarchy separates mechanisms by scale: the leading inverse-width pole records total hole size, a candidate constant term vanishes, special integer poles supply analytic or logarithmic corrections, and nontrivial zeta zeros supply the next RH-sensitive terms."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u013",
+          "source_grounded_mathematics": "The source identifies the s=1 residue with the leading epsilon^{-1} behavior determined by total hole size, with the one-hole q=1 case twice the two-hole leading size. It says the s=0 residue vanishes because zeta(s+1) has a pole, q=6 has an epsilon log epsilon contribution from a double pole at s=-1, and s=-2 terms arise from the s+2 denominator. For the listed simple rational separations, subsequent terms come from nontrivial zeros of zeta(s+1), and the stated bound on their real parts is tied to RH.",
+          "conceptual_reading": "Pole location and multiplicity classify both asymptotic order and functional form: geometry dominates first, algebraic prefactors produce integer-power terms, repeated poles produce logarithms, and zeta zeros control finer oscillatory corrections.",
+          "representation_or_bridge": "The Mellin residue table bridges physical hole-size scaling to analytic singularities, separating geometric content from zeta-sensitive content.",
+          "boundary_or_failure": "The extracted sentence describing the precise zero contribution contains a square-root artifact, and the table is damaged; exact powers, constants, and multiplicity dependence must not be inferred from this unit alone.",
+          "uncertainty": "Low for the qualitative pole taxonomy, high for exact residue values and the precise exponent of the nontrivial-zero terms."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a representation-level explanation tied to convergence of the residue expansion, not a separate proof of RH.",
+      "line_end": 342,
+      "line_start": 332,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-medium: the prose claim is clear; its visual manifestation is deferred to figure 4.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The numerical discussion observes that retaining only real poles would produce an analytic integer-power series, whereas complex poles are essential to reconstruct the nonanalytic step structure of the exact finite orbit sum.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complex poles are required for the survival function's step structure",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u014.txt",
+      "unit_bytes": 1489,
+      "unit_id": "openalex_w1992958894_u014",
+      "unit_sha256": "8b5ea7b9c46a38226be67064cf1e8bb5a2dc8f853a87c2045d26828dbae6db76",
+      "unit_type": "representation-insight",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u014.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 324,
+          "line_end": 331,
+          "text": "                                                                                                      Z 2π/ǫ                         \u00133\na few L-functions (in fact only the Riemann zeta func-\n                                                                                                                         \u0012\n                                                                                                1                   6n       2π                  1\ntion for q = 1, 2, 3, 4, 6), and angles which are not close                        tP (t) ≈                    n2               −ǫ        dn =       (18)\n                                                                                              24π 2    0            π2        n                  ǫ\nto rational numbers with small denominators. Particular\nvalues of P̃ (s) are given in table I and residues of the triv-                 as required.\n",
+          "sha256": "366bb13a56eabb95113e77f1dca1199a8da67e74add2dbf0ba9a74d56d5bd5a6"
+        },
+        "after": {
+          "line_start": 343,
+          "line_end": 350,
+          "text": "order terms, which are not given in the table, come from                           In conclusion, we computed the escape from a circular\nthe nontrivial zeroes √ of the ζ(s + 1), and for multiplic-                     billiard with one hole and related it to the Riemann Hy-\nity m are of order ǫ(ln ǫ)m−1 if all zeroes of ζ(s) lie in                      pothesis, computed escape for two holes (rational case)\nRe s ≤ 1/2. The latter is a statement of the Riemann                            and related it to the generalized Riemann hypotheses and\nhypothesis [22]. An alternative formulation stating that                        obtained the leading order behavior for the irrational two\nall the nontrivial zeroes of ζ(s) have Re s = 1/2 is easily                     hole case. Many interesting questions remain, concerning\n\n<!-- source-page: 5 -->\n",
+          "sha256": "f25929c81c4507b35ff30074e56addfeca716eb87989c83734f769dcaeb0eb6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Residues, RH/GRH criteria, and irrational separation",
+            "line_end": 348,
+            "line_start": 254,
+            "mathematical_role": "Specializes rational configurations, states RH-equivalent escape limits, relates rational corrections to GRH, explains the irrational-angle obstruction, and derives its leading mean-field term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 342,
+          "line_start": 332,
+          "title": "Complex poles are required for the survival function's step structure",
+          "unit_id": "openalex_w1992958894_u014",
+          "unit_type": "representation-insight",
+          "why_material": "The numerical discussion observes that retaining only real poles would produce an analytic integer-power series, whereas complex poles are essential to reconstruct the nonanalytic step structure of the exact finite orbit sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a representation-level explanation tied to convergence of the residue expansion, not a separate proof of RH.",
+          "representation_dependency": "Low-medium: the prose claim is clear; its visual manifestation is deferred to figure 4.",
+          "unit_id": "openalex_w1992958894_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 348,
+            "line_start": 319,
+            "title": "Residue hierarchy separates hole geometry from zeta-zero corrections",
+            "unit_id": "openalex_w1992958894_u013",
+            "unit_type": "asymptotic-analysis",
+            "why_material": "The source identifies the leading inverse-hole-width residue with total hole size, explains the vanishing candidate constant term, records special logarithmic and simple integer-pole terms, and places the next-order contributions at nontrivial zeros of zeta, yielding its RH condition on their real parts."
+          },
+          {
+            "line_end": 385,
+            "line_start": 375,
+            "title": "Scaled survival collapse tests the irrational leading asymptotic",
+            "unit_id": "openalex_w1992958894_u015",
+            "unit_type": "computational-check",
+            "why_material": "Figure 3 varies the hole width with fixed irrational separation and reports that epsilon times tP(t) approaches a limiting curve in the scaled time epsilon t, converging to one at large scaled time as predicted by equation (18)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Integer poles organize leading geometric and analytic terms, while nontrivial complex poles control RH-sensitive corrections and are needed to reproduce the exact escape coefficient's step structure; the figures test convergence in these two representations.",
+            "limit": "The normalized text retains captions but not an inspectable rendering of the curves, so the reported numerical behavior cannot be independently quantified here.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u013",
+              "openalex_w1992958894_u014",
+              "openalex_w1992958894_u015",
+              "openalex_w1992958894_u016"
+            ],
+            "title": "Pole content controls both asymptotic order and visible nonsmoothness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 353,
+              "line_start": 349,
+              "reason": "Page transition, marker, page number, whitespace, and an isolated plot-axis label."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u014",
+          "spontaneous_reading": "Real poles alone yield an analytic integer-power expansion, so they cannot reconstruct the exact finite sum's steps. Complex poles are not merely small corrections here; their collective interference carries the nonsmooth structure lost by a purely real residue truncation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u014",
+          "source_grounded_mathematics": "In discussing convergence of the residue expression, the source states that using only real poles would give a Taylor series in integer powers and hence an analytic function, whereas complex poles are essential for the step structure of P_infinity.",
+          "conceptual_reading": "The analytic representation distributes a sharp feature across complex modes. Nonsmoothness in hole width is therefore global information in the pole expansion rather than the contribution of a single real asymptotic term.",
+          "representation_or_bridge": "Complex residues bridge a meromorphic expansion to the piecewise-smooth, stepped behavior of the original finite orbit sum.",
+          "boundary_or_failure": "This is a representation-level explanation associated with numerical convergence, not a proof of RH or a quantitative bound on how many poles suffice.",
+          "uncertainty": "Low for the prose claim; the visual size and convergence of the reconstructed steps depend on figure 4, which is not recoverable from this text unit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The caption reports 10^8 random initial conditions and theta=1; this is evidence about convergence behavior, while the paper's main formulas are described as exact.",
+      "line_end": 385,
+      "line_start": 375,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the caption is recoverable, but the plotted curves and uncertainty cannot be reconstructed from normalized text alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Figure 3 varies the hole width with fixed irrational separation and reports that epsilon times tP(t) approaches a limiting curve in the scaled time epsilon t, converging to one at large scaled time as predicted by equation (18).",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scaled survival collapse tests the irrational leading asymptotic",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u015.txt",
+      "unit_bytes": 1061,
+      "unit_id": "openalex_w1992958894_u015",
+      "unit_sha256": "759240751e6633064b6006f0a6266d4ea0d946bc880b96b556b189c28b7394c4",
+      "unit_type": "computational-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u015.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 367,
+          "line_end": 374,
+          "text": "                                                                                                  [1] S. Sridhar, Phys. Rev. Lett. 67, 785 (1991).\n                                                                                                  [2] J. Stein and H. J. Stockmann, Phys. Rev. Lett. 68, 2867\n                                                                                                      (1992).\n            0.001                                                                                 [3] H. D. Graf, H. L. Harney, H. Lengeler, C. H. Lewenkopf,\n                 0.01          0.1       1             10               100           1000\n                                                                                                      C. Rangacharyulu, A. Richter, P. Schardt and H. A. Wei-\n                                                 \u000ft                                                   denmuller, Phys. Rev. Lett. 69, 1296 (1992).\n                                                                                                  [4] E. Persson, I. Rotter, H.-J. Stockmann, and M. Barth,\n",
+          "sha256": "25da1a1a069a5f5aedbf614d6ee8b7b86c9d98819fafee7260c94e08fa19b3f3"
+        },
+        "after": {
+          "line_start": 386,
+          "line_end": 393,
+          "text": "                                                                                                  [7] T. Sakamoto, T. Takagaki, S. Takaoka, K. Gamo, K.\n            10                                        10                                              Murase, and S. Namba, Japan J. Appl. Phys. 30, L1186\n                      jI m sj < 50                          jI m sj < 100                             (1991).\n             8                                        8\n                                                                                                  [8] J. P. Bird, J. Phys. Cond. Mat. 11, R413 (1999).\n             6                                        6                                           [9] V. Milner, J. L. Hanssen, W. C. Campbell and M. G.\n                                                                                                      Raizen, Phys. Rev. Lett. 86, 1514 (2001).\n              4                                        4\n",
+          "sha256": "0f14b75f95e215c52450b85666d60c2ba30df538ab83e734ca578eba7baa3ab9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Numerical checks, conclusion, and back matter",
+            "line_end": 429,
+            "line_start": 349,
+            "mathematical_role": "Reports scaling and residue-truncation tests, separates the roles of real and critical-line poles, summarizes scope, and closes with applications, acknowledgments, and references."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 385,
+          "line_start": 375,
+          "title": "Scaled survival collapse tests the irrational leading asymptotic",
+          "unit_id": "openalex_w1992958894_u015",
+          "unit_type": "computational-check",
+          "why_material": "Figure 3 varies the hole width with fixed irrational separation and reports that epsilon times tP(t) approaches a limiting curve in the scaled time epsilon t, converging to one at large scaled time as predicted by equation (18)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The caption reports 10^8 random initial conditions and theta=1; this is evidence about convergence behavior, while the paper's main formulas are described as exact.",
+          "representation_dependency": "Medium: the caption is recoverable, but the plotted curves and uncertainty cannot be reconstructed from normalized text alone.",
+          "unit_id": "openalex_w1992958894_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 342,
+            "line_start": 332,
+            "title": "Complex poles are required for the survival function's step structure",
+            "unit_id": "openalex_w1992958894_u014",
+            "unit_type": "representation-insight",
+            "why_material": "The numerical discussion observes that retaining only real poles would produce an analytic integer-power series, whereas complex poles are essential to reconstruct the nonanalytic step structure of the exact finite orbit sum."
+          },
+          {
+            "line_end": 423,
+            "line_start": 412,
+            "title": "Pole truncation separates smooth convergence from visible steps",
+            "unit_id": "openalex_w1992958894_u016",
+            "unit_type": "computational-check",
+            "why_material": "Figure 4 varies the number of critical-line poles in the residue computation and reports convergence of the second derivative, with more real poles needed in one inverse-width regime and more critical poles needed in another for the steps to become visible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Integer poles organize leading geometric and analytic terms, while nontrivial complex poles control RH-sensitive corrections and are needed to reproduce the exact escape coefficient's step structure; the figures test convergence in these two representations.",
+            "limit": "The normalized text retains captions but not an inspectable rendering of the curves, so the reported numerical behavior cannot be independently quantified here.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u013",
+              "openalex_w1992958894_u014",
+              "openalex_w1992958894_u015",
+              "openalex_w1992958894_u016"
+            ],
+            "title": "Pole content controls both asymptotic order and visible nonsmoothness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 411,
+              "line_start": 386,
+              "reason": "Plot ticks and labels are interleaved with bibliography entries and cannot support a standalone mathematical claim from normalized text."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u015",
+          "spontaneous_reading": "The computation tests a scaling collapse rather than the exact formulas themselves: holding epsilon times t fixed while shrinking epsilon makes epsilon tP(t) approach a common curve, whose large-scaled-time value tends to the predicted constant one."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u015",
+          "source_grounded_mathematics": "Figure 3's caption reports simulations with 10^8 random initial conditions, theta=1 (an irrational multiple of pi), and epsilon=10^{-n/2} for n=0 through 6. It says epsilon tP(t) appears to approach a limiting function at fixed epsilon t and tends to one for large epsilon t, consistently with equation (18).",
+          "conceptual_reading": "Rescaling collapses different hole sizes onto variables adapted to the predicted asymptotic, making convergence across epsilon visible without treating raw survival curves as directly comparable.",
+          "representation_or_bridge": "The dimensionless variables epsilon t and epsilon tP(t) bridge finite simulation data to the irrational-case leading prediction tP(t) approximately 1/epsilon.",
+          "boundary_or_failure": "The caption reports apparent consistency, not an error estimate or independent proof. The normalized text does not preserve the curves, uncertainties, or sampling diagnostics.",
+          "uncertainty": "Moderate: simulation parameters and qualitative conclusion are explicit, but the plot cannot be quantitatively inspected from the unit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The caption relates the uniformly spaced steps and constant average gradient back to the exact finite-sum expression (4).",
+      "line_end": 423,
+      "line_start": 412,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium-high: the caption supports the convergence logic, but axes, curve values, and the damaged derivative label require inspection of the retained figure.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Figure 4 varies the number of critical-line poles in the residue computation and reports convergence of the second derivative, with more real poles needed in one inverse-width regime and more critical poles needed in another for the steps to become visible.",
+      "source_id": "openalex_w1992958894",
+      "source_normalized_sha256": "a52d7d608323e295025a1652f40b3ceca34a982f6e9dc96ff3c4050cfc2502a7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pole truncation separates smooth convergence from visible steps",
+      "unit_artifact_relpath": "depth/units/openalex_w1992958894_u016.txt",
+      "unit_bytes": 1459,
+      "unit_id": "openalex_w1992958894_u016",
+      "unit_sha256": "08fcbfa815b1c21ebcdda891ad15bc2b36c2ece147b9bf3b42fe68a034fb5419",
+      "unit_type": "computational-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1992958894_u016.txt",
+      "source": {
+        "source_id": "openalex_w1992958894",
+        "title": "Open Circular Billiards and the Riemann Hypothesis",
+        "authors": [
+          "Leonid Bunimovich",
+          "Carl P. Dettmann"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 404,
+          "line_end": 411,
+          "text": "   00 )1=3\n (P1                                                                                                  J. Phys. A 36, R1 (2003).\n              4                                        4                                         [15] R. P. Taylor, R. Newbury, A. S. Sachrajda, Y. Feng, P.\n             2                                        2                                               T. Coleridge, C. Dettmann, N. Zhu, H. Guo, A. Delage,\n                                                                                                      P. J. Kelly, and Z. Wasilewski, Phys. Rev. Lett. 78 1952\n                       1   2     3   4       5                  1        2        3   4      5        (1997).\n                               \u000f 1                                                               [16] M. Terraneo, J. Mod. Opt. 49, 2027 (2002).\n                                       ′′                                                        [17] R. Crook, C. G. Smith, A. C. Graham, I. Farrer, H. E.\n",
+          "sha256": "74171de232d560fbb210e6205aa6793305bf2f75cb466792a0d945beee82a861"
+        },
+        "after": {
+          "line_start": 424,
+          "line_end": 429,
+          "text": "                                                                                                 [22] J. B. Conrey, Not. Amer. Math. Soc. 50, 341 (2003).\n                                                                                                 [23] R. W. Robinett and S. Heppelmann, Phys. Rev. A 65,\none or two hole escape from pseudo-integrable, chaotic or                                             062103 (2002).\nmixed billiards, and to the quantum/wave signature of                                            [24] G. D. Chern, H. E. Tureci, A. D. Stone, R. K. Chang,\nthese systems [23]. A fuller understanding of open quan-                                              M. Kneissel, N. M. Johnson, Appl. Phys. Lett. 83, 1710\ntum billiards should have important practical benefits,                                               (2003).\n",
+          "sha256": "d7ade1ae6a9ba174f908237ceea9aca54db988842c7262f7af685c55b53ec4a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f893a9996b4a68b206ff78c2e77d20d89783b0f06bfb9f04a9cf18b93aff7b5a",
+        "dossier_sha256": "8a9198f49ed3968a5e56368e5b0423178825cd80093d9729fad212cf373cbb16",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Numerical checks, conclusion, and back matter",
+            "line_end": 429,
+            "line_start": 349,
+            "mathematical_role": "Reports scaling and residue-truncation tests, separates the roles of real and critical-line poles, summarizes scope, and closes with applications, acknowledgments, and references."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 423,
+          "line_start": 412,
+          "title": "Pole truncation separates smooth convergence from visible steps",
+          "unit_id": "openalex_w1992958894_u016",
+          "unit_type": "computational-check",
+          "why_material": "Figure 4 varies the number of critical-line poles in the residue computation and reports convergence of the second derivative, with more real poles needed in one inverse-width regime and more critical poles needed in another for the steps to become visible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The caption relates the uniformly spaced steps and constant average gradient back to the exact finite-sum expression (4).",
+          "representation_dependency": "Medium-high: the caption supports the convergence logic, but axes, curve values, and the damaged derivative label require inspection of the retained figure.",
+          "unit_id": "openalex_w1992958894_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 385,
+            "line_start": 375,
+            "title": "Scaled survival collapse tests the irrational leading asymptotic",
+            "unit_id": "openalex_w1992958894_u015",
+            "unit_type": "computational-check",
+            "why_material": "Figure 3 varies the hole width with fixed irrational separation and reports that epsilon times tP(t) approaches a limiting curve in the scaled time epsilon t, converging to one at large scaled time as predicted by equation (18)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Integer poles organize leading geometric and analytic terms, while nontrivial complex poles control RH-sensitive corrections and are needed to reproduce the exact escape coefficient's step structure; the figures test convergence in these two representations.",
+            "limit": "The normalized text retains captions but not an inspectable rendering of the curves, so the reported numerical behavior cannot be independently quantified here.",
+            "parent_local_unit_ids": [
+              "openalex_w1992958894_u013",
+              "openalex_w1992958894_u014",
+              "openalex_w1992958894_u015",
+              "openalex_w1992958894_u016"
+            ],
+            "title": "Pole content controls both asymptotic order and visible nonsmoothness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 411,
+              "line_start": 386,
+              "reason": "Plot ticks and labels are interleaved with bibliography entries and cannot support a standalone mathematical claim from normalized text."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1992958894_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w1992958894_u016",
+          "spontaneous_reading": "Residue truncation has regime-dependent failure modes: insufficient real poles spoil one end of the inverse-width range, whereas insufficient critical-line poles smooth away the steps at the other. The figure uses the second derivative to amplify this structural difference."
+        },
+        "directed": {
+          "unit_id": "openalex_w1992958894_u016",
+          "source_grounded_mathematics": "Figure 4's caption describes a q=1 computation of P_infinity(epsilon) from equation (14), varying the number of critical-line poles while including real poles with s>-10. It says the second derivative should have uniformly spaced steps and constant average gradient in the plotted variables, reports convergence except at very small epsilon^{-1} where more real poles are needed, and says large epsilon^{-1} needs more critical poles for visible steps.",
+          "conceptual_reading": "Different pole families encode different aspects of the function: real poles control smooth background accuracy, while critical-line poles resolve fine nonsmooth structure. Differentiation serves as a diagnostic that makes missing spectral content conspicuous.",
+          "representation_or_bridge": "The truncated residue computation is compared with the exact finite-sum step structure through a second-derivative representation.",
+          "boundary_or_failure": "The caption alone cannot establish numerical accuracy, exact axes, or convergence rates, and the damaged derivative label and absent curves prevent independent verification.",
+          "uncertainty": "Moderate: the qualitative allocation of truncation error is clear, but the plotted values and thresholds are unavailable in the normalized text."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9622b33c255cafbd88b8a208e304159f085d4fb6a43b99d09410daca4b5f08b4"
+}

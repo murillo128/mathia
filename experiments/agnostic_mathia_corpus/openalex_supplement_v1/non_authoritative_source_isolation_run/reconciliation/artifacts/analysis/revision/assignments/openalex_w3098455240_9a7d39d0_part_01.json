@@ -1,0 +1,311 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_boundary_reduction_birth_death_pairing": {
+      "analysis_id": "agnostic_oa_generation_837894fdde59bdd1822749fed7d0c946796a05cf57f17b0b75b178a14572c30b",
+      "boundary_or_failure": "Correct decoding depends on a total simplex order in which faces precede cofaces and earlier filtration simplices precede genuinely later ones, together with homology over a field and the stated column-reduction convention. Different tie orders may change representative columns while leaving the persistence intervals invariant. A malformed order, coefficient ring, or pivot definition invalidates the pairing semantics, and the standard algorithm has cubic worst-case complexity in the number of simplices.",
+      "interpretation": "The source changes representation from a filtered complex to one boundary matrix. Rows and columns follow a filtration-compatible simplex order, so the matrix simultaneously records face relations and time of entry. Left-to-right column additions make the lowest nonzero row index unique among nonzero columns. A final pivot low(j)=i pairs the simplex entering at i, which births a feature, with the simplex entering at j, which kills it; a birth column never used as a later pivot yields an infinite interval. Algebraic elimination thus exposes the interval endpoints implicit in the filtered inclusions.",
+      "nonparaphrase_operation": "Linearize a filtered incidence structure with an order respecting both dependency and filtration, build its boundary operator over the chosen field, and reduce columns until pivot indices are unique. Decode each pivot pair through the filtration grades, and distinguish zero columns later paired from zero columns that remain unpaired. Validate that decoded intervals are invariant under allowable tie reorderings even if representatives differ.",
+      "source_support": "The exact unit specifies the two ordering rules, defines the boundary matrix and low pivot, gives the left-to-right reduction algorithm, and states how pivot pairs and unpaired simplices produce finite and infinite barcode intervals. The representation-change workflow follows directly from this interface.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. This is standard cited material; matrix glyphs, inequalities, and pivot conventions should be checked against the typeset source before executable implementation.",
+      "unit_id": "agnostic_oa_boundary_reduction_birth_death_pairing"
+    },
+    "agnostic_oa_complex_representation_tradeoff": {
+      "analysis_id": "agnostic_oa_generation_7dde2947ad530c9865f393d681e8f9629432465a9b5afc3d310946c0768acd84",
+      "boundary_or_failure": "No representation simultaneously guarantees semantic fidelity, cheap construction, and small size in general. The Cech guarantee depends on nerve hypotheses and high-order intersections; the Vietoris-Rips comparison cited here depends on Euclidean geometry and scale conventions, and its clique complex can still have exponentially many simplices and dimension linear in the sample size. Truncating dimension improves cost but may discard the degrees needed by a downstream question.",
+      "interpretation": "The source makes representation choice a three-way tradeoff. Cech complexes connect directly to unions of neighborhoods but require testing many intersections. Vietoris-Rips complexes need only pairwise distances and are obtained as clique complexes of threshold graphs; in Euclidean space they sit in a controlled Cech comparison. That easier construction does not remove worst-case combinatorial explosion, so practical computations often truncate dimension or use sparsified alternatives. Approximation guarantee, construction interface, and object size are separate properties that must all be audited.",
+      "nonparaphrase_operation": "For each candidate representation, write a contract with three columns: what target invariant it provably approximates and through which maps, which observations are needed to build it, and worst-case size in the degrees of interest. Choose the representation and truncation jointly from the downstream homological degree, and carry the approximation distortion into interpretation. Reject a cheap proxy whose guarantee does not match the ambient geometry.",
+      "source_support": "The exact unit contrasts Cech intersection costs with pairwise construction of the Vietoris-Rips clique complex, states a Euclidean inclusion comparison, gives worst-case simplex count and dimension, and notes practical dimension truncation and sparsification. The three-axis selection contract is an inference from these facts.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. Exact epsilon factors and complexity exponents are damaged in normalization, and all approximation and algorithm claims remain attributed tutorial material rather than independently verified results.",
+      "unit_id": "agnostic_oa_complex_representation_tradeoff"
+    },
+    "agnostic_oa_diagram_comparison_and_stability": {
+      "analysis_id": "agnostic_oa_generation_04d452f894ac5b3f9d9ed613a369b180f3cf39df9e4be8751f810ac0cb9006fc",
+      "boundary_or_failure": "A persistence diagram becomes comparable only after choosing a ground metric, Wasserstein parameter, and convention for matching to the diagonal. Mapping diagrams to landscapes, images, kernels, or other feature spaces can enable statistics while forgetting information. The cited 1-Lipschitz stability claim holds only under favorable hypotheses and suitable input/output metrics; it does not make every feature map, estimator, or construction universally stable or statistically preferable.",
+      "interpretation": "A barcode can be represented equivalently as a multiset of birth-death points augmented by the diagonal with infinite multiplicity, which permits unmatched features to be paired to diagonal points. Wasserstein distances then compare two diagrams by optimizing a bijection, with bottleneck distance measuring the worst matched displacement. A second route maps diagrams into linear or kernel feature spaces better suited to averages and learning, but this is a new representation with its own information loss. Stability supplies an interface check: under stated conditions, perturbation of the filtered input bounds bottleneck movement of the output.",
+      "nonparaphrase_operation": "Choose comparison geometry according to the question: use an optimal-matching metric when individual interval displacement matters, or an explicit feature map when downstream linear statistics matter. State the ground metric, diagonal convention, exponent, and any information discarded by the feature map. Before interpreting robustness, match the actual pipeline to a stability theorem and propagate its input bound to the selected output representation.",
+      "source_support": "The exact unit defines diagrams with infinite diagonal multiplicity, Wasserstein and bottleneck distances via bijections, surveys feature-space mappings, and attributes a conditional Lipschitz stability theorem for persistent-homology output. The metric-selection and information-loss audit is an inference from that survey.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The cited distance, feature, statistical, and stability results were not independently verified, and normalized formulas require typeset checking for exact use.",
+      "unit_id": "agnostic_oa_diagram_comparison_and_stability"
+    },
+    "agnostic_oa_multiparameter_classification_obstruction": {
+      "analysis_id": "agnostic_oa_generation_ac55d3c4739a3b520b3293ac7a37420de2373e76fe1e662ccf5400f65ef2710f",
+      "boundary_or_failure": "The obstruction concerns the loss of the one-parameter interval-decomposition theorem when the index set has two or more independent directions. It is not a claim that multiparameter persistence is uncomputable or devoid of useful invariants, nor does the source provide a complete replacement classification. Zigzag diagrams with reversed arrows and diagrams of general simplicial maps are separate extensions with cited algorithms. The normalized two-parameter diagram is visually damaged.",
+      "interpretation": "For an ordinary filtration, a total order constrains how information can be born, persist, and die, enabling interval decomposition. Reversing some arrows produces a zigzag diagram that still admits dedicated computation, but introducing independent parameters changes the index geometry to a partial-order grid. The source states that the Fundamental Theorem and a generalized-interval barcode no longer apply there. The failure is structural rather than merely an implementation gap: incomparable directions can interact in ways that a list of one-dimensional lifetimes cannot encode.",
+      "nonparaphrase_operation": "Inspect the indexing category before choosing a compressed invariant. If it is a one-dimensional chain or a supported zigzag, use only the corresponding classification and algorithm. If it contains independent incomparable directions, retain the full module or declare any chosen summary to be partial; do not force it into a barcode vocabulary whose theorem no longer applies. Separate computability of maps from completeness of classification.",
+      "source_support": "The exact unit distinguishes forward filtrations, zigzags, general simplicial maps, and multifiltrations, cites algorithms for the first extensions, and explicitly states that the interval-classification theorem fails for more than one parameter. The indexing-geometry gate is an inference from this contrast.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. No complete multiparameter classification or algorithm was inferred, and the cited zigzag, simplicial-map, and obstruction results were not independently checked.",
+      "unit_id": "agnostic_oa_multiparameter_classification_obstruction"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_boundary_reduction_birth_death_pairing": {
+      "analysis_id": "agnostic_oa_critic_4aede858afe7ba539c6a084a99814f6a15e719f8b71b30c1a300f73def65eca2",
+      "context_risk": "The normalized excerpt mixes the F2 incidence-matrix presentation with a note about general fields, and exact matrix or inequality glyphs require typeset verification. Filtration position in the total simplex order is not the same datum as the filtration grade dg used to form interval endpoints.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w3098455240",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "isolated_source_grounded_critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the exact SHA-bound critic assignment, and its seven bound local unit artifacts only; no network, other outputs, other sources, issues, or delegated review."
+      },
+      "decision": "revise",
+      "faithfulness": "The core representation change, left-to-right pivot reduction, finite pairing, and unpaired infinite interval are accurately captured. However, saying that the matrix itself records time of entry and that the simplex 'entering at i' births the feature conflates the total-order index i with the filtration grade dg(sigma_i). The source decodes endpoints only after applying dg.",
+      "missed_mechanism": "The candidate should explicitly preserve the grade map alongside the incidence matrix and total order. The order guarantees compatibility, while matrix entries encode codimension-one face incidence; neither alone identifies the numerical filtration endpoint when several simplices share a filtration step.",
+      "paraphrase_risk": "Moderate. The linearization-and-decode workflow is useful, but it largely follows the algorithmic exposition; precision about the separate order, incidence, reduced pivot, and grade roles is necessary for it to become a reliable mechanism.",
+      "revision_instructions": "Rewrite the interpretation so sigma_i is the simplex at total-order position i, not a simplex entering filtration step i. State that the boundary matrix encodes incidence under a compatible order and that a separate dg mapping converts pivot pairs to interval endpoints. Keep the zero-column/later-pivot distinction. Remove or explicitly label tie-order invariance of intervals and representative changes as an external inference because this unit does not state it.",
+      "unit_id": "agnostic_oa_boundary_reduction_birth_death_pairing",
+      "unsupported_or_imported": "The claim about invariance under allowable tie reorderings and changed representatives is not stated in the artifact. The warning about arbitrary coefficient rings is directionally supported by the field requirement, but exact general-field matrix operations are not given by the displayed 0/1 construction."
+    },
+    "agnostic_oa_complex_representation_tradeoff": {
+      "analysis_id": "agnostic_oa_critic_c0a1aaf6cd19a029ef56d1c727d339afc17d9b12f6f4b47eb1f57e240b37f564",
+      "context_risk": "This tutorial excerpt surveys selected constructions and cites their guarantees; it does not establish a universal impossibility theorem over all representations. Exact scale constants are normalization-sensitive, and the Nerve-Theorem hypotheses and effects of dimension truncation are not developed in the unit.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w3098455240",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "isolated_source_grounded_critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the exact SHA-bound critic assignment, and its seven bound local unit artifacts only; no network, other outputs, other sources, issues, or delegated review."
+      },
+      "decision": "revise",
+      "faithfulness": "The comparison between Cech intersection tests, pairwise Vietoris-Rips construction, Euclidean Cech-VR inclusions, and worst-case clique-complex size is faithful. The candidate also correctly distinguishes construction convenience from worst-case object size.",
+      "missed_mechanism": "The source only demonstrates that the surveyed properties can come apart for these constructions. It does not justify the candidate's stronger opening that no representation can guarantee fidelity, cheap construction, and small size in general, nor does it quantify a distortion that can simply be carried into later interpretation.",
+      "paraphrase_risk": "Low to moderate. The three-column contract is a useful selection operation, but much of the interpretation tracks the source's contrast closely and gains distinct value only if its guarantee-versus-cost audit remains precisely scoped.",
+      "revision_instructions": "Replace the universal opening with a source-bounded claim about the constructions surveyed. Present possible loss from dimension truncation and the need to match downstream homological degree as explicit audit inferences, not reported source results. Describe the Euclidean comparison as cited inclusions under the artifact's scale convention; do not claim a general map-level distortion budget unless separately established.",
+      "unit_id": "agnostic_oa_complex_representation_tradeoff",
+      "unsupported_or_imported": "The universal three-way impossibility, the claim that truncation may discard exactly the degrees needed by a downstream task, and the instruction to propagate approximation distortion are not established in the unit. The reference to unspecified Nerve hypotheses is cautious but not recoverable from this excerpt alone."
+    },
+    "agnostic_oa_diagram_comparison_and_stability": {
+      "analysis_id": "agnostic_oa_critic_40f907310de5838a3eee27e95c583f7d8180407c4c253d4dff00478395c955f1",
+      "context_risk": "The passage is a literature survey, and its stability statement refers to an omitted pipeline step, unspecified favorable conditions, and suitable metrics. It does not establish comparative statistical quality or stability for the surveyed landscapes, images, kernels, estimators, or software.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w3098455240",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "isolated_source_grounded_critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the exact SHA-bound critic assignment, and its seven bound local unit artifacts only; no network, other outputs, other sources, issues, or delegated review."
+      },
+      "decision": "revise",
+      "faithfulness": "The diagram convention, bijection-based Wasserstein distances, bottleneck specialization, feature-space route, and conditional 1-Lipschitz stability claim are summarized accurately. The candidate overstates the survey when it assigns every feature representation its own information loss and suggests propagating the barcode stability bound through a selected feature representation without a separate guarantee.",
+      "missed_mechanism": "The statistical motivation has three routes, not only matching metrics and feature maps: random simplicial complexes can act as null models, while empirical comparison, significance, and averaging are the motivating tasks. The diagonal's infinite multiplicity equalizes cardinality for bijections; interpreting it specifically as unmatched-feature deletion is a reasonable inference but should remain labeled as such.",
+      "paraphrase_risk": "Moderate. The metric-selection protocol adds an operational layer, but the candidate closely follows the survey and becomes style-like where it offers generic 'choose according to the question' advice without preserving the source's three statistical roles and theorem boundaries.",
+      "revision_instructions": "Do not claim that every landscape, image, kernel, or other feature map necessarily forgets information; require a representation-specific result before asserting loss or injectivity. Do not propagate bottleneck stability through a feature map unless that map has its own compatible continuity bound. Add the null-model route and distinguish comparison/significance from averaging. Keep the stability theorem explicitly conditional and confined to the source's unspecified pipeline interface.",
+      "unit_id": "agnostic_oa_diagram_comparison_and_stability",
+      "unsupported_or_imported": "Information loss for all surveyed feature maps, the interpretation that a metric should be chosen because individual interval displacement matters, and automatic propagation from filtered-input stability to a chosen output representation are not established by this unit."
+    },
+    "agnostic_oa_multiparameter_classification_obstruction": {
+      "analysis_id": "agnostic_oa_critic_0edd748e9f49f031f0c6425804e380677ffbd42fac31516958ca9dbbfd92870d",
+      "context_risk": "The short excursus cites algorithms and a multiparameter obstruction without proofs or replacement invariants, and the normalized two-parameter diagram is visually damaged. Its phrase that there is no generalized interval should not be expanded into a complete classification theorem or impossibility claim beyond the stated setting.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w3098455240",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "isolated_source_grounded_critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the exact SHA-bound critic assignment, and its seven bound local unit artifacts only; no network, other outputs, other sources, issues, or delegated review."
+      },
+      "decision": "revise",
+      "faithfulness": "The candidate correctly distinguishes ordinary forward filtrations, zigzag arrows, general simplicial maps, and multifiltrations, and it accurately limits the stated obstruction to loss of the one-parameter Fundamental Theorem rather than claiming that multiparameter persistence is uncomputable.",
+      "missed_mechanism": "The source establishes only that cited algorithms compute persistence for zigzags and general simplicial maps; it does not state a zigzag interval classification in this unit. Its multiparameter contrast motivates an indexing-geometry gate, but the proposed causal story about incomparable directions and the prescription to retain the full module are critic inferences rather than supplied mechanisms.",
+      "paraphrase_risk": "Low. The computation-versus-completeness distinction and pre-classification inspection of indexing geometry are substantive, provided their unsupported classification language is removed.",
+      "revision_instructions": "For zigzags and general simplicial maps, claim only the cited availability of computation in this artifact; remove 'corresponding classification' unless separately sourced. Mark partial-order interactions and inability of one-dimensional lifetimes to encode them as explanatory inferences, not statements from the unit. Recast retaining the full module or declaring summaries partial as a conservative critic recommendation rather than the source's mandated replacement.",
+      "unit_id": "agnostic_oa_multiparameter_classification_obstruction",
+      "unsupported_or_imported": "A zigzag classification, the detailed mechanism of incomparable-direction interaction, and the requirement to retain the full module are not stated. The artifact only gives algorithms for the first extensions and states failure of the Fundamental Theorem and generalized intervals for more than one parameter."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_boundary_reduction_birth_death_pairing": "agnostic_oa_revision_280d25931c3b2f00e148890b4236ad0c8ab7e6416e27323b712a822be3a4e91b",
+    "agnostic_oa_complex_representation_tradeoff": "agnostic_oa_revision_e53885881d9c3280cb64170ff3de88380a74966d4e5be0ac85817ba3f92b4a2c",
+    "agnostic_oa_diagram_comparison_and_stability": "agnostic_oa_revision_be4ab6a687da8e0fb50206cbe368549a01e86ac473a9d3f858f71802a0767f2f",
+    "agnostic_oa_multiparameter_classification_obstruction": "agnostic_oa_revision_3e1fd964256ff25b125634925af43a99ff9308ae3e71600a2cb532b1e7c0c625"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w3098455240_9a7d39d0_part_01.jsonl",
+  "source_id": "openalex_w3098455240",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_complex_representation_tradeoff.txt",
+      "artifact_bytes": 4121,
+      "artifact_relpath": "depth/units/agnostic_oa_complex_representation_tradeoff.txt",
+      "artifact_sha256": "5a03131f9344a297665bd46e0905d2b9b95269d28e9a3f8b827b71a352c7f053",
+      "content_sha256": "c8ad6739808873f232d28aa938e607f689b5a00822d71f3df8f3323f7881186b",
+      "context_note": "The approximation inclusions, complexity bounds, and algorithms are tutorial material attributed to cited sources. Later construction surveys provide supporting alternatives but are not treated as independent theorem evidence here.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_complex_representation_tradeoff",
+            "agnostic_oa_invariant_preserving_reduction_vs_search",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces preservation/obstruction reasoning: representations and reductions are useful only under stated topological guarantees, and changing indexing geometry creates a genuine classification obstruction. No new family or geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 820,
+      "line_start": 767,
+      "representation_dependency": "High. The comparison changes with ambient geometry, scale convention, truncation dimension, and complex construction; the damaged epsilon and exponent glyphs preclude relying on exact constants from the normalized text.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The source makes representation choice explicit: a complex should approximate the intended topology, yet intersection-based constructions may be expensive, while pairwise clique constructions are easier to form but remain large in the worst case and provide only a controlled approximation under stated geometry. This is a generic exactness-versus-tractability comparison.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Choose a combinatorial model by balancing guarantees, computability, and size",
+      "unit_id": "agnostic_oa_complex_representation_tradeoff",
+      "unit_type": "representation_tradeoff"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_boundary_reduction_birth_death_pairing.txt",
+      "artifact_bytes": 3760,
+      "artifact_relpath": "depth/units/agnostic_oa_boundary_reduction_birth_death_pairing.txt",
+      "artifact_sha256": "3472b9dd684055ccc822e4fc2e0211acb7282077152447ede564da89206a3ffd",
+      "content_sha256": "a17b2fc3359d80608a21b59a708bf931cdac6643aedd640c772ea2e73272c144",
+      "context_note": "The algorithm is standard cited material, not a new contribution. The unit captures the correctness interface and pairing semantics, not the subsequent concrete matrix execution or dataset-dependent optimizations.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 1052,
+      "line_start": 993,
+      "representation_dependency": "High. Correct interpretation depends on the filtration-compatible order, field coefficients, column-reduction convention, and exact pivot definition; normalized matrix and inequality glyphs require verification before executable use.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "Ordering simplices compatibly with faces and filtration converts the filtered complex into a boundary matrix; reduction then identifies pivot pairings that translate back into finite or infinite persistence intervals. This is a reusable change of representation linking combinatorial inclusion data to a classified summary.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "A filtration-compatible boundary representation exposes birth-death pairings",
+      "unit_id": "agnostic_oa_boundary_reduction_birth_death_pairing",
+      "unit_type": "representation_change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_diagram_comparison_and_stability.txt",
+      "artifact_bytes": 6202,
+      "artifact_relpath": "depth/units/agnostic_oa_diagram_comparison_and_stability.txt",
+      "artifact_sha256": "87f4f9d5e8d3d10d752b434f4ba7638cd854383c9a9abe344b0be439e6528e19",
+      "content_sha256": "44f1bb92fa062c93b9f90ed672a25d697c70cf4b99f09c300f06167bded5f3a2",
+      "context_note": "This section is a literature survey. The distances, feature maps, and stability theorem are cited results, and the source does not establish that any one statistical representation is universally preferable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 1214,
+      "line_start": 1132,
+      "representation_dependency": "High. Diagram comparison depends on diagonal multiplicity, the ground metric and Wasserstein parameter; feature mappings can forget information, and the stability claim holds only under unstated favorable conditions in the cited theorem. Formula glyphs should be checked before exact use.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The source distinguishes two ways to make barcode output comparable: regard equivalent persistence diagrams as points in a metric space and match them, or map diagrams into spaces suited to statistical operations. It then states the stability interface: under suitable hypotheses, perturbations of the filtered input are controlled by bottleneck distance at the output.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Equivalent summaries support comparison only after a metric or feature-space choice",
+      "unit_id": "agnostic_oa_diagram_comparison_and_stability",
+      "unit_type": "metric_representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_multiparameter_classification_obstruction.txt",
+      "artifact_bytes": 2227,
+      "artifact_relpath": "depth/units/agnostic_oa_multiparameter_classification_obstruction.txt",
+      "artifact_sha256": "a108230523710638495a0b5db4ebc400e1f81581ab9fc4633df76f17ec72ba93",
+      "content_sha256": "10190b48fed505cda172719d29f5ca7cf5fd4395df5f3115596fe17087d6c643",
+      "context_note": "The zigzag and simplicial-map algorithms and the failure of the one-parameter Fundamental Theorem are cited background. This unit records the stated obstruction without claiming a complete classification of multiparameter persistence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_complex_representation_tradeoff",
+            "agnostic_oa_invariant_preserving_reduction_vs_search",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces preservation/obstruction reasoning: representations and reductions are useful only under stated topological guarantees, and changing indexing geometry creates a genuine classification obstruction. No new family or geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 1253,
+      "line_start": 1215,
+      "representation_dependency": "High. The conclusion depends on the diagram category and partial-order geometry; the normalized two-parameter diagram is visually damaged, so only the surrounding prose is reliable evidence.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "Zigzag diagrams remain computable when arrows reverse, but varying more than one independent parameter removes the one-dimensional interval decomposition on which barcode compression relies. The source thereby identifies indexing order, not merely algorithm choice, as a structural boundary of the representation.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Changing the indexing geometry breaks interval classification",
+      "unit_id": "agnostic_oa_multiparameter_classification_obstruction",
+      "unit_type": "obstruction"
+    }
+  ]
+}

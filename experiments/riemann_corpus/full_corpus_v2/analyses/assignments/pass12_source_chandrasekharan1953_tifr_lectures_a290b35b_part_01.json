@@ -1,0 +1,2879 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_chandrasekharan1953_tifr_lectures_a290b35b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "chandrasekharan1953_tifr_lectures",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the theorem, the powering proof, the derivative-vanishing equality case, and the note motivating removal of boundary restrictions.",
+      "line_end": 193,
+      "line_start": 113,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed Cauchy integrals are OCR-fragmented but the power-and-limit mechanism is recoverable from prose; verify formulas against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Raises the function to high powers so fixed contour constants disappear after taking nth roots, then repeats the device on derivatives to force constancy at an interior maximum.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maximum modulus from powering and Cauchy estimates",
+      "unit_artifact_relpath": "depth/units/ch53_u01.txt",
+      "unit_bytes": 3762,
+      "unit_id": "ch53_u01",
+      "unit_sha256": "82b95e807c044010983444df9e92bbfa000893892088d1e7873a20435208926e",
+      "unit_type": "theorem-plus-proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u01.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 105,
+          "line_end": 112,
+          "text": "   14 Prime Number Theorem and the magnitude of pn . . . . 146\n\n<!-- source-page: 7 -->\n\nLecture 1\n\nThe Maximum Principle\n\n",
+          "sha256": "38b8e83d34902b115cb286d47edaaf5576e080f82b0da8fa781fb318b806615b"
+        },
+        "after": {
+          "line_start": 194,
+          "line_end": 201,
+          "text": "\n    Theorem 2. If f is regular in a domain D and is not a constant, and\n    M = max | f |, then\n            z∈D\n                                     | f (zo )| < M,       zo ∈ D.\n          For the proof of this theorem we need a\n\n<!-- source-page: 9 -->\n",
+          "sha256": "e102b22cc8faaaa2d08d95fcb73905d0cf032691357edfaf40c27f2aeb61738d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 1: The Maximum Principle",
+            "line_end": 446,
+            "line_start": 109,
+            "mathematical_role": "Maximum-modulus mechanisms, boundary formulations, minimum principles, and boundary values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 193,
+          "line_start": 113,
+          "title": "Maximum modulus from powering and Cauchy estimates",
+          "unit_id": "ch53_u01",
+          "unit_type": "theorem-plus-proof mechanism",
+          "why_material": "Raises the function to high powers so fixed contour constants disappear after taking nth roots, then repeats the device on derivatives to force constancy at an interior maximum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the theorem, the powering proof, the derivative-vanishing equality case, and the note motivating removal of boundary restrictions.",
+          "representation_dependency": "Displayed Cauchy integrals are OCR-fragmented but the power-and-limit mechanism is recoverable from prose; verify formulas against the scan.",
+          "unit_id": "ch53_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 337,
+            "line_start": 195,
+            "title": "Local circular maximum principle globalized without a regular contour boundary",
+            "unit_id": "ch53_u02",
+            "unit_type": "lemma-and-globalization",
+            "why_material": "Derives the circle-mean equality case and propagates it through connectedness to obtain the interior strict maximum principle on an arbitrary domain, then locates maxima on the boundary of bounded domains."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source progressively turns local maximum control into stripwise and asymptotic interpolation by introducing barriers whose boundary effect vanishes while their growth effect persists.",
+            "limit": "This is a within-source methodological relation, not a claim that all later strip estimates reduce to one identical theorem.",
+            "parent_local_unit_ids": [
+              "ch53_u01",
+              "ch53_u04",
+              "ch53_u05",
+              "ch53_u06"
+            ],
+            "title": "Maximum principles as growth-transport devices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The local lemma and the connectedness argument are inseparable setup for Theorems 2 and 3.",
+      "line_end": 337,
+      "line_start": 195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose with recoverable circle integrals; one contour subscript is degraded and should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the circle-mean equality case and propagates it through connectedness to obtain the interior strict maximum principle on an arbitrary domain, then locates maxima on the boundary of bounded domains.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        9,
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local circular maximum principle globalized without a regular contour boundary",
+      "unit_artifact_relpath": "depth/units/ch53_u02.txt",
+      "unit_bytes": 6830,
+      "unit_id": "ch53_u02",
+      "unit_sha256": "a6dc6d1a9af3285b9c3b7976a9f79e548b74271d6c6429eee85353ad229dfc7b",
+      "unit_type": "lemma-and-globalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u02.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 187,
+          "line_end": 194,
+          "text": "             we prove that all derivatives of f vanish at z0 (an arbitrary point\n             of D). Thus f is a constant.\n                                                                                 \u0003\n\n    Remark. The above proof is due to Landau [12, p.105]. We shall now\n    show that the restrictions on the nature of the boundary C postulated in\n    the above theorem cab be dispensed with.\n\n",
+          "sha256": "0c1eaaf07b2ec9ac73cfc323a8ece43e99cbb70de5a09e4d418c553b5c1fc508"
+        },
+        "after": {
+          "line_start": 338,
+          "line_end": 345,
+          "text": "    Theorem 4. If f is regular in a bounded domain D, is non-constant, and\n    if for every sequence {zn }, zn ∈ D, which converges to a point ξ ∈ Bd D,\n    we have\n                                lim sup | f (zn )| ≤ M,\n                                    n→∞\n    then | f (z)| < M for all z ∈ D. [17, p.111]\n\n<!-- source-page: 12 -->\n",
+          "sha256": "f6ae00ff8f607e0ae9e0c657ae89a6678b01557babbf4b93db47ee2ffc63e285"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 1: The Maximum Principle",
+            "line_end": 446,
+            "line_start": 109,
+            "mathematical_role": "Maximum-modulus mechanisms, boundary formulations, minimum principles, and boundary values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 337,
+          "line_start": 195,
+          "title": "Local circular maximum principle globalized without a regular contour boundary",
+          "unit_id": "ch53_u02",
+          "unit_type": "lemma-and-globalization",
+          "why_material": "Derives the circle-mean equality case and propagates it through connectedness to obtain the interior strict maximum principle on an arbitrary domain, then locates maxima on the boundary of bounded domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The local lemma and the connectedness argument are inseparable setup for Theorems 2 and 3.",
+          "representation_dependency": "Mostly prose with recoverable circle integrals; one contour subscript is degraded and should be scan-checked.",
+          "unit_id": "ch53_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 193,
+            "line_start": 113,
+            "title": "Maximum modulus from powering and Cauchy estimates",
+            "unit_id": "ch53_u01",
+            "unit_type": "theorem-plus-proof mechanism",
+            "why_material": "Raises the function to high powers so fixed contour constants disappear after taking nth roots, then repeats the device on derivatives to force constancy at an interior maximum."
+          },
+          {
+            "line_end": 443,
+            "line_start": 338,
+            "title": "Boundary limsup control by compact exhaustion",
+            "unit_id": "ch53_u03",
+            "unit_type": "boundary criterion and consequences",
+            "why_material": "Uses nested compact subsets and boundary-approaching maximizing points to convert sequential boundary limsup bounds into interior bounds, then derives minimum and boundary-value principles via reciprocals and exponentials."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the compact-exhaustion proof and the corollaries needed to interpret boundary maxima and minima.",
+      "line_end": 443,
+      "line_start": 338,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose carries the mechanism; compact-set and reciprocal notation is legible in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses nested compact subsets and boundary-approaching maximizing points to convert sequential boundary limsup bounds into interior bounds, then derives minimum and boundary-value principles via reciprocals and exponentials.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        12,
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary limsup control by compact exhaustion",
+      "unit_artifact_relpath": "depth/units/ch53_u03.txt",
+      "unit_bytes": 5284,
+      "unit_id": "ch53_u03",
+      "unit_sha256": "856b49d56f1fae676df7f1714f09eaf5aabde6f4d713f40c170f66eea039c72c",
+      "unit_type": "boundary criterion and consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u03.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 330,
+          "line_end": 337,
+          "text": "    an immediate alternative proof once the Lemma is established.\n    Theorem 3. If f is regular in a bounded domain D, and continuous\n    in D̄, then f attains its maximum at some point in Bd D, unless f is a\n    constant.\n           Since D is bounded, D̄ is also bounded. And a continuous function\n    on a compact set attains its maximum, and by Theorem 2 this maximum 6\n    cannot be attained at an interior point of D. Note that the continuity of\n    | f | is used.\n",
+          "sha256": "4e14f28d50d6d214080d590f055aad04a3a2ca6251cd7d9c6d159807bf3b627f"
+        },
+        "after": {
+          "line_start": 444,
+          "line_end": 451,
+          "text": "\n<!-- source-page: 15 -->\n\nLecture 2\n\nThe Phragmen-Lindelof\nprinciple\n\n",
+          "sha256": "0bc79608709d5e27d768c0b2c4ac2a72f2e8e2704f6334cf8c1bcaed1330c832"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 1: The Maximum Principle",
+            "line_end": 446,
+            "line_start": 109,
+            "mathematical_role": "Maximum-modulus mechanisms, boundary formulations, minimum principles, and boundary values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 443,
+          "line_start": 338,
+          "title": "Boundary limsup control by compact exhaustion",
+          "unit_id": "ch53_u03",
+          "unit_type": "boundary criterion and consequences",
+          "why_material": "Uses nested compact subsets and boundary-approaching maximizing points to convert sequential boundary limsup bounds into interior bounds, then derives minimum and boundary-value principles via reciprocals and exponentials."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the compact-exhaustion proof and the corollaries needed to interpret boundary maxima and minima.",
+          "representation_dependency": "Prose carries the mechanism; compact-set and reciprocal notation is legible in the text layer.",
+          "unit_id": "ch53_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 337,
+            "line_start": 195,
+            "title": "Local circular maximum principle globalized without a regular contour boundary",
+            "unit_id": "ch53_u02",
+            "unit_type": "lemma-and-globalization",
+            "why_material": "Derives the circle-mean equality case and propagates it through connectedness to obtain the interior strict maximum principle on an arbitrary domain, then locates maxima on the boundary of bounded domains."
+          },
+          {
+            "line_end": 518,
+            "line_start": 452,
+            "title": "Bounded-strip Phragmen-Lindelof and multiplicative interpolation",
+            "unit_id": "ch53_u04",
+            "unit_type": "barrier argument",
+            "why_material": "Controls an infinite strip by multiplying by a Gaussian-type damping factor, applying the finite maximum principle, and removing the perturbation; normalization yields the three-lines geometric interpolation bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Starts with the crude bounded-strip theorem and includes its sharper restatement and equality case.",
+      "line_end": 518,
+      "line_start": 452,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponential damping exponent and linear weight are formula-sensitive but supported by surrounding prose; verify scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls an infinite strip by multiplying by a Gaussian-type damping factor, applying the finite maximum principle, and removing the perturbation; normalization yields the three-lines geometric interpolation bound.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounded-strip Phragmen-Lindelof and multiplicative interpolation",
+      "unit_artifact_relpath": "depth/units/ch53_u04.txt",
+      "unit_bytes": 2702,
+      "unit_id": "ch53_u04",
+      "unit_sha256": "d7bde6a5d19ff28e81d28b5df8015b56581a3de7a5d35407634af2f9cff0fb9b",
+      "unit_type": "barrier argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u04.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 444,
+          "line_end": 451,
+          "text": "\n<!-- source-page: 15 -->\n\nLecture 2\n\nThe Phragmen-Lindelof\nprinciple\n\n",
+          "sha256": "0bc79608709d5e27d768c0b2c4ac2a72f2e8e2704f6334cf8c1bcaed1330c832"
+        },
+        "after": {
+          "line_start": 519,
+          "line_end": 526,
+          "text": "        More generally we have [12, p.107]                                       \u0003\n\n<!-- source-page: 17 -->\n\n2. The Phragmen-Lindelof principle                                     11\n\nTheorem 2. Suppose that\n  (i) f is regular in an open half-strip D defined by:\n",
+          "sha256": "75f12ae7f7c3ce57d56717bbba0f33f0a7f7608c1b2337dcdd33297cd430fc25"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 2: The Phragmen-Lindelof principle",
+            "line_end": 726,
+            "line_start": 447,
+            "mathematical_role": "Extension of maximum principles to unbounded strips via damping and interpolation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 518,
+          "line_start": 452,
+          "title": "Bounded-strip Phragmen-Lindelof and multiplicative interpolation",
+          "unit_id": "ch53_u04",
+          "unit_type": "barrier argument",
+          "why_material": "Controls an infinite strip by multiplying by a Gaussian-type damping factor, applying the finite maximum principle, and removing the perturbation; normalization yields the three-lines geometric interpolation bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Starts with the crude bounded-strip theorem and includes its sharper restatement and equality case.",
+          "representation_dependency": "The exponential damping exponent and linear weight are formula-sensitive but supported by surrounding prose; verify scan.",
+          "unit_id": "ch53_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 443,
+            "line_start": 338,
+            "title": "Boundary limsup control by compact exhaustion",
+            "unit_id": "ch53_u03",
+            "unit_type": "boundary criterion and consequences",
+            "why_material": "Uses nested compact subsets and boundary-approaching maximizing points to convert sequential boundary limsup bounds into interior bounds, then derives minimum and boundary-value principles via reciprocals and exponentials."
+          },
+          {
+            "line_end": 610,
+            "line_start": 525,
+            "title": "Half-strip Phragmen-Lindelof below the critical exponential growth",
+            "unit_id": "ch53_u05",
+            "unit_type": "growth-threshold theorem and counterexample",
+            "why_material": "Builds a tailored exponential barrier whose decay dominates subcritical growth, and identifies a critical-growth counterexample showing why the threshold and barrier shape are natural."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source progressively turns local maximum control into stripwise and asymptotic interpolation by introducing barriers whose boundary effect vanishes while their growth effect persists.",
+            "limit": "This is a within-source methodological relation, not a claim that all later strip estimates reduce to one identical theorem.",
+            "parent_local_unit_ids": [
+              "ch53_u01",
+              "ch53_u04",
+              "ch53_u05",
+              "ch53_u06"
+            ],
+            "title": "Maximum principles as growth-transport devices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes theorem, barrier construction, rectangle limit, sharpness remark, and immediate corollary.",
+      "line_end": 610,
+      "line_start": 525,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested exponentials are heavily layout-dependent; the prose makes the domination argument clear, but the exact growth formula needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a tailored exponential barrier whose decay dominates subcritical growth, and identifies a critical-growth counterexample showing why the threshold and barrier shape are natural.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Half-strip Phragmen-Lindelof below the critical exponential growth",
+      "unit_artifact_relpath": "depth/units/ch53_u05.txt",
+      "unit_bytes": 3329,
+      "unit_id": "ch53_u05",
+      "unit_sha256": "abe2d5aad3dcbbad350a0e686696cf472a1672321a046703c9b2a4aabf9f29c6",
+      "unit_type": "growth-threshold theorem and counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u05.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 517,
+          "line_end": 524,
+          "text": "                                             M1L(z) M21−L(z)\n12   and apply Theorem 1 to f1 (z).\n        More generally we have [12, p.107]                                       \u0003\n\n<!-- source-page: 17 -->\n\n2. The Phragmen-Lindelof principle                                     11\n\n",
+          "sha256": "2614689b83fe972a7132420847ac6a5ab1408c9df5a4f6b1e7cdb8c4719ad5eb"
+        },
+        "after": {
+          "line_start": 611,
+          "line_end": 618,
+          "text": "\n<!-- source-page: 19 -->\n\n2. The Phragmen-Lindelof principle                                     13\n\nCorollary 2. Suppose that hypotheses (i) and (iii) of Theorem 2 hold;\nsuppose further that f is continuous on Bd D,\n\n",
+          "sha256": "f9262ed72fd6f7f0d764422e51c89e5a8f519980dcb86e22f64a694ccbec43fc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 2: The Phragmen-Lindelof principle",
+            "line_end": 726,
+            "line_start": 447,
+            "mathematical_role": "Extension of maximum principles to unbounded strips via damping and interpolation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 610,
+          "line_start": 525,
+          "title": "Half-strip Phragmen-Lindelof below the critical exponential growth",
+          "unit_id": "ch53_u05",
+          "unit_type": "growth-threshold theorem and counterexample",
+          "why_material": "Builds a tailored exponential barrier whose decay dominates subcritical growth, and identifies a critical-growth counterexample showing why the threshold and barrier shape are natural."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes theorem, barrier construction, rectangle limit, sharpness remark, and immediate corollary.",
+          "representation_dependency": "Nested exponentials are heavily layout-dependent; the prose makes the domination argument clear, but the exact growth formula needs scan verification.",
+          "unit_id": "ch53_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 518,
+            "line_start": 452,
+            "title": "Bounded-strip Phragmen-Lindelof and multiplicative interpolation",
+            "unit_id": "ch53_u04",
+            "unit_type": "barrier argument",
+            "why_material": "Controls an infinite strip by multiplying by a Gaussian-type damping factor, applying the finite maximum principle, and removing the perturbation; normalization yields the three-lines geometric interpolation bound."
+          },
+          {
+            "line_end": 719,
+            "line_start": 616,
+            "title": "Interpolation of polynomial and limiting boundary growth across a strip",
+            "unit_id": "ch53_u06",
+            "unit_type": "asymptotic interpolation",
+            "why_material": "Transforms unequal boundary powers by a single-valued complex power and transforms asymptotic boundary bounds by an auxiliary rational factor, producing interior exponents as linear interpolants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source progressively turns local maximum control into stripwise and asymptotic interpolation by introducing barriers whose boundary effect vanishes while their growth effect persists.",
+            "limit": "This is a within-source methodological relation, not a claim that all later strip estimates reduce to one identical theorem.",
+            "parent_local_unit_ids": [
+              "ch53_u01",
+              "ch53_u04",
+              "ch53_u05",
+              "ch53_u06"
+            ],
+            "title": "Maximum principles as growth-transport devices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines Corollary 2, Theorem 3, and its limiting corollaries because they share the same strip-interpolation move.",
+      "line_end": 719,
+      "line_start": 616,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Branch and power notation is partly fragmented; mathematical prose is sufficient for planning, with scan verification required for exact exponents.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms unequal boundary powers by a single-valued complex power and transforms asymptotic boundary bounds by an auxiliary rational factor, producing interior exponents as linear interpolants.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Interpolation of polynomial and limiting boundary growth across a strip",
+      "unit_artifact_relpath": "depth/units/ch53_u06.txt",
+      "unit_bytes": 4445,
+      "unit_id": "ch53_u06",
+      "unit_sha256": "6a37e16dd2bd8b9561b30cb137d10e58fbcf3ce8a0542e962ff2c0d2162b19af",
+      "unit_type": "asymptotic interpolation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u06.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 608,
+          "line_end": 615,
+          "text": "                             f = O ee β−α , θ < 1,\n\n     then | f | ≤ M in D.\n\n<!-- source-page: 19 -->\n\n2. The Phragmen-Lindelof principle                                     13\n\n",
+          "sha256": "d5974b2217301155ffae7b005df93cb1c39b2ad09b406086777fd3da622b3dfb"
+        },
+        "after": {
+          "line_start": 720,
+          "line_end": 727,
+          "text": "\n<!-- source-page: 22 -->\n\n\n\n<!-- source-page: 23 -->\n\nLecture 3\n",
+          "sha256": "f389c6223049ce9215c4a7292e998f9c93cea45d2301b5fb426de1abd05d125c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 2: The Phragmen-Lindelof principle",
+            "line_end": 726,
+            "line_start": 447,
+            "mathematical_role": "Extension of maximum principles to unbounded strips via damping and interpolation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 719,
+          "line_start": 616,
+          "title": "Interpolation of polynomial and limiting boundary growth across a strip",
+          "unit_id": "ch53_u06",
+          "unit_type": "asymptotic interpolation",
+          "why_material": "Transforms unequal boundary powers by a single-valued complex power and transforms asymptotic boundary bounds by an auxiliary rational factor, producing interior exponents as linear interpolants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines Corollary 2, Theorem 3, and its limiting corollaries because they share the same strip-interpolation move.",
+          "representation_dependency": "Branch and power notation is partly fragmented; mathematical prose is sufficient for planning, with scan verification required for exact exponents.",
+          "unit_id": "ch53_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 610,
+            "line_start": 525,
+            "title": "Half-strip Phragmen-Lindelof below the critical exponential growth",
+            "unit_id": "ch53_u05",
+            "unit_type": "growth-threshold theorem and counterexample",
+            "why_material": "Builds a tailored exponential barrier whose decay dominates subcritical growth, and identifies a critical-growth counterexample showing why the threshold and barrier shape are natural."
+          },
+          {
+            "line_end": 772,
+            "line_start": 731,
+            "title": "Schwarz contraction and rigidity",
+            "unit_id": "ch53_u07",
+            "unit_type": "extremal lemma",
+            "why_material": "Divides out the forced zero, applies the maximum principle on expanding circles, and obtains both contraction and the rigid rotation equality case, including scaling to a general disk."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source progressively turns local maximum control into stripwise and asymptotic interpolation by introducing barriers whose boundary effect vanishes while their growth effect persists.",
+            "limit": "This is a within-source methodological relation, not a claim that all later strip estimates reduce to one identical theorem.",
+            "parent_local_unit_ids": [
+              "ch53_u01",
+              "ch53_u04",
+              "ch53_u05",
+              "ch53_u06"
+            ],
+            "title": "Maximum principles as growth-transport devices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the unit-disk theorem and its scaled version.",
+      "line_end": 772,
+      "line_start": 731,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core formulas are readable; one zero is rendered as the letter o but the context is unambiguous.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Divides out the forced zero, applies the maximum principle on expanding circles, and obtains both contraction and the rigid rotation equality case, including scaling to a general disk.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Schwarz contraction and rigidity",
+      "unit_artifact_relpath": "depth/units/ch53_u07.txt",
+      "unit_bytes": 1942,
+      "unit_id": "ch53_u07",
+      "unit_sha256": "ff9de43ccf742820e24054e28b7eb50fa5dec1372bff2b997293a14b98c72201",
+      "unit_type": "extremal lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u07.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 723,
+          "line_end": 730,
+          "text": "\n\n<!-- source-page: 23 -->\n\nLecture 3\n\nSchwarz’s Lemma\n\n",
+          "sha256": "1ef4821a5ee9605b5a7d49ccb5f75be0244f2467e2dcf9784ae647a103ca20b3"
+        },
+        "after": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "\n     Theorem 2 (Caratheodory’s Inequality). [12, p.112] Suppose that\n\n          (i) f is regular in |z| < R f is non-constant\n\n       (ii) f (o) = 0\n\n      (iii) Re f ≤ ∪ in |z| < R. (Thus ∪ > 0, since f is not a constant).\n",
+          "sha256": "f9a712abaa7468e56009092511c19a0b4db37eb1fbff38dd59a45249c880a958"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 3: Schwarz's Lemma",
+            "line_end": 1078,
+            "line_start": 727,
+            "mathematical_role": "Disk contractions, half-plane transforms, coefficient bounds, and derivative inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 772,
+          "line_start": 731,
+          "title": "Schwarz contraction and rigidity",
+          "unit_id": "ch53_u07",
+          "unit_type": "extremal lemma",
+          "why_material": "Divides out the forced zero, applies the maximum principle on expanding circles, and obtains both contraction and the rigid rotation equality case, including scaling to a general disk."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the unit-disk theorem and its scaled version.",
+          "representation_dependency": "Core formulas are readable; one zero is rendered as the letter o but the context is unambiguous.",
+          "unit_id": "ch53_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 719,
+            "line_start": 616,
+            "title": "Interpolation of polynomial and limiting boundary growth across a strip",
+            "unit_id": "ch53_u06",
+            "unit_type": "asymptotic interpolation",
+            "why_material": "Transforms unequal boundary powers by a single-valued complex power and transforms asymptotic boundary bounds by an auxiliary rational factor, producing interior exponents as linear interpolants."
+          },
+          {
+            "line_end": 836,
+            "line_start": 774,
+            "title": "Caratheodory inequality via a half-plane-to-disk transform",
+            "unit_id": "ch53_u08",
+            "unit_type": "representation change",
+            "why_material": "Encodes a real-part bound as a disk-valued Möbius transform, applies Schwarz's lemma, and inverts the transform to bound the original function and identify equality cases."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes centered and translated forms and the transition to sharper coefficient inequalities.",
+      "line_end": 836,
+      "line_start": 774,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Möbius transform and bound are recoverable, though the upper-bound symbol is OCR-corrupted; verify the displayed statement.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Encodes a real-part bound as a disk-valued Möbius transform, applies Schwarz's lemma, and inverts the transform to bound the original function and identify equality cases.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Caratheodory inequality via a half-plane-to-disk transform",
+      "unit_artifact_relpath": "depth/units/ch53_u08.txt",
+      "unit_bytes": 2545,
+      "unit_id": "ch53_u08",
+      "unit_sha256": "00f699b07112b5737fd705b4a54be07066ed84c7c80950e038bab1605ef4d2dc",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u08.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 766,
+          "line_end": 773,
+          "text": "     Theorem 1′ : Let f be regular and | f | ≤ M in |z| < R, and f (o) = 0.\n     Then\n                                           M|z|\n                                | f (z)| ≤      , |z| < R.\n                                            R\n19   In particular, this holds if f is regular in |z| < R, and continuous in\n     |z| ≤ R, and | f | ≤ M on |z| = R.\n\n",
+          "sha256": "a3f31ff7a0ee63f0a56bde0a1396c2ebbac3201763c12329e6f9f4d21405ed70"
+        },
+        "after": {
+          "line_start": 837,
+          "line_end": 844,
+          "text": "                                                                           ∞\n                                                                               an zn , be\n                                                                           P\nTheorem 3 (Borel’s Inequality). [12, p.114] Let f (z) =\n                                                                       n=0\nregular in |z| < 1. Let Re f ≤ ∪. f (o) = ao = β + iγ.\n    Then\n                   |an | ≤ 2(∪ − β) ≡ 2 ∪1 , say, n > 0.\n",
+          "sha256": "6ef07bd9ee645fa71db3d220880df11286eed427ec3a2265921265b8cf781786"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 3: Schwarz's Lemma",
+            "line_end": 1078,
+            "line_start": 727,
+            "mathematical_role": "Disk contractions, half-plane transforms, coefficient bounds, and derivative inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 836,
+          "line_start": 774,
+          "title": "Caratheodory inequality via a half-plane-to-disk transform",
+          "unit_id": "ch53_u08",
+          "unit_type": "representation change",
+          "why_material": "Encodes a real-part bound as a disk-valued Möbius transform, applies Schwarz's lemma, and inverts the transform to bound the original function and identify equality cases."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes centered and translated forms and the transition to sharper coefficient inequalities.",
+          "representation_dependency": "The Möbius transform and bound are recoverable, though the upper-bound symbol is OCR-corrupted; verify the displayed statement.",
+          "unit_id": "ch53_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 772,
+            "line_start": 731,
+            "title": "Schwarz contraction and rigidity",
+            "unit_id": "ch53_u07",
+            "unit_type": "extremal lemma",
+            "why_material": "Divides out the forced zero, applies the maximum principle on expanding circles, and obtains both contraction and the rigid rotation equality case, including scaling to a general disk."
+          },
+          {
+            "line_end": 928,
+            "line_start": 840,
+            "title": "Borel coefficient bounds by root-of-unity filtering",
+            "unit_id": "ch53_u09",
+            "unit_type": "coefficient extraction",
+            "why_material": "First controls the linear coefficient from a real-part bound, then averages rotations to isolate any chosen coefficient, a reusable symmetry-projection technique."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disk/half-plane transforms and coefficient estimates control logarithms of zero-removed functions, supplying the derivative bounds used in Hadamard factorization.",
+            "limit": "Exact constants and some displayed formulas are OCR-sensitive and require scan verification before training use.",
+            "parent_local_unit_ids": [
+              "ch53_u08",
+              "ch53_u09",
+              "ch53_u10",
+              "ch53_u15"
+            ],
+            "title": "Real-part control feeds entire-function factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes derivative and polynomial-growth consequences because they expose what the coefficient bound enables.",
+      "line_end": 928,
+      "line_start": 840,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Root-of-unity cases are text-layer degraded but the averaging identity and conclusion are recoverable; scan-check indices.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "First controls the linear coefficient from a real-part bound, then averages rotations to isolate any chosen coefficient, a reusable symmetry-projection technique.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Borel coefficient bounds by root-of-unity filtering",
+      "unit_artifact_relpath": "depth/units/ch53_u09.txt",
+      "unit_bytes": 3921,
+      "unit_id": "ch53_u09",
+      "unit_sha256": "e47a9ba48740e9390428bc24e7f014bafde60e5d1fe8f750b972e0ecb96ac9cb",
+      "unit_type": "coefficient extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u09.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 832,
+          "line_end": 839,
+          "text": "                                            R−ρ\nfor |z| = ρ < R\n\nRemark . If f is a constant, then Theorem 2 is trivial. We shall now\nprove Borel’s inequality which is sharper than Theorem 2.\n                                                                           ∞\n                                                                               an zn , be\n                                                                           P\n",
+          "sha256": "cef2cb2566adeed8476dd00f582b5661e92614d1db312a048013f5df678939e1"
+        },
+        "after": {
+          "line_start": 929,
+          "line_end": 936,
+          "text": "ity which are useful.                                           \u0003\n\nTheorem 4. Let f be regular in |z − zo | ≤ r                                              23\n\n                               f = P(r, θ) + Q(r, θ).\n   Then\n                                             Z2π\n                                      1\n",
+          "sha256": "6cfd3bc6ad104ea94316617653c62b5daddb5aa42d2904976361ee9f0e433608"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 3: Schwarz's Lemma",
+            "line_end": 1078,
+            "line_start": 727,
+            "mathematical_role": "Disk contractions, half-plane transforms, coefficient bounds, and derivative inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 928,
+          "line_start": 840,
+          "title": "Borel coefficient bounds by root-of-unity filtering",
+          "unit_id": "ch53_u09",
+          "unit_type": "coefficient extraction",
+          "why_material": "First controls the linear coefficient from a real-part bound, then averages rotations to isolate any chosen coefficient, a reusable symmetry-projection technique."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes derivative and polynomial-growth consequences because they expose what the coefficient bound enables.",
+          "representation_dependency": "Root-of-unity cases are text-layer degraded but the averaging identity and conclusion are recoverable; scan-check indices.",
+          "unit_id": "ch53_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 836,
+            "line_start": 774,
+            "title": "Caratheodory inequality via a half-plane-to-disk transform",
+            "unit_id": "ch53_u08",
+            "unit_type": "representation change",
+            "why_material": "Encodes a real-part bound as a disk-valued Möbius transform, applies Schwarz's lemma, and inverts the transform to bound the original function and identify equality cases."
+          },
+          {
+            "line_end": 1071,
+            "line_start": 931,
+            "title": "One positive-real-part integral yields coefficient, increment, and derivative bounds",
+            "unit_id": "ch53_u10",
+            "unit_type": "master inequality",
+            "why_material": "Reverses the preceding dependency chain: Fourier extraction of the nonnegative real part gives coefficient bounds directly, from which function and all-derivative estimates follow."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disk/half-plane transforms and coefficient estimates control logarithms of zero-removed functions, supplying the derivative bounds used in Hadamard factorization.",
+            "limit": "Exact constants and some displayed formulas are OCR-sensitive and require scan verification before training use.",
+            "parent_local_unit_ids": [
+              "ch53_u08",
+              "ch53_u09",
+              "ch53_u10",
+              "ch53_u15"
+            ],
+            "title": "Real-part control feeds entire-function factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the preliminary real-part derivative formula and the general theorem with all three consequences.",
+      "line_end": 1071,
+      "line_start": 931,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several integral and derivative displays are fragmented; prose and numbered conclusions recover the structure, but constants and powers need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reverses the preceding dependency chain: Fourier extraction of the nonnegative real part gives coefficient bounds directly, from which function and all-derivative estimates follow.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One positive-real-part integral yields coefficient, increment, and derivative bounds",
+      "unit_artifact_relpath": "depth/units/ch53_u10.txt",
+      "unit_bytes": 7036,
+      "unit_id": "ch53_u10",
+      "unit_sha256": "396fea13b1f6f92c0621905db1e305a73691d1c1cae45a4e6910de79be53995b",
+      "unit_type": "master inequality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u10.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 923,
+          "line_end": 930,
+          "text": "                                 Re{ f (Rζ)} < cRk .\n   By Theorem 3, we have\n                     |an Rn | ≤ 2(2Rk − Re ao ),             n > 0.\n   Letting R → ∞, we get\n                                  an = 0 if n > k.\n    Apropos Schwarz’s Lemma we give here a formula and an inequal-\nity which are useful.                                           \u0003\n\n",
+          "sha256": "9fe5b3722d41e7ede4e1c5e7abecc929e5dda1999bdd21ae8e4332ac27273e33"
+        },
+        "after": {
+          "line_start": 1072,
+          "line_end": 1079,
+          "text": "\n<!-- source-page: 30 -->\n\n\n\n<!-- source-page: 31 -->\n\nLecture 4\n",
+          "sha256": "b8c4addb601bfc33ec393aa9a4e3fbadc19146866d9cbbfab16d22e49381c32c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 3: Schwarz's Lemma",
+            "line_end": 1078,
+            "line_start": 727,
+            "mathematical_role": "Disk contractions, half-plane transforms, coefficient bounds, and derivative inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1071,
+          "line_start": 931,
+          "title": "One positive-real-part integral yields coefficient, increment, and derivative bounds",
+          "unit_id": "ch53_u10",
+          "unit_type": "master inequality",
+          "why_material": "Reverses the preceding dependency chain: Fourier extraction of the nonnegative real part gives coefficient bounds directly, from which function and all-derivative estimates follow."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the preliminary real-part derivative formula and the general theorem with all three consequences.",
+          "representation_dependency": "Several integral and derivative displays are fragmented; prose and numbered conclusions recover the structure, but constants and powers need scan verification.",
+          "unit_id": "ch53_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 928,
+            "line_start": 840,
+            "title": "Borel coefficient bounds by root-of-unity filtering",
+            "unit_id": "ch53_u09",
+            "unit_type": "coefficient extraction",
+            "why_material": "First controls the linear coefficient from a real-part bound, then averages rotations to isolate any chosen coefficient, a reusable symmetry-projection technique."
+          },
+          {
+            "line_end": 1118,
+            "line_start": 1083,
+            "title": "Zero-free entire functions are exponentials",
+            "unit_id": "ch53_u11",
+            "unit_type": "structural factorization",
+            "why_material": "Integrates the entire logarithmic derivative to show a zero-free entire function is an exponential, then factors finitely many zeros before addressing infinite products."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disk/half-plane transforms and coefficient estimates control logarithms of zero-removed functions, supplying the derivative bounds used in Hadamard factorization.",
+            "limit": "Exact constants and some displayed formulas are OCR-sensitive and require scan verification before training use.",
+            "parent_local_unit_ids": [
+              "ch53_u08",
+              "ch53_u09",
+              "ch53_u10",
+              "ch53_u15"
+            ],
+            "title": "Real-part control feeds entire-function factorization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the conceptual bridge from polynomial factorization to Weierstrass products.",
+      "line_end": 1118,
+      "line_start": 1083,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Readable prose and formulas; no material representation ambiguity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrates the entire logarithmic derivative to show a zero-free entire function is an exponential, then factors finitely many zeros before addressing infinite products.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free entire functions are exponentials",
+      "unit_artifact_relpath": "depth/units/ch53_u11.txt",
+      "unit_bytes": 1604,
+      "unit_id": "ch53_u11",
+      "unit_sha256": "b350b6ff67b56373cb6e587bb15bbafe470f72dce54479927187e1d47492c487",
+      "unit_type": "structural factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u11.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1075,
+          "line_end": 1082,
+          "text": "\n\n<!-- source-page: 31 -->\n\nLecture 4\n\nEntire Functions\n\n",
+          "sha256": "4d6328fb92f9d544cf05b741067aef9dadb78f3b2cdc119503978914be70e45d"
+        },
+        "after": {
+          "line_start": 1119,
+          "line_end": 1126,
+          "text": "\n27   Theorem 1 (Weierstrass). [15, p.246] Given a sequence of complex\n     numbers an such that\n\n                         0 < |a1 | ≤ |a2 | ≤ . . . ≤ |an | ≤ . . .\n\n     whose sole limit point is ∞, there exists an entire function with zeros at\n     these points and these points only.\n",
+          "sha256": "4993848d47a9a50cf6772bb69c53f08942ced3497470c8b17fadb1713e5bc5fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 4: Entire Functions",
+            "line_end": 1517,
+            "line_start": 1079,
+            "mathematical_role": "Weierstrass products, finite order, zero density, exponent of convergence, and genus."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1118,
+          "line_start": 1083,
+          "title": "Zero-free entire functions are exponentials",
+          "unit_id": "ch53_u11",
+          "unit_type": "structural factorization",
+          "why_material": "Integrates the entire logarithmic derivative to show a zero-free entire function is an exponential, then factors finitely many zeros before addressing infinite products."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the conceptual bridge from polynomial factorization to Weierstrass products.",
+          "representation_dependency": "Readable prose and formulas; no material representation ambiguity.",
+          "unit_id": "ch53_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1071,
+            "line_start": 931,
+            "title": "One positive-real-part integral yields coefficient, increment, and derivative bounds",
+            "unit_id": "ch53_u10",
+            "unit_type": "master inequality",
+            "why_material": "Reverses the preceding dependency chain: Fourier extraction of the nonnegative real part gives coefficient bounds directly, from which function and all-derivative estimates follow."
+          },
+          {
+            "line_end": 1281,
+            "line_start": 1120,
+            "title": "Weierstrass canonical product with adaptive primary factors",
+            "unit_id": "ch53_u12",
+            "unit_type": "construction",
+            "why_material": "Cancels enough terms of each logarithm to make an infinite product converge locally uniformly, choosing fixed genus when a reciprocal-power sum converges and adaptive genus otherwise."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the full convergence split because it explains how arbitrary discrete zero sets are realized.",
+      "line_end": 1281,
+      "line_start": 1120,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product exponents and indices are OCR-fragmented; the two convergence cases are explicit in prose, while exact factors require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Cancels enough terms of each logarithm to make an infinite product converge locally uniformly, choosing fixed genus when a reciprocal-power sum converges and adaptive genus otherwise.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weierstrass canonical product with adaptive primary factors",
+      "unit_artifact_relpath": "depth/units/ch53_u12.txt",
+      "unit_bytes": 7896,
+      "unit_id": "ch53_u12",
+      "unit_sha256": "4472db1e8722c6d201334ac3e51f0564fe64fe2ba38a099f2282c0ac29c59113",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u12.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1112,
+          "line_end": 1119,
+          "text": "\n<!-- source-page: 32 -->\n\n26                                                                    4. Entire Functions\n\n     where g is entire. We wish to uphold this in the case when G has an\n     infinity of zeros.\n\n",
+          "sha256": "3c3a2bbe8be39dae7b3152cd834604488ee29b4c6df3c37dbaebe97f3f6ce78a"
+        },
+        "after": {
+          "line_start": 1282,
+          "line_end": 1289,
+          "text": "\n<!-- source-page: 35 -->\n\n4. Entire Functions                                                        29\n\n                                                                G(z)\nRemark. If in addition z = 0 is also a zero of G(z) then              has no\n                                                               zmG(z)\n",
+          "sha256": "0303d49f741693e1e550a1d7540cbb65122743cf9470c0af60e658984ca31ce2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 4: Entire Functions",
+            "line_end": 1517,
+            "line_start": 1079,
+            "mathematical_role": "Weierstrass products, finite order, zero density, exponent of convergence, and genus."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1281,
+          "line_start": 1120,
+          "title": "Weierstrass canonical product with adaptive primary factors",
+          "unit_id": "ch53_u12",
+          "unit_type": "construction",
+          "why_material": "Cancels enough terms of each logarithm to make an infinite product converge locally uniformly, choosing fixed genus when a reciprocal-power sum converges and adaptive genus otherwise."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the full convergence split because it explains how arbitrary discrete zero sets are realized.",
+          "representation_dependency": "Product exponents and indices are OCR-fragmented; the two convergence cases are explicit in prose, while exact factors require scan verification.",
+          "unit_id": "ch53_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1118,
+            "line_start": 1083,
+            "title": "Zero-free entire functions are exponentials",
+            "unit_id": "ch53_u11",
+            "unit_type": "structural factorization",
+            "why_material": "Integrates the entire logarithmic derivative to show a zero-free entire function is an exponential, then factors finitely many zeros before addressing infinite products."
+          },
+          {
+            "line_end": 1399,
+            "line_start": 1303,
+            "title": "Finite order limits zero density",
+            "unit_id": "ch53_u13",
+            "unit_type": "growth-to-zero-density bound",
+            "why_material": "Defines order through maximum modulus and converts growth into a quantitative zero-count bound by dividing out enclosed zeros and applying the maximum principle."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The monograph reuses one architecture: zero locations determine a canonical product, growth bounds restrict the residual exponential polynomial, and logarithmic differentiation converts zeros into analytic identities.",
+            "limit": "The functions have different normalizations and growth evidence; this synthesis does not identify their products term by term.",
+            "parent_local_unit_ids": [
+              "ch53_u12",
+              "ch53_u15",
+              "ch53_u16",
+              "ch53_u20",
+              "ch53_u39"
+            ],
+            "title": "Canonical products recur from arbitrary zeros to Gamma and xi"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the order characterization, theorem, proof, and big-O corollary.",
+      "line_end": 1399,
+      "line_start": 1303,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some radius arguments and powers are split across lines but recoverable; verify constants against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines order through maximum modulus and converts growth into a quantitative zero-count bound by dividing out enclosed zeros and applying the maximum principle.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        36,
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite order limits zero density",
+      "unit_artifact_relpath": "depth/units/ch53_u13.txt",
+      "unit_bytes": 4307,
+      "unit_id": "ch53_u13",
+      "unit_sha256": "a1b2e099691235e907306095842197ed3b49c61d42ae2458ab0e7f273f6c4da9",
+      "unit_type": "growth-to-zero-density bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u13.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1295,
+          "line_end": 1302,
+          "text": "                                          n=1\n                                                 an\n\n     In the above expression for G(z), the function g(z) is an arbitrary\nentire function. If G is subject to further restrictions it should be possible\nto say more about g(z); this we shall now proceed to do. The class of\nentire functions which we shall consider will be called “entire functions\nof finite order”.\n",
+          "sha256": "cf09a815648b753628ad98aba6148601abf952c2246400421fd759684556f73a"
+        },
+        "after": {
+          "line_start": 1400,
+          "line_end": 1407,
+          "text": "Theorem 3. If f (z) is of order ρ < ∞, has an infinity of zeros            34\n                                                   X 1\n          a1 , a2 , . . . , f (o) , 0, σ > ρ, then         <∞\n                                                    |an |σ\nProof. Arrange the zeros in a sequence:\n                                   |a1 | ≤ |a2 | ≤ . . .\nLet\n                                        α p = |a p |\n",
+          "sha256": "8e122431e32b0b6174213fd612b8d48c539d9fa4d35712cf787d61c31db6504d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 4: Entire Functions",
+            "line_end": 1517,
+            "line_start": 1079,
+            "mathematical_role": "Weierstrass products, finite order, zero density, exponent of convergence, and genus."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1399,
+          "line_start": 1303,
+          "title": "Finite order limits zero density",
+          "unit_id": "ch53_u13",
+          "unit_type": "growth-to-zero-density bound",
+          "why_material": "Defines order through maximum modulus and converts growth into a quantitative zero-count bound by dividing out enclosed zeros and applying the maximum principle."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the order characterization, theorem, proof, and big-O corollary.",
+          "representation_dependency": "Some radius arguments and powers are split across lines but recoverable; verify constants against the scan.",
+          "unit_id": "ch53_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1281,
+            "line_start": 1120,
+            "title": "Weierstrass canonical product with adaptive primary factors",
+            "unit_id": "ch53_u12",
+            "unit_type": "construction",
+            "why_material": "Cancels enough terms of each logarithm to make an infinite product converge locally uniformly, choosing fixed genus when a reciprocal-power sum converges and adaptive genus otherwise."
+          },
+          {
+            "line_end": 1510,
+            "line_start": 1400,
+            "title": "Exponent of convergence and genus of the zero set",
+            "unit_id": "ch53_u14",
+            "unit_type": "invariant comparison",
+            "why_material": "Derives convergence of reciprocal powers from the zero-count estimate and positions canonical-product genus between the exponent of convergence and the entire-function order."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definitions, examples, and the integer/noninteger boundary cases.",
+      "line_end": 1510,
+      "line_start": 1400,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Summation exponents are occasionally displaced in extraction; conceptual inequalities are clear, exact notation needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives convergence of reciprocal powers from the zero-count estimate and positions canonical-product genus between the exponent of convergence and the entire-function order.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        38,
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponent of convergence and genus of the zero set",
+      "unit_artifact_relpath": "depth/units/ch53_u14.txt",
+      "unit_bytes": 5087,
+      "unit_id": "ch53_u14",
+      "unit_sha256": "e9ed9b487faaaac4f88810e1aab59a3691c4a49d0fa3153076ef95c3bec4c0a6",
+      "unit_type": "invariant comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u14.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1392,
+          "line_end": 1399,
+          "text": "                                             \u0002                   \u0003\n                          n      ≤\n                             3        log 2\n               and         − log | f (0)| < Rρ+ε , say.\n      Then for R ≥ R′              \u0012R\u0013           2 ρ+ε\n                               n          <          R\n                                    3          log 2\nand hence the result.\n",
+          "sha256": "fd99a3b4f38b43927f20294c0f862f26a2582b283514f56a3f0c2713743ad96f"
+        },
+        "after": {
+          "line_start": 1511,
+          "line_end": 1518,
+          "text": "\n<!-- source-page: 40 -->\n\n\n\n<!-- source-page: 41 -->\n\nLecture 5\n",
+          "sha256": "d7a694e8f7d62aed6f9065c112320a3d8c5b4394619f61253615f45db9f81ad7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 4: Entire Functions",
+            "line_end": 1517,
+            "line_start": 1079,
+            "mathematical_role": "Weierstrass products, finite order, zero density, exponent of convergence, and genus."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1510,
+          "line_start": 1400,
+          "title": "Exponent of convergence and genus of the zero set",
+          "unit_id": "ch53_u14",
+          "unit_type": "invariant comparison",
+          "why_material": "Derives convergence of reciprocal powers from the zero-count estimate and positions canonical-product genus between the exponent of convergence and the entire-function order."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definitions, examples, and the integer/noninteger boundary cases.",
+          "representation_dependency": "Summation exponents are occasionally displaced in extraction; conceptual inequalities are clear, exact notation needs scan verification.",
+          "unit_id": "ch53_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1399,
+            "line_start": 1303,
+            "title": "Finite order limits zero density",
+            "unit_id": "ch53_u13",
+            "unit_type": "growth-to-zero-density bound",
+            "why_material": "Defines order through maximum modulus and converts growth into a quantitative zero-count bound by dividing out enclosed zeros and applying the maximum principle."
+          },
+          {
+            "line_end": 1741,
+            "line_start": 1522,
+            "title": "Hadamard factorization from logarithmic derivatives",
+            "unit_id": "ch53_u15",
+            "unit_type": "factorization theorem",
+            "why_material": "Controls the logarithmic derivative after removing enclosed zeros, integrates it around expanding circles, and recovers an exponential polynomial times a canonical product for finite-order entire functions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Borel-Caratheodory lemma, residue decomposition, limiting argument, and canonical-product reformulation.",
+      "line_end": 1741,
+      "line_start": 1522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span is highly formula-dependent and several residues/products are scrambled; prose preserves the proof architecture, but exact identities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls the logarithmic derivative after removing enclosed zeros, integrates it around expanding circles, and recovers an exponential polynomial times a canonical product for finite-order entire functions.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard factorization from logarithmic derivatives",
+      "unit_artifact_relpath": "depth/units/ch53_u15.txt",
+      "unit_bytes": 10122,
+      "unit_id": "ch53_u15",
+      "unit_sha256": "f4343d88d0c81bb00bc0dd83c78860bc2f74808afc6ae9cd2de6f396c09b1756",
+      "unit_type": "factorization theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u15.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1514,
+          "line_end": 1521,
+          "text": "\n\n<!-- source-page: 41 -->\n\nLecture 5\n\nEntire Functions (Contd.)\n\n",
+          "sha256": "89a57dd90ab7e7719fbee7f188dbb45cb018216e1969222403f97189563d58a5"
+        },
+        "after": {
+          "line_start": 1742,
+          "line_end": 1749,
+          "text": "     We recall the convention that if the z′n s are finite in number (or if\nthere are no z′n s), then p = 0 and ρ1 = 0.\n     We have also seen that\n\n                         q ≤ ρ, ρ1 ≤ ρ i.e. max(q, ρ1 ) ≤ ρ\n\n    We shall now prove the following\nTheorem 2. ρ ≤ max(q, ρ1 )\n",
+          "sha256": "cf0ba785e3de89e33e16fd1f68450171ae5d069348b802efcd999966ccb39b2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 5: Entire Functions (continued)",
+            "line_end": 1954,
+            "line_start": 1518,
+            "mathematical_role": "Hadamard factorization and the relation between order, polynomial factor, and zero exponent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1741,
+          "line_start": 1522,
+          "title": "Hadamard factorization from logarithmic derivatives",
+          "unit_id": "ch53_u15",
+          "unit_type": "factorization theorem",
+          "why_material": "Controls the logarithmic derivative after removing enclosed zeros, integrates it around expanding circles, and recovers an exponential polynomial times a canonical product for finite-order entire functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Borel-Caratheodory lemma, residue decomposition, limiting argument, and canonical-product reformulation.",
+          "representation_dependency": "This span is highly formula-dependent and several residues/products are scrambled; prose preserves the proof architecture, but exact identities require scan verification.",
+          "unit_id": "ch53_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1510,
+            "line_start": 1400,
+            "title": "Exponent of convergence and genus of the zero set",
+            "unit_id": "ch53_u14",
+            "unit_type": "invariant comparison",
+            "why_material": "Derives convergence of reciprocal powers from the zero-count estimate and positions canonical-product genus between the exponent of convergence and the entire-function order."
+          },
+          {
+            "line_end": 1947,
+            "line_start": 1744,
+            "title": "Order equals the maximum of exponential-polynomial degree and zero exponent",
+            "unit_id": "ch53_u16",
+            "unit_type": "order decomposition",
+            "why_material": "Bounds primary factors using an exponent arbitrarily close to the zero exponent, proving that total order is exactly the larger of the polynomial factor's degree and the zero-set exponent, with consequences for nonintegral order."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disk/half-plane transforms and coefficient estimates control logarithms of zero-removed functions, supplying the derivative bounds used in Hadamard factorization.",
+            "limit": "Exact constants and some displayed formulas are OCR-sensitive and require scan verification before training use.",
+            "parent_local_unit_ids": [
+              "ch53_u08",
+              "ch53_u09",
+              "ch53_u10",
+              "ch53_u15"
+            ],
+            "title": "Real-part control feeds entire-function factorization"
+          },
+          {
+            "claim": "The monograph reuses one architecture: zero locations determine a canonical product, growth bounds restrict the residual exponential polynomial, and logarithmic differentiation converts zeros into analytic identities.",
+            "limit": "The functions have different normalizations and growth evidence; this synthesis does not identify their products term by term.",
+            "parent_local_unit_ids": [
+              "ch53_u12",
+              "ch53_u15",
+              "ch53_u16",
+              "ch53_u20",
+              "ch53_u39"
+            ],
+            "title": "Canonical products recur from arbitrary zeros to Gamma and xi"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes canonical-product order and exceptional convergence cases needed for the equality statement.",
+      "line_end": 1947,
+      "line_start": 1744,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primary-factor inequalities are OCR-fragmented; conclusions and case distinctions are prose-supported, exact bounds need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds primary factors using an exponent arbitrarily close to the zero exponent, proving that total order is exactly the larger of the polynomial factor's degree and the zero-set exponent, with consequences for nonintegral order.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Order equals the maximum of exponential-polynomial degree and zero exponent",
+      "unit_artifact_relpath": "depth/units/ch53_u16.txt",
+      "unit_bytes": 8117,
+      "unit_id": "ch53_u16",
+      "unit_sha256": "68e6d3380f6e55b7cbc5f2445faa1afb7a0931538df28b44f7a05a2463ae0985",
+      "unit_type": "order decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u16.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1736,
+          "line_end": 1743,
+          "text": "                               Y\n                                         e− p+1 zn\n\nis convergent, where p is the genus of the entire function in question, so 42\nthat f (z) = eQ(z)G(z) may be multiplied by this product yielding f (z) =\neQ1 (z)G1 (z), where Q1 is again of degree ≤ µ.\n     We recall the convention that if the z′n s are finite in number (or if\nthere are no z′n s), then p = 0 and ρ1 = 0.\n",
+          "sha256": "cc588617ad637b8b1473d37a2489c77369e350352cac32efa6f98c308d6b4ae3"
+        },
+        "after": {
+          "line_start": 1948,
+          "line_end": 1955,
+          "text": "\n<!-- source-page: 50 -->\n\n\n\n<!-- source-page: 51 -->\n\nLecture 6\n",
+          "sha256": "a003e38eb1dcc0e1cf94df57b447a71e1f4cd3c301527fa8e3e9c72d362a756f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 5: Entire Functions (continued)",
+            "line_end": 1954,
+            "line_start": 1518,
+            "mathematical_role": "Hadamard factorization and the relation between order, polynomial factor, and zero exponent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1947,
+          "line_start": 1744,
+          "title": "Order equals the maximum of exponential-polynomial degree and zero exponent",
+          "unit_id": "ch53_u16",
+          "unit_type": "order decomposition",
+          "why_material": "Bounds primary factors using an exponent arbitrarily close to the zero exponent, proving that total order is exactly the larger of the polynomial factor's degree and the zero-set exponent, with consequences for nonintegral order."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes canonical-product order and exceptional convergence cases needed for the equality statement.",
+          "representation_dependency": "Primary-factor inequalities are OCR-fragmented; conclusions and case distinctions are prose-supported, exact bounds need scan verification.",
+          "unit_id": "ch53_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1741,
+            "line_start": 1522,
+            "title": "Hadamard factorization from logarithmic derivatives",
+            "unit_id": "ch53_u15",
+            "unit_type": "factorization theorem",
+            "why_material": "Controls the logarithmic derivative after removing enclosed zeros, integrates it around expanding circles, and recovers an exponential polynomial times a canonical product for finite-order entire functions."
+          },
+          {
+            "line_end": 2010,
+            "line_start": 1961,
+            "title": "Gamma as a Mellin integral and factorial interpolation",
+            "unit_id": "ch53_u17",
+            "unit_type": "definition and recurrence",
+            "why_material": "Establishes convergence and analyticity of the Mellin integral and obtains the recurrence by integration by parts, explaining Gamma's interpolation role."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The monograph reuses one architecture: zero locations determine a canonical product, growth bounds restrict the residual exponential polynomial, and logarithmic differentiation converts zeros into analytic identities.",
+            "limit": "The functions have different normalizations and growth evidence; this synthesis does not identify their products term by term.",
+            "parent_local_unit_ids": [
+              "ch53_u12",
+              "ch53_u15",
+              "ch53_u16",
+              "ch53_u20",
+              "ch53_u39"
+            ],
+            "title": "Canonical products recur from arbitrary zeros to Gamma and xi"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Stops before the preliminary integer asymptotic, which is represented later by the full Stirling unit.",
+      "line_end": 2010,
+      "line_start": 1961,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral notation is recoverable despite layout fragmentation; endpoint conditions are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Establishes convergence and analyticity of the Mellin integral and obtains the recurrence by integration by parts, explaining Gamma's interpolation role.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gamma as a Mellin integral and factorial interpolation",
+      "unit_artifact_relpath": "depth/units/ch53_u17.txt",
+      "unit_bytes": 2609,
+      "unit_id": "ch53_u17",
+      "unit_sha256": "0806e86a361731fafc3f1acc9890e16f8b5bc38686479b25d46a0ab45165936c",
+      "unit_type": "definition and recurrence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u17.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1953,
+          "line_end": 1960,
+          "text": "<!-- source-page: 51 -->\n\nLecture 6\n\nThe Gamma Function\n\n1 Elementary Properties [15, p.148]\n                                                                                    47\n",
+          "sha256": "7c53df12f564d1a59dc9cd710254f75ede9bd58b1a7b249f78c430b9877404f6"
+        },
+        "after": {
+          "line_start": 2011,
+          "line_end": 2018,
+          "text": "      (v) We have\n\n                                            1\n                             log Γ(n) = (n − ) log n − n + c + O(1),\n                                            2\n          where c is a constant.\n                                                                        n−1\n                                                                        X\n",
+          "sha256": "2c1c7518e0dd999c3458baa30d2a21802745daeb3c1b2c8fba3553ebfddf1926"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 6: The Gamma Function",
+            "line_end": 2469,
+            "line_start": 1955,
+            "mathematical_role": "Mellin definition, continuation, reflection, reciprocal product, and logarithmic derivatives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2010,
+          "line_start": 1961,
+          "title": "Gamma as a Mellin integral and factorial interpolation",
+          "unit_id": "ch53_u17",
+          "unit_type": "definition and recurrence",
+          "why_material": "Establishes convergence and analyticity of the Mellin integral and obtains the recurrence by integration by parts, explaining Gamma's interpolation role."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Stops before the preliminary integer asymptotic, which is represented later by the full Stirling unit.",
+          "representation_dependency": "Integral notation is recoverable despite layout fragmentation; endpoint conditions are explicit in prose.",
+          "unit_id": "ch53_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1947,
+            "line_start": 1744,
+            "title": "Order equals the maximum of exponential-polynomial degree and zero exponent",
+            "unit_id": "ch53_u16",
+            "unit_type": "order decomposition",
+            "why_material": "Bounds primary factors using an exponent arbitrarily close to the zero exponent, proving that total order is exactly the larger of the polynomial factor's degree and the zero-set exponent, with consequences for nonintegral order."
+          },
+          {
+            "line_end": 2158,
+            "line_start": 2086,
+            "title": "Beta integral and Gamma reflection formula",
+            "unit_id": "ch53_u18",
+            "unit_type": "integral representation and reflection",
+            "why_material": "Changes variables in a double Mellin integral to derive the beta quotient, then specializes it to the half-value and the reflection identity that later drives zeta continuation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the justification for exchanging integrals and the contour-evaluated auxiliary integral.",
+      "line_end": 2158,
+      "line_start": 2086,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Double-integral layout is degraded and the sine denominator has an OCR slip; exact formulas must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes variables in a double Mellin integral to derive the beta quotient, then specializes it to the half-value and the reflection identity that later drives zeta continuation.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        54,
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Beta integral and Gamma reflection formula",
+      "unit_artifact_relpath": "depth/units/ch53_u18.txt",
+      "unit_bytes": 3610,
+      "unit_id": "ch53_u18",
+      "unit_sha256": "2f61508bbf47f304b610da52e2c5d58d6c8146d2811013963c03526500eaa33b",
+      "unit_type": "integral representation and reflection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u18.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2078,
+          "line_end": 2085,
+          "text": "                       1\n                 = (n − ) log n − n + c + o(1), where c is a constant.\n                       2\n                                                                                                  49\n      Hence, also\n                                                                     1\n                                           (n!) = a.e−n nn+ 2 eo(1) ,\n      where ‘a’ is a constant such that c = log a\n",
+          "sha256": "8f89746dd408ab00f91bfd87618f863569125f689dd6e54fda4850d41e432e36"
+        },
+        "after": {
+          "line_start": 2159,
+          "line_end": 2166,
+          "text": "\n2 Analytic continuation of Γ(z) [15, p. 148]\nWe have seen that the function\n                                      Z∞\n                            Γ(z) =         e−t tz−1 dt\n                                      o\n\nis a regular function for Re z > 0. We now seek to extend it analytically\n",
+          "sha256": "61de44c20db491d904cde4e022f1a1f2cd8e86238ae7d06bba7ac17f4b4bab21"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 6: The Gamma Function",
+            "line_end": 2469,
+            "line_start": 1955,
+            "mathematical_role": "Mellin definition, continuation, reflection, reciprocal product, and logarithmic derivatives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2158,
+          "line_start": 2086,
+          "title": "Beta integral and Gamma reflection formula",
+          "unit_id": "ch53_u18",
+          "unit_type": "integral representation and reflection",
+          "why_material": "Changes variables in a double Mellin integral to derive the beta quotient, then specializes it to the half-value and the reflection identity that later drives zeta continuation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the justification for exchanging integrals and the contour-evaluated auxiliary integral.",
+          "representation_dependency": "Double-integral layout is degraded and the sine denominator has an OCR slip; exact formulas must be checked against the scan.",
+          "unit_id": "ch53_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2010,
+            "line_start": 1961,
+            "title": "Gamma as a Mellin integral and factorial interpolation",
+            "unit_id": "ch53_u17",
+            "unit_type": "definition and recurrence",
+            "why_material": "Establishes convergence and analyticity of the Mellin integral and obtains the recurrence by integration by parts, explaining Gamma's interpolation role."
+          },
+          {
+            "line_end": 2265,
+            "line_start": 2160,
+            "title": "Hankel-contour continuation of Gamma and reciprocal entireness",
+            "unit_id": "ch53_u19",
+            "unit_type": "analytic continuation",
+            "why_material": "Uses a keyed branch around the positive axis to express Gamma through an entire contour integral and cosecant, locating poles and residues and deducing that the reciprocal is entire."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes branch convention, small-circle limit, pole verification, residues, and continued reflection formula.",
+      "line_end": 2265,
+      "line_start": 2160,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour orientation and branch phases are formula-sensitive; prose is coherent, but signs and factors require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a keyed branch around the positive axis to express Gamma through an entire contour integral and cosecant, locating poles and residues and deducing that the reciprocal is entire.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        56,
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hankel-contour continuation of Gamma and reciprocal entireness",
+      "unit_artifact_relpath": "depth/units/ch53_u19.txt",
+      "unit_bytes": 5031,
+      "unit_id": "ch53_u19",
+      "unit_sha256": "049116d96075c5028cc6d97920ad01eda82b7be00b9131dac6e8f83973061e11",
+      "unit_type": "analytic continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u19.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2152,
+          "line_end": 2159,
+          "text": "\n2. Analytic continuation of Γ(z)                                              49\n\n      integration. Hence\n                                             π\n                       Γ(x)Γ(1 − x) =             ,       0 < x < 1.\n                                           sin xπ\n\n",
+          "sha256": "2c6a2f57dcf4f50ed25dda7003a82211df95387ae46a5c304cff632a157fdd8a"
+        },
+        "after": {
+          "line_start": 2266,
+          "line_end": 2273,
+          "text": "\n\n3 The Product Formula\n                      1\nWe shall prove that       is an entire function of order 1.\n                    Γ(z)\n    Since I(z) = −2i sin zπ Γ(z), and\n                                               π\n",
+          "sha256": "7c4598c9014ef0e674a91cc31adb3f95b326994a4a2ff7bfccf4d3a9c6236a61"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 6: The Gamma Function",
+            "line_end": 2469,
+            "line_start": 1955,
+            "mathematical_role": "Mellin definition, continuation, reflection, reciprocal product, and logarithmic derivatives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2265,
+          "line_start": 2160,
+          "title": "Hankel-contour continuation of Gamma and reciprocal entireness",
+          "unit_id": "ch53_u19",
+          "unit_type": "analytic continuation",
+          "why_material": "Uses a keyed branch around the positive axis to express Gamma through an entire contour integral and cosecant, locating poles and residues and deducing that the reciprocal is entire."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes branch convention, small-circle limit, pole verification, residues, and continued reflection formula.",
+          "representation_dependency": "Contour orientation and branch phases are formula-sensitive; prose is coherent, but signs and factors require scan verification.",
+          "unit_id": "ch53_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2158,
+            "line_start": 2086,
+            "title": "Beta integral and Gamma reflection formula",
+            "unit_id": "ch53_u18",
+            "unit_type": "integral representation and reflection",
+            "why_material": "Changes variables in a double Mellin integral to derive the beta quotient, then specializes it to the half-value and the reflection identity that later drives zeta continuation."
+          },
+          {
+            "line_end": 2465,
+            "line_start": 2268,
+            "title": "Reciprocal Gamma as an order-one canonical product",
+            "unit_id": "ch53_u20",
+            "unit_type": "canonical product and approximation",
+            "why_material": "Combines the contour estimate, zero exponent, and Hadamard theorem to factor reciprocal Gamma, determine Euler's constant, recover Gauss's limiting product, and obtain logarithmic convexity from the log derivative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the factorization, normalization, approximation, and convexity chain together because each determines the next.",
+      "line_end": 2465,
+      "line_start": 2268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Products and logarithmic derivatives are fragmented in extraction; the chain is recoverable, while exact normalization needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines the contour estimate, zero exponent, and Hadamard theorem to factor reciprocal Gamma, determine Euler's constant, recover Gauss's limiting product, and obtain logarithmic convexity from the log derivative.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        58,
+        59,
+        60
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reciprocal Gamma as an order-one canonical product",
+      "unit_artifact_relpath": "depth/units/ch53_u20.txt",
+      "unit_bytes": 10175,
+      "unit_id": "ch53_u20",
+      "unit_sha256": "e31dce5fe349b5118c72e0de952ac523e61d474f2aa3e161d00ed3062c8c4d3d",
+      "unit_type": "canonical product and approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u20.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2260,
+          "line_end": 2267,
+          "text": "                       Γ(z) · Γ(1 − z) = π cosec πz\nfor all non-integral values of z. Hence, also,\n                         1\n                             is an entire function.\n                        Γ(z)\n(Since the poles of Γ(1 − z) are cancelled by the zeros of sin πz)\n\n\n",
+          "sha256": "0207945f6722764fdda2dd0ce4fc8c825e227662334a773755e56ef25e84314d"
+        },
+        "after": {
+          "line_start": 2466,
+          "line_end": 2473,
+          "text": "             dz2\n\n<!-- source-page: 61 -->\n\nLecture 7\n\nThe Gamma Function:\nContd\n",
+          "sha256": "4006ca6e6f57506ac365eb4f9c95a8f2a16b39f3fb5adcc8cc026c1257b05a8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 6: The Gamma Function",
+            "line_end": 2469,
+            "line_start": 1955,
+            "mathematical_role": "Mellin definition, continuation, reflection, reciprocal product, and logarithmic derivatives."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2465,
+          "line_start": 2268,
+          "title": "Reciprocal Gamma as an order-one canonical product",
+          "unit_id": "ch53_u20",
+          "unit_type": "canonical product and approximation",
+          "why_material": "Combines the contour estimate, zero exponent, and Hadamard theorem to factor reciprocal Gamma, determine Euler's constant, recover Gauss's limiting product, and obtain logarithmic convexity from the log derivative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the factorization, normalization, approximation, and convexity chain together because each determines the next.",
+          "representation_dependency": "Products and logarithmic derivatives are fragmented in extraction; the chain is recoverable, while exact normalization needs scan verification.",
+          "unit_id": "ch53_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2265,
+            "line_start": 2160,
+            "title": "Hankel-contour continuation of Gamma and reciprocal entireness",
+            "unit_id": "ch53_u19",
+            "unit_type": "analytic continuation",
+            "why_material": "Uses a keyed branch around the positive axis to express Gamma through an entire contour integral and cosecant, locating poles and residues and deducing that the reciprocal is entire."
+          },
+          {
+            "line_end": 2583,
+            "line_start": 2475,
+            "title": "Bohr-Mollerup-Artin characterization of Gamma",
+            "unit_id": "ch53_u21",
+            "unit_type": "uniqueness theorem",
+            "why_material": "Shows that recurrence alone admits periodic ambiguity, while positivity, normalization, and log convexity squeeze any candidate between adjacent Gauss approximants and force uniqueness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The monograph reuses one architecture: zero locations determine a canonical product, growth bounds restrict the residual exponential polynomial, and logarithmic differentiation converts zeros into analytic identities.",
+            "limit": "The functions have different normalizations and growth evidence; this synthesis does not identify their products term by term.",
+            "parent_local_unit_ids": [
+              "ch53_u12",
+              "ch53_u15",
+              "ch53_u16",
+              "ch53_u20",
+              "ch53_u39"
+            ],
+            "title": "Canonical products recur from arbitrary zeros to Gamma and xi"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the necessary convexity facts and the squeeze proof.",
+      "line_end": 2583,
+      "line_start": 2475,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The convexity inequalities are mostly readable; scan-check a few displaced inequality signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that recurrence alone admits periodic ambiguity, while positivity, normalization, and log convexity squeeze any candidate between adjacent Gauss approximants and force uniqueness.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bohr-Mollerup-Artin characterization of Gamma",
+      "unit_artifact_relpath": "depth/units/ch53_u21.txt",
+      "unit_bytes": 5241,
+      "unit_id": "ch53_u21",
+      "unit_sha256": "2f4b79da28d2eb2f0c5b706d5f9511119c8f456ba12fed963e3d4703dc58ca1b",
+      "unit_type": "uniqueness theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u21.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2467,
+          "line_end": 2474,
+          "text": "\n<!-- source-page: 61 -->\n\nLecture 7\n\nThe Gamma Function:\nContd\n\n",
+          "sha256": "7941c645e9e24d01b3a4e06a2e2b4891be81a4d26ddf7d022b13bd37c25607bc"
+        },
+        "after": {
+          "line_start": 2584,
+          "line_end": 2591,
+          "text": "\n<!-- source-page: 64 -->\n\n58                                            7. The Gamma Function: Contd\n\n     5 Gauss’s Multiplication Formula. [7, Bd.I, p.281]\n60   Let p be a positive integer, and\n                                    !       !             !\n",
+          "sha256": "669afb7e4f32c67fbfe390654e262b276e3731e80426606cf61cdd84fbb8aab2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 7: The Gamma Function (continued)",
+            "line_end": 2880,
+            "line_start": 2470,
+            "mathematical_role": "Log-convex uniqueness, multiplication formula, and uniform complex Stirling asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2583,
+          "line_start": 2475,
+          "title": "Bohr-Mollerup-Artin characterization of Gamma",
+          "unit_id": "ch53_u21",
+          "unit_type": "uniqueness theorem",
+          "why_material": "Shows that recurrence alone admits periodic ambiguity, while positivity, normalization, and log convexity squeeze any candidate between adjacent Gauss approximants and force uniqueness."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the necessary convexity facts and the squeeze proof.",
+          "representation_dependency": "The convexity inequalities are mostly readable; scan-check a few displaced inequality signs.",
+          "unit_id": "ch53_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2465,
+            "line_start": 2268,
+            "title": "Reciprocal Gamma as an order-one canonical product",
+            "unit_id": "ch53_u20",
+            "unit_type": "canonical product and approximation",
+            "why_material": "Combines the contour estimate, zero exponent, and Hadamard theorem to factor reciprocal Gamma, determine Euler's constant, recover Gauss's limiting product, and obtain logarithmic convexity from the log derivative."
+          },
+          {
+            "line_end": 2664,
+            "line_start": 2589,
+            "title": "Gauss multiplication formula from Gamma uniqueness",
+            "unit_id": "ch53_u22",
+            "unit_type": "functional identity",
+            "why_material": "Constructs a product of shifted Gamma factors satisfying the same recurrence and log convexity, invokes uniqueness up to scale, and determines the scale asymptotically."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the special duplication and triplication consequences.",
+      "line_end": 2664,
+      "line_start": 2589,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Shifted arguments and constants are layout-sensitive; the construction is prose-supported but formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs a product of shifted Gamma factors satisfying the same recurrence and log convexity, invokes uniqueness up to scale, and determines the scale asymptotically.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        65
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gauss multiplication formula from Gamma uniqueness",
+      "unit_artifact_relpath": "depth/units/ch53_u22.txt",
+      "unit_bytes": 3560,
+      "unit_id": "ch53_u22",
+      "unit_sha256": "d56f0be89222ff6d85b395b5657b9f565d513d9dd8c8972cb221976d57d1843b",
+      "unit_type": "functional identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u22.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2581,
+          "line_end": 2588,
+          "text": "                                f (x) = Γ(x), 0 < x ≤ 1.\n         For values of x > 1, we uphold this relation by the functional equa-\n     tion.                                                                 \u0003\n\n<!-- source-page: 64 -->\n\n58                                            7. The Gamma Function: Contd\n\n",
+          "sha256": "f0796dbb9048bb50fac295149e4145dee8def5d8817252339802d1a47dd7e105"
+        },
+        "after": {
+          "line_start": 2665,
+          "line_end": 2672,
+          "text": "\n     6 Stirling’s Formula [15, p.150]\n     From (v) of § 1, p.49 and (5.2) we get\n                                  √              1\n                           (n!) = 2π · e−n · nn+ 2 eo(1) ,\n\n     which is the same thing as\n                                                  √\n",
+          "sha256": "1fe1ffa1146da5b4baf62e8747e1c3f05bee66379debdc230e56724d230aa549"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 7: The Gamma Function (continued)",
+            "line_end": 2880,
+            "line_start": 2470,
+            "mathematical_role": "Log-convex uniqueness, multiplication formula, and uniform complex Stirling asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2664,
+          "line_start": 2589,
+          "title": "Gauss multiplication formula from Gamma uniqueness",
+          "unit_id": "ch53_u22",
+          "unit_type": "functional identity",
+          "why_material": "Constructs a product of shifted Gamma factors satisfying the same recurrence and log convexity, invokes uniqueness up to scale, and determines the scale asymptotically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the special duplication and triplication consequences.",
+          "representation_dependency": "Shifted arguments and constants are layout-sensitive; the construction is prose-supported but formulas require scan verification.",
+          "unit_id": "ch53_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2583,
+            "line_start": 2475,
+            "title": "Bohr-Mollerup-Artin characterization of Gamma",
+            "unit_id": "ch53_u21",
+            "unit_type": "uniqueness theorem",
+            "why_material": "Shows that recurrence alone admits periodic ambiguity, while positivity, normalization, and log convexity squeeze any candidate between adjacent Gauss approximants and force uniqueness."
+          },
+          {
+            "line_end": 2877,
+            "line_start": 2666,
+            "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+            "unit_id": "ch53_u23",
+            "unit_type": "asymptotic method",
+            "why_material": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the derivation from the product formula and all stated uniform corollaries.",
+      "line_end": 2877,
+      "line_start": 2666,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This span contains many severely fragmented displays; the remainder method and sector are recoverable from prose, but exact main terms and errors must be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        66,
+        67,
+        68
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+      "unit_artifact_relpath": "depth/units/ch53_u23.txt",
+      "unit_bytes": 9943,
+      "unit_id": "ch53_u23",
+      "unit_sha256": "9457a2e27333734b51cf1233078d4b3a7ca76307af681065fba0a07560a87e13",
+      "unit_type": "asymptotic method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u23.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2658,
+          "line_end": 2665,
+          "text": "                      p           p\n     For p = 2 and p = 3 we get:\n        \u0012 x\u0013 x + 1!      √          \u0012 x\u0013 x + 1! x + 2!\n                          π                               2π\n      Γ     Γ         = x−1 Γ(x); Γ     Γ      Γ       =      1\n                                                                Γ(x).\n          2      2      2             3    3      3      3 x− 2\n\n",
+          "sha256": "af978ce60748028a689bac4887909823fbe94c02a657d757141ba1947d84289b"
+        },
+        "after": {
+          "line_start": 2878,
+          "line_end": 2885,
+          "text": "\n<!-- source-page: 69 -->\n\nLecture 8\n\nThe Zeta Function of\nRiemann\n\n",
+          "sha256": "9db8759cbd91232c554983cc509b56eb65af5ebe7a584e3ca30955848f6eec42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 7: The Gamma Function (continued)",
+            "line_end": 2880,
+            "line_start": 2470,
+            "mathematical_role": "Log-convex uniqueness, multiplication formula, and uniform complex Stirling asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2877,
+          "line_start": 2666,
+          "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+          "unit_id": "ch53_u23",
+          "unit_type": "asymptotic method",
+          "why_material": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the derivation from the product formula and all stated uniform corollaries.",
+          "representation_dependency": "This span contains many severely fragmented displays; the remainder method and sector are recoverable from prose, but exact main terms and errors must be scan-verified.",
+          "unit_id": "ch53_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2664,
+            "line_start": 2589,
+            "title": "Gauss multiplication formula from Gamma uniqueness",
+            "unit_id": "ch53_u22",
+            "unit_type": "functional identity",
+            "why_material": "Constructs a product of shifted Gamma factors satisfying the same recurrence and log convexity, invokes uniqueness up to scale, and determines the scale asymptotically."
+          },
+          {
+            "line_end": 2962,
+            "line_start": 2886,
+            "title": "Euler product and zero-freeness for Re(s)>1",
+            "unit_id": "ch53_u24",
+            "unit_type": "arithmetic factorization",
+            "why_material": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Dirichlet-series definition, convergence, product justification, and immediate zero-free consequence.",
+      "line_end": 2962,
+      "line_start": 2886,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core product is readable; a few subscripts are displaced but do not obscure the argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        70
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product and zero-freeness for Re(s)>1",
+      "unit_artifact_relpath": "depth/units/ch53_u24.txt",
+      "unit_bytes": 3366,
+      "unit_id": "ch53_u24",
+      "unit_sha256": "04e1e05438aebfff0cc950ddee13839adafe085e2c76fd11978b90ee5f4b6309",
+      "unit_type": "arithmetic factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u24.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2878,
+          "line_end": 2885,
+          "text": "\n<!-- source-page: 69 -->\n\nLecture 8\n\nThe Zeta Function of\nRiemann\n\n",
+          "sha256": "9db8759cbd91232c554983cc509b56eb65af5ebe7a584e3ca30955848f6eec42"
+        },
+        "after": {
+          "line_start": 2963,
+          "line_end": 2970,
+          "text": "         We shall now obtain a few formulae involving ζ(s) which will be of\n     use in the sequel. We first have\n                                                 !\n                                    X          1\n                       log ζ(s) = −    log 1 − 2 , σ > 1.             (1.3)\n                                     p\n                                              p\n\n",
+          "sha256": "a02a41ba9c2393a42dbf0e12238800a1ca15f89c0da751b2c597b5a87cb0741f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 8: Elementary properties of zeta",
+            "line_end": 3212,
+            "line_start": 2881,
+            "mathematical_role": "Euler product, prime connection, logarithmic derivatives, and multiplicative coefficient identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2962,
+          "line_start": 2886,
+          "title": "Euler product and zero-freeness for Re(s)>1",
+          "unit_id": "ch53_u24",
+          "unit_type": "arithmetic factorization",
+          "why_material": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Dirichlet-series definition, convergence, product justification, and immediate zero-free consequence.",
+          "representation_dependency": "Core product is readable; a few subscripts are displaced but do not obscure the argument.",
+          "unit_id": "ch53_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2877,
+            "line_start": 2666,
+            "title": "Uniform complex Stirling formula from a bounded periodic remainder",
+            "unit_id": "ch53_u23",
+            "unit_type": "asymptotic method",
+            "why_material": "Rewrites log Gamma as a main term plus an integral of the bounded sawtooth remainder, integrates by parts, and obtains uniform sectorial asymptotics and log-derivative consequences."
+          },
+          {
+            "line_end": 3056,
+            "line_start": 2963,
+            "title": "Prime data encoded by log zeta and its logarithmic derivative",
+            "unit_id": "ch53_u25",
+            "unit_type": "representation bridge",
+            "why_material": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity excludes boundary zeros, positive-coefficient singularity principles diagnose forbidden continuation, and Tauberian positivity turns the surviving pole into prime-counting asymptotics.",
+            "limit": "The Tauberian conclusion also uses monotonicity and exact analytic boundary hypotheses, not positivity alone.",
+            "parent_local_unit_ids": [
+              "ch53_u24",
+              "ch53_u29",
+              "ch53_u40",
+              "ch53_u47",
+              "ch53_u48"
+            ],
+            "title": "Positivity at the boundary is the bridge to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4c0e0602468408af860a65bc1c48ea19ac25b98834ac59e02a049de33d39ca11"
+}

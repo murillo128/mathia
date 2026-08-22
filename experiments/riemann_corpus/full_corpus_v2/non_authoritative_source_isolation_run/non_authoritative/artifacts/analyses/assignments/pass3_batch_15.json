@@ -1,0 +1,2349 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_15.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_15.jsonl"
+  },
+  "unit_count": 50,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the operational bridge from the theorem to every corollary.",
+      "line_end": 86,
+      "line_start": 38,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier-transform notation is degraded to question marks in places, but the transform pair and support restriction are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Equation (3) makes test-kernel choice the interface between F(alpha) and spacing sums; because the theorem controls only |alpha|<1, admissible Fourier support explicitly limits which statistics can be proved.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convolution converts frequency information into selectable zero-difference statistics",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u01.txt",
+      "unit_bytes": 1418,
+      "unit_id": "montgomery1973_v2_u01",
+      "unit_sha256": "c9ab0221be19865185826822718a0461623b8bbaa6577278785b854bd39be3f5",
+      "unit_type": "fourier-kernel-interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u01.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes limitations of the constant and comparison with computational and unconditional knowledge.",
+      "line_end": 164,
+      "line_start": 88,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several fractions are scan-degraded; mechanism and qualitative conclusions are clear, exact constants require source-page verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specific sinc kernels bound the multiplicity-weighted diagonal and show a positive proportion of simple zeros, while a compactly supported gap kernel forces neighboring gaps below a computable fraction of the mean.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Supported kernels turn pair correlation into simplicity and non-average gap bounds",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u02.txt",
+      "unit_bytes": 3453,
+      "unit_id": "montgomery1973_v2_u02",
+      "unit_sha256": "130b207516a0c77b9a0e1c4ac26237bf35e70e9f68e2d7dd2b5709843510cd31",
+      "unit_type": "downstream-statistical-consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u02.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates model-derived predictions from proved pair-correlation consequences.",
+      "line_end": 269,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The determinant display is partly lost at line 238; surrounding prose identifies its matrix entries.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The sine-kernel model extends to a determinant for k-tuple correlations and predicts arbitrarily small and large normalized gaps; the paper explicitly warns that Gram-law data suggest slow approach to asymptopia.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unitary analogy predicts determinants for k-tuples and extreme gaps, but low-zero numerics may converge slowly",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u03.txt",
+      "unit_bytes": 1557,
+      "unit_id": "montgomery1973_v2_u03",
+      "unit_sha256": "9b886a79798611d483a96844af33f260753eafe95d7bf19c9c5a4352e8150c5e",
+      "unit_type": "analogy-extension-and-calibration-warning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u03.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the bridge that makes a zero-difference theorem accessible to Dirichlet-series mean squares.",
+      "line_end": 359,
+      "line_start": 271,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy scan; the term structure is visible, but exact coefficients and signs should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A truncated von Mangoldt explicit formula is reflected through the functional equation and subtracted to produce a Lorentzian zero kernel equal to two complementary prime sums plus controlled polar and trivial-zero terms.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting reflected logarithmic derivatives yields a smoothed equality between zeros and prime powers",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u04.txt",
+      "unit_bytes": 3122,
+      "unit_id": "montgomery1973_v2_u04",
+      "unit_sha256": "e5b3376899c4b2f1246f852dc7d51fd6d56aa20923f0aea5f90715e24f78923f",
+      "unit_type": "prime-zero-explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u04.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the boundary-zero estimate because it justifies replacing the full zero sum with the finite window.",
+      "line_end": 454,
+      "line_start": 365,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Residue normalization is formula-dependent; the positivity architecture is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Squaring and integrating the zero kernel, removing ordinates outside the target interval, and evaluating by residues produces F(alpha) times T log T; nonnegativity immediately gives a global lower bound.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zero-side L2 norm is exactly the pair-correlation transform",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u05.txt",
+      "unit_bytes": 3038,
+      "unit_id": "montgomery1973_v2_u05",
+      "unit_sha256": "f3b6a9f83ff5aea39d54b1fef320cd16bcff4420fa93fa64e834544863783f16",
+      "unit_type": "l2-identity-and-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u05.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The three-case split exposes why the proof range is structural rather than cosmetic.",
+      "line_end": 570,
+      "line_start": 455,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact error powers are scan-sensitive but the dominant-term regimes and conclusion are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A quantitative Parseval identity evaluates the prime side, three size ranges isolate the dominant term, and matching it to the zero-side norm proves F(alpha) for alpha<1 uniformly away from the endpoint.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Diagonal Parseval estimates prove the transform only while prime-polynomial errors remain subordinate",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u06.txt",
+      "unit_bytes": 3266,
+      "unit_id": "montgomery1973_v2_u06",
+      "unit_sha256": "455fa854f897078756f982c125d0c7ff943f14dfbab7a913596cf6cf4c0890b3",
+      "unit_type": "dirichlet-series-mean-square",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u06.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Precisely locates the arithmetic bottleneck behind the random-matrix conjecture.",
+      "line_end": 632,
+      "line_start": 571,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The shifted-prime expression is legible; q-analogue range constants are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "When the Dirichlet polynomial exceeds the averaging length, nondiagonal terms survive and reorganize into sums of Lambda(n)Lambda(n+h); conjectural Hardy-Littlewood-type estimates, independence across h, or q-analogues indicate the expected continuation but do not prove it.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Beyond alpha=1 the missing input is off-diagonal correlation of shifted prime powers",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u07.txt",
+      "unit_bytes": 2907,
+      "unit_id": "montgomery1973_v2_u07",
+      "unit_sha256": "1cbc4997c78e648d9d08a956ef92013a9d7765364f199ad2417583484a1a74aa",
+      "unit_type": "formal-worker-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u07.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Makes explicit how a pair statistic controls a one-point multiplicity property.",
+      "line_end": 708,
+      "line_start": 634,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact proportions are degraded in scan extraction; symbolic constants need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof computes the convolution for supported sinc kernels, identifies repeated zeros with the diagonal multiplicity sum, and bounds that sum to obtain a positive proportion of simple zeros.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive sinc-squared kernel converts the correlation bound into a multiplicity bound",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u08.txt",
+      "unit_bytes": 2521,
+      "unit_id": "montgomery1973_v2_u08",
+      "unit_sha256": "d9939983a47a9f2468138a3085947b94179eaf0619dc7e8e4dfc93dc9d605e49",
+      "unit_type": "kernel-to-simplicity-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u08.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The author notes the chosen kernel is not optimal, separating proof of existence from best-constant optimization.",
+      "line_end": 752,
+      "line_start": 709,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cosine-integral expression and numerical threshold are legible but should be checked for exact typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A nonnegative compactly supported kernel lower-bounds close zero pairs; subtracting the diagonal leaves a positive contribution once a computable kernel functional C(A) becomes positive.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A triangular frequency kernel forces positive density of sufficiently small gaps",
+      "unit_artifact_relpath": "depth/units/montgomery1973_v2_u09.txt",
+      "unit_bytes": 1704,
+      "unit_id": "montgomery1973_v2_u09",
+      "unit_sha256": "bcaa62d254e677078e3fb474548b037045bd51bbb38d834f4f247287763542de",
+      "unit_type": "kernel-optimization-for-gaps",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_v2_u09.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a conceptual history of a mechanism, not merely bibliography.",
+      "line_end": 169,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core identities are missing in extraction, but the eliminated-constant strategy and method succession are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Stark's variant of the Hadamard-factorization identity removes two hard constants; differentiation and later Guinand-Weil kernels then improve bounds and clarify exactly what the method requires and cannot see.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eliminating nuisance constants opens a path from zeta factorization to analytic discriminant bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u01.txt",
+      "unit_bytes": 3003,
+      "unit_id": "openalex_w2010828369_v2_u01",
+      "unit_sha256": "8a3904cc413832761feca4f15670ba189c91e2f56b6f353cae125ef781eadc0d",
+      "unit_type": "historical-method-transition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried kernel unit to preserve the distinction between asymptotic main-term optimality and unresolved finite-degree optimization.",
+      "line_end": 263,
+      "line_start": 218,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact asymptotic constants are formula-defective; the optimization distinction is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Both unconditional and GRH settings have best-possible main terms, yet it remains open whether optimizers are scaled copies of one fixed function and how small the remainder can be.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimal main terms do not settle the shape or remainder of the best kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u02.txt",
+      "unit_bytes": 2192,
+      "unit_id": "openalex_w2010828369_v2_u02",
+      "unit_sha256": "dd35b85378449ecfbeb328ccfee22c5cdcdbd82b600f8ad1891d0e84d61dc0e2",
+      "unit_type": "optimality-and-scaling-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact but reusable abstraction bridge.",
+      "line_end": 281,
+      "line_start": 264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only and extraction-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Serre's viewpoint generalizes prescribed real/complex completions to arbitrary local fields and, in the function-field case, turns minimal discriminant into minimal genus with a required number of rational points.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local-completion constraints recast discriminant bounds as a global realization problem",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u03.txt",
+      "unit_bytes": 874,
+      "unit_id": "openalex_w2010828369_v2_u03",
+      "unit_sha256": "9d567253ef582b7a0a3a2d09ff2072c8777b28390fab52d1a8f9efc28bda1198",
+      "unit_type": "analogy-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contrast between finite-degree data and sparse-degree tower constructions.",
+      "line_end": 351,
+      "line_start": 282,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some numerical tower bounds are lost, but the invariant and counterexample mechanisms are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Hilbert class field preserves root discriminant while multiplying degree, so discriminant lower bounds constrain class number; Golod-Shafarevich towers then show why the once-expected divergence of minimal root discriminants cannot hold generally.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Root-discriminant invariance converts lower bounds into class-number bounds, but infinite towers defeat monotone-growth intuition",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u04.txt",
+      "unit_bytes": 3582,
+      "unit_id": "openalex_w2010828369_v2_u04",
+      "unit_sha256": "0ee9381772f28252879e35fe203e6f624cf1d78ec930011de3bdd0e3b635f207",
+      "unit_type": "class-field-application-and-counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A useful warning against conflating two representations of arithmetic data.",
+      "line_end": 378,
+      "line_start": 352,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The survey isolates a nearby problem outside the analytic method's reach and explains the missing bridge: a field may lack a power basis, so a generator's polynomial discriminant need not equal the field discriminant.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Field-discriminant methods do not automatically transfer to polynomial discriminants",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u05.txt",
+      "unit_bytes": 1302,
+      "unit_id": "openalex_w2010828369_v2_u05",
+      "unit_sha256": "a67d5819240695ceeeca53532c79092485f68ddd573a54e120b89ea48e848545",
+      "unit_type": "execution-boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates universal worst-case optimization from instance-aware certification.",
+      "line_end": 495,
+      "line_start": 440,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Kernel formulas and constants are OCR-defective, but the adaptation mechanism and comparisons are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Kernels optimized with no local data decay too quickly to exploit known ideals; alternative explicit-formula kernels emphasize specified norms, and exclusions such as no norm-2 prime ideal sharpen the resulting bound.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Known small prime ideals permit kernels tuned to local arithmetic information",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u06.txt",
+      "unit_bytes": 1638,
+      "unit_id": "openalex_w2010828369_v2_u06",
+      "unit_sha256": "5e933a47d75ef883f20ad7d38e1a70d50e14ba7b4299bf263bbe56aeb4a17364",
+      "unit_type": "data-adaptive-kernel-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between discriminant-only and ideal-class information.",
+      "line_end": 560,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical constants are missing; the logical comparison is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Geometry-of-numbers bounds control small ideals in every class, not just discriminants; Zimmert recovers improved ideal norms analytically, while the lack of an Euler product explains why GRH cannot simply be imported into the method.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic ideal-class zeta methods trade Euler-product control for richer Minkowski conclusions",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u07.txt",
+      "unit_bytes": 2439,
+      "unit_id": "openalex_w2010828369_v2_u07",
+      "unit_sha256": "7ed36f297db74c83de2c0c0732f404fcc3a9f239b0a0a74f88c46adb6a4f5f34",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Survey-level unit; no proof is claimed in the source.",
+      "line_end": 588,
+      "line_start": 562,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The principal inequality is absent from extraction, so retain only method comparison and stated optimization problem.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Zimmert, Friedman, and Friedman-Skoruppa provide related analytic constructions for regulators, exposing a parallel optimization problem in signature and discriminant variables.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta methods also produce regulator lower bounds with different small- and large-degree strengths",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u08.txt",
+      "unit_bytes": 1368,
+      "unit_id": "openalex_w2010828369_v2_u08",
+      "unit_sha256": "c3ec3bc22085b4b23edba93c96ae7809ac674fea608b2625ae5d6ddaa5f3312e",
+      "unit_type": "related-analytic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes kernel choice and table-column semantics needed to understand the certification logic.",
+      "line_end": 647,
+      "line_start": 594,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table values are absent, but the measurement design and provenance are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For small-discriminant fields, compute small prime-ideal norms directly, evaluate their explicit-formula contribution, and subtract from total deficiency to infer the aggregate low-zero contribution without computing zeros themselves.",
+      "source_id": "openalex_w2010828369",
+      "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit-formula identity lets an inaccessible zero contribution be measured by subtraction",
+      "unit_artifact_relpath": "depth/units/openalex_w2010828369_v2_u09.txt",
+      "unit_bytes": 3238,
+      "unit_id": "openalex_w2010828369_v2_u09",
+      "unit_sha256": "ea9cc29ff7e129c893e3fad86a7cff652b595f3c804ddbe1f47ba6b8a43c7922",
+      "unit_type": "computational-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2010828369_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2010828369",
+        "title": "Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions : a survey of recent results",
+        "authors": [
+          "Andrew Odlyzko"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "explicit-formula",
+          "numerical-evidence",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes all three setup lemmas and the contour-shift conclusion; later zeta applications instantiate the general mechanism.",
+      "line_end": 582,
+      "line_start": 447,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive OCR; the logical hypotheses and transfer direction are clear from prose, but exact exponents should be checked against the scan before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2.12 and its corollary combine the Cahen-Mellin integral with an L1 Fourier-vanishing lemma and a Tauberian coefficient condition, giving a reusable bridge from vertical-line analytic control to smoothed and unsmoothed asymptotics.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin inversion converts analytic continuation and growth into coefficient-sum asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u01.txt",
+      "unit_bytes": 5033,
+      "unit_id": "openalex_w2058590036_v2_u01",
+      "unit_sha256": "340a21bcb10406989d611b81be31ca8a3a83487feedbcd6d611e9d250ead767a",
+      "unit_type": "transform-and-tauberian-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the contour description, the Tauberian conclusion, and the two prime-number-theorem instantiations.",
+      "line_end": 683,
+      "line_start": 607,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed integrals are damaged, but the prose makes the boundary indentation and residue mechanisms recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text modifies the general theorem first at c=0 by indenting around a regular boundary point, then at a simple pole by extracting its residue, thereby distinguishing convergence to F(0) from a main-term asymptotic.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Regular boundary values and simple poles require distinct contour corrections",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u02.txt",
+      "unit_bytes": 3342,
+      "unit_id": "openalex_w2058590036_v2_u02",
+      "unit_sha256": "8cf108740948b82293bcb288af42db0cc31e19761240be527d3c791affa5114e",
+      "unit_type": "boundary-case-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the warning that overly rapid lambda growth is a genuine separate failure mode.",
+      "line_end": 770,
+      "line_start": 684,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact powers in the rescaling formulas are OCR-fragile; the conceptual rescale-and-transfer argument is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A condition suspected to be an artifact of the proof is removed by replacing the exponential kernel with a fractional-power kernel and translating the resulting coefficient estimates back to the original scale.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Power rescaling removes an artificial vertical-growth restriction",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u03.txt",
+      "unit_bytes": 4215,
+      "unit_id": "openalex_w2058590036_v2_u03",
+      "unit_sha256": "9b48ad09b048b29824e08272e5f28ee17894156eb7f0197536382595505fa215",
+      "unit_type": "method-limitation-removal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The omitted contour-limit details are explicitly identified as difficult but non-novel; the accepted unit captures the reusable residue architecture rather than pretending those estimates are present.",
+      "line_end": 938,
+      "line_start": 773,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula and scan dependency; residue classes and the final structural formula are prose-recoverable, while coefficients require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors move a Mellin contour left, classify residues from the pole, nontrivial zeros, and trivial-zero structure, then subtract a Bernoulli expansion to isolate a zero sum plus analytic remainder.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour displacement turns a smoothed arithmetic series into a sum over zeta zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u04.txt",
+      "unit_bytes": 6859,
+      "unit_id": "openalex_w2058590036_v2_u04",
+      "unit_sha256": "8bd2b204b13f3ce5e2e38f2b68bf1d358566dc0bcd81c21707b1042815a033c0",
+      "unit_type": "explicit-formula-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the stated inability to prove the predicted stronger behavior off RH and the motivating smoothing comparison.",
+      "line_end": 1075,
+      "line_start": 939,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Omega notation is partly degraded, but the conditionality, two-sided oscillation, and smooth-versus-sharp contrast are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A crude local zero count controls the explicit formula, giving an upper bound and both signs infinitely often; the authors then isolate the obstruction that the corresponding unsmoothed summatory function can be substantially less regular.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Under RH the smoothed error has exactly zero-forced scale, unlike the raw summatory error",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u05.txt",
+      "unit_bytes": 6255,
+      "unit_id": "openalex_w2058590036_v2_u05",
+      "unit_sha256": "151212c29755142a494f4e4046e769c3357998768ae0b2aa346d305f10c628c3",
+      "unit_type": "conditional-oscillation-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The precise displayed definitions are visually degraded, but the order of construction and comparison is intact.",
+      "line_end": 1169,
+      "line_start": 1084,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; verify the exact normalization of the Riesz mean from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section replaces Cesaro means by formally advantageous Riesz means, derives a zero expansion, and explains the Abelian implications in both directions between the smoothed theorem and the mean theorem.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riesz means restore the regularity predicted by exponential smoothing",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u06.txt",
+      "unit_bytes": 3322,
+      "unit_id": "openalex_w2058590036_v2_u06",
+      "unit_sha256": "cf038d9cc97b5a76653a42949250bd6f4b47a23ebbf0439e1b2fe1fcaa949166",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the analogue-of-RH assumption and the explicit statement that the result is only conditional.",
+      "line_end": 1396,
+      "line_start": 1176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many formulas are OCR-damaged; the product, zero-bound, term-splitting, and sign conclusion are recoverable, while constants require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof expresses a signed prime-power series by the logarithmic derivative of L(s), uses the functional equation and a canonical product to bound the zero contribution, then separates prime and higher-power terms to obtain a uniform negative main effect.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A completed L-function product bounds zero residues strongly enough to force signed bias",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u07.txt",
+      "unit_bytes": 8236,
+      "unit_id": "openalex_w2058590036_v2_u07",
+      "unit_sha256": "3e4d0c6a772266920b2e7d55f307c0e70629d49d41ada7423901433f80c15145",
+      "unit_type": "conditional-prime-race-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the final caveat that failure of the L-function RH should plausibly reverse the assertion but is not proved.",
+      "line_end": 1558,
+      "line_start": 1403,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose identifies both transforms and bounds; exact kernel formulas and exponents should be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two integral transforms show how a lower bound for a generating function survives insertion first of n^{-s} and then of 1/log n, completing the passage from a log-weighted prime sum to Tschebyschef's asserted unweighted bias.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integral representations transfer divergence through power and logarithmic weights",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u08.txt",
+      "unit_bytes": 5995,
+      "unit_id": "openalex_w2058590036_v2_u08",
+      "unit_sha256": "6f82cd237bb28e19f82fbd7e3f048640425c897a20d3e27e242c18d11174b3f6",
+      "unit_type": "convergence-factor-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This complements rather than duplicates the earlier pointwise generating-function proof.",
+      "line_end": 1689,
+      "line_start": 1559,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive OCR, but decomposition by prime-power exponent and the logical implication structure are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors pass from exponential sums to Riesz/Cesaro means, isolate prime, square, and higher-power contributions, and prove a diverging negative first-order mean, clarifying which direction is merely Abelian.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        31,
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "First-order Riesz means expose the same prime-race bias and imply exponential versions Abelianly",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u09.txt",
+      "unit_bytes": 4185,
+      "unit_id": "openalex_w2058590036_v2_u09",
+      "unit_sha256": "1eb174062a92080eaac236ca241ffa6c50bb6763b88e36bf8b08d29a1972f212",
+      "unit_type": "smoothing-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Routine intermediate estimates are retained only as the connected proof span needed to see the representation changes.",
+      "line_end": 2004,
+      "line_start": 1694,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Display extraction is poor throughout; the named kernels, contour move, divisor asymptotic, and final Tauberian step are clear, but exact constants require the original page.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section converts a squared Mellin integral into a divisor-weighted Bessel series, obtains its boundary asymptotic, and uses a Tauberian integral lemma to recover the mean value of |zeta(1/2+it)|^2.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Bessel-Mellin transform plus an integral Tauberian lemma yields the critical-line second moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u10.txt",
+      "unit_bytes": 10418,
+      "unit_id": "openalex_w2058590036_v2_u10",
+      "unit_sha256": "d73e2682bda1b2b603b174b9b076228b82a184db1c41ceec386543263dec7039",
+      "unit_type": "mean-value-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reciprocal-function generalization begins inside this span and makes clear which restrictions are intentionally not asserted because the base identity is unproved.",
+      "line_end": 2199,
+      "line_start": 2021,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe formula dependency; use this unit for the proof-status distinction and obstruction, not for transcription of the candidate identity without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors derive a striking symmetric candidate formula, then state precisely that a horizontal-contour bound or controlled bracketing is missing even under RH; this is a valuable example of separating formal residue calculus from a valid proof.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        39,
+        40,
+        41
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Ramanujan reciprocal-series identity is isolated from the unproved contour estimate it needs",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u11.txt",
+      "unit_bytes": 8224,
+      "unit_id": "openalex_w2058590036_v2_u11",
+      "unit_sha256": "32b62680df790bae6554bd81fd6ccfa9dcb3af7623f4bd0aac4288d28d2e0abb",
+      "unit_type": "failed-route-and-proof-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the preceding obstruction unit because the generalization is meaningful only with its explicitly non-rigorous status preserved.",
+      "line_end": 2225,
+      "line_start": 2159,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact restrictions and final formulas are intentionally omitted by the source and are also OCR-fragile; retain only the structural transform relation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Ramanujan's observation is abstracted from the Gaussian to reciprocal function pairs, whose Mellin transforms inherit a functional equation and parallel integral transformations.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reciprocal cosine-transform pairs induce matched Mellin functional equations",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u12.txt",
+      "unit_bytes": 3529,
+      "unit_id": "openalex_w2058590036_v2_u12",
+      "unit_sha256": "e49fdfdd7f44df5cf929d63ba41692b62566fdac55ca2d8469f99658379ff645",
+      "unit_type": "transform-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source distinguishes the heuristic route that suggested the criterion from the later rigorous necessity-and-sufficiency proof.",
+      "line_end": 2333,
+      "line_start": 2226,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact definition and decay exponent are formula-sensitive and must be checked against the scan; the two implication mechanisms are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A reciprocal relation suggests a decay estimate, Mellin inversion shows why that estimate implies RH, and a known RH-conditional bound on Mertens sums proves the converse.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        43,
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Decay of an entire Möbius-weighted function is equivalent to RH",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u13.txt",
+      "unit_bytes": 4654,
+      "unit_id": "openalex_w2058590036_v2_u13",
+      "unit_sha256": "1d8afcbf05b2e3ee373e5b0e34dca2661aa301b9dd1dc10f25cea23ccf30d8bc",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Sets up the contour/stationary-phase proof that follows.",
+      "line_end": 2460,
+      "line_start": 2341,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem's exact exponent is visually degraded; verify it before quantitative use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After stating the RH-conditional weighted exponential-sum bound, the authors show that the general weight exponent follows from a special case by partial summation, with uniformity in the phase parameter tracked explicitly.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation reduces a family of weighted zero sums to one endpoint estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u14.txt",
+      "unit_bytes": 4914,
+      "unit_id": "openalex_w2058590036_v2_u14",
+      "unit_sha256": "e45efbdf742e6f6aef8c1eee332347a25036500a6eef0ee55fb5ec5d3c62aa70",
+      "unit_type": "weighted-zero-sum-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A long span is necessary because the semantic mechanism is the staged localization and error budget, not any isolated displayed estimate.",
+      "line_end": 3182,
+      "line_start": 2461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extensive OCR damage in formulas; the contour pieces, stationary point, exceptional endpoint convention, and error-sum logic are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof removes horizontal and local-zero contributions, expands the logarithmic derivative, splits integers by whether the phase has a stationary point, treats tails by first-derivative bounds, and controls the central range by quadratic approximation before summing five errors.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour residues are localized to the stationary range and bounded by a five-term error decomposition",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u15.txt",
+      "unit_bytes": 27420,
+      "unit_id": "openalex_w2058590036_v2_u15",
+      "unit_sha256": "432595d27f552bac7162f0de8a7f37e99de49923faf2545d0791995c1faae641",
+      "unit_type": "contour-and-stationary-phase-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the choice of a real critical-line transform and the two-stage proof design.",
+      "line_end": 3357,
+      "line_start": 3193,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transformed function's normalization is formula-sensitive, but real-valuedness, sign-change logic, and contradiction are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "To force a critical-line zero, the authors first reduce sign change to a short-interval integral estimate, then show that constant sign would turn that estimate into an impossible vertical zeta integral with a main term proportional to the interval length.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        60,
+        61,
+        62
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A small signed integral conflicts with constant sign through a second contour evaluation",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u16.txt",
+      "unit_bytes": 6685,
+      "unit_id": "openalex_w2058590036_v2_u16",
+      "unit_sha256": "2b9ad458c8446f5c9fc4c3fe6d48b1d6fb66684c0c9129250d9fa13d55395e0d",
+      "unit_type": "sign-change-proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the theorem and its counting corollary together with the integral estimate that supports them.",
+      "line_end": 3587,
+      "line_start": 3358,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact short-interval exponent is OCR-fragile; qualitative theorem and proof mechanism are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining integral is expanded and split according to a phase's location relative to the interval; tail estimates and at most one central term complete the sign-change bound, yielding many odd-order zeros on the critical line.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        63,
+        64,
+        65,
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Dirichlet-series phase analysis supplies a zero of odd order in every sufficiently long short interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u17.txt",
+      "unit_bytes": 9171,
+      "unit_id": "openalex_w2058590036_v2_u17",
+      "unit_sha256": "af29b784fc2d4f278132bb120552c95c2000326197436fb90b4821e61023f6b1",
+      "unit_type": "critical-line-zero-density",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contradiction argument establishing both signs in a semi-infinite strip.",
+      "line_end": 3928,
+      "line_start": 3596,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some formulas are damaged, but the inverse zero-counting parametrization, finite/tail split, phase alignment, and contradiction scale are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors rewrite the prime-counting error as a convergent sine series over zero ordinates, approximate it by a model exponential sum, control the tail, and apply Dirichlet simultaneous approximation to transfer one large value to arbitrarily high phases.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simultaneous approximation aligns finitely many zero phases to force logarithmic oscillation",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u18.txt",
+      "unit_bytes": 13991,
+      "unit_id": "openalex_w2058590036_v2_u18",
+      "unit_sha256": "ee25145a10ffb722c8efbc91d1362fd35858bf65ba8d9c2c8889e176ac810782",
+      "unit_type": "diophantine-phase-alignment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The auxiliary exponential damping and nested-rectangle maximum-principle proof are included.",
+      "line_end": 4130,
+      "line_start": 3929,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-stable; exact constants in the growth conditions are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because the model function is not continuous on the boundary, the authors formulate and prove a strip lemma with local boundary control, global boundary bounds, and interior growth, then apply it contrapositively to transfer the oscillation estimate to the boundary series.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A modified Lindelof principle moves interior growth to a discontinuous boundary limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u19.txt",
+      "unit_bytes": 8003,
+      "unit_id": "openalex_w2058590036_v2_u19",
+      "unit_sha256": "8ed400489a959f6838b934ffe35f85cb2ee509cbbff59496acf864b6f02c4f68",
+      "unit_type": "boundary-transfer-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u19.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the final bridge from the zero-phase oscillation theorem to the stated prime-counting sign changes.",
+      "line_end": 4245,
+      "line_start": 4131,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact iterated-log factors are OCR-degraded; the correction mechanism and one-sided obstruction are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains why ordinary partial summation loses the one-sided Omega information, introduces a prime-power corrected counting function, and uses the earlier Riesz-mean bound to show the correction is negligible at the target scale.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        77,
+        78
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Passing from psi oscillation to pi-Li needs smoothing beyond partial summation",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u20.txt",
+      "unit_bytes": 4538,
+      "unit_id": "openalex_w2058590036_v2_u20",
+      "unit_sha256": "121e251b9f0770fb83fc3fb27c4182c2782676032b5285dea4a9d499ce752033",
+      "unit_type": "one-sided-asymptotic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u20.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is historical methodological evidence, not a proof of the announced theorem; the proof appears in Section 4.",
+      "line_end": 338,
+      "line_start": 267,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several target formulas are blank in extraction; the comparative prose is reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction records how an attempted parameter coupling suggested a short-interval zero theorem but remained incomplete, while a different proof removed dependence on both Mellin and elliptic-function machinery; it also records the still-unsuccessful stronger density target.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A two-parameter approach to critical-line zeros is abandoned after a stronger unrelated method appears",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u21.txt",
+      "unit_bytes": 3506,
+      "unit_id": "openalex_w2058590036_v2_u21",
+      "unit_sha256": "83a96d9d1f03361c3496072223e9cf52aadaa5b82ed46e138db9821155854dda",
+      "unit_type": "failed-route-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u21.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects the quantitative theorem preview with a general warning about slow asymptotics and empirical extrapolation.",
+      "line_end": 430,
+      "line_start": 356,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Iterated-log formulas need scan checking, but the confound and comparative-order argument are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explain why extensive computations can support a false global inequality: a fixed-sign lower-order term dominates until an iterated logarithm grows enough for the oscillation to emerge, and the same method predicts reversals in residue-class prime races.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A persistent finite-range prime-counting bias is overturned by a slower-growing oscillatory term",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_v2_u22.txt",
+      "unit_bytes": 4006,
+      "unit_id": "openalex_w2058590036_v2_u22",
+      "unit_sha256": "8145a17483c3aac4f34af7574067c34a3107db026c81f201e00541c2ecbe4da1",
+      "unit_type": "empirical-confound-and-oscillation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_v2_u22.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the known low moments and the limitation of direct Dirichlet-polynomial methods at larger k.",
+      "line_end": 135,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on standard moment and Euler-product formulas, which are cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction factors the conjectural moment constant into a family-specific arithmetic term and g_k, then interprets g_k as the effective number of length-T Dirichlet polynomials needed to capture the mean square.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta moments separate an arithmetic Euler product from a geometric length factor",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u01.txt",
+      "unit_bytes": 6872,
+      "unit_id": "openalex_w2950846448_v2_u01",
+      "unit_sha256": "48159be9a92851ab3f0efac78a4c1a3d115abe41567dbf9ad1529f557683f1e8",
+      "unit_type": "moment-factorization-and-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also gives a concrete family-dependent Euler product to separate arithmetic from symmetry data.",
+      "line_end": 290,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Clean formulas; no material extraction defect.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unitary case changes V(z) to |z|^2 and B(k) to k^2, and reframes zeta's vertical shifts as a family, completing the three-way symmetry comparison.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unitary families use absolute-square moments and recover zeta as a one-parameter family",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u02.txt",
+      "unit_bytes": 2179,
+      "unit_id": "openalex_w2950846448_v2_u02",
+      "unit_sha256": "e7abf07596597b0da96826aa5844d74a48977dc95672939eb66c429edef6ed49",
+      "unit_type": "symmetry-contrast",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the announced analytic, arithmetic, self-similar, and asymptotic consequences that the rest of the paper proves.",
+      "line_end": 405,
+      "line_start": 299,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact gamma products are essential and cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Random matrix theory produces explicit gamma-product limits for U, O, and Sp; agreement with known small-k values calibrates the transfer, while integrality motivates keeping a factorial normalization visible.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Characteristic-polynomial limits supply the previously mysterious universal constants",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u03.txt",
+      "unit_bytes": 7010,
+      "unit_id": "openalex_w2950846448_v2_u03",
+      "unit_sha256": "b47875b2bc49245023668a5fc171c0ffc2a9f3bc8540befdf53fd213d38ee9a3",
+      "unit_type": "random-matrix-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is behavioral evidence for symmetry beyond raw central moments.",
+      "line_end": 501,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed integral quadratic forms and parity restrictions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The same inverse-Dirichlet mollifier gives different quadratic functionals for U, O, and Sp, including an anomalous short-mollifier orthogonal limit and the identity M_Sp(P,Q',theta)=M_O(P,Q,theta).",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mollified mean squares distinguish symmetry types and reveal an O/Sp derivative duality",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u04.txt",
+      "unit_bytes": 5271,
+      "unit_id": "openalex_w2950846448_v2_u04",
+      "unit_sha256": "734e8d71813d6ae28310f2a8572e28e8941332dd245da93e2d45287623edba17",
+      "unit_type": "mollifier-symmetry-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shown for the unitary case with the other cases declared analogous.",
+      "line_end": 605,
+      "line_start": 550,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses the extracted integral representation for log Gamma and its differentiated estimate.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A gamma-product tail is reduced to a second finite difference, estimated through the second derivative of log Gamma; convergence, growth, and the exponent of convergence of poles then establish exact order two.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second differences of log Gamma control an infinite product as an order-two meromorphic function",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u05.txt",
+      "unit_bytes": 2640,
+      "unit_id": "openalex_w2950846448_v2_u05",
+      "unit_sha256": "be64fe20f71ad2a6083585ba6668a57939f92421671c8e884a8b80bd6d13185d",
+      "unit_type": "meromorphic-growth-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also explains how the exceptional nondivisibility intervals follow from the first valuation layer.",
+      "line_end": 884,
+      "line_start": 715,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Floor conventions are essential; extraction is legible but symbolic reuse should preserve them exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Regrouped factorial products yield exact p-adic floor sums; decomposing each summand into two residue cases makes it an integer strictly greater than -1, hence nonnegative.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Floor-sum decompositions prove every p-adic valuation is nonnegative",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u06.txt",
+      "unit_bytes": 10388,
+      "unit_id": "openalex_w2950846448_v2_u06",
+      "unit_sha256": "534f64c861e6cca45eb8b14e6cf38c77f139c53114dd258f5550e365062029d7",
+      "unit_type": "valuation-positivity-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the general proposition that reduces the taxonomy to one periodic seed function.",
+      "line_end": 1075,
+      "line_start": 919,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact residue and derivative conditions in Theorem 6.2 and Proposition 6.3 are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Residues of powers of p modulo the denominator determine whether the scaling limit repeats, acquires an absolute-value cusp, or develops a logarithmically amplified slope.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rational points split into self-similar, cusp, and vertical-tangent regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u07.txt",
+      "unit_bytes": 8494,
+      "unit_id": "openalex_w2950846448_v2_u07",
+      "unit_sha256": "6b2cc0954d8f30c7e0536588634593be9c7f934f850e65a06e676dda6b9f84ab",
+      "unit_type": "local-regularity-classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the classification unit because it supplies its reusable construction and proof.",
+      "line_end": 1202,
+      "line_start": 1010,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the smoothness and near-zero growth assumptions on the seed function.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposition proves continuity by uniform convergence, exact scaling by reindexing, and local rational expansions by splitting the bilateral sum into three ranges and applying Taylor expansion.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A bilateral scaled sum turns periodic local data into a continuous homogeneous fractal",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u08.txt",
+      "unit_bytes": 10621,
+      "unit_id": "openalex_w2950846448_v2_u08",
+      "unit_sha256": "701e5f8fedae3bec2e5041e974d4774f1eebf3a0be5a9d4e997d901bd5682330",
+      "unit_type": "self-similar-function-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Orthogonal and symplectic limits then follow by a parallel calculation and the O/Sp identity.",
+      "line_end": 1328,
+      "line_start": 1203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent but cleanly extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof normalizes exact valuations at k=[p^j x], shifts the scale index, controls finite and tail ranges uniformly, and recognizes the limit through a floor identity as ||p^ell x||^2.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rescaled floor formulas converge to the distance-to-nearest-integer series",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u09.txt",
+      "unit_bytes": 6873,
+      "unit_id": "openalex_w2950846448_v2_u09",
+      "unit_sha256": "db3854685bdda6bdd9973d3d7221fbc579578f032e6b0c8ba6309b5b4afc06dd",
+      "unit_type": "asymptotic-valuation-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the sufficient asymptotic lemma and closes the analytic identification loop.",
+      "line_end": 1451,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact coefficients are formula-sensitive but extraction is clean.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Finite factorial representations reduce log g_k to four elementary sums, whose Euler-Maclaurin expansions expose leading, logarithmic, and constant terms and match the Barnes double-gamma formulas.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin expansion resolves the growth of all three symmetry constants",
+      "unit_artifact_relpath": "depth/units/openalex_w2950846448_v2_u10.txt",
+      "unit_bytes": 6885,
+      "unit_id": "openalex_w2950846448_v2_u10",
+      "unit_sha256": "ece66d3162197cf5b0c90f05a0112dda38bbafe5797b7a0022f980b481acd4d6",
+      "unit_type": "large-parameter-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2950846448_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

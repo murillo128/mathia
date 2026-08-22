@@ -1,0 +1,1689 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2023889974_c8d61721_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2023889974",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the family definition and both theorem statements; later sections supply the analytic mechanisms.",
+      "line_end": 41,
+      "line_start": 15,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: prose is clear, while OCR has dropped some comparison symbols in displayed bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u01.txt",
+      "unit_bytes": 1614,
+      "unit_id": "full_openalex_w2023889974_v2u01",
+      "unit_sha256": "3a318e78a5f6ccafad929f4417f82d6979c5333861888af82598f18ce5a19e2f",
+      "unit_type": "problem setup and theorem targets",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u01.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 7,
+          "line_end": 14,
+          "text": "\n\n              Averages of twisted elliptic L-functions\n                                      by\n\n           A. Perelli (Genova) and J. Pomykała (Warszawa)\n\n\n",
+          "sha256": "1783248030806dfa26f8691f0ba6f0ce04459220c24d28ed668919c4a3ecd292"
+        },
+        "after": {
+          "line_start": 42,
+          "line_end": 49,
+          "text": "\n   1991 Mathematics Subject Classification: 11F67, 11M41.\n   Research partially supported by the EEC grant CIPA-CT92-4022 (DG 12 HSMU).\n\n                                     [149]\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "22578176249d6834e18594c4fecbfc3816b40f799fc59102e81e34d2904fd1f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and quantitative targets",
+            "line_end": 79,
+            "line_start": 15,
+            "mathematical_role": "Defines the quadratic-twist family, states nonvanishing and average-rank results, and identifies the large-sieve loss as their quantitative bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 41,
+          "line_start": 15,
+          "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "unit_type": "problem setup and theorem targets",
+          "why_material": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the family definition and both theorem statements; later sections supply the analytic mechanisms.",
+          "representation_dependency": "Medium: prose is clear, while OCR has dropped some comparison symbols in displayed bounds.",
+          "unit_id": "full_openalex_w2023889974_v2u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 79,
+            "line_start": 52,
+            "title": "Large-sieve loss controls the strength of both conclusions",
+            "unit_id": "full_openalex_w2023889974_v2u02",
+            "unit_type": "method bottleneck and counterfactual improvement",
+            "why_material": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same family-estimate loss propagates through two distinct interfaces: Cauchy-Schwarz turns it into a nonvanishing-density loss, while zero density plus an explicit formula turns it into an average-rank loss.",
+            "limit": "This is a within-paper sensitivity mechanism for one fixed elliptic curve's quadratic twists, not a universal equivalence between moment quality and rank statistics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u01",
+              "full_openalex_w2023889974_v2u02",
+              "full_openalex_w2023889974_u02"
+            ],
+            "title": "Moment quality as a shared family-level bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u01",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "spontaneous_reading": "Quadratic twisting is the compression doing the work: one fixed elliptic curve supplies the coefficients, while fundamental discriminants index a family whose central derivative nonvanishing and analytic ranks can be studied statistically."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u01",
+          "source_grounded_mathematics": "For a fixed modular elliptic curve E of conductor N, each fundamental discriminant d coprime to N defines a twist E_d and twists L(s,E) by the real primitive character chi_d. The unit defines N(D) through nonvanishing of the displayed central L0 quantity and states a D^(1-epsilon)-scale lower bound, together with sum*_{d<=D} rank(E_d)=o(D log D).",
+          "conceptual_reading": "The family viewpoint replaces isolated arithmetic questions by distributions of central analytic behavior. Two observables are separated: a count of twists with a nonvanishing central derivative-like quantity and the total order of central vanishing.",
+          "representation_or_bridge": "The bridge is E_d -> L(s,E_d)=character twist of a fixed L-function; analytic rank then represents central vanishing, allowing arithmetic questions to enter family-level analytic estimates.",
+          "boundary_or_failure": "The arithmetic interpretation invokes conjectural BSD context, and the stated theorems are only targets here; this span does not supply their analytic mechanisms. It also concerns one fixed curve's quadratic-twist family, not arbitrary elliptic-curve families.",
+          "uncertainty": "OCR drops comparison glyphs and renders the prime/derivative notation as L0, so the direction and exact typography of the first bound should be checked against the scan before quotation; the prose and exponents still support the qualitative reading."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The starred-family convention is included because it fixes the averaging domain.",
+      "line_end": 79,
+      "line_start": 52,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the counterfactual rates are readable, but exact inequality glyphs should be checked against the scan for quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large-sieve loss controls the strength of both conclusions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u02.txt",
+      "unit_bytes": 1291,
+      "unit_id": "full_openalex_w2023889974_v2u02",
+      "unit_sha256": "48e2f9352c02cfa71bc43f02b2df5956046833a5996c244d8a874f6e18226c71",
+      "unit_type": "method bottleneck and counterfactual improvement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u02.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 44,
+          "line_end": 51,
+          "text": "   Research partially supported by the EEC grant CIPA-CT92-4022 (DG 12 HSMU).\n\n                                     [149]\n\n<!-- source-page: 2 -->\n\n150                        A. Perelli and J. Pomykała\n\n",
+          "sha256": "1b16ca7c0ae394e26fc07a3cae93432f0513afc77e6447b6b2c2f9e251ae28e6"
+        },
+        "after": {
+          "line_start": 80,
+          "line_end": 87,
+          "text": "\n   2. Outline of the proofs. In this section we outline the basic ingredi-\nents of the proofs. The main tool is\n      Theorem 3. Let ε > 0 and τ = |t| + 1. Then\n                        X∗\n                             |L0 (1, Ed )|2 \nε D1+ε\n                           d≤D\n",
+          "sha256": "e6fa72d30324bed69461aba717037e731284d4636b051298acc6d1599634484d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and quantitative targets",
+            "line_end": 79,
+            "line_start": 15,
+            "mathematical_role": "Defines the quadratic-twist family, states nonvanishing and average-rank results, and identifies the large-sieve loss as their quantitative bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 79,
+          "line_start": 52,
+          "title": "Large-sieve loss controls the strength of both conclusions",
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "unit_type": "method bottleneck and counterfactual improvement",
+          "why_material": "Makes an explicit sensitivity claim: replacing the D-epsilon loss in the family estimates by logarithmic loss would simultaneously sharpen nonvanishing density and average rank."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The starred-family convention is included because it fixes the averaging domain.",
+          "representation_dependency": "Medium: the counterfactual rates are readable, but exact inequality glyphs should be checked against the scan for quotation.",
+          "unit_id": "full_openalex_w2023889974_v2u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 41,
+            "line_start": 15,
+            "title": "Quadratic-twist family targets: nonvanishing and average analytic rank",
+            "unit_id": "full_openalex_w2023889974_v2u01",
+            "unit_type": "problem setup and theorem targets",
+            "why_material": "Connects arithmetic questions about twisted elliptic curves to central vanishing of their L-functions and states the two family-level outcomes whose proof mechanisms organize the paper."
+          },
+          {
+            "line_end": 143,
+            "line_start": 76,
+            "title": "Moment and zero-density reductions for the two average results",
+            "unit_id": "full_openalex_w2023889974_u02",
+            "unit_type": "zero-density-to-rank strategy",
+            "why_material": "Carried v1 unit linking a second moment plus a first moment to nonvanishing and linking average zero density to a general average-rank theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same family-estimate loss propagates through two distinct interfaces: Cauchy-Schwarz turns it into a nonvanishing-density loss, while zero density plus an explicit formula turns it into an average-rank loss.",
+            "limit": "This is a within-paper sensitivity mechanism for one fixed elliptic curve's quadratic twists, not a universal equivalence between moment quality and rank statistics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u01",
+              "full_openalex_w2023889974_v2u02",
+              "full_openalex_w2023889974_u02"
+            ],
+            "title": "Moment quality as a shared family-level bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u02",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "spontaneous_reading": "A single quantitative defect in the real-character large sieve propagates into both headline results, making the D^epsilon loss a shared bottleneck rather than two unrelated weaknesses."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u02",
+          "source_grounded_mathematics": "Starred sums range over fundamental discriminants d coprime to N. The authors attribute the quality of both results to Heath-Brown's large-sieve estimates and state that replacing the D^epsilon factor in later Theorems 3 and 4 by a power of log D would improve the nonvanishing count to a D times logarithmic-factor scale and the rank sum to a D log log D scale.",
+          "conceptual_reading": "This is a sensitivity analysis: an upstream family-estimate loss is tracked through two downstream conclusions. It identifies where stronger input would matter without changing the proof architecture.",
+          "representation_or_bridge": "The common interface is averaging over the starred discriminant family; later moment and zero-density estimates are the bridge objects through which the large-sieve loss reaches nonvanishing and average rank.",
+          "boundary_or_failure": "The improvements are counterfactual and conditional on a stronger large-sieve input. The span does not prove such an input or establish a universal relation between moment quality and rank statistics.",
+          "uncertainty": "Several inequality symbols are absent in OCR, so exact bound directions and the sign of the logarithmic power should not be quoted solely from this text; the stated dependence on replacing D^epsilon is clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The elliptic curve is fixed, and all implicit constants may depend on it.",
+      "line_end": 187,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: degree-two expansions and the completed-function normalization are formula-dependent but legible enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Collects exactly the coefficient control, analytic continuation, and reflection symmetry that enable smoothing, large-sieve estimation, contour shifting, and zero symmetry.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet-series and functional-equation data for the twist family",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u03.txt",
+      "unit_bytes": 1350,
+      "unit_id": "full_openalex_w2023889974_v2u03",
+      "unit_sha256": "80cc17697638bb7dfe25d1ab8617bd29d37ce1c01a2b92bacbb95a824d644716",
+      "unit_type": "analytic family specification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u03.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "at once from Theorems 4 and 5, since we can choose L(D) = Dε . Observe\nthat the Riemann Hypothesis for the functions L(s, Ed ) allows, in particular,\nthe choice L(D) = 2.\n\n<!-- source-page: 4 -->\n\n152                           A. Perelli and J. Pomykała\n\n",
+          "sha256": "22c82d31f5b206f65220e0d95aa4154005d3808ea9b40a64c82198486f87ced3"
+        },
+        "after": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "\n     3. Proof of Theorem 3. We first state the basic tool of our paper,\ni.e., Corollary 3 of Heath-Brown [6]. Denoting by S(Q) the set of all real\nprimitive characters of modulus at most Q, we state Corollary 3 of [6] as\n\n    Proposition 1. Let Q, N be positive integers and a1 , . . . , aN ∈ C. Then\nfor every ε > 0,\n             X   X           2\n",
+          "sha256": "530928667438f3aadf27eb705bdbae4160d4c10d729698959f15e9d1f085529b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic data for the twist family",
+            "line_end": 187,
+            "line_start": 157,
+            "mathematical_role": "Records Dirichlet expansions, coefficient bounds, entire continuation, and the functional equation used later."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 187,
+          "line_start": 162,
+          "title": "Dirichlet-series and functional-equation data for the twist family",
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "unit_type": "analytic family specification",
+          "why_material": "Collects exactly the coefficient control, analytic continuation, and reflection symmetry that enable smoothing, large-sieve estimation, contour shifting, and zero symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The elliptic curve is fixed, and all implicit constants may depend on it.",
+          "representation_dependency": "High: degree-two expansions and the completed-function normalization are formula-dependent but legible enough for semantic use.",
+          "unit_id": "full_openalex_w2023889974_v2u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 143,
+            "line_start": 76,
+            "title": "Moment and zero-density reductions for the two average results",
+            "unit_id": "full_openalex_w2023889974_u02",
+            "unit_type": "zero-density-to-rank strategy",
+            "why_material": "Carried v1 unit linking a second moment plus a first moment to nonvanishing and linking average zero density to a general average-rank theorem."
+          },
+          {
+            "line_end": 249,
+            "line_start": 189,
+            "title": "Mellin truncation plus the real-character large sieve",
+            "unit_id": "full_openalex_w2023889974_v2u04",
+            "unit_type": "mean-square construction",
+            "why_material": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u03",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "spontaneous_reading": "The unit packages the twist family into three compatible Dirichlet expansions plus a reflection law: coefficient bounds make the series estimable, while the completed functional equation makes values on opposite sides of the central line interchangeable."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u03",
+          "source_grounded_mathematics": "For real part s greater than 3/2, L(s,E_d), its reciprocal, and the displayed logarithmic-derivative quantity have Dirichlet series with chi_d-twisted coefficients bounded respectively by n^(1/2) times divisor, divisor, or von Mangoldt factors. The completed function, formed using d, N, Gamma(s), and L(s,E_d), is entire of controlled order and satisfies Lambda(s,E_d)=w_d Lambda(2-s,E_d), with |w_d|=1.",
+          "conceptual_reading": "Coefficient control and analytic symmetry are complementary resources: the first enables finite or smoothed polynomial estimates, and the second transports those estimates across the central point.",
+          "representation_or_bridge": "Dirichlet coefficients expose character orthogonality and large-sieve access; the completed L-function absorbs conductor and Gamma factors so the involution s -> 2-s becomes explicit.",
+          "boundary_or_failure": "These data enable later smoothing, contour shifts, and zero symmetry but do not themselves yield a moment or density bound. All constants may depend on the fixed curve E.",
+          "uncertainty": "The displayed degree-two series and completed normalization are OCR-sensitive, and L0/L likely represents a derivative quotient; symbolic reuse should be scan-checked even though the structural roles are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definition of the exponent infimum is included because the proof closes by improving that same exponent.",
+      "line_end": 249,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the mechanism is prose-supported, but equations (3)-(5) require the displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin truncation plus the real-character large sieve",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u04.txt",
+      "unit_bytes": 2716,
+      "unit_id": "full_openalex_w2023889974_v2u04",
+      "unit_sha256": "54d4840c318f146ba003316dd67da7863224193fbc54fac745cc16db89a15e1d",
+      "unit_type": "mean-square construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u04.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "where\n                          \u0012 √ \u0013s\n                           d N\n              Λ(s, Ed ) =        Γ (s)L(s, Ed ) and |wd | = 1.\n                            2π\n    We finally remark that all the constants may depend on the data of the\nfixed elliptic curve E.\n\n",
+          "sha256": "766c1e96ff6470b45cedc5d42e00786cf407b37bd1abc2fded778122bc734d1e"
+        },
+        "after": {
+          "line_start": 250,
+          "line_end": 257,
+          "text": "\n   Let δ > 0 be sufficiently small. If 1 + δ ≤ σ ≤ 3/2 we choose α = 2 − σ\nand X = (Dτ )1+δ . Then 1/2 ≤ α < σ, and from (4) and (5) we get\n        S(D, s) \n (D + (Dτ )3−2σ )(Dτ )ε(2+δ)+δ\n                   + (D + (Dτ )3−2σ )(Dτ )−4δ(σ−1)+ν(σ)+ε\n                \n (D + (Dτ )3−2σ )(Dτ )3ε {(Dτ )δ + (Dτ )ν(σ)−4δ(σ−1) }.\n",
+          "sha256": "5be2baa8c260702d041e3f83bf35c7a3c4735256afed2a97e2321d3e8554b50b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 3",
+            "line_end": 288,
+            "line_start": 188,
+            "mathematical_role": "Derives the family mean-square estimate by Mellin smoothing, a real-character large sieve, functional-equation reflection, and an exponent bootstrap; then obtains the derivative moment by Cauchy's formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 249,
+          "line_start": 189,
+          "title": "Mellin truncation plus the real-character large sieve",
+          "unit_id": "full_openalex_w2023889974_v2u04",
+          "unit_type": "mean-square construction",
+          "why_material": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definition of the exponent infimum is included because the proof closes by improving that same exponent.",
+          "representation_dependency": "High: the mechanism is prose-supported, but equations (3)-(5) require the displayed formulas.",
+          "unit_id": "full_openalex_w2023889974_v2u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 187,
+            "line_start": 162,
+            "title": "Dirichlet-series and functional-equation data for the twist family",
+            "unit_id": "full_openalex_w2023889974_v2u03",
+            "unit_type": "analytic family specification",
+            "why_material": "Collects exactly the coefficient control, analytic continuation, and reflection symmetry that enable smoothing, large-sieve estimation, contour shifting, and zero symmetry."
+          },
+          {
+            "line_end": 288,
+            "line_start": 251,
+            "title": "Functional-equation exponent bootstrap and derivative control",
+            "unit_id": "full_openalex_w2023889974_v2u05",
+            "unit_type": "self-improving exponent argument",
+            "why_material": "Chooses different reflected lines on the two sigma ranges to force the moment-loss exponent to zero, then turns a neighborhood bound for L into a central derivative bound using Cauchy's integral formula."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u04",
+          "spontaneous_reading": "Mellin smoothing turns the family moment into a short collection of character polynomials plus a reflected copy of the same moment, creating a self-referential inequality that the real-character large sieve can improve."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u04",
+          "source_grounded_mathematics": "The unit defines S(D,s)=sum*_{D<d<=2D}|L(s,E_d)|^2 and an infimal loss exponent nu(sigma). Mellin smoothing bounds S by a weighted Dirichlet polynomial and an integral of S on a line alpha<sigma. The functional equation rewrites the latter at 2-alpha, while truncation at about X log^2(D tau), dyadic subdivision, and Heath-Brown's large sieve give the displayed bound (5) for the polynomial term.",
+          "conceptual_reading": "The moment is reframed from an analytic family object into two controllable pieces: finite character sums and a reflected residual moment. Defining nu as an infimum makes improvement of the estimate itself into the proof variable.",
+          "representation_or_bridge": "The exponential weight e^(-n/X) and dyadic blocks bridge Dirichlet series to the large sieve; the functional equation bridges the residual line back to the same exponent profile nu.",
+          "boundary_or_failure": "This span sets up but does not close the exponent bootstrap. Its usefulness depends on coefficient bounds, decay of the smoothing weight, and the specific real-character large sieve.",
+          "uncertainty": "Equations (3)-(5), including missing comparison glyphs and several exponents, are formula-dependent OCR; the mechanism is prose-supported, but exact numerical reuse requires scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the closure step for Theorem 3 and depends on the setup in lines 189-249.",
+      "line_end": 288,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: parameter exponents and range splits are essential; scan verification is advisable for exact constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses different reflected lines on the two sigma ranges to force the moment-loss exponent to zero, then turns a neighborhood bound for L into a central derivative bound using Cauchy's integral formula.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation exponent bootstrap and derivative control",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u05.txt",
+      "unit_bytes": 1740,
+      "unit_id": "full_openalex_w2023889974_v2u05",
+      "unit_sha256": "bbc9de9bf292092a6b94db2cc473fc1a32f629faa4145408b2defffd34c37ac1",
+      "unit_type": "self-improving exponent argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u05.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "the right hand side of (4) is negligible. We split the remaining part of that\nsum into sub-sums where n runs over intervals of the type M < n ≤ 2M ,\nand applying Proposition 1 to each sub-sum we see that\n          X∗     X∞                        2\n(5)                  a(n)χd (n)n−s e−n/X \n (D + X 3−2σ )(Dτ X)ε .\n         D<d≤2D     n=1\n\n",
+          "sha256": "44511080c4d497c539d9993e80e36c816266b9149658adfa677dcb3c16116555"
+        },
+        "after": {
+          "line_start": 289,
+          "line_end": 296,
+          "text": "\n   4. Proof of Theorem 4. Here we follow the zero-detecting method of\nChapter 12 of Montgomery [12], as presented in the proof of Theorem 3 of [6].\nLet R = R(D, T, σ, t) be the number of d ≤ D, d fundamental discriminant\nwith (d, N ) = 1, for which L(s, Ed ) has a zero in the square\n(7)         σ ≤ Re s < σ + (log DT )−1 ,        t ≤ Im s < t + (log DT )−1\nwith 1 ≤ σ ≤ 3/2 and |t| ≤ T , and let Y \n X \n",
+          "sha256": "ee7644665192d0a5c8ebee759c83000d6445234aa17db4bc35c6b6cad90d1b5c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 3",
+            "line_end": 288,
+            "line_start": 188,
+            "mathematical_role": "Derives the family mean-square estimate by Mellin smoothing, a real-character large sieve, functional-equation reflection, and an exponent bootstrap; then obtains the derivative moment by Cauchy's formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 288,
+          "line_start": 251,
+          "title": "Functional-equation exponent bootstrap and derivative control",
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "unit_type": "self-improving exponent argument",
+          "why_material": "Chooses different reflected lines on the two sigma ranges to force the moment-loss exponent to zero, then turns a neighborhood bound for L into a central derivative bound using Cauchy's integral formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the closure step for Theorem 3 and depends on the setup in lines 189-249.",
+          "representation_dependency": "High: parameter exponents and range splits are essential; scan verification is advisable for exact constants.",
+          "unit_id": "full_openalex_w2023889974_v2u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 249,
+            "line_start": 189,
+            "title": "Mellin truncation plus the real-character large sieve",
+            "unit_id": "full_openalex_w2023889974_v2u04",
+            "unit_type": "mean-square construction",
+            "why_material": "Shows how an analytic family moment is converted into smoothed character polynomials, truncated dyadically, and bounded by a large-sieve input while a reflected moment is retained for bootstrapping."
+          },
+          {
+            "line_end": 376,
+            "line_start": 266,
+            "title": "Carried zero-detection argument through its first alternative",
+            "unit_id": "full_openalex_w2023889974_u03",
+            "unit_type": "zero-detecting density argument",
+            "why_material": "Carried v1 unit preserving the transition from the mean-square theorem into a mollified zero detector and the Cauchy-Schwarz estimate for its first alternative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "spontaneous_reading": "The proof closes by choosing the reflected line differently in two sigma ranges, forcing any admissible loss exponent to improve toward zero; a small complex neighborhood then converts value control into derivative control by Cauchy's formula."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u05",
+          "source_grounded_mathematics": "For sigma at least 1+delta the choices alpha=2-sigma and X=(D tau)^(1+delta) yield an inequality comparing nu(sigma) with max(delta,nu(sigma)-4 delta(sigma-1)) plus epsilon losses. Near sigma=1 the proof instead takes alpha=1-delta and imports the bound at 1+delta. Letting epsilon and delta shrink gives the asserted second-moment estimate; the functional equation extends it to a small circle around 1, and Cauchy's integral formula bounds the central derivative moment.",
+          "conceptual_reading": "This is a self-improving exponent argument: assume only that a loss exponent is admissible, reflect and smooth to produce a strictly better admissible exponent, and use the infimum definition to close the loop.",
+          "representation_or_bridge": "The range split is the bridge between a symmetric reflection argument away from the center and local transfer near the center; the Cauchy circle bridges uniform function values to derivatives.",
+          "boundary_or_failure": "The closure depends on the setup and estimates (3)-(5) from the preceding unit and on uniform functional-equation control. It provides family-average bounds, not pointwise control of each twist.",
+          "uncertainty": "OCR makes some square-root and epsilon/delta typography ambiguous, so exact constants and exponents should be checked against the scan; the two-range bootstrap and Cauchy step are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Defines the local zero count, inverse-series mollifier, auxiliary scales, and both alternatives.",
+      "line_end": 325,
+      "line_start": 290,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the dichotomy is encoded in displayed integrals and sums, with prose fixing their role.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns a zero in a small box into one of two detectable large quantities: a mollified L-integral or a dyadic tail polynomial, creating complementary analytic routes to bound the same zero count.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mollified zero detector and its two alternatives",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u06.txt",
+      "unit_bytes": 1475,
+      "unit_id": "full_openalex_w2023889974_v2u06",
+      "unit_sha256": "fbcaeeed736db2566b1dcba5ea7cc679c1c2997fb7d19141fdb0dcca5043eb1a",
+      "unit_type": "zero-detecting construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u06.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 282,
+          "line_end": 289,
+          "text": "(6)                               |L(s, Ed )|2 \n D1+ε\n                                 d≤D\n\nuniformly for |s − 1| ≤ 2(log D)−1 . Hence the first assertion of Theorem 3\nfollows from (6), using Cauchy’s integral formula and choosing the circle\n|s − 1| = (log D)−1 as path of integration.\n\n",
+          "sha256": "476199dd7e3c96f133f372f1250192bddf2ed08fa632333af0d07781ca3c52ff"
+        },
+        "after": {
+          "line_start": 326,
+          "line_end": 333,
+          "text": "\n      In the first case we have\n               \\\n       t+1+c1 log DT\n                       |L(1 + iu, Ed )MX (1 + iu, Ed )| du \n Y σ−1 (log DT )−1 .\n        t−c1 log DT\n\n",
+          "sha256": "e0f45974571c6533a0cfa7fb0abd30e123a2984e3ec405d3642fec4faa82fe07"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 419,
+            "line_start": 289,
+            "mathematical_role": "Implements a mollified zero detector, bounds its two alternatives, balances auxiliary lengths, and sums local zero boxes into the density theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 325,
+          "line_start": 290,
+          "title": "Mollified zero detector and its two alternatives",
+          "unit_id": "full_openalex_w2023889974_v2u06",
+          "unit_type": "zero-detecting construction",
+          "why_material": "Turns a zero in a small box into one of two detectable large quantities: a mollified L-integral or a dyadic tail polynomial, creating complementary analytic routes to bound the same zero count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Defines the local zero count, inverse-series mollifier, auxiliary scales, and both alternatives.",
+          "representation_dependency": "High: the dichotomy is encoded in displayed integrals and sums, with prose fixing their role.",
+          "unit_id": "full_openalex_w2023889974_v2u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 376,
+            "line_start": 266,
+            "title": "Carried zero-detection argument through its first alternative",
+            "unit_id": "full_openalex_w2023889974_u03",
+            "unit_type": "zero-detecting density argument",
+            "why_material": "Carried v1 unit preserving the transition from the mean-square theorem into a mollified zero detector and the Cauchy-Schwarz estimate for its first alternative."
+          },
+          {
+            "line_end": 419,
+            "line_start": 327,
+            "title": "Balancing the two zero-detection alternatives",
+            "unit_id": "full_openalex_w2023889974_v2u07",
+            "unit_type": "case balancing and density extraction",
+            "why_material": "Bounds the integral alternative by the family moment and mollifier large sieve, bounds the polynomial alternative directly, and chooses X and Y so neither case dominates before summing zero boxes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zero is forced to reveal itself through either a mollified L-integral or a tail polynomial; estimating both and choosing auxiliary lengths where their costs meet yields a uniform density exponent.",
+            "limit": "The detector is solver- and coefficient-bound specific, and exact exponents rely on the stated large-sieve input.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_u03",
+              "full_openalex_w2023889974_v2u06",
+              "full_openalex_w2023889974_v2u07"
+            ],
+            "title": "A two-output zero detector stabilized by parameter balancing"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u06",
+          "spontaneous_reading": "A zero in a tiny box is forced to emit one of two witnesses: either a large mollified L-integral or a large dyadic tail polynomial. This dichotomy makes an invisible zero count accessible to two different mean-square tools."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u06",
+          "source_grounded_mathematics": "R(D,T,sigma,t) counts discriminants whose L(s,E_d) has a zero in a logarithmic-sized box. A truncated reciprocal series M_X is introduced, and L times M_X has a tail with coefficients c(n) beyond X. The zero-detecting procedure says that many counted twists satisfy either a lower bound for a Gamma-weighted integral of L M_X or a lower bound for a smoothed sum of c(n)chi_d(n)n^(-rho) over some dyadic interval U<n<=2U with U between X and Y^2.",
+          "conceptual_reading": "The detector converts the existential event 'there is a zero here' into a disjunction of quantitative certificates. The two certificates expose complementary parts of the mollified identity rather than demanding direct access to the zeros.",
+          "representation_or_bridge": "The inverse-series truncation M_X is the bridge object: multiplying by L approximates 1 at short lengths, while the residual coefficients c(n) isolate the tail that becomes the second witness.",
+          "boundary_or_failure": "This unit only establishes the alternatives; neither is yet bounded, and effectiveness requires suitable later choices of X and Y. It is specific to the coefficient and analytic structure of this L-function family.",
+          "uncertainty": "Several lower-bound signs and proportionality symbols are lost in OCR, but the prose clearly states a two-case zero detector and the ranges of its auxiliary parameters."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both case estimates, the balancing choice, and passage from a local box count to Theorem 4.",
+      "line_end": 419,
+      "line_start": 327,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact exponents in (8)-(13) matter and should be scan-checked before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds the integral alternative by the family moment and mollifier large sieve, bounds the polynomial alternative directly, and chooses X and Y so neither case dominates before summing zero boxes.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Balancing the two zero-detection alternatives",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u07.txt",
+      "unit_bytes": 3756,
+      "unit_id": "full_openalex_w2023889974_v2u07",
+      "unit_sha256": "0c51510c74c33e67e4c01c29e6556ecb08baa258d2720d7d9225aad78e82e3c1",
+      "unit_type": "case balancing and density extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u07.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "    (ii) there are U ∈ [X, Y 2 ] and \n R(log Y )−1 values of d as above, with\ncorresponding zeros % = β + iγ in the square (7), for which\n                    X\n                          c(n)χd (n)n−% e−n/Y \n (log Y )−1 .\n                       U <n≤2U\n\n",
+          "sha256": "bbad86a90c7692a1a0f5bd3581c86491a3becbf771732f1834e9c585ada27d5f"
+        },
+        "after": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "\n    5. Proof of Theorem 5. Let us first establish some notation. Given an\nintegrable function f : R → C with compact support, define\n                                       \\∞\n                            F (s) =         f (x)esx dx\n                                      −∞\nto be its Laplace transform. For a function f of real or complex variable and\nfor λ > 1 we define fλ (z) = f (z/λ). Moreover,\n",
+          "sha256": "e875da6914ddba1729f2b099f77ee0242f75276fb3288321b754450fc5bb8648"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 419,
+            "line_start": 289,
+            "mathematical_role": "Implements a mollified zero detector, bounds its two alternatives, balances auxiliary lengths, and sums local zero boxes into the density theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 419,
+          "line_start": 327,
+          "title": "Balancing the two zero-detection alternatives",
+          "unit_id": "full_openalex_w2023889974_v2u07",
+          "unit_type": "case balancing and density extraction",
+          "why_material": "Bounds the integral alternative by the family moment and mollifier large sieve, bounds the polynomial alternative directly, and chooses X and Y so neither case dominates before summing zero boxes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both case estimates, the balancing choice, and passage from a local box count to Theorem 4.",
+          "representation_dependency": "High: exact exponents in (8)-(13) matter and should be scan-checked before symbolic reuse.",
+          "unit_id": "full_openalex_w2023889974_v2u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 325,
+            "line_start": 290,
+            "title": "Mollified zero detector and its two alternatives",
+            "unit_id": "full_openalex_w2023889974_v2u06",
+            "unit_type": "zero-detecting construction",
+            "why_material": "Turns a zero in a small box into one of two detectable large quantities: a mollified L-integral or a dyadic tail polynomial, creating complementary analytic routes to bound the same zero count."
+          },
+          {
+            "line_end": 442,
+            "line_start": 378,
+            "title": "Transition from the second detector case to explicit-formula kernel requirements",
+            "unit_id": "full_openalex_w2023889974_u01",
+            "unit_type": "explicit-formula test setup",
+            "why_material": "Carried v1 unit preserving the original span that reaches from the second zero-detector case into the stated decay and positivity requirements for the explicit-formula kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zero is forced to reveal itself through either a mollified L-integral or a tail polynomial; estimating both and choosing auxiliary lengths where their costs meet yields a uniform density exponent.",
+            "limit": "The detector is solver- and coefficient-bound specific, and exact exponents rely on the stated large-sieve input.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_u03",
+              "full_openalex_w2023889974_v2u06",
+              "full_openalex_w2023889974_v2u07"
+            ],
+            "title": "A two-output zero detector stabilized by parameter balancing"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u07",
+          "spontaneous_reading": "The two detector outputs are deliberately balanced: Cauchy-Schwarz and family moments control the integral case, the large sieve controls the tail case, and X,Y are chosen where their costs meet so neither route leaves a worse zero-density exponent."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u07",
+          "source_grounded_mathematics": "In case (i), summing over d and applying Cauchy-Schwarz twice separates moments of L and M_X; Theorem 3 and Proposition 1 give R bounded by Y^(1-sigma)(DT)^(1/2)(D+X)^(1/2) up to epsilon factors. In case (ii), partial summation, Cauchy-Schwarz, the coefficient bound for c(n), and Proposition 1 give a bound involving D X^(2(1-sigma)) and Y^(3-2sigma). Taking X=D and Y=(D T^(1/2))^(1/(2-sigma)) yields the local box estimate (13), which is summed over boxes.",
+          "conceptual_reading": "Parameter choice is a minimax step over two proof branches. The detector is useful only after both outcomes are priced in a common scale and the auxiliary lengths are selected to equalize their dominant costs.",
+          "representation_or_bridge": "Cauchy-Schwarz bridges pointwise witness inequalities to family second moments; dyadic partial sums bridge the tail to the large sieve; the logarithmic box partition bridges local R to the global density theorem.",
+          "boundary_or_failure": "The result is a family zero-density estimate, not exclusion of zeros for any individual twist. Its exponent depends on the stated moment, coefficient bounds, large sieve, and the admissibility conditions on X,Y.",
+          "uncertainty": "Exact exponents in (8)-(13) are OCR-sensitive, though the displayed choices X=D and Y=(D T^(1/2))^(1/(2-sigma)) and the balancing logic are legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later construction in lines 695-794 is selected separately from this interface-level specification.",
+      "line_end": 448,
+      "line_start": 421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: conditions (14)-(16) are the unit's contract and are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why classical test functions are unsuitable and specifies a smooth compactly supported kernel whose transform decays off center, has nonnegative real part in a strip, and is symmetric about the central point after scaling.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nonclassical kernel matched to decay, symmetry, and positivity needs",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u08.txt",
+      "unit_bytes": 1551,
+      "unit_id": "full_openalex_w2023889974_v2u08",
+      "unit_sha256": "5bb27acaf7ba46d850c854db7e2da927fe950bb29a218c16fd4232289494eadf",
+      "unit_type": "test-function design specification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u08.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 413,
+          "line_end": 420,
+          "text": "(13)                  R \n (DT 1/2 )(3−2σ)/(2−σ) (DT )ε ,\nuniformly for 1 ≤ σ ≤ 3/2 and |t| ≤ T . Since the exponent in (13) is a\ndecreasing function of σ and the number of zeros of each function L(s, Ed )\nin the square (7) is uniformly \n log DT , Theorem 4 follows at once by\nsummation over squares of the type (7).\n\n",
+          "sha256": "7d81d2487dc9858612e6ea5516795ab71b3af4c6a6545ffa1c18aac52aaf2313"
+        },
+        "after": {
+          "line_start": 449,
+          "line_end": 456,
+          "text": "\n<!-- source-page: 9 -->\n\nAverages of twisted elliptic L-functions                           157\n\n    Weil’s explicit formula. We follow the approach by Mestre [10], based\non Weil [16]. Let R(α, T ) denote the rectangle with vertices α − iT, α + iT,\n2 − α − iT and 2 − α + iT . Choose α ∈ (3/2, 7/4) and, for each fundamental\n",
+          "sha256": "1cb043175b04c24257c855456156a35cfad6edf618449e0585a2e41b335ced3f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Test-kernel specification",
+            "line_end": 448,
+            "line_start": 420,
+            "mathematical_role": "Defines the Laplace-transform interface and states the decay, symmetry, and positivity properties forced by the later explicit-formula argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 448,
+          "line_start": 421,
+          "title": "A nonclassical kernel matched to decay, symmetry, and positivity needs",
+          "unit_id": "full_openalex_w2023889974_v2u08",
+          "unit_type": "test-function design specification",
+          "why_material": "Explains why classical test functions are unsuitable and specifies a smooth compactly supported kernel whose transform decays off center, has nonnegative real part in a strip, and is symmetric about the central point after scaling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The later construction in lines 695-794 is selected separately from this interface-level specification.",
+          "representation_dependency": "High: conditions (14)-(16) are the unit's contract and are formula-dependent.",
+          "unit_id": "full_openalex_w2023889974_v2u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 442,
+            "line_start": 378,
+            "title": "Transition from the second detector case to explicit-formula kernel requirements",
+            "unit_id": "full_openalex_w2023889974_u01",
+            "unit_type": "explicit-formula test setup",
+            "why_material": "Carried v1 unit preserving the original span that reaches from the second zero-detector case into the stated decay and positivity requirements for the explicit-formula kernel."
+          },
+          {
+            "line_end": 518,
+            "line_start": 454,
+            "title": "Symmetric contour formula with controlled horizontal tails",
+            "unit_id": "full_openalex_w2023889974_v2u09",
+            "unit_type": "explicit-formula contour reduction",
+            "why_material": "Uses a zero-avoiding rectangle, log-derivative bounds, functional-equation antisymmetry, and kernel symmetry to replace a finite contour by an infinite vertical integral plus a tunable small error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The kernel is designed backward from three downstream jobs--functional-equation symmetry, horizontal contour decay, and positivity for central multiplicity--then realized by infinite convolution and a positivity-preserving transform factor.",
+            "limit": "The construction proves existence with sufficient decay and positivity; it does not claim optimality or uniqueness.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u08",
+              "full_openalex_w2023889974_v2u09",
+              "full_openalex_w2023889974_v2u12",
+              "full_openalex_w2023889974_v2u13"
+            ],
+            "title": "Test-function design as interface matching"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u08",
+          "spontaneous_reading": "The test function is designed backward from three later jobs—rapid contour-tail decay, nonnegative real weight near the central strip, and symmetry about s=1—so classical kernels are rejected at the interface rather than after a failed estimate."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u08",
+          "source_grounded_mathematics": "Proposition 2 asks for an even, nonnegative C-infinity function f, normalized by f(0)=1 and compactly supported in [-B,B]. Its Laplace transform F must have subexponential decay of the displayed |s|^(3/4) form, up to growth in |Re s|, and satisfy Re F(s)>=0 for |Re s|<1. Scaling f by lambda gives phi_lambda(s)=lambda F(lambda(s-1)) and phi_lambda(s)=phi_lambda(2-s).",
+          "conceptual_reading": "This is an interface specification: spatial support, transform decay, positivity, and reflection symmetry are co-designed because each property serves a distinct step of the explicit-formula argument.",
+          "representation_or_bridge": "The centered, scaled Laplace transform bridges a real compactly supported kernel to a spectral weight on zeros; evenness becomes symmetry about the central point.",
+          "boundary_or_failure": "The unit states existence and required properties but postpones construction. It does not claim the kernel is unique, optimal, or interchangeable with classical test functions.",
+          "uncertainty": "Conditions (14)-(16) are formula-dependent, but their signs, strip, symmetry, and qualitative decay are legible; exact constants c3,c4 and typography should be scan-checked before reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the analytic bridge from a kernel to a weighted zero sum; evaluation of the vertical integral follows in the next unit.",
+      "line_end": 518,
+      "line_start": 454,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: contour orientation, transforms, and error decay depend on displayed formulas (17)-(19).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a zero-avoiding rectangle, log-derivative bounds, functional-equation antisymmetry, and kernel symmetry to replace a finite contour by an infinite vertical integral plus a tunable small error.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetric contour formula with controlled horizontal tails",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u09.txt",
+      "unit_bytes": 3145,
+      "unit_id": "full_openalex_w2023889974_v2u09",
+      "unit_sha256": "ef8d49bb20ff89afe782254e47a262c04eccee7d65627905486b7bb69182dd86",
+      "unit_type": "explicit-formula contour reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u09.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 446,
+          "line_end": 453,
+          "text": "where Fλ is the Laplace transform of fλ and f is as in Proposition 2, which\nsatisfies\n(16)          φλ (s) = λF (λ(s − 1))        and   φλ (s) = φλ (2 − s).\n\n<!-- source-page: 9 -->\n\nAverages of twisted elliptic L-functions                           157\n\n",
+          "sha256": "36767f7ea31ea4447b99a11ba49d583ffda8163dfb9f577cca961385e94e62c5"
+        },
+        "after": {
+          "line_start": 519,
+          "line_end": 526,
+          "text": "\n<!-- source-page: 10 -->\n\n158                             A. Perelli and J. Pomykała\n\n      We evaluate the integral in (19) following Mestre [10]. We get\n\n           1     \\\n",
+          "sha256": "5fd20d9d3ea8832c219da7bb763a9cdcd1a256ab4a537ac44247f4aefebd92b7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil explicit formula and contour control",
+            "line_end": 518,
+            "line_start": 449,
+            "mathematical_role": "Uses functional-equation symmetry to reduce the contour, controls horizontal tails, and expresses a weighted zero sum in conductor and prime-power terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 518,
+          "line_start": 454,
+          "title": "Symmetric contour formula with controlled horizontal tails",
+          "unit_id": "full_openalex_w2023889974_v2u09",
+          "unit_type": "explicit-formula contour reduction",
+          "why_material": "Uses a zero-avoiding rectangle, log-derivative bounds, functional-equation antisymmetry, and kernel symmetry to replace a finite contour by an infinite vertical integral plus a tunable small error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the analytic bridge from a kernel to a weighted zero sum; evaluation of the vertical integral follows in the next unit.",
+          "representation_dependency": "High: contour orientation, transforms, and error decay depend on displayed formulas (17)-(19).",
+          "unit_id": "full_openalex_w2023889974_v2u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 448,
+            "line_start": 421,
+            "title": "A nonclassical kernel matched to decay, symmetry, and positivity needs",
+            "unit_id": "full_openalex_w2023889974_v2u08",
+            "unit_type": "test-function design specification",
+            "why_material": "Explains why classical test functions are unsuitable and specifies a smooth compactly supported kernel whose transform decays off center, has nonnegative real part in a strip, and is symmetric about the central point after scaling."
+          },
+          {
+            "line_end": 637,
+            "line_start": 505,
+            "title": "Explicit formula, averaged prime term, and pre-density rank bound",
+            "unit_id": "full_openalex_w2023889974_u04",
+            "unit_type": "explicit-formula rank extraction",
+            "why_material": "Carried v1 unit connecting the weighted zero identity to conductor and prime terms, averaging the latter over discriminants, and reaching the inequality where off-center zeros are the remaining obstruction to an average-rank bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The kernel is designed backward from three downstream jobs--functional-equation symmetry, horizontal contour decay, and positivity for central multiplicity--then realized by infinite convolution and a positivity-preserving transform factor.",
+            "limit": "The construction proves existence with sufficient decay and positivity; it does not claim optimality or uniqueness.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u08",
+              "full_openalex_w2023889974_v2u09",
+              "full_openalex_w2023889974_v2u12",
+              "full_openalex_w2023889974_v2u13"
+            ],
+            "title": "Test-function design as interface matching"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u09",
+          "spontaneous_reading": "A zero-avoiding symmetric rectangle and a matching kernel turn residues into a weighted zero sum while functional-equation antisymmetry folds the contour onto one vertical line; transform decay then lets the horizontal sides escape to infinity at controlled cost."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u09",
+          "source_grounded_mathematics": "For each d, a height T_d near a common T is chosen so the rectangle boundary avoids poles of Lambda'/Lambda and obeys a log-squared bound. Cauchy's theorem equates the contour integral of (Lambda'/Lambda)phi_lambda to the sum of phi_lambda over nontrivial zeros inside. The functional equation and phi_lambda(s)=phi_lambda(2-s) combine the vertical sides, while the transform decay bounds horizontal sides and replaces the finite vertical segment by the full line with an explicit exponentially decaying error.",
+          "conceptual_reading": "Symmetry is used as a computational quotient: two contour sides carrying mirrored information collapse to one. The kernel's decay then controls exactly the part discarded when the finite contour is extended.",
+          "representation_or_bridge": "The logarithmic derivative converts zeros into residues, and the test kernel converts the raw zero multiset into a weighted statistic that can later be expressed through conductor and prime terms.",
+          "boundary_or_failure": "This unit reaches the infinite vertical integral but does not evaluate it or yet isolate central multiplicity. The chosen T_d varies with d, and all claims retain the displayed tail error.",
+          "uncertainty": "Contour orientation and constants in (17)-(19) are OCR-sensitive; the residue identity, symmetry reduction, and qualitative error dependence are nevertheless explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The structural rewrite of the nonconsecutive discriminant family is the reusable step, not the local algebra around it.",
+      "line_end": 626,
+      "line_start": 524,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: formula (24) is visually degraded, but its square-free/progression interpretation is stated in checked prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates higher prime powers, rewrites the prime coefficient average as a quadratic character sum, parametrizes fundamental discriminants by square-free progression conditions, and applies Polya-Vinogradov to close the average.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fundamental-discriminant structure controls the explicit-formula prime term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u10.txt",
+      "unit_bytes": 4612,
+      "unit_id": "full_openalex_w2023889974_v2u10",
+      "unit_sha256": "f3c9d6afb56e61d503c9efa6921070329b01cd63da9baad64b24c69178b9d5c1",
+      "unit_type": "arithmetic character-sum reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u10.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 516,
+          "line_end": 523,
+          "text": "                   α−i∞\n\nuniformly for d ≤ D.\n\n<!-- source-page: 10 -->\n\n158                             A. Perelli and J. Pomykała\n\n",
+          "sha256": "4f986ef16f81de3f9718653298efbcd8846d0f018fe715816e7d362c86d67b61"
+        },
+        "after": {
+          "line_start": 627,
+          "line_end": 634,
+          "text": "\n    Application of the density estimate. From (15), (16), (21) and (26), taking\nreal parts we deduce that\n            X∗\n          λ      rank(Ed ) \n D log D + λD + D1/2 exp(2Bλ)\n            d≤D\n                                + D log2 (DT ) exp(c5 λ − c6 (λT )1/2 )\n",
+          "sha256": "2ac1d55a9491db96ced3e79a4b09bd56beb0761c134b832d61e450f931e520de"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Arithmetic averaging of the prime term",
+            "line_end": 626,
+            "line_start": 519,
+            "mathematical_role": "Separates prime powers, rewrites fundamental discriminants through square-free progressions, and applies Polya-Vinogradov to control the averaged character term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 626,
+          "line_start": 524,
+          "title": "Fundamental-discriminant structure controls the explicit-formula prime term",
+          "unit_id": "full_openalex_w2023889974_v2u10",
+          "unit_type": "arithmetic character-sum reduction",
+          "why_material": "Separates higher prime powers, rewrites the prime coefficient average as a quadratic character sum, parametrizes fundamental discriminants by square-free progression conditions, and applies Polya-Vinogradov to close the average."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The structural rewrite of the nonconsecutive discriminant family is the reusable step, not the local algebra around it.",
+          "representation_dependency": "High: formula (24) is visually degraded, but its square-free/progression interpretation is stated in checked prose.",
+          "unit_id": "full_openalex_w2023889974_v2u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 637,
+            "line_start": 505,
+            "title": "Explicit formula, averaged prime term, and pre-density rank bound",
+            "unit_id": "full_openalex_w2023889974_u04",
+            "unit_type": "explicit-formula rank extraction",
+            "why_material": "Carried v1 unit connecting the weighted zero identity to conductor and prime terms, averaging the latter over discriminants, and reaching the inequality where off-center zeros are the remaining obstruction to an average-rank bound."
+          },
+          {
+            "line_end": 693,
+            "line_start": 628,
+            "title": "Average zero density converted into an average-rank bound",
+            "unit_id": "full_openalex_w2023889974_v2u11",
+            "unit_type": "density-to-rank transfer",
+            "why_material": "Uses kernel positivity to isolate central multiplicity, partitions off-center zeros by horizontal distance and height, inserts the density hypothesis, and optimizes the scale lambda as log D divided by log L(D)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the explicit formula exposes prime terms, the nonconsecutive twist family becomes tractable only after fundamental discriminants are decomposed into square-free congruence classes, enabling character-sum cancellation before zero density handles the remaining spectral obstruction.",
+            "limit": "The cancellation bound and final rank estimate are average, conditional on the paper's density hypothesis, and tied to this discriminant parametrization.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_u04",
+              "full_openalex_w2023889974_v2u10",
+              "full_openalex_w2023889974_v2u11"
+            ],
+            "title": "Arithmetic family structure closes an analytic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u10",
+          "spontaneous_reading": "The difficult prime term becomes estimable only after the irregular set of fundamental discriminants is re-expressed as square-free variables in congruence classes; this exposes ordinary character sums to Polya-Vinogradov cancellation."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u10",
+          "source_grounded_mathematics": "Evaluating the vertical integral yields a conductor term 2 log d, a uniformly bounded archimedean integral I(lambda), and a prime-power sum S(lambda,d). Terms with exponent m>=2 contribute at most a lambda D scale after averaging. For m=1, e_d(p) is expressed through a Legendre symbol in d away from p dividing dN. Writing fundamental discriminants as e d0 with e in {1,4}, d0 square-free, and fixed mod-4 conditions leads to progressions detected by characters; Polya-Vinogradov gives the displayed D^(1/2)p^(1/2+epsilon) bound and hence sum*_d S(lambda,d) is bounded by lambda D plus D^(1/2)exp(2B lambda).",
+          "conceptual_reading": "The key move is not merely applying a character-sum inequality but first changing coordinates on the averaging family so that its nonconsecutive membership conditions become square-freeness and congruence constraints.",
+          "representation_or_bridge": "The explicit formula bridges zeros to primes; Mobius factors and the decomposition d=e d0 bridge fundamental discriminants to progression-restricted quadratic character sums.",
+          "boundary_or_failure": "The cancellation is an averaged bound tied to this discriminant parametrization and excludes finitely structured bad-prime cases into errors. It does not give pointwise cancellation for a fixed d.",
+          "uncertainty": "Formula (24) is visually degraded, so its exact nested summation indices should be checked against the scan; the prose, definitions, and subsequent bound support the square-free/progression interpretation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This completes the general theorem and exhibits exactly how zero-density quality determines the final rank loss.",
+      "line_end": 693,
+      "line_start": 628,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the rectangle decomposition and exponential weights are formula-dependent, though the optimization is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses kernel positivity to isolate central multiplicity, partitions off-center zeros by horizontal distance and height, inserts the density hypothesis, and optimizes the scale lambda as log D divided by log L(D).",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Average zero density converted into an average-rank bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u11.txt",
+      "unit_bytes": 2794,
+      "unit_id": "full_openalex_w2023889974_v2u11",
+      "unit_sha256": "8e44baf5000ab2ee9d0b5f8dcddc41569f92b22a81137af9dd4dd83ea014e450",
+      "unit_type": "density-to-rank transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u11.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 620,
+          "line_end": 627,
+          "text": "                          (d,p)=1\n\n   Hence from (22)–(25) we obtain\n                  X∗\n(26)                  S(λ, d) \n λD + D1/2 exp(2Bλ).\n                    d≤D\n\n",
+          "sha256": "35440adf1c0cc15b2760c855e637345df3d750d17f824def0b81529e54364bfb"
+        },
+        "after": {
+          "line_start": 694,
+          "line_end": 701,
+          "text": "\n    Proof of Proposition 2. Here we give a sketch of the proof of Proposi-\ntion 2. Let ω ∈ (1, 2] and\n                             n\n                       ϕ(x) = 1 − |x| if x ∈ [−1, 1],\n                               0       otherwise.\nNote that the Fourier transform ϕ\n                                b of ϕ is non-negative on the real axis. For\n",
+          "sha256": "0f0e8f56f34a2d49bdc82f4d43115c5f07f7e5b155370dabf8ce7fb0c0f71043"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Density-to-rank conclusion",
+            "line_end": 693,
+            "line_start": 627,
+            "mathematical_role": "Bounds zeros away from the center by the assumed density estimate and optimizes the kernel scale to obtain the average-rank bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 693,
+          "line_start": 628,
+          "title": "Average zero density converted into an average-rank bound",
+          "unit_id": "full_openalex_w2023889974_v2u11",
+          "unit_type": "density-to-rank transfer",
+          "why_material": "Uses kernel positivity to isolate central multiplicity, partitions off-center zeros by horizontal distance and height, inserts the density hypothesis, and optimizes the scale lambda as log D divided by log L(D)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This completes the general theorem and exhibits exactly how zero-density quality determines the final rank loss.",
+          "representation_dependency": "High: the rectangle decomposition and exponential weights are formula-dependent, though the optimization is explicit.",
+          "unit_id": "full_openalex_w2023889974_v2u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 626,
+            "line_start": 524,
+            "title": "Fundamental-discriminant structure controls the explicit-formula prime term",
+            "unit_id": "full_openalex_w2023889974_v2u10",
+            "unit_type": "arithmetic character-sum reduction",
+            "why_material": "Separates higher prime powers, rewrites the prime coefficient average as a quadratic character sum, parametrizes fundamental discriminants by square-free progression conditions, and applies Polya-Vinogradov to close the average."
+          },
+          {
+            "line_end": 768,
+            "line_start": 695,
+            "title": "Infinite convolution gives compact support and subexponential transform decay",
+            "unit_id": "full_openalex_w2023889974_v2u12",
+            "unit_type": "smooth kernel construction",
+            "why_material": "Constructs a smooth even nonnegative compactly supported function from scaled tents, derives factorial-logarithmic derivative bounds, and optimizes repeated integration by parts to obtain the required transform decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the explicit formula exposes prime terms, the nonconsecutive twist family becomes tractable only after fundamental discriminants are decomposed into square-free congruence classes, enabling character-sum cancellation before zero density handles the remaining spectral obstruction.",
+            "limit": "The cancellation bound and final rank estimate are average, conditional on the paper's density hypothesis, and tied to this discriminant parametrization.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_u04",
+              "full_openalex_w2023889974_v2u10",
+              "full_openalex_w2023889974_v2u11"
+            ],
+            "title": "Arithmetic family structure closes an analytic explicit formula"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u11",
+          "spontaneous_reading": "Kernel positivity separates the central zero multiplicity from off-center zeros, after which a geometric rectangle decomposition lets a density estimate pay for the remaining spectral mass; lambda is then chosen to balance family size against the density-loss function L(D)."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u11",
+          "source_grounded_mathematics": "Taking real parts of the explicit formula and using Re F>=0 bounds lambda times the summed analytic ranks by conductor, prime-term, contour-error, and off-center zero contributions. With 2<lambda<=c7 log D and T=log^3 D, earlier errors are absorbed. Zeros with |beta-1|>=1/lambda are partitioned into rectangles indexed by horizontal distance m/lambda and height n; transform decay and the assumed zero-density estimate give an exponential sum. Choosing lambda=c11 log D/log L(D) makes the resulting loss balance and proves the stated general average-rank theorem.",
+          "conceptual_reading": "The proof converts qualitative positivity into a one-sided extractor for central multiplicity. Off-center zeros are not ignored; they are localized into cells whose weights decay and whose occupancies are bounded by density.",
+          "representation_or_bridge": "The positive spectral kernel bridges central vanishing to an inequality, the rectangle grid bridges a weighted zero sum to density counts, and lambda translates the external density-quality function L(D) into the final rank loss.",
+          "boundary_or_failure": "The conclusion is conditional on the assumed family zero-density estimate and on the allowed range for lambda. It is an average-rank bound, not a rank bound for individual twists.",
+          "uncertainty": "The rectangle endpoints and some displayed exponential factors are OCR-fragile, but the choices T=log^3 D and lambda proportional to log D/log L(D), and their optimization role, are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final multiplication by a hyperbolic-secant factor preserves the needed spatial properties and strengthens the decay condition.",
+      "line_end": 768,
+      "line_start": 695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: derivative and Laplace-transform estimates (30)-(32) require formula recovery; prose preserves the construction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs a smooth even nonnegative compactly supported function from scaled tents, derives factorial-logarithmic derivative bounds, and optimizes repeated integration by parts to obtain the required transform decay.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Infinite convolution gives compact support and subexponential transform decay",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u12.txt",
+      "unit_bytes": 3633,
+      "unit_id": "full_openalex_w2023889974_v2u12",
+      "unit_sha256": "0d967179ce805272f9c81a379d885e5b826f4bec947309f4af399a6002d82fdc",
+      "unit_type": "smooth kernel construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u12.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 687,
+          "line_end": 694,
+          "text": " λD exp        log L(D) − c11        .\n                                          λ\n      We choose\n                                              log D\n(29)                              λ = c11\n                                            log L(D)\nand the result follows at once from (27)–(29).\n\n",
+          "sha256": "480bc915f6745256ccaeb512c637463b164657dabd37f81f7069a50e56da45b1"
+        },
+        "after": {
+          "line_start": 769,
+          "line_end": 776,
+          "text": "   Let\u0001 H denote the Laplace transform of h. It is well known that H(s) =\nπh πs\n    2i . Moreover, by Proposition 3 on p. 59 of Szmydt–Ziemian [15] we\n\n<!-- source-page: 14 -->\n\n162                            A. Perelli and J. Pomykała\n\n",
+          "sha256": "72a8a645df9c869b8c81211e90e97d476aa0d3c6dd32345c66d5a6435be12d5c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction of Proposition 2's kernel",
+            "line_end": 794,
+            "line_start": 694,
+            "mathematical_role": "Builds a compactly supported smooth function by infinite convolution, proves transform decay from derivative bounds, and obtains strip positivity through a second convolution identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 768,
+          "line_start": 695,
+          "title": "Infinite convolution gives compact support and subexponential transform decay",
+          "unit_id": "full_openalex_w2023889974_v2u12",
+          "unit_type": "smooth kernel construction",
+          "why_material": "Constructs a smooth even nonnegative compactly supported function from scaled tents, derives factorial-logarithmic derivative bounds, and optimizes repeated integration by parts to obtain the required transform decay."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final multiplication by a hyperbolic-secant factor preserves the needed spatial properties and strengthens the decay condition.",
+          "representation_dependency": "High: derivative and Laplace-transform estimates (30)-(32) require formula recovery; prose preserves the construction.",
+          "unit_id": "full_openalex_w2023889974_v2u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 693,
+            "line_start": 628,
+            "title": "Average zero density converted into an average-rank bound",
+            "unit_id": "full_openalex_w2023889974_v2u11",
+            "unit_type": "density-to-rank transfer",
+            "why_material": "Uses kernel positivity to isolate central multiplicity, partitions off-center zeros by horizontal distance and height, inserts the density hypothesis, and optimizes the scale lambda as log D divided by log L(D)."
+          },
+          {
+            "line_end": 794,
+            "line_start": 769,
+            "title": "Strip positivity obtained through a transform convolution",
+            "unit_id": "full_openalex_w2023889974_v2u13",
+            "unit_type": "transform positivity argument",
+            "why_material": "Represents the final kernel transform as a convolution with the hyperbolic-secant transform and uses positivity of the first Fourier factor plus the sign of the real part of the second to prove the strip condition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The kernel is designed backward from three downstream jobs--functional-equation symmetry, horizontal contour decay, and positivity for central multiplicity--then realized by infinite convolution and a positivity-preserving transform factor.",
+            "limit": "The construction proves existence with sufficient decay and positivity; it does not claim optimality or uniqueness.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u08",
+              "full_openalex_w2023889974_v2u09",
+              "full_openalex_w2023889974_v2u12",
+              "full_openalex_w2023889974_v2u13"
+            ],
+            "title": "Test-function design as interface matching"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u12",
+          "spontaneous_reading": "An infinite convolution of increasingly narrow tent kernels buys three properties at once—compact total support, smoothness, and a nonnegative Fourier transform—while quantitative derivative bounds can be optimized through repeated integration by parts to manufacture the needed transform decay."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u12",
+          "source_grounded_mathematics": "Scaled tents g_n use a_n=n(log+ n)^omega with 1<omega<=2, and their convolutions converge uniformly to an even, nonnegative C-infinity function psi supported in [-B,B], where B is the convergent sum of a_n^(-1). The Fourier transform remains positive and psi is normalized at zero. Differentiating the convolution gives |psi^(k)| bounded by a factorial times (log k)^(k omega); repeated integration by parts and an optimized k yield subexponential decay for its Laplace transform. Multiplying by a normalized hyperbolic-secant-type factor h preserves the spatial properties and strengthens the required decay for f=psi h.",
+          "conceptual_reading": "Smoothness and decay are traded quantitatively: the chosen scale sequence controls derivative growth, and optimizing the number of integrations by parts converts that growth profile into the transform exponent.",
+          "representation_or_bridge": "Infinite convolution bridges local tent kernels to a compactly supported smooth positive object; Fourier/Laplace transformation and optimized derivative estimates bridge regularity to spectral decay.",
+          "boundary_or_failure": "This span proves the construction and decay side of Proposition 2 but leaves strip positivity to the subsequent transform-convolution argument. It gives a sufficient kernel, not an optimality result.",
+          "uncertainty": "Equations (30)-(32) and the OCR rendering of h are formula-sensitive; the scale a_n, convolution construction, support argument, and optimization mechanism are clear from the prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This completes Proposition 2 and closes the dependency introduced by the explicit-formula interface.",
+      "line_end": 794,
+      "line_start": 769,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: formula (33) is OCR-fragile, but the convolution and positivity logic are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents the final kernel transform as a convolution with the hyperbolic-secant transform and uses positivity of the first Fourier factor plus the sign of the real part of the second to prove the strip condition.",
+      "source_id": "openalex_w2023889974",
+      "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Strip positivity obtained through a transform convolution",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2023889974_v2u13.txt",
+      "unit_bytes": 1126,
+      "unit_id": "full_openalex_w2023889974_v2u13",
+      "unit_sha256": "43a525d72d8ca236f54e4e1363a2d6333c0258b2ee991e8273563709a35d0166",
+      "unit_type": "transform positivity argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2023889974_v2u13.txt",
+      "source": {
+        "source_id": "openalex_w2023889974",
+        "title": "Averages of twisted elliptic L-functions",
+        "authors": [
+          "Alberto Perelli",
+          "Jacek Pomykała"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 761,
+          "line_end": 768,
+          "text": "                              f (x) = ψ(x)h(x).\nHence f is even, non-negative, f (0) = 1, f ∈ C ∞ (R) and its support is\ncontained in [−B, B]. It remains to prove (14) and (15). By Cauchy’s integral\nformula we see that\n                              |h(k) (x)| ≤ ck14 k!\nwith some constant c14 > 0, hence (30) holds for h with ω = 0 and c14 in\nplace of 8. Hence (14) follows, in an even stronger form, from Leibniz’s rule\nand the same argument leading to (31).\n",
+          "sha256": "87ce0105c044f27254ea12b342cd4e8fc359dafe5561e939685aa8006bdbdec0"
+        },
+        "after": {
+          "line_start": 795,
+          "line_end": 802,
+          "text": "    Acknowledgements. We wish to thank B. Ziemian and G. Łysik for\nsome helpful discussions concerning the construction of the test function\nφλ (s) in Section 5. We also thank the referee for suggesting some improve-\nments in the presentation and for pointing out several inaccuracies.\n\n\n                                             References\n\n",
+          "sha256": "bbe0bf6397b6e645cfe1921b6143ba7180d74e689468629a5a35f68195b5b39c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4af0e25b04144a48dcc87a4bdc4d64d3cc554d599474d2bc644d00f79e8c5baf",
+        "dossier_sha256": "fc7e7e2335f3b17d356f17698ca6d0189ca354509cb5fa0e4f6c3a66bc8a9722",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction of Proposition 2's kernel",
+            "line_end": 794,
+            "line_start": 694,
+            "mathematical_role": "Builds a compactly supported smooth function by infinite convolution, proves transform decay from derivative bounds, and obtains strip positivity through a second convolution identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 794,
+          "line_start": 769,
+          "title": "Strip positivity obtained through a transform convolution",
+          "unit_id": "full_openalex_w2023889974_v2u13",
+          "unit_type": "transform positivity argument",
+          "why_material": "Represents the final kernel transform as a convolution with the hyperbolic-secant transform and uses positivity of the first Fourier factor plus the sign of the real part of the second to prove the strip condition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This completes Proposition 2 and closes the dependency introduced by the explicit-formula interface.",
+          "representation_dependency": "High: formula (33) is OCR-fragile, but the convolution and positivity logic are recoverable from prose.",
+          "unit_id": "full_openalex_w2023889974_v2u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 768,
+            "line_start": 695,
+            "title": "Infinite convolution gives compact support and subexponential transform decay",
+            "unit_id": "full_openalex_w2023889974_v2u12",
+            "unit_type": "smooth kernel construction",
+            "why_material": "Constructs a smooth even nonnegative compactly supported function from scaled tents, derives factorial-logarithmic derivative bounds, and optimizes repeated integration by parts to obtain the required transform decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The kernel is designed backward from three downstream jobs--functional-equation symmetry, horizontal contour decay, and positivity for central multiplicity--then realized by infinite convolution and a positivity-preserving transform factor.",
+            "limit": "The construction proves existence with sufficient decay and positivity; it does not claim optimality or uniqueness.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2023889974_v2u08",
+              "full_openalex_w2023889974_v2u09",
+              "full_openalex_w2023889974_v2u12",
+              "full_openalex_w2023889974_v2u13"
+            ],
+            "title": "Test-function design as interface matching"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2023889974_v2u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2023889974_v2u13",
+          "spontaneous_reading": "Strip positivity is transferred through the transform of a product: the final Laplace transform is a convolution of a nonnegative Fourier factor with a hyperbolic-secant factor whose real part has the right sign throughout the strip."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2023889974_v2u13",
+          "source_grounded_mathematics": "Let H be the Laplace transform of the auxiliary factor h. Because f=psi h, formula (33) expresses F(sigma+it) as a convolution involving the Fourier transform of psi and H(sigma+ix). The text computes the real part of the relevant hyperbolic-secant expression from cos, sin, cosh, and sinh components; since the Fourier transform of psi is positive on the real axis, the convolution has Re F(s)>=0 for |sigma|<1, completing Proposition 2.",
+          "conceptual_reading": "Positivity is proved by factorization rather than direct estimation of F: one convolution factor supplies a nonnegative measure-like weight, and the other supplies the pointwise sign in the required strip.",
+          "representation_or_bridge": "The product f=psi h becomes convolution after transformation, bridging separately engineered spatial smoothness/compactness and strip-sign control into one test function.",
+          "boundary_or_failure": "The argument establishes nonnegativity only in the stated strip and only for this constructed kernel. It does not show strict positivity, uniqueness, or optimal decay.",
+          "uncertainty": "Formula (33) and the explicit transform H are OCR-fragile, but the convolution identity and the sign argument using positive Fourier transform are recoverable from the source prose."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "53602fa5e380d14eaebb279d16936efbf6958865fbfa0554bd2195e5c737ec85"
+}

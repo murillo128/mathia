@@ -1,0 +1,2201 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1980116773_05838894_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1980116773",
+  "unit_count": 16,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the declared purpose, prior-work relation, numerical extent, bounded RH conclusion, and machine-time feasibility claim.",
+      "line_end": 25,
+      "line_start": 11,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The zeta-series display and critical-line notation are OCR-degraded, but the scope and conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper sharply separates a finite numerical result from the unrestricted hypothesis: the first 10,000 zeros are reported simple and on the critical line, yielding verification only through a stated height.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite critical-line verification as a bounded computational claim",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u01.txt",
+      "unit_bytes": 922,
+      "unit_id": "openalex_w1980116773_v2_u01",
+      "unit_sha256": "ec35fa0c51257347e0dc9a6e9a6156dd1e0732e57ba305c48e63b12d258f9c9c",
+      "unit_type": "computational certification result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3,
+          "line_end": 10,
+          "text": "ON THE ROOTS OF THE RIEMANN ZETA-FUNCTION\n                                               BY\n\n                                      D. H. LEHMER\n                                  in Berkeley, California, U.S.A.\n\n\n\n",
+          "sha256": "dc0ef009aaf284665c090f25d4a84c09e559ebadfb7275aa81d573fdd43f70af"
+        },
+        "after": {
+          "line_start": 26,
+          "line_end": 33,
+          "text": "     A brief history of previous results and contemplated calculations m a y be given\nas follows. The work of J. P. Gram (in 1902-4) was largely for real s. However, he\ngave the first ten roots of ~ (s) to 6 decimals and five further ones with less accuracy.\nHe is also to be credited with a valuable observation, now known as Gram's Law,\nwhich m a y be stated as follows. Let n be a positive integer and let v~ be the real\npositive root of the equation\n\n                         3~:-1 I m (log F (1/4 + :~ i v)) - v log g = n.\n",
+          "sha256": "d5158c2c58be1a98cd22140724f96571a3ca689a632c93479cec0b6d3dfcec1c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Purpose and headline computation",
+            "line_end": 25,
+            "line_start": 11,
+            "mathematical_role": "states the critical-line numerical scope, first-10,000-zero result, and role of electronic computation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 25,
+          "line_start": 11,
+          "title": "Finite critical-line verification as a bounded computational claim",
+          "unit_id": "openalex_w1980116773_v2_u01",
+          "unit_type": "computational certification result",
+          "why_material": "The paper sharply separates a finite numerical result from the unrestricted hypothesis: the first 10,000 zeros are reported simple and on the critical line, yielding verification only through a stated height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the declared purpose, prior-work relation, numerical extent, bounded RH conclusion, and machine-time feasibility claim.",
+          "representation_dependency": "The zeta-series display and critical-line notation are OCR-degraded, but the scope and conclusion are explicit in prose.",
+          "unit_id": "openalex_w1980116773_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 51,
+            "line_start": 26,
+            "title": "Gram intervals, Gram's law, and adjacent compensation",
+            "unit_id": "openalex_w1980116773_v2_u02",
+            "unit_type": "heuristic criterion with counterpattern",
+            "why_material": "This span defines the interval-based prediction used to organize the search, states why universal validity would imply RH, and immediately shows that individual failures can be locally compensated by double-root neighboring intervals."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u01",
+          "spontaneous_reading": "The mathematical work is a bounded certification: locating the first 10,000 zeros on the critical line and finding them simple converts a large computation into evidence for RH only through a stated height."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u01",
+          "source_grounded_mathematics": "The paper reports that the first 10,000 zeros have real part one half and are simple, hence that RH is verified for t at most 9878.910; it attributes the extension to a few hours on SWAC.",
+          "conceptual_reading": "This is finite exhaustion within an ordered range, not induction from examples: the force of the result comes from claiming that every zero up to the cutoff has been accounted for.",
+          "representation_or_bridge": "The critical-line representation and the ordering of zeros by height turn a global location conjecture into a finite certification problem with an explicit cutoff.",
+          "boundary_or_failure": "Nothing here implies RH above the reported height, and faster computation only extends the bounded range rather than closing that gap.",
+          "uncertainty": "The scope and conclusion are explicit in prose, but the zeta-series display and critical-line typography are OCR-damaged and should not be reused formula by formula without the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept through the first concrete paired failures so the law is not detached from its known limitation.",
+      "line_end": 51,
+      "line_start": 26,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The defining equation and symbols are OCR-risky; the interval construction, one-root prediction, and failure pattern are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This span defines the interval-based prediction used to organize the search, states why universal validity would imply RH, and immediately shows that individual failures can be locally compensated by double-root neighboring intervals.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram intervals, Gram's law, and adjacent compensation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u02.txt",
+      "unit_bytes": 1341,
+      "unit_id": "openalex_w1980116773_v2_u02",
+      "unit_sha256": "6286d04fbf612078ce37f57aceedc16462cf94d38d03ef619eab77b7ae189ee7",
+      "unit_type": "heuristic criterion with counterpattern",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 18,
+          "line_end": 25,
+          "text": "on the critical line a=l/s, t > 0 .    These results confirm those made previously by\nGram [1], Hutchinson [2], Titchmarsh [3] and Turing [4] and extend these to the first\n10,000 zeros of $ (s). All these zeros have real parts equal to one half and are simple.\nThus the Riemann Hypothesis is true at least for t<_9878.910. This extension of our\nknowledge of ~ (1/2+ it) is made possible by the use of the electronic computer known\nas the SWAC while it was the property of the United States National Bureau of\nStandards.   Actually only a few hours of machine time was needed and much more\ncould be done along the same lines b y this or any other really high speed computer.\n",
+          "sha256": "3356341aed74760bd75eba02c8bc9638edf240e353b5f67523c97a935b65a028"
+        },
+        "after": {
+          "line_start": 52,
+          "line_end": 59,
+          "text": "He also extended Gram's list of zeros so as to include the first 29 below t = 100,\nusing 3 decimal accuracy. This list has never been extended. Further work has been\nin the direction of merely isolating and counting rather than approximating the roots.\nHowever, the early roots have received some attention lately, van der Pol [5] in 1947\nconstructed an electronic analog device for exhibiting the first 73 roots (for t_<210).\nRecent unpublished work of Haselgrove in England is being devoted to the deter-\nmination of the early roots to considerable accuracy by electronic digital computation.\n      Returning to the work of Hutchinson, he showed that the first 138 roots of\n",
+          "sha256": "3ed128a49b4d49215d056adbfe93d0730df2eba7565f4d139f48e3c3010cf3bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gram law and early certification history",
+            "line_end": 80,
+            "line_start": 26,
+            "mathematical_role": "defines Gram points and intervals, records compensating failures, and explains certification by total zero count plus critical-line sign changes and its Euler-Maclaurin cost"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 51,
+          "line_start": 26,
+          "title": "Gram intervals, Gram's law, and adjacent compensation",
+          "unit_id": "openalex_w1980116773_v2_u02",
+          "unit_type": "heuristic criterion with counterpattern",
+          "why_material": "This span defines the interval-based prediction used to organize the search, states why universal validity would imply RH, and immediately shows that individual failures can be locally compensated by double-root neighboring intervals."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept through the first concrete paired failures so the law is not detached from its known limitation.",
+          "representation_dependency": "The defining equation and symbols are OCR-risky; the interval construction, one-root prediction, and failure pattern are recoverable from prose.",
+          "unit_id": "openalex_w1980116773_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 25,
+            "line_start": 11,
+            "title": "Finite critical-line verification as a bounded computational claim",
+            "unit_id": "openalex_w1980116773_v2_u01",
+            "unit_type": "computational certification result",
+            "why_material": "The paper sharply separates a finite numerical result from the unrestricted hypothesis: the first 10,000 zeros are reported simple and on the critical line, yielding verification only through a stated height."
+          },
+          {
+            "line_end": 80,
+            "line_start": 59,
+            "title": "Global zero count plus critical-line sign changes",
+            "unit_id": "openalex_w1980116773_v2_u03",
+            "unit_type": "computational certification logic",
+            "why_material": "Hutchinson's strategy combines an independent count of all zeros in a rectangle with at least as many critical-line roots detected by sign changes, excluding off-line zeros in the bounded region; the span also identifies the term-count bottleneck of the Euler-Maclaurin implementation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Empty Gram intervals are usually compensated by extra roots nearby, sometimes in coupled clusters, even as their frequency increases; this makes the spatial displacement pattern more informative than the failure count alone.",
+            "limit": "The claim summarizes only the first reported interval range and does not establish a general theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u02",
+              "openalex_w1980116773_v2_u09",
+              "openalex_w1980116773_v2_u10",
+              "openalex_w1980116773_v2_u11",
+              "openalex_w1980116773_v2_u12"
+            ],
+            "title": "Gram-law failure has local transport structure rather than isolated binary error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u02",
+          "spontaneous_reading": "Gram intervals provide a predictive grid for locating zeros, while the first counterexamples show that an empty interval can be compensated by two roots in a neighbor rather than by a loss of the local total."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u02",
+          "source_grounded_mathematics": "Gram points are defined by an implicit phase equation and consecutive points define Gram intervals. Gram's law predicts one critical-line root per interval; the source says universal validity would imply RH, but also reports infinitely many failures and concrete empty/double-root neighboring pairs.",
+          "conceptual_reading": "A locally false rule can remain a useful organizing heuristic when its failures have structured displacement. The significant object is therefore not a binary interval success flag alone, but the redistribution of root counts across adjacent intervals.",
+          "representation_or_bridge": "The phase equation maps an integer index to an ordered sampling point, and interval root counts bridge critical-line oscillation to a discrete sequence that can be screened computationally.",
+          "boundary_or_failure": "Gram's law is not a universally valid criterion, and adjacent compensation in the displayed examples does not establish compensation for every failure or prove RH.",
+          "uncertainty": "The prose mechanism and failure pattern are recoverable, but the defining equation and several interval indices are OCR-risky."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the rectangular count, the logical comparison, the expansion used, and the reason desk-calculator computation became prohibitive.",
+      "line_end": 80,
+      "line_start": 59,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula details and subscripts are damaged, so reuse should rely on the checked prose mechanism unless the scan is consulted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hutchinson's strategy combines an independent count of all zeros in a rectangle with at least as many critical-line roots detected by sign changes, excluding off-line zeros in the bounded region; the span also identifies the term-count bottleneck of the Euler-Maclaurin implementation.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Global zero count plus critical-line sign changes",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u03.txt",
+      "unit_bytes": 1370,
+      "unit_id": "openalex_w1980116773_v2_u03",
+      "unit_sha256": "5f987edc9128c951ecb44635396f8eca34abc2de8f7ffd3ba59b2b46ff9fdcea",
+      "unit_type": "computational certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 51,
+          "line_end": 58,
+          "text": "were discovered in the neighborhoods of t = 282 and t = 295 by Hutchinson in 1925.\nHe also extended Gram's list of zeros so as to include the first 29 below t = 100,\nusing 3 decimal accuracy. This list has never been extended. Further work has been\nin the direction of merely isolating and counting rather than approximating the roots.\nHowever, the early roots have received some attention lately, van der Pol [5] in 1947\nconstructed an electronic analog device for exhibiting the first 73 roots (for t_<210).\nRecent unpublished work of Haselgrove in England is being devoted to the deter-\nmination of the early roots to considerable accuracy by electronic digital computation.\n",
+          "sha256": "a662d5fc92161fef1ef9fc8a61bc1d0ca53be43a47afd6bad872a53ce7ee5ef6"
+        },
+        "after": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "      To meet this difficulty, Titchmarsh, in 1935, employed another asymptotic expan-\nsion of Riemann and Siegel in which only [$'/,] terms are required. This formula may\nbe given as follows.\n      Let\n                                               l (3) = e ~e ~ (1/2 + 2 ~ i ~)\nwhere\n\n<!-- source-page: 3 -->\n",
+          "sha256": "54491e5d66a96f928fbf9d135a38b9d23854c05595731d819535ca6f2d09ec7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Gram law and early certification history",
+            "line_end": 80,
+            "line_start": 26,
+            "mathematical_role": "defines Gram points and intervals, records compensating failures, and explains certification by total zero count plus critical-line sign changes and its Euler-Maclaurin cost"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 80,
+          "line_start": 59,
+          "title": "Global zero count plus critical-line sign changes",
+          "unit_id": "openalex_w1980116773_v2_u03",
+          "unit_type": "computational certification logic",
+          "why_material": "Hutchinson's strategy combines an independent count of all zeros in a rectangle with at least as many critical-line roots detected by sign changes, excluding off-line zeros in the bounded region; the span also identifies the term-count bottleneck of the Euler-Maclaurin implementation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the rectangular count, the logical comparison, the expansion used, and the reason desk-calculator computation became prohibitive.",
+          "representation_dependency": "Formula details and subscripts are damaged, so reuse should rely on the checked prose mechanism unless the scan is consulted.",
+          "unit_id": "openalex_w1980116773_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 51,
+            "line_start": 26,
+            "title": "Gram intervals, Gram's law, and adjacent compensation",
+            "unit_id": "openalex_w1980116773_v2_u02",
+            "unit_type": "heuristic criterion with counterpattern",
+            "why_material": "This span defines the interval-based prediction used to organize the search, states why universal validity would imply RH, and immediately shows that individual failures can be locally compensated by double-root neighboring intervals."
+          },
+          {
+            "line_end": 115,
+            "line_start": 81,
+            "title": "Riemann-Siegel compression of critical-line evaluation",
+            "unit_id": "openalex_w1980116773_v2_u04",
+            "unit_type": "method comparison",
+            "why_material": "The source contrasts the earlier order-of-t workload with an expansion requiring only about the square root of the height in terms, then links that reduction to a substantially larger verified range and an explicit count of Gram-law failures."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across methods, a remainder estimate is not merely a post hoc accuracy report: it determines when a sign is certifiable, when the mesh must be refined, and when the computation must switch to a more expensive representation.",
+            "limit": "This synthesis is specific to the described numerical pipeline; damaged formulas prevent a formula-level reconstruction from this text layer alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u03",
+              "openalex_w1980116773_v2_u04",
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u08",
+              "openalex_w1980116773_v2_u14"
+            ],
+            "title": "Error bounds as routing signals for adaptive computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u03",
+          "spontaneous_reading": "The decisive mechanism is an inventory argument: an independent exact count of all zeros in a rectangle is matched by at least that many critical-line zeros detected through sign changes, leaving no room for off-line zeros there."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u03",
+          "source_grounded_mathematics": "Hutchinson is reported to count exactly 138 zeros in a bounded rectangle and to find at least 138 roots on the critical line by sign changes, thereby excluding off-line roots in that region. His Euler-Maclaurin evaluation sometimes needed on the order of 100 terms near t = 300 and became laborious on a desk calculator.",
+          "conceptual_reading": "The certification combines an upper-level global count with a lower bound for a distinguished subset. Equality of the inventories upgrades sampled sign evidence into an exclusion result for the whole bounded region.",
+          "representation_or_bridge": "The rectangular total-zero count and the real critical-line sign-change count are complementary representations of the same finite zero population; the Euler-Maclaurin expansion supplies the numerical evaluations.",
+          "boundary_or_failure": "The logic is confined to the counted rectangle, and its implementation cost grows enough to obstruct straightforward extension. The span does not support reconstruction of all counting or remainder details.",
+          "uncertainty": "The prose counting argument is clear, while the expansion, subscripts, and several symbols are damaged by OCR."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The auxiliary real function, phase, expansion, remainder estimate, punched-card computation, and resulting verification are kept together.",
+      "line_end": 115,
+      "line_start": 81,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed formulas are substantially OCR-corrupted; the term-count comparison, reality of the transformed function, approximate remainder scale, and reported outcome are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts the earlier order-of-t workload with an expansion requiring only about the square root of the height in terms, then links that reduction to a substantially larger verified range and an explicit count of Gram-law failures.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel compression of critical-line evaluation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u04.txt",
+      "unit_bytes": 1559,
+      "unit_id": "openalex_w1980116773_v2_u04",
+      "unit_sha256": "3c663d69ebfd8e092c66cd7434c5327f2b08b97ff2eafa3ab4756a87d7011c63",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 73,
+          "line_end": 80,
+          "text": "                                                                 2v 2\n                                             Tv=    B2v ~\"bl-s-2v 1-I ( 8 ~ - i )\n                                                   (2 v) !           r\n\nand B 2 = i/e, B 4 = -      1/30. . . .    are the Bernoulli numbers with appropriate estimates, for\nthe remainder R (k, m). At t = 300 the corresponding m = 0 (t), of the order of 100,\nwas occasionally needed and, with only a desk calculator available, the computation\nbecame too laborious.\n",
+          "sha256": "305d0b005d16bcd9ce6efa32b6cccbd6677dab9a75bd6d418dfdf71e29d52fbf"
+        },
+        "after": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "     Plans to extend the work of Titehmarsh by use of a differential analyzer were\nmade in 1939 b y the late A. M. Turing. These were interrupted b y the war and\nlater rendered obsolete b y the advent of the electronic digital computers.\n     I n 1947 the writer programmed an extension of the work of Titchmarsh for the\nENIAC, the only electronic computer then in operation. However, before the program\ncould be run, the E N I A C was drastically modified thus rendering it useless for the\nproblem.\n     I n June 1950, Turing used the Manchester University Mark 1 electronic digital\n",
+          "sha256": "ae66347ee2972eaf3fff7850e2af37cd7ebcef0baed717bb92d8c6dd5be3880a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel method and intervening computations",
+            "line_end": 129,
+            "line_start": 81,
+            "mathematical_role": "introduces the shorter expansion, error estimate, prior large computations, and machine-availability constraints"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 115,
+          "line_start": 81,
+          "title": "Riemann-Siegel compression of critical-line evaluation",
+          "unit_id": "openalex_w1980116773_v2_u04",
+          "unit_type": "method comparison",
+          "why_material": "The source contrasts the earlier order-of-t workload with an expansion requiring only about the square root of the height in terms, then links that reduction to a substantially larger verified range and an explicit count of Gram-law failures."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The auxiliary real function, phase, expansion, remainder estimate, punched-card computation, and resulting verification are kept together.",
+          "representation_dependency": "The displayed formulas are substantially OCR-corrupted; the term-count comparison, reality of the transformed function, approximate remainder scale, and reported outcome are clear in prose.",
+          "unit_id": "openalex_w1980116773_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 80,
+            "line_start": 59,
+            "title": "Global zero count plus critical-line sign changes",
+            "unit_id": "openalex_w1980116773_v2_u03",
+            "unit_type": "computational certification logic",
+            "why_material": "Hutchinson's strategy combines an independent count of all zeros in a rectangle with at least as many critical-line roots detected by sign changes, excluding off-line zeros in the bounded region; the span also identifies the term-count bottleneck of the Euler-Maclaurin implementation."
+          },
+          {
+            "line_end": 129,
+            "line_start": 116,
+            "title": "Machine access as a boundary on numerical evidence",
+            "unit_id": "openalex_w1980116773_v2_u05",
+            "unit_type": "computational history and constraint",
+            "why_material": "Aborted differential-analyzer and ENIAC plans, followed by Turing's bounded Manchester runs, show that the extent and continuity of verification depended materially on available computing architecture and time rather than only on mathematical formulas."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across methods, a remainder estimate is not merely a post hoc accuracy report: it determines when a sign is certifiable, when the mesh must be refined, and when the computation must switch to a more expensive representation.",
+            "limit": "This synthesis is specific to the described numerical pipeline; damaged formulas prevent a formula-level reconstruction from this text layer alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u03",
+              "openalex_w1980116773_v2_u04",
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u08",
+              "openalex_w1980116773_v2_u14"
+            ],
+            "title": "Error bounds as routing signals for adaptive computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u04",
+          "spontaneous_reading": "Riemann-Siegel changes the computational representation: after a phase adjustment the critical-line quantity is real and can be evaluated with roughly square-root-many terms, making sign-based searches feasible much farther up the line."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u04",
+          "source_grounded_mathematics": "The source contrasts the earlier order-of-height workload with a Riemann-Siegel expansion requiring about the square root of the height in terms, includes a remainder estimate, and reports that Titchmarsh checked the first 1,041 roots through t = 1468 with 43 Gram-law failures.",
+          "conceptual_reading": "The gain is representational compression rather than a new conjectural principle: a complex critical-line evaluation is converted into a short real oscillatory sum whose signs are usable for root detection.",
+          "representation_or_bridge": "A phase factor produces a real auxiliary function on the critical line, and a finite cosine-type sum plus controlled remainder bridges zeta values to tractable sign computations.",
+          "boundary_or_failure": "A short expansion is useful only together with a remainder bound strong enough to certify signs; the finite verification and recorded Gram-law failures do not establish RH globally.",
+          "uncertainty": "The term-count comparison, reality claim, and reported outcome are clear in prose, but the displayed formulas are substantially OCR-corrupted."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both unrealized routes and the two completed but incomplete Manchester computations.",
+      "line_end": 129,
+      "line_start": 116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No essential dependency beyond mildly degraded numeric typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Aborted differential-analyzer and ENIAC plans, followed by Turing's bounded Manchester runs, show that the extent and continuity of verification depended materially on available computing architecture and time rather than only on mathematical formulas.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Machine access as a boundary on numerical evidence",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u05.txt",
+      "unit_bytes": 1086,
+      "unit_id": "openalex_w1980116773_v2_u05",
+      "unit_sha256": "b0a8b8cc3d212c3a58177a75f1f888ce049649cb2496afa4dee18eb8c8c6cfc6",
+      "unit_type": "computational history and constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 108,
+          "line_end": 115,
+          "text": "                                       4'       =~_~2+1h.\"\n\n     Titchmarsh gave a elaborate estimate for IRI approximately equal to 3 -'/. for v\nlarge enough to be of interest. Under the supervision of L. J. Comrie, a study was\nmade in 1936 of the first 1041 roots in which automatic computing, in the form of\npunched ~ard equipment, was first applied to the problem. Titchmarsh found t h a t\nall roots had ( r = l / 2    and so the Riemann Hypothesis was verified up to t=1468.\nThere were 43 failures of Gram's Law.\n",
+          "sha256": "9ea9d9ea82b2f27f8d742647ba9350ffeba2d85af2112ba420ac3720065fdf8f"
+        },
+        "after": {
+          "line_start": 130,
+          "line_end": 137,
+          "text": "     I n 1949 the writer had suggested the zeta-fun'ction problem to J. B. Rosser, then\nDirector of the National Bureau of Standards Institute for Numerical Analysis, and\n\n<!-- source-page: 4 -->\n\n294                                          D.H.    LEHMER\n\nit was eventually accepted as a low priority project for the SWAC some two years\n",
+          "sha256": "afbe7fccd5bb9af985e55e2263a930198c2ad0a7d5bb129617d714a69007a91f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel method and intervening computations",
+            "line_end": 129,
+            "line_start": 81,
+            "mathematical_role": "introduces the shorter expansion, error estimate, prior large computations, and machine-availability constraints"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 129,
+          "line_start": 116,
+          "title": "Machine access as a boundary on numerical evidence",
+          "unit_id": "openalex_w1980116773_v2_u05",
+          "unit_type": "computational history and constraint",
+          "why_material": "Aborted differential-analyzer and ENIAC plans, followed by Turing's bounded Manchester runs, show that the extent and continuity of verification depended materially on available computing architecture and time rather than only on mathematical formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both unrealized routes and the two completed but incomplete Manchester computations.",
+          "representation_dependency": "No essential dependency beyond mildly degraded numeric typography.",
+          "unit_id": "openalex_w1980116773_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 115,
+            "line_start": 81,
+            "title": "Riemann-Siegel compression of critical-line evaluation",
+            "unit_id": "openalex_w1980116773_v2_u04",
+            "unit_type": "method comparison",
+            "why_material": "The source contrasts the earlier order-of-t workload with an expansion requiring only about the square root of the height in terms, then links that reduction to a substantially larger verified range and an explicit count of Gram-law failures."
+          },
+          {
+            "line_end": 148,
+            "line_start": 130,
+            "title": "Iterative generation of Gram points",
+            "unit_id": "openalex_w1980116773_v2_u06",
+            "unit_type": "numerical construction",
+            "why_material": "The first stage of the SWAC pipeline converts the implicit Gram-point condition into an iterative computation over the first 5,000 indices, establishing the sampling grid on which later sign screening operates."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u05",
+          "spontaneous_reading": "The extent of numerical evidence is constrained by machine architecture and access: mathematically planned computations can remain unrealized, and short allocations produce bounded or disconnected verified regions."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u05",
+          "source_grounded_mathematics": "Differential-analyzer and ENIAC plans did not yield runs. Turing later used the Manchester Mark 1 for about twenty hours, reporting roughly 1,070 simple critical-line zeros in a high bounded band and a separate verification from t = 1468 to t = 1540, after which no more machine time was available.",
+          "conceptual_reading": "Computational evidence has an infrastructural boundary distinct from the mathematics of the formula. A high-altitude band and a short contiguous extension answer different coverage questions and should not be conflated.",
+          "representation_or_bridge": "Implementing the critical-line evaluation on successive computing architectures bridges an analytic method to finite searchable regions, with available runtime determining the regions actually covered.",
+          "boundary_or_failure": "Unexecuted programs provide no zero evidence, and the Manchester results are incomplete and bounded; the high band does not fill the intervening range.",
+          "uncertainty": "The historical and coverage claims are readable, though one parenthetical numerical expression in the extracted text is garbled."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes project setup and the complete local description of the initial Gram-point program.",
+      "line_end": 148,
+      "line_start": 130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The iteration is OCR-damaged and should be scan-verified before formula-level reuse; its purpose and range are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first stage of the SWAC pipeline converts the implicit Gram-point condition into an iterative computation over the first 5,000 indices, establishing the sampling grid on which later sign screening operates.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Iterative generation of Gram points",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u06.txt",
+      "unit_bytes": 803,
+      "unit_id": "openalex_w1980116773_v2_u06",
+      "unit_sha256": "f7ff8c701d8af9b70fa4d2f2c5ebb04397f141f03b3d6fd39f5d3bf4db19f875",
+      "unit_type": "numerical construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 122,
+          "line_end": 129,
+          "text": "problem.\n     I n June 1950, Turing used the Manchester University Mark 1 electronic digital\ncomputer to examine the zeta-function for 24,937.96 < t < 25,735.93                (that is for\n63 < 1/~< 6.4) and found in this region of the critical strip t h a t there are about 1070 simple\nzeros all with a = 1/2. I n another short run the validity of the Riemann Hypothesis\nwas verified between Titchmarsh's upper limit of t = 1468 and t = 1540. Only some\ntwenty hours of machine time was used. Unfortunately no further time was made\navailable and these incomplete results were published in 1953.\n",
+          "sha256": "fc91453fd54cd0783d31356f75440c24162f4e3e06a5c5a0f016958d9cd5bd30"
+        },
+        "after": {
+          "line_start": 149,
+          "line_end": 156,
+          "text": "Next the function /(v,) was evaluated without remainder, that is\n\n\n\n\nwas evaluated using a Chebyshev approximation for the cosine function and one of\ntwo step functions for g. When Gram's Law holds\n\n",
+          "sha256": "230f8d30e2d436a66e2bbd5453d5f20e06c81e730382cbabb5ab4849372bf935"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "SWAC computation and exceptional-case pipeline",
+            "line_end": 176,
+            "line_start": 130,
+            "mathematical_role": "constructs Gram points, screens signs against remainder uncertainty, locally refines exceptions, and triggers a more accurate fallback"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 148,
+          "line_start": 130,
+          "title": "Iterative generation of Gram points",
+          "unit_id": "openalex_w1980116773_v2_u06",
+          "unit_type": "numerical construction",
+          "why_material": "The first stage of the SWAC pipeline converts the implicit Gram-point condition into an iterative computation over the first 5,000 indices, establishing the sampling grid on which later sign screening operates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes project setup and the complete local description of the initial Gram-point program.",
+          "representation_dependency": "The iteration is OCR-damaged and should be scan-verified before formula-level reuse; its purpose and range are explicit.",
+          "unit_id": "openalex_w1980116773_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 129,
+            "line_start": 116,
+            "title": "Machine access as a boundary on numerical evidence",
+            "unit_id": "openalex_w1980116773_v2_u05",
+            "unit_type": "computational history and constraint",
+            "why_material": "Aborted differential-analyzer and ENIAC plans, followed by Turing's bounded Manchester runs, show that the extent and continuity of verification depended materially on available computing architecture and time rather than only on mathematical formulas."
+          },
+          {
+            "line_end": 170,
+            "line_start": 149,
+            "title": "Remainder-aware screening and local refinement of exceptional intervals",
+            "unit_id": "openalex_w1980116773_v2_u07",
+            "unit_type": "adaptive computational certification",
+            "why_material": "The computation does not treat a small approximate value as a sign: it compares magnitude with a remainder estimate, emits distinct uncertainty and proven-failure flags, then subdivides neighboring intervals to resolve exceptional behavior, exposing one case beyond the approximation's certifying power."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u06",
+          "spontaneous_reading": "The first SWAC stage turns the implicit definition of Gram points into an iterative numerical construction, producing the indexed grid on which later sign screening is organized."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u06",
+          "source_grounded_mathematics": "The project first determines the initial 5,000 Gram points by solving the phase equation for each integer index with an iterative subroutine.",
+          "conceptual_reading": "This is a change from an implicit coordinate system to an executable one: the phase-defined points become a reusable sampling lattice before any root claim is made.",
+          "representation_or_bridge": "The integer index and phase equation are bridged by iteration to approximate locations on the critical line, which then delimit Gram intervals for subsequent evaluation.",
+          "boundary_or_failure": "Generating Gram points neither locates zeros nor certifies the accuracy or convergence of the iteration; those burdens require later evaluation and error control.",
+          "uncertainty": "The purpose and index range are explicit, but the iteration itself is OCR-damaged and is unsafe for formula-level reuse without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Begins with evaluation at Gram points and ends at the unresolved low maximum that motivates a fallback method.",
+      "line_end": 170,
+      "line_start": 149,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The omitted display at lines 151-153 and damaged function symbols obscure implementation detail, but the error-control and refinement logic is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The computation does not treat a small approximate value as a sign: it compares magnitude with a remainder estimate, emits distinct uncertainty and proven-failure flags, then subdivides neighboring intervals to resolve exceptional behavior, exposing one case beyond the approximation's certifying power.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remainder-aware screening and local refinement of exceptional intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u07.txt",
+      "unit_bytes": 1316,
+      "unit_id": "openalex_w1980116773_v2_u07",
+      "unit_sha256": "466335c680efba64bfae34d165af5c44610ce226c7ab5727fb297373b6837706",
+      "unit_type": "adaptive computational certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "equation\n                                         T log ~ - ~ = n + 1/8\n\nfor n = 1 (1) 5000 using the iterative subroutine\n\n                       ~(k+l)=   (T/, \"~- 1/s)/(log 3 (k) -   1),   . (T (0) = \"t'*,-1).\n\n\n",
+          "sha256": "8b709d482cd917ecf27298eef30c307cf541f2ab242d0834b4c6d86efe2ac699"
+        },
+        "after": {
+          "line_start": 171,
+          "line_end": 178,
+          "text": "      The discovery of this interesting phenomenon led to two further programs: (a) an\nimmediate analysis by the previous method of the next 5000 Grams points and\n(b) a new program based on (1), with a much smaller remainder than (2), for the\nmore minute investigation of the zeta-function in a selected neighborhood.\n     Program (a) disclosed another doubtful Gram interval I6707 and about 450 addi-\ntional failures of Gram's Law.\n\n<!-- source-page: 5 -->\n",
+          "sha256": "40cc10ebf54c31e6a9d35d6aa3ae878a8848bff91e55831ca3a0636d892e9f60"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "SWAC computation and exceptional-case pipeline",
+            "line_end": 176,
+            "line_start": 130,
+            "mathematical_role": "constructs Gram points, screens signs against remainder uncertainty, locally refines exceptions, and triggers a more accurate fallback"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 170,
+          "line_start": 149,
+          "title": "Remainder-aware screening and local refinement of exceptional intervals",
+          "unit_id": "openalex_w1980116773_v2_u07",
+          "unit_type": "adaptive computational certification",
+          "why_material": "The computation does not treat a small approximate value as a sign: it compares magnitude with a remainder estimate, emits distinct uncertainty and proven-failure flags, then subdivides neighboring intervals to resolve exceptional behavior, exposing one case beyond the approximation's certifying power."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Begins with evaluation at Gram points and ends at the unresolved low maximum that motivates a fallback method.",
+          "representation_dependency": "The omitted display at lines 151-153 and damaged function symbols obscure implementation detail, but the error-control and refinement logic is explicit in prose.",
+          "unit_id": "openalex_w1980116773_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 148,
+            "line_start": 130,
+            "title": "Iterative generation of Gram points",
+            "unit_id": "openalex_w1980116773_v2_u06",
+            "unit_type": "numerical construction",
+            "why_material": "The first stage of the SWAC pipeline converts the implicit Gram-point condition into an iterative computation over the first 5,000 indices, establishing the sampling grid on which later sign screening operates."
+          },
+          {
+            "line_end": 183,
+            "line_start": 171,
+            "title": "Branching from broad screening to a smaller-remainder local computation",
+            "unit_id": "openalex_w1980116773_v2_u08",
+            "unit_type": "fallback method and resolution",
+            "why_material": "One program extends broad screening while a second switches formulas for minute investigation of selected neighborhoods; the latter resolves two formerly ambiguous intervals in a way consistent with RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across methods, a remainder estimate is not merely a post hoc accuracy report: it determines when a sign is certifiable, when the mesh must be refined, and when the computation must switch to a more expensive representation.",
+            "limit": "This synthesis is specific to the described numerical pipeline; damaged formulas prevent a formula-level reconstruction from this text layer alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u03",
+              "openalex_w1980116773_v2_u04",
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u08",
+              "openalex_w1980116773_v2_u14"
+            ],
+            "title": "Error bounds as routing signals for adaptive computation"
+          },
+          {
+            "claim": "The broad scan's most informative exceptions occur when a local extremum is too small to dominate the approximation error; these cases require a more accurate representation and motivate the author's later phase-cancellation interpretation.",
+            "limit": "The phase-cancellation discussion is explicitly informal, and the observed finite examples do not validate its proposed distant-search extrapolation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u13",
+              "openalex_w1980116773_v2_u14",
+              "openalex_w1980116773_v2_u15"
+            ],
+            "title": "Rare low-amplitude extrema define the hardest certification cases"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u07",
+          "spontaneous_reading": "The computation uses the remainder estimate as a routing signal: it certifies a sign when the computed magnitude clears the error, marks doubt otherwise, and refines only exceptional neighboring intervals."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u07",
+          "source_grounded_mathematics": "An approximate real critical-line function is evaluated at Gram points. Values smaller than the estimated remainder trigger an uncertainty flag, definite sign-rule failures receive another flag, and exceptional pairs of intervals are subdivided into eight parts. About 360 failures are found, while one low maximum remains too small for the approximation to distinguish two roots from none.",
+          "conceptual_reading": "The key move is certified abstention followed by adaptive refinement. Error bounds do not merely assess final accuracy; they decide which observations count as signs and where more computation is required.",
+          "representation_or_bridge": "Gram-point values, a Riemann-Siegel remainder bound, coded flags, and a finer local mesh form a bridge from approximate evaluation to interval-level root-count evidence.",
+          "boundary_or_failure": "When the extremum lies below the error scale, refinement within the same approximation still cannot certify the topology of the roots; a more accurate representation is required.",
+          "uncertainty": "The decision logic is explicit in prose, but the omitted display, function symbols, and exceptional interval index are OCR-damaged."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the discovery, two-program response, second ambiguous interval, and both local resolutions together.",
+      "line_end": 183,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Interval subscripts and function glyphs are OCR-corrupted, but the branch structure and resolution are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "One program extends broad screening while a second switches formulas for minute investigation of selected neighborhoods; the latter resolves two formerly ambiguous intervals in a way consistent with RH.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Branching from broad screening to a smaller-remainder local computation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u08.txt",
+      "unit_bytes": 689,
+      "unit_id": "openalex_w1980116773_v2_u08",
+      "unit_sha256": "68cca3135e99568d5aa5f30d8d6a3e62a1e0ec647f3cceb53a2edb8edefd9bec",
+      "unit_type": "fallback method and resolution",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "a further computation subdividing each of the Gram intervals I,_1 and In into 8 sub-\nintervals (equally spaced in the scale of n) with the expectation of finding sufficiently\nlarge values of ] [1 (3) [ to indicate clearly the behavior of [ (3) in the combined interval\n(v,-1,3n+1). A study of these exceptional cases revealed about 360 failures in Gram's\nLaw. In all but one interval the absence of a root was exactly compensated for by\nthe presence of an extra root in an adjoining interval. In the case of I4ve3 the func-\ntion h(3) rises to a very low maximum less than the estimated In[ and so (2) was\ninadequate to determine whether Iavea has two real roots or no real roots of [(T).\n",
+          "sha256": "865b5c3a610a030167fe0448aa3535b637f6e452c9671e297a1beb9efe856d5d"
+        },
+        "after": {
+          "line_start": 184,
+          "line_end": 191,
+          "text": "     An account of the failures of Gram's Law among the first 10,000 intervals can\nbe given briefly as follows. All failures produce one Gram interval without a root\nand it is convenient to assign the failure to this interval as its location. All but 14\nfailures are of the simple type in which the \"missing\" root is found in one of the\ntwo adjacent intervals. Very often this displacement is a minor one and in 18 cases\nit was impossible to decide, without further calculation, whether such a displacement\nhad actually occurred since f (~n) was too small in absolute value to determine its\nsign. The 14 failures mentioned above are such t h a t the missing root is displaced\n",
+          "sha256": "ef90b04eacb44a65bbb1501574ebc24391a5c775f9055108d58d7608f450afac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "SWAC computation and exceptional-case pipeline",
+            "line_end": 176,
+            "line_start": 130,
+            "mathematical_role": "constructs Gram points, screens signs against remainder uncertainty, locally refines exceptions, and triggers a more accurate fallback"
+          },
+          {
+            "label": "Resolution and census of Gram-law failures",
+            "line_end": 230,
+            "line_start": 177,
+            "mathematical_role": "reports fallback results and classifies, counts, and groups displaced-root patterns"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 183,
+          "line_start": 171,
+          "title": "Branching from broad screening to a smaller-remainder local computation",
+          "unit_id": "openalex_w1980116773_v2_u08",
+          "unit_type": "fallback method and resolution",
+          "why_material": "One program extends broad screening while a second switches formulas for minute investigation of selected neighborhoods; the latter resolves two formerly ambiguous intervals in a way consistent with RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the discovery, two-program response, second ambiguous interval, and both local resolutions together.",
+          "representation_dependency": "Interval subscripts and function glyphs are OCR-corrupted, but the branch structure and resolution are readable.",
+          "unit_id": "openalex_w1980116773_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 149,
+            "title": "Remainder-aware screening and local refinement of exceptional intervals",
+            "unit_id": "openalex_w1980116773_v2_u07",
+            "unit_type": "adaptive computational certification",
+            "why_material": "The computation does not treat a small approximate value as a sign: it compares magnitude with a remainder estimate, emits distinct uncertainty and proven-failure flags, then subdivides neighboring intervals to resolve exceptional behavior, exposing one case beyond the approximation's certifying power."
+          },
+          {
+            "line_end": 195,
+            "line_start": 184,
+            "title": "Local and second-neighbor displacement of missing roots",
+            "unit_id": "openalex_w1980116773_v2_u09",
+            "unit_type": "failure taxonomy",
+            "why_material": "The source classifies almost all Gram-law failures as compensation in an adjacent interval and isolates a smaller class where the missing root is displaced one interval farther, replacing a binary pass/fail view with spatial structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across methods, a remainder estimate is not merely a post hoc accuracy report: it determines when a sign is certifiable, when the mesh must be refined, and when the computation must switch to a more expensive representation.",
+            "limit": "This synthesis is specific to the described numerical pipeline; damaged formulas prevent a formula-level reconstruction from this text layer alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u03",
+              "openalex_w1980116773_v2_u04",
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u08",
+              "openalex_w1980116773_v2_u14"
+            ],
+            "title": "Error bounds as routing signals for adaptive computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u08",
+          "spontaneous_reading": "The pipeline branches into broad continuation and precision fallback: one program scans the next 5,000 Gram points, while another spends a smaller remainder on only the ambiguous neighborhoods."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u08",
+          "source_grounded_mathematics": "Program (a) extends the previous screening method and finds another doubtful interval plus about 450 further Gram-law failures. Program (b) uses the earlier expansion with a much smaller remainder in selected neighborhoods and resolves both doubtful cases as two-root intervals paired with empty intervals, consistent with RH.",
+          "conceptual_reading": "A coarse-to-fine design separates coverage from resolution. The cheap representation discovers anomalies at scale, and the expensive representation is reserved for cases whose certification margin is too small.",
+          "representation_or_bridge": "The flagged Gram intervals bridge the broad Riemann-Siegel scan to a local Euler-Maclaurin-style fallback with tighter error, allowing a definite local root count.",
+          "boundary_or_failure": "The fallback resolves only the selected ambiguous neighborhoods and does not make Gram's law valid or prove the global hypothesis.",
+          "uncertainty": "The two-program structure and outcome are clear, while several interval subscripts and function glyphs are OCR-corrupted."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the convention assigning a failure to the empty interval and both directional second-neighbor patterns.",
+      "line_end": 195,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some indices are spaced or garbled, but the taxonomy and listed directions are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source classifies almost all Gram-law failures as compensation in an adjacent interval and isolates a smaller class where the missing root is displaced one interval farther, replacing a binary pass/fail view with spatial structure.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local and second-neighbor displacement of missing roots",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u09.txt",
+      "unit_bytes": 956,
+      "unit_id": "openalex_w1980116773_v2_u09",
+      "unit_sha256": "ba21a99bf179fb23621b3dbe3473c8c64b99f42220fd2c46c55e2a94f95534fd",
+      "unit_type": "failure taxonomy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "tional failures of Gram's Law.\n\n<!-- source-page: 5 -->\n\noN THE ROOTS OF THE RIEMANN ZETA-FUNCTION                        295\n\n     Program (b) disclosed that, in conformity with the Riemann Hypothesis, /(z')\nhas two real roots in each of I4e~s and 16707 and no root in 14674 and IeT0s\"\n",
+          "sha256": "21f72f17e998c7538246fee9c446eeb5117f11c3b6bd9e09a2539388673ea499"
+        },
+        "after": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "     The failures of Gram's Law become more and more frequent as n increases. The\nfollowing table gives the number E (n) of failures among the first n Gram intervals\nfor n = 1000 (1000)10,500. Numbers in parentheses refer to cases in which there is\nsome doubt, as mentioned above.\n\n                        n                  E (n)               A E (n)\n                        lO00             40+ (4)\n                                                                72 + (7)\n",
+          "sha256": "11e603b59ce58545e5222274bdb5a9bcaedd204f02b7d7c47b397f28b59902c7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resolution and census of Gram-law failures",
+            "line_end": 230,
+            "line_start": 177,
+            "mathematical_role": "reports fallback results and classifies, counts, and groups displaced-root patterns"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 195,
+          "line_start": 184,
+          "title": "Local and second-neighbor displacement of missing roots",
+          "unit_id": "openalex_w1980116773_v2_u09",
+          "unit_type": "failure taxonomy",
+          "why_material": "The source classifies almost all Gram-law failures as compensation in an adjacent interval and isolates a smaller class where the missing root is displaced one interval farther, replacing a binary pass/fail view with spatial structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the convention assigning a failure to the empty interval and both directional second-neighbor patterns.",
+          "representation_dependency": "Some indices are spaced or garbled, but the taxonomy and listed directions are recoverable.",
+          "unit_id": "openalex_w1980116773_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 183,
+            "line_start": 171,
+            "title": "Branching from broad screening to a smaller-remainder local computation",
+            "unit_id": "openalex_w1980116773_v2_u08",
+            "unit_type": "fallback method and resolution",
+            "why_material": "One program extends broad screening while a second switches formulas for minute investigation of selected neighborhoods; the latter resolves two formerly ambiguous intervals in a way consistent with RH."
+          },
+          {
+            "line_end": 223,
+            "line_start": 196,
+            "title": "Increasing failure frequency with nearly balanced displacement direction",
+            "unit_id": "openalex_w1980116773_v2_u10",
+            "unit_type": "empirical trend analysis",
+            "why_material": "The cumulative table supports the stated rise in Gram-law failure frequency through the first 10,000 intervals, while the final counts show no large imbalance between rightward and leftward displacement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Empty Gram intervals are usually compensated by extra roots nearby, sometimes in coupled clusters, even as their frequency increases; this makes the spatial displacement pattern more informative than the failure count alone.",
+            "limit": "The claim summarizes only the first reported interval range and does not establish a general theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u02",
+              "openalex_w1980116773_v2_u09",
+              "openalex_w1980116773_v2_u10",
+              "openalex_w1980116773_v2_u11",
+              "openalex_w1980116773_v2_u12"
+            ],
+            "title": "Gram-law failure has local transport structure rather than isolated binary error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u09",
+          "spontaneous_reading": "Gram-law failure is represented as local transport of root count: nearly every empty interval is balanced in an adjacent interval, while fourteen cases move the compensation one interval farther."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u09",
+          "source_grounded_mathematics": "A failure is assigned to an interval containing no root. All but fourteen reported failures place the corresponding extra root in an adjacent interval; the fourteen listed cases place it in the next interval beyond, in either direction. Eighteen small-value cases remain undecided without further calculation.",
+          "conceptual_reading": "The one-root-per-interval baseline induces a displacement taxonomy that retains more structure than a failure count. Local block totals can remain balanced even when individual intervals violate the heuristic.",
+          "representation_or_bridge": "Encoding the critical-line zeros as a sequence of per-Gram-interval counts exposes direction and displacement distance as discrete features of the continuous oscillation.",
+          "boundary_or_failure": "The missing-root language is relative to the heuristic baseline; it does not mean a zero vanished or moved off the critical line. The finite taxonomy is not a general compensation theorem.",
+          "uncertainty": "The taxonomy is recoverable, but some indices are garbled and eighteen cases are explicitly uncertain because the sampled value did not determine its sign."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The uncertain-sign cases remain parenthesized rather than being silently converted into definite failures.",
+      "line_end": 223,
+      "line_start": 196,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The table is readable from the text layer despite minor OCR typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The cumulative table supports the stated rise in Gram-law failure frequency through the first 10,000 intervals, while the final counts show no large imbalance between rightward and leftward displacement.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Increasing failure frequency with nearly balanced displacement direction",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u10.txt",
+      "unit_bytes": 1589,
+      "unit_id": "openalex_w1980116773_v2_u10",
+      "unit_sha256": "2bfa986d4ab8470b4686b53970b33611712f1b1a994ff627682dae3b88600e9a",
+      "unit_type": "empirical trend analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "two adjacent intervals. Very often this displacement is a minor one and in 18 cases\nit was impossible to decide, without further calculation, whether such a displacement\nhad actually occurred since f (~n) was too small in absolute value to determine its\nsign. The 14 failures mentioned above are such t h a t the missing root is displaced\ninto the next interval beyond the adjacent one. Thus for n - 3 3 5 8 , 3777, 4541, 5105,\n6413, 6536, 6810, 7002, 7544 and 9609, there are two roots in In-2, one in In-1 and\nnone in In. There are two roots in In+2, one in In+l and none in I= for n = 4 9 2 1 ,\n5491, 5816 and 5936.\n",
+          "sha256": "bdbb49b7899c7238bacfc12cec4db7c38899168e0777a2c40d43b397a710e042"
+        },
+        "after": {
+          "line_start": 224,
+          "line_end": 231,
+          "text": "     Although in about 546 cases failures are more or less isolated, some 268 occur\nin conjunction with one or more other failures. For example, there are three roots\nin In for n = 2 1 4 5 , 4085, 4509, 6704, 9100 and possibly 7334, the two adjacent inter-\nvals /n-1 and In+l being devoid of roots. There are failures in Imp, Ism, IQoo~,the\nnumbers of roots in I8995 to I00o4 being\n\n                               1, 2, 0, 1, 0, 2, 1, 0, 2, 1.\n\n",
+          "sha256": "72227603a0a5e80eccefec13873fe16c9d85db73c6c6153028bc951f42421b2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resolution and census of Gram-law failures",
+            "line_end": 230,
+            "line_start": 177,
+            "mathematical_role": "reports fallback results and classifies, counts, and groups displaced-root patterns"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 223,
+          "line_start": 196,
+          "title": "Increasing failure frequency with nearly balanced displacement direction",
+          "unit_id": "openalex_w1980116773_v2_u10",
+          "unit_type": "empirical trend analysis",
+          "why_material": "The cumulative table supports the stated rise in Gram-law failure frequency through the first 10,000 intervals, while the final counts show no large imbalance between rightward and leftward displacement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The uncertain-sign cases remain parenthesized rather than being silently converted into definite failures.",
+          "representation_dependency": "The table is readable from the text layer despite minor OCR typography.",
+          "unit_id": "openalex_w1980116773_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 195,
+            "line_start": 184,
+            "title": "Local and second-neighbor displacement of missing roots",
+            "unit_id": "openalex_w1980116773_v2_u09",
+            "unit_type": "failure taxonomy",
+            "why_material": "The source classifies almost all Gram-law failures as compensation in an adjacent interval and isolates a smaller class where the missing root is displaced one interval farther, replacing a binary pass/fail view with spatial structure."
+          },
+          {
+            "line_end": 230,
+            "line_start": 224,
+            "title": "Coupled Gram-law failures and three-root intervals",
+            "unit_id": "openalex_w1980116773_v2_u11",
+            "unit_type": "clustered counterpattern",
+            "why_material": "The failure events are not purely isolated: the source identifies clusters in which a three-root interval is flanked by empty intervals and gives a longer alternating root-count pattern."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Empty Gram intervals are usually compensated by extra roots nearby, sometimes in coupled clusters, even as their frequency increases; this makes the spatial displacement pattern more informative than the failure count alone.",
+            "limit": "The claim summarizes only the first reported interval range and does not establish a general theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u02",
+              "openalex_w1980116773_v2_u09",
+              "openalex_w1980116773_v2_u10",
+              "openalex_w1980116773_v2_u11",
+              "openalex_w1980116773_v2_u12"
+            ],
+            "title": "Gram-law failure has local transport structure rather than isolated binary error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 262,
+              "line_start": 231,
+              "reason": "Page furniture and Figure 1 graphical content; the text layer preserves labels and caption but not a recoverable curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u10",
+          "spontaneous_reading": "The cumulative table separates two empirical features: Gram-law failures become more frequent across the sampled range, yet the displacement direction remains nearly balanced between right and left."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u10",
+          "source_grounded_mathematics": "For successive blocks through the first 10,000 Gram intervals, the table raises the cumulative count to 814 definite failures plus 18 doubtful cases; the source records 419 rightward and 395 leftward displacements.",
+          "conceptual_reading": "Increasing local unreliability of the one-root heuristic does not by itself create a directional drift. Rate and direction are distinct statistics of the displacement process.",
+          "representation_or_bridge": "Cumulative counts and block increments compress many interval-level events into a trend, while the right-left split retains orientation information lost by the total alone.",
+          "boundary_or_failure": "This finite table supports an observed trend, not an asymptotic failure law or an independence model; parenthesized cases must remain separate from definite failures.",
+          "uncertainty": "The table is readable despite minor OCR typography, and its doubtful counts are explicitly marked rather than resolved."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Stops before the first figure because its curve is not represented in the extracted text.",
+      "line_end": 230,
+      "line_start": 224,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several interval labels are OCR-damaged; the three-root/flanking-empty mechanism and the displayed root-count sequence remain recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The failure events are not purely isolated: the source identifies clusters in which a three-root interval is flanked by empty intervals and gives a longer alternating root-count pattern.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coupled Gram-law failures and three-root intervals",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u11.txt",
+      "unit_bytes": 444,
+      "unit_id": "openalex_w1980116773_v2_u11",
+      "unit_sha256": "76fe4b87349ec7e67775d69df9cbcded29dc2892147f059198c178f57cba1d65",
+      "unit_type": "clustered counterpattern",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 216,
+          "line_end": 223,
+          "text": "                        8000            623 + (18)\n                                                                91\n                        9000            714 + (18)\n                                                               100\n                       10000            814 + (18)\n\n     In 419 failures the shift of t h e missing root was to the right; in 395 cases to\nthe left.\n",
+          "sha256": "6977da7ccc3253ba779a750d233fbfdf40dcff0d294b10a5038092ff9f970323"
+        },
+        "after": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "\n<!-- source-page: 6 -->\n\n296                                        D. H . L E H M E R\n\n\n\n\n",
+          "sha256": "4373fb4cf4df1ab14bf7c0c16f54afc276fcd0563e0d39257cec82316422a4a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Resolution and census of Gram-law failures",
+            "line_end": 230,
+            "line_start": 177,
+            "mathematical_role": "reports fallback results and classifies, counts, and groups displaced-root patterns"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 230,
+          "line_start": 224,
+          "title": "Coupled Gram-law failures and three-root intervals",
+          "unit_id": "openalex_w1980116773_v2_u11",
+          "unit_type": "clustered counterpattern",
+          "why_material": "The failure events are not purely isolated: the source identifies clusters in which a three-root interval is flanked by empty intervals and gives a longer alternating root-count pattern."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Stops before the first figure because its curve is not represented in the extracted text.",
+          "representation_dependency": "Several interval labels are OCR-damaged; the three-root/flanking-empty mechanism and the displayed root-count sequence remain recoverable.",
+          "unit_id": "openalex_w1980116773_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 223,
+            "line_start": 196,
+            "title": "Increasing failure frequency with nearly balanced displacement direction",
+            "unit_id": "openalex_w1980116773_v2_u10",
+            "unit_type": "empirical trend analysis",
+            "why_material": "The cumulative table supports the stated rise in Gram-law failure frequency through the first 10,000 intervals, while the final counts show no large imbalance between rightward and leftward displacement."
+          },
+          {
+            "line_end": 266,
+            "line_start": 263,
+            "title": "Repeated neighboring-failure configurations",
+            "unit_id": "openalex_w1980116773_v2_u12",
+            "unit_type": "recurrence of clustered anomalies",
+            "why_material": "The prose reports that configurations like the preceding cluster recur at multiple locations and tabulates how often neighboring intervals fail together, establishing that the pattern is not unique."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Empty Gram intervals are usually compensated by extra roots nearby, sometimes in coupled clusters, even as their frequency increases; this makes the spatial displacement pattern more informative than the failure count alone.",
+            "limit": "The claim summarizes only the first reported interval range and does not establish a general theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u02",
+              "openalex_w1980116773_v2_u09",
+              "openalex_w1980116773_v2_u10",
+              "openalex_w1980116773_v2_u11",
+              "openalex_w1980116773_v2_u12"
+            ],
+            "title": "Gram-law failure has local transport structure rather than isolated binary error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 262,
+              "line_start": 231,
+              "reason": "Page furniture and Figure 1 graphical content; the text layer preserves labels and caption but not a recoverable curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u11",
+          "spontaneous_reading": "Failures cluster: a three-root interval can be flanked by empty intervals, and a longer root-count word alternates deficits and surpluses across neighboring intervals."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u11",
+          "source_grounded_mathematics": "The source contrasts about 546 more-or-less isolated failures with about 268 occurring alongside other failures. It gives several cases of three roots in one interval with both adjacent intervals empty and displays the sequence 1, 2, 0, 1, 0, 2, 1, 0, 2, 1 over a longer run.",
+          "conceptual_reading": "The anomalies are not adequately modeled as isolated binary errors. Root-count words expose coupled redistribution patterns whose local totals and correlations carry information hidden by a marginal failure rate.",
+          "representation_or_bridge": "A finite word of interval root counts is a compact bridge from an oscillating continuous function to combinatorial cluster structure.",
+          "boundary_or_failure": "The examples establish occurrence, not a causal mechanism or statistical law; one three-root case is explicitly only possible, and several interval labels are OCR-damaged.",
+          "uncertainty": "The root-count sequence and flanked-three-root pattern are clear, but the exact labels of the longer cluster are not recoverable from this text layer."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the recoverable prose immediately following the extraction-defective first figure.",
+      "line_end": 266,
+      "line_start": 263,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One subscripted interval relation is damaged, and the link to the preceding graphical example requires the surrounding section context.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prose reports that configurations like the preceding cluster recur at multiple locations and tabulates how often neighboring intervals fail together, establishing that the pattern is not unique.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated neighboring-failure configurations",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u12.txt",
+      "unit_bytes": 251,
+      "unit_id": "openalex_w1980116773_v2_u12",
+      "unit_sha256": "39dd20572c9d46e1ae42bd5785911eab50911bbbcfc86892627299cdbf8d7e86",
+      "unit_type": "recurrence of clustered anomalies",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 255,
+          "line_end": 262,
+          "text": "\n\n\n\n                                               F i g . 1,\n\n\n\n",
+          "sha256": "01674d0f17926bcaccd500c26a503a5608ee6ecf32eb9d0a2b1b9bc783b3ff6c"
+        },
+        "after": {
+          "line_start": 267,
+          "line_end": 274,
+          "text": "        The above anomalies in Gram's Law m a y be thought of as minor modulations\nin the frequency of the oscillations of [ (T). Perhaps of more interest to the problem\nof the Riemann Hypothesis is the question of the amplitude of these oscillations. W h a t\ninterests us especially are low m a x i m a and high minima and the related m a t t e r of\ntwo nearly coincident roots.\n        For some 25 values of n, In has two roots differing b y less t h a n one fourth of\nIn between which the extreme value of ] has a particularly small absolute value.\nFive of these cases required a special fine mesh calculation to insure t h a t two roots\n",
+          "sha256": "68d0e1478a6552596d887301949d6789564a80f428141d04b12396b6fb6f86a7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "First figure and further clustered failures",
+            "line_end": 266,
+            "line_start": 231,
+            "mathematical_role": "presents a graph whose curves are lost in extraction and prose evidence for recurring adjacent failure clusters"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 266,
+          "line_start": 263,
+          "title": "Repeated neighboring-failure configurations",
+          "unit_id": "openalex_w1980116773_v2_u12",
+          "unit_type": "recurrence of clustered anomalies",
+          "why_material": "The prose reports that configurations like the preceding cluster recur at multiple locations and tabulates how often neighboring intervals fail together, establishing that the pattern is not unique."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the recoverable prose immediately following the extraction-defective first figure.",
+          "representation_dependency": "One subscripted interval relation is damaged, and the link to the preceding graphical example requires the surrounding section context.",
+          "unit_id": "openalex_w1980116773_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 224,
+            "title": "Coupled Gram-law failures and three-root intervals",
+            "unit_id": "openalex_w1980116773_v2_u11",
+            "unit_type": "clustered counterpattern",
+            "why_material": "The failure events are not purely isolated: the source identifies clusters in which a three-root interval is flanked by empty intervals and gives a longer alternating root-count pattern."
+          },
+          {
+            "line_end": 276,
+            "line_start": 267,
+            "title": "From frequency anomalies to low-amplitude extrema and close roots",
+            "unit_id": "openalex_w1980116773_v2_u13",
+            "unit_type": "diagnostic reframing",
+            "why_material": "The source explicitly changes the diagnostic target from local modulation in oscillation frequency to unusually low maxima, high minima, and nearly coincident roots, then identifies cases where ordinary sampling was insufficient and fine-mesh computation was required."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Empty Gram intervals are usually compensated by extra roots nearby, sometimes in coupled clusters, even as their frequency increases; this makes the spatial displacement pattern more informative than the failure count alone.",
+            "limit": "The claim summarizes only the first reported interval range and does not establish a general theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u02",
+              "openalex_w1980116773_v2_u09",
+              "openalex_w1980116773_v2_u10",
+              "openalex_w1980116773_v2_u11",
+              "openalex_w1980116773_v2_u12"
+            ],
+            "title": "Gram-law failure has local transport structure rather than isolated binary error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 262,
+              "line_start": 231,
+              "reason": "Page furniture and Figure 1 graphical content; the text layer preserves labels and caption but not a recoverable curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u12",
+          "spontaneous_reading": "The previously observed neighboring-failure configuration recurs at multiple indices, so the cluster is a repeated empirical pattern rather than a unique anomaly."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u12",
+          "source_grounded_mathematics": "The prose lists eight further neighborhoods with similar behavior and reports 47 or possibly 49 cases of failures in consecutive intervals, plus 61 or 62 cases for another nearby interval relation whose subscript is damaged in extraction.",
+          "conceptual_reading": "Recurrence makes adjacency a meaningful unit of analysis: counting co-occurring failures can distinguish local dependence from an inventory of isolated violations.",
+          "representation_or_bridge": "Indexed Gram intervals and pair-incidence counts summarize where failure events occur together, extending the root-count-cluster representation beyond a single example.",
+          "boundary_or_failure": "The preceding figure is not recoverable from the text layer, and the exact offset in the second pair relation cannot be safely reconstructed; the counts do not establish a general distribution.",
+          "uncertainty": "The recurrence claim and first adjacency count are readable, while the second subscript and two case totals retain explicit uncertainty."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the conceptual shift, quantitative closeness criterion, case count, and escalation trigger.",
+      "line_end": 276,
+      "line_start": 267,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Function symbols are OCR-degraded, but the amplitude-based diagnostic and fine-mesh requirement are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explicitly changes the diagnostic target from local modulation in oscillation frequency to unusually low maxima, high minima, and nearly coincident roots, then identifies cases where ordinary sampling was insufficient and fine-mesh computation was required.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From frequency anomalies to low-amplitude extrema and close roots",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u13.txt",
+      "unit_bytes": 729,
+      "unit_id": "openalex_w1980116773_v2_u13",
+      "unit_sha256": "dcd8025521b8efdeb70189d6a599c218cb264591bbbf3f93706e08a024d84fae",
+      "unit_type": "diagnostic reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 259,
+          "line_end": 266,
+          "text": "                                               F i g . 1,\n\n\n\nEight similar phenomena occur in the neighborhood of In for n = 4823, 5747, 5935,\n6154, 7003, 7545, 9483, 9581. There are 47 and possibly 49 cases in which failures\noccur in both In and In+l and 61 or 62 cases in which both In and ln+~ have\nfailures.\n",
+          "sha256": "cb74f72a04aa0e4c8e422eeba71a37011dd30de1508600ee54b4e2b5e635b11c"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "<!-- source-page: 7 -->\n\nON THE ROOTS OF THE RIEMANN ZETA-FUNCTION                        297\n\n                      .004 -\n\n\n\n",
+          "sha256": "ce5f221ab59849fc4b9fe64a193c99e47437ca04748d9bac408a439c2821ae06"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Amplitude anomalies and near-coincident roots",
+            "line_end": 338,
+            "line_start": 267,
+            "mathematical_role": "reframes the search from oscillation frequency to extreme amplitude, documents fine-mesh escalation, and resolves the most delicate pair"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 267,
+          "title": "From frequency anomalies to low-amplitude extrema and close roots",
+          "unit_id": "openalex_w1980116773_v2_u13",
+          "unit_type": "diagnostic reframing",
+          "why_material": "The source explicitly changes the diagnostic target from local modulation in oscillation frequency to unusually low maxima, high minima, and nearly coincident roots, then identifies cases where ordinary sampling was insufficient and fine-mesh computation was required."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the conceptual shift, quantitative closeness criterion, case count, and escalation trigger.",
+          "representation_dependency": "Function symbols are OCR-degraded, but the amplitude-based diagnostic and fine-mesh requirement are clear.",
+          "unit_id": "openalex_w1980116773_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 266,
+            "line_start": 263,
+            "title": "Repeated neighboring-failure configurations",
+            "unit_id": "openalex_w1980116773_v2_u12",
+            "unit_type": "recurrence of clustered anomalies",
+            "why_material": "The prose reports that configurations like the preceding cluster recur at multiple locations and tabulates how often neighboring intervals fail together, establishing that the pattern is not unique."
+          },
+          {
+            "line_end": 338,
+            "line_start": 319,
+            "title": "Escalating precision to certify a nearly merged root pair",
+            "unit_id": "openalex_w1980116773_v2_u14",
+            "unit_type": "high-precision exceptional-case analysis",
+            "why_material": "For cases whose extrema could not clear the Riemann-Siegel remainder bound, the computation switches to many terms of the more accurate expansion, evaluates both real and imaginary parts on a local mesh, and reports a very low maximum between two distinct roots."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The broad scan's most informative exceptions occur when a local extremum is too small to dominate the approximation error; these cases require a more accurate representation and motivate the author's later phase-cancellation interpretation.",
+            "limit": "The phase-cancellation discussion is explicitly informal, and the observed finite examples do not validate its proposed distant-search extrapolation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u13",
+              "openalex_w1980116773_v2_u14",
+              "openalex_w1980116773_v2_u15"
+            ],
+            "title": "Rare low-amplitude extrema define the hardest certification cases"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 262,
+              "line_start": 231,
+              "reason": "Page furniture and Figure 1 graphical content; the text layer preserves labels and caption but not a recoverable curve."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 318,
+              "line_start": 277,
+              "reason": "Page furniture and Figure 2 graphical content; axis fragments and caption do not recover the plotted curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u13",
+          "spontaneous_reading": "The diagnostic target shifts from how often the function oscillates to how small its intervening extrema become, because close root pairs with low amplitude are precisely the cases that defeat ordinary sign certification."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u13",
+          "source_grounded_mathematics": "The author reframes Gram-law anomalies as frequency modulations and singles out low maxima, high minima, and nearly coincident roots. About 25 intervals contain two roots separated by less than one quarter of the interval with a small extremum between them; five cases require a special fine mesh to ensure that two roots exist.",
+          "conceptual_reading": "Amplitude is a conditioning variable for root detection. Two distinct roots can become hard to certify not because the counting principle changes, but because the sign margin between them is exceptionally small.",
+          "representation_or_bridge": "Viewing the real critical-line function continuously inside each Gram interval connects root spacing, intervening extrema, and the mesh resolution needed for reliable detection.",
+          "boundary_or_failure": "Fine-mesh confirmation is local and does not turn low extrema into evidence for or against RH globally; the unit ends mid-transition to the case details.",
+          "uncertainty": "The diagnostic shift, counts, and escalation trigger are clear, but function symbols are OCR-degraded and the final sentence is continued in the next unit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding graph is excluded; this span contains the textual method, robustness observation, figure interpretation, maximum, and root locations.",
+      "line_end": 338,
+      "line_start": 319,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact function notation and root real-part typography are damaged, while the numerical local analysis is readable; the plotted shape itself remains scan-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For cases whose extrema could not clear the Riemann-Siegel remainder bound, the computation switches to many terms of the more accurate expansion, evaluates both real and imaginary parts on a local mesh, and reports a very low maximum between two distinct roots.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Escalating precision to certify a nearly merged root pair",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u14.txt",
+      "unit_bytes": 1267,
+      "unit_id": "openalex_w1980116773_v2_u14",
+      "unit_sha256": "436eea9b683f683e51463dbe56509d922ac286aafe92a503aa3aa51ba7b910b1",
+      "unit_type": "high-precision exceptional-case analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 311,
+          "line_end": 318,
+          "text": "\n\n                   --.003-\n\n\n\n\n                                                  Fig. 2.\n",
+          "sha256": "f72d1976717a9273a6e5a882130cb47f5fb38b48abee4c550013f04ac69ed8b1"
+        },
+        "after": {
+          "line_start": 339,
+          "line_end": 346,
+          "text": "       I t is perhaps appropriate to _make a few informal comments in conclusion about\nthe significance of the above results in relation to the R i e m a n n Hypothesis.               These\ncomments repeat to some extent those made already by Titchmarsh.                    A t e n d e n c y for\nthe behavior of the zeta-function to become more and more capricious as t increases\nis evident from the values thus far computed. N e a r l y one interval in ten now shows\na departure from G r a m ' s Law.\n       There are relations between the logarithms of the primes, especially the early\nones, which, at least as far as v = 1572, prevent a negative m a x i m u m of a positive\n",
+          "sha256": "c7e4489188135b0ef9b59603b3dd0f5e30188a5054981745a6f881e1966f418e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Amplitude anomalies and near-coincident roots",
+            "line_end": 338,
+            "line_start": 267,
+            "mathematical_role": "reframes the search from oscillation frequency to extreme amplitude, documents fine-mesh escalation, and resolves the most delicate pair"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 338,
+          "line_start": 319,
+          "title": "Escalating precision to certify a nearly merged root pair",
+          "unit_id": "openalex_w1980116773_v2_u14",
+          "unit_type": "high-precision exceptional-case analysis",
+          "why_material": "For cases whose extrema could not clear the Riemann-Siegel remainder bound, the computation switches to many terms of the more accurate expansion, evaluates both real and imaginary parts on a local mesh, and reports a very low maximum between two distinct roots."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preceding graph is excluded; this span contains the textual method, robustness observation, figure interpretation, maximum, and root locations.",
+          "representation_dependency": "The exact function notation and root real-part typography are damaged, while the numerical local analysis is readable; the plotted shape itself remains scan-dependent.",
+          "unit_id": "openalex_w1980116773_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 276,
+            "line_start": 267,
+            "title": "From frequency anomalies to low-amplitude extrema and close roots",
+            "unit_id": "openalex_w1980116773_v2_u13",
+            "unit_type": "diagnostic reframing",
+            "why_material": "The source explicitly changes the diagnostic target from local modulation in oscillation frequency to unusually low maxima, high minima, and nearly coincident roots, then identifies cases where ordinary sampling was insufficient and fine-mesh computation was required."
+          },
+          {
+            "line_end": 357,
+            "line_start": 339,
+            "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+            "unit_id": "openalex_w1980116773_v2_u15",
+            "unit_type": "heuristic interpretation and search proposal",
+            "why_material": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across methods, a remainder estimate is not merely a post hoc accuracy report: it determines when a sign is certifiable, when the mesh must be refined, and when the computation must switch to a more expensive representation.",
+            "limit": "This synthesis is specific to the described numerical pipeline; damaged formulas prevent a formula-level reconstruction from this text layer alone.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u03",
+              "openalex_w1980116773_v2_u04",
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u08",
+              "openalex_w1980116773_v2_u14"
+            ],
+            "title": "Error bounds as routing signals for adaptive computation"
+          },
+          {
+            "claim": "The broad scan's most informative exceptions occur when a local extremum is too small to dominate the approximation error; these cases require a more accurate representation and motivate the author's later phase-cancellation interpretation.",
+            "limit": "The phase-cancellation discussion is explicitly informal, and the observed finite examples do not validate its proposed distant-search extrapolation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u13",
+              "openalex_w1980116773_v2_u14",
+              "openalex_w1980116773_v2_u15"
+            ],
+            "title": "Rare low-amplitude extrema define the hardest certification cases"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 318,
+              "line_start": 277,
+              "reason": "Page furniture and Figure 2 graphical content; axis fragments and caption do not recover the plotted curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u14",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u14",
+          "spontaneous_reading": "The hardest close-root cases are resolved by changing both precision and representation: many terms of the more accurate expansion and a local complex-valued mesh reveal a tiny positive maximum between two distinct critical-line roots."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u14",
+          "source_grounded_mathematics": "Three exceptional extrema clear the Riemann-Siegel remainder, but two do not. For the latter the computation uses 1,500 and 2,000 terms of the earlier expansion, evaluates real and imaginary parts at about 20 local points, and reports in the 6707 case a maximum of 0.0039675 between roots at heights 7005.0629 and 7005.1006.",
+          "conceptual_reading": "Certification difficulty is governed by margin, not merely by height. Escalating accuracy only where the extremum is comparable to the prior error bound separates a genuinely close pair from an unresolved numerical artifact.",
+          "representation_or_bridge": "A flagged low-amplitude Riemann-Siegel case is bridged to a denser Euler-Maclaurin-style complex evaluation, then back to two critical-line root locations and an intervening real maximum.",
+          "boundary_or_failure": "The unavailable plots cannot be reconstructed from their captions, and the reported freedom from round-off error is an empirical observation rather than a formal error proof. The result remains one finite local certification.",
+          "uncertainty": "The local method and numerical values are readable, while exact function notation and real-part typography are OCR-damaged."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the source's qualification that these are informal comments and its extrapolative language.",
+      "line_end": 357,
+      "line_start": 339,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sentence relating extrema to RH has an OCR defect, so only the broader prose claim about prime-logarithm relations and near-negative cancellation is safe without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u15.txt",
+      "unit_bytes": 1660,
+      "unit_id": "openalex_w1980116773_v2_u15",
+      "unit_sha256": "541d59af74ee221480f3d4741c240413087bd06456b9c4051c0af882a050fdc8",
+      "unit_type": "heuristic interpretation and search proposal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "The two roots of ~ (8) in Ie707 are\n\n<!-- source-page: 8 -->\n\n298                                          D . H . LEHMER\n\n                                            1/~ + i 7005.0629,\n                                            1/~ + i 7005.1006.\n",
+          "sha256": "28feb6679de4402b7fee3c73dc91e11046ff4afd17a2c345634adb8d2f0e7640"
+        },
+        "after": {
+          "line_start": 358,
+          "line_end": 365,
+          "text": "       N O T E A D D E D IN P R O O F :     Since t h e above was written a few more hours of\nmachine time was used to examine the n e x t 15000 roots.\n       The zeta-function's behavior becomes steadily \" w o r s e \" but all roots have a = 1/2.\n\n                                              References\n[1]. J . P . GRAM, Note sur les zeros de la fonetion ~(s) de Riemann. Acta Math., 27 (1903),\n            289-304.\n[2]. J . I . HUTCHINSON, On the roots of the Riemann zeta function. Trans. Amer. Math. Soc.,\n",
+          "sha256": "e61de23c71ddb9919338b96f1acc9680f8752996a58ca102596f8db1a9155bbd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpretation, future attack, and proof addendum",
+            "line_end": 360,
+            "line_start": 339,
+            "mathematical_role": "offers an informal prime-logarithm cancellation interpretation, a recurrence-based search suggestion, and an additional computation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 357,
+          "line_start": 339,
+          "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "unit_type": "heuristic interpretation and search proposal",
+          "why_material": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the source's qualification that these are informal comments and its extrapolative language.",
+          "representation_dependency": "The sentence relating extrema to RH has an OCR defect, so only the broader prose claim about prime-logarithm relations and near-negative cancellation is safe without scan verification.",
+          "unit_id": "openalex_w1980116773_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 338,
+            "line_start": 319,
+            "title": "Escalating precision to certify a nearly merged root pair",
+            "unit_id": "openalex_w1980116773_v2_u14",
+            "unit_type": "high-precision exceptional-case analysis",
+            "why_material": "For cases whose extrema could not clear the Riemann-Siegel remainder bound, the computation switches to many terms of the more accurate expansion, evaluates both real and imaginary parts on a local mesh, and reports a very low maximum between two distinct roots."
+          },
+          {
+            "line_end": 360,
+            "line_start": 358,
+            "title": "Additional 15,000-root computation",
+            "unit_id": "openalex_w1980116773_v2_u16",
+            "unit_type": "extended numerical evidence",
+            "why_material": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The broad scan's most informative exceptions occur when a local extremum is too small to dominate the approximation error; these cases require a more accurate representation and motivate the author's later phase-cancellation interpretation.",
+            "limit": "The phase-cancellation discussion is explicitly informal, and the observed finite examples do not validate its proposed distant-search extrapolation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u13",
+              "openalex_w1980116773_v2_u14",
+              "openalex_w1980116773_v2_u15"
+            ],
+            "title": "Rare low-amplitude extrema define the hardest certification cases"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "spontaneous_reading": "Lehmer interprets the unusually low maximum as phase cancellation among zeta-series terms and proposes searching for recurrent, more extreme alignments far up the critical strip as deliberate stress tests of RH."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "source_grounded_mathematics": "In explicitly informal comments, the source notes more frequent Gram-law departures, attributes the delicate observed maximum to early rising terms being nearly canceled by slower descending terms, invokes Kronecker's theorem for recurrence of related phenomena, and suggests targeted distant searches.",
+          "conceptual_reading": "The proposed intuition is to search by mechanism rather than uniformly: configurations that nearly erase the amplitude are the places where the critical-line behavior is most fragile and therefore most informative computationally.",
+          "representation_or_bridge": "Logarithms of primes and the phases of series terms provide a bridge from arithmetic relations to cancellation in the real critical-line oscillation; recurrence is used to motivate candidate search locations.",
+          "boundary_or_failure": "The passage labels itself informal. Its strongest sentence relating extrema to RH is OCR-defective, and recurrence of phase configurations does not by itself prove a negative extremum, an off-line zero, or that this is the best attack.",
+          "uncertainty": "The cancellation picture and search proposal are clear as heuristic claims, but formula-level and equivalence claims should be scan-verified and not promoted to theorem status."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A short later update, kept separate from the main experiment's frozen first-10,000 scope.",
+      "line_end": 360,
+      "line_start": 358,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material representation dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Additional 15,000-root computation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u16.txt",
+      "unit_bytes": 247,
+      "unit_id": "openalex_w1980116773_v2_u16",
+      "unit_sha256": "e0422a909d0e04773b9a160fedaa6fb10f1acdd79027acb9c5768cce97022888",
+      "unit_type": "extended numerical evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 350,
+          "line_end": 357,
+          "text": "25,000th       term    of the series Z n -s so t h a t there is a very delicate balance at this\npoint. B y inspecting the terms of /(v) in I~707 one sees the first few rapidly rising\nterms being steadily beaten back b y a conspiracy of slowly descending terms so t h a t\nthe resulting         maximum     is nearly negative, the contest being followed b y a violent\noscillation.    This phenomenon, which has occurred before in a slightly less pronounced\nway, will occur infinitely often, b y Kronecker's theorem, and investigations at suitable\nneighborhoods at immense distances up the critical strip m a y well prove t o be the\nbest future a t t a c k on the R i e m a n n Hypothesis.\n",
+          "sha256": "e218df319a3db854d946c8ed5fb5d0347742d66e5b9301085681eb94465def2a"
+        },
+        "after": {
+          "line_start": 361,
+          "line_end": 368,
+          "text": "\n                                              References\n[1]. J . P . GRAM, Note sur les zeros de la fonetion ~(s) de Riemann. Acta Math., 27 (1903),\n            289-304.\n[2]. J . I . HUTCHINSON, On the roots of the Riemann zeta function. Trans. Amer. Math. Soc.,\n            27 (1925), 49-60.\n[3]. E . C . TITCHMARSH, The zeros of the Riemann zeta-function. Proc. Roy. Soc. London, 151\n            (1935), 234-255; 157 (1936), 261-263.\n",
+          "sha256": "30f1822396235c3cfc7e111705f3350bf317110e2de4f31446af5183630f6db1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpretation, future attack, and proof addendum",
+            "line_end": 360,
+            "line_start": 339,
+            "mathematical_role": "offers an informal prime-logarithm cancellation interpretation, a recurrence-based search suggestion, and an additional computation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 360,
+          "line_start": 358,
+          "title": "Additional 15,000-root computation",
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "unit_type": "extended numerical evidence",
+          "why_material": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A short later update, kept separate from the main experiment's frozen first-10,000 scope.",
+          "representation_dependency": "No material representation dependency.",
+          "unit_id": "openalex_w1980116773_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 357,
+            "line_start": 339,
+            "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+            "unit_id": "openalex_w1980116773_v2_u15",
+            "unit_type": "heuristic interpretation and search proposal",
+            "why_material": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "spontaneous_reading": "The proof addendum extends the experiment by another 15,000 roots and preserves an important separation: Gram behavior can become more irregular while every examined root still lies on the critical line."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "source_grounded_mathematics": "The added note says that a few more machine hours examined the next 15,000 roots; the zeta-function's behavior became steadily worse in the author's qualitative sense, but all examined roots had real part one half.",
+          "conceptual_reading": "Failure of a convenient local heuristic and failure of the target conjecture are different events. Additional irregularity in Gram behavior can coexist with continued finite support for critical-line location.",
+          "representation_or_bridge": "The ordered-root computation extends the empirical range, while comparing Gram-law behavior with critical-line location separates a screening proxy from the property it was designed to investigate.",
+          "boundary_or_failure": "The addendum supplies no new height cutoff, detailed certification procedure, simplicity claim, or global implication; worse is qualitative and should not be converted into a formal metric.",
+          "uncertainty": "The extension and critical-line statement are explicit in prose, but the brief note leaves its detailed scope and method unstated."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "7a77218dee1e84a3adff50a7ff0ebf4d6686d14a9610e92779091df8b7aecd14"
+}

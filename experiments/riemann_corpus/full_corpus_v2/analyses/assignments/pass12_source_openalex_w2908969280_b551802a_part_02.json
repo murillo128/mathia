@@ -1,0 +1,1844 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2908969280_b551802a_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2908969280",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The effective rectangle width is tuned by Delta and L, allowing a very short target interval without losing strip analyticity.",
+      "line_end": 1904,
+      "line_start": 1785,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This unit is display-intensive and PDF scan verification is required before reproducing the kernel or its quantitative error bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs an entire function from a rescaled smooth transform, proves interior approximation, exterior decay, controlled off-axis growth, and decay in the real direction.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An entire Fourier localizer approximates a rectangle while decaying outside it",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u025.txt",
+      "unit_bytes": 6345,
+      "unit_id": "openalex_w2908969280-u025",
+      "unit_sha256": "6b03f4bab3911c9d391319ee02e4d1e372006b5964ed03001b7eea5ff9c7a6b3",
+      "unit_type": "analytic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u025.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1777,
+          "line_end": 1784,
+          "text": "applied with γ = σ ? , α = 12 and β = σ ? + ε, we get\n(3.7)                            I(σ ? ) ≤ I( 12 )λ · I(σ ? + ε)µ ,\nfor some appropriate λ, µ > 0 that satisfy λ + µ = 1.\n   Therefore, by definition of σ ? in (3.6),\n(3.8)                              I(σ ? ) ≤ I( 21 )λ · I(σ ? )µ ,\nand hence I(σ ? )λ ≤ I( 21 )λ . Since λ > 0, we get I(σ ? ) ≤ I( 12 ). The claim follows from\n(3.6).\n\n",
+          "sha256": "37f19e3890a42b3f1209c0fa1432008cda7a5a4855b66d9b8cc968e1acf06800"
+        },
+        "after": {
+          "line_start": 1905,
+          "line_end": 1912,
+          "text": "\n     The following proposition relates the moments off and on axis.\n\n   Proposition 3.6. Let θ > −1, β > 0, 0 < ε ≤ 1 and T ≥ 109 be given. Then, for\nall 12 ≤ σ ≤ 21 + (log T )θ−3ε , the event\n              Z logθ T                                      Z 3 logθ T\n                                                                                                                        1\n(3.19)                   |ζ(σ + iτ + iu)| du \n",
+          "sha256": "1309cd1d6311b8ead6a6118f5b037f05b306a34b33a79ceb15cd7190b2a9d5c3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Lower bounds and 3.1 Reduction off-axis",
+            "line_end": 2015,
+            "line_start": 1718,
+            "mathematical_role": "States the lower targets, proves a strip convexity tool, constructs an analytic rectangle localizer, and transfers off-axis moments back to the critical line."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1904,
+          "line_start": 1785,
+          "title": "An entire Fourier localizer approximates a rectangle while decaying outside it",
+          "unit_id": "openalex_w2908969280-u025",
+          "unit_type": "analytic-construction",
+          "why_material": "Constructs an entire function from a rescaled smooth transform, proves interior approximation, exterior decay, controlled off-axis growth, and decay in the real direction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The effective rectangle width is tuned by Delta and L, allowing a very short target interval without losing strip analyticity.",
+          "representation_dependency": "This unit is display-intensive and PDF scan verification is required before reproducing the kernel or its quantitative error bounds.",
+          "unit_id": "openalex_w2908969280-u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1783,
+            "line_start": 1749,
+            "title": "Gabriel log-convexity makes an interior vertical-line norm no larger than the boundary norm",
+            "unit_id": "openalex_w2908969280-u024",
+            "unit_type": "convexity-principle",
+            "why_material": "Packages analyticity and decay into a strip interpolation inequality and derives a monotonic domination from the critical boundary into the half-plane."
+          },
+          {
+            "line_end": 2014,
+            "line_start": 1906,
+            "title": "Analytic localization transfers an off-axis moment to a slightly enlarged critical-line interval",
+            "unit_id": "openalex_w2908969280-u026",
+            "unit_type": "transfer-principle",
+            "why_material": "Applies the entire localizer and Gabriel convexity to a finite zeta approximation, then unsmooths by controlling the central window and summing rapidly decaying exterior annuli."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A coarse theta-uniform maximum bound controls all remote annuli on one high-probability event.",
+      "line_end": 2014,
+      "line_start": 1906,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The reduction is prose-supported, but exact interval-enlargement factors, sigma range, and negligible powers must be verified in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the entire localizer and Gabriel convexity to a finite zeta approximation, then unsmooths by controlling the central window and summing rapidly decaying exterior annuli.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        25,
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic localization transfers an off-axis moment to a slightly enlarged critical-line interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u026.txt",
+      "unit_bytes": 5483,
+      "unit_id": "openalex_w2908969280-u026",
+      "unit_sha256": "5a5bc3302def6866ca791ba2a8de49ba6c002d3b7d2a46b497c599b69a20c6b9",
+      "unit_type": "transfer-principle",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u026.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1898,
+          "line_end": 1905,
+          "text": "(3.18)                     |Φ∆,L (z)| \n\n                                                  R\n\nwhich proves the third claim.\n  Finally, notice that δL/∆ (z − iu) → 0 uniformly as σ → ∞ by (3.10), which implies\nthe last claim that Φ∆,L (z) → 0 uniformly in v ∈ R as σ → ∞.\n\n",
+          "sha256": "4ba86c6dce4d4e31860325bcd0328ff87905f51367ef7fbc6a93a5d7999af441"
+        },
+        "after": {
+          "line_start": 2015,
+          "line_end": 2022,
+          "text": "\n   3.2. Mollification. This step is an adaptation of Section 4.2 of Arguin et al. (2019),\nwhich is itself based on the work of Radziwill and Soundararajan (2017). The treatment\nis slightly different as the width of the interval needs to be taken into account. Also,\nwe choose to use the discretization in Proposition 2.7 to obtain a uniform control on\nthe interval as opposed to a Sobolev inequality.\n   The main idea is to define a mollifier for the zeta function\n                                             X      µ(n)\n",
+          "sha256": "496bef62ee381c0cf9785b264de9abab523f8e0ab38b1d3f23342a957bddade3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Lower bounds and 3.1 Reduction off-axis",
+            "line_end": 2015,
+            "line_start": 1718,
+            "mathematical_role": "States the lower targets, proves a strip convexity tool, constructs an analytic rectangle localizer, and transfers off-axis moments back to the critical line."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2014,
+          "line_start": 1906,
+          "title": "Analytic localization transfers an off-axis moment to a slightly enlarged critical-line interval",
+          "unit_id": "openalex_w2908969280-u026",
+          "unit_type": "transfer-principle",
+          "why_material": "Applies the entire localizer and Gabriel convexity to a finite zeta approximation, then unsmooths by controlling the central window and summing rapidly decaying exterior annuli."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A coarse theta-uniform maximum bound controls all remote annuli on one high-probability event.",
+          "representation_dependency": "The reduction is prose-supported, but exact interval-enlargement factors, sigma range, and negligible powers must be verified in the PDF.",
+          "unit_id": "openalex_w2908969280-u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1904,
+            "line_start": 1785,
+            "title": "An entire Fourier localizer approximates a rectangle while decaying outside it",
+            "unit_id": "openalex_w2908969280-u025",
+            "unit_type": "analytic-construction",
+            "why_material": "Constructs an entire function from a rescaled smooth transform, proves interior approximation, exterior decay, controlled off-axis growth, and decay in the real direction."
+          },
+          {
+            "line_end": 2107,
+            "line_start": 2016,
+            "title": "A theta-sensitive finite mollifier uniformly inverts zeta on the whole interval",
+            "unit_id": "openalex_w2908969280-u027",
+            "unit_type": "mollification",
+            "why_material": "Adapts pointwise L2 mollification to a growing grid by increasing the allowed factor count with theta, then upgrades the mean-square estimate to uniform interval control through discretization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "For nonpositive theta the earlier fixed-interval proof already suffices; positive theta requires the stronger error budget.",
+      "line_end": 2107,
+      "line_start": 2016,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The construction is recoverable, but the exact X, nu_theta, sigma_0, and error powers are formula-dependent and need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adapts pointwise L2 mollification to a growing grid by increasing the allowed factor count with theta, then upgrades the mean-square estimate to uniform interval control through discretization.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A theta-sensitive finite mollifier uniformly inverts zeta on the whole interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u027.txt",
+      "unit_bytes": 4815,
+      "unit_id": "openalex_w2908969280-u027",
+      "unit_sha256": "10aaa4f77f96e58f96d151a48e8fd4d2014895e02840b521b36eee1c0f1afd91",
+      "unit_type": "mollification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u027.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2008,
+          "line_end": 2015,
+          "text": "(3.29)                   \n (log T )dθe+`+1 · 2β` (log T )β(2+`) · (log T )−100(β+1)(dθe+`+1)\n\n                         \n (log T )−96(β+1)·(dθe+`+1) .\nThus, on S(T ), the contribution of the sum on the right-hand side of (3.26) is negligible.\nThe claim follows by combining Equations (3.24), (3.25) and (3.26).\n\n",
+          "sha256": "b9be4350462d9f1fd5ef1e35187dbfb77eeaf43660d6b480cf9cc7a1f3ab26c3"
+        },
+        "after": {
+          "line_start": 2108,
+          "line_end": 2115,
+          "text": "\n   3.3. Approximation of the mollifier. We now approximate the mollifier M by the\nexponential of a Dirichlet polynomial. If we let\n                                              XX 1\n(3.39)                         Pe1−K −1 (s) =           ks\n                                                           ,\n                                              k≥1 p≤X\n                                                      kp\n",
+          "sha256": "a85d62b57ec3f128926804d011c54eb1e59e619f41de4b6267452e3a86330af1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 Mollification",
+            "line_end": 2108,
+            "line_start": 2016,
+            "mathematical_role": "Constructs a theta-sensitive mollifier and proves it uniformly approximates the inverse of zeta on the whole interval."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2107,
+          "line_start": 2016,
+          "title": "A theta-sensitive finite mollifier uniformly inverts zeta on the whole interval",
+          "unit_id": "openalex_w2908969280-u027",
+          "unit_type": "mollification",
+          "why_material": "Adapts pointwise L2 mollification to a growing grid by increasing the allowed factor count with theta, then upgrades the mean-square estimate to uniform interval control through discretization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "For nonpositive theta the earlier fixed-interval proof already suffices; positive theta requires the stronger error budget.",
+          "representation_dependency": "The construction is recoverable, but the exact X, nu_theta, sigma_0, and error powers are formula-dependent and need scan verification.",
+          "unit_id": "openalex_w2908969280-u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2014,
+            "line_start": 1906,
+            "title": "Analytic localization transfers an off-axis moment to a slightly enlarged critical-line interval",
+            "unit_id": "openalex_w2908969280-u026",
+            "unit_type": "transfer-principle",
+            "why_material": "Applies the entire localizer and Gabriel convexity to a finite zeta approximation, then unsmooths by controlling the central window and summing rapidly decaying exterior annuli."
+          },
+          {
+            "line_end": 2164,
+            "line_start": 2109,
+            "title": "The mollifier equals an exponential prime-power field up to a rare high-factor tail",
+            "unit_id": "openalex_w2908969280-u028",
+            "unit_type": "representation-change",
+            "why_material": "Uses the Euler product logarithm to convert a multiplicative inverse into an additive prime-power polynomial and controls the truncation discrepancy uniformly by Rankin weighting, a mean-value estimate, and discretization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          },
+          {
+            "claim": "Inverse-log grid sampling repeatedly converts Dirichlet-polynomial moment or L2 information into control of maxima across intervals whose number of effective sites grows with theta.",
+            "limit": "The bridge requires a finite polynomial approximation, beta at least one in its direct form, and tail/error estimates strong enough to pay for the grid size.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u016",
+              "openalex_w2908969280-u017",
+              "openalex_w2908969280-u018",
+              "openalex_w2908969280-u020",
+              "openalex_w2908969280-u027"
+            ],
+            "title": "Discretization is the common bridge from averaged control to interval-uniform control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This creates the exponential field to which the multiscale prime-block analysis applies.",
+      "line_end": 2164,
+      "line_start": 2109,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact signs, prime-power ranges, and tail thresholds depend on fragmented displays and should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the Euler product logarithm to convert a multiplicative inverse into an additive prime-power polynomial and controls the truncation discrepancy uniformly by Rankin weighting, a mean-value estimate, and discretization.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The mollifier equals an exponential prime-power field up to a rare high-factor tail",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u028.txt",
+      "unit_bytes": 3868,
+      "unit_id": "openalex_w2908969280-u028",
+      "unit_sha256": "1729e2293c18dcc6ecc67aa91b19ee4b15f38985be40593e5b5e6f9c15d47037",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u028.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2101,
+          "line_end": 2108,
+          "text": "Markov’s inequality and Proposition 2.7 yield that the probability in (3.33) is\n                                                                                      2\n                                   \n log1+θ T · E (ζ · M )(σ0 + iτ ) − 1\n                                                     h                                    i\n(3.38)                                                                                    .\nThe conclusion follows from Lemma 3.8.\n\n",
+          "sha256": "4524d0c182af653262168a70d4fd0991526ea261b936a990775f56b2df04ca10"
+        },
+        "after": {
+          "line_start": 2165,
+          "line_end": 2172,
+          "text": "\n<!-- source-page: 28 -->\n\n28                               L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL\n\n   3.4. Proofs of the lower bounds. Consider, for 0 ≤ j ≤ K − 2, the Dirichlet polyno-\nmials\n                          X        1                            j               j+1\n",
+          "sha256": "e1648eb6506185bb27a7487b108c8418e3d71448ab1316e66361f7c6e452704a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.3 Approximation of the mollifier",
+            "line_end": 2169,
+            "line_start": 2109,
+            "mathematical_role": "Replaces the finite mollifier by an exponential prime-power polynomial with a negligible high-factor tail."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2164,
+          "line_start": 2109,
+          "title": "The mollifier equals an exponential prime-power field up to a rare high-factor tail",
+          "unit_id": "openalex_w2908969280-u028",
+          "unit_type": "representation-change",
+          "why_material": "Uses the Euler product logarithm to convert a multiplicative inverse into an additive prime-power polynomial and controls the truncation discrepancy uniformly by Rankin weighting, a mean-value estimate, and discretization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This creates the exponential field to which the multiscale prime-block analysis applies.",
+          "representation_dependency": "Exact signs, prime-power ranges, and tail thresholds depend on fragmented displays and should be scan-checked.",
+          "unit_id": "openalex_w2908969280-u028"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2107,
+            "line_start": 2016,
+            "title": "A theta-sensitive finite mollifier uniformly inverts zeta on the whole interval",
+            "unit_id": "openalex_w2908969280-u027",
+            "unit_type": "mollification",
+            "why_material": "Adapts pointwise L2 mollification to a growing grid by increasing the allowed factor count with theta, then upgrades the mean-square estimate to uniform interval control through discretization."
+          },
+          {
+            "line_end": 2205,
+            "line_start": 2170,
+            "title": "Prime scales are chosen for nearly equal variance while endpoint blocks are removed to enforce decorrelation",
+            "unit_id": "openalex_w2908969280-u029",
+            "unit_type": "multiscale-decomposition",
+            "why_material": "Defines the scale increments, explains equal variance, and identifies why the first and last blocks are omitted: one would preserve unwanted long-range correlation and the other would distort variance balance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The block design is not cosmetic; it is what makes the later two-point second moment close.",
+      "line_end": 2205,
+      "line_start": 2170,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose explains the design; exact block endpoints and variance error require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the scale increments, explains equal variance, and identifies why the first and last blocks are omitted: one would preserve unwanted long-range correlation and the other would distort variance balance.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime scales are chosen for nearly equal variance while endpoint blocks are removed to enforce decorrelation",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u029.txt",
+      "unit_bytes": 1892,
+      "unit_id": "openalex_w2908969280-u029",
+      "unit_sha256": "0e7963882da54d8aed58a0e8aa35572f1e19d50386658c4e65f0e50e546c80d5",
+      "unit_type": "multiscale-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u029.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2162,
+          "line_end": 2169,
+          "text": "                                                                  p|n =⇒ p≤X              k≥1\n                                                                                              pk\nThe result follows by Markov’s inequality.\n\n<!-- source-page: 28 -->\n\n28                               L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL\n\n",
+          "sha256": "ee48f98de07b4fc29234db10fab05e2fda727ea5dbbe0842e9500914a00b6a02"
+        },
+        "after": {
+          "line_start": 2206,
+          "line_end": 2213,
+          "text": "\n   Proof of Proposition 3.10. This is similar to the upper bound proof of The-\norem 1.1. We first relate the moments to the measure of high points. Let ε > 0 and\nM ∈ N, and set\n                                                       \n                                                       θ − γ 2 ,            if θ ≤ 0,\n                                                                     1+θ\n(3.47)                                     Eθ (γ) :=\n",
+          "sha256": "8f7476871412f2186b93b63f3511c3fc836a66a4958b3a962b5bad1b2eda8378"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2205,
+          "line_start": 2170,
+          "title": "Prime scales are chosen for nearly equal variance while endpoint blocks are removed to enforce decorrelation",
+          "unit_id": "openalex_w2908969280-u029",
+          "unit_type": "multiscale-decomposition",
+          "why_material": "Defines the scale increments, explains equal variance, and identifies why the first and last blocks are omitted: one would preserve unwanted long-range correlation and the other would distort variance balance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The block design is not cosmetic; it is what makes the later two-point second moment close.",
+          "representation_dependency": "The prose explains the design; exact block endpoints and variance error require scan verification.",
+          "unit_id": "openalex_w2908969280-u029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2164,
+            "line_start": 2109,
+            "title": "The mollifier equals an exponential prime-power field up to a rare high-factor tail",
+            "unit_id": "openalex_w2908969280-u028",
+            "unit_type": "representation-change",
+            "why_material": "Uses the Euler product logarithm to convert a multiplicative inverse into an additive prime-power polynomial and controls the truncation discrepancy uniformly by Rankin weighting, a mean-value estimate, and discretization."
+          },
+          {
+            "line_end": 2269,
+            "line_start": 2207,
+            "title": "High-point volume converts into the piecewise free-energy exponent",
+            "unit_id": "openalex_w2908969280-u030",
+            "unit_type": "entropy-energy-optimization",
+            "why_material": "Defines a high-point entropy function, lower-bounds the moment integral by level-set volume, and optimizes beta times height plus entropy, yielding an interior quadratic optimizer below criticality and endpoint domination above it."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the lower-bound counterpart of the upper high-point decomposition and directly explains the phase transition.",
+      "line_end": 2269,
+      "line_start": 2207,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual optimization is clear; exact E_theta and thresholds should be checked against the PDF displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a high-point entropy function, lower-bounds the moment integral by level-set volume, and optimizes beta times height plus entropy, yielding an interior quadratic optimizer below criticality and endpoint domination above it.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High-point volume converts into the piecewise free-energy exponent",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u030.txt",
+      "unit_bytes": 3917,
+      "unit_id": "openalex_w2908969280-u030",
+      "unit_sha256": "502c03f0787744d87ef7a07d12a25d3967d7a3a3e275a3851fb1a8286f50167f",
+      "unit_type": "entropy-energy-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u030.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2199,
+          "line_end": 2206,
+          "text": "                                                       2K\nsince σ0 − 12 = (log T )−1+3/(2K) . The polynomial P0 is ignored to ensure that the poly-\nnomials K−3\n         P\n            j=1 Pj (h) are almost independent for h’s that are far apart, which will be\ncrucial for the second-moment method to go through; see below (3.63) in the proof of\nProposition 3.10.\n\n",
+          "sha256": "837966195a1b68deb002e726582a5e9b5625751a9873c00b51266007c49e9362"
+        },
+        "after": {
+          "line_start": 2270,
+          "line_end": 2277,
+          "text": "  Consider\n                                           (\n                                               1,          if θ ≥ 0,\n(3.52)                           J (θ) =\n                                               bK|θ|c + 1, if − 1 < θ < 0.\nFor θ < 0, Corollary 2.12 ensures that the primes up to exp(log|θ| T ) only make a very\nsmall contribution, namely the event\n                                          J (θ)−1\n",
+          "sha256": "b204ad0ed1463c57429345be2c3acede207551e92830bc07d58e37ab56e28cdc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2269,
+          "line_start": 2207,
+          "title": "High-point volume converts into the piecewise free-energy exponent",
+          "unit_id": "openalex_w2908969280-u030",
+          "unit_type": "entropy-energy-optimization",
+          "why_material": "Defines a high-point entropy function, lower-bounds the moment integral by level-set volume, and optimizes beta times height plus entropy, yielding an interior quadratic optimizer below criticality and endpoint domination above it."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the lower-bound counterpart of the upper high-point decomposition and directly explains the phase transition.",
+          "representation_dependency": "The conceptual optimization is clear; exact E_theta and thresholds should be checked against the PDF displays.",
+          "unit_id": "openalex_w2908969280-u030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2205,
+            "line_start": 2170,
+            "title": "Prime scales are chosen for nearly equal variance while endpoint blocks are removed to enforce decorrelation",
+            "unit_id": "openalex_w2908969280-u029",
+            "unit_type": "multiscale-decomposition",
+            "why_material": "Defines the scale increments, explains equal variance, and identifies why the first and last blocks are omitted: one would preserve unwanted long-range correlation and the other would distort variance balance."
+          },
+          {
+            "line_end": 2303,
+            "line_start": 2270,
+            "title": "Theta-dependent removal of early blocks reduces high-point abundance to Paley-Zygmund",
+            "unit_id": "openalex_w2908969280-u031",
+            "unit_type": "second-moment-setup",
+            "why_material": "For negative theta, discards the shared early scales, chooses slightly elevated per-block barriers, defines the high-point volume, and reduces the desired entropy lower bound to concentration of that volume."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Upper high-point stratification and lower high-point volume estimates optimize the same height reward plus entropy cost, with an interior optimizer below criticality and the maximal-height endpoint above it.",
+            "limit": "The two directions use different analytic inputs, and matching leading exponents do not supply the finer freezing distribution or Gibbs-measure law.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u021",
+              "openalex_w2908969280-u022",
+              "openalex_w2908969280-u030",
+              "openalex_w2908969280-u033"
+            ],
+            "title": "The upper and lower phase transitions share an entropy-energy variational mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The setup explicitly aligns the first retained scale with the interval's correlation length.",
+      "line_end": 2303,
+      "line_start": 2270,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions are recoverable but several braces and products are extraction-fragmented; scan verification is recommended.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For negative theta, discards the shared early scales, chooses slightly elevated per-block barriers, defines the high-point volume, and reduces the desired entropy lower bound to concentration of that volume.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta-dependent removal of early blocks reduces high-point abundance to Paley-Zygmund",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u031.txt",
+      "unit_bytes": 2097,
+      "unit_id": "openalex_w2908969280-u031",
+      "unit_sha256": "f9441b6583274c4ca3896785ed5f44a5d92af00bb98095c16567e430dfa7dfcc",
+      "unit_type": "second-moment-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u031.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2262,
+          "line_end": 2269,
+          "text": "             \u001a                             K−3                                                \u001b\n                                                                                   Eθ (γ)−η\n                     n                     X                          o\n                                    θ\n(3.51)           Leb |h| ≤ log T :               Pj (h) > γ log log T ≥ (log T )\n                                           j=1\n\nhas probability 1 − o(1).\n",
+          "sha256": "72f6cd6a1f6663d10add15e820ba783e6a66bad47a2c85f57ef303cbec01c974"
+        },
+        "after": {
+          "line_start": 2304,
+          "line_end": 2311,
+          "text": "\n   Proposition 3.11 (One-point   √ large deviation estimates). Consider the event A(h)\nin (3.57). For any choices of log log T \nK xj ≤ log log T where 1 ≤ j ≤ K − 3, and\nuniformly for h, h0 ∈ [− logθ T, logθ T ], we have\n                                                K−3            K−32\n                                                  e−y /2\n                                                Y      Z ∞      Y sj −x2 /(2s2 )\n",
+          "sha256": "046392985b26dd991cb524728b48b31af15599380b5105802fd49ab200ef5acf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2303,
+          "line_start": 2270,
+          "title": "Theta-dependent removal of early blocks reduces high-point abundance to Paley-Zygmund",
+          "unit_id": "openalex_w2908969280-u031",
+          "unit_type": "second-moment-setup",
+          "why_material": "For negative theta, discards the shared early scales, chooses slightly elevated per-block barriers, defines the high-point volume, and reduces the desired entropy lower bound to concentration of that volume."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The setup explicitly aligns the first retained scale with the interval's correlation length.",
+          "representation_dependency": "Definitions are recoverable but several braces and products are extraction-fragmented; scan verification is recommended.",
+          "unit_id": "openalex_w2908969280-u031"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2269,
+            "line_start": 2207,
+            "title": "High-point volume converts into the piecewise free-energy exponent",
+            "unit_id": "openalex_w2908969280-u030",
+            "unit_type": "entropy-energy-optimization",
+            "why_material": "Defines a high-point entropy function, lower-bounds the moment integral by level-set volume, and optimizes beta times height plus entropy, yielding an interior quadratic optimizer below criticality and endpoint domination above it."
+          },
+          {
+            "line_end": 2346,
+            "line_start": 2305,
+            "title": "One-point Gaussian tails and separation-dependent two-point bounds encode branching",
+            "unit_id": "openalex_w2908969280-u032",
+            "unit_type": "large-deviation-estimates",
+            "why_material": "Provides the local probabilistic inputs: a product Gaussian-tail asymptotic, asymptotic independence beyond the branching scale, and an exponential bound when two points share early increments."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These propositions are imported from the cited prior work but are explicitly stated and instantiated for this source's block design.",
+      "line_end": 2346,
+      "line_start": 2305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose interpretation is clear; exact uniformity ranges and exponent sums require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the local probabilistic inputs: a product Gaussian-tail asymptotic, asymptotic independence beyond the branching scale, and an exponential bound when two points share early increments.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One-point Gaussian tails and separation-dependent two-point bounds encode branching",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u032.txt",
+      "unit_bytes": 2619,
+      "unit_id": "openalex_w2908969280-u032",
+      "unit_sha256": "a3f0633dbdcea43a6797acd37b3ea36841e2a6cb93d605578a6e9e676a6e80f1",
+      "unit_type": "large-deviation-estimates",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u032.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2297,
+          "line_end": 2304,
+          "text": "\n  To this aim, we shall need one-point and two-point large deviation estimates for the\nevent\n                 n                                                o\n(3.57) A(h) = Pj (h) > xj , for J (θ) ≤ j ≤ K − 3 , θ > −1, h, h0 ∈ [− logθ T, logθ T ].\nThe next two propositions are stated as Propositions 5.4 and 5.5 in Arguin et al. (2019).\nThey are consequences of the Gaussian moments in Lemma A.3.\n\n",
+          "sha256": "2d757f04d746d2869bf6f9f38b40f02eb0906c8c360033450f511ff0d13d79cf"
+        },
+        "after": {
+          "line_start": 2347,
+          "line_end": 2354,
+          "text": "\n\n  Now, in order to prove (3.56), we start by finding a lower bound on E[N ]. By (3.58),\nthe xj ’s in (3.55) and the sj ’s in (3.46), we have\n                      Z logθ T                                K−3\n                                                                     sj −x2j /(2s2j )\n                                                                                      \n (log T )Eθ (γ)−η/3 ,\n",
+          "sha256": "5d0768ebd34d67eebc9525de898e10306acd241a3c1a383fb8ae6cf617c5db6f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2346,
+          "line_start": 2305,
+          "title": "One-point Gaussian tails and separation-dependent two-point bounds encode branching",
+          "unit_id": "openalex_w2908969280-u032",
+          "unit_type": "large-deviation-estimates",
+          "why_material": "Provides the local probabilistic inputs: a product Gaussian-tail asymptotic, asymptotic independence beyond the branching scale, and an exponential bound when two points share early increments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These propositions are imported from the cited prior work but are explicitly stated and instantiated for this source's block design.",
+          "representation_dependency": "The prose interpretation is clear; exact uniformity ranges and exponent sums require PDF verification.",
+          "unit_id": "openalex_w2908969280-u032"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2303,
+            "line_start": 2270,
+            "title": "Theta-dependent removal of early blocks reduces high-point abundance to Paley-Zygmund",
+            "unit_id": "openalex_w2908969280-u031",
+            "unit_type": "second-moment-setup",
+            "why_material": "For negative theta, discards the shared early scales, chooses slightly elevated per-block barriers, defines the high-point volume, and reduces the desired entropy lower bound to concentration of that volume."
+          },
+          {
+            "line_end": 2456,
+            "line_start": 2349,
+            "title": "Partitioning pairs by distance isolates the independent bulk and suppresses correlated diagonals",
+            "unit_id": "openalex_w2908969280-u033",
+            "unit_type": "second-moment-method",
+            "why_material": "Computes the first moment, applies Paley-Zygmund, divides the pair integral by branching distance, and shows only the far-separated region contributes at leading order while every near-diagonal band is negligible."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The strict submaximum condition is exactly what gives decay in the correlated bands.",
+      "line_end": 2456,
+      "line_start": 2349,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The geometric mechanism is prose-recoverable; detailed powers in each band estimate are formula-dependent and need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes the first moment, applies Paley-Zygmund, divides the pair integral by branching distance, and shows only the far-separated region contributes at leading order while every near-diagonal band is negligible.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partitioning pairs by distance isolates the independent bulk and suppresses correlated diagonals",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u033.txt",
+      "unit_bytes": 5914,
+      "unit_id": "openalex_w2908969280-u033",
+      "unit_sha256": "ee14b0b4947c958db9d18f75282a3dd2d3e287be4139a225223a0c356eebaff6",
+      "unit_type": "second-moment-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u033.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2341,
+          "line_end": 2348,
+          "text": "                                                           X                X\n(3.60)            P(A(h) ∩ A(h )) \n exp                −              −                  .\n                                                         j=J (θ)\n                                                                 2s2j                s2\n                                                                        j=(`+1)∨J (θ) j\n\n\n",
+          "sha256": "b01e1d1f2f9c347420cd02a1c3510275ae23eb060b12b6e50f4a12a6da99b77a"
+        },
+        "after": {
+          "line_start": 2457,
+          "line_end": 2464,
+          "text": "\n  Putting all the work of Section 3 together, we can prove the lower bound in Theo-\nrem 1.1.\n\n  Proof of Proposition 3.2. By Proposition 3.6, the probability in (3.2) is\n                       \u0010 Z 31 logθ T\n                                        |ζ(σ0 + iτ + ih)|β dh > (log T )fθ (β)−ε − o(1).\n                                                                                           \u0011\n",
+          "sha256": "c07f7d0f2f4ba8ebf08aeb9cda144afa05c5dd3abf5fb2614dcdc1c5ac8ca702"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2456,
+          "line_start": 2349,
+          "title": "Partitioning pairs by distance isolates the independent bulk and suppresses correlated diagonals",
+          "unit_id": "openalex_w2908969280-u033",
+          "unit_type": "second-moment-method",
+          "why_material": "Computes the first moment, applies Paley-Zygmund, divides the pair integral by branching distance, and shows only the far-separated region contributes at leading order while every near-diagonal band is negligible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The strict submaximum condition is exactly what gives decay in the correlated bands.",
+          "representation_dependency": "The geometric mechanism is prose-recoverable; detailed powers in each band estimate are formula-dependent and need scan checking.",
+          "unit_id": "openalex_w2908969280-u033"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2346,
+            "line_start": 2305,
+            "title": "One-point Gaussian tails and separation-dependent two-point bounds encode branching",
+            "unit_id": "openalex_w2908969280-u032",
+            "unit_type": "large-deviation-estimates",
+            "why_material": "Provides the local probabilistic inputs: a product Gaussian-tail asymptotic, asymptotic independence beyond the branching scale, and an exponential bound when two points share early increments."
+          },
+          {
+            "line_end": 2508,
+            "line_start": 2458,
+            "title": "Off-axis transfer, mollifier replacement, and block trimming assemble the moment lower bound",
+            "unit_id": "openalex_w2908969280-u034",
+            "unit_type": "proof-assembly",
+            "why_material": "Chains the previously isolated reductions in their precise order and shows that prime powers and endpoint blocks can each be removed with negligible loss before invoking the multiscale lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Upper high-point stratification and lower high-point volume estimates optimize the same height reward plus entropy cost, with an interior optimizer below criticality and the maximal-height endpoint above it.",
+            "limit": "The two directions use different analytic inputs, and matching leading exponents do not supply the finer freezing distribution or Gibbs-measure law.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u021",
+              "openalex_w2908969280-u022",
+              "openalex_w2908969280-u030",
+              "openalex_w2908969280-u033"
+            ],
+            "title": "The upper and lower phase transitions share an entropy-energy variational mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is valuable as an auditable dependency chain rather than as a new estimate.",
+      "line_end": 2508,
+      "line_start": 2458,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sequence is clear; exact shrunken intervals and epsilon losses in displays should be verified against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chains the previously isolated reductions in their precise order and shows that prime powers and endpoint blocks can each be removed with negligible loss before invoking the multiscale lower bound.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Off-axis transfer, mollifier replacement, and block trimming assemble the moment lower bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u034.txt",
+      "unit_bytes": 2743,
+      "unit_id": "openalex_w2908969280-u034",
+      "unit_sha256": "09fa5ae42839014095dc0f24805e31dbe91bfa8cd6645f323e5ddb9b75817d37",
+      "unit_type": "proof-assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u034.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2450,
+          "line_end": 2457,
+          "text": " (log T )−1+2/K+η/3 · E[N ] = o (E[N ])2 ,\n                                                                                                            \u0001\n(3.68)        ≤\n                      BK−2\n\nprovided that η is small enough with respect to θ and γ, and K is large enough with\nrespect to θ, γ and η. This concludes the proof of Proposition 3.10.\n\n",
+          "sha256": "7749f9811a2568170740d59495d612dcc824ecc98fff61328c3aace6fe542805"
+        },
+        "after": {
+          "line_start": 2509,
+          "line_end": 2516,
+          "text": "\n     We now prove the lower bound in Theorem 1.2.\n\n   Proof of p  Proposition 3.1. From (1.8), we have that fθ (β) = βm(θ) − 1 when\nβ > βc (θ) = 2 1 + (θ ∧ 0). Thus, on the event in the statement of Proposition 3.2\n(which has probability 1 − o(1)), and for β large enough with respect to ε and θ, we\nhave                                                                               !1/β\n                                                    Z logθ T\n",
+          "sha256": "d9276b8ef21af24f4720fa38811bc365ac6652a043d75290d56649fd139bdffa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2508,
+          "line_start": 2458,
+          "title": "Off-axis transfer, mollifier replacement, and block trimming assemble the moment lower bound",
+          "unit_id": "openalex_w2908969280-u034",
+          "unit_type": "proof-assembly",
+          "why_material": "Chains the previously isolated reductions in their precise order and shows that prime powers and endpoint blocks can each be removed with negligible loss before invoking the multiscale lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is valuable as an auditable dependency chain rather than as a new estimate.",
+          "representation_dependency": "The sequence is clear; exact shrunken intervals and epsilon losses in displays should be verified against the PDF.",
+          "unit_id": "openalex_w2908969280-u034"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2456,
+            "line_start": 2349,
+            "title": "Partitioning pairs by distance isolates the independent bulk and suppresses correlated diagonals",
+            "unit_id": "openalex_w2908969280-u033",
+            "unit_type": "second-moment-method",
+            "why_material": "Computes the first moment, applies Paley-Zygmund, divides the pair integral by branching distance, and shows only the far-separated region contributes at leading order while every near-diagonal band is negligible."
+          },
+          {
+            "line_end": 2525,
+            "line_start": 2510,
+            "title": "A sufficiently high moment lower bound forces the predicted maximum",
+            "unit_id": "openalex_w2908969280-u035",
+            "unit_type": "moment-to-maximum-transfer",
+            "why_material": "Uses the frozen linear branch of the moment exponent and the elementary L-beta-to-L-infinity comparison to derive the maximum lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A critical-line moment is compared with an off-axis localized norm, zeta is inverted by a finite mollifier, the mollifier is converted to an exponential prime field, and that field is decomposed into near-Gaussian scale blocks before second-moment analysis.",
+            "limit": "Every arrow is probabilistic and parameter-dependent; this synthesis does not license exchanging the order of reductions or omitting their good events and error budgets.",
+            "parent_local_unit_ids": [
+              "openalex_w2908969280-u024",
+              "openalex_w2908969280-u025",
+              "openalex_w2908969280-u026",
+              "openalex_w2908969280-u027",
+              "openalex_w2908969280-u028",
+              "openalex_w2908969280-u029",
+              "openalex_w2908969280-u034"
+            ],
+            "title": "The lower-bound proof is a sequence of controlled representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Beta is chosen large relative to theta and epsilon so the interval-volume penalty becomes negligible.",
+      "line_end": 2525,
+      "line_start": 2510,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The norm comparison is readable in structure; exact exponent bookkeeping should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the frozen linear branch of the moment exponent and the elementary L-beta-to-L-infinity comparison to derive the maximum lower bound.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A sufficiently high moment lower bound forces the predicted maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u035.txt",
+      "unit_bytes": 896,
+      "unit_id": "openalex_w2908969280-u035",
+      "unit_sha256": "bf394965a3a6d116650856ef8e82c262374ad97b076310bb10bd44ff79453485",
+      "unit_type": "moment-to-maximum-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u035.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2502,
+          "line_end": 2509,
+          "text": "                     \u0010 Z 31 logθ T            K−3\n                                                    Pj (h) dh > (log T )fθ (β)−4ε − o(1).\n                                              X          \u0001                     \u0011\n(3.73)         ≥P                     exp β\n                        − 13 logθ T           j=1\n\nFinally, the probability in (3.73) tends to 1 as T → ∞ by Proposition 3.10.\n\n",
+          "sha256": "c6186ab9d884e122790421f1706bb86e6e71fee3de3462251e20a44f9b54ae46"
+        },
+        "after": {
+          "line_start": 2526,
+          "line_end": 2533,
+          "text": "\n                            APPENDIX A: USEFUL ESTIMATES\n     The prime number theorem yields estimates on the sum of primes with a good error.\n\n     Lemma A.1.      Let 1 ≤ P ≤ Q, then\n                                (log Q)    (log P )\n                                                m             m\n                                       \n",
+          "sha256": "c673e02ba92a9126532457c307ef42de744a96c7cb40787a8951fe6af2c9dea5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Proofs of the lower bounds",
+            "line_end": 2526,
+            "line_start": 2170,
+            "mathematical_role": "Decomposes primes into scales, turns high-point entropy into free energy, executes one- and two-point second-moment estimates, and assembles moment and maximum lower bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2525,
+          "line_start": 2510,
+          "title": "A sufficiently high moment lower bound forces the predicted maximum",
+          "unit_id": "openalex_w2908969280-u035",
+          "unit_type": "moment-to-maximum-transfer",
+          "why_material": "Uses the frozen linear branch of the moment exponent and the elementary L-beta-to-L-infinity comparison to derive the maximum lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Beta is chosen large relative to theta and epsilon so the interval-volume penalty becomes negligible.",
+          "representation_dependency": "The norm comparison is readable in structure; exact exponent bookkeeping should be scan-checked.",
+          "unit_id": "openalex_w2908969280-u035"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2508,
+            "line_start": 2458,
+            "title": "Off-axis transfer, mollifier replacement, and block trimming assemble the moment lower bound",
+            "unit_id": "openalex_w2908969280-u034",
+            "unit_type": "proof-assembly",
+            "why_material": "Chains the previously isolated reductions in their precise order and shows that prime powers and endpoint blocks can each be removed with negligible loss before invoking the multiscale lower bound."
+          },
+          {
+            "line_end": 2546,
+            "line_start": 2527,
+            "title": "Prime number theorem sums give both variance growth and logarithmic covariance",
+            "unit_id": "openalex_w2908969280-u036",
+            "unit_type": "analytic-estimate",
+            "why_material": "Records the prime-sum asymptotics that repeatedly convert Euler products into log powers and cosine sums into correlation lengths."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are reusable deterministic inputs for both moment and branching calculations.",
+      "line_end": 2546,
+      "line_start": 2527,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displays are moderately fragmented; verify exact error terms and parameter restrictions against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the prime-sum asymptotics that repeatedly convert Euler products into log powers and cosine sums into correlation lengths.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime number theorem sums give both variance growth and logarithmic covariance",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u036.txt",
+      "unit_bytes": 983,
+      "unit_id": "openalex_w2908969280-u036",
+      "unit_sha256": "50c2915062c625bd6a424fe4d84af620bbd4be43e65d01524edac75dbd0696e5",
+      "unit_type": "analytic-estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u036.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2519,
+          "line_end": 2526,
+          "text": "             |h|≤logθ T                    2 logθ T − logθ T\n(3.74)                                                 (1+ε+θ)\n                                       \n (log T )m(θ)− β\n\n                                               ≥ (log T )m(θ)−ε .\nThis ends the proof.\n\n",
+          "sha256": "7b145b869b908f800b46170b4b1c6ac1ff8bf05c66951853f6a24ef4b2bccd8a"
+        },
+        "after": {
+          "line_start": 2547,
+          "line_end": 2554,
+          "text": "\n  The next three results yield moment estimates for Dirichlet polynomials. The first\none is an elementary bound. The second ensures that moments of Dirichlet polynomials\nthat are not too high are approximately Gaussian.\n\n  Lemma A.2 (Lemma 3.3 in Arguin et al. (2019)).                       For any complex numbers a(n)\nand b(n), and for N ≤ T , we have\n                  \u0014\u0010 X                                            \u0011\u0015\n",
+          "sha256": "7557738a6c755b3cc2abc723846b5ff141a5dae63a2d3475a4c5b66fc50cdafa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: Useful estimates",
+            "line_end": 2639,
+            "line_start": 2527,
+            "mathematical_role": "Supplies prime-sum, Dirichlet mean-value, Gaussian-moment, covariance, tail, and crude high-moment estimates used throughout."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2546,
+          "line_start": 2527,
+          "title": "Prime number theorem sums give both variance growth and logarithmic covariance",
+          "unit_id": "openalex_w2908969280-u036",
+          "unit_type": "analytic-estimate",
+          "why_material": "Records the prime-sum asymptotics that repeatedly convert Euler products into log powers and cosine sums into correlation lengths."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are reusable deterministic inputs for both moment and branching calculations.",
+          "representation_dependency": "The displays are moderately fragmented; verify exact error terms and parameter restrictions against the scan.",
+          "unit_id": "openalex_w2908969280-u036"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2525,
+            "line_start": 2510,
+            "title": "A sufficiently high moment lower bound forces the predicted maximum",
+            "unit_id": "openalex_w2908969280-u035",
+            "unit_type": "moment-to-maximum-transfer",
+            "why_material": "Uses the frozen linear branch of the moment exponent and the elementary L-beta-to-L-infinity comparison to derive the maximum lower bound."
+          },
+          {
+            "line_end": 2567,
+            "line_start": 2548,
+            "title": "Short Dirichlet polynomials are orthogonal on average up to an explicit length error",
+            "unit_id": "openalex_w2908969280-u037",
+            "unit_type": "mean-value-estimate",
+            "why_material": "Supplies the diagonal-dominance principle used to evaluate polynomial L2 norms and truncation errors."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source states the bilinear form, allowing both norm and cross-term applications.",
+      "line_end": 2567,
+      "line_start": 2548,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact conjugations and the error coefficient are display-dependent and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies the diagonal-dominance principle used to evaluate polynomial L2 norms and truncation errors.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short Dirichlet polynomials are orthogonal on average up to an explicit length error",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u037.txt",
+      "unit_bytes": 1071,
+      "unit_id": "openalex_w2908969280-u037",
+      "unit_sha256": "162799ea793303b1a29729d0c10d4f4ab07871998f6813e2c20a1539ae8ef688",
+      "unit_type": "mean-value-estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u037.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2540,
+          "line_end": 2547,
+          "text": "                         X    cos(η log p)\n(A.2)                                      = log log Q − log log P + O(1).\n                       P <p≤Q\n                                   p\n\n  Proof. For (A.1), see Lemma A.1 in Arguin and Ouimet (2019) and Lemma 2.1 in\nArguin, Belius and Harper (2017). For (A.2), see p.20 in Harper (2013b).\n\n",
+          "sha256": "b3ce42352d3c01a2b0b088f9f2e454e1ba8e22d157d731cfe0caee733927b3e9"
+        },
+        "after": {
+          "line_start": 2568,
+          "line_end": 2575,
+          "text": "\n<!-- source-page: 33 -->\n\nMOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS                                               33\n\n   Lemma A.3 (Lemma 3.4 in Arguin et al. (2019)). Let x ≥ 2 be a real number, and\nsuppose that for primes p ≤ x, a(p) is a complex number with |a(p)| ≤ 1. Then, for any\nk ∈ N,\n",
+          "sha256": "6ec6e308ae4a3e416ed97f18e80b5de4e3c32c67d3f7d7c6d12ec58aa7cd8dfd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: Useful estimates",
+            "line_end": 2639,
+            "line_start": 2527,
+            "mathematical_role": "Supplies prime-sum, Dirichlet mean-value, Gaussian-moment, covariance, tail, and crude high-moment estimates used throughout."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2567,
+          "line_start": 2548,
+          "title": "Short Dirichlet polynomials are orthogonal on average up to an explicit length error",
+          "unit_id": "openalex_w2908969280-u037",
+          "unit_type": "mean-value-estimate",
+          "why_material": "Supplies the diagonal-dominance principle used to evaluate polynomial L2 norms and truncation errors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source states the bilinear form, allowing both norm and cross-term applications.",
+          "representation_dependency": "Exact conjugations and the error coefficient are display-dependent and require scan verification.",
+          "unit_id": "openalex_w2908969280-u037"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2546,
+            "line_start": 2527,
+            "title": "Prime number theorem sums give both variance growth and logarithmic covariance",
+            "unit_id": "openalex_w2908969280-u036",
+            "unit_type": "analytic-estimate",
+            "why_material": "Records the prime-sum asymptotics that repeatedly convert Euler products into log powers and cosine sums into correlation lengths."
+          },
+          {
+            "line_end": 2626,
+            "line_start": 2573,
+            "title": "Prime-sum moments are approximately Gaussian and yield covariance and tail estimates",
+            "unit_id": "openalex_w2908969280-u038",
+            "unit_type": "Gaussian-moment-principle",
+            "why_material": "Connects exact moment generating products to a Gaussian variance, permits removal of early primes, and derives the large-deviation scale used in the multiscale argument."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The approximation is valid only while the polynomial length raised to the moment order remains negligible relative to T.",
+      "line_end": 2626,
+      "line_start": 2573,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This is formula-heavy; check the Bessel-product identity, moment normalization, and admissible range in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects exact moment generating products to a Gaussian variance, permits removal of early primes, and derives the large-deviation scale used in the multiscale argument.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-sum moments are approximately Gaussian and yield covariance and tail estimates",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u038.txt",
+      "unit_bytes": 3034,
+      "unit_id": "openalex_w2908969280-u038",
+      "unit_sha256": "1d8d743300ed3ebf67f0be396a722213222104e4ad307a95d5ff3df994ed54ad",
+      "unit_type": "Gaussian-moment-principle",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u038.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2565,
+          "line_end": 2572,
+          "text": "                     =     a(n)b(n) + O\n                       n≤N\n                                           T    n≤N\n\n<!-- source-page: 33 -->\n\nMOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS                                               33\n\n",
+          "sha256": "2a0de25fe643d165474d808375dd46b9997c923e58e469e63264a098f8a755e9"
+        },
+        "after": {
+          "line_start": 2627,
+          "line_end": 2634,
+          "text": "\n  Lemma A.4 (Lemma 3 in Soundararajan (2009)). Let T be large, and let 2 ≤ x ≤ T .\nLet ` be a natural number such that x` \n T / log T . For any complex numbers a(p), we\nhave\n                                a(p) 2`               |a(p)|2 `\n                         \u0014 X            \u0015      \u0012X            \u0013\n(A.8)                  E                  \n",
+          "sha256": "78f8c9f09c40e0422bd4c16f818a87deab7514146aa90a6fccb935ae4ab7cae2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: Useful estimates",
+            "line_end": 2639,
+            "line_start": 2527,
+            "mathematical_role": "Supplies prime-sum, Dirichlet mean-value, Gaussian-moment, covariance, tail, and crude high-moment estimates used throughout."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2626,
+          "line_start": 2573,
+          "title": "Prime-sum moments are approximately Gaussian and yield covariance and tail estimates",
+          "unit_id": "openalex_w2908969280-u038",
+          "unit_type": "Gaussian-moment-principle",
+          "why_material": "Connects exact moment generating products to a Gaussian variance, permits removal of early primes, and derives the large-deviation scale used in the multiscale argument."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The approximation is valid only while the polynomial length raised to the moment order remains negligible relative to T.",
+          "representation_dependency": "This is formula-heavy; check the Bessel-product identity, moment normalization, and admissible range in the PDF.",
+          "unit_id": "openalex_w2908969280-u038"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2567,
+            "line_start": 2548,
+            "title": "Short Dirichlet polynomials are orthogonal on average up to an explicit length error",
+            "unit_id": "openalex_w2908969280-u037",
+            "unit_type": "mean-value-estimate",
+            "why_material": "Supplies the diagonal-dominance principle used to evaluate polynomial L2 norms and truncation errors."
+          },
+          {
+            "line_end": 2638,
+            "line_start": 2628,
+            "title": "A crude factorial moment estimate provides rapid exceptional-set control",
+            "unit_id": "openalex_w2908969280-u039",
+            "unit_type": "high-moment-bound",
+            "why_material": "Gives the flexible upper-moment inequality repeatedly used for maximum tails, prime-power errors, and discarded events when sharp Gaussian asymptotics are unnecessary."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Its usefulness depends on respecting the condition that the polynomial length to the chosen moment remains below the averaging scale.",
+      "line_end": 2638,
+      "line_start": 2628,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequality is compact but symbol extraction is imperfect; verify the exact admissibility condition and normalization against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives the flexible upper-moment inequality repeatedly used for maximum tails, prime-power errors, and discarded events when sharp Gaussian asymptotics are unnecessary.",
+      "source_id": "openalex_w2908969280",
+      "source_normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A crude factorial moment estimate provides rapid exceptional-set control",
+      "unit_artifact_relpath": "depth/units/openalex_w2908969280-u039.txt",
+      "unit_bytes": 519,
+      "unit_id": "openalex_w2908969280-u039",
+      "unit_sha256": "779dd84fe8f5639401d222dba5afe5c93d7aea55f933c2bc5fb708a6572288c5",
+      "unit_type": "high-moment-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2908969280-u039.txt",
+      "source": {
+        "source_id": "openalex_w2908969280",
+        "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "Frédéric Ouimet",
+          "Maksym Radziwiłł"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "mean-values",
+          "mollifier",
+          "moments",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2620,
+          "line_end": 2627,
+          "text": "                            p≤x\n\nby picking the moment k = bV 2 /2v 2 c with v 2 = 21                          −2σ\n                                                                  P\n                                                                      p≤x p         , for V not too large.\n   Finally the third estimate is a cruder version of the Gaussian moment estimates that\nyields quick upper bounds on moments.\n\n",
+          "sha256": "ac7fe48787ad1622714776e088ed20f23e202619863feb9e036064ed135b405c"
+        },
+        "after": {
+          "line_start": 2639,
+          "line_end": 2646,
+          "text": "\n                                            REFERENCES\nArguin, L. P., Belius, D. and Bourgade, P. (2017). Maximum of the characteristic polynomial\n  of random unitary matrices. Comm. Math. Phys. 349 703–751. MR3594368\nArguin, L. P., Belius, D. and Harper, A. J. (2017). Maxima of a randomized Riemann zeta\n  function, and branching random walks. Ann. Appl. Probab. 27 178–215. MR3619786\nArguin, L. P., Bourgade, P. and Radziwill, M. (2020). The Fyodorov-Hiary-Keating conjecture\n  I. Preprint 1–49. arXiv:2007.00988.\n",
+          "sha256": "f9d2210b0d0fd60e7cf6d9cdef2a213f1fb4be1404abf44ac9b46a324d4402ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b9a46c438ec4688c19030fa2c0078a1b81a0866a2205bbe8e79f9dc4413d3772",
+        "dossier_sha256": "0ca2957732c2a4b3da56eb29a1f15997f457e6dfa0d448eaec1cff26aa6d6ac4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: Useful estimates",
+            "line_end": 2639,
+            "line_start": 2527,
+            "mathematical_role": "Supplies prime-sum, Dirichlet mean-value, Gaussian-moment, covariance, tail, and crude high-moment estimates used throughout."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2638,
+          "line_start": 2628,
+          "title": "A crude factorial moment estimate provides rapid exceptional-set control",
+          "unit_id": "openalex_w2908969280-u039",
+          "unit_type": "high-moment-bound",
+          "why_material": "Gives the flexible upper-moment inequality repeatedly used for maximum tails, prime-power errors, and discarded events when sharp Gaussian asymptotics are unnecessary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Its usefulness depends on respecting the condition that the polynomial length to the chosen moment remains below the averaging scale.",
+          "representation_dependency": "The inequality is compact but symbol extraction is imperfect; verify the exact admissibility condition and normalization against the scan.",
+          "unit_id": "openalex_w2908969280-u039"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2626,
+            "line_start": 2573,
+            "title": "Prime-sum moments are approximately Gaussian and yield covariance and tail estimates",
+            "unit_id": "openalex_w2908969280-u038",
+            "unit_type": "Gaussian-moment-principle",
+            "why_material": "Connects exact moment generating products to a Gaussian variance, permits removal of early primes, and derives the large-deviation scale used in the multiscale argument."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "21208ccb2b21efa09355c3d39dfa9a95eccdac2cb7c3e97f380effbed9abfce7"
+}

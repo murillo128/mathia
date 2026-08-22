@@ -1,0 +1,2239 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2950846448_f5d569cb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2950846448",
+  "unit_count": 16,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The abstract and opening paragraphs jointly establish the transfer being tested; neither alone gives the full contrast.",
+      "line_end": 30,
+      "line_start": 12,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: recoverable from prose alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extends the symmetry-family viewpoint from zero statistics to L-function mean values and states the paper's organizing causal hypothesis.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetry type as a common governor of zeros and mean values",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u06.txt",
+      "unit_bytes": 2019,
+      "unit_id": "full_openalex_w2950846448_u06",
+      "unit_sha256": "54f238f834f1a20a25741edb7faad6dd80b86828951811b66ac630fbaf4ebf29",
+      "unit_type": "governing hypothesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u06.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4,
+          "line_end": 11,
+          "text": "\n\n\n\narXiv:math/9912107v1 [math.NT] 13 Dec 1999\n                                                                                           J.B. Conrey\n                                                                                           D.W. Farmer\n\n",
+          "sha256": "e1fe5c97320b9242c7d65087dfb5ae3e71f42cf2cbe09962ad2c8bcbd84cc888"
+        },
+        "after": {
+          "line_start": 31,
+          "line_end": 38,
+          "text": "                                                The most well–understood mean values are the 2kth moments of the Riemann ζ–\n                                             function. We will describe that case in detail, and then compare this to the examples\n                                             provided by the families of Katz and Sarnak.\n                                                It is a folklore conjecture that for every k ≥ 0 there is a constant ck such that\n                                                                                       ZT\n                                                                                   1                       2k              2\n                                                                        Ik (T ) :=           ζ( 21 + it)        dt ∼ ck logk T\n                                                                                   T\n",
+          "sha256": "3ced9fbee0df588b4ffe7cde2e125d14c4d206867decb840447eda9311095493"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and abstract",
+            "line_end": 22,
+            "line_start": 1,
+            "mathematical_role": "States the central hypothesis that symmetry type governs both zero statistics and mean values, and previews the Barnes double-gamma and self-similarity connections."
+          },
+          {
+            "label": "1. Introduction",
+            "line_end": 298,
+            "line_start": 23,
+            "mathematical_role": "Factors moment conjectures into family arithmetic and symmetry-dependent components, defines the roles of g_k and B(k), and compares orthogonal, symplectic, and unitary families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 30,
+          "line_start": 12,
+          "title": "Symmetry type as a common governor of zeros and mean values",
+          "unit_id": "full_openalex_w2950846448_u06",
+          "unit_type": "governing hypothesis",
+          "why_material": "Extends the symmetry-family viewpoint from zero statistics to L-function mean values and states the paper's organizing causal hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The abstract and opening paragraphs jointly establish the transfer being tested; neither alone gives the full contrast.",
+          "representation_dependency": "Low: recoverable from prose alone.",
+          "unit_id": "full_openalex_w2950846448_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 31,
+            "title": "The universal factor g_k measures the gap beyond a length-T Dirichlet polynomial",
+            "unit_id": "full_openalex_w2950846448_u07",
+            "unit_type": "moment decomposition and operational interpretation",
+            "why_material": "Separates the arithmetic Euler-product factor a_k from g_k and gives g_k an operational meaning as how many length-T polynomial approximations are needed to capture the moment."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u06",
+          "spontaneous_reading": "Symmetry type is proposed as a single organizing variable that transfers from zero statistics to value statistics: it is meant to compress the behavior of mean values and mollified mean squares across otherwise different L-function families."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u06",
+          "source_grounded_mathematics": "The source recalls evidence that family symmetry governs zero distributions and then reports evidence for the parallel claim that it governs L-function mean values and mollified mean squares, with random-matrix constants, the Barnes–Vignéras double Gamma function, and self-similar functions announced as later connections.",
+          "conceptual_reading": "The move is a cross-observable transfer: classify a family once by symmetry, then ask whether the same classification predicts both spectral data and value moments.",
+          "representation_or_bridge": "The bridge is the map from an L-function family to its Katz–Sarnak symmetry type, and from that type to both zero statistics and moment/mollifier statistics.",
+          "boundary_or_failure": "This span states an evidence-backed program, not a theorem that symmetry alone determines these statistics; arithmetic factors and the later mechanisms are not yet supplied here.",
+          "uncertainty": "Low textual uncertainty because the claim is explicit prose; its epistemic status remains conjectural/evidentiary."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the moment normalization, the Montgomery-Vaughan length restriction, and the comparison polynomial; these are all needed for the interpretation.",
+      "line_end": 123,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: key formulas are text-layer readable, while some typography should be checked against the scan before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the arithmetic Euler-product factor a_k from g_k and gives g_k an operational meaning as how many length-T polynomial approximations are needed to capture the moment.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The universal factor g_k measures the gap beyond a length-T Dirichlet polynomial",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u07.txt",
+      "unit_bytes": 6196,
+      "unit_id": "full_openalex_w2950846448_u07",
+      "unit_sha256": "ad4a826f184df840b645fef3f32d4a3fe4b3860f0ea118d41293127d47ef1798",
+      "unit_type": "moment decomposition and operational interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u07.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "                                                                                       1. Introduction\n                                                Katz and Sarnak [KS] have introduced the idea of a family of L–functions with an\n                                             associated symmetry type. The symmetry type has been shown to govern the distribution\n                                             and spacing of zeros in the function field case [KS2], and there is strong numerical evidence\n                                             [Ru] that it governs the behavior of zeros in more general cases. The paper [ILS] also shows\n                                             clear evidence that the symmetry type governs the distribution of low–lying zeros of a wide\n                                             variety of L–functions. In this paper we give evidence that the symmetry type of a family\n                                             of L–functions governs the behavior of mean values of the L–functions.\n",
+          "sha256": "3483cdab1b71f439c1d758508428ccecdd375b73cbf533fbd5adff10044c4046"
+        },
+        "after": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "\n<!-- source-page: 3 -->\n\nMEAN VALUES AND SYMMETRY                                       3\n\n   The classical results of Hardy and Ingham can be phrased as g1 = 1 and g2 = 2.\nRecently, Conrey and Ghosh [CG2] made the conjecture that g3 = 42. Still more recently,\nConrey and Gonek [CGo] conjectured that g4 = 24024. The conjectures for g3 and g4\n",
+          "sha256": "9b6a0cc9005faeb6342a2f6c990e1c074c5a078b4aff8f8fe301be35b691dbf0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 298,
+            "line_start": 23,
+            "mathematical_role": "Factors moment conjectures into family arithmetic and symmetry-dependent components, defines the roles of g_k and B(k), and compares orthogonal, symplectic, and unitary families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 123,
+          "line_start": 31,
+          "title": "The universal factor g_k measures the gap beyond a length-T Dirichlet polynomial",
+          "unit_id": "full_openalex_w2950846448_u07",
+          "unit_type": "moment decomposition and operational interpretation",
+          "why_material": "Separates the arithmetic Euler-product factor a_k from g_k and gives g_k an operational meaning as how many length-T polynomial approximations are needed to capture the moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the moment normalization, the Montgomery-Vaughan length restriction, and the comparison polynomial; these are all needed for the interpretation.",
+          "representation_dependency": "Moderate: key formulas are text-layer readable, while some typography should be checked against the scan before reuse.",
+          "unit_id": "full_openalex_w2950846448_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 30,
+            "line_start": 12,
+            "title": "Symmetry type as a common governor of zeros and mean values",
+            "unit_id": "full_openalex_w2950846448_u06",
+            "unit_type": "governing hypothesis",
+            "why_material": "Extends the symmetry-family viewpoint from zero statistics to L-function mean values and states the paper's organizing causal hypothesis."
+          },
+          {
+            "line_end": 155,
+            "line_start": 129,
+            "title": "A parameter dictionary for family mean-value conjectures",
+            "unit_id": "full_openalex_w2950846448_u08",
+            "unit_type": "family moment template",
+            "why_material": "Distinguishes symmetry-controlled g_k and B(k), family-specific arithmetic a_k, and functional-equation scaling A in a reusable family template."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After separating family arithmetic and conductor scaling, g_k simultaneously measures failure of a single length-T Dirichlet polynomial to capture zeta moments and arises as a symmetry-specific characteristic-polynomial limit.",
+            "limit": "This is a conceptual identification supported by matching conjectures; it is not an equality derived between the two models in the source.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u07",
+              "full_openalex_w2950846448_u08",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u10"
+            ],
+            "title": "The universal moment constant bridges Dirichlet polynomials and random matrices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 135,
+              "line_start": 129,
+              "reason": "Small-k examples and transition to the general family template."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u07",
+          "spontaneous_reading": "The constant g_k isolates the part of a zeta moment that a single length-T Dirichlet polynomial misses, after the arithmetic Euler-product factor and the standard Gamma normalization have been removed."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u07",
+          "source_grounded_mathematics": "The conjectural moment I_k(T) is written as g_k a_k/Gamma(1+k^2) times log(T)^{k^2}. Montgomery–Vaughan mean values naturally restrict asymptotic Dirichlet-polynomial arguments to length at most T, while the length-T polynomial with coefficients d_k(n) has mean square asymptotic a_k/Gamma(1+k^2) times log(T)^{k^2}; the ratio is interpreted through g_k.",
+          "conceptual_reading": "The normalization separates local arithmetic from a residual global correlation factor. This makes g_k a diagnostic for how much analytic structure lies beyond one tractable polynomial approximation.",
+          "representation_or_bridge": "The bridge runs from zeta(s)^k to its Dirichlet coefficients d_k(n), then from the truncated polynomial to its computable mean square, and finally compares that quantity with the full zeta moment.",
+          "boundary_or_failure": "The phrase ‘how many polynomials’ is operational intuition, not a literal proved decomposition into g_k polynomials. General moment asymptotics and the values of g_k beyond small cases are conjectural.",
+          "uncertainty": "The central comparison is clear, although exact displayed typography is text-layer sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding small-k examples motivate the abstraction; the span ends before specializing to a symmetry class.",
+      "line_end": 155,
+      "line_start": 129,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the template formula has extraction noise, but every parameter's role is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes symmetry-controlled g_k and B(k), family-specific arithmetic a_k, and functional-equation scaling A in a reusable family template.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A parameter dictionary for family mean-value conjectures",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u08.txt",
+      "unit_bytes": 1782,
+      "unit_id": "full_openalex_w2950846448_u08",
+      "unit_sha256": "1fb49408e49e3c498628f91317fe9725075a6592bcbda2692de7ec8c6bc672dd",
+      "unit_type": "family moment template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u08.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 121,
+          "line_end": 128,
+          "text": "\nThus, gk is a measure of “how many polynomials of length T are needed to capture the\nmean square of ζ(s)k .”\n\n<!-- source-page: 3 -->\n\nMEAN VALUES AND SYMMETRY                                       3\n\n",
+          "sha256": "73681355953fe32d2a5a070653d0bc9010a389ca72aa96d496e4491086d8c0c7"
+        },
+        "after": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "   One of the symmetry types described by Katz and Sarnak is denoted O, for “orthogo-\nnal.” Examples of families with this symmetry type conjecturally include\n   a) the L–functions Lf (s) associated with cusp forms f ∈ Sm (Γ0 (1)) of weight m for the\n       full modular group,\n   b) the L–functions Lf (s) with f ∈ S2 (Γ0 (N )) of weight 2 for the Hecke congruence\n       group Γ0 (N ),\n   c) the twisted L–functions L(s, sym2ℓ+1 (f ) ⊗ χd ) where f is a self–dual cuspidal auto-\n       morphic form on GL2 and χd is a quadratic Dirichlet character mod |d|, provided\n",
+          "sha256": "e2a9efb87eeb75f00fe1fcfbc0ff93b527fc2ca6461c0ceb9fcdd9da364ddbeb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 298,
+            "line_start": 23,
+            "mathematical_role": "Factors moment conjectures into family arithmetic and symmetry-dependent components, defines the roles of g_k and B(k), and compares orthogonal, symplectic, and unitary families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 155,
+          "line_start": 129,
+          "title": "A parameter dictionary for family mean-value conjectures",
+          "unit_id": "full_openalex_w2950846448_u08",
+          "unit_type": "family moment template",
+          "why_material": "Distinguishes symmetry-controlled g_k and B(k), family-specific arithmetic a_k, and functional-equation scaling A in a reusable family template."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preceding small-k examples motivate the abstraction; the span ends before specializing to a symmetry class.",
+          "representation_dependency": "Moderate: the template formula has extraction noise, but every parameter's role is explicit in prose.",
+          "unit_id": "full_openalex_w2950846448_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 31,
+            "title": "The universal factor g_k measures the gap beyond a length-T Dirichlet polynomial",
+            "unit_id": "full_openalex_w2950846448_u07",
+            "unit_type": "moment decomposition and operational interpretation",
+            "why_material": "Separates the arithmetic Euler-product factor a_k from g_k and gives g_k an operational meaning as how many length-T polynomial approximations are needed to capture the moment."
+          },
+          {
+            "line_end": 216,
+            "line_start": 136,
+            "title": "Orthogonal symmetry produces the k(k-1)/2 moment exponent",
+            "unit_id": "full_openalex_w2950846448_u02",
+            "unit_type": "orthogonal-family conjecture",
+            "why_material": "Connects a concrete class of self-dual L-function families to the orthogonal moment exponent, central-value parity behavior, and functional-equation scaling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After separating family arithmetic and conductor scaling, g_k simultaneously measures failure of a single length-T Dirichlet polynomial to capture zeta moments and arises as a symmetry-specific characteristic-polynomial limit.",
+            "limit": "This is a conceptual identification supported by matching conjectures; it is not an equality derived between the two models in the source.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u07",
+              "full_openalex_w2950846448_u08",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u10"
+            ],
+            "title": "The universal moment constant bridges Dirichlet polynomials and random matrices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 135,
+              "line_start": 129,
+              "reason": "Small-k examples and transition to the general family template."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u08",
+          "spontaneous_reading": "The family moment template functions as a parameter dictionary: symmetry supplies the observable V, exponent B(k), and universal factor g_k; the individual family supplies a_k; conductor and functional equation determine the scale A."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u08",
+          "source_grounded_mathematics": "For a conductor-ordered family, the averaged critical-value statistic has the template g_k a_k/Gamma(1+B(k)) times (log Q^A)^{B(k)}. The source assigns V(z), B(k), and g_k to symmetry type, a_k to family arithmetic, and A to symmetry together with the degree of the functional equation in the averaging parameter.",
+          "conceptual_reading": "This is a modular decomposition of a moment conjecture into universal, arithmetic, and scaling components, allowing families to be compared without conflating their Euler products with their symmetry laws.",
+          "representation_or_bridge": "Conductor ordering turns a collection of L-functions into an averaging family, while functional-equation normalization at s=1/2 provides the common critical-value interface.",
+          "boundary_or_failure": "The template is conjectural and does not establish that the listed parameters exhaust every family effect. The integral assertions for symmetry parameters are stated rather than proved in this span.",
+          "uncertainty": "Parameter roles are explicit in prose, but the extracted template formula has moderate layout risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also separates the family arithmetic factor from the still-mysterious g_k and introduces the random-matrix route.",
+      "line_end": 290,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: prose fixes the comparison despite imperfect product-formula extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completes the symmetry trichotomy with |L|^{2k}, B(k)=k^2, doubled conductor scaling, and the interpretation of zeta shifts as a unitary family.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unitary moments complete the O-Sp-U parameter comparison",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u09.txt",
+      "unit_bytes": 2179,
+      "unit_id": "full_openalex_w2950846448_u09",
+      "unit_sha256": "e7abf07596597b0da96826aa5844d74a48977dc95672939eb66c429edef6ed49",
+      "unit_type": "symmetry comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u09.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "\nMEAN VALUES AND SYMMETRY                                              5\n\nwhere m∗ is the cardinality of Sm . The cases g) and h) look just like e) above.\n   In the notation of (1.3), families with symmetry type Sp have V (z) = z and B(k) =\n1\n2 k(k + 1). The parameter A for the Sp families is determined in exactly the same way as\nfor the O families.\n",
+          "sha256": "9cb354b886adea0f6eaf0064e2a0cd2c8124d9620e9395ce46ef514c754d19eb"
+        },
+        "after": {
+          "line_start": 291,
+          "line_end": 298,
+          "text": "   In this paper we study the functions gk in detail. We also report on calculations of the\nmean square of the L–function times a “mollifier” for each of the symmetry types described\nabove. The results on gk are summarized in the next section, and the results on mollifiers\nare presented in the following section. The remainder of the paper is devoted to results\nrelated to the various properties of the gk functions.\n   We thank J. Keating, Z. Rudnick, P. Sarnak, A. Selberg, and N. Snaith for helpful\nconversations.\n\n",
+          "sha256": "a2341107d52e8f2aca907a39b2ca6b8b992c6fb94edf9e3607133a85f19d881e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 298,
+            "line_start": 23,
+            "mathematical_role": "Factors moment conjectures into family arithmetic and symmetry-dependent components, defines the roles of g_k and B(k), and compares orthogonal, symplectic, and unitary families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 290,
+          "line_start": 257,
+          "title": "Unitary moments complete the O-Sp-U parameter comparison",
+          "unit_id": "full_openalex_w2950846448_u09",
+          "unit_type": "symmetry comparison",
+          "why_material": "Completes the symmetry trichotomy with |L|^{2k}, B(k)=k^2, doubled conductor scaling, and the interpretation of zeta shifts as a unitary family."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also separates the family arithmetic factor from the still-mysterious g_k and introduces the random-matrix route.",
+          "representation_dependency": "Moderate: prose fixes the comparison despite imperfect product-formula extraction.",
+          "unit_id": "full_openalex_w2950846448_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 256,
+            "line_start": 218,
+            "title": "Symplectic symmetry changes the exponent to k(k+1)/2",
+            "unit_id": "full_openalex_w2950846448_u01",
+            "unit_type": "symmetry-family conjecture",
+            "why_material": "Shows how a different symmetry class changes the universal moment exponent while retaining the same functional-equation rule for A."
+          },
+          {
+            "line_end": 350,
+            "line_start": 308,
+            "title": "Characteristic-polynomial limits predict the universal constants",
+            "unit_id": "full_openalex_w2950846448_u10",
+            "unit_type": "random-matrix transfer",
+            "why_material": "Maps each symmetry type to a large-rank Gamma-product limit and explains why the Gamma(1+B(lambda)) normalization is retained to preserve arithmetic meaning and integral special values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The O-Sp-U classification is reflected not only in moment exponents but also in distinct short-mollifier functionals, with differentiation explicitly bridging the orthogonal and symplectic cases.",
+            "limit": "The source gives conjectural family moments and selected mollified formulas, not a general theorem that symmetry alone determines every statistic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u02",
+              "full_openalex_w2950846448_u01",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u12",
+              "full_openalex_w2950846448_u13",
+              "full_openalex_w2950846448_u14"
+            ],
+            "title": "Symmetry predicts both moment growth and mollifier response"
+          },
+          {
+            "claim": "After separating family arithmetic and conductor scaling, g_k simultaneously measures failure of a single length-T Dirichlet polynomial to capture zeta moments and arises as a symmetry-specific characteristic-polynomial limit.",
+            "limit": "This is a conceptual identification supported by matching conjectures; it is not an equality derived between the two models in the source.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u07",
+              "full_openalex_w2950846448_u08",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u10"
+            ],
+            "title": "The universal moment constant bridges Dirichlet polynomials and random matrices"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 307,
+              "line_start": 291,
+              "reason": "Paper roadmap, acknowledgments, section heading, and transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u09",
+          "spontaneous_reading": "The unitary case completes the symmetry comparison by making the observable an absolute square and the exponent k^2, while reinterpreting vertical shifts of zeta as a one-object unitary family."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u09",
+          "source_grounded_mathematics": "For unitary families the source gives V(z)=|z|^2 and B(k)=k^2, with conductor scaling A twice the relevant functional-equation degree. Dirichlet characters supply the example family, and {zeta(1/2+it)} is presented as an analogous unitary family. A symplectic arithmetic Euler product illustrates that a_k remains family-specific, whereas g_k is the parameter targeted by random-matrix conjectures.",
+          "conceptual_reading": "The O–Sp–U comparison is organized by changing a small symmetry-controlled parameter set while preserving a common family-moment template.",
+          "representation_or_bridge": "The bridge identifies averaging over t for zeta with averaging critical values over a unitary family, so random-matrix symmetry can address both settings.",
+          "boundary_or_failure": "The mean values are explicitly conjectural except in selected small-k cases, and the displayed Euler product is extraction-fragile. The analogy does not make zeta shifts a literal arithmetic family with varying conductor.",
+          "uncertainty": "High confidence in the prose-level parameter assignments; lower confidence in exact Euler-product typography."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The GUE motivation and three parallel limit formulas form one comparison unit.",
+      "line_end": 350,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact product factors depend on displayed formulas and require scan verification, but the transfer and normalization rationale are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps each symmetry type to a large-rank Gamma-product limit and explains why the Gamma(1+B(lambda)) normalization is retained to preserve arithmetic meaning and integral special values.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Characteristic-polynomial limits predict the universal constants",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u10.txt",
+      "unit_bytes": 3176,
+      "unit_id": "full_openalex_w2950846448_u10",
+      "unit_sha256": "99bcdfefa992a88a105108a67e6b2576486bd6c7bd5f2008b5e7dec8bac9bd4b",
+      "unit_type": "random-matrix transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u10.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "  The constants gk occurring in the conjectured mean values of these L–functions is the\nmost mysterious aspect of these mean values. Conjectures for gk have recently been given,\nwhich we now describe.\n\n<!-- source-page: 6 -->\n\n6                                 J.B. CONREY D.W. FARMER\n\n",
+          "sha256": "2aecc6748f2e9d69eeefa3ae4b89e28086f4d174fe0cbaef6242c79a4cefc85a"
+        },
+        "after": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "   In this paper, we develop the properties of the Keating–Snaith constants gλ . We show\nthat gλ /Γ(1+B(λ)) is a nonvanishing meromorphic function of order 2. We give a complete\ndescription of its pole locations, and we express gλ /Γ(1 + B(λ)) in terms of the Barnes–\nVignéras double Γ–function [V][Sa][UN].\n   Moreover, gk is an integer for positive integer k, and we establish asymptotic formulas for\ngk as k → ∞. We remark that that there are interesting patterns in the prime factorization\nof gk . The exponents of small primes dividing gk are quite irregular, and in fact p ∤ gk,U\n                  √\n",
+          "sha256": "216ac4a61bad4ee553394ef03a1dfc80e6f5025335f6042ae25f72be479aa60d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Statement of Results",
+            "line_end": 406,
+            "line_start": 299,
+            "mathematical_role": "Transfers random-matrix characteristic-polynomial limits to formulas for g_lambda and previews their analytic, integral, p-adic, and self-similar consequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 350,
+          "line_start": 308,
+          "title": "Characteristic-polynomial limits predict the universal constants",
+          "unit_id": "full_openalex_w2950846448_u10",
+          "unit_type": "random-matrix transfer",
+          "why_material": "Maps each symmetry type to a large-rank Gamma-product limit and explains why the Gamma(1+B(lambda)) normalization is retained to preserve arithmetic meaning and integral special values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The GUE motivation and three parallel limit formulas form one comparison unit.",
+          "representation_dependency": "High: exact product factors depend on displayed formulas and require scan verification, but the transfer and normalization rationale are explicit.",
+          "unit_id": "full_openalex_w2950846448_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 290,
+            "line_start": 257,
+            "title": "Unitary moments complete the O-Sp-U parameter comparison",
+            "unit_id": "full_openalex_w2950846448_u09",
+            "unit_type": "symmetry comparison",
+            "why_material": "Completes the symmetry trichotomy with |L|^{2k}, B(k)=k^2, doubled conductor scaling, and the interpretation of zeta shifts as a unitary family."
+          },
+          {
+            "line_end": 396,
+            "line_start": 385,
+            "title": "Analytic continuation at lambda=1/2 predicts a constrained zeta moment",
+            "unit_id": "full_openalex_w2950846448_u11",
+            "unit_type": "fractional-moment prediction",
+            "why_material": "Uses a nonintegral random-matrix constant to make a numerical first-moment prediction and compares it with an RH-conditional bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After separating family arithmetic and conductor scaling, g_k simultaneously measures failure of a single length-T Dirichlet polynomial to capture zeta moments and arises as a symmetry-specific characteristic-polynomial limit.",
+            "limit": "This is a conceptual identification supported by matching conjectures; it is not an equality derived between the two models in the source.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u07",
+              "full_openalex_w2950846448_u08",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u10"
+            ],
+            "title": "The universal moment constant bridges Dirichlet polynomials and random matrices"
+          },
+          {
+            "claim": "Gamma-product limits analytically continue through the Barnes double Gamma function, collapse at integer parameters to factorial products, and then expose integrality, prime support, and large-k behavior.",
+            "limit": "Exact displayed constants and some floor formulas are text-layer fragile and require image verification before formal reuse.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u10",
+              "full_openalex_w2950846448_u03",
+              "full_openalex_w2950846448_u15",
+              "full_openalex_w2950846448_u04",
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u20"
+            ],
+            "title": "One random-matrix product has analytic, combinatorial, and p-adic faces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 307,
+              "line_start": 291,
+              "reason": "Paper roadmap, acknowledgments, section heading, and transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 384,
+              "line_start": 351,
+              "reason": "Preview of analytic, integral, and self-similar results later developed in full, including an illustrative factorization."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u10",
+          "spontaneous_reading": "Large-rank characteristic-polynomial moments provide three parallel Gamma-product limits for the universal constants, with the symmetry class selecting the product and moment exponent."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u10",
+          "source_grounded_mathematics": "Motivated by the GUE model for zeta zeros, the source records Keating–Snaith limits for g_lambda in the unitary, orthogonal, and symplectic cases. Each is a large-N Gamma-product limit multiplied by Gamma(1+B_X(lambda)); the source stresses agreement with known or conjectured integer values and retains this normalization to preserve arithmetic meaning and positive-integer integrality.",
+          "conceptual_reading": "Random matrices act as a surrogate representation in which a difficult L-function constant becomes a computable spectral limit. Parallel products make symmetry dependence explicit rather than hiding it inside one undifferentiated constant.",
+          "representation_or_bridge": "The bridge is from L-function symmetry type to a matching random-matrix ensemble and its characteristic-polynomial moment, then from the finite-rank Gamma product to g_lambda.",
+          "boundary_or_failure": "These are conjectural transfers, not derivations of L-function moments from random matrices. Agreement at known values is calibration, and exact Gamma factors require scan verification.",
+          "uncertainty": "The transfer and normalization rationale are explicit; the precise product typography has high extraction risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact calibration example linking analytic continuation to an independently constrained quantity.",
+      "line_end": 396,
+      "line_start": 385,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the closed formula is visually fragile, though the numerical value and inequality are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a nonintegral random-matrix constant to make a numerical first-moment prediction and compares it with an RH-conditional bound.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic continuation at lambda=1/2 predicts a constrained zeta moment",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u11.txt",
+      "unit_bytes": 719,
+      "unit_id": "full_openalex_w2950846448_u11",
+      "unit_sha256": "b1e03209e4a1b4caa81d28e5cf1fe3ae6bea20dbf8261086ca118310339f47c1",
+      "unit_type": "fractional-moment prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u11.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 377,
+          "line_end": 384,
+          "text": "           0.6\n           0.4\n           0.2\n                                                                                       x\n                           0.2           0.4          0.6           0.8            1\n\n   Note that these functions satisfy cp (x) = cp (px). We will establish other self–similarity\nproperties of cp (x), and also give an elegant formula for cp (x).\n",
+          "sha256": "5d068210842056b2b2a874dc7113089fe466ed55b247e58a949eb552af8c4eda"
+        },
+        "after": {
+          "line_start": 397,
+          "line_end": 404,
+          "text": "   The paper is organized as follows. In the next section we discuss the mean square\nof L–functions times a mollifier. The remainder of the paper is devoted to establishing\nproperties of gλ as defined in (2.1)–(2.3). We will write gλ and B(λ) to mean gλ,X and\nBX (λ) for X any one of U, O, or Sp. Results which are particular to one of the gλ,X will\nbe specifically stated as such. In section 4 we determine analytic properties of gλ as a\nfunction of the complex number λ. This permits us to express gλ in terms of the double\nΓ–function. In section 5 we prove integrality properties of gk for k a positive integer. In\nsection 6 we discuss the self–similar functions cp (x). In section 7 we give an asymptotic\n",
+          "sha256": "6328b80eac331474f08e78508b242a23b79141c95f5f0e4dc3ccad35847c1228"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Statement of Results",
+            "line_end": 406,
+            "line_start": 299,
+            "mathematical_role": "Transfers random-matrix characteristic-polynomial limits to formulas for g_lambda and previews their analytic, integral, p-adic, and self-similar consequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 396,
+          "line_start": 385,
+          "title": "Analytic continuation at lambda=1/2 predicts a constrained zeta moment",
+          "unit_id": "full_openalex_w2950846448_u11",
+          "unit_type": "fractional-moment prediction",
+          "why_material": "Uses a nonintegral random-matrix constant to make a numerical first-moment prediction and compares it with an RH-conditional bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact calibration example linking analytic continuation to an independently constrained quantity.",
+          "representation_dependency": "High: the closed formula is visually fragile, though the numerical value and inequality are recoverable.",
+          "unit_id": "full_openalex_w2950846448_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 350,
+            "line_start": 308,
+            "title": "Characteristic-polynomial limits predict the universal constants",
+            "unit_id": "full_openalex_w2950846448_u10",
+            "unit_type": "random-matrix transfer",
+            "why_material": "Maps each symmetry type to a large-rank Gamma-product limit and explains why the Gamma(1+B(lambda)) normalization is retained to preserve arithmetic meaning and integral special values."
+          },
+          {
+            "line_end": 446,
+            "line_start": 407,
+            "title": "A common reciprocal-polynomial mollifier and the unitary response",
+            "unit_id": "full_openalex_w2950846448_u12",
+            "unit_type": "mollifier construction",
+            "why_material": "Defines a family-independent mollifier from coefficients of L(s)^{-1}, then gives the unitary quadratic functional that exposes how mollifier length enters."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 384,
+              "line_start": 351,
+              "reason": "Preview of analytic, integral, and self-similar results later developed in full, including an illustrative factorization."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 406,
+              "line_start": 397,
+              "reason": "Detailed roadmap to subsequent proofs."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u11",
+          "spontaneous_reading": "Analytic continuation to lambda=1/2 turns the random-matrix constant into a fractional-moment prediction that can be checked against an independently derived RH-conditional interval."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u11",
+          "source_grounded_mathematics": "The unitary constant at lambda=1/2 is evaluated by a closed expression and numerically as approximately 1.0362329154. The source compares it with the conditional constraint 1 <= g_{1/2,U} <= 16/15, assuming RH and assuming the constant exists.",
+          "conceptual_reading": "A nonintegral parameter supplies an out-of-sample calibration point: analytic continuation yields a quantitative prediction, while a separate theorem constrains its admissible range.",
+          "representation_or_bridge": "The bridge connects the analytically continued characteristic-polynomial constant to the first absolute moment of zeta.",
+          "boundary_or_failure": "Falling inside the conditional interval does not validate the conjectured value, and the bound itself assumes RH and existence. No moment asymptotic is proved here.",
+          "uncertainty": "The numerical value and inequality are readable; the exact closed formula is visually fragile."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the boundary conditions on the polynomial and the simple test P=x, Q=1.",
+      "line_end": 446,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the structural construction is clear, but the exact double-integral functional requires formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a family-independent mollifier from coefficients of L(s)^{-1}, then gives the unitary quadratic functional that exposes how mollifier length enters.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A common reciprocal-polynomial mollifier and the unitary response",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u12.txt",
+      "unit_bytes": 2044,
+      "unit_id": "full_openalex_w2950846448_u12",
+      "unit_sha256": "ee48023da69174886fe750dcbff78789397d2766b72880399801a46b626b14c3",
+      "unit_type": "mollifier construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u12.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "properties of gλ as defined in (2.1)–(2.3). We will write gλ and B(λ) to mean gλ,X and\nBX (λ) for X any one of U, O, or Sp. Results which are particular to one of the gλ,X will\nbe specifically stated as such. In section 4 we determine analytic properties of gλ as a\nfunction of the complex number λ. This permits us to express gλ in terms of the double\nΓ–function. In section 5 we prove integrality properties of gk for k a positive integer. In\nsection 6 we discuss the self–similar functions cp (x). In section 7 we give an asymptotic\nformula for gk as k → ∞.\n\n",
+          "sha256": "801a4df7013f02b5ec8b18597ff1062c1951ff3041a295401285bc3830973662"
+        },
+        "after": {
+          "line_start": 447,
+          "line_end": 454,
+          "text": "                                                             √     θ\n    For the Orthogonal family, the mollifier has length          X . The mollified mean value is:\n                               X \u0012 \u0012                   \u0013                             \u00132\n                        1                     2 d\n         MO (P, Q, θ) = ∗         Q                        ξf (1/2 + a)M (1/2, P )              .\n                       X                    log X da\n                             c(f )≤X                                                      a=0\n\n",
+          "sha256": "6c1afb20eb015722c9e2ee3efa6970991217a5e042ca74110a4d282ec77d3f68"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Mollified mean squares",
+            "line_end": 502,
+            "line_start": 407,
+            "mathematical_role": "Uses a common mollifier construction to expose symmetry-specific responses and an orthogonal/symplectic derivative correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 446,
+          "line_start": 407,
+          "title": "A common reciprocal-polynomial mollifier and the unitary response",
+          "unit_id": "full_openalex_w2950846448_u12",
+          "unit_type": "mollifier construction",
+          "why_material": "Defines a family-independent mollifier from coefficients of L(s)^{-1}, then gives the unitary quadratic functional that exposes how mollifier length enters."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the boundary conditions on the polynomial and the simple test P=x, Q=1.",
+          "representation_dependency": "High: the structural construction is clear, but the exact double-integral functional requires formula verification.",
+          "unit_id": "full_openalex_w2950846448_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 396,
+            "line_start": 385,
+            "title": "Analytic continuation at lambda=1/2 predicts a constrained zeta moment",
+            "unit_id": "full_openalex_w2950846448_u11",
+            "unit_type": "fractional-moment prediction",
+            "why_material": "Uses a nonintegral random-matrix constant to make a numerical first-moment prediction and compares it with an RH-conditional bound."
+          },
+          {
+            "line_end": 468,
+            "line_start": 447,
+            "title": "The orthogonal short-mollifier limit is anomalous",
+            "unit_id": "full_openalex_w2950846448_u13",
+            "unit_type": "symmetry-specific diagnostic",
+            "why_material": "Shows that the orthogonal mollified mean square has a qualitatively unexpected limit as mollifier length shrinks, suggesting sensitivity to low-lying zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The O-Sp-U classification is reflected not only in moment exponents but also in distinct short-mollifier functionals, with differentiation explicitly bridging the orthogonal and symplectic cases.",
+            "limit": "The source gives conjectural family moments and selected mollified formulas, not a general theorem that symmetry alone determines every statistic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u02",
+              "full_openalex_w2950846448_u01",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u12",
+              "full_openalex_w2950846448_u13",
+              "full_openalex_w2950846448_u14"
+            ],
+            "title": "Symmetry predicts both moment growth and mollifier response"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 406,
+              "line_start": 397,
+              "reason": "Detailed roadmap to subsequent proofs."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u12",
+          "spontaneous_reading": "The mollifier is a truncated, polynomially weighted reciprocal Dirichlet series, designed to cancel part of L and convert cancellation quality into a symmetry-sensitive quadratic statistic."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u12",
+          "source_grounded_mathematics": "Writing L(s)^{-1} with coefficients m(n), the source defines M(s,f) by truncating at y=Y^theta and weighting by a polynomial f with f(0)=0. In the unitary zeta model it forms a mean square with a differential test polynomial Q; for theta<4/7 an explicit quadratic functional of P and Q is given, and P(x)=x, Q=1 yields 1+theta^{-1}.",
+          "conceptual_reading": "Reciprocal approximation changes a value problem into a controlled response functional. The mollifier length theta becomes an experimental knob measuring how much inverse information is available.",
+          "representation_or_bridge": "Coefficients of L^{-1} bridge multiplicative cancellation to an averaged product L·M, while P and Q package the cutoff and differentiation choices into a finite functional.",
+          "boundary_or_failure": "The stated asymptotic is unitary and subject to the theta range; it is not a family-independent theorem. Exact limits of integration and differential placement need formula verification.",
+          "uncertainty": "The construction and simple specialization are clear, with high risk only in the detailed displayed functional."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The anomaly depends on the displayed orthogonal functional and its simple specialization.",
+      "line_end": 468,
+      "line_start": 447,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact differential terms are formula-dependent; the limiting behavior and interpretation are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that the orthogonal mollified mean square has a qualitatively unexpected limit as mollifier length shrinks, suggesting sensitivity to low-lying zeros.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The orthogonal short-mollifier limit is anomalous",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u13.txt",
+      "unit_bytes": 1411,
+      "unit_id": "full_openalex_w2950846448_u13",
+      "unit_sha256": "a4dc47d4fadb31f780d58936ad86b5509d40156daf5e9196c9cf4b6bcfa0d690",
+      "unit_type": "symmetry-specific diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u13.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 439,
+          "line_end": 446,
+          "text": "\n                                            Z1 Z1\n                                        1                                        2\n          MU (P, Q, θ) ∼ P (1)2 Q(0)2 +             (P ′ (x)Q(y) + θP (x)Q′ (y)) dx dy.\n                                        θ\n                                            0   0\n\nAn interesting simple case is MU (x, 1, θ) ∼ 1 + θ −1 .\n",
+          "sha256": "d079bf9afa6e71ad82547f6d609b51ce227de9731884450717850921053a03de"
+        },
+        "after": {
+          "line_start": 469,
+          "line_end": 476,
+          "text": "                                                       √ θ\n   For the Symplectic family, the mollifier has length X . The mollified mean value is:\n                             \u0012 \u0012          \u0013                         \u00132\n                         1 X       2 d\n        MSp (P, Q, θ) := ∗    Q             ξf (1/2 + a)M (1/2, P )                                 .\n                        X        log X da\n                              c(f )≤X                                                     a=0\n\n",
+          "sha256": "224ddcd6a523bb6af0e298642f811abe82cf49682fbbfdc418178198340fb472"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Mollified mean squares",
+            "line_end": 502,
+            "line_start": 407,
+            "mathematical_role": "Uses a common mollifier construction to expose symmetry-specific responses and an orthogonal/symplectic derivative correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 468,
+          "line_start": 447,
+          "title": "The orthogonal short-mollifier limit is anomalous",
+          "unit_id": "full_openalex_w2950846448_u13",
+          "unit_type": "symmetry-specific diagnostic",
+          "why_material": "Shows that the orthogonal mollified mean square has a qualitatively unexpected limit as mollifier length shrinks, suggesting sensitivity to low-lying zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The anomaly depends on the displayed orthogonal functional and its simple specialization.",
+          "representation_dependency": "High: exact differential terms are formula-dependent; the limiting behavior and interpretation are explicit in prose.",
+          "unit_id": "full_openalex_w2950846448_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 446,
+            "line_start": 407,
+            "title": "A common reciprocal-polynomial mollifier and the unitary response",
+            "unit_id": "full_openalex_w2950846448_u12",
+            "unit_type": "mollifier construction",
+            "why_material": "Defines a family-independent mollifier from coefficients of L(s)^{-1}, then gives the unitary quadratic functional that exposes how mollifier length enters."
+          },
+          {
+            "line_end": 501,
+            "line_start": 469,
+            "title": "Differentiation interchanges symplectic and orthogonal mollified responses",
+            "unit_id": "full_openalex_w2950846448_u14",
+            "unit_type": "method correspondence",
+            "why_material": "Identifies M_Sp(P,Q',theta) with M_O(P,Q,theta), turning previously observed coincidences between distinct nonvanishing arguments into a symmetry-level operator relation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The O-Sp-U classification is reflected not only in moment exponents but also in distinct short-mollifier functionals, with differentiation explicitly bridging the orthogonal and symplectic cases.",
+            "limit": "The source gives conjectural family moments and selected mollified formulas, not a general theorem that symmetry alone determines every statistic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u02",
+              "full_openalex_w2950846448_u01",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u12",
+              "full_openalex_w2950846448_u13",
+              "full_openalex_w2950846448_u14"
+            ],
+            "title": "Symmetry predicts both moment growth and mollifier response"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u13",
+          "spontaneous_reading": "The orthogonal response exposes an anomaly: even as the mollifier becomes very short, the simple normalized mean does not relax toward 1 but behaves like theta^{-2}."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u13",
+          "source_grounded_mathematics": "For an orthogonal family the source defines a mollified mean using a mollifier of the stated square-root conductor scale. Under the parity condition on Q and theta<1 it gives a derivative-based quadratic functional. The specialization P(x)=x, Q=1 is asymptotic to theta^{-2}, which does not approach 1 as theta tends to zero.",
+          "conceptual_reading": "The small-length limit is used as a diagnostic rather than assumed to be trivial: orthogonal symmetry leaves a strong residual signal that the unitary intuition would miss.",
+          "representation_or_bridge": "The bridge is the symmetry-specific mollified functional, whose derivative structure converts the same reciprocal-polynomial input into an orthogonal-family response.",
+          "boundary_or_failure": "The suggested relation to low-lying zeros is explicitly tentative, not a demonstrated cause. The formula has parity and theta restrictions, and exact differential terms are extraction-sensitive.",
+          "uncertainty": "High confidence in the anomalous theta^{-2} behavior and its stated interpretation; lower confidence in display-level details."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the symplectic setup, parity distinction, antiderivative notation, and the stated correspondence.",
+      "line_end": 501,
+      "line_start": 469,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the exact functionals are formula-sensitive, but the derivative correspondence is unambiguous.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies M_Sp(P,Q',theta) with M_O(P,Q,theta), turning previously observed coincidences between distinct nonvanishing arguments into a symmetry-level operator relation.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Differentiation interchanges symplectic and orthogonal mollified responses",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u14.txt",
+      "unit_bytes": 1816,
+      "unit_id": "full_openalex_w2950846448_u14",
+      "unit_sha256": "ca86de4e6be9d395282ca449e0cb7694872c43f9fac548e6eb8819b243aed58e",
+      "unit_type": "method correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u14.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 461,
+          "line_end": 468,
+          "text": "                                  Z1 Z1 \u0012                            \u00132\n                                1         1 ′′                   ′′\n                             +              P (x)Q(y) − θP (x)Q (y) dx dy.\n                                θ         θ\n                                    0   0\n\nIn this case we have MO (x, 1, θ) ∼ θ −2 . It seems unexpected that MO (x, 1, θ) 6→ 1 as\nθ → 0. This may be related to the distribution of low–lying zeros of these L–functions [ILS].\n",
+          "sha256": "cae0f99e2d49fe150f2bd10e986c8e9c4f8aac4973c33f37d07e04874d6b5990"
+        },
+        "after": {
+          "line_start": 502,
+          "line_end": 509,
+          "text": "\n                                4. Meromorphicity of gλ\n  We prove\nTheorem 4.1. The function gλ /Γ(1 + B(λ)) is meromorphic of order 2 in the whole\ncomplex plane. It never vanishes. Furthermore, for k = 1, 2, . . . ,\n            gλ,U\n  U)                  has a pole of order 2k − 1 at λ = 12 − k, and no other poles,\n       Γ(1 + BU (λ))\n",
+          "sha256": "a86cd2baa51bfd70b03bfc53ee64a8ee8c6ae525985cce70ebdf59c2991e9aa6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Mollified mean squares",
+            "line_end": 502,
+            "line_start": 407,
+            "mathematical_role": "Uses a common mollifier construction to expose symmetry-specific responses and an orthogonal/symplectic derivative correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 501,
+          "line_start": 469,
+          "title": "Differentiation interchanges symplectic and orthogonal mollified responses",
+          "unit_id": "full_openalex_w2950846448_u14",
+          "unit_type": "method correspondence",
+          "why_material": "Identifies M_Sp(P,Q',theta) with M_O(P,Q,theta), turning previously observed coincidences between distinct nonvanishing arguments into a symmetry-level operator relation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the symplectic setup, parity distinction, antiderivative notation, and the stated correspondence.",
+          "representation_dependency": "Moderate: the exact functionals are formula-sensitive, but the derivative correspondence is unambiguous.",
+          "unit_id": "full_openalex_w2950846448_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 468,
+            "line_start": 447,
+            "title": "The orthogonal short-mollifier limit is anomalous",
+            "unit_id": "full_openalex_w2950846448_u13",
+            "unit_type": "symmetry-specific diagnostic",
+            "why_material": "Shows that the orthogonal mollified mean square has a qualitatively unexpected limit as mollifier length shrinks, suggesting sensitivity to low-lying zeros."
+          },
+          {
+            "line_end": 549,
+            "line_start": 505,
+            "title": "Pole data and growth identify normalized g_lambda with double Gamma expressions",
+            "unit_id": "full_openalex_w2950846448_u03",
+            "unit_type": "Barnes-gamma meromorphic structure",
+            "why_material": "Packages nonvanishing, order, pole multiplicities, Barnes double-Gamma representations, and cross-symmetry identities into an analytic continuation of the universal constants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The O-Sp-U classification is reflected not only in moment exponents but also in distinct short-mollifier functionals, with differentiation explicitly bridging the orthogonal and symplectic cases.",
+            "limit": "The source gives conjectural family moments and selected mollified formulas, not a general theorem that symmetry alone determines every statistic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u02",
+              "full_openalex_w2950846448_u01",
+              "full_openalex_w2950846448_u09",
+              "full_openalex_w2950846448_u12",
+              "full_openalex_w2950846448_u13",
+              "full_openalex_w2950846448_u14"
+            ],
+            "title": "Symmetry predicts both moment growth and mollifier response"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 502,
+              "line_start": 502,
+              "reason": "Blank section boundary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u14",
+          "spontaneous_reading": "Differentiating the test function intertwines the symplectic and orthogonal mollified responses, turning repeated coincidences between separate nonvanishing calculations into an operator-level correspondence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u14",
+          "source_grounded_mathematics": "The symplectic mollified mean vanishes for odd Q and has an explicit even-Q functional involving the antiderivative Q-hat. The source then states M_Sp(P,Q',theta) asymptotic to M_O(P,Q,theta), transparent from the displayed formulas, and gives P=x, Q=1 as a simple symplectic value.",
+          "conceptual_reading": "A change of test-function coordinates transports one symmetry response into another. This is stronger than matching final constants because it identifies the transformation generating the match.",
+          "representation_or_bridge": "Differentiation Q↦Q' and the inverse operation Q↦Q-hat form the bridge between the symplectic and orthogonal quadratic functionals.",
+          "boundary_or_failure": "The correspondence holds within the stated asymptotic setup and does not prove a general equivalence of the two symmetry classes. Extensions to other observed coincidences are only proposed as plausible.",
+          "uncertainty": "The derivative correspondence is unambiguous; exact terms in the two functionals remain formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The other symmetry cases are declared analogous; this span contains the complete illustrated mechanism.",
+      "line_end": 605,
+      "line_start": 550,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: enough equations survive to recover the proof architecture, though the integral remainder typography should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the logarithm of the unitary product as a second finite difference of log Gamma, bounds it through a second-derivative estimate, and reads exact order from pole convergence.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second Gamma difference controls meromorphic order",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u15.txt",
+      "unit_bytes": 2640,
+      "unit_id": "full_openalex_w2950846448_u15",
+      "unit_sha256": "be64fe20f71ad2a6083585ba6668a57939f92421671c8e884a8b80bd6d13185d",
+      "unit_type": "analytic proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u15.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 542,
+          "line_end": 549,
+          "text": "                    Γ(1 + BO (λ)) Γ(1 + BSp (λ))         Γ(1 + BU (λ))\n\n  See [V][UN] for details about the double Γ–function.\n\n<!-- source-page: 10 -->\n\n10                                 J.B. CONREY D.W. FARMER\n\n",
+          "sha256": "03d66c9137f4ff2662cf891fa7fa911c53fbabbfd8320f012f568d8239b1b795"
+        },
+        "after": {
+          "line_start": 606,
+          "line_end": 613,
+          "text": "\n<!-- source-page: 11 -->\n\nMEAN VALUES AND SYMMETRY                                       11\n\n                                  5. Integrality results\n\n   In this section k is a positive integer and we will be interested in integrality properties\n",
+          "sha256": "c97a7d4ebe4188b0debeac886144ced85d9570ff7f675c3223fbe5ef170e1446"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Meromorphicity of g_lambda",
+            "line_end": 610,
+            "line_start": 503,
+            "mathematical_role": "Locates poles, proves nonvanishing meromorphic order two, and represents normalized g_lambda with Gamma and the Barnes-Vigneras double Gamma function."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 605,
+          "line_start": 550,
+          "title": "A second Gamma difference controls meromorphic order",
+          "unit_id": "full_openalex_w2950846448_u15",
+          "unit_type": "analytic proof mechanism",
+          "why_material": "Rewrites the logarithm of the unitary product as a second finite difference of log Gamma, bounds it through a second-derivative estimate, and reads exact order from pole convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The other symmetry cases are declared analogous; this span contains the complete illustrated mechanism.",
+          "representation_dependency": "Moderate: enough equations survive to recover the proof architecture, though the integral remainder typography should be verified.",
+          "unit_id": "full_openalex_w2950846448_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 549,
+            "line_start": 505,
+            "title": "Pole data and growth identify normalized g_lambda with double Gamma expressions",
+            "unit_id": "full_openalex_w2950846448_u03",
+            "unit_type": "Barnes-gamma meromorphic structure",
+            "why_material": "Packages nonvanishing, order, pole multiplicities, Barnes double-Gamma representations, and cross-symmetry identities into an analytic continuation of the universal constants."
+          },
+          {
+            "line_end": 714,
+            "line_start": 617,
+            "title": "Finite factorial products expose integrality and prime support",
+            "unit_id": "full_openalex_w2950846448_u04",
+            "unit_type": "integrality arithmetic of g_k",
+            "why_material": "States integrality and prime-divisor restrictions, gives finite factorial/double-factorial formulas for all symmetry types, and derives the unitary product from the random-matrix limit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma-product limits analytically continue through the Barnes double Gamma function, collapse at integer parameters to factorial products, and then expose integrality, prime support, and large-k behavior.",
+            "limit": "Exact displayed constants and some floor formulas are text-layer fragile and require image verification before formal reuse.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u10",
+              "full_openalex_w2950846448_u03",
+              "full_openalex_w2950846448_u15",
+              "full_openalex_w2950846448_u04",
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u20"
+            ],
+            "title": "One random-matrix product has analytic, combinatorial, and p-adic faces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 610,
+              "line_start": 606,
+              "reason": "Page boundary before the integrality section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u15",
+          "spontaneous_reading": "A second finite difference of log Gamma cancels the large first-order behavior of the product, leaving discrete curvature of size roughly lambda^2/j and hence a controllable renormalized limit."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u15",
+          "source_grounded_mathematics": "In the unitary case the logarithm of the Gamma product is reduced to a sum of f_j(0)-2f_j(lambda)+f_j(2lambda), with f_j(x)=log Gamma(j+x). A mean-value argument rewrites each term as lambda^2 f_j'' at an intermediate point; an integral formula gives f_j''=1/j plus a controlled error. This proves convergence after subtracting lambda^2 log N and order at most two, while the pole exponent of convergence forces exact order two.",
+          "conceptual_reading": "The proof identifies the right cancellation operator before estimating: second differences expose curvature, which is the summable information left after renormalizing the product's bulk growth.",
+          "representation_or_bridge": "Gamma-product asymptotics are bridged to meromorphic growth through logarithms, finite differences, a second-derivative integral representation, and pole counting.",
+          "boundary_or_failure": "Only the unitary mechanism is worked out; the other symmetry cases are declared similar. The argument relies on previously described poles, and the extracted integral remainder contains typography risk.",
+          "uncertainty": "The proof architecture and order conclusion are clear despite minor OCR corruption in formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the missing proof support for the integrality theorem and also supplies the discrete formulas later scaled to c_p.",
+      "line_end": 884,
+      "line_start": 715,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several floor formulas are extraction-fragile, but the regrouping, scale decomposition, two cases, and nonnegativity conclusion are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Regroups nested factorial products, derives exact p-adic floor-sum expressions, and proves every scale contribution is a nonnegative integer via a two-case residue analysis.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Floor-sum valuations prove integrality term by term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u16.txt",
+      "unit_bytes": 10388,
+      "unit_id": "full_openalex_w2950846448_u16",
+      "unit_sha256": "534f64c861e6cca45eb8b14e6cf38c77f139c53114dd258f5550e365062029d7",
+      "unit_type": "p-adic proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u16.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 707,
+          "line_end": 714,
+          "text": "                                                      j+m\n                                              k−1\n                                              Y      j!\n                                          =                .\n                                              j=0\n                                                  (j + k)!\n\nThe last expression leads easily to the Lemma.\n",
+          "sha256": "ad97b703a243a09bea54ebc23c04cbf8819462c17b1a1484c3e56433f1e4cb51"
+        },
+        "after": {
+          "line_start": 885,
+          "line_end": 892,
+          "text": "\n                                      6. The function cp\n   In this section we study the prime factorization of gk as k → ∞. We find that vp (gk ) is\ndescribed by an interesting self–similar function.\nTheorem 6.1. Define\n                                                  ∞\n                                                  X\n                                   cp (x) = x−1          p−ℓ ||pℓ x||2 ,\n",
+          "sha256": "598f7ce5356aa64549a06f596a26f63189a5fab747c8055efe419a8a9d90310a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Integrality results",
+            "line_end": 885,
+            "line_start": 611,
+            "mathematical_role": "Converts random-matrix limits to finite factorial products, then to p-adic floor-sum formulas whose termwise nonnegativity proves integrality and prime-support restrictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 884,
+          "line_start": 715,
+          "title": "Floor-sum valuations prove integrality term by term",
+          "unit_id": "full_openalex_w2950846448_u16",
+          "unit_type": "p-adic proof mechanism",
+          "why_material": "Regroups nested factorial products, derives exact p-adic floor-sum expressions, and proves every scale contribution is a nonnegative integer via a two-case residue analysis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the missing proof support for the integrality theorem and also supplies the discrete formulas later scaled to c_p.",
+          "representation_dependency": "High: several floor formulas are extraction-fragile, but the regrouping, scale decomposition, two cases, and nonnegativity conclusion are explicit.",
+          "unit_id": "full_openalex_w2950846448_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 714,
+            "line_start": 617,
+            "title": "Finite factorial products expose integrality and prime support",
+            "unit_id": "full_openalex_w2950846448_u04",
+            "unit_type": "integrality arithmetic of g_k",
+            "why_material": "States integrality and prime-divisor restrictions, gives finite factorial/double-factorial formulas for all symmetry types, and derives the unitary product from the random-matrix limit."
+          },
+          {
+            "line_end": 967,
+            "line_start": 889,
+            "title": "Prime valuations converge to a scale-invariant distance series",
+            "unit_id": "full_openalex_w2950846448_u05",
+            "unit_type": "self-similar valuation function",
+            "why_material": "Defines c_p by a bilateral distance-to-nearest-integer series, identifies it as the scaling limit of valuations, and classifies local behavior at rational points as self-similarity, cusp, or vertical tangent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma-product limits analytically continue through the Barnes double Gamma function, collapse at integer parameters to factorial products, and then expose integrality, prime support, and large-k behavior.",
+            "limit": "Exact displayed constants and some floor formulas are text-layer fragile and require image verification before formal reuse.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u10",
+              "full_openalex_w2950846448_u03",
+              "full_openalex_w2950846448_u15",
+              "full_openalex_w2950846448_u04",
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u20"
+            ],
+            "title": "One random-matrix product has analytic, combinatorial, and p-adic faces"
+          },
+          {
+            "claim": "Exact floor-sum valuations become a bilateral distance-to-integers energy after geometric rescaling; splitting scales then explains continuity, discrete covariance, and the rational-point self-similarity/cusp/tangent trichotomy.",
+            "limit": "The classification is proved for the specific regularity and coprimality conditions stated in the source, with a reduction when p divides the denominator.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u05",
+              "full_openalex_w2950846448_u17",
+              "full_openalex_w2950846448_u18",
+              "full_openalex_w2950846448_u19"
+            ],
+            "title": "Scale splitting converts discrete valuations into continuous fractal limits"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 885,
+              "line_start": 885,
+              "reason": "Blank section boundary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u16",
+          "spontaneous_reading": "Integrality is proved locally at every prime-power scale: factorial products become floor-sum valuations, and each scale contribution is forced to be a nonnegative integer."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u16",
+          "source_grounded_mathematics": "The source regroups products of factorials and odd double factorials, evaluates their p-adic valuations as sums over p^ell, and obtains formulas for v_p(g_{k,U}) and v_p(g_{k,O}). The orthogonal summand is bounded below using M^2-M>=0 for integral M. The unitary summand splits into the two possible residue cases for floor((2k-1)/p^ell), and in each case is an integer greater than -1, hence nonnegative. The symplectic result is transferred through g_{k+1,O}=2^k g_{k,Sp}.",
+          "conceptual_reading": "A global divisibility claim is decomposed into independent certificates indexed by prime and scale. The residue split turns opaque factorial cancellation into a finite local obstruction analysis.",
+          "representation_or_bridge": "Finite products bridge to p-adic valuations via Legendre-style floor sums; completing squares and elementary floor alternatives bridge those sums to termwise nonnegativity.",
+          "boundary_or_failure": "The detailed proof treats odd primes and dismisses p=2 separately as easy; exact prime-support consequences require additional case checking. Several floor indices are extraction-fragile.",
+          "uncertainty": "High confidence in the scale-by-scale nonnegativity mechanism, with lower confidence in literal transcription of every displayed floor formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The specialization f(x)=||x||^2 recovers the self-similarity, cusp, and vertical-tangent theorem.",
+      "line_end": 1075,
+      "line_start": 1012,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: hypotheses and scaling law are clear; the full local expansion is formula-layout sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Abstracts c_p to a bilateral scale sum built from any suitably regular periodic seed and derives continuity, d(px)=p d(x), and the rational-point expansion used for the trichotomy.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A periodic seed generates a continuous discrete-scale covariant function",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u17.txt",
+      "unit_bytes": 3912,
+      "unit_id": "full_openalex_w2950846448_u17",
+      "unit_sha256": "7b8ce3beba31093ee261930cc2dec4f90f5ed1be7ae780038d8c5222f0571587",
+      "unit_type": "general self-similarity lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u17.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1004,
+          "line_end": 1011,
+          "text": "<!-- source-page: 17 -->\n\nMEAN VALUES AND SYMMETRY                                           17\n\n  Note that c5 (3/13) = 23/72. It is not difficult to evaluate cp (a/b) for any particular\na/b, and in addition one sees that cp (a/b) is rational.\n  The self–similarity properties of cp (x) follow from the formula for cp (x) in Theorem 6.1.\nWe have\n",
+          "sha256": "bdd595ef1283720da83bb3ca3689fa4db008493565d86c9f78fb1e6be5bf8682"
+        },
+        "after": {
+          "line_start": 1076,
+          "line_end": 1083,
+          "text": "  It remains to prove Theorem 6.1 and Proposition 6.3.\n\n<!-- source-page: 18 -->\n\n18                                         J.B. CONREY D.W. FARMER\n\nProof of Proposition 6.3. The continuity of d(x) follows from the Weierstrass M –test, and\nthe functional equation d(px) = pd(x) follows by changing the summation index.\n",
+          "sha256": "f6c91bac9c9d226b8cfb8dadca8f41a9eada338db867286d45115d84bd43cfbe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The function c_p",
+            "line_end": 1330,
+            "line_start": 886,
+            "mathematical_role": "Encodes normalized p-adic valuations by a continuous scale-invariant distance-to-integers series and analyzes its rational-point self-similarity, cusps, and vertical tangents."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1075,
+          "line_start": 1012,
+          "title": "A periodic seed generates a continuous discrete-scale covariant function",
+          "unit_id": "full_openalex_w2950846448_u17",
+          "unit_type": "general self-similarity lemma",
+          "why_material": "Abstracts c_p to a bilateral scale sum built from any suitably regular periodic seed and derives continuity, d(px)=p d(x), and the rational-point expansion used for the trichotomy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The specialization f(x)=||x||^2 recovers the self-similarity, cusp, and vertical-tangent theorem.",
+          "representation_dependency": "High: hypotheses and scaling law are clear; the full local expansion is formula-layout sensitive.",
+          "unit_id": "full_openalex_w2950846448_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 967,
+            "line_start": 889,
+            "title": "Prime valuations converge to a scale-invariant distance series",
+            "unit_id": "full_openalex_w2950846448_u05",
+            "unit_type": "self-similar valuation function",
+            "why_material": "Defines c_p by a bilateral distance-to-nearest-integer series, identifies it as the scaling limit of valuations, and classifies local behavior at rational points as self-similarity, cusp, or vertical tangent."
+          },
+          {
+            "line_end": 1202,
+            "line_start": 1082,
+            "title": "Split negative, intermediate, and tail scales to analyze local behavior",
+            "unit_id": "full_openalex_w2950846448_u18",
+            "unit_type": "multiscale proof decomposition",
+            "why_material": "Proves the general scaling expansion by decomposing the bilateral series into three scale ranges and applying periodicity and Taylor expansion differently on each range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exact floor-sum valuations become a bilateral distance-to-integers energy after geometric rescaling; splitting scales then explains continuity, discrete covariance, and the rational-point self-similarity/cusp/tangent trichotomy.",
+            "limit": "The classification is proved for the specific regularity and coprimality conditions stated in the source, with a reduction when p divides the denominator.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u05",
+              "full_openalex_w2950846448_u17",
+              "full_openalex_w2950846448_u18",
+              "full_openalex_w2950846448_u19"
+            ],
+            "title": "Scale splitting converts discrete valuations into continuous fractal limits"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1011,
+              "line_start": 1004,
+              "reason": "Page header, a pointwise rationality observation, and transition to the general proposition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u17",
+          "spontaneous_reading": "The arithmetic self-similar function is abstracted to a bilateral scale sum generated by any sufficiently regular periodic seed, separating the scaling mechanism from the special distance-to-integers choice."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u17",
+          "source_grounded_mathematics": "For periodic f with the stated piecewise C^2 regularity and quadratic behavior near zero, the source defines d(x)=sum over all integer ell of p^{-ell}f(p^ell x). It asserts continuity and d(px)=p d(x), and gives a detailed local expansion near a rational a/b along exponents m in a fixed congruence class when p^r is congruent to 1 modulo b. Specializing f to squared distance from the nearest integer recovers the c_p analysis.",
+          "conceptual_reading": "The proposition isolates a reusable generator: discrete scale covariance follows from the bilateral orbit sum, while rational-point singular behavior is controlled by the seed's derivatives along a finite multiplicative orbit.",
+          "representation_or_bridge": "The bridge sends a periodic seed to a continuous scale-covariant function by summing all dilations, and sends rational arithmetic modulo b to a recurring derivative pattern through p^r≡1 mod b.",
+          "boundary_or_failure": "The result needs the stated regularity, growth, congruence, and sufficiently-small perturbation hypotheses; it is not a claim about arbitrary periodic seeds. The full local expansion is layout-sensitive.",
+          "uncertainty": "The definition, covariance, and specialization are clear; exact coefficients in the expansion have high formula risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This proof is reusable as a method for discrete-scale functions, independent of the specific distance seed.",
+      "line_end": 1202,
+      "line_start": 1082,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: prose clearly identifies the three ranges and tools; exact remainder coefficients are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves the general scaling expansion by decomposing the bilateral series into three scale ranges and applying periodicity and Taylor expansion differently on each range.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Split negative, intermediate, and tail scales to analyze local behavior",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u18.txt",
+      "unit_bytes": 6455,
+      "unit_id": "full_openalex_w2950846448_u18",
+      "unit_sha256": "c309c43e7f96a9453a7305d85963370b4dc71755661a8892351baa102f9c498d",
+      "unit_type": "multiscale proof decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u18.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1074,
+          "line_end": 1081,
+          "text": "\nThis proves Theorem 6.2.\n  It remains to prove Theorem 6.1 and Proposition 6.3.\n\n<!-- source-page: 18 -->\n\n18                                         J.B. CONREY D.W. FARMER\n\n",
+          "sha256": "34b3bb4943fb34c18149a5d3ddf994addd99ab04fc41a225cff93e1bee14834e"
+        },
+        "after": {
+          "line_start": 1203,
+          "line_end": 1210,
+          "text": "Proof of Theorem 6.1. First we consider the Unitary case. We may unify formulas (5.2)\nand (5.3) to have\n                          ∞           \u0012                 \u0012\u0014          \u0015 \u0014     \u0015\u0013\u00132\n                          X\n                                 −ℓ                 ℓ        2k − 1     k−1\n           vp (gk,U ) =         p         k−p                        −           + O (log k) .\n                                                               pℓ        pℓ\n                          ℓ=1\n",
+          "sha256": "30fcddc014e7298911dd49afd57dfbf6b5dd69e57b07ac8b9acde1492cd73bfb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The function c_p",
+            "line_end": 1330,
+            "line_start": 886,
+            "mathematical_role": "Encodes normalized p-adic valuations by a continuous scale-invariant distance-to-integers series and analyzes its rational-point self-similarity, cusps, and vertical tangents."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1202,
+          "line_start": 1082,
+          "title": "Split negative, intermediate, and tail scales to analyze local behavior",
+          "unit_id": "full_openalex_w2950846448_u18",
+          "unit_type": "multiscale proof decomposition",
+          "why_material": "Proves the general scaling expansion by decomposing the bilateral series into three scale ranges and applying periodicity and Taylor expansion differently on each range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This proof is reusable as a method for discrete-scale functions, independent of the specific distance seed.",
+          "representation_dependency": "Moderate: prose clearly identifies the three ranges and tools; exact remainder coefficients are formula-sensitive.",
+          "unit_id": "full_openalex_w2950846448_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1075,
+            "line_start": 1012,
+            "title": "A periodic seed generates a continuous discrete-scale covariant function",
+            "unit_id": "full_openalex_w2950846448_u17",
+            "unit_type": "general self-similarity lemma",
+            "why_material": "Abstracts c_p to a bilateral scale sum built from any suitably regular periodic seed and derives continuity, d(px)=p d(x), and the rational-point expansion used for the trichotomy."
+          },
+          {
+            "line_end": 1328,
+            "line_start": 1203,
+            "title": "Floor-valued p-adic sums converge to distance-to-integer energy",
+            "unit_id": "full_openalex_w2950846448_u19",
+            "unit_type": "discrete-to-continuous limit",
+            "why_material": "Unifies two valuation cases, rescales k=[p^j x], controls the infinite tails uniformly, and converts the limiting floor expression to ||p^ell x||^2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exact floor-sum valuations become a bilateral distance-to-integers energy after geometric rescaling; splitting scales then explains continuity, discrete covariance, and the rational-point self-similarity/cusp/tangent trichotomy.",
+            "limit": "The classification is proved for the specific regularity and coprimality conditions stated in the source, with a reduction when p divides the denominator.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u05",
+              "full_openalex_w2950846448_u17",
+              "full_openalex_w2950846448_u18",
+              "full_openalex_w2950846448_u19"
+            ],
+            "title": "Scale splitting converts discrete valuations into continuous fractal limits"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u18",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u18",
+          "spontaneous_reading": "The local analysis works by splitting the bilateral series into negative, intermediate, and tail scales, because periodicity, finite Taylor expansion, and decay control apply in different regimes."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u18",
+          "source_grounded_mathematics": "The proof first obtains continuity by the Weierstrass M-test and d(px)=p d(x) by reindexing. For a perturbation p^{-m}x near a/b, it decomposes the difference into ell<0, 0<=ell<m, and ell>=m pieces. Periodicity plus p^r≡1 mod b normalizes the tail, Taylor expansion controls the negative and intermediate scales, and grouping intermediate derivatives by residues modulo r produces the stated m-dependent term and bounded remainder.",
+          "conceptual_reading": "Scale splitting assigns the right proof tool to each frequency range. The apparent singularity near a rational point is assembled from a periodic long-scale contribution, a linearly accumulating orbit average, and controlled local curvature.",
+          "representation_or_bridge": "The bilateral dilation representation bridges global self-similarity to local asymptotics; modular periodicity compresses many derivative samples into one finite orbit.",
+          "boundary_or_failure": "The estimates depend on bounded second derivatives away from finitely many one-sided points and on choosing x small enough not to cross uncontrolled singularities. Exact remainder coefficients are formula-sensitive.",
+          "uncertainty": "The three-range mechanism is explicit and robust; detailed display alignment is moderately uncertain."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The orthogonal and symplectic limits follow by the same representation and the cross-symmetry identity.",
+      "line_end": 1328,
+      "line_start": 1203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the limit manipulations are visible but exact floor notation and indices need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Unifies two valuation cases, rescales k=[p^j x], controls the infinite tails uniformly, and converts the limiting floor expression to ||p^ell x||^2.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Floor-valued p-adic sums converge to distance-to-integer energy",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u19.txt",
+      "unit_bytes": 6873,
+      "unit_id": "full_openalex_w2950846448_u19",
+      "unit_sha256": "db3854685bdda6bdd9973d3d7221fbc579578f032e6b0c8ba6309b5b4afc06dd",
+      "unit_type": "discrete-to-continuous limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u19.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1195,
+          "line_end": 1202,
+          "text": "                                                          ′\n                                                            \u0010 a\u0011\n                            =            f± p    +       f±  pj   .\n                                r    j=0\n                                              b     j=0\n                                                                b\n\nThis completes the proof of Proposition 6.3.\n",
+          "sha256": "87245072b2012648877adbc9595ad919865c1d8e4a5fab8569d1823750817dc2"
+        },
+        "after": {
+          "line_start": 1329,
+          "line_end": 1336,
+          "text": "\n\n                                                  7. Asymptotics\n  In this section we determine the asymptotic behavior of gk for large (integer) k. We\nhave\n\n<!-- source-page: 21 -->\n\n",
+          "sha256": "f17108947cfa6f72da197ef5916925800200d95a42d6a0b81db70750cb1ccea0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The function c_p",
+            "line_end": 1330,
+            "line_start": 886,
+            "mathematical_role": "Encodes normalized p-adic valuations by a continuous scale-invariant distance-to-integers series and analyzes its rational-point self-similarity, cusps, and vertical tangents."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1328,
+          "line_start": 1203,
+          "title": "Floor-valued p-adic sums converge to distance-to-integer energy",
+          "unit_id": "full_openalex_w2950846448_u19",
+          "unit_type": "discrete-to-continuous limit",
+          "why_material": "Unifies two valuation cases, rescales k=[p^j x], controls the infinite tails uniformly, and converts the limiting floor expression to ||p^ell x||^2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The orthogonal and symplectic limits follow by the same representation and the cross-symmetry identity.",
+          "representation_dependency": "High: the limit manipulations are visible but exact floor notation and indices need scan verification.",
+          "unit_id": "full_openalex_w2950846448_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1202,
+            "line_start": 1082,
+            "title": "Split negative, intermediate, and tail scales to analyze local behavior",
+            "unit_id": "full_openalex_w2950846448_u18",
+            "unit_type": "multiscale proof decomposition",
+            "why_material": "Proves the general scaling expansion by decomposing the bilateral series into three scale ranges and applying periodicity and Taylor expansion differently on each range."
+          },
+          {
+            "line_end": 1392,
+            "line_start": 1331,
+            "title": "Symmetry-dependent constants have explicit large-k expansions",
+            "unit_id": "full_openalex_w2950846448_u20",
+            "unit_type": "large-parameter asymptotics",
+            "why_material": "Gives distinct large-k expansions for unitary, orthogonal, and symplectic g_k and explains that their combination with Gamma asymptotics fixes the Barnes double-Gamma representations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exact floor-sum valuations become a bilateral distance-to-integers energy after geometric rescaling; splitting scales then explains continuity, discrete covariance, and the rational-point self-similarity/cusp/tangent trichotomy.",
+            "limit": "The classification is proved for the specific regularity and coprimality conditions stated in the source, with a reduction when p divides the denominator.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u05",
+              "full_openalex_w2950846448_u17",
+              "full_openalex_w2950846448_u18",
+              "full_openalex_w2950846448_u19"
+            ],
+            "title": "Scale splitting converts discrete valuations into continuous fractal limits"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1330,
+              "line_start": 1329,
+              "reason": "Blank transition to asymptotics."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u19",
+          "spontaneous_reading": "After geometric rescaling, exact floor-valued p-adic valuations converge to a bilateral distance-to-nearest-integer energy, converting discrete divisibility data into a continuous self-similar profile."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u19",
+          "source_grounded_mathematics": "The unitary valuation cases are unified up to O(log k), then k is set to floor(p^j x) and the scale index is shifted. On any fixed scale window, strict-floor identities stabilize the summands for large j, while both tails are bounded uniformly; the limit becomes a bilateral sum whose elementary floor expression equals ||p^ell x||^2. A parallel calculation gives one half of x c_p(x) for the orthogonal case, and the symplectic case follows from the cross-symmetry identity.",
+          "conceptual_reading": "This is a discrete-to-continuous limit in which magnification converts carries and floor discontinuities into a stable scale energy. Uniform tail control is what makes the formal change of representation legitimate.",
+          "representation_or_bridge": "Prime valuations represented by floor sums are bridged, through k=floor(p^j x) and index recentering, to the distance-to-integers series defining c_p.",
+          "boundary_or_failure": "The limit is asymptotic and does not reconstruct finite-k valuations exactly; the O(log k) term disappears only after normalization. Exact floor conventions and indices require scan verification.",
+          "uncertainty": "High confidence in the stabilization-and-tail argument and resulting energy; high typography risk in intermediate formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is mathematically substantive despite dense formula extraction.",
+      "line_end": 1392,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact coefficients and lower-order terms require verification against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives distinct large-k expansions for unitary, orthogonal, and symplectic g_k and explains that their combination with Gamma asymptotics fixes the Barnes double-Gamma representations.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetry-dependent constants have explicit large-k expansions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u20.txt",
+      "unit_bytes": 3907,
+      "unit_id": "full_openalex_w2950846448_u20",
+      "unit_sha256": "2fe897edfb87093e2dc202be76212310ad5da38d7070ceac59e01da2ddadeeca",
+      "unit_type": "large-parameter asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u20.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1323,
+          "line_end": 1330,
+          "text": "                                                           1\n                                                       =     x cp (x),\n                                                           2\n\nsince (x−[2x]2 )2 = ||x||2 . The same holds in the Symplectic case because gk+1,O = 2k gk,Sp .\nThis completes the proof of Theorem 6.1\n\n\n",
+          "sha256": "d62b5fd792dd1d5a320cabcdd9ef7f81f6d17dc3356002ac7e6341d5f3f6cdd6"
+        },
+        "after": {
+          "line_start": 1393,
+          "line_end": 1400,
+          "text": "   To prove Theorem 7.1, combine the expressions for gλ given in Lemma 5.1 with the\nelementary formulas\n                               n\n                               X                          n\n                                                          X               n\n                                                                          X\n                                     log j! = (n + 1)           log j −         j log j,\n                               j=1                        j=1             j=1\n",
+          "sha256": "b4b775e4d2a2e6a141f56fb1d1dbb8a22342b1f769baf9615a0d6e599feca8c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Asymptotics",
+            "line_end": 1452,
+            "line_start": 1331,
+            "mathematical_role": "Derives large-k expansions for all three symmetry constants from factorial products and Euler-Maclaurin summation, closing the double-Gamma identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1392,
+          "line_start": 1331,
+          "title": "Symmetry-dependent constants have explicit large-k expansions",
+          "unit_id": "full_openalex_w2950846448_u20",
+          "unit_type": "large-parameter asymptotics",
+          "why_material": "Gives distinct large-k expansions for unitary, orthogonal, and symplectic g_k and explains that their combination with Gamma asymptotics fixes the Barnes double-Gamma representations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is mathematically substantive despite dense formula extraction.",
+          "representation_dependency": "High: exact coefficients and lower-order terms require verification against the page image.",
+          "unit_id": "full_openalex_w2950846448_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1328,
+            "line_start": 1203,
+            "title": "Floor-valued p-adic sums converge to distance-to-integer energy",
+            "unit_id": "full_openalex_w2950846448_u19",
+            "unit_type": "discrete-to-continuous limit",
+            "why_material": "Unifies two valuation cases, rescales k=[p^j x], controls the infinite tails uniformly, and converts the limiting floor expression to ||p^ell x||^2."
+          },
+          {
+            "line_end": 1451,
+            "line_start": 1393,
+            "title": "Factorial products reduce the asymptotics to four Euler-Maclaurin sums",
+            "unit_id": "full_openalex_w2950846448_u21",
+            "unit_type": "asymptotic reduction",
+            "why_material": "Reduces all three large-k calculations to sums of log j, log(2j-1), j log j, and j log(2j-1), then supplies the expansions needed to close the proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma-product limits analytically continue through the Barnes double Gamma function, collapse at integer parameters to factorial products, and then expose integrality, prime support, and large-k behavior.",
+            "limit": "Exact displayed constants and some floor formulas are text-layer fragile and require image verification before formal reuse.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2950846448_u10",
+              "full_openalex_w2950846448_u03",
+              "full_openalex_w2950846448_u15",
+              "full_openalex_w2950846448_u04",
+              "full_openalex_w2950846448_u16",
+              "full_openalex_w2950846448_u20"
+            ],
+            "title": "One random-matrix product has analytic, combinatorial, and p-adic faces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1330,
+              "line_start": 1329,
+              "reason": "Blank transition to asymptotics."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u20",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u20",
+          "spontaneous_reading": "The three symmetry constants have distinct large-k asymptotic fingerprints, and those fingerprints supply the growth data needed to pin down their Barnes double-Gamma representations."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u20",
+          "source_grounded_mathematics": "Theorem 7.1 records separate expansions for log g_{k,U}, log g_{k,O}, and log g_{k,Sp}, including leading k^2 log k and symmetry-dependent lower-order terms. The source then combines these expansions with known Gamma and double-Gamma asymptotics to recover the earlier expressions for g_lambda in terms of Gamma_2.",
+          "conceptual_reading": "Asymptotic growth is used as an identification constraint: pole data alone permits ambiguity, while the large-parameter signature selects the intended analytic continuation for each symmetry class.",
+          "representation_or_bridge": "Finite integer constants are bridged to meromorphic special-function formulas by matching their large-k expansions with Gamma and Barnes double-Gamma asymptotics.",
+          "boundary_or_failure": "The theorem concerns integer k tending to infinity and does not validate the underlying L-function moment conjectures. Exact coefficients and constants are densely extracted and require image verification.",
+          "uncertainty": "The role of the expansions is clear; confidence is lower for every literal lower-order coefficient."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span records the calculational interface rather than repeating the large-k theorem.",
+      "line_end": 1451,
+      "line_start": 1393,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the reduction is clear, but exact constants in the four expansions are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reduces all three large-k calculations to sums of log j, log(2j-1), j log j, and j log(2j-1), then supplies the expansions needed to close the proof.",
+      "source_id": "openalex_w2950846448",
+      "source_normalized_sha256": "bd57ddbab7037a1a8dcefa56c4883bb62389e5792d7ba07eb28e15d12a34fbc6",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factorial products reduce the asymptotics to four Euler-Maclaurin sums",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2950846448_u21.txt",
+      "unit_bytes": 2978,
+      "unit_id": "full_openalex_w2950846448_u21",
+      "unit_sha256": "4b9d1d3950ae7ba23128a742abfc9e62f755e5ab093d997baa90adeba343d1bf",
+      "unit_type": "asymptotic reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2950846448_u21.txt",
+      "source": {
+        "source_id": "openalex_w2950846448",
+        "title": "Mean values of L-functions and symmetry",
+        "authors": [
+          "J. Brian Conrey",
+          "David W. Farmer"
+        ],
+        "year": 1999,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1385,
+          "line_end": 1392,
+          "text": "                          17           1               1\n                             log 2 + − ζ ′ (0) + ζ ′ (−1) + O k −1 .\n                                                                            \u0001\n                       −\n                          24          4                2\n\n   Combining these with the asymptotics of the Γ and Γ2 –function [V][UN] we obtain the\nexpressions for gλ in terms of Γ2 given in Corollary 4.2.\n",
+          "sha256": "0b7a73cc571a22f7005756cd41cc9760becb39363bfd879423407022877771a5"
+        },
+        "after": {
+          "line_start": 1452,
+          "line_end": 1459,
+          "text": "\n                                               References\n[BK]     E. B. Bogolmony and J. P. Keating, Nonlinearity 9 (1996), 911–935.\n[BH]     E. Brézin and S. Hikami, Characteristic polynomials of random matrices, preprint.\n[CG1] J. B. Conrey and A. Ghosh, Mean values of the Riemann zeta-function, Mathematika 31 (1984),\n      159–161.\n[CG2] J. B. Conrey and A. Ghosh, A conjecture for the sixth power moment of the Riemann zeta-function,\n      Int. Math. Res. Not. 15 (1998), 775–780.\n",
+          "sha256": "48426f0aa7b17ed87bbcaa920706892fa62a58234c876087188771e398ed3901"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6d5a055ae5eb3d3375d5697f40d23ebc6e26ec0306dabf7fc10b89d241d16aaa",
+        "dossier_sha256": "86ce69057d23ea13381b3cf1e4a6f3b3f9951a56dae8029610e5b0b083dbb6ae",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Asymptotics",
+            "line_end": 1452,
+            "line_start": 1331,
+            "mathematical_role": "Derives large-k expansions for all three symmetry constants from factorial products and Euler-Maclaurin summation, closing the double-Gamma identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1451,
+          "line_start": 1393,
+          "title": "Factorial products reduce the asymptotics to four Euler-Maclaurin sums",
+          "unit_id": "full_openalex_w2950846448_u21",
+          "unit_type": "asymptotic reduction",
+          "why_material": "Reduces all three large-k calculations to sums of log j, log(2j-1), j log j, and j log(2j-1), then supplies the expansions needed to close the proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span records the calculational interface rather than repeating the large-k theorem.",
+          "representation_dependency": "High: the reduction is clear, but exact constants in the four expansions are formula-dependent.",
+          "unit_id": "full_openalex_w2950846448_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1392,
+            "line_start": 1331,
+            "title": "Symmetry-dependent constants have explicit large-k expansions",
+            "unit_id": "full_openalex_w2950846448_u20",
+            "unit_type": "large-parameter asymptotics",
+            "why_material": "Gives distinct large-k expansions for unitary, orthogonal, and symplectic g_k and explains that their combination with Gamma asymptotics fixes the Barnes double-Gamma representations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1452,
+              "line_start": 1452,
+              "reason": "Blank transition to references."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2950846448_u21",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2950846448_u21",
+          "spontaneous_reading": "Complicated factorial-product asymptotics are reduced to a small basis of four standard sums, so Euler–Maclaurin estimates can be reused across all symmetry cases."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2950846448_u21",
+          "source_grounded_mathematics": "Product identities rewrite sums of log(j!) and log((2j)!) using sums of log j, log(2j-1), j log j, and j log(2j-1). Lemma 7.2 supplies asymptotic expansions for those four quantities, derived from Stirling and Euler–Maclaurin and including zeta-derivative constants; substituting them completes Theorem 7.1.",
+          "conceptual_reading": "The calculation is compressed by choosing a shared asymptotic basis. Once each factorial product is expressed in that basis, symmetry-specific results differ only in linear combination rather than proof method.",
+          "representation_or_bridge": "Factorial and double-factorial products bridge to additive logarithmic sums, which bridge in turn to Euler–Maclaurin expansions with controlled remainders.",
+          "boundary_or_failure": "This is a reduction and calculation interface, not an independent proof of the moment conjectures. Exact constants and remainder terms in the four extracted formulas need scan verification.",
+          "uncertainty": "High confidence in the four-sum reduction and Euler–Maclaurin method; moderate-to-high risk in exact displayed coefficients."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b371866fa503489d2c602aea39fbf68ff583d1f6bfc8010e6f2efdee18321629"
+}

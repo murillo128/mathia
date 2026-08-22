@@ -1,0 +1,3044 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_moree2018_computational_history_9a2de888_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "moree2018_computational_history",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition of pi(x), Gauss's probabilistic heuristic, Li(x), and its leading asymptotic.",
+      "line_end": 45,
+      "line_start": 12,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose and conceptual transition are stable; the displayed sum and integral are legible but should be PDF-checked before exact formula reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns observed thinning and local irregularity of primes into the reusable move of modeling a discrete count by a local density and integrating that density, yielding Li(x) and the PNT scale.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From prime tables to a local density heuristic",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u001.txt",
+      "unit_bytes": 3542,
+      "unit_id": "moree2018_computational_history_u001",
+      "unit_sha256": "c66c24a9621a2d0f2043d38ac260d1a90569698ae65cc16707bb93af3bb8265b",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u001.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4,
+          "line_end": 11,
+          "text": "                                                                 RIEMANN ZEROS\n\n                                                        PIETER MOREE, IZABELA PETRYKIEWICZ, AND ALISA SEDUNOVA\n\n\n\n\narXiv:1810.05244v1 [math.NT] 11 Oct 2018\n",
+          "sha256": "f2a633524e16e1f0d5685aa45229fa5a22b18e41dece4f9456362aa42823bd47"
+        },
+        "after": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "\n                                             2010 Mathematics Subject Classification. 11N37, 11Y60.\n                                             1\n                                              Caution! The authors are non-experts.\n                                             2\n                                              We follow the tradition to denote a prime number by the letter p.\n                                             3An ever recurring theme in analytic number theory is approximating a sum by an integral (Section 1).\n                                                                                              1\n",
+          "sha256": "e8c60907b0131f45a1ff4541d31aaa0220f540a5dbce496723dde57fbbb36416"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and prime-counting introduction",
+            "line_end": 110,
+            "line_start": 1,
+            "mathematical_role": "Defines the prime-counting problem, develops Gauss's density heuristic and Li(x), and motivates explicit estimates and the RH error scale."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 45,
+          "line_start": 12,
+          "title": "From prime tables to a local density heuristic",
+          "unit_id": "moree2018_computational_history_u001",
+          "unit_type": "motivation",
+          "why_material": "Turns observed thinning and local irregularity of primes into the reusable move of modeling a discrete count by a local density and integrating that density, yielding Li(x) and the PNT scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definition of pi(x), Gauss's probabilistic heuristic, Li(x), and its leading asymptotic.",
+          "representation_dependency": "The prose and conceptual transition are stable; the displayed sum and integral are legible but should be PDF-checked before exact formula reuse.",
+          "unit_id": "moree2018_computational_history_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 91,
+            "line_start": 59,
+            "title": "Why sharp prime-counting estimates make RH operational",
+            "unit_id": "moree2018_computational_history_u002",
+            "unit_type": "motivation-and-bound",
+            "why_material": "Connects historical tabulation to explicit inequalities and explains that RH matters computationally because it controls the approximation error in replacing pi(x) by Li(x), not merely because it locates zeros."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes examples of unconditional bounds and the stated RH-conditional error bound.",
+      "line_end": 91,
+      "line_start": 59,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-bearing text with degraded spacing and superscripts; the qualitative error-scale comparison is recoverable, while constants require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects historical tabulation to explicit inequalities and explains that RH matters computationally because it controls the approximation error in replacing pi(x) by Li(x), not merely because it locates zeros.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why sharp prime-counting estimates make RH operational",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u002.txt",
+      "unit_bytes": 2662,
+      "unit_id": "moree2018_computational_history_u002",
+      "unit_sha256": "78cdd916f05fe2ff39e00c3e5c765e94db7cd81e4074ee00d9d6d5d2bf91d525",
+      "unit_type": "motivation-and-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u002.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 51,
+          "line_end": 58,
+          "text": "                                              We follow the tradition to denote a prime number by the letter p.\n                                             3An ever recurring theme in analytic number theory is approximating a sum by an integral (Section 1).\n                                                                                              1\n\n<!-- source-page: 2 -->\n\n2                         P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA\n\n",
+          "sha256": "a65fd6d8a58fa0344aac83b9228243902512204d23727962eeeb0e2be5df19ca"
+        },
+        "after": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "    4Jacques Salomon Hadamard (1865 Versailles, France – 1963 in Paris, France), French mathematician,\n\nprofessor at the University of Bordeaux, Collège de France, École Polytechnique and École Centrale.\n   5Charles Jean Gustave Nicolas Baron de la Vallée-Poussin (1866 Leuven, Belgium – 1962 Leuven,\nBelgium), Belgian mathematician, professor at Catholic University of Leuven, Collège de France and\nSorbonne.\n   6August Leopold Crelle (1780 Eichwerder, Germany – 1855 Berlin, Germany), German mathematician,\nfounder of Journal für die reine und angewandte Mathematik.\n",
+          "sha256": "f7865fc11e1a8a5580ee0af846e49400afc55080fa933aeae2d7bd1babc57fab"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and prime-counting introduction",
+            "line_end": 110,
+            "line_start": 1,
+            "mathematical_role": "Defines the prime-counting problem, develops Gauss's density heuristic and Li(x), and motivates explicit estimates and the RH error scale."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 91,
+          "line_start": 59,
+          "title": "Why sharp prime-counting estimates make RH operational",
+          "unit_id": "moree2018_computational_history_u002",
+          "unit_type": "motivation-and-bound",
+          "why_material": "Connects historical tabulation to explicit inequalities and explains that RH matters computationally because it controls the approximation error in replacing pi(x) by Li(x), not merely because it locates zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes examples of unconditional bounds and the stated RH-conditional error bound.",
+          "representation_dependency": "Formula-bearing text with degraded spacing and superscripts; the qualitative error-scale comparison is recoverable, while constants require PDF verification.",
+          "unit_id": "moree2018_computational_history_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 45,
+            "line_start": 12,
+            "title": "From prime tables to a local density heuristic",
+            "unit_id": "moree2018_computational_history_u001",
+            "unit_type": "motivation",
+            "why_material": "Turns observed thinning and local irregularity of primes into the reusable move of modeling a discrete count by a local density and integrating that density, yielding Li(x) and the PNT scale."
+          },
+          {
+            "line_end": 175,
+            "line_start": 111,
+            "title": "Complex analysis as the decisive representation change",
+            "unit_id": "moree2018_computational_history_u003",
+            "unit_type": "historical-change",
+            "why_material": "Shows how replacing a real-variable counting problem by a complex analytic function changed what could be proved, while the later elementary PNT proof demonstrates that alternate representations can recover a theorem without reproducing the same insight."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 110,
+              "line_start": 92,
+              "reason": "Biographical footnotes, page boundary, and running header supporting the surrounding history."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes zeta's initial Dirichlet-series definition, Riemann's analytic shift, the maturation of complex methods, and the Selberg-Erdos elementary contrast.",
+      "line_end": 175,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core prose is reliable; the zeta series and Selberg identity are formula-sensitive and should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how replacing a real-variable counting problem by a complex analytic function changed what could be proved, while the later elementary PNT proof demonstrates that alternate representations can recover a theorem without reproducing the same insight.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Complex analysis as the decisive representation change",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u003.txt",
+      "unit_bytes": 4430,
+      "unit_id": "moree2018_computational_history_u003",
+      "unit_sha256": "32b43946373f4d56ac691aa9fcb51f7c4ba4d940b74562f8caf1652aa5106d9c",
+      "unit_type": "historical-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u003.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 103,
+          "line_end": 110,
+          "text": "ematician, professor at the Charles University of Prague.\n   9Adrien-Marie Legendre (1752 Paris, France – 1833 Paris, France), French mathematician and author\nof an influential number theory book.\n\n<!-- source-page: 3 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                         3\n\n",
+          "sha256": "9547b62309cc9c821b41c58ad1c210229e5e9c08198d7cc16a6d4649f2c15f81"
+        },
+        "after": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "   Using partial integration it is easy to deduce that for Res > 0 an analytic continuation\nof ζ(s) is given by\n                                                Z ∞\n                                         s           t − btc\n                               ζ(s) =        −s              dt,                        (3)\n                                       s−1       1     t1+s\nwith btc being the floor function. Another analytic continuation is obtained on noting that\nfor Res > 1 we have\n",
+          "sha256": "865c24f3d9a459c771aebbd86c633053f6aee1472603db64a42151d00b4cf488"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic foundations of zeta and RH",
+            "line_end": 266,
+            "line_start": 111,
+            "mathematical_role": "Introduces zeta as a complex analytic object, analytic continuation, functional equation, xi, zero symmetries, RH, and the Euler-product bridge to primes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 175,
+          "line_start": 111,
+          "title": "Complex analysis as the decisive representation change",
+          "unit_id": "moree2018_computational_history_u003",
+          "unit_type": "historical-change",
+          "why_material": "Shows how replacing a real-variable counting problem by a complex analytic function changed what could be proved, while the later elementary PNT proof demonstrates that alternate representations can recover a theorem without reproducing the same insight."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes zeta's initial Dirichlet-series definition, Riemann's analytic shift, the maturation of complex methods, and the Selberg-Erdos elementary contrast.",
+          "representation_dependency": "Core prose is reliable; the zeta series and Selberg identity are formula-sensitive and should be checked against the PDF.",
+          "unit_id": "moree2018_computational_history_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 91,
+            "line_start": 59,
+            "title": "Why sharp prime-counting estimates make RH operational",
+            "unit_id": "moree2018_computational_history_u002",
+            "unit_type": "motivation-and-bound",
+            "why_material": "Connects historical tabulation to explicit inequalities and explains that RH matters computationally because it controls the approximation error in replacing pi(x) by Li(x), not merely because it locates zeros."
+          },
+          {
+            "line_end": 220,
+            "line_start": 176,
+            "title": "Completion of zeta into a symmetric entire function",
+            "unit_id": "moree2018_computational_history_u004",
+            "unit_type": "construction",
+            "why_material": "Combines analytic continuation, pole cancellation, Gamma factors, and Hadamard factorization into the reusable construction of a completed function whose zeros are exactly the nontrivial zeros and whose symmetry is manifest."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 110,
+              "line_start": 92,
+              "reason": "Biographical footnotes, page boundary, and running header supporting the surrounding history."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes two continuation routes, the functional equation, construction of xi, and its product over zeros.",
+      "line_end": 220,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several formulas have extraction damage; the prose establishes the construction, but exact normalizations and product factors require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines analytic continuation, pole cancellation, Gamma factors, and Hadamard factorization into the reusable construction of a completed function whose zeros are exactly the nontrivial zeros and whose symmetry is manifest.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completion of zeta into a symmetric entire function",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u004.txt",
+      "unit_bytes": 2697,
+      "unit_id": "moree2018_computational_history_u004",
+      "unit_sha256": "99171dedb77b473a060665e84eafd8b53895f25a394f50f60dc7508053a19da6",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u004.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "(e.g., by Landau) that no such elementary proof could be developed and so this result\ngreatly impressed the contemporaries. Later Selberg extended this combinatorial technique\nto show the PNT for primes in arithmetic progression, see [68]. For a nice survey see\nDiamond [18]. Unfortunately, the high hopes placed in new insights coming from finding\nan elementary proof of PNT were thwarted.\n   The level of insight that Riemann had reached was finally surpassed by Hardy and\nLittlewood in the 1920’s. As far as his zeta function is concerned, Riemann was certainly\nmore than half a century ahead of his time!\n",
+          "sha256": "69e281a9daa3b1b0b56a4f6397c2744115baf71dfddd59159185fae7105a2d34"
+        },
+        "after": {
+          "line_start": 221,
+          "line_end": 228,
+          "text": "   Riemann gave two beautiful proofs of the functional equation; one is related to the theory\nof modular forms and makes use of the transformation property Ω(x) = x−1/2 Ω(x−1 ), valid\nfor all positive x, with\n                                             ∞\n                                                    2\n                                            X\n                                  Ω(x) =         e−n πx ,\n                                                   n=−∞\n",
+          "sha256": "fb18c59ce0c82f9874a91e4b3231ef8b07249eac369e18b26e275024ff587be1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic foundations of zeta and RH",
+            "line_end": 266,
+            "line_start": 111,
+            "mathematical_role": "Introduces zeta as a complex analytic object, analytic continuation, functional equation, xi, zero symmetries, RH, and the Euler-product bridge to primes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 220,
+          "line_start": 176,
+          "title": "Completion of zeta into a symmetric entire function",
+          "unit_id": "moree2018_computational_history_u004",
+          "unit_type": "construction",
+          "why_material": "Combines analytic continuation, pole cancellation, Gamma factors, and Hadamard factorization into the reusable construction of a completed function whose zeros are exactly the nontrivial zeros and whose symmetry is manifest."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes two continuation routes, the functional equation, construction of xi, and its product over zeros.",
+          "representation_dependency": "Several formulas have extraction damage; the prose establishes the construction, but exact normalizations and product factors require PDF verification.",
+          "unit_id": "moree2018_computational_history_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 111,
+            "title": "Complex analysis as the decisive representation change",
+            "unit_id": "moree2018_computational_history_u003",
+            "unit_type": "historical-change",
+            "why_material": "Shows how replacing a real-variable counting problem by a complex analytic function changed what could be proved, while the later elementary PNT proof demonstrates that alternate representations can recover a theorem without reproducing the same insight."
+          },
+          {
+            "line_end": 243,
+            "line_start": 221,
+            "title": "Zero symmetries and the finite-height RH target",
+            "unit_id": "moree2018_computational_history_u005",
+            "unit_type": "definition-and-symmetry",
+            "why_material": "Derives the fourfold symmetry of nontrivial zeros from the functional equation and conjugation, then turns the global RH into the finite computational property 'RH up to height T'."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 213,
+              "line_start": 207,
+              "reason": "Gamma notation footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transformation argument and terminology for critical zeros and finite-height verification are self-contained here.",
+      "line_end": 243,
+      "line_start": 221,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theta-series display is formula-dependent, but the zero-symmetry and finite-height definitions are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the fourfold symmetry of nontrivial zeros from the functional equation and conjugation, then turns the global RH into the finite computational property 'RH up to height T'.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero symmetries and the finite-height RH target",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u005.txt",
+      "unit_bytes": 1728,
+      "unit_id": "moree2018_computational_history_u005",
+      "unit_sha256": "788dc84172ce3977916b13e6170be275a847c4ca8a1ff512447cde1208616707",
+      "unit_type": "definition-and-symmetry",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u005.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 213,
+          "line_end": 220,
+          "text": "\nWe have the following Hadamard factorisation of ξ:\n                                                                   Y\n                    ξ(s) = s(s − 1)Γ(s/2)π −s/2 ζ(s) = ξ(0)             (1 − s/ρ) es/ρ ,\n                                                                    ρ\n\nwhere here (and in the sequel) the zeros ρ are counted with their own multiplicities, e.g.,\na double zero is counted twice.\n",
+          "sha256": "9f0ee91b1e466fe22164ff1f570bfd4cab2d070cf69b8b740efed7c3950b6632"
+        },
+        "after": {
+          "line_start": 244,
+          "line_end": 251,
+          "text": "   Solving RH is one of the famous 23 problems posed by Hilbert at the 1900 International\nCongress of Mathematicians in Paris. These problems held their fascination and influence\non the developments through the twentieth century [17]. Resolving RH is one of seven\nMillennium Prize Problems that were stated by the Clay Mathematics Institute in 2000.\nA correct solution to any of the problems results in a 1 000 000 dollar prize being awarded\nby this institute [8]. Many mathematicians regard RH as the biggest open problem in all\nof mathematics.\n   The behaviour of ζ(s) in the critical strip is very closely related to the distributional\n",
+          "sha256": "e65db991224432c0ec739d52146e5b5346b20706483f90b4ef3953444d517405"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic foundations of zeta and RH",
+            "line_end": 266,
+            "line_start": 111,
+            "mathematical_role": "Introduces zeta as a complex analytic object, analytic continuation, functional equation, xi, zero symmetries, RH, and the Euler-product bridge to primes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 243,
+          "line_start": 221,
+          "title": "Zero symmetries and the finite-height RH target",
+          "unit_id": "moree2018_computational_history_u005",
+          "unit_type": "definition-and-symmetry",
+          "why_material": "Derives the fourfold symmetry of nontrivial zeros from the functional equation and conjugation, then turns the global RH into the finite computational property 'RH up to height T'."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The transformation argument and terminology for critical zeros and finite-height verification are self-contained here.",
+          "representation_dependency": "The theta-series display is formula-dependent, but the zero-symmetry and finite-height definitions are clear in prose.",
+          "unit_id": "moree2018_computational_history_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 220,
+            "line_start": 176,
+            "title": "Completion of zeta into a symmetric entire function",
+            "unit_id": "moree2018_computational_history_u004",
+            "unit_type": "construction",
+            "why_material": "Combines analytic continuation, pole cancellation, Gamma factors, and Hadamard factorization into the reusable construction of a completed function whose zeros are exactly the nontrivial zeros and whose symmetry is manifest."
+          },
+          {
+            "line_end": 319,
+            "line_start": 251,
+            "title": "Euler products and explicit prime counts from zeros",
+            "unit_id": "moree2018_computational_history_u006",
+            "unit_type": "bridge-construction",
+            "why_material": "Makes prime factorization analytic through the Euler product and then reverses the bridge with Riemann's explicit formula, representing prime counts as a smooth main term corrected by contributions from every nontrivial zero."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 213,
+              "line_start": 207,
+              "reason": "Gamma notation footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Euler-product interpretation, the PNT zero-free-line criterion, R(x), Mobius inversion, and the computational series for R.",
+      "line_end": 319,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed products, sums, and exponents are central and partially degraded; conceptual use is safe from prose, exact formula use needs PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes prime factorization analytic through the Euler product and then reverses the bridge with Riemann's explicit formula, representing prime counts as a smooth main term corrected by contributions from every nontrivial zero.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler products and explicit prime counts from zeros",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u006.txt",
+      "unit_bytes": 4594,
+      "unit_id": "moree2018_computational_history_u006",
+      "unit_sha256": "d5a3e3e315b1f7f6de95b5046c2efb280d3a18f999743b8541f941c1d977fb61",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u006.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "say that RH up to height T holds true.\n   Solving RH is one of the famous 23 problems posed by Hilbert at the 1900 International\nCongress of Mathematicians in Paris. These problems held their fascination and influence\non the developments through the twentieth century [17]. Resolving RH is one of seven\nMillennium Prize Problems that were stated by the Clay Mathematics Institute in 2000.\nA correct solution to any of the problems results in a 1 000 000 dollar prize being awarded\nby this institute [8]. Many mathematicians regard RH as the biggest open problem in all\nof mathematics.\n",
+          "sha256": "95e42657b16b5869ba8f4634512e5c43d4beb0e586a6a247045b45cb7d104766"
+        },
+        "after": {
+          "line_start": 320,
+          "line_end": 327,
+          "text": "<!-- source-page: 7 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                                7\n\n   It turns out that, from a theoretical perspective, it is better to work with certain\nweighted prime counting functions rather than with π(x) (that is, each\n                                                                    P prime p is counted\nwith a weight w(p)). The most well-known of these are ϑ(x) = p≤x log p and ψ(x) =\n",
+          "sha256": "0fbe54190afd678d1bc28295f39e262aeb8aa980a308caffa3394d1d7229ee93"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic foundations of zeta and RH",
+            "line_end": 266,
+            "line_start": 111,
+            "mathematical_role": "Introduces zeta as a complex analytic object, analytic continuation, functional equation, xi, zero symmetries, RH, and the Euler-product bridge to primes."
+          },
+          {
+            "label": "Prime-zero explicit formulas and error terms",
+            "line_end": 430,
+            "line_start": 267,
+            "mathematical_role": "Compares prime-counting approximants, introduces weighted counts, explicit formulas, equivalent RH error criteria, zero-free regions, and probabilistic prime heuristics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 319,
+          "line_start": 251,
+          "title": "Euler products and explicit prime counts from zeros",
+          "unit_id": "moree2018_computational_history_u006",
+          "unit_type": "bridge-construction",
+          "why_material": "Makes prime factorization analytic through the Euler product and then reverses the bridge with Riemann's explicit formula, representing prime counts as a smooth main term corrected by contributions from every nontrivial zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Euler-product interpretation, the PNT zero-free-line criterion, R(x), Mobius inversion, and the computational series for R.",
+          "representation_dependency": "Displayed products, sums, and exponents are central and partially degraded; conceptual use is safe from prose, exact formula use needs PDF checking.",
+          "unit_id": "moree2018_computational_history_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 243,
+            "line_start": 221,
+            "title": "Zero symmetries and the finite-height RH target",
+            "unit_id": "moree2018_computational_history_u005",
+            "unit_type": "definition-and-symmetry",
+            "why_material": "Derives the fourfold symmetry of nontrivial zeros from the functional equation and conjugation, then turns the global RH into the finite computational property 'RH up to height T'."
+          },
+          {
+            "line_end": 354,
+            "line_start": 324,
+            "title": "Weighted prime counts linearize the prime-zero bridge",
+            "unit_id": "moree2018_computational_history_u007",
+            "unit_type": "representation-change",
+            "why_material": "Explains why theta, psi, and the von Mangoldt function are more natural analytic coordinates than pi(x): logarithmic differentiation of the Euler product turns multiplicative structure into a Dirichlet series and yields a simpler explicit formula, generalized by Weil through test functions and Fourier transform."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler products encode primes into zeta, while explicit formulas decode zero data into prime counts and bounds; the real parts and verified height of zeros determine the strength and range of the decoded information.",
+            "limit": "The survey states representative formulas and applications but does not supply full derivations or error analyses, and exact formula text has extraction risk.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u006",
+              "moree2018_computational_history_u007",
+              "moree2018_computational_history_u008",
+              "moree2018_computational_history_u019",
+              "moree2018_computational_history_u020"
+            ],
+            "title": "Zeros as a bidirectional computational interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 266,
+              "line_start": 258,
+              "reason": "Notation/source footnote, page marker, and header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions, logarithmic derivative, von Mangoldt explicit formula, and Weil's test-function flexibility are included.",
+      "line_end": 354,
+      "line_start": 324,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula extraction is imperfect, especially summation indices; the semantic relation is prose-supported, but exact statements require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why theta, psi, and the von Mangoldt function are more natural analytic coordinates than pi(x): logarithmic differentiation of the Euler product turns multiplicative structure into a Dirichlet series and yields a simpler explicit formula, generalized by Weil through test functions and Fourier transform.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted prime counts linearize the prime-zero bridge",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u007.txt",
+      "unit_bytes": 2219,
+      "unit_id": "moree2018_computational_history_u007",
+      "unit_sha256": "523783a8c30c5e95c6253b539397c9f849be0435611fab9eea8aaa8525879462",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u007.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 316,
+          "line_end": 323,
+          "text": "    23Gauss in 1796 conjectured, and Mertens proved in 1874 the stronger result that P           −1\n                                                                                         p≤x p        = log log x+\nC + o(1), with C a constant.\n\n<!-- source-page: 7 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                                7\n\n",
+          "sha256": "d422a08c7e643ecfd85211a754c2ba37fea3731c19bce238fc9d5fc6a587c393"
+        },
+        "after": {
+          "line_start": 355,
+          "line_end": 362,
+          "text": "   Note that |xρ | = xReρ and consideration of the explicit formula suggests that lim sup Reρ\ndetermines the error term. Due to the existence of critical zeros, the minimum possible\nvalue of the latter quantity is a half. We have lim sup Reρ = 1/2 if and only if the RH\nholds true26.       P\n   Note that if the    1/|ρ| were to be bounded, with ρ ranging √ over all critical zeros, then\nit would follow from (9) that on RH we have ψ(x) = x + O( x). However, this sum does\nnot converge, but a slightly weaker result is true, namely\n                                   X xρ\n",
+          "sha256": "54896f426edf4fe1389a1e337329b5bc9ef9b67221a8ec0e9283b3c3feb3668e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Prime-zero explicit formulas and error terms",
+            "line_end": 430,
+            "line_start": 267,
+            "mathematical_role": "Compares prime-counting approximants, introduces weighted counts, explicit formulas, equivalent RH error criteria, zero-free regions, and probabilistic prime heuristics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 354,
+          "line_start": 324,
+          "title": "Weighted prime counts linearize the prime-zero bridge",
+          "unit_id": "moree2018_computational_history_u007",
+          "unit_type": "representation-change",
+          "why_material": "Explains why theta, psi, and the von Mangoldt function are more natural analytic coordinates than pi(x): logarithmic differentiation of the Euler product turns multiplicative structure into a Dirichlet series and yields a simpler explicit formula, generalized by Weil through test functions and Fourier transform."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions, logarithmic derivative, von Mangoldt explicit formula, and Weil's test-function flexibility are included.",
+          "representation_dependency": "Formula extraction is imperfect, especially summation indices; the semantic relation is prose-supported, but exact statements require the PDF.",
+          "unit_id": "moree2018_computational_history_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 319,
+            "line_start": 251,
+            "title": "Euler products and explicit prime counts from zeros",
+            "unit_id": "moree2018_computational_history_u006",
+            "unit_type": "bridge-construction",
+            "why_material": "Makes prime factorization analytic through the Euler product and then reverses the bridge with Riemann's explicit formula, representing prime counts as a smooth main term corrected by contributions from every nontrivial zero."
+          },
+          {
+            "line_end": 401,
+            "line_start": 355,
+            "title": "Zero geometry controls prime-counting error",
+            "unit_id": "moree2018_computational_history_u008",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Shows how the largest real part of a zero determines attainable error exponents, giving RH-equivalent error estimates for psi and pi and interpreting improvements as enlargement of a zero-free region."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler products encode primes into zeta, while explicit formulas decode zero data into prime counts and bounds; the real parts and verified height of zeros determine the strength and range of the decoded information.",
+            "limit": "The survey states representative formulas and applications but does not supply full derivations or error analyses, and exact formula text has extraction risk.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u006",
+              "moree2018_computational_history_u007",
+              "moree2018_computational_history_u008",
+              "moree2018_computational_history_u019",
+              "moree2018_computational_history_u020"
+            ],
+            "title": "Zeros as a bidirectional computational interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span joins the explicit-formula heuristic to conditional and unconditional error terms and an explicit zero-free region.",
+      "line_end": 401,
+      "line_start": 355,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exponent and region formulas contain OCR layout risk; qualitative implications are clear, while constants and powers should be PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how the largest real part of a zero determines attainable error exponents, giving RH-equivalent error estimates for psi and pi and interpreting improvements as enlargement of a zero-free region.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero geometry controls prime-counting error",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u008.txt",
+      "unit_bytes": 3140,
+      "unit_id": "moree2018_computational_history_u008",
+      "unit_sha256": "8e74c99e152d1074629b401b47541ccdf77e557827066484abb7c10eb07171d0",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u008.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 347,
+          "line_end": 354,
+          "text": "\nwhere the sum on the right-hand side is over all zeros (also the trivial ones!) of the Riemann\nzeta function. The explicit von Mangoldt formula was vastly generalized by André Weil.\nHis explicit formula works for a large class of test functions. The summation over the\nroots involves the test function and this then equals a sum over the primes involving the\nFourier transform of the test function. On choosing a suitable test function (depending on\nthe problem one studies), Weil’s explicit formula has actually become an important tool\nin computational prime number theory.\n",
+          "sha256": "f3e64369f9a360aa7d68b9fb1b87c3b469f1433468b25feffd2d617acf156874"
+        },
+        "after": {
+          "line_start": 402,
+          "line_end": 409,
+          "text": "   As we have seen a prime number heuristic that works well is to assume that n is a prime\nwith probability 1/ log n. Riemann’s research leads one to replace this by a more accurate\nheuristic, namely that the average value of Λ(n) equals 1. This leads us to expect that,\ne.g., ψ(x) ∼ x, which is the PNT in a different guise27. Indeed, by elementary arguments\nit can be shown that the assertions\n                                     x\n                           π(x) ∼        , ϑ(x) ∼ x, ψ(x) ∼ x,\n                                   log x\n",
+          "sha256": "b3b9995f2679225509208a59b8e8b0c6c9a9cc0f883088c0e8039b2fdc965e47"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Prime-zero explicit formulas and error terms",
+            "line_end": 430,
+            "line_start": 267,
+            "mathematical_role": "Compares prime-counting approximants, introduces weighted counts, explicit formulas, equivalent RH error criteria, zero-free regions, and probabilistic prime heuristics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 401,
+          "line_start": 355,
+          "title": "Zero geometry controls prime-counting error",
+          "unit_id": "moree2018_computational_history_u008",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Shows how the largest real part of a zero determines attainable error exponents, giving RH-equivalent error estimates for psi and pi and interpreting improvements as enlargement of a zero-free region."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span joins the explicit-formula heuristic to conditional and unconditional error terms and an explicit zero-free region.",
+          "representation_dependency": "Exponent and region formulas contain OCR layout risk; qualitative implications are clear, while constants and powers should be PDF-verified.",
+          "unit_id": "moree2018_computational_history_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 354,
+            "line_start": 324,
+            "title": "Weighted prime counts linearize the prime-zero bridge",
+            "unit_id": "moree2018_computational_history_u007",
+            "unit_type": "representation-change",
+            "why_material": "Explains why theta, psi, and the von Mangoldt function are more natural analytic coordinates than pi(x): logarithmic differentiation of the Euler product turns multiplicative structure into a Dirichlet series and yields a simpler explicit formula, generalized by Weil through test functions and Fourier transform."
+          },
+          {
+            "line_end": 420,
+            "line_start": 402,
+            "title": "Average von Mangoldt mass unifies PNT guises and predicts R(x)",
+            "unit_id": "moree2018_computational_history_u009",
+            "unit_type": "heuristic-and-equivalence",
+            "why_material": "Reframes primality density as the mean-value heuristic Lambda(n)≈1, derives equivalent PNT formulations, and uses prime-power weighting plus Mobius inversion to explain why R(x) is a better finite approximation than a bare integral."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler products encode primes into zeta, while explicit formulas decode zero data into prime counts and bounds; the real parts and verified height of zeros determine the strength and range of the decoded information.",
+            "limit": "The survey states representative formulas and applications but does not supply full derivations or error analyses, and exact formula text has extraction risk.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u006",
+              "moree2018_computational_history_u007",
+              "moree2018_computational_history_u008",
+              "moree2018_computational_history_u019",
+              "moree2018_computational_history_u020"
+            ],
+            "title": "Zeros as a bidirectional computational interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 378,
+              "line_start": 369,
+              "reason": "Interpretive footnotes, biography, page marker, and header."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the three equivalent PNT forms and the heuristic passage from Pi(x) to R(x).",
+      "line_end": 420,
+      "line_start": 402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed identities are readable at the level of structure; exact summation notation should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes primality density as the mean-value heuristic Lambda(n)≈1, derives equivalent PNT formulations, and uses prime-power weighting plus Mobius inversion to explain why R(x) is a better finite approximation than a bare integral.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Average von Mangoldt mass unifies PNT guises and predicts R(x)",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u009.txt",
+      "unit_bytes": 1217,
+      "unit_id": "moree2018_computational_history_u009",
+      "unit_sha256": "742f7980557c824f91c9874f84571f97f13cca20e1119838091f0a5e6086a768",
+      "unit_type": "heuristic-and-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u009.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 394,
+          "line_end": 401,
+          "text": "result with\n         √ different constants. He showed that his zero free region leads to E(x) =\nexp (−c log x), with some positive constant c. It implies that for   √ every fixed r > 1 we\n                      −r\nhave E(x) = x(log x) . This function is far from behaving like x. Indeed, it would be\nan astounding result if somebody could prove that E(x) = xα , for some α < 1. Despite\ngreat effort by many number theorists, the above result of de la Vallée-Poussin has not\nbeen much improved.\n",
+          "sha256": "3ec7bfb4f623e95b35d0cb280e6bba6627059a0932b4372cf1c20171f2d9ec6e"
+        },
+        "after": {
+          "line_start": 421,
+          "line_end": 428,
+          "text": "   From the papers Riemann left us, it transpires that his computational skills were amaz-\ning and that he (being a perfectionist) kept a lot of his findings up his sleeve28. In a\nletter to Weierstrass from 1859 Riemann mentioned that he discovered new expansions\n    27Recall that ψ(x) = P\n                            n≤x Λ(n).\n    28Unfortunately a lot of his notes were burnt after his death by his housekeeper. A true treasure trove\nthat went up in cinders!\n\n",
+          "sha256": "6eed75e448e2319e172680e634da01a33e1bb446dbabe63e7d7e0c36287f324d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Prime-zero explicit formulas and error terms",
+            "line_end": 430,
+            "line_start": 267,
+            "mathematical_role": "Compares prime-counting approximants, introduces weighted counts, explicit formulas, equivalent RH error criteria, zero-free regions, and probabilistic prime heuristics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 420,
+          "line_start": 402,
+          "title": "Average von Mangoldt mass unifies PNT guises and predicts R(x)",
+          "unit_id": "moree2018_computational_history_u009",
+          "unit_type": "heuristic-and-equivalence",
+          "why_material": "Reframes primality density as the mean-value heuristic Lambda(n)≈1, derives equivalent PNT formulations, and uses prime-power weighting plus Mobius inversion to explain why R(x) is a better finite approximation than a bare integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the three equivalent PNT forms and the heuristic passage from Pi(x) to R(x).",
+          "representation_dependency": "The displayed identities are readable at the level of structure; exact summation notation should be checked against the PDF.",
+          "unit_id": "moree2018_computational_history_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 401,
+            "line_start": 355,
+            "title": "Zero geometry controls prime-counting error",
+            "unit_id": "moree2018_computational_history_u008",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Shows how the largest real part of a zero determines attainable error exponents, giving RH-equivalent error estimates for psi and pi and interpreting improvements as enlargement of a zero-free region."
+          },
+          {
+            "line_end": 483,
+            "line_start": 443,
+            "title": "Three independent obligations in numerical RH verification",
+            "unit_id": "moree2018_computational_history_u010",
+            "unit_type": "problem-decomposition",
+            "why_material": "Separates computation of zeta to prescribed precision, localization of critical zeros, and proof that the localized list exhausts all zeros in the strip; this prevents numerical root finding from being mistaken for RH certification."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical recovery of the Riemann-Siegel formula supplies the transition into the three-part computational program.",
+      "line_end": 483,
+      "line_start": 443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; table values and historical numerical magnitudes are not required for the conceptual decomposition.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates computation of zeta to prescribed precision, localization of critical zeros, and proof that the localized list exhausts all zeros in the strip; this prevents numerical root finding from being mistaken for RH certification.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three independent obligations in numerical RH verification",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u010.txt",
+      "unit_bytes": 3041,
+      "unit_id": "moree2018_computational_history_u010",
+      "unit_sha256": "05563ad80064cba25d8995cef66c6fa266b3685c1524abd1c1ce509f67b2784f",
+      "unit_type": "problem-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u010.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 435,
+          "line_end": 442,
+          "text": "                       2 21.0220 7 40.9187 12 56.4462\n                       3 25.0109 8 43.3271 13 59.3470\n                       4 30.4249 9 48.0052 14 60.8318\n                       5 32.9351 10 49.7738 15 65.1125\n           Table 2. The first fifteen zeros of ζ rounded to four decimal places.\n\n\n\n",
+          "sha256": "a3213c450afa4c603725ce20fb779f0d11bd3732b7a9d3b2fc4eca3c57cddecb"
+        },
+        "after": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\n                                   1. Euler-Maclaurin formula\n   The first important result on computing non-trivial zeros dates back to 1903, when\nGram34 published a paper with a list of approximate values of 15 non-trivial zeros and the\nproof that RH is true up to height 50 [24]. He used the Euler-Maclaurin summation\nformula, a method originating in the 18th century to evaluate sums, which describes how\ngood an approximation of a sum is obtained by replacing it by the corresponding integral\n[77, Chapter 4]. A few years before the publication of his paper, he tried a more elaborate\n",
+          "sha256": "841a7f1d33261253676850bd1540ae0e49c3701b05101e556904518d2487ed52"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computational problem decomposition",
+            "line_end": 484,
+            "line_start": 431,
+            "mathematical_role": "Recovers the approximate-functional-equation lineage and separates zeta evaluation, critical-zero location, and certification that no zeros were missed."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 483,
+          "line_start": 443,
+          "title": "Three independent obligations in numerical RH verification",
+          "unit_id": "moree2018_computational_history_u010",
+          "unit_type": "problem-decomposition",
+          "why_material": "Separates computation of zeta to prescribed precision, localization of critical zeros, and proof that the localized list exhausts all zeros in the strip; this prevents numerical root finding from being mistaken for RH certification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical recovery of the Riemann-Siegel formula supplies the transition into the three-part computational program.",
+          "representation_dependency": "Mostly prose; table values and historical numerical magnitudes are not required for the conceptual decomposition.",
+          "unit_id": "moree2018_computational_history_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 420,
+            "line_start": 402,
+            "title": "Average von Mangoldt mass unifies PNT guises and predicts R(x)",
+            "unit_id": "moree2018_computational_history_u009",
+            "unit_type": "heuristic-and-equivalence",
+            "why_material": "Reframes primality density as the mean-value heuristic Lambda(n)≈1, derives equivalent PNT formulations, and uses prime-power weighting plus Mobius inversion to explain why R(x) is a better finite approximation than a bare integral."
+          },
+          {
+            "line_end": 549,
+            "line_start": 485,
+            "title": "Euler-Maclaurin evaluation with an explicit remainder budget",
+            "unit_id": "moree2018_computational_history_u011",
+            "unit_type": "algorithm",
+            "why_material": "Provides an early exact expansion for zeta in which truncation parameters and a remainder estimate convert an infinite series into prescribed-precision computation, while exposing linear growth in cost with height."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Gram's failed elaborate route, the simpler expansion, the truncation rule, error estimate, and efficiency limit.",
+      "line_end": 549,
+      "line_start": 485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent and visibly degraded in places; mechanism and cost statement are recoverable, but implementation requires checking the original PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides an early exact expansion for zeta in which truncation parameters and a remainder estimate convert an infinite series into prescribed-precision computation, while exposing linear growth in cost with height.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin evaluation with an explicit remainder budget",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u011.txt",
+      "unit_bytes": 4416,
+      "unit_id": "moree2018_computational_history_u011",
+      "unit_sha256": "bb3cb4456b21758b699a86a93ddd343df71ab3a5a871e2b92501577081580b11",
+      "unit_type": "algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u011.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 477,
+          "line_end": 484,
+          "text": "\n<!-- source-page: 10 -->\n\n10                          P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA\n\nup to height T and comparing this with the number of critical zeros found.\n  These three challenges are addressed in the following sections.\n\n",
+          "sha256": "fe84743c5c1f731ede0acd4f62a231a0b5a880b687d68e985c3f6905a90227cc"
+        },
+        "after": {
+          "line_start": 550,
+          "line_end": 557,
+          "text": "\n                                           2. Gram test\n  Now that we are able to compute ζ(s) with arbitrary precision, the next challenge is to\nlocate Riemann’s zeros. Consider the Hardy Z-function39\n                                              \u0012       \u0013\n                                        iθ(t)   1\n                                Z(t) = e ζ        + it ,                            (14)\n                                                2\n",
+          "sha256": "b9dc174cdc430d7c9be7c36f93f205fbd628101b61c07922bde945a18f7370ef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Euler-Maclaurin, Gram test, and total zero counts",
+            "line_end": 661,
+            "line_start": 485,
+            "mathematical_role": "Presents early evaluation and localization mechanisms, argument-principle counting, limitations of direct completeness tests, and partial critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 549,
+          "line_start": 485,
+          "title": "Euler-Maclaurin evaluation with an explicit remainder budget",
+          "unit_id": "moree2018_computational_history_u011",
+          "unit_type": "algorithm",
+          "why_material": "Provides an early exact expansion for zeta in which truncation parameters and a remainder estimate convert an infinite series into prescribed-precision computation, while exposing linear growth in cost with height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Gram's failed elaborate route, the simpler expansion, the truncation rule, error estimate, and efficiency limit.",
+          "representation_dependency": "Highly formula-dependent and visibly degraded in places; mechanism and cost statement are recoverable, but implementation requires checking the original PDF.",
+          "unit_id": "moree2018_computational_history_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 483,
+            "line_start": 443,
+            "title": "Three independent obligations in numerical RH verification",
+            "unit_id": "moree2018_computational_history_u010",
+            "unit_type": "problem-decomposition",
+            "why_material": "Separates computation of zeta to prescribed precision, localization of critical zeros, and proof that the localized list exhausts all zeros in the strip; this prevents numerical root finding from being mistaken for RH certification."
+          },
+          {
+            "line_end": 586,
+            "line_start": 551,
+            "title": "Hardy Z and Gram intervals turn complex zeros into sign changes",
+            "unit_id": "moree2018_computational_history_u012",
+            "unit_type": "algorithm",
+            "why_material": "Changes representation from complex zeta values to a real-valued function on the critical line, so zero localization becomes sign-change detection; Gram points provide a structured grid while neighboring double-occupied intervals show the test is heuristic rather than infallible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions of Z, theta, Gram points, the sign-change argument, and Hutchinson's exceptions are present.",
+      "line_end": 586,
+      "line_start": 551,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact phase formulas are OCR-sensitive; the real-valued reduction and sign logic are clearly supported by prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes representation from complex zeta values to a real-valued function on the critical line, so zero localization becomes sign-change detection; Gram points provide a structured grid while neighboring double-occupied intervals show the test is heuristic rather than infallible.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hardy Z and Gram intervals turn complex zeros into sign changes",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u012.txt",
+      "unit_bytes": 2760,
+      "unit_id": "moree2018_computational_history_u012",
+      "unit_sha256": "8b81839274972d15e2ccb5b022062d0bcaa7b10b7bd291ea7ee2430451ddc96f",
+      "unit_type": "algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u012.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 543,
+          "line_end": 550,
+          "text": "PRIME NUMBERS AND RIEMANN ZEROS                                         11\n\nIms. Later Backlund38 provided good bounds for the size of the estimation error for this\nmethod in terms of n, m and s.\n   This approach is simple and the computational work is proportional to Ims. However,\nin practice, it is only efficient to evaluate zeros with small imaginary part. In Sections 4,\n5 and 6 we will present more efficient algorithms to approximate ζ(s).\n\n",
+          "sha256": "3382876f66215bed60e468bac6e0ae28cf598fa45066b7fe9311047229ffd580"
+        },
+        "after": {
+          "line_start": 587,
+          "line_end": 594,
+          "text": "  38Ralf Josef Backlund (1888 Pietarsaari, Finland – 1949 Helsinki, Finland), Finnish mathematician,\nactuary, student of Lindelöf; shortly after obtaining his PhD, he quit academia to work for an insurance\ncompany; he was one of the founders of the Actuarial Society of Finland.\n   39The first to work with this function was Riemann, not Hardy.\n   40John Irwin Hutchinson (1867 Bangor, the US – 1935), American mathematician, student of Bolza,\nprofessor at Cornell University.\n\n<!-- source-page: 12 -->\n",
+          "sha256": "c4b9cb96ca263e29e966a06defd50db5d83ebafea8d001b83574aa5f835ea897"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Euler-Maclaurin, Gram test, and total zero counts",
+            "line_end": 661,
+            "line_start": 485,
+            "mathematical_role": "Presents early evaluation and localization mechanisms, argument-principle counting, limitations of direct completeness tests, and partial critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 586,
+          "line_start": 551,
+          "title": "Hardy Z and Gram intervals turn complex zeros into sign changes",
+          "unit_id": "moree2018_computational_history_u012",
+          "unit_type": "algorithm",
+          "why_material": "Changes representation from complex zeta values to a real-valued function on the critical line, so zero localization becomes sign-change detection; Gram points provide a structured grid while neighboring double-occupied intervals show the test is heuristic rather than infallible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions of Z, theta, Gram points, the sign-change argument, and Hutchinson's exceptions are present.",
+          "representation_dependency": "Exact phase formulas are OCR-sensitive; the real-valued reduction and sign logic are clearly supported by prose.",
+          "unit_id": "moree2018_computational_history_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 549,
+            "line_start": 485,
+            "title": "Euler-Maclaurin evaluation with an explicit remainder budget",
+            "unit_id": "moree2018_computational_history_u011",
+            "unit_type": "algorithm",
+            "why_material": "Provides an early exact expansion for zeta in which truncation parameters and a remainder estimate convert an infinite series into prescribed-precision computation, while exposing linear growth in cost with height."
+          },
+          {
+            "line_end": 639,
+            "line_start": 598,
+            "title": "Counting all zeros is the completeness half of RH computation",
+            "unit_id": "moree2018_computational_history_u013",
+            "unit_type": "certification-method",
+            "why_material": "Uses N(T), an argument-principle integral, and the theta-plus-S(T) formula to compare all strip zeros with found critical zeros, while identifying contour nonvanishing and unbounded S(T) as obstructions to the early method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 597,
+              "line_start": 587,
+              "reason": "Biographical notes and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Gram's moment-style completeness check, von Mangoldt's zero-count asymptotic, Backlund's formula, and the reasons it was superseded.",
+      "line_end": 639,
+      "line_start": 598,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed formulas are extraction-damaged; the certification logic and obstructions are explicit in prose, but exact contours and constants need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses N(T), an argument-principle integral, and the theta-plus-S(T) formula to compare all strip zeros with found critical zeros, while identifying contour nonvanishing and unbounded S(T) as obstructions to the early method.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Counting all zeros is the completeness half of RH computation",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u013.txt",
+      "unit_bytes": 2988,
+      "unit_id": "moree2018_computational_history_u013",
+      "unit_sha256": "3ada8f6b459e173796592ddc12325179e3c809223cb748578ef8f2fce9e0714f",
+      "unit_type": "certification-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u013.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 590,
+          "line_end": 597,
+          "text": "   39The first to work with this function was Riemann, not Hardy.\n   40John Irwin Hutchinson (1867 Bangor, the US – 1935), American mathematician, student of Bolza,\nprofessor at Cornell University.\n\n<!-- source-page: 12 -->\n\n12                           P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA\n\n",
+          "sha256": "4ddda22bbfcefdb8ff66dbf3ffd260c3f64723f0572acee5d65cd38dfb7fdd94"
+        },
+        "after": {
+          "line_start": 640,
+          "line_end": 647,
+          "text": "   We note that the above approach to verify the RH numerically up to a certain height\nwill fail if zeta has zeros that are not simple. It is conjectured that actually the Riemann\nzeta function has only simple zeros. The reader might regard this as wishful thinking,\nbut Random Matrix Theory, in particular Montgomery’s pair correlation conjecture, see\nSection 9.4, strongly suggests that all the zeros are simple. It is also a numerical observation\nthat the critical zeros ‘repel’ each other.\n   We would like to conclude this section by recalling some major results involving N (T ),\n     41It is only a quarter rectangle and this is related to the four fold symmetry of the zeta roots.\n",
+          "sha256": "e4340d3c980fcfa990e00d1d9ca768a5eb40f1f3b7051911c4e7161a8c45be3a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Euler-Maclaurin, Gram test, and total zero counts",
+            "line_end": 661,
+            "line_start": 485,
+            "mathematical_role": "Presents early evaluation and localization mechanisms, argument-principle counting, limitations of direct completeness tests, and partial critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 639,
+          "line_start": 598,
+          "title": "Counting all zeros is the completeness half of RH computation",
+          "unit_id": "moree2018_computational_history_u013",
+          "unit_type": "certification-method",
+          "why_material": "Uses N(T), an argument-principle integral, and the theta-plus-S(T) formula to compare all strip zeros with found critical zeros, while identifying contour nonvanishing and unbounded S(T) as obstructions to the early method."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Gram's moment-style completeness check, von Mangoldt's zero-count asymptotic, Backlund's formula, and the reasons it was superseded.",
+          "representation_dependency": "Several displayed formulas are extraction-damaged; the certification logic and obstructions are explicit in prose, but exact contours and constants need PDF verification.",
+          "unit_id": "moree2018_computational_history_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 586,
+            "line_start": 551,
+            "title": "Hardy Z and Gram intervals turn complex zeros into sign changes",
+            "unit_id": "moree2018_computational_history_u012",
+            "unit_type": "algorithm",
+            "why_material": "Changes representation from complex zeta values to a real-valued function on the critical line, so zero localization becomes sign-change detection; Gram points provide a structured grid while neighboring double-occupied intervals show the test is heuristic rather than infallible."
+          },
+          {
+            "line_end": 660,
+            "line_start": 641,
+            "title": "Simplicity assumptions and partial critical-line theorems",
+            "unit_id": "moree2018_computational_history_u014",
+            "unit_type": "limitation-and-partial-result",
+            "why_material": "Records that a direct numerical scheme can fail in the presence of multiple zeros and distinguishes statistical evidence for simplicity from rigorous lower bounds on the fraction of zeros known to lie on the critical line."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 597,
+              "line_start": 587,
+              "reason": "Biographical notes and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Links the computational limitation to pair-correlation intuition and summarizes the progression from infinitely many to positive proportions.",
+      "line_end": 660,
+      "line_start": 641,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; numerical constants for the proportions are legible and should be source-checked if used quantitatively.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records that a direct numerical scheme can fail in the presence of multiple zeros and distinguishes statistical evidence for simplicity from rigorous lower bounds on the fraction of zeros known to lie on the critical line.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simplicity assumptions and partial critical-line theorems",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u014.txt",
+      "unit_bytes": 1393,
+      "unit_id": "moree2018_computational_history_u014",
+      "unit_sha256": "d6176a81029b8728c2a099f344762af5ec825e78baea029d8b1d2990d666b094",
+      "unit_type": "limitation-and-partial-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u014.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 633,
+          "line_end": 640,
+          "text": "Backlund [2, 3] himself proved that N (200) = 79 and, using Gram’s approach, showed that\nall these zeros lie on the half line. Hutchinson also used this method to show that there\nare no more zeros with 0 < Im(s) < 300 other than the ones he found. The problem with\nthe approach of Backlund is to find a T such that Reζ is non-zero on C. This is a difficult\ntask. Even worse is the fact that S(T ) can get arbitrarily large, so that infinitely often one\nwill pick a T for which |S(T )| > 1/2. For these two reasons, nowadays a better method\ndeveloped by Turing half a century later is used (see Section 5).\n   We note that the above approach to verify the RH numerically up to a certain height\n",
+          "sha256": "355ad872f8888f6f778119e33d967d12f4fedc15c49e9b3325fd6c481cf0d77d"
+        },
+        "after": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "\n                                   4. Riemann-Siegel formula\n   In 1932 Siegel [69] published the results on the Riemann zeta function found in the notes\nof Riemann stored in the archives of the Göttingen University Library. The following\nidentity was discovered by Riemann. We start by showing the validity of the integral\nrepresentation\n                                        Γ(−s) +∞ (−x)s dx\n                                               Z\n",
+          "sha256": "f9422faaa4add90cfd1a9ed01f57b783f8be4af4a7799c905cd75ece96d83d3d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Euler-Maclaurin, Gram test, and total zero counts",
+            "line_end": 661,
+            "line_start": 485,
+            "mathematical_role": "Presents early evaluation and localization mechanisms, argument-principle counting, limitations of direct completeness tests, and partial critical-line results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 660,
+          "line_start": 641,
+          "title": "Simplicity assumptions and partial critical-line theorems",
+          "unit_id": "moree2018_computational_history_u014",
+          "unit_type": "limitation-and-partial-result",
+          "why_material": "Records that a direct numerical scheme can fail in the presence of multiple zeros and distinguishes statistical evidence for simplicity from rigorous lower bounds on the fraction of zeros known to lie on the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Links the computational limitation to pair-correlation intuition and summarizes the progression from infinitely many to positive proportions.",
+          "representation_dependency": "Prose-dominant; numerical constants for the proportions are legible and should be source-checked if used quantitatively.",
+          "unit_id": "moree2018_computational_history_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 639,
+            "line_start": 598,
+            "title": "Counting all zeros is the completeness half of RH computation",
+            "unit_id": "moree2018_computational_history_u013",
+            "unit_type": "certification-method",
+            "why_material": "Uses N(T), an argument-principle integral, and the theta-plus-S(T) formula to compare all strip zeros with found critical zeros, while identifying contour nonvanishing and unbounded S(T) as obstructions to the early method."
+          },
+          {
+            "line_end": 724,
+            "line_start": 662,
+            "title": "Riemann-Siegel: short oscillatory sum plus controlled remainder",
+            "unit_id": "moree2018_computational_history_u015",
+            "unit_type": "algorithm",
+            "why_material": "Derives a fast critical-line evaluation by two treatments of a contour integral and a saddle-point expansion, reducing zeta evaluation to a short cosine sum plus a remainder whose rigorous bound enables finite-height RH checks."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation and random-matrix analogies organize predictions about simplicity, repulsion, and moments and are checked against high-zero computations, but agreement remains conjectural evidence unless independently proved.",
+            "limit": "The source does not justify the random-matrix dictionary in general and explicitly warns that it may fail outside tested regimes.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u014",
+              "moree2018_computational_history_u028",
+              "moree2018_computational_history_u029"
+            ],
+            "title": "Statistical zero models generate testable mathematics without becoming proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contour representation, transformation to Z(t), remainder expansion, and Titchmarsh's explicit bound.",
+      "line_end": 724,
+      "line_start": 662,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This is heavily formula-dependent and extraction has disrupted roots, floors, and coefficients; exact mathematical reuse requires scan/PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a fast critical-line evaluation by two treatments of a contour integral and a saddle-point expansion, reducing zeta evaluation to a short cosine sum plus a remainder whose rigorous bound enables finite-height RH checks.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel: short oscillatory sum plus controlled remainder",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u015.txt",
+      "unit_bytes": 3538,
+      "unit_id": "moree2018_computational_history_u015",
+      "unit_sha256": "8ea65a08739c7b69cd51a8937485a48420612e93c7c1b8c8a4ada82a5cc37c05",
+      "unit_type": "algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u015.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 654,
+          "line_end": 661,
+          "text": "there are infinitely many critical zeros. Even more, in 1921 he showed with Littlewood\nthat N0 (T ) ≥ c1 T with c1 a positive constant and T ≥ 15. In 1942 Selberg showed that\na positive fraction of all non-trivial zeros are critical, that is that N0 (T ) ≥ c2 N (T ) with\nc2 > 0. Selberg’s ideas lead to a tiny value of c2 of about 7 · 10−8 (as was worked out by S.\nMin in his PhD thesis). In the mid 1970’s Levinson42 caused a sensation by showing that\none can take c2 = 0.3474. It was later improved to 0.4088 by Conrey [9], 0.4105 by Bui,\nConrey and Young [7], and 0.4128 by Feng [22].\n\n",
+          "sha256": "6f0969d5b692e8f8024d8c39237a777cd34a7fdb7dddf43749b8d2308fb9d80a"
+        },
+        "after": {
+          "line_start": 725,
+          "line_end": 732,
+          "text": "\n                                      5. Turing’s method\n  After Siegel’s publication in 1932 of the Riemann-Siegel formula, Titchmarsh obtained\na grant for large scale computation of the non-trivial zeros. Making use of this formula,\ntabulating machines and “computers” (as the mostly female operators of such machines\nwere called in those days), Titchmarsh established that the 1 041 non-trivial zeros up to\nheight 1 468 are all critical. Turing45, who from his student days onwards was interested\nin the zeros of the Riemann zeta function, became interested in extending Titchmarsh’s\n",
+          "sha256": "de814470252de5f9d09e2aa764d331134452ba6a64aed10e84e4b6fd4fb63d72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel, Turing, Odlyzko-Schoenhage, and computational history",
+            "line_end": 864,
+            "line_start": 662,
+            "mathematical_role": "Develops faster single- and multi-point evaluation, rigorous completeness certification, complexity comparisons, and provenance of large computations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 724,
+          "line_start": 662,
+          "title": "Riemann-Siegel: short oscillatory sum plus controlled remainder",
+          "unit_id": "moree2018_computational_history_u015",
+          "unit_type": "algorithm",
+          "why_material": "Derives a fast critical-line evaluation by two treatments of a contour integral and a saddle-point expansion, reducing zeta evaluation to a short cosine sum plus a remainder whose rigorous bound enables finite-height RH checks."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the contour representation, transformation to Z(t), remainder expansion, and Titchmarsh's explicit bound.",
+          "representation_dependency": "This is heavily formula-dependent and extraction has disrupted roots, floors, and coefficients; exact mathematical reuse requires scan/PDF verification.",
+          "unit_id": "moree2018_computational_history_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 660,
+            "line_start": 641,
+            "title": "Simplicity assumptions and partial critical-line theorems",
+            "unit_id": "moree2018_computational_history_u014",
+            "unit_type": "limitation-and-partial-result",
+            "why_material": "Records that a direct numerical scheme can fail in the presence of multiple zeros and distinguishes statistical evidence for simplicity from rigorous lower bounds on the fraction of zeros known to lie on the critical line."
+          },
+          {
+            "line_end": 789,
+            "line_start": 726,
+            "title": "Turing's averaged discrepancy detects missed zeros",
+            "unit_id": "moree2018_computational_history_u016",
+            "unit_type": "certification-method",
+            "why_material": "Replaces fragile pointwise control of the zero-count error by an averaged bound: if critical zeros were missed, the observed discrepancy would acquire a persistent offset contradicting the integral estimate, so searching only slightly beyond T certifies completeness below T."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical narrative motivates the method; the decisive mechanism is the comparison of N with the observed count through averaged S(t).",
+      "line_end": 789,
+      "line_start": 726,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral inequality is formula-sensitive but legible in structure; exact constants and hypotheses should be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces fragile pointwise control of the zero-count error by an averaged bound: if critical zeros were missed, the observed discrepancy would acquire a persistent offset contradicting the integral estimate, so searching only slightly beyond T certifies completeness below T.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turing's averaged discrepancy detects missed zeros",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u016.txt",
+      "unit_bytes": 4598,
+      "unit_id": "moree2018_computational_history_u016",
+      "unit_sha256": "7c2af5d755d2fc0dd7fee7970cce607f29f57b5d7c7eb4581374ce5245249baf",
+      "unit_type": "certification-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u016.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 718,
+          "line_end": 725,
+          "text": "the error term Rm (t) is unfortunately quite difficult. Titchmarsh44, a former student of\nHardy, proved in 1935 [72] that if t > 250π, then\n                                              \u0012 \u0013−3/4\n                                             3 t\n                                  |R0 (t)| ≤\n                                             2 2π\nand used this estimate to verify RH up to height 390.\n\n",
+          "sha256": "8cc0b33d7d38cb4684b9a0889b8ebd6c06d5d17eb8306a1d6b96c9dcf20a9f42"
+        },
+        "after": {
+          "line_start": 790,
+          "line_end": 797,
+          "text": "\n                              6. Odlyzko-Schönhage method\n   In 1988 Odlyzko47 and Schönhage48 developed a different approach to evaluate the Rie-\nmann zeta function. In [53] they observed that the problem of evaluating sums of the form\nPM          −it\n   k=1 dk k     at an evenly spaced setPof t’s can be transformed into a problem of evaluat-\ning a rational function of the form nk=1 ak (z − bk )−1 at all n-th roots of unity using the\nfast Fourier transform. The algorithm they designed rapidly evaluates such functions at\n",
+          "sha256": "e4b30aedd028cb177e5838c9ffb7469f227be6c660c82de5274aa9dbfc168fd2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel, Turing, Odlyzko-Schoenhage, and computational history",
+            "line_end": 864,
+            "line_start": 662,
+            "mathematical_role": "Develops faster single- and multi-point evaluation, rigorous completeness certification, complexity comparisons, and provenance of large computations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 789,
+          "line_start": 726,
+          "title": "Turing's averaged discrepancy detects missed zeros",
+          "unit_id": "moree2018_computational_history_u016",
+          "unit_type": "certification-method",
+          "why_material": "Replaces fragile pointwise control of the zero-count error by an averaged bound: if critical zeros were missed, the observed discrepancy would acquire a persistent offset contradicting the integral estimate, so searching only slightly beyond T certifies completeness below T."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical narrative motivates the method; the decisive mechanism is the comparison of N with the observed count through averaged S(t).",
+          "representation_dependency": "The integral inequality is formula-sensitive but legible in structure; exact constants and hypotheses should be PDF-checked.",
+          "unit_id": "moree2018_computational_history_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 724,
+            "line_start": 662,
+            "title": "Riemann-Siegel: short oscillatory sum plus controlled remainder",
+            "unit_id": "moree2018_computational_history_u015",
+            "unit_type": "algorithm",
+            "why_material": "Derives a fast critical-line evaluation by two treatments of a contour integral and a saddle-point expansion, reducing zeta evaluation to a short cosine sum plus a remainder whose rigorous bound enables finite-height RH checks."
+          },
+          {
+            "line_end": 803,
+            "line_start": 791,
+            "title": "FFT amortization for many zeta evaluations",
+            "unit_id": "moree2018_computational_history_u017",
+            "unit_type": "algorithm-and-comparison",
+            "why_material": "Transforms many evenly spaced exponential sums into rational-function evaluation at roots of unity and applies FFT, illustrating when a method with no single-point advantage becomes asymptotically superior for bulk zero verification."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transformation, uniform interval of evaluation, precision guarantee, and comparison with Riemann-Siegel.",
+      "line_end": 803,
+      "line_start": 791,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed sums and complexity parameters are extraction-sensitive; the amortization mechanism is clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms many evenly spaced exponential sums into rational-function evaluation at roots of unity and applies FFT, illustrating when a method with no single-point advantage becomes asymptotically superior for bulk zero verification.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "FFT amortization for many zeta evaluations",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u017.txt",
+      "unit_bytes": 1063,
+      "unit_id": "moree2018_computational_history_u017",
+      "unit_sha256": "863e14fe663a4e09716352d4085cd82e06db5e6d407d1edbe9ee76a08e97470a",
+      "unit_type": "algorithm-and-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u017.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 783,
+          "line_end": 790,
+          "text": "                                 S(t)dt ≤ 2.3 + 0.128 log        .\n                           T                                 2π\nIf we calculate S(t) using the observed number of zeros N 0 (t) instead of N (t) and we\nmissed k zeros, i.e., N 0 (t) < N (t), then we would get that S(t) → −k, which eventually\ncontradicts the above estimate. What the method amounts to is the following. In order to\nverify RH up to height T , one has to find enough critical zeros up to height T + O(log T ).\nFor more details on Turing’s work on this subject, see for example [4], [13, 265–279].\n\n",
+          "sha256": "e59108f0580098fd365025719e0f8128af557f77c265225bca41960c623b1024"
+        },
+        "after": {
+          "line_start": 804,
+          "line_end": 811,
+          "text": "  47Andrew Michael Odlyzko (1949 Tarnów, Poland), Polish-American mathematician, student of Stark,\nprofessor at the University of Minnesota.\n   48Arnold Schönhage (1934 Lockhausen, the Free State of Lippe), German mathematician, computer\nscientist, student of Hoheisel, professor at the University of Bonn, the University of Tübingen and the\nUniversity of Konstanz.\n\n<!-- source-page: 16 -->\n\n",
+          "sha256": "eba2a3a12100d13ab53612afb535afea3fd291fbb9ec01c097fb1d82eed51e98"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel, Turing, Odlyzko-Schoenhage, and computational history",
+            "line_end": 864,
+            "line_start": 662,
+            "mathematical_role": "Develops faster single- and multi-point evaluation, rigorous completeness certification, complexity comparisons, and provenance of large computations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 803,
+          "line_start": 791,
+          "title": "FFT amortization for many zeta evaluations",
+          "unit_id": "moree2018_computational_history_u017",
+          "unit_type": "algorithm-and-comparison",
+          "why_material": "Transforms many evenly spaced exponential sums into rational-function evaluation at roots of unity and applies FFT, illustrating when a method with no single-point advantage becomes asymptotically superior for bulk zero verification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the transformation, uniform interval of evaluation, precision guarantee, and comparison with Riemann-Siegel.",
+          "representation_dependency": "Displayed sums and complexity parameters are extraction-sensitive; the amortization mechanism is clear from prose.",
+          "unit_id": "moree2018_computational_history_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 789,
+            "line_start": 726,
+            "title": "Turing's averaged discrepancy detects missed zeros",
+            "unit_id": "moree2018_computational_history_u016",
+            "unit_type": "certification-method",
+            "why_material": "Replaces fragile pointwise control of the zero-count error by an averaged bound: if critical zeros were missed, the observed discrepancy would acquire a persistent offset contradicting the integral estimate, so searching only slightly beyond T certifies completeness below T."
+          },
+          {
+            "line_end": 857,
+            "line_start": 833,
+            "title": "Scale, reproducibility, and provenance of zero verifications",
+            "unit_id": "moree2018_computational_history_u018",
+            "unit_type": "computational-provenance",
+            "why_material": "Traces the move from hand calculations to distributed and large-scale computation while explicitly noting that a major calculation was not repeated and that some results lacked journal publication, making provenance and reproducibility part of the evidence assessment."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A rigorous finite-height RH computation must evaluate zeta accurately, locate critical zeros, and independently certify that none were missed; successive algorithms optimize different layers rather than solving a single undifferentiated task.",
+            "limit": "Complexity comparisons are survey-level and tied to the stated historical algorithms, not a current implementation benchmark.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u010",
+              "moree2018_computational_history_u011",
+              "moree2018_computational_history_u012",
+              "moree2018_computational_history_u013",
+              "moree2018_computational_history_u015",
+              "moree2018_computational_history_u016",
+              "moree2018_computational_history_u017"
+            ],
+            "title": "Evaluation, localization, and completeness are distinct proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding table supplies historical scale; this span contains the substantive narrative and its caveats.",
+      "line_end": 857,
+      "line_start": 833,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is stable; isolated numerical exponents should be checked against the PDF if used as exact records.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Traces the move from hand calculations to distributed and large-scale computation while explicitly noting that a major calculation was not repeated and that some results lacked journal publication, making provenance and reproducibility part of the evidence assessment.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scale, reproducibility, and provenance of zero verifications",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u018.txt",
+      "unit_bytes": 1801,
+      "unit_id": "moree2018_computational_history_u018",
+      "unit_sha256": "c69aa678a1ddf6e6f9fcec09aa16a2cb976b41b4fd43e6811d9febeb64b6c336",
+      "unit_type": "computational-provenance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u018.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 825,
+          "line_end": 832,
+          "text": "                  1982       200 000 001              Brent, van de Lune, te Riele, Winter\n                  1983       300 000 001                      van de Lune, te Riele\n                  1986      1 500 000 001                van de Lune, te Riele, Winter\n                  2004     900 000 000 000                        Wedeniwski\n                  2004    10 000 000 000 000                   Demichel, Gourdon\n                       Table 4. Record history of calculating critical zeros.\n\n\n",
+          "sha256": "2bd69d72c69d6360118d27705befb3d57b2700c4718dff46d465513df84b4e5a"
+        },
+        "after": {
+          "line_start": 858,
+          "line_end": 865,
+          "text": "\n     49The identity can be derived using the Hadamard factorization for ξ. Here γ denotes Euler’s constant.\n\n<!-- source-page: 17 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                           17\n\n                                           8. Applications\n",
+          "sha256": "fc4d9fd8fb2c78d37c66a58bd7cf8803296bbd7d3616113628d16c8d50acea07"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel, Turing, Odlyzko-Schoenhage, and computational history",
+            "line_end": 864,
+            "line_start": 662,
+            "mathematical_role": "Develops faster single- and multi-point evaluation, rigorous completeness certification, complexity comparisons, and provenance of large computations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 857,
+          "line_start": 833,
+          "title": "Scale, reproducibility, and provenance of zero verifications",
+          "unit_id": "moree2018_computational_history_u018",
+          "unit_type": "computational-provenance",
+          "why_material": "Traces the move from hand calculations to distributed and large-scale computation while explicitly noting that a major calculation was not repeated and that some results lacked journal publication, making provenance and reproducibility part of the evidence assessment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preceding table supplies historical scale; this span contains the substantive narrative and its caveats.",
+          "representation_dependency": "Prose is stable; isolated numerical exponents should be checked against the PDF if used as exact records.",
+          "unit_id": "moree2018_computational_history_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 803,
+            "line_start": 791,
+            "title": "FFT amortization for many zeta evaluations",
+            "unit_id": "moree2018_computational_history_u017",
+            "unit_type": "algorithm-and-comparison",
+            "why_material": "Transforms many evenly spaced exponential sums into rational-function evaluation at roots of unity and applies FFT, illustrating when a method with no single-point advantage becomes asymptotically superior for bulk zero verification."
+          },
+          {
+            "line_end": 888,
+            "line_start": 865,
+            "title": "Exact pi(x) from an explicit formula and certified zeros",
+            "unit_id": "moree2018_computational_history_u019",
+            "unit_type": "application",
+            "why_material": "Contrasts direct prime enumeration with combinatorial and analytic methods, showing how a Riemann explicit formula plus tens of billions of high-precision critical zeros can yield an unconditional exact prime count."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 864,
+              "line_start": 858,
+              "reason": "Factorization footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the application framing, Meissel's reduced-data strategy, and Platt's zero-driven certification.",
+      "line_end": 888,
+      "line_start": 865,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual comparison is prose-supported; exact record values and powers require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts direct prime enumeration with combinatorial and analytic methods, showing how a Riemann explicit formula plus tens of billions of high-precision critical zeros can yield an unconditional exact prime count.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact pi(x) from an explicit formula and certified zeros",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u019.txt",
+      "unit_bytes": 1941,
+      "unit_id": "moree2018_computational_history_u019",
+      "unit_sha256": "611b5f5fe4d181f73e76aeb2deb78f0241f3e765dfcfe8486da9169a41961620",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u019.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 857,
+          "line_end": 864,
+          "text": "   The above history is summarized in Table 4.\n\n     49The identity can be derived using the Hadamard factorization for ξ. Here γ denotes Euler’s constant.\n\n<!-- source-page: 17 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                           17\n\n",
+          "sha256": "6f7079ca146c5f7b3cfc2290af7304cc0e8895245069279a034036a17125873a"
+        },
+        "after": {
+          "line_start": 889,
+          "line_end": 896,
+          "text": "\n8.2. Explicit prime number bounds. One of the most often quoted papers in compu-\ntational number theory is the one by Rosser and Schoenfeld [62]. In this paper, among\nother things, they prove the explicit bounds of π(x) that we mentioned in the introduction.\nThe importance of this paper is that their proof was based on verifying the RH up to a\ncertain height. Then using the fact that the first 3 502 500 zeros of ζ lie on the critical\nline, the authors together with Yohe found explicit bounds for the ϑ-function [63]. Let pn\ndenote the nth prime. Rosser and Schoenfeld obtained the estimates\n",
+          "sha256": "2c80abf8c9b9a606d6f3dd94349780e39120da23209dd9ee6565197618a8190e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 888,
+          "line_start": 865,
+          "title": "Exact pi(x) from an explicit formula and certified zeros",
+          "unit_id": "moree2018_computational_history_u019",
+          "unit_type": "application",
+          "why_material": "Contrasts direct prime enumeration with combinatorial and analytic methods, showing how a Riemann explicit formula plus tens of billions of high-precision critical zeros can yield an unconditional exact prime count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the application framing, Meissel's reduced-data strategy, and Platt's zero-driven certification.",
+          "representation_dependency": "The conceptual comparison is prose-supported; exact record values and powers require PDF verification.",
+          "unit_id": "moree2018_computational_history_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 857,
+            "line_start": 833,
+            "title": "Scale, reproducibility, and provenance of zero verifications",
+            "unit_id": "moree2018_computational_history_u018",
+            "unit_type": "computational-provenance",
+            "why_material": "Traces the move from hand calculations to distributed and large-scale computation while explicitly noting that a major calculation was not repeated and that some results lacked journal publication, making provenance and reproducibility part of the evidence assessment."
+          },
+          {
+            "line_end": 914,
+            "line_start": 890,
+            "title": "Partial RH becomes a finite range of explicit prime bounds",
+            "unit_id": "moree2018_computational_history_u020",
+            "unit_type": "application",
+            "why_material": "Demonstrates how a verified finite-height zero statement is converted into explicit inequalities for prime-counting functions and gives a direct condition relating certified height T to the x-range of an RH-quality bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler products encode primes into zeta, while explicit formulas decode zero data into prime counts and bounds; the real parts and verified height of zeros determine the strength and range of the decoded information.",
+            "limit": "The survey states representative formulas and applications but does not supply full derivations or error analyses, and exact formula text has extraction risk.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u006",
+              "moree2018_computational_history_u007",
+              "moree2018_computational_history_u008",
+              "moree2018_computational_history_u019",
+              "moree2018_computational_history_u020"
+            ],
+            "title": "Zeros as a bidirectional computational interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 864,
+              "line_start": 858,
+              "reason": "Factorization footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines historical bounds derived from verified zeros with Buthe's explicit partial-RH transfer.",
+      "line_end": 914,
+      "line_start": 890,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula and constants are legible but exact quantitative reuse should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Demonstrates how a verified finite-height zero statement is converted into explicit inequalities for prime-counting functions and gives a direct condition relating certified height T to the x-range of an RH-quality bound.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial RH becomes a finite range of explicit prime bounds",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u020.txt",
+      "unit_bytes": 1822,
+      "unit_id": "moree2018_computational_history_u020",
+      "unit_sha256": "3a76e1406bcbb2ea57f663373a56576e28353cb9c06516cee1b960d9b141659e",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u020.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 882,
+          "line_end": 889,
+          "text": "steadily improved and, e.g., in 2007 Oliveira e Silva used it to compute π(1023 ). As-\nsuming RH in 2010 Büthe, Franke, Jost and Kleinjung announced a value of π(1024 ).\nVery recently by a different method Platt [57], based on an explicit formula of Riemann\nfor the quantity on the left hand side of (12), managed to show unconditionally that\nπ(1024 ) = 18 435 599 767 349 200 867 866, in agreement with the value of Büthe et al. This\ncomputation rests on the first 69 778 732 700 critical zeros computed with 25 decimal ac-\ncuracy. For the values of π(10k ) with 8 ≤ k ≤ 18 the reader is referred to Table 1.\n\n",
+          "sha256": "bdd25c2233d0ee43b034361e3fd3a878ef17996ea0401ace4ba52f731bb02398"
+        },
+        "after": {
+          "line_start": 915,
+          "line_end": 922,
+          "text": "\n8.3. Comparison of π(x) with Li(x). From Riemann’s formulae (7) and (8) it follows\nthat                                 √\n                                  Li( x) X\n                   π(x) = Li(x) −       −    Li(xρ ) + W (x),\n                                     2     ρ\n\nwhere W (x) relatively to the three earlier summands is of lower order. Riemann’s writings\n",
+          "sha256": "727a9701d3ee9f6367502a5c472eea55deecaa8dec22703f7f4d62e4da4dfa3d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 914,
+          "line_start": 890,
+          "title": "Partial RH becomes a finite range of explicit prime bounds",
+          "unit_id": "moree2018_computational_history_u020",
+          "unit_type": "application",
+          "why_material": "Demonstrates how a verified finite-height zero statement is converted into explicit inequalities for prime-counting functions and gives a direct condition relating certified height T to the x-range of an RH-quality bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines historical bounds derived from verified zeros with Buthe's explicit partial-RH transfer.",
+          "representation_dependency": "Formula and constants are legible but exact quantitative reuse should be checked against the PDF.",
+          "unit_id": "moree2018_computational_history_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 888,
+            "line_start": 865,
+            "title": "Exact pi(x) from an explicit formula and certified zeros",
+            "unit_id": "moree2018_computational_history_u019",
+            "unit_type": "application",
+            "why_material": "Contrasts direct prime enumeration with combinatorial and analytic methods, showing how a Riemann explicit formula plus tens of billions of high-precision critical zeros can yield an unconditional exact prime count."
+          },
+          {
+            "line_end": 952,
+            "line_start": 916,
+            "title": "Initial numerical dominance can hide inevitable sign reversal",
+            "unit_id": "moree2018_computational_history_u021",
+            "unit_type": "counterexample-and-bias",
+            "why_material": "Shows that an inequality supported over enormous finite ranges can still fail infinitely often; high-precision zero data makes the reversal explicit, while logarithmic density captures the persistent but nonabsolute bias."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler products encode primes into zeta, while explicit formulas decode zero data into prime counts and bounds; the real parts and verified height of zeros determine the strength and range of the decoded information.",
+            "limit": "The survey states representative formulas and applications but does not supply full derivations or error analyses, and exact formula text has extraction risk.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u006",
+              "moree2018_computational_history_u007",
+              "moree2018_computational_history_u008",
+              "moree2018_computational_history_u019",
+              "moree2018_computational_history_u020"
+            ],
+            "title": "Zeros as a bidirectional computational interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit-formula decomposition, Littlewood's sign-change theorem, computational bounds, Lehman's certification condition, and logarithmic-density interpretation.",
+      "line_end": 952,
+      "line_start": 916,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several extreme exponents and the density formula are OCR-sensitive; the qualitative mechanism is clear, quantitative claims need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that an inequality supported over enormous finite ranges can still fail infinitely often; high-precision zero data makes the reversal explicit, while logarithmic density captures the persistent but nonabsolute bias.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Initial numerical dominance can hide inevitable sign reversal",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u021.txt",
+      "unit_bytes": 2748,
+      "unit_id": "moree2018_computational_history_u021",
+      "unit_sha256": "89d2d7233a6df1d240359defb6132da34f21ea10699f3c544897b386d39abd73",
+      "unit_type": "counterexample-and-bias",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u021.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 908,
+          "line_end": 915,
+          "text": "<!-- source-page: 18 -->\n\n18                           P. MOREE, I. PETRYKIEWICZ, AND A. SEDUNOVA\n\n  A recent result from Büthe shows explicitly the connection between a partial RH and a\nsharp prime number estimate. He proved that if the RH holds true up to height T , then\nthe estimate (1) holds true for all x satisfying 4.92x/ log x ≤ T .\n\n",
+          "sha256": "a28bd58cc3eba1f9743a3ea45cfbe9a7399add0c1c9a3a83c6ed5925346f10de"
+        },
+        "after": {
+          "line_start": 953,
+          "line_end": 960,
+          "text": "     51Subsequently, Turing whose initial interest was in improving the results of Skewes, turned his interest\nto computing non-trivial zeros.\n\n<!-- source-page: 19 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                       19\n\n8.4. The Mertens conjecture. The Mertens function M (x) denotes the difference\n",
+          "sha256": "4ad8618b49852b4b727aaf4ef3be3dc7f5548b4a381a9871ae60804219aab0b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 952,
+          "line_start": 916,
+          "title": "Initial numerical dominance can hide inevitable sign reversal",
+          "unit_id": "moree2018_computational_history_u021",
+          "unit_type": "counterexample-and-bias",
+          "why_material": "Shows that an inequality supported over enormous finite ranges can still fail infinitely often; high-precision zero data makes the reversal explicit, while logarithmic density captures the persistent but nonabsolute bias."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the explicit-formula decomposition, Littlewood's sign-change theorem, computational bounds, Lehman's certification condition, and logarithmic-density interpretation.",
+          "representation_dependency": "Several extreme exponents and the density formula are OCR-sensitive; the qualitative mechanism is clear, quantitative claims need PDF verification.",
+          "unit_id": "moree2018_computational_history_u021"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 914,
+            "line_start": 890,
+            "title": "Partial RH becomes a finite range of explicit prime bounds",
+            "unit_id": "moree2018_computational_history_u020",
+            "unit_type": "application",
+            "why_material": "Demonstrates how a verified finite-height zero statement is converted into explicit inequalities for prime-counting functions and gives a direct condition relating certified height T to the x-range of an RH-quality bound."
+          },
+          {
+            "line_end": 989,
+            "line_start": 960,
+            "title": "Mertens sums connect Mobius cancellation to RH and random-walk intuition",
+            "unit_id": "moree2018_computational_history_u022",
+            "unit_type": "equivalent-criterion-and-failed-heuristic",
+            "why_material": "Represents reciprocal zeta through Mobius summation, obtains PNT- and RH-equivalent growth statements, and explains why a random-walk analogy actually warns that the seemingly natural square-root bound may be too strong."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The pi-versus-Li and Mertens episodes show that persistent finite numerical behavior is not a reliable asymptotic law; explicit formulas and phase-alignment methods can turn zero data into counterexamples, while slow growth explains why naive searches mislead.",
+            "limit": "The synthesis diagnoses a methodology of falsification, not a general theorem that every empirical inequality eventually fails.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u021",
+              "moree2018_computational_history_u022",
+              "moree2018_computational_history_u023",
+              "moree2018_computational_history_u030"
+            ],
+            "title": "Computation can expose false extrapolation from vast finite ranges"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 959,
+              "line_start": 953,
+              "reason": "Historical footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definitions of M and mu, the integral identity, equivalences, the random model, and the historical conjecture.",
+      "line_end": 989,
+      "line_start": 960,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral and normalization of the random-walk law are formula-sensitive; the prose supports the semantic connection and heuristic warning.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents reciprocal zeta through Mobius summation, obtains PNT- and RH-equivalent growth statements, and explains why a random-walk analogy actually warns that the seemingly natural square-root bound may be too strong.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mertens sums connect Mobius cancellation to RH and random-walk intuition",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u022.txt",
+      "unit_bytes": 1978,
+      "unit_id": "moree2018_computational_history_u022",
+      "unit_sha256": "f9e69f28d80aab19802b68127723e7fc487d4b62ab799c36b6c9d6115c28a29a",
+      "unit_type": "equivalent-criterion-and-failed-heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u022.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 952,
+          "line_end": 959,
+          "text": "phenomenon that is called Chebyshev’s bias (see Section 9.2).\n     51Subsequently, Turing whose initial interest was in improving the results of Skewes, turned his interest\nto computing non-trivial zeros.\n\n<!-- source-page: 19 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                       19\n\n",
+          "sha256": "6b7ce3d08a4582aa7ceb444d810e16e785cf5a516ce8866db7573e38a934d12d"
+        },
+        "after": {
+          "line_start": 990,
+          "line_end": 997,
+          "text": "√          Daublebsky von Sterneck56, earlier had made the stronger claim that |M (x)| <\n  x/2 for x > 200. That conjecture was disproved in 1963 by Neubauer. We now know\nthat 7 725 038 629 is the minimal integer > 200 for which the Daublebsky von Sterneck\nbound does not hold. In 1983 Odlyzko and te Riele [54] caused a sensation by disproving\nthe Mertens conjecture. They showed that\n                              M (x)                    M (x)\n                     lim sup √ > 1.06, lim inf √ < −1.009,\n                         x→∞      x               x→∞     x\n",
+          "sha256": "b963b928aa0771ba1a5173dfaf7e13294ec7b7b921ae27dacca478500c2d8097"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 989,
+          "line_start": 960,
+          "title": "Mertens sums connect Mobius cancellation to RH and random-walk intuition",
+          "unit_id": "moree2018_computational_history_u022",
+          "unit_type": "equivalent-criterion-and-failed-heuristic",
+          "why_material": "Represents reciprocal zeta through Mobius summation, obtains PNT- and RH-equivalent growth statements, and explains why a random-walk analogy actually warns that the seemingly natural square-root bound may be too strong."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definitions of M and mu, the integral identity, equivalences, the random model, and the historical conjecture.",
+          "representation_dependency": "The integral and normalization of the random-walk law are formula-sensitive; the prose supports the semantic connection and heuristic warning.",
+          "unit_id": "moree2018_computational_history_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 952,
+            "line_start": 916,
+            "title": "Initial numerical dominance can hide inevitable sign reversal",
+            "unit_id": "moree2018_computational_history_u021",
+            "unit_type": "counterexample-and-bias",
+            "why_material": "Shows that an inequality supported over enormous finite ranges can still fail infinitely often; high-precision zero data makes the reversal explicit, while logarithmic density captures the persistent but nonabsolute bias."
+          },
+          {
+            "line_end": 1032,
+            "line_start": 990,
+            "title": "Explicit zeros plus Diophantine alignment disprove Mertens",
+            "unit_id": "moree2018_computational_history_u023",
+            "unit_type": "computational-disproof",
+            "why_material": "Decomposes a nonconstructive disproof into an explicit zero expansion, rigorous truncation control, verification of RH and zero simplicity to a finite height, and simultaneous phase alignment solved efficiently by LLL."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The pi-versus-Li and Mertens episodes show that persistent finite numerical behavior is not a reliable asymptotic law; explicit formulas and phase-alignment methods can turn zero data into counterexamples, while slow growth explains why naive searches mislead.",
+            "limit": "The synthesis diagnoses a methodology of falsification, not a general theorem that every empirical inequality eventually fails.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u021",
+              "moree2018_computational_history_u022",
+              "moree2018_computational_history_u023",
+              "moree2018_computational_history_u030"
+            ],
+            "title": "Computation can expose false extrapolation from vast finite ranges"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 959,
+              "line_start": 953,
+              "reason": "Historical footnote and page furniture."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the prior stronger bound's failure, Odlyzko-te Riele inequalities, later explicit search, and the key finite computational pipeline.",
+      "line_end": 1032,
+      "line_start": 990,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The expansion terms and huge bounds contain extraction risk; the algorithmic stages are clearly recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes a nonconstructive disproof into an explicit zero expansion, rigorous truncation control, verification of RH and zero simplicity to a finite height, and simultaneous phase alignment solved efficiently by LLL.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit zeros plus Diophantine alignment disprove Mertens",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u023.txt",
+      "unit_bytes": 3176,
+      "unit_id": "moree2018_computational_history_u023",
+      "unit_sha256": "d31b1855fa12712bc4836e2b7918559adeb68765efd8a3fd681b7c4311cb3703",
+      "unit_type": "computational-disproof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u023.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 982,
+          "line_end": 989,
+          "text": "                                  lim sup p                = 1.\n                                     x→∞   (x/2) log log x\n                                                                       √\nThis suggests that if µ is ”sufficiently” random, then the ratio M (x)/ x is expected to be\nunbounded.\n  On the basis of numerical work√Stieltjes53 in 188554 and independently Mertens55 in 1897\n[48], conjectured that |M (x)| < x, a conjecture that is now known as the Mertens con-\njecture.\n",
+          "sha256": "2f9e228725130876038e48cc7bd85ce743e2238ef2ebff544fa9367de299a0a2"
+        },
+        "after": {
+          "line_start": 1033,
+          "line_end": 1040,
+          "text": "\n8.5. The ternary Goldbach conjecture. The Goldbach conjecture (formulated in\n1742 in a letter to Euler) states that every even number exceeding 2 can be represented as\na sum of two primes. This is a very famous conjecture that remains unsolved. A weaker\nvariant is the ternary Goldbach conjecture, also known as odd or weak Goldbach\nconjecture. It says that every odd number greater than 7 can be expressed as the sum of\nthree odd primes.\n   Hardy and Littlewood showed in 1923 that on GRH57, the odd Goldbach conjecture\n",
+          "sha256": "a9fcce835a30d402efec63f33b81bfd4f2a96445e522e32e9200bfa7a8b0619b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1032,
+          "line_start": 990,
+          "title": "Explicit zeros plus Diophantine alignment disprove Mertens",
+          "unit_id": "moree2018_computational_history_u023",
+          "unit_type": "computational-disproof",
+          "why_material": "Decomposes a nonconstructive disproof into an explicit zero expansion, rigorous truncation control, verification of RH and zero simplicity to a finite height, and simultaneous phase alignment solved efficiently by LLL."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the prior stronger bound's failure, Odlyzko-te Riele inequalities, later explicit search, and the key finite computational pipeline.",
+          "representation_dependency": "The expansion terms and huge bounds contain extraction risk; the algorithmic stages are clearly recoverable from prose.",
+          "unit_id": "moree2018_computational_history_u023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 989,
+            "line_start": 960,
+            "title": "Mertens sums connect Mobius cancellation to RH and random-walk intuition",
+            "unit_id": "moree2018_computational_history_u022",
+            "unit_type": "equivalent-criterion-and-failed-heuristic",
+            "why_material": "Represents reciprocal zeta through Mobius summation, obtains PNT- and RH-equivalent growth statements, and explains why a random-walk analogy actually warns that the seemingly natural square-root bound may be too strong."
+          },
+          {
+            "line_end": 1056,
+            "line_start": 1034,
+            "title": "Formal analytic estimates plus finite L-function verification close Goldbach",
+            "unit_id": "moree2018_computational_history_u024",
+            "unit_type": "application",
+            "why_material": "Illustrates a hybrid proof architecture: theoretical major/minor-arc estimates handle the unbounded range while rigorous interval-arithmetic verification of many Dirichlet L-functions supplies the finite explicit component."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The pi-versus-Li and Mertens episodes show that persistent finite numerical behavior is not a reliable asymptotic law; explicit formulas and phase-alignment methods can turn zero data into counterexamples, while slow growth explains why naive searches mislead.",
+            "limit": "The synthesis diagnoses a methodology of falsification, not a general theorem that every empirical inequality eventually fails.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u021",
+              "moree2018_computational_history_u022",
+              "moree2018_computational_history_u023",
+              "moree2018_computational_history_u030"
+            ],
+            "title": "Computation can expose false extrapolation from vast finite ranges"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Distinguishes binary and ternary Goldbach and traces removal of a GRH dependency through stronger analysis and verified zero computations.",
+      "line_end": 1056,
+      "line_start": 1034,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is reliable; numerical bounds and height/modulus expressions should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Illustrates a hybrid proof architecture: theoretical major/minor-arc estimates handle the unbounded range while rigorous interval-arithmetic verification of many Dirichlet L-functions supplies the finite explicit component.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Formal analytic estimates plus finite L-function verification close Goldbach",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u024.txt",
+      "unit_bytes": 1890,
+      "unit_id": "moree2018_computational_history_u024",
+      "unit_sha256": "bb3a1079c3db030a6dc34de04bd19bdf8af2bbf03a1cfb4fbdbdff5b88d26bb4",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u024.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1026,
+          "line_end": 1033,
+          "text": "leads to a problem in simultaneous Diophantine approximation. Now the key factor that\nallowed Odlyzko and te Riele to progress beyond earlier failed attempts to disprove the\nMertens conjecture, was using the at the time recently developed Lenstra-Lenstra-Lovász\nalgorithm, or LLL-algorithm for short. With the use of this new algorithm less extensive\ncomputing was needed to reach rather stronger results than before. Indeed only the first\n2 000 non-trivial zeros calculated with circa 100 significant decimal places, were used in\nthe disproof.\n\n",
+          "sha256": "4876f6dced046adf67fee61c3bdfe61e02fce778bb996b150019288c979d1a0e"
+        },
+        "after": {
+          "line_start": 1057,
+          "line_end": 1064,
+          "text": "   The Goldbach conjecture is also studied in the field of additive number theory, where\n     57Grand Riemann Hypothesis, see Section 9.2.\n\n<!-- source-page: 21 -->\n\nPRIME NUMBERS AND RIEMANN ZEROS                                21\n\none considers a special set A (primes, squares, etc.) and then wonders what the sumset\n",
+          "sha256": "dc0339ba7966dd1c920111590b3beb82722f691a53dccdd54865d1bb676e5bcd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications of certified zero computations",
+            "line_end": 1067,
+            "line_start": 865,
+            "mathematical_role": "Shows how computed zeros enable exact prime counts, explicit prime bounds, counterexamples to prime-counting and Mertens inequalities, and finite verification in Goldbach arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1056,
+          "line_start": 1034,
+          "title": "Formal analytic estimates plus finite L-function verification close Goldbach",
+          "unit_id": "moree2018_computational_history_u024",
+          "unit_type": "application",
+          "why_material": "Illustrates a hybrid proof architecture: theoretical major/minor-arc estimates handle the unbounded range while rigorous interval-arithmetic verification of many Dirichlet L-functions supplies the finite explicit component."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Distinguishes binary and ternary Goldbach and traces removal of a GRH dependency through stronger analysis and verified zero computations.",
+          "representation_dependency": "Prose is reliable; numerical bounds and height/modulus expressions should be checked against the PDF.",
+          "unit_id": "moree2018_computational_history_u024"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1032,
+            "line_start": 990,
+            "title": "Explicit zeros plus Diophantine alignment disprove Mertens",
+            "unit_id": "moree2018_computational_history_u023",
+            "unit_type": "computational-disproof",
+            "why_material": "Decomposes a nonconstructive disproof into an explicit zero expansion, rigorous truncation control, verification of RH and zero simplicity to a finite height, and simultaneous phase alignment solved efficiently by LLL."
+          },
+          {
+            "line_end": 1098,
+            "line_start": 1071,
+            "title": "The Dirichlet-series reflex converts erratic arithmetic into contour geometry",
+            "unit_id": "moree2018_computational_history_u025",
+            "unit_type": "general-method",
+            "why_material": "Abstracts Riemann's method: encode an arithmetic function by a Dirichlet series, recover summatory behavior with Perron inversion, shift contours using analytic continuation, and if needed replace the function by a related one with a better analytic representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic data are encoded by Dirichlet series or zeta-type functions, analytic continuation enables contour movement, Euler products preserve atomic structure, and finite zero verification can then feed explicit arithmetic results beyond the original zeta setting.",
+            "limit": "The source provides a structural survey and examples, not sufficient hypotheses for applying the template to an arbitrary new function.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u025",
+              "moree2018_computational_history_u026",
+              "moree2018_computational_history_u027",
+              "moree2018_computational_history_u024"
+            ],
+            "title": "Riemann's encode-invert-shift pattern transfers across arithmetic structures"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1067,
+              "line_start": 1057,
+              "reason": "GRH footnote, page furniture, and brief additive-number-theory placement."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c9e92e204217301232cf332e9ba3efbd00cd89cb8e12782555c1925cc24eda1c"
+}

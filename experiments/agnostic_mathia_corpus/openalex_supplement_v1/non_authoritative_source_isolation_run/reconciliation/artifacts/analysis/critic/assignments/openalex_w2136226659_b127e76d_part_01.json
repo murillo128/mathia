@@ -1,0 +1,716 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance": {
+      "analysis_id": "agnostic_oa_generation_0cb9e4a82a2b660342411585970bd5f99467166a8971ffd248fa0f724143d204",
+      "boundary_or_failure": "The source uses its own possibly nonstandard crystal terminology. Crystal equals stratification only under the smoothness/local lifting hypothesis, and invariance concerns nilpotent thickenings within this infinitesimal site, not arbitrary changes of schemes.",
+      "interpretation": "Inference: a crystal stores data by requiring every infinitesimal presentation to be canonically compatible. Because pullback maps are isomorphisms, replacing X by a nilpotent closed subscheme changes the presentation but not the resulting category of compatible objects.",
+      "nonparaphrase_operation": "Encode an object by values on all infinitesimal thickenings with functorial pullback isomorphisms; compress this to formal-diagonal transport with a cocycle when allowed; then compare a scheme and a nilpotent closed subscheme using the explicit functors a and b and prove their pullbacks are quasi-inverse.",
+      "source_support": "The source defines Inf(X/S), crystals, and stratifications; Lemma 8.2 reconstructs a stratification from formal-diagonal transport and its cocycle; Corollary 8.3 identifies integrable connections with crystals for smooth X/S; and Proposition 8.4 proves equivalence of crystal categories after a nilpotent closed immersion.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Pullback directions, projection subscripts, and formal-neighborhood notation are partially damaged. Definitions must be read as source-local, and novelty is not claimed.",
+      "unit_id": "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance"
+    },
+    "agnostic_oa_w2136226659_framed_continuity_counterexample": {
+      "analysis_id": "agnostic_oa_generation_137e4c1d9fb00a58235b20438e95291080610bfef8bf19089b2b94cc0ea2c880",
+      "boundary_or_failure": "The example disproves continuity of the full framed correspondence, not the stable-locus map or the coarse moduli homeomorphism. The explicit matrices are too OCR-damaged for safe numerical reuse, and the final non-Hausdorff quotient question is left open.",
+      "interpretation": "Inference: framing exposes a gauge-dependent degeneration that the coarse quotient suppresses. A family can converge to the same framed Higgs limit while its corresponding flat limits retain a direction parameter.",
+      "nonparaphrase_operation": "Construct a one-parameter family whose source limit is independent of an auxiliary parameter, transport it through the framed correspondence, and compare target limits along different parameter directions; dependence of the target limit proves failure of continuity.",
+      "source_support": "The source takes a rank-two trivial bundle on an elliptic curve, gives a family of framed Higgs fields converging independently of a, computes associated flat connections after a frame change, and states that their limit depends on arg(a). It explicitly contrasts this failure with continuity on the stable open set and leaves a topological-quotient problem open.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Matrix entries, conjugations, and the precise limiting connection are extraction-damaged; only the parameter-dependent limiting conclusion and its stated scope are reliable. Novelty is unconfirmed.",
+      "unit_id": "agnostic_oa_w2136226659_framed_continuity_counterexample"
+    },
+    "agnostic_oa_w2136226659_higgs_moduli_and_scaling": {
+      "analysis_id": "agnostic_oa_generation_1728a4e07138771ceba90cde80b02496d18f0502f6c85f43285d8b6627abf13a",
+      "boundary_or_failure": "The moduli construction and automatic local-freeness results depend on Part I and cited theorems. Closed points represent polystable/harmonic associated gradeds, not arbitrary semistable objects with all extension data, and the fixed-point description invokes cited analytic results.",
+      "interpretation": "Inference: two simplifications operate independently. Jordan grading removes extension data to reach a closed polystable representative, while scaling the Higgs field probes whether the object admits a weight decomposition compatible with the field.",
+      "nonparaphrase_operation": "For a semistable Higgs object, pass to its stable associated graded to identify its closed moduli point; then apply the C-star scaling (E,phi) to (E,t phi) and characterize a fixed point by decomposing E into weight spaces shifted by phi.",
+      "source_support": "The source defines Higgs sheaves as symmetric-algebra modules, constructs their coarse moduli with Jordan-equivalence points, identifies zero-Chern semistable objects as bundles and closed points as direct sums of stable objects, defines semiharmonic versus harmonic type, and derives the C-star action and its weight-space description. It cites the identification of fixed points with complex variations of Hodge structure.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Stability notation and several sheaf symbols are OCR-damaged; Part I supplies corepresentability and the cited analytic paper supplies the fixed-point correspondence. Novelty is unconfirmed.",
+      "unit_id": "agnostic_oa_w2136226659_higgs_moduli_and_scaling"
+    },
+    "agnostic_oa_w2136226659_hitchin_properness_and_limits": {
+      "analysis_id": "agnostic_oa_generation_4e96209dd1eac57da3adf1dda67b9f9a4735e6ab685747908f5be135646bf9c9",
+      "boundary_or_failure": "Properness controls the moduli point and produces a fixed-point limit up to isomorphism; it does not select a unique representative or prove that every unsmoothed family has a canonical limit. The characteristic-polynomial and spectral-scheme displays are formula-sensitive.",
+      "interpretation": "Inference: an invariant map can compactify a degeneration indirectly. Scaling drives the characteristic polynomial to the zero polynomial; properness then prevents the moduli orbit from escaping and forces an endpoint fixed by the scaling action.",
+      "nonparaphrase_operation": "Map a Higgs object to its characteristic coefficients, show its spectral sheaf is supported on the resulting monic spectral scheme, scale the field so the invariant path extends to zero, and invoke properness to extend the orbit and select the unique closed orbit over the limiting invariant.",
+      "source_support": "The source defines the characteristic-polynomial/Hitchin map, proves spectral support in Lemma 6.10, proves the map proper in Theorem 6.11 by preventing support from meeting infinity, and uses equivariance plus the unique closed orbit over zero to obtain a C-star-fixed deformation limit in Corollary 6.12.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Characteristic coefficients, spectral equations, and some valuative-criterion details are OCR-damaged; the generic spectral-curve/Jacobian paragraph is application context, not a universal fiber description. Novelty is not claimed.",
+      "unit_id": "agnostic_oa_w2136226659_hitchin_properness_and_limits"
+    },
+    "agnostic_oa_w2136226659_integrability_as_transport_cocycle": {
+      "analysis_id": "agnostic_oa_generation_13ba59576737541449f230db81b236f47d319ff84d234f27e394863ab5ec0002",
+      "boundary_or_failure": "The transport description lives on formal neighborhoods of diagonals and requires identity and cocycle conditions. The local proof uses smooth coordinates and a trivialization; exact Taylor and differential-equation signs are OCR-sensitive.",
+      "interpretation": "Inference: curvature is the obstruction to path-independent infinitesimal transport. Replacing differentiation by coherent comparison maps turns a differential equation into a descent-style compatibility condition on pairs and triples of nearby points.",
+      "nonparaphrase_operation": "Given a connection, form first-order transport between the two pullbacks on the formal diagonal and test composition on the formal triple diagonal; conversely, differentiate the transport map modulo the square of the diagonal ideal and check that the cocycle's compatibility equations force zero curvature.",
+      "source_support": "Lemma 8.1 states the equivalence between an integrable connection and an isomorphism p1*E to p2*E on the formal diagonal that is identity on the diagonal and satisfies a triple cocycle. Its proof recovers nabla modulo J squared, derives the transport differential equation, and identifies its integrability condition with nabla squared equals zero.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "The signs in nabla=d-A, Taylor coefficients, and mixed partial equation are not safe from OCR. The equivalence mechanism is explicit, and no novelty assessment was performed.",
+      "unit_id": "agnostic_oa_w2136226659_integrability_as_transport_cocycle"
+    },
+    "agnostic_oa_w2136226659_integrable_connection_moduli": {
+      "analysis_id": "agnostic_oa_generation_65737da86f67f4adfd0a7ecdf09ff8d3a30bdbfb655b2b374678ab770da89fae",
+      "boundary_or_failure": "Automatic local freeness and Chern-class vanishing for coherent sheaves with integrable connection are cited, not proved here. The coarse moduli space is intrinsic, but the framed de Rham spaces at different basepoints are only shown analytically isomorphic; algebraicity is explicitly doubtful.",
+      "interpretation": "Inference: zero curvature is the compatibility relation that lets a connection enter the differential-operator module moduli machinery. Framing rigidifies objects enough for a fine space but retains path/basepoint dependence that disappears after quotienting.",
+      "nonparaphrase_operation": "Encode (E,nabla) as a module over the sheaf of relative differential operators, impose nabla squared equals zero as the module compatibility, construct the framed space by choosing a fiber frame, and compare basepoint changes before and after taking the GL(n) quotient.",
+      "source_support": "The source defines relative connection, curvature, and integrability; identifies integrable connections with modules over all relative differential operators; states the quasi-projective coarse and framed moduli theorem and its quotient relation; and contrasts canonical coarse basepoint independence with an apparently nonalgebraic framed analytic transport map.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Differential-form symbols and some module notation are degraded, while key regularity facts are imported from cited results. Novelty relative to any corpus remains unconfirmed.",
+      "unit_id": "agnostic_oa_w2136226659_integrable_connection_moduli"
+    },
+    "agnostic_oa_w2136226659_nonabelian_gauss_manin": {
+      "analysis_id": "agnostic_oa_generation_249365488ff535ab47ecbfca67bbc304d370856631fa125a57178f0615595cd0",
+      "boundary_or_failure": "The construction depends on representability or universal corepresentability of the moduli functors and initially yields stratifications rather than unrestricted crystals. Agreement with Betti local constancy is analytic and uses the preceding Riemann-Hilbert comparison.",
+      "interpretation": "Inference: a connection on a moduli space is best built before choosing coordinates, at the level of the moduli problem. Crystalline invariance supplies compatible infinitesimal pullbacks, and representability transports those compatibilities to the scheme.",
+      "nonparaphrase_operation": "Define the de Rham moduli functor on each nilpotent thickening by crystals of vector bundles, use universal (co)representability to turn the functorial cocycle into a scheme stratification, and compare its analytic trivializations on artinian bases with the locally constant Betti product structure.",
+      "source_support": "Lemma 8.5 transfers a stratification of represented or corepresented functors to representing schemes. The source then defines crystalline framed and coarse de Rham moduli functors, obtains their scheme stratifications/Gauss-Manin connections, constructs Betti connections from local products, and proves in Theorem 8.6 that the analytic comparisons identify the two.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Several crystal, pullback, monodromy, and artinian-trivialization formulas are OCR-damaged. The theorem relies on earlier representability and analytic equivalence, and no novelty claim is made.",
+      "unit_id": "agnostic_oa_w2136226659_nonabelian_gauss_manin"
+    },
+    "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism": {
+      "analysis_id": "agnostic_oa_generation_b74013ae5c2b07b65dade46f32e9d2fb9503b3e12f114a5153a483634c532cab",
+      "boundary_or_failure": "Existence and uniqueness of harmonic metrics require semisimple flat bundles or polystable zero-Chern Higgs bundles, and compactness uses cited Uhlenbeck and elliptic estimates. The conclusion is a homeomorphism of underlying topological spaces, not a complex-analytic isomorphism.",
+      "interpretation": "Inference: a normalized harmonic metric supplies a common intermediate representative, but continuity is not formal from the categorical equivalence. It is proved by compactness, subsequence control, and compact unitary quotienting.",
+      "nonparaphrase_operation": "Normalize each harmonic metric at the chosen frame, use bounded characteristic data to extract a convergent subsequence of transported operators, prove continuity in both directions on the harmonic framed subsets, and quotient those subsets by U(n) to obtain the coarse homeomorphism.",
+      "source_support": "The source states the harmonic metric existence criteria and the shared harmonic-bundle set. Proposition 7.9 and its corollaries provide weak compactness, closedness, and properness; Lemma 7.16 proves continuity of the framed harmonic identification; Lemma 7.17 identifies coarse moduli as U(n) quotients; and Theorem 7.18 concludes a homeomorphism.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "The long analytic proof has OCR loss in Sobolev norms, operator labels, and projection formulas, and it imports companion-paper PDE results. Novelty relative to prior corpora was not inspected.",
+      "unit_id": "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism"
+    },
+    "agnostic_oa_w2136226659_orbits_and_semisimplification": {
+      "analysis_id": "agnostic_oa_generation_83f5a90f4bee36a19b495306fc6a624b78041e5b8ea6af7bbf0e5c6f47b3e2f9",
+      "boundary_or_failure": "The categorical quotient does not retain extension data inside a nonsemisimple representation and does not identify every orbit with a closed orbit as an orbit; it records the unique closed orbit in the closure, represented by the semisimplification. Exact invariant-ring notation is OCR-fragile.",
+      "interpretation": "Inference: quotienting performs a controlled forgetting operation: conjugacy first removes a frame, and GIT then replaces a nonclosed orbit by its semisimple shadow. This explains both basepoint independence of the coarse space and loss of nonsemisimple information.",
+      "nonparaphrase_operation": "To determine what survives passage from the framed representation scheme to the coarse moduli space, replace a representation by its associated graded, locate the corresponding closed orbit in its orbit closure, and test whether any dependence is merely inner conjugation, which the quotient annihilates.",
+      "source_support": "The source constructs R(F,n) from generator-relation equations, lets GL(n) act by simultaneous conjugation, defines Jordan equivalence through associated gradeds, and states that closed quotient points correspond to closed orbits/semisimple representations. It proves that path-dependent basepoint changes differ by conjugation and therefore induce one canonical coarse map.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Some group symbols, subscripts, and invariant-ring formulas are damaged, but the orbit-closure and semisimplification statements are legible. No novelty claim is made.",
+      "unit_id": "agnostic_oa_w2136226659_orbits_and_semisimplification"
+    },
+    "agnostic_oa_w2136226659_principal_higgs_quotients": {
+      "analysis_id": "agnostic_oa_generation_6ac241674ae187113be050b022b553a8879c6a5d8c18e1b964d3b6a08a1386f1",
+      "boundary_or_failure": "The quotient and closed-orbit criterion require reductive G and a faithful linear representation, together with cited GIT and structure theory of parabolics. The nonreductive-monodromy degeneration proves nonclosedness in this setting; it is not a statement about arbitrary group actions.",
+      "interpretation": "Inference: closedness is a complete-reducibility test. If monodromy has a unipotent radical, a one-parameter subgroup contracts part of it, producing a lower-dimensional limiting monodromy group outside the original orbit.",
+      "nonparaphrase_operation": "Encode reductions to G as the intersection of closed invariant-subobject conditions inside a faithful framed space; form the categorical quotient; then test a point by either complete reducibility of its associated vector bundle or, on failure, place monodromy in a parabolic and take a one-parameter conjugation limit to exhibit a distinct orbit-closure point.",
+      "source_support": "Theorem 9.6 constructs framed principal Higgs spaces as closed intersections of conditions C(V,W). Proposition 9.7 forms the universal categorical quotient for reductive G. Theorem 9.8 equates a closed G-orbit with reductive monodromy and semisimplicity in a faithful representation, and its proof contracts a nontrivial unipotent radical to a smaller limiting group.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Intersection, universal-family, and one-parameter subgroup notation are partially corrupted, while several GIT facts are cited. Novelty relative to other corpora was not evaluated.",
+      "unit_id": "agnostic_oa_w2136226659_principal_higgs_quotients"
+    },
+    "agnostic_oa_w2136226659_relative_betti_local_system": {
+      "analysis_id": "agnostic_oa_generation_fe968f44acd790d650955e19d473bd1c53212ef14fc18ef34c9e6a2913c86453",
+      "boundary_or_failure": "The local-system/single-stalk equivalence requires a connected, locally simply connected base. Relative Betti monodromy acts only outerly on the fiber fundamental group until one passes to the coarse quotient; a section supplies the extra basepoint data needed for the framed construction.",
+      "interpretation": "Inference: relative moduli are assembled by descent from one fiber. Inner ambiguity is harmless for coarse spaces but material for framed spaces, so adding a section changes the kind of monodromy action available rather than merely changing notation.",
+      "nonparaphrase_operation": "Start with transport around a loop in the base, compute its outer action on the fiber group, descend that action to the conjugation quotient for coarse moduli, and separately use a section to lift transport to an actual automorphism action for framed representations.",
+      "source_support": "Lemma 6.2 identifies local systems of schemes with schemes carrying a fundamental-group action. The source constructs the relative Betti moduli from the outer monodromy action, notes that inner automorphisms act trivially after quotienting, and constructs the framed local system from a section and actual automorphisms. It also gives universal and co-universal functor descriptions.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Displayed stalk, fundamental-group, and framing formulas are partly degraded; exact notation should be checked against the page image. Novelty was not evaluated.",
+      "unit_id": "agnostic_oa_w2136226659_relative_betti_local_system"
+    },
+    "agnostic_oa_w2136226659_riemann_hilbert_relative": {
+      "analysis_id": "agnostic_oa_generation_c6a045ad97def1adf6de7e434fa9f8c6f7e2facdeb27cd5c57c9f0d7923a9727",
+      "boundary_or_failure": "The theorem is an isomorphism of complex analytic spaces, not algebraic schemes. Its local horizontal-section argument requires the stated smoothness, local topology, and treatment of possibly nonreduced analytic bases; descent to coarse moduli uses universal categorical quotients.",
+      "interpretation": "Inference: the strongest comparison is obtained by replacing an objectwise correspondence with equality of represented family functors. Horizontal sections and flat connections are inverse constructions in families, so representability upgrades the equivalence to a natural analytic isomorphism.",
+      "nonparaphrase_operation": "Describe both framed spaces as representing locally free f-inverse O-modules with a frame: send a flat bundle to its horizontal-section sheaf and reconstruct it by tensoring with O and the exterior derivative; then use compatibility with GL(n) and categorical quotients to descend the comparison.",
+      "source_support": "Theorem 7.1 states the framed analytic isomorphism. Lemmas 7.2-7.7 establish the common represented functor, including horizontal sections over nonreduced bases. Proposition 7.8 descends the GL(n)-equivariant framed isomorphism to an analytic isomorphism of coarse Betti and de Rham moduli, with etale descent for the general relative case.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Several analytic pullback, stalk, and differential-equation formulas are OCR-corrupted. The proof relies on earlier representability results, but its functorial strategy and analytic scope are explicit. No novelty claim is made.",
+      "unit_id": "agnostic_oa_w2136226659_riemann_hilbert_relative"
+    },
+    "agnostic_oa_w2136226659_spectral_sheaf_reencoding": {
+      "analysis_id": "agnostic_oa_generation_d22c92f7810c624b992c6b22ae928e4fd0f045803b977be7dbb4c34282250f13",
+      "boundary_or_failure": "This is an equivalence for the specified symmetric-algebra/Higgs data with support avoiding the divisor at infinity. It depends on a chosen compactification and polarization, and exact sheaf and Hilbert-polynomial formulas are not reliable in the extraction.",
+      "interpretation": "Inference: operator data can be converted into geometry of support without discarding stability information. The integrability relation makes the tangent action commutative, so the same object becomes a coherent sheaf over cotangent coordinates.",
+      "nonparaphrase_operation": "Translate a Higgs field into a module over Sym T(X/S), sheafify that module on T*(X/S), close the ambient space only to control moduli, and verify that support avoids infinity while flatness, purity versus torsion-freeness, and stability inequalities survive the translation.",
+      "source_support": "Lemma 6.8 states the equivalence between Higgs sheaves and coherent sheaves on the compactified cotangent bundle whose support misses the divisor at infinity; its proof uses the affine projection and symmetric-algebra action. Corollary 6.9 tracks flatness, purity/torsion-freeness, Hilbert-polynomial scaling, and stability, and the resulting construction corepresents the same functor as the first construction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Compactification, polarization, pushforward, and polynomial notation are OCR-fragile; the categorical mechanism is clear but exact formulas require the source image. No novelty comparison was performed.",
+      "unit_id": "agnostic_oa_w2136226659_spectral_sheaf_reencoding"
+    },
+    "agnostic_oa_w2136226659_subobjects_detect_structure_group": {
+      "analysis_id": "agnostic_oa_generation_1db33750f1f837b9e4209750cfa6e3d6572e8d2d848077c430081f8f3f04b3fe",
+      "boundary_or_failure": "Containment in G is tested across every H-representation and every G-invariant subspace; one faithful representation alone is not the stated criterion. Existence and uniqueness of the lifted sub-Higgs bundles use earlier results, and the monodromy group may jump down under specialization.",
+      "interpretation": "Inference: subgroup containment can be detected without directly computing group elements by asking which linear subspaces persist as compatible geometric subobjects in every representation. Tensor coherence then reconstructs the reduction of structure group.",
+      "nonparaphrase_operation": "For each representation V and G-invariant W, seek the uniquely framed strict sub-Higgs bundle whose fiber is W; organize these subobjects and their graph morphisms into an exact tensor functor on Rep(G), then apply principal-bundle reconstruction to obtain the G-reduction.",
+      "source_support": "Lemma 9.3 constructs a projective parameter space of zero-Chern Higgs quotients and embeds it in the Grassmannian through the framed fiber. The source defines monodromy containment by invariant sub-Higgs bundles, and Lemma 9.4 proves equivalence between such containment and extension from a principal G-bundle using graphs of morphisms and tensor reconstruction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Some quotient-rank, frame, and representation-category symbols are OCR-damaged, and representability/uniqueness cite Part I. The source itself warns of specialization behavior; no novelty is asserted.",
+      "unit_id": "agnostic_oa_w2136226659_subobjects_detect_structure_group"
+    },
+    "agnostic_oa_w2136226659_tannakian_reconstruction": {
+      "analysis_id": "agnostic_oa_generation_f6801fd5c6014b61f4e6cadb78bdf2324cc029bf2d55bce95a2c9ab0e301965d",
+      "boundary_or_failure": "The converse reconstruction is Nori's cited theorem rather than proved in the span. Strictness, exactness, faithfulness, and tensor compatibility are all essential; an arbitrary list of associated vector bundles does not determine a principal bundle.",
+      "interpretation": "Inference: the nonlinear principal object can be compressed without loss into all of its linear representations only when maps, kernels, cokernels, tensor products, and the fiber functor remain coherently compatible.",
+      "nonparaphrase_operation": "Replace a principal G-bundle P by the tensor functor V maps to P times_G V, verify strict exact faithful preservation of representation-theoretic structure, and reconstruct P from that functor; for Higgs objects, require every associated bundle and morphism to carry the compatible Higgs structure.",
+      "source_support": "The source constructs the associated-bundle tensor functor from a principal G-bundle, lists strictness, exactness, faithfulness, and fiber-functor properties, cites Nori's unique converse in Proposition 9.1, and states the analogous categorical equivalence for semiharmonic principal Higgs bundles in Lemma 9.2.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Etale descent and contracted-product notation are OCR-degraded, and the reconstruction theorem is imported. Novelty relative to #44 or any external source remains unconfirmed.",
+      "unit_id": "agnostic_oa_w2136226659_tannakian_reconstruction"
+    },
+    "agnostic_oa_w2136226659_three_realizations": {
+      "analysis_id": "agnostic_oa_generation_7a123461c816c7f6509abf057922f5d460ae955cfb97dc3717bbfa6784612dbf",
+      "boundary_or_failure": "The comparison concerns coarse moduli points, hence Jordan-equivalence classes, and each bridge preserves a different amount of structure: the de Rham/Betti comparison is analytic, whereas the Dolbeault comparison is only topological globally. Semistability, vanishing Chern classes, and the cited harmonic-bundle results are indispensable.",
+      "interpretation": "Inference: the three moduli spaces form a comparison diagram rather than three interchangeable presentations. One should annotate each arrow by the category or topology it preserves before transporting a claim across it.",
+      "nonparaphrase_operation": "Given an object or statement in one realization, identify whether it is invariant under Jordan equivalence, translate it through the appropriate categorical correspondence, and downgrade the conclusion to analytic isomorphism, homeomorphism, or set-level identification according to the actual arrow used.",
+      "source_support": "The source explicitly defines Betti representations, de Rham integrable connections, and Dolbeault semistable zero-Chern Higgs bundles; states category equivalences; and distinguishes an analytic isomorphism for Betti/de Rham from a homeomorphism for Dolbeault/de Rham. It also states that coarse points parametrize associated-graded/Jordan classes.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Several symbols and realization labels are OCR-degraded, and major equivalences cite companion work. Novelty relative to #44 or any external corpus is unconfirmed and was not assessed.",
+      "unit_id": "agnostic_oa_w2136226659_three_realizations"
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance": "agnostic_oa_critic_9d7fe1304afb96228e872fa101ea3b1e556dfc1da3dfec4189a4bfd953bcdc19",
+    "agnostic_oa_w2136226659_framed_continuity_counterexample": "agnostic_oa_critic_5807ee0ee0e2860f5d7ca2644a00ec760d97b7e0eb86520cca653c0fcb3cf8bc",
+    "agnostic_oa_w2136226659_higgs_moduli_and_scaling": "agnostic_oa_critic_d7a221a5390f8f551af59614d06ce0fe5415c6172c838810b543d971659fb4a1",
+    "agnostic_oa_w2136226659_hitchin_properness_and_limits": "agnostic_oa_critic_a06051220af075d40dd81202dd33b555f11277ab6551a49350efe7d9622c885d",
+    "agnostic_oa_w2136226659_integrability_as_transport_cocycle": "agnostic_oa_critic_f83385ff8496c77c1048f5c9a572f4289a260e64f5e9bfd54e9ada0c3b0fdc95",
+    "agnostic_oa_w2136226659_integrable_connection_moduli": "agnostic_oa_critic_848a7043b52eddc33f30ddfaea450a46d2a9a17eefd91a024c22dc220963b102",
+    "agnostic_oa_w2136226659_nonabelian_gauss_manin": "agnostic_oa_critic_e236d619ad7cbf596cbdc134afce5e7e7a0d1f12392d9fa688f9972d72209336",
+    "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism": "agnostic_oa_critic_7d7531d083406617a089b0ef5e6188063e41a6bf53e23daf7682dbf4ebbdc2a4",
+    "agnostic_oa_w2136226659_orbits_and_semisimplification": "agnostic_oa_critic_21c1c2d9963e3c6792189cc07b0385e9163522d9656231061f1d44ff6c41c016",
+    "agnostic_oa_w2136226659_principal_higgs_quotients": "agnostic_oa_critic_6758a497ce595131e4906c8c77a9f8c3342a7660f83f0b4ccc5dccea9dff7e24",
+    "agnostic_oa_w2136226659_relative_betti_local_system": "agnostic_oa_critic_db4323a62f44685ca77c96f748823b1519ede5a765f2191e5f02cf0aeb4d22fc",
+    "agnostic_oa_w2136226659_riemann_hilbert_relative": "agnostic_oa_critic_192f3286e6b8f1aaee56e5844e2f0af9f68bb1666dbea97bad1fdfededa1ea9e",
+    "agnostic_oa_w2136226659_spectral_sheaf_reencoding": "agnostic_oa_critic_a5dc419d4ab0fe3ce0b94a9f1a59e1828742f8217a7414b1c59bb9a77babbfbd",
+    "agnostic_oa_w2136226659_subobjects_detect_structure_group": "agnostic_oa_critic_24539906bd654dcf27c1ab225a761d624f1f56b5ff7dd7c0e914ef68a1bc9160",
+    "agnostic_oa_w2136226659_tannakian_reconstruction": "agnostic_oa_critic_b3e0bc2eb532e46734eb15085b4716c985c6baa32e2c8e79991de7b600f9fd37",
+    "agnostic_oa_w2136226659_three_realizations": "agnostic_oa_critic_5688da42656171e602954fddabfaa3cb54ac3417479fc87e38d2317a00f61831"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w2136226659_b127e76d_part_01.jsonl",
+  "source_id": "openalex_w2136226659",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_three_realizations.txt",
+      "artifact_bytes": 12021,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_three_realizations.txt",
+      "artifact_sha256": "a51646220ffbe4b1620e634e3d1649c19f3fdfcd4d40e911bb0f795f90af61d4",
+      "content_sha256": "eca166df8b681f1e673703a685812b8b2d5a4ee3ef4f3c999f6c91b956355a82",
+      "context_note": "The introduction states the architecture and its qualifications; historical claims and cited antecedents remain supporting provenance rather than novelty evidence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136226659_three_realizations",
+            "agnostic_oa_w2136226659_riemann_hilbert_relative",
+            "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism",
+            "agnostic_oa_w2136226659_tannakian_reconstruction",
+            "agnostic_oa_w2136226659_quadratic_cones_and_isosingularity"
+          ],
+          "identifier": "nonabelian_hodge_and_representation_moduli",
+          "kind": "new_family",
+          "summary": "The source grounds a coherent candidate family centered on Betti/de Rham/Dolbeault realizations, framed-versus-coarse quotients, principal-object reconstruction, and common local deformation models. The family label follows assignment routing; novelty relative to #44 or any other corpus is explicitly unconfirmed because no comparison material was inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 205,
+      "line_start": 29,
+      "representation_dependency": "Depends on the source's definitions of the Betti, de Rham, and Dolbeault moduli and on cited harmonic-bundle results; the global equivalences have different strengths.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Separates category equivalence, analytic isomorphism, topological homeomorphism, and formal local isomorphism while organizing representations, flat connections, and Higgs bundles as related but nonidentical realizations.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Three realizations with deliberately different equivalence strengths",
+      "unit_id": "agnostic_oa_w2136226659_three_realizations",
+      "unit_type": "conceptual-distinction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_orbits_and_semisimplification.txt",
+      "artifact_bytes": 4040,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_orbits_and_semisimplification.txt",
+      "artifact_sha256": "f8ddb5a68c18f6f995ded64f44fac97d085c3991f2db71215af77b26b0b77177",
+      "content_sha256": "a43c0edc2d527ae8a73c369e53caf1bf6890961b59c1556cfea61c1c4b15678f",
+      "context_note": "The quotient statement is legible, but several symbols and subscripts are OCR-damaged and exact formulas require page-image checking.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 370,
+      "line_start": 301,
+      "representation_dependency": "Uses affine representation schemes, conjugation by GL(n), and the categorical/GIT quotient.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Makes explicit what quotienting forgets: raw isomorphism classes are replaced by closed-orbit representatives, with nonclosed orbits mapped to their semisimplifications.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "From raw representations to closed orbits and Jordan equivalence",
+      "unit_id": "agnostic_oa_w2136226659_orbits_and_semisimplification",
+      "unit_type": "quotient-semantics"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_relative_betti_local_system.txt",
+      "artifact_bytes": 8171,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_relative_betti_local_system.txt",
+      "artifact_sha256": "8017f7b5d5f9b76279429e8cccf14f4dd77dd07aae27a878cb4835b0a9898e14",
+      "content_sha256": "1a6f26a1d7f4f43ea8ff9f11d8077921a71d0365ba86b8d07a3c3806594d2a59",
+      "context_note": "The construction is relative over a base and records descent/basepoint behavior; notation in displayed formulas is partially degraded.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 501,
+      "line_start": 371,
+      "representation_dependency": "Requires a smooth projective family, local systems of schemes, monodromy/outer actions, and framed versus coarse spaces.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows how a fiberwise representation construction becomes a local system of schemes and why framed spaces retain basepoint/path choices while coarse quotients can lose them.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Relative Betti moduli as locally constant families with descent",
+      "unit_id": "agnostic_oa_w2136226659_relative_betti_local_system",
+      "unit_type": "representation-bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_higgs_moduli_and_scaling.txt",
+      "artifact_bytes": 9240,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_higgs_moduli_and_scaling.txt",
+      "artifact_sha256": "6200055f3eb033ea6cd78c4a9992c0a8212a0b90badeb1a83e8baad147b8df83",
+      "content_sha256": "3ad5276d56146bd20683b8a06c5f62f3381c071c7aa0c4be9addcc8d69d2b941",
+      "context_note": "Semistability and construction of the moduli space are imported from Part I; the conceptual distinction between semiharmonic and harmonic/closed points is stated here.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 634,
+      "line_start": 502,
+      "representation_dependency": "Depends on Part I for Higgs-sheaf moduli, stability, and corepresentability, plus cited harmonic correspondence for fixed points.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Connects Jordan equivalence to associated gradeds, identifies closed points with polystable/harmonic objects, and uses scaling of the Higgs field to expose graded fixed-point structure.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Higgs moduli, associated graded objects, and scaling fixed points",
+      "unit_id": "agnostic_oa_w2136226659_higgs_moduli_and_scaling",
+      "unit_type": "moduli-semantics"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_spectral_sheaf_reencoding.txt",
+      "artifact_bytes": 4511,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_spectral_sheaf_reencoding.txt",
+      "artifact_sha256": "e5a34b8e7403e1f6a16102f1e5d382093915201385a7d2e826059c65be58b15f",
+      "content_sha256": "8f4bee59af8e8cf5a9a34189e0f6afb780f7e1e581513db4b302c42d42c52bce",
+      "context_note": "This is an alternative construction of the same functor, not a claim that every formula survived OCR; exact sheaf/module notation needs checking.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 704,
+      "line_start": 635,
+      "representation_dependency": "Uses the equivalence between modules over the symmetric algebra of the tangent sheaf and coherent sheaves on the cotangent bundle/compactification.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Provides a reusable representation move: algebraic operator data become geometric support data, while flatness, purity, torsion-freeness, and stability are tracked across the encoding.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Re-encoding Higgs data as spectral sheaves",
+      "unit_id": "agnostic_oa_w2136226659_spectral_sheaf_reencoding",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_hitchin_properness_and_limits.txt",
+      "artifact_bytes": 10081,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_hitchin_properness_and_limits.txt",
+      "artifact_sha256": "7f5a0ef143dc90660bd20dcdf9f4ae3e092523cb0f1083b9a1feea2049dc2488",
+      "content_sha256": "2e8135f4cc6f93754e9156c8c53c6791ab20acbbb9bca085cbd494d8f86a6017",
+      "context_note": "The spectral-curve example is application context; the accepted content is the support/properness/degeneration mechanism. Displayed characteristic-polynomial formulas are OCR-fragile.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 874,
+      "line_start": 705,
+      "representation_dependency": "Uses characteristic polynomials, spectral support, the compactified cotangent bundle, and properness of the Hitchin map.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows how an invariant map and properness prevent escape at infinity and force a scaling orbit to acquire a fixed-point limit; this is a general compactness-through-invariants pattern.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Proper invariants turn scaling into controlled degeneration",
+      "unit_id": "agnostic_oa_w2136226659_hitchin_properness_and_limits",
+      "unit_type": "proof-strategy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_integrable_connection_moduli.txt",
+      "artifact_bytes": 5090,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_integrable_connection_moduli.txt",
+      "artifact_sha256": "421dea79f4f09e597495dd4af316cd15979aab6c024b4cdde23016576b60f768",
+      "content_sha256": "17c336b7265813febe6b30ee9dcfa61481398ecf6393cd0f4977402dce010dd0",
+      "context_note": "Automatic local freeness and Chern-class vanishing are cited results, not established from scratch here.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 955,
+      "line_start": 878,
+      "representation_dependency": "Depends on differential-operator module machinery from Part I and distinguishes framed de Rham spaces from their basepoint-independent coarse quotient.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Packages flatness as zero curvature and explains why changing a basepoint is transparent analytically for framed objects but algebraically uncertain, whereas the coarse quotient is intrinsic.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Integrability as a moduli condition with framed/coarse separation",
+      "unit_id": "agnostic_oa_w2136226659_integrable_connection_moduli",
+      "unit_type": "moduli-semantics"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_riemann_hilbert_relative.txt",
+      "artifact_bytes": 15283,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_riemann_hilbert_relative.txt",
+      "artifact_sha256": "c6fd7caeb3ecbf54834957e8268dec822e2a4bbfbb00407e2dea8979fd0a2404",
+      "content_sha256": "a21f331af2efc3c5cabf704ca187bdd35547e7fdc58b5df813d185516d171648",
+      "context_note": "The local analytic lemma is proof-heavy and some formulas are corrupted; its role is to justify relative horizontal sections over possibly nonreduced bases.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136226659_three_realizations",
+            "agnostic_oa_w2136226659_riemann_hilbert_relative",
+            "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism",
+            "agnostic_oa_w2136226659_tannakian_reconstruction",
+            "agnostic_oa_w2136226659_quadratic_cones_and_isosingularity"
+          ],
+          "identifier": "nonabelian_hodge_and_representation_moduli",
+          "kind": "new_family",
+          "summary": "The source grounds a coherent candidate family centered on Betti/de Rham/Dolbeault realizations, framed-versus-coarse quotients, principal-object reconstruction, and common local deformation models. The family label follows assignment routing; novelty relative to #44 or any other corpus is explicitly unconfirmed because no comparison material was inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1214,
+      "line_start": 956,
+      "representation_dependency": "Relies on analytic representability, horizontal-section/flat-connection equivalence, and descent; the main comparison is Riemann-Hilbert.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Derives the framed Betti/de Rham analytic isomorphism by showing that both spaces represent the same analytic family problem, then descends it to coarse moduli.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Relative Riemann-Hilbert as equality of represented analytic functors",
+      "unit_id": "agnostic_oa_w2136226659_riemann_hilbert_relative",
+      "unit_type": "representation-bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism.txt",
+      "artifact_bytes": 20877,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism.txt",
+      "artifact_sha256": "8ecb01b747c15da29d4ee19660d0467fea7d581127055072f3d321c76bf0a350",
+      "content_sha256": "95ce6b4142f210eff10e0b104467cf9ec9546952595555f0f861defd1ed384c6",
+      "context_note": "Compactness and regularity arguments use Uhlenbeck, elliptic estimates, and the harmonic-bundle results of the cited companion paper; exact analytic hypotheses should not be weakened.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136226659_three_realizations",
+            "agnostic_oa_w2136226659_riemann_hilbert_relative",
+            "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism",
+            "agnostic_oa_w2136226659_tannakian_reconstruction",
+            "agnostic_oa_w2136226659_quadratic_cones_and_isosingularity"
+          ],
+          "identifier": "nonabelian_hodge_and_representation_moduli",
+          "kind": "new_family",
+          "summary": "The source grounds a coherent candidate family centered on Betti/de Rham/Dolbeault realizations, framed-versus-coarse quotients, principal-object reconstruction, and common local deformation models. The family label follows assignment routing; novelty relative to #44 or any other corpus is explicitly unconfirmed because no comparison material was inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1528,
+      "line_start": 1215,
+      "representation_dependency": "Requires existence/uniqueness of harmonic metrics for semisimple flat bundles and polystable zero-Chern Higgs bundles, plus weak compactness.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Uses a common harmonic representative and compact quotient topology to compare de Rham and Dolbeault moduli while carefully limiting the result to a topological homeomorphism.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Harmonic representatives produce a homeomorphism, not an analytic isomorphism",
+      "unit_id": "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism",
+      "unit_type": "conceptual-distinction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_framed_continuity_counterexample.txt",
+      "artifact_bytes": 2591,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_framed_continuity_counterexample.txt",
+      "artifact_sha256": "0befa858cfd3de6737c7b152febde4ea5696943f8b4a371258256dd3d1af6767",
+      "content_sha256": "6400db289042ebd813fe959aef2ebded734a2c2769781107132cd299abc0e08e",
+      "context_note": "The displayed elliptic-curve matrices are especially OCR-damaged, but the limiting-dependence conclusion and its scope are clear.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1587,
+      "line_start": 1529,
+      "representation_dependency": "Uses an explicit degenerating family of framed Higgs bundles and its associated flat connections.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Demonstrates that a categorical bijection can fail to be continuous before quotienting even when the stable-locus comparison and coarse moduli homeomorphism behave well.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "A counterexample separates coarse continuity from framed continuity",
+      "unit_id": "agnostic_oa_w2136226659_framed_continuity_counterexample",
+      "unit_type": "counterexample"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_integrability_as_transport_cocycle.txt",
+      "artifact_bytes": 6027,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_integrability_as_transport_cocycle.txt",
+      "artifact_sha256": "576f9c0d78470e9283c4b1ed78ad5fa5fee520154a009df7d47f574945069152",
+      "content_sha256": "6371734c0e0bc8b17e90057c650b724cb96cc6781212803184d64d46a979548e",
+      "context_note": "The formal Taylor expansions and differential equations are OCR-sensitive; the robust content is the equivalence between flat infinitesimal transport and integrability.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1692,
+      "line_start": 1592,
+      "representation_dependency": "Uses formal neighborhoods of diagonals and an isomorphism between two pullbacks satisfying identity and cocycle conditions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Reframes a differential condition as transport along infinitesimally close points; the cocycle becomes precisely the compatibility whose infinitesimal obstruction is curvature.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Integrable connection as coherent infinitesimal transport",
+      "unit_id": "agnostic_oa_w2136226659_integrability_as_transport_cocycle",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_crystals_and_nilpotent_invariance.txt",
+      "artifact_bytes": 8671,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_crystals_and_nilpotent_invariance.txt",
+      "artifact_sha256": "c40ba6fd22a6e1510c966043ece8ddc944e3a055f2366f29dc4949a545433b5e",
+      "content_sha256": "cc4fccbff37085a53419892c29be28bb343469e17509308fcc29b43aa38e8195",
+      "context_note": "Terminology is acknowledged by the source as potentially nonstandard; use the definitions here rather than importing modern variants silently.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1840,
+      "line_start": 1693,
+      "representation_dependency": "Uses the infinitesimal site, crystals/stratifications, formal diagonal descent, smooth lifting, and nilpotent thickenings.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows that compatible data on all infinitesimal thickenings can be reconstructed from formal diagonal transport and are invariant under replacing a scheme by a nilpotent closed subscheme.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Crystals encode infinitesimal compatibility and ignore nilpotent presentation changes",
+      "unit_id": "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance",
+      "unit_type": "descent-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_nonabelian_gauss_manin.txt",
+      "artifact_bytes": 7056,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_nonabelian_gauss_manin.txt",
+      "artifact_sha256": "dbca87b5e5236c739e647de311abb24fafba5a11554f4d78de6672be99fda622",
+      "content_sha256": "a1dc744fc0253f20a4226df4ae03985c04c35e04e2c30a16e94e78dc91c879f8",
+      "context_note": "Representability is transferred from functors to schemes; the final comparison with Betti local constancy is theorem-level and depends on the previous analytic equivalence.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1958,
+      "line_start": 1841,
+      "representation_dependency": "Requires crystals of moduli functors, (co)representability, stratifications, and the Betti/de Rham analytic identification.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Builds a nonabelian Gauss-Manin connection by first making the moduli problem crystalline, then transporting that stratification to the representing scheme and matching it with Betti local constancy.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Gauss-Manin connection from crystalline functoriality",
+      "unit_id": "agnostic_oa_w2136226659_nonabelian_gauss_manin",
+      "unit_type": "construction-pattern"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_tannakian_reconstruction.txt",
+      "artifact_bytes": 3739,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_tannakian_reconstruction.txt",
+      "artifact_sha256": "dfee9f95ea32ad37398ccd984c6acd6f8e4378a59527cbe333c1d57325ab1a94",
+      "content_sha256": "f041211743ebd84e1d9c97a0ab5f7f4df6e34e4c3126d2b31714e85c2959416a",
+      "context_note": "Nori's converse is cited rather than proved; this span establishes the tensor-functor dictionary used in the rest of the principal-bundle section.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136226659_three_realizations",
+            "agnostic_oa_w2136226659_riemann_hilbert_relative",
+            "agnostic_oa_w2136226659_nonabelian_hodge_homeomorphism",
+            "agnostic_oa_w2136226659_tannakian_reconstruction",
+            "agnostic_oa_w2136226659_quadratic_cones_and_isosingularity"
+          ],
+          "identifier": "nonabelian_hodge_and_representation_moduli",
+          "kind": "new_family",
+          "summary": "The source grounds a coherent candidate family centered on Betti/de Rham/Dolbeault realizations, framed-versus-coarse quotients, principal-object reconstruction, and common local deformation models. The family label follows assignment routing; novelty relative to #44 or any other corpus is explicitly unconfirmed because no comparison material was inspected."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 2024,
+      "line_start": 1961,
+      "representation_dependency": "Uses the tensor category Rep(G), vector bundles, strict exact faithful tensor functors, and Nori's reconstruction theorem.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Replaces one principal bundle by a coherent tensor-compatible family of associated bundles and supplies a converse reconstruction, exposing which categorical structure preserves the original object.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Principal objects reconstructed from their associated representations",
+      "unit_id": "agnostic_oa_w2136226659_tannakian_reconstruction",
+      "unit_type": "abstraction-compression"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_subobjects_detect_structure_group.txt",
+      "artifact_bytes": 8757,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_subobjects_detect_structure_group.txt",
+      "artifact_sha256": "12a8742d3717c71d06cf1453ce233940f6b2f7b8f673c922c5d88297a8ad0c7c",
+      "content_sha256": "77f8da8ac3e48ae476ca60b19e4a33e6187d04c3edccee583916ec881a195dac",
+      "context_note": "Several representability and uniqueness steps cite Part I; monodromy is defined categorically through preserved subobjects and can jump down under specialization.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 2145,
+      "line_start": 2025,
+      "representation_dependency": "Uses projective schemes of harmonic Higgs quotients, faithful representations, tensor reconstruction, and a chosen frame/section.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Characterizes containment of monodromy in a subgroup by the existence of compatible sub-Higgs bundles across representations, converting a group-theoretic condition into functorial linear data.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Invariant subobjects detect reduction of structure group",
+      "unit_id": "agnostic_oa_w2136226659_subobjects_detect_structure_group",
+      "unit_type": "structural-characterization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_principal_higgs_quotients.txt",
+      "artifact_bytes": 7642,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_principal_higgs_quotients.txt",
+      "artifact_sha256": "242a498f0eb1f295dbaa8ffac0d7be2bad292f28a979e7314206b93f951ccfde",
+      "content_sha256": "8dfecabf1dea9a86dd674cd5f75ebf112090078c2a3a114b94a14498c103d00f",
+      "context_note": "The quotient construction relies on GIT from Part I and standard results on reductive groups/parabolics; the one-parameter degeneration proof is source-specific evidence for the general closed-orbit criterion.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 2262,
+      "line_start": 2147,
+      "representation_dependency": "Requires reductive G, a faithful linear representation, principal Higgs representation spaces, and universal categorical quotients.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Extends the framed/coarse distinction to principal groups and identifies closed orbits through complete reducibility; nonreductive monodromy is exposed by a one-parameter degeneration to a smaller limit group.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Closed principal-bundle orbits are exactly reductive monodromy",
+      "unit_id": "agnostic_oa_w2136226659_principal_higgs_quotients",
+      "unit_type": "quotient-semantics"
+    }
+  ]
+}

@@ -1,0 +1,2691 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2048352354_108b429a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2048352354",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the RH-based zero notation only as setup and records that only a few coefficients were known or conjectured.",
+      "line_end": 57,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Euler product and displayed exponents are formula-sensitive; prose supports the factorization role, while exact transcription should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The continuous zeta moment problem is organized as an arithmetic Euler-product factor times a still-mysterious coefficient, making clear which part a random-matrix model is intended to predict.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moment constants split into arithmetic and universal factors",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d001.txt",
+      "unit_bytes": 3413,
+      "unit_id": "openalex_w2048352354_d001",
+      "unit_sha256": "9ca2f58011f4b9968c5f13ec2a99de089549cab6aadce482048075a79b27a036",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d001.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "                                                    for the Riemann zeta function, and provide a uniform approach to understand-\n                                                    ing moments of the zeta function and its derivative.\n\n\n\n\n                                                                               1. Introduction\n\n",
+          "sha256": "cc117d972d066d4307fa7fd424726757b7dde64822c57b7b0ffc25a3bcb420bc"
+        },
+        "after": {
+          "line_start": 58,
+          "line_end": 65,
+          "text": "                                            In [6] Keating and Snaith argued that one can create a probabilistic model for the\n                                            zeta function around height T using the characteristic polynomial of an N × N\n\n                                              Date: 18 November 2002.\n                                                                                             1\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "cfb51ea4c0fc60fef401d819762f15e5fc2beb7c0c389abd50c41730b89eb1ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 168,
+            "line_start": 22,
+            "mathematical_role": "Defines continuous and zero-sampled moments, recalls the arithmetic/random-matrix factorization, and motivates an offset family intended to interpolate between value and derivative statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 57,
+          "line_start": 24,
+          "title": "Moment constants split into arithmetic and universal factors",
+          "unit_id": "openalex_w2048352354_d001",
+          "unit_type": "motivation",
+          "why_material": "The continuous zeta moment problem is organized as an arithmetic Euler-product factor times a still-mysterious coefficient, making clear which part a random-matrix model is intended to predict."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the RH-based zero notation only as setup and records that only a few coefficients were known or conjectured.",
+          "representation_dependency": "The Euler product and displayed exponents are formula-sensitive; prose supports the factorization role, while exact transcription should be checked against the PDF.",
+          "unit_id": "openalex_w2048352354_d001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 102,
+            "line_start": 58,
+            "title": "Matrix size is matched to zero density and fixes the universal moment factor",
+            "unit_id": "openalex_w2048352354_d002",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The characteristic polynomial of a Haar unitary matrix is matched to zeta at height T by setting matrix dimension to the local logarithmic density, and its Barnes-G asymptotic supplies the previously unknown universal coefficient."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The conjectural family retains the arithmetic Euler-product factor while the Barnes-G factor and F_k profile encode universal matrix statistics, suggesting a modular division between arithmetic and local spectral structure.",
+            "limit": "This is a modeling synthesis supported by matched formulas, not a proof that the factorization persists for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d001",
+              "openalex_w2048352354_d002",
+              "openalex_w2048352354_d003",
+              "openalex_w2048352354_d014"
+            ],
+            "title": "Arithmetic and universal factors persist across the interpolating family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 17,
+              "line_start": 13,
+              "reason": "Abstract previews the source's two-stage random-matrix-to-zeta program but is superseded by exact units below."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d001",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d001",
+          "spontaneous_reading": "The moment conjecture does useful work by splitting its leading constant into an explicit prime-by-prime arithmetic factor a(k) and a residual coefficient f_k whose general form was unknown; this isolates the part a different model might explain."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d001",
+          "source_grounded_mathematics": "Continuous 2k-th moments of zeta on the critical line are conjectured to grow like a(k) f_k times (log T)^(k^2), with a(k) given by an Euler product and only a few f_k known or conjectured.",
+          "conceptual_reading": "The factorization separates local prime arithmetic from a second coefficient governing the global moment scale, turning one opaque constant into two components with different mathematical provenance.",
+          "representation_or_bridge": "The Euler product a(k) is the arithmetic interface; the unresolved f_k is the exposed slot later targeted by the random-matrix representation.",
+          "boundary_or_failure": "RH is assumed here to simplify zero notation, while the general moment asymptotic and most listed coefficients remain conjectural rather than proved.",
+          "uncertainty": "The prose securely supports the factorization, but exact exponents, factorials, and special values are extraction-sensitive and require the PDF before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conclusion is explicitly conjectural on the zeta side even though the unitary-matrix expectation is calculated.",
+      "line_end": 102,
+      "line_start": 58,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the characteristic-polynomial product and Barnes-G ratio displayed in the extracted formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The characteristic polynomial of a Haar unitary matrix is matched to zeta at height T by setting matrix dimension to the local logarithmic density, and its Barnes-G asymptotic supplies the previously unknown universal coefficient.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Matrix size is matched to zero density and fixes the universal moment factor",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d002.txt",
+      "unit_bytes": 2186,
+      "unit_id": "openalex_w2048352354_d002",
+      "unit_sha256": "673d9af2ccce219ab704b4a334791fdaa711d40d61b7b09ab83a05fa4d100ce5",
+      "unit_type": "heuristic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d002.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "\n                                            and fk being an integer (when k is integer) divided by (k 2 )!, whose value was\n                                            unknown apart from in a few cases. The known values of fk are f0 = 1 (trivial),\n                                                                                          1\n                                            f1 = 1 (Hardy and Littlewood [2]), and f2 = 12  (Ingham [3]). The value f3 = 42 9!\n                                            has been conjectured by Conrey and Ghosh [4] and f4 = 2402416! is a conjecture of\n                                            Conrey and Gonek [5]. We should mention that a(k) given in (1.1) can be calculated\n                                            for certain k: a(0) = a(1) = 1 and a(−1) = a(2) = π62 .\n",
+          "sha256": "91e40bc82ff14ac9aea53c2662403f4401ad489da7b73e4629af1968116e097f"
+        },
+        "after": {
+          "line_start": 103,
+          "line_end": 110,
+          "text": "\nFollowing this, Hughes, Keating and O’Connell [7] used the characteristic polyno-\nmial to model the discrete moments of the derivative of the zeta function,\n                                  1    X                    2k\n                     Jk (T ) :=             ζ ′ ( 21 + iγn ) .\n                                N (T )\n                                        0<γn ≤T\n\n",
+          "sha256": "804ba7bc45e5cfb4cce6637b19bbb8b476478b3bec9512600f957bae4bd6cd6b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 168,
+            "line_start": 22,
+            "mathematical_role": "Defines continuous and zero-sampled moments, recalls the arithmetic/random-matrix factorization, and motivates an offset family intended to interpolate between value and derivative statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 102,
+          "line_start": 58,
+          "title": "Matrix size is matched to zero density and fixes the universal moment factor",
+          "unit_id": "openalex_w2048352354_d002",
+          "unit_type": "heuristic-bridge",
+          "why_material": "The characteristic polynomial of a Haar unitary matrix is matched to zeta at height T by setting matrix dimension to the local logarithmic density, and its Barnes-G asymptotic supplies the previously unknown universal coefficient."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conclusion is explicitly conjectural on the zeta side even though the unitary-matrix expectation is calculated.",
+          "representation_dependency": "Depends on the characteristic-polynomial product and Barnes-G ratio displayed in the extracted formulas.",
+          "unit_id": "openalex_w2048352354_d002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 57,
+            "line_start": 24,
+            "title": "Moment constants split into arithmetic and universal factors",
+            "unit_id": "openalex_w2048352354_d001",
+            "unit_type": "motivation",
+            "why_material": "The continuous zeta moment problem is organized as an arithmetic Euler-product factor times a still-mysterious coefficient, making clear which part a random-matrix model is intended to predict."
+          },
+          {
+            "line_end": 142,
+            "line_start": 104,
+            "title": "Derivative moments arise from sampling characteristic-polynomial derivatives at eigenangles",
+            "unit_id": "openalex_w2048352354_d003",
+            "unit_type": "method-comparison",
+            "why_material": "It extends the same density matching from ordinary zeta moments to discrete derivative moments at zeros, with a shifted admissible moment range and exponent, and records agreement with known special cases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The conjectural family retains the arithmetic Euler-product factor while the Barnes-G factor and F_k profile encode universal matrix statistics, suggesting a modular division between arithmetic and local spectral structure.",
+            "limit": "This is a modeling synthesis supported by matched formulas, not a proof that the factorization persists for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d001",
+              "openalex_w2048352354_d002",
+              "openalex_w2048352354_d003",
+              "openalex_w2048352354_d014"
+            ],
+            "title": "Arithmetic and universal factors persist across the interpolating family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d002",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d002",
+          "spontaneous_reading": "The central bridge is a scale match: a Haar-unitary characteristic polynomial of dimension N is placed at zeta height T by setting N to the local logarithmic zero density, and its Barnes-G moment asymptotic supplies the missing universal coefficient."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d002",
+          "source_grounded_mathematics": "The Haar expectation of |Z_U(0)|^(2k) has an exact gamma-product formula and, for fixed Re(k)>-1/2, a Barnes-G asymptotic proportional to N^(k^2); matching N=log(T/2pi) motivates the stated zeta-moment conjecture.",
+          "conceptual_reading": "Dimension is used as an effective local complexity parameter: after density matching, matrix statistics predict the non-arithmetic part while a(k) is retained from number theory.",
+          "representation_or_bridge": "The characteristic polynomial Z_U, the identification N=log(T/2pi), and the Barnes-G ratio form the matrix-to-zeta translation layer.",
+          "boundary_or_failure": "The unitary expectation is calculated, but transferring it to zeta is a probabilistic modeling step and Conjecture 1 is not proved by the matrix calculation.",
+          "uncertainty": "The mechanism and admissible range are clear; the gamma-product normalization and displayed powers remain formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zeta conclusion assumes simple zeros; the random-matrix asymptotic and number-theoretic conjecture remain distinct claims.",
+      "line_end": 142,
+      "line_start": 104,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and powers depend on formula extraction, but the sampling correspondence and stated parameter ranges are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It extends the same density matching from ordinary zeta moments to discrete derivative moments at zeros, with a shifted admissible moment range and exponent, and records agreement with known special cases.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative moments arise from sampling characteristic-polynomial derivatives at eigenangles",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d003.txt",
+      "unit_bytes": 2004,
+      "unit_id": "openalex_w2048352354_d003",
+      "unit_sha256": "486c68b55bb5a800cf6c2a2ca13ed393153a5e31aa216b90b1cd889df25a6318",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d003.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 96,
+          "line_end": 103,
+          "text": "\nConjecture 1. (Keating and Snaith). For fixed k > −1/2, as T → ∞,\n               Z                                    \u0012       \u0013k2\n             1 T     1       2k      G2 (k + 1)          T\n                  ζ( 2 + it)    dt ∼            a(k) log\n             T 0                     G(2k + 1)           2π\nwhere G(·) is the Barnes G–function and a(k) is given in (1.1)\n\n",
+          "sha256": "6ffba2b5b79255596dc51a053794381ad5da38e272c9afb0dfb5695b1521ac70"
+        },
+        "after": {
+          "line_start": 143,
+          "line_end": 150,
+          "text": "It is striking that conjecture 1 and conjecture 2 have very similar form. The purpose\nof this paper is to unify them as special cases of one result.\nIn the next section we will show\n                     \u001a                  \u001b\n                            \u0010    y \u0011 2k     G2 (k + 1)           2\n                  EN ZU θ1 +              ∼            Fk (y)N k\n                                 N          G(2k + 1)\nwhere Fk (y) is a certain function, independent of N , given in theorem 3.\n",
+          "sha256": "e8191dc553274c6b8843af3578bb7e374b7367227925c63eacd871c9b67c4c85"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 168,
+            "line_start": 22,
+            "mathematical_role": "Defines continuous and zero-sampled moments, recalls the arithmetic/random-matrix factorization, and motivates an offset family intended to interpolate between value and derivative statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 142,
+          "line_start": 104,
+          "title": "Derivative moments arise from sampling characteristic-polynomial derivatives at eigenangles",
+          "unit_id": "openalex_w2048352354_d003",
+          "unit_type": "method-comparison",
+          "why_material": "It extends the same density matching from ordinary zeta moments to discrete derivative moments at zeros, with a shifted admissible moment range and exponent, and records agreement with known special cases."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zeta conclusion assumes simple zeros; the random-matrix asymptotic and number-theoretic conjecture remain distinct claims.",
+          "representation_dependency": "Exact constants and powers depend on formula extraction, but the sampling correspondence and stated parameter ranges are readable.",
+          "unit_id": "openalex_w2048352354_d003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 102,
+            "line_start": 58,
+            "title": "Matrix size is matched to zero density and fixes the universal moment factor",
+            "unit_id": "openalex_w2048352354_d002",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The characteristic polynomial of a Haar unitary matrix is matched to zeta at height T by setting matrix dimension to the local logarithmic density, and its Barnes-G asymptotic supplies the previously unknown universal coefficient."
+          },
+          {
+            "line_end": 166,
+            "line_start": 143,
+            "title": "A microscopic offset family is proposed to unify value and derivative moments",
+            "unit_id": "openalex_w2048352354_d004",
+            "unit_type": "reframing",
+            "why_material": "Rather than treating zeta and derivative moments separately, the paper inserts an offset of one local-spacing scale and predicts that a single profile has the ordinary-value and derivative conjectures as opposite offset limits."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The conjectural family retains the arithmetic Euler-product factor while the Barnes-G factor and F_k profile encode universal matrix statistics, suggesting a modular division between arithmetic and local spectral structure.",
+            "limit": "This is a modeling synthesis supported by matched formulas, not a proof that the factorization persists for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d001",
+              "openalex_w2048352354_d002",
+              "openalex_w2048352354_d003",
+              "openalex_w2048352354_d014"
+            ],
+            "title": "Arithmetic and universal factors persist across the interpolating family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d003",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d003",
+          "spontaneous_reading": "Sampling derivatives at eigenangles models the fact that zeta derivatives are sampled at zeros, and the resulting shift from k^2 to k(k+2) records the extra local vanishing structure imposed by that conditioning."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d003",
+          "source_grounded_mathematics": "Averaged 2k-th powers of characteristic-polynomial derivatives at eigenangles scale with a Barnes-G factor and N^(k(k+2)) for Re(k)>-3/2; this motivates a corresponding discrete zeta-derivative moment conjecture under simple zeros.",
+          "conceptual_reading": "Differentiation at a sampled zero is not treated as an unrelated statistic: it is the locally conditioned analogue of an ordinary characteristic-polynomial value, with a changed exponent and normalization.",
+          "representation_or_bridge": "Eigenangles correspond to zeta zeros, and Z_U' at an eigenangle corresponds to zeta' at a zero under the same density matching.",
+          "boundary_or_failure": "The zeta statement assumes simple zeros and is conjectural; the cited k=2 agreement uses an extension beyond the proven range of a number-theoretic theorem.",
+          "uncertainty": "The sampling correspondence and parameter ranges are readable, but exact constants and powers should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the paper's organizing move: alpha tending to infinity and zero are announced as special regimes and later justified conditionally.",
+      "line_end": 166,
+      "line_start": 143,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses the displayed offset normalization L and the profile F_k; their exact constants are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rather than treating zeta and derivative moments separately, the paper inserts an offset of one local-spacing scale and predicts that a single profile has the ordinary-value and derivative conjectures as opposite offset limits.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A microscopic offset family is proposed to unify value and derivative moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d004.txt",
+      "unit_bytes": 1472,
+      "unit_id": "openalex_w2048352354_d004",
+      "unit_sha256": "011924b47efae242da5eb8317f85aeaec8df133a4f51c5e2b80ebf1dce7327e5",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d004.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 135,
+          "line_end": 142,
+          "text": "Again this conjecture is found to agree with all previously known results; when\nk = −1 (a conjecture of Gonek [8]), when k = 0 (trivial), and when k = 1 (a theo-\nrem of Gonek [9] under RH). Also, extending a theorem due to Conrey, Ghosh and\nGonek [10] (recorded in this paper as theorem 6) beyond its range of (proven) appli-\n                                                  1        T 8\n                                                              \u0001\ncability, conjecture 7.1 states that J2 (T ) ∼ 1440π 2 log 2π   , which agrees perfectly\nwith conjecture 2.\n",
+          "sha256": "989046293fc5a057e64f822df8898257bd9704d98a61929a21f76edd02139c5f"
+        },
+        "after": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "\n\n                            2. The random matrix calculation\n\nTheorem 3. For fixed k with Re(k) > −1/2, and for x ≤ AN with A < π constant,\n          (     \u0012         \u0013 2k )                            \u0010 2 \u0011\n                       2x          G2 (k + 1)           2\n      EN ZU θ1 +                 =            Fk (2x)N k + O N k −1\n",
+          "sha256": "aac9c6234e2de11c4150080cec876aa6318b9701407ab0945665bbd0536c89be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 168,
+            "line_start": 22,
+            "mathematical_role": "Defines continuous and zero-sampled moments, recalls the arithmetic/random-matrix factorization, and motivates an offset family intended to interpolate between value and derivative statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 166,
+          "line_start": 143,
+          "title": "A microscopic offset family is proposed to unify value and derivative moments",
+          "unit_id": "openalex_w2048352354_d004",
+          "unit_type": "reframing",
+          "why_material": "Rather than treating zeta and derivative moments separately, the paper inserts an offset of one local-spacing scale and predicts that a single profile has the ordinary-value and derivative conjectures as opposite offset limits."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the paper's organizing move: alpha tending to infinity and zero are announced as special regimes and later justified conditionally.",
+          "representation_dependency": "Uses the displayed offset normalization L and the profile F_k; their exact constants are formula-dependent.",
+          "unit_id": "openalex_w2048352354_d004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 142,
+            "line_start": 104,
+            "title": "Derivative moments arise from sampling characteristic-polynomial derivatives at eigenangles",
+            "unit_id": "openalex_w2048352354_d003",
+            "unit_type": "method-comparison",
+            "why_material": "It extends the same density matching from ordinary zeta moments to discrete derivative moments at zeros, with a shifted admissible moment range and exponent, and records agreement with known special cases."
+          },
+          {
+            "line_end": 178,
+            "line_start": 171,
+            "title": "Microscopic eigenangle offsets have a Bessel-profile moment asymptotic",
+            "unit_id": "openalex_w2048352354_d005",
+            "unit_type": "theorem",
+            "why_material": "Theorem 3 identifies the leading Haar-unitary moment near an eigenangle as a Barnes-G scale times an explicit spherical-Bessel profile, uniformly out to offsets proportional to dimension below the angular boundary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 167,
+              "reason": "Whitespace and section heading route into the random-matrix calculation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d004",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d004",
+          "spontaneous_reading": "Instead of separately modeling values and derivatives, the paper inserts a displacement of one local-spacing scale and makes a single profile F_k carry the crossover between the two regimes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d004",
+          "source_grounded_mathematics": "The matrix moment of Z_U at an offset y/N from an eigenangle is proposed to have a leading factor F_k(y), and an analogous zeta moment at gamma_n+alpha/L is conjectured with F_k(2pi alpha); alpha tending to infinity and zero are announced as the value and derivative limits.",
+          "conceptual_reading": "A one-parameter family reframes two similar conjectures as boundary views of the same scale-sensitive object, exposing which behavior changes with distance from a forced zero.",
+          "representation_or_bridge": "The microscopic coordinates y/N and alpha/L align matrix eigenangle spacing with zeta-zero spacing, while F_k is the common crossover profile.",
+          "boundary_or_failure": "The matrix asymptotic is proved later, but the zeta family is conjectural and recovering its endpoint regimes requires later asymptotics and sufficient uniformity.",
+          "uncertainty": "The organizing relation is explicit; the exact definition of L and all displayed normalizations are formula-level dependencies."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The admissible range Re(k)>-1/2 and x<=AN with A<pi are part of the claim.",
+      "line_end": 178,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact definition of F_k is a formula-level dependency and should be PDF-checked before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 identifies the leading Haar-unitary moment near an eigenangle as a Barnes-G scale times an explicit spherical-Bessel profile, uniformly out to offsets proportional to dimension below the angular boundary.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Microscopic eigenangle offsets have a Bessel-profile moment asymptotic",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d005.txt",
+      "unit_bytes": 476,
+      "unit_id": "openalex_w2048352354_d005",
+      "unit_sha256": "158ec060adb021ade2c9459bc24324defc371e62a129efd9a7aa68bc29b56e75",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d005.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "and will show, in section 3, that this conjecture contains conjectures 1 and 2 as\nspecial cases (α → ∞ and α → 0 respectively). The conjecture is found to agree\nwith a known result of Gonek [9], and the extension of the theorem due to Conrey,\nGhosh and Gonek [10] cited above. These comparisons are discussed in section 3.1.\n\n\n                            2. The random matrix calculation\n\n",
+          "sha256": "0959ada327de748ff4eda65840da4240b1f9f08393c41c8e852cc956ed81864b"
+        },
+        "after": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "\nProof. First note that\n                                                       N −1\n                                  2k                2k Y                            2k\n                |ZU (θN + β)|          = 1 − e−iβ               1 − ei(θn −θN −β)\n                                                        n=1\n\nThe average of this over all N × N unitary matrices with Haar measure can be\n",
+          "sha256": "330085979905cdf84b9db35bcea475ff8c099eeacb4e7d4a46bf5d3ef1eea564"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: offset profile",
+            "line_end": 287,
+            "line_start": 169,
+            "mathematical_role": "States the microscopic eigenangle-offset theorem, reduces it to a mixed two-point characteristic-polynomial moment, identifies the Bessel profile, and checks its separated-point normalization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 178,
+          "line_start": 171,
+          "title": "Microscopic eigenangle offsets have a Bessel-profile moment asymptotic",
+          "unit_id": "openalex_w2048352354_d005",
+          "unit_type": "theorem",
+          "why_material": "Theorem 3 identifies the leading Haar-unitary moment near an eigenangle as a Barnes-G scale times an explicit spherical-Bessel profile, uniformly out to offsets proportional to dimension below the angular boundary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The admissible range Re(k)>-1/2 and x<=AN with A<pi are part of the claim.",
+          "representation_dependency": "The exact definition of F_k is a formula-level dependency and should be PDF-checked before symbolic reuse.",
+          "unit_id": "openalex_w2048352354_d005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 166,
+            "line_start": 143,
+            "title": "A microscopic offset family is proposed to unify value and derivative moments",
+            "unit_id": "openalex_w2048352354_d004",
+            "unit_type": "reframing",
+            "why_material": "Rather than treating zeta and derivative moments separately, the paper inserts an offset of one local-spacing scale and predicts that a single profile has the ordinary-value and derivative conjectures as opposite offset limits."
+          },
+          {
+            "line_end": 231,
+            "line_start": 180,
+            "title": "Conditioning on an eigenangle reduces the target to a two-point mixed moment",
+            "unit_id": "openalex_w2048352354_d006",
+            "unit_type": "decomposition",
+            "why_material": "Factoring out the selected eigenvalue and absorbing Vandermonde terms converts an eigenangle-centered characteristic-polynomial moment in dimension N into a mixed moment at two points in dimension N-1; this is the key structural reduction behind Theorem 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 167,
+              "reason": "Whitespace and section heading route into the random-matrix calculation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d005",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d005",
+          "spontaneous_reading": "The theorem compresses every microscopic offset dependence into one explicit combination of adjacent spherical Bessel functions, leaving the Barnes-G factor and N-growth independent of the offset."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d005",
+          "source_grounded_mathematics": "For fixed Re(k)>-1/2 and x no larger than A N with A<pi, Theorem 3 gives the Haar moment near an eigenangle as a Barnes-G constant times F_k(2x) N^(k^2), with a lower-order error; F_k is displayed through j_k and j_(k-1).",
+          "conceptual_reading": "The profile separates scale from shape: N carries global growth, while a dimension-free Bessel expression records how conditioning on a nearby eigenangle changes the moment.",
+          "representation_or_bridge": "The local coordinate 2x/N and the spherical-Bessel formula are the bridge from an eigenangle-conditioned matrix statistic to an explicit crossover function.",
+          "boundary_or_failure": "This is a unitary-matrix theorem, not a zeta theorem, and its parameter domain Re(k)>-1/2 and angular restriction A<pi are material.",
+          "uncertainty": "The theorem's role and range are clear, but the exact Bessel combination and error exponent require PDF verification before computation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Rotation invariance then places the two evaluation points at 0 and beta, and the microscopic substitution beta=y/N exposes the profile series.",
+      "line_end": 231,
+      "line_start": 180,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The reduction identity and series coefficients are formula-sensitive, though the dimension drop and two-point correlation mechanism are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring out the selected eigenvalue and absorbing Vandermonde terms converts an eigenangle-centered characteristic-polynomial moment in dimension N into a mixed moment at two points in dimension N-1; this is the key structural reduction behind Theorem 3.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditioning on an eigenangle reduces the target to a two-point mixed moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d006.txt",
+      "unit_bytes": 2734,
+      "unit_id": "openalex_w2048352354_d006",
+      "unit_sha256": "dce942e192942bd70d2b890503026a2567ff1f98dade2076c201cabb4efcaebb",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d006.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 172,
+          "line_end": 179,
+          "text": "          (     \u0012         \u0013 2k )                            \u0010 2 \u0011\n                       2x          G2 (k + 1)           2\n      EN ZU θ1 +                 =            Fk (2x)N k + O N k −1\n                        N          G(2k + 1)\nwhere\n(2.1)             Fk (2x) = x2 jk (x)2 + x2 jk−1 (x)2 − 2kxjk (x)jk−1 (x)\nwhere jn (x) are the spherical Bessel functions of the first kind.\n\n",
+          "sha256": "c0a2a1b73ab32781d9e73004589b5f626e275290ceab3da35f15f858024125aa"
+        },
+        "after": {
+          "line_start": 232,
+          "line_end": 239,
+          "text": "\nThe spherical Bessel functions of the first kind are defined as\n                            r\n                               π\n                   jn (z) =      Jn+1/2 (z)\n                              2z\n                            X∞\n                                    (−1)m (n + m)!\n",
+          "sha256": "67527917961b31896263c5c3f34b4177e41531faff080de99464b4030a6fd3e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: offset profile",
+            "line_end": 287,
+            "line_start": 169,
+            "mathematical_role": "States the microscopic eigenangle-offset theorem, reduces it to a mixed two-point characteristic-polynomial moment, identifies the Bessel profile, and checks its separated-point normalization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 231,
+          "line_start": 180,
+          "title": "Conditioning on an eigenangle reduces the target to a two-point mixed moment",
+          "unit_id": "openalex_w2048352354_d006",
+          "unit_type": "decomposition",
+          "why_material": "Factoring out the selected eigenvalue and absorbing Vandermonde terms converts an eigenangle-centered characteristic-polynomial moment in dimension N into a mixed moment at two points in dimension N-1; this is the key structural reduction behind Theorem 3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Rotation invariance then places the two evaluation points at 0 and beta, and the microscopic substitution beta=y/N exposes the profile series.",
+          "representation_dependency": "The reduction identity and series coefficients are formula-sensitive, though the dimension drop and two-point correlation mechanism are explicit in prose.",
+          "unit_id": "openalex_w2048352354_d006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 178,
+            "line_start": 171,
+            "title": "Microscopic eigenangle offsets have a Bessel-profile moment asymptotic",
+            "unit_id": "openalex_w2048352354_d005",
+            "unit_type": "theorem",
+            "why_material": "Theorem 3 identifies the leading Haar-unitary moment near an eigenangle as a Barnes-G scale times an explicit spherical-Bessel profile, uniformly out to offsets proportional to dimension below the angular boundary."
+          },
+          {
+            "line_end": 264,
+            "line_start": 233,
+            "title": "The profile series resums into Bessel functions and normalizes at separated points",
+            "unit_id": "openalex_w2048352354_d007",
+            "unit_type": "representation-change",
+            "why_material": "Matching Taylor expansions converts the coefficient series into a compact Bessel expression, while fixed angular separation and large-argument Bessel asymptotics show F_k tends to 1 and extend the leading term across a macroscopic offset range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d006",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d006",
+          "spontaneous_reading": "Factoring out the selected eigenvalue lets the Vandermonde weight absorb the conditioning, reducing an N-dimensional eigenangle-centered moment to a two-point mixed characteristic-polynomial moment in dimension N-1."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d006",
+          "source_grounded_mathematics": "The Haar integral for |Z_U(theta_N+beta)|^(2k) is rearranged into a factor |2 sin(beta/2)|^(2k)/N times a mixed moment at 0 and beta for an (N-1)-dimensional unitary matrix; rotation invariance and beta=y/N then expose the series defining F_k.",
+          "conceptual_reading": "Conditioning becomes tractable through a dimension drop: the distinguished eigenangle is removed, and its effect survives as an explicit distance factor plus a residual two-point correlation.",
+          "representation_or_bridge": "The bridge objects are the reduced characteristic polynomial, the mixed two-point Haar moment, and the microscopic substitution beta=y/N.",
+          "boundary_or_failure": "The reduction is on the matrix side and its final asymptotic invokes Theorem 4; it does not independently justify any zeta transfer.",
+          "uncertainty": "The dimension-drop mechanism is explicit, while product placement, series coefficients, and normalizations are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument combines a microscopic calculation with an independently known fixed-separation asymptotic; it establishes first-order consistency rather than a new exact finite-N identity.",
+      "line_end": 264,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires spherical-Bessel series and asymptotics; exact indices and error terms should be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Matching Taylor expansions converts the coefficient series into a compact Bessel expression, while fixed angular separation and large-argument Bessel asymptotics show F_k tends to 1 and extend the leading term across a macroscopic offset range.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The profile series resums into Bessel functions and normalizes at separated points",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d007.txt",
+      "unit_bytes": 1820,
+      "unit_id": "openalex_w2048352354_d007",
+      "unit_sha256": "12f0939849b2d13cf854d15b5b49278cb00cfbaeee6327904a9d485f04f3b6ec",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d007.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "                          N           G(2k + 1)                    N\nwhere\n                             ∞\n                             X      (k − 1 + p)!(k + p)!\n(2.3)           Fk (y) = k                                  (−1)p y 2k+2p\n                             p=0\n                                 p!(2k + p)!(2k +  1 + 2p)!\n\n",
+          "sha256": "98ae96a2007268ffa787c733f8dbcb9bef8f7bb1375a644bcbce3090455ccb04"
+        },
+        "after": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "\n<!-- source-page: 5 -->\n\nDISCRETE MOMENTS OF THE ZETA FUNCTION                                        5\n\n\nRemark. When n is an integer,\n                                                    \u0012          \u0013n\n",
+          "sha256": "8ddc9d67bb1083342d0646065290dff2e0507fc089f421e6a1ccd0b59f277954"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: offset profile",
+            "line_end": 287,
+            "line_start": 169,
+            "mathematical_role": "States the microscopic eigenangle-offset theorem, reduces it to a mixed two-point characteristic-polynomial moment, identifies the Bessel profile, and checks its separated-point normalization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 264,
+          "line_start": 233,
+          "title": "The profile series resums into Bessel functions and normalizes at separated points",
+          "unit_id": "openalex_w2048352354_d007",
+          "unit_type": "representation-change",
+          "why_material": "Matching Taylor expansions converts the coefficient series into a compact Bessel expression, while fixed angular separation and large-argument Bessel asymptotics show F_k tends to 1 and extend the leading term across a macroscopic offset range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument combines a microscopic calculation with an independently known fixed-separation asymptotic; it establishes first-order consistency rather than a new exact finite-N identity.",
+          "representation_dependency": "Requires spherical-Bessel series and asymptotics; exact indices and error terms should be checked in the PDF.",
+          "unit_id": "openalex_w2048352354_d007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 231,
+            "line_start": 180,
+            "title": "Conditioning on an eigenangle reduces the target to a two-point mixed moment",
+            "unit_id": "openalex_w2048352354_d006",
+            "unit_type": "decomposition",
+            "why_material": "Factoring out the selected eigenvalue and absorbing Vandermonde terms converts an eigenangle-centered characteristic-polynomial moment in dimension N into a mixed moment at two points in dimension N-1; this is the key structural reduction behind Theorem 3."
+          },
+          {
+            "line_end": 287,
+            "line_start": 271,
+            "title": "Integer moments yield explicit crossover profiles",
+            "unit_id": "openalex_w2048352354_d008",
+            "unit_type": "example",
+            "why_material": "For integer k the derivative representation of spherical Bessel functions turns the abstract profile into elementary trigonometric rational expressions, including the k=2 profile used in the later number-theoretic comparison."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d007",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d007",
+          "spontaneous_reading": "Two representations cover complementary scales: Taylor coefficients identify the local series with a compact Bessel profile, while fixed-separation asymptotics force that profile to normalize to one and extend the leading behavior toward macroscopic offsets."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d007",
+          "source_grounded_mathematics": "The spherical-Bessel series is matched coefficientwise to F_k; independently, a fixed beta Haar asymptotic and large-argument Bessel estimates give F_k(N beta)=1+O(1/N), yielding the correct first-order term for |x|<=A N with A<pi.",
+          "conceptual_reading": "The local power-series and separated-point asymptotic descriptions overlap consistently, showing how the memory of the conditioned eigenangle fades with distance.",
+          "representation_or_bridge": "Taylor series provide the local algebraic identification, and Bessel asymptotics connect that profile to the fixed-angular-separation Haar result.",
+          "boundary_or_failure": "The extension establishes a first-order asymptotic, not a new exact finite-N identity, and retains the A<pi angular boundary.",
+          "uncertainty": "The scale argument is clear; Bessel indices, parity conventions, and error terms should be checked in the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are worked representations of the same profile, not independent asymptotic results.",
+      "line_end": 287,
+      "line_start": 271,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula risk: the extracted numerators, powers and layout for F_1, F_2 and F_3 require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For integer k the derivative representation of spherical Bessel functions turns the abstract profile into elementary trigonometric rational expressions, including the k=2 profile used in the later number-theoretic comparison.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integer moments yield explicit crossover profiles",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d008.txt",
+      "unit_bytes": 867,
+      "unit_id": "openalex_w2048352354_d008",
+      "unit_sha256": "1f30804bbe0c9e3d827c4fa2496a6ccc72d1b61fca53e6e604c9aeba9956c834",
+      "unit_type": "example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d008.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 263,
+          "line_end": 270,
+          "text": "and so theorem 3 gives the correct first order term as N → ∞, for |x| ≤ AN with\nA < π a constant.                                                            \u0003\n\n<!-- source-page: 5 -->\n\nDISCRETE MOMENTS OF THE ZETA FUNCTION                                        5\n\n\n",
+          "sha256": "9d71a8d2a68f8678b1652a0284a1e6378f1e30f08f3903e668ba9fe2e04d7f3e"
+        },
+        "after": {
+          "line_start": 288,
+          "line_end": 295,
+          "text": "Theorem 4.\n       \b\n   EN |Z(0)|2k |Z(β)|2 = MN (2k)N !(N + 2k)!×\n                     N\n                     X                N −n\n                       (2 sin(β/2))2n X (N + k − m)!(k + m + n)!\n                 ×                                                              eiβ(2m−N +n)\n                     n=0\n",
+          "sha256": "60396f28c16c41271bc77ebed0b80eba0695c9e092797e274dc95656c2f8de53"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: offset profile",
+            "line_end": 287,
+            "line_start": 169,
+            "mathematical_role": "States the microscopic eigenangle-offset theorem, reduces it to a mixed two-point characteristic-polynomial moment, identifies the Bessel profile, and checks its separated-point normalization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 287,
+          "line_start": 271,
+          "title": "Integer moments yield explicit crossover profiles",
+          "unit_id": "openalex_w2048352354_d008",
+          "unit_type": "example",
+          "why_material": "For integer k the derivative representation of spherical Bessel functions turns the abstract profile into elementary trigonometric rational expressions, including the k=2 profile used in the later number-theoretic comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are worked representations of the same profile, not independent asymptotic results.",
+          "representation_dependency": "High formula risk: the extracted numerators, powers and layout for F_1, F_2 and F_3 require scan verification.",
+          "unit_id": "openalex_w2048352354_d008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 264,
+            "line_start": 233,
+            "title": "The profile series resums into Bessel functions and normalizes at separated points",
+            "unit_id": "openalex_w2048352354_d007",
+            "unit_type": "representation-change",
+            "why_material": "Matching Taylor expansions converts the coefficient series into a compact Bessel expression, while fixed angular separation and large-argument Bessel asymptotics show F_k tends to 1 and extend the leading term across a macroscopic offset range."
+          },
+          {
+            "line_end": 298,
+            "line_start": 288,
+            "title": "Finite-N mixed characteristic-polynomial moment admits an explicit double sum",
+            "unit_id": "openalex_w2048352354_d009",
+            "unit_type": "theorem",
+            "why_material": "Theorem 4 supplies the exact finite-dimensional two-point moment representation needed by the conditioning reduction, separating powers of the point distance from a finite inner sum."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d008",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d008",
+          "spontaneous_reading": "For integer moments, a differential representation of spherical Bessel functions turns the abstract crossover profile into elementary trigonometric rational functions, making the profile directly inspectable in low orders."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d008",
+          "source_grounded_mathematics": "The integer-order identity for j_n produces explicit displayed formulas for F_1, F_2, and F_3; the F_2 expression is the one used in the later number-theoretic comparison.",
+          "conceptual_reading": "Specialization converts a compact special-function representation into concrete formulas that can reveal cancellations, endpoint behavior, and agreement with external calculations.",
+          "representation_or_bridge": "The bridge is the differential formula for integer-order spherical Bessel functions, translating F_k into sine-polynomial expressions.",
+          "boundary_or_failure": "These are worked representations of the same profile, not independent asymptotic results or evidence for the zeta conjecture.",
+          "uncertainty": "Formula risk is high: extracted powers, numerators, and layout for F_1 through F_3 require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit deliberately stops before the malformed hypothesis on line 299; the exact finite-N formula is still semantically identifiable from the checked span.",
+      "line_end": 298,
+      "line_start": 288,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong formula dependency: factorial bounds, phases and powers must be verified against the original PDF before computation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4 supplies the exact finite-dimensional two-point moment representation needed by the conditioning reduction, separating powers of the point distance from a finite inner sum.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-N mixed characteristic-polynomial moment admits an explicit double sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d009.txt",
+      "unit_bytes": 489,
+      "unit_id": "openalex_w2048352354_d009",
+      "unit_sha256": "b20e5aa81ecf8b3b9c9728647ef9d78bd8f7aa75379f470140939d4683c29d8b",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d009.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 280,
+          "line_end": 287,
+          "text": "                         x − 3x + 3x sin(2x) + (2x2 − 3) sin2 (x)\n                           4   2\n(2.4)          F2 (2x) =\n                                          x4\n           x − 3x − 45x + (−12x + 45x) sin(2x) + (−3x4 + 72x2 − 45) sin2 (x)\n            6     4      2       3\n F3 (2x) =\n                                          x6\n",
+          "sha256": "eb1cdd4c7901c8ffdab65dbd0032f9db70a314411c856c05f042d4825ca62108"
+        },
+        "after": {
+          "line_start": 299,
+          "line_end": 306,
+          "text": "where Mn (2k) is given in (1.2). If N → 0 as N → ∞, then for Re(k) > −1/2,\n    n            y o G2 (k + 1) X k(k − 1 + p)!(k + p)!\n                                   ∞\n  EN |Z(0)|2k |Z( )|2 =                                         (−1)p y 2p\n                 N      G(2k + 1) p=0 p!(2k + p)!(2k + 1 + 2p)!\n                                                              \u0012            \u0013\n                                                       (k+1)2           1\n                                                   ×N           1 + O( )\n",
+          "sha256": "1a7e32ebe05238d1e6ee26f6951d113b3527fd39e53d2139f2c2c7d0d8fb5cc2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: exact mixed moment proof",
+            "line_end": 529,
+            "line_start": 288,
+            "mathematical_role": "Derives a finite-N mixed moment by constant-term and generalized Selberg evaluation, analytically continues in the moment parameter, transforms the result hypergeometrically, and collapses the limiting double series by telescoping."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 298,
+          "line_start": 288,
+          "title": "Finite-N mixed characteristic-polynomial moment admits an explicit double sum",
+          "unit_id": "openalex_w2048352354_d009",
+          "unit_type": "theorem",
+          "why_material": "Theorem 4 supplies the exact finite-dimensional two-point moment representation needed by the conditioning reduction, separating powers of the point distance from a finite inner sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit deliberately stops before the malformed hypothesis on line 299; the exact finite-N formula is still semantically identifiable from the checked span.",
+          "representation_dependency": "Strong formula dependency: factorial bounds, phases and powers must be verified against the original PDF before computation.",
+          "unit_id": "openalex_w2048352354_d009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 287,
+            "line_start": 271,
+            "title": "Integer moments yield explicit crossover profiles",
+            "unit_id": "openalex_w2048352354_d008",
+            "unit_type": "example",
+            "why_material": "For integer k the derivative representation of spherical Bessel functions turns the abstract profile into elementary trigonometric rational expressions, including the k=2 profile used in the later number-theoretic comparison."
+          },
+          {
+            "line_end": 395,
+            "line_start": 308,
+            "title": "A constant-term representation opens the mixed moment to Selberg evaluation",
+            "unit_id": "openalex_w2048352354_d010",
+            "unit_type": "construction",
+            "why_material": "For integer k, the Haar integral is algebraically recast as a multivariate constant term, converted to a generalized Selberg integral evaluated by Kaneko, and expanded into an exact gamma-function sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 299,
+              "line_start": 299,
+              "reason": "The asymptotic hypothesis is rendered as the nonsensical 'N tends to 0 as N tends to infinity'; no replacement is inferred from outside the authorized text."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 307,
+              "line_start": 300,
+              "reason": "An asymptotic formula follows the corrupted hypothesis and is retained only as context; later recoverable derivation carries the mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d009",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d009",
+          "spontaneous_reading": "The exact finite-N theorem separates offset dependence into powers of the point distance and phases inside a bounded double sum, providing the computable object required by the earlier conditioning reduction."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d009",
+          "source_grounded_mathematics": "Theorem 4 expresses the mixed Haar moment E_N[|Z(0)|^(2k)|Z(beta)|^2] as M_N(2k), factorial prefactors, an outer finite sum in n involving (2 sin(beta/2))^(2n), and an inner finite sum in m with factorial ratios and a phase.",
+          "conceptual_reading": "A correlated integral is replaced by finite combinatorial data, with distance order and oscillatory correlation made separately visible.",
+          "representation_or_bridge": "The explicit double sum is the bridge between the reduced mixed moment and the later hypergeometric and asymptotic manipulations.",
+          "boundary_or_failure": "The unit deliberately excludes the corrupted line-299 asymptotic hypothesis, so no adjacent asymptotic claim is certified here.",
+          "uncertainty": "The semantic structure is identifiable, but summation bounds, phases, factorials, and powers have strong extraction risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a proof route, not merely routine algebra: it changes the representation so a known integral identity becomes applicable.",
+      "line_end": 395,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The multivariate products and gamma/Pochhammer factors are dense extracted formulas requiring PDF verification for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For integer k, the Haar integral is algebraically recast as a multivariate constant term, converted to a generalized Selberg integral evaluated by Kaneko, and expanded into an exact gamma-function sum.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A constant-term representation opens the mixed moment to Selberg evaluation",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d010.txt",
+      "unit_bytes": 3991,
+      "unit_id": "openalex_w2048352354_d010",
+      "unit_sha256": "12083a82c66eed48ad49f3c20b82973ee00c0f432fecf4a0f9e1d87db8e434fb",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d010.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "    n            y o G2 (k + 1) X k(k − 1 + p)!(k + p)!\n                                   ∞\n  EN |Z(0)|2k |Z( )|2 =                                         (−1)p y 2p\n                 N      G(2k + 1) p=0 p!(2k + p)!(2k + 1 + 2p)!\n                                                              \u0012            \u0013\n                                                       (k+1)2           1\n                                                   ×N           1 + O( )\n                                                                       N\n",
+          "sha256": "0b8d0620dcb65a6c7f75e114160c1972582782f5a535891f9980d535d8c75461"
+        },
+        "after": {
+          "line_start": 396,
+          "line_end": 403,
+          "text": "where MN (2k) is defined in (1.2). Observe that the inner summand is invariant as\nm −→ N − n − m, and so the inner sum is in fact a sum of cosines (and thus the\nseries expansion in β contains only even powers of β). Furthermore observe that\nboth sides of the equation are analytic functions of k (for Re(k) ≥ 0), both sides\ncan be easily bounded bounded by O(22N Re(k) ) (for large k, with N and β fixed),\nand the two sides are equal at the positive integers. Thus by Carlson’s theorem (see\n§17 of [12], for example), the restriction on k being an integer is no longer required,\nand the left-hand side equals the right-hand side for all complex k.\n",
+          "sha256": "3a79de0c4241722a4aaf964e45cd2b03f8d1fd07d556ca1ab0ba337bb76fdfb8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: exact mixed moment proof",
+            "line_end": 529,
+            "line_start": 288,
+            "mathematical_role": "Derives a finite-N mixed moment by constant-term and generalized Selberg evaluation, analytically continues in the moment parameter, transforms the result hypergeometrically, and collapses the limiting double series by telescoping."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 395,
+          "line_start": 308,
+          "title": "A constant-term representation opens the mixed moment to Selberg evaluation",
+          "unit_id": "openalex_w2048352354_d010",
+          "unit_type": "construction",
+          "why_material": "For integer k, the Haar integral is algebraically recast as a multivariate constant term, converted to a generalized Selberg integral evaluated by Kaneko, and expanded into an exact gamma-function sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a proof route, not merely routine algebra: it changes the representation so a known integral identity becomes applicable.",
+          "representation_dependency": "The multivariate products and gamma/Pochhammer factors are dense extracted formulas requiring PDF verification for exact reuse.",
+          "unit_id": "openalex_w2048352354_d010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 298,
+            "line_start": 288,
+            "title": "Finite-N mixed characteristic-polynomial moment admits an explicit double sum",
+            "unit_id": "openalex_w2048352354_d009",
+            "unit_type": "theorem",
+            "why_material": "Theorem 4 supplies the exact finite-dimensional two-point moment representation needed by the conditioning reduction, separating powers of the point distance from a finite inner sum."
+          },
+          {
+            "line_end": 403,
+            "line_start": 396,
+            "title": "Symmetry controls parity and Carlson continuation removes the integer restriction",
+            "unit_id": "openalex_w2048352354_d011",
+            "unit_type": "generalization",
+            "why_material": "Invariance of the inner summand under index reversal explains why only even offset powers occur, and analyticity plus growth bounds and agreement at positive integers permit continuation to complex k."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 307,
+              "line_start": 300,
+              "reason": "An asymptotic formula follows the corrupted hypothesis and is retained only as context; later recoverable derivation carries the mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d010",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d010",
+          "spontaneous_reading": "The proof succeeds by repeatedly changing representations: Haar integral to Laurent constant term, constant term to generalized Selberg integral, and Selberg evaluation to gamma and Pochhammer sums."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d010",
+          "source_grounded_mathematics": "For integer k, the mixed characteristic-polynomial Haar integral is algebraically rewritten as a multivariate constant term; a limiting integral is evaluated by Kaneko's generalized Selberg formula and expanded to the finite gamma-function double sum of Theorem 4.",
+          "conceptual_reading": "The main move is interface construction: each reformulation exposes exactly the structure consumed by a known evaluation theorem, rather than attacking the original integral directly.",
+          "representation_or_bridge": "Vandermonde products, Laurent constant terms, the generalized Selberg integral, and Pochhammer symbols are the successive bridge objects.",
+          "boundary_or_failure": "This span starts with integer k; removal of that restriction is a separate analytic-continuation step, and the dense formulas are not safe for exact reuse from extraction alone.",
+          "uncertainty": "The proof route is well supported by prose, but multivariate products and gamma/Pochhammer factors are highly formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The continuation argument states its analytic and growth premises locally; it should not be read as extending beyond the stated half-plane without further checking.",
+      "line_end": 403,
+      "line_start": 396,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low at the mechanism level; the precise growth bound and domain are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Invariance of the inner summand under index reversal explains why only even offset powers occur, and analyticity plus growth bounds and agreement at positive integers permit continuation to complex k.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetry controls parity and Carlson continuation removes the integer restriction",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d011.txt",
+      "unit_bytes": 664,
+      "unit_id": "openalex_w2048352354_d011",
+      "unit_sha256": "3a79de0c4241722a4aaf964e45cd2b03f8d1fd07d556ca1ab0ba337bb76fdfb8",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d011.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 388,
+          "line_end": 395,
+          "text": "      \b                               Γ(N + 1 + 2k)N !\n    EN |ZU (0)|2k |ZU (β)|2 = MN (2k)\n                                       Γ(N + 1 + k)2\n        N                  N −n\n       X    (2 sin(β/2))2n X Γ(N + k + 1 − m)Γ(k + n + 1 + m) eiβ(2m−N +n)\n     ×\n       n=0\n           n!Γ(2k + n + 1) m=0      Γ(N + 1 − n − m)!              m!\n",
+          "sha256": "39e0862bde6d72d41f8c8c0e5d591b3ec3af91d351346e83c17e4c0afb399cd9"
+        },
+        "after": {
+          "line_start": 404,
+          "line_end": 411,
+          "text": "Now, using the fact that (−a)n = (−1)n Γ(a + 1)/Γ(a + 1 − n), we have\n    N\n    X −n\n        Γ(N + k + 1 − m)Γ(k + n + 1 + m) eiβ(2m−N +n)\n    m=0\n               Γ(N + 1 − n − m)               m!\n                                           \u0012                      \u0013\n             Γ(N + k + 1)Γ(k + n + 1)        −N + n, k + n + 1 2iβ i(n−N )β\n",
+          "sha256": "38553f822b522889b494a47787f788e7b6b7b3bc225efa8d19874eb6c319875c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: exact mixed moment proof",
+            "line_end": 529,
+            "line_start": 288,
+            "mathematical_role": "Derives a finite-N mixed moment by constant-term and generalized Selberg evaluation, analytically continues in the moment parameter, transforms the result hypergeometrically, and collapses the limiting double series by telescoping."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 403,
+          "line_start": 396,
+          "title": "Symmetry controls parity and Carlson continuation removes the integer restriction",
+          "unit_id": "openalex_w2048352354_d011",
+          "unit_type": "generalization",
+          "why_material": "Invariance of the inner summand under index reversal explains why only even offset powers occur, and analyticity plus growth bounds and agreement at positive integers permit continuation to complex k."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The continuation argument states its analytic and growth premises locally; it should not be read as extending beyond the stated half-plane without further checking.",
+          "representation_dependency": "Low at the mechanism level; the precise growth bound and domain are formula-sensitive.",
+          "unit_id": "openalex_w2048352354_d011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 395,
+            "line_start": 308,
+            "title": "A constant-term representation opens the mixed moment to Selberg evaluation",
+            "unit_id": "openalex_w2048352354_d010",
+            "unit_type": "construction",
+            "why_material": "For integer k, the Haar integral is algebraically recast as a multivariate constant term, converted to a generalized Selberg integral evaluated by Kaneko, and expanded into an exact gamma-function sum."
+          },
+          {
+            "line_end": 491,
+            "line_start": 404,
+            "title": "Hypergeometric transformations expose the coefficientwise microscopic limit",
+            "unit_id": "openalex_w2048352354_d012",
+            "unit_type": "representation-change",
+            "why_material": "The finite inner sum is recognized as a Gauss hypergeometric polynomial, transformed quadratically, reorganized as a finite double sum, and asymptotically scaled to a double power series whose coefficients converge one by one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d011",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d011",
+          "spontaneous_reading": "Index-reversal symmetry first predicts an even offset expansion, then analyticity, growth control, and agreement at positive integers turn an integer calculation into a complex-parameter identity via Carlson's theorem."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d011",
+          "source_grounded_mathematics": "The inner summand is invariant under m mapping to N-n-m, so it pairs into cosines and contains only even powers of beta; both sides are stated analytic for Re(k)>=0, suitably bounded, and equal at positive integers, permitting Carlson continuation.",
+          "conceptual_reading": "A discrete symmetry supplies a structural invariant before calculation, while analytic interpolation generalizes the evaluated lattice of integer parameters.",
+          "representation_or_bridge": "Cosine pairing exposes parity, and Carlson's theorem bridges equality on positive integers to the stated complex-k identity.",
+          "boundary_or_failure": "The continuation depends on the stated analyticity and growth premises and should not be extended beyond their justified domain merely from the prose conclusion.",
+          "uncertainty": "The mechanism is low-risk, but the precise growth bound and maximal continuation domain are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly qualifies convergence as coefficientwise for each fixed Taylor coefficient, so this span does not by itself establish unrestricted functional convergence.",
+      "line_end": 491,
+      "line_start": 404,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependency: hypergeometric parameters, gamma ratios and N-powers must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite inner sum is recognized as a Gauss hypergeometric polynomial, transformed quadratically, reorganized as a finite double sum, and asymptotically scaled to a double power series whose coefficients converge one by one.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hypergeometric transformations expose the coefficientwise microscopic limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d012.txt",
+      "unit_bytes": 4559,
+      "unit_id": "openalex_w2048352354_d012",
+      "unit_sha256": "475d6c32d92ad4a97ce3897b563b0d2009c3f730bb3cef9a40e204b71d2c60a6",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d012.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 396,
+          "line_end": 403,
+          "text": "where MN (2k) is defined in (1.2). Observe that the inner summand is invariant as\nm −→ N − n − m, and so the inner sum is in fact a sum of cosines (and thus the\nseries expansion in β contains only even powers of β). Furthermore observe that\nboth sides of the equation are analytic functions of k (for Re(k) ≥ 0), both sides\ncan be easily bounded bounded by O(22N Re(k) ) (for large k, with N and β fixed),\nand the two sides are equal at the positive integers. Thus by Carlson’s theorem (see\n§17 of [12], for example), the restriction on k being an integer is no longer required,\nand the left-hand side equals the right-hand side for all complex k.\n",
+          "sha256": "3a79de0c4241722a4aaf964e45cd2b03f8d1fd07d556ca1ab0ba337bb76fdfb8"
+        },
+        "after": {
+          "line_start": 492,
+          "line_end": 499,
+          "text": "Finally we show that\n    ∞ X\n    X ∞\n                             (k + n)!(k + n + m)!\n             (−1)m                                      y 2m+2n\n    n=0 m=0\n                       m!n!(2k + n)!(2k + 2n + 2m + 1)!\n                                                           ∞\n",
+          "sha256": "f972b101ebf249a37c271fe84173d7e1e48b7d7da56637c6027dadbe960e7ca2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: exact mixed moment proof",
+            "line_end": 529,
+            "line_start": 288,
+            "mathematical_role": "Derives a finite-N mixed moment by constant-term and generalized Selberg evaluation, analytically continues in the moment parameter, transforms the result hypergeometrically, and collapses the limiting double series by telescoping."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 491,
+          "line_start": 404,
+          "title": "Hypergeometric transformations expose the coefficientwise microscopic limit",
+          "unit_id": "openalex_w2048352354_d012",
+          "unit_type": "representation-change",
+          "why_material": "The finite inner sum is recognized as a Gauss hypergeometric polynomial, transformed quadratically, reorganized as a finite double sum, and asymptotically scaled to a double power series whose coefficients converge one by one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly qualifies convergence as coefficientwise for each fixed Taylor coefficient, so this span does not by itself establish unrestricted functional convergence.",
+          "representation_dependency": "Very high formula dependency: hypergeometric parameters, gamma ratios and N-powers must be checked against the PDF.",
+          "unit_id": "openalex_w2048352354_d012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 403,
+            "line_start": 396,
+            "title": "Symmetry controls parity and Carlson continuation removes the integer restriction",
+            "unit_id": "openalex_w2048352354_d011",
+            "unit_type": "generalization",
+            "why_material": "Invariance of the inner summand under index reversal explains why only even offset powers occur, and analyticity plus growth bounds and agreement at positive integers permit continuation to complex k."
+          },
+          {
+            "line_end": 528,
+            "line_start": 492,
+            "title": "Wilf-Zeilberger telescoping collapses the double series to the profile series",
+            "unit_id": "openalex_w2048352354_d013",
+            "unit_type": "proof-fragment",
+            "why_material": "Coefficient comparison reduces equality of the double and single profile series to a finite identity; a generated WZ pair makes the difference telescope, proves independence from the coefficient index, and fixes the constant at the base case."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d012",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d012",
+          "spontaneous_reading": "Recognizing the finite inner sum as a hypergeometric polynomial unlocks a quadratic transformation that reorganizes it into a double series whose microscopic N-scaling can be read coefficient by coefficient."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d012",
+          "source_grounded_mathematics": "The finite m-sum is written as a Gauss 2F1 polynomial, transformed quadratically, expanded as a finite double sum T(N,k,m,n), and evaluated at beta=y/N; fixed Taylor coefficients converge to those of a limiting double power series.",
+          "conceptual_reading": "The hypergeometric representation exposes hidden transformability, and the scaled coefficient array isolates the microscopic limit without requiring a direct limit of the original oscillatory sum.",
+          "representation_or_bridge": "The 2F1 polynomial and the coefficient kernel T(N,k,m,n) bridge the exact finite-N formula to its limiting power series.",
+          "boundary_or_failure": "The source explicitly claims coefficientwise convergence for each fixed Taylor coefficient, not unrestricted functional or uniform convergence.",
+          "uncertainty": "Formula dependency is very high for hypergeometric parameters, gamma ratios, truncation bounds, and N-powers."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the identification of the asymptotic series used in Theorem 3.",
+      "line_end": 528,
+      "line_start": 492,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rational certificate and summand are formula-sensitive, but the telescoping logic is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Coefficient comparison reduces equality of the double and single profile series to a finite identity; a generated WZ pair makes the difference telescope, proves independence from the coefficient index, and fixes the constant at the base case.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Wilf-Zeilberger telescoping collapses the double series to the profile series",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d013.txt",
+      "unit_bytes": 1991,
+      "unit_id": "openalex_w2048352354_d013",
+      "unit_sha256": "5143ad786ed5275fed8327afb5386f3a3068270b33dc8db1c2e58d7bc6dd1092",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d013.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\n<!-- source-page: 8 -->\n\n8                                               C.P. HUGHES\n\n\nin the sense that for each fixed integer h, the coefficient of y h on the Taylor expan-\nsion of the left-hand side converges to that of the right-hand side as N → ∞.\n",
+          "sha256": "bcec1b568f34e2b1472df036dd6fc9464c3f01e369cc0c77230dfa9ddb7e3c61"
+        },
+        "after": {
+          "line_start": 529,
+          "line_end": 536,
+          "text": "\n                       3. Conjecture about the zeta function\n\nConjecture 5. For fixed k subject to Re(k) > −1/2,\n              X                                                                       \u0012       \u0013k2\n      1                    1\n                                                  \u0001 2k         G2 (k + 1)                  T\n    N (T )\n",
+          "sha256": "045df43e068f418609fb2d6b4a265e11c766b6e0bc55b2657449d8dd8d11a1cf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Random matrix calculation: exact mixed moment proof",
+            "line_end": 529,
+            "line_start": 288,
+            "mathematical_role": "Derives a finite-N mixed moment by constant-term and generalized Selberg evaluation, analytically continues in the moment parameter, transforms the result hypergeometrically, and collapses the limiting double series by telescoping."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 528,
+          "line_start": 492,
+          "title": "Wilf-Zeilberger telescoping collapses the double series to the profile series",
+          "unit_id": "openalex_w2048352354_d013",
+          "unit_type": "proof-fragment",
+          "why_material": "Coefficient comparison reduces equality of the double and single profile series to a finite identity; a generated WZ pair makes the difference telescope, proves independence from the coefficient index, and fixes the constant at the base case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the identification of the asymptotic series used in Theorem 3.",
+          "representation_dependency": "The rational certificate and summand are formula-sensitive, but the telescoping logic is explicit in prose.",
+          "unit_id": "openalex_w2048352354_d013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 491,
+            "line_start": 404,
+            "title": "Hypergeometric transformations expose the coefficientwise microscopic limit",
+            "unit_id": "openalex_w2048352354_d012",
+            "unit_type": "representation-change",
+            "why_material": "The finite inner sum is recognized as a Gauss hypergeometric polynomial, transformed quadratically, reorganized as a finite double sum, and asymptotically scaled to a double power series whose coefficients converge one by one."
+          },
+          {
+            "line_end": 545,
+            "line_start": 532,
+            "title": "Shifted discrete zeta moments inherit the random-matrix crossover profile",
+            "unit_id": "openalex_w2048352354_d014",
+            "unit_type": "conjecture",
+            "why_material": "Conjecture 5 transfers F_k to values of zeta displaced from its zeros by alpha local spacings, preserving the arithmetic factor and Barnes-G factor and demanding uniformity over a growing alpha range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An eigenangle-conditioned moment is made tractable by reducing dimension and converting the residual two-point correlation through Haar integral, constant term, Selberg integral, hypergeometric polynomial and WZ certificate representations.",
+            "limit": "Several exact formulas are extraction-sensitive, and the isolated malformed hypothesis at line 299 prevents treating its adjacent asymptotic statement as independently certified text.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d006",
+              "openalex_w2048352354_d009",
+              "openalex_w2048352354_d010",
+              "openalex_w2048352354_d011",
+              "openalex_w2048352354_d012",
+              "openalex_w2048352354_d013"
+            ],
+            "title": "Conditioning becomes computable after successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 531,
+              "line_start": 529,
+              "reason": "Whitespace and section heading route into the zeta conjecture."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d013",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d013",
+          "spontaneous_reading": "A computer-generated Wilf-Zeilberger certificate compresses equality of two infinite series to a finite coefficient identity whose change in the coefficient index telescopes away."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d013",
+          "source_grounded_mathematics": "Comparing coefficients of y^(2p) reduces the double-series identity to a finite sum equal to one; a WZ pair gives F(p+1,n)-F(p,n)=G(p,n+1)-G(p,n), summation telescopes, and the p=0 case fixes the constant.",
+          "conceptual_reading": "The proof replaces global series comparison with a local recurrence certificate, converting an apparently complicated identity into invariance under p plus one base case.",
+          "representation_or_bridge": "The normalized coefficient summand F(p,n) and rational certificate G(p,n) are the proof-carrying intermediate objects.",
+          "boundary_or_failure": "The displayed argument is for integer p>=0 and closes the series identification used in Theorem 3; it supplies no independent zeta evidence.",
+          "uncertainty": "The telescoping logic is explicit, but the rational certificate and factorial summand require formula verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a number-theoretic conjecture under the paper's standing setup, not a consequence of the random-matrix theorem.",
+      "line_end": 545,
+      "line_start": 532,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact scale L, exponent and normalization are displayed-formula dependencies.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Conjecture 5 transfers F_k to values of zeta displaced from its zeros by alpha local spacings, preserving the arithmetic factor and Barnes-G factor and demanding uniformity over a growing alpha range.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted discrete zeta moments inherit the random-matrix crossover profile",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d014.txt",
+      "unit_bytes": 902,
+      "unit_id": "openalex_w2048352354_d014",
+      "unit_sha256": "ae16afa02182c7f2c05e0350a9a56d710d1799ebb64b5053a7f8617885b107f4",
+      "unit_type": "conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d014.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 524,
+          "line_end": 531,
+          "text": "                                   (n − p − 1)(k + p)\n(the (2k + n)n/(n − p − 1)(k + p) being calculated by Zeilberger’s algorithm).\nSumming both sides of (2.7) over n, we see that the right-hand side telescopes to\nzero, which shows that the left-hand side of (2.6) must be a constant, independent\nof p. Putting p = 0, direct calculation shows that constant is 1.               \u0003\n\n                       3. Conjecture about the zeta function\n\n",
+          "sha256": "0ce9e1f7fe901a7b4d91e7a211a32917a2c4b667556380378b9a21ecc8547480"
+        },
+        "after": {
+          "line_start": 546,
+          "line_end": 553,
+          "text": "\nIf this conjecture is true, then we are able to prove conjecture 2 and a variant of\nthe Keating-Snaith conjecture (conjecture 1).\nCorollary 5.1. If conjecture 5 is true, then\n                       X                                                  \u0012       \u0013k(k+2)\n               1                                \u0001 2k       G2 (k + 2)          T\n                                 ζ′   1\n                                      2 + iγn          ∼              a(k) log\n",
+          "sha256": "d9d1fa1487c1f316c9ea6e3386b2ba86e450f7306e174ca5f70cdf39ae35447e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Conjecture and limiting consequences",
+            "line_end": 616,
+            "line_start": 530,
+            "mathematical_role": "Transfers the random-matrix offset profile to zeros of zeta and derives the derivative and macroscopically shifted moment regimes from its small- and large-offset limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 545,
+          "line_start": 532,
+          "title": "Shifted discrete zeta moments inherit the random-matrix crossover profile",
+          "unit_id": "openalex_w2048352354_d014",
+          "unit_type": "conjecture",
+          "why_material": "Conjecture 5 transfers F_k to values of zeta displaced from its zeros by alpha local spacings, preserving the arithmetic factor and Barnes-G factor and demanding uniformity over a growing alpha range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a number-theoretic conjecture under the paper's standing setup, not a consequence of the random-matrix theorem.",
+          "representation_dependency": "Exact scale L, exponent and normalization are displayed-formula dependencies.",
+          "unit_id": "openalex_w2048352354_d014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 528,
+            "line_start": 492,
+            "title": "Wilf-Zeilberger telescoping collapses the double series to the profile series",
+            "unit_id": "openalex_w2048352354_d013",
+            "unit_type": "proof-fragment",
+            "why_material": "Coefficient comparison reduces equality of the double and single profile series to a finite identity; a generated WZ pair makes the difference telescope, proves independence from the coefficient index, and fixes the constant at the base case."
+          },
+          {
+            "line_end": 586,
+            "line_start": 547,
+            "title": "The zero-offset limit recovers derivative moments",
+            "unit_id": "openalex_w2048352354_d015",
+            "unit_type": "limit-argument",
+            "why_material": "Dividing the shifted value by the offset and using the small-alpha leading term of F_k converts Conjecture 5 into the derivative-moment conjecture with the correct Barnes-G shift and logarithmic exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          },
+          {
+            "claim": "The conjectural family retains the arithmetic Euler-product factor while the Barnes-G factor and F_k profile encode universal matrix statistics, suggesting a modular division between arithmetic and local spectral structure.",
+            "limit": "This is a modeling synthesis supported by matched formulas, not a proof that the factorization persists for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d001",
+              "openalex_w2048352354_d002",
+              "openalex_w2048352354_d003",
+              "openalex_w2048352354_d014"
+            ],
+            "title": "Arithmetic and universal factors persist across the interpolating family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 531,
+              "line_start": 529,
+              "reason": "Whitespace and section heading route into the zeta conjecture."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d014",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d014",
+          "spontaneous_reading": "The conjecture transfers the matrix crossover profile to zeta zeros while preserving a modular factorization: a(k) carries prime arithmetic, the Barnes-G ratio carries universal moment normalization, and F_k carries distance from the sampled zero."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d014",
+          "source_grounded_mathematics": "For fixed Re(k)>-1/2, Conjecture 5 predicts the discrete average of |zeta(1/2+i(gamma_n+alpha/L))|^(2k) uniformly for |alpha|<=L as a(k), a Barnes-G ratio, F_k(2pi alpha), and the usual logarithmic power.",
+          "conceptual_reading": "The proposal separates three roles within one family: arithmetic content, universal matrix statistics, and a scale-sensitive conditioning profile.",
+          "representation_or_bridge": "The local-density coordinate alpha/L transports the matrix offset profile F_k to displacements from zeta zeros.",
+          "boundary_or_failure": "This is a number-theoretic conjecture under the paper's standing setup, not a consequence of the proved unitary-matrix theorem.",
+          "uncertainty": "The factor roles and uniformity claim are clear; the exact density scale, exponent, and normalization are displayed-formula dependencies."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument explicitly relies on the conjectured uniformity to interchange alpha-to-zero and large-height limits; that interchange is a substantive dependency.",
+      "line_end": 586,
+      "line_start": 547,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact small-alpha coefficient and gamma/Barnes-G simplification are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dividing the shifted value by the offset and using the small-alpha leading term of F_k converts Conjecture 5 into the derivative-moment conjecture with the correct Barnes-G shift and logarithmic exponent.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zero-offset limit recovers derivative moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d015.txt",
+      "unit_bytes": 2190,
+      "unit_id": "openalex_w2048352354_d015",
+      "unit_sha256": "74e6410e3e18f5cc36f0ee4d6f58a26c4a79f074e6453ebfbcaaf16723027a98",
+      "unit_type": "limit-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d015.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 539,
+          "line_end": 546,
+          "text": "                                                                          a(k)Fk (2πα) log\n                                                                                           2π\n             0<γn ≤T\n                                                     1     T\nas T → ∞, uniformly in α for |α| ≤ L, where L = 2π     log 2π is the density of zeros\nof height T . G(·) is the Barnes G–function, a(k) is given by (1.1), and Fk (2πα) is\ngiven in theorem 3.\n\n",
+          "sha256": "8fd3373e6a00beea371caf03a2f4369f748f5a07e8d59a3a52faa819990c6108"
+        },
+        "after": {
+          "line_start": 587,
+          "line_end": 594,
+          "text": "Corollary 5.2. From conjecture 5 it follows that for β > 0 fixed\n                 X                                             \u0012       \u0013k2\n            1                            \u0001 2k   G2 (k + 1)          T\n(3.1)                  ζ 12 + i(γn + β)       ∼            a(k) log\n          N (T )                                G(2k + 1)           2π\n                  0<γn ≤T\n\n\n",
+          "sha256": "8d717b014c30b77b44a94f012d15c574ef5add67dd26ad37352f1bd451dc3659"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Conjecture and limiting consequences",
+            "line_end": 616,
+            "line_start": 530,
+            "mathematical_role": "Transfers the random-matrix offset profile to zeros of zeta and derives the derivative and macroscopically shifted moment regimes from its small- and large-offset limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 586,
+          "line_start": 547,
+          "title": "The zero-offset limit recovers derivative moments",
+          "unit_id": "openalex_w2048352354_d015",
+          "unit_type": "limit-argument",
+          "why_material": "Dividing the shifted value by the offset and using the small-alpha leading term of F_k converts Conjecture 5 into the derivative-moment conjecture with the correct Barnes-G shift and logarithmic exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument explicitly relies on the conjectured uniformity to interchange alpha-to-zero and large-height limits; that interchange is a substantive dependency.",
+          "representation_dependency": "Exact small-alpha coefficient and gamma/Barnes-G simplification are formula-sensitive.",
+          "unit_id": "openalex_w2048352354_d015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 545,
+            "line_start": 532,
+            "title": "Shifted discrete zeta moments inherit the random-matrix crossover profile",
+            "unit_id": "openalex_w2048352354_d014",
+            "unit_type": "conjecture",
+            "why_material": "Conjecture 5 transfers F_k to values of zeta displaced from its zeros by alpha local spacings, preserving the arithmetic factor and Barnes-G factor and demanding uniformity over a growing alpha range."
+          },
+          {
+            "line_end": 615,
+            "line_start": 587,
+            "title": "The large-offset limit recovers an ordinary moment sampled discretely",
+            "unit_id": "openalex_w2048352354_d016",
+            "unit_type": "limit-argument",
+            "why_material": "Large-argument Bessel asymptotics force F_k to 1; setting alpha equal to a fixed physical displacement times the local density then yields the usual moment scale and explains why values sufficiently far from a zero behave like generic critical-line samples."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d015",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d015",
+          "spontaneous_reading": "The derivative statistic appears as the tangent-scale limit of shifted values at a zero: divide by the vanishing offset, use the leading zero of F_k, and let the conjectured uniformity justify exchanging limits."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d015",
+          "source_grounded_mathematics": "From Conjecture 5, the definition of zeta' and the small-alpha limit of F_k(2pi alpha)/alpha^(2k) yield the derivative-moment asymptotic; gamma and Barnes-G identities shift the factor from k+1 to k+2 and the log exponent to k(k+2).",
+          "conceptual_reading": "Differentiation is recovered as a boundary operation on the crossover family, so the order of vanishing of F_k encodes how zero conditioning changes moment growth.",
+          "representation_or_bridge": "The scaled difference quotient and the leading small-offset coefficient of F_k connect shifted values to derivatives at zeros.",
+          "boundary_or_failure": "The deduction is conditional on Conjecture 5 and substantively requires its uniformity to interchange alpha-to-zero and large-height limits.",
+          "uncertainty": "The limiting mechanism is explicit; the small-alpha coefficient and gamma/Barnes-G simplification are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The asserted equivalence to the continuous mean is heuristic and rests on an expectation that the averaging procedure is immaterial.",
+      "line_end": 615,
+      "line_start": 587,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on parity-specific Bessel asymptotics and the offset rescaling shown in formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Large-argument Bessel asymptotics force F_k to 1; setting alpha equal to a fixed physical displacement times the local density then yields the usual moment scale and explains why values sufficiently far from a zero behave like generic critical-line samples.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The large-offset limit recovers an ordinary moment sampled discretely",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d016.txt",
+      "unit_bytes": 1688,
+      "unit_id": "openalex_w2048352354_d016",
+      "unit_sha256": "6620de8225811c605d48e77c6f5e761346f51b7ef706c6f3a99ca52c81a9bc40",
+      "unit_type": "limit-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d016.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 579,
+          "line_end": 586,
+          "text": "                  ζ 2 + iγn      ∼            a(k)L                   log\n   N (T )                          G(2k + 1)          (2k)!(2k + 1)!      2π\n          0<γn ≤T\n                                                  \u0012        \u0013k(k+2)\n                                   G2 (k + 2)           T\n                                 =            a(k) log\n                                   G(2k + 3)            2π\nas required.                                                                           ✷\n",
+          "sha256": "325fc19aba9adad8a5e4abc6badef41e09e10e4788bbcfa0e15bad5382b5986b"
+        },
+        "after": {
+          "line_start": 616,
+          "line_end": 623,
+          "text": "\n3.1. Comparison with the zeta function. Gonek [9] showed that if the Riemann\nHypothesis is true then\n                X                               \u0012         \u00132 !\n         1              1\n                                        \u00012        sin(πα)          T\n                      ζ 2 + i (γn + α/L)   ∼ 1−                log\n       N (T )                                        πα            2π\n",
+          "sha256": "c3a16e52dc885cefaf070b9c423c771ca035703e8e3442de8ded30810293de61"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Conjecture and limiting consequences",
+            "line_end": 616,
+            "line_start": 530,
+            "mathematical_role": "Transfers the random-matrix offset profile to zeros of zeta and derives the derivative and macroscopically shifted moment regimes from its small- and large-offset limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 615,
+          "line_start": 587,
+          "title": "The large-offset limit recovers an ordinary moment sampled discretely",
+          "unit_id": "openalex_w2048352354_d016",
+          "unit_type": "limit-argument",
+          "why_material": "Large-argument Bessel asymptotics force F_k to 1; setting alpha equal to a fixed physical displacement times the local density then yields the usual moment scale and explains why values sufficiently far from a zero behave like generic critical-line samples."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The asserted equivalence to the continuous mean is heuristic and rests on an expectation that the averaging procedure is immaterial.",
+          "representation_dependency": "Depends on parity-specific Bessel asymptotics and the offset rescaling shown in formulas.",
+          "unit_id": "openalex_w2048352354_d016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 586,
+            "line_start": 547,
+            "title": "The zero-offset limit recovers derivative moments",
+            "unit_id": "openalex_w2048352354_d015",
+            "unit_type": "limit-argument",
+            "why_material": "Dividing the shifted value by the offset and using the small-alpha leading term of F_k converts Conjecture 5 into the derivative-moment conjecture with the correct Barnes-G shift and logarithmic exponent."
+          },
+          {
+            "line_end": 627,
+            "line_start": 617,
+            "title": "The k=1 crossover matches a proved zeta formula",
+            "unit_id": "openalex_w2048352354_d017",
+            "unit_type": "validation",
+            "why_material": "A theorem of Gonek gives the shifted discrete second moment uniformly in alpha and its sine-kernel-shaped factor agrees with Conjecture 5 at k=1, providing a direct number-theoretic calibration point."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "F_k acts as a scale-sensitive bridge: its zero-offset order records vanishing at a sampled zero and yields derivative moments, while its large-offset normalization forgets that conditioning and restores ordinary value moments.",
+            "limit": "The zeta-side bridge is conjectural and its zero-limit deduction requires uniformity sufficient to interchange limits.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d004",
+              "openalex_w2048352354_d005",
+              "openalex_w2048352354_d007",
+              "openalex_w2048352354_d014",
+              "openalex_w2048352354_d015",
+              "openalex_w2048352354_d016"
+            ],
+            "title": "One crossover profile joins value and derivative statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d016",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d016",
+          "spontaneous_reading": "At a fixed physical displacement, the local-spacing coordinate diverges as zeros become denser, F_k tends to one, and the statistic loses memory of having been sampled relative to a zero."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d016",
+          "source_grounded_mathematics": "Large-argument spherical-Bessel asymptotics imply F_k(2pi alpha) tends to one; setting alpha=L beta for fixed beta in Conjecture 5 gives the ordinary moment scale for a discrete average of zeta values displaced from zeros.",
+          "conceptual_reading": "The large-offset limit is a forgetting mechanism: beyond the local zero scale, conditioning contributes no leading profile factor and generic value statistics re-emerge.",
+          "representation_or_bridge": "The rescaling alpha=L beta joins microscopic zero spacing to a fixed macroscopic displacement, and the Bessel limit removes F_k.",
+          "boundary_or_failure": "The corollary depends on Conjecture 5 over a growing alpha regime, while identifying this discrete mean with the continuous Keating-Snaith mean is explicitly heuristic.",
+          "uncertainty": "The conceptual limit is clear; parity-specific Bessel asymptotics and offset normalization remain formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparison is conditional on RH as stated and validates only this parameter value and range.",
+      "line_end": 627,
+      "line_start": 617,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact sine factor and uniform range are formula-level dependencies but are legible in the extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A theorem of Gonek gives the shifted discrete second moment uniformly in alpha and its sine-kernel-shaped factor agrees with Conjecture 5 at k=1, providing a direct number-theoretic calibration point.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The k=1 crossover matches a proved zeta formula",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d017.txt",
+      "unit_bytes": 529,
+      "unit_id": "openalex_w2048352354_d017",
+      "unit_sha256": "0c1bc4b5a656411c6c6e676175aee9011fcb9b8675c5be2e34b0abacf7061ec5",
+      "unit_type": "validation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d017.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 609,
+          "line_end": 616,
+          "text": "average taken, and the Keating-Snaith conjecture is a result about the continuous\nmean, whereas corollary 5.2 is a result about a discrete mean. To see this, recall\nthat the zeros get denser higher up the critical\n                                             \u0001 line, and so if β > 0 is fixed and γn is\nrandom, one might expect ζ 21 + i(γn + β) to be random (whereas, if β was small,\nit would be highly influenced by the fact that ζ (1/2 + iγn ) = 0). The left-hand\nside of (3.1) averages this, and thus acts like a discrete mean of |ζ(1/2 + it)|2k .\n\n",
+          "sha256": "436d62af82f01a766dffd75af90d1321a43a4d598770ffd86839cd8b4981b8b6"
+        },
+        "after": {
+          "line_start": 628,
+          "line_end": 635,
+          "text": "\n<!-- source-page: 10 -->\n\n10                                               C.P. HUGHES\n\n\nThere is no proof of the conjecture for k = 2 (unlike conjecture 1 which is proven\nfor k = 1 and 2). But there are theorems along the lines of conjecture 5 for k = 2:\n",
+          "sha256": "0a01557aeb95755c1a184cf2405733ee91997d14d44777efdd340aee8c52aab5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Number-theoretic comparisons",
+            "line_end": 699,
+            "line_start": 617,
+            "mathematical_role": "Compares the offset conjecture with a proved k=1 formula and a k=2 mollified theorem whose forbidden endpoint extrapolation reproduces the predicted profile and derivative moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 627,
+          "line_start": 617,
+          "title": "The k=1 crossover matches a proved zeta formula",
+          "unit_id": "openalex_w2048352354_d017",
+          "unit_type": "validation",
+          "why_material": "A theorem of Gonek gives the shifted discrete second moment uniformly in alpha and its sine-kernel-shaped factor agrees with Conjecture 5 at k=1, providing a direct number-theoretic calibration point."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The comparison is conditional on RH as stated and validates only this parameter value and range.",
+          "representation_dependency": "Exact sine factor and uniform range are formula-level dependencies but are legible in the extraction.",
+          "unit_id": "openalex_w2048352354_d017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 615,
+            "line_start": 587,
+            "title": "The large-offset limit recovers an ordinary moment sampled discretely",
+            "unit_id": "openalex_w2048352354_d016",
+            "unit_type": "limit-argument",
+            "why_material": "Large-argument Bessel asymptotics force F_k to 1; setting alpha equal to a fixed physical displacement times the local density then yields the usual moment scale and explains why values sufficiently far from a zero behave like generic critical-line samples."
+          },
+          {
+            "line_end": 686,
+            "line_start": 634,
+            "title": "A mollified k=2 theorem matches the profile only after an unproved endpoint extrapolation",
+            "unit_id": "openalex_w2048352354_d018",
+            "unit_type": "boundary-test",
+            "why_material": "The available number-theoretic theorem controls a zeta value multiplied by a short Dirichlet polynomial for eta below one half; formally setting eta=1 turns the polynomial into zeta and the resulting series simplifies exactly to the predicted F_2 profile."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The profile has a theorem-level comparison at k=1, whereas the k=2 agreement and derivative constant require pushing a mollifier-length parameter outside the proved range.",
+            "limit": "The conditional k=2 match must not be reported as equivalent in evidential status to the RH-conditional k=1 theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d017",
+              "openalex_w2048352354_d018",
+              "openalex_w2048352354_d019"
+            ],
+            "title": "Calibration strength differs sharply between k=1 and k=2"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d017",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d017",
+          "spontaneous_reading": "The k=1 profile has a direct calibration point: a proved shifted second-moment formula has exactly the sine-kernel-shaped factor predicted by the crossover model."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d017",
+          "source_grounded_mathematics": "Under RH, Gonek's theorem gives the shifted discrete second moment uniformly for |alpha|<=L/2 with factor 1-(sin(pi alpha)/(pi alpha))^2, agreeing with Conjecture 5 at k=1.",
+          "conceptual_reading": "A low-order number-theoretic identity tests the full offset dependence, not only an endpoint constant, and therefore calibrates the proposed profile shape in one case.",
+          "representation_or_bridge": "The sine-kernel-shaped factor is the explicit common representation linking the theorem to F_1.",
+          "boundary_or_failure": "The comparison is conditional on RH and validates only k=1 and the theorem's stated uniform alpha range.",
+          "uncertainty": "The formula is legible and the agreement is explicit, though its exact normalization remains a formula-level dependency."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source stresses that eta=1 is outside the theorem's permitted range, so the agreement is conditional evidence rather than a proved k=2 case.",
+      "line_end": 686,
+      "line_start": 634,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependency: the theorem's series, eta-polynomial and trigonometric simplification require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The available number-theoretic theorem controls a zeta value multiplied by a short Dirichlet polynomial for eta below one half; formally setting eta=1 turns the polynomial into zeta and the resulting series simplifies exactly to the predicted F_2 profile.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A mollified k=2 theorem matches the profile only after an unproved endpoint extrapolation",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d018.txt",
+      "unit_bytes": 2727,
+      "unit_id": "openalex_w2048352354_d018",
+      "unit_sha256": "42e4d91a7590d3560128e0a8f0ed32defbe80159005474b5281e06cbdb6152f3",
+      "unit_type": "boundary-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d018.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 626,
+          "line_end": 633,
+          "text": "uniformly in α for |α| ≤ L/2, which is in perfect agreement with conjecture 5 when\nk = 1.\n\n<!-- source-page: 10 -->\n\n10                                               C.P. HUGHES\n\n\n",
+          "sha256": "9e43e35253179f0880fd54dfb0b55f27733c989c6a5080fe855012fb4f1f08eb"
+        },
+        "after": {
+          "line_start": 687,
+          "line_end": 694,
+          "text": "\nSo, following the proof of corollary 5.1, we may deduce\nCorollary 7.1. If conjecture 7 is true then\n                                  X                                          \u0012       \u00138\n                          1                               \u00014          1           T\n                                           ζ′   1\n                                                2 + iγn        ∼              log       .\n                        N (T )                                     1440π 2        2π\n",
+          "sha256": "a96fdf0c3e539c74356184c7a1d0008822e42d383c67a3c4714201e096357d2a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Number-theoretic comparisons",
+            "line_end": 699,
+            "line_start": 617,
+            "mathematical_role": "Compares the offset conjecture with a proved k=1 formula and a k=2 mollified theorem whose forbidden endpoint extrapolation reproduces the predicted profile and derivative moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 686,
+          "line_start": 634,
+          "title": "A mollified k=2 theorem matches the profile only after an unproved endpoint extrapolation",
+          "unit_id": "openalex_w2048352354_d018",
+          "unit_type": "boundary-test",
+          "why_material": "The available number-theoretic theorem controls a zeta value multiplied by a short Dirichlet polynomial for eta below one half; formally setting eta=1 turns the polynomial into zeta and the resulting series simplifies exactly to the predicted F_2 profile."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source stresses that eta=1 is outside the theorem's permitted range, so the agreement is conditional evidence rather than a proved k=2 case.",
+          "representation_dependency": "Very high formula dependency: the theorem's series, eta-polynomial and trigonometric simplification require PDF verification.",
+          "unit_id": "openalex_w2048352354_d018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 627,
+            "line_start": 617,
+            "title": "The k=1 crossover matches a proved zeta formula",
+            "unit_id": "openalex_w2048352354_d017",
+            "unit_type": "validation",
+            "why_material": "A theorem of Gonek gives the shifted discrete second moment uniformly in alpha and its sine-kernel-shaped factor agrees with Conjecture 5 at k=1, providing a direct number-theoretic calibration point."
+          },
+          {
+            "line_end": 698,
+            "line_start": 688,
+            "title": "The extrapolated k=2 profile reproduces the fourth derivative moment constant",
+            "unit_id": "openalex_w2048352354_d019",
+            "unit_type": "conditional-corollary",
+            "why_material": "Applying the same small-offset argument to the conditional k=2 profile yields the eighth-logarithmic-scale fourth moment of zeta prime and agrees with the earlier derivative conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The profile has a theorem-level comparison at k=1, whereas the k=2 agreement and derivative constant require pushing a mollifier-length parameter outside the proved range.",
+            "limit": "The conditional k=2 match must not be reported as equivalent in evidential status to the RH-conditional k=1 theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d017",
+              "openalex_w2048352354_d018",
+              "openalex_w2048352354_d019"
+            ],
+            "title": "Calibration strength differs sharply between k=1 and k=2"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d018",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d018",
+          "spontaneous_reading": "The mollifier-length parameter is a sharp evidential boundary: the proved k=2 theorem stops below eta=1/2, while the desired F_2 profile appears only after formally pushing eta to the forbidden endpoint eta=1."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d018",
+          "source_grounded_mathematics": "Under GRH, Theorem 6 controls a shifted zeta value times a Dirichlet polynomial A of length exponent eta in (0,1/2); formally setting eta=1 makes A approximate zeta and simplifies the resulting series to the displayed F_2 profile, producing Conjecture 7.",
+          "conceptual_reading": "The calculation is a boundary test rather than a proof: it shows structural compatibility between a number-theoretic formula and the matrix prediction while exposing exactly which unavailable extension would be needed.",
+          "representation_or_bridge": "The Dirichlet polynomial A and its length parameter eta interpolate between a proved mollified statistic and the unmollified fourth moment.",
+          "boundary_or_failure": "Eta=1 violates the theorem's hypotheses, so the F_2 match and Conjecture 7 are conditional extrapolations, not a proved k=2 case.",
+          "uncertainty": "The invalid extrapolation is explicit; the theorem's series, eta-polynomial, and trigonometric simplification have very high formula risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This inherits both the impermissible eta=1 extrapolation and the offset-limit reasoning; it is not an unconditional theorem.",
+      "line_end": 698,
+      "line_start": 688,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The numerical constant and power are formula-sensitive and should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the same small-offset argument to the conditional k=2 profile yields the eighth-logarithmic-scale fourth moment of zeta prime and agrees with the earlier derivative conjecture.",
+      "source_id": "openalex_w2048352354",
+      "source_normalized_sha256": "98ffa19fbc0a1c9ccb43fa9afb5f225c70239b79b331eb136a7b15915f3f6c6e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The extrapolated k=2 profile reproduces the fourth derivative moment constant",
+      "unit_artifact_relpath": "depth/units/openalex_w2048352354_d019.txt",
+      "unit_bytes": 637,
+      "unit_id": "openalex_w2048352354_d019",
+      "unit_sha256": "03c89a0b086796c8e2efc51d1c7079fde87f32ffb9ac4274ff1987d5cf438b79",
+      "unit_type": "conditional-corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2048352354_d019.txt",
+      "source": {
+        "source_id": "openalex_w2048352354",
+        "title": "Random matrix theory and discrete moments of the Riemann zeta function",
+        "authors": [
+          "C. P. Hughes"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 680,
+          "line_end": 687,
+          "text": "               X                                            \u0012        \u00134\n          1                             \u00014     1                  T\n                    ζ 12 + i (γn + α/L)    ∼       F2 (2πα)   log\n        N (T )                                2π 2                2π\n                        0<γn ≤T\n\nwhere F2 (2x) is given in (2.4).\n\n",
+          "sha256": "790bfe27da52ef9a7730e81b61ea329e97c225c0c6829e06a1e669504caadd2b"
+        },
+        "after": {
+          "line_start": 699,
+          "line_end": 706,
+          "text": "\n<!-- source-page: 11 -->\n\nDISCRETE MOMENTS OF THE ZETA FUNCTION                                  11\n\n\n                                 4. Acknowledgments\n\n",
+          "sha256": "25480c08042beccd0830471826f6feb4b72b2b33b9dededd77b2801db982761c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0e1ab75c49c0ed1706d99ea57d1e249252ad0491d17e337311f4f3baed33c594",
+        "dossier_sha256": "1b0b55cd532500ee0f34f7ba1a83e4958ffeca357e900a7c5b78921d764f7865",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Number-theoretic comparisons",
+            "line_end": 699,
+            "line_start": 617,
+            "mathematical_role": "Compares the offset conjecture with a proved k=1 formula and a k=2 mollified theorem whose forbidden endpoint extrapolation reproduces the predicted profile and derivative moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 698,
+          "line_start": 688,
+          "title": "The extrapolated k=2 profile reproduces the fourth derivative moment constant",
+          "unit_id": "openalex_w2048352354_d019",
+          "unit_type": "conditional-corollary",
+          "why_material": "Applying the same small-offset argument to the conditional k=2 profile yields the eighth-logarithmic-scale fourth moment of zeta prime and agrees with the earlier derivative conjecture."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This inherits both the impermissible eta=1 extrapolation and the offset-limit reasoning; it is not an unconditional theorem.",
+          "representation_dependency": "The numerical constant and power are formula-sensitive and should be checked against the PDF.",
+          "unit_id": "openalex_w2048352354_d019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 686,
+            "line_start": 634,
+            "title": "A mollified k=2 theorem matches the profile only after an unproved endpoint extrapolation",
+            "unit_id": "openalex_w2048352354_d018",
+            "unit_type": "boundary-test",
+            "why_material": "The available number-theoretic theorem controls a zeta value multiplied by a short Dirichlet polynomial for eta below one half; formally setting eta=1 turns the polynomial into zeta and the resulting series simplifies exactly to the predicted F_2 profile."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The profile has a theorem-level comparison at k=1, whereas the k=2 agreement and derivative constant require pushing a mollifier-length parameter outside the proved range.",
+            "limit": "The conditional k=2 match must not be reported as equivalent in evidential status to the RH-conditional k=1 theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2048352354_d017",
+              "openalex_w2048352354_d018",
+              "openalex_w2048352354_d019"
+            ],
+            "title": "Calibration strength differs sharply between k=1 and k=2"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2048352354_d019",
+        "spontaneous": {
+          "unit_id": "openalex_w2048352354_d019",
+          "spontaneous_reading": "Taking the small-offset limit of the extrapolated k=2 profile closes a consistency loop by reproducing the previously conjectured fourth moment of zeta prime, but adds no independent proof because every step inherits the same extrapolation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2048352354_d019",
+          "source_grounded_mathematics": "Assuming Conjecture 7, the Corollary 5.1 limit argument yields a fourth derivative moment with logarithmic power eight and coefficient 1/(1440 pi^2), matching Conjecture 2 at k=2.",
+          "conceptual_reading": "Agreement of two derived routes is an internal coherence check on the crossover profile and its zero-offset behavior, not a promotion of the underlying conjectures to theorem status.",
+          "representation_or_bridge": "The small-offset derivative extraction connects the conditional F_2 shifted-value profile to the derivative-moment constant.",
+          "boundary_or_failure": "The result inherits both the impermissible eta=1 extrapolation behind Conjecture 7 and the offset-limit reasoning; it is not unconditional.",
+          "uncertainty": "The logical dependence is clear, while the numerical coefficient and displayed power require PDF verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "7df73e751a197d2039b705803fb91a8819330d96becdf328b267c895d9741d20"
+}

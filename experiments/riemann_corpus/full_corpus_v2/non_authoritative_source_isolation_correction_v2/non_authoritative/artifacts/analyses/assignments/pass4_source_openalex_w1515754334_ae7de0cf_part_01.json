@@ -1,0 +1,614 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1515754334_ae7de0cf_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1515754334",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit preserves the literature contrast and section roadmap; exact equations (1.1)-(1.9) are not recoverable from this span and must not be inferred.",
+      "line_end": 132,
+      "line_start": 49,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the prose reliably identifies parity and function families, but the concrete integral identities and constants are largely absent or scrambled.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction explicitly organizes prior isolated log-sine and log-sinh evaluations into two general tasks: rederive odd zeta representations, add an even analogue, prove general log-sine formulas, and relate the circular and hyperbolic integral families. This supplies the source's conceptual comparison even though the displayed target formulas are damaged.",
+      "source_id": "openalex_w1515754334",
+      "source_normalized_sha256": "abcfc04dde6d791d59e0c911dda8e8c1359875662a9848e3cf69fa7697cac8d7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parity-split program for representing integer zeta values by logarithmic moments",
+      "unit_artifact_relpath": "depth/units/openalex_w1515754334_u01.txt",
+      "unit_bytes": 2325,
+      "unit_id": "openalex_w1515754334_u01",
+      "unit_sha256": "2e5a4fd334e56ccd52e5bf407044bcd523927df78918c86e081ec2aca5191fe0",
+      "unit_type": "motivation-and-method-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1515754334_u01.txt",
+      "source": {
+        "source_id": "openalex_w1515754334",
+        "title": "Values of the Riemann zeta function and integrals involving log(2 sinh(theta/2) and log(2 sin(theta/2)",
+        "authors": [
+          "Zhang Nan-Yue",
+          "Kenneth S. Williams"
+        ],
+        "year": 1995,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 41,
+          "line_end": 48,
+          "text": "          /                         2\n                                         log 2 (2sin(0/2)))d0 = 253π 5 /3240,\n         Jo\n          /    (01og 4 (2sin(0/2)) - i-log(2sin(0/2)))d0 = 313π 6 /408240,\n         Jo                          *\n\n        as special cases.\n\n",
+          "sha256": "bc700135007cdd4e98344703ca461380255dd47aae8a541b95e52e8f37cae2b8"
+        },
+        "after": {
+          "line_start": 133,
+          "line_end": 140,
+          "text": "  2. Representation          of        ζ(ή)         by       integrals      involving\nlog ί 2 sinh f 1. For k > 1, x > 1, we have\n\n\n\n\nsince\n                 Λ          tit          -t\\             Λ\n",
+          "sha256": "fdda492f29185b11dc6e83dd2dfe7c376122863be0a238c84e9c2e1494f49ebc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1523c1873e18c60b6ebc143586454ae774eb01a565b117cf0e43f2909ee24116",
+        "dossier_sha256": "5280e44c745830c3fcb302a0373a21a2813a43fd314d8d7f90f0f9191d9f2275",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 132,
+            "line_start": 49,
+            "mathematical_role": "Places the work among earlier log-sine and log-sinh evaluations and announces parity-indexed generalizations and cross-family relations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 132,
+          "line_start": 49,
+          "title": "Parity-split program for representing integer zeta values by logarithmic moments",
+          "unit_id": "openalex_w1515754334_u01",
+          "unit_type": "motivation-and-method-map",
+          "why_material": "The introduction explicitly organizes prior isolated log-sine and log-sinh evaluations into two general tasks: rederive odd zeta representations, add an even analogue, prove general log-sine formulas, and relate the circular and hyperbolic integral families. This supplies the source's conceptual comparison even though the displayed target formulas are damaged."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit preserves the literature contrast and section roadmap; exact equations (1.1)-(1.9) are not recoverable from this span and must not be inferred.",
+          "representation_dependency": "High: the prose reliably identifies parity and function families, but the concrete integral identities and constants are largely absent or scrambled.",
+          "unit_id": "openalex_w1515754334_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 166,
+            "line_start": 133,
+            "title": "Exponential denominators rewritten as log-sinh kernels",
+            "unit_id": "openalex_w1515754334_u02",
+            "unit_type": "kernel-representation-change",
+            "why_material": "The visible identity factoring an exponential difference through a hyperbolic sine explains why substitutions in a standard zeta-integral kernel generate powers of log(2 sinh(theta/2)). The special choice of an algebraic endpoint then creates paired auxiliary integrals to be evaluated."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly changes an integral kernel into a logarithmic representation and then separates even and odd index families through paired auxiliary identities or real/imaginary projections, rather than evaluating each integer zeta value independently.",
+            "limit": "The exact parity formulas and coefficients are unavailable in the normalized extraction, so this synthesis records strategy only.",
+            "parent_local_unit_ids": [
+              "openalex_w1515754334_u01",
+              "openalex_w1515754334_u02",
+              "openalex_w1515754334_u03",
+              "openalex_w1515754334_u04"
+            ],
+            "title": "Parity is extracted by changing representation before evaluating moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 47,
+              "line_start": 28,
+              "reason": "Abstract states the scope and lists examples, but the example displays are too damaged to select as exact units."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 109,
+              "line_start": 79,
+              "reason": "Prior and announced formulas (1.3)-(1.7) are largely blank or symbol-fragmented; only their role is described by neighboring prose."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 112,
+              "line_start": 110,
+              "reason": "Bernoulli/Euler-number attribution and special-case relation support the method map without preserving the formulas."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 120,
+              "line_start": 114,
+              "reason": "Prose relates announced formulas to prior work and introduces the final section relations."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 129,
+              "line_start": 121,
+              "reason": "Equations (1.8)-(1.9) are missing most mathematical content."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 132,
+              "line_start": 130,
+              "reason": "Prose states the generalization relationship and attribution."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1515754334_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1515754334_u01",
+          "spontaneous_reading": "The mathematical work visible here is organizational: isolated log-sine and log-sinh evaluations are recast as parity-indexed families. The announced program pairs a known odd-zeta representation with an even analogue, then seeks general log-sine formulas and relations between circular and hyperbolic moments, so the gain is compression into families rather than another special-value calculation."
+        },
+        "directed": {
+          "unit_id": "openalex_w1515754334_u01",
+          "source_grounded_mathematics": "The introduction says that a representation of ζ(2m+1) by log-sinh integrals will be reproved, an analogous formula for the even case will be proved, Section 3 will generalize several earlier log-sine identities, and Section 4 will relate series to log-sine and log-sinh integrals. Bernoulli and Euler numbers are named in connection with the Section 3 families, but the displayed formulas are not recoverable.",
+          "conceptual_reading": "Parity supplies the organizing variable: odd and even integer arguments are treated as two related families, while general identities subsume scattered special cases. This is a family-level reframing, not evidence that the two parity cases have the same proof.",
+          "representation_or_bridge": "The announced bridges are between integer zeta values and logarithmic moments built from 2 sin(θ/2) or 2 sinh(θ/2), with central/Stirling numbers and Bernoulli/Euler numbers indicated as coefficient structures. The exact maps and constants are absent from the extracted displays.",
+          "boundary_or_failure": "This span is a literature contrast and roadmap, not a derivation. Equations (1.1)-(1.9) are blank or scrambled, so no endpoint, coefficient, normalization, or exact theorem statement can be reconstructed safely.",
+          "uncertainty": "Low uncertainty about the parity-split program and the claimed generalization relation; high uncertainty about every displayed identity and its hypotheses."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1515754334_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose explicitly announces a reproof of the odd-integer log-sinh representation, an analogous even case, general log-sine formulas, and later relations between log-sine and log-sinh integrals or series.",
+          "The candidate correctly treats the span as a literature map and roadmap rather than a derivation, and it refuses to reconstruct equations (1.1)-(1.9).",
+          "The observation that the source organizes results by odd and even arguments is grounded in the surviving prose."
+        ],
+        "inference": [
+          "Calling the roadmap a compression of isolated values into families is a reasonable conceptual reading, not a result proved in this span.",
+          "Treating parity as the single organizing variable abstracts across several announced sections whose proofs and exact statements are absent."
+        ],
+        "unsupported_or_imported": [
+          "The bridge description groups central and Stirling numbers with Bernoulli and Euler numbers as if all were coefficient structures for one announced map; the span instead attributes central and Stirling numbers to an earlier odd-zeta result and names Bernoulli and Euler numbers in the later log-sine formulas.",
+          "No exact bridge, coefficient map, endpoint, normalization, or common proof for the two parity families is available from the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous reading is close to a polished restatement of the section roadmap; its non-paraphrase contribution is limited to the family-compression interpretation.",
+          "Phrases such as `gain is compression` should not obscure that the span contains announced claims rather than an exhibited mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "Nearly every displayed identity is blank or scrambled, including the examples and general formulas on which stronger mathematical comparison would depend.",
+          "The extracted glyph for the even zeta value is damaged, so even its exact transcription must remain tied to the surrounding prose rather than reconstructed formulaically."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish more sharply between the prior authors' coefficient methods, the present paper's announced reproof, and the separate Section 3 coefficient families."
+        ],
+        "revision_instructions": [
+          "Retain the roadmap-level parity organization and the explicit no-formula boundary.",
+          "Attribute central and Stirling numbers only to the cited earlier odd-zeta representation, and Bernoulli or Euler numbers only to the announced Section 3 families.",
+          "Describe `compression into families` as an interpretive benefit, not a source-demonstrated bridge or shared proof mechanism."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the section setup, the exponential-to-sinh factorization, the analogous step, auxiliary definitions, and specialization. Several defining displays are incomplete, so the unit records only the representation change and setup.",
+      "line_end": 166,
+      "line_start": 133,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: line 143 preserves the core factorization semantically, but equations (2.1)-(2.5), the exact endpoint, and the definitions of the auxiliary functions require PDF recovery.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The visible identity factoring an exponential difference through a hyperbolic sine explains why substitutions in a standard zeta-integral kernel generate powers of log(2 sinh(theta/2)). The special choice of an algebraic endpoint then creates paired auxiliary integrals to be evaluated.",
+      "source_id": "openalex_w1515754334",
+      "source_normalized_sha256": "abcfc04dde6d791d59e0c911dda8e8c1359875662a9848e3cf69fa7697cac8d7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential denominators rewritten as log-sinh kernels",
+      "unit_artifact_relpath": "depth/units/openalex_w1515754334_u02.txt",
+      "unit_bytes": 934,
+      "unit_id": "openalex_w1515754334_u02",
+      "unit_sha256": "8a8b56378c909919e6084041df87b95ac3cb01155d9cc0c755aaaef93d439e56",
+      "unit_type": "kernel-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1515754334_u02.txt",
+      "source": {
+        "source_id": "openalex_w1515754334",
+        "title": "Values of the Riemann zeta function and integrals involving log(2 sinh(theta/2) and log(2 sin(theta/2)",
+        "authors": [
+          "Zhang Nan-Yue",
+          "Kenneth S. Williams"
+        ],
+        "year": 1995,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 125,
+          "line_end": 132,
+          "text": "(1.9)\n\n                        =          .      /           ^!og m ( 2 s i n h ^ Jd»,\n                                                         6\n                                  m!     7o                  V           2/\nwhich generalize the formulae (1.1) and (1.2). The formula (1.8)\nwas given by Zucker [4, (2.5)]. Formula (1.9) can be established in\nan analogous fashion.\n",
+          "sha256": "c5459f3842a144837b1f31d6fbcf19ebb80eca0bb4e16a0bc182343df74938c9"
+        },
+        "after": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "    Now we evaluate f(k) and g(k). We have\n\n(2.6)\n\nand\n\n\n\n",
+          "sha256": "f927c18854cf32ab13c86055298ce57a3922a4bb00d2681f715c79d551256e2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1523c1873e18c60b6ebc143586454ae774eb01a565b117cf0e43f2909ee24116",
+        "dossier_sha256": "5280e44c745830c3fcb302a0373a21a2813a43fd314d8d7f90f0f9191d9f2275",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Representation of zeta(n) by log-sinh integrals",
+            "line_end": 362,
+            "line_start": 133,
+            "mathematical_role": "Rewrites exponential kernels hyperbolically, evaluates auxiliary integral families through substitutions and integration by parts, and states odd/even zeta representation formulas whose exact displays are mostly lost."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 166,
+          "line_start": 133,
+          "title": "Exponential denominators rewritten as log-sinh kernels",
+          "unit_id": "openalex_w1515754334_u02",
+          "unit_type": "kernel-representation-change",
+          "why_material": "The visible identity factoring an exponential difference through a hyperbolic sine explains why substitutions in a standard zeta-integral kernel generate powers of log(2 sinh(theta/2)). The special choice of an algebraic endpoint then creates paired auxiliary integrals to be evaluated."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the section setup, the exponential-to-sinh factorization, the analogous step, auxiliary definitions, and specialization. Several defining displays are incomplete, so the unit records only the representation change and setup.",
+          "representation_dependency": "Very high: line 143 preserves the core factorization semantically, but equations (2.1)-(2.5), the exact endpoint, and the definitions of the auxiliary functions require PDF recovery.",
+          "unit_id": "openalex_w1515754334_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 132,
+            "line_start": 49,
+            "title": "Parity-split program for representing integer zeta values by logarithmic moments",
+            "unit_id": "openalex_w1515754334_u01",
+            "unit_type": "motivation-and-method-map",
+            "why_material": "The introduction explicitly organizes prior isolated log-sine and log-sinh evaluations into two general tasks: rederive odd zeta representations, add an even analogue, prove general log-sine formulas, and relate the circular and hyperbolic integral families. This supplies the source's conceptual comparison even though the displayed target formulas are damaged."
+          },
+          {
+            "line_end": 294,
+            "line_start": 167,
+            "title": "Auxiliary-integral evaluation by reciprocal substitutions, integration by parts, and parity recombination",
+            "unit_id": "openalex_w1515754334_u03",
+            "unit_type": "proof-architecture",
+            "why_material": "The prose documents a reusable evaluation pipeline: evaluate two auxiliary families, transform their integrals by substitutions, reduce a remaining logarithmic integral by integration by parts, derive separate even and odd relations, and substitute those relations back into the original pair. This is the mechanism leading to the Section 2 representation theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly changes an integral kernel into a logarithmic representation and then separates even and odd index families through paired auxiliary identities or real/imaginary projections, rather than evaluating each integer zeta value independently.",
+            "limit": "The exact parity formulas and coefficients are unavailable in the normalized extraction, so this synthesis records strategy only.",
+            "parent_local_unit_ids": [
+              "openalex_w1515754334_u01",
+              "openalex_w1515754334_u02",
+              "openalex_w1515754334_u03",
+              "openalex_w1515754334_u04"
+            ],
+            "title": "Parity is extracted by changing representation before evaluating moments"
+          },
+          {
+            "claim": "Log-sinh moments arise from exponential or inverse-hyperbolic-sine representations, while log-sine moments arise from unit-circle or arcsine representations; analytic substitution links the two families at the level of generating constructions.",
+            "limit": "The source's exact domains, endpoints, branch conventions, and constants require PDF recovery.",
+            "parent_local_unit_ids": [
+              "openalex_w1515754334_u02",
+              "openalex_w1515754334_u04",
+              "openalex_w1515754334_u05",
+              "openalex_w1515754334_u06"
+            ],
+            "title": "Circular and hyperbolic logarithmic moments form parallel constructions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 129,
+              "line_start": 121,
+              "reason": "Equations (1.8)-(1.9) are missing most mathematical content."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 132,
+              "line_start": 130,
+              "reason": "Prose states the generalization relationship and attribution."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 154,
+              "line_start": 148,
+              "reason": "The analogous identity and definition (2.3) are absent from extraction."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 166,
+              "line_start": 156,
+              "reason": "Specialized equations (2.4)-(2.5) retain only fragments; their setup role is incorporated cautiously in u02."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1515754334_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w1515754334_u02",
+          "spontaneous_reading": "The useful move is to expose a hyperbolic kernel inside an exponential denominator: factoring an exponential difference through sinh makes logarithms of 2 sinh(θ/2) natural after a change of variables. The source then specializes an endpoint and introduces a paired auxiliary setup, postponing evaluation to a form where the two members can later be recombined."
+        },
+        "directed": {
+          "unit_id": "openalex_w1515754334_u02",
+          "source_grounded_mathematics": "For k>1 and x>1 the span visibly uses e^θ-1=2e^(θ/2)sinh(θ/2), states an analogous relation, introduces auxiliary quantities, and specializes x to an algebraic value denoted τ. Fragments of f(k), g(k), A(θ), and a log-sinh integral survive, but equations (2.1)-(2.5) do not survive as complete identities.",
+          "conceptual_reading": "Factoring before integrating changes which structure is visible: an exponential kernel is rewritten so that a hyperbolic logarithmic moment becomes the natural coordinate. The paired auxiliaries are useful intermediate objects because later parity information can be obtained from combinations of them rather than by attacking each zeta value separately.",
+          "representation_or_bridge": "The concrete bridge object is the factorization of the exponential difference into an exponential factor times sinh(θ/2), followed by the specialized auxiliary pair f(k), g(k). This connects an exponential-denominator representation to a log-sinh representation, but the exact substitution and endpoint-dependent constants are missing.",
+          "boundary_or_failure": "The source supports the representation change and setup only. It does not support a transcription of the starting integral, the analogous identity, the definitions of f and g, the value of τ, or any equality produced by the specialization.",
+          "uncertainty": "Moderate uncertainty about the qualitative kernel change; very high uncertainty about definitions, domains, signs, powers, and constants."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1515754334_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The surviving display visibly factors an exponential difference through an exponential factor and sinh(theta/2).",
+          "The span introduces named auxiliary quantities and specializes the parameter to a value denoted tau, while the candidate correctly refuses to transcribe their damaged definitions.",
+          "It is defensible to identify a qualitative exponential-to-hyperbolic representation change."
+        ],
+        "inference": [
+          "Saying that the factorization makes a log-sinh moment the `natural coordinate` is explanatory inference; the starting integral and actual change of variables are not recoverable.",
+          "Treating the two auxiliary quantities as a strategically paired setup is plausible from their adjacent definitions but their algebraic relation is unreadable."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the pair is chosen so later combinations recover parity information comes from the following unit, not from this frozen span.",
+          "The span cannot establish the exact denominator kernel, substitution, endpoint value, auxiliary definitions, domains beyond the prose inequalities, or any equality resulting from specialization."
+        ],
+        "paraphrase_or_style_risk": [
+          "`Factoring before integrating changes which structure is visible` is a generic representation-exposes-structure template unless anchored to the one readable factorization and an explicitly withheld integral consequence."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (2.1)-(2.5) are mostly absent or symbol-fragmented, including the analogous identity and definitions of f, g, and A.",
+          "A reliable formula-level interpretation would require the source image; the current span supports only setup and one algebraic factorization."
+        ],
+        "missed_mechanism": [
+          "The candidate does not isolate which exact algebraic factor is readable from which purported integral transformation is only inferred."
+        ],
+        "revision_instructions": [
+          "Limit the source-grounded claim to the readable exponential-to-sinh factorization, the introduction of an auxiliary pair, and specialization to tau.",
+          "Move the log-sinh-integral consequence into inference and state that the missing starting identity prevents verification of the substitution.",
+          "Remove the imported claim about later parity recombination from this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sequence of operations is explicit at lines 167, 189, 226, 246, 264, 280, and 293, but the intervening equations are badly fragmented. Treat this as method architecture, not as an executable derivation.",
+      "line_end": 294,
+      "line_start": 167,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: definitions, signs, coefficients, limits, and recurrences in equations (2.6)-(2.12) are not transcription-safe.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prose documents a reusable evaluation pipeline: evaluate two auxiliary families, transform their integrals by substitutions, reduce a remaining logarithmic integral by integration by parts, derive separate even and odd relations, and substitute those relations back into the original pair. This is the mechanism leading to the Section 2 representation theorem.",
+      "source_id": "openalex_w1515754334",
+      "source_normalized_sha256": "abcfc04dde6d791d59e0c911dda8e8c1359875662a9848e3cf69fa7697cac8d7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Auxiliary-integral evaluation by reciprocal substitutions, integration by parts, and parity recombination",
+      "unit_artifact_relpath": "depth/units/openalex_w1515754334_u03.txt",
+      "unit_bytes": 3077,
+      "unit_id": "openalex_w1515754334_u03",
+      "unit_sha256": "9c62c3ede9d6680affff6909ad41159cdc2a49ffc18e64c0d7fdea7f07c17bea",
+      "unit_type": "proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1515754334_u03.txt",
+      "source": {
+        "source_id": "openalex_w1515754334",
+        "title": "Values of the Riemann zeta function and integrals involving log(2 sinh(theta/2) and log(2 sin(theta/2)",
+        "authors": [
+          "Zhang Nan-Yue",
+          "Kenneth S. Williams"
+        ],
+        "year": 1995,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 159,
+          "line_end": 166,
+          "text": "Taking x = τ = | ( 1 + Λ/5) in (2.2) and (2.1) gives respectively\n\n(24)                  ί     ! 5 £\n                            lθ£*ϊl   i t)a      / 21ogτ\n              /wL                            *i\n                                                r2\\ogτ Γ          f)\"\\k\n(2.5)        g(k)=l       \" & v\"   * ' d t= -   [         \\A{Θ) + - \\ d θ .\n\n",
+          "sha256": "369ba40fa67d8ccbbab82e5b1b03e5dcfe0b357344da02c9e48ebdaeb4280491"
+        },
+        "after": {
+          "line_start": 295,
+          "line_end": 302,
+          "text": "             VALUES OF THE RIEMANN ZETA FUNCTION                     277\n\n\n\n  THEOREM 1. For m = 1,2,...\n(2.13)\n\n\n",
+          "sha256": "dc65661ea0584a54574e6b6377cfc7bb99ef5178bd78bd5e748f2ce43975bbdc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1523c1873e18c60b6ebc143586454ae774eb01a565b117cf0e43f2909ee24116",
+        "dossier_sha256": "5280e44c745830c3fcb302a0373a21a2813a43fd314d8d7f90f0f9191d9f2275",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Representation of zeta(n) by log-sinh integrals",
+            "line_end": 362,
+            "line_start": 133,
+            "mathematical_role": "Rewrites exponential kernels hyperbolically, evaluates auxiliary integral families through substitutions and integration by parts, and states odd/even zeta representation formulas whose exact displays are mostly lost."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 294,
+          "line_start": 167,
+          "title": "Auxiliary-integral evaluation by reciprocal substitutions, integration by parts, and parity recombination",
+          "unit_id": "openalex_w1515754334_u03",
+          "unit_type": "proof-architecture",
+          "why_material": "The prose documents a reusable evaluation pipeline: evaluate two auxiliary families, transform their integrals by substitutions, reduce a remaining logarithmic integral by integration by parts, derive separate even and odd relations, and substitute those relations back into the original pair. This is the mechanism leading to the Section 2 representation theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sequence of operations is explicit at lines 167, 189, 226, 246, 264, 280, and 293, but the intervening equations are badly fragmented. Treat this as method architecture, not as an executable derivation.",
+          "representation_dependency": "Very high: definitions, signs, coefficients, limits, and recurrences in equations (2.6)-(2.12) are not transcription-safe.",
+          "unit_id": "openalex_w1515754334_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 166,
+            "line_start": 133,
+            "title": "Exponential denominators rewritten as log-sinh kernels",
+            "unit_id": "openalex_w1515754334_u02",
+            "unit_type": "kernel-representation-change",
+            "why_material": "The visible identity factoring an exponential difference through a hyperbolic sine explains why substitutions in a standard zeta-integral kernel generate powers of log(2 sinh(theta/2)). The special choice of an algebraic endpoint then creates paired auxiliary integrals to be evaluated."
+          },
+          {
+            "line_end": 574,
+            "line_start": 363,
+            "title": "A complex contour identity converted into log-sine moment families",
+            "unit_id": "openalex_w1515754334_u04",
+            "unit_type": "contour-bridge-and-parity-projection",
+            "why_material": "The source defines B(theta)=log(2 sin(theta/2)), integrates along a specified unit-circle arc, applies a complex affine substitution, and splits the result into real-variable integrals. Taking real and imaginary parts at opposite parity choices, then invoking Bernoulli- and Euler-number coefficient identities, is the stated route to the two general log-sine theorem families."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly changes an integral kernel into a logarithmic representation and then separates even and odd index families through paired auxiliary identities or real/imaginary projections, rather than evaluating each integer zeta value independently.",
+            "limit": "The exact parity formulas and coefficients are unavailable in the normalized extraction, so this synthesis records strategy only.",
+            "parent_local_unit_ids": [
+              "openalex_w1515754334_u01",
+              "openalex_w1515754334_u02",
+              "openalex_w1515754334_u03",
+              "openalex_w1515754334_u04"
+            ],
+            "title": "Parity is extracted by changing representation before evaluating moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 166,
+              "line_start": 156,
+              "reason": "Specialized equations (2.4)-(2.5) retain only fragments; their setup role is incorporated cautiously in u02."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 196,
+              "line_start": 191,
+              "reason": "Resulting integral displays are lost or fragmentary."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 241,
+              "line_start": 198,
+              "reason": "Equations and transformations are too fragmented to recover signs, kernels, or constants reliably."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 279,
+              "line_start": 243,
+              "reason": "Integration-by-parts calculation and equations (2.9)-(2.10) are symbol- and layout-damaged; only the stated operation sequence survives."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 335,
+              "line_start": 296,
+              "reason": "Theorem 1 and its rewritings (2.13)-(2.16) have lost nearly all exact formula content."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1515754334_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1515754334_u03",
+          "spontaneous_reading": "The mechanism is a paired evaluation pipeline: transform two auxiliary integrals, reduce a remaining logarithmic integral by integration by parts, and then take an even-index sum and an odd-index difference. Those symmetric and antisymmetric combinations act as parity projectors before the results are substituted back into the original setup."
+        },
+        "directed": {
+          "unit_id": "openalex_w1515754334_u03",
+          "source_grounded_mathematics": "The span announces evaluation of f(k) and g(k), applies substitutions to their integrals, rewrites an integral using log powers and d log u, evaluates a remaining term by integration by parts, records separate relations for f(2m)+g(2m) and f(2m-1)-g(2m-1), and finally combines these with equations (2.3)-(2.5). The intervening displays (2.6)-(2.12) are heavily fragmented.",
+          "conceptual_reading": "Rather than evaluate parity cases independently, the proof architecture chooses combinations of two auxiliary objects that isolate even and odd behavior. Integration by parts then shifts complexity from the original kernel into a controlled lower-power moment, making recombination possible.",
+          "representation_or_bridge": "The bridge runs from f and g through reciprocal-style substitutions to logarithmic integrals involving log^k(1-u), log u, and an auxiliary A(θ), then back through the sum/difference relations. The sum and difference are the structurally important intermediate representations; their coefficients are not recoverable.",
+          "boundary_or_failure": "This unit preserves an operation sequence, not an executable proof. The definitions of f, g, and A, as well as limits, signs, recurrences, constants, and the resulting representation theorem, cannot be stated from the damaged equations.",
+          "uncertainty": "Low-to-moderate uncertainty about the order of operations and parity recombination; very high uncertainty about all formula-level claims."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1515754334_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose visibly orders the work as evaluation of f and g, substitutions in two integrals, integration by parts for a remaining logarithmic integral, separate even-index sum and odd-index difference relations, and recombination with earlier equations.",
+          "The candidate appropriately declines to state definitions, coefficients, limits, recurrences, or the resulting theorem.",
+          "The broad proof-architecture reading survives despite the damaged displays."
+        ],
+        "inference": [
+          "Calling the even sum and odd difference `parity projectors` is a conceptual analogy, not an algebraic property established by the recoverable formulas.",
+          "The claim that integration by parts shifts complexity into a controlled lower-power moment is plausible from the visible operation but its exact recurrence and termination are not readable."
+        ],
+        "unsupported_or_imported": [
+          "The characterization of the substitutions as reciprocal-style is not transcription-safe from the damaged symbols.",
+          "The span does not support an executable bridge from f and g to zeta values or a verified claim that the sum and difference isolate all parity dependence."
+        ],
+        "paraphrase_or_style_risk": [
+          "The `symmetric and antisymmetric combinations act as projectors` phrasing risks imposing a familiar template on two parity-specialized identities rather than describing only what is visible.",
+          "General language about shifting complexity should be replaced by the concrete, ordered operations that the prose preserves."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (2.6)-(2.12), including substitutions, kernels, signs, limits, and constants, are severely fragmented.",
+          "The theorem produced after the final recombination lies outside the unit and is itself extraction-defective in nearby context."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the distinction between evaluating f at even indices with a sum and at odd indices with a difference, rather than suggesting a single projector applied to a common expression."
+        ],
+        "revision_instructions": [
+          "Keep the ordered operation sequence and the explicit non-executable boundary.",
+          "Replace `parity projector` with the literal observation that the proof forms an even-index sum and an odd-index difference.",
+          "Remove `reciprocal-style` unless the substitution can be read exactly, and mark any complexity-reduction interpretation as inference."
+        ]
+      }
+    }
+  ]
+}

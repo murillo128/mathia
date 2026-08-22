@@ -1,0 +1,1517 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "l_functions_geometry",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/l_functions_geometry.jsonl",
+  "candidate_count": 13,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "Both the dynamical trace construction and the finite-field cohomological construction turn fixed points into traces by restricting or intersecting an operator graph with the diagonal. In the flow setting transversality produces the inverse determinant of one minus the return map as a local weight; in the algebraic setting the diagonal acts as an identity kernel and graph intersection becomes an alternating cohomological trace.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The relation identifies a concrete Lefschetz mechanism behind two geometry-to-spectrum programs: local graph–diagonal geometry generates trace coefficients rather than those coefficients being inserted to mimic an explicit formula.",
+        "limits": "The flow formula requires graph–diagonal transversality and yields return-map determinants, whereas the finite-field formula uses algebraic correspondences and cohomology. Their shared kernel mechanism neither constructs a classical zeta flow nor transfers finite-field RH to number fields.",
+        "parent_unit_ids": [
+          "connes1999_trace_formula_v2_u07",
+          "connes1999_trace_formula_v2_u30",
+          "milne2015_rh_finite_fields_v2_u20"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_graph_diagonal_trace",
+        "title": "Graph–diagonal intersection is the common fixed-point-to-trace mechanism"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This finite-dimensional model is the template for local and adelic multiplicative actions.",
+          "line_end": 810,
+          "line_start": 745,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coordinate-free meaning is clear; determinant signs and density normalizations are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the inverse-determinant contribution of an isolated transverse fixed point and shows how alternating bundle traces recover the usual cohomological Lefschetz formula.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Lefschetz trace is a distributional restriction of a kernel to the diagonal",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u07.txt",
+          "unit_bytes": 2914,
+          "unit_id": "connes1999_trace_formula_v2_u07",
+          "unit_sha256": "d86b193c7774ba24bba6780a7e9a37b8c5e4db901c3d80f7fd004a8a9458a680",
+          "unit_type": "fixed-point trace mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u07.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: when a graph is transverse to the diagonal, restricting its delta kernel gives an inverse-determinant term per fixed point; alternating exterior-power traces recover Lefschetz signs. Conceptual reading: diagonal restriction localizes a global operator.",
+            "nonparaphrase_operation": "Derives the local weight from the change from kernel to fixed-point geometry.",
+            "quality_reason": "Accepted because mechanism and hypothesis are concrete.",
+            "source_support": "The kernel, transversality, change of variables, weights, bundle extension, and formula are explicit.",
+            "speculation_status": "The identity map and singular adelic quotient are outside this calculation; conventions are scan-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes the rigorous geometric template used only formally in the adelic global case.",
+          "line_end": 4403,
+          "line_start": 4181,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Geometric argument is prose-supported; determinant-density formulas should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the kernel formalism to a flow, proves transversality is invertibility of one minus the transverse return map, and derives both closed-orbit and stationary-point contributions with covolume normalization.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            83,
+            84,
+            85,
+            86
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Poincare return determinant is the symbol of the pulled-back graph distribution",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u30.txt",
+          "unit_bytes": 8341,
+          "unit_id": "connes1999_trace_formula_v2_u30",
+          "unit_sha256": "8c0fa4be251f71429b335515353aff58742c99ce2db5163c10718576ea2a5a55",
+          "unit_type": "coordinate-free flow trace derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u30.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: for a flow, graph-diagonal transversality is equivalent to invertibility of one minus the Poincaré return map; the conormal symbol is its inverse determinant, and time pushforward gives orbit and stationary terms. Conceptual reading: the determinant is generated by the restriction Jacobian rather than inserted.",
+            "nonparaphrase_operation": "Derives orbit coefficients from invariant kernel operations and names the exact degeneracy.",
+            "quality_reason": "Accepted because the claim follows from the source's normal-bundle computation.",
+            "source_support": "The graph kernel, tangent calculation, equivalence, symbol, pushforward, covolume, and zero term are derived.",
+            "speculation_status": "Nondegenerate returns and tests avoiding identity are required; adelic application remains formal."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the linear-algebra engine behind zeta rationality.",
+          "line_end": 1516,
+          "line_start": 1481,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Sign conventions and basis displays matter but are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses dual Kunneth bases to expand graph and diagonal classes and proves the Lefschetz trace formula in the axiomatic setting.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The diagonal class converts fixed points into alternating cohomological traces",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u20.txt",
+          "unit_bytes": 2112,
+          "unit_id": "milne2015_rh_finite_fields_v2_u20",
+          "unit_sha256": "70ce3906a2dcba3b57065fc41504e6a7b16a20bd0d9676303730798de41036dd",
+          "unit_type": "trace formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u20.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "In dual Kunneth bases, the diagonal acts as an identity kernel and the graph as an operator kernel, so their intersection becomes the alternating trace of that operator degree by degree.",
+            "nonparaphrase_operation": "It reconstructs the kernel calculation converting a nonlinear fixed-point intersection into ordinary linear traces.",
+            "quality_reason": "Accepted as criticized: graded signs and the intersection-versus-set-count distinction remain explicit.",
+            "source_support": "The source expands graph and diagonal classes using Poincare-dual bases, multiplies them with graded signs, and proves (Gamma_phi·Delta)=sum_r(-1)^r Tr(phi*|H^r).",
+            "speculation_status": "The intersection must be defined, all Weil-cohomology axioms are assumed, and multiplicities are counted rather than merely distinct fixed points."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Passing from elliptic endomorphisms to higher-genus self-correspondences constructs an algebra on which Frobenius can act, but that carrier alone does not force its spectrum onto the required circle. The stable extra input isolated by later proof variants is a positive correspondence defect or, abstractly, a Weil form that makes adjoints positive on algebraic correspondences.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The historical higher-genus obstruction and the later comparison of curve-RH proofs refine the same program: generalize not the full elliptic apparatus, but the minimal positivity interface consumed by the spectral-weight argument.",
+        "limits": "A correspondence ring is not itself a positive-definite norm, and a Weil form is weaker than a complete Hodge-theoretic realization. The units do not construct an analogous positive form for the classical zeta function.",
+        "parent_unit_ids": [
+          "oort_schappacher2016_positive_characteristic_history_v2_u15",
+          "milne2015_rh_finite_fields_v2_u10",
+          "milne2015_rh_finite_fields_v2_u29"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_correspondence_carrier_and_positivity",
+        "title": "Correspondences provide the carrier; a positive adjoint structure supplies the weight bound"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The authors state that the second component of Hasse's program was never supplied, making this a documented obstruction rather than a completed proof route.",
+          "line_end": 1281,
+          "line_start": 1170,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Long quoted prose is clear; the function-field correspondence notation should be source-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines Deuring's higher-genus move from an endomorphism ring to a ring of curve correspondences, algebraizes the construction in function-field language, and explicitly lists differential action and a generalized norm/positivity statement as the two missing components.",
+          "source_id": "oort_schappacher2016_positive_characteristic_history",
+          "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Replace elliptic endomorphisms by self-correspondences, but the norm generalization remains absent",
+          "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history_v2_u15.txt",
+          "unit_bytes": 6992,
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u15",
+          "unit_sha256": "b992ab6511379d02b3841221eacd45b3f5e39b1b3344ea3d3e2bbb2f35baa195",
+          "unit_type": "higher-genus construction and missing step",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history_v2_u15.txt",
+          "source_title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analogue succeeds at constructing the right algebraic carrier but fails at transferring the positivity mechanism that made the elliptic argument work.",
+            "nonparaphrase_operation": "The self-correspondence ring bridges higher-genus curves to the elliptic endomorphism model; action on differentials and a norm/positive-definite form are the missing bridge pieces.",
+            "quality_reason": "The span replaces elliptic endomorphisms by a ring of self-correspondences, algebraizes them via function-field embeddings, quotes the missing differential and norm generalizations, and states that the generalized norm was never supplied. The analysis does not report contemporary confidence as a completed higher-genus proof. Low: the constructed correspondence ring and two named missing components make the failure analysis specific.",
+            "source_support": "The source describes algebraizing correspondences through function-field embeddings, forming their ring as the higher-genus analogue of an endomorphism ring, and quotes Hasse's list of two missing components; it states that the generalized norm step was never supplied.",
+            "speculation_status": "This is a documented obstruction, not a completed higher-genus proof, despite contemporary claims that the foundations were in place. The missing-step evidence is clear in prose; detailed function-field correspondence notation should be checked. Saying the carrier generalized while the decisive positivity/norm mechanism did not is a faithful conceptual account of the documented obstruction. Long prose is clear; exact function-field and extension notation should be source-checked."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_123145797b5f3ea76b71c21d016ee6b58fed2056f4050a635051b9985b847ace",
+            "dossier_sha256": "c21f02f08981e0ee405cd2c55ed7619c7ab1fef9315c88a4307c6c12229d18c8"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exponential-sum paragraph records the major downstream use rather than another proof of the same theorem.",
+          "line_end": 740,
+          "line_start": 670,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only historical and methodological comparison.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares characteristic-zero origins, Riemann-Roch/Hodge simplification, elementary-intersection variants, double-field methods, and the realization of exponential sums as Frobenius traces.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Proof variants expose what geometry is actually required",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u10.txt",
+          "unit_bytes": 4585,
+          "unit_id": "milne2015_rh_finite_fields_v2_u10",
+          "unit_sha256": "66cfb903d637c2022def04826838f4861b1688b8ba689fb70ac51f46eab97a25",
+          "unit_type": "method comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u10.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Different curve-RH proofs audit the infrastructure needed to realize one stable core—positive correspondence defect—while the Artin L-function comparison shows that stronger consequences require cohomological input.",
+            "nonparaphrase_operation": "It extracts common mechanism and differing assumptions from proof variants rather than treating multiple perspectives as stylistic diversity.",
+            "quality_reason": "Accepted as criticized: chronology, external dependencies, and the Artin boundary prevent overgeneralization.",
+            "source_support": "The historical span compares characteristic-zero defect positivity, surface Riemann-Roch/Hodge index, several intersection-theoretic and double-field variants, and notes both Frobenius-trace exponential sums and the insufficiency of positivity for Artin polynomiality.",
+            "speculation_status": "This is a cited historical comparison, not a complete proof of any variant."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Avoids pretending that a real coefficient field or literal unitary Frobenius exists in characteristic p.",
+          "line_end": 2269,
+          "line_start": 2213,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Bilinear-form and adjoint notation is readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines an adjoint-stable positive trace form on one cohomological degree and shows it implies semisimplicity and absolute-value control for algebraic correspondences.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [
+            40
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Weil forms isolate the positivity needed for weights",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u29.txt",
+          "unit_bytes": 3325,
+          "unit_id": "milne2015_rh_finite_fields_v2_u29",
+          "unit_sha256": "6db500d33d14b131767f0834292570c5eafd97c2dac2b1635c2b97a15fc4e023",
+          "unit_type": "abstraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u29.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A Weil form abstracts the positive-adjoint interface needed for spectral weights, requiring compatibility only on algebraic correspondences rather than an unavailable real unitary realization.",
+            "nonparaphrase_operation": "It isolates the minimal positivity data consumed by the Rosati-style argument and shows exactly how it replaces full Hodge-theoretic unitarity.",
+            "quality_reason": "Accepted as criticized: all algebra and adjoint conditions are explicit, and missing conjugation typography is resolved only through the modulus statement.",
+            "source_support": "Assuming algebraic Kunneth projectors, the source defines parity, adjoint closure, and positive trace for a Weil form, then derives semisimplicity and the modulus theorem when alpha alpha'=q.",
+            "speculation_status": "Existence of a Weil form, algebraicity of projectors, and the normalization scalar are hypotheses; examples do not give a general finite-field construction."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The curve zeta generating function compresses extension-field point counts into reciprocal Frobenius roots, and fixed-point traces identify those roots with a linear action on the Jacobian or cohomology. This spectral identification is distinct from purity: positivity supplies the one-sided magnitude control, after which reciprocal pairing from the functional equation upgrades the bound to exact modulus.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The function-field solution decomposes the geometry program into two independently auditable stages—construct the spectrum from counts, then provide a positive structure strong enough to locate it.",
+        "limits": "The functional equation pairs reciprocal roots but does not by itself provide the initial bound. This decomposition is established for finite-field geometry and does not identify a Frobenius or positivity structure for classical L-functions.",
+        "parent_unit_ids": [
+          "milne2015_rh_finite_fields_v2_u01",
+          "openalex_w2121902984_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_frobenius_identification_then_purity",
+        "title": "Point counting identifies the Frobenius spectrum before geometry locates it"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes rationality and the functional equation because the converse point-count argument uses reciprocal roots.",
+          "line_end": 116,
+          "line_start": 36,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent but cleanly extracted; exact Euler factors, inverse-root convention, and point-count identity are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns the function-field zeta function into the curve generating function, factors its numerator, and proves equivalence between root modulus q^(1/2) and square-root cancellation in every extension-field point count.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Curve zeta zeros are Frobenius weights and point-count errors",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u01.txt",
+          "unit_bytes": 4986,
+          "unit_id": "milne2015_rh_finite_fields_v2_u01",
+          "unit_sha256": "a42b44a5c1f04008c6d939c84c7fcf8e1ef9211da3472a61f47a474bb2459e95",
+          "unit_type": "equivalent reformulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u01.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The curve zeta generating function compresses all extension-field point counts into finitely many Frobenius inverse roots; the functional equation then upgrades their one-sided radius bound to exact modulus q^(1/2).",
+            "nonparaphrase_operation": "It connects generating-function compression, spectral parameters, and dual reciprocal-root pairing as the two directions of the equivalence.",
+            "quality_reason": "Accepted as criticized: the roots-versus-inverse-roots convention and finite-field scope are explicit.",
+            "source_support": "The source defines Z(C,T) from counts and closed points, gives its rational form and functional equation, writes N_n=1+q^n-sum a_i^n, and proves equivalence between |a_i|=q^(1/2) and the all-n point-count bound.",
+            "speculation_status": "This is finite-field curve RH, not a proof or direct model of classical RH; every extension degree and the functional equation are essential."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The argument distinguishes rationality and functional equation from the additional purity theorem.",
+          "line_end": 733,
+          "line_start": 663,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several displayed rational functions are unreadable without the scan; prose gives the representation chain.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites curve point counts as a rational zeta function, identifies zeros with inverse Frobenius eigenvalues on cohomological data, and locates positivity in the endomorphism/cohomology structure as the step forcing the correct absolute values.",
+          "source_id": "openalex_w2121902984",
+          "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Frobenius turns point counts into a spectrum whose purity is the function-field RH",
+          "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u08.txt",
+          "unit_bytes": 3371,
+          "unit_id": "openalex_w2121902984_v2_u08",
+          "unit_sha256": "90b9710112fd26f9d3ee35cc50e03186bac09b8e4599a7ef3ef5266f52749ff4",
+          "unit_type": "function-field spectral proof pattern",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u08.txt",
+          "source_title": "Perspectives on the Analytic Theory of L-Functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Frobenius converts point counting into a linear spectral problem: fixed-point counts become traces, and zeros of the zeta numerator become inverses of eigenvalues on the Jacobian or cohomology. This representation identifies the eigenvalues but does not force their magnitude; purity requires additional structure, represented here by positivity of the Rosati involution.",
+            "nonparaphrase_operation": "Distinguishes spectral identification from the extra theorem that locates the spectrum.",
+            "quality_reason": "Accepted because the representation chain is prose-secure; unreadable rational-function displays are not repaired.",
+            "source_support": "The source gives Euler-product and point-count forms, rationality and functional symmetry, realizes counts as Frobenius fixed points, identifies inverse zeros with Frobenius eigenvalues, and separately names positivity in Weil's magnitude proof and Grothendieck's cohomological generalization.",
+            "speculation_status": "No speculation; the span is an overview rather than a reconstructible proof."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_4a61d432499971db449779fcfbdff974b49422c6860312b5733955a01b94c01d",
+            "dossier_sha256": "df722810213557f06450812923c3ece8fef7191a97d49afe28f467ee73a4c76d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The abstract two-sided architecture of an L-function separates prime-local Euler factors from global completed reflection symmetry. For modular forms, a simultaneous Hecke eigenbasis supplies multiplicative coefficients and hence Euler factors, while modular transformation followed by Mellin completion supplies the functional equation; the two analytic constraints arise from different compatible geometric symmetries.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "This gives a concrete reason to study zeta inside broader automorphic families: geometry and commuting correspondences can explain why both halves of the L-function package coexist, rather than treating the axioms as unrelated analytic coincidences.",
+        "limits": "The mechanism applies to modular or automorphic constructions already equipped with Hecke action. Establishing modularity, identifying an appropriate spectral source, and extending the explanation to arbitrary Selberg-class objects remain separate burdens.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u01",
+          "b25_bombieri2000_u04",
+          "perezmarco2017_rh_notes_v2_u26"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_hecke_realizes_two_sided_architecture",
+        "title": "Hecke diagonalization geometrically realizes the Euler-product and functional-equation package"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank examples so the template is relational rather than a single definition.",
+          "line_end": 218,
+          "line_start": 121,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some constants and gamma arguments are OCR-degraded; exact formulas require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places several L-function families into a common representation: gamma-completed reflection symmetry paired with local prime factors.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional equations and Euler products as the two-sided architecture of L-functions",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u01.txt",
+          "unit_bytes": 5234,
+          "unit_id": "aim2004_resource_v2u01",
+          "unit_sha256": "0f06827f3b85a015d48aadf2d698292df8388aea1c4b10f6ef60f97b91bcacd0",
+          "unit_type": "structural-template",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u01.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The common architecture separates global analytic symmetry from multiplicative local data, allowing very different arithmetic constructions to be compared through the same two constraints.",
+            "nonparaphrase_operation": "Gamma completion bridges the original Dirichlet series to reflection across the critical line, while local Euler factors bridge coefficients to prime-power data.",
+            "quality_reason": "The span explicitly juxtaposes completed functional equations and Euler products for zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank L-functions. The output correctly keeps exact constants and gamma/local-factor formulas behind a scan-verification warning. No material imported theorem or conclusion is presented as source fact. The two-sided-architecture language is interpretive rather than a bare restatement and remains tied to the two concrete structures.",
+            "source_support": "The span lists completed functional equations and Euler products for zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank L-functions.",
+            "speculation_status": "Having both structures defines a strong family resemblance but does not establish analytic continuation, RH, or a classification of all L-functions. Several constants, gamma arguments, and local-factor formulas are OCR-degraded and require the scan for exact use. Reading completion as global analytic symmetry and Euler factors as local prime data is a reasonable synthesis of the examples. Several displayed completions and local factors are visibly degraded, so only the prose-level comparison is secure."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the significance unit because the generalization is both a consequence and a methodological obstruction.",
+          "line_end": 257,
+          "line_start": 197,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to medium; mostly prose with one Hecke-series definition.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates arithmetic, automorphic, and Maass L-functions, emphasizes that even analytic continuation may encode deep modularity, and argues that no known RH instance makes classical zeta evidently easier.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeta is a prototype, and solving it may require the general L-function problem",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u04.txt",
+          "unit_bytes": 4562,
+          "unit_id": "b25_bombieri2000_u04",
+          "unit_sha256": "2868d4a36af596c44cfaf00d5b4253ce29cbf0fbac96942125f64888b00e94d2",
+          "unit_type": "scope and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u04.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Generalization is not only enlargement of scope; it can expose the missing invariant. The analytic package shared by L-functions may be easier to understand through its sources—geometry, automorphy, Hecke action—even though proving membership in that package is itself difficult.",
+            "nonparaphrase_operation": "Modular parametrization bridges elliptic curves to functional equations, while simultaneous Laplacian and Hecke eigenfunctions bridge Maass waveforms to Euler products. These bridges preserve arithmetic structure but relocate the burden to modularity or spectral theory.",
+            "quality_reason": "The span distinguishes arithmetic or geometric global L-functions from Maass-form L-functions, connects elliptic-curve functional equations to modularity, and defines Maass L-functions through simultaneous Laplacian and Hecke eigenfunctions. It explicitly says zeta does not appear easier than Dirichlet L-functions and may require more general problems and new ideas. The phrase 'missing invariant' is interpretive, but the output supplies the concrete candidates geometry, automorphy, and Hecke action and preserves the Maass boundary.",
+            "source_support": "The source distinguishes global L-functions attached to arithmetic or automorphic objects from Maass-form L-functions that lack an evident geometric origin. It notes that analytic continuation and functional equations are known only in special cases, illustrates their link to modularity for elliptic curves, and says no L-function RH instance was then known to be proved or disproved.",
+            "speculation_status": "The analogy with geometric L-functions has a sharp boundary at nongeometric Maass forms. The source offers a strategic diagnosis, not a theorem that classical ζ can only be solved through the general theory. The Hecke-series typography is degraded, but the source's scope claim and its warning that entirely new ideas may be needed are clear and historically dated. Treating generalization as a search for shared structure rather than mere scope enlargement is a reasonable strategic inference. The Hecke-series extraction is damaged, and the output correctly avoids formula-level reliance."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the selection mechanism rather than treating every modular form as equally arithmetic.",
+          "line_end": 2336,
+          "line_start": 2235,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Hecke-operator normalization and gamma factors require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Modularity alone does not guarantee the desired arithmetic; simultaneous Hecke diagonalization selects forms whose Fourier coefficients satisfy multiplicative relations, producing Euler products, continuation, and functional equations.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            42
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hecke eigenvectors convert modular symmetry into multiplicative coefficients and Euler factors",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u26.txt",
+          "unit_bytes": 5313,
+          "unit_id": "perezmarco2017_rh_notes_v2_u26",
+          "unit_sha256": "9351fd5b322582544082a9cdb962c3f1672d4bd034b0b16afabe27fc52bb4283",
+          "unit_type": "spectral-selection-to-euler-product",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u26.txt",
+          "source_title": "Notes on the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Hecke diagonalization is a perspective-selection mechanism: it chooses a basis compatible with all multiplicative correspondences. In that basis, symmetry in the geometric domain becomes arithmetic factorization in the coefficient domain.",
+            "nonparaphrase_operation": "Hecke operators bridge modular transformations and coefficient multiplicativity; normalized eigenforms bridge q-series to Euler products; the Mellin-type completion bridges modularity to the functional equation.",
+            "quality_reason": "The modular/cusp definitions, q-expansion, Hecke selection, coefficient multiplicativity, Euler product, continuation and functional equation are explicit. The response correctly denies a single Euler product for a general modular form and preserves level/weight conditions. The selection claim is tied to the exact eigenbasis and multiplicative relations.",
+            "source_support": "The unit defines modular and cusp forms, their Fourier expansions, and finite-dimensional spaces for level one. A cusp form gives a Dirichlet series, but desired arithmetic properties require restriction to common eigenvectors of commuting Hecke operators. For a normalized Hecke form, eigenvalues equal Fourier coefficients and satisfy divisor-sum multiplicativity, yielding quadratic local Euler factors. The associated L-function has continuation, is entire in the cuspidal case, and satisfies a gamma-completed functional equation.",
+            "speculation_status": "A general modular form need not have a single Euler product; simultaneous eigenform status is essential. Exact level, weight, normalization, and gamma factors constrain the displayed formula and should not be generalized silently. Hecke-operator normalization and the completion are scan-sensitive, while the selection mechanism is clear. Calling simultaneous Hecke diagonalization a perspective-selection mechanism is a precise conceptual reading. Hecke and completion normalizations are formula-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+            "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Taking logarithms of a Rankin–Selberg Euler product turns local parameter power sums into nonnegative quadratic coefficient data. That positivity blocks cancellation at the absolute-convergence boundary, allowing Landau's theorem to transfer a global analytic boundary into uniform one-sided bounds on local Euler-factor roots.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The two units fit as input and consumer: Rankin–Selberg structure supplies the nonnegative coefficients, and the Landau argument explains how that positivity converts global analytic information back into local spectral control.",
+        "limits": "The argument depends on the relevant Rankin–Selberg continuation, coefficient positivity, and local algebraic constraints; the cited low-degree setting does not give a universal result. A one-sided local bound is not purity and does not imply RH.",
+        "parent_unit_ids": [
+          "milne2015_rh_finite_fields_v2_u39",
+          "openalex_w2068184834_v2_u19"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_rankin_selberg_positivity_to_local_bounds",
+        "title": "Rankin–Selberg squaring manufactures the positivity Landau needs to bound local spectra"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the basic analytic extraction step used after tensoring.",
+          "line_end": 2840,
+          "line_start": 2825,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Euler product and convergence half-plane are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that a nonnegative Dirichlet series must be singular at its abscissa of absolute convergence and derives a uniform bound on every local factor.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Landau positivity bounds Euler-factor roots",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u39.txt",
+          "unit_bytes": 883,
+          "unit_id": "milne2015_rh_finite_fields_v2_u39",
+          "unit_sha256": "1d83c23cdd7505e92fafab1c8a8e42a5eb128b06a7cca763d78892449c23293a",
+          "unit_type": "analytic lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u39.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Nonnegative Dirichlet coefficients prevent cancellation at the absolute-convergence boundary, allowing a global singularity location to impose one-sided bounds on every local Euler-factor root.",
+            "nonparaphrase_operation": "It explains the direction of information flow from global analytic boundary through coefficient positivity back to local spectra.",
+            "quality_reason": "Accepted as criticized: the theorem is stated rather than proved but all conditions and the precise consequence are clear.",
+            "source_support": "The source states Landau's theorem and its consequence |a_{p,j}|<=p^sigma_0 for an Euler product whose nonnegative Dirichlet series converges absolutely to the right of sigma_0.",
+            "speculation_status": "The hypotheses are essential, and the result yields only an upper bound, not exact modulus or a lower bound."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records the analogous spherical archimedean improvement obtained by a different method.",
+          "line_end": 2883,
+          "line_start": 2823,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents are OCR-fragile and should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Landau's coefficient estimate, applied to the globally continued nonnegative Rankin-Selberg series, bounds powers of unramified parameters and, through the ramified coefficient inequality, yields the same improvement at every finite place.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            55
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nonnegative Rankin-Selberg coefficients turn Landau's theorem into uniform local bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u19.txt",
+          "unit_bytes": 2838,
+          "unit_id": "openalex_w2068184834_v2_u19",
+          "unit_sha256": "b6b246416b02f85e801b597ba711ffca1688286ad1c29af64654e7655839f759",
+          "unit_type": "landau-global-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u19.txt",
+          "source_title": "Zeros of principal L-functions and random matrix theory",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logarithm linearizes the Euler product into positive quadratic forms, making coefficient positivity structural rather than accidental. That positivity is the prerequisite for later global Tauberian/Landau arguments, not the argument's conclusion here.",
+            "nonparaphrase_operation": "Twist-class power sums bridge local Langlands parameters to nonnegative Dirichlet coefficients and a usable coefficient lower bound. The archimedean Langlands quotient begins a separate bridge to gamma-factor pole locations.",
+            "quality_reason": "The artifact logarithmically expands a twist-class Euler factor into sums of squared power sums, retains the nu=1 term for Lemma 5.1's lower bound, and concludes that the global Rankin-Selberg Dirichlet coefficients are nonnegative. It then only opens the archimedean classification and gives the first gamma-factor definitions; it contains no Landau estimate or completed global-local bound.",
+            "source_support": "For a twist class F_l, log L_{F_l}(s) has coefficients lambda_l(e)/e, and lambda_l(e) is a sum over nu of squared sums of powers of the class parameters. Keeping the nu=1 term gives Lemma 5.1's lower bound for b_l(p^e) when r_l divides e. Exponentiating shows the global Rankin-Selberg Dirichlet coefficients b(n) are nonnegative. Section 5.3 then states that every irreducible unitary GL_m(R) representation is a Langlands quotient of square-integrable factors and begins listing the GL_1(R) gamma factors.",
+            "speculation_status": "No application of Landau's theorem, no uniform finite-place improvement, and no completed archimedean pole argument appear in this exact artifact. Those claims cannot be reconstructed from the assignment title alone. There is a material metadata/artifact mismatch: the assigned unit is labeled a Landau global bound, whereas the hashed text contains Lemma 5.1 and only the opening of archimedean factors. Exact coefficient exponents are OCR-fragile. Saying logarithms linearize positivity and exponentiation preserves nonnegative coefficients is a faithful account of the proof. The output correctly treats positivity as a prerequisite for later global arguments, not their conclusion. There is a material assignment-metadata/artifact mismatch, and exact prime-power exponents are OCR-fragile."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+            "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Distributional explicit formulas turn the prime–zero identity into test-function functionals on which RH can be expressed as a uniform sign condition. In the finite-field model, an algebraic index theorem forces the corresponding negative-semidefinite sign on degree-zero divisor intersections, showing concretely how geometry can enforce a zero-location criterion globally rather than zero by zero.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The relation sharpens the classical geometry program from seeking a merely spectral representation to seeking an intersection or positivity structure whose sign matches the explicit-formula quadratic functional.",
+        "limits": "The accepted units do not identify the classical explicit-formula functional with a divisor intersection pairing, and sign conventions and admissible test-function constraints matter. Finite-field negativity is a model of the burden, not a transfer theorem.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u07",
+          "perezmarco2017_rh_notes_v2_u13"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_explicit_formula_index_sign",
+        "title": "The explicit-formula sign target has a geometric model in intersection theory"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source emphasizes that a suitable algebraic proof in broader settings is missing.",
+          "line_end": 495,
+          "line_start": 468,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; test-function constraints and the sign convention are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recasts RH as a sign condition for convolution-type test functions and explains why the finite-field case follows from the negative-semidefinite intersection form supplied by an algebraic index theorem.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH becomes negativity of an explicit-formula quadratic form",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u07.txt",
+          "unit_bytes": 1743,
+          "unit_id": "b25_bombieri2000_u07",
+          "unit_sha256": "16abd3bf16215187a027a512dc0555e4a60bc0699e3e898ab1615ff26da7366b",
+          "unit_type": "equivalent positivity criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u07.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the visible boundary, RH is recast as a uniform negativity requirement over a restricted family built from g, rather than as separate assertions about individual zeros. The finite-field case supplies a comparison mechanism: an algebraic index theorem forces negative semidefiniteness of the self-intersection form on degree-zero divisors. This gains a structural sign target and shows how geometry can force the analogous sign, but it does not identify the missing classical right-hand side or establish a transfer from divisor intersections to the classical problem. The remaining burden is to recover the omitted quadratic expression from a wider span and prove its negativity for every admissible function, with the two vanishing-integral constraints, the function class W, and the sign convention intact.",
+            "nonparaphrase_operation": "Abstracts only the source-visible common proof obligation—a sign condition—and compares an asserted classical uniform-negativity criterion with a geometrically forced finite-field sign, while auditing which part of the classical representation is absent.",
+            "quality_reason": "Accepted as a bounded structural interpretation because the test-function restrictions, equivalence claim, and finite-field intersection-form mechanism are explicit. Its use is deliberately limited: the unit begins mid-reference and cannot support an exact reconstruction of the classical right-hand side.",
+            "source_support": "The span claims equivalence between RH and negativity of an already-referenced right-hand side for all displayed convolution-type f built from g∈W satisfying ∫g(x)dx/x=0 and ∫g(x)dx=0. It then states that, for curves over finite fields, the analogous negativity follows from the algebraic index theorem, whose visible statement makes divisor self-intersection negative semidefinite on degree-zero divisors.",
+            "speculation_status": "The identification of the omitted right-hand side with a prime-side explicit formula is withheld. The displayed product/convolution may have extraction damage, and any exact classical quadratic criterion or geometric transfer claim requires a wider source span or scan check."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Groups related interpretations without asserting that any proposed trace formula has been proved for zeta.",
+          "line_end": 1238,
+          "line_start": 1116,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Delsarte distribution is formula-heavy and should be scan-verified before symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contour integration and test functions produce a distributional prime-zero identity; Weil positivity, Selberg trace analogies, and Connes's proposal show how the same bridge can be recast as spectral or positivity structure.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Distributional explicit formulas turn prime-zero duality into trace and positivity criteria",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "unit_bytes": 6669,
+          "unit_id": "perezmarco2017_rh_notes_v2_u13",
+          "unit_sha256": "7e1bae22929ba0b7f12af5bab6a3f3191fac314ed8db5f72ca4921635d96585e",
+          "unit_type": "explicit-formula-and-positivity-framework",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u13.txt",
+          "source_title": "Notes on the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The test function is a perspective selector: the same prime-zero distributional identity yields different observables when probed differently. Prime-power resonance shows the duality has exact arithmetic frequencies, not just a loose spectral metaphor.",
+            "nonparaphrase_operation": "The distributional explicit formula is the central bridge; zeta'/zeta supplies its contour integrand, Fourier transform couples prime logarithms to zero ordinates, and positivity is a proposed criterion on the resulting functional.",
+            "quality_reason": "The Riemann and Landau formulas, contour architecture, Delsarte distribution, Weil positivity criterion and trace/spectral proposals are all reported in the span. The response does not claim a zeta operator or proved Connes trace formula and preserves the test-class qualification for positivity. Prime-power resonance and the named distribution keep the duality analysis mathematically specific.",
+            "source_support": "The unit gives a Riemann explicit formula for sum_{n<=x}Lambda(n), Landau's resonance distinction when x is or is not a prime power, and Cramer's continued zero exponential sum. It explains the standard rectangular-contour computation of zeta'/zeta using residues at zeros, the functional equation, and the Euler product. Delsarte's distributional formula expresses zero masses as Fourier-transformed prime-power masses plus an archimedean distribution. It reports Weil's RH positivity criterion and analogies or proposals involving Selberg, trace formulas, de Branges, and Connes.",
+            "speculation_status": "Trace-formula interpretations do not establish a zeta operator, and Connes's reduction is reported as a proposal rather than a proved trace identity here. Positivity equivalence depends on a suitable test-function class. The Delsarte formula is dense and formula-sensitive. Historical interpretations are clear, but exact distribution normalizations require the scan. Calling test functions perspective selectors is a reasonable interpretation of a distributional formula generating multiple identities. The Delsarte formula is formula-heavy and exact normalization requires the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+            "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Zero statistics and the explicit formula support a spectral reading of L-function zeros, but they supply only an encoding target. A credible Hilbert–Pólya or geometric model must be constructed without defining its space from the zeros and must add self-adjointness, positivity, or an index-type mechanism that actually forces zero location.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "Random-matrix evidence, noncommutative trace proposals, and the function-field analogy jointly turn the spectral program into a falsifiable dependency map: natural construction first, trace compatibility second, and a location-forcing structure last.",
+        "limits": "GUE spacing, a trace-like prime–zero formula, or successful reproduction of zero counts does not establish the required operator or its self-adjointness. The units present diagnostics and research obligations, not a classical cohomology theory.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u08",
+          "connes1999_trace_formula_v2_u01",
+          "openalex_w2121902984_v2_u19"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_spectral_model_location_test",
+        "title": "A spectral encoding must be independent and location-forcing, not merely statistically accurate"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposed structures are open questions, not asserted objects.",
+          "line_end": 530,
+          "line_start": 496,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; the argument is conceptual prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects universal zero spacings and Hilbert-Polya to the unconditional finite-field theory, then isolates the absent global structures and warns that nongeometric Maass L-functions may require new ideas beyond geometric analogy.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Random-matrix spectra point toward a missing classical cohomology, Frobenius, and index theorem",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u08.txt",
+          "unit_bytes": 2316,
+          "unit_id": "b25_bombieri2000_u08",
+          "unit_sha256": "6031caeb95cd7257330c28d2adc7322fad342e36c66f4f417b9d35856544ccbd",
+          "unit_type": "research obstruction and bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u08.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analogy is useful when it predicts structural obligations rather than merely matching distributions. It suggests that self-adjointness or geometric negativity could explain zero location, while the nongeometric cases indicate that the sought structure may need a broader form.",
+            "nonparaphrase_operation": "Spacing correlations bridge L-function zeros to random-matrix eigenvalues; finite-field cohomology and Frobenius provide a working model for how spectral data can arise from geometry.",
+            "quality_reason": "The source connects zero-spacing correlations to orthogonal, unitary, and symplectic random-matrix limits, mentions Hilbert-Polya, contrasts the unconditional finite-field theory, and explicitly asks for cohomology, Frobenius, and index-theorem analogues. The output correctly marks these global structures as questions and Maass L-functions as a boundary of a purely geometric analogy.",
+            "source_support": "Bombieri connects zero-spacing work with orthogonal, unitary, and symplectic random-matrix limits and with the Hilbert–Pólya proposal of a self-adjoint operator. He contrasts this heuristic with Katz–Sarnak's unconditional finite-field theory and asks for classical analogues of cohomology, Frobenius, and an index theorem.",
+            "speculation_status": "Matching local statistics does not construct an operator or prove RH. The proposed global structures are explicitly questions, and Maass L-functions mark a concrete limit of a purely geometric transfer. This unit is deliberately speculative; only the cited correlations and finite-field comparison are presented as established background. Saying a useful analogy supplies structural obligations rather than merely a distributional match is a reasonable conceptual interpretation. The source itself labels the global discussion conjectural and speculative; the output preserves that epistemic status."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The statistical evidence motivates but does not prove a spectral realization; the source explicitly seeks a construction preceding zeta's analytic continuation.",
+          "line_end": 195,
+          "line_start": 118,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is coherent; the zero-count and pair-correlation displays should be scan-checked for exact constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates average zero density from oscillatory statistics, uses GUE-type spacing as evidence for a spectral model, and imposes a naturality test that rules out constructing the space directly from the zeros.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A natural Hilbert-Polya object must explain zero statistics without encoding the zeros",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u01.txt",
+          "unit_bytes": 3857,
+          "unit_id": "connes1999_trace_formula_v2_u01",
+          "unit_sha256": "4914bca57073f4daa52f36a3ce066577bfc0239ba4877f883ed9fe5ee4255b76",
+          "unit_type": "spectral motivation and diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u01.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: the zero count splits into a controlled average and an oscillatory part; unfolding removes changing density, after which GUE-type spacing evidence motivates a Hilbert–Pólya pair. Conceptual reading: a spectral model must explain residual statistics without defining its space from the zeros.",
+            "nonparaphrase_operation": "Separates background scale from fluctuations and uses answer-encoding as a falsifier.",
+            "quality_reason": "Accepted because it preserves the mechanism and source-explicit boundary.",
+            "source_support": "The span gives the count decomposition, unfolding, GUE evidence, and the naturality requirement.",
+            "speculation_status": "The realization is motivation only; agreement neither constructs an operator nor proves RH. Constants are scan-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final scenarios are explicitly speculative and must not be treated as established routes to GRH.",
+          "line_end": 1635,
+          "line_start": 1591,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant and reliable despite scattered OCR artifacts.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates candidate spectral interpretations to the explicit formula joining zeros and primes, notes that such interpretations have not yet controlled the zeros, and proposes family averages plus positivity as either a pre-spectral shortcut or the analysis layer of a future spectrum.",
+          "source_id": "openalex_w2121902984",
+          "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+          "source_page_markers_inside_unit": [
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The explicit formula supplies a trace-like bridge, but families and positivity remain the effective engine",
+          "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u19.txt",
+          "unit_bytes": 2916,
+          "unit_id": "openalex_w2121902984_v2_u19",
+          "unit_sha256": "58e5a42fb4826c5ef1364ca4ba85f95d21a4fed61959b67d1e5735c024ad22bc",
+          "unit_type": "attack-route comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u19.txt",
+          "source_title": "Perspectives on the Analytic Theory of L-Functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The explicit formula is a genuine prime–zero bridge and candidate spectral actions offer suggestive re-encodings, but a representation is not useful merely because it is spectral. The missing burden is a mechanism that forces zero location; the source says current family averages and positivity are operationally successful while proposed routes from them or a future spectrum to GRH remain speculative.",
+            "nonparaphrase_operation": "Tests a representation by what it enables and separates trace-like encoding from location-forcing structure.",
+            "quality_reason": "Accepted because proven utility, limitation, assumption, and speculation are sharply separated.",
+            "source_support": "The span discusses Connes's regularized idele-class action under an RH assumption, relates it to the explicit formula, lists actual uses in zero statistics and density theorems, says existing interpretations have not advanced location control, and labels the closing scenarios wild speculation.",
+            "speculation_status": "The final attack scenarios are explicitly speculative, and the described Connes interpretation assumes RH."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_4a61d432499971db449779fcfbdff974b49422c6860312b5733955a01b94c01d",
+            "dossier_sha256": "df722810213557f06450812923c3ece8fef7191a97d49afe28f467ee73a4c76d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Petersson and general automorphic trace formulas turn averages of Hecke or Satake data into a dominant diagonal or identity-orbit contribution plus controlled geometric off-diagonal terms. The same mechanism also fixes a measure on the family: harmonic weights and nonidentity orbits are not neutral bookkeeping and can alter the low-zero statistic being estimated.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The resonance use of Petersson orthogonality and the Plancherel-limit program are two scales of one geometry-to-statistics pipeline; the later weighting confound specifies when its output can or cannot be read as the unweighted family's symmetry type.",
+        "limits": "Petersson kernels and general orbital trace formulas have different hypotheses and geometric terms. An approximate diagonal can prove averaged moment statements without locating individual zeros, and weighted density need not equal counting-family density.",
+        "parent_unit_ids": [
+          "openalex_w1964482233_v2_u15",
+          "sarnak_shin_templier2014_lfunction_symmetry_v2_u12",
+          "sarnak_shin_templier2014_lfunction_symmetry_v2_u17"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_trace_formula_family_measure",
+        "title": "Trace formulas diagonalize families, but their geometric side and weights define the estimand"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The admissible resonator length is tied to the weight k and the stated Bessel range.",
+          "line_end": 932,
+          "line_start": 865,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; harmonic normalization, trace formula, Bessel estimate, and length bound need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Harmonic weights normalize the family, a Bessel bound makes the Kloosterman off-diagonal exponentially small for a short resonator, and the weighted resonator square collapses to coefficient energy just as in the zeta case.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Petersson's trace formula replaces time and character orthogonality for cusp forms",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_v2_u15.txt",
+          "unit_bytes": 3217,
+          "unit_id": "openalex_w1964482233_v2_u15",
+          "unit_sha256": "baca7c9f5912cb825f1842f7aaa87a8be8774790e19c997d13e3e703420763d9",
+          "unit_type": "spectral-family orthogonality",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_v2_u15.txt",
+          "source_title": "Extreme values of zeta and L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The role played earlier by integration in t or averaging characters is now played by a trace formula; each ambient family has its own mechanism for producing an approximate diagonal.",
+            "nonparaphrase_operation": "Harmonic weighting normalizes the spectral family, while the Petersson kernel bridges Hecke coefficients to delta_{m,n} plus a controlled geometric off-diagonal.",
+            "quality_reason": "The source defines harmonic weights, states Petersson's formula, bounds the Bessel term in the short-index range, and derives the diagonal coefficient-energy identity for the resonator.",
+            "source_support": "The source introduces harmonic weights omega(f), states Petersson's formula for averaged products lambda_f(m)lambda_f(n), and bounds J_{k-1} in the relevant range. For N<=k/(40pi), averaging R(f)^2/omega(f) gives sum r(n)^2 up to an exponentially small error.",
+            "speculation_status": "The diagonalization depends on the Bessel small-argument range and hence on resonator length relative to k; it is not uniform for arbitrary indices. The normalization, trace formula, Bessel estimate, and numerical length bounds are formula-sensitive. Identifying Petersson as the family-specific approximate-orthogonality mechanism is well supported. Normalization, Bessel range and length constants require formula verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0d3fefb1c8cec308fe95c41177fe65aa5030f836b57f51d4e8118efcf3e65531",
+            "dossier_sha256": "b4daa9702d13050a27641a69d454c48ecdbf54cdff81e5254c63313752db1bf1"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes weight and level aspects and the continuous-spectrum obstruction for higher-rank Maass forms.",
+          "line_end": 963,
+          "line_start": 881,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The asymptotic error and test-function normalization are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Quantitative trace-formula equidistribution identifies each local family measure as a functorial pushforward of Plancherel measure; uniform control of nonidentity orbital integrals is exactly what makes the prime and family parameters usable together.",
+          "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+          "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+          "source_page_markers_inside_unit": [
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The identity orbital term creates Plancherel mass and all other orbits control the error",
+          "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u12.txt",
+          "unit_bytes": 5475,
+          "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u12",
+          "unit_sha256": "f7ae0446717ac75241a7485057e1d137e967e5f3a7249c43a20e8b1f6538005c",
+          "unit_type": "trace-formula-equidistribution-mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u12.txt",
+          "source_title": "Families of L-Functions and their Symmetry",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The trace formula is a decomposition of signal and error: identity geometry becomes statistical law, and control of other conjugacy classes determines how far the law can be transferred into simultaneous prime averages.",
+            "nonparaphrase_operation": "The functorial pushforward of unramified Plancherel measure is the bridge from spectral counting on H to Satake statistics on GLn.",
+            "quality_reason": "The quantitative Plancherel formula, identity main term, nonidentity orbital error, uniformity in p and x, functorial pushforward, and higher-rank Maass obstruction are explicit. Use in zero statistics is downstream, but the source and assignment explicitly motivate prime-uniform quantitative equidistribution for that purpose. Signal/error language is anchored to exact orbital terms and a uniform error formula, so it is not content-free.",
+            "source_support": "For cohomological harmonic families, the trace formula gives Σ_{σ∈H(x)}φ(σp)=|H(x)|∫φdµp^pl+O(|H(x)|^{1−δ}p^A), uniformly in p and x. Pushing µp^pl through the L-map r gives the local family measure and finitely supported test functions give the global product structure. Higher-rank Maass families face additional continuous-spectrum difficulties.",
+            "speculation_status": "The stated machinery is strongest for regular cohomological/discrete-series settings; Eisenstein and residual spectra obstruct a comparable general Maass result. The main asymptotic and its role are clear; exact error exponents and normalizations are formula-sensitive. Interpreting identity geometry as signal and other conjugacy classes as the error burden is directly tied to the trace-formula decomposition. The test-function normalization, delta and A exponents, and precise family ranges require formula care."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c1866b2481e185f45222f01a6483d87ddf4b67743ab5b36886d36f29677f9dd1",
+            "dossier_sha256": "870199b079bcacbf6f8ac7c102659f52ff29fd4e162ee692713ffa4f75ccb19e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the negligible Saito-Kurokawa exceptional subset and parity-dependent root sign.",
+          "line_end": 1279,
+          "line_start": 1244,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High dependence on spin-representation notation; the confound is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The spin family of Siegel forms has a representation-theoretically fixed symplectic type, but central-value weights introduced by the available Petersson formula carry enough fluctuation to alter the observed density, isolating weighting as an evaluation confound.",
+          "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+          "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Natural trace-formula weights can manufacture a misleading symmetry type",
+          "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u17.txt",
+          "unit_bytes": 2257,
+          "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u17",
+          "unit_sha256": "376897a8b4ebc36deddf0c8f760d783e79c6b14a9fcb0c3ef162143041583500",
+          "unit_type": "weighting-confound-example",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u17.txt",
+          "source_title": "Families of L-Functions and their Symmetry",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Petersson trace formula naturally accesses a weighted family measure, not the desired unweighted counting measure. In this spin family the representation-theoretic data fix essential symplectic type, yet the available weighted low-zero statistic appears inconsistent with the unweighted prediction. Thus weighting is a live confound: if the conjecturally identified central-value weight fluctuates with the zeros, changing measure can change the observed density without changing the underlying spin representation. The trace formula gains analytic access but loses direct identification of the unweighted estimand; removing the weights is the unresolved test.",
+            "nonparaphrase_operation": "Treat weighted and unweighted averaging as different probability measures and use that distinction to diagnose why a trace-formula output cannot by itself identify the counting-family symmetry type.",
+            "quality_reason": "Accepted after qualifying both the central-value description and the causal-confound claim; the revision keeps the concrete estimand mismatch while refusing to turn the source's expectation into an unweighted theorem.",
+            "source_support": "The span identifies the limiting measure with the spin image of Spin(5)≅Sp(4), gives i1=i2=1 and i3=−1, makes Saito–Kurokawa lifts asymptotically negligible, and gives root number (−1)^k. It then says the restricted-support calculation carries Petersson weights, reports an apparent mismatch, relates the weight to a central L-value through a conjectured formula, and expects the mismatch to disappear after unweighting.",
+            "speculation_status": "The family invariants, negligible exceptional subset, and presence of weights are source-stated. The central-value identification is conjectural, the causal account of the altered density is only apparent, and restoration after removing weights is expected rather than proved."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c1866b2481e185f45222f01a6483d87ddf4b67743ab5b36886d36f29677f9dd1",
+            "dossier_sha256": "870199b079bcacbf6f8ac7c102659f52ff29fd4e162ee692713ffa4f75ccb19e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "For zeta, gamma completion, pole clearing, and recentering turn reflection across the critical line into reality of zeros of an entire even function. For a nonreal Dirichlet character, multiplying the completed L-function by its conjugate partner internalizes the dual functional equation in one self-symmetric object while preserving the union of the two original zero divisors.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The Dirichlet construction is a structural generalization of the xi viewpoint: self-duality can be achieved at the paired-object level when it is absent from either individual L-function.",
+        "limits": "Pairing enlarges the object and forgets which factor supplied a zero; it does not create positivity, prove GRH, or turn the individual character L-function into a self-dual function.",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u01",
+          "perezmarco2017_rh_notes_v2_u20"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_completion_and_conjugate_pairing",
+        "title": "Conjugate pairing extends self-dual completion without changing the zero union"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the source's formal problem statement.",
+          "line_end": 46,
+          "line_start": 8,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; gamma factors and the s equals one-half plus it change of variables require exact formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Builds RH from the series, analytic continuation, functional equation, completed even entire function, and separation of trivial from nontrivial zeros.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completed zeta turns RH into reality of all xi zeros",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u01.txt",
+          "unit_bytes": 2635,
+          "unit_id": "b25_bombieri2000_u01",
+          "unit_sha256": "83794fecd0a008702f669e19f2ff00c82dfd22d807cd1fa2630852bbce0014dc",
+          "unit_type": "canonical formulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u01.txt",
+          "source_title": "Problems of the Millennium: The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion packages analytic continuation, the pole, gamma symmetry, and the reflection s↦1−s into one entire even object. Recentring at the fixed line of the reflection turns a two-dimensional zero-location problem into a real-rootedness problem.",
+            "nonparaphrase_operation": "The bridge is the completed function ξ together with s=1/2+it: multiplication changes the analytic object while retaining the nontrivial-zero question, and the affine change sends the critical line to the real t-axis.",
+            "quality_reason": "The span explicitly gives the Dirichlet domain, meromorphic continuation, pole at one, functional equation, completed xi definition, even-entire property, and both stated forms of RH. The output correctly preserves the distinction between trivial zeta zeros and the nontrivial zeros represented through xi. The language of a 'two-dimensional zero-location problem' is interpretive but has concrete content because the affine substitution is stated.",
+            "source_support": "For Re(s)>1 the zeta function is given by its absolutely convergent Dirichlet series; it continues meromorphically with a simple pole at 1 and satisfies the displayed functional equation. Bombieri defines ξ(t) from s(s−1)π^(−s/2)Γ(s/2)ζ(s), with s=1/2+it, and states RH equivalently as reality of all ξ-zeros or real part 1/2 for every nontrivial ζ-zero.",
+            "speculation_status": "Evenness and entire continuation alone do not imply real-rootedness. The equivalence also depends on the exact completion and on separating the trivial zeros and the pole from the nontrivial zeros. The extracted fractions and gamma arguments are visually degraded, so exact formula reuse should be checked against the source image; the qualitative equivalences are explicit in the span. Describing completion as packaging the pole, gamma factor, and reflection, and recentering as converting a vertical-line condition into real-rootedness, is a faithful conceptual inference from the displayed formulas. The extracted one-half glyphs and displayed gamma factors are degraded; the output appropriately requires scan checking before exact formula reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+            "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Shows how to distinguish self-duality from the more general family-level GRH statement.",
+          "line_end": 1900,
+          "line_start": 1840,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact conductor and root-number normalization should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Character multiplicativity creates the Euler product, gamma and root-number data give a conjugate functional equation, and multiplying conjugate partners restores the self-symmetry needed for the same critical-line formulation.",
+          "source_id": "perezmarco2017_rh_notes",
+          "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pairing conjugate Dirichlet L-functions restores a self-functional equation without changing their zero union",
+          "unit_artifact_relpath": "depth/units/perezmarco2017_rh_notes_v2_u20.txt",
+          "unit_bytes": 3657,
+          "unit_id": "perezmarco2017_rh_notes_v2_u20",
+          "unit_sha256": "ffeca56668345e7647341cfcd09c2a4d9f74a8281947a6a5c71116211fc48d49",
+          "unit_type": "family-extension-and-symmetry-repair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/perezmarco2017_rh_notes_v2_u20.txt",
+          "source_title": "Notes on the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conjugate pairing is a self-dual completion at the family level: it preserves all zeros of both factors while making the reflection symmetry internal to one object. This shows self-duality is a representation convenience, not a prerequisite for formulating GRH.",
+            "nonparaphrase_operation": "The character bridges residue-class arithmetic to Euler coefficients; the Gauss sum and gamma factor bridge local parity to the functional equation; the product with the conjugate bridges dual L-functions to a self-symmetric divisor.",
+            "quality_reason": "Character multiplicativity, Euler product, parity completion, conjugate functional equation, Gauss-sum root number, nonvanishing at one and conjugate pairing are explicit. The response correctly says self-symmetry does not force line zeros and that the paired product is equivalent to the two factor hypotheses. The family-level repair is tied to the exact divisor union and is not empty analogy.",
+            "source_support": "A Dirichlet character modulo q defines L(s,chi)=sum chi(n)n^{-s}=product_p(1-chi(p)p^{-s})^{-1}; multiplicativity gives the product. Primitive nontrivial characters yield entire L-functions. A gamma completion depending on chi(-1), together with its Gauss-sum root number, relates L(s,chi) to L(1-s,bar chi); real quadratic characters are self-dual. Nonvanishing at one underlies Dirichlet's theorem. For a nonreal character, Z(s,chi)=L(s,chi)L(s,bar chi) has a self-functional equation and the union of both divisors, allowing GRH to be stated for the factors.",
+            "speculation_status": "A self-functional equation still does not force zeros onto its symmetry line. Imprimitive characters require removal of finitely many Euler factors, and union of divisors means the paired product proves no more than the two component hypotheses together. Completion and root-number conventions are formula-sensitive; the duality structure and arithmetic nonvanishing role are clear. Calling conjugate pairing a self-dual representation convenience is a useful and accurate inference. Conductor and root-number normalization require scan checking."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1d2789ec08be333bcdb037dff6e3061d99bae8e591ec425750538a92f7fa9fa1",
+            "dossier_sha256": "78f068d380efaf66ebbebfc9cc212c5e46a033869ef57e88397fb0d551ab1c86"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "An approximate functional equation uses reflection symmetry to compress a central value to a conductor-scale finite coefficient sum, but repeating the reflection alone yields no further saving. In a quadratic-twist family, Mellin smoothing and a large-sieve estimate control that finite representation, while the functional equation reflects the residual moment back to the original family and closes a genuinely improving exponent bootstrap.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The family mean-square argument supplies the missing resource identified by the individual-value analysis: symmetry organizes the finite problem, whereas averaged coefficient cancellation is what turns organization into a stronger bound.",
+        "limits": "The improvement is averaged over a twist family and depends on the large sieve, smoothing, coefficient bounds, and the stated functional equation. It does not furnish comparable cancellation for a single L-function or imply a zero-location theorem.",
+        "parent_unit_ids": [
+          "openalex_w2023889974_v2_u07",
+          "openalex_w2121902984_v2_u15"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_functional_symmetry_family_bootstrap",
+        "title": "Functional symmetry compresses a value once; family cancellation makes the compression improve"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes both sigma ranges and derivative extraction.",
+          "line_end": 264,
+          "line_start": 176,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Bootstrap exponents are sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The quadratic large sieve controls a smoothed series, the functional equation reflects a residual integral, and a self-referential exponent inequality forces arbitrarily small loss; Cauchy's formula transfers it to L'(1).",
+          "source_id": "openalex_w2023889974",
+          "source_normalized_sha256": "f48f821279cd03793da69ee621a833e13f0eb354e1eb3447780c680eea9930af",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin smoothing and functional symmetry close a family mean-square bootstrap",
+          "unit_artifact_relpath": "depth/units/openalex_w2023889974_v2_u07.txt",
+          "unit_bytes": 4020,
+          "unit_id": "openalex_w2023889974_v2_u07",
+          "unit_sha256": "cd537dd3b7c098754e44ae69f2b3c4b43cd5e5ac8b98e3207be429e91ecfcc6f",
+          "unit_type": "self-improving-mean-square-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2023889974_v2_u07.txt",
+          "source_title": "Averages of twisted elliptic L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a bootstrap by self-reference: an a priori exponent is fed through smoothing and reflection and returned strictly smaller unless already near the target. The functional equation extends the reach of the large sieve beyond its direct half-plane.",
+            "nonparaphrase_operation": "Mellin smoothing bridges L-values to finite coefficient sums; the functional equation bridges the residual left-line moment back to the original family; nu(sigma) compresses the whole bound into one improvable scalar.",
+            "quality_reason": "The span states the completed functional equation, Heath-Brown's quadratic large sieve, the family mean square and admissible exponent nu(sigma), then uses Mellin smoothing, reflection, dyadic truncation and a self-referential exponent inequality in the displayed sigma range. The analysis explicitly says the artifact does not contain the full theorem or later derivative extraction and does not extend the shown range. The scalar-compression vocabulary is supported by the explicitly defined infimal exponent nu(sigma).",
+            "source_support": "The unit states the functional equation for completed L(s,E_d), quotes Heath-Brown's quadratic large sieve, defines the family mean square S(D,s) and an admissible loss exponent nu(sigma), and represents S by a smoothed Dirichlet series plus an integral on a line alpha<sigma. The functional equation bounds the reflected integral, while dyadic decomposition and the large sieve bound the truncated smoothed series. Suitable alpha and X choices yield an inequality in which nu(sigma) is compared with itself minus a positive multiple of delta.",
+            "speculation_status": "The artifact covers one sigma range and begins another, so it does not contain the full theorem or the later derivative extraction. The displayed exponents depend on uniformity in t and D and should not be generalized beyond the stated setup. Moderate: the bootstrap architecture is explicit, while several powers in the reflected moment and final inequalities are extraction-sensitive. Calling the argument a self-improving bootstrap is an accurate compression of the inequality nu(sigma)<=max(delta,nu(sigma)-4delta(sigma-1))+3epsilon. Several reflected-moment powers and uniformity factors are extraction-sensitive, and the artifact stops while starting the next sigma case."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_805ba46cbf2c93ca5a749cdf57ad377404398ab343655afdd12a91b714b2c841",
+            "dossier_sha256": "8f441b4e9ff82714a797639bc5500db424af68f038e8a83d3a673b8f93a8a593"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Further dualization cannot help because the functional equation has already been spent in forming the sum.",
+          "line_end": 1333,
+          "line_start": 1295,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The central display is OCR-poor; its scale and role are stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the Dirichlet series and functional equation to obtain a smooth sum of length about the square root of analytic conductor, explains why average coefficient bounds give convexity, and identifies cancellation in this finite sum as the remaining task.",
+          "source_id": "openalex_w2121902984",
+          "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry compresses a central value to one conductor-length coefficient sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2121902984_v2_u15.txt",
+          "unit_bytes": 1582,
+          "unit_id": "openalex_w2121902984_v2_u15",
+          "unit_sha256": "a6e43721753781c685b1c369a1de7e7347d88bdd74f66d6dd52d9d76ffbc7ebf",
+          "unit_type": "approximate-functional-equation reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_v2_u15.txt",
+          "source_title": "Perspectives on the Analytic Theory of L-Functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The approximate functional equation spends functional symmetry once to compress a central value into a smooth coefficient sum of roughly square-root conductor length. Average coefficient control yields convexity, but another use of the same functional equation only returns a comparable sum; the unresolved resource is genuine cancellation in this finite arithmetic representation.",
+            "nonparaphrase_operation": "Identifies a one-time representation change and the precise proof burden it exposes rather than calling symmetry an unlimited source of savings.",
+            "quality_reason": "Accepted because the bottleneck transition is prose-clear, while OCR-poor formulas and exponents are not reconstructed.",
+            "source_support": "The source derives the weighted coefficient sum from the Dirichlet series, contour shift, and functional equation, states its length scale, obtains convexity from an average coefficient estimate, and explicitly warns that dualizing again gives no improvement.",
+            "speculation_status": "No speculation; subconvexity is not obtained in this unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_4a61d432499971db449779fcfbdff974b49422c6860312b5733955a01b94c01d",
+            "dossier_sha256": "df722810213557f06450812923c3ece8fef7191a97d49afe28f467ee73a4c76d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Global functional-equation phases first filter which dual terms can survive a family average. In level families, conditioning on the root-number sign activates a factored prime–Kloosterman off-diagonal contribution that cancels in the mixed family and produces the parity-dependent low-density kernel; ramified parity is therefore an information channel separate from leading local equidistribution or persistent central rank.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The conjectural moment recipe's root-number filter is realized concretely in the one-level-density calculation, while the family-symmetry framework explains why parity and rank refinements must be tracked independently.",
+        "limits": "The full moment recipe is conjectural, whereas the density mechanism has its own support and prime-sum hypotheses. Root-number parity controls forced central behavior and a specific off-diagonal term, not the entire low-zero distribution.",
+        "parent_unit_ids": [
+          "openalex_w2101367141_v2_u27",
+          "openalex_w2952169064_v2_u15",
+          "sarnak_shin_templier2014_lfunction_symmetry_v2_u06"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_root_number_selects_off_diagonal",
+        "title": "Root-number parity selects the off-diagonal term that distinguishes orthogonal geometries"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The same unexplained off-diagonal cancellation caveat applies, and odd Z-moments can vanish even when odd L-moments do not.",
+          "line_end": 3277,
+          "line_start": 3120,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The root-number exponents and term counts are formula-supported; semantic filtering is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the t-aspect recipe: expand every family member, average root-number powers, average coefficients, complete sums, and classify the number of surviving terms by unitary, orthogonal, or symplectic root-number behavior.",
+          "source_id": "openalex_w2101367141",
+          "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+          "source_page_markers_inside_unit": [
+            49,
+            50
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Root numbers filter terms before multiplicative family averaging",
+          "unit_artifact_relpath": "depth/units/openalex_w2101367141_v2_u27.txt",
+          "unit_bytes": 11104,
+          "unit_id": "openalex_w2101367141_v2_u27",
+          "unit_sha256": "7f389d7b73302fb1bede2bcad4955eeff1c4a820c40ba0dc73d285f161a2604c",
+          "unit_type": "general heuristic recipe",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_v2_u27.txt",
+          "source_title": "Integral moments of L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the family recipe expands k shifted factors, averages powers of root numbers, replaces coefficient products by multiplicative family expectations, completes the sums, and obtains different survival rules for unitary, orthogonal, and symplectic root-number distributions. Conceptual interpretation: global functional-equation phases filter admissible dual configurations before local arithmetic correlations determine their Euler-product weights. A consistent square-root choice for each root number is assumed; odd Z-moments can vanish even when odd L-moments do not. The symmetry-dependent term counts organize a conjecture but do not by themselves prove symmetry classification, and ignored off-diagonal contributions are still presumed to cancel.",
+            "nonparaphrase_operation": "Orders the recipe into a global phase filter followed by a local arithmetic filter and distinguishes what the Z-normalization changes.",
+            "quality_reason": "Accepted because the two filters and their limitations are source-specific and the square-root, parity, and off-diagonal caveats remain visible.",
+            "source_support": "The six-step family recipe, root-number expectation cases and term counts, coefficient averaging, L-versus-Z parity distinction, and explicit warning about mysterious cancellation are all stated in the span.",
+            "speculation_status": "The aggregate moment formula, error, and cancellation are source conjectures; the analysis does not infer a symmetry theorem solely from root-number distributions."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_a88c3278b1b689c6d68c331b6fd27a5ea985e4eec6c60419198dcfc65aba0d21",
+            "dossier_sha256": "b0dd4e0c7d52003c0aa88e6807de33a1946f583b830de2c10a3c0bed5389cd3d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "GRH for symmetric-square and Dirichlet L-functions enters at distinct estimation steps.",
+          "line_end": 2478,
+          "line_start": 2067,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Long, display-heavy calculation with Bessel and character sums; exact error exponents should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows the ordinary Kloosterman part is negligible but the part coupled to the functional-equation sign has a main term; its sign produces the SO(even)/SO(odd) distinction through support two.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The root-number factor makes the large-level off-diagonal term survive",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u15.txt",
+          "unit_bytes": 22638,
+          "unit_id": "openalex_w2952169064_v2_u15",
+          "unit_sha256": "e0dff222ff7770f980d808fcb495ebc7f64bb1aafc5fe68ac42d872a45a10d03",
+          "unit_type": "level-aspect off-diagonal proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u15.txt",
+          "source_title": "Low lying zeros of families of L-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conditioning on functional-equation sign activates an off-diagonal correlation that cancels in the mixed family. The root number is therefore an algebraic selector for the symmetry-specific main term.",
+            "nonparaphrase_operation": "The identity epsilon_f=-mu(N)lambda_f(N)sqrt(N), factored Kloosterman sums, Dirichlet characters, and the principal-character integral bridge parity to the density kernel.",
+            "quality_reason": "The source shows the ordinary off-diagonal is negligible, the root-number-coupled term survives, and its principal-character contribution gives opposite parity corrections and the two SO kernels. No unconditional or beyond-support-two extension is introduced; distinct GRH assumptions are retained. The selector metaphor is concrete through epsilon_f=-mu(N)lambda_f(N)sqrt(N) and the sign reversal.",
+            "source_support": "For support inside (-2,2), the source expands S^+ or S^- of the level-scaled explicit formula. Diagonal terms give the common contribution and the prime-square term is negligible. The prime term splits into an ordinary part IVA, shown o(N), and a root-number part IVB. Factoring S(Nn^2,p;lN), using character sums and GRH, and evaluating the principal-character term gives -N/48 times the phi-hat mass outside one; reversing the parity sign yields SO(even) and SO(odd) limits.",
+            "speculation_status": "GRH for symmetric-square L-functions and for Dirichlet L-functions is used at separate estimation stages. The result is restricted to prime level, fixed weight, and Fourier support below two. The surviving-term mechanism and final sign are clear; long Bessel/character calculations and precise errors require scan verification. Treating the root number as an algebraic selector for a correlation canceled in the mixed family is a strong source-grounded interpretation. The long Bessel, Kloosterman, and character estimates are unsafe for literal reuse without the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c52b09cf2544b02acb42ea967d6a75dff0c7c241cc2b599b35515d3f8d4a4c28",
+            "dossier_sha256": "d0499df7f565ceeca6545c6bb7741df53e918fb6b3e92f4195e7e5239738dd69"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Nagao-Tate interpretation and Chowla-type obstruction.",
+          "line_end": 451,
+          "line_start": 395,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The rank limit and Mobius polynomial sum are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The rank is encoded in the next term of local coefficient convergence and is removed before studying fluctuations, whereas the symplectic root-number split depends on ramified local signs and Mobius cancellation; neither is determined by the leading Sato-Tate measure.",
+          "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+          "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Persistent central zeros and functional-equation parity require independent family refinements",
+          "unit_artifact_relpath": "depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u06.txt",
+          "unit_bytes": 3322,
+          "unit_id": "sarnak_shin_templier2014_lfunction_symmetry_v2_u06",
+          "unit_sha256": "450f41f6535fa3929edfeed45df8116b27ff64803e67bf97aa13cd30f90f05a9",
+          "unit_type": "rank-and-root-number-separation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak_shin_templier2014_lfunction_symmetry_v2_u06.txt",
+          "source_title": "Families of L-Functions and their Symmetry",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Leading local equidistribution, next-order bias, and ramified parity encode different information channels. Treating them separately prevents a central atom or sign imbalance from being mistaken for a different bulk symmetry.",
+            "nonparaphrase_operation": "The next-order coefficient tF(p) and the ramification polynomial M(w) are independent bridge objects for rank and root-number statistics.",
+            "quality_reason": "The rank prime average, Tate/Nagao interpretation, removal of persistent central zeros, independent epsilon split, ramified local factors, and Mobius-polynomial obstruction are all explicit. The central-atom and sign-imbalance warning is inferential but follows directly from the source's instruction to remove persistent zeros and split root signs before universality. The response ties each invariant to a different displayed statistic and failure mode, so generic template risk is low.",
+            "source_support": "The family rank is defined by a prime average of −tF(p)√p log p and, for elliptic surfaces, is related to geometric rank through the Tate conjecture. Persistent central zeros are removed before studying fluctuations. Symplectic families must then be split by ε=±1, a task that generally reduces to cancellation in sums of µ(M(w)) for a polynomial M.",
+            "speculation_status": "The geometric rank identity is conditional on Tate in the cited setting, and the needed polynomial Möbius cancellation is conjectural except in special cases. The separation is clear; the exact rank limit and Möbius sum are formula-sensitive. Calling leading type, next-order bias, and ramified parity different information channels is a precise interpretation of why the source introduces separate invariants. The rank normalization and polynomial Mobius sum are formula-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c1866b2481e185f45222f01a6483d87ddf4b67743ab5b36886d36f29677f9dd1",
+            "dossier_sha256": "870199b079bcacbf6f8ac7c102659f52ff29fd4e162ee692713ffa4f75ccb19e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Ordinary L-function completion adds archimedean data so one global object carries a reflection symmetry while retaining its Euler factors. In the corrected multiple Dirichlet series, local correction polynomials similarly place a cubic L-function sum and its reciprocal-index sum in one two-variable object, allowing two different functional equations to transport residues between polar loci.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "The multiple-series construction is a programmatic enlargement of the completion principle: add precisely the local data needed so independently arising symmetries become composable on a common analytic representation.",
+        "limits": "The corrected series is a two-variable meromorphic object, not merely a completed one-variable L-function. The accepted units announce rather than prove the functional equations, leave cases and local algebra omitted, and do not establish that every possible polar line actually occurs.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u01",
+          "openalex_w1971669581_v2u03",
+          "openalex_w1971669581_v2u04"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_corrected_multiple_dirichlet_symmetry",
+        "title": "Correction polynomials extend completion from one reflection to composable two-variable symmetries"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank examples so the template is relational rather than a single definition.",
+          "line_end": 218,
+          "line_start": 121,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some constants and gamma arguments are OCR-degraded; exact formulas require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places several L-function families into a common representation: gamma-completed reflection symmetry paired with local prime factors.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional equations and Euler products as the two-sided architecture of L-functions",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u01.txt",
+          "unit_bytes": 5234,
+          "unit_id": "aim2004_resource_v2u01",
+          "unit_sha256": "0f06827f3b85a015d48aadf2d698292df8388aea1c4b10f6ef60f97b91bcacd0",
+          "unit_type": "structural-template",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u01.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The common architecture separates global analytic symmetry from multiplicative local data, allowing very different arithmetic constructions to be compared through the same two constraints.",
+            "nonparaphrase_operation": "Gamma completion bridges the original Dirichlet series to reflection across the critical line, while local Euler factors bridge coefficients to prime-power data.",
+            "quality_reason": "The span explicitly juxtaposes completed functional equations and Euler products for zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank L-functions. The output correctly keeps exact constants and gamma/local-factor formulas behind a scan-verification warning. No material imported theorem or conclusion is presented as source fact. The two-sided-architecture language is interpretive rather than a bare restatement and remains tied to the two concrete structures.",
+            "source_support": "The span lists completed functional equations and Euler products for zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank L-functions.",
+            "speculation_status": "Having both structures defines a strong family resemblance but does not establish analytic continuation, RH, or a classification of all L-functions. Several constants, gamma arguments, and local-factor formulas are OCR-degraded and require the scan for exact use. Reading completion as global analytic symmetry and Euler factors as local prime data is a reasonable synthesis of the examples. Several displayed completions and local factors are visibly degraded, so only the prose-level comparison is secure."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Missing dependency for the preserved functional-equation unit.",
+          "line_end": 318,
+          "line_start": 273,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Subscripts and local factors are extraction-degraded and need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines correction polynomials and Z_M so the L-function functional equation and quadratic reciprocity act on one two-variable object.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Corrected multiple Dirichlet series supports two symmetries",
+          "unit_artifact_relpath": "depth/units/openalex_w1971669581_v2u03.txt",
+          "unit_bytes": 2768,
+          "unit_id": "openalex_w1971669581_v2u03",
+          "unit_sha256": "d664f5de913f1cb9f7241d7c262c299e2644919b2d77b3073cef02287522ca5e",
+          "unit_type": "construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1971669581_v2u03.txt",
+          "source_title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the span introduces unique correction polynomials with reflection and reciprocity identities, defines the two-variable series Z_M, states its meromorphic continuation and possible poles, and identifies the two sources of its functional equations. Interpretation: the corrections place a cubic L-function d-sum and a reciprocal n-sum in one representation, so two different symmetries can act on the same object and expose a possible exceptional polar line. Boundary: the functional equations are announced with omitted proofs, and a possible pole is not shown here to occur. Uncertainty: subscripts, exponents, and local factors are extraction-degraded and must not be reconstructed from this text layer.",
+            "nonparaphrase_operation": "Identifies the correction polynomials as the device that makes two separately presented symmetries composable on a common two-variable object, while isolating what that representation does not establish.",
+            "quality_reason": "Accepted: the mechanism is source-specific and survives the extraction, while formula-exact claims and existence of the exceptional pole are withheld.",
+            "source_support": "Equations (3.1)-(3.4) visibly introduce P, Q, and Z_M; the prose states continuation, possible poles, the conditional w=1 residue, and the L-function/reciprocity origins of the functional equations.",
+            "speculation_status": "No new speculation; pole existence and omitted functional-equation proofs retain exactly the source's provisional or cited status."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_bd3070dd41f3578e585039a6bd1d5170c110578e5882ec754344b38e7ac4827c",
+            "dossier_sha256": "eb981379b9354f62c22e8b0bab8e12a19bc1680617f611f97b0f1cfaf5f3b5b7"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the prior unit so pole geometry is not severed from residue computation.",
+          "line_end": 506,
+          "line_start": 401,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-exact local cases and normalizations need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the first functional equation to the known w=1 residue and the second to move it onto the target polar line, isolating the factor controlling the exceptional pole.",
+          "source_id": "openalex_w1971669581",
+          "source_normalized_sha256": "dca9d41891f84f0e9a0b8fb578b5da88d1c6767a7b8fc637e189595ac44794d1",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional equations turn polar residues into local products",
+          "unit_artifact_relpath": "depth/units/openalex_w1971669581_v2u04.txt",
+          "unit_bytes": 5713,
+          "unit_id": "openalex_w1971669581_v2u04",
+          "unit_sha256": "0ce50b4ffbf698875b37373b0cc7d68fc9e7184dd8a5360ef669caabf5311659",
+          "unit_type": "residue transport",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1971669581_v2u04.txt",
+          "source_title": "On the Cubic Moment of Quadratic Dirichlet $L$-functions",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Proposition 3 applies the preceding functional equation to a known residue and expresses the result through global gamma/zeta/R_M factors and congruence-dependent corrections; one congruence case is worked, the others are omitted, and a second functional equation is then applied to begin Proposition 4 on the target polar line. Interpretation: a residue is transported between polar loci, and its factorization separates global analytic contributions from local congruence data that can control survival. Boundary: Proposition 4 is cut off, so this unit does not complete the target residue calculation. Uncertainty: exact cases, normalizations, and factors require the scan.",
+            "nonparaphrase_operation": "Reconstructs the two-stage dependency graph from functional equation to movable residue to partially exposed local factorization, rather than treating the displayed formulas as a finished computation.",
+            "quality_reason": "Accepted: the residue-transport mechanism and global/local split are concrete, with the incomplete boundary and OCR risk made explicit.",
+            "source_support": "The span explicitly applies (3.5) to Proposition 1, proves the a congruent to -1 mod 4 case of Proposition 3, declares other cases similar, and then applies Proposition 2 to Proposition 3.",
+            "speculation_status": "No speculation; the interpretation keeps the omitted cases and clipped Proposition 4 as unresolved proof burden."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_bd3070dd41f3578e585039a6bd1d5170c110578e5882ec754344b38e7ac4827c",
+            "dossier_sha256": "eb981379b9354f62c22e8b0bab8e12a19bc1680617f611f97b0f1cfaf5f3b5b7"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Honda–Tate packages a finite-field abelian variety through its Frobenius Weil number, endomorphism algebra, isogeny class, and field of definition. The Taniyama extension raises the same reciprocity pattern to a group-level object governing CM motivic Galois actions and conjugation of Shimura data, replacing many objectwise actions by one symmetry group and cocycle.",
+        "generation_panel": "l_functions_geometry",
+        "historical_or_program_relation": "This is a change of scale within the geometry of L-functions: explicit Frobenius classification supplies object-level arithmetic data, while the Taniyama group seeks the shared reciprocity mechanism across CM motives and Shimura varieties.",
+        "limits": "The two constructions operate in different settings, and forgetting the base field can already collapse distinct Honda–Tate situations. Identifying the common extension does not prove the conjugation conjecture, supply RH, or classify non-CM motives.",
+        "parent_unit_ids": [
+          "milne2015_rh_finite_fields_v2_u48",
+          "oort_schappacher2016_positive_characteristic_history_v2_u11"
+        ],
+        "synthesis_id": "riemann_v2_cross_l_functions_geometry_cm_object_to_taniyama_extension",
+        "title": "CM reciprocity scales from individual Frobenius classes to a common motivic symmetry extension"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A second example of automorphic ideas informing motive structure; no general cycle conjecture is concluded.",
+          "line_end": 3454,
+          "line_start": 3370,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Group-extension and Shimura-datum notation are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reframes full Galois action on CM abelian varieties as an extension of the Galois group by the Serre group and identifies Langlands's cocycle with the motivic construction through Shimura conjugation.",
+          "source_id": "milne2015_rh_finite_fields",
+          "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+          "source_page_markers_inside_unit": [
+            60,
+            61
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Taniyama group links CM motives to conjugate Shimura varieties",
+          "unit_artifact_relpath": "depth/units/milne2015_rh_finite_fields_v2_u48.txt",
+          "unit_bytes": 5670,
+          "unit_id": "milne2015_rh_finite_fields_v2_u48",
+          "unit_sha256": "95d36f0ca09f3e9d2aba7e299b2b2258b1f48e418de6424444b2709b4c9442e5",
+          "unit_type": "bridge construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_rh_finite_fields_v2_u48.txt",
+          "source_title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The motivic Galois action on CM objects and Langlands's conjugation of Shimura data select the same Taniyama extension through shared reciprocity behavior, compressing many individual actions into one symmetry group and cocycle.",
+            "nonparaphrase_operation": "It relates two independently posed Galois-action problems through a common extension object while keeping group identification distinct from proof of the conjugation conjecture.",
+            "quality_reason": "Accepted as criticized: all assumptions, scope limits, and the two proof statuses remain explicit.",
+            "source_support": "Conditionally on the Hodge-motivic framework, the source gives 1->S->T->Gal(Qbar/Q)->1 and an adelic section, describes Langlands's twisting cocycle, states Deligne's characterization identifying the two groups, and separately recounts the later conjugation proof.",
+            "speculation_status": "The motivic construction has Hodge-conjectural assumptions and CM/Shimura scope; it yields no arbitrary-motive or general Hasse-Weil conclusion."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_37eb977ec2c5e5af7f3ba5f389c2a3e1e501e84e304aea430fdf4b85da57363e",
+            "dossier_sha256": "be3dcb624ff9deaa6c31b26645a02c07ad5c1c01b7ff850b7bb61c81e5b644bb"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes examples showing why definability over a smaller field is not the same as descent.",
+          "line_end": 928,
+          "line_start": 885,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several not-equal and containment symbols are missing or degraded; exact classification statements need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how Deuring's elliptic results inspired Tate's CM statement for finite-field abelian varieties, distinguishes definition from descent, and classifies Frobenius/endomorphism behavior into ordinary and two supersingular cases.",
+          "source_id": "oort_schappacher2016_positive_characteristic_history",
+          "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite-field endomorphisms generalize from elliptic CM to Honda-Tate classification",
+          "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history_v2_u11.txt",
+          "unit_bytes": 3268,
+          "unit_id": "oort_schappacher2016_positive_characteristic_history_v2_u11",
+          "unit_sha256": "3535dbc620ecde2a6c7de22035b46e5e2e5de4f9396f77b3b4d1d5ceb422a67b",
+          "unit_type": "CM and field-of-definition bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history_v2_u11.txt",
+          "source_title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Field of definition is part of the structure attached to Frobenius; forgetting it can collapse distinct arithmetic situations that become isomorphic only after extension.",
+            "nonparaphrase_operation": "Frobenius Weil numbers and endomorphism algebras bridge geometric objects, their isogeny classes, and base-field behavior.",
+            "quality_reason": "The span gives CM criteria for elliptic and higher-dimensional abelian varieties, states Tate's finite-field generalization, provides definition-versus-descent examples, and separates ordinary, ss2, and ss4 Frobenius cases. The analysis does not assert exact classification conditions beyond the damaged span and does not conflate definability after common extension with descent of a chosen model. Low: the field-of-definition distinction is demonstrated by explicit kinds of examples and Frobenius behavior.",
+            "source_support": "The source states CM criteria for elliptic and higher-dimensional abelian varieties, attributes the finite-field CM generalization to Tate, gives examples separating definition from descent, and divides elliptic Frobenius behavior into ordinary and two supersingular cases.",
+            "speculation_status": "The classification depends on the chosen finite field, and several containment and inequality symbols are missing in extraction. The qualitative distinction is clear; exact case conditions and algebra identifications require scan verification. Reading base field as essential Frobenius data that prevents collapsing geometrically isomorphic objects is supported by the explicit descent counterexamples and case split. Containment and not-equal symbols, field subscripts, and the exact ordinary/supersingular case conditions are degraded."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_123145797b5f3ea76b71c21d016ee6b58fed2056f4050a635051b9985b847ace",
+            "dossier_sha256": "c21f02f08981e0ee405cd2c55ed7619c7ab1fef9315c88a4307c6c12229d18c8"
+          }
+        }
+      ]
+    }
+  ]
+}

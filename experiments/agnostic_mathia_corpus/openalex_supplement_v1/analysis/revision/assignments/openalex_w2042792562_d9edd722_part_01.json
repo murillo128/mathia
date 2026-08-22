@@ -1,0 +1,89 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_obstruction_theory_transfer": {
+      "analysis_id": "agnostic_oa_generation_82733b163f3fd8691fb15230f5c3f9763d2e388f951bffbeb4f02b42aa287d8e",
+      "boundary_or_failure": "The transfer relies on threefold dimension, perfect complexes, rank one and trivial determinant, purity/codimension properties, a fine moduli space with no nontrivial pair automorphisms, trace splitting, Serre duality, and foundational obstruction-theory results cited by the source. Higher-rank variants are explicitly not immediate. Long derived formulas, shifts, and a diagram are extraction-damaged; exact proof reuse requires the PDF and cited inputs.",
+      "interpretation": "Source fact: the direct tangent-obstruction groups for pairs are Ext^i(I^bullet,F), while fixed-determinant complex deformations use trace-free Ext^{i+1}(I^bullet,I^bullet)_0. The source proves agreement not only at first order but over arbitrary nilpotent thickenings: it trims a deformed perfect complex, proves its cohomology has the needed purity and support, reconstructs it as {O -> F}, and proves F is flat. For the universal complex, rank one splits RHom into identity and trace-free summands; vanishing and Serre duality concentrate the trace-free part in degrees one and two, yielding a two-term perfect obstruction theory, virtual class, and deformation invariance. Inference: the useful change of representation is one that both preserves the moduli functor to all infinitesimal orders and exposes a removable scalar direction, shortening the remaining obstruction amplitude.",
+      "nonparaphrase_operation": "Transport a moduli problem only after a deformation-level round trip: extend the encoded object across nilpotent bases, trim its perfect resolution, recover the original pair and flatness, split off the identity via trace in rank one, and use duality plus degree vanishings to replace the residual derived Hom by a two-term complex.",
+      "source_support": "Section 2.2 states and proves that fixed-determinant deformations of I^bullet equal pair deformations to all orders; Theorem 2.7 reconstructs every such deformation as {O_{XxB} -> F}. Lemma 2.10 uses fiberwise trace-free Ext concentration in degrees one and two to trim the universal complex. The Atiyah-class map (2.13), cited compatibility with obstruction classes, and Theorems 2.14-2.15 supply the perfect obstruction theory, virtual class, and relative deformation statement.",
+      "uncertainty": "The all-order equivalence and obstruction-theory conclusions are presented as proved, conditional on cited foundations. The broader design lesson is an inference rather than a representation-independent theorem. Novelty is unconfirmed, and damaged notation limits verification of individual displayed maps from this artifact alone.",
+      "unit_id": "agnostic_oa_obstruction_theory_transfer"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_obstruction_theory_transfer": {
+      "critic_sha256": "be2d847c996258f525d8bc981f095c47595984286bf05ed55e899b2035c4ddde",
+      "generation_sha256": "5030978116de13c24100f6b6f8454dd240b67f9770996da4e54cb5bba812adaa"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_obstruction_theory_transfer": {
+      "analysis_id": "agnostic_oa_critic_0ab32962cd1209dbcf7a4b953da9930b9934546b7856104a1eb4304f7e761110",
+      "context_risk": "Long derived formulas and shifts are degraded, and the perfect-obstruction-theory conclusion invokes cited foundations not reproduced in the span. The all-order reconstruction, trace splitting, degree concentration, and resulting theorems are nevertheless readable.",
+      "decision": "revise",
+      "faithfulness": "Apart from one boundary sentence, the candidate accurately tracks pair versus fixed-determinant deformation groups, nilpotent-thickening reconstruction and flatness, rank-one trace splitting, trace-free concentration in degrees one and two, and the virtual and deformation-invariant classes.",
+      "missed_mechanism": "No central mechanism is missed; the candidate captures both required stages, namely equivalence of deformation functors to all infinitesimal orders and shortening of the residual obstruction complex after splitting the scalar direction.",
+      "paraphrase_risk": "Low. The deformation-level round trip, resolution trimming, trace split, and duality-based amplitude reduction form a specific reusable procedure.",
+      "revision_instructions": "Delete or recast the statement that higher-rank variants are explicitly said to be non-immediate. The bound span does not make that explicit claim; it only demonstrates essential uses of rank one, so higher-rank nontransfer may be stated only as an inference. Preserve all other qualifications.",
+      "unit_id": "agnostic_oa_obstruction_theory_transfer",
+      "unsupported_or_imported": "The boundary claim that higher-rank variants are explicitly non-immediate is not present in the frozen span and appears imported from outside it. Rank-one dependence itself is well supported by the double-dual and trace-splitting arguments."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_obstruction_theory_transfer": "agnostic_oa_revision_fc6378f6f63dcb7e2351ea0d74298c08a06ffea67b0358647fbf670d6b6064cf"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "0850dc648477d46caedbf997cc703a25f38b481538bb56ec4941dd7fc4a3fc70",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2042792562_d9edd722_part_01.jsonl",
+  "source_id": "openalex_w2042792562",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_obstruction_theory_transfer.txt",
+      "artifact_bytes": 21004,
+      "artifact_relpath": "depth/units/agnostic_oa_obstruction_theory_transfer.txt",
+      "artifact_sha256": "599dd34fcccc7ed154eca1899bdbb368a000cb0415de95c2575b49b90c544544",
+      "content_sha256": "078e164b7134d07b10148ed24604542377eaf48010a54c375c1666ce8c99bf27",
+      "context_note": "The all-order deformation equivalence, two-term trace-free complex, perfect obstruction theory, virtual class, and deformation invariance are presented as proved results, with cited foundational inputs. Novelty unconfirmed.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_lossless_derived_encoding",
+            "agnostic_oa_obstruction_theory_transfer",
+            "agnostic_oa_wall_crossing_extension_reversal"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "saturation_probe_strengthened",
+          "summary": "The source ties equivalence of representations to exact triangles and then exploits that derived representation to control deformations, split trace directions, shorten obstruction amplitude, and conjecturally reverse extensions across a wall. This is source-grounded support for testing obstruction as a property changed or exposed by representation, not merely a named formalism. Corpus novelty is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2042792562",
+      "line_end": 850,
+      "line_start": 455,
+      "representation_dependency": "Extraction limit: long derived formulas, degree shifts, trace-free notation, and a diagram are degraded; exact proof reuse requires the PDF and cited foundations. Representation limit: the transfer uses perfect complexes, fixed determinant, trace splitting at rank one, Serre duality, and Atiyah/Kodaira-Spencer classes. Applicability limit: it relies on threefold dimension, codimension support, trivial determinant, fineness of the moduli problem, and absence of nontrivial automorphisms; higher-rank variants are explicitly said not to follow immediately.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "novelty_status": "unconfirmed",
+        "statement": "Fresh source-only depth review using AGENTS.md, the bound assignment, its exact local normalized source, and the required local validator only. No network/OpenAlex access, #44 record, other corpus source, prior plan, alternate version, issue history, or novelty comparison was consulted."
+      },
+      "selection_reason": "The direct deformation theory of pairs is not suitable for a virtual class, while the lossless fixed-determinant complex representation has trace-free deformation data. The source proves agreement of deformations to all nilpotent orders, reconstructs every fixed-determinant deformation as a pair, removes scalar directions by trace, and uses duality to concentrate the relevant complex in two degrees. The generic move is to transport a moduli problem to an equivalent representation where nuisance symmetries split off and obstruction amplitude becomes manageable.",
+      "source_id": "openalex_w2042792562",
+      "source_normalized_sha256": "ae6a4bef072c2130265ffa0b9bb27dd233d6f5aad08063905059385f2ab8b731",
+      "title": "Change representation to shorten deformation-obstruction amplitude",
+      "unit_id": "agnostic_oa_obstruction_theory_transfer",
+      "unit_type": "structural-transfer"
+    }
+  ]
+}

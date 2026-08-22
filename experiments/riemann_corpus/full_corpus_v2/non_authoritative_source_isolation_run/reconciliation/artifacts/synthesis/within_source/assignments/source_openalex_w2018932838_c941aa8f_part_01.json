@@ -1,0 +1,103 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2018932838",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2018932838_c941aa8f_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Although zeros act as frequency labels in a prime-density cosine sum, absent primitive repetitions and orbit-dependent amplitudes prevent the standard semiclassical periodic-orbit interpretation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2018932838_v2_u03",
+          "openalex_w2018932838_v2_u09"
+        ],
+        "proposed_limit": "The obstruction rules out this particular reading of Riemann's formula, not every possible Hamiltonian or trace formula for primes.",
+        "source_id": "openalex_w2018932838",
+        "synthesis_id": "riemann_v2_within_6376f59ac1cd69b1c05fce2e",
+        "title": "An oscillatory sum need not be a dynamical trace formula"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the practical questions of truncated linewidths, relative intensities, and controlled resolution.",
+          "line_end": 93,
+          "line_start": 33,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-supported; no figure is needed.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts the familiar prime-orbit formula for zero density with Riemann's reverse formula, emphasizing that global zero correlations can reconstruct locally irregular prime-power locations while warning that the reverse formula is not automatically dynamical.",
+          "source_id": "openalex_w2018932838",
+          "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Highly correlated zeros interfere to produce nearly uncorrelated prime powers",
+          "unit_artifact_relpath": "depth/units/openalex_w2018932838_v2_u03.txt",
+          "unit_bytes": 4627,
+          "unit_id": "openalex_w2018932838_v2_u03",
+          "unit_sha256": "1744a4fefb717f16247082dd7afff44e2747af49f17675c2e2d48dc2203f1812",
+          "unit_type": "bidirectional explicit-formula framing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2018932838_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The useful move is reversal of an explicit relation: the globally correlated representation can synthesize a locally irregular one through interference. That inversion raises separate questions of resolution, amplitude fidelity, and dynamical interpretation.",
+            "nonparaphrase_operation": "The oscillatory explicit formula is the bridge object; zeros serve as frequencies in one direction and prime powers as spectral lines in the reconstructed density.",
+            "quality_reason": "The introduction explicitly contrasts the prime-power indexed oscillatory zero-density formula with Riemann's zero-indexed prime-power density formula and proposes numerical reconstruction from truncated zero sums. It states GUE-like zero statistics versus nearly Poisson prime statistics, broadened finite-truncation lines, uncertain relative intensities, and the failure of this reverse formula to be a dynamical trace formula. The answer correctly labels reconstruction claims in this introductory span as programmatic and does not import the later numerical results as already proved here. 'Reversal of an explicit relation' is generic, but the direction swap between prime powers and zeta zeros plus the separate position/width/intensity questions makes it concrete.",
+            "source_support": "The introduction contrasts the prime-indexed oscillatory formula for Riemann-zero density with Riemann's zero-indexed formula for the density of primes and their powers. It proposes testing numerically whether truncated zero sums recover line positions, widths, and relative intensities, and notes the contrast between GUE-like zero spacings and nearly Poisson prime spacings.",
+            "speculation_status": "A truncated conditionally convergent sum produces broadened lines, not exact delta spikes, and correct positions need not imply correct intensities. The paper says the reverse formula is not automatically a trace formula of dynamical origin. This span is prose-supported, but the exact explicit formulas lie outside it. Claims about numerical reconstruction are programmatic here and are established only in later sections. Viewing the reverse relation as interference by a globally correlated sequence to reconstruct a locally irregular sequence is lifted directly from the source's organizing contrast. The actual explicit formulas are outside this unit, so formula-level claims are unavailable; the pass confines itself to the introduction's prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Ends by distinguishing failure of this formula as a trace formula from nonexistence of any prime Hamiltonian.",
+          "line_end": 648,
+          "line_start": 610,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-supported; exact semiclassical amplitude conventions are not needed for the obstruction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Tests the cosine sum against semiclassical trace-formula structure and rejects the identification because zero labels have no primitive/repetition hierarchy, amplitudes lack orbit dependence, and the smooth and oscillatory energy factors are unlikely to come from one Hamiltonian.",
+          "source_id": "openalex_w2018932838",
+          "source_normalized_sha256": "072e2e68358eb32a98c9d2c0d6b209459854499e06e67a1874c69b5f621ad70d",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Missing repetitions and orbit-dependent amplitudes block a dynamical reading",
+          "unit_artifact_relpath": "depth/units/openalex_w2018932838_v2_u09.txt",
+          "unit_bytes": 3098,
+          "unit_id": "openalex_w2018932838_v2_u09",
+          "unit_sha256": "ef77ab6d4f02f6d6b0bed9a2ca49436da4d174e7b229aa21041bc0edda5715a5",
+          "unit_type": "failed trace-formula interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2018932838_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit performs an analogy audit: matching an oscillatory surface form is insufficient when the organizing invariants of periodic-orbit theory are missing. It separates reconstruction capability from explanatory mechanism.",
+            "nonparaphrase_operation": "The candidate bridge is the identification of x with energy and alpha log x with orbit action; primitive/repetition structure and orbit-dependent amplitudes are the tests that break it.",
+            "quality_reason": "The source tests the trace-formula analogy using three concrete mismatches: no repetition indices, no orbit-label dependence in amplitudes, and implausibly incompatible energy dependence of smooth and oscillatory terms. It explicitly concludes that accurate reconstruction does not make Riemann's prime-density formula a dynamical trace formula, while leaving other possible prime trace formulas open. The answer does not generalize failure of this candidate identification to nonexistence of every Hamiltonian or trace formula. The 'surface resemblance versus structural role' framing is a common template, but the three source-specific failure tests prevent it from becoming content-free.",
+            "source_support": "The zero-indexed oscillatory prime-density formula is compared with semiclassical density-of-states formulas by treating alpha as an orbit label and alpha log x as an action. The comparison finds no repetition hierarchy, no alpha-dependent amplitude, and incompatible-looking energy dependence between smooth and oscillatory terms, so the authors reject this formula as a dynamical trace formula.",
+            "speculation_status": "Failure of this particular interpretation does not establish that no trace formula or Hamiltonian for primes exists. The final speculation about such a system remains open. The obstruction is prose-supported. Exact semiclassical amplitude conventions are not needed for the stated mismatch, but broader claims about possible prime Hamiltonians are speculative. Calling primitive/repetition structure and orbit amplitudes organizing invariants is a faithful analogy audit. Exact semiclassical amplitude conventions are not displayed here, though the source's prose supplies enough structure for the stated mismatch."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c7469bbf131d94d1e59c0b2b1a3b4b72171f8036f258e47dbd4bbef57ed5e762",
+        "dossier_sha256": "7bffc381a77367bed1659795b3ce8ed08fb7e71fe7c5982974949a2b41a2ade9"
+      }
+    }
+  ]
+}

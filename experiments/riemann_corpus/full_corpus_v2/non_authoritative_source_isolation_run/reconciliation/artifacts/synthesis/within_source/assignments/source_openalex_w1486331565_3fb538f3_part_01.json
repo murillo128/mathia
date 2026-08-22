@@ -1,0 +1,356 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1486331565",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1486331565_3fb538f3_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Representing the trigonometric polynomial as a squared modulus eliminates the hardest global constraint, leaving a finite coefficient cone in which stochastic search can optimize the analytic bound.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1486331565_v2_u01",
+          "openalex_w1486331565_v2_u07"
+        ],
+        "proposed_limit": "The parameterization and annealing do not certify a global optimum.",
+        "source_id": "openalex_w1486331565",
+        "synthesis_id": "riemann_v2_within_c7ba25aedff800c569bc7afc",
+        "title": "Positivity is engineered before optimization begins"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The best polynomial for Landau's asymptotic objective need not be best for Kadiri's finite explicit objective.",
+          "line_end": 168,
+          "line_start": 80,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Polynomial coefficients and ratio normalization are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Historical improvements all use coefficientwise nonnegative, globally nonnegative cosine polynomials with a1>a0; Landau's ratio turns their shape into an asymptotic R0 bound, making polynomial design a mathematical optimization interface.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonnegative trigonometric polynomial controls the width of a classical zero-free region",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u01.txt",
+          "unit_bytes": 5365,
+          "unit_id": "openalex_w1486331565_v2_u01",
+          "unit_sha256": "3092ac4e1047fc61baf6d0d4a44c6a4ef20bdd085e8183cd5ebae9a6a403fffe",
+          "unit_type": "extremal-polynomial interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the stated class of globally nonnegative even cosine polynomials with nonnegative coefficients and a1>a0, V_n assigns a single extremal ratio to degree n; the decreasing sequence V_n and its limit V then feed Landau's and Stechkin's asymptotic conversions to a zero-free-region constant. Interpreted as an optimization interface, this ratio gains a comparable scalar objective but loses coefficient-shape distinctions not retained by its numerator and first-coefficient normalization. The span separately reports a degree-16 polynomial plus error analysis for the concrete R0=5.573412 theorem and a narrowed interval for V; those are distinct results and computational routes, not one provenance claim.",
+            "nonparaphrase_operation": "Separates the degree-indexed extremal problem, its limiting asymptotic summary, and the finite zero-free theorem, then identifies the information discarded when admissible polynomial shape is reduced to the displayed ratio.",
+            "quality_reason": "Preserves the admissibility assumptions and concrete mathematics, applies the critic's provenance separation, and states both the gain and loss of the scalar representation without claiming optimality.",
+            "source_support": "The span defines P_n, V_n, the monotone limit V, A=f_n(0)-a0, and the Landau and Stechkin conversions; it also states Theorems 1 and 2 and says exact V_n values are known only through degree six. The displayed square-root normalization is OCR-sensitive, so its exact typography requires the retained scan.",
+            "speculation_status": "The optimization-interface and information-compression reading is an explicit inference. No degree-40 attribution or claim about mismatch with Kadiri's finite objective is imported from outside this span; formula-level reuse of the denominator remains scan-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Landau's easily evaluated ratio is used as a surrogate objective during the broad search.",
+          "line_end": 746,
+          "line_start": 638,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient update formulas are extraction-sensitive; the algorithm is prose-complete.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Parameterizing f as the squared modulus of a finite exponential sum converts global positivity into construction, leaves coefficient nonnegativity and a1>a0 as cheap tests, and permits O(n) incremental autocorrelation updates under simulated annealing.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Squaring an exponential polynomial enforces global nonnegativity during annealing",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u07.txt",
+          "unit_bytes": 7106,
+          "unit_id": "openalex_w1486331565_v2_u07",
+          "unit_sha256": "644ead9510f2d9ebd7fefcfd3b3adb5f00f7a75a3933992141cdcf9a1c913077",
+          "unit_type": "constrained stochastic construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The key move is constructive constraint satisfaction: choose coordinates in which the hardest global condition is an invariant rather than a repeatedly tested predicate. Autocorrelations expose the sparse dependency of a local move.",
+            "nonparaphrase_operation": "The coefficient vector c is mapped to the admissible trigonometric polynomial through a squared exponential sum, and its autocorrelation vector a is the bridge to both the constraints and Landau objective.",
+            "quality_reason": "The Landau surrogate, squared-exponential construction, autocorrelation coefficients, automatic global nonnegativity, remaining coefficient tests, O(n) updates, annealing acceptance, and final greedy descent are all explicit. No global-optimality or Kadiri-performance claim is imported; the output correctly labels G a surrogate. The representation-change language is specific because it names c, autocorrelations a, and the exact constraint made automatic.",
+            "source_support": "The search minimizes Landau's easily evaluated objective G over admissible degree-n cosine polynomials. Candidates are formed as |sum c_k e^{ik phi}|^2, so nonnegativity is automatic and cosine coefficients are autocorrelations: a0=sum c_j^2 and ak=2 sum c_j c_{j+k}. Moves perturb one ck, update dependent coefficients in O(n), reject violations of ak>=0 or a1>a0, and otherwise use the usual temperature-dependent Metropolis acceptance before greedy descent.",
+            "speculation_status": "Landau's G is only a surrogate for the expensive finite zero-free-region objective. Annealing supplies good candidates but no certificate of global optimality, and even automatically nonnegative polynomials can fail coefficientwise constraints. The algorithm is prose-complete, though some extracted coefficient-update subscripts are formula-sensitive; exact implementation should confirm them against the PDF. Calling this constructive constraint satisfaction and viewing autocorrelations as exposing sparse update dependencies are strong source-grounded conceptual operations. Some coefficient-update subscripts are extraction-sensitive, so an implementation must consult the PDF."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+        "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Verified low zeros and rigorous compact numerical integrals reduce explicit remainder terms, while monotonic analytic tails preserve validity beyond the computed range.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1486331565_v2_u03",
+          "openalex_w1486331565_v2_u05",
+          "openalex_w1486331565_v2_u06"
+        ],
+        "proposed_limit": "The gain is conditional on the provenance and correctness of the cited computations, not on RH beyond their verified height.",
+        "source_id": "openalex_w1486331565",
+        "synthesis_id": "riemann_v2_within_c5ef1b772ee3394291fa6b7e",
+        "title": "Certified finite data can strengthen an asymptotic analytic argument"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The reported percentage attribution is specific to the selected polynomial and parameter run.",
+          "line_end": 340,
+          "line_start": 296,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The min-max bound and numerical parameters are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A secondary eta threshold gives two denominator lower bounds, one from monotonicity and one retaining the nonpositive error C; balancing them by binary search yields most of the improvement over Kadiri, with updated verified height supplying the remainder.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Splitting the height parameter prevents a favorable error term from being discarded",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u03.txt",
+          "unit_bytes": 3228,
+          "unit_id": "openalex_w1486331565_v2_u03",
+          "unit_sha256": "26ec94e93b6fd0b4436cdcb75f5de907c6769f987985860145e10e34a2ef80f7",
+          "unit_type": "error-retention improvement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The auxiliary threshold eta1 allocates two denominator estimates to different eta regimes: below eta1, monotonicity yields K(w1,theta), while from eta1 to eta0 the bound retains C(eta1) in K(w0,theta)-C(eta1). Minimizing the worse reciprocal denominator and using binary search to balance the two makes eta1 a one-dimensional regime-selection device inside the R,r iteration. This gains a sharper piecewise bound but depends on the monotonicity and validity of C, the admissibility of the chosen polynomial, and the numerically selected parameters.",
+            "nonparaphrase_operation": "Recasts eta1 as a controlled regime split that trades one globally coarse estimate for the worst-case balance of two local estimates, while separating that mechanism from the polynomial and verified-height contributions.",
+            "quality_reason": "Corrects the candidate's overattribution, preserves the concrete two-case mechanism and distinct contributors, and makes the empirical and formula-sensitive boundaries explicit.",
+            "source_support": "The span states both eta ranges and denominator lower bounds, displays the minimax replacement, describes binary balancing and the inner and outer iterations, and reports R0 about 5.5734118. It attributes approximately 93.6% jointly to the new polynomial and saved error-term information, with the remaining 6.4% attributed to the larger T0.",
+            "speculation_status": "The regime-splitting interpretation is supported inference. The 93.6% figure is retained only as a joint empirical attribution for this run, never as the effect of eta1 alone; exact minimax punctuation and numerical replication remain scan- and computation-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Numerical validity depends on the cited verified zero data and chosen cutoff.",
+          "line_end": 491,
+          "line_start": 430,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The tail sum and constants are formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For zero height the total reciprocal-square sum minus verified zeros gives a tight remainder; at positive shifts a monotone test function in Lehman's explicit zero-sum estimate controls both tails beyond the exclusion window.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Direct low-zero data plus Lehman's formula replaces a generic zero-count error estimate",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u05.txt",
+          "unit_bytes": 3615,
+          "unit_id": "openalex_w1486331565_v2_u05",
+          "unit_sha256": "cb06824940316ca8d642693bd89f2980d553eb90e9d7dfeaa311518af7a6c191",
+          "unit_type": "verified-zero tail bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reciprocal-square tail sum supports two different certification mechanisms. At t=0 it is exactly rewritten as twice the difference between the full positive-zero sum and the finite sum through t0, after which a cited upper bound on the full sum and computed low zeros give the stated tail bound. At positive shifts, the sum is recast through a positive decreasing reciprocal-square test function so Lehman's formula controls the unenumerated tail by an integral and endpoint terms. This bridge gains a tighter aggregate remainder estimate but does not locate individual zeros and is only as sound as the cited global bound, verified-zero completeness, and Lehman hypotheses.",
+            "nonparaphrase_operation": "Distinguishes equality in the finite-data decomposition from the inequality used for the global input, and compares subtraction from an upper bound with test-function transport as two complementary tail-control representations.",
+            "quality_reason": "Implements the critic's exact-versus-upper-bound repair while retaining both height regimes, their assumptions, and the limitation to aggregate tail control.",
+            "source_support": "The span defines C3 and Sigma(t,t0), gives the equality for Sigma(0,t0), cites only an upper bound of 0.023105 for the full positive-zero sum, subtracts zeros through 10^5 to state c30(0,10^5)=0.00027, and applies Lehman's estimate for a continuous positive decreasing test function when t>0.",
+            "speculation_status": "The finite-data/analytic-tail bridge is supported inference. The global reciprocal-square quantity is not called an exact evaluated budget, and the final integral and numerical constant remain dependent on formula extraction and external zero-data provenance."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The fixed epsilon is a computational choice within a valid family of bounds.",
+          "line_end": 636,
+          "line_start": 498,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; integration intervals and signs must be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The final error integral is partitioned where different explicit bounds apply and again around its shifted singular peak; analytic outer-tail estimates plus numerical compact integrals give a practical rigorous bound.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Splitting around the kernel peak makes the last gamma integral computably bounded",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u06.txt",
+          "unit_bytes": 8284,
+          "unit_id": "openalex_w1486331565_v2_u06",
+          "unit_sha256": "a61ed4515cb690514c80c986a5768aaaa914ba6e45952827a4e260b5b80be575",
+          "unit_type": "piecewise rigorous quadrature",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The C4 contribution is reduced from an integral over the full line to pieces chosen at the changes in the explicit U0 bound and at the moving peak of the shifted Cauchy-type kernel. Symmetry handles k=0; for k>0 the first integral is split at -t*, -1/2, 1/2, and t*, and the positive tail is split again around b=kT0 with an epsilon window. Analytic estimates handle outer pieces while compact pieces are numerically estimated. Because the positive width a keeps a^2+(b-t)^2 nonzero, this is a finite peak rather than a singularity; the gain is computability, while the burden remains to certify numerical estimates and every extracted sign and endpoint.",
+            "nonparaphrase_operation": "Explains the partition as a representation change from one infinite integral to region-specific analytic tails and compact numerical tasks, and uses a>0 to distinguish a moving kernel peak from a true singularity.",
+            "quality_reason": "Applies every critic repair, retains the exact prose-supported breakpoints and the analogous-only status of the second integral, and confines acceptance to the recoverable mechanism rather than unsafe extracted formulas.",
+            "source_support": "The span defines C4 via C41 and C42, supplies a piecewise U0 upper bound, gives the symmetry split for k=0 and five-piece split for k nonzero, bounds outer tails analytically, and chooses epsilon=10^-3 around b. It says the second C41 integral is estimated similarly and that the middle pieces may be estimated numerically; it does not provide an interval-arithmetic certificate here.",
+            "speculation_status": "The partition architecture is supported, but exact formula-level reuse is quarantined because OCR damages thresholds, powers, limits, and inequality signs. Compact evaluation is described only as numerical estimation, not certified rigorous quadrature, absent separate evidence."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+        "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Landau's cheap objective guides exploration, but evaluating candidates under Kadiri's full bound changes the winner and exposes the limiting analytic bottleneck.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1486331565_v2_u07",
+          "openalex_w1486331565_v2_u08",
+          "openalex_w1486331565_v2_u09"
+        ],
+        "proposed_limit": "Only the sampled candidate set and parameter family were tested.",
+        "source_id": "openalex_w1486331565",
+        "synthesis_id": "riemann_v2_within_35d79b73b98b20ef0a369bd9",
+        "title": "The true downstream objective should rerank surrogate optima"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Landau's easily evaluated ratio is used as a surrogate objective during the broad search.",
+          "line_end": 746,
+          "line_start": 638,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient update formulas are extraction-sensitive; the algorithm is prose-complete.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Parameterizing f as the squared modulus of a finite exponential sum converts global positivity into construction, leaves coefficient nonnegativity and a1>a0 as cheap tests, and permits O(n) incremental autocorrelation updates under simulated annealing.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Squaring an exponential polynomial enforces global nonnegativity during annealing",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u07.txt",
+          "unit_bytes": 7106,
+          "unit_id": "openalex_w1486331565_v2_u07",
+          "unit_sha256": "644ead9510f2d9ebd7fefcfd3b3adb5f00f7a75a3933992141cdcf9a1c913077",
+          "unit_type": "constrained stochastic construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The key move is constructive constraint satisfaction: choose coordinates in which the hardest global condition is an invariant rather than a repeatedly tested predicate. Autocorrelations expose the sparse dependency of a local move.",
+            "nonparaphrase_operation": "The coefficient vector c is mapped to the admissible trigonometric polynomial through a squared exponential sum, and its autocorrelation vector a is the bridge to both the constraints and Landau objective.",
+            "quality_reason": "The Landau surrogate, squared-exponential construction, autocorrelation coefficients, automatic global nonnegativity, remaining coefficient tests, O(n) updates, annealing acceptance, and final greedy descent are all explicit. No global-optimality or Kadiri-performance claim is imported; the output correctly labels G a surrogate. The representation-change language is specific because it names c, autocorrelations a, and the exact constraint made automatic.",
+            "source_support": "The search minimizes Landau's easily evaluated objective G over admissible degree-n cosine polynomials. Candidates are formed as |sum c_k e^{ik phi}|^2, so nonnegativity is automatic and cosine coefficients are autocorrelations: a0=sum c_j^2 and ak=2 sum c_j c_{j+k}. Moves perturb one ck, update dependent coefficients in O(n), reject violations of ak>=0 or a1>a0, and otherwise use the usual temperature-dependent Metropolis acceptance before greedy descent.",
+            "speculation_status": "Landau's G is only a surrogate for the expensive finite zero-free-region objective. Annealing supplies good candidates but no certificate of global optimality, and even automatically nonnegative polynomials can fail coefficientwise constraints. The algorithm is prose-complete, though some extracted coefficient-update subscripts are formula-sensitive; exact implementation should confirm them against the PDF. Calling this constructive constraint satisfaction and viewing autocorrelations as exposing sparse update dependencies are strong source-grounded conceptual operations. Some coefficient-update subscripts are extraction-sensitive, so an implementation must consult the PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is an empirical optimization result, not a theorem that degree 16 is globally optimal.",
+          "line_end": 834,
+          "line_start": 747,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Large coefficient tables are formula-dependent; the comparison is stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Degree-40 searches improve the asymptotic Landau bound, but Kadiri evaluation favors smaller degree; retesting many near-optimal surrogate candidates and locally refining the true objective produces the degree-16 polynomial used for the best R0.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Optimizing Landau's constant and optimizing the finite zero-free constant select different polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u08.txt",
+          "unit_bytes": 6893,
+          "unit_id": "openalex_w1486331565_v2_u08",
+          "unit_sha256": "204dfb4ef3901b667fc3453baa2e6dcc08938fb9caf99287395b8180048bf7a5",
+          "unit_type": "surrogate-objective diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Landau's inexpensive objective and Kadiri's full R0 calculation order the same admissible polynomials differently, so surrogate optimization is followed by task-specific reranking rather than assumed to transfer. Among the record-V_n polynomials in the table, degree 12 gives the best Kadiri result; a separate, wider pass evaluates several hundred thousand near-best Landau candidates and finds a better degree-16 candidate, after which further annealing from that starting point yields F16. F16's Landau score is worse than the degree-16 record even though it supports the paper's stronger finite R0 result. Keeping diverse near-surrogate-optima therefore gains downstream options, but neither selection stage proves a global optimum.",
+            "nonparaphrase_operation": "Separates the degree-12 winner among record-surrogate polynomials from the degree-16 winner in the expanded candidate pool, using their contrary rankings to diagnose a bounded surrogate mismatch.",
+            "quality_reason": "Preserves both selection stages, removes the unsupported final-annealing objective, and ties the abstraction directly to the two numerical evaluations and their observed reversal.",
+            "source_support": "The span reports V_n records through degree 40, tabulates the contrary Kadiri ordering with the best listed R0 at degree 12, describes reranking many other strong Landau candidates to find degree 16 with R0<5.57353, and reports further annealing from it before using F16 in Theorem 1. The objective of that final annealing is not specified in this span.",
+            "speculation_status": "Surrogate mismatch and the value of candidate diversity are supported inferences from explicit contrary rankings. The final annealing is not labeled optimization of the true objective, and no reported polynomial, degree, or value is claimed globally optimal; large tables and exact evaluations remain provenance-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The fitted limiting law is numerical evidence, not a proved optimality barrier.",
+          "line_end": 946,
+          "line_start": 836,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Numerical fit and parameter values should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Re-running the same method over many hypothetical verified heights yields an empirical inverse-log approach to a limiting constant, diagnosing polynomial and analytic structure rather than verified height as the eventual bottleneck.",
+          "source_id": "openalex_w1486331565",
+          "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+          "source_page_markers_inside_unit": [
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Increasing verified RH height gives diminishing zero-free-region returns",
+          "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u09.txt",
+          "unit_bytes": 3658,
+          "unit_id": "openalex_w1486331565_v2_u09",
+          "unit_sha256": "2fb08a8e9f666ae6208604c4dc06fedb4567b30dfdb7ec35ec9025107bd78a6c",
+          "unit_type": "method ceiling",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Holding F16 and most computation choices fixed while varying hypothetical verified height T0 turns the reruns into a one-input sensitivity experiment. Across 150 values up to about 10^300, the fitted response R0=5.4912+2.0185/log T0 encodes diminishing returns from increasing T0 within this setup. The apparent floor is therefore empirical evidence about this method with its stated polynomial and mostly fixed parameters, not a proof that polynomial or kernel structure causes an absolute barrier.",
+            "nonparaphrase_operation": "Treats the counterfactual reruns as a controlled sensitivity curve and identifies exactly what is varied and held fixed, converting an apparent asymptote into a method-conditional limitation rather than an optimality theorem.",
+            "quality_reason": "Corrects the overly specific bottleneck attribution, preserves the explicit fit and setup, and clearly separates empirical method sensitivity from an absolute mathematical limit.",
+            "source_support": "The span reports the T0=3*10^11 example with theta=1.85567 and R0=5.5666305, then 150 runs using F16, t0=10^5, r=5, and theta=1.8552, together with the inverse-log fit and the authors' suggestion of limited improvement by this method.",
+            "speculation_status": "The fit is numerical evidence with no residual analysis or proof of a limiting law in the span. Its constants and inputs require scan and computation provenance, and the inferred floor is not generalized beyond this mostly fixed parameterization."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d5e59f93dd7cff681f557fddde51b920d2e5d9067069faf97ec91635f9c99d1e",
+        "dossier_sha256": "1747c1e9e54165a44fecbbf41abec31a2c5b57b468b8b32a1bc31955ad6041d1"
+      }
+    }
+  ]
+}

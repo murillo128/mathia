@@ -1,0 +1,868 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2068184834_40807e6b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2068184834",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two proofs expose parallel decompositions—partition reduction and cycle decomposition—that set up the final componentwise comparison.",
+      "line_end": 2480,
+      "line_start": 2319,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some marking superscripts and products are damaged; conceptual structure is prose-grounded, but equations need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Marking paired blocks makes the Möbius-side factorization explicit, while decomposing determinant permutations into disjoint cycles and applying Parseval yields the Fourier-side interval-overlap factors.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        45,
+        46,
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Marked partitions and permutation cycles produce the two factorizations",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u25.txt",
+      "unit_bytes": 8935,
+      "unit_id": "openalex_w2068184834-u25",
+      "unit_sha256": "1279f35945daefc78236b25b246677052c5462cbfa8a37d2c485bc52de3f8656",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u25.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2311,
+          "line_end": 2318,
+          "text": "                                                                   P               P\nProposition 4.3. For a subset S ⊂ N with                             l∈S ul = 0,   l∈S |ul | < 2,\nwe have an identity\n                                     XS (u) = (−1)|S|−1 YS (u)                             (4.22)\n\n     By comparing the coefficients of δF (u) in Propositions 4.1 and 4.2, we\nsee that Proposition 4.3 is exactly what is needed to establish Theorem\n4.1. The rest of Section 4 is concerned with proving these Propositions.\n",
+          "sha256": "421111e608cc61a7f6bede6e868941f841c7e8e40bee68a53b02c2277b0752d0"
+        },
+        "after": {
+          "line_start": 2481,
+          "line_end": 2488,
+          "text": "Proof of Proposition 4.3: It clearly suffices to prove Proposition\n4.3 for the case S = N , which we assume from now on. We will need\n                                                  P                    P\nsome preparation: For u ∈ Rn , with j uj = 0, and j |uj | < 2, and\nan ordering θ = (θ(1), . . . , θ(n)) of N , we define the consecutive partial\nsums\n                                 k\n                                 X\n",
+          "sha256": "7d043caf6154622a3f472a765cd58636341211a5c6a2ec08449c4c864eb45d61"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Combinatorial Sieving",
+            "line_end": 2655,
+            "line_start": 2084,
+            "mathematical_role": "Uses partition-lattice Möbius inversion to restore distinct indices and proves that the resulting Fourier-side distribution is the GUE determinant via marked partitions, cycles, and Spitzer's walk identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2480,
+          "line_start": 2319,
+          "title": "Marked partitions and permutation cycles produce the two factorizations",
+          "unit_id": "openalex_w2068184834-u25",
+          "unit_type": "proof-fragment",
+          "why_material": "Marking paired blocks makes the Möbius-side factorization explicit, while decomposing determinant permutations into disjoint cycles and applying Parseval yields the Fourier-side interval-overlap factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two proofs expose parallel decompositions—partition reduction and cycle decomposition—that set up the final componentwise comparison.",
+          "representation_dependency": "Some marking superscripts and products are damaged; conceptual structure is prose-grounded, but equations need scan verification.",
+          "unit_id": "openalex_w2068184834-u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2318,
+            "line_start": 2268,
+            "title": "Reducing the GUE identification to a subset identity",
+            "unit_id": "openalex_w2068184834-u24",
+            "unit_type": "decomposition",
+            "why_material": "The Möbius side factors into subset functions X_S, the determinant Fourier transform factors into cycle-overlap functions Y_S, and equality reduces to a local identity for every zero-sum subset under the support bound."
+          },
+          {
+            "line_end": 2650,
+            "line_start": 2481,
+            "title": "Spitzer random-walk identity closes the arithmetic-to-GUE bridge",
+            "unit_id": "openalex_w2068184834-u26",
+            "unit_type": "bridge-construction",
+            "why_material": "Cycle overlap is reinterpreted as one minus the range of a zero-sum walk; Spitzer's unique rotation below a chord and upper-convex-envelope decomposition count that range by set partitions, proving the subset identity needed for the GUE determinant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smoothing and Fourier localization turn zeros into bounded prime products; discreteness forces multiplicative diagonals, universal second moments reduce them to pairings, and Möbius/cycle combinatorics identifies those pairings with the GUE determinant.",
+            "limit": "The chain is proved only under the source's coefficient and Fourier-support hypotheses, and the unsmoothed statement additionally uses RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834-u10",
+              "openalex_w2068184834-u14",
+              "openalex_w2068184834-u16",
+              "openalex_w2068184834-u19",
+              "openalex_w2068184834-u22",
+              "openalex_w2068184834-u23",
+              "openalex_w2068184834-u25",
+              "openalex_w2068184834-u26"
+            ],
+            "title": "Explicit-formula-to-GUE causal chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The random-walk perspective is the key semantic bridge from Fourier interval intersections to factorial subset weights.",
+      "line_end": 2650,
+      "line_start": 2481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is well supported by prose; exact factorial sums and figure-dependent geometry should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Cycle overlap is reinterpreted as one minus the range of a zero-sum walk; Spitzer's unique rotation below a chord and upper-convex-envelope decomposition count that range by set partitions, proving the subset identity needed for the GUE determinant.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        48,
+        49,
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spitzer random-walk identity closes the arithmetic-to-GUE bridge",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u26.txt",
+      "unit_bytes": 9111,
+      "unit_id": "openalex_w2068184834-u26",
+      "unit_sha256": "9153d359ac457328459a9ed2e34d1d05a9cd490a79e6137ab96f6c54d73b4bcf",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u26.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2473,
+          "line_end": 2480,
+          "text": "partitions F of N = {1, . . . , n}:\n                                 a\n                         Sn =          S ∗ (F1) × · · · × S ∗ (Fν )\n                                  F\n\nwhere for a subset Fj ⊂ N , S ∗ (Fj ) denotes the set of all cyclic per-\nmutations of the indices in Fj . The sign of any cyclic permutation in\nS ∗(Fj ) is (−1)|Fj |−1 . Proposition 4.2 now follows.\n",
+          "sha256": "ae0d147756aaaa5bc8d85abe621f6dfd926495a1f8589afed98035551e5612cf"
+        },
+        "after": {
+          "line_start": 2651,
+          "line_end": 2658,
+          "text": "\n<!-- source-page: 51 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 51\n\n                                5. Appendix\n\n5.1.   Our goal in this appendix is two-fold. Firstly, we describe the\n",
+          "sha256": "bee85a1d07bf3d66ab19bbda91205928ceed792f7e88e24f7f11c06a8eb6a740"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Combinatorial Sieving",
+            "line_end": 2655,
+            "line_start": 2084,
+            "mathematical_role": "Uses partition-lattice Möbius inversion to restore distinct indices and proves that the resulting Fourier-side distribution is the GUE determinant via marked partitions, cycles, and Spitzer's walk identity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2650,
+          "line_start": 2481,
+          "title": "Spitzer random-walk identity closes the arithmetic-to-GUE bridge",
+          "unit_id": "openalex_w2068184834-u26",
+          "unit_type": "bridge-construction",
+          "why_material": "Cycle overlap is reinterpreted as one minus the range of a zero-sum walk; Spitzer's unique rotation below a chord and upper-convex-envelope decomposition count that range by set partitions, proving the subset identity needed for the GUE determinant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The random-walk perspective is the key semantic bridge from Fourier interval intersections to factorial subset weights.",
+          "representation_dependency": "The argument is well supported by prose; exact factorial sums and figure-dependent geometry should be checked against the PDF.",
+          "unit_id": "openalex_w2068184834-u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2480,
+            "line_start": 2319,
+            "title": "Marked partitions and permutation cycles produce the two factorizations",
+            "unit_id": "openalex_w2068184834-u25",
+            "unit_type": "proof-fragment",
+            "why_material": "Marking paired blocks makes the Möbius-side factorization explicit, while decomposing determinant permutations into disjoint cycles and applying Parseval yields the Fourier-side interval-overlap factors."
+          },
+          {
+            "line_end": 2693,
+            "line_start": 2658,
+            "title": "Langlands quotients organize general local factors",
+            "unit_id": "openalex_w2068184834-u27",
+            "unit_type": "construction",
+            "why_material": "A non-tempered generic local representation is decomposed into tempered blocks with ordered real parameters, tempered blocks into square-integrable constituents, and principal L-factors multiply along both stages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smoothing and Fourier localization turn zeros into bounded prime products; discreteness forces multiplicative diagonals, universal second moments reduce them to pairings, and Möbius/cycle combinatorics identifies those pairings with the GUE determinant.",
+            "limit": "The chain is proved only under the source's coefficient and Fourier-support hypotheses, and the unsmoothed statement additionally uses RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834-u10",
+              "openalex_w2068184834-u14",
+              "openalex_w2068184834-u16",
+              "openalex_w2068184834-u19",
+              "openalex_w2068184834-u22",
+              "openalex_w2068184834-u23",
+              "openalex_w2068184834-u25",
+              "openalex_w2068184834-u26"
+            ],
+            "title": "Explicit-formula-to-GUE causal chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This abstraction reduces all local calculations to square-integrable finite and real cases handled next.",
+      "line_end": 2693,
+      "line_start": 2658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Representation-theoretic prose is clear; product notation should be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A non-tempered generic local representation is decomposed into tempered blocks with ordered real parameters, tempered blocks into square-integrable constituents, and principal L-factors multiply along both stages.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Langlands quotients organize general local factors",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u27.txt",
+      "unit_bytes": 2031,
+      "unit_id": "openalex_w2068184834-u27",
+      "unit_sha256": "906ee15a7a38568b8abaac61e5d91d34ca680b6d28d361697f96bd8c7eda9bcf",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u27.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2650,
+          "line_end": 2657,
+          "text": "This concludes the proof of (4.35) and so of Proposition 4.3.\n\n<!-- source-page: 51 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 51\n\n                                5. Appendix\n\n",
+          "sha256": "1cdcfb9bb1215261953fd41e91aebc65f966cae5886738bb3d1123e7471c7243"
+        },
+        "after": {
+          "line_start": 2694,
+          "line_end": 2701,
+          "text": "\n5.2. p-adic factors. For the p-adic case, the square-integrable repre-\nsentations are built out of super-cuspidal representations as follows: If\n\n<!-- source-page: 52 -->\n\n52                    ZEÉV RUDNICK AND PETER SARNAK\n\n",
+          "sha256": "2ef866815c88006d9dbaf191b67860a519790667061161512cd4f236bb4389d7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 3022,
+            "line_start": 2656,
+            "mathematical_role": "Describes Langlands-quotient local factors at finite and archimedean places, derives Rankin-Selberg coefficient positivity, and proves finite-place and archimedean parameter bounds used in the main argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2693,
+          "line_start": 2658,
+          "title": "Langlands quotients organize general local factors",
+          "unit_id": "openalex_w2068184834-u27",
+          "unit_type": "construction",
+          "why_material": "A non-tempered generic local representation is decomposed into tempered blocks with ordered real parameters, tempered blocks into square-integrable constituents, and principal L-factors multiply along both stages."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This abstraction reduces all local calculations to square-integrable finite and real cases handled next.",
+          "representation_dependency": "Representation-theoretic prose is clear; product notation should be PDF-checked.",
+          "unit_id": "openalex_w2068184834-u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2650,
+            "line_start": 2481,
+            "title": "Spitzer random-walk identity closes the arithmetic-to-GUE bridge",
+            "unit_id": "openalex_w2068184834-u26",
+            "unit_type": "bridge-construction",
+            "why_material": "Cycle overlap is reinterpreted as one minus the range of a zero-sum walk; Spitzer's unique rotation below a chord and upper-convex-envelope decomposition count that range by set partitions, proving the subset identity needed for the GUE determinant."
+          },
+          {
+            "line_end": 2814,
+            "line_start": 2695,
+            "title": "p-adic twist classes factor the self Rankin-Selberg local term",
+            "unit_id": "openalex_w2068184834-u28",
+            "unit_type": "construction",
+            "why_material": "Square-integrable p-adic representations are built from supercuspidals, Rankin-Selberg factors vanish outside matching twist classes, and regrouping matched blocks into explicit positive-factor products locates the first pole and bounds local Langlands parameters below one half."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The twist-class partition is the structural device connecting local classification to the analytic bound used in Section 2.",
+      "line_end": 2814,
+      "line_start": 2695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerous indices and shifts are extraction-sensitive; exact local-factor products require the original PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Square-integrable p-adic representations are built from supercuspidals, Rankin-Selberg factors vanish outside matching twist classes, and regrouping matched blocks into explicit positive-factor products locates the first pole and bounds local Langlands parameters below one half.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        52,
+        53,
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "p-adic twist classes factor the self Rankin-Selberg local term",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u28.txt",
+      "unit_bytes": 6966,
+      "unit_id": "openalex_w2068184834-u28",
+      "unit_sha256": "bfa16dad8a20f284a1c79aa8a77c517147beb9657c323fc618f713da9752f9b1",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u28.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2687,
+          "line_end": 2694,
+          "text": "                                         r\n                                         Y\n                            L(s, σ) =          L(s, τj )                  (5.3)\n                                         j=1\n\nThis reduces the problem to the case of square-integrable representa-\ntions. We describe these separately in the p-adic and real setting.\n\n",
+          "sha256": "e566a4495400faf25e2c32abb82a244a6638f9b3b16d714b1a253908e7b60c68"
+        },
+        "after": {
+          "line_start": 2815,
+          "line_end": 2822,
+          "text": "     We can expand L(s, πp × π̃p) and LFl (s) in a Dirichlet series\n                                                       ∞\n                                                       X b(pe )\n                            L(s, πp × π̃p) =\n                                                       e=0     pes\n                                                        ∞                                  (5.13)\n                                                    bl (perl )\n                                                       X\n",
+          "sha256": "7ee8e4a9506cde4f1fd171b89845845cf591f660ac8a21a101422cbfb445b25a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 3022,
+            "line_start": 2656,
+            "mathematical_role": "Describes Langlands-quotient local factors at finite and archimedean places, derives Rankin-Selberg coefficient positivity, and proves finite-place and archimedean parameter bounds used in the main argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2814,
+          "line_start": 2695,
+          "title": "p-adic twist classes factor the self Rankin-Selberg local term",
+          "unit_id": "openalex_w2068184834-u28",
+          "unit_type": "construction",
+          "why_material": "Square-integrable p-adic representations are built from supercuspidals, Rankin-Selberg factors vanish outside matching twist classes, and regrouping matched blocks into explicit positive-factor products locates the first pole and bounds local Langlands parameters below one half."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The twist-class partition is the structural device connecting local classification to the analytic bound used in Section 2.",
+          "representation_dependency": "Numerous indices and shifts are extraction-sensitive; exact local-factor products require the original PDF.",
+          "unit_id": "openalex_w2068184834-u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2693,
+            "line_start": 2658,
+            "title": "Langlands quotients organize general local factors",
+            "unit_id": "openalex_w2068184834-u27",
+            "unit_type": "construction",
+            "why_material": "A non-tempered generic local representation is decomposed into tempered blocks with ordered real parameters, tempered blocks into square-integrable constituents, and principal L-factors multiply along both stages."
+          },
+          {
+            "line_end": 2865,
+            "line_start": 2815,
+            "title": "Local factorization yields nonnegative Rankin-Selberg coefficients",
+            "unit_id": "openalex_w2068184834-u29",
+            "unit_type": "proof-fragment",
+            "why_material": "Taking logarithms of the twist-class product writes each relevant coefficient as sums of squared magnitudes, giving a lower bound that implies nonnegativity of the global Rankin-Selberg Dirichlet coefficients."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This positivity is later the prerequisite for Landau's theorem and thus for global parameter bounds.",
+      "line_end": 2865,
+      "line_start": 2815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents and divisibility conditions need PDF verification, though the sum-of-squares mechanism is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking logarithms of the twist-class product writes each relevant coefficient as sums of squared magnitudes, giving a lower bound that implies nonnegativity of the global Rankin-Selberg Dirichlet coefficients.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local factorization yields nonnegative Rankin-Selberg coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u29.txt",
+      "unit_bytes": 2373,
+      "unit_id": "openalex_w2068184834-u29",
+      "unit_sha256": "50e09e92b34c21ff16251e3bfa406ccee2ee1954a47dfa8d0eda36b599adeadf",
+      "unit_type": "proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u29.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2807,
+          "line_end": 2814,
+          "text": "with a pole at s = 2 max{|tj |}. Since it is known that the local factor\nis holomorphic in Re s ≥ 1 [8], being the g.c.d. of local integrals with\nthis property, we see that for πp generic and unitary the Langlands\nparameters satisfy max{|tj |} < 1/2. As a consequence, if we write the\n                                                   Q\nprincipal local factor as L(s, πp ) = m                   −s −1\n                                         j=1 (1 − α(p, j)p ) , then we see\nthat |α(p, j)| ≤ pmax{|tj |} < p1/2. This proves (2.2) for all p < ∞.\n",
+          "sha256": "ea84e3a52e7f7affdc085873ad21cf631434982474af702664810968887cfa75"
+        },
+        "after": {
+          "line_start": 2866,
+          "line_end": 2873,
+          "text": "\n5.3. Archimedean factors. Any irreducible unitary representation\nof G = GLm (R) is given as a Langlands quotient\n\n                        π∞ = J (G, P ; σ1 [s1], . . . , σr [sr ])                    (5.15)\n\nwhere σj are square-integrable representations and Re s1 ≥ · · · ≥ Re sj .\nFor the real case, GLn (R) does not have square-integrable representa-\n",
+          "sha256": "777c110eebd8aa92c51d8e4bf4bba2e8337cdcb019b077b1fc7accf99eb47283"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 3022,
+            "line_start": 2656,
+            "mathematical_role": "Describes Langlands-quotient local factors at finite and archimedean places, derives Rankin-Selberg coefficient positivity, and proves finite-place and archimedean parameter bounds used in the main argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2865,
+          "line_start": 2815,
+          "title": "Local factorization yields nonnegative Rankin-Selberg coefficients",
+          "unit_id": "openalex_w2068184834-u29",
+          "unit_type": "proof-fragment",
+          "why_material": "Taking logarithms of the twist-class product writes each relevant coefficient as sums of squared magnitudes, giving a lower bound that implies nonnegativity of the global Rankin-Selberg Dirichlet coefficients."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This positivity is later the prerequisite for Landau's theorem and thus for global parameter bounds.",
+          "representation_dependency": "Exact exponents and divisibility conditions need PDF verification, though the sum-of-squares mechanism is recoverable.",
+          "unit_id": "openalex_w2068184834-u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2814,
+            "line_start": 2695,
+            "title": "p-adic twist classes factor the self Rankin-Selberg local term",
+            "unit_id": "openalex_w2068184834-u28",
+            "unit_type": "construction",
+            "why_material": "Square-integrable p-adic representations are built from supercuspidals, Rankin-Selberg factors vanish outside matching twist classes, and regrouping matched blocks into explicit positive-factor products locates the first pole and bounds local Langlands parameters below one half."
+          },
+          {
+            "line_end": 2949,
+            "line_start": 2867,
+            "title": "Archimedean factor classification and a global proof of the half-bound",
+            "unit_id": "openalex_w2068184834-u30",
+            "unit_type": "method-comparison",
+            "why_material": "Real Langlands quotients reduce to characters and discrete series, whose gamma factors give the completed local term; comparing the first local pole with global Rankin-Selberg holomorphy proves the archimedean parameter half-bound and avoids a more complicated local classification proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Local representation structure makes Rankin-Selberg coefficients positive and locates local poles, while global continuation, holomorphy, and Landau estimates feed back to sharpen local parameter bounds used in the global prime-sum analysis.",
+            "limit": "Several exact local formulas are text-layer fragile, and the strongest archimedean improvement stated at the end is cited for the spherical case rather than derived there.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834-u08",
+              "openalex_w2068184834-u11",
+              "openalex_w2068184834-u29",
+              "openalex_w2068184834-u30",
+              "openalex_w2068184834-u31"
+            ],
+            "title": "Local-global feedback loop for analytic control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The explicit local-versus-global proof comparison is a reusable method-selection insight.",
+      "line_end": 2949,
+      "line_start": 2867,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gamma shifts and tensor-product cases are formula-dependent and require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Real Langlands quotients reduce to characters and discrete series, whose gamma factors give the completed local term; comparing the first local pole with global Rankin-Selberg holomorphy proves the archimedean parameter half-bound and avoids a more complicated local classification proof.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        56,
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Archimedean factor classification and a global proof of the half-bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u30.txt",
+      "unit_bytes": 4448,
+      "unit_id": "openalex_w2068184834-u30",
+      "unit_sha256": "ef7de8fb47b5b51d10065b616277dbea92d9b41d7ade88784f075bda2fd3c1ed",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u30.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2859,
+          "line_end": 2866,
+          "text": "                  bl (perl ) ≥           ≥ |     (p       ) |\n                                     e    e j∈Fl\n\n\n\nAs a consequence of (2.19) and (5.14) we see that the L(s, π × π̃) has\nnon-negative coefficients b(n) ≥ 0.\n\n",
+          "sha256": "3c567a91b7f69f2f0cda6d228fc5deab5fc29104cff4ce294c2b3701e8e795ec"
+        },
+        "after": {
+          "line_start": 2950,
+          "line_end": 2957,
+          "text": "\n5.4. Global bounds. The first improvement is for the finite places\nand follows a well known argument [31].\n\nProposition 5.1. Let π be an irreducible cuspidal automorphic repre-\nsentation of GLm /Q, and let πp be a local constituent of π. Then\n                                                              2\n                                    |απ (p, j)| ≤ p1/2−1/(m +1)                               (5.20)\n",
+          "sha256": "9941d7bdfddb312f923c9f95215e3135443c0a5b230e584a5092a08412bf7500"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 3022,
+            "line_start": 2656,
+            "mathematical_role": "Describes Langlands-quotient local factors at finite and archimedean places, derives Rankin-Selberg coefficient positivity, and proves finite-place and archimedean parameter bounds used in the main argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2949,
+          "line_start": 2867,
+          "title": "Archimedean factor classification and a global proof of the half-bound",
+          "unit_id": "openalex_w2068184834-u30",
+          "unit_type": "method-comparison",
+          "why_material": "Real Langlands quotients reduce to characters and discrete series, whose gamma factors give the completed local term; comparing the first local pole with global Rankin-Selberg holomorphy proves the archimedean parameter half-bound and avoids a more complicated local classification proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The explicit local-versus-global proof comparison is a reusable method-selection insight.",
+          "representation_dependency": "Gamma shifts and tensor-product cases are formula-dependent and require PDF verification.",
+          "unit_id": "openalex_w2068184834-u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2865,
+            "line_start": 2815,
+            "title": "Local factorization yields nonnegative Rankin-Selberg coefficients",
+            "unit_id": "openalex_w2068184834-u29",
+            "unit_type": "proof-fragment",
+            "why_material": "Taking logarithms of the twist-class product writes each relevant coefficient as sums of squared magnitudes, giving a lower bound that implies nonnegativity of the global Rankin-Selberg Dirichlet coefficients."
+          },
+          {
+            "line_end": 3014,
+            "line_start": 2951,
+            "title": "Landau positivity sharpens finite-place parameter bounds",
+            "unit_id": "openalex_w2068184834-u31",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Nonnegative Rankin-Selberg coefficients plus meromorphic continuation let Landau's theorem bound coefficient growth; taking high powers isolates each local parameter and yields the exponent 1/2 minus 1/(m^2+1), with an analogous spherical archimedean estimate cited."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Local representation structure makes Rankin-Selberg coefficients positive and locates local poles, while global continuation, holomorphy, and Landau estimates feed back to sharpen local parameter bounds used in the global prime-sum analysis.",
+            "limit": "Several exact local formulas are text-layer fragile, and the strongest archimedean improvement stated at the end is cited for the spherical case rather than derived there.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834-u08",
+              "openalex_w2068184834-u11",
+              "openalex_w2068184834-u29",
+              "openalex_w2068184834-u30",
+              "openalex_w2068184834-u31"
+            ],
+            "title": "Local-global feedback loop for analytic control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the dependency loop from the appendix back to the coefficient bounds used in Sections 2 and 3.",
+      "line_end": 3014,
+      "line_start": 2951,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponent typography is broken across lines; the bound's exact formula must be checked in the retained PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Nonnegative Rankin-Selberg coefficients plus meromorphic continuation let Landau's theorem bound coefficient growth; taking high powers isolates each local parameter and yields the exponent 1/2 minus 1/(m^2+1), with an analogous spherical archimedean estimate cited.",
+      "source_id": "openalex_w2068184834",
+      "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+      "source_page_markers_inside_unit": [
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Landau positivity sharpens finite-place parameter bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2068184834-u31.txt",
+      "unit_bytes": 2866,
+      "unit_id": "openalex_w2068184834-u31",
+      "unit_sha256": "a67dc8a34251055e36fa82b51aa4faf95ea93a6c805bd0a133c4b57280f338bf",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834-u31.txt",
+      "source": {
+        "source_id": "openalex_w2068184834",
+        "title": "Zeros of principal L-functions and random matrix theory",
+        "authors": [
+          "Zeév Rudnick",
+          "Peter Sarnak"
+        ],
+        "year": 1996,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "l-functions",
+          "random-matrix",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2943,
+          "line_end": 2950,
+          "text": "\n<!-- source-page: 57 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 57\n\ngeneric. On the other hand, the improvements of the bounds (2.2) and\n(2.5) described below, do require global considerations.\n\n",
+          "sha256": "11b0e06cd2ff86b766da9986b52486258ff35d4a2af72493a725d9f8abdb7841"
+        },
+        "after": {
+          "line_start": 3015,
+          "line_end": 3022,
+          "text": "     Acknowledgement: We would like to thank S. Miller for a careful\nreading of the manuscript and F. Shahidi for information concerning\nRankin-Selberg L-functions.\n\n<!-- source-page: 59 -->\n\nZEROS OF PRINCIPAL L-FUNCTIONS AND RANDOM MATRIX THEORY 59\n\n",
+          "sha256": "8879f608de878622165a225a2ba5da1dc150e851cc0ceff8ec05a1199fddea18"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9951bfd8261d81d703d7b072ff3316bebfa0b39f6bf32f786caf90fc1cf7c70c",
+        "dossier_sha256": "64624de1f18ef4c7b1600b52c6c2c3922a8b07060d2ed6db2f504f6639ded46a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Appendix",
+            "line_end": 3022,
+            "line_start": 2656,
+            "mathematical_role": "Describes Langlands-quotient local factors at finite and archimedean places, derives Rankin-Selberg coefficient positivity, and proves finite-place and archimedean parameter bounds used in the main argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3014,
+          "line_start": 2951,
+          "title": "Landau positivity sharpens finite-place parameter bounds",
+          "unit_id": "openalex_w2068184834-u31",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Nonnegative Rankin-Selberg coefficients plus meromorphic continuation let Landau's theorem bound coefficient growth; taking high powers isolates each local parameter and yields the exponent 1/2 minus 1/(m^2+1), with an analogous spherical archimedean estimate cited."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the dependency loop from the appendix back to the coefficient bounds used in Sections 2 and 3.",
+          "representation_dependency": "The exponent typography is broken across lines; the bound's exact formula must be checked in the retained PDF.",
+          "unit_id": "openalex_w2068184834-u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2949,
+            "line_start": 2867,
+            "title": "Archimedean factor classification and a global proof of the half-bound",
+            "unit_id": "openalex_w2068184834-u30",
+            "unit_type": "method-comparison",
+            "why_material": "Real Langlands quotients reduce to characters and discrete series, whose gamma factors give the completed local term; comparing the first local pole with global Rankin-Selberg holomorphy proves the archimedean parameter half-bound and avoids a more complicated local classification proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Local representation structure makes Rankin-Selberg coefficients positive and locates local poles, while global continuation, holomorphy, and Landau estimates feed back to sharpen local parameter bounds used in the global prime-sum analysis.",
+            "limit": "Several exact local formulas are text-layer fragile, and the strongest archimedean improvement stated at the end is cited for the spherical case rather than derived there.",
+            "parent_local_unit_ids": [
+              "openalex_w2068184834-u08",
+              "openalex_w2068184834-u11",
+              "openalex_w2068184834-u29",
+              "openalex_w2068184834-u30",
+              "openalex_w2068184834-u31"
+            ],
+            "title": "Local-global feedback loop for analytic control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "cf86f03a1c991442e81af2526614006d7f4a35e6fcd6519da983e5836521a0d6"
+}

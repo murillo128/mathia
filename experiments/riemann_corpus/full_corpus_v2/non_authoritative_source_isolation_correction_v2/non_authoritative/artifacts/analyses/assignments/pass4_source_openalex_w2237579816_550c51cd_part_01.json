@@ -1,0 +1,178 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2237579816_550c51cd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2237579816",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the normalization, decomposition, phase analysis, and perturbation criterion together because the root count follows from their interaction, not from coefficient approximation alone.",
+      "line_end": 427,
+      "line_start": 376,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence: summation limits, the central term, powers of the level, and the exponential phase are vertically fragmented. The perturbative sign-change mechanism is clear, but exact definitions and bound (6.2) require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-transparent exponential model controls the large-weight polynomial",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u12.txt",
+      "unit_bytes": 3320,
+      "unit_id": "openalex_w2237579816_v2_u12",
+      "unit_sha256": "b3f71d05187014178db28bf451474dac75f7efc7875776b863a04105d0b58861",
+      "unit_type": "dominant-model-perturbation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 368,
+          "line_end": 375,
+          "text": "(5.3)                        N ≥ max                                    .\n                                 1≤j≤k/2−2 k/2 − j − 1      ζ(j + 3/2)4\n   For any given k, we can compute the bound (5.3). Thus, for k = 8, it suffices to take N ≥ 142;\nfor k = 10 it suffices to have N ≥ 64; for k = 12 it suffices to have N ≥ 45; for k = 14 it suffices\nto have N ≥ 42. We have used sage to check (5.2) for those newforms not covered by (5.3)√for\nweights 8 ≤ k ≤ 14. The zeros of those newforms which do not satisfy (5.2) still lie on |z| = 1/ N.\nRemark. Eventually, this cannot furnish a bound better than 4π 2 for N, and so we must turn to\nanother approach for large k and small N, which we carry out in the next section.\n",
+          "sha256": "5fb5f124c9440a0aba3da005a04acb82068c0fe192de1601a5795d03311a7a04"
+        },
+        "after": {
+          "line_start": 428,
+          "line_end": 435,
+          "text": "  Now by Lemma 2.2 we see that L(f, 2m + 1 − j)/L(f, 2m + 1) − 1 ≤ ζ( 21 + m − j)2 − 1 so that\n                                    m−1                                 ∞\n                                    X   1 \u0010 2π \u0011j 1            2\n                                                                       X   1 \u0010 2π \u0011j\n                |S1 (z) + S2 (z)| ≤        √     (ζ( 2 + m − j) − 1) +        √      .\n                                    j=1\n                                        j!   N                         j=m\n                                                                           j!   N\n",
+          "sha256": "7c449e728240ff2b1c90aad7ea8d6e62ac994f3095010571f4bcdc2820f86d6c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Larger weights and exponential approximation",
+            "line_end": 474,
+            "line_start": 376,
+            "mathematical_role": "Approximates a normalized polynomial by a zero-transparent exponential model, controls three error terms, and reduces the proof to an explicit perturbation inequality plus finite computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 427,
+          "line_start": 376,
+          "title": "A zero-transparent exponential model controls the large-weight polynomial",
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "unit_type": "dominant-model-perturbation",
+          "why_material": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the normalization, decomposition, phase analysis, and perturbation criterion together because the root count follows from their interaction, not from coefficient approximation alone.",
+          "representation_dependency": "Very high formula dependence: summation limits, the central term, powers of the level, and the exponential phase are vertically fragmented. The perturbative sign-change mechanism is clear, but exact definitions and bound (6.2) require PDF checking.",
+          "unit_id": "openalex_w2237579816_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 375,
+            "line_start": 336,
+            "title": "Monotone coefficients transfer Pólya–Szegő zero counts to period polynomials",
+            "unit_id": "openalex_w2237579816_v2_u11",
+            "unit_type": "classical-zero-counting-transfer",
+            "why_material": "A classical theorem forces simple, interlacing zeros of sine and cosine polynomials when their coefficients increase. Completed-L monotonicity handles the first comparison, the Euler-product ratio bound makes the remaining comparisons explicit in level and weight, and computation is reserved for the finite set below those thresholds."
+          },
+          {
+            "line_end": 474,
+            "line_start": 428,
+            "title": "Uniform coefficient bounds reduce the large-weight proof to an explicit finite threshold",
+            "unit_id": "openalex_w2237579816_v2_u13",
+            "unit_type": "explicit-error-budget",
+            "why_material": "The Euler-product ratio estimate bounds the first error, the exponential tail bounds the second, and central-value monotonicity bounds the third. Combining them gives a single explicit inequality in weight and level, a threshold table, and a finite collection of residual forms delegated to computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once a normalized polynomial is uniformly close on the circle to a model with monotone phase and alternating extrema, a strict amplitude-versus-error inequality preserves the full zero count and also traps each root near a predicted phase location.",
+            "limit": "The preserved count depends on the strict numerical bound; the extracted constants and finite threshold table must be verified before transferring the argument.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u12",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u14"
+            ],
+            "title": "Stable zero counts from a dominant phase plus a uniform error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "spontaneous_reading": "After normalization, the polynomial is split into a model with an explicit monotone phase and three errors; a strict amplitude margin makes the model's alternating signs survive the perturbation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "source_grounded_mathematics": "The source normalizes Pf to Qf and decomposes Qf into z^m exp(2π/(z√N)) plus errors S1,S2,S3. On z=e^{iθ}, the model has phase mθ−2πsinθ/√N, increasing through 2πm, so its real and imaginary parts have 2m zeros with alternating extrema. If the uniform total error is smaller than the model's minimum amplitude, the corresponding sign changes and root count persist for Qf.",
+          "conceptual_reading": "The dominant model is chosen because its zeros are phase-transparent; uniform approximation then transfers a discrete sign certificate rather than attempting coefficientwise root tracking.",
+          "representation_or_bridge": "Normalization isolates an exponential model, and the unit-circle phase converts complex approximation into real and imaginary sign-change stability for the two functional-equation signs.",
+          "boundary_or_failure": "The transfer requires a strict uniform error bound on the full circle; closeness without an amplitude margin would not preserve signs or the complete zero count.",
+          "uncertainty": "The perturbation mechanism is clear, but summation limits, the central term, level powers, phase normalization, and bound (6.2) are highly formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2237579816_v2_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The source normalizes P_f to Q_f, decomposes it into an exponential model plus S1,S2,S3, and uses alternating extrema plus a strict uniform amplitude margin to preserve sign changes.",
+          "The candidate correctly notes that mere closeness without a margin cannot preserve the count."
+        ],
+        "inference": [
+          "A phase-transparent model transfers a discrete sign certificate more robustly than coefficientwise root tracking."
+        ],
+        "unsupported_or_imported": [
+          "The candidate repeats that the phase mθ−2πsinθ/√N is increasing without retaining its parameter burden. Its derivative is m−2πcosθ/√N, so monotonicity needs m>2π/√N (or an equivalent regime); it is not a parameter-free consequence of the decomposition."
+        ],
+        "paraphrase_or_style_risk": [
+          "Dominant model language is substantive only together with phase monotonicity and the strict bound (6.2)."
+        ],
+        "context_or_ocr_risk": [
+          "Summation limits, central term, powers of N, phase normalization, and (6.2) are highly fragmented."
+        ],
+        "missed_mechanism": [
+          "If the phase derivative changes sign, the asserted alternating-extrema enumeration and one-zero-per-interval argument need not follow even when an error bound is small."
+        ],
+        "revision_instructions": [
+          "Add the weight-level condition ensuring phase monotonicity, or scope the statement to the later large-weight regime where it holds.",
+          "Keep phase control and amplitude control as separate necessary checks."
+        ]
+      }
+    }
+  ]
+}

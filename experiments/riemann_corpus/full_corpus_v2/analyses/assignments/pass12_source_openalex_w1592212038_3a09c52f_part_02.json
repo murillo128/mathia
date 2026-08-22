@@ -1,0 +1,360 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1592212038_3a09c52f_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1592212038",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-authored interpretation of how improved first-spacing moments translate into zeta exponents, with the historical caveat about difficult alpha cases.",
+      "line_end": 1328,
+      "line_start": 1316,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed rational-exponent identities; the comparative claim is stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remark compares essentially optimal A4, A5, and A6 inputs and interprets the 13/84 exponent as exactly doubling the original Bombieri-Iwaniec saving over 1/6.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moment order and the doubling of the critical-line saving",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u025.txt",
+      "unit_bytes": 799,
+      "unit_id": "openalex_w1592212038_u025",
+      "unit_sha256": "03a6b4ae341fb9342e1ce1299ab8f0cd3b61050aaf0a2ce4df9837f38ae9c5aa",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u025.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1308,
+          "line_end": 1315,
+          "text": "It follows from the ‘approximate functional equation’ for ζ(s) in the critical strip, see [T] (4.12.4), that\n                                    \u00101          \u0011            X           1\n                                ζ        + it       ≤2                n− 2 +it + O(1) (t → ∞).                  (4.3)\n                                     2                         √\n                                                          n≤   t/2π\n\nFrom partial summation and dyadic dissection, Theorem 5 now follows in the usual way.\n\n",
+          "sha256": "3e655a01e2d0cad1a712fea16a43d7280857c0d54ccf846b8964c251d9c53cfa"
+        },
+        "after": {
+          "line_start": 1329,
+          "line_end": 1336,
+          "text": "\n\n\n5       Further comments\nRecalling (3.2), the preceding shows that one has the estimate\n\n                                                1     13     1     log M\n                                      |S| ≪ M 2 T ε+ 84 if     ≥α=        >0                                      (5.1)\n",
+          "sha256": "44e9f8402311c6577dc72dea9a105552cd5a438afbe2a5cb8a7fcb1d659b36b5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Bounding the zeta-function on the critical line",
+            "line_end": 1331,
+            "line_start": 1281,
+            "mathematical_role": "Covers the remaining short-sum ranges with known estimates, applies the approximate functional equation, and interprets the resulting saving."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1328,
+          "line_start": 1316,
+          "title": "Moment order and the doubling of the critical-line saving",
+          "unit_id": "openalex_w1592212038_u025",
+          "unit_type": "method-comparison",
+          "why_material": "The remark compares essentially optimal A4, A5, and A6 inputs and interprets the 13/84 exponent as exactly doubling the original Bombieri-Iwaniec saving over 1/6."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a source-authored interpretation of how improved first-spacing moments translate into zeta exponents, with the historical caveat about difficult alpha cases.",
+          "representation_dependency": "Depends on the displayed rational-exponent identities; the comparative claim is stated in prose.",
+          "unit_id": "openalex_w1592212038_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1314,
+            "line_start": 1281,
+            "title": "Covering complementary scales and transferring to zeta",
+            "unit_id": "openalex_w1592212038_u024",
+            "unit_type": "application",
+            "why_material": "Two external exponential-sum bounds cover the alpha range below Theorem 4, with an overlap calculation ensuring full coverage. For the logarithmic phase relevant to zeta, the approximate functional equation, partial summation, and dyadic dissection then transfer the uniform short-sum estimate to the critical-line bound."
+          },
+          {
+            "line_end": 1373,
+            "line_start": 1332,
+            "title": "From the paper's estimate to an exponent pair",
+            "unit_id": "openalex_w1592212038_u026",
+            "unit_type": "generalization",
+            "why_material": "The source reformulates the result as the exponent pair (13/84,55/84), handles scales with M above the square root by renormalizing T or applying the B-process after Poisson summation, and notes the fixed-point relation of the relevant pair under B."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Extreme large-M cases are separately secured by the classical (1/2,1/2) pair.",
+      "line_end": 1373,
+      "line_start": 1332,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the exponent-pair formulas and scale substitutions; the Poisson/B-process details are cited rather than reproduced.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source reformulates the result as the exponent pair (13/84,55/84), handles scales with M above the square root by renormalizing T or applying the B-process after Poisson summation, and notes the fixed-point relation of the relevant pair under B.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the paper's estimate to an exponent pair",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u026.txt",
+      "unit_bytes": 2774,
+      "unit_id": "openalex_w1592212038_u026",
+      "unit_sha256": "a5ee07811a79733b70ab5b8752a4c9dc5131253a86a78f04b6b6a173e34cfea2",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u026.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1324,
+          "line_end": 1331,
+          "text": "\nrepresents exactly a doubling of Bombieri and Iwaniec’s improvement over the classical ‘1/6’ (with their essentially\noptimal bound on A5 (δ, Hδ) Huxley and Kolesnik, in 1991, got the exponent 17/108 = (1 − 1/18)/6, and would\nin fact have got 11/70 = (1 − 2/35)/6, except for the fact that cases with α near to 23/54 were a problem at that\ntime).\n\n\n\n",
+          "sha256": "32d8d753c900d437c4479da6b4406f0c090471bd2362a7f429c336c30d3a7033"
+        },
+        "after": {
+          "line_start": 1374,
+          "line_end": 1381,
+          "text": "      Problem (b) is also remarked upon in Sargos’s paper [S] (see the remark on p. 310). Firstly one constructs\na suitable extension of the function f (x), so that the resulting function f1 (x) has domain [M/2, M ], is identical\nto f (x) on the subinterval [a, b], and satisfies (on [M/2, M ]) the requisite set of conditions on its derivatives\n(these conditions being such as to make the theory of exponent pairs applicable). If s > 0 and yx−s is the relevant\n‘monomial’ approximation to f ′ (x) on [a, b] (such as must be present when the exponent pair theory is applicable),\n                                                                                                Rx\nthen it is enough to consider an extension f1 of f that, for b < x ≤ M , satisfies f1 (x) = y b u−s du + a0 +\n                                                                                                                  (P )\n",
+          "sha256": "b64d8ce50ade683682a85493134cb1f70714211049101e1886b93cca33076e6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Further comments",
+            "line_end": 1395,
+            "line_start": 1332,
+            "mathematical_role": "Promotes the estimate to an exponent pair by scale renormalization, the B-process, and extension from subinterval phases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1373,
+          "line_start": 1332,
+          "title": "From the paper's estimate to an exponent pair",
+          "unit_id": "openalex_w1592212038_u026",
+          "unit_type": "generalization",
+          "why_material": "The source reformulates the result as the exponent pair (13/84,55/84), handles scales with M above the square root by renormalizing T or applying the B-process after Poisson summation, and notes the fixed-point relation of the relevant pair under B."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Extreme large-M cases are separately secured by the classical (1/2,1/2) pair.",
+          "representation_dependency": "Requires the exponent-pair formulas and scale substitutions; the Poisson/B-process details are cited rather than reproduced.",
+          "unit_id": "openalex_w1592212038_u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1328,
+            "line_start": 1316,
+            "title": "Moment order and the doubling of the critical-line saving",
+            "unit_id": "openalex_w1592212038_u025",
+            "unit_type": "method-comparison",
+            "why_material": "The remark compares essentially optimal A4, A5, and A6 inputs and interprets the 13/84 exponent as exactly doubling the original Bombieri-Iwaniec saving over 1/6."
+          },
+          {
+            "line_end": 1392,
+            "line_start": 1374,
+            "title": "Extending partial-interval phases to use exponent-pair theory",
+            "unit_id": "openalex_w1592212038_u027",
+            "unit_type": "construction",
+            "why_material": "To remove the full-interval assumption, the source constructs a smooth extension of the phase from [a,b] to [M/2,M] using a monomial derivative model plus a correcting polynomial, argues that derivative conditions persist, and then invokes an interval-restriction lemma at logarithmic cost."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A strong estimate on one natural scale range becomes a reusable exponent-pair result only after complementary estimates cover missing ranges, the B-process handles dual large scales, and a controlled phase extension removes the full-interval assumption.",
+            "limit": "Several steps are cited from established exponent-pair theory and the construction assumes its derivative and monomial-approximation hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024",
+              "openalex_w1592212038_u026",
+              "openalex_w1592212038_u027"
+            ],
+            "title": "From a bounded-range estimate to an exponent-pair statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This resolves the second explicit obstacle in promoting the estimate to a general exponent-pair statement.",
+      "line_end": 1392,
+      "line_start": 1374,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The construction uses the displayed integral-polynomial extension and derivative-condition prose; the cited restriction lemma supplies the final localization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "To remove the full-interval assumption, the source constructs a smooth extension of the phase from [a,b] to [M/2,M] using a monomial derivative model plus a correcting polynomial, argues that derivative conditions persist, and then invokes an interval-restriction lemma at logarithmic cost.",
+      "source_id": "openalex_w1592212038",
+      "source_normalized_sha256": "492fd23e257a1595723024fa481b762ce735364a0348558b856eeba714f5c248",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extending partial-interval phases to use exponent-pair theory",
+      "unit_artifact_relpath": "depth/units/openalex_w1592212038_u027.txt",
+      "unit_bytes": 1859,
+      "unit_id": "openalex_w1592212038_u027",
+      "unit_sha256": "afec4ea0230fb6c5923389130a1486d04af5a18aae3df0d3aebbebb46b45eea5",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1592212038_u027.txt",
+      "source": {
+        "source_id": "openalex_w1592212038",
+        "title": "Decoupling, exponential sums and the Riemann zeta function",
+        "authors": [
+          "Jean Bourgain"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1366,
+          "line_end": 1373,
+          "text": "has (T ′ )1/10 ≪ M 1 ≪ (T ′ )1/2 . The details of this conversion are essentially the same as what goes on in the\n\n                                                           20\n\n<!-- source-page: 21 -->\n\nverification of the ‘B-process’ of exponent pair theory (see, for example, [G-K], §3.5); its efficacy, in disposing of\nproblem (a), is related to the fact that, when 0 ≤ k ≤ 12 and l = k + 12 , one has B(k, l) := (l − 21 , k + 12 ) = (k, l).\n",
+          "sha256": "006c09a3e20718e9ce89e7eee7bf75128c6cb2795b42ea740f8fe29fd7694aa7"
+        },
+        "after": {
+          "line_start": 1393,
+          "line_end": 1400,
+          "text": "\n\n\nReferences\n[B]     J. Bourgain, Decoupling inequalities and some mean-value theorems, preprint available on arxiv.\n\n[B-D1] J. Bourgain, C. Demeter, The proof of the l2 -decoupling conjecture, arXiv: 1405335.\n\n",
+          "sha256": "1c200bb4fcbf44914ddb4148960f8607b7dfd9d4b1195e1e11d5f0e79a952319"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a2485cef2d2878eb17d9835219fab498ab987aec437def922a6edd3509f08aee",
+        "dossier_sha256": "e4b8773bd7fa1da1b1fc389592d8fc3c70723e06b0cf4e3ef5ee6b5327ad6391",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Further comments",
+            "line_end": 1395,
+            "line_start": 1332,
+            "mathematical_role": "Promotes the estimate to an exponent pair by scale renormalization, the B-process, and extension from subinterval phases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1392,
+          "line_start": 1374,
+          "title": "Extending partial-interval phases to use exponent-pair theory",
+          "unit_id": "openalex_w1592212038_u027",
+          "unit_type": "construction",
+          "why_material": "To remove the full-interval assumption, the source constructs a smooth extension of the phase from [a,b] to [M/2,M] using a monomial derivative model plus a correcting polynomial, argues that derivative conditions persist, and then invokes an interval-restriction lemma at logarithmic cost."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This resolves the second explicit obstacle in promoting the estimate to a general exponent-pair statement.",
+          "representation_dependency": "The construction uses the displayed integral-polynomial extension and derivative-condition prose; the cited restriction lemma supplies the final localization.",
+          "unit_id": "openalex_w1592212038_u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1373,
+            "line_start": 1332,
+            "title": "From the paper's estimate to an exponent pair",
+            "unit_id": "openalex_w1592212038_u026",
+            "unit_type": "generalization",
+            "why_material": "The source reformulates the result as the exponent pair (13/84,55/84), handles scales with M above the square root by renormalizing T or applying the B-process after Poisson summation, and notes the fixed-point relation of the relevant pair under B."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A strong estimate on one natural scale range becomes a reusable exponent-pair result only after complementary estimates cover missing ranges, the B-process handles dual large scales, and a controlled phase extension removes the full-interval assumption.",
+            "limit": "Several steps are cited from established exponent-pair theory and the construction assumes its derivative and monomial-approximation hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1592212038_u023",
+              "openalex_w1592212038_u024",
+              "openalex_w1592212038_u026",
+              "openalex_w1592212038_u027"
+            ],
+            "title": "From a bounded-range estimate to an exponent-pair statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f47b94d83d7f089fba4fe42b469a4b73b9796965394be51e98cef38480fe8b87"
+}

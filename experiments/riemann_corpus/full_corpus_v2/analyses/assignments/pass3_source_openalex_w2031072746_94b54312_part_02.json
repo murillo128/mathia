@@ -1,0 +1,1627 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2031072746_94b54312_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2031072746",
+  "unit_count": 11,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit links analytic recurrence, approximation error, family reuse, and algorithmic convolution.",
+      "line_end": 1385,
+      "line_start": 1295,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the derivative identity, Taylor remainder, bin definitions, and convolution indices are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A shift in one gamma parameter computes derivatives of G, enabling certified local Taylor models that are reusable across every L-function with the same archimedean parameters; binning Dirichlet coefficients then converts evaluation at all samples into convolutions handled by another FFT.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative recurrences and Taylor caches turn G into reusable family infrastructure",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u25.txt",
+      "unit_bytes": 4773,
+      "unit_id": "openalex_w2031072746_u25",
+      "unit_sha256": "4598636caa29537bec52b70484ee85a39cc6f83de50d2eae84febd9728cc59fd",
+      "unit_type": "reuse-and-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u25.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1287,
+          "line_end": 1294,
+          "text": "from the last term added. Moreover, (5.12) gives an algorithm for computing the data at\nρ − 2 from that at ρ, and shows that the terms eventually decrease factorially. Thus, we\nmay use this to compute G(u; η, {µj }) to any desired precision for a given u.\n\n<!-- source-page: 25 -->\n\nARTIN’S CONJECTURE, TURING’S METHOD AND THE RIEMANN HYPOTHESIS                       25\n\n",
+          "sha256": "1b43e2fb570994297064a7d724608385fa46791beff170dffaacc38909ff8b94"
+        },
+        "after": {
+          "line_start": 1386,
+          "line_end": 1393,
+          "text": "\n5.2. Complexity. We may now consider the complexity of the algorithm. Note that by\n                                                      πr\nStirling’s formula, F (t) decays roughly like e−(1−η) 4 t for t > 0. Ideally we should choose\n1 − η of size T −1 in order to compute values up to height T . Adjusting the constant of\nproportionality (i.e. choosing η relatively close to or far from 1) allows us to trade off the\ncomputational precision and number of coefficients needed to overcome the error terms\nbelow. Finding a good compromise between these two is best done by trial and error; cf.\n",
+          "sha256": "7a97adc7b7b59628fa277ccdec457380489a91ceb79b63b0a9a7105e408e451b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.1. Computing G",
+            "line_end": 1386,
+            "line_start": 1181,
+            "mathematical_role": "Builds residue-series evaluation, certified tails, derivative recurrences, reusable Taylor tables, and a second convolutional FFT."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1385,
+          "line_start": 1295,
+          "title": "Derivative recurrences and Taylor caches turn G into reusable family infrastructure",
+          "unit_id": "openalex_w2031072746_u25",
+          "unit_type": "reuse-and-compression",
+          "why_material": "A shift in one gamma parameter computes derivatives of G, enabling certified local Taylor models that are reusable across every L-function with the same archimedean parameters; binning Dirichlet coefficients then converts evaluation at all samples into convolutions handled by another FFT."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit links analytic recurrence, approximation error, family reuse, and algorithmic convolution.",
+          "representation_dependency": "Very high: the derivative identity, Taylor remainder, bin definitions, and convolution indices are formula-dependent.",
+          "unit_id": "openalex_w2031072746_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1289,
+            "line_start": 1181,
+            "title": "Contour shifting gives a computable residue series for the kernel G",
+            "unit_id": "openalex_w2031072746_u24",
+            "unit_type": "residue-algorithm",
+            "why_material": "The Mellin kernel becomes a sum over gamma-factor poles; grouping equivalent shifts and propagating polar coefficients by recurrence yields a tail bounded by the last computed pole block and eventual factorial decay."
+          },
+          {
+            "line_end": 1409,
+            "line_start": 1387,
+            "title": "Damping trades precision against coefficient range at square-root conductor scale",
+            "unit_id": "openalex_w2031072746_u26",
+            "unit_type": "complexity-analysis",
+            "why_material": "Choosing eta near one slows decay enough to reach height T but raises coefficient/precision demands; after this tradeoff, the dominant coefficient count is of square-root analytic-conductor size and the FFT supplies many values at near-linear mean cost."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Recasting many L-values through one Mellin kernel permits cached local approximations and FFT convolution, while residue tails, Taylor remainders, Dirichlet truncation, transform aliasing, and time-domain wraparound are each bounded explicitly.",
+            "limit": "Exact certified implementation depends on recovering formula constants and conventions from the original PDF, not the degraded normalized text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u22",
+              "openalex_w2031072746_u23",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u27",
+              "openalex_w2031072746_u28",
+              "openalex_w2031072746_u29"
+            ],
+            "title": "Single-kernel FFT with a closed rigorous error budget"
+          },
+          {
+            "claim": "Once G and its derivatives are certified for a gamma-parameter tuple, the expensive analytic cache can be reused across arithmetic-family members, leaving only source-specific Dirichlet coefficients and pole data to change.",
+            "limit": "Reuse is restricted to identical gamma parameters and compatible normalization; ramified local factors still need individual computation.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u03",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u32"
+            ],
+            "title": "Family reuse follows archimedean representation rather than individual L-function identity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u25",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u25",
+          "spontaneous_reading": "A shift in one gamma parameter turns derivatives of the common kernel G into further kernel evaluations; Taylor caching then converts repeated pointwise evaluation into reusable local data, and coefficient bins turn the remaining all-sample computation into convolution."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u25",
+          "source_grounded_mathematics": "Equation (5.15) expresses G' using G at the original parameters and at a tuple with one mu_k shifted by 2; the gamma recurrence also gives an rth-order differential equation. Taylor's theorem on cells centered at u_m supplies local expansions with a contour-integral bound on the Kth derivative. Grouping a_n/sqrt(n) into moment sums S_m^(k) makes each Taylor order in (5.18) a convolution evaluated by FFT.",
+          "conceptual_reading": "The key compression is to replace many evaluations by a certified local basis for one archimedean kernel. This preserves the needed values on an interval up to an explicit Taylor remainder, while separating reusable gamma-factor data from L-function-specific Dirichlet coefficients.",
+          "representation_or_bridge": "The bridge runs from the parameter shift mu_k -> mu_k+2, to derivative tables G^(k)(u_m)/k!, to binned coefficient moments S_m^(k), and finally to discrete convolution on the aligned sample lattice.",
+          "boundary_or_failure": "Large-u derivative evaluation suffers catastrophic cancellation; reuse is only asserted for identical mu_j data and compatible normalization. The FFT stage still needs both Taylor and Dirichlet-tail errors tracked, and the formulas, indices, and contour bound are extraction-sensitive.",
+          "uncertainty": "The prose mechanism is clear, but exact constants, superscripts, and alignment conditions should be checked against the retained PDF before implementation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly treats the best constant as an empirical parameter choice later illustrated in Section 6.",
+      "line_end": 1409,
+      "line_start": 1387,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate to high: the qualitative tradeoff is prose-grounded, while the asymptotic exponents are formula-extraction sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Choosing eta near one slows decay enough to reach height T but raises coefficient/precision demands; after this tradeoff, the dominant coefficient count is of square-root analytic-conductor size and the FFT supplies many values at near-linear mean cost.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Damping trades precision against coefficient range at square-root conductor scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u26.txt",
+      "unit_bytes": 1653,
+      "unit_id": "openalex_w2031072746_u26",
+      "unit_sha256": "bae5289022f581355239d6718c3b36fc670546b8b61cc6e58c350beb799983ee",
+      "unit_type": "complexity-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u26.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1379,
+          "line_end": 1386,
+          "text": "\n\nSince x + um is another sample point um′ , the kth term of (5.18) is a convolution of the\n                          G(k) (um ;η,{µj })      (k)\nsequences (indexed by m)         k!\n                                             and Sm ; thus, we may evaluate it efficiently for all\nx simultaneously by appealing again to the FFT.\n\n",
+          "sha256": "c37fcca089e5f7c1f9d4b1082e3d89d9d878fc6ddb353feebdf1ee7c689c5185"
+        },
+        "after": {
+          "line_start": 1410,
+          "line_end": 1417,
+          "text": "\n5.3. Asymptotics. To complete our understanding of G(u; η, {µj }), in order to accurately\ncalculate (5.5), we need an asymptotic bound for large u. If we write µ = − 12 + 1r 1 +\n\n<!-- source-page: 27 -->\n\nARTIN’S CONJECTURE, TURING’S METHOD AND THE RIEMANN HYPOTHESIS                                     27\nPr         \u0001\n",
+          "sha256": "c345feb1e1463801544d3f1f1b67309c4601d871c25776efdce11c2d34148315"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.2. Complexity",
+            "line_end": 1410,
+            "line_start": 1387,
+            "mathematical_role": "Explains the damping/precision/coefficient tradeoff and square-root analytic-conductor scaling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1409,
+          "line_start": 1387,
+          "title": "Damping trades precision against coefficient range at square-root conductor scale",
+          "unit_id": "openalex_w2031072746_u26",
+          "unit_type": "complexity-analysis",
+          "why_material": "Choosing eta near one slows decay enough to reach height T but raises coefficient/precision demands; after this tradeoff, the dominant coefficient count is of square-root analytic-conductor size and the FFT supplies many values at near-linear mean cost."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly treats the best constant as an empirical parameter choice later illustrated in Section 6.",
+          "representation_dependency": "Moderate to high: the qualitative tradeoff is prose-grounded, while the asymptotic exponents are formula-extraction sensitive.",
+          "unit_id": "openalex_w2031072746_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1385,
+            "line_start": 1295,
+            "title": "Derivative recurrences and Taylor caches turn G into reusable family infrastructure",
+            "unit_id": "openalex_w2031072746_u25",
+            "unit_type": "reuse-and-compression",
+            "why_material": "A shift in one gamma parameter computes derivatives of G, enabling certified local Taylor models that are reusable across every L-function with the same archimedean parameters; binning Dirichlet coefficients then converts evaluation at all samples into convolutions handled by another FFT."
+          },
+          {
+            "line_end": 1492,
+            "line_start": 1411,
+            "title": "Effective large-u control of G from stationary phase and contour shifting",
+            "unit_id": "openalex_w2031072746_u27",
+            "unit_type": "asymptotic-bound",
+            "why_material": "The source states the stationary-phase shape of G and derives a less sharp but fully effective contour-shift bound using Holder and explicit gamma estimates, making the large-shift FFT terms certifiable."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u26",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u26",
+          "spontaneous_reading": "The damping parameter eta acts as a resource-allocation knob: moving it changes decay, coefficient range, and working precision, while the single shared G-kernel lets the expensive setup be amortized across many heights."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u26",
+          "source_grounded_mathematics": "Stirling decay suggests choosing 1-eta on the scale T^-1. Lemma 5.3 then gives a coefficient requirement described as roughly the square root of the analytic conductor. B is chosen on the scale of T, A on the scale of the local zero density, and after the one-kernel setup the source claims many values at essentially optimal mean cost.",
+          "conceptual_reading": "This is an explicit tradeoff surface rather than a canonical parameter choice: stronger damping, coefficient reach, and numerical precision can substitute for one another. The shared kernel changes the cost model by moving work from each value into a common precomputation.",
+          "representation_or_bridge": "The analytic conductor bridges asymptotic analysis to coefficient count, while A and B translate zero density and height into the two Fourier-grid dimensions.",
+          "boundary_or_failure": "The proportionality constant in eta is chosen by trial and error, so the section gives scaling guidance rather than a certified optimizer. The conclusion depends on later error bounds and on reuse of a single G-function.",
+          "uncertainty": "The qualitative tradeoff is reliable, but OCR damage makes the displayed conductor powers and final mean-time exponent unsafe to quote exactly."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lemma 5.2 is retained with its proof because its constants feed every later error estimate.",
+      "line_end": 1492,
+      "line_start": 1411,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the extracted stationary-phase formula and definitions of delta, nu, mu, K, and X need original-formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states the stationary-phase shape of G and derives a less sharp but fully effective contour-shift bound using Holder and explicit gamma estimates, making the large-shift FFT terms certifiable.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        27,
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Effective large-u control of G from stationary phase and contour shifting",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u27.txt",
+      "unit_bytes": 5148,
+      "unit_id": "openalex_w2031072746_u27",
+      "unit_sha256": "93fdea0effd0f83660d2ef363801aaf6515c8d9ac6e3314a1c3c639c8cf05056",
+      "unit_type": "asymptotic-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u27.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1403,
+          "line_end": 1410,
+          "text": "T is 2π log N 2π ; one can expect to take A equal to a multiple of this. Thus, this method\nhas complexity consistent with computing a single value by the approximate\n                                                                         \u0001          functional\n                                                                       ε\nequation, after which we get many values in mean time Oε (NT ) , which is essentially\nbest possible. The gain comes from the fact, as emphasized above, that only a single\nG-function is involved.\n\n",
+          "sha256": "84922bcab2fcf7a43fd84d900d885f646e06c4267862f64a4518287dad6d6225"
+        },
+        "after": {
+          "line_start": 1493,
+          "line_end": 1500,
+          "text": "\n     With this bound in hand, we can estimate the error in truncating the series (5.5).\n\nLemma 5.3. Let M be a positive integer, x ∈ R. Let δ, νj , µ, K be as in Lemma 5.2 and\n                      √ \u00012/r\nset X = πrδe−δ ex / N        . Let C, α ≥ 0 be such that |an | ≤ Cnα for all n, and put\nc = ℜ(µ) + 21 + α, c′ = max(cr/2 − 1, 0). Then for XM 2/r > max(c′ , r),\n\n",
+          "sha256": "c765d5bf9db21c24c1156c5439ef9af6cd7d0beca398e21fa4d724dcd2bf5939"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.3. Asymptotics",
+            "line_end": 1653,
+            "line_start": 1411,
+            "mathematical_role": "Derives effective large-u, Dirichlet-series truncation, transform-alias, and sampling-tail bounds needed for rigorous computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1492,
+          "line_start": 1411,
+          "title": "Effective large-u control of G from stationary phase and contour shifting",
+          "unit_id": "openalex_w2031072746_u27",
+          "unit_type": "asymptotic-bound",
+          "why_material": "The source states the stationary-phase shape of G and derives a less sharp but fully effective contour-shift bound using Holder and explicit gamma estimates, making the large-shift FFT terms certifiable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lemma 5.2 is retained with its proof because its constants feed every later error estimate.",
+          "representation_dependency": "Very high: the extracted stationary-phase formula and definitions of delta, nu, mu, K, and X need original-formula verification.",
+          "unit_id": "openalex_w2031072746_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1409,
+            "line_start": 1387,
+            "title": "Damping trades precision against coefficient range at square-root conductor scale",
+            "unit_id": "openalex_w2031072746_u26",
+            "unit_type": "complexity-analysis",
+            "why_material": "Choosing eta near one slows decay enough to reach height T but raises coefficient/precision demands; after this tradeoff, the dominant coefficient count is of square-root analytic-conductor size and the FFT supplies many values at near-linear mean cost."
+          },
+          {
+            "line_end": 1538,
+            "line_start": 1494,
+            "title": "Coefficient growth plus kernel decay certifies Dirichlet-series truncation",
+            "unit_id": "openalex_w2031072746_u28",
+            "unit_type": "truncation-certificate",
+            "why_material": "A polynomial coefficient bound and the effective G estimate make the omitted tail monotone after an explicit threshold, so an incomplete-gamma-style integral bounds every term beyond M."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Recasting many L-values through one Mellin kernel permits cached local approximations and FFT convolution, while residue tails, Taylor remainders, Dirichlet truncation, transform aliasing, and time-domain wraparound are each bounded explicitly.",
+            "limit": "Exact certified implementation depends on recovering formula constants and conventions from the original PDF, not the degraded normalized text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u22",
+              "openalex_w2031072746_u23",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u27",
+              "openalex_w2031072746_u28",
+              "openalex_w2031072746_u29"
+            ],
+            "title": "Single-kernel FFT with a closed rigorous error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u27",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u27",
+          "spontaneous_reading": "Stationary phase supplies the expected large-u shape of G, but the proof deliberately trades sharpness for an effective contour-shift bound whose constants can feed rigorous error estimates."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u27",
+          "source_grounded_mathematics": "The source states a stationary-phase expansion with relative error O(e^-2u/r), exact for r=1. Lemma 5.2 instead shifts the Mellin contour right, applies Holder to gamma integrals, bounds Gamma(a+it), and chooses sigma=X/r to obtain an explicit upper bound with exponential e^-X decay and parameter-dependent product factors.",
+          "conceptual_reading": "The contour location is a control variable that converts an oscillatory integral into a usable decay certificate. The less sharp bound exposes every dependency needed downstream, whereas the sharper asymptotic leaves case-specific constants implicit.",
+          "representation_or_bridge": "The bridge is from Mellin representation, through gamma-product estimates and Holder separation, to the scale X proportional to exp(2u/r), at which optimizing the contour produces effective decay.",
+          "boundary_or_failure": "Sharp constants for r>1 require separate work, and the stated comparison with the true asymptotic is conditional on a parameter regime. One gamma inequality is partly justified by a bounded computational check, so this is not purely symbolic.",
+          "uncertainty": "Formula extraction risk is very high for the definitions of delta, nu_j, mu, K, and X; their exact constants and exponents require the original formula image."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remark records how coarse global coefficient bounds can be replaced by tighter range-specific constants.",
+      "line_end": 1538,
+      "line_start": 1494,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: thresholds, exponents, and products in Lemma 5.3 are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A polynomial coefficient bound and the effective G estimate make the omitted tail monotone after an explicit threshold, so an incomplete-gamma-style integral bounds every term beyond M.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coefficient growth plus kernel decay certifies Dirichlet-series truncation",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u28.txt",
+      "unit_bytes": 2437,
+      "unit_id": "openalex_w2031072746_u28",
+      "unit_sha256": "57c969a7086913410871821c8524af91c221c50b3dc7a00ca531b03a26e0a485",
+      "unit_type": "truncation-certificate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u28.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1486,
+          "line_end": 1493,
+          "text": "               ℜ(µ)u      σ + νj            ℜ(µ)u −σr\n(5.26)      Ke                         ≤ Ke      e                   1+        .\n                     j=1\n                          eX/r                        j=1\n                                                           X            σ\n\nThe result follows upon taking σ = X/r.                                                   \u0003\n\n",
+          "sha256": "2ab4ba62fd58f411dcc47edd11424dcad82de5da05592d0201da2c4b6fdf0daa"
+        },
+        "after": {
+          "line_start": 1539,
+          "line_end": 1546,
+          "text": "\n     The next two lemmas bound the error introduced in discretization.\n\n<!-- source-page: 29 -->\n\nARTIN’S CONJECTURE, TURING’S METHOD AND THE RIEMANN HYPOTHESIS                     29\n\n                           1\n",
+          "sha256": "6e10cc626163553fbc3ecd6192e880a9730224ecd4dd8ad14e13ab825bbf835a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.3. Asymptotics",
+            "line_end": 1653,
+            "line_start": 1411,
+            "mathematical_role": "Derives effective large-u, Dirichlet-series truncation, transform-alias, and sampling-tail bounds needed for rigorous computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1538,
+          "line_start": 1494,
+          "title": "Coefficient growth plus kernel decay certifies Dirichlet-series truncation",
+          "unit_id": "openalex_w2031072746_u28",
+          "unit_type": "truncation-certificate",
+          "why_material": "A polynomial coefficient bound and the effective G estimate make the omitted tail monotone after an explicit threshold, so an incomplete-gamma-style integral bounds every term beyond M."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The remark records how coarse global coefficient bounds can be replaced by tighter range-specific constants.",
+          "representation_dependency": "Very high: thresholds, exponents, and products in Lemma 5.3 are formula-dependent.",
+          "unit_id": "openalex_w2031072746_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1492,
+            "line_start": 1411,
+            "title": "Effective large-u control of G from stationary phase and contour shifting",
+            "unit_id": "openalex_w2031072746_u27",
+            "unit_type": "asymptotic-bound",
+            "why_material": "The source states the stationary-phase shape of G and derives a less sharp but fully effective contour-shift bound using Holder and explicit gamma estimates, making the large-shift FFT terms certifiable."
+          },
+          {
+            "line_end": 1652,
+            "line_start": 1540,
+            "title": "Two tail lemmas close both sides of FFT discretization",
+            "unit_id": "openalex_w2031072746_u29",
+            "unit_type": "discretization-certificate",
+            "why_material": "Lemma 5.4 sums shifted transform samples using kernel decay and pole residues; Lemma 5.5 sums shifted critical-line values using the functional-equation strip bound, together certifying aliasing in both Fourier domains."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Recasting many L-values through one Mellin kernel permits cached local approximations and FFT convolution, while residue tails, Taylor remainders, Dirichlet truncation, transform aliasing, and time-domain wraparound are each bounded explicitly.",
+            "limit": "Exact certified implementation depends on recovering formula constants and conventions from the original PDF, not the degraded normalized text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u22",
+              "openalex_w2031072746_u23",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u27",
+              "openalex_w2031072746_u28",
+              "openalex_w2031072746_u29"
+            ],
+            "title": "Single-kernel FFT with a closed rigorous error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u28",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u28",
+          "spontaneous_reading": "Polynomial control of the Dirichlet coefficients and exponential decay of G combine into a monotone omitted tail, so an infinite analytic remainder becomes a finite, explicitly bounded integral."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u28",
+          "source_grounded_mathematics": "Assuming |a_n| <= C n^alpha, Lemma 5.3 inserts the large-u kernel bound to dominate the n>M terms by K' n^(c-1)e^(-X n^(2/r)). Once X M^(2/r) exceeds the stated thresholds, these terms decrease, and comparison with an integral yields the explicit exponentially decaying truncation bound.",
+          "conceptual_reading": "The lemma turns a finite coefficient cutoff into a certificate rather than a heuristic. Its useful flexibility is local: C and alpha may be tightened on different coefficient ranges instead of imposing one coarse global growth bound.",
+          "representation_or_bridge": "The scaled variable X n^(2/r) bridges Dirichlet index and kernel decay; monotonicity then bridges the discrete tail to an incomplete-gamma-type integral.",
+          "boundary_or_failure": "The certificate depends on a valid coefficient-growth bound and the explicit threshold condition. A poor global choice of C and alpha can be needlessly expensive even when the bound remains valid.",
+          "uncertainty": "Thresholds, exponents, and product factors are formula-dependent and unsafe to reproduce exactly from the normalized extraction alone."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are distinct error channels but form one closure mechanism for the discrete FFT computation.",
+      "line_end": 1652,
+      "line_start": 1540,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: sign conditions, beta, E, geometric factors, and residue denominators require exact symbolic verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 5.4 sums shifted transform samples using kernel decay and pole residues; Lemma 5.5 sums shifted critical-line values using the functional-equation strip bound, together certifying aliasing in both Fourier domains.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two tail lemmas close both sides of FFT discretization",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u29.txt",
+      "unit_bytes": 6321,
+      "unit_id": "openalex_w2031072746_u29",
+      "unit_sha256": "096177910f5760904d48872907a61f64cf7d16b5c95fca2913418c5e4c4aa70e",
+      "unit_type": "discretization-certificate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u29.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1532,
+          "line_end": 1539,
+          "text": "The condition on X ensures that the terms of (5.28) are monotonically decreasing. Thus,\nwe can estimate by the integral\n             Z ∞                               Z                                      2/r\n           ′      c−1 −Xt2/r      K ′ r −r/2 \u0001c ∞         cr/2−1 −y    K ′ r M c e−XM\n(5.30)   K       t e         dt =      X                y       e dy ≤                    .\n              M                    2             XM 2/r                 2 XM 2/r − c′\n                                                                                          \u0003\n\n",
+          "sha256": "26bef060e43de64d96502d5c1151ca5c095b51b7eae67e3a7bcb6167925024b9"
+        },
+        "after": {
+          "line_start": 1653,
+          "line_end": 1660,
+          "text": "\n                                  6. Numerical results\n  We have applied the methods described in the previous sections to a few examples of\nsplitting fields of polynomials with Galois group S5 and A5 , as listed in Table 6.1. For the\nA5 cases, the Artin conjecture is true for all representations by known cases of functoriality\n[Kim94, JM01]. That speeds up the process, since we may apply Turing’s method to the\nArtin L-functions directly. For the S5 examples we verify both conjectures. As expected,\nwe found no counterexamples to either conjecture in the tested range |t| ≤ 100.\n",
+          "sha256": "10c9f534b178ccefcd64d421c5854bc5b0f2feac641f18d58f656c99594fd7ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.3. Asymptotics",
+            "line_end": 1653,
+            "line_start": 1411,
+            "mathematical_role": "Derives effective large-u, Dirichlet-series truncation, transform-alias, and sampling-tail bounds needed for rigorous computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1652,
+          "line_start": 1540,
+          "title": "Two tail lemmas close both sides of FFT discretization",
+          "unit_id": "openalex_w2031072746_u29",
+          "unit_type": "discretization-certificate",
+          "why_material": "Lemma 5.4 sums shifted transform samples using kernel decay and pole residues; Lemma 5.5 sums shifted critical-line values using the functional-equation strip bound, together certifying aliasing in both Fourier domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are distinct error channels but form one closure mechanism for the discrete FFT computation.",
+          "representation_dependency": "Very high: sign conditions, beta, E, geometric factors, and residue denominators require exact symbolic verification.",
+          "unit_id": "openalex_w2031072746_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1538,
+            "line_start": 1494,
+            "title": "Coefficient growth plus kernel decay certifies Dirichlet-series truncation",
+            "unit_id": "openalex_w2031072746_u28",
+            "unit_type": "truncation-certificate",
+            "why_material": "A polynomial coefficient bound and the effective G estimate make the omitted tail monotone after an explicit threshold, so an incomplete-gamma-style integral bounds every term beyond M."
+          },
+          {
+            "line_end": 1702,
+            "line_start": 1654,
+            "title": "S5 character relations reduce global conjectures to selected nonvanishing checks",
+            "unit_id": "openalex_w2031072746_u30",
+            "unit_type": "experimental-reduction",
+            "why_material": "For the worked S5 field, monomiality and explicit direct-sum relations identify which Artin factors are already holomorphic and reduce the remaining Artin/RH certification to zero isolation and nonvanishing of a small collection of compound L-functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Recasting many L-values through one Mellin kernel permits cached local approximations and FFT convolution, while residue tails, Taylor remainders, Dirichlet truncation, transform aliasing, and time-domain wraparound are each bounded explicitly.",
+            "limit": "Exact certified implementation depends on recovering formula constants and conventions from the original PDF, not the degraded normalized text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u22",
+              "openalex_w2031072746_u23",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u27",
+              "openalex_w2031072746_u28",
+              "openalex_w2031072746_u29"
+            ],
+            "title": "Single-kernel FFT with a closed rigorous error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u29",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u29",
+          "spontaneous_reading": "The discretized FFT has two different infinite tails, and the paired lemmas close both: shifted transform samples are split into residues plus decaying remainder, while shifted critical-line samples are forced into geometric decay by strip and gamma estimates."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u29",
+          "source_grounded_mathematics": "Lemma 5.4 sums F-hat(x+2pi kA), explicitly retaining residues from poles and bounding the rest using Lemmas 5.2 and 5.3 followed by a geometric factor. Lemma 5.5 bounds sums F(t+kB) or F(t-kB) under sign conditions on Im(s+mu_j) and positivity conditions involving beta and eta; the proof combines prior strip bounds, gamma/Q estimates, and geometric summation.",
+          "conceptual_reading": "Rigorous discretization requires certifying aliasing in both Fourier domains, not merely bounding the original series. Separating polar structure from the decaying analytic remainder prevents genuine residues from being misclassified as numerical error.",
+          "representation_or_bridge": "Residue decomposition is the bridge for the transform-side tail; the completed critical-line function F, its gamma factors, and the decay rate beta-(pi r/4)eta bridge the sampling-side tail to a geometric series.",
+          "boundary_or_failure": "The two channels have distinct hypotheses and cannot be collapsed into one generic FFT-error claim. Sign conditions, beta positivity, pole data, and all geometric denominators must be verified for the chosen grid.",
+          "uncertainty": "The extraction is highly formula-sensitive, especially for beta, E, signs, residue denominators, and squared terms; exact certification requires the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports no counterexamples only in the tested range |t|<=100; this is bounded computational evidence.",
+      "line_end": 1702,
+      "line_start": 1654,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact representation sums, conductors, and factor names must be preserved.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the worked S5 field, monomiality and explicit direct-sum relations identify which Artin factors are already holomorphic and reduce the remaining Artin/RH certification to zero isolation and nonvanishing of a small collection of compound L-functions.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "S5 character relations reduce global conjectures to selected nonvanishing checks",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u30.txt",
+      "unit_bytes": 3436,
+      "unit_id": "openalex_w2031072746_u30",
+      "unit_sha256": "01b542c1ed1cda8e80e8d5bf7e8c35b682f16f3c280ecc89f3daf61c63b06de0",
+      "unit_type": "experimental-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u30.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1646,
+          "line_end": 1653,
+          "text": "               4   2 j=1        ℑ(s + µj ) π j=1 |ℑ(s + µj ) − ℜ(s∗ + µj )2 |\n                                   ∗                 ∗      2\n\n\n         ≤ −βkB.\n                             πr\nThus, |F (t + kB)| ≤ Ee−(β− 4 η)kB . The conclusion follows.                                \u0003\n\n",
+          "sha256": "feb29123286526bb02e46a9930f1fa9aa35b68515b44527ae75a87a55f72abc9"
+        },
+        "after": {
+          "line_start": 1703,
+          "line_end": 1710,
+          "text": "   In what follows we describe the numerical procedure in detail for L(s, ρ6 ). First we must\nchoose a value of η to use for the computation of G(u; η, {µj }). One can aim to limit either\nthe number of Dirichlet coefficients an or the precision required in the computation. Since\nthe coefficients are relatively easy to compute in our case (we have 232 of them), we try\nfor the latter. The largest\n                         √      error\n                                  \u0001 comes from Lemma 5.3 with x = 0, and is of size roughly\nM c exp −πrδe−δ (M/ N)2/r , where δ = π2 (1 − |η|), r = 6, N = 36081072 and M = 232 .\n",
+          "sha256": "f30857e77d9d6af9f20fccfe9191b7a3d7673f3c2ef0f0cc6127ad9bd0dd35a8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1702,
+          "line_start": 1654,
+          "title": "S5 character relations reduce global conjectures to selected nonvanishing checks",
+          "unit_id": "openalex_w2031072746_u30",
+          "unit_type": "experimental-reduction",
+          "why_material": "For the worked S5 field, monomiality and explicit direct-sum relations identify which Artin factors are already holomorphic and reduce the remaining Artin/RH certification to zero isolation and nonvanishing of a small collection of compound L-functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source reports no counterexamples only in the tested range |t|<=100; this is bounded computational evidence.",
+          "representation_dependency": "High: exact representation sums, conductors, and factor names must be preserved.",
+          "unit_id": "openalex_w2031072746_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1652,
+            "line_start": 1540,
+            "title": "Two tail lemmas close both sides of FFT discretization",
+            "unit_id": "openalex_w2031072746_u29",
+            "unit_type": "discretization-certificate",
+            "why_material": "Lemma 5.4 sums shifted transform samples using kernel decay and pole residues; Lemma 5.5 sums shifted critical-line values using the functional-equation strip bound, together certifying aliasing in both Fourier domains."
+          },
+          {
+            "line_end": 1736,
+            "line_start": 1703,
+            "title": "Parameter selection balances coefficient availability, damping, and interval precision",
+            "unit_id": "openalex_w2031072746_u31",
+            "unit_type": "error-budget-design",
+            "why_material": "The worked computation chooses eta by comparing the largest truncation error with the expected function size, determines how far beyond the target height Turing bounds require evaluation, and assigns interval arithmetic to the rigorous downstream stages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A weaker virtual-character obstruction, combined with a complete Turing count of simple critical-line zeros, can certify bounded RH for a Dedekind zeta function even where the stronger almost-monomial condition does not certify every Artin factor.",
+            "limit": "This is finite-height, representation- and zero-isolation-dependent evidence; it is not an unconditional global RH result.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u06",
+              "openalex_w2031072746_u10",
+              "openalex_w2031072746_u11",
+              "openalex_w2031072746_u15",
+              "openalex_w2031072746_u16",
+              "openalex_w2031072746_u21",
+              "openalex_w2031072746_u30"
+            ],
+            "title": "Bounded RH can be certifiable without full Artin holomorphy"
+          },
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u30",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u30",
+          "spontaneous_reading": "Representation-ring relations compress the S5 verification problem: monomial constituents are already controlled, and direct-sum identities reduce the remaining holomorphy claims to selected nonvanishing and zero-count checks for compound L-functions."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u30",
+          "source_grounded_mathematics": "For the worked S5 field, 1, chi, and rho_6 are monomial. The source uses zeta-factor relations and GAP-identified monomial direct sums to reduce possible poles of rho_4, rho'_4, rho_5, and rho'_5 to nonvanishing tests at zeros of zeta or L(s,chi). It then applies Turing's method to a small listed collection of compound L-functions to deduce Artin holomorphy and RH only up to the tested height.",
+          "conceptual_reading": "The irreducible factors are not checked independently. Algebraic relations expose a dependency graph in which already-known monomial objects and a few strategically chosen sums control the rest.",
+          "representation_or_bridge": "Direct sums and sign twists bridge finite-group representation theory to products of Artin L-functions; zeros of zeta and L(s,chi) become the boundary locations where possible cancellations or poles must be excluded.",
+          "boundary_or_failure": "The reported search found no counterexamples only for |t|<=100 and for the listed fields. This is bounded computational evidence, not global Artin or Riemann-hypothesis proof, and the A5 shortcut uses separately known functoriality.",
+          "uncertainty": "The prose reductions are recoverable, but exact conductors, table entries, and representation identities should be checked against the source image before reproduction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reported timings and decimal precisions are source-specific implementation evidence, not universal complexity claims.",
+      "line_end": 1736,
+      "line_start": 1703,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: numerical exponents and the extracted coefficient-count typography should be checked against the retained PDF before reproduction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The worked computation chooses eta by comparing the largest truncation error with the expected function size, determines how far beyond the target height Turing bounds require evaluation, and assigns interval arithmetic to the rigorous downstream stages.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parameter selection balances coefficient availability, damping, and interval precision",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u31.txt",
+      "unit_bytes": 1927,
+      "unit_id": "openalex_w2031072746_u31",
+      "unit_sha256": "703691cdc99b922bf796b516fb74b6f45360852f56bc031fde2c29290de68b4f",
+      "unit_type": "error-budget-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u31.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1695,
+          "line_end": 1702,
+          "text": "zeros of ζ(s). Twisting by χ, we see similarly that L(s, ρ′4 ) and L(s, ρ′5 ) are holomorphic\naway from the zeros of L(s, χ). Moreover, we learn from GAP that the representations\nρ4 ⊕ ρ6 , ρ′4 ⊕ ρ6 , ρ5 ⊕ ρ′4 ⊕ χ and ρ′5 ⊕ ρ4 ⊕ 1 are all monomial. Thus, in order to verify the\nholomorphy of L(s, ρ4 ), L(s, ρ′4 ), L(s, ρ5 ) and L(s, ρ′5 ) it is enough to check that L(s, ρ6 ) and\nL(s, ρ′4 ⊕ χ) are non-vanishing at zeros of ζ(s) and, similarly, that L(s, ρ6 ) and L(s, ρ4 ⊕ 1)\ndo not vanish at the zeros of L(s, χ). Applying Turing’s method to these functions as well\nas L(s, ρ5 ⊕ 1) and L(s, ρ′5 ⊕ χ), we can deduce both Artin’s conjecture and the Riemann\nhypothesis (up to the tested height) for all representations.\n",
+          "sha256": "a9bc4ca3797e3c4cb934f50171a6c1e5e530068992250c3c7b4a9449b7eeda53"
+        },
+        "after": {
+          "line_start": 1737,
+          "line_end": 1744,
+          "text": "\n6.1. Computing an . First we consider methods of computing the coefficients of the L-\nfunctions L(s, ρ) for all irreducible representations ρ. One way is to express them as ratios\nof products of Hecke L-functions, as given by Brauer’s theorem; in fact for S5 we may\nexpress each in terms of Dedekind zeta functions of intermediate fields. Precisely, let k be\nthe quadratic extension of Q associated to χ, F = Q(x1 ) ⊂ M = Q(x1 , x2 ) where x1 and\nx2 are distinct roots of f , and E = Q(y) ⊂ K where y is a root of the sextic resolvent (a\nformula for which is given in [Dum91]); then we have\n",
+          "sha256": "fcf5adb7b9874eb18c4113e6e89306ee5dfb1f27bee135942f9f34ee4e50cb73"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1736,
+          "line_start": 1703,
+          "title": "Parameter selection balances coefficient availability, damping, and interval precision",
+          "unit_id": "openalex_w2031072746_u31",
+          "unit_type": "error-budget-design",
+          "why_material": "The worked computation chooses eta by comparing the largest truncation error with the expected function size, determines how far beyond the target height Turing bounds require evaluation, and assigns interval arithmetic to the rigorous downstream stages."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The reported timings and decimal precisions are source-specific implementation evidence, not universal complexity claims.",
+          "representation_dependency": "High: numerical exponents and the extracted coefficient-count typography should be checked against the retained PDF before reproduction.",
+          "unit_id": "openalex_w2031072746_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1702,
+            "line_start": 1654,
+            "title": "S5 character relations reduce global conjectures to selected nonvanishing checks",
+            "unit_id": "openalex_w2031072746_u30",
+            "unit_type": "experimental-reduction",
+            "why_material": "For the worked S5 field, monomiality and explicit direct-sum relations identify which Artin factors are already holomorphic and reduce the remaining Artin/RH certification to zero isolation and nonvanishing of a small collection of compound L-functions."
+          },
+          {
+            "line_end": 1770,
+            "line_start": 1738,
+            "title": "Dedekind-zeta ratios handle ramification while Frobenius classes scale coefficient generation",
+            "unit_id": "openalex_w2031072746_u32",
+            "unit_type": "coefficient-construction",
+            "why_material": "Brauer-style zeta ratios provide local factors at exceptional primes, while unramified Frobenius conjugacy classes are recovered from low-degree factorization data modulo p, yielding essentially linear-time coefficient generation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u31",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u31",
+          "spontaneous_reading": "The numerical design begins from the dominant error term and works backward: choose eta to balance available coefficients against cancellation and precision, extend evaluation beyond the target height for Turing's bound, then protect the analytic stages with interval arithmetic."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u31",
+          "source_grounded_mathematics": "For L(s,rho_6), the source compares the Lemma 5.3 truncation error with the expected size e^(-delta r t/2), observes that a Turing test through t=100 requires values to about t=115, and reports that eta=0.98 gives errors near 10^-14 versus function size near 10^-5. It therefore uses at least 14 digits and mostly 30 digits, then lists a pipeline from coefficient generation and explicit-formula estimates through G tables, binned moments, FFT evaluation, and Turing counting, with MPFI interval arithmetic on downstream stages.",
+          "conceptual_reading": "This is error-budget-driven parameter selection: the goal is not to minimize each resource independently, but to make the numerical error small relative to the signal while respecting coefficient availability.",
+          "representation_or_bridge": "The dominant truncation formula bridges eta, coefficient cutoff M, conductor N, target height, and required precision; the staged pipeline then carries certified intervals from local G data into global zero counting.",
+          "boundary_or_failure": "The chosen eta is empirical and source-specific, and timing or digit counts are not universal complexity claims. The normalized text ambiguously renders superscripted coefficient counts and says 'steps 3 through 7' despite displaying six numbered steps.",
+          "uncertainty": "Exact coefficient-count typography, exponents in the coefficient bound, and numerical reproduction parameters require comparison with the retained PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two routes are complementary: the general computer-algebra path resolves ramification and the finite-field path supplies volume.",
+      "line_end": 1770,
+      "line_start": 1738,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the exact zeta ratios and factorization notation are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Brauer-style zeta ratios provide local factors at exceptional primes, while unramified Frobenius conjugacy classes are recovered from low-degree factorization data modulo p, yielding essentially linear-time coefficient generation.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dedekind-zeta ratios handle ramification while Frobenius classes scale coefficient generation",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u32.txt",
+      "unit_bytes": 2614,
+      "unit_id": "openalex_w2031072746_u32",
+      "unit_sha256": "94c292839cda76815cf24b66fc2d8efc1ac52c78fcc64c156546cb235aaaa50f",
+      "unit_type": "coefficient-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u32.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1730,
+          "line_end": 1737,
+          "text": "\n<!-- source-page: 32 -->\n\n32                                       ANDREW R. BOOKER\n\nTo ensure correct results, we used the arbitrary precision interval arithmetic package MPFI\n[RR05] for steps 3 through 7. We discuss the steps in more detail below.\n\n",
+          "sha256": "4fa55e3451271563c2661408f9ba93f1b4db16d879efbea8ab13a7cca1e1352b"
+        },
+        "after": {
+          "line_start": 1771,
+          "line_end": 1778,
+          "text": "\n6.2. Estimating zeros. With our computed coefficients, we readily obtain estimates for\nthe low zeros by the method of Section 3. Figure 6.1 shows graphs of FX (t), with X =\nlog(232 ), for each irreducible L-function. The spikes correspond to zeros, from which we\nget the estimates for the ordinate of the lowest zero of each function shown in Table 6.3;\nnote that for ζ the estimate agrees with the known value 14.1347251417 . . . to within the\nprecision of the computation. The increase in density of zeros with the conductor and\ndegree is apparent in the graphs. Moreover, as the explicit formula is very sensitive to\n",
+          "sha256": "35c2df08bbac7a151b669d86d31c0f24f1b67f0c7934d4849ff8157bc49da4c7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1770,
+          "line_start": 1738,
+          "title": "Dedekind-zeta ratios handle ramification while Frobenius classes scale coefficient generation",
+          "unit_id": "openalex_w2031072746_u32",
+          "unit_type": "coefficient-construction",
+          "why_material": "Brauer-style zeta ratios provide local factors at exceptional primes, while unramified Frobenius conjugacy classes are recovered from low-degree factorization data modulo p, yielding essentially linear-time coefficient generation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two routes are complementary: the general computer-algebra path resolves ramification and the finite-field path supplies volume.",
+          "representation_dependency": "High: the exact zeta ratios and factorization notation are formula-dependent.",
+          "unit_id": "openalex_w2031072746_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1736,
+            "line_start": 1703,
+            "title": "Parameter selection balances coefficient availability, damping, and interval precision",
+            "unit_id": "openalex_w2031072746_u31",
+            "unit_type": "error-budget-design",
+            "why_material": "The worked computation chooses eta by comparing the largest truncation error with the expected function size, determines how far beyond the target height Turing bounds require evaluation, and assigns interval arithmetic to the rigorous downstream stages."
+          },
+          {
+            "line_end": 1815,
+            "line_start": 1772,
+            "title": "Explicit-formula zero spikes cross-check coefficients and expose conductor-dependent density",
+            "unit_id": "openalex_w2031072746_u33",
+            "unit_type": "independent-diagnostic",
+            "why_material": "The low-zero estimator yields unit-height spikes at plausible ordinates, agrees with the known zeta zero quoted by the source, and visibly tracks conductor/degree; because the explicit formula is coefficient-sensitive, this supplies an independent integrity check before the rigorous FFT/Turing pass."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once G and its derivatives are certified for a gamma-parameter tuple, the expensive analytic cache can be reused across arithmetic-family members, leaving only source-specific Dirichlet coefficients and pole data to change.",
+            "limit": "Reuse is restricted to identical gamma parameters and compatible normalization; ramified local factors still need individual computation.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u03",
+              "openalex_w2031072746_u24",
+              "openalex_w2031072746_u25",
+              "openalex_w2031072746_u32"
+            ],
+            "title": "Family reuse follows archimedean representation rather than individual L-function identity"
+          },
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u32",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u32",
+          "spontaneous_reading": "Coefficient generation is split by arithmetic regime: Dedekind-zeta ratios absorb the difficult ramified primes, while unramified Frobenius classes recovered from modular factorization supply the bulk coefficients at essentially linear total cost."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u32",
+          "source_grounded_mathematics": "Brauer-style identities express each S5 Artin L-function as a ratio of Dedekind zeta functions of intermediate fields, allowing PARI ideal factorization to compute local factors at discriminant primes. Away from those finitely many primes, the Frobenius conjugacy class is determined by counts of linear and quadratic factors of f mod p, obtained from gcd computations; local-factor tables then determine coefficients through n<=X in stated O(X) time under bounded-cost modular arithmetic.",
+          "conceptual_reading": "The construction uses a hybrid representation because no single method is efficient everywhere: field zeta functions preserve ramification detail, while conjugacy-class compression forgets unnecessary field data and exposes the scalable unramified structure.",
+          "representation_or_bridge": "Intermediate fields and zeta ratios bridge representations to ramified Euler factors; factorization type modulo p bridges Frobenius classes to the tabulated unramified local factors and hence to Dirichlet coefficients.",
+          "boundary_or_failure": "The fast route excludes finitely many ramified primes and assumes modular operations are bounded-time at the tested sizes. The seven-hour timing and the linear-cost claim's constant are implementation-specific.",
+          "uncertainty": "The exact zeta ratios, subscripts, and factorization notation are formula-sensitive in the extracted text and should be verified against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The local-factor and lowest-zero tables are source-specific evidence, not a proof of the later bounded claims by themselves.",
+      "line_end": 1815,
+      "line_start": 1772,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: graph data are not embedded here and the extracted tables/formulas need source-image verification for exact values.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The low-zero estimator yields unit-height spikes at plausible ordinates, agrees with the known zeta zero quoted by the source, and visibly tracks conductor/degree; because the explicit formula is coefficient-sensitive, this supplies an independent integrity check before the rigorous FFT/Turing pass.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit-formula zero spikes cross-check coefficients and expose conductor-dependent density",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u33.txt",
+      "unit_bytes": 2923,
+      "unit_id": "openalex_w2031072746_u33",
+      "unit_sha256": "ad36523531c7939ae040532bdffd3bd1a637cf432612675e109324a07c7ba352",
+      "unit_type": "independent-diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u33.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1764,
+          "line_end": 1771,
+          "text": "\nadditions mod p. Thus, by the prime number theorem, for each L(s, ρ) we may determine\nthe Dirichlet coefficients an for n ≤ X in time O(X) (assuming mod p multiplications and\nadditions take bounded time, which is appropriate for numbers of the size that we consider).\nUp to the implied constant, that is best possible. Moreover, the technique is very fast in\npractice; we found that it takes approximately seven hours to compute the local factors for\nall p < 232 .\n\n",
+          "sha256": "d9e26e0dc2b26cb8b04ddee471f8e32c0e024ce86fa862a8f8102a5b920aa37a"
+        },
+        "after": {
+          "line_start": 1816,
+          "line_end": 1823,
+          "text": "\n\n6.3. Computing Gh(k) (um ; η, {µj }).i Next we compute local approximations of G(u; η, {µj })\n                                     32\nfor u in the interval log √1N , log √2 N . We evaluate 213 Taylor series of 16 terms using (5.9);\nwith these choices, the error term in (5.16) is less than 10−28 . This calculation is the most\ndelicate, due to high precision and catastrophic cancellation. Nevertheless, the computa-\ntion time for this stage was only a few hours. The graph of |G(u; η, {µj })| is shown in\n",
+          "sha256": "882d5688a42706343c5a6a0938519e2f42abc5a268919885b8af4aca563ba12e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1815,
+          "line_start": 1772,
+          "title": "Explicit-formula zero spikes cross-check coefficients and expose conductor-dependent density",
+          "unit_id": "openalex_w2031072746_u33",
+          "unit_type": "independent-diagnostic",
+          "why_material": "The low-zero estimator yields unit-height spikes at plausible ordinates, agrees with the known zeta zero quoted by the source, and visibly tracks conductor/degree; because the explicit formula is coefficient-sensitive, this supplies an independent integrity check before the rigorous FFT/Turing pass."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The local-factor and lowest-zero tables are source-specific evidence, not a proof of the later bounded claims by themselves.",
+          "representation_dependency": "Very high: graph data are not embedded here and the extracted tables/formulas need source-image verification for exact values.",
+          "unit_id": "openalex_w2031072746_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1770,
+            "line_start": 1738,
+            "title": "Dedekind-zeta ratios handle ramification while Frobenius classes scale coefficient generation",
+            "unit_id": "openalex_w2031072746_u32",
+            "unit_type": "coefficient-construction",
+            "why_material": "Brauer-style zeta ratios provide local factors at exceptional primes, while unramified Frobenius conjugacy classes are recovered from low-degree factorization data modulo p, yielding essentially linear-time coefficient generation."
+          },
+          {
+            "line_end": 1837,
+            "line_start": 1818,
+            "title": "Certified local G models feed the main FFT evaluation",
+            "unit_id": "openalex_w2031072746_u34",
+            "unit_type": "numerical-certification-logic",
+            "why_material": "The implementation precomputes high-precision Taylor models of G with a stated remainder, spends most effort on binned coefficient moments, and then makes the actual L-value FFT fast while choosing A and B so the sampling-tail bound is negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The coefficient-driven explicit formula rapidly localizes low zeros, tunes parameters, and catches coefficient errors, while direct critical-line evaluation plus Turing's mean-argument bound certifies that no zeros were missed.",
+            "limit": "The positive-minimization locator assumes RH for the factor being probed, so its agreement is a diagnostic rather than the final independent certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u12",
+              "openalex_w2031072746_u13",
+              "openalex_w2031072746_u14",
+              "openalex_w2031072746_u15",
+              "openalex_w2031072746_u16",
+              "openalex_w2031072746_u21",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "Explicit formula proposes and diagnoses; Turing certifies completeness"
+          },
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u33",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u33",
+          "spontaneous_reading": "Explicit-formula spikes serve two roles before certification: they propose low-zero locations and act as a sensitive checksum on the computed Euler data, with conductor and degree reflected in the observed spike density."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u33",
+          "source_grounded_mathematics": "Using the computed coefficients, the source evaluates F_X(t); spikes of height one are interpreted as low zeros, the zeta estimate agrees with the quoted known first zero to the computation's precision, and the graphs show increasing zero density with conductor and degree. Tables give unramified S5 local factors and estimated lowest ordinates for the irreducible L-functions.",
+          "conceptual_reading": "A coefficient-sensitive explicit formula maps distributed local arithmetic data into localized spectral features. Agreement and correct spike height provide an independent integrity diagnostic for coefficient construction, but not the final completeness certificate.",
+          "representation_or_bridge": "The explicit formula is the bridge from Euler coefficients to a real-variable zero locator; the local-factor table supplies the class-to-coefficient encoding whose consistency the spikes test.",
+          "boundary_or_failure": "The estimator and table are source-specific diagnostics, not proofs of the later bounded claims. The plots themselves are not recoverable from this text span, and the locator's interpretive use does not establish that no zeros were missed.",
+          "uncertainty": "Exact graph values, local-factor typography, and table alignment are highly extraction-sensitive; only the surrounding qualitative claims are secure here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The section heading is extraction-damaged, but the prose and references to (5.16), (5.18), and Lemma 5.5 recover the workflow.",
+      "line_end": 1837,
+      "line_start": 1818,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several powers and parameter values are text-layer ambiguous and require the original PDF for exact reruns.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The implementation precomputes high-precision Taylor models of G with a stated remainder, spends most effort on binned coefficient moments, and then makes the actual L-value FFT fast while choosing A and B so the sampling-tail bound is negligible.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Certified local G models feed the main FFT evaluation",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u34.txt",
+      "unit_bytes": 1247,
+      "unit_id": "openalex_w2031072746_u34",
+      "unit_sha256": "383c8425f080592378dec0a8c5e4dd0f24e418a24eeeb45e56d1c847a122dc88",
+      "unit_type": "numerical-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u34.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1810,
+          "line_end": 1817,
+          "text": "              ρ conductor lowest zero       ρ conductor lowest zero\n              1         1 14.134725142 χ                3 8.039737156\n             ρ4   4009008 1.108937765 ρ′4 36081072 0.5717508665\n             ρ5 36081072 1.062064850 ρ′5 12027024 0.8132800720\n             ρ6 36081072 1.376872200\n  Table 6.3. Conductor and ordinate of the lowest zero of each irreducible L-function\n\n\n",
+          "sha256": "6658fe7d4fe6fac8343beb13eeb92d9592c386280781cd81fb1ab966f676aac9"
+        },
+        "after": {
+          "line_start": 1838,
+          "line_end": 1845,
+          "text": "<!-- source-page: 34 -->\n\n34                                              ANDREW R. BOOKER\n     1.2                                                         1.2\n                                                       1                                                                chi\n\n      1                                                           1\n\n",
+          "sha256": "b23be0da7b13f1eb023d2a99d4750af9a2dd780849b10a92a3f92fd4df3bc5c3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1837,
+          "line_start": 1818,
+          "title": "Certified local G models feed the main FFT evaluation",
+          "unit_id": "openalex_w2031072746_u34",
+          "unit_type": "numerical-certification-logic",
+          "why_material": "The implementation precomputes high-precision Taylor models of G with a stated remainder, spends most effort on binned coefficient moments, and then makes the actual L-value FFT fast while choosing A and B so the sampling-tail bound is negligible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The section heading is extraction-damaged, but the prose and references to (5.16), (5.18), and Lemma 5.5 recover the workflow.",
+          "representation_dependency": "High: several powers and parameter values are text-layer ambiguous and require the original PDF for exact reruns.",
+          "unit_id": "openalex_w2031072746_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1815,
+            "line_start": 1772,
+            "title": "Explicit-formula zero spikes cross-check coefficients and expose conductor-dependent density",
+            "unit_id": "openalex_w2031072746_u33",
+            "unit_type": "independent-diagnostic",
+            "why_material": "The low-zero estimator yields unit-height spikes at plausible ordinates, agrees with the known zeta zero quoted by the source, and visibly tracks conductor/degree; because the explicit formula is coefficient-sensitive, this supplies an independent integrity check before the rigorous FFT/Turing pass."
+          },
+          {
+            "line_end": 1924,
+            "line_start": 1913,
+            "title": "Agreement of independent zero locators precedes Turing closure",
+            "unit_id": "openalex_w2031072746_u35",
+            "unit_type": "cross-method-validation",
+            "why_material": "The source compares zeros of the rigorously computed critical-line function with explicit-formula spikes, then applies Turing's method while simultaneously checking the runtime zero-isolation working hypothesis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1912,
+              "line_start": 1838,
+              "reason": "Figure 6.1 is extracted mainly as axes, labels, and whitespace; later prose carries its mathematical interpretation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u34",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u34",
+          "spontaneous_reading": "The implementation front-loads the delicate work into certified local Taylor models and binned coefficient moments; once those compressed objects exist, the global L-value FFT is fast and its sampling tail is made negligible by grid design."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u34",
+          "source_grounded_mathematics": "The source precomputes many 16-term Taylor expansions of G on the required u-interval and reports a remainder below 10^-28, while noting high precision and catastrophic cancellation. Computing the moment arrays S_m^(k) takes most of the time; afterward (5.18) and L(s,rho_6) are evaluated quickly. B is chosen far above the needed height so Lemma 5.5 tails are negligible, and A is chosen well above the expected zero-density scale.",
+          "conceptual_reading": "Certified local approximation and moment binning are the intermediate representations that move cost out of repeated evaluation. They preserve the information needed by the final convolution while making the online FFT stage cheap.",
+          "representation_or_bridge": "Taylor coefficients bridge the Mellin kernel to local polynomial evaluation, S_m^(k) bridge Dirichlet coefficients to convolution inputs, and the A,B grid bridges the continuous target range to a controlled discrete transform.",
+          "boundary_or_failure": "The G-table stage remains cancellation-sensitive, and the moment stage dominates runtime. The unit ends mid-sentence about A, while several powers and parameter counts are visibly flattened by extraction, so the exact grid cannot be reconstructed safely from this span.",
+          "uncertainty": "The workflow and stated remainder are clear, but the number of Taylor series, powers of two, B, A, and density multiplier need source-image verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This establishes a layered validation chain: agreement is diagnostic, while the Turing count supplies the bounded completeness certificate.",
+      "line_end": 1924,
+      "line_start": 1913,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the interpretive prose is recoverable, but the underlying plots are graphic-only in the normalized text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source compares zeros of the rigorously computed critical-line function with explicit-formula spikes, then applies Turing's method while simultaneously checking the runtime zero-isolation working hypothesis.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Agreement of independent zero locators precedes Turing closure",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_u35.txt",
+      "unit_bytes": 804,
+      "unit_id": "openalex_w2031072746_u35",
+      "unit_sha256": "6cfcfacb4d2785e3fe87780f2ba939eabde375b0a5ad2fd48101e419ad260a4d",
+      "unit_type": "cross-method-validation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_u35.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1905,
+          "line_end": 1912,
+          "text": "       1\n     0.8\n     0.6\n     0.4\n     0.2\n       0\n               0           2           4               6                   8           10           12                 14\n                           Figure 6.1. FX (t) for each irreducible representation\n",
+          "sha256": "c880b91eeacdc01f6d7031c32f24ab9d546d55e2cd9f797a39512e7b68b10a25"
+        },
+        "after": {
+          "line_start": 1925,
+          "line_end": 1932,
+          "text": "<!-- source-page: 35 -->\n\nARTIN’S CONJECTURE, TURING’S METHOD AND THE RIEMANN HYPOTHESIS                               35\n\n      3\n                                                                                |G(u)|\n\n 2.5\n",
+          "sha256": "58b144fc2dbf1ac9965d3a6363734bfa67c6319dda676c77df36b5b408fc2a83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_93fab3f6a641f08ca742af1c580113f593829634cc2793da251c893e135b67e2",
+        "dossier_sha256": "58d2253a4f5ac0e27e11a6bae0e7299bbb4982022d3ef45cdf40e75bfe571ca6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Numerical results",
+            "line_end": 1990,
+            "line_start": 1654,
+            "mathematical_role": "Instantiates the representation relations, coefficient pipeline, independent zero diagnostics, interval arithmetic, FFT evaluation, and Turing closure on S5/A5 fields."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1924,
+          "line_start": 1913,
+          "title": "Agreement of independent zero locators precedes Turing closure",
+          "unit_id": "openalex_w2031072746_u35",
+          "unit_type": "cross-method-validation",
+          "why_material": "The source compares zeros of the rigorously computed critical-line function with explicit-formula spikes, then applies Turing's method while simultaneously checking the runtime zero-isolation working hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This establishes a layered validation chain: agreement is diagnostic, while the Turing count supplies the bounded completeness certificate.",
+          "representation_dependency": "Moderate: the interpretive prose is recoverable, but the underlying plots are graphic-only in the normalized text.",
+          "unit_id": "openalex_w2031072746_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1837,
+            "line_start": 1818,
+            "title": "Certified local G models feed the main FFT evaluation",
+            "unit_id": "openalex_w2031072746_u34",
+            "unit_type": "numerical-certification-logic",
+            "why_material": "The implementation precomputes high-precision Taylor models of G with a stated remainder, spends most effort on binned coefficient moments, and then makes the actual L-value FFT fast while choosing A and B so the sampling-tail bound is negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The coefficient-driven explicit formula rapidly localizes low zeros, tunes parameters, and catches coefficient errors, while direct critical-line evaluation plus Turing's mean-argument bound certifies that no zeros were missed.",
+            "limit": "The positive-minimization locator assumes RH for the factor being probed, so its agreement is a diagnostic rather than the final independent certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u12",
+              "openalex_w2031072746_u13",
+              "openalex_w2031072746_u14",
+              "openalex_w2031072746_u15",
+              "openalex_w2031072746_u16",
+              "openalex_w2031072746_u21",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "Explicit formula proposes and diagnoses; Turing certifies completeness"
+          },
+          {
+            "claim": "Character relations select the necessary compound L-functions, scalable Frobenius computation supplies coefficients, explicit-formula spikes audit them, interval-certified FFT values find sign changes, and Turing counting closes completeness while checking zero isolation.",
+            "limit": "The reported outcome is tied to the listed fields, implementation parameters, and tested height |t|<=100; it does not establish either conjecture globally.",
+            "parent_local_unit_ids": [
+              "openalex_w2031072746_u30",
+              "openalex_w2031072746_u31",
+              "openalex_w2031072746_u32",
+              "openalex_w2031072746_u33",
+              "openalex_w2031072746_u34",
+              "openalex_w2031072746_u35"
+            ],
+            "title": "End-to-end bounded S5 evidence chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1912,
+              "line_start": 1838,
+              "reason": "Figure 6.1 is extracted mainly as axes, labels, and whitespace; later prose carries its mathematical interpretation."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1985,
+              "line_start": 1925,
+              "reason": "Figures 6.2–6.4 are graphic-only plots rendered as axes and isolated labels; their nearby prose already captures the usable claims."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031072746_u35",
+        "spontaneous": {
+          "unit_id": "openalex_w2031072746_u35",
+          "spontaneous_reading": "Two zero locators are deliberately compared before closure: agreement between the critical-line Z analogue and explicit-formula spikes diagnoses the computation, while Turing's method separately supplies the finite-range completeness and zero-isolation check."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031072746_u35",
+          "source_grounded_mathematics": "The main Fourier transform evaluates the completed-function analogue Z(t)=Lambda(1/2+it)/gamma(1/2+it). Its plotted zeros agree well with a rescaled F_X(t), including a higher range near t in [90,100]. The final stage applies Turing's method to the computed L-functions and at the same time verifies the working hypothesis that irreducible-factor zeros can be isolated.",
+          "conceptual_reading": "The evidence is layered: cross-method agreement is a sensitive diagnostic of likely correctness, whereas the Turing count is the mechanism intended to certify that the observed critical-line zeros are complete in the bounded range.",
+          "representation_or_bridge": "The real-valued Z analogue bridges complex completed L-values to sign/zero detection; F_X supplies an independently constructed spectral locator; Turing's mean-argument count bridges detected zeros to bounded completeness.",
+          "boundary_or_failure": "Agreement of plots alone cannot rule out missed zeros, and the result remains finite-height and conditional on successful interval computation and zero isolation. The normalized text omits the plot data themselves.",
+          "uncertainty": "Superscripted transform sizes and the scaling applied to F_X are OCR-damaged; the qualitative validation sequence is clear, but exact numerical rerun parameters are not."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "03914222065ebf744afdaded15febd0db5df075d6b23d54d01de7d4fd915d2f5"
+}

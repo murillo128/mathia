@@ -1,0 +1,175 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1984368160_e4a0f5ae_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1984368160",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first direct assembly step from the abstract saddle lemma to the theorem.",
+      "line_end": 885,
+      "line_start": 852,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sum display is materially corrupted; scan verification is mandatory for symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Letting the specialized saddle bounds cover the full range converts I1 into the first explicit oscillatory sum with truncation length comparable to T, while the divisor-error bound makes I2 lower order.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The direct oscillatory integrals yield a Voronoi-like finite sum while the companion term is negligible",
+      "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u06.txt",
+      "unit_bytes": 1647,
+      "unit_id": "openalex_w1984368160_v2_u06",
+      "unit_sha256": "3cdee3e67a4e21bb0dc0d8a5a5acdea1266cc7028fb137de862784fb86c9306f",
+      "unit_type": "first-sum-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 844,
+          "line_end": 851,
+          "text": "\nso t h a t in this case the error term gives us\n\n                                                         0 (r-t-~/~-~).\n\n         This completes the proof of L e m m a 2 for k >-- I.                                          For k ~     --    I the argu-\nm e n t differs only in that' the terms in x o do n o t occur.\n\n",
+          "sha256": "9f2b01275f968ae126152586f2c249b30440d7c0d28d288dae2aca5d20f2951b"
+        },
+        "after": {
+          "line_start": 886,
+          "line_end": 893,
+          "text": "         8.       Estimation of I3.\n         W e write (4.7) in the form\n\n                                                        log X + 2                         i\n                                            13= --2                      7/.~, +\n\nand consider first I8,. We divide the range of integration at Y, where Y = ( 2 X ) - I .\nThe integral over (o, Y) gives\n",
+          "sha256": "a9b3046da8fb9c7b6363fb32982dad890b5b23282cdb2223b1e897ffa4ca7f3d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0b904a605583a2efda2035aaba026681dcd2a0b61f195308399d3ec7f9811a10",
+        "dossier_sha256": "0ff42181d8c1530d0846df64db0a36286b4d0a30f25b50f7f33c29cb7801acf8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Estimation of I1 and I2",
+            "line_end": 885,
+            "line_start": 852,
+            "mathematical_role": "Extracts the first oscillatory sum and shows the second integral is lower order."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 885,
+          "line_start": 852,
+          "title": "The direct oscillatory integrals yield a Voronoi-like finite sum while the companion term is negligible",
+          "unit_id": "openalex_w1984368160_v2_u06",
+          "unit_type": "first-sum-extraction",
+          "why_material": "Letting the specialized saddle bounds cover the full range converts I1 into the first explicit oscillatory sum with truncation length comparable to T, while the divisor-error bound makes I2 lower order."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the first direct assembly step from the abstract saddle lemma to the theorem.",
+          "representation_dependency": "The sum display is materially corrupted; scan verification is mandatory for symbolic use.",
+          "unit_id": "openalex_w1984368160_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 850,
+            "line_start": 695,
+            "title": "The mean-square phase has an explicit hyperbolic stationary point and two frequency regimes",
+            "unit_id": "openalex_w1984368160_v2_u05",
+            "unit_type": "specialized-saddle-evaluation",
+            "why_material": "Specializing the general lemma locates the saddle through a quadratic relation, rewrites its phase with an inverse hyperbolic sine, and gives different uniform remainders below and above the natural frequency scale T."
+          },
+          {
+            "line_end": 1063,
+            "line_start": 886,
+            "title": "Splitting I3 at phase-transition scales combines monotonicity with stationary phase",
+            "unit_id": "openalex_w1984368160_v2_u07",
+            "unit_type": "transition-scale-integral-control",
+            "why_material": "The small-y range is controlled by repeated mean-value arguments, the remaining first component by the specialized saddle lemma without retaining its main term, and the second component is split again to isolate a constant contribution and prove all tails smaller."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Difference indexing and Poisson continuation expose one direct saddle sum, while Voronoi expansion of the divisor remainder followed by a second saddle transformation exposes the complementary sum; their coexistence is structural rather than duplicated approximation.",
+            "limit": "The exact duality and coefficients cannot be trusted from this OCR text without scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1984368160_v2_u02",
+              "openalex_w1984368160_v2_u03",
+              "openalex_w1984368160_v2_u06",
+              "openalex_w1984368160_v2_u08"
+            ],
+            "title": "The two oscillatory sums come from two different representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1984368160_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w1984368160_v2_u06",
+          "spontaneous_reading": "The first assembly step shows why the earlier uniformity mattered: summing the specialized saddle main terms over divisor frequencies produces the first finite oscillatory sum, while the companion term is absorbed into a smaller error."
+        },
+        "directed": {
+          "unit_id": "openalex_w1984368160_v2_u06",
+          "source_grounded_mathematics": "Taking the limits a→0 and b→∞ in Lemma 2 and substituting into I1 yields a sum over n<N, with AT<N<A'T, whose phase contains the inverse-hyperbolic saddle expression and whose aggregate remainder is O(T^{-1/4}) in the extracted text. The bound J(x)=O(x^{1/3}log x) gives I2=O(T^{-1/6}log T).",
+          "conceptual_reading": "A local asymptotic becomes globally useful only because its errors survive summation over a T-sized frequency range. The I1/I2 split separates coherent oscillation from a divisor-remainder contribution that need not be expanded.",
+          "representation_or_bridge": "The finite n-sum obtained from I1 is the bridge from individual saddle integrals to the first group in Atkinson's approximate functional equation.",
+          "boundary_or_failure": "The displayed sum is severely OCR-damaged, so its exact amplitude, phase, and even extracted error exponents require scan verification.",
+          "uncertainty": "Moderate for the assembly logic and negligibility of I2; high for symbolic details."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1984368160_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span supports passage from the specialized saddle result to the first finite oscillatory sum with AT<N<A'T and supports that I2 is lower order through a divisor-error estimate."
+        ],
+        "inference": [
+          "The statement that prior uniformity permits summation over many frequencies is a reasonable explanation of why the lemma was formulated uniformly."
+        ],
+        "unsupported_or_imported": [
+          "The pass gives exact exponents O(T^{-1/4}), J(x)=O(x^{1/3}log x), and O(T^{-1/6}log T) even though the relevant symbols are materially OCR-corrupted; these values are reconstructed rather than secure source facts in this artifact."
+        ],
+        "paraphrase_or_style_risk": [
+          "The local-to-global assembly is substantive, but exact-looking exponents create false authority when the source layer cannot support them."
+        ],
+        "context_or_ocr_risk": [
+          "The sum, phase, amplitude, powers, and error exponents are severely damaged."
+        ],
+        "missed_mechanism": [
+          "The key safe claim is qualitative: the I1 saddle main terms assemble coherently while the J-controlled I2 contribution is smaller."
+        ],
+        "revision_instructions": [
+          "Remove all exact error exponents and the precise divisor exponent until scan verification; retain only the finite-sum assembly, comparable cutoff, and qualitative negligibility of I2."
+        ]
+      }
+    }
+  ]
+}

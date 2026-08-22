@@ -1,0 +1,2046 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1605891845_0c06a2f9_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1605891845",
+  "unit_count": 17,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The formulas provide local setup for the source's strategy; the unit records the proposed change of viewpoint rather than validating the later proof claim.",
+      "line_end": 99,
+      "line_start": 43,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the prose is clear, but displayed formulas contain normalization glyph noise and should be checked against the page scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage assembles the series continuation, pole, real and nontrivial zeros, critical strip, Laurent expansion, and functional equation, then explicitly reframes the intended RH route in terms of conformal mappings of fundamental domains.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the analytic zeta setup to a fundamental-domain formulation of RH",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d01.txt",
+      "unit_bytes": 2887,
+      "unit_id": "openalex_w1605891845_d01",
+      "unit_sha256": "a02b69a9286014b389c9a84d2823c358a2b46be61d270e4e55294ae7e3c3acaa",
+      "unit_type": "strategic setup and representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d01.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 35,
+          "line_end": 42,
+          "text": "\n    The RP proof will be derived from the global mapping properties of Zeta function. The\nRiemann conjecture prompted the study of at lest local mapping properties in the\nneighborhood of non trivial zeros. There are known color visualizations of the module, the\nreal part and the imaginary part of Zeta function at some of those points (see Wolfram\nMathWorld), however they do not offer an easy way to visualize the global behavior of this\nfunction. We perfected an idea found in [8], page 213.\n\n",
+          "sha256": "84ea4b92eeabee6576c280f0a739644ce758a416a16de460bfb31d78087fb63d"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "\n    The concept of a fundamental domain, as it appears here, has been formulated by\nAhlfors, who also emphasized its importance as a tool in the study of analytic functions. He\nsaid: Whatever the advantage of such a representation may be, the clearest picture of the\nRiemann surface is obtained by direct consideration of the fundamental regions in the\nz-plane ([1], page 99).\n\n    Starting with the study of Blaschke products ([4], [5], [7]), we followed a true program of\n",
+          "sha256": "9ea5453e0bc2a7b5779ba63ceac350216ecd27d346c7e101c3f2815f31059365"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 136,
+            "line_start": 25,
+            "mathematical_role": "Sets up zeta, its pole, zeros, functional equation, the RH target, and the proposed fundamental-domain/global-mapping viewpoint."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 43,
+          "title": "From the analytic zeta setup to a fundamental-domain formulation of RH",
+          "unit_id": "openalex_w1605891845_d01",
+          "unit_type": "strategic setup and representation change",
+          "why_material": "The passage assembles the series continuation, pole, real and nontrivial zeros, critical strip, Laurent expansion, and functional equation, then explicitly reframes the intended RH route in terms of conformal mappings of fundamental domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The formulas provide local setup for the source's strategy; the unit records the proposed change of viewpoint rather than validating the later proof claim.",
+          "representation_dependency": "Moderate: the prose is clear, but displayed formulas contain normalization glyph noise and should be checked against the page scan before formula-level reuse.",
+          "unit_id": "openalex_w1605891845_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 135,
+            "line_start": 101,
+            "title": "Fundamental domains near an essential singularity",
+            "unit_id": "openalex_w1605891845_d02",
+            "unit_type": "definition and global geometric consequence",
+            "why_material": "The source defines the working role of fundamental regions as domains mapped conformally onto a slit plane and derives the proposed accumulation pattern: finitely many meet a compact set, while infinitely many occur outside it toward infinity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 42,
+              "line_start": 25,
+              "reason": "Section heading, broad RH motivation, and announcement of the global-mapping strategy."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The argument invokes the source's earlier program and an enriched Picard-type statement; those cited works were not part of this isolated inspection.",
+      "line_end": 135,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: recoverable from prose with only the derivative notation and slit-plane language needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source defines the working role of fundamental regions as domains mapped conformally onto a slit plane and derives the proposed accumulation pattern: finitely many meet a compact set, while infinitely many occur outside it toward infinity.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fundamental domains near an essential singularity",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d02.txt",
+      "unit_bytes": 2162,
+      "unit_id": "openalex_w1605891845_d02",
+      "unit_sha256": "ceb6e2620af358d046fadf650784205d6e19cd4f88f11b044ee82152e3d307d7",
+      "unit_type": "definition and global geometric consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d02.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "\n\n    As predicted, the proof of RH will have a lot of consequences in number theory, although\nRP is a property of conformal mappings. It is probably safe to say that the conformal\nmappings made their royal entrance into the realm of number theory through the RP. By the\nglobal mapping properties of the Riemann Zeta function we understand the conformal\nmapping properties of its fundamental domains.\n\n",
+          "sha256": "081331d8ce9c18df0b5cb9c72f1e87d32c43793aa885cca15302ba68fa7136b6"
+        },
+        "after": {
+          "line_start": 136,
+          "line_end": 143,
+          "text": "\n    2. The Pre-Image by ζ of the Real Axis\n\n     In order to make the paper self contained, let us repeat some of the results obtained in\n[3]. The pre-image by ζ of the real axis can be viewed as simultaneous continuation over the\nreal axis from a real value starting from all the points in which that value is assumed.\n\n    By the Big Picard Theorem, every value z 0 from the z-plane z = ζs, if it is not a\n",
+          "sha256": "a3187aa93eed72d686e06cd98afffcd826c1081f89f4f66f1fdb59f45e3a4a89"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 136,
+            "line_start": 25,
+            "mathematical_role": "Sets up zeta, its pole, zeros, functional equation, the RH target, and the proposed fundamental-domain/global-mapping viewpoint."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 135,
+          "line_start": 101,
+          "title": "Fundamental domains near an essential singularity",
+          "unit_id": "openalex_w1605891845_d02",
+          "unit_type": "definition and global geometric consequence",
+          "why_material": "The source defines the working role of fundamental regions as domains mapped conformally onto a slit plane and derives the proposed accumulation pattern: finitely many meet a compact set, while infinitely many occur outside it toward infinity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The argument invokes the source's earlier program and an enriched Picard-type statement; those cited works were not part of this isolated inspection.",
+          "representation_dependency": "Low: recoverable from prose with only the derivative notation and slit-plane language needed.",
+          "unit_id": "openalex_w1605891845_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 99,
+            "line_start": 43,
+            "title": "From the analytic zeta setup to a fundamental-domain formulation of RH",
+            "unit_id": "openalex_w1605891845_d01",
+            "unit_type": "strategic setup and representation change",
+            "why_material": "The passage assembles the series continuation, pole, real and nontrivial zeros, critical strip, Laurent expansion, and functional equation, then explicitly reframes the intended RH route in terms of conformal mappings of fundamental domains."
+          },
+          {
+            "line_end": 170,
+            "line_start": 139,
+            "title": "Simultaneous continuation of real-axis pre-images and the red-black curve encoding",
+            "unit_id": "openalex_w1605891845_d03",
+            "unit_type": "construction",
+            "why_material": "This constructs pre-image arcs through zeros, continues them across derivative branch points, distinguishes the continuation stopped by the pole, and turns sign on the real image into a two-color encoding whose junctions mark zeros."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction explicitly assumes the cited claim that zeta's zeros are simple; the paper also separates the interval mapping toward the pole from components continuing unboundedly.",
+      "line_end": 170,
+      "line_start": 139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: prose carries the mechanism, while some inverse-image and limit notation is OCR-degraded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This constructs pre-image arcs through zeros, continues them across derivative branch points, distinguishes the continuation stopped by the pole, and turns sign on the real image into a two-color encoding whose junctions mark zeros.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Simultaneous continuation of real-axis pre-images and the red-black curve encoding",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d03.txt",
+      "unit_bytes": 2471,
+      "unit_id": "openalex_w1605891845_d03",
+      "unit_sha256": "59353b6651c8ed6752208570843939212b399f946e4dbdd3c880be60991809f4",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d03.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "    The Riemann Zeta function has a unique essential singularity at the point ∞ of the\nRiemann sphere. Thus, its fundamental domains should accumulate to infinity and only\nthere, in the sense that every compact set from the complex plane intersects only a finite\nnumber of fundamental domains of this function, while in the exterior of a compact set there\nare infinitely many such domains.\n\n    2. The Pre-Image by ζ of the Real Axis\n\n",
+          "sha256": "2bf83cf7a8dc3581948a649edca22f330cb00f6c673e4030f359561e46c84034"
+        },
+        "after": {
+          "line_start": 171,
+          "line_end": 178,
+          "text": "\n\n\n                                                                                                  3\n\n<!-- source-page: 4 -->\n\nFig. 1\n",
+          "sha256": "96a41a74ff51d138f676436f58d59f63be3eccbdb52914200aec94540bd353b9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 170,
+          "line_start": 139,
+          "title": "Simultaneous continuation of real-axis pre-images and the red-black curve encoding",
+          "unit_id": "openalex_w1605891845_d03",
+          "unit_type": "construction",
+          "why_material": "This constructs pre-image arcs through zeros, continues them across derivative branch points, distinguishes the continuation stopped by the pole, and turns sign on the real image into a two-color encoding whose junctions mark zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The construction explicitly assumes the cited claim that zeta's zeros are simple; the paper also separates the interval mapping toward the pole from components continuing unboundedly.",
+          "representation_dependency": "Moderate: prose carries the mechanism, while some inverse-image and limit notation is OCR-degraded.",
+          "unit_id": "openalex_w1605891845_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 135,
+            "line_start": 101,
+            "title": "Fundamental domains near an essential singularity",
+            "unit_id": "openalex_w1605891845_d02",
+            "unit_type": "definition and global geometric consequence",
+            "why_material": "The source defines the working role of fundamental regions as domains mapped conformally onto a slit plane and derives the proposed accumulation pattern: finitely many meet a compact set, while infinitely many occur outside it toward infinity."
+          },
+          {
+            "line_end": 219,
+            "line_start": 187,
+            "title": "Quasi-lacunary value 1 and the infinite strip decomposition",
+            "unit_id": "openalex_w1605891845_d04",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "The paper identifies 1 as a quasi-lacunary value, obtains unbounded boundary curves from continuation over (1,+infinity), and states that consecutive curves bound doubly infinite strips mapped onto a slit plane; the proof uses the unique pole to rule out boundary intersection."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 186,
+              "line_start": 171,
+              "reason": "Pagination, missing Fig. 1 label, and a brief visual restatement of branch points and derivative zeros."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 180-185 give figure-based motivation, but the theorem and its pole-based nonintersection mechanism are stated in recoverable prose here.",
+      "line_end": 219,
+      "line_start": 187,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the curve labels and limits are readable, though the missing Fig. 1 prevents visual verification of the asserted configuration.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper identifies 1 as a quasi-lacunary value, obtains unbounded boundary curves from continuation over (1,+infinity), and states that consecutive curves bound doubly infinite strips mapped onto a slit plane; the proof uses the unique pole to rule out boundary intersection.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quasi-lacunary value 1 and the infinite strip decomposition",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d04.txt",
+      "unit_bytes": 2155,
+      "unit_id": "openalex_w1605891845_d04",
+      "unit_sha256": "94c7b04d559b937f7c07ec522d78f54d21fe6fc60a6376da3ab6197b9b5bdfcc",
+      "unit_type": "theorem-plus-proof fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d04.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "\n    Fig.1 represents the pre-images by ζ (Fig. 1a) and by ζ ′ (Fig. 1b) of the real axis in boxes\nof [-30,30]x[-30,30].\n\n    We notice the existence of branch points on the real axis and their color alternation, as\nwell as the trivial zeros between them. If we superpose the two pictures, the branch points of\nthe first, will coincide with the zeros of the second.\n\n",
+          "sha256": "3eed48c95be8b64588f2083aa2c4bea229fb265eacab823686d7a7a3ae3f0c50"
+        },
+        "after": {
+          "line_start": 220,
+          "line_end": 227,
+          "text": "\n      When the continuation can take place over the whole real axis, we obtain unbounded\ncurves each containing a non trivial zero of ζ and a point u with ζu = 1. Such a point u is\nnecessarily interior to a strip S k since the border of every S k , which is included in\nζ −1 1, +∞, and the set ζ −1 1 are disjoint.\n\n       Let us denote by u k,j the points of S k for which ζu k,j  = 1, by Γ k,j , j ≠ 0 the components\nof ζ −1 ℝ containing u k,j and by s k,j the non trivial zero of ζ situated on Γ k,j . As shown in [3]\n",
+          "sha256": "a63717551a37bdcc092b4ec20af3832c11df6a051ae15b2fe74c371d1b8aba82"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 219,
+          "line_start": 187,
+          "title": "Quasi-lacunary value 1 and the infinite strip decomposition",
+          "unit_id": "openalex_w1605891845_d04",
+          "unit_type": "theorem-plus-proof fragment",
+          "why_material": "The paper identifies 1 as a quasi-lacunary value, obtains unbounded boundary curves from continuation over (1,+infinity), and states that consecutive curves bound doubly infinite strips mapped onto a slit plane; the proof uses the unique pole to rule out boundary intersection."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 180-185 give figure-based motivation, but the theorem and its pole-based nonintersection mechanism are stated in recoverable prose here.",
+          "representation_dependency": "Moderate: the curve labels and limits are readable, though the missing Fig. 1 prevents visual verification of the asserted configuration.",
+          "unit_id": "openalex_w1605891845_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 139,
+            "title": "Simultaneous continuation of real-axis pre-images and the red-black curve encoding",
+            "unit_id": "openalex_w1605891845_d03",
+            "unit_type": "construction",
+            "why_material": "This constructs pre-image arcs through zeros, continues them across derivative branch points, distinguishes the continuation stopped by the pole, and turns sign on the real image into a two-color encoding whose junctions mark zeros."
+          },
+          {
+            "line_end": 234,
+            "line_start": 221,
+            "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+            "unit_id": "openalex_w1605891845_d05",
+            "unit_type": "structural decomposition",
+            "why_material": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 186,
+              "line_start": 171,
+              "reason": "Pagination, missing Fig. 1 label, and a brief visual restatement of branch points and derivative zeros."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the combinatorial bookkeeping later used to index fundamental domains and adjacent zero configurations.",
+      "line_end": 234,
+      "line_start": 221,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low to moderate: the prose is complete, with only subscripts and inverse-image symbols affected by OCR.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d05.txt",
+      "unit_bytes": 1222,
+      "unit_id": "openalex_w1605891845_d05",
+      "unit_sha256": "57360c378ce71f4ed89e8672fac493daccc6ae144564a140960ce08a8a133305",
+      "unit_type": "structural decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d05.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 213,
+          "line_end": 220,
+          "text": "\n                                                                                                4\n\n<!-- source-page: 5 -->\n\nthe only pole of ζ is s = 1. When a point s travels on Γ ′k and then on Γ ′k+1 leaving the strip at\nleft, ζs moves on the real axis from 1 to ∞ and back. □\n\n",
+          "sha256": "3de5120b70cc7a0d3f828a7dafe390c9f4246c501b39136eadfdb78e434f87f5"
+        },
+        "after": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "\n      Theorem 2: When the continuation takes place over the whole real axis, the components\nΓ k,j are such that the branches corresponding to both the positive and the negative real half\naxis contain only points σ + it with σ < 0 for |σ| big enough.\n\n    Proof: A point traveling in the same direction on a circle γ centered at the origin of the\nz-plane meets consecutively the positive and the negative real half axis. Thus the pre-image\nof γ should meet consecutively the branches corresponding to the pre-image of the positive\n",
+          "sha256": "e1eb2333481f1d8aaaaf6116860bb591c1869644b33f9bdb57ea6f3870722988"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 234,
+          "line_start": 221,
+          "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+          "unit_id": "openalex_w1605891845_d05",
+          "unit_type": "structural decomposition",
+          "why_material": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the combinatorial bookkeeping later used to index fundamental domains and adjacent zero configurations.",
+          "representation_dependency": "Low to moderate: the prose is complete, with only subscripts and inverse-image symbols affected by OCR.",
+          "unit_id": "openalex_w1605891845_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 219,
+            "line_start": 187,
+            "title": "Quasi-lacunary value 1 and the infinite strip decomposition",
+            "unit_id": "openalex_w1605891845_d04",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "The paper identifies 1 as a quasi-lacunary value, obtains unbounded boundary curves from continuation over (1,+infinity), and states that consecutive curves bound doubly infinite strips mapped onto a slit plane; the proof uses the unique pole to rule out boundary intersection."
+          },
+          {
+            "line_end": 255,
+            "line_start": 236,
+            "title": "Color alternation constrains remote branches, derivative zeros, and circle pre-images",
+            "unit_id": "openalex_w1605891845_d06",
+            "unit_type": "geometric constraint and consequences",
+            "why_material": "Theorem 2 imposes a common left-half-plane direction on both sign branches, and the source then applies color alternation to claim unique derivative zeros between consecutive trivial zeros and unbounded alternating components of circle pre-images."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit keeps the theorem's ray/circle justification with its two stated applications so the reused move is visible.",
+      "line_end": 255,
+      "line_start": 236,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the argument is prose-led; color names encode the signs of real image values defined earlier.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 imposes a common left-half-plane direction on both sign branches, and the source then applies color alternation to claim unique derivative zeros between consecutive trivial zeros and unbounded alternating components of circle pre-images.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Color alternation constrains remote branches, derivative zeros, and circle pre-images",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d06.txt",
+      "unit_bytes": 1397,
+      "unit_id": "openalex_w1605891845_d06",
+      "unit_sha256": "5f2146aa20290d8d30b01e32a9062038d427d413e6dc73c1d502fd05d3966267",
+      "unit_type": "geometric constraint and consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d06.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 228,
+          "line_end": 235,
+          "text": "Theorem 7, every S k contains a unique component Γ k,0 with the property that\nlim σ−>+∞ ζσ + it = 1 and lim σ−>−∞ ζσ + it = −∞. where σ + it ∈ Γ k,0 (i.e. which is\nprojected bijectively by ζ onto the interval −∞, 1) and a finite number j k − 1 of components\nsuch that each one is projected bijectively by ζ onto the whole real axis. Therefore S k\ncontains j k curves Γ k,j , j k non trivial zeros and j k − 1 points u k,j with ζu k,j  = 1. We call S k a\nj k -strip. Here j ∈ ℤ is chosen in such a way that Γ k,j and Γ k,j+1 are consecutive in the same\nsense as Γ ′k .\n\n",
+          "sha256": "1301e554eecd46e383babe2467448dfd2d1e1e4358a0b199a0ff35779a53a452"
+        },
+        "after": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "\n    Theorem 3. Every strip S k contains a unique unbounded component of the pre-image of\nthe unit disc.\n\n     Proof: To see this, it is enough to take the pre-image of a ray making an angle α with the\nreal half axis and let α → 0. A point s ∈ ζ −1 z with |z| = 1, arg z = α, tends to ∞ as α → 0\nif and only if the corresponding component of the pre-image of that ray tends to Γ k,0 as\nα → 0, which happens if and only if the component of the pre-image of the closed unit disc\n",
+          "sha256": "da5b3fa30fad24a96e5f25b0de436d4b2e66f2b42492737e517330cf0cf23bc6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 255,
+          "line_start": 236,
+          "title": "Color alternation constrains remote branches, derivative zeros, and circle pre-images",
+          "unit_id": "openalex_w1605891845_d06",
+          "unit_type": "geometric constraint and consequences",
+          "why_material": "Theorem 2 imposes a common left-half-plane direction on both sign branches, and the source then applies color alternation to claim unique derivative zeros between consecutive trivial zeros and unbounded alternating components of circle pre-images."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit keeps the theorem's ray/circle justification with its two stated applications so the reused move is visible.",
+          "representation_dependency": "Low: the argument is prose-led; color names encode the signs of real image values defined earlier.",
+          "unit_id": "openalex_w1605891845_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 234,
+            "line_start": 221,
+            "title": "The j_k-strip inventory of zeros, one-points, and real-axis components",
+            "unit_id": "openalex_w1605891845_d05",
+            "unit_type": "structural decomposition",
+            "why_material": "Within each strip the source distinguishes one component mapping bijectively to (-infinity,1) from finitely many components mapping to the whole real axis, thereby tying the count of curves to nontrivial zeros and points where zeta equals 1."
+          },
+          {
+            "line_end": 265,
+            "line_start": 257,
+            "title": "Unique unbounded component of the unit-disc pre-image in each strip",
+            "unit_id": "openalex_w1605891845_d07",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "The theorem links uniqueness of the distinguished real-axis component in a strip to uniqueness of an unbounded component over the unit disc by taking pre-images of rays as their angle tends to zero."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies a topological invariant of each strip that is later contrasted with bounded components in the addendum.",
+      "line_end": 265,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the limiting-ray construction is readable, but its geometry would benefit from the source figures.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem links uniqueness of the distinguished real-axis component in a strip to uniqueness of an unbounded component over the unit disc by taking pre-images of rays as their angle tends to zero.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unique unbounded component of the unit-disc pre-image in each strip",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d07.txt",
+      "unit_bytes": 616,
+      "unit_id": "openalex_w1605891845_d07",
+      "unit_sha256": "231257e319c3b0df02ad29c46af8fb2d18cc91ba9d3ba551342243210d1b3863",
+      "unit_type": "theorem-plus-proof fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d07.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "and by the formula (5) the trivial zeros of ζ are simple, between two of them there must be\none and only one zero of ζ ′ , otherwise the color alternation condition would be violated.\n\n    Another application is that those components of pre-images of circles centered at the\norigin of radius ρ > 1 which cross a Γ ′k , will continue to cross alternatively red and black\ncomponents of the pre-image of the real axis indefinitely, i.e. they are unbounded\ncomponents.\n\n",
+          "sha256": "d1e3cdec74a1697dd27f8fc958365f5a8a697a86d3f15c32fc3648b7fd4eb0a3"
+        },
+        "after": {
+          "line_start": 266,
+          "line_end": 273,
+          "text": "\n    An even better way to visualize the geometry of conformal mappings realized by ζ is to\n\n\n                                                                                                         5\n\n<!-- source-page: 6 -->\n\n",
+          "sha256": "08a13692fe64c9c09b11321d19b0ed133a088e70dbdb4011bf657dfbee0feb18"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 265,
+          "line_start": 257,
+          "title": "Unique unbounded component of the unit-disc pre-image in each strip",
+          "unit_id": "openalex_w1605891845_d07",
+          "unit_type": "theorem-plus-proof fragment",
+          "why_material": "The theorem links uniqueness of the distinguished real-axis component in a strip to uniqueness of an unbounded component over the unit disc by taking pre-images of rays as their angle tends to zero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies a topological invariant of each strip that is later contrasted with bounded components in the addendum.",
+          "representation_dependency": "Moderate: the limiting-ray construction is readable, but its geometry would benefit from the source figures.",
+          "unit_id": "openalex_w1605891845_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 255,
+            "line_start": 236,
+            "title": "Color alternation constrains remote branches, derivative zeros, and circle pre-images",
+            "unit_id": "openalex_w1605891845_d06",
+            "unit_type": "geometric constraint and consequences",
+            "why_material": "Theorem 2 imposes a common left-half-plane direction on both sign branches, and the source then applies color alternation to claim unique derivative zeros between consecutive trivial zeros and unbounded alternating components of circle pre-images."
+          },
+          {
+            "line_end": 292,
+            "line_start": 274,
+            "title": "Pulling back an orthogonal polar net as a conformal-coordinate visualization",
+            "unit_id": "openalex_w1605891845_d08",
+            "unit_type": "representation change and visualization method",
+            "why_material": "The source replaces isolated real-axis curves with the pre-image of rays and concentric circles, using color, saturation, brightness, and conformal modulus to compare image quadrilaterals with their pre-images and to visualize repeating strip geometry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose identifies which quadrilaterals are unbounded and what remains invariant under zeta; the concluding methodological comparison motivates conformal rather than number-theoretic tools.",
+      "line_end": 292,
+      "line_start": 274,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the semantic method is stated in prose, but its evidential examples depend on missing Fig. 2; later scan verification is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source replaces isolated real-axis curves with the pre-image of rays and concentric circles, using color, saturation, brightness, and conformal modulus to compare image quadrilaterals with their pre-images and to visualize repeating strip geometry.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pulling back an orthogonal polar net as a conformal-coordinate visualization",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d08.txt",
+      "unit_bytes": 1426,
+      "unit_id": "openalex_w1605891845_d08",
+      "unit_sha256": "194fed3edd457429608e2da84cb72931b127e79f5464de4ba514ee1ce28f8911",
+      "unit_type": "representation change and visualization method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d08.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 266,
+          "line_end": 273,
+          "text": "\n    An even better way to visualize the geometry of conformal mappings realized by ζ is to\n\n\n                                                                                                         5\n\n<!-- source-page: 6 -->\n\n",
+          "sha256": "08a13692fe64c9c09b11321d19b0ed133a088e70dbdb4011bf657dfbee0feb18"
+        },
+        "after": {
+          "line_start": 293,
+          "line_end": 300,
+          "text": "\n\n\n\n                                             Fig. 2\n\n\n\n",
+          "sha256": "65bd9e26c45b2d5dbd2e0c9ecb4fa9ed241a435df6aa06a85625cab49cab49f6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The Pre-Image by zeta of the Real Axis",
+            "line_end": 305,
+            "line_start": 137,
+            "mathematical_role": "Develops simultaneous continuation of real-axis pre-images, strip decomposition, color alternation, unit-disc pre-images, and conformal-grid visualization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 292,
+          "line_start": 274,
+          "title": "Pulling back an orthogonal polar net as a conformal-coordinate visualization",
+          "unit_id": "openalex_w1605891845_d08",
+          "unit_type": "representation change and visualization method",
+          "why_material": "The source replaces isolated real-axis curves with the pre-image of rays and concentric circles, using color, saturation, brightness, and conformal modulus to compare image quadrilaterals with their pre-images and to visualize repeating strip geometry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose identifies which quadrilaterals are unbounded and what remains invariant under zeta; the concluding methodological comparison motivates conformal rather than number-theoretic tools.",
+          "representation_dependency": "High: the semantic method is stated in prose, but its evidential examples depend on missing Fig. 2; later scan verification is required.",
+          "unit_id": "openalex_w1605891845_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 265,
+            "line_start": 257,
+            "title": "Unique unbounded component of the unit-disc pre-image in each strip",
+            "unit_id": "openalex_w1605891845_d07",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "The theorem links uniqueness of the distinguished real-axis component in a strip to uniqueness of an unbounded component over the unit disc by taking pre-images of rays as their angle tends to zero."
+          },
+          {
+            "line_end": 318,
+            "line_start": 308,
+            "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+            "unit_id": "openalex_w1605891845_d09",
+            "unit_type": "construction",
+            "why_material": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pulled-back polar grids and high-strip graphics suggest stable conformal organization, changing domain counts, exceptional nesting, and shrinking visible separations, while the final example warns that plot resolution can falsely suggest curve intersection.",
+            "limit": "These are qualitative or sampled graphical observations; the normalized source lacks the figures and supplies neither reproducible generation details nor certified bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d08",
+              "openalex_w1605891845_d15",
+              "openalex_w1605891845_d16",
+              "openalex_w1605891845_d17"
+            ],
+            "title": "Visualization as both structural probe and source of artifacts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 305,
+              "line_start": 293,
+              "reason": "Blank space, Fig. 2 label, pagination, and page marker; the referenced graphic is absent from normalized text."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The count of branch points and uniqueness/simple-zero statements are attributed to cited papers [3] and [9], not established within this span.",
+      "line_end": 318,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the expansion-and-fusion construction is recoverable from prose despite noisy subscripts.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d09.txt",
+      "unit_bytes": 1047,
+      "unit_id": "openalex_w1605891845_d09",
+      "unit_sha256": "29cdbec97f15dfd3cd597e6743744fe5322f02b93269e8e80b2e474e3fd8908c",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d09.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "\n\n                                                                                               6\n\n<!-- source-page: 7 -->\n\n3. Fundamental Domains of the Riemann Zeta Function\n\n",
+          "sha256": "7e5e5e6acb77e612032d1da2c0b79df746e456fb142f99aebe10c857234bcb40"
+        },
+        "after": {
+          "line_start": 319,
+          "line_end": 326,
+          "text": "\n       The simplicity of the zeros of ζ has been proved in [9] by using the so-called intertwined\ncurves. Namely, it has been shown that the components Υ ′k of the pre-image by ζ ′ of the\ninterval −∞, 0 of the real axis such that lim σ−>−∞ ζ ′ σ + it = −∞ and\nlim σ−>+∞ ζ ′ σ + it = 0, σ + it ∈ Υ ′k form infinite strips Σ k containing j k − 1 simple zeros of\nζ ′ . These zeros belong to the components Υ k,j , j ≠ 0 of the pre-image by ζ ′ of the real axis.\nThere is also in Σ k a unique component Υ k,0 of the pre-image of the interval 0, +∞. These\ncomponents follow also the color alternation rule. It has been proved in [9] that there is a one\n",
+          "sha256": "48ed07c5420b933139bce129dd2b6953312204c58fed5e95985488d800523207"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Fundamental Domains of the Riemann Zeta Function",
+            "line_end": 437,
+            "line_start": 306,
+            "mathematical_role": "Constructs fundamental domains from expanding level curves and branch points, relates zeta and its derivative through intertwined curves, and proves the stated turning-point property."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 318,
+          "line_start": 308,
+          "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+          "unit_id": "openalex_w1605891845_d09",
+          "unit_type": "construction",
+          "why_material": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The count of branch points and uniqueness/simple-zero statements are attributed to cited papers [3] and [9], not established within this span.",
+          "representation_dependency": "Moderate: the expansion-and-fusion construction is recoverable from prose despite noisy subscripts.",
+          "unit_id": "openalex_w1605891845_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 292,
+            "line_start": 274,
+            "title": "Pulling back an orthogonal polar net as a conformal-coordinate visualization",
+            "unit_id": "openalex_w1605891845_d08",
+            "unit_type": "representation change and visualization method",
+            "why_material": "The source replaces isolated real-axis curves with the pre-image of rays and concentric circles, using color, saturation, brightness, and conformal modulus to compare image quadrilaterals with their pre-images and to visualize repeating strip geometry."
+          },
+          {
+            "line_end": 332,
+            "line_start": 320,
+            "title": "Intertwined zeta and zeta-derivative curves with color matching",
+            "unit_id": "openalex_w1605891845_d10",
+            "unit_type": "bridge construction",
+            "why_material": "The source overlays strip decompositions for zeta and its derivative, posits one-to-one correspondence between intersecting curve families, and combines color alternation with a cross-function color-matching rule to support claimed zero simplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's reusable construction proceeds from simultaneous continuation of signed real-axis pre-images to infinite strips, inventories special components in each strip, and cuts those strips at branch-value pre-images into fundamental domains with one stated zero each.",
+            "limit": "The synthesis is internal to the paper and inherits its cited simplicity, branch-point-count, and uniqueness claims; it does not independently establish them.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d03",
+              "openalex_w1605891845_d04",
+              "openalex_w1605891845_d05",
+              "openalex_w1605891845_d07",
+              "openalex_w1605891845_d09"
+            ],
+            "title": "From real-axis lifts to a countable fundamental-domain partition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 305,
+              "line_start": 293,
+              "reason": "Blank space, Fig. 2 label, pagination, and page marker; the referenced graphic is absent from normalized text."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the principal bridge from zeta's mapping geometry to derivative directions used in the later contradiction arguments; its theorems are reported from [9].",
+      "line_end": 332,
+      "line_start": 320,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate to high: prose specifies the correspondence, but color matching and intersections are visually instantiated only in absent Fig. 3.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source overlays strip decompositions for zeta and its derivative, posits one-to-one correspondence between intersecting curve families, and combines color alternation with a cross-function color-matching rule to support claimed zero simplicity.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Intertwined zeta and zeta-derivative curves with color matching",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d10.txt",
+      "unit_bytes": 1245,
+      "unit_id": "openalex_w1605891845_d10",
+      "unit_sha256": "73a52fee41e2f47c909fd1ec7f6a85a347376730d6cf12956a75b4542c7c6171",
+      "unit_type": "bridge construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d10.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 312,
+          "line_end": 319,
+          "text": "closed curve containing the two respective zeros. Continuing to increase ρ, some other\npoints v k,j are reached. These are branch points of ζ. It has been shown in [3] and [9] that\nthere are exactly j k − 1 points v k,j in every j k -strip. The intersection of S k with the pre-image\nof the segment between 1 and ζv k,j  is a set of unbounded curves starting at u k,j or arcs\nconnecting two such points. These curves and arcs together with the pre-image of the interval\n1, +∞ of the real axis bound sub-strips included in S k which are fundamental domains Ω k,j\nof ζ. Every fundamental domain Ω k,j contains a unique simple zero s k,j of ζ.\n\n",
+          "sha256": "453f123e5a3b621293dd1b024a418ad7a687a1bac47f8975ccc982553e2f9b3a"
+        },
+        "after": {
+          "line_start": 333,
+          "line_end": 340,
+          "text": "\n\n\n\n                                                                                                   7\n\n<!-- source-page: 8 -->\n\n",
+          "sha256": "c17973ad54193816664e97c5c614b78d7fbf338ab2c63f117161baffd697d74f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Fundamental Domains of the Riemann Zeta Function",
+            "line_end": 437,
+            "line_start": 306,
+            "mathematical_role": "Constructs fundamental domains from expanding level curves and branch points, relates zeta and its derivative through intertwined curves, and proves the stated turning-point property."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 332,
+          "line_start": 320,
+          "title": "Intertwined zeta and zeta-derivative curves with color matching",
+          "unit_id": "openalex_w1605891845_d10",
+          "unit_type": "bridge construction",
+          "why_material": "The source overlays strip decompositions for zeta and its derivative, posits one-to-one correspondence between intersecting curve families, and combines color alternation with a cross-function color-matching rule to support claimed zero simplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the principal bridge from zeta's mapping geometry to derivative directions used in the later contradiction arguments; its theorems are reported from [9].",
+          "representation_dependency": "Moderate to high: prose specifies the correspondence, but color matching and intersections are visually instantiated only in absent Fig. 3.",
+          "unit_id": "openalex_w1605891845_d10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 318,
+            "line_start": 308,
+            "title": "Expanding zero loops, fusion at branch points, and fundamental-domain boundaries",
+            "unit_id": "openalex_w1605891845_d09",
+            "unit_type": "construction",
+            "why_material": "Starting from small disjoint pre-image circles around zeros, the passage increases the radius until loops fuse at derivative branch points, then combines pre-images of branch-value segments and (1,+infinity) to bound sub-strips that are declared fundamental domains."
+          },
+          {
+            "line_end": 468,
+            "line_start": 440,
+            "title": "Symmetry reduces the claimed RH proof to two consecutive-zero configurations",
+            "unit_id": "openalex_w1605891845_d11",
+            "unit_type": "reduction and induction scheme",
+            "why_material": "The passage uses the functional-equation and conjugation symmetries to frame a same-height pair, divides consecutive pairs into within-strip and across-strip cases, and gives the induction by which those local cases are claimed to place every nontrivial zero on the critical line."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Color matching between zeta and derivative pre-images, the positive-branch turning-point claim, and tangent directions along images of zero-connecting segments are assembled to exclude the paper's pictured same-strip and adjacent-strip configurations.",
+            "limit": "This states the author's proposed mechanism, not a verified RH proof; it depends on cited color rules, OCR-sensitive formulas, and absent figures whose orientation and exhaustiveness require separate checking.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d10",
+              "openalex_w1605891845_d11",
+              "openalex_w1605891845_d12",
+              "openalex_w1605891845_d13",
+              "openalex_w1605891845_d14"
+            ],
+            "title": "Intertwined derivative geometry as the paper's obstruction engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 342,
+              "line_start": 333,
+              "reason": "Blank space, pagination, page marker, and Fig. 3 label; the graphic itself is absent."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit records the source's proof architecture. It does not itself establish either local case or independently verify that the reduction exhausts the required configurations.",
+      "line_end": 468,
+      "line_start": 440,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low to moderate: prose is clear, though conjugation bars are damaged in normalized text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage uses the functional-equation and conjugation symmetries to frame a same-height pair, divides consecutive pairs into within-strip and across-strip cases, and gives the induction by which those local cases are claimed to place every nontrivial zero on the critical line.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetry reduces the claimed RH proof to two consecutive-zero configurations",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d11.txt",
+      "unit_bytes": 1961,
+      "unit_id": "openalex_w1605891845_d11",
+      "unit_sha256": "6577dc3b67052b65eb4b19dfe496705a9c581fc7275d3af9b59dee75b4b2b53b",
+      "unit_type": "reduction and induction scheme",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d11.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 432,
+          "line_end": 439,
+          "text": "valid when the relative position of two branches is reversed. The conclusion is that all the\ncurves Γ k,j turn back at points corresponding to x > 0.\n\n\n\n\n    4. The Proof of Riemann Hypothesis\n\n",
+          "sha256": "196903a2d6ce0ee76a350050ed2249c50414b54a2755f686bd5a58fa678f089a"
+        },
+        "after": {
+          "line_start": 469,
+          "line_end": 476,
+          "text": "\n    Case a).\n\n       Suppose that the respective zeros are s k,j−1 = σ k,j−1 + it and s k,j = σ k,j + it. Let Γ k,j and\nΥ k,j , respectively Γ k,j−1 and Υ k,j−1 be the corresponding intertwined curves with s k,j ∈ Γ k,j and\nv k,j ∈ Υ k,j , respectively s k,j−1 ∈ Γ k,j−1 and v k,j−1 ∈ Υ k,j−1 .\n       Fig. 4 below represents such a hypothetical situation.\n\n",
+          "sha256": "8e4b2a6af255c1daadac43f63a1f932055fd5eee53f0e06b4ae737ba41a1537a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The Proof of Riemann Hypothesis",
+            "line_end": 590,
+            "line_start": 438,
+            "mathematical_role": "Presents the paper's symmetry reduction, induction scheme, and same-strip and adjacent-strip contradiction arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 468,
+          "line_start": 440,
+          "title": "Symmetry reduces the claimed RH proof to two consecutive-zero configurations",
+          "unit_id": "openalex_w1605891845_d11",
+          "unit_type": "reduction and induction scheme",
+          "why_material": "The passage uses the functional-equation and conjugation symmetries to frame a same-height pair, divides consecutive pairs into within-strip and across-strip cases, and gives the induction by which those local cases are claimed to place every nontrivial zero on the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit records the source's proof architecture. It does not itself establish either local case or independently verify that the reduction exhausts the required configurations.",
+          "representation_dependency": "Low to moderate: prose is clear, though conjugation bars are damaged in normalized text.",
+          "unit_id": "openalex_w1605891845_d11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 332,
+            "line_start": 320,
+            "title": "Intertwined zeta and zeta-derivative curves with color matching",
+            "unit_id": "openalex_w1605891845_d10",
+            "unit_type": "bridge construction",
+            "why_material": "The source overlays strip decompositions for zeta and its derivative, posits one-to-one correspondence between intersecting curve families, and combines color alternation with a cross-function color-matching rule to support claimed zero simplicity."
+          },
+          {
+            "line_end": 521,
+            "line_start": 470,
+            "title": "Same-strip case: segment images and endpoint tangent directions",
+            "unit_id": "openalex_w1605891845_d12",
+            "unit_type": "claimed obstruction argument",
+            "why_material": "For two hypothetical same-height zeros in one strip, the source maps their connecting segment by zeta, differentiates its parametrization, identifies tangent arguments with values of zeta prime, and claims a contradiction between endpoint directions and color matching."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Color matching between zeta and derivative pre-images, the positive-branch turning-point claim, and tangent directions along images of zero-connecting segments are assembled to exclude the paper's pictured same-strip and adjacent-strip configurations.",
+            "limit": "This states the author's proposed mechanism, not a verified RH proof; it depends on cited color rules, OCR-sensitive formulas, and absent figures whose orientation and exhaustiveness require separate checking.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d10",
+              "openalex_w1605891845_d11",
+              "openalex_w1605891845_d12",
+              "openalex_w1605891845_d13",
+              "openalex_w1605891845_d14"
+            ],
+            "title": "Intertwined derivative geometry as the paper's obstruction engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The parametric and derivative equations are retained with the geometric narrative; the asserted relative positions and half-plane directions depend materially on Fig. 4 and need later scan verification.",
+      "line_end": 521,
+      "line_start": 470,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: displayed equations survive with OCR noise, but the exclusion of the pictured configuration depends on an absent diagram.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For two hypothetical same-height zeros in one strip, the source maps their connecting segment by zeta, differentiates its parametrization, identifies tangent arguments with values of zeta prime, and claims a contradiction between endpoint directions and color matching.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Same-strip case: segment images and endpoint tangent directions",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d12.txt",
+      "unit_bytes": 3055,
+      "unit_id": "openalex_w1605891845_d12",
+      "unit_sha256": "55634638fc45623a9bffb20af8341851e11a023d3f6f716f8a6746aa41950b09",
+      "unit_type": "claimed obstruction argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d12.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 462,
+          "line_end": 469,
+          "text": "\n                                                                                                        9\n\n<!-- source-page: 10 -->\n\nthe conclusion that all the zeros in S k+1 are of the form 1/2 + it k+1,j for some positive numbers\nt k+1,j , which completes the induction.\n\n",
+          "sha256": "d7fb9ee5e863c20a2b0cd03aab4b9973a68b9f52704ac9cba06184473b29b6ed"
+        },
+        "after": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "\n\n\n\n                                                         Fig 4 ′\n\n\n\n",
+          "sha256": "8da3ed5e8701c5cf00bd27b78b2373f9d91f62a24fc093e0158c4fa9e2d6a74f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The Proof of Riemann Hypothesis",
+            "line_end": 590,
+            "line_start": 438,
+            "mathematical_role": "Presents the paper's symmetry reduction, induction scheme, and same-strip and adjacent-strip contradiction arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 521,
+          "line_start": 470,
+          "title": "Same-strip case: segment images and endpoint tangent directions",
+          "unit_id": "openalex_w1605891845_d12",
+          "unit_type": "claimed obstruction argument",
+          "why_material": "For two hypothetical same-height zeros in one strip, the source maps their connecting segment by zeta, differentiates its parametrization, identifies tangent arguments with values of zeta prime, and claims a contradiction between endpoint directions and color matching."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The parametric and derivative equations are retained with the geometric narrative; the asserted relative positions and half-plane directions depend materially on Fig. 4 and need later scan verification.",
+          "representation_dependency": "High: displayed equations survive with OCR noise, but the exclusion of the pictured configuration depends on an absent diagram.",
+          "unit_id": "openalex_w1605891845_d12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 468,
+            "line_start": 440,
+            "title": "Symmetry reduces the claimed RH proof to two consecutive-zero configurations",
+            "unit_id": "openalex_w1605891845_d11",
+            "unit_type": "reduction and induction scheme",
+            "why_material": "The passage uses the functional-equation and conjugation symmetries to frame a same-height pair, divides consecutive pairs into within-strip and across-strip cases, and gives the induction by which those local cases are claimed to place every nontrivial zero on the critical line."
+          },
+          {
+            "line_end": 553,
+            "line_start": 535,
+            "title": "Same-strip case: repeated crossings forced by horizontal tangencies",
+            "unit_id": "openalex_w1605891845_d13",
+            "unit_type": "alternative claimed obstruction",
+            "why_material": "For the alternative pictured arrangement, tandem zeta and derivative images translate crossings into alternating horizontal tangent directions; the source argues that returning to the origin would force repeated crossings of the same intertwined curves, contradicting the segment geometry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Color matching between zeta and derivative pre-images, the positive-branch turning-point claim, and tangent directions along images of zero-connecting segments are assembled to exclude the paper's pictured same-strip and adjacent-strip configurations.",
+            "limit": "This states the author's proposed mechanism, not a verified RH proof; it depends on cited color rules, OCR-sensitive formulas, and absent figures whose orientation and exhaustiveness require separate checking.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d10",
+              "openalex_w1605891845_d11",
+              "openalex_w1605891845_d12",
+              "openalex_w1605891845_d13",
+              "openalex_w1605891845_d14"
+            ],
+            "title": "Intertwined derivative geometry as the paper's obstruction engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a distinct obstruction from the endpoint-direction argument and is needed for the source's claimed exhaustion of same-strip configurations.",
+      "line_end": 553,
+      "line_start": 535,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the numbered points and crossing order are defined through absent Fig. 4-prime; later scan verification is required before geometric reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the alternative pictured arrangement, tandem zeta and derivative images translate crossings into alternating horizontal tangent directions; the source argues that returning to the origin would force repeated crossings of the same intertwined curves, contradicting the segment geometry.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Same-strip case: repeated crossings forced by horizontal tangencies",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d13.txt",
+      "unit_bytes": 1700,
+      "unit_id": "openalex_w1605891845_d13",
+      "unit_sha256": "634b62e996c1320fd8d5e6ba8268b03f724a3c3e99c3df474594137a44a210e3",
+      "unit_type": "alternative claimed obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d13.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 527,
+          "line_end": 534,
+          "text": "\n\n\n\n                                                                                                   11\n\n<!-- source-page: 12 -->\n\n",
+          "sha256": "3e52630fb64d7ccf8ca8c3a5982332d6eb15bc02c3603afd9943a12807bfe685"
+        },
+        "after": {
+          "line_start": 554,
+          "line_end": 561,
+          "text": "\n    Case b).\n\n      Suppose now that we deal with the zeros s k,j ′ and s k+1,j belonging to the adjacent strips\nS k , respectively S k+1 . We make similar notations as in the case a) and we seek to find a\ncontradiction by inspecting the images by ζ and by ζ ′ of the interval I between the two zeros\nwhose parametric equation is λ −> 1 − λs k+1,j + λs k,j ′ .\n      Fig. 5 below illustrates the new hypothetical situation.\n",
+          "sha256": "ca058daec168a1a71b36b495ea8a22d7f281f840cdee4264f7604d6fef35d41d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The Proof of Riemann Hypothesis",
+            "line_end": 590,
+            "line_start": 438,
+            "mathematical_role": "Presents the paper's symmetry reduction, induction scheme, and same-strip and adjacent-strip contradiction arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 553,
+          "line_start": 535,
+          "title": "Same-strip case: repeated crossings forced by horizontal tangencies",
+          "unit_id": "openalex_w1605891845_d13",
+          "unit_type": "alternative claimed obstruction",
+          "why_material": "For the alternative pictured arrangement, tandem zeta and derivative images translate crossings into alternating horizontal tangent directions; the source argues that returning to the origin would force repeated crossings of the same intertwined curves, contradicting the segment geometry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a distinct obstruction from the endpoint-direction argument and is needed for the source's claimed exhaustion of same-strip configurations.",
+          "representation_dependency": "High: the numbered points and crossing order are defined through absent Fig. 4-prime; later scan verification is required before geometric reuse.",
+          "unit_id": "openalex_w1605891845_d13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 521,
+            "line_start": 470,
+            "title": "Same-strip case: segment images and endpoint tangent directions",
+            "unit_id": "openalex_w1605891845_d12",
+            "unit_type": "claimed obstruction argument",
+            "why_material": "For two hypothetical same-height zeros in one strip, the source maps their connecting segment by zeta, differentiates its parametrization, identifies tangent arguments with values of zeta prime, and claims a contradiction between endpoint directions and color matching."
+          },
+          {
+            "line_end": 590,
+            "line_start": 555,
+            "title": "Adjacent-strip case: incompatible tangent half-planes in two configurations",
+            "unit_id": "openalex_w1605891845_d14",
+            "unit_type": "claimed obstruction argument",
+            "why_material": "The source repeats the segment-image method for the last zero of one strip and first zero of the next, first comparing endpoint derivative half-planes and then using a forced turn toward the origin to claim contradictions for both pictured configurations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Color matching between zeta and derivative pre-images, the positive-branch turning-point claim, and tangent directions along images of zero-connecting segments are assembled to exclude the paper's pictured same-strip and adjacent-strip configurations.",
+            "limit": "This states the author's proposed mechanism, not a verified RH proof; it depends on cited color rules, OCR-sensitive formulas, and absent figures whose orientation and exhaustiveness require separate checking.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d10",
+              "openalex_w1605891845_d11",
+              "openalex_w1605891845_d12",
+              "openalex_w1605891845_d13",
+              "openalex_w1605891845_d14"
+            ],
+            "title": "Intertwined derivative geometry as the paper's obstruction engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The passage supplies the second local case required by the induction scheme and ends with the paper's claimed RH conclusion; this plan does not certify that conclusion.",
+      "line_end": 590,
+      "line_start": 555,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the reasoning refers essentially to absent Figs. 5 and 5-prime, so scan verification of orientation and ordering is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source repeats the segment-image method for the last zero of one strip and first zero of the next, first comparing endpoint derivative half-planes and then using a forced turn toward the origin to claim contradictions for both pictured configurations.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adjacent-strip case: incompatible tangent half-planes in two configurations",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d14.txt",
+      "unit_bytes": 1739,
+      "unit_id": "openalex_w1605891845_d14",
+      "unit_sha256": "9bc51c508f6fe883ff41187115b4ec1ed523ee70bf7cf6aa1dfa5fba72381b05",
+      "unit_type": "claimed obstruction argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d14.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 547,
+          "line_end": 554,
+          "text": "                                                ′\npoint with horizontal tangent. This forces η k,j   to turn back to the real axis, crossing in its way\n           ′\nagain ζ Γ k,j+1  and so on. This means that I intersects again Γ k,j+1 and Υ k,j+1 , before reaching\ns k,j+1 , which is absurd. Thus a configuration like that postulated in Fig. 4 ′ a is impossible.\n      The final conclusion is that ζ cannot have two zeros of the form s k,j = σ + it k,j and\ns k,j+1 = 1 − σ + it k,j+1 .\n\n",
+          "sha256": "6ccbcfb99a43eab58639e76403039cefc1bcd70a1b736e63504417fb943d05a8"
+        },
+        "after": {
+          "line_start": 591,
+          "line_end": 598,
+          "text": "\n\n\n  Acknowledgments: The author is grateful to Cristina Ballantine and Florin Alan\nMuscutar for providing computer generated graphics.\n\n\n\n",
+          "sha256": "644ac504a82be234ffe209cc5f4916ae40a8b3431454effc05f93f0bdc63a62b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The Proof of Riemann Hypothesis",
+            "line_end": 590,
+            "line_start": 438,
+            "mathematical_role": "Presents the paper's symmetry reduction, induction scheme, and same-strip and adjacent-strip contradiction arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 590,
+          "line_start": 555,
+          "title": "Adjacent-strip case: incompatible tangent half-planes in two configurations",
+          "unit_id": "openalex_w1605891845_d14",
+          "unit_type": "claimed obstruction argument",
+          "why_material": "The source repeats the segment-image method for the last zero of one strip and first zero of the next, first comparing endpoint derivative half-planes and then using a forced turn toward the origin to claim contradictions for both pictured configurations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The passage supplies the second local case required by the induction scheme and ends with the paper's claimed RH conclusion; this plan does not certify that conclusion.",
+          "representation_dependency": "High: the reasoning refers essentially to absent Figs. 5 and 5-prime, so scan verification of orientation and ordering is required.",
+          "unit_id": "openalex_w1605891845_d14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 553,
+            "line_start": 535,
+            "title": "Same-strip case: repeated crossings forced by horizontal tangencies",
+            "unit_id": "openalex_w1605891845_d13",
+            "unit_type": "alternative claimed obstruction",
+            "why_material": "For the alternative pictured arrangement, tandem zeta and derivative images translate crossings into alternating horizontal tangent directions; the source argues that returning to the origin would force repeated crossings of the same intertwined curves, contradicting the segment geometry."
+          },
+          {
+            "line_end": 656,
+            "line_start": 638,
+            "title": "Addendum observations on domain counts and unexpected high-strip geometry",
+            "unit_id": "openalex_w1605891845_d15",
+            "unit_type": "computational observation and counterconfiguration",
+            "why_material": "The addendum reports increasing average numbers of fundamental domains in higher strips and highlights a bounded unit-disc pre-image component ahead of the unbounded one and curves embracing other curves as unexpected but allegedly theorem-compatible phenomena."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Color matching between zeta and derivative pre-images, the positive-branch turning-point claim, and tangent directions along images of zero-connecting segments are assembled to exclude the paper's pictured same-strip and adjacent-strip configurations.",
+            "limit": "This states the author's proposed mechanism, not a verified RH proof; it depends on cited color rules, OCR-sensitive formulas, and absent figures whose orientation and exhaustiveness require separate checking.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d10",
+              "openalex_w1605891845_d11",
+              "openalex_w1605891845_d12",
+              "openalex_w1605891845_d13",
+              "openalex_w1605891845_d14"
+            ],
+            "title": "Intertwined derivative geometry as the paper's obstruction engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prose preserves the qualitative observations and sampled counts, but they are graphical reports rather than a documented reproducible computation in this source.",
+      "line_end": 656,
+      "line_start": 638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the claims rely on Figs. 6 and 7, which are absent from the normalized text; later scan verification is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The addendum reports increasing average numbers of fundamental domains in higher strips and highlights a bounded unit-disc pre-image component ahead of the unbounded one and curves embracing other curves as unexpected but allegedly theorem-compatible phenomena.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Addendum observations on domain counts and unexpected high-strip geometry",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d15.txt",
+      "unit_bytes": 1086,
+      "unit_id": "openalex_w1605891845_d15",
+      "unit_sha256": "2fa769b0ce5b6f7700137e6d828ea41dca760c3a9a780fb066e71721bf43c0d9",
+      "unit_type": "computational observation and counterconfiguration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d15.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "\n\n    Addendum\n\n\n   We add some more pictures, in order to illustrate some facts and to show some surprising\nphenomena.\n\n",
+          "sha256": "1b9093b179a5bea8502c7631bdf75b0d0933879d1221f23a0c742e64b57737a1"
+        },
+        "after": {
+          "line_start": 657,
+          "line_end": 664,
+          "text": "\n   We notice also that the width of S k in the range of the critical strip is approximately the\nsame for every k, namely in the range of 10, which means that the distance between two\nconsecutive non trivial zeros tends (in average) to zero as t −> ∞, yet it can never be zero.\n\n\n\n\n",
+          "sha256": "8fca60dba7fc282781f387e3fa86d58f5a1d968ddc187375744819527aa8014b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Addendum and figure-only tail",
+            "line_end": 714,
+            "line_start": 632,
+            "mathematical_role": "Reports graphical observations about fundamental-domain counts, exceptional configurations, apparent strip width, curve separation, and a proposed geometric quantification problem; several intervening pages contain only missing figures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 656,
+          "line_start": 638,
+          "title": "Addendum observations on domain counts and unexpected high-strip geometry",
+          "unit_id": "openalex_w1605891845_d15",
+          "unit_type": "computational observation and counterconfiguration",
+          "why_material": "The addendum reports increasing average numbers of fundamental domains in higher strips and highlights a bounded unit-disc pre-image component ahead of the unbounded one and curves embracing other curves as unexpected but allegedly theorem-compatible phenomena."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prose preserves the qualitative observations and sampled counts, but they are graphical reports rather than a documented reproducible computation in this source.",
+          "representation_dependency": "High: the claims rely on Figs. 6 and 7, which are absent from the normalized text; later scan verification is required.",
+          "unit_id": "openalex_w1605891845_d15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 590,
+            "line_start": 555,
+            "title": "Adjacent-strip case: incompatible tangent half-planes in two configurations",
+            "unit_id": "openalex_w1605891845_d14",
+            "unit_type": "claimed obstruction argument",
+            "why_material": "The source repeats the segment-image method for the last zero of one strip and first zero of the next, first comparing endpoint derivative half-planes and then using a forced turn toward the origin to claim contradictions for both pictured configurations."
+          },
+          {
+            "line_end": 660,
+            "line_start": 658,
+            "title": "Approximate strip width and decreasing average zero spacing",
+            "unit_id": "openalex_w1605891845_d16",
+            "unit_type": "empirical heuristic",
+            "why_material": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pulled-back polar grids and high-strip graphics suggest stable conformal organization, changing domain counts, exceptional nesting, and shrinking visible separations, while the final example warns that plot resolution can falsely suggest curve intersection.",
+            "limit": "These are qualitative or sampled graphical observations; the normalized source lacks the figures and supplies neither reproducible generation details nor certified bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d08",
+              "openalex_w1605891845_d15",
+              "openalex_w1605891845_d16",
+              "openalex_w1605891845_d17"
+            ],
+            "title": "Visualization as both structural probe and source of artifacts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 637,
+              "line_start": 632,
+              "reason": "Addendum heading and announcement of further pictures and phenomena."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 698,
+              "line_start": 661,
+              "reason": "Figure-only and pagination pages for Figs. 6-8; graphical mathematical content is not present in normalized text."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly an observed numerical-geometric heuristic, not a derivation supplied by the text.",
+      "line_end": 660,
+      "line_start": 658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the estimate and inference depend on the omitted graphics and should not be reused as certified data without scan and computation checks.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximate strip width and decreasing average zero spacing",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d16.txt",
+      "unit_bytes": 281,
+      "unit_id": "openalex_w1605891845_d16",
+      "unit_sha256": "d8e2cbc1ac278dc5c9e6be18bd316b06dc6a6386bb01ab2d90bdf6925d7613c9",
+      "unit_type": "empirical heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d16.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 650,
+          "line_end": 657,
+          "text": "\n\n                                                                                                     14\n\n<!-- source-page: 15 -->\n\nand 10 9 + 19. These phenomena do not contradict the theorems proven in [3] and [9].\n\n",
+          "sha256": "d01561bf08c13e28ab9c171878057e64563f3b82784c01a49029865a8cf47994"
+        },
+        "after": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "\n\n\n\n                             Fig.6 a\n\n\n\n",
+          "sha256": "6800f712032003d500729f97ae5c24e1e9bcd2681dc797766815c03463b4ffa8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Addendum and figure-only tail",
+            "line_end": 714,
+            "line_start": 632,
+            "mathematical_role": "Reports graphical observations about fundamental-domain counts, exceptional configurations, apparent strip width, curve separation, and a proposed geometric quantification problem; several intervening pages contain only missing figures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 660,
+          "line_start": 658,
+          "title": "Approximate strip width and decreasing average zero spacing",
+          "unit_id": "openalex_w1605891845_d16",
+          "unit_type": "empirical heuristic",
+          "why_material": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly an observed numerical-geometric heuristic, not a derivation supplied by the text.",
+          "representation_dependency": "High: the estimate and inference depend on the omitted graphics and should not be reused as certified data without scan and computation checks.",
+          "unit_id": "openalex_w1605891845_d16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 656,
+            "line_start": 638,
+            "title": "Addendum observations on domain counts and unexpected high-strip geometry",
+            "unit_id": "openalex_w1605891845_d15",
+            "unit_type": "computational observation and counterconfiguration",
+            "why_material": "The addendum reports increasing average numbers of fundamental domains in higher strips and highlights a bounded unit-disc pre-image component ahead of the unbounded one and curves embracing other curves as unexpected but allegedly theorem-compatible phenomena."
+          },
+          {
+            "line_end": 709,
+            "line_start": 699,
+            "title": "Apparent overlap of intertwined curves as a resolution artifact",
+            "unit_id": "openalex_w1605891845_d17",
+            "unit_type": "representation caveat and open problem",
+            "why_material": "The source distinguishes apparent plotted overlap from actual intersection, attributes the illusion to curve separation below dot resolution, and proposes quantifying that distance with geometric-function-theory inequalities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pulled-back polar grids and high-strip graphics suggest stable conformal organization, changing domain counts, exceptional nesting, and shrinking visible separations, while the final example warns that plot resolution can falsely suggest curve intersection.",
+            "limit": "These are qualitative or sampled graphical observations; the normalized source lacks the figures and supplies neither reproducible generation details nor certified bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d08",
+              "openalex_w1605891845_d15",
+              "openalex_w1605891845_d16",
+              "openalex_w1605891845_d17"
+            ],
+            "title": "Visualization as both structural probe and source of artifacts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 698,
+              "line_start": 661,
+              "reason": "Figure-only and pagination pages for Figs. 6-8; graphical mathematical content is not present in normalized text."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a useful warning that visualization scale can fabricate topology and a concrete proposal for replacing appearance with a quantitative bound.",
+      "line_end": 709,
+      "line_start": 699,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the phenomenon is keyed to absent Fig. 8, though the caveat and proposed measurement are recoverable from prose; later scan verification is required.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes apparent plotted overlap from actual intersection, attributes the illusion to curve separation below dot resolution, and proposes quantifying that distance with geometric-function-theory inequalities.",
+      "source_id": "openalex_w1605891845",
+      "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Apparent overlap of intertwined curves as a resolution artifact",
+      "unit_artifact_relpath": "depth/units/openalex_w1605891845_d17.txt",
+      "unit_bytes": 815,
+      "unit_id": "openalex_w1605891845_d17",
+      "unit_sha256": "b1b90692d7f186e8ad1d13f274a801d9ff09c5816f167ad8add3e617553fd86d",
+      "unit_type": "representation caveat and open problem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_d17.txt",
+      "source": {
+        "source_id": "openalex_w1605891845",
+        "title": "Riemann Zeta Function",
+        "authors": [
+          "Dorin Ghişa"
+        ],
+        "year": 2009,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 691,
+          "line_end": 698,
+          "text": "\n18\n\n<!-- source-page: 19 -->\n\nFig. 8\n\n\n",
+          "sha256": "35f3e45abdb153f7459e884e199dc3a40dd5c2e35a85aa38085353b590c44626"
+        },
+        "after": {
+          "line_start": 710,
+          "line_end": 714,
+          "text": "\n\n\n\n                                                                                                  19\n",
+          "sha256": "54c55e420b6f9d581bdf9d7cf208f69eea9fc83bb1d0ab1b0bb6defa46ad2810"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1190290a3438050c730f5ac9732af41d9dad7aa7cf3b222de7610478d9885f19",
+        "dossier_sha256": "309d86bf5fe5a5a19e484fb3c4e572187fb8f139c182f290feb2f66939e32179",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Addendum and figure-only tail",
+            "line_end": 714,
+            "line_start": 632,
+            "mathematical_role": "Reports graphical observations about fundamental-domain counts, exceptional configurations, apparent strip width, curve separation, and a proposed geometric quantification problem; several intervening pages contain only missing figures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 709,
+          "line_start": 699,
+          "title": "Apparent overlap of intertwined curves as a resolution artifact",
+          "unit_id": "openalex_w1605891845_d17",
+          "unit_type": "representation caveat and open problem",
+          "why_material": "The source distinguishes apparent plotted overlap from actual intersection, attributes the illusion to curve separation below dot resolution, and proposes quantifying that distance with geometric-function-theory inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a useful warning that visualization scale can fabricate topology and a concrete proposal for replacing appearance with a quantitative bound.",
+          "representation_dependency": "High: the phenomenon is keyed to absent Fig. 8, though the caveat and proposed measurement are recoverable from prose; later scan verification is required.",
+          "unit_id": "openalex_w1605891845_d17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 660,
+            "line_start": 658,
+            "title": "Approximate strip width and decreasing average zero spacing",
+            "unit_id": "openalex_w1605891845_d16",
+            "unit_type": "empirical heuristic",
+            "why_material": "The source connects an approximately stable critical-strip width in the pictures with increasing zeros per strip to infer that average consecutive-zero spacing decreases with height while remaining nonzero."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pulled-back polar grids and high-strip graphics suggest stable conformal organization, changing domain counts, exceptional nesting, and shrinking visible separations, while the final example warns that plot resolution can falsely suggest curve intersection.",
+            "limit": "These are qualitative or sampled graphical observations; the normalized source lacks the figures and supplies neither reproducible generation details nor certified bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w1605891845_d08",
+              "openalex_w1605891845_d15",
+              "openalex_w1605891845_d16",
+              "openalex_w1605891845_d17"
+            ],
+            "title": "Visualization as both structural probe and source of artifacts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 698,
+              "line_start": 661,
+              "reason": "Figure-only and pagination pages for Figs. 6-8; graphical mathematical content is not present in normalized text."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3347527d5aaff6d8f3a2d5c06fdc39226bf931483d8c78086e6e72e7d1e2e713"
+}

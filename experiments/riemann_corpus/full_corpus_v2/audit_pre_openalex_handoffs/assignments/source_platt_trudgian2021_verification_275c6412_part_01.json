@@ -1,0 +1,219 @@
+{
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:platt_trudgian2021_verification",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_platt_trudgian2021_verification_275c6412_part_01.jsonl",
+  "item_count": 3,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_ae42677c97bf2de78a4eccab60516c5928b96bae59db89f93f92d2e75b78dc5c",
+      "object_role": "interpretation",
+      "proposed_content": "The implementation changes its retained object from a high-precision zero database to the minimum local information needed for counting: after detecting a sign change, it does not zoom in with Shannon–Whittaker–Nyquist machinery or store a refined zero. Arb also reduces memory relative to MPFI, and the default lattice empirically isolates nearly all zeros directly. This span supports the efficiency tradeoff only; it does not contain the surrounding global completeness argument, so sign changes alone must not be described here as a complete certificate.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_aa1b58b7d4bcf84a739c19d6f1266b980e265d0cd5ab74133c9729feba2260b5",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt_trudgian2021_verification_v2_u03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "content_sha256": "4bdaaa21ddf716e2d1c27f792106f379ac3a52d07fad5c778b240e191dfc3191",
+          "artifact_sha256": "2f5a9167a55ae6252eb1c721fd2de2db6afc57fc44cb9cca467f1df3704b5e80",
+          "artifact_bytes": 1448
+        }
+      ],
+      "audit_context_group": "source:platt_trudgian2021_verification",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "primary-paper"
+        ],
+        "viewpoint_tags": [
+          "computation",
+          "epistemic-limits",
+          "interval-arithmetic",
+          "numerical-evidence"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 3
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_01f8ac4fe01ad7c2ee71b47f562e4c50fe2a84fdc0df0bc616988c6a18c47b78",
+      "object_role": "synthesis",
+      "proposed_content": "No trainable synthesis is materialized from non-accepted parents.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_1592b84068cb3bb4166417d06d5ffdb26b56c98756bbfefdd3f07c61c97830a8",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt2021_u02_finite_evidence_utility"
+          ],
+          "content_ref": "artifact://riemann-corpus-v0/pilot_12/units/platt2021_u02_finite_evidence_utility.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/pilot_12/units/platt2021_u02_finite_evidence_utility.txt",
+          "content_sha256": "7634da5822257190fe482f44b43c79c10c6a331cdcf3b136de72cfbbc35e665d",
+          "artifact_sha256": "6e3888b5979ec80cb63d372db1bcdc0c4b96bd4d1d13c29319b089d380da8c88",
+          "artifact_bytes": 4538
+        },
+        {
+          "source_object_id": "mathia_source_29da3532d220bab05aaba5726a1db97353f3d8eeb101bd6123f0bde303befee3",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt_trudgian2021_verification_v2_u05"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u05.txt",
+          "content_sha256": "b20b305f9b3bdc3575972f186a0012eafb5febf1215caa6c76e559db006c5533",
+          "artifact_sha256": "57e14b7cc28e050db31fce77a4b7cdefa8f17e33f9f6be87550b7581fda285ff",
+          "artifact_bytes": 1563
+        }
+      ],
+      "audit_context_group": "source:platt_trudgian2021_verification",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "primary-paper"
+        ],
+        "viewpoint_tags": [
+          "computation",
+          "epistemic-limits",
+          "interval-arithmetic",
+          "numerical-evidence"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 3
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_57f2798585b4f5f896b3c0646743a42de3a067e54e0528d44fdc25099912291b",
+      "object_role": "synthesis",
+      "proposed_content": "No trainable synthesis is materialized from non-accepted parents.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_e9a8b2501223c8820476494a62e635226162f2972e8314ebd1f26ede07c725ac",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt2021_u01_certified_completeness"
+          ],
+          "content_ref": "artifact://riemann-corpus-v0/pilot_12/units/platt2021_u01_certified_completeness.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/pilot_12/units/platt2021_u01_certified_completeness.txt",
+          "content_sha256": "2b7a0485e655823c0a5f2940190d32bc0fd758d0bffb3a0e5741229f0d567fa1",
+          "artifact_sha256": "339d4bcbcb227ded3d0b8eec320dec187c09d13696ed336001468cc37de9a814",
+          "artifact_bytes": 3020
+        },
+        {
+          "source_object_id": "mathia_source_aa1b58b7d4bcf84a739c19d6f1266b980e265d0cd5ab74133c9729feba2260b5",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt_trudgian2021_verification_v2_u03"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u03.txt",
+          "content_sha256": "4bdaaa21ddf716e2d1c27f792106f379ac3a52d07fad5c778b240e191dfc3191",
+          "artifact_sha256": "2f5a9167a55ae6252eb1c721fd2de2db6afc57fc44cb9cca467f1df3704b5e80",
+          "artifact_bytes": 1448
+        },
+        {
+          "source_object_id": "mathia_source_eacfa4a17430638ec527ecc320be1936eab8c1b013e820d9d4453a89fe0042b0",
+          "source_id": "platt_trudgian2021_verification",
+          "source_unit_ids": [
+            "platt_trudgian2021_verification_v2_u04"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "source_title": "The Riemann hypothesis is true up to 3·10^12",
+          "source_year": 2021,
+          "source_type": "primary-paper",
+          "viewpoint_tags": [
+            "computation",
+            "numerical-evidence",
+            "interval-arithmetic",
+            "epistemic-limits"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_verification_v2_u04.txt",
+          "content_sha256": "d5c8bd68d9c2952c928f70671bf4dcef8afb2b5dae80edc195f2a6e6ac8d91f8",
+          "artifact_sha256": "883568697e7d026b0ed24111db960b8ebf60fbc070b3e5a7049adbcc5786c4eb",
+          "artifact_bytes": 1595
+        }
+      ],
+      "audit_context_group": "source:platt_trudgian2021_verification",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "primary-paper"
+        ],
+        "viewpoint_tags": [
+          "computation",
+          "epistemic-limits",
+          "interval-arithmetic",
+          "numerical-evidence"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 3
+      }
+    }
+  ]
+}

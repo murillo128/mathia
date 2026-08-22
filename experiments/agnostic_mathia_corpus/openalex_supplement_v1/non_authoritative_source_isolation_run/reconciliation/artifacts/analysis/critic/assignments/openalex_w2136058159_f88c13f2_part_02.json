@@ -1,0 +1,332 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2136058159_bott_localization_models": {
+      "analysis_id": "agnostic_oa_generation_ed7f122390d5d62027b587aa85915b267bb3f59b25cba688852b0bdaae5ad5c7",
+      "boundary_or_failure": "The telescope model requires a coherent multiplication map by a chosen Bott lift, and its good ring interpretation depends on the available multiplicative structure; small primes require modified choices and weaker one-sided multiplication. Passing to an adic inverse limit can destroy finite-level periodicity, and direct geometric limits need not commute with that inverse limit.",
+      "interpretation": "Bott localization is iterative universal inversion with ambiguity control: represent a lift of a Bott power, telescope repeated multiplication, and prove that alternative lifts become units in the same localization. Finite-level localization, the inverse-limit adic spectrum, the pro-system, and K-homology Bousfield localization are distinct models whose equivalence or periodicity must be checked rather than assumed.",
+      "nonparaphrase_operation": "Construct a model-comparison ledger for localization: track dependence on the representative, left-versus-right multiplication, compatibility across coefficient levels, periodicity, and the order of direct and inverse limits.",
+      "source_support": "The source constructs a Bott class and ambiguous lifts via Bockstein arguments, defines localization by a homotopy direct system, shows independence from suitable lift choices, treats small-prime variants, defines adic inverse limits, contrasts them with pro-systems, and relates Bott inversion to K-localization under stated cases. The ledger is an interpretive synthesis.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "Bott powers, coefficient exponents, and exceptional-prime formulas are heavily OCR-sensitive, while some comparison statements are cited; the robust claim is the need to distinguish localization models and coherence conditions.",
+      "unit_id": "agnostic_oa_w2136058159_bott_localization_models"
+    },
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": {
+      "analysis_id": "agnostic_oa_generation_f3f8933299849808871cac43ea954b53ab239d896bbaa37fdc8ec2106f875437",
+      "boundary_or_failure": "Diagonal reduction depends on cofinality; the mapping-spectrum duality requires cofibrant diagram values and the appropriate fibrancy of the target. Totalization can fail to preserve homotopy information for a cosimplicial spectrum that has not been replaced by a fibrant cosimplicial fibrant model, and groupification gives an equivalent structured replacement rather than literal equality.",
+      "interpretation": "The unit combines three model-management moves: cofinality compresses a bicosimplicial homotopy limit to its diagonal, the mapping object converts a homotopy colimit in one variable into a homotopy limit in the dual variable, and functorial groupification repairs a model before totalization. Together they show that changing representation is legitimate only when the downstream operation's homotopy invariance has been certified.",
+      "nonparaphrase_operation": "Construct a representation-safety checklist: prove index compression is cofinal, derive variance reversal by an adjunction, and insert a structured fibrant replacement exactly where totalization would otherwise be non-invariant.",
+      "source_support": "The source proves the diagonalization lemma by contractibility of comma categories, states the mapping-spectrum universal-coefficient isomorphism, warns that Tot has poor homotopy behavior without fibrancy, and constructs natural weak-equivalent group-spectrum replacements that provide it. The checklist is an interpretive organization.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The existence and role of the replacements are clear, but their model-categorical implementation is routed through cited equivalences; the excerpt does not justify exporting the recipe unchanged to an arbitrary model category.",
+      "unit_id": "agnostic_oa_w2136058159_diagonal_mapping_groupification"
+    },
+    "agnostic_oa_w2136058159_homotopy_colimits": {
+      "analysis_id": "agnostic_oa_generation_b62ca466ce07eddda79e5c70f7313cade30f19dd3d6d8b191b1a8f79e94bfd61",
+      "boundary_or_failure": "Homotopy colimits are spectrum-model constructions, and objectwise stable equivalence is subtler than levelwise equivalence; the unbounded case uses Postnikov approximation. Complete convergence does not automatically give finite-length strong convergence, which still requires finite homological dimension or a uniform lower vanishing bound.",
+      "interpretation": "Homotopy colimits extend left-derived homological algebra beyond additive objects: they aggregate a diagram with all compositional coherence, preserve homotopy cofibres—and hence fibres stably—and recover ordinary hyperhomology when spectra come from chain complexes. The abelian case is therefore a calibration of the construction, not a requirement that the original K-theoretic objects be additive.",
+      "nonparaphrase_operation": "Use the chain-complex correspondence as a representation test: verify that the homotopy-coherent construction reduces to bicomplex totalization and derived colimits in the additive regime, then retain its stable fibre behavior outside that regime.",
+      "source_support": "The source defines spectrum-valued hyperhomology by homotopy colimit, gives its spectral sequence and convergence conditions, proves invariance and preservation of fibre/cofibre sequences, treats totalization, and identifies holim, Tot, and hocolim with classical derived constructions for abelian group spectra. The calibration interpretation is inferred.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The broad bridge to homological algebra is source-supported, but individual equivalences use cited simplicial-homotopy results; exact spectral-sequence bidegrees are not relied on because of OCR.",
+      "unit_id": "agnostic_oa_w2136058159_homotopy_colimits"
+    },
+    "agnostic_oa_w2136058159_homotopy_limits": {
+      "analysis_id": "agnostic_oa_generation_d4742e94b40c138b79b7992d6a31157cd453de105c2f2d2e785b46a243e04c86",
+      "boundary_or_failure": "Ordinary limits of unfibrant prespectra need not preserve objectwise weak equivalences or fibre sequences: the source explicitly warns that key lemmas can fail without fibrant spectra. The homotopy-limit spectral sequence also needs finite categorical cohomological dimension or a uniform upper vanishing range for strong convergence.",
+      "interpretation": "A homotopy limit is a derived global aggregator: fibrant replacement first makes equivalence visible objectwise, after which the limit preserves weak equivalences, fibrations, and homotopy fibres. Its spectral sequence then exposes a separate reconstruction question—whether category cohomology of the homotopy-group diagram actually converges to the homotopy groups of the aggregate.",
+      "nonparaphrase_operation": "Factor a global limiting argument into model repair, invariant aggregation, exactness, and convergence, so success at one layer cannot be silently reused as evidence for the next.",
+      "source_support": "The source defines fibrant spectra and homotopy limits componentwise, proves Fubini, objectwise weak-equivalence, fibration, and fibre-sequence properties, warns of failures for nonfibrant inputs, and constructs a cohomological spectral sequence with stated strong-convergence conditions. The four-layer factorization is inferred from these separate results.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The architectural distinctions are explicit, but the printed spectral-sequence indexing is nonstandard and OCR-fragile; no differential formula is reconstructed here.",
+      "unit_id": "agnostic_oa_w2136058159_homotopy_limits"
+    },
+    "agnostic_oa_w2136058159_k_spectra_with_coefficients": {
+      "analysis_id": "agnostic_oa_generation_3906388c1787916501c04fefe6092b905fedcb625d43305e1c9c15617ac16c5c",
+      "boundary_or_failure": "Smashing with a Moore spectrum changes coefficients but does not uniformly preserve ring laws. The source records that at small primes multiplication may be nonassociative, noncommutative, or absent; regularity is also needed for the K-to-G equivalence, and finite or proper covariance has its stated scope.",
+      "interpretation": "The appendix separates a spectrum's structural budget into independent capabilities: additive homotopy groups with coefficients, multiplicative pairings, projection formulas for transfer, and coherent ring laws. The Moore-spectrum universal-coefficient sequence controls the additive change, but it cannot be used as evidence that associativity or commutativity survived.",
+      "nonparaphrase_operation": "Build a capability matrix for coefficient change, marking additive exactness, functoriality, module action, multiplication, associativity, and commutativity independently rather than bundling them under the word K-theory.",
+      "source_support": "The source constructs K- and G-theory spectra from exact categories, records pairings and a projection formula, defines finite coefficients by Moore spectra with a universal-coefficient exact sequence, and explicitly lists degraded multiplicative behavior at primes two and three. The capability-matrix framing is interpretive.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "Exact prime-power divisibility thresholds and exponents are scan-sensitive; the reliable conclusion is that structural laws vary with coefficients, not a newly verified classification of every small-prime case.",
+      "unit_id": "agnostic_oa_w2136058159_k_spectra_with_coefficients"
+    },
+    "agnostic_oa_w2136058159_singular_rr_purity": {
+      "analysis_id": "agnostic_oa_generation_5b92879a7e49369e0c51ffbd02e2be7d7c24567c64ec8ce8ac457c27f11b3b63",
+      "boundary_or_failure": "The extension uses a closed embedding into a regular scheme, algebraic and topological localization fibre sequences, and the comparison theorem on the regular ambient scheme and its complement. Independence of the embedding and the Borel–Moore interpretation are asserted only in the cited quasi-projective or otherwise suitable settings; the purity consequence also retains regularity and the earlier coefficient hypotheses.",
+      "interpretation": "Singular comparison is obtained by transport across an exact triangle rather than by applying the regular theorem directly: embed the singular scheme in a regular ambient scheme, compare the two known outer terms, and recover the supported term by the fibre sequence and the five lemma. Only after independence from the auxiliary embedding is controlled can proper pushforward, Euler-characteristic calculations, and purity be treated as intrinsic consequences.",
+      "nonparaphrase_operation": "Recast the construction as equivalence transport through a localization triangle, then separate three audits that the prose places nearby: recovery of the singular term, removal of embedding dependence, and functorial application to pushforward or purity.",
+      "source_support": "The source displays compatible algebraic and topological localization rows, invokes the five lemma for the supported G-theory comparison, discusses independence of the regular ambient scheme in a cited geometric regime, and derives Riemann–Roch and absolute-purity consequences. The three-audit organization is an interpretive synthesis, not an additional theorem.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "Several application-level inputs are cited rather than reproved, and the scan is formula-sensitive; this row supports the transport mechanism but does not independently verify embedding independence, Gysin comparison, or the full purity theorem.",
+      "unit_id": "agnostic_oa_w2136058159_singular_rr_purity"
+    },
+    "agnostic_oa_w2136058159_spectral_sequence_convergence": {
+      "analysis_id": "agnostic_oa_generation_6fe612c7e3a0df23204b2de7c288b351a87e0a65dfa341c97a1d58941befd047",
+      "boundary_or_failure": "An associated graded page does not determine the inverse-limit target without controlling the Milnor lim-one term, completeness, Hausdorffness, stabilization, and filtration length. Pointwise convergence is insufficient for a filtered colimit: the source requires a bound uniform in the directed index to interchange the direct system with the inverse tower.",
+      "interpretation": "Convergence is an information-recovery contract for a tower. The Milnor sequence measures information lost by inverse limiting, Boardman's conditions certify that stable-page pieces form the graded pieces of a complete separated filtration, and uniform half-plane bounds strengthen that recovery to finite-length strong convergence and make direct/inverse interchange safe.",
+      "nonparaphrase_operation": "Turn convergence into a failure diagnostic with three independent residuals: a lim-one obstruction, a gap between stable-page terms and filtration quotients, and unbounded filtration length; then test uniformity before moving through a filtered colimit.",
+      "source_support": "The source gives the Milnor exact sequence, constructs the tower spectral sequence, defines complete and strong convergence, states Boardman criteria and bounded half-plane sufficient conditions, proves a uniform-colimit lemma, and develops Postnikov devissage to Eilenberg–MacLane layers. The residual-based diagnostic is inferred from those conditions.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its seven SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The prose conditions and logical separations are clear, while whole-plane reindexing and several displayed indices are OCR-fragile; this interpretation intentionally avoids asserting an exact bidegree formula.",
+      "unit_id": "agnostic_oa_w2136058159_spectral_sequence_convergence"
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2136058159_bott_localization_models": "agnostic_oa_critic_b625e40b6fd4d50d74f5db41c6a2ba411b07443786017225e5c01bc05416a2ae",
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": "agnostic_oa_critic_f74b6e9eef9dadbb992db61bc2b34d61f889751402f8759f104e2883935131b4",
+    "agnostic_oa_w2136058159_homotopy_colimits": "agnostic_oa_critic_827a7de27d9ce50c31cecdf2898627f22e90c61228f09be96be1ac622b201057",
+    "agnostic_oa_w2136058159_homotopy_limits": "agnostic_oa_critic_03f3095900a3ab38d1f1373da7a77e9ab4553603df8044c61d634780c6af6e21",
+    "agnostic_oa_w2136058159_k_spectra_with_coefficients": "agnostic_oa_critic_980ce61dc05d29511a53edfad6a572029d62066ef14e56bccaebe5331d819c40",
+    "agnostic_oa_w2136058159_singular_rr_purity": "agnostic_oa_critic_0dd809b564df2c3fda4ae9577407a5afa3470e6203ad3d06576eecfe5bfc553e",
+    "agnostic_oa_w2136058159_spectral_sequence_convergence": "agnostic_oa_critic_fbc4028bca9a0c7b42fed2409d395deded05ff16c55d90480475843d61f50c91"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w2136058159_f88c13f2_part_02.jsonl",
+  "source_id": "openalex_w2136058159",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_singular_rr_purity.txt",
+      "artifact_bytes": 7091,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_singular_rr_purity.txt",
+      "artifact_sha256": "02cab2d891c3bff97ca352bfd34a98ba2c308940947ae93efa964cb37135d8ca",
+      "content_sha256": "c6461397b22b2ea99e5dbdb872d557a051dc5a13a4aa8e66fb6d6a8df34dae94",
+      "context_note": "This applications span extends the comparison to singular schemes through G-theory and localization, formulates a Riemann-Roch computation via proper pushforward, and derives an absolute purity consequence. These are theorem-level consequences, not self-contained replacements for their cited technical inputs.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4380,
+      "line_start": 4258,
+      "representation_dependency": "The constructions depend on embeddings into regular schemes, algebraic and topological K-homology, and localization sequences; conclusions are restricted to the stated geometric hypotheses.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It shows how a comparison theorem can be transported through a fibre sequence when direct regularity fails, how independence from an auxiliary embedding must be justified, and how formal pushforward and purity consequences then emerge.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Extending comparison through localization to singular and purity settings",
+      "unit_id": "agnostic_oa_w2136058159_singular_rr_purity",
+      "unit_type": "application_level_structural_consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_homotopy_limits.txt",
+      "artifact_bytes": 10824,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_homotopy_limits.txt",
+      "artifact_sha256": "182632c75daae572de4b5e0c8445ee41ee8747d6e39590391b3418e1183e276f",
+      "content_sha256": "bbf71dc4269658ff29a9cb69999ce80e008d169b3e8090e429ee8d55043d7ad7",
+      "context_note": "Section 5 defines fibrant spectra and homotopy limits, proves preservation of weak equivalences, fibrations, and fibre sequences, and constructs the associated spectral sequence. These are foundational results restated from cited homotopy theory.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4553,
+      "line_start": 4381,
+      "representation_dependency": "The framework is simplicial stable homotopy theory; the reusable meaning is that an ordinary limit must be derived to preserve equivalence and that its spectral sequence needs separate convergence conditions.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It identifies which categorical operations survive homotopy replacement, provides a universal global construction for diagrams of spectra, and keeps objectwise equivalence, fibre exactness, and spectral convergence as separate claims.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Homotopy limits as derived global aggregation",
+      "unit_id": "agnostic_oa_w2136058159_homotopy_limits",
+      "unit_type": "rigorous_foundational_homotopy_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_homotopy_colimits.txt",
+      "artifact_bytes": 20167,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_homotopy_colimits.txt",
+      "artifact_sha256": "56322000f9f9bce0861a197d434e179b38f6eb394f8d3821676cedefc00979da",
+      "content_sha256": "d23b4d0542b89aff7377b198d695951aaad9e94c4ae21bd033c2d8907a0769c9",
+      "context_note": "The span develops homotopy colimits and hyperhomology, totalization of cosimplicial spectra, and the equivalence with ordinary homological algebra on abelian group spectra. The source is explanatory as well as formal.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4900,
+      "line_start": 4554,
+      "representation_dependency": "The constructions use prespectra and simplicial categories; the broader semantic move replaces exact-chain-complex algebra with homotopy-coherent limits, colimits, and fibre sequences when additivity is unavailable.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It explains why derived homological techniques transfer to spectra, how totalization and hyperhomology recover familiar bicomplex operations in the abelian case, and what additional coherence is needed outside it.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Homotopy colimits and the extension of homological algebra",
+      "unit_id": "agnostic_oa_w2136058159_homotopy_colimits",
+      "unit_type": "rigorous_foundation_and_conceptual_bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_diagonal_mapping_groupification.txt",
+      "artifact_bytes": 8137,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_diagonal_mapping_groupification.txt",
+      "artifact_sha256": "37db5a562e42bd46dc6b2c36124a75fe94ac75bfd1431cc18485d330fe4b3048",
+      "content_sha256": "be9e9fa19e16f698b1eb6298dd5faeb5c4513d07570aafc3f04ad9db3f278abe",
+      "context_note": "This block proves diagonalization, describes mapping spectra and a universal-coefficient duality, and gives a functorial replacement by group spectra so totalization has good homotopy behavior. It is supporting machinery for the earlier transfer constructions.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 5030,
+      "line_start": 4901,
+      "representation_dependency": "The results are model-categorical and spectrum-specific; their generic purpose is to replace an awkward model by an equivalent structured one before applying a construction that otherwise fails to preserve equivalence.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It combines cofinal diagonal reduction, a mapping-object adjunction, and functorial groupification to demonstrate that changing models is legitimate only when the downstream operation's homotopy invariance has been secured.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Equivalent structured replacements for mapping and totalization",
+      "unit_id": "agnostic_oa_w2136058159_diagonal_mapping_groupification",
+      "unit_type": "rigorous_homotopy_technical_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_spectral_sequence_convergence.txt",
+      "artifact_bytes": 17899,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_spectral_sequence_convergence.txt",
+      "artifact_sha256": "28fcdd79fa274c7fb298a8134982a6ba2f3303168d0f4087cb43c2910b6ad0bb",
+      "content_sha256": "87468a5ff9260994fa678b96c20c0db93a1561bf7497e34857547298e57358fd",
+      "context_note": "The span treats towers of fibrations, Milnor limits, spectral-sequence convergence, uniform passage through filtered colimits, Postnikov and inverse Postnikov towers, and devissage to Eilenberg-MacLane spectra. Whole-plane indices are OCR-fragile but prose conditions are clear.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 5379,
+      "line_start": 5031,
+      "representation_dependency": "The machinery is stable homotopy theoretic; the transferable lesson is that an associated graded object does not determine a target without completeness, Hausdorffness, stabilization, and bounded-filtration checks.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It makes convergence failure concrete, states sufficient uniform bounds for interchanging limits, and shows how a general spectrum-level assertion can be reduced functorially to one homotopy group at a time.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Convergence gates and Postnikov devissage",
+      "unit_id": "agnostic_oa_w2136058159_spectral_sequence_convergence",
+      "unit_type": "rigorous_convergence_and_reduction_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_k_spectra_with_coefficients.txt",
+      "artifact_bytes": 5469,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_k_spectra_with_coefficients.txt",
+      "artifact_sha256": "d3959c47ff16d088f59af2e156ce5c132d6fc846b1ac839367c3823c41e8f7ed",
+      "content_sha256": "165684d97a104499ad6eb9869da1273f6f2e183a88da5a55e6c16a8fe599d907",
+      "context_note": "The appendix constructs K- and G-theory spectra, pairings and projection formulas, finite-coefficient spectra through Moore spectra, and records failures of multiplicative structure at small primes. Exact coefficient exponents require typeset verification.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 5475,
+      "line_start": 5380,
+      "representation_dependency": "The definitions use infinite-loop-space machines and Moore spectra; the generic point is that coefficient change may preserve additive information while degrading or destroying multiplication, associativity, or commutativity.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It distinguishes functoriality, pairing, transfer, and ring structure, and explicitly warns that a coefficient operation can invalidate algebraic laws that later arguments might silently assume.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "K-theory spectra with coefficients and structural limits",
+      "unit_id": "agnostic_oa_w2136058159_k_spectra_with_coefficients",
+      "unit_type": "rigorous_construction_and_boundary_analysis"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_bott_localization_models.txt",
+      "artifact_bytes": 8947,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_bott_localization_models.txt",
+      "artifact_sha256": "60e22d580fd4b29dbc72cac07d1fd6a448b34936dc8ce144401c7aed19afe45c",
+      "content_sha256": "abe0f6c7800021c98618cbf273910ea4e02041cd2204f1e160f512937b52ff8e",
+      "context_note": "The final appendix span constructs the Bott element, defines localization by a homotopy direct system, handles ambiguity and small-prime variants, contrasts inverse-limit and pro-system behavior, and relates simultaneous localization to K-localization. Many exponents and symbols are OCR-sensitive.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 5626,
+      "line_start": 5476,
+      "representation_dependency": "The construction is specific to K-theory and Bott or Adams classes, but it cleanly illustrates localization as an iterative universal operation whose result depends on coherence, multiplicative structure, and the order of direct and inverse limits.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It shows how to invert a class without pretending the choice of representative is unique, records when different representatives give equivalent localizations, and identifies direct-versus-inverse-limit noncommutation as a real obstruction rather than a technicality to ignore.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Bott localization, ambiguity control, and limit models",
+      "unit_id": "agnostic_oa_w2136058159_bott_localization_models",
+      "unit_type": "rigorous_localization_construction"
+    }
+  ]
+}

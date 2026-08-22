@@ -1,0 +1,284 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_connes_consani2019_scaling_hamiltonian_b95982df_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "connes_consani2019_scaling_hamiltonian",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The example is used only for the time-versus-energy conceptual comparison, not as evidence for the number-field RH.",
+      "line_end": 985,
+      "line_start": 957,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is degraded but periodicity and dependence on arguments modulo 2π are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The function-field model turns zeros into periodic arithmetic progressions in the imaginary coordinate, supporting the scaling approach's dual interpretation of zeros as times rather than energy levels.",
+      "source_id": "connes_consani2019_scaling_hamiltonian",
+      "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta zeros are naturally times in the function-field analogue",
+      "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian__u25.txt",
+      "unit_bytes": 1744,
+      "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+      "unit_sha256": "35cc6190b4f58558b96f734122cd9396ce8d52ed8d61571d978fd8f054bd10ac",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian__u25.txt",
+      "source": {
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "title": "The Scaling Hamiltonian",
+        "authors": [
+          "Alain Connes",
+          "Caterina Consani"
+        ],
+        "year": 2019,
+        "source_type": "primary-survey-paper",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "hilbert-polya",
+          "trace-formula",
+          "failed-or-limited-approaches"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 949,
+          "line_end": 956,
+          "text": "gets\n(4.8)                      D ( f )( x) = x2 f 00 ( x) + 2x f 0 ( x).\nOne checks directly that the range D (S (R)) consists of functions which fulfill the\ntwo conditions (4.7). All this construction extends verbatim to the semi-local case.\nR EMARK 4.2. In an intriguing manner the adjoint expression ∆2 := Du2 − Du\nprovides the tropical structure of the Scaling Site as explained in [14], equation\n(1).\n\n",
+          "sha256": "ede2643948ee46df17b150aa7e6dce3ee82446f1b88c93e7e65617bbb1131c28"
+        },
+        "after": {
+          "line_start": 986,
+          "line_end": 993,
+          "text": "\n4.3. A NALYSIS AND G EOMETRY. The above discussion does not dismiss the nag-\nging thought we started with. In fact there is a real possibility that one could\nfind a way to solve Conjecture 4.1, by first concentrating on the simplest case of\na single place and finding a way to make use of the support condition on the\ntest function. A scary aspect of this strategy is that Weil’s positivity is very much\ndependent on the careful choices of principal values and it is difficult to avoid\ncomputational mistakes. This analytical approach is in this respect, by its vul-\n",
+          "sha256": "d027f038caa90b07853317af9e05bbfa24c1132c926a927299e0a86e7b8cabf5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5ee0a06b9c8bdedba96bc53a4e21f9408f04c7d61a8135b8b2ab7ee02e37406c",
+        "dossier_sha256": "671ac5e997d91c2a9085238c6c8a4ab2e14afd83be16fce9d7780be89f2eb1f2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. An Operator Theoretic Problem",
+            "line_end": 1002,
+            "line_start": 826,
+            "mathematical_role": "Translates Weil positivity into constrained convolution form, states the semi-local conjecture, explains Poisson normalization and Sonine witnesses, and compares time/energy and analytic/geometric viewpoints."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 985,
+          "line_start": 957,
+          "title": "Zeta zeros are naturally times in the function-field analogue",
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+          "unit_type": "reframing",
+          "why_material": "The function-field model turns zeros into periodic arithmetic progressions in the imaginary coordinate, supporting the scaling approach's dual interpretation of zeros as times rather than energy levels."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The example is used only for the time-versus-energy conceptual comparison, not as evidence for the number-field RH.",
+          "representation_dependency": "Formula layout is degraded but periodicity and dependence on arguments modulo 2π are clear.",
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 955,
+            "line_start": 931,
+            "title": "Poisson distributions and the scaling Hamiltonian generate Sonine elements",
+            "unit_id": "connes_consani2019_scaling_hamiltonian__u24",
+            "unit_type": "construction",
+            "why_material": "A differential operator enforcing simultaneous value and Fourier-value constraints transforms the Poisson comb into distributions supported away from zero; smoothing gives Schwartz Sonine functions, and a Fourier-symmetric polynomial in the scaling generator supplies a canonical choice."
+          },
+          {
+            "line_end": 999,
+            "line_start": 987,
+            "title": "Analytic support exploitation versus global geometric structure",
+            "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+            "unit_type": "method-comparison",
+            "why_material": "The closing comparison identifies a plausible analytic next step and its vulnerability to principal-value normalization errors, while explaining what the global geometric model adds: an interpretation of scaling as Frobenius on the Scaling Site."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A Fourier-symmetric polynomial in the scaling generator constructs Sonine-type constrained functions, while the same scaling viewpoint reads zeros as times and acquires a Frobenius interpretation globally.",
+            "limit": "The connections are conceptual bridges across analytic and geometric viewpoints, not an established transfer of positivity between them.",
+            "parent_local_unit_ids": [
+              "connes_consani2019_scaling_hamiltonian__u24",
+              "connes_consani2019_scaling_hamiltonian__u25",
+              "connes_consani2019_scaling_hamiltonian__u26"
+            ],
+            "title": "Scaling dynamics links analytic Sonine constraints and geometric Frobenius"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+        "spontaneous": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+          "spontaneous_reading": "The finite-field change of variable exposes the zeros as repeated logarithmic lifts: writing the zeta analogue as L(q^{-s}) turns each numerator root into a periodic arithmetic progression in the imaginary coordinate. That recurrence is the mathematical reason the authors regard the zeros as times rather than energy levels."
+        },
+        "directed": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+          "source_grounded_mathematics": "For a curve over F_q, the zeta analogue has the form L(q^{-s}), with L rational and numerator P of degree 2g. Weil's theorem puts the roots z_j of P on the circle of radius q^{-1/2}; since their arguments are defined modulo 2π, their preimages in the imaginary coordinate of s form periodic arithmetic progressions indexed by j and an integer k.",
+          "conceptual_reading": "The exponential coordinate q^{-s} compresses vertical translation in the s-plane into angular periodicity in the z-plane. Lifting a finite collection of angular root data back through this coordinate produces recurrence, making a time interpretation structurally natural in this function-field model.",
+          "representation_or_bridge": "The concrete bridge is z=q^{-s}: roots of a rational numerator on a circle become logarithmic preimages with period 2π/log q in the imaginary direction. It relates algebraic root data for a curve over a finite field to a dynamical reading of the spectral parameter.",
+          "boundary_or_failure": "This is a function-field comparison, not evidence that number-field Riemann zeros are literally times, not a construction of a Hamiltonian, and not a proof of the Riemann hypothesis. The time-versus-energy conclusion is tied to the periodic representation supplied by q^{-s}.",
+          "uncertainty": "The extracted display corrupts the exact real-part and fraction layout. The circle condition, dependence on arguments modulo 2π, and periodicity are clear, but no damaged formula has been reconstructed beyond those stated relations."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the authors' uncertainty; it is a comparison of research routes, not a claimed proof strategy.",
+      "line_end": 999,
+      "line_start": 987,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is self-contained.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The closing comparison identifies a plausible analytic next step and its vulnerability to principal-value normalization errors, while explaining what the global geometric model adds: an interpretation of scaling as Frobenius on the Scaling Site.",
+      "source_id": "connes_consani2019_scaling_hamiltonian",
+      "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic support exploitation versus global geometric structure",
+      "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian__u26.txt",
+      "unit_bytes": 995,
+      "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+      "unit_sha256": "670aad8655231aac35bff170feb0d4e397c9756c585d42d2963663de00350891",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian__u26.txt",
+      "source": {
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "title": "The Scaling Hamiltonian",
+        "authors": [
+          "Alain Connes",
+          "Caterina Consani"
+        ],
+        "year": 2019,
+        "source_type": "primary-survey-paper",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "hilbert-polya",
+          "trace-formula",
+          "failed-or-limited-approaches"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 979,
+          "line_end": 986,
+          "text": "                   =(s) =\n                                        \u0001\n                                 α + 2πk , j ∈ {1, . . . 2g}, k ∈ Z,\n                            log q j\nwhere the −α j are the arguments of the z j and are determined only modulo 2π.\nThis type of distribution of numbers, being periodic, is very natural as a distribu-\ntion in “time\", not in “energy\".\n\n",
+          "sha256": "9299dba80f65694ea1ac20a84071f4e87a1b5519de57b9de695ff3769d0230b6"
+        },
+        "after": {
+          "line_start": 1000,
+          "line_end": 1007,
+          "text": "\n\n\n                                        REFERENCES\n\n [1] M. Berry and J. Keating, H = qp and the Riemann zeros, “Supersymmetry and Trace\n     Formulae: Chaos and Disorder”, edited by J.P. Keating, D.E. Khmelnitskii and I.V.\n     Lerner, Plenum Press. Link to download the paper\n",
+          "sha256": "e6fe5bcd154c870843015dea5d7b2bb5cf59c44d6826fba4a3bab3d3debf3601"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5ee0a06b9c8bdedba96bc53a4e21f9408f04c7d61a8135b8b2ab7ee02e37406c",
+        "dossier_sha256": "671ac5e997d91c2a9085238c6c8a4ab2e14afd83be16fce9d7780be89f2eb1f2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. An Operator Theoretic Problem",
+            "line_end": 1002,
+            "line_start": 826,
+            "mathematical_role": "Translates Weil positivity into constrained convolution form, states the semi-local conjecture, explains Poisson normalization and Sonine witnesses, and compares time/energy and analytic/geometric viewpoints."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 999,
+          "line_start": 987,
+          "title": "Analytic support exploitation versus global geometric structure",
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+          "unit_type": "method-comparison",
+          "why_material": "The closing comparison identifies a plausible analytic next step and its vulnerability to principal-value normalization errors, while explaining what the global geometric model adds: an interpretation of scaling as Frobenius on the Scaling Site."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the authors' uncertainty; it is a comparison of research routes, not a claimed proof strategy.",
+          "representation_dependency": "Prose is self-contained.",
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 985,
+            "line_start": 957,
+            "title": "Zeta zeros are naturally times in the function-field analogue",
+            "unit_id": "connes_consani2019_scaling_hamiltonian__u25",
+            "unit_type": "reframing",
+            "why_material": "The function-field model turns zeros into periodic arithmetic progressions in the imaginary coordinate, supporting the scaling approach's dual interpretation of zeros as times rather than energy levels."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A Fourier-symmetric polynomial in the scaling generator constructs Sonine-type constrained functions, while the same scaling viewpoint reads zeros as times and acquires a Frobenius interpretation globally.",
+            "limit": "The connections are conceptual bridges across analytic and geometric viewpoints, not an established transfer of positivity between them.",
+            "parent_local_unit_ids": [
+              "connes_consani2019_scaling_hamiltonian__u24",
+              "connes_consani2019_scaling_hamiltonian__u25",
+              "connes_consani2019_scaling_hamiltonian__u26"
+            ],
+            "title": "Scaling dynamics links analytic Sonine constraints and geometric Frobenius"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+        "spontaneous": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+          "spontaneous_reading": "The authors contrast a concrete but fragile analytic lever—restrict to one place and exploit test-function support—with a global geometric representation that gives scaling a conceptual identity as Frobenius. The obstruction is control of principal-value choices: positivity can be lost through normalization or computational error before the geometric meaning becomes available."
+        },
+        "directed": {
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u26",
+          "source_grounded_mathematics": "A proposed analytic route to Conjecture 4.1 is to begin at a single place and use the support condition on the test function. The authors stress that Weil positivity depends sensitively on principal-value choices. In the global geometric approach, the adèle class space is represented as points of the Scaling Site, where the scaling-group action is identified with Frobenius action.",
+          "conceptual_reading": "The local analytic picture offers a manipulable support constraint but carries a delicate normalization burden. Passing to the global geometric picture exposes structure that is only implicit semi-locally: scaling is no longer merely an operation on analytic data but receives a geometric interpretation through Frobenius.",
+          "representation_or_bridge": "The bridge objects are the adèle class space and the Scaling Site. Re-presenting adèle classes as points of that site sends the scaling-group action to Frobenius action, linking the analytic scaling viewpoint to global geometry without establishing that positivity transfers between them.",
+          "boundary_or_failure": "The suggested single-place route is explicitly only a possibility and is vulnerable to principal-value mistakes. The span neither proves Conjecture 4.1 nor shows that the global geometric interpretation repairs the analytic positivity problem; it compares research routes and their burdens.",
+          "uncertainty": "The prose is clear, but Conjecture 4.1 and the precise support condition are defined outside this unit. Their exact hypotheses and the practical force of the proposed reduction therefore cannot be assessed from this packet alone."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b36cc16f2901acf3a119f91735a87774ad41d7b6675afbbdb23001145b9834f8"
+}

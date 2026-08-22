@@ -1,0 +1,118 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_chandrasekharan1953_tifr_lectures_a290b35b_part_03.jsonl",
+  "prior_output_paths": {},
+  "source_id": "chandrasekharan1953_tifr_lectures",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the source's chain from zeta boundary behavior to the magnitude of the nth prime.",
+      "line_end": 6863,
+      "line_start": 6833,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One pi symbol is OCR-rendered as tau, but the surrounding statements identify the intended counting function; verify against scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers between a monotone counting function and its generalized inverse using logarithmic equivalence and adjacent-prime squeezing.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-counting asymptotics are equivalent to nth-prime asymptotics",
+      "unit_artifact_relpath": "depth/units/ch53_u49.txt",
+      "unit_bytes": 1260,
+      "unit_id": "ch53_u49",
+      "unit_sha256": "b948644cc0b427f548caad98a37f08231efe2330d43ecf78e10f467d730dfa85",
+      "unit_type": "equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u49.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6825,
+          "line_end": 6832,
+          "text": "                                 (σ − 1)φ(σ + it)\nwould tend to a limit different from zero, namely the residue of φ(s) at\nthe simple pole 1 + it.\n\n<!-- source-page: 152 -->\n\n146                          17. The Zeta Function of Riemann (Contd)\n\n",
+          "sha256": "d7c56727003b3dd08c307bf09bb57756b22b3e8bf4e67e9c415042281f16da97"
+        },
+        "after": {
+          "line_start": 6864,
+          "line_end": 6871,
+          "text": "<!-- source-page: 153 -->\n\nBibliography\n\n [1] L.Bieberbach: Lehrbuch der Funktionentheorie I & II, Chelsea, 153\n     1945\n\n [2] S.Bochner: Vorlesungen über Fouriersche Integrale, Leipzig, 1932\n",
+          "sha256": "d00f69b009b74e0ad878a1dc1059715a40838fab09be5d357eaa1df56fdc453b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 17: Prime Number Theorem",
+            "line_end": 6865,
+            "line_start": 6272,
+            "mathematical_role": "Chebyshev reductions, Wiener-Ikehara Tauberian theorem, PNT, and equivalent formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6863,
+          "line_start": 6833,
+          "title": "Prime-counting asymptotics are equivalent to nth-prime asymptotics",
+          "unit_id": "ch53_u49",
+          "unit_type": "equivalent criterion",
+          "why_material": "Transfers between a monotone counting function and its generalized inverse using logarithmic equivalence and adjacent-prime squeezing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the source's chain from zeta boundary behavior to the magnitude of the nth prime.",
+          "representation_dependency": "One pi symbol is OCR-rendered as tau, but the surrounding statements identify the intended counting function; verify against scan.",
+          "unit_id": "ch53_u49"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 6827,
+            "line_start": 6768,
+            "title": "Prime number theorem from zero-freeness, and zero-freeness back from PNT",
+            "unit_id": "ch53_u48",
+            "unit_type": "theorem application and equivalence",
+            "why_material": "Applies Wiener-Ikehara to the von Mangoldt transform using zeta's sole boundary pole and zero-free line, then reverses the logic by showing a PNT error transform cannot have a pole at 1+it."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "eb553916ad82fb21d98ef31b0c4ed2f913766b7e3dd2b2c555f2f5028604aede"
+}

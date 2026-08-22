@@ -1,0 +1,306 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1965895545_9bb4a2d3_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1965895545",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Parity reduces verification to one side.",
+      "line_end": 1557,
+      "line_start": 1302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Measure and interpolation formulas are sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The target f is subordinated to odd Gaussians; scaled interpolation, parity, and a sinc-square correction yield the extremal pair with equal L1 error.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        19,
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An odd Gaussian mixture produces symmetric extremals for S",
+      "unit_artifact_relpath": "depth/units/openalex_w1965895545_v2_u11.txt",
+      "unit_bytes": 13292,
+      "unit_id": "openalex_w1965895545_v2_u11",
+      "unit_sha256": "a2e6da1f206fb9514c585c76ed7db9bbf7fb26949d77caff697eb77d4c7e69bb",
+      "unit_type": "odd-gaussian-subordination-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1965895545_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1294,
+          "line_end": 1301,
+          "text": "                                         −1 2\n           =                  λ−1/2 e−πλ n                                   dσ dλ\n               0   1/2 n=−∞\n                                              \n                                                             2λ\n                                      n6=0\n                                                               \n                  Z 3/2 Z ∞  ∞                                                2   2          2\n",
+          "sha256": "ddfe97ddf3e4f8143e83728e5abf6b5afccaffda72d5c021fa456b3928e5f9a2"
+        },
+        "after": {
+          "line_start": 1558,
+          "line_end": 1565,
+          "text": "                                               2   π∆x\n\nwhere J∆ is an odd function. Since f (x) is odd and absolutely integrable, we have\n     Z ∞                        Z ∞               Z ∞ \u0012             \u00132\n          \b +                           +              π sin π∆x              π\n            m∆ (x) − f (x) dx =       m∆ (x) dx =                      dx =     .\n       −∞                         −∞                −∞ 2     π∆x             2∆\n\n",
+          "sha256": "a90d8288526ea1f5f5c55627d72c7bb4a658e51a1e8a428dba7388c9561fca88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8ece694e59b25b9f334b4b17494d5edb339d1c7df7951f646dbd2b04400184bc",
+        "dossier_sha256": "dd8668b339476f9f1a52d8eabe9355678409441f73b75fb1da44ae24b9a75ac1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Extremal functions",
+            "line_end": 1559,
+            "line_start": 881,
+            "mathematical_role": "Defines the one-sided problem and constructs even and odd extremal pairs by Gaussian subordination."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1557,
+          "line_start": 1302,
+          "title": "An odd Gaussian mixture produces symmetric extremals for S",
+          "unit_id": "openalex_w1965895545_v2_u11",
+          "unit_type": "odd-gaussian-subordination-construction",
+          "why_material": "The target f is subordinated to odd Gaussians; scaled interpolation, parity, and a sinc-square correction yield the extremal pair with equal L1 error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Parity reduces verification to one side.",
+          "representation_dependency": "Measure and interpolation formulas are sensitive.",
+          "unit_id": "openalex_w1965895545_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1300,
+            "line_start": 938,
+            "title": "The S1 kernel is a positive Gaussian mixture whose extremals inherit exact error",
+            "unit_id": "openalex_w1965895545_v2_u10",
+            "unit_type": "even-gaussian-subordination-construction",
+            "why_material": "A nonnegative Gaussian mixture imports unique extremals; interpolation series establish growth and decay, Paley-Wiener gives support, and theta sums give exact L1 distances."
+          },
+          {
+            "line_end": 1673,
+            "line_start": 1560,
+            "title": "Integral transforms certify the odd subordinating measure",
+            "unit_id": "openalex_w1965895545_v2_u12",
+            "unit_type": "subordination-measure-certification",
+            "why_material": "The appendix derives the Gaussian representation, reduces positivity to a monotonicity calculation, and computes finite total mass by monotone convergence."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1965895545_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w1965895545_v2_u11",
+          "spontaneous_reading": "Odd Gaussian subordination produces a symmetric extremal pair for f. Parity collapses the two-sided verification, and a sinc-squared correction isolates the entire L1 discrepancy, giving equal error pi/(2 Delta)."
+        },
+        "directed": {
+          "unit_id": "openalex_w1965895545_v2_u11",
+          "source_grounded_mathematics": "The unit represents an odd scaled kernel H_Delta as a mixture of odd Gaussians with a claimed finite nonnegative measure, invokes unique extremals M_Delta^-/M_Delta^+, and gives interpolation formulas related by M_Delta^-(z)=-M_Delta^+(-z). It proves growth and real-axis bounds from series for f and f', rescales to m_Delta^+/- for f, identifies an odd part plus a sinc-squared correction, computes the L1 error, and obtains Fourier support by Paley-Wiener.",
+          "conceptual_reading": "Oddness is functional leverage, not just symmetry: it makes one extremal determine the other and makes the integrated odd component cancel, leaving a universal correction term as the exact approximation cost.",
+          "representation_or_bridge": "The bridge runs from f to H_Delta, then to an odd-Gaussian measure and interpolation extremals; the sinc-squared term connects parity to exact L1 error.",
+          "boundary_or_failure": "The needed positivity and finiteness of the subordinating measure are deferred to the appendix, so the construction in this span depends on that unproved condition.",
+          "uncertainty": "Moderate: the parity and error mechanism are clear, while the measure and interpolation formulas are sensitive to extraction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1965895545_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the odd-Gaussian mixture with positivity and finiteness deferred to Appendix A, invokes cited unique extremals, gives their interpolation formulas and parity relation, and proves growth and real-axis bounds before reaching the decomposition into an odd term J_Delta plus a sinc-squared correction."
+        ],
+        "inference": [
+          "Oddness making one extremal determine the other is directly supported, and anticipating that the odd term will integrate to zero is a reasonable next-step inference."
+        ],
+        "unsupported_or_imported": [
+          "The exact L1 error pi/(2 Delta) and compact Fourier support are not proved in this artifact; both computations occur at the start of the next assigned span and are imported here across the unit boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "The symmetry discussion is substantive, but 'universal correction term as the exact approximation cost' prematurely packages a calculation absent from this span."
+        ],
+        "context_or_ocr_risk": [
+          "The unit begins with the tail of the preceding even-extremal calculation and ends immediately after setting up parts (ii) and (iii); measure normalizations are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "Within this boundary the sinc-squared term is only isolated, not yet integrated, and Paley-Wiener has not yet been applied to the odd extremals."
+        ],
+        "revision_instructions": [
+          "Stop the source-grounded account at the parity, bounds and J_Delta-plus-sinc decomposition; label exact error and Fourier support as deferred to the following span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the deferred existence condition.",
+      "line_end": 1673,
+      "line_start": 1560,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Transform normalizations need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix derives the Gaussian representation, reduces positivity to a monotonicity calculation, and computes finite total mass by monotone convergence.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integral transforms certify the odd subordinating measure",
+      "unit_artifact_relpath": "depth/units/openalex_w1965895545_v2_u12.txt",
+      "unit_bytes": 5925,
+      "unit_id": "openalex_w1965895545_v2_u12",
+      "unit_sha256": "5fa128c8603826e9c810041dfb5649d9f1cbf2ea3b2ecf6ac46408a1ca735324",
+      "unit_type": "subordination-measure-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1965895545_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1552,
+          "line_end": 1559,
+          "text": "establishes (51) and therefore completes the proof of part (i) of Lemma 8.\n\nProof of parts (ii) and (iii) of Lemma 8. From (42) and (50), we see that\n                                                 \u0012       \u00132\n                              +                π sin π∆x\n                            m∆ (x) = J∆ (∆x) +\n                                               2   π∆x\n\n",
+          "sha256": "7f1362df8956cfabf7e07a0da4ad85af8deaa1919acb7927594a9752b3bc0f91"
+        },
+        "after": {
+          "line_start": 1674,
+          "line_end": 1681,
+          "text": "                                          \u001a                  Z a        \u001b\n                                                         −a2      w2\n                                                   2\n                                         = (1 + 2a ) 2a e        e dw − 2a2 .\n                                                                      0\nWe are left to prove that\n                                        Z a                  2\n                                              w2    a ea\n",
+          "sha256": "818cdc0d0430e91421ce794132c324f815ec17520797dd0197b9a072a7223e26"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8ece694e59b25b9f334b4b17494d5edb339d1c7df7951f646dbd2b04400184bc",
+        "dossier_sha256": "dd8668b339476f9f1a52d8eabe9355678409441f73b75fb1da44ae24b9a75ac1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A",
+            "line_end": 1673,
+            "line_start": 1560,
+            "mathematical_role": "Proves the odd subordinating measure is nonnegative and finite."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1673,
+          "line_start": 1560,
+          "title": "Integral transforms certify the odd subordinating measure",
+          "unit_id": "openalex_w1965895545_v2_u12",
+          "unit_type": "subordination-measure-certification",
+          "why_material": "The appendix derives the Gaussian representation, reduces positivity to a monotonicity calculation, and computes finite total mass by monotone convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Closes the deferred existence condition.",
+          "representation_dependency": "Transform normalizations need checking.",
+          "unit_id": "openalex_w1965895545_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1557,
+            "line_start": 1302,
+            "title": "An odd Gaussian mixture produces symmetric extremals for S",
+            "unit_id": "openalex_w1965895545_v2_u11",
+            "unit_type": "odd-gaussian-subordination-construction",
+            "why_material": "The target f is subordinated to odd Gaussians; scaled interpolation, parity, and a sinc-square correction yield the extremal pair with equal L1 error."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1965895545_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w1965895545_v2_u12",
+          "spontaneous_reading": "The deferred Gaussian representation is reduced to elementary integral transforms: Fubini and a reciprocal change of variables evaluate the inner Gaussian integral, while positivity of the measure density is reduced to a one-parameter monotonicity-style integral involving sin y-y cos y."
+        },
+        "directed": {
+          "unit_id": "openalex_w1965895545_v2_u12",
+          "source_grounded_mathematics": "The appendix writes H_Delta(x) as a double integral, changes variables, evaluates a bracketed lambda-integral as exp(-xy/Delta) using k to 1/k symmetry and a Gaussian change of variables, and thereby proves the representation. It then rescales the proposed density D(Delta,lambda) and reduces nonnegativity to showing an integral of exp(-y^2/(4a^2))(sin y-y cos y) is nonnegative; the artifact ends as integration by parts and an odd-Gaussian Fourier transform are applied.",
+          "conceptual_reading": "The certification separates identity from order: transform manipulations prove that the measure represents the target, while a distinct scalar inequality must prove the measure is nonnegative and hence that order survives subordination.",
+          "representation_or_bridge": "The double integral and evaluated kernel exp(-xy/Delta) bridge the odd target to Gaussian atoms; scaling reduces all positivity checks to a dimensionless parameter a.",
+          "boundary_or_failure": "The available span stops mid-positivity calculation and does not visibly complete nonnegativity or finite-total-mass verification, despite those being the appendix's announced purpose. Those conclusions should not be reconstructed here.",
+          "uncertainty": "Moderate: the representation proof is complete in the span, but the decisive positivity certification is truncated and transform normalizations are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1965895545_v2_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The opening lines compute the exact L1 error from oddness and the sinc-squared correction and obtain Fourier support via Paley-Wiener; Appendix A then proves the integral representation of H_Delta and reduces nonnegativity of the proposed measure to a one-parameter Gaussian-weighted sine inequality."
+        ],
+        "inference": [
+          "Separating representation identity from positivity/order certification is a strong and source-faithful conceptual reading of the appendix."
+        ],
+        "unsupported_or_imported": [
+          "The analysis does not falsely claim completion of the positivity or finite-mass proof, but it omits the fully supported L1-error and Fourier-support results actually contained at the top of this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The transform-bridge language is specific to the k-to-1/k symmetry, Gaussian change of variables and resulting exp(-xy/Delta) kernel."
+        ],
+        "context_or_ocr_risk": [
+          "The unit starts by completing Lemma 8 from the preceding span and ends mid-positivity calculation; transform normalizations are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "This span, not the preceding one, closes the exact-error and compact-support obligations for the odd extremals before beginning the deferred measure certification."
+        ],
+        "revision_instructions": [
+          "Add the exact L1 and Paley-Wiener support conclusions as source facts, then retain the representation proof and clearly mark positivity and finite mass as unfinished at the boundary."
+        ]
+      }
+    }
+  ]
+}

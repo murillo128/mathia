@@ -1,0 +1,745 @@
+{
+  "stage": "whole-source-depth",
+  "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
+  "context_policy": "one source deep-read once; no unrelated source batching",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_73.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "arxiv-preprint",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "Louis‐Pierre Arguin",
+        "Frédéric Ouimet",
+        "Maksym Radziwiłł"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 2763,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "MOMENTS OF THE RIEMANN ZETA FUNCTION ON SHORT"
+        },
+        {
+          "line": 4,
+          "text": "INTERVALS OF THE CRITICAL LINE"
+        },
+        {
+          "line": 8,
+          "text": "1 Baruch College and Graduate Center (CUNY), louis-pierre.arguin@baruch.cuny.edu"
+        },
+        {
+          "line": 9,
+          "text": "2 California Institute of Technology, * ouimetfr@caltech.edu; † maksym@caltech.edu"
+        },
+        {
+          "line": 42,
+          "text": "CONTENTS"
+        },
+        {
+          "line": 43,
+          "text": "1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2"
+        },
+        {
+          "line": 44,
+          "text": "1.1 Maxima and moments over large intervals . . . . . . . . . . . . . . . . 2"
+        },
+        {
+          "line": 45,
+          "text": "1.2 Maxima and moments over short intervals . . . . . . . . . . . . . . . . 3"
+        },
+        {
+          "line": 46,
+          "text": "1.3 Relations to other models . . . . . . . . . . . . . . . . . . . . . . . . . 5"
+        },
+        {
+          "line": 47,
+          "text": "1.4 Outline of the proof . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7"
+        },
+        {
+          "line": 48,
+          "text": "2 Upper bounds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 49,
+          "text": "2.1 Moment estimates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+        },
+        {
+          "line": 50,
+          "text": "2.2 Discretization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14"
+        },
+        {
+          "line": 51,
+          "text": "2.3 Proofs of the upper bounds . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 52,
+          "text": "2.3.1 The case θ ≥ 0 . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+        },
+        {
+          "line": 53,
+          "text": "2.3.2 The case θ < 0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+        },
+        {
+          "line": 54,
+          "text": "3 Lower bounds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 55,
+          "text": "3.1 Reduction off-axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+        },
+        {
+          "line": 69,
+          "text": "2 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 71,
+          "text": "3.2 Mollification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26"
+        },
+        {
+          "line": 72,
+          "text": "3.3 Approximation of the mollifier . . . . . . . . . . . . . . . . . . . . . . . 27"
+        },
+        {
+          "line": 73,
+          "text": "3.4 Proofs of the lower bounds . . . . . . . . . . . . . . . . . . . . . . . . . 28"
+        },
+        {
+          "line": 77,
+          "text": "1. Introduction."
+        },
+        {
+          "line": 79,
+          "text": "1.1. Maxima and moments over large intervals. Understanding the growth of the"
+        },
+        {
+          "line": 90,
+          "text": "2 log log t"
+        },
+        {
+          "line": 133,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 3"
+        },
+        {
+          "line": 144,
+          "text": "1.2. Maxima and moments over short intervals. Motivated by the problem of un-"
+        },
+        {
+          "line": 191,
+          "text": "(1.9) P"
+        },
+        {
+          "line": 196,
+          "text": "4 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 202,
+          "text": "(1.10) P"
+        },
+        {
+          "line": 242,
+          "text": "1 a 2π"
+        },
+        {
+          "line": 243,
+          "text": "2 log log T"
+        },
+        {
+          "line": 264,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 5"
+        },
+        {
+          "line": 302,
+          "text": "2 log log T · Z + OP (1),"
+        },
+        {
+          "line": 312,
+          "text": "1.3. Relations to other models. When −1 < θ ≤ 0, Conjecture 1.3 is based on mod-"
+        },
+        {
+          "line": 331,
+          "text": "6 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 379,
+          "text": "T T T"
+        },
+        {
+          "line": 395,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 7"
+        },
+        {
+          "line": 404,
+          "text": "1.4. Outline of the proof. For θ > 0, the upper bound part of Theorem 1.1 and"
+        },
+        {
+          "line": 419,
+          "text": "(1.19) T ."
+        },
+        {
+          "line": 427,
+          "text": "2 log log T . The limitation to θ ≤ 3 comes from the fact that the upper bounds (1.18)"
+        },
+        {
+          "line": 474,
+          "text": "8 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 520,
+          "text": "= + O(1)."
+        },
+        {
+          "line": 521,
+          "text": "2 log p≤(log T )1−δ p2σ0"
+        },
+        {
+          "line": 527,
+          "text": "2 log |h − h | + O(1). This shows that the process is approximatively a log-correlated"
+        },
+        {
+          "line": 544,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 9"
+        },
+        {
+          "line": 607,
+          "text": "10 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 618,
+          "text": "2. Upper bounds."
+        },
+        {
+          "line": 620,
+          "text": "2.1. Moment estimates. We will need a number of moment estimates which we state"
+        },
+        {
+          "line": 643,
+          "text": "1 log(x/p) log T"
+        },
+        {
+          "line": 685,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 11"
+        },
+        {
+          "line": 712,
+          "text": "\u0014 X X\u0015"
+        },
+        {
+          "line": 755,
+          "text": "1 F−1,β/2−1,θ (nm)g(n)g(m) \u0001 \u0010t\u0011"
+        },
+        {
+          "line": 771,
+          "text": "12 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 783,
+          "text": "X Y X X"
+        },
+        {
+          "line": 845,
+          "text": "1 F−1,β/2−1,θ (mn)g(m)g(n) \u0010 (m, n)2 \u0011z dz"
+        },
+        {
+          "line": 857,
+          "text": "(2.15) =  P"
+        },
+        {
+          "line": 868,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 13"
+        },
+        {
+          "line": 884,
+          "text": "X \u0012 X \u0013"
+        },
+        {
+          "line": 885,
+          "text": "= +O ."
+        },
+        {
+          "line": 918,
+          "text": "5 log log T"
+        },
+        {
+          "line": 922,
+          "text": "(2.20) E"
+        },
+        {
+          "line": 924,
+          "text": "5 log log T"
+        },
+        {
+          "line": 933,
+          "text": "(2.21) E"
+        },
+        {
+          "line": 938,
+          "text": "5 log log T 54` (log log T )4` 25e"
+        },
+        {
+          "line": 963,
+          "text": "14 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 987,
+          "text": "2 e ."
+        },
+        {
+          "line": 1019,
+          "text": "5 log log T"
+        },
+        {
+          "line": 1025,
+          "text": "2.2. Discretization. The analysis of the maximum of zeta on an interval can often"
+        },
+        {
+          "line": 1051,
+          "text": "2 log1+θ T <|k|≤T"
+        },
+        {
+          "line": 1055,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 15"
+        },
+        {
+          "line": 1059,
+          "text": "1 X 2πik k"
+        },
+        {
+          "line": 1065,
+          "text": "1 X \u0001 \u00111/β"
+        },
+        {
+          "line": 1073,
+          "text": "1 X b k"
+        },
+        {
+          "line": 1099,
+          "text": "1 X − (1+2ε)"
+        },
+        {
+          "line": 1111,
+          "text": "`∈Z R"
+        },
+        {
+          "line": 1121,
+          "text": "`∈Z R"
+        },
+        {
+          "line": 1150,
+          "text": "+ O(T −1 ),"
+        },
+        {
+          "line": 1156,
+          "text": "16 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 1212,
+          "text": "1 n \u0011 1"
+        },
+        {
+          "line": 1233,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 17"
+        },
+        {
+          "line": 1268,
+          "text": "+ T −A/2 ."
+        },
+        {
+          "line": 1271,
+          "text": "1 + |`|A"
+        },
+        {
+          "line": 1272,
+          "text": "2 log1+θ T <|`|≤T"
+        },
+        {
+          "line": 1283,
+          "text": "1 ek n \u0011 2−θ"
+        },
+        {
+          "line": 1293,
+          "text": "2 T log T"
+        },
+        {
+          "line": 1307,
+          "text": "(2.45) P ."
+        },
+        {
+          "line": 1331,
+          "text": "2 log1+θ T <|`|≤T"
+        },
+        {
+          "line": 1335,
+          "text": "18 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 1366,
+          "text": "2 log log T ."
+        },
+        {
+          "line": 1383,
+          "text": "+ P |S(0)| > V /2 ."
+        },
+        {
+          "line": 1388,
+          "text": "\u0002 \u0003 \u0012P"
+        },
+        {
+          "line": 1392,
+          "text": "(2.51) P |S(0)| > V /2 ≤"
+        },
+        {
+          "line": 1406,
+          "text": "(2.52) E"
+        },
+        {
+          "line": 1411,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 19"
+        },
+        {
+          "line": 1437,
+          "text": "(2.54) P"
+        },
+        {
+          "line": 1457,
+          "text": "+ T −50 ."
+        },
+        {
+          "line": 1461,
+          "text": "2 log1+θ T <|`|≤T"
+        },
+        {
+          "line": 1467,
+          "text": "(2.56) A(T"
+        },
+        {
+          "line": 1503,
+          "text": "+ T −50 ."
+        },
+        {
+          "line": 1507,
+          "text": "2 log1+θ T <|`|≤T"
+        },
+        {
+          "line": 1513,
+          "text": "20 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 1515,
+          "text": "2.3. Proofs of the upper bounds."
+        },
+        {
+          "line": 1517,
+          "text": "2.3.1. The case θ ≥ 0."
+        },
+        {
+          "line": 1587,
+          "text": "X 2 2"
+        },
+        {
+          "line": 1602,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 21"
+        },
+        {
+          "line": 1609,
+          "text": "2.3.2. The case θ < 0."
+        },
+        {
+          "line": 1626,
+          "text": "(2.67) A(T ) ="
+        },
+        {
+          "line": 1648,
+          "text": "A(T )"
+        },
+        {
+          "line": 1664,
+          "text": "(2.71) \u0010Z"
+        },
+        {
+          "line": 1684,
+          "text": "A(T )"
+        },
+        {
+          "line": 1689,
+          "text": "22 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 1706,
+          "text": "A(T )"
+        },
+        {
+          "line": 1712,
+          "text": "A(T )"
+        },
+        {
+          "line": 1718,
+          "text": "3. Lower bounds. In this section, we prove:"
+        },
+        {
+          "line": 1730,
+          "text": "(3.2) P"
+        },
+        {
+          "line": 1740,
+          "text": "3.1. Reduction off-axis. In Arguin et al. (2019), the maximum on a short interval of"
+        },
+        {
+          "line": 1761,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 23"
+        },
+        {
+          "line": 1828,
+          "text": "24 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 1836,
+          "text": "Z ∞ \u0010 \u0001\u0011"
+        },
+        {
+          "line": 1859,
+          "text": "∆ 1 1−A"
+        },
+        {
+          "line": 1880,
+          "text": "∆ L 2"
+        },
+        {
+          "line": 1894,
+          "text": "1 and |v| ≤ (1 + b2 )L, then we have the bound"
+        },
+        {
+          "line": 1922,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 25"
+        },
+        {
+          "line": 1954,
+          "text": "(3.24) Z"
+        },
+        {
+          "line": 1961,
+          "text": "1 for |u| ≤ logθ T . We thus have"
+        },
+        {
+          "line": 1990,
+          "text": "(3.27) S(T ) ="
+        },
+        {
+          "line": 2002,
+          "text": "26 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 2016,
+          "text": "3.2. Mollification. This step is an adaptation of Section 4.2 of Arguin et al. (2019),"
+        },
+        {
+          "line": 2038,
+          "text": "2 log T"
+        },
+        {
+          "line": 2070,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 27"
+        },
+        {
+          "line": 2109,
+          "text": "3.3. Approximation of the mollifier. We now approximate the mollifier M by the"
+        },
+        {
+          "line": 2168,
+          "text": "28 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 2170,
+          "text": "3.4. Proofs of the lower bounds. Consider, for 0 ≤ j ≤ K − 2, the Dirichlet polyno-"
+        },
+        {
+          "line": 2187,
+          "text": "X \u0001 \u0011"
+        },
+        {
+          "line": 2218,
+          "text": "M \u001a K−3 \u001b"
+        },
+        {
+          "line": 2225,
+          "text": "\\\u001a K−3"
+        },
+        {
+          "line": 2250,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 29"
+        },
+        {
+          "line": 2262,
+          "text": "\u001a K−3 \u001b"
+        },
+        {
+          "line": 2279,
+          "text": "\u001a X \u001b"
+        },
+        {
+          "line": 2309,
+          "text": "K−3 K−32"
+        },
+        {
+          "line": 2318,
+          "text": "30 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 2367,
+          "text": "(3.62) \u0001 (E[N ])2"
+        },
+        {
+          "line": 2369,
+          "text": "E[N 2 ]"
+        },
+        {
+          "line": 2400,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 31"
+        },
+        {
+          "line": 2404,
+          "text": "\u0012 K−3 \u0013"
+        },
+        {
+          "line": 2409,
+          "text": "1 X 1"
+        },
+        {
+          "line": 2421,
+          "text": "\u0012 X \u0013"
+        },
+        {
+          "line": 2432,
+          "text": "\u0012 X \u0013 \u0012 \u0013"
+        },
+        {
+          "line": 2465,
+          "text": "(3.69) ≥P"
+        },
+        {
+          "line": 2472,
+          "text": "(3.70) ≥P"
+        },
+        {
+          "line": 2493,
+          "text": "(3.72) ≥P"
+        },
+        {
+          "line": 2498,
+          "text": "32 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 2504,
+          "text": "X \u0001 \u0011"
+        },
+        {
+          "line": 2527,
+          "text": "APPENDIX A: USEFUL ESTIMATES"
+        },
+        {
+          "line": 2535,
+          "text": "(A.1) = √"
+        },
+        {
+          "line": 2554,
+          "text": "\u0014\u0010 X \u0011\u0015"
+        },
+        {
+          "line": 2560,
+          "text": "(A.3)"
+        },
+        {
+          "line": 2571,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 33"
+        },
+        {
+          "line": 2582,
+          "text": "2 p≤x ∂z k p≤x z=0 T"
+        },
+        {
+          "line": 2605,
+          "text": "\u0014\u0010 X \u0012 X"
+        },
+        {
+          "line": 2619,
+          "text": "(A.7) P"
+        },
+        {
+          "line": 2633,
+          "text": "\u0014 X \u0015 \u0012X \u0013"
+        },
+        {
+          "line": 2634,
+          "text": "(A.8) E"
+        },
+        {
+          "line": 2640,
+          "text": "REFERENCES"
+        },
+        {
+          "line": 2654,
+          "text": "34 L.-P. ARGUIN, F. OUIMET AND M. RADZIWILL"
+        },
+        {
+          "line": 2661,
+          "text": "72 500–535. MR3911893"
+        },
+        {
+          "line": 2669,
+          "text": "479–500. MR2678896"
+        },
+        {
+          "line": 2719,
+          "text": "MOMENTS OF THE ZETA FUNCTION ON SHORT INTERVALS 35"
+        },
+        {
+          "line": 2737,
+          "text": "2018 5028–5119. MR3848227"
+        },
+        {
+          "line": 2743,
+          "text": "J. 169 177–211. MR4047550"
+        },
+        {
+          "line": 2751,
+          "text": "48 89–155. MR20594"
+        },
+        {
+          "line": 2756,
+          "text": "MR2552116"
+        },
+        {
+          "line": 2759,
+          "text": "MR882550"
+        }
+      ],
+      "normalized_bytes": 160058,
+      "normalized_page_count": 35,
+      "normalized_relpath": "normalized/openalex_w2908969280_407d71ea2194.txt",
+      "normalized_sha256": "e11348f504daa63a78d31543e3eeea85fdc9b03c4b1c25ed7e542fea4cfe3f8c",
+      "prior_v1_units": [],
+      "source_id": "openalex_w2908969280",
+      "source_type": "article",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Moments of the Riemann zeta function on short intervals of the critical line",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "critical-line",
+        "mean-values",
+        "mollifier",
+        "moments",
+        "partial-results"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2021,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/openalex_w2908969280_407d71ea2194.txt"
+    }
+  ],
+  "model_visible_packet_sha256": "580c833bea378b5431293e5e6dafad453e24e77a58c3d0c035a2481769d714af"
+}

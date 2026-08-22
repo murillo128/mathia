@@ -1,0 +1,152 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2949840527_b44b53c5_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2949840527",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the final technical closure of Theorem 2; it is rigorous conditional only on the explicitly cited earlier random-model comparison used inside Lemma 7.",
+      "line_end": 2708,
+      "line_start": 2547,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely dense formula extraction: exponential remainder, product lower bound, shifted majorant, k/δ choices, and error terms are unsafe without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "On G̃_t, the truncated exponential from Lemma 6 is comparable to the Euler-product block product, so a large smooth sum implies a terminal lower product barrier except for a controlled approximation error. The proof then repeats smooth-majorant Taylor derandomization with a shifted j=0 constraint, invokes Lemma 7, and checks degree, leakage, length, and truncation errors.",
+      "source_id": "openalex_w2949840527",
+      "source_normalized_sha256": "716e8bb789a1055468d74aa5f33148714e7f2ca25d9bd41ad837c6646ed18d49",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The lower smooth threshold is transferred to a random terminal barrier and closes Key Proposition 4",
+      "unit_artifact_relpath": "depth/units/openalex_w2949840527_v2_u25.txt",
+      "unit_bytes": 12398,
+      "unit_id": "openalex_w2949840527_v2_u25",
+      "unit_sha256": "b8405b7d9ea489a86f496fee1eaf3f60eb2a89745b32ea40c712043e489fd116",
+      "unit_type": "restricted-derandomization-closure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2949840527_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w2949840527",
+        "title": "On the partition function of the Riemann zeta function, and the Fyodorov--Hiary--Keating conjecture",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2019,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2539,
+          "line_end": 2546,
+          "text": "            log log log P + U            log log log P + U + log V 2\n   ≪ min{1,    √                } min{1,          √                  },\n                  log log P                         log log P\nas required.                                                                                                           \u0003\n\n\n\n\n",
+          "sha256": "5da3fe13a064c5ba96f29de5d8a94144727b8ac25bfdf8e1362475193d7a05b6"
+        },
+        "after": {
+          "line_start": 2709,
+          "line_end": 2716,
+          "text": "\n\nAcknowledgements. The author would like to thank Louis-Pierre Arguin, for informing\nhim of his forthcoming joint work on the Fyodorov–Hiary–Keating conjecture. He\nwould also like to thank Jon Keating, Joseph Najnudel and K. Soundararajan for their\ncomments and encouragement.\n\n\n",
+          "sha256": "f928fb3a4820b190ad75e8d10848eff88222763595498c8da81d9ee0174691f8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b1bc3723328d7f362977459bec615caa2def5f65a8070ea90f2f96d081d32429",
+        "dossier_sha256": "4f3bacc8c425d9d520b6b53ddb666d1cf9834fa0c573a9d62a5921fdc5ee28a3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2",
+            "line_end": 2710,
+            "line_start": 1898,
+            "mathematical_role": "Adapts the barriers to a lower endpoint constraint, converts maxima to contour integrals, proves new derandomization lemmas, and combines them to obtain the FHK-scale upper tail."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2708,
+          "line_start": 2547,
+          "title": "The lower smooth threshold is transferred to a random terminal barrier and closes Key Proposition 4",
+          "unit_id": "openalex_w2949840527_v2_u25",
+          "unit_type": "restricted-derandomization-closure",
+          "why_material": "On G̃_t, the truncated exponential from Lemma 6 is comparable to the Euler-product block product, so a large smooth sum implies a terminal lower product barrier except for a controlled approximation error. The proof then repeats smooth-majorant Taylor derandomization with a shifted j=0 constraint, invokes Lemma 7, and checks degree, leakage, length, and truncation errors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the final technical closure of Theorem 2; it is rigorous conditional only on the explicitly cited earlier random-model comparison used inside Lemma 7.",
+          "representation_dependency": "Extremely dense formula extraction: exponential remainder, product lower bound, shifted majorant, k/δ choices, and error terms are unsafe without the PDF.",
+          "unit_id": "openalex_w2949840527_v2_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2542,
+            "line_start": 2401,
+            "title": "Conditioning away tiny primes lets the Gaussian ballot theorem control the lower endpoint",
+            "unit_id": "openalex_w2949840527_v2_u24",
+            "unit_type": "terminal-barrier-random-estimate",
+            "why_material": "Lemma 7 augments the random good event with a strong lower bound on the full product. It conditions on the contribution of the smallest-prime blocks to restore the hypotheses of an imported Euler-product-to-Gaussian comparison, then applies Probability Result 1 to obtain separate upper-barrier and terminal-window factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Cauchy localization turns a point maximum into averaged contour mass; the fourth-moment lemma forces that mass through a large smooth factor, so after derandomization the problem is a Gaussian path staying below an upper barrier and ending in a narrow high window, yielding the 3/4 correction.",
+            "limit": "This proves only an upper tail with iterated-log losses; the full FHK distribution and matching lower tail remain conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u06",
+              "openalex_w2949840527_v2_u18",
+              "openalex_w2949840527_v2_u19",
+              "openalex_w2949840527_v2_u20",
+              "openalex_w2949840527_v2_u21",
+              "openalex_w2949840527_v2_u24",
+              "openalex_w2949840527_v2_u25"
+            ],
+            "title": "A local maximum becomes a two-barrier path event"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2710,
+              "line_start": 2709,
+              "reason": "Whitespace before acknowledgements."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2949840527_v2_u25",
+        "spontaneous": {
+          "unit_id": "openalex_w2949840527_v2_u25",
+          "spontaneous_reading": "The decisive intermediate object is the truncated exponential of the prime-power logarithmic sum. On the good event it is comparable to the product of Euler blocks, so a large smooth Dirichlet polynomial forces a terminal product barrier unless the truncation remainder is large; the two alternatives can then be controlled by different earlier lemmas."
+        },
+        "directed": {
+          "unit_id": "openalex_w2949840527_v2_u25",
+          "source_grounded_mathematics": "The proof first restricts to the stated range e^{-U} <= V <= sqrt(e log log P). On the good event, the prime-power logarithmic sum is at most 4 log log P, and truncating its exponential at the available degree approximates an exponential that is e^{O(1)} times the Euler-block product. Hence the original integrand is bounded by a term with product |I_{l,t}| exceeding log P/(B_0 V), plus a smooth-sum/truncated-exponential error term. Lemma 6 controls the error. Smooth majorants, with the j=0 argument and R_0 shifted for the stronger lower bound, transfer the first term to a random-multiplicative expectation involving the modified good event, plus delta leakage. Taking delta=1/(log log P)^2 gives the stated k asymptotic, satisfies the polynomial-length constraint under P <= T^{1/(log log T)^8}, makes the inherited errors and leakage acceptable, and leaves the good-event contribution to Lemma 7 under the stated epsilon condition.",
+          "conceptual_reading": "This is a closure by decomposition rather than a new probability estimate. A hard largeness condition on the smooth Dirichlet polynomial is converted into either a structured terminal barrier for Euler blocks or an approximation failure. The approximation failure is discarded analytically, while the structured event is expressed by smooth observables that can be derandomized and estimated in the random model. The parameter check certifies that the smoothing complexity remains within the Dirichlet-polynomial length budget.",
+          "representation_or_bridge": "The bridge is prime-power logarithmic sum -> truncated exponential -> Euler-block product -> shifted smooth barrier majorant -> random multiplicative expectation. The use of log I_{l,t}, not merely log |I_{l,t}|, retains enough complex information for exponentiation to recover the product up to a bounded factor; after the lower product barrier is obtained, absolute values and smooth majorants deliberately forget phase while preserving the event needed by Lemma 7.",
+          "boundary_or_failure": "The reduction is only an upper bound and depends on the cited Lemmas 6 and 7 and on the reused Key Proposition 1 smoothing/derandomization machinery. The displayed argument treats the bounded V range; larger V is sent to the earlier proof after dropping the extra indicator. It also requires the explicit restrictions on epsilon and P so that truncation, leakage, inherited errors, and polynomial length are controlled. It neither supplies an independent random-model estimate nor proves a converse from the terminal barrier to the original large smooth sum.",
+          "uncertainty": "The extracted formulas are densely damaged in layout, so exact floor placements, indices, and the printed definition of k should be checked against the PDF before symbolic reuse. The qualitative reduction, the choices delta=1/(log log P)^2 and k asymptotic to (log log P)^6, and the stated parameter/error conclusions are explicit in the span; no missing formula has been reconstructed."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bc5cf69a532629160462738507ff2b84ad4af35713424ecf4c9cb26e3b4ec9b1"
+}

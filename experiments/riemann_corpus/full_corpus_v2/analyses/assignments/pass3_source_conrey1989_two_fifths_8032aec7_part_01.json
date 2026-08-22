@@ -1,0 +1,2715 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_conrey1989_two_fifths_8032aec7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "conrey1989_two_fifths",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Standard zeta continuation and functional-equation material before line 139 is not needed to understand the result labels used here.",
+      "line_end": 186,
+      "line_start": 139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-to-moderate: definitions and decimal bounds are legible in prose, though some displayed ratios are extraction-damaged.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span defines the proportions being bounded, distinguishes simple critical-line zeros from all critical-line zeros, situates prior bounds, and states the quantitative 0.4077 and 0.401 conclusions.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line and simple-zero proportion theorem",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u03_proportion_theorem.txt",
+      "unit_bytes": 1598,
+      "unit_id": "conrey1989_v2_u03_proportion_theorem",
+      "unit_sha256": "ef44e47681e8056ccb26d67e13ecdb4d5c7e5bd4729dd0e02fdf45006309c822",
+      "unit_type": "theorem-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u03_proportion_theorem.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 131,
+          "line_end": 138,
+          "text": "critical strip 0«τ<1. The zeros of ζ (s) in the critical strip are denoted by ρ =\nVon Mangoldt proved that\n\n      (8)\n\n                                          = — log—- + 0(logT).\n                                            2n   2ne\n\n",
+          "sha256": "e803506e2519d1a235c621b8b01a0a75033f40f64312ec9cd4f138416d80d5e5"
+        },
+        "after": {
+          "line_start": 187,
+          "line_end": 194,
+          "text": "\n\n                                     3. Beginning of the proof\n\n      It follows from (2) that £(n)(s) is real for s = l/2 + ii when n is even and is purely\nimaginary when n is odd. Let gn, n^O, be complex numbers with gn real if n is odd and\ngn purely imaginary if n is even. Let g Φ 0 be real. Let T be a large parameter (we will\nbe working with the strip 0< t ^ T) and let\n",
+          "sha256": "80eee41707980294babcb4613ac3dbc7cb4dbf59bfcfec82cf40d5965caf7f41"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Background material and Statement of theorem",
+            "line_end": 188,
+            "line_start": 82,
+            "mathematical_role": "Recalls standard zeta background, defines the critical-line proportions, records earlier bounds, and states the paper's quantitative theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 186,
+          "line_start": 139,
+          "title": "Critical-line and simple-zero proportion theorem",
+          "unit_id": "conrey1989_v2_u03_proportion_theorem",
+          "unit_type": "theorem-result",
+          "why_material": "The span defines the proportions being bounded, distinguishes simple critical-line zeros from all critical-line zeros, situates prior bounds, and states the quantitative 0.4077 and 0.401 conclusions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Standard zeta continuation and functional-equation material before line 139 is not needed to understand the result labels used here.",
+          "representation_dependency": "Low-to-moderate: definitions and decimal bounds are legible in prose, though some displayed ratios are extraction-damaged.",
+          "unit_id": "conrey1989_v2_u03_proportion_theorem"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 78,
+            "line_start": 39,
+            "title": "Coefficient and derivative-combination freedom deferred to optimization",
+            "unit_id": "conrey1989_u02_variational_freedom_v1",
+            "unit_type": "representation-optimization",
+            "why_material": "The source contrasts a fixed Levinson mollifier with polynomially weighted coefficients chosen by calculus of variations and simultaneously enlarges the initial derivative combination, exposing two independent design freedoms."
+          },
+          {
+            "line_end": 225,
+            "line_start": 189,
+            "title": "From derivative symmetry to zeros through change of argument",
+            "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+            "unit_type": "representation-change",
+            "why_material": "Parity on the critical line is used to construct a derivative combination whose real-part zeros detect xi zeros, after which rotations of its argument supply a lower bound for those real-part zeros."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 188,
+              "line_start": 187,
+              "reason": "Whitespace before the proof section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u03_proportion_theorem",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u03_proportion_theorem",
+          "spontaneous_reading": "The span separates two density questions that can otherwise be conflated: how many zeta zeros lie on the critical line, and how many of those are simple. Its mathematical work is to turn these into normalized proportions and give distinct quantitative certificates for them."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u03_proportion_theorem",
+          "source_grounded_mathematics": "The source defines counting functions for critical-line zeros and for critical-line zeros with nonzero derivative, recalls earlier lower bounds, and states κ ≥ 0.4077 and κ* ≥ 0.401. It therefore concludes that at least two fifths of all zeta zeros are simple and on the critical line.",
+          "conceptual_reading": "The theorem refines a location statistic by a multiplicity-sensitive statistic. This keeps evidence for many line zeros distinct from evidence that those zeros are nondegenerate.",
+          "representation_or_bridge": "Counting functions are normalized against the total zero count to produce asymptotic proportions; decimal lower bounds then become a concise partial substitute for the full critical-line conjecture.",
+          "boundary_or_failure": "This does not show that all zeros lie on the line, nor that all line zeros are simple. Several displayed ratio definitions are lost in extraction, so only the prose definitions and stated numerical conclusions are safe here.",
+          "uncertainty": "Low for the stated 0.4077, 0.401, and two-fifths conclusions; moderate for the exact displayed normalization and limiting notation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the symmetry conditions, construction intent, target count, and the elementary argument-change bridge.",
+      "line_end": 225,
+      "line_start": 189,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate-to-high: the exact displayed definition of eta is missing, but the parity constraints and logical bridge are explicit in prose; scan verification is needed for coefficients.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Parity on the critical line is used to construct a derivative combination whose real-part zeros detect xi zeros, after which rotations of its argument supply a lower bound for those real-part zeros.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From derivative symmetry to zeros through change of argument",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u04_argument_change_bridge.txt",
+      "unit_bytes": 1378,
+      "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+      "unit_sha256": "fd51de12ef1087cc2af2b6b7f5a15c3c1744f0b40ef605ae9838d360fe153bf7",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u04_argument_change_bridge.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "\n      (16)                                  κ* ^0.3532.\n\nHere we prove\n      Theorem 1. With the above notation, κ^ 0.4077 and κ*^ 0.401. In particular, at\nleast 2/5 of the zeros of ζ (s) are simple and on the critical line.\n\n\n",
+          "sha256": "01f9d1ea6a2fbab5b05440cd05beb5f7b987459be5b6309ee71993bcf0f18418"
+        },
+        "after": {
+          "line_start": 226,
+          "line_end": 233,
+          "text": "     To estimate the change in argument of ?/(s) on the 1/2-line, we let 77(5) = H(s) Vi(S)\nwhere H is defined in (4) and\n\n                                              N         n /n\\ H(n~k}(s)\n        (22)              Fl(S)=gC(s)+ Σ | Σ      g\n\n                                             „ = 0 ^ fc =\n\n",
+          "sha256": "8c73f7610e237be32bb1a7a3a603173368071a490cab5193b4d6275dad3fdf99"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Beginning of the proof",
+            "line_end": 397,
+            "line_start": 189,
+            "mathematical_role": "Turns critical-line zeros into changes of argument of a symmetry-compatible derivative combination, introduces its polynomial differential-operator approximation and mollifier, and reduces both total and simple-zero bounds to a mollified mean square."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 225,
+          "line_start": 189,
+          "title": "From derivative symmetry to zeros through change of argument",
+          "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+          "unit_type": "representation-change",
+          "why_material": "Parity on the critical line is used to construct a derivative combination whose real-part zeros detect xi zeros, after which rotations of its argument supply a lower bound for those real-part zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the symmetry conditions, construction intent, target count, and the elementary argument-change bridge.",
+          "representation_dependency": "Moderate-to-high: the exact displayed definition of eta is missing, but the parity constraints and logical bridge are explicit in prose; scan verification is needed for coefficients.",
+          "unit_id": "conrey1989_v2_u04_argument_change_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 186,
+            "line_start": 139,
+            "title": "Critical-line and simple-zero proportion theorem",
+            "unit_id": "conrey1989_v2_u03_proportion_theorem",
+            "unit_type": "theorem-result",
+            "why_material": "The span defines the proportions being bounded, distinguishes simple critical-line zeros from all critical-line zeros, situates prior bounds, and states the quantitative 0.4077 and 0.401 conclusions."
+          },
+          {
+            "line_end": 285,
+            "line_start": 226,
+            "title": "Compressing the derivative combination into a polynomial differential operator",
+            "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+            "unit_type": "representation-change",
+            "why_material": "Factoring off the functional-equation factor and using derivative asymptotics turns a finite derivative combination into V(s)=Q((1/L)d/ds)zeta(s), with a symmetry constraint on Q that preserves the critical-line real-part condition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central representation chain turns functional-equation symmetry into a polynomial differential transform, then into a mollified zero count, and finally into a mean-square evaluation.",
+            "limit": "This is a within-source architectural relation, not a verified reconstruction of the damaged displayed identities.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u04_argument_change_bridge",
+              "conrey1989_v2_u05_polynomial_differential_operator",
+              "conrey1989_v2_u06_mollified_littlewood_reduction",
+              "conrey1989_v2_u08_mean_value_bottleneck"
+            ],
+            "title": "Symmetry-to-mean-square proof spine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 188,
+              "line_start": 187,
+              "reason": "Whitespace before the proof section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+          "spontaneous_reading": "Functional-equation parity is used to engineer an auxiliary derivative combination whose real part on the critical line detects xi zeros. The proof then replaces direct zero detection by the winding of that auxiliary function."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+          "source_grounded_mathematics": "Even derivatives of xi are real and odd derivatives are purely imaginary on the critical line. Coefficients with matching reality conditions define an auxiliary η so that, on the line, xi vanishes exactly when Re η vanishes. A change of π in arg η forces at least one zero of Re η, giving the proposed lower-count route.",
+          "conceptual_reading": "Symmetry is not merely descriptive: it selects a representation in which a hard zero condition becomes a one-dimensional phase-crossing condition.",
+          "representation_or_bridge": "The bridge object is η, a symmetry-compatible derivative combination. It connects xi zeros to real-part zeros and then connects those zeros to argument variation along the critical line.",
+          "boundary_or_failure": "Argument change supplies a lower bound, not a bijective count, and the usual endpoint and zero behavior still must be controlled. The displayed definition of η and the exact count formulas are missing from the extraction.",
+          "uncertainty": "Moderate for the prose-level mechanism; high for the precise coefficients, normalization, and damaged displayed identities."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span retains the transition from eta to V1 and then to the usable approximation V, including normalization and symmetry prose.",
+      "line_end": 285,
+      "line_start": 226,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several equations defining V1, Q, and its constraint are only partly extracted; the operator viewpoint is recoverable, while exact identities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring off the functional-equation factor and using derivative asymptotics turns a finite derivative combination into V(s)=Q((1/L)d/ds)zeta(s), with a symmetry constraint on Q that preserves the critical-line real-part condition.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compressing the derivative combination into a polynomial differential operator",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u05_polynomial_differential_operator.txt",
+      "unit_bytes": 1702,
+      "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+      "unit_sha256": "222856127754cb52da6c80cb1fd3e02073509fff2e28f8e82a3b428f3274eeb4",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u05_polynomial_differential_operator.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 218,
+          "line_end": 225,
+          "text": "\nConrey, Zeros of the Riemann zeta function                                   5\n\n\n        (21)                                 (κ + o(l)) | log T\n\nsince for every change of π in the argument of some function /(z) it must be the case\nthat Re/(z) has at least one zero.\n",
+          "sha256": "c1e4301dd2a3c9c8141ff461b1d0641dbd74658f869875a9654027a1ebabbaab"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "using the argument principle and Standard estimates that\n      (32)              zlaΓgF 1 (l/2 + ίί)|ϊ=-2π^ 1 (Γ) + 0(Γ)\n\nwhere N^(T) is the number of zeros of V1(s) with σ ^1/2 and 0 < i < T counted with\nmultiplicity, except that zeros on σ = 1/2 only count with weight 1/2 (times their multi-\nplicity). We need an upper bound for\n      We introduce the mollifier\n\n",
+          "sha256": "5d791a335326263c58b940991ed35986998ff1b7f71b0b5a21f356b834a0658b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Beginning of the proof",
+            "line_end": 397,
+            "line_start": 189,
+            "mathematical_role": "Turns critical-line zeros into changes of argument of a symmetry-compatible derivative combination, introduces its polynomial differential-operator approximation and mollifier, and reduces both total and simple-zero bounds to a mollified mean square."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 226,
+          "title": "Compressing the derivative combination into a polynomial differential operator",
+          "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+          "unit_type": "representation-change",
+          "why_material": "Factoring off the functional-equation factor and using derivative asymptotics turns a finite derivative combination into V(s)=Q((1/L)d/ds)zeta(s), with a symmetry constraint on Q that preserves the critical-line real-part condition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span retains the transition from eta to V1 and then to the usable approximation V, including normalization and symmetry prose.",
+          "representation_dependency": "High: several equations defining V1, Q, and its constraint are only partly extracted; the operator viewpoint is recoverable, while exact identities require scan verification.",
+          "unit_id": "conrey1989_v2_u05_polynomial_differential_operator"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 225,
+            "line_start": 189,
+            "title": "From derivative symmetry to zeros through change of argument",
+            "unit_id": "conrey1989_v2_u04_argument_change_bridge",
+            "unit_type": "representation-change",
+            "why_material": "Parity on the critical line is used to construct a derivative combination whose real-part zeros detect xi zeros, after which rotations of its argument supply a lower bound for those real-part zeros."
+          },
+          {
+            "line_end": 350,
+            "line_start": 285,
+            "title": "Reducing zero density to a mollified second moment",
+            "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+            "unit_type": "method-reduction",
+            "why_material": "The argument principle counts zeros of the auxiliary function, a polynomial mollifier shifts the counting line, and Littlewood's lemma plus arithmetic-geometric mean bounds the zero count by the logarithm of a mollified mean square."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central representation chain turns functional-equation symmetry into a polynomial differential transform, then into a mollified zero count, and finally into a mean-square evaluation.",
+            "limit": "This is a within-source architectural relation, not a verified reconstruction of the damaged displayed identities.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u04_argument_change_bridge",
+              "conrey1989_v2_u05_polynomial_differential_operator",
+              "conrey1989_v2_u06_mollified_littlewood_reduction",
+              "conrey1989_v2_u08_mean_value_bottleneck"
+            ],
+            "title": "Symmetry-to-mean-square proof spine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+          "spontaneous_reading": "A finite combination of xi derivatives is compressed into a polynomial differential operator acting on zeta after the functional-equation factor is removed. The polynomial Q records the derivative design freedom while a reflection constraint retains the critical-line symmetry."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+          "source_grounded_mathematics": "The source factors η as H times an auxiliary V1, uses asymptotics for derivatives of H, and introduces the approximation V(s)=Q((1/L)d/ds)ζ(s). For σ>1 this has a Dirichlet-series representation. The parity conditions on the original coefficients are recast as a reflection/reality condition on Q.",
+          "conceptual_reading": "Polynomial functional calculus packages many derivative choices into one optimizable object. The representation exposes coefficient freedom while preserving the symmetry needed by the zero detector.",
+          "representation_or_bridge": "The chain is xi-derivative combination to H·V1 to the zeta differential transform V, with Q translating coefficient parity into a functional constraint.",
+          "boundary_or_failure": "V is presented as a useful approximation to V1 in a specified region, not as an unrestricted identity. Several equations defining V1, Q, and the reflection condition are extraction-damaged and cannot be reconstructed safely.",
+          "uncertainty": "Moderate for the operator viewpoint and symmetry role; high for exact formulas and error terms."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Q normalization, zero-count convention, mollifier length and boundary behavior, shifted line, and resulting lower-bound template.",
+      "line_end": 350,
+      "line_start": 285,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula risk: the displayed inequalities are damaged, but the sequence of reductions and parameter roles is clear in prose; exact constants require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The argument principle counts zeros of the auxiliary function, a polynomial mollifier shifts the counting line, and Littlewood's lemma plus arithmetic-geometric mean bounds the zero count by the logarithm of a mollified mean square.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reducing zero density to a mollified second moment",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u06_mollified_littlewood_reduction.txt",
+      "unit_bytes": 2713,
+      "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+      "unit_sha256": "00b4d19a802b51e86a0870db95ef2b66e4824f0f323678bda52f8f4fbf6362a2",
+      "unit_type": "method-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u06_mollified_littlewood_reduction.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "\n\n      (30)\n\nso that\n\n      (31)\n\n",
+          "sha256": "56f326a697570bf46e97cd334cd3c5298f0ba7600cba1b17eaa573c1feb72d7f"
+        },
+        "after": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "\n\n        Regarding simple zeros, we note that our argument thus far has shown that\n\n\n        (40)        ^ατ8ι,(1/2 + ίΟΙΪ = ^\n\n                                           TL\n",
+          "sha256": "a06dc0d9e8e43bcd4257b3da8fb506ae48ee3891a9c77664814ae1c4a4b5634f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Beginning of the proof",
+            "line_end": 397,
+            "line_start": 189,
+            "mathematical_role": "Turns critical-line zeros into changes of argument of a symmetry-compatible derivative combination, introduces its polynomial differential-operator approximation and mollifier, and reduces both total and simple-zero bounds to a mollified mean square."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 350,
+          "line_start": 285,
+          "title": "Reducing zero density to a mollified second moment",
+          "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+          "unit_type": "method-reduction",
+          "why_material": "The argument principle counts zeros of the auxiliary function, a polynomial mollifier shifts the counting line, and Littlewood's lemma plus arithmetic-geometric mean bounds the zero count by the logarithm of a mollified mean square."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Q normalization, zero-count convention, mollifier length and boundary behavior, shifted line, and resulting lower-bound template.",
+          "representation_dependency": "High formula risk: the displayed inequalities are damaged, but the sequence of reductions and parameter roles is clear in prose; exact constants require the scan.",
+          "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 226,
+            "title": "Compressing the derivative combination into a polynomial differential operator",
+            "unit_id": "conrey1989_v2_u05_polynomial_differential_operator",
+            "unit_type": "representation-change",
+            "why_material": "Factoring off the functional-equation factor and using derivative asymptotics turns a finite derivative combination into V(s)=Q((1/L)d/ds)zeta(s), with a symmetry constraint on Q that preserves the critical-line real-part condition."
+          },
+          {
+            "line_end": 394,
+            "line_start": 353,
+            "title": "Specializing the auxiliary function to certify simple zeros",
+            "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+            "unit_type": "criterion-specialization",
+            "why_material": "The source isolates auxiliary-function zeros on the half-line that are not eta zeros and shows that an additional identity forces them to correspond to simple xi zeros, yielding a parallel lower bound with Q restricted to degree one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central representation chain turns functional-equation symmetry into a polynomial differential transform, then into a mollified zero count, and finally into a mean-square evaluation.",
+            "limit": "This is a within-source architectural relation, not a verified reconstruction of the damaged displayed identities.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u04_argument_change_bridge",
+              "conrey1989_v2_u05_polynomial_differential_operator",
+              "conrey1989_v2_u06_mollified_littlewood_reduction",
+              "conrey1989_v2_u08_mean_value_bottleneck"
+            ],
+            "title": "Symmetry-to-mean-square proof spine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+          "spontaneous_reading": "The zero-density problem is converted into an average-size problem: multiply the auxiliary function by a mollifier, shift to σ0=1/2−R/L, and use Littlewood's lemma plus arithmetic-geometric mean to bound zeros by a logarithm of a second moment."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+          "source_grounded_mathematics": "The argument principle relates argument variation to zeros of V1. A polynomial Möbius mollifier B(s,P) of length y=T^θ is introduced, zeros of V1 are compared with zeros of BV1, and Littlewood's lemma bounds the latter through an integral of |BV1|. Arithmetic-geometric mean yields a lower-bound template involving the mollified mean square, with V replacing V1 in the asymptotic calculation.",
+          "conceptual_reading": "Mollification makes the auxiliary function statistically controllable, while Littlewood's lemma turns geometric zero information into an energy-like quantity that can be evaluated analytically.",
+          "representation_or_bridge": "The bridge is N(V1) to N(BV1) to the logarithm of an averaged |BV|². Parameters R, θ, P, and Q become explicit control knobs for the eventual proportion bound.",
+          "boundary_or_failure": "The reduction is only as strong as the later mean-square asymptotic and its admissible parameter range. Damaged displays obscure exact constants, weighting conventions, and some normalizations.",
+          "uncertainty": "Low-to-moderate for the sequence of reductions and parameter roles; high for the exact inequalities as extracted."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the counted set, the simple-zero implication, and the extra restriction on Q.",
+      "line_end": 394,
+      "line_start": 353,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the decisive identity and final displayed bound are extraction-damaged; only the implication stated in prose is safely recoverable without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates auxiliary-function zeros on the half-line that are not eta zeros and shows that an additional identity forces them to correspond to simple xi zeros, yielding a parallel lower bound with Q restricted to degree one.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Specializing the auxiliary function to certify simple zeros",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u07_simple_zero_specialization.txt",
+      "unit_bytes": 1502,
+      "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+      "unit_sha256": "3005d98ac80fccc1668853d579817f5d98bb0566f4c24110b55f3b5927a663c8",
+      "unit_type": "criterion-specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u07_simple_zero_specialization.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 345,
+          "line_end": 352,
+          "text": "                                    / l d\\\nwhere 1?>0, σ0 = 1/2 — /L, V(s) = Q\\ -— — K (-s) where β is a polynomial satisfying\n                                    \\ L s/\n (0) = l and Q(z) + (l-z) = g for some real number g; and B(s)= £ fc(n, P)n~ s+<T °~ 1/2\n                      /loevM\nwith b(n, P) = μ(η) Ρ \\ tloor i> / where P is a polynomial with P(0) = 0 and P(l) = 1.\n\n\n",
+          "sha256": "8d032f2794b1f80f45ca4f482334fa01ae38e5220ae1f820fee2d109a8e2e33e"
+        },
+        "after": {
+          "line_start": 395,
+          "line_end": 402,
+          "text": "\n\n\n                                   4. The mean value theorem\n\n\n      Apart from some numerical calculations, Theorem l will be a consequence of the\nfollowing mean value theorem.\n",
+          "sha256": "323c1e7dce200707bca870ffd837183edaf03cc321aec122150e51fac01511f5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Beginning of the proof",
+            "line_end": 397,
+            "line_start": 189,
+            "mathematical_role": "Turns critical-line zeros into changes of argument of a symmetry-compatible derivative combination, introduces its polynomial differential-operator approximation and mollifier, and reduces both total and simple-zero bounds to a mollified mean square."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 394,
+          "line_start": 353,
+          "title": "Specializing the auxiliary function to certify simple zeros",
+          "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+          "unit_type": "criterion-specialization",
+          "why_material": "The source isolates auxiliary-function zeros on the half-line that are not eta zeros and shows that an additional identity forces them to correspond to simple xi zeros, yielding a parallel lower bound with Q restricted to degree one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the counted set, the simple-zero implication, and the extra restriction on Q.",
+          "representation_dependency": "High: the decisive identity and final displayed bound are extraction-damaged; only the implication stated in prose is safely recoverable without the scan.",
+          "unit_id": "conrey1989_v2_u07_simple_zero_specialization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 350,
+            "line_start": 285,
+            "title": "Reducing zero density to a mollified second moment",
+            "unit_id": "conrey1989_v2_u06_mollified_littlewood_reduction",
+            "unit_type": "method-reduction",
+            "why_material": "The argument principle counts zeros of the auxiliary function, a polynomial mollifier shifts the counting line, and Littlewood's lemma plus arithmetic-geometric mean bounds the zero count by the logarithm of a mollified mean square."
+          },
+          {
+            "line_end": 426,
+            "line_start": 398,
+            "title": "Mean-square asymptotic at mollifier length below four-sevenths",
+            "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+            "unit_type": "mean-value-theorem",
+            "why_material": "The paper declares that, apart from numerical calculation, its main theorem follows from a mean-value asymptotic for the mollified differential transform V when the mollifier exponent is below four-sevenths."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 397,
+              "line_start": 395,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+          "spontaneous_reading": "The general auxiliary zero count is sharpened into a simplicity certificate by excluding η zeros and imposing a degree-one restriction on Q. This trades some operator freedom for control of multiplicity."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+          "source_grounded_mathematics": "The source counts points on the half-line where the relevant real-part condition vanishes but η does not. Under an additional identity, such a point gives xi=0 with xi′ nonzero, hence a simple xi zero. A parallel lower bound results, subject to the earlier conditions and the new requirement that Q have degree one.",
+          "conceptual_reading": "A detector for location becomes a detector for nondegeneracy only after a structural specialization. The restriction on Q is the extra burden required to distinguish simple zeros from zeros counted with multiplicity.",
+          "representation_or_bridge": "The bridge classifies auxiliary real-part zeros according to whether η also vanishes, then uses the specialized xi/η relation to map the surviving class to simple critical-line zeros.",
+          "boundary_or_failure": "The decisive displayed identity and final numerical inequality are damaged. The safe evidence is the source's prose implication and the degree-one constraint, not a reconstructed formula.",
+          "uncertainty": "High for the exact identity and bound; moderate for the stated simple-zero implication."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the analytic bottleneck statement used by the preceding zero-density reduction and the following optimization.",
+      "line_end": 426,
+      "line_start": 398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the central displayed asymptotic and its main-term functional are largely absent from the text layer; theorem scope and the theta threshold are prose-legible, but the formula must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper declares that, apart from numerical calculation, its main theorem follows from a mean-value asymptotic for the mollified differential transform V when the mollifier exponent is below four-sevenths.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean-square asymptotic at mollifier length below four-sevenths",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u08_mean_value_bottleneck.txt",
+      "unit_bytes": 824,
+      "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+      "unit_sha256": "0d38f278a4de69a05721f6732161f9e6a467e9e73ad1e1ffa4ea91b256ad511c",
+      "unit_type": "mean-value-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u08_mean_value_bottleneck.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 390,
+          "line_end": 397,
+          "text": "       (43)\n                                   R\n\nsubject to all the conditions on JR, K B, and Q mentioned above and with the additional\ncondition that Q be a polynomial of degree 1.\n\n\n\n",
+          "sha256": "c64281132d18f23d23559781140e67adf3ed9b5e358e1cba1ffe0689a8c943ca"
+        },
+        "after": {
+          "line_start": 427,
+          "line_end": 434,
+          "text": "For the moment, let\n\n       (44)\n\nThen\n\n       (45)                              - f f      A                               dxdy\n                                         θ o o ~au\n",
+          "sha256": "206a07eb13e1728b5eec0e96e114d9cc22e8cebe63628fab840dcb970dac91dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The mean value theorem",
+            "line_end": 563,
+            "line_start": 398,
+            "mathematical_role": "States the decisive mean-square asymptotic, derives the variational problem for the mollifier polynomial, and records parameter choices yielding the numerical bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 426,
+          "line_start": 398,
+          "title": "Mean-square asymptotic at mollifier length below four-sevenths",
+          "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+          "unit_type": "mean-value-theorem",
+          "why_material": "The paper declares that, apart from numerical calculation, its main theorem follows from a mean-value asymptotic for the mollified differential transform V when the mollifier exponent is below four-sevenths."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the analytic bottleneck statement used by the preceding zero-density reduction and the following optimization.",
+          "representation_dependency": "Very high: the central displayed asymptotic and its main-term functional are largely absent from the text layer; theorem scope and the theta threshold are prose-legible, but the formula must be checked against the scan.",
+          "unit_id": "conrey1989_v2_u08_mean_value_bottleneck"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 394,
+            "line_start": 353,
+            "title": "Specializing the auxiliary function to certify simple zeros",
+            "unit_id": "conrey1989_v2_u07_simple_zero_specialization",
+            "unit_type": "criterion-specialization",
+            "why_material": "The source isolates auxiliary-function zeros on the half-line that are not eta zeros and shows that an additional identity forces them to correspond to simple xi zeros, yielding a parallel lower bound with Q restricted to degree one."
+          },
+          {
+            "line_end": 521,
+            "line_start": 426,
+            "title": "Euler-Lagrange optimization of the mollifier profile",
+            "unit_id": "conrey1989_v2_u09_variational_mollifier",
+            "unit_type": "variational-optimization",
+            "why_material": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source's central representation chain turns functional-equation symmetry into a polynomial differential transform, then into a mollified zero count, and finally into a mean-square evaluation.",
+            "limit": "This is a within-source architectural relation, not a verified reconstruction of the damaged displayed identities.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u04_argument_change_bridge",
+              "conrey1989_v2_u05_polynomial_differential_operator",
+              "conrey1989_v2_u06_mollified_littlewood_reduction",
+              "conrey1989_v2_u08_mean_value_bottleneck"
+            ],
+            "title": "Symmetry-to-mean-square proof spine"
+          },
+          {
+            "claim": "The four-sevenths-scale mollifier is enabled not by the variational calculation but by controlling the off-diagonal dyadic sums with averaged Kloosterman estimates and a complementary Weil-bound case.",
+            "limit": "Exact exponent inequalities are extraction-sensitive and must be checked against the scan before treating the threshold derivation as certified.",
+            "parent_local_unit_ids": [
+              "conrey1989_u01_longer_mollifier_synthesis",
+              "conrey1989_v2_u08_mean_value_bottleneck",
+              "conrey1989_v2_u17_dyadic_error_budget",
+              "conrey1989_v2_u19_averaged_kloosterman_range",
+              "conrey1989_v2_u20_weil_fallback_range"
+            ],
+            "title": "Longer mollifier as an off-diagonal error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 397,
+              "line_start": 395,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+          "spontaneous_reading": "The paper isolates one analytic bottleneck: an asymptotic for the mollified second moment of the differential transform V when the mollifier exponent is below four sevenths. Everything before it creates this target; everything after it evaluates and optimizes it."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+          "source_grounded_mathematics": "The theorem takes the earlier mollifier B(s,P), the shifted line σ0=1/2−R/L, and V(s)=Q((1/L)d/ds)ζ(s), and asserts a T→∞ mean-square asymptotic for θ<4/7. The source says that, apart from numerical calculations, the main proportion theorem follows from this result.",
+          "conceptual_reading": "The admissible mollifier length is a capacity limit for the entire reduction: it determines how effectively the zero detector can be normalized before numerical optimization begins.",
+          "representation_or_bridge": "The theorem bridges the zero-count inequality to an explicit functional of P and Q that can be treated variationally and numerically.",
+          "boundary_or_failure": "The central displayed asymptotic and its main-term functional are largely absent from the text layer. This unit establishes scope and the θ threshold but is insufficient for independent formula reconstruction.",
+          "uncertainty": "Low for the role and θ<4/7 condition; very high for the exact asymptotic formula and normalization."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definition of the coefficient integrals, the ODE and boundary conditions, the closed-form solution discussion, and substitution back into the objective.",
+      "line_end": 521,
+      "line_start": 426,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: enough equations survive to identify the variational mechanism, but several definitions and the full solution formula are damaged; numerical or symbolic reuse requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Lagrange optimization of the mollifier profile",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u09_variational_mollifier.txt",
+      "unit_bytes": 2692,
+      "unit_id": "conrey1989_v2_u09_variational_mollifier",
+      "unit_sha256": "8dbefad9e0bc727c8d468d7b62c1f8887b0ef549c821c4549beadeda00448979",
+      "unit_type": "variational-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u09_variational_mollifier.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 418,
+          "line_end": 425,
+          "text": "                                         d_\n                                                                             M= 0   dxdy\n\n\n              = |P(1) (0)I2\n                                   oo\n\n\n",
+          "sha256": "f4dd5e3d32b376c21c711f89a415c8cc57dcfba61f9f23d7b3159b1fad8bc361"
+        },
+        "after": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "\n        (49)\n\n\nWe illustrate the computation in the case of simple zeros. We are forced here to take\n\n\n\n",
+          "sha256": "8a40343bc2953b61750f5d6397b97eecb8b35f49074389c5b6ddd4639e18c473"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The mean value theorem",
+            "line_end": 563,
+            "line_start": 398,
+            "mathematical_role": "States the decisive mean-square asymptotic, derives the variational problem for the mollifier polynomial, and records parameter choices yielding the numerical bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 521,
+          "line_start": 426,
+          "title": "Euler-Lagrange optimization of the mollifier profile",
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "unit_type": "variational-optimization",
+          "why_material": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definition of the coefficient integrals, the ODE and boundary conditions, the closed-form solution discussion, and substitution back into the objective.",
+          "representation_dependency": "High: enough equations survive to identify the variational mechanism, but several definitions and the full solution formula are damaged; numerical or symbolic reuse requires scan verification.",
+          "unit_id": "conrey1989_v2_u09_variational_mollifier"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 426,
+            "line_start": 398,
+            "title": "Mean-square asymptotic at mollifier length below four-sevenths",
+            "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+            "unit_type": "mean-value-theorem",
+            "why_material": "The paper declares that, apart from numerical calculation, its main theorem follows from a mean-value asymptotic for the mollified differential transform V when the mollifier exponent is below four-sevenths."
+          },
+          {
+            "line_end": 555,
+            "line_start": 526,
+            "title": "Parameter choices converting the optimized mean into stated proportions",
+            "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+            "unit_type": "computational-certification-logic",
+            "why_material": "For the simple-zero case the source restricts Q to a one-parameter form, evaluates the resulting integrals and variational constant, and records choices producing 0.4013, while a richer Q produces 0.4077."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the mean-value theorem fixes an admissible mollifier length, polynomial and derivative-combination freedom is optimized separately to convert the analytic estimate into the best recorded proportion.",
+            "limit": "The source gives certificates for particular choices, not a claim of global joint optimality over every admissible parameterization.",
+            "parent_local_unit_ids": [
+              "conrey1989_u02_variational_freedom_v1",
+              "conrey1989_v2_u09_variational_mollifier",
+              "conrey1989_v2_u10_numerical_parameter_certificate",
+              "conrey1989_v2_u21_note_added_parameter_update"
+            ],
+            "title": "Analytic admissibility before numerical optimization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u09_variational_mollifier",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "spontaneous_reading": "Once the derivative-side data are fixed, the mean-square constant becomes a quadratic functional of the mollifier profile P. Euler-Lagrange turns its optimization into a two-point linear ODE, and integration by parts compresses the optimum to boundary data."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "source_grounded_mathematics": "The extracted functional contains integrals of |P′|², P′P, and |P|² with coefficients A, B, and C formed from an auxiliary w. Its minimizer satisfies A P″−(B−conjugate(B))P′−C P=0 with P(0)=0 and P(1)=1. The exponential-form solution is substituted back, and the source notes that it can be uniformly approximated by admissible polynomials.",
+          "conceptual_reading": "A discrete coefficient search is relaxed to a continuous boundary-value problem. The ODE exposes the optimal shape rather than searching polynomial coefficients blindly.",
+          "representation_or_bridge": "The mean-square main term becomes a quadratic variational functional, then a boundary-value ODE, then an explicit boundary expression used in the proportion estimate.",
+          "boundary_or_failure": "The exact definitions and solution formula are partially damaged, and the continuous minimizer is not itself a polynomial. Approximation recovers admissibility, but this is not a claim of global joint optimality over P, Q, R, and θ.",
+          "uncertainty": "Moderate for the variational mechanism and displayed ODE; high for exact coefficients and closed-form normalization."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a parameter certificate rather than a derivation of the mean-value theorem; it closes the numerical step announced at line 401.",
+      "line_end": 555,
+      "line_start": 526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the exact Q definition is missing and some parameter glyphs are corrupt; the reported choices and outcomes are legible, but reproduction requires the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the simple-zero case the source restricts Q to a one-parameter form, evaluates the resulting integrals and variational constant, and records choices producing 0.4013, while a richer Q produces 0.4077.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parameter choices converting the optimized mean into stated proportions",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u10_numerical_parameter_certificate.txt",
+      "unit_bytes": 579,
+      "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+      "unit_sha256": "4f7b172e1f8c8c581bf8aa6b5ef38e402b4c9a91d677d85488eb1916a438b94d",
+      "unit_type": "computational-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u10_numerical_parameter_certificate.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 518,
+          "line_end": 525,
+          "text": "                                        o         o                 0\n\n\nBy (45) we now have\n\n        (49)\n\n\n",
+          "sha256": "91046db64279e53c9ffab44286b097b47d22daf9c11bae70195f1059cd077574"
+        },
+        "after": {
+          "line_start": 556,
+          "line_end": 563,
+          "text": "                      Brought to you by | Cirm-Societe Mathematique (Cirm-Societe Mathematique)\n                                              Authenticated | 172.16.1.226\n                                            Download Date | 1/16/12 6:51 AM\n\n<!-- source-page: 11 -->\n\nConrey, Zeros of the Riemann zeta function                             11\n\n",
+          "sha256": "bd43137f1c5f65d67363c02b799574ea8ab273e5ded824a54219c8890634360b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The mean value theorem",
+            "line_end": 563,
+            "line_start": 398,
+            "mathematical_role": "States the decisive mean-square asymptotic, derives the variational problem for the mollifier polynomial, and records parameter choices yielding the numerical bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 555,
+          "line_start": 526,
+          "title": "Parameter choices converting the optimized mean into stated proportions",
+          "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+          "unit_type": "computational-certification-logic",
+          "why_material": "For the simple-zero case the source restricts Q to a one-parameter form, evaluates the resulting integrals and variational constant, and records choices producing 0.4013, while a richer Q produces 0.4077."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a parameter certificate rather than a derivation of the mean-value theorem; it closes the numerical step announced at line 401.",
+          "representation_dependency": "Very high: the exact Q definition is missing and some parameter glyphs are corrupt; the reported choices and outcomes are legible, but reproduction requires the scan.",
+          "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 521,
+            "line_start": 426,
+            "title": "Euler-Lagrange optimization of the mollifier profile",
+            "unit_id": "conrey1989_v2_u09_variational_mollifier",
+            "unit_type": "variational-optimization",
+            "why_material": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data."
+          },
+          {
+            "line_end": 646,
+            "line_start": 564,
+            "title": "Shifted zeta integral as a generator for the target mean",
+            "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+            "unit_type": "generating-function-reduction",
+            "why_material": "A two-shift proposition packages mollifier products and shifted zeta factors into an analytic function g; applying the proposition and Cauchy's formula in the shift variables recovers the derivative-weighted mean required by Theorem 2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the mean-value theorem fixes an admissible mollifier length, polynomial and derivative-combination freedom is optimized separately to convert the analytic estimate into the best recorded proportion.",
+            "limit": "The source gives certificates for particular choices, not a claim of global joint optimality over every admissible parameterization.",
+            "parent_local_unit_ids": [
+              "conrey1989_u02_variational_freedom_v1",
+              "conrey1989_v2_u09_variational_mollifier",
+              "conrey1989_v2_u10_numerical_parameter_certificate",
+              "conrey1989_v2_u21_note_added_parameter_update"
+            ],
+            "title": "Analytic admissibility before numerical optimization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 563,
+              "line_start": 556,
+              "reason": "Page footer/header and transition to the proposition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+          "spontaneous_reading": "This is the numerical certificate layer: the analytic and variational formulas are instantiated under the degree-one constraint for simple zeros, while a richer Q is used for the all-line-zero bound."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+          "source_grounded_mathematics": "For simple zeros the source says Q is forced into a one-parameter form, evaluates the associated integrals, and records θ=4/7 in the limiting calculation, λ=−1.02, and resulting value 0.4013…. It then attributes the 0.4077 result to a richer Q taken from an earlier construction.",
+          "conceptual_reading": "Analytic admissibility is separated from numerical tuning: the mean-value theorem establishes what parameter region may be used, and chosen parameters translate that theorem into concrete density bounds.",
+          "representation_or_bridge": "Computed integral values and the optimized variational constant feed the logarithmic zero-density inequality, producing the reported proportions.",
+          "boundary_or_failure": "This span certifies particular choices rather than deriving the mean-value theorem or proving global optimality. The exact Q display and at least one parameter glyph are missing, so the computation is not reproducible from this extraction alone.",
+          "uncertainty": "Low for the reported 0.4013 and 0.4077 outcomes; very high for the omitted Q and damaged parameter notation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the proposition's uniformity, the contour representation of V, analyticity in both shifts, and the differentiation step.",
+      "line_end": 646,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: much of the proposition's displayed main term and contour integrand is missing; the generating-function method is prose-recoverable, while exact formulas require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A two-shift proposition packages mollifier products and shifted zeta factors into an analytic function g; applying the proposition and Cauchy's formula in the shift variables recovers the derivative-weighted mean required by Theorem 2.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted zeta integral as a generator for the target mean",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u11_shifted_generating_proposition.txt",
+      "unit_bytes": 2130,
+      "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+      "unit_sha256": "cfd6959c54538d237b712953c32e14d0187fb192e22fdd782b4159ba5d1a43ac",
+      "unit_type": "generating-function-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u11_shifted_generating_proposition.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 556,
+          "line_end": 563,
+          "text": "                      Brought to you by | Cirm-Societe Mathematique (Cirm-Societe Mathematique)\n                                              Authenticated | 172.16.1.226\n                                            Download Date | 1/16/12 6:51 AM\n\n<!-- source-page: 11 -->\n\nConrey, Zeros of the Riemann zeta function                             11\n\n",
+          "sha256": "bd43137f1c5f65d67363c02b799574ea8ab273e5ded824a54219c8890634360b"
+        },
+        "after": {
+          "line_start": 647,
+          "line_end": 654,
+          "text": "\n\n                                        6. Initial Lemmas\n\n    In this section we prove that the proposition is a consequence of the following two\nlemmas.\n      Lemma l . Suppose that y=Te, 0<0<1,                    P1 and P2 are polynomials with\n\n",
+          "sha256": "6c2102c99932d3c0ad9a901a0550fa121963f01e13384d043a6ce6bbc9caefe7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The proposition",
+            "line_end": 648,
+            "line_start": 564,
+            "mathematical_role": "Introduces a shifted generating integral and derives the target derivative-weighted mean by analyticity and Cauchy differentiation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 646,
+          "line_start": 564,
+          "title": "Shifted zeta integral as a generator for the target mean",
+          "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+          "unit_type": "generating-function-reduction",
+          "why_material": "A two-shift proposition packages mollifier products and shifted zeta factors into an analytic function g; applying the proposition and Cauchy's formula in the shift variables recovers the derivative-weighted mean required by Theorem 2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the proposition's uniformity, the contour representation of V, analyticity in both shifts, and the differentiation step.",
+          "representation_dependency": "Very high: much of the proposition's displayed main term and contour integrand is missing; the generating-function method is prose-recoverable, while exact formulas require the scan.",
+          "unit_id": "conrey1989_v2_u11_shifted_generating_proposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 555,
+            "line_start": 526,
+            "title": "Parameter choices converting the optimized mean into stated proportions",
+            "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+            "unit_type": "computational-certification-logic",
+            "why_material": "For the simple-zero case the source restricts Q to a one-parameter form, evaluates the resulting integrals and variational constant, and records choices producing 0.4013, while a richer Q produces 0.4077."
+          },
+          {
+            "line_end": 739,
+            "line_start": 649,
+            "title": "Factoring the shifted proposition into arithmetic and analytic lemmas",
+            "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+            "unit_type": "proof-decomposition",
+            "why_material": "The proposition is split into an asymptotic for a mollifier coefficient sum and an analytic evaluation of g; an antisymmetry identity for the arithmetic main term then cancels the unwanted shifted contribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The target derivative moment is generated by shift variables, factorized into arithmetic and analytic pieces, and evaluated after a functional-equation dualization and localized residue calculation.",
+            "limit": "Several exact kernels and normalizations are absent from the text layer, so the synthesis is mechanism-level only.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u11_shifted_generating_proposition",
+              "conrey1989_v2_u12_arithmetic_analytic_factorization",
+              "conrey1989_v2_u14_estermann_mellin_duality",
+              "conrey1989_v2_u15_localization_residue",
+              "conrey1989_v2_u16_main_term_extraction"
+            ],
+            "title": "Shift differentiation and dual contour evaluation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 563,
+              "line_start": 556,
+              "reason": "Page footer/header and transition to the proposition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 648,
+              "line_start": 647,
+              "reason": "Whitespace before initial lemmas."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+          "spontaneous_reading": "Small complex shifts are used as generating variables for zeta derivatives. The proposition evaluates a two-shift smoothed integral, and analyticity plus Cauchy's formula extracts the differential-operator mean needed by the main theorem."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+          "source_grounded_mathematics": "The source sets α=a/L and β=b/L, defines a contour integral g involving shifted zeta factors and two mollifier polynomials, and states a uniform asymptotic in a, b, and w. It represents the target V-expression by a complex integral, invokes the proposition, and differentiates in the shift variables using Cauchy's formula.",
+          "conceptual_reading": "Differentiation is externalized into parameter dependence. Instead of evaluating many derivative products directly, one proves a uniform shifted identity once and recovers them by analytic coefficient extraction.",
+          "representation_or_bridge": "The bridge object g(a,b,w,P1,P2) packages shifts, smoothing, and mollifier products; Cauchy differentiation maps it back to the derivative-weighted mean.",
+          "boundary_or_failure": "Most of the proposition's displayed integrand and main term are missing, and the final passage also relies on an earlier mean-square argument. Exact reconstruction or verification requires the scan.",
+          "uncertainty": "Moderate for the generating-function mechanism; very high for formulas, contours, and normalizing factors."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the two lemmas, the cited order-of-summation mechanism for the arithmetic sum, and the identity used to recombine them.",
+      "line_end": 739,
+      "line_start": 649,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the main displayed formulas are incomplete, though the factorization, order change, and cancellation logic are explicit; scan verification is necessary for exact use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proposition is split into an asymptotic for a mollifier coefficient sum and an analytic evaluation of g; an antisymmetry identity for the arithmetic main term then cancels the unwanted shifted contribution.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factoring the shifted proposition into arithmetic and analytic lemmas",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u12_arithmetic_analytic_factorization.txt",
+      "unit_bytes": 2628,
+      "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+      "unit_sha256": "f91fb7c06602e20115fb44b11c72696db8db8c9570537892732eca1535a3252e",
+      "unit_type": "proof-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u12_arithmetic_analytic_factorization.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 641,
+          "line_end": 648,
+          "text": "      = l (0)P(l)l 2\n\n\n\n\nEquation (50) easily follows from this.\n\n\n",
+          "sha256": "63f51157de313dc99a850a4930854ef7174258d865d29314329299bf8fbe8578"
+        },
+        "after": {
+          "line_start": 740,
+          "line_end": 747,
+          "text": "\n\n                                       7. The main term\n\n    In this section, we produce the main term of g in Lemma 2 after some preparatory\nlemmas.\n       Lemma 3. Suppose that \\<c<2 and s usual,\n\n",
+          "sha256": "cb41b82ec13ce44f4bf948347abf0bc2fa7eea11d802d26940f13c4163a6e015"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Initial Lemmas",
+            "line_end": 741,
+            "line_start": 649,
+            "mathematical_role": "Separates the arithmetic mollifier sum from the analytic shifted integral and uses an antisymmetry identity to assemble the proposition."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 739,
+          "line_start": 649,
+          "title": "Factoring the shifted proposition into arithmetic and analytic lemmas",
+          "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+          "unit_type": "proof-decomposition",
+          "why_material": "The proposition is split into an asymptotic for a mollifier coefficient sum and an analytic evaluation of g; an antisymmetry identity for the arithmetic main term then cancels the unwanted shifted contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the two lemmas, the cited order-of-summation mechanism for the arithmetic sum, and the identity used to recombine them.",
+          "representation_dependency": "Very high: the main displayed formulas are incomplete, though the factorization, order change, and cancellation logic are explicit; scan verification is necessary for exact use.",
+          "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 646,
+            "line_start": 564,
+            "title": "Shifted zeta integral as a generator for the target mean",
+            "unit_id": "conrey1989_v2_u11_shifted_generating_proposition",
+            "unit_type": "generating-function-reduction",
+            "why_material": "A two-shift proposition packages mollifier products and shifted zeta factors into an analytic function g; applying the proposition and Cauchy's formula in the shift variables recovers the derivative-weighted mean required by Theorem 2."
+          },
+          {
+            "line_end": 769,
+            "line_start": 742,
+            "title": "Gaussian smoothing as an exact transform step",
+            "unit_id": "conrey1989_v2_u13_smoothing_transform",
+            "unit_type": "integral-transform",
+            "why_material": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The target derivative moment is generated by shift variables, factorized into arithmetic and analytic pieces, and evaluated after a functional-equation dualization and localized residue calculation.",
+            "limit": "Several exact kernels and normalizations are absent from the text layer, so the synthesis is mechanism-level only.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u11_shifted_generating_proposition",
+              "conrey1989_v2_u12_arithmetic_analytic_factorization",
+              "conrey1989_v2_u14_estermann_mellin_duality",
+              "conrey1989_v2_u15_localization_residue",
+              "conrey1989_v2_u16_main_term_extraction"
+            ],
+            "title": "Shift differentiation and dual contour evaluation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 648,
+              "line_start": 647,
+              "reason": "Whitespace before initial lemmas."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 741,
+              "line_start": 740,
+              "reason": "Whitespace before main-term section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+          "spontaneous_reading": "The shifted proposition is split at a clean interface: one lemma evaluates the arithmetic mollifier coefficient sum, another evaluates the analytic integral g, and an antisymmetry identity recombines them by cancelling the unwanted shifted contribution."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+          "source_grounded_mathematics": "Lemma 1 changes summation order so a divisor variable d is outermost and the inner h/d and k/d sums factor, then cites prior lemmas for their evaluation. Lemma 2 supplies the asymptotic for g. Defining σ from the arithmetic main term, the source proves σ(a,b)−σ(−b,−a)=(a+b)P1(1)P2(1) and uses this identity to obtain the proposition.",
+          "conceptual_reading": "The proof decomposes into a discrete coefficient calculation and an analytic transform calculation whose outputs share an exact interface. Antisymmetry is the compatibility relation that closes the decomposition.",
+          "representation_or_bridge": "The intermediate σ summarizes the arithmetic lemma in the same shift variables used by g, allowing the two results to be algebraically recombined.",
+          "boundary_or_failure": "Lemma 1 is only sketched and imports earlier results; the principal displayed formulas are incomplete. The mechanism is supported, but exact constants and hypotheses need the scan and cited work.",
+          "uncertainty": "Moderate for the factorization and antisymmetry identity; high for the missing main-term formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept separate from the Estermann functional equation because its role is the smoothing kernel rather than arithmetic duality.",
+      "line_end": 769,
+      "line_start": 742,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the displayed statement is mostly lost; only the change-of-variables role and cited transform are recoverable without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian smoothing as an exact transform step",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u13_smoothing_transform.txt",
+      "unit_bytes": 550,
+      "unit_id": "conrey1989_v2_u13_smoothing_transform",
+      "unit_sha256": "f532d93062691ed6d8ec17395c9661c6a911059595e04dfd52353897d5792409",
+      "unit_type": "integral-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u13_smoothing_transform.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 734,
+          "line_end": 741,
+          "text": "                ~\" \" σ(-α, -b,P1,P2) + P1(l)P2(l)\n\n\n\n\n s stated in the proposition.\n\n\n",
+          "sha256": "12eb72a274c4eef29c9219315cc7c722120de8ecef142c728208ec502d52624f"
+        },
+        "after": {
+          "line_start": 770,
+          "line_end": 777,
+          "text": "       Lemma 4. Lei\n\n                        D(s, α, β, Η/Κ)=Σ m~s~*n-s- e(mnH/K)\n                                              m, n\n\n\nwfcm? H, K are iniegers (X ^ 1) ννιίΛ (ίί, Χ) = l and a, β, s E C. Then\n                        Brought to you by | Cirm-Societe Mathematique (Cirm-Societe Mathematique)\n",
+          "sha256": "d1cc197c3d24aad316cd6aea4080ed5fd1011f2752e796669a0c1fc2d4bb7a3f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. The main term",
+            "line_end": 1042,
+            "line_start": 742,
+            "mathematical_role": "Uses smoothing, an Estermann-type functional equation, Mellin inversion, localization, contour shifts, and residues to identify the main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 769,
+          "line_start": 742,
+          "title": "Gaussian smoothing as an exact transform step",
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "unit_type": "integral-transform",
+          "why_material": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept separate from the Estermann functional equation because its role is the smoothing kernel rather than arithmetic duality.",
+          "representation_dependency": "Very high: the displayed statement is mostly lost; only the change-of-variables role and cited transform are recoverable without the scan.",
+          "unit_id": "conrey1989_v2_u13_smoothing_transform"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 739,
+            "line_start": 649,
+            "title": "Factoring the shifted proposition into arithmetic and analytic lemmas",
+            "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+            "unit_type": "proof-decomposition",
+            "why_material": "The proposition is split into an asymptotic for a mollifier coefficient sum and an analytic evaluation of g; an antisymmetry identity for the arithmetic main term then cancels the unwanted shifted contribution."
+          },
+          {
+            "line_end": 870,
+            "line_start": 770,
+            "title": "Estermann functional equation and Mellin conversion of the off-diagonal sum",
+            "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+            "unit_type": "functional-equation-transform",
+            "why_material": "The additive-twist Dirichlet series is continued and given a functional equation, then Mellin inversion and a contour move turn the exponentially smoothed double sum into dual Estermann terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 741,
+              "line_start": 740,
+              "reason": "Whitespace before main-term section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u13_smoothing_transform",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "spontaneous_reading": "A short preparatory lemma turns the chosen smoothing contour into a standard transform by a change of variables. Its role is to make localization exact before the arithmetic functional equation is applied."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "source_grounded_mathematics": "Lemma 3 states an integral identity under conditions including 1<c<2, nonzero y, Δ>0, and Re β<c. Its proof consists of a change of variables followed by an invocation of a lemma of Balasubramanian, Conrey, and Heath-Brown.",
+          "conceptual_reading": "A carefully chosen smoothing kernel is a representation device: it replaces a raw contour expression by a transform with controlled scale and localization.",
+          "representation_or_bridge": "The lemma is the transform bridge between the smoothed contour setup and the main-term analysis that follows.",
+          "boundary_or_failure": "The displayed statement is almost entirely lost in extraction, so the kernel, both sides of the identity, and normalization cannot be named safely from this unit.",
+          "uncertainty": "Very high for mathematical details; low only for the stated change-of-variables role and dependence on the cited lemma."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition of D, its functional-equation provenance, the smoothed sum S, and the full proof strategy for the Mellin transformation.",
+      "line_end": 870,
+      "line_start": 770,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the functional equation's factors are partially corrupt, but the series, duality, contour move, and two dual terms are recognizable; exact normalization requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The additive-twist Dirichlet series is continued and given a functional equation, then Mellin inversion and a contour move turn the exponentially smoothed double sum into dual Estermann terms.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Estermann functional equation and Mellin conversion of the off-diagonal sum",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u14_estermann_mellin_duality.txt",
+      "unit_bytes": 2840,
+      "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+      "unit_sha256": "f4b8eee57a6c0729c789a3d627c1e9619d5ce4f298ded2f36dd793f328eaf39b",
+      "unit_type": "functional-equation-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u14_estermann_mellin_duality.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 762,
+          "line_end": 769,
+          "text": "       Proof.   By a change of variables,\n\n\n                            *^π     (c-Rc )\n\n\nThe lemma now follows from Lemma 2 of Balasubramanian, Conrey, and Heath-\nBrown [2].\n",
+          "sha256": "dd785f875ce880b332d72640f54db8d7844129c7606873d287a50511181fb778"
+        },
+        "after": {
+          "line_start": 871,
+          "line_end": 878,
+          "text": "     Lemma 6. Lei w be real with T g w g 2 T and fei st = 1/2 + 4- i w w/iere = b/L\nwith fceC, &<:!. Lei 5>0, π/2>Α>0, J = T1~i, and a = a/L wii/z a e C, a<cl.\nDe ne\n\n                     r(sl9 a)= f i;\n                                  LA\n\n\n",
+          "sha256": "3d2011a925df7054bd8d882af6fd75f26bc6acb467d675e3600b2f72eebfdb5e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. The main term",
+            "line_end": 1042,
+            "line_start": 742,
+            "mathematical_role": "Uses smoothing, an Estermann-type functional equation, Mellin inversion, localization, contour shifts, and residues to identify the main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 870,
+          "line_start": 770,
+          "title": "Estermann functional equation and Mellin conversion of the off-diagonal sum",
+          "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+          "unit_type": "functional-equation-transform",
+          "why_material": "The additive-twist Dirichlet series is continued and given a functional equation, then Mellin inversion and a contour move turn the exponentially smoothed double sum into dual Estermann terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definition of D, its functional-equation provenance, the smoothed sum S, and the full proof strategy for the Mellin transformation.",
+          "representation_dependency": "High: the functional equation's factors are partially corrupt, but the series, duality, contour move, and two dual terms are recognizable; exact normalization requires scan verification.",
+          "unit_id": "conrey1989_v2_u14_estermann_mellin_duality"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 769,
+            "line_start": 742,
+            "title": "Gaussian smoothing as an exact transform step",
+            "unit_id": "conrey1989_v2_u13_smoothing_transform",
+            "unit_type": "integral-transform",
+            "why_material": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization."
+          },
+          {
+            "line_end": 935,
+            "line_start": 871,
+            "title": "Uniform localization of the smoothing contour near its singular point",
+            "unit_id": "conrey1989_v2_u15_localization_residue",
+            "unit_type": "asymptotic-localization",
+            "why_material": "After deforming to a real-axis contour with an indentation, rescaling around the singular point gives uniform convergence and a residue evaluation of the localized integral."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The target derivative moment is generated by shift variables, factorized into arithmetic and analytic pieces, and evaluated after a functional-equation dualization and localized residue calculation.",
+            "limit": "Several exact kernels and normalizations are absent from the text layer, so the synthesis is mechanism-level only.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u11_shifted_generating_proposition",
+              "conrey1989_v2_u12_arithmetic_analytic_factorization",
+              "conrey1989_v2_u14_estermann_mellin_duality",
+              "conrey1989_v2_u15_localization_residue",
+              "conrey1989_v2_u16_main_term_extraction"
+            ],
+            "title": "Shift differentiation and dual contour evaluation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+          "spontaneous_reading": "The oscillatory off-diagonal double sum is encoded as an additive-twist Dirichlet series, then dualized by its Estermann functional equation. Mellin inversion and a contour move convert exponential smoothing into two dual Estermann terms."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+          "source_grounded_mathematics": "The source defines D(s,α,β,H/K) as a double Dirichlet series with additive phase e(mnH/K), states continuation, a functional equation, and a bound at s=0, and relates D to residue-class zeta functions. Lemma 5 applies Mellin's formula to the smoothed double sum S, moves the contour, changes s to 1−s, and inserts the functional equation to obtain two dual D terms with trigonometric and gamma factors.",
+          "conceptual_reading": "Arithmetic oscillation is moved into a representation with analytic continuation and duality. The functional equation exchanges the original sum for dual data whose main and error contributions can be separated.",
+          "representation_or_bridge": "D is the bridge from additive exponential sums to contour analysis; Mellin inversion connects the exponential smoothing variable to the complex spectral variable.",
+          "boundary_or_failure": "Gamma, trigonometric, and power factors are partially corrupt, so exact normalization and pole accounting cannot be certified from the text layer. The unit states the transform, not the later error estimates.",
+          "uncertainty": "Moderate for the dualization pipeline; high for exact functional equations and constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof retains the path deformation, small-variable comparison, uniformity claim, rescaling, and residue conclusion.",
+      "line_end": 935,
+      "line_start": 871,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the integral statement and some kernels are damaged, while the localization and residue mechanism is prose-legible; exact asymptotic requires the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After deforming to a real-axis contour with an indentation, rescaling around the singular point gives uniform convergence and a residue evaluation of the localized integral.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform localization of the smoothing contour near its singular point",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u15_localization_residue.txt",
+      "unit_bytes": 2456,
+      "unit_id": "conrey1989_v2_u15_localization_residue",
+      "unit_sha256": "76edfaabbd120dc4f13e21367aeac5afa48c5f6082415c6e4daf6dd6dce4dbf0",
+      "unit_type": "asymptotic-localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u15_localization_residue.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 863,
+          "line_end": 870,
+          "text": "\n\n                                           J ζ5-1Γ(ί-\n                                        ι (c)\n              χ [cos π/2 (25 + α 4- j8) D(s, -a, - , -H/K)\n                                       , -α, - ,\n\nwhich completes the proof of the lemma.\n",
+          "sha256": "44994f986777ee266f18a709b63916ed9a4184b4a879cd2926b29de09111b4a7"
+        },
+        "after": {
+          "line_start": 936,
+          "line_end": 943,
+          "text": "       Now we begin the proof of Lemma 2. First of all we move the path of Inte-\ngration in the definition of g to (c) where € = 1 + η with η>0 small and fixed. Since\na, /?<^c l/L it will be the case that |α|, \\β\\ <η if T is sufficiently large. Thus, in moving the\npath of Integration we cross a pole at s = l — a. The contribution from the residue is\nnegligible since for s <^c l,\n                                                                            --20\n        (54)\n\n",
+          "sha256": "71862c9aa4af814fe519ff338d2c172dc585b15da97df8176673ac2f552bfc06"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. The main term",
+            "line_end": 1042,
+            "line_start": 742,
+            "mathematical_role": "Uses smoothing, an Estermann-type functional equation, Mellin inversion, localization, contour shifts, and residues to identify the main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 935,
+          "line_start": 871,
+          "title": "Uniform localization of the smoothing contour near its singular point",
+          "unit_id": "conrey1989_v2_u15_localization_residue",
+          "unit_type": "asymptotic-localization",
+          "why_material": "After deforming to a real-axis contour with an indentation, rescaling around the singular point gives uniform convergence and a residue evaluation of the localized integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof retains the path deformation, small-variable comparison, uniformity claim, rescaling, and residue conclusion.",
+          "representation_dependency": "High: the integral statement and some kernels are damaged, while the localization and residue mechanism is prose-legible; exact asymptotic requires the scan.",
+          "unit_id": "conrey1989_v2_u15_localization_residue"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 870,
+            "line_start": 770,
+            "title": "Estermann functional equation and Mellin conversion of the off-diagonal sum",
+            "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+            "unit_type": "functional-equation-transform",
+            "why_material": "The additive-twist Dirichlet series is continued and given a functional equation, then Mellin inversion and a contour move turn the exponentially smoothed double sum into dual Estermann terms."
+          },
+          {
+            "line_end": 1040,
+            "line_start": 936,
+            "title": "Functional equation, contour splitting, and residue extraction of the main term",
+            "unit_id": "conrey1989_v2_u16_main_term_extraction",
+            "unit_type": "contour-main-term",
+            "why_material": "The proof shifts the defining contour, discards a localized residue, applies zeta's functional equation, splits into two rays, invokes the Estermann transform, and uses the localization lemma to show the two M terms reproduce the claimed main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The target derivative moment is generated by shift variables, factorized into arithmetic and analytic pieces, and evaluated after a functional-equation dualization and localized residue calculation.",
+            "limit": "Several exact kernels and normalizations are absent from the text layer, so the synthesis is mechanism-level only.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u11_shifted_generating_proposition",
+              "conrey1989_v2_u12_arithmetic_analytic_factorization",
+              "conrey1989_v2_u14_estermann_mellin_duality",
+              "conrey1989_v2_u15_localization_residue",
+              "conrey1989_v2_u16_main_term_extraction"
+            ],
+            "title": "Shift differentiation and dual contour evaluation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u15_localization_residue",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u15_localization_residue",
+          "spontaneous_reading": "The smoothing contour is localized at its singular point: deform to an indented real path, compare with a simpler local model, rescale x by T, and let uniform convergence reduce the limit to a residue."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u15_localization_residue",
+          "source_grounded_mathematics": "The proof deforms the path to the positive real axis with a small upper-half-plane indentation at v=1, writes v=e^x, and compares r(s1,a) with a model R(s1,a) using the small-x behavior of the kernel. After y=Tx, uniform convergence in the bounded parameters permits passage to the limit, and the residue theorem gives the stated asymptotic R, hence r.",
+          "conceptual_reading": "Only a shrinking neighborhood of the singular point contributes to the leading asymptotic. Rescaling reveals a universal local contour integral while the remaining kernel difference vanishes uniformly.",
+          "representation_or_bridge": "The variables v, x=log v, and y=Tx successively expose the singular point, its local additive coordinate, and its asymptotic scale; the final bridge is a residue calculation.",
+          "boundary_or_failure": "The defining integral and parts of the kernel are damaged, so the exact asymptotic constant should not be reconstructed beyond the legible residue conclusion. Uniformity is asserted within bounded shift parameters, not globally.",
+          "uncertainty": "Moderate for the localization and residue mechanism; high for the exact integral formula and signs."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transition from g to the double sums, decomposition into M, R, and E pieces, and the identification of both main contributions.",
+      "line_end": 1040,
+      "line_start": 936,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: many displayed integrals are corrupt, but the ordered contour/functional-equation/residue pipeline and equality of the two main contributions are explicit; exact reconstruction needs the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof shifts the defining contour, discards a localized residue, applies zeta's functional equation, splits into two rays, invokes the Estermann transform, and uses the localization lemma to show the two M terms reproduce the claimed main term.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional equation, contour splitting, and residue extraction of the main term",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u16_main_term_extraction.txt",
+      "unit_bytes": 3912,
+      "unit_id": "conrey1989_v2_u16_main_term_extraction",
+      "unit_sha256": "61f7ba0dddbbef1d82f7ea88e1cb4289d57e48a75b67e069eabeb4cee29bba2f",
+      "unit_type": "contour-main-term",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u16_main_term_extraction.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 928,
+          "line_end": 935,
+          "text": "Again, for fixed <5>0 the convergence is uniform in a, fc, and ω<^: 1. Letting T —* oo we\nhave, by the residue theorem,\n\n                   lim R(Sl,a) = e-a J eim'dy/y = e- f eiyd);/j; = -πί^ 0 .\n                   T~* oo                 <g>                    ^\n\n\nThus,     (5!, a)= —iiie~a + od(l) whence the lemma follows.\n",
+          "sha256": "4ad537d50d20866c4926da9570e861f536baac4bbd2d95f4b5c862803b169ff7"
+        },
+        "after": {
+          "line_start": 1041,
+          "line_end": 1048,
+          "text": "\n\n                                          8. The error terms\n\n      In this section we complete the proof of Lemma 2 which completes the proofs of\nthe theorems. This section is where the important work of Deshouiller and Iwaniec on\naverages of Kloosterman sums enters.\n      It remains to bound\n",
+          "sha256": "9422d69be038e9b7ac3efaea6cfe254688d4bd29434d2d2bfd39309de7e2f61f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. The main term",
+            "line_end": 1042,
+            "line_start": 742,
+            "mathematical_role": "Uses smoothing, an Estermann-type functional equation, Mellin inversion, localization, contour shifts, and residues to identify the main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1040,
+          "line_start": 936,
+          "title": "Functional equation, contour splitting, and residue extraction of the main term",
+          "unit_id": "conrey1989_v2_u16_main_term_extraction",
+          "unit_type": "contour-main-term",
+          "why_material": "The proof shifts the defining contour, discards a localized residue, applies zeta's functional equation, splits into two rays, invokes the Estermann transform, and uses the localization lemma to show the two M terms reproduce the claimed main term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the transition from g to the double sums, decomposition into M, R, and E pieces, and the identification of both main contributions.",
+          "representation_dependency": "Very high: many displayed integrals are corrupt, but the ordered contour/functional-equation/residue pipeline and equality of the two main contributions are explicit; exact reconstruction needs the scan.",
+          "unit_id": "conrey1989_v2_u16_main_term_extraction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 935,
+            "line_start": 871,
+            "title": "Uniform localization of the smoothing contour near its singular point",
+            "unit_id": "conrey1989_v2_u15_localization_residue",
+            "unit_type": "asymptotic-localization",
+            "why_material": "After deforming to a real-axis contour with an indentation, rescaling around the singular point gives uniform convergence and a residue evaluation of the localized integral."
+          },
+          {
+            "line_end": 1168,
+            "line_start": 1043,
+            "title": "Dyadic off-diagonal reduction and the matched analytic/arithmetic bounds",
+            "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+            "unit_type": "error-decomposition",
+            "why_material": "The remainder is organized by gcd and dyadic N,U,V ranges; the contour is chosen according to whether UV exceeds TN, and separate kernel and exponential-sum lemmas combine to make the total error negligible under the stated length restrictions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The target derivative moment is generated by shift variables, factorized into arithmetic and analytic pieces, and evaluated after a functional-equation dualization and localized residue calculation.",
+            "limit": "Several exact kernels and normalizations are absent from the text layer, so the synthesis is mechanism-level only.",
+            "parent_local_unit_ids": [
+              "conrey1989_v2_u11_shifted_generating_proposition",
+              "conrey1989_v2_u12_arithmetic_analytic_factorization",
+              "conrey1989_v2_u14_estermann_mellin_duality",
+              "conrey1989_v2_u15_localization_residue",
+              "conrey1989_v2_u16_main_term_extraction"
+            ],
+            "title": "Shift differentiation and dual contour evaluation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1042,
+              "line_start": 1041,
+              "reason": "Whitespace before error-term section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u16_main_term_extraction",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u16_main_term_extraction",
+          "spontaneous_reading": "The main term is preserved through a long representation chain: shift the contour, apply zeta's functional equation, split into two rays, invoke the Estermann transform, and isolate M, R, and E pieces. The two M pieces then reproduce the same claimed main contribution."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u16_main_term_extraction",
+          "source_grounded_mathematics": "The contour defining g is moved past a pole at s=1−α whose residue is shown negligible. After applying the zeta functional equation, summation and integration are interchanged and the path is split onto L_A and L_−A. Lemma 5 decomposes each resulting J_i into M_i+R_i+E_i; Lemma 6 evaluates the localized M_1 sum, and the source states that M_2 gives the same expression.",
+          "conceptual_reading": "The proof identifies invariant leading content across several changes of representation. Main, residual, and error components are separated early so that only the stable residue/local contribution survives into the claimed formula.",
+          "representation_or_bridge": "The bridge runs from g to smoothed double sums J_i, then through Estermann duality to M_i, R_i, and E_i, with the localization lemma converting M_i into the arithmetic main term.",
+          "boundary_or_failure": "The error pieces are not controlled in this unit; that burden is deferred to the next section. Many displayed integrals are corrupt, so equality of exact formulas and constants requires scan verification.",
+          "uncertainty": "Moderate for the ordered proof pipeline and equality of the two main contributions; very high for detailed formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes disposal of the R term, definitions of the dyadic sums, the conditional contour move and residue, Lemmas 7 and 8, and their final aggregation.",
+      "line_end": 1168,
+      "line_start": 1043,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the bounds contain damaged exponents and symbols; the case split and error-budget architecture are recoverable, but exact admissible inequalities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remainder is organized by gcd and dyadic N,U,V ranges; the contour is chosen according to whether UV exceeds TN, and separate kernel and exponential-sum lemmas combine to make the total error negligible under the stated length restrictions.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic off-diagonal reduction and the matched analytic/arithmetic bounds",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u17_dyadic_error_budget.txt",
+      "unit_bytes": 4489,
+      "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+      "unit_sha256": "ca69ac713df3a983946596e11187b0e5d08228a86bd25fc06af42b06687a40c8",
+      "unit_type": "error-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u17_dyadic_error_budget.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1035,
+          "line_end": 1042,
+          "text": "\n\n\n\nWe get exactly the same expression for the sum of the M2. Thus, from the terms with\nM! and M2 we get the main term of g in Lemma 2.\n\n\n",
+          "sha256": "2166682b3459f5c93352e959ce82359f5ebab0c0285af95a11807060150bfd58"
+        },
+        "after": {
+          "line_start": 1169,
+          "line_end": 1176,
+          "text": "\n     Proof of Lemma 8. Initially we use the fact that the variable g can be separated\nfrom u and from v since, for example,\n\n\n\n\nis a sum of «: l terms of the shape a constant times\n",
+          "sha256": "52876c320406b1990834b4925cc1efcc6626bbaf98a42ee5ba91eaffb6433738"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1168,
+          "line_start": 1043,
+          "title": "Dyadic off-diagonal reduction and the matched analytic/arithmetic bounds",
+          "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+          "unit_type": "error-decomposition",
+          "why_material": "The remainder is organized by gcd and dyadic N,U,V ranges; the contour is chosen according to whether UV exceeds TN, and separate kernel and exponential-sum lemmas combine to make the total error negligible under the stated length restrictions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes disposal of the R term, definitions of the dyadic sums, the conditional contour move and residue, Lemmas 7 and 8, and their final aggregation.",
+          "representation_dependency": "Very high: the bounds contain damaged exponents and symbols; the case split and error-budget architecture are recoverable, but exact admissible inequalities require scan verification.",
+          "unit_id": "conrey1989_v2_u17_dyadic_error_budget"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1040,
+            "line_start": 936,
+            "title": "Functional equation, contour splitting, and residue extraction of the main term",
+            "unit_id": "conrey1989_v2_u16_main_term_extraction",
+            "unit_type": "contour-main-term",
+            "why_material": "The proof shifts the defining contour, discards a localized residue, applies zeta's functional equation, splits into two rays, invokes the Estermann transform, and uses the localization lemma to show the two M terms reproduce the claimed main term."
+          },
+          {
+            "line_end": 1277,
+            "line_start": 1170,
+            "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+            "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+            "unit_type": "arithmetic-decomposition",
+            "why_material": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The four-sevenths-scale mollifier is enabled not by the variational calculation but by controlling the off-diagonal dyadic sums with averaged Kloosterman estimates and a complementary Weil-bound case.",
+            "limit": "Exact exponent inequalities are extraction-sensitive and must be checked against the scan before treating the threshold derivation as certified.",
+            "parent_local_unit_ids": [
+              "conrey1989_u01_longer_mollifier_synthesis",
+              "conrey1989_v2_u08_mean_value_bottleneck",
+              "conrey1989_v2_u17_dyadic_error_budget",
+              "conrey1989_v2_u19_averaged_kloosterman_range",
+              "conrey1989_v2_u20_weil_fallback_range"
+            ],
+            "title": "Longer mollifier as an off-diagonal error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1042,
+              "line_start": 1041,
+              "reason": "Whitespace before error-term section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+          "spontaneous_reading": "The off-diagonal remainder is turned into a scale-by-scale budget. Gcd extraction and dyadic N,U,V blocks isolate an analytic kernel G and an arithmetic exponential sum J; the contour position is then chosen according to whether UV is above or below TN so the two bounds match."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+          "source_grounded_mathematics": "The R contribution is first made negligible. The E contribution is written as a double contour integral, mn is regrouped, h and k are organized by their gcd, and the remaining sum is decomposed into dyadic blocks J(N,U,V,…). The s-contour is moved when UV≥TN and left on the original line otherwise. Lemmas 7 and 8 give separate bounds for G and J, whose aggregation makes the total error negligible under the stated length restrictions.",
+          "conceptual_reading": "Contour choice and arithmetic estimation are co-designed by scale. Rather than demand one uniform estimate, the proof changes analytic representation at the boundary where the relative sizes of UV and TN change.",
+          "representation_or_bridge": "The remainder becomes dyadic blocks Z(N,U,V), each factored into an analytic kernel estimate and an exponential-sum estimate; the UV versus TN test routes each block.",
+          "boundary_or_failure": "The displayed exponents and final admissibility inequalities are damaged, and Lemma 8 contains the deep Kloosterman input still to be proved. Exact threshold derivation cannot be certified from this span alone.",
+          "uncertainty": "Moderate for the decomposition and case-routing mechanism; very high for exponent bookkeeping and constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes separability properties, the identity and coefficient definitions, the S1/S2/S3 split, the common target bound, and the regrouping that prepares S1 for a Kloosterman estimate.",
+      "line_end": 1277,
+      "line_start": 1170,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several coefficient formulas are partially extracted, but the decomposition and routing logic are clear; exact identities should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u18_vaughan_mobius_decomposition.txt",
+      "unit_bytes": 3758,
+      "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+      "unit_sha256": "aa5ddf60499ae6a85e801bf16ad2c2b74398ac7fba1cb898a189b599c43d0c83",
+      "unit_type": "arithmetic-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u18_vaughan_mobius_decomposition.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1162,
+          "line_end": 1169,
+          "text": "                                                                          ) Χ #'-'+          Χ      Τ'1\n                                                                            N,i/,F          NtU,V\n\n\n\n\nοη taking η = ε/2. Since < 7/4, this is o £ (l) s T —> οο if δ and ε are sufficiently small.\n\n",
+          "sha256": "48da508ba8166efb84b9e8bd74a76796bb7907920c5177a579c6207820711ada"
+        },
+        "after": {
+          "line_start": 1278,
+          "line_end": 1285,
+          "text": "      Lemma 9. Suppose that \\c(a, n)\\ ^ l and U<zAB<3zU. Then for any ε>0\n\n                                                            (n T)\\\n                             Σ Σ Σ\n                             v~V b~B     ~Ν\n                                                   Σ Φ, η)* l — l\n                                                   α~Λ          \\   υ\n                                                                        /\n",
+          "sha256": "9fa4015d1d02afa152b68fb7c797f348a3ce3029aba5998ac85ffdc2ef13c7a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1277,
+          "line_start": 1170,
+          "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "unit_type": "arithmetic-decomposition",
+          "why_material": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes separability properties, the identity and coefficient definitions, the S1/S2/S3 split, the common target bound, and the regrouping that prepares S1 for a Kloosterman estimate.",
+          "representation_dependency": "High: several coefficient formulas are partially extracted, but the decomposition and routing logic are clear; exact identities should be scan-checked.",
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1168,
+            "line_start": 1043,
+            "title": "Dyadic off-diagonal reduction and the matched analytic/arithmetic bounds",
+            "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+            "unit_type": "error-decomposition",
+            "why_material": "The remainder is organized by gcd and dyadic N,U,V ranges; the contour is chosen according to whether UV exceeds TN, and separate kernel and exponential-sum lemmas combine to make the total error negligible under the stated length restrictions."
+          },
+          {
+            "line_end": 1349,
+            "line_start": 1276,
+            "title": "Averaged Kloosterman bound and exponent bookkeeping for the hard range",
+            "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+            "unit_type": "spectral-error-control",
+            "why_material": "A Deshouillers-Iwaniec lemma controls the multilinear Kloosterman family; the proof then reduces its bound to finitely many exponent tuples and checks the positive and negative exponent cases, exposing the length restriction needed for the longer mollifier."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "spontaneous_reading": "Smooth-weight separability removes the gcd variable, and Vaughan's identity breaks the Möbius-weighted exponential sum into three pieces with different internal factorizations. Each piece is then assigned to the estimate suited to its structure."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "source_grounded_mathematics": "The source separates g from u and v in the smooth weights and records derivative and separability properties for coefficient functions r and r*. It derives a Vaughan-type expression for μ from an identity involving 1/ζ and a short Dirichlet polynomial M, producing coefficients c1,c2,c3 and S=S1+S2+S3. S2 is treated trivially; S1 is regrouped into variables a and b with U comparable to AB in preparation for an averaged Kloosterman lemma.",
+          "conceptual_reading": "A difficult arithmetic coefficient is not estimated intact. Algebraic decomposition reveals components with distinct complexity, enabling a hybrid proof instead of a single worst-case bound.",
+          "representation_or_bridge": "Vaughan's identity is the bridge from the Möbius coefficient to three structured multilinear sums; separable smooth weights preserve the dyadic organization needed by later estimates.",
+          "boundary_or_failure": "Several coefficient definitions and the common target inequality are partially lost, so exact identity verification requires the scan. The decomposition alone does not give cancellation; later Kloosterman estimates do.",
+          "uncertainty": "Moderate for the three-way routing and separability logic; high for exact coefficient formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The one-line overlap with the preceding unit preserves the transition from regrouped S1 to the external averaged bound.",
+      "line_end": 1349,
+      "line_start": 1276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the lemma statement and several exponent expressions are extraction-damaged, though the finite-case bookkeeping and thresholds are visible; exact inequalities require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Deshouillers-Iwaniec lemma controls the multilinear Kloosterman family; the proof then reduces its bound to finitely many exponent tuples and checks the positive and negative exponent cases, exposing the length restriction needed for the longer mollifier.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaged Kloosterman bound and exponent bookkeeping for the hard range",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u19_averaged_kloosterman_range.txt",
+      "unit_bytes": 2554,
+      "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+      "unit_sha256": "b4e3d363c74187d9e1b29e2e631d2436ae662e0cb5a487188b3b6f412e4253cb",
+      "unit_type": "spectral-error-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u19_averaged_kloosterman_range.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1268,
+          "line_end": 1275,
+          "text": "can be split into <zeye sums of the shape\n\n\n      (88)              S;= Σ r (n) Σ Σ r(a)r(b)r(v)                    e(—}\n                              n~N       a~A v~V                         \\V      /\n                                         b~B\n                                          (ab,v)\n\n",
+          "sha256": "6e9dc99a18c01930c9f02f28548e458ded308a8cc6238164ddeb79b4ee1b1515"
+        },
+        "after": {
+          "line_start": 1350,
+          "line_end": 1357,
+          "text": "\n      Finally, we consider S3. Grouping together α and β into a variable a and\nreplacing y by b we see that S3 can be split into <^ey£ sums of the shape\n\n\n      (97)        S'3=£r(v)          Σ         '*(*) Σ Φ)      Σ Φ)\n                        t>~r         b-B           «~Ν        α~^\n                                  (b,vg) = l                (α,ι;) = 1\n",
+          "sha256": "abf60f5a9893f907f7bf14c014139b68091bd9e117ed0248b7d9b9bccdf59c46"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1349,
+          "line_start": 1276,
+          "title": "Averaged Kloosterman bound and exponent bookkeeping for the hard range",
+          "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+          "unit_type": "spectral-error-control",
+          "why_material": "A Deshouillers-Iwaniec lemma controls the multilinear Kloosterman family; the proof then reduces its bound to finitely many exponent tuples and checks the positive and negative exponent cases, exposing the length restriction needed for the longer mollifier."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The one-line overlap with the preceding unit preserves the transition from regrouped S1 to the external averaged bound.",
+          "representation_dependency": "Very high: the lemma statement and several exponent expressions are extraction-damaged, though the finite-case bookkeeping and thresholds are visible; exact inequalities require scan verification.",
+          "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1277,
+            "line_start": 1170,
+            "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+            "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+            "unit_type": "arithmetic-decomposition",
+            "why_material": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy."
+          },
+          {
+            "line_end": 1396,
+            "line_start": 1351,
+            "title": "Spectral average in one range, pointwise Weil bound in the complementary range",
+            "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+            "unit_type": "case-split-error-control",
+            "why_material": "For the third Vaughan piece the proof splits on the factor size: the large-factor range reuses the averaged lemma, while the small-factor range sums first and applies Weil's pointwise Kloosterman bound plus partial summation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The four-sevenths-scale mollifier is enabled not by the variational calculation but by controlling the off-diagonal dyadic sums with averaged Kloosterman estimates and a complementary Weil-bound case.",
+            "limit": "Exact exponent inequalities are extraction-sensitive and must be checked against the scan before treating the threshold derivation as certified.",
+            "parent_local_unit_ids": [
+              "conrey1989_u01_longer_mollifier_synthesis",
+              "conrey1989_v2_u08_mean_value_bottleneck",
+              "conrey1989_v2_u17_dyadic_error_budget",
+              "conrey1989_v2_u19_averaged_kloosterman_range",
+              "conrey1989_v2_u20_weil_fallback_range"
+            ],
+            "title": "Longer mollifier as an off-diagonal error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+          "spontaneous_reading": "A deep averaged Kloosterman estimate is converted into a finite exponent-feasibility check. The possible monomials are encoded by seven exponent tuples, then positive and negative powers of the grouped factor A are bounded differently to expose the allowed mollifier length."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+          "source_grounded_mathematics": "Lemma 9 supplies an averaged bound for the multilinear Kloosterman family with U comparable to AB. Its right side is reduced to monomials A^a N^n U^u V^v indexed by a finite set E. For a≥0 the proof uses A≤U^(1/2), while for a<0 it uses A≥U^(1/4); the resulting cases are checked using U,V≤y and yield conditions including y below T^(2/3) and, in the tighter case, below T^(8/13), followed by the bound for S1.",
+          "conceptual_reading": "Spectral cancellation becomes algebraic bookkeeping after the external estimate is applied. A finite tuple set makes the worst scaling obstruction visible and identifies which range controls admissible length.",
+          "representation_or_bridge": "The averaged Kloosterman lemma maps an oscillatory multilinear sum to a finite family of scale monomials; exponent inequalities then map those monomials to a uniform dyadic error bound.",
+          "boundary_or_failure": "The lemma statement and several exponent expressions are extraction-damaged. The mechanism and visible thresholds are supported, but the exact inequalities and their relation to every global parameter require scan verification.",
+          "uncertainty": "Moderate for the finite-case strategy and visible 2/3 and 8/13 thresholds; high for the exact averaged bound."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the factor-size dichotomy, derivative control used in summation by parts, the resulting comparison, and closure of the lemma and theorems.",
+      "line_end": 1396,
+      "line_start": 1351,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: displayed sums are incomplete, but the range split and choice of bounds are explicit in prose; constants and exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the third Vaughan piece the proof splits on the factor size: the large-factor range reuses the averaged lemma, while the small-factor range sums first and applies Weil's pointwise Kloosterman bound plus partial summation.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral average in one range, pointwise Weil bound in the complementary range",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u20_weil_fallback_range.txt",
+      "unit_bytes": 1526,
+      "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+      "unit_sha256": "ff02a58cdb629093e014d2891c593b5c6caaefe31bc0b1e697aa0aed00f95893",
+      "unit_type": "case-split-error-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u20_weil_fallback_range.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1343,
+          "line_end": 1350,
+          "text": "for both (a, n, M, t;) e E with α < 0. The terms we get for the left side are\n\n      (95)                          T~V /2 and T- 4 y 27/4\n\nand so (94) holds since y <^c Γ8/13. It follows now that\n\n      (96)                     S; <^ε max(7W, UV)        (yN)eT-1/2y1/s.\n\n",
+          "sha256": "3d3c3241f2fb97c441d3399a56c5873c21db9f9e69dd211f22a3bd0456158345"
+        },
+        "after": {
+          "line_start": 1397,
+          "line_end": 1404,
+          "text": "\n      Note added in proof. We can improve Theorem l slightly. With                        = 1.28 and\n\n                            Q(x) = 0.492 + 0.602 (l -2x) -0.08 (l -2x) 3\n                                   -0.06(l»2x) 5 + 0.046(l-2x) 7\n\nwe have κ > 0.4088.\n\n",
+          "sha256": "61fdb079d051b134ec200b49dc481ecbdf687dc378f88a8945442f512149e9d7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1396,
+          "line_start": 1351,
+          "title": "Spectral average in one range, pointwise Weil bound in the complementary range",
+          "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+          "unit_type": "case-split-error-control",
+          "why_material": "For the third Vaughan piece the proof splits on the factor size: the large-factor range reuses the averaged lemma, while the small-factor range sums first and applies Weil's pointwise Kloosterman bound plus partial summation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the factor-size dichotomy, derivative control used in summation by parts, the resulting comparison, and closure of the lemma and theorems.",
+          "representation_dependency": "High: displayed sums are incomplete, but the range split and choice of bounds are explicit in prose; constants and exponents require scan verification.",
+          "unit_id": "conrey1989_v2_u20_weil_fallback_range"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1349,
+            "line_start": 1276,
+            "title": "Averaged Kloosterman bound and exponent bookkeeping for the hard range",
+            "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+            "unit_type": "spectral-error-control",
+            "why_material": "A Deshouillers-Iwaniec lemma controls the multilinear Kloosterman family; the proof then reduces its bound to finitely many exponent tuples and checks the positive and negative exponent cases, exposing the length restriction needed for the longer mollifier."
+          },
+          {
+            "line_end": 1403,
+            "line_start": 1398,
+            "title": "Post-proof numerical improvement without a new analytic mechanism",
+            "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+            "unit_type": "parameter-update",
+            "why_material": "The note records a new auxiliary polynomial and parameter value that slightly improves the all-critical-line proportion to 0.4088, showing that the analytic framework admits later numerical retuning."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The four-sevenths-scale mollifier is enabled not by the variational calculation but by controlling the off-diagonal dyadic sums with averaged Kloosterman estimates and a complementary Weil-bound case.",
+            "limit": "Exact exponent inequalities are extraction-sensitive and must be checked against the scan before treating the threshold derivation as certified.",
+            "parent_local_unit_ids": [
+              "conrey1989_u01_longer_mollifier_synthesis",
+              "conrey1989_v2_u08_mean_value_bottleneck",
+              "conrey1989_v2_u17_dyadic_error_budget",
+              "conrey1989_v2_u19_averaged_kloosterman_range",
+              "conrey1989_v2_u20_weil_fallback_range"
+            ],
+            "title": "Longer mollifier as an off-diagonal error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1404,
+              "line_start": 1404,
+              "reason": "Whitespace before references."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+          "spontaneous_reading": "The third Vaughan piece is handled by an adaptive estimator: when the factor A is large enough, reuse the averaged spectral bound; when A is small, sum in b first and use Weil's pointwise Kloosterman bound plus partial summation."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+          "source_grounded_mathematics": "After regrouping S3 with U comparable to AB and A at most about U^(1/2), the proof splits near A=U^(1/4). The larger-A range is treated as before with Lemma 9. In the smaller-A range, the b-sum is bounded using Weil's bound, the smooth coefficient is restored by summation by parts using its derivative estimate, and the resulting terms are compared with the common target bound, closing Lemma 8 and the theorems.",
+          "conceptual_reading": "No single bound dominates at every scale. The proof partitions parameter space and chooses averaged cancellation or pointwise cancellation according to which is efficient in that region.",
+          "representation_or_bridge": "The cutoff at the quarter-power scale routes the same structured sum either to the spectral-average interface or to a direct Kloosterman-sum interface controlled by partial summation.",
+          "boundary_or_failure": "The extracted inequalities and some comparison exponents are incomplete, so the final numerical error margin cannot be independently checked here. The pointwise fallback complements rather than strengthens the averaged lemma everywhere.",
+          "uncertainty": "Low-to-moderate for the case split and named tools; high for exact bounds and constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept as a distinct update because it changes the reported numerical certificate but not the preceding proof architecture.",
+      "line_end": 1403,
+      "line_start": 1398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the polynomial and improved bound are legible, but one parameter glyph is missing and should be checked against the scan before reproduction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The note records a new auxiliary polynomial and parameter value that slightly improves the all-critical-line proportion to 0.4088, showing that the analytic framework admits later numerical retuning.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Post-proof numerical improvement without a new analytic mechanism",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u21_note_added_parameter_update.txt",
+      "unit_bytes": 263,
+      "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+      "unit_sha256": "c0c4b622d8cbeee53bba2ad2bdd50228c51091b0d9ee793dcad73b522073361a",
+      "unit_type": "parameter-update",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u21_note_added_parameter_update.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1390,
+          "line_end": 1397,
+          "text": "\nThus, in any event\n\n\n\n\nThis completes the proof of the lemma and the theorems.\n\n",
+          "sha256": "fd1c96698cfe1971178ffa6a4128ee59f59d9053cdf51dbb83836112048ff96e"
+        },
+        "after": {
+          "line_start": 1404,
+          "line_end": 1411,
+          "text": "\n                                                References\n\n[1] R. J. Anderson, Simple zeros of the Riemann zeta-function, J. Number Theory 17 (1983), 176—182.\n[2] R. Balasubramanian, J. B. Conrey and D. R. Heath-Brown, Asymptotic mean square of the product of the\n    Riemann zeta-function and a Dirichlet polynomial, J. reine angew. Math. 357 (1985), 161—181.\n[3] J. B. Conrey, Zeros of derivatives of Riemann's xi-function on the critical line, J. Number Theory 16\n    (1983), 49—74.\n",
+          "sha256": "0a9b068ad39fcd7d71a9e3b122ea54f7f606e302c29079b112c39a9b59232a06"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1403,
+          "line_start": 1398,
+          "title": "Post-proof numerical improvement without a new analytic mechanism",
+          "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+          "unit_type": "parameter-update",
+          "why_material": "The note records a new auxiliary polynomial and parameter value that slightly improves the all-critical-line proportion to 0.4088, showing that the analytic framework admits later numerical retuning."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept as a distinct update because it changes the reported numerical certificate but not the preceding proof architecture.",
+          "representation_dependency": "Moderate: the polynomial and improved bound are legible, but one parameter glyph is missing and should be checked against the scan before reproduction.",
+          "unit_id": "conrey1989_v2_u21_note_added_parameter_update"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1396,
+            "line_start": 1351,
+            "title": "Spectral average in one range, pointwise Weil bound in the complementary range",
+            "unit_id": "conrey1989_v2_u20_weil_fallback_range",
+            "unit_type": "case-split-error-control",
+            "why_material": "For the third Vaughan piece the proof splits on the factor size: the large-factor range reuses the averaged lemma, while the small-factor range sums first and applies Weil's pointwise Kloosterman bound plus partial summation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the mean-value theorem fixes an admissible mollifier length, polynomial and derivative-combination freedom is optimized separately to convert the analytic estimate into the best recorded proportion.",
+            "limit": "The source gives certificates for particular choices, not a claim of global joint optimality over every admissible parameterization.",
+            "parent_local_unit_ids": [
+              "conrey1989_u02_variational_freedom_v1",
+              "conrey1989_v2_u09_variational_mollifier",
+              "conrey1989_v2_u10_numerical_parameter_certificate",
+              "conrey1989_v2_u21_note_added_parameter_update"
+            ],
+            "title": "Analytic admissibility before numerical optimization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1404,
+              "line_start": 1404,
+              "reason": "Whitespace before references."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+          "spontaneous_reading": "A post-proof retuning of the auxiliary polynomial improves the all-critical-line proportion from the earlier certificate to 0.4088 without changing the analytic mechanism."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u21_note_added_parameter_update",
+          "source_grounded_mathematics": "The note gives a parameter value displayed as 1.28, lists an odd-power polynomial Q in 1−2x with coefficients 0.492, 0.602, −0.08, −0.06, and 0.046, and states κ>0.4088.",
+          "conceptual_reading": "The analytic framework leaves optimization slack: once admissibility and the mean-value theorem are fixed, improved numerical choices can sharpen the final certificate independently of the proof architecture.",
+          "representation_or_bridge": "The revised Q changes the derivative combination fed into the already-established mean-square and zero-count pipeline, yielding a better terminal proportion.",
+          "boundary_or_failure": "This is a parameter update, not a new analytic theorem, a global optimality claim, or an update to the simple-zero proportion. The name of the parameter equal to 1.28 and one polynomial glyph are missing or corrupt.",
+          "uncertainty": "Low for κ>0.4088 and the legible coefficients; moderate-to-high for exact reproducibility because of the missing parameter label and OCR damage."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "46432935d923e193b1d45c3456b3cffa0b04baa381f8b100f2d33871cee628ea"
+}

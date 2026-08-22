@@ -1,0 +1,731 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_rodgers_tao2020_newman_7e18d13b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "rodgers_tao2020_newman",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long span is retained because the successive X1–X4 decomposition and comparison with the ξ-system form one dependency chain.",
+      "line_end": 2879,
+      "line_start": 2606,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many summation restrictions are extraction-sensitive; each cancellation and negligible regime is nevertheless stated in surrounding prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The derivative sum is decomposed into diagonal, near, separated-near, and far pieces; oddness, symmetric triple cancellation, classical-reference subtraction, and scale separation eliminate every term except renormalized energy.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near/far decomposition identifies the dissipation with renormalized energy",
+      "unit_artifact_relpath": "depth/units/rt2020_d25_near_far_cancellation.txt",
+      "unit_bytes": 15385,
+      "unit_id": "rt2020_d25_near_far_cancellation",
+      "unit_sha256": "a11f0c7970f443e1fe34f0a4ca14e9e34d29553b7b531debd7025b84cb8b8c77",
+      "unit_type": "decomposition-and-cancellation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d25_near_far_cancellation.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2598,
+          "line_end": 2605,
+          "text": "                                                                               (t) − xi (t)\n                                                T\n\n\n\nThe above analysis also shows that the integrand is absolutely integrable in time.\nFrom the Lebesgue differentiation theorem, we conclude that H̃T is absolutely\ncontinuous and that (78) holds at almost every time t.\n",
+          "sha256": "0e4136605163633298f4c9ced0e00ed9b539ec91ef0b66903ac868e2bd7d1836"
+        },
+        "after": {
+          "line_start": 2880,
+          "line_end": 2887,
+          "text": "    To use Proposition 22, we need estimates that ensure Ẽ T is large when H̃T is\nlarge. To this end we have\nLemma 24. Let m be a natural number, and let Λ/2 ≤ t ≤ 0. Let T > 0, and let\nδ = δ(T ) go to zero as T → ∞ sufficiently slowly. If H̃T (t) ≥ δmT log3+ T , then\nẼ T (t) ≫ δ22m T log3+ T where the implied constant is absolute.\nProof. As before, we suppress explicit dependence on t, and we may assume T\nto be large as the claim is trivial from compactness for T = O(1). From Lemma\n19 we have (for δ decaying sufficiently slowly) that\n",
+          "sha256": "4e95cca017b081232c98b44e8b37adeeb64055452ad47b09330c3c71035a440c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Strong control on integrated energy",
+            "line_end": 3017,
+            "line_start": 2037,
+            "mathematical_role": "Renormalizes energy and Hamiltonian relative to classical locations, localizes them smoothly, proves an approximate dissipation identity with negligible errors, establishes coercivity, and derives strong integrated-energy decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2879,
+          "line_start": 2606,
+          "title": "Near/far decomposition identifies the dissipation with renormalized energy",
+          "unit_id": "rt2020_d25_near_far_cancellation",
+          "unit_type": "decomposition-and-cancellation",
+          "why_material": "The derivative sum is decomposed into diagonal, near, separated-near, and far pieces; oddness, symmetric triple cancellation, classical-reference subtraction, and scale separation eliminate every term except renormalized energy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The long span is retained because the successive X1–X4 decomposition and comparison with the ξ-system form one dependency chain.",
+          "representation_dependency": "Many summation restrictions are extraction-sensitive; each cancellation and negligible regime is nevertheless stated in surrounding prose.",
+          "unit_id": "rt2020_d25_near_far_cancellation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2605,
+            "line_start": 2489,
+            "title": "The truncated renormalized Hamiltonian dissipates as renormalized energy",
+            "unit_id": "rt2020_d24_renormalized_dissipation_identity",
+            "unit_type": "approximate-monotonicity",
+            "why_material": "Proposition 22 rigorously differentiates the infinite localized Hamiltonian, using weak integrated-energy control for dominated convergence, and obtains ∂_t H̃_T=−4Ẽ_T plus negligible errors."
+          },
+          {
+            "line_end": 2973,
+            "line_start": 2880,
+            "title": "Large Hamiltonian defect forces quantitatively large energy",
+            "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian",
+            "unit_type": "coercivity",
+            "why_material": "Lemma 24 localizes any large H̃_T to very short pairs and then splits by compression scale; convex-potential comparisons force a lower bound on Ẽ_T."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes removal of long-range contributions, control of insufficiently compressed pairs, and conversion of the remaining defect to energy.",
+      "line_end": 2973,
+      "line_start": 2880,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dyadic thresholds and δ powers are display-dependent; the concentration-and-coercivity logic is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 24 localizes any large H̃_T to very short pairs and then splits by compression scale; convex-potential comparisons force a lower bound on Ẽ_T.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        53,
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Large Hamiltonian defect forces quantitatively large energy",
+      "unit_artifact_relpath": "depth/units/rt2020_d26_coercivity_energy_from_hamiltonian.txt",
+      "unit_bytes": 4893,
+      "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian",
+      "unit_sha256": "82803513e2cda59872abcd8968dac6587cde8761f6339b23fdde1bd29bb46b04",
+      "unit_type": "coercivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d26_coercivity_energy_from_hamiltonian.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2872,
+          "line_end": 2879,
+          "text": "                                    2    0.1\n                                             |ξk − ξ j|\n                                       j: 0<| j−k|<(T +| j|+|k|)\n                                           |i− j|>(T 2 +|i|+| j|)0.1\n\nfor all other k, so this expression is also negligible by Lemma 21(ii), (iii), (iv)\n(noting that ψT (k) and ψT (i) are comparable). A similar argument also handles\n(84).\n",
+          "sha256": "ccf3c423075a85dc9d8400f93bbf5835eff142078c94c442342a894a0016a3cd"
+        },
+        "after": {
+          "line_start": 2974,
+          "line_end": 2981,
+          "text": "\n   We can now shrink H̃T down to a reasonable size in finite time:\n\nCorollary 25. One has H̃T (t) = O(δT log3+ T ) for Λ/4 ≤ t ≤ 0.\n\nProof. We may take T to be large. From Proposition 22 and Lemma 24, we see\nthat for any natural number m, and for almost every time t for which one has\n                                          H̃T (t) ≥ δmT log3 T,\n",
+          "sha256": "24d6f688c32ab4a1e64d0223649e0aa18f8e9be93781753fc0d03ddb6c061270"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Strong control on integrated energy",
+            "line_end": 3017,
+            "line_start": 2037,
+            "mathematical_role": "Renormalizes energy and Hamiltonian relative to classical locations, localizes them smoothly, proves an approximate dissipation identity with negligible errors, establishes coercivity, and derives strong integrated-energy decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2973,
+          "line_start": 2880,
+          "title": "Large Hamiltonian defect forces quantitatively large energy",
+          "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian",
+          "unit_type": "coercivity",
+          "why_material": "Lemma 24 localizes any large H̃_T to very short pairs and then splits by compression scale; convex-potential comparisons force a lower bound on Ẽ_T."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes removal of long-range contributions, control of insufficiently compressed pairs, and conversion of the remaining defect to energy.",
+          "representation_dependency": "Dyadic thresholds and δ powers are display-dependent; the concentration-and-coercivity logic is clear.",
+          "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2879,
+            "line_start": 2606,
+            "title": "Near/far decomposition identifies the dissipation with renormalized energy",
+            "unit_id": "rt2020_d25_near_far_cancellation",
+            "unit_type": "decomposition-and-cancellation",
+            "why_material": "The derivative sum is decomposed into diagonal, near, separated-near, and far pieces; oddness, symmetric triple cancellation, classical-reference subtraction, and scale separation eliminate every term except renormalized energy."
+          },
+          {
+            "line_end": 3016,
+            "line_start": 2975,
+            "title": "Coercive dissipation shrinks the Hamiltonian in finite time",
+            "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound",
+            "unit_type": "dissipation-bootstrap",
+            "why_material": "Approximate dissipation plus coercivity drives H̃_T down through dyadic levels in a summable time, keeps it small thereafter, and converts the Hamiltonian drop into the strong integrated-energy estimate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The formal gradient-flow intuition becomes rigorous after subtracting the slowly varying classical lattice, smoothly truncating interactions, proving approximate dissipation, and coupling it with coercivity.",
+            "limit": "The reference lattice is not an exact equilibrium and the conclusion depends on a tailored nearby-pair cutoff and error scale; no unqualified global convexity theorem is established.",
+            "parent_local_unit_ids": [
+              "rt2020_d11_zero_flow_relaxation_scale",
+              "rt2020_d12_gradient_flow_energy",
+              "rt2020_d18_reference_renormalized_energy",
+              "rt2020_d21_reference_renormalized_hamiltonian",
+              "rt2020_d24_renormalized_dissipation_identity",
+              "rt2020_d26_coercivity_energy_from_hamiltonian",
+              "rt2020_d27_finite_time_decay_and_strong_bound"
+            ],
+            "title": "From repulsive zero flow to localized equilibrium dissipation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Corollary 25, the level-set iteration, and the final fundamental-theorem-of-calculus deduction of Theorem 17.",
+      "line_end": 3016,
+      "line_start": 2975,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Level parameters and time increments rely on displayed inequalities; the finite-time descent is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Approximate dissipation plus coercivity drives H̃_T down through dyadic levels in a summable time, keeps it small thereafter, and converts the Hamiltonian drop into the strong integrated-energy estimate.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coercive dissipation shrinks the Hamiltonian in finite time",
+      "unit_artifact_relpath": "depth/units/rt2020_d27_finite_time_decay_and_strong_bound.txt",
+      "unit_bytes": 2447,
+      "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound",
+      "unit_sha256": "cfed49b4b20136eccc3106d6acf6bddb3d2e3899cdad1578ee66020ec8e70239",
+      "unit_type": "dissipation-bootstrap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d27_finite_time_decay_and_strong_bound.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2967,
+          "line_end": 2974,
+          "text": "                    |x j −xk |≤2−m |ξ j −ξk |\n\nBut for j, k in this sum, we see from (70), (62) that\n                                   |ξ j − ξk |   m2−2m |ξ j − ξk |2\n             H̃ jk (t) ≪ log                   ≪                    ≪ m2−2m Ẽ jk\n                                   |x j − xk |     |x j − xk |2\nand the claim follows.\n\n",
+          "sha256": "5e5f446727960d4e15a0bbaa6d38373b6d91f83e39063cba5dcd961719a01f06"
+        },
+        "after": {
+          "line_start": 3017,
+          "line_end": 3024,
+          "text": "\n                        8. Controlling the energy at time 0\n    In the previous section we controlled a time average of the energy. Now,\nusing monotonicity properties of the energy, we can in fact control energy at\ntime zero:\n\nProposition 26 (Energy bound at time zero). Let T be large. Then\n                        Ẽ [T log T,2T log T ]Z∗ (0) = oT →∞ (T log3 T ).\n",
+          "sha256": "73480551e439d1dc76eddd3668f53e11c482df19c7a6c26865749dce1523a120"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Strong control on integrated energy",
+            "line_end": 3017,
+            "line_start": 2037,
+            "mathematical_role": "Renormalizes energy and Hamiltonian relative to classical locations, localizes them smoothly, proves an approximate dissipation identity with negligible errors, establishes coercivity, and derives strong integrated-energy decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3016,
+          "line_start": 2975,
+          "title": "Coercive dissipation shrinks the Hamiltonian in finite time",
+          "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound",
+          "unit_type": "dissipation-bootstrap",
+          "why_material": "Approximate dissipation plus coercivity drives H̃_T down through dyadic levels in a summable time, keeps it small thereafter, and converts the Hamiltonian drop into the strong integrated-energy estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Corollary 25, the level-set iteration, and the final fundamental-theorem-of-calculus deduction of Theorem 17.",
+          "representation_dependency": "Level parameters and time increments rely on displayed inequalities; the finite-time descent is explicit.",
+          "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2973,
+            "line_start": 2880,
+            "title": "Large Hamiltonian defect forces quantitatively large energy",
+            "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian",
+            "unit_type": "coercivity",
+            "why_material": "Lemma 24 localizes any large H̃_T to very short pairs and then splits by compression scale; convex-potential comparisons force a lower bound on Ẽ_T."
+          },
+          {
+            "line_end": 3106,
+            "line_start": 3018,
+            "title": "A good interval and short-time propagation transfer average control to time zero",
+            "unit_id": "rt2020_d28_time_zero_energy_strategy",
+            "unit_type": "average-to-endpoint-transfer",
+            "why_material": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The formal gradient-flow intuition becomes rigorous after subtracting the slowly varying classical lattice, smoothly truncating interactions, proving approximate dissipation, and coupling it with coercivity.",
+            "limit": "The reference lattice is not an exact equilibrium and the conclusion depends on a tailored nearby-pair cutoff and error scale; no unqualified global convexity theorem is established.",
+            "parent_local_unit_ids": [
+              "rt2020_d11_zero_flow_relaxation_scale",
+              "rt2020_d12_gradient_flow_energy",
+              "rt2020_d18_reference_renormalized_energy",
+              "rt2020_d21_reference_renormalized_hamiltonian",
+              "rt2020_d24_renormalized_dissipation_identity",
+              "rt2020_d26_coercivity_energy_from_hamiltonian",
+              "rt2020_d27_finite_time_decay_and_strong_bound"
+            ],
+            "title": "From repulsive zero flow to localized equilibrium dissipation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Propositions 26–28, the Fubini–Tonelli interval selection, and the complete high-level iteration.",
+      "line_end": 3106,
+      "line_start": 3018,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The nested interval averages are display-dependent; selection and propagation roles are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        56,
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A good interval and short-time propagation transfer average control to time zero",
+      "unit_artifact_relpath": "depth/units/rt2020_d28_time_zero_energy_strategy.txt",
+      "unit_bytes": 4373,
+      "unit_id": "rt2020_d28_time_zero_energy_strategy",
+      "unit_sha256": "0bf0112396a37ea3ed50448629b1e133e05d1dedfa2edc73cce5bc71cb056370",
+      "unit_type": "average-to-endpoint-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d28_time_zero_energy_strategy.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3010,
+          "line_end": 3017,
+          "text": "continuous functions, one has\n                                            Z 0\n      H̃T (Λ/4) − H̃T (0) = (4 + oT →∞ (1))     Ẽ T (t) dt + oT →∞ (T log3+ T )\n                                                     Λ/4\n\nand the claim (68) now follows from Corollary 25. This concludes the proof of\nTheorem 17.\n\n",
+          "sha256": "b61f824672db148a6ad0ab0fb8e59869f406ec706d572949f9b2c6295bdba377"
+        },
+        "after": {
+          "line_start": 3107,
+          "line_end": 3114,
+          "text": "    The first step is to locate a good subset of particles indexed by an interval\nclose to [I− , I+ ] which does not gain too much energy due to interactions its\nenvironment, due to separation between these particles and the environment.\nFrom (50) and the pigeonhole principle, one can find natural numbers\n        I− ≤ j− − 1 < j− ≤ I− + log3 T ≤ I+ − log3 T ≤ j+ < j+ + 1 ≤ I+\nsuch that\n                                                                    1\n                                 x j− (t2 ) − x j− −1 (t2 ) ≥                            (90)\n",
+          "sha256": "a1b57d5ba8ba9bafcabaa9ea8968ac7956a6e8735227558feba551b160c031e0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Controlling the energy at time 0",
+            "line_end": 3222,
+            "line_start": 3018,
+            "mathematical_role": "Finds a good spatial interval and applies a Bourgain-style local propagation inequality over short time steps to turn averaged energy control into time-zero control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3106,
+          "line_start": 3018,
+          "title": "A good interval and short-time propagation transfer average control to time zero",
+          "unit_id": "rt2020_d28_time_zero_energy_strategy",
+          "unit_type": "average-to-endpoint-transfer",
+          "why_material": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Propositions 26–28, the Fubini–Tonelli interval selection, and the complete high-level iteration.",
+          "representation_dependency": "The nested interval averages are display-dependent; selection and propagation roles are explicit.",
+          "unit_id": "rt2020_d28_time_zero_energy_strategy"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3016,
+            "line_start": 2975,
+            "title": "Coercive dissipation shrinks the Hamiltonian in finite time",
+            "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound",
+            "unit_type": "dissipation-bootstrap",
+            "why_material": "Approximate dissipation plus coercivity drives H̃_T down through dyadic levels in a summable time, keeps it small thereafter, and converts the Hamiltonian drop into the strong integrated-energy estimate."
+          },
+          {
+            "line_end": 3217,
+            "line_start": 3107,
+            "title": "Boundary-gap pigeonholing controls environmental energy influx",
+            "unit_id": "rt2020_d29_local_energy_propagation",
+            "unit_type": "localized-monotonicity",
+            "why_material": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth time-averaged energy control can be transferred to a terminal local block by selecting buffered spatial boundaries and iterating short-time monotonicity, after which nearest-neighbor statistics provide the contradiction.",
+            "limit": "The final obstruction uses an external theorem about zeta-zero gaps under the already implied Riemann hypothesis; this source does not reprove that statistical result.",
+            "parent_local_unit_ids": [
+              "rt2020_d20_smooth_localization_strong_target",
+              "rt2020_d28_time_zero_energy_strategy",
+              "rt2020_d29_local_energy_propagation",
+              "rt2020_d30_pair_correlation_contradiction"
+            ],
+            "title": "Average dissipation reaches a statistical obstruction through buffered propagation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes boundary selection, persistence via the virial identity, internal energy monotonicity, boundary-scale decomposition, and conversion back to renormalized energy.",
+      "line_end": 3217,
+      "line_start": 3107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cross-term bounds are formula-dense and some symbols are extraction-sensitive; the conservation-with-buffer mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary-gap pigeonholing controls environmental energy influx",
+      "unit_artifact_relpath": "depth/units/rt2020_d29_local_energy_propagation.txt",
+      "unit_bytes": 6848,
+      "unit_id": "rt2020_d29_local_energy_propagation",
+      "unit_sha256": "4928a66eac1b0c0138ed2fab5d54269fda5cdf7008acc31c19e20711cba1f9c6",
+      "unit_type": "localized-monotonicity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d29_local_energy_propagation.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3099,
+          "line_end": 3106,
+          "text": "\nThe De Bruijn-Newman constant is non-negative                             57\n\nfor some interval [I− , I+ ]Z∗ containing [T log T, 2T log T ]Z∗ and contained in\n[0.5T log T, 3T log T ]Z∗ . Since Ẽ I (0) is monotone in I, Proposition 26 follows.\n    It remains to establish Proposition 28. We use an argument due to Bourgain\n[2, §4] that combines local conservation laws (or, in this case, local monotonicity\nformulae) with the pigeonhole principle.\n",
+          "sha256": "24a3f64c4fba784ec75b310f8ea94e5d46ffc6aedbd72844822cff48259a89fd"
+        },
+        "after": {
+          "line_start": 3218,
+          "line_end": 3225,
+          "text": "\n<!-- source-page: 59 -->\n\nThe De Bruijn-Newman constant is non-negative                                   59\n\n                           9. Contradicting pair correlation\n   It remains to see that Proposition 26 is in contradiction with results that are\nknown to be the case for the points x j (0). Note in particular that\n",
+          "sha256": "f8949a4e0742441bf72e4e23f02fa4ed60c527819c91c13df15eb31c9035ddf8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Controlling the energy at time 0",
+            "line_end": 3222,
+            "line_start": 3018,
+            "mathematical_role": "Finds a good spatial interval and applies a Bourgain-style local propagation inequality over short time steps to turn averaged energy control into time-zero control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3217,
+          "line_start": 3107,
+          "title": "Boundary-gap pigeonholing controls environmental energy influx",
+          "unit_id": "rt2020_d29_local_energy_propagation",
+          "unit_type": "localized-monotonicity",
+          "why_material": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes boundary selection, persistence via the virial identity, internal energy monotonicity, boundary-scale decomposition, and conversion back to renormalized energy.",
+          "representation_dependency": "The cross-term bounds are formula-dense and some symbols are extraction-sensitive; the conservation-with-buffer mechanism is clear.",
+          "unit_id": "rt2020_d29_local_energy_propagation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3106,
+            "line_start": 3018,
+            "title": "A good interval and short-time propagation transfer average control to time zero",
+            "unit_id": "rt2020_d28_time_zero_energy_strategy",
+            "unit_type": "average-to-endpoint-transfer",
+            "why_material": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block."
+          },
+          {
+            "line_end": 3271,
+            "line_start": 3223,
+            "title": "Equilibrium gap concentration contradicts known positive small-gap density",
+            "unit_id": "rt2020_d30_pair_correlation_contradiction",
+            "unit_type": "final-obstruction",
+            "why_material": "Time-zero renormalized energy forces almost every normalized consecutive gap to approach one, while a known zeta-zero gap result supplies a positive proportion bounded strictly below mean spacing."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth time-averaged energy control can be transferred to a terminal local block by selecting buffered spatial boundaries and iterating short-time monotonicity, after which nearest-neighbor statistics provide the contradiction.",
+            "limit": "The final obstruction uses an external theorem about zeta-zero gaps under the already implied Riemann hypothesis; this source does not reprove that statistical result.",
+            "parent_local_unit_ids": [
+              "rt2020_d20_smooth_localization_strong_target",
+              "rt2020_d28_time_zero_energy_strategy",
+              "rt2020_d29_local_energy_propagation",
+              "rt2020_d30_pair_correlation_contradiction"
+            ],
+            "title": "Average dissipation reaches a statistical obstruction through buffered propagation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the nearest-neighbor extraction, Markov step, conversion to zeta-zero spacing, and the explicit contradiction closing Λ<0.",
+      "line_end": 3271,
+      "line_start": 3223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Normalization constants depend on formulas (93) and classical spacing; the contradiction is fully stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Time-zero renormalized energy forces almost every normalized consecutive gap to approach one, while a known zeta-zero gap result supplies a positive proportion bounded strictly below mean spacing.",
+      "source_id": "rodgers_tao2020_newman",
+      "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Equilibrium gap concentration contradicts known positive small-gap density",
+      "unit_artifact_relpath": "depth/units/rt2020_d30_pair_correlation_contradiction.txt",
+      "unit_bytes": 3078,
+      "unit_id": "rt2020_d30_pair_correlation_contradiction",
+      "unit_sha256": "bb647df04cbc16e91a7ab8a82a4b888ae48708776e9db97fb8c2e90e548d80e8",
+      "unit_type": "final-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d30_pair_correlation_contradiction.txt",
+      "source": {
+        "source_id": "rodgers_tao2020_newman",
+        "title": "The De Bruijn-Newman constant is non-negative",
+        "authors": [
+          "Brad Rodgers",
+          "Terence Tao"
+        ],
+        "year": 2020,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction",
+          "zero-dynamics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3215,
+          "line_end": 3222,
+          "text": "                                           (ξ j − ξk )2\n                                                    k∈I: j,k\nand Proposition 28 follows.\n\n<!-- source-page: 59 -->\n\nThe De Bruijn-Newman constant is non-negative                                   59\n\n",
+          "sha256": "23221e4ad79e0a4e89b1092f5cba15fd60c103f3bdedbd6f097b518b781e3d99"
+        },
+        "after": {
+          "line_start": 3272,
+          "line_end": 3279,
+          "text": "\n<!-- source-page: 60 -->\n\nBrad Rodgers and Terence Tao                                           60\n\n                                         References\n [1]   M. Abramowitz, I.A. Stegun, Handbook of Mathematical Functions, (Dover, New York,\n       1965).\n",
+          "sha256": "28fa71670ebea4eca221bf1472a523f10338231c5f9b1dd4c5a14ad00605a624"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Contradicting pair correlation",
+            "line_end": 3276,
+            "line_start": 3223,
+            "mathematical_role": "Converts small renormalized nearest-neighbor energy into concentration at mean spacing and contradicts a positive proportion of smaller zeta-zero gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3271,
+          "line_start": 3223,
+          "title": "Equilibrium gap concentration contradicts known positive small-gap density",
+          "unit_id": "rt2020_d30_pair_correlation_contradiction",
+          "unit_type": "final-obstruction",
+          "why_material": "Time-zero renormalized energy forces almost every normalized consecutive gap to approach one, while a known zeta-zero gap result supplies a positive proportion bounded strictly below mean spacing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the nearest-neighbor extraction, Markov step, conversion to zeta-zero spacing, and the explicit contradiction closing Λ<0.",
+          "representation_dependency": "Normalization constants depend on formulas (93) and classical spacing; the contradiction is fully stated in prose.",
+          "unit_id": "rt2020_d30_pair_correlation_contradiction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3217,
+            "line_start": 3107,
+            "title": "Boundary-gap pigeonholing controls environmental energy influx",
+            "unit_id": "rt2020_d29_local_energy_propagation",
+            "unit_type": "localized-monotonicity",
+            "why_material": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth time-averaged energy control can be transferred to a terminal local block by selecting buffered spatial boundaries and iterating short-time monotonicity, after which nearest-neighbor statistics provide the contradiction.",
+            "limit": "The final obstruction uses an external theorem about zeta-zero gaps under the already implied Riemann hypothesis; this source does not reprove that statistical result.",
+            "parent_local_unit_ids": [
+              "rt2020_d20_smooth_localization_strong_target",
+              "rt2020_d28_time_zero_energy_strategy",
+              "rt2020_d29_local_energy_propagation",
+              "rt2020_d30_pair_correlation_contradiction"
+            ],
+            "title": "Average dissipation reaches a statistical obstruction through buffered propagation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9e253e45cfc763040d781ba97e201f1d6b2454972a82225863641042facefefb"
+}

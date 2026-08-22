@@ -1,0 +1,1265 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2094593379_7a5dfd2a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2094593379",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact source-stated boundary on generalization, immediately following Theorem 1.6.",
+      "line_end": 219,
+      "line_start": 215,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only; no displayed formula is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates a proof mechanism that extends to extended-Selberg functions times simple factors from Hurwitz and Lerch cases where computations do not support the same correspondence.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Where the imprimitive extension generalizes and where Speiser correspondence fails",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u06.txt",
+      "unit_bytes": 403,
+      "unit_id": "full_openalex_w2094593379_u06",
+      "unit_sha256": "b34bf5b78ac154f71e57b3359b1ab455e81bd05efb55a029f60681e32f710fbd",
+      "unit_type": "scope-boundary observation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u06.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 207,
+          "line_end": 214,
+          "text": "τ < t < T , σ < 1/2. Then\n\n                                                     log(q/q1 )\n              N1 (T ) = N (T ) + O(log T ) ≥                    T + O(log T ),\n                                                        2π\n\nwhere the inequality can be replaced by the equality provided the Riemann hypothesis\nis valid for L(s, χ1 ).\n",
+          "sha256": "5210ed228c89824449f8f60001c812fdefdf3b6496765d464b8ebb40c48dc2a7"
+        },
+        "after": {
+          "line_start": 220,
+          "line_end": 227,
+          "text": "\n123\n\n<!-- source-page: 5 -->\n\nThe Speiser equivalent                                                                    341\n\n\n",
+          "sha256": "b90c24e9a8d1e396f3eed4a25b84715c4293d18343450f43264db2466cc641f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main results and imprimitive-character extension",
+            "line_end": 219,
+            "line_start": 136,
+            "mathematical_role": "States positive-degree and degree-zero zero-count comparisons, critical-line derivative nonvanishing, and the analogous imprimitive-character theorem with its limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 219,
+          "line_start": 215,
+          "title": "Where the imprimitive extension generalizes and where Speiser correspondence fails",
+          "unit_id": "full_openalex_w2094593379_u06",
+          "unit_type": "scope-boundary observation",
+          "why_material": "Separates a proof mechanism that extends to extended-Selberg functions times simple factors from Hurwitz and Lerch cases where computations do not support the same correspondence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact source-stated boundary on generalization, immediately following Theorem 1.6.",
+          "representation_dependency": "Prose-only; no displayed formula is needed.",
+          "unit_id": "full_openalex_w2094593379_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 730,
+            "line_start": 660,
+            "title": "Critical-line nonvanishing and imprimitive-character transfer proofs",
+            "unit_id": "full_openalex_w2094593379_u05",
+            "unit_type": "imprimitive-character proof",
+            "why_material": "Combines the positive/zero-degree critical-line derivative argument with the finite-Euler-factor logarithmic derivative decomposition and the matched contour proof for imprimitive characters."
+          },
+          {
+            "line_end": 332,
+            "line_start": 301,
+            "title": "Zero collision as the gate for symmetry-breaking trajectories",
+            "unit_id": "full_openalex_w2094593379_u07",
+            "unit_type": "representation-change and obstruction",
+            "why_material": "Explains geometrically how functional-equation symmetry pins a simple zero to the critical line until collision, why the collision creates a derivative zero, and how numerical ODE tracking exposes departures from the line."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 235,
+              "line_start": 220,
+              "reason": "Page artifacts and a roadmap framing the computational section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u06",
+          "spontaneous_reading": "The mathematical work is a scope test for the proof mechanism: it survives passage to an extended-Selberg zeta-function multiplied by a simple factor, whereas the absence of a Riemann-type functional equation in the Hurwitz and Lerch cases coincides with computations that do not support the same Speiser correspondence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u06",
+          "source_grounded_mathematics": "The authors state that the proof of Theorem 1.6 extends to extended-Selberg zeta-functions multiplied by some simple function. They contrast this with Hurwitz and Lerch zeta-functions, which lack the Riemann-type functional equation and for which computations do not confirm the Speiser equivalent; the proofs follow Levinson and Montgomery's method.",
+          "conceptual_reading": "The relevant generalization is structural rather than nominal: the proof appears stable under a controlled multiplicative modification but depends on functional-equation geometry that the contrasting families lack.",
+          "representation_or_bridge": "The bridge is from factorized analytic structure and a Riemann-type functional equation to a Speiser-style relation between zeros of a function and its derivative. The cited Levinson-Montgomery proof supplies the reusable analytic template, though that template is not reproduced here.",
+          "boundary_or_failure": "Computational nonconfirmation for Hurwitz and Lerch functions is a boundary observation, not a proof that every Speiser-type statement fails there. The span also does not characterize which multiplying functions are simple enough for the extension.",
+          "uncertainty": "The unit is prose-only and clear about scope, but the exact hypotheses of the claimed generalization and the computational protocol behind the negative cases are absent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried trajectory setup deliberately to isolate its reusable collision/branching mechanism and includes the initial conditions and heuristic aggregate outcome.",
+      "line_end": 332,
+      "line_start": 301,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses the trajectory figures and ODEs; figure geometry is summarized in checked prose, while reported numerical counts remain explicitly heuristic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains geometrically how functional-equation symmetry pins a simple zero to the critical line until collision, why the collision creates a derivative zero, and how numerical ODE tracking exposes departures from the line.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero collision as the gate for symmetry-breaking trajectories",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u07.txt",
+      "unit_bytes": 2505,
+      "unit_id": "full_openalex_w2094593379_u07",
+      "unit_sha256": "2b2a05a4e1f469e1ec02b0dc84bbbe181cc9ca5db17264cabbd06730fc57bbc1",
+      "unit_type": "representation-change and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u07.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 293,
+          "line_end": 300,
+          "text": "                                                                                              Im s(τ )\n                                   61.0                   61.5                    62.0\nFig. 1 Solid black trajectories are zero trajectories ρ1 (τ ) and ρ2 (τ ): f (ρ1 (τ ), τ ) = 0, ρ1 (0) = 0.5 +\ni 60.84, ρ1 (1) = 0.5 + i 62.13 and f (ρ2 (τ ), τ ) = 0, ρ2 (0) = 0.5 + i 60.51, ρ2 (1) = 0.5 + i 61.14. Dashed\ntrajectory is a derivative zero trajectory q(τ ): f s\u0005 (q(τ ), τ ) = 0, q(0) = 0.52+i 60.68, q(1) = 0.76+i 61.55\n\n\n\n",
+          "sha256": "6aabd269ab821227c36245479f9c5073de1589800e3312d153e2617e3db51ce4"
+        },
+        "after": {
+          "line_start": 333,
+          "line_end": 340,
+          "text": "\n123\n\n<!-- source-page: 7 -->\n\nThe Speiser equivalent                                                                                      343\n\n\n",
+          "sha256": "809632d61651c11cd5c369d5aefc5663f8b337d00d50e5b55d82c5849a688344"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computation roadmap and interpolating family",
+            "line_end": 358,
+            "line_start": 220,
+            "mathematical_role": "Introduces a common-functional-equation interpolation, justifies continuous zero trajectories, describes collision-induced departure from the critical line, and gives the trajectory differential equations and heuristic counts."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 332,
+          "line_start": 301,
+          "title": "Zero collision as the gate for symmetry-breaking trajectories",
+          "unit_id": "full_openalex_w2094593379_u07",
+          "unit_type": "representation-change and obstruction",
+          "why_material": "Explains geometrically how functional-equation symmetry pins a simple zero to the critical line until collision, why the collision creates a derivative zero, and how numerical ODE tracking exposes departures from the line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the carried trajectory setup deliberately to isolate its reusable collision/branching mechanism and includes the initial conditions and heuristic aggregate outcome.",
+          "representation_dependency": "Uses the trajectory figures and ODEs; figure geometry is summarized in checked prose, while reported numerical counts remain explicitly heuristic.",
+          "unit_id": "full_openalex_w2094593379_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 219,
+            "line_start": 215,
+            "title": "Where the imprimitive extension generalizes and where Speiser correspondence fails",
+            "unit_id": "full_openalex_w2094593379_u06",
+            "unit_type": "scope-boundary observation",
+            "why_material": "Separates a proof mechanism that extends to extended-Selberg functions times simple factors from Hurwitz and Lerch cases where computations do not support the same correspondence."
+          },
+          {
+            "line_end": 384,
+            "line_start": 359,
+            "title": "Davenport-Heilbronn function as an RH-violating Speiser test",
+            "unit_id": "full_openalex_w2094593379_u08",
+            "unit_type": "counterexample-family comparison",
+            "why_material": "Introduces a function with the required functional equation but zeros off the critical line and frames the apparent absence of derivative zeros as a direct challenge to the theorem before recalculation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A Riemann-type functional equation enforces paired zero geometry and makes collision a gate for departure from the critical line, yet the same symmetry is compatible with infinitely many off-line zeros.",
+            "limit": "The trajectory evidence is heuristic and the claim concerns the source's selected extended-Selberg examples, not arbitrary zeta-functions.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u01",
+              "full_openalex_w2094593379_u07",
+              "full_openalex_w2094593379_u08"
+            ],
+            "title": "Functional-equation symmetry constrains migration without guaranteeing RH"
+          },
+          {
+            "claim": "A multiple-zero collision forces a derivative zero, while argument-principle count and first-moment integrals provide a computational way to detect and locate such derivative zeros when direct root searches miss them.",
+            "limit": "The source explicitly calls the Mathematica calculations heuristic and the extracted contour formulas require scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u03",
+              "full_openalex_w2094593379_u07",
+              "full_openalex_w2094593379_u09"
+            ],
+            "title": "Derivative zeros mark collision and can be detected by local contour moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 358,
+              "line_start": 333,
+              "reason": "Page artifacts and the second figure/caption support the trajectory units without introducing a distinct mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u07",
+          "spontaneous_reading": "A deformation turns static zero locations into trajectories. Functional-equation symmetry pins a simple zero to the critical line; collision with another trajectory creates a double zero, removes that rigidity, and simultaneously produces a derivative zero. Implicit-differentiation ODEs then make the collision and subsequent symmetric branching numerically traceable."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u07",
+          "source_grounded_mathematics": "For the family f(s,tau), a simple critical-line zero cannot leave the line under the stated functional equation unless it meets another zero trajectory. At the meeting parameter the common point is a double zero, f_s vanishes there, and two zero trajectories may leave symmetrically while a derivative-zero trajectory passes through the collision. The source obtains zero and derivative-zero paths from numerical ODEs derived from f(rho(tau),tau)=0 and f_s(q(tau),tau)=0, and reports that 286 of 1452 initially critical-line zeros leave in the computed range.",
+          "conceptual_reading": "The collision is the obstruction to regular continuation: simplicity supports a single constrained branch, while vanishing of the s-derivative marks loss of local uniqueness and permits symmetry-breaking branches. A derivative zero is therefore an event marker for a change in zero geometry.",
+          "representation_or_bridge": "The homotopy parameter tau and the paths rho(tau), q(tau) bridge functional-equation symmetry to dynamical geometry. The trajectory ODEs expose when implicit continuation is well-conditioned and when their denominators vanish; plots provide a geometric representation of the same transition.",
+          "boundary_or_failure": "The aggregate departures and plotted paths are numerical observations for this interpolation, not a proof of comparable branching for every functional-equation family. Continuation through a multiple zero is singular, so the local labeling of outgoing branches requires care beyond the regular ODE.",
+          "uncertainty": "The source explicitly presents computations, and the assignment marks their counts as heuristic. Several derivative glyphs are degraded, but the collision, symmetry, and implicit-ODE mechanism are recoverable from the prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps definition, class membership, prior computational claim, and the authors' correction claim together.",
+      "line_end": 384,
+      "line_start": 359,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The defining linear combination and functional equation are displayed with degraded glyphs; prose reliably states class membership and zero-location roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces a function with the required functional equation but zeros off the critical line and frames the apparent absence of derivative zeros as a direct challenge to the theorem before recalculation.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Davenport-Heilbronn function as an RH-violating Speiser test",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u08.txt",
+      "unit_bytes": 1716,
+      "unit_id": "full_openalex_w2094593379_u08",
+      "unit_sha256": "ca12db50bc2555ae0b5831ec2f7f56df7534d56dd0a44f77b98a32df02477c71",
+      "unit_type": "counterexample-family comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u08.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "                        1439               1439.5                 1440               1440.5\nFig. 2 Solid black trajectories are zero trajectories with ρ1 (0) = 0.50+i 1438.61, ρ2 (0) = 0.50+i 1438.95,\nand ρ3 (0) = 0.50 + i 1439.62 ( f (ρ j (τ ), τ ) = 0, 0 ≤ τ ≤ 1, j = 1, 2, 3). Dashed black trajectories are\nderivative zero trajectories with q1 (0) = 0.55+i 1438.80, and q2 (0) = 0.66+i 1439.42 ( f s\u0005 (q j (τ ), τ ) = 0,\n0 ≤ τ ≤ 1, j = 1, 2)\n\n\n\n",
+          "sha256": "dcd927db4f756a442ff432467787a2c5d016adfd6c2bc145fb8712d81acba9a1"
+        },
+        "after": {
+          "line_start": 385,
+          "line_end": 392,
+          "text": "   For 0 ≤ t ≤ 200, Spira calculated eight zeros of \u000f(s) off the critical line:\n\n\n    0.80 + i 85.69,            0.65 + i 114.16,           0.57 + i 166.47,           0.72 + i 176.70\n\n                                                                                                   123\n\n<!-- source-page: 8 -->\n",
+          "sha256": "ec4dafa1c167f3deb8ff36778015ed24ab5e2ebd194e544dbc7bc47991c05369"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Davenport-Heilbronn computation",
+            "line_end": 419,
+            "line_start": 359,
+            "mathematical_role": "Uses an RH-violating extended-Selberg example to correct a prior derivative-zero search and explains argument-principle detection and localization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 384,
+          "line_start": 359,
+          "title": "Davenport-Heilbronn function as an RH-violating Speiser test",
+          "unit_id": "full_openalex_w2094593379_u08",
+          "unit_type": "counterexample-family comparison",
+          "why_material": "Introduces a function with the required functional equation but zeros off the critical line and frames the apparent absence of derivative zeros as a direct challenge to the theorem before recalculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps definition, class membership, prior computational claim, and the authors' correction claim together.",
+          "representation_dependency": "The defining linear combination and functional equation are displayed with degraded glyphs; prose reliably states class membership and zero-location roles.",
+          "unit_id": "full_openalex_w2094593379_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 332,
+            "line_start": 301,
+            "title": "Zero collision as the gate for symmetry-breaking trajectories",
+            "unit_id": "full_openalex_w2094593379_u07",
+            "unit_type": "representation-change and obstruction",
+            "why_material": "Explains geometrically how functional-equation symmetry pins a simple zero to the critical line until collision, why the collision creates a derivative zero, and how numerical ODE tracking exposes departures from the line."
+          },
+          {
+            "line_end": 417,
+            "line_start": 385,
+            "title": "Argument-principle detection and localization of missed derivative zeros",
+            "unit_id": "full_openalex_w2094593379_u09",
+            "unit_type": "computational-certification logic",
+            "why_material": "Pairs off-line function zeros with newly found left-half-plane derivative zeros and specifies contour integrals for counting and locating a unique derivative zero, followed by root refinement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A Riemann-type functional equation enforces paired zero geometry and makes collision a gate for departure from the critical line, yet the same symmetry is compatible with infinitely many off-line zeros.",
+            "limit": "The trajectory evidence is heuristic and the claim concerns the source's selected extended-Selberg examples, not arbitrary zeta-functions.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u01",
+              "full_openalex_w2094593379_u07",
+              "full_openalex_w2094593379_u08"
+            ],
+            "title": "Functional-equation symmetry constrains migration without guaranteeing RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 358,
+              "line_start": 333,
+              "reason": "Page artifacts and the second figure/caption support the trajectory units without introducing a distinct mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u08",
+          "spontaneous_reading": "The Davenport-Heilbronn function serves as an adversarial test: it has the requisite functional equation and lies in the theorem's class while possessing many off-critical-line zeros. A previous failure to find corresponding left-half-plane derivative zeros looked like a contradiction, so recalculation directly tests whether the theorem or the search procedure is at fault."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u08",
+          "source_grounded_mathematics": "The span defines the Davenport-Heilbronn zeta-function as a linear combination of Dirichlet L-functions, states its functional equation and extended-Selberg membership, and records zeros both on and off the critical line. Spira found off-line function zeros below height 200 but no derivative zeros to the left of the critical line; the authors report that their recalculation does find such derivative zeros in that range.",
+          "conceptual_reading": "This is a counterexample-family calibration rather than an RH example: functional-equation symmetry does not force all zeros onto the line, but it still makes the claimed function/derivative-zero correspondence testable. The episode also separates mathematical failure from failure of a numerical search.",
+          "representation_or_bridge": "Comparing the spatial zero sets of the function and its derivative turns an abstract Speiser equivalence into a falsifiable geometric diagnostic. Extended-Selberg class membership is the bridge that makes the theorem applicable despite the function's RH-violating zeros.",
+          "boundary_or_failure": "A negative root search is not evidence of absence; that is precisely the apparent failure corrected here. The unit announces the corrected search but does not yet give its detection method or enough data to independently verify it.",
+          "uncertainty": "The defining combination and functional equation contain degraded glyphs, so their exact symbolic form should be checked against the source image. The prose claims about class membership and zero-location roles are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical values are evidence internal to an explicitly heuristic computation, not formal certification.",
+      "line_end": 417,
+      "line_start": 385,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on two displayed contour integrals; OCR drops normalization constants, so the semantic count/localization mechanism is usable but exact formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Pairs off-line function zeros with newly found left-half-plane derivative zeros and specifies contour integrals for counting and locating a unique derivative zero, followed by root refinement.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument-principle detection and localization of missed derivative zeros",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u09.txt",
+      "unit_bytes": 1370,
+      "unit_id": "full_openalex_w2094593379_u09",
+      "unit_sha256": "c23ac84591565a1f4fcd7dcf9c5fded907b8ca636afda59c938e8529b29d3c04",
+      "unit_type": "computational-certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u09.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 377,
+          "line_end": 384,
+          "text": "be noted that zeros of the Davenport–Heilbronn zeta-function have been subject to\nmuch analysis. Spira [16] calculated the location of some of zeros of the Davenport–\nHeilbronn zeta-function off the critical line σ = 1/2 in the region 0 ≤ t ≤ 200, see\nalso Balanzario and Sánchez-Ortiz [1]. He did not find any zeros of its derivative left\noff σ = 1/2 in this region although he did find several locations of zeros of the function\nitself. This would go against our Theorem 1.2. However, we recalculated zeros of the\nderivative of the Davenport–Heilbronn zeta-function and we did find zeros left off the\ncritical line with imaginary parts less than 200.\n",
+          "sha256": "8b44732febc04ab49b2db1f30d2ad5f3bdde17145f4c2e56dfa5aa1fafdf3dca"
+        },
+        "after": {
+          "line_start": 418,
+          "line_end": 425,
+          "text": "\n\n3 Proofs\n\nProof of Proposition 1.1 Let σ0 > σ F . Also, let τ \u0005 > τ and σ \u0005 < 1 − σ0 . Let R and\nR be two rectangles with vertices 1 − σ0 + iτ , 1 − σ0 + iτ \u0005 , σ \u0005 + iτ \u0005 , σ \u0005 + iτ and\n1 − σ0 − iτ , 1 − σ0 − iτ \u0005 , σ \u0005 − iτ \u0005 , σ \u0005 − iτ respectively. Using formula (5) below,\nwe will show that there is τ such that for any τ \u0005 and any σ \u0005 the inequality\n",
+          "sha256": "02fc50e144bbd093ffa1f7887157584af672f6117ddcfc77b4639d25209bcf83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Davenport-Heilbronn computation",
+            "line_end": 419,
+            "line_start": 359,
+            "mathematical_role": "Uses an RH-violating extended-Selberg example to correct a prior derivative-zero search and explains argument-principle detection and localization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 417,
+          "line_start": 385,
+          "title": "Argument-principle detection and localization of missed derivative zeros",
+          "unit_id": "full_openalex_w2094593379_u09",
+          "unit_type": "computational-certification logic",
+          "why_material": "Pairs off-line function zeros with newly found left-half-plane derivative zeros and specifies contour integrals for counting and locating a unique derivative zero, followed by root refinement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical values are evidence internal to an explicitly heuristic computation, not formal certification.",
+          "representation_dependency": "Depends on two displayed contour integrals; OCR drops normalization constants, so the semantic count/localization mechanism is usable but exact formulas require scan verification.",
+          "unit_id": "full_openalex_w2094593379_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 384,
+            "line_start": 359,
+            "title": "Davenport-Heilbronn function as an RH-violating Speiser test",
+            "unit_id": "full_openalex_w2094593379_u08",
+            "unit_type": "counterexample-family comparison",
+            "why_material": "Introduces a function with the required functional equation but zeros off the critical line and frames the apparent absence of derivative zeros as a direct challenge to the theorem before recalculation."
+          },
+          {
+            "line_end": 486,
+            "line_start": 422,
+            "title": "Logarithmic-derivative negativity from factorization and Gamma asymptotics",
+            "unit_id": "full_openalex_w2094593379_u10",
+            "unit_type": "zero-free-region proof mechanism",
+            "why_material": "Shows how a Hadamard logarithmic-derivative expansion and reflected Gamma estimates force Re(F'/F)<0 on far-left high contours, making F and F' have equal zero counts there and hence no derivative zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A multiple-zero collision forces a derivative zero, while argument-principle count and first-moment integrals provide a computational way to detect and locate such derivative zeros when direct root searches miss them.",
+            "limit": "The source explicitly calls the Mathematica calculations heuristic and the extracted contour formulas require scan verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u03",
+              "full_openalex_w2094593379_u07",
+              "full_openalex_w2094593379_u09"
+            ],
+            "title": "Derivative zeros mark collision and can be detected by local contour moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 421,
+              "line_start": 418,
+              "reason": "Blank lines and the proofs section heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u09",
+          "spontaneous_reading": "The useful intermediate object is a contour moment of the logarithmic derivative of the derivative. One contour integral detects how many derivative zeros lie in a region; when exactly one lies there, an s-weighted moment localizes it, after which root refinement checks the numerical candidate."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u09",
+          "source_grounded_mathematics": "Against eight reported off-line function zeros below height 200, the authors list four zeros of the derivative in sigma<1/2 at matching heights. They use a boundary integral of the derivative's logarithmic derivative to count zeros in a region D, and an s-weighted version to recover q when D contains one zero; Mathematica FindRoot is then used to check the roots.",
+          "conceptual_reading": "Counting before solving avoids treating a missed root as nonexistence. The zeroth contour moment certifies occupancy at the numerical level used here, while the first moment compresses a unique enclosed zero into its location.",
+          "representation_or_bridge": "The argument principle bridges local complex-analytic winding on the boundary to discrete interior zero data. Weighting the same logarithmic derivative by s changes the representation from a count to a location statistic, which can seed or validate a root finder.",
+          "boundary_or_failure": "The calculation is explicitly heuristic in the assignment context and is not a formal certification. The localization formula applies as stated only when the region contains one relevant zero and the contour avoids zeros or poles; FindRoot alone does not establish completeness.",
+          "uncertainty": "OCR drops normalization constants from both contour integrals, so their exact formulas must be scan-verified. The qualitative count-and-first-moment mechanism and the reported numerical locations remain readable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Complete proof of Proposition 1.1, supplying the analytic foundation used by later contour arguments.",
+      "line_end": 486,
+      "line_start": 422,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy. The expansion and asymptotic signs are supported by prose, but exact primes, sums, and special-function notation need source-image verification before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how a Hadamard logarithmic-derivative expansion and reflected Gamma estimates force Re(F'/F)<0 on far-left high contours, making F and F' have equal zero counts there and hence no derivative zeros.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic-derivative negativity from factorization and Gamma asymptotics",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u10.txt",
+      "unit_bytes": 3601,
+      "unit_id": "full_openalex_w2094593379_u10",
+      "unit_sha256": "57b46430be31d2f3ecbddfbfff9a1880b42652e838f635d3592216abf2f214fd",
+      "unit_type": "zero-free-region proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u10.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 414,
+          "line_end": 421,
+          "text": "                                        q=         s           ds.\n                                              ∂D       \u000f\u0005 (s)\n\nThe zeros were checked using Mathematica’s command FindRoot.\n\n\n3 Proofs\n\n",
+          "sha256": "6844b2c2501b7d1fce58a87dafc2dcb5e794b82a561a698f4c52f86ae7ac1fa6"
+        },
+        "after": {
+          "line_start": 487,
+          "line_end": 494,
+          "text": "\nProof of Theorem 1.2 Let\n                                                                      \u000e\n                                                                    1\n                         R = s ∈ C : τ < t < T, 1 − σ0 < σ <           .\n                                                                    2\n\nTo prove the theorem, it is enough to consider the difference of the number of zeros\n",
+          "sha256": "ba2d1a497457cacf434feeb0e458eab0f86718451871a7abd5bbed55d833967e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Proposition 1.1",
+            "line_end": 487,
+            "line_start": 420,
+            "mathematical_role": "Derives left-half-plane derivative nonvanishing from logarithmic-derivative negativity using Hadamard factorization, the functional equation, and Gamma asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 486,
+          "line_start": 422,
+          "title": "Logarithmic-derivative negativity from factorization and Gamma asymptotics",
+          "unit_id": "full_openalex_w2094593379_u10",
+          "unit_type": "zero-free-region proof mechanism",
+          "why_material": "Shows how a Hadamard logarithmic-derivative expansion and reflected Gamma estimates force Re(F'/F)<0 on far-left high contours, making F and F' have equal zero counts there and hence no derivative zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Complete proof of Proposition 1.1, supplying the analytic foundation used by later contour arguments.",
+          "representation_dependency": "Formula-heavy. The expansion and asymptotic signs are supported by prose, but exact primes, sums, and special-function notation need source-image verification before symbolic reuse.",
+          "unit_id": "full_openalex_w2094593379_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 417,
+            "line_start": 385,
+            "title": "Argument-principle detection and localization of missed derivative zeros",
+            "unit_id": "full_openalex_w2094593379_u09",
+            "unit_type": "computational-certification logic",
+            "why_material": "Pairs off-line function zeros with newly found left-half-plane derivative zeros and specifies contour integrals for counting and locating a unique derivative zero, followed by root refinement."
+          },
+          {
+            "line_end": 658,
+            "line_start": 575,
+            "title": "Finite Dirichlet-polynomial symmetry yields bounded zero-count discrepancy",
+            "unit_id": "full_openalex_w2094593379_u11",
+            "unit_type": "degree-zero proof mechanism",
+            "why_material": "Uses the classified finite Dirichlet-polynomial form and the degree-zero log-derivative reflection identity to control every contour side by O(1), including neighborhoods of critical-line zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across positive degree, degree zero, and imprimitive characters, sign control of the logarithmic derivative on vertical boundaries plus bounded horizontal argument change converts analytic structure into a zero-count comparison between a function and its derivative.",
+            "limit": "The analytic inputs and error scales differ: Gamma-factor growth yields O(log T), degree-zero finite structure yields O(1), and imprimitive transfer includes finite Euler factors.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u10",
+              "full_openalex_w2094593379_u04",
+              "full_openalex_w2094593379_u11",
+              "full_openalex_w2094593379_u14"
+            ],
+            "title": "Logarithmic-derivative negativity is the common counting interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 421,
+              "line_start": 418,
+              "reason": "Blank lines and the proofs section heading."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 487,
+              "line_start": 487,
+              "reason": "Blank separator before the next proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u10",
+          "spontaneous_reading": "Hadamard factorization compresses the function into a logarithmic-derivative balance among its zeros, elementary factors, and Gamma factors. Reflecting and asymptotically estimating the Gamma terms forces the real part of F'/F to be negative on sufficiently far-left, high rectangles; the argument principle then transfers the zero-free region from F to F'."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u10",
+          "source_grounded_mathematics": "After completing F to an entire order-one function, the proof applies Hadamard factorization to express Re(F'/F) through nontrivial zeros, pole-removal terms, log Q, and Gamma logarithmic derivatives. The Gamma reflection formula and large-argument asymptotics yield Re(F'/F)<0 on the chosen far-left rectangles at sufficiently large height. The argument principle gives equal zero counts for F and F', and the known absence of F-zeros there gives derivative nonvanishing.",
+          "conceptual_reading": "The proof replaces direct derivative-zero control by sign control of a logarithmic derivative. Global analytic structure supplies a quantitative margin whose sign rules out F'/F=0 and makes boundary winding manageable.",
+          "representation_or_bridge": "Hadamard's zero expansion is the bridge from the completed function to an additive potential-like expression. Functional-equation Gamma factors are reflected into a region where asymptotics expose their dominant sign, converting spectral zero data and archimedean factors into a contour-count statement.",
+          "boundary_or_failure": "The mechanism requires the extended-Selberg completion, order-one factorization, and sufficiently far-left, sufficiently high regions. It does not give a low-height or arbitrary-function zero-free result, and equal counts require admissible contours with no boundary zeros.",
+          "uncertainty": "The exact primes, summation notation, and special-function glyphs are OCR-risky. The prose nevertheless supports the factorization, reflected-Gamma asymptotics, negativity, and argument-principle chain."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Complete proof of Theorem 1.3; it contrasts structurally with the positive-degree Gamma-factor proof.",
+      "line_end": 658,
+      "line_start": 575,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on formulas (10)-(12), especially the reflected logarithmic derivative and local pole expansion; prose makes the bounded-argument mechanism recoverable despite glyph loss.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the classified finite Dirichlet-polynomial form and the degree-zero log-derivative reflection identity to control every contour side by O(1), including neighborhoods of critical-line zeros.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite Dirichlet-polynomial symmetry yields bounded zero-count discrepancy",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u11.txt",
+      "unit_bytes": 4158,
+      "unit_id": "full_openalex_w2094593379_u11",
+      "unit_sha256": "af4f8f5da308d801662dcc761822eb7ff9c91f6c0ddb51faf3e8388c76b39e38",
+      "unit_type": "degree-zero proof mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u11.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 567,
+          "line_end": 574,
+          "text": "                                                                  .\n                            2                                 2\nIt follows that |t − γ | < σ0 − 1/2. Thus, if for sufficiently high t we divide the\nimaginary line into intervals of length 2σ0 − 1, it would follow that for every interval\nthere will be at least one zero whose imaginary part falls into that interval. Since\nwe started with sufficiently high t, it follows that in this case F(s) has more than\nT /(2σ0 − 1) + O(1) zeros in the region R. This concludes the proof.\n\n",
+          "sha256": "0327030f319173eb4bbf7446bdaee8f7f159e69e26ae48ac8daec6f7e6795b36"
+        },
+        "after": {
+          "line_start": 659,
+          "line_end": 666,
+          "text": "\nProof of Proposition 1.4 Let the degree d F > 0. Assume the contrary, that there is a\nlarge number t such that F \u0005 (1/2 + it) = 0 and F(1/2 + it) \u0006= 0. Then by Hadamard’s\ntype formula (5), Gamma function property (6), and using the fact that σ = 1/2 in\n(8), we obtain the contradiction\n\n\n                                      F\u0005\n",
+          "sha256": "a712d6538daff6234e5829d38c14a81452193e6f9bc8fc265df97e365eccc0ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1.3",
+            "line_end": 659,
+            "line_start": 575,
+            "mathematical_role": "Uses the finite Dirichlet-polynomial structure and degree-zero functional equation to obtain bounded argument change and an O(1) count difference."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 658,
+          "line_start": 575,
+          "title": "Finite Dirichlet-polynomial symmetry yields bounded zero-count discrepancy",
+          "unit_id": "full_openalex_w2094593379_u11",
+          "unit_type": "degree-zero proof mechanism",
+          "why_material": "Uses the classified finite Dirichlet-polynomial form and the degree-zero log-derivative reflection identity to control every contour side by O(1), including neighborhoods of critical-line zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Complete proof of Theorem 1.3; it contrasts structurally with the positive-degree Gamma-factor proof.",
+          "representation_dependency": "Depends on formulas (10)-(12), especially the reflected logarithmic derivative and local pole expansion; prose makes the bounded-argument mechanism recoverable despite glyph loss.",
+          "unit_id": "full_openalex_w2094593379_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 486,
+            "line_start": 422,
+            "title": "Logarithmic-derivative negativity from factorization and Gamma asymptotics",
+            "unit_id": "full_openalex_w2094593379_u10",
+            "unit_type": "zero-free-region proof mechanism",
+            "why_material": "Shows how a Hadamard logarithmic-derivative expansion and reflected Gamma estimates force Re(F'/F)<0 on far-left high contours, making F and F' have equal zero counts there and hence no derivative zeros."
+          },
+          {
+            "line_end": 671,
+            "line_start": 660,
+            "title": "Derivative zeros cannot occur alone on the critical line",
+            "unit_id": "full_openalex_w2094593379_u12",
+            "unit_type": "critical-line obstruction proof",
+            "why_material": "Substituting the critical-line symmetry into the logarithmic-derivative identity makes an assumed derivative zero with F nonzero contradict strict negativity; the degree-zero case follows from its reflection identity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across positive degree, degree zero, and imprimitive characters, sign control of the logarithmic derivative on vertical boundaries plus bounded horizontal argument change converts analytic structure into a zero-count comparison between a function and its derivative.",
+            "limit": "The analytic inputs and error scales differ: Gamma-factor growth yields O(log T), degree-zero finite structure yields O(1), and imprimitive transfer includes finite Euler factors.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u10",
+              "full_openalex_w2094593379_u04",
+              "full_openalex_w2094593379_u11",
+              "full_openalex_w2094593379_u14"
+            ],
+            "title": "Logarithmic-derivative negativity is the common counting interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 574,
+              "line_start": 574,
+              "reason": "Blank separator before the degree-zero proof."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 659,
+              "line_start": 659,
+              "reason": "Blank separator before Proposition 1.4's proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u11",
+          "spontaneous_reading": "Degree zero changes the source of control: the function is a finite Dirichlet polynomial, and its functional equation gives a reflection identity for F'/F with constant term -2 log Q. This pins the critical-line real part at -log Q; a slight left shift plus a local pole expansion preserves negativity even near zeros, so every contour contribution stays bounded."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u11",
+          "source_grounded_mathematics": "The classified degree-zero function has a finite Dirichlet-polynomial representation indexed by divisors of a positive integer q=Q^2, with Q>1 when F is nonconstant. With no Gamma factors, the functional equation yields a reflected logarithmic-derivative identity. On a rectangle ending just left of the critical line, the left-side limit is -2 log Q, horizontal argument changes are O(1), and the critical-line real part is -log Q. Near a zero, the local expansion F'/F=m/(s-rho)+m'+O(|s-rho|) permits a small shift delta(T) that retains a negative bound, proving total argument change O(1).",
+          "conceptual_reading": "Finite algebraic structure replaces Gamma asymptotics, but the proof interface is the same: manufacture a negative logarithmic-derivative margin on vertical sides and bounded variation on horizontal sides. The local expansion repairs the only fragile place, namely passage near critical-line zeros.",
+          "representation_or_bridge": "The finite Dirichlet polynomial exposes degree-zero rigidity, while the reflection identity turns functional-equation symmetry into a constant real-part constraint. A Laurent expansion around each zero bridges the exact critical-line statement to a nearby zero-avoiding contour.",
+          "boundary_or_failure": "The argument concerns nonconstant degree-zero extended-Selberg functions and uses a T-dependent shift chosen to avoid a discrete zero set. It does not supply uniform separation from zeros independently of T, and its O(1) count comparison relies on all contour admissibility assumptions.",
+          "uncertainty": "Formulas (10)-(12) contain degraded equality and conjugation glyphs, so exact symbolic reuse requires the scan. The finite-polynomial, reflection, local-expansion, and bounded-argument mechanism is explicit in the text."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A concise reusable obstruction extracted from the beginning of carried unit u05.",
+      "line_end": 671,
+      "line_start": 660,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on formulas (5), (6), (8), and (11); the contradiction is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substituting the critical-line symmetry into the logarithmic-derivative identity makes an assumed derivative zero with F nonzero contradict strict negativity; the degree-zero case follows from its reflection identity.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative zeros cannot occur alone on the critical line",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u12.txt",
+      "unit_bytes": 528,
+      "unit_id": "full_openalex_w2094593379_u12",
+      "unit_sha256": "94b753b520039844effb194642ad9db8d32166d60568e6ada98ba14349a6b8bd",
+      "unit_type": "critical-line obstruction proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u12.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 652,
+          "line_end": 659,
+          "text": "                        F\u0005            mδ\n                   Re      (s) = −          + Re m \u0005 + O(|s − ρ|).\n                        F          |s − ρ|2\n\n\nThus Re m \u0005 = − log Q. This proves inequality (12). Therefore, the argument change\nalong the right side of the contour is O(1). This gives the proof of Theorem 1.3.\n\n",
+          "sha256": "ce81bd9d95e57b542a0d7d61facd72b6fbdae2bf68a06a030b98197389004c95"
+        },
+        "after": {
+          "line_start": 672,
+          "line_end": 679,
+          "text": "\nNow we provide the proofs for our results for the Dirichlet L-functions with imprim-\nitive characters.\n\nProof of Proposition 1.5 Let the character χ mod q be induced by a primitive character\nχ1 . Taking logarithmic derivatives of both sides of equation (2) yields\n\n\n",
+          "sha256": "a264e146ead9864cf4f4d09dfc3ede6f30ae9b5aaa44459f4d0e807ba39e1bb2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line and imprimitive-character proofs",
+            "line_end": 730,
+            "line_start": 660,
+            "mathematical_role": "Proves derivative nonvanishing on the critical line, controls finite Euler-factor perturbations, and transfers the argument-principle count to imprimitive characters."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 671,
+          "line_start": 660,
+          "title": "Derivative zeros cannot occur alone on the critical line",
+          "unit_id": "full_openalex_w2094593379_u12",
+          "unit_type": "critical-line obstruction proof",
+          "why_material": "Substituting the critical-line symmetry into the logarithmic-derivative identity makes an assumed derivative zero with F nonzero contradict strict negativity; the degree-zero case follows from its reflection identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A concise reusable obstruction extracted from the beginning of carried unit u05.",
+          "representation_dependency": "Relies on formulas (5), (6), (8), and (11); the contradiction is explicit in prose.",
+          "unit_id": "full_openalex_w2094593379_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 658,
+            "line_start": 575,
+            "title": "Finite Dirichlet-polynomial symmetry yields bounded zero-count discrepancy",
+            "unit_id": "full_openalex_w2094593379_u11",
+            "unit_type": "degree-zero proof mechanism",
+            "why_material": "Uses the classified finite Dirichlet-polynomial form and the degree-zero log-derivative reflection identity to control every contour side by O(1), including neighborhoods of critical-line zeros."
+          },
+          {
+            "line_end": 692,
+            "line_start": 676,
+            "title": "Finite Euler factors preserve the far-left zero-free mechanism",
+            "unit_id": "full_openalex_w2094593379_u13",
+            "unit_type": "bounded-perturbation transfer",
+            "why_material": "Taking logarithmic derivatives decomposes the imprimitive L-function into its primitive ancestor plus a uniformly bounded finite Euler-factor term, so sufficiently strong primitive negativity survives."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 659,
+              "line_start": 659,
+              "reason": "Blank separator before Proposition 1.4's proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u12",
+          "spontaneous_reading": "An isolated derivative zero on the critical line is ruled out by a sign contradiction: if F is nonzero there, then F'/F would vanish, yet the factorization and functional-equation identities force its real part to be strictly negative at sufficiently large height."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u12",
+          "source_grounded_mathematics": "For positive degree, the proof assumes F'(1/2+it)=0 while F(1/2+it) is nonzero at large t. The earlier Hadamard and Gamma identities then give 0=Re(F'/F)<0, a contradiction. For degree zero, the corresponding conclusion follows from the reflected logarithmic-derivative formula (11).",
+          "conceptual_reading": "The quotient F'/F converts the distinction between a derivative zero and a function zero into a sharp obstruction: away from zeros of F it is defined, but symmetry-imposed negativity prevents it from being zero.",
+          "representation_or_bridge": "The logarithmic derivative is the bridge object. It makes critical-line derivative nonvanishing a sign question, with separate analytic inputs supplying the sign in positive degree and degree zero.",
+          "boundary_or_failure": "The statement is asymptotic in height and explicitly excludes points where F itself vanishes; it therefore rules out lone derivative zeros rather than derivative vanishing at multiple zeros of F. The two degree cases depend on different prior identities.",
+          "uncertainty": "The decisive inequality is clear, but formulas (5), (6), (8), and (11) are only referenced in this narrow span and their exact notation is not restated."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Complete proof of Proposition 1.5 and a reusable perturbation-stability pattern.",
+      "line_end": 692,
+      "line_start": 676,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the displayed Euler-factor logarithmic derivative; its boundedness and sign-transfer role are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking logarithmic derivatives decomposes the imprimitive L-function into its primitive ancestor plus a uniformly bounded finite Euler-factor term, so sufficiently strong primitive negativity survives.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite Euler factors preserve the far-left zero-free mechanism",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u13.txt",
+      "unit_bytes": 1031,
+      "unit_id": "full_openalex_w2094593379_u13",
+      "unit_sha256": "161e41552182eea7bf8173f8eb6a9aec90bdb2972cc5aa7b7bb56a954b53ad92",
+      "unit_type": "bounded-perturbation transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u13.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 668,
+          "line_end": 675,
+          "text": "                                      F\n\nThis proves the proposition for d F > 0. If d F = 0 then the proposition follows by\nformula (11).\n\nNow we provide the proofs for our results for the Dirichlet L-functions with imprim-\nitive characters.\n\n",
+          "sha256": "1fa2ccea14e91df5a5d72c52efb91b04a38dd56ee4cb9f016c30b3f14782505e"
+        },
+        "after": {
+          "line_start": 693,
+          "line_end": 700,
+          "text": "\nProof of Theorem 1.6 Let R and R \u0005 be the same as in the proof of Theorem 1.2. Again,\nwithout loss of generality, assume T is such that L(σ + i T, χ ) and L \u0005 (σ + i T, χ )\ndo not vanish for 1 − σ0 ≤ σ ≤ 1/2. Let L(s, χ1 ) be the corresponding Dirichlet\nL-function with primitive character χ1 . We show that the change of arg L \u0005 /L(s, χ )\nalong the contour of R \u0005 is O(log T ).\n\n123\n",
+          "sha256": "7d3d92e1718c14315befb0959ba87e6bbcc0b83240c680836b9458bbb67a3eef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line and imprimitive-character proofs",
+            "line_end": 730,
+            "line_start": 660,
+            "mathematical_role": "Proves derivative nonvanishing on the critical line, controls finite Euler-factor perturbations, and transfers the argument-principle count to imprimitive characters."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 692,
+          "line_start": 676,
+          "title": "Finite Euler factors preserve the far-left zero-free mechanism",
+          "unit_id": "full_openalex_w2094593379_u13",
+          "unit_type": "bounded-perturbation transfer",
+          "why_material": "Taking logarithmic derivatives decomposes the imprimitive L-function into its primitive ancestor plus a uniformly bounded finite Euler-factor term, so sufficiently strong primitive negativity survives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Complete proof of Proposition 1.5 and a reusable perturbation-stability pattern.",
+          "representation_dependency": "Requires the displayed Euler-factor logarithmic derivative; its boundedness and sign-transfer role are clear in prose.",
+          "unit_id": "full_openalex_w2094593379_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 671,
+            "line_start": 660,
+            "title": "Derivative zeros cannot occur alone on the critical line",
+            "unit_id": "full_openalex_w2094593379_u12",
+            "unit_type": "critical-line obstruction proof",
+            "why_material": "Substituting the critical-line symmetry into the logarithmic-derivative identity makes an assumed derivative zero with F nonzero contradict strict negativity; the degree-zero case follows from its reflection identity."
+          },
+          {
+            "line_end": 730,
+            "line_start": 694,
+            "title": "Matched contour counting for imprimitive characters",
+            "unit_id": "full_openalex_w2094593379_u14",
+            "unit_type": "argument-principle transfer",
+            "why_material": "Reuses the positive-degree contour, adds the finite Euler-factor contribution, exploits primitive-zero symmetry on the right boundary, and retains O(log T) horizontal argument change."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For an imprimitive Dirichlet L-function, the added finite Euler factors contribute a bounded logarithmic-derivative term, allowing the primitive ancestor's far-left sign control and contour argument to transfer while adding a deterministic zero-density contribution.",
+            "limit": "The equality statement is conditional on RH for the primitive ancestor, and the source notes that analogous behavior is not supported for all functions lacking a Riemann-type functional equation.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u02",
+              "full_openalex_w2094593379_u13",
+              "full_openalex_w2094593379_u14"
+            ],
+            "title": "Finite Euler factors act as a bounded perturbation of primitive Speiser behavior"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u13",
+          "spontaneous_reading": "Passing from a primitive Dirichlet L-function to an induced imprimitive one adds only a finite Euler-factor term to the logarithmic derivative. Because that correction is uniformly bounded in the stated region, the primitive ancestor's sufficiently large negative real-part margin survives, transferring the far-left zero-free mechanism to the imprimitive derivative."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u13",
+          "source_grounded_mathematics": "Logarithmic differentiation decomposes L'/L(s,chi) into L'/L(s,chi1) for the inducing primitive character plus a finite sum over primes dividing q. The sum is uniformly bounded for |sigma| at least a fixed positive delta. Since the primitive L-function is in the extended Selberg class, the earlier argument makes Re(L'/L(s,chi1)) negative with sufficiently large magnitude in the far-left high region, so Re(L'/L(s,chi)) remains negative and L'(s,chi) has no zeros there, as L itself does not.",
+          "conceptual_reading": "This is perturbation stability with a margin: a qualitative sign conclusion transfers because the main term can dominate a bounded structured correction. The primitive object carries the hard analytic geometry; imprimitive Euler factors are controlled local modifications.",
+          "representation_or_bridge": "The logarithmic derivative turns multiplicative Euler-factor modification into addition. That additive representation cleanly separates the primitive backbone from a finite correction and makes domination by the negative main term visible.",
+          "boundary_or_failure": "The transfer needs a finite Euler correction, a fixed distance condition on sigma, sufficiently large height, and a primitive ancestor to which the extended-Selberg estimate applies. Boundedness without a dominating negative margin would not preserve the conclusion.",
+          "uncertainty": "The extracted finite-sum formula has degraded symbols, but its indexing, boundedness, and role in the sign transfer are stated plainly."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Complete proof of Theorem 1.6, with deliberate overlap with carried unit u05 to expose the transfer mechanism separately.",
+      "line_end": 730,
+      "line_start": 694,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy logarithmic-derivative decomposition; prose identifies each contour side and the reused estimates, while exact notation needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reuses the positive-degree contour, adds the finite Euler-factor contribution, exploits primitive-zero symmetry on the right boundary, and retains O(log T) horizontal argument change.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Matched contour counting for imprimitive characters",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2094593379_u14.txt",
+      "unit_bytes": 2157,
+      "unit_id": "full_openalex_w2094593379_u14",
+      "unit_sha256": "fbf7ff68831db3ed1e30b141b1d30cd25e47063e57a475e2eb13237370cca8ef",
+      "unit_type": "argument-principle transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2094593379_u14.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 686,
+          "line_end": 693,
+          "text": "The sum part on the right hand-side is bounded uniformly for |σ | ≥ δ with fixed\npositive δ. The Dirichlet L-function L(s, χ1 ) is an element of the (extended) Sel-\nberg class. Thus for L \u0005 /L(s, χ1 ), equation (5) is valid with F(s) = L(s, χ1 ). By an\nargument similar to that of Proposition 1.1, we conclude that there exists τ such that\nRe(L \u0005 /L(s, χ1 )) is sufficiently small, that is, negative with large absolute value, to\nmake Re(L \u0005 /L(s, χ )) negative with σ < 1 − σ0 , |t| ≥ τ . Therefore, L \u0005 (s, χ ) has no\nzeros in our region, just as L(s, χ ).\n\n",
+          "sha256": "7dc651b016de1102a80f6d5a0abf14b19f83d65faba64df6ae36ea282831d078"
+        },
+        "after": {
+          "line_start": 731,
+          "line_end": 738,
+          "text": "\nAcknowledgments       We would like to thank the anonymous referee for his/her valuable comments and\ninsights.\n\n\nReferences\n\n 1. Balanzario, E.P., Sánchez-Ortiz, J.: Zeros of the Davenport–Heilbronn counterexample. Math. Comp.\n",
+          "sha256": "a990a1d9e25e637af99bcfefd03d435b9e36b1ba2b31a1b62f1690e9cdfb24ef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdf6a236a234ba0be8264597461a0dd627cb01e4ada5dc0dab765fd32733a8db",
+        "dossier_sha256": "33eb06dafa68140e6166be033b77f83253aa8ecce4e0261c7af3c3783494eed6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Critical-line and imprimitive-character proofs",
+            "line_end": 730,
+            "line_start": 660,
+            "mathematical_role": "Proves derivative nonvanishing on the critical line, controls finite Euler-factor perturbations, and transfers the argument-principle count to imprimitive characters."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 730,
+          "line_start": 694,
+          "title": "Matched contour counting for imprimitive characters",
+          "unit_id": "full_openalex_w2094593379_u14",
+          "unit_type": "argument-principle transfer",
+          "why_material": "Reuses the positive-degree contour, adds the finite Euler-factor contribution, exploits primitive-zero symmetry on the right boundary, and retains O(log T) horizontal argument change."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Complete proof of Theorem 1.6, with deliberate overlap with carried unit u05 to expose the transfer mechanism separately.",
+          "representation_dependency": "Formula-heavy logarithmic-derivative decomposition; prose identifies each contour side and the reused estimates, while exact notation needs scan verification.",
+          "unit_id": "full_openalex_w2094593379_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 692,
+            "line_start": 676,
+            "title": "Finite Euler factors preserve the far-left zero-free mechanism",
+            "unit_id": "full_openalex_w2094593379_u13",
+            "unit_type": "bounded-perturbation transfer",
+            "why_material": "Taking logarithmic derivatives decomposes the imprimitive L-function into its primitive ancestor plus a uniformly bounded finite Euler-factor term, so sufficiently strong primitive negativity survives."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across positive degree, degree zero, and imprimitive characters, sign control of the logarithmic derivative on vertical boundaries plus bounded horizontal argument change converts analytic structure into a zero-count comparison between a function and its derivative.",
+            "limit": "The analytic inputs and error scales differ: Gamma-factor growth yields O(log T), degree-zero finite structure yields O(1), and imprimitive transfer includes finite Euler factors.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u10",
+              "full_openalex_w2094593379_u04",
+              "full_openalex_w2094593379_u11",
+              "full_openalex_w2094593379_u14"
+            ],
+            "title": "Logarithmic-derivative negativity is the common counting interface"
+          },
+          {
+            "claim": "For an imprimitive Dirichlet L-function, the added finite Euler factors contribute a bounded logarithmic-derivative term, allowing the primitive ancestor's far-left sign control and contour argument to transfer while adding a deterministic zero-density contribution.",
+            "limit": "The equality statement is conditional on RH for the primitive ancestor, and the source notes that analogous behavior is not supported for all functions lacking a Riemann-type functional equation.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2094593379_u02",
+              "full_openalex_w2094593379_u13",
+              "full_openalex_w2094593379_u14"
+            ],
+            "title": "Finite Euler factors act as a bounded perturbation of primitive Speiser behavior"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 735,
+              "line_start": 731,
+              "reason": "Acknowledgments and spacing before references."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2094593379_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2094593379_u14",
+          "spontaneous_reading": "The imprimitive proof is modular: reuse the positive-degree contour, insert the finite Euler correction into L'/L, retain negative real-part control on both vertical sides using primitive-zero symmetry, and import the horizontal O(log T) argument bound. The contour then carries the primitive counting mechanism across the finite-factor perturbation."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2094593379_u14",
+          "source_grounded_mathematics": "On the matched contour R', the proof aims to show that the change of arg L'/L(s,chi) is O(log T). Equation (13) gives negative real part on the left boundary. On the right, the Hadamard expansion for the primitive L-function plus the finite Euler-factor term is combined with symmetric pairing of primitive nontrivial zeros to recover negativity for sufficiently large lower height. The horizontal estimates from Theorem 1.2 again give O(log T), completing Theorem 1.6.",
+          "conceptual_reading": "The reusable proof interface is boundary sign plus horizontal argument control. Once the imprimitive function is represented as a primitive analytic backbone with a bounded finite correction, the original contour proof can be transported without rebuilding every estimate.",
+          "representation_or_bridge": "The contour converts local estimates for the logarithmic derivative into global zero-count information. Primitive-zero pairing handles the symmetry-sensitive boundary, while the additive Euler-factor term records exactly how imprimitive structure modifies the base representation.",
+          "boundary_or_failure": "The span delegates essential estimates and the final count interpretation to Theorem 1.2 and formulas (5), (7), (8), and (13), so it is not self-contained. Its O(log T) conclusion requires nonvanishing on the selected boundary and sufficiently large height; no claim for unrelated zeta families follows.",
+          "uncertainty": "The prose reliably identifies each contour-side estimate, but exact formula notation and a few inequality glyphs are degraded and should be scan-verified before symbolic reuse."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "93be5324b0ce62879aa42dca3f32a1711b4b5646b68d0a5b895b2d61254f029f"
+}

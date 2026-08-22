@@ -1,0 +1,2955 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1988856634_b18de98d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1988856634",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the historical baselines and the exact definition of I_k(T); later units depend on this target quantity.",
+      "line_end": 47,
+      "line_start": 13,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: constants and exponents are displayed-formula dependent, but the mathematical roles are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Calibrates the known second and fourth moments, identifies the absence of higher asymptotics, and states the paper's aim of producing sixth- and eighth-moment main terms.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moments as a bridge to maximal order, primes, and divisor problems",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u001.txt",
+      "unit_bytes": 3887,
+      "unit_id": "rm42_b105_u001",
+      "unit_sha256": "0f01d81d8409d631d26ebb981818297d5a45972aff928e8bd2f3da98cdc79900",
+      "unit_type": "motivation-and-problem-framing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u001.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5,
+          "line_end": 12,
+          "text": "\n\n\narXiv:math/9902162v1 [math.NT] 1 Feb 1999\n                                                                         J. B. Conrey and S. M. Gonek\n\n\n                                                                                    Introduction\n",
+          "sha256": "384cb80e3f0888cc71df36b7d795912eb7b1ef38a8d9a998ef0ca13215d9f3d3"
+        },
+        "after": {
+          "line_start": 48,
+          "line_end": 55,
+          "text": "                                               Research of both authors was supported in part by the American Institute of Mathematics and by\n                                            grants from the NSF.\n\n                                                                                                                        Typeset by AMS-TEX\n                                                                                           1\n\n<!-- source-page: 2 -->\n\n",
+          "sha256": "ee68f110211c7404674811056a4e1efbbbaf861a6f1587906d2286c059a9ab77"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 47,
+          "line_start": 13,
+          "title": "Moments as a bridge to maximal order, primes, and divisor problems",
+          "unit_id": "rm42_b105_u001",
+          "unit_type": "motivation-and-problem-framing",
+          "why_material": "Calibrates the known second and fourth moments, identifies the absence of higher asymptotics, and states the paper's aim of producing sixth- and eighth-moment main terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the historical baselines and the exact definition of I_k(T); later units depend on this target quantity.",
+          "representation_dependency": "Medium: constants and exponents are displayed-formula dependent, but the mathematical roles are explicit in prose.",
+          "unit_id": "rm42_b105_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 74,
+            "line_start": 58,
+            "title": "Agreement of additive-divisor and random-matrix heuristics",
+            "unit_id": "rm42_b105_u002",
+            "unit_type": "method-comparison",
+            "why_material": "Records the eighth-moment conjecture and highlights agreement between two structurally different heuristics as cross-method evidence rather than proof."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The random-matrix route is only summarized; its derivation is not present in this source.",
+      "line_end": 74,
+      "line_start": 58,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the exact eighth-moment Euler product is formula dependent; the comparison claim is prose recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the eighth-moment conjecture and highlights agreement between two structurally different heuristics as cross-method evidence rather than proof.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Agreement of additive-divisor and random-matrix heuristics",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u002.txt",
+      "unit_bytes": 1211,
+      "unit_id": "rm42_b105_u002",
+      "unit_sha256": "3dcd869d1f360bbeed6892cf7ebf0f2fcfd17eaa1bd72821663c29db16446ac5",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u002.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "\n                                                                                                                        Typeset by AMS-TEX\n                                                                                           1\n\n<!-- source-page: 2 -->\n\n2                             J. B. CONREY AND S. M. GONEK\n\n",
+          "sha256": "1ff7a9b64cb4e564adf0fb291b2d3a3986d05b9f441be7ed1bd32ca7df871262"
+        },
+        "after": {
+          "line_start": 75,
+          "line_end": 82,
+          "text": "    We begin by outlining the main ideas behind our approach, starting with a brief dis-\ncussion of approximate functional equations.\n    For s = σ + it and σ > 1, ζ k (s) has the Dirichlet series expansion\n                                                ∞\n                                       k\n                                                X dk (n)\n                                     ζ (s) =                 ,\n                                                n=1\n",
+          "sha256": "bf07ed76c6831a340139b1b9d2e665c8467d079d26f18433d49334768de84098"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 74,
+          "line_start": 58,
+          "title": "Agreement of additive-divisor and random-matrix heuristics",
+          "unit_id": "rm42_b105_u002",
+          "unit_type": "method-comparison",
+          "why_material": "Records the eighth-moment conjecture and highlights agreement between two structurally different heuristics as cross-method evidence rather than proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The random-matrix route is only summarized; its derivation is not present in this source.",
+          "representation_dependency": "Medium: the exact eighth-moment Euler product is formula dependent; the comparison claim is prose recoverable.",
+          "unit_id": "rm42_b105_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 47,
+            "line_start": 13,
+            "title": "Moments as a bridge to maximal order, primes, and divisor problems",
+            "unit_id": "rm42_b105_u001",
+            "unit_type": "motivation-and-problem-framing",
+            "why_material": "Calibrates the known second and fourth moments, identifies the absence of higher asymptotics, and states the paper's aim of producing sixth- and eighth-moment main terms."
+          },
+          {
+            "line_end": 117,
+            "line_start": 77,
+            "title": "Approximate functional equation as a two-polynomial representation of zeta powers",
+            "unit_id": "rm42_b105_u003",
+            "unit_type": "representation-change",
+            "why_material": "Replaces zeta(s)^k by complementary Dirichlet polynomials linked by the functional-equation factor, creating the representation used throughout the moment heuristic."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The coefficient d_k and product condition MN=(t/2pi)^k are local setup needed by the subsequent mean-square reduction.",
+      "line_end": 117,
+      "line_start": 77,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact normalization and gamma-factor layout depend on displayed formulas, though the two-piece structure is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces zeta(s)^k by complementary Dirichlet polynomials linked by the functional-equation factor, creating the representation used throughout the moment heuristic.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximate functional equation as a two-polynomial representation of zeta powers",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u003.txt",
+      "unit_bytes": 1836,
+      "unit_id": "rm42_b105_u003",
+      "unit_sha256": "56cffc85a64693426a6992678ca9da626f1500acd5716adcaa569446dee8465e",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u003.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 69,
+          "line_end": 76,
+          "text": "divisor sums employed here, they prove a general result on moments of random matrices\nwhose eigenvalues have a GUE (Gaussian Unitary Ensemble) distribution. If the zeta–\nfunction is modeled by the determinant of such a matrix, and there are reasons to believe\nit is, then the moments they calculate apply to the zeta–function as well. It is remarkable\nthat our conjecture and theirs, which we state later, agree for the sixth and eighth moments,\nand it suggests that both are likely to be right.\n    We begin by outlining the main ideas behind our approach, starting with a brief dis-\ncussion of approximate functional equations.\n",
+          "sha256": "fd8694c17288cb0d743a2bf6676eec9ce9138895bce90637753779c4b9d64291"
+        },
+        "after": {
+          "line_start": 118,
+          "line_end": 125,
+          "text": "<!-- source-page: 3 -->\n\nHIGH MOMENTS OF THE RIEMANN ZETA–FUNCTION                                                     3\n\n   Taking s = 1/2 + it in (4), integrating the square of the modulus of both sides, and\nassuming that Ek (1/2 + it) is sufficiently small, we obtain\n\n(5)\n",
+          "sha256": "e507ac2eee79eb8e6a897d3f12cc9f756459ad2ee3a3c8eafebe83b0ec5a2d97"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 117,
+          "line_start": 77,
+          "title": "Approximate functional equation as a two-polynomial representation of zeta powers",
+          "unit_id": "rm42_b105_u003",
+          "unit_type": "representation-change",
+          "why_material": "Replaces zeta(s)^k by complementary Dirichlet polynomials linked by the functional-equation factor, creating the representation used throughout the moment heuristic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The coefficient d_k and product condition MN=(t/2pi)^k are local setup needed by the subsequent mean-square reduction.",
+          "representation_dependency": "High: exact normalization and gamma-factor layout depend on displayed formulas, though the two-piece structure is clear.",
+          "unit_id": "rm42_b105_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 74,
+            "line_start": 58,
+            "title": "Agreement of additive-divisor and random-matrix heuristics",
+            "unit_id": "rm42_b105_u002",
+            "unit_type": "method-comparison",
+            "why_material": "Records the eighth-moment conjecture and highlights agreement between two structurally different heuristics as cross-method evidence rather than proof."
+          },
+          {
+            "line_end": 177,
+            "line_start": 122,
+            "title": "Stationary-phase suppression of the cross term and Conjecture 2",
+            "unit_id": "rm42_b105_u004",
+            "unit_type": "heuristic-reduction",
+            "why_material": "Turns the 2k-th zeta moment into the sum of two Dirichlet-polynomial mean squares by arguing that the mixed term is negligible, while making the extrapolation and its known limitations explicit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The higher-moment heuristic becomes a sequence of representation changes: zeta powers to complementary Dirichlet polynomials, moments to long mean squares, and long mean squares to shifted-divisor main terms.",
+            "limit": "Each arrow has a distinct conjectural gap; the chain must not be compressed into a proved reduction.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u003",
+              "rm42_b105_u004",
+              "rm42_b105_u005",
+              "rm42_b105_u006",
+              "rm42_b105_u007"
+            ],
+            "title": "Approximate-functional-equation to additive-divisor dependency chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claimed range is conjectural for k at least 3; the text identifies inadequate error bounds and a possible more complicated functional equation as the missing control.",
+      "line_end": 177,
+      "line_start": 122,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the phase, stationary point, and size conditions require the extracted equations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the 2k-th zeta moment into the sum of two Dirichlet-polynomial mean squares by arguing that the mixed term is negligible, while making the extrapolation and its known limitations explicit.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stationary-phase suppression of the cross term and Conjecture 2",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u004.txt",
+      "unit_bytes": 3938,
+      "unit_id": "rm42_b105_u004",
+      "unit_sha256": "094a0ef3b220dc4523374c2f738496d7543a41f6ca385a05062c43c551809b20",
+      "unit_type": "heuristic-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u004.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 114,
+          "line_end": 121,
+          "text": "Note that from the last equation it follows that χ(s) satisfies\n\n                                      χ(s)χ(1 − s) = 1 .\n\n<!-- source-page: 3 -->\n\nHIGH MOMENTS OF THE RIEMANN ZETA–FUNCTION                                                     3\n\n",
+          "sha256": "de5660ceb49ddefa4a9b78cadd8703a73791da0aa048ddb179773448176a599d"
+        },
+        "after": {
+          "line_start": 178,
+          "line_end": 185,
+          "text": "\n<!-- source-page: 4 -->\n\n4                               J. B. CONREY AND S. M. GONEK\n\n   Our problem now reduces to determining an asymptotic estimate for the mean square\nof the Dirichlet polynomial Dk,N (1/2 + it). The standard tool for this is the classical mean\nvalue theorem for Dirichlet polynomials which, in the refined version due to Montgomery\n",
+          "sha256": "1a7cc90b3d5fa9c0c52c6ddb3fce711d1a88c3880bd4276f16d22a909b1fd9cd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 177,
+          "line_start": 122,
+          "title": "Stationary-phase suppression of the cross term and Conjecture 2",
+          "unit_id": "rm42_b105_u004",
+          "unit_type": "heuristic-reduction",
+          "why_material": "Turns the 2k-th zeta moment into the sum of two Dirichlet-polynomial mean squares by arguing that the mixed term is negligible, while making the extrapolation and its known limitations explicit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claimed range is conjectural for k at least 3; the text identifies inadequate error bounds and a possible more complicated functional equation as the missing control.",
+          "representation_dependency": "High: the phase, stationary point, and size conditions require the extracted equations.",
+          "unit_id": "rm42_b105_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 117,
+            "line_start": 77,
+            "title": "Approximate functional equation as a two-polynomial representation of zeta powers",
+            "unit_id": "rm42_b105_u003",
+            "unit_type": "representation-change",
+            "why_material": "Replaces zeta(s)^k by complementary Dirichlet polynomials linked by the functional-equation factor, creating the representation used throughout the moment heuristic."
+          },
+          {
+            "line_end": 240,
+            "line_start": 183,
+            "title": "Why the classical mean-value theorem fails for long Dirichlet polynomials",
+            "unit_id": "rm42_b105_u005",
+            "unit_type": "obstruction",
+            "why_material": "Shows that diagonal asymptotics recover low moments only while both polynomials are short; for higher moments the product constraint forces a length beyond T and makes the classical error dominate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The higher-moment heuristic becomes a sequence of representation changes: zeta powers to complementary Dirichlet polynomials, moments to long mean squares, and long mean squares to shifted-divisor main terms.",
+            "limit": "Each arrow has a distinct conjectural gap; the chain must not be compressed into a proved reduction.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u003",
+              "rm42_b105_u004",
+              "rm42_b105_u005",
+              "rm42_b105_u006",
+              "rm42_b105_u007"
+            ],
+            "title": "Approximate-functional-equation to additive-divisor dependency chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the precise transition from a standard mean-square theorem to the need for shifted-coefficient information.",
+      "line_end": 240,
+      "line_start": 183,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the mechanism is prose explicit, with constants and sums fixed by formulas (8)-(10).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that diagonal asymptotics recover low moments only while both polynomials are short; for higher moments the product constraint forces a length beyond T and makes the classical error dominate.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why the classical mean-value theorem fails for long Dirichlet polynomials",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u005.txt",
+      "unit_bytes": 2952,
+      "unit_id": "rm42_b105_u005",
+      "unit_sha256": "8bc7017b1ba2b423a60b983472f7ff6c6289e5796f2b0c32883fa60247ea2dfb",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u005.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 175,
+          "line_end": 182,
+          "text": "equation first developed by A. Good [Go] for ζ(s) and for the L–functions attached to\ncusp forms (which are analogous to ζ(s)2 ). We hope to return to this question in a future\narticle.\n\n<!-- source-page: 4 -->\n\n4                               J. B. CONREY AND S. M. GONEK\n\n",
+          "sha256": "431c4162457c3dda48f487815aa67687a274fb7637fed13259811d9d5935492c"
+        },
+        "after": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "work of Goldston and Gonek [GG] on mean values of “long” Dirichlet polynomials, which\nallows one to evaluate\n\n                                            N\n                                       Z 2T X                         2\n                                                           a(n)\n(11)                                                                      dt\n                                        T             n=1\n",
+          "sha256": "b9d64d9150075051c929962fdb016a5f9947c6028254690a1c600c8f26f36fc8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 240,
+          "line_start": 183,
+          "title": "Why the classical mean-value theorem fails for long Dirichlet polynomials",
+          "unit_id": "rm42_b105_u005",
+          "unit_type": "obstruction",
+          "why_material": "Shows that diagonal asymptotics recover low moments only while both polynomials are short; for higher moments the product constraint forces a length beyond T and makes the classical error dominate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the precise transition from a standard mean-square theorem to the need for shifted-coefficient information.",
+          "representation_dependency": "Medium: the mechanism is prose explicit, with constants and sums fixed by formulas (8)-(10).",
+          "unit_id": "rm42_b105_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 177,
+            "line_start": 122,
+            "title": "Stationary-phase suppression of the cross term and Conjecture 2",
+            "unit_id": "rm42_b105_u004",
+            "unit_type": "heuristic-reduction",
+            "why_material": "Turns the 2k-th zeta moment into the sum of two Dirichlet-polynomial mean squares by arguing that the mixed term is negligible, while making the extrapolation and its known limitations explicit."
+          },
+          {
+            "line_end": 302,
+            "line_start": 241,
+            "title": "Coefficient correlations as the gate to long-polynomial mean squares",
+            "unit_id": "rm42_b105_u006",
+            "unit_type": "methodological-gate",
+            "why_material": "Identifies differentiable main terms and uniform error control for coefficient sums and correlations as the information needed to extend mean-square asymptotics, then isolates the unresolved additive-divisor problem for k at least 3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The higher-moment heuristic becomes a sequence of representation changes: zeta powers to complementary Dirichlet polynomials, moments to long mean squares, and long mean squares to shifted-divisor main terms.",
+            "limit": "Each arrow has a distinct conjectural gap; the chain must not be compressed into a proved reduction.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u003",
+              "rm42_b105_u004",
+              "rm42_b105_u005",
+              "rm42_b105_u006",
+              "rm42_b105_u007"
+            ],
+            "title": "Approximate-functional-equation to additive-divisor dependency chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes proved low-k ranges, expected stronger ranges, and the delta-method route to conjecturing the missing main term.",
+      "line_end": 302,
+      "line_start": 241,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: range exponents and the definition of D_k(x,h) rely on formulas but remain legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies differentiable main terms and uniform error control for coefficient sums and correlations as the information needed to extend mean-square asymptotics, then isolates the unresolved additive-divisor problem for k at least 3.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coefficient correlations as the gate to long-polynomial mean squares",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u006.txt",
+      "unit_bytes": 3032,
+      "unit_id": "rm42_b105_u006",
+      "unit_sha256": "3eb78dfafe6d28b06f37da73c2ae1645479d66eaa74d922c8f0ad293574cfaf9",
+      "unit_type": "methodological-gate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u006.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 233,
+          "line_end": 240,
+          "text": "                                                                          T logk N ,\n                        T                                        Γ(k + 1)\n\nfor N ≪ T , say. Inserting this into (6), and assuming that M and N satisfy (7) and are\neach ≪ T , we arrive at the previously known estimates for I1 (T ) and I2 (T ) in (1) and (2).\n   The problem we encounter for higher moments is that at least one of M and N must be\nsignificantly larger than T because of (7), but then the O-terms dominate the right–hand\nside of (8) and we lose the asymptotic formula. To get around this we appeal to recent\n",
+          "sha256": "661cd98144dd11020c4d9f145b83b5bc1f3289b7746512d64fecc7afa1803600"
+        },
+        "after": {
+          "line_start": 303,
+          "line_end": 310,
+          "text": "\n<!-- source-page: 6 -->\n\n6                                J. B. CONREY AND S. M. GONEK\n\n                                         P\nConjecture 3. Let Dk (x, h) =               n≤x dk (n)dk (n + h). Then we have\n\n",
+          "sha256": "120a639808280bfd4985df9500e48fe6664eacde7cac24297f38f6bc0aafffcc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 302,
+          "line_start": 241,
+          "title": "Coefficient correlations as the gate to long-polynomial mean squares",
+          "unit_id": "rm42_b105_u006",
+          "unit_type": "methodological-gate",
+          "why_material": "Identifies differentiable main terms and uniform error control for coefficient sums and correlations as the information needed to extend mean-square asymptotics, then isolates the unresolved additive-divisor problem for k at least 3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes proved low-k ranges, expected stronger ranges, and the delta-method route to conjecturing the missing main term.",
+          "representation_dependency": "Medium: range exponents and the definition of D_k(x,h) rely on formulas but remain legible.",
+          "unit_id": "rm42_b105_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 240,
+            "line_start": 183,
+            "title": "Why the classical mean-value theorem fails for long Dirichlet polynomials",
+            "unit_id": "rm42_b105_u005",
+            "unit_type": "obstruction",
+            "why_material": "Shows that diagonal asymptotics recover low moments only while both polynomials are short; for higher moments the product constraint forces a length beyond T and makes the classical error dominate."
+          },
+          {
+            "line_end": 389,
+            "line_start": 308,
+            "title": "Shifted-divisor main term and induced long-polynomial profile",
+            "unit_id": "rm42_b105_u007",
+            "unit_type": "conjectural-construction",
+            "why_material": "States the square-root-error shifted-divisor conjecture, its divisor-sum derivative, the contour-defined local factor, and the resulting profile w_k(eta) for long Dirichlet-polynomial mean squares."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The higher-moment heuristic becomes a sequence of representation changes: zeta powers to complementary Dirichlet polynomials, moments to long mean squares, and long mean squares to shifted-divisor main terms.",
+            "limit": "Each arrow has a distinct conjectural gap; the chain must not be compressed into a proved reduction.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u003",
+              "rm42_b105_u004",
+              "rm42_b105_u005",
+              "rm42_b105_u006",
+              "rm42_b105_u007"
+            ],
+            "title": "Approximate-functional-equation to additive-divisor dependency chain"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit links Conjecture 3 to Conjecture 4; formula (18) is a proved local bound later justified in the source.",
+      "line_end": 389,
+      "line_start": 308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: nested divisor sums, contour integrals, and the combinatorial profile are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the square-root-error shifted-divisor conjecture, its divisor-sum derivative, the contour-defined local factor, and the resulting profile w_k(eta) for long Dirichlet-polynomial mean squares.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted-divisor main term and induced long-polynomial profile",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u007.txt",
+      "unit_bytes": 4328,
+      "unit_id": "rm42_b105_u007",
+      "unit_sha256": "0773c32d8154e61d149a950a4d17c4e191817b4e30f918a4df2140f4fc1376cd",
+      "unit_type": "conjectural-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u007.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "several ways, the easiest being the so-called δ–method of Duke, Friedlander, and Iwaniec\n[DFI]. In the next section we describe how their method, together with a guess as to how\nthe error term behaves, suggests\n\n<!-- source-page: 6 -->\n\n6                                J. B. CONREY AND S. M. GONEK\n\n",
+          "sha256": "ad7c7b54f43d0e641a35cff57a7026523ef361a3ac35700e8adae3070b901ead"
+        },
+        "after": {
+          "line_start": 390,
+          "line_end": 397,
+          "text": "\n   With more work, we could prove that Conjecture 3 implies the mean value formula\nof Conjecture 4 for 0 ≤ η ≤ 1 − ǫ. However, we would then still have to extrapolate to\nthe full interval 0 ≤ η ≤ 1. Originally we expected the error terms in Conjecture 3 to\nexhibit considerable cancelation when summed over h ranges of length up to x1−ǫ , just\nas we believe they do when the coefficients dk (n) are replaced by Λ(n) or µ(n). We were\nsurprised to find, however, that this does not seem to be the case. For example, when\nk = 2, it appears that the error term in (12) actually leads to a main term in (2) if we use\n",
+          "sha256": "941663996aa64cb2abf6873b027f706f1df47091d0d24d98b0262d7a42a15fd2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 389,
+          "line_start": 308,
+          "title": "Shifted-divisor main term and induced long-polynomial profile",
+          "unit_id": "rm42_b105_u007",
+          "unit_type": "conjectural-construction",
+          "why_material": "States the square-root-error shifted-divisor conjecture, its divisor-sum derivative, the contour-defined local factor, and the resulting profile w_k(eta) for long Dirichlet-polynomial mean squares."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit links Conjecture 3 to Conjecture 4; formula (18) is a proved local bound later justified in the source.",
+          "representation_dependency": "High: nested divisor sums, contour integrals, and the combinatorial profile are formula dependent.",
+          "unit_id": "rm42_b105_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 302,
+            "line_start": 241,
+            "title": "Coefficient correlations as the gate to long-polynomial mean squares",
+            "unit_id": "rm42_b105_u006",
+            "unit_type": "methodological-gate",
+            "why_material": "Identifies differentiable main terms and uniform error control for coefficient sums and correlations as the information needed to extend mean-square asymptotics, then isolates the unresolved additive-divisor problem for k at least 3."
+          },
+          {
+            "line_end": 406,
+            "line_start": 391,
+            "title": "The eta greater than one contradiction and the mysterious accumulated main term",
+            "unit_id": "rm42_b105_u008",
+            "unit_type": "counterfactual-obstruction",
+            "why_material": "Tests the conjectural correlation model outside its intended range against the known fourth moment and finds an explicit contradiction, locating missing mass in accumulated correlation errors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The higher-moment heuristic becomes a sequence of representation changes: zeta powers to complementary Dirichlet polynomials, moments to long mean squares, and long mean squares to shifted-divisor main terms.",
+            "limit": "Each arrow has a distinct conjectural gap; the chain must not be compressed into a proved reduction.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u003",
+              "rm42_b105_u004",
+              "rm42_b105_u005",
+              "rm42_b105_u006",
+              "rm42_b105_u007"
+            ],
+            "title": "Approximate-functional-equation to additive-divisor dependency chain"
+          },
+          {
+            "claim": "Testing the correlation profile against a known moment exposes failure beyond eta=1, while invariance within the admissible split supplies an internal check for the sixth-moment constant.",
+            "limit": "Consistency and split-invariance are evidence for the conjecture, not independent validation or a proof.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u007",
+              "rm42_b105_u008",
+              "rm42_b105_u009",
+              "rm42_b105_u024"
+            ],
+            "title": "Self-consistency determines the usable length regime"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The authors retain the functional-equation heuristic and infer failure of Conjecture 3 beyond eta=1 rather than treating all assumptions symmetrically.",
+      "line_end": 406,
+      "line_start": 391,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the polynomial w_2(eta) and inequality are formula dependent; the contradiction is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tests the conjectural correlation model outside its intended range against the known fourth moment and finds an explicit contradiction, locating missing mass in accumulated correlation errors.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The eta greater than one contradiction and the mysterious accumulated main term",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u008.txt",
+      "unit_bytes": 1195,
+      "unit_id": "rm42_b105_u008",
+      "unit_sha256": "cc5ebccb6e152c3c3ad5565b8e24e1ffa30bdc643e1d44efb50f98600c2750d4",
+      "unit_type": "counterfactual-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u008.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 383,
+          "line_end": 390,
+          "text": "                                        X    k k                          n−1\n                    γk (n) = (−1)\n                                        i=0 j=0\n                                                   i   j       i − 1, j − 1, n − i − j + 1\n\nfor n ≥ 1, and\n                                                   γk (0) = k.\n\n",
+          "sha256": "06bd1977da3867f1a458fb6229bcb3363d2cf7b4847dbfd0413751d602ee527a"
+        },
+        "after": {
+          "line_start": 407,
+          "line_end": 414,
+          "text": "   The restriction on the size of N in Corollary 4 means that M and N must satisfy\nmax(M, N ) ≪ T 2 in (6) and, in light of (7), this forces k to be less than or equal to\n4. When k = 3, for example, we may use (6)with N satisfying T ≪ N ≪ T 2 . Then\nM = T 3 /N will satisfy the same bound and we will show that for any choice of N in this\nrange, Conjecture 4 leads to\n     Z 2T                            Z 2T                                  Z 2T\n                           6\n             |ζ(1/2 + it)| dt ∼                                  2\n",
+          "sha256": "0000b9261b917fa2dfb71e894fc5425ad216264975cd39676007225ad133f206"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 406,
+          "line_start": 391,
+          "title": "The eta greater than one contradiction and the mysterious accumulated main term",
+          "unit_id": "rm42_b105_u008",
+          "unit_type": "counterfactual-obstruction",
+          "why_material": "Tests the conjectural correlation model outside its intended range against the known fourth moment and finds an explicit contradiction, locating missing mass in accumulated correlation errors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The authors retain the functional-equation heuristic and infer failure of Conjecture 3 beyond eta=1 rather than treating all assumptions symmetrically.",
+          "representation_dependency": "Medium: the polynomial w_2(eta) and inequality are formula dependent; the contradiction is explicit in prose.",
+          "unit_id": "rm42_b105_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 389,
+            "line_start": 308,
+            "title": "Shifted-divisor main term and induced long-polynomial profile",
+            "unit_id": "rm42_b105_u007",
+            "unit_type": "conjectural-construction",
+            "why_material": "States the square-root-error shifted-divisor conjecture, its divisor-sum derivative, the contour-defined local factor, and the resulting profile w_k(eta) for long Dirichlet-polynomial mean squares."
+          },
+          {
+            "line_end": 443,
+            "line_start": 407,
+            "title": "Length constraints select k at most four and stabilize the sixth-moment constant",
+            "unit_id": "rm42_b105_u009",
+            "unit_type": "consistency-check",
+            "why_material": "Combines the admissible long-polynomial range with MN=T^k to explain why the method reaches k=3,4, and shows split-invariance for the sixth moment plus the forced symmetric split for the eighth."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Testing the correlation profile against a known moment exposes failure beyond eta=1, while invariance within the admissible split supplies an internal check for the sixth-moment constant.",
+            "limit": "Consistency and split-invariance are evidence for the conjecture, not independent validation or a proof.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u007",
+              "rm42_b105_u008",
+              "rm42_b105_u009",
+              "rm42_b105_u024"
+            ],
+            "title": "Self-consistency determines the usable length regime"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sixth-moment persistence over T much less than N much less than T^2 is presented as independent confirmation, not proof.",
+      "line_end": 443,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact constants 42 and 24024 and the split relations are displayed-formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines the admissible long-polynomial range with MN=T^k to explain why the method reaches k=3,4, and shows split-invariance for the sixth moment plus the forced symmetric split for the eighth.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Length constraints select k at most four and stabilize the sixth-moment constant",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u009.txt",
+      "unit_bytes": 2048,
+      "unit_id": "rm42_b105_u009",
+      "unit_sha256": "859ee1277b07069886137041794e1f5c7d90cb561b3c50466a5d5a10df705a68",
+      "unit_type": "consistency-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u009.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "\n                                    w2 (η) = 1 + 4η − 6η 2 + 4η 3 − η 4 ,\n\nif we take η > 1, we see that w2 (η) > 2. It follows that, (6), (7), and Conjecture 3 cannot\nall be true if η > 1, since they contradict Ingham’s result (2). We believe (6) and (7) are\ncorrect, so our conclusion is that Conjecture 3 fails when η > 1. Since we have accounted\nfor all of the obvious main terms, we are forced to conclude that somehow the error terms\nin (12) accumulate to deliver a new “mysterious” main-term.\n",
+          "sha256": "9681c59b65c75817b52b12e9530a006eb5467969ac0429e72e4bfad856c8057a"
+        },
+        "after": {
+          "line_start": 444,
+          "line_end": 451,
+          "text": "    The form of these results suggests that there exists a constant gk such that\n                                                    ak             k2\n(19)                             Ik (T ) ∼ gk                T log    T .\n                                                 Γ(1 + k 2 )\n\nWith this notation, Hardy and Littlewood’s result asserts that g1 = 1, Ingham’s that g2 =\n2, the conjecture of Conrey and Ghosh that g3 = 42, and Conjecture 1 that g4 = 24024.\nSince we do not know whether gk exists in general, it is convenient to define\n",
+          "sha256": "02bdc2dfd86228e637c2e1b9be115926aa8e920d7aa4c29e8d93fa604e2a6bc5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 443,
+          "line_start": 407,
+          "title": "Length constraints select k at most four and stabilize the sixth-moment constant",
+          "unit_id": "rm42_b105_u009",
+          "unit_type": "consistency-check",
+          "why_material": "Combines the admissible long-polynomial range with MN=T^k to explain why the method reaches k=3,4, and shows split-invariance for the sixth moment plus the forced symmetric split for the eighth."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sixth-moment persistence over T much less than N much less than T^2 is presented as independent confirmation, not proof.",
+          "representation_dependency": "High: exact constants 42 and 24024 and the split relations are displayed-formula dependent.",
+          "unit_id": "rm42_b105_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 406,
+            "line_start": 391,
+            "title": "The eta greater than one contradiction and the mysterious accumulated main term",
+            "unit_id": "rm42_b105_u008",
+            "unit_type": "counterfactual-obstruction",
+            "why_material": "Tests the conjectural correlation model outside its intended range against the known fourth moment and finds an explicit contradiction, locating missing mass in accumulated correlation errors."
+          },
+          {
+            "line_end": 556,
+            "line_start": 444,
+            "title": "Arithmetic factor a_k versus residual moment factor g_k",
+            "unit_id": "rm42_b105_u010",
+            "unit_type": "factorization-and-growth-comparison",
+            "why_material": "Separates the conjectural moment constant into an Euler-product arithmetic factor and a residual factor, surveys lower bounds, derives broad growth bounds, and compares them with the Keating-Snaith formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Testing the correlation profile against a known moment exposes failure beyond eta=1, while invariance within the admissible split supplies an internal check for the sixth-moment constant.",
+            "limit": "Consistency and split-invariance are evidence for the conjecture, not independent validation or a proof.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u007",
+              "rm42_b105_u008",
+              "rm42_b105_u009",
+              "rm42_b105_u024"
+            ],
+            "title": "Self-consistency determines the usable length regime"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Existence and analytic continuation of g_k are explicitly hypothetical; the random-matrix asymptotic is a comparison condition.",
+      "line_end": 556,
+      "line_start": 444,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: normalization, auxiliary means, and large-k asymptotics depend on formulas (19)-(23).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the conjectural moment constant into an Euler-product arithmetic factor and a residual factor, surveys lower bounds, derives broad growth bounds, and compares them with the Keating-Snaith formula.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic factor a_k versus residual moment factor g_k",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u010.txt",
+      "unit_bytes": 6511,
+      "unit_id": "rm42_b105_u010",
+      "unit_sha256": "7ac5979f6fb6b40cff94229e141b6e24ba03f73c672c653852b0f4cb3b6e7f62",
+      "unit_type": "factorization-and-growth-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u010.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 436,
+          "line_end": 443,
+          "text": "<!-- source-page: 8 -->\n\n8                               J. B. CONREY AND S. M. GONEK\n\nso that\n                                               a4\n                                    I4 (T ) ∼ 24024T log16 T .\n                                               16!\n",
+          "sha256": "3a568131cfa98c1c613e1d7d8ce5d490fde4be4929394a73c6d260dd343ef488"
+        },
+        "after": {
+          "line_start": 557,
+          "line_end": 564,
+          "text": "\n<!-- source-page: 10 -->\n\n10                          J. B. CONREY AND S. M. GONEK\n\n   With conjectural estimates for gk in hand we can approach the question of the maximal\norder of the zeta–function. Define\n\n",
+          "sha256": "c785605d772736801efe856e965a94be9a71df3208cf2564d06343b5b5a8587d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 556,
+          "line_start": 444,
+          "title": "Arithmetic factor a_k versus residual moment factor g_k",
+          "unit_id": "rm42_b105_u010",
+          "unit_type": "factorization-and-growth-comparison",
+          "why_material": "Separates the conjectural moment constant into an Euler-product arithmetic factor and a residual factor, surveys lower bounds, derives broad growth bounds, and compares them with the Keating-Snaith formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Existence and analytic continuation of g_k are explicitly hypothetical; the random-matrix asymptotic is a comparison condition.",
+          "representation_dependency": "High: normalization, auxiliary means, and large-k asymptotics depend on formulas (19)-(23).",
+          "unit_id": "rm42_b105_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 443,
+            "line_start": 407,
+            "title": "Length constraints select k at most four and stabilize the sixth-moment constant",
+            "unit_id": "rm42_b105_u009",
+            "unit_type": "consistency-check",
+            "why_material": "Combines the admissible long-polynomial range with MN=T^k to explain why the method reaches k=3,4, and shows split-invariance for the sixth moment plus the forced symmetric split for the eighth."
+          },
+          {
+            "line_end": 693,
+            "line_start": 562,
+            "title": "From large-k moments to maximal order",
+            "unit_id": "rm42_b105_u011",
+            "unit_type": "implication-chain",
+            "why_material": "Uses the L^{2k}-norm lower bound, the asymptotic size of a_k, and alternative growth laws for g_k to derive two competing extreme-value scales for zeta and analogous quantities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Separating a_k from g_k makes it possible to combine a proved large-k arithmetic-factor asymptotic with alternative conjectural universal-factor growth laws, producing different maximal-order scales.",
+            "limit": "The final extreme-value conclusions require unproved existence and strong uniformity of moment asymptotics as k grows with T.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u010",
+              "rm42_b105_u011",
+              "rm42_b105_u023",
+              "rm42_b105_u025"
+            ],
+            "title": "Arithmetic-universal separation controls extreme-value predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inference requires strong uniformity in k and is explicitly conjectural; it is valuable as a map from moment growth to maximal-order regimes.",
+      "line_end": 693,
+      "line_start": 562,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: optimization in k and the resulting exponential scales rely on displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the L^{2k}-norm lower bound, the asymptotic size of a_k, and alternative growth laws for g_k to derive two competing extreme-value scales for zeta and analogous quantities.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From large-k moments to maximal order",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u011.txt",
+      "unit_bytes": 6707,
+      "unit_id": "rm42_b105_u011",
+      "unit_sha256": "e82df0f614beb5ba03844021ee04ed6693ce40a73b46234789d8bd0b45567ed5",
+      "unit_type": "implication-chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u011.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 554,
+          "line_end": 561,
+          "text": "(23)                                    gk = (k/4e1/2 )k (1+o(1))\n\nas k → ∞.\n\n<!-- source-page: 10 -->\n\n10                          J. B. CONREY AND S. M. GONEK\n\n",
+          "sha256": "b4dd8bd32a22e2a6ddc7c597f8cb0793893ce5c95d1d4cfb68a526f775f7e12a"
+        },
+        "after": {
+          "line_start": 694,
+          "line_end": 701,
+          "text": "   The second author wishes to express his sincere gratitude to the American Institute of\nMathematics for its generous support and hospitality while he was working on this paper.\n\n                         The conjectural formula for Dk (x, h)\n  In this section we sketch the derivation of the form and properties of mk (x, h), the\nconjectural main term for\n                                             X\n                              Dk (x, h) =          dk (n)dk (n + h).\n",
+          "sha256": "59de9f68839f0063d99b8a18c504083e060dac80570be1ee8e76d2df29cfe97a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, approximate functional equations, moment constants, and maximal-order implications",
+            "line_end": 696,
+            "line_start": 1,
+            "mathematical_role": "States the moment problem, introduces the two-piece Dirichlet-polynomial heuristic, identifies the long-polynomial/additive-divisor bottleneck, gives conjectural moment constants and growth bounds, and translates high moments into extreme-value predictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 693,
+          "line_start": 562,
+          "title": "From large-k moments to maximal order",
+          "unit_id": "rm42_b105_u011",
+          "unit_type": "implication-chain",
+          "why_material": "Uses the L^{2k}-norm lower bound, the asymptotic size of a_k, and alternative growth laws for g_k to derive two competing extreme-value scales for zeta and analogous quantities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inference requires strong uniformity in k and is explicitly conjectural; it is valuable as a map from moment growth to maximal-order regimes.",
+          "representation_dependency": "High: optimization in k and the resulting exponential scales rely on displayed formulas.",
+          "unit_id": "rm42_b105_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 556,
+            "line_start": 444,
+            "title": "Arithmetic factor a_k versus residual moment factor g_k",
+            "unit_id": "rm42_b105_u010",
+            "unit_type": "factorization-and-growth-comparison",
+            "why_material": "Separates the conjectural moment constant into an Euler-product arithmetic factor and a residual factor, surveys lower bounds, derives broad growth bounds, and compares them with the Keating-Snaith formula."
+          },
+          {
+            "line_end": 737,
+            "line_start": 697,
+            "title": "Delta-method construction of the shifted-divisor derivative",
+            "unit_id": "rm42_b105_u012",
+            "unit_type": "construction",
+            "why_material": "Starts from additive-twist main terms, applies the delta method while isolating ignored errors, and converts Ramanujan sums into the divisor-indexed local factors f_k(x,d)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Separating a_k from g_k makes it possible to combine a proved large-k arithmetic-factor asymptotic with alternative conjectural universal-factor growth laws, producing different maximal-order scales.",
+            "limit": "The final extreme-value conclusions require unproved existence and strong uniformity of moment asymptotics as k grows with T.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u010",
+              "rm42_b105_u011",
+              "rm42_b105_u023",
+              "rm42_b105_u025"
+            ],
+            "title": "Arithmetic-universal separation controls extreme-value predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span derives the structural form of equations (13)-(14), not the error conjecture.",
+      "line_end": 737,
+      "line_start": 697,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the construction is encoded in sums over q and divisors.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starts from additive-twist main terms, applies the delta method while isolating ignored errors, and converts Ramanujan sums into the divisor-indexed local factors f_k(x,d).",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Delta-method construction of the shifted-divisor derivative",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u012.txt",
+      "unit_bytes": 2008,
+      "unit_id": "rm42_b105_u012",
+      "unit_sha256": "756eeaef2d7458e68177a9be9595ce5138e9004fb9f99e0cfb6528a78cff95c0",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u012.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 689,
+          "line_end": 696,
+          "text": "maximal size of |L(1, χ)|. This is at odds with the usual view in these questions which\nis that the true order is most likely to be near the lower bounds. See the forthcoming\npaper of Granville and Soundararajan P [GS] where one may find similar computations and\nand an asymptotic evaluation of n dk (n)2 /n2 which resembles the result of the above\nProposition.\n   The second author wishes to express his sincere gratitude to the American Institute of\nMathematics for its generous support and hospitality while he was working on this paper.\n\n",
+          "sha256": "33b317f3621e40f899b4c14cd13877532aa87e42a36a6e7028c09d290ee5e564"
+        },
+        "after": {
+          "line_start": 738,
+          "line_end": 745,
+          "text": "<!-- source-page: 13 -->\n\nHIGH MOMENTS OF THE RIEMANN ZETA–FUNCTION                                                              13\n\n   Next we need to determine an explicit expression for Pk (x, q). To do this we consider\nthe generating function\n                                                     ∞\n                                               a    X           an\n",
+          "sha256": "87e881abb69a51afd823057095871d5677f0c62b05a88bcf7972d0b00646946a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The conjectural formula for D_k(x,h)",
+            "line_end": 989,
+            "line_start": 697,
+            "mathematical_role": "Uses the delta method, additive twists, character decompositions, pole extraction, and local bounds to construct and control the conjectural shifted-divisor main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 737,
+          "line_start": 697,
+          "title": "Delta-method construction of the shifted-divisor derivative",
+          "unit_id": "rm42_b105_u012",
+          "unit_type": "construction",
+          "why_material": "Starts from additive-twist main terms, applies the delta method while isolating ignored errors, and converts Ramanujan sums into the divisor-indexed local factors f_k(x,d)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span derives the structural form of equations (13)-(14), not the error conjecture.",
+          "representation_dependency": "High: the construction is encoded in sums over q and divisors.",
+          "unit_id": "rm42_b105_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 693,
+            "line_start": 562,
+            "title": "From large-k moments to maximal order",
+            "unit_id": "rm42_b105_u011",
+            "unit_type": "implication-chain",
+            "why_material": "Uses the L^{2k}-norm lower bound, the asymptotic size of a_k, and alternative growth laws for g_k to derive two competing extreme-value scales for zeta and analogous quantities."
+          },
+          {
+            "line_end": 871,
+            "line_start": 742,
+            "title": "Additive twists, characters, and extraction of P_k(x,q)",
+            "unit_id": "rm42_b105_u013",
+            "unit_type": "generating-function-and-pole-analysis",
+            "why_material": "Decomposes the additive-twist Dirichlet series into characters, identifies principal characters as the sole poles in the relevant half-plane, and obtains P_k from the singular part via Perron's formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Independence from the residue class a is an important structural output of the pole calculation.",
+      "line_end": 871,
+      "line_start": 742,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: character moduli, Euler factors, and contour normalization are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the additive-twist Dirichlet series into characters, identifies principal characters as the sole poles in the relevant half-plane, and obtains P_k from the singular part via Perron's formula.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Additive twists, characters, and extraction of P_k(x,q)",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u013.txt",
+      "unit_bytes": 7457,
+      "unit_id": "rm42_b105_u013",
+      "unit_sha256": "a57312951dc67ca08ade8563d4125dd71d79896e3a892dbb3f71e3a9c52ce551",
+      "unit_type": "generating-function-and-pole-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u013.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 734,
+          "line_end": 741,
+          "text": "                               fk (x, d) =                Pk (x, qd)2 .\n                                             q=1\n                                                    q2\n\n<!-- source-page: 13 -->\n\nHIGH MOMENTS OF THE RIEMANN ZETA–FUNCTION                                                              13\n\n",
+          "sha256": "90edca567780d1b569edf3753614df269081eac5d61f329cda0c30f282225168"
+        },
+        "after": {
+          "line_start": 872,
+          "line_end": 879,
+          "text": "   It only remains to prove (18). However, before doing this we derive a formula that we\nfeel is interesting in its own right, even though we do not require it here. Define\n                                                 ∞\n                                                 X\n                              Dk (s, h) =              dk (n)dk (n + h)n−s .\n                                                 n=1\n\nThen\n",
+          "sha256": "ad7da1bc3be2e43bef10992aa059b30261931bbd2e5eaf165fcc72b5ae9c5703"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The conjectural formula for D_k(x,h)",
+            "line_end": 989,
+            "line_start": 697,
+            "mathematical_role": "Uses the delta method, additive twists, character decompositions, pole extraction, and local bounds to construct and control the conjectural shifted-divisor main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 871,
+          "line_start": 742,
+          "title": "Additive twists, characters, and extraction of P_k(x,q)",
+          "unit_id": "rm42_b105_u013",
+          "unit_type": "generating-function-and-pole-analysis",
+          "why_material": "Decomposes the additive-twist Dirichlet series into characters, identifies principal characters as the sole poles in the relevant half-plane, and obtains P_k from the singular part via Perron's formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Independence from the residue class a is an important structural output of the pole calculation.",
+          "representation_dependency": "High: character moduli, Euler factors, and contour normalization are formula dependent.",
+          "unit_id": "rm42_b105_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 737,
+            "line_start": 697,
+            "title": "Delta-method construction of the shifted-divisor derivative",
+            "unit_id": "rm42_b105_u012",
+            "unit_type": "construction",
+            "why_material": "Starts from additive-twist main terms, applies the delta method while isolating ignored errors, and converts Ramanujan sums into the divisor-indexed local factors f_k(x,d)."
+          },
+          {
+            "line_end": 907,
+            "line_start": 872,
+            "title": "Residue identity for shifted divisor correlations",
+            "unit_id": "rm42_b105_u014",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Expresses the conjectural shifted-correlation residue as a Ramanujan-weighted sum of squared additive-twist residues, revealing an equivalent spectral-looking identity for the main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source calls the identity interesting but not required for the subsequent proof.",
+      "line_end": 907,
+      "line_start": 872,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: meaning is concentrated in the residue formula and its squared terms.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses the conjectural shifted-correlation residue as a Ramanujan-weighted sum of squared additive-twist residues, revealing an equivalent spectral-looking identity for the main term.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residue identity for shifted divisor correlations",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u014.txt",
+      "unit_bytes": 1784,
+      "unit_id": "rm42_b105_u014",
+      "unit_sha256": "76c641e81c49b65270c1115fb6fd7227409f8f0c8883800021ba5401945fc493",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u014.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 864,
+          "line_end": 871,
+          "text": "                                                             \u0012 \u0013s−1\n                                 1                            x\n                                   Z\n                                                  k\n(34)                Pk (x, q) =               ζ(s) Gk (s, q)        ds .\n                                2πi |s−1|=1/8                 q\n\nOn changing s to s + 1, we obtain (15).\n",
+          "sha256": "5159407afd41c29a1d35ad7342ac73e3220f559e0f41c1d25d67b29ce15717ca"
+        },
+        "after": {
+          "line_start": 908,
+          "line_end": 915,
+          "text": "  We now proceed to the proof of (18). From (16) and (17) we see that gk (s, 1) =\nGk (s, 1) = 1, and that for α ≥ 1\n\n                                     1\n                   Gk (s, pα ) = (1 − )−1 gk (s, pα ) − ps−1 gk (s, pα−1 ) .\n                                                                          \u0001\n                                     p\n\n",
+          "sha256": "2fcc99b42e925882aeea6f26182ab62c734c7e2a0f81433ad58a0fb39ba72e64"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The conjectural formula for D_k(x,h)",
+            "line_end": 989,
+            "line_start": 697,
+            "mathematical_role": "Uses the delta method, additive twists, character decompositions, pole extraction, and local bounds to construct and control the conjectural shifted-divisor main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 907,
+          "line_start": 872,
+          "title": "Residue identity for shifted divisor correlations",
+          "unit_id": "rm42_b105_u014",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Expresses the conjectural shifted-correlation residue as a Ramanujan-weighted sum of squared additive-twist residues, revealing an equivalent spectral-looking identity for the main term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source calls the identity interesting but not required for the subsequent proof.",
+          "representation_dependency": "High: meaning is concentrated in the residue formula and its squared terms.",
+          "unit_id": "rm42_b105_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 871,
+            "line_start": 742,
+            "title": "Additive twists, characters, and extraction of P_k(x,q)",
+            "unit_id": "rm42_b105_u013",
+            "unit_type": "generating-function-and-pole-analysis",
+            "why_material": "Decomposes the additive-twist Dirichlet series into characters, identifies principal characters as the sole poles in the relevant half-plane, and obtains P_k from the singular part via Perron's formula."
+          },
+          {
+            "line_end": 988,
+            "line_start": 908,
+            "title": "Prime-power recursion controls G_k, P_k, and f_k",
+            "unit_id": "rm42_b105_u015",
+            "unit_type": "local-bound",
+            "why_material": "Uses a divisor recursion and submultiplicativity at prime powers to bound the local factor G_k, then transfers that bound through the contour formula to P_k and f_k."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the convergence and size control promised earlier for the conjectural main term.",
+      "line_end": 988,
+      "line_start": 908,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the chain of inequalities and the contour radius are formula dependent, with minor extraction crowding.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a divisor recursion and submultiplicativity at prime powers to bound the local factor G_k, then transfers that bound through the contour formula to P_k and f_k.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-power recursion controls G_k, P_k, and f_k",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u015.txt",
+      "unit_bytes": 3530,
+      "unit_id": "rm42_b105_u015",
+      "unit_sha256": "12bf8b3f7760b23ebeaf0c386bb240dc08be6a2d3a74e9e4edc11c5202fb47b8",
+      "unit_type": "local-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u015.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 900,
+          "line_end": 907,
+          "text": "                                             X                    1\n                    res Dk (s, h)x   s−1\n                                           =     cq (h) res Dk (s, )xs−1        .\n                    s=1\n                                             q=1\n                                                        s=1       q\n\nThis is the formula referred to above.\n",
+          "sha256": "6cd7c91c8544c14995065ed56f7f451a587daa60cd0ce88aad81cc5a37726956"
+        },
+        "after": {
+          "line_start": 989,
+          "line_end": 996,
+          "text": "\n                              The generating function Fk (x, z)\n   In applying Conjecture 3 in the next section, it will turn out that what we actually\nrequire is the behavior of the generating function\n                                                       ∞\n                                                       X fk (dx, d)\n                                         Fk (x, z) =\n                                                                 dz+1\n",
+          "sha256": "e064cb46b29130dd6b092a62f52308ed003213de6587b65ae1651a810db84771"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The conjectural formula for D_k(x,h)",
+            "line_end": 989,
+            "line_start": 697,
+            "mathematical_role": "Uses the delta method, additive twists, character decompositions, pole extraction, and local bounds to construct and control the conjectural shifted-divisor main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 988,
+          "line_start": 908,
+          "title": "Prime-power recursion controls G_k, P_k, and f_k",
+          "unit_id": "rm42_b105_u015",
+          "unit_type": "local-bound",
+          "why_material": "Uses a divisor recursion and submultiplicativity at prime powers to bound the local factor G_k, then transfers that bound through the contour formula to P_k and f_k."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the convergence and size control promised earlier for the conjectural main term.",
+          "representation_dependency": "High: the chain of inequalities and the contour radius are formula dependent, with minor extraction crowding.",
+          "unit_id": "rm42_b105_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 907,
+            "line_start": 872,
+            "title": "Residue identity for shifted divisor correlations",
+            "unit_id": "rm42_b105_u014",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Expresses the conjectural shifted-correlation residue as a Ramanujan-weighted sum of squared additive-twist residues, revealing an equivalent spectral-looking identity for the main term."
+          },
+          {
+            "line_end": 1098,
+            "line_start": 990,
+            "title": "Generating function F_k isolates universal zeta singularities",
+            "unit_id": "rm42_b105_u016",
+            "unit_type": "euler-product-factorization",
+            "why_material": "Packages f_k(dx,d) into a Dirichlet generating function, factors its local terms, and separates four zeta-function singular factors from an analytic residual Euler product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This representation is the compression step that later permits the leading Laurent-term calculation.",
+      "line_end": 1098,
+      "line_start": 990,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: multiple contour variables and Euler factors require the displayed formulas (39)-(42).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Packages f_k(dx,d) into a Dirichlet generating function, factors its local terms, and separates four zeta-function singular factors from an analytic residual Euler product.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Generating function F_k isolates universal zeta singularities",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u016.txt",
+      "unit_bytes": 5536,
+      "unit_id": "rm42_b105_u016",
+      "unit_sha256": "01bc210dab8d9c8746dbaa6255694466d557466b6250064e34833c6fdbdefefc",
+      "unit_type": "euler-product-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u016.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 982,
+          "line_end": 989,
+          "text": "\nFinally, we use this bound in (14), separate the resulting divisor functions by means of\n(37), and recall that d ≤ x to obtain\n\n                                    fk (x, d) ≪ d2k−1 (d) log2k−2 x ,\n\nwhich is (18).\n\n",
+          "sha256": "73f1b2a3e4d5a7d9464fdad1f83d037bcc1990c5e95d9be1d7e6e176bc5929b8"
+        },
+        "after": {
+          "line_start": 1099,
+          "line_end": 1106,
+          "text": "\n<!-- source-page: 18 -->\n\n18                               J. B. CONREY AND S. M. GONEK\n\n   Finally we evaluate Hk∗ (0, 0, 0) as this is also required in the next section. By (40) and\nthe definition of Hk∗ (z, s, w) we have\n                                               ∞\n",
+          "sha256": "ce14b710b83a4959c4ee573e99092aca135f36ab0228cded8576865cc23ee1d5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The generating function F_k(x,z)",
+            "line_end": 1170,
+            "line_start": 990,
+            "mathematical_role": "Packages the local correlation factors into an Euler product, isolates its zeta singularities, and identifies the residual Euler product at the origin with the arithmetic moment factor a_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1098,
+          "line_start": 990,
+          "title": "Generating function F_k isolates universal zeta singularities",
+          "unit_id": "rm42_b105_u016",
+          "unit_type": "euler-product-factorization",
+          "why_material": "Packages f_k(dx,d) into a Dirichlet generating function, factors its local terms, and separates four zeta-function singular factors from an analytic residual Euler product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This representation is the compression step that later permits the leading Laurent-term calculation.",
+          "representation_dependency": "High: multiple contour variables and Euler factors require the displayed formulas (39)-(42).",
+          "unit_id": "rm42_b105_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 988,
+            "line_start": 908,
+            "title": "Prime-power recursion controls G_k, P_k, and f_k",
+            "unit_id": "rm42_b105_u015",
+            "unit_type": "local-bound",
+            "why_material": "Uses a divisor recursion and submultiplicativity at prime powers to bound the local factor G_k, then transfers that bound through the contour formula to P_k and f_k."
+          },
+          {
+            "line_end": 1168,
+            "line_start": 1104,
+            "title": "The residual Euler product at the origin equals a_k",
+            "unit_id": "rm42_b105_u017",
+            "unit_type": "constant-identification",
+            "why_material": "Reduces the local factors at (0,0,0) using divisor identities and identifies their Euler product exactly with the arithmetic moment factor a_k."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the bridge that carries arithmetic local data into the long-polynomial mean-square constant.",
+      "line_end": 1168,
+      "line_start": 1104,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the prime-by-prime algebra is formula intensive but sequentially recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reduces the local factors at (0,0,0) using divisor identities and identifies their Euler product exactly with the arithmetic moment factor a_k.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The residual Euler product at the origin equals a_k",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u017.txt",
+      "unit_bytes": 4046,
+      "unit_id": "rm42_b105_u017",
+      "unit_sha256": "d705f40aac4fcf7a99444f6bbb0205b4c258b9fe09c8efbac60ff41c7a9a2e4d",
+      "unit_type": "constant-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u017.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1096,
+          "line_end": 1103,
+          "text": "               ZZ\n     =            |s|=1/8                                                   Hk (z, s, w) ds dw .\n        (2πi)2    |w|=1/8             ζ(z + 1 − s)k ζ(z + 1 − w)k\n\n<!-- source-page: 18 -->\n\n18                               J. B. CONREY AND S. M. GONEK\n\n",
+          "sha256": "f7b19362f6b507ddcaeebe9cf0c8ca4f4048d4e7ffe89cfe8411c1c4db1fe11d"
+        },
+        "after": {
+          "line_start": 1169,
+          "line_end": 1176,
+          "text": "\n\n                                               Conjecture 4\n   A precise version of the mean value formula we require to derive the formula in Con-\njecture 4 is given in the paper of Goldston and Gonek [GG]. However, we adopt a simpler\nheuristic approach that will lead to the same formula more quickly.\n   Recall that\n                                                N\n",
+          "sha256": "b99398a6b15899054044efdfbc060969e3cba7ae6f15ea4d6e7b40815f2dc5e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The generating function F_k(x,z)",
+            "line_end": 1170,
+            "line_start": 990,
+            "mathematical_role": "Packages the local correlation factors into an Euler product, isolates its zeta singularities, and identifies the residual Euler product at the origin with the arithmetic moment factor a_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1168,
+          "line_start": 1104,
+          "title": "The residual Euler product at the origin equals a_k",
+          "unit_id": "rm42_b105_u017",
+          "unit_type": "constant-identification",
+          "why_material": "Reduces the local factors at (0,0,0) using divisor identities and identifies their Euler product exactly with the arithmetic moment factor a_k."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the bridge that carries arithmetic local data into the long-polynomial mean-square constant.",
+          "representation_dependency": "High: the prime-by-prime algebra is formula intensive but sequentially recoverable.",
+          "unit_id": "rm42_b105_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1098,
+            "line_start": 990,
+            "title": "Generating function F_k isolates universal zeta singularities",
+            "unit_id": "rm42_b105_u016",
+            "unit_type": "euler-product-factorization",
+            "why_material": "Packages f_k(dx,d) into a Dirichlet generating function, factors its local terms, and separates four zeta-function singular factors from an analytic residual Euler product."
+          },
+          {
+            "line_end": 1224,
+            "line_start": 1171,
+            "title": "Symmetric truncation separates diagonal and shifted off-diagonal terms",
+            "unit_id": "rm42_b105_u018",
+            "unit_type": "decomposition",
+            "why_material": "Explains why the mean square is centered on [-T,T], recovers the desired interval by differencing, and rewrites the off-diagonal using shifts h."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Avoiding t near zero prevents a large N-sized contribution from obscuring the critical-line mean square away from the real axis.",
+      "line_end": 1224,
+      "line_start": 1171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the exact diagonal/off-diagonal sums and sine kernel are displayed-formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why the mean square is centered on [-T,T], recovers the desired interval by differencing, and rewrites the off-diagonal using shifts h.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetric truncation separates diagonal and shifted off-diagonal terms",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u018.txt",
+      "unit_bytes": 2782,
+      "unit_id": "rm42_b105_u018",
+      "unit_sha256": "540565958585e398d39fd8e6ccf4b94b5b8e3f0c5bce27ef59d3091c1bfdaf89",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u018.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1163,
+          "line_end": 1170,
+          "text": "                                     p          α=0\n                                                       pα\n\nInserting this into (43) and comparing with (10), we deduce that\n\n                                            Hk∗ (0, 0, 0) = ak .\n\n\n",
+          "sha256": "636fbdd33a69ed6fb394ca8810c86a8aa958ca63f821f03e157e8f187874329b"
+        },
+        "after": {
+          "line_start": 1225,
+          "line_end": 1232,
+          "text": "   Now we make several approximations which are justified in the paper of Goldston and\nGonek\np      for the weighted version of this formula. Namely, we replace log(1 + h/n) by h/n,\n  1 + h/n by 1, and dk (n)dk (n + h) by m′k (n, h) from Conjecture 3. Finally, the sum over\nn can be replaced by an integral and the sum over h extended to ∞. This leads to\n                                Z NX  ∞\n                                         m′k (x, h)\n                                                        \u0012    \u0013\n",
+          "sha256": "db6342348addf3db73815f916e559ad665032a1a250b2b6a19ff2d0f9712f483"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjecture 4",
+            "line_end": 1519,
+            "line_start": 1171,
+            "mathematical_role": "Decomposes the long Dirichlet-polynomial mean square into diagonal and off-diagonal terms, converts correlations to a contour integral, and derives the profile w_k(eta)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1224,
+          "line_start": 1171,
+          "title": "Symmetric truncation separates diagonal and shifted off-diagonal terms",
+          "unit_id": "rm42_b105_u018",
+          "unit_type": "decomposition",
+          "why_material": "Explains why the mean square is centered on [-T,T], recovers the desired interval by differencing, and rewrites the off-diagonal using shifts h."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Avoiding t near zero prevents a large N-sized contribution from obscuring the critical-line mean square away from the real axis.",
+          "representation_dependency": "High: the exact diagonal/off-diagonal sums and sine kernel are displayed-formula dependent.",
+          "unit_id": "rm42_b105_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1168,
+            "line_start": 1104,
+            "title": "The residual Euler product at the origin equals a_k",
+            "unit_id": "rm42_b105_u017",
+            "unit_type": "constant-identification",
+            "why_material": "Reduces the local factors at (0,0,0) using divisor identities and identifies their Euler product exactly with the arithmetic moment factor a_k."
+          },
+          {
+            "line_end": 1286,
+            "line_start": 1225,
+            "title": "Correlation replacement and cancellation of the T-independent off-diagonal term",
+            "unit_id": "rm42_b105_u019",
+            "unit_type": "heuristic-transformation",
+            "why_material": "Lists the controlled approximations replacing coefficients by the conjectural correlation density, transforms the h-sum through f_k, and isolates a large but T-independent term that vanishes under J(2T)-J(T)."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper notes that a weighted theorem justifies the approximations; this presentation remains heuristic.",
+      "line_end": 1286,
+      "line_start": 1225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: variable changes, the sawtooth convention, and the cancellation depend on displayed equations.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lists the controlled approximations replacing coefficients by the conjectural correlation density, transforms the h-sum through f_k, and isolates a large but T-independent term that vanishes under J(2T)-J(T).",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correlation replacement and cancellation of the T-independent off-diagonal term",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u019.txt",
+      "unit_bytes": 3331,
+      "unit_id": "rm42_b105_u019",
+      "unit_sha256": "5894b29c063b1389eaf377078c7934a2d371c4a52577b978e1232c9569029e2a",
+      "unit_type": "heuristic-transformation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u019.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1217,
+          "line_end": 1224,
+          "text": "\n                          XN N−n\n                              X dk (n)dk (n + h) sin T log 1 + h\n                                                                                        \u0001\u0001\n                   Jo = 2           p                        h\n                                                               \u0001n                            .\n                          n=1 h=1 n   1 +  h/n       log 1 + n\n\n",
+          "sha256": "ba6c3c6b36417e686dcbadfb9a45d69ec07ee4bfd8f80f948068a5619ffaa656"
+        },
+        "after": {
+          "line_start": 1287,
+          "line_end": 1294,
+          "text": "\nWe split the sum over d into d ≤ 2πN/T and d > 2πN/T . From our estimate for fk in\n(18) we find that the contribution to Jo,1 from the upper range of d is\n                    X τk−1 (d)2 N                  2              2\n              ≪T                   L2k−2 ≪ T L(k−1) −1+2k−2 = T Lk −2 .\n                         d      Td\n                   N/T ≪d\n\n",
+          "sha256": "1f0bb4fb89220b9c6bb927ab6a4d12f11fec509ea5586966040a848069e5e21b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjecture 4",
+            "line_end": 1519,
+            "line_start": 1171,
+            "mathematical_role": "Decomposes the long Dirichlet-polynomial mean square into diagonal and off-diagonal terms, converts correlations to a contour integral, and derives the profile w_k(eta)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1286,
+          "line_start": 1225,
+          "title": "Correlation replacement and cancellation of the T-independent off-diagonal term",
+          "unit_id": "rm42_b105_u019",
+          "unit_type": "heuristic-transformation",
+          "why_material": "Lists the controlled approximations replacing coefficients by the conjectural correlation density, transforms the h-sum through f_k, and isolates a large but T-independent term that vanishes under J(2T)-J(T)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The paper notes that a weighted theorem justifies the approximations; this presentation remains heuristic.",
+          "representation_dependency": "High: variable changes, the sawtooth convention, and the cancellation depend on displayed equations.",
+          "unit_id": "rm42_b105_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1224,
+            "line_start": 1171,
+            "title": "Symmetric truncation separates diagonal and shifted off-diagonal terms",
+            "unit_id": "rm42_b105_u018",
+            "unit_type": "decomposition",
+            "why_material": "Explains why the mean square is centered on [-T,T], recovers the desired interval by differencing, and rewrites the off-diagonal using shifts h."
+          },
+          {
+            "line_end": 1315,
+            "line_start": 1288,
+            "title": "Truncating d and y leaves the leading small-y contribution",
+            "unit_id": "rm42_b105_u020",
+            "unit_type": "error-control",
+            "why_material": "Uses the proved f_k bound to show the large-d and large-y ranges are lower order, reducing the off-diagonal main term to a bounded integral suited to the generating function."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact logarithmic savings are part of the source's internal scale accounting.",
+      "line_end": 1315,
+      "line_start": 1288,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: error exponents and cutoffs are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the proved f_k bound to show the large-d and large-y ranges are lower order, reducing the off-diagonal main term to a bounded integral suited to the generating function.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncating d and y leaves the leading small-y contribution",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u020.txt",
+      "unit_bytes": 1553,
+      "unit_id": "rm42_b105_u020",
+      "unit_sha256": "c269e11861bff38860c092f32fe358f68e018a2b0e01e11d7b615ad37a774312",
+      "unit_type": "error-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u020.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1280,
+          "line_end": 1287,
+          "text": "                                        ∞           Z ∞\n                                        X      1        fk (T d/2πy, d)\n                              = −T                               2\n                                                                        {y} dy.\n                                               d     Td        y\n                                        d=1         2πN\n\n\n",
+          "sha256": "9bbdd5c74f0a55559963594b4a4d5c3545173aac2a2116dc7fc85a619543bfa1"
+        },
+        "after": {
+          "line_start": 1316,
+          "line_end": 1323,
+          "text": "                                             \u0010 \u0011s+w−z\n                                              T\n                      Z 1\n                           1\n                                 ZZZ\n                                              y\n                                                          N z (z − s)k (z − w)k          dy\n    Jo,1 (T ) ∼ −ak T          3     |s|= 18      k 2 +1               k  k\n",
+          "sha256": "5f255c2ddd2b471934329b15bbd0e63868ba7fc517f821fd7719f1d763602b47"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjecture 4",
+            "line_end": 1519,
+            "line_start": 1171,
+            "mathematical_role": "Decomposes the long Dirichlet-polynomial mean square into diagonal and off-diagonal terms, converts correlations to a contour integral, and derives the profile w_k(eta)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1315,
+          "line_start": 1288,
+          "title": "Truncating d and y leaves the leading small-y contribution",
+          "unit_id": "rm42_b105_u020",
+          "unit_type": "error-control",
+          "why_material": "Uses the proved f_k bound to show the large-d and large-y ranges are lower order, reducing the off-diagonal main term to a bounded integral suited to the generating function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact logarithmic savings are part of the source's internal scale accounting.",
+          "representation_dependency": "High: error exponents and cutoffs are formula dependent.",
+          "unit_id": "rm42_b105_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1286,
+            "line_start": 1225,
+            "title": "Correlation replacement and cancellation of the T-independent off-diagonal term",
+            "unit_id": "rm42_b105_u019",
+            "unit_type": "heuristic-transformation",
+            "why_material": "Lists the controlled approximations replacing coefficients by the conjectural correlation density, transforms the h-sum through f_k, and isolates a large but T-independent term that vanishes under J(2T)-J(T)."
+          },
+          {
+            "line_end": 1391,
+            "line_start": 1313,
+            "title": "Laurent extraction and scaling produce the M_k profile integral",
+            "unit_id": "rm42_b105_u021",
+            "unit_type": "asymptotic-extraction",
+            "why_material": "Inserts F_k, retains the leading Laurent data, rescales contour variables, and converts N=T^{1+eta} into a dimensionless profile integral M_k with a decay bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 1313-1315 overlap the prior unit because they are both the endpoint of truncation and the setup for contour extraction.",
+      "line_end": 1391,
+      "line_start": 1313,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: triple and double contour integrals are essential and vulnerable to layout degradation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inserts F_k, retains the leading Laurent data, rescales contour variables, and converts N=T^{1+eta} into a dimensionless profile integral M_k with a decay bound.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Laurent extraction and scaling produce the M_k profile integral",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u021.txt",
+      "unit_bytes": 3523,
+      "unit_id": "rm42_b105_u021",
+      "unit_sha256": "27e05d4be5a366d77a728263b6d443222138c271f264fae2a8d963da3d43ad30",
+      "unit_type": "asymptotic-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u021.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1305,
+          "line_end": 1312,
+          "text": "                                    d 2πN\n                                       Td        y\n                             d≤N/T\n                             Z 1    X fk (T d/2πy, d) dy         2\n                        = −T                             + O(T Lk −1 ) .\n                               T                d     y\n                              2πN       d≤yN/T\n\n",
+          "sha256": "29ef28ec093756576c34f52876e36bf415927d917fa8728f0b4b46b3e3f2ec44"
+        },
+        "after": {
+          "line_start": 1392,
+          "line_end": 1399,
+          "text": "                                            2\n   Next, we expand (1 + (s + w − 1)(1 − α))k −1 into powers of (s + w − 1) and find that\n                                                2\n                                               kX −1 \u0012 2  \u0013\n                                   k2 −1             k −1\n        (1 − (1 − s − w)(1 − α))           =               (−1)n (1 − s − w)n (1 − α)n .\n                                               n=0\n                                                       n\n",
+          "sha256": "3e3aad9a846b77487d4ee83e4530519fafe9f3116c56f9d3686dcf4ead943129"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjecture 4",
+            "line_end": 1519,
+            "line_start": 1171,
+            "mathematical_role": "Decomposes the long Dirichlet-polynomial mean square into diagonal and off-diagonal terms, converts correlations to a contour integral, and derives the profile w_k(eta)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1391,
+          "line_start": 1313,
+          "title": "Laurent extraction and scaling produce the M_k profile integral",
+          "unit_id": "rm42_b105_u021",
+          "unit_type": "asymptotic-extraction",
+          "why_material": "Inserts F_k, retains the leading Laurent data, rescales contour variables, and converts N=T^{1+eta} into a dimensionless profile integral M_k with a decay bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 1313-1315 overlap the prior unit because they are both the endpoint of truncation and the setup for contour extraction.",
+          "representation_dependency": "High: triple and double contour integrals are essential and vulnerable to layout degradation.",
+          "unit_id": "rm42_b105_u021"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1315,
+            "line_start": 1288,
+            "title": "Truncating d and y leaves the leading small-y contribution",
+            "unit_id": "rm42_b105_u020",
+            "unit_type": "error-control",
+            "why_material": "Uses the proved f_k bound to show the large-d and large-y ranges are lower order, reducing the off-diagonal main term to a bounded integral suited to the generating function."
+          },
+          {
+            "line_end": 1518,
+            "line_start": 1393,
+            "title": "Residue coefficients gamma_k(n) yield w_k(eta)",
+            "unit_id": "rm42_b105_u022",
+            "unit_type": "combinatorial-evaluation",
+            "why_material": "Expands the profile integral, evaluates its residue coefficients combinatorially, integrates the scale parameter, and combines diagonal and off-diagonal pieces into Conjecture 4."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The identity gamma_k(0)=k is simplified explicitly; the full coefficient formula determines the final profile.",
+      "line_end": 1518,
+      "line_start": 1393,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: multinomial coefficients and residue integrals are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the profile integral, evaluates its residue coefficients combinatorially, integrates the scale parameter, and combines diagonal and off-diagonal pieces into Conjecture 4.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residue coefficients gamma_k(n) yield w_k(eta)",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u022.txt",
+      "unit_bytes": 6813,
+      "unit_id": "rm42_b105_u022",
+      "unit_sha256": "4a11741ec8412eabdacbed75b5f1914897dc355e1c84b57693acfa6ff9f9bd60",
+      "unit_type": "combinatorial-evaluation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u022.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1385,
+          "line_end": 1392,
+          "text": "  We observe for future reference that Mk → 0 as k → ∞. In fact, since\n\n                       1 + (s + w − 1)(1 − α) = α + (s + w)(1 − α),\n\nwe find that                                                 2            2\n                      |Mk | ≤ (1 − 1/(η + 1) + 1/8)k −1 152k ≪ (4/5)k\nas k → ∞.\n                                            2\n",
+          "sha256": "affe1d7701650942864fe9276a39e759ef044342e25e37b7781cf421261876b5"
+        },
+        "after": {
+          "line_start": 1519,
+          "line_end": 1526,
+          "text": "\n                     The sixth and eighth power moment conjectures\n   We first note an alternative expression for ak . Conrey and Ghosh [CG3] have shown\nthat ak = a1−k . Thus, by (10),\n                                             \u0013(k−1)2 X∞\n                                                                     !\n                                     Y \u0012   1             d21−k (pr )\n                                ak =    1−                             .\n",
+          "sha256": "d6459347ef1b5bf305e8434afa66cf6987f37efe49aeff8ea35dad47af713418"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conjecture 4",
+            "line_end": 1519,
+            "line_start": 1171,
+            "mathematical_role": "Decomposes the long Dirichlet-polynomial mean square into diagonal and off-diagonal terms, converts correlations to a contour integral, and derives the profile w_k(eta)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1518,
+          "line_start": 1393,
+          "title": "Residue coefficients gamma_k(n) yield w_k(eta)",
+          "unit_id": "rm42_b105_u022",
+          "unit_type": "combinatorial-evaluation",
+          "why_material": "Expands the profile integral, evaluates its residue coefficients combinatorially, integrates the scale parameter, and combines diagonal and off-diagonal pieces into Conjecture 4."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The identity gamma_k(0)=k is simplified explicitly; the full coefficient formula determines the final profile.",
+          "representation_dependency": "High: multinomial coefficients and residue integrals are formula dependent.",
+          "unit_id": "rm42_b105_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1391,
+            "line_start": 1313,
+            "title": "Laurent extraction and scaling produce the M_k profile integral",
+            "unit_id": "rm42_b105_u021",
+            "unit_type": "asymptotic-extraction",
+            "why_material": "Inserts F_k, retains the leading Laurent data, rescales contour variables, and converts N=T^{1+eta} into a dimensionless profile integral M_k with a decay bound."
+          },
+          {
+            "line_end": 1546,
+            "line_start": 1520,
+            "title": "Alternative finite local-factor expression for a_k",
+            "unit_id": "rm42_b105_u023",
+            "unit_type": "representation-change",
+            "why_material": "Uses a_{k}=a_{1-k} and the generalized divisor identity to rewrite the infinite local sum as a finite binomial-square sum, the form used in the stated moment conjectures."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Additive-twist pole data are reorganized into a generating function whose analytic residual equals a_k, allowing local arithmetic to enter the off-diagonal profile w_k(eta).",
+            "limit": "The algebraic factorization is source-derived, but its use in the mean square still inherits the conjectural correlation replacement and leading-term heuristic.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u012",
+              "rm42_b105_u013",
+              "rm42_b105_u015",
+              "rm42_b105_u016",
+              "rm42_b105_u017",
+              "rm42_b105_u021",
+              "rm42_b105_u022"
+            ],
+            "title": "Local arithmetic factors feed the global moment profile"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The line extraction crowds binomial notation, but the transformation and endpoint formula are recoverable from the labeled equations.",
+      "line_end": 1546,
+      "line_start": 1520,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact binomial coefficients require scan-aware formula verification before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a_{k}=a_{1-k} and the generalized divisor identity to rewrite the infinite local sum as a finite binomial-square sum, the form used in the stated moment conjectures.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Alternative finite local-factor expression for a_k",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u023.txt",
+      "unit_bytes": 1670,
+      "unit_id": "rm42_b105_u023",
+      "unit_sha256": "d7b4ed6a0302104b87d6a5373c42fd4b8e6ff7726743ecf8a2a479db68428fe6",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u023.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1512,
+          "line_end": 1519,
+          "text": "                                                                   \u0013\n                                        2                    k\n               wk (η) = (1 + η)k 1 −                           γk (n)                                   .\n                                                   n=0\n                                                            n+1              n+1\n\nThis is Conjecture 4.\n\n",
+          "sha256": "a38d427690532398b7ee5fdc735436b18f5dbedce10fd3dbee39bbc5085c2e13"
+        },
+        "after": {
+          "line_start": 1547,
+          "line_end": 1554,
+          "text": "  By (6) we expect that\n        Z 2T                                Z 2T \u0010                                                            \u0011\n                                6                                           2                             2\n               |ζ(1/2 + it)| dt ∼                    D3,T 1+η (1/2 + it)        + D3,T 2−η (1/2 + it)             dt\n         T                                   T\n\nfor any η with 0 ≤ η ≤ 2. Using Conjecture 4 and adding the results together for\nT /2, T /4, . . . , we obtain\n",
+          "sha256": "1a69f5f6e65adac625133e47aa8df25dc3275e819e2f638021dad1c8f3f377a4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The sixth and eighth power moment conjectures",
+            "line_end": 1587,
+            "line_start": 1520,
+            "mathematical_role": "Rewrites a_k and checks that the profile identities produce the constants 42 and 24024 independently of the admissible split where appropriate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1546,
+          "line_start": 1520,
+          "title": "Alternative finite local-factor expression for a_k",
+          "unit_id": "rm42_b105_u023",
+          "unit_type": "representation-change",
+          "why_material": "Uses a_{k}=a_{1-k} and the generalized divisor identity to rewrite the infinite local sum as a finite binomial-square sum, the form used in the stated moment conjectures."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The line extraction crowds binomial notation, but the transformation and endpoint formula are recoverable from the labeled equations.",
+          "representation_dependency": "High: exact binomial coefficients require scan-aware formula verification before symbolic reuse.",
+          "unit_id": "rm42_b105_u023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1518,
+            "line_start": 1393,
+            "title": "Residue coefficients gamma_k(n) yield w_k(eta)",
+            "unit_id": "rm42_b105_u022",
+            "unit_type": "combinatorial-evaluation",
+            "why_material": "Expands the profile integral, evaluates its residue coefficients combinatorially, integrates the scale parameter, and combines diagonal and off-diagonal pieces into Conjecture 4."
+          },
+          {
+            "line_end": 1586,
+            "line_start": 1547,
+            "title": "Sixth- and eighth-moment constants from the w_k profile",
+            "unit_id": "rm42_b105_u024",
+            "unit_type": "parameter-invariance-check",
+            "why_material": "Shows that w_3(eta)+w_3(1-eta)=42 for every split and that w_4(1)=12012, producing the conjectural constants 42 and 24024."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Separating a_k from g_k makes it possible to combine a proved large-k arithmetic-factor asymptotic with alternative conjectural universal-factor growth laws, producing different maximal-order scales.",
+            "limit": "The final extreme-value conclusions require unproved existence and strong uniformity of moment asymptotics as k grows with T.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u010",
+              "rm42_b105_u011",
+              "rm42_b105_u023",
+              "rm42_b105_u025"
+            ],
+            "title": "Arithmetic-universal separation controls extreme-value predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sixth-moment split invariance is the key internal consistency check; the eighth moment uses the forced symmetric length.",
+      "line_end": 1586,
+      "line_start": 1547,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: polynomial coefficients and exact constants are formula dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that w_3(eta)+w_3(1-eta)=42 for every split and that w_4(1)=12012, producing the conjectural constants 42 and 24024.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sixth- and eighth-moment constants from the w_k profile",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u024.txt",
+      "unit_bytes": 2028,
+      "unit_id": "rm42_b105_u024",
+      "unit_sha256": "e272eb587267e702fd7f948472e44cad4bafc2deda3920f2049e10b8b2a15f59",
+      "unit_type": "parameter-invariance-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u024.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1539,
+          "line_end": 1546,
+          "text": "                                         Y \u0012   1         X\n                                                                             r\n(51)                                ak =    1−                                            .\n                                         p\n                                               p         r=0\n                                                                             pr\n\nThis is the expression for ak we have used in (3) and Conjecture 1.\n",
+          "sha256": "b3c39b6a8df9d042eec5fe1bcc36439803754804734df26551a3ec9f4c7a12d3"
+        },
+        "after": {
+          "line_start": 1587,
+          "line_end": 1594,
+          "text": "\n                                            Proof of the Proposition\n  To prove the proposition we work from the expression for ak given in (51). Using this,\nwe first prove an upper bound for ak . Write\n\n                                                      a k = Π− Π+ ,\n\nwhere Π− is the part of the product over the primes ≤ 2k 2 and Π+ is the part over the\n",
+          "sha256": "92772141e3c1b8e413574a5c98eb715da1e0c485c9087f2a294e236b3793c546"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The sixth and eighth power moment conjectures",
+            "line_end": 1587,
+            "line_start": 1520,
+            "mathematical_role": "Rewrites a_k and checks that the profile identities produce the constants 42 and 24024 independently of the admissible split where appropriate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1586,
+          "line_start": 1547,
+          "title": "Sixth- and eighth-moment constants from the w_k profile",
+          "unit_id": "rm42_b105_u024",
+          "unit_type": "parameter-invariance-check",
+          "why_material": "Shows that w_3(eta)+w_3(1-eta)=42 for every split and that w_4(1)=12012, producing the conjectural constants 42 and 24024."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sixth-moment split invariance is the key internal consistency check; the eighth moment uses the forced symmetric length.",
+          "representation_dependency": "High: polynomial coefficients and exact constants are formula dependent.",
+          "unit_id": "rm42_b105_u024"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1546,
+            "line_start": 1520,
+            "title": "Alternative finite local-factor expression for a_k",
+            "unit_id": "rm42_b105_u023",
+            "unit_type": "representation-change",
+            "why_material": "Uses a_{k}=a_{1-k} and the generalized divisor identity to rewrite the infinite local sum as a finite binomial-square sum, the form used in the stated moment conjectures."
+          },
+          {
+            "line_end": 1739,
+            "line_start": 1588,
+            "title": "Prime-range split proves the large-k asymptotic for a_k",
+            "unit_id": "rm42_b105_u025",
+            "unit_type": "asymptotic-proof",
+            "why_material": "Splits the Euler product at 2k^2, applies Mertens-type behavior to small primes and elementary product bounds to large primes, and obtains matching upper and lower estimates for log a_k."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Testing the correlation profile against a known moment exposes failure beyond eta=1, while invariance within the admissible split supplies an internal check for the sixth-moment constant.",
+            "limit": "Consistency and split-invariance are evidence for the conjecture, not independent validation or a proof.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u007",
+              "rm42_b105_u008",
+              "rm42_b105_u009",
+              "rm42_b105_u024"
+            ],
+            "title": "Self-consistency determines the usable length regime"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ac61b8ebc5d1fd55200c3134b478ca657341e6131e7bc26a1177338611a7489f"
+}

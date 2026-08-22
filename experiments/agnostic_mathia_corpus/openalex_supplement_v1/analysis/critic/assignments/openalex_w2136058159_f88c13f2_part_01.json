@@ -1,0 +1,738 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2136058159_algebraic_topological_k_comparison": {
+      "analysis_id": "agnostic_oa_generation_ffc1ad40a4151f06787dca3ca55c0dbbf07f9872fbf0f16b87d3849eedce71ce",
+      "boundary_or_failure": "Limit/failure: The comparison is for the nonconnective Dwyer-Friedlander theory; the source explicitly warns not to conflate it with a truncated version. Globalization requires continuity, uniformly convergent coefficient calculations, descent on both sides, and all hypotheses of Theorem 4.1. The right-hand descent equivalence is delegated to a more technical proof in a cited work rather than established in this span.",
+      "interpretation": "Inference: A global equivalence is assembled from a canonical-local equivalence, equality of the resulting coefficient sheaves, and independent descent maps for both theories. Representation dependence: Strict henselian stalks, etale sheaves of homotopy groups, and hypercohomology implement the bridge; the transferable pattern is local equivalence plus continuity plus two-sided reglobalization.",
+      "nonparaphrase_operation": "Prove a comparison on canonical local models, use continuity to turn those calculations into an isomorphism of coefficient sheaves, reconstruct both source and target from the same local-to-global machine under matched convergence bounds, and apply a comparison diagram only after separately validating both vertical descent maps and the exact variant of each theory.",
+      "source_support": "Source fact (assigned artifact lines 4215-4257): Theorem 4.11 proves the Dwyer-Friedlander map from Bott-localized algebraic K-theory to topological or etale K-theory is a weak equivalence. The proof first invokes the strict-local-henselian comparison, obtains an isomorphism of etale coefficient sheaves using continuity, compares hypercohomology with a strongly convergent spectral sequence, and uses descent on the algebraic and topological sides. Remark 4.12 specifies that the theorem concerns the nonconnective version.",
+      "uncertainty": "The local-to-global comparison logic and nonconnective qualification are explicit. Exact notation is OCR-damaged, and one global descent leg is supported here by citation to the external technical proof rather than by details in the assigned artifact.",
+      "unit_id": "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+    },
+    "agnostic_oa_w2136058159_bott_inductors_cd_one": {
+      "analysis_id": "agnostic_oa_generation_b3b9fc0e348f5de15a2da182598bc3272d70897fed7cfdb6a31ea34fe0bbceda",
+      "boundary_or_failure": "Limit/failure: The construction uses a field of l-cohomological dimension one, specified roots of unity, finite-coefficient K-theory, Kummer/Hilbert 90 input, and low-degree vanishing. Exact low groups and differentials are essential to remove the lifting ambiguity, so the argument cannot be generalized merely from the existence of a spectral sequence.",
+      "interpretation": "Inference: A distinguished class can be lifted through an induction spectral sequence when one first identifies its source class, then proves every possible ambiguity is hit or vanishes, and finally enforces compatibility on a cofinal extension system. Representation dependence: The class is Bott and the controls come from Galois cohomology and K-theory; the reusable method is obstruction-controlled compatible lifting.",
+      "nonparaphrase_operation": "Locate a target class on a computable edge of a spectral sequence, lift it to the abutment, enumerate the filtration terms that make the lift nonunique, eliminate those terms using dimension bounds and comparison differentials, and define the lifts first on a cofinal family where compatibility can be checked before extending uniquely.",
+      "source_support": "Source fact (assigned artifact lines 2232-2639): The source constructs a K-theory hypertransfer and proves its projection formula. Lemma 2.36 uses Hilbert 90, the Kummer isomorphism, Tate's spectral sequence, cohomological dimension one, and vanishing of a low K-group to obtain unique inductors of the Bott element for a cofinal family of finite Galois extensions, then verifies transfer and tower compatibility and extends the family to all finite subextensions.",
+      "uncertainty": "The obstruction-lifting architecture is source-clear, but exact degrees, edge maps, and differential labels are formula-sensitive and OCR-damaged. The use of the cited Kummer, Tate, and Merkurjev-Suslin inputs was not independently verified.",
+      "unit_id": "agnostic_oa_w2136058159_bott_inductors_cd_one"
+    },
+    "agnostic_oa_w2136058159_cech_hypercohomology": {
+      "analysis_id": "agnostic_oa_generation_f60617da5fe196e34cd2d7b88d0b13fbcbbd500dcdf642585d1b4ae3dc6c8aad",
+      "boundary_or_failure": "Limit/failure: Coherent overlap aggregation does not by itself give descent. Strong convergence needs an upper homotopy bound or a cohomological-dimension bound, and independence is proved for weakly cofinal cover systems or mutually refining covers, not for arbitrary unrelated sampling families. Different refinement maps agree only at the stated homotopical level.",
+      "interpretation": "Inference: Local data become global only when all multiple overlaps and their higher compatibilities are retained; refinement invariance then separates the reconstructed object from a particular choice of cover. Representation dependence: The source realizes this with sites, cosimplicial spectra, products over iterated fibre products, and a homotopy limit, while the reusable idea is compatibility-aware aggregation followed by an invariance check.",
+      "nonparaphrase_operation": "Replace a set of local observations by its full overlap nerve, evaluate the target construction on every iterated overlap, assemble the resulting cosimplicial object by a homotopy limit, and compare refinements through a cofinal system while checking an explicit convergence bound.",
+      "source_support": "Source fact (assigned artifact lines 249-594): The source constructs the Cech cosimplicial object from values on all iterated intersections, defines Cech hypercohomology as its homotopy limit, makes it functorial under maps of covers, and supplies spectral sequences with stated strong-convergence conditions. Lemmas 1.20-1.22 show homotopical agreement of refinement maps and invariance under weakly cofinal systems of covers.",
+      "uncertainty": "The construction and hypotheses are clear in prose, but dense products, fibre-product subscripts, and cosimplicial indices are OCR-noisy. No claim is made here that Cech hypercohomology equals sheaf hypercohomology without the later comparison hypotheses.",
+      "unit_id": "agnostic_oa_w2136058159_cech_hypercohomology"
+    },
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": {
+      "analysis_id": "agnostic_oa_generation_d2eed5162fb9cebbd1c2252b79f715f55d4824070d792942f1f599649782dc15",
+      "boundary_or_failure": "Limit/failure: The Cech-to-sheaf equivalence is stated for additive presheaves on schemes quasiprojective over a noetherian ring, with finite-dimensional hypotheses in the spectral version. Cartan-Leray likewise needs an upper homotopy bound or uniform relative cohomological dimension. Agreement of the two global models is therefore a theorem with gates, not a definitional identity.",
+      "interpretation": "Inference: A computable cover model and an abstract sheaf model can be used interchangeably only after proving that sheafification defects are invisible to the cover theory and that Postnikov reconstruction converges. Representation dependence: The source uses additive presheaves, etale sites, stalks, and spectral hypercohomology; the general pattern is model comparison followed by compositional reconstruction across a map.",
+      "nonparaphrase_operation": "For two proposed local-to-global models, isolate the kernel and cokernel created by completion or sheafification, prove the computable model kills those defects, compare single-degree layers, and then compose reconstruction across a map only after checking relative convergence.",
+      "source_support": "Source fact (assigned artifact lines 1225-1371): Proposition 1.53 proves Cech and sheaf cohomology agree for additive presheaves under the stated geometric hypotheses. Proposition 1.54 lifts that comparison to spectra through Postnikov stages, strong convergence, continuity, and stalkwise strict-henselian checks. Theorem 1.56 gives a Cartan-Leray equivalence for a morphism of sites under explicit boundedness conditions.",
+      "uncertainty": "The hypotheses and comparison route are legible, while several diagram arrows and coefficient-sheaf formulas are OCR-damaged. This record does not infer the comparison for nonadditive presheaves or unbounded settings.",
+      "unit_id": "agnostic_oa_w2136058159_cech_sheaf_cartan_leray"
+    },
+    "agnostic_oa_w2136058159_descent_via_postnikov": {
+      "analysis_id": "agnostic_oa_generation_3aa080a3afac2554f5bf332ac705f9ee4ff6c1a09150f6d3bce3987b5e906330",
+      "boundary_or_failure": "Limit/failure: A Postnikov decomposition is not automatically reconstructive. The source requires either a uniform upper bound on homotopy groups or uniform cohomological dimension so the towers and spectral sequences converge. The Galois reformulation additionally uses additivity, continuity, and bounded etale cohomological dimension.",
+      "interpretation": "Inference: A nonlinear descent assertion can be proved layerwise by reducing it to single-degree abelian coefficients, identifying both sides as the same derived functor there, and then reassembling the layers only after convergence is certified. Representation dependence: Postnikov towers and Eilenberg-MacLane spectra encode the layers, but the transferable move is bounded devissage followed by controlled reconstruction.",
+      "nonparaphrase_operation": "Filter a structured object into single-degree layers, prove the desired comparison on each abelian layer using a uniqueness or derived-functor argument, preserve fibre sequences throughout, and use a tower-comparison theorem only after verifying a uniform truncation or cohomological bound.",
+      "source_support": "Source fact (assigned artifact lines 982-1224): Theorem 1.46 proves hypercohomological descent by passing through Postnikov stages to Eilenberg-MacLane spectra and then identifying two cohomological delta-functors as the right derived functors of global sections. Corollaries specialize the result to Zariski and etale covers under explicit dimension bounds, and the finite/profinite Galois examples identify cover hypercohomology with group hypercohomology.",
+      "uncertainty": "The devissage architecture and convergence alternatives are clear; exact tower indices and spectral-sequence grading are OCR-sensitive. A failed bound would invalidate this reconstruction argument, not establish failure of descent itself.",
+      "unit_id": "agnostic_oa_w2136058159_descent_via_postnikov"
+    },
+    "agnostic_oa_w2136058159_etale_k_spectral_sequence": {
+      "analysis_id": "agnostic_oa_generation_8ad92a820ffc7981c37b2a3f21b7d50d97b531709e25c97ec4fa18b56fab8107",
+      "boundary_or_failure": "Limit/failure: The spectral sequence computes Bott-localized finite-coefficient K-theory, not the original integral invariant. Strong convergence uses the theorem's regularity, finite-dimension, coefficient-invertibility, residue-field, and cohomological-dimension hypotheses. Collapse is conditional; the source gives low cohomological dimension or even-degree cohomology as sufficient situations, not an automatic consequence of having an E2 page.",
+      "interpretation": "Inference: A hard invariant is exposed as a filtered object whose graded approximations come from etale cohomology; convergence certifies reconstruction, while differentials and extension data record what the approximation has not settled. Representation dependence: The filtration is the etale Atiyah-Hirzebruch spectral sequence for Bott-localized K-theory, but the generic move is to keep input page, convergence, collapse, and abutment as four separate claims.",
+      "nonparaphrase_operation": "Replace a target invariant by a filtered reconstruction with computable graded pieces, state the allowable differentials and a strong-convergence criterion, determine whether structural parity or dimension forces those differentials to vanish, and report the final target only after distinguishing collapse from convergence and both from the initial-page description.",
+      "source_support": "Source fact (assigned artifact lines 4026-4062): Theorem 4.1 states a strongly convergent spectral sequence from etale-cohomological input to Bott-localized finite-coefficient algebraic K-theory under detailed hypotheses. Remark 4.3 observes that only odd-length differentials can be nonzero and gives cohomological dimension at most two or cohomology concentrated in even dimensions as collapse conditions; it also discusses bounded torsion in differentials via Adams operations.",
+      "uncertainty": "The theorem, convergence, and collapse distinctions are clear, but the E2 display is OCR-corrupted and is not reproduced here. Exact grading, twists, and differential formulas require checking the typeset article.",
+      "unit_id": "agnostic_oa_w2136058159_etale_k_spectral_sequence"
+    },
+    "agnostic_oa_w2136058159_local_ring_field_reduction": {
+      "analysis_id": "agnostic_oa_generation_d84011af3cd0eea89583ab29452e0c24c18a514ce556ce95de6f7d425f2f9e84",
+      "boundary_or_failure": "Limit/failure: The reduction needs Mayer-Vietoris, continuity, localization fibre sequences natural under etale pullback, and finite Krull dimension. K-theory supplies localization only in the regular case, whereas the broader singular statement uses G-theory. The source explicitly rejects a tempting Gysin/purity shortcut because local constancy and absolute purity have not yet been proved, so using it would be circular.",
+      "interpretation": "Inference: The proof is a two-scale localization strategy: first detect a global comparison on all local rings, then cut a local ring into its closed residue object and lower-dimensional open complement and reconstruct by a fibre sequence. Representation dependence: Schemes, local rings, and K/G-theory provide the dimension and excision machinery; the generic method is local detection plus dimension-lowering decomposition.",
+      "nonparaphrase_operation": "Turn a global equivalence into a stalkwise criterion using excision, choose a local object of maximal dimension, split it into a closed minimal piece and a lower-dimensional complement, prove the comparison on both pieces, and recover the middle term with compatible fibre sequences and the five-lemma while rejecting any theorem that depends on the desired conclusion.",
+      "source_support": "Source fact (assigned artifact lines 1372-1726): Proposition 2.3 uses Brown-Gersten spectral sequences and the Mayer-Vietoris property to promote stalk equivalences to global equivalences. Proposition 2.8 then inducts on Krull dimension, applying localization to a local scheme, its closed point, and its punctured complement, and reduces descent to fields or Artin local rings. The introduction to the section explicitly explains why purity cannot be used at this stage.",
+      "uncertainty": "The reduction order and anti-circularity warning are explicit. Some localization diagrams are OCR-noisy, and the analysis does not treat field-level descent as proved by this unit; that is the remaining obligation the unit isolates.",
+      "unit_id": "agnostic_oa_w2136058159_local_ring_field_reduction"
+    },
+    "agnostic_oa_w2136058159_localization_bridge": {
+      "analysis_id": "agnostic_oa_generation_633a3c71c2e44c0596933245ad8b1f90d4ce6d9ca1ad084c97c6752edbb27d38",
+      "boundary_or_failure": "Limit/failure: The comparison is not an integral or unlocalized equivalence. Finite coefficients irretrievably discard uniquely divisible information, Bott inversion discards Bott-torsion, and the stated descent/comparison requires regularity, finiteness, cohomological-dimension, and residue-field hypotheses. The OCR-damaged displays do not support formula-level reuse without the typeset source.",
+      "interpretation": "Inference: The source exhibits a controlled bridge: simplify a subtle invariant by killing a named obstruction, state exactly what that simplification forgets, and reconstruct the comparison only after independent descent and coefficient-identification gates. Representation dependence: Here the obstruction is the Bott class and the bridge is expressed using finite-coefficient algebraic K-theory, etale cohomology, and topological K-theory; the transferable content is the controlled-loss pattern, not those particular objects.",
+      "nonparaphrase_operation": "Given a difficult invariant and a computable comparison target, identify a class whose inversion removes the obstruction, form the localized invariant, inventory both coefficient loss and localization torsion, and require separate construction, descent, local-coefficient, convergence, and comparison checks before transporting conclusions.",
+      "source_support": "Source fact (assigned artifact lines 34-248): The opening states a strongly convergent Atiyah-Hirzebruch-type spectral sequence computing Bott-localized finite-coefficient algebraic K-theory from etale cohomology and a comparison with Dwyer-Friedlander K-theory. It says the algebraic and topological groups differ only by Bott-torsion in this setting, explains via the universal-coefficient sequence that finite coefficients lose uniquely divisible subgroups, and outlines the proof through hypercohomology, descent to fields, and strict-henselian coefficient computation.",
+      "uncertainty": "The qualitative loss and proof architecture are legible, but exact spectral-sequence indices, coefficient notation, and displayed formulas are OCR-fragile. The source's mathematical claims were interpreted, not independently re-proved, and cross-source novelty was not assessed.",
+      "unit_id": "agnostic_oa_w2136058159_localization_bridge"
+    },
+    "agnostic_oa_w2136058159_rational_transfer_descent": {
+      "analysis_id": "agnostic_oa_generation_a2559327593fab4da81c4e2046b2aa7acf0516cec92a4f620dec27a733f41d44",
+      "boundary_or_failure": "Limit/failure: Averaging works because every finite extension degree is invertible on rational homotopy groups; it must not be transferred unchanged to finite or torsion coefficients. The result also depends on the full weak-transfer compatibilities, additivity, continuity, and the earlier local-to-global reductions.",
+      "interpretation": "Inference: Restriction and transfer provide a candidate retraction, while rationalization converts degree multiplication into an inverse and annihilates higher finite-group cohomology; these are two distinct reasons the descent obstruction disappears. Representation dependence: Finite etale maps and Galois cohomology express the mechanism, but the reusable pattern is averaging a symmetry action only in a coefficient system where orbit sizes are units.",
+      "nonparaphrase_operation": "For a finite symmetry or cover, construct compatible restriction and transfer maps, verify their two composites as degree multiplication and orbit summation, invert the degree in the coefficient category, project to invariants by averaging, and separately prove higher symmetry cohomology vanishes before lifting the equivalence through prior reduction gates.",
+      "source_support": "Source fact (assigned artifact lines 1727-1870): Definition 2.12 imposes Mackey-like product, base-change, isomorphism, and degree conditions on weak transfers. Lemma 2.13 identifies transfer after restriction with the sum over the Galois group. Proposition 2.14 uses rational coefficients to divide by the extension degree and to kill higher finite-group cohomology, and Theorem 2.15 propagates field descent to schemes through Propositions 2.4 and 2.8.",
+      "uncertainty": "The averaging mechanism is explicit and not formula-sensitive. The source establishes it in its stable-homotopy setting; no inference is made that an analogous integral or torsion averaging argument succeeds.",
+      "unit_id": "agnostic_oa_w2136058159_rational_transfer_descent"
+    },
+    "agnostic_oa_w2136058159_shapiro_hypertransfer": {
+      "analysis_id": "agnostic_oa_generation_ecbaa77d918ee3cc6a95590a3cd769a2257679e5e9a6caf4b60fa26f538c2d1e",
+      "boundary_or_failure": "Limit/failure: The transport statements require additivity and suitable Galois extensions, and the interchange between hyperhomology and hypercohomology requires bounded cohomological dimension. Several actions and transfer identities live only in the stable homotopy category or up to coherent homotopy; treating them as strict equalities would discard a real hypothesis.",
+      "interpretation": "Inference: Descent along nested extensions is made compositional by replacing subgroup data with an induced object and pairing Shapiro transport with a coherent transfer back. Representation dependence: Group hyperhomology, profinite Galois hypercohomology, induced spectra, and homotopy colimits encode the construction; the generic content is adjoint transport that preserves composition only when higher coherence is retained.",
+      "nonparaphrase_operation": "Convert data over a subgroup or subextension into an induced object over the larger symmetry group, prove a Shapiro equivalence on both cohomological and homological sides, define the return map through the universal property of a homotopy colimit, and verify compatibility for two successive extensions before composing descent steps.",
+      "source_support": "Source fact (assigned artifact lines 1871-2231): Lemma 2.20 gives Shapiro equivalences for etale/Galois hypercohomology, Lemma 2.22 gives the homological analogue for induced spectra, and Proposition 2.24 compares hyperhomology of hypercohomology with hypercohomology of hyperhomology under a bounded-dimension hypothesis. Definitions 2.25 and diagrams 2.52-2.53 specify hypertransfer naturality and compatibility across pairs or towers of extensions.",
+      "uncertainty": "The roles of Shapiro transport, hypertransfer, and tower compatibility are clear, but the large action diagrams are extraction-fragile. Exact equivariance is sometimes asserted only after rectification or as coherent homotopy, and this record preserves that qualification.",
+      "unit_id": "agnostic_oa_w2136058159_shapiro_hypertransfer"
+    },
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": {
+      "analysis_id": "agnostic_oa_generation_1799290d02dc46ad2f358eaa4998863be6d8cb823d9c9874fa03b42e9d42d65a",
+      "boundary_or_failure": "Limit/failure: Stalkwise detection uses a topos with enough points in the construction actually employed; a more general Barr resolution is only mentioned. Filtered colimits and inverse limits commute with hypercohomology only under coherence plus uniform cohomological or homotopical bounds. The source explicitly notes that the displayed l-adic inverse-limit spectra are not continuous.",
+      "interpretation": "Inference: The construction separates three obligations that are easy to conflate: replace raw local data by a resolution, test equivalence on conservative local probes, and justify passage through limits. Representation dependence: Points of a topos, Godement resolutions, stalks, and spectra implement these obligations here; the generic move is resolution plus local detection plus a continuity gate.",
+      "nonparaphrase_operation": "Choose a conservative family of local probes, build a functorial resolution from repeated probe-and-return operations, take global homotopy sections, and compare candidates stalkwise; before commuting any filtered or inverse limit with reconstruction, establish coherence and one uniform convergence bound.",
+      "source_support": "Source fact (assigned artifact lines 595-981): The source defines points and stalks, builds the Godement cosimplicial resolution, defines sheaf hypercohomology as a homotopy limit, and identifies its spectral-sequence input with sheaf cohomology. It proves preservation of fibre sequences and gives boundedness-dependent results for filtered colimits, inverse systems of sites, scheme limits, and continuity; continuous presheaves have strict-henselian or local-ring values as stalks.",
+      "uncertainty": "The local-probe and bounded-limit claims are explicit, but several functor symbols and limit displays are OCR-fragile. The analysis does not extend the result beyond the source's enough-points, coherence, continuity, and boundedness conditions.",
+      "unit_id": "agnostic_oa_w2136058159_sheaf_hypercohomology"
+    },
+    "agnostic_oa_w2136058159_simplicial_reglobalization_splitting": {
+      "analysis_id": "agnostic_oa_generation_fe7a6b7f0f2256b41b689986a8983fbefb66d686ae3953acd7fa2ec238c048bd",
+      "boundary_or_failure": "Limit/failure: The algebraic realizations can be singular, so regular-scheme descent is recovered only through closed-cover Mayer-Vietoris and simplexwise regular pieces. Degree shifting and flag-bundle splitting require finite complexes, the stated coefficient/localization hypotheses, projective-bundle formulas, and split injections; splitting after pullback is not equality on the original object.",
+      "interpretation": "Inference: The source changes representation twice: a higher homotopy class is encoded as a degree-zero class on an algebraic cell model, then a vector-bundle class is pulled to a flag space where it decomposes into line classes. Split injectivity preserves enough information to reflect success back. Representation dependence: Simplicial schemes, Moore complexes, K0, and flag bundles implement the method; the transferable pattern is loss-controlled degree shifting followed by generator splitting.",
+      "nonparaphrase_operation": "Encode a high-degree obstruction in a finite cell object whose Mayer-Vietoris spectral sequence shifts it to degree zero, represent the resulting class by a structured object, pass to a splitting space where that object decomposes into elementary generators, solve the problem on those generators, and use a natural split injection to reflect the result to the original object.",
+      "source_support": "Source fact (assigned artifact lines 3415-3947): Sections 3.7-3.20 construct schemes from finite simplicial complexes, prove Mayer-Vietoris-to-homotopy-limit reconstruction, and use sphere and Moore models to move higher K-theory information into K0. Lemmas 3.25-3.28 establish projective-bundle decompositions and a flag-bundle splitting principle with split vertical injections, and Lemma 3.29 uses these facts to reduce surjectivity to line-bundle classes and then return it to the original scheme.",
+      "uncertainty": "The representation-change chain is explicit, but the Moore-space decompositions and many projective-bundle formulas are OCR-sensitive. The record treats the split map as information-preserving for the stated cokernel argument, not as a general descent equivalence.",
+      "unit_id": "agnostic_oa_w2136058159_simplicial_reglobalization_splitting"
+    },
+    "agnostic_oa_w2136058159_splitting_principle_method": {
+      "analysis_id": "agnostic_oa_generation_cb66bc5c2aafbc5344a3bbf6125971b31693684de5f964c08da8011293009c9f",
+      "boundary_or_failure": "Limit/failure: The recipe requires all of its structural inputs together: Mayer-Vietoris reduction, access to K0 representatives, a projective or flag-bundle splitting principle, and factorization of elementary line classes through the comparison. Exercise 3.33 supplies a falsification boundary: a proposed global theory with all listed properties would force a surjectivity contradicted by the stated proper image of Milnor K-theory. The later remark strengthens the local coefficient result in nonnegative degrees but does not erase the original proof's hypotheses.",
+      "interpretation": "Inference: The splitting principle is a generator-reduction schema and also a consistency test for candidate theories: if the required formal properties force an impossible image, at least one proposed property or extension must fail. Representation dependence: Vector bundles, flag bundles, Picard groups, and K0 express the recipe, while the generic content is pull apart, solve on generators, and reflect through a split map.",
+      "nonparaphrase_operation": "To test surjectivity of a natural transformation, move a target class into a degree-zero representation, pull it along a split map until it decomposes into elementary generators, verify each generator factors through the source, and then push the conclusion back; as an adversarial check, combine the same axioms to derive their forced image and compare it with a known proper-image obstruction.",
+      "source_support": "Source fact (assigned artifact lines 3948-4025): Section 3.31 explicitly summarizes the method as Mayer-Vietoris reduction, representation by a K0 vector-bundle class, passage to a flag bundle, decomposition into line bundles, and factorization through Picard classes. Exercise 3.33 states conditions under which the same argument would force surjectivity and asks the reader to refute a proposed Milnor-K-theory extension using its known proper image. Remark 3.34 reports a stronger later local theorem showing localization is unnecessary in nonnegative degrees while retaining localization in the broader descent formulation.",
+      "uncertainty": "The recipe is source-explicit rather than inferred. The falsification argument is posed as an exercise and depends on its listed assumptions and the cited proper-image fact; the later rigidity result is reported by the source and was not independently checked.",
+      "unit_id": "agnostic_oa_w2136058159_splitting_principle_method"
+    },
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": {
+      "analysis_id": "agnostic_oa_generation_572293bda509dacd29a77b89e02f2cc8d74a12b24ac3eb4e01efcec8906a7717",
+      "boundary_or_failure": "Limit/failure: The final coefficient identification is stated for regular noetherian strict local hensel rings satisfying the earlier invertibility and descent hypotheses. Lemma 3.4 itself needs less regularity, but its split summand does not establish the whole K-theory calculation until surjectivity of the comparison map is proved later. A stalk calculation alone also does not supply global descent.",
+      "interpretation": "Inference: A global sheaf identity is reduced to a canonical local normal form, where a comparison target is explicitly computable and visibly splits off; the remaining local surjectivity and the later reglobalization are kept as separate obligations. Representation dependence: Strict henselian rings, classifying spaces, and Bott periodic topological K-theory provide the normal form; the generic move is conservative local probing followed by a split comparison and a separately proved exhaustion step.",
+      "nonparaphrase_operation": "Reduce a proposed global coefficient identity to values on conservative stalks, choose the most rigid local model available, compute a simpler comparison object there, exhibit it as a split summand of the target, and isolate surjectivity onto the complementary information as a distinct lemma before invoking descent.",
+      "source_support": "Source fact (assigned artifact lines 3334-3414): Theorem 3.1 reduces the localized coefficient-sheaf calculation to strict local henselian stalks and Theorem 3.3. Lemma 3.4 identifies the Bott-inverted classifying-space construction using roots of unity and Snaith's equivalence, while Lemma 3.5 states that its composite with the Dwyer-Friedlander comparison is a weak equivalence, so the computed periodic coefficient object splits off and proving surjectivity of the intervening map remains sufficient.",
+      "uncertainty": "The stalkwise reduction and split-comparison logic are clear. The coefficient displays and grading are OCR-damaged, so this record avoids exact formula reproduction; the later surjectivity proof is not treated as if it appeared in this unit.",
+      "unit_id": "agnostic_oa_w2136058159_strict_hensel_coefficients"
+    },
+    "agnostic_oa_w2136058159_tate_tsen_descent": {
+      "analysis_id": "agnostic_oa_generation_b5afd69efa6f07834a5cac885cea6c14907b33bf0c26f88ec6fa8804d4d9c769",
+      "boundary_or_failure": "Limit/failure: The theorem assumes a finite Tate-Tsen filtration with precisely controlled steps, coefficient and root-of-unity conditions, and bounded residue-field cohomological dimension; it does not assert that every field admits such a filtration. Its extension to schemes also requires the earlier regularity, localization, and local-to-global hypotheses.",
+      "interpretation": "Inference: A difficult descent equivalence can be propagated along a tower when every link has a certified but possibly different inverse mechanism: prime-to-l transfer retraction for dimension-zero steps and Bott-inductor duality for dimension-one steps. Representation dependence: The tower consists of field extensions and the invariant is Bott-localized K-theory; the reusable content is typed composition of local equivalences rather than one uniform argument.",
+      "nonparaphrase_operation": "Factor a global comparison through a finite tower, classify each edge by the obstruction it presents, assign an edge-specific inverse or retraction, verify hypercohomological composition at every junction, and run induction down the tower before reconnecting the endpoint result to general objects through independent localization and stalkwise reductions.",
+      "source_support": "Source fact (assigned artifact lines 3113-3333): Theorem 2.43 assumes a Tate-Tsen filtration and proves the field augmentation after Bott localization. Its proof treats cohomological-dimension-zero steps as limits of prime-to-l finite extensions split by transfer, treats dimension-one steps using Proposition 2.42, and composes them by descending induction. Theorems 2.45 and 2.47 then combine this field result with earlier Brown-Gersten, localization, and Artin-local reductions to obtain scheme-level K- and G-theory descent under explicit hypotheses.",
+      "uncertainty": "The two step-types and their composition are legible, while the full list of admissible base fields and coefficient variants is edition-specific and notation-heavy. Absence of a documented filtration would block this proof, not show the descent claim false.",
+      "unit_id": "agnostic_oa_w2136058159_tate_tsen_descent"
+    },
+    "agnostic_oa_w2136058159_truncation_duality_induction": {
+      "analysis_id": "agnostic_oa_generation_b16a72c86a1b5b6284ceee9f20827629fdea8f3352b1578cbbe2c849a21bd7c1",
+      "boundary_or_failure": "Limit/failure: Truncation does not erase ambiguity for free: the remaining indeterminacy must be controlled by a surjective transfer, and the duality maps must be natural and equivariant up to coherent homotopy. The field, root-of-unity, coefficient, cohomological-dimension, and associativity qualifications remain active, and the proof's exact diagrams are OCR-fragile.",
+      "interpretation": "Inference: When higher layers interfere with a lift, isolate the relevant degree window, solve the lifting problem modulo an explicit lower-filtration ambiguity, prove that ambiguity transports surjectively through the tower, and then use duality to convert compatible lifts into an inverse after localization. Representation dependence: Postnikov sections, K-theoretic transfer, and mapping spectra realize the move; the generic content is truncation plus ambiguity control plus dual reconstruction.",
+      "nonparaphrase_operation": "Truncate a complex object above and below the degrees relevant to the obstruction, lift the desired class in the truncated problem, identify the residual ambiguity as a concrete filtration quotient, show transition maps are surjective on that quotient, choose compatible lifts inductively, and evaluate a duality pairing on those lifts to build a candidate inverse whose two composites are checked separately.",
+      "source_support": "Source fact (assigned artifact lines 2640-3112): Lemma 2.38 proves compatibility of group hyperhomology with specified Postnikov truncations. Lemma 2.39 treats higher cohomological dimension by truncating, lifting inductors modulo an identified indeterminacy, and using top-dimensional transfer surjectivity to choose them compatibly. Propositions 2.40 and 2.42 propagate inductors with the projection formula and use Gillet duality to construct a map whose composite with augmentation is Bott multiplication and whose comparison after descent yields inverse behavior after Bott localization.",
+      "uncertainty": "Only the proof architecture is safe at this extraction quality. Numerous subscripts, truncation symbols, filtration degrees, and homotopy-commutative triangles require the typeset article for exact reuse, and the cited duality and transfer results were not independently checked.",
+      "unit_id": "agnostic_oa_w2136058159_truncation_duality_induction"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2136058159_algebraic_topological_k_comparison": "ae5569d46ab7492f1f096f573d82db114f1ddbb07597c900312663b3ec42cb67",
+    "agnostic_oa_w2136058159_bott_inductors_cd_one": "d09a93fa84ca5f84642f6a876e4730f3dd34df2827058f923247c91eca395440",
+    "agnostic_oa_w2136058159_cech_hypercohomology": "b196871d9d298cfe5c1cce73e9c19364e305629549436050648f2d9eb5b0838e",
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": "9ea640a56310f20430894229e6e543897f48864c1c9599e2d08f300f3a9fac1f",
+    "agnostic_oa_w2136058159_descent_via_postnikov": "29af533f42bea099ead25e75f68b296f7b6c5e2bc68baa777a5cf244e406968b",
+    "agnostic_oa_w2136058159_etale_k_spectral_sequence": "26ea2508c36545e57771ecbf921f310d106098638e9f610604d854e80a59738b",
+    "agnostic_oa_w2136058159_local_ring_field_reduction": "52c550f0ec23c82a7d65283661fc1fcbb805648473a68a7b03c3e06d6b7f4af6",
+    "agnostic_oa_w2136058159_localization_bridge": "dfb8dc847e959a5608a23b7f136f561cb81448800f8a7c47fedea08a24e7d476",
+    "agnostic_oa_w2136058159_rational_transfer_descent": "04c3398c12354ff0d719ef62423d61e5572eb20331b9ad6768ecd2e41e002764",
+    "agnostic_oa_w2136058159_shapiro_hypertransfer": "0503e0b53b492033189b14ef599e2161c1487482e66c3d445f8c87c134cab75f",
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": "9c14e74b12e32257f6c9db5c81bb747a061b7d34b9d541721d33882221f1342a",
+    "agnostic_oa_w2136058159_simplicial_reglobalization_splitting": "15de6afd994c2e83722e9ab5073a7d2e3d0d7faccefdd8607616be9a09937447",
+    "agnostic_oa_w2136058159_splitting_principle_method": "17e18368629f13de8fe662e2477f92de4f0244477e6a06ac0d95f93635e36202",
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": "16d7de79f9a80c8e4cd0670efd88155a39eb12d741bc56f5f20af92a557ec9e8",
+    "agnostic_oa_w2136058159_tate_tsen_descent": "0b57cb0cfe758a28009917973852acf8dde6406db397577f613ab69f6f0cb379",
+    "agnostic_oa_w2136058159_truncation_duality_induction": "ea06ab6c642f2ff914ac256bf8ca031abc39a7f7e693dfb7fe407241f8ba489b"
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2136058159_algebraic_topological_k_comparison": "agnostic_oa_critic_2d5cbd734191b5e7963999580f6c7c499539c696981facbdd1e3bb8a0f2e2dda",
+    "agnostic_oa_w2136058159_bott_inductors_cd_one": "agnostic_oa_critic_ee015a3eabb15f5952cfa65aeb4b6448d9a2068c555e91f61025426d30880780",
+    "agnostic_oa_w2136058159_cech_hypercohomology": "agnostic_oa_critic_105dae976e4770e1963887a96a6cfb11fcc28f55356c20a94825b9e78bf89874",
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": "agnostic_oa_critic_966e5ab757a3943790f0be2448eeb7449e2aa3081d735800fe1badf6702a3486",
+    "agnostic_oa_w2136058159_descent_via_postnikov": "agnostic_oa_critic_87f7265c300f4bba0f99866c46a16dbc7e71ae5c0a890a1d89a5e96fa19da3ec",
+    "agnostic_oa_w2136058159_etale_k_spectral_sequence": "agnostic_oa_critic_e29421e536c50735a41d144b8376c0174e79eb6afe2c8f15b3db423371c84aa7",
+    "agnostic_oa_w2136058159_local_ring_field_reduction": "agnostic_oa_critic_113ad7fe3bc2682a82695f78497317e3e71707dfd645bfe860967c9a6306f500",
+    "agnostic_oa_w2136058159_localization_bridge": "agnostic_oa_critic_88e97c5291478473c520cb9417d4039f00105993dc3454bcc85365caa45d97a7",
+    "agnostic_oa_w2136058159_rational_transfer_descent": "agnostic_oa_critic_e7736aa93f404afa7147ef7c2384c31d439d9f871e2ed79dabd975e5ec142c2b",
+    "agnostic_oa_w2136058159_shapiro_hypertransfer": "agnostic_oa_critic_d5a9eec338aeab8b633c0d887e82ec0576a85ac4014bff1b1d6a35b7c70c7f24",
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": "agnostic_oa_critic_72a57f29a03aac649c59599a360a83c3eb7bc70e0529584fdfb6564fa056cef1",
+    "agnostic_oa_w2136058159_simplicial_reglobalization_splitting": "agnostic_oa_critic_deb1aeead98d45903495563a09f6683510fb2036f6b74ed1429a24cb3ba803cf",
+    "agnostic_oa_w2136058159_splitting_principle_method": "agnostic_oa_critic_440e22b6e7d70c37d8360798b56888c07462d2d6521c868cb31e2d4c0d75bcf5",
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": "agnostic_oa_critic_28a4184a504bf1793e6a3726552a6312238499d480d22bf12fb1fc3eea2b7827",
+    "agnostic_oa_w2136058159_tate_tsen_descent": "agnostic_oa_critic_f9664cea71359033abb81ef2f2051e1ce43577d090fcff32a55a89c6eef4feda",
+    "agnostic_oa_w2136058159_truncation_duality_induction": "agnostic_oa_critic_15299aafcdc0d123a207685f860af2d8a1ec5c99b0502175470cd1fbca5d5e71"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "model_visible_packet_sha256": "ca6132284faf65a028d8fc7993958336e99f36f01207f9ee59fe96dfe8a1535d",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w2136058159_f88c13f2_part_01.jsonl",
+  "source_id": "openalex_w2136058159",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_localization_bridge.txt",
+      "artifact_bytes": 14410,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_localization_bridge.txt",
+      "artifact_sha256": "bbf4b254d41b3ccfdbc0722e1210879939f87fca365af537fcef62c08d75ebdd",
+      "content_sha256": "e08e0c416fd753acd9f6ab2ab1dce8bf16633231e44bd8eb16ebf1f6adb5afd5",
+      "context_note": "The opening states the localized comparison and spectral sequence, contrasts algebraic and topological information, specifies what finite coefficients and Bott localization lose, and lays out the proof architecture. Exact displayed formulas are OCR-damaged and must be checked against the typeset article before formula-level reuse.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_localization_bridge",
+            "agnostic_oa_w2136058159_bott_inductors_cd_one",
+            "agnostic_oa_w2136058159_tate_tsen_descent",
+            "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+            "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds an arithmetic-geometric bridge in several distinct mechanisms: finite coefficients, Bott localization with explicit information loss, Galois induction, a convergent etale spectral sequence, and comparison with topological K-theory. This is source-level support for the assignment-routed lens only; overlap and novelty relative to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 248,
+      "line_start": 34,
+      "representation_dependency": "The discussion is expressed through algebraic K-theory, finite coefficients, Bott localization, and etale cohomology; the transferable move is to remove a named obstruction while recording the information discarded and the hypotheses needed for reconstruction.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It separates a subtle invariant from a computable comparison target, explains that localization forgets precisely Bott-torsion and finite coefficients lose uniquely divisible information, and decomposes the proof into construction, descent, local coefficient identification, and comparison gates.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Bott localization as a controlled bridge between invariants",
+      "unit_id": "agnostic_oa_w2136058159_localization_bridge",
+      "unit_type": "source_qualified_conceptual_overview"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_cech_hypercohomology.txt",
+      "artifact_bytes": 20233,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_cech_hypercohomology.txt",
+      "artifact_sha256": "9c14d5b934a343a2c983e8baa027316d40e58dec0f166972b986901534ab4879",
+      "content_sha256": "692b4e8d491759d128e0fdb326724527492e900f8183db8dc80bfe8598b22826",
+      "context_note": "This span constructs Cech complexes of spectra, homotopy-limit hypercohomology, refinement maps, spectral sequences, and independence from a weakly cofinal cover system. Dense products and cosimplicial indices suffer OCR noise, so the prose and line provenance are safer than isolated formulas.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 594,
+      "line_start": 249,
+      "representation_dependency": "The mechanism depends on a site, covers, cosimplicial replacement, and homotopy limits; its generic content is coherent aggregation of overlapping local data with refinement invariance.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It turns local observations on all multiple overlaps into a global homotopy object, makes refinement functorial, and proves that changing among mutually cofinal cover systems does not change the result.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Cech hypercohomology from coherent cover data",
+      "unit_id": "agnostic_oa_w2136058159_cech_hypercohomology",
+      "unit_type": "rigorous_foundational_construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_sheaf_hypercohomology.txt",
+      "artifact_bytes": 23053,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_sheaf_hypercohomology.txt",
+      "artifact_sha256": "a27e238f538f33360254354ece364dab54a267d3ad91b94b3848fa62e12cf255",
+      "content_sha256": "78a531069bb8f61dc235e4b21286af118f158260be9eb81f22606a25930f7562",
+      "context_note": "The source passes from canonical cover systems to functoriality across sites, points and stalks, the Godement construction, sheaf hypercohomology, continuity, and limit compatibility. It repeatedly states boundedness conditions rather than treating limit interchange as automatic.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 981,
+      "line_start": 595,
+      "representation_dependency": "The construction uses points of a topos, Godement resolutions, and spectra; the semantic move is to replace a presheaf by a global object whose local stalk behavior and functorial transport can be checked separately.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It supplies explicit local probes, an exact sheafification-like construction, and conditions under which filtered or inverse limits commute with global reconstruction, thereby exposing convergence and continuity as independent gates.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "From Cech data to functorial sheaf hypercohomology",
+      "unit_id": "agnostic_oa_w2136058159_sheaf_hypercohomology",
+      "unit_type": "rigorous_local_to_global_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_descent_via_postnikov.txt",
+      "artifact_bytes": 13734,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_descent_via_postnikov.txt",
+      "artifact_sha256": "85eeef16744cb9b4c35ebc91c431efa673638af3e66311621428f954a145ccff",
+      "content_sha256": "fd4ee32969177119d2731e988be13dfce5dd0880a7011248f69830c5e0f80443",
+      "context_note": "The central descent theorem is proved through Postnikov devissage to Eilenberg-MacLane cases and derived-functor uniqueness, then instantiated for Zariski and etale covers and Galois hypercohomology. Formula indices are noisy, but the reductions and hypotheses are legible.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 1224,
+      "line_start": 982,
+      "representation_dependency": "Postnikov towers and spectral hypercohomology encode the proof, while the reusable structure is reduction of a nonlinear homotopical assertion to single-degree abelian cases followed by reconstruction.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It distinguishes the descent map from its convergence assumptions, reduces the claim to classical derived functors one homotopy group at a time, and shows how local Galois data can recover the global spectrum under boundedness hypotheses.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Cohomological descent by Postnikov devissage",
+      "unit_id": "agnostic_oa_w2136058159_descent_via_postnikov",
+      "unit_type": "rigorous_descent_theorem_and_method"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_cech_sheaf_cartan_leray.txt",
+      "artifact_bytes": 7702,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_cech_sheaf_cartan_leray.txt",
+      "artifact_sha256": "370a96a77f458d9b8d9607d81839b03e5beb3822880fe37a2094b93abf3c19ec",
+      "content_sha256": "e5189b5af32696fbd1ed1686094de7b69bb8eb23d8da007fcd1d994ea8a90324",
+      "context_note": "This span compares Cech and sheaf hypercohomology for additive presheaves and states a Cartan-Leray theorem for morphisms of sites. The proof uses exact sheafification, stalkwise checks, Postnikov stages, and strongly convergent spectral sequences.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 1371,
+      "line_start": 1225,
+      "representation_dependency": "The comparison is site-theoretic and spectral, but its generic role is to certify that a computable cover model and an abstract global model agree only after additivity, continuity, and convergence are verified.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It separates two local-to-global constructions, proves their agreement under explicit hypotheses, and gives a compositional rule for reconstructing across a map of sites rather than conflating the two stages.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Cech-to-sheaf comparison and Cartan-Leray composition",
+      "unit_id": "agnostic_oa_w2136058159_cech_sheaf_cartan_leray",
+      "unit_type": "rigorous_comparison_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_local_ring_field_reduction.txt",
+      "artifact_bytes": 21138,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_local_ring_field_reduction.txt",
+      "artifact_sha256": "8b4d46481523dec791b3be23cb4b90a2c66309ab0c13c0e2e9f4cbd7208cb805",
+      "content_sha256": "aa92fc29b89ba58a92debcc9eba8e1e673846cf93496e124c8284f7002963721",
+      "context_note": "Section 2 first reduces etale descent on schemes to local rings using Mayer-Vietoris and stalkwise spectral sequences, then to residue fields by localization and induction on Krull dimension. The source explicitly explains why a tempting purity shortcut is unavailable at this point.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 1726,
+      "line_start": 1372,
+      "representation_dependency": "The proof is phrased for schemes and K- or G-theory spectra; its generic structure is a two-level local reduction driven by excision, a dimension measure, fibre sequences, and a five-lemma reconstruction step.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It is a clear reusable strategy: establish a local criterion, cut a local object into a lower-dimensional open part and a closed residue object, propagate the result by localization, and avoid invoking a comparison theorem whose hypotheses have not yet been proved.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Reducing global descent to local rings and fields",
+      "unit_id": "agnostic_oa_w2136058159_local_ring_field_reduction",
+      "unit_type": "rigorous_inductive_reduction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_rational_transfer_descent.txt",
+      "artifact_bytes": 7424,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_rational_transfer_descent.txt",
+      "artifact_sha256": "6814335cf404d2378f01c53b241704cb414a2929b646863f9381a49f78ae16be",
+      "content_sha256": "6c7e440097ec836cef49ef332f55b8fd506790258aaef4b5e48380421ec7c05e",
+      "context_note": "The span defines weak transfers, identifies the Mackey-like compatibilities needed, proves rational descent over fields by averaging over finite Galois groups, and propagates it back to schemes through the earlier reductions.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 1870,
+      "line_start": 1727,
+      "representation_dependency": "The argument depends on finite etale maps, transfer and restriction, and rational coefficients; the averaging step works because group orders become invertible and therefore must not be transferred unchanged to torsion settings.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It explains when a retraction can be built from restriction and transfer, why higher group cohomology vanishes rationally, and how a field-level equivalence is lifted through previously established local-to-global gates.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Transfer and averaging as a rational descent mechanism",
+      "unit_id": "agnostic_oa_w2136058159_rational_transfer_descent",
+      "unit_type": "rigorous_transfer_argument"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_shapiro_hypertransfer.txt",
+      "artifact_bytes": 18791,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_shapiro_hypertransfer.txt",
+      "artifact_sha256": "c32109795b01250a80b8aac2e9fde60d8f9ea0e89d51bf188dcf0542213759ff",
+      "content_sha256": "52c4351b88ec5aabcc3709d90a786c53d693a2716db8de23a9733eebea9dce85",
+      "context_note": "This portion develops Shapiro equivalences for hypercohomology and hyperhomology, defines homological induction and hypertransfer, and tracks compatibility across towers of field extensions. Several large diagrams are extraction-fragile, so later analysis must rely on the surrounding claims and exact spans.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 2231,
+      "line_start": 1871,
+      "representation_dependency": "The machinery is Galois- and spectrum-specific, but its generic content is transport between a subgroup and an induced object plus coherent transfer maps that remain compatible under composition.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It turns descent along nested extensions into a compositional transport problem, separates homology from cohomology constructions, and records higher-coherence requirements needed before formal transfer identities can be used.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Shapiro transport and coherent hypertransfer",
+      "unit_id": "agnostic_oa_w2136058159_shapiro_hypertransfer",
+      "unit_type": "rigorous_induction_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_bott_inductors_cd_one.txt",
+      "artifact_bytes": 23605,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_bott_inductors_cd_one.txt",
+      "artifact_sha256": "7605a8c9d303e5111314ee1ce1ff0b3b1fa4c92ffb319cbe4b8a74c36083ae90",
+      "content_sha256": "07d7ec9e0d182eca7f550eb8577e07100318724c94a90f25c9753f0bb9bb154b",
+      "context_note": "After the explicit K-theory hypertransfer construction, this span uses the projection formula, Tate's spectral sequence, Hilbert 90, and low cohomological dimension to construct compatible inductors for the Bott element. Exact low-degree groups and differentials are formula-sensitive.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_localization_bridge",
+            "agnostic_oa_w2136058159_bott_inductors_cd_one",
+            "agnostic_oa_w2136058159_tate_tsen_descent",
+            "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+            "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds an arithmetic-geometric bridge in several distinct mechanisms: finite coefficients, Bott localization with explicit information loss, Galois induction, a convergent etale spectral sequence, and comparison with topological K-theory. This is source-level support for the assignment-routed lens only; overlap and novelty relative to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 2639,
+      "line_start": 2232,
+      "representation_dependency": "The method is tied to the Bott class and Galois hyperhomology, but the reusable pattern is to lift a distinguished class through a spectral sequence, prove ambiguity vanishes, and enforce compatibility along a cofinal system.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It demonstrates how a basic comparison theorem supplies a seed class, how cohomological dimension controls interference and indeterminacy, and how cofinal compatibility upgrades local liftings to a descent tool.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Constructing compatible inductors for a distinguished class",
+      "unit_id": "agnostic_oa_w2136058159_bott_inductors_cd_one",
+      "unit_type": "rigorous_obstruction_and_lifting_argument"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_truncation_duality_induction.txt",
+      "artifact_bytes": 23442,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_truncation_duality_induction.txt",
+      "artifact_sha256": "1ad2d0900821161f94ef561752b0f2660a4b35ebaae956d78f5f61049868c62a",
+      "content_sha256": "9ef6018a77f365eaecbb65c5ff1a18d0e1c5b6a69f83a4e74213d70b58d43117",
+      "context_note": "This technically dense span handles higher cohomological dimension through Postnikov truncation, controlled indeterminacy, transfer surjectivity, duality, and two homotopy-commutative triangles. OCR damage is substantial in diagrams and subscripts; only the proof architecture is safely reusable without typeset verification.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 3112,
+      "line_start": 2640,
+      "representation_dependency": "The construction uses Postnikov stages, mapping spectra, K-theoretic duality, and Bott multiplication; the generic move is to truncate away obstructing degrees, solve a lifting problem modulo explicit ambiguity, then verify inverse behavior through naturality diagrams.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It makes failure modes explicit: higher groups can interfere, liftings have indeterminacy, and coherent naturality is required. The proof responds by isolating the relevant layers, proving transfer controls the ambiguity, and reconstructing a compatible inverse after localization.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Truncation and duality for induction beyond low dimension",
+      "unit_id": "agnostic_oa_w2136058159_truncation_duality_induction",
+      "unit_type": "rigorous_technical_bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_tate_tsen_descent.txt",
+      "artifact_bytes": 12918,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_tate_tsen_descent.txt",
+      "artifact_sha256": "a92cfde0656587c6d9db6e33a16eaa7ba1e61f9be7c398cb4e537ae278004aed",
+      "content_sha256": "f68f0a6a84bd36a057834d8a82f0d74b3118f03e5462ce5c7313b9135194abd6",
+      "context_note": "The Tate-Tsen filtration theorem proves field descent by composing extension steps of cohomological dimension zero or one, then uses transfer and induction to remove root-of-unity restrictions and earlier local reductions to reach schemes. Hypotheses are numerous and edition-specific.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_localization_bridge",
+            "agnostic_oa_w2136058159_bott_inductors_cd_one",
+            "agnostic_oa_w2136058159_tate_tsen_descent",
+            "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+            "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds an arithmetic-geometric bridge in several distinct mechanisms: finite coefficients, Bott localization with explicit information loss, Galois induction, a convergent etale spectral sequence, and comparison with topological K-theory. This is source-level support for the assignment-routed lens only; overlap and novelty relative to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 3333,
+      "line_start": 3113,
+      "representation_dependency": "The argument is specific to field filtrations and Bott-localized K-theory, but its transferable structure is propagation of an equivalence along a finite tower whose steps have separately certified inverse mechanisms.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It breaks a difficult global comparison into bounded extension steps, treats prime-to-coefficient and cohomological-dimension-one cases differently, composes them by descent, and then reconnects the field result to schemes without hiding any gate.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Descent propagated along a Tate-Tsen filtration",
+      "unit_id": "agnostic_oa_w2136058159_tate_tsen_descent",
+      "unit_type": "rigorous_compositional_descent_theorem"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_strict_hensel_coefficients.txt",
+      "artifact_bytes": 3908,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_strict_hensel_coefficients.txt",
+      "artifact_sha256": "0794831987c7b78b8cec7712481c48a1080d41129862ba93666aa7e6878ef0d7",
+      "content_sha256": "980a2a317a5b94482f09ca4e9d1eff466d99954e1f7d660037b9207b88fb8f91",
+      "context_note": "Section 3 identifies the localized coefficient sheaf by reducing to strict local hensel rings and comparing a Bott-inverted classifying-space spectrum with topological K-theory. The stated results depend on the source's explicit regularity and coefficient hypotheses.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 3414,
+      "line_start": 3334,
+      "representation_dependency": "The local model uses strict henselian rings, roots of unity, and Bott periodicity; its generic force is that a global sheaf identity can be proved stalkwise once the correct local normal form is computed.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It is a clean local-normal-form move: reduce a sheaf statement to stalks, compute the invariant on a maximally local object, and keep the splitting and surjectivity checks distinct from the descent theorem that reglobalizes the answer.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Computing coefficient sheaves from strict henselian stalks",
+      "unit_id": "agnostic_oa_w2136058159_strict_hensel_coefficients",
+      "unit_type": "rigorous_stalkwise_identification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_simplicial_reglobalization_splitting.txt",
+      "artifact_bytes": 30314,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_simplicial_reglobalization_splitting.txt",
+      "artifact_sha256": "3c8d9668aef964381e163daf613c8482928ac6dec8d4491077ffed26ee027e04",
+      "content_sha256": "8e2e59d5d2a84bd54fa7684ae1cf6f773de9c8182a0c7cd3a82f1eba2f50bab7",
+      "context_note": "The span builds schemes from finite simplicial complexes, proves closed-cover Mayer-Vietoris and homotopy-limit descent, shifts higher K-theory questions to K0, and then uses projective and flag bundles to split vector-bundle classes. Numerous formula-heavy examples support rather than replace the main mechanism.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 3947,
+      "line_start": 3415,
+      "representation_dependency": "The technique uses algebraic realizations of simplicial complexes, Moore spaces, projective bundles, and K-theory; the generic pattern is to change representation until a higher obstruction becomes a degree-zero object that admits a splitting principle.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It combines excision, cellular induction, degree shifting, and a flag-bundle splitting principle to reduce a global surjectivity problem to line-bundle generators while preserving a split injection back to the original object.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Reglobalization through simplicial models and splitting",
+      "unit_id": "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+      "unit_type": "rigorous_representation_change_method"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_splitting_principle_method.txt",
+      "artifact_bytes": 4499,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_splitting_principle_method.txt",
+      "artifact_sha256": "255a7884432c2d3f2917139418d3d7c16f855fb73dc78428410a20322b85f1e9",
+      "content_sha256": "58f4f0eef61a61e04ec4fc6a25ee4919766170795dd36ff3047e25ae757a34b0",
+      "context_note": "The author extracts the rough splitting-principle recipe, gives limits on possible generalizations, and records a later stronger local theorem. The update explicitly changes what localization is needed for while not erasing the original proof's hypotheses.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4025,
+      "line_start": 3948,
+      "representation_dependency": "Although motivated by K-theory and flag bundles, the stated recipe abstracts to a natural transformation, Mayer-Vietoris reduction, representation in K0, splitting into line objects, and descent back along a split monomorphism.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It states a reusable proof plan in the source's own terms and also provides a falsification boundary: a putative global theory cannot inherit all desired properties when its local image is known to be too small.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Abstract recipe and limits of the splitting principle",
+      "unit_id": "agnostic_oa_w2136058159_splitting_principle_method",
+      "unit_type": "source_explicit_methodological_synthesis"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_etale_k_spectral_sequence.txt",
+      "artifact_bytes": 2305,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_etale_k_spectral_sequence.txt",
+      "artifact_sha256": "4c9a37638fb10125c3a5661e2b591c27fc7b91ded301c8070f0dce6c40c8a6b2",
+      "content_sha256": "0cf5963b47a5e9073b55da0c4caf93fa44f350a56db8bf0addbbda120eaf9d5e",
+      "context_note": "The main result gives a strongly convergent Atiyah-Hirzebruch-type spectral sequence from etale cohomology to localized finite-coefficient algebraic K-theory and states collapse criteria. The E2 display is OCR-corrupted and must be checked before exact reuse.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_localization_bridge",
+            "agnostic_oa_w2136058159_bott_inductors_cd_one",
+            "agnostic_oa_w2136058159_tate_tsen_descent",
+            "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+            "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds an arithmetic-geometric bridge in several distinct mechanisms: finite coefficients, Bott localization with explicit information loss, Galois induction, a convergent etale spectral sequence, and comparison with topological K-theory. This is source-level support for the assignment-routed lens only; overlap and novelty relative to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4062,
+      "line_start": 4026,
+      "representation_dependency": "The bridge depends on Bott localization, coefficient-sheaf identification, and bounded etale cohomological dimension; the conceptual content is a filtered reconstruction whose convergence and possible differentials remain explicit.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It converts a difficult invariant into computable graded approximations while preserving the distinction between the E2 description, convergence, collapse, and the final abutment.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "A convergent spectral bridge from etale cohomology to K-theory",
+      "unit_id": "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+      "unit_type": "rigorous_main_comparison_theorem"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_algebraic_topological_k_comparison.txt",
+      "artifact_bytes": 2396,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_algebraic_topological_k_comparison.txt",
+      "artifact_sha256": "725d9b0802f6ba4e2de1046e9ef201c7ed4bad31bf4936f1de7b84b2fec0189d",
+      "content_sha256": "677a10361d9301834b67eb8b485155a1925d59a0924ff6c2d01adb8f24249864",
+      "context_note": "The theorem compares localized algebraic K-theory with Dwyer-Friedlander topological K-theory by checking stalks, passing to sheaves, and using descent on both sides. The source notes that nonconnective and truncated variants must not be conflated.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_localization_bridge",
+            "agnostic_oa_w2136058159_bott_inductors_cd_one",
+            "agnostic_oa_w2136058159_tate_tsen_descent",
+            "agnostic_oa_w2136058159_etale_k_spectral_sequence",
+            "agnostic_oa_w2136058159_algebraic_topological_k_comparison"
+          ],
+          "identifier": "arithmetic_geometry",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds an arithmetic-geometric bridge in several distinct mechanisms: finite coefficients, Bott localization with explicit information loss, Galois induction, a convergent etale spectral sequence, and comparison with topological K-theory. This is source-level support for the assignment-routed lens only; overlap and novelty relative to the frozen parent remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 4257,
+      "line_start": 4215,
+      "representation_dependency": "The comparison is K-theoretic and etale-topological, but the generic method is a local equivalence plus sheafification and global descent, with continuity checked before passage from stalks.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It supplies an auditable bridge pattern: prove equivalence on canonical local models, identify the induced coefficient sheaves, verify convergence and descent independently, and only then infer the global equivalence.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Stalkwise comparison followed by global descent",
+      "unit_id": "agnostic_oa_w2136058159_algebraic_topological_k_comparison",
+      "unit_type": "rigorous_comparison_theorem"
+    }
+  ]
+}

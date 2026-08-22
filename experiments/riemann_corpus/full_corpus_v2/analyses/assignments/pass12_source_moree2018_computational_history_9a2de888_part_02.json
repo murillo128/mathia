@@ -1,0 +1,771 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_moree2018_computational_history_9a2de888_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "moree2018_computational_history",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions and the full encode-invert-shift-transfer workflow are contained in the span.",
+      "line_end": 1098,
+      "line_start": 1071,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Perron integral and Dirichlet series are formula-bearing; the workflow is explicit in prose, while exact analytic hypotheses require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Abstracts Riemann's method: encode an arithmetic function by a Dirichlet series, recover summatory behavior with Perron inversion, shift contours using analytic continuation, and if needed replace the function by a related one with a better analytic representation.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Dirichlet-series reflex converts erratic arithmetic into contour geometry",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u025.txt",
+      "unit_bytes": 2087,
+      "unit_id": "moree2018_computational_history_u025",
+      "unit_sha256": "42788e03a64660427acd4008ca8ceab4547ff2e62bf34750c05adf363a15cc10",
+      "unit_type": "general-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u025.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1063,
+          "line_end": 1070,
+          "text": "\none considers a special set A (primes, squares, etc.) and then wonders what the sumset\nA+A = {a+b : a, b ∈ A} looks like (similarly, with A+A+A, etc.). For a nice introduction\nto additive number theory see the book by Tao and Vu [71].\n\n                             9. Major recent developments\n  In this section we discuss some major more recent developments related to the Riemann\nzeta function.\n",
+          "sha256": "ae8e336cd5cf0d345056e28c7e0fafca502708dde37611f10d43e2df721a5f0d"
+        },
+        "after": {
+          "line_start": 1099,
+          "line_end": 1106,
+          "text": "9.2. The Zeta Zoo. The study of the Riemann zeta-function has proved so extraordinarily\nsuccessful in deepening our understanding of the primes, that it has become standard in\nnumber theory to try to associate zeta type functions to arithmetic structures (some kind\nof Pavlov reflex). Indeed, these days there is an enormous zoo of zeta functions. The\nalpha animal in the Zeta Zoo was and still is zeta. It codifies the behaviour of the integers\nand their atomic constituents: the primes. An important species of zeta functions are the\nDirichlet L–functions. These were introduced by Dirichlet in order to understand the\nbehaviour of primes in arithmetic progression. Like zeta, they satisfy a product expansion,\n",
+          "sha256": "375bf48a0391fd27ff7e60cf64665fa5de580a12ed1487423c485bb879767225"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Complex analytic transfer, zeta families, pair correlation, and RMT",
+            "line_end": 1286,
+            "line_start": 1068,
+            "mathematical_role": "Abstracts Riemann's analytic template, transfers it to L- and zeta-functions, studies zero-spacing statistics, and uses random matrices as a conjecture-generating dictionary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1098,
+          "line_start": 1071,
+          "title": "The Dirichlet-series reflex converts erratic arithmetic into contour geometry",
+          "unit_id": "moree2018_computational_history_u025",
+          "unit_type": "general-method",
+          "why_material": "Abstracts Riemann's method: encode an arithmetic function by a Dirichlet series, recover summatory behavior with Perron inversion, shift contours using analytic continuation, and if needed replace the function by a related one with a better analytic representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions and the full encode-invert-shift-transfer workflow are contained in the span.",
+          "representation_dependency": "The Perron integral and Dirichlet series are formula-bearing; the workflow is explicit in prose, while exact analytic hypotheses require PDF checking.",
+          "unit_id": "moree2018_computational_history_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1056,
+            "line_start": 1034,
+            "title": "Formal analytic estimates plus finite L-function verification close Goldbach",
+            "unit_id": "moree2018_computational_history_u024",
+            "unit_type": "application",
+            "why_material": "Illustrates a hybrid proof architecture: theoretical major/minor-arc estimates handle the unbounded range while rigorous interval-arithmetic verification of many Dirichlet L-functions supplies the finite explicit component."
+          },
+          {
+            "line_end": 1138,
+            "line_start": 1099,
+            "title": "Zeta-type structures transfer prime questions to new arithmetic settings",
+            "unit_id": "moree2018_computational_history_u026",
+            "unit_type": "structural-transfer",
+            "why_material": "Explains why Euler products, functional equations, and zero hypotheses recur for Dirichlet L-functions and Dedekind zeta functions, transferring prime-distribution methods, finite computations, and bias phenomena to progressions and number fields."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic data are encoded by Dirichlet series or zeta-type functions, analytic continuation enables contour movement, Euler products preserve atomic structure, and finite zero verification can then feed explicit arithmetic results beyond the original zeta setting.",
+            "limit": "The source provides a structural survey and examples, not sufficient hypotheses for applying the template to an arbitrary new function.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u025",
+              "moree2018_computational_history_u026",
+              "moree2018_computational_history_u027",
+              "moree2018_computational_history_u024"
+            ],
+            "title": "Riemann's encode-invert-shift pattern transfers across arithmetic structures"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1067,
+              "line_start": 1057,
+              "reason": "GRH footnote, page furniture, and brief additive-number-theory placement."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes ERH/GRH terminology, equidistribution, Chebyshev bias, explicit computations, and the prime ideal theorem.",
+      "line_end": 1138,
+      "line_start": 1099,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; progression-count and asymptotic formulas are readable but should be PDF-checked for exact notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why Euler products, functional equations, and zero hypotheses recur for Dirichlet L-functions and Dedekind zeta functions, transferring prime-distribution methods, finite computations, and bias phenomena to progressions and number fields.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta-type structures transfer prime questions to new arithmetic settings",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u026.txt",
+      "unit_bytes": 2989,
+      "unit_id": "moree2018_computational_history_u026",
+      "unit_sha256": "410de74bbc5af1eaf990b90b8c03047db7c7cba402c4cb2bc66330fa51e825ff",
+      "unit_type": "structural-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u026.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1091,
+          "line_end": 1098,
+          "text": "to be able to shift the line of integration as far as possible to the left. Here it becomes\nrelevant to have an analytic continuation of F (s). The more one knows about F (s) the\nmore information one can deduce about f . However, often F (s) is not so well-behaved\nand one tries to consider a closely related function f ∗ instead, with the property that its\nDirichlet series F ∗ (s) behaves in a nicer way58. The results one obtains in this way about\nf ∗ one tries to relate back to f .\n   The attentive reader sees of course immediately that this whole approach is patterned\non Riemann’s 1859 paper.\n",
+          "sha256": "7cc31a98ec56e0836352eaabcee2f18b6b71000a7db985ee7cbe4f55e01263f5"
+        },
+        "after": {
+          "line_start": 1139,
+          "line_end": 1146,
+          "text": "   The reader might wonder about a more stringent definition of a zeta function. Here is\nwhat Selberg, with a life time of experience with zeta functions, thought about this.\n   A zeta function F (s) is a function of a complex variable s that satisfies the following\nproperties.\n    (1) Dirichlet series: for Res > 1, one can write F (s) = ∞          −s\n                                                             P\n                                                                n=1 an n .\n    (2) Ramanujan hypothesis: the growth of P     the coefficients an has to be modest, in\n",
+          "sha256": "7989706a35a649bae727c09a91bf900767c7411867514b163d07c4f9c9a53278"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Complex analytic transfer, zeta families, pair correlation, and RMT",
+            "line_end": 1286,
+            "line_start": 1068,
+            "mathematical_role": "Abstracts Riemann's analytic template, transfers it to L- and zeta-functions, studies zero-spacing statistics, and uses random matrices as a conjecture-generating dictionary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1138,
+          "line_start": 1099,
+          "title": "Zeta-type structures transfer prime questions to new arithmetic settings",
+          "unit_id": "moree2018_computational_history_u026",
+          "unit_type": "structural-transfer",
+          "why_material": "Explains why Euler products, functional equations, and zero hypotheses recur for Dirichlet L-functions and Dedekind zeta functions, transferring prime-distribution methods, finite computations, and bias phenomena to progressions and number fields."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes ERH/GRH terminology, equidistribution, Chebyshev bias, explicit computations, and the prime ideal theorem.",
+          "representation_dependency": "Mostly prose; progression-count and asymptotic formulas are readable but should be PDF-checked for exact notation.",
+          "unit_id": "moree2018_computational_history_u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1098,
+            "line_start": 1071,
+            "title": "The Dirichlet-series reflex converts erratic arithmetic into contour geometry",
+            "unit_id": "moree2018_computational_history_u025",
+            "unit_type": "general-method",
+            "why_material": "Abstracts Riemann's method: encode an arithmetic function by a Dirichlet series, recover summatory behavior with Perron inversion, shift contours using analytic continuation, and if needed replace the function by a related one with a better analytic representation."
+          },
+          {
+            "line_end": 1150,
+            "line_start": 1139,
+            "title": "Selberg's structural checklist for a zeta function",
+            "unit_id": "moree2018_computational_history_u027",
+            "unit_type": "axiomatic-compression",
+            "why_material": "Compresses a broad analogy into five interacting structural properties—Dirichlet series, coefficient growth, analytic continuation, functional equation, and Euler product—without treating any one surface form as sufficient."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic data are encoded by Dirichlet series or zeta-type functions, analytic continuation enables contour movement, Euler products preserve atomic structure, and finite zero verification can then feed explicit arithmetic results beyond the original zeta setting.",
+            "limit": "The source provides a structural survey and examples, not sufficient hypotheses for applying the template to an arbitrary new function.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u025",
+              "moree2018_computational_history_u026",
+              "moree2018_computational_history_u027",
+              "moree2018_computational_history_u024"
+            ],
+            "title": "Riemann's encode-invert-shift pattern transfers across arithmetic structures"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The checklist is presented explicitly and follows examples that motivate it.",
+      "line_end": 1150,
+      "line_start": 1139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "List prose is stable; the compact displayed series and product need only routine PDF confirmation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compresses a broad analogy into five interacting structural properties—Dirichlet series, coefficient growth, analytic continuation, functional equation, and Euler product—without treating any one surface form as sufficient.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg's structural checklist for a zeta function",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u027.txt",
+      "unit_bytes": 877,
+      "unit_id": "moree2018_computational_history_u027",
+      "unit_sha256": "476d784b895b0b6a7c97900f4d50192d13c72c36e80045dcde5276c05d1f91cb",
+      "unit_type": "axiomatic-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u027.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1131,
+          "line_end": 1138,
+          "text": "Granville and Martin [25]. As in the π(x) versus Li(x) problem, under various assump-\ntions there is a computable logarithmic measure for how often π(x; d, a1 ) > π(x; d, a2 ).\n   Another important class of zeta functions are the Dedekind zeta functions. This is\nthe analogue of the Riemann zeta function for a number field and can be treated by similar\nmethods. E.g., Landau in 1903 showed the prime ideal theorem, stating that in a given\nnumber field the number of prime ideals of norm ≤ x grows asymptotically as x/ log x.\nThe hypothesis that every Dedekind zeta function has its non-trivial zeros on the critical\nline is called the Grand Riemann Hypothesis (GRH).\n",
+          "sha256": "0102c9871c8c297b2a1f4329fce35a91f75e77e8ef570433c336d46fd8bd518e"
+        },
+        "after": {
+          "line_start": 1151,
+          "line_end": 1158,
+          "text": "\n9.3. Correlation of pairs of non-trivial zeros. So far we exclusively focused on find-\ning and counting non-trivial zeros. A refinement is to ask about the distribution of the\nzeros, e.g., how are the differences between (consecutive) zeros distributed? Here the first\n\n     59A profound database can be found at http://www.lmfdb.org/.\n     60Patterned after Euler’s product formula (6).\n\n",
+          "sha256": "99b439bc38687c14d6fd5975e795ef3ea0e531cbb0ebbade16fcc55044a72856"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Complex analytic transfer, zeta families, pair correlation, and RMT",
+            "line_end": 1286,
+            "line_start": 1068,
+            "mathematical_role": "Abstracts Riemann's analytic template, transfers it to L- and zeta-functions, studies zero-spacing statistics, and uses random matrices as a conjecture-generating dictionary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1150,
+          "line_start": 1139,
+          "title": "Selberg's structural checklist for a zeta function",
+          "unit_id": "moree2018_computational_history_u027",
+          "unit_type": "axiomatic-compression",
+          "why_material": "Compresses a broad analogy into five interacting structural properties—Dirichlet series, coefficient growth, analytic continuation, functional equation, and Euler product—without treating any one surface form as sufficient."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The checklist is presented explicitly and follows examples that motivate it.",
+          "representation_dependency": "List prose is stable; the compact displayed series and product need only routine PDF confirmation.",
+          "unit_id": "moree2018_computational_history_u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1138,
+            "line_start": 1099,
+            "title": "Zeta-type structures transfer prime questions to new arithmetic settings",
+            "unit_id": "moree2018_computational_history_u026",
+            "unit_type": "structural-transfer",
+            "why_material": "Explains why Euler products, functional equations, and zero hypotheses recur for Dirichlet L-functions and Dedekind zeta functions, transferring prime-distribution methods, finite computations, and bias phenomena to progressions and number fields."
+          },
+          {
+            "line_end": 1181,
+            "line_start": 1152,
+            "title": "Rescaled zero spacings reveal pair correlation and repulsion",
+            "unit_id": "moree2018_computational_history_u028",
+            "unit_type": "statistical-reframing",
+            "why_material": "Moves beyond locating zeros to their relationships, normalizes changing density to unit mean spacing, formulates pair correlation, and connects a small near-zero density to repulsion and simplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic data are encoded by Dirichlet series or zeta-type functions, analytic continuation enables contour movement, Euler products preserve atomic structure, and finite zero verification can then feed explicit arithmetic results beyond the original zeta setting.",
+            "limit": "The source provides a structural survey and examples, not sufficient hypotheses for applying the template to an arbitrary new function.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u025",
+              "moree2018_computational_history_u026",
+              "moree2018_computational_history_u027",
+              "moree2018_computational_history_u024"
+            ],
+            "title": "Riemann's encode-invert-shift pattern transfers across arithmetic structures"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the N(T)-based rescaling, conjectural law, a rigorous smoothed consequence, and Odlyzko's numerical tests.",
+      "line_end": 1181,
+      "line_start": 1152,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rescaling and correlation integral are central and formula-sensitive; exact normalization should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves beyond locating zeros to their relationships, normalizes changing density to unit mean spacing, formulates pair correlation, and connects a small near-zero density to repulsion and simplicity.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rescaled zero spacings reveal pair correlation and repulsion",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u028.txt",
+      "unit_bytes": 1986,
+      "unit_id": "moree2018_computational_history_u028",
+      "unit_sha256": "d53673c0905b5dd4e5e53a86c0ff28721948b011f0e828e377d5c0d62fe9c19d",
+      "unit_type": "statistical-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u028.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1144,
+          "line_end": 1151,
+          "text": "                                                             P\n                                                                n=1 an n .\n    (2) Ramanujan hypothesis: the growth of P     the coefficients an has to be modest, in\n         essence like that of the divisor function d|n 1.\n    (3) Analytic continuation: F (s) extends to a meromorphic function.\n    (4) Functional equation: there is ”a connection” between  QF (s) and F (1 − s).\n    (5) Euler product60 one should be able to write F (s) = p Fp (s).\n\n",
+          "sha256": "0eeeb929c222d0a0a393a0ade807b9035e64414148294bce753eed8cf5687e6f"
+        },
+        "after": {
+          "line_start": 1182,
+          "line_end": 1189,
+          "text": "9.4. Random matrix theory. In 1972 Montgomery discussed his pair correlation con-\njecture with the physicist Dyson62. Dyson immediately saw that the statistical distribution\nfound by Montgomery appeared to be the same as the pair correlation distribution for the\neigenvalues of a random Hermitian matrix that he had discovered a decade earlier.\n   Random matrix theory (RMT) was proposed by the physicist Eugene Wigner63 in\n1951 to describe nuclear physics. The quantum mechanics of a heavy nucleus is complex\nand not well understood. Wigner made the bold conjecture that the statistics of the energy\nlevels can be captured by random matrices.\n",
+          "sha256": "ef949b1e202180b662e2a45c1b37598bca74521b6355d613b687a8026f281645"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Complex analytic transfer, zeta families, pair correlation, and RMT",
+            "line_end": 1286,
+            "line_start": 1068,
+            "mathematical_role": "Abstracts Riemann's analytic template, transfers it to L- and zeta-functions, studies zero-spacing statistics, and uses random matrices as a conjecture-generating dictionary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1181,
+          "line_start": 1152,
+          "title": "Rescaled zero spacings reveal pair correlation and repulsion",
+          "unit_id": "moree2018_computational_history_u028",
+          "unit_type": "statistical-reframing",
+          "why_material": "Moves beyond locating zeros to their relationships, normalizes changing density to unit mean spacing, formulates pair correlation, and connects a small near-zero density to repulsion and simplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the N(T)-based rescaling, conjectural law, a rigorous smoothed consequence, and Odlyzko's numerical tests.",
+          "representation_dependency": "The rescaling and correlation integral are central and formula-sensitive; exact normalization should be checked against the PDF.",
+          "unit_id": "moree2018_computational_history_u028"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1150,
+            "line_start": 1139,
+            "title": "Selberg's structural checklist for a zeta function",
+            "unit_id": "moree2018_computational_history_u027",
+            "unit_type": "axiomatic-compression",
+            "why_material": "Compresses a broad analogy into five interacting structural properties—Dirichlet series, coefficient growth, analytic continuation, functional equation, and Euler product—without treating any one surface form as sufficient."
+          },
+          {
+            "line_end": 1285,
+            "line_start": 1182,
+            "title": "Random matrices generate moment conjectures but do not certify them",
+            "unit_id": "moree2018_computational_history_u029",
+            "unit_type": "cross-domain-dictionary",
+            "why_material": "Builds a dictionary from zero statistics to Hermitian eigenvalues, uses matrix size near log T to predict all zeta moment constants, validates it against prior analysis and computation, and explicitly limits the inference because no general proof of the dictionary exists."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation and random-matrix analogies organize predictions about simplicity, repulsion, and moments and are checked against high-zero computations, but agreement remains conjectural evidence unless independently proved.",
+            "limit": "The source does not justify the random-matrix dictionary in general and explicitly warns that it may fail outside tested regimes.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u014",
+              "moree2018_computational_history_u028",
+              "moree2018_computational_history_u029"
+            ],
+            "title": "Statistical zero models generate testable mathematics without becoming proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the physical origin, moment example, extracted pair-correlation figure and caption, Keating-Snaith prediction, function-field evidence, and the stated epistemic limit.",
+      "line_end": 1285,
+      "line_start": 1182,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The page contains a plot whose extraction preserves only axes/caption and formulas with layout loss; conceptual claims are prose-supported, while the moment formula and graphical data require PDF/scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a dictionary from zero statistics to Hermitian eigenvalues, uses matrix size near log T to predict all zeta moment constants, validates it against prior analysis and computation, and explicitly limits the inference because no general proof of the dictionary exists.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random matrices generate moment conjectures but do not certify them",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u029.txt",
+      "unit_bytes": 4955,
+      "unit_id": "moree2018_computational_history_u029",
+      "unit_sha256": "1b22dbd1a5470181a79a97c22ecc651f22aeb08cda198073a78a2d8404c0a2cc",
+      "unit_type": "cross-domain-dictionary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u029.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1174,
+          "line_end": 1181,
+          "text": "               |{1 ≤ i < j ≤ M : γ j − γ i ∈ [α, β)}| ∼       1−                 dt.\n            M                                              α           πt\nThe integrand here is small when t is close to zero, suggesting that the non-trivial zeros\nrepel each other. Montgomery proved a smoothened version of his conjecture and used it\nto show that on the RH more than two thirds of the non-trivial zeros are simple.\n  Odlyzko numerically tested both this conjecture and the RH, beginning in the late 1980s.\nIn the 1990s this led to monumental computations where billions of zeros were computed\nhigh up the critical strip. For a graphical demonstration of the computations, see Figure 1.\n",
+          "sha256": "89508619c4a461d203a0d9e0499fb8b4ee358f6f7da8f6613be1b69312b65607"
+        },
+        "after": {
+          "line_start": 1286,
+          "line_end": 1293,
+          "text": "\n                                   10. Words of warning\n  We hope that we have whetted the appetite of the reader to do computations in analytic\nnumber theory him or herself. A word of warning is, however, not amiss. Asymptotic esti-\nmates in analytic number theory often involve repeated logarithms. These are very difficult\nto detect by numerical computation. Thus a function that grows, e.g., like log log log x,\nlooks on a computer like a bounded function. For this reason it is highly dangerous to\nmake conjectures based on numerics alone (e.g., the Mertens conjecture), without some\n",
+          "sha256": "f3efd4766d14e0bbc65f364a2754348713571f9587ecbd027674b5cc2c3721bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Complex analytic transfer, zeta families, pair correlation, and RMT",
+            "line_end": 1286,
+            "line_start": 1068,
+            "mathematical_role": "Abstracts Riemann's analytic template, transfers it to L- and zeta-functions, studies zero-spacing statistics, and uses random matrices as a conjecture-generating dictionary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1285,
+          "line_start": 1182,
+          "title": "Random matrices generate moment conjectures but do not certify them",
+          "unit_id": "moree2018_computational_history_u029",
+          "unit_type": "cross-domain-dictionary",
+          "why_material": "Builds a dictionary from zero statistics to Hermitian eigenvalues, uses matrix size near log T to predict all zeta moment constants, validates it against prior analysis and computation, and explicitly limits the inference because no general proof of the dictionary exists."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the physical origin, moment example, extracted pair-correlation figure and caption, Keating-Snaith prediction, function-field evidence, and the stated epistemic limit.",
+          "representation_dependency": "The page contains a plot whose extraction preserves only axes/caption and formulas with layout loss; conceptual claims are prose-supported, while the moment formula and graphical data require PDF/scan verification.",
+          "unit_id": "moree2018_computational_history_u029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1181,
+            "line_start": 1152,
+            "title": "Rescaled zero spacings reveal pair correlation and repulsion",
+            "unit_id": "moree2018_computational_history_u028",
+            "unit_type": "statistical-reframing",
+            "why_material": "Moves beyond locating zeros to their relationships, normalizes changing density to unit mean spacing, formulates pair correlation, and connects a small near-zero density to repulsion and simplicity."
+          },
+          {
+            "line_end": 1294,
+            "line_start": 1287,
+            "title": "Slow iterated logarithms defeat finite numerical intuition",
+            "unit_id": "moree2018_computational_history_u030",
+            "unit_type": "methodological-warning",
+            "why_material": "Identifies a concrete failure mode of computational conjecture formation: extremely slow unbounded growth can look bounded on every accessible range, so numerics require theoretical and heuristic support."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Pair correlation and random-matrix analogies organize predictions about simplicity, repulsion, and moments and are checked against high-zero computations, but agreement remains conjectural evidence unless independently proved.",
+            "limit": "The source does not justify the random-matrix dictionary in general and explicitly warns that it may fail outside tested regimes.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u014",
+              "moree2018_computational_history_u028",
+              "moree2018_computational_history_u029"
+            ],
+            "title": "Statistical zero models generate testable mathematics without becoming proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1252,
+              "line_start": 1208,
+              "reason": "Page furniture and a plot whose axes and caption survive but whose visual evidence is not fully represented in text extraction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Mertens conjecture is given as the source-specific cautionary example.",
+      "line_end": 1294,
+      "line_start": 1287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Pure prose with a simple iterated-log example; no material representation dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies a concrete failure mode of computational conjecture formation: extremely slow unbounded growth can look bounded on every accessible range, so numerics require theoretical and heuristic support.",
+      "source_id": "moree2018_computational_history",
+      "source_normalized_sha256": "a04384d8af5ddcd4896c561b080bd3e8227cc475f04b1012a282134440fefca7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Slow iterated logarithms defeat finite numerical intuition",
+      "unit_artifact_relpath": "depth/units/moree2018_computational_history_u030.txt",
+      "unit_bytes": 670,
+      "unit_id": "moree2018_computational_history_u030",
+      "unit_sha256": "2250e28541705230b9a10543d7e778303fcab7b255d6a39873f89036142454c6",
+      "unit_type": "methodological-warning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/moree2018_computational_history_u030.txt",
+      "source": {
+        "source_id": "moree2018_computational_history",
+        "title": "A Computational History of Prime Numbers and Riemann Zeros",
+        "authors": [
+          "Pieter Moree",
+          "Izabela Petrykiewicz",
+          "Alisa Sedunova"
+        ],
+        "year": 2018,
+        "source_type": "historical-computational-survey",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "historical-foundational",
+          "zeros",
+          "prime-counting"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1279,
+          "line_end": 1286,
+          "text": "similarities with the number field setting, but often are easier to deal with. E.g., for them\nthe Riemann Hypothesis is proved! In this setting Katz and Sarnak actually managed to\nprove various important results suggested by the RMT dictionary (published in their book\n[41] and surveyed in [42]).\n   The quest for an explanation of the RMT connection is ongoing and has led to ac-\ntive research at the intersection of number theory, mathematical physics, probability and\nstatistics.\n\n",
+          "sha256": "7d8a9729b8cf074f35b10b9e5e7c9aaebd263ea962b26facb70307fc72e3f68d"
+        },
+        "after": {
+          "line_start": 1295,
+          "line_end": 1302,
+          "text": "\n                                    11. Further reading\n  Nice popular introductions to prime number theory are Sabbagh [66] and du Sautoy [19].\nHalfway between a popular and more mathematical treatment is an interesting collection of\nprime number records and results modelled after the Guiness book of records [59]. For more\nmathematical introductions see, e.g., [10, 15, 21, 37, 56]. In the book of Edwards64 there is\na detailed explanation of the method used by Gram, Backlund and Hutchinson to compute\n  64Warning: Edwards writes Γ(s + 1) instead of Γ(s).\n",
+          "sha256": "13044dfe6c45df729a7a76347efdbb90636afb1fcf9a645e90df9af5dbb070da"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_758fc847394f54466e32928e46483bdb46408b154f44b1e2735c1eda1100a8f0",
+        "dossier_sha256": "1a3fb8bda32792fd71b2534705716a398d4715503a433cd80d5e354e6cb1cb90",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Warnings, reading guide, and acknowledgements",
+            "line_end": 1327,
+            "line_start": 1287,
+            "mathematical_role": "States the source's methodological warning about slow asymptotics and identifies only non-substantive navigation and acknowledgements thereafter."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1294,
+          "line_start": 1287,
+          "title": "Slow iterated logarithms defeat finite numerical intuition",
+          "unit_id": "moree2018_computational_history_u030",
+          "unit_type": "methodological-warning",
+          "why_material": "Identifies a concrete failure mode of computational conjecture formation: extremely slow unbounded growth can look bounded on every accessible range, so numerics require theoretical and heuristic support."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Mertens conjecture is given as the source-specific cautionary example.",
+          "representation_dependency": "Pure prose with a simple iterated-log example; no material representation dependency.",
+          "unit_id": "moree2018_computational_history_u030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1285,
+            "line_start": 1182,
+            "title": "Random matrices generate moment conjectures but do not certify them",
+            "unit_id": "moree2018_computational_history_u029",
+            "unit_type": "cross-domain-dictionary",
+            "why_material": "Builds a dictionary from zero statistics to Hermitian eigenvalues, uses matrix size near log T to predict all zeta moment constants, validates it against prior analysis and computation, and explicitly limits the inference because no general proof of the dictionary exists."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The pi-versus-Li and Mertens episodes show that persistent finite numerical behavior is not a reliable asymptotic law; explicit formulas and phase-alignment methods can turn zero data into counterexamples, while slow growth explains why naive searches mislead.",
+            "limit": "The synthesis diagnoses a methodology of falsification, not a general theorem that every empirical inequality eventually fails.",
+            "parent_local_unit_ids": [
+              "moree2018_computational_history_u021",
+              "moree2018_computational_history_u022",
+              "moree2018_computational_history_u023",
+              "moree2018_computational_history_u030"
+            ],
+            "title": "Computation can expose false extrapolation from vast finite ranges"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "fbc5a36ea6af64e42602aad15c3edcf9d33827a108608d25f488e3d9609a641f"
+}

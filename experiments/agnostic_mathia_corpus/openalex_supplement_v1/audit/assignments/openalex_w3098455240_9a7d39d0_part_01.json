@@ -1,0 +1,307 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_barcode_classification_caveat": {
+      "boundary_or_failure": "The interval classification relies on field coefficients and compatible bases. A generator-level elder-rule story is not well-defined when distinct classes are born at the same stage, because the ordering of equally old classes supplies no canonical survivor.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_2013cdce5aea28c0eeb45f29e65041d3140985f9dd003a1c98b9c98297199e8a",
+        "agnostic_oa_critic_4dc43ab123ddc19d160d5f278b53c47a0b893540fcb78857796d9617f5fd65aa"
+      ],
+      "interpretation": "The barcode is an invariant compression of the persistence system, whereas a story that assigns enduring identities to particular generators can depend on coordinate choices. The simultaneous-birth example exposes the distinction: a unique interval collection need not provide a unique genealogy of named classes, so classification should not be replaced by an intuitive but noncanonical lineage narrative.",
+      "nonparaphrase_operation": "Compress a system of objects and maps into its classification-level components, then test any elementwise narrative for symmetry-breaking choices; when tied elements have no canonical precedence, retain the invariant multiset and refuse to invent an individual survivor.",
+      "quality_reason": "The candidate accurately separates the unique interval collection supplied by compatible bases over a field from the non-well-defined elder-rule choice when two classes are born simultaneously.",
+      "source_support": "The artifact attributes to the Fundamental Theorem of Persistent Homology a choice of compatible bases yielding a well-defined unique collection of half-open intervals, and says this relies on field coefficients. It defines lifetimes in those bases and then rejects the elder rule because two classes born simultaneously cannot be assigned a well-defined survivor when they merge.",
+      "uncertainty": "The classification theorem is cited rather than proved in the artifact. The normalized inverse-image notation is imperfect, but the prose-level distinction between compatible-basis lifetimes and the simultaneous-birth failure of the elder rule is explicit.",
+      "unit_id": "agnostic_oa_barcode_classification_caveat"
+    },
+    "agnostic_oa_diagram_comparison_and_stability": {
+      "boundary_or_failure": "Comparison depends on a chosen ground metric, matching rule, and distance parameter, while feature-space approaches require an additional mapping whose faithfulness is not established here. The stability statement holds only under favorable conditions and suitable input distances, neither of which this artifact spells out.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_04d452f894ac5b3f9d9ed613a369b180f3cf39df9e4be8751f810ac0cb9006fc",
+        "agnostic_oa_critic_40f907310de5838a3eee27e95c583f7d8180407c4c253d4dff00478395c955f1"
+      ],
+      "interpretation": "A topological summary does not become statistically comparable by classification alone; one must add geometry or coordinates to its output space. Treating diagrams as metric-space points preserves direct matching semantics, whereas mapping them into analysis-friendly spaces changes the interface to standard statistics. Stability is a separate bridge certifying that input perturbations remain controlled after this representation pipeline.",
+      "nonparaphrase_operation": "After constructing an invariant, explicitly choose either a comparison geometry on invariant values or a feature map into an analyzable space; then audit what the choice preserves and establish a separate perturbation bound linking the input metric to the output metric.",
+      "quality_reason": "The candidate accurately distinguishes matching-based geometry on persistence diagrams from mappings into statistically convenient spaces and correctly treats stability as a separate input-to-output perturbation guarantee.",
+      "source_support": "The artifact motivates comparison with null models and averaging across realizations, defines persistence diagrams with diagonal points of infinite multiplicity to permit bijective matching, and defines a family of matching-based distances. It separately surveys mappings to statistical or machine-learning spaces and cites a stability theorem relating suitable filtered-complex distances to bottleneck distance.",
+      "uncertainty": "This is a literature survey and says the statistical theory and stability area are still active. It does not establish that any listed metric or feature representation is universally preferable, nor does it state the favorable hypotheses needed for the cited Lipschitz result.",
+      "unit_id": "agnostic_oa_diagram_comparison_and_stability"
+    },
+    "agnostic_oa_filtered_functorial_persistence": {
+      "boundary_or_failure": "The construction assumes a finite, totally ordered filtration by inclusions and homology over a field. It does not establish recovery of an underlying space or robustness to perturbations, and a single-scale homology snapshot cannot recover the cross-stage maps that persistence deliberately retains.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_85a5250ecdcd5a4678c227835d4eaec48b5c51654069d10b4f1f9cc6f00ff7be",
+        "agnostic_oa_critic_582b437c41e9176533f7153d61f4c47f61a63257cd02aa11d1264a683ecfea03",
+        "agnostic_oa_revision_12036153a1e3bc873c3128027764b92dc7cb25ecc2b2a3cc9917ff0c28e68b17"
+      ],
+      "interpretation": "Persistent homology is best understood here as coherence across a finite filtration, not as a collection of unrelated homology computations. For nested subcomplexes, inclusion induces linear maps on homology, and functorial composition makes transport through any intermediate stage agree with direct transport. Retaining both the homology spaces and these maps records how structure persists or disappears across stages while avoiding commitment to one privileged scale.",
+      "nonparaphrase_operation": "Replace a single arbitrary scale snapshot by a finite ordered diagram of homology representations, and retain the inclusion-induced morphisms with their composition law so that transport through intermediate stages agrees with direct transport across the finite ordered parameter.",
+      "quality_reason": "Accepted after the bounded revision: the interpretation preserves the concrete filtration, induced-map, and composition mechanism, performs the reusable move from one representation to a compatible family, and removes the unsupported claim that the finite diagram establishes continuity.",
+      "source_support": "The source says that increasing the parameter adds simplices, defines a filtered complex as nested subcomplexes, applies homology at each stage, and gives inclusion-induced linear maps satisfying f_{k,j} composed with f_{i,k} equals f_{i,j}. It explicitly states that the vector spaces together with these maps are more informative than the homology of the individual subcomplexes alone.",
+      "uncertainty": "This expository unit presents topological recovery and robustness as goals rather than proving either. Damaged normalized scale glyphs make exact scale notation unsafe, so the interpretation relies only on the intact finite-filtration and functorial-composition statements.",
+      "unit_id": "agnostic_oa_filtered_functorial_persistence"
+    },
+    "agnostic_oa_invariant_preserving_reduction_vs_search": {
+      "boundary_or_failure": "Preservation is conditional: the matching-based deletion pairs simplices entering at the same filtration step, while the tidy-set method is explicitly not extendable to filtered complexes. Heuristic status means no guaranteed speedup or minimum-size result, not that every proposed deletion preserves the invariant.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_c2eedf110935eecafe82e7cdac939f6f9cce663dc8ae71ffec925feb517a02e1",
+        "agnostic_oa_critic_f5a2a384c4e9b347ef5897a90d117b074667d613be419f3efbd1a89263ab86c5"
+      ],
+      "interpretation": "The reduction problem separates into a semantic layer and a search layer. Eligibility conditions certify that particular local cancellations leave persistent homology unchanged; finding a globally optimal collection of such cancellations is a different, intractable optimization problem. A heuristic may therefore be sound in every accepted move yet incomplete or inefficient in discovering a small representation.",
+      "nonparaphrase_operation": "Factor simplification into two contracts: first certify a class of invariant-preserving local transformations, then search for a useful collection of certified moves. Attach correctness to admissibility and treat reduction amount, optimality, and runtime as separate empirical or optimization questions.",
+      "quality_reason": "The candidate accurately separates admissibility of same-filtration matched deletions, which preserves total persistent homology, from the NP-complete task of finding an optimal partial matching and the consequent use of heuristics.",
+      "source_support": "The artifact describes a filtration-adapted partial matching whose pairs occur at the same step and whose paired simplices may be removed without changing total persistent homology. It then states that optimal matching is NP-complete and heuristics are used, and separately notes that the tidy-set heuristic neither applies to filtered complexes nor guarantees a minimum output.",
+      "uncertainty": "All preservation and hardness statements are cited background in this excerpt, with no proofs or measured speedups. The separate claims about strong collapses and tidy sets have narrower domains, so they should not be generalized to arbitrary filtered-complex reductions.",
+      "unit_id": "agnostic_oa_invariant_preserving_reduction_vs_search"
+    },
+    "agnostic_oa_multiparameter_classification_obstruction": {
+      "boundary_or_failure": "The failure of the one-parameter classification does not mean multiparameter persistence contains no information or cannot be studied; the artifact explicitly says several extraction approaches remain active. Its claim is the loss of the stated Fundamental Theorem and generalized-interval normal form when more than one parameter varies.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_ac55d3c4739a3b520b3293ac7a37420de2373e76fe1e662ccf5400f65ef2710f",
+        "agnostic_oa_critic_0edd748e9f49f031f0c6425804e380677ffbd42fac31516958ca9dbbfd92870d"
+      ],
+      "interpretation": "Two kinds of generalization have different consequences. Reversing arrows or allowing broader maps changes the computational interface but still admits algorithms cited by the source; enlarging the indexing geometry to several independent directions removes the interval decomposition that made one-parameter persistence compressible as a barcode. The obstruction is therefore structural, arising from the order shape, rather than merely a missing implementation.",
+      "nonparaphrase_operation": "When extending a theory, vary one structural assumption at a time and test algorithmic computability separately from survival of the classification theorem. If the old normal form fails under a richer index geometry, replace claims of complete interval compression with explicitly partial summaries.",
+      "quality_reason": "The candidate faithfully separates computable generalizations of arrow direction or map type from the structural loss of the one-parameter interval classification when the indexing geometry has multiple independent parameters.",
+      "source_support": "The artifact cites a zigzag algorithm for diagrams with reversed inclusion arrows and a simplicial-map algorithm for non-inclusion maps. It then introduces multifiltered complexes and states that with more than one parameter the Fundamental Theorem of Persistent Homology no longer holds and there is no generalized interval, while alternative approaches remain under study.",
+      "uncertainty": "The algorithms and obstruction are cited rather than proved in this excerpt, and no replacement classification or completeness result is supplied. The displayed two-parameter diagram is visually degraded, so the interpretation relies only on the surrounding prose and does not reproduce its exact layout.",
+      "unit_id": "agnostic_oa_multiparameter_classification_obstruction"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_barcode_classification_caveat": "95c8ed5a7f9f149bff6d38948cf9b2bb977d8f2aa1d20a47413de3ef380fefef",
+    "agnostic_oa_diagram_comparison_and_stability": "e17275d77b94155a60ec82f1189b5426f3138357b9d5ddbdd3472ff382b5593b",
+    "agnostic_oa_filtered_functorial_persistence": "1015bdd2f966b2f120691e119f346bf99e633114e185844393bdb0ea95ca738f",
+    "agnostic_oa_invariant_preserving_reduction_vs_search": "22bbad98d4e8495a69df1c259e1ae1bef4f3891b77757346fbd68c9841defb96",
+    "agnostic_oa_multiparameter_classification_obstruction": "41b7a4dbf8c8e23d1efc0640a343e1f4e7acd0a932ff5872a0336474b863f8bc"
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "model_visible_packet_sha256": "440d772ae134f7e32dda57e1d099dcffba4284a9318674f4dfb3ff03a033b5ad",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w3098455240_9a7d39d0_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "stage": "audit",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_filtered_functorial_persistence.txt",
+      "artifact_bytes": 4274,
+      "artifact_relpath": "depth/units/agnostic_oa_filtered_functorial_persistence.txt",
+      "artifact_sha256": "fbaf1b8161887ceb612f1e9ed58d64933938c03415c5adca1f40af88e9cb3aeb",
+      "context_note": "This is expository synthesis, not a source-original theorem. The persistence-module terminology and its interval consequences are attributed to the established literature; the unit records the semantic mechanism only.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 579,
+      "line_start": 520,
+      "representation_dependency": "Moderate. The mechanism depends on treating the nested complexes and induced maps as one ordered diagram; exact normalized formulas and field notation should be checked against the PDF before symbolic reuse.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The source turns an arbitrary scale choice into a structured family: nested representations induce homology objects and composition-compatible maps, so information is tracked across all scales rather than read from one snapshot. This is a reusable move from parameterized representations to a functorial invariant.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "A filtration becomes a persistent invariant through compatible induced maps",
+      "unit_id": "agnostic_oa_filtered_functorial_persistence",
+      "unit_type": "conceptual_mechanism"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_barcode_classification_caveat.txt",
+      "artifact_bytes": 2233,
+      "artifact_relpath": "depth/units/agnostic_oa_barcode_classification_caveat.txt",
+      "artifact_sha256": "cffd3eed71c896c51dab45ce5d3f5480a7602ab559a0a61666396b2436b780ed",
+      "context_note": "The Fundamental Theorem of Persistent Homology is cited rather than proved here. The simultaneous-birth caveat is an expository warning and should not be presented as a new classification result.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 682,
+      "line_start": 657,
+      "representation_dependency": "High. Barcode intervals require a one-parameter total order, field coefficients, and compatible bases; normalized inequality and inverse-image glyphs are imperfect, so exact symbolic definitions need source verification.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "A compatible-basis classification compresses a system of vector spaces and maps into interval lifetimes, but the text also shows that an intuitive elder-rule narrative is not well-defined when classes are born simultaneously. The combination is useful for distinguishing invariant classification from basis-dependent stories about individual generators.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Compatible bases compress persistence into intervals, with a boundary on birth-death narratives",
+      "unit_id": "agnostic_oa_barcode_classification_caveat",
+      "unit_type": "classification_and_caveat"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_invariant_preserving_reduction_vs_search.txt",
+      "artifact_bytes": 2299,
+      "artifact_relpath": "depth/units/agnostic_oa_invariant_preserving_reduction_vs_search.txt",
+      "artifact_sha256": "bea323301a885f6fbddf0cee3815d0667d376698e5df4ffb01ef1ae3e2cdda62",
+      "context_note": "The preservation results, NP-completeness statement, and named reduction methods are all cited background. The source does not prove speedup or optimality for a particular heuristic.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_complex_representation_tradeoff",
+            "agnostic_oa_invariant_preserving_reduction_vs_search",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces preservation/obstruction reasoning: representations and reductions are useful only under stated topological guarantees, and changing indexing geometry creates a genuine classification obstruction. No new family or geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 992,
+      "line_start": 963,
+      "representation_dependency": "Moderate. Preservation depends on filtration-compatible matchings or the stated collapse class; tidy-set and strong-collapse claims must not be transferred to arbitrary filtrations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The reduction step has two logically distinct claims: permitted same-filtration collapses preserve persistent homology, whereas finding an optimal or practically small reduction can be intractable and is therefore heuristic. This cleanly separates semantic correctness of a transformation from an unguaranteed search strategy for efficiency.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Separate preservation guarantees from heuristic search for a useful reduction",
+      "unit_id": "agnostic_oa_invariant_preserving_reduction_vs_search",
+      "unit_type": "algorithmic_guarantee_boundary"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_diagram_comparison_and_stability.txt",
+      "artifact_bytes": 6202,
+      "artifact_relpath": "depth/units/agnostic_oa_diagram_comparison_and_stability.txt",
+      "artifact_sha256": "87f4f9d5e8d3d10d752b434f4ba7638cd854383c9a9abe344b0be439e6528e19",
+      "context_note": "This section is a literature survey. The distances, feature maps, and stability theorem are cited results, and the source does not establish that any one statistical representation is universally preferable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 1214,
+      "line_start": 1132,
+      "representation_dependency": "High. Diagram comparison depends on diagonal multiplicity, the ground metric and Wasserstein parameter; feature mappings can forget information, and the stability claim holds only under unstated favorable conditions in the cited theorem. Formula glyphs should be checked before exact use.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "The source distinguishes two ways to make barcode output comparable: regard equivalent persistence diagrams as points in a metric space and match them, or map diagrams into spaces suited to statistical operations. It then states the stability interface: under suitable hypotheses, perturbations of the filtered input are controlled by bottleneck distance at the output.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Equivalent summaries support comparison only after a metric or feature-space choice",
+      "unit_id": "agnostic_oa_diagram_comparison_and_stability",
+      "unit_type": "metric_representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_multiparameter_classification_obstruction.txt",
+      "artifact_bytes": 2227,
+      "artifact_relpath": "depth/units/agnostic_oa_multiparameter_classification_obstruction.txt",
+      "artifact_sha256": "a108230523710638495a0b5db4ebc400e1f81581ab9fc4633df76f17ec72ba93",
+      "context_note": "The zigzag and simplicial-map algorithms and the failure of the one-parameter Fundamental Theorem are cited background. This unit records the stated obstruction without claiming a complete classification of multiparameter persistence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_filtered_functorial_persistence",
+            "agnostic_oa_barcode_classification_caveat",
+            "agnostic_oa_diagram_comparison_and_stability",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the existing lens by showing a chain from a functorial multiscale invariant to interval classification and equivalent summaries, together with explicit hypotheses and a multiparameter boundary. This is source-level reinforcement only; novelty against the frozen corpus remains unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_complex_representation_tradeoff",
+            "agnostic_oa_invariant_preserving_reduction_vs_search",
+            "agnostic_oa_multiparameter_classification_obstruction"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces preservation/obstruction reasoning: representations and reductions are useful only under stated topological guarantees, and changing indexing geometry creates a genuine classification obstruction. No new family or geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w3098455240",
+      "line_end": 1253,
+      "line_start": 1215,
+      "representation_dependency": "High. The conclusion depends on the diagram category and partial-order geometry; the normalized two-parameter diagram is visually damaged, so only the surrounding prose is reliable evidence.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w3098455240 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, or other sources were used."
+      },
+      "selection_reason": "Zigzag diagrams remain computable when arrows reverse, but varying more than one independent parameter removes the one-dimensional interval decomposition on which barcode compression relies. The source thereby identifies indexing order, not merely algorithm choice, as a structural boundary of the representation.",
+      "source_id": "openalex_w3098455240",
+      "source_normalized_sha256": "9c33f5a764914c98a92fcab7d5a90c4731ecec6d26b77ad4c5a07dc5198d3451",
+      "title": "Changing the indexing geometry breaks interval classification",
+      "unit_id": "agnostic_oa_multiparameter_classification_obstruction",
+      "unit_type": "obstruction"
+    }
+  ]
+}

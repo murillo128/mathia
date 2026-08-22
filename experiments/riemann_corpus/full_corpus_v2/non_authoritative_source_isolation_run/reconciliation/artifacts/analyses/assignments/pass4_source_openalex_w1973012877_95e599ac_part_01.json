@@ -1,0 +1,193 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1973012877_95e599ac_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1973012877",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes truncation and contour setup before the residues are regrouped.",
+      "line_end": 947,
+      "line_start": 783,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; exact Euler exponents and residue locations need verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the short Dirichlet polynomial, factors its coefficient square into zeta functions at every pairwise shift difference, and uses a Perron contour whose poles encode which shifts are within 1/log T.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The resonator norm turns shift geometry into clustered zeta poles",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u11.txt",
+      "unit_bytes": 8978,
+      "unit_id": "openalex_w1973012877_v2_u11",
+      "unit_sha256": "0a43894adff568b64f66b851f0d2f3cc48ad4f4a4d6aa36969fcc487197c05d7",
+      "unit_type": "Euler-product pole encoding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 775,
+          "line_end": 782,
+          "text": "When V ≤ W 2 , choose k = ⌊ W1 ⌋, and when V > W 2 , choose k = ⌊10V ⌋. Hence\n                                     \u0012     \u0013\n                             V          V2\n            meas(S1 ) ≪ T √ exp − 1 + T exp(−4V log V ).\n                              W         W\n                                                                                                  \u0003\n   This concludes the proof of Theorem 3.1.\n\n",
+          "sha256": "105f6ae536b64305bb21aa044ba762346013985913ef236e26f6ef41afc22630"
+        },
+        "after": {
+          "line_start": 948,
+          "line_end": 955,
+          "text": "   Now to prove (15), we need to show that\n                                 xs      X                         xs\n(17)                ress=0 H(s) +             ress=i(αi −αj ) H(s)\n                                  s                                s\n                                               (i,j)∈W\n                                             Y                  1               \u00012ki kj\n                               k12 +...+km\n                                         2\n",
+          "sha256": "66c60502864b88a2f8d8384097565f900567f0186e16d636a4cb26b6a67468d8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8e54a0cddbb4f8e1ffdd9a4ac99101f781701d35454a8fda5b88854ded4f1cb8",
+        "dossier_sha256": "9e77be9b7d3e2dbfe4c3e9db1e2d36fca2b1ab164b0961cf19a5d568847b1331",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Lower bound",
+            "line_end": 1442,
+            "line_start": 783,
+            "mathematical_role": "Factors the short-polynomial second moment into shifted zeta poles, groups close and far shifts, approximates the zeta product, and isolates the diagonal lower bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 947,
+          "line_start": 783,
+          "title": "The resonator norm turns shift geometry into clustered zeta poles",
+          "unit_id": "openalex_w1973012877_v2_u11",
+          "unit_type": "Euler-product pole encoding",
+          "why_material": "Expands the short Dirichlet polynomial, factors its coefficient square into zeta functions at every pairwise shift difference, and uses a Perron contour whose poles encode which shifts are within 1/log T."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes truncation and contour setup before the residues are regrouped.",
+          "representation_dependency": "Formula-heavy; exact Euler exponents and residue locations need verification.",
+          "unit_id": "openalex_w1973012877_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 781,
+            "line_start": 723,
+            "title": "Prime-polynomial moments yield Gaussian then exponential tails",
+            "unit_id": "openalex_w1973012877_v2_u10",
+            "unit_type": "high-moment tail bound",
+            "why_material": "Applies a mean-value lemma with optimized integer moments separately to the short and long blocks, obtaining the tail bounds needed by the level-set integral."
+          },
+          {
+            "line_end": 1251,
+            "line_start": 948,
+            "title": "Enclose nearby poles together and suppress the far clusters",
+            "unit_id": "openalex_w1973012877_v2_u12",
+            "unit_type": "clustered-residue mechanism",
+            "why_material": "Partitions shift pairs into microscopic and nonmicroscopic sets, replaces separate close residues by one small contour, and proves its main contribution has the product scale dictated by close and far differences."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The threshold 1/log T is simultaneously eigenangle resolution in the unitary model, the cutoff in prime-sum covariance, and the distance at which shifted zeta poles merge inside the lower-bound contour.",
+            "limit": "The matching orders do not prove the full conjectured asymptotic constants for zeta.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_v2_u01",
+              "openalex_w1973012877_v2_u05",
+              "openalex_w1973012877_v2_u06",
+              "openalex_w1973012877_v2_u09",
+              "openalex_w1973012877_v2_u11",
+              "openalex_w1973012877_v2_u12"
+            ],
+            "title": "One separation scale appears in three representations"
+          },
+          {
+            "claim": "The upper bound replaces moments by tail probabilities of log zeta, whereas the lower bound replaces zeta powers by correlation with a short polynomial; both interfaces expose the same pairwise covariance product.",
+            "limit": "The upper route assumes RH and permits real exponents; the lower route is unconditional but uses positive integers and additional shift restrictions.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_v2_u07",
+              "openalex_w1973012877_v2_u08",
+              "openalex_w1973012877_v2_u10",
+              "openalex_w1973012877_v2_u11",
+              "openalex_w1973012877_v2_u13",
+              "openalex_w1973012877_v2_u14"
+            ],
+            "title": "Upper and lower bounds use dual distributional interfaces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1973012877_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w1973012877_v2_u11",
+          "spontaneous_reading": "The squared norm of the resonator is encoded by a multiplicative Dirichlet series whose Euler product has zeta poles at every pairwise shift difference; a Perron contour turns geometric clustering of shifts into clustered residues."
+        },
+        "directed": {
+          "unit_id": "openalex_w1973012877_v2_u11",
+          "source_grounded_mathematics": "The coefficient square D(j) is multiplicative, and its Dirichlet series factors into zeta functions at zero and at plus or minus pairwise shift differences times an analytic Euler product. A truncated Perron integral is moved through the corresponding poles to evaluate the resonator norm.",
+          "conceptual_reading": "An arithmetic norm is compressed into singularity data. Nearness among shifts becomes nearness among poles, making correlation geometry accessible to contour methods.",
+          "representation_or_bridge": "Euler factorization bridges coefficient convolution to a zeta-product; the Perron kernel bridges the partial sum to residues; a close-shift graph later organizes which poles should be enclosed together.",
+          "boundary_or_failure": "The contour analysis is formula-heavy, and the excerpt begins a proof whose suppression of nonleading residues continues in the next unit.",
+          "uncertainty": "High confidence in the pole-encoding architecture; exact Euler exponents and truncation errors should be checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1973012877_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The unit defines a multiplicative coefficient norm, factors its Dirichlet series into zeta factors at pairwise shift differences and an analytic Euler product, and moves a truncated Perron contour through the resulting poles."
+        ],
+        "inference": [
+          "Describing the norm as compressed into singularity data and shift nearness as pole nearness is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The 'close-shift graph later organizes which poles should be enclosed together' is imported from the appendix/next analysis, not present in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Arithmetic norm compressed into singularity data' is useful only if the concrete D(j), H(s), and zeta factorization remain visible."
+        ],
+        "context_or_ocr_risk": [
+          "The unit ends before proving the negligible-residue claim and exact truncation/residue estimates remain formula-heavy."
+        ],
+        "missed_mechanism": [
+          "The distinction between the zero residue, microscopic shifted residues, and far residues is only set up here, not completed."
+        ],
+        "revision_instructions": [
+          "Remove the graph reference; end at the Perron pole-encoding setup and explicitly defer clustered-residue suppression to later units."
+        ]
+      }
+    }
+  ]
+}

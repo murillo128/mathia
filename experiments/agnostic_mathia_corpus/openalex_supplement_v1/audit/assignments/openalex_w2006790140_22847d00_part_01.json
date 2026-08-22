@@ -1,0 +1,871 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_compact_skeleton_completion": {
+      "boundary_or_failure": "The result requires a locally noetherian Grothendieck category and the injective-complex presentation. The source presents completion as an analogy: it does not prove that every triangulated completion has this form, and it explicitly leaves open how far the bounded derived category uniquely determines the homotopy category.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_93247ac81359c64e5a4699ab3eb18f79239cd3da76992a51310ef3525cd9f3bc",
+        "agnostic_oa_critic_306306b87d05dc027909712f76ad0220b3277cfeb2baf969433325e38c58adf7"
+      ],
+      "interpretation": "The source fact is that injective resolutions of noetherian objects are compact and detect every nonzero object of K(Inj A); consequently the compact subcategory is equivalent to Db(noeth A), while triangles and arbitrary coproducts generate the ambient category from that bounded skeleton. A useful inference is that a small semantic core can control a much larger representation through a closure operation, even though uniqueness of that completion is not established.",
+      "nonparaphrase_operation": "Given a large category and a proposed bounded skeleton, first test that the proposed objects are compact and jointly detect zero; then identify their thick closure and reconstruct the ambient category by the allowed infinitary closure operations. Keep the reconstruction claim separate from any claim that the completion is unique.",
+      "quality_reason": "The candidate accurately connects compactness of injective resolutions, joint detection of nonzero objects, the compact-subcategory equivalence, and generation of the ambient category by triangles and coproducts.",
+      "source_support": "Lemma 2.1 transfers maps from an object to its injective resolution and proves compactness for noetherian objects; Lemma 2.2 supplies detection of nonzero complexes; Proposition 2.3 identifies Kc(Inj A) with Db(noeth A). The following three-bullet comparison states closure under triangles and coproducts as the completion mechanism.",
+      "uncertainty": "The exact scope of uniqueness is unresolved in the passage, and the completion analogy should not be promoted to an equivalence with unrelated completion notions.",
+      "unit_id": "agnostic_oa_compact_skeleton_completion"
+    },
+    "agnostic_oa_complete_resolution_universal_approximation": {
+      "boundary_or_failure": "The construction requires a locally noetherian Grothendieck category with compactly generated derived category. Total acyclicity tests Hom both from and into injectives, and the resulting complete complex is universal via adjunction rather than a uniquely fixed componentwise resolution.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_72d6057ecd7daa001f5b3ed03d416b6938a3c78a81707e479e51e6bbbbc9fcaf",
+        "agnostic_oa_critic_b66834dd29edcfa10eaf4ee1119a1e9446557ab77ad62674e268801bbe719112"
+      ],
+      "interpretation": "Totally acyclic injective complexes and Gorenstein-injective objects are equivalent after taking a cycle. Orthogonality supplies a left adjoint to the inclusion of totally acyclic complexes; applying it to an injective resolution produces a complete resolution whose zeroth cycle is a universal Gorenstein-injective approximation in the stable category.",
+      "nonparaphrase_operation": "Choose the desired approximation class as an orthogonal subcategory, obtain a reflector onto it, apply that reflector to a conventional resolution, and pass through a representation bridge such as a cycle functor. Prove universality by transporting Hom-bijections across the bridge rather than by choosing a preferred resolution algorithm.",
+      "quality_reason": "The candidate correctly distinguishes total acyclicity, the Z-zero equivalence with the stable Gorenstein-injective category, the left adjoint G-lambda, and the induced universal approximation T.",
+      "source_support": "Proposition 7.2 proves Ktac(Inj A) ≃ GInj A through Z⁰. Lemma 7.3 constructs the left adjoint Gλ using orthogonality in the compactly generated acyclic category. Theorem 7.4 defines T A = Z⁰(Gλ iA) and proves the stated stable-Hom bijection.",
+      "uncertainty": "Stable-Hom decorations are partially degraded in extraction, but the adjunction, cycle construction, and universal mapping statement are explicit in prose and proof.",
+      "unit_id": "agnostic_oa_complete_resolution_universal_approximation"
+    },
+    "agnostic_oa_derived_functor_lift_obstruction": {
+      "boundary_or_failure": "The lift is constructed for additive functors between locally noetherian Grothendieck categories with compactly generated derived categories. Compatibility is not automatic: the source gives an explicit functor and acyclic complex for which the square fails.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_8b3129f5579d1c24e07b163b58a9707bf35080772980f34550bb33a6e697644a",
+        "agnostic_oa_critic_6ce11482414d338a51f93da2331d1b74205665090650b099399451107c512368"
+      ],
+      "interpretation": "The extended functor acts before localization, while the ordinary derived functor acts after localization. Their natural comparison is an isomorphism exactly when the original functor preserves the kernel of localization—here, acyclic complexes of injectives. This isolates failure to commute with localization as a kernel-preservation obstruction.",
+      "nonparaphrase_operation": "For any proposed operation across a quotient, lift it to the ambient presentations and test it on the entire kernel of the quotient. If every kernel object remains in the target kernel, descend the lift and identify the comparison map; if one witness escapes, use it to certify noncommutation.",
+      "quality_reason": "The candidate accurately isolates compatibility with localization as preservation of acyclic injective complexes and correctly uses the explicit periodic complex as a counterexample witness.",
+      "source_support": "Theorem 6.1 constructs the extended derived functor and its adjoints under coproduct hypotheses. Lemma 6.3 constructs Q∘R̂F → RF∘Q and proves it is invertible exactly when F sends every acyclic injective complex to an acyclic complex. Example 6.4 supplies a concrete counterexample.",
+      "uncertainty": "The exact decorations of the counterexample diagram are extraction-damaged, so only the clearly stated noncommutation and acyclic-witness mechanism are retained.",
+      "unit_id": "agnostic_oa_derived_functor_lift_obstruction"
+    },
+    "agnostic_oa_functorial_stabilization_transfer": {
+      "boundary_or_failure": "The main transfer theorem assumes an exact functor on noetherian objects and compact generation of both derived categories; the stronger compact-level diagram also assumes Rf∗ preserves coproducts. Later suggestions of broader generalization are explicitly remarks, not proved extensions.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_6e38bc24b746f7e94941db9dfc4521447864e960fb47541ef9b2157b05dc4b89",
+        "agnostic_oa_critic_d0d4b3703137f1b01e35fda5a8452fe2a9ff10ca0cde263a2bdcf3549921d339"
+      ],
+      "interpretation": "Adjunction transports an exact bounded functor through injective, derived, and stable presentations, while commutative squares certify that these transported actions agree. Under coproduct preservation, compactness is preserved and the stable action on compact objects is determined, up to the direct-factor qualification, by the bounded functor.",
+      "nonparaphrase_operation": "To transfer an operation across several presentations, construct one adjacent lift by taking the appropriate adjoint, prove each neighboring square commutes, and propagate coherence by uniqueness of adjoints. On compactly generated levels, verify compactness preservation before claiming that the smallest presentation determines the stabilized action.",
+      "quality_reason": "The candidate faithfully captures transport of an exact functor through injective, derived, and stable presentations, including the extra coproduct hypothesis for the compact-level diagram and determination only up to direct factors.",
+      "source_support": "Theorem 6.6 constructs L̂f∗ and Sf∗, proves the principal compatibility diagram, and under coproduct preservation gives the compact quotient diagram. Its proof derives one square by taking left adjoints, another from the canonical localization, and the stable square from localization sequences; Remark 6.7 labels possible generalizations.",
+      "uncertainty": "Large diagram arrows are visually degraded, so the interpretation follows the theorem’s prose and proof rather than assigning meaning to every extracted arrow glyph.",
+      "unit_id": "agnostic_oa_functorial_stabilization_transfer"
+    },
+    "agnostic_oa_kinjective_universal_replacement": {
+      "boundary_or_failure": "The representative is a K-injective complex with injective components, constructed in the locally noetherian Grothendieck setting. It is canonical through an adjunction and equivalence, not as a uniquely specified componentwise resolution; special cases can collapse the acyclic error, but that is not automatic.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_b4419172d550aaecd41f691469404378658bf04da0e3ff08d3a15b083bfd5bc2",
+        "agnostic_oa_critic_2c3619fbf65a8b206f99bc8b7db86fb3c377cf4a90ac237fe30059914ada6388"
+      ],
+      "interpretation": "The right adjoint to localization selects a representative iX that is orthogonal to all acyclic complexes. The triangle aX → X → iX isolates an acyclic error, after which quotient morphisms into Y become ordinary homotopy morphisms into iY. Thus a quotient computation is converted into a computation in the ambient category by choosing a universal target representative.",
+      "nonparaphrase_operation": "When morphisms are difficult because a category has been localized, replace the target by the right-adjoint image of its quotient class, prove that the replacement is orthogonal to the discarded kernel, and compute ambient morphisms into it. Track the cone as the precise information erased by localization.",
+      "quality_reason": "The candidate faithfully describes the right-adjoint representative of a derived object, its orthogonality to acyclic complexes, the acyclic-error triangle, and conversion of derived morphisms into homotopy morphisms with K-injective target.",
+      "source_support": "Corollary 3.9 constructs the left adjoint into K-injective complexes, the triangle with acyclic aX, the equivalence D(A) ≃ Kinj(A), and the formula HomD(A)(X,Y) ≃ HomK(A)(X,iY). Examples 3.10–3.11 state boundary behaviors rather than the general mechanism.",
+      "uncertainty": "The source does not choose a unique chain-level resolution on the nose; only the adjoint/equivalence class and its universal mapping behavior are controlled.",
+      "unit_id": "agnostic_oa_kinjective_universal_replacement"
+    },
+    "agnostic_oa_localization_adjoint_decomposition": {
+      "boundary_or_failure": "The categorical diagrams have flattened or degraded arrows, so the revision relies on the legible prose of Definition 3.1 and Lemma 3.2 and does not reconstruct arrow-level claims from glyph placement. The adjoint criteria also require the stated thickness, exactness, and compact-generation hypotheses.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_7dd80ea5eb154571aa5fb002385a9e43062ec13278d87c9ef94f243f984e9548",
+        "agnostic_oa_critic_cd394ed440dcc036fd97b3a954ad73d1de1fe46c5c5ad3f65c33fd612916da96",
+        "agnostic_oa_revision_df466abd08ada3f31472513b5871d6a09d1655df69e78f76d0a813f633b49f3d"
+      ],
+      "interpretation": "For a localization sequence, F embeds the kernel and G-rho embeds the quotient as the two orthogonal full subcategories of the middle category; F-rho and G provide the corresponding projections. The functorial triangle (F F-rho)X -> X -> (G-rho G)X -> Sigma(F F-rho X) therefore separates each object into its killed and retained components. This realizes the quotient inside the ambient category and gains a canonical decomposition, while the quotient projection forgets the kernel; proving that this picture exists remains an adjoint-existence problem.",
+      "nonparaphrase_operation": "Given a thick subcategory S of a triangulated category T, prove that either S -> T or T -> T/S has the required right adjoint, infer the other adjoint, and build the unit/counit triangle. Then verify that F and G-rho, rather than both right adjoints, are the fully faithful embeddings and use orthogonality to identify which component is discarded and which survives.",
+      "quality_reason": "Accepted after repairing the candidate's directional error: F, not F-rho, embeds the kernel, whereas G-rho embeds the quotient. The resulting kernel-projection-triangle procedure is concrete, source-grounded, and goes beyond paraphrase without depending on the damaged diagrams.",
+      "source_support": "Definition 3.1 states the right-adjoint identities and identifies the kernel of G with the image of F. Its listed consequences state that F and G-rho are fully faithful, their images are mutually orthogonal, G induces T/Im(F) equivalent to the quotient category, and every X has the displayed functorial triangle. Lemma 3.2 makes a localization by a thick S equivalent to existence of either right adjoint; Propositions 3.3 and 3.4 supply representability-based adjoint criteria under compact-generation assumptions.",
+      "uncertainty": "The prose fixes the universal roles and the triangle, but the extracted diagram typography is not reliable enough for literal reproduction. The isolated artifact announces the application to Kac(Inj A), K(Inj A), and D(A) but does not include the later proof of that application.",
+      "unit_id": "agnostic_oa_localization_adjoint_decomposition"
+    },
+    "agnostic_oa_minimal_contractible_decomposition": {
+      "boundary_or_failure": "The construction applies to complexes with injective components in an abelian category admitting injective envelopes. The null-homotopic complement is not claimed unique; only the homotopically minimal summand is canonical up to isomorphism.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_bad1b7ae6a27e12adb501ce54d4a6e1bad099bfea7aa134b9294641da4662649",
+        "agnostic_oa_critic_3b61e21ef2dedf895b8cf3b9264285ddb62d90c206ffe215628eed49bd4d1eca"
+      ],
+      "interpretation": "Homotopical minimality has three interchangeable readings: every homotopy equivalence endomorphism is already an isomorphism, no nonzero contractible direct factor remains, and each cycle inclusion is an injective envelope. Splitting off explicit contractible pieces produces a minimal-plus-null decomposition, and comparison through the original complex forces any two minimal cores to be isomorphic.",
+      "nonparaphrase_operation": "Normalize a homotopical representation by locating and splitting off contractible direct factors degree by degree. Certify the residue using an intrinsic local condition such as essential cycle inclusions, and compare two normalizations through their common homotopy type to prove uniqueness of the residue while leaving the discarded complement noncanonical.",
+      "quality_reason": "The candidate faithfully states all three minimality criteria, the construction and splitting of null-homotopic degreewise pieces, and the comparison argument that makes any two minimal cores isomorphic.",
+      "source_support": "Appendix B constructs the contractible complexes X(n) from complements to injective envelopes. Lemma B.1 proves the three minimality criteria equivalent. Proposition B.2 sums the contractible pieces, obtains the decomposition, and proves that the induced map between any two minimal summands is an isomorphism.",
+      "uncertainty": "Some direct-sum symbols are lost in extraction, but the prose clearly distinguishes existence of a contractible complement from uniqueness up to isomorphism of the minimal part.",
+      "unit_id": "agnostic_oa_minimal_contractible_decomposition"
+    },
+    "agnostic_oa_obstruction_vanishing_stabilization_equivalence": {
+      "boundary_or_failure": "The five-way characterization is proved for a locally noetherian Grothendieck category with compactly generated derived category. Ring and scheme consequences later in the passage require additional finiteness assumptions and do not extend the equivalence to arbitrary categories.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_9b2cc335c0599c621b86de5712edf31ff03f6ad402c97d1bee2a81afe440f343",
+        "agnostic_oa_critic_0f6b9ce10a657b9b89b981829eed0210eb64d82700f0d3c295a36053408f7290"
+      ],
+      "interpretation": "One structural regime can be recognized in five representations: Ext-orthogonality, total acyclicity of acyclic injective complexes, equality of Gorenstein-injective and infinite-cosyzygy classes, annihilation of injectives by stabilization, and equivalence of stable categories. The value is diagnostic interchangeability: failure in any representation obstructs the common property.",
+      "nonparaphrase_operation": "For a difficult property, construct a cycle of implications connecting an algebraic vanishing test, a complex-level exactness test, an object-class identity, a functor kernel condition, and a categorical equivalence. Select the representation with the cheapest witness, but carry its hypotheses back through the equivalence before concluding.",
+      "quality_reason": "The candidate faithfully preserves the five equivalent representations of the injective Gorenstein property and correctly treats them as interchangeable diagnostics under the theorem's hypotheses.",
+      "source_support": "Proposition 7.13 lists the five equivalent conditions and proves the first three from the Ext/Hom formula, links them to stabilization through the kernel of Iλ, and obtains the category equivalence via Proposition 7.2. Corollary 7.14 records the resulting stabilization behavior.",
+      "uncertainty": "Some Ext decorations are visually degraded, so the interpretation preserves the stated equivalence classes and proof bridge without reproducing fragile glyph-level formulas.",
+      "unit_id": "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+    },
+    "agnostic_oa_orthogonal_approximation_pair": {
+      "boundary_or_failure": "The complementary classes and adjoints are established in the stable category modulo injectives and under the compact-generation hypotheses of Theorem 7.12. The exact sequences use chosen representatives, whereas the universal approximation functors are canonical only up to isomorphism.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_a8fa45d824aeaae14549cb825cae2b77fadcb0b7df9c48541e81b9bfcf01bd79",
+        "agnostic_oa_critic_10e5cb187cc2dcca74795afe63eb63b9211e2747ccf083516403b431a6083a13"
+      ],
+      "interpretation": "Objects with vanishing Tate obstruction and Gorenstein-injective objects form complementary approximation classes. Every object admits exact sequences placing one class on either side of the other; the associated maps are respectively right and left universal, and their intersection consists exactly of injectives. Orthogonality thus produces both a decomposition and canonical approximation directions.",
+      "nonparaphrase_operation": "Define one class by vanishing against a target class, build paired exact sequences crossing the two classes, and prove factorization plus uniqueness modulo the negligible intersection. Use the intersection calculation to identify exactly when both approximations carry no residual obstruction.",
+      "quality_reason": "The candidate accurately describes the Tate-orthogonal class X, the Gorenstein-injective class Y, both approximation sequences, their right and left universal maps in the stable category, and the intersection X cap Y equal to injectives.",
+      "source_support": "Proposition 7.11 equates several Tate-vanishing and orthogonality conditions. Theorem 7.12 constructs the two exact sequences, proves the right and left adjoint properties of their maps, and shows X ∩ Y = Inj A by forcing the stable identity to factor through an injective.",
+      "uncertainty": "The source does not assert these class equalities or approximations in arbitrary abelian categories lacking the stated derived-category assumptions.",
+      "unit_id": "agnostic_oa_orthogonal_approximation_pair"
+    },
+    "agnostic_oa_recollement_from_compact_generation": {
+      "boundary_or_failure": "The upgrade requires D(A) to be compactly generated in addition to A being locally noetherian Grothendieck. The text warns that an analogous recollement in K(A) cannot be expected without severe restrictions, so one-sided localization alone is insufficient.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_a240b37340bda1526308395c8c0a1e3924185aec334bb59b9961a75712b55558",
+        "agnostic_oa_critic_e7d013154a4fdae9c6604225d37e3b1c09ec4a5d99dee2217221083dc3ad0ee6"
+      ],
+      "interpretation": "Compact generation lets an equivalence verified on compact generators extend through coproduct closure, producing the missing left adjoint to Q. Combining that colocalization with the existing localization yields recollement: the ambient homotopy category is controlled from both directions by its acyclic and derived pieces rather than merely admitting a quotient.",
+      "nonparaphrase_operation": "To promote a one-sided localization to two-sided gluing, isolate compact generators, prove the candidate functor is an equivalence on them, extend the equivalence to their localizing closure using coproduct preservation, and use the inverse to construct the missing adjoint. Only then infer recollement and its paired projection operations.",
+      "quality_reason": "The candidate accurately follows Theorem 4.2: identify the compact objects whose images remain compact, extend the compact equivalence through localizing closure, and use its inverse to construct the left adjoint to Q.",
+      "source_support": "Lemma 4.1 bounds compact objects of D(A); Theorem 4.2 builds a localizing subcategory from compact objects whose images remain compact, proves Q is an equivalence there, and constructs a left adjoint. Corollary 4.3 combines localization and colocalization into a recollement.",
+      "uncertainty": "The extracted large diagrams are not reliable for fine arrow orientation, but the theorem and proof clearly establish the adjoint and recollement under the stated compact-generation hypothesis.",
+      "unit_id": "agnostic_oa_recollement_from_compact_generation"
+    },
+    "agnostic_oa_stabilization_singularity_quotient": {
+      "boundary_or_failure": "The compact comparison is only up to direct factors: the functor from Db(noeth A)/Dc(A) is fully faithful, and each compact stable object is a direct factor of an object in its image. The generic span identifies the killed category as Dc(A), not as a perfect or regular subcategory.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_58c6b169b327e8b1bd5c935b6f33b9d780a18233f8a0bd8167717d083c156946",
+        "agnostic_oa_critic_802ca241a5e156e6564dcab450c26b346a8ad2b5c2db80ae5bc98799f32b2c51",
+        "agnostic_oa_revision_c6827092b0be87a7e9f5022bbea05ea62b3fb4fcd0d4e8fc174d8527bcd21827"
+      ],
+      "interpretation": "For a locally noetherian Grothendieck category A with compactly generated D(A), stabilization is the composite S = I-lambda Q-rho from D(A) to the acyclic injective category S(A): Q-rho chooses the injective-side representative and I-lambda projects it to the stable side. On compact objects, the retained residue is controlled by Db(noeth A)/Dc(A), but only after allowing direct factors. The construction therefore forgets the compact subcategory Dc(A) in this bounded compact comparison and gains an obstruction-bearing stable residue; exact equivalence without idempotent completion is not established.",
+      "nonparaphrase_operation": "To isolate the stable residue, form the localization D(A) -> K(Inj A) -> S(A), apply the adjoint composite I-lambda Q-rho, and on compact objects quotient Db(noeth A) by precisely Dc(A). Check separately whether the comparison is essentially surjective or whether targets occur only as direct factors, rather than replacing Dc(A) by an imported 'perfect' category.",
+      "quality_reason": "Accepted after replacing the unsupported generic 'compact/perfect' and 'regular' terminology with the source's exact Dc(A) subcategory and preserving the direct-factor qualification. The revised reading exposes what stabilization kills, what survives, and the unresolved idempotent-completion gap.",
+      "source_support": "Definition 5.1 defines S(A) using acyclic complexes of injectives and denotes its compact objects by Sc(A). The section defines S as I-lambda composed with Q-rho. Lemma 5.2 identifies Q-lambda and Q-rho on Dc(A); Proposition 5.3 gives the localization and compact comparison diagram. Corollary 5.4 states compact generation and proves that F: Db(noeth A)/Dc(A) -> Sc(A) is fully faithful with every object of Sc(A) a direct factor of an image.",
+      "uncertainty": "The main diagram has extraction damage, but the prose states the composite and the compact quotient result. 'Stable residue' is an interpretation of that quotient mechanism, not a claim that arbitrary objects admit literal subtraction of compact information.",
+      "unit_id": "agnostic_oa_stabilization_singularity_quotient"
+    },
+    "agnostic_oa_support_localization_singularity_invariance": {
+      "boundary_or_failure": "The geometric invariance result is for an open immersion into a separated noetherian scheme; the singular-locus corollaries also require finite Krull dimension. The bounded quotient equivalence remains qualified by direct factors, and removing an arbitrary closed region need not preserve the stable category.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_14d6607795f185fbd140d69be3da17576b1bc3fe257d07532413431ce940742e",
+        "agnostic_oa_critic_56fc53b1723e91c9395cb9f22add131c659e800e52dc7e83898586c94dec60de"
+      ],
+      "interpretation": "Open restriction decomposes a minimal injective complex into the part supported on the open set and the part supported on its complement. Restriction is therefore localization by the complement-supported kernel. If the removed region contains no singular points, that kernel contributes no stable obstruction, so both unbounded stable information and, up to direct factors, the bounded singular quotient are unchanged.",
+      "nonparaphrase_operation": "Partition an object by support, identify the subcategory killed by restriction, and express restriction as quotienting by that kernel. Then test whether all obstruction-bearing points lie in the retained region; only if the discarded support is obstruction-free infer invariance of the stabilized representation.",
+      "quality_reason": "The candidate accurately identifies restriction as localization by the complement-supported kernel and preserves the hypotheses of separated noetherian scheme, finite Krull dimension for the singular-locus corollaries, and direct factors for the bounded quotient.",
+      "source_support": "The split sequence for injectives yields triangle (6.5); Lemma 6.8 identifies vanishing under restriction with support in the complement; Proposition 6.9 gives quotient equivalences for K(Inj) and S; Corollaries 6.10–6.11 prove invariance when the open contains all singular points.",
+      "uncertainty": "Support is defined using homotopically minimal representatives in the passage; extrapolating the criterion to other support theories or weaker scheme hypotheses would require new evidence.",
+      "unit_id": "agnostic_oa_support_localization_singularity_invariance"
+    },
+    "agnostic_oa_tate_cohomology_via_stabilization": {
+      "boundary_or_failure": "This is injective Tate cohomology in the paper's setting, distinct from projective Tate cohomology. Several group and stable-Hom decorations are extraction-damaged, and U = G-lambda Q-rho lands in totally acyclic injective complexes; it must not be conflated with the stabilization functor S = I-lambda Q-rho without an additional hypothesis absent from this unit.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_acd9f2dda14368a0a38e2ba68c6b049738c4274d83aa6fc5ead01ddc03580d4e",
+        "agnostic_oa_critic_d899d1329a127564f0aea5a185fcf234178ffb22835ffc7a92d678deb6f7d25f",
+        "agnostic_oa_revision_6f0c9750f0d9db36aac92dcf0f25bd6b17eff746c73495aa3b6a4a97e214c437"
+      ],
+      "interpretation": "The source supplies two representation bridges for injective Tate cohomology. For A,B in the abelian category, the complete-injective-resolution cohomology is naturally represented by stable morphisms from A to shifts of T B. For derived X,Y, the invariant is Hom in K(A) from U X to shifts of U Y, where U = G-lambda Q-rho is the totally-acyclic complete-resolution functor. These forms replace repeated resolution calculations by functorial categorical objects, yielding exact triangles, long exact sequences, comparison maps, and vanishing tests, while recording the stable or totally acyclic contribution rather than all ordinary Ext information.",
+      "nonparaphrase_operation": "When a cohomological invariant is defined from complete resolutions, prove a natural bridge first to stable Hom via T and separately to Hom between U-images in K(A). Use the exactness of T on short exact sequences to derive long exact sequences and use identity or orthogonality vanishing to test whether the stable obstruction disappears; do not substitute stabilization objects for U-images.",
+      "quality_reason": "Accepted after removing the candidate's unsupported identification of the representation objects with stabilized objects. The repaired interpretation preserves the distinct T- and U-based formulas and uses their functoriality to derive exactness and structural vanishing consequences beyond restatement.",
+      "source_support": "Definition 7.5 defines the groups as H^n Hom(A,G-lambda iB), and Remark 7.6 identifies the construction as injective Tate cohomology. Proposition 7.7 gives the natural T-based stable-morphism formula. The following passage defines U = G-lambda Q-rho into Ktac(Inj A) and the derived formula Hom_K(A)(U X, Sigma^n U Y). Lemma 7.8 sends exact sequences through T to triangles, Proposition 7.9 derives long exact sequences, and Propositions 7.10-7.11 give comparison and equivalent vanishing conditions.",
+      "uncertainty": "The natural equivalences, functor distinctions, exactness mechanism, and vanishing semantics are legible, but the damaged decorations should not be copied as coefficient-level notation. No equality between Ktac(Inj A) and S(A) is asserted from this isolated artifact.",
+      "unit_id": "agnostic_oa_tate_cohomology_via_stabilization"
+    },
+    "agnostic_oa_tensor_realized_stabilization": {
+      "boundary_or_failure": "The tensor formulas assume A = Mod Lambda for a finite-dimensional cocommutative Hopf algebra over k, so that projective and injective modules coincide and the relevant subcategories are tensor ideals. The theorem gives two successive reflective tensor operations on nested subcategories, not complementary tensor ideals.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_adaea586438f6b5ee6fc651378e65a4da5a26e1ef48ddcbcad3be7f262bc3642",
+        "agnostic_oa_critic_b24d9aed4055e28e119a314e1d221a380095104dbc17724d4c7c14780512711b",
+        "agnostic_oa_revision_4b5c7633dcdcecab42d583c5125efcfd9b477edfac1ab49f172c967ebae2ab21"
+      ],
+      "interpretation": "The abstract left adjoints are realized by tensoring with resolutions of the tensor unit: - tensor_k i k sends K(A) to K(Inj A), and - tensor_k t k then sends K(Inj A) to S(A). Their universal Hom isomorphisms make these two successive reflections concrete and monoidal. Under the same Hopf-algebra hypotheses, tensoring modules with t k realizes stabilization and induces the stable-module equivalence with zero-cycle quasi-inverse Z^0; the gain is an explicit tensor model for the adjoints, while each step changes the object to its injective and then acyclic-injective reflection rather than selecting a complementary ideal.",
+      "nonparaphrase_operation": "Resolve the tensor unit into i k and the Tate resolution t k, prove K(Inj A) and S(A) are tensor ideals, and use tensor-Hom adjunction plus the resolution triangles to establish the universal Hom maps for - tensor_k i k and - tensor_k t k. Treat them as successive left adjoints and verify the stable-module comparison with the precise zero-cycle functor Z^0.",
+      "quality_reason": "Accepted after replacing the unsupported 'complementary idempotent selectors' claim with the two left adjoints actually proved and replacing generic evaluation language with Z^0. The resolution-of-the-unit procedure is a concrete, transferable mechanism while its hypotheses and proof burden remain explicit.",
+      "source_support": "Lemma 8.1 states that K(Inj A) and S(A) are tensor ideals in K(A). The unit k sits in triangles involving its injective resolution i k, projective resolution p k, and Tate resolution t k. Theorem 8.2 proves by universal Hom isomorphisms that - tensor_k i k is left adjoint to K(Inj A) -> K(A) and - tensor_k t k is left adjoint to S(A) -> K(Inj A), then gives the stable-module equivalence with quasi-inverse Z^0. Remark 8.3 identifies i k and t k as the respective tensor units.",
+      "uncertainty": "Some stable-category symbols are extraction-damaged, but the two adjunctions, their domains and codomains, and the Z^0 quasi-inverse are explicit in prose. No claim of complementarity or literal idempotence is retained.",
+      "unit_id": "agnostic_oa_tensor_realized_stabilization"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_compact_skeleton_completion": "169555396439a705213446f019833f0541690b93f87bb8abcae8dde95a8b7931",
+    "agnostic_oa_complete_resolution_universal_approximation": "2bfa2785ef41cbeb518a1c9c7a0c2774fe099b0d33e580c94dfbc107e8eccc11",
+    "agnostic_oa_derived_functor_lift_obstruction": "3058ac4025c6650f86b4375278241e3edc755c63e03551d614c21d179f514f2a",
+    "agnostic_oa_functorial_stabilization_transfer": "6f4f4d387838f04d39f801b3223cc3a6be3c033ec7a7e2dc272a2f3c61e8ea39",
+    "agnostic_oa_kinjective_universal_replacement": "eea4e5afa9fd1948b26a6a7cd1fed3f5ad0d98af02cb9c0de1603a53061ea3ea",
+    "agnostic_oa_localization_adjoint_decomposition": "2ac1ed81c6eb31338b54a97bd84e0b3249d18d529eed4f4645103ac5c2bbfac9",
+    "agnostic_oa_minimal_contractible_decomposition": "146c6f1a086c650712b5cce4424e133534559cb7dd2fe7eff2fec880063ee684",
+    "agnostic_oa_obstruction_vanishing_stabilization_equivalence": "c28ace69dec0e6f5bf64f088f72cacb4ec61fbc5e0cf0ad2078c29ed57c10d94",
+    "agnostic_oa_orthogonal_approximation_pair": "57c1efcc6f1392c3d11e5485782368eed8df9ae1c5f7937170418163648efc89",
+    "agnostic_oa_recollement_from_compact_generation": "5620654817bc5eb8301ab89e09a9a1a0caae75030e417a9b22e8824690c975f5",
+    "agnostic_oa_stabilization_singularity_quotient": "1dd407ce9977b19a398c5dd59df01cd054eb0d3abe65b4d5eb3217d7d2c6b260",
+    "agnostic_oa_support_localization_singularity_invariance": "b2438c88dbffb476300c5a8e0c4c29f8fe3f086695ea28e9f56140c1fc3aa9f5",
+    "agnostic_oa_tate_cohomology_via_stabilization": "7f6c54c5587f17181e002a06df8da550c41c62c46cfbcf49602ad0801b9bec18",
+    "agnostic_oa_tensor_realized_stabilization": "39701af0cbfb1e045a2689737c60f5f3003f808dde78e6b2c1136fd0e0391b3c"
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "model_visible_packet_sha256": "3a1290f529e03b01f7f4aa62bfad9664745976e0210b87fe9f3879309ef69e1c",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2006790140_22847d00_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "stage": "audit",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_compact_skeleton_completion.txt",
+      "artifact_bytes": 7922,
+      "artifact_relpath": "depth/units/agnostic_oa_compact_skeleton_completion.txt",
+      "artifact_sha256": "1d49599811ba4b76a1a075bec9d3fdfa600b5011a4703dff6b78f0f6b47368f8",
+      "context_note": "The result assumes a locally noetherian Grothendieck category and uses injective resolutions; the completion analogy is explicit rather than an asserted equivalence of all completion notions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 344,
+      "line_start": 254,
+      "representation_dependency": "The injective-complex presentation supplies the ambient category, while compact generation and reconstruction by triangles and coproducts are invariant categorical properties.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Injective resolutions of noetherian objects are shown compact and jointly detect every nonzero object, so the compact subcategory identifies with the bounded derived category. The ambient homotopy category is then characterized as the smallest triangulated category containing that skeleton and closed under coproducts, paralleling completion of finitely presented objects under filtered colimits.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Compact objects form a bounded skeleton whose closure reconstructs an unbounded category",
+      "unit_id": "agnostic_oa_compact_skeleton_completion",
+      "unit_type": "completion-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_localization_adjoint_decomposition.txt",
+      "artifact_bytes": 8148,
+      "artifact_relpath": "depth/units/agnostic_oa_localization_adjoint_decomposition.txt",
+      "artifact_sha256": "57a36cd98c3c6b6c1163591be049ecf7ae4da64529a858fc0c505014c9bbbca2",
+      "context_note": "Several categorical diagrams have flattened arrows, but the enumerated axioms, equivalences, triangle, and adjoint criteria are legible in prose.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_stabilization_singularity_quotient",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies mutually compatible forms of decomposition: orthogonal localization triangles, recollement, quotienting away perfect objects, complementary approximation sequences, and a minimal-plus-contractible canonical form. This reinforces the routed lens without establishing novelty relative to #44."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 461,
+      "line_start": 365,
+      "representation_dependency": "The diagram orientation depends on chosen inclusion and quotient functors; the universal roles of kernel, quotient, adjoints, and orthogonal pieces do not.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A localization sequence is characterized through fully faithful adjoints, a quotient equivalence, mutual orthogonality, and a canonical triangle splitting any object into kernel and localized components. Brown representability turns preservation of coproducts or products into practical criteria for constructing the required adjoints.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Localization and adjoints produce orthogonal pieces and a functorial decomposition triangle",
+      "unit_id": "agnostic_oa_localization_adjoint_decomposition",
+      "unit_type": "decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_kinjective_universal_replacement.txt",
+      "artifact_bytes": 7292,
+      "artifact_relpath": "depth/units/agnostic_oa_kinjective_universal_replacement.txt",
+      "artifact_sha256": "2e78ba416797952e957bdb955396054f81226979481577c7ba668c15e8f7aa11",
+      "context_note": "The proof is specialized to locally noetherian Grothendieck categories, but the replacement-via-adjoint mechanism is generic; the examples at the end state boundary cases.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 545,
+      "line_start": 462,
+      "representation_dependency": "Uses injective complexes as representatives; the semantics are that a right adjoint chooses a canonical representative orthogonal to the discarded subcategory.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The homotopy category of injectives localizes by acyclic complexes to the derived category. Its right adjoint selects K-injective representatives, giving every complex a functorial triangle with an acyclic error term and converting quotient morphisms into ordinary homotopy morphisms against the replacement.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Localization yields a canonical replacement that computes the quotient category",
+      "unit_id": "agnostic_oa_kinjective_universal_replacement",
+      "unit_type": "universal-replacement"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_recollement_from_compact_generation.txt",
+      "artifact_bytes": 8510,
+      "artifact_relpath": "depth/units/agnostic_oa_recollement_from_compact_generation.txt",
+      "artifact_sha256": "eba874fcca2b2b9a989ef90ab75627fbb80f98d99f4d7942da04b7c0f52a3787",
+      "context_note": "The argument relies on compact generation of the derived category; the corollary on products of acyclic injective complexes is a consequence, not the core accepted mechanism.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_stabilization_singularity_quotient",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies mutually compatible forms of decomposition: orthogonal localization triangles, recollement, quotienting away perfect objects, complementary approximation sequences, and a minimal-plus-contractible canonical form. This reinforces the routed lens without establishing novelty relative to #44."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 652,
+      "line_start": 546,
+      "representation_dependency": "The categories are presented through injective complexes and derived quotients, whereas the passage from compact control to a two-sided gluing pattern is categorical.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Compact objects constrain boundedness, and an equivalence on compact generators is extended through coproduct closure to construct the missing left adjoint. Combining localization and colocalization gives a recollement, so an ambient category can be reconstructed from complementary pieces with both projection directions available.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Compact generation upgrades one-sided localization to recollement",
+      "unit_id": "agnostic_oa_recollement_from_compact_generation",
+      "unit_type": "gluing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_stabilization_singularity_quotient.txt",
+      "artifact_bytes": 9092,
+      "artifact_relpath": "depth/units/agnostic_oa_stabilization_singularity_quotient.txt",
+      "artifact_sha256": "679358b6aa4a1e623e3650bb443323936ba598d746aa6c0bfc146ba691208400",
+      "context_note": "The equivalence on compact objects is explicitly only up to direct factors; that qualification must be retained in downstream use.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_stabilization_singularity_quotient",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies mutually compatible forms of decomposition: orthogonal localization triangles, recollement, quotienting away perfect objects, complementary approximation sequences, and a minimal-plus-contractible canonical form. This reinforces the routed lens without establishing novelty relative to #44."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 851,
+      "line_start": 742,
+      "representation_dependency": "The chosen model uses acyclic injective complexes; the quotient semantics and compact singular residue are stable under equivalent categorical presentations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The stable derived category is obtained as the acyclic side of a recollement, and stabilization is the composite of the corresponding adjoints. On compact objects it agrees, up to direct factors, with the bounded category modulo compact or perfect objects, making precise which regular information is forgotten and which obstruction-like residue remains.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Stabilization quotients away perfect information and retains the compact singular part",
+      "unit_id": "agnostic_oa_stabilization_singularity_quotient",
+      "unit_type": "quotient-and-stabilization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_derived_functor_lift_obstruction.txt",
+      "artifact_bytes": 10181,
+      "artifact_relpath": "depth/units/agnostic_oa_derived_functor_lift_obstruction.txt",
+      "artifact_sha256": "abe19e555385ca8536e0107e001c43907db1f4b009e423f7693496b039dc93df",
+      "context_note": "The small algebra example exhibits failure of the compatibility square; exact diagram arrows and the example complex should be checked against the PDF if reproduced.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1019,
+      "line_start": 902,
+      "representation_dependency": "The lift depends on injective and DG presentations, while the obstruction criterion—preservation of the kernel of localization—is presentation-independent.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "An additive functor is extended from derived categories to homotopy categories of injectives, and representability supplies adjoints under coproduct hypotheses. A natural comparison with the ordinary derived functor is an isomorphism exactly when acyclic injective complexes remain acyclic, isolating a concrete obstruction to commuting a construction with localization.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "A derived functor lifts to a larger category, with compatibility controlled by acyclic preservation",
+      "unit_id": "agnostic_oa_derived_functor_lift_obstruction",
+      "unit_type": "extension-and-obstruction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_functorial_stabilization_transfer.txt",
+      "artifact_bytes": 14195,
+      "artifact_relpath": "depth/units/agnostic_oa_functorial_stabilization_transfer.txt",
+      "artifact_sha256": "bb8ce0a595724542034cbe881ed46c728b55d77da7a7ee3b5d3a9586e814a8bf",
+      "context_note": "Large commutative diagrams are extraction-damaged, but their direction is restated in the theorem and proof. Some final generalizations are explicitly tentative remarks.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1200,
+      "line_start": 1068,
+      "representation_dependency": "The construction uses chosen adjoints and localizations; its core claim is coherence of the induced maps under passage among related categorical presentations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "For an exact functor on noetherian objects, adjunction lifts it to injective homotopy categories and descends it to stable categories. Compatibility squares and compactness preservation show that its action on the stable compact quotient is determined by the bounded functor, providing a reusable method for moving one operation through several equivalent or localized representations.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Adjoints transfer a functor coherently across ambient, derived, compact, and stable levels",
+      "unit_id": "agnostic_oa_functorial_stabilization_transfer",
+      "unit_type": "structure-preserving-map"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_support_localization_singularity_invariance.txt",
+      "artifact_bytes": 8636,
+      "artifact_relpath": "depth/units/agnostic_oa_support_localization_singularity_invariance.txt",
+      "artifact_sha256": "156d42eaf71162ee456c7c085ccb784b1cb7f0fbb4345485b86ef258aa1bad85",
+      "context_note": "The conclusion assumes separated noetherian schemes and finite Krull dimension for the singular-locus corollary; equivalence of the bounded quotient is stated only up to direct factors.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1302,
+      "line_start": 1201,
+      "representation_dependency": "Support and open restriction are geometric, but the generic move is localization by a kernel subcategory followed by an invariance test when the discarded region contributes no obstruction.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Restriction to an open subspace splits injective objects by support and yields a triangle separating the part on the open set from the part on its complement. Quotienting by complement-supported objects gives the restricted category; if the open contains every singular point, the stable category and the bounded quotient by perfect complexes are unchanged.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Support decomposes an object, and removing a regular locus preserves singular information",
+      "unit_id": "agnostic_oa_support_localization_singularity_invariance",
+      "unit_type": "local-to-global-localization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_complete_resolution_universal_approximation.txt",
+      "artifact_bytes": 9482,
+      "artifact_relpath": "depth/units/agnostic_oa_complete_resolution_universal_approximation.txt",
+      "artifact_sha256": "50b22299f4bff2c8cb5d9f09c58b841dfc4546b66a59c5f2b2f19ffc31943cc1",
+      "context_note": "The construction is within a locally noetherian Grothendieck category with compactly generated derived category; stable Hom decorations are visually degraded but the universal property is explicit.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1407,
+      "line_start": 1303,
+      "representation_dependency": "The complete complex is a representative; the approximation is canonical through its adjunction, not through a unique componentwise resolution.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Totally acyclic complexes are linked equivalently to Gorenstein-injective objects by taking a cycle. Orthogonality inside the compactly generated stable category gives a left adjoint to their inclusion; applying it to an injective resolution constructs a complete resolution and, after taking a cycle, a universal approximation characterized by a bijection of stable morphisms.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "A left adjoint constructs complete resolutions and universal Gorenstein-injective approximations",
+      "unit_id": "agnostic_oa_complete_resolution_universal_approximation",
+      "unit_type": "universal-approximation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tate_cohomology_via_stabilization.txt",
+      "artifact_bytes": 10062,
+      "artifact_relpath": "depth/units/agnostic_oa_tate_cohomology_via_stabilization.txt",
+      "artifact_sha256": "50ce408bb3903cc96aecfac9bdf04dffd39a7cdce2e3d4728d499aa10f808cdb",
+      "context_note": "Exact group formulas and decorations suffer some glyph loss; the accepted content is the equivalence of constructions, exactness mechanism, and vanishing semantics rather than coefficient-level calculation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1530,
+      "line_start": 1408,
+      "representation_dependency": "One formula uses Hom into a complete injective resolution and another uses morphisms in a stable category; their natural isomorphism is precisely the useful representation bridge.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Tate cohomology is defined from the complete-resolution adjoint and equivalently as graded morphisms between stabilized objects. Functoriality supplies comparison maps and exact triangles yield long exact sequences, while several vanishing conditions collapse to equivalent obstruction tests.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "A functorial complete resolution turns stable morphisms into a two-sided cohomological invariant",
+      "unit_id": "agnostic_oa_tate_cohomology_via_stabilization",
+      "unit_type": "invariant-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_orthogonal_approximation_pair.txt",
+      "artifact_bytes": 6056,
+      "artifact_relpath": "depth/units/agnostic_oa_orthogonal_approximation_pair.txt",
+      "artifact_sha256": "8c43e455166a248c4a61071da32ba1010a7033e8b576e7c6eb34acfeb3948662",
+      "context_note": "The proof is formulated in the stable category modulo injectives and uses complete resolutions; equality of the classes is not asserted outside the stated compact-generation assumptions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_stabilization_singularity_quotient",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies mutually compatible forms of decomposition: orthogonal localization triangles, recollement, quotienting away perfect objects, complementary approximation sequences, and a minimal-plus-contractible canonical form. This reinforces the routed lens without establishing novelty relative to #44."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1600,
+      "line_start": 1531,
+      "representation_dependency": "The exact sequences depend on chosen representatives, while the adjoint approximation functors and orthogonality classes are canonical up to isomorphism.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Objects with vanishing Tate obstruction and Gorenstein-injective objects form complementary classes. Every object lies in two exact sequences exchanging the classes, the induced maps are right and left adjoints to their inclusions, and the intersection consists exactly of injectives. This packages approximation as both decomposition and a universal property.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Orthogonality classes yield complementary universal approximations",
+      "unit_id": "agnostic_oa_orthogonal_approximation_pair",
+      "unit_type": "orthogonal-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_obstruction_vanishing_stabilization_equivalence.txt",
+      "artifact_bytes": 6557,
+      "artifact_relpath": "depth/units/agnostic_oa_obstruction_vanishing_stabilization_equivalence.txt",
+      "artifact_sha256": "520a9af0c740642989e52007a7c53e98cf129e47fe4c2dfbf41ea033a78cd5ee",
+      "context_note": "The later ring and scheme cases are examples under additional finiteness hypotheses and should not be read as proving the equivalences in arbitrary categories.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_derived_functor_lift_obstruction",
+            "agnostic_oa_support_localization_singularity_invariance",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_tate_cohomology_via_stabilization",
+            "agnostic_oa_obstruction_vanishing_stabilization_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "Acyclic kernels, compatibility with localization, singular support, complete resolutions, stable cohomology, and equivalent vanishing conditions provide a layered obstruction calculus. The finding records internal support for the lens only; corpus-level distinctness is untested."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1673,
+      "line_start": 1601,
+      "representation_dependency": "The criteria live in Ext groups, complexes, object classes, functor kernels, and category equivalences; their equivalence explicitly bridges those representations.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The injective Gorenstein property is characterized equivalently by an Ext-orthogonality condition, total acyclicity of all acyclic injective complexes, identification of two object classes, annihilation of injectives by stabilization, and equivalence between stable and Gorenstein-injective categories. This turns several differently presented tests into interchangeable diagnostics.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Vanishing, total acyclicity, and stabilization equivalence characterize one structural regime",
+      "unit_id": "agnostic_oa_obstruction_vanishing_stabilization_equivalence",
+      "unit_type": "equivalent-criteria"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tensor_realized_stabilization.txt",
+      "artifact_bytes": 6378,
+      "artifact_relpath": "depth/units/agnostic_oa_tensor_realized_stabilization.txt",
+      "artifact_sha256": "4a46c496837737452f7c4074988c4f7c0f31a82a7ac73c221e750eaf13076c04",
+      "context_note": "The theorem assumes modules over a finite-dimensional cocommutative Hopf algebra; the monoidal realization should not be generalized without checking tensor-ideal and adjunction hypotheses.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1776,
+      "line_start": 1701,
+      "representation_dependency": "The distinguished resolution objects depend on the module model, but their role as idempotent-like selectors for complementary tensor ideals is structural.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "The injective and acyclic subcategories are tensor ideals. Tensoring with an injective resolution realizes the adjoint selecting injective complexes, while tensoring with a Tate resolution realizes stabilization and induces an equivalence with the stable module category. An abstract localization operation is thus represented by multiplication with distinguished objects.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Tensoring with resolution objects realizes localization adjoints and stabilization",
+      "unit_id": "agnostic_oa_tensor_realized_stabilization",
+      "unit_type": "monoidal-stabilization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_minimal_contractible_decomposition.txt",
+      "artifact_bytes": 5312,
+      "artifact_relpath": "depth/units/agnostic_oa_minimal_contractible_decomposition.txt",
+      "artifact_sha256": "b0794204fde4afbf1d6af5a9c3f907e0a1e802f38259d2d32c7abc6c3346fe07",
+      "context_note": "Some direct-sum symbols are lost in the normalized text, but the construction, three equivalent criteria, and uniqueness statement are clear from prose.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_stabilization_singularity_quotient",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies mutually compatible forms of decomposition: orthogonal localization triangles, recollement, quotienting away perfect objects, complementary approximation sequences, and a minimal-plus-contractible canonical form. This reinforces the routed lens without establishing novelty relative to #44."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_compact_skeleton_completion",
+            "agnostic_oa_localization_adjoint_decomposition",
+            "agnostic_oa_kinjective_universal_replacement",
+            "agnostic_oa_recollement_from_compact_generation",
+            "agnostic_oa_functorial_stabilization_transfer",
+            "agnostic_oa_complete_resolution_universal_approximation",
+            "agnostic_oa_orthogonal_approximation_pair",
+            "agnostic_oa_dg_reconstruction_from_generators",
+            "agnostic_oa_minimal_contractible_decomposition"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "Adjoints and generator theorems repeatedly replace arbitrary choices by universal replacements, approximations, extensions, reconstructions, or uniqueness up to isomorphism. No new family is proposed because the isolated pass did not compare existing corpus coverage."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2006790140",
+      "line_end": 1923,
+      "line_start": 1865,
+      "representation_dependency": "The contractible complement is not claimed unique, whereas the minimal summand is canonical up to isomorphism; this distinction is central to the unit.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2006790140_22847d00.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Homotopical minimality is characterized equivalently by absence of a nonzero contractible summand and by cycle inclusions being injective envelopes. Iteratively splitting explicit contractible pieces produces a decomposition into minimal and null-homotopic summands, and any two such decompositions have isomorphic minimal parts.",
+      "source_id": "openalex_w2006790140",
+      "source_normalized_sha256": "4712f2d30e173fc80d0f90387e778a27b21fa51da459523ee52524de23f59aae",
+      "title": "Every injective complex splits into a minimal part and a null-homotopic part",
+      "unit_id": "agnostic_oa_minimal_contractible_decomposition",
+      "unit_type": "canonical-form"
+    }
+  ]
+}

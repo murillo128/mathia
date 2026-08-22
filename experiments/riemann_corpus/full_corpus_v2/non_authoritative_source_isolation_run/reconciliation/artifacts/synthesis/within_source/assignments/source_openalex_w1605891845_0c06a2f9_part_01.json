@@ -1,0 +1,172 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1605891845",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1605891845_0c06a2f9_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Real-axis preimages, branch-point fusions, and intertwined derivative curves are intended to transfer positive/negative half-axis colors into restrictions on where zero curves can turn and how fundamental sheets meet.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1605891845_v2_u02",
+          "openalex_w1605891845_v2_u03",
+          "openalex_w1605891845_v2_u04",
+          "openalex_w1605891845_v2_u05"
+        ],
+        "proposed_limit": "Several structural facts, including simplicity and color matching, are imported from separate work, and key later contradictions depend on figures rather than fully stated topological lemmas.",
+        "source_id": "openalex_w1605891845",
+        "synthesis_id": "riemann_v2_within_54e4765462fe48e97d8ce740",
+        "title": "The proof architecture converts value-plane orientation into zero-placement constraints"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction assumes simplicity of zeta zeros from reference [9], not a proof contained in this span.",
+          "line_end": 234,
+          "line_start": 137,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and curve labels are recoverable; several conjugation bars are poorly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Continues inverse images of real values, distinguishes curves limiting to the quasi-lacunary value one, and defines j_k-strips containing finitely many zeros and zeta=1 points.",
+          "source_id": "openalex_w1605891845",
+          "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Real-axis preimages partition the plane into infinite zeta strips",
+          "unit_artifact_relpath": "depth/units/openalex_w1605891845_v2_u02.txt",
+          "unit_bytes": 6401,
+          "unit_id": "openalex_w1605891845_v2_u02",
+          "unit_sha256": "8332d66da2846cb4ecc9fac992b9ba851555ea81644bfc74d70ba1dc48e8c9dd",
+          "unit_type": "geometric construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The source uses continuation of real-axis inverse images to build a curve-and-strip skeleton rather than to re-prove zero simplicity. The quasi-lacunary value 1 separates boundary curves whose images approach 1 at infinity from interior components whose continuation covers the whole real axis; conditional on the cited continuation and uniqueness results, this organizes zeros and preimages of 1 strip by strip. The skeleton localizes selected fibers of zeta but does not retain the full two-dimensional map or independently validate the stated strip inventory.",
+            "nonparaphrase_operation": "Extracts the dependency structure by identifying value 1 as the selector for boundary versus interior continuations and by showing that the finite strip inventory is conditional on cited global curve properties, not a consequence of the displayed construction alone.",
+            "quality_reason": "Accepted after revision because the quasi-lacunary-value mechanism and conditional strip organization are recoverable from the prose; damaged conjugation marks and curve notation preclude stronger literal claims but do not prevent this bounded interpretation.",
+            "source_support": "The span explicitly says it repeats results from [3], cites [9] for simple zeros, colors inverse images of the two real half-axes, defines 1 as quasi-lacunary, and states that consecutive boundary curves form strips. It later cites [3], Theorem 7, for the unique component Gamma_{k,0}, bijectivity properties, and the j_k counts of curves, nontrivial zeros, and preimages of 1.",
+            "speculation_status": "Simplicity, unboundedness and nonintersection of the curves, uniqueness and bijectivity, and the j_k inventory are cited or asserted rather than proved here. Theorem 1's proof also leaves unproved the step that a domain formed if two boundary curves met would have to contain a pole."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The color vocabulary encodes which real half-axis an arc maps onto.",
+          "line_end": 265,
+          "line_start": 236,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Diagram-independent proof prose; exact inverse-image notation is lightly degraded.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses alternating preimages of positive and negative real half-axes to constrain the tails of zero curves, interlace real critical points, and prove one unbounded unit-disc preimage component per strip.",
+          "source_id": "openalex_w1605891845",
+          "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Color alternation constrains branch placement and unit-disc components",
+          "unit_artifact_relpath": "depth/units/openalex_w1605891845_v2_u03.txt",
+          "unit_bytes": 2014,
+          "unit_id": "openalex_w1605891845_v2_u03",
+          "unit_sha256": "08a264f73b34ecc0138a339da1444e6bd32d30f85d7391a9029df4c97da5a123",
+          "unit_type": "topological constraint",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The source's red/black rule records whether a real-axis preimage branch maps to the negative or positive half-axis. It uses the required alternation first to claim a tail restriction and real critical-point interlacing, then combines a limiting-ray argument with the distinguished component Gamma_{k,0} to characterize an unbounded component of the closed-unit-disc preimage. This encoding gains adjacency and sign information while discarding most value-plane phase data; crucially, uniqueness comes from the previously asserted uniqueness of Gamma_{k,0}, not from color alternation by itself.",
+            "nonparaphrase_operation": "Decomposes the argument into sign-color adjacency, a ray-limit criterion for unboundedness, and an inherited uniqueness premise, exposing which conclusion each mechanism can and cannot support.",
+            "quality_reason": "Accepted after revision because the sign-color and limiting-ray mechanisms are legible without the figures, while the lightly degraded inverse-image notation and imported premises are explicitly bounded.",
+            "source_support": "Theorem 2 states that both half-axis branches lie at negative real part far along their tails and gives only a one-paragraph circle-preimage argument. The span then claims simplicity and alternation of real zeros of zeta prime, and Theorem 3 explicitly concludes its uniqueness statement from the limiting-ray correspondence and the uniqueness of Gamma_{k,0}.",
+            "speculation_status": "The tail necessity and the simplicity/interlacing inference are not adequately established by the short arguments in this unit. The unbounded-component conclusion remains conditional on the earlier asserted global continuation properties and uniqueness of Gamma_{k,0}."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The one-to-one intertwining and zero-simplicity rules are summarized from earlier work rather than re-proved here.",
+          "line_end": 332,
+          "line_start": 306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies on geometric curve labels and unseen figures, but the construction is prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands small zero-centered preimage circles until they meet at critical points and uses the resulting arcs to define fundamental domains, each containing one asserted simple zero.",
+          "source_id": "openalex_w1605891845",
+          "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Branch-point fusions cut each strip into slit-plane sheets",
+          "unit_artifact_relpath": "depth/units/openalex_w1605891845_v2_u04.txt",
+          "unit_bytes": 2346,
+          "unit_id": "openalex_w1605891845_v2_u04",
+          "unit_sha256": "5edb90de16793dfbe9d8b772142dbbd6b490d9994b3514a1b66396b7068fcf9c",
+          "unit_type": "fundamental-domain construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The intended branch-cut construction grows inverse images of target circles around zero until contacts occur at critical points, then uses preimages of segments to the associated critical values as cuts that are supposed to divide a strip into one-to-one slit-plane pieces. This converts failures of local invertibility into proposed boundaries for inverse branches, but the span does not itself establish the incidence pattern, conformality, or one-simple-zero content of the resulting pieces.",
+            "nonparaphrase_operation": "Interprets growing-circle collisions as candidate locations for branch cuts and audits the construction's dependency chain: even the initial one-zero Jordan curves rely on asserted simplicity and local one-zero behavior, while the later partition relies on cited counts and incidence rules.",
+            "quality_reason": "Accepted after revision because the concrete circle-growth and critical-value-slit mechanism is preserved without claiming that it identifies the partition exactly; all imported uniqueness, conformality, and simplicity claims remain visibly conditional.",
+            "source_support": "The span states that small-circle preimages are disjoint closed Jordan curves around individual zeros, describes their fusion at points v_{k,j}, cites [3] and [9] for exactly j_k-1 such points, and says the resulting arcs and strip boundaries form fundamental domains Omega_{k,j}. It separately reports intertwined-curve, color-matching, and zero-simplicity results from [9].",
+            "speculation_status": "Exact branch-point counts, conformality of the cut pieces, one-to-one intertwining, color matching, and simplicity are cited assertions rather than local conclusions. The intended construction is prose-recoverable, but unseen figures and degraded derivative notation prevent independent verification of those rules."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof explicitly assumes all zeta zeros are simple at line 376 and treats one factor as locally dominating; those premises are necessary limitations.",
+          "line_end": 433,
+          "line_start": 349,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense formula extraction with conjugates and derivatives; exact argument inequalities should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Parametrizes a real-axis preimage through a zero, isolates its paired Hadamard factor, and uses argument comparisons to exclude a turning point over a negative real value.",
+          "source_id": "openalex_w1605891845",
+          "source_normalized_sha256": "1b079b3cf65564d4944a7d674dcf4ed6cfaef9c6cdc65c6c7e84badbd1230521",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Hadamard-factor argument places every zero curve's turn over the positive axis",
+          "unit_artifact_relpath": "depth/units/openalex_w1605891845_v2_u05.txt",
+          "unit_bytes": 4146,
+          "unit_id": "openalex_w1605891845_v2_u05",
+          "unit_sha256": "3e235a59814eb9332387c2557a7572f7d4c0044d099319e46db9089ffd4cd1b3",
+          "unit_type": "turning-point claim",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1605891845_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The intended local-to-global move is to use a paired zero factor as a coordinate exposing orientation near a zero, then infer the allowed side of a global turn.",
+            "nonparaphrase_operation": "The bridge object is the paired Hadamard factor phi_{k,j}(x), which translates relative position of s_{k,j}(x) into complex argument inequalities compared with s'_{k,j}(0).",
+            "quality_reason": "The analysis accurately describes the attempted paired-Hadamard-factor argument and the claimed exclusion of a turn over a negative real value. No material unsupported endorsement remains: the analysis explicitly identifies the unproved step from local factor dominance to argument control of the full product. The bridge wording is concrete because it names phi_{k,j}, relative position, and tangent arguments rather than a generic representation change.",
+            "source_support": "A real parameter x is used on a curve satisfying zeta(s_{k,j}(x))=x. The source isolates the Hadamard factors attached to a zero and its conjugate, analyzes their real and imaginary parts near the zero, and claims an argument contradiction if the curve's vertical-tangent turn occurs over x<0.",
+            "speculation_status": "The source explicitly assumes simple zeros and says the chosen factor dominates locally, but it does not justify that this dominance preserves the argument relations needed for the full product. That is a substantive proof burden, not a cosmetic omission. The claimed contradiction is readable only at a semantic level because conjugates, derivatives, and inequalities are extraction-sensitive; the argument should be treated as an unverified turning-point claim. The local-to-global orientation reading is a fair account of what the proof is trying to do. Conjugates, derivatives, and inequalities are extraction-sensitive, so only the semantic proof attempt is reliable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ee0bda58ddce6a9698f704adccc6aa783cc5640bea84c8848f27908f3d9b6250",
+        "dossier_sha256": "e87d5d927bb8270ac80cc09e4ace2fd0d5979388f62f69ddce6ffade0c5900c9"
+      }
+    }
+  ]
+}
