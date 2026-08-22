@@ -1,0 +1,850 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_pugh1998_riemann_siegel_thesis_c94f316b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "pugh1998_riemann_siegel_thesis",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the thesis aim at lines 252-255; historical scale claims are contextual rather than independent validation.",
+      "line_end": 255,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; the extracted square-root glyph is split across lines 249-250.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the order-t Euler-Maclaurin route with a specialized square-root-time method and identifies floating-point precision as the eventual operational boundary.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+      "unit_artifact_relpath": "depth/units/pugh98_u01.txt",
+      "unit_bytes": 1597,
+      "unit_id": "pugh98_u01",
+      "unit_sha256": "305a1bb3d38f37ebdc1fc7b3bf2220717104303ba8c1b634bf185cce7e891d05",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u01.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "Chapter 1. Introduction\n\nesis and results in mathematical physics have motivated extensive numerical investi-\ngations using modern supercomputers. Van de Lune et al. have demonstrated the\ncorrectness of the Riemann Hypothesis for the first one and a half billion non-trivial\nzeros of the zeta function[2], while Andrew Odlyzko has verified the correctness of\nthe hypothesis for large sets of zeros around the 1020 th zero[5].\n\n",
+          "sha256": "f64fcb2f15eb98e39c590d2910baa2e06c837316244fd0b2f4cfa8a084da6141"
+        },
+        "after": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "\n\n                                           2\n\n<!-- source-page: 9 -->\n\nChapter 1. Introduction\n\n",
+          "sha256": "e44947aac13f3804ab1cc5ba9be33bcfd779b1e875213ce3d07ff806d368ef78"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 1: Introduction",
+            "line_end": 283,
+            "line_start": 193,
+            "mathematical_role": "Frames finite-height RH verification, contrasts Euler-Maclaurin with Riemann-Siegel complexity, and states the thesis as a derivation-and-implementation manual."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 255,
+          "line_start": 233,
+          "title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+          "unit_id": "pugh98_u01",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "Contrasts the order-t Euler-Maclaurin route with a specialized square-root-time method and identifies floating-point precision as the eventual operational boundary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the thesis aim at lines 252-255; historical scale claims are contextual rather than independent validation.",
+          "representation_dependency": "Prose is clear; the extracted square-root glyph is split across lines 249-250.",
+          "unit_id": "pugh98_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 342,
+            "line_start": 302,
+            "title": "Dirichlet series and Euler product expose the sum-product bridge",
+            "unit_id": "pugh98_u02",
+            "unit_type": "definition-and-representation",
+            "why_material": "Defines zeta in its convergent half-plane and connects the additive Dirichlet representation to multiplicative prime structure by geometric-series expansion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 283,
+              "line_start": 193,
+              "reason": "Historical motivation, method comparison, thesis purpose, and chapter roadmap support the selected efficiency unit and later analysis."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh98_u01",
+        "spontaneous": {
+          "unit_id": "pugh98_u01",
+          "spontaneous_reading": "The decisive move is specialization: on the critical line, Riemann-Siegel replaces an order-t Euler-Maclaurin evaluation by a square-root-length computation, shifting the eventual obstruction from analytic work count to finite-precision phase and summation error."
+        },
+        "directed": {
+          "unit_id": "pugh98_u01",
+          "source_grounded_mathematics": "The source contrasts Euler-Maclaurin's order-t evaluation of ζ(1/2+it) with the Riemann-Siegel formula's order-square-root-of-t step count, while stating that approximation accuracy improves with t until fixed floating-point representation becomes limiting.",
+          "conceptual_reading": "A less general representation can be mathematically superior when it is adapted to the locus and decision problem of interest. The gain is structural rather than merely an implementation optimization.",
+          "representation_or_bridge": "The bridge is from general zeta evaluation to a critical-line approximation whose short main sum makes large-scale sign testing feasible; extended precision trades back some of that gain in speed.",
+          "boundary_or_failure": "The thesis concerns finite computation and implementation, not a proof of RH. Its performance and precision claims are tied to the stated methods and period hardware, and faster evaluation does not by itself certify zeros.",
+          "uncertainty": "The extracted square-root symbol is split across lines, but the prose-supported comparison is clear; the historical scale claims are contextual rather than independently checked here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh98_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly contrasts order-t Euler-Maclaurin evaluation with an order-square-root-of-t Riemann-Siegel computation on the critical line.",
+          "It explicitly reports improving approximation accuracy with increasing t, an eventual fixed-floating-point limitation, and a speed penalty for extended precision.",
+          "The candidate correctly limits the thesis to finite computation and implementation rather than treating it as a proof of RH."
+        ],
+        "inference": [
+          "Reading the complexity gain as specialization to the critical-line task is a reasonable conceptual interpretation of the stated comparison.",
+          "Describing the cost-versus-precision trade as structural is interpretive but anchored in the span."
+        ],
+        "unsupported_or_imported": [
+          "Finite-precision phase error and accumulated summation error are not identified in this span; those mechanisms come from later error analysis.",
+          "Large-scale sign testing is not the operation stated here; the span says fast critical-line evaluation used in finite verification."
+        ],
+        "paraphrase_or_style_risk": [
+          "The decisive-move and less-general-representation language is somewhat template-like, though the explicit complexity comparison gives it content."
+        ],
+        "context_or_ocr_risk": [
+          "The square-root glyph is split across extraction lines, but the surrounding sentence makes the square-root step count reliable; quarantine is unnecessary."
+        ],
+        "missed_mechanism": [
+          "The revision should preserve the source's tension that approximation quality improves with t while fixed machine representation eventually limits validity."
+        ],
+        "revision_instructions": [
+          "Replace phase and summation error with the span-supported generic fixed-floating-point representation limit.",
+          "Describe the operational bridge as faster critical-line evaluation for finite verification, without importing sign-testing mechanics from later units."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These details support interpretation and reproducibility of the source-reported experiment; they do not validate the result independently.",
+      "line_end": 2464,
+      "line_start": 2438,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+      "unit_artifact_relpath": "depth/units/pugh98_u24.txt",
+      "unit_bytes": 1439,
+      "unit_id": "pugh98_u24",
+      "unit_sha256": "9b13a58053939e555a02e6312a191a84d2770dbb2d42552e291580a1a09151b6",
+      "unit_type": "computational-provenance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u24.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2430,
+          "line_end": 2437,
+          "text": "and all of these are simple zeros which lie on the critical line.\n\n                                           48\n\n<!-- source-page: 55 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "413b7920a2ffae4bfd75fa340c553a5580b3c8d731ee8d5201301ff483cdd1fe"
+        },
+        "after": {
+          "line_start": 2465,
+          "line_end": 2472,
+          "text": "\n\n\n\n                                          49\n\n<!-- source-page: 56 -->\n\n",
+          "sha256": "cb1b2b0efeeaf1bcc9e9d5062ec056e45cd48dd527099d9f6354f316615bac72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2464,
+          "line_start": 2438,
+          "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+          "unit_id": "pugh98_u24",
+          "unit_type": "computational-provenance",
+          "why_material": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These details support interpretation and reproducibility of the source-reported experiment; they do not validate the result independently.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2430,
+            "line_start": 2319,
+            "title": "A critical-line lower count plus Turing's upper bound yields an exact finite-height conclusion",
+            "unit_id": "pugh98_u23",
+            "unit_type": "worked-certification",
+            "why_material": "Reports the found roots and correction data, evaluates the Turing inequality below two, and combines the resulting all-strip upper bound with the critical-line lower count to certify equality at the tested height."
+          },
+          {
+            "line_end": 2508,
+            "line_start": 2485,
+            "title": "Remainder functions are precompiled into high-precision Taylor coefficients",
+            "unit_id": "pugh98_u25",
+            "unit_type": "symbolic-to-numeric-compilation",
+            "why_material": "Maps the analytic coefficient functions to a normalized variable, differentiates symbolically, and truncates coefficient series by magnitude to obtain fast runtime evaluation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2484,
+              "line_start": 2465,
+              "reason": "Page transition and program-section introduction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh98_u24",
+        "spontaneous": {
+          "unit_id": "pugh98_u24",
+          "spontaneous_reading": "The provenance reveals a sharp cost asymmetry: exhaustive critical-line root counting consumed roughly a day on the stated machine, whereas the final Turing completeness calculation needed only seconds, showing where the computational burden actually resides."
+        },
+        "directed": {
+          "unit_id": "pugh98_u24",
+          "source_grounded_mathematics": "This unit records that Appendix C performed root and Gram-block counting and Appendix D produced Turing-method data, using C compiled by GNU gcc on a 200 MHz Pentium PC with 16 MB RAM and long-double arithmetic. The main count took 24 hours 24 minutes; the selected twenty-point Turing calculation took seconds.",
+          "conceptual_reading": "Reproducibility requires exposing the numeric type, compiler, hardware, program division, and runtime because they determine both attainable precision and the interpretation of a claimed computational frontier.",
+          "representation_or_bridge": "The division between a costly broad search and a cheap global certificate mirrors the mathematical separation between locating critical-line zeros and certifying completeness in the strip.",
+          "boundary_or_failure": "These details document rather than independently validate the computation. The code was explicitly not fully optimized, some precision could be reduced selectively, and all runtime and range implications are architecture-specific.",
+          "uncertainty": "The prose is intact. The extracted integer-limit typography should not be reused without scan checking, but it is not needed for the provenance and cost comparison."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh98_u24",
+        "critic_decision": "revise",
+        "supported": [
+          "The span records the division between Appendix C root or Gram-block counting and Appendix D Turing-data production, along with language, compiler, machine, memory, and operating system.",
+          "It explicitly says the code was not fully optimized and records 24 hours 24 minutes of dedicated CPU time for the main count versus seconds for the selected Turing calculation.",
+          "It records the capacity of long double on the stated architecture and the integer range."
+        ],
+        "inference": [
+          "The conclusion that the broad root search, rather than the short Turing calculation, dominated this reported run is directly supported by the timing contrast.",
+          "The mathematical analogy between costly localization and cheap completeness certification is interpretive but grounded in the stated program roles."
+        ],
+        "unsupported_or_imported": [
+          "This exact span describes the precision carried by the long double type but does not explicitly say that every reported program computation used long-double arithmetic; that declaration appears outside the unit.",
+          "Wall-clock is not the source's term for the main timing; it reports dedicated CPU time."
+        ],
+        "paraphrase_or_style_risk": [
+          "The provenance-requires phrasing is a reasonable lesson, but it should remain distinct from independent validation, as the candidate's boundary already notes."
+        ],
+        "context_or_ocr_risk": [
+          "Plain prose is intact; the extracted integer-limit exponent is risky but irrelevant to the main provenance and timing claims."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change the grounded summary to say that the span records long-double capacity on the architecture, without asserting universal use of that type in the run.",
+          "Use dedicated CPU time rather than wall-clock when describing the 24-hour timing."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Its completeness is supplied only after the separate Turing certificate.",
+      "line_end": 2616,
+      "line_start": 2600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+      "unit_artifact_relpath": "depth/units/pugh98_u29.txt",
+      "unit_bytes": 1165,
+      "unit_id": "pugh98_u29",
+      "unit_sha256": "523c03e510b2c536d060dad907b3ab1c3199505709db1391ad56797572be9694",
+      "unit_type": "algorithm-composition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u29.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2592,
+          "line_end": 2599,
+          "text": "\n\n                                          52\n\n<!-- source-page: 59 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "5d6861c0b9a590266ff78ce24292f9241a772844cf878f2645d5738f407e4c2f"
+        },
+        "after": {
+          "line_start": 2617,
+          "line_end": 2624,
+          "text": "\n\n5.4.6 The Turing Method Program\n\nThis last program is used to determine the adjustments hm used in Turing’s method\nfor bounding the function S(t) (see Section 4.3). This program is a type of bisection\nalgorithm which locates the adjustment terms near Gram points by stepping to the left\nor right of the Gram point until the hm satisfying the required conditions are found.\n",
+          "sha256": "18a986b7baf6dbc21f091b8ff33e75e0cec348cf82648e3421671c1313332987"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2616,
+          "line_start": 2600,
+          "title": "The main counter routes ordinary intervals through Gram's Law and exceptional blocks through adaptive search",
+          "unit_id": "pugh98_u29",
+          "unit_type": "algorithm-composition",
+          "why_material": "Composes Gram-point location, cheap sign tests, precision escalation, and block search into a lower-bound counting pipeline with explicit summary outputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Its completeness is supplied only after the separate Turing certificate.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2590,
+            "line_start": 2563,
+            "title": "Gram-block search refines partitions and escalates precision under an error margin",
+            "unit_id": "pugh98_u28",
+            "unit_type": "adaptive-search-and-certification",
+            "why_material": "Combines bisection-like partition refinement, an expected-root target, two accuracy stages, a hard warning path, and sign tests separated from zero by a justified error tolerance."
+          },
+          {
+            "line_end": 2628,
+            "line_start": 2619,
+            "title": "Turing adjustments are found by directional stepping with refinement fallback",
+            "unit_id": "pugh98_u30",
+            "unit_type": "constraint-search",
+            "why_material": "Operationalizes the sign-correction constraints near Gram points and refines the step partition if a required adjustment is not found."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh98_u29",
+        "spontaneous": {
+          "unit_id": "pugh98_u29",
+          "spontaneous_reading": "The main counter is organized around a cheap ordinary path and an explicit exceptional path: certified Gram-law cases increment immediately, failures are grouped into Gram blocks, and only those blocks receive adaptive interior search."
+        },
+        "directed": {
+          "unit_id": "pugh98_u29",
+          "source_grounded_mathematics": "The program locates successive Gram points and tests Gram's Law. A successful test adds one to the count; after a failure it finds the next successful Gram point, forms the intervening Gram block, and sends that block to gramblock. Each point test first evaluates Z with the zeroth and first remainder terms and invokes an all-five-term evaluation only if (-1)^n Z(g_n) does not clear the tolerance. The report records total roots, Gram-block statistics, and the longest block.",
+          "conceptual_reading": "The algorithm composes local certificates without forcing every interval through the expensive procedure. Exceptional behavior is not discarded; it is represented as a larger object whose internal structure can be searched separately.",
+          "representation_or_bridge": "Gram-law truth at a point is the fast-path summary, while a Gram block is the bridge object that converts a run of failed local expectations into a bounded adaptive-search problem.",
+          "boundary_or_failure": "The resulting count is a lower-bound pipeline; completeness for zeros in the strip requires a separate Turing certificate. Neither a failed Gram-law test nor an unresolved block by itself determines how many zeros are absent.",
+          "uncertainty": "The prose-level composition is explicit. This unit does not give a distinct rigorously derived tolerance for the all-five-term fallback."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh98_u29",
+        "critic_decision": "revise",
+        "supported": [
+          "The successive Gram-point tests, immediate increment on Gram's Law, construction of a block ending at the next successful point, delegation to gramblock, and reported block/root statistics are source-grounded.",
+          "The ordinary-path/exceptional-block conceptual decomposition is a useful non-paraphrase reading of the control flow."
+        ],
+        "inference": [
+          "Treating a Gram block as a bridge object for a run of failed local expectations is well supported.",
+          "Lower-bound and separate-Turing-stage language is a valid packet-level dependency warning, but it is not established by this exact span and should be labeled as contextual rather than source-grounded mathematics."
+        ],
+        "unsupported_or_imported": [
+          "The exact unit says only that the second Z evaluation is 'more accurate'; the candidate's claim that it is specifically an all-five-term evaluation is imported from another span or implementation."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'all-five-term evaluation' in source_grounded_mathematics with the span's supported phrase 'a second, more accurate evaluation.'",
+          "Mark the lower-bound/Turing-completeness statement explicitly as a packet context dependency, not evidence supplied by this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The code does not itself establish that all strip zeros were found; that conclusion requires the separate Turing stage.",
+      "line_end": 3452,
+      "line_start": 3282,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "C extraction is readable enough for control flow; exact compilation was not performed and would require the full source environment.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        76,
+        77,
+        78
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+      "unit_artifact_relpath": "depth/units/pugh98_u35.txt",
+      "unit_bytes": 8551,
+      "unit_id": "pugh98_u35",
+      "unit_sha256": "022e0be79361ccea1c7b9b6da0083c01921f63e3f182694a6cb0d6fdfbe76774",
+      "unit_type": "executable-lower-bound-pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u35.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3274,
+          "line_end": 3281,
+          "text": "\n\n\n\n                                        68\n\n<!-- source-page: 75 -->\n\n",
+          "sha256": "37b97733ed225e6564abafe3fff1b76db517d0030400e67960ba49f436183f31"
+        },
+        "after": {
+          "line_start": 3453,
+          "line_end": 3460,
+          "text": "\n\n\n\n                                        72\n\n<!-- source-page: 79 -->\n\n",
+          "sha256": "5449e9621512a1d52ad162d9fc6937883255eecd08e7a76e6020d119a3442ae1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix C: Root-counting program",
+            "line_end": 3460,
+            "line_start": 3282,
+            "mathematical_role": "Implements Gram-law testing, precision escalation, Gram-block fallback, lower-bound accounting, and result reporting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3452,
+          "line_start": 3282,
+          "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+          "unit_id": "pugh98_u35",
+          "unit_type": "executable-lower-bound-pipeline",
+          "why_material": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The code does not itself establish that all strip zeros were found; that conclusion requires the separate Turing stage.",
+          "representation_dependency": "C extraction is readable enough for control flow; exact compilation was not performed and would require the full source environment.",
+          "unit_id": "pugh98_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3196,
+            "line_start": 3051,
+            "title": "The Gram-block routine implements tolerance-gated multistage refinement and warning",
+            "unit_id": "pugh98_u34",
+            "unit_type": "executable-adaptive-search",
+            "why_material": "Instantiates adaptive partition depth, sign margins, two remainder depths, and an explicit unresolved-block warning, exposing the source's executable notion of a certified found root."
+          },
+          {
+            "line_end": 3603,
+            "line_start": 3461,
+            "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+            "unit_id": "pugh98_u36",
+            "unit_type": "executable-certificate-search",
+            "why_material": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh98_u35",
+        "spontaneous": {
+          "unit_id": "pugh98_u35",
+          "spontaneous_reading": "The program preserves lower-bound semantics in its architecture: quick margin-certified Gram-law cases contribute immediately, ambiguous cases receive a deeper evaluation, persistent failures are delegated as whole Gram blocks, and unresolved regions are meant to remain visible in the result file."
+        },
+        "directed": {
+          "unit_id": "pugh98_u35",
+          "source_grounded_mathematics": "The header says the program establishes roots with certainty but may miss roots when the sign of Z is indeterminate within the tolerance, so its count is a lower bound. In the loop it tests (-1)^n Z(g_n) first with remainder setting 1 and then setting 4 against 0.053/g_n^1.25. If both fail, it advances to the next roughly successful Gram point, calls gramblock on the resulting block, adds the returned roots, and records block totals, total roots, and the longest block.",
+          "conceptual_reading": "The control flow is an escalation tree aligned with epistemic status: accepted local evidence, more expensive local evidence, then exceptional-region analysis. Accounting keeps ordinary and exceptional contributions separate enough to audit the workload and outcome.",
+          "representation_or_bridge": "Gram-point sign margins provide local witnesses; Gram blocks package failed expectations for the adaptive routine; aggregate counters compress those local results into a reported lower bound without themselves adding completeness.",
+          "boundary_or_failure": "The program does not establish that all zeros in the strip or even all critical-line zeros in the sampled range were found. That conclusion requires the separate Turing stage, and warnings from gramblock must be inspected rather than treated as successful certification.",
+          "uncertainty": "The extracted C is readable enough to establish the control flow, but it was not compiled in its full environment. The header's certainty claim is therefore source intent, not independently verified execution evidence."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh98_u35",
+        "critic_decision": "revise",
+        "supported": [
+          "The header's lower-bound intent, two staged point tests, block delegation, aggregation of returned counts, and reported total/block/longest-block counters are accurately summarized.",
+          "The escalation-tree interpretation is grounded in the executable branches, and the candidate correctly distinguishes source intent from independently verified execution."
+        ],
+        "inference": [
+          "Describing the counters as auditable compression of local and block results is reasonable.",
+          "Dependence on a separate Turing stage comes from the packet context, not from the executable span itself, and should be labeled accordingly."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The extracted C was not compiled in its full environment, so header claims cannot certify the actual program behavior."
+        ],
+        "missed_mechanism": [
+          "The search for the block endpoint uses only the rough Z(...,1) test and has no gpt_final bound inside that loop, so the program text does not itself prevent advancing beyond END if no later rough success occurs.",
+          "The code applies 0.053/t^1.25 to the Z(...,4) fallback, but this span does not supply a five-term-specific error justification."
+        ],
+        "revision_instructions": [
+          "Add the unbounded inner block-end search and reused-threshold caveats to boundary_or_failure.",
+          "Label the Turing-stage requirement as supplied by packet context rather than by this exact code span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This executable search constructs inputs to the mathematical bound; it does not by itself prove the bound or verify the reported run.",
+      "line_end": 3603,
+      "line_start": 3461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "C extraction is largely readable, with formula comments and long lines subject to PDF text-layer risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        80,
+        81
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+      "unit_artifact_relpath": "depth/units/pugh98_u36.txt",
+      "unit_bytes": 7987,
+      "unit_id": "pugh98_u36",
+      "unit_sha256": "d1915eb6dfa89b9f2656b3aeca59c0bb012ed85840d659d5209d82b12eb5472f",
+      "unit_type": "executable-certificate-search",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u36.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3453,
+          "line_end": 3460,
+          "text": "\n\n\n\n                                        72\n\n<!-- source-page: 79 -->\n\n",
+          "sha256": "5449e9621512a1d52ad162d9fc6937883255eecd08e7a76e6020d119a3442ae1"
+        },
+        "after": {
+          "line_start": 3604,
+          "line_end": 3611,
+          "text": "\n\n                                        75\n\n<!-- source-page: 82 -->\n\nBibliography\n[1] H. M. Edwards, Riemann’s Zeta Function, Academic Press, 1974.\n",
+          "sha256": "bd0d7398e5c44f5e9c68662501fd23c87c2137390554d49380ea70dad044a59b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix D: Turing-adjustment program",
+            "line_end": 3609,
+            "line_start": 3461,
+            "mathematical_role": "Implements the sign and monotonicity constraints on adjusted Gram points with step refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3603,
+          "line_start": 3461,
+          "title": "The Turing program enforces sign and order constraints while shrinking its adjustment step",
+          "unit_id": "pugh98_u36",
+          "unit_type": "executable-certificate-search",
+          "why_material": "Implements construction of adjusted Gram samples, bidirectional search for sign-certified values, restart on loss of strict ordering, and output of the certificate data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This executable search constructs inputs to the mathematical bound; it does not by itself prove the bound or verify the reported run.",
+          "representation_dependency": "C extraction is largely readable, with formula comments and long lines subject to PDF text-layer risk.",
+          "unit_id": "pugh98_u36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3452,
+            "line_start": 3282,
+            "title": "The root-counting program escalates difficult Gram points and delegates exceptional blocks",
+            "unit_id": "pugh98_u35",
+            "unit_type": "executable-lower-bound-pipeline",
+            "why_material": "The program header states lower-bound semantics and uncertain-region warnings; the body implements cheap tests, precise fallback, block delegation, accounting, and progress/result reporting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh98_u36",
+        "spontaneous": {
+          "unit_id": "pugh98_u36",
+          "spontaneous_reading": "The Turing program searches for a vector of nearby sample points satisfying both local sign margins and a global ordering condition. Each adjustment is chosen by bidirectional stepping; if the accumulated choices cease to be strictly ordered, the grid is halved and the entire coupled construction restarts."
+        },
+        "directed": {
+          "unit_id": "pugh98_u36",
+          "source_grounded_mathematics": "For twenty consecutive Gram indices ending at 12,193,892, the code initializes h_k=0 and step=0.1. At each g_k it increases an integer offset until at least one of g_k minus or plus offset times step makes the parity-adjusted five-term Z value exceed 0.053/t^1.25, preferring the negative side when it passes. It requires the adjusted points g_k+h_k to be strictly increasing; violation halves the step, resets the accumulated adjustment total, and restarts from the first sample. It outputs each Gram point, adjustment, adjusted point, Z value, and the sum of adjustments.",
+          "conceptual_reading": "These adjustments are coupled certificate data, not independent pointwise optimizers. Local sign feasibility must coexist with a monotone global geometry, so discretization refinement repairs incompatibility without weakening either constraint.",
+          "representation_or_bridge": "The arrays g and h represent the certificate witness explicitly. They bridge evaluations of Z near Gram points to the adjusted ordered samples required as inputs for the separate Turing bound on S(g_n).",
+          "boundary_or_failure": "The program constructs candidate inputs to the mathematical bound; it neither proves that bound nor verifies the reported root count on its own. No termination bound is given for repeated step halving, and the code uses the displayed tolerance with the five-term evaluator without deriving that tolerance in this span.",
+          "uncertainty": "The sign search, ordering restart, and output fields are clear in the extracted code, but exact compilation and the historical run are unverified; formula comments and long lines retain PDF text-layer risk."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh98_u36",
+        "critic_decision": "revise",
+        "supported": [
+          "The twenty-point initialization, step 0.1, bidirectional offset search, negative-side preference, strict-order test, step halving/restart, output fields, and h_total are all visible in the code.",
+          "The coupled local-feasibility/global-ordering interpretation is a substantive and source-grounded reading, and the candidate preserves the distinction between constructing inputs and proving the bound."
+        ],
+        "inference": [
+          "Calling g and h an explicit candidate certificate witness is reasonable provided the historical run and downstream bound remain unverified."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says the loop continues until one side 'exceeds' the threshold, but its while condition stops as soon as either side is not strictly below it. Equality therefore also stops the loop, and the subsequent branch need not establish a strict exceedance on the selected positive side."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Long formula lines and PDF extraction remain risky, although the relevant comparison operators are legible in the frozen artifact."
+        ],
+        "missed_mechanism": [
+          "The strict-versus-nonstrict comparison mismatch is a real edge in the displayed executable logic and qualifies the claim that every chosen h satisfies the margin test."
+        ],
+        "revision_instructions": [
+          "Revise source_grounded_mathematics to describe the literal '<' stopping condition and '>' negative-side selection, and explicitly flag the equality edge instead of asserting guaranteed strict exceedance."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "099915c5edf18aac898cc2eccdd92690c382cfc8f23e350e08a7fa60096796a1"
+}

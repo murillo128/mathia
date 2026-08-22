@@ -1,0 +1,590 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w986718947_337aa4e1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w986718947",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact main terms, error exponents, and moment formulas are absent from the normalized extraction. Only the dependency structure among Theorems 1-3 and the stated strip restrictions is safe to retain.",
+      "line_end": 110,
+      "line_start": 16,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Critical scan dependency: theorem displays at lines 20-34, 53-67, and 91-99 are missing. Verify every quantitative claim, parameter range, and exponent against the PDF before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction explains that the sought critical-strip analogue of Atkinson's formula fills a known methodological gap. A parameterized corollary is then estimated and optimized to obtain the mean-square error bound, while a higher-moment result follows by the same architecture. The source also identifies the line sigma=3/4 as a structural barrier rather than a cosmetic endpoint.",
+      "source_id": "openalex_w986718947",
+      "source_normalized_sha256": "bb793dfe0069eaf9368f551cb696bb65cbffa80c0cd633a143a08a706788b6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An explicit Atkinson-type formula becomes the intermediate object from which error and moment results are derived",
+      "unit_artifact_relpath": "depth/units/w986718947_atkinson_formula_organizes_mean_square_errors.txt",
+      "unit_bytes": 3469,
+      "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+      "unit_sha256": "60449a08fefdf2803b8897b9a5ac5ad5bebaed11c2c330310f571ff5535cb5f3",
+      "unit_type": "result_architecture_and_barrier",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w986718947_atkinson_formula_organizes_mean_square_errors.txt",
+      "source": {
+        "source_id": "openalex_w986718947",
+        "title": "The mean square of the Riemann zeta-function in the critical strip",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 1989,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 8,
+          "line_end": 15,
+          "text": "                                  in     the   critical   strip\n\n\n                                  By Kohji MATSUMOTO\n\n                                 (Received April 20, 1987)\n\n\n",
+          "sha256": "ad8e78df6bfbb4ea053b2af4a933a274053dd0a005a8ce998ed778277e4ebf4f"
+        },
+        "after": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "      The aim of the following sections is to prove Theorem 2. In the next\nsection, we first prepare some results on the sums of the arithmetic function\na1-2Q(n).\n\n\n        §2.   Lemmas     on the divisor     function      ai-2a('l)\n        Let\n\n",
+          "sha256": "3c6572c8cdb552cf3619c5578dd3612e2aae6f7afecc80ea48bffc3d42356707"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_be979ee9905aaa3a46b92d521d297868172e125752ea05431e7fb8fe3bd4443d",
+        "dossier_sha256": "e03ef65b9091dd78368e49fb3b2bfe44ffc14e8687ff33664f1eeee2d873da19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statement of results",
+            "line_end": 115,
+            "line_start": 16,
+            "mathematical_role": "announces a sharpened mean-square error, an Atkinson-type formula, moment consequences, and the three-quarter barrier; core displays are missing"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 110,
+          "line_start": 16,
+          "title": "An explicit Atkinson-type formula becomes the intermediate object from which error and moment results are derived",
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "unit_type": "result_architecture_and_barrier",
+          "why_material": "The introduction explains that the sought critical-strip analogue of Atkinson's formula fills a known methodological gap. A parameterized corollary is then estimated and optimized to obtain the mean-square error bound, while a higher-moment result follows by the same architecture. The source also identifies the line sigma=3/4 as a structural barrier rather than a cosmetic endpoint."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact main terms, error exponents, and moment formulas are absent from the normalized extraction. Only the dependency structure among Theorems 1-3 and the stated strip restrictions is safe to retain.",
+          "representation_dependency": "Critical scan dependency: theorem displays at lines 20-34, 53-67, and 91-99 are missing. Verify every quantitative claim, parameter range, and exponent against the PDF before reuse.",
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 174,
+            "line_start": 116,
+            "title": "Use the full Voronoi expansion for structure and a truncated version for robust upper bounds",
+            "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+            "unit_type": "representation_choice_and_convergence_boundary",
+            "why_material": "The source imports Oppenheim's Voronoi-type formula for a generalized divisor summatory function, notes that its bounded convergence fails beyond the three-quarter threshold, and then switches to a finite truncation better suited to estimation. Choosing the truncation parameter yields the lemma needed later for error control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source points to convergence of the main infinite series, the continuation region of a difficult component, absolute convergence of saddle-point remainders, and removal of the final cut as independent places requiring sigma below three quarters.",
+            "limit": "Because the defining series and exponents are absent, the exact equivalence or sharpness of these restrictions must be rechecked in the PDF.",
+            "parent_local_unit_ids": [
+              "w986718947_atkinson_formula_organizes_mean_square_errors",
+              "w986718947_voronoi_full_vs_truncated_forms",
+              "w986718947_componentwise_continuation_isolates_obstruction",
+              "w986718947_saddle_point_evaluation_pipeline",
+              "w986718947_remove_cuts_and_assemble"
+            ],
+            "title": "The three-quarter line appears through multiple convergence obligations, not one arbitrary theorem range"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 34,
+              "line_start": 24,
+              "reason": "Theorem 1's central display and error estimate are absent; only its strip and dependency are visible."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 47,
+              "line_start": 35,
+              "reason": "Notation conventions, critical-line comparison, and motivation for an Atkinson analogue."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 67,
+              "line_start": 48,
+              "reason": "Theorem 2's Atkinson-type formula and definitions are missing from normalized text."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 99,
+              "line_start": 91,
+              "reason": "Theorem 3 and its corollary have no surviving displayed statements."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 124,
+              "line_start": 116,
+              "reason": "Introduces the generalized divisor summatory function and Oppenheim's result."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+        "spontaneous": {
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "spontaneous_reading": "The Atkinson-type formula is the organizing intermediate object: a parameterized corollary derived from it can be estimated and optimized to obtain the mean-square error bound, while the same formula supports the higher-moment result. The repeated restriction sigma<3/4 signals a convergence barrier, not merely a chosen theorem endpoint."
+        },
+        "directed": {
+          "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+          "source_grounded_mathematics": "The introduction announces a sharpening of a mean-square asymptotic in 1/2<sigma<3/4, an Atkinson-type formula with a parameter comparable to the height, and a parameterized corollary whose right-hand side is trivially estimated after choosing the parameter. It also says the moment theorem follows similarly from the Atkinson-type formula and that its main infinite series converges only for sigma<3/4.",
+          "conceptual_reading": "The explicit formula compresses several downstream arguments into one reusable interface. Instead of attacking each error or moment statement separately, the proof exposes a parameterized oscillatory expression and delegates later results to estimation and parameter choice.",
+          "representation_or_bridge": "The bridge runs from the zeta mean square to an Atkinson-style explicit expression and then to finite, tunable sums or error terms. The auxiliary parameter makes a tradeoff controllable, so optimization converts structural information into the announced bound.",
+          "boundary_or_failure": "The normalized text omits the defining displays for all three theorems and the corollary. It therefore supports the dependency graph and the sigma=3/4 convergence obstruction, but not any exact main term, exponent, parameter range, or claim that the barrier is sharp.",
+          "uncertainty": "High confidence in the stated proof architecture and qualitative barrier; low confidence in every quantitative detail because the central displays are absent or corrupted."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly makes Theorem 2 an Atkinson analogue, derives Theorem 1 through a parameterized corollary with a chosen X, and says the later Theorem 3 result follows from Theorem 2 in the same way.",
+          "The span explicitly links the condition a<3/4 to convergence of the main infinite series, says the deeper reason lies in the proof of Theorem 2, and calls a=3/4 an interesting barrier."
+        ],
+        "inference": [
+          "Treating Theorem 2 as a reusable interface for several downstream results is a well-anchored conceptual compression of the stated dependency graph.",
+          "Describing the choice of X as optimization is reasonable, but the missing corollary display prevents recovery of the actual tradeoff."
+        ],
+        "unsupported_or_imported": [
+          "Calling Theorem 3 a higher-moment or moment theorem is not supported by this frozen extraction because its displayed statement is absent.",
+          "The claims that the missing Atkinson formula exposes a parameterized oscillatory expression and bridges specifically to finite tunable sums or error terms reconstruct content not visible in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The reusable-interface language is informative only when kept tied to the explicit Theorem 2 to Theorem 1 and Theorem 3 dependency graph; by itself it would be a generic representation-exposes-structure template."
+        ],
+        "context_or_ocr_risk": [
+          "The displays for Theorems 1-3, Theorem 2's definitions, and the corollary are absent, so exact main terms, exponents, parameter effects, and the mathematical type of Theorem 3 are unsafe."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the source's distinction between the visible series-convergence reason for Theorem 3's range and the stated deeper proof-of-Theorem-2 reason for the same boundary without adding a formula-level explanation."
+        ],
+        "revision_instructions": [
+          "Replace higher-moment or moment-theorem wording with Theorem 3 and its corollary, and remove or explicitly label as unverified the oscillatory-expression, finite-sum, and error-tradeoff descriptions. Retain the qualitative dependency graph and the source's two stated roles of a<3/4."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction between bounded convergence on finite intervals and a truncation valid for arbitrary positive N becomes decisive in the later repair of termwise integration.",
+      "line_end": 174,
+      "line_start": 116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The divisor-function definition, Bessel expansion, asymptotic rewrite, and both lemma formulas are mostly absent. Prose supports their roles and convergence boundaries only; exact formulas require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source imports Oppenheim's Voronoi-type formula for a generalized divisor summatory function, notes that its bounded convergence fails beyond the three-quarter threshold, and then switches to a finite truncation better suited to estimation. Choosing the truncation parameter yields the lemma needed later for error control.",
+      "source_id": "openalex_w986718947",
+      "source_normalized_sha256": "bb793dfe0069eaf9368f551cb696bb65cbffa80c0cd633a143a08a706788b6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use the full Voronoi expansion for structure and a truncated version for robust upper bounds",
+      "unit_artifact_relpath": "depth/units/w986718947_voronoi_full_vs_truncated_forms.txt",
+      "unit_bytes": 1806,
+      "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+      "unit_sha256": "31529c86562c9802a54aa12b44eb770bd29cbb73f7ca9d89f03f191c44fc8170",
+      "unit_type": "representation_choice_and_convergence_boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w986718947_voronoi_full_vs_truncated_forms.txt",
+      "source": {
+        "source_id": "openalex_w986718947",
+        "title": "The mean square of the Riemann zeta-function in the critical strip",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 1989,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 108,
+          "line_end": 115,
+          "text": "      The exponent (3/4)-a appearing in the statement of the Corollary\nvanishes if we substitute the value a=3/4.    This fact also suggests that the\nline a=3/4 forms an interesting barrier in the theory of a(s).\n      The aim of the following sections is to prove Theorem 2. In the next\nsection, we first prepare some results on the sums of the arithmetic function\na1-2Q(n).\n\n\n",
+          "sha256": "5b70a9a355388cee6cfb149971ff5ced7b08e7e8cbf7718c0e9e5256420495f9"
+        },
+        "after": {
+          "line_start": 175,
+          "line_end": 182,
+          "text": "\n\n        §3.   The initial   part of the proof of Theorem   2\n     Now we start to sketch the proof of Theorem 2. The structure of the\nproof is the same as that of Atkinson's original argument [1] (see also §15.2\nof Ivic [5]), so we omit the details except for some crucial points.\n     Let u, v be two complex variables, and we first assume Re (u)>1 and\nRe (v)>1. It is obvious that\n",
+          "sha256": "6ab94c7d9640f58f503835664bef6fb65a0fdd2963ae87861ad22bd38a9b59b4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_be979ee9905aaa3a46b92d521d297868172e125752ea05431e7fb8fe3bd4443d",
+        "dossier_sha256": "e03ef65b9091dd78368e49fb3b2bfe44ffc14e8687ff33664f1eeee2d873da19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Generalized divisor-function lemmas",
+            "line_end": 176,
+            "line_start": 116,
+            "mathematical_role": "introduces Oppenheim's Voronoi formula, convergence limits, and a truncated form for upper bounds"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 174,
+          "line_start": 116,
+          "title": "Use the full Voronoi expansion for structure and a truncated version for robust upper bounds",
+          "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+          "unit_type": "representation_choice_and_convergence_boundary",
+          "why_material": "The source imports Oppenheim's Voronoi-type formula for a generalized divisor summatory function, notes that its bounded convergence fails beyond the three-quarter threshold, and then switches to a finite truncation better suited to estimation. Choosing the truncation parameter yields the lemma needed later for error control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distinction between bounded convergence on finite intervals and a truncation valid for arbitrary positive N becomes decisive in the later repair of termwise integration.",
+          "representation_dependency": "The divisor-function definition, Bessel expansion, asymptotic rewrite, and both lemma formulas are mostly absent. Prose supports their roles and convergence boundaries only; exact formulas require the PDF.",
+          "unit_id": "w986718947_voronoi_full_vs_truncated_forms"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 110,
+            "line_start": 16,
+            "title": "An explicit Atkinson-type formula becomes the intermediate object from which error and moment results are derived",
+            "unit_id": "w986718947_atkinson_formula_organizes_mean_square_errors",
+            "unit_type": "result_architecture_and_barrier",
+            "why_material": "The introduction explains that the sought critical-strip analogue of Atkinson's formula fills a known methodological gap. A parameterized corollary is then estimated and optimized to obtain the mean-square error bound, while a higher-moment result follows by the same architecture. The source also identifies the line sigma=3/4 as a structural barrier rather than a cosmetic endpoint."
+          },
+          {
+            "line_end": 240,
+            "line_start": 177,
+            "title": "A two-variable identity is continued first and specialized only after both representations overlap",
+            "unit_id": "w986718947_two_variable_continuation_reduction",
+            "unit_type": "analytic_continuation_and_specialization",
+            "why_material": "The proof begins in a domain of absolute convergence, continues one representation to a larger region, obtains another expression in a complementary region, and equates them where analytic continuation permits. Specializing conjugate-like variables, integrating in height, and applying Stirling asymptotics reduces the mean-square problem to the auxiliary function g on a particular parameter slice."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source points to convergence of the main infinite series, the continuation region of a difficult component, absolute convergence of saddle-point remainders, and removal of the final cut as independent places requiring sigma below three quarters.",
+            "limit": "Because the defining series and exponents are absent, the exact equivalence or sharpness of these restrictions must be rechecked in the PDF.",
+            "parent_local_unit_ids": [
+              "w986718947_atkinson_formula_organizes_mean_square_errors",
+              "w986718947_voronoi_full_vs_truncated_forms",
+              "w986718947_componentwise_continuation_isolates_obstruction",
+              "w986718947_saddle_point_evaluation_pipeline",
+              "w986718947_remove_cuts_and_assemble"
+            ],
+            "title": "The three-quarter line appears through multiple convergence obligations, not one arbitrary theorem range"
+          },
+          {
+            "claim": "A full Voronoi expansion gives structural information but only bounded convergence on finite intervals. Introducing finite cuts makes termwise integration legitimate; only after uniform estimates and absolute convergence are established are the cuts removed.",
+            "limit": "The exact uniformity and order of limits are encoded in missing displays and must be verified against the scan.",
+            "parent_local_unit_ids": [
+              "w986718947_voronoi_full_vs_truncated_forms",
+              "w986718947_finite_cut_repairs_termwise_integration",
+              "w986718947_remove_cuts_and_assemble"
+            ],
+            "title": "Finite truncation is a proof device for legalizing an interchange, not merely a numerical approximation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 124,
+              "line_start": 116,
+              "reason": "Introduces the generalized divisor summatory function and Oppenheim's result."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 140,
+              "line_start": 125,
+              "reason": "The full Voronoi/Bessel formulas are absent, though prose preserves the convergence boundary."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 172,
+              "line_start": 161,
+              "reason": "The truncated formula and resulting Lemma 2 display are absent."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 176,
+              "line_start": 173,
+              "reason": "Acknowledgement and transition to the proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+        "spontaneous": {
+          "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+          "spontaneous_reading": "Two versions of the Voronoi representation serve different purposes. The full Bessel-series expansion exposes structure but has only bounded convergence on fixed finite intervals, whereas a truncated formula supplies robust upper bounds and a cutoff that can later make interchange arguments legitimate."
+        },
+        "directed": {
+          "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+          "source_grounded_mathematics": "Oppenheim's Voronoi-type formula represents a generalized divisor summatory error through Bessel functions. The source states that the relevant series fails to converge beyond sigma=3/4 and that its asymptotic rewrite is boundedly convergent on each fixed finite interval. For upper bounds it instead invokes Kiuchi's truncated formula for arbitrary positive integer cutoff and chooses that cutoff to obtain Lemma 2.",
+          "conceptual_reading": "This is a representation choice governed by the next proof operation: the infinite expansion is informative about oscillatory structure, while finite truncation trades completeness for controllable errors and safer manipulation.",
+          "representation_or_bridge": "The Voronoi transform bridges an arithmetic summatory error to oscillatory Bessel terms. Introducing a cutoff turns that bridge into a finite object whose tail can be bounded and whose parameter can be balanced against other errors.",
+          "boundary_or_failure": "Bounded convergence on fixed finite intervals does not license termwise integration over an improper range, and the full series is explicitly unavailable past the three-quarter threshold. The exact divisor function, Bessel expansion, truncation error, and optimizing cutoff are not recoverable from the extraction.",
+          "uncertainty": "The prose securely distinguishes the roles and convergence regimes of the full and truncated forms; all displayed formulas and quantitative bounds require verification against the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w986718947_voronoi_full_vs_truncated_forms",
+        "critic_decision": "revise",
+        "supported": [
+          "The span identifies Oppenheim's Voronoi-type Bessel representation, says its asymptotic rewrite is boundedly convergent on each fixed finite interval, and states nonconvergence for a>3/4.",
+          "The span explicitly prefers Kiuchi's truncated formula for upper-bound estimation, allows any positive integer N, and chooses N to obtain Lemma 2."
+        ],
+        "inference": [
+          "Reading the two forms as representations selected for different proof operations is well grounded: the full form carries Bessel-series information while the truncated form is introduced for an upper bound.",
+          "Oscillatory-structure language is a plausible inference from the Bessel functions and their asymptotic expansions, not a surviving displayed conclusion."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the cutoff later legitimizes an interchange, and the warning about termwise integration over an improper range, belong to a later source span rather than this frozen unit.",
+          "The missing truncated display does not establish here that a named tail is bounded or that its cutoff is balanced against other errors."
+        ],
+        "paraphrase_or_style_risk": [
+          "Exposes structure versus robust bounds is somewhat generic unless stated through the concrete contrast between the boundedly convergent Bessel series and the truncated upper-bound formula."
+        ],
+        "context_or_ocr_risk": [
+          "The divisor-function definition, both Voronoi displays, the Bessel asymptotic form, the truncation error, and Lemma 2's bound are missing; equality at a=3/4 is also not settled by the surviving statement for a>3/4."
+        ],
+        "missed_mechanism": [
+          "The candidate does not distinguish clearly enough between what this unit itself says about upper-bound convenience and the separate later use of a finite cut to repair termwise integration."
+        ],
+        "revision_instructions": [
+          "Confine the analysis to the in-span representation choice and convergence facts. Remove the later improper-integral repair claim and any formula-level tail-balancing claim, or label those as outside-unit context requiring the later span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Subsequent Fubini rearrangements produce four G-components for saddle-point analysis. Their exact definitions are missing, so the unit preserves only the decomposition strategy and localization of difficulty.",
+      "line_end": 327,
+      "line_start": 243,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (4.1)-(4.7) and nearly all definitions of g1-g4 and G1-G4 are absent. PDF recovery is mandatory before using component formulas or bounds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Following Atkinson, the auxiliary function is split into four pieces. Absolute convergence handles the first components, a separate expression continues another, and the fourth component requires the truncated divisor estimate. The source uses the resulting convergence region to show exactly why sigma below three quarters reaches the desired line.",
+      "source_id": "openalex_w986718947",
+      "source_normalized_sha256": "bb793dfe0069eaf9368f551cb696bb65cbffa80c0cd633a143a08a706788b6ea",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Decompose the auxiliary transform so routine components continue directly and one component carries the real convergence obstruction",
+      "unit_artifact_relpath": "depth/units/w986718947_componentwise_continuation_isolates_obstruction.txt",
+      "unit_bytes": 1430,
+      "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+      "unit_sha256": "c14d80d35aafd5f748a1f7b2d4f37bcbd4baaffcea84f330da3dabf32ded93fa",
+      "unit_type": "decomposition_and_obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w986718947_componentwise_continuation_isolates_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w986718947",
+        "title": "The mean square of the Riemann zeta-function in the critical strip",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 1989,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "\n(3.5)\n\nTherefore, our problem is reduced to the study of the function g(u, 20u).\nWe first consider the problem of the analytic continuation of this function\nin the next section.\n\n\n",
+          "sha256": "1cd09efe23030ce073541a37a8f84895f9dda161748a533dff8d753f498203f1"
+        },
+        "after": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "        §5.   Application    of Atkinson's         first lemma\n    To complete the proof of his formula, Atkinson introduced two lemmas,\nwhich evaluate some exponential integrals by using the saddle point method.\n W now quote the first lemma of Atkinson.\n  e\n\n     LEMMA3 (Lemma 2 of Atkinson [1] ; see also Lemma 15.1 of Ivic [5]).\n     Let a(1), j3, r be positive numbers, k be a real number with (kl>1, 0<a\n",
+          "sha256": "3fc8c2166715db157cf2ac41c8e5f7fb47b61de50794ecb7e4cf39a43ec7e289"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_be979ee9905aaa3a46b92d521d297868172e125752ea05431e7fb8fe3bd4443d",
+        "dossier_sha256": "e03ef65b9091dd78368e49fb3b2bfe44ffc14e8687ff33664f1eeee2d873da19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analytic continuation of the auxiliary function",
+            "line_end": 327,
+            "line_start": 243,
+            "mathematical_role": "decomposes the transform into four components, continues them separately, and isolates the convergence-sensitive term"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 327,
+          "line_start": 243,
+          "title": "Decompose the auxiliary transform so routine components continue directly and one component carries the real convergence obstruction",
+          "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+          "unit_type": "decomposition_and_obstruction",
+          "why_material": "Following Atkinson, the auxiliary function is split into four pieces. Absolute convergence handles the first components, a separate expression continues another, and the fourth component requires the truncated divisor estimate. The source uses the resulting convergence region to show exactly why sigma below three quarters reaches the desired line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Subsequent Fubini rearrangements produce four G-components for saddle-point analysis. Their exact definitions are missing, so the unit preserves only the decomposition strategy and localization of difficulty.",
+          "representation_dependency": "Equations (4.1)-(4.7) and nearly all definitions of g1-g4 and G1-G4 are absent. PDF recovery is mandatory before using component formulas or bounds.",
+          "unit_id": "w986718947_componentwise_continuation_isolates_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 240,
+            "line_start": 177,
+            "title": "A two-variable identity is continued first and specialized only after both representations overlap",
+            "unit_id": "w986718947_two_variable_continuation_reduction",
+            "unit_type": "analytic_continuation_and_specialization",
+            "why_material": "The proof begins in a domain of absolute convergence, continues one representation to a larger region, obtains another expression in a complementary region, and equates them where analytic continuation permits. Specializing conjugate-like variables, integrating in height, and applying Stirling asymptotics reduces the mean-square problem to the auxiliary function g on a particular parameter slice."
+          },
+          {
+            "line_end": 394,
+            "line_start": 328,
+            "title": "A reusable saddle-point lemma evaluates several components uniformly while auxiliary truncation bounds control errors",
+            "unit_id": "w986718947_saddle_point_evaluation_pipeline",
+            "unit_type": "asymptotic_evaluation",
+            "why_material": "Atkinson's first lemma is quoted as a uniform exponential-integral evaluator. It is applied successively to the separated G-components, with the truncated divisor lemma supplying an error bound for one of them. The last component again forces sigma<3/4 through absolute convergence of its remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof establishes overlapping two-variable representations first, specializes to the mean-square slice only after continuation, and then decomposes the remaining auxiliary function so each continuation obligation is visible.",
+            "limit": "Exact domains and identities are missing from normalized text; the synthesis captures sequencing, not a reusable formula.",
+            "parent_local_unit_ids": [
+              "w986718947_two_variable_continuation_reduction",
+              "w986718947_componentwise_continuation_isolates_obstruction"
+            ],
+            "title": "Analytic continuation is safest when performed before specializing coupled variables"
+          },
+          {
+            "claim": "The source points to convergence of the main infinite series, the continuation region of a difficult component, absolute convergence of saddle-point remainders, and removal of the final cut as independent places requiring sigma below three quarters.",
+            "limit": "Because the defining series and exponents are absent, the exact equivalence or sharpness of these restrictions must be rechecked in the PDF.",
+            "parent_local_unit_ids": [
+              "w986718947_atkinson_formula_organizes_mean_square_errors",
+              "w986718947_voronoi_full_vs_truncated_forms",
+              "w986718947_componentwise_continuation_isolates_obstruction",
+              "w986718947_saddle_point_evaluation_pipeline",
+              "w986718947_remove_cuts_and_assemble"
+            ],
+            "title": "The three-quarter line appears through multiple convergence obligations, not one arbitrary theorem range"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 242,
+              "line_start": 241,
+              "reason": "Blank transition to Section 4."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 264,
+              "line_start": 243,
+              "reason": "Definitions and four-part decomposition of g are absent from the extracted displays."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 327,
+              "line_start": 286,
+              "reason": "Equations (4.3)-(4.7) and definitions of the G-components are missing, though prose records Fubini and component routing."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+        "spontaneous": {
+          "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+          "spontaneous_reading": "Decomposing the auxiliary transform into four components localizes the analytic-continuation burden: two pieces are harmless by absolute convergence, a third has a separate continuation, and the fourth alone needs the truncated divisor estimate and imposes the three-quarter restriction."
+        },
+        "directed": {
+          "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+          "source_grounded_mathematics": "Following Atkinson's method, the source splits g into four terms. An absolutely convergent integral makes the first two terms unproblematic; another expression continues the third; and an estimate combined with Lemma 2 gives a convergence region for the fourth which contains the target line when sigma<3/4. The continued representation is then rearranged by Fubini into four G-components for later evaluation.",
+          "conceptual_reading": "The decomposition is diagnostic rather than cosmetic: it assigns a distinct justification to each component and reveals that the obstruction is concentrated in one term instead of belonging vaguely to the entire transform.",
+          "representation_or_bridge": "The g-component decomposition bridges analytic continuation to asymptotic analysis. Repackaging the continued terms as G1-G4 exposes separate exponential-integral targets to which saddle-point tools can later be applied.",
+          "boundary_or_failure": "The exact definitions of both component families and equations (4.1)-(4.7) are absent. Consequently, the precise convergence region, hypotheses for Fubini, and quantitative contribution of each term remain unverified even though their roles are explicit.",
+          "uncertainty": "High confidence in the component routing and localization of the obstruction; low confidence in all formulas, exact bounds, and whether the extracted inequality has preserved its signs correctly."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w986718947_componentwise_continuation_isolates_obstruction",
+        "critic_decision": "revise",
+        "supported": [
+          "The span splits g into four terms, disposes of the first two through absolute convergence, gives a separate continuation for the third, and uses Lemma 2 to place the fourth in a region containing the target line when a<3/4.",
+          "After continuation, the source invokes Fubini and introduces G-components, so decomposition and repackaging are both source-grounded."
+        ],
+        "inference": [
+          "Calling the decomposition diagnostic rather than cosmetic is well supported because the span assigns different continuation justifications to the components and concentrates the visible restriction in g4.",
+          "Interpreting the G-decomposition as preparation for later evaluation is reasonable, but the exact targets are not visible in this unit."
+        ],
+        "unsupported_or_imported": [
+          "The statement that G1-G4 are separate exponential-integral targets to which saddle-point tools will be applied imports the next section; this span neither states saddle-point use nor preserves the component definitions."
+        ],
+        "paraphrase_or_style_risk": [
+          "The localization-of-obstruction language is non-generic here because it is tied to the distinct g1-g4 justifications and Lemma 2's role in g4."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (4.1)-(4.7), nearly all g- and G-component definitions, the precise convergence inequality, and the hypotheses needed for Fubini are missing or garbled."
+        ],
+        "missed_mechanism": [
+          "The safe endpoint of this unit is the Fubini-based G-component repackaging; identification of those components as saddle-point integrals requires the following span."
+        ],
+        "revision_instructions": [
+          "Delete the asserted later saddle-point application from the source-grounded bridge, or mark it explicitly as outside-unit context. Preserve the supported componentwise continuation logic, target-line inclusion under a<3/4, and Fubini repackaging without formula reconstruction."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "24cbdf86721771ddbb5b6d3b56d1c1232ac1e9f769761f89d15d5d03c3e2aa31"
+}

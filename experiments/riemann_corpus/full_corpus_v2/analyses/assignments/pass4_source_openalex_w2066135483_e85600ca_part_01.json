@@ -1,0 +1,1269 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2066135483_e85600ca_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2066135483",
+  "unit_count": 8,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source reports the numerical calculation but does not provide code or an independent certificate; it supports the proof's final parameter selection, not reproducibility by itself.",
+      "line_end": 532,
+      "line_start": 476,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the definition of V and the weighted integrals are formula-dependent; the decisive inequality and chosen parameters are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substitutes the near-central moment into the two boundary integrals, reduces the bad-family proportion to explicit integrals of V, and records the parameter choice whose computer evaluation gives 0.79, below the real-zero threshold one.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit mollifier parameters close the positive-proportion inequality",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d03.txt",
+      "unit_bytes": 3162,
+      "unit_id": "openalex_w2066135483_d03",
+      "unit_sha256": "94dde90a518911b82bf084de7f42d1e8b634e2e40474ed99db1ff6643d8d6956",
+      "unit_type": "parameter selection and computational certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d03.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 468,
+          "line_end": 475,
+          "text": "   \u0010 1 − (8X/π)−2τ \u00128X \u0013−τ (8X/π)δ − (8X/π)−δ \u0011 Z b                           Q′′ (x) 2\n1+                   −                                   M −2τ (1−x) Q′ (x)+            dx\n         2τ log M         π          2δ log M          0                     2δ1 log M\n\nwith an error O(X −τ −ǫ Φ(2) Φǫ(3) + M −2τ (1−b) |δ1 |6 log5 X).\n   We emphasize that the conditions on |δ1 | and Re δ1 were assumed only to ease our\nexposition. In fact, the stated result holds without these restraints. Armed with these\nresults, we complete the proof of Theorem 1.\n",
+          "sha256": "c8188ff4a0f1ea071d5c10af42d4fee72c5312b81711f7aa63b3c51617918859"
+        },
+        "after": {
+          "line_start": 533,
+          "line_end": 540,
+          "text": "   We end this section by reflecting on some features of the method used to prove Theorem\n1. Our overall strategy was to estimate on average the number of zeros (weighted suitably)\nof the mollified L-function in a small box B as in Lemma 2.1. If we use the usual argument\nprinciple to estimate the zeros in B, then we face the problem of trying to understand\nthe argument of f (s, d) on the horizontal sides of B. This appears to be difficult because\nthe argument of L(s, χ−8d ) is intimately related to the location of its zeros. Selberg’s\nargument principle (Lemma 2.1) allows us to circumvent this by introducing the kernel\nsin(π(s−W0 +iH)/(2iH)) which is real on the left vertical edge of B, and purely imaginary\n",
+          "sha256": "865820dceb6da5b4d00e88119cbe586655d5d2e36f28bbf721578288f032caa1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Outline of the Proof",
+            "line_end": 629,
+            "line_start": 61,
+            "mathematical_role": "Builds the weighted zero-count reduction, mollifier and shifted-moment interface, theorem-closing numerical bound, methodological limitations, and symmetry heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 532,
+          "line_start": 476,
+          "title": "Explicit mollifier parameters close the positive-proportion inequality",
+          "unit_id": "openalex_w2066135483_d03",
+          "unit_type": "parameter selection and computational certification",
+          "why_material": "Substitutes the near-central moment into the two boundary integrals, reduces the bad-family proportion to explicit integrals of V, and records the parameter choice whose computer evaluation gives 0.79, below the real-zero threshold one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source reports the numerical calculation but does not provide code or an independent certificate; it supports the proof's final parameter selection, not reproducibility by itself.",
+          "representation_dependency": "High: the definition of V and the weighted integrals are formula-dependent; the decisive inequality and chosen parameters are legible.",
+          "unit_id": "openalex_w2066135483_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 475,
+            "line_start": 282,
+            "title": "Shifted moment propositions isolate tail, main term, and near-central specialization",
+            "unit_id": "openalex_w2066135483_d02",
+            "unit_type": "proof architecture",
+            "why_material": "Organizes the analytic burden into an off-center estimate, an approximate functional equation for paired completed values, a square-free truncation, an explicit principal-plus-remainder formula, and the near-central specialization actually needed for the zero count."
+          },
+          {
+            "line_end": 569,
+            "line_start": 533,
+            "title": "Kernel geometry and mollifier length impose a box-size tradeoff",
+            "unit_id": "full_openalex_w2066135483_u01",
+            "unit_type": "methodological limitation",
+            "why_material": "Explains why the Selberg kernel avoids the hard boundary argument, why its exponential horizontal growth forces a long coefficient-annihilating mollifier, and why the box height, mollifier length, and unresolved coefficient optimization are coupled."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Design a nonnegative zero detector for which one forbidden event costs at least one, then prove the family mean is below one by translating boundary logarithms into shifted mollified moments.",
+            "limit": "The quantitative success is family-, kernel-, mollifier-, and parameter-specific; the source does not prove a general detector theorem.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2066135483_u03",
+              "full_openalex_w2066135483_u04",
+              "openalex_w2066135483_d02",
+              "openalex_w2066135483_d03"
+            ],
+            "title": "A positive-cost detector converts mean control into positive-proportion exclusion"
+          },
+          {
+            "claim": "The rigorous detector succeeds at a numerically certified mean below one, while symplectic zero repulsion independently predicts a substantially smaller low-zero contribution and motivates transfer to other repulsive families.",
+            "limit": "The prediction assumes GRH and Katz-Sarnak density and does not validate the computed mollified contribution or its transfer.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2066135483_u01",
+              "openalex_w2066135483_d03",
+              "openalex_w2066135483_d04"
+            ],
+            "title": "Symmetry heuristic explains parameter plausibility but remains outside the proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d03",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d03",
+          "spontaneous_reading": "The analytic proof is compressed into a detector calibration: express both boundary contributions through log V, then choose a mollifier taper and box parameters so the computed family mean is 0.79, below the unit cost of a real zero."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d03",
+          "source_grounded_mathematics": "Proposition 2.4 replaces the normalized shifted moment W by V(u,v); the two boundary quantities become weighted integrals of log V, and the choices R=6.8, b=0.64, and P(x)=3(x/b)²-2(x/b)³ are reported to give N(X,Φ)≤0.79 X S(1;Φ)+o(X).",
+          "conceptual_reading": "A nonnegative zero detector converts a difficult exclusion statement into an average-threshold argument: if each forbidden event costs more than one and the family mean is below one, a positive proportion avoids it.",
+          "representation_or_bridge": "V(u,v) is the finite analytic interface between near-central mollified moments and the cosine/sinh-weighted boundary integrals entering the zero count.",
+          "boundary_or_failure": "The source reports a computer calculation but supplies neither code nor an independent numerical certificate; the 0.79 result is tied to this family, kernel, mollifier, and parameter choice.",
+          "uncertainty": "Moderate for the mechanism and decisive inequality, but high for exact integral normalization and the extracted formula defining V."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span substitutes V into the two weighted boundary integrals and reports that R=6.8, b=0.64, and the stated cubic P give N(X,Phi)<=0.79 X S(1;Phi)+o(X).",
+          "It reports a computer calculation and supplies no code or independent numerical certificate in this packet."
+        ],
+        "inference": [
+          "Treating the parameter choice as detector calibration and V as the interface between the shifted moment and boundary integrals is well supported."
+        ],
+        "unsupported_or_imported": [
+          "The claim that each forbidden real zero has unit cost, and therefore that a mean below one directly yields a positive-proportion avoidance argument, is not stated in this frozen span; that detector lower bound belongs to earlier material."
+        ],
+        "paraphrase_or_style_risk": [
+          "The conceptual paragraph imports the detector-threshold template instead of limiting itself to the explicit inequality derived here."
+        ],
+        "context_or_ocr_risk": [
+          "The definition of V and the integral normalizations are OCR-sensitive, although the reported parameters and 0.79 inequality are legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the W-to-V substitution, the two weighted log-V integrals, the reported parameter choice, and the reproducibility limitation. Remove or explicitly label as outside-span dependency the assertion that a real zero costs more than one and the ensuing positive-proportion inference."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The lemma is quoted from prior work but used concretely throughout Section 5.",
+      "line_end": 743,
+      "line_start": 693,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the case distinction is display-heavy; accept for mechanism, with scan verification required for exact local constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the exact local rules that decide which Poisson frequencies survive and how square and nonsquare prime powers contribute, enabling later Euler-factor and support calculations.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-power Gauss sums encode multiplicativity and frequency support",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d06.txt",
+      "unit_bytes": 2485,
+      "unit_id": "openalex_w2066135483_d06",
+      "unit_sha256": "c81f8a9ce2e66795a8242b6addeb333e5325c841124619c2875d157cc4ff20cc",
+      "unit_type": "local arithmetic transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d06.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 685,
+          "line_end": 692,
+          "text": "                                                                                                       ,\n                                                                                            n 2 +s\n and integrating term by term, we get that this equals Aδ,τ (d). Now move the path of\n integration to the line Re(s) = −c. We encounter poles at s = τ , −τ , and the residues\n here give ξ( 21 + δ + τ, χ−8d )ξ( 21 − δ + τ, χ−8d ) + ξ( 21 + δ − τ, χ−8d )ξ( 21 − δ − τ, χ−8d ) =\n 2ξ( 21 + δ1 , χ−8d )ξ( 21 + δ2 , χ−8d ), upon using the functional equation. In the remaining\n integral on the −c line, we let s → −s and use the functional equation. Then it evaluates\n to −Aδ,τ (d), which completes our proof.\n",
+          "sha256": "ffd12b2d46e5a056571d44b749942b686e0ce52c16ec776397b3d04df8715acb"
+        },
+        "after": {
+          "line_start": 744,
+          "line_end": 751,
+          "text": "\n<!-- source-page: 13 -->\n\nREAL ZEROS OF QUADRATIC DIRICHLET L-FUNCTIONS                                          13\n\n3.3 Lemmas for estimating character sums.\nWe collect here two lemmas that will be very useful in bounding the character sums that\narise below. These are consequences of a recent large sieve result for real characters due\n",
+          "sha256": "dd26e3d70e1629c9352bbfc5a378083f91cf3cd7173c3ff6cc70ab7b4aa0bf42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 On Gauss-type sums",
+            "line_end": 748,
+            "line_start": 693,
+            "mathematical_role": "Records multiplicative and prime-power support rules for the Gauss sums used after Poisson summation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 743,
+          "line_start": 693,
+          "title": "Prime-power Gauss sums encode multiplicativity and frequency support",
+          "unit_id": "openalex_w2066135483_d06",
+          "unit_type": "local arithmetic transform",
+          "why_material": "Provides the exact local rules that decide which Poisson frequencies survive and how square and nonsquare prime powers contribute, enabling later Euler-factor and support calculations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The lemma is quoted from prior work but used concretely throughout Section 5.",
+          "representation_dependency": "High: the case distinction is display-heavy; accept for mechanism, with scan verification required for exact local constants.",
+          "unit_id": "openalex_w2066135483_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 692,
+            "line_start": 630,
+            "title": "Contour symmetry gives an exact smoothed representation of paired completed values",
+            "unit_id": "openalex_w2066135483_d05",
+            "unit_type": "approximate functional equation",
+            "why_material": "Establishes small- and large-argument behavior of the smoothing kernel, then shifts the paired-completed-L integral so the functional equation makes the remainder equal the negative original series, yielding an exact representation."
+          },
+          {
+            "line_end": 779,
+            "line_start": 749,
+            "title": "Real-character large sieve and shifted L-moments control averaged errors",
+            "unit_id": "openalex_w2066135483_d07",
+            "unit_type": "analytic estimation toolkit",
+            "why_material": "Packages character-sum and second/fourth-moment estimates that repeatedly convert long arithmetic expressions into controlled family averages."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Local support rules should be used to identify exceptional square frequencies as main terms before applying decay and large-sieve bounds to the remaining off-diagonal mass.",
+            "limit": "The available average bound is solver-specific analytic evidence here, not a universal prescription for every trace or Poisson formula.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d06",
+              "openalex_w2066135483_d16",
+              "openalex_w2066135483_d19",
+              "openalex_w2066135483_d20"
+            ],
+            "title": "Separate structural main terms before estimating the genuine remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d06",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d06",
+          "spontaneous_reading": "Prime-adic valuation rules turn Gauss sums into a sparse frequency filter: most prime-power combinations vanish, while the surviving boundary cases encode whether a dual frequency can contribute structurally."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d06",
+          "source_grounded_mathematics": "G_k(n) is multiplicative on coprime odd moduli. For p^β its value is determined by α=v_p(k): it vanishes in several parity/range cases, equals a totient or signed p-power in others, and for square-free n reduces to the familiar quadratic Gauss-sum form.",
+          "conceptual_reading": "A global dual sum becomes controllable because its support and amplitude can be decided locally prime by prime.",
+          "representation_or_bridge": "G_k(n) is the arithmetic transform connecting quadratic characters in the original average to frequency k after Poisson summation.",
+          "boundary_or_failure": "The lemma is quoted from prior work; its exact local constants and character signs should be checked against the scan before literal reuse.",
+          "uncertainty": "High because the case distinction is display-heavy, though multiplicativity and the valuation-support mechanism are unambiguous."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d06",
+        "critic_decision": "revise",
+        "supported": [
+          "The lemma states multiplicativity of G_k on coprime odd moduli and gives prime-power values determined by beta and alpha=v_p(k).",
+          "The cases include several zeros and surviving totient, signed p-power, and quadratic-character values; for square-free n the familiar quadratic Gauss-sum form is stated."
+        ],
+        "inference": [
+          "It is reasonable to describe the valuation cases as a sparse local support filter."
+        ],
+        "unsupported_or_imported": [
+          "The frozen span does not mention Poisson summation, a dual sum, or a dual frequency, so the claimed bridge from the original character average to frequency k after Poisson summation is imported from later context."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Contribute structurally' is vague unless tied to a specific surviving case of the displayed prime-power rule."
+        ],
+        "context_or_ocr_risk": [
+          "The case distinction is display-heavy and exact signs and constants require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Restrict the bridge and conceptual claims to the explicit multiplicative, prime-adic support and amplitude rules for G_k(n). Remove references to Poisson summation, dual frequencies, and later Euler-factor use, or mark them explicitly as outside-span dependencies."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This short lemma is the bridge from family averaging to the principal/secondary/remainder decomposition in Section 5.",
+      "line_end": 797,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: normalization factors and the transformed test function require exact formula layout.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the original discriminant average into a sum over dual integer frequencies weighted by Gauss sums, exposing a zero-frequency diagonal and structured nonzero frequencies.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson summation dualizes the square-free quadratic-character average",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d08.txt",
+      "unit_bytes": 942,
+      "unit_id": "openalex_w2066135483_d08",
+      "unit_sha256": "b4b4ede628630db397557462199414c1881ee89b6631f57691f0e185b571f662",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d08.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "\n                                                                                                      1\n X                                                          X\n         |L(σ + it, χ)|4 ≪ Q1+ǫ (1 + |t|)1+ǫ ,   and                |L(σ + it, χ)|2 ≪ Q1+ǫ (1 + |t|) 2 +ǫ .\nχ∈S(Q)                                                     χ∈S(Q)\n\n\n\n",
+          "sha256": "b9d702b127f6f449620545f12d72fa27ed702747ccda1e5fdd56d11db1abffa7"
+        },
+        "after": {
+          "line_start": 798,
+          "line_end": 805,
+          "text": "\n\n\n                          4. Proofs of Propositions 2.1 and 2.2\nWe first record two applications\n                               Pof Lemma 3.4 which will be useful in the proofs of these\n                                                                             ǫ\nPropositions. Write λ2 (n) =     ab=n,a,b≤M λ(a)λ(b). Note that |λ2 (n)| ≪ n   and  that\n",
+          "sha256": "519ca215e2495b734e3089eca1b5bf398972160b9d9c8c8e9315492fd9a27ca7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4 Poisson summation",
+            "line_end": 800,
+            "line_start": 781,
+            "mathematical_role": "Converts square-free quadratic-character averages into dual Gauss-sum frequencies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 797,
+          "line_start": 781,
+          "title": "Poisson summation dualizes the square-free quadratic-character average",
+          "unit_id": "openalex_w2066135483_d08",
+          "unit_type": "representation change",
+          "why_material": "Transforms the original discriminant average into a sum over dual integer frequencies weighted by Gauss sums, exposing a zero-frequency diagonal and structured nonzero frequencies."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This short lemma is the bridge from family averaging to the principal/secondary/remainder decomposition in Section 5.",
+          "representation_dependency": "High: normalization factors and the transformed test function require exact formula layout.",
+          "unit_id": "openalex_w2066135483_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 749,
+            "title": "Real-character large sieve and shifted L-moments control averaged errors",
+            "unit_id": "openalex_w2066135483_d07",
+            "unit_type": "analytic estimation toolkit",
+            "why_material": "Packages character-sum and second/fourth-moment estimates that repeatedly convert long arithmetic expressions into controlled family averages."
+          },
+          {
+            "line_end": 850,
+            "line_start": 801,
+            "title": "Fourth moments of the mollifier follow from square-sensitive character large sieve",
+            "unit_id": "openalex_w2066135483_d09",
+            "unit_type": "mean-value reduction",
+            "why_material": "Repackages the squared mollifier coefficients, applies the real-character large sieve, and produces global and square-divisor-conditioned fourth-moment bounds used in both Propositions 2.1 and 2.2."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 800,
+              "line_start": 798,
+              "reason": "Whitespace and section transition into the proposition proofs."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d08",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d08",
+          "spontaneous_reading": "Poisson summation changes the discriminant average into a dual integer-frequency sum, immediately exposing a zero frequency and nonzero modes whose survival is governed by Gauss sums."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d08",
+          "source_grounded_mathematics": "For smooth F supported in (1,2), the truncated square-free average of the quadratic symbol (d/n) is expressed as a sum over α≤Y and all integers k, weighted by μ(α), G_k(n), and the transformed test function evaluated at a scaled kX/(α²n).",
+          "conceptual_reading": "Dualization reveals structural classes that are hidden in the original family variable: a candidate diagonal at k=0 and arithmetic off-diagonal frequencies at k≠0.",
+          "representation_or_bridge": "The cosine-plus-sine transform F̃ incorporates the phases of quadratic Poisson summation, while G_k(n) carries the local arithmetic information.",
+          "boundary_or_failure": "The formula requires odd n, smooth compact support, and the truncated square-free weight; calling every nonzero frequency an error would be premature because square frequencies later yield a secondary main term.",
+          "uncertainty": "High for normalization, signs, and scaling in the extracted display; the representation change is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d08",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 3.6 expresses the truncated square-free average of (d/n) as an alpha sum and an integer k sum weighted by mu(alpha), G_k(n), and the transformed test function.",
+          "The formula itself permits separating k=0 from k not equal to zero."
+        ],
+        "inference": [
+          "Calling k=0 a candidate diagonal and k nonzero arithmetic modes is a reasonable structural reading of the transformed sum."
+        ],
+        "unsupported_or_imported": [
+          "The assertion that square nonzero frequencies later yield a secondary main term is not present in this frozen span.",
+          "The claim that the lemma is already a principal/secondary/remainder decomposition goes beyond the displayed formula."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Normalization, phase signs, and the scale kX/(alpha^2 n) require exact display fidelity."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the explicit dualization and the provisional k=0/k-nonzero distinction. Remove the later square-frequency secondary-main-term claim and avoid assigning final main/error status within this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Directly realizes the design motivation stated in the outline and quantified in Proposition 2.1.",
+      "line_end": 999,
+      "line_start": 919,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: coefficient ranges, contour locations, and decay exponents should be scan-checked for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the mollified product in its convergence region, uses vanishing of coefficients below the designed threshold and on small squares, truncates exponentially, and applies the character large sieve to obtain the decisive shifted mean-square decay.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The mollifier's initial coefficient gap yields decay away from the center",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d11.txt",
+      "unit_bytes": 5307,
+      "unit_id": "openalex_w2066135483_d11",
+      "unit_sha256": "74e57dc203c21a79bd090f3aac6905471605f67975ddef25b956adc66c869d24",
+      "unit_type": "coefficient annihilation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d11.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 911,
+          "line_end": 918,
+          "text": "                                                                                            \u0011\n  −2Re δ1                                   1           4            1            4\nX          1+            |Γ(s+1)|S(|L( 2 +δ1 +s, χ−8d )| ; Φ) S(|M ( 2 +δ1 +s, d)| ; Φ) |ds| ,\n                                                             2                         2\n\n                   (−Re δ1 )\n                                                                                 √\nand (4.5) follows upon using Lemma 3.5 and (4.1) above (keeping in mind that M ≤ X).\n",
+          "sha256": "8fbacd2cf6c8620636af1370c48882cf7fc2f47a00eeb0b8a3ce8ef585a60f69"
+        },
+        "after": {
+          "line_start": 1000,
+          "line_end": 1007,
+          "text": "\n     We now show how to bound S(T1 ( 12 + δ1 , d); Φ). By (4.6) we see that\n\n                                                                          X                |b(n)|   \u0010\u0012−8d\u0013 \u0011\n(4.8)      S(T1 ( 21 + δ1 , d); Φ) ≪ X −5 + X ǫ                                          1        S       ;Φ .\n                                                                                       n 2 +Re δ1      n\n                                                              M 1−b ≤n≤X log2 X\n\n",
+          "sha256": "229d6f5d0ccf4e9b7b8a487e80d6e1d4cceabc91f9a55fc62a90e901307dda45"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.1 Proof of Proposition 2.1",
+            "line_end": 1114,
+            "line_start": 801,
+            "mathematical_role": "Derives mollifier fourth-moment preliminaries, separates contour pieces, exploits the coefficient gap, and proves the off-center mollified second-moment and zero-free-line bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 999,
+          "line_start": 919,
+          "title": "The mollifier's initial coefficient gap yields decay away from the center",
+          "unit_id": "openalex_w2066135483_d11",
+          "unit_type": "coefficient annihilation",
+          "why_material": "Expands the mollified product in its convergence region, uses vanishing of coefficients below the designed threshold and on small squares, truncates exponentially, and applies the character large sieve to obtain the decisive shifted mean-square decay."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Directly realizes the design motivation stated in the outline and quantified in Proposition 2.1.",
+          "representation_dependency": "High: coefficient ranges, contour locations, and decay exponents should be scan-checked for exact reuse.",
+          "unit_id": "openalex_w2066135483_d11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 918,
+            "line_start": 853,
+            "title": "A smoothed contour splits the mollifier error into near and Dirichlet-series pieces",
+            "unit_id": "openalex_w2066135483_d10",
+            "unit_type": "contour decomposition",
+            "why_material": "Writes the normalized mollified product as one plus an error, represents that error by a gamma-smoothed contour integral, shifts across the target value, and isolates a boundary piece controlled by L- and mollifier moments."
+          },
+          {
+            "line_end": 1109,
+            "line_start": 1001,
+            "title": "Mellin inversion separates square principal terms and proves the zero-free boundary estimate",
+            "unit_id": "openalex_w2066135483_d12",
+            "unit_type": "principal-character isolation",
+            "why_material": "Evaluates the first contour piece by Mellin inversion of square-free character averages, identifies a pole only when the index is a square, exploits the mollifier's square cancellation, and combines the estimates to keep the product nonzero on the right boundary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The kernel removes an inaccessible boundary argument at the price of exponential growth, while a deliberately long initial coefficient gap makes the mollified product close enough to one to pay that price.",
+            "limit": "The source acknowledges that its taper is ad hoc and does not solve the global optimization problem.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2066135483_u03",
+              "full_openalex_w2066135483_u04",
+              "full_openalex_w2066135483_u01",
+              "openalex_w2066135483_d11"
+            ],
+            "title": "Kernel geometry and coefficient annihilation must be co-designed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d11",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d11",
+          "spontaneous_reading": "The mollifier's engineered initial coefficient gap is the decisive resource: coefficients of LM-1 vanish below a long threshold and on small squares, so the surviving Dirichlet polynomial begins late enough for the large sieve to yield shifted mean-square decay."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d11",
+          "source_grounded_mathematics": "In the convergence region B(s,d)=∑b(n)χ_{-8d}(n)n^{-s}; the chosen square-free mollifier makes b(n)=0 for n≤M^{1-b} and b(n)=0 on squares up to M^{2(1-b)}. Exponential contour truncation and Lemma 3.4 then give S(|T1|²;Φ)≪M^{-2 Re δ1(1-b)}X^ε and hence the bound for |B|².",
+          "conceptual_reading": "Coefficient annihilation converts a qualitative approximation LM≈1 into a quantitative stability margin away from the center.",
+          "representation_or_bridge": "The Dirichlet coefficients b(n) expose exactly what the mollifier cancels; their support gap is the bridge from taper design to analytic decay.",
+          "boundary_or_failure": "The result depends on this long, specially tapered mollifier; the surrounding source describes the taper selection as ad hoc and does not solve the overall optimization problem.",
+          "uncertainty": "High for exact thresholds, contour choices, and exponents because of dense displays; the cancellation mechanism is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d11",
+        "critic_decision": "revise",
+        "supported": [
+          "The source expands B with coefficients b(n), proves b(n)=0 below M^(1-b) and on square n up to M^(2(1-b)), and bounds all b(n) divisor-wise.",
+          "After exponential truncation and a contour shift, Lemma 3.4 gives the stated shifted mean-square bound for T1 and hence for B."
+        ],
+        "inference": [
+          "The support gap quantitatively converts the designed cancellation in LM-1 into decay away from the center."
+        ],
+        "unsupported_or_imported": [
+          "The statement that the surrounding source calls the taper ad hoc and leaves the global optimization problem unsolved is not contained in this frozen span or its bounded nearby context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact thresholds, contour location, and decay exponents are display-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the explicit coefficient-gap and square-cancellation mechanism and the resulting mean-square estimate. Replace the imported optimization commentary with a local boundary: the result depends on the stated support and size properties of b(n) and does not optimize them in this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the top-level decomposition governing all of Section 5.",
+      "line_end": 1241,
+      "line_start": 1194,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: normalization and summation variables are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inserts the approximate functional equation into the truncated square-free average, applies Poisson summation termwise, and explicitly separates k equals zero from all nonzero dual frequencies.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson summation splits the moment into zero-frequency principal and nonzero-frequency terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d14.txt",
+      "unit_bytes": 2543,
+      "unit_id": "openalex_w2066135483_d14",
+      "unit_sha256": "c5b362df47056eb088bb16480de891917021238f05e3a241ed93d7225aba1d9e",
+      "unit_type": "frequency decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d14.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1186,
+          "line_end": 1193,
+          "text": "                   ≪ X 1+κ+ǫ 2 +                  3               +              ,\n                                l                l2                      l\nwhich when inserted in (4.11) yields the Proposition.\n\n<!-- source-page: 19 -->\n\nREAL ZEROS OF QUADRATIC DIRICHLET L-FUNCTIONS                          19\n\n",
+          "sha256": "3e478f547393a2f02a99c433475da370b367ce1cf029e17c2aec5ba8b5932c2b"
+        },
+        "after": {
+          "line_start": 1242,
+          "line_end": 1249,
+          "text": "5.1 The principal P(l) contribution.\nNote that F̃n (0) = F̂n (0) and that G0 (ln) = ϕ(ln) if ln = \u0003 and G0 (ln) = 0 otherwise.\nUsing this together with\n                      X µ(α)          1 Y \u0010        1 \u0011−1 \u0010       \u0010 1 \u0011\u0011\n                                  =            1 −         1 + O        ,\n                              α2     ζ(2)          p2             Y\n                    α≤Y                  p|2ln\n                  (α,2ln)=1\n",
+          "sha256": "91224fd7382d3aac181bbad9993ecea2c046e78205a191aab5a513843f51c023"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 and 5.1 Principal Poisson contribution",
+            "line_end": 1376,
+            "line_start": 1194,
+            "mathematical_role": "Separates zero and nonzero Poisson modes, identifies the square diagonal, factors it into Euler products, and extracts its four residues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1241,
+          "line_start": 1194,
+          "title": "Poisson summation splits the moment into zero-frequency principal and nonzero-frequency terms",
+          "unit_id": "openalex_w2066135483_d14",
+          "unit_type": "frequency decomposition",
+          "why_material": "Inserts the approximate functional equation into the truncated square-free average, applies Poisson summation termwise, and explicitly separates k equals zero from all nonzero dual frequencies."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the top-level decomposition governing all of Section 5.",
+          "representation_dependency": "High: normalization and summation variables are formula-dependent.",
+          "unit_id": "openalex_w2066135483_d14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1188,
+            "line_start": 1115,
+            "title": "Large square divisors are removed by moment bounds before main-term analysis",
+            "unit_id": "openalex_w2066135483_d13",
+            "unit_type": "tail bound",
+            "why_material": "Uses the support structure of the square-free remainder, repeated Cauchy inequalities, a shifted integral for the approximate-functional-equation sum, and fourth moments to bound the discarded large-square-divisor contribution."
+          },
+          {
+            "line_end": 1374,
+            "line_start": 1242,
+            "title": "Square support turns the zero frequency into an Euler product and four residues",
+            "unit_id": "openalex_w2066135483_d15",
+            "unit_type": "diagonal extraction",
+            "why_material": "Uses the zero-frequency Gauss-sum rule to impose that l times n is a square, parametrizes that diagonal, Mellin-transforms its weight, factors the resulting series, and shifts contour to residues at plus/minus delta and plus/minus tau."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After Poisson summation, the zero frequency alone has spurious delta-poles; square nonzero frequencies supply a secondary principal term whose residues cancel them, leaving a regular tau-dependent answer.",
+            "limit": "This synthesis depends on the exact local Gauss factors and functional equations in this quadratic family.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d14",
+              "openalex_w2066135483_d15",
+              "openalex_w2066135483_d16",
+              "openalex_w2066135483_d18",
+              "openalex_w2066135483_d21"
+            ],
+            "title": "Poisson diagonal and square off-diagonal are two parts of one regular main term"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d14",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d14",
+          "spontaneous_reading": "After inserting the smoothed Dirichlet series, Poisson summation creates the proof's governing frequency split P(l)+R0(l): k=0 is isolated as principal, while all k≠0 are retained for finer structural analysis."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d14",
+          "source_grounded_mathematics": "The twisted main average of A_{δ,τ}(d) is expanded over n with weights F_n, Lemma 3.6 is applied termwise, and the resulting α,n,k sum is divided into the k=0 contribution P(l) and the nonzero-frequency contribution R0(l).",
+          "conceptual_reading": "The representation change exposes a diagonal/off-diagonal organization, but the labels are provisional because structured nonzero frequencies may still carry poles and main terms.",
+          "representation_or_bridge": "F_n combines the original test function with W_{δ,τ}, while G_{-k}(ln) transfers the quadratic-character average into local arithmetic on the dual side.",
+          "boundary_or_failure": "No estimate is yet proved for R0, and treating it wholly as error would lose the later square-frequency secondary principal term.",
+          "uncertainty": "High for normalization and indices in the formula; the k=0 versus k≠0 split is unambiguous."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d14",
+        "critic_decision": "revise",
+        "supported": [
+          "The source inserts A_{delta,tau}'s smoothed n-expansion into the truncated main average, applies Lemma 3.6, and explicitly defines P(l) from k=0 and R0(l) from all k not equal to zero."
+        ],
+        "inference": [
+          "The k=0 versus k-nonzero split is a provisional diagonal/off-diagonal organization."
+        ],
+        "unsupported_or_imported": [
+          "The claims that structured nonzero frequencies may carry poles and main terms, and specifically that square frequencies later form a secondary principal term, are not established in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Retained for finer structural analysis' is forward-looking rather than a result of the displayed decomposition."
+        ],
+        "context_or_ocr_risk": [
+          "Normalization and indices in (5.1)-(5.3) are display-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe only the exact expansion and P(l)+R0(l) split, noting that no estimate or classification of R0 is yet provided. Remove the later pole and square-frequency claims."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the primary diagonal calculation P(l); its apparent four-pole answer is later simplified by cancellation.",
+      "line_end": 1374,
+      "line_start": 1242,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: exact Euler factors, residue locations, and error exponents require formula-safe verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the zero-frequency Gauss-sum rule to impose that l times n is a square, parametrizes that diagonal, Mellin-transforms its weight, factors the resulting series, and shifts contour to residues at plus/minus delta and plus/minus tau.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square support turns the zero frequency into an Euler product and four residues",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d15.txt",
+      "unit_bytes": 7460,
+      "unit_id": "openalex_w2066135483_d15",
+      "unit_sha256": "ca00c7e770212f26c97d9799f5dc5bb5ed8f1d7d64b004a054791c100bc2e9c9",
+      "unit_type": "diagonal extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d15.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1234,
+          "line_end": 1241,
+          "text": "and\n                      ∞       \u0012 \u0013                     ∞                  \u0012        \u0013\n                  1 X rδ (n) 16        X         µ(α) X     k               kX\n(5.3)    R0 (l) =                                       (−1) G−k (ln)F̃n            .\n                  2l n=1 n 32  ln                 α2                       2α2 ln\n                                       α≤Y           k=−∞\n                                     (α,2ln)=1        k6=0\n\n",
+          "sha256": "a5b3b88cf202a0f9086c8299b62868003eb64cb9b010fc8354f6865b3c2cab38"
+        },
+        "after": {
+          "line_start": 1375,
+          "line_end": 1382,
+          "text": "                                                                           1\n\n5.2 Extracting the secondary principal term from R0 (l).\nDefine for all real numbers ξ, and all complex numbers w with Re w > 0,\n                                          Z ∞ \u0012 \u0013\n                                                 ξ w−1\n(5.6)                          f (ξ, w) =    F̃t   t   dt.\n                                           0     t\n",
+          "sha256": "28465372926d483fb1f75ac1f34915dd77aabd0102fe5c9f6a96e07db0789a4d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 and 5.1 Principal Poisson contribution",
+            "line_end": 1376,
+            "line_start": 1194,
+            "mathematical_role": "Separates zero and nonzero Poisson modes, identifies the square diagonal, factors it into Euler products, and extracts its four residues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1374,
+          "line_start": 1242,
+          "title": "Square support turns the zero frequency into an Euler product and four residues",
+          "unit_id": "openalex_w2066135483_d15",
+          "unit_type": "diagonal extraction",
+          "why_material": "Uses the zero-frequency Gauss-sum rule to impose that l times n is a square, parametrizes that diagonal, Mellin-transforms its weight, factors the resulting series, and shifts contour to residues at plus/minus delta and plus/minus tau."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the primary diagonal calculation P(l); its apparent four-pole answer is later simplified by cancellation.",
+          "representation_dependency": "Very high: exact Euler factors, residue locations, and error exponents require formula-safe verification.",
+          "unit_id": "openalex_w2066135483_d15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1241,
+            "line_start": 1194,
+            "title": "Poisson summation splits the moment into zero-frequency principal and nonzero-frequency terms",
+            "unit_id": "openalex_w2066135483_d14",
+            "unit_type": "frequency decomposition",
+            "why_material": "Inserts the approximate functional equation into the truncated square-free average, applies Poisson summation termwise, and explicitly separates k equals zero from all nonzero dual frequencies."
+          },
+          {
+            "line_end": 1480,
+            "line_start": 1377,
+            "title": "Square dual frequencies inside the nonzero modes create a secondary principal term",
+            "unit_id": "openalex_w2066135483_d16",
+            "unit_type": "off-diagonal pole extraction",
+            "why_material": "Mellin-transforms the nonzero-frequency weight, factors its Gauss-sum Dirichlet series into two L-functions and a controlled Euler product, shifts contour, and observes that poles occur only when the dual frequency is a square."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After Poisson summation, the zero frequency alone has spurious delta-poles; square nonzero frequencies supply a secondary principal term whose residues cancel them, leaving a regular tau-dependent answer.",
+            "limit": "This synthesis depends on the exact local Gauss factors and functional equations in this quadratic family.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d14",
+              "openalex_w2066135483_d15",
+              "openalex_w2066135483_d16",
+              "openalex_w2066135483_d18",
+              "openalex_w2066135483_d21"
+            ],
+            "title": "Poisson diagonal and square off-diagonal are two parts of one regular main term"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d15",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d15",
+          "spontaneous_reading": "At zero frequency the Gauss sum enforces ln=□, turning the diagonal into n=l1m²; Mellin and Euler-product factorization then compress the whole contribution into four residues at ±τ and ±δ plus a shifted-contour error."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d15",
+          "source_grounded_mathematics": "G_0(ln) vanishes unless ln is a square, so with l=l1l2² the n-sum is parametrized by l1m². Mellin transforming F̂_{l1m²}(0) and applying Lemma 5.1 factors the m-series as r_δ(l1)Z(s;δ)η_δ(s;l); shifting to Re s=-1/4+ε crosses poles at ±τ and ±δ and yields formula (5.5).",
+          "conceptual_reading": "Local square support identifies the diagonal before analytic estimation, and contour residues expose the few global structures that survive it.",
+          "representation_or_bridge": "The square-free kernel l1, the parameter m, and the Euler product Zη bridge the support condition ln=□ to a residue calculation.",
+          "boundary_or_failure": "P(l) alone contains apparent δ-poles and is not the final regular main term; exact cancellation requires the secondary contribution extracted later.",
+          "uncertainty": "Very high for Euler factors, residue constants, and error exponents; use the architectural claim without literal formula reuse unless scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d15",
+        "critic_decision": "revise",
+        "supported": [
+          "The zero-frequency Gauss rule forces ln to be a square, hence n=l1*m^2 when l=l1*l2^2.",
+          "Mellin transformation and Lemma 5.1 factor the m-series as r_delta(l1) Z eta.",
+          "Moving the contour crosses poles at plus/minus tau and plus/minus delta and gives (5.5) with an error."
+        ],
+        "inference": [
+          "Local square support identifies the zero-frequency diagonal before analytic estimation."
+        ],
+        "unsupported_or_imported": [
+          "The characterization of the delta poles as merely apparent and the assertion that a later secondary term cancels them are not proved in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Euler factors, residue coefficients, and error exponents require formula-safe verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the square-support parametrization, Euler factorization, contour shift, and four residue locations. Replace the forward cancellation claim with the local limitation that (5.5) is only P(l), not yet the full main contribution."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The calculation prepares a hidden functional symmetry exposed in the next unit.",
+      "line_end": 1640,
+      "line_start": 1486,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: local cases and powers are extraction-sensitive; use for conceptual architecture unless checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a Dirichlet series over square frequencies, factors it into zeta functions and a holomorphic local product, moves the Mellin line using that continuation, and extends the square-divisor cutoff to infinity with an explicit error.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local factor analysis continues the secondary term and controls truncation extension",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d17.txt",
+      "unit_bytes": 8522,
+      "unit_id": "openalex_w2066135483_d17",
+      "unit_sha256": "d0cdece0a48c93a64938abc114daa15ef7deadc1cc21b85b13dd7c32001edc39",
+      "unit_type": "Euler-product continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d17.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1478,
+          "line_end": 1485,
+          "text": "                2l       α2 µ=±                                                2α l\n                        α≤Y                               k=1\n                      (α,2l)=1\n\n<!-- source-page: 23 -->\n\nREAL ZEROS OF QUADRATIC DIRICHLET L-FUNCTIONS                                               23\n\n",
+          "sha256": "57b79f7e2cc6cafb46d95ccefa1697687371b066ab4a94085df7aaefa5c6fbf7"
+        },
+        "after": {
+          "line_start": 1641,
+          "line_end": 1648,
+          "text": "\n<!-- source-page: 25 -->\n\nREAL ZEROS OF QUADRATIC DIRICHLET L-FUNCTIONS                                         25\n\n                                     κ+|Re δ|− 12\n  Thus, up to an error O(lǫ l1                      X |Re δ|+ǫ Y −1+2κ+2|Re δ| ), P2 (l) is given by\n                  \u0012 \u0013µδ                           \u0012 \u0013s\n",
+          "sha256": "7d871826100e6a04014f2a81095d83c0b37885a412a53baddf1b0e8c493591b0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.3 Secondary principal term evaluation",
+            "line_end": 1745,
+            "line_start": 1486,
+            "mathematical_role": "Continues Euler-factor analysis, extends a truncation with controlled error, and uses a functional equation to reduce the secondary integral to residues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1640,
+          "line_start": 1486,
+          "title": "Local factor analysis continues the secondary term and controls truncation extension",
+          "unit_id": "openalex_w2066135483_d17",
+          "unit_type": "Euler-product continuation",
+          "why_material": "Builds a Dirichlet series over square frequencies, factors it into zeta functions and a holomorphic local product, moves the Mellin line using that continuation, and extends the square-divisor cutoff to infinity with an explicit error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The calculation prepares a hidden functional symmetry exposed in the next unit.",
+          "representation_dependency": "Very high: local cases and powers are extraction-sensitive; use for conceptual architecture unless checked against the scan.",
+          "unit_id": "openalex_w2066135483_d17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1480,
+            "line_start": 1377,
+            "title": "Square dual frequencies inside the nonzero modes create a secondary principal term",
+            "unit_id": "openalex_w2066135483_d16",
+            "unit_type": "off-diagonal pole extraction",
+            "why_material": "Mellin-transforms the nonzero-frequency weight, factors its Gauss-sum Dirichlet series into two L-functions and a controlled Euler product, shifts contour, and observes that poles occur only when the dual frequency is a square."
+          },
+          {
+            "line_end": 1745,
+            "line_start": 1646,
+            "title": "An even auxiliary integral collapses the secondary main term to residues",
+            "unit_id": "openalex_w2066135483_d18",
+            "unit_type": "functional-equation symmetry",
+            "why_material": "Computes the completed local product K, combines zeta and gamma functional equations into an even J-function, shifts from plus kappa to minus kappa, and uses evenness to express the integral entirely through residue data."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d17",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d17",
+          "spontaneous_reading": "A Dirichlet series over the exceptional square frequencies is factorized into zeta functions and a holomorphic local product; that continuation permits the contour move and removes the finite α-cutoff at a quantified cost."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d17",
+          "source_grounded_mathematics": "The square-frequency series H_{μ,δ}(u;l,α) is expanded prime by prime and written using ζ(2u), ζ(2u+1+4μδ), and an analytic Euler product H1. This continuation justifies moving the s-line to κ+1/log X, and a Cauchy-contour estimate bounds the tail introduced when ∑_{α≤Y} is extended to ∑_{α<∞}.",
+          "conceptual_reading": "Local factor analysis turns a truncated arithmetic expression into a completed global object whose symmetries can be exposed cleanly.",
+          "representation_or_bridge": "H_{μ,δ} packages all square k modes, while the completed infinite α-sum is the bridge from the raw secondary term to the symmetric K/J representation of the next unit.",
+          "boundary_or_failure": "This unit prepares but does not yet evaluate P2; its continuation region and truncation error depend on exact local factors and shift bounds.",
+          "uncertainty": "Very high because the primewise cases and powers are extraction-sensitive; the factorization–continuation–extension sequence is supported."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d17",
+        "critic_decision": "revise",
+        "supported": [
+          "The square-frequency series H is factored prime by prime into two zeta factors and an Euler product analytic in the stated region.",
+          "That continuation permits the contour move in (5.13), and a Cauchy-contour estimate controls the error from extending the alpha sum beyond Y."
+        ],
+        "inference": [
+          "Local factorization converts a truncated arithmetic expression into an analytically continued object suitable for further evaluation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this unit exposes a functional symmetry is premature; the symmetry is only developed in the next unit.",
+          "The K/J representation named in the candidate is absent from this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Completed global object' suggests completion and symmetry not yet constructed here."
+        ],
+        "context_or_ocr_risk": [
+          "Primewise cases and the tail exponent are extremely extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "End the interpretation at the justified continuation, contour move, and infinite-alpha extension with quantified error. Remove references to K, J, completion, or a symmetry exposed later."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation is stated as entirely similar, so this unit supports the resulting term but not an independently detailed proof.",
+      "line_end": 2572,
+      "line_start": 2564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the short final formula is the material content and should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the analogous M2 contribution and combines it with M1 to recover Proposition 2.4, including the second symmetry quotient in the final moment.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The conjugate residue family completes the explicit near-central moment",
+      "unit_artifact_relpath": "depth/units/openalex_w2066135483_d27.txt",
+      "unit_bytes": 623,
+      "unit_id": "openalex_w2066135483_d27",
+      "unit_sha256": "144d16e665f6eb16c1211eca119eb4b594bd9c405eb84fca2f365054069e589e",
+      "unit_type": "moment completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2066135483_d27.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2556,
+          "line_end": 2563,
+          "text": "       3ζ(2)                 2τ log M      0                    2δ1 log M\n                           + O(|δ1 |3 M −2τ log2 X + M −2τ (1−b) |δ1 |6 log5 X)\n  Taking this together with (6.9) we have determined the M1 (l) contribution to be\n           2Φ̌(0) \u0010    1 − (8X/π)−2τ b −2τ (1−x) ′            Q′′ (x) 2 \u0011\n                                      Z\n                   1+                    M          Q (x) +             dx\n           3ζ(2)          2τ log M     0                    2δ1 log M\n(6.13)                                    + O(M −2τ (1−b) |δ1 |6 log5 X).\n",
+          "sha256": "d69f0f4c187f3c055d1a14da95af41b17ee07cbcba76b9cf24ac9ef72dc8c769"
+        },
+        "after": {
+          "line_start": 2573,
+          "line_end": 2580,
+          "text": "\n<!-- source-page: 38 -->\n\n38                          J. B. CONREY AND K. SOUNDARARAJAN\n\n                                            References\n[1]  R. Balasubramanian and V. Kumar Murty, Zeros of Dirichlet L-functions, Ann. Scient. École Norm.\n     Sup. 25 (1992), 567-615.\n",
+          "sha256": "468cd9bd9a170a04eb79ddc74e6d72ff21126900f609a1d1e103615660e1e9e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_453ee03847c1cecd81bd2000c38576e36b19da8ce37c2e7dbc619f29f59f9d87",
+        "dossier_sha256": "1cf00990cdb20b3f8d96a62024a52b1d8bc8645b04da8d426242300cb2972702",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Proof of Proposition 2.4",
+            "line_end": 2577,
+            "line_start": 1997,
+            "mathematical_role": "Inserts the moment formula into the mollified mean, reorganizes the coefficient convolution, evaluates short and long mollifier ranges, and recovers the explicit near-central moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2572,
+          "line_start": 2564,
+          "title": "The conjugate residue family completes the explicit near-central moment",
+          "unit_id": "openalex_w2066135483_d27",
+          "unit_type": "moment completion",
+          "why_material": "Records the analogous M2 contribution and combines it with M1 to recover Proposition 2.4, including the second symmetry quotient in the final moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation is stated as entirely similar, so this unit supports the resulting term but not an independently detailed proof.",
+          "representation_dependency": "High: the short final formula is the material content and should be checked against the scan.",
+          "unit_id": "openalex_w2066135483_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2563,
+            "line_start": 2428,
+            "title": "Derivative data of the taper controls the long gamma contribution",
+            "unit_id": "openalex_w2066135483_d26",
+            "unit_type": "long-range boundary calculation",
+            "why_material": "Applies the convolution residue beyond the breakpoint, expands the local analytic factor, converts the gamma sum to an integral involving Q, Q-prime, and Q-double-prime, and uses contour residues plus integration by parts to obtain the explicit long-range term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reorganizing the square-free coefficient pairs exposes a generic convolution lemma; splitting at the taper breakpoint then makes the short range a pole calculation and the long range an integral controlled by the taper's endpoint and derivative conditions.",
+            "limit": "The source evaluates one constrained polynomial family and explicitly leaves optimal mollifier selection unresolved.",
+            "parent_local_unit_ids": [
+              "openalex_w2066135483_d23",
+              "openalex_w2066135483_d24",
+              "openalex_w2066135483_d25",
+              "openalex_w2066135483_d26",
+              "openalex_w2066135483_d27"
+            ],
+            "title": "A mollifier breakpoint turns coefficient design into boundary and derivative data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2066135483_d27",
+        "spontaneous": {
+          "unit_id": "openalex_w2066135483_d27",
+          "spontaneous_reading": "The final step supplies the companion M2 residue family with the expected symmetry factor and the same taper functional as M1, then inserts both expressions into the earlier decomposition to recover Proposition 2.4. Its mathematical content is completion by a conjugate or functional-equation-side contribution, not a new derivation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2066135483_d27",
+          "source_grounded_mathematics": "The source states that the M2(l) calculation is entirely similar and records its resulting term: a factor involving (8X/π)^{-τ}, a difference quotient built from (8X/π)^{±δ}, and the integral of M^{-2τ(1−x)}(Q′(x)+Q′′(x)/(2δ1 log M))², with an error of order X^{-τ}M^{-2τ(1−b)}|δ1|^6 log^5X. Substituting this result together with the M1 formula (6.13) into (6.2a) is asserted to yield Proposition 2.4.",
+          "conceptual_reading": "The proof architecture closes by matching two residue families rather than recomputing the whole moment from scratch. The shared integral shows that the same mollifier derivative data controls both sides, while the prefactors encode the symmetry transformation between them.",
+          "representation_or_bridge": "The explicit M2 formula is the bridge from the unshown analogous calculation to the earlier decomposition (6.2a). Its common Q-derivative integral aligns M2 with M1, and the powers of 8X/π together with the δ-difference quotient record the transformed residue contribution needed for the final moment.",
+          "boundary_or_failure": "This narrow unit does not contain the derivation of M2; 'entirely similar' supports the displayed result but not an independent verification of every intermediate step. It also only asserts that substitution recovers Proposition 2.4, whose full statement and algebra are outside this unit.",
+          "uncertainty": "The short displayed formula carries high extraction risk, including signs, exponents, quotient placement, and the boundary between the main term and O-term. The structural completion is clear, but exact reuse of the formula requires scan-level checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2066135483_d27",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says only that the M2(l) calculation is entirely similar, displays its resulting main term with the same Q-prime/Q-double-prime integral form and an error term, and states that inserting it with (6.13) into (6.2a) yields Proposition 2.4.",
+          "The candidate's source-grounded field accurately treats the displayed M2 expression as a recorded result and its boundary field correctly says this unit supplies no independent derivation and does not contain the full proposition or substitution algebra.",
+          "The high formula-extraction warning is warranted because the short display carries the decisive signs, exponents, quotient placement, and main-term/error boundary."
+        ],
+        "inference": [
+          "Comparing the displayed Q-derivative integral with the bounded nearby M1 formula supports saying that the two recorded terms share an algebraic taper functional."
+        ],
+        "unsupported_or_imported": [
+          "The exact span and bounded nearby context do not identify M2 as a 'conjugate or functional-equation-side contribution'; that characterization is imported from outside the permitted evidence.",
+          "Calling the prefactor an 'expected symmetry factor,' saying it encodes a symmetry transformation, and describing the close as matching two residue families attribute a mechanism that the source's terse 'entirely similar' assertion does not expose."
+        ],
+        "paraphrase_or_style_risk": [
+          "The directed source account is careful, but the spontaneous, conceptual, and bridge prose inflate a result-only completion step into a symmetry architecture; recognizable analytic-number-theory framing cannot replace evidence in this narrow unit."
+        ],
+        "context_or_ocr_risk": [
+          "The source is sufficient to support structural completion but not reliable exact formula reuse without a scan, and its semantic boundary is too narrow to recover the omitted M2 derivation or explain why the prefactors arise."
+        ],
+        "missed_mechanism": [
+          "No further M2 mechanism can be recovered from this span; the revised analysis should make the absence of derivation central instead of filling it with a functional-equation or conjugacy explanation."
+        ],
+        "revision_instructions": [
+          "Retain the displayed M2 term, its common algebraic Q-derivative integral, the stated error, and the asserted substitution into (6.2a). Remove 'conjugate,' 'functional-equation-side,' 'expected symmetry factor,' 'symmetry transformation,' and 'matching residue families' unless an explicitly authorized supporting span is supplied. Describe this unit as a recorded analogous contribution and proposition-completion assertion, with mechanism unavailable here and exact coefficients quarantined from reuse pending scan verification."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bdfec4ad8cc99bde9a8517f8632eab396433810936bf4f5d28bda07626ec61ca"
+}

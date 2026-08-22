@@ -1,0 +1,494 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_conrey1989_two_fifths_8032aec7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "conrey1989_two_fifths",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definition of the coefficient integrals, the ODE and boundary conditions, the closed-form solution discussion, and substitution back into the objective.",
+      "line_end": 521,
+      "line_start": 426,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: enough equations survive to identify the variational mechanism, but several definitions and the full solution formula are damaged; numerical or symbolic reuse requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Lagrange optimization of the mollifier profile",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u09_variational_mollifier.txt",
+      "unit_bytes": 2692,
+      "unit_id": "conrey1989_v2_u09_variational_mollifier",
+      "unit_sha256": "8dbefad9e0bc727c8d468d7b62c1f8887b0ef549c821c4549beadeda00448979",
+      "unit_type": "variational-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u09_variational_mollifier.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 418,
+          "line_end": 425,
+          "text": "                                         d_\n                                                                             M= 0   dxdy\n\n\n              = |P(1) (0)I2\n                                   oo\n\n\n",
+          "sha256": "f4dd5e3d32b376c21c711f89a415c8cc57dcfba61f9f23d7b3159b1fad8bc361"
+        },
+        "after": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "\n        (49)\n\n\nWe illustrate the computation in the case of simple zeros. We are forced here to take\n\n\n\n",
+          "sha256": "8a40343bc2953b61750f5d6397b97eecb8b35f49074389c5b6ddd4639e18c473"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. The mean value theorem",
+            "line_end": 563,
+            "line_start": 398,
+            "mathematical_role": "States the decisive mean-square asymptotic, derives the variational problem for the mollifier polynomial, and records parameter choices yielding the numerical bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 521,
+          "line_start": 426,
+          "title": "Euler-Lagrange optimization of the mollifier profile",
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "unit_type": "variational-optimization",
+          "why_material": "After fixing the auxiliary polynomial data, the mean-square constant becomes a quadratic functional of P; Euler-Lagrange equations give a boundary-value ODE, and integration by parts reduces its value to boundary data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definition of the coefficient integrals, the ODE and boundary conditions, the closed-form solution discussion, and substitution back into the objective.",
+          "representation_dependency": "High: enough equations survive to identify the variational mechanism, but several definitions and the full solution formula are damaged; numerical or symbolic reuse requires scan verification.",
+          "unit_id": "conrey1989_v2_u09_variational_mollifier"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 426,
+            "line_start": 398,
+            "title": "Mean-square asymptotic at mollifier length below four-sevenths",
+            "unit_id": "conrey1989_v2_u08_mean_value_bottleneck",
+            "unit_type": "mean-value-theorem",
+            "why_material": "The paper declares that, apart from numerical calculation, its main theorem follows from a mean-value asymptotic for the mollified differential transform V when the mollifier exponent is below four-sevenths."
+          },
+          {
+            "line_end": 555,
+            "line_start": 526,
+            "title": "Parameter choices converting the optimized mean into stated proportions",
+            "unit_id": "conrey1989_v2_u10_numerical_parameter_certificate",
+            "unit_type": "computational-certification-logic",
+            "why_material": "For the simple-zero case the source restricts Q to a one-parameter form, evaluates the resulting integrals and variational constant, and records choices producing 0.4013, while a richer Q produces 0.4077."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the mean-value theorem fixes an admissible mollifier length, polynomial and derivative-combination freedom is optimized separately to convert the analytic estimate into the best recorded proportion.",
+            "limit": "The source gives certificates for particular choices, not a claim of global joint optimality over every admissible parameterization.",
+            "parent_local_unit_ids": [
+              "conrey1989_u02_variational_freedom_v1",
+              "conrey1989_v2_u09_variational_mollifier",
+              "conrey1989_v2_u10_numerical_parameter_certificate",
+              "conrey1989_v2_u21_note_added_parameter_update"
+            ],
+            "title": "Analytic admissibility before numerical optimization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u09_variational_mollifier",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "spontaneous_reading": "Once the derivative-side data are fixed, the mean-square constant becomes a quadratic functional of the mollifier profile P. Euler-Lagrange turns its optimization into a two-point linear ODE, and integration by parts compresses the optimum to boundary data."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u09_variational_mollifier",
+          "source_grounded_mathematics": "The extracted functional contains integrals of |P′|², P′P, and |P|² with coefficients A, B, and C formed from an auxiliary w. Its minimizer satisfies A P″−(B−conjugate(B))P′−C P=0 with P(0)=0 and P(1)=1. The exponential-form solution is substituted back, and the source notes that it can be uniformly approximated by admissible polynomials.",
+          "conceptual_reading": "A discrete coefficient search is relaxed to a continuous boundary-value problem. The ODE exposes the optimal shape rather than searching polynomial coefficients blindly.",
+          "representation_or_bridge": "The mean-square main term becomes a quadratic variational functional, then a boundary-value ODE, then an explicit boundary expression used in the proportion estimate.",
+          "boundary_or_failure": "The exact definitions and solution formula are partially damaged, and the continuous minimizer is not itself a polynomial. Approximation recovers admissibility, but this is not a claim of global joint optimality over P, Q, R, and θ.",
+          "uncertainty": "Moderate for the variational mechanism and displayed ODE; high for exact coefficients and closed-form normalization."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "conrey1989_v2_u09_variational_mollifier",
+        "critic_decision": "revise",
+        "supported": [
+          "The surviving span supports a quadratic functional involving derivative, cross, and zeroth-order terms in P; an Euler-Lagrange boundary-value ODE; integration by parts; an exponential-form solution; and uniform approximation by admissible polynomials.",
+          "The continuous-relaxation interpretation and warning that this is not joint global optimization are well grounded."
+        ],
+        "inference": [
+          "Describing the ODE as exposing an optimal shape rather than blindly searching coefficients is a fair conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The candidate reconstructs the damaged ODE coefficient specifically as B minus conjugate(B). The text layer shows a corrupt repeated-B expression and does not safely preserve the conjugation mark, so this exact formula should not be asserted without the scan.",
+          "The exact complex-conjugation structure in the cross term is likewise not secure enough for formula-level reuse."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several coefficient definitions and the closed-form solution normalization are damaged despite the overall variational mechanism remaining legible."
+        ],
+        "missed_mechanism": [
+          "The audit should distinguish the secure boundary-value structure from the insecure exact complex coefficient multiplying P-prime."
+        ],
+        "revision_instructions": [
+          "Retain the quadratic-functional to Euler-Lagrange to boundary-data mechanism, but replace the exact B-minus-conjugate-B coefficient with a statement that the first-derivative coefficient is extraction-damaged and requires scan verification.",
+          "Do not reproduce exact conjugation or cross-term formulas from this text layer."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept separate from the Estermann functional equation because its role is the smoothing kernel rather than arithmetic duality.",
+      "line_end": 769,
+      "line_start": 742,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the displayed statement is mostly lost; only the change-of-variables role and cited transform are recoverable without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian smoothing as an exact transform step",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u13_smoothing_transform.txt",
+      "unit_bytes": 550,
+      "unit_id": "conrey1989_v2_u13_smoothing_transform",
+      "unit_sha256": "f532d93062691ed6d8ec17395c9661c6a911059595e04dfd52353897d5792409",
+      "unit_type": "integral-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u13_smoothing_transform.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 734,
+          "line_end": 741,
+          "text": "                ~\" \" σ(-α, -b,P1,P2) + P1(l)P2(l)\n\n\n\n\n s stated in the proposition.\n\n\n",
+          "sha256": "12eb72a274c4eef29c9219315cc7c722120de8ecef142c728208ec502d52624f"
+        },
+        "after": {
+          "line_start": 770,
+          "line_end": 777,
+          "text": "       Lemma 4. Lei\n\n                        D(s, α, β, Η/Κ)=Σ m~s~*n-s- e(mnH/K)\n                                              m, n\n\n\nwfcm? H, K are iniegers (X ^ 1) ννιίΛ (ίί, Χ) = l and a, β, s E C. Then\n                        Brought to you by | Cirm-Societe Mathematique (Cirm-Societe Mathematique)\n",
+          "sha256": "d1cc197c3d24aad316cd6aea4080ed5fd1011f2752e796669a0c1fc2d4bb7a3f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. The main term",
+            "line_end": 1042,
+            "line_start": 742,
+            "mathematical_role": "Uses smoothing, an Estermann-type functional equation, Mellin inversion, localization, contour shifts, and residues to identify the main term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 769,
+          "line_start": 742,
+          "title": "Gaussian smoothing as an exact transform step",
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "unit_type": "integral-transform",
+          "why_material": "A preparatory lemma converts the smoothed contour expression by a change of variables to a known integral identity, setting up the main-term analysis with controlled localization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept separate from the Estermann functional equation because its role is the smoothing kernel rather than arithmetic duality.",
+          "representation_dependency": "Very high: the displayed statement is mostly lost; only the change-of-variables role and cited transform are recoverable without the scan.",
+          "unit_id": "conrey1989_v2_u13_smoothing_transform"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 739,
+            "line_start": 649,
+            "title": "Factoring the shifted proposition into arithmetic and analytic lemmas",
+            "unit_id": "conrey1989_v2_u12_arithmetic_analytic_factorization",
+            "unit_type": "proof-decomposition",
+            "why_material": "The proposition is split into an asymptotic for a mollifier coefficient sum and an analytic evaluation of g; an antisymmetry identity for the arithmetic main term then cancels the unwanted shifted contribution."
+          },
+          {
+            "line_end": 870,
+            "line_start": 770,
+            "title": "Estermann functional equation and Mellin conversion of the off-diagonal sum",
+            "unit_id": "conrey1989_v2_u14_estermann_mellin_duality",
+            "unit_type": "functional-equation-transform",
+            "why_material": "The additive-twist Dirichlet series is continued and given a functional equation, then Mellin inversion and a contour move turn the exponentially smoothed double sum into dual Estermann terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 741,
+              "line_start": 740,
+              "reason": "Whitespace before main-term section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u13_smoothing_transform",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "spontaneous_reading": "A short preparatory lemma turns the chosen smoothing contour into a standard transform by a change of variables. Its role is to make localization exact before the arithmetic functional equation is applied."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u13_smoothing_transform",
+          "source_grounded_mathematics": "Lemma 3 states an integral identity under conditions including 1<c<2, nonzero y, Δ>0, and Re β<c. Its proof consists of a change of variables followed by an invocation of a lemma of Balasubramanian, Conrey, and Heath-Brown.",
+          "conceptual_reading": "A carefully chosen smoothing kernel is a representation device: it replaces a raw contour expression by a transform with controlled scale and localization.",
+          "representation_or_bridge": "The lemma is the transform bridge between the smoothed contour setup and the main-term analysis that follows.",
+          "boundary_or_failure": "The displayed statement is almost entirely lost in extraction, so the kernel, both sides of the identity, and normalization cannot be named safely from this unit.",
+          "uncertainty": "Very high for mathematical details; low only for the stated change-of-variables role and dependence on the cited lemma."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "conrey1989_v2_u13_smoothing_transform",
+        "critic_decision": "revise",
+        "supported": [
+          "The secure content is limited to Lemma 3's listed parameter conditions and a proof by change of variables followed by an invocation of a cited lemma."
+        ],
+        "inference": [
+          "It is reasonable to call the lemma a preparatory transform step, but the specific transform and its effect cannot be read from the missing display."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the kernel is Gaussian, has controlled scale and localization, and makes localization exact before the arithmetic functional equation are not established by the surviving source span; they come from titles, routing summaries, or generic expectations about smoothing.",
+          "Calling the contour expression raw and the resulting transform localized supplies content absent from the damaged identity."
+        ],
+        "paraphrase_or_style_risk": [
+          "The conceptual-reading and representation fields rely on the generic template that a smoothing kernel exposes controlled localization without naming a source-visible operation beyond change of variables."
+        ],
+        "context_or_ocr_risk": [
+          "Almost the entire displayed lemma statement is lost, including the kernel, both sides, and normalization."
+        ],
+        "missed_mechanism": [
+          "The candidate should foreground that no mechanism beyond reduction to a cited transform can be audited from this extraction."
+        ],
+        "revision_instructions": [
+          "Restrict the analysis to the stated conditions, change of variables, and dependence on the cited lemma.",
+          "Remove Gaussian, localization, controlled-scale, and sequencing claims unless the scan is consulted; say that the missing identity prevents a non-paraphrase mathematical interpretation of the transform itself."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes separability properties, the identity and coefficient definitions, the S1/S2/S3 split, the common target bound, and the regrouping that prepares S1 for a Kloosterman estimate.",
+      "line_end": 1277,
+      "line_start": 1170,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several coefficient formulas are partially extracted, but the decomposition and routing logic are clear; exact identities should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy.",
+      "source_id": "conrey1989_two_fifths",
+      "source_normalized_sha256": "45ccc5edad2c0f8fbff45f414ac61c63444f9329a11af78ad6460f261b40a939",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+      "unit_artifact_relpath": "depth/units/conrey1989_v2_u18_vaughan_mobius_decomposition.txt",
+      "unit_bytes": 3758,
+      "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+      "unit_sha256": "aa5ddf60499ae6a85e801bf16ad2c2b74398ac7fba1cb898a189b599c43d0c83",
+      "unit_type": "arithmetic-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey1989_v2_u18_vaughan_mobius_decomposition.txt",
+      "source": {
+        "source_id": "conrey1989_two_fifths",
+        "title": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 1989,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-line",
+          "critical-strip",
+          "mean-values",
+          "mollifier",
+          "partial-results",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1162,
+          "line_end": 1169,
+          "text": "                                                                          ) Χ #'-'+          Χ      Τ'1\n                                                                            N,i/,F          NtU,V\n\n\n\n\nοη taking η = ε/2. Since < 7/4, this is o £ (l) s T —> οο if δ and ε are sufficiently small.\n\n",
+          "sha256": "48da508ba8166efb84b9e8bd74a76796bb7907920c5177a579c6207820711ada"
+        },
+        "after": {
+          "line_start": 1278,
+          "line_end": 1285,
+          "text": "      Lemma 9. Suppose that \\c(a, n)\\ ^ l and U<zAB<3zU. Then for any ε>0\n\n                                                            (n T)\\\n                             Σ Σ Σ\n                             v~V b~B     ~Ν\n                                                   Σ Φ, η)* l — l\n                                                   α~Λ          \\   υ\n                                                                        /\n",
+          "sha256": "9fa4015d1d02afa152b68fb7c797f348a3ce3029aba5998ac85ffdc2ef13c7a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1a969f3c5f58c5f1f995aec9463a51729e12e87ca9c7d8502fd0bded4fb7bc0a",
+        "dossier_sha256": "edd17f6850fa04319322febace7e7eb010c7d5096bcdddc34ae6f61dcfa65831",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. The error terms and note added in proof",
+            "line_end": 1404,
+            "line_start": 1043,
+            "mathematical_role": "Dyadically decomposes the off-diagonal errors, applies averaged Kloosterman bounds after Vaughan decomposition, treats a complementary range with Weil's bound, and records a slight numerical improvement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1277,
+          "line_start": 1170,
+          "title": "Separability plus Vaughan's identity decomposes the Möbius-weighted sum",
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "unit_type": "arithmetic-decomposition",
+          "why_material": "The gcd variable and smooth weights are separated, Vaughan's identity rewrites the Möbius coefficient into three structured pieces, and each resulting sum is routed to a different estimation strategy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes separability properties, the identity and coefficient definitions, the S1/S2/S3 split, the common target bound, and the regrouping that prepares S1 for a Kloosterman estimate.",
+          "representation_dependency": "High: several coefficient formulas are partially extracted, but the decomposition and routing logic are clear; exact identities should be scan-checked.",
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1168,
+            "line_start": 1043,
+            "title": "Dyadic off-diagonal reduction and the matched analytic/arithmetic bounds",
+            "unit_id": "conrey1989_v2_u17_dyadic_error_budget",
+            "unit_type": "error-decomposition",
+            "why_material": "The remainder is organized by gcd and dyadic N,U,V ranges; the contour is chosen according to whether UV exceeds TN, and separate kernel and exponential-sum lemmas combine to make the total error negligible under the stated length restrictions."
+          },
+          {
+            "line_end": 1349,
+            "line_start": 1276,
+            "title": "Averaged Kloosterman bound and exponent bookkeeping for the hard range",
+            "unit_id": "conrey1989_v2_u19_averaged_kloosterman_range",
+            "unit_type": "spectral-error-control",
+            "why_material": "A Deshouillers-Iwaniec lemma controls the multilinear Kloosterman family; the proof then reduces its bound to finitely many exponent tuples and checks the positive and negative exponent cases, exposing the length restriction needed for the longer mollifier."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+        "spontaneous": {
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "spontaneous_reading": "Smooth-weight separability removes the gcd variable, and Vaughan's identity breaks the Möbius-weighted exponential sum into three pieces with different internal factorizations. Each piece is then assigned to the estimate suited to its structure."
+        },
+        "directed": {
+          "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+          "source_grounded_mathematics": "The source separates g from u and v in the smooth weights and records derivative and separability properties for coefficient functions r and r*. It derives a Vaughan-type expression for μ from an identity involving 1/ζ and a short Dirichlet polynomial M, producing coefficients c1,c2,c3 and S=S1+S2+S3. S2 is treated trivially; S1 is regrouped into variables a and b with U comparable to AB in preparation for an averaged Kloosterman lemma.",
+          "conceptual_reading": "A difficult arithmetic coefficient is not estimated intact. Algebraic decomposition reveals components with distinct complexity, enabling a hybrid proof instead of a single worst-case bound.",
+          "representation_or_bridge": "Vaughan's identity is the bridge from the Möbius coefficient to three structured multilinear sums; separable smooth weights preserve the dyadic organization needed by later estimates.",
+          "boundary_or_failure": "Several coefficient definitions and the common target inequality are partially lost, so exact identity verification requires the scan. The decomposition alone does not give cancellation; later Kloosterman estimates do.",
+          "uncertainty": "Moderate for the three-way routing and separability logic; high for exact coefficient formulas."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "conrey1989_v2_u18_vaughan_mobius_decomposition",
+        "critic_decision": "revise",
+        "supported": [
+          "The source factors the dependence of smooth weights on g from their u and v dependence, records derivative and separability properties, applies a Vaughan-type identity for mu, and obtains three sums S1, S2, and S3.",
+          "S2 is bounded trivially and S1 is regrouped into A and B scales in preparation for the external averaged estimate."
+        ],
+        "inference": [
+          "The hybrid-estimation reading is supported by the source's statement that the three sums are treated differently."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says smooth-weight separability removes the gcd variable. It does not: g remains a parameter and the surrounding reduction retains a sum over g; only its dependence is factored from u and v."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several coefficient definitions and the common target bound are partially lost, so the exact Vaughan identity cannot be certified from the text layer."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish separating dependence on g from eliminating g itself."
+        ],
+        "revision_instructions": [
+          "Replace 'removes the gcd variable' with 'factors the smooth-weight dependence on the gcd variable from the u and v variables while retaining g as an external parameter.'",
+          "Keep the three-way decomposition and routing claims, with exact coefficient formulas left scan-dependent."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9ae6d7f91515b1ee35ec6ce4cab34f8d5b49edbb2d992127b7826fac3089c214"
+}

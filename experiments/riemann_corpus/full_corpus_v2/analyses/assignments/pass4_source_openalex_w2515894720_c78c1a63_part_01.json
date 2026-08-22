@@ -1,0 +1,1628 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2515894720_c78c1a63_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2515894720",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserve the order of limits: truncate first for comparison at large height, then pass the randomized truncation to infinity.",
+      "line_end": 577,
+      "line_start": 534,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof outline isolates the Hilbert-transform main kernel, obtains Sobolev tightness, approximates zeta by finite Euler products, equidistributes prime phases, and then lets the randomized product converge as a generalized boundary value.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-point functions and randomized truncated Euler products bridge zeta to its limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u010.txt",
+      "unit_bytes": 3332,
+      "unit_id": "openalex_w2515894720_u010",
+      "unit_sha256": "719260b90660be1764cbb5e78acbc92adf4e2b57f3d2c536dae734d9a0695341",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u010.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 526,
+          "line_end": 533,
+          "text": "reader.\n   We now turn to an outline of the proof of our main results Theorem 1.1, Theorem\n1.2, and Theorem 1.3.\n\n<!-- source-page: 11 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                    11\n\n",
+          "sha256": "9ea7cbd7cf4afb6d1448901af77718493a1806c9866a3983857f5d5df8478d9a"
+        },
+        "after": {
+          "line_start": 578,
+          "line_end": 585,
+          "text": "   As an aside, we mention that it is important to observe that the limiting statistical\nobject x 7→ ζrand (1/2 + ix) is truly a generalized function, and not a function or a\ncomplex measure. Note that this implies the same claim for the complex Gaussian\nmultiplicative chaos eG . To our knowledge, this is the first proof of such a result in the\nsetting of complex multiplicative chaos.\nTheorem 1.6. Almost surely ζrand does not coincide with a (random complex) Borel\nmeasure on any open subinterval of the critical line {σ = 1/2}.\nIt is also easy to verify that ζrand is not a Gaussian random generalised function. As\n",
+          "sha256": "69e882de5504aa748d4b4ec1419bc5b21b4614b1bf0c4da596f4e5051570f41b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1.3 Proof outline and further results",
+            "line_end": 677,
+            "line_start": 527,
+            "mathematical_role": "Maps the Euler-product, two-point, Gaussian-approximation, and real-chaos proof architecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 577,
+          "line_start": 534,
+          "title": "Two-point functions and randomized truncated Euler products bridge zeta to its limit",
+          "unit_id": "openalex_w2515894720_u010",
+          "unit_type": "proof-strategy",
+          "why_material": "The proof outline isolates the Hilbert-transform main kernel, obtains Sobolev tightness, approximates zeta by finite Euler products, equidistributes prime phases, and then lets the randomized product converge as a generalized boundary value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserve the order of limits: truncate first for comparison at large height, then pass the randomized truncation to infinity.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 526,
+            "line_start": 483,
+            "title": "Quotienting by nonzero scalars exposes a proper mesoscopic limit",
+            "unit_id": "openalex_w2515894720_u009",
+            "unit_type": "representation-change",
+            "why_material": "Passing to a projectivized negative Sobolev space removes the divergent multiplicative zero mode and leaves a scale-invariant chaos defined only modulo constants."
+          },
+          {
+            "line_end": 594,
+            "line_start": 578,
+            "title": "The randomized boundary value is neither a function nor a complex measure",
+            "unit_id": "openalex_w2515894720_u011",
+            "unit_type": "regularity-obstruction",
+            "why_material": "The non-measure theorem explains why continuous-function limits fail and why generalized functions are not merely a convenient proof space but the correct limiting category."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u010",
+          "spontaneous_reading": "The proof is a nested approximation pipeline: control zeta by its two-point kernel, truncate its Euler product, randomize finitely many prime phases, then take the randomized product limit as a generalized boundary value."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u010",
+          "source_grounded_mathematics": "The outline uses the Hilbert-transform main term in the shifted two-point function to obtain weighted second moments and negative-Sobolev tightness. For fixed truncation N, μ_{T,N} approaches a randomized finite Euler product through prime-phase equidistribution; only afterward does N tend to infinity to produce ζ_rand almost surely as a generalized function and analytic boundary value.",
+          "conceptual_reading": "A difficult infinite random object is reached through two matched finite models, with different arguments controlling truncation error, finite-dimensional law, and infinite convergence.",
+          "representation_or_bridge": "Truncated Euler products are the intermediate objects connecting actual vertical shifts to independent random prime phases; the two-point kernel supplies the comparison norm.",
+          "boundary_or_failure": "The order of limits is essential: truncation is fixed during the large-height comparison before the randomized truncation is removed. This outline alone does not supply the later uniform estimates.",
+          "uncertainty": "The architecture is explicit, while exact product notation is affected by extraction artifacts."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u010",
+        "critic_decision": "revise",
+        "supported": [
+          "The two-point-kernel route to second moments and Sobolev tightness, finite Euler-product approximation, fixed-truncation convergence to randomized products, and subsequent infinite randomized-product limit are all in the span.",
+          "The order of fixing truncation before removing it is correctly emphasized."
+        ],
+        "inference": [
+          "Describing the proof as matched finite approximations is a useful compression."
+        ],
+        "unsupported_or_imported": [
+          "The exact span asserts convergence of each fixed shifted truncation to the randomized truncation but does not identify prime-phase equidistribution as its mechanism; that explanation is imported from a later unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact product typography is degraded but not essential to the candidate's core account."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'through prime-phase equidistribution' with a source-bounded statement that fixed truncated shifts converge in law to the independent-phase randomized product; do not supply the later proof mechanism here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retain the local-on-every-open-subinterval formulation; the claim is stronger than global roughness.",
+      "line_end": 594,
+      "line_start": 578,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-dependent; normalized text is sufficient for the stated semantic unit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The non-measure theorem explains why continuous-function limits fail and why generalized functions are not merely a convenient proof space but the correct limiting category.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The randomized boundary value is neither a function nor a complex measure",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u011.txt",
+      "unit_bytes": 1069,
+      "unit_id": "openalex_w2515894720_u011",
+      "unit_sha256": "5fa57f0cba505c3dc8a61fb9727764b142ae0ec7c65b6d9972ec140acb20f5f0",
+      "unit_type": "regularity-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u011.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 570,
+          "line_end": 577,
+          "text": "                                                     1\n                                                             \u0013\n                             ζrand (s) :=           −s 2πiθk   .\n                                          k=1\n                                              1 − p k  e\nIn addition to being a limit of ζN,rand (1/2 + ix), ζrand (1/2 + ix) can be understood\nas the boundary values (in the sense of generalized functions) of the random analytic\nfunction ζrand (s) in the half-plane {σ > 1/2}.\n",
+          "sha256": "bc86726202c489a49945e92ed0f8e957d8172430eab2ac9688889653058e4049"
+        },
+        "after": {
+          "line_start": 595,
+          "line_end": 602,
+          "text": "  The proof of the second part of the Theorem 1.1 (which we give in Section 4) is\nbased on the following result of independent interest, as it provides a direct functional\nGaussian approximation in contrast to e.g. [1, 67].\nTheorem 1.7. For each N ≥ 1, and any A > 0 there exists a decomposition\n                            log ζN,rand(1/2 + ix) = GN (x) + EN (x),\nwhere GN is a Gaussian process on [−A, A] which can be written in the following way:\n      (j)\nlet (Wk )k∈Z+ ,j∈{0,1} be i.i.d. standard Gaussians, then\n",
+          "sha256": "c47d5263e2d2ce2ed6bf48d626c5d1d96c3b1c70e9a0294ae6eab80706f572e1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1.3 Proof outline and further results",
+            "line_end": 677,
+            "line_start": 527,
+            "mathematical_role": "Maps the Euler-product, two-point, Gaussian-approximation, and real-chaos proof architecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 594,
+          "line_start": 578,
+          "title": "The randomized boundary value is neither a function nor a complex measure",
+          "unit_id": "openalex_w2515894720_u011",
+          "unit_type": "regularity-obstruction",
+          "why_material": "The non-measure theorem explains why continuous-function limits fail and why generalized functions are not merely a convenient proof space but the correct limiting category."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retain the local-on-every-open-subinterval formulation; the claim is stronger than global roughness.",
+          "representation_dependency": "Primarily prose-dependent; normalized text is sufficient for the stated semantic unit.",
+          "unit_id": "openalex_w2515894720_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 577,
+            "line_start": 534,
+            "title": "Two-point functions and randomized truncated Euler products bridge zeta to its limit",
+            "unit_id": "openalex_w2515894720_u010",
+            "unit_type": "proof-strategy",
+            "why_material": "The proof outline isolates the Hilbert-transform main kernel, obtains Sobolev tightness, approximates zeta by finite Euler products, equidistributes prime phases, and then lets the randomized product converge as a generalized boundary value."
+          },
+          {
+            "line_end": 618,
+            "line_start": 595,
+            "title": "Log randomized zeta equals a Gaussian prime field plus an exponentially controlled smooth error",
+            "unit_id": "openalex_w2515894720_u012",
+            "unit_type": "gaussian-approximation",
+            "why_material": "Theorem 1.7 supplies the structural decomposition that later transfers Gaussian-chaos results to randomized zeta, with almost-sure smooth convergence and exponential derivative bounds for the error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The failure of continuous functional limits is resolved not by hiding roughness but by identifying a randomized Euler-product boundary distribution whose radial blow-up precludes even a local measure representation.",
+            "limit": "This synthesis concerns the randomized/global statistical limit and does not settle microscopic zeta behavior.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u001",
+              "openalex_w2515894720_u006",
+              "openalex_w2515894720_u011",
+              "openalex_w2515894720_u025"
+            ],
+            "title": "Why the critical-line limit is distribution-valued"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u011",
+          "spontaneous_reading": "The limiting category is forced, not optional: randomized zeta fails locally to be even a complex measure on every open critical-line interval, so no continuous-function representation can capture it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u011",
+          "source_grounded_mathematics": "Theorem 1.6 states that almost surely ζ_rand coincides with no random complex Borel measure on any open subinterval of the critical line. The text also notes that ζ_rand is non-Gaussian and uses the theorem to explain the known failure of localized shifts to converge in the space of continuous functions.",
+          "conceptual_reading": "A generalized function is the minimal stable carrier for the limiting observables because the obstruction is local on every interval, not merely bad growth at infinity.",
+          "representation_or_bridge": "Distributional boundary values and negative Sobolev spaces provide a representation beyond both functions and measures.",
+          "boundary_or_failure": "The theorem concerns the randomized limiting object and does not itself state a sharp Sobolev regularity exponent or a pointwise property of each finite-height zeta shift.",
+          "uncertainty": "The non-measure and non-Gaussian claims are explicit; their proofs lie outside this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u011",
+        "critic_decision": "revise",
+        "supported": [
+          "The local non-measure theorem, non-Gaussian observation, and explanation of failure of continuous-function convergence are explicit.",
+          "The candidate correctly avoids claiming sharp regularity or a property of each finite-height shift."
+        ],
+        "inference": [
+          "The every-open-subinterval obstruction justifies treating the generalized-function category as structurally necessary."
+        ],
+        "unsupported_or_imported": [
+          "The representation field names negative Sobolev spaces, which are not stated in this exact span or its bounded nearby context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the imported negative-Sobolev reference with the span-supported formulation in terms of generalized functions and distributional boundary values."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep subcritical and critical normalizations distinct and do not infer the untreated supercritical construction.",
+      "line_end": 671,
+      "line_start": 624,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states almost-sure subcritical convergence, zero collapse at and above the naive critical threshold, moment ranges, and a separately renormalized nontrivial critical measure, each differing from Gaussian chaos by a positive smooth factor.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subcritical and critical real chaos from normalized absolute zeta powers",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u013.txt",
+      "unit_bytes": 3237,
+      "unit_id": "openalex_w2515894720_u013",
+      "unit_sha256": "02bd80562b0a5dd1bb380489dc7d91e419eb0e38cfd655e68160aa8ef6816f88",
+      "unit_type": "phase-transition-theorems",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u013.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 616,
+          "line_end": 623,
+          "text": "approximation arguments combined with classical estimates for the distribution of\nprime numbers. This result then allows us to use martingale techniques to establish\nTheorem 1.1 (ii).\n   After this, we move onto Section 5, where we prove our mesoscopic results for zeta,\nnamely Theorem 1.2 and Theorem 1.5. The proof of these follow essentially from a\nGaussian approximation result of a similar flavor as Theorem 1.7, but stronger. The\nproof of this combines slightly lengthy arguments from basic number theory, harmonic\nanalysis, and probability theory.\n",
+          "sha256": "91df59013aa105563f45feccbe1fe7933cc0c0e899903c09a2622aeb7e3715f2"
+        },
+        "after": {
+          "line_start": 672,
+          "line_end": 679,
+          "text": "Finally in Appendix A, we prove the relevant moment estimates for the zeta function,\nin Appendix B, we prove a Gaussian approximation result, in Appendix C, we prove an\nanalogue of Theorem 1.1 for random unitary matrices, and in Appendix D, we prove\nTheorem 1.3.\n   To conclude this introduction, we offer some further discussion on the background of\nthe problems we study and state some natural conjectures raised by our main results.\n1.4. Further comments, conjectures, and questions. There are several open\nquestion that are raised by or are related to the present paper, and we mention here\n",
+          "sha256": "2aa7eaef657fd6a2c990b138cca657ed85075e83ce583a854cdfa6133129cfc3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1.3 Proof outline and further results",
+            "line_end": 677,
+            "line_start": 527,
+            "mathematical_role": "Maps the Euler-product, two-point, Gaussian-approximation, and real-chaos proof architecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 671,
+          "line_start": 624,
+          "title": "Subcritical and critical real chaos from normalized absolute zeta powers",
+          "unit_id": "openalex_w2515894720_u013",
+          "unit_type": "phase-transition-theorems",
+          "why_material": "The source states almost-sure subcritical convergence, zero collapse at and above the naive critical threshold, moment ranges, and a separately renormalized nontrivial critical measure, each differing from Gaussian chaos by a positive smooth factor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep subcritical and critical normalizations distinct and do not infer the untreated supercritical construction.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 618,
+            "line_start": 595,
+            "title": "Log randomized zeta equals a Gaussian prime field plus an exponentially controlled smooth error",
+            "unit_id": "openalex_w2515894720_u012",
+            "unit_type": "gaussian-approximation",
+            "why_material": "Theorem 1.7 supplies the structural decomposition that later transfers Gaussian-chaos results to randomized zeta, with almost-sure smooth convergence and exponential derivative bounds for the error."
+          },
+          {
+            "line_end": 737,
+            "line_start": 678,
+            "title": "Real-chaos limits for actual zeta are blocked by unavailable moment and correlation asymptotics",
+            "unit_id": "openalex_w2515894720_u014",
+            "unit_type": "conjecture-and-bottleneck",
+            "why_material": "The conjectured zeta measures are motivated by the proved randomized model, but their normalization and convergence require precise absolute moments and multipoint correlations beyond current unconditional results in the source."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once prime covariance is identified as one-half logarithmic plus smooth, subcritical uniform integrability and critical covariance comparison transfer Gaussian-chaos phase behavior to normalized absolute powers of randomized zeta.",
+            "limit": "For actual zeta shifts the analogous measures remain conjectural because the required moment and correlation asymptotics are unavailable.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u004",
+              "openalex_w2515894720_u013",
+              "openalex_w2515894720_u039",
+              "openalex_w2515894720_u040",
+              "openalex_w2515894720_u041",
+              "openalex_w2515894720_u042",
+              "openalex_w2515894720_u043",
+              "openalex_w2515894720_u044",
+              "openalex_w2515894720_u045"
+            ],
+            "title": "Real-chaos phase transition transferred through the smooth error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u013",
+          "spontaneous_reading": "Normalized absolute powers exhibit a phase transition: the naive martingale gives nontrivial subcritical measures, collapses at and above criticality, and a square-root logarithmic correction recovers a critical measure."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u013",
+          "source_grounded_mathematics": "For β<2 in this convention, normalized |ζ_{N,rand}|^β measures converge almost surely to η_β=f_βλ_β, with a positive smooth factor and moments E[η_β([0,1])^p] finite for p<4/β². The naive limit is zero for β≥2. At β=2, multiplying by the stated square-root log-log normalization yields convergence in distribution to a nontrivial critical measure with the same smooth-factor form.",
+          "conceptual_reading": "The smooth arithmetic factor does not change the chaos phase boundary; the singular Gaussian component controls collapse, moment range, and the need for critical renormalization.",
+          "representation_or_bridge": "Normalized absolute powers turn the complex randomized Euler product into real positive measures, and the Gaussian-plus-smooth decomposition identifies them with standard real chaos times f_β.",
+          "boundary_or_failure": "Subcritical convergence is almost sure whereas the stated critical convergence is in distribution. The source does not construct the supercritical measures or maximum, and β's critical value is convention-dependent.",
+          "uncertainty": "Exact normalization factors are formula-sensitive, but the separate subcritical, naive-critical-collapse, and renormalized-critical claims are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u013",
+        "critic_decision": "revise",
+        "supported": [
+          "The subcritical almost-sure limit, collapse of the uncorrected limit at and above beta=2, moment range, and separately normalized critical convergence in distribution all match the span.",
+          "The candidate correctly does not construct the supercritical regime or maximum."
+        ],
+        "inference": [
+          "The shared smooth-factor form supports the reading that the singular Gaussian component governs the phase boundary."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the normalized measure sequence a 'martingale', but this exact span states convergence and normalization without establishing that martingale structure."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact critical normalization is formula-sensitive but is otherwise represented correctly."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'the naive martingale' with 'the naively normalized measures' and leave any martingale proof mechanism to a span that states it."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two error mechanisms and their different summability conditions should not be collapsed.",
+      "line_end": 2234,
+      "line_start": 2039,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separately bounds Gaussian-coupling error and phase-freezing error, showing each converges in every C-derivative norm with exponential maximal bounds when explicit block sums converge.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        35,
+        36,
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coupling and freezing errors become a smooth field under summable block conditions",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u029.txt",
+      "unit_bytes": 10281,
+      "unit_id": "openalex_w2515894720_u029",
+      "unit_sha256": "ca95459a55c6d8e64134f9859168f5419058a1ddf7f4fef685d9f1a523b27391",
+      "unit_type": "error-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u029.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2031,
+          "line_end": 2038,
+          "text": "                        Zm (x) =                √       Wk + iWk p−ixk\n                                       k=rm\n                                                    2pk\nand a ”frozen” version of the block as\n\n                                   Zem (x) = bm p−ix  (1)   (2)\n                                                 rm (Vm + iVm ).\n                                                                                       ⋄\n",
+          "sha256": "a2b4769539809b63680f2439b6586eb767ff68d5350b2c93979d2e0cd9b32e85"
+        },
+        "after": {
+          "line_start": 2235,
+          "line_end": 2242,
+          "text": "  We next combine the error estimates proven so far and make the final choice for the\nsubsequence (rm ). For that purpose we need the following well-known lemma, whose\nproof we include for the reader’s convenience.\nLemma 3.8. For large enough n it holds that\n                                      √                                √\n                              −ne− log n . pn − Li−1 (n) . ne− log n .\nProof. We note first that the inverse Li−1 is convex since Li itself is concave. Further-\nmore, we have (Li−1 )′ (x) = log(Li−1 (x)) ≤ log(2x log(x)) ≤ 2 log(x) for large enough\n",
+          "sha256": "f1a0eef564d1700a96c0b63557b122dc3670033b541b499d2427e5516d89d789"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Gaussian approximation",
+            "line_end": 2389,
+            "line_start": 1709,
+            "mathematical_role": "Couples prime phases blockwise to Gaussians and proves all approximation errors are smooth with exponential control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2234,
+          "line_start": 2039,
+          "title": "Coupling and freezing errors become a smooth field under summable block conditions",
+          "unit_id": "openalex_w2515894720_u029",
+          "unit_type": "error-analysis",
+          "why_material": "The source separately bounds Gaussian-coupling error and phase-freezing error, showing each converges in every C-derivative norm with exponential maximal bounds when explicit block sums converge."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two error mechanisms and their different summability conditions should not be collapsed.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2038,
+            "line_start": 1880,
+            "title": "Block freezing converts prime phases into Gaussian blocks",
+            "unit_id": "openalex_w2515894720_u028",
+            "unit_type": "coupling-construction",
+            "why_material": "Primes are grouped into slowly varying blocks, their spatial phases are frozen at a block representative, and a quantitative Gaussian coupling replaces each two-dimensional phase sum with a Gaussian block of matching covariance."
+          },
+          {
+            "line_end": 2388,
+            "line_start": 2235,
+            "title": "A sparse block schedule satisfies both errors and controls partial blocks",
+            "unit_id": "openalex_w2515894720_u030",
+            "unit_type": "parameter-selection",
+            "why_material": "Prime-number estimates justify a concrete block sequence, and concentration inside incomplete blocks extends convergence from block endpoints to every truncation, completing the Gaussian-plus-smooth approximation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the first prime harmonic is coupled to a log-correlated Gaussian field, higher prime powers, prime-location irregularity, phase freezing, and coupling errors all converge smoothly, so the singular universal component separates from an arithmetic smooth multiplier.",
+            "limit": "The decomposition is proved for the randomized Euler-product model; transfer to actual zeta uses the separate global-limit theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u012",
+              "openalex_w2515894720_u027",
+              "openalex_w2515894720_u028",
+              "openalex_w2515894720_u029",
+              "openalex_w2515894720_u030",
+              "openalex_w2515894720_u032",
+              "openalex_w2515894720_u036"
+            ],
+            "title": "Arithmetic is compressed into a smooth factor"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u029",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u029",
+          "spontaneous_reading": "The approximation succeeds only after keeping two error geometries separate: non-Gaussian coupling is paid for by growing block cardinality, while phase freezing is paid for by small relative prime displacement."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u029",
+          "source_grounded_mathematics": "The total full-block error is decomposed into frozen phase-sum versus frozen Gaussian coupling error and two unfrozen-versus-frozen errors. Lemmas 3.6 and 3.7 give distinct summability conditions under which each converges in every C^ℓ norm with exponential maximal estimates.",
+          "conceptual_reading": "This is proof-burden factorization: different approximations preserve different structure and therefore demand different controls. Smoothness of the combined error follows only after both mechanisms are independently summable.",
+          "representation_or_bridge": "The coupling bound controls block-vector discrepancies multiplied by derivatives of the representative phase; Lipschitz control of p^{-ix} turns within-block prime spread into square-summable coefficient bounds for the freezing error.",
+          "boundary_or_failure": "Neither lemma by itself establishes the final approximation, and their hypotheses are not interchangeable. A later parameter choice must satisfy both infinite families of derivative conditions.",
+          "uncertainty": "The two mechanisms and conclusions are clear, while exact exponents in conditions (3.11) and (3.14) are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u029",
+        "critic_decision": "revise",
+        "supported": [
+          "The source keeps coupling error and freezing error separate and assigns them distinct summability hypotheses.",
+          "The coupling proof uses block-vector discrepancy estimates, while the freezing proof uses Lipschitz phase control and Lemma 3.1 derivativewise."
+        ],
+        "inference": [
+          "Describing this as proof-burden factorization is a useful non-paraphrase reading."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says both lemmas state convergence in every C^ell norm, but Lemma 3.7 explicitly states uniform convergence to a smooth limit together with C^ell exponential bounds; unlike Lemma 3.6, its displayed statement does not explicitly assert C^ell convergence."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exact exponents in conditions (3.11) and (3.14) are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The differing strengths of the two displayed convergence conclusions should remain visible, in addition to the differing summability conditions."
+        ],
+        "revision_instructions": [
+          "Replace the claim that each error converges in every C^ell norm with the exact distinction: Lemma 3.6 gives C^ell convergence, while Lemma 3.7 states uniform convergence to a smooth limit and exponential C^ell control."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserve the complex-Gaussian identity responsible for expectation one and the distinction from positive real chaos.",
+      "line_end": 2447,
+      "line_start": 2390,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The complex Gaussian exponential has expectation one without a real variance renormalization, and its two-point series is bounded through the Z norm, producing a nontrivial negative-Sobolev martingale limit.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Gaussian exponential is an L2-bounded generalized-function martingale",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u031.txt",
+      "unit_bytes": 3660,
+      "unit_id": "openalex_w2515894720_u031",
+      "unit_sha256": "ce573d6242f015ae1a88b7a7415ad55ec7ef7545c1d989a74621215f47a80317",
+      "unit_type": "complex-chaos-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u031.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2382,
+          "line_end": 2389,
+          "text": "Proposition 3.9 then shows the existence of the uniform limit E(x) = limN →∞ EN (x).\nFinally, combining (3.19) with (3.15) yields (3.18). Together with our previous consid-\nerations this concludes the proof of the proposition.                                \u0003\n  Finally, putting things together we obtain\nProof of Theorem 1.7. Noting that log ζN,rand = GN + EN + LN and writing EN =\nEN + LN , we see that Theorem 1.7 follows by combining Lemma 3.2 with Proposition\n3.10.                                                                           \u0003\n\n",
+          "sha256": "2b185028e7f9f9612af41af986c91595b54df4525cebbde9bbc4c2ce43393cb7"
+        },
+        "after": {
+          "line_start": 2448,
+          "line_end": 2455,
+          "text": "compactly supported test function f ∈ C0∞ (−A, A) and observing that we have the\nequality\n                                  ζN,rand (f ) = νN (eEN f ),\nor, writing g(x) := (1 + x2 )f (x) this becomes\n                                      ζN,rand\n                                       r\n                                              (g) = νN\n                                                     r\n",
+          "sha256": "94a7b767c977ffe4ccac741654b10de1a36ee32441bb08b0851a28f3953a7a21"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Complex Gaussian multiplicative chaos",
+            "line_end": 2473,
+            "line_start": 2390,
+            "mathematical_role": "Constructs the complex-chaos martingale and passes the smooth-times-chaos identity to the limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2447,
+          "line_start": 2390,
+          "title": "The Gaussian exponential is an L2-bounded generalized-function martingale",
+          "unit_id": "openalex_w2515894720_u031",
+          "unit_type": "complex-chaos-construction",
+          "why_material": "The complex Gaussian exponential has expectation one without a real variance renormalization, and its two-point series is bounded through the Z norm, producing a nontrivial negative-Sobolev martingale limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserve the complex-Gaussian identity responsible for expectation one and the distinction from positive real chaos.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u031"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2388,
+            "line_start": 2235,
+            "title": "A sparse block schedule satisfies both errors and controls partial blocks",
+            "unit_id": "openalex_w2515894720_u030",
+            "unit_type": "parameter-selection",
+            "why_material": "Prime-number estimates justify a concrete block sequence, and concentration inside incomplete blocks extends convergence from block endpoints to every truncation, completing the Gaussian-plus-smooth approximation."
+          },
+          {
+            "line_end": 2472,
+            "line_start": 2448,
+            "title": "Smooth-error convergence passes multiplicative factorization to the generalized limit",
+            "unit_id": "openalex_w2515894720_u032",
+            "unit_type": "factorization-proof",
+            "why_material": "Testing on compactly supported smooth functions and using Sobolev multiplier continuity lets the identity at finite truncation pass to randomized zeta equals a smooth exponential times complex chaos."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The special real-imaginary dependence generates a Cauchy or Hilbert-transform singularity; analytic one-sided spectral structure turns the apparently nonintegrable two-point function into an L2-bounded generalized-function martingale.",
+            "limit": "The argument is specific to this covariance and analytic boundary structure, not a universality theorem for arbitrary complex chaos.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u005",
+              "openalex_w2515894720_u017",
+              "openalex_w2515894720_u018",
+              "openalex_w2515894720_u031",
+              "openalex_w2515894720_u034"
+            ],
+            "title": "The Hilbert-transform rescue of dependent complex chaos"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u031",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u031",
+          "spontaneous_reading": "Complex Gaussian cancellation makes the exponential a mean-one martingale without the real-chaos variance subtraction, while a weighted Fourier estimate keeps its rough limit inside negative Sobolev space."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u031",
+          "source_grounded_mathematics": "The finite Gaussian exponential ν_N is a W^{-α,2}-valued martingale for α>1/2 because the isotropic complex Gaussian exponential has expectation one. Expanding its second moment over integers with permitted prime factors and applying the Z-norm estimate yields uniform L2 bounds and almost-sure convergence to a nontrivial generalized function.",
+          "conceptual_reading": "The construction shows that complex chaos is naturally distribution-valued rather than measure-valued. Oscillatory complex cancellation replaces the positive renormalization mechanism of real Gaussian chaos.",
+          "representation_or_bridge": "Prime-indexed Gaussian exponentials are re-expanded as a frequency series indexed by multiplicative integers; the Fourier sampling norm then bridges arithmetic coefficients to Sobolev control.",
+          "boundary_or_failure": "This is not a positive random measure and does not provide pointwise convergence. The threshold α>1/2 and the weighted localization are part of the construction.",
+          "uncertainty": "The martingale mechanism is clear, but exact conjugations and Fourier-normalization symbols in the extracted second-moment identity are PDF-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u031",
+        "critic_decision": "revise",
+        "supported": [
+          "The identity E exp(a(W_1+iW_2))=1 makes the weighted Gaussian exponentials a W^{-alpha,2}-valued martingale.",
+          "The multiplicative-integer expansion and Fourier sampling estimate provide uniform second moments for alpha greater than one half, yielding almost-sure martingale convergence; the span also asserts nontriviality."
+        ],
+        "inference": [
+          "The limit is naturally generalized-function-valued rather than pointwise-valued."
+        ],
+        "unsupported_or_imported": [
+          "The comparison that complex cancellation replaces the positive renormalization mechanism of real Gaussian chaos is not made or developed in this span.",
+          "The phrase 'without the real-chaos variance subtraction' imports an external comparison even though the mean-one identity itself is visible."
+        ],
+        "paraphrase_or_style_risk": [
+          "The positive-real-chaos contrast sounds explanatory but is unnecessary to express the unit's actual mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "Conjugations and Fourier normalization in the second-moment identity are extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the mean-one complex-Gaussian cancellation and W^{-alpha,2} martingale argument, but remove the undeveloped comparison with positive real chaos and variance subtraction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The localization and multiplier continuity justify multiplying a distribution by the random smooth limit.",
+      "line_end": 2472,
+      "line_start": 2448,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Testing on compactly supported smooth functions and using Sobolev multiplier continuity lets the identity at finite truncation pass to randomized zeta equals a smooth exponential times complex chaos.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth-error convergence passes multiplicative factorization to the generalized limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u032.txt",
+      "unit_bytes": 1442,
+      "unit_id": "openalex_w2515894720_u032",
+      "unit_sha256": "b20226fbad3b478cfe8830d417c87904a34967865ad0554ba20ce99e28c963eb",
+      "unit_type": "factorization-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u032.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2440,
+          "line_end": 2447,
+          "text": "(1 + x2 )−1 e−2πiξx from Proposition 2.13. Now substituting erξ in place of g, multiplying\nby (1 + ξ 2 )−α and integrating over R we gather that\n                                          r 2\n                                      E kνN kW −α,2 (R) ≤ C,\nwhere C does not depend on N, and we are done.                                                      \u0003\n  One should observe that the martingale considered in the above proof is non-trivial,\nand hence the limit random variable ν is also non-trivial (i,e, it does not reduce to\na deterministic constant). We then start the proof of Theorem 1.1(ii) by fixing a\n",
+          "sha256": "08b53b015cc66a8146eb36f16826388ce65eab4e674c6d00f9f967748e96b6fe"
+        },
+        "after": {
+          "line_start": 2473,
+          "line_end": 2480,
+          "text": "\n      5. The mesoscopic limit – Proof of Theorem 1.2 and Theorem 1.5\n   In the present section we verify our statements about the mesoscopic behavior of\nthe zeta function. We start with some definitions and technical lemmata. Fix a two-\nsided complex Brownian motion u 7→ BuC for u ∈ R. More precisely, this means\n                     (1)    (2)           (1) (2)\nthat BuC := 2−1/2 (Bu + iBu ), where Bu , Bu are standard independent two-sided\n     4Here one simply chooses e.g.    α = 1 and notes that one easily checks that the map (f, g) 7→ f g\n",
+          "sha256": "eaebc4208e771e12b50e03ce66910532b4e32faaeebbaf5d1ae17e9d3c0b9b27"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Complex Gaussian multiplicative chaos",
+            "line_end": 2473,
+            "line_start": 2390,
+            "mathematical_role": "Constructs the complex-chaos martingale and passes the smooth-times-chaos identity to the limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2472,
+          "line_start": 2448,
+          "title": "Smooth-error convergence passes multiplicative factorization to the generalized limit",
+          "unit_id": "openalex_w2515894720_u032",
+          "unit_type": "factorization-proof",
+          "why_material": "Testing on compactly supported smooth functions and using Sobolev multiplier continuity lets the identity at finite truncation pass to randomized zeta equals a smooth exponential times complex chaos."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The localization and multiplier continuity justify multiplying a distribution by the random smooth limit.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u032"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2447,
+            "line_start": 2390,
+            "title": "The Gaussian exponential is an L2-bounded generalized-function martingale",
+            "unit_id": "openalex_w2515894720_u031",
+            "unit_type": "complex-chaos-construction",
+            "why_material": "The complex Gaussian exponential has expectation one without a real variance renormalization, and its two-point series is bounded through the Z norm, producing a nontrivial negative-Sobolev martingale limit."
+          },
+          {
+            "line_end": 2542,
+            "line_start": 2474,
+            "title": "Complex Brownian Fourier fields turn exponential second moments into convolution expansions",
+            "unit_id": "openalex_w2515894720_u033",
+            "unit_type": "spectral-representation",
+            "why_material": "A spectral stochastic-integral representation gives a clean covariance formula, while a Fatou comparison on spectral amplitudes provides a lower-semicontinuity tool for exponential-field second moments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the first prime harmonic is coupled to a log-correlated Gaussian field, higher prime powers, prime-location irregularity, phase freezing, and coupling errors all converge smoothly, so the singular universal component separates from an arithmetic smooth multiplier.",
+            "limit": "The decomposition is proved for the randomized Euler-product model; transfer to actual zeta uses the separate global-limit theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u012",
+              "openalex_w2515894720_u027",
+              "openalex_w2515894720_u028",
+              "openalex_w2515894720_u029",
+              "openalex_w2515894720_u030",
+              "openalex_w2515894720_u032",
+              "openalex_w2515894720_u036"
+            ],
+            "title": "Arithmetic is compressed into a smooth factor"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u032",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u032",
+          "spontaneous_reading": "The finite identity survives the rough limit because the entire arithmetic discrepancy has converged to a smooth multiplier, which acts continuously on the negative-Sobolev chaos."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u032",
+          "source_grounded_mathematics": "For compactly supported tests, ζ_{N,rand}(f)=ν_N(e^{E_N}f). Convergence of ζ_{N,rand} and ν_N in W^{-α,2}, together with C∞ convergence of e^{E_N} on a common compact support and Sobolev multiplier continuity, gives ζ_rand=e^Eν as distributions.",
+          "conceptual_reading": "The factorization separates a universal singular carrier from a source-specific smooth correction. Multiplication is legitimate because the correction lies in a regularity class compatible with the distributional limit.",
+          "representation_or_bridge": "Test-function duality is the bridge: rather than multiplying rough objects pointwise, the smooth factor is moved onto the test function and passed through a continuous multiplier map.",
+          "boundary_or_failure": "The equality is distributional or weighted negative-Sobolev, not pointwise. Localization and the countable dense family of tests are needed to obtain a single almost-sure statement.",
+          "uncertainty": "The proof is compact and clear; the footnoted choice of Sobolev indices and exact weight notation remain extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u032",
+        "critic_decision": "revise",
+        "supported": [
+          "The finite identity zeta_{N,rand}(f)=nu_N(e^{E_N}f), weighted Sobolev convergence, compact support, and smooth multiplier convergence justify passage to the distributional limit.",
+          "Test-function duality and multiplier continuity support zeta_rand=e^E nu as a tempered or weighted negative-Sobolev distribution."
+        ],
+        "inference": [
+          "Moving the smooth factor onto test functions is the operative bridge that avoids pointwise multiplication of rough limits."
+        ],
+        "unsupported_or_imported": [
+          "Calling nu a 'universal singular carrier' is not established in this span; the proof establishes a factorization for this construction, not a universality claim."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Universal singular carrier' is a reusable chaos slogan that exceeds the local proof."
+        ],
+        "context_or_ocr_risk": [
+          "The footnoted Sobolev-index choice and weight notation are formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'universal singular carrier' with 'the singular Gaussian factor constructed in Lemma 4.1' and retain the localized multiplier argument and distributional scope."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The three approximations are distinct and jointly explain why arithmetic details survive only in the smooth factor.",
+      "line_end": 2834,
+      "line_start": 2696,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Prime locations are replaced by inverse logarithmic-integral locations, Gaussian coefficients by Brownian increments, and the resulting Riemann sum by a stochastic integral; each replacement contributes only a smooth exponentially controlled error.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        44,
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime Gaussian sums are successively regularized into a Brownian spectral integral",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u036.txt",
+      "unit_bytes": 8693,
+      "unit_id": "openalex_w2515894720_u036",
+      "unit_sha256": "f6260d9d3f1f0fc6c48e7291033fa8ff1cac4ea9526a6d3a917a4324906724b1",
+      "unit_type": "representation-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u036.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2688,
+          "line_end": 2695,
+          "text": "      E k(1 + x2 )−1 ηa,A (x)k2W −α,2 (R)\n        \u0010                                                  −1/2\n                                                                                    \u00112\n    . E k(1 + x2 )−ε exp(Sa (x))kC 1 (R) k(1 + x2 )ε−1 eG[u χ[1,A] ](x) kW −α,2 (R)    ≤ C\nuniformly in a, A. Here we again used the fact that functions with nice enough bounds\non their derivatives are multipliers in Sobolev spaces – see the discussion at the end of\nSection 2.\n                                                                                       \u0003\n",
+          "sha256": "c44a2d9e392f30e147b55ef8c97fe87265ea0a2082130c77b6dec46c99c09c57"
+        },
+        "after": {
+          "line_start": 2835,
+          "line_end": 2842,
+          "text": "\n We are now ready to prepare for the actual proof of the mesoscopic scaling result.\nWe record first a simple estimate for dilations\nLemma 5.8. Assume that α > 1/2 and f ∈ W −α,2 (R). Then for any δ ∈ (0, 1) it\nholds that\n                   kf (δ·)kW −α,2(R) ≤ δ −1−2α kf kW −α,2 (R) .\nProof. One simply computes\n                      Z                                Z\n",
+          "sha256": "cbe33f4baa1eacbc543b157413a6374f931166a6ff7876e50b819b5ecaf1e509"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Mesoscopic limit",
+            "line_end": 2983,
+            "line_start": 2474,
+            "mathematical_role": "Builds spectral Brownian chaos, regularizes prime sums, dilates the field, and proves scalar and quotient limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2834,
+          "line_start": 2696,
+          "title": "Prime Gaussian sums are successively regularized into a Brownian spectral integral",
+          "unit_id": "openalex_w2515894720_u036",
+          "unit_type": "representation-transfer",
+          "why_material": "Prime locations are replaced by inverse logarithmic-integral locations, Gaussian coefficients by Brownian increments, and the resulting Riemann sum by a stochastic integral; each replacement contributes only a smooth exponentially controlled error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The three approximations are distinct and jointly explain why arithmetic details survive only in the smooth factor.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u036"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2695,
+            "line_start": 2625,
+            "title": "Two spectral cutoffs construct the mesoscopic complex chaos",
+            "unit_id": "openalex_w2515894720_u035",
+            "unit_type": "chaos-martingale",
+            "why_material": "Uniform Sobolev second moments make the low- and high-frequency cutoff exponentials a two-parameter martingale, yielding the full chaos as cutoffs go to zero and infinity."
+          },
+          {
+            "line_end": 2925,
+            "line_start": 2836,
+            "title": "Dilation yields a universal chaos, a divergent scalar, and a vanishing smooth distortion",
+            "unit_id": "openalex_w2515894720_u037",
+            "unit_type": "mesoscopic-factorization",
+            "why_material": "After scaling, the randomized zeta boundary value factors as h_delta times exp(Y_delta) times a chaos whose law is independent of delta; h_delta tends smoothly to one and Y_delta splits into a Gaussian of variance log(1/delta) plus a controlled remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the first prime harmonic is coupled to a log-correlated Gaussian field, higher prime powers, prime-location irregularity, phase freezing, and coupling errors all converge smoothly, so the singular universal component separates from an arithmetic smooth multiplier.",
+            "limit": "The decomposition is proved for the randomized Euler-product model; transfer to actual zeta uses the separate global-limit theorem.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u012",
+              "openalex_w2515894720_u027",
+              "openalex_w2515894720_u028",
+              "openalex_w2515894720_u029",
+              "openalex_w2515894720_u030",
+              "openalex_w2515894720_u032",
+              "openalex_w2515894720_u036"
+            ],
+            "title": "Arithmetic is compressed into a smooth factor"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u036",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u036",
+          "spontaneous_reading": "Three successive regularizations expose a universal spectral field: replace irregular prime locations, embed Gaussian coefficients into Brownian increments, then smooth the increment normalization into a stochastic integral; every discrepancy is only a smooth error."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u036",
+          "source_grounded_mathematics": "G_N is compared first with a sum at Li^{-1}(j), then with Brownian integrals over adjacent inverse-logarithmic-integral intervals, and finally with an integral weighted by t^{-1/2}(log t)^{-1/2}. Prime-number bounds and Ito-isometric derivative estimates make each difference converge smoothly with exponential norm control. A logarithmic change of variables gives a u^{-1/2} spectral integral.",
+          "conceptual_reading": "Arithmetic irregularity is peeled away through representations that preserve covariance to leading order. What survives after these changes is a universal log-correlated singular field; the discarded arithmetic information remains in a smooth multiplier.",
+          "representation_or_bridge": "Li^{-1} regularizes prime positions, Brownian increments realize independent Gaussians continuously, and t=e^{2πu} converts the arithmetic scale to Fourier frequency.",
+          "boundary_or_failure": "Each approximation needs a separate summability check; covariance similarity alone is not the proof. The conclusion is for the randomized Gaussian approximation, not directly for deterministic zeta.",
+          "uncertainty": "The three-step chain is explicit; integration limits, normalizing square roots, and 2π factors should be checked in the retained PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u036",
+        "critic_decision": "revise",
+        "supported": [
+          "The source compares the prime Gaussian sum successively with an inverse-logarithmic-integral sum, Brownian increments on the corresponding intervals, and a Brownian integral weighted by t^{-1/2}(log t)^{-1/2}.",
+          "Prime-number estimates and Ito-isometric derivative bounds make the three differences converge to regular errors, and t=exp(2 pi u) produces the u^{-1/2} Fourier integral."
+        ],
+        "inference": [
+          "The approximation chain peels arithmetic irregularity away while preserving the leading covariance representation."
+        ],
+        "unsupported_or_imported": [
+          "The candidate calls the resulting field 'universal' and says the discarded arithmetic information remains in a smooth multiplier; this span proves a Brownian spectral representation plus a smooth additive error in log zeta, while multiplicative factorization and universality require additional steps."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Universal spectral field' and 'universal log-correlated singular field' overstate the local conclusion."
+        ],
+        "context_or_ocr_risk": [
+          "Integration limits, square-root normalizations, and 2 pi factors are extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe the endpoint as a Brownian spectral field plus a smooth additive error in log zeta. Remove 'universal' and defer the smooth-multiplier formulation to the later exponentiation argument."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a sketched consequence for the statistical model, not the earlier conjecture for actual zeta shifts.",
+      "line_end": 3641,
+      "line_start": 3616,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The covariance asymptotics imply that a slowly shrinking randomized-zeta density factors into an exploding scalar mode, a bounded random correction, and a standard real Gaussian chaos approximation.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mesoscopic real chaos separates a growing scalar Gaussian from strict logarithmic chaos",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u046.txt",
+      "unit_bytes": 1770,
+      "unit_id": "openalex_w2515894720_u046",
+      "unit_sha256": "a8ba41ae218cb974f70e91b94a0f2b6f7508e2ade63bbadc5b3e3cafc1a70a24",
+      "unit_type": "derived-mesoscopic-model",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u046.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3608,
+          "line_end": 3615,
+          "text": "                                                           βc2             2\u0001\n                                  = efM (x)+βc Re GM,4 (x)− 2 E Re GM,4 (x) λβc ,M,N (dx).\nOn the right hand side the first factor is a random continuous function, independent of\nthe measure λβc ,M,N (dx), which in turn converges in distribution as N → ∞. A simple\nargument that employs conditioning (i.e. Fubini) then shows that the full product on\nright hand side converges in distribution, whence the same is true for the left hand\nside. As supN ≥M kfM − fN kL∞ [0,1] → 0 in probability as M → ∞, it is then an easy\nmatter to use the asymptotics of Li−1 (N) to verify the claim of Theorem 1.9.        \u0003\n",
+          "sha256": "d582621bf4cf452ec17fd02d92e9df58604ca48ccbe4382b2ee6c74fda2d202e"
+        },
+        "after": {
+          "line_start": 3642,
+          "line_end": 3649,
+          "text": "\n Appendix A. The second shifted moment of the zeta function on the\n                                 critical line\n   In this first appendix we prove Theorem 2.8. Before embarking upon proving the\nauxiliary estimates of shifted second moments, and suitable truncated versions of them\nas discussed in the introduction, let us first recall some fundamental growth estimates\nfor the zeta function and record an easy consequence of these.\n   A classical growth estimate of the zeta function over the critical line {σ = 1/2}\n",
+          "sha256": "f0a0088ad0e06477c96642372dcae7120ae6a01252fda05d4bad8806780a595e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Critical measure",
+            "line_end": 3642,
+            "line_start": 3357,
+            "mathematical_role": "Compares covariance approximations and transfers known critical chaos to randomized zeta, with a mesoscopic sketch."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3641,
+          "line_start": 3616,
+          "title": "Mesoscopic real chaos separates a growing scalar Gaussian from strict logarithmic chaos",
+          "unit_id": "openalex_w2515894720_u046",
+          "unit_type": "derived-mesoscopic-model",
+          "why_material": "The covariance asymptotics imply that a slowly shrinking randomized-zeta density factors into an exploding scalar mode, a bounded random correction, and a standard real Gaussian chaos approximation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a sketched consequence for the statistical model, not the earlier conjecture for actual zeta shifts.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u046"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3615,
+            "line_start": 3573,
+            "title": "Independence of early and late scales identifies the critical randomized-zeta measure",
+            "unit_id": "openalex_w2515894720_u045",
+            "unit_type": "critical-transfer-proof",
+            "why_material": "After the reference critical measure converges, fixed initial Gaussian scales and the smooth error are separated from the tail; conditioning and uniform convergence pass the critical limit to the normalized randomized-zeta density."
+          },
+          {
+            "line_end": 3697,
+            "line_start": 3643,
+            "title": "Critical-line growth implies quantitative mean one for long zeta averages",
+            "unit_id": "openalex_w2515894720_u047",
+            "unit_type": "contour-estimate",
+            "why_material": "A subconvex growth estimate and contour shift to the absolutely convergent line show that the average of zeta over any long critical-line interval is one with endpoint-dependent error."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u046",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u046",
+          "spontaneous_reading": "At a slowly shrinking mesoscopic scale, covariance decomposes into a spatially constant growing mode plus strict logarithmic covariance, so normalized densities factor into a scalar lognormal fluctuation, a bounded correction, and standard real chaos."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u046",
+          "source_grounded_mathematics": "Using Lemma 6.2, the source chooses ε_N decreasing slower than 1/log N and α_N=-(1/2)log ε_N so that the covariance of G_N(ε_N·) is a truncated half-logarithm plus α_N and bounded error. Together with uniform convergence of E_N, this yields the displayed factorization with a standard Gaussian scalar independent of an approximating strict-logarithmic chaos measure, which converges to standard GMC.",
+          "conceptual_reading": "The covariance's constant mode controls global mass fluctuations, while the x-dependent logarithmic part controls shape. Their separation explains why scalar quotienting and measure normalization expose different mesoscopic limits.",
+          "representation_or_bridge": "Rescaling the covariance identifies a rank-one constant component and a residual log-correlated field; Gaussian independence then realizes this covariance split as multiplicative factors.",
+          "boundary_or_failure": "This is explicitly a sketch for the randomized statistical model, not the earlier conjecture for actual zeta shifts. It asserts existence of a slow scale, not a quantitative optimal rate.",
+          "uncertainty": "The qualitative factorization is explicit, but the normalized text appears to vary notation between ν and ζ and exact exponents should be checked in the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u046",
+        "critic_decision": "revise",
+        "supported": [
+          "The remark chooses epsilon_N decreasing slower than 1/log N and alpha_N=-(1/2)log epsilon_N, producing a covariance equal to a truncated half-logarithm plus a growing constant mode and bounded error.",
+          "The displayed normalized density factors into a scalar Gaussian term independent of a strict-logarithmic chaos approximant, a random correction from E(0) and normalization, and that chaos approximant; the source explicitly presents this only as a sketch for the statistical model."
+        ],
+        "inference": [
+          "Separating the spatially constant covariance mode from the logarithmic shape explains the different roles of scalar normalization and measure normalization."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the correction 'bounded', but the source defines R=beta Re E(0)-C; it is a finite random scalar here, not asserted to be deterministically bounded."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The span visibly alternates notation resembling nu and zeta, and exact exponents are extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'a bounded correction' with 'a finite random scalar correction arising from E(0) and normalization'; retain the explicit statistical-model and slow-scale limitations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The result is an auxiliary first-moment estimate and should not be confused with the second-moment theorem.",
+      "line_end": 3697,
+      "line_start": 3643,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A subconvex growth estimate and contour shift to the absolutely convergent line show that the average of zeta over any long critical-line interval is one with endpoint-dependent error.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line growth implies quantitative mean one for long zeta averages",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u047.txt",
+      "unit_bytes": 3278,
+      "unit_id": "openalex_w2515894720_u047",
+      "unit_sha256": "e42458d9a9725e730e67b9c2925afed07a7048a8020aff1d49c929cff93562ba",
+      "unit_type": "contour-estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u047.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3635,
+          "line_end": 3642,
+          "text": "R := βReE(0) − C is a random variable, where C is a constant depending on β (it\ncomes from the difference between the true value of E |νN (x)|β and the normalization\nof the Gaussian multiplicative chaos measure), and λ       eN,β is obtained by exponentiat-\ning a good approximation of a Gaussian field with the strictly logarithmic covariance\n                                                      eN,β converges to a standard Gaussian\nstructure 21 log(1/|x − y|) on [0, 1]. In particular, λ\nmultiplicative chaos on [0, 1]. A similar statement holds also true in the case β = βc . ⋄\n\n",
+          "sha256": "75bd3b9d25671e7dead78876008b092749598f0fcf8016a9791f9abd399bc900"
+        },
+        "after": {
+          "line_start": 3698,
+          "line_end": 3705,
+          "text": "\n  Let us start with some useful definitions. Recall that NN consists of positive integers\nn ≥ 1 whose prime factors do not exceed pN .\nDefinition A.2. For q ∈ C and n, N ∈ Z+ , let\n                           X                              X\n                  σq (n) =    dq and σq (n; N) =                    dq .\n                                  d:d|n                 d∈NN :d|n\n\n",
+          "sha256": "24abe1980d0e1b241d8ebf370f8893e7c146583cbcec96597380f333006ae131"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: shifted second moment",
+            "line_end": 4196,
+            "line_start": 3643,
+            "mathematical_role": "Derives full, mixed, and truncated two-point asymptotics through contour shifts, divisor sums, and the functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3697,
+          "line_start": 3643,
+          "title": "Critical-line growth implies quantitative mean one for long zeta averages",
+          "unit_id": "openalex_w2515894720_u047",
+          "unit_type": "contour-estimate",
+          "why_material": "A subconvex growth estimate and contour shift to the absolutely convergent line show that the average of zeta over any long critical-line interval is one with endpoint-dependent error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The result is an auxiliary first-moment estimate and should not be confused with the second-moment theorem.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u047"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3641,
+            "line_start": 3616,
+            "title": "Mesoscopic real chaos separates a growing scalar Gaussian from strict logarithmic chaos",
+            "unit_id": "openalex_w2515894720_u046",
+            "unit_type": "derived-mesoscopic-model",
+            "why_material": "The covariance asymptotics imply that a slowly shrinking randomized-zeta density factors into an exploding scalar mode, a bounded random correction, and a standard real Gaussian chaos approximation."
+          },
+          {
+            "line_end": 3857,
+            "line_start": 3699,
+            "title": "Shifted products become divisor sums whose Perron contours reveal two main terms",
+            "unit_id": "openalex_w2515894720_u048",
+            "unit_type": "dirichlet-series-asymptotic",
+            "why_material": "Encoding zeta times a shifted zeta or truncated Euler product by generalized divisor sums allows an effective Perron formula and contour shift to derive the needed uniform summatory asymptotics."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper can prove the second shifted moment needed for generalized-function convergence, but real and imaginary chaos for actual zeta would demand substantially stronger absolute and multipoint correlations, with zeros adding an extra obstruction for the imaginary part.",
+            "limit": "A proof-search failure or missing estimate would not refute the conjectured chaos picture; it identifies the present analytic bottleneck.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u014",
+              "openalex_w2515894720_u015",
+              "openalex_w2515894720_u018",
+              "openalex_w2515894720_u047",
+              "openalex_w2515894720_u048",
+              "openalex_w2515894720_u049",
+              "openalex_w2515894720_u050"
+            ],
+            "title": "Moment asymptotics are the bridge still missing for actual zeta chaos"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u047",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u047",
+          "spontaneous_reading": "A contour shift converts the critical-line first moment into the absolutely convergent-line mean, where the constant Dirichlet coefficient supplies the main term one and all other coefficients cancel at interval endpoints."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u047",
+          "source_grounded_mathematics": "A subconvex critical-line growth bound is interpolated across σ≥1/2. Integrating ζ around a rectangle from σ=1/2 to σ=2 bounds horizontal edges and the pole contribution, while termwise integration on σ=2 gives B-A+O(1). Thus the average over [A,B] is 1 with error controlled by endpoint sixth powers divided by B-A.",
+          "conceptual_reading": "The contour moves the observable to a representation where its mean is carried by a single coefficient. Analytic growth control pays for the change of representation.",
+          "representation_or_bridge": "Cauchy contour deformation bridges the difficult critical line to an absolutely convergent Dirichlet series, whose constant term is transparent.",
+          "boundary_or_failure": "This is an auxiliary first-moment estimate, not the shifted second-moment result. It becomes informative only for intervals long relative to the endpoint-dependent error.",
+          "uncertainty": "The contour argument is clear; the historical numerical subconvex exponent and exact displayed error powers are PDF-sensitive and time-specific to the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u047",
+        "critic_decision": "revise",
+        "supported": [
+          "A critical-line growth estimate is interpolated across sigma at least one half, and a rectangular contour moves the first moment to sigma=2 while controlling horizontal edges and the pole.",
+          "Termwise integration of the absolutely convergent Dirichlet series gives B-A plus an O(1) remainder, yielding mean one with endpoint one-sixth-power error divided by B-A."
+        ],
+        "inference": [
+          "The contour change exposes the constant Dirichlet coefficient as the main term."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says all nonconstant coefficients 'cancel at interval endpoints'; they instead contribute a bounded oscillatory remainder after termwise integration.",
+          "The directed reading says 'endpoint sixth powers', but the displayed estimate contains endpoint one-sixth powers."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The historical subconvex exponent and extracted fractional powers remain formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State that the nonconstant Dirichlet coefficients contribute O(1), not that they cancel, and correct 'sixth powers' to 'one-sixth powers'."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the separate treatment of large shifts and the lack of a pole for the truncated factor.",
+      "line_end": 4060,
+      "line_start": 3858,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A Titchmarsh integral lemma, truncation of the Dirichlet series, residue calculus, and contour error estimates reduce both full and mixed shifted moments to the divisor sums of the previous unit.",
+      "source_id": "openalex_w2515894720",
+      "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+      "source_page_markers_inside_unit": [
+        63,
+        64
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The functional equation converts shifted critical-line moments into divisor-sum asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2515894720_u049.txt",
+      "unit_bytes": 12434,
+      "unit_id": "openalex_w2515894720_u049",
+      "unit_sha256": "a0f48722f3f82e00c91e0be3fb959b89cf3356d404ddd9dfd6be92204e697181",
+      "unit_type": "functional-equation-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u049.txt",
+      "source": {
+        "source_id": "openalex_w2515894720",
+        "title": "The Riemann zeta function and Gaussian multiplicative chaos: Statistics on the critical line",
+        "authors": [
+          "Eero Saksman",
+          "Christian Webb"
+        ],
+        "year": 2020,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3850,
+          "line_end": 3857,
+          "text": "\n<!-- source-page: 62 -->\n\n62                               E. SAKSMAN AND C. WEBB\n\n  Establishing the analogous estimate for T −1 Dia (T ; N) is even simpler as we can\nrepeat our steps starting from (A.7) and this time apply (A.3) to bound ζN (s + ia)\nuniformly by CN .                                                                  \u0003\n",
+          "sha256": "be4f58a4c24e4934a1b29e25a30155e93cbbbeddbb8377777ee77c1c4bab3f25"
+        },
+        "after": {
+          "line_start": 4061,
+          "line_end": 4068,
+          "text": "\n<!-- source-page: 65 -->\n\nTHE ZETA FUNCTION ON THE CRITICAL LINE AND MULTIPLICATIVE CHAOS                     65\n\n  We note that ζ has the Laurent expansion\n(A.13)                           ζ(1 + s) = s−1 + γ0 + O(s)\nfor small s, where γ0 is the Euler-Mascheroni constant, see [81, equation (2.1.16)].\n",
+          "sha256": "df54bf745da1343c6e4ea9d742feef6febceae81173b9232373ddc616b787354"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A: shifted second moment",
+            "line_end": 4196,
+            "line_start": 3643,
+            "mathematical_role": "Derives full, mixed, and truncated two-point asymptotics through contour shifts, divisor sums, and the functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4060,
+          "line_start": 3858,
+          "title": "The functional equation converts shifted critical-line moments into divisor-sum asymptotics",
+          "unit_id": "openalex_w2515894720_u049",
+          "unit_type": "functional-equation-method",
+          "why_material": "A Titchmarsh integral lemma, truncation of the Dirichlet series, residue calculus, and contour error estimates reduce both full and mixed shifted moments to the divisor sums of the previous unit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the separate treatment of large shifts and the lack of a pole for the truncated factor.",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "unit_id": "openalex_w2515894720_u049"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3857,
+            "line_start": 3699,
+            "title": "Shifted products become divisor sums whose Perron contours reveal two main terms",
+            "unit_id": "openalex_w2515894720_u048",
+            "unit_type": "dirichlet-series-asymptotic",
+            "why_material": "Encoding zeta times a shifted zeta or truncated Euler product by generalized divisor sums allows an effective Perron formula and contour shift to derive the needed uniform summatory asymptotics."
+          },
+          {
+            "line_end": 4191,
+            "line_start": 4066,
+            "title": "Large-shift bounds and range symmetrization complete the two-point theorem",
+            "unit_id": "openalex_w2515894720_u050",
+            "unit_type": "uniformization-proof",
+            "why_material": "The proof first recovers the classical mean square as the zero-shift limit, then partitions spatial shifts, symmetrizes the time interval, applies the functional equation, and uses finite phase equidistribution for the fully truncated kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper can prove the second shifted moment needed for generalized-function convergence, but real and imaginary chaos for actual zeta would demand substantially stronger absolute and multipoint correlations, with zeros adding an extra obstruction for the imaginary part.",
+            "limit": "A proof-search failure or missing estimate would not refute the conjectured chaos picture; it identifies the present analytic bottleneck.",
+            "parent_local_unit_ids": [
+              "openalex_w2515894720_u014",
+              "openalex_w2515894720_u015",
+              "openalex_w2515894720_u018",
+              "openalex_w2515894720_u047",
+              "openalex_w2515894720_u048",
+              "openalex_w2515894720_u049",
+              "openalex_w2515894720_u050"
+            ],
+            "title": "Moment asymptotics are the bridge still missing for actual zeta chaos"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2515894720_u049",
+        "spontaneous": {
+          "unit_id": "openalex_w2515894720_u049",
+          "spontaneous_reading": "The kernel supplied by the zeta functional equation acts as a soft cutoff that turns a shifted critical-line correlation into a summatory generalized-divisor problem. The decisive structural distinction is analytic: the full zeta factor contributes a residue and hence a second main term, whereas the finite truncation has no corresponding pole."
+        },
+        "directed": {
+          "unit_id": "openalex_w2515894720_u049",
+          "source_grounded_mathematics": "Proposition A.5 expands zeta(s+ia)zeta(s) into coefficients sigma_{-ia}(n), applies Titchmarsh's integral lemma to n up to T/(2 pi), and obtains (2 pi/T)D_{ia}(T/(2 pi)) as the main contribution. Moving the remaining contour to Re(s)=c>1 exposes the pole at s=1-ia in the full case; horizontal and vertical estimates control the remainder uniformly in a. Substituting the earlier divisor-sum asymptotic gives the two zeta main terms, while replacing the shifted factor by zeta_N removes the pole and leaves the zeta_N(1+ia) term.",
+          "conceptual_reading": "The proof changes representation twice: the functional equation changes a line correlation into a chi-weighted Dirichlet series, and contour displacement separates coefficient mass from singularity data. This makes the dual main term legible as a residue rather than as an unexplained feature of the moment formula; analyticity of the truncated factor then explains why that term disappears.",
+          "representation_or_bridge": "The bridge objects are the generalized divisor coefficients sigma_{-ia}(n), their partial sums D_{ia}(x) and D_{ia}(x;N), the chi-kernel integral of Lemma A.4, and the pole crossed during the contour shift. Proposition A.3 supplies the final passage from divisor sums to explicit zeta expressions.",
+          "boundary_or_failure": "The derivation initially excludes a=0 and recovers it only by a limit. Large shifts close to or beyond the contour height require separate treatment, and the final error combines this contour argument with a prior divisor-sum estimate. The absence of a pole is specific to the truncated shifted factor and should not be transferred to the full product.",
+          "uncertainty": "The prose-level mechanism and case distinctions are clear, but the normalized extraction is formula-sensitive; exact powers, constants, signs, and the placement of shifts or conjugations should be checked against the retained PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2515894720_u049",
+        "critic_decision": "revise",
+        "supported": [
+          "The chi-kernel lemma isolates the coefficient sum up to T/(2 pi), yielding (2 pi/T)D_ia(T/(2 pi)) with a uniform error.",
+          "The correction-contour argument crosses a pole at s=1-ia only in the stated shift range, while the truncated shifted factor is analytic there and gives easier contour bounds.",
+          "Proposition A.3 is invoked to turn the full and truncated divisor sums into the displayed zeta asymptotics."
+        ],
+        "inference": [
+          "Calling the chi-kernel a soft cutoff is a reasonable conceptual compression of Lemma A.4.",
+          "The coefficient sums, contour correction, and analyticity distinction are genuine representation bridges rather than mere paraphrase."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous and conceptual readings incorrectly say that the correction-contour residue produces the full case's second main term. In this span that residue is bounded as part of the error; the two displayed main terms enter when Proposition A.3 is applied to D_ia."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'contour displacement separates coefficient mass from singularity data' is useful only after the residue's actual error-scale role is stated; as written it encourages the false main-term attribution."
+        ],
+        "context_or_ocr_risk": [
+          "Exact constants, powers, shift signs, and the extracted truncated D subscript are formula-sensitive, but the prose is adequate to audit the mechanism."
+        ],
+        "missed_mechanism": [
+          "The candidate does not preserve the proof's crucial distinction between the small pole contribution in I2 and the prior Perron/divisor-sum asymptotic that supplies the second main term."
+        ],
+        "revision_instructions": [
+          "Remove every claim that the A.11 residue causes the second main term.",
+          "State instead that I1 carries the divisor sum, Proposition A.3 supplies its full two-term asymptotic, and the pole crossed in controlling I2 is absorbed into the uniform error.",
+          "Retain the supported contrast that the truncated shifted factor has no such pole and admits better correction-contour bounds."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "faa045df8f663541d3e7f7509673cf898dc5bfbeb46fd6b028cd164f2d224967"
+}

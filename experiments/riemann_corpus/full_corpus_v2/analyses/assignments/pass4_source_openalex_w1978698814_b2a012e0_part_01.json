@@ -1,0 +1,485 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1978698814_b2a012e0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1978698814",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the state and normalization setup referenced by the later Dirichlet-overlap construction.",
+      "line_end": 284,
+      "line_start": 239,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent on equations (2)–(5); prose fixes the indexing and convergence conclusion, but scan verification is advisable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines finite and infinite photon-number zeta states and shows that normalization of the infinite state is the reciprocal of the real Dirichlet sum, so existence of the state inherits the condition that the real part exceed one.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta-state normalization inherits Dirichlet convergence",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1978698814_u06.txt",
+      "unit_bytes": 2409,
+      "unit_id": "full_openalex_w1978698814_u06",
+      "unit_sha256": "a75987354f54a240ff09d05523fbfc516f59261e555602eaee024cdc30445f42",
+      "unit_type": "state definition and convergence boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1978698814_u06.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "Riemann–Siegel formula employed in the present paper but also the next order correction.\n      In order to keep the paper self-contained, we briefly review key features of Wigner and\nMoyal functions in appendix A. Moreover, we dedicate appendix B to a brief discussion of\na proposal for realizing an approximate interaction Hamiltonian that displays the logarithmic\ndependence on the photon number needed to obtain the appropriate phases of the zeta states.\nAlthough this Hamiltonian is only an approximation, the resulting scalar product determining ζ\nleads to a satisfactory agreement with the exact values of ζ .\n\n",
+          "sha256": "968bfc91528497bfa554ae93879e897181119a858f36744af868a0b31af21a7a"
+        },
+        "after": {
+          "line_start": 285,
+          "line_end": 292,
+          "text": "     The so-defined zeta states are generalizations of the thermal phase state [26]\n                               ∞\n                               X\n                 |ψp i ≡ Np           e−σ n/2 |ni.                                             (6)\n                                n=0\n\nIndeed, both are coherent superpositions of photon number states with real-valued expansion\ncoefficients that decay with n. However, for the thermal phase state (6) we find an exponential\n",
+          "sha256": "31729068ee2fc2e7e47a4e17c299986ddfd2c08221c98f404b6780ee4f970bc7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dc1ea5662b02f7f4e49cfc969c3a503e7efdb66be63d50dd5054e04953007388",
+        "dossier_sha256": "85f556df481b66023a01ca7fcbbdba3c79723d6fc39c3420d31100b6323167e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Zeta states and their properties",
+            "line_end": 307,
+            "line_start": 239,
+            "mathematical_role": "Defines truncated and infinite zeta states, their normalization boundary, photon statistics, and logarithmic time generator."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 284,
+          "line_start": 239,
+          "title": "Zeta-state normalization inherits Dirichlet convergence",
+          "unit_id": "full_openalex_w1978698814_u06",
+          "unit_type": "state definition and convergence boundary",
+          "why_material": "Defines finite and infinite photon-number zeta states and shows that normalization of the infinite state is the reciprocal of the real Dirichlet sum, so existence of the state inherits the condition that the real part exceed one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the state and normalization setup referenced by the later Dirichlet-overlap construction.",
+          "representation_dependency": "Formula-dependent on equations (2)–(5); prose fixes the indexing and convergence conclusion, but scan verification is advisable.",
+          "unit_id": "full_openalex_w1978698814_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 206,
+            "line_start": 143,
+            "title": "Three-step joint-measurement construction and analytic-continuation analogy",
+            "unit_id": "full_openalex_w1978698814_u02",
+            "unit_type": "entanglement-based construction overview",
+            "why_material": "Specifies preparation, conditional evolution, and joint projection; explains how logarithmic photon-number phases and a superposition of oppositely evolved zeta states motivate the analogy between entanglement and analytic continuation."
+          },
+          {
+            "line_end": 300,
+            "line_start": 285,
+            "title": "Polynomial zeta weights as a logarithmic reparameterization of thermal weights",
+            "unit_id": "full_openalex_w1978698814_u07",
+            "unit_type": "representation comparison",
+            "why_material": "Contrasts exponential thermal photon statistics with polynomial zeta-state statistics and isolates the substitution of photon number by its logarithm as the structural change."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same Dirichlet boundary appears first as normalizability of an infinite state and again as conservation of total intensity in a classical interferometer, making convergence a representation-resource constraint rather than a merely formal condition.",
+            "limit": "This is an analogy for this realization; it does not show that analytic continuation generally requires nonclassical resources.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1978698814_u06",
+              "full_openalex_w1978698814_u01"
+            ],
+            "title": "Convergence as physical normalizability and intensity conservation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1978698814_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1978698814_u06",
+          "spontaneous_reading": "The zeta state encodes Dirichlet factors as photon-number amplitudes, so its squared norm is exactly the real Dirichlet sum and the mathematical convergence threshold reappears as the existence threshold for the infinite physical state."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1978698814_u06",
+          "source_grounded_mathematics": "A truncated state uses coefficients n^{-σ/2}e^{-iτ ln n} on |n-1⟩; in the infinite limit its normalization satisfies N²=1/ζ(σ,0), hence the infinite state is normalizable only for σ>1.",
+          "conceptual_reading": "Amplitude encoding converts an analytic series into a state: phases carry the imaginary argument while occupation magnitudes carry the real argument, and convergence becomes normalizability.",
+          "representation_or_bridge": "The photon-number basis bridges Dirichlet terms to quantum amplitudes, while the normalization condition bridges ζ(σ,0) to a physical state constraint.",
+          "boundary_or_failure": "Finite truncations are well-defined without establishing the infinite continuation, and the infinite state construction itself cannot cross the Dirichlet wall.",
+          "uncertainty": "The indexing and convergence conclusion are clear, but exact transcription of equations (2)–(5) is formula-sensitive and merits scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1978698814_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The directed record correctly states that the truncated coefficients are n^{-σ/2}e^{-iτ ln n}, that N²=1/ζ(σ,0), and that the infinite construction is restricted to σ>1.",
+          "The phase/magnitude split and the conversion of convergence into normalizability are grounded in equations (2)–(5) and their prose."
+        ],
+        "inference": [
+          "Viewing the photon-number basis as an amplitude encoding of Dirichlet terms is a justified conceptual compression."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that 'the zeta state's squared norm is exactly the real Dirichlet sum' is misleading for the state as defined, which includes N and has squared norm 1; ζ(σ,0) is the squared norm of the unnormalized coefficient vector, equivalently the reciprocal of N²."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact indexing and formula typography remain scan-sensitive, but the prose fixes the normalization conclusion."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the normalized state from the unnormalized Dirichlet-weight vector."
+        ],
+        "revision_instructions": [
+          "Replace the spontaneous norm claim with: the squared norm of the unnormalized Dirichlet-weight vector is ζ(σ,0), so the normalizing factor exists only where that sum converges; leave the otherwise accurate directed analysis unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Appendix A supplies the underlying Wigner/Moyal identities; this unit records their application to the zeta state.",
+      "line_end": 559,
+      "line_start": 519,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (28) is extraction-fragile and should be scan-checked; the diagonal/off-diagonal decomposition is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Motivates experimentally accessible phase-space reconstruction and expands the zeta-state Wigner function into diagonal photon-number terms plus off-diagonal Moyal interference terms.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Wigner and Moyal components expose state interference",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1978698814_u12.txt",
+      "unit_bytes": 2677,
+      "unit_id": "full_openalex_w1978698814_u12",
+      "unit_sha256": "1826bf830962104b7ff71bff06617484485e7c2449c7aad4361c1a4e427efd31",
+      "unit_type": "phase-space representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1978698814_u12.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 511,
+          "line_end": 518,
+          "text": "                                       2\nof field oscillator plus atom.\n\nNew Journal of Physics 15 (2013) 063009 (http://www.njp.org/)\n\n<!-- source-page: 11 -->\n\n10\n",
+          "sha256": "fa83ddf2c40b25c0f23e7cba8dca2b32fa7d4de2533ca44a3b4408d02698cedb"
+        },
+        "after": {
+          "line_start": 560,
+          "line_end": 567,
+          "text": "     In figure 1 we represent the Wigner function W|σ,τ i of the zeta state |σ, τ i by colored\ndensity plots for several values of τ and a fixed value of σ . Here and in the remainder of our\npaper, warmer colors indicate positive values of the Wigner function whereas colder colors\ndenote negative values. The ‘thermometer’ on the right-hand side of the pictures provides us\nwith the actual values.\n     We emphasize that the initial zeta state |σ, 0i is represented in phase space by a wedge\naligned along the x-axis. It is reminiscent of a thermal phase state (6).\n     For increasing time the logarithmic dependence of the phase\n",
+          "sha256": "862f594091759fd9c02593cf991c7cea9a8a6c6bde55aa74d729e47cb88aa7a7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dc1ea5662b02f7f4e49cfc969c3a503e7efdb66be63d50dd5054e04953007388",
+        "dossier_sha256": "85f556df481b66023a01ca7fcbbdba3c79723d6fc39c3420d31100b6323167e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Riemann zeta function from Wigner phase space",
+            "line_end": 872,
+            "line_start": 519,
+            "mathematical_role": "Translates the constructions into Wigner functions/matrices, separating phase-space motion, off-diagonal coherence, and magnitude-squared overlap cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 559,
+          "line_start": 519,
+          "title": "Wigner and Moyal components expose state interference",
+          "unit_id": "full_openalex_w1978698814_u12",
+          "unit_type": "phase-space representation change",
+          "why_material": "Motivates experimentally accessible phase-space reconstruction and expands the zeta-state Wigner function into diagonal photon-number terms plus off-diagonal Moyal interference terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Appendix A supplies the underlying Wigner/Moyal identities; this unit records their application to the zeta state.",
+          "representation_dependency": "Equation (28) is extraction-fragile and should be scan-checked; the diagonal/off-diagonal decomposition is prose-supported.",
+          "unit_id": "full_openalex_w1978698814_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 512,
+            "line_start": 490,
+            "title": "The tuned reference state disentangles on the critical line",
+            "unit_id": "full_openalex_w1978698814_u11",
+            "unit_type": "critical-line simplification",
+            "why_material": "Shows that although the evolved branch state is entangled, the reference state becomes a field–atom product specifically at real part one-half because its coefficient reduces to a pure phase."
+          },
+          {
+            "line_end": 599,
+            "line_start": 560,
+            "title": "Logarithmic phase shear breaks and curls the Wigner wedge",
+            "unit_id": "full_openalex_w1978698814_u13",
+            "unit_type": "dynamical mechanism",
+            "why_material": "Explains phase-space deformation through a velocity inversely proportional to photon number: low-index components move faster, causing a wedge to shear, curl, and develop interference negativity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 518,
+              "line_start": 513,
+              "reason": "Page footer and section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1978698814_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1978698814_u12",
+          "spontaneous_reading": "Moving the zeta state into Wigner phase space separates photon-number populations from cross-number interference, exposing structure that occupation probabilities alone hide and making it, in principle, experimentally reconstructible."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1978698814_u12",
+          "source_grounded_mathematics": "The Wigner function of the zeta state expands into diagonal photon-number Wigner functions plus off-diagonal Moyal terms weighted by the zeta-state coefficients; Wigner reconstruction techniques can access the resulting phase-space pattern.",
+          "conceptual_reading": "The representation change reorganizes one state into classical-looking population contributions and coherence contributions, revealing interference as a geometric object.",
+          "representation_or_bridge": "Wigner and cross-state Moyal kernels bridge the photon-number expansion to a phase-space quasidistribution and later turn state overlaps into phase-space integrals.",
+          "boundary_or_failure": "Experimental accessibility of a Wigner function does not make it a probability density, and ordinary Wigner overlap later retains only the magnitude squared of the scalar product rather than its complex phase.",
+          "uncertainty": "The decomposition is prose-supported, but equation (28) is extraction-fragile and exact coefficients need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1978698814_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span motivates phase-space reconstruction, states experimental accessibility, and expands the zeta-state Wigner function into diagonal number-state Wigner terms and off-diagonal Moyal terms.",
+          "The population/coherence reorganization is a valid non-paraphrase interpretation of equation (28)."
+        ],
+        "inference": [
+          "Calling the Wigner function a quasidistribution rather than an ordinary probability density is mathematically appropriate, though not stated in this span."
+        ],
+        "unsupported_or_imported": [
+          "The boundary claim that an 'ordinary Wigner overlap later retains only the magnitude squared' is established in the next unit, not in this frozen source span or its bounded nearby text.",
+          "The phrase that Moyal kernels 'later turn state overlaps into phase-space integrals' reaches beyond the unit; this span only announces Wigner overlap generally and does not establish the later magnitude/phase hierarchy."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Equation (28) is extraction-fragile, but the diagonal/off-diagonal split is prose-supported."
+        ],
+        "missed_mechanism": [
+          "The candidate should keep this unit focused on the state-to-phase-space decomposition and experimental reconstruction, leaving the magnitude-only limitation to its own evidence span."
+        ],
+        "revision_instructions": [
+          "Delete the later-unit magnitude-squared claim and recast the bridge without prospective results: Wigner/Moyal kernels map the photon-number expansion into diagonal population and off-diagonal coherence contributions in phase space. Retain the scan caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This limitation directly motivates the later move to Moyal functions.",
+      "line_end": 618,
+      "line_start": 600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equation (30) and figure 2; the magnitude-only conclusion is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps the return probability to an integral of the initial and evolved Wigner functions, making phase-space cancellation compute the normalized absolute square rather than the complex zeta value.",
+      "source_id": "openalex_w1978698814",
+      "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Wigner overlap retains only the zeta magnitude squared",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1978698814_u14.txt",
+      "unit_bytes": 1302,
+      "unit_id": "full_openalex_w1978698814_u14",
+      "unit_sha256": "091ae7b387b1bb24343c112ad608db8fa868c6d6e7c69a0b7ed41aa2c559af02",
+      "unit_type": "overlap identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1978698814_u14.txt",
+      "source": {
+        "source_id": "openalex_w1978698814",
+        "title": "Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function",
+        "authors": [
+          "C. Feiler",
+          "W. P. Schleich"
+        ],
+        "year": 2013,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 592,
+          "line_end": 599,
+          "text": "                 depicted in green.\n\n\nin phase space, which is inversely proportional to n, leads to diffusion. Indeed, the parts of the\nwedge corresponding to small values of n move faster than those where n is large. Moreover,\ndue to the minus sign in (29) the motion in phase space is in the clockwise direction as familiar\nfrom unitary time evolution in quantum mechanics. As a result, the original wedge starts to\nbreak up and curls around the origin as depicted in figure 1 for different times τ .\n",
+          "sha256": "2a997396186e9716e8c742da03bf267cb32bec3655674c78dd50b9a3b5fcb81f"
+        },
+        "after": {
+          "line_start": 619,
+          "line_end": 626,
+          "text": "\n4.2. Wigner matrix of entangled states\nAs shown in section A.2 of the appendix the Wigner representation of the entangled state\n\n                 |9i = |ψe i|ei + |ψg i|gi\n\n\nNew Journal of Physics 15 (2013) 063009 (http://www.njp.org/)\n",
+          "sha256": "980a7059267330727b2b903184cfd91f2f634e28ddd085a8e66b2f328cc345a6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_dc1ea5662b02f7f4e49cfc969c3a503e7efdb66be63d50dd5054e04953007388",
+        "dossier_sha256": "85f556df481b66023a01ca7fcbbdba3c79723d6fc39c3420d31100b6323167e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Riemann zeta function from Wigner phase space",
+            "line_end": 872,
+            "line_start": 519,
+            "mathematical_role": "Translates the constructions into Wigner functions/matrices, separating phase-space motion, off-diagonal coherence, and magnitude-squared overlap cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 618,
+          "line_start": 600,
+          "title": "Wigner overlap retains only the zeta magnitude squared",
+          "unit_id": "full_openalex_w1978698814_u14",
+          "unit_type": "overlap identity",
+          "why_material": "Maps the return probability to an integral of the initial and evolved Wigner functions, making phase-space cancellation compute the normalized absolute square rather than the complex zeta value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This limitation directly motivates the later move to Moyal functions.",
+          "representation_dependency": "Depends on equation (30) and figure 2; the magnitude-only conclusion is explicit.",
+          "unit_id": "full_openalex_w1978698814_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 599,
+            "line_start": 560,
+            "title": "Logarithmic phase shear breaks and curls the Wigner wedge",
+            "unit_id": "full_openalex_w1978698814_u13",
+            "unit_type": "dynamical mechanism",
+            "why_material": "Explains phase-space deformation through a velocity inversely proportional to photon number: low-index components move faster, causing a wedge to shear, curl, and develop interference negativity."
+          },
+          {
+            "line_end": 654,
+            "line_start": 620,
+            "title": "Wigner matrices retain diagonal branches and off-diagonal coherence",
+            "unit_id": "full_openalex_w1978698814_u15",
+            "unit_type": "entangled-state representation",
+            "why_material": "Defines the Wigner matrix of a bipartite state and separates branch Wigner functions from cross-branch Moyal functions, preparing a phase-space account of entanglement and overlap."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Real Wigner overlaps expose signed cancellation but return magnitude squared, whereas cross-state Moyal functions retain relative phase and integrate to the complex amplitude for both single-branch and entangled constructions.",
+            "limit": "The phase-space pictures are representational diagnostics, not an independent analytic continuation or zero-finding proof.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1978698814_u14",
+              "full_openalex_w1978698814_u18",
+              "full_openalex_w1978698814_u19",
+              "full_openalex_w1978698814_u20"
+            ],
+            "title": "Magnitude and phase form a hierarchy of phase-space representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 619,
+              "line_start": 619,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1978698814_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1978698814_u14",
+          "spontaneous_reading": "Integrating the product of initial and evolved Wigner functions converts geometric signed overlap into the return probability, but squaring has discarded the complex phase and leaves only the normalized magnitude of ζ."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1978698814_u14",
+          "source_grounded_mathematics": "The identity 2π∫W_{|σ,0⟩}W_{|σ,τ⟩}=|⟨σ,0|σ,τ⟩|² gives |ζ(σ,τ)/ζ(σ,0)|² for the Dirichlet-state construction.",
+          "conceptual_reading": "Phase-space overlap makes cancellation visible as a signed integral, yet the ordinary Wigner pairing is an information-losing representation for the target because it retains fidelity rather than complex amplitude.",
+          "representation_or_bridge": "The Wigner overlap identity bridges quantum return probability to the absolute square of the zeta value.",
+          "boundary_or_failure": "This route cannot recover arg ζ and remains tied to the normalizable Dirichlet-state domain; plots at selected times are illustrations, not additional analytic results.",
+          "uncertainty": "The magnitude-only conclusion is explicit, though exact scaling in equation (30) and figure values should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1978698814_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "Equation (30) and prose directly identify the Wigner product integral with |⟨σ,0|σ,τ⟩|²=|ζ(σ,τ)/ζ(σ,0)|².",
+          "The candidate correctly identifies loss of complex phase and treats selected plotted times as illustrations."
+        ],
+        "inference": [
+          "Calling the Wigner pairing information-losing for a complex target follows directly from its magnitude-squared output."
+        ],
+        "unsupported_or_imported": [
+          "The additional statement that this route 'remains tied to the normalizable Dirichlet-state domain' is true of the broader construction but is not established in this frozen span or its bounded nearby context; it imports the earlier zeta-state normalization unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact equation scaling and figure values remain scan-sensitive, while the magnitude-only conclusion is unambiguous."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the imported normalizability-domain clause from boundary_or_failure; keep the within-span limits that the Wigner overlap cannot recover arg ζ and that the plots add no analytic result."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "65bafaca0133bba463c66d62c9425b3304d4e30e144bb8eedbdd1072fa50b23a"
+}

@@ -1,0 +1,167 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1966546572_62dd92ee_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1966546572",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+      "line_end": 75,
+      "line_start": 32,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+      "unit_artifact_relpath": "depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "unit_bytes": 2999,
+      "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+      "unit_sha256": "37d5e38462cdf3dad0c89728929c4e815fb1762d5dabd150f30e577cfe14de8a",
+      "unit_type": "motivation_and_reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 24,
+          "line_end": 31,
+          "text": "                                     dealing with the cosmological constant problem. Possible cosmological applications of\n                                     the zeta-function field theory are discussed.\n\n\n\n\n                                                                               1\n\n",
+          "sha256": "83f7748ea62f9c1d2b0696342095ae8c14072b418778f0fcd3ba9a0db67f497a"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n                                                   2\n\n    An approach to the derivation of the mass spectrum of elementary particles by using\nsolutions of the Klein-Gordon equation with finite action is considered in [11].\n    We can quantize not only the Riemann zeta-function but also more general L-functions.\nQuantization of the mathematics of Fermat-Wiles [12] and the Langlands program [13] is\nindicated.\n",
+          "sha256": "5f35ff2c4b6228f522468f8e73e40ea5b339124496aec43d5d587ca10a0f9c79"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and adelic motivation",
+            "line_end": 92,
+            "line_start": 32,
+            "mathematical_role": "motivates replacing an undefined prime-indexed operator product by a zeta-based symbol and previews conditional spectral claims"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 32,
+          "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "unit_type": "motivation_and_reframing",
+          "why_material": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+          "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 93,
+            "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+            "unit_id": "w1966546572_xi_completion_and_zero_data",
+            "unit_type": "representation_change_and_structural_background",
+            "why_material": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 76,
+              "reason": "Related-work remarks and paper roadmap."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+        "spontaneous": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "spontaneous_reading": "The operative move is to abandon a prime-by-prime product of kinetic operators once that product has no evident meaning and replace it with one analytic symbol suggested by the Euler product. This compresses prime-indexed motivation into zeta(1/2+i Box), after which the critical zeros can be treated conditionally as spectral data."
+        },
+        "directed": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "source_grounded_mathematics": "The source starts from p-adic kinetic factors p^Box, declares the formal product over primes mathematically unclear, recalls the Euler product for zeta, and proposes zeta(1/2+i Box) and its Euclidean Laplacian analogue. It states only conditionally on the Riemann hypothesis that the resulting Lagrangian can be rewritten using Klein-Gordon masses from critical-line zeros.",
+          "conceptual_reading": "A difficult factor-level construction is reframed as functional calculus for a single global analytic object. The gain is a compact symbol whose zeros can organize modes; the cost is that the original prime-local operators are no longer independently defined or composed.",
+          "representation_or_bridge": "The bridge runs from prime-indexed operators, through the scalar Euler product, to substitution of the wave operator into zeta. The Euler product supplies motivation, while the analytic zeta symbol is the proposed replacement rather than an evaluated operator product.",
+          "boundary_or_failure": "The scalar Euler product is valid away from the critical line and does not by itself define the formal product of p^Box. The operator functional calculus is not established here, and the mass-spectrum claim depends on the Riemann hypothesis; Voronin universality does not discharge either burden.",
+          "uncertainty": "The half-shift in the displayed operator is clear from the extracted span, but formula layout is degraded. The passage motivates a program and previews a conditional result; it is not evidence for the Riemann hypothesis."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly introduces the individual factors p^Box, says their prime-indexed product has no obvious mathematical meaning, and uses the scalar Euler product to motivate zeta(1/2+i Box).",
+          "The preview of Klein-Gordon masses is explicitly conditional on the Riemann hypothesis, and the candidate preserves that proof burden."
+        ],
+        "inference": [
+          "Calling the move a replacement or compression of prime-indexed motivation into one analytic symbol is a reasonable conceptual reading, not an identity between the two operator expressions.",
+          "The claim that Voronin universality does not define the operator product or prove the spectral statement is a sound limitation inferred from what universality is used to motivate."
+        ],
+        "unsupported_or_imported": [
+          "The statement that the scalar Euler product is valid 'away from the critical line' is not present in this frozen span and is an imprecise domain description; the displayed Euler product's standard convergent domain is Re(s)>1.",
+          "The claimed cost that the prime-local operators are 'no longer independently defined' conflicts with the span, which introduces each p^Box; only their adelic product lacks an obvious meaning."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrases 'compact symbol' and 'organize modes' remain useful only because the candidate ties them to the displayed substitution and the explicitly conditional mass-spectrum preview."
+        ],
+        "context_or_ocr_risk": [
+          "The vertically split one-half in equation (3) is formula-sensitive, but the extracted expression zeta(1/2+i Box) is still unambiguous enough for this critique."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the three-way distinction between individually introduced p^Box factors, their undefined infinite product, and the separately proposed zeta symbol."
+        ],
+        "revision_instructions": [
+          "Replace the claim that the individual prime-local operators cease to be defined with the narrower claim that the proposed zeta symbol does not define or retain an independently composed prime-wise product.",
+          "Remove 'valid away from the critical line'; if a domain warning is retained, state cautiously that the displayed scalar Euler product motivates rather than defines the operator expression and do not supply a domain not stated in this span."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a3f4b5ebe61bc9331c6c2009367e1e0a5c75cc779923b3d87974bb50d95a9dc6"
+}

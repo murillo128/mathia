@@ -1,0 +1,688 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w981942693_b770dfd5_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w981942693",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the complete statements and the explicit attribution of the first estimate to earlier work; the derivation continues in the next unit.",
+      "line_end": 220,
+      "line_start": 177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose-level dependency chain is readable, but the definitions and displayed inequalities (2.1)-(2.4), including constants and exponents, are OCR-damaged and must be checked against the scan before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof of Theorem 1 is organized around Lemma 1, with a stronger form under a real-zero hypothesis, and Lemma 2 supplies the estimates for the auxiliary divisor-sum needed to prove it. This exposes the reusable reduction rather than only the final theorem.",
+      "source_id": "openalex_w981942693",
+      "source_normalized_sha256": "280b3bdcfce6381a706ec9d08035b85f52a27d5fc00c6eea8e84799305588840",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce zero repulsion to a positive divisor-sum estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w981942693_d01.txt",
+      "unit_bytes": 903,
+      "unit_id": "openalex_w981942693_d01",
+      "unit_sha256": "7919ff74156ccd506aebadf2a3285a99b86ae6ce3ac9f91a8090195290d97e43",
+      "unit_type": "auxiliary-estimate dependency chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w981942693_d01.txt",
+      "source": {
+        "source_id": "openalex_w981942693",
+        "title": "Elementary methods in the theory of L-functions, V. The theorems of Landau and Page",
+        "authors": [
+          "J. Pintz"
+        ],
+        "year": 1977,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 169,
+          "line_end": 176,
+          "text": "\nElementary methods in the theory of L-functions, V 165\nPélya-Vinogradov inequality. (If we use Burgess’s inequality, in Lemma 3\nthe error term will be o(1) on choosing\n\n@ = Dutte._-8\nand thus we get the interval (1.8).)\n\n",
+          "sha256": "7b6df318d1d2908075d8bdd87be527fec49cd2eb5bc4825765bcd7b9b5ae133d"
+        },
+        "after": {
+          "line_start": 221,
+          "line_end": 228,
+          "text": "\n<!-- source-page: 3 -->\n\n166 J. Pintz\n\nA consequence of (2.4) for aco is the equality\n\n(2.5) De ed\n",
+          "sha256": "5f29c59afc4435a6068653c40d073db64928aef68cb6960b4792483ca226cc8c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bb053ad47b2dd2734925c97f1dd9cdc6f6c126262fd6636f18db2ac12c50b07a",
+        "dossier_sha256": "7851f5e213e94dd795b6db7b85e6fb8f2562045d1ec31e95615f878b68bb5e19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 auxiliary lemmas",
+            "line_end": 306,
+            "line_start": 177,
+            "mathematical_role": "States a logarithmic-sum estimate and derives it from estimates for an auxiliary divisor-sum, nonnegativity, tail control, and an elementary lower bound for L(1)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 220,
+          "line_start": 177,
+          "title": "Reduce zero repulsion to a positive divisor-sum estimate",
+          "unit_id": "openalex_w981942693_d01",
+          "unit_type": "auxiliary-estimate dependency chain",
+          "why_material": "The proof of Theorem 1 is organized around Lemma 1, with a stronger form under a real-zero hypothesis, and Lemma 2 supplies the estimates for the auxiliary divisor-sum needed to prove it. This exposes the reusable reduction rather than only the final theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the complete statements and the explicit attribution of the first estimate to earlier work; the derivation continues in the next unit.",
+          "representation_dependency": "The prose-level dependency chain is readable, but the definitions and displayed inequalities (2.1)-(2.4), including constants and exponents, are OCR-damaged and must be checked against the scan before exact reuse.",
+          "unit_id": "openalex_w981942693_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 306,
+            "line_start": 226,
+            "title": "Use nonnegativity and elementary L(1) control to prove Lemma 1",
+            "unit_id": "openalex_w981942693_d02",
+            "unit_type": "positivity-and-tail mechanism",
+            "why_material": "The argument turns nonnegativity of the auxiliary multiplicative quantity into bounds for logarithmically weighted sums, isolates a tail term, invokes an elementary lower bound for L(1), and combines the resulting estimates to establish Lemma 1. The semantic move is a positive majorant plus explicit tail control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Theorem 1's route composes an auxiliary divisor-sum estimate, coefficient nonnegativity, elementary L(1) and tail bounds, and the nonprincipal product of two characters to convert real-zero hypotheses into mutual repulsion.",
+            "limit": "This is a source-level proof architecture only; the OCR does not safely preserve the quantitative inequalities or constants, which require the scan.",
+            "parent_local_unit_ids": [
+              "openalex_w981942693_d01",
+              "openalex_w981942693_d02",
+              "openalex_w981942693_d03"
+            ],
+            "title": "Positive auxiliary coefficients as a real-analysis zero-repulsion engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 176,
+              "line_start": 167,
+              "reason": "Continuation severed by the v1 boundary explains the simpler Polya-Vinogradov presentation and how Burgess would improve the error term and interval."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 225,
+              "line_start": 221,
+              "reason": "Page marker, blank lines, and running header between the lemma statement and its proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w981942693_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w981942693_d01",
+          "spontaneous_reading": "The proof is being compressed into an auxiliary positive-coefficient problem: instead of confronting zero repulsion directly, it asks for ordinary and zero-sensitive estimates for a divisor-sum sequence attached to a real character."
+        },
+        "directed": {
+          "unit_id": "openalex_w981942693_d01",
+          "source_grounded_mathematics": "To prove Theorem 1, the source states Lemma 1 for a real nonprincipal character and its L-function, including a strengthened estimate when a real zero is assumed. Lemma 2 then supplies two estimates for an auxiliary divisor-sum g(n), with the first explicitly attributed to earlier work and the second said to follow analogously.",
+          "conceptual_reading": "The reduction translates spectral information about a real zero into stronger control of an arithmetic coefficient sum. This separates the theorem into a reusable analytic estimate and a later character-coupling step.",
+          "representation_or_bridge": "The auxiliary divisor-sum g(n) is the bridge object: its sums can be related to L-values while its coefficient structure will support one-sided estimates. Lemma 1 is the interface exposed to the final zero-repulsion argument.",
+          "boundary_or_failure": "This unit states the dependency chain but does not carry out the derivation or the final repulsion argument. The displayed definitions and inequalities (2.1)-(2.4), including ranges, constants, and exponents, are too OCR-damaged for exact reuse.",
+          "uncertainty": "High confidence in the lemma architecture and the zero-sensitive strengthening; low confidence in every quantitative formula without checking the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w981942693_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly makes Lemma 1 a prerequisite for Theorem 1, gives an ordinary estimate and a strengthened estimate under a real-zero hypothesis, and then invokes Lemma 2 for an auxiliary divisor-sum g(n).",
+          "The attribution of the first Lemma 2 estimate to earlier work and the statement that the second is analogous are present in the span.",
+          "The candidate correctly limits confidence in the OCR-damaged quantitative formulas."
+        ],
+        "inference": [
+          "Treating the two lemmas as a reduction from the theorem to control of an auxiliary coefficient sum is a reasonable structural reading of their stated dependency.",
+          "Calling g(n) a bridge to L-values is qualitatively suggested by the displayed, though damaged, relations in Lemma 2."
+        ],
+        "unsupported_or_imported": [
+          "The exact span does not state that the auxiliary coefficients are positive; that nonnegativity is established outside this unit, so 'positive-coefficient problem' and the promised one-sided use are imported.",
+          "The 'later character-coupling step' and Lemma 1's asserted interface to a final zero-repulsion argument are not present in this span.",
+          "Calling the real-zero input 'spectral information' adds terminology not used or needed by the source."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Reusable analytic estimate' and 'bridge object' risk a generic architecture template unless restricted to the explicit Lemma 1/Lemma 2 dependency visible here."
+        ],
+        "context_or_ocr_risk": [
+          "The definition of g(n), the exact objects summed, and every range, exponent, and constant in (2.1)-(2.4) are OCR-unsafe.",
+          "The derivation and any use of positivity lie beyond this semantic-unit boundary."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the locally supported zero-conditioned strengthening from the later, unsupported explanation of how that strengthening is composed with other characters."
+        ],
+        "revision_instructions": [
+          "Replace 'positive-coefficient problem' with the neutral claim that the proof is reduced to estimates for the auxiliary divisor-sum g(n).",
+          "Remove the later character-coupling and one-sided-positivity claims from the conceptual and bridge fields; retain the explicit ordinary/zero-conditioned Lemma 1 distinction, Lemma 2 dependency, attribution, and OCR caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Starts with the product-character observation and includes the concluding parameter choice and bound.",
+      "line_end": 347,
+      "line_start": 307,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product-character strategy and conclusion are clear in prose, but the combined inequalities (2.14)-(2.18), constants, and powers are OCR-unsafe and need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof applies the ordinary estimate to each of two characters and the zero-sensitive estimate to their nonprincipal product, creating a single inequality in the two zero distances; a parameter choice then yields the claimed repulsion. This is the paper's central composition mechanism for Theorem 1.",
+      "source_id": "openalex_w981942693",
+      "source_normalized_sha256": "280b3bdcfce6381a706ec9d08035b85f52a27d5fc00c6eea8e84799305588840",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Couple two characters through their nonprincipal product",
+      "unit_artifact_relpath": "depth/units/openalex_w981942693_d03.txt",
+      "unit_bytes": 734,
+      "unit_id": "openalex_w981942693_d03",
+      "unit_sha256": "166d41a65c5c0332c8cfc71198c9be6998db0be6cb834f467e9be90fb7f7b80c",
+      "unit_type": "zero-repulsion synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w981942693_d03.txt",
+      "source": {
+        "source_id": "openalex_w981942693",
+        "title": "Elementary methods in the theory of L-functions, V. The theorems of Landau and Page",
+        "authors": [
+          "J. Pintz"
+        ],
+        "year": 1977,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 299,
+          "line_end": 306,
+          "text": "—<—[51\n(2.12) G <5 (6 og D-+— =)\n\nand\nB _ 66 1\n—<— |blog D+—\n(2.13) G<k ( og D+ =|\nwhich together with (2.6) prove Lemma 1.\n",
+          "sha256": "becc95dd066409f9ed80bdc04554abfe15f35b9750ede0c17b90ca271b239ccb"
+        },
+        "after": {
+          "line_start": 348,
+          "line_end": 355,
+          "text": "\n3. To prove Theorem 2 we need the following\nLemma 3. Let x be a real non-principal character (modD),\n\n= ald)\n\nain\n\n",
+          "sha256": "5a79f0d2c19e957e6e57d321ec3aa60b7118f62b703f3798307658c7ee1220d8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bb053ad47b2dd2734925c97f1dd9cdc6f6c126262fd6636f18db2ac12c50b07a",
+        "dossier_sha256": "7851f5e213e94dd795b6db7b85e6fb8f2562045d1ec31e95615f878b68bb5e19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 combination and parameter choice",
+            "line_end": 348,
+            "line_start": 307,
+            "mathematical_role": "Applies the auxiliary estimate to two characters and their nonprincipal product, then chooses the real parameter to obtain the asserted zero repulsion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 347,
+          "line_start": 307,
+          "title": "Couple two characters through their nonprincipal product",
+          "unit_id": "openalex_w981942693_d03",
+          "unit_type": "zero-repulsion synthesis",
+          "why_material": "The proof applies the ordinary estimate to each of two characters and the zero-sensitive estimate to their nonprincipal product, creating a single inequality in the two zero distances; a parameter choice then yields the claimed repulsion. This is the paper's central composition mechanism for Theorem 1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Starts with the product-character observation and includes the concluding parameter choice and bound.",
+          "representation_dependency": "The product-character strategy and conclusion are clear in prose, but the combined inequalities (2.14)-(2.18), constants, and powers are OCR-unsafe and need the scan.",
+          "unit_id": "openalex_w981942693_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 306,
+            "line_start": 226,
+            "title": "Use nonnegativity and elementary L(1) control to prove Lemma 1",
+            "unit_id": "openalex_w981942693_d02",
+            "unit_type": "positivity-and-tail mechanism",
+            "why_material": "The argument turns nonnegativity of the auxiliary multiplicative quantity into bounds for logarithmically weighted sums, isolates a tail term, invokes an elementary lower bound for L(1), and combines the resulting estimates to establish Lemma 1. The semantic move is a positive majorant plus explicit tail control."
+          },
+          {
+            "line_end": 386,
+            "line_start": 349,
+            "title": "Reduce Page's theorem to a real-variable weighted identity",
+            "unit_id": "openalex_w981942693_d04",
+            "unit_type": "weighted-sum reduction",
+            "why_material": "Lemma 3 expresses a weighted sum built from the auxiliary coefficients in terms of L-values, a derivative term, and controlled errors; Lemma 4 supplies the elementary summation estimates. This identifies the real-analysis substitute on which the zero-simplicity argument depends."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Theorem 1's route composes an auxiliary divisor-sum estimate, coefficient nonnegativity, elementary L(1) and tail bounds, and the nonprincipal product of two characters to convert real-zero hypotheses into mutual repulsion.",
+            "limit": "This is a source-level proof architecture only; the OCR does not safely preserve the quantitative inequalities or constants, which require the scan.",
+            "parent_local_unit_ids": [
+              "openalex_w981942693_d01",
+              "openalex_w981942693_d02",
+              "openalex_w981942693_d03"
+            ],
+            "title": "Positive auxiliary coefficients as a real-analysis zero-repulsion engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 348,
+              "line_start": 348,
+              "reason": "Blank section separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w981942693_d03",
+        "spontaneous": {
+          "unit_id": "openalex_w981942693_d03",
+          "spontaneous_reading": "Multiplying the two characters creates the coupling that separate estimates lack: the product character carries both zero parameters into one positive inequality, from which a tuned auxiliary parameter forces repulsion."
+        },
+        "directed": {
+          "unit_id": "openalex_w981942693_d03",
+          "source_grounded_mathematics": "The source observes that the product of the two characters is nonprincipal modulo the product modulus. It applies the ordinary Lemma 1 estimate to each character and the zero-sensitive estimate to their product, combines them in a single positive sum, introduces common modulus and zero-distance parameters, and chooses the real parameter to obtain the concluding bound.",
+          "conceptual_reading": "Character multiplication is a synthesis move: it converts two otherwise separate zero hypotheses into a shared arithmetic object. The final parameter choice balances the terms in the combined inequality and turns compatibility of the three estimates into mutual exclusion of overly close zeros.",
+          "representation_or_bridge": "The nonprincipal product character is the bridge between the two L-functions. The combined positive coefficient sum is the comparison space in which estimates for each factor and for their product can be added and optimized together.",
+          "boundary_or_failure": "The method requires the product character to be nonprincipal. The OCR does not safely preserve inequalities (2.14)-(2.18), their constants, powers, or the exact final repulsion scale, so only the composition strategy is established here.",
+          "uncertainty": "High confidence in the product-character coupling and parameter-balancing architecture; low confidence in the quantitative conclusion as transcribed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w981942693_d03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that the product character is nonprincipal, forms a positive combined sum involving both characters, introduces common modulus and zero-distance parameters, and chooses the auxiliary real parameter to reach the concluding repulsion bound.",
+          "The nonprincipal product character genuinely supplies the coupling object, and the OCR caveat about (2.14)-(2.18) is necessary."
+        ],
+        "inference": [
+          "Character multiplication and expansion of the combined coefficient factor can reasonably be described as converting two separate hypotheses into one comparison.",
+          "The final choice of the real parameter is an optimization or balancing move, although its quantitative balance cannot be recovered safely from the OCR."
+        ],
+        "unsupported_or_imported": [
+          "The candidate reverses the roles of (2.1) and (2.2): the ordinary estimate is applied to the nonprincipal product character, while the zero-sensitive estimate is applied to the two original characters carrying the zero hypotheses, not to their product.",
+          "The product character does not itself 'carry both zero parameters' through a zero-sensitive hypothesis; the coupling occurs through the expanded positive coefficient sum."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Synthesis move' and 'comparison space' are acceptable only after the estimate assignment is corrected; as written they obscure the central factual inversion."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed combined inequalities, exact coefficient weights, constants, powers, and final scale are OCR-unsafe.",
+          "The opening application sentence is damaged, so its reading must also respect the logical prerequisites stated in Lemma 1: nonprincipality licenses (2.1), whereas an actual real zero licenses (2.2)."
+        ],
+        "missed_mechanism": [
+          "The decisive local mechanism is the positive expansion involving 1, each original character, and their product, with different Lemma 1 estimates assigned to those contributions."
+        ],
+        "revision_instructions": [
+          "Swap the estimate assignment throughout: apply ordinary (2.1) to the nonprincipal product and zero-sensitive (2.2) to each original character with its assumed zero.",
+          "Rewrite the spontaneous and directed accounts so the product couples coefficient contributions rather than being asserted to possess the two zeros; keep the parameter-balancing and OCR limitations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both lemma statements so their proof dependency is locally visible; their derivation begins at line 388.",
+      "line_end": 386,
+      "line_start": 349,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose roles are readable, but definitions, formula (3.1), and relations (3.2)-(3.3) are substantially OCR-damaged; exact weights, coefficients, and errors require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 3 expresses a weighted sum built from the auxiliary coefficients in terms of L-values, a derivative term, and controlled errors; Lemma 4 supplies the elementary summation estimates. This identifies the real-analysis substitute on which the zero-simplicity argument depends.",
+      "source_id": "openalex_w981942693",
+      "source_normalized_sha256": "280b3bdcfce6381a706ec9d08035b85f52a27d5fc00c6eea8e84799305588840",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce Page's theorem to a real-variable weighted identity",
+      "unit_artifact_relpath": "depth/units/openalex_w981942693_d04.txt",
+      "unit_bytes": 680,
+      "unit_id": "openalex_w981942693_d04",
+      "unit_sha256": "5041b743f0e9cd4dc25605a21492702b7bb08ee4853bc2f7e711e75e084f63c4",
+      "unit_type": "weighted-sum reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w981942693_d04.txt",
+      "source": {
+        "source_id": "openalex_w981942693",
+        "title": "Elementary methods in the theory of L-functions, V. The theorems of Landau and Page",
+        "authors": [
+          "J. Pintz"
+        ],
+        "year": 1977,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 341,
+          "line_end": 348,
+          "text": "(2.17) 30logD < 12log D +240log D( dlog D) + 3840 log*D- 6.\nHence\n\n1\n(2.18)\n\n> 227 log D * \"\n\n",
+          "sha256": "a973bbf85beb3273e176da06d7fb616c6c7ec3ffbeaef57bad8191f9f4aa3e8a"
+        },
+        "after": {
+          "line_start": 387,
+          "line_end": 394,
+          "text": "\nNow let ¢ be a number, to be chosen later for which 1 <2< a#. Then\n\n= 0 Dina 7 Dat Be\n\n‘ dex <2 {,e<d<a\n\n(3.4) ee\n",
+          "sha256": "9281a3e81faa42f00725800d9f7e4c38e58ed7b6e9737a31bb229ad3efb087bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bb053ad47b2dd2734925c97f1dd9cdc6f6c126262fd6636f18db2ac12c50b07a",
+        "dossier_sha256": "7851f5e213e94dd795b6db7b85e6fb8f2562045d1ec31e95615f878b68bb5e19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 2 auxiliary identity",
+            "line_end": 460,
+            "line_start": 349,
+            "mathematical_role": "Reduces the theorem to a weighted-sum identity and proves that identity by an elementary summation lemma, a splitting parameter, Polya-Vinogradov, and Abel summation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 386,
+          "line_start": 349,
+          "title": "Reduce Page's theorem to a real-variable weighted identity",
+          "unit_id": "openalex_w981942693_d04",
+          "unit_type": "weighted-sum reduction",
+          "why_material": "Lemma 3 expresses a weighted sum built from the auxiliary coefficients in terms of L-values, a derivative term, and controlled errors; Lemma 4 supplies the elementary summation estimates. This identifies the real-analysis substitute on which the zero-simplicity argument depends."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both lemma statements so their proof dependency is locally visible; their derivation begins at line 388.",
+          "representation_dependency": "The prose roles are readable, but definitions, formula (3.1), and relations (3.2)-(3.3) are substantially OCR-damaged; exact weights, coefficients, and errors require scan verification.",
+          "unit_id": "openalex_w981942693_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 347,
+            "line_start": 307,
+            "title": "Couple two characters through their nonprincipal product",
+            "unit_id": "openalex_w981942693_d03",
+            "unit_type": "zero-repulsion synthesis",
+            "why_material": "The proof applies the ordinary estimate to each of two characters and the zero-sensitive estimate to their nonprincipal product, creating a single inequality in the two zero distances; a parameter choice then yields the claimed repulsion. This is the paper's central composition mechanism for Theorem 1."
+          },
+          {
+            "line_end": 460,
+            "line_start": 388,
+            "title": "Derive the weighted identity by splitting and Abel summation",
+            "unit_id": "openalex_w981942693_d05",
+            "unit_type": "character-sum tail control",
+            "why_material": "The proof introduces a splitting parameter, evaluates the main pieces with Lemma 4, and controls the remaining character sums with Polya-Vinogradov and Abel's inequality before choosing the split to recover Lemma 3. It is a reusable bridge from character-sum cancellation to an L-function identity using only real-variable tools."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Theorem 2 uses elementary summation, Polya-Vinogradov cancellation, and Abel tail bounds to create a weighted L-function identity whose sign contradicts the positive coefficient sum when two zeros or a multiple zero are assumed; the final remark shows the mechanism depends on multiplicativity, bounded values, and partial-sum control rather than characters alone.",
+            "limit": "The mechanism is prose-grounded, but exact identities, the zero interval, and the generalized bound are formula-dependent and scan-unsafe.",
+            "parent_local_unit_ids": [
+              "openalex_w981942693_d04",
+              "openalex_w981942693_d05",
+              "openalex_w981942693_d06",
+              "openalex_w981942693_d07"
+            ],
+            "title": "Character-sum cancellation to zero simplicity through a weighted identity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 348,
+              "line_start": 348,
+              "reason": "Blank section separator."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 387,
+              "line_start": 387,
+              "reason": "Blank transition into the proof of Lemma 3."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w981942693_d04",
+        "spontaneous": {
+          "unit_id": "openalex_w981942693_d04",
+          "spontaneous_reading": "The key intermediate object is a positive weighted coefficient sum that can also be expressed through L-values and a derivative; this gives a real-variable surface on which zero multiplicity can later become a sign contradiction."
+        },
+        "directed": {
+          "unit_id": "openalex_w981942693_d04",
+          "source_grounded_mathematics": "For a real nonprincipal character, Lemma 3 states an identity expressing a logarithmically weighted sum of auxiliary coefficients in terms of L-function values, a derivative term, and errors. Lemma 4 supplies two elementary summation estimates used to derive that identity.",
+          "conceptual_reading": "The theorem is reframed from counting or separating zeros to comparing two representations of one scalar statistic. Its coefficient representation can supply positivity, while its L-value-and-derivative representation can react sharply at a critical point near zeros.",
+          "representation_or_bridge": "The weighted sum is the bridge object, and Lemma 3 is the translation map from arithmetic coefficients to local analytic data of L. Lemma 4 provides the real-analysis machinery needed to justify that translation without importing a more elaborate complex-analytic apparatus.",
+          "boundary_or_failure": "This unit only states the lemmas; the derivation starts in the next unit and the contradiction occurs later. Definitions, weights, formula (3.1), error terms, and relations (3.2)-(3.3) are substantially OCR-damaged.",
+          "uncertainty": "High confidence in the role of the weighted identity and its dependence on an elementary summation lemma; low confidence in its exact formula and parameter ranges."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w981942693_d04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Lemma 3 as an identity between a logarithmically weighted auxiliary-coefficient sum and expressions involving L-values, a derivative, and errors.",
+          "It immediately states an elementary real-analysis lemma supplying two summation relations for the later derivation.",
+          "The candidate correctly says this unit states rather than proves the lemmas and marks the formulas, weights, errors, and ranges as OCR-unsafe."
+        ],
+        "inference": [
+          "Calling the weighted sum a translation point between coefficient data and local L-function data is a reasonable non-paraphrase reading of the two sides of Lemma 3.",
+          "A two-representation comparison is supported, provided no sign or zero-multiplicity behavior is attributed to this span."
+        ],
+        "unsupported_or_imported": [
+          "This unit does not establish that the weighted coefficient sum is positive; that property and its lower-bound use occur later.",
+          "The claimed reaction at a critical point near zeros, the zero-multiplicity interpretation, and the later sign contradiction are imported from subsequent units rather than supported by this exact span.",
+          "The statement that Lemma 4 avoids a more elaborate complex-analytic apparatus is broader methodological commentary not established here."
+        ],
+        "paraphrase_or_style_risk": [
+          "'One scalar statistic' and 'translation map' are useful only if anchored to the explicit weighted sum and the L-value/derivative identity, rather than a generic dual-representation template."
+        ],
+        "context_or_ocr_risk": [
+          "OCR damage prevents reliable recovery of the definition of the auxiliary coefficients, the precise weight, the derivative term, error terms, and the relations in Lemma 4.",
+          "Because the unit ends at the lemma statements, it cannot by itself support claims about the identity's proof or its later contradiction role."
+        ],
+        "missed_mechanism": [
+          "The locally supportable move is only the construction of a weighted identity plus its declared dependence on elementary summation estimates; positivity and critical-point substitution must remain outside this unit's interpretation."
+        ],
+        "revision_instructions": [
+          "Remove 'positive' and all forward claims about zeros, multiplicity, critical points, signs, or contradiction from the spontaneous, conceptual, and bridge fields.",
+          "Retain the precise two-representation identity, Lemma 4 dependency, statement-only boundary, and OCR uncertainty."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the positivity premise, the contrary assumption, the intermediate-point conditions, and the concluding contradiction.",
+      "line_end": 508,
+      "line_start": 461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The contradiction's sign structure is supported by prose, but the exact interval, weighted lower bound, substitution, and estimates (3.11)-(3.14) are OCR-corrupt and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A positive lower bound for the same weighted sum is opposed to Lemma 3. Assuming two zeros or a nonsimple zero in the stated interval supplies an intermediate parameter with nonpositive L-value and vanishing derivative; the resulting upper estimate is negative, contradicting positivity and proving Theorem 2.",
+      "source_id": "openalex_w981942693",
+      "source_normalized_sha256": "280b3bdcfce6381a706ec9d08035b85f52a27d5fc00c6eea8e84799305588840",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exclude two or multiple zeros via an intermediate critical point",
+      "unit_artifact_relpath": "depth/units/openalex_w981942693_d06.txt",
+      "unit_bytes": 818,
+      "unit_id": "openalex_w981942693_d06",
+      "unit_sha256": "06285b96a1a3b26564358b4fc50bbfc0f02feab00880dc31f4c5b433af63f32e",
+      "unit_type": "positivity contradiction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w981942693_d06.txt",
+      "source": {
+        "source_id": "openalex_w981942693",
+        "title": "Elementary methods in the theory of L-functions, V. The theorems of Landau and Page",
+        "authors": [
+          "J. Pintz"
+        ],
+        "year": 1977,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "+ 2 -\nv2\n\n<!-- source-page: 5 -->\n\n110 J. Pintz\n\nIf we now choose z = VAw (<#) we get Lemma 3.\n",
+          "sha256": "30461c237cadb2421d0a2abe950e40ac45b974fcbf82a463de7ff51c3bb9cd5a"
+        },
+        "after": {
+          "line_start": 509,
+          "line_end": 516,
+          "text": "We note that as one can see from this proof Theorem 2-is valid for\nan. arbitrary real valued completely multiplicative number theoretical\n\nfunction 6, for which [6(n)| <1 and [> a(d I< A, The corresponding\n. . : 1+0(1)\n\nti 1 1.6 th ——-—_—., 1].\ntnterval in (1.6) is on [1 jogd\n",
+          "sha256": "554b5ad68852a5610be2f5ed5952de7632a5094a552004ea55422866c31048ca"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bb053ad47b2dd2734925c97f1dd9cdc6f6c126262fd6636f18db2ac12c50b07a",
+        "dossier_sha256": "7851f5e213e94dd795b6db7b85e6fb8f2562045d1ec31e95615f878b68bb5e19",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 2 contradiction and extension",
+            "line_end": 521,
+            "line_start": 461,
+            "mathematical_role": "Combines positivity with the auxiliary identity at an intermediate critical point to exclude two zeros or a multiple zero, then records a completely multiplicative generalization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 508,
+          "line_start": 461,
+          "title": "Exclude two or multiple zeros via an intermediate critical point",
+          "unit_id": "openalex_w981942693_d06",
+          "unit_type": "positivity contradiction",
+          "why_material": "A positive lower bound for the same weighted sum is opposed to Lemma 3. Assuming two zeros or a nonsimple zero in the stated interval supplies an intermediate parameter with nonpositive L-value and vanishing derivative; the resulting upper estimate is negative, contradicting positivity and proving Theorem 2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the positivity premise, the contrary assumption, the intermediate-point conditions, and the concluding contradiction.",
+          "representation_dependency": "The contradiction's sign structure is supported by prose, but the exact interval, weighted lower bound, substitution, and estimates (3.11)-(3.14) are OCR-corrupt and require scan verification.",
+          "unit_id": "openalex_w981942693_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 460,
+            "line_start": 388,
+            "title": "Derive the weighted identity by splitting and Abel summation",
+            "unit_id": "openalex_w981942693_d05",
+            "unit_type": "character-sum tail control",
+            "why_material": "The proof introduces a splitting parameter, evaluates the main pieces with Lemma 4, and controls the remaining character sums with Polya-Vinogradov and Abel's inequality before choosing the split to recover Lemma 3. It is a reusable bridge from character-sum cancellation to an L-function identity using only real-variable tools."
+          },
+          {
+            "line_end": 516,
+            "line_start": 509,
+            "title": "Extend the zero-exclusion mechanism beyond characters",
+            "unit_id": "openalex_w981942693_d07",
+            "unit_type": "method generalization",
+            "why_material": "The author observes that the proof applies to an arbitrary real-valued completely multiplicative function bounded in magnitude and satisfying a corresponding partial-sum bound. This isolates which structural inputs, rather than character-specific formalism, drive the method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Theorem 2 uses elementary summation, Polya-Vinogradov cancellation, and Abel tail bounds to create a weighted L-function identity whose sign contradicts the positive coefficient sum when two zeros or a multiple zero are assumed; the final remark shows the mechanism depends on multiplicativity, bounded values, and partial-sum control rather than characters alone.",
+            "limit": "The mechanism is prose-grounded, but exact identities, the zero interval, and the generalized bound are formula-dependent and scan-unsafe.",
+            "parent_local_unit_ids": [
+              "openalex_w981942693_d04",
+              "openalex_w981942693_d05",
+              "openalex_w981942693_d06",
+              "openalex_w981942693_d07"
+            ],
+            "title": "Character-sum cancellation to zero simplicity through a weighted identity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w981942693_d06",
+        "spontaneous": {
+          "unit_id": "openalex_w981942693_d06",
+          "spontaneous_reading": "The same weighted sum is forced to have opposite signs in two representations: positive auxiliary coefficients give a lower bound, whereas two zeros or a multiple zero supply a critical point at which the L-value identity becomes negative."
+        },
+        "directed": {
+          "unit_id": "openalex_w981942693_d06",
+          "source_grounded_mathematics": "The source first derives a positive lower bound for the weighted sum from the auxiliary coefficients. Assuming two zeros or a nonsimple zero in the stated interval, it obtains an intermediate parameter with a nonpositive L-value and vanishing derivative. Substitution into Lemma 3, together with positivity of L(1) and the bounded error parameter, gives an upper estimate contradicting the lower bound, and Theorem 2 follows.",
+          "conceptual_reading": "Multiplicity or coexistence of zeros is converted into local critical-point data, which annihilates the derivative term and fixes the sign of the L-value term. The contradiction succeeds because positivity and the analytic identity constrain one common observable from opposite directions.",
+          "representation_or_bridge": "The weighted coefficient sum is the shared observable. An intermediate critical point bridges geometric information about the zero configuration to the value-and-derivative coordinates appearing in Lemma 3.",
+          "boundary_or_failure": "The sign architecture is prose-supported, but the exact zero interval, lower bound, substitution, and estimates (3.11)-(3.14) are OCR-corrupt. A failed reconstruction of those constants would not invalidate the qualitative contradiction mechanism.",
+          "uncertainty": "High confidence in the positivity-versus-critical-point contradiction; low confidence in the exact interval and numerical inequalities without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w981942693_d06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives a positive lower bound for the weighted coefficient sum, assumes two zeros or a nonsimple zero in the stated interval, obtains an intermediate parameter with L(1-t)<=0 and L'(1-t)=0, substitutes into Lemma 3, and reaches a contradiction.",
+          "The candidate correctly identifies the weighted sum as the common observable and the intermediate critical point as the bridge from the zero configuration to value-and-derivative data.",
+          "It appropriately refuses to reconstruct the exact interval and numerical inequalities from the OCR."
+        ],
+        "inference": [
+          "The zero hypothesis is converted into local critical-point conditions that suppress the derivative contribution and control the sign of the L-value contribution.",
+          "The proof compares a coefficient-side lower bound with an analytic-side upper bound for the same quantity."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the two representations force opposite signs, and the directed account says the upper estimate becomes negative. The visible argument includes positive error contributions and only needs the resulting upper bound to fall below the positive lower bound; a negative total upper bound is not established safely by this OCR span.",
+          "Calling the mechanism purely a 'sign architecture' suppresses the quantitative small-error comparison that is essential to the contradiction."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exact lower bound (3.11), zero interval, substitution, error terms, and comparisons (3.12)-(3.14) are OCR-corrupt.",
+          "The sign of the main L-value term is readable, but the sign and size of the full right-hand side cannot be reconstructed without the scan."
+        ],
+        "missed_mechanism": [
+          "The contradiction uses nonpositive/vanishing main terms together with controlled positive errors to produce an upper bound smaller than the coefficient-side lower bound, not necessarily an opposite-sign value."
+        ],
+        "revision_instructions": [
+          "Replace 'opposite signs' and 'upper estimate is negative' with the bounded claim that the critical-point conditions make the main terms nonpositive or zero and the remaining controlled error yields an upper bound incompatible with (3.11).",
+          "Preserve the shared-observable and intermediate-point interpretation while keeping every quantitative detail scan-dependent."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8c6675670d920bfb96fb63b92bfd0beabb64b7066e274469217368bdd3150c9f"
+}

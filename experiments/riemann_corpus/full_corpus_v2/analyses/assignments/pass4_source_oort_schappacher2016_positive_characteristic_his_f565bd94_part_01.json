@@ -1,0 +1,1662 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_oort_schappacher2016_positive_characteristic_his_f565bd94_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "oort_schappacher2016_positive_characteristic_history",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes arithmetic setup, Euler/Dirichlet decomposition, polynomial reduction, and the explicit distinction between Artin's roots and the modern normalization.",
+      "line_end": 283,
+      "line_start": 200,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy with damaged product/sum glyphs; the polynomial reduction and modulus criterion are explicit enough for semantic use, but exact formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers quadratic number-field organization to quadratic function fields, compresses the zeta problem into a finite polynomial, removes trivial zeros, and expresses pRH as a common modulus condition on its roots.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Artin's quadratic function-field zeta polynomial and pRH",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u03.txt",
+      "unit_bytes": 4843,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+      "unit_sha256": "393537ebd9cc9949a90ae3e9a609422089f2efe393e5ff6374aa5639b3609c56",
+      "unit_type": "construction-and-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u03.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 192,
+          "line_end": 199,
+          "text": "                    Ω(s) =          =               (\u0003(s) > 1).\n                              a\n                                a s\n                                      p\n                                         1 − p1s\n\nHere a runs through all ideals, and p through all prime ideals, of the ring of integers\nof the given number ﬁeld.\n",
+          "sha256": "052dc9ce61ebe2506d82bcdd135a08fac79f98f7dc787f5a407bffb93d7391df"
+        },
+        "after": {
+          "line_start": 284,
+          "line_end": 291,
+          "text": "1.2. The 40 examples by E. Artin. Let us show some of the examples from the\ntables calculated by Artin, see [1], p. 232–233. They can be checked by counting\nthe number of points on the various curves. We use σ1 as explained by Artin. We\nwrite β = π + π, and\n                          N = N1 = #(E(Fp )) = 1 − β + p\n(notation explained in the next section). We have:\n    Table I, σ1 = −β, one point at inﬁnity;\n    Table II, “komplexe Körper”, σ1 − 1 = −β, see page 234, and no Fp -rational\n",
+          "sha256": "c0cefed5d48f971c7611ab313065e33aea4cf038c69a24c6f8b2a769cc972eb2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 From Richard Dedekind to Emil Artin",
+            "line_end": 324,
+            "line_start": 143,
+            "mathematical_role": "Builds the arithmetic/analytic analogy, Artin's quadratic function-field zeta polynomial, pRH condition, and computed examples."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 283,
+          "line_start": 200,
+          "title": "Artin's quadratic function-field zeta polynomial and pRH",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+          "unit_type": "construction-and-criterion",
+          "why_material": "Transfers quadratic number-field organization to quadratic function fields, compresses the zeta problem into a finite polynomial, removes trivial zeros, and expresses pRH as a common modulus condition on its roots."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes arithmetic setup, Euler/Dirichlet decomposition, polynomial reduction, and the explicit distinction between Artin's roots and the modern normalization.",
+          "representation_dependency": "Formula-heavy with damaged product/sum glyphs; the polynomial reduction and modulus criterion are explicit enough for semantic use, but exact formulas need scan verification.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 199,
+            "line_start": 143,
+            "title": "From autonomous polynomial arithmetic to an analytic zeta component",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u02",
+            "unit_type": "representation-shift",
+            "why_material": "Shows how polynomial arithmetic modulo a prime was made structurally parallel to integer arithmetic, while algebraic number theory retained a distinct analytic zeta-function layer."
+          },
+          {
+            "line_end": 387,
+            "line_start": 327,
+            "title": "One Euler-product definition across rings and its RH questions",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u04",
+            "unit_type": "generalization",
+            "why_material": "Presents maximal-ideal Euler products as a common representation for classical, Dedekind, polynomial-ring, and curve cases, then separates continuation, functional equation, and zero-location questions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source supports a progression in which Artin's polynomial roots are recast as Frobenius factors, extension-field point counts become their power-sum readout, and elliptic pRH becomes a norm/adjoint statement.",
+            "limit": "This is a within-source historical-conceptual synthesis; the source does not supply a higher-genus proof from these observations.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u03",
+              "oort_schappacher2016_positive_characteristic_history:depth:u05",
+              "oort_schappacher2016_positive_characteristic_history:depth:u06",
+              "oort_schappacher2016_positive_characteristic_history:depth:u07",
+              "oort_schappacher2016_positive_characteristic_history:depth:u24"
+            ],
+            "title": "From zeta zeros to Frobenius dynamics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+          "spontaneous_reading": "Artin compresses an infinite-looking ideal Euler product into a finite polynomial whose nontrivial root moduli state pRH and whose coefficients retain arithmetic decomposition data."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+          "source_grounded_mathematics": "For quadratic extensions of Fp(t), Artin organizes ideals and decomposition types into a zeta/Dirichlet series, derives vanishing beyond a finite coefficient range, removes trivial zeros, and states pRH as common modulus sqrt(p) for the remaining factors.",
+          "conceptual_reading": "The key move is representation compression: local prime behavior is aggregated into coefficients and then into roots, turning analytic continuation questions into finite algebraic geometry of a polynomial.",
+          "representation_or_bridge": "Quadratic residue symbols and prime decomposition feed the series coefficients; the finite polynomial then bridges to zero location, prime-counting formulas, and conditional class-number consequences.",
+          "boundary_or_failure": "The construction is confined to Artin's quadratic setting, the class-number conclusion is conditional on pRH, and Artin's beta factors differ from the modern normalized numerator until trivial factors are removed.",
+          "uncertainty": "High formula risk from damaged sums, products, indices, and radicals; the polynomial reduction and modulus criterion are explicit in prose but exact equations require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives finite coefficient support, a polynomial in Artin's factors, the removal of trivial zeros, and the common modulus criterion for pRH.",
+          "The sigma coefficients are explicitly assembled from quadratic residue symbols and prime-decomposition data, and the class-number consequence is conditional."
+        ],
+        "inference": [
+          "Describing the passage from local decomposition data to finitely many roots as compression is supported by the displayed construction."
+        ],
+        "unsupported_or_imported": [
+          "Calling the resulting root problem 'finite algebraic geometry of a polynomial' is not supported and misnames a finite algebraic root problem as geometry."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic 'representation compression' template is only informative when kept attached to the sigma-coefficient and root mechanism already present in the candidate."
+        ],
+        "context_or_ocr_risk": [
+          "Products, sums, indices, radicals, and the normalization of Artin's beta factors are OCR-risky; exact equations cannot be reconstructed from the extraction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'finite algebraic geometry of a polynomial' by 'a finite polynomial root problem'; retain the explicit path from residue/decomposition data to sigma coefficients to roots and the distinction between Artin's factors and the modern numerator."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The polynomial presentation is included because it supplies the shared object to which all three properties apply.",
+      "line_end": 532,
+      "line_start": 498,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The factorization display is usable with minor index/OCR noise.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factorizes the early curve-zeta program into three logically distinct properties and records that Schmidt established the first two while Hasse handled pRH only for elliptic curves.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional equation, rationality, and pRH as three separate targets",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u09.txt",
+      "unit_bytes": 1722,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+      "unit_sha256": "6f9e600f18fe11eab9fadfdd8ac4ca1f50ae628da06fc33ccacecaafee95e4dd",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u09.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 490,
+          "line_end": 497,
+          "text": "    The ﬁnal section §10 of [60], where Schmidt specializes to Artin’s case, shows\nthe generality of Schmidt’s setting, but also reminds us of the peculiar arithmetic\nresults Artin had obtained, for instance about the class numbers of his rings, and\nwhose generalisation to arbitrary function ﬁelds is not in sight. Indeed, the eﬀect\nof Schmidt’s paper for the immediate successors, and in particular for Hasse, was\nnot only to place the subject within the frame of the arithmetic of function ﬁelds,\nbut also to strongly focalize around pRH the “analytic number theory” of these\nﬁelds, which the title announces as the subject of the article [60].\n",
+          "sha256": "a434a43f50103f3d1c9f459010969f9b28900efe339743ee5f093268cf14f139"
+        },
+        "after": {
+          "line_start": 533,
+          "line_end": 540,
+          "text": "\n\n4     The Last Entry\n4.1. The text of The Last Entry. An isolated early gem of Arithmetic Al-\ngebraic Analysis survived unknown, hidden until the end of the 19th century in\nGauss’s mathematical notebook, the Notizen-Journal as he called it. Personal\nitems had naturally been divided among the children after Gauss’s death in 1855.\nBut in the Summer of 1898, Paul Stäckel persuaded Gauss’s grandson Carl Au-\n",
+          "sha256": "e88851b8cb150bcebb25dae298a339b4c848e7cc8037ab0d78507729f8a60513"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 F. K. Schmidt",
+            "line_end": 534,
+            "line_start": 473,
+            "mathematical_role": "Introduces the variable-free function-field framework and separates functional equation, rationality, and pRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 532,
+          "line_start": 498,
+          "title": "Functional equation, rationality, and pRH as three separate targets",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+          "unit_type": "decomposition",
+          "why_material": "Factorizes the early curve-zeta program into three logically distinct properties and records that Schmidt established the first two while Hasse handled pRH only for elliptic curves."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The polynomial presentation is included because it supplies the shared object to which all three properties apply.",
+          "representation_dependency": "The factorization display is usable with minor index/OCR noise.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 497,
+            "line_start": 473,
+            "title": "Schmidt's coordinate-free arithmetic of function fields",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u08",
+            "unit_type": "reframing",
+            "why_material": "Replacing Artin's chosen variable by all places of the function field incorporates infinity uniformly and lets Riemann–Roch support the functional equation in arbitrary genus."
+          },
+          {
+            "line_end": 570,
+            "line_start": 536,
+            "title": "Gauss's Last Entry as a bridge from congruences to elliptic point counts",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+            "unit_type": "historical-construction",
+            "why_material": "Records an early empirical rule connecting biquadratic residues and lemniscatic functions through a congruence whose solution count later becomes an elliptic-curve count."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+          "spontaneous_reading": "Writing every curve zeta function around the same degree-2g polynomial reveals that functional equation, rationality, and root modulus are three independent targets, not one package."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+          "source_grounded_mathematics": "The zeta function is presented as L(T)/((1-qT)(1-T)) with L of degree 2g, and the early program is decomposed into functional equation, rationality, and pRH for the Frobenius factors.",
+          "conceptual_reading": "A shared representation supports logical decomposition: success on symmetry and finite presentation does not entail the quantitative zero-location statement.",
+          "representation_or_bridge": "The numerator polynomial is the common object on which functional symmetry, rationality, and factor moduli can be compared.",
+          "boundary_or_failure": "Schmidt proved the first two properties, while the cited pRH result reaches elliptic curves only; the unit supplies no arbitrary-genus proof.",
+          "uncertainty": "Low for the decomposition; the factorization display has minor index and OCR noise."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span presents the common degree-2g numerator and explicitly lists functional equation, rationality, and pRH as three properties.",
+          "It says Schmidt proved the first two and Hasse proved pRH for elliptic curves, leaving arbitrary genus open."
+        ],
+        "inference": [
+          "The historical separation supports treating the three properties as distinct proof obligations."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the targets 'independent'; the span establishes distinction and separate proof status, not formal logical independence."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The factorization display has minor index and product-glyph damage but does not affect the three-way decomposition."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'three independent targets' with 'three distinct targets' and say that success on the first two did not, in this historical program, settle pRH; do not claim formal independence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The original statement and the authors' identification of Fagnano's relation are both needed; the diary logistics are retained only as local provenance.",
+      "line_end": 570,
+      "line_start": 536,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Original Latin/English and equation extraction are readable at the semantic level; exact congruence typography should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an early empirical rule connecting biquadratic residues and lemniscatic functions through a congruence whose solution count later becomes an elliptic-curve count.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gauss's Last Entry as a bridge from congruences to elliptic point counts",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u10.txt",
+      "unit_bytes": 2355,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+      "unit_sha256": "5f25a335a86ad093df981b80a72131933b01db0b349870e9c2eb7ffc24de3ce3",
+      "unit_type": "historical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u10.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 528,
+          "line_end": 535,
+          "text": "Compare with the general Weil conjectures (W1)-(W5), see [44] at the end of\nSection 1. Properties (1) and (2) were proved by F. K. Schmidt. The pRH was\nprovided by Hasse for elliptic curves. Between 1921 and 1940, several attempts\nwere made to ﬁnd a proof for pRH function ﬁelds (for curves) of arbitrary genus\nover Fq .\n\n\n4     The Last Entry\n",
+          "sha256": "7fa9436c08f16c6027be863778de742360a90d1e99958187e8f11444aa692129"
+        },
+        "after": {
+          "line_start": 571,
+          "line_end": 578,
+          "text": "<!-- source-page: 12 -->\n\nEarly History of the Riemann Hypothesis in Positive Characteristic           605\n\n4.2. Interpretation in modern language. The prime element a + bi ∈ Z[i]\nlies above the rational prime p = (a + bi)(a − bi) ≡ 1 (mod 4)  \u0004 and is the\u0006unique\ngenerator of the prime ideal (a+bi)Z[i] that satisﬁes a+bi ≡ 1 mod (2+2i) . Thus\np = a2 + b2 , with a, b ∈ Z where a is odd and b is even and a − 1 ≡ b (mod 4). The\n",
+          "sha256": "f9e177801f1bd2fc50344cdda2f3f9dd6119f3b6807b95eca93220fce58fe40f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 The Last Entry",
+            "line_end": 647,
+            "line_start": 535,
+            "mathematical_role": "Translates Gauss's count into elliptic-curve Frobenius/CM language and reduction from characteristic zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 570,
+          "line_start": 536,
+          "title": "Gauss's Last Entry as a bridge from congruences to elliptic point counts",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+          "unit_type": "historical-construction",
+          "why_material": "Records an early empirical rule connecting biquadratic residues and lemniscatic functions through a congruence whose solution count later becomes an elliptic-curve count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The original statement and the authors' identification of Fagnano's relation are both needed; the diary logistics are retained only as local provenance.",
+          "representation_dependency": "Original Latin/English and equation extraction are readable at the semantic level; exact congruence typography should be checked against the scan.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 532,
+            "line_start": 498,
+            "title": "Functional equation, rationality, and pRH as three separate targets",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u09",
+            "unit_type": "decomposition",
+            "why_material": "Factorizes the early curve-zeta program into three logically distinct properties and records that Schmidt established the first two while Hasse handled pRH only for elliptic curves."
+          },
+          {
+            "line_end": 596,
+            "line_start": 575,
+            "title": "Normalize Gauss's curve and read its count as Frobenius norm",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u11",
+            "unit_type": "modern-reinterpretation",
+            "why_material": "Turns Gauss's singular plane model into an elliptic normalization and identifies the counted quantity with the norm of Frobenius minus identity, yielding its characteristic polynomial."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 574,
+              "line_start": 571,
+              "reason": "Page marker."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+          "spontaneous_reading": "Gauss's empirical congruence count is a latent geometric object: the lemniscatic relation and its four points at infinity turn residue arithmetic into what later becomes an elliptic point count."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+          "source_grounded_mathematics": "The Last Entry relates a congruence over a Gaussian prime to the norm-like count (a-1)^2+b^2, explicitly includes four infinite solutions, and identifies the equation with Fagnano's lemniscatic relation.",
+          "conceptual_reading": "An experimentally found arithmetic rule can signal a hidden representation in which exceptional cases at infinity are structural rather than ad hoc corrections.",
+          "representation_or_bridge": "The bridge runs from biquadratic residues through lemniscatic functions and a projectively completed solution set toward an elliptic-curve interpretation.",
+          "boundary_or_failure": "The span records an observation made from examples and its later identification; it does not itself prove the rule or fully develop the modern curve.",
+          "uncertainty": "The semantic link is clear, but the Latin/English congruence and exact equation typography require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The span records Gauss's empirically inferred congruence count, its stated link between biquadratic residues and lemniscatic functions, the four infinite solutions, and the identification with Fagnano's relation."
+        ],
+        "inference": [
+          "The points at infinity can be described as structural to the stated count because the source explicitly includes and motivates them."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the congruence is a latent geometric object, that the solutions form a projectively completed set, and that it becomes an elliptic point count come from the following modern-interpretation unit or outside knowledge, not this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The Latin/English congruence and exact equation typography require scan verification."
+        ],
+        "missed_mechanism": [
+          "Within this span the operative bridge is specifically biquadratic residues to lemniscatic functions through Fagnano's relation, not yet normalization or Frobenius."
+        ],
+        "revision_instructions": [
+          "Restrict the analysis to Gauss's empirical residue/lemniscatic relation and the explicitly included points at infinity; remove projective, elliptic-curve, and later point-count reinterpretations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The full setup is needed to show what the lift must preserve and exactly where Hasse's method stalled.",
+      "line_end": 719,
+      "line_start": 683,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent at lines 688–706 with degraded symbols; use as conceptual construction and verify exact equations before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Details how a lattice, factorization of a field power, congruent invariants, and division-point coordinates reduce counting to class-field theory, then isolates the j-invariant restriction as technical rather than intrinsic.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "CM lattice setup, ray-class reduction, and the odd-degree obstruction",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u14.txt",
+      "unit_bytes": 2648,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+      "unit_sha256": "c350b2eb91399ea7181d2b97a3729117df0564d051eafbc18ea80558af8d4f05",
+      "unit_type": "construction-with-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u14.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 675,
+          "line_end": 682,
+          "text": "quadratic ﬁelds, following in particular the work of Teiji Takagi.\n   Looked at from our vantage point, this ﬁrst proof which Hasse came up with\nappears as a direct generalization of Herglotz’s argument for the lemniscatic curve\nwhich we have brieﬂy sketched in section 4.4 above. Strictly speaking this seems\nto be wrong on both mathematical and historical grounds. Indeed, for technical\nreasons, Hasse in [26] excludes extra symmetries working only with CM elliptic\ncurves whose j-invariant is diﬀerent from 0 and 1728. Furthermore, Roquette [54]\nhas found no evidence that Hasse was aware of Herglotz’s article [35].\n",
+          "sha256": "600b4700a891c3125e064bb6640514ce4f92aa9a1ee278e057de7669d0eea8f9"
+        },
+        "after": {
+          "line_start": 720,
+          "line_end": 727,
+          "text": "\n<!-- source-page: 15 -->\n\n608                       Frans Oort, Norbert Schappacher\n\n    Already in 1933 Hasse writes that the number N1 of rational points of an\nelliptic curve over Fp satisﬁes\n                                                 √\n",
+          "sha256": "89aa77af711dad7afaa691bf621516b598230ed762aa437fb036afd9a39e5e7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Hasse's first proof",
+            "line_end": 735,
+            "line_start": 648,
+            "mathematical_role": "Explains the CM-lifting/reduction strategy, its technical restrictions, and the Hasse bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 719,
+          "line_start": 683,
+          "title": "CM lattice setup, ray-class reduction, and the odd-degree obstruction",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+          "unit_type": "construction-with-obstruction",
+          "why_material": "Details how a lattice, factorization of a field power, congruent invariants, and division-point coordinates reduce counting to class-field theory, then isolates the j-invariant restriction as technical rather than intrinsic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The full setup is needed to show what the lift must preserve and exactly where Hasse's method stalled.",
+          "representation_dependency": "Highly formula-dependent at lines 688–706 with degraded symbols; use as conceptual construction and verify exact equations before reuse.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 682,
+            "line_start": 648,
+            "title": "Hasse's first proof via a chosen CM lift",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u13",
+            "unit_type": "proof-strategy",
+            "why_material": "Explains the strategic move of realizing a finite-field elliptic curve as the reduction of a suitably chosen CM curve so explicit class-field theory can control its points."
+          },
+          {
+            "line_end": 733,
+            "line_start": 725,
+            "title": "The Hasse point-count bound as elliptic pRH",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Makes the elliptic pRH operational as a square-root error bound for rational-point counts and records its extension from Artin's examples to all elliptic curves."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gauss's CM example and Hasse's first proof use reduction from characteristic zero; Deuring later removes the elliptic lifting obstruction, while higher-dimensional counterexamples force an isogeny-level or ordinarity-qualified repair.",
+            "limit": "The accepted spans compare mechanisms across periods but do not establish the cited lifting theorems independently.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u11",
+              "oort_schappacher2016_positive_characteristic_history:depth:u12",
+              "oort_schappacher2016_positive_characteristic_history:depth:u13",
+              "oort_schappacher2016_positive_characteristic_history:depth:u14",
+              "oort_schappacher2016_positive_characteristic_history:depth:u33",
+              "oort_schappacher2016_positive_characteristic_history:depth:u34"
+            ],
+            "title": "Lifting as a proof route and as a bounded theorem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 724,
+              "line_start": 720,
+              "reason": "Page marker and transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+          "spontaneous_reading": "The CM lift is not one leap but a chain of obligations: choose a lattice and factorization, match invariants modulo a prime, adjoin division points, identify the residue field, and only then count."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+          "source_grounded_mathematics": "Hasse extends the base field, seeks an imaginary-quadratic lattice with q^r=omega times its conjugate and matching Weierstrass invariants, adjoins omega±1 division-point coordinates to obtain a ray class field, and reduces them to exhaust the desired finite residue field.",
+          "conceptual_reading": "Decomposing a lifting argument exposes where existence can fail: matching coarse invariants is insufficient unless the division-point and residue-field realization also works.",
+          "representation_or_bridge": "Lattices and orders bridge to ring class fields; congruent invariants bridge to reduction; division points and ray class fields bridge to the finite-field point count.",
+          "boundary_or_failure": "Hasse's odd-degree condition on the j-invariant marks a technical obstruction in this construction, not an intrinsic obstruction; the later general lifting result is only referenced.",
+          "uncertainty": "High for equations and invariant symbols in the OCR-heavy setup; the sequence of construction steps and the stated obstruction are prose-supported."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The span clearly narrates a chain involving base extension, a CM lattice, matching Weierstrass invariants modulo a prime, adjoining division-point coordinates, identifying a residue field, and reducing the point count to explicit class-field theory.",
+          "It explicitly identifies the odd-degree j-invariant assumption as a technical obstruction and references later lifting beyond it."
+        ],
+        "inference": [
+          "The candidate's decomposition into successive lifting obligations is a useful, source-grounded mechanism."
+        ],
+        "unsupported_or_imported": [
+          "The source-grounded summary reconstructs the damaged factorization as q^r=omega times its conjugate and fixes exact omega-minus/plus-one division notation despite severe formula loss; those exact symbols are not safe from this extraction alone."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Lines containing the Weierstrass model, factorization, invariants, radicals, conjugation, and division indices are highly OCR-dependent."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State only that Hasse seeks a suitable CM factorization and corresponding division-point data, without reconstructing conjugation bars or exact indices; retain the prose-supported congruence, residue-field, counting, and odd-degree-obstruction sequence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Standalone criterion following the first-proof discussion.",
+      "line_end": 733,
+      "line_start": 725,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inequality is legible; strict versus non-strict convention is explicitly discussed in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes the elliptic pRH operational as a square-root error bound for rational-point counts and records its extension from Artin's examples to all elliptic curves.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Hasse point-count bound as elliptic pRH",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u15.txt",
+      "unit_bytes": 552,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+      "unit_sha256": "9d232986d52ba251e83825c21ab4d5233ae013659b9d6b4ff5931618c993bc6c",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u15.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 717,
+          "line_end": 724,
+          "text": "    Hasse never came back to remove this technical assumption himself; he soon\nestablished pRH for elliptic curves in complete generality by another strategy, see\nSection 7 below.\n\n<!-- source-page: 15 -->\n\n608                       Frans Oort, Norbert Schappacher\n\n",
+          "sha256": "77d1683afc645deaebf973703e9ee7a4b767142097b25fd9d3e430249e7dbf46"
+        },
+        "after": {
+          "line_start": 734,
+          "line_end": 741,
+          "text": "\n\n6     Elliptic curves\nIn this section we survey what is known now about elliptic curves over ﬁnite ﬁelds.\nSeveral of these results were known and proved by Hasse and Deuring.\n\n6.1. Definition. Let K be a ﬁeld. An elliptic curve E over K is an absolutely\nirreducible, nonsingular, complete algebraic curve over K of genus equal to one\n",
+          "sha256": "c8eeaf3f9d3113139bf23d86688df4db820e300f094a8c63d46feb8288d3ddad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Hasse's first proof",
+            "line_end": 735,
+            "line_start": 648,
+            "mathematical_role": "Explains the CM-lifting/reduction strategy, its technical restrictions, and the Hasse bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 733,
+          "line_start": 725,
+          "title": "The Hasse point-count bound as elliptic pRH",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Makes the elliptic pRH operational as a square-root error bound for rational-point counts and records its extension from Artin's examples to all elliptic curves."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Standalone criterion following the first-proof discussion.",
+          "representation_dependency": "Inequality is legible; strict versus non-strict convention is explicitly discussed in prose.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 719,
+            "line_start": 683,
+            "title": "CM lattice setup, ray-class reduction, and the odd-degree obstruction",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u14",
+            "unit_type": "construction-with-obstruction",
+            "why_material": "Details how a lattice, factorization of a field power, congruent invariants, and division-point coordinates reduce counting to class-field theory, then isolates the j-invariant restriction as technical rather than intrinsic."
+          },
+          {
+            "line_end": 760,
+            "line_start": 740,
+            "title": "Elliptic curve versus genus-one curve without a rational point",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u16",
+            "unit_type": "definition-and-counterexample",
+            "why_material": "Separates genus one from elliptic-curve structure by the rational-point/group-law requirement and notes why the distinction collapses over finite fields but not over arbitrary fields."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 724,
+              "line_start": 720,
+              "reason": "Page marker and transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+          "spontaneous_reading": "Elliptic pRH becomes operational as a square-root error bound: zero geometry is converted into a directly testable deviation of the rational-point count from q+1."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+          "source_grounded_mathematics": "The unit states Hasse's bound |N1-(p+1)|<2sqrt(p) in the cited special setting, its equivalence there to pRH, and the general finite-field elliptic inequality with a non-strict bound.",
+          "conceptual_reading": "An equivalent criterion turns spectral modulus into a counting statistic, enabling computation and falsification without explicitly locating the roots.",
+          "representation_or_bridge": "The Frobenius trace is q+1-N, so the point-count error and the two-root modulus condition are two representations of the same genus-one constraint.",
+          "boundary_or_failure": "The unit states the equivalence and historical scope but does not prove the bound; strict versus non-strict inequalities depend on the stated setting.",
+          "uncertainty": "Low; the inequality is legible and the convention difference is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Hasse's special strict point-count bound over Fp, says it is equivalent there to pRH, and gives the general non-strict finite-field elliptic bound."
+        ],
+        "inference": [
+          "Viewing the bound as an operational counting criterion for pRH is directly licensed by the asserted equivalence."
+        ],
+        "unsupported_or_imported": [
+          "The explicit mechanism 'the Frobenius trace is q+1-N' and the two-root fixed-norm explanation are absent from this narrow span and imported from earlier units or background knowledge."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The inequalities themselves are legible, and the strict/non-strict distinction is stated in prose."
+        ],
+        "missed_mechanism": [
+          "This span states rather than derives the equivalence, so the analysis should preserve that proof-burden boundary."
+        ],
+        "revision_instructions": [
+          "Keep the operational equivalence between pRH and the square-root point-count bound, but remove the trace, two-root, and norm derivation; explicitly say the span supplies no derivation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The isogeny/function-field correspondence closes the representation link.",
+      "line_end": 1072,
+      "line_start": 1054,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The anti-involution arrow glyph is degraded; norm identity and conceptual role are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Recasts elliptic pRH as the identity between Frobenius and its adjoint under the endomorphism-algebra involution, avoiding the chosen CM-lift restrictions of the first proof.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hasse's second proof from Frobenius norm and positive involution",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u24.txt",
+      "unit_bytes": 1100,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+      "unit_sha256": "257d694543fa93a34c841e780a223e351654fc7c2e1d7fb2760a9b2d0645bd8d",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u24.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1046,
+          "line_end": 1053,
+          "text": "                   √\nThe real number p is the Frobenius of an abelian variety, but not of an elliptic\ncurve, see [75], Example (b) on page 97.\n    In general it is not so easy for a given π as above to determine E. Existence\ncan be proved by analytic parametrization and reduction modulo p, see [36], [75];\nan algebraic proof can be found in [6].\n\n\n",
+          "sha256": "ffd83803c83a68fc7ea02e66e024d582442e608accbedd75331fa6317e2c1ffb"
+        },
+        "after": {
+          "line_start": 1073,
+          "line_end": 1080,
+          "text": "\n\n8     Rational points over a field\nTheorem 8.1 (F. K. Schmidt 1931, Witt 1934). Let C be an algebraic curve\n(complete, non-singular) over a ﬁnite ﬁeld κ = Fq . Then\n                                     C(κ) = ∅.\nSee [60], page 27; [86]; see [54], Part 1, pp. 54–55.\nCorollary 8.2. Let V be a complete, projective variety of positive dimension over\n",
+          "sha256": "c07a1c4b6cb7469341dff1b1364d54bf735fdfb3748dde2ee0e27e5160688571"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 Hasse's second proof",
+            "line_end": 1074,
+            "line_start": 1054,
+            "mathematical_role": "Uses Frobenius norm and the positive involution on the endomorphism algebra to obtain elliptic pRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1072,
+          "line_start": 1054,
+          "title": "Hasse's second proof from Frobenius norm and positive involution",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+          "unit_type": "proof-mechanism",
+          "why_material": "Recasts elliptic pRH as the identity between Frobenius and its adjoint under the endomorphism-algebra involution, avoiding the chosen CM-lift restrictions of the first proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The isogeny/function-field correspondence closes the representation link.",
+          "representation_dependency": "The anti-involution arrow glyph is degraded; norm identity and conceptual role are clear.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1051,
+            "line_start": 1004,
+            "title": "Honda–Tate existence test for elliptic Frobenius polynomials",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u23",
+            "unit_type": "classification-and-obstruction",
+            "why_material": "Partitions trace valuations and field degrees into ordinary existence, several supersingular existence regimes, and a forbidden regime, turning a magnitude bound into a realizability criterion."
+          },
+          {
+            "line_end": 1139,
+            "line_start": 1117,
+            "title": "A structural function-field framework as a research commitment",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+            "unit_type": "method-comparison",
+            "why_material": "Explains why Hasse preferred his second proof: it embedded pRH in an intrinsic arithmetic theory of function fields and thereby shaped which higher-genus routes appeared natural."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source supports a progression in which Artin's polynomial roots are recast as Frobenius factors, extension-field point counts become their power-sum readout, and elliptic pRH becomes a norm/adjoint statement.",
+            "limit": "This is a within-source historical-conceptual synthesis; the source does not supply a higher-genus proof from these observations.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u03",
+              "oort_schappacher2016_positive_characteristic_history:depth:u05",
+              "oort_schappacher2016_positive_characteristic_history:depth:u06",
+              "oort_schappacher2016_positive_characteristic_history:depth:u07",
+              "oort_schappacher2016_positive_characteristic_history:depth:u24"
+            ],
+            "title": "From zeta zeros to Frobenius dynamics"
+          },
+          {
+            "claim": "Hasse's elliptic endomorphism-ring proof motivates Deuring's replacement by a ring of self-correspondences in higher genus, where missing differential, norm, and positivity components become the explicit obstruction.",
+            "limit": "The source reports the program and its failure; it does not prove that completing exactly these steps would suffice.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u24",
+              "oort_schappacher2016_positive_characteristic_history:depth:u27",
+              "oort_schappacher2016_positive_characteristic_history:depth:u29"
+            ],
+            "title": "Endomorphisms generalize to correspondences, but positivity machinery remains"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1093,
+              "line_start": 1075,
+              "reason": "The Schmidt–Witt theorem and corollary displays lose the decisive nonempty-set negation, so the exact claims cannot be selected safely from this span."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+          "spontaneous_reading": "Hasse's second proof replaces the external CM lift by an intrinsic positive adjoint structure: Frobenius times its Rosati conjugate equals q, forcing the required modulus."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+          "source_grounded_mathematics": "For an elliptic curve over Fq, Frobenius pi is an endomorphism satisfying pi times its involutive conjugate equals Norm(pi)=q; Hasse derives pRH from this, with extra care in the supersingular integer case.",
+          "conceptual_reading": "A norm identity under a positive involution converts zero location into intrinsic endomorphism algebra, removing the need to choose and control a characteristic-zero lift.",
+          "representation_or_bridge": "The Frobenius endomorphism, Rosati involution, and norm are the main bridge; the isogeny/function-field inclusion correspondence links the geometric and field-theoretic presentations.",
+          "boundary_or_failure": "The mechanism is elliptic and the supersingular scalar case needs separate handling; the authors explicitly leave historical knowledge of zeta invariance under isogeny unclear.",
+          "uncertainty": "The anti-involution arrow is degraded, but the norm identity and its role are clear in prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Frobenius as an endomorphism, the identity between Frobenius, its anti-involutive conjugate, norm, and q, and that Hasse derives pRH from it with extra care in the supersingular scalar case.",
+          "It names the anti-involution as Rosati and gives the isogeny/function-field inclusion correspondence while leaving historical zeta invariance under isogeny uncertain."
+        ],
+        "inference": [
+          "Contrasting this intrinsic endomorphism mechanism with the earlier chosen-lift strategy is a plausible cross-unit synthesis but is not established inside this span."
+        ],
+        "unsupported_or_imported": [
+          "The candidate repeatedly calls the involution or adjoint structure 'positive'; positivity is not stated or demonstrated in the frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The anti-involution arrow and conjugation mark are degraded, although the norm identity and named involution are clear in prose."
+        ],
+        "missed_mechanism": [
+          "The source's explicit historical uncertainty about equality of zeta functions under isogeny should remain separate from the proved norm mechanism."
+        ],
+        "revision_instructions": [
+          "Remove 'positive' and describe only the anti-involution/Rosati conjugation and norm identity stated in the span; label the contrast with the first proof as cross-unit inference rather than span-local evidence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The framing before subsection 9.1 is retained because it makes method preference causal rather than biographical.",
+      "line_end": 1139,
+      "line_start": 1117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; quoted German is translated in the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why Hasse preferred his second proof: it embedded pRH in an intrinsic arithmetic theory of function fields and thereby shaped which higher-genus routes appeared natural.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A structural function-field framework as a research commitment",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u25.txt",
+      "unit_bytes": 1515,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+      "unit_sha256": "fee5c303c2be5f0d49a31e14916e0cc9c15993d055eaabeb5389bd85c4d5a87a",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u25.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1109,
+          "line_end": 1116,
+          "text": "one over Q with\n                               f (C, Q) > b.\n\nSee [68], see [41], corollary and discussion on page 670, see [72]. In [41] on page\n670 we See that Emil Artin conjectured this result that the index is unbounded\nfor an elliptic curve over Q.\n\n\n",
+          "sha256": "68f2819733340e3d759c827b8620bb7fc81afb59b5d2e88efb229766e878fe5a"
+        },
+        "after": {
+          "line_start": 1140,
+          "line_end": 1147,
+          "text": "9.1. How to attack curves of higher genus? Already at the end of his 1933\npaper [26], Hasse had pointed out what he called a “formal analogy” of his (ﬁrst)\nproof of pRH for (certain) elliptic curves, with Carl Ludwig Siegel’s momentous\n1929 paper on diophantine approximations [70]:\n      To Siegel’s principle that at the bottom of algebraic relations between\n      values of power series there is generally a relation between the associ-\n      ated functions, corresponds in my case the principle that at the bottom\n      of the solutions of a congruence there are solutions of a related equa-\n",
+          "sha256": "cad1f184110fa36a56e0c3edbf472f89ccb6ea94371a001edd9420a3a16cdcff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Deuring's idea and its reception",
+            "line_end": 1404,
+            "line_start": 1117,
+            "mathematical_role": "Compares higher-genus proof programs, replaces elliptic endomorphisms by correspondences, identifies missing norm/positivity machinery, and documents representation/coordination barriers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1139,
+          "line_start": 1117,
+          "title": "A structural function-field framework as a research commitment",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+          "unit_type": "method-comparison",
+          "why_material": "Explains why Hasse preferred his second proof: it embedded pRH in an intrinsic arithmetic theory of function fields and thereby shaped which higher-genus routes appeared natural."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The framing before subsection 9.1 is retained because it makes method preference causal rather than biographical.",
+          "representation_dependency": "Prose-dominant; quoted German is translated in the source.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1072,
+            "line_start": 1054,
+            "title": "Hasse's second proof from Frobenius norm and positive involution",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u24",
+            "unit_type": "proof-mechanism",
+            "why_material": "Recasts elliptic pRH as the identity between Frobenius and its adjoint under the endomorphism-algebra involution, avoiding the chosen CM-lift restrictions of the first proof."
+          },
+          {
+            "line_end": 1169,
+            "line_start": 1140,
+            "title": "Competing higher-genus routes: abelian uniformization or algebraic methods",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u26",
+            "unit_type": "analogy-and-forecast",
+            "why_material": "Transfers a principle from Siegel's function/value relations to congruence counting, forecasts higher-genus abelian uniformization, and explicitly keeps Weil's algebraic route as an alternative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Coordinate-free function fields, Italian algebraic geometry, analytic correspondence theory, and later algebraic geometry encode overlapping structures, but language preferences controlled which tools, prior results, and collaborators were visible to the pRH program.",
+            "limit": "The historical account supports this causal interpretation locally; it does not show that language unification alone would have produced a proof.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u08",
+              "oort_schappacher2016_positive_characteristic_history:depth:u25",
+              "oort_schappacher2016_positive_characteristic_history:depth:u28",
+              "oort_schappacher2016_positive_characteristic_history:depth:u30",
+              "oort_schappacher2016_positive_characteristic_history:depth:u31",
+              "oort_schappacher2016_positive_characteristic_history:depth:u32"
+            ],
+            "title": "Representation choice can be a mathematical and coordination bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1116,
+              "line_start": 1116,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+          "spontaneous_reading": "The mathematical work is done by Hasse's choice of an intrinsic structural framework: his second elliptic proof is valued not merely for avoiding restrictions, but because the arithmetic of one-variable function fields organizes pRH as part of a theory reusable beyond one argument. That choice then constrains which higher-genus extensions look natural."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+          "source_grounded_mathematics": "After his two elliptic proofs, Hasse regarded the arithmetic theory of one-variable function fields over finite constant fields as the adequate setting for pRH. He preferred the second proof because its setup had a purely structural character, while the first had restrictive assumptions, and this preference oriented his attack on higher genus.",
+          "conceptual_reading": "A proof is being judged as a reusable organization of objects and relations rather than as an isolated derivation. Structural closure within the function-field theory is the feature expected to support generalization.",
+          "representation_or_bridge": "The arithmetic function-field language bridges an elliptic result to a prospective higher-genus program by making intrinsic algebraic structure, rather than a chosen lift, the main carrier of the argument.",
+          "boundary_or_failure": "The span records a research commitment and its historical motivation; it does not establish that the preferred framework contains the missing higher-genus proof or that structurality alone ensures transfer.",
+          "uncertainty": "The prose is clear. The extent to which this preference causally determined later mathematics is historical interpretation, not a theorem proved here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u25",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly places one-variable function-field arithmetic over finite constants as Hasse's adequate framework for pRH.",
+          "It explicitly attributes Hasse's preference for the second proof to its purely structural setup as well as the first proof's restrictive assumptions, and says this oriented his future choices."
+        ],
+        "inference": [
+          "Treating the framework as reusable organization beyond one proof is a reasonable interpretation of Hasse's structural preference.",
+          "Saying the preference constrained which higher-genus routes looked natural is a historical causal reading, not a mathematical result."
+        ],
+        "unsupported_or_imported": [
+          "The contrast with 'a chosen lift' is not present in this frozen span; the span mentions restrictive assumptions but does not identify lifting as the first proof's representation."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Structural closure' is an undefined generic gloss that adds little beyond the quoted 'purely structural' characterization."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "The candidate should keep separate the source's reported preference, the authors' claim that pride oriented later choices, and the stronger inference that the framework itself supports transfer."
+        ],
+        "revision_instructions": [
+          "Remove the chosen-lift contrast and replace 'structural closure' with the exact source-grounded comparison: restrictive assumptions versus a purely structural setup within function-field arithmetic.",
+          "Mark reusability and causal influence on higher-genus route selection explicitly as interpretation rather than established mathematical consequence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contemporaneous claim of algebraicity and the stated expectation that this foundation would support pRH.",
+      "line_end": 1206,
+      "line_start": 1170,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and correspondence quotations are directly recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies Deuring's key higher-genus abstraction: the endomorphism ring of an elliptic curve should become the ring of correspondences of a curve with itself, within Hasse's arithmetic function-field program.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace elliptic endomorphisms by self-correspondences",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u27.txt",
+      "unit_bytes": 2350,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+      "unit_sha256": "ecd62be7a67f13a41f3622f4fd5142964e84c4883706a5f74e2d0e979abedbed",
+      "unit_type": "abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u27.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1162,
+          "line_end": 1169,
+          "text": "      The method that I have developed is so general that it also allows to\n      tackle the case of arbitrary genus g > 1. It is true that the investiga-\n      tions are not quite ﬁnished yet, but very recently Deuring has removed\n      the essential diﬃculty which still stood in the way of generalizing [my\n      method] from g = 1 to g > 1, so that the said problem should be\n      completely resolved shortly.\nThree questions arise here: What was Deuring’s idea? What remained to be done\nonce one had this idea? Why did this research programme not bear quick fruit?\n",
+          "sha256": "110384b6ceb94bdc66887c7c3b277da4eddc425b6fd19b8e7c31e88881f84df2"
+        },
+        "after": {
+          "line_start": 1207,
+          "line_end": 1214,
+          "text": "9.3. Correspondences. In Hurwitz’s seminal paper [37], the theory of corre-\nspondences was an essentially analytic theory. Later on it was at least partially\nintegrated into the Italian Algebraic Geometry, esp. by Francesco Severi. See [66],\nas well as the later [67], chapter 6, §§2, 3. But when Emmy Noether in 1919 was\nwriting her report on the various existing arithmetic theories of algebraic functions,\nshe pointed out [45]:\n\n      Just as Riemann’s theory [of Riemann surfaces] preceded the other the-\n",
+          "sha256": "fb18457643e8fb598dfe9680861cf503ca3e8b9ff59034eebd86b147f2a64efb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Deuring's idea and its reception",
+            "line_end": 1404,
+            "line_start": 1117,
+            "mathematical_role": "Compares higher-genus proof programs, replaces elliptic endomorphisms by correspondences, identifies missing norm/positivity machinery, and documents representation/coordination barriers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1206,
+          "line_start": 1170,
+          "title": "Replace elliptic endomorphisms by self-correspondences",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+          "unit_type": "abstraction",
+          "why_material": "Identifies Deuring's key higher-genus abstraction: the endomorphism ring of an elliptic curve should become the ring of correspondences of a curve with itself, within Hasse's arithmetic function-field program."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the contemporaneous claim of algebraicity and the stated expectation that this foundation would support pRH.",
+          "representation_dependency": "Prose and correspondence quotations are directly recoverable.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1169,
+            "line_start": 1140,
+            "title": "Competing higher-genus routes: abelian uniformization or algebraic methods",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u26",
+            "unit_type": "analogy-and-forecast",
+            "why_material": "Transfers a principle from Siegel's function/value relations to congruence counting, forecasts higher-genus abelian uniformization, and explicitly keeps Weil's algebraic route as an alternative."
+          },
+          {
+            "line_end": 1228,
+            "line_start": 1207,
+            "title": "Analytic, geometric, and arithmetic languages for correspondences",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u28",
+            "unit_type": "representation-comparison",
+            "why_material": "Shows that the same object had analytic, Italian-geometric, and function-field presentations, with algebraization over arbitrary characteristic as the contested bridge."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hasse's elliptic endomorphism-ring proof motivates Deuring's replacement by a ring of self-correspondences in higher genus, where missing differential, norm, and positivity components become the explicit obstruction.",
+            "limit": "The source reports the program and its failure; it does not prove that completing exactly these steps would suffice.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u24",
+              "oort_schappacher2016_positive_characteristic_history:depth:u27",
+              "oort_schappacher2016_positive_characteristic_history:depth:u29"
+            ],
+            "title": "Endomorphisms generalize to correspondences, but positivity machinery remains"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+          "spontaneous_reading": "Deuring's decisive compression is to replace the elliptic curve's endomorphism ring by a ring of self-correspondences for a higher-genus curve. This preserves the idea of doing algebra with geometric operators even when ordinary self-maps are no longer a rich enough representation."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+          "source_grounded_mathematics": "Deuring reports constructing an algebraic ring of multipliers while generalizing Hasse's elliptic work. The account identifies the underlying move as replacing the elliptic endomorphism ring by the ring of correspondences from a higher-genus curve to itself. Hasse interprets this as a foundation for arbitrary function fields.",
+          "conceptual_reading": "The generalization preserves role rather than literal object: self-correspondences inherit the operator-algebra function played by elliptic endomorphisms. The ring packages many geometric relations into an object on which algebraic operations can be attempted.",
+          "representation_or_bridge": "The ring of self-correspondences bridges genus one and higher genus, while the arithmetic language of function fields is the intended setting in which those correspondences are to be algebraized and computed with.",
+          "boundary_or_failure": "No complete pRH argument follows in the span. Deuring's original manuscripts are unavailable, the published work was substantially reworked, and Hasse's confidence that the foundations suffice is reported expectation.",
+          "uncertainty": "The central abstraction is explicit in the source, but the exact contents of Deuring's early proofs and the precise algebraicity claim cannot be recovered from this narrow historical packet."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u27",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly identifies Deuring's move as replacing the elliptic endomorphism ring by the ring of self-correspondences in higher genus.",
+          "Deuring's reported algebraicity claim, the loss of his original manuscripts, substantial later reworking, placement within Hasse's program, and Hasse's optimism are accurately retained."
+        ],
+        "inference": [
+          "Describing the replacement as preserving an operator-algebra role across genera is a useful role-based interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that ordinary self-maps are 'no longer a rich enough representation' is not stated or demonstrated in the span.",
+          "The span does not establish the precise contents of Deuring's early algebraicity proof, as the candidate correctly notes elsewhere."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Decisive compression' risks turning the explicit substitution of rings into a generic abstraction slogan."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "The exact grounded operation is substitution of the self-correspondence ring for the elliptic endomorphism ring; no separate insufficiency theorem for self-maps is supplied."
+        ],
+        "revision_instructions": [
+          "Delete the assertion about ordinary self-maps being insufficient.",
+          "State the role-preserving interpretation conditionally from the explicit ring substitution, while retaining the uncertainty about the lost manuscripts and reported algebraicity claim."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The quoted construction is retained through the authors' retrospective failure diagnosis.",
+      "line_end": 1281,
+      "line_start": 1229,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Field-compositum notation and mapping glyphs are imperfect; the missing-step structure and positivity target are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives a concrete higher-genus program: form a ring of correspondences, develop its action on differentials, generalize norm by extension degree, and reduce pRH to positivity; it also records that the norm step was never supplied.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Algebraize correspondences, then supply differentials, norm, and positivity",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u29.txt",
+      "unit_bytes": 3200,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+      "unit_sha256": "0a5de06ab11351f0cd0fc9411aaf311d41586db78cd7ed1f5db73bfc6caa2e94",
+      "unit_type": "program-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u29.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1221,
+          "line_end": 1228,
+          "text": "\nBy 1936, the situation could have appeared a bit diﬀerent, especially for Max\nDeuring in Leipzig, insofar as B.L. Van der Waerden was trying to rewrite quite\na bit of algebraic geometry in algebraic language, and thus also in a way which in\nprinciple would hold over ground ﬁelds of arbitrary characteristic. See for instance\nhis paper [77], cf. [59]. But it seems that Deuring was naturally developing his\nidea in the context of Hasse’s approach, i.e., in the language of the arithmetic of\nfunction ﬁelds.\n",
+          "sha256": "2935fcfbc9eb5180fe58af71596ec50cf0c926625eecef45a87401560f5368a2"
+        },
+        "after": {
+          "line_start": 1282,
+          "line_end": 1289,
+          "text": "\n<!-- source-page: 26 -->\n\nEarly History of the Riemann Hypothesis in Positive Characteristic            619\n\n   Here is Weil’s reaction to Hasse’s letter, written in German on 17 July 1936:\n\n     Lieber Herr Hasse,\n",
+          "sha256": "b0c0b72c2cf2e9521aeda186317e6b0ef8ae3d80f7203fed767dfe04f0b929d0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Deuring's idea and its reception",
+            "line_end": 1404,
+            "line_start": 1117,
+            "mathematical_role": "Compares higher-genus proof programs, replaces elliptic endomorphisms by correspondences, identifies missing norm/positivity machinery, and documents representation/coordination barriers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1281,
+          "line_start": 1229,
+          "title": "Algebraize correspondences, then supply differentials, norm, and positivity",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+          "unit_type": "program-and-obstruction",
+          "why_material": "Gives a concrete higher-genus program: form a ring of correspondences, develop its action on differentials, generalize norm by extension degree, and reduce pRH to positivity; it also records that the norm step was never supplied."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The quoted construction is retained through the authors' retrospective failure diagnosis.",
+          "representation_dependency": "Field-compositum notation and mapping glyphs are imperfect; the missing-step structure and positivity target are explicit.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1228,
+            "line_start": 1207,
+            "title": "Analytic, geometric, and arithmetic languages for correspondences",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u28",
+            "unit_type": "representation-comparison",
+            "why_material": "Shows that the same object had analytic, Italian-geometric, and function-field presentations, with algebraization over arbitrary characteristic as the contested bridge."
+          },
+          {
+            "line_end": 1331,
+            "line_start": 1287,
+            "title": "Weil's quotient ring and warning against discarding prior gauges",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u30",
+            "unit_type": "quotient-and-critique",
+            "why_material": "Recognizes Deuring's ring as correspondences modulo the ideal of valence zero and argues that translation into modern algebra should preserve older theories as diagnostic gauges."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hasse's elliptic endomorphism-ring proof motivates Deuring's replacement by a ring of self-correspondences in higher genus, where missing differential, norm, and positivity components become the explicit obstruction.",
+            "limit": "The source reports the program and its failure; it does not prove that completing exactly these steps would suffice.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u24",
+              "oort_schappacher2016_positive_characteristic_history:depth:u27",
+              "oort_schappacher2016_positive_characteristic_history:depth:u29"
+            ],
+            "title": "Endomorphisms generalize to correspondences, but positivity machinery remains"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1286,
+              "line_start": 1282,
+              "reason": "Page marker and letter transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+          "spontaneous_reading": "The proposed proof program is a chain of representations with two named missing links: encode correspondences algebraically and form their ring, make them act on differentials, then define a norm tied to extension degree so that pRH can be converted into positivity. Its value is diagnostic because the unsupplied norm step identifies exactly where a compelling analogy ceased to be an executable proof."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+          "source_grounded_mathematics": "Hasse describes a correspondence between function fields using an isomorphism into a subfield of a finite extension and a minimal compositum, then transfers this description to abstract function fields over an algebraically closed constant field. Self-correspondences form a ring generalizing the elliptic meromorphism ring. He names two further requirements: their behavior on differentials of the first kind and a norm theory related to the extension degree. He expects pRH to reduce to an analogue of positive definiteness of the Hermitian form of a period matrix. The authors state that the norm generalization was never supplied.",
+          "conceptual_reading": "The program decomposes a global conjecture into an operator algebra, a linear representation on differentials, a size or adjoint invariant, and a positivity statement. This decomposition exposes proof burdens rather than hiding them inside the word generalization.",
+          "representation_or_bridge": "Field extensions and composita encode geometric correspondences; the correspondence ring makes them algebraically composable; differentials provide a linearized action; norm and positivity are intended to bridge that action to pRH.",
+          "boundary_or_failure": "The decisive failure is explicit: no general norm theory of the proposed kind was furnished. Approximate visibility of a positivity reduction is not a derivation, and the algebraized correspondence construction alone does not imply pRH.",
+          "uncertainty": "Several field and mapping glyphs are degraded, so the exact compositum notation should not be reconstructed beyond the prose. The missing-step structure and positivity target are nevertheless clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u29",
+        "critic_decision": "revise",
+        "supported": [
+          "The algebraic description of correspondences by field embeddings, extensions, and a minimal compositum is reported without reconstructing degraded glyphs.",
+          "The self-correspondence ring, the two missing requirements concerning differentials and norm, the intended positivity reduction, and the retrospective statement that the norm generalization was never supplied are all explicit."
+        ],
+        "inference": [
+          "Viewing the behavior on differentials as a linearized action is plausible but is not formulated that way in the span.",
+          "Describing the program as a chain from correspondence algebra through differentials and norm to positivity is a faithful decomposition of Hasse's stated program."
+        ],
+        "unsupported_or_imported": [
+          "'Adjoint invariant' is imported terminology: the span asks for a norm related to extension degree and does not state an adjoint construction."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic sequence 'operator algebra, linear representation, size or adjoint invariant' partially replaces the source's more precise achieved and missing steps."
+        ],
+        "context_or_ocr_risk": [
+          "Field, compositum, and mapping glyphs are degraded, so no exact formula or comparison map should be reconstructed from this text layer."
+        ],
+        "missed_mechanism": [
+          "Algebraization and formation of the ring are presented as already achieved; the two explicitly missing steps are behavior on differentials and generalization of norm."
+        ],
+        "revision_instructions": [
+          "Remove 'adjoint invariant' and use the source's precise norm-related-to-extension-degree language.",
+          "Make the achieved-versus-missing distinction explicit, and label the linear-action gloss as interpretation rather than source fact."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the workshop outcome and immediate consequences, not the surrounding correspondence already represented.",
+      "line_end": 1372,
+      "line_start": 1337,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Historical prose; no formula dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Documents how mathematically related approaches failed to coordinate because their practitioners used incompatible algebraic-geometric languages, while also separating that bottleneck from later proof priority disputes.",
+      "source_id": "oort_schappacher2016_positive_characteristic_history",
+      "source_normalized_sha256": "c8ee81498946c350b3d4f4d0c1c66a87f9fd619059f659ac45b4c35d68c5ecb5",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dialect fragmentation blocks a collective proof program",
+      "unit_artifact_relpath": "depth/units/oort_schappacher2016_positive_characteristic_history:depth:u31.txt",
+      "unit_bytes": 2494,
+      "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+      "unit_sha256": "53ee11ca2b27b941e9a12a933ad469b8df4f1944bd17d28a1fbd4f35eff1d694",
+      "unit_type": "coordination-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/oort_schappacher2016_positive_characteristic_history:depth:u31.txt",
+      "source": {
+        "source_id": "oort_schappacher2016_positive_characteristic_history",
+        "title": "Early History of the Riemann Hypothesis in Positive Characteristic",
+        "authors": [
+          "Frans Oort",
+          "Norbert Schappacher"
+        ],
+        "year": 2016,
+        "source_type": "historical-mathematical-account",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "historical-foundational",
+          "artin-hasse-weil"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1329,
+          "line_end": 1336,
+          "text": "available at the time a recent voluminous survey written by Berzolari of the al-\ngebraic geometric theory of correspondences that had appeared in 1933 in the\nEnzyklopädie in German translation.\n\n<!-- source-page: 27 -->\n\n620                        Frans Oort, Norbert Schappacher\n\n",
+          "sha256": "89d24906eac1d3fe000af2a621ab32990977846ebe21710ded40754f2acbb8f0"
+        },
+        "after": {
+          "line_start": 1373,
+          "line_end": 1380,
+          "text": "\n9.6. The German-Italian axis. Hasse’s last paper promoting the research pro-\ngramme towards pRH for curves of any genus, based on the arithmetic theory\nof algebraic function ﬁelds and Deuring’s idea, was published in Italian [34], in\nthe proceedings of a congress that could not actually take place because of the\nwar. Its explicit aim was to “facilitate for the Italian school of algebraic geometry\nthe access to a ﬁeld which is being cultivated at various places in Germany, and\nin which algebra and arithmetic are coming together.” ([34], p. 85) There is a\n",
+          "sha256": "51e61242eb0130010ccba5f4dbb2120122a8e3d5f57f35b8082bbe3ace53d84e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2088c43e950d36220695e86983ff8e5af2a48f94cdfb87b25be3c439f6d62aab",
+        "dossier_sha256": "458d6f0f1ae45876f51e2485e6b5eb7c13fce94fa5c437e81f312cca31c7f2d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Deuring's idea and its reception",
+            "line_end": 1404,
+            "line_start": 1117,
+            "mathematical_role": "Compares higher-genus proof programs, replaces elliptic endomorphisms by correspondences, identifies missing norm/positivity machinery, and documents representation/coordination barriers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1372,
+          "line_start": 1337,
+          "title": "Dialect fragmentation blocks a collective proof program",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+          "unit_type": "coordination-obstruction",
+          "why_material": "Documents how mathematically related approaches failed to coordinate because their practitioners used incompatible algebraic-geometric languages, while also separating that bottleneck from later proof priority disputes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the workshop outcome and immediate consequences, not the surrounding correspondence already represented.",
+          "representation_dependency": "Historical prose; no formula dependency.",
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1331,
+            "line_start": 1287,
+            "title": "Weil's quotient ring and warning against discarding prior gauges",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u30",
+            "unit_type": "quotient-and-critique",
+            "why_material": "Recognizes Deuring's ring as correspondences modulo the ideal of valence zero and argues that translation into modern algebra should preserve older theories as diagnostic gauges."
+          },
+          {
+            "line_end": 1402,
+            "line_start": 1374,
+            "title": "Intrinsic characteristic-p proof versus lifting and a later language shift",
+            "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u32",
+            "unit_type": "method-selection",
+            "why_material": "Contrasts Hasse's allegiance to an intrinsic function-field proof with lifting to characteristic zero, then notes that eventual success required a newly consolidated algebraic-geometric language."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Coordinate-free function fields, Italian algebraic geometry, analytic correspondence theory, and later algebraic geometry encode overlapping structures, but language preferences controlled which tools, prior results, and collaborators were visible to the pRH program.",
+            "limit": "The historical account supports this causal interpretation locally; it does not show that language unification alone would have produced a proof.",
+            "parent_local_unit_ids": [
+              "oort_schappacher2016_positive_characteristic_history:depth:u08",
+              "oort_schappacher2016_positive_characteristic_history:depth:u25",
+              "oort_schappacher2016_positive_characteristic_history:depth:u28",
+              "oort_schappacher2016_positive_characteristic_history:depth:u30",
+              "oort_schappacher2016_positive_characteristic_history:depth:u31",
+              "oort_schappacher2016_positive_characteristic_history:depth:u32"
+            ],
+            "title": "Representation choice can be a mathematical and coordination bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+        "spontaneous": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+          "spontaneous_reading": "The obstruction here is coordination through representation: closely related approaches could not be combined effectively because their practitioners spoke incompatible algebraic-geometric dialects. Hasse's workshop therefore tested a collective bridge-building strategy, but shared subject matter did not provide a shared operational language."
+        },
+        "directed": {
+          "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+          "source_grounded_mathematics": "Weil and Lefschetz pointed Deuring toward Severi's correspondence theory, while Deuring defended publishing a function-field version. Hasse organized a 1937 algebraic-geometry workshop hoping to support a collective attack on pRH, but the participants differed in background and each used his own dialect. The source separately notes Weil's later engagement and the ensuing priority conflict.",
+          "conceptual_reading": "Mathematical equivalence is not automatically usable equivalence. A result encoded in one language may remain unavailable to another program if definitions, proof standards, and calculational interfaces do not line up.",
+          "representation_or_bridge": "The attempted bridge is a common working language across Italian geometry, modern algebra, and arithmetic function fields; the workshop is the social mechanism intended to build it.",
+          "boundary_or_failure": "The source gives several reasons the workshop failed and does not isolate dialect as the sole cause. Nor does it show that successful coordination would have completed the missing mathematics or settled the later priority dispute.",
+          "uncertainty": "The historical prose is clear, but causal attribution among language, personalities, background, and circumstance remains interpretive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "oort_schappacher2016_positive_characteristic_history:depth:u31",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly reports Weil's and Lefschetz's references to Severi, Deuring's defense of his function-field presentation, Hasse's collective-workshop aim, and the failure of that aim for various reasons.",
+          "Differing backgrounds and each speaker's use of his own algebraic-geometric dialect are explicitly identified, and the candidate correctly denies that dialect was the sole cause."
+        ],
+        "inference": [
+          "The claim that mathematically related approaches were not operationally interchangeable is a reasonable interpretation of the failed coordination effort.",
+          "Treating the workshop as a social bridge-building mechanism is supported by Hasse's stated hope to orchestrate collective learning and work."
+        ],
+        "unsupported_or_imported": [
+          "The specific claim that definitions, proof standards, and calculational interfaces failed to line up is not evidenced in this span; it extrapolates beyond the reported dialect and background differences."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Coordination through representation' is useful only when tied to the concrete workshop and dialect evidence, not used as a monocausal template."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "The source explicitly says the workshop failed for various reasons, so the criticism of representational fragmentation must remain one major factor among several."
+        ],
+        "revision_instructions": [
+          "Remove the unevidenced enumeration of definitions, proof standards, and calculational interfaces.",
+          "Keep the concrete dialect/background evidence and the existing multifactor causal qualification."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4f3c6d1c7f44e3638ff348ccaf254b9a5c93e8a21b694046057ac2580334606e"
+}

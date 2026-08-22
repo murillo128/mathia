@@ -1,0 +1,518 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1973012877_95e599ac_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1973012877",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the extra hypotheses and the parameter beta recording the finite critical-scale clusters.",
+      "line_end": 189,
+      "line_start": 175,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent for the exact product and powers; statement structure and hypotheses are legible, with exact typography to be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1.2 shows that, for integer weights and controlled shifts, the same capped inverse-separation structure appearing in the conditional upper bound is also forced from below.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unconditional lower bound reproduces the pairwise separation factors",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_depth_004.txt",
+      "unit_bytes": 810,
+      "unit_id": "openalex_w1973012877_depth_004",
+      "unit_sha256": "532833116a98830257f57dd16a5c26839ee04963172e6aeabb7c69811b0e1fe5",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_depth_004.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "instead estimate\n(6) S(T, V ) = {t ∈ [T, 2T ] : log |ζ( 12 +it+iα1 )|k1 +...+log |ζ( 12 +it+iαm )|km ≥ V }.\nThe rest of our proof of Theorem 1.1 is then analogous to Soundararajan’s proof\nof the Theorem in [11], except that we are required to use Lemma 3.5. The detail\nof the proof will be discussed in §3. Recently, Soundararajan and Young [12] have\nused a similar version of Lemma 3.5 and similar extension of Soundararajan’s work\nto obtain the second moment of quadratic twists of modular L-functions.\n\n",
+          "sha256": "1864b10350d7069b8163f974cde5ca5d65a6f1c033d7d8fe795d87dbc0547f92"
+        },
+        "after": {
+          "line_start": 190,
+          "line_end": 197,
+          "text": "   The proof of Theorem 1.2 uses similar techniques to Rudnick’s and Soundarara-\njan’s work on finding lower bounds for the moments of a family of Dirichlet L-\nfunctions [9]. Let\n                  P\n              X n n ...n =j dk1 (n1 )dk2 (n2 )...dkm (nm )n1−iα1 n2−iα2 ...nm\n                                                                            −iαm\n                      1 2    m\n(8) A(t) =                                       1                               ,\n",
+          "sha256": "2377080d32b84cff02d046e984f8d2534e7437fc9fa18109e10e0d0951326c0f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9137b01345c51432950edac6ee75c685143c61b2c0998cf81964c7d502a83678",
+        "dossier_sha256": "1252086a247f9cf6f6856672194df75a1d07fc52cd3fcf0c5df67ceddb209021",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Shifted moments, main results, and proof roadmaps",
+            "line_end": 262,
+            "line_start": 81,
+            "mathematical_role": "Defines the multishift family, states the three-regime conjecture and upper/lower bounds, and exposes the tail and short-polynomial mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 189,
+          "line_start": 175,
+          "title": "The unconditional lower bound reproduces the pairwise separation factors",
+          "unit_id": "openalex_w1973012877_depth_004",
+          "unit_type": "theorem",
+          "why_material": "Theorem 1.2 shows that, for integer weights and controlled shifts, the same capped inverse-separation structure appearing in the conditional upper bound is also forced from below."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the extra hypotheses and the parameter beta recording the finite critical-scale clusters.",
+          "representation_dependency": "Formula-dependent for the exact product and powers; statement structure and hypotheses are legible, with exact typography to be checked against the PDF.",
+          "unit_id": "openalex_w1973012877_depth_004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 173,
+            "line_start": 144,
+            "title": "A shifted-moment upper bound is reduced to a joint log-zeta tail set",
+            "unit_id": "openalex_w1973012877_depth_003",
+            "unit_type": "theorem-and-reduction",
+            "why_material": "Theorem 1.1 encodes pairwise shift interactions through capped inverse separations, then generalizes Soundararajan's tail-distribution method from one log-zeta value to a weighted sum of shifted log-zeta values."
+          },
+          {
+            "line_end": 244,
+            "line_start": 190,
+            "title": "A short Dirichlet-polynomial proxy turns a moment lower bound into an energy quotient",
+            "unit_id": "openalex_w1973012877_depth_005",
+            "unit_type": "proof-strategy",
+            "why_material": "The zeta-product is approximated by a short coefficient polynomial A(t); a smoothed correlation S1 and its quadratic energy S2 are combined by Cauchy-Schwarz so the desired moment is bounded below by S1 squared over S2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The short Dirichlet polynomial stores the pairwise shift geometry in its coefficient energy; smoothing and Fourier localization recover that energy as a positive diagonal correlation, and Cauchy-Schwarz transfers it to the zeta moment.",
+            "limit": "The argument requires positive integer weights and the paper's stated shift-size conditions, so it does not match the full real-weight scope of the upper bound.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_depth_004",
+              "openalex_w1973012877_depth_005",
+              "openalex_w1973012877_depth_015",
+              "openalex_w1973012877_depth_016",
+              "openalex_w1973012877_depth_021"
+            ],
+            "title": "Lower bounds flow from a proxy's energy to a localized diagonal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 174,
+              "line_start": 174,
+              "reason": "Blank separator between main results."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1973012877_depth_004",
+        "spontaneous": {
+          "unit_id": "openalex_w1973012877_depth_004",
+          "spontaneous_reading": "The lower bound independently recovers the same capped pairwise separation geometry as the conditional upper bound, showing that those factors are structurally forced rather than artifacts of one proof direction."
+        },
+        "directed": {
+          "unit_id": "openalex_w1973012877_depth_004",
+          "source_grounded_mathematics": "For positive integer weights, bounded pairwise shift differences, and |alpha_i|=O(log log T), Theorem 1.2 gives an unconditional lower bound with the product of min(1/|alpha_i-alpha_j|,log T)^(2k_i k_j); beta controls finite critical-scale clusters.",
+          "conceptual_reading": "Matching interaction factors from below identify pairwise displacement as a robust invariant of the moment scale, even though constants and exact asymptotics remain unresolved.",
+          "representation_or_bridge": "The theorem bridges a multishift zeta moment to a product over pairwise shift distances, with the cap at log T merging critically close pairs.",
+          "boundary_or_failure": "Integer weights and the stated shift bounds are essential here; the result is only a lower bound and does not match the real-weight scope of the upper theorem.",
+          "uncertainty": "The hypotheses and role of beta are legible, while the exact product typography and powers remain formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1973012877_depth_004",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states an unconditional lower bound for positive integer weights, bounded pairwise shift differences, and |alpha_i|=O(log log T).",
+          "The displayed lower bound contains the capped pairwise factors min(1/|alpha_i-alpha_j|,log T)^(2k_i k_j), and beta is defined from critically close pairs."
+        ],
+        "inference": [
+          "Interpreting the cap as merging critically close pairs is a reasonable reading of the formula."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this lower bound 'independently recovers the same' geometry as a conditional upper bound imports the upper theorem from outside this unit's evidence span.",
+          "The stronger conclusion that the factors are structurally forced rather than artifacts of one proof direction requires the out-of-span comparison and is not established by Theorem 1.2 alone."
+        ],
+        "paraphrase_or_style_risk": [
+          "The candidate contains a useful pairwise-geometry reading, but its headline gains force mainly from an external comparison."
+        ],
+        "context_or_ocr_risk": [
+          "The theorem structure and hypotheses are legible; exact product powers and beta typography remain formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "Within this unit, beta should be described exactly as a maximum of finite scaled close-pair limits, without attributing a broader clustering mechanism."
+        ],
+        "revision_instructions": [
+          "Rewrite the spontaneous and conceptual readings around what the unconditional theorem itself certifies: a lower scale containing capped pairwise separation factors under integer-weight and shift hypotheses.",
+          "Remove the comparison with the conditional upper bound and the 'structurally forced' conclusion, or label them explicitly as requiring another unit.",
+          "Describe beta by its displayed definition and retain the formula-verification warning."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit states the critical-scale case and explicitly defers existence of the collision limit to Appendix 5.1.",
+      "line_end": 519,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependency for the determinant and limiting variables; exact notation requires PDF checking, while the continuous-extension role is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At nonzero finite matrix-scaled separation, the same rescaling leads to a sine-kernel determinant divided by a Vandermonde factor; continuous extension defines the interpolation constant between the two extreme regimes.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite scaled separation is encoded by a continuous determinant limit",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_depth_010.txt",
+      "unit_bytes": 1220,
+      "unit_id": "openalex_w1973012877_depth_010",
+      "unit_sha256": "8e09792eeef52844c559d363224be065b214a58ebe83920f4ecb5d9ba6aeeb73",
+      "unit_type": "critical-scale-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_depth_010.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 488,
+          "line_end": 495,
+          "text": "2l1 m1 is minimum, where 0 ≤ l1 , k1 ≤ 2k. Now let t = l1 + m1 . Hence for 0 ≤ l1 ≤ t\nand 0 ≤ t ≤ 4k, we have\n\n       4k 2 − 6kl1 − 6km1 + 2l12 + 2m21 + 2l1 m1 = 4k 2 − 6kt + 2t2 − 2l1 t + 2l12 .\n\nBy calculus, the minimum value of the above is −2k 2 , which occurs when t = 2k\nand l1 = t/2 = k. This proves the claim.\n\n",
+          "sha256": "1461159faaaae35d33d3cffb384d00ccbad181091aa90936ddfc2ef08f18d8e7"
+        },
+        "after": {
+          "line_start": 520,
+          "line_end": 527,
+          "text": "\n<!-- source-page: 8 -->\n\n8                                   VORRAPAN CHANDEE\n\n\n                                3. Proof of Theorem 1.1\n   Let S(T, V ) be defined as in (6) and observe that\n",
+          "sha256": "e1fbf0d6f09dc5e694e12a0322b643a0165da52c4c7da2e2ca629af131a82559"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9137b01345c51432950edac6ee75c685143c61b2c0998cf81964c7d502a83678",
+        "dossier_sha256": "1252086a247f9cf6f6856672194df75a1d07fc52cd3fcf0c5df67ceddb209021",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random-matrix conjecture for shifted moments",
+            "line_end": 525,
+            "line_start": 263,
+            "mathematical_role": "Derives the three separation regimes by contour rescaling, pole splitting, balanced allocations, and a finite-scale determinant limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 519,
+          "line_start": 496,
+          "title": "Finite scaled separation is encoded by a continuous determinant limit",
+          "unit_id": "openalex_w1973012877_depth_010",
+          "unit_type": "critical-scale-limit",
+          "why_material": "At nonzero finite matrix-scaled separation, the same rescaling leads to a sine-kernel determinant divided by a Vandermonde factor; continuous extension defines the interpolation constant between the two extreme regimes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit states the critical-scale case and explicitly defers existence of the collision limit to Appendix 5.1.",
+          "representation_dependency": "High formula dependency for the determinant and limiting variables; exact notation requires PDF checking, while the continuous-extension role is explicit.",
+          "unit_id": "openalex_w1973012877_depth_010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 494,
+            "line_start": 354,
+            "title": "Separated pole families are dominated by balanced contour allocations",
+            "unit_id": "openalex_w1973012877_depth_009",
+            "unit_type": "dominant-configuration-analysis",
+            "why_material": "For separation larger than the inverse matrix scale, each contour is split around two pole families. Power counting shows that only allocations with equal numbers assigned to each family survive at leading order, causing factorization into two ordinary moments times a separation factor."
+          },
+          {
+            "line_end": 574,
+            "line_start": 526,
+            "title": "A covariance parameter controls Gaussian and large-deviation tails",
+            "unit_id": "openalex_w1973012877_depth_011",
+            "unit_type": "tail-bound-theorem",
+            "why_material": "The moment is written as an integral of joint-tail measure, and Theorem 3.1 packages all shift interaction into W, giving Gaussian-like decay through the moderate range and stronger exponential decay for extreme values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both the random-matrix and Dirichlet-series analyses first enclose a cluster of nearby singularities as one object; rescaling, Laurent extraction, or divided differences then produce a finite limit without treating colliding poles independently.",
+            "limit": "The contour integrals and determinant quotient live in different calculations; this is a shared conceptual move, not an identity between their local constants.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_depth_008",
+              "openalex_w1973012877_depth_010",
+              "openalex_w1973012877_depth_018",
+              "openalex_w1973012877_depth_022"
+            ],
+            "title": "Coalescing singularities are handled by local compression before taking limits"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1973012877_depth_010",
+        "spontaneous": {
+          "unit_id": "openalex_w1973012877_depth_010",
+          "spontaneous_reading": "At finite nonzero scaled separation, neither pole family can be discarded or merged; their joint effect survives as a determinant divided by a vanishing Vandermonde square."
+        },
+        "directed": {
+          "unit_id": "openalex_w1973012877_depth_010",
+          "source_grounded_mathematics": "For N alpha tending to c not equal to zero, rescaling and Kosters's formula give an N^(4k^2)-normalized limit C_k expressed as a sine-kernel determinant over a squared Vandermonde, with coincident arguments defined by continuous extension.",
+          "conceptual_reading": "The determinant quotient is an interpolation object retaining finite separation while regularizing collisions, rather than selecting either extreme asymptotic factorization.",
+          "representation_or_bridge": "C_k bridges the coalesced and separated matrix regimes through the scaled coordinate c and a collision-regularized determinant.",
+          "boundary_or_failure": "Existence of the continuous extension is deferred to Appendix 5.1, and this constant remains random-matrix evidence rather than a proved zeta constant.",
+          "uncertainty": "The continuous-extension role is explicit, but determinant indices, scaling variables, and normalization are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1973012877_depth_010",
+        "critic_decision": "revise",
+        "supported": [
+          "The span treats the regime N alpha tending to a finite nonzero c, invokes Kosters's determinant quotient, defines C_k by the corresponding collision limit, and states that existence follows by continuous extension.",
+          "It explicitly defers proof of existence of the extension to Appendix 5.1."
+        ],
+        "inference": [
+          "Viewing the determinant quotient as collision regularization is a plausible interpretation of the continuous-extension statement."
+        ],
+        "unsupported_or_imported": [
+          "The label 'sine-kernel determinant' depends on the definition of b_jl in equation (5), which is referenced but not contained in this unit span.",
+          "The claim that C_k bridges or interpolates between the coalesced and separated regimes is not demonstrated in this span; no c-to-zero or c-to-infinity limiting comparison is made here.",
+          "The spontaneous claim that neither pole family can be discarded or merged imports mechanism from the neighboring case analyses rather than this finite-case text."
+        ],
+        "paraphrase_or_style_risk": [
+          "The regularization reading is useful, but the interpolation language risks a familiar critical-regime template unsupported by the local calculation."
+        ],
+        "context_or_ocr_risk": [
+          "The determinant indices, scaling variables, and normalization are high-risk formula text and should not be reconstructed beyond the displayed continuous-extension claim."
+        ],
+        "missed_mechanism": [
+          "The strongest locally supported operation is narrower: rescaling reduces the finite case to Kosters's determinant quotient, whose collision limit defines C_k."
+        ],
+        "revision_instructions": [
+          "Restrict the reading to the finite nonzero scaled-separation limit, the referenced determinant quotient, and continuous extension.",
+          "Replace 'sine-kernel' by 'the determinant with entries b_jl defined in (5)' unless equation (5) is explicitly added to the evidence packet.",
+          "Remove claims of interpolation between extreme regimes and of pole-family selection, or mark them as requiring adjacent units."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the section hypotheses, lemma statement, dyadic reduction, and the exact coefficient-square expression that begins the proof.",
+      "line_end": 820,
+      "line_start": 783,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependency for convolution coefficients and exponents; the mean-square reduction is recoverable, with exact normalization requiring PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 4.1 identifies the mean square of A(t) with the same pairwise capped inverse-separation factors as the target moment, reducing the analytic lower bound to understanding a multiplicative coefficient norm.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The short polynomial's mean square already contains the full shift-correlation product",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_depth_015.txt",
+      "unit_bytes": 2113,
+      "unit_id": "openalex_w1973012877_depth_015",
+      "unit_sha256": "88d75288c0775f90d7040217c9098471eba1887b53cad00a07d4e01ab234b430",
+      "unit_type": "coefficient-energy-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_depth_015.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 775,
+          "line_end": 782,
+          "text": "When V ≤ W 2 , choose k = ⌊ W1 ⌋, and when V > W 2 , choose k = ⌊10V ⌋. Hence\n                                     \u0012     \u0013\n                             V          V2\n            meas(S1 ) ≪ T √ exp − 1 + T exp(−4V log V ).\n                              W         W\n                                                                                                  \u0003\n   This concludes the proof of Theorem 3.1.\n\n",
+          "sha256": "105f6ae536b64305bb21aa044ba762346013985913ef236e26f6ef41afc22630"
+        },
+        "after": {
+          "line_start": 821,
+          "line_end": 828,
+          "text": "\nLet\n                         X\n        D(j) = |                    dk1 (n1 )dk2 (n2 )...dkm (nm )n1−iα1 n2−iα2 ...nm\n                                                                                    −iαm 2\n                                                                                        | ,\n                   n1 n2 ...nm =j\n               P\n",
+          "sha256": "9bf487187e4371febd2c0b962fa40f4d7199ec543c635bac5ebd1383c4faf26a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9137b01345c51432950edac6ee75c685143c61b2c0998cf81964c7d502a83678",
+        "dossier_sha256": "1252086a247f9cf6f6856672194df75a1d07fc52cd3fcf0c5df67ceddb209021",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Coefficient mean square and residue analysis",
+            "line_end": 1252,
+            "line_start": 783,
+            "mathematical_role": "Factors the short-polynomial coefficient energy into shifted zeta singularities and evaluates clustered residues while suppressing correction terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 820,
+          "line_start": 783,
+          "title": "The short polynomial's mean square already contains the full shift-correlation product",
+          "unit_id": "openalex_w1973012877_depth_015",
+          "unit_type": "coefficient-energy-theorem",
+          "why_material": "Lemma 4.1 identifies the mean square of A(t) with the same pairwise capped inverse-separation factors as the target moment, reducing the analytic lower bound to understanding a multiplicative coefficient norm."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the section hypotheses, lemma statement, dyadic reduction, and the exact coefficient-square expression that begins the proof.",
+          "representation_dependency": "High formula dependency for convolution coefficients and exponents; the mean-square reduction is recoverable, with exact normalization requiring PDF verification.",
+          "unit_id": "openalex_w1973012877_depth_015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 781,
+            "line_start": 723,
+            "title": "Adaptive moment orders convert prime covariance into exceptional-set decay",
+            "unit_id": "openalex_w1973012877_depth_014",
+            "unit_type": "high-moment-tail-mechanism",
+            "why_material": "High-moment estimates bound the long and short prime blocks differently; choosing moment order according to V and W yields the Gaussian core and very-large-value tail needed for the shifted moment bound."
+          },
+          {
+            "line_end": 865,
+            "line_start": 822,
+            "title": "Shifted coefficient energy becomes a product of displaced zeta singularities",
+            "unit_id": "openalex_w1973012877_depth_016",
+            "unit_type": "euler-product-factorization",
+            "why_material": "Multiplicativity turns the coefficient-square Dirichlet series into one central zeta factor and one conjugate pair for every shift difference, with a holomorphic Euler factor. This exposes correlation as the geometry of clustered singularities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The short Dirichlet polynomial stores the pairwise shift geometry in its coefficient energy; smoothing and Fourier localization recover that energy as a positive diagonal correlation, and Cauchy-Schwarz transfers it to the zeta moment.",
+            "limit": "The argument requires positive integer weights and the paper's stated shift-size conditions, so it does not match the full real-weight scope of the upper bound.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_depth_004",
+              "openalex_w1973012877_depth_005",
+              "openalex_w1973012877_depth_015",
+              "openalex_w1973012877_depth_016",
+              "openalex_w1973012877_depth_021"
+            ],
+            "title": "Lower bounds flow from a proxy's energy to a localized diagonal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1973012877_depth_015",
+        "spontaneous": {
+          "unit_id": "openalex_w1973012877_depth_015",
+          "spontaneous_reading": "The short proxy's mean square already encodes the full pairwise shift product, so the lower-bound problem becomes the evaluation of a positive multiplicative coefficient energy."
+        },
+        "directed": {
+          "unit_id": "openalex_w1973012877_depth_015",
+          "source_grounded_mathematics": "Under the section's integer-weight and shift hypotheses, Lemma 4.1 states that the mean square of A(t) is asymptotic to T times self logarithmic powers and all capped inverse-separation factors; mean-value reduction identifies it with sum_{j<=sqrt(T)} D(j)/j for a squared convolution coefficient D.",
+          "conceptual_reading": "Passing to coefficient energy preserves precisely the shift-correlation geometry needed by the target moment while discarding pointwise zeta fluctuations.",
+          "representation_or_bridge": "The bridge maps the time-domain norm of A(t) to a diagonal Dirichlet-coefficient sum whose multiplicativity can be analyzed by an Euler product.",
+          "boundary_or_failure": "The theorem is restricted to positive integer weights and the stated bounded shifts, and the span begins rather than completes the coefficient-sum evaluation.",
+          "uncertainty": "The mean-square reduction is clear, but convolution notation, normalization, and powers are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1973012877_depth_015",
+        "critic_decision": "revise",
+        "supported": [
+          "Under the stated integer-weight and shift hypotheses, Lemma 4.1 gives the unconditional mean-square asymptotic for A(t) with all capped pairwise inverse-separation factors.",
+          "The proof begins with dyadic reduction and a mean-value identity whose right side is the displayed squared convolution-coefficient sum up to x=sqrt(T)."
+        ],
+        "inference": [
+          "Interpreting the time-domain mean square as positive coefficient energy that retains shift geometry is supported by the displayed square and pairwise asymptotic."
+        ],
+        "unsupported_or_imported": [
+          "The candidate names the coefficient D(j) and writes the reduction as sum D(j)/j, but D(j) is not defined anywhere in this unit; that label is introduced in the following span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The energy reading is substantive, but naming an out-of-span object makes the bridge appear more self-contained than the unit is."
+        ],
+        "context_or_ocr_risk": [
+          "The mean-square theorem and displayed squared coefficient expression are readable; convolution notation, normalization, and exact powers remain formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The local boundary is important: this unit begins the coefficient-sum evaluation but does not yet establish multiplicativity or an Euler-product analysis."
+        ],
+        "revision_instructions": [
+          "Replace 'sum D(j)/j' with 'the displayed sum of squared convolution coefficients divided by j,' or explicitly say that D is only a prospective label not defined here.",
+          "Keep the boundary statement that the coefficient-sum evaluation is merely begun, and do not import multiplicativity or Euler factorization."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "52923efe59d979ffd054101d67225d9bb94fad46ba7d4e40af1519ea210b0002"
+}

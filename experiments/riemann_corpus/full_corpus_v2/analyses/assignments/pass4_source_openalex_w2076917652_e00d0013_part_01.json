@@ -1,0 +1,1128 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2076917652_e00d0013_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2076917652",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 21-40 supply the broader moment-problem motivation; the selected span contains the concrete length regime and comparative finding.",
+      "line_end": 64,
+      "line_start": 54,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is recoverable from the text layer; the threshold T is explicit and has no material formula-image dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source contrasts the second moment, where success rests on a particular identity, with the fourth moment, where standard coefficient methods miss key terms; this is the paper's reusable diagnostic principle rather than merely motivation.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Long-polynomial stress test isolates missing higher-moment terms",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u05.txt",
+      "unit_bytes": 843,
+      "unit_id": "full_openalex_w2076917652_u05",
+      "unit_sha256": "6f3107c6c2ec3ab97fadc0f1266e1a7d40eebe17b6e60036d7606014f08f9676",
+      "unit_type": "method-failure-diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u05.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "                                           ciety Leverhulme Senior Research Fellowship, and a grant from the Air Force Office of Scientific Research,\n                                           Air Force Material Command, USAF (number FA8655-10-1-3088). He is also pleased to thank the American\n                                           Institute of Mathematics for hospitality during a visit where this work started.\n                                                                                               1\n\n<!-- source-page: 2 -->\n\n2                         BRIAN CONREY AND JONATHAN P. KEATING\n",
+          "sha256": "830fd58a6ce2d14985c69756dc4f43b206857576507cd036a506da94738294c4"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "\n                                    2. Second moment\n   We begin with the simplest case, that of the second moment of ζ(s); even in this case our\nperspective reveals some new information. Our starting point is the theorem of Ingham [I]\nthat\nZ T                           Z T                    \u0012 \u0013−α−β                !\n                                                       t\n    ζ(s + α)ζ(1 − s + β) dt =        ζ(1 + α + β) +           ζ(1 − α − β) dt + O(T 1/2+ǫ )\n",
+          "sha256": "d5e1b930e6fac6c9bc658e721af52b060d6d1039f38550b0e8517a3641099e58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 65,
+            "line_start": 21,
+            "mathematical_role": "Frames the failure beyond the eighth moment and the stress test using polynomials substantially longer than T."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 54,
+          "title": "Long-polynomial stress test isolates missing higher-moment terms",
+          "unit_id": "full_openalex_w2076917652_u05",
+          "unit_type": "method-failure-diagnostic",
+          "why_material": "The source contrasts the second moment, where success rests on a particular identity, with the fourth moment, where standard coefficient methods miss key terms; this is the paper's reusable diagnostic principle rather than merely motivation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 21-40 supply the broader moment-problem motivation; the selected span contains the concrete length regime and comparative finding.",
+          "representation_dependency": "Prose is recoverable from the text layer; the threshold T is explicit and has no material formula-image dependency.",
+          "unit_id": "full_openalex_w2076917652_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 134,
+            "line_start": 66,
+            "title": "Coefficient correlations reduce second-moment compatibility to a Fourier identity",
+            "unit_id": "full_openalex_w2076917652_u06",
+            "unit_type": "second-moment-compatibility-identity",
+            "why_material": "The classical mean square and the long-polynomial correlation evaluation are placed side by side, and their agreement is compressed into equation (1), a structural bridge between a floor-sum Fourier expression and the logarithmic moment term."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 65,
+              "line_start": 65,
+              "reason": "Section-separating whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u05",
+          "spontaneous_reading": "The long-Dirichlet-polynomial regime is used as a stress test: it reveals that second-moment success is carried by a specific compatibility identity, while the analogous fourth-moment calculation loses terms. The important object is therefore not merely a longer approximation, but the discrepancy it exposes between coefficient methods and the target moment."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u05",
+          "source_grounded_mathematics": "The source says the usual heuristic extends to the sixth moment and the leading eighth-moment asymptotic but becomes plainly wrong beyond the eighth by producing negative answers. It then proposes Dirichlet polynomials substantially longer than T, without using an approximate functional equation, and reports that standard methods succeed for the second moment through a particular identity but miss key fourth-moment terms.",
+          "conceptual_reading": "Changing the approximation length turns a computational device into a diagnostic intervention. It separates agreement forced by a hidden structural identity from agreement that one might otherwise attribute to the general coefficient method, and locates the fourth moment as the first controlled failure case in this comparison.",
+          "representation_or_bridge": "The bridge under test is between moment integrals of zeta and mean squares of long Dirichlet polynomials analyzed through coefficient correlations. Comparing the two representations can expose terms that the coefficient-side calculation does not encode.",
+          "boundary_or_failure": "This span does not state the identity, identify the missing fourth-moment terms, or supply the later repair. Negativity beyond the eighth diagnoses failure of the heuristic, not a negative zeta moment or a proof about higher moments.",
+          "uncertainty": "The conclusions are programmatic claims in the introduction. Their precise hypotheses and error ranges are not present here, though the prose and the threshold of length substantially larger than T are textually clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly reports heuristic success through the sixth moment and the leading eighth-moment term, negative answers beyond the eighth, and a comparison using Dirichlet polynomials substantially longer than T without the approximate functional equation.",
+          "It explicitly says second-moment success rests on a particular identity while the fourth-moment method misses key terms, and the candidate correctly limits what the span does not identify."
+        ],
+        "inference": [
+          "Reading the length change as a diagnostic stress test and emphasizing the exposed discrepancy are useful, source-compatible conceptual interpretations."
+        ],
+        "unsupported_or_imported": [
+          "The exact span does not identify the standard method as coefficient-correlation analysis or explicitly formulate the comparison as one between zeta-moment integrals and Dirichlet-polynomial mean squares.",
+          "Calling the fourth moment the first controlled failure case overstates a span that only says the authors examine the second and fourth moments; the antecedent of 'This approach' is outside this semantic unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The analysis is mechanism-oriented rather than a mere restatement, but 'diagnostic intervention' should remain tied to the stated length change and comparative failure."
+        ],
+        "context_or_ocr_risk": [
+          "The unit begins mid-sentence and mid-argument, so the exact identity of the earlier heuristic cannot be recovered from this span; the prose itself has no material formula-OCR risk."
+        ],
+        "missed_mechanism": [
+          "The candidate does not clearly separate the span's unnamed 'standard methods' from the more specific coefficient-correlation machinery supplied only later."
+        ],
+        "revision_instructions": [
+          "Retain the long-polynomial stress-test reading and the explicit second-versus-fourth comparison, but replace coefficient-correlation and mean-square specificity with the source's generic 'standard methods,' remove 'first controlled failure case,' and note that the antecedent heuristic is outside the unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Builds directly on the transform and smoothing conventions in lines 66-134; lines 174-178 state both the limiting relation and why a direct proof matters.",
+      "line_end": 178,
+      "line_start": 135,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The semantic statement is recoverable, but the exponents and summation bounds in lines 137-169 are formula-sensitive and require scan verification for exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unshifted compatibility relation is generalized to shifts and declared exact, providing the prototype the authors intend to imitate when higher-moment analogues become conjectural.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small shifts lift the second-moment bridge to an exact identity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u07.txt",
+      "unit_bytes": 2177,
+      "unit_id": "full_openalex_w2076917652_u07",
+      "unit_sha256": "5ef1b45279aa16f10998dcc0e45e1f8b4cf47f904a0325d7db902adfd5c190cb",
+      "unit_type": "shifted-transform-identity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u07.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 127,
+          "line_end": 134,
+          "text": "(1)                   2ℜ              ψ̂(v) ∼            (log uy + γ) ψ(u) du\n                           y      y        v        0\n\nas y → 0+ . In the present formulation, this is purely a statement about a relationship\nbetween a function and its Fourier transform for real, compactly supported functions ψ.\n   We note that establishing the compatibility between the result of [GG] and that in [I, A] in\nthe approach taken here relies on proving equation (1). This we do below, as a consequence\nof a more general identity.\n",
+          "sha256": "f02b7cd7cb07b6d11bdb127d568e306e849943e6299ffd12d5b0a474ed0c7f3c"
+        },
+        "after": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "Proof. Write δ = α+β. We can extend the integration in v down to v = 0 since the integrand\nis 0 for 0 < v < y. We will show that\n                        \u0012 δ             \u0013        Z ∞X\n                         y                                           dv\n                Z\n(2)                ψ(t)        −δ\n                            + t ζ(1 − δ) dt = 2ℜ           h−δ ψ̂(v) 1−δ .\n                 R       δ                        0      v\n",
+          "sha256": "8a17f7667bb622ad1bf5ccad9fb3ae4b62764358f50a66725f0255b47a0d2010"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General shifts and direct identity proof",
+            "line_end": 244,
+            "line_start": 135,
+            "mathematical_role": "States the shifted identity and proves it through Perron inversion, Fourier decomposition, the zeta functional equation, and contour residues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 178,
+          "line_start": 135,
+          "title": "Small shifts lift the second-moment bridge to an exact identity",
+          "unit_id": "full_openalex_w2076917652_u07",
+          "unit_type": "shifted-transform-identity",
+          "why_material": "The unshifted compatibility relation is generalized to shifts and declared exact, providing the prototype the authors intend to imitate when higher-moment analogues become conjectural."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Builds directly on the transform and smoothing conventions in lines 66-134; lines 174-178 state both the limiting relation and why a direct proof matters.",
+          "representation_dependency": "The semantic statement is recoverable, but the exponents and summation bounds in lines 137-169 are formula-sensitive and require scan verification for exact transcription.",
+          "unit_id": "full_openalex_w2076917652_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 134,
+            "line_start": 66,
+            "title": "Coefficient correlations reduce second-moment compatibility to a Fourier identity",
+            "unit_id": "full_openalex_w2076917652_u06",
+            "unit_type": "second-moment-compatibility-identity",
+            "why_material": "The classical mean square and the long-polynomial correlation evaluation are placed side by side, and their agreement is compressed into equation (1), a structural bridge between a floor-sum Fourier expression and the logarithmic moment term."
+          },
+          {
+            "line_end": 243,
+            "line_start": 179,
+            "title": "Perron inversion and the functional equation convert the correlation transform into residues",
+            "unit_id": "full_openalex_w2076917652_u08",
+            "unit_type": "functional-equation-transform-proof",
+            "why_material": "The proof supplies a reusable representation change: express a truncated shifted sum by a contour integral, rotate the Fourier paths, recognize the zeta functional-equation factor, and recover the desired terms as residues at zero and minus the shift."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Long-polynomial coefficient correlations reproduce the second moment because Perron/Fourier data can be converted by the zeta functional equation into exactly the two residue terms of the moment formula.",
+            "limit": "The source explicitly says the higher-moment analogues rely on conjectures, so exactness here does not validate the fourth-moment descent.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2076917652_u06",
+              "full_openalex_w2076917652_u07",
+              "full_openalex_w2076917652_u08"
+            ],
+            "title": "The exact second moment as a prototype transform bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u07",
+          "spontaneous_reading": "Introducing small shifts promotes the unshifted asymptotic compatibility into an exact parameterized identity. The shifts expose the two complementary zeta terms separately, making the identity a prototype that can be imitated when higher-moment analogues cease to be unconditional."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u07",
+          "source_grounded_mathematics": "The source compares Ingham's smoothed second-moment formula with the shifted Goldston-Gonek long-polynomial expression. After subtracting the truncated Dirichlet-series contribution, it obtains a relation involving alpha+beta, a shifted h-sum, and the Fourier transform. Although introduced as y tending to zero, the source states that this relation is in fact an identity and that equation (1) is its limit as alpha and beta tend to zero.",
+          "conceptual_reading": "The shift parameters act as a resolving device: instead of seeing only a coalesced logarithmic limit, one sees a family whose distinct singular contributions can later be tracked by residues. Exactness at the second moment supplies a controlled prototype for a method that will become conjectural at higher moments.",
+          "representation_or_bridge": "The bridge matches the shifted moment's pair of zeta contributions with a weighted sum of shifted coefficients in Fourier space. Taking the shifts to zero connects this parameterized identity back to the unshifted floor/Fourier relation.",
+          "boundary_or_failure": "The direct proof is only announced here. The statement depends on ranges and limiting manipulations whose exact formula typography is extraction-sensitive, and the source explicitly warns that corresponding higher-moment identities will follow from conjectures rather than facts.",
+          "uncertainty": "The semantic claims of exactness, limiting recovery, and intended reuse are clear. Exact exponents, bounds, and normalization in the extracted displays require checking against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span compares the shifted Ingham and Goldston-Gonek expressions, derives a relation in alpha+beta, states that it is an identity, identifies equation (1) as its zero-shift limit, and says higher-moment counterparts will depend on conjectures.",
+          "The candidate correctly records that the direct proof is announced rather than contained in this unit and preserves the formula-extraction limitation."
+        ],
+        "inference": [
+          "Treating shifts as a resolving device that separates the two zeta contributions is supported by the parameterized display and its coalescing zero-shift limit."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the separated contributions can later be tracked by residues imports the mechanism of the following proof unit; residues are not mentioned in this span.",
+          "Calling the contributions 'singular' is plausible from the zeta factors but is not established here and needlessly anticipates the contour proof."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the resolving-parameter reading performs a real conceptual operation, but its residue language crosses the unit boundary."
+        ],
+        "context_or_ocr_risk": [
+          "Exact exponents and shifted summation bounds are formula-sensitive; the candidate appropriately warns against literal reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep exactness, zero-shift recovery, and the fact-versus-conjecture boundary, but describe only the separation of the parameterized zeta contributions and remove residue tracking or other proof mechanics not present in this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 245-255 explain why the fourth moment is being revisited without shortening by an approximate functional equation.",
+      "line_end": 285,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence and text-layer risk, including a likely incomplete factor in the extracted definition near lines 281-283; retain the structural six-term content but verify exact factors from the scan before training on the formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The six terms of the shifted fourth-moment expression provide the finite template later classified as zero, one, and two swaps, making the swap decomposition traceable to the source formula.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The shifted fourth moment decomposes into six exchange patterns",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u09.txt",
+      "unit_bytes": 1938,
+      "unit_id": "full_openalex_w2076917652_u09",
+      "unit_sha256": "10a186185aef273c787fef863aea932385abf2f6fdc00f40edcca5bcd4d9643a",
+      "unit_type": "shifted-fourth-moment-swap-template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u09.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "last section. We want to understand how one can approach the fourth moment via the mean\nsquare of a long Dirichlet polynomial approximation to ζ(s)2. This point of view has also\nbeen explored to a certain extent in the work [H-B] of Heath-Brown, which built upon that\nof Ingam and Atkinson [I, A]; see also [CG]. But each of the above used an approximate\nfunctional equation to reduce the necessary length of the approximating polynomial. Here\nwe want to see what happens purely with Dirichlet polynomials. This perspective will turn\nout to be useful in a future discussion of yet higher moments and divisor correlations.\n\n",
+          "sha256": "067e01d2d02d0f904eaa48301abb5059b6bf67c675fa04d1dca8fbbb07a11257"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\n<!-- source-page: 6 -->\n\n6                         BRIAN CONREY AND JONATHAN P. KEATING\n\n    Now                                                  ∞\n                                                         X τα,β (n)\n                               ζ(s + α)ζ(s + β) =\n",
+          "sha256": "953eea5f84c21b0857ea2d377692f2ba1548f50505906f70923ded731726194d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Fourth-moment target and polynomial model",
+            "line_end": 317,
+            "line_start": 245,
+            "mathematical_role": "Records the six-term shifted fourth-moment formula, defines shifted divisor coefficients and their truncation, and asks how the truncated mean square approaches the moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 257,
+          "title": "The shifted fourth moment decomposes into six exchange patterns",
+          "unit_id": "full_openalex_w2076917652_u09",
+          "unit_type": "shifted-fourth-moment-swap-template",
+          "why_material": "The six terms of the shifted fourth-moment expression provide the finite template later classified as zero, one, and two swaps, making the swap decomposition traceable to the source formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 245-255 explain why the fourth moment is being revisited without shortening by an approximate functional equation.",
+          "representation_dependency": "High formula dependence and text-layer risk, including a likely incomplete factor in the extracted definition near lines 281-283; retain the structural six-term content but verify exact factors from the scan before training on the formula.",
+          "unit_id": "full_openalex_w2076917652_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 243,
+            "line_start": 179,
+            "title": "Perron inversion and the functional equation convert the correlation transform into residues",
+            "unit_id": "full_openalex_w2076917652_u08",
+            "unit_type": "functional-equation-transform-proof",
+            "why_material": "The proof supplies a reusable representation change: express a truncated shifted sum by a contour integral, rotate the Fourier paths, recognize the zeta functional-equation factor, and recover the desired terms as residues at zero and minus the shift."
+          },
+          {
+            "line_end": 317,
+            "line_start": 291,
+            "title": "Shifted divisor coefficients turn the fourth moment into a truncation-limit question",
+            "unit_id": "full_openalex_w2076917652_u10",
+            "unit_type": "long-polynomial-moment-model",
+            "why_material": "The source factors the zeta pair into shifted divisor coefficients, defines the finite Dirichlet polynomial and its mean square, and formulates the central question as convergence of that truncated object to the shifted fourth moment."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 256,
+              "line_start": 244,
+              "reason": "Whitespace and fourth-moment historical framing motivate the next construction without adding a distinct mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u09",
+          "spontaneous_reading": "The shifted fourth moment is represented by a finite six-term family rather than one undifferentiated main term. One base term, four single exchanges, and one double exchange form the template whose members can later be activated and compared by swap count."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u09",
+          "source_grounded_mathematics": "For four small shifts, the smoothed fourth-moment formula is written as an integral of a six-term function Z_t plus an error. Its displayed expansion contains one unexchanged Z term, four terms obtained by exchanging one shift from each side and attaching a power of t/(2 pi), and one term with both pairs exchanged and the combined power.",
+          "conceptual_reading": "The six-term expansion organizes analytic contributions by a discrete exchange operation on the shifts. This makes swap count a usable structural coordinate: it records how far a term has moved from the base representation and prepares the later contour analysis without collapsing the individual contributions.",
+          "representation_or_bridge": "The bridge is the swap-structured Z_t recipe, which translates the shifted fourth-moment integral into a finite collection of transformed Euler-product terms with scale powers. Later polynomial-length effects can be attached to these classes.",
+          "boundary_or_failure": "This unit states the recipe but does not derive it or yet justify the zero-, one-, and two-swap interpretation analytically. The source itself remarks that the formula is a theorem whose full proof is not written down there, and the extracted definition of Z appears formula-incomplete.",
+          "uncertainty": "The six-term architecture and exchange pattern are reliable from the display. Exact zeta factors, powers, and shift placements have high extraction risk and require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The displayed shifted fourth-moment expression has six terms: an untransformed Z term, four terms with one shift from each side transformed and a scale power, and a final doubly transformed term with the combined power.",
+          "The source calls the formula a theorem while noting that a full proof is not written down there, and the candidate correctly flags the visibly incomplete extracted definition of Z."
+        ],
+        "inference": [
+          "Organizing the displayed terms by how many cross-side shift exchanges they exhibit is a reasonable structural reading of the six-term formula."
+        ],
+        "unsupported_or_imported": [
+          "The span itself does not introduce the zero-, one-, and two-swap terminology or establish swap count as an analytic coordinate; that classification occurs later.",
+          "Claims that the classes prepare later contour analysis or that polynomial-length effects can be attached to them import downstream use rather than interpreting evidence inside this unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The finite exchange-pattern reading is substantive, but 'usable structural coordinate' becomes anticipatory without the later derivation."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted Z numerator appears incomplete and all exact factors, powers, and shift placements remain scan-dependent; only the six-term architecture is safe here."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Present the one-plus-four-plus-one exchange architecture as an inspection of the displayed formula, keep the theorem/proof and OCR qualifications, and remove claims about later swap activation, contour analysis, or polynomial-length effects."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The preceding six-term moment formula is the target; this span contains all definitions needed for the polynomial model itself.",
+      "line_end": 317,
+      "line_start": 291,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions and the limiting question depend on displayed series whose text extraction is mostly legible; exact powers in lines 291-313 should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source factors the zeta pair into shifted divisor coefficients, defines the finite Dirichlet polynomial and its mean square, and formulates the central question as convergence of that truncated object to the shifted fourth moment.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted divisor coefficients turn the fourth moment into a truncation-limit question",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u10.txt",
+      "unit_bytes": 1563,
+      "unit_id": "full_openalex_w2076917652_u10",
+      "unit_sha256": "2422e9a0385d9d03234a9656d57110e509c173425344035148b11d7d48ddbdee",
+      "unit_type": "long-polynomial-moment-model",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u10.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 283,
+          "line_end": 290,
+          "text": "                                            ζ(2 + α + β + γ + δ)\n(Perhaps “recall” is not the correct word here since the above is certainly a theorem but its\nproof is not written down in full details anywhere.)\n\n<!-- source-page: 6 -->\n\n6                         BRIAN CONREY AND JONATHAN P. KEATING\n\n",
+          "sha256": "1e00f603a4b81ac1f7ff57b09dd9caedf91820ec7e14e3db0b0d99b86da8ddf7"
+        },
+        "after": {
+          "line_start": 318,
+          "line_end": 325,
+          "text": "                          5. Descending through the recipe\n  If we Rcheat, we\n                 \u0001 can work backwards in a way and deduce the behavior of I(T ; X) from\n          ∞\nthat of 0 ψ Tt ζ(s + α)ζ(s + β)ζ(1 − s + γ)ζ(1 − s + δ) dt. The starting point is that by\nPerron’s formula\n                                         1                      dz\n                                           Z\n",
+          "sha256": "5961592c34d419829262b5c79df851db170b4828eb31c001a28afa8756b6ba7f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Fourth-moment target and polynomial model",
+            "line_end": 317,
+            "line_start": 245,
+            "mathematical_role": "Records the six-term shifted fourth-moment formula, defines shifted divisor coefficients and their truncation, and asks how the truncated mean square approaches the moment."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 317,
+          "line_start": 291,
+          "title": "Shifted divisor coefficients turn the fourth moment into a truncation-limit question",
+          "unit_id": "full_openalex_w2076917652_u10",
+          "unit_type": "long-polynomial-moment-model",
+          "why_material": "The source factors the zeta pair into shifted divisor coefficients, defines the finite Dirichlet polynomial and its mean square, and formulates the central question as convergence of that truncated object to the shifted fourth moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The preceding six-term moment formula is the target; this span contains all definitions needed for the polynomial model itself.",
+          "representation_dependency": "Definitions and the limiting question depend on displayed series whose text extraction is mostly legible; exact powers in lines 291-313 should be scan-verified.",
+          "unit_id": "full_openalex_w2076917652_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 257,
+            "title": "The shifted fourth moment decomposes into six exchange patterns",
+            "unit_id": "full_openalex_w2076917652_u09",
+            "unit_type": "shifted-fourth-moment-swap-template",
+            "why_material": "The six terms of the shifted fourth-moment expression provide the finite template later classified as zero, one, and two swaps, making the swap decomposition traceable to the source formula."
+          },
+          {
+            "line_end": 372,
+            "line_start": 318,
+            "title": "A double Perron transform descends the moment recipe to one contour variable",
+            "unit_id": "full_openalex_w2076917652_u11",
+            "unit_type": "conditional-recipe-descent",
+            "why_material": "The authors work backward from the shifted fourth-moment recipe, use double Perron inversion, exploit a symmetry to combine the contour variables, and reduce the truncated mean square to a single contour integral."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u10",
+          "spontaneous_reading": "The product of two shifted zeta functions is moved into the coefficient domain through a shifted divisor convolution, then truncated at length X. This creates a concrete interpolating object whose mean square can be asked to converge to the shifted fourth moment as the cutoff grows."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u10",
+          "source_grounded_mathematics": "The shifted divisor coefficient tau_{alpha,beta}(n) is defined by summing h^{-alpha}k^{-beta} over factorizations hk=n. These coefficients form a Dirichlet series D_{alpha,beta} and its truncation D_{alpha,beta}(s;X). The source defines I(T;X) as a smoothed integral of D_{alpha,beta}(s;X) against D_{gamma,delta}(1-s;X) and asks how it approaches the corresponding shifted zeta fourth-moment integral as X tends to infinity.",
+          "conceptual_reading": "Factorization converts a global analytic product into local coefficient data, while truncation introduces a controllable scale. The family I(T;X) is therefore an intermediate object that can reveal which correlation structures enter at successive lengths rather than merely approximating the endpoint.",
+          "representation_or_bridge": "The shifted divisor convolution is the bridge from products of zeta functions to arithmetic coefficients; the truncated Dirichlet polynomial and its smoothed mean square bridge those coefficients back to the analytic fourth moment. X parametrizes how much coefficient information is retained.",
+          "boundary_or_failure": "The span poses the convergence question but does not answer it, specify a convergence mode independently of the later calculation, or show which off-diagonal correlations are sufficient. Exact powers in the extracted Dirichlet series and integral display should be verified against the scan.",
+          "uncertainty": "The definitions and the role of the cutoff are clear, but a control glyph and compressed superscripts make literal formula transcription unsafe. The initial product-series exponent is especially vulnerable to extraction error."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the shifted divisor convolution over factorizations hk=n, the associated Dirichlet series and length-X truncation, the smoothed mean square I(T;X), and the question of approach to the shifted fourth moment as X tends to infinity.",
+          "The candidate correctly treats factorization and truncation as the two explicit representation changes and does not claim that the convergence question is answered here."
+        ],
+        "inference": [
+          "Calling I(T;X) an intermediate or interpolating object and reading X as retained coefficient information are direct conceptual consequences of the truncation construction."
+        ],
+        "unsupported_or_imported": [
+          "The claim that successive lengths reveal which correlation structures enter is not supported in this span; it anticipates the later coefficient-correlation and swap analysis."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing the forward-looking correlation claim: the coefficient-domain bridge and controllable cutoff are concrete operations."
+        ],
+        "context_or_ocr_risk": [
+          "The first product-series display has a suspicious extracted exponent inconsistent with the following definition, and compressed superscripts remain unsafe; the candidate appropriately avoids relying on their literal form."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the divisor-convolution bridge, truncation scale, and posed endpoint question, but remove the assertion about correlation structures appearing at successive lengths; state that the span does not yet characterize what changing X reveals."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit explicitly records that the needed uniform shifted fourth-moment formula is believed rather than proved, preventing the conditional step from being mistaken for established evidence.",
+      "line_end": 372,
+      "line_start": 318,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The representation change is clear in prose, but the double-contour formulas and error term are formula-sensitive and need scan verification for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors work backward from the shifted fourth-moment recipe, use double Perron inversion, exploit a symmetry to combine the contour variables, and reduce the truncated mean square to a single contour integral.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A double Perron transform descends the moment recipe to one contour variable",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u11.txt",
+      "unit_bytes": 2937,
+      "unit_id": "full_openalex_w2076917652_u11",
+      "unit_sha256": "83693415169d42e12271a74b522670f269d9fe9ba8743a884f3a1e62e4b239ef",
+      "unit_type": "conditional-recipe-descent",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u11.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 310,
+          "line_end": 317,
+          "text": "                                           Z ∞ \u0012 \u0013\n                                                t\n             I(T ; X) = Iα,β,γ,δ (T ; X) =    ψ    Dα,β (s, X)Dγ,δ (1 − s, X) dt.\n                                            0   T\n                                                  R∞\nOur basic question is: How does I(T ; X) approach 0 ψ Tt ζ(s+α)ζ(s+β)ζ(1−s+γ)ζ(1−\n                                                            \u0001\ns + δ) dt as X → ∞?\n",
+          "sha256": "81208d0b1c269ec5fb08ffa87fb6b542d24508d60102c5339165877d65feacef"
+        },
+        "after": {
+          "line_start": 373,
+          "line_end": 380,
+          "text": "\n\n\n\n                                   6. How many swaps to use?\n   In the formula (6) we sort the terms according to the number U of “swaps”; this is the\nnumber of pairs of variables that are exchanged in the arguments of Zt . Specifically, there\nare 6 terms on the right side of (6), the first has 0-swaps, the next four each have one swap,\n",
+          "sha256": "a24e93ef36d928de97b7a4acf310dba7dee070f99eb0633ee115be2a4584c636"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Descending through the recipe",
+            "line_end": 376,
+            "line_start": 318,
+            "mathematical_role": "Uses a double Perron representation and a symmetry reduction to express the truncated mean square as a one-variable contour integral of the shifted-moment recipe, conditional on shift uniformity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 372,
+          "line_start": 318,
+          "title": "A double Perron transform descends the moment recipe to one contour variable",
+          "unit_id": "full_openalex_w2076917652_u11",
+          "unit_type": "conditional-recipe-descent",
+          "why_material": "The authors work backward from the shifted fourth-moment recipe, use double Perron inversion, exploit a symmetry to combine the contour variables, and reduce the truncated mean square to a single contour integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit explicitly records that the needed uniform shifted fourth-moment formula is believed rather than proved, preventing the conditional step from being mistaken for established evidence.",
+          "representation_dependency": "The representation change is clear in prose, but the double-contour formulas and error term are formula-sensitive and need scan verification for exact reuse.",
+          "unit_id": "full_openalex_w2076917652_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 317,
+            "line_start": 291,
+            "title": "Shifted divisor coefficients turn the fourth moment into a truncation-limit question",
+            "unit_id": "full_openalex_w2076917652_u10",
+            "unit_type": "long-polynomial-moment-model",
+            "why_material": "The source factors the zeta pair into shifted divisor coefficients, defines the finite Dirichlet polynomial and its mean square, and formulates the central question as convergence of that truncated object to the shifted fourth moment."
+          },
+          {
+            "line_end": 394,
+            "line_start": 377,
+            "title": "Swap count predicts when a residue family becomes active",
+            "unit_id": "full_openalex_w2076917652_u12",
+            "unit_type": "swap-length-threshold",
+            "why_material": "The number of exchanged variable pairs determines a factor with T to the swap count, hence whether the contour closes right to give zero or left to collect residues as the polynomial length crosses the corresponding scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the Perron reduction, each U-swap family carries a scale factor that determines whether its contour contributes zero or residues; successively longer polynomials activate additional swap families whose cutoff terms cancel in the complete sum.",
+            "limit": "The descent assumes a uniform shifted fourth-moment formula not proved in the source, and exact threshold constants are formula-extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2076917652_u11",
+              "full_openalex_w2076917652_u12",
+              "full_openalex_w2076917652_u02",
+              "full_openalex_w2076917652_u13"
+            ],
+            "title": "Swap count as a polynomial-length phase rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 376,
+              "line_start": 373,
+              "reason": "Whitespace between derivation and swap classification."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u11",
+          "spontaneous_reading": "A double Perron representation of the two truncations is compressed to a single contour variable by a symmetry of the shifted-moment recipe. Moving the remaining auxiliary contour and taking its residue turns the finite-polynomial mean square into a one-contour transform of the six-term fourth-moment model."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u11",
+          "source_grounded_mathematics": "Perron's formula represents each truncated D factor by a contour integral, giving a double integral in z and w. The source then assumes a version of the shifted fourth-moment formula uniform for small real parts but potentially large imaginary parts of the shifts. Using D_{alpha,beta}(s+z)=D_{alpha+z,beta+z}(s) and a symmetry that makes Z_t depend on z and w through z+w, it changes variables to one combined variable. Moving the w-contour left and taking the pole at w=0 leaves a single s-contour for I(T;X), with the stated error term.",
+          "conceptual_reading": "Symmetry identifies a redundant direction in the two-cutoff contour space. Quotienting by that redundancy through s=z+w reduces the problem to one scale variable, after which swap families can be studied through ordinary pole activation rather than a two-dimensional residue geometry.",
+          "representation_or_bridge": "Double Perron inversion bridges truncation to complex shifts; the shifted fourth-moment recipe bridges the t-integral to Z_t; its symmetry merges the two Perron variables; and the w=0 residue produces the one-contour representation used for swap analysis.",
+          "boundary_or_failure": "The authors explicitly call the backward step a cheat: the required uniform shifted fourth-moment formula for large imaginary shifts is believed but not proved here. Thus the descent is conditional, and neither contour movement nor the inherited error term should be treated as unconditional fourth-moment evidence.",
+          "uncertainty": "The representation sequence is prose-supported. Exact double-contour factors, contour locations, and error normalization are formula-sensitive in the text extraction and need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The source applies Perron inversion to both truncations, obtains a double z,w contour, explicitly assumes an unproved uniform shifted fourth-moment formula, uses the shift identity and a symmetry making the recipe depend on z+w, changes variables, and takes the w=0 residue to leave one contour.",
+          "The candidate accurately preserves the authors' 'cheat' and the conditional status of the descent."
+        ],
+        "inference": [
+          "Reading the z+w symmetry as eliminating a redundant contour direction is a useful and tightly grounded explanation of the one-variable reduction."
+        ],
+        "unsupported_or_imported": [
+          "The statement that the reduction lets swap families be studied through ordinary pole activation rather than two-dimensional residue geometry anticipates the next section and is not established in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the redundancy/one-variable reading is specific to the displayed symmetry, though the forward reference should be removed."
+        ],
+        "context_or_ocr_risk": [
+          "Double-contour factors, contour locations, and the inherited error are formula-sensitive; the prose nevertheless supports the transformation sequence."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the conditional double-to-single Perron reduction and redundancy interpretation, but end at the one-contour representation; remove the claim about later swap-family pole activation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Requires the one-contour representation in lines 318-372 for derivation, but the classification and decision rule are contained here.",
+      "line_end": 394,
+      "line_start": 377,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted threshold typography is imperfect; the prose supports the qualitative X versus (tT/2pi)^U rule, while exact inequalities should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The number of exchanged variable pairs determines a factor with T to the swap count, hence whether the contour closes right to give zero or left to collect residues as the polynomial length crosses the corresponding scale.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Swap count predicts when a residue family becomes active",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u12.txt",
+      "unit_bytes": 1131,
+      "unit_id": "full_openalex_w2076917652_u12",
+      "unit_sha256": "3ed145acc87662ca57c360fd0b8a9f701797ddec119bc8ef29b41cf639d1fe25",
+      "unit_type": "swap-length-threshold",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u12.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 369,
+          "line_end": 376,
+          "text": "                    1          Xs\n                         Z\n        I(T ; X) =                T             ψ(t)ZtT (α + s, β + s; γ, δ) dt ds + O(T 2/3+ǫ ).\n                   2πi     ℜs=4 s         0\n\n\n\n\n",
+          "sha256": "592f8255c2c10bae7b6f5eb9f1c67b001185c5ee69997c6c170b2404bd0f87ef"
+        },
+        "after": {
+          "line_start": 395,
+          "line_end": 402,
+          "text": "\n\n\n\n                                  7. Explicit formula: 0-swaps\n  We refer to the terms with 0-swaps as the “diagonal” terms. These are just\n\n                                     1         Xs\n",
+          "sha256": "9934c1e62e8a2cac85b749c8a252375b9a56ec84b06634067c10d47aae5382a3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Swap-count rule",
+            "line_end": 398,
+            "line_start": 377,
+            "mathematical_role": "Classifies the six recipe terms by zero, one, or two swaps and relates swap count to the direction of contour motion and length thresholds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 394,
+          "line_start": 377,
+          "title": "Swap count predicts when a residue family becomes active",
+          "unit_id": "full_openalex_w2076917652_u12",
+          "unit_type": "swap-length-threshold",
+          "why_material": "The number of exchanged variable pairs determines a factor with T to the swap count, hence whether the contour closes right to give zero or left to collect residues as the polynomial length crosses the corresponding scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Requires the one-contour representation in lines 318-372 for derivation, but the classification and decision rule are contained here.",
+          "representation_dependency": "The extracted threshold typography is imperfect; the prose supports the qualitative X versus (tT/2pi)^U rule, while exact inequalities should be checked against the scan.",
+          "unit_id": "full_openalex_w2076917652_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 372,
+            "line_start": 318,
+            "title": "A double Perron transform descends the moment recipe to one contour variable",
+            "unit_id": "full_openalex_w2076917652_u11",
+            "unit_type": "conditional-recipe-descent",
+            "why_material": "The authors work backward from the shifted fourth-moment recipe, use double Perron inversion, exploit a symmetry to combine the contour variables, and reduce the truncated mean square to a single contour integral."
+          },
+          {
+            "line_end": 467,
+            "line_start": 399,
+            "title": "Zero- and one-swap residues expose cutoff-dependent cancellation",
+            "unit_id": "full_openalex_w2076917652_u02",
+            "unit_type": "descending swap decomposition",
+            "why_material": "The carried unit explicitly evaluates the zero-swap diagonal and a representative one-swap term, showing that a term independent of the integration variable cancels across swap classes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the Perron reduction, each U-swap family carries a scale factor that determines whether its contour contributes zero or residues; successively longer polynomials activate additional swap families whose cutoff terms cancel in the complete sum.",
+            "limit": "The descent assumes a uniform shifted fourth-moment formula not proved in the source, and exact threshold constants are formula-extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2076917652_u11",
+              "full_openalex_w2076917652_u12",
+              "full_openalex_w2076917652_u02",
+              "full_openalex_w2076917652_u13"
+            ],
+            "title": "Swap count as a polynomial-length phase rule"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 376,
+              "line_start": 373,
+              "reason": "Whitespace between derivation and swap classification."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 398,
+              "line_start": 395,
+              "reason": "Whitespace before the explicit residue cases."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u12",
+          "spontaneous_reading": "Swap count becomes a phase rule for contour contributions. Pairing the U-swap scale factor with X^s decides whether the contour can be closed to the right with zero contribution or must be moved left across poles, so polynomial length activates residue families in a predictable order."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u12",
+          "source_grounded_mathematics": "The six terms are classified as one zero-swap term, four one-swap terms, and one two-swap term. A U-swap term carries a scale factor involving (tT/(2 pi))^{-Us}; together with X^s this compares X with the Uth power of the tT/(2 pi) scale. Below the relevant scale the s-contour is moved right and contributes zero; above it the contour is moved left and the integral is evaluated by residues.",
+          "conceptual_reading": "A combinatorial statistic on the shift pattern controls analytic visibility. Swap count predicts not just the form of a term but the length scale at which its poles become observable, turning longer polynomials into a filtration of contribution families.",
+          "representation_or_bridge": "The bridge maps exchange complexity U to an analytic scale exponent and then to a contour-closing decision. Residues mediate between the discrete swap class and its actual contribution to the truncated mean square.",
+          "boundary_or_failure": "This is a qualitative decision rule derived from the preceding one-contour representation; it does not list the poles or establish the conditional descent anew. Because t ranges over the support of the smoothing weight, the threshold is a scale relation rather than a context-free sharp constant.",
+          "uncertainty": "The zero/four/one classification and right-versus-left contour rule are clear. The threshold typography is imperfect in extraction, so exact inequalities and constants should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly classifies the six terms as one zero-swap, four one-swap, and one two-swap term, associates a U-swap factor with the scale exponent, and gives the right-contour/zero versus left-contour/residue rule according to X.",
+          "The candidate correctly treats the threshold qualitatively and avoids asserting an extraction-sensitive universal constant."
+        ],
+        "inference": [
+          "Interpreting swap count as a length-scale filtration of contribution families is a concrete synthesis of the stated exponent and contour decision rule."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Low: the combinatorial-to-analytic map is a non-paraphrase mechanism supported by the unit."
+        ],
+        "context_or_ocr_risk": [
+          "The exact threshold typography is imperfect, and the rule depends on the one-contour formula from the preceding unit."
+        ],
+        "missed_mechanism": [
+          "The candidate does not carry forward the material proof burden that the preceding one-contour representation is conditional on an unproved uniform shifted fourth-moment formula."
+        ],
+        "revision_instructions": [
+          "Add that the activation rule is conditional on the preceding uniform-shift descent; retain the qualitative X-versus-scale contour rule and continue to avoid exact constants without scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the swap classification in lines 377-394 and follows the zero/one-swap calculation in lines 399-467; the source itself marks the pointwise-approximation explanation.",
+      "line_end": 521,
+      "line_start": 472,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact residue formulas and threshold constants are vulnerable to text-layer extraction, including a stray control glyph near line 513; the five-term structure and cancellation are prose-supported, but formula reuse requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The two-swap contour has four shifted poles in addition to zero; once this family is active, its residues cancel the remaining one-swap cutoff term and the sum of all swap classes recovers the shifted fourth-moment formula without X-dependence.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-swap residues complete the cancellation of polynomial-length dependence",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u13.txt",
+      "unit_bytes": 3070,
+      "unit_id": "full_openalex_w2076917652_u13",
+      "unit_sha256": "fdc59fa86d0a9eb2f9167f99c10bea204b7f2266f986cc2218d50dd7262fee7a",
+      "unit_type": "two-swap-completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u13.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 464,
+          "line_end": 471,
+          "text": "                  β + δ 2π                          ζ(2 − α + β − γ + δ)\nNote that the term in the integrand which is independent of t cancels with a term from the\n0-swap diagonal piece above.\n\n<!-- source-page: 9 -->\n\nMOMENTS OF ZETA AND CORRELATIONS OF DIVISOR-SUMS: I                         9\n\n",
+          "sha256": "5bb001c37d822ab4b3183bd56e9e268f15464139e20a1583d82fb8dc4fffa74e"
+        },
+        "after": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "\n\n            10. Ascending through convolution sums: the diagonal\n   Next we turn to what can be said about the mean-square I(T ; X) but now from the point\nof view of coefficient correlations. We call this the “ascending” perspective. We consider\n             Z ∞                                            X τα,β (m)τγ,δ (n)\n  ψ\nI (T, X) =        Dα,β (s, X)Dγ,δ (1 − s, X)ψ(t/T ) dt = T           √         ψ̂(T log(m/n).\n",
+          "sha256": "687459de4c85e0fe1c6f78a2d3dc142febbfa7bd1e8dc2f11be936bb4923d949"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit two-swap terms",
+            "line_end": 523,
+            "line_start": 472,
+            "mathematical_role": "Computes the two-swap residue family and shows how summing all swap classes removes X-dependence once the polynomial is sufficiently long."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 521,
+          "line_start": 472,
+          "title": "Two-swap residues complete the cancellation of polynomial-length dependence",
+          "unit_id": "full_openalex_w2076917652_u13",
+          "unit_type": "two-swap-completion",
+          "why_material": "The two-swap contour has four shifted poles in addition to zero; once this family is active, its residues cancel the remaining one-swap cutoff term and the sum of all swap classes recovers the shifted fourth-moment formula without X-dependence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the swap classification in lines 377-394 and follows the zero/one-swap calculation in lines 399-467; the source itself marks the pointwise-approximation explanation.",
+          "representation_dependency": "Exact residue formulas and threshold constants are vulnerable to text-layer extraction, including a stray control glyph near line 513; the five-term structure and cancellation are prose-supported, but formula reuse requires scan verification.",
+          "unit_id": "full_openalex_w2076917652_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 467,
+            "line_start": 399,
+            "title": "Zero- and one-swap residues expose cutoff-dependent cancellation",
+            "unit_id": "full_openalex_w2076917652_u02",
+            "unit_type": "descending swap decomposition",
+            "why_material": "The carried unit explicitly evaluates the zero-swap diagonal and a representative one-swap term, showing that a term independent of the integration variable cancels across swap classes."
+          },
+          {
+            "line_end": 558,
+            "line_start": 524,
+            "title": "The coefficient diagonal is exactly the zero-swap contribution",
+            "unit_id": "full_openalex_w2076917652_u03",
+            "unit_type": "ascending diagonal recovery",
+            "why_material": "The carried unit changes viewpoint from recipe descent to coefficient ascent, then uses Perron's formula and the shifted-divisor Dirichlet series to identify the diagonal with the previously computed zero-swap family."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After the Perron reduction, each U-swap family carries a scale factor that determines whether its contour contributes zero or residues; successively longer polynomials activate additional swap families whose cutoff terms cancel in the complete sum.",
+            "limit": "The descent assumes a uniform shifted fourth-moment formula not proved in the source, and exact threshold constants are formula-extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2076917652_u11",
+              "full_openalex_w2076917652_u12",
+              "full_openalex_w2076917652_u02",
+              "full_openalex_w2076917652_u13"
+            ],
+            "title": "Swap count as a polynomial-length phase rule"
+          },
+          {
+            "claim": "The source identifies zero swaps with the coefficient diagonal and one swaps with Type I shifted-divisor correlations, thereby predicting that the missing two-swap terms require a more coupled correlation family.",
+            "limit": "Only the zero- and one-swap correspondences are carried through; the proposed two-swap correlation constraints are a next step, not a derived match.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2076917652_u02",
+              "full_openalex_w2076917652_u13",
+              "full_openalex_w2076917652_u03",
+              "full_openalex_w2076917652_u04",
+              "full_openalex_w2076917652_u01"
+            ],
+            "title": "Descending swaps and ascending correlations form a partial dictionary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 523,
+              "line_start": 522,
+              "reason": "Whitespace before the ascending viewpoint."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2076917652_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2076917652_u13",
+          "spontaneous_reading": "The two-swap family supplies the final residue layer needed for global consistency. Its four shifted poles plus the cutoff pole generate five terms; one cancels the outstanding one-swap artifact, and summing all swap classes removes every dependence on X and restores the fourth-moment recipe."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2076917652_u13",
+          "source_grounded_mathematics": "The two-swap contour integral is zero when the length condition permits moving the contour right. In the longer regime, the displayed Z factor has poles at s=alpha+gamma, alpha+delta, beta+gamma, and beta+delta; together with s=0 these give five residues. The source notes that the last displayed residue is the negative of the last one-swap term. Once the polynomial is sufficiently long, adding zero-, one-, and two-swap contributions cancels all X-dependence and recovers formula (5), consistent with pointwise approximation by the long Dirichlet polynomial.",
+          "conceptual_reading": "Cutoff-dependent terms are not errors to remove within each swap class; they are interface artifacts designed to cancel across the complete stratification. The two-swap layer is therefore required for closure of the representation, showing why a partial coefficient analysis can look plausible yet omit essential terms.",
+          "representation_or_bridge": "Contour poles turn the two-swap Euler-product term into a finite residue family. Cross-class cancellation then bridges the X-dependent truncated-polynomial representation to the X-independent shifted fourth-moment formula.",
+          "boundary_or_failure": "The computation inherits the conditional recipe descent and does not derive the two-swap terms from coefficient correlations. The printed threshold constants and several residue denominators are extraction-sensitive, so the qualitative activation and cancellation are safer than the literal five-term transcription.",
+          "uncertainty": "The pole set, five-residue structure, cancellation claim, and disappearance of X are explicit. Exact inequalities, constants, and individual factors need scan verification because the source text contains a stray control glyph and formula-level extraction risk."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2076917652_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The span presents a two-swap contour, says that the long regime yields four shifted-factor poles plus the s=0 pole and hence five residues, identifies cancellation with the last one-swap term, and states that summing all swap classes removes X-dependence and recovers formula (5).",
+          "The candidate correctly says the calculation inherits the conditional descent and does not derive the two-swap family from coefficient correlations."
+        ],
+        "inference": [
+          "Interpreting cutoff-dependent pieces as cross-class cancellation artifacts and the two-swap layer as closure of the full stratification is well supported by the stated cancellation and recovery."
+        ],
+        "unsupported_or_imported": [
+          "The candidate repeats the prose's exact positive pole locations, but the displayed factors zeta(1-alpha-gamma-s), and analogues, indicate the opposite sign; the extracted residue display also contains denominator inconsistencies. Exact pole signs are therefore not reliable evidence here.",
+          "Calling the pole set itself high-confidence conflicts with the candidate's otherwise appropriate formula-OCR caveat."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the closure-by-cancellation reading is specific and substantive."
+        ],
+        "context_or_ocr_risk": [
+          "A control glyph, inconsistent pole signs, at least one suspect residue denominator, and conflicting threshold typography make literal formula reuse unsafe, though the five-residue structure and cancellation prose remain recoverable."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish the reliable count and pairing pattern of shifted poles from their extraction-sensitive signed locations."
+        ],
+        "revision_instructions": [
+          "Preserve the five-residue, cross-class cancellation, disappearance-of-X, and inherited-conditionality claims, but replace exact signed pole locations with 'four pair-shift poles' and require scan verification before stating their signs or individual residue factors."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c19842cb2e169ed4a9220649f0d2c72a1ec2301b9287c88d79f13414dfd9285a"
+}

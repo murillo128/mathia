@@ -1,0 +1,1505 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1965895545_9bb4a2d3_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1965895545",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the theorem statements in the carried overview; this span supplies the missing conceptual bridge rather than restating the bounds.",
+      "line_end": 190,
+      "line_start": 130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The derivative display at lines 179-184 is garbled, but lines 157-190 state the two kernels and derivative analogy sufficiently to recover the claim.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why a difference bound need not be the pointwise limit, motivates short S1 increments, introduces direct odd approximation, and identifies f as minus the derivative of f1 in parallel with S being the derivative of S1 almost everywhere.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why the indirect and direct extremal routes agree",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u05.txt",
+      "unit_bytes": 4268,
+      "unit_id": "full_openalex_w1965895545_u05",
+      "unit_sha256": "0d543ec94a5871a470093d8d53f2058ec7ca1da8ff06a4ec7e290ebd20ea2c02",
+      "unit_type": "method comparison and derivative bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u05.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 122,
+          "line_end": 129,
+          "text": "                          1 log t          log t log log log t\n                 |S(t)| ≤             +O                         .\n                          4 log log t         (log log t)2\n\n<!-- source-page: 3 -->\n\nBOUNDING S(t) AND S1 (t)                                   3\n\n",
+          "sha256": "4f563df10e58dbcf2abea7e2d911f651ae6a8787992689a3dc1cc336f18c681d"
+        },
+        "after": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "   Although the inequality in Theorem 2 appears to be the best known bound for S(t)\nassuming the Riemann hypothesis, the true size of S(t) is perhaps much smaller. For\ninstance,\n   √       a heuristic argument of Farmer, Gonek and Hughes [9] suggests that S(t) =\nO( log t log log t). This result seems unattainable using the present method without\na significant breakthrough in estimating certain prime number sums that arise when\napplying the Guinand-Weil explicit formula. In the present article, these sums are\nestimated trivially.\n",
+          "sha256": "99d7a270755e30de5583b13193a7fba0b5147b125ef5f0ec6cb8df3cd9efcb4b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 198,
+            "line_start": 33,
+            "mathematical_role": "Defines S and S1, states the two theorems, compares indirect and direct extremal routes, relates their test functions by differentiation, and identifies the prime-sum bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 190,
+          "line_start": 130,
+          "title": "Why the indirect and direct extremal routes agree",
+          "unit_id": "full_openalex_w1965895545_u05",
+          "unit_type": "method comparison and derivative bridge",
+          "why_material": "Explains why a difference bound need not be the pointwise limit, motivates short S1 increments, introduces direct odd approximation, and identifies f as minus the derivative of f1 in parallel with S being the derivative of S1 almost everywhere."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the theorem statements in the carried overview; this span supplies the missing conceptual bridge rather than restating the bounds.",
+          "representation_dependency": "The derivative display at lines 179-184 is garbled, but lines 157-190 state the two kernels and derivative analogy sufficiently to recover the claim.",
+          "unit_id": "full_openalex_w1965895545_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 879,
+            "line_start": 766,
+            "title": "Direct odd-extremal proof for S(t)",
+            "unit_id": "full_openalex_w1965895545_u04",
+            "unit_type": "extremal-function proof of theorem 2",
+            "why_material": "Presents the direct route: one-sided bandlimited approximants for the odd kernel bound the zero sum, whose explicit-formula image separates an L1 main term from a truncated prime-power contribution."
+          },
+          {
+            "line_end": 198,
+            "line_start": 191,
+            "title": "Prime-number sums as the present-method bottleneck",
+            "unit_id": "full_openalex_w1965895545_u06",
+            "unit_type": "method obstruction",
+            "why_material": "Separates the proved RH-conditional bound from the conjecturally smaller scale and attributes the limitation to trivial estimation of prime sums generated by the explicit formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The passage from S1 to S is mirrored by passing from the even kernel f1 to its negative derivative f, explaining why indirect averaging and direct odd approximation encode closely related information.",
+            "limit": "The source gives an analogy and matching result, not a general theorem that differentiation preserves extremal optimality.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u02",
+              "full_openalex_w1965895545_u05",
+              "full_openalex_w1965895545_u08"
+            ],
+            "title": "Differentiation exchanges even and odd zero-statistic kernels"
+          },
+          {
+            "claim": "The S1-increment route and the odd-extremal route produce the same leading S bound because one smooths in the height variable while the other bandlimits the corresponding differentiated zero kernel.",
+            "limit": "Equality of the achieved constant does not prove either method is globally optimal or that their errors coincide term by term.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u05",
+              "full_openalex_w1965895545_u12",
+              "full_openalex_w1965895545_u13",
+              "full_openalex_w1965895545_u04"
+            ],
+            "title": "Local averaging and direct extremals reach the same pointwise constant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 129,
+              "line_start": 124,
+              "reason": "Continuation of the displayed theorem error and page transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u05",
+          "spontaneous_reading": "The useful bridge is differentiation: the even kernel for S1 differentiates to the odd kernel for S, paralleling the almost-everywhere relation between S1 and S and explaining why local averaging and direct extremals reach the same leading bound."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u05",
+          "source_grounded_mathematics": "The span contrasts a difference estimate for S with a pointwise bound, derives S through short increments of S1, and identifies the direct odd kernel f as minus the derivative of the even kernel f1.",
+          "conceptual_reading": "A rough quantity can be approached either by smoothing it into an antiderivative and recovering local information or by approximating its differentiated kernel directly; the two representations expose the same structural input in different forms.",
+          "representation_or_bridge": "The bridge objects are the short differences S1(t+h)-S1(t), the even kernel f1, its negative derivative f, and one-sided exponential-type approximants coupled to the explicit formula.",
+          "boundary_or_failure": "The matching leading result does not show that differentiation preserves extremal optimality, that errors agree termwise, or that the difference bound alone forces the pointwise bound without the stated averaging argument.",
+          "uncertainty": "The derivative display is garbled in extraction, but the prose explicitly states the kernel relation and the almost-everywhere derivative analogy."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span contrasts a difference estimate with a pointwise estimate, announces the short-S1-increment route, and presents the direct odd-extremal route.",
+          "The prose explicitly states f=-f1' and S=S1' almost everywhere and says the two routes give Theorem 2."
+        ],
+        "inference": [
+          "Reading the derivative parallel as an explanation for the matching result is source-motivated, but it is an analogy rather than a proved equivalence of methods."
+        ],
+        "unsupported_or_imported": [
+          "The directed claim that the span 'derives S through short increments' overstates what happens here: the span says that derivation will be given in Section 4.",
+          "The claim that the two representations expose 'the same structural input' is broader than the source's statement that they use essentially the same methods and assumptions."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic rough-quantity/antiderivative template is useful only if kept tied to the stated S, S1, f, and f1 relations."
+        ],
+        "context_or_ocr_risk": [
+          "The derivative display is garbled, but the adjoining prose is sufficient to support the two derivative relations; quarantine is not needed."
+        ],
+        "missed_mechanism": [
+          "The source offers a derivative analogy and shared assumptions as the reason the results coincide, not a theorem that differentiation transports extremal optimality or all error terms."
+        ],
+        "revision_instructions": [
+          "Change 'derives' to 'announces a later derivation' and replace the broad same-structural-input claim with the narrower derivative analogy and shared-methods statement made in the span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A concise limitation unit terminating the introduction.",
+      "line_end": 198,
+      "line_start": 191,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The heuristic scale has a mildly fragmented square-root display; the obstruction itself is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the proved RH-conditional bound from the conjecturally smaller scale and attributes the limitation to trivial estimation of prime sums generated by the explicit formula.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-number sums as the present-method bottleneck",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u06.txt",
+      "unit_bytes": 537,
+      "unit_id": "full_openalex_w1965895545_u06",
+      "unit_sha256": "99d7a270755e30de5583b13193a7fba0b5147b125ef5f0ec6cb8df3cd9efcb4b",
+      "unit_type": "method obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u06.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 183,
+          "line_end": 190,
+          "text": "f (x) = arctan x − 1+x2 = − dx\n\n<!-- source-page: 4 -->\n\n4                        CARNEIRO, CHANDEE, AND MILINOVICH\n\nis the function used to bound S1 (t). Since dtd S1 (t) = S(t) almost everywhere, it is not\nsurprising that the two methods lead to the same result (namely Theorem 2).\n",
+          "sha256": "767ee24126f1057b715929caf7ee40b2f4be125f6ba4ccc33e0d5514740ecb99"
+        },
+        "after": {
+          "line_start": 199,
+          "line_end": 206,
+          "text": "\n                               2. Preliminary results\n  Before proving Theorem 1 and Theorem 2, we collect some preliminary results. As\nmentioned in the introduction, our bounds for S1 (t) require extremal majorants and\nminorants for the function f1 (x) = 1 − x arctan(1/x). The connection between S1 (t)\nand f1 (x) is made explicit in the following lemma.\nLemma 3. Assume RH. Let\n                                                     \u0012 \u0013\n",
+          "sha256": "3b8f719616a18f9729566ce5f7ba2c3e9abf1b0e949ee6c053e99b2f73054c40"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 198,
+            "line_start": 33,
+            "mathematical_role": "Defines S and S1, states the two theorems, compares indirect and direct extremal routes, relates their test functions by differentiation, and identifies the prime-sum bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 198,
+          "line_start": 191,
+          "title": "Prime-number sums as the present-method bottleneck",
+          "unit_id": "full_openalex_w1965895545_u06",
+          "unit_type": "method obstruction",
+          "why_material": "Separates the proved RH-conditional bound from the conjecturally smaller scale and attributes the limitation to trivial estimation of prime sums generated by the explicit formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A concise limitation unit terminating the introduction.",
+          "representation_dependency": "The heuristic scale has a mildly fragmented square-root display; the obstruction itself is clear in prose.",
+          "unit_id": "full_openalex_w1965895545_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 130,
+            "title": "Why the indirect and direct extremal routes agree",
+            "unit_id": "full_openalex_w1965895545_u05",
+            "unit_type": "method comparison and derivative bridge",
+            "why_material": "Explains why a difference bound need not be the pointwise limit, motivates short S1 increments, introduces direct odd approximation, and identifies f as minus the derivative of f1 in parallel with S being the derivative of S1 almost everywhere."
+          },
+          {
+            "line_end": 299,
+            "line_start": 265,
+            "title": "Normalize before interchanging the zero sum and integral",
+            "unit_id": "full_openalex_w1965895545_u07",
+            "unit_type": "convergence normalization device",
+            "why_material": "Completes Lemma 3 by integrating a nonnegative absolutely convergent zero sum and records the reusable trick of dividing xi-values, or subtracting a reference logarithmic derivative, before exchanging limits."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u06",
+          "spontaneous_reading": "The obstruction is not the extremal representation itself but the uncontrolled arithmetic side produced by the explicit formula: trivial estimates for prime sums prevent the method from reaching the smaller heuristic scale."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u06",
+          "source_grounded_mathematics": "Under RH the proved estimate for S is said to be best known, while a smaller heuristic order is attributed to Farmer, Gonek, and Hughes; the current method cannot reach it because the resulting prime-number sums are estimated trivially.",
+          "conceptual_reading": "The explicit formula relocates difficulty rather than removing it: spectral control of zeros becomes arithmetic cancellation in prime sums, making that transferred task the active bottleneck.",
+          "representation_or_bridge": "Guinand-Weil is the bridge from zero statistics to prime-number sums, so stronger cancellation on the prime side is the missing resource.",
+          "boundary_or_failure": "The heuristic scale is not proved, and failure of this implementation does not establish a limitation of all extremal-function methods.",
+          "uncertainty": "The square-root typography in the heuristic bound is fragmented, but the stated prime-sum obstruction is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span distinguishes the proved RH-conditional bound from a smaller heuristic scale and identifies prime-number sums from Guinand-Weil as the obstruction.",
+          "It explicitly says those prime sums are estimated trivially in the article and that a significant breakthrough in estimating them would be needed for the heuristic scale by this method."
+        ],
+        "inference": [
+          "Interpreting the needed improvement as stronger arithmetic cancellation is plausible, but the short span itself only asks for a breakthrough in estimation."
+        ],
+        "unsupported_or_imported": [
+          "Calling the arithmetic side 'uncontrolled' is inaccurate: the source says it is controlled by trivial estimates, which are too crude for the smaller scale.",
+          "Saying the zero statistic simply 'becomes arithmetic cancellation' strengthens the source's more limited claim that prime sums arise and currently bottleneck this implementation."
+        ],
+        "paraphrase_or_style_risk": [
+          "'The explicit formula relocates difficulty rather than removing it' is a generic bridge template unless qualified by the specific trivially estimated prime sums here."
+        ],
+        "context_or_ocr_risk": [
+          "The heuristic square-root display is fragmented, but the method obstruction is clear in prose and does not require quarantine."
+        ],
+        "missed_mechanism": [
+          "The key distinction is crude existing control versus absent control; the failure is quantitative sharpness, not an uncontrolled expression."
+        ],
+        "revision_instructions": [
+          "Replace 'uncontrolled arithmetic side' with 'arithmetically controlled only by trivial estimates' and label cancellation as a possible interpretation rather than a source-stated requirement."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the missing proof tail and methodological remark for carried unit u02.",
+      "line_end": 299,
+      "line_start": 265,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some displayed integrals are fragmented, but monotone convergence, nonnegativity, the kernel identification, and the normalization device are explicitly narrated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completes Lemma 3 by integrating a nonnegative absolutely convergent zero sum and records the reusable trick of dividing xi-values, or subtracting a reference logarithmic derivative, before exchanging limits.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Normalize before interchanging the zero sum and integral",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u07.txt",
+      "unit_bytes": 2269,
+      "unit_id": "full_openalex_w1965895545_u07",
+      "unit_sha256": "f088a74d122577e511a6f44fad241f482f37f2a108ca6a673cb0779fe7f9b74a",
+      "unit_type": "convergence normalization device",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u07.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 257,
+          "line_end": 264,
+          "text": "                                                                            !\n                                                 1X         1 + (t−γ)2\n                            3\n                              − σ2\n                                     \u0001\n        log ζ(σ + it) =     4\n                                         log t −     log        \u00012              + O(1)   (7)\n                                                 2 ρ       σ− 12 + (t−γ)2\n",
+          "sha256": "4614525a42c60947758ede35efd2d1707b8820c4cd9fb52e714b5d01cdd05cde"
+        },
+        "after": {
+          "line_start": 300,
+          "line_end": 307,
+          "text": "\n   In Section 5, we bound S(t) directly using extremal functions.    This requires an\nexpression relating S(t) to the function f (x) = arctan x1 − 1+x x\n                                                            \u0001\n                                                                   2 mentioned  in the\nintroduction. Our next lemma expresses S(t) as a sum of f (x) over the imaginary parts\nof the zeros of the zeta-function plus a bounded error term.\nLemma 4. Assume RH. Let\n",
+          "sha256": "ee628e5fd6ec76fac193b4f3f52176c5c9e708f2914dd258caefe925abd79815"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Preliminary results",
+            "line_end": 413,
+            "line_start": 199,
+            "mathematical_role": "Derives zero-sum representations for S1 and S with convergence normalizations, then states the Guinand-Weil bridge from zero statistics to prime powers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 299,
+          "line_start": 265,
+          "title": "Normalize before interchanging the zero sum and integral",
+          "unit_id": "full_openalex_w1965895545_u07",
+          "unit_type": "convergence normalization device",
+          "why_material": "Completes Lemma 3 by integrating a nonnegative absolutely convergent zero sum and records the reusable trick of dividing xi-values, or subtracting a reference logarithmic derivative, before exchanging limits."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the missing proof tail and methodological remark for carried unit u02.",
+          "representation_dependency": "Some displayed integrals are fragmented, but monotone convergence, nonnegativity, the kernel identification, and the normalization device are explicitly narrated.",
+          "unit_id": "full_openalex_w1965895545_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 198,
+            "line_start": 191,
+            "title": "Prime-number sums as the present-method bottleneck",
+            "unit_id": "full_openalex_w1965895545_u06",
+            "unit_type": "method obstruction",
+            "why_material": "Separates the proved RH-conditional bound from the conjecturally smaller scale and attributes the limitation to trivial estimation of prime sums generated by the explicit formula."
+          },
+          {
+            "line_end": 379,
+            "line_start": 301,
+            "title": "Representing S as a rapidly decaying odd statistic of zeros",
+            "unit_id": "full_openalex_w1965895545_u08",
+            "unit_type": "odd zero-statistic representation",
+            "why_material": "Lemma 4 subtracts a reference logarithmic derivative to obtain an absolutely convergent zero sum for S with odd kernel f, whose cubic decay permits dominated convergence."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 300,
+              "line_start": 300,
+              "reason": "Section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u07",
+          "spontaneous_reading": "A reference normalization changes a formally troublesome zero expansion into a nonnegative absolutely convergent one, making interchange of summation and integration legitimate rather than merely symbolic."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u07",
+          "source_grounded_mathematics": "After normalizing xi-values, the proof integrates a nonnegative absolutely convergent zero sum and obtains S1(t) as a logarithmic main term minus a sum of f1(t-gamma), up to O(1); the remark prescribes an analogous subtraction of zeta'/zeta at 3/2+it for S.",
+          "conceptual_reading": "Subtracting a harmless reference value can preserve the desired statistic while adding positivity and convergence, turning an illegal exchange of limits into an application of monotone convergence.",
+          "representation_or_bridge": "The quotient by xi(3/2+it), the reference logarithmic derivative, and the kernel f1 are normalization devices connecting analytic integrals to zero statistics.",
+          "boundary_or_failure": "Normalization certifies the exchanges used here; it is not a general license to interchange conditionally convergent zero sums.",
+          "uncertainty": "Several integral displays are fragmented, so the exact coefficients should be checked typographically, while nonnegativity, convergence, and the resulting kernel identity are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The proof obtains the S1 zero-statistic formula by interchanging a nonnegative sum and an integral via monotone convergence.",
+          "The remark says division by a reference xi-value makes the zero sum absolutely convergent and nonnegative, while subtracting zeta'/zeta at 3/2+it is needed for absolute convergence in Lemma 4."
+        ],
+        "inference": [
+          "Treating both operations as reference normalizations is a sound common description if their distinct effects are preserved."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading conflates the two devices by saying a reference subtraction adds both positivity and convergence: positivity is stated for the xi-ratio construction, whereas the zeta'/zeta subtraction is stated to ensure absolute convergence.",
+          "Calling the reference value 'harmless' and claiming such subtraction generally preserves a desired statistic are broader than the bounded constructions in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic 'turning an illegal exchange into a legal one' formulation should not erase the specific monotone-convergence and absolute-convergence arguments."
+        ],
+        "context_or_ocr_risk": [
+          "Several integral displays are fragmented, but the prose clearly separates nonnegativity, absolute convergence, and the two normalization devices."
+        ],
+        "missed_mechanism": [
+          "Monotone convergence for Lemma 3 uses nonnegative terms; the analogous Lemma 4 preparation guarantees absolute convergence and later supports a different interchange argument."
+        ],
+        "revision_instructions": [
+          "Separate the two normalizations and their proof burdens: xi division gives a nonnegative absolutely convergent sum for monotone convergence, while logarithmic-derivative subtraction is asserted here only to secure absolute convergence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the complete setup needed by carried unit u03.",
+      "line_end": 712,
+      "line_start": 637,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequalities and error terms are mostly legible; a square-root range marker is displaced but does not obscure the argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 7 derives upper and lower comparisons of S(t) with forward and backward averages using only nonnegativity of zero-count increments and the main term of N(t).",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-count monotonicity controls S by neighboring averages",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u12.txt",
+      "unit_bytes": 4127,
+      "unit_id": "full_openalex_w1965895545_u12",
+      "unit_sha256": "d3c8a0d9eb800269e566b664f8cb72b16e77502751b85fc6d900b1b01670bb58",
+      "unit_type": "local averaging inequality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u12.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 629,
+          "line_end": 636,
+          "text": "Again, choosing π∆ = log log t − 3 log log log t, we obtain\n                                                  \u0012                     \u0013\n                             π     log t            log t log log log t\n                  S1 (t) ≥ −                 +O                           .\n                             24 (log log t)2           (log log t)3\nThis proves the required lower bound for S1 (t), and therefore completes the proof of\nTheorem 1.                                                                         \u0003\n\n",
+          "sha256": "cf28b912d41c6eeb45cbffa6d6817eb195ad85eb17c8fddb6ce7500c4dd2e06f"
+        },
+        "after": {
+          "line_start": 713,
+          "line_end": 720,
+          "text": "Proof of Theorem 2. The proof of Theorem 2 relies on the estimate\n                                                     \u0012                     \u0013\n                                  π     log t          log t log log log t\n              S1 (t ± h)−S1 (t) ≤                 +O                           (22)\n                                  16 (log log t)2         (log log t)3\n                    √\nwhich, for 0 < h ≤ t, follows immediately from Theorem 1.\n\n",
+          "sha256": "7ea21169a5c21a8b1ca0bb316f902a2183bfa2b48357e6bf5eb0b719864d1ca1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Theorem 1 implies Theorem 2",
+            "line_end": 773,
+            "line_start": 637,
+            "mathematical_role": "Uses monotonicity of zero counts to compare a point value of S with short averages, then balances smoothing loss against the S1 increment bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 712,
+          "line_start": 637,
+          "title": "Zero-count monotonicity controls S by neighboring averages",
+          "unit_id": "full_openalex_w1965895545_u12",
+          "unit_type": "local averaging inequality",
+          "why_material": "Lemma 7 derives upper and lower comparisons of S(t) with forward and backward averages using only nonnegativity of zero-count increments and the main term of N(t)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the complete setup needed by carried unit u03.",
+          "representation_dependency": "The inequalities and error terms are mostly legible; a square-root range marker is displaced but does not obscure the argument.",
+          "unit_id": "full_openalex_w1965895545_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 635,
+            "line_start": 466,
+            "title": "Propagating one-sided approximation error into Theorem 1",
+            "unit_id": "full_openalex_w1965895545_u11",
+            "unit_type": "extremal-explicit-formula proof",
+            "why_material": "Translates pointwise extremal order into two inequalities for S1, bounds gamma and prime-power contributions, evaluates the L1 costs, and selects bandwidth so approximation error and exponential prime support yield the stated asymptotics."
+          },
+          {
+            "line_end": 772,
+            "line_start": 713,
+            "title": "Choosing the averaging scale and diagnosing constant loss",
+            "unit_id": "full_openalex_w1965895545_u13",
+            "unit_type": "scale-balancing transfer",
+            "why_material": "Combines the S1 increment estimate with Lemma 7, chooses h at reciprocal log-log scale to balance average error and smoothing penalty, proves both signs, and compares the result with weaker asymmetric S1 inputs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The S1-increment route and the odd-extremal route produce the same leading S bound because one smooths in the height variable while the other bandlimits the corresponding differentiated zero kernel.",
+            "limit": "Equality of the achieved constant does not prove either method is globally optimal or that their errors coincide term by term.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u05",
+              "full_openalex_w1965895545_u12",
+              "full_openalex_w1965895545_u13",
+              "full_openalex_w1965895545_u04"
+            ],
+            "title": "Local averaging and direct extremals reach the same pointwise constant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 636,
+              "line_start": 636,
+              "reason": "Section boundary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u12",
+          "spontaneous_reading": "Monotonicity of the zero-counting function turns a point value of the oscillatory remainder S into a quantity controlled by a neighboring average plus a deterministic drift penalty."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u12",
+          "source_grounded_mathematics": "From nonnegative increments N(t+nu)-N(t) and N(t)-N(t-nu), Lemma 7 derives upper and lower bounds for S(t) using forward or backward averages of S over length h, a penalty h log t/(4 pi), and O(h)+O(1/t) errors.",
+          "conceptual_reading": "A monotone cumulative observable constrains its fluctuating remainder: averaging stabilizes S, while the known main-term growth pays for replacing the point value by that average.",
+          "representation_or_bridge": "The zero count N, its asymptotic main term, and forward/backward local averages bridge pointwise S to increments of its antiderivative S1.",
+          "boundary_or_failure": "The comparison does not determine S(t) from the average alone; its usefulness depends on separately bounding the average and choosing an appropriate h.",
+          "uncertainty": "A displaced square-root range marker affects typography but not the stated inequalities or their derivation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 7 uses nonnegative increments of N and its asymptotic main term to bound S(t) above and below by forward and backward averages.",
+          "The h log(t)/(4 pi) drift and O(h)+O(1/t) errors are explicit, as is the need for a separate average bound."
+        ],
+        "inference": [
+          "Viewing S as the fluctuating remainder of a monotone cumulative observable is a faithful interpretation of N's decomposition."
+        ],
+        "unsupported_or_imported": [
+          "The representation claim that this span bridges directly to increments of the antiderivative S1 imports the next theorem-proof step; this unit itself stops at local averages of S.",
+          "Saying averaging 'stabilizes' S suggests a regularity or variance claim not established by the deterministic inequalities."
+        ],
+        "paraphrase_or_style_risk": [
+          "The broad monotone-observable template is useful only after retaining the forward/backward direction, drift, and error terms."
+        ],
+        "context_or_ocr_risk": [
+          "A displaced square-root range marker does not obscure the hypotheses or inequalities."
+        ],
+        "missed_mechanism": [
+          "Within the exact span, monotonicity yields point-to-average comparison; identifying those averages with S1 increments is a subsequent application, not part of Lemma 7's stated mechanism."
+        ],
+        "revision_instructions": [
+          "End the bridge at neighboring averages of S, describe averaging as replacement rather than stabilization, and leave the S1-increment conversion explicitly outside this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried u03 span because the immutable v1 unit truncates the full two-sided optimization.",
+      "line_end": 772,
+      "line_start": 713,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted h formula is reordered, but the minimization role and final bounds are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines the S1 increment estimate with Lemma 7, chooses h at reciprocal log-log scale to balance average error and smoothing penalty, proves both signs, and compares the result with weaker asymmetric S1 inputs.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choosing the averaging scale and diagnosing constant loss",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u13.txt",
+      "unit_bytes": 4046,
+      "unit_id": "full_openalex_w1965895545_u13",
+      "unit_sha256": "7045af211bb2666d3220707ad7d239cc1ff6b2b1cf8fc7f5a1b007376e6ec392",
+      "unit_type": "scale-balancing transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u13.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 705,
+          "line_end": 712,
+          "text": "                     ≥          S(t−ν) −        log t + O(ν) + O            dν\n                         h 0                2π                        t\n                         1 t\n                           Z                                   \u0012 \u0013\n                                           h log t                1\n                     =         S(u) du −           + O(h) + O           ,\n                         h t−h               4π                   t\nas claimed. This completes the proof of the lemma.                               \u0003\n",
+          "sha256": "708e1a14c2fccfae387baf9a4dc62aa1bd7e2bb07d1dc3be5732ccb1c035ece3"
+        },
+        "after": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "\n               5. Proof of Theorem 2 via extremal functions\n  In this section, we prove Theorem 2 using families of majorants and minorants of\nexponential type 2π∆ for the function\n                                           \u0012 \u0013\n                                            1      x\n                            f (x) = arctan     −        .\n                                            x    1 + x2\n",
+          "sha256": "9c428912c4c0d53a3dd967795f045c3a68f36aafeb0eda90c0b9489f9232f2ad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Theorem 1 implies Theorem 2",
+            "line_end": 773,
+            "line_start": 637,
+            "mathematical_role": "Uses monotonicity of zero counts to compare a point value of S with short averages, then balances smoothing loss against the S1 increment bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 772,
+          "line_start": 713,
+          "title": "Choosing the averaging scale and diagnosing constant loss",
+          "unit_id": "full_openalex_w1965895545_u13",
+          "unit_type": "scale-balancing transfer",
+          "why_material": "Combines the S1 increment estimate with Lemma 7, chooses h at reciprocal log-log scale to balance average error and smoothing penalty, proves both signs, and compares the result with weaker asymmetric S1 inputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the carried u03 span because the immutable v1 unit truncates the full two-sided optimization.",
+          "representation_dependency": "The extracted h formula is reordered, but the minimization role and final bounds are explicit.",
+          "unit_id": "full_openalex_w1965895545_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 712,
+            "line_start": 637,
+            "title": "Zero-count monotonicity controls S by neighboring averages",
+            "unit_id": "full_openalex_w1965895545_u12",
+            "unit_type": "local averaging inequality",
+            "why_material": "Lemma 7 derives upper and lower comparisons of S(t) with forward and backward averages using only nonnegativity of zero-count increments and the main term of N(t)."
+          },
+          {
+            "line_end": 950,
+            "line_start": 895,
+            "title": "The one-sided Beurling-Selberg design pattern",
+            "unit_id": "full_openalex_w1965895545_u14",
+            "unit_type": "approximation-theory framework",
+            "why_material": "Defines extremal entire approximation, distinguishes one-sided majorants/minorants, and explains why compact Fourier support is decisive for analytic-number-theory applications while no universal construction exists."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The S1-increment route and the odd-extremal route produce the same leading S bound because one smooths in the height variable while the other bandlimits the corresponding differentiated zero kernel.",
+            "limit": "Equality of the achieved constant does not prove either method is globally optimal or that their errors coincide term by term.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u05",
+              "full_openalex_w1965895545_u12",
+              "full_openalex_w1965895545_u13",
+              "full_openalex_w1965895545_u04"
+            ],
+            "title": "Local averaging and direct extremals reach the same pointwise constant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 773,
+              "line_start": 773,
+              "reason": "Section boundary."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u13",
+          "spontaneous_reading": "The pointwise estimate emerges by tuning the averaging window so that the inverse-h cost of controlling an S1 increment matches the h log t cost of localizing back to S."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u13",
+          "source_grounded_mathematics": "Theorem 1 bounds S1(t+h)-S1(t) and S1(t)-S1(t-h); substitution into Lemma 7 gives terms proportional to log t divided by h(log log t)^2 and to h log t, whose optimization at reciprocal log-log scale yields both signs of the one-quarter bound for S.",
+          "conceptual_reading": "Smoothing introduces a bias-resolution tradeoff: a longer window makes the antiderivative increment cheaper per unit length but worsens the monotonicity penalty, so the optimal scale transfers integrated control to pointwise control.",
+          "representation_or_bridge": "Forward and backward S1 increments, Lemma 7 averages, and the tunable width h implement the transfer.",
+          "boundary_or_failure": "Using weaker asymmetric S1 inputs degrades the resulting constant, and equality of the leading constant with the direct extremal route does not prove global optimality.",
+          "uncertainty": "The extracted formula for h is reordered, but its reciprocal log-log scale, optimization role, and final two-sided bounds are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The span substitutes S1 increment bounds into Lemma 7, producing an inverse-h term and an h log(t) term and optimizing h at reciprocal log-log scale.",
+          "It proves both signs of the one-quarter bound and explicitly shows that Fujii's weaker asymmetric S1 bounds yield the weaker 0.51138 constant."
+        ],
+        "inference": [
+          "The bias-resolution or integrated-to-pointwise tradeoff is an accurate interpretation of the displayed optimization."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement about equality with the direct extremal route and lack of global optimality is not established or discussed in this exact span; it imports comparison material from elsewhere in the article."
+        ],
+        "paraphrase_or_style_risk": [
+          "The smoothing-tradeoff language is grounded by the two explicit h-dependent terms and is not merely stylistic."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted h formula is reordered, but its scale, optimizing role, and terminal estimates are explicit."
+        ],
+        "missed_mechanism": [
+          "The within-span limitation is the sensitivity of the transferred constant to the available S1 increment bound, illustrated quantitatively by the Fujii comparison."
+        ],
+        "revision_instructions": [
+          "Remove the direct-extremal/global-optimality sentence and retain the source-local limitation demonstrated by the weaker Fujii input."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes parts (ii) and (iii) of Lemma 6 after the pointwise estimates.",
+      "line_end": 1317,
+      "line_start": 1216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The multiple integrals and series are severely linearized, though the support conclusion and terminal logarithmic cost formulas are readable enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Paley-Wiener to obtain compact Fourier support and derives exact upper/lower L1 errors from the subordinating measure, including the nonnegative-integrand justification for exchanging integrals.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completing the even extremal certificate",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u17.txt",
+      "unit_bytes": 5876,
+      "unit_id": "full_openalex_w1965895545_u17",
+      "unit_sha256": "ff0b8150e1cdb579543023109d62d83eb8a145c332874c824cd3e103cab97e35",
+      "unit_type": "spectral support and exact approximation cost",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u17.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1208,
+          "line_end": 1215,
+          "text": "                                                            ∆2\n                                             G+\n                                              ∆ (x) ≤ C           .\n                                                          ∆2 + x2\n                                                +\nThus, from (32), we deduce the upper bound for g∆ (x) in (10). This completes the\nproof of part (i) of Lemma 6.\n\n",
+          "sha256": "71bd16f3895d7c91bf329994b9264f1d1acd57170579cc0cfd7bf1f8b3f75f98"
+        },
+        "after": {
+          "line_start": 1318,
+          "line_end": 1325,
+          "text": "\n6.3. Proof of Lemma 8. In this section we discuss the extremal functions that play\na role in proving Lemma 8. This is based on the recent work of Carneiro and Littmann\n[3] in which they solve the Beurling-Selberg extremal problem for the truncated (and\nodd) Gaussian and extend the construction to a class of truncated (and odd) functions\nwhich includes the function f (x) = arctan(1/x) − x/(1 + x2 ). In the discussion below,\nwe focus only on the construction for odd functions.\n     Let λ > 0 be a parameter and define the odd Gaussian x 7→ Goλ (x) by\n",
+          "sha256": "754d419a5095f510e6f7902ab0db41360c2bace91bdae5522394eead8047b9a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.2. Proof of Lemma 6",
+            "line_end": 1318,
+            "line_start": 952,
+            "mathematical_role": "Realizes the even kernel through a positive Gaussian mixture, rescales known extremals, and verifies growth, order, support, and exact L1 costs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1317,
+          "line_start": 1216,
+          "title": "Completing the even extremal certificate",
+          "unit_id": "full_openalex_w1965895545_u17",
+          "unit_type": "spectral support and exact approximation cost",
+          "why_material": "Applies Paley-Wiener to obtain compact Fourier support and derives exact upper/lower L1 errors from the subordinating measure, including the nonnegative-integrand justification for exchanging integrals."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes parts (ii) and (iii) of Lemma 6 after the pointwise estimates.",
+          "representation_dependency": "The multiple integrals and series are severely linearized, though the support conclusion and terminal logarithmic cost formulas are readable enough for semantic use.",
+          "unit_id": "full_openalex_w1965895545_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1214,
+            "line_start": 1062,
+            "title": "Controlling entire growth and pointwise order for the even extremals",
+            "unit_id": "full_openalex_w1965895545_u16",
+            "unit_type": "interpolation and parity estimate",
+            "why_material": "Uses decay bounds for f1 and its derivative inside interpolation series, then pairs symmetric lattice terms and splits sums by scale to prove the growth and real-axis envelope required by Lemma 6."
+          },
+          {
+            "line_end": 1421,
+            "line_start": 1319,
+            "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+            "unit_id": "full_openalex_w1965895545_u18",
+            "unit_type": "odd Gaussian subordination construction",
+            "why_material": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both the even and odd kernels become tractable after representation by finite nonnegative Gaussian-subordination measures, allowing known unique extremals to be integrated and rescaled while retaining one-sided order and computable L1 cost.",
+            "limit": "The even and truncated-odd constructions invoke different external results and cannot be merged into a universal recipe from this source alone.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u15",
+              "full_openalex_w1965895545_u17",
+              "full_openalex_w1965895545_u18",
+              "full_openalex_w1965895545_u20"
+            ],
+            "title": "Positive Gaussian mixtures transfer solved extremal problems to zeta kernels"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1318,
+              "line_start": 1318,
+              "reason": "Section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u17",
+          "spontaneous_reading": "The construction becomes a complete certificate only after growth and integrability yield spectral support and the subordinating measure yields exact, direction-dependent L1 costs."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u17",
+          "source_grounded_mathematics": "Paley-Wiener applied to the integrable type-2pi Delta extremals gives Fourier support in [-Delta,Delta] and a uniform transform bound; Gaussian-subordination formulas and nonnegative integrands justify exchanging integrals and produce the exact logarithmic L1 errors for both sides.",
+          "conceptual_reading": "A usable extremal requires both qualitative admissibility and quantitative loss accounting: compact support enables the explicit formula, while exact L1 mass determines the theorem constant.",
+          "representation_or_bridge": "Paley-Wiener translates entire growth into spectral support, and integration against the positive subordinating measure translates Gaussian error formulas into errors for f1.",
+          "boundary_or_failure": "The upper and lower costs differ, and the computation depends on positivity for exchanging integrals; neither feature should be inferred for a signed mixture.",
+          "uncertainty": "Multiple integrals are severely linearized, but the support conclusion and terminal logarithmic costs are sufficiently readable for semantic interpretation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "Integrability and exponential type give Fourier support in [-Delta,Delta] by Paley-Wiener, and the real-axis envelope yields a uniform transform bound.",
+          "The Gaussian-subordination error formulas and nonnegative-integrand exchange produce distinct exact logarithmic L1 costs for the two sides."
+        ],
+        "inference": [
+          "Calling support plus exact cost a complete extremal certificate is a reasonable synthesis of parts (ii) and (iii)."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual claim that compact support enables the explicit formula and exact L1 mass determines the theorem constant imports downstream use not stated in this exact proof span.",
+          "The assertion that neither asymmetry nor valid exchange should be inferred for a signed mixture is too broad: signed mixtures may admit other absolute-integrability arguments, and the span proves only this positive case."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Qualitative admissibility and quantitative loss accounting' is generic unless tied to Paley-Wiener, the envelope-derived transform norm, and the two computed costs."
+        ],
+        "context_or_ocr_risk": [
+          "The multiple integrals are severely linearized, but the support conclusion, exchange justification, and terminal costs are readable."
+        ],
+        "missed_mechanism": [
+          "The uniform Fourier bound follows separately from the integrable real-axis envelope; it is not supplied by compact support alone."
+        ],
+        "revision_instructions": [
+          "Keep the interpretation within the certificate proved here, mention the envelope-based transform bound, and remove downstream theorem-constant claims and the universal signed-mixture counterfactual."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The plotted figure body at lines 1357-1387 is excluded; its caption only illustrates the already stated order relation.",
+      "line_end": 1421,
+      "line_start": 1319,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The measure density and interpolation formulas need typography verification, but positivity/finite status, scaling, and symmetry are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u18.txt",
+      "unit_bytes": 4769,
+      "unit_id": "full_openalex_w1965895545_u18",
+      "unit_sha256": "1e1770dc10f64e2f941dc278f917235a353352a5b6ebe6b61ac6665a912ff314",
+      "unit_type": "odd Gaussian subordination construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u18.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1311,
+          "line_end": 1318,
+          "text": "                                      n6=0\n                    Z 3/2\n                                         1 − e−2π(σ−1/2)∆\n                                     \u0012                      \u0013\n             =−                log                              dσ.\n                     1/2                    1 − e−2π∆\nPart (iii) of Lemma 6 now follows from the change of variables (31) and (32).\n\n",
+          "sha256": "34ac01d90d64cc8b2d90e2ee73b2193342ab7c30c73a8b9acc56a5c2660ec792"
+        },
+        "after": {
+          "line_start": 1422,
+          "line_end": 1429,
+          "text": "\nProof of part (i) of Lemma 8. From (41) and (44) we observe that\n                     ∞              \u0001 !2 ( \u0010 \u0011           \u0001 \u0010 \u0011)\n                     X sin π z − n           n      z − n      n\n         M∆+ (z) =                \u0001       f      +        f0\n                    n=−∞\n                           π z−n             ∆        ∆       ∆\n                      n6=0\n",
+          "sha256": "502ecc06c843e69f6cffa2790dc43a93f0a6f1fcc1d003eacd9a7a689ca1b73c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.3. Proof of Lemma 8",
+            "line_end": 1582,
+            "line_start": 1319,
+            "mathematical_role": "Builds odd extremals by truncated-Gaussian subordination, symmetry, interpolation, parity pairing, and Paley-Wiener support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1421,
+          "line_start": 1319,
+          "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+          "unit_id": "full_openalex_w1965895545_u18",
+          "unit_type": "odd Gaussian subordination construction",
+          "why_material": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The plotted figure body at lines 1357-1387 is excluded; its caption only illustrates the already stated order relation.",
+          "representation_dependency": "The measure density and interpolation formulas need typography verification, but positivity/finite status, scaling, and symmetry are explicit.",
+          "unit_id": "full_openalex_w1965895545_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1317,
+            "line_start": 1216,
+            "title": "Completing the even extremal certificate",
+            "unit_id": "full_openalex_w1965895545_u17",
+            "unit_type": "spectral support and exact approximation cost",
+            "why_material": "Applies Paley-Wiener to obtain compact Fourier support and derives exact upper/lower L1 errors from the subordinating measure, including the nonnegative-integrand justification for exchanging integrals."
+          },
+          {
+            "line_end": 1552,
+            "line_start": 1423,
+            "title": "Parity pairing proves growth and real-axis order for odd extremals",
+            "unit_id": "full_openalex_w1965895545_u19",
+            "unit_type": "odd interpolation and parity estimate",
+            "why_material": "Combines interpolation-series decay with odd/even parity, pairs positive and negative indices, and bounds the residual odd term to establish the complex growth and pointwise envelope in Lemma 8."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both the even and odd kernels become tractable after representation by finite nonnegative Gaussian-subordination measures, allowing known unique extremals to be integrated and rescaled while retaining one-sided order and computable L1 cost.",
+            "limit": "The even and truncated-odd constructions invoke different external results and cannot be merged into a universal recipe from this source alone.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u15",
+              "full_openalex_w1965895545_u17",
+              "full_openalex_w1965895545_u18",
+              "full_openalex_w1965895545_u20"
+            ],
+            "title": "Positive Gaussian mixtures transfer solved extremal problems to zeta kernels"
+          },
+          {
+            "claim": "For the odd construction, the appendix's representation, positivity, and finite-mass proofs are not ancillary calculations: together they certify that Gaussian subordination is legally applicable.",
+            "limit": "These certificates establish this particular measure only and do not supply a generic positivity test for other kernels.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u18",
+              "full_openalex_w1965895545_u21",
+              "full_openalex_w1965895545_u22",
+              "full_openalex_w1965895545_u23"
+            ],
+            "title": "Measure admissibility is part of the mathematical mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1318,
+              "line_start": 1318,
+              "reason": "Section transition."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1387,
+              "line_start": 1357,
+              "reason": "The body of Figure 2 survives only as disconnected axis labels and whitespace."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1390,
+              "line_start": 1388,
+              "reason": "Figure 2 caption and transition; illustration adds no separately recoverable mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u18",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u18",
+          "spontaneous_reading": "The odd kernel is made tractable by expressing its positive half as a finite nonnegative mixture of odd Gaussians, then using reflection to reduce the two one-sided extremal problems to one construction."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u18",
+          "source_grounded_mathematics": "For H_Delta the source states a Gaussian-mixture representation on x>0 with a finite nonnegative measure mu_Delta, notes f(x)=H_Delta(Delta x), invokes unique odd type-2pi majorant and minorant formulas, rescales them, and records m_Delta^-(z)=-m_Delta^+(-z).",
+          "conceptual_reading": "Positive subordination imports solved odd-Gaussian extremals, while odd reflection compresses two verification tasks into one without losing one-sided order.",
+          "representation_or_bridge": "The measure mu_Delta, odd Gaussians, H_Delta, dilation, interpolation formulas, and reflection symmetry constitute the bridge from f to bandlimited extremals.",
+          "boundary_or_failure": "Applicability depends on the representation, nonnegativity, and finite mass proved later; the even and truncated-odd constructions use distinct external results and are not a universal scheme.",
+          "uncertainty": "The density and interpolation typography require source-image checking, but positivity, finite status, scaling, and symmetry are explicit; the defective plot adds no needed evidence."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "For x>0 the span represents H_Delta by a Gaussian mixture with a measure stated to be finite and nonnegative, identifies f(x)=H_Delta(Delta x), and invokes unique odd majorant and minorant formulas.",
+          "The dilation and identity m_Delta^-(z)=-m_Delta^+(-z) explicitly reduce verification to the majorant."
+        ],
+        "inference": [
+          "Extending the positive-half representation by oddness and calling it a mixture of odd Gaussians is a natural interpretation of the setup.",
+          "Positive subordination importing the solved [3] extremals is supported as a construction-level reading."
+        ],
+        "unsupported_or_imported": [
+          "The boundary comparison with the even construction and claim that the pair is not a universal scheme are imported from other units rather than established in this exact span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic bridge language remains anchored by mu_Delta, H_Delta, dilation, interpolation, and reflection."
+        ],
+        "context_or_ocr_risk": [
+          "The measure density and interpolation formulas require typographic checking, but the stated positivity, finiteness, scaling, and symmetry are clear; the defective plot is nonessential."
+        ],
+        "missed_mechanism": [
+          "This span states, rather than proves, positivity and finite mass and explicitly defers those admissibility certificates to Appendix A."
+        ],
+        "revision_instructions": [
+          "Remove the cross-unit comparison with the even construction and keep the limitation local: the construction here depends on the stated representation plus the separately deferred positivity and finiteness proofs."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A method unit emphasizing parity as a simplifier rather than retaining every routine bound separately.",
+      "line_end": 1552,
+      "line_start": 1423,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interpolation algebra is formula-heavy and fragmented, but the parity reductions, sum splitting, and target bounds are narrated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines interpolation-series decay with odd/even parity, pairs positive and negative indices, and bounds the residual odd term to establish the complex growth and pointwise envelope in Lemma 8.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Parity pairing proves growth and real-axis order for odd extremals",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u19.txt",
+      "unit_bytes": 7138,
+      "unit_id": "full_openalex_w1965895545_u19",
+      "unit_sha256": "8934ceea09b7bc76a48ce870077c90b1ce23492663d4e98a0bcf85380eca7006",
+      "unit_type": "odd interpolation and parity estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u19.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1415,
+          "line_end": 1422,
+          "text": "                             n6=0\n\nObserve that M∆− (z) = −M∆+ (−z) and thus\n                               m−          +\n                                 ∆ (z) = −m∆ (−z).                                                         (45)\nTherefore, from (45) it suffices to prove the statements of Lemma 8 for m+\n                                                                         ∆.\n\n",
+          "sha256": "63850c568394bc69fe4aaa68a3995f558170f08fa1f3b2fb33e8a1c14a07530c"
+        },
+        "after": {
+          "line_start": 1553,
+          "line_end": 1560,
+          "text": "\nProof of parts (ii) and (iii) of Lemma 8. From (42) and (50), we see that\n                                                 \u0012       \u00132\n                              +                π sin π∆x\n                            m∆ (x) = J∆ (∆x) +\n                                               2   π∆x\n\nwhere J∆ is an odd function. Since f (x) is odd and absolutely integrable, we have\n",
+          "sha256": "e60a3e3780f3cf655fcdd91c439d156ae6b33a2166da454a0b747a628d1b781f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.3. Proof of Lemma 8",
+            "line_end": 1582,
+            "line_start": 1319,
+            "mathematical_role": "Builds odd extremals by truncated-Gaussian subordination, symmetry, interpolation, parity pairing, and Paley-Wiener support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1552,
+          "line_start": 1423,
+          "title": "Parity pairing proves growth and real-axis order for odd extremals",
+          "unit_id": "full_openalex_w1965895545_u19",
+          "unit_type": "odd interpolation and parity estimate",
+          "why_material": "Combines interpolation-series decay with odd/even parity, pairs positive and negative indices, and bounds the residual odd term to establish the complex growth and pointwise envelope in Lemma 8."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A method unit emphasizing parity as a simplifier rather than retaining every routine bound separately.",
+          "representation_dependency": "The interpolation algebra is formula-heavy and fragmented, but the parity reductions, sum splitting, and target bounds are narrated.",
+          "unit_id": "full_openalex_w1965895545_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1421,
+            "line_start": 1319,
+            "title": "Building odd extremals from a positive truncated-Gaussian mixture",
+            "unit_id": "full_openalex_w1965895545_u18",
+            "unit_type": "odd Gaussian subordination construction",
+            "why_material": "Embeds the odd S kernel into a finite nonnegative Gaussian-subordination measure, rescales unique odd extremals, and uses reflection symmetry to reduce the two-sided verification to the majorant."
+          },
+          {
+            "line_end": 1580,
+            "line_start": 1554,
+            "title": "Oddness isolates the exact L1 excess and Paley-Wiener gives support",
+            "unit_id": "full_openalex_w1965895545_u20",
+            "unit_type": "odd approximation certificate",
+            "why_material": "Decomposes the majorant into an odd term plus a squared sinc correction, so integration kills the odd part and yields the exact pi/(2 Delta) error; exponential type and integrability then imply compact support."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u19",
+          "spontaneous_reading": "Pairing positive and negative interpolation nodes uses the oddness of f and evenness of f' to isolate an odd residual whose sign and decay can be controlled on one half-line and reflected to the other."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u19",
+          "source_grounded_mathematics": "The proof inserts bounds for f and f' into the majorant interpolation series to obtain complex growth, pairs n and -n using parity, decomposes the real-axis expression into an odd term J_Delta plus a squared-sinc term, and bounds J_Delta by splitting the lattice sum into index ranges.",
+          "conceptual_reading": "Parity provides both compression and control: it exposes cancellations, converts a global two-sided estimate into a half-line argument, and separates the positive correction responsible for majorization.",
+          "representation_or_bridge": "The cardinal series, paired lattice indices, the residual J_Delta, and the squared-sinc correction bridge interpolation data to the pointwise envelope of Lemma 8.",
+          "boundary_or_failure": "The conclusion depends on the specific signs and decay of f and f'; parity alone would not prove order for an arbitrary odd target.",
+          "uncertainty": "Formula extraction obscures some summands, but the parity reduction, scale splitting, and target bounds are clearly narrated."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u19",
+        "critic_decision": "revise",
+        "supported": [
+          "The proof bounds f and f', inserts those estimates into the majorant interpolation series, and obtains the complex growth estimate.",
+          "Pairing n and -n by parity yields M_Delta^+=J_Delta plus a squared-sinc term; J_Delta is bounded on one half-line by sign and index splitting and then on the other by oddness."
+        ],
+        "inference": [
+          "Describing parity as exposing cancellation and reducing a two-sided bound to a half-line argument is faithful to the paired-series proof."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says the squared-sinc term is the positive correction 'responsible for majorization', but the span uses the already known extremal inequality M_Delta^+>=H_Delta; it does not derive majorization from that correction alone."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Parity provides compression and control' is acceptable only with the explicit J_Delta, sign, and near/far sum mechanisms retained."
+        ],
+        "context_or_ocr_risk": [
+          "Some interpolation summands are obscured, but parity, the J_Delta decomposition, scale splitting, and target envelopes are legible."
+        ],
+        "missed_mechanism": [
+          "The squared-sinc decomposition helps isolate and bound J_Delta; one-sided order is inherited from the invoked extremal construction, not proved causally by the positivity of the correction."
+        ],
+        "revision_instructions": [
+          "Replace the causal majorization claim with the source-supported role: the decomposition isolates an odd residual whose envelope can be proved using half-line signs and reflection."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes parts (ii) and (iii) of Lemma 8.",
+      "line_end": 1580,
+      "line_start": 1554,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The key decomposition and integral are legible; the Fourier norm display has minor extraction fragmentation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the majorant into an odd term plus a squared sinc correction, so integration kills the odd part and yields the exact pi/(2 Delta) error; exponential type and integrability then imply compact support.",
+      "source_id": "openalex_w1965895545",
+      "source_normalized_sha256": "42e4b499ed2f041ba9bd03797cb49de7d2ee887af46d4bf155570f426715e01a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Oddness isolates the exact L1 excess and Paley-Wiener gives support",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1965895545_u20.txt",
+      "unit_bytes": 1547,
+      "unit_id": "full_openalex_w1965895545_u20",
+      "unit_sha256": "800a838d9fa32316fc80cdc445e51466a8db78a166a9c03c32f053b9801b842b",
+      "unit_type": "odd approximation certificate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1965895545_u20.txt",
+      "source": {
+        "source_id": "openalex_w1965895545",
+        "title": "Bounding $$S(t)$$ and $$S_1(t)$$ on the Riemann hypothesis",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Micah B. Milinovich"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1546,
+          "line_end": 1553,
+          "text": "that\n                                                ∆2\n                                  |J∆ (x)| \n 2                                       (54)\n                                              ∆ + x2\nfor x < 0. Since J∆ is an odd function, it follows that (54) holds for x > 0 as well. This\nestablishes (51) and therefore completes the proof of part (i) of Lemma 8.\n\n",
+          "sha256": "89a7c4c7a38b6c83da11f0c9881571bd7cd43235feb448ae2b3ac4568ba508ac"
+        },
+        "after": {
+          "line_start": 1581,
+          "line_end": 1588,
+          "text": "\n\n                                     7. Appendix A\n  In this appendix, we derive the properties of the measure dµ∆ (λ) the were used in\nthe proof of Lemma 8.\n\n<!-- source-page: 22 -->\n\n",
+          "sha256": "ad8fbf2ed5bc16a0fa5f41d5380fdd16fed8bb782f5a232ecab4d10e0d56889b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f3260846fd06de715d59dceddb6c2de2eba387b45e641f1d455c9f71ec2ce236",
+        "dossier_sha256": "d6ce29b45edb56aa43f9060bc8f78058dffcecd6d097b97916651caf3f52f939",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.3. Proof of Lemma 8",
+            "line_end": 1582,
+            "line_start": 1319,
+            "mathematical_role": "Builds odd extremals by truncated-Gaussian subordination, symmetry, interpolation, parity pairing, and Paley-Wiener support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1580,
+          "line_start": 1554,
+          "title": "Oddness isolates the exact L1 excess and Paley-Wiener gives support",
+          "unit_id": "full_openalex_w1965895545_u20",
+          "unit_type": "odd approximation certificate",
+          "why_material": "Decomposes the majorant into an odd term plus a squared sinc correction, so integration kills the odd part and yields the exact pi/(2 Delta) error; exponential type and integrability then imply compact support."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes parts (ii) and (iii) of Lemma 8.",
+          "representation_dependency": "The key decomposition and integral are legible; the Fourier norm display has minor extraction fragmentation.",
+          "unit_id": "full_openalex_w1965895545_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1552,
+            "line_start": 1423,
+            "title": "Parity pairing proves growth and real-axis order for odd extremals",
+            "unit_id": "full_openalex_w1965895545_u19",
+            "unit_type": "odd interpolation and parity estimate",
+            "why_material": "Combines interpolation-series decay with odd/even parity, pairs positive and negative indices, and bounds the residual odd term to establish the complex growth and pointwise envelope in Lemma 8."
+          },
+          {
+            "line_end": 1640,
+            "line_start": 1583,
+            "title": "Transforming the candidate measure into the odd kernel",
+            "unit_id": "full_openalex_w1965895545_u21",
+            "unit_type": "integral representation certificate",
+            "why_material": "Verifies the Gaussian-mixture identity by Fubini and successive substitutions, reducing the inner integral to an elementary Gaussian integral with the desired exponential kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Both the even and odd kernels become tractable after representation by finite nonnegative Gaussian-subordination measures, allowing known unique extremals to be integrated and rescaled while retaining one-sided order and computable L1 cost.",
+            "limit": "The even and truncated-odd constructions invoke different external results and cannot be merged into a universal recipe from this source alone.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1965895545_u15",
+              "full_openalex_w1965895545_u17",
+              "full_openalex_w1965895545_u18",
+              "full_openalex_w1965895545_u20"
+            ],
+            "title": "Positive Gaussian mixtures transfer solved extremal problems to zeta kernels"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1965895545_u20",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1965895545_u20",
+          "spontaneous_reading": "Writing the majorant as an odd residual plus a squared-sinc correction makes the exact approximation loss transparent: symmetry annihilates the residual integral, leaving only the explicitly integrable correction."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1965895545_u20",
+          "source_grounded_mathematics": "The rescaled majorant is decomposed into odd J_Delta(Delta x) plus a squared-sinc term; because f and J_Delta are odd and integrable, their integrals vanish and the excess is exactly pi/(2 Delta), while exponential type and integrability give Fourier support in [-Delta,Delta] by Paley-Wiener.",
+          "conceptual_reading": "A symmetry-adapted decomposition separates the part enforcing order from the part paying the L1 cost, so an apparently global error integral reduces to a canonical correction mass.",
+          "representation_or_bridge": "Oddness, the squared-sinc correction, and Paley-Wiener connect the interpolation construction to exact L1 error and compact spectral support.",
+          "boundary_or_failure": "The cancellation requires absolute integrability and the stated parity; it does not say that every odd extremal has the same correction or cost.",
+          "uncertainty": "The key decomposition and integral are legible; only the final Fourier-norm display has minor fragmentation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1965895545_u20",
+        "critic_decision": "revise",
+        "supported": [
+          "The span writes the majorant as odd J_Delta(Delta x) plus a squared-sinc term and uses the vanishing integrals of the odd, absolutely integrable functions to compute pi/(2 Delta).",
+          "It then applies Paley-Wiener to exponential type plus integrability and derives the uniform transform bound from the pointwise envelope."
+        ],
+        "inference": [
+          "Calling the squared-sinc mass canonical for this construction is a reasonable interpretation of the exact integral."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says the decomposition separates 'the part enforcing order' from the part paying L1 cost, but this span does not show that J_Delta enforces order; one-sided order was already supplied by the extremal construction."
+        ],
+        "paraphrase_or_style_risk": [
+          "The symmetry-adapted decomposition is substantive, but assigning causal proof roles beyond cancellation and cost computation becomes a generic design gloss."
+        ],
+        "context_or_ocr_risk": [
+          "The key decomposition and integral are legible; minor Fourier-norm fragmentation does not prevent a reliable reading."
+        ],
+        "missed_mechanism": [
+          "Oddness is used here to annihilate the residual and target integrals, leaving the squared-sinc correction as the exact L1 excess; it is not a new proof of majorization."
+        ],
+        "revision_instructions": [
+          "Describe the split as zero-integral odd component versus cost-carrying correction, and remove the unsupported claim that one component enforces order."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1d7100e20831793bce9e73a395a2baf319dfda14580b42848695a4f75f6f7067"
+}

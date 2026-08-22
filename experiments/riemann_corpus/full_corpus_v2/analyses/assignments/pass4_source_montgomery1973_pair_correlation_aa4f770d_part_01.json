@@ -1,0 +1,639 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_montgomery1973_pair_correlation_aa4f770d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "montgomery1973_pair_correlation",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the result statement and interpretation; its multiplicity argument is separately represented by unit u18.",
+      "line_end": 126,
+      "line_start": 117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the constant in equation (7) is degraded in OCR, so exact numerical reuse must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A pair statistic bounds the density of simple zeros",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u04_simple_zero_statement.txt",
+      "unit_bytes": 672,
+      "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+      "unit_sha256": "ebf7cfdb27da66fcb338ede4a2c06097a97c9990a434c1c5fc2ee29c1e27afa1",
+      "unit_type": "statistical-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u04_simple_zero_statement.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 109,
+          "line_end": 116,
+          "text": "                                                                       a\n                                                                            a) T\n                                                                               -logT\n                                                                            3 2n     .\n\n     In the latter assertion one can delete the factor w(y - y') if one wishes. We use\n(6) to derive\n\n",
+          "sha256": "0c0861381f882e33e4fb19a6a58ae0baa3c7d641ff2957b246580cc4ed95226d"
+        },
+        "after": {
+          "line_start": 127,
+          "line_end": 134,
+          "text": "    Let 0 < Y1 ~ yz ~ ... denote the imaginary parts of the zeros of S(s) in the upper\n\n<!-- source-page: 3 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                       183\n\n\nhalf-plane. The average of Yn+ 1 - Yn is 2n/logYn; our Theorem enables us to show\n",
+          "sha256": "c41c77901ec8548b961ce7c7640ae61a369f8e406e5e057558976a7c4ccbb8ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 126,
+          "line_start": 117,
+          "title": "A pair statistic bounds the density of simple zeros",
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+          "unit_type": "statistical-consequence",
+          "why_material": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the result statement and interpretation; its multiplicity argument is separately represented by unit u18.",
+          "representation_dependency": "Moderate: the constant in equation (7) is degraded in OCR, so exact numerical reuse must be checked against the scan.",
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 115,
+            "line_start": 88,
+            "title": "Bandlimited kernels produce two weighted pair-sum asymptotics",
+            "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels",
+            "unit_type": "construction-and-consequence",
+            "why_material": "Two concrete test kernels translate the low-frequency theorem into pair-sum asymptotics, illustrating how the choice of Fourier profile changes the observable zero statistic."
+          },
+          {
+            "line_end": 164,
+            "line_start": 127,
+            "title": "Pair correlation forces deviations from mean zero spacing",
+            "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+            "unit_type": "consequence-and-motivation",
+            "why_material": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative kernels let aggregate pair-correlation estimates dominate diagonal multiplicity mass or count sufficiently close off-diagonal pairs, yielding respectively many simple zeros and the existence of subaverage gaps.",
+            "limit": "The numerical constants depend on nonoptimal kernels and are not claimed to be sharp.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u04_simple_zero_statement",
+              "montgomery1973_depth_u19_multiplicity_moment",
+              "montgomery1973_depth_u20_triangular_kernel_small_gaps"
+            ],
+            "title": "Positive kernels turn aggregate pair mass into arithmetic existence statements"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+        "spontaneous": {
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+          "spontaneous_reading": "A pair statistic can control multiplicity because repeated zeros contribute extra diagonal mass, converting an aggregate correlation estimate into a lower bound for simple zeros."
+        },
+        "directed": {
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+          "source_grounded_mathematics": "Corollary 2, conditional on RH, gives an asymptotic lower bound for the number of simple zeros up to height T and compares it with the total zero count; the prose concludes that a positive fixed proportion are simple.",
+          "conceptual_reading": "Diagonal pair mass acts as a multiplicity detector: limiting its excess forces many ordinates to occur only once.",
+          "representation_or_bridge": "The bridge is from the squared-sinc pair-sum estimate to a count of simple zeros, with multiplicities encoded by repeated equal ordinates.",
+          "boundary_or_failure": "A positive proportion does not establish that all zeros are simple, and the cited finite computation and Selberg result are comparison evidence rather than extensions of this corollary.",
+          "uncertainty": "Moderate: the conclusion is clear, but the exact numerical proportion in the displayed formula is OCR-degraded and should not be reused without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+        "critic_decision": "revise",
+        "supported": [
+          "The exact span states Corollary 2 under RH, compares the simple-zero count with the total zero count, and concludes that a positive fixed proportion of zeros are simple.",
+          "The candidate correctly separates this conditional corollary from the cited finite computation and Selberg comparison."
+        ],
+        "inference": [],
+        "unsupported_or_imported": [
+          "The spontaneous reading, conceptual reading, and representation bridge explain repeated zeros through excess diagonal mass and a squared-sinc pair sum, but that proof mechanism is not present in this result-only span or its bounded nearby context; it belongs to the later multiplicity argument.",
+          "The claim that multiplicities are encoded by repeated equal ordinates is likewise absent from this unit's evidence."
+        ],
+        "paraphrase_or_style_risk": [
+          "Without the imported diagonal mechanism, the candidate is largely a result paraphrase; it should remain honest about this unit's limited semantic depth."
+        ],
+        "context_or_ocr_risk": [
+          "The exact numerical proportion in equation (7) is OCR-degraded and must not be reconstructed."
+        ],
+        "missed_mechanism": [
+          "The unit itself does not contain the proof mechanism needed to justify the proposed diagonal interpretation."
+        ],
+        "revision_instructions": [
+          "Restrict the analysis to the RH-conditional positive-proportion statement, its comparison with the total count, and the distinction from the cited evidence.",
+          "Remove the squared-sinc, repeated-ordinate, and diagonal-mass mechanism claims, or explicitly mark them as requiring the separately bounded proof unit rather than this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the average-spacing normalization, the liminf and limsup discussion, the explicit 0.68 value, and the stated Dedekind-zeta motivation.",
+      "line_end": 164,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: constants and equation (10) are OCR-damaged; the qualitative spacing claims and stated 0.68 value are readable, but the ancillary inequality needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation forces deviations from mean zero spacing",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u05_gap_consequence_and_threshold.txt",
+      "unit_bytes": 1576,
+      "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+      "unit_sha256": "50f9d25c9156bfb965107c0de8f101cad57d4d78c9648d8c8ffa2d35c562d4e5",
+      "unit_type": "consequence-and-motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u05_gap_consequence_and_threshold.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "(7)                           o<y~tesimPle 1~(~+O(I)~ log T.\n\n    The number of zeros of ((s) with O<y~T is \",(TI2n) 10gT, so the above\nasserts that at least ~ of the zeros are simple. It is known (see [6J) that the first\n3,500,000 zeros are simple and lie on the critical line (j=~. Although one expects\nthat all the zeros of ((s) are simple, the only other result in this direction is due to A.\nSelberg [7]. His result holds unconditionally; it states that a positive density of\nthe zeros of (( s) are of odd order and lie 0 n the critical line.\n",
+          "sha256": "248a4ec0f747a9f209503922a79deca88f0866c4ec8dcfe5095906841f26e4c8"
+        },
+        "after": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "    One may inquire about the behaviour of F(ex) for ex ~ 1. Our first observation\nis that (2) cannot hold uniformly for O~ex~C if C is large. For if it did then (6)\nwould hold for O<ex~C. Write (6) as G(ex)~H(ex). On one hand Isin2xl~2Isinxl,\nso G(2ex)~G(ex) for all ex. On the other hand H(2ex»iH(ex) for ex~2. This suggests\nthat F(ex) makes some change in its behaviour for a~ 1. Further considerations\nof the above sort lead one to believe that certain averages of F(a) over large a are\nclose to 1. At the end of § 3 we describe two heuristic arguments which suggest that\n\n",
+          "sha256": "9e6e872fd831277f08c9f9e39dc5ec63024a6399a44bb36d94e08843bd11e6be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 164,
+          "line_start": 127,
+          "title": "Pair correlation forces deviations from mean zero spacing",
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+          "unit_type": "consequence-and-motivation",
+          "why_material": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the average-spacing normalization, the liminf and limsup discussion, the explicit 0.68 value, and the stated Dedekind-zeta motivation.",
+          "representation_dependency": "High: constants and equation (10) are OCR-damaged; the qualitative spacing claims and stated 0.68 value are readable, but the ancillary inequality needs scan verification.",
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 126,
+            "line_start": 117,
+            "title": "A pair statistic bounds the density of simple zeros",
+            "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+            "unit_type": "statistical-consequence",
+            "why_material": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence."
+          },
+          {
+            "line_end": 176,
+            "line_start": 165,
+            "title": "A dilation inequality rules out uniform continuation of the low-frequency law",
+            "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+            "unit_type": "counterfactual-obstruction",
+            "why_material": "Assuming the small-alpha formula across a large interval makes two scaled kernel consequences incompatible: the observable satisfies one dilation inequality while its predicted main term satisfies the opposite growth pattern. This forces a behavioral transition near alpha equal to one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+        "spontaneous": {
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+          "spontaneous_reading": "Once gaps are normalized by their mean scale, pair correlation forces some below-average spacing; the explicit 0.68 arises from a kernel choice and is valuable mainly as an existence threshold with room for optimization."
+        },
+        "directed": {
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+          "source_grounded_mathematics": "Under RH, the normalized liminf of consecutive ordinate gaps is bounded by a computable constant below one, stated here as 0.68; multiple zeros would make the liminf zero, and a positive-density refinement together with the mean yields a normalized limsup above one.",
+          "conceptual_reading": "An averaged pair law becomes an extremal spacing statement by positivity and normalization, while the separate Dedekind-zeta application explains why pushing the constant below a sharper threshold matters.",
+          "representation_or_bridge": "The bridge objects are consecutive ordinates, their mean-spacing normalization 2 pi/log gamma, and a positive test-kernel bound on close pairs.",
+          "boundary_or_failure": "The 0.68 value is not claimed optimal, the result is conditional on RH, and the class-number consequence is motivation with additional hypotheses rather than part of the gap proof itself.",
+          "uncertainty": "High: the qualitative claims and 0.68 are legible, but several constants and the ancillary Dedekind-zeta inequality are OCR-damaged."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states an RH-conditional normalized liminf bound below one, gives the explicit value 0.68, and notes that infinitely many multiple zeros would allow zero.",
+          "It states a stronger positive-density claim that, combined with the mean gap, yields a normalized limsup above one.",
+          "It presents the Dedekind-zeta/class-number statement as motivation for wanting a sharper threshold."
+        ],
+        "inference": [
+          "Calling 0.68 an existence threshold with room for improvement is supported by the author's interest in obtaining a smaller value, though optimality is not analyzed here."
+        ],
+        "unsupported_or_imported": [
+          "The candidate attributes the passage from pair correlation to the gap statement to positivity and a positive test kernel, but neither the kernel choice nor positivity argument occurs in this result-and-motivation span.",
+          "The representation bridge's 'positive test-kernel bound on close pairs' is imported from the later proof unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The result summary is specific and useful once the imported proof language is removed."
+        ],
+        "context_or_ocr_risk": [
+          "Equation (10) and several constants are damaged; only the qualitative ancillary consequence and the legible 0.68 should be retained without scan verification."
+        ],
+        "missed_mechanism": [
+          "This semantic unit states the gap consequence and motivation but does not expose the proof mechanism later supplied by the triangular-kernel argument."
+        ],
+        "revision_instructions": [
+          "Delete the positivity/test-kernel mechanism from the conceptual and bridge fields.",
+          "Describe this unit as fixing the mean-spacing normalization, the conditional liminf/limsup consequences, the multiple-zero alternative, and the separate motivation for improving 0.68."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Extends through the prose defining the matrix entries because the displayed determinant itself is absent from extraction.",
+      "line_end": 246,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (15) is lost and the matrix-entry OCR is damaged; only the prose-supported determinantal form and k=2 relation are safe without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unitary analogy predicts determinantal k-tuple correlations",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+      "unit_bytes": 598,
+      "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+      "unit_sha256": "088ab19f3712a6e9188ba8fa9ee55d7345a75e2db20bf31ed2603039202a9166",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "discovered) whose eigenvalues characterize the zeros of the zeta function. The\neigenvalues of a random real symmetric matrix of large order have a different pair\ncorrelation, and the eigenvalues of a random symplectic matrix of large order\nhave yet another pair correlation. In fact the \"form factors\" Fr(a), Fs(O:) of these\nlatter pair correlations are nonlinear for 0 < a < 1, so our Theorem enables us to\ndistinguish the behaviour of the zeros of' (s) from the eigenvalues of such matrices.\nHence, if there is a linear operator whose eigenvalues characterize the zeros of\nthe zeta function, we might expect that it is complex Hermitian or unitary.\n",
+          "sha256": "73a61ec460f6b0a799506d1d76d7593319e6059634cfab5c8f73e0c43b3d351b"
+        },
+        "after": {
+          "line_start": 247,
+          "line_end": 254,
+          "text": "    If one continues to draw on the analogy with random complex Hermitian\nmatrices then one may formulate a conjecture concerning the distribution of the\nnumbers Yn+ 1 -Yn' The precise conjecture involves a complicated (but calculable)\nspheroidal function. Thus, or otherwise, one may conjecture that\n\n(16)                               lim inf(Yn+ 1 -Yn) 10gYn=O,\n                                           n\n\n",
+          "sha256": "3c31aed670581da5a5442baadf0217eb4c2e7709efc058e0b572b053912c41ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 246,
+          "line_start": 233,
+          "title": "The unitary analogy predicts determinantal k-tuple correlations",
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+          "unit_type": "generalization",
+          "why_material": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Extends through the prose defining the matrix entries because the displayed determinant itself is absent from extraction.",
+          "representation_dependency": "High: equation (15) is lost and the matrix-entry OCR is damaged; only the prose-supported determinantal form and k=2 relation are safe without scan verification.",
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 232,
+            "line_start": 219,
+            "title": "Pair correlation distinguishes candidate spectral symmetry classes",
+            "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection",
+            "unit_type": "model-comparison-and-bridge",
+            "why_material": "The conjectured sine-kernel correlation matches large complex Hermitian or unitary matrices, while the proved nonlinear form-factor behavior excludes the real-symmetric and symplectic alternatives in the tested range, sharpening the proposed spectral-operator analogy."
+          },
+          {
+            "line_end": 264,
+            "line_start": 247,
+            "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+            "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+            "unit_type": "prediction-from-analogy",
+            "why_material": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The completed pair law favors unitary rather than orthogonal or symplectic statistics, and that model choice propagates to determinantal k-tuple correlations and extreme consecutive-gap predictions.",
+            "limit": "Only the low-frequency pair transform is proved here; the completion, higher correlations, and extreme-gap claims remain conjectural analogical consequences.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u07_pair_correlation_conjecture",
+              "montgomery1973_depth_u08_unitary_symmetry_selection",
+              "montgomery1973_depth_u09_higher_correlation_determinant",
+              "montgomery1973_depth_u10_extreme_gap_predictions"
+            ],
+            "title": "Pair statistics select a spectral model and generate higher-order predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+        "spontaneous": {
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+          "spontaneous_reading": "The unitary model packages all proposed k-point interactions into one determinant of pairwise sine-kernel entries, making the pair conjecture the first nontrivial marginal of a larger structure."
+        },
+        "directed": {
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+          "source_grounded_mathematics": "Continuing the complex-Hermitian analogy, the source conjectures a k-tuple correlation given by a determinant of a k by k matrix with diagonal entries one and off-diagonal sine-kernel entries; k=2 recovers the preceding pair conjecture.",
+          "conceptual_reading": "The determinant synthesizes pairwise kernel relations into a coherent higher-order correlation law rather than treating every k separately.",
+          "representation_or_bridge": "The bridge object is the sine-kernel matrix indexed by the normalized locations u_i, with its determinant representing the joint correlation.",
+          "boundary_or_failure": "This is a conjectural generalization from the random-matrix analogy, not a consequence of the proved pair theorem.",
+          "uncertainty": "High: the determinant display is absent and the entry formula is OCR-damaged, so only the prose-supported determinantal form and k=2 relation are safe."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+        "critic_decision": "revise",
+        "supported": [
+          "The span conjecturally extends the complex-Hermitian analogy to a k-tuple correlation expressed through a k-by-k sine-kernel matrix.",
+          "The surviving prose states the diagonal and off-diagonal entry types and says the preceding conjecture is the k=2 case."
+        ],
+        "inference": [
+          "The determinant can be interpreted as combining pair-indexed kernel entries into one higher-order law."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the pair conjecture the first nontrivial 'marginal'; the source only calls it the k=2 case, and no marginalization or consistency relation is stated."
+        ],
+        "paraphrase_or_style_risk": [
+          "Apart from 'marginal,' the determinant-synthesis language is specific to the displayed construction and not a generic analogy template."
+        ],
+        "context_or_ocr_risk": [
+          "Equation (15) is absent and the matrix-entry formula is damaged, so exact determinant notation cannot be safely reconstructed from this extraction."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'first nontrivial marginal' with 'k=2 instance.'",
+          "Keep the conjectural status and the restriction to the prose-supported determinantal form; do not reconstruct the missing display."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact source-grounded warning about interpreting computational evidence.",
+      "line_end": 269,
+      "line_start": 265,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: fully recoverable prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Slow approach to asymptotia can make accessible computations misleading",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u11_slow_asymptotic_warning.txt",
+      "unit_bytes": 388,
+      "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+      "unit_sha256": "5b1b5dc210ca4cf5b51e9ba6586baddc5b48f663617157f43a16ea5e38beb8aa",
+      "unit_type": "empirical-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u11_slow_asymptotic_warning.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 257,
+          "line_end": 264,
+          "text": "and\n\n(17)                             lim sUP(Yn+l-Yn) 10gYn= +co;\n                                       n\n\n\n\nso Corollary 3 is probably far from the truth.\n",
+          "sha256": "129ccdd8f7e776c6027f121ed517ef74134710a209f3ad3c869efdd2755321e5"
+        },
+        "after": {
+          "line_start": 270,
+          "line_end": 277,
+          "text": "\n   2. An explicit formula. In proving our Theorem we require the following\nformula, which relates zeros of ((s) to prime numbers.\n\n       LEMMA.   If 1<    (J   <2 and x ~ 1 then\n\n\n\n",
+          "sha256": "a4dd35ddee724ff26087cf4e8708f1864f5e43a0fc1fab0813d60fd33ef909f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 269,
+          "line_start": 265,
+          "title": "Slow approach to asymptotia can make accessible computations misleading",
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+          "unit_type": "empirical-limitation",
+          "why_material": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact source-grounded warning about interpreting computational evidence.",
+          "representation_dependency": "Low: fully recoverable prose.",
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 264,
+            "line_start": 247,
+            "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+            "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+            "unit_type": "prediction-from-analogy",
+            "why_material": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth."
+          },
+          {
+            "line_end": 359,
+            "line_start": 271,
+            "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+            "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+            "unit_type": "construction-and-representation-bridge",
+            "why_material": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 270,
+              "reason": "Blank separator before the explicit-formula section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+        "spontaneous": {
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+          "spontaneous_reading": "Computability of a statistic does not ensure diagnostic value when convergence to its asymptotic regime may be slow."
+        },
+        "directed": {
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+          "source_grounded_mathematics": "The source observes that statistics could be assembled from the first several thousand computed zeros, but failures of Gram's law suggest that the conjectured asymptotic behavior is approached slowly.",
+          "conceptual_reading": "Finite-height evidence can confound model mismatch with pre-asymptotic drift, so an empirical test needs scale sensitivity rather than a single accessible sample.",
+          "representation_or_bridge": "The bridge is comparison between finite zero statistics and asymptotic correlation predictions, with Gram-law behavior serving as a convergence warning.",
+          "boundary_or_failure": "No rate of convergence or quantitative correction is supplied, so the warning does not itself determine whether a particular finite dataset is misleading.",
+          "uncertainty": "Low: the unit is fully recoverable prose, though its empirical caution is qualitative."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says relevant statistics could be assembled from the first several thousand computed zeros.",
+          "It uses failures of Gram's law to warn that asymptotic behavior is approached slowly and that available numerical evidence may not be illuminating.",
+          "The candidate correctly notes that no convergence rate or quantitative correction is supplied."
+        ],
+        "inference": [
+          "The compact spontaneous reading is a reasonable general lesson from the explicit warning."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading introduces 'model mismatch,' 'pre-asymptotic drift,' and a requirement that empirical tests use scale sensitivity; these are sensible methodological proposals but are not stated in the frozen span.",
+          "The source does not prescribe a particular experimental design."
+        ],
+        "paraphrase_or_style_risk": [
+          "Because the span is itself only a qualitative caution, the analysis should not inflate it into a general validation protocol."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the model-mismatch diagnosis and the prescriptive scale-sensitivity claim.",
+          "Retain the narrower source-grounded warning that accessible finite-height statistics may poorly reflect the asymptotic regime and that the span supplies no rate for correcting this."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "88b654c6177c77097b881ebb9402a9b1d7d9ae47b89a4fffe53bd61a077378a6"
+}

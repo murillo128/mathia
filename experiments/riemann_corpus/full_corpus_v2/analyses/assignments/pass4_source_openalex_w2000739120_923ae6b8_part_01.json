@@ -1,0 +1,1437 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2000739120_923ae6b8_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2000739120",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The measure acts on compactly supported smooth functions and is treated at several differentiability levels.",
+      "line_end": 59,
+      "line_start": 41,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The central defining display at lines 44-46 is missing; only the prose-supported construction skeleton is accepted, and exact atom locations, scaling, and normalization require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper replaces the uniform additive lattice by a measure on positive reals whose discrete masses are weighted by Euler's totient function, creating the arithmetic irregularity later detected by Mellin transform and zeta factors.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Totient-weighted discrete measures on the positive multiplicative group",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u02.txt",
+      "unit_bytes": 857,
+      "unit_id": "openalex_w2000739120_depth_u02",
+      "unit_sha256": "fc636452777518962250158702183cf2d33b2c117f25227ca90c63cb23c30085",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u02.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 33,
+          "line_end": 40,
+          "text": "\n\nwhere / is the Fourier transform of / and, since / is smooth with compact support we\nhave that / is of rapid decay at infinity. Hence\n                     y Σ f(ny) = /(O) + o(y\")   as y -> 0 for all /? > 0.\n                      n€S\n    So, as y —» 0, the atoms of μy cluster uniformly and μy(f) gives a very good approx-\nimation of integrals of smooth functions with compact support.\n",
+          "sha256": "3c8e1f1f6ce80cc4190c5fa85f8c8445cd1c642d6ca7328ed70de6b2bb72e2b1"
+        },
+        "after": {
+          "line_start": 60,
+          "line_end": 67,
+          "text": "    We will prove the following theorems:\n\n    THEOREM A.       For every f G Cj(K*):\n\n\n                     y                 2\n                                  £( ) Ju                                                  (2)\n                                  (\\       /*oo\n",
+          "sha256": "e7ff80fd32c005fe0cef07ceb8a2c4c923acfcdb88c7392bf2d9ae0afe5c3050"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: multiplicative measures and main results",
+            "line_end": 119,
+            "line_start": 41,
+            "mathematical_role": "Introduces the totient-weighted multiplicative measure family, states convergence/RH and zero-free-region criteria, records rough-test obstructions and a special probe, and locates the geometric antecedent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 59,
+          "line_start": 41,
+          "title": "Totient-weighted discrete measures on the positive multiplicative group",
+          "unit_id": "openalex_w2000739120_depth_u02",
+          "unit_type": "construction",
+          "why_material": "The paper replaces the uniform additive lattice by a measure on positive reals whose discrete masses are weighted by Euler's totient function, creating the arithmetic irregularity later detected by Mellin transform and zeta factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The measure acts on compactly supported smooth functions and is treated at several differentiability levels.",
+          "representation_dependency": "The central defining display at lines 44-46 is missing; only the prose-supported construction skeleton is accepted, and exact atom locations, scaling, and normalization require scan verification.",
+          "unit_id": "openalex_w2000739120_depth_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 40,
+            "line_start": 16,
+            "title": "Poisson summation turns smoothness into rapid additive-measure convergence",
+            "unit_id": "openalex_w2000739120_depth_u01",
+            "unit_type": "motivating comparison",
+            "why_material": "The additive lattice example isolates a reusable mechanism: uniform atom clustering plus rapid Fourier decay makes evaluation against smooth compactly supported tests approximate integration with errors smaller than any prescribed power."
+          },
+          {
+            "line_end": 83,
+            "line_start": 60,
+            "title": "Convergence-rate dictionary for RH and zero-free half-planes",
+            "unit_id": "openalex_w2000739120_depth_u03",
+            "unit_type": "equivalent criteria",
+            "why_material": "The main theorem makes improvement of the measure-convergence rate for every smooth test function equivalent to RH and, more generally, pairs an O(y^(a-epsilon)) rate with absence of zeta zeros in Re(s)>2(1-a)."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u02",
+          "spontaneous_reading": "The construction replaces uniform lattice weights by Euler-totient weights on the positive multiplicative group, inserting arithmetic irregularity into a measure-convergence problem."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u02",
+          "source_grounded_mathematics": "The source defines a scale-indexed discrete measure on positive reals acting on compactly supported smooth tests, with masses weighted by Euler's totient function, which counts integers coprime to a given integer.",
+          "conceptual_reading": "Encoding the arithmetic sequence as a family of linear functionals makes convergence rates observable through test functions while preserving the totient weights that drive the difficulty.",
+          "representation_or_bridge": "The measure representation bridges multiplicative arithmetic data and weak convergence on the positive real group.",
+          "boundary_or_failure": "The central defining display is missing, so the exact atom locations, scale factors, and normalization cannot be recovered from this unit.",
+          "uncertainty": "Only the prose-supported construction skeleton and function-space setting are reliable; formula-level reuse requires the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span introduces a measure on the positive multiplicative group, acting on compactly supported smooth functions, and identifies Euler's totient function and its coprimality meaning."
+        ],
+        "inference": [
+          "Reading the missing defining display as using totient-weighted masses is strongly suggested by the prose immediately following it."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this unit by itself turns convergence rates into observable weak-convergence data is not established in the span; it imports the surrounding paper-level purpose."
+        ],
+        "paraphrase_or_style_risk": [
+          "The bridge to weak convergence is generic unless tied to a recoverable formula or an in-span convergence statement."
+        ],
+        "context_or_ocr_risk": [
+          "The central display is absent, so atom locations, scale dependence, weights, and normalization cannot be independently verified."
+        ],
+        "missed_mechanism": [
+          "No convergence mechanism is actually given in this construction-only slice."
+        ],
+        "revision_instructions": [
+          "Retain only the prose-supported construction skeleton and dual-space setting; label totient weighting as display-dependent, and remove the unsupported weak-convergence/rate claim."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The universal quantifier over test functions is essential because later the test-function Mellin factor can be chosen not to vanish at a proposed zeta zero.",
+      "line_end": 83,
+      "line_start": 60,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several exponents and the Theorem A display are typographically damaged; the general zero-free mapping in lines 79-83 is readable, while exact formula reuse requires the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main theorem makes improvement of the measure-convergence rate for every smooth test function equivalent to RH and, more generally, pairs an O(y^(a-epsilon)) rate with absence of zeta zeros in Re(s)>2(1-a).",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convergence-rate dictionary for RH and zero-free half-planes",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u03.txt",
+      "unit_bytes": 1044,
+      "unit_id": "openalex_w2000739120_depth_u03",
+      "unit_sha256": "14c8cdd2bf34ad4c7321ba7d509843702de85915f35bb8725fa31fcd7eaf3349",
+      "unit_type": "equivalent criteria",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u03.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 52,
+          "line_end": 59,
+          "text": "                                          596\n\n<!-- source-page: 2 -->\n\nDISCRETE MEASURES AND THE RIEMANN HYPOTHESIS                               597\n\ninteger or r = oo, we can consider ray as an element in the dual space of C£(R*) =\ncomplex-valued functions / : R* —> C, of class CΓ, with compact support.\n",
+          "sha256": "1f421f8de6eb0142ee32dab2f0fdd6144a4e1dec71afc4f733a19cf2cd2e2347"
+        },
+        "after": {
+          "line_start": 84,
+          "line_end": 91,
+          "text": "   3) If f is the characteristic function of an interval then:\n\n                             Jmy-a\\my(f)              - m 0 (/)| = oo,     if a > -.\n\n      Hence | 25 the best possible exponent of the error for some nonsmooth functions.\n   4) Let the function F} with domain in the positive reals be defined by\n                                                          -x\n\n",
+          "sha256": "a5076cff293bbb309eae697bfd182c3e59d47d7f9dcdecf02548e37bea77afc0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: multiplicative measures and main results",
+            "line_end": 119,
+            "line_start": 41,
+            "mathematical_role": "Introduces the totient-weighted multiplicative measure family, states convergence/RH and zero-free-region criteria, records rough-test obstructions and a special probe, and locates the geometric antecedent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 83,
+          "line_start": 60,
+          "title": "Convergence-rate dictionary for RH and zero-free half-planes",
+          "unit_id": "openalex_w2000739120_depth_u03",
+          "unit_type": "equivalent criteria",
+          "why_material": "The main theorem makes improvement of the measure-convergence rate for every smooth test function equivalent to RH and, more generally, pairs an O(y^(a-epsilon)) rate with absence of zeta zeros in Re(s)>2(1-a)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The universal quantifier over test functions is essential because later the test-function Mellin factor can be chosen not to vanish at a proposed zeta zero.",
+          "representation_dependency": "Several exponents and the Theorem A display are typographically damaged; the general zero-free mapping in lines 79-83 is readable, while exact formula reuse requires the scan.",
+          "unit_id": "openalex_w2000739120_depth_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 59,
+            "line_start": 41,
+            "title": "Totient-weighted discrete measures on the positive multiplicative group",
+            "unit_id": "openalex_w2000739120_depth_u02",
+            "unit_type": "construction",
+            "why_material": "The paper replaces the uniform additive lattice by a measure on positive reals whose discrete masses are weighted by Euler's totient function, creating the arithmetic irregularity later detected by Mellin transform and zeta factors."
+          },
+          {
+            "line_end": 88,
+            "line_start": 84,
+            "title": "Characteristic functions impose a sharp rough-test exponent barrier",
+            "unit_id": "openalex_w2000739120_depth_u04",
+            "unit_type": "obstruction",
+            "why_material": "The theorem separates smooth-test contour behavior from nonsmooth tests by asserting that interval characteristics cannot enjoy arbitrarily improved convergence and that the stated exponent is best possible for some nonsmooth functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A measure-convergence rate is translated into a domain of Mellin holomorphy, while zeta-induced poles delimit how far inversion can move; universal test functions prevent accidental cancellation of those poles.",
+            "limit": "This is a source-internal analytic mechanism conditional on the stated zeta estimates and the extracted normalizations; several exact displays require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u03",
+              "openalex_w2000739120_depth_u11",
+              "openalex_w2000739120_depth_u13",
+              "openalex_w2000739120_depth_u15",
+              "openalex_w2000739120_depth_u16"
+            ],
+            "title": "Mellin poles as convergence-rate obstructions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u03",
+          "spontaneous_reading": "The theorem turns a universal small-scale discrepancy exponent into a zero-free half-plane for zeta, making convergence speed a proxy for how far zeta zeros extend to the right."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u03",
+          "source_grounded_mathematics": "Theorem B states an RH equivalence using the convergence of m_y(f) to m_0(f) for every smooth compactly supported f. More generally, an O(y^(a-epsilon)) rate for every such f is paired in both directions with the absence of zeta zeros in Re(s) greater than 2(1-a).",
+          "conceptual_reading": "A quantitative asymptotic is being used as a spectral boundary detector: improving the exponent asserts that the analytic transform has no obstructing singularity in a larger region.",
+          "representation_or_bridge": "The bridge is the later Mellin transform of the measure family, where convergence near y=0 becomes holomorphy and zeta zeros can become poles.",
+          "boundary_or_failure": "The universal quantifier over test functions is essential; a single test may cancel a zeta-induced pole and cannot establish the stated converse.",
+          "uncertainty": "Several displays and endpoints are OCR-damaged, although the general exponent-to-half-plane map is readable; exact theorem notation requires scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The readable part of Theorem B gives a universal smooth-test rate criterion and the two-way correspondence between an O(y^(a-epsilon)) rate and absence of zeta zeros in Re(s)>2(1-a).",
+          "The span also visibly states an RH if-and-only-if assertion, though its central rate display is missing."
+        ],
+        "inference": [
+          "Calling the rate a detector of a zero-free boundary is a faithful conceptual compression of the stated equivalence."
+        ],
+        "unsupported_or_imported": [
+          "The Mellin-holomorphy, pole-obstruction, test-factor cancellation, and noncancellation explanations come from later proof material, not this theorem-statement slice."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The Theorem A display, the RH-equivalence rate, and several interval endpoints or exponents are damaged; exact theorem notation is not recoverable here."
+        ],
+        "missed_mechanism": [
+          "This span states the universal quantifier but does not itself explain why a single test can cancel a zeta-induced pole."
+        ],
+        "revision_instructions": [
+          "Keep the theorem-level rate/zero-free correspondence, but remove or explicitly mark as later-proof hypotheses all Mellin, pole, and cancellation mechanisms; do not reconstruct the missing RH exponent."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later lemma at lines 467-502 supplies the arithmetic contradiction behind this obstruction.",
+      "line_end": 88,
+      "line_start": 84,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The limiting display is partially garbled; the prose identifies the optimal-exponent conclusion, but scan verification is required for its exact numerical rendering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem separates smooth-test contour behavior from nonsmooth tests by asserting that interval characteristics cannot enjoy arbitrarily improved convergence and that the stated exponent is best possible for some nonsmooth functions.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Characteristic functions impose a sharp rough-test exponent barrier",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u04.txt",
+      "unit_bytes": 237,
+      "unit_id": "openalex_w2000739120_depth_u04",
+      "unit_sha256": "1dcb2f798bf7be6fd245fc72b7f1d39b5ff24a6befcc73a6e528d7d14edef494",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u04.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n\n      as y —»• 0 ? /or a// e > 0.\n   2) Furthermore, if a £ (|,f ) is swcΛ fΛa<, /or all functions f G C^R*) one Λas,\n                                             m y (/) = m0(/) + 0(j/a-£),                   (3)\n      aθ y —>• 0; /or a// e > 0 ; <Aen ίAe Riemann zeta-function has no zeroes in the half-\n      plane 3ί(s) > 2(1 — a). Conversely, if the Riemann zeta-function has no zeroes in\n      the half-plane 5ft(s) > 2(1 - a) then (3) holds for all functions f E C^(M').\n",
+          "sha256": "9f95eab9d7095c7d919a97d5a9e2e584f8f50976173fd99b542e8705ff0a1ff8"
+        },
+        "after": {
+          "line_start": 89,
+          "line_end": 96,
+          "text": "   4) Let the function F} with domain in the positive reals be defined by\n                                                          -x\n\n\n       Then:\n\n\n\n",
+          "sha256": "2e80ac212ba9e4b8443396160900cf3f2b038c090e1780281e81b5e18a8f4559"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: multiplicative measures and main results",
+            "line_end": 119,
+            "line_start": 41,
+            "mathematical_role": "Introduces the totient-weighted multiplicative measure family, states convergence/RH and zero-free-region criteria, records rough-test obstructions and a special probe, and locates the geometric antecedent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 88,
+          "line_start": 84,
+          "title": "Characteristic functions impose a sharp rough-test exponent barrier",
+          "unit_id": "openalex_w2000739120_depth_u04",
+          "unit_type": "obstruction",
+          "why_material": "The theorem separates smooth-test contour behavior from nonsmooth tests by asserting that interval characteristics cannot enjoy arbitrarily improved convergence and that the stated exponent is best possible for some nonsmooth functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The later lemma at lines 467-502 supplies the arithmetic contradiction behind this obstruction.",
+          "representation_dependency": "The limiting display is partially garbled; the prose identifies the optimal-exponent conclusion, but scan verification is required for its exact numerical rendering.",
+          "unit_id": "openalex_w2000739120_depth_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 83,
+            "line_start": 60,
+            "title": "Convergence-rate dictionary for RH and zero-free half-planes",
+            "unit_id": "openalex_w2000739120_depth_u03",
+            "unit_type": "equivalent criteria",
+            "why_material": "The main theorem makes improvement of the measure-convergence rate for every smooth test function equivalent to RH and, more generally, pairs an O(y^(a-epsilon)) rate with absence of zeta zeros in Re(s)>2(1-a)."
+          },
+          {
+            "line_end": 103,
+            "line_start": 89,
+            "title": "A designated test function detects zeros approaching Re(s)=1",
+            "unit_id": "openalex_w2000739120_depth_u05",
+            "unit_type": "special probe",
+            "why_material": "A single specially chosen function is asserted to convert extreme failure of the convergence rate into the statement that zeta zeros occur arbitrarily close to the line Re(s)=1, providing a targeted alternative to the all-test-function criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth compact support supplies transform decay that enables contour estimates, whereas characteristic functions retain arithmetic jump effects that obstruct the same exponent improvement.",
+            "limit": "The Poisson example concerns a different additive family, and the exact sharp exponent in the damaged displays must be checked from the scan.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u01",
+              "openalex_w2000739120_depth_u04",
+              "openalex_w2000739120_depth_u07",
+              "openalex_w2000739120_depth_u12",
+              "openalex_w2000739120_depth_u17"
+            ],
+            "title": "Test regularity selects the available error mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u04",
+          "spontaneous_reading": "Interval indicators expose a sharp obstruction that smooth tests hide: their discontinuities retain arithmetic jump effects and prevent the same improvement of the error exponent."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u04",
+          "source_grounded_mathematics": "For a characteristic function of an interval, the source asserts divergence of a suitably normalized discrepancy above a threshold and concludes that the displayed exponent is best possible for some nonsmooth tests.",
+          "conceptual_reading": "Test regularity is not cosmetic: changing from smooth probes to discontinuous indicators changes which fluctuations survive and therefore which convergence rates are attainable.",
+          "representation_or_bridge": "The interval test bridges measure discrepancy to partial sums of the totient function, whose discrete jumps are used later for the sharpness contradiction.",
+          "boundary_or_failure": "This obstruction concerns nonsmooth characteristic functions and does not contradict the smoother contour-shift results.",
+          "uncertainty": "The normalized limit and numerical threshold are garbled in this span, so the qualitative sharpness claim is secure but its exact exponent needs scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span asserts divergence of a normalized discrepancy for interval characteristic functions and says the displayed exponent is best possible for some nonsmooth functions."
+        ],
+        "inference": [
+          "It is reasonable to distinguish this nonsmooth-test obstruction from the smooth-test statements, but the cause is not supplied here."
+        ],
+        "unsupported_or_imported": [
+          "Arithmetic jump effects, partial sums of the totient function, the later prime-step contradiction, and contour-shift comparisons are imported from other units."
+        ],
+        "paraphrase_or_style_risk": [
+          "The statement that discontinuities retain fluctuations is a plausible generic regularity template here, not an in-span mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The normalization, threshold, and numerical exponent are garbled, so only the qualitative sharpness assertion is reliable."
+        ],
+        "missed_mechanism": [
+          "The slice states an obstruction without proving or diagnosing it."
+        ],
+        "revision_instructions": [
+          "Restrict the analysis to the qualitative interval-indicator sharpness claim and explicitly withhold the exact exponent and causal jump mechanism pending formula recovery or the later proof span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof later exploits this function's unusually transparent Mellin-transform poles and sufficient, though non-Paley-Wiener, decay.",
+      "line_end": 103,
+      "line_start": 89,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definition of the function and one displayed limit are missing or damaged; the stated iff meaning is readable, but the exact probe must be recovered from the scan before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A single specially chosen function is asserted to convert extreme failure of the convergence rate into the statement that zeta zeros occur arbitrarily close to the line Re(s)=1, providing a targeted alternative to the all-test-function criterion.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A designated test function detects zeros approaching Re(s)=1",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u05.txt",
+      "unit_bytes": 631,
+      "unit_id": "openalex_w2000739120_depth_u05",
+      "unit_sha256": "c1d434eea3dbe4663159403d62f04207c1f120ba2d11ddfc94371d7e3b449dc0",
+      "unit_type": "special probe",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u05.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "      aθ y —>• 0; /or a// e > 0 ; <Aen ίAe Riemann zeta-function has no zeroes in the half-\n      plane 3ί(s) > 2(1 — a). Conversely, if the Riemann zeta-function has no zeroes in\n      the half-plane 5ft(s) > 2(1 - a) then (3) holds for all functions f E C^(M').\n   3) If f is the characteristic function of an interval then:\n\n                             Jmy-a\\my(f)              - m 0 (/)| = oo,     if a > -.\n\n      Hence | 25 the best possible exponent of the error for some nonsmooth functions.\n",
+          "sha256": "f8ed3e1792137db3207193e0764c382460f60dc06357ad123bd10d7a39ee3224"
+        },
+        "after": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "    If / = χ     is the characteristic function of the interval [α,6], 0 < a < 6, then we\ncan also define my(f) in the obvious manner:\n\n                                                            ,\n                                                    a y 2 n b\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "0335229e248fe011c19805e65379c3430ee9c9ebc36143d09c97ebec8a699cd3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: multiplicative measures and main results",
+            "line_end": 119,
+            "line_start": 41,
+            "mathematical_role": "Introduces the totient-weighted multiplicative measure family, states convergence/RH and zero-free-region criteria, records rough-test obstructions and a special probe, and locates the geometric antecedent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 103,
+          "line_start": 89,
+          "title": "A designated test function detects zeros approaching Re(s)=1",
+          "unit_id": "openalex_w2000739120_depth_u05",
+          "unit_type": "special probe",
+          "why_material": "A single specially chosen function is asserted to convert extreme failure of the convergence rate into the statement that zeta zeros occur arbitrarily close to the line Re(s)=1, providing a targeted alternative to the all-test-function criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof later exploits this function's unusually transparent Mellin-transform poles and sufficient, though non-Paley-Wiener, decay.",
+          "representation_dependency": "The definition of the function and one displayed limit are missing or damaged; the stated iff meaning is readable, but the exact probe must be recovered from the scan before reuse.",
+          "unit_id": "openalex_w2000739120_depth_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 88,
+            "line_start": 84,
+            "title": "Characteristic functions impose a sharp rough-test exponent barrier",
+            "unit_id": "openalex_w2000739120_depth_u04",
+            "unit_type": "obstruction",
+            "why_material": "The theorem separates smooth-test contour behavior from nonsmooth tests by asserting that interval characteristics cannot enjoy arbitrarily improved convergence and that the stated exponent is best possible for some nonsmooth functions."
+          },
+          {
+            "line_end": 119,
+            "line_start": 114,
+            "title": "The discrete-measure problem descends from a horocycle-measure formulation",
+            "unit_id": "openalex_w2000739120_depth_u06",
+            "unit_type": "historical bridge",
+            "why_material": "The author explicitly connects the construction to Zagier's relation between RH and horocyclic measures on the modular orbifold, locating the arithmetic measure model as a continuation of a geometric-dynamical viewpoint."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Choosing a test with a Mellin transform whose half-plane poles come only from zeta zeros makes extreme zero locations directly observable; weaker derivative decay still suffices for a contour/Fourier remainder argument.",
+            "limit": "The probe's defining and transform formulas are absent from the extraction, so this synthesis is semantic only until scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u05",
+              "openalex_w2000739120_depth_u18",
+              "openalex_w2000739120_depth_u19"
+            ],
+            "title": "A specialized non-Paley-Wiener probe trades genericity for pole transparency"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 109,
+              "line_start": 104,
+              "reason": "Formula-dependent note extending the measure evaluation to interval characteristics."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u05",
+          "spontaneous_reading": "A deliberately chosen probe compresses a global question about zeros near Re(s)=1 into the extreme normalized error of one measure evaluation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u05",
+          "source_grounded_mathematics": "Theorem B designates a function F and asserts that divergence of its normalized discrepancy for every exponent above the stated threshold is equivalent to zeta having zeros arbitrarily close to Re(s)=1.",
+          "conceptual_reading": "Rather than quantify over all tests, the construction seeks one diagnostic whose transform does not obscure the relevant zeta singularities.",
+          "representation_or_bridge": "The later bridge is the Mellin transform of F, whose half-plane pole set is claimed to come only from zeros of zeta(2s).",
+          "boundary_or_failure": "The statement does not identify the locations of individual zeros or prove RH; it detects the extreme alternative of rightmost zero real parts approaching one.",
+          "uncertainty": "The definition of F and part of the normalized limit are missing, so the exact probe cannot be reconstructed or reused from this text layer."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that a designated function F has an extreme normalized discrepancy if and only if zeta zeros occur arbitrarily close to Re(s)=1, described as the strongest failure alternative."
+        ],
+        "inference": [
+          "Describing F as a single diagnostic probe is a direct conceptual restatement of the one-function equivalence."
+        ],
+        "unsupported_or_imported": [
+          "Claims about F's Mellin pole set, cancellation avoidance, or transform transparency are supplied only by later units, not this theorem-statement slice."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The definition of F and an associated display are absent, and part of the normalization is damaged; F cannot be reconstructed from this evidence."
+        ],
+        "missed_mechanism": [
+          "No reason is given in-span for why this particular F detects the rightmost-zero alternative."
+        ],
+        "revision_instructions": [
+          "Keep the readable if-and-only-if statement and its limited meaning; remove the later Mellin explanation and emphasize that neither the probe nor the exact normalized threshold is reusable from this slice."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span gives provenance and a bridge, not an argument establishing the cited geometric equivalence.",
+      "line_end": 119,
+      "line_start": 114,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only and stable in the normalized text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author explicitly connects the construction to Zagier's relation between RH and horocyclic measures on the modular orbifold, locating the arithmetic measure model as a continuation of a geometric-dynamical viewpoint.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The discrete-measure problem descends from a horocycle-measure formulation",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u06.txt",
+      "unit_bytes": 460,
+      "unit_id": "openalex_w2000739120_depth_u06",
+      "unit_sha256": "0086eb6e03e5c0a9e29293a6282186aabd7ff5093cb351a415d12d3a0382ca08",
+      "unit_type": "historical bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u06.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 106,
+          "line_end": 113,
+          "text": "\n                                                            ,\n                                                    a y 2 n b\n\n<!-- source-page: 3 -->\n\n598                                     ALBERTO VERJOVSKY\n\n",
+          "sha256": "78100196d6a39002a134c329981d4f4a6e002c424fc9cd514f8f9724485b2d4a"
+        },
+        "after": {
+          "line_start": 120,
+          "line_end": 127,
+          "text": "    In order to be as self-contained as possible we will recall some classical and funda-\nmental results.\n\n\n        2.   Preliminaries\n    First, let us start by proving formula (2) for characteristic functions. Let / = χ[α b]\nbe the characteristic function of the interval [α,δ], where 0 < a < b. Then:\n\n",
+          "sha256": "0461b8a6537ee03a2c41675a036182f200f17bde5a60f543f9d513b45fff3b41"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: multiplicative measures and main results",
+            "line_end": 119,
+            "line_start": 41,
+            "mathematical_role": "Introduces the totient-weighted multiplicative measure family, states convergence/RH and zero-free-region criteria, records rough-test obstructions and a special probe, and locates the geometric antecedent."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 119,
+          "line_start": 114,
+          "title": "The discrete-measure problem descends from a horocycle-measure formulation",
+          "unit_id": "openalex_w2000739120_depth_u06",
+          "unit_type": "historical bridge",
+          "why_material": "The author explicitly connects the construction to Zagier's relation between RH and horocyclic measures on the modular orbifold, locating the arithmetic measure model as a continuation of a geometric-dynamical viewpoint."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span gives provenance and a bridge, not an argument establishing the cited geometric equivalence.",
+          "representation_dependency": "Prose-only and stable in the normalized text.",
+          "unit_id": "openalex_w2000739120_depth_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 103,
+            "line_start": 89,
+            "title": "A designated test function detects zeros approaching Re(s)=1",
+            "unit_id": "openalex_w2000739120_depth_u05",
+            "unit_type": "special probe",
+            "why_material": "A single specially chosen function is asserted to convert extreme failure of the convergence rate into the statement that zeta zeros occur arbitrarily close to the line Re(s)=1, providing a targeted alternative to the all-test-function criterion."
+          },
+          {
+            "line_end": 162,
+            "line_start": 124,
+            "title": "Mertens plus Abel summation lifts interval asymptotics to smooth tests",
+            "unit_id": "openalex_w2000739120_depth_u07",
+            "unit_type": "derivation",
+            "why_material": "The paper first evaluates interval tests using the summatory behavior of the totient function and then uses Abel summation and uniform approximation to extend the baseline convergence estimate to compactly supported smooth or continuous functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The totient-weighted measures can be viewed through logarithmic discrete support and Farey sequences or through convergence of periodic horocycle measures to Haar measure, providing distinct lenses on the same arithmetic irregularity.",
+            "limit": "The article states or cites these bridges but does not reprove the full external geometric results in the inspected spans.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u06",
+              "openalex_w2000739120_depth_u08",
+              "openalex_w2000739120_depth_u10"
+            ],
+            "title": "Arithmetic measures admit geometric and combinatorial representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 109,
+              "line_start": 104,
+              "reason": "Formula-dependent note extending the measure evaluation to interval characteristics."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 123,
+              "line_start": 120,
+              "reason": "Transition into recalled preliminaries."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u06",
+          "spontaneous_reading": "The arithmetic discrete-measure model is positioned as a descendant of a geometric picture in which RH is related to horocyclic measures on the modular orbifold."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u06",
+          "source_grounded_mathematics": "The author says the measures arose from studying Zagier's work and cites a connection between RH and horocyclic measures on the modular orbifold, describing the present paper as a continuation of that line.",
+          "conceptual_reading": "The span suggests that the same asymptotic phenomenon can be reframed geometrically, potentially replacing arithmetic sums by the distribution of dynamical measures.",
+          "representation_or_bridge": "The named bridge is from totient-weighted measures on positive reals to horocycle measures on a modular quotient.",
+          "boundary_or_failure": "This is provenance and a cited connection, not a proof or a detailed mapping between the two formulations.",
+          "uncertainty": "The prose is clear, but the mathematical content of the external geometric equivalence is outside the assigned evidence."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The author explicitly says the measures arose while studying Zagier's paper, cites Zagier's connection between RH and horocyclic measures on the modular orbifold, and calls this paper a continuation of that work."
+        ],
+        "inference": [
+          "The provenance suggests a geometric viewpoint may have motivated the arithmetic construction."
+        ],
+        "unsupported_or_imported": [
+          "The span does not identify a direct map from the totient-weighted measures to horocycle measures or establish that arithmetic sums and dynamical distributions are equivalent formulations of the same asymptotic."
+        ],
+        "paraphrase_or_style_risk": [
+          "The proposed replacement of arithmetic sums by dynamical measures is an attractive but content-free analogy without the cited external argument."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [
+          "This is provenance only; the mathematical content of Zagier's connection is outside the evidence boundary."
+        ],
+        "revision_instructions": [
+          "Narrow the bridge to the explicitly cited historical connection and continuation claim; do not assert a measure-level correspondence or geometric reformulation that this span does not give."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Compact support also makes m_y(f) vanish for sufficiently large y, so the analytic issue is concentrated near y=0.",
+      "line_end": 211,
+      "line_start": 173,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The transform definition and convergence half-plane are readable despite symbol substitutions; exact notation should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrating m_y(f) against y^(s-2) gives a holomorphic transform on its initial half-plane and, when test functions vary, a weakly holomorphic measure- or distribution-valued function intended for meromorphic continuation.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin transform packages the entire measure family as a distribution-valued analytic object",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u09.txt",
+      "unit_bytes": 1921,
+      "unit_id": "openalex_w2000739120_depth_u09",
+      "unit_sha256": "853a1e96e3366440e170c50daf1e77a31cf24f23bfa85be8f17327fcbbf2db8b",
+      "unit_type": "transform setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u09.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "which are supported on the periodic orbits and uniformly distributed with respect to\narc-length, converge vaguely to Haar measure as the period tends to infinity (see [V] and\n[z]).\n\n<!-- source-page: 4 -->\n\nDISCRETE MEASURES AND THE RBEMANN HYPOTHESIS                           599\n\n",
+          "sha256": "a42b7b233fb3730714824dbf3131c7349615aa12cc962e5bf5d13e14484e6720"
+        },
+        "after": {
+          "line_start": 212,
+          "line_end": 219,
+          "text": "  (b) We notice that for every 0 < r < oo, and / E C^M*) we have m y (/) = 0 if y is\n      sufficiently large:\n                   my(f) = 0 for all     y > 6,   where support(/) C [α, b].\n  (c) Via the logarithm, or the exponential, we can transport measures defined on M\n      to measures defined on M*, and vice versa. Let m+ = exp*(ra y ) be the measure\n      on the real line obtained by pulling back my by exp : M —»• K*. Then m+ is\n      supported on a discrete set of points which is irregularly distributed on the real\n      line and the Dirac masses that define ra+ are weighted by Euler's function. This\n",
+          "sha256": "d213ca7ec2c24d77305bc3e2a109b2c0ac06d87176df6610bc245f700f1be022"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mellin transform and meromorphic structure",
+            "line_end": 324,
+            "line_start": 169,
+            "mathematical_role": "Defines the Mellin transform, proves its initial domain, factorizes it into test-function and zeta data, identifies possible poles, states a functional equation, and establishes vertical-strip decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 211,
+          "line_start": 173,
+          "title": "Mellin transform packages the entire measure family as a distribution-valued analytic object",
+          "unit_id": "openalex_w2000739120_depth_u09",
+          "unit_type": "transform setup",
+          "why_material": "Integrating m_y(f) against y^(s-2) gives a holomorphic transform on its initial half-plane and, when test functions vary, a weakly holomorphic measure- or distribution-valued function intended for meromorphic continuation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Compact support also makes m_y(f) vanish for sufficiently large y, so the analytic issue is concentrated near y=0.",
+          "representation_dependency": "The transform definition and convergence half-plane are readable despite symbol substitutions; exact notation should be checked against the scan.",
+          "unit_id": "openalex_w2000739120_depth_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 167,
+            "line_start": 159,
+            "title": "Mertens convergence becomes equidistribution of periodic horocycles",
+            "unit_id": "openalex_w2000739120_depth_u08",
+            "unit_type": "representation bridge",
+            "why_material": "The source interprets the same limiting statement geometrically: periodic-orbit horocycle measures, normalized by arc length, converge vaguely to Haar measure as their periods grow."
+          },
+          {
+            "line_end": 228,
+            "line_start": 212,
+            "title": "Logarithmic transport exposes irregular weighted support and a Farey-sequence connection",
+            "unit_id": "openalex_w2000739120_depth_u10",
+            "unit_type": "change of representation",
+            "why_material": "Pulling the multiplicative measures back along the exponential map turns them into discrete measures on the real line whose irregular support and totient weights explain why their errors differ from the uniformly spaced Poisson example and connect them to Farey-sequence criteria."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u09",
+          "spontaneous_reading": "Integrating across the scale parameter packages all m_y evaluations into a Mellin transform, turning small-y asymptotics into analytic continuation and pole questions."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u09",
+          "source_grounded_mathematics": "For each compactly supported test f, the source defines M_f(s) by integrating m_y(f)y^(s-2) over positive y, proves absolute convergence and holomorphy initially for Re(s)>1, and views the varying-test object as weakly holomorphic with measure or finite-order distribution values.",
+          "conceptual_reading": "The scale variable is diagonalized by Mellin transform, so convergence rates can later be read as domains of holomorphy rather than estimated directly in y.",
+          "representation_or_bridge": "This is the multiplicative analogue of a Fourier transform; test evaluation becomes a scalar analytic function, while variation over tests yields a distribution-valued analytic object.",
+          "boundary_or_failure": "Compact support removes the large-y tail, but continuation beyond the initial half-plane still depends on the later zeta factorization.",
+          "uncertainty": "Symbol substitutions affect the notation, though the transform, initial half-plane, and weak-holomorphy claims are readable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines M_f(s) by integrating m_y(f)y^(s-2), proves absolute and locally uniform convergence for Re(s)>1, and describes weakly holomorphic measure- or distribution-valued versions with intended meromorphic continuation."
+        ],
+        "inference": [
+          "Interpreting Mellin transform as diagonalizing multiplicative scale and turning asymptotics into analytic-domain questions is a substantive conceptual inference."
+        ],
+        "unsupported_or_imported": [
+          "The claim that compact support eliminates the large-y tail is stated only in the following unit, and dependence on a later zeta factorization is not established in this slice."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling Mellin transform merely the multiplicative analogue of Fourier transform is generic unless anchored to the displayed y^(s-2) scale operation, which the revision should retain."
+        ],
+        "context_or_ocr_risk": [
+          "Some symbols in the transform and function-space notation are corrupted, though the initial half-plane and weak-holomorphy claims are clear."
+        ],
+        "missed_mechanism": [
+          "The span announces continuation but does not yet supply the arithmetic factorization that enables it."
+        ],
+        "revision_instructions": [
+          "Keep the transform setup, initial domain, and distribution-valued packaging; label the scale-diagonalization reading as inference and remove the adjacent-unit large-y and later-factorization claims."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The simple pole at s=1 produces the limiting measure; other possible poles include negative integers and zeros of zeta(2s) in the stated strip.",
+      "line_end": 275,
+      "line_start": 230,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Key displayed quotients are visually degraded but the factorization, entire test factor, continuation, residue role, and pole locations are stated in prose; formula-level use requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changing variables term by term factorizes the transform into an entire Mellin factor determined by f and a quotient of zeta functions. Meromorphic continuation then turns zeta zeros into possible poles, except where the chosen test factor cancels them.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Mellin transform separates the test function from a zeta quotient",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u11.txt",
+      "unit_bytes": 1938,
+      "unit_id": "openalex_w2000739120_depth_u11",
+      "unit_sha256": "b9bad5c78e85cb0e50d89bfb1b786f0ef1c5e6c2c9594be0637655b8335c6108",
+      "unit_type": "analytic factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u11.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 222,
+          "line_end": 229,
+          "text": "\n600                                   ALBERTO VERJOVSKY\n\n        accounts for the difference between the measures μ y defined at the beginning of\n        the introduction and m y , as far as error terms are concerned. This also establishes\n        a connection between the measures {my} >0 and Farey sequences as in the well-\n        known results of Franel ([F]) and Landau ([La]). See ([V]).\n\n",
+          "sha256": "c4e145ebd8c11fca493c975168eee92bf0996c0afbbc8e0acda29d38c25072b8"
+        },
+        "after": {
+          "line_start": 276,
+          "line_end": 283,
+          "text": "<!-- source-page: 6 -->\n\nDISCRETE MEASURES AND THE RIEMANN HYPOTHESIS                              601\n\n     From the functional equation of £,\n\n\n\n",
+          "sha256": "5aadb7b90e7c54ebea42b3cfc7d6024d51ec33d222a2fb8df2e4b39ffd43aefc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mellin transform and meromorphic structure",
+            "line_end": 324,
+            "line_start": 169,
+            "mathematical_role": "Defines the Mellin transform, proves its initial domain, factorizes it into test-function and zeta data, identifies possible poles, states a functional equation, and establishes vertical-strip decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 275,
+          "line_start": 230,
+          "title": "The Mellin transform separates the test function from a zeta quotient",
+          "unit_id": "openalex_w2000739120_depth_u11",
+          "unit_type": "analytic factorization",
+          "why_material": "Changing variables term by term factorizes the transform into an entire Mellin factor determined by f and a quotient of zeta functions. Meromorphic continuation then turns zeta zeros into possible poles, except where the chosen test factor cancels them."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The simple pole at s=1 produces the limiting measure; other possible poles include negative integers and zeros of zeta(2s) in the stated strip.",
+          "representation_dependency": "Key displayed quotients are visually degraded but the factorization, entire test factor, continuation, residue role, and pole locations are stated in prose; formula-level use requires scan verification.",
+          "unit_id": "openalex_w2000739120_depth_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 228,
+            "line_start": 212,
+            "title": "Logarithmic transport exposes irregular weighted support and a Farey-sequence connection",
+            "unit_id": "openalex_w2000739120_depth_u10",
+            "unit_type": "change of representation",
+            "why_material": "Pulling the multiplicative measures back along the exponential map turns them into discrete measures on the real line whose irregular support and totient weights explain why their errors differ from the uniformly spaced Poisson example and connect them to Farey-sequence criteria."
+          },
+          {
+            "line_end": 324,
+            "line_start": 293,
+            "title": "Smooth compact support yields rapid vertical-strip Mellin decay",
+            "unit_id": "openalex_w2000739120_depth_u12",
+            "unit_type": "regularity-to-decay lemma",
+            "why_material": "Repeated integration by parts places the test-function Mellin factor in a Paley-Wiener class, giving rapid decay uniformly on fixed vertical strips and the L1 integrability needed for Mellin inversion and contour shifts."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A measure-convergence rate is translated into a domain of Mellin holomorphy, while zeta-induced poles delimit how far inversion can move; universal test functions prevent accidental cancellation of those poles.",
+            "limit": "This is a source-internal analytic mechanism conditional on the stated zeta estimates and the extracted normalizations; several exact displays require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u03",
+              "openalex_w2000739120_depth_u11",
+              "openalex_w2000739120_depth_u13",
+              "openalex_w2000739120_depth_u15",
+              "openalex_w2000739120_depth_u16"
+            ],
+            "title": "Mellin poles as convergence-rate obstructions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 292,
+              "line_start": 280,
+              "reason": "A functional equation is announced, but the equation itself is too garbled for a coherent independent semantic unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u11",
+          "spontaneous_reading": "Termwise Mellin transformation separates the arbitrary test function from the arithmetic zeta quotient, so test choice controls cancellation while zeta controls the singularities."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u11",
+          "source_grounded_mathematics": "After a change of variables, M_f factors into an entire Mellin factor determined by f and a quotient of zeta functions. This gives meromorphic continuation, a simple pole at s=1 whose residue supplies the limiting functional, and other possible poles including zeros of zeta(2s) in the stated strip and negative integers.",
+          "conceptual_reading": "The factorization isolates two roles: f provides a tunable entire multiplier, while the arithmetic Dirichlet series fixes the obstruction set.",
+          "representation_or_bridge": "The entire test Mellin factor is the bridge between local choice of f and global pole detection; choosing it nonzero at a candidate point prevents accidental cancellation.",
+          "boundary_or_failure": "A possible pole can disappear for a particular test if its entire factor vanishes there, so one probe cannot support the universal converse without a noncancellation argument.",
+          "uncertainty": "The key displayed quotient is degraded; its separation, continuation, residue role, and stated pole locations are reliable, but exact formula-level use requires scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The span performs a termwise change of variables, introduces an entire Mellin factor for f, states a zeta-quotient factorization and meromorphic continuation, and lists a simple pole at s=1 plus possible poles at negative integers and zeros of zeta(2s)."
+        ],
+        "inference": [
+          "The product structure supports the general inference that zeros of the test factor may cancel candidate poles."
+        ],
+        "unsupported_or_imported": [
+          "The explicit strategy of choosing a nonvanishing test at a proposed zeta zero comes from the later converse proof, not this slice.",
+          "Because the residue display is missing, identifying the s=1 residue with the limiting functional is not independently supported here."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The decisive zeta quotient and residue displays are degraded, so exact factors, normalization, and residue value require scan verification."
+        ],
+        "missed_mechanism": [
+          "This span gives possible poles but does not execute the universal-test noncancellation argument."
+        ],
+        "revision_instructions": [
+          "Retain the separation into an entire test factor and arithmetic meromorphic factor, but mark cancellation as inference and remove the later test-selection strategy and unverified residue-to-limit identification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the technical interface by which test-function regularity controls accessible convergence rates.",
+      "line_end": 324,
+      "line_start": 293,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several bounds are absent, but the rapid-decay and L1 conclusions are explicit in lines 307-324.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeated integration by parts places the test-function Mellin factor in a Paley-Wiener class, giving rapid decay uniformly on fixed vertical strips and the L1 integrability needed for Mellin inversion and contour shifts.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth compact support yields rapid vertical-strip Mellin decay",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u12.txt",
+      "unit_bytes": 1262,
+      "unit_id": "openalex_w2000739120_depth_u12",
+      "unit_sha256": "fc9995207e79b017bd6bce91a88a6feb15f1cd3ed3992c535fae1def1938607a",
+      "unit_type": "regularity-to-decay lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u12.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 285,
+          "line_end": 292,
+          "text": "\n    PROPOSITION 2.1.5 (Functional Equation).            The function M/(s) satisfies the func-\ntional equation:\n\n                                                            -.A,.ΛΛ                      ^\n\n                         i - s)T(ί - s)ζ(-2s)\n\n",
+          "sha256": "5011082a38b36e3a4228bfac35fe12979eb3dc876399f723d10960b155038100"
+        },
+        "after": {
+          "line_start": 325,
+          "line_end": 332,
+          "text": "     Now, let us recall the following facts about the order of growth of ζ ( s ) along vertical\nlines. Let μ(σ) be the lower bound of real numbers ί ^ 0 such that\n                                                   as    |*| -+00.                         (23)\n\n<!-- source-page: 7 -->\n\n602                                    ALBERTO VERJOVSKY\n\n",
+          "sha256": "e94e850ea823127293ca9ce2db0561fbf1202f2ce751ae64e37d8235d60e6ef3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Mellin transform and meromorphic structure",
+            "line_end": 324,
+            "line_start": 169,
+            "mathematical_role": "Defines the Mellin transform, proves its initial domain, factorizes it into test-function and zeta data, identifies possible poles, states a functional equation, and establishes vertical-strip decay."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 324,
+          "line_start": 293,
+          "title": "Smooth compact support yields rapid vertical-strip Mellin decay",
+          "unit_id": "openalex_w2000739120_depth_u12",
+          "unit_type": "regularity-to-decay lemma",
+          "why_material": "Repeated integration by parts places the test-function Mellin factor in a Paley-Wiener class, giving rapid decay uniformly on fixed vertical strips and the L1 integrability needed for Mellin inversion and contour shifts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the technical interface by which test-function regularity controls accessible convergence rates.",
+          "representation_dependency": "Several bounds are absent, but the rapid-decay and L1 conclusions are explicit in lines 307-324.",
+          "unit_id": "openalex_w2000739120_depth_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 275,
+            "line_start": 230,
+            "title": "The Mellin transform separates the test function from a zeta quotient",
+            "unit_id": "openalex_w2000739120_depth_u11",
+            "unit_type": "analytic factorization",
+            "why_material": "Changing variables term by term factorizes the transform into an entire Mellin factor determined by f and a quotient of zeta functions. Meromorphic continuation then turns zeta zeros into possible poles, except where the chosen test factor cancels them."
+          },
+          {
+            "line_end": 389,
+            "line_start": 325,
+            "title": "Zeta growth and reciprocal bounds govern admissible contour motion",
+            "unit_id": "openalex_w2000739120_depth_u13",
+            "unit_type": "analytic estimate toolkit",
+            "why_material": "The source records growth exponents for zeta, a Lindelof-equivalent critical-line estimate, and Littlewood bounds under RH or a general zero-free half-plane. These estimates control the zeta quotient on vertical lines after the test factor has supplied rapid decay."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smooth compact support supplies transform decay that enables contour estimates, whereas characteristic functions retain arithmetic jump effects that obstruct the same exponent improvement.",
+            "limit": "The Poisson example concerns a different additive family, and the exact sharp exponent in the damaged displays must be checked from the scan.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u01",
+              "openalex_w2000739120_depth_u04",
+              "openalex_w2000739120_depth_u07",
+              "openalex_w2000739120_depth_u12",
+              "openalex_w2000739120_depth_u17"
+            ],
+            "title": "Test regularity selects the available error mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 292,
+              "line_start": 280,
+              "reason": "A functional equation is announced, but the equation itself is too garbled for a coherent independent semantic unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u12",
+          "spontaneous_reading": "Repeated integration by parts spends derivatives of the compactly supported test function to buy arbitrarily rapid decay of its Mellin factor along vertical lines."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u12",
+          "source_grounded_mathematics": "For sufficiently differentiable compactly supported f, integration by parts gives vertical-line bounds for its Mellin factor. For smooth compact support the factor lies in a Paley-Wiener class, decays rapidly uniformly in fixed vertical strips, and yields the stated L1 integrability.",
+          "conceptual_reading": "Regularity is converted into frequency decay, which is the resource needed to make Mellin inversion and contour displacement analytically controllable.",
+          "representation_or_bridge": "The Mellin factor of f mediates between derivatives in the original variable and decay in the imaginary transform coordinate.",
+          "boundary_or_failure": "The conclusion applies to smooth compactly supported tests; discontinuous interval indicators lack this Paley-Wiener decay and can retain larger arithmetic errors.",
+          "uncertainty": "Several displayed bounds are missing, but the repeated-integration mechanism, rapid strip decay, and L1 conclusion are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly uses integration by parts for differentiable compactly supported tests and states that smooth compact support places the Mellin factor in a Paley-Wiener class with rapid decay on fixed vertical strips and the stated L1 property."
+        ],
+        "inference": [
+          "Describing derivatives as being exchanged for imaginary-direction decay accurately captures the integration-by-parts mechanism."
+        ],
+        "unsupported_or_imported": [
+          "The assertion that interval indicators retain larger arithmetic errors is imported from the rough-test theorem and proof, not established in this regularity lemma."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several quantitative bounds are absent, so exact constants and decay inequalities cannot be audited."
+        ],
+        "missed_mechanism": [
+          "The lemma does not itself analyze failure for nonsmooth tests; it only states its positive regularity regime."
+        ],
+        "revision_instructions": [
+          "Keep the regularity-to-decay and L1 conclusions, but remove the cross-unit claim about the size of interval-indicator errors; at most state that the lemma's hypotheses do not cover discontinuous tests."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are recalled classical inputs rather than results proved in the article; their role is operational in the later contour arguments.",
+      "line_end": 389,
+      "line_start": 325,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many displayed inequalities are partially lost, but their hypotheses, qualitative bounds, and cited roles are recoverable from the surrounding prose; exact estimates require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source records growth exponents for zeta, a Lindelof-equivalent critical-line estimate, and Littlewood bounds under RH or a general zero-free half-plane. These estimates control the zeta quotient on vertical lines after the test factor has supplied rapid decay.",
+      "source_id": "openalex_w2000739120",
+      "source_normalized_sha256": "b6375972d5ef369521562dbbce34d6cff386951f58d56017bcc7ddb4ed7099ed",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta growth and reciprocal bounds govern admissible contour motion",
+      "unit_artifact_relpath": "depth/units/openalex_w2000739120_depth_u13.txt",
+      "unit_bytes": 3000,
+      "unit_id": "openalex_w2000739120_depth_u13",
+      "unit_sha256": "b1ee0ec71341145deff2aecf36a24c6f77bdc349ca1ab6e231287a867f0f8702",
+      "unit_type": "analytic estimate toolkit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2000739120_depth_u13.txt",
+      "source": {
+        "source_id": "openalex_w2000739120",
+        "title": "Discrete measures and the Riemann hypothesis",
+        "authors": [
+          "Alberto Verjovsky"
+        ],
+        "year": 1994,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 317,
+          "line_end": 324,
+          "text": "\nfor all ΐ £ R such that |ί| ^ £Q> where ^0 depends only on / and TV.\n     From (21) it follows that φ$ is of rapid decay in any fixed vertical strip, i.e., φj(σ+it)\ntends very rapidly to zero uniformly in any strip σ\\ ^ σ ^ σ2, as \\t\\ —» oo. In particular,\nif / £ Cc(M*), we have that the function g J : M* -> C defined by\n                                                    + it)                                  (22)\n\nhas the property that g* £ £ι(M,C), for all σ £ R.\n",
+          "sha256": "2cbd097d12aee71e9ae78c48f5668f66c0380e6e6c3f964d7c869f86debdc706"
+        },
+        "after": {
+          "line_start": 390,
+          "line_end": 397,
+          "text": "\n    3.   Proof of Theorems\n    In all that follows we will assume that / £ C£°(IR*) but everything will still hold if\nwe only assume that / £ CJ(M*), r > 2.\n\n    3.1. Proof of Theorem A.      By the Mellin inversion formula we have:\n                                                ί0\n                            m y (/) = ^-. Γ      ° Mf(s)yl-s    ds,                  (29)\n",
+          "sha256": "96e4c1a478b726dc5fce8b65f0744d1792625221bfe76ffb9a9c72930719f8e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e74bda6f8c58306b57925e7b2097b2943d19f7aab200a49037975827dc0821",
+        "dossier_sha256": "60df4bf7860d3822fc74ef28c365f306678bccb6b17e89d4cdcfeb97f970f76d",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta growth estimates",
+            "line_end": 390,
+            "line_start": 325,
+            "mathematical_role": "Collects unconditional, Lindelof-equivalent, RH-conditional, and zero-free-half-plane estimates used to justify contour motion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 389,
+          "line_start": 325,
+          "title": "Zeta growth and reciprocal bounds govern admissible contour motion",
+          "unit_id": "openalex_w2000739120_depth_u13",
+          "unit_type": "analytic estimate toolkit",
+          "why_material": "The source records growth exponents for zeta, a Lindelof-equivalent critical-line estimate, and Littlewood bounds under RH or a general zero-free half-plane. These estimates control the zeta quotient on vertical lines after the test factor has supplied rapid decay."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are recalled classical inputs rather than results proved in the article; their role is operational in the later contour arguments.",
+          "representation_dependency": "Many displayed inequalities are partially lost, but their hypotheses, qualitative bounds, and cited roles are recoverable from the surrounding prose; exact estimates require scan verification.",
+          "unit_id": "openalex_w2000739120_depth_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 324,
+            "line_start": 293,
+            "title": "Smooth compact support yields rapid vertical-strip Mellin decay",
+            "unit_id": "openalex_w2000739120_depth_u12",
+            "unit_type": "regularity-to-decay lemma",
+            "why_material": "Repeated integration by parts places the test-function Mellin factor in a Paley-Wiener class, giving rapid decay uniformly on fixed vertical strips and the L1 integrability needed for Mellin inversion and contour shifts."
+          },
+          {
+            "line_end": 421,
+            "line_start": 391,
+            "title": "Residue extraction plus Riemann-Lebesgue decay proves baseline convergence",
+            "unit_id": "openalex_w2000739120_depth_u14",
+            "unit_type": "contour argument",
+            "why_material": "Mellin inversion expresses m_y(f) on a vertical line; moving the contour crosses the pole at s=1, whose residue is the limiting functional, while the remaining vertical integral decays by Riemann-Lebesgue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A measure-convergence rate is translated into a domain of Mellin holomorphy, while zeta-induced poles delimit how far inversion can move; universal test functions prevent accidental cancellation of those poles.",
+            "limit": "This is a source-internal analytic mechanism conditional on the stated zeta estimates and the extracted normalizations; several exact displays require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2000739120_depth_u03",
+              "openalex_w2000739120_depth_u11",
+              "openalex_w2000739120_depth_u13",
+              "openalex_w2000739120_depth_u15",
+              "openalex_w2000739120_depth_u16"
+            ],
+            "title": "Mellin poles as convergence-rate obstructions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 390,
+              "line_start": 390,
+              "reason": "Section boundary whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2000739120_depth_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2000739120_depth_u13",
+          "spontaneous_reading": "The contour can move only where zeta and its reciprocal remain controlled; the recalled growth exponents and Littlewood bounds quantify that analytic corridor."
+        },
+        "directed": {
+          "unit_id": "openalex_w2000739120_depth_u13",
+          "source_grounded_mathematics": "The source recalls the vertical-line growth exponent for zeta, a Lindelof-equivalent critical-line estimate, RH-conditional Littlewood bounds, and analogous estimates in a half-plane to the right of the supremum of zero real parts.",
+          "conceptual_reading": "Zero-free information is operationalized as reciprocal-zeta control, which combines with rapid test-factor decay to determine admissible inversion lines.",
+          "representation_or_bridge": "Growth functions for zeta and reciprocal zeta bridge geometric information about zero-free half-planes to integrability of the Mellin integrand.",
+          "boundary_or_failure": "These are cited classical inputs, not proved in this article, and they do not move a contour without the separate decay supplied by the test factor.",
+          "uncertainty": "Many inequalities are partially lost, so their qualitative hypotheses and roles are recoverable but exact exponents and uniformity ranges require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2000739120_depth_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The span recalls zeta vertical-growth exponents, a Lindelof-equivalent critical-line estimate, RH-conditional Littlewood estimates, and analogous information to the right of the supremum of zero real parts."
+        ],
+        "inference": [
+          "Viewing zero-free information as control of zeta or reciprocal-zeta growth is consistent with the recalled estimates."
+        ],
+        "unsupported_or_imported": [
+          "The claims that these estimates determine admissible Mellin inversion lines and must be combined with a rapidly decaying test factor describe later contour arguments, not operations performed in this slice."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'analytic corridor' phrasing risks sounding explanatory while the exact corridor inequalities are mostly missing."
+        ],
+        "context_or_ocr_risk": [
+          "Many displayed inequalities and uniformity ranges are lost, so only qualitative hypotheses and roles can be retained."
+        ],
+        "missed_mechanism": [
+          "This unit is a cited toolkit; it does not itself carry out contour motion or prove the recalled estimates."
+        ],
+        "revision_instructions": [
+          "Separate the in-span catalogue of classical estimates from the inferred later use; do not present contour admissibility or test-factor interaction as established here, and avoid exact inequalities without scan verification."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2908948c0e081518db880ec95399ce52dd63d2c9c4e1ccb12a1bee98198caee0"
+}

@@ -1,0 +1,372 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2019321946_8c625064_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2019321946",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The target sign is negative: the finite combination's first coordinate tends to -1 and all other fixed coordinates tend to zero.",
+      "line_end": 703,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Lemmas 2 and 4, Möbius divisor sums, and the E_p basis; the missing comparison glyph at lines 665-666 is recoverable as an upper-bound statement from adjacent prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Natural Möbius approximation: coordinate limits and tail control",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u13.txt",
+      "unit_bytes": 2646,
+      "unit_id": "openalex_w2019321946_u13",
+      "unit_sha256": "1509ff03e4b615a680fa020d3287f0ec74b7d1dbccb1abc7bad75d12cc04f04b",
+      "unit_type": "approximation-family",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u13.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 638,
+          "line_end": 645,
+          "text": "\n\n                                ∀p ∈ [n + 1, n4 ] ,        |xn,p | ⩽ up\n\nfor infinitely many n’s, then the Riemann hypothesis is true.\n\n\n\n",
+          "sha256": "5cfbdfe880f348ae5d5d81873ec8fab0dc0bdd669b83030472b03fc5b60000da"
+        },
+        "after": {
+          "line_start": 704,
+          "line_end": 711,
+          "text": "\n<!-- source-page: 12 -->\n\n198     Laurent Habsieger\n\n        We can also state another criterion.\n                                                                P   2\nCriterion 2. If there exists a sequence (up ) with               p up < ∞ such that\n",
+          "sha256": "8f97830a729fe973911df8cc016769c1690082de2c2f73104dde9ed7dc286b41"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The natural approximation",
+            "line_end": 782,
+            "line_start": 646,
+            "mathematical_role": "Studies the uncorrected Möbius-weighted approximant, derives coordinate limits and tail control, and quantifies a low-coordinate mass obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 703,
+          "line_start": 646,
+          "title": "Natural Möbius approximation: coordinate limits and tail control",
+          "unit_id": "openalex_w2019321946_u13",
+          "unit_type": "approximation-family",
+          "why_material": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The target sign is negative: the finite combination's first coordinate tends to -1 and all other fixed coordinates tend to zero.",
+          "representation_dependency": "Depends on Lemmas 2 and 4, Möbius divisor sums, and the E_p basis; the missing comparison glyph at lines 665-666 is recoverable as an upper-bound statement from adjacent prose.",
+          "unit_id": "openalex_w2019321946_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 642,
+            "line_start": 630,
+            "title": "Triangular square-summable-window criterion for RH",
+            "unit_id": "openalex_w2019321946_u12",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 1 states that a uniform square-summable envelope only on p in [n+1,n^4] for infinitely many n closes the triangular approximation argument and implies RH. It precisely identifies the scheme's remaining burden after exact low-coordinate cancellation and automatic far-tail control."
+          },
+          {
+            "line_end": 720,
+            "line_start": 709,
+            "title": "Natural-approximation domination criterion",
+            "unit_id": "openalex_w2019321946_u14",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 2 reduces RH for the natural approximants to a square-summable uniform coordinate envelope on p up to n^2 log n for infinitely many n. Compared with the triangular scheme the unresolved range is shorter at the top but includes all low coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u13",
+          "spontaneous_reading": "Removing the triangular endpoint corrections reveals the raw Möbius mechanism: divisor cancellation still sends every fixed coefficient to the coordinates of -E1, and a simple scale estimate controls the far tail, but low and intermediate energy are no longer canceled exactly."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u13",
+          "source_grounded_mathematics": "The natural approximant is sum_{q<=n} mu(q)e_q/q with coordinates y_{n,p}. Lemma 2, rearrangement of divisor sums, and the asymptotics of S_n and S'_n give y_{n,1}->-1 and y_{n,p}->0 for each fixed p>1. The source also obtains y_{n,p}=O(n/p), leading to a p-only square-summable bound for p>=n^2 log n.",
+          "conceptual_reading": "The raw arithmetic weights already solve coordinatewise targeting; the discarded endpoint corrections were serving global energy control rather than fixed-coordinate correctness. This exposes how a natural local rule can fail through migrating mass.",
+          "representation_or_bridge": "Divisor-sum cancellation converts Möbius weights into the correct fixed basis coordinates, while the estimate <e_q,E_p>=O(q/p) bridges generator scale to remote-frequency decay.",
+          "boundary_or_failure": "Coordinatewise convergence to -E1 and far-tail decay do not imply convergence in H. The unresolved range now includes low coordinates as well as the intermediate window.",
+          "uncertainty": "The target sign and threshold are clear. The extracted comparison symbol in the majorant is damaged, so its precise printed inequality should be PDF-verified."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2019321946_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The natural approximant uses mu(q)/q, converges coordinatewise to -E1, satisfies y_{n,p}=O(n/p), and receives a stated remote p-only bound beyond n^2 log n.",
+          "The candidate correctly preserves the negative target sign and warns that coordinatewise and far-tail control do not establish H convergence."
+        ],
+        "inference": [
+          "Migrating coefficient mass is a useful interpretation of why fixed-p convergence is insufficient."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the endpoint corrections serve “global energy control rather than fixed-coordinate correctness” is too strong: they enforce exact cancellation on a growing low-coordinate block, while global l2 control remains unproved for the triangular construction too."
+        ],
+        "paraphrase_or_style_risk": [
+          "“Natural local rule” is acceptable conceptual language only if it is not used to claim a proven global failure mechanism beyond the missing domination estimate."
+        ],
+        "context_or_ocr_risk": [
+          "The comparison symbol in the remote majorant is damaged; the target sign and stated threshold remain readable."
+        ],
+        "missed_mechanism": [
+          "Distinguish exact low-block cancellation supplied by the boundary corrections from the still-missing global square-summable domination."
+        ],
+        "revision_instructions": [
+          "Replace the overstatement with: “The endpoint corrections enforce exact cancellation on a growing low-coordinate block; the raw scheme retains fixed-p convergence, and neither construction yet has global l2 control.”"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extraction renders epsilon as a control character-like glyph, but its role, lower bound 2 log log n/log n, and o(1) condition are clear. Exact exponent typography and tail estimates need PDF verification.",
+      "line_end": 860,
+      "line_start": 783,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the basis-coordinate formula, Euler-product identities for 1/zeta and its derivative, and quantitative tail bounds in the smoothing parameter.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponent-smoothed Möbius approximation",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u16.txt",
+      "unit_bytes": 3970,
+      "unit_id": "openalex_w2019321946_u16",
+      "unit_sha256": "44b498c0b61605f9d87499bc082898766150fa147870a60398e9e74667a7d49e",
+      "unit_type": "smoothed-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u16.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 775,
+          "line_end": 782,
+          "text": "                                                                0\nsuch√ that  we  simultaneously have |S n+1 | ⩽ C/  n and |1 + S n+1 − S n+1 log n| ⩽\nC/ n . These two conditions are quite restrictive, and it seems difficult to find\ninfinite\nP        sequences for√ which they hold together. Indeed, it is well-known [8] that\n   1⩽q⩽n  µ(q)  =  Ω(  n).\n\n\n",
+          "sha256": "f860c8101e5e985b72ff0ece5c5b5b184d73901f8720dfbd2a2edc62ec5bfbb2"
+        },
+        "after": {
+          "line_start": 861,
+          "line_end": 868,
+          "text": "      We still have another criterion.\nCriterion 3. Assume there exists a sequence\n                                         P (\u000fn )n∈N , with \u000fn ⩾ 2 log log n/ log n\nand \u000fn = o(1) , and a sequence (up ) with p u2p < ∞ such that\n\n                            ∀p ∈ [1, n2 log n] ,         |yn,p (\u000fn )| ⩽ up\n\nfor infinitely many n’s, then the Riemann hypothesis is true.\n",
+          "sha256": "70418257992480cbcf45728d15be76ed8a80311d5b426b9a6adb64c327f03839"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Smooth approximations and acknowledgements",
+            "line_end": 876,
+            "line_start": 783,
+            "mathematical_role": "Introduces exponent smoothing, proves its coordinate limits and tail estimate under a decay window, and states the corresponding RH criterion and conditional comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 860,
+          "line_start": 783,
+          "title": "Exponent-smoothed Möbius approximation",
+          "unit_id": "openalex_w2019321946_u16",
+          "unit_type": "smoothed-construction",
+          "why_material": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extraction renders epsilon as a control character-like glyph, but its role, lower bound 2 log log n/log n, and o(1) condition are clear. Exact exponent typography and tail estimates need PDF verification.",
+          "representation_dependency": "Depends on the basis-coordinate formula, Euler-product identities for 1/zeta and its derivative, and quantitative tail bounds in the smoothing parameter.",
+          "unit_id": "openalex_w2019321946_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 780,
+            "line_start": 721,
+            "title": "Exact low-coordinate energy exposes restrictive Möbius conditions",
+            "unit_id": "openalex_w2019321946_u15",
+            "unit_type": "obstruction",
+            "why_material": "An exact formula for the sum of y_{n,p}^2 over 2<=p<=n+1 converts success of Criterion 2 into simultaneous smallness conditions on two Möbius partial-sum combinations. The source argues these are quite restrictive and contrasts them with known square-root-scale oscillation, diagnosing why coordinatewise convergence alone is inadequate."
+          },
+          {
+            "line_end": 872,
+            "line_start": 861,
+            "title": "Smoothed domination criterion and conditional calibration",
+            "unit_id": "openalex_w2019321946_u17",
+            "unit_type": "conditional-criterion-and-comparison",
+            "why_material": "Criterion 3 gives the smoothed analogue of Criterion 2: a square-summable envelope through n^2 log n along infinitely many n implies RH. The source reports that under RH prior work verifies the criterion for a particular logarithmic smoothing scale and even bounds the approximation distance, making this scheme a conditional calibration rather than an unconditional proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u16",
+          "spontaneous_reading": "Exponent smoothing regularizes the raw Möbius weights just enough to control truncated Euler-product tails while letting the exponent return to the boundary value. The correct fixed coordinates and the same remote-tail decay survive this deformation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u16",
+          "source_grounded_mathematics": "The smoothed approximant uses coefficients mu(q)/q^(1+epsilon_n), where epsilon_n>=2 log log n/log n and epsilon_n=o(1). Proposition 7 rewrites divisor sums using Euler products for 1/zeta and its derivative, bounds the omitted q>n tails directly, and obtains y_{n,1}(epsilon_n)->-1 and y_{n,p}(epsilon_n)->0 for fixed p>1. It also retains y_{n,p}(epsilon_n)=O(n/p) and the remote bound beyond n^2 log n.",
+          "conceptual_reading": "The exponent is a tunable regularization parameter: positive smoothing makes arithmetic tails controllable, while epsilon_n->0 preserves the desired unsmoothed target. This is an Abel-type approach to a boundary object.",
+          "representation_or_bridge": "Dirichlet-series/Euler-product identities bridge smoothed Möbius sums to zeta near s=1, and explicit truncation estimates bridge the infinite identities back to finite approximants.",
+          "boundary_or_failure": "The proposition proves fixed-coordinate limits and far-tail control, not a common l2 bound on the remaining coordinates. Smoothing is motivated by the natural scheme's obstruction but is not shown here to remove it unconditionally.",
+          "uncertainty": "The extraction corrupts the epsilon glyph, though its lower bound and o(1) role are clear. Exact exponents and tail inequalities require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2019321946_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span introduces mu(q)/q^(1+epsilon_n), assumes epsilon_n>=2 log log n/log n and epsilon_n=o(1), uses reciprocal-zeta identities plus direct q>n tail estimates, and recovers the fixed-coordinate limits and remote-tail statement.",
+          "The candidate correctly leaves the common l2 domination on the remaining coordinates unproved and flags the corrupted epsilon glyph."
+        ],
+        "inference": [
+          "An Abel-type approach toward the boundary s=1 is a meaningful mathematical analogy, but it is an interpretive label rather than source terminology."
+        ],
+        "unsupported_or_imported": [
+          "“Just enough” suggests that the displayed lower bound is sharp or minimal; the proposition establishes it only as a sufficient decay window."
+        ],
+        "paraphrase_or_style_risk": [
+          "The regularization language is useful when tied to the explicit exponent and tail estimates, not presented as a proved optimal smoothing principle."
+        ],
+        "context_or_ocr_risk": [
+          "The epsilon glyph, exponent typography, and comparison signs are damaged, so exact symbolic reuse requires scan verification."
+        ],
+        "missed_mechanism": [
+          "State explicitly that the lower bound is sufficient, with no necessity or optimality claim in the span."
+        ],
+        "revision_instructions": [
+          "Replace “just enough” with “under the stated sufficient lower bound,” and retain “Abel-type” only as an explicitly marked conceptual analogy."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ab58166290fbf3337737393d60e514d49e0e1d742e7af10cd79f855ceaf98c2d"
+}

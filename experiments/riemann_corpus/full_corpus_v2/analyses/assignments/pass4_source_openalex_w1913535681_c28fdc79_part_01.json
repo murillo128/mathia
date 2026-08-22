@@ -1,0 +1,195 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1913535681_c28fdc79_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1913535681",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparative conclusion is prose-grounded; the displayed earlier inequality and its exact parameter threshold are formula-risk.",
+      "line_end": 355,
+      "line_start": 342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the obstruction and frequency-workaround claim; high for exact comparison of displayed constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck.",
+      "source_id": "openalex_w1913535681",
+      "source_normalized_sha256": "0a02c428bba0ebbfc1f7af2bec17ea992fb56102461795728d1031de5e813c8b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+      "unit_artifact_relpath": "depth/units/openalex_w1913535681_u012.txt",
+      "unit_bytes": 955,
+      "unit_id": "openalex_w1913535681_u012",
+      "unit_sha256": "9b2a16a2d62a5a381f514ad8f712cdccd37d9401a6e95dbd10a9ca6fa93d599f",
+      "unit_type": "obstruction-and-workaround",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1913535681_u012.txt",
+      "source": {
+        "source_id": "openalex_w1913535681",
+        "title": "Bounding |ζ(½+<i>it</i>)| on the Riemann hypothesis",
+        "authors": [
+          "Vorrapan Chandee",
+          "K. Soundararajan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "<!-- source-page: 6 -->\n\n6                        VORRAPAN CHANDEE AND K. SOUNDARARAJAN\n\nĝ∆ (t) = ∆−1 Ĝ∆ (t/∆). Thus part (i) of Proposition 2.1 follows from (9) and (10), part (ii)\nfrom (12), (13) and (14), and part (iii) from (15).\n\n                                         4. Discussion\n",
+          "sha256": "6364b69cd263f28c72d5e4d09ef850ff1f82d97ca96edfc65af6e39d624b6dc2"
+        },
+        "after": {
+          "line_start": 356,
+          "line_end": 363,
+          "text": "   In light of our work we can view the Proposition in [10] as constructing a different minorant\nof our function f (x). We start with (for positive α and x real)\n                       Z ∆\u0010\n                                  |t| \u0011 −2πα|t|−2πitx         2α       1     1 − e−2π∆(α+ix)\n        K∆ (α, x) = 2π       1−        e              dt = 2        −     Re                 .\n                         −∆       ∆                        α + x2 π∆            (α + ix)2\nIntegrating both sides from α0 > 0 to 2 we obtain\n       Z 2                                                       Z 2 −2π∆α\n",
+          "sha256": "8b10b377a61d8e75f76dca6b793b21debad8f9198160f491cf25b71ff6b0ff0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a8492ecf637a6aeee902c625f571edda6b0658cc0112ab24c37a559893ea6334",
+        "dossier_sha256": "8e67ce15f0e5764c07cd1f827093a03861a0144e5751807dcb5e388844f1354b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Discussion",
+            "line_end": 447,
+            "line_start": 341,
+            "mathematical_role": "Comparison with an earlier minorant, the prime-sum obstruction, a flexible convolution construction, and the general L-function extension."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 355,
+          "line_start": 342,
+          "title": "The remaining obstruction is estimating the prime sum, not constructing the minorant",
+          "unit_id": "openalex_w1913535681_u012",
+          "unit_type": "obstruction-and-workaround",
+          "why_material": "The discussion compares the new inequality with an earlier proposition, states that good pointwise estimates of the prime sum are difficult and block better zeta bounds, and notes that frequency information about large prime sums can instead support moment estimates. This separates an analytic approximation gain from the surviving arithmetic bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The comparative conclusion is prose-grounded; the displayed earlier inequality and its exact parameter threshold are formula-risk.",
+          "representation_dependency": "Low for the obstruction and frequency-workaround claim; high for exact comparison of displayed constants.",
+          "unit_id": "openalex_w1913535681_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 340,
+            "line_start": 330,
+            "title": "Dilation turns the base extremizer into the bandwidth-Delta minorant",
+            "unit_id": "openalex_w1913535681_u011",
+            "unit_type": "scaling-argument",
+            "why_material": "Defining the final minorant by dilating the Carneiro-Vaaler function and adding the offset transports pointwise minorization, doubles the exponential-type scale to the requested bandwidth, rescales the Fourier transform, and assembles the three proposition clauses from the preceding estimates."
+          },
+          {
+            "line_end": 397,
+            "line_start": 356,
+            "title": "A nonoptimal convolution minorant sacrifices sharpness for a wider kernel class",
+            "unit_id": "openalex_w1913535681_u013",
+            "unit_type": "alternative-construction-and-scope-tradeoff",
+            "why_material": "An integral kernel with compactly supported Fourier transform is assembled into another minorant. The authors identify it with the construction underlying the earlier proposition, explicitly note that it is not optimal, and emphasize that it applies to related shifted logarithmic kernels outside the Carneiro-Vaaler framework. This exposes a sharpness-versus-generality tradeoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once the extremal minorant sharpens the zero-side approximation, estimating the resulting prime sum becomes the stated barrier to better pointwise bounds, while studying how often it is large can still support moment analysis.",
+            "limit": "The paper identifies the barrier in this method; it does not prove that no other method can improve the bound.",
+            "parent_local_unit_ids": [
+              "openalex_w1913535681_u005",
+              "openalex_w1913535681_u012"
+            ],
+            "title": "Analytic approximation gain exposes an arithmetic bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 350,
+              "line_start": 343,
+              "reason": "Earlier proposition is represented by a heavily fragmented display."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 361,
+              "line_start": 358,
+              "reason": "Definition and evaluated form of the alternative kernel have broken layout."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 366,
+              "line_start": 363,
+              "reason": "Integrated inequality is display-fragmented."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1913535681_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w1913535681_u012",
+          "spontaneous_reading": "After optimizing the analytic surrogate, the obstruction moves rather than disappears: the remaining prime Dirichlet sum is hard to control pointwise. The same object can still be useful distributionally, because the frequency with which it becomes large informs moment estimates."
+        },
+        "directed": {
+          "unit_id": "openalex_w1913535681_u012",
+          "source_grounded_mathematics": "The discussion compares estimate (5) with an earlier bound expressing log|ζ(1/2+it)| through a truncated von Mangoldt weighted sum and logarithmic error terms. It states that good estimates for this prime sum at large t are difficult and block better pointwise zeta bounds, while information about how often such sums are large can be used to study moments of ζ.",
+          "conceptual_reading": "Improving one component of a proof pipeline exposes the next bottleneck. When worst-case pointwise control is inaccessible, reframing the same arithmetic statistic distributionally changes the attainable target from maxima to moments.",
+          "representation_or_bridge": "The bandlimited minorant transfers the original zero-side problem into a prime polynomial; frequency-of-large-values information then bridges that prime statistic to moment questions.",
+          "boundary_or_failure": "The barrier is asserted for this method and prime-sum representation, not as a theorem excluding other approaches. Moment information does not by itself yield the desired pointwise bound.",
+          "uncertainty": "The obstruction and workaround are clear in prose, but the earlier displayed inequality, constants, and admissible parameter threshold are formula-risk and need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1913535681_u012",
+        "critic_decision": "revise",
+        "supported": [
+          "The span compares estimate (5) with an earlier truncated von Mangoldt sum bound, explicitly identifies good pointwise control of such sums as the barrier to better zeta bounds, and says large-value frequency information is used for zeta moments.",
+          "The candidate correctly distinguishes a method-specific obstruction from a universal impossibility and moments from pointwise bounds."
+        ],
+        "inference": [
+          "Recasting inaccessible worst-case control as a distributional question is a strong source-grounded conceptual move."
+        ],
+        "unsupported_or_imported": [
+          "The representation_or_bridge sentence imports the bandlimited minorant and an original zero-side problem; neither appears in this frozen span or its bounded nearby text.",
+          "After optimizing the analytic surrogate also depends on the earlier proof rather than the evidence stated inside this unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The earlier displayed inequality, constants, exponent typography, and lambda threshold are extraction-risk; the prose obstruction and workaround are safe."
+        ],
+        "missed_mechanism": [
+          "The unit's self-contained bridge is from a displayed truncated prime sum to frequency-of-large-values information and then to moment estimates."
+        ],
+        "revision_instructions": [
+          "Remove the zero-side and bandlimited-minorant provenance claims from this unit.",
+          "State only that the resulting prime sum is hard to bound pointwise, while its large-value frequency can support moment analysis; keep the method-specific and non-pointwise limitations."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4fcfde53fec2dca4483c6a834a8493d364bc07c58f0be88a8ee3c218b83bdf98"
+}

@@ -1,0 +1,185 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2237579816_550c51cd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2237579816",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the interpretation of coefficients as critical values and the comparison with earlier full-level results so the analogy and claimed extension are explicit.",
+      "line_end": 80,
+      "line_start": 64,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The reciprocal transformation and circle radius are readable, but powers, signs, and square-root normalization in the displayed functional equation should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u02.txt",
+      "unit_bytes": 1422,
+      "unit_id": "openalex_w2237579816_v2_u02",
+      "unit_sha256": "188b8323024e4a495a5d5dc202800035a22f77df625b914e27ddd0318dfb3312",
+      "unit_type": "functional-equation-symmetry",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 56,
+          "line_end": 63,
+          "text": "                                          fourth author thanks the support of the NSF, and the Simons Foundation for a Simons Investigator Grant. The\n                                          authors thank YoungJu Choie, Yuri Manin, Ram Murty, Ken Ribet, Drew Sutherland, and Don Zagier for useful\n                                          comments and discussions.\n                                             2010 Mathematics Subject Classification: 11F11, 11F67.\n                                                                                                    1\n\n2                 SEOKHO JIN, WENJUN MA, KEN ONO, AND KANNAN SOUNDARARAJAN\n\n",
+          "sha256": "ae3e236b307a17234d03070ff9c8f528d3f4cfbb1050bb367750700a5af4fbb7"
+        },
+        "after": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "Remark. Period polynomials for weight 2 newforms f are constant multiples of L(f, 1).\nExample 1. The period polynomial for the normalized Hecke eigenform ∆(z) ∈ S12 (Γ0 (1)) is\n                                             \u0012                                \u0013\n              + +       − −                     36 10   8    6    4   2    36\n    r∆ (z) = ω∆ r∆ (z)+ω∆ r∆ (z) ≈ 0.114379i       z − z + 3z − 3z + z −\n                                               691                        691\n                                           + 0.00926927(4z − 25z + 42z − 25z 3 + 4z).\n                                                          9     7     5\n",
+          "sha256": "c31ba5a86af9cab1cd99d5bb7ffbc60c364ff1280f3951e3ab9f4a74fd900f3a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, generating-function representation, and main theorems",
+            "line_end": 161,
+            "line_start": 21,
+            "mathematical_role": "Defines the completed L-function and period polynomial, derives reciprocal symmetry, states the circle-zero and location results, and reduces them to trigonometric sign changes and critical-value inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 80,
+          "line_start": 64,
+          "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "unit_type": "functional-equation-symmetry",
+          "why_material": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the interpretation of coefficients as critical values and the comparison with earlier full-level results so the analogy and claimed extension are explicit.",
+          "representation_dependency": "The reciprocal transformation and circle radius are readable, but powers, signs, and square-root normalization in the displayed functional equation should be checked against the PDF.",
+          "unit_id": "openalex_w2237579816_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 52,
+            "line_start": 21,
+            "title": "Period polynomials encode critical L-values as coefficients",
+            "unit_id": "openalex_w2237579816_v2_u01",
+            "unit_type": "representation-change",
+            "why_material": "The period integral and binomial expansion turn the critical values of a modular-form L-function into the coefficients of one polynomial. This is the foundational compression that lets a statement about a list of L-values become a statement about polynomial zero geometry."
+          },
+          {
+            "line_end": 145,
+            "line_start": 101,
+            "title": "A half-polynomial converts circle zeros into a sign-change count",
+            "unit_id": "openalex_w2237579816_v2_u03",
+            "unit_type": "trigonometric-reduction",
+            "why_material": "The authors package half of the critical values into an auxiliary polynomial, reconstruct the period polynomial by reciprocal reflection, and observe that its unit-circle restriction is a cosine or sine polynomial according to the functional-equation sign. The circle-zero theorem is thereby reduced to producing exactly the required number of real sign changes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Encoding critical L-values in a period polynomial transports the L-function functional equation into reciprocal root symmetry; factoring that symmetry through a half-polynomial then turns the desired circle-zero statement into a count of sine or cosine sign changes.",
+            "limit": "This mechanism establishes the paper’s polynomial analogue only; it supplies no implication for the zero locations of the Riemann zeta function or the underlying modular L-function.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u01",
+              "openalex_w2237579816_v2_u02",
+              "openalex_w2237579816_v2_u03"
+            ],
+            "title": "Functional symmetry becomes a real-variable root-count problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 100,
+              "line_start": 81,
+              "reason": "Two concrete numerical examples and a speculative geometric remark illustrate the result but add no proof mechanism used later."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "spontaneous_reading": "Applying the L-function reflection coefficientwise turns analytic symmetry into a self-inversive polynomial law, pairing each zero with its reciprocal transform and thereby singling out a symmetry circle."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "source_grounded_mathematics": "Using Λ(f,s)=ε(f)Λ(f,k−s) in the coefficient expansion yields a reciprocal functional equation for r_f. Consequently, a zero ρ is accompanied by −1/(Nρ), and the theorem stated in the unit asserts that every zero lies on |z|=1/√N for all even weights at least four and all levels.",
+          "conceptual_reading": "A fixed-point set of the reciprocal involution is the natural candidate zero locus. The functional equation explains why that circle is distinguished, but confinement of all zeros to it is an additional theorem, not a formal consequence of pairing.",
+          "representation_or_bridge": "The coefficient encoding transports s-reflection to root inversion. Scaling by √N converts the distinguished circle to the unit circle, where reciprocal pairs become easier to analyze.",
+          "boundary_or_failure": "Reciprocal pairing permits off-circle pairs and therefore does not establish circle membership by itself. The result is only a polynomial analogue of RH and supplies no implication for zeros of the modular L-function or ζ.",
+          "uncertainty": "The reciprocal map and circle radius are readable; the extracted power, sign, and square-root normalization in the displayed polynomial equation should be checked against the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2237579816_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives the reciprocal relation from the L-function functional equation, states the zero pairing ρ↦−1/(Nρ), and states Theorem 1.1 on the circle |z|=1/√N.",
+          "The candidate correctly warns that reciprocal pairing alone permits off-circle pairs and does not prove circle confinement."
+        ],
+        "inference": [
+          "Treating the circle as the symmetry-compatible candidate locus and scaling it to the unit circle are reasonable consequences of the displayed transformation and theorem."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading calls the circle the fixed-point set of ρ↦−1/(Nρ). Pointwise fixed points of that displayed map satisfy ρ²=−1/N and are only two points; the whole circle is invariant under the pairing, not fixed pointwise."
+        ],
+        "paraphrase_or_style_risk": [
+          "The label ‘self-inversive’ is less precise than the exact reciprocal relation unless the relevant conjugation convention is stated."
+        ],
+        "context_or_ocr_risk": [
+          "The power, sign, and square-root normalization in the reciprocal polynomial equation are extraction-sensitive, as the candidate notes."
+        ],
+        "missed_mechanism": [
+          "Distinguish an invariant circle from the pointwise fixed set of the displayed reciprocal map."
+        ],
+        "revision_instructions": [
+          "Replace ‘fixed-point set’ with ‘invariant/symmetry-compatible circle’ and, if retaining ‘self-inversive,’ state the exact zero pairing rather than implying pointwise fixation. Keep the warning that pairing does not prove confinement."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5b998cfac5befb9242148d2b58188524e2e48311262580e0acbb0e087bf667cb"
+}

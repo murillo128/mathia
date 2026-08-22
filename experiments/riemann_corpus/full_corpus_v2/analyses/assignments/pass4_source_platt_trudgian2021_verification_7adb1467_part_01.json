@@ -1,0 +1,684 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_platt_trudgian2021_verification_7adb1467_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "platt_trudgian2021_verification",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The hardware and historical runs are not controlled like-for-like experiments, so the figures support engineering diagnosis rather than universal causal ratios.",
+      "line_end": 115,
+      "line_start": 98,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate. Several units and symbols are flattened, but the qualitative comparisons and stated attributions remain clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source records hardware behavior, parameter retuning at greater height, total compute, and a comparison that attributes large speed differences to FFT use, sampling density, and multiprecision rigorous numerics. It exposes the cost structure behind a trustworthy large-scale certificate.",
+      "source_id": "platt_trudgian2021_verification",
+      "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Certification strength and sampling density trade directly against throughput",
+      "unit_artifact_relpath": "depth/units/platt_trudgian2021_depth_u06_rigor_throughput_tradeoff.txt",
+      "unit_bytes": 1595,
+      "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+      "unit_sha256": "883568697e7d026b0ed24111db960b8ebf60fbc070b3e5a7049adbcc5786c4eb",
+      "unit_type": "computational-cost-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u06_rigor_throughput_tradeoff.txt",
+      "source": {
+        "source_id": "platt_trudgian2021_verification",
+        "title": "The Riemann hypothesis is true up to 3·10^12",
+        "authors": [
+          "Dave Platt",
+          "Tim Trudgian"
+        ],
+        "year": 2021,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "computation",
+          "numerical-evidence",
+          "interval-arithmetic",
+          "epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 90,
+          "line_end": 97,
+          "text": "is leads to the quoted H = 2.41 . . . · 1011 .\n\n                                                        2\n\n<!-- source-page: 3 -->\n\non. In fact, the default lattice sampling rate we used (about 0.01) was sufficient to isolate\n999 997.5 out of every 1 000 000 zeroes.\n",
+          "sha256": "350cb09a72801fc759e6fc72565eaa4da43a8f4c6679db3da10bb3b2daa9ecef"
+        },
+        "after": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "\n\n3     Some instant wins\n    Where researchers have used Gourdon’s or Platt’s H as their starting point, this indepen-\ndent verification adds weight to their results and gives some explicit improvements. In this\nsection we include some results that are improved either instantly, or at least fairly easily,\nin light of Theorem 1. We have not endeavoured to furnish an exhaustive list.\n\n",
+          "sha256": "dd145f208601f1b1634dfc27d59cdf704eb8431daa3630bbfc75b4edeef536fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Theory and computation",
+            "line_end": 117,
+            "line_start": 70,
+            "mathematical_role": "Sketches the sign-change and Turing-method certification architecture, validated-arithmetic implementation, resolution choice, and computational tradeoffs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 115,
+          "line_start": 98,
+          "title": "Certification strength and sampling density trade directly against throughput",
+          "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+          "unit_type": "computational-cost-comparison",
+          "why_material": "The source records hardware behavior, parameter retuning at greater height, total compute, and a comparison that attributes large speed differences to FFT use, sampling density, and multiprecision rigorous numerics. It exposes the cost structure behind a trustworthy large-scale certificate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The hardware and historical runs are not controlled like-for-like experiments, so the figures support engineering diagnosis rather than universal causal ratios.",
+          "representation_dependency": "Moderate. Several units and symbols are flattened, but the qualitative comparisons and stated attributions remain clear in prose.",
+          "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 97,
+            "line_start": 81,
+            "title": "Count only the zero information required by the certificate",
+            "unit_id": "platt_trudgian2021_depth_u05_sufficient_zero_resolution",
+            "unit_type": "goal-directed-computational-simplification",
+            "why_material": "The computation abandons high-precision zero isolation once a sign change is found, because the certification goal needs a count rather than a stored high-precision zero database. This is a reusable distinction between sufficient witnesses and unnecessarily rich outputs at scale."
+          },
+          {
+            "line_end": 135,
+            "line_start": 118,
+            "title": "A larger certified H propagates through explicit prime estimates",
+            "unit_id": "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+            "unit_type": "bounded-evidence-transfer",
+            "why_material": "The section frames finite RH verification as a reusable starting parameter: estimates for prime-counting error terms and Bertrand-type intervals based on an older H can be confirmed or slightly improved when H increases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Representation size, cache behavior, target output precision, sampling density, FFT use, and multiprecision enclosures jointly determine whether a proof-grade computation scales; semantic sufficiency can recover resources that rigor itself consumes.",
+            "limit": "The historical throughput figures use different machines, algorithms, and sampling policies, so they do not isolate causal effects or supply portable performance ratios.",
+            "parent_local_unit_ids": [
+              "platt_trudgian2021_depth_u04_ball_arithmetic_engineering",
+              "platt_trudgian2021_depth_u05_sufficient_zero_resolution",
+              "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff"
+            ],
+            "title": "Computational rigor has a visible systems cost structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 95,
+              "line_start": 88,
+              "reason": "A displaced introduction footnote, page number, and page marker interrupt the sentence from lines 81–87."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 124,
+              "line_start": 116,
+              "reason": "Blank space, section overview, and bounds-on-primes heading frame downstream uses."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+        "spontaneous": {
+          "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+          "spontaneous_reading": "The source exposes the systems cost of certification: dense sampling and multiprecision enclosures purchase stronger evidential control at a steep throughput price, while FFT structure, parameter retuning, and modest hardware parallelism determine whether the computation remains feasible."
+        },
+        "directed": {
+          "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+          "source_grounded_mathematics": "The run used several clusters, obtained about a 15% Hyper-Threading benefit, retuned parameters at much greater height, and consumed about 7.5 million core-hours. Historical throughput comparisons attribute major differences to FFT-based versus Riemann–Siegel algorithms, sampling rates of 25 versus 1.2 per zero, and multiprecision rigorous numerics versus hardware floating point.",
+          "conceptual_reading": "Computational rigor has a resource profile rather than a single overhead. Algorithmic representation, witness density, precision discipline, and machine locality jointly mediate the amount of certified range obtained per unit of compute.",
+          "representation_or_bridge": "Normalization by GHz-hour creates a rough bridge among heterogeneous runs, and the sampling rate links local zero evidence to workload. Validated multiprecision carries mathematical error guarantees into that engineering comparison.",
+          "boundary_or_failure": "These historical runs differ in hardware, algorithms, targets, and sampling policy, so their ratios are diagnostic rather than controlled causal estimates or portable speed laws.",
+          "uncertainty": "Low for reported resources and author-attributed factors; moderate for comparative causal interpretation because the experiments are not like-for-like."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "platt_trudgian2021_depth_u06_rigor_throughput_tradeoff",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reports the clusters, about 15% Hyper-Threading benefit, higher-height parameter tuning, roughly 7.5 million core-hours, GHz-hour comparisons, and the authors' stated FFT, sampling-rate, and numerical-precision explanations.",
+          "The candidate correctly warns that the historical runs are not controlled like-for-like comparisons."
+        ],
+        "inference": [
+          "A multi-factor resource profile is a reasonable synthesis of the reported engineering factors."
+        ],
+        "unsupported_or_imported": [
+          "The claim that denser sampling purchases stronger evidential control is not established here; the span reports a workload difference and author-attributed speed cost, not a comparison of certification strength.",
+          "“Machine locality” imports a cache-centered mechanism not stated in this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic list of representation, density, precision, and locality obscures which factors are actually reported and which are inferred."
+        ],
+        "context_or_ocr_risk": [
+          "Several units are flattened, and the historical throughputs combine different hardware, algorithms, and policies; the candidate's causal caveat should remain."
+        ],
+        "missed_mechanism": [
+          "The span also names a minor improvement to the bound for |Γ((σ + it)/2)| exp(πt/4), alongside parameter retuning, as a change in the computation."
+        ],
+        "revision_instructions": [
+          "Replace the stronger-evidence and machine-locality claims with the narrower source claim: the authors attribute throughput differences to FFT choice, sampling density, and rigorous multiprecision, under heterogeneous runs.",
+          "Include or explicitly bracket the minor analytic-bound improvement, and retain the non-causal comparison caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The corollary is readable, but radical signs, exponents, and fraction layout are flattened; exact formula transcription requires later scan verification.",
+      "line_end": 166,
+      "line_start": 144,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact constants and displayed inequalities; low for the prose-level transfer mechanism from a partial-RH height condition to a finite x-range.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states a condition relating the verified height H to x and applies the new H to obtain explicit finite ranges for three prime-counting error bounds. The mechanism demonstrates how finite zero information licenses conclusions far beyond the numerical verification height in a different variable.",
+      "source_id": "platt_trudgian2021_verification",
+      "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A finite RH certificate converts a global conditional estimate into a bounded unconditional result",
+      "unit_artifact_relpath": "depth/units/platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds.txt",
+      "unit_bytes": 1302,
+      "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+      "unit_sha256": "a8b12ef803a7840f7175f0b51bdde1ba408569e95069925a99e6a709e5da68d4",
+      "unit_type": "conditional-to-unconditional-range-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds.txt",
+      "source": {
+        "source_id": "platt_trudgian2021_verification",
+        "title": "The Riemann hypothesis is true up to 3·10^12",
+        "authors": [
+          "Dave Platt",
+          "Tim Trudgian"
+        ],
+        "year": 2021,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "computation",
+          "numerical-evidence",
+          "interval-arithmetic",
+          "epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 136,
+          "line_end": 143,
+          "text": "\n\n\n\n                                              3\n\n<!-- source-page: 4 -->\n\n",
+          "sha256": "809b958656ccc7d6d29c560601daef2cf4ea3e5af6768815f3aa9938d00a4f08"
+        },
+        "after": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "\n3.2    Zero-free regions and zero density estimates\n                                                                                   1\n    It is known that there are no zeroes ρ = β + iγ in the region β ≥ 1 − R log      γ\n                                                                                       for all\nγ > 3. The current best value is R = 5.573412 by Mossinghoff and Trudgian [18]. This can\nbe improved slightly with Theorem 1 and will be tackled in a future paper of Mossinghoff\nand the second author, along with the explicit version of the Vinogradov–Korobov zero-free\n",
+          "sha256": "c1b242934a3b6e16a8edc4b008241a52965b0209c801fbba67bcc0effdae5051"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 overview and 3.1 Bounds on primes",
+            "line_end": 167,
+            "line_start": 118,
+            "mathematical_role": "Explains H as a reusable input to explicit prime estimates and derives a finite range on which RH-conditional error bounds become unconditional."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 166,
+          "line_start": 144,
+          "title": "A finite RH certificate converts a global conditional estimate into a bounded unconditional result",
+          "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+          "unit_type": "conditional-to-unconditional-range-transfer",
+          "why_material": "The source states a condition relating the verified height H to x and applies the new H to obtain explicit finite ranges for three prime-counting error bounds. The mechanism demonstrates how finite zero information licenses conclusions far beyond the numerical verification height in a different variable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The corollary is readable, but radical signs, exponents, and fraction layout are flattened; exact formula transcription requires later scan verification.",
+          "representation_dependency": "High for exact constants and displayed inequalities; low for the prose-level transfer mechanism from a partial-RH height condition to a finite x-range.",
+          "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 135,
+            "line_start": 118,
+            "title": "A larger certified H propagates through explicit prime estimates",
+            "unit_id": "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+            "unit_type": "bounded-evidence-transfer",
+            "why_material": "The section frames finite RH verification as a reusable starting parameter: estimates for prime-counting error terms and Bertrand-type intervals based on an older H can be confirmed or slightly improved when H increases."
+          },
+          {
+            "line_end": 182,
+            "line_start": 168,
+            "title": "Finite verification height interacts with other analytic constants",
+            "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+            "unit_type": "dependency-structure",
+            "why_material": "The source distinguishes improvements driven directly by H from reciprocal-growth bounds that depend on both H and the zero-free constant R, and it identifies zero-density estimates as another consumer. This prevents treating one stronger certificate as the sole input to every downstream bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Increasing H can enlarge unconditional finite ranges, improve constants, or cross a discrete threshold in later results, but its utility depends on other analytic inputs and may be slight when competing unconditional bounds are already close.",
+            "limit": "Several improvements are only stated as possible or slight and are not recalculated here; only the displayed prime-range corollary and Λ ≤ 0.2 are explicitly instantiated in this paper.",
+            "parent_local_unit_ids": [
+              "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+              "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+              "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+              "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+              "platt_trudgian2021_depth_u11_debruijn_newman_threshold"
+            ],
+            "title": "Certified height is a reusable but nonuniform downstream resource"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+        "spontaneous": {
+          "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+          "spontaneous_reading": "The key bridge is a scale-conversion condition: RH verified only through height H is enough to activate an RH-conditional prime-error estimate for a finite range of x. Thus bounded spectral information yields unconditional arithmetic bounds far beyond H in a different variable."
+        },
+        "directed": {
+          "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+          "source_grounded_mathematics": "The source recalls Schoenfeld's RH-conditional square-root-scale bound and Büthe's condition connecting an admissible x to a verification height H. Substituting the new H gives explicit bounds for ψ(x) − x, θ(x) − x, and π(x) − li(x) through x = 2.169 × 10^25, with the lower endpoints stated separately.",
+          "conceptual_reading": "A global conditional theorem is localized by proving exactly the finite hypothesis its proof needs at scale x. The transfer is not RH itself: it converts a bounded zero certificate into an unconditional conclusion on a derived finite x-domain.",
+          "representation_or_bridge": "The inequality relating x and H is the bridge object. It translates vertical zero information into the admissible range of prime-counting variables while the corollary packages the result into reusable explicit estimates.",
+          "boundary_or_failure": "Nothing here licenses the bounds beyond the stated x-range or proves RH. Radical, exponent, and fraction layout is flattened, so exact formula transcription requires the source scan.",
+          "uncertainty": "Low for the transfer mechanism and stated terminal range; high for exact typography of the displayed inequalities in this extraction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose-level mechanism is clear: Büthe's finite-height condition activates Schoenfeld's RH-conditional estimate on a finite x-range, and the corollary gives three bounded prime-error statements.",
+          "The candidate correctly distinguishes the bounded unconditional corollary from RH itself and from claims beyond the displayed range."
+        ],
+        "inference": [
+          "Calling the H-to-x condition a scale-conversion bridge is a substantive and faithful conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The candidate normalizes the terminal range as 2.169 × 10^25 and treats it as low-uncertainty even though superscripts, radicals, fractions, and powers are flattened in the frozen artifact; exact typography is not safely recoverable from this span alone."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The displayed condition and all three inequalities have high formula-layout risk, so exact constants and exponent placement require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the qualitative finite-H to finite-x transfer and the existence of three separately bounded statements.",
+          "Omit the normalized exact exponent or label it explicitly as scan-dependent, and raise uncertainty for exact numerical/formula transcription while leaving the qualitative mechanism low-uncertainty."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zero-free-region display is spatially flattened, but the surrounding sentences state the roles of H and R explicitly.",
+      "line_end": 182,
+      "line_start": 168,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate for the exact zero-free-region formula; low for the dependency structure.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes improvements driven directly by H from reciprocal-growth bounds that depend on both H and the zero-free constant R, and it identifies zero-density estimates as another consumer. This prevents treating one stronger certificate as the sole input to every downstream bound.",
+      "source_id": "platt_trudgian2021_verification",
+      "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite verification height interacts with other analytic constants",
+      "unit_artifact_relpath": "depth/units/platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs.txt",
+      "unit_bytes": 1219,
+      "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+      "unit_sha256": "975e67b0f490eb9204196ff5ef121f48582ab2621d6b15b01d85a5350c8c60b8",
+      "unit_type": "dependency-structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs.txt",
+      "source": {
+        "source_id": "platt_trudgian2021_verification",
+        "title": "The Riemann hypothesis is true up to 3·10^12",
+        "authors": [
+          "Dave Platt",
+          "Tim Trudgian"
+        ],
+        "year": 2021,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "computation",
+          "numerical-evidence",
+          "interval-arithmetic",
+          "epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 160,
+          "line_end": 167,
+          "text": "                                 8π\n                                 √\n                                   x\n                |π(x) − li(x)| ≤     log2 x, (2657 < x ≤ 2.169 · 1025 ).\n                                 8π\n   We also mention that some results from the expansive article by Bennett et al. [2] can\nbe improved, as can bounds on weighted sums of Λ(n) as given by Ramaré [25].\n\n",
+          "sha256": "20761a4f93e799a74649413b797dc481302d5fb83ab95f84c4fc9af822ffa42d"
+        },
+        "after": {
+          "line_start": 183,
+          "line_end": 190,
+          "text": "\n3.3    Oscillations in the prime number theorem\n    The prime number theorem gives π(x) ∼ li(x) and θ(x) ∼ x. Littlewood [17] showed\nthat there are infinitely many sign changes in the differences π(x) − li(x) and θ(x) − x. The\nhistory of estimating the first sign change of the first of these differences is rich: see [6, 31]\nfor further details. These results, as well as the results of the authors [22] for the first sign\nchange of θ(x) − x could potentially be improved with Theorem 1. Such an improvement\nwould only be meagre, though, owing to the known small gap between unconditional results\n",
+          "sha256": "0f281eaa4bf07caa01e839c40e7a53e928d9bd68fef91c1df088e7c24a4462ae"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 Zero-free regions and zero density estimates",
+            "line_end": 183,
+            "line_start": 168,
+            "mathematical_role": "Lists coupled dependencies of zero-free, reciprocal-growth, and zero-density estimates on H and a zero-free constant."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 182,
+          "line_start": 168,
+          "title": "Finite verification height interacts with other analytic constants",
+          "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+          "unit_type": "dependency-structure",
+          "why_material": "The source distinguishes improvements driven directly by H from reciprocal-growth bounds that depend on both H and the zero-free constant R, and it identifies zero-density estimates as another consumer. This prevents treating one stronger certificate as the sole input to every downstream bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zero-free-region display is spatially flattened, but the surrounding sentences state the roles of H and R explicitly.",
+          "representation_dependency": "Moderate for the exact zero-free-region formula; low for the dependency structure.",
+          "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 166,
+            "line_start": 144,
+            "title": "A finite RH certificate converts a global conditional estimate into a bounded unconditional result",
+            "unit_id": "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+            "unit_type": "conditional-to-unconditional-range-transfer",
+            "why_material": "The source states a condition relating the verified height H to x and applies the new H to obtain explicit finite ranges for three prime-counting error bounds. The mechanism demonstrates how finite zero information licenses conclusions far beyond the numerical verification height in a different variable."
+          },
+          {
+            "line_end": 201,
+            "line_start": 184,
+            "title": "A stronger H can tighten first-sign-change bounds while yielding only marginal practical gain",
+            "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+            "unit_type": "bounded-evidence-and-limit",
+            "why_material": "The paper connects finite RH verification to both upper and lower exclusions for first sign changes, then explicitly notes diminishing returns because unconditional and RH-contingent bounds are already close. This is a useful limit on interpreting downstream fertility from a larger H."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Increasing H can enlarge unconditional finite ranges, improve constants, or cross a discrete threshold in later results, but its utility depends on other analytic inputs and may be slight when competing unconditional bounds are already close.",
+            "limit": "Several improvements are only stated as possible or slight and are not recalculated here; only the displayed prime-range corollary and Λ ≤ 0.2 are explicitly instantiated in this paper.",
+            "parent_local_unit_ids": [
+              "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+              "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+              "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+              "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+              "platt_trudgian2021_depth_u11_debruijn_newman_threshold"
+            ],
+            "title": "Certified height is a reusable but nonuniform downstream resource"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+        "spontaneous": {
+          "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+          "spontaneous_reading": "The larger verification height is not a universal knob. Some explicit estimates also depend on the zero-free constant R, while zero-density bounds use H through another route; downstream improvement is therefore a coupled-input problem."
+        },
+        "directed": {
+          "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+          "source_grounded_mathematics": "The source discusses a zero-free region near σ = 1 with constant R, bounds on reciprocal zeta growth that depend on both H and R, and estimates for N(σ,T), the number of zeros with β > σ and 0 < γ ≤ T. It says all are improvable using the new theorem, with some work deferred.",
+          "conceptual_reading": "The dependency graph matters: strengthening H can relax one constraint without controlling every other analytic input. This blocks the inference that a larger finite verification automatically produces a proportionate improvement in all explicit estimates.",
+          "representation_or_bridge": "H, R, and N(σ,T) are distinct bridge parameters: certified low-height behavior, near-one zero exclusion, and off-line zero density. Keeping them separate exposes which burden each downstream estimate actually consumes.",
+          "boundary_or_failure": "The passage supplies no recalculated constants or completed improvements, and the zero-free-region display is spatially flattened. Claims of improvement are prospective rather than instantiated results here.",
+          "uncertainty": "Low for the stated dependency structure; moderate for the exact zero-free formula and magnitude of any eventual gain."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+        "critic_decision": "revise",
+        "supported": [
+          "The span distinguishes the zero-free constant R, reciprocal-zeta bounds depending on both H and R, and estimates of N(σ,T), all with prospective improvements from Theorem 1.",
+          "The candidate correctly says no new constants or completed improvements are supplied here."
+        ],
+        "inference": [
+          "A coupled-dependency reading is warranted: a larger H does not by itself instantiate every downstream estimate."
+        ],
+        "unsupported_or_imported": [
+          "Calling H, R, and N(σ,T) three parallel “bridge parameters” conflates roles: N(σ,T) is the zero-counting quantity being estimated, not an auxiliary input on the same footing as H and R.",
+          "The claim that H merely relaxes one constraint underplays the span's two-step statement that Theorem 1 can also slightly improve the zero-free-region constant, although that work is deferred."
+        ],
+        "paraphrase_or_style_risk": [
+          "The bridge-parameter template makes the dependency graph sound more uniform than the source does."
+        ],
+        "context_or_ocr_risk": [
+          "The exact zero-free-region formula is spatially flattened; only the prose-level roles of H and R are safe here."
+        ],
+        "missed_mechanism": [
+          "The source separates a prospective improvement of the zero-free region itself from reciprocal-growth estimates that then depend jointly on H and R."
+        ],
+        "revision_instructions": [
+          "Treat H and R as inputs to the cited reciprocal bounds, and treat N(σ,T) as the quantity whose explicit estimates may be improved.",
+          "Preserve that Theorem 1 may slightly improve R in deferred work, while no improved value or zero-density estimate is instantiated in this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 192–197 contain a page break; lines 198–201 complete the subsection by giving the lower-range computational consequence.",
+      "line_end": 201,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate. Inequalities and powers are flattened, but the direction of both exclusions and the small-gain qualification are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper connects finite RH verification to both upper and lower exclusions for first sign changes, then explicitly notes diminishing returns because unconditional and RH-contingent bounds are already close. This is a useful limit on interpreting downstream fertility from a larger H.",
+      "source_id": "platt_trudgian2021_verification",
+      "source_normalized_sha256": "64b045692c5e54d178afed751eee8e86fc53bdda9f2f1d0b5e076dc7f8ab1ebb",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A stronger H can tighten first-sign-change bounds while yielding only marginal practical gain",
+      "unit_artifact_relpath": "depth/units/platt_trudgian2021_depth_u10_oscillation_diminishing_returns.txt",
+      "unit_bytes": 1108,
+      "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+      "unit_sha256": "28ba5702442255ee2d5ef2c411a9c45189a3dc5681abe8ca028d6e8286989044",
+      "unit_type": "bounded-evidence-and-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/platt_trudgian2021_depth_u10_oscillation_diminishing_returns.txt",
+      "source": {
+        "source_id": "platt_trudgian2021_verification",
+        "title": "The Riemann hypothesis is true up to 3·10^12",
+        "authors": [
+          "Dave Platt",
+          "Tim Trudgian"
+        ],
+        "year": 2021,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "computation",
+          "numerical-evidence",
+          "interval-arithmetic",
+          "epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "    Not only is the zeta-function non-zero in regions close to σ = 1, its reciprocal does not\ngrow too quickly. This has been quantified, explicitly, by the second author in [33]. These\nresults depend not just on the value of H, and hence are improvable by Theorem 1, but also\non the size of the zero-free constant R mentioned above.\n    Let N(σ, T ) count the number of zeroes with β > σ and 0 < γ ≤ T . Explicit estimates\non N(σ, T ) have been given by Kadiri [14], Kadiri, Lumley, and Ng [16], and Simonič [30].\nAll of these results could be improved with Theorem 1.\n\n",
+          "sha256": "5c13a505653fa3c0181702aaf330676c985e755eaa6f6bd041fb1ca7dc2f7830"
+        },
+        "after": {
+          "line_start": 202,
+          "line_end": 209,
+          "text": "\n3.4       The de Bruijn–Newman constant\n      For t ∈ R, let\n               Z ∞                                        ∞\n                       2\n                                                          X\n                    etu Φ(u) cos(zu) du,                        2π 2 n4 e9u − 3πn2 e5u exp −πn2 e4u .\n                                                                                      \u0001            \u0001\n",
+          "sha256": "22beb9fdcba7cb28fae299b25de618090fcfb0d16ec21bbb7c2d24d5ddaf2938"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d6040019106cf3d72c5d107be197239e73b2aa13d3a6771d5a03bc7949bf15a4",
+        "dossier_sha256": "ce271a06ab55f2b59066f50dd095b4d5f2b672ba96e2d22bfa1609a988d9707b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.3 Oscillations in the prime number theorem",
+            "line_end": 202,
+            "line_start": 184,
+            "mathematical_role": "Describes upper- and lower-range consequences for first sign changes and warns that the incremental gain from larger H may be small."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 201,
+          "line_start": 184,
+          "title": "A stronger H can tighten first-sign-change bounds while yielding only marginal practical gain",
+          "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+          "unit_type": "bounded-evidence-and-limit",
+          "why_material": "The paper connects finite RH verification to both upper and lower exclusions for first sign changes, then explicitly notes diminishing returns because unconditional and RH-contingent bounds are already close. This is a useful limit on interpreting downstream fertility from a larger H."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 192–197 contain a page break; lines 198–201 complete the subsection by giving the lower-range computational consequence.",
+          "representation_dependency": "Moderate. Inequalities and powers are flattened, but the direction of both exclusions and the small-gain qualification are clear.",
+          "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 182,
+            "line_start": 168,
+            "title": "Finite verification height interacts with other analytic constants",
+            "unit_id": "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+            "unit_type": "dependency-structure",
+            "why_material": "The source distinguishes improvements driven directly by H from reciprocal-growth bounds that depend on both H and the zero-free constant R, and it identifies zero-density estimates as another consumer. This prevents treating one stronger certificate as the sole input to every downstream bound."
+          },
+          {
+            "line_end": 224,
+            "line_start": 213,
+            "title": "Crossing a published H threshold improves the de Bruijn–Newman upper bound",
+            "unit_id": "platt_trudgian2021_depth_u11_debruijn_newman_threshold",
+            "unit_type": "thresholded-bounded-evidence-transfer",
+            "why_material": "The prose defines the threshold role of Λ, states its equivalence to RH, and uses H greater than a specified cutoff to move an upper bound from 0.22 to 0.2. It also identifies the next threshold as unmet and distinguishes a certified corollary from speculative extra decimals."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Increasing H can enlarge unconditional finite ranges, improve constants, or cross a discrete threshold in later results, but its utility depends on other analytic inputs and may be slight when competing unconditional bounds are already close.",
+            "limit": "Several improvements are only stated as possible or slight and are not recalculated here; only the displayed prime-range corollary and Λ ≤ 0.2 are explicitly instantiated in this paper.",
+            "parent_local_unit_ids": [
+              "platt_trudgian2021_depth_u07_height_as_downstream_parameter",
+              "platt_trudgian2021_depth_u08_partial_rh_to_finite_prime_bounds",
+              "platt_trudgian2021_depth_u09_coupled_explicit_estimate_inputs",
+              "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+              "platt_trudgian2021_depth_u11_debruijn_newman_threshold"
+            ],
+            "title": "Certified height is a reusable but nonuniform downstream resource"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 203,
+              "line_start": 202,
+              "reason": "Blank separator and de Bruijn–Newman section heading."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 211,
+              "line_start": 204,
+              "reason": "The defining integral and series for H_t and Φ are spatially scrambled and unsafe for exact formula reuse."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+        "spontaneous": {
+          "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+          "spontaneous_reading": "Finite RH verification constrains a first sign change from both directions—analytic results prevent it from being too late, computations prevent it from being too early—but the paper emphasizes diminishing returns because existing unconditional and RH-contingent bounds are already close."
+        },
+        "directed": {
+          "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+          "source_grounded_mathematics": "Littlewood's result gives infinitely many sign changes of π(x) − li(x) and θ(x) − x. The authors say their larger H could improve upper estimates for the first changes, though only meagrely, and could extend Büthe's computational lower exclusion, which used H = 10^11 to show θ(x) < x and π(x) < li(x) through 10^19.",
+          "conceptual_reading": "The same certificate can support complementary exclusion arguments, but downstream fertility is governed by the remaining gap rather than by the raw increase in H. A stronger premise may have little practical effect when another bound is already nearby.",
+          "representation_or_bridge": "The first-sign-change location is bracketed by an analytic upper constraint and a computationally certified lower range. H enters as a transferable boundary controlling the latter and potentially the former.",
+          "boundary_or_failure": "The unit reports only potential improvements and does not compute a new first-sign-change range. It also does not locate a sign change or alter Littlewood's asymptotic existence result.",
+          "uncertainty": "Low for the qualitative two-sided picture and explicit diminishing-returns warning; moderate for any unstated numerical improvement."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "platt_trudgian2021_depth_u10_oscillation_diminishing_returns",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states infinitely many sign changes, prospective but meagre upper-bound improvement, and a computational lower exclusion that could also be extended with Theorem 1.",
+          "The candidate correctly identifies the two-sided bracketing, diminishing returns, and the absence of any newly computed sign-change location or range."
+        ],
+        "inference": [
+          "Interpreting practical gain through the remaining upper/lower gap rather than raw growth of H is a faithful consequence of the source's explicit small-gap explanation."
+        ],
+        "unsupported_or_imported": [
+          "The candidate silently reconstructs H = 10^11 and the endpoint 10^19 from flattened renderings “1011” and “1019”; those exact exponent placements are not scan-verified within the frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "A page break interrupts the subsection and powers are flattened, although the directions of the upper and lower exclusions remain clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the qualitative upper/lower exclusion mechanism and the meagre-gain qualification.",
+          "Either omit the normalized powers or mark their exponent placement as extraction-dependent pending scan verification; do not present them as exact low-risk numerals."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2b3975b626c46a3d5d1a06292486a022dce7e5462b11edd16969be1641ce77bb"
+}

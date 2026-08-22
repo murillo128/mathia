@@ -1,0 +1,409 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1969743407_fc596316_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1969743407",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the truncated polynomial, the finite count G_k(l), its lattice-polytope interpretation, polynomial growth, and the random-matrix limit for the volume.",
+      "line_end": 405,
+      "line_start": 364,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose and set description recover the mechanism; exact powers and the sample G2 polynomial are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that truncating the random-matrix characteristic polynomial replaces exact magic-square margins by upper-bounded margins, and that the normalized moment limit is the same polytope volume appearing in zeta pseudomoments.",
+      "source_id": "openalex_w1969743407",
+      "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncated characteristic-polynomial moments equal pseudomagic-square counts",
+      "unit_artifact_relpath": "depth/units/openalex_w1969743407_u008.txt",
+      "unit_bytes": 1898,
+      "unit_id": "openalex_w1969743407_u008",
+      "unit_sha256": "0d57a643746e3ea1161c25893c1d82288a05bd4f4e4d7296af5cba6aa8d46bbc",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_u008.txt",
+      "source": {
+        "source_id": "openalex_w1969743407",
+        "title": "Pseudomoments of the Riemann zeta-function and pseudomagic squares",
+        "authors": [
+          "Brian Conrey",
+          "Alex Gamburd"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 356,
+          "line_end": 363,
+          "text": "polytope in Rk defined by the following inequalities:\n               (                                  k                 k\n                                                                                )\n                                k2\n                                                  X                 X\n(30)    Pk =       (xij ) ∈ R        xij ≥ 0;            xij ≤ 1;         xij ≤ 1 .\n                                                   i=1              j=1\n\n",
+          "sha256": "f72aac10005a1e5981339e280d8e52b53b130cea65c3889c0cec4321d60732d5"
+        },
+        "after": {
+          "line_start": 406,
+          "line_end": 413,
+          "text": "   The proof proceeds as follows. In section 2 we obtain an expression\nfor γk in terms of a multiple complex integral. In section 3 we express\nthe left-hand side of (29) as a multiple complex integral and then show\nthat the leading terms in the two resulting expressions are equal.\nAcknowledgements. It is a pleasure to thank Dan Bump for pointing\nout that (32) is a consequence of Theorem 1.\n\n                         2. Pseudomagic squares\n",
+          "sha256": "0b139e65f442f1acfc7e28aa67e9e9be7b5c1af99008bd068d8543dc1ede6825"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_da711de62a6b117a3f31ffad7a7604fc49ac48e66196a1d005504ea016935a9e",
+        "dossier_sha256": "f89bd5dda1778478613a0b9f07654603dc8623a81bdeb81a9f7b399ebc27dd23",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main pseudomoment theorem and random-matrix reformulation",
+            "line_end": 412,
+            "line_start": 339,
+            "mathematical_role": "States the pseudomoment asymptotic with substochastic-polytope volume and identifies it with truncated characteristic-polynomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 405,
+          "line_start": 364,
+          "title": "Truncated characteristic-polynomial moments equal pseudomagic-square counts",
+          "unit_id": "openalex_w1969743407_u008",
+          "unit_type": "representation-change",
+          "why_material": "Shows that truncating the random-matrix characteristic polynomial replaces exact magic-square margins by upper-bounded margins, and that the normalized moment limit is the same polytope volume appearing in zeta pseudomoments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the truncated polynomial, the finite count G_k(l), its lattice-polytope interpretation, polynomial growth, and the random-matrix limit for the volume.",
+          "representation_dependency": "The prose and set description recover the mechanism; exact powers and the sample G2 polynomial are formula-dependent.",
+          "unit_id": "openalex_w1969743407_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 363,
+            "line_start": 339,
+            "title": "Zeta pseudomoments have arithmetic-factor times substochastic-volume leading term",
+            "unit_id": "openalex_w1969743407_u007",
+            "unit_type": "main-theorem",
+            "why_material": "States the paper's central result: moments of truncated zeta sums have a leading coefficient combining the standard arithmetic factor with the volume of a substochastic matrix polytope."
+          },
+          {
+            "line_end": 490,
+            "line_start": 413,
+            "title": "Multivariate residues count lattice points in the pseudomagic polytope",
+            "unit_id": "openalex_w1969743407_u009",
+            "unit_type": "coefficient-extraction-construction",
+            "why_material": "Provides a general conversion from linear inequalities for a lattice polytope to a multivariate generating-function contour integral, then specializes it to row and column capacity constraints."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Secular-coefficient expansion and Dirichlet-series coefficient expansion independently produce nonnegative integer matrices indexed by paired factors; truncation changes prescribed margins into upper-bounded margins.",
+            "limit": "This is a source-internal structural identification, not evidence that all zeta statistics are modeled by unitary matrices.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u003",
+              "openalex_w1969743407_u008",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "One transportation-table object links random matrices and zeta pseudomoments"
+          },
+          {
+            "claim": "Polynomial lattice-point enumeration makes polytope volume simultaneously the leading growth coefficient of pseudomagic counts and the normalized limit of truncated characteristic-polynomial moments.",
+            "limit": "Relative-volume normalization and some displayed formulas are extraction-damaged and must be checked before numerical use.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u005",
+              "openalex_w1969743407_u006",
+              "openalex_w1969743407_u008",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "Ehrhart theory converts exact finite counts into asymptotic geometric constants"
+          },
+          {
+            "claim": "Full characteristic-polynomial moments correspond to exact-margin magic squares and the Birkhoff polytope, whereas truncation relaxes exact margins to capacities and replaces it by the substochastic polytope.",
+            "limit": "The comparison concerns the moment/count identities presented here and should not be promoted to a general equivalence of the underlying probabilistic models.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u002",
+              "openalex_w1969743407_u006",
+              "openalex_w1969743407_u008"
+            ],
+            "title": "Random-matrix truncation explains substochastic rather than stochastic geometry"
+          },
+          {
+            "claim": "Moving from unitary to symplectic matrices changes unrestricted margin tables into symmetric nonnegative matrices with even diagonal, and the analogous L-function pseudomoment inherits that constrained count.",
+            "limit": "The orthogonal case is only mentioned, and the symplectic L-function result is stated without the full proof in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u003",
+              "openalex_w1969743407_u008",
+              "openalex_w1969743407_u017",
+              "openalex_w1969743407_u018"
+            ],
+            "title": "Symmetry class is encoded as combinatorial constraints"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1969743407_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w1969743407_u008",
+          "spontaneous_reading": "Truncating the characteristic polynomial changes exact-margin magic squares into upper-bounded pseudomagic squares; this single relaxation replaces Birkhoff geometry by the full-dimensional substochastic polytope."
+        },
+        "directed": {
+          "unit_id": "openalex_w1969743407_u008",
+          "source_grounded_mathematics": "The source defines a truncation of the secular-coefficient expansion and states that, for N at least lk, its 2k-th Haar moment equals G_k(l), the count of k-by-k nonnegative integer matrices with every row and column sum at most l. Ehrhart polynomiality gives degree k^2, leading coefficient vol(P_k), and the normalized random-matrix moment limit.",
+          "conceptual_reading": "Truncation replaces conservation at an exact margin by capacity inequalities. That frees the total mass, enlarges the feasible set, and makes its volume the natural normalized growth coefficient.",
+          "representation_or_bridge": "The same G_k(l) is a Haar moment, an integer-matrix count, and a lattice-point count in lP_k; normalization by l^(k^2) passes from the discrete count to volume.",
+          "boundary_or_failure": "The moment identity requires the stated stable range in N, and the comparison concerns this particular truncation. It does not establish a general identity between random-matrix and zeta statistics.",
+          "uncertainty": "The mechanism is prose-supported; exact powers and the displayed G_2 polynomial should be checked against the scan before numerical use."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1969743407_u008",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the truncated secular-coefficient polynomial and states that its stable-range Haar moment equals G_k(l).",
+          "It defines G_k(l) by row and column upper bounds, identifies it with lattice points in lP_k, states degree k^2 and leading coefficient vol(P_k), and gives the normalized moment limit."
+        ],
+        "inference": [
+          "The capacity interpretation and passage from normalized lattice counts to volume are directly supported by the stated count and Ehrhart result."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's claim that truncation changes exact-margin magic squares into upper-bounded pseudomagic squares requires the content of Theorem 1 outside this frozen span; this span states only the truncated/capacity side and cites Theorem 1."
+        ],
+        "paraphrase_or_style_risk": [
+          "The candidate otherwise gives a concrete three-way bridge among a Haar moment, a matrix count, and a lattice-point count."
+        ],
+        "context_or_ocr_risk": [
+          "Exact powers and the G_2 example are display-dependent; the candidate correctly flags them."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Recast the spontaneous and conceptual comparison to say only that the defined truncation is represented by row and column capacity inequalities in this span.",
+          "Remove the causal contrast with exact-margin magic squares unless the exact supporting Theorem 1 span is included in the evidence boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the proof by identifying coefficient choices with nonnegative integer matrices satisfying row and column upper bounds.",
+      "line_end": 718,
+      "line_start": 669,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The matrix-coefficient semantics are explicit in prose; exact exponential signs, contour normalizations, and bound notation should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands each geometric denominator, groups monomials by row and column sums, and uses the cutoff integral to show that the residual leading integral equals the pseudomagic-square count G_k(log X).",
+      "source_id": "openalex_w1969743407",
+      "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric contour coefficients recover pseudomagic matrices",
+      "unit_artifact_relpath": "depth/units/openalex_w1969743407_u014.txt",
+      "unit_bytes": 2275,
+      "unit_id": "openalex_w1969743407_u014",
+      "unit_sha256": "b3cf1892108ba877d4afc78891000494ae9979723682cada27fbedc19f0590a8",
+      "unit_type": "combinatorial-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_u014.txt",
+      "source": {
+        "source_id": "openalex_w1969743407",
+        "title": "Pseudomoments of the Riemann zeta-function and pseudomagic squares",
+        "authors": [
+          "Brian Conrey",
+          "Alex Gamburd"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 661,
+          "line_end": 668,
+          "text": "                           c         c\n\nwhere we have used (48).\n\n<!-- source-page: 12 -->\n\n12                 BRIAN CONREY AND ALEX GAMBURD\n\n",
+          "sha256": "dba3b82774218f47de6c217d3413acc3f64fba069bfe1eba095d0c252fa3a932"
+        },
+        "after": {
+          "line_start": 719,
+          "line_end": 726,
+          "text": "   We remark that this proves that the integrals given by (54) and\n(35) are equal; a direct proof using, for example, a change of variables\nhas thus far eluded us. We also remark that the integral expression\nfor Gk (l) given by (35) has served only as a motivation for the proof\npresented above. We also note that sums related to the expression\ngiven by the right-hand side of (40) were considered in [16].\n\n                          4. Generalizations\n",
+          "sha256": "82d9470b6b5bfe188c975cbfed5b6c61fd280b8a2111910d9eb98135dceaba82"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_da711de62a6b117a3f31ffad7a7604fc49ac48e66196a1d005504ea016935a9e",
+        "dossier_sha256": "f89bd5dda1778478613a0b9f07654603dc8623a81bdeb81a9f7b399ebc27dd23",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the main theorem",
+            "line_end": 725,
+            "line_start": 491,
+            "mathematical_role": "Transforms the analytic moment into diagonal multiplicative data, separates the arithmetic factor, extracts the leading pole term, and recovers the pseudomagic count."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 718,
+          "line_start": 669,
+          "title": "Geometric contour coefficients recover pseudomagic matrices",
+          "unit_id": "openalex_w1969743407_u014",
+          "unit_type": "combinatorial-identification",
+          "why_material": "Expands each geometric denominator, groups monomials by row and column sums, and uses the cutoff integral to show that the residual leading integral equals the pseudomagic-square count G_k(log X)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the proof by identifying coefficient choices with nonnegative integer matrices satisfying row and column upper bounds.",
+          "representation_dependency": "The matrix-coefficient semantics are explicit in prose; exact exponential signs, contour normalizations, and bound notation should be scan-verified.",
+          "unit_id": "openalex_w1969743407_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 664,
+            "line_start": 636,
+            "title": "Zeta-pole replacement isolates the leading geometric contour integral",
+            "unit_id": "openalex_w1969743407_u013",
+            "unit_type": "asymptotic-extraction",
+            "why_material": "Explains why only the polar parts of the zeta factors and the origin value of the regular Euler product control the leading term, pulling out the arithmetic factor."
+          },
+          {
+            "line_end": 724,
+            "line_start": 719,
+            "title": "The direct equality of the two contour integrals remains elusive",
+            "unit_id": "openalex_w1969743407_u015",
+            "unit_type": "failed-route-and-method-comparison",
+            "why_material": "Records a genuine method limitation: the lattice-point residue integral motivated the proof, but the authors could not directly transform it into the analytic integral and instead proved equality through the shared count."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The leading pseudomoment coefficient separates because prime-local multiplicativity becomes a regular Euler-product value, while the coupled cutoff constraints become the volume-growth coefficient of a substochastic matrix polytope.",
+            "limit": "Established here for fixed integer moments of the stated truncated sums; exact constants and lower-order control are formula-sensitive and no universality beyond the treated setup is proved.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u001",
+              "openalex_w1969743407_u007",
+              "openalex_w1969743407_u012",
+              "openalex_w1969743407_u013",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "Arithmetic data times geometric capacity volume"
+          },
+          {
+            "claim": "Secular-coefficient expansion and Dirichlet-series coefficient expansion independently produce nonnegative integer matrices indexed by paired factors; truncation changes prescribed margins into upper-bounded margins.",
+            "limit": "This is a source-internal structural identification, not evidence that all zeta statistics are modeled by unitary matrices.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u003",
+              "openalex_w1969743407_u008",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "One transportation-table object links random matrices and zeta pseudomoments"
+          },
+          {
+            "claim": "Polynomial lattice-point enumeration makes polytope volume simultaneously the leading growth coefficient of pseudomagic counts and the normalized limit of truncated characteristic-polynomial moments.",
+            "limit": "Relative-volume normalization and some displayed formulas are extraction-damaged and must be checked before numerical use.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u005",
+              "openalex_w1969743407_u006",
+              "openalex_w1969743407_u008",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "Ehrhart theory converts exact finite counts into asymptotic geometric constants"
+          },
+          {
+            "claim": "Time averaging enforces multiplicative diagonal equality, contour cutoffs expose complex parameters, Euler products isolate arithmetic poles, and geometric-series coefficients turn the remaining analytic object into constrained matrices.",
+            "limit": "The source invokes standard zeta bounds for the leading-term passage and does not spell out every analytic error estimate in this extracted text.",
+            "parent_local_unit_ids": [
+              "openalex_w1969743407_u010",
+              "openalex_w1969743407_u011",
+              "openalex_w1969743407_u012",
+              "openalex_w1969743407_u013",
+              "openalex_w1969743407_u014"
+            ],
+            "title": "Proof architecture as successive representation changes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1969743407_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w1969743407_u014",
+          "spontaneous_reading": "Expanding the residual pairwise denominators reveals a hidden nonnegative matrix: each exponent a_ij is an entry, its row and column sums are the contour exponents, and Perron cutoff then selects precisely the pseudomagic tables."
+        },
+        "directed": {
+          "unit_id": "openalex_w1969743407_u014",
+          "source_grounded_mathematics": "Each factor 1/(1-exp(-u_i-v_j)) is expanded as a geometric series. Choosing exponents a_ij forms a nonnegative integer matrix whose row and column sums are alpha and beta, so the coefficient is N_{alpha,beta}; applying the cutoff integral restricts those margins by l=log X and identifies the residual contour with G_k(l).",
+          "conceptual_reading": "The matrix is the bridge object shared by analytic coefficients and combinatorial capacity constraints. Grouping by margins preserves exactly the information the contour kernels inspect and forgets irrelevant ordering of individual geometric-series choices.",
+          "representation_or_bridge": "A product of geometric denominators becomes a generating series indexed by matrices; coefficient extraction becomes a margin count; Perron indicators turn margin exponents into row and column upper bounds.",
+          "boundary_or_failure": "This proves the needed equality by identifying both sides with the same coefficient count, not by a direct change of contour variables. Exact exponential signs and contour normalizations are extraction-sensitive.",
+          "uncertainty": "The matrix-coefficient semantics are explicit in prose, while detailed display notation should be scan-verified."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1969743407_u014",
+        "critic_decision": "revise",
+        "supported": [
+          "The span expands every pairwise geometric denominator and identifies exponent choices a_ij with a nonnegative integer matrix whose row and column sums are alpha and beta.",
+          "It groups coefficients by those margins and applies the Perron cutoff with l=log X to identify the residual contour with G_k(l)."
+        ],
+        "inference": [
+          "The claim that grouping by margins preserves exactly what the cutoff kernels inspect is a faithful explanation of the coefficient extraction."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement that the equality is not proved by a direct change of contour variables comes from the following unit, not from this frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The candidate gives a concrete denominator-expansion, matrix-indexing, margin-grouping, and cutoff sequence, so the core analysis is not stylistic paraphrase."
+        ],
+        "context_or_ocr_risk": [
+          "Exponential signs, contour normalization, and bound indices are extraction-sensitive; the candidate correctly avoids exact reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the direct-change-of-variables comparison from this unit's boundary statement.",
+          "Keep the span-supported conclusion that coefficient expansion and cutoff extraction identify the contour with G_k(log X); reserve the method-comparison claim for its own following unit."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8086ad33cdd335c197f2c42b6828d871da4fdb053afb5290b295c716cbfeb63f"
+}

@@ -1,0 +1,1151 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2039040097_c1822ae4_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2039040097",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two forms support different estimates and motivate the later Appendix A comparison.",
+      "line_end": 379,
+      "line_start": 332,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (16)-(19); prose confirms the reordering mechanism despite multi-line formula layout.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reordering the zeta Dirichlet series turns the finite binomial sum into sums of elementary kernels, creating monotone functions suitable for integral comparison.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Equivalent discrete forms of the explicit S1 sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d04.txt",
+      "unit_bytes": 2539,
+      "unit_id": "openalex_w2039040097_d04",
+      "unit_sha256": "cb6c1fceaeabfd102d65f9d8ff4f59eeaa324804b2514b248438d3aa8139790a",
+      "unit_type": "representation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d04.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 324,
+          "line_end": 331,
+          "text": "Ref. [6] by a method connected with A. Weil’s explicit formula. Our approach is\n\nindependent, and we believe, more direct. In Appendix G we present an extension of\n\nTheorem 1 which accounts explicitly for the presence of the first six trivial zeros of\n\nthe zeta function.\n\n",
+          "sha256": "38b035a71adb8a1815320d971f227fa17e1d6526a2862e5293a71ce2475441cf"
+        },
+        "after": {
+          "line_start": 380,
+          "line_end": 387,
+          "text": "                                                   7\n\n<!-- source-page: 8 -->\n\nBy using integrals estimating these forms, we obtain\n\nTheorem 2\n                                               n               n 1\n",
+          "sha256": "f10024e29a04631471e8ec93e1852d1f86dd3dad41d9b6fb71b1d4281f582d37"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Estimation of sums and conjectural eta route",
+            "line_end": 1096,
+            "line_start": 332,
+            "mathematical_role": "Bounds the explicit S1 term, links eta to sigma, develops moment constraints and conjectured decay, and isolates S2 as the unresolved cancellation bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 379,
+          "line_start": 332,
+          "title": "Equivalent discrete forms of the explicit S1 sum",
+          "unit_id": "openalex_w2039040097_d04",
+          "unit_type": "representation comparison",
+          "why_material": "Reordering the zeta Dirichlet series turns the finite binomial sum into sums of elementary kernels, creating monotone functions suitable for integral comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two forms support different estimates and motivate the later Appendix A comparison.",
+          "representation_dependency": "Depends on equations (16)-(19); prose confirms the reordering mechanism despite multi-line formula layout.",
+          "unit_id": "openalex_w2039040097_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 330,
+            "line_start": 229,
+            "title": "Eta decomposition of each Li coefficient",
+            "unit_id": "openalex_w2039040097_d03",
+            "unit_type": "theorem-plus-derivation",
+            "why_material": "Theorem 1 decomposes lambda_n into an eta-binomial sum, an explicit alternating zeta-binomial sum, and elementary terms, while deriving eta from the Laurent expansion of zeta'/zeta and from von Mangoldt limits."
+          },
+          {
+            "line_end": 455,
+            "line_start": 384,
+            "title": "Integral comparison gives an n log n lower bound for S1",
+            "unit_id": "openalex_w2039040097_d05",
+            "unit_type": "theorem-plus-proof fragment",
+            "why_material": "Theorem 2 compares a decreasing summand with an integral, changes variables, integrates by parts, evaluates with the digamma function, and transfers the result into lower and upper bounds for lambda_n modulo S2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reordering alternating zeta sums into monotone kernels enables integral, hypergeometric, and digamma comparisons that cover S0, S1, S3, and a parameterized family.",
+            "limit": "Portability of the explicit component does not control the separate prime-weighted arithmetic residuals.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_d04",
+              "openalex_w2039040097_d05",
+              "openalex_w2039040097_d14",
+              "openalex_w2039040097_d15",
+              "openalex_w2039040097_d16",
+              "openalex_w2039040097_d27"
+            ],
+            "title": "Integral comparison is the portable deterministic component"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d04",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d04",
+          "spontaneous_reading": "Expanding the zeta values and exchanging summations turns a cancellation-heavy finite binomial sum into elementary kernels indexed by odd integers, where monotonicity becomes available."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d04",
+          "source_grounded_mathematics": "S1(n), the alternating binomial sum of (1-2^(-m))zeta(m), is rewritten using the odd-integer Dirichlet series as two equivalent infinite sums involving powers of rational kernels.",
+          "conceptual_reading": "A discrete representation chosen for definition is replaced by one chosen for estimation: cancellation is reorganized into terms whose dependence on the outer index can be compared with integrals.",
+          "representation_or_bridge": "The identity (1-2^(-n))zeta(n)=sum_{k>=0}(2k+1)^(-n) and a justified order interchange bridge zeta values to monotone elementary summands.",
+          "boundary_or_failure": "These rewritings concern only S1 and do not control the separate eta contribution S2.",
+          "uncertainty": "The prose fixes the reordering mechanism, but the multiline layout of equations (16)-(19) makes exact transcription formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d04",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines S1 and rewrites it, via the odd-integer Dirichlet series and an interchange of summations, into two elementary infinite-sum forms.",
+          "The candidate correctly confines the result to S1 and identifies representation change as the operative move."
+        ],
+        "inference": [
+          "Monotonicity and suitability for integral comparison can be checked from the rewritten kernels and are used in the following theorem, but they are not demonstrated in this span."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis calls the order interchange justified, whereas the span only says that the interchange was made and supplies no convergence or domination argument."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'a representation chosen for estimation' is useful only if tied to the explicit odd-kernel formulas, as the candidate otherwise does."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (16)-(19) are multiline and formula-sensitive, though the prose fixes the transformation."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the proof burden for exchanging the infinite and finite sums instead of silently discharging it."
+        ],
+        "revision_instructions": [
+          "Replace 'a justified order interchange' with 'the stated order interchange' and mark convergence justification as absent from this span; label monotonicity/integral comparability as an inference from the displayed kernels or as established in the next unit, not as proved here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inequality family subsumes S0, S1, and S3 comparison cases but does not automatically provide sharp bounds for every parameter.",
+      "line_end": 2370,
+      "line_start": 2225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout for (F.2)-(F.13) is fragile; prose and special-case identifications recover the conceptual family.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introducing a shift and multiplier turns several special sums into terminating 2F1 forms, whose comparison integrals become 3F2 expressions and reduce to digamma/harmonic forms at special parameters.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A hypergeometric family unifies alternating zeta-sum bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d27.txt",
+      "unit_bytes": 6635,
+      "unit_id": "openalex_w2039040097_d27",
+      "unit_sha256": "9d2242185bbe7af963751ae83be0e813abb474b523d9c98251e4d936c6cf9f71",
+      "unit_type": "parameterized method generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d27.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2217,
+          "line_end": 2224,
+          "text": "\n\n\n\n                                               43\n\n<!-- source-page: 44 -->\n\n",
+          "sha256": "319cd88ee20c8da70d80ccf8f59298846b10976fefff315a6e089e0a5dcef7b0"
+        },
+        "after": {
+          "line_start": 2371,
+          "line_end": 2378,
+          "text": "\n\n\n\n                                                  46\n\n<!-- source-page: 47 -->\n\n",
+          "sha256": "5e30fd003c08dcb034d91b32341be8e3fbfe03a15d7bdd1db8e4c0643cfd436f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix F: generalized zeta-sum estimates",
+            "line_end": 2378,
+            "line_start": 2225,
+            "mathematical_role": "Embeds several finite alternating zeta sums in a hypergeometric comparison family."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2370,
+          "line_start": 2225,
+          "title": "A hypergeometric family unifies alternating zeta-sum bounds",
+          "unit_id": "openalex_w2039040097_d27",
+          "unit_type": "parameterized method generalization",
+          "why_material": "Introducing a shift and multiplier turns several special sums into terminating 2F1 forms, whose comparison integrals become 3F2 expressions and reduce to digamma/harmonic forms at special parameters."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inequality family subsumes S0, S1, and S3 comparison cases but does not automatically provide sharp bounds for every parameter.",
+          "representation_dependency": "Formula layout for (F.2)-(F.13) is fragile; prose and special-case identifications recover the conceptual family.",
+          "unit_id": "openalex_w2039040097_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2216,
+            "line_start": 2100,
+            "title": "Dedekind Li explicit-formula framework and convergence gate",
+            "unit_id": "openalex_w2039040097_d26",
+            "unit_type": "partial construction",
+            "why_material": "The Dedekind completion is decomposed into discriminant, archimedean, and prime-ideal terms; differentiating supplies the candidate Li representation while explicitly leaving convergence justification as a gate."
+          },
+          {
+            "line_end": 2487,
+            "line_start": 2379,
+            "title": "Subtracting trivial-zero poles enlarges the eta expansion radius",
+            "unit_id": "openalex_w2039040097_d28",
+            "unit_type": "representation refinement",
+            "why_material": "Explicitly removing six trivial-zero contributions moves the nearest remaining singularity outward, yields faster-decaying modified eta coefficients, and changes the Li representation by known exponential terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reordering alternating zeta sums into monotone kernels enables integral, hypergeometric, and digamma comparisons that cover S0, S1, S3, and a parameterized family.",
+            "limit": "Portability of the explicit component does not control the separate prime-weighted arithmetic residuals.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_d04",
+              "openalex_w2039040097_d05",
+              "openalex_w2039040097_d14",
+              "openalex_w2039040097_d15",
+              "openalex_w2039040097_d16",
+              "openalex_w2039040097_d27"
+            ],
+            "title": "Integral comparison is the portable deterministic component"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2224,
+              "line_start": 2217,
+              "reason": "Page transition to generalized zeta sums."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d27",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d27",
+          "spontaneous_reading": "Introducing a shift ν and multiplier κ reveals several finite alternating zeta sums as one terminating hypergeometric family. Reordering creates a monotone comparison kernel whose integral is computable, turning isolated estimates into a portable parameterized method."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d27",
+          "source_grounded_mathematics": "The source defines S_ν(κ,n), reorders its sums, identifies the finite inner sum with a terminating 2F1, and compares the resulting j-sum with an integral I_ν. A change of variables evaluates that integral as a 3F2; at κ = 1 it reduces to digamma and harmonic-number expressions, while κ = 1/2 and 2 recover named special cases.",
+          "conceptual_reading": "The parameterized family compresses several comparison arguments into one representation. Termination controls the algebra, and the sum-to-integral passage replaces a discrete zeta-weighted object by a special-function expression that can be simplified at selected parameters.",
+          "representation_or_bridge": "The bridge is finite binomial sum → terminating 2F1 kernel → comparison integral → 3F2, with unit argument providing a further bridge to ψ and harmonic numbers.",
+          "boundary_or_failure": "The stated inequality family does not imply sharp bounds for every admissible ν and κ, and it controls these explicit alternating sums rather than the separate prime-weighted residuals in Li decompositions.",
+          "uncertainty": "The prose securely supports the family and special-case reductions, but the layout of (F.2)-(F.13) is fragile; exact prefactors and parameter ranges should be verified before reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d27",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines S_nu(kappa,n), reorders the sums, identifies a terminating 2F1, introduces the comparison integral, and evaluates it as a 3F2.",
+          "The reductions at kappa=1 and the stated nu=0 special cases at kappa=1/2 and 2 support the candidate's representation chain.",
+          "The candidate correctly avoids claiming that the parameter family automatically gives sharp bounds."
+        ],
+        "inference": [
+          "Treating the parameterized family as compression of several comparison arguments is a sound conceptual reading.",
+          "Saying termination controls the algebra is plausible from the terminating hypergeometric form."
+        ],
+        "unsupported_or_imported": [
+          "The frozen span states S_nu(kappa,n) >= I_nu(kappa,n) but does not establish the candidate's stronger claim that reordering creates a monotone kernel.",
+          "The sentence about separate prime-weighted residuals in Li decompositions is imported from outside this unit rather than supported by Appendix F's span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Portable parameterized method' would be generic without the concrete 2F1-to-integral-to-3F2 operation, which the candidate does supply."
+        ],
+        "context_or_ocr_risk": [
+          "Exact prefactors, admissible domains, and parameters in (F.2)-(F.13) are layout-fragile."
+        ],
+        "missed_mechanism": [
+          "The candidate does not preserve the stated domain conditions nu+2 <= n, the indicated extension, positivity of kappa, or the special restrictions attached to (F.9)-(F.11)."
+        ],
+        "revision_instructions": [
+          "Remove the imported prime-residual boundary.",
+          "Present monotonicity, if retained, only as an inference requiring proof; otherwise state only the comparison inequality given by the source.",
+          "Add the relevant parameter and validity conditions before literal mathematical reuse."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivative formulas support the preceding subtraction scheme rather than proving the remaining modified S2 bound.",
+      "line_end": 2553,
+      "line_start": 2489,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The text layer around equations (G.9)-(G.15) is formula-fragile and should not be copied literally without TeX verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taylor expansion at each trivial zero and functional-equation derivative identities provide modified coefficient data, including eta_0, and refine the lower-bound decomposition.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trivial-zero derivatives calibrate the modified eta sequence",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d29.txt",
+      "unit_bytes": 3040,
+      "unit_id": "openalex_w2039040097_d29",
+      "unit_sha256": "57484526b432749f3e10e6471c58825a90a163358051575a2d00b7d15ab53ef7",
+      "unit_type": "local expansion and refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d29.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2481,
+          "line_end": 2488,
+          "text": "            2    4     6        8        10         12       (12)\n        −      +    +       +        +         +         − |S2 |,                  (G.8)\n            3    5     7        9        11         13\n                                               \u0010 \u0011\n                         (12)        Pn        n      (12)\nwhere we have put S2            ≡−       m=1   m\n                                                     ηm−1 .\n\n",
+          "sha256": "bca973465c0f88538918389b57bc7981b6866bcc2506882ecd5e35b838359ded"
+        },
+        "after": {
+          "line_start": 2554,
+          "line_end": 2561,
+          "text": "\n                                                49\n\n<!-- source-page: 50 -->\n\nAppendix H: On derivatives of the Riemann zeta function\n\n   Here we capture various formulas for integer order derivatives of the zeta func-\n",
+          "sha256": "f67b234020487624214544328ef27aa05d99ef4aaedf893378f32d9ef20d6b50"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix G: trivial-zero-subtracted Li representation",
+            "line_end": 2558,
+            "line_start": 2379,
+            "mathematical_role": "Expands after removing six trivial-zero poles, enlarging convergence radius and exposing new explicit terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2553,
+          "line_start": 2489,
+          "title": "Trivial-zero derivatives calibrate the modified eta sequence",
+          "unit_id": "openalex_w2039040097_d29",
+          "unit_type": "local expansion and refinement",
+          "why_material": "Taylor expansion at each trivial zero and functional-equation derivative identities provide modified coefficient data, including eta_0, and refine the lower-bound decomposition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivative formulas support the preceding subtraction scheme rather than proving the remaining modified S2 bound.",
+          "representation_dependency": "The text layer around equations (G.9)-(G.15) is formula-fragile and should not be copied literally without TeX verification.",
+          "unit_id": "openalex_w2039040097_d29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2487,
+            "line_start": 2379,
+            "title": "Subtracting trivial-zero poles enlarges the eta expansion radius",
+            "unit_id": "openalex_w2039040097_d28",
+            "unit_type": "representation refinement",
+            "why_material": "Explicitly removing six trivial-zero contributions moves the nearest remaining singularity outward, yields faster-decaying modified eta coefficients, and changes the Li representation by known exponential terms."
+          },
+          {
+            "line_end": 2636,
+            "line_start": 2559,
+            "title": "Functional-equation formulas relate zeta derivatives across the critical reflection",
+            "unit_id": "openalex_w2039040097_d30",
+            "unit_type": "derivative toolkit",
+            "why_material": "Differentiating the zeta functional equation relates negative-integer derivatives to positive-side values and Bernoulli series, supplying explicit data for modified eta moments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing known trivial-zero poles from zeta'/zeta shifts the convergence barrier from the first trivial zero to near the first nontrivial zero, producing faster-decaying modified coefficients plus explicit correction terms in lambda.",
+            "limit": "The modified coefficients lose the stated von-Mangoldt interpretation and their binomial sum still requires an independent bound.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_d03",
+              "openalex_w2039040097_d28",
+              "openalex_w2039040097_d29"
+            ],
+            "title": "Trivial-zero subtraction trades explicit corrections for a larger analytic radius"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2558,
+              "line_start": 2554,
+              "reason": "Page transition to derivative formulas."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d29",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d29",
+          "spontaneous_reading": "Local expansions at the removed trivial zeros calibrate the pole-subtracted representation. Functional-equation identities turn derivatives at negative even integers into positive-side zeta data, making at least the leading modified coefficient and correction terms explicit."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d29",
+          "source_grounded_mathematics": "The span expands ζ and ζ'/ζ near s = -2k, records formulas for ζ'(-2n) and ζ''(-2n) from the functional equation, evaluates a finite derivative combination, and obtains η_0^(12) = γ - Σ_{k=1}^6 1/(2k+1). It then inserts that value into the refined lower-bound decomposition (G.15).",
+          "conceptual_reading": "The local singularity data are not merely removed; their Taylor jets supply calibration data for the new coordinates. Reflection through the functional equation transfers difficult negative-side derivatives to positive odd zeta values and derivatives.",
+          "representation_or_bridge": "The bridge is trivial-zero Taylor jet → functional-equation derivative identities → modified eta coefficients → the revised Li lower-bound decomposition.",
+          "boundary_or_failure": "These identities support the subtraction scheme but do not bound the remaining modified binomial sum from m = 2 onward, so they do not prove the desired positivity statement.",
+          "uncertainty": "The role of η_0^(12) and the derivative transfer is clear, but (G.9)-(G.15) are formula-fragile in the text layer and numerical or literal identities should be TeX-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d29",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives local expansions of zeta and zeta'/zeta at negative even integers and functional-equation formulas relating negative-side derivatives to positive odd zeta values and derivatives.",
+          "It separately states eta_0^(12)=gamma-sum_{k=1}^6 1/(2k+1) by reference to (G.2), then inserts that value into Corollary G2.",
+          "The remaining m>=2 modified-eta binomial sum is not bounded in this span, so the candidate's non-positivity boundary is appropriate."
+        ],
+        "inference": [
+          "The negative-even derivative identities are useful calibration data for the broader subtraction scheme, but the exact route to individual modified eta coefficients is not exhibited here."
+        ],
+        "unsupported_or_imported": [
+          "The proposed bridge 'trivial-zero Taylor jet to functional-equation derivative identities to modified eta coefficients' conflates adjacent calculations: the source obtains eta_0^(12) directly from (G.2), not from the displayed Taylor jets or the derivative combination in (G.13).",
+          "The claim that the local Taylor jets supply calibration data for the new eta coordinates is stronger than the explicit linkage in the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'New coordinates' is generic language and obscures which coefficients are actually derived."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (G.9)-(G.15), especially the quotient expansion, are formula-fragile and should not be reconstructed from the text layer."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the derivative-ratio evaluation (G.13) from the independent eta_0^(12) evaluation from the pole-subtracted expansion (G.2)."
+        ],
+        "revision_instructions": [
+          "Split the analysis into two supported threads: local derivative identities at trivial zeros, and the direct eta_0^(12) evaluation from (G.2).",
+          "Do not assert that the Taylor jets determine modified eta coefficients unless an explicit formula establishing that dependence is provided."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This offers an orthogonal-polynomial viewpoint on the kernels already appearing in generalized Li sums.",
+      "line_end": 2862,
+      "line_start": 2789,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (I.6)-(I.12) are sufficiently connected by prose, though exact signs should be checked against TeX.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite binomial polynomial is identified with a terminating confluent hypergeometric series and an associated Laguerre polynomial, converting its Mellin transform into a Laplace transform with a simple closed form.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li's polynomial as a Laguerre derivative and Mellin-Laplace kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d32.txt",
+      "unit_bytes": 3897,
+      "unit_id": "openalex_w2039040097_d32",
+      "unit_sha256": "43623d395b9f166d0350f69b3f0323ac71cb1a9f334fcbd6f38b682a06cddff3",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d32.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2781,
+          "line_end": 2788,
+          "text": "<!-- source-page: 54 -->\n\nUse of the doubling formula ψ[(λ+1)/2] = 2ψ(λ)−ψ(λ/2)−2 ln 2 then again yields Eq.\n\n(I.3). In Appendix A we have additionally given many inequalities for the digamma\n\nfunction.\n\n",
+          "sha256": "2a5f4c619074eb82faf91fa739e3aa2fd2827ac66d14cb5666e666043db13792"
+        },
+        "after": {
+          "line_start": 2863,
+          "line_end": 2870,
+          "text": "\n\n\n\n                                             55\n\n<!-- source-page: 56 -->\n\n",
+          "sha256": "3fd90922f490d20a45ad91856125f975c173701959eb92774cdd48f82d85dfb3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I: digamma and Mellin transforms",
+            "line_end": 2870,
+            "line_start": 2726,
+            "mathematical_role": "Evaluates an auxiliary digamma integral and identifies the Li polynomial with hypergeometric and Laguerre representations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2862,
+          "line_start": 2789,
+          "title": "Li's polynomial as a Laguerre derivative and Mellin-Laplace kernel",
+          "unit_id": "openalex_w2039040097_d32",
+          "unit_type": "representation change",
+          "why_material": "The finite binomial polynomial is identified with a terminating confluent hypergeometric series and an associated Laguerre polynomial, converting its Mellin transform into a Laplace transform with a simple closed form."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This offers an orthogonal-polynomial viewpoint on the kernels already appearing in generalized Li sums.",
+          "representation_dependency": "Equations (I.6)-(I.12) are sufficiently connected by prose, though exact signs should be checked against TeX.",
+          "unit_id": "openalex_w2039040097_d32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2717,
+            "line_start": 2638,
+            "title": "Mellin integrals generate logarithmic-derivative moments",
+            "unit_id": "openalex_w2039040097_d31",
+            "unit_type": "recursive integral method",
+            "why_material": "Differentiating the Mellin representation of zeta produces formulas for zeta derivatives and successive derivatives of zeta'/zeta, directly targeting the weighted eta moments from the main text."
+          },
+          {
+            "line_end": 2986,
+            "line_start": 2871,
+            "title": "Zero counting bounds an RH-conditional tail of sigma",
+            "unit_id": "openalex_w2039040097_d33",
+            "unit_type": "conditional plausibility bound",
+            "why_material": "A unit-interval zero-count estimate is combined with integral comparison to bound a reciprocal-ordinate tail, giving a concrete route from zero density to sigma decay."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2870,
+              "line_start": 2863,
+              "reason": "Appendix close and transition to conjecture audit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d32",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d32",
+          "spontaneous_reading": "A finite Li kernel polynomial is recognized simultaneously as a terminating confluent hypergeometric function and a Laguerre derivative. That identification converts its Mellin transform into a standard Laplace transform with the elementary value 1 - (1 - 1/s)^n."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d32",
+          "source_grounded_mathematics": "The span rewrites P_n(x) as n·1F1(1-n;2;-x), substitutes x = e^(-u) in its Mellin integral, and evaluates the resulting Laplace transform. It also identifies P_n(-x) = -L_n'(x) = L_{n-1}^1(x) and uses Laguerre recurrences and integration by parts to recover the same transform pair for Re s > 0.",
+          "conceptual_reading": "Recognizing the polynomial inside an orthogonal-polynomial family imports recurrences, derivatives, weights, and transform identities at once. The representation exposes that the binomial kernel is not ad hoc but a standard Laplace-Mellin object.",
+          "representation_or_bridge": "The chain is finite binomial polynomial ↔ terminating 1F1 ↔ associated Laguerre derivative ↔ Laplace transform, with the logarithmic substitution linking the original Mellin variable to the Laplace variable.",
+          "boundary_or_failure": "This representation change supplies identities and analytic tools but, in the span, yields no new positivity or zero-location result. Orthogonality alone does not control the arithmetic coefficients with which the kernel may later be paired.",
+          "uncertainty": "The connected prose supports all main identifications; exact signs in (I.6)-(I.12) remain mildly extraction-sensitive and should be checked before formal reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d32",
+        "critic_decision": "revise",
+        "supported": [
+          "The source rewrites P_n as a terminating 1F1, transforms its Mellin integral by x=e^{-u}, and evaluates the resulting Laplace transform as 1-(1-1/s)^n.",
+          "It explicitly identifies P_n(-x)=-L_n'(x)=L_{n-1}^1(x), uses Laguerre recurrences, and recovers the same transform through integration by parts.",
+          "The candidate supplies a genuine non-paraphrase representation chain rather than merely saying that structure is exposed."
+        ],
+        "inference": [
+          "Recognizing an orthogonal-polynomial family imports the displayed recurrences, derivative identity, weight, and transform machinery.",
+          "The observation that the span itself proves no positivity or zero-location theorem is a legitimate scope boundary."
+        ],
+        "unsupported_or_imported": [
+          "The final claim about arithmetic coefficients with which the kernel may later be paired is not present in this frozen span and imports a downstream application."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact signs in (I.6)-(I.12) remain extraction-sensitive, as the candidate notes."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the unsupported arithmetic-coefficient sentence or label it explicitly as external downstream context; keep the source-grounded boundary that the span establishes transform identities rather than positivity or zero location."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The tail argument explicitly assumes RH and applies only beyond a very large threshold, so it cannot independently establish the conjectures it is meant to motivate.",
+      "line_end": 2986,
+      "line_start": 2871,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The equations are readable enough for the bounding chain, but exact constants and floors depend on displayed formulas (J.1)-(J.11).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A unit-interval zero-count estimate is combined with integral comparison to bound a reciprocal-ordinate tail, giving a concrete route from zero density to sigma decay.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        57,
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero counting bounds an RH-conditional tail of sigma",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d33.txt",
+      "unit_bytes": 4767,
+      "unit_id": "openalex_w2039040097_d33",
+      "unit_sha256": "2db7d6e09afd1aeff9dfa77a72741a14fe86bc7203fa6913053125e2137885cb",
+      "unit_type": "conditional plausibility bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d33.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2863,
+          "line_end": 2870,
+          "text": "\n\n\n\n                                             55\n\n<!-- source-page: 56 -->\n\n",
+          "sha256": "3fd90922f490d20a45ad91856125f975c173701959eb92774cdd48f82d85dfb3"
+        },
+        "after": {
+          "line_start": 2987,
+          "line_end": 2994,
+          "text": "\n\n\n\n                                            58\n\n<!-- source-page: 59 -->\n\n",
+          "sha256": "5aa4a87ac3315003bf7bd2f39e7f1d846f1a04c8ce076c69fe7a9260d4113e01"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix J: conjecture plausibility",
+            "line_end": 2994,
+            "line_start": 2871,
+            "mathematical_role": "Uses zero-counting estimates and an RH-conditional tail argument to motivate, but not prove, decay conjectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2986,
+          "line_start": 2871,
+          "title": "Zero counting bounds an RH-conditional tail of sigma",
+          "unit_id": "openalex_w2039040097_d33",
+          "unit_type": "conditional plausibility bound",
+          "why_material": "A unit-interval zero-count estimate is combined with integral comparison to bound a reciprocal-ordinate tail, giving a concrete route from zero density to sigma decay."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The tail argument explicitly assumes RH and applies only beyond a very large threshold, so it cannot independently establish the conjectures it is meant to motivate.",
+          "representation_dependency": "The equations are readable enough for the bounding chain, but exact constants and floors depend on displayed formulas (J.1)-(J.11).",
+          "unit_id": "openalex_w2039040097_d33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2862,
+            "line_start": 2789,
+            "title": "Li's polynomial as a Laguerre derivative and Mellin-Laplace kernel",
+            "unit_id": "openalex_w2039040097_d32",
+            "unit_type": "representation change",
+            "why_material": "The finite binomial polynomial is identified with a terminating confluent hypergeometric series and an associated Laguerre polynomial, converting its Mellin transform into a Laplace transform with a simple closed form."
+          },
+          {
+            "line_end": 3062,
+            "line_start": 2995,
+            "title": "A Dedekind xi integral forces real-axis derivative positivity",
+            "unit_id": "openalex_w2039040097_d34",
+            "unit_type": "positive-kernel argument",
+            "why_material": "For an imaginary quadratic field, a positive integral kernel and the functional symmetry imply positivity of xi on the real axis, nonnegativity of derivatives on the right half-axis, and strict positivity for even orders."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2870,
+              "line_start": 2863,
+              "reason": "Appendix close and transition to conjecture audit."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 2994,
+              "line_start": 2987,
+              "reason": "Page transition to Dedekind xi observations."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d33",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d33",
+          "spontaneous_reading": "The useful mechanism is to discretize zero density into unit-height blocks and then compare the reciprocal-ordinate tail with an integral. A local bound on how many zeros occupy each block becomes an explicit decay estimate for the tail."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d33",
+          "source_grounded_mathematics": "Starting from Backlund's zero-count formula and error bound, the source derives N(T+1)-N(T) ≤ (ln T)/π beyond T0 = 3×10^8. Assuming RH, it groups ordinates α_j by unit intervals, bounds Σ α_j^(-k) by Σ (ln j)/j^k, and evaluates an integral majorant to obtain (J.9).",
+          "conceptual_reading": "Counting information is converted into moment control by coarse graining: exact zero locations are forgotten, while occupancy per height interval is retained. Integral comparison then compresses the remaining tail into an explicit function of the cutoff and k.",
+          "representation_or_bridge": "The bridge runs from global zero counting N(T), to unit-interval occupancy, to a weighted discrete tail, and finally to an elementary integral bound.",
+          "boundary_or_failure": "The tail argument explicitly assumes RH, begins only beyond an enormous threshold, and controls an ordinate surrogate rather than independently proving the conjectured behavior of the full complex σ_k sequence. It therefore cannot support RH without circularity.",
+          "uncertainty": "The conditional bounding chain is clear, but exact constants, floors, and the relation between the ordinate approximation and σ_k depend on formulas (J.1)-(J.11) and should not be strengthened beyond the source's plausibility claim."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d33",
+        "critic_decision": "revise",
+        "supported": [
+          "The source derives a large-height unit-interval occupancy estimate from Backlund's zero-count formula and its error term.",
+          "Under an explicit RH assumption, it groups ordinates by integer-height blocks and majorizes the reciprocal-power tail by a logarithmically weighted sum and then an integral.",
+          "The candidate correctly distinguishes the ordinate tail from the full complex sigma_k quantity and explicitly identifies the RH assumption as preventing an independent RH argument."
+        ],
+        "inference": [
+          "Coarse graining from exact zero locations to interval occupancy is an accurate conceptual description of (J.10)."
+        ],
+        "unsupported_or_imported": [
+          "The candidate states N(T+1)-N(T) <= (ln T)/pi, but the displayed extraction and the bound actually used in (J.10) support an ln T occupancy bound, not the asserted 1/pi factor."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Equation (J.3) is visibly extraction-ambiguous, so reconstructing an exact pi factor is unsafe; later equations should be used to preserve the bounding chain without inventing a constant.",
+          "Exact floors and constants in (J.9)-(J.11) remain formula-dependent."
+        ],
+        "missed_mechanism": [
+          "The source calls the ordinate sum an approximation to sigma_k; the candidate preserves this, but the exact approximation error is not supplied and must not be inferred."
+        ],
+        "revision_instructions": [
+          "Replace the unsupported (ln T)/pi statement with the occupancy bound used in (J.10), or omit the exact factor and describe it as an O(ln T) bound because (J.3) is extraction-ambiguous.",
+          "Retain the explicit RH assumption and the distinction between the ordinate surrogate and sigma_k."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an evaluation toolkit supporting the Dedekind extension, not a zero-location result.",
+      "line_end": 3153,
+      "line_start": 3064,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (K.4)-(K.10) are formula-dependent and partly fragmented; the special-function conversion is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theta-integral pieces are rewritten using incomplete gamma, error, and exponential-integral functions, and special derivative values are identified as inputs to Dedekind Li logarithmic derivatives.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Special-function series evaluate Dedekind xi derivative inputs",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d35.txt",
+      "unit_bytes": 5433,
+      "unit_id": "openalex_w2039040097_d35",
+      "unit_sha256": "d92447682a9a089d296444608636feef715d4a406ca75781154cc7d417c58b55",
+      "unit_type": "computational representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d35.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3056,
+          "line_end": 3063,
+          "text": "ξk      (s) > 0 for all s ≥ 1/2. Of course, as also seen by the functional equation\n                                               (2m+1)                                     (m)\nfor ξk (s), the odd-order derivatives ξk                vanish at s = 1/2; we have ξk (s) =\n          (m)\n(−1)m ξk (1 − s). This Proposition seems to mean that ξk (s) has no zeros for real\n\nvalues of s.\n\n",
+          "sha256": "b7209ab7c72df04f8aab89ec3840523b5f4d227a9918fed801771f56cb188690"
+        },
+        "after": {
+          "line_start": 3154,
+          "line_end": 3161,
+          "text": "\n\n\n\n                                                                     61\n\n<!-- source-page: 62 -->\n\n",
+          "sha256": "6a7b257eefef426761cdb2fb117816286e8ae12f4b947937ec343b4de81e6703"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix K: Dedekind xi observations",
+            "line_end": 3161,
+            "line_start": 2995,
+            "mathematical_role": "Uses a positive integral kernel for an imaginary quadratic Dedekind xi function to infer real-axis derivative positivity and series evaluations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3153,
+          "line_start": 3064,
+          "title": "Special-function series evaluate Dedekind xi derivative inputs",
+          "unit_id": "openalex_w2039040097_d35",
+          "unit_type": "computational representation",
+          "why_material": "Theta-integral pieces are rewritten using incomplete gamma, error, and exponential-integral functions, and special derivative values are identified as inputs to Dedekind Li logarithmic derivatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an evaluation toolkit supporting the Dedekind extension, not a zero-location result.",
+          "representation_dependency": "Equations (K.4)-(K.10) are formula-dependent and partly fragmented; the special-function conversion is recoverable from prose.",
+          "unit_id": "openalex_w2039040097_d35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3062,
+            "line_start": 2995,
+            "title": "A Dedekind xi integral forces real-axis derivative positivity",
+            "unit_id": "openalex_w2039040097_d34",
+            "unit_type": "positive-kernel argument",
+            "why_material": "For an imaginary quadratic field, a positive integral kernel and the functional symmetry imply positivity of xi on the real axis, nonnegativity of derivatives on the right half-axis, and strict positivity for even orders."
+          },
+          {
+            "line_end": 3267,
+            "line_start": 3162,
+            "title": "Euler-Maclaurin expansion refines S1 with a divergent correction series",
+            "unit_id": "openalex_w2039040097_d36",
+            "unit_type": "asymptotic refinement",
+            "why_material": "Explicit summand derivatives are inserted into Euler-Maclaurin to refine the n log n contribution and suggest alternating upper/lower approximations while warning that the correction series is generally divergent."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3161,
+              "line_start": 3154,
+              "reason": "Appendix close and page transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d35",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d35",
+          "spontaneous_reading": "The theta-integral pieces are converted into standard special functions and rapidly evaluable series. This makes central and endpoint derivatives of the Dedekind ξ function concrete inputs for the logarithmic derivatives defining Dedekind Li coefficients."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d35",
+          "source_grounded_mathematics": "The source splits γ(a) into theta integrals, expands the theta series termwise, and expresses the pieces with incomplete gamma, the error function, and the exponential integral. It then records integral formulas for even derivatives at 1/2 and arbitrary derivatives at 1, states their positivity at 1, and identifies ξ_k^(m)(1) as input to the logarithmic derivatives in (E.31).",
+          "conceptual_reading": "Special-function conversion is a computational representation change: an integral tied to a theta kernel becomes named functions and infinite series with established evaluation machinery. The derivative values are intermediate data rather than final zero information.",
+          "representation_or_bridge": "The chain is theta kernel → incomplete-gamma/error/exponential-integral series → ξ_k derivative values at symmetric or endpoint arguments → logarithmic derivatives for Dedekind λ_n.",
+          "boundary_or_failure": "This is an evaluation toolkit, not a zero-location or Li-positivity result. The span does not provide truncation errors or show that computing these derivative inputs controls all Dedekind Li coefficients.",
+          "uncertainty": "The special-function conversion and intended use are supported by prose, but (K.4)-(K.10) are partly fragmented, so exact limits, factors, and variables require TeX verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d35",
+        "critic_decision": "revise",
+        "supported": [
+          "The source expands the theta integrals termwise and expresses the resulting pieces using incomplete gamma, error, confluent-hypergeometric, and exponential-integral functions.",
+          "It records formulas for even derivatives at 1/2 and arbitrary integer derivatives at 1, states positivity at 1, and explicitly says the latter values enter the logarithmic derivatives for Dedekind lambda_n.",
+          "The candidate correctly treats these values as intermediate evaluation data rather than a zero-location or Li-positivity theorem."
+        ],
+        "inference": [
+          "Calling the conversion a computational representation change is supported by the passage from theta integrals to standard special functions and infinite series."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the resulting series 'rapidly evaluable,' but this span gives no convergence-rate, truncation-error, or computational-cost statement."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The limits, factors, and variables in (K.4)-(K.10) are partly fragmented, and the candidate correctly requests TeX verification for literal evaluation."
+        ],
+        "missed_mechanism": [
+          "No truncation or error control is provided for the infinite-series evaluations; the candidate notes this in its boundary but contradicts that caution with 'rapidly evaluable.'"
+        ],
+        "revision_instructions": [
+          "Delete or qualify 'rapidly evaluable' as an untested computational inference.",
+          "Keep the supported claim that named special-function and series representations make the derivative inputs explicit in principle, without asserting numerical efficiency."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed bounds are described as expected approximations, not proved global inequalities.",
+      "line_end": 3267,
+      "line_start": 3162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (L.1)-(L.7) are layout-sensitive; the asymptotic status and sign-alternation mechanism are stated clearly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explicit summand derivatives are inserted into Euler-Maclaurin to refine the n log n contribution and suggest alternating upper/lower approximations while warning that the correction series is generally divergent.",
+      "source_id": "openalex_w2039040097",
+      "source_normalized_sha256": "2cfc4c58a272380ad0f3483bf5b617547abbc15bf29ea89ff698684e38e5aec1",
+      "source_page_markers_inside_unit": [
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin expansion refines S1 with a divergent correction series",
+      "unit_artifact_relpath": "depth/units/openalex_w2039040097_d36.txt",
+      "unit_bytes": 5497,
+      "unit_id": "openalex_w2039040097_d36",
+      "unit_sha256": "2a3f6bd0dbded7d5c51b40ba887334699b3a9b670e9a2cbddd5d249285e56975",
+      "unit_type": "asymptotic refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2039040097_d36.txt",
+      "source": {
+        "source_id": "openalex_w2039040097",
+        "title": "Toward Verification of the Riemann Hypothesis: Application of the Li Criterion",
+        "authors": [
+          "Mark W. Coffey"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3154,
+          "line_end": 3161,
+          "text": "\n\n\n\n                                                                     61\n\n<!-- source-page: 62 -->\n\n",
+          "sha256": "6a7b257eefef426761cdb2fb117816286e8ae12f4b947937ec343b4de81e6703"
+        },
+        "after": {
+          "line_start": 3268,
+          "line_end": 3275,
+          "text": "\n                                                   63\n\n<!-- source-page: 64 -->\n\nReferences\n\n[1] M. Abramowitz and I. A. Stegun, Handbook of Mathematical Functions, Wash-\n",
+          "sha256": "435b88c6213f76c7b9c456891daff03e2e5c2e629fe51a1fd1c8364c100b96df"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_021575e880af8d7fb5f1ad7125fb1781e7acaf844e9a7d9f5391c874ba60be8f",
+        "dossier_sha256": "7ee735aab06e481fee0041531397c87a9dae9a2db25c1d45172ec4bdc0a2afcc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix L: Euler-Maclaurin for S1",
+            "line_end": 3272,
+            "line_start": 3162,
+            "mathematical_role": "Refines the explicit S1 contribution by an asymptotic Euler-Maclaurin expansion and candidate alternating bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3267,
+          "line_start": 3162,
+          "title": "Euler-Maclaurin expansion refines S1 with a divergent correction series",
+          "unit_id": "openalex_w2039040097_d36",
+          "unit_type": "asymptotic refinement",
+          "why_material": "Explicit summand derivatives are inserted into Euler-Maclaurin to refine the n log n contribution and suggest alternating upper/lower approximations while warning that the correction series is generally divergent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposed bounds are described as expected approximations, not proved global inequalities.",
+          "representation_dependency": "Equations (L.1)-(L.7) are layout-sensitive; the asymptotic status and sign-alternation mechanism are stated clearly.",
+          "unit_id": "openalex_w2039040097_d36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3153,
+            "line_start": 3064,
+            "title": "Special-function series evaluate Dedekind xi derivative inputs",
+            "unit_id": "openalex_w2039040097_d35",
+            "unit_type": "computational representation",
+            "why_material": "Theta-integral pieces are rewritten using incomplete gamma, error, and exponential-integral functions, and special derivative values are identified as inputs to Dedekind Li logarithmic derivatives."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Asymptotic corrections can tighten S1's linear term and suggest alternating approximations, but further refinement of S1 leaves S2 magnitude control as the decisive missing ingredient.",
+            "limit": "The Euler-Maclaurin correction series is explicitly divergent and the proposed upper/lower approximations are not stated as proved uniform bounds.",
+            "parent_local_unit_ids": [
+              "openalex_w2039040097_d05",
+              "openalex_w2039040097_d36",
+              "openalex_w2039040097_d12"
+            ],
+            "title": "Euler-Maclaurin refines the solved term without removing the central obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3161,
+              "line_start": 3154,
+              "reason": "Appendix close and page transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3272,
+              "line_start": 3268,
+              "reason": "Page break before references."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2039040097_d36",
+        "spontaneous": {
+          "unit_id": "openalex_w2039040097_d36",
+          "spontaneous_reading": "Euler-Maclaurin separates S1 into a computable digamma integral and Bernoulli derivative corrections. The correction signs suggest alternating upper and lower approximations, but the same representation displays its own obstruction: the series is asymptotic and generally divergent."
+        },
+        "directed": {
+          "unit_id": "openalex_w2039040097_d36",
+          "source_grounded_mathematics": "The source defines the summand f(k), derives its arbitrary derivatives, and applies Euler-Maclaurin with vanishing derivatives at infinity. Using a previously evaluated integral gives S1(n) as n[ψ(n)+γ]/2 plus Bernoulli corrections; the first truncations (L.7a)-(L.7b) are proposed as approximate upper and lower bounds, with alternating signs for large n.",
+          "conceptual_reading": "The representation decomposes a discrete sum into a smooth bulk term and local endpoint corrections. It refines asymptotics systematically, while divergence means the useful object is a controlled truncation rather than the formal infinite series.",
+          "representation_or_bridge": "The bridge is discrete S1 sum → Euler-Maclaurin integral plus endpoint derivatives → digamma main term plus Bernoulli corrections; explicit derivatives of f make successive refinements available.",
+          "boundary_or_failure": "The source calls the candidate bounds expected approximations, not proved uniform inequalities, and emphasizes that the correction series generally diverges. No remainder estimate or optimal-truncation analysis is supplied, and refining S1 does not bound the separate S2 obstruction.",
+          "uncertainty": "The asymptotic status and sign-alternation mechanism are clear, but exact formulas (L.1)-(L.7) are layout-sensitive and their use as rigorous bounds would require an independent remainder argument."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2039040097_d36",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines f(k), derives arbitrary derivatives, and inserts them into Euler-Maclaurin to express S1 as a digamma bulk term plus Bernoulli endpoint corrections.",
+          "It explicitly says the sums are asymptotic and generally divergent, and labels (L.7a)-(L.7b) only expected approximate upper and lower bounds.",
+          "The eventual sign alternation is tied to the Bernoulli signs after the source's sufficiently-large-n simplification."
+        ],
+        "inference": [
+          "The smooth-bulk versus endpoint-correction decomposition is a faithful conceptual reading of Euler-Maclaurin.",
+          "Finite truncation is the practically relevant object, but the source supplies no theorem controlling its remainder."
+        ],
+        "unsupported_or_imported": [
+          "Calling the useful object a 'controlled truncation' overstates the evidence because the candidate itself notes that no remainder estimate or optimal-truncation analysis is supplied.",
+          "The statement that refining S1 does not bound a separate S2 obstruction is imported from outside this exact Appendix L span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact derivative and correction formulas in (L.1)-(L.7) are layout-sensitive, although the asymptotic status is explicit in prose."
+        ],
+        "missed_mechanism": [
+          "The distinction between sign alternation of formal correction terms for sufficiently large n and a rigorous alternating-series remainder bound must remain explicit."
+        ],
+        "revision_instructions": [
+          "Replace 'controlled truncation' with 'finite or heuristically chosen truncation requiring independent remainder control.'",
+          "Remove the imported S2 claim from the unit analysis or label it as external synthesis context.",
+          "Do not promote the expected approximate bounds to proved uniform inequalities."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "caba251959b8b105a7b482280be32c3912bc51dcb45c5e17451f0325c50544ab"
+}

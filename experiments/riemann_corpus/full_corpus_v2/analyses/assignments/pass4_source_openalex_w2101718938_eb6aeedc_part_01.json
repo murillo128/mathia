@@ -1,0 +1,477 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2101718938_eb6aeedc_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2101718938",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite-exception observation at lines 87-95 is necessary for the equivalence, not merely motivation.",
+      "line_end": 101,
+      "line_start": 75,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Superscripts and the harmonic-sum display should be checked against the retained PDF before exact formula reuse; the stated equivalences are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorems 4 and 5 eliminate squarefull and 5-free candidates, while Theorem 6 packages the result as an RH-equivalent test on integers divisible by a prime fifth power and contrasts it with Lagarias's harmonic formulation.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Squarefull and 5-free exclusions yield a fifth-power formulation of Robin's criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_u003.txt",
+      "unit_bytes": 1356,
+      "unit_id": "openalex_w2101718938_u003",
+      "unit_sha256": "d4a870bde1a15c81f6c5b5864e96c08d61c760571fd56101609375cf511a8438",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_u003.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 67,
+          "line_end": 74,
+          "text": "2\n  − π22 = 0.2973 · · · (cf. Tenenbaum [11, p. 46]). Thus, to wit, this paper gives at\nleast half a proof of RH !\n    Somewhat remarkably perhaps these two results will be proved using only very\nelementary methods. The deepest input will be Lemma 1 below which only requires\npre-Prime Number Theorem elementary methods for its proof (in Tenenbaum’s [11]\nintroductory book on analytic number theory it is already derived within the first 18\npages).\n",
+          "sha256": "e76363aaaf41c518115401c97e7030c5ea97696b63b2cb423a8ff398a1400c38"
+        },
+        "after": {
+          "line_start": 102,
+          "line_end": 109,
+          "text": "\n\n\n\n                                           2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "bb5a3016188c56930370995dd0955b818d2a6ae51454d24b4964912a496fd647"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2570b968fcf5071115079fb1a32b15271f0ab69f3dabc6cfe64e64fb87b3f5d4",
+        "dossier_sha256": "5aaddd278bde8145546a208017e1e7adc63d4916aef3b4846528bd84206a80cd",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Introduction",
+            "line_end": 109,
+            "line_start": 26,
+            "mathematical_role": "Defines Robin's inequality, records the RH criterion and finite exceptions, and states the squarefree, odd, squarefull, 5-free, and fifth-power formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 101,
+          "line_start": 75,
+          "title": "Squarefull and 5-free exclusions yield a fifth-power formulation of Robin's criterion",
+          "unit_id": "openalex_w2101718938_u003",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Theorems 4 and 5 eliminate squarefull and 5-free candidates, while Theorem 6 packages the result as an RH-equivalent test on integers divisible by a prime fifth power and contrasts it with Lagarias's harmonic formulation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The finite-exception observation at lines 87-95 is necessary for the equivalence, not merely motivation.",
+          "representation_dependency": "Superscripts and the harmonic-sum display should be checked against the retained PDF before exact formula reuse; the stated equivalences are readable.",
+          "unit_id": "openalex_w2101718938_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 69,
+            "line_start": 47,
+            "title": "Squarefree and odd subfamilies reduce the RH check to even non-squarefree integers",
+            "unit_id": "openalex_w2101718938_u002",
+            "unit_type": "structural-reduction",
+            "why_material": "Theorems 1 and 2 eliminate all but small exceptions in two broad families, and Theorem 3 converts them into a lower-density conditional test class for Robin's criterion."
+          },
+          {
+            "line_end": 147,
+            "line_start": 112,
+            "title": "Elementary reciprocal-prime estimate sufficient for the squarefree proof",
+            "unit_id": "openalex_w2101718938_u004",
+            "unit_type": "analytic-bound",
+            "why_material": "Lemma 1 supplies a deliberately elementary upper bound for the reciprocal-prime sum, with an explicit computation-to-asymptotic cutoff that later closes the small-largest-prime case."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the source's proved reductions, a counterexample beyond the finite baseline is forced away from squarefree, odd, squarefull, and 5-free classes, hence must be even, non-squarefree, non-squarefull, and divisible by a prime fifth power.",
+            "limit": "This is conditional filtering under Robin's criterion and source-reported finite computations; it neither produces a counterexample nor proves RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2101718938_u001",
+              "openalex_w2101718938_u002",
+              "openalex_w2101718938_u003",
+              "openalex_w2101718938_u009",
+              "openalex_w2101718938_u022"
+            ],
+            "title": "Structural funnel for any large Robin counterexample"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101718938_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w2101718938_u003",
+          "spontaneous_reading": "The key move is complement selection: proving all 5-free integers safe makes divisibility by some prime fifth power the only large regime that must be tested, while the known small failures lie on the safe side of that partition."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101718938_u003",
+          "source_grounded_mathematics": "The source states that only 1,4,8,9,16,36 are squarefull failures, that every 5-free integer satisfies Robin's inequality, and consequently that RH is equivalent to the inequality for every integer divisible by a fifth power of some prime; it also records Lagarias's harmonic-sum criterion.",
+          "conceptual_reading": "A positive theorem on an exponent-bounded class becomes an equivalent criterion on its complement once the complete finite Robin exceptions are observed to be 5-free.",
+          "representation_or_bridge": "Prime-exponent support supplies the bridge: t-free language expresses an exponent cap, and its complement is represented by the existence of p^5 dividing n.",
+          "boundary_or_failure": "The equivalence depends on the finite-exception observation and later proofs of the squarefull and 5-free claims; it does not show the fifth-power-divisible cases satisfy Robin's inequality.",
+          "uncertainty": "The equivalences are readable, but superscripts and the Lagarias display are extraction-sensitive and require PDF checking for exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101718938_u003",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the squarefull exception theorem, defines squarefull and t-free integers, presents a 5-free theorem, states the fifth-power RH criterion, and records Lagarias's alternative criterion.",
+          "The complement of 5-freeness is correctly represented by divisibility by a fifth power of some prime."
+        ],
+        "inference": [
+          "Complement selection is the intended mechanism behind the alternative criterion."
+        ],
+        "unsupported_or_imported": [
+          "The unqualified claim that every 5-free integer satisfies Robin's inequality conflicts inside this same span with the statement that all listed failures through 5040 are 5-free.",
+          "The candidate treats the apparent 5-free theorem as mathematically coherent without identifying a missing range or exception qualification."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The span is internally inconsistent about small 5-free integers; the exact intended qualification cannot be certified from this unit alone.",
+          "Superscripts and the Lagarias display remain extraction-sensitive."
+        ],
+        "missed_mechanism": [
+          "A valid account must explicitly separate the large-number 5-free result needed for Robin's criterion from the known small failures."
+        ],
+        "revision_instructions": [
+          "Do not assert absolute Robin validity for all 5-free integers. State that the span appears to omit a necessary range or exception qualification, preserve the fifth-power complement mechanism conditionally, and require verification against the retained source before fixing the exact theorem statement."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The remarks distinguish the needed elementary strength from sharper but unnecessary prime-number estimates.",
+      "line_end": 147,
+      "line_start": 112,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sum and Mertens-constant displays have extraction reordering; exact constants and inequality orientation remain recoverable but merit PDF checking if quoted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 1 supplies a deliberately elementary upper bound for the reciprocal-prime sum, with an explicit computation-to-asymptotic cutoff that later closes the small-largest-prime case.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Elementary reciprocal-prime estimate sufficient for the squarefree proof",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_u004.txt",
+      "unit_bytes": 1733,
+      "unit_id": "openalex_w2101718938_u004",
+      "unit_sha256": "febf43705754b75ecfbdc902cf6cc81f66c5f21818a514837703cc1cd73490ec",
+      "unit_type": "analytic-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_u004.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "\n\n                                           2\n\n<!-- source-page: 3 -->\n\n2     Proof of Theorem 1 and Theorem 2\nOur proof of Theorem 1 requires the following lemmata.\n",
+          "sha256": "8d1780829f2e4fb7fc7e1d1d9918879de206d0435781a6551c6f191c35217738"
+        },
+        "after": {
+          "line_start": 148,
+          "line_end": 155,
+          "text": "\n    We point out that 15 is in R.\nLemma 2 If r is in A and q ≥ 7 is a prime, then rq is in R, except when q = 7 and\nr = 12, 120 or 360.\n\nCorollary 1 If r is in B and q ≥ 7 is a prime, then rq is in R.\n\nProof of Lemma 2. One verifies the result in case q = 7. Suppose that r is in A.\n",
+          "sha256": "c5d2b1fc8682a4de1816a4b8b9c611b1034de5e583bd5af255079a3a70c80522"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2570b968fcf5071115079fb1a32b15271f0ab69f3dabc6cfe64e64fb87b3f5d4",
+        "dossier_sha256": "5aaddd278bde8145546a208017e1e7adc63d4916aef3b4846528bd84206a80cd",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Proof of Theorem 1 and Theorem 2",
+            "line_end": 304,
+            "line_start": 110,
+            "mathematical_role": "Uses reciprocal-prime bounds, induction, a largest-prime case split, totient strengthening, and squarefree-kernel invariance to prove the squarefree and odd cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 147,
+          "line_start": 112,
+          "title": "Elementary reciprocal-prime estimate sufficient for the squarefree proof",
+          "unit_id": "openalex_w2101718938_u004",
+          "unit_type": "analytic-bound",
+          "why_material": "Lemma 1 supplies a deliberately elementary upper bound for the reciprocal-prime sum, with an explicit computation-to-asymptotic cutoff that later closes the small-largest-prime case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The remarks distinguish the needed elementary strength from sharper but unnecessary prime-number estimates.",
+          "representation_dependency": "The sum and Mertens-constant displays have extraction reordering; exact constants and inequality orientation remain recoverable but merit PDF checking if quoted.",
+          "unit_id": "openalex_w2101718938_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 75,
+            "title": "Squarefull and 5-free exclusions yield a fifth-power formulation of Robin's criterion",
+            "unit_id": "openalex_w2101718938_u003",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Theorems 4 and 5 eliminate squarefull and 5-free candidates, while Theorem 6 packages the result as an RH-equivalent test on integers divisible by a prime fifth power and contrasts it with Lagarias's harmonic formulation."
+          },
+          {
+            "line_end": 159,
+            "line_start": 149,
+            "title": "Adjoining a sufficiently large prime repairs the finite Robin exceptions",
+            "unit_id": "openalex_w2101718938_u005",
+            "unit_type": "finite-to-infinite-propagation",
+            "why_material": "Lemma 2 and its corollary turn finitely checked seed values into an infinite closure step by monotonicity in the adjoined prime, isolating three exceptional products at q=7."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101718938_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w2101718938_u004",
+          "spontaneous_reading": "A deliberately modest reciprocal-prime estimate is engineered to be just strong enough: finite checking reaches a point where the elementary asymptotic error bound permanently stays below the required γ threshold."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101718938_u004",
+          "source_grounded_mathematics": "Lemma 1 gives the reciprocal-prime asymptotic with Meissel-Mertens constant B and an explicit error bound, then obtains ∑_{p≤x}1/p≤log log x+γ for x≥5 by checking primes through 3673337 and using that bound beyond the cutoff.",
+          "conceptual_reading": "The argument stitches finite computation to a uniform analytic estimate, choosing sufficiency for the downstream proof rather than the sharpest available prime-number theorem.",
+          "representation_or_bridge": "Taking logarithms later converts Euler-product factors into reciprocal-prime sums, so this additive estimate is the bridge from prime support to Robin's multiplicative divisor ratio.",
+          "boundary_or_failure": "The unit cites an elementary derivation for the asymptotic and reports, rather than reproduces, the finite verification; sharper estimates are explicitly unnecessary here.",
+          "uncertainty": "The sum displays are extraction-reordered, but the cutoff, inequality direction, and stated role are recoverable; exact constants should be PDF-checked if transcribed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101718938_u004",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 1 gives the reciprocal-prime asymptotic, an explicit bound on its error constant, and the inequality through a finite check followed by a uniform estimate beyond the cutoff.",
+          "The remarks explicitly distinguish the elementary estimate actually needed from sharper available results."
+        ],
+        "inference": [
+          "Finite verification stitched to a uniform analytic tail estimate is a genuine non-paraphrase mechanism in the span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that a later logarithmic transformation of Euler-product factors supplies the bridge to Robin's divisor ratio is not present in this frozen span; it imports a mechanism from a later proof."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The summation and constant displays are reordered, and the candidate properly requires PDF checking for exact transcription."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the later-proof logarithm/Euler-product bridge, or label it explicitly as outside-span context. Keep the locally supported finite-check-plus-uniform-bound mechanism and the source's stated role that the estimate is needed in the sequel."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-identified failed generalization, not a proof failure of Robin's original inequality.",
+      "line_end": 324,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequality and primorial definition are legible; no missing external context is needed for the stated obstruction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explicitly tests its proof route against even integers and uses the RH-dependent sign behavior of n/phi(n) on primorials to show that Theorem 7's stronger inequality cannot supply such an extension.",
+      "source_id": "openalex_w2101718938",
+      "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primorial totient behavior blocks extension of the odd-number strengthening",
+      "unit_artifact_relpath": "depth/units/openalex_w2101718938_u008.txt",
+      "unit_bytes": 1396,
+      "unit_id": "openalex_w2101718938_u008",
+      "unit_sha256": "36d8a18521b4aace3ca949f74fff6efd17546c0a88eeed855db122283acc0c7d",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_u008.txt",
+      "source": {
+        "source_id": "openalex_w2101718938",
+        "title": "On Robin’s criterion for the Riemann hypothesis",
+        "authors": [
+          "YoungJu Choie",
+          "Nicolas Lichiardopol",
+          "Pieter Moree",
+          "Patrick Solé"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "                      ϕ(n)    n1\nand we are done.\n   If n1 is not in R, then by Theorem 1 it follows that n must be in S. The proof is\nnow completed on invoking Lemma 3.                                                ✷\n\nProof of Theorem 2. One checks that 1, 3, 5 and 9 are not in R, but 15 is in R. The\nresult now follows by Theorem 7 and inequality (8).                              ✷\n\n",
+          "sha256": "aea2f9dfd6aa66fe768347ba76bf52df159cb4ee90d7949fcb0349203640563a"
+        },
+        "after": {
+          "line_start": 325,
+          "line_end": 332,
+          "text": "\n\n3     Proof of Theorem 4\nThe proof of Theorem 4 is an immediate consequence of the following stronger result.\n\n\nTheorem 8 The only squarefull integers n ≥ 2 not in N are 4, 8, 9, 16, 36, 72, 108,\n144, 216, 900, 1800, 2700, 3600, 44100 and 88200.\n",
+          "sha256": "ae4e515d1f364094928824cb2eee20adc3274c6175c4a260c2cfc7c97dd4af0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2570b968fcf5071115079fb1a32b15271f0ab69f3dabc6cfe64e64fb87b3f5d4",
+        "dossier_sha256": "5aaddd278bde8145546a208017e1e7adc63d4916aef3b4846528bd84206a80cd",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1 Theorem 7 put into perspective",
+            "line_end": 326,
+            "line_start": 305,
+            "mathematical_role": "Identifies Nicolas's primorial behavior as an obstruction to extending the odd totient strengthening to even integers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 324,
+          "line_start": 305,
+          "title": "Primorial totient behavior blocks extension of the odd-number strengthening",
+          "unit_id": "openalex_w2101718938_u008",
+          "unit_type": "obstruction",
+          "why_material": "The source explicitly tests its proof route against even integers and uses the RH-dependent sign behavior of n/phi(n) on primorials to show that Theorem 7's stronger inequality cannot supply such an extension."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a source-identified failed generalization, not a proof failure of Robin's original inequality.",
+          "representation_dependency": "The inequality and primorial definition are legible; no missing external context is needed for the stated obstruction.",
+          "unit_id": "openalex_w2101718938_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 235,
+            "title": "Totient strengthening and squarefree-kernel invariance prove the odd case",
+            "unit_id": "openalex_w2101718938_u007",
+            "unit_type": "representation-change",
+            "why_material": "Theorem 7 replaces the divisor ratio by the stronger n/phi(n) bound, observes that this ratio depends only on the squarefree kernel, and compares an odd squarefree n to a smaller even squarefree n1 so Theorem 1 and a finite fallback apply."
+          },
+          {
+            "line_end": 395,
+            "line_start": 327,
+            "title": "Squarefull violations have bounded prime support and size",
+            "unit_id": "openalex_w2101718938_u009",
+            "unit_type": "finite-reduction",
+            "why_material": "A Rosser-Schoenfeld product bound forces at most four distinct prime factors for a squarefull totient violation, which then bounds n and reduces Theorem 8 to finite verification; the a^2 b^3 representation supplies an enumeration method."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101718938_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w2101718938_u008",
+          "spontaneous_reading": "Primorials act as adversarial extremizers showing that the successful odd-number strengthening is too strong for even integers, so the chosen representation itself—not Robin's original inequality—hits a structural obstruction."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101718938_u008",
+          "source_grounded_mathematics": "The source recalls an explicit Rosser-Schoenfeld upper bound for n/φ(n) with one exception and Nicolas's result that n/φ(n)>e^γ log log n has RH-dependent behavior on primorials: always under RH, and with infinitely many occurrences and failures if RH is false.",
+          "conceptual_reading": "Testing a proposed generalization on a canonical extremal sequence falsifies the proof route: the stronger totient statement cannot uniformly cover even integers.",
+          "representation_or_bridge": "Primorials concentrate the smallest primes and maximize the totient ratio, making them a diagnostic bridge between the strengthened inequality and RH-sensitive oscillation.",
+          "boundary_or_failure": "This blocks extension of Theorem 7's method, not Theorem 2, Robin's inequality, or the possibility of other arguments for even integers.",
+          "uncertainty": "The inequality and primorial definition are legible and the obstruction is explicit; uncertainty is low within the cited-source status of Nicolas's result."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2101718938_u008",
+        "critic_decision": "revise",
+        "supported": [
+          "The Rosser-Schoenfeld bound, its single exception, Nicolas's primorial result, and the conclusion that the stronger totient route cannot extend to even integers are explicit.",
+          "The candidate correctly distinguishes failure of this strengthened method from failure of Robin's inequality."
+        ],
+        "inference": [
+          "Treating primorials as a diagnostic sequence for the proposed generalization is justified by their explicit role in the cited result."
+        ],
+        "unsupported_or_imported": [
+          "The statement that primorials 'maximize the totient ratio' is not established in this span and imports a familiar extremal characterization from outside the evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Adversarial extremizers' is stronger than the source's actual use of primorials unless the omitted extremality claim is removed."
+        ],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the maximization/extremizer assertion with the locally supported statement that Nicolas's RH-sensitive behavior on the explicit primorial sequence supplies a countertest to uniform extension of Theorem 7."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a6e0bcfcf8963d22a61016e9e5928d368f44227b9698e15009866bd02d13d857"
+}

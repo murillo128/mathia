@@ -1,0 +1,346 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1987559074_f117ed34_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1987559074",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an isolated representation remark and is not used in the subsequent proof; it should remain separate from the binomial continuation mechanism.",
+      "line_end": 194,
+      "line_start": 187,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong scan dependency: the displayed Jackson-integral identity has broken alignment and missing operator glyphs. Only the existence and beta-like role of the representation are reliably recoverable from prose without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+      "unit_artifact_relpath": "depth/units/w1987559074_jackson_integral_view.txt",
+      "unit_bytes": 528,
+      "unit_id": "w1987559074_jackson_integral_view",
+      "unit_sha256": "49ea8d6c2c60ec86ffdc7b92d5752884dab4142690144044126b0ecf6253ed06",
+      "unit_type": "equivalent_representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_jackson_integral_view.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "                                           s+r −1    q t +r\n                           = (1 − q) s\n                                                              .\n                                       r=0\n                                             r     1 − q t +r\n\nThe other assertion follows readily from this.\n\n",
+          "sha256": "44eef13c6aef0500993c8204ab41d1b604ce21ab57515fa7c83328ed6595f75d"
+        },
+        "after": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "\n\n     In the next section, we specialize to the case t = s − 1 and establish a formula\nfor the value at s = −m ∈ Z≤0 in Proposition 2 and its limit as q ↑ 1 in Theorem 1.\nThen we prove in Theorem 2 that the limit as q ↑ 1 is equal to ζ (s) for any s ∈ C\nother than 1.\n\n\n",
+          "sha256": "3480be0cd73594438b4a1a46a7779de5069a0a130a4e82c2ac627385bee02db0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: two-variable q-series and meromorphic continuation",
+            "line_end": 200,
+            "line_start": 100,
+            "mathematical_role": "construction of f_q(s,t), binomial continuation, pole set, and Jackson-integral representation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 194,
+          "line_start": 187,
+          "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+          "unit_id": "w1987559074_jackson_integral_view",
+          "unit_type": "equivalent_representation",
+          "why_material": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an isolated representation remark and is not used in the subsequent proof; it should remain separate from the binomial continuation mechanism.",
+          "representation_dependency": "Strong scan dependency: the displayed Jackson-integral identity has broken alignment and missing operator glyphs. Only the existence and beta-like role of the representation are reliably recoverable from prose without the PDF.",
+          "unit_id": "w1987559074_jackson_integral_view"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 185,
+            "line_start": 129,
+            "title": "Binomial expansion converts the q-series into an explicit meromorphic pole decomposition",
+            "unit_id": "w1987559074_binomial_meromorphic_continuation",
+            "unit_type": "theorem_plus_proof",
+            "why_material": "Proposition 1 expands each denominator binomially, interchanges the two sums, and evaluates the inner geometric series. The resulting denominators expose the complete t-pole lattice directly, making analytic continuation a change of representation rather than an opaque extension."
+          },
+          {
+            "line_end": 235,
+            "line_start": 204,
+            "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+            "unit_id": "w1987559074_diagonal_parameter_selection",
+            "unit_type": "construction_and_counterfactual_comparison",
+            "why_material": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 186,
+              "line_start": 186,
+              "reason": "Blank transition between Proposition 1 and its representation remark."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 203,
+              "line_start": 195,
+              "reason": "Roadmap and transition to the main-results section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_jackson_integral_view",
+        "spontaneous": {
+          "unit_id": "w1987559074_jackson_integral_view",
+          "spontaneous_reading": "The same two-variable deformation has a discrete-series and a beta-like Jackson-integral face, supplying an alternate q-calculus object through which its structure might be studied."
+        },
+        "directed": {
+          "unit_id": "w1987559074_jackson_integral_view",
+          "source_grounded_mathematics": "The remark states an identity expressing a normalized f_q(s,t) as a beta-like Jackson integral with an integrand involving x^(t−1) and (1−qx)^(−s).",
+          "conceptual_reading": "The integral view reorganizes the discrete q-sum by separating endpoint behavior and parameter exponents, but this span only records equivalence rather than exploiting it.",
+          "representation_or_bridge": "A Jackson integral is the bridge between the q-series and a beta-type integral representation.",
+          "boundary_or_failure": "The source explicitly treats this as an isolated remark, and the subsequent proof does not use it; no additional continuation or limit claim is proved here.",
+          "uncertainty": "The displayed identity has broken alignment and missing glyphs. Only the existence and beta-like role of the Jackson representation are safe without consulting the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1987559074_jackson_integral_view",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states an identity between a normalized f_q(s,t), a q-sum, and a beta-like Jackson integral with x^(t-1)(1-qx)^(-s).",
+          "The bounded context supports treating this as an isolated representation remark rather than part of the later proof."
+        ],
+        "inference": [
+          "Calling the integral an alternate q-calculus representation is supported.",
+          "The claim that it separates endpoint behavior is plausible but is not demonstrated or used in this span."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous suggestion that the representation supplies a route through which the function's structure might be studied is speculative and content-light here."
+        ],
+        "paraphrase_or_style_risk": [
+          "Without an exploited consequence, generic claims that the integral view exposes or reorganizes structure overstate the very short identity remark."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed normalization and Jackson-integral glyphs are damaged; only the existence and beta-like role of the identity are secure without the PDF."
+        ],
+        "missed_mechanism": [
+          "The candidate should make explicit that this span supplies an exact alternate representation but proves no continuation, limit, or endpoint-analysis consequence from it."
+        ],
+        "revision_instructions": [
+          "Retain the normalized series-to-Jackson-integral identity and the explicit non-use boundary; remove the endpoint-separation and prospective-study language, and state that no additional mechanism is established in this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 197-200 preview the goals. This unit includes the definition of zeta_q and the explicit comparison with alternative diagonals, including the stated unresolved dependence on t.",
+      "line_end": 235,
+      "line_start": 204,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on seeing the diagonal in the (s,t)-parameter plane and tracking finite-q poles versus their q-to-1 limit. Verify the series definition and residue formula against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+      "unit_artifact_relpath": "depth/units/w1987559074_diagonal_parameter_selection.txt",
+      "unit_bytes": 2087,
+      "unit_id": "w1987559074_diagonal_parameter_selection",
+      "unit_sha256": "9d683d98f3f6f8d75499fa2376842bf42a7e92e3a81c0eb6b5540943a293c67a",
+      "unit_type": "construction_and_counterfactual_comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_diagonal_parameter_selection.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "\n     In the next section, we specialize to the case t = s − 1 and establish a formula\nfor the value at s = −m ∈ Z≤0 in Proposition 2 and its limit as q ↑ 1 in Theorem 1.\nThen we prove in Theorem 2 that the limit as q ↑ 1 is equal to ζ (s) for any s ∈ C\nother than 1.\n\n\n\n",
+          "sha256": "608de1b0d05c82f2705be67d8e28df4c3193cf9a720ffa932500db62c5d5f7cb"
+        },
+        "after": {
+          "line_start": 236,
+          "line_end": 243,
+          "text": "     (2) If we define the q-analogue ζq∗ (s) of the alternating series ζ ∗ (s) given in\nSection 1 by\n                                      \u0001∞\n                                                     q n(s−1)\n                            ζq∗ (s) =     (−1)n−1             ,\n                                      n=1\n                                                        [n]sq\n\n",
+          "sha256": "bbda2131799a0395184f2cfc1070b25705cbe48927973194d5f37fc4ecc6f87e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main results: diagonal specialization and values at non-positive integers",
+            "line_end": 332,
+            "line_start": 201,
+            "mathematical_role": "parameter selection, failed alternatives, pole/indeterminacy analysis, explicit finite formula, and illustrative low-order cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 235,
+          "line_start": 204,
+          "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "unit_type": "construction_and_counterfactual_comparison",
+          "why_material": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 197-200 preview the goals. This unit includes the definition of zeta_q and the explicit comparison with alternative diagonals, including the stated unresolved dependence on t.",
+          "representation_dependency": "Depends on seeing the diagonal in the (s,t)-parameter plane and tracking finite-q poles versus their q-to-1 limit. Verify the series definition and residue formula against the PDF.",
+          "unit_id": "w1987559074_diagonal_parameter_selection"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 187,
+            "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+            "unit_id": "w1987559074_jackson_integral_view",
+            "unit_type": "equivalent_representation",
+            "why_material": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization."
+          },
+          {
+            "line_end": 250,
+            "line_start": 236,
+            "title": "Euler's alternating simplification does not transfer cleanly because it couples q and q squared",
+            "unit_id": "w1987559074_alternating_q_route_obstruction",
+            "unit_type": "failed_route",
+            "why_material": "The natural q-analogue of the alternating series satisfies a relation involving both zeta_q and zeta at q squared. The extra scale coupling destroys the simple one-function reduction that made alternation useful classically, so the paper explicitly rejects this otherwise plausible route."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The independent parameter t creates design freedom, but the diagonal t=s-1 is selected by a joint criterion: it makes non-positive intersections removable and avoids persistent extra poles while retaining the full classical zeta limit.",
+            "limit": "The source explicitly says the broader dependence on t is not understood; this supports a local comparison of tested choices, not uniqueness of t=s-1 among all possible deformations.",
+            "parent_local_unit_ids": [
+              "w1987559074_two_parameter_q_deformation",
+              "w1987559074_diagonal_parameter_selection",
+              "w1987559074_poles_and_indeterminate_values"
+            ],
+            "title": "A deformation parameter is useful only when its specialization controls both singularities and the target limit"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 203,
+              "line_start": 195,
+              "reason": "Roadmap and transition to the main-results section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_diagonal_parameter_selection",
+        "spontaneous": {
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "spontaneous_reading": "The diagonal t=s−1 is selected by how it intersects singular loci: it turns the relevant negative-integer intersections into removable indeterminacies while avoiding the persistent extra poles produced by nearby choices."
+        },
+        "directed": {
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "source_grounded_mathematics": "The authors define ζ_q(s)=f_q(s,s−1), state that its apparent singularities at non-positive integers have finite limiting values, and compare t=s and t=s−k choices: the former lacks the desired indeterminacy, while k≥2 creates extra finite-q poles whose residues can vanish as q approaches 1.",
+          "conceptual_reading": "A useful specialization is constrained jointly by local singularity cancellation and the desired global classical limit. Parameter choice is therefore part of the mathematical mechanism, not harmless notation.",
+          "representation_or_bridge": "Viewing f_q on the (s,t)-plane makes the chosen diagonal, the pole divisor, and their intersections into the bridge between a flexible deformation and a one-variable q-zeta function.",
+          "boundary_or_failure": "The comparisons support this tested diagonal but do not prove uniqueness among all possible choices; the source explicitly says the broader dependence on t is unknown.",
+          "uncertainty": "The exact series and sample residue are formula-sensitive in extraction and require PDF checking, while the comparative conclusions are stated clearly in prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "w1987559074_diagonal_parameter_selection",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines zeta_q(s)=f_q(s,s-1), states finite diagonal limits at non-positive integers, and states the full q-to-1 target.",
+          "It compares t=s, which lacks the desired indeterminacy and needs an adjustment, with t=s-k for k at least 2, which produces extra finite-q positive-integer poles whose residues disappear classically.",
+          "It explicitly says the general dependence on t is unknown, so the candidate's non-uniqueness boundary is warranted."
+        ],
+        "inference": [
+          "Interpreting parameter choice through intersections of a diagonal with the pole divisor is a faithful geometric compression of the displayed construction."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous phrase 'persistent extra poles' is misleading because the source explicitly says the extra poles for nearby diagonals disappear as q approaches 1.",
+          "Calling the two-variable indeterminacies 'removable' is stronger than the span's precise statement that the restricted function has a finite limit along t=s-1."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exact series and residue are formula-sensitive, although the qualitative comparison among diagonals is clear in prose."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'persistent extra poles' with 'extra finite-q poles that disappear in the classical limit' and describe the negative-integer phenomenon as a finite limit of the restricted diagonal, not as a globally removable two-variable singularity."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3f9d35ab2c01bb9008ac63c990ce1d7bf25a1af8b72bd3812a8b94b87f4d8a01"
+}

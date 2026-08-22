@@ -1,0 +1,646 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2282130622_8f75b7e7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2282130622",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the local SA definition and both short proofs, making the competitor construction self-contained.",
+      "line_end": 720,
+      "line_start": 675,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The multiplicative comparison involving replacing p by a power of q is formula dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows consecutive SA numbers differ by at most a factor of two and uses a replacement competitor to force each prime exponent to be at least the floor of log p divided by log q.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dense SA records force lower bounds on prime exponents",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u10.txt",
+      "unit_bytes": 2583,
+      "unit_id": "full_openalex_w2282130622_u10",
+      "unit_sha256": "091621e81bab22d431ac44422a285a8c8e530f80378e173a3c91c117b6b2ebd3",
+      "unit_type": "superabundant spacing and exponent constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u10.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 667,
+          "line_end": 674,
+          "text": "of integers. We say that g is an increasing (decreasing) function on A (or for an ∈ A), if\ng(an ) ≤ g(an+1 ) (g(an ) ≥ g(an+1 )) for all n ∈ I.\n\n\n                                                     11\n\n<!-- source-page: 12 -->\n\n",
+          "sha256": "ae345349a02863a79c847f5dfb28fdb806141ff1716a38bce2b9095861e81bca"
+        },
+        "after": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "\nProposition 4.5 ([2], Th. 5). Let n = 2k2 · · · q kq · · · p be a superabundant number. If kq = k\nand q < (log p)α , where α is a constant, then\n\n                             q k+1 − 1                            (log log p)2\n                                                    \u001a         \u0012                  \u0013\u001b\n                                          log q\n                          log k+1      >                1+O                           ,           (4.2)\n",
+          "sha256": "2a2d8581761e7b85bf623b153b7dd2441499b35489c16eea00f217d2ca7332a1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_876cfd4a3fea9ae94b1c34f4089832b4368c51418d8101cb44abaf41234ceaf5",
+        "dossier_sha256": "bfa90d1b16f70b21886dec98e236624bd9e652df621beebeae486f7071ce4442",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Superabundant-number properties",
+            "line_end": 1316,
+            "line_start": 661,
+            "mathematical_role": "Derives spacing, exponent, largest-prime, asymptotic divisor-sum, and monotonicity properties along SA."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 720,
+          "line_start": 675,
+          "title": "Dense SA records force lower bounds on prime exponents",
+          "unit_id": "full_openalex_w2282130622_u10",
+          "unit_type": "superabundant spacing and exponent constraint",
+          "why_material": "Shows consecutive SA numbers differ by at most a factor of two and uses a replacement competitor to force each prime exponent to be at least the floor of log p divided by log q."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the local SA definition and both short proofs, making the competitor construction self-contained.",
+          "representation_dependency": "The multiplicative comparison involving replacing p by a power of q is formula dependent but legible.",
+          "unit_id": "full_openalex_w2282130622_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 658,
+            "line_start": 610,
+            "title": "Oscillation, prime steps, and Mertens-product control",
+            "unit_id": "full_openalex_w2282130622_u09",
+            "unit_type": "oscillation and Euler-product toolkit",
+            "why_material": "Supplies sign-changing theta/psi oscillation, a short-interval prime input, a bound on consecutive primes, and explicit Euler-product estimates that drive later CA separation and XA monotonicity arguments."
+          },
+          {
+            "line_end": 800,
+            "line_start": 722,
+            "title": "Prime-power balance in SA factorizations",
+            "unit_id": "full_openalex_w2282130622_u11",
+            "unit_type": "superabundant exponent profile",
+            "why_material": "Relates exponents at different primes and derives two-sided scale control of the power of two by p log p, exposing the compressed exponent profile of superabundant integers."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 674,
+              "line_start": 659,
+              "reason": "Blank line, section introduction, notation convention, definition of sequence monotonicity, and page transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2282130622_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2282130622_u10",
+          "spontaneous_reading": "Global record maximality becomes local factorization rigidity by constructing a smaller competitor that swaps the largest prime for one more power of a chosen smaller prime."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2282130622_u10",
+          "source_grounded_mathematics": "The SA definition implies consecutive superabundant numbers differ by at most a factor of two, since sigma(2n)/(2n)>sigma(n)/n. The unit also quotes a three-value relation between exponents at primes q<r. Its main proof assumes k_q is too small, forms m=nq^(k+1)/p with q^(k+1)<p, and uses multiplicativity plus SA maximality to obtain the contradictory inequality p<q^(k+1).",
+          "conceptual_reading": "A record property over all smaller integers is probed through a carefully chosen one-coordinate perturbation. The resulting exchange inequality forces every prime exponent to be large enough relative to the largest prime.",
+          "representation_or_bridge": "The competitor m=nq^(k+1)/p is the bridge between order in the integers and geometry of the exponent vector; multiplicativity reduces the global comparison to the changed prime-power factors.",
+          "boundary_or_failure": "The argument depends on m being an integer smaller than n and on strict SA record maximality. It establishes a lower bound on exponents, not their exact values; the quoted three-value proposition is not proved in this span.",
+          "uncertainty": "The competitor mechanism and exponent bound are clear; the dense extracted divisor-sum ratio should be verified before exact symbolic reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2282130622_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The consecutive-SA factor-two proof and the exact competitor m=nq^(k+1)/p are correctly reported.",
+          "The candidate correctly explains that multiplicativity reduces the global SA comparison to the altered prime-power factors and yields the contradiction p<q^(k+1).",
+          "It correctly limits the conclusion to a lower exponent bound and notes that the three-value proposition is only quoted."
+        ],
+        "inference": [
+          "Viewing the competitor as a probe of exponent-vector geometry is a useful source-grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that the construction swaps p for 'one more power' of q is imprecise: multiplying n by q^(k+1)/p raises the existing q-exponent from k to 2k+1, rather than adding only one q factor."
+        ],
+        "paraphrase_or_style_risk": [
+          "The one-coordinate-perturbation language is useful only after the magnitude of that coordinate change is stated correctly."
+        ],
+        "context_or_ocr_risk": [
+          "The dense divisor-sum ratio is legible enough to certify the mechanism, though exact symbolic reuse still warrants rendering."
+        ],
+        "missed_mechanism": [
+          "The competitor is smaller specifically because q^(k+1)<p, while retaining divisibility because q^k and p already divide n."
+        ],
+        "revision_instructions": [
+          "Replace 'one more power' with an exact description: remove the largest-prime factor p and multiply by q^(k+1), so the q-exponent changes from k to 2k+1; retain the smaller-competitor condition q^(k+1)<p."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a distinct representation lift of the preceding mechanism rather than a repeated statement.",
+      "line_end": 1107,
+      "line_start": 1079,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The definition and proof are highly display-layout dependent, and the normalized extraction should be checked against the rendered formula before training use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines SA ratio growth with the additive excess monotonicity to prove increase of a nonlinear sigma(n)-exponent expression.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponentiating record growth preserves an SA monotone",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u14.txt",
+      "unit_bytes": 1347,
+      "unit_id": "full_openalex_w2282130622_u14",
+      "unit_sha256": "8cd63e4aa656fa759e8b531e0350d76f97d181f415e938b85aaa45b89cce10ed",
+      "unit_type": "lifted superabundant monotonicity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u14.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1071,
+          "line_end": 1078,
+          "text": "                                           \u0012             \u0013     \u0012         \u0013\n                                             σ(an+1 )            an+1\n                                   ⇒σ(an )            − 1 > an        −1\n                                              σ(an )              an\n                                      ⇒σ(an+1 ) − an+1 > σ(an ) − an .\n\n\n\n",
+          "sha256": "a24ff72151d886c3c30eb7760c78afbe5d3eaeebcfa7ccb45fc1e131783866ed"
+        },
+        "after": {
+          "line_start": 1108,
+          "line_end": 1115,
+          "text": "\n\n\n   Now we give a stronger lemma.\n\nTheorem 4.21. Let\n                                     g(n) = σ(n) − n log log n.\n\n",
+          "sha256": "5b07375ce9384bf5bae009c28b5c038a289be0f32e723c6f919d3ca71ef77ca2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_876cfd4a3fea9ae94b1c34f4089832b4368c51418d8101cb44abaf41234ceaf5",
+        "dossier_sha256": "bfa90d1b16f70b21886dec98e236624bd9e652df621beebeae486f7071ce4442",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Superabundant-number properties",
+            "line_end": 1316,
+            "line_start": 661,
+            "mathematical_role": "Derives spacing, exponent, largest-prime, asymptotic divisor-sum, and monotonicity properties along SA."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1107,
+          "line_start": 1079,
+          "title": "Exponentiating record growth preserves an SA monotone",
+          "unit_id": "full_openalex_w2282130622_u14",
+          "unit_type": "lifted superabundant monotonicity",
+          "why_material": "Combines SA ratio growth with the additive excess monotonicity to prove increase of a nonlinear sigma(n)-exponent expression."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a distinct representation lift of the preceding mechanism rather than a repeated statement.",
+          "representation_dependency": "The definition and proof are highly display-layout dependent, and the normalized extraction should be checked against the rendered formula before training use.",
+          "unit_id": "full_openalex_w2282130622_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1075,
+            "line_start": 1057,
+            "title": "Additive excess sigma(n) minus n increases along SA",
+            "unit_id": "full_openalex_w2282130622_u13",
+            "unit_type": "superabundant monotonicity",
+            "why_material": "Extracts an additive monotonic quantity directly from the defining multiplicative record property of SA, illustrating a reusable conversion from ratio growth to difference growth."
+          },
+          {
+            "line_end": 1231,
+            "line_start": 1111,
+            "title": "Monotonicity after subtracting n log log n",
+            "unit_id": "full_openalex_w2282130622_u15",
+            "unit_type": "log-log adjusted superabundant monotonicity",
+            "why_material": "Uses bounded spacing of consecutive SA numbers, log-log secant control, and the asymptotic lower bound for sigma to show an adjusted additive excess increases, then lifts that result to a nonlinear normalized expression."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1110,
+              "line_start": 1108,
+              "reason": "Blank lines and transition to the stronger adjusted result."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2282130622_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2282130622_u14",
+          "spontaneous_reading": "The source lifts two simpler SA monotonicities into a nonlinear one by separating a power comparison into growth of the base sigma(n)/n and growth of the exponent-like excess sigma(n)-n."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2282130622_u14",
+          "source_grounded_mathematics": "Proposition 4.20 defines a power-valued expression built from sigma(n) and n and compares it at consecutive SA terms. The displayed chain first uses SA growth of sigma(n)/n and then Lemma 4.19's growth of sigma(n)-n to establish increase.",
+          "conceptual_reading": "A complicated monotone is factored into two ordered coordinates: a base ratio and an exponent residual. Coordinated monotonicity in both coordinates makes exponentiation preserve the order.",
+          "representation_or_bridge": "Rewriting the expression as a power of sigma(n)/n times n raised to sigma(n)-n exposes exactly the two previously controlled components.",
+          "boundary_or_failure": "The normalized text extraction badly degrades superscript placement, so the exact function and every step of the power comparison require verification against the typeset page. The conclusion applies only on the SA subsequence.",
+          "uncertainty": "High for exact symbolic representation, but moderate-to-high for the intended two-component monotonicity mechanism."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2282130622_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly sees that the proposition lifts SA ratio growth and Lemma 4.19's residual growth into a power-valued monotonicity statement.",
+          "It appropriately warns that superscript placement in both the function and proof is extraction-sensitive and confines the conclusion to SA."
+        ],
+        "inference": [
+          "Factoring the expression into a normalized base and an additive residual is a useful reading of the displayed rewrite."
+        ],
+        "unsupported_or_imported": [
+          "Saying that monotonicity in only the base ratio and exponent residual makes exponentiation preserve order omits other inequalities visibly used in the chain: n and sigma(n) themselves increase, bases exceed one, and the relevant exponents are positive."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'two ordered coordinates' description is too compressed to justify the second displayed inequality as written."
+        ],
+        "context_or_ocr_risk": [
+          "The extraction represents g(n)=sigma(n)^sigma(n)/n^n and its powers ambiguously; exact symbolic reuse is unsafe without the typeset page."
+        ],
+        "missed_mechanism": [
+          "The proof compares products of powers and needs monotonicity/positivity of the underlying n and sigma quantities in addition to SA ratio growth and residual growth."
+        ],
+        "revision_instructions": [
+          "Keep the formula caveat, but revise the mechanism to enumerate all order facts used by the two inequalities: sigma/n increases and is >1, sigma and n increase, sigma-n increases and is positive; do not attribute the entire second inequality to Lemma 4.19 alone."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cited t-free analogue is a comparison; Theorem 4.34 itself is an immediate synthesis of Theorems 4.31 and 4.32.",
+      "line_end": 1520,
+      "line_start": 1509,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Minimal; the key inequalities are stated in prose and simple display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the XA prime bound with the preceding infinite CA family having p greater than log N, yielding an unconditional infinite separation of the two extremal classes.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-scale incompatibility yields infinitely many CA outside XA",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u19.txt",
+      "unit_bytes": 561,
+      "unit_id": "full_openalex_w2282130622_u19",
+      "unit_sha256": "0ea08f05b51b3b1659f9887af3876fb331e8d8f8b4e4ade8f77f3b583651c545",
+      "unit_type": "CA-XA separation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u19.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1501,
+          "line_end": 1508,
+          "text": "Using inequality (3.3) we have\n\n                        1        log p             log p\n                          >                 >                 ⇒ p < log n.\n                        p   log n log log m   log n log log n\n\n\n\n",
+          "sha256": "e3e96df8112c975739cac8b57c6ae1ab8b0c36fd06f2995a593c4793e3631d38"
+        },
+        "after": {
+          "line_start": 1521,
+          "line_end": 1528,
+          "text": "Theorem 4.35. Let\n                                                 σ(n) + ϕ(n)\n                                        g(n) =               .\n                                                      n\n                                                                             ′\nFor two consecutive extremely abundant numbers n = 2k · · · p and n′ = 2k · · · p′ , if p′ ≥ p and\nlog(n′ /n) > 1/ log p, then g(n) < g(n′ ) for large enough n, n′ ∈ XA.\n\n",
+          "sha256": "6e505cd5730f4d09bf6b361443b7d7209c100f74f2147a0782d55609b6dfb555"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_876cfd4a3fea9ae94b1c34f4089832b4368c51418d8101cb44abaf41234ceaf5",
+        "dossier_sha256": "bfa90d1b16f70b21886dec98e236624bd9e652df621beebeae486f7071ce4442",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Extremely abundant-number properties",
+            "line_end": 1587,
+            "line_start": 1476,
+            "mathematical_role": "Bounds the largest prime factor of XA, separates XA from infinitely many CA numbers, and proves a conditional monotonicity statement along consecutive XA numbers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1520,
+          "line_start": 1509,
+          "title": "Prime-scale incompatibility yields infinitely many CA outside XA",
+          "unit_id": "full_openalex_w2282130622_u19",
+          "unit_type": "CA-XA separation",
+          "why_material": "Contrasts the XA prime bound with the preceding infinite CA family having p greater than log N, yielding an unconditional infinite separation of the two extremal classes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cited t-free analogue is a comparison; Theorem 4.34 itself is an immediate synthesis of Theorems 4.31 and 4.32.",
+          "representation_dependency": "Minimal; the key inequalities are stated in prose and simple display.",
+          "unit_id": "full_openalex_w2282130622_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1505,
+            "line_start": 1479,
+            "title": "XA records force p below log n",
+            "unit_id": "full_openalex_w2282130622_u05",
+            "unit_type": "largest-prime-factor bound for XA",
+            "why_material": "Compares an XA number with n/p and converts the record inequality through a logarithmic bound to prove its largest prime factor is strictly below log n."
+          },
+          {
+            "line_end": 1585,
+            "line_start": 1521,
+            "title": "A spacing condition makes (sigma+phi)/n increase along XA",
+            "unit_id": "full_openalex_w2282130622_u20",
+            "unit_type": "conditional XA monotonicity",
+            "why_material": "Combines XA record growth, explicit product estimates, a prime-gap bound, and a lower spacing assumption to prove monotonicity of a mixed divisor-totient statistic for consecutive XA numbers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Chebyshev oscillation produces infinitely many CA numbers with p(N) greater than log N, whereas every XA number has p(n) less than log n, so infinitely many CA numbers cannot be XA.",
+            "limit": "This separates one infinite CA subsequence only; it does not characterize all of CA minus XA or decide RH.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2282130622_u04",
+              "full_openalex_w2282130622_u05",
+              "full_openalex_w2282130622_u19"
+            ],
+            "title": "Prime-scale incompatibility separates CA from XA"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2282130622_u19",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2282130622_u19",
+          "spontaneous_reading": "Two extremal classes are separated by incompatible largest-prime scales: an infinite CA family lies above the logarithmic boundary, whereas XA numbers lie below it."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2282130622_u19",
+          "source_grounded_mathematics": "The unit first quotes an analogous bound p<log n for a least t-free Robin counterexample. It then states Theorem 4.34: infinitely many CA numbers are not XA, described as an RH-independent consequence of Theorems 4.31 and 4.32. The assigned dossier identifies the underlying contrast as infinitely many CA with p(N)>log N versus the XA bound p(n)<log n.",
+          "conceptual_reading": "Class noncontainment is certified by finding a structural invariant with disjoint inequalities, not by enumerating examples. Recurrent occupation of one side by CA forces an infinite separation from XA.",
+          "representation_or_bridge": "The normalized largest-prime coordinate p(n)/log n is the separating statistic that makes two differently defined record classes comparable.",
+          "boundary_or_failure": "The decisive prior theorems and their proofs are not present in this span. The result isolates an infinite subset of CA outside XA but does not characterize CA minus XA, exclude infinite overlap, or decide RH.",
+          "uncertainty": "High confidence in the stated theorem and dossier-linked mechanism; the narrow artifact alone does not independently verify the antecedent prime-scale results."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2282130622_u19",
+        "critic_decision": "revise",
+        "supported": [
+          "The exact span states the RH-independent theorem that infinitely many CA numbers are not XA and identifies it as a consequence of Theorems 4.31 and 4.32.",
+          "The candidate correctly limits the conclusion: it neither characterizes all of CA\\XA nor excludes infinite CA-XA overlap."
+        ],
+        "inference": [
+          "A separating-statistic proof is plausible from the dossier and nearby preceding inequality, but the full pair of antecedent theorems is not contained in this evidence span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that infinitely many CA satisfy p(N)>log N, and hence the full disjoint-inequality mechanism using p(n)/log n, comes from the dossier summary rather than the exact unit artifact; the run brief says the dossier is a routing cache, not mathematical authority."
+        ],
+        "paraphrase_or_style_risk": [
+          "Once the unverified antecedent is removed, the structural-invariant discussion must be labeled as a proposed dependency-level explanation rather than source-grounded mathematics."
+        ],
+        "context_or_ocr_risk": [
+          "There is no material OCR obstacle in the theorem statement; the problem is a semantic-unit boundary too narrow to verify its stated proof mechanism."
+        ],
+        "missed_mechanism": [
+          "The exact hypotheses and conclusions of both Theorems 4.31 and 4.32 must be reopened before certifying the prime-scale incompatibility argument."
+        ],
+        "revision_instructions": [
+          "Keep Theorem 4.34 and its stated RH independence as supported. Move the p(N)>log N versus p(n)<log n explanation to an explicitly unverified dossier-level hypothesis, or verify it only after reopening the exact antecedent spans for Theorems 4.31 and 4.32."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "All claims are empirical within the stated C1 cutoff and rely on an external list of SA numbers; they must not be promoted to universal theorems.",
+      "line_end": 1647,
+      "line_start": 1588,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primorial factorizations and exponent notation are recoverable but should retain typeset structure.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records finite-range relations among adjacent prime-power blocks, one-step exponent changes between consecutive XA numbers, monotone largest-prime and divisor-count observations, and counterexamples showing these patterns do not automatically characterize highly composite or SA behavior.",
+      "source_id": "openalex_w2282130622",
+      "source_normalized_sha256": "1a66f1f49e7b30ed39db7857ecc4b619ee13ff81ffcccda2135ef55f8e48e99e",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Observed local rigidity of XA exponent vectors",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2282130622_u21.txt",
+      "unit_bytes": 2539,
+      "unit_id": "full_openalex_w2282130622_u21",
+      "unit_sha256": "02e57e8374a2ab719bf7c92903c28853d4da968f0d1ecb336dc2ae35c8cbb352",
+      "unit_type": "finite XA structural observations",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2282130622_u21.txt",
+      "source": {
+        "source_id": "openalex_w2282130622",
+        "title": "Superabundant numbers, their subsequences and the Riemann hypothesis",
+        "authors": [
+          "Sadegh Nazardonyavi",
+          "Semyon Yakubovich"
+        ],
+        "year": 2012,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1580,
+          "line_end": 1587,
+          "text": "                         >0.\n\n\n\nRemark 4.36. We checked that the assumptions in Theorem 4.35 hold up to 8150-th element of\nXA.\n\n\n",
+          "sha256": "d37231dabd42f029d912df489bceb7199c1dbd6fcc546e44d961eb1d6bd91503"
+        },
+        "after": {
+          "line_start": 1648,
+          "line_end": 1655,
+          "text": "\n\n\n\n                                                        26\n\n<!-- source-page: 27 -->\n\n",
+          "sha256": "61314a25ff6765fe55b8eb63b2d7058a9ad3a04a3431afa6d17c232386437d71"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_876cfd4a3fea9ae94b1c34f4089832b4368c51418d8101cb44abaf41234ceaf5",
+        "dossier_sha256": "bfa90d1b16f70b21886dec98e236624bd9e652df621beebeae486f7071ce4442",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Numerical experiments",
+            "line_end": 1792,
+            "line_start": 1588,
+            "mathematical_role": "Reports finite-range exponent, ordering, spacing, ratio, set-overlap, and arithmetic-function monotonicity observations with explicit cutoffs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1647,
+          "line_start": 1588,
+          "title": "Observed local rigidity of XA exponent vectors",
+          "unit_id": "full_openalex_w2282130622_u21",
+          "unit_type": "finite XA structural observations",
+          "why_material": "Records finite-range relations among adjacent prime-power blocks, one-step exponent changes between consecutive XA numbers, monotone largest-prime and divisor-count observations, and counterexamples showing these patterns do not automatically characterize highly composite or SA behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "All claims are empirical within the stated C1 cutoff and rely on an external list of SA numbers; they must not be promoted to universal theorems.",
+          "representation_dependency": "Primorial factorizations and exponent notation are recoverable but should retain typeset structure.",
+          "unit_id": "full_openalex_w2282130622_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1585,
+            "line_start": 1521,
+            "title": "A spacing condition makes (sigma+phi)/n increase along XA",
+            "unit_id": "full_openalex_w2282130622_u20",
+            "unit_type": "conditional XA monotonicity",
+            "why_material": "Combines XA record growth, explicit product estimates, a prime-gap bound, and a lower spacing assumption to prove monotonicity of a mixed divisor-totient statistic for consecutive XA numbers."
+          },
+          {
+            "line_end": 1664,
+            "line_start": 1656,
+            "title": "Empirical overlap of XA and CA below a fixed SA cutoff",
+            "unit_id": "full_openalex_w2282130622_u22",
+            "unit_type": "finite class-overlap census",
+            "why_material": "Quantifies that neither XA nor CA contains the other in the inspected finite domain and measures the substantial but non-identical overlap."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proved conditional monotonicity and the computed one-step exponent, spacing, ratio, and composition patterns suggest a coordinated local rigidity program for consecutive XA numbers.",
+            "limit": "Most parents here are finite computations with fixed cutoffs and external-list dependence; they are hypothesis generators, not universal evidence.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2282130622_u20",
+              "full_openalex_w2282130622_u21",
+              "full_openalex_w2282130622_u23"
+            ],
+            "title": "Finite XA regularity as a falsifiable conjecture family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1587,
+              "line_start": 1586,
+              "reason": "Blank separator before numerical experiments."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2282130622_u21",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2282130622_u21",
+          "spontaneous_reading": "Finite XA data suggest a locally rigid exponent-vector path: adjacent prime-power layers stay in narrow bands and consecutive records change each exponent by at most one."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2282130622_u21",
+          "source_grounded_mathematics": "Using XA terms through the 13770th element below C1, the source reports inequalities relating q^(k_q), neighboring r^(k_r), p, and log n; places the largest exponent-two prime between sqrt(p) and sqrt(2p); observes coordinate changes in {-1,0,1} for consecutive XA terms; and observes nondecreasing largest prime and divisor count. Examples show that the divisor-count observation does not make XA highly composite and that analogous monotonicities fail for SA.",
+          "conceptual_reading": "The observations treat factorizations as trajectories in exponent space and propose bounded local moves rather than isolated numerical coincidences. The counterexamples are important controls separating XA rigidity from stronger or neighboring extremal notions.",
+          "representation_or_bridge": "Prime-power blocks and primorial factorizations expose the exponent vector compactly; consecutive-XA comparison turns a static factorization into a discrete transition rule.",
+          "boundary_or_failure": "Every positive claim is empirical below the stated C1 cutoff and depends on an external SA list. None should be promoted to a theorem, and the supplied counterexamples explicitly block two tempting implications.",
+          "uncertainty": "The finite-status qualifiers and qualitative patterns are clear; exact prime-power inequalities should retain verified typeset notation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2282130622_u21",
+        "critic_decision": "revise",
+        "supported": [
+          "The unit clearly labels Properties 5.1-5.4 as finite observations through the C1 cutoff and reports bounded coordinate changes, nondecreasing largest prime and divisor count, and explicit counterexamples to tempting stronger implications.",
+          "The candidate correctly treats exponent vectors as consecutive-state data and preserves the external-list and finite-cutoff limitations."
+        ],
+        "inference": [
+          "The 'locally rigid trajectory' language is a reasonable hypothesis-generating synthesis, not a theorem."
+        ],
+        "unsupported_or_imported": [
+          "The exact upper endpoint sqrt(2p) in the description of Property 5.2 is reconstructed from an OCR-fragile radical display; the normalized artifact does not safely expose the full radical placement."
+        ],
+        "paraphrase_or_style_risk": [
+          "The rigidity framing is useful only if every reconstructed exact inequality remains quarantined from formula-level reuse."
+        ],
+        "context_or_ocr_risk": [
+          "Property 5.2's radicals and several primorial/exponent displays need rendered-formula verification; the rest of the qualitative finite observations are readable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the exact sqrt(p)<x_2<sqrt(2p) transcription with a formula-risk statement describing a reported finite bound on the largest exponent-two prime, or verify the radicals from a trusted typeset rendering before restoring the exact inequality."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c6f160865dcfc0031ed2c5f2d8895d1d76d62561c84e599f0122dcc7a9cc556e"
+}

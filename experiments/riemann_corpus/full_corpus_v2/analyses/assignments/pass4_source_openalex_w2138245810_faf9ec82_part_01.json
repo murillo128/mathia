@@ -1,0 +1,645 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2138245810_faf9ec82_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2138245810",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the computational motivation and complete statement of Theorem 1.1.",
+      "line_end": 91,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable; exact asymptotic exponents and bounds depend on the displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the target accuracy, arithmetic and storage model, precomputation allowance, bit-size control, and independence from the precise Riemann-Siegel remainder.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Single-value zeta computation with exponent 4/13",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_d01.txt",
+      "unit_bytes": 3516,
+      "unit_id": "openalex_w2138245810_d01",
+      "unit_sha256": "22cb38b7caada3d2aa0f42553fc0996f731c463864a3a4ee312518f8e8dbbf2c",
+      "unit_type": "algorithmic-complexity theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_d01.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "        Its complexity has exponent 1/3. The third method, which is our main\n        result, employs an algorithm developed here to compute cubic exponential\n        sums with a small cubic coefficient. Its complexity has exponent 4/13\n        (approximately, 0.307).\n\n\n\n\n",
+          "sha256": "0369f372ddfec3bd0a0a07978cff9d5b36e6be7bc59bfe29c0ac509479f01154"
+        },
+        "after": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "     There are several known methods to compute ζ(1/2 + it) to within ± t−λ\nfor any t > 1 and any fixed λ. An elementary such method is usually derived\nfrom the Euler-Maclaurin summation formula. The majority of the computa-\ntional effort in that method is in computing a main sum of length Oλ (t) terms,\nwhere each term is of the form n−1/2 exp(it log n); see [Edw01] and [Rub05] for\na detailed description.\n     Another method to compute ζ(1/2+it) relies on a straightforward»applica-\ntion of the Riemann-Siegel formula, which has a main sum of length b t/(2π)c\n",
+          "sha256": "6c3a293d5f1b4bff2d7e5516465acc42931d8f7a2a9590c479fc8e1c03729fc6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f105258731ccfb8e4e33128de81e822690f8c9a35a12203d475c6123be9ecb79",
+        "dossier_sha256": "f0cd06275ed31f4bcf46cb7f8420288d5a9912999bb3289b7a9bbaf188519342",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 212,
+            "line_start": 31,
+            "mathematical_role": "Defines the computational target, compares prior methods, states the main complexity theorem, and motivates repeated normalized Poisson transformations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 91,
+          "line_start": 31,
+          "title": "Single-value zeta computation with exponent 4/13",
+          "unit_id": "openalex_w2138245810_d01",
+          "unit_type": "algorithmic-complexity theorem",
+          "why_material": "States the target accuracy, arithmetic and storage model, precomputation allowance, bit-size control, and independence from the precise Riemann-Siegel remainder."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the computational motivation and complete statement of Theorem 1.1.",
+          "representation_dependency": "The prose is recoverable; exact asymptotic exponents and bounds depend on the displayed formulas.",
+          "unit_id": "openalex_w2138245810_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 202,
+            "line_start": 92,
+            "title": "From prior zeta algorithms to normalized Poisson descent",
+            "unit_id": "openalex_w2138245810_d02",
+            "unit_type": "method comparison and design motivation",
+            "why_material": "Relates Euler-Maclaurin, Riemann-Siegel, Schoenhage, and Heath-Brown approaches to the reusable goal of shortening polynomial-phase sums, and explains why normalization between Poisson steps prevents trivial cycling."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2138245810_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w2138245810_d01",
+          "spontaneous_reading": "The theorem makes reusable precomputation part of the computation rather than hiding it, and isolates the Riemann-Siegel main sum as the true target."
+        },
+        "directed": {
+          "unit_id": "openalex_w2138245810_d01",
+          "source_grounded_mathematics": "Theorem 1.1 computes ζ(1/2+it) within t^-λ using a polylogarithmic factor times t^(4/13) arithmetic operations, with matching-order precomputation and storage and Oλ((log t)^2)-bit numbers.",
+          "conceptual_reading": "The gain is an online/offline trade: structured work is compiled once, then a single value is recovered cheaply.",
+          "representation_or_bridge": "The Riemann-Siegel main sum bridges zeta evaluation to the later exponential-sum algorithms; the remainder formula is deliberately modular.",
+          "boundary_or_failure": "This is an upper bound, not a lower bound or an RH result; constants are effective but not numerically optimized.",
+          "uncertainty": "Low for the theorem's structure; exact exponents and resource bounds depend on the displayed formulas."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2138245810_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 1.1 states a t^(4/13) times polylogarithmic arithmetic-operation upper bound, an error target t^-lambda, same-exponent precomputation and storage bounds, and O_lambda((log t)^2)-bit arithmetic.",
+          "The span explicitly says the methods target the Riemann-Siegel main sum and are independent of the precise remainder function."
+        ],
+        "inference": [
+          "Calling the explicit precomputation requirement an online/offline trade is a reasonable conceptual interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The span does not establish that the precomputation is reusable across multiple t-values or queries, so 'reusable' and 'compiled once' overstate the theorem's stated interface."
+        ],
+        "paraphrase_or_style_risk": [
+          "The online/offline language is useful only if it remains tied to the separately charged resource bounds."
+        ],
+        "context_or_ocr_risk": [
+          "The exact exponents and bit bounds are display-dependent, but the display is legible enough to support them."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish an explicitly charged precomputation from demonstrated amortization or cross-query reuse."
+        ],
+        "revision_instructions": [
+          "Replace the reuse claim with: the theorem exposes rather than hides a separately bounded precomputation and storage cost for a single-value algorithm; do not claim amortization or reuse beyond this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the complete source summary of the K^(4 mu) precomputation mechanism.",
+      "line_end": 1105,
+      "line_start": 988,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient recurrences and terminal length estimates depend on displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates inexpensive nonstationary remainders, small-length direct evaluation, Euler-Maclaurin handling when the quadratic coefficient is small, and a final precomputed high-degree sum when cubic self-similarity fails.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        19,
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Iterate while self-similar, then route boundary cases",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_d11.txt",
+      "unit_bytes": 7642,
+      "unit_id": "openalex_w2138245810_d11",
+      "unit_sha256": "b5245527a16ae86a65c4a0e20720fb479790475889ab40eac8692a581f862f90",
+      "unit_type": "adaptive stopping strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_d11.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 980,
+          "line_end": 987,
+          "text": "(3.14)       |z̃j | ≤ √ ,       |EJ,a,b,c,K\n                                  ˜         | ≤ 3A bK            +e         .\n                        b                                 b˜\n                                                           J/4c!\nBy the second estimate in (3.14), if we choose J˜ = d4 log(K/ε)e say, we ensure\n|E ˜                                                                          ˜\n  J,a,b,c,K | ≤ Aε, which is small enough for purposes of the algorithm. So J\nneed not be taken large at all.\n",
+          "sha256": "5748583e9a307648573ddad73ca99abb2e1a25eb329d52eb5485f944ff2309e6"
+        },
+        "after": {
+          "line_start": 1106,
+          "line_end": 1113,
+          "text": "       It might be helpful to keep the following prototypical example in mind.\nWe start with c = K µ−3 and b = K µ−1 , and apply the van der Corput iteration\nto the cubic sum. This produces a new sum of length K̃ ≈ K µ terms. The\nnew sum is still cubic because the contribution of the quartic and higher terms\nin the series (3.8) is of size O(1). We observe that the new cubic coefficient\nc̃ = c/(2b)3 is of size about K̃ −2 ≈ K −2µ , and that the van der Corput iteration\nmust end since c̃K̃ 2 ≈ 1. The last cubic sum is then evaluated in poly-log\ntime using data that was precomputed via the FFT. The typical cost of the\n",
+          "sha256": "5991c1244bfd213aaf8832781b3b40a03172b4e808c10797d45c5f00dac469ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f105258731ccfb8e4e33128de81e822690f8c9a35a12203d475c6123be9ecb79",
+        "dossier_sha256": "f0cd06275ed31f4bcf46cb7f8420288d5a9912999bb3289b7a9bbaf188519342",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Idea of the cubic-sum algorithm",
+            "line_end": 1260,
+            "line_start": 749,
+            "mathematical_role": "Explains the van der Corput iteration, the cubic self-similarity obstruction, small-coefficient repair, stopping cases, and the implemented two-phase route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1105,
+          "line_start": 988,
+          "title": "Iterate while self-similar, then route boundary cases",
+          "unit_id": "openalex_w2138245810_d11",
+          "unit_type": "adaptive stopping strategy",
+          "why_material": "Separates inexpensive nonstationary remainders, small-length direct evaluation, Euler-Maclaurin handling when the quadratic coefficient is small, and a final precomputed high-degree sum when cubic self-similarity fails."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with the complete source summary of the K^(4 mu) precomputation mechanism.",
+          "representation_dependency": "Coefficient recurrences and terminal length estimates depend on displayed formulas.",
+          "unit_id": "openalex_w2138245810_d11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 987,
+            "line_start": 840,
+            "title": "Small cubic coefficient restores approximate self-similarity",
+            "unit_id": "openalex_w2138245810_d10",
+            "unit_type": "obstruction and repair",
+            "why_material": "Diagnoses the square-root phase created by cubic stationary points, then uses a small-coefficient expansion to absorb quartic and higher terms and recover a short linear combination of cubic sums with controlled error."
+          },
+          {
+            "line_end": 1147,
+            "line_start": 1106,
+            "title": "Reuse quadratic machinery through integral factorization",
+            "unit_id": "openalex_w2138245810_d12",
+            "unit_type": "implementation reframing",
+            "why_material": "A prototypical cost count explains four parameter dimensions, then the author deliberately replaces a literal cubic iteration by a factorization that reuses an existing quadratic-sum algorithm."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Poisson or van der Corput transformation shortens sums only because coefficient normalization and small-tail expansion intervene between steps to restore an approximately closed representation class.",
+            "limit": "Closure is conditional on the small cubic coefficient and explicit stopping inequalities.",
+            "parent_local_unit_ids": [
+              "openalex_w2138245810_d02",
+              "openalex_w2138245810_d09",
+              "openalex_w2138245810_d10",
+              "openalex_w2138245810_d11"
+            ],
+            "title": "Intervention makes repeated transformation progressive"
+          },
+          {
+            "claim": "The algorithm gains efficiency by routing different failures to direct evaluation, Euler-Maclaurin, quadratic descent, saddle analysis, or precomputed lookup rather than forcing one recursion through every parameter regime.",
+            "limit": "The routing relies on source-specific inequalities and the prior quadratic evaluator.",
+            "parent_local_unit_ids": [
+              "openalex_w2138245810_d11",
+              "openalex_w2138245810_d14",
+              "openalex_w2138245810_d15",
+              "openalex_w2138245810_d16",
+              "openalex_w2138245810_d17"
+            ],
+            "title": "Adaptive exits are part of the algorithm, not exceptions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2138245810_d11",
+        "spontaneous": {
+          "unit_id": "openalex_w2138245810_d11",
+          "spontaneous_reading": "The stopping cases are part of the algorithm: each failed invariant is routed to a representation whose cost can still be certified."
+        },
+        "directed": {
+          "unit_id": "openalex_w2138245810_d11",
+          "source_grounded_mathematics": "Cubic descent repeats while length, quadratic coefficient, and small-cubic inequalities hold; short sums are direct, small-b cases use Euler-Maclaurin, and failure of cubic closure triggers one final transform to a length-about-K^μ higher-degree sum backed by K^(4μ+o(1)) precomputation.",
+          "conceptual_reading": "Adaptive exits preserve progress without forcing one recursive representation across incompatible parameter regimes.",
+          "representation_or_bridge": "Nonstationary remainders, Euler-Maclaurin boundary sums, and the terminal precomputed high-degree family are distinct continuation interfaces.",
+          "boundary_or_failure": "A cheap remainder is anticipated here and proved later; failed proof search within one route would not invalidate the other routed cases.",
+          "uncertainty": "Moderate: recurrence and terminal length estimates are display-dependent, and some efficiency claims are deferred."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2138245810_d11",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives distinct exits for short length, small quadratic coefficient, and failure of the small-cubic closure condition.",
+          "On the last route it applies one final transform, obtains a possibly high-degree sum of length roughly at most K^mu, and relies on K^(4mu+o(1)) FFT precomputation.",
+          "Efficient treatment of the nonstationary remainder is anticipated in this overview and deferred to later analysis."
+        ],
+        "inference": [
+          "Interpreting the exits as adaptive routing across parameter regimes is faithful to the algorithmic case split."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's statement about 'failed proof search' is absent from the span and imports a formal-worker framing unrelated to this numerical algorithm."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Coefficient recurrences and terminal length estimates are display-dependent, while the source's closing summary makes their roles recoverable."
+        ],
+        "missed_mechanism": [
+          "The boundary should emphasize that remainder efficiency is only anticipated at this point and that the final high-degree route is conditional on precomputed data."
+        ],
+        "revision_instructions": [
+          "Delete the proof-search sentence and state instead that each exit has a different certified evaluator, while the nonstationary remainder's cheap evaluation is deferred and the hard closure failure incurs the K^(4mu+o(1)) precomputation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lemma 5.4 certifies the nonstationary pieces discarded in phase one.",
+      "line_end": 2582,
+      "line_start": 2517,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour definitions and decay exponents need the typeset formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Cauchy deformation and small cK^2 to create exponential decay, truncate long contours to logarithmic length, and reduce the resulting integrals to the quadratic-sum interface.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Move nonstationary cubic contours into exponentially decaying directions",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_d25.txt",
+      "unit_bytes": 3916,
+      "unit_id": "openalex_w2138245810_d25",
+      "unit_sha256": "5b4b3fc77f854937dcbc64ee5b89b109222a98aaa242b864173c66cea7aab090",
+      "unit_type": "nonstationary contour lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_d25.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2509,
+          "line_end": 2516,
+          "text": "(5.15)                                                      < 1,\n                        (l − v)! (2πi)v+1 (τ + αk0 + αk)v+1\nfor all 1 ≤ k ≤ K − k0 . In particular, the subsum in (5.13) with τ + αk > 2l + 2\nis of the type discussed in Section 5 of [Hia11], which is handled by Theorem 2.1\nsince, as shown in [Hia11], such sums can be reduced to a linear combination,\nwith quickly computable coefficients each of size O(1), of O(ν 2 ) quadratic\nsums. Last, the treatment of the subsum in (5.13) with τ + αk < −2l − 2 is\nidentical.                                                                     \u0003\n",
+          "sha256": "5984d79bc717e44cac1c7fd8d4687d6a6d1559e0077dc90bbcea3237dc534cac"
+        },
+        "after": {
+          "line_start": 2583,
+          "line_end": 2590,
+          "text": "    Lemma 5.5. There are absolute constants κ15 , κ16 , A21 , A22 , and A23 ,\nsuch that for any ε ∈ (0, e−1 ), any integer j ≥ 0, any positive integers K and\nK1 satisfying Λ(K, j, ε) < K1 < K, any real β satisfying |β| ≤ 100K13 say,\nany real α satisfying |α| ≤ 100K13 say, any real η satisfying |η| ≤ 100K13 say,\n\n<!-- source-page: 48 -->\n\n938                                           G. A. HIARY\n",
+          "sha256": "7bddab09be63381c1e19027c61ddbb4cac43ac2bd70537b995c7ed7b9fbfe18b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f105258731ccfb8e4e33128de81e822690f8c9a35a12203d475c6123be9ecb79",
+        "dossier_sha256": "f0cd06275ed31f4bcf46cb7f8420288d5a9912999bb3289b7a9bbaf188519342",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Auxiliary results",
+            "line_end": 3078,
+            "line_start": 2294,
+            "mathematical_role": "Supplies Euler-Maclaurin, derivative, contour, stationary-phase, and quadratic-reduction lemmas needed to certify the algorithm."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2582,
+          "line_start": 2517,
+          "title": "Move nonstationary cubic contours into exponentially decaying directions",
+          "unit_id": "openalex_w2138245810_d25",
+          "unit_type": "nonstationary contour lemma",
+          "why_material": "Uses Cauchy deformation and small cK^2 to create exponential decay, truncate long contours to logarithmic length, and reduce the resulting integrals to the quadratic-sum interface."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lemma 5.4 certifies the nonstationary pieces discarded in phase one.",
+          "representation_dependency": "Contour definitions and decay exponents need the typeset formulas.",
+          "unit_id": "openalex_w2138245810_d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2516,
+            "line_start": 2377,
+            "title": "Euler-Maclaurin correction integrals reduce to quadratic sums",
+            "unit_id": "openalex_w2138245810_d24",
+            "unit_type": "reduction lemma",
+            "why_material": "Splits terms according to whether a linear frequency is small, uses local Taylor expansion in the small region and explicit integration in the large region, and controls cancellation by shifting the summation index before binomial expansion."
+          },
+          {
+            "line_end": 2850,
+            "line_start": 2583,
+            "title": "Partition by stationary geometry and reduce to Airy-type integrals",
+            "unit_id": "openalex_w2138245810_d26",
+            "unit_type": "saddle-aware integral evaluator",
+            "why_material": "Handles a broad cubic-quadratic double integral by separating small and large quadratic curvature, then partitions y by stationary-point location, deforms contours for decay, and reduces all cases to controlled Airy variants and incomplete Gamma functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Derivative bounds certify short Euler-Maclaurin expansions, nonstationary contours certify decay, saddle-aware integrals reduce to Airy or incomplete-Gamma forms, and remaining terms return to the quadratic-sum interface.",
+            "limit": "This synthesis establishes the paper's claimed computational reductions, not numerical practicality or optimized constants.",
+            "parent_local_unit_ids": [
+              "openalex_w2138245810_d22",
+              "openalex_w2138245810_d23",
+              "openalex_w2138245810_d24",
+              "openalex_w2138245810_d25",
+              "openalex_w2138245810_d26",
+              "openalex_w2138245810_d27"
+            ],
+            "title": "Auxiliary lemmas form a cost-certification stack"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2138245810_d25",
+        "spontaneous": {
+          "unit_id": "openalex_w2138245810_d25",
+          "spontaneous_reading": "The main move is to replace a finite real y-contour by a slanted ray and a vertical segment on which the cubic-linear phase becomes uniformly decaying. The lower bound on x and the smallness of cK1^2 turn an oscillatory integral into one that can be truncated at a nu-scale length, cut into unit intervals, and Taylor-compressed into a bounded family of polynomial moments coupled to F(K; a+alpha x,b)."
+        },
+        "directed": {
+          "unit_id": "openalex_w2138245810_d25",
+          "source_grounded_mathematics": "Lemma 5.4 introduces Ix(C), writes the target as an x-integral of Ix(C0)F, and uses Cauchy's theorem to express Ix(C0) through contours C1 and C2. Under 1/4 <= x and |cK1^2| < 1/48, both transformed integrands decay faster than exp(-y/6). Truncation at L=ceil(6 nu), unit-interval shifts, and Taylor expansion reduce the original integral, up to the stated small error, to O(nu^2) integrals of the two forms displayed in (5.20), which are referred to the earlier treatment of (5.9).",
+          "conceptual_reading": "Contour choice is doing computational compression: it converts nonstationarity into a uniform decay certificate, so the long continuous domain is forgotten after a controlled truncation and only finitely many local polynomial data remain. The lemma is therefore both an analytic reduction and a complexity certificate, not merely an existence argument.",
+          "representation_or_bridge": "The bridge objects are Ix(C), the pair C1/C2, the exponential decay envelope, the truncation scale L, and the local Taylor polynomials. They connect the cubic y-phase to canonical x-integrals containing F(K; a+alpha x,b), returning the problem to the paper's established quadratic-sum interface.",
+          "boundary_or_failure": "The decay argument uses x bounded away from zero and a small cubic coefficient; it does not cover a stationary or near-zero x regime. The last evaluation is delegated to the earlier analysis after (5.9), so this span alone does not supply that terminal reduction or its constants. It proves an approximation and operation/bit bound under the lemma's parameter restrictions, not an unrestricted contour principle.",
+          "uncertainty": "The case architecture and decay/truncation mechanism are explicit in the span. Exact radicals, phase signs, and contour endpoints are formula-sensitive in the extracted text, and the definitions of nu, Lambda, F, and the earlier (5.9) evaluator lie outside this unit; no reconstruction of those details is assumed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2138245810_d25",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly defines I_x(C), deforms C0 into C1 and C2 by Cauchy's theorem, proves e^{-y/6}-type decay in the positive-w case from x>=1/4 and the small cubic coefficient, and truncates at L=ceil(6 nu).",
+          "Subdivision into unit intervals and Taylor expansion do reduce the result to O(nu^2) integrals of the two displayed forms (5.20), with the terminal treatment delegated to the earlier discussion after (5.9).",
+          "The candidate preserves the lemma's parameter dependence, approximation character, operation/bit bound interpretation, and reliance on material outside this span for the final evaluator."
+        ],
+        "inference": [
+          "Describing the deformation as computational compression and the lemma as a complexity certificate is a reasonable interpretation of the explicit truncation, finite local expansion, and stated resource bound.",
+          "The warning about a near-zero or stationary regime is a sound consequence of the proof's use of x bounded away from zero together with small |c|K1^2, rather than an imported theorem."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls C1 a slanted ray, but the span defines C1 with a finite parameter interval; it is a slanted segment, not an infinite ray."
+        ],
+        "paraphrase_or_style_risk": [
+          "The bridge account identifies concrete operations and retained objects rather than merely restating that a representation exposes structure."
+        ],
+        "context_or_ocr_risk": [
+          "Radicals, exponents, and contour endpoints are formula-sensitive in the extracted text, but the candidate appropriately declines to reconstruct them and its qualitative decay argument remains readable from the span."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'slanted ray' with 'finite slanted segment' in the spontaneous reading; no other mathematical revision is required."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the last unverified cost path in the cubic algorithm.",
+      "line_end": 3078,
+      "line_start": 2851,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense contour and Gaussian formulas are OCR-sensitive; exact constants and orientations require the typeset source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves that the extended x-contours used in saddle extraction are cheap by rotating the y-contour, exploiting uniform decay, separating a full Gaussian integral from a decaying half-line correction, and reducing both to quadratic sums.",
+      "source_id": "openalex_w2138245810",
+      "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+      "source_page_markers_inside_unit": [
+        53,
+        54,
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "External contour tails collapse back to quadratic exponential sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2138245810_d27.txt",
+      "unit_bytes": 14794,
+      "unit_id": "openalex_w2138245810_d27",
+      "unit_sha256": "654b632a180704fbd9a6e8027d9ffc052f6b8ea66b968887a968df7a20eccc8f",
+      "unit_type": "bulk-tail certification lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_d27.txt",
+      "source": {
+        "source_id": "openalex_w2138245810",
+        "title": "Fast methods to compute the Riemann zeta function",
+        "authors": [
+          "Ghaith A. Hiary"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2843,
+          "line_end": 2850,
+          "text": "                 2β (K1 )j      I4                             −∞\n                                                       1\n                                                                  Z\n                                                                                     3              2\n                                               =√                          y j e2πicy +2πiηy+πiτ1 (y) dy .\n                                                    2β (K1 )j         I4\n\nBut this is also of the form (5.27), which we know how to handle efficiently. \u0003\n",
+          "sha256": "f5cdfd75d39df517163e8f65b39ab58fdb2bb2c1626f82fe0c35760fb3e0dec0"
+        },
+        "after": {
+          "line_start": 3079,
+          "line_end": 3086,
+          "text": "    Acknowledgment. I would like to thank my Ph.D. thesis advisor Andrew\nOdlyzko. Without his help and comments this paper would not have been\npossible.\n\n<!-- source-page: 56 -->\n\n946                                 G. A. HIARY\n\n",
+          "sha256": "7291ef10f74f64e3c875ab876c7869e30e26cc6b185b41871059a56e3d17117a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f105258731ccfb8e4e33128de81e822690f8c9a35a12203d475c6123be9ecb79",
+        "dossier_sha256": "f0cd06275ed31f4bcf46cb7f8420288d5a9912999bb3289b7a9bbaf188519342",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Auxiliary results",
+            "line_end": 3078,
+            "line_start": 2294,
+            "mathematical_role": "Supplies Euler-Maclaurin, derivative, contour, stationary-phase, and quadratic-reduction lemmas needed to certify the algorithm."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3078,
+          "line_start": 2851,
+          "title": "External contour tails collapse back to quadratic exponential sums",
+          "unit_id": "openalex_w2138245810_d27",
+          "unit_type": "bulk-tail certification lemma",
+          "why_material": "Proves that the extended x-contours used in saddle extraction are cheap by rotating the y-contour, exploiting uniform decay, separating a full Gaussian integral from a decaying half-line correction, and reducing both to quadratic sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Closes the last unverified cost path in the cubic algorithm.",
+          "representation_dependency": "Dense contour and Gaussian formulas are OCR-sensitive; exact constants and orientations require the typeset source.",
+          "unit_id": "openalex_w2138245810_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2850,
+            "line_start": 2583,
+            "title": "Partition by stationary geometry and reduce to Airy-type integrals",
+            "unit_id": "openalex_w2138245810_d26",
+            "unit_type": "saddle-aware integral evaluator",
+            "why_material": "Handles a broad cubic-quadratic double integral by separating small and large quadratic curvature, then partitions y by stationary-point location, deforms contours for decay, and reduces all cases to controlled Airy variants and incomplete Gamma functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Derivative bounds certify short Euler-Maclaurin expansions, nonstationary contours certify decay, saddle-aware integrals reduce to Airy or incomplete-Gamma forms, and remaining terms return to the quadratic-sum interface.",
+            "limit": "This synthesis establishes the paper's claimed computational reductions, not numerical practicality or optimized constants.",
+            "parent_local_unit_ids": [
+              "openalex_w2138245810_d22",
+              "openalex_w2138245810_d23",
+              "openalex_w2138245810_d24",
+              "openalex_w2138245810_d25",
+              "openalex_w2138245810_d26",
+              "openalex_w2138245810_d27"
+            ],
+            "title": "Auxiliary lemmas form a cost-certification stack"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2138245810_d27",
+        "spontaneous": {
+          "unit_id": "openalex_w2138245810_d27",
+          "spontaneous_reading": "The external x-contours are made cheap by a two-stage deformation. First the y-path is bent into cubic-decay directions and locally Taylor-compressed; then the x half-line is rotated according to the sign of the quadratic coefficient. When the rotated exponent initially grows, the half-line is represented as a full Gaussian minus a decaying complementary half-line, allowing explicit Gaussian integration and returning both pieces to quadratic exponential sums."
+        },
+        "directed": {
+          "unit_id": "openalex_w2138245810_d27",
+          "source_grounded_mathematics": "Lemma 5.6 shifts the positive external contour by 1/4 and deforms the y-segment into C1 and C2. On C1, small |c1 K1^2| gives exp(-y/16)-type decay, so y is truncated, subdivided, shifted, and Taylor-expanded to sums (5.38). The x-contour is then rotated to C3 or C4 according to the sign of alpha2. A lower bound on tau_k makes one half-line contribution decay after writing the problematic integral as a full-line Gaussian minus the negative half-line. The latter is truncated and expanded before incomplete-Gamma evaluation; explicit integration of the full Gaussian gives (5.46), whose short y-integral is Taylor-reduced. Both routes yield quadratic exponential sums handled by Theorem 2.1. The C2 branch is treated analogously using tilde-tau_k, and the negative external contour is identified as a conjugate case.",
+          "conceptual_reading": "The proof certifies that contour extensions introduced for saddle extraction do not create a new computational primitive. Decay removes most of the continuous tail, while Gaussian completion converts the remaining apparently unstable branch into an explicit bulk term plus a stable correction. The output representation closes back onto the same quadratic-sum evaluator used elsewhere.",
+          "representation_or_bridge": "C1/C2 expose decay in y, C3/C4 choose a stable direction for the quadratic x-phase, and tau_k or tilde-tau_k quantify separation across the summation range. The full-Gaussian-minus-half-line identity is the decisive bridge: the correction is reduced through incomplete Gamma integrals, while the full Gaussian produces a short y-integral and then quadratic exponential sums.",
+          "boundary_or_failure": "The certification requires alpha bounded away from zero at the stated Lambda scale, summation indices separated by a Lambda^2 margin, a nonzero controlled alpha2, and small c1K1^2. It relies on Theorem 2.1 and a previously established quadratic-sum class rather than deriving that evaluator here. Claims that certain n>0 terms are negligible and that C2 is analogous are stated in the proof but not expanded into independent estimates in this span.",
+          "uncertainty": "The qualitative deformations, decay logic, Gaussian split, and quadratic-sum endpoint are explicit. The extracted statement contains an ambiguous repeated alpha2/alpha2-style ratio and dense phase formulas whose superscripts, radicals, and signs may be OCR-sensitive; their exact intended algebra is therefore not reconstructed. The conclusion is conditional on the displayed hypotheses as typeset in the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2138245810_d27",
+        "critic_decision": "revise",
+        "supported": [
+          "The span deforms the finite y-segment to C1/C2, obtains e^{-y/16}-type decay under the small-c1 hypothesis, truncates and Taylor-expands the y-integral, and rotates the x half-line to C3 or C4 according to the sign of alpha2.",
+          "For positive alpha2, the proof derives a lower bound on tau_k, writes the problematic x-integral as a full-line Gaussian minus a negative half-line, reduces the decaying correction through Taylor expansion and incomplete-Gamma evaluation, and explicitly integrates the full Gaussian to obtain (5.46).",
+          "The short y-treatment following (5.46) and both principal routes explicitly end in quadratic exponential sums handled through Theorem 2.1; the C2 branch uses the analogous tilde-tau bound, and the negative external contour is declared a conjugate case.",
+          "The candidate accurately preserves the lemma's restrictions and flags rather than repairs the corrupted repeated alpha2/alpha2-style ratios."
+        ],
+        "inference": [
+          "Saying that decay and Gaussian completion prevent the displayed tail integrals from requiring a new computational primitive is a defensible interpretation of their explicit reduction to the cited quadratic-sum evaluator.",
+          "Calling the full-Gaussian-minus-half-line identity the decisive bridge is supported by the proof's use of that split to isolate the growing branch."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says these external contours were introduced for saddle extraction, but that provenance is not stated in the frozen span.",
+          "The phrase 'the same quadratic-sum evaluator used elsewhere' reaches beyond this span; the span supports only reduction to the quadratic sums discussed in Section 5 of [Hia11] and handled by Theorem 2.1."
+        ],
+        "paraphrase_or_style_risk": [
+          "Apart from the imported architectural framing, the analysis identifies non-paraphrase operations: sign-dependent contour rotation, decay truncation, Gaussian splitting, and closure to quadratic sums."
+        ],
+        "context_or_ocr_risk": [
+          "The lemma statement and later estimates contain ambiguous repeated alpha2/alpha2-style expressions and dense formula extraction; exact normalization hypotheses cannot be safely reconstructed here, as the candidate correctly notes."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the claim that the external contours were introduced for saddle extraction and replace 'the same evaluator used elsewhere' with the span-bounded statement that both routes reduce to the cited quadratic exponential sums handled by Theorem 2.1; retain the OCR caveat."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8cb07c228d5544bf38838fcce02641c5dd9524abafdb71b0ffc17338f9911a35"
+}

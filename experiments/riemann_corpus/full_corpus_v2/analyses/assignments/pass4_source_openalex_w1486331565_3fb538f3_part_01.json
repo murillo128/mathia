@@ -1,0 +1,826 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1486331565_3fb538f3_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1486331565",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Later results show that this surrogate is useful but imperfect, so this unit should be linked to units u017 and u018.",
+      "line_end": 674,
+      "line_start": 638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The acceptance probability and surrogate formula are clear, with minor displayed-formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use a cheap Landau surrogate inside simulated annealing",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u013.txt",
+      "unit_bytes": 2526,
+      "unit_id": "openalex_w1486331565_u013",
+      "unit_sha256": "f1685bf8c43c3acb8e71243b10e9e995d741c4aa199cb653b9b4a2db5c80376a",
+      "unit_type": "optimization-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u013.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "         t∗ log t∗                                                        b − t∗\n                   \u0012                   \u0013       \u0012               \u0012        \u0012        \u0013       \u0013\u0013\n                        1          1                1      1         −1               π\n      −                     +            −  c           +        tan                +       .\n             b       b + t∗   b − t∗             b + t∗    a                 a         2\nWe choose ε = 10−3 , and thus find that we can bound the term C41 (k) relatively\neasily.\n\n",
+          "sha256": "a86f31cd62cbc78377f85d806a7a243eaf22775865bacc51a26239c11c2e5f27"
+        },
+        "after": {
+          "line_start": 675,
+          "line_end": 682,
+          "text": "   In our method, we fix the degree n, we set c0 = 1, and then choose each ck for\n1 ≤ k ≤ n uniformly at random from [0, B] for a prescribed bound B, and then set\n                                               n\n                                               X            2\n                                   f (ϕ) =           ck eikϕ .\n                                               k=0\n                                                                 Pn\nWe then compute values a0 , . . . , an so that f (ϕ) =            k=0 ak cos(kϕ). Here,\n",
+          "sha256": "64ecb8915284b1ebe42a9151866d81c2b469822e383b4e36efd3fc5b4fd18ef1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Searching for trigonometric polynomials",
+            "line_end": 746,
+            "line_start": 638,
+            "mathematical_role": "Defines the annealing surrogate, square-modulus parametrization, feasibility tests, incremental updates, and search schedule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 674,
+          "line_start": 638,
+          "title": "Use a cheap Landau surrogate inside simulated annealing",
+          "unit_id": "openalex_w1486331565_u013",
+          "unit_type": "optimization-design",
+          "why_material": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Later results show that this surrogate is useful but imperfect, so this unit should be linked to units u017 and u018.",
+          "representation_dependency": "The acceptance probability and surrogate formula are clear, with minor displayed-formula dependence.",
+          "unit_id": "openalex_w1486331565_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 636,
+            "line_start": 498,
+            "title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+            "unit_id": "openalex_w1486331565_u012",
+            "unit_type": "piecewise-integral-certification",
+            "why_material": "A piecewise majorant for U0 and symmetry reduce the integral; the domain is split at formula-change points and around its moving peak, middle pieces are evaluated numerically, and logarithmic tail inequalities yield explicit analytic bounds."
+          },
+          {
+            "line_end": 698,
+            "line_start": 675,
+            "title": "Square-modulus coordinates make global nonnegativity automatic",
+            "unit_id": "openalex_w1486331565_u014",
+            "unit_type": "representation-change",
+            "why_material": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u013",
+          "spontaneous_reading": "Because the true Kadiri score is too costly for a large search, simulated annealing explores with Landau's cheap functional while temporary uphill moves let it cross local barriers."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u013",
+          "source_grounded_mathematics": "At temperature Y an improving move is retained and a worsening move of size ΔG is retained with probability exp(−ΔG/Y); cooling approaches greedy descent. The repeated objective is Landau's functional on Pₙ rather than a full Kadiri evaluation.",
+          "conceptual_reading": "The search deliberately trades target fidelity for throughput, using stochastic exploration under a computable surrogate and postponing expensive target alignment.",
+          "representation_or_bridge": "The scalar G(f) ranks admissible trigonometric polynomials cheaply enough for many trials, linking the extremal Landau problem to the annealing state space.",
+          "boundary_or_failure": "Annealing supplies candidates, not a proof of optimality, and a low surrogate value need not imply a low true zero-free constant.",
+          "uncertainty": "The acceptance mechanism and surrogate role are clear; the exact extracted radical in G should be checked before implementation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1486331565_u013",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the annealing acceptance rule, its greedy zero-temperature limit, the high cost of repeated Kadiri evaluation, and the replacement of that evaluation by Landau's quickly computed G.",
+          "The candidate correctly denies an optimality guarantee."
+        ],
+        "inference": [
+          "Trading target fidelity for throughput is a reasonable characterization of using an explicitly named surrogate."
+        ],
+        "unsupported_or_imported": [
+          "The claim that expensive target alignment is postponed asserts a later rescoring stage not present in this frozen span; this unit establishes only that Kadiri evaluation is avoided during the described search."
+        ],
+        "paraphrase_or_style_risk": [
+          "The local-barrier language is standard annealing interpretation and supported by the temporary uphill-move rule."
+        ],
+        "context_or_ocr_risk": [
+          "The radical in G is extraction-sensitive and should not be reconstructed exactly from this text layer."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the statement about postponing target alignment with the span-supported claim that the annealing loop substitutes Landau's inexpensive G for repeated Kadiri evaluations; present possible target mismatch only as an untested surrogate risk within this unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The coefficient figure at lines 722-732 interrupts the prose but is not needed to understand the algorithm; lines 737-745 resume the schedule.",
+      "line_end": 745,
+      "line_start": 699,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The update-index text is compact and should be verified before coding; the algorithmic roles are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u015.txt",
+      "unit_bytes": 3062,
+      "unit_id": "openalex_w1486331565_u015",
+      "unit_sha256": "d553688d79f4902ed009df1e72e50de45ed90cfc48ba2c6b8eb1d0318ec9d7e2",
+      "unit_type": "constrained-search-algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u015.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 691,
+          "line_end": 698,
+          "text": "k > 1 is the kth off-peak aperiodic autocorrelation of this sequence. (In fact, it\nis slightly more efficient to keep track of these autocorrelations in the code, rather\nthan the ak , but this is a minor point.) We then test if f ∈ Pn , so we test if\na1 > a0 and whether each ak ≥ 0, since f (ϕ) ≥ 0 for all ϕ automatically by\nthe construction. (Kondrat’ev [6] employed this same strategy to ensure choosing\ntrigonometric polynomials that are nonnegative everywhere.) If this test fails, then\nwe start over with a new randomly selected f . Once we have a viable polynomial,\nwe proceed with the annealing phase.\n",
+          "sha256": "7a27632e0771b34c14be435480f90b0051bfb0a561b5c498218edaa2c0430648"
+        },
+        "after": {
+          "line_start": 746,
+          "line_end": 753,
+          "text": "\n                                          6. Results\n   Table 4 records the best value of the objective function we constructed by using\nthis optimization method for each degree n = 4m, with 2 ≤ m ≤ 10. Each entry\nprovides the current best-known value for Landau’s Vn (1.1). In particular, the en-\ntry for n = 8 improves the result of [6], and each subsequent entry is less than the\nformerly best known upper bound on V of 34.5035 . . . from [1]. At degree n = 40,\nour searches produced a polynomial that established V40 < 34.48923. We then\n",
+          "sha256": "8147c68c057c606faba79b5064c84443c73782e0960ba3e759e06df121c72c87"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Searching for trigonometric polynomials",
+            "line_end": 746,
+            "line_start": 638,
+            "mathematical_role": "Defines the annealing surrogate, square-modulus parametrization, feasibility tests, incremental updates, and search schedule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 745,
+          "line_start": 699,
+          "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+          "unit_id": "openalex_w1486331565_u015",
+          "unit_type": "constrained-search-algorithm",
+          "why_material": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The coefficient figure at lines 722-732 interrupts the prose but is not needed to understand the algorithm; lines 737-745 resume the schedule.",
+          "representation_dependency": "The update-index text is compact and should be verified before coding; the algorithmic roles are prose-recoverable.",
+          "unit_id": "openalex_w1486331565_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 698,
+            "line_start": 675,
+            "title": "Square-modulus coordinates make global nonnegativity automatic",
+            "unit_id": "openalex_w1486331565_u014",
+            "unit_type": "representation-change",
+            "why_material": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0."
+          },
+          {
+            "line_end": 761,
+            "line_start": 747,
+            "title": "Refined annealing yields the degree-40 Landau certificate",
+            "unit_id": "openalex_w1486331565_u016",
+            "unit_type": "computational-certificate-result",
+            "why_material": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u015",
+          "spontaneous_reading": "Single-coordinate changes are propagated through autocorrelations in linear time, so every stochastic move can be feasibility-checked and scored without rebuilding the polynomial."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u015",
+          "source_grounded_mathematics": "A random update cₖ←cₖ+s incrementally changes affected aⱼ in O(n); invalid coefficient states are undone, valid improving states are kept, and worsening states are accepted with probability e^(−ZΔG). The schedule increases inverse temperature, adds greedy trials, shrinks step size, and diversifies runs and parameters.",
+          "conceptual_reading": "The algorithm co-designs representation and search: local coordinates support cheap exact state maintenance, hard feasibility rejection, exploratory acceptance, and progressively finer refinement.",
+          "representation_or_bridge": "Maintained autocorrelations are sufficient state connecting a c-coordinate move to both admissibility and the Landau objective.",
+          "boundary_or_failure": "Stochastic schedules and parallel parameter exploration offer no global-optimum guarantee, and the compact update-index formulas must be checked before reproduction.",
+          "uncertainty": "The algorithmic roles are prose-clear; coefficient-update indices and displayed numeric schedules remain source-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1486331565_u015",
+        "critic_decision": "revise",
+        "supported": [
+          "The source gives an O(n) incremental coefficient update after a one-coordinate c move, feasibility rejection, the annealing acceptance rule, inverse-temperature schedule, greedy phase, step shrinkage, and diversified processor runs.",
+          "The candidate correctly denies any global-optimum guarantee and flags the compact index formulas for reproduction checks."
+        ],
+        "inference": [
+          "Maintained autocorrelations functioning as sufficient search state is a faithful algorithmic abstraction."
+        ],
+        "unsupported_or_imported": [
+          "Calling the maintained state 'exact' is not justified by a source that reports decimal floating-point computations and gives no exact-arithmetic or error-control account for these updates."
+        ],
+        "paraphrase_or_style_risk": [
+          "The co-design language is useful but should not imply stronger numerical rigor than the source establishes."
+        ],
+        "context_or_ocr_risk": [
+          "Update indices are compact and extraction-sensitive; the coefficient figure interrupts the prose without changing the algorithmic account."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change 'cheap exact state maintenance' to 'cheap incremental state maintenance' and keep numerical exactness/certification separate from the algebraic update formulas."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Figures 1-3 and Table 4 hold the coefficient-level evidence and comparative values.",
+      "line_end": 761,
+      "line_start": 747,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The bound is prose-readable; independent reuse requires exact coefficient verification from the retained PDF or original numerical artifact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Refined annealing yields the degree-40 Landau certificate",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u016.txt",
+      "unit_bytes": 1195,
+      "unit_id": "openalex_w1486331565_u016",
+      "unit_sha256": "c00952fad01a87e234fb8c98e6ad79dc45c98b180fa6fc884ba090f0f68ed502",
+      "unit_type": "computational-certificate-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u016.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 739,
+          "line_end": 746,
+          "text": "   Our selection of parameters in this process varied over a number of runs. In fact,\nit was useful to run annealing jobs on many processors simultaneously, with each\nprocessor choosing its annealing parameters at random from some prescribed inter-\nvals. This way, over time we could learn which parameters tended to produce bet-\nter trigonometric polynomials, and this would inform choices of parameters in later\nruns. We often chose B ∈ [100, 200], Z ∈ [8, 16], ∆Z ∈ [.5, 2], M ∈ [250n, 350n],\nK = 10 or 11, S ∈ [2.5, 4], λ ∈ [.015, .05], and S0 = 10−5 or 10−6 .\n\n",
+          "sha256": "8ba550578cc336fc0a71732e0ed9221905185cf03add77f69181b65e8098003b"
+        },
+        "after": {
+          "line_start": 762,
+          "line_end": 769,
+          "text": "   We may now apply Kadiri’s method for computing a value for R0 in the classical\nzero-free region of the Riemann zeta-function using each of the polynomials that\nproduced the records for Vn , and employing the savings obtained in the error term\nas described in Section 3. These values are also listed in Table 4, along with\nthe value of θ that was employed in each case. The best value here appears at\nn = 12, and some further local optimizations allow us to derive R0 < 5.57422.\nIt is interesting that polynomials that produce an improvement in Landau’s value\nV do not necessarily produce an improvement in R0 under Kadiri’s method, but\n",
+          "sha256": "cc1eb3e8bc9462ee2f8beccedea34d2164dd0da124231309f7be05198ed9b368"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 761,
+          "line_start": 747,
+          "title": "Refined annealing yields the degree-40 Landau certificate",
+          "unit_id": "openalex_w1486331565_u016",
+          "unit_type": "computational-certificate-result",
+          "why_material": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Figures 1-3 and Table 4 hold the coefficient-level evidence and comparative values.",
+          "representation_dependency": "The bound is prose-readable; independent reuse requires exact coefficient verification from the retained PDF or original numerical artifact.",
+          "unit_id": "openalex_w1486331565_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 745,
+            "line_start": 699,
+            "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+            "unit_id": "openalex_w1486331565_u015",
+            "unit_type": "constrained-search-algorithm",
+            "why_material": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs."
+          },
+          {
+            "line_end": 771,
+            "line_start": 762,
+            "title": "A good Landau polynomial need not optimize the true zero-free constant",
+            "unit_id": "openalex_w1486331565_u017",
+            "unit_type": "objective-comparison",
+            "why_material": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u016",
+          "spontaneous_reading": "Heuristic search becomes mathematical evidence only after it fixes an explicit admissible polynomial whose evaluated objective certifies the improved upper bound on V₄₀."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u016",
+          "source_grounded_mathematics": "Degree-by-degree annealing finds improved Landau values; a degree-40 candidate is locally refined to F₄₀, whose objective gives V₄₀<34.488992000856 and hence the stated upper bound for V. The source points to cₖ and normalized aₖ data and reports A.",
+          "conceptual_reading": "Discovery and certification have different epistemic roles: stochastic optimization proposes F₄₀, while its explicit coefficients, admissibility, and one-sided objective evaluation carry the bound.",
+          "representation_or_bridge": "F₄₀ is the finite witness linking a computational trajectory to an inequality about an infimum and its limiting value.",
+          "boundary_or_failure": "The search does not certify global optimality or the lower bound on V; independent reuse requires exact coefficient and rounding verification absent from this prose span.",
+          "uncertainty": "The claimed bound is clear, but coefficient-level certification depends on figures or retained numerical artifacts and the original PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1486331565_u016",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reports coarse degree-by-degree annealing, finer passes from the degree-40 candidate, the resulting F40 objective bound V40<34.488992000856, and the consequent upper bound for V.",
+          "The candidate correctly distinguishes the heuristic search from global optimality and notes that coefficient evidence lies in figures or retained artifacts."
+        ],
+        "inference": [
+          "Treating F40 as a finite witness linking a search trajectory to an infimum bound is supported once its stated objective and admissibility are accepted."
+        ],
+        "unsupported_or_imported": [
+          "The span does not describe a one-sided rounding procedure for evaluating F40, so 'one-sided objective evaluation' and an independently 'checkable certificate' overstate what this prose slice itself establishes.",
+          "The exact admissibility verification cannot be inspected from this span because the relevant coefficient sequences are only referenced in figures."
+        ],
+        "paraphrase_or_style_risk": [
+          "The discovery-versus-certification distinction is valuable but currently assigns a stronger certification mechanism than the evidence packet contains."
+        ],
+        "context_or_ocr_risk": [
+          "Independent coefficient and rounding verification requires the referenced figures, original PDF, or numerical artifacts, as the candidate's uncertainty already observes."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State only that the paper reports F40's evaluated objective as establishing the upper bound; describe explicit coefficients as the intended verification data, and reserve claims of one-sided or independently checkable numerical certification until the coefficient and rounding artifacts are inspected."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a concrete two-stage search pattern: cheap broad surrogate exploration followed by expensive target-aligned selection and local refinement.",
+      "line_end": 834,
+      "line_start": 823,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; Table 5 is needed only to reconstruct the final certificate exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rescore near-optimal surrogate candidates under the true objective",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u018.txt",
+      "unit_bytes": 894,
+      "unit_id": "openalex_w1486331565_u018",
+      "unit_sha256": "e6974da8dbfaab04a76f57961351e51ad982f51f066c3fec7caf9cc8967babdc",
+      "unit_type": "surrogate-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u018.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 815,
+          "line_end": 822,
+          "text": "                            20   34.49321564               1.855           5.57495\n                            24   34.49027559               1.855           5.57519\n                            28   34.48959029               1.855           5.57560\n                            32   34.48939230               1.855           5.57632\n                            36   34.48930967               1.855           5.57683\n                            40   34.488992001              1.855           5.57724\n\n\n",
+          "sha256": "d0a001a36ebd38bfc9e0cb1e4f5015b892614c85bacb09c1ca710bb5363d7b86"
+        },
+        "after": {
+          "line_start": 835,
+          "line_end": 842,
+          "text": "\n6.1. Potential improvements. While it appears that the scope for selecting an\nimproved trigonometric polynomial may be limited, we see that the height T0 to\nwhich the Riemann hypothesis has been verified has some influence on the width of\nthe zero-free region that one can obtain by using this method. We might ask then\n\n<!-- source-page: 14 -->\n\n",
+          "sha256": "73c42f5afa815eccf662d9fdfa31ac9e0def68f2bf5660e129faa99aadb26a8d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 834,
+          "line_start": 823,
+          "title": "Rescore near-optimal surrogate candidates under the true objective",
+          "unit_id": "openalex_w1486331565_u018",
+          "unit_type": "surrogate-repair",
+          "why_material": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a concrete two-stage search pattern: cheap broad surrogate exploration followed by expensive target-aligned selection and local refinement.",
+          "representation_dependency": "Prose-grounded; Table 5 is needed only to reconstruct the final certificate exactly.",
+          "unit_id": "openalex_w1486331565_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 771,
+            "line_start": 762,
+            "title": "A good Landau polynomial need not optimize the true zero-free constant",
+            "unit_id": "openalex_w1486331565_u017",
+            "unit_type": "objective-comparison",
+            "why_material": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch."
+          },
+          {
+            "line_end": 946,
+            "line_start": 895,
+            "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+            "unit_id": "openalex_w1486331565_u019",
+            "unit_type": "limitation-and-sensitivity",
+            "why_material": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          },
+          {
+            "claim": "Most realized gain comes from jointly improving the certificate and error use; surrogate mismatch can be repaired by rescoring, whereas increasing verified height alone appears to approach a finite ceiling inside the method.",
+            "limit": "The ceiling is an empirical fit under fixed choices and is not a general impossibility result for all parameter changes or zero-free-region techniques.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u009",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018",
+              "openalex_w1486331565_u019"
+            ],
+            "title": "Diagnosing the remaining improvement frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 822,
+              "line_start": 772,
+              "reason": "Page transition, coefficient figure, and comparison table provide certificate and result data."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 894,
+              "line_start": 841,
+              "reason": "Page header, plots, coefficient table, and footnote support the final certificate and sensitivity analysis."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u018",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u018",
+          "spontaneous_reading": "The surrogate mismatch is repaired by preserving a broad near-optimal pool, rescoring it under the expensive target, and locally refining the target-selected degree-16 candidate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u018",
+          "source_grounded_mathematics": "Several hundred thousand annealed polynomials with good Landau scores are evaluated for R₀; many beat 5.57422, the best degree-16 candidate beats 5.57353, and further annealing yields F₁₆ used for Theorem 1 despite its nonrecord Landau score.",
+          "conceptual_reading": "A two-stage funnel recovers target quality without paying the target cost on every search move: broad surrogate exploration is followed by target-aligned selection and local refinement.",
+          "representation_or_bridge": "The retained candidate pool is the bridge between the cheap Landau landscape and the expensive Kadiri landscape; F₁₆ is selected by the latter, not by surrogate rank alone.",
+          "boundary_or_failure": "The pool is still surrogate-generated and finite, so rescoring does not establish global optimality or exclude candidates the surrogate filtered out.",
+          "uncertainty": "The search pattern and inequalities are prose-grounded; exact F₁₆ certification requires the coefficient table and numerical evaluation artifacts."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1486331565_u018",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says several hundred thousand good-Landau candidates were rescored for R0, many beat 5.57422, the best found degree-16 polynomial beat 5.57353, and further annealing from it produced F16 despite F16's nonrecord Landau value.",
+          "The finite surrogate-generated pool limitation and lack of global optimality are correctly stated."
+        ],
+        "inference": [
+          "A broad-candidate-pool followed by target rescoring and local refinement is a faithful two-stage pattern directly visible in the span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the funnel avoids paying the target cost on every search move imports the relative-cost rationale from an earlier span; this exact unit does not state the cost or confirm when every target evaluation was omitted."
+        ],
+        "paraphrase_or_style_risk": [
+          "The pool-as-bridge language is substantive, but the cheap-versus-expensive wording crosses the unit's evidence boundary."
+        ],
+        "context_or_ocr_risk": [
+          "Exact F16 reconstruction and certification depend on Table 5 and numerical evaluation artifacts outside this span."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the observed two-stage rescoring mechanism, but remove the cost-saving claim or mark it explicitly as an inference requiring the earlier objective-cost span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proofs largely invoke prior transfer arguments, so the useful unit is the dependency pattern and stated consequences rather than repeated details.",
+      "line_end": 1000,
+      "line_start": 948,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed bounds contain radicals and exponents with extraction risk; exact statements require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The improved zero-free region is converted into sharper explicit bounds for theta, psi, and pi-li; the source also notes that a shifted-log zero-free form is asymptotically equivalent yet could further improve the finite explicit corollaries.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free width propagates to explicit prime-counting error bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u020.txt",
+      "unit_bytes": 3005,
+      "unit_id": "openalex_w1486331565_u020",
+      "unit_sha256": "06012dc6876811c76419eeef0292674715b2434a6cfa66bf35f7d2bce8fb6047",
+      "unit_type": "downstream-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u020.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 940,
+          "line_end": 947,
+          "text": "approximated by\n                                                2.0185\n                                R0 = 5.4912 +           ,\n                                                 log T0\nsuggesting that, as larger values of T0 are established, the potential improvement in\nthe width of the classical zero-free region that one may obtain by using this method\nis limited.\n\n",
+          "sha256": "9fb47d2a04cd7b756392a7d6f11fef8bdbe4473e89bcc50bb6b9f1248591a9be"
+        },
+        "after": {
+          "line_start": 1001,
+          "line_end": 1008,
+          "text": "\n                                   Acknowledgements\n  We thank the Institute for Computational and Experimental Research in Math-\nematics and the Center for Computation and Visualization at Brown University for\ncomputational resources.\n\n                                         References\n [1] V. V. Arestov and V. P. Kondrat’ev. An extremal problem for nonnegative trigonometric\n",
+          "sha256": "bd92343e35f246cb16eadd996da2b4924f22d44c862c21b408ba7097f9d06ec2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications",
+            "line_end": 1001,
+            "line_start": 948,
+            "mathematical_role": "Propagates the zero-free region to explicit prime-number-theorem error bounds and related Chebyshev-function estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1000,
+          "line_start": 948,
+          "title": "Zero-free width propagates to explicit prime-counting error bounds",
+          "unit_id": "openalex_w1486331565_u020",
+          "unit_type": "downstream-transfer",
+          "why_material": "The improved zero-free region is converted into sharper explicit bounds for theta, psi, and pi-li; the source also notes that a shifted-log zero-free form is asymptotically equivalent yet could further improve the finite explicit corollaries."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proofs largely invoke prior transfer arguments, so the useful unit is the dependency pattern and stated consequences rather than repeated details.",
+          "representation_dependency": "Several displayed bounds contain radicals and exponents with extraction risk; exact statements require PDF verification.",
+          "unit_id": "openalex_w1486331565_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 946,
+            "line_start": 895,
+            "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+            "unit_id": "openalex_w1486331565_u019",
+            "unit_type": "limitation-and-sensitivity",
+            "why_material": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u020",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u020",
+          "spontaneous_reading": "A narrower zeta zero-free boundary propagates through established transfer arguments into sharper explicit errors for θ, ψ, and π−li; even an asymptotically equivalent shifted-log form could improve finite constants."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u020",
+          "source_grounded_mathematics": "Theorem 1 is converted into explicit bounds for |θ(x)−x| and |ψ(x)−x| using a revised constant 6.315, and into a bound for |π(x)−li(x)| with leading constant 0.2593; the source notes further applications and a possible region σ≥1−1/(R log(t/B)).",
+          "conceptual_reading": "The zero-free region is an upstream quantitative interface: modest improvements in its width or finite-height parametrization propagate to several prime-counting estimates without rebuilding their full machinery.",
+          "representation_or_bridge": "The shifted-log boundary and prior explicit-formula arguments bridge spectral information about zeta zeros to Chebyshev and prime-counting errors.",
+          "boundary_or_failure": "The span largely invokes earlier proofs rather than reproducing them, and asymptotic equivalence of shifted and unshifted forms does not imply identical finite explicit bounds.",
+          "uncertainty": "The dependency pattern is clear; radicals, exponents, thresholds, and exact corollary formulas are extraction-sensitive and require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1486331565_u020",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives explicit theta and psi bounds with revised R=6.315, a pi-li bound with leading constant 0.2593, and says the proofs follow prior arguments with substitutions.",
+          "It explicitly says a shifted-log zero-free region is asymptotically equivalent yet could further improve the finite corollaries, and the candidate correctly warns that equivalence does not make finite bounds identical."
+        ],
+        "inference": [
+          "Treating the zero-free result as an upstream quantitative interface whose constants propagate through established arguments is faithful to the two corollaries and their short proofs."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'prior explicit-formula arguments' names a mechanism not stated in this span, which refers only to arguments and results in cited works.",
+          "Calling the zero information 'spectral' adds generic terminology not used or needed by the source."
+        ],
+        "paraphrase_or_style_risk": [
+          "The bridge description is useful once stripped of the imported explicit-formula and spectral labels."
+        ],
+        "context_or_ocr_risk": [
+          "Radicals, exponents, thresholds, and exact corollary formulas are extraction-sensitive and require PDF verification for exact reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe the bridge only as the source's reuse of cited prior arguments and constant substitutions from the improved zero-free region; remove 'explicit-formula' and 'spectral' unless separately evidenced."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "09beed99f6d75350b67fe973a1903bd1071218a4e158b88128062a71c1c7fac4"
+}

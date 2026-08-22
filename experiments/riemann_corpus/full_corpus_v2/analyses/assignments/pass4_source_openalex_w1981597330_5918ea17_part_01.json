@@ -1,0 +1,352 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1981597330_5918ea17_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1981597330",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines Lemmas 4–5 because the later lower-bound argument uses their forward/backward transfer as one mechanism.",
+      "line_end": 414,
+      "line_start": 266,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula risk: missing comparison symbols, shifted integration limits, contour indentation, polynomial degree wording, derivative indices, and T-exponents make exact bounds unsafe without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u05.txt",
+      "unit_bytes": 7725,
+      "unit_id": "openalex_w1981597330_v2_u05",
+      "unit_sha256": "f435c3b88a2990c310888e4e9f8f40807834331308439872b8e16702715dd8b7",
+      "unit_type": "mean-square-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 258,
+          "line_end": 265,
+          "text": "                                                           (σ)\nif\n                          F (s) = M[f (x)],      G(s) = M[g(x)],\n               xσ−1/2 f (x) ∈ L2 (0, ∞),         xσ−1/2 g(x) ∈ L2 (0, ∞).\nThe last relation follows e.g. from [16, Theorem 72] by a change of variable.\n\n120                                                       A. Ivić\n\n",
+          "sha256": "9fc5d4d0c7264336fb92fdc3c85ca7fc3924bde33eeb997576ed34f9aef2fd29"
+        },
+        "after": {
+          "line_start": 415,
+          "line_end": 422,
+          "text": "\n   3. The mean square of Z2 (s). Mean square problems involving Z2 (s)\nare naturally of interest. They were investigated in [8], where it was shown\nthat\n            T\n(3.1)            |Z2 (σ + it)|2 dt \n T (10−8σ)/3 logC T                                 (1/2 < σ < 1, C > 0).\n            0\n",
+          "sha256": "bc06696b560d2f12b3063760982b87357394bec988698aa7f0132c2e0d2fcd0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Modified Mellin transform",
+            "line_end": 415,
+            "line_start": 93,
+            "mathematical_role": "Relates modified and ordinary Mellin transforms and proves inversion, convolution, Parseval, and localized mean-square transfer lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 414,
+          "line_start": 266,
+          "title": "Localization and contour shifting transfer transform mean squares back to the source function",
+          "unit_id": "openalex_w1981597330_v2_u05",
+          "unit_type": "mean-square-transfer",
+          "why_material": "A localized Parseval inequality bounds the mean square of a truncated modified transform by a weighted source norm. A converse-style lemma then smooths a dyadic source interval, shifts past the transform’s polar part, truncates by repeated integration by parts, and uses Cauchy–Schwarz plus Parseval to control the source mean square by the transform mean square."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines Lemmas 4–5 because the later lower-bound argument uses their forward/backward transfer as one mechanism.",
+          "representation_dependency": "Very high formula risk: missing comparison symbols, shifted integration limits, contour indentation, polynomial degree wording, derivative indices, and T-exponents make exact bounds unsafe without the PDF.",
+          "unit_id": "openalex_w1981597330_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 262,
+            "line_start": 197,
+            "title": "Products in the original variable become transform convolution and Parseval identities",
+            "unit_id": "openalex_w1981597330_v2_u04",
+            "unit_type": "convolution-and-parseval-calculus",
+            "why_material": "Two lemmas transfer the ordinary Mellin product formula and Parseval identity to the modified transform, supplying both a convolution law and an exact weighted L² identity. These become the algebraic engine for later moment and recurrence arguments."
+          },
+          {
+            "line_end": 468,
+            "line_start": 416,
+            "title": "Fourth-moment error bounds set the attainable scale for Z₂ mean squares",
+            "unit_id": "openalex_w1981597330_v2_u06",
+            "unit_type": "error-term-baseline",
+            "why_material": "The section defines E₂(T), inventories its mean-square, pointwise, omega, and integral behavior, and records how an assumed pointwise exponent for E₂ feeds an existing Z₂ mean-square estimate. This establishes the unconditional baseline and identifies which scales are already essentially optimal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modified Mellin inversion and Parseval make three forms of control mutually informative: analytic/mean-square bounds for Z₂, size of the fourth-moment error E₂, and higher zeta moments. Smoothing and polar subtraction determine which implications are exact, conditional, or lossy.",
+            "limit": "The arrows are not all equivalences: the paper explicitly identifies gaps, and exact exponent transfer depends on formula-sensitive hypotheses.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u03",
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u06",
+              "openalex_w1981597330_v2_u07",
+              "openalex_w1981597330_v2_u11"
+            ],
+            "title": "The transform–error–moment triangle"
+          },
+          {
+            "claim": "Smooth cutoffs enable contour shifts, frequency truncation, and saddle estimates throughout the paper, yet the proposed spectral transformation illustrates that a Gaussian-smoothed bound need not transfer to the unsmoothed unit-window sum actually required.",
+            "limit": "The boundary between removable smoothing and essential unsmoothed control is source-specific and depends on unverified dense formulas.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u05",
+              "openalex_w1981597330_v2_u09",
+              "openalex_w1981597330_v2_u18",
+              "openalex_w1981597330_v2_u21"
+            ],
+            "title": "Smoothing creates tractability but can hide the target oscillation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 415,
+              "line_start": 415,
+              "reason": "Whitespace before Section 3."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1981597330_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w1981597330_v2_u05",
+          "spontaneous_reading": "Localization makes transform control bidirectional: Parseval bounds a truncated transform from a weighted source norm, while smoothing, polar subtraction, contour shifting, and frequency truncation recover a dyadic source mean square from transform mean squares."
+        },
+        "directed": {
+          "unit_id": "openalex_w1981597330_v2_u05",
+          "source_grounded_mathematics": "Lemma 4 bounds the t-mean-square of a truncated modified transform by a weighted L² norm of its source. Lemma 5 inserts a smooth cutoff on [T/2,5T/2], shifts an inversion contour past a pole at one, truncates high frequencies by repeated integration by parts, and combines Cauchy–Schwarz with Lemma 4.",
+          "conceptual_reading": "Smooth localization is the enabling intermediate representation: it controls boundaries and frequencies, while the polar polynomial isolates the nonoscillatory main contribution.",
+          "representation_or_bridge": "The bridge is a cutoff-localized inversion formula coupling a dyadic source interval to a bounded vertical segment of F*.",
+          "boundary_or_failure": "The reverse transfer is lossy and hypothesis-heavy; smoothness, derivative bounds, polynomial growth, and explicit polar structure are essential.",
+          "uncertainty": "The displayed bounds have severe extraction damage in comparison signs, powers, contours, and derivative notation, so no exact exponent should be inferred here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1981597330_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 4 bounds a truncated transform mean square by a weighted source L² norm.",
+          "Lemma 5 uses a smooth dyadic cutoff, polar residue extraction, contour displacement, repeated integration by parts, Cauchy–Schwarz, and Lemma 4."
+        ],
+        "inference": [
+          "Smooth localization and polar subtraction are correctly identified as the mechanism enabling the reverse-direction estimate."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The spontaneous claim that the dyadic source mean square is recovered ‘from transform mean squares’ is too cleanly bidirectional."
+        ],
+        "context_or_ocr_risk": [
+          "Comparison signs, powers, contour placement, and derivative notation are severely damaged, so no exact exponent should be reconstructed."
+        ],
+        "missed_mechanism": [
+          "The reverse estimate retains an additive source-side term involving a logarithmic factor and a local integral of |f|; it is not control by the transform mean square alone."
+        ],
+        "revision_instructions": [
+          "Qualify both the spontaneous and directed descriptions of the reverse transfer to state that Lemma 5 bounds the dyadic source L² quantity by a transform-mean-square contribution together with an additive local |f|/polar term, under the stated smoothness, growth, and pole hypotheses."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly heuristic: it uses the conjectured pointwise control to truncate and then performs trivial supremum extraction; it is not a proof of the lower bound.",
+      "line_end": 1648,
+      "line_start": 1606,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The supremum range, phase constant, spectral localization, nested integral, and final exponent are degraded. Exact formulation (7.8) and every heuristic transition require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking k=l=2 in the transform factorization and isolating the discrete spectral contribution turns the known eighth-moment lower scale into a lower bound for a supremum of the same short oscillatory Hecke sums. After truncation and Stirling analysis, this argues that Conjecture 3 would be essentially optimal.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The eighth moment heuristically forces Conjecture 3’s square-root scale",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u26.txt",
+      "unit_bytes": 2328,
+      "unit_id": "openalex_w1981597330_v2_u26",
+      "unit_sha256": "301aec841c69d6c5ee4c35bf7ba42eafee4dbd7ec1c125e9e87db9cc48b642be",
+      "unit_type": "heuristic-optimality-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u26.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1598,
+          "line_end": 1605,
+          "text": "large c,\n                                 1\n(7.7)             Zm (s) =                  Zl (w)Zk (s + 1 − w) dw.\n                                2πi\n                                      (c)\n\nThus (7.7) is a sort of a recurrent relation that permits one to deduce infor-\nmation on Zm (s) from Zk (s) and Zl (s) if m = k + l.\n",
+          "sha256": "b92acc5e8c322ff2ec8022b68b229be8de2dab1bae56e4a851016d032b7a7636"
+        },
+        "after": {
+          "line_start": 1649,
+          "line_end": 1656,
+          "text": "\n\n                                       References\n\n\n [1]   J.-M. Deshouillers and H. Iwaniec, Power mean values of the Riemann zeta-func-\n       tion, Mathematika 29 (1982), 202–212.\n [2]   A. Ivić, The Riemann Zeta-Function, Wiley, New York, 1985.\n",
+          "sha256": "95155cbd4e1e9766c2812d9716d0a8c6814635f8e05889151402a854b3cbf509"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General functions Z_k(s)",
+            "line_end": 1650,
+            "line_start": 1495,
+            "mathematical_role": "Recasts moment bounds as analytic-continuation statements, gives a convolution recurrence, and uses the framework to argue heuristic optimality of the spectral conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1648,
+          "line_start": 1606,
+          "title": "The eighth moment heuristically forces Conjecture 3’s square-root scale",
+          "unit_id": "openalex_w1981597330_v2_u26",
+          "unit_type": "heuristic-optimality-test",
+          "why_material": "Taking k=l=2 in the transform factorization and isolating the discrete spectral contribution turns the known eighth-moment lower scale into a lower bound for a supremum of the same short oscillatory Hecke sums. After truncation and Stirling analysis, this argues that Conjecture 3 would be essentially optimal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly heuristic: it uses the conjectured pointwise control to truncate and then performs trivial supremum extraction; it is not a proof of the lower bound.",
+          "representation_dependency": "The supremum range, phase constant, spectral localization, nested integral, and final exponent are degraded. Exact formulation (7.8) and every heuristic transition require PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1605,
+            "line_start": 1565,
+            "title": "Products of zeta moments induce a convolution recurrence among Z_k",
+            "unit_id": "openalex_w1981597330_v2_u25",
+            "unit_type": "recursive-transform-calculus",
+            "why_material": "Double Mellin inversion expresses a 2(k+l)-th moment through Z_k and Z_l with frequency coupling, while the modified-transform convolution lemma gives a direct recurrence Z_{k+l} as a vertical convolution. This suggests building higher-moment information compositionally from lower transforms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1650,
+              "line_start": 1649,
+              "reason": "Whitespace before the bibliography."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1981597330_v2_u26",
+        "spontaneous": {
+          "unit_id": "openalex_w1981597330_v2_u26",
+          "spontaneous_reading": "The unit uses an eighth-moment lower scale as a stress test for the conjectured spectral cancellation scale. With m=4 and k=l=2, the Mellin factorization is localized to the discrete spectrum and to |t+κ_j|≤t^ε. After conjectural truncation, Stirling analysis of the kernel, and division into unit spectral blocks, the existing moment mass must appear in a large short oscillatory Hecke sum. This makes the proposed square-root scale look essentially sharp, but only heuristically."
+        },
+        "directed": {
+          "unit_id": "openalex_w1981597330_v2_u26",
+          "source_grounded_mathematics": "The source substitutes m=4, k=l=2 into (7.6), starting from the recorded T log^{16}T eighth-moment scale. Repeated integration by parts truncates the s-integral at |Im s|=T^{1+δ} with c=1/2+ε and localizes the cited discrete-spectral contribution to |t+κ_j|≤t^ε. Assuming Conjecture 3 and its heuristic implication of Conjecture 2, it further truncates at |t|=T^{1−δ}; (5.14), Stirling's formula, spectral blocks K−1≤κ_j≤K+1, and supremum extraction then lead to the expected T^{1/2−ε} lower scale in (7.8).",
+          "conceptual_reading": "This is an optimality diagnostic rather than a derivation of the conjecture. A global moment known to carry substantial mass is routed through the transform formula into localized spectral sums; if every such block were materially smaller than the conjectured scale, the representation could not account for that mass under the stated heuristic reductions.",
+          "representation_or_bridge": "The bridge runs from the smoothed eighth moment through Z_2 on a Mellin line to a discrete spectral sum weighted by α_jH_j^3(1/2) and a kernel R_1. Frequency matching t≈−κ_j, Stirling asymptotics, and unit-width κ_j blocks convert the integral representation into a supremum over short oscillatory spectral sums.",
+          "boundary_or_failure": "The argument explicitly assumes Conjecture 3, uses a heuristic implication to Conjecture 2, and treats truncation, spectral extraction, interchange, and final estimation heuristically. It therefore does not prove (7.8) or Conjecture 3; it only argues that the conjectured cancellation scale would be essentially optimal if these steps are valid.",
+          "uncertainty": "Formula extraction degrades the exact supremum range, phase constant, spectral notation, kernel formatting, comparison signs, and some exponents. The intended square-root lower scale and the heuristic chain are supported by the unit and packet, but the exact statement of (7.8) and every transition require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1981597330_v2_u26",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly sets m=4 and k=l=2 in (7.6), invokes the T log^16 T eighth-moment scale, truncates the s-integral at T^(1+delta), imposes |t+kappa_j|<=t^epsilon on the cited discrete-spectral terms, and then conjecturally truncates t at T^(1-delta).",
+          "The use of (5.14), Stirling asymptotics, unit-width spectral blocks, interchange, supremum extraction, and trivial estimation is stated in the span as the route to (7.8).",
+          "The candidate correctly treats the chain as an optimality heuristic conditional on Conjecture 3 and its heuristic implication of Conjecture 2, not as a proof of (7.8) or Conjecture 3."
+        ],
+        "inference": [
+          "Interpreting the argument as routing global moment mass into a large localized spectral block is a faithful conceptual compression of the displayed inequality and supremum step, provided all of the source's heuristic reductions remain explicit."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says that 'the Mellin factorization is localized to the discrete spectrum,' but the span only selects 'the relevant portion (coming from the discrete spectrum in Z_2^1(s))'; it does not say the whole factorization or w-integral is discrete-spectral."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The extraction degrades the comparison sign in (7.8), the exact phase and supremum formatting, superscripts, and parts of (7.9). The candidate properly reserves these details for PDF verification and should not sharpen them further."
+        ],
+        "missed_mechanism": [
+          "The spontaneous summary loses the distinction between isolating one relevant discrete-spectral contribution and localizing the entire Mellin representation."
+        ],
+        "revision_instructions": [
+          "Replace the broad spontaneous claim about localization of 'the Mellin factorization' with a bounded statement that the heuristic isolates the relevant discrete-spectral contribution in Z_2^1(s), whose terms are frequency-matched by |t+kappa_j|<=t^epsilon; leave the rest of the candidate unchanged."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a6aa01ce5a0cb8bfab65d48cccaec8bc74b8f914013f04998b3d07ac13956397"
+}

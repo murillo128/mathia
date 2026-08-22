@@ -1,0 +1,502 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1977375336_da4d879d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1977375336",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes de Bruijn-Newman and Li material in one column and the proposed experiment plus Chebyshev/Mertens explicit-formula examples in the other; the wider range is required because the normalized reading order interleaves the columns.",
+      "line_end": 190,
+      "line_start": 120,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several displayed formulas are column-interleaved and OCR-fragmented, although the conceptual comparison and slow-convergence warning are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-boundary criteria motivate a dual-representation falsification test",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u01.txt",
+      "unit_bytes": 6185,
+      "unit_id": "full_openalex_w1977375336_v2_u01",
+      "unit_sha256": "ab359f8816ba675db2db7859c8e818575fac2b1d9e2ada60fe7e641b8957e140",
+      "unit_type": "equivalent-criteria and explicit-formula motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 112,
+          "line_end": 119,
+          "text": "                                      1\n                           |M (x)| < x 2                  (4)       of ζ(s) and second using the explicit formula involving all\nagain the RH would follow. However, in 1985 A. Odlyzko              ρl . Despite some estimation presented in Sect. 3 indicating\nand H. te Riele [14] disproved the Mertens conjecture, again        that the discrepancy could be found merely at much higher\nnot directly, but later it was shown by J. Pintz [15] that          than a thousand decimal places we performed the calcula-\nthe first counterexample appears below exp(3.21 × 1064 ).           tions in an optimistic hope that we will find the discrepancy\nThe upper bound has since been lowered to exp(1.59×1040 )           between these two numbers, paraphrasing the sentence of\n[16].                                                               Turing. There is a lot of number theoretic functions often\n",
+          "sha256": "fb41d719a5816913ba6472114dfbb5c98ee99d98810aeeea5d2e279a741ab4e6"
+        },
+        "after": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "\n\n\n  II. THE BÁEZ-DUARTE CRITERION FOR THE\n            RIEMANN HYPOTHESIS\n\n    We begin by recalling the following representation of\nthe ζ(s) function valid on the whole complex plane without\n",
+          "sha256": "52aa63625e7d47e8a15dbc0946bce7a588760866e1097a3f11106760ed01548d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 193,
+            "line_start": 36,
+            "mathematical_role": "Frames computer refutation, surveys related equivalent or stronger criteria and counterexamples, and motivates comparing a generic formula with a zeros-based explicit formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 190,
+          "line_start": 120,
+          "title": "Near-boundary criteria motivate a dual-representation falsification test",
+          "unit_id": "full_openalex_w1977375336_v2_u01",
+          "unit_type": "equivalent-criteria and explicit-formula motivation",
+          "why_material": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes de Bruijn-Newman and Li material in one column and the proposed experiment plus Chebyshev/Mertens explicit-formula examples in the other; the wider range is required because the normalized reading order interleaves the columns.",
+          "representation_dependency": "High: several displayed formulas are column-interleaved and OCR-fragmented, although the conceptual comparison and slow-convergence warning are explicit in prose.",
+          "unit_id": "full_openalex_w1977375336_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 119,
+            "line_start": 38,
+            "title": "Computer refutation through finitely detectable failure",
+            "unit_id": "full_openalex_w1977375336_u02",
+            "unit_type": "computer-refutation framing",
+            "why_material": "Distinguishes computer proof from the plausibility of numerical refutation, then uses Polya, Mertens, Lagarias, and Robin-type examples to show how one counterexample or a near-violated equivalent condition can organize a search for failure."
+          },
+          {
+            "line_end": 235,
+            "line_start": 197,
+            "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+            "unit_id": "full_openalex_w1977375336_v2_u02",
+            "unit_type": "representation-to-equivalent-criterion derivation",
+            "why_material": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A quantity computed by a finite generic formula that implicitly contains all zero contributions can be compared with a zero-explicit formula truncated at certified height; after numerical error is excluded, a discrepancy could reveal a contribution missing from the explicit truncation.",
+            "limit": "The source does not establish that a feasible index is sensitive to such a zero, and an observed mismatch is uninterpretable until both routes, especially zeta derivatives, are independently certified.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u01",
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u05"
+            ],
+            "title": "Two-representation falsification with asymmetric completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 196,
+              "line_start": 191,
+              "reason": "Whitespace and Section II heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1977375336_v2_u01",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1977375336_v2_u01",
+          "spontaneous_reading": "The mathematical engine is an asymmetric comparison: a finite, zero-nonexplicit computation can implicitly contain every zero contribution, whereas a zero-explicit computation exposes those contributions but must truncate them. A certified disagreement could therefore be informative, while agreement cannot certify RH."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1977375336_v2_u01",
+          "source_grounded_mathematics": "The span places the de Bruijn-Newman and Li criteria beside zero-explicit formulas for the Chebyshev and Mertens functions, defines c_k by a finite alternating binomial sum involving reciprocal zeta values, notes relevant decay bounds, and reports agreement below 10^-996 between generic and 2600-zero computations at k=100000.",
+          "conceptual_reading": "The source reframes numerical refutation as comparison of two semantically equivalent representations with unequal access to the spectrum of zeros. The useful signal is not proximity to a boundary by itself but a discrepancy that survives independent numerical certification.",
+          "representation_or_bridge": "The bridge is from elementary or finite expressions to explicit formulas indexed by zeta zeros. The generic c_k route hides all zero effects inside zeta values, while the explicit route makes individual zero contributions inspectable and truncatable; the Chebyshev example shows that this exposure can come with very slow convergence.",
+          "boundary_or_failure": "A truncated explicit sum can disagree because of its tail, inaccurate zero or derivative data, or arithmetic error, not because RH fails. Conversely, even extreme agreement is only a finite computational fact, and the span supplies no feasible sensitivity bound for a hypothetical high off-line zero.",
+          "uncertainty": "Several displayed formulas are interleaved across columns and OCR-fragmented. The dual-representation logic and reported precision are clear, but exact formula-level reuse requires scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1977375336_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the de Bruijn–Newman and Li criteria, presents zero-explicit Chebyshev and Mertens formulas, and gives a concrete slow-convergence example.",
+          "It defines the finite c_k formula, says that formula contains contributions from all zeta zeros, and reports sub-10^-996 agreement between generic and 2600-zero computations."
+        ],
+        "inference": [
+          "Reading the finite c_k route as zero-nonexplicit but implicitly all-zero, and the explicit route as inspectable but truncated, is a reasonable synthesis of the span."
+        ],
+        "unsupported_or_imported": [
+          "The claims that agreement cannot certify RH and that disagreement can arise from tail, derivative, zero-data, or arithmetic errors come from later units, not this frozen span.",
+          "The absence of a feasible sensitivity bound for a hypothetical high off-line zero is also imported from later mechanism analysis."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'semantically equivalent representations with unequal access to the spectrum' is stylized, but it remains anchored by the two computations and all-zero statement."
+        ],
+        "context_or_ocr_risk": [
+          "Two-column interleaving makes the displayed criteria and explicit formulas unsafe for exact transcription without scan verification."
+        ],
+        "missed_mechanism": [
+          "The very slow convergence of the Chebyshev zero sum is the span's concrete warning about the practical cost of exposure and should be tied directly to the comparison."
+        ],
+        "revision_instructions": [
+          "Keep the asymmetric dual-representation reading and slow-convergence constraint, but remove the later-unit claims about derivative diagnosis, arithmetic certification, agreement's RH meaning, and high-zero sensitivity bounds."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read the coefficient formulas as checked text-layer mathematics; line 235 is the frozen criterion statement and the following carried unit supplies its zero decomposition.",
+      "line_end": 235,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: gamma, Bernoulli, and binomial notation is recoverable but visually fragmented by OCR and two-column ordering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u02.txt",
+      "unit_bytes": 2845,
+      "unit_id": "full_openalex_w1977375336_v2_u02",
+      "unit_sha256": "4c4b25dd7ce1334556c625a459c7e9b4608335e43214d8bffe60a33a7ebda79a",
+      "unit_type": "representation-to-equivalent-criterion derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "1000 significant digits. This paper can be regarded as a con-\ntinuation of our investigation reported in [28].\n\n\n\n  II. THE BÁEZ-DUARTE CRITERION FOR THE\n            RIEMANN HYPOTHESIS\n\n",
+          "sha256": "7af9cb272c549bd2bfb72262afb65cce29fbab475550cdd400486021b8f5a4d0"
+        },
+        "after": {
+          "line_start": 236,
+          "line_end": 243,
+          "text": "                                                                                                          22n+1 π 2n\n\n<!-- source-page: 4 -->\n\n42                                                           M. Wolf\n\n\nMaślanka in [33] was able to give the closed expression for      Now we assume the RH: ρl = 12 + iγl . Then we get for\n",
+          "sha256": "7c083178c4ea607b38f6ae01eb292ab6ef1c08b23f0c8642d300a373257688ae"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Baez-Duarte criterion for the Riemann Hypothesis",
+            "line_end": 320,
+            "line_start": 194,
+            "mathematical_role": "Derives the sequence criterion from Maslanka's zeta representation, decomposes the sequence into trivial-zero trend and nontrivial-zero oscillation, and rewrites the latter for asymptotic and numerical use."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 235,
+          "line_start": 197,
+          "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+          "unit_id": "full_openalex_w1977375336_v2_u02",
+          "unit_type": "representation-to-equivalent-criterion derivation",
+          "why_material": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read the coefficient formulas as checked text-layer mathematics; line 235 is the frozen criterion statement and the following carried unit supplies its zero decomposition.",
+          "representation_dependency": "High: gamma, Bernoulli, and binomial notation is recoverable but visually fragmented by OCR and two-column ordering.",
+          "unit_id": "full_openalex_w1977375336_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 120,
+            "title": "Near-boundary criteria motivate a dual-representation falsification test",
+            "unit_id": "full_openalex_w1977375336_v2_u01",
+            "unit_type": "equivalent-criteria and explicit-formula motivation",
+            "why_material": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal."
+          },
+          {
+            "line_end": 266,
+            "line_start": 231,
+            "title": "Trivial-zero trend versus nontrivial-zero oscillation",
+            "unit_id": "full_openalex_w1977375336_u01",
+            "unit_type": "Baez-Duarte oscillatory decomposition",
+            "why_material": "Separates c_k into a rapidly decreasing trend from trivial zeros and an oscillatory contribution from nontrivial zeros, showing that the k^{-3/4} behavior relevant to RH is carried by the oscillatory part rather than the k^{-2} trend."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 196,
+              "line_start": 191,
+              "reason": "Whitespace and Section II heading."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1977375336_v2_u02",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1977375336_v2_u02",
+          "spontaneous_reading": "A globally convergent gamma-weighted representation of zeta is compressed into a coefficient sequence whose decay becomes an equivalent RH criterion. The important move is changing an analytic-continuation statement into asymptotic control of finite-difference-like coefficients."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1977375336_v2_u02",
+          "source_grounded_mathematics": "Maslanka's expansion represents zeta away from its pole using gamma factors and coefficients A_k given by alternating binomial combinations of odd-integer zeta data, equivalently Bernoulli data. The source states that RH is equivalent to c_k=O(k^(-3/4+epsilon)) for every positive epsilon and introduces c_k as a trivial-zero trend plus a nontrivial-zero oscillation.",
+          "conceptual_reading": "The representation converts global analytic structure into the decay profile of a discrete sequence. This isolates an observable whose exponent, rather than individual computed values, carries the conjectural content.",
+          "representation_or_bridge": "Gamma/Pochhammer basis functions provide analytic continuation, while alternating binomial coefficients form the discrete bridge to c_k. Splitting c_k into trend and oscillation prepares a second bridge from coefficient asymptotics to the locations of trivial and nontrivial zeros.",
+          "boundary_or_failure": "The equivalence uses the epsilon-weakened exponent; the stronger O(k^-3/4) statement in the nearby material has an additional simple-zero consequence and should not be conflated with the equivalence. The span states cited results rather than deriving their full hypotheses or proof.",
+          "uncertainty": "Gamma arguments, Bernoulli factors, and binomial layout are OCR-sensitive. The expansion-to-decay mechanism and criterion exponent are readable, but exact transcription should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1977375336_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives Maslanka's gamma-weighted zeta expansion, alternating-binomial A_k coefficients in zeta/Bernoulli forms, its uniform convergence, and the cited equivalence c_k=O(k^(-3/4+epsilon)) for every epsilon>0.",
+          "It also states the trend/nontrivial-zero oscillation split for c_k."
+        ],
+        "inference": [
+          "Describing the move as converting global analytic structure into a discrete decay observable is a useful interpretation, but the span cites rather than derives the equivalence."
+        ],
+        "unsupported_or_imported": [
+          "Calling c_k itself 'finite-difference-like' and saying the alternating-binomial A_k construction directly forms the bridge to c_k exceed the displayed connection in this span.",
+          "The stronger O(k^-3/4) statement and its simple-zero consequence are outside the exact artifact even though the candidate labels them as nearby material."
+        ],
+        "paraphrase_or_style_risk": [
+          "The conceptual reading performs a real representation-to-asymptotic operation and is not merely a restatement."
+        ],
+        "context_or_ocr_risk": [
+          "Gamma arguments, binomial signs, Bernoulli factors, and the interleaved right-column decomposition require scan verification for formula-level reuse."
+        ],
+        "missed_mechanism": [
+          "Uniform convergence is the stated support for the analytic-continuation representation, whereas the passage from that representation to the c_k criterion remains an attributed result with its proof absent."
+        ],
+        "revision_instructions": [
+          "Retain the representation-to-decay interpretation, but distinguish the displayed A_k construction from the cited c_k criterion and delete the out-of-span stronger-decay/simple-zero comparison."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two columns carry parallel derivation stages, so the full span is needed to connect formulas (20)-(30) and the definitions of c_k^g and c_k^e.",
+      "line_end": 320,
+      "line_start": 267,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact residue, gamma, real-part, and summation notation should be scan-verified before formula-level reuse; the transformation logic is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the nontrivial-zero contribution from residues through Pochhammer and gamma functions, pairs conjugate zeros, uses the Pochhammer asymptotic, and under RH exposes exponential gamma decay and first-zero dominance; it also defines the generic and explicit computational routes compared later.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues and Pochhammer asymptotics turn zero data into a fast oscillatory formula",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u03.txt",
+      "unit_bytes": 5181,
+      "unit_id": "full_openalex_w1977375336_v2_u03",
+      "unit_sha256": "c250440a2084444ff4587c9430415a9cfbd0d61b76ea3b7855179acf9ef8cdb5",
+      "unit_type": "explicit-formula representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 259,
+          "line_end": 266,
+          "text": "lation to show (see [28]) that for large k                        assuming RH we obtain for large γl > 0:\n                            (2π)2 1                                                                √           \u0010 γ \u0011 41\n                                                                                \u0012            \u0013\n                                                                                   3     i                         l\n                c̄k = −               + O(k −3 ),         (19)               Γ        ∓ γl ≈ 2πe−πγl /4                 ,     (29)\n                            2ζ(3) k 2                                              4 2                           2\nthus the dependence ck = O(k −3/4 ) in (13) is linked to the      hence we get exponential decrease of summands in the sum\noscillating part c̃k .                                            (27) over nontrivial zeros giving c̃k and (27) is very fast con-\n",
+          "sha256": "f0ec7a321eff78abb3b1d137d305fc21a1025a40e2bf94e415574f7be4b6b4e6"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "    Báez-Duarte proves in [32, Lemma 2.2] that                               OF THE RIEMANN HYPOTHESIS\n                                               1\n                  lim Pk (s)k s =\n                                                                                                                              3\n                                                          (25)        The condition (15) means that the combination k 4 ck\n                 k→∞                        Γ(1 − s)\n                                                                  should be contained between two paralel lines ±C for all\nthus for large k we can replace k + 1 by k and transform (22)     k, where C is the constant hidden in big-O in (15). The vio-\n",
+          "sha256": "e94510c73b148a5f03d3e57f8769c28404ad5f3f6f10a3548f599ccab45c54ad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Baez-Duarte criterion for the Riemann Hypothesis",
+            "line_end": 320,
+            "line_start": 194,
+            "mathematical_role": "Derives the sequence criterion from Maslanka's zeta representation, decomposes the sequence into trivial-zero trend and nontrivial-zero oscillation, and rewrites the latter for asymptotic and numerical use."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 267,
+          "title": "Residues and Pochhammer asymptotics turn zero data into a fast oscillatory formula",
+          "unit_id": "full_openalex_w1977375336_v2_u03",
+          "unit_type": "explicit-formula representation change",
+          "why_material": "Rewrites the nontrivial-zero contribution from residues through Pochhammer and gamma functions, pairs conjugate zeros, uses the Pochhammer asymptotic, and under RH exposes exponential gamma decay and first-zero dominance; it also defines the generic and explicit computational routes compared later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two columns carry parallel derivation stages, so the full span is needed to connect formulas (20)-(30) and the definitions of c_k^g and c_k^e.",
+          "representation_dependency": "High: exact residue, gamma, real-part, and summation notation should be scan-verified before formula-level reuse; the transformation logic is recoverable from prose.",
+          "unit_id": "full_openalex_w1977375336_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 266,
+            "line_start": 231,
+            "title": "Trivial-zero trend versus nontrivial-zero oscillation",
+            "unit_id": "full_openalex_w1977375336_u01",
+            "unit_type": "Baez-Duarte oscillatory decomposition",
+            "why_material": "Separates c_k into a rapidly decreasing trend from trivial zeros and an oscillatory contribution from nontrivial zeros, showing that the k^{-3/4} behavior relevant to RH is carried by the oscillatory part rather than the k^{-2} trend."
+          },
+          {
+            "line_end": 345,
+            "line_start": 321,
+            "title": "RH failure becomes escape of the rescaled sequence from a fixed strip",
+            "unit_id": "full_openalex_w1977375336_v2_u04",
+            "unit_type": "violation criterion",
+            "why_material": "Turns the asymptotic criterion into a geometric diagnostic: if RH holds, k^{3/4}c_k remains bounded, while a violating contribution must eventually force escape; it also fixes the simple-zero setting used for the subsequent mechanism analysis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A quantity computed by a finite generic formula that implicitly contains all zero contributions can be compared with a zero-explicit formula truncated at certified height; after numerical error is excluded, a discrepancy could reveal a contribution missing from the explicit truncation.",
+            "limit": "The source does not establish that a feasible index is sensitive to such a zero, and an observed mismatch is uninterpretable until both routes, especially zeta derivatives, are independently certified.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u01",
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u05"
+            ],
+            "title": "Two-representation falsification with asymmetric completeness"
+          },
+          {
+            "claim": "The same exponential decay that converts a desired decimal accuracy into a zero cutoff also predicts the improvement of partial explicit sums; departure from that prediction and a plateau localize the first inaccurate derivative value.",
+            "limit": "The first-discarded-term analogy is not presented as a rigorous bound, and exact use depends on formula and figure verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u06",
+              "full_openalex_w1977375336_v2_u08"
+            ],
+            "title": "Exponential tails as resource estimates and error diagnostics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1977375336_v2_u03",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1977375336_v2_u03",
+          "spontaneous_reading": "Residues turn the oscillatory coefficient into a sum of zero contributions, and the Pochhammer-to-gamma rewrite makes that sum computationally tractable. Pairing conjugate zeros and using large-k asymptotics exposes both the k-scale oscillation and exponential suppression with zero height."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1977375336_v2_u03",
+          "source_grounded_mathematics": "The source writes the nontrivial-zero part of c_k as a residue sum involving 1/(zeta'(rho) P_k(rho/2)), rewrites P_k through gamma functions, and pairs conjugate zeros into a real-part sum. Under the stated simple-zero and RH setting, it gives a rapidly convergent zero formula and a first-zero sinusoidal approximation, then names the generic values c_k^g and explicit values c_k^e.",
+          "conceptual_reading": "The residue representation decomposes one coefficient into spectral modes. Its phase records oscillation in log k, its power of k records the zero's real part, and its gamma weight controls how visible a zero is as its height grows.",
+          "representation_or_bridge": "P_k is the bridge object: its product form expresses the original residue formula, its gamma quotient accelerates evaluation, and its asymptotic converts zeros into explicit powers and phases of k. The labels c_k^g and c_k^e make the later two-route comparison precise.",
+          "boundary_or_failure": "The residue sum needs an appropriate summation order and the displayed simplification assumes simple zeros; the critical-line form and first-zero dominance additionally rely on RH-style placement. Replacing k+1 by k and discarding higher modes are large-k approximations, unsuitable for thousand-digit equality tests.",
+          "uncertainty": "The exact residue, gamma, and real-part notation is column-interleaved and OCR-sensitive. The transformation chain is clear, but constants and formula details require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1977375336_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span rewrites the oscillatory contribution as an ordered residue sum, assumes simple zeros for the 1/zeta'(rho) form, converts the Pochhammer product to gamma functions, pairs conjugates, and reports the gamma implementation as faster.",
+          "It conditionally states first-zero dominance, gives a log-k sinusoidal approximation, and defines the generic c_k^g and explicit c_k^e routes."
+        ],
+        "inference": [
+          "Treating the zero terms as spectral modes whose phase appears through log k is supported by the displayed critical-line formula and first-zero approximation."
+        ],
+        "unsupported_or_imported": [
+          "Exponential suppression as a function of zero height relies on the preceding gamma-asymptotic text outside this exact artifact.",
+          "The general claim that a zero's real part determines its k exponent and the warning about replacing k+1 by k belong to the following span, not this one."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'bridge object' language is somewhat templated, but the product, gamma quotient, computational comparison, and asymptotic role give it specific content."
+        ],
+        "context_or_ocr_risk": [
+          "Residue, conjugation, real-part, gamma, and summation notation are heavily interleaved and must not be reconstructed beyond the prose-supported transformation chain."
+        ],
+        "missed_mechanism": [
+          "The appropriate summation order is a material qualification on the residue formula; the candidate mentions it but should keep it prominent when compressing the mechanism."
+        ],
+        "revision_instructions": [
+          "Confine the interpretation to the ordered residue/gamma/conjugate-pair transformation and the displayed critical-line phase; remove the preceding-span exponential-height asymptotic and following-span exponent and k+1 claims."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8c21134f3d65c6a3f011ebb74cdaed1e123906f86f375b4a272b522ce3a7c881"
+}

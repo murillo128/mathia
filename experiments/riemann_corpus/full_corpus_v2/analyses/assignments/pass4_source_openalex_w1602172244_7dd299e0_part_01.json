@@ -1,0 +1,866 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1602172244_7dd299e0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1602172244",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cited preservation result and earlier three-term proof are background, not proved here; no claim concerns zeros of the Riemann zeta function.",
+      "line_end": 140,
+      "line_start": 99,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral normalization, rising factorial, the half shift, and coefficient-positivity expansion contain damaged fractions and require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The linear transform maps monomials to rising-factorial polynomials and has an integral representation; symmetric input gives the functional equation T[g](s)=T[g](1−s). The source defines a polynomial ‘Riemann hypothesis’ as all zeros lying on Re(s)=1/2 and cites a prior preservation theorem when the input already has that property.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A symmetry-preserving polynomial transform creates a critical-line zero problem",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u01.txt",
+      "unit_bytes": 2677,
+      "unit_id": "openalex_w1602172244_v2_u01",
+      "unit_sha256": "07ce02d78b8f73663a4c8f092b498b341c815c1b06020a47a0eac873187f5ba1",
+      "unit_type": "polynomial-rh-analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 91,
+          "line_end": 98,
+          "text": "\n14 APPENDIX II (Renormalized 4-term recursion)                                                         50\n\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                                  2\n\n",
+          "sha256": "c19e0facbfddc6336b8446cb79f57e15f6831b35f48d4f81fde2fa0afa3b8d10"
+        },
+        "after": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "    After having disposed of what might be termed The Linear Case by these alternative tech-\nniques, it seemed natural to consider the Quadratic Case; i. e., to consider the zeros of\n\n                                     Pn (s, r) = T [(x(x − 1) + r)n ](s),                      (3)\n\nthe electronic journal of combinatorics 8 (2001), #R36                                           3\n\nfor values of the parameter r satisfying r ≥ 14 . Here again Redmond’s result shows that the\n",
+          "sha256": "4a7bfa4dd021e9eb915c8d88ddbb4597892598e4497034270b56682ff24a8426"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 251,
+            "line_start": 99,
+            "mathematical_role": "Defines the polynomial transform and polynomial-RH analogy, states the quadratic conjectural program, explains renormalization, and maps the proved/conjectural combinatorial equality chain."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 140,
+          "line_start": 99,
+          "title": "A symmetry-preserving polynomial transform creates a critical-line zero problem",
+          "unit_id": "openalex_w1602172244_v2_u01",
+          "unit_type": "polynomial-rh-analogy",
+          "why_material": "The linear transform maps monomials to rising-factorial polynomials and has an integral representation; symmetric input gives the functional equation T[g](s)=T[g](1−s). The source defines a polynomial ‘Riemann hypothesis’ as all zeros lying on Re(s)=1/2 and cites a prior preservation theorem when the input already has that property."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cited preservation result and earlier three-term proof are background, not proved here; no claim concerns zeros of the Riemann zeta function.",
+          "representation_dependency": "Integral normalization, rising factorial, the half shift, and coefficient-positivity expansion contain damaged fractions and require PDF verification.",
+          "unit_id": "openalex_w1602172244_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 188,
+            "line_start": 141,
+            "title": "The quadratic transform leads to a four-term recurrence and an unproved interlacing RH analogue",
+            "unit_id": "openalex_w1602172244_v2_u02",
+            "unit_type": "conjectural-program",
+            "why_material": "For powers of x(x−1)+r, the transformed polynomial becomes a real polynomial in u=−t² on the critical line. Numerical evidence suggests negative real zeros and interlacing, but the four-term recurrence lacks standard orthogonality. An asymptotic renormalization compresses n,r dependence to one parameter C and motivates a threshold conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Functional equations about s↔1−s motivate asking whether polynomial zeros lie on Re(s)=1/2; variable changes turn this into real-root/interlacing problems for recurrence polynomials, with threshold conjectures and one proved normalized case.",
+            "limit": "None of these results bears directly on the truth of the Riemann hypothesis for ζ, and several advertised analogues remain numerical or conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u01",
+              "openalex_w1602172244_v2_u02",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u08",
+              "openalex_w1602172244_v2_u27",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "Polynomial RH terminology names a finite zero analogy, not zeta evidence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1602172244_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1602172244_v2_u01",
+          "spontaneous_reading": "The transform T is doing more than changing basis: it transports the reflection x↦1−x into the functional symmetry s↦1−s, turning symmetry of the input into a geometric question about output zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1602172244_v2_u01",
+          "source_grounded_mathematics": "T sends x^n to a normalized rising-factorial polynomial and has an integral representation; when g(x)=g(1−x), T[g](s)=T[g](1−s). The source calls confinement of the zeros to Re(s)=1/2 a polynomial Riemann hypothesis and cites preservation and linear-family results.",
+          "conceptual_reading": "The transform makes a hidden involution visible as a functional equation, after which zero location becomes the structural invariant of interest.",
+          "representation_or_bridge": "The rising-factorial basis and integral kernel bridge real-polynomial symmetry to complex zero geometry; the shift s=1/2+w later converts the critical line into a real-root problem.",
+          "boundary_or_failure": "The preservation theorem and the earlier three-term proof are cited background, and the polynomial terminology supplies no evidence about zeros of the Riemann zeta function.",
+          "uncertainty": "Fractions in the integral, half shift, and coefficient expansion are damaged in extraction and should not be reconstructed from this span."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1602172244_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines T on monomials by normalized rising factorials and gives an integral representation.",
+          "It states that symmetric input g(x)=g(1-x) yields T[g](s)=T[g](1-s), defines the polynomial RH by zero confinement to Re(s)=1/2, and cites preservation and linear-family results."
+        ],
+        "inference": [
+          "Describing the implication for symmetric g as making an input involution visible in the output functional equation is a reasonable conceptual gloss."
+        ],
+        "unsupported_or_imported": [
+          "Saying T transports the reflection x↦1-x suggests a general intertwining identity, whereas the span states only the consequence for invariant inputs.",
+          "The functional equation does not by itself turn zero location into a preserved invariant; critical-line confinement is an additional property."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrases 'hidden involution visible' and 'structural invariant of interest' are generic unless tied to the exact conditional symmetry and separate zero condition."
+        ],
+        "context_or_ocr_risk": [
+          "The integral exponents, the 1/2 shift, and displayed coefficient expansion are visibly damaged; the candidate appropriately avoids reconstructing them."
+        ],
+        "missed_mechanism": [
+          "The revision should explicitly separate three layers: symmetry of g, the resulting functional equation, and the separately requested zero-location property."
+        ],
+        "revision_instructions": [
+          "Replace the broad transport/intertwining wording with the exact conditional statement for symmetric inputs.",
+          "State that critical-line zero confinement is an additional RH analogue, not a consequence of the functional equation, while retaining the cited-status and OCR cautions."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The quadratic polynomial RH, coefficient positivity, and higher-order extensions are explicitly unproved; only one half of the renormalized threshold conjecture is proved later.",
+      "line_end": 188,
+      "line_start": 141,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The r≥1/4 range, u substitution, coefficient expansion, and C relation are formula-sensitive; verify them from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For powers of x(x−1)+r, the transformed polynomial becomes a real polynomial in u=−t² on the critical line. Numerical evidence suggests negative real zeros and interlacing, but the four-term recurrence lacks standard orthogonality. An asymptotic renormalization compresses n,r dependence to one parameter C and motivates a threshold conjecture.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The quadratic transform leads to a four-term recurrence and an unproved interlacing RH analogue",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u02.txt",
+      "unit_bytes": 3517,
+      "unit_id": "openalex_w1602172244_v2_u02",
+      "unit_sha256": "fbb45724842024027ddff76ebcaff8a133764287b1bb0499ad86f405ff71f88d",
+      "unit_type": "conjectural-program",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 133,
+          "line_end": 140,
+          "text": "\ncan be shown to have the positivity property that all the coefficients cij are non-negative, which\ncan be used [4] to show that the w-zeros of T [(x + r)n ](w + 12 ) are negative when r > 0.\n    Using this positivity result and other results, together with known parts of the standard the-\nory of 3-term polynomial recursions, Eğecioğlu and Ryavec [4] were able to show in a completely\ndifferent way that for all n > 0 and all real values of the parameter r, the polynomials given\nin (2) satisfy a Riemann hypothesis. The proof techniques here have implications that are the\nsubject matter of this paper.\n",
+          "sha256": "2dd12f60c2a539cb318103452bcec56f71acaf1a5757139c55a37c0b72ccdadc"
+        },
+        "after": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "    In a strange twist of fortune, certain determinants ∆n which are naturally attached to the\n3-Conjecture (and which will appear in section 5), open up some very unexpected connections\nto Alternating Sign Matrices (ASM’s). In fact when the sequence of integers 1, 3, 26, 646,\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                             4\n\n45885,· · ·, first appeared on the screen, our amazement was total. From that point on everything\n",
+          "sha256": "28f8dbad32cdc98ab4ebcdd11df7d978e2c8a7256325475d8d0c873698256584"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 251,
+            "line_start": 99,
+            "mathematical_role": "Defines the polynomial transform and polynomial-RH analogy, states the quadratic conjectural program, explains renormalization, and maps the proved/conjectural combinatorial equality chain."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 188,
+          "line_start": 141,
+          "title": "The quadratic transform leads to a four-term recurrence and an unproved interlacing RH analogue",
+          "unit_id": "openalex_w1602172244_v2_u02",
+          "unit_type": "conjectural-program",
+          "why_material": "For powers of x(x−1)+r, the transformed polynomial becomes a real polynomial in u=−t² on the critical line. Numerical evidence suggests negative real zeros and interlacing, but the four-term recurrence lacks standard orthogonality. An asymptotic renormalization compresses n,r dependence to one parameter C and motivates a threshold conjecture."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The quadratic polynomial RH, coefficient positivity, and higher-order extensions are explicitly unproved; only one half of the renormalized threshold conjecture is proved later.",
+          "representation_dependency": "The r≥1/4 range, u substitution, coefficient expansion, and C relation are formula-sensitive; verify them from the PDF.",
+          "unit_id": "openalex_w1602172244_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 140,
+            "line_start": 99,
+            "title": "A symmetry-preserving polynomial transform creates a critical-line zero problem",
+            "unit_id": "openalex_w1602172244_v2_u01",
+            "unit_type": "polynomial-rh-analogy",
+            "why_material": "The linear transform maps monomials to rising-factorial polynomials and has an integral representation; symmetric input gives the functional equation T[g](s)=T[g](1−s). The source defines a polynomial ‘Riemann hypothesis’ as all zeros lying on Re(s)=1/2 and cites a prior preservation theorem when the input already has that property."
+          },
+          {
+            "line_end": 249,
+            "line_start": 189,
+            "title": "One critical Hankel sequence links recurrences, integrals, determinants, ASMs, and two path models",
+            "unit_id": "openalex_w1602172244_v2_u03",
+            "unit_type": "equality-chain-roadmap",
+            "why_material": "The introduction isolates the sequence 1,3,26,646,45885 and states the later proved identities Δ=I=A=RR, V=O, and A=P. It also identifies a still-missing direct bijection between the osculating and non-intersecting path families as an alternative combinatorial proof of the vertically symmetric ASM formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Functional equations about s↔1−s motivate asking whether polynomial zeros lie on Re(s)=1/2; variable changes turn this into real-root/interlacing problems for recurrence polynomials, with threshold conjectures and one proved normalized case.",
+            "limit": "None of these results bears directly on the truth of the Riemann hypothesis for ζ, and several advertised analogues remain numerical or conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u01",
+              "openalex_w1602172244_v2_u02",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u08",
+              "openalex_w1602172244_v2_u27",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "Polynomial RH terminology names a finite zero analogy, not zeta evidence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1602172244_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w1602172244_v2_u02",
+          "spontaneous_reading": "Recentering at s=1/2 and replacing t^2 by −u translates critical-line zeros into negative real zeros, but the resulting four-term recurrence removes the orthogonality machinery that made the linear case tractable."
+        },
+        "directed": {
+          "unit_id": "openalex_w1602172244_v2_u02",
+          "source_grounded_mathematics": "For P_n(s,r)=T[(x(x−1)+r)^n](s), evaluation on s=1/2+it gives a real polynomial p_n(u,r) with u=−t^2. Numerical data suggest negative, interlacing u-zeros and coefficient positivity; renormalization compresses the n,r-dependent recurrence to a one-parameter recurrence with critical value C=3.",
+          "conceptual_reading": "A coordinate change exposes the zero-locus claim as real-rootedness, while renormalization seeks the minimal parameter controlling asymptotic recurrence behavior.",
+          "representation_or_bridge": "The chain P_n(s,r)→p_n(u,r)→q_n(x;C) bridges a critical-line analogy to recurrence theory and then to a threshold problem.",
+          "boundary_or_failure": "The quadratic real-root/interlacing and positivity assertions are unproved, standard three-term orthogonality does not extend, and only one half of the normalized threshold conjecture is proved later.",
+          "uncertainty": "The r range, u substitution, coefficient expansion, and relation between r and C contain formula-sensitive fractions requiring PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1602172244_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the quadratic family, recenters at s=1/2+it, introduces u=-t^2, and reports numerical negative interlacing u-zeros and coefficient positivity.",
+          "It explicitly says the quadratic assertion is unproved, identifies the loss of three-term orthogonality, and describes renormalization to a recurrence in the single parameter C with critical value 3."
+        ],
+        "inference": [
+          "Reading the coordinate changes as a bridge from a critical-line question to real-rooted recurrence questions is directly motivated by the construction."
+        ],
+        "unsupported_or_imported": [
+          "Calling C the 'minimal parameter' is stronger than the source, which says only that renormalization condenses the n,r-dependent recurrence to a simpler recurrence in one parameter."
+        ],
+        "paraphrase_or_style_risk": [
+          "The chain notation is useful, but 'minimal parameter controlling asymptotic recurrence behavior' turns a concrete reduction into an unproved optimality claim."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted 1/4 threshold appears as 14, and the u substitution, positivity expansion, and relation to C are formula-sensitive; the candidate flags this."
+        ],
+        "missed_mechanism": [
+          "The source characterizes renormalization as elementary transformations aimed at large-n behavior, not as a proof that no further parameterization is possible."
+        ],
+        "revision_instructions": [
+          "Replace 'minimal parameter' by 'single parameter retained by the renormalized recurrence.'",
+          "Keep numerical evidence, conjecture, and the later proved half explicitly distinct."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Finite determinant formulas and coefficients are computed; general coefficient nonnegativity, the t-statistic, and the initial ASM identification at this point are conjectural/data-driven. A product evaluation is proved later.",
+      "line_end": 1271,
+      "line_start": 1188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Determinant polynomials, degrees, and large coefficients are vulnerable to OCR/transcription errors; verify all data from the PDF or recompute.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At C=3 the moment Hankel determinants compute the striking ASM-number prefix. Explicit low-n polynomials Δ_n(3+t) have nonnegative coefficients even though Δ_n(C) does not; the authors conjecturally interpret t as a statistic on a larger object class.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical Hankel data match vertically symmetric ASM counts and suggest a positive t-statistic",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u13.txt",
+      "unit_bytes": 4378,
+      "unit_id": "openalex_w1602172244_v2_u13",
+      "unit_sha256": "959e76bb107d05e5265e2f1f0ed80e3e72ebaebb68869f0d9c1fe1b5f3782708",
+      "unit_type": "finite-computation-and-conjectural-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1180,
+          "line_end": 1187,
+          "text": "\n                              deg(µ2n (C)) = n,                           deg(µ2n+1 (C)) = n − 1.                                       (23)\n                                                                                  1  2n+1                                               \u0001\nFurthermore the coefficient of the leading term in µn (C) is the Catalan number 2n+1   n  for\n                                           2n+1\u0001\nµ2n (n > 0), and the binomial coefficient n+1 for µ2n+1 .\n\n\n",
+          "sha256": "62e195ac27b4550b2ede37731f771c66a2828d485520559b311c6f13233ac150"
+        },
+        "after": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "\n\n6    Positivity is Insufficient\nGiven the analogy with 3-term recursions, it is natural to conjecture that if the linear form L\nassociated with a 4-term recursion is positive then the zeros of the recursively defined polynomials\nare real and interleaved. In this section we include an argument that shows that this conjecture\nis false.\n    We start with the positive linear form and then generate the badly behaved 4-term recur-\n",
+          "sha256": "925f8e6357bc4078d90b1ad7bf3d58ab8b5c8fd10042c04afc22b540e2fb7280"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Very special Hankel determinants",
+            "line_end": 1273,
+            "line_start": 1188,
+            "mathematical_role": "Computes critical C=3 determinants, records finite agreement with vertically symmetric ASM numbers, and proposes positivity/statistic refinements in t."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1271,
+          "line_start": 1188,
+          "title": "Critical Hankel data match vertically symmetric ASM counts and suggest a positive t-statistic",
+          "unit_id": "openalex_w1602172244_v2_u13",
+          "unit_type": "finite-computation-and-conjectural-refinement",
+          "why_material": "At C=3 the moment Hankel determinants compute the striking ASM-number prefix. Explicit low-n polynomials Δ_n(3+t) have nonnegative coefficients even though Δ_n(C) does not; the authors conjecturally interpret t as a statistic on a larger object class."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Finite determinant formulas and coefficients are computed; general coefficient nonnegativity, the t-statistic, and the initial ASM identification at this point are conjectural/data-driven. A product evaluation is proved later.",
+          "representation_dependency": "Determinant polynomials, degrees, and large coefficients are vulnerable to OCR/transcription errors; verify all data from the PDF or recompute.",
+          "unit_id": "openalex_w1602172244_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1185,
+            "line_start": 1090,
+            "title": "Further substitutions convert critical moments to fractional-binomial sums and degree data",
+            "unit_id": "openalex_w1602172244_v2_u12",
+            "unit_type": "fractional-binomial-evaluation",
+            "why_material": "The proof transforms the C=3 integral to a beta-type integral, producing the remaining fractional-binomial expression; the final form is stated with details omitted. Path and multinomial views then determine degrees and leading Catalan/binomial coefficients of the moment polynomials."
+          },
+          {
+            "line_end": 1329,
+            "line_start": 1274,
+            "title": "A positive functional can support a four-term recurrence with non-real zeros",
+            "unit_id": "openalex_w1602172244_v2_u14",
+            "unit_type": "counterexample",
+            "why_material": "Starting from Hermite orthogonality, the authors perturb finitely many basis polynomials so the same positive functional annihilates the new recurrence sequence, then choose explicit parameters making q_4 vanish at a non-real point. This disproves the naive extension of the three-term positivity criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For the normalized four-term recurrence, C=3 is simultaneously the proved onset of real interlacing, the degenerate endpoint of a positive integral density, and the parameter where the Hankel determinants acquire the vertically symmetric ASM sequence.",
+            "limit": "Only the normalized recurrence theorem and moment/determinant facts are proved; the passage back to the original quadratic polynomial RH is heuristic, and the general t-statistic interpretation is conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u04",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u07",
+              "openalex_w1602172244_v2_u11",
+              "openalex_w1602172244_v2_u13",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "The critical value C=3 sits at three different interfaces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1187,
+              "line_start": 1186,
+              "reason": "Whitespace before Section 5."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1602172244_v2_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w1602172244_v2_u13",
+          "spontaneous_reading": "Shifting C to 3+t changes a determinant with mixed-sign coefficients into low-degree examples with nonnegative coefficients, suggesting that the critical ASM objects may be the zero-statistic slice of a larger weighted class."
+        },
+        "directed": {
+          "unit_id": "openalex_w1602172244_v2_u13",
+          "source_grounded_mathematics": "At C=3 the first Hankel determinants are 1,3,26,646,45885,930465, matching the tabulated vertically symmetric ASM sequence. Explicit μ_n(3+t) have nonnegative coefficients, and computed Δ_n(3+t) do as well despite mixed signs in Δ_n(C). The authors propose that exponents of t might record a statistic on additional objects.",
+          "conceptual_reading": "A critical specialization is treated as the boundary stratum of a possible positive deformation, with coefficient positivity serving as evidence for an undiscovered weighted model.",
+          "representation_or_bridge": "The shift C=3+t bridges recurrence moments to a candidate combinatorial statistic, while the constant term connects to critical Hankel and ASM counts.",
+          "boundary_or_failure": "Only finite coefficients and determinants are computed here; general nonnegativity, the statistic, and at this stage the ASM identification are conjectural or data-driven, with the product equality proved later.",
+          "uncertainty": "Large coefficients, determinant polynomials, and degree claims should be verified from the PDF or recomputed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1602172244_v2_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "At C=3 the displayed Hankel determinants match the tabulated vertically symmetric ASM counts through the listed finite range.",
+          "The displayed Δ_n(C) have mixed signs, while the computed Δ_n(3+t) examples have nonnegative coefficients and motivate a conjectural statistic.",
+          "The source proves from Theorem 2 that every μ_n(C), hence every μ_n(3+t), has nonnegative integral coefficients."
+        ],
+        "inference": [
+          "Viewing the constant term as a possible zero-statistic slice of a larger weighted class follows the authors' explicit speculation."
+        ],
+        "unsupported_or_imported": [
+          "The boundary sentence 'general nonnegativity ... [is] conjectural' is ambiguous and can incorrectly include the already proved general nonnegativity of the moment polynomials μ_n; only general nonnegativity of Δ_n(3+t) is left open here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The critical-specialization language is useful only if the distinct evidence statuses of μ_n and Δ_n are stated explicitly."
+        ],
+        "context_or_ocr_risk": [
+          "Large determinant coefficients and degree displays are transcription-sensitive; the qualitative sign/status distinctions are nevertheless clear."
+        ],
+        "missed_mechanism": [
+          "The candidate underplays the general path/multinomial proof of μ_n coefficient positivity by describing only explicit μ_n examples."
+        ],
+        "revision_instructions": [
+          "State that μ_n(C) coefficient nonnegativity is proved generally, whereas Δ_n(3+t) coefficient nonnegativity is observed only for the displayed cases and conjectured in general.",
+          "Keep the ASM match and proposed t-statistic explicitly finite/data-driven at this point."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem proves Δ_n=I_n. The subsequent statement that these integrals count vertically symmetric ASMs is conditional on the other equality chain, not a direct integral bijection.",
+      "line_end": 1408,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Normalization powers, integration domain, Vandermonde variables, and density exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substituting the one-variable moment integral into the Hankel determinant and symmetrizing over variables converts the product of two determinants to a squared Vandermonde, yielding Theorem 3’s multiple integral I_n.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Andreief/Vandermonde symmetrization turns Δ_n into a Macdonald-type integral",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u15.txt",
+      "unit_bytes": 4633,
+      "unit_id": "openalex_w1602172244_v2_u15",
+      "unit_sha256": "53dfce52d9c5c40284b70c7c1af6be71486dc6e4801a6804acd04703a06e25e1",
+      "unit_type": "hankel-to-multiple-integral",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1323,
+          "line_end": 1330,
+          "text": "   However, to make things explicit, the following values work:\n\n                                                   α = −4/3\n                                                   β = 28/3\n                                                   γ = 28/85\n                                       q4 ((1 + i)/2) = 0.\n\n\n",
+          "sha256": "d2a601ab8a696b9c2d3a0f358a41ee27c4c108f45ccf8d4b4a9c02f10ae03ba1"
+        },
+        "after": {
+          "line_start": 1409,
+          "line_end": 1416,
+          "text": "\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                                                  26\n\n   For example, expand\n                               Y                    X\n                                    (vi − vj )2 =          ci0 ,i1 ,···,in v0i0 v1i1 · · · vnin ,\n",
+          "sha256": "2b1079965dd91fc2f58170a4ed7e08d20c7410803e3cf720b966b029b040bb33"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Macdonald-type integrals",
+            "line_end": 1482,
+            "line_start": 1331,
+            "mathematical_role": "Converts the critical Hankel determinant to a Vandermonde-square multiple integral and an equivalent determinant of explicit binomial moments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1408,
+          "line_start": 1331,
+          "title": "Andreief/Vandermonde symmetrization turns Δ_n into a Macdonald-type integral",
+          "unit_id": "openalex_w1602172244_v2_u15",
+          "unit_type": "hankel-to-multiple-integral",
+          "why_material": "Substituting the one-variable moment integral into the Hankel determinant and symmetrizing over variables converts the product of two determinants to a squared Vandermonde, yielding Theorem 3’s multiple integral I_n."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem proves Δ_n=I_n. The subsequent statement that these integrals count vertically symmetric ASMs is conditional on the other equality chain, not a direct integral bijection.",
+          "representation_dependency": "Normalization powers, integration domain, Vandermonde variables, and density exponents are formula-sensitive.",
+          "unit_id": "openalex_w1602172244_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1329,
+            "line_start": 1274,
+            "title": "A positive functional can support a four-term recurrence with non-real zeros",
+            "unit_id": "openalex_w1602172244_v2_u14",
+            "unit_type": "counterexample",
+            "why_material": "Starting from Hermite orthogonality, the authors perturb finitely many basis polynomials so the same positive functional annihilates the new recurrence sequence, then choose explicit parameters making q_4 vanish at a non-real point. This disproves the naive extension of the three-term positivity criterion."
+          },
+          {
+            "line_end": 1480,
+            "line_start": 1414,
+            "title": "Termwise beta evaluation gives a binomial-moment determinant",
+            "unit_id": "openalex_w1602172244_v2_u16",
+            "unit_type": "integral-to-explicit-hankel",
+            "why_material": "Expanding the squared Vandermonde and evaluating each density moment by beta/gamma identities identifies Δ_n with a Hankel determinant whose entries are explicit integer binomial expressions, illustrated through n=2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same moments arise from inverse recurrence coefficients, weighted excursions, 2–3 trees, Lagrange inversion, contour jumps, positive densities, beta integrals, and explicit binomial sequences; taking their Hankel determinant transports identities between these domains.",
+            "limit": "Some late fractional-binomial details are omitted locally, and exact analytic branch manipulations are formula-dependent.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u09",
+              "openalex_w1602172244_v2_u10",
+              "openalex_w1602172244_v2_u11",
+              "openalex_w1602172244_v2_u12",
+              "openalex_w1602172244_v2_u15",
+              "openalex_w1602172244_v2_u16"
+            ],
+            "title": "A recurrence moment is a hub of representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1330,
+              "line_start": 1330,
+              "reason": "Whitespace before Section 7."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1602172244_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w1602172244_v2_u15",
+          "spontaneous_reading": "Symmetrizing the product of one-variable moment integrals turns a Hankel determinant into a squared Vandermonde interaction, making the determinant’s global coupling explicit as a Macdonald-type multiple integral."
+        },
+        "directed": {
+          "unit_id": "openalex_w1602172244_v2_u15",
+          "source_grounded_mathematics": "Using the C=3 integral formula for μ_k, Theorem 3 substitutes n+1 independent variables into det[μ_{i+j}], averages over permutations, and converts the product of two alternants into ∏_{i<j}(v_i−v_j)^2 with v_i=u_i(1−u_i), yielding Δ_n=I_n.",
+          "conceptual_reading": "Determinantal antisymmetry becomes a positive pairwise repulsion after symmetrization, exposing structure hidden in the entrywise moment representation.",
+          "representation_or_bridge": "The Vandermonde determinant is the exact bridge from a Hankel matrix of one-variable moments to a coupled multiple integral.",
+          "boundary_or_failure": "The theorem proves Δ_n=I_n; saying that I_n counts vertically symmetric ASMs relies on the separate equality chain and is not a direct integral-to-ASM bijection.",
+          "uncertainty": "Normalization powers, density exponents, domain, and the variables used in the Vandermonde are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1602172244_v2_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "Substituting the one-variable critical moment integral into the Hankel determinant and symmetrizing converts the two alternants to a squared Vandermonde in v_i=u_i(1-u_i), proving Δ_n=I_n.",
+          "The candidate correctly separates this identity from any direct integral-to-ASM bijection."
+        ],
+        "inference": [
+          "Interpreting the squared Vandermonde as an explicit pairwise interaction is a reasonable structural reading."
+        ],
+        "unsupported_or_imported": [
+          "Calling the transformed expression a 'positive pairwise repulsion' is misleading in this span: the Vandermonde square is nonnegative, but the displayed one-variable factor g(u)=u^(1/3)(1-u)^(2/3)(1-2u) changes sign on the integration interval."
+        ],
+        "paraphrase_or_style_risk": [
+          "The random-matrix-style 'positive repulsion' phrase imports positivity not established for the full multiple-integral weight."
+        ],
+        "context_or_ocr_risk": [
+          "Normalization powers, exponents, and Vandermonde variables are formula-sensitive, though the sign-changing factor 1-2u is readable."
+        ],
+        "missed_mechanism": [
+          "The exact mechanism is antisymmetrization followed by squaring of the alternant; it need not be described as a positive measure."
+        ],
+        "revision_instructions": [
+          "Replace 'positive pairwise repulsion' with 'a squared Vandermonde coupling' and avoid claiming the full multiple-integral weight is positive.",
+          "Retain the determinant-to-integral bridge and the warning that ASM enumeration comes only through the separate equality chain."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly ‘throws away’ terms and replaces one recurrence by another; this is an asymptotic modeling heuristic, not a limit theorem proving that zeros/interlacing of the normalized q_n control the original P_n. A sign reflection relates two versions of the final model exactly.",
+      "line_end": 2721,
+      "line_start": 2624,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extreme formula risk: every rescaling, fractional power, sign, n-dependent argument, and r-to-C map must be checked from the PDF before formal asymptotic analysis.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Appendix II sets s=1/2+it and u=−t², then divides by n², discards vanishing coefficient terms, rescales variables and polynomials, and replaces n-dependent arguments to obtain a constant-coefficient four-term recurrence. The r>1/4 range maps to C>3, explaining why 3 emerged as the normalized threshold.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Successive asymptotic scalings explain—but do not rigorously transfer—the critical C=3 model",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u29.txt",
+      "unit_bytes": 4649,
+      "unit_id": "openalex_w1602172244_v2_u29",
+      "unit_sha256": "106c909cd4a92e414b972159064ae558b9de8842deb72a7002843052c925c514",
+      "unit_type": "heuristic-renormalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u29.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2616,
+          "line_end": 2623,
+          "text": "\nWe remark that the same method will produce higher order recursions for the T -transforms of\nsequences of powers Q(x)n .\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                       49\n\n",
+          "sha256": "b404cd293fe03d619b64c40ce731a1bd72d9c53a6907c49e62fba2d888ae8624"
+        },
+        "after": {
+          "line_start": 2722,
+          "line_end": 2727,
+          "text": "\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                         51\n\n",
+          "sha256": "40f6e9bfe671f8602df01bf3e6a5aa2b57fcde01d7331047e0717452957ccd12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II: asymptotic renormalization",
+            "line_end": 2727,
+            "line_start": 2624,
+            "mathematical_role": "Performs a sequence of asymptotic scalings and replacements leading from the original recurrence to the one-parameter normalized recurrence and critical C=3."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2721,
+          "line_start": 2624,
+          "title": "Successive asymptotic scalings explain—but do not rigorously transfer—the critical C=3 model",
+          "unit_id": "openalex_w1602172244_v2_u29",
+          "unit_type": "heuristic-renormalization",
+          "why_material": "Appendix II sets s=1/2+it and u=−t², then divides by n², discards vanishing coefficient terms, rescales variables and polynomials, and replaces n-dependent arguments to obtain a constant-coefficient four-term recurrence. The r>1/4 range maps to C>3, explaining why 3 emerged as the normalized threshold."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly ‘throws away’ terms and replaces one recurrence by another; this is an asymptotic modeling heuristic, not a limit theorem proving that zeros/interlacing of the normalized q_n control the original P_n. A sign reflection relates two versions of the final model exactly.",
+          "representation_dependency": "Extreme formula risk: every rescaling, fractional power, sign, n-dependent argument, and r-to-C map must be checked from the PDF before formal asymptotic analysis.",
+          "unit_id": "openalex_w1602172244_v2_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2618,
+            "line_start": 2518,
+            "title": "Differentiating a transformed integral derives the original four-term recurrence",
+            "unit_id": "openalex_w1602172244_v2_u28",
+            "unit_type": "exact-recurrence-derivation",
+            "why_material": "Appendix I embeds the transform in a one-parameter group of interval maps, differentiates its multiplier at the identity, and specializes to powers of a quadratic. Differential identities for those powers produce the exact n,r-dependent four-term recurrence and indicate a route to higher-order recurrences."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For the normalized four-term recurrence, C=3 is simultaneously the proved onset of real interlacing, the degenerate endpoint of a positive integral density, and the parameter where the Hankel determinants acquire the vertically symmetric ASM sequence.",
+            "limit": "Only the normalized recurrence theorem and moment/determinant facts are proved; the passage back to the original quadratic polynomial RH is heuristic, and the general t-statistic interpretation is conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u04",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u07",
+              "openalex_w1602172244_v2_u11",
+              "openalex_w1602172244_v2_u13",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "The critical value C=3 sits at three different interfaces"
+          },
+          {
+            "claim": "Functional equations about s↔1−s motivate asking whether polynomial zeros lie on Re(s)=1/2; variable changes turn this into real-root/interlacing problems for recurrence polynomials, with threshold conjectures and one proved normalized case.",
+            "limit": "None of these results bears directly on the truth of the Riemann hypothesis for ζ, and several advertised analogues remain numerical or conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u01",
+              "openalex_w1602172244_v2_u02",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u08",
+              "openalex_w1602172244_v2_u27",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "Polynomial RH terminology names a finite zero analogy, not zeta evidence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2623,
+              "line_start": 2619,
+              "reason": "Whitespace and running page header before Appendix II."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 2727,
+              "line_start": 2722,
+              "reason": "Terminal whitespace and journal page footer."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1602172244_v2_u29",
+        "spontaneous": {
+          "unit_id": "openalex_w1602172244_v2_u29",
+          "spontaneous_reading": "Successive changes of scale compress an n-dependent recurrence into a dimensionless constant-coefficient model whose parameter C has critical endpoint 3. The compression explains why that model is natural, but the decisive steps explicitly discard terms and replace scaled arguments, so only the final sign reflection is an exact transfer of zero information."
+        },
+        "directed": {
+          "unit_id": "openalex_w1602172244_v2_u29",
+          "source_grounded_mathematics": "Writing s=1/2+it and u=-t² turns P_n(1/2+it) into real polynomials p_n(u) satisfying the exact n-dependent recurrence (44). The source divides by n², drops coefficient terms tending to zero, rescales the polynomials, sets u=n²v, and then replaces a recurrence with n-dependent arguments by one with common argument v. A shift and normalization using A=8r(6r-1), B=16r²(4r-1), and C=A/B^{2/3} give Q_n=xQ_{n-1}-CQ_{n-2}+Q_{n-3}; the range r>1/4 maps to C>3. The alternative q_n recurrence with a minus q_{n-3} term satisfies the exact reflection q_n(x)=(-1)^nQ_n(-x), so the two final models have equivalent real-rootedness.",
+          "conceptual_reading": "This is dominant-balance renormalization: remove lower-order n-dependence, choose the spectral scale on which u/n² remains visible, and normalize two coefficients into one dimensionless parameter C. It exposes a canonical threshold in the surrogate model, while forgetting finite-n corrections and the changing arguments that could govern zero locations or interlacing.",
+          "representation_or_bridge": "The proposed bridge is exact critical-line coordinates → real u-polynomials → large-n scaled recurrence → constant-coefficient normalized recurrence. To transfer conclusions back, one would need a controlled convergence theorem for the polynomial family plus stability of zeros and interlacing under that convergence. The later sign reflection between Q_n and q_n is exact and preserves real-rootedness, but it operates only within the surrogate models.",
+          "boundary_or_failure": "The text explicitly ‘throws away’ terms and ‘replaces’ one recurrence by another; no error bounds, convergence mode, or zero-stability theorem is supplied. Thus C=3 is explained as the normalized model’s endpoint, not proved to control the original P_n recurrence.",
+          "uncertainty": "Fractional powers, signs, scaling exponents, n-dependent arguments, and the r↦C formula have extreme extraction risk and require PDF verification. The asymptotic link remains heuristic even if every displayed coefficient is correct."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1602172244_v2_u29",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately separates exact recurrence (44) from the later steps where the source explicitly discards vanishing terms and replaces an n-dependent-argument recurrence by a common-argument surrogate.",
+          "The A, B, C normalization, the mapping r>1/4 to C>3, and the exact reflection q_n(x)=(-1)^nQ_n(-x) are reported with the correct logical status.",
+          "The need for controlled convergence and zero/interlacing stability before transferring surrogate conclusions back to P_n is the central missing proof mechanism and is correctly identified."
+        ],
+        "inference": [
+          "Calling the construction dominant-balance renormalization and C a dimensionless parameter is a useful conceptual interpretation of the successive scalings.",
+          "The claim that discarded finite-n corrections and changing arguments may affect zeros or interlacing is a justified warning, not a conclusion established by the source."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says that 'only the final sign reflection is an exact transfer of zero information.' Taken literally, this is too strong: the initial critical-line substitution s=1/2+it with u=-t² and ordinary nonzero polynomial/variable rescalings also give exact correspondences at their respective stages; what fails to transfer exactly across the full bridge is the passage through term deletion and recurrence replacement."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Fractional powers, signs, scaling exponents, n-dependent arguments, and the r-to-C formula have extreme extraction risk; the candidate explicitly preserves this limitation."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish exact coordinate/scaling changes from the two heuristic transitions instead of reserving exact zero transfer solely for the final reflection."
+        ],
+        "revision_instructions": [
+          "Replace the spontaneous sentence's 'only the final sign reflection' claim with a scoped statement: several coordinate and normalization steps are exact within their stages, and the Q_n/q_n reflection is exact within the final surrogate, but no exact zero transfer crosses the steps that drop terms and replace n-dependent arguments."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "69b6a421bda2709215a07d17ae799f28295da49e038a172f99f94f71388b753b"
+}

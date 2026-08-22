@@ -1,0 +1,698 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2044551895_86fba4f1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2044551895",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This roadmap explains why multiple constructions coexist rather than treating one representation as uniformly best.",
+      "line_end": 211,
+      "line_start": 195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; only the reference to the weighted L1 objective depends on nearby notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors distinguish an explicit reproducing-kernel solution, a general de Branges extremal solution, and non-extremal Beurling-Selberg bounds whose asymptotics remain tractable.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three complementary routes separate optimality, explicitness, and asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u02.txt",
+      "unit_bytes": 1311,
+      "unit_id": "openalex_w2044551895_depth_u02",
+      "unit_sha256": "8336fc6d0d038e7dd94ab6dc1af08d1f935b5437c1eda01162e9e84746a72dc0",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u02.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 187,
+          "line_end": 194,
+          "text": "                                                                 \u0012 \u0013\n                                      1               1 1   1     1\n                                        M (rβ± ) = β − ± + 2 + O     .                                   (1.12)\n                                      2               2 2 2π β    β2\nIn a second part of his paper [19], still in the case β ∈ 12 N, Gallagher solved the two-delta problem with\nrespect to the pair correlation measure (i.e. to minimize M (R) over the class of nonnegative admissible\nfunctions R satisfying R(±β) ≥ 1) and was able to quantify the error between his bounds in Theorem 1 and\nthe theoretical optimal bounds achievable by this method.\n",
+          "sha256": "f8225d72cae1d8c4a7d4cafc222f2353e333de3f1ad4748194f443ee1bd18009"
+        },
+        "after": {
+          "line_start": 212,
+          "line_end": 219,
+          "text": "\n   We now describe in more detail each of these three parts of the paper. We start with the third part, which\nis slightly simpler to state. Similar extremal problems in harmonic analysis have appeared in connection to\nanalytic number theory, in particular to the theory of the Riemann zeta-function. For some recent results\nof this sort, see [4, 5, 10, 23].\n\n\n1.2. Explicit bounds via Beurling-Selberg majorants. Let\n",
+          "sha256": "0111db4def23e3153acff7bf8a0e40007697a34463517c79a5298253778f789c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and pair-correlation setup",
+            "line_end": 218,
+            "line_start": 31,
+            "mathematical_role": "Defines the normalized zero-pair count, states Montgomery's formula, and reduces upper/lower bounds to weighted bandlimited approximation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 211,
+          "line_start": 195,
+          "title": "Three complementary routes separate optimality, explicitness, and asymptotics",
+          "unit_id": "openalex_w2044551895_depth_u02",
+          "unit_type": "method comparison",
+          "why_material": "The authors distinguish an explicit reproducing-kernel solution, a general de Branges extremal solution, and non-extremal Beurling-Selberg bounds whose asymptotics remain tractable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This roadmap explains why multiple constructions coexist rather than treating one representation as uniformly best.",
+          "representation_dependency": "Prose-grounded; only the reference to the weighted L1 objective depends on nearby notation.",
+          "unit_id": "openalex_w2044551895_depth_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 33,
+            "title": "Montgomery's formula turns pair counts into weighted bandlimited approximation",
+            "unit_id": "openalex_w2044551895_depth_u01",
+            "unit_type": "extremal reduction",
+            "why_material": "Defines the normalized statistic and shows that admissible majorants and minorants of an interval give conditional upper and lower bounds, with the lower bound's simplicity requirement explicit."
+          },
+          {
+            "line_end": 304,
+            "line_start": 219,
+            "title": "Translated Beurling functions approximate an arbitrary symmetric interval",
+            "unit_id": "openalex_w2044551895_depth_u03",
+            "unit_type": "majorant-minorant construction",
+            "why_material": "A sign-function extremizer is synthesized into interval majorants and minorants for every beta, yielding explicit weighted bounds and large-beta behavior."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A zero-pair counting problem is modularized into a spectral transfer theorem plus an approximation problem; explicitness, optimality, and asymptotic transparency can then be supplied by different approximant families.",
+            "limit": "The transfer is conditional on the stated RH/multiplicity hypotheses and on the Fourier support where Montgomery's formula is controlled.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u01",
+              "openalex_w2044551895_depth_u02",
+              "openalex_w2044551895_depth_u03",
+              "openalex_w2044551895_depth_u10",
+              "openalex_w2044551895_depth_u11",
+              "openalex_w2044551895_depth_u12",
+              "openalex_w2044551895_depth_u13",
+              "openalex_w2044551895_depth_u14",
+              "openalex_w2044551895_depth_u15"
+            ],
+            "title": "Pair correlation as weighted bandlimited approximation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 218,
+              "line_start": 205,
+              "reason": "Page marker and transitional literature context before the first construction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u02",
+          "spontaneous_reading": "The paper deliberately keeps three representations because exact optimality, explicit kernels, and readable large-beta asymptotics are different computational virtues."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u02",
+          "source_grounded_mathematics": "The authors use an explicit pair-correlation kernel for the two-delta problem, a de Branges space for sharp interval extremizers, and Beurling-Selberg functions for non-extremal but tractable beta-asymptotics.",
+          "conceptual_reading": "No single representation dominates: kernel geometry exposes constraints, de Branges interpolation certifies optima, and explicit approximants expose parameter dependence.",
+          "representation_or_bridge": "The common object is the weighted approximation functional, viewed successively through RKHS evaluation, de Branges interpolation, and explicit Fourier formulas.",
+          "boundary_or_failure": "The sharp de Branges family has nodes defined by algebraic-transcendental equations, so its exactness does not automatically yield transparent asymptotics.",
+          "uncertainty": "Low; this unit is a prose roadmap, with only its reference to the weighted objective depending on nearby notation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2044551895_depth_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The three-part roadmap explicitly separates the kernel solution of the two-delta problem, the sharp de Branges interval problem, and non-extremal Beurling-Selberg bounds with accessible beta-asymptotics.",
+          "The difficulty of extracting beta-asymptotics from implicit interpolation nodes is explicit."
+        ],
+        "inference": [
+          "The claim that no single representation dominates is a reasonable synthesis of the stated tradeoffs."
+        ],
+        "unsupported_or_imported": [
+          "The phrase 'explicit Fourier formulas' is not established in this span; the roadmap says that M(r_beta^plus-or-minus) is computed, but the Fourier formulas occur later."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'explicit Fourier formulas' with the source-bounded claim that the explicit Beurling-Selberg family permits tractable evaluation of M and readable beta-asymptotics."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes properties P1-P4 that delimit the later general extremal theorem.",
+      "line_end": 483,
+      "line_start": 420,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Standard definitions are prose-supported; kernel identities (1.24)-(1.25) depend on conjugation notation in displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies the semantic bridge among bounded type, mean/exponential type, the H(E) norm, companion functions A and B, and kernel evaluations.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hermite-Biehler data generate a de Branges reproducing-kernel space",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u05.txt",
+      "unit_bytes": 3662,
+      "unit_id": "openalex_w2044551895_depth_u05",
+      "unit_sha256": "7dd97fd4aaca6a60099cb92c7497bbd1d059cb626531bc52e6185d2de312e24c",
+      "unit_type": "definition framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u05.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 412,
+          "line_end": 419,
+          "text": "appears naturally in the work of Littmann [32] on the Beurling-Selberg extremal problem for χ[−β,β] (x).\nUsing the same circle of ideas, one could explicitly compute the reproducing kernels associated to other\nmeasures that arise naturally in the study of families of L-functions, see [28, 29].\n\n\n1.4. An extremal problem in de Branges spaces.\n\n\n",
+          "sha256": "49ea120c6b54ff0f2e23c63ed100bbb643711e81eac10955205ee636fb91bfe5"
+        },
+        "after": {
+          "line_start": 484,
+          "line_end": 491,
+          "text": "\n1.4.2. De Branges space for the pair correlation measure. We show that the Hilbert space H defined in\nSection 1.3 can be identified with a suitable de Branges space H(E), where E is a Hermite-Biehler function\nsatisfying properties (P1) - (P4). Define\n\n                                             L(w, z) = 2πi(w − z)K(w, z) ,\n\nwhere K is given by (1.20). It follows then that the entire function\n",
+          "sha256": "632288f25ff6d6e94befdad20168d3e920682e57d172dad45bf7f439c166e33e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "de Branges preliminaries",
+            "line_end": 484,
+            "line_start": 417,
+            "mathematical_role": "Introduces Hermite-Biehler functions, de Branges norms, kernels, and the structural hypotheses needed later."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 483,
+          "line_start": 420,
+          "title": "Hermite-Biehler data generate a de Branges reproducing-kernel space",
+          "unit_id": "openalex_w2044551895_depth_u05",
+          "unit_type": "definition framework",
+          "why_material": "Supplies the semantic bridge among bounded type, mean/exponential type, the H(E) norm, companion functions A and B, and kernel evaluations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes properties P1-P4 that delimit the later general extremal theorem.",
+          "representation_dependency": "Standard definitions are prose-supported; kernel identities (1.24)-(1.25) depend on conjugation notation in displays.",
+          "unit_id": "openalex_w2044551895_depth_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 414,
+            "line_start": 306,
+            "title": "The two-delta gap becomes a reproducing-kernel evaluation problem",
+            "unit_id": "openalex_w2044551895_depth_u04",
+            "unit_type": "reproducing-kernel construction",
+            "why_material": "The minimal possible separation between interval upper and lower bounds is encoded by a nonnegative bandlimited function constrained at two points, then solved using the explicit kernel of the weighted Paley-Wiener space."
+          },
+          {
+            "line_end": 535,
+            "line_start": 485,
+            "title": "The pair-correlation Hilbert space is realized as a de Branges space",
+            "unit_id": "openalex_w2044551895_depth_u06",
+            "unit_type": "representation change",
+            "why_material": "Constructing E from the explicit kernel yields an isometric identity between the pair-correlation measure norm and a de Branges norm, enabling interpolation theory."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A de Branges representation turns continuous weighted optimization into interpolation at orthogonal kernel nodes; endpoint position selects the node family, and subtracting the two interval extremizers recovers the two-point extremizer.",
+            "limit": "The theorem requires properties P1-P4 and changes construction across root, generic, and below-first-root regimes.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u05",
+              "openalex_w2044551895_depth_u06",
+              "openalex_w2044551895_depth_u07",
+              "openalex_w2044551895_depth_u08",
+              "openalex_w2044551895_depth_u21",
+              "openalex_w2044551895_depth_u22",
+              "openalex_w2044551895_depth_u23",
+              "openalex_w2044551895_depth_u24",
+              "openalex_w2044551895_depth_u25"
+            ],
+            "title": "Quadrature unifies interval and two-point extremizers"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 419,
+              "line_start": 415,
+              "reason": "Section transition and whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u05",
+          "spontaneous_reading": "Hermite-Biehler data package growth, norm, symmetry, and evaluation into a kernel space whose real companion functions provide canonical interpolation nodes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u05",
+          "source_grounded_mathematics": "For a Hermite-Biehler function E, H(E) consists of entire F satisfying the weighted norm and bounded-type conditions; its kernel is expressed through E and E-star, or through the real entire companions A and B, with diagonal mass given by their Wronskian-like expression.",
+          "conceptual_reading": "The representation turns analytic growth constraints into Hilbert geometry while exposing a real zero structure for later quadrature.",
+          "representation_or_bridge": "E=A-iB connects the weighted norm to kernel evaluations, and properties P1-P4 delimit the later extremal theorem.",
+          "boundary_or_failure": "The framework requires the Hermite-Biehler inequality and P1-P4; it does not say every weighted entire-function space has this form.",
+          "uncertainty": "Low to moderate; definitions are clear, while conjugation notation and kernel identities are display-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2044551895_depth_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The definitions of bounded and mean type, H(E), the reproducing kernel, the real companions A and B, and properties P1-P4 are present in the span.",
+          "The candidate correctly treats the Hermite-Biehler inequality and P1-P4 as hypotheses rather than universal facts about weighted entire-function spaces."
+        ],
+        "inference": [
+          "Packaging growth, norm, symmetry, and evaluation as Hilbert geometry is a faithful conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the companion functions provide canonical interpolation nodes and expose a zero structure 'for later quadrature' anticipate results not stated in this evidence span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Conjugation bars and stars are partially damaged in extraction, so only the structural kernel identities are safe without consulting another representation."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the interpolation-node and later-quadrature claims; say only that A and B give a real-entire representation of the kernel and its diagonal mass within this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the conclusion at lines 1473-1477 and the integral-equation heuristic through line 1503, both needed to avoid truncating the construction.",
+      "line_end": 1503,
+      "line_start": 1351,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High display dependence in (3.1)-(3.7); exact trigonometric coefficients require the normalized formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fourier expansions and cancellation of the interior convolution defect prove the proposed kernel reproduces evaluation; a differential heuristic explains how its ansatz and two free parameters arise.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A convolution equation determines the explicit reproducing kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u17.txt",
+      "unit_bytes": 9976,
+      "unit_id": "openalex_w2044551895_depth_u17",
+      "unit_sha256": "6c989838358d64f5f733bcd33ebe42608fb82964c9b480c9119957f9a740cb7c",
+      "unit_type": "kernel derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u17.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1343,
+          "line_end": 1350,
+          "text": "                                         η χR\\T (x) ≤            1−                         .\n                                                                              πx\nThen\n                                    η\n                                      kf k2 ≤ η kf χR\\T k2 ≤ kf kL2 (dµ) .\n                                    2\nThis completes the proof of the lemma.                                                                     \u0003\n\n",
+          "sha256": "78644f48d3c5b1a4339bae58de8a575051148299efa1ed36738051c62c3e8464"
+        },
+        "after": {
+          "line_start": 1504,
+          "line_end": 1511,
+          "text": "\n3.3. A geometric lemma. Before we proceed to the proof of Theorem 4 we present a basic lemma5 on the\ngeometry of Hilbert spaces.\n\nLemma 13. Let H be a Hilbert space (over C) with norm k · k and inner product h·, ·i. Let v1 , v2 ∈ H be\ntwo nonzero vectors (not necessarily distinct) such that kv1 k = kv2 k and define\n                                    \b\n                               J = x ∈ H; |hx, v1 i| ≥ 1 and |hx, v2 i| ≥ 1 .\n",
+          "sha256": "8a3b82717240344d5e77fbff357730a1292dd1b9b7fe39feaad1833312b12ab8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "RKHS construction and two-delta geometry",
+            "line_end": 1668,
+            "line_start": 1307,
+            "mathematical_role": "Proves norm equivalence, derives the explicit reproducing kernel, and solves the two-evaluation minimization by Hilbert-space geometry."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1503,
+          "line_start": 1351,
+          "title": "A convolution equation determines the explicit reproducing kernel",
+          "unit_id": "openalex_w2044551895_depth_u17",
+          "unit_type": "kernel derivation",
+          "why_material": "Fourier expansions and cancellation of the interior convolution defect prove the proposed kernel reproduces evaluation; a differential heuristic explains how its ansatz and two free parameters arise."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the conclusion at lines 1473-1477 and the integral-equation heuristic through line 1503, both needed to avoid truncating the construction.",
+          "representation_dependency": "High display dependence in (3.1)-(3.7); exact trigonometric coefficients require the normalized formulas.",
+          "unit_id": "openalex_w2044551895_depth_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1349,
+            "line_start": 1307,
+            "title": "Uncertainty prevents the pair-correlation weight from losing a bandlimited function",
+            "unit_id": "openalex_w2044551895_depth_u16",
+            "unit_type": "norm equivalence",
+            "why_material": "An uncertainty principle supplies a uniform lower norm bound away from the weight's zero, proving equality of the weighted and ordinary Paley-Wiener sets and equivalence of norms."
+          },
+          {
+            "line_end": 1589,
+            "line_start": 1505,
+            "title": "Two equal-norm evaluation constraints reduce to a two-vector minimizer",
+            "unit_id": "openalex_w2044551895_depth_u18",
+            "unit_type": "geometric lemma",
+            "why_material": "The Hilbert-space lemma gives both the minimum norm and all equality cases according to whether the representing vectors are orthogonal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After norm equivalence and nonnegative factorization, a function constrained at two points becomes a minimum-norm vector constrained by two kernel evaluations, so the sharp value depends only on a diagonal kernel mass and one off-diagonal correlation.",
+            "limit": "This reduction applies to the specified bandlimited nonnegative class and inherits the exact weighted space and kernel normalization.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u04",
+              "openalex_w2044551895_depth_u16",
+              "openalex_w2044551895_depth_u17",
+              "openalex_w2044551895_depth_u18",
+              "openalex_w2044551895_depth_u19"
+            ],
+            "title": "Two-delta optimization is evaluation geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1350,
+              "line_start": 1350,
+              "reason": "Subsection separator."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1504,
+              "line_start": 1504,
+              "reason": "Blank transition line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u17",
+          "spontaneous_reading": "The proposed kernel is certified by cancelling a convolution defect on the entire accessible frequency band, leaving only a sinc evaluation term plus an orthogonal remainder."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u17",
+          "source_grounded_mathematics": "Fourier expansions of f,g,h show that choosing c(w),d(w) cancels the linear interior terms in the weighted convolution; the resulting defect equals sin(pi(x-w))/(pi(x-w)) plus Q_w orthogonal to B2(pi,mu), which proves the reproducing identity and hence identifies K.",
+          "conceptual_reading": "Kernel construction becomes an inverse problem: enforce exact evaluation on the band and push every remaining defect into the orthogonal complement.",
+          "representation_or_bridge": "The convolution equation is the bridge between multiplication by the pair-correlation weight and a frequency-domain integral equation; a formal second derivative suggests an ODE ansatz with two free parameters.",
+          "boundary_or_failure": "The differentiated equation is explicitly heuristic, while the proof relies on the original integral equation; exact trigonometric coefficients are highly display-dependent.",
+          "uncertainty": "Moderate for coefficients, low for the cancellation, orthogonality, and uniqueness argument."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2044551895_depth_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives the proposed kernel from Fourier expansions, chooses c(w),d(w) to cancel the interior linear defect, and obtains ell_w=sinc+Q_w with an annihilation relation that proves reproduction.",
+          "It explicitly labels the differentiated convolution equation as formal and uses the original integral equation to fix the two free parameters."
+        ],
+        "inference": [
+          "Viewing kernel construction as an inverse problem that enforces evaluation on the band is faithful to the proof."
+        ],
+        "unsupported_or_imported": [
+          "Saying Q_w is simply 'orthogonal to B2(pi,mu)' leaves the pairing ambiguous and can incorrectly suggest orthogonality in the weighted H inner product; the displayed relation is an unweighted integral pairing against functions in the common Paley-Wiener set."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact trigonometric coefficients in (3.1)-(3.7) are highly display-dependent."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Qualify the Q_w statement as annihilation under the displayed Lebesgue integral pairing (using equality of the underlying function sets), then state separately that this yields the weighted reproducing identity for kappa_w."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes endpoint conventions, integrability, and the analogous minorant argument by nonnegative decomposition.",
+      "line_end": 1871,
+      "line_start": 1815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on extracted superscripts and equations (4.7)-(4.8), but the majorization and equality mechanism is coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Laguerre-Polya interpolation constructs interval majorants/minorants and the node-sum formula proves optimality immediately in the generic regimes.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Generic extremizers are certified by interpolation at quadrature nodes",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u22.txt",
+      "unit_bytes": 3676,
+      "unit_id": "openalex_w2044551895_depth_u22",
+      "unit_sha256": "51cfdca37ff398de119a7a074a06e6317b5a417077c0cfcb9d1ff0ac361ecd70",
+      "unit_type": "interpolation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u22.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1807,
+          "line_end": 1814,
+          "text": "                                                                                                                     ξ 2 + γβ2\n                               Z ∞                                       X      |Uβ (ξ)|2            X\n       ME (F ) = MEβ (Fβ ) =          |Uβ (x)|2 |Eβ (x)|−2 dx =                           =                  F (ξ)             .\n                                 −∞                                             Kβ (ξ, ξ)                            Kβ (ξ, ξ)\n                                                                     Aβ (ξ)=0                     Aβ (ξ)=0\n\nA similar representation holds at the zeros of Bβ . This completes the proof of the lemma.                                            \u0003\n\n",
+          "sha256": "65481dfb69a75c8440e0822cf21d3052dbe94ca66272e0e5346f8e800e96d867"
+        },
+        "after": {
+          "line_start": 1872,
+          "line_end": 1879,
+          "text": "\n\n4.2.2. Case 2: Assume β ∈ {ak } ∪ {bk }. This case follows from the work of Holt and Vaaler [27, Theorem\n15]. In this paper they construct extremal majorants and minorants for sgn(x − β) that interpolate this\nfunction at the zeros of A (if β ∈ {ak }) or B (if β ∈ {bk }). If we use that\n                                 1\n                                   \b\n                                 2 sgn(x + β) + sgn(−x + β) = χ[−β,β] (x),\n",
+          "sha256": "7a4f8e58983edb9e8ab7d6d992a9558fbb8daddc3e658be412325dfad3f3ef2a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpolation and orthogonality in de Branges spaces",
+            "line_end": 1944,
+            "line_start": 1728,
+            "mathematical_role": "Uses orthogonal kernel bases and quadrature nodes to construct and prove optimal interval approximants in all regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1871,
+          "line_start": 1815,
+          "title": "Generic extremizers are certified by interpolation at quadrature nodes",
+          "unit_id": "openalex_w2044551895_depth_u22",
+          "unit_type": "interpolation proof",
+          "why_material": "Laguerre-Polya interpolation constructs interval majorants/minorants and the node-sum formula proves optimality immediately in the generic regimes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes endpoint conventions, integrability, and the analogous minorant argument by nonnegative decomposition.",
+          "representation_dependency": "Relies on extracted superscripts and equations (4.7)-(4.8), but the majorization and equality mechanism is coherent.",
+          "unit_id": "openalex_w2044551895_depth_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1813,
+            "line_start": 1728,
+            "title": "Orthogonal kernel bases turn integrals into node sums",
+            "unit_id": "openalex_w2044551895_depth_u21",
+            "unit_type": "quadrature mechanism",
+            "why_material": "Auxiliary E_beta spaces preserve the required de Branges properties, position beta among zeros, and yield quadrature identities for nonnegative entire functions via Krein factorization."
+          },
+          {
+            "line_end": 1883,
+            "line_start": 1874,
+            "title": "Root endpoints recover Beurling-Selberg-type extremizers",
+            "unit_id": "openalex_w2044551895_depth_u23",
+            "unit_type": "special regime",
+            "why_material": "When beta is a zero of A or B, sign-function extremizers combine into interval approximants at exactly the quadrature nodes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A de Branges representation turns continuous weighted optimization into interpolation at orthogonal kernel nodes; endpoint position selects the node family, and subtracting the two interval extremizers recovers the two-point extremizer.",
+            "limit": "The theorem requires properties P1-P4 and changes construction across root, generic, and below-first-root regimes.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u05",
+              "openalex_w2044551895_depth_u06",
+              "openalex_w2044551895_depth_u07",
+              "openalex_w2044551895_depth_u08",
+              "openalex_w2044551895_depth_u21",
+              "openalex_w2044551895_depth_u22",
+              "openalex_w2044551895_depth_u23",
+              "openalex_w2044551895_depth_u24",
+              "openalex_w2044551895_depth_u25"
+            ],
+            "title": "Quadrature unifies interval and two-point extremizers"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u22",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u22",
+          "spontaneous_reading": "In the generic regimes, interpolation constructs feasibility and quadrature certifies optimality: matching the target only at the right nodes already fixes the best integral."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u22",
+          "source_grounded_mathematics": "For beta outside the root sets and the first interval, even Laguerre-Polya companion functions satisfy the cited interpolation theorem, producing entire majorants and minorants that take the normalized indicator values at A_beta or B_beta zeros, including distinct endpoint conventions; quadrature bounds every competitor and is attained by these functions.",
+          "conceptual_reading": "A global order constraint is certified by a discrete node set because the weighted integral is exactly a positive node sum.",
+          "representation_or_bridge": "Laguerre-Polya interpolation supplies the functions, while the auxiliary de Branges quadrature converts nodewise dominance into objective dominance.",
+          "boundary_or_failure": "Existence relies on the cited interpolation theorem and the stated generic zero configuration; the minorant proof also needs decomposition into nonnegative functions.",
+          "uncertainty": "Moderate; the proof logic is clear, but construction details are imported and extracted superscripts around the extremizers are cramped."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2044551895_depth_u22",
+        "critic_decision": "revise",
+        "supported": [
+          "The span invokes Laguerre-Polya interpolation to construct the generic majorant and minorant, records their node values and distinct endpoint conventions, and uses positive quadrature to prove optimality.",
+          "The minorant argument is correctly described as requiring a decomposition into nonnegative functions."
+        ],
+        "inference": [
+          "Saying interpolation supplies feasibility while quadrature certifies optimality accurately separates the two proof roles."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis calls the companion functions 'even Laguerre-Polya' objects, but the span states that A_beta^2 and B_beta^2 are even; in the inherited parity, A_beta is even and B_beta is odd."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Superscripts around the squared companions and extremizers are cramped, but the prose resolves the parity statement."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'even Laguerre-Polya companion functions' with the precise statement that A_beta and B_beta are Laguerre-Polya and their squares are even (equivalently, retain the appropriate even/odd parity of the companions)."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5017ceea942a96669fc0985a663698494236cd210a6c21d204c64c4a1db674f1"
+}

@@ -1,0 +1,185 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_riemann1859_wilkins_b7a8e242_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "riemann1859_wilkins",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span deliberately overlaps the end of the carried Mellin bridge because it isolates a reusable obstruction-and-repair move. The exact differentiated display at lines 306-311 is not normalized beyond the source extraction.",
+      "line_end": 311,
+      "line_start": 294,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula verification is required for signs, the 1/log x prefactor, derivative placement, and contour notation; the nonconvergence diagnosis and integration-by-parts response are explicit prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After proposing substitution of the root-and-gamma expansion into the inverse transform, the source observes that the individual term integrals do not converge to infinity and changes the representation by integration by parts before evaluating factors separately.",
+      "source_id": "riemann1859_wilkins",
+      "source_normalized_sha256": "2c7131128e275cd149b7b8923c5f38ffb74c236fe3dd5b4a736dbf81fe6c77a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integration by parts repairs an invalid termwise explicit-formula route",
+      "unit_artifact_relpath": "depth/units/riemann1859_v2_u07_convergence_repair.txt",
+      "unit_bytes": 1004,
+      "unit_id": "riemann1859_v2_u07_convergence_repair",
+      "unit_sha256": "c81b66c7030e34283864ea4b2e2540406424c56520fa8cba7897d1bca9cd6bee",
+      "unit_type": "convergence-aware-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/riemann1859_v2_u07_convergence_repair.txt",
+      "source": {
+        "source_id": "riemann1859_wilkins",
+        "title": "On the Number of Primes Less Than a Given Magnitude",
+        "authors": [
+          "Bernhard Riemann"
+        ],
+        "year": 1859,
+        "source_type": "primary-paper-translation",
+        "viewpoint_tags": [
+          "history",
+          "foundations",
+          "explicit-formula",
+          "analytic-continuation",
+          "functional-equation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "From the manner in which the function f was defined, we see that it has the\nsame property, and hence in full generality\n                                      a+∞i\n                                   1 Z log ζ(s) s\n                          f (y) =              y ds.\n                                  2πi      s\n                                          a−∞i\n\n",
+          "sha256": "cb59b77a9affaf7d545a99aa4cd19493efba7bb93506fff99dba4a9e7de1d777"
+        },
+        "after": {
+          "line_start": 312,
+          "line_end": 319,
+          "text": "\n\n                                              6\n\n<!-- source-page: 6 -->\n\nSince\n                                     n=m\n",
+          "sha256": "6f119bfae7cb85f15b938d31a7e7911c005c9c4f643c6642514309375c931c1c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e642855eb9ec1e488884ad4c405d5de384402f09a9ff07ff657618311b5a6cf",
+        "dossier_sha256": "af46d471df41129c434bcbb20334e9e9463151daa04f2d4df265517454ba7a9f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Prime-power counting and transform inversion",
+            "line_end": 311,
+            "line_start": 218,
+            "mathematical_role": "Defines midpoint prime counting and its weighted prime-power smoothing, derives the log-zeta Mellin relation, inverts it via Fourier theory, and repairs a nonconvergent termwise substitution by integration by parts."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 311,
+          "line_start": 294,
+          "title": "Integration by parts repairs an invalid termwise explicit-formula route",
+          "unit_id": "riemann1859_v2_u07_convergence_repair",
+          "unit_type": "convergence-aware-reframing",
+          "why_material": "After proposing substitution of the root-and-gamma expansion into the inverse transform, the source observes that the individual term integrals do not converge to infinity and changes the representation by integration by parts before evaluating factors separately."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span deliberately overlaps the end of the carried Mellin bridge because it isolates a reusable obstruction-and-repair move. The exact differentiated display at lines 306-311 is not normalized beyond the source extraction.",
+          "representation_dependency": "Formula verification is required for signs, the 1/log x prefactor, derivative placement, and contour notation; the nonconvergence diagnosis and integration-by-parts response are explicit prose.",
+          "unit_id": "riemann1859_v2_u07_convergence_repair"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 304,
+            "line_start": 218,
+            "title": "Weighted prime-power counting as the inverse transform of log zeta",
+            "unit_id": "riemann1859_u02_mellin_bridge",
+            "unit_type": "representation-bridge",
+            "why_material": "The source defines a midpoint convention for the prime count, forms a weighted sum over prime powers, identifies log zeta divided by s as its Mellin transform, derives a vertical-line inverse using Fourier theory including the mean value at jumps, and identifies why direct integration of separated zero and gamma terms fails."
+          },
+          {
+            "line_end": 353,
+            "line_start": 318,
+            "title": "Gamma and zero contributions are compressed to one inverse-transform kernel",
+            "unit_id": "riemann1859_v2_u08_common_factor_kernel",
+            "unit_type": "factorwise-decomposition",
+            "why_material": "A limiting product expansion for the gamma factor is differentiated, after which the source states that every nonconstant term in the expression for the smoothed count has a common factor-parameter integral form. This converts a heterogeneous decomposition into one reusable contour calculation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The root product is connected to a weighted prime-power count by inverse transform; a failed direct termwise route is repaired, each factor is evaluated with case and branch control, the zero series is ordered, and a squarefree alternating inversion recovers the prime count.",
+            "limit": "The synthesis records the source's mechanism and caveats only. It does not validate damaged formula details, remove the ordering condition, or turn the real-zero conjecture into a premise or proof.",
+            "parent_local_unit_ids": [
+              "riemann1859_u01_conjecture_limit",
+              "riemann1859_u02_mellin_bridge",
+              "riemann1859_v2_u07_convergence_repair",
+              "riemann1859_v2_u08_common_factor_kernel",
+              "riemann1859_v2_u09_branch_control",
+              "riemann1859_v2_u10_explicit_formula_ordering",
+              "riemann1859_v2_u11_squarefree_inversion"
+            ],
+            "title": "Zeros become prime-count information through convergence-aware inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 334,
+              "line_start": 318,
+              "reason": "The limiting gamma-product and differentiated-series displays are severely misaligned."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "riemann1859_v2_u07_convergence_repair",
+        "spontaneous": {
+          "unit_id": "riemann1859_v2_u07_convergence_repair",
+          "spontaneous_reading": "The direct plan fails for a precise reason: after expanding log zeta into factor terms, the corresponding individual inverse-transform integrals do not converge to infinity. Integration by parts changes the target to a derivative of log zeta before factors are separated, repairing the representation rather than ignoring the divergence."
+        },
+        "directed": {
+          "unit_id": "riemann1859_v2_u07_convergence_repair",
+          "source_grounded_mathematics": "The source proposes substituting a decomposition of log zeta involving elementary, gamma, zero, and constant terms into the inverse formula for f(x), observes that the separate integrals fail to converge at infinity, and instead integrates by parts to obtain an inverse integral involving the derivative of log zeta.",
+          "conceptual_reading": "A valid global identity need not license termwise inversion. The repair moves differentiation onto the decomposed analytic expression so factorwise treatment occurs only after changing to a convergence-compatible form.",
+          "representation_or_bridge": "Integration by parts is the bridge from a nonconvergent termwise log-zeta inversion to a differentiated logarithmic representation. It preserves the intended factor information while changing how it enters the contour integral.",
+          "boundary_or_failure": "The source explicitly diagnoses nonconvergence, but the extracted display is insufficient to verify signs, derivative placement, the 1/log x factor, boundary terms, or all conditions justifying integration by parts.",
+          "uncertainty": "High confidence in the obstruction-and-repair move; exact repaired formula and its analytic hypotheses are formula- and context-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "riemann1859_v2_u07_convergence_repair",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly proposes substituting the factor decomposition, rejects separate inverse integrals because they do not converge at infinity, and responds by integration by parts.",
+          "The candidate's central warning that a global identity need not permit termwise inversion is a faithful conceptual account of the obstruction."
+        ],
+        "inference": [
+          "Saying the repaired form makes later factorwise handling convergence-compatible is a reasonable reading, subject to the unstated analytic hypotheses and boundary terms."
+        ],
+        "unsupported_or_imported": [
+          "The candidate repeatedly calls the repaired integrand simply 'the derivative of log zeta.' The damaged display appears to place differentiation on a normalized expression involving log zeta(s) divided by s, so dropping the normalization loses material derivative placement that the packet does not authorize simplifying."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The repaired formula is extraction-sensitive in the derivative scope, 1/log x prefactor, signs, contour notation, and boundary terms; the prose supports integration by parts but not the candidate's simplified derivative wording."
+        ],
+        "missed_mechanism": [
+          "The audit boundary should preserve the displayed normalization inside the differentiated quantity, or explicitly leave the derivative scope unresolved pending scan verification."
+        ],
+        "revision_instructions": [
+          "Replace every claim that the repaired integral contains 'the derivative of log zeta' with a conservative statement that integration by parts differentiates the normalized log-zeta expression shown in the damaged display.",
+          "Do not specify the exact quotient, derivative scope, prefactor, or boundary term without scan verification; retain the well-supported nonconvergence diagnosis and integration-by-parts repair."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "bc226f75376749f141db0edb8ec6b6acd126aa858af5490b004c4b954a670048"
+}

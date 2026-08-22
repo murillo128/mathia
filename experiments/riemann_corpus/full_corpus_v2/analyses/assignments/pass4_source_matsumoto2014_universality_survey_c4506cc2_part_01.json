@@ -1,0 +1,1850 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_matsumoto2014_universality_survey_c4506cc2_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "matsumoto2014_universality_survey",
+  "unit_count": 11,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Follows the proof skeleton in u01 and supplies method-level alternatives rather than another theorem statement.",
+      "line_end": 150,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; theorem names and attributions are clear in extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts Voronin's Hilbert-space rearrangement route, Good and Gonek's modification, and Bagchi's probabilistic route, while identifying Mergelyan approximation as shared infrastructure for the latter approaches.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three proof routes and their distinct approximation inputs",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u02.txt",
+      "unit_bytes": 1392,
+      "unit_id": "matsumoto2014-u02",
+      "unit_sha256": "65c372d754ffc53349ae2a8996db997467c2e8f8183988a463cd54568d362867",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u02.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "   p (1 − p   )   , where  p runs over all prime numbers. This is valid only\nin the region σ > 1, but even in the region D(1/2, 1), it is possible\nto show that a ﬁnite truncation of the Euler product “approximates”\nζ(s) in a certain mean-value sense. On the other hand, since {log p}p\nis linearly independent over Q, we can apply the Kronecker-Weyl ap-\nproximation theorem to obtain that any target function f (s) can be\napproximated by the above ﬁnite truncation. This is the basic struc-\nture of the proof of Theorem 1.\n",
+          "sha256": "4d885f550198411cfaf00da21757670898ceb1c09b33602d9a55f6cf9a81a4ad"
+        },
+        "after": {
+          "line_start": 151,
+          "line_end": 158,
+          "text": "\n<!-- source-page: 4 -->\n\n4                            KOHJI MATSUMOTO\n\n  Here we mention some pre-history. In 1914, Bohr and Courant [13]\nproved that, for any σ satisfying 1/2 < σ ≤ 1, the set\n                            {ζ(σ + iτ ) | τ ∈ R}\n",
+          "sha256": "e97147fe4ac1608d793af7c89a7de23c373f615ca590beb981ac648fa14be00a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Voronin’s universality theorem",
+            "line_end": 220,
+            "line_start": 45,
+            "mathematical_role": "Defines the approximation property, states its modern positive-density form, and identifies analytic, Diophantine, and probabilistic proof architectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 150,
+          "line_start": 127,
+          "title": "Three proof routes and their distinct approximation inputs",
+          "unit_id": "matsumoto2014-u02",
+          "unit_type": "method-comparison",
+          "why_material": "Contrasts Voronin's Hilbert-space rearrangement route, Good and Gonek's modification, and Bagchi's probabilistic route, while identifying Mergelyan approximation as shared infrastructure for the latter approaches."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Follows the proof skeleton in u01 and supplies method-level alternatives rather than another theorem statement.",
+          "representation_dependency": "Prose-dominant; theorem names and attributions are clear in extraction.",
+          "unit_id": "matsumoto2014-u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 126,
+            "line_start": 54,
+            "title": "Voronin universality as positive-density function-space approximation",
+            "unit_id": "matsumoto2014-u01",
+            "unit_type": "definition-plus-proof-architecture",
+            "why_material": "The source passes from a single-disc approximation to the modern compact-set, positive-lower-density theorem and then isolates its two basic engines: mean approximation by finite Euler products and Kronecker-Weyl control of prime phases."
+          },
+          {
+            "line_end": 194,
+            "line_start": 156,
+            "title": "From value denseness to functional probability laws",
+            "unit_id": "matsumoto2014-u03",
+            "unit_type": "representation-change",
+            "why_material": "The survey reframes Voronin universality as an infinite-dimensional extension of value denseness and explains Bagchi's lift of Bohr-Jessen weak convergence from C to a function space."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across classical, probabilistic, positive-density, and quantitative routes, a reusable architecture separates analytic approximation of the function, controllability or equidistribution of phases, and a density or recurrence argument; the main variants replace one layer without discarding the others.",
+            "limit": "This is a within-survey synthesis, not a theorem that every cited universality proof factors uniquely into these layers.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u01",
+              "matsumoto2014-u02",
+              "matsumoto2014-u06",
+              "matsumoto2014-u38"
+            ],
+            "title": "A layered architecture for universality proofs"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u02",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u02",
+          "spontaneous_reading": "Universality is not tied to one proof technology: Hilbert-space rearrangement, Good-Gonek approximation, and Bagchi's probability route package the same phase-access problem through different intermediate objects."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u02",
+          "source_grounded_mathematics": "Kronecker-Weyl gives positive-density simultaneous approximation of prescribed phases when the frequencies are Q-linearly independent; the survey lists three proofs of Voronin's theorem and notes Mergelyan polynomial approximation in the Gonek and Bagchi routes.",
+          "conceptual_reading": "The unit distinguishes a reusable equidistribution input from alternative analytic frameworks that convert it into function-space approximation.",
+          "representation_or_bridge": "Pecherskii rearrangement uses Hilbert-space series, whereas Bagchi uses a functional probability law; Mergelyan polynomials bridge holomorphic targets to tractable approximants in two routes.",
+          "boundary_or_failure": "The span catalogs ingredients rather than proving that the three arguments are equivalent or specifying how every ingredient is assembled.",
+          "uncertainty": "The prose and attributions are clear; no damaged formula is needed beyond the readable Kronecker-Weyl density statement."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states Kronecker-Weyl positive-density simultaneous phase approximation, lists Voronin, Good-Gonek, and Bagchi proof routes, assigns Pecherskii rearrangement to Voronin, and identifies Mergelyan approximation as common to Gonek and Bagchi."
+        ],
+        "inference": [
+          "The three routes can be compared as different intermediate analytic frameworks, but the span does not explain all of their assemblies."
+        ],
+        "unsupported_or_imported": [
+          "The claim that all three proofs package the same phase-access problem is not established here; the text says only that Voronin uses the preceding facts and that Gonek and Bagchi share Mergelyan's theorem."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Same phase-access problem through different intermediate objects' is a fluent unification that outruns the source's more limited catalog of ingredients."
+        ],
+        "context_or_ocr_risk": [
+          "No material OCR defect affects the prose or the readable Kronecker-Weyl statement."
+        ],
+        "missed_mechanism": [
+          "The candidate should preserve the asymmetric evidence: Pecherskii is tied to Voronin, Mergelyan to Gonek and Bagchi, while Good's mechanism is deferred to Section 16."
+        ],
+        "revision_instructions": [
+          "Replace the shared-phase-architecture claim with a source-bounded comparison of the three named routes and their explicitly attributed ingredients; state that the span does not establish equivalence or a common complete skeleton."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes representative families and the explicit explanation of the narrower Dedekind strip.",
+      "line_end": 329,
+      "line_start": 284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several series and condition (3.1) are formula-sensitive; the causal point is stated clearly in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that an Euler product motivates transfer beyond zeta but does not suffice: available mean-value estimates restrict Dedekind zeta universality, and coefficient hypotheses delimit general periodic or Euler-product classes.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler products suggest universality, but mean-value control fixes the strip",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u05.txt",
+      "unit_bytes": 2380,
+      "unit_id": "matsumoto2014-u05",
+      "unit_sha256": "fce6fba5e8453fc2bb89680015f7a3e029bc2326691299b6fbb75505024ed84b",
+      "unit_type": "method-boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u05.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 276,
+          "line_end": 283,
+          "text": "   • the ergodic universality,\nwere introduced recently. Other topics in universality theory have also\nbeen discussed extensively.\n   In the following sections, we will discuss more closely each topic in\nuniversality theory.\n\n\n\n",
+          "sha256": "9a605a9a499f978d7bcf65caa9b96284532a72db901ca2d80f54ad53974cd4ac"
+        },
+        "after": {
+          "line_start": 330,
+          "line_end": 337,
+          "text": "   However, there was an obstacle when we try to generalize further. A\ntypical class of L-functions\n                           P with Euler  products is that of automorphic\nL-functions. Let g(z) = ∞    n=1 a(n)e2πinz\n                                            be a holomorphic normalized\nHecke-eigenP cusp form    of weight κ with respect to SL(2, Z) and let\nL(s, g) = ∞  n=1 a(n)n −s\n                          be the associated L-function. The universality\n",
+          "sha256": "43dd7133e3de10795d104733ca91dde49c18bc3641ac42bd3adf767b15bce2e6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Generalization to zeta and L-functions with Euler products",
+            "line_end": 479,
+            "line_start": 284,
+            "mathematical_role": "Explains how Euler products, coefficient mean estimates, positive density, and prime-geodesic input control which L-function families and strips are universal."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 329,
+          "line_start": 284,
+          "title": "Euler products suggest universality, but mean-value control fixes the strip",
+          "unit_id": "matsumoto2014-u05",
+          "unit_type": "method-boundary",
+          "why_material": "Shows that an Euler product motivates transfer beyond zeta but does not suffice: available mean-value estimates restrict Dedekind zeta universality, and coefficient hypotheses delimit general periodic or Euler-product classes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes representative families and the explicit explanation of the narrower Dedekind strip.",
+          "representation_dependency": "Several series and condition (3.1) are formula-sensitive; the causal point is stated clearly in prose.",
+          "unit_id": "matsumoto2014-u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 280,
+            "line_start": 204,
+            "title": "Three-stage evolution of universality research",
+            "unit_id": "matsumoto2014-u04",
+            "unit_type": "historical-structural-map",
+            "why_material": "Records that the early period already generated most major variants, the middle period broadened the class of functions, and the recent period introduced mixed, composite, and ergodic directions; this distinguishes conceptual branching from mere chronology."
+          },
+          {
+            "line_end": 384,
+            "line_start": 330,
+            "title": "Positive density replaces unavailable first-moment coefficient information",
+            "unit_id": "matsumoto2014-u06",
+            "unit_type": "obstruction-and-repair",
+            "why_material": "Identifies the obstacle for automorphic L-functions—lack of the needed prime-coefficient absolute-sum asymptotic—and repairs it by combining the ordinary prime sum with a known squared-coefficient asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mean-value regions, coefficient moments, prime-geodesic errors, lower-depth zero-free values, and effectiveness of approximation tools control the admissible strip, assumptions, or observable density rather than merely polishing a fixed universality statement.",
+            "limit": "These dependencies come from heterogeneous theorems and do not yield a single formula predicting every universality region.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u05",
+              "matsumoto2014-u07",
+              "matsumoto2014-u08",
+              "matsumoto2014-u21",
+              "matsumoto2014-u38",
+              "matsumoto2014-u39"
+            ],
+            "title": "Analytic input quantitatively determines where and how universality is visible"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 283,
+              "line_start": 221,
+              "reason": "The historical stage map is retained in u04; names, acknowledgments, and transition prose are contextual rather than separate mechanisms."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u05",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u05",
+          "spontaneous_reading": "An Euler product suggests the phase model but does not determine the universality strip; the available mean-value estimate is the analytic bottleneck that decides where the model can be coupled back to the function."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u05",
+          "source_grounded_mathematics": "The survey lists universality for several Euler-product families; for a general number field it gives Dedekind-zeta universality only in D(1-d_F^{-1},1) because the required mean-value estimate is known only there, and it records coefficient conditions for broader periodic and Euler-product classes.",
+          "conceptual_reading": "Formal multiplicativity supplies candidate controllable phases, while quantitative analytic control fixes the region in which those phases faithfully represent the original function.",
+          "representation_or_bridge": "The Euler product bridges coefficient arithmetic to a finite phase system; mean-value estimates bridge the finite truncation back to the full zeta or L-function.",
+          "boundary_or_failure": "Possessing an Euler product is only motivation, not a sufficient criterion, and the stated generalizations retain family-specific coefficient or mean-value hypotheses.",
+          "uncertainty": "Some series and condition (3.1) are extraction-sensitive; the causal dependence of the Dedekind strip on mean-value control is explicit in prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says Euler products motivate extending universality, lists several proved families, and explicitly attributes the narrower general Dedekind-zeta strip D(1-d_F^{-1},1) to the region where the needed mean-value estimate is known.",
+          "It records family-specific coefficient hypotheses for periodic zeta-functions and general Euler products."
+        ],
+        "inference": [
+          "An Euler product can suggest a finite phase model, but that mechanism is not developed in this exact span."
+        ],
+        "unsupported_or_imported": [
+          "The claims that multiplicativity supplies controllable phases and that a mean-value estimate couples a finite phase system back to every full zeta or L-function import the earlier zeta proof template into a unit that only states motivation, examples, and the Dedekind mean-value bottleneck."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic 'finite phase system bridged back to the function' template obscures the source's concrete distinction between an Euler-product heuristic and family-specific analytic hypotheses."
+        ],
+        "context_or_ocr_risk": [
+          "Condition (3.1) and several series are formula-sensitive, but the Dedekind-strip causal statement is explicit in prose."
+        ],
+        "missed_mechanism": [
+          "The strongest locally supported mechanism is not general phase controllability but the explicit dependence of the proved Dedekind region on available mean-value control."
+        ],
+        "revision_instructions": [
+          "Retain the theorem-family inventory, exact Dedekind strip and its stated mean-value reason, and the periodic/general coefficient conditions; either omit the finite-phase coupling story or label it as an inference imported from the preceding proof discussion rather than evidence from this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Barnes motivation and the exact theorem hypotheses.",
+      "line_end": 1015,
+      "line_start": 960,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested multiple sums are visually degraded; the theorem's variable roles and zero-free condition are prose-readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For Euler-Zagier-Hurwitz multiple sums, treats the first variable as the approximation variable and makes nonvanishing of the remaining lower-depth zeta value an explicit condition for strong universality.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiple-zeta universality depends on a lower-depth zero-free value",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u21.txt",
+      "unit_bytes": 2702,
+      "unit_id": "matsumoto2014-u21",
+      "unit_sha256": "42c89ac2a099454be28ef8cd2432e93e9b2e44e5497aa2a87e45d1e46c0915f1",
+      "unit_type": "dimension-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u21.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 952,
+          "line_end": 959,
+          "text": "that ϕ is universal. Let K be a compact subset of D(σ1 , σ2 ) with\nconnected complement, λ1 , . . . , λr be complex numbers, and Kj = {s +\nλj | s ∈ K} (1 ≤ j ≤ r). Assume these Kj ’s are disjoint. Then\nϕj (s) = ϕ(s + λj ) (1 ≤ j ≤ r) are jointly universal. If ϕ is strongly\nuniversal, then ϕj ’s are jointly strongly universal. This is the shifts\nuniversality principle of Kaczorowski, Laurinčikas and J. Steuding [62].\n\n\n",
+          "sha256": "98811d4296923a8f6678f11397c229337bb28ebc07bb19914ab2c02635ef5132"
+        },
+        "after": {
+          "line_start": 1016,
+          "line_end": 1023,
+          "text": "\n                         8. The mixed universality\n   In Section 4 we discussed the joint universality among zeta or L-\nfunctions with Euler products. Then in Section 6 we considered the\njoint universality for those without Euler products. Is it possible to\ncombine these two directions to obtain certain joint universality results\nbetween two (or more) zeta-functions, one of which has Euler products\nand the other does not? The ﬁrst aﬃrmative answers are due to Sander\n",
+          "sha256": "aebcb105683e802b915c685263ff5ac71313e5e9ef186f733d065f5d6626793c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Universality for multiple zeta-functions",
+            "line_end": 1016,
+            "line_start": 960,
+            "mathematical_role": "Transfers strong universality to multiple sums and links the result to a lower-depth zero-free condition."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1015,
+          "line_start": 960,
+          "title": "Multiple-zeta universality depends on a lower-depth zero-free value",
+          "unit_id": "matsumoto2014-u21",
+          "unit_type": "dimension-reduction",
+          "why_material": "For Euler-Zagier-Hurwitz multiple sums, treats the first variable as the approximation variable and makes nonvanishing of the remaining lower-depth zeta value an explicit condition for strong universality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Barnes motivation and the exact theorem hypotheses.",
+          "representation_dependency": "Nested multiple sums are visually degraded; the theorem's variable roles and zero-free condition are prose-readable.",
+          "unit_id": "matsumoto2014-u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 957,
+            "line_start": 950,
+            "title": "Disjoint translated domains manufacture joint universality from one orbit",
+            "unit_id": "matsumoto2014-u20",
+            "unit_type": "construction-principle",
+            "why_material": "Provides a simple reusable construction: translate one universal function over disjoint compact sets so a single approximation problem encodes several target functions."
+          },
+          {
+            "line_end": 1059,
+            "line_start": 1017,
+            "title": "Mixed universality unifies prime and shifted-integer exponent systems",
+            "unit_id": "matsumoto2014-u22",
+            "unit_type": "bridge-construction",
+            "why_material": "Combines an Euler-product zeta target with a strong Hurwitz target and identifies linear independence of the union of prime logarithms and shifted-integer logarithms as the essential proof input."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mean-value regions, coefficient moments, prime-geodesic errors, lower-depth zero-free values, and effectiveness of approximation tools control the admissible strip, assumptions, or observable density rather than merely polishing a fixed universality statement.",
+            "limit": "These dependencies come from heterogeneous theorems and do not yield a single formula predicting every universality region.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u05",
+              "matsumoto2014-u07",
+              "matsumoto2014-u08",
+              "matsumoto2014-u21",
+              "matsumoto2014-u38",
+              "matsumoto2014-u39"
+            ],
+            "title": "Analytic input quantitatively determines where and how universality is visible"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u21",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u21",
+          "spontaneous_reading": "A multiple zeta-function becomes tractable by freezing all but the first variable; the residual lower-depth zeta value then appears as a nondegeneracy condition for the one-variable strong-universality mechanism."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u21",
+          "source_grounded_mathematics": "For the Euler-Zagier-Hurwitz r-fold sum, with Re(s₂)>3/2, Re(s_j)≥1 for j≥3, transcendental α₁, and nonzero ζ_{r-1}(s₂,…,s_r;α₂,…,α_r), Nakamura proves strong universality as a function of s₁ in D(1/2,1).",
+          "conceptual_reading": "Dimension reduction exposes a familiar one-variable frequency problem while retaining the frozen coordinates as a lower-depth coefficient or normalization whose vanishing would destroy the construction.",
+          "representation_or_bridge": "Slicing the nested sum in s₁ bridges multiple-zeta structure to a Hurwitz-type Dirichlet series, with the lower-depth zeta value recording whether usable mass remains.",
+          "boundary_or_failure": "This is not simultaneous multivariable universality; it fixes the remaining variables and requires their lower-depth zeta value to be nonzero under stated real-part conditions.",
+          "uncertainty": "Nested sums are visually degraded, but variable roles, region hypotheses, transcendence, and the zero-free condition are prose-readable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u21",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 18 fixes s₂,…,s_r, assumes Re(s₂)>3/2, Re(s_j)≥1 for j≥3, transcendental α₁, and nonzero lower-depth ζ_{r-1}, then concludes strong universality as a function of s₁ in D(1/2,1).",
+          "The candidate correctly distinguishes this from simultaneous multivariable universality."
+        ],
+        "inference": [
+          "Calling the setup a one-variable slice or dimension reduction is directly supported by treating only s₁ as the approximation variable."
+        ],
+        "unsupported_or_imported": [
+          "The span does not explain the proof, identify the lower-depth value as a coefficient or normalization, or show that its vanishing would destroy the construction; nonvanishing is a stated sufficient hypothesis, not a proved necessary condition here.",
+          "The assertion that slicing produces a Hurwitz-type Dirichlet series with 'usable mass' is plausible but not established by the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'nondegeneracy/usable mass' template turns an unexplained theorem hypothesis into a causal mechanism and risks silently strengthening sufficiency to necessity."
+        ],
+        "context_or_ocr_risk": [
+          "The nested sums are visually degraded, while the theorem's variables and hypotheses are readable enough for a reliable bounded revision."
+        ],
+        "missed_mechanism": [
+          "Because no proof architecture is supplied, the honest missing item is why the lower-depth nonzero value enters, not an inferred explanation of what its vanishing does."
+        ],
+        "revision_instructions": [
+          "Keep the exact theorem and the one-variable-versus-multivariable boundary; describe the lower-depth nonvanishing only as an explicit hypothesis whose proof role and necessity are not explained in this span, and remove the coefficient, normalization, and 'vanishing destroys the construction' claims."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is valuable negative evidence: failure of an argument is not silently converted into a theorem.",
+      "line_end": 1164,
+      "line_start": 1143,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exceptional condition on the reduced fraction is clear; exact displayed inequalities should be retained.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the all-irrational result from rational cases, records that two published all-rational arguments had a gap, gives the repaired range, and contrasts zeta with log-zeta self-approximation.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rational-scale recurrence has exceptional resonances and repaired proof gaps",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u25.txt",
+      "unit_bytes": 1169,
+      "unit_id": "matsumoto2014-u25",
+      "unit_sha256": "e6d239b474dd82621a877d1276284d05d5f819a0791814fc99497b5edf2a4abc",
+      "unit_type": "proof-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u25.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1135,
+          "line_end": 1142,
+          "text": "holds if d is algebraic irrational. Nakamura also proved in the same\npaper that (9.3) is valid for almost all d ∈ R. (Note that (9.3) for\nd = 0 is (9.1), hence the Riemann hypothesis.)\n\n<!-- source-page: 24 -->\n\n24                         KOHJI MATSUMOTO\n\n",
+          "sha256": "d1ec982342591fa324e8b2195913198373a7ce7bf819e18d397c98064684b867"
+        },
+        "after": {
+          "line_start": 1165,
+          "line_end": 1172,
+          "text": "   The strong recurrence property can be shown for more general zeta\nand L-functions. Some of the aforementioned papers actually consider\nnot only the Riemann zeta-function, but also Dirichlet L-functions.\nA generalization to a subclass of the Selberg class was discussed by\nNakamura [174]. The case of Hurwitz zeta-functions has been studied\nby Garunkštis and Karikovas [35] and Karikovas and Pańkowski [65].\n\n                 10. The weighted universality\n",
+          "sha256": "43bd847de0f8a5853c48e2b9497f1b4a62203f61353d9cfef29db61acebf5407"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Strong recurrence",
+            "line_end": 1171,
+            "line_start": 1075,
+            "mathematical_role": "Relates self-approximation to the Riemann hypothesis and records parameter-dependent successes, gaps, and almost-periodic analogies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1164,
+          "line_start": 1143,
+          "title": "Rational-scale recurrence has exceptional resonances and repaired proof gaps",
+          "unit_id": "matsumoto2014-u25",
+          "unit_type": "proof-audit",
+          "why_material": "Separates the all-irrational result from rational cases, records that two published all-rational arguments had a gap, gives the repaired range, and contrasts zeta with log-zeta self-approximation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is valuable negative evidence: failure of an argument is not silently converted into a theorem.",
+          "representation_dependency": "The exceptional condition on the reduced fraction is clear; exact displayed inequalities should be retained.",
+          "unit_id": "matsumoto2014-u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1137,
+            "line_start": 1105,
+            "title": "Scaled self-approximation from logarithmic independence",
+            "unit_id": "matsumoto2014-u24",
+            "unit_type": "generalization",
+            "why_material": "Connects recurrence to almost periodicity and derives joint approximations at algebraically independent shift scales using Baker-type independence of prime logarithms."
+          },
+          {
+            "line_end": 1224,
+            "line_start": 1172,
+            "title": "Weighted universality follows from weighted ergodic averaging",
+            "unit_id": "matsumoto2014-u26",
+            "unit_type": "measure-change",
+            "why_material": "Replaces uniform sampling of shifts by a weight and shows that a weighted analogue of Birkhoff-Khinchin is the condition that transports Bagchi's proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sparse support, inversion identities, resonant step sizes, and exceptional rational scalings show that universality can fail or require repair when the orbit is trapped by an algebraic or arithmetic relation.",
+            "limit": "Some boundaries remain incomplete, and a failed or repaired proof is not evidence that all excluded cases are false.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u16",
+              "matsumoto2014-u19",
+              "matsumoto2014-u25",
+              "matsumoto2014-u29"
+            ],
+            "title": "Relations are as informative as independence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u25",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u25",
+          "spontaneous_reading": "The useful content is the fault line between irrational and rational scale factors: irrational d is covered, while a reduced rational d=a/b is covered only away from |a−b|=1. The separate log-zeta statement shows that changing representation can preserve recurrence even where the zeta argument has an unresolved resonance."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u25",
+          "source_grounded_mathematics": "The survey reports (9.3) for every irrational d and for nonzero reduced rational d=a/b with |a−b|≠1, after noting gaps in earlier claims for all nonzero rationals. It separately states the log ζ self-approximation inequality (9.4) for every nonzero real d, and says its d=0 version would imply RH.",
+          "conceptual_reading": "Arithmetic relations among the two shift scales are a genuine obstruction to a proof method, not a cosmetic side condition. Passing from ζ to log ζ changes the object enough that the broader recurrence argument survives, so the representation determines which dependencies can be controlled.",
+          "representation_or_bridge": "The bridge is the comparison of two translated functions, ζ(s+iτ) and ζ(s+idτ), together with the parallel comparison after applying log. Writing d=a/b exposes the exceptional rational relation through |a−b|.",
+          "boundary_or_failure": "The cited gaps do not show that the excluded rational cases are false, and the repaired theorem leaves |a−b|=1 uncovered. The d=0 log statement is only a conditional implication toward RH, not an established recurrence result.",
+          "uncertainty": "The extracted inequality symbols are degraded, but the prose and displayed conditions make the covered and excluded parameter ranges clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u25",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states (9.3) for every irrational d and for reduced nonzero rational d=a/b with |a-b|≠1 after recording gaps in earlier all-rational claims.",
+          "It separately states the log-zeta inequality for every nonzero real d and only says that validity at d=0 would imply RH."
+        ],
+        "inference": [
+          "Comparing the zeta and log-zeta statements supports the limited observation that the represented object affects the proved parameter range."
+        ],
+        "unsupported_or_imported": [
+          "Calling |a-b|=1 an unresolved resonance and treating arithmetic relations as a genuine obstruction imports a mechanism not given in the span; the source establishes a gap and an uncovered range, not failure or resonance.",
+          "The claim that passing to log zeta makes particular dependencies controllable is not explained by the source."
+        ],
+        "paraphrase_or_style_risk": [
+          "The representation-determines-dependencies language risks a generic mechanism gloss unless tied to the exact contrast between the two stated results."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed inequalities are extraction-fragmented, although the parameter ranges and conditional d=0 statement are prose-supported."
+        ],
+        "missed_mechanism": [
+          "The audit should keep three statuses separate: a proved range, a gap in prior arguments, and cases left uncovered by the repaired theorem."
+        ],
+        "revision_instructions": [
+          "Replace resonance and dependency-control claims with the exact proof-status contrast: prior all-rational arguments had a gap, the repaired zeta result excludes |a-b|=1, and the log-zeta argument is reported valid for all nonzero real d without the span explaining why."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Reich's baseline theorem and contrasting rationality conditions from later families.",
+      "line_end": 1259,
+      "line_start": 1225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The discrete density display is clear; some exponential conditions are prose-stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines discrete universality via positive density among integer shifts and demonstrates across examples that the arithmetic nature of the step h affects whether phase equidistribution survives.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sampling on an arithmetic progression introduces arithmetic resonance",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u27.txt",
+      "unit_bytes": 1771,
+      "unit_id": "matsumoto2014-u27",
+      "unit_sha256": "095c14d7c5dae1ddbc8413414e0107e5e7f9c24f3a995b23da763727b939f374",
+      "unit_type": "discretization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u27.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1217,
+          "line_end": 1224,
+          "text": "                 T →∞ T 0\n\nin ergodic theory is used. This is the motivation of Laurinčikas [75];\nclearly (10.1) is a generalization of (10.3).\n   Laurinčikas [78] generalized Theorem 22 to the case of Matsumoto\nzeta-functions. Weighted universality theorems for L-functions L(s, E)\nof elliptic curves over Q were reported by Garbaliauskienė [26] [27].\n\n",
+          "sha256": "38d5acaa5e8acce3970aef921e27e9506ac800ddf4876247921fe4d7570b4e90"
+        },
+        "after": {
+          "line_start": 1260,
+          "line_end": 1267,
+          "text": "   The discrete universality for L-functions L(s, E) of elliptic curves was\nﬁrst studied in [30] under the assumption that exp(2πk/h) is irrational\nfor any non-zero integer k. However this condition was then removed:\nTheorem 24. (Garbaliauskienė, Genys and Laurinčikas [28]) The dis-\ncrete universality holds for L(s, E) for any real h 6= 0 in the region\nD(1, 3/2).\n   The same type of result can be shown, more generally, for L-functions\nattached to new forms. When exp(2πk/h) is irrational for any non-zero\n",
+          "sha256": "18f2a985e176c6d513330d4dbd35e88e392b24ed28249d1a2afc3cda34f01911"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11. Discrete universality",
+            "line_end": 1341,
+            "line_start": 1225,
+            "mathematical_role": "Studies approximation along arithmetic progressions of shifts and the resonances imposed by the step size."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1259,
+          "line_start": 1225,
+          "title": "Sampling on an arithmetic progression introduces arithmetic resonance",
+          "unit_id": "matsumoto2014-u27",
+          "unit_type": "discretization",
+          "why_material": "Defines discrete universality via positive density among integer shifts and demonstrates across examples that the arithmetic nature of the step h affects whether phase equidistribution survives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Reich's baseline theorem and contrasting rationality conditions from later families.",
+          "representation_dependency": "The discrete density display is clear; some exponential conditions are prose-stated.",
+          "unit_id": "matsumoto2014-u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1224,
+            "line_start": 1172,
+            "title": "Weighted universality follows from weighted ergodic averaging",
+            "unit_id": "matsumoto2014-u26",
+            "unit_type": "measure-change",
+            "why_material": "Replaces uniform sampling of shifts by a weight and shows that a weighted analogue of Birkhoff-Khinchin is the condition that transports Bagchi's proof."
+          },
+          {
+            "line_end": 1290,
+            "line_start": 1260,
+            "title": "Some coefficient structure removes step-size restrictions",
+            "unit_id": "matsumoto2014-u28",
+            "unit_type": "assumption-removal",
+            "why_material": "Records an elliptic/newform universality result valid for every nonzero step and a general Dirichlet-series theorem where algebraic exponents and rational exponential step data suffice."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u27",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u27",
+          "spontaneous_reading": "Replacing continuous shifts by the lattice ihn turns the step h into mathematical data. Some function families tolerate every nonzero step, while others require rationality or irrationality conditions on exp(2π/h), showing that discretization can trap phase coordinates in resonant suborbits."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u27",
+          "source_grounded_mathematics": "Discrete universality asks for positive lower density among integers n with ζF(s+ihn) close to a target. Reich's theorem gives this for Dedekind zeta-functions for every real h≠0 in its stated region; later examples impose contrasting arithmetic conditions on exp(2πk/h) or exp(2π/h).",
+          "conceptual_reading": "A continuous orbit may be dense while a sampled arithmetic progression is not. The sampling step controls phase equidistribution, and its arithmetic relations can create or avoid resonance depending on the coefficient system being sampled.",
+          "representation_or_bridge": "The continuous parameter τ is replaced by n↦ihn, and Lebesgue density is replaced by normalized counting density. Exponential conditions on h encode how that lattice acts on the phase coordinates underlying Dirichlet-series approximation.",
+          "boundary_or_failure": "The examples do not provide one necessary-and-sufficient condition valid for all zeta and L-function families. Reich's unrestricted h result belongs to its specific Dedekind-zeta setting and region.",
+          "uncertainty": "Some exponential conditions are stated only in prose, but the contrast between unrestricted and arithmetic-dependent step sizes is unambiguous."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u27",
+        "critic_decision": "revise",
+        "supported": [
+          "The span replaces continuous motion by shifts ihn and normalized counting density.",
+          "Reich's Dedekind-zeta theorem allows every nonzero real h in its stated region, while cited Matsumoto- and Lerch-zeta results use contrasting arithmetic hypotheses on exp(2πk/h) or exp(2π/h).",
+          "The source explicitly concludes that the arithmetic nature of h plays a role."
+        ],
+        "inference": [
+          "It is reasonable to say that discretization makes h mathematical data rather than a passive parametrization."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the sampled orbit is trapped in resonant phase suborbits and that h controls phase equidistribution supply a proof mechanism absent from this span.",
+          "Saying families require the cited rationality conditions risks turning sufficient hypotheses of particular results into necessary conditions."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phase-coordinate and resonance language is a familiar generic explanation but is not grounded here by an equidistribution argument."
+        ],
+        "context_or_ocr_risk": [
+          "The discrete density formula is readable; the later arithmetic conditions are prose-stated."
+        ],
+        "missed_mechanism": [
+          "The comparison should explicitly distinguish unrestricted results in one family from conditional results in others without proposing a common necessary-and-sufficient mechanism."
+        ],
+        "revision_instructions": [
+          "State only that discrete sampling exposes family-dependent arithmetic hypotheses on h, preserve Reich's specific region, and describe the rationality or irrationality assumptions as sufficient conditions in the cited results. Remove trapped-orbit and phase-equidistribution claims."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contrasts directly with the conditional examples in u27.",
+      "line_end": 1290,
+      "line_start": 1260,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strip and exponential hypotheses are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an elliptic/newform universality result valid for every nonzero step and a general Dirichlet-series theorem where algebraic exponents and rational exponential step data suffice.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Some coefficient structure removes step-size restrictions",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u28.txt",
+      "unit_bytes": 1706,
+      "unit_id": "matsumoto2014-u28",
+      "unit_sha256": "96336d57111b8e80cb6deced10337f7fb0d071ea0c901746e6e04ec4724222ab",
+      "unit_type": "assumption-removal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u28.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1252,
+          "line_end": 1259,
+          "text": "   Kačinskaitė [54] (see also [56]) proved a discrete universality theorem\nfor Matsumoto zeta-functions under the condition that exp(2πk/h) is\nirrational for any non-zero integer k. Ignatavičiūtė [46] reported that\ncertain discrete universality and certain joint discrete universality hold\nfor Lerch zeta-functions, provided exp(2π/h) is rational.\n   As can be seen in the above examples, an interesting point on discrete\nuniversality is that the arithmetic nature of the parameter h plays a\nrole.\n",
+          "sha256": "2f40b34386e6e85a4cd71ae27b5d47e27912792c98a75047e6873f91f1b56d24"
+        },
+        "after": {
+          "line_start": 1291,
+          "line_end": 1298,
+          "text": "   The discrete analogue of mixed universality can also be considered.\nThis direction was ﬁrst studied by Kačinskaitė [55]. Consider the case\nexp(2π/h) ∈ Q. Write exp(2π/h) = a/b with a, b ∈ Z and (a, b) = 1.\nDenote by Ph the set of all prime numbers appearing as a prime factor\nof a or b. Deﬁne the modiﬁed Dirichlet L-function Lh (s, χ) by removing\nall Euler factors corresponding to primes in Ph , that is\n                                 Y\u0012      χ(p)\n                                              \u0013−1\n",
+          "sha256": "15dc4deb4a95176a3f29b863f60a220cb705a4470715301ff14e9fef236cf77c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11. Discrete universality",
+            "line_end": 1341,
+            "line_start": 1225,
+            "mathematical_role": "Studies approximation along arithmetic progressions of shifts and the resonances imposed by the step size."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1290,
+          "line_start": 1260,
+          "title": "Some coefficient structure removes step-size restrictions",
+          "unit_id": "matsumoto2014-u28",
+          "unit_type": "assumption-removal",
+          "why_material": "Records an elliptic/newform universality result valid for every nonzero step and a general Dirichlet-series theorem where algebraic exponents and rational exponential step data suffice."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contrasts directly with the conditional examples in u27.",
+          "representation_dependency": "Strip and exponential hypotheses are clear.",
+          "unit_id": "matsumoto2014-u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1259,
+            "line_start": 1225,
+            "title": "Sampling on an arithmetic progression introduces arithmetic resonance",
+            "unit_id": "matsumoto2014-u27",
+            "unit_type": "discretization",
+            "why_material": "Defines discrete universality via positive density among integer shifts and demonstrates across examples that the arithmetic nature of the step h affects whether phase equidistribution survives."
+          },
+          {
+            "line_end": 1336,
+            "line_start": 1291,
+            "title": "Discrete mixed universality modifies Euler factors to match the step",
+            "unit_id": "matsumoto2014-u29",
+            "unit_type": "resonance-repair",
+            "why_material": "When the discrete step resonates rationally, removes exactly the Euler factors at primes dividing the associated numerator or denominator; alternative full independence restores the unmodified zeta result."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u28",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u28",
+          "spontaneous_reading": "Step-size restrictions are not intrinsic to the word ‘discrete’: elliptic-curve L-functions admit every nonzero h in the stated strip, while other families use algebraicity or rational exponential data. The coefficient structure decides whether a sampled phase orbit has enough freedom."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u28",
+          "source_grounded_mathematics": "Theorem 24 states discrete universality for elliptic-curve L-functions for every real h≠0 in D(1,3/2). The unit also records results for newforms, periodic and Hurwitz zeta-functions, a rational-independence criterion for ζ(s,α), and Theorem 25 for a general Dirichlet series with algebraic exponents λn and exp(2π/h)∈Q in D(σ1,σa).",
+          "conceptual_reading": "Arithmetic resonance is relative to the represented Dirichlet series, not merely to h. Extra coefficient or exponent structure can make a formerly imposed irrationality hypothesis dispensable or replace it with a different sufficient condition.",
+          "representation_or_bridge": "The relevant bridge is from the discrete shift n h to phase data built from the series exponents, exemplified by the set {log(m+α)}∪{2π/h}. Algebraicity and rationality hypotheses control relations in that phase representation.",
+          "boundary_or_failure": "The span does not assert that every family is universal for every nonzero h. Theorem 25 inherits the unspecified ‘as in Theorem 12’ hypotheses, so this unit alone does not reconstruct its full admissible class.",
+          "uncertainty": "The named regions and arithmetic hypotheses are readable; the inherited assumptions of Theorem 12 remain context-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u28",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 24 removes an earlier irrationality condition for elliptic-curve L-functions and gives discrete universality for every nonzero real h in D(1,3/2).",
+          "The span reports several other family-specific results, a rational-independence criterion for Hurwitz zeta, and Theorem 25 with algebraic exponents and exp(2π/h) rational.",
+          "The candidate correctly notes that Theorem 25 inherits unstated hypotheses from Theorem 12."
+        ],
+        "inference": [
+          "The collection shows that admissible step-size hypotheses vary with the represented Dirichlet series."
+        ],
+        "unsupported_or_imported": [
+          "The assertion that coefficient structure decides whether a sampled phase orbit has enough freedom is a causal explanation not supplied by the span.",
+          "Saying algebraicity and rationality control relations in a phase representation overstates what the listed sufficient hypotheses establish."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'phase freedom' account risks collapsing heterogeneous cited theorems into one unproved mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The named regions and hypotheses are readable, but the complete Theorem 12 assumptions are outside the unit."
+        ],
+        "missed_mechanism": [
+          "The evidentially safe contrast is between theorem statements and their differing assumptions, not an explanation of why the removed condition was removable."
+        ],
+        "revision_instructions": [
+          "Keep the exact removal of the elliptic-curve hypothesis and the family-specific sufficient criteria. Recast the conceptual claim as observed dependence of hypotheses on the function family, without attributing that dependence to coefficient-controlled phase freedom."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the source's correction that the cited theorem's argument proves the modified-L statement, not the printed unmodified one.",
+      "line_end": 1336,
+      "line_start": 1291,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Euler product and joint displays are fragmented; the set of removed primes and correction are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "When the discrete step resonates rationally, removes exactly the Euler factors at primes dividing the associated numerator or denominator; alternative full independence restores the unmodified zeta result.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrete mixed universality modifies Euler factors to match the step",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u29.txt",
+      "unit_bytes": 2334,
+      "unit_id": "matsumoto2014-u29",
+      "unit_sha256": "6dee071e17e7b4c69331d7d462c3b30b0f9bd07f89cc0805e729419c014006d3",
+      "unit_type": "resonance-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u29.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1283,
+          "line_end": 1290,
+          "text": "as in Theorem 12, and further suppose that λn are algebraic numbers\n\n<!-- source-page: 27 -->\n\nTHE THEORY OF UNIVERSALITY FOR ZETA AND L-FUNCTIONS                   27\n\nand exp(2π/h) ∈ Q. Then the discrete universality holds for f (s) in\nthe region D(σ1 , σa ).\n",
+          "sha256": "61896bfb47aef8040aa46a97dc28fc8d87e7bac446ab33d3b65261491917892b"
+        },
+        "after": {
+          "line_start": 1337,
+          "line_end": 1344,
+          "text": "\n<!-- source-page: 28 -->\n\n28                             KOHJI MATSUMOTO\n\n                          12. The χ-universality\n   The main point of Voronin’s universality theorem is the existence\nof τ , the imaginary part of the complex variable s, satisfying a certain\n",
+          "sha256": "828b33a9a178c0b13710dedc5599a729fd1890e66cbfa9e71ecec6a3af0bbc4c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11. Discrete universality",
+            "line_end": 1341,
+            "line_start": 1225,
+            "mathematical_role": "Studies approximation along arithmetic progressions of shifts and the resonances imposed by the step size."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1336,
+          "line_start": 1291,
+          "title": "Discrete mixed universality modifies Euler factors to match the step",
+          "unit_id": "matsumoto2014-u29",
+          "unit_type": "resonance-repair",
+          "why_material": "When the discrete step resonates rationally, removes exactly the Euler factors at primes dividing the associated numerator or denominator; alternative full independence restores the unmodified zeta result."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the source's correction that the cited theorem's argument proves the modified-L statement, not the printed unmodified one.",
+          "representation_dependency": "The Euler product and joint displays are fragmented; the set of removed primes and correction are explicit.",
+          "unit_id": "matsumoto2014-u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1290,
+            "line_start": 1260,
+            "title": "Some coefficient structure removes step-size restrictions",
+            "unit_id": "matsumoto2014-u28",
+            "unit_type": "assumption-removal",
+            "why_material": "Records an elliptic/newform universality result valid for every nonzero step and a general Dirichlet-series theorem where algebraic exponents and rational exponential step data suffice."
+          },
+          {
+            "line_end": 1368,
+            "line_start": 1342,
+            "title": "Character-aspect universality replaces vertical shifts by a family parameter",
+            "unit_id": "matsumoto2014-u30",
+            "unit_type": "parameter-reframing",
+            "why_material": "Reframes universality as positive-density approximation while Dirichlet characters vary with modulus, and records the restricted modulus families for which the proof is valid."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The independence needed for simultaneous approximation appears as character orthogonality, matrix rank, prime-coefficient correlation, logarithmic independence, or removal of resonant Euler factors depending on the chosen representation and sampling scheme.",
+            "limit": "The listed conditions mix sufficient, conjectural, and corrected criteria and must not be collapsed into one established equivalence.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u09",
+              "matsumoto2014-u10",
+              "matsumoto2014-u11",
+              "matsumoto2014-u17",
+              "matsumoto2014-u22",
+              "matsumoto2014-u29"
+            ],
+            "title": "Independence is representation-dependent"
+          },
+          {
+            "claim": "Sparse support, inversion identities, resonant step sizes, and exceptional rational scalings show that universality can fail or require repair when the orbit is trapped by an algebraic or arithmetic relation.",
+            "limit": "Some boundaries remain incomplete, and a failed or repaired proof is not evidence that all excluded cases are false.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u16",
+              "matsumoto2014-u19",
+              "matsumoto2014-u25",
+              "matsumoto2014-u29"
+            ],
+            "title": "Relations are as informative as independence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1341,
+              "line_start": 1337,
+              "reason": "Footnote closure and page furniture carry no additional mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u29",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u29",
+          "spontaneous_reading": "When exp(2π/h)=a/b, the repair removes exactly the Euler factors whose primes divide a or b. This is a structural correction to the function being approximated: resonant phase coordinates are deleted rather than ignored, while full logarithmic independence supports an unmodified mixed theorem."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u29",
+          "source_grounded_mathematics": "For reduced exp(2π/h)=a/b, Ph is the set of primes dividing a or b and Lh(s,χ) omits their Euler factors. Theorem 26 gives joint discrete approximation by Lh and a periodic Hurwitz zeta-function under transcendental α and periodic B. A separate linear-independence hypothesis on prime logs, log(m+α), and 2π/h yields an unmodified ζ/Hurwitz mixed statement.",
+          "conceptual_reading": "The modified Euler product isolates the coordinates corrupted by the discrete resonance. This is a representation-level repair: quotient out the obstructed local factors, or alternatively impose enough independence to keep all coordinates.",
+          "representation_or_bridge": "Factoring L into Euler coordinates identifies the finite set Ph directly from the rational step datum a/b. The two joint inequalities then compare a repaired Euler-product object and a Hurwitz-type object along the same discrete clock.",
+          "boundary_or_failure": "A footnote explicitly corrects the cited printed statement: its argument proves the result for Lh, not for the unmodified L. The independence condition is a sufficient route for a different statement and should not be conflated with the factor-removal route.",
+          "uncertainty": "The Euler-product display is visually fragmented, but the definition of Ph, the omitted factors, and the correction are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u29",
+        "critic_decision": "revise",
+        "supported": [
+          "For reduced exp(2π/h)=a/b, the span defines P_h as the primes dividing a or b and defines L_h by omitting their Euler factors.",
+          "Theorem 26 couples L_h with a periodic Hurwitz zeta-function, and a separate full logarithmic-independence assumption gives an unmodified zeta/Hurwitz statement.",
+          "The footnote explicitly says the cited argument proves the L_h statement rather than the printed unmodified-L statement."
+        ],
+        "inference": [
+          "Deleting exactly the local factors indexed by P_h is a representation-level modification matched to the rational datum a/b."
+        ],
+        "unsupported_or_imported": [
+          "The candidate calls the deleted factors corrupted phase coordinates and describes their removal as quotienting; neither characterization appears in the source and quotienting is not the displayed operation.",
+          "The claim that full independence keeps all coordinates is explanatory language beyond the stated sufficient condition."
+        ],
+        "paraphrase_or_style_risk": [
+          "Coordinate-control language can obscure the concrete and auditable Euler-factor deletion."
+        ],
+        "context_or_ocr_risk": [
+          "The product and joint inequalities are fragmented, but P_h, the omitted factors, and the footnote correction are explicit."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Describe the repair literally as deletion of the Euler factors at P_h and keep it distinct from the separate independence-based theorem. Remove 'corrupted coordinates,' 'quotient out,' and claims about why the independence condition works."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The footnote correction on permissible modulus sets is included in the next unit's span only as nearby support; this unit retains the theorem's explicit alternatives.",
+      "line_end": 1368,
+      "line_start": 1342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The character-count normalization is formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes universality as positive-density approximation while Dirichlet characters vary with modulus, and records the restricted modulus families for which the proof is valid.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Character-aspect universality replaces vertical shifts by a family parameter",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u30.txt",
+      "unit_bytes": 1295,
+      "unit_id": "matsumoto2014-u30",
+      "unit_sha256": "54601ade65c21411decf6ce35db5722e2ebba949e9091d25219cad637c792547",
+      "unit_type": "parameter-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u30.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1334,
+          "line_end": 1341,
+          "text": "orems in Section 18.\n  6The statement in [55] is given for L(s, χ), but her argument is valid not for\nL(s, χ), but for Lh (s, χ).\n\n<!-- source-page: 28 -->\n\n28                             KOHJI MATSUMOTO\n\n",
+          "sha256": "27f7c341f04103761822c72852541b4340e841ff28a00a982a293367be628be2"
+        },
+        "after": {
+          "line_start": 1369,
+          "line_end": 1376,
+          "text": "in χ-aspect. The universality for Hecke L-functions of number ﬁelds in\nχ-aspect was discussed by Mishou and Koyama [157], and by Mishou\n[147] [148].\n   Let χd be a real Dirichlet character with discriminant d. Another\ninteresting direction of research is the universality for L(s, χd ) in d-\naspect. This direction was studied in a series of papers by Mishou and\nNagoshi [158] [159] [160] [161]. Let Λ+ (resp. Λ− ) be the set of all\npositive (resp. negative) discriminants, and Λ+ (X) (resp. Λ− (X)) be\n",
+          "sha256": "d0213247c2587736a42201d87e0952458994846878b06e2ee10dcd0af11ccc02"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12. Chi-universality",
+            "line_end": 1426,
+            "line_start": 1342,
+            "mathematical_role": "Moves the varying parameter from vertical shift to character or discriminant and derives value- and class-number density consequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1368,
+          "line_start": 1342,
+          "title": "Character-aspect universality replaces vertical shifts by a family parameter",
+          "unit_id": "matsumoto2014-u30",
+          "unit_type": "parameter-reframing",
+          "why_material": "Reframes universality as positive-density approximation while Dirichlet characters vary with modulus, and records the restricted modulus families for which the proof is valid."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The footnote correction on permissible modulus sets is included in the next unit's span only as nearby support; this unit retains the theorem's explicit alternatives.",
+          "representation_dependency": "The character-count normalization is formula-sensitive but readable.",
+          "unit_id": "matsumoto2014-u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1336,
+            "line_start": 1291,
+            "title": "Discrete mixed universality modifies Euler factors to match the step",
+            "unit_id": "matsumoto2014-u29",
+            "unit_type": "resonance-repair",
+            "why_material": "When the discrete step resonates rationally, removes exactly the Euler factors at primes dividing the associated numerator or denominator; alternative full independence restores the unmodified zeta result."
+          },
+          {
+            "line_end": 1425,
+            "line_start": 1369,
+            "title": "Discriminant-aspect universality respects real symmetry and yields arithmetic density",
+            "unit_id": "matsumoto2014-u31",
+            "unit_type": "application-chain",
+            "why_material": "Shows how varying real characters changes the target geometry—positive values on the real axis—and turns functional density into density statements for L-values and quadratic class-number expressions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1341,
+              "line_start": 1337,
+              "reason": "Footnote closure and page furniture carry no additional mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u30",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u30",
+          "spontaneous_reading": "Universality can be moved from a translation parameter to an arithmetic family parameter: instead of finding a height τ, one finds many characters χ modulo q. The normalization by φ(q) makes this an ensemble-density statement rather than recurrence along one analytic orbit."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u30",
+          "source_grounded_mathematics": "Theorem 27 gives a positive limiting proportion, normalized by φ(q), of characters modulo q whose L(s,χ) approximates a nonvanishing holomorphic target on K. The moduli q tend to infinity through either all primes or integers supported on a fixed finite set of primes.",
+          "conceptual_reading": "The approximating degrees of freedom are reparameterized from vertical motion of one function to variation across a character family. What is preserved is target approximation in function space; what changes is the orbit or ensemble that supplies it.",
+          "representation_or_bridge": "Dirichlet characters index the family of L-functions, while character counting replaces measure of shift times. The two admissible modulus families encode the arithmetic supply of those indices.",
+          "boundary_or_failure": "The theorem does not permit an arbitrary infinite set of moduli. The included correction says an unrestricted claim in one cited source was not justified and that the stated restriction is needed for that proof.",
+          "uncertainty": "The character-count display is formula-sensitive, but its normalization and the two allowed modulus families are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u30",
+        "critic_decision": "revise",
+        "supported": [
+          "The span changes the varying parameter from a vertical shift to characters modulo q.",
+          "Theorem 27 normalizes the count by phi(q) and restricts Q to all primes or integers supported on a fixed finite prime set.",
+          "The target remains nonvanishing on an admissible compact subset of D(1/2,1)."
+        ],
+        "inference": [
+          "Calling this an ensemble-density formulation rather than recurrence along one analytic orbit is a faithful reframing of the displayed count."
+        ],
+        "unsupported_or_imported": [
+          "The discussion of a correction to an unrestricted claim comes from the footnote outside this exact unit span.",
+          "'Positive limiting proportion' overstates the displayed liminf; the theorem gives a positive lower limiting proportion, not existence of a limit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The character-count display is formula-sensitive but its normalization and the two listed Q families are clear."
+        ],
+        "missed_mechanism": [
+          "The audit should preserve the liminf quantifier exactly."
+        ],
+        "revision_instructions": [
+          "Change 'positive limiting proportion' to 'positive lower limiting proportion' and remove the external footnote/correction claim. State only that this theorem itself is given for the two explicit modulus families."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the full relation form and its specialization to polynomial coefficients.",
+      "line_end": 1462,
+      "line_start": 1427,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (13.1) is extraction-sensitive but its quantification and consequence are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives finite-dimensional density of zeta and its derivatives from function-space universality, then uses it to exclude any nontrivial continuous-coefficient relation and hence algebraic differential equations.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universality implies derivative density and functional independence",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u32.txt",
+      "unit_bytes": 1835,
+      "unit_id": "matsumoto2014-u32",
+      "unit_sha256": "eb2f550f77ac56ff1945ea2f996d3d57088b646d1e028db5fc435e41ca3f347d",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u32.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1419,
+          "line_end": 1426,
+          "text": "certain character sums [2]. In [160] Mishou and Nagoshi gave some\nconditions equivalent to the Riemann hypothesis from their viewpoint.\n   The universality in d-aspect for Hecke L-functions of class group\ncharacters for imaginary quadratic ﬁelds are studied by Mishou [151].\nIn √[150], Mishou considered cubic characters associated with the ﬁeld\nQ( −3), and proved a universality theorem for associated Hecke L-\nfunctions in cubic character aspect.\n\n",
+          "sha256": "58046c75e6e2dc70a19531383051a038f1be2ad635221421f3b1b33dc9f87c63"
+        },
+        "after": {
+          "line_start": 1463,
+          "line_end": 1470,
+          "text": "   An application of the universality to the problem on Dirichlet poly-\nnomials was done by Andersson [1]. He used the universality theorem\nto show that several conjectures on lower bounds of certain integrals of\nDirichlet polynomials, proposed by Ramachandra [187] and Balasub-\nramanian and Ramachandra [6] are false.\n   The universality property was applied even in physics; see Gutzwiller\n[44], Bitar, Khuri and Ren [10].\n\n",
+          "sha256": "4966b01e1d8cfa9e5c24adafa97685b2b8f9bff8130f4a1c547457c33becdcff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "13. Other applications",
+            "line_end": 1470,
+            "line_start": 1427,
+            "mathematical_role": "Derives derivative density and functional or differential independence from universality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1462,
+          "line_start": 1427,
+          "title": "Universality implies derivative density and functional independence",
+          "unit_id": "matsumoto2014-u32",
+          "unit_type": "application",
+          "why_material": "Derives finite-dimensional density of zeta and its derivatives from function-space universality, then uses it to exclude any nontrivial continuous-coefficient relation and hence algebraic differential equations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the full relation form and its specialization to polynomial coefficients.",
+          "representation_dependency": "Equation (13.1) is extraction-sensitive but its quantification and consequence are prose-supported.",
+          "unit_id": "matsumoto2014-u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1425,
+            "line_start": 1369,
+            "title": "Discriminant-aspect universality respects real symmetry and yields arithmetic density",
+            "unit_id": "matsumoto2014-u31",
+            "unit_type": "application-chain",
+            "why_material": "Shows how varying real characters changes the target geometry—positive values on the real axis—and turns functional density into density statements for L-values and quadratic class-number expressions."
+          },
+          {
+            "line_end": 1526,
+            "line_start": 1471,
+            "title": "Universality as rearrangement and orbit density",
+            "unit_id": "matsumoto2014-u33",
+            "unit_type": "conceptual-genealogy",
+            "why_material": "Connects Fekete and Birkhoff universal functions to Riemann rearrangement and Pecherskii's Hilbert-space analogue, then packages Voronin's theorem as density of a translation orbit relative to a target subset."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disjoint shifts, derivatives, hybrid phase control, linear or polynomial combinations, and stable operators generate new universal functions when target preimages and approximation errors can still be controlled.",
+            "limit": "Each transport has its own hypotheses; the survey provides no unrestricted closure principle for arbitrary transformations.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u20",
+              "matsumoto2014-u32",
+              "matsumoto2014-u35",
+              "matsumoto2014-u36",
+              "matsumoto2014-u37",
+              "matsumoto2014-u40",
+              "matsumoto2014-u41"
+            ],
+            "title": "Universality transports through constructions when control survives"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1470,
+              "line_start": 1463,
+              "reason": "Brief application pointers to disproved integral conjectures and physics are too compressed to segment safely."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u32",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u32",
+          "spontaneous_reading": "Function-space universality projects to density of finite derivative jets, and a dense jet cannot remain inside the zero set of a nontrivial continuous-coefficient relation. This turns approximation freedom into functional independence, with algebraic differential independence as a polynomial specialization."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u32",
+          "source_grounded_mathematics": "The survey says Voronin's multidimensional density theorem for ζ and its derivatives follows immediately from universality. Theorem 29 states that if continuous functions fl:C^m→C satisfy Σ from l=0 to n of s^l fl(ζ(s),ζ′(s),…,ζ^(m−1)(s))=0 for all s, then every fl is identically zero; polynomial fl give the absence of nontrivial algebraic differential equations.",
+          "conceptual_reading": "Universality supplies local freedom in an infinite-dimensional function space, while taking derivatives evaluates a finite jet. Density of those jets falsifies any purported universal relation whose coefficient functions would have to vanish on all attainable jet data.",
+          "representation_or_bridge": "The bridge is the jet map g↦(g,g′,…,g^(m−1)) and the passage from uniform approximation to finite-dimensional derivative density. Specializing continuous fl to polynomials connects the general relation to algebraic differential equations.",
+          "boundary_or_failure": "The conclusion concerns relations of the displayed form and does not by itself establish every conceivable notion of independence. Analogues for other universal Dirichlet series are asserted only at the survey level.",
+          "uncertainty": "Equation (13.1) is extraction-sensitive, but its quantifiers and the polynomial specialization are confirmed by the surrounding prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u32",
+        "critic_decision": "revise",
+        "supported": [
+          "The source says the multidimensional density theorem for zeta and its derivatives follows from universality.",
+          "Theorem 29 gives the displayed relation with continuous f_l and concludes every f_l vanishes identically; polynomial f_l yield the algebraic-differential-equation consequence.",
+          "The candidate correctly limits the conclusion to relations of the displayed form."
+        ],
+        "inference": [
+          "Passing from function approximation to finite derivative data is a plausible bridge for the multidimensional density result."
+        ],
+        "unsupported_or_imported": [
+          "The claim that jet density by itself forces the displayed relation to vanish suppresses the nonconstant coefficients s^l and reconstructs a proof not present in the span.",
+          "Describing the relation simply as a zero set in jet space omits its explicit dependence on s."
+        ],
+        "paraphrase_or_style_risk": [
+          "The dense-jet-falsifies-any-relation template makes the proof burden look more direct than the displayed theorem warrants."
+        ],
+        "context_or_ocr_risk": [
+          "Equation (13.1) is formula-sensitive, but the powers s^l, quantifiers, and polynomial specialization are prose-supported."
+        ],
+        "missed_mechanism": [
+          "Any proof sketch must explain how the powers of s are separated in addition to using derivative density; this unit does not provide that argument."
+        ],
+        "revision_instructions": [
+          "Retain the exact implication reported by the survey and the jet-map bridge, but do not claim that density alone proves Theorem 29. Explicitly preserve the s^l dependence and label the derivation as unstated in this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the direct synthesis of the two orbit pictures in u33-u34.",
+      "line_end": 1593,
+      "line_start": 1559,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The max/sup and phase inequality display is formula-sensitive; prose names both coupled components.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States simultaneous approximation of several L-functions together with prescribed prime phases and then broadens the phase condition to arbitrary rationally independent frequencies.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hybrid universality couples functional targets with phase constraints",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u35.txt",
+      "unit_bytes": 1862,
+      "unit_id": "matsumoto2014-u35",
+      "unit_sha256": "8ee1ea9a8d87b347f72381904e0235edafbbc7ff22a96c69ba7092089d27d9f1",
+      "unit_type": "hybrid-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u35.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1551,
+          "line_end": 1558,
+          "text": "theorem implies that, if α1 , . . . , αr ∈ R are linearly independent over\nQ, then the orbit of\n                (Tτ (α1 ), . . . , Tτ (αr )) = (e2πiτ α1 , . . . , e2πiτ αr )\nis dense in S 1 × · · · × S 1 . Therefore α1 , . . . , αr are jointly universal.\n   The above observation shows that both the Voronin theorem and the\nKronecker-Weyl theorem express certain universality properties. Is it\npossible to combine these two universality theorems? The answer is\nyes, and we will discuss this matter in the next section.\n",
+          "sha256": "29bdd949c24a7886226e717197ec26724a158ed3c203407edb4f01d82060df74"
+        },
+        "after": {
+          "line_start": 1594,
+          "line_end": 1601,
+          "text": "   Hybrid universality theorems are quite useful in applications. Gonek\n[40] used his hybrid universality theorem to show the joint universality\nfor Dedekind zeta-functions of Abelian number ﬁelds (mentioned in\nSection 3). The key fact here is that those Dedekind zeta-functions can\nbe written as products of Dirichlet L-functions. On the other hand, the\naim of Kaczorowski and Kulas [61] was Pto study the distribution of zeros\nof linear combinations of the form       Pj (s)L(s, χj ), where Pj (s) are\nDirichlet polynomials. Kaczorowski and Kulas applied Theorem 30 to\n",
+          "sha256": "9784e918bd2e84b4966915abee9b07dc729c45243b05ad6f7bf54c613ae73975"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "15. Hybrid universality",
+            "line_end": 1648,
+            "line_start": 1559,
+            "mathematical_role": "Couples function approximation to finite phase constraints and uses the coupling to control combinations and polynomials of L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1593,
+          "line_start": 1559,
+          "title": "Hybrid universality couples functional targets with phase constraints",
+          "unit_id": "matsumoto2014-u35",
+          "unit_type": "hybrid-construction",
+          "why_material": "States simultaneous approximation of several L-functions together with prescribed prime phases and then broadens the phase condition to arbitrary rationally independent frequencies."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the direct synthesis of the two orbit pictures in u33-u34.",
+          "representation_dependency": "The max/sup and phase inequality display is formula-sensitive; prose names both coupled components.",
+          "unit_id": "matsumoto2014-u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1558,
+            "line_start": 1535,
+            "title": "Kronecker-Weyl is joint universality on a torus",
+            "unit_id": "matsumoto2014-u34",
+            "unit_type": "unification",
+            "why_material": "Expresses joint universality abstractly as density in a product space and realizes rational independence as density of a phase orbit on a torus, unifying the Diophantine and zeta meanings of universality."
+          },
+          {
+            "line_end": 1624,
+            "line_start": 1594,
+            "title": "Hybrid universality makes linear combinations strongly universal",
+            "unit_id": "matsumoto2014-u36",
+            "unit_type": "closure-mechanism",
+            "why_material": "Explains how controlling phases handles products or coefficients and yields strong universality, hence linearly many zeros, for nontrivial Dirichlet-series-weighted linear combinations of jointly hybrid-universal L-functions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disjoint shifts, derivatives, hybrid phase control, linear or polynomial combinations, and stable operators generate new universal functions when target preimages and approximation errors can still be controlled.",
+            "limit": "Each transport has its own hypotheses; the survey provides no unrestricted closure principle for arbitrary transformations.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u20",
+              "matsumoto2014-u32",
+              "matsumoto2014-u35",
+              "matsumoto2014-u36",
+              "matsumoto2014-u37",
+              "matsumoto2014-u40",
+              "matsumoto2014-u41"
+            ],
+            "title": "Universality transports through constructions when control survives"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u35",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u35",
+          "spontaneous_reading": "Hybrid universality synchronizes two controls with one shift: approximation of several L-functions and placement of finitely many arithmetic phases. It is the product orbit promised by the preceding abstraction, with neither the function-space nor torus component treated as auxiliary."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u35",
+          "source_grounded_mathematics": "For pairwise nonequivalent Dirichlet characters, Theorem 30 gives positive lower density of τ simultaneously approximating prescribed nonvanishing holomorphic targets by L(s+iτ,χj) and prescribed phases θp by τ log p/(2π), for primes p≤z. A later result replaces the prime phases with arbitrary finitely many real frequencies linearly independent over Q.",
+          "conceptual_reading": "Hybridization is synthesis at the level of constraints: the same parameter must hit a neighborhood in a holomorphic-function product and a neighborhood on a finite torus. Phase control can later manage Euler-product coefficients while analytic control manages target shape.",
+          "representation_or_bridge": "The bridge object is the product of function-space coordinates and phase coordinates. Prime logarithms translate vertical shifts of Euler factors into rotations, while the max/sup condition records simultaneous functional approximation.",
+          "boundary_or_failure": "The theorem assumes a finite phase set, pairwise nonequivalent characters, nonvanishing targets, and the stated compact domain. Broader Euler-product and non-Euler-product extensions are cited without their full hypotheses.",
+          "uncertainty": "The coupled display is formula-sensitive, but both simultaneous components and their quantification are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u35",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 30 gives positive lower density of shifts simultaneously approximating several nonvanishing targets by pairwise nonequivalent Dirichlet L-functions and prescribed finitely many prime phases.",
+          "The span reports replacement of the prime-phase condition by arbitrary finitely many rationally independent real frequencies.",
+          "The source itself names this combination hybrid joint universality."
+        ],
+        "inference": [
+          "The simultaneous inequalities can be represented as hitting a neighborhood in a product of function-space and finite torus coordinates."
+        ],
+        "unsupported_or_imported": [
+          "The claim that phase control later manages Euler-product coefficients imports an application mechanism not stated in this exact span.",
+          "Saying prime logarithms translate vertical shifts of Euler factors into rotations is a plausible external explanation, but the span supplies no Euler-factor derivation."
+        ],
+        "paraphrase_or_style_risk": [
+          "The downstream coefficient-control gloss risks rewarding a standard hybrid-universality explanation rather than the bounded theorem."
+        ],
+        "context_or_ocr_risk": [
+          "The max/sup and phase-distance display is extraction-sensitive, while the two simultaneous constraints are clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the product-constraint interpretation and exact hypotheses, but remove the asserted downstream coefficient-management role and any unproved Euler-factor mechanism."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the small-circle limitation of the alternative result.",
+      "line_end": 1773,
+      "line_start": 1748,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The multivariable function notation is clear; prose carries the method and limitation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts broad family extensions of the operator method with an alternative approach that uses weak approximation, the implicit function theorem, and Picard-Lindelof theory for analytic functions of zeta and its derivatives.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic composites can be handled through differential-equation lifting",
+      "unit_artifact_relpath": "depth/units/matsumoto2014-u41.txt",
+      "unit_bytes": 1410,
+      "unit_id": "matsumoto2014-u41",
+      "unit_sha256": "a8515e7fff251d019a5ac3eb125adfccff24f5c61126f2d3d6eea76fbaa80840",
+      "unit_type": "alternative-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014-u41.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1740,
+          "line_end": 1747,
+          "text": "holds for all g1 , g2 ∈ H(D(1/2, 1)).\n   Then it is pointed out in [94] that if F ∈ Lip(α), then F (ζ(s)) has\nthe universality property. This claim especially includes the proof of\nthe universality for ζ ′(s).\n   To prove other theorems in [94], Laurinčikas applied the method of\nfunctional limit theorems (cf. Mauclaire [140]). Those results imply,\nfor example, ζ ′(s)+ζ ′′(s), ζ(s)m (m-th power), exp(ζ(s)), and sin(ζ(s))\nare universal.\n",
+          "sha256": "6b69aa77766fe3862f60c2a9e625589db9e61c918c051abbd68eb1528c02911e"
+        },
+        "after": {
+          "line_start": 1774,
+          "line_end": 1781,
+          "text": "\n\n              18. Ergodicity and the universality\n   It is quite natural to understand universality from the ergodic view-\npoint. In fact, the universality theorem for a certain Dirichlet series\nϕ(s) implies that the orbit {ϕ(s + iτ ) | τ ∈ R} is dense in a cer-\ntain function space, and this orbit comes back to an arbitrarily small\nneighbourhood of any target function inﬁnitely often. This is really an\n",
+          "sha256": "baa3eb66b2cf9a4371ad4f56cb618665d77d975157bf5c44f7189ac98e9c3f81"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5cc203a980f256f15e8985f4a2b4158a18d57cbe9c276f3933e9438cfc12df25",
+        "dossier_sha256": "bfaa5ffc78a51d996a644ccd5c736d9462fc47b6e1b68474668981f9286b7180",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "17. Universality for derived functions",
+            "line_end": 1775,
+            "line_start": 1708,
+            "mathematical_role": "Asks which operators preserve universality and supplies continuity, preimage, and analytic mechanisms for composite functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1773,
+          "line_start": 1748,
+          "title": "Analytic composites can be handled through differential-equation lifting",
+          "unit_id": "matsumoto2014-u41",
+          "unit_type": "alternative-method",
+          "why_material": "Contrasts broad family extensions of the operator method with an alternative approach that uses weak approximation, the implicit function theorem, and Picard-Lindelof theory for analytic functions of zeta and its derivatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the small-circle limitation of the alternative result.",
+          "representation_dependency": "The multivariable function notation is clear; prose carries the method and limitation.",
+          "unit_id": "matsumoto2014-u41"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1747,
+            "line_start": 1708,
+            "title": "A preimage-plus-continuity condition lifts universality through operators",
+            "unit_id": "matsumoto2014-u40",
+            "unit_type": "operator-lifting",
+            "why_material": "Frames composite universality for operators on holomorphic function spaces and gives a Lipschitz-type criterion combining nonvanishing preimages of polynomial targets with local stability."
+          },
+          {
+            "line_end": 1825,
+            "line_start": 1776,
+            "title": "Universality is dense recurrence of a translation orbit",
+            "unit_id": "matsumoto2014-u42",
+            "unit_type": "dynamical-reframing",
+            "why_material": "Defines joint ergodic universality for iterates of a measure-preserving transformation and states its equivalence to ordinary target approximation, with positive-density recurrence along almost every orbit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Disjoint shifts, derivatives, hybrid phase control, linear or polynomial combinations, and stable operators generate new universal functions when target preimages and approximation errors can still be controlled.",
+            "limit": "Each transport has its own hypotheses; the survey provides no unrestricted closure principle for arbitrary transformations.",
+            "parent_local_unit_ids": [
+              "matsumoto2014-u20",
+              "matsumoto2014-u32",
+              "matsumoto2014-u35",
+              "matsumoto2014-u36",
+              "matsumoto2014-u37",
+              "matsumoto2014-u40",
+              "matsumoto2014-u41"
+            ],
+            "title": "Universality transports through constructions when control survives"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014-u41",
+        "spontaneous": {
+          "unit_id": "matsumoto2014-u41",
+          "spontaneous_reading": "A different lifting route treats an analytic composite F(ζ,ζ′,…,ζ^(n)) through local analytic solvability and differential equations. It gains a universality statement only on a certain small circle, making locality an explicit price of the alternative mechanism."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014-u41",
+          "source_grounded_mathematics": "After listing extensions of composite universality to several zeta and L-function families, the unit describes Christ, J. Steuding, and Vlachou's treatment of continuous F on an open subset of C^(n+1). They first obtain weak universal approximation; for nonconstant analytic F they obtain a kind of universality on a certain small circle using the implicit function theorem and Picard–Lindelöf theory.",
+          "conceptual_reading": "Instead of a global operator preimage condition, this method constructs a local lift through analytic equations. The implicit-function step selects compatible local data, and differential-equation existence propagates them into a realizable jet.",
+          "representation_or_bridge": "The bridge is the finite jet (ζ,ζ′,…,ζ^(n)) fed into F, together with local inverse and ODE machinery linking a desired composite target to an analytic function whose derivatives can be approximated.",
+          "boundary_or_failure": "The result is explicitly qualified as weak at first and, in the analytic case, confined to a certain small circle. The span does not state the full domain conditions or a global composite-universality theorem.",
+          "uncertainty": "The method and small-circle limitation are clear, but the precise theorem statement and circle parameters are not present in this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014-u41",
+        "critic_decision": "revise",
+        "supported": [
+          "The span lists extensions to several function families and then reports an alternative treatment of F(zeta,zeta',...,zeta^(n)).",
+          "It states weak approximation first, a kind of universality on a certain small circle for nonconstant analytic F, and reliance on the implicit function and Picard-Lindelöf theorems.",
+          "The candidate preserves the local and qualified nature of the result."
+        ],
+        "inference": [
+          "It is safe to call this an alternative local analytic route distinct from the preceding global operator criterion."
+        ],
+        "unsupported_or_imported": [
+          "The account that the implicit-function theorem selects compatible local data and the ODE propagates them into a realizable jet reconstructs roles not explained in the span.",
+          "The asserted local inverse-and-ODE bridge from a desired target to an approximable analytic jet is more specific than the source's brief method citation."
+        ],
+        "paraphrase_or_style_risk": [
+          "The lifting narrative is mathematically plausible but risks importing a standard proof story into a survey sentence that does not supply it."
+        ],
+        "context_or_ocr_risk": [
+          "The exact theorem and circle parameters are absent, so the method cannot be reconstructed reliably from this unit."
+        ],
+        "missed_mechanism": [
+          "The bounded evidence supports only which external theorems the proof relies on, not how each is deployed."
+        ],
+        "revision_instructions": [
+          "Retain the finite-jet input, weak-to-small-circle result, hypotheses on F, and cited proof tools. Remove the detailed claims assigning selection, propagation, and realizability roles to those tools."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "78f1d6afb7901467f5d899b5837301a4d140503f313b87fa1cabe47e95d83c23"
+}

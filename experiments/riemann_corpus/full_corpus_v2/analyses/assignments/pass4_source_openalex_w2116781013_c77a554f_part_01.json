@@ -1,0 +1,517 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2116781013_c77a554f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2116781013",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 99-103 are necessary setup omitted from the prior v1 span; the strategy is an empirically ordered search, not a theorem that the changes are normally outermost.",
+      "line_end": 132,
+      "line_start": 99,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Gram-block boundaries and endpoint evaluations of Z(t); the garbled subscripts are recoverable from the checked prose but exact notation should be verified against the scan if reused symbolically.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Once a block of length L has implicitly supplied L-2 sign changes, the search is reduced to two remaining changes that must share a Gram interval. The program ranks the two outer intervals by endpoint-value evidence, applies parabolic interpolation, then searches the other outer interval and finally the interior or full length-two block.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reduce a Gram block to locating two missing sign changes",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_d04.txt",
+      "unit_bytes": 2301,
+      "unit_id": "openalex_w2116781013_d04",
+      "unit_sha256": "b2241bb854a1a20db1aa6ba61b12a1ac4ce65d2921bd20b669e2fc0e61eef40b",
+      "unit_type": "search strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d04.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 91,
+          "line_end": 98,
+          "text": "reduced further to about 1.185. From the statistics in Section 4, it follows that in the\nrange [ g 156 ,800,000 , g 200.000 ,000 ) this average number of Z-evaluations could not have\nbeen reduced below 1.135 by any program which evaluated Z(t) at all Gram points.\nWe also note that about 98 percent of the running time of the L R & W-program\nwas spent on evaluating Z(t ). This program was executed on a CDC CYBER 175\ncomputer and ran about ten times as fast as the UNIV AC 1100 / 42 program of\nBrent. This is roughly what could be expected, given the relative speeds of the\ndifferent machines.\n",
+          "sha256": "5b9a9d66d44d2d765ce5732d5c15ca2f7fbca962905a26ba240e50255923c75b"
+        },
+        "after": {
+          "line_start": 133,
+          "line_end": 140,
+          "text": "   If at some instant one of the search routines has detected the missing two, a new\nGram block is set up, and we continue as described above. In the opposite case the\nprogram prints a message and a \"plot\" of Z( t) corresponding to the whole Gram\nblock under investigation and proceeds by pretending (!) that the missing two were\nfound indeed. These plots of Z(t) were inspected afterwards (if necessary) \"by\nhand\". So far, the missing two were always easily found either in the Gram block\nunder consideration or in an adjacent Gram block; compare Brent [2, Section 4].\n   After having covered the range [g 156 ,800 ,000 , g 200 _000 ,000 ), we ran the computation a\n",
+          "sha256": "59c704d43f0ce1c1a86865c5e519a53661b40b963ff59e507f38c76659689935"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "sign-change search strategy",
+            "line_end": 146,
+            "line_start": 99,
+            "mathematical_role": "Derives the missing-two subproblem, gives the ordered interval-search heuristic and fallbacks, and describes exceptional-case inspection and theorem-based closure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 132,
+          "line_start": 99,
+          "title": "Reduce a Gram block to locating two missing sign changes",
+          "unit_id": "openalex_w2116781013_d04",
+          "unit_type": "search strategy",
+          "why_material": "Once a block of length L has implicitly supplied L-2 sign changes, the search is reduced to two remaining changes that must share a Gram interval. The program ranks the two outer intervals by endpoint-value evidence, applies parabolic interpolation, then searches the other outer interval and finally the interior or full length-two block."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 99-103 are necessary setup omitted from the prior v1 span; the strategy is an empirically ordered search, not a theorem that the changes are normally outermost.",
+          "representation_dependency": "Depends on Gram-block boundaries and endpoint evaluations of Z(t); the garbled subscripts are recoverable from the checked prose but exact notation should be verified against the scan if reused symbolically.",
+          "unit_id": "openalex_w2116781013_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 98,
+            "line_start": 74,
+            "title": "Finite zero verification becomes costed sign-change separation",
+            "unit_id": "openalex_w2116781013_d03",
+            "unit_type": "computational certification framing",
+            "why_material": "The paper states that verification over a finite range is performed by separating zeros of the real function Z(t), equivalently by finding enough sign changes, and identifies Z-evaluation as the dominant cost. It then compares evaluation counts and gives a source-specific lower bound for methods evaluating every Gram point."
+          },
+          {
+            "line_end": 146,
+            "line_start": 133,
+            "title": "Escalate unresolved blocks to preserved plots and manual inspection",
+            "unit_id": "openalex_w2116781013_d05",
+            "unit_type": "failure handling and certification closure",
+            "why_material": "The automated routine records unresolved blocks instead of silently treating its heuristic as conclusive: it emits a message and plot, continues provisionally, and subjects the exceptional cases to later inspection, including adjacent blocks. Extending beyond the target range and invoking the cited theorem then closes the finite-zero claim."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source organizes finite verification as a layered pipeline: use structural information to minimize Z-evaluations, search likely intervals first, escalate unresolved blocks, and reserve conservative or higher-precision sign certification for ambiguous cases.",
+            "limit": "The final implication to the zero claim depends on a cited theorem not reproduced here, and the exact error formula is OCR-defective.",
+            "parent_local_unit_ids": [
+              "openalex_w2116781013_d03",
+              "openalex_w2116781013_d04",
+              "openalex_w2116781013_d05",
+              "openalex_w2116781013_d06",
+              "openalex_w2116781013_d07"
+            ],
+            "title": "Cost-aware certified zero separation"
+          },
+          {
+            "claim": "Outer-interval priority is efficient because common short blocks support it, but block-type statistics reveal a qualitative location shift for longer blocks, motivating a length-conditioned search policy.",
+            "limit": "This is solver- and range-specific empirical evidence, not a proof of a universal block-length law; exact table cells require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2116781013_d04",
+              "openalex_w2116781013_d10",
+              "openalex_w2116781013_d11"
+            ],
+            "title": "A search heuristic has an empirically bounded regime"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2116781013_d04",
+        "spontaneous": {
+          "unit_id": "openalex_w2116781013_d04",
+          "spontaneous_reading": "The search first subtracts what the Gram block already guarantees, leaving a localized deficit of two sign changes. It then spends evaluations in an evidence-ranked order: likelier outer interval, other outer interval, and finally a broader length-dependent fallback."
+        },
+        "directed": {
+          "unit_id": "openalex_w2116781013_d04",
+          "source_grounded_mathematics": "For a Gram block of length L at least two, the source says L-2 sign changes have already been detected implicitly, so the remaining task is to find two changes that, if present, lie in one Gram interval. Preliminary experiments place them usually in an outer interval. The program chooses between the outer intervals using the smaller absolute sum of endpoint Z-values, uses parabolic interpolation, then tries the other outer interval and a whole-block or interior fallback according to L.",
+          "conceptual_reading": "This is a deficit-and-localization strategy: use structural accounting to reduce the objective, a cheap endpoint proxy to rank candidate regions, and progressively broader search only after cheap likely cases fail. The ordering is empirical and cost-aware rather than deductively forced.",
+          "representation_or_bridge": "Gram-block boundaries turn a global zero-separation task into interval-local subproblems. Endpoint values of Z supply the ranking proxy, while parabolic interpolation bridges sampled values to candidate interior sign behavior; the final fallback delegates details to an earlier routine and program source.",
+          "boundary_or_failure": "The outer-first rule is not a theorem that missing changes are outermost, and the source qualifies their existence. Exact subscripts and the displayed comparison are OCR-garbled, so symbolic reuse needs the scan. Termination without finding the pair triggers a separate failure path rather than validating the block.",
+          "uncertainty": "High confidence in the prose-described staged strategy and missing-two reduction; moderate confidence in exact endpoint notation because of OCR damage."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2116781013_d04",
+        "critic_decision": "revise",
+        "supported": [
+          "The L-minus-two accounting, localization of the missing pair to one interval, outer-interval priority, endpoint-value ranking, parabolic interpolation, second outer interval, and length-dependent fallback are all supported.",
+          "The candidate correctly treats outer-first as empirical and conditional rather than deductive."
+        ],
+        "inference": [
+          "Deficit-and-localization and progressive broadening are faithful strategic abstractions of the staged search.",
+          "Calling the endpoint expression a cheap proxy and interpolation a bridge to interior behavior is interpretive but grounded."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Endpoint subscripts and inequality symbols are damaged; the candidate appropriately avoids relying on an exact symbolic transcription."
+        ],
+        "missed_mechanism": [
+          "The source explicitly identifies parabolic interpolation in the selected interval as the main improvement over Brent's random search, but the candidate never records that replacement comparison."
+        ],
+        "revision_instructions": [
+          "Add one bounded source-grounded sentence stating that the paper calls parabolic interpolation, replacing Brent's random search at this stage, its main improvement; retain all empirical and OCR qualifications."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source says the program proceeds by pretending the missing changes were found, so the later inspection and cited theorem are essential safeguards; this span does not reproduce that theorem.",
+      "line_end": 146,
+      "line_start": 133,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on human-readable plots and Theorem 3.2 of the cited earlier paper, whose content is not imported here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The automated routine records unresolved blocks instead of silently treating its heuristic as conclusive: it emits a message and plot, continues provisionally, and subjects the exceptional cases to later inspection, including adjacent blocks. Extending beyond the target range and invoking the cited theorem then closes the finite-zero claim.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Escalate unresolved blocks to preserved plots and manual inspection",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_d05.txt",
+      "unit_bytes": 1068,
+      "unit_id": "openalex_w2116781013_d05",
+      "unit_sha256": "cce90fb7cc6f0e4f8a1dff1ef60290ea47f3c9d6d569b17b827d830285c460ba",
+      "unit_type": "failure handling and certification closure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d05.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 125,
+          "line_end": 132,
+          "text": "parabolic interpolation.) If this routine terminates without having found the missing\ntwo sign changes, the other outer Gram interval of the block is treated in the same\nmanner. In case the missing two are still not found, another search routine is called,\ndepending on the length L of the block B1 = [ g1, g1+L).\n   If L = 2, the interval (g1 , g1 + 2 ) is scanned again, and if L > 2, we continue to\nsearch in the interval (g1+ 1, gJ+L-· 1). In both cases, the search is performed by\nmeans of a refinement of a search routine described by Lehman [9]. For more details\nwe refer the reader to the source text of the L R & W-program in (12].\n",
+          "sha256": "20f8a6845a9a8ec423f7aab5d8974d765ae25ce1a9bbd5614f004ef83849d7f0"
+        },
+        "after": {
+          "line_start": 147,
+          "line_end": 154,
+          "text": "   3. Computation of Z(t) and Error Analysis. In principle, Brent's and L R & W's\nmethods of computing Z( t) and error analysis are exactly as described in Section 5\nof Brent [2]. We shall only mention here the differences between L R & W's\ncomputations and error analysis and Brent's. Details are given in [12].\n   The L R & W-computations were carried out on a CDC CYBER 175 computer\nhaving a 60-bit word, and single-precision and double-precision floating point\narithmetic using 48- and 96-bit binary fractions, respectively. The function Z( t) was\ncomputed (in both methods A and B) using the Riemann-Siegel formula with two\n",
+          "sha256": "7d69964c6ca4a89d7e541f583c75d59072a46ce3cc51b29bf077db081fce77b3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "sign-change search strategy",
+            "line_end": 146,
+            "line_start": 99,
+            "mathematical_role": "Derives the missing-two subproblem, gives the ordered interval-search heuristic and fallbacks, and describes exceptional-case inspection and theorem-based closure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 146,
+          "line_start": 133,
+          "title": "Escalate unresolved blocks to preserved plots and manual inspection",
+          "unit_id": "openalex_w2116781013_d05",
+          "unit_type": "failure handling and certification closure",
+          "why_material": "The automated routine records unresolved blocks instead of silently treating its heuristic as conclusive: it emits a message and plot, continues provisionally, and subjects the exceptional cases to later inspection, including adjacent blocks. Extending beyond the target range and invoking the cited theorem then closes the finite-zero claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source says the program proceeds by pretending the missing changes were found, so the later inspection and cited theorem are essential safeguards; this span does not reproduce that theorem.",
+          "representation_dependency": "Depends on human-readable plots and Theorem 3.2 of the cited earlier paper, whose content is not imported here.",
+          "unit_id": "openalex_w2116781013_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 132,
+            "line_start": 99,
+            "title": "Reduce a Gram block to locating two missing sign changes",
+            "unit_id": "openalex_w2116781013_d04",
+            "unit_type": "search strategy",
+            "why_material": "Once a block of length L has implicitly supplied L-2 sign changes, the search is reduced to two remaining changes that must share a Gram interval. The program ranks the two outer intervals by endpoint-value evidence, applies parabolic interpolation, then searches the other outer interval and finally the interior or full length-two block."
+          },
+          {
+            "line_end": 183,
+            "line_start": 147,
+            "title": "Conservative two-method error control certifies signs of Z(t)",
+            "unit_id": "openalex_w2116781013_d06",
+            "unit_type": "rigorous numerical certification",
+            "why_material": "The computation combines a Riemann-Siegel approximation, analytic remainder control, interpolation and machine-error accounting, then uses fixed bounds more conservative than the derived upper bounds. A higher-precision method is available when the fast method is inconclusive, and the source reports that it always determined the sign rigorously in the run described."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source organizes finite verification as a layered pipeline: use structural information to minimize Z-evaluations, search likely intervals first, escalate unresolved blocks, and reserve conservative or higher-precision sign certification for ambiguous cases.",
+            "limit": "The final implication to the zero claim depends on a cited theorem not reproduced here, and the exact error formula is OCR-defective.",
+            "parent_local_unit_ids": [
+              "openalex_w2116781013_d03",
+              "openalex_w2116781013_d04",
+              "openalex_w2116781013_d05",
+              "openalex_w2116781013_d06",
+              "openalex_w2116781013_d07"
+            ],
+            "title": "Cost-aware certified zero separation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2116781013_d05",
+        "spontaneous": {
+          "unit_id": "openalex_w2116781013_d05",
+          "spontaneous_reading": "The program deliberately separates throughput from certification: unresolved blocks are allowed to pass provisionally only because a message and plot preserve them for later human inspection, after which an overrun beyond the target and a cited theorem close the finite claim."
+        },
+        "directed": {
+          "unit_id": "openalex_w2116781013_d05",
+          "source_grounded_mathematics": "If an automated search finds the missing two sign changes, computation advances to a new block. Otherwise it emits a message and a plot of Z over the block, proceeds provisionally as if the changes were found, and subjects such plots to later manual inspection, including adjacent blocks. After computing slightly beyond the target range and finding four further blocks satisfying Rosser's rule, the authors invoke Theorem 3.2 of Brent to complete their finite zero claim.",
+          "conceptual_reading": "Exceptional cases are converted into durable audit objects instead of being silently conflated with successful automatic cases. The extra range acts as boundary context, while the cited theorem is the logical bridge from local sign evidence to the announced prefix statement.",
+          "representation_or_bridge": "A plotted Z-profile makes an unresolved numerical trajectory inspectable across a whole Gram block and its neighbors. The separate theorem, not the plot alone, connects the completed sign-change record and the overrun to the claimed count of simple critical-line zeros.",
+          "boundary_or_failure": "Pretending that the changes were found is unsafe without the preserved exception and later inspection. The span does not formalize the manual judgments and does not reproduce Theorem 3.2, so its final implication cannot be independently reconstructed here. The conclusion remains a finite computation, not RH.",
+          "uncertainty": "High confidence in the failure-handling workflow; the exact zero count and formula symbols are OCR-risky, and the final closure is dependent on an external cited theorem."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2116781013_d05",
+        "critic_decision": "revise",
+        "supported": [
+          "The automated failure path prints a message and plot, proceeds provisionally, and sends the preserved case to later manual inspection of the block or a neighbor.",
+          "The source explicitly says it computed beyond the target, found four further blocks satisfying Rosser's rule, and applied a cited theorem to complete its finite claim.",
+          "The candidate correctly distinguishes provisional throughput, later inspection, theorem-dependent closure, and the absence of an RH proof."
+        ],
+        "inference": [
+          "Calling the plots durable audit objects and the overrun boundary context is a useful interpretation of their roles.",
+          "The statement that the cited theorem, rather than the plot alone, supplies the closing logical bridge follows from the source's attribution but does not reconstruct that theorem."
+        ],
+        "unsupported_or_imported": [
+          "The candidate normalizes the exact prefix count and damaged range indices even while acknowledging that those numerals are OCR-risky; this unit alone does not safely support their exact transcription."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The final zeta notation, critical-line value, range indices, and last digit of the announced count are visibly corrupted.",
+          "The cited Theorem 3.2 is not reproduced, so its hypotheses and proof burden cannot be audited from this span."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the reconstructed exact prefix count and range endpoints with 'the announced finite prefix' and 'slightly beyond the target range'; keep the explicit four-block observation and theorem-dependence, and do not infer the theorem's content."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact visual definitions of all six types are delegated to an OCR-damaged table; only the detection-bias mechanism and prose-stated occurrence claims are accepted here.",
+      "line_end": 209,
+      "line_start": 195,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Gram-block zero patterns and Table 2; exact table geometry and symbols require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source warns that shifted Gram-point evaluation may miss or reclassify exceptions, gives a concrete zero-pattern mechanism for such reclassification, and distinguishes six exception types while noting that one type had not been observed.",
+      "source_id": "openalex_w2116781013",
+      "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted sampling can change the observed class of a Rosser-rule exception",
+      "unit_artifact_relpath": "depth/units/openalex_w2116781013_d08.txt",
+      "unit_bytes": 1171,
+      "unit_id": "openalex_w2116781013_d08",
+      "unit_sha256": "1248b63450f2d9cdb82b4b47a1a85ff83a69f5bad6036d6dd033b712f15518f0",
+      "unit_type": "exception taxonomy and detection bias",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_d08.txt",
+      "source": {
+        "source_id": "openalex_w2116781013",
+        "title": "On the zeros of the Riemann zeta function in the critical strip. II",
+        "authors": [
+          "Richard P. Brent",
+          "J. Lune",
+          "H. J. J. te Riele",
+          "D.T. Winter"
+        ],
+        "year": 1982,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 187,
+          "line_end": 194,
+          "text": " Therefore, the L R & W-program uses, in relatively few cases, an approximati on to\n the Gram point g1 instead of g1 itself. (In a run of 2,500,000 zeros, with error bound\n 10- 4 for method A, the total number of shifts was always less than 370. Most of\n them were made when separating the zeros inside the Gram blocks. Only a few of\n them were made in Gram points. Also see the text introducing Table 3.) Conse-\n quently, the statistics found by L R & W cannot, strictly speaking, be accumulated\n to those found by Brent. Nevertheless, just for convenience, we have put together all\n results. This should be kept in mind when reading the tables.\n",
+          "sha256": "4d403abab7e8a0347415dabeeb803fc87ae7b4fdf658aca6d9f0f7930c0a83c0"
+        },
+        "after": {
+          "line_start": 210,
+          "line_end": 217,
+          "text": "\n\n  **In [ 12] a four-term bound was given for method A. A closer look at the error analysis led us to the\nsimpler bound given here.\n\n<!-- source-page: 5 -->\n\nZEROS OF THE RIEMANN ZETA FUNCTION                                                      685\n",
+          "sha256": "c30cd38b7e7b34fb56b20f4d8c85e24bdbc96513c3e3fc9fb07ecb1a9ae51b3b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e72ac45f8f0524947ef3ff5f5e1e694764712b41a89d55f212fe3117746ac26d",
+        "dossier_sha256": "5389db0ec2ce5dbfd703191606135f5184cb2ae88e0744bae624570abfb2e3ce",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "statistics and exceptions to Rosser's rule",
+            "line_end": 280,
+            "line_start": 184,
+            "mathematical_role": "Explains adaptive shifts and their measurement consequences, classifies rare exceptions, tabulates them, and compares a selected-range exception detector."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 209,
+          "line_start": 195,
+          "title": "Shifted sampling can change the observed class of a Rosser-rule exception",
+          "unit_id": "openalex_w2116781013_d08",
+          "unit_type": "exception taxonomy and detection bias",
+          "why_material": "The source warns that shifted Gram-point evaluation may miss or reclassify exceptions, gives a concrete zero-pattern mechanism for such reclassification, and distinguishes six exception types while noting that one type had not been observed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact visual definitions of all six types are delegated to an OCR-damaged table; only the detection-bias mechanism and prose-stated occurrence claims are accepted here.",
+          "representation_dependency": "Depends on Gram-block zero patterns and Table 2; exact table geometry and symbols require scan verification.",
+          "unit_id": "openalex_w2116781013_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 184,
+            "title": "Small argument shifts reduce expensive fallbacks but break strict count accumulation",
+            "unit_id": "openalex_w2116781013_d07",
+            "unit_type": "adaptive fallback and measurement caveat",
+            "why_material": "When method A cannot rigorously determine a sign, the program tries small shifts before invoking method B. This optimization means some evaluations occur near rather than exactly at Gram points, so its statistics are not strictly accumulable with Brent's even though the paper presents them together."
+          },
+          {
+            "line_end": 280,
+            "line_start": 275,
+            "title": "Selected subranges can efficiently screen for Rosser-rule exceptions",
+            "unit_id": "openalex_w2116781013_d09",
+            "unit_type": "alternative search strategy",
+            "why_material": "A different method searches only selected small ranges inside a height interval and nevertheless recovers all exceptions in one comparison range and most in another, showing that rare-event detection need not exhaustively scan the whole interval in the same way."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Argument shifts and selective-range screening reduce computational effort but can change detection or classification of rare exceptions, so cross-program overlap checks and explicit sampling provenance are part of the evidential method rather than incidental bookkeeping.",
+            "limit": "The overlap comparisons are bounded to stated ranges, and the source does not provide the construction of the alternative selected ranges.",
+            "parent_local_unit_ids": [
+              "openalex_w2116781013_d07",
+              "openalex_w2116781013_d08",
+              "openalex_w2116781013_d09",
+              "openalex_w2116781013_d10"
+            ],
+            "title": "Optimization of observations can alter the measured exception process"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 218,
+              "line_start": 210,
+              "reason": "Whitespace, a clarification footnote about the simplified bound, page marker, and running header."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2116781013_d08",
+        "spontaneous": {
+          "unit_id": "openalex_w2116781013_d08",
+          "spontaneous_reading": "The exception taxonomy is partly observer-dependent: moving the sampling points can make the same local zero arrangement appear as a different Gram-block pattern, so overlap agreement and explicit detection caveats are necessary alongside the exception list."
+        },
+        "directed": {
+          "unit_id": "openalex_w2116781013_d08",
+          "source_grounded_mathematics": "The source lists exceptions to Rosser's rule and warns that shifts at Gram points may have caused some to be missed. It gives a mechanism: an exception called type 2 under the exact convention may be detected as a length-three block with zero pattern 2-1-0. On one overlapping range the L R and W program found the same exceptions as Brent. The authors extend the taxonomy to six types and state that type 4 had not been found at the time.",
+          "conceptual_reading": "Classification depends on how the continuous zero configuration is discretized by Gram intervals and sampled boundaries. A small observational perturbation can reclassify an event without changing the underlying zeros, making cross-program agreement a useful but local robustness check.",
+          "representation_or_bridge": "Zero-count patterns inside Gram blocks bridge analytic zero locations to discrete exception types. Exact Gram-point sampling and shifted sampling are two observation maps; comparing them exposes which reported categories may be unstable.",
+          "boundary_or_failure": "The flattened OCR table does not safely define all six types, so only the prose-stated reclassification and occurrence claims are usable. Failure to observe type 4 is not proof of impossibility, and agreement on one finite overlap does not exclude misses elsewhere.",
+          "uncertainty": "High confidence in the detection-bias mechanism and local agreement claim; low confidence in exact table geometry, type definitions, and OCR-rendered indices without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2116781013_d08",
+        "critic_decision": "revise",
+        "supported": [
+          "The source warns that Gram-point shifts may miss or reclassify Rosser-rule exceptions and gives a length-three-block mechanism.",
+          "It states exact agreement with Brent on one overlap, extends the taxonomy to six types, and says type 4 had not yet been found.",
+          "The candidate correctly limits overlap agreement and non-observation and refuses to recover all type definitions from the flattened table."
+        ],
+        "inference": [
+          "Treating exact and shifted sampling as observation maps and exception labels as discretization-dependent is a grounded conceptual reading.",
+          "Calling the overlap a local robustness check is justified but does not establish completeness elsewhere."
+        ],
+        "unsupported_or_imported": [
+          "The candidate silently normalizes the OCR string '2 I O' to the exact digit pattern '2-1-0'; the text layer does not safely distinguish those characters without scan verification."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Table 2 is outside the unit and its spatial definitions are known to be flattened and OCR-damaged; exact type geometry and symbols are unavailable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Refer only to 'the prose-stated length-three zero-pattern' or preserve the OCR ambiguity; do not normalize its characters to exact digits without scan evidence. Keep the reclassification mechanism and all existing limits."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "812f2ca25871ecc28f19659e2b6fb0f9301006d7922fe3a88b21d5aec48e749d"
+}

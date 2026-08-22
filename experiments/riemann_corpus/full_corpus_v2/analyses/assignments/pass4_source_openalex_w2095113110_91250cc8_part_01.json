@@ -1,0 +1,341 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2095113110_91250cc8_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2095113110",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Continues the prediction in u01 and records both the tested accuracy and a source-specific arithmetic interpretation of a lower-order term.",
+      "line_end": 275,
+      "line_start": 225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and error exponents are readable, but the exact displayed integral at lines 225–238 should be checked against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Fourier-support width to the conditional residue error, states the unconditional agreement theorem for two quadratic-character families, and identifies a lower-order term whose behavior is controlled by nontrivial zeros of the zeta function.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Support controls the comparison error, while zeta zeros enter a lower-order term",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u05.txt",
+      "unit_bytes": 3605,
+      "unit_id": "full_openalex_w2095113110_u05",
+      "unit_sha256": "ed400887efc34671e57edc536672723f1464c5fd1f2bb4150f212019638ffdd2",
+      "unit_type": "support-sensitive-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u05.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 217,
+          "line_end": 224,
+          "text": "   1 XX           log X                  sin(2πx)              1\n             g γd         =     g(x) 1 −            dx + O           , (1.5)\n  X ∗ d≤X γ         2π       −∞             2πx              log X\n             d\n\n\nwhich is the 1-level density for the scaling limit of USp(2N). If supp(b     g ) ⊂ (−1, 1),\nthen the integral of g(x) against − sin(2πx)/2πx is −g(0)/2.\n",
+          "sha256": "5a6ab373318f461b934255a1feed2b7eac50d32323c6d3ff6dcdf02ff4fbf9ae"
+        },
+        "after": {
+          "line_start": 276,
+          "line_end": 283,
+          "text": "  The proof of Theorem 1.2 starts with the Explicit Formula, which relates sums over\nzeros to sums over primes (for completeness a proof is given in Appendix A). For\nconvenience to researchers interested in odd fundamental discriminants, we state it in\nmore generality than we need.\nTheorem 1.5 (Explicit Formula for a family of Quadratic Dirichlet Characters). Let g\nbe an even Schwartz test function such that gb has finite support. For d a fundamental\ndiscriminant let a(χd ) = 0 if d is even (χd (−1) = 1) and 1 otherwise. Consider a\nfamily F (X) of fundamental discriminants at most X in absolute value. We have\n",
+          "sha256": "fef171905a2c540157ae6dc959526bc50eb1a22dea01261e613de96057bb4274"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 315,
+            "line_start": 31,
+            "mathematical_role": "Motivates lower-order terms as arithmetic information, states the Ratios prediction and number-theory comparison, and introduces the explicit-formula reduction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 275,
+          "line_start": 225,
+          "title": "Support controls the comparison error, while zeta zeros enter a lower-order term",
+          "unit_id": "full_openalex_w2095113110_u05",
+          "unit_type": "support-sensitive-comparison",
+          "why_material": "Connects Fourier-support width to the conditional residue error, states the unconditional agreement theorem for two quadratic-character families, and identifies a lower-order term whose behavior is controlled by nontrivial zeros of the zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Continues the prediction in u01 and records both the tested accuracy and a source-specific arithmetic interpretation of a lower-order term.",
+          "representation_dependency": "Prose and error exponents are readable, but the exact displayed integral at lines 225–238 should be checked against the page image.",
+          "unit_id": "full_openalex_w2095113110_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 224,
+            "line_start": 155,
+            "title": "Ratios-Conjecture prediction for the symplectic one-level density",
+            "unit_id": "full_openalex_w2095113110_u01",
+            "unit_type": "conjecture-vs-density comparison",
+            "why_material": "Defines the averaging conventions and states the conditional one-level-density formula, its arithmetic Euler factor, and its reduction to the USp scaling-limit density. This is the prediction against which the rest of the source is organized."
+          },
+          {
+            "line_end": 314,
+            "line_start": 276,
+            "title": "The explicit formula converts a zero statistic into conductor and prime-power terms",
+            "unit_id": "full_openalex_w2095113110_u06",
+            "unit_type": "representation-bridge",
+            "why_material": "States the family explicit formula and explains the comparison architecture: conductor and Gamma terms already match, quadraticity reduces prime powers to the behaviors of χ_d(p) and χ_d(p)^2, and the Ratios answer suggests non-obvious simplifications of those number-theory sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u05",
+          "spontaneous_reading": "Fourier support is the adjustable resolution knob: widening it exposes more arithmetic but weakens the controlled comparison error, while a particular lower-order channel records the nontrivial zeros of ζ."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u05",
+          "source_grounded_mathematics": "Under stated support restrictions, the source compares one-level densities for two quadratic-character families with the Ratios prediction, attaining square-root-scale agreement in the second family when σ is below one third; it also identifies a ζ′/ζ term whose behavior is controlled by nontrivial ζ-zeros.",
+          "conceptual_reading": "Support is simultaneously observational bandwidth and proof budget: it decides which frequencies can be seen and how much power saving survives in the remainder.",
+          "representation_or_bridge": "The one-level statistic packages low-lying L-function zeros into a test-function integral, and the logarithmic derivative ζ′/ζ imports the zero set of ζ into a family-specific secondary term.",
+          "boundary_or_failure": "The agreement is family- and support-dependent; it supports the Ratios Conjecture at the tested error scale but does not establish that conjecture generally.",
+          "uncertainty": "The theorem’s qualitative comparisons and support thresholds are readable, while the opening integral and exact exponents should be checked against the page image."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2095113110_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The two family-specific agreement statements, the sigma below one-third square-root-scale conclusion for the auxiliary family, and the Ratios-Conjecture limitation are explicit.",
+          "Remark 1.4 explicitly locates a lower-order zeta-logarithmic-derivative term controlled by nontrivial zeta zeros."
+        ],
+        "inference": [
+          "Treating support as a proof budget is supported by the displayed deterioration of the error exponents as sigma grows."
+        ],
+        "unsupported_or_imported": [
+          "The claim that widening support exposes more arithmetic is not stated in this frozen span or its bounded nearby context; it is imported from the preceding research-motivation unit.",
+          "Calling support observational bandwidth and saying it decides which frequencies can be seen goes beyond what this span establishes."
+        ],
+        "paraphrase_or_style_risk": [
+          "The resolution-knob and bandwidth language risks replacing the distinct support-dependent theorem errors with a generic representation template."
+        ],
+        "context_or_ocr_risk": [
+          "The opening displayed integral and stacked exponents are formula-layout-sensitive, although the prose theorem conclusions and sigma thresholds are readable."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the RH-dependent residual estimate in the opening display from the unconditional two-family comparison in Theorem 1.2."
+        ],
+        "revision_instructions": [
+          "Remove the imported claim that wider support exposes more arithmetic and replace the bandwidth metaphor with the exact statement that each displayed remainder worsens with sigma.",
+          "Keep the nontrivial-zeta-zero lower-order mechanism and explicitly separate the conditional residual estimate from the unconditional family comparisons."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A methodological remark rather than the sharp contour proof; it clarifies what compact support is doing structurally.",
+      "line_end": 403,
+      "line_start": 370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The three-step mechanism is prose-recoverable; the intermediate expansion at lines 382–391 should be scan-checked if used literally.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2095113110_u08.txt",
+      "unit_bytes": 2481,
+      "unit_id": "full_openalex_w2095113110_u08",
+      "unit_sha256": "b063b8020b62783a9373ab07d734f7679d297f661f319e65de00621f3993c8b7",
+      "unit_type": "compact-support-annihilation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2095113110_u08.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 362,
+          "line_end": 369,
+          "text": "                    3\nbound of O(X −(1− 2 σ) ) by using Poisson summation to convert long character sums to\nshorter ones (see §3.2.2).\n\n<!-- source-page: 7 -->\n\nA SYMPLECTIC TEST OF THE L-FUNCTIONS RATIOS CONJECTURE                      7\n\n",
+          "sha256": "f89ffc51877de92e1f2049433e29322a967ed42b0cdac823205a044809bf6d76"
+        },
+        "after": {
+          "line_start": 404,
+          "line_end": 411,
+          "text": "2.1. Analysis of R(g; X). Before proving Lemma 2.1 we collect several useful facts.\nLemma 2.4. In all statements below r = 2πiτ / log X and supp(b       g ) ⊂ (−σ, σ) ⊂\n(−1, 1).\n   (1) AD (−r, r) = ζ(2)/ζ(2 − 2r).\n   (2) If |r| ≥ ǫ then |ζ(−3 − 2r)/ζ(−2 − 2r)| ≪ǫ (1 + |r|).\n                                 \u0001                          \u0001−B\n   (3) For w ≥ 0, g τ − iw log2πX ≪ X σw τ 2 + (w log2πX )2     for any B ≥ 0.\n   (4) For 0 < a < b we have |Γ(a ± iy)/Γ(b ± iy)| = Oa,b (1).\n",
+          "sha256": "03d825e280238fd5995ce37ce4b470dd8f4577b4ec06d2472fa13e77c1603067"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_746d0b816a4b9da3a79d4b6c673c8fa4c8c826d9d9b6a0ac06f8e15103a523f7",
+        "dossier_sha256": "4185560e2b59386c903ea4c477bf1f0dfe2ea23c3a0c0b36d836297c400c43a0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Analysis of the terms from the Ratios Conjecture",
+            "line_end": 691,
+            "line_start": 316,
+            "mathematical_role": "Matches conductor and even-prime-power pieces, isolates the difficult oscillatory term, evaluates it by contour shifting, and extracts its support-sensitive secondary term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 403,
+          "line_start": 370,
+          "title": "Fourier support annihilates the asymptotic tail and exposes finite-size corrections",
+          "unit_id": "full_openalex_w2095113110_u08",
+          "unit_type": "compact-support-annihilation",
+          "why_material": "Gives a lower-cost alternative mechanism: truncate by Schwartz decay, Taylor-expand fixedly many factors, and interpret the resulting integrals as Fourier transforms of derivatives evaluated outside support. It also explains why the first 1/log X term matters for finite matrix-size modeling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A methodological remark rather than the sharp contour proof; it clarifies what compact support is doing structurally.",
+          "representation_dependency": "The three-step mechanism is prose-recoverable; the intermediate expansion at lines 382–391 should be scan-checked if used literally.",
+          "unit_id": "full_openalex_w2095113110_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 364,
+            "line_start": 316,
+            "title": "Isolating the unmatched Ratios term and forecasting two odd-sum error routes",
+            "unit_id": "full_openalex_w2095113110_u07",
+            "unit_type": "proof-architecture-and-obstruction",
+            "why_material": "Decomposes the Ratios-side expression into already matched pieces and a hardest residual integral R(g;X), identifies its pole contribution, and relates its RH-dependent support error to the weaker Jutila route and the stronger Poisson route on the number-theory side."
+          },
+          {
+            "line_end": 548,
+            "line_start": 404,
+            "title": "Contour shifting separates the symmetry residue from zeta-zero errors",
+            "unit_id": "full_openalex_w2095113110_u09",
+            "unit_type": "contour-shift-and-residue-analysis",
+            "why_material": "Simplifies the arithmetic factor to a zeta ratio, supplies complex-shift decay and Gamma-ratio controls, and shifts the residual integral across the pole giving −g(0)/2 and the poles induced by zeta zeros. The support of the Fourier transform then determines the power saving, while the shifted contour is negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact Fourier support simultaneously annihilates Taylor/Fourier tails, controls contour-shift growth, truncates prime sums, and determines whether secondary frequencies and odd-sum errors are visible.",
+            "limit": "The numerical support thresholds arise from the particular analytic estimates in this source and are not intrinsic barriers.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2095113110_u05",
+              "full_openalex_w2095113110_u07",
+              "full_openalex_w2095113110_u08",
+              "full_openalex_w2095113110_u09",
+              "full_openalex_w2095113110_u10",
+              "full_openalex_w2095113110_u11",
+              "full_openalex_w2095113110_u13",
+              "full_openalex_w2095113110_u15"
+            ],
+            "title": "Fourier support as a shared complexity budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2095113110_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2095113110_u08",
+          "spontaneous_reading": "Compact Fourier support does more than truncate frequencies: after a finite Taylor expansion it annihilates every derivative-transform term evaluated near frequency one, turning a complicated tail into arbitrarily high logarithmic saving."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2095113110_u08",
+          "source_grounded_mathematics": "The alternative argument replaces the discriminant average, restricts |τ| using Schwartz decay, Taylor-expands all factors except g to a fixed finite order, extends the integral back to ℝ, and identifies the resulting integrals as Fourier transforms of derivatives of g outside their support.",
+          "conceptual_reading": "Support becomes an exact annihilation principle rather than merely a decay hypothesis: local expansions in the physical variable are tested at a forbidden Fourier frequency.",
+          "representation_or_bridge": "Taylor coefficients times powers of τ are converted into Fourier derivatives evaluated near frequency one, linking asymptotic expansion to support geometry.",
+          "boundary_or_failure": "This lower-cost route yields errors smaller than any fixed power of log X, not the sharp power-saving contour estimate, and it depends essentially on keeping the Taylor order fixed.",
+          "uncertainty": "The three-step mechanism is secure from the prose; the displayed intermediate expansion and its normalization should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2095113110_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The three-step low-cost argument—replace the discriminant sum, truncate tau by Schwartz decay, Taylor-expand finitely many factors, extend the integral, and annihilate transform derivatives outside support—is explicit.",
+          "The fixed finite Taylor order and logarithmic-power rather than sharp power-saving boundary are correctly retained."
+        ],
+        "inference": [
+          "Calling compact support an exact annihilation principle is justified here because the relevant Fourier derivatives vanish at the shifted frequency near one."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The candidate is mechanistic rather than a generic representation template, but it covers only the first of the span's two linked points."
+        ],
+        "context_or_ocr_risk": [
+          "The intermediate expansion and whether the printed derivative notation refers to derivatives of g or its transform require scan checking; the safe operation is powers of tau becoming derivatives in Fourier frequency."
+        ],
+        "missed_mechanism": [
+          "The candidate omits the source's reason for explicitly computing the 1/log X term: finite-height zeros are modeled by matrices with size proportional to log(T/2pi), and a slight size correction from the first lower-order term improves agreement."
+        ],
+        "revision_instructions": [
+          "Retain the finite-Taylor/Fourier-support annihilation mechanism, but describe the transform operation without relying on the OCR-sensitive derivative wording.",
+          "Add the distinct finite-size modeling consequence and keep it attributed to the cited examples rather than generalizing it beyond this source."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c554de97ad53770760d65fccd55358f8dadc8e40e3fa9d7e3179913f8a87b18a"
+}

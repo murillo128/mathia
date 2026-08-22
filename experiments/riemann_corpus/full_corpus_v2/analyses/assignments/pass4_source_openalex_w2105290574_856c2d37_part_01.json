@@ -1,0 +1,177 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2105290574_856c2d37_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2105290574",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The comparison table is retained because it shows where the successive approximations become reliable rather than merely listing outputs.",
+      "line_end": 320,
+      "line_start": 268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact constants and correction terms are embedded in extraction-fragile displays; the asymptotic ordering and table trend are recoverable from the checked prose and rows.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source derives an exact trend series, a finite asymptotic expansion, and a leading k^{-2} simplification, then compares all three across increasing k. This establishes that the trend decays faster than the k^{-3/4} oscillatory scale relevant to the criterion.",
+      "source_id": "openalex_w2105290574",
+      "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The trend is asymptotically k^{-2}, below the criterion-scale wave",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2105290574_u07.txt",
+      "unit_bytes": 5351,
+      "unit_id": "full_openalex_w2105290574_u07",
+      "unit_sha256": "1a79c9ab2befd1f188a87b028b534df2bf06a6667ce3b882e18aac6677258e9d",
+      "unit_type": "asymptotic hierarchy and numerical comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2105290574_u07.txt",
+      "source": {
+        "source_id": "openalex_w2105290574",
+        "title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "limit of large k, but surprisingly the numbers produced                         The comparison of these formulae is given in Table 3.\nfrom the above formulae (10) and (11) are practically the                           Now we consider the oscillating part ck . Since\nsame as obtained from the generic formula (1) for all k, e.g.                   PARI/GP does not have built in B(x, y) function, we had to\nalready for k = 2 we get c2 = –0.25699711 from (1), while                       use the Γ ( z ) functions instead. Because of the fast growth\n(10) and (11) give c2 = –0.256969863 and accuracy                               of the Γ ( x ) function even in PARI/GP it was not possible\nincreases with k. It suggests that the integrals Jk appearing                   to pursue with formula (11) for large k. Namely it crashes\nin [4] in the proof of the Theorem 1.5 are decreasing to                        for k = 356000 because of overflow. But there is the\nzero rather fast with k.                                                        following asymptotic formula (see e.g. [15], §1.8.7):\n",
+          "sha256": "154de2d623f748a2abe74eb8db9d1819a3a9b187dfd030bd83ff498c56bc675a"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "<!-- source-page: 5 -->\n\nEvidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis                              51\n\n\n                              ! ! 1 + ρl \" \"\n                              # Γ#       $$\n                       βl = ℑ # % 2 & $ .                        (18)\n",
+          "sha256": "0d8a9d180a6b790c92200e77de1f5e18584ad5623605765c2570f21bbe8625bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6a48445e7c4716d439fa49fa535c131c243cb9acccbf6e2935de148536818933",
+        "dossier_sha256": "eb8defbc33c638d853c08a619396c4973bba048aaa776fb6790aa7db6d358061",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit formulae and trend",
+            "line_end": 320,
+            "line_start": 199,
+            "mathematical_role": "Contrasts derivations, separates trend from oscillation, states zero-dependent assumptions, and compares exact and asymptotic trend formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 268,
+          "title": "The trend is asymptotically k^{-2}, below the criterion-scale wave",
+          "unit_id": "full_openalex_w2105290574_u07",
+          "unit_type": "asymptotic hierarchy and numerical comparison",
+          "why_material": "The source derives an exact trend series, a finite asymptotic expansion, and a leading k^{-2} simplification, then compares all three across increasing k. This establishes that the trend decays faster than the k^{-3/4} oscillatory scale relevant to the criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The comparison table is retained because it shows where the successive approximations become reliable rather than merely listing outputs.",
+          "representation_dependency": "High: exact constants and correction terms are embedded in extraction-fragile displays; the asymptotic ordering and table trend are recoverable from the checked prose and rows.",
+          "unit_id": "full_openalex_w2105290574_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 243,
+            "title": "Trend/oscillation representation and its asymptotic regime",
+            "unit_id": "full_openalex_w2105290574_u03",
+            "unit_type": "trend-versus-oscillation decomposition",
+            "why_material": "The immutable v1 span contains the assumptions on the zero sum, identifies the beta-function representation, reports close agreement with the generic sequence, and begins the exact-to-asymptotic treatment of the trend. It preserves the conceptual split between smooth decay and spectral fluctuation."
+          },
+          {
+            "line_end": 383,
+            "line_start": 278,
+            "title": "Conjugate zeros generate logarithmic waves with exponentially damped coefficients",
+            "unit_id": "full_openalex_w2105290574_u08",
+            "unit_type": "spectral asymptotic representation",
+            "why_material": "Assuming RH, conjugate zeros convert the oscillatory term into a k^{-3/4} envelope multiplying sines and cosines whose log(k) frequencies are set by zero ordinates. The Hadamard-product and gamma-identity discussion yields exponential coefficient decay, explaining why only the first few zeros materially shape the computed wave."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A k^{-2} trend becomes negligible beside a k^{-3/4} zero-driven wave; exponential damping makes the first zero dominate observed oscillation while also making a sufficiently high hypothetical off-line zero extraordinarily hard to detect at finite k.",
+            "limit": "The displayed oscillatory asymptotic assumes RH and simple zeros, while the damping estimate for hypothetical off-line zeros is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2105290574_u03",
+              "full_openalex_w2105290574_u07",
+              "full_openalex_w2105290574_u08",
+              "full_openalex_w2105290574_u09",
+              "full_openalex_w2105290574_u01"
+            ],
+            "title": "Spectral wave structure and the observational bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2105290574_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2105290574_u07",
+          "spontaneous_reading": "Successive asymptotic compression reveals the hierarchy: the exact trend series is replaced by a finite expansion and then by a leading negative k^{-2} term. The table matters because it shows the regime in which that compression becomes faithful."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2105290574_u07",
+          "source_grounded_mathematics": "The source derives the trend from its exact series, gives a multi-term large-k expansion, and simplifies it to a leading term proportional to -k^{-2}. Table 3 compares the exact trend with the finite expansion and leading approximation from small through large k; the approximations are poor at the smallest indices and rapidly align as k grows. Thus the trend decays faster than the k^{-3/4} oscillatory scale used later.",
+          "conceptual_reading": "This is an asymptotic hierarchy in which each representation forgets lower-order detail in exchange for control of the dominant scale. Once k^{-2} is isolated, the trend can be ruled out as the component governing the normalized k^{3/4} wave.",
+          "representation_or_bridge": "The beta/gamma asymptotic ratio bridges the exact trend series to inverse powers of k. The comparison table bridges symbolic asymptotics to their effective numerical regime and prevents the leading term from being mistaken for a uniformly accurate formula.",
+          "boundary_or_failure": "The leading approximation is visibly unreliable for small k, and the table only checks selected indices. Establishing that the trend is lower order does not bound the oscillatory component or prove the RH criterion. Exact constants and correction terms are embedded in extraction-fragile displays.",
+          "uncertainty": "High confidence in the k^{-2} ordering and improving large-k agreement; moderate confidence in exact constants and early table values without scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2105290574_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives a trend-series expression, a finite inverse-power approximation, and a leading negative term proportional to k^{-2}; Table 3 shows poor small-k approximation and rapidly improving agreement as k grows.",
+          "Within the interleaved right column, the later oscillatory representation has an overall k^{-3/4} envelope under an explicit RH and large-k assumption.",
+          "The candidate correctly says that the table identifies an effective asymptotic regime and that lower-order trend control alone does not prove the criterion."
+        ],
+        "inference": [
+          "Normalizing a k^{-2} trend by k^{3/4} makes it asymptotically negligible, so excluding the trend as the source of the normalized wave is a valid deduction once the stated asymptotic premises are retained."
+        ],
+        "unsupported_or_imported": [
+          "Calling equation (12) an 'exact trend series' is stronger than this span supports: the surrounding source says the explicit formula is theoretically valid in the large-k limit and discusses omitted integrals.",
+          "The candidate states the trend-versus-wave hierarchy without explicitly conditioning the k^{-3/4} side on the source's RH-based, large-k oscillatory formula."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'asymptotic hierarchy' language is substantive because the candidate identifies which lower-order information is discarded and uses the table to delimit the regime."
+        ],
+        "context_or_ocr_risk": [
+          "The two-column extraction interleaves trend equations with the oscillatory derivation, and exact constants and correction terms are unsafe without a scan; the powers k^{-2} and k^{-3/4} are recoverable."
+        ],
+        "missed_mechanism": [
+          "The source's own qualification of formulas (10)-(11) and its omitted-integral discussion are necessary to calibrate what equation (12) may be called."
+        ],
+        "revision_instructions": [
+          "Replace 'exact trend series' with a source-faithful phrase such as 'the trend series obtained from the explicit large-k formula.'",
+          "State that the k^{-2} trend is lower order than the k^{-3/4} oscillatory envelope in the RH-assuming large-k representation, while preserving the table-based small-k limitation and the fact that this does not prove the criterion."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9ca996bb7fa3913b05b1049168d0378e9003e30b3f554fb90201cfe977ae8417"
+}

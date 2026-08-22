@@ -1,0 +1,322 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1980116773_05838894_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1980116773",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the source's qualification that these are informal comments and its extrapolative language.",
+      "line_end": 357,
+      "line_start": 339,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sentence relating extrema to RH has an OCR defect, so only the broader prose claim about prime-logarithm relations and near-negative cancellation is safe without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u15.txt",
+      "unit_bytes": 1660,
+      "unit_id": "openalex_w1980116773_v2_u15",
+      "unit_sha256": "541d59af74ee221480f3d4741c240413087bd06456b9c4051c0af882a050fdc8",
+      "unit_type": "heuristic interpretation and search proposal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "The two roots of ~ (8) in Ie707 are\n\n<!-- source-page: 8 -->\n\n298                                          D . H . LEHMER\n\n                                            1/~ + i 7005.0629,\n                                            1/~ + i 7005.1006.\n",
+          "sha256": "28feb6679de4402b7fee3c73dc91e11046ff4afd17a2c345634adb8d2f0e7640"
+        },
+        "after": {
+          "line_start": 358,
+          "line_end": 365,
+          "text": "       N O T E A D D E D IN P R O O F :     Since t h e above was written a few more hours of\nmachine time was used to examine the n e x t 15000 roots.\n       The zeta-function's behavior becomes steadily \" w o r s e \" but all roots have a = 1/2.\n\n                                              References\n[1]. J . P . GRAM, Note sur les zeros de la fonetion ~(s) de Riemann. Acta Math., 27 (1903),\n            289-304.\n[2]. J . I . HUTCHINSON, On the roots of the Riemann zeta function. Trans. Amer. Math. Soc.,\n",
+          "sha256": "e61de23c71ddb9919338b96f1acc9680f8752996a58ca102596f8db1a9155bbd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpretation, future attack, and proof addendum",
+            "line_end": 360,
+            "line_start": 339,
+            "mathematical_role": "offers an informal prime-logarithm cancellation interpretation, a recurrence-based search suggestion, and an additional computation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 357,
+          "line_start": 339,
+          "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "unit_type": "heuristic interpretation and search proposal",
+          "why_material": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the source's qualification that these are informal comments and its extrapolative language.",
+          "representation_dependency": "The sentence relating extrema to RH has an OCR defect, so only the broader prose claim about prime-logarithm relations and near-negative cancellation is safe without scan verification.",
+          "unit_id": "openalex_w1980116773_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 338,
+            "line_start": 319,
+            "title": "Escalating precision to certify a nearly merged root pair",
+            "unit_id": "openalex_w1980116773_v2_u14",
+            "unit_type": "high-precision exceptional-case analysis",
+            "why_material": "For cases whose extrema could not clear the Riemann-Siegel remainder bound, the computation switches to many terms of the more accurate expansion, evaluates both real and imaginary parts on a local mesh, and reports a very low maximum between two distinct roots."
+          },
+          {
+            "line_end": 360,
+            "line_start": 358,
+            "title": "Additional 15,000-root computation",
+            "unit_id": "openalex_w1980116773_v2_u16",
+            "unit_type": "extended numerical evidence",
+            "why_material": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The broad scan's most informative exceptions occur when a local extremum is too small to dominate the approximation error; these cases require a more accurate representation and motivate the author's later phase-cancellation interpretation.",
+            "limit": "The phase-cancellation discussion is explicitly informal, and the observed finite examples do not validate its proposed distant-search extrapolation.",
+            "parent_local_unit_ids": [
+              "openalex_w1980116773_v2_u07",
+              "openalex_w1980116773_v2_u13",
+              "openalex_w1980116773_v2_u14",
+              "openalex_w1980116773_v2_u15"
+            ],
+            "title": "Rare low-amplitude extrema define the hardest certification cases"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "spontaneous_reading": "Lehmer interprets the unusually low maximum as phase cancellation among zeta-series terms and proposes searching for recurrent, more extreme alignments far up the critical strip as deliberate stress tests of RH."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u15",
+          "source_grounded_mathematics": "In explicitly informal comments, the source notes more frequent Gram-law departures, attributes the delicate observed maximum to early rising terms being nearly canceled by slower descending terms, invokes Kronecker's theorem for recurrence of related phenomena, and suggests targeted distant searches.",
+          "conceptual_reading": "The proposed intuition is to search by mechanism rather than uniformly: configurations that nearly erase the amplitude are the places where the critical-line behavior is most fragile and therefore most informative computationally.",
+          "representation_or_bridge": "Logarithms of primes and the phases of series terms provide a bridge from arithmetic relations to cancellation in the real critical-line oscillation; recurrence is used to motivate candidate search locations.",
+          "boundary_or_failure": "The passage labels itself informal. Its strongest sentence relating extrema to RH is OCR-defective, and recurrence of phase configurations does not by itself prove a negative extremum, an off-line zero, or that this is the best attack.",
+          "uncertainty": "The cancellation picture and search proposal are clear as heuristic claims, but formula-level and equivalence claims should be scan-verified and not promoted to theorem status."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1980116773_v2_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly labels the comments informal, reports increasingly capricious behavior and nearly one Gram-law departure in ten, relates logarithms of early primes to the observed extremum constraint, and describes cancellation between rapidly rising and slowly descending terms.",
+          "It invokes Kronecker's theorem for infinitely recurring phenomena and proposes distant targeted neighborhoods as a possible future attack, while the candidate correctly refuses to turn that heuristic into a proof."
+        ],
+        "inference": [
+          "Search by a rare low-amplitude cancellation mechanism rather than uniformly is a reasonable reading of the author's proposal.",
+          "Treating the near-negative maximum as computationally informative is licensed by the author's claim that such neighborhoods may be a useful attack."
+        ],
+        "unsupported_or_imported": [
+          "The exact span never says 'phase cancellation' or identifies 'phases of series terms'; that terminology reconstructs a mechanism from mathematical familiarity or the dossier title rather than the frozen prose.",
+          "The precise bridge from prime logarithms to candidate phase configurations is not developed in the span, and the OCR-defective equivalence sentence cannot safely supply it."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Most fragile' and 'stress tests' are serviceable heuristic glosses only if kept explicitly attributable to the author's informal proposal."
+        ],
+        "context_or_ocr_risk": [
+          "The sentence involving negative maxima, positive minima, and equivalence to RH is grammatically damaged and must not be normalized into a theorem-level equivalence without the scan."
+        ],
+        "missed_mechanism": [
+          "The candidate should separate the directly observed term-by-term balance, the asserted prime-logarithm relation, the Kronecker recurrence claim, and the speculative search recommendation instead of fusing them into a single phase mechanism."
+        ],
+        "revision_instructions": [
+          "Replace 'phase cancellation' and 'phases of series terms' with the source's explicit language: relations among logarithms of primes and an inspected balance between rising and descending terms.",
+          "Keep the recurrence and distant-search claims attributed as Lehmer's informal heuristic, and state that this extracted span does not establish the exact logical connection among prime-log relations, recurrence, and RH."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A short later update, kept separate from the main experiment's frozen first-10,000 scope.",
+      "line_end": 360,
+      "line_start": 358,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material representation dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots.",
+      "source_id": "openalex_w1980116773",
+      "source_normalized_sha256": "d4bfaaf5cd87487b15668f3befe5deaabcd153a60cae3eecf6b320f80ec65ba6",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Additional 15,000-root computation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980116773_v2_u16.txt",
+      "unit_bytes": 247,
+      "unit_id": "openalex_w1980116773_v2_u16",
+      "unit_sha256": "e0422a909d0e04773b9a160fedaa6fb10f1acdd79027acb9c5768cce97022888",
+      "unit_type": "extended numerical evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980116773_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1980116773",
+        "title": "On the roots of the Riemann zeta-function",
+        "authors": [
+          "D. H. Lehmer"
+        ],
+        "year": 1956,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "exposition",
+          "history",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 350,
+          "line_end": 357,
+          "text": "25,000th       term    of the series Z n -s so t h a t there is a very delicate balance at this\npoint. B y inspecting the terms of /(v) in I~707 one sees the first few rapidly rising\nterms being steadily beaten back b y a conspiracy of slowly descending terms so t h a t\nthe resulting         maximum     is nearly negative, the contest being followed b y a violent\noscillation.    This phenomenon, which has occurred before in a slightly less pronounced\nway, will occur infinitely often, b y Kronecker's theorem, and investigations at suitable\nneighborhoods at immense distances up the critical strip m a y well prove t o be the\nbest future a t t a c k on the R i e m a n n Hypothesis.\n",
+          "sha256": "e218df319a3db854d946c8ed5fb5d0347742d66e5b9301085681eb94465def2a"
+        },
+        "after": {
+          "line_start": 361,
+          "line_end": 368,
+          "text": "\n                                              References\n[1]. J . P . GRAM, Note sur les zeros de la fonetion ~(s) de Riemann. Acta Math., 27 (1903),\n            289-304.\n[2]. J . I . HUTCHINSON, On the roots of the Riemann zeta function. Trans. Amer. Math. Soc.,\n            27 (1925), 49-60.\n[3]. E . C . TITCHMARSH, The zeros of the Riemann zeta-function. Proc. Roy. Soc. London, 151\n            (1935), 234-255; 157 (1936), 261-263.\n",
+          "sha256": "30f1822396235c3cfc7e111705f3350bf317110e2de4f31446af5183630f6db1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_f95e5e46b576854d627000f0419648b1763fcb8f109688a13247bf624c64930c",
+        "dossier_sha256": "c949e8ad98b2fd13cc0f422a04a62efb15984ec0e3cff3016f42466e3261b2e3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpretation, future attack, and proof addendum",
+            "line_end": 360,
+            "line_start": 339,
+            "mathematical_role": "offers an informal prime-logarithm cancellation interpretation, a recurrence-based search suggestion, and an additional computation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 360,
+          "line_start": 358,
+          "title": "Additional 15,000-root computation",
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "unit_type": "extended numerical evidence",
+          "why_material": "The proof addendum extends the reported experiment and distinguishes increasingly irregular Gram behavior from the still-observed critical-line location of all examined roots."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A short later update, kept separate from the main experiment's frozen first-10,000 scope.",
+          "representation_dependency": "No material representation dependency.",
+          "unit_id": "openalex_w1980116773_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 357,
+            "line_start": 339,
+            "title": "Prime-logarithm phase cancellation as a delicate RH stress point",
+            "unit_id": "openalex_w1980116773_v2_u15",
+            "unit_type": "heuristic interpretation and search proposal",
+            "why_material": "In explicitly informal concluding comments, the author interprets the lowest observed maximum as a delicate balance among early rising and later descending terms, invokes Kronecker recurrence for repeated occurrences, and proposes targeted searches far up the strip as a possible attack."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1980116773_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "spontaneous_reading": "The proof addendum extends the experiment by another 15,000 roots and preserves an important separation: Gram behavior can become more irregular while every examined root still lies on the critical line."
+        },
+        "directed": {
+          "unit_id": "openalex_w1980116773_v2_u16",
+          "source_grounded_mathematics": "The added note says that a few more machine hours examined the next 15,000 roots; the zeta-function's behavior became steadily worse in the author's qualitative sense, but all examined roots had real part one half.",
+          "conceptual_reading": "Failure of a convenient local heuristic and failure of the target conjecture are different events. Additional irregularity in Gram behavior can coexist with continued finite support for critical-line location.",
+          "representation_or_bridge": "The ordered-root computation extends the empirical range, while comparing Gram-law behavior with critical-line location separates a screening proxy from the property it was designed to investigate.",
+          "boundary_or_failure": "The addendum supplies no new height cutoff, detailed certification procedure, simplicity claim, or global implication; worse is qualitative and should not be converted into a formal metric.",
+          "uncertainty": "The extension and critical-line statement are explicit in prose, but the brief note leaves its detailed scope and method unstated."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1980116773_v2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The addendum explicitly says a few more machine hours examined the next 15,000 roots, that the zeta-function's behavior became steadily 'worse,' and that all examined roots had real part one half.",
+          "The candidate correctly notes the absence of a new height cutoff, detailed method, simplicity claim, or global conclusion."
+        ],
+        "inference": [
+          "Separating deterioration in an informal proxy-like description from the continued finite critical-line observation is a useful conceptual contrast, provided the proxy is not identified more specifically than the source allows."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading and later fields equate the undefined qualitative 'worse' behavior with increasingly irregular Gram behavior; the three-line addendum does not say that."
+        ],
+        "paraphrase_or_style_risk": [
+          "The proxy-versus-property framing is valuable but becomes overconfident when it silently names Gram's law as the proxy."
+        ],
+        "context_or_ocr_risk": [
+          "There is no material OCR barrier in the addendum, but 'worse' is quoted and undefined, so its mathematical meaning cannot be recovered from this span."
+        ],
+        "missed_mechanism": [
+          "The candidate does not preserve the source's deliberate qualitative ambiguity consistently across all fields."
+        ],
+        "revision_instructions": [
+          "Retain 'worse' as the author's undefined qualitative description of zeta-function behavior; do not rewrite it as Gram-law irregularity.",
+          "State only the supported contrast: the reported qualitative worsening coexists with all of the next 15,000 examined roots having real part one half, under an unstated detailed method and cutoff."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9f360b332ad2848242da903533f7e57a30f696d847eb821f4a2713c42d2f8df4"
+}

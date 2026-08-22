@@ -1,0 +1,376 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2008486284_e5f86ebb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2008486284",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Theorem 3.1 covers small derivative-root distances arising from closely spaced polynomial roots, not every small distance.",
+      "line_end": 276,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The perturbative construction is clear in prose; the exact coefficients in equations (3.17)-(3.18) are formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perturb a double root and expand the scaled derivative-root displacement",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u09.txt",
+      "unit_bytes": 2033,
+      "unit_id": "openalex_w2008486284_u09",
+      "unit_sha256": "c2b93e42ddc6a6c65d68d85672fdb80a873f99c23f667096bb9e6f90e3594f39",
+      "unit_type": "theorem-and-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u09.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "                           +       −        +       −           π 6 s6 + O(s7 ).       (3.12)\n                               315 135N 2 45N 4 189N 6\nThis expansion follows from the pair correlation function for U (N ) (see [15]),\n                                              sin2 (πy)\n                                                           ,                             (3.13)\n                                          N 2 sin2 (πy/N )\nand the fact that the pair correlation function and the nearest neighbor spacing for U (N )\nagree to order 6.\n",
+          "sha256": "d3cbad445154d9e4674ded6654f26e2d76a7c99b9f0e4530efa8a11f8f7b2a47"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "\n<!-- source-page: 6 -->\n\n6                DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n   Note that Theorem 3.1 refers to the small values of δ that arise from closely spaced zeros\nof the polynomial. The theorem does not account for all small values of δ. That distinction\nis often missed, because examples such as shown in Figure 2.1 give the mistaken impression\n",
+          "sha256": "c3671e5f08f630e22f392db7095b03ee545fef0aa6abc16bdd9d902d33f215ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 247,
+          "title": "Perturb a double root and expand the scaled derivative-root displacement",
+          "unit_id": "openalex_w2008486284_u09",
+          "unit_type": "theorem-and-construction",
+          "why_material": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Theorem 3.1 covers small derivative-root distances arising from closely spaced polynomial roots, not every small distance.",
+          "representation_dependency": "The perturbative construction is clear in prose; the exact coefficients in equations (3.17)-(3.18) are formula-layer dependent.",
+          "unit_id": "openalex_w2008486284_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 246,
+            "line_start": 207,
+            "title": "Translation-invariant CUE spacing and its small-gap expansion",
+            "unit_id": "openalex_w2008486284_u08",
+            "unit_type": "probabilistic-setup",
+            "why_material": "The source normalizes eigenangles to unit mean spacing, derives index independence from translation invariance, and supplies the small-s nearest-neighbor expansion that later drives the derivative-root density."
+          },
+          {
+            "line_end": 300,
+            "line_start": 282,
+            "title": "Small radial derivative distance is not exclusively a close-gap phenomenon",
+            "unit_id": "openalex_w2008486284_u10",
+            "unit_type": "counterexample-and-limit",
+            "why_material": "The source explicitly blocks a tempting converse by citing separated-root families that still produce near-circle derivative roots, then explains why close pairs nevertheless determine the leading square-root density and records the unresolved normalization problem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2008486284_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2008486284_u09",
+          "spontaneous_reading": "The multiple-root limit supplies a base point for an analytic perturbation: an even, gap-controlled root displacement can then push eigenvalue repulsion into a fractional-power density."
+        },
+        "directed": {
+          "unit_id": "openalex_w2008486284_u09",
+          "source_grounded_mathematics": "Starting from a coincident eigenvalue pair, the nearby Λ′ root moves continuously as the centered rescaled pair separates by θ; with δ=N(1−z′), the source states an even expansion δ=b₁π²θ²+b₂π⁴θ⁴+O(θ⁶) and derives the close-pair contribution 4s^(1/2)/(3π)−82s^(3/2)/(45π)+O(s^(5/2)) as N grows.",
+          "conceptual_reading": "Degeneracy is used constructively as a solvable anchor, and the quadratic local map explains why cubic small-gap repulsion becomes a square-root output density.",
+          "representation_or_bridge": "The bridge is a pushforward from centered nearest-neighbor gap θ to scaled derivative-root displacement δ via an analytic local branch.",
+          "boundary_or_failure": "Theorem 3.1 describes small δ arising from close pairs, not the complete small-δ population.",
+          "uncertainty": "Moderate: the perturbative construction is explicit, but exact coefficients in the two expansions are formula-layer dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2008486284_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span anchors the nearby derivative root at a double-root limit, centers the pair, states an even θ expansion for the complex displacement, and gives the close-pair density asymptotic.",
+          "The candidate correctly limits Theorem 3.1 to small distances arising from close pairs."
+        ],
+        "inference": [
+          "The quadratic-map explanation for converting cubic gap repulsion to a square-root density is a grounded pushforward interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The directed account attaches the density conclusion to δ=N(1−z′) without distinguishing that complex displacement from the radial observable N(1−|z′|) used in the theorem statement."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The extracted theorem reuses δ inconsistently, so the candidate must disambiguate rather than inherit the notation collision."
+        ],
+        "missed_mechanism": [
+          "Projection from complex root displacement to radial distance is required before stating the probability-density pushforward."
+        ],
+        "revision_instructions": [
+          "Separate the analytic expansion for complex δ_c=N(1−z′) from the density for radial δ_r=N(1−|z′|); state that later radialization and spacing pushforward produce the displayed close-pair law."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The expected background coefficient and final distributional match assume CUE statistics for zeta zeros; the conclusion is conjectural for zeta, not an RH result.",
+      "line_end": 910,
+      "line_start": 786,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense equations (6.1)-(6.17) are essential and some fractions are visually fragmented; the prose securely supports the structural match but exact algebra needs scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u18.txt",
+      "unit_bytes": 7119,
+      "unit_id": "openalex_w2008486284_u18",
+      "unit_sha256": "79c53ccb4edbe2ab9826c29c6a12ae163611c618adaf42e507ecd6bface47a36",
+      "unit_type": "heuristic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u18.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 778,
+          "line_end": 785,
+          "text": "                  = N3 − N2 + N − .                                                                                (5.32)\n                   30   10        15         5\nThus,\n                                             1     7\n                             hB2 i = Rehb2 i = − N −1 + O(N −2 ).                                                  (5.33)\n                                            48 48\nInserting this into (5.19) gives the expansion claimed in Theorem 3.1.\n\n",
+          "sha256": "b09d36db506777ef2a99f327a42ee36d4a6b21f94b6f6890bae7ed8f461003ba"
+        },
+        "after": {
+          "line_start": 911,
+          "line_end": 918,
+          "text": "   In Figure 6.1 we show the empirical distribution of the zeros of ζ 0 for 106 < t < 106 +\n60000. The general shape of the distribution shows a striking similarity with the zeros of\nthe derivative of characteristic polynomials of unitary matrices.\n\n\n                    0.3\n\n                  0.25\n",
+          "sha256": "0b30f928837454153bbc45d966dad8a99873725f3560790a21e2e865037526be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The Riemann zeta-function",
+            "line_end": 934,
+            "line_start": 786,
+            "mathematical_role": "Repeats the local logarithmic-derivative expansion for zeta and identifies the CUE-dependent coefficient match and numerical comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 910,
+          "line_start": 786,
+          "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+          "unit_id": "openalex_w2008486284_u18",
+          "unit_type": "heuristic-transfer",
+          "why_material": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The expected background coefficient and final distributional match assume CUE statistics for zeta zeros; the conclusion is conjectural for zeta, not an RH result.",
+          "representation_dependency": "Dense equations (6.1)-(6.17) are essential and some fractions are visually fragmented; the prose securely supports the structural match but exact algebra needs scan checking.",
+          "unit_id": "openalex_w2008486284_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 784,
+            "line_start": 709,
+            "title": "Ratio averages reduce random root coefficients to computable expectations",
+            "unit_id": "openalex_w2008486284_u17",
+            "unit_type": "computational-reduction",
+            "why_material": "A generating ratio of characteristic polynomials converts the needed collision-conditioned coefficient moments into derivatives of a known Haar average; computer algebra then supplies the expected second coefficient and closes Theorem 3.1."
+          },
+          {
+            "line_end": 932,
+            "line_start": 911,
+            "title": "Observed zeta-prime radial analogue matches the CUE distribution shape",
+            "unit_id": "openalex_w2008486284_u19",
+            "unit_type": "empirical-comparison",
+            "why_material": "Approximately one hundred thousand derivative zeros in a stated height interval give an empirical distribution with the same striking overall shape as derivative roots of unitary characteristic polynomials."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching local mean spacing converts horizontal displacement from the critical line and radial displacement from the unit circle into parallel scaled variables, after which the close-pair logarithmic-derivative equations have the same leading form.",
+            "limit": "The zeta side depends on CUE statistics and asymptotic approximations; agreement is solver-independent mathematical evidence only for the model correspondence, not for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u02",
+              "openalex_w2008486284_u07",
+              "openalex_w2008486284_u13",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Mean-spacing normalization transports a derivative-zero law between two geometries"
+          },
+          {
+            "claim": "Speiser supplies an exact exclusion criterion, while Levinson-style losses and Soundararajan frequency functions turn finer right-of-line proximity into quantitative diagnostics that the CUE calculation can model.",
+            "limit": "The frequency conjectures and zeta/CUE match remain conditional or conjectural, and none of the source's distributional calculations proves the exclusion required by RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u01",
+              "openalex_w2008486284_u03",
+              "openalex_w2008486284_u05",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Derivative-zero proximity is a graded diagnostic rather than a direct RH proof route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 785,
+              "line_start": 785,
+              "reason": "Blank separator before the zeta analogue."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 934,
+              "line_start": 914,
+              "reason": "Detached graph coordinates, caption, and spacing before the one-level-density section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2008486284_u18",
+        "spontaneous": {
+          "unit_id": "openalex_w2008486284_u18",
+          "spontaneous_reading": "After peeling two close poles from ζ′/ζ and measuring everything in local mean-spacing units, the residual zero field enters the same implicit equation as the background roots of a CUE polynomial."
+        },
+        "directed": {
+          "unit_id": "openalex_w2008486284_u18",
+          "source_grounded_mathematics": "The partial-fraction expansion of ζ′/ζ separates two close zeros around height t from all other zeros. With X=x/log t and gap Θ=2πθ/log t, expansion gives the same leading implicit form as in the unitary calculation, including β₁≈1/4; assuming CUE zero statistics supplies the expected background coefficient and hence the matching leading ζ′ law.",
+          "conceptual_reading": "Mean-spacing normalization reveals that the shared object is a local logarithmic-derivative balance, not merely a visual resemblance between two distributions.",
+          "representation_or_bridge": "Zeta zeros become rescaled poles in a partial-fraction field, parallel to reciprocal distances from CUE roots; the background coefficient is then evaluated through the collision-weighted one-level density.",
+          "boundary_or_failure": "The expected coefficient and final distributional match assume CUE statistics and asymptotic approximations, so the zeta conclusion is conjectural and does not prove RH.",
+          "uncertainty": "Moderate to high for exact algebra because equations (6.1)–(6.17) are dense and fragmented; the conditional structural match is explicit in prose."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2008486284_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "The span separates a chosen close ζ-zero pair in ζ′/ζ, rescales gap and displacement by log t, derives the same leading implicit form and coefficients as the CUE calculation, and makes the final law conditional on CUE spacing statistics.",
+          "The candidate correctly rejects any RH conclusion."
+        ],
+        "inference": [
+          "Identifying the shared mechanism as a local logarithmic-derivative balance is a substantive and grounded bridge."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Equations (6.1)–(6.17) are densely extracted, so exact symbolic claims require scan checking."
+        ],
+        "missed_mechanism": [
+          "The selected close zeros are assumed in equation (6.2) to be 1/2+i(t±Θ/2), i.e. on the critical line; the candidate mentions close zeros without preserving this hypothesis."
+        ],
+        "revision_instructions": [
+          "State explicitly that the local derivation starts from a close pair assumed on the critical line, in addition to the later CUE-statistics assumption; keep the conclusion conditional on both this setup and the stated asymptotics."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c04d83bab3ed41183e2e9c87b9bb5168cbebd72882cdd31beb6d442b7816bfc4"
+}

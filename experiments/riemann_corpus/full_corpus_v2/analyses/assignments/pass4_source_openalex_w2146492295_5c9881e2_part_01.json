@@ -1,0 +1,1015 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2146492295_5c9881e2_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2146492295",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the central algorithmic change and its explicit cost motivation.",
+      "line_end": 160,
+      "line_start": 154,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on the fact that a degree-m real polynomial has a non-real zero when a certified real-root count is smaller than m, with multiplicity conditions handled in the following setup.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Anticipated growth in the first complex-root degree makes repeated computation of all zeros expensive; the paper reframes the needed decision as detecting whether any zeros are non-real and selects Sturm sequences as a cheaper route.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Count real roots instead of finding all roots",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u004.txt",
+      "unit_bytes": 557,
+      "unit_id": "openalex_w2146492295_u004",
+      "unit_sha256": "40d55b1aee1428b2b9447cc1709b6a00050575597c6c91b79dbf8999dcfbcb41",
+      "unit_type": "computational-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u004.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 146,
+          "line_end": 153,
+          "text": "for errors in their coefficients required that the computations were performed\nin very high precision. Csordas et al. [2] used 110 digits of precision for their\nproof that -50 < A. As a partial check, we repeated their computations in\ndouble precision on a CDC Cyber 995 (which means an accuracy of about 28\ndecimal digits) and could reproduc.e the complex zero of G16(t; -50) with an\naccuracy of about 20 decimal digits. This illustrates the enormous amount of\nextra work needed to provide a proof of the existence of complex zeros of the\nJensen polynomials G,.(t;>.).\n",
+          "sha256": "37858ef5a4d2523aef6a2ef4e3630eef821cb3978c67c209a64cce0bfa5db630"
+        },
+        "after": {
+          "line_start": 161,
+          "line_end": 168,
+          "text": "a polynomial. A Sturm sequence associated with a given polynomial PO(x) of\n\n<!-- source-page: 6 -->\n\n2   ALGORITHM AND RESULTS                                                         4\n\n\ndegree m is a sequence of polynomials Po(x),p1 (x), ... of strictly decreasing\n",
+          "sha256": "7fe04b650b5dcc481117ee70c5cfd7afd3667489b6f49e1d99080afae530a671"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Algorithm and results",
+            "line_end": 210,
+            "line_start": 110,
+            "mathematical_role": "Introduces moments and Jensen polynomials, states the non-real-zero obstruction, compares root-finding and Sturm approaches, gives the continuation algorithm, and reports qualitative behavior and a precision diagnostic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 160,
+          "line_start": 154,
+          "title": "Count real roots instead of finding all roots",
+          "unit_id": "openalex_w2146492295_u004",
+          "unit_type": "computational-reframing",
+          "why_material": "Anticipated growth in the first complex-root degree makes repeated computation of all zeros expensive; the paper reframes the needed decision as detecting whether any zeros are non-real and selects Sturm sequences as a cheaper route."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the central algorithmic change and its explicit cost motivation.",
+          "representation_dependency": "Relies on the fact that a degree-m real polynomial has a non-real zero when a certified real-root count is smaller than m, with multiplicity conditions handled in the following setup.",
+          "unit_id": "openalex_w2146492295_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 153,
+            "line_start": 137,
+            "title": "Earlier coefficient-error certification by full root computation",
+            "unit_id": "openalex_w2146492295_u003",
+            "unit_type": "method-comparison",
+            "why_material": "This passage records the prior constructive certificate: compute moments with known precision, find every polynomial zero, and use an Ostrowski error bound to transfer a numerically observed complex zero from approximate to exact coefficients. It also identifies coefficient sensitivity as the driver of very high precision."
+          },
+          {
+            "line_end": 179,
+            "line_start": 161,
+            "title": "Sturm sequence and sign-variation root count",
+            "unit_id": "openalex_w2146492295_u005",
+            "unit_type": "definition-and-counting-mechanism",
+            "why_material": "The passage constructs a decreasing-degree polynomial sequence by Euclidean division and states that the difference of endpoint sign-variation counts equals the number of real zeros on an interval."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At a fixed parameter, moment-derived Jensen polynomials convert the lower-bound question into finding a non-real zero; Sturm counts reduce that decision to certified real-root counting, while truncation, quadrature, interval, and precision controls support the numerical inputs and Newton supplies an extra check.",
+            "limit": "The source relies on cited results for the Jensen implication and trapezoidal convergence, and several displayed formulas are extraction-degraded, so the scan and cited assumptions are required before reproducing the certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u001",
+              "openalex_w2146492295_u002",
+              "openalex_w2146492295_u004",
+              "openalex_w2146492295_u005",
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u009",
+              "openalex_w2146492295_u010",
+              "openalex_w2146492295_u011",
+              "openalex_w2146492295_u013"
+            ],
+            "title": "Finite-dimensional obstruction certificate for a de Bruijn-Newman lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u004",
+          "spontaneous_reading": "The decisive reframing is to compute only the predicate that matters. Instead of locating every zero of each growing Jensen polynomial, count its real zeros; a deficit from the degree exposes the required non-real zero without solving the harder root-location problem."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u004",
+          "source_grounded_mathematics": "Because the first Jensen polynomial with complex zeros may have rapidly growing degree as the parameter increases, the source replaces repeated computation of all zeros by Sturm-sequence tests for whether any zeros are non-real.",
+          "conceptual_reading": "This is a task-specific compression: discard root coordinates and retain only the real-root count. The representation forgets where the roots lie but preserves the obstruction needed for the lower-bound argument, reducing computational work.",
+          "representation_or_bridge": "For a real polynomial of known degree, a certified count of fewer real roots than the degree bridges directly to existence of non-real roots. Sturm sign variations supply that count in the following unit.",
+          "boundary_or_failure": "The inference needs multiplicity conditions and a real-root count over an interval containing all real roots. Those details are not established in this short span and are handled only by the surrounding Sturm and interval machinery.",
+          "uncertainty": "High confidence in the stated algorithmic motivation and decision-problem reduction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u004",
+        "critic_decision": "revise",
+        "supported": [
+          "The exact span says the first complex-root degree may grow rapidly, finding all roots may become expensive, and Sturm sequences are chosen to decide only whether any complex root exists.",
+          "The predicate-versus-full-root-location reframing is genuinely present and mathematically substantive."
+        ],
+        "inference": [
+          "Describing this as task-specific information compression is a reasonable conceptual reading of retaining only the needed existence predicate."
+        ],
+        "unsupported_or_imported": [
+          "The exact span does not state that Sturm is used by counting real roots, that a count deficit from the degree is the bridge, or that interval and multiplicity conditions are involved; those mechanics come from the following unit or general Sturm knowledge.",
+          "The sentence saying sign variations supply the count in the following unit explicitly crosses the frozen evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic phrase about forgetting root coordinates is acceptable only when anchored to the source's explicit contrast between deciding existence and finding all zeros."
+        ],
+        "context_or_ocr_risk": [
+          "The span ends mid-sentence but preserves the complete cost motivation and method choice; it does not preserve the counting mechanism."
+        ],
+        "missed_mechanism": [
+          "Within this span, Sturm sequences are only named as the cheaper decision method; no certified-count conditions are supplied."
+        ],
+        "revision_instructions": [
+          "Keep the existence-predicate versus all-root-location reframing, but remove or explicitly mark as outside-span the real-root-count deficit, sign-variation, interval, and multiplicity details."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 161-162 are retained because the definition begins before the page break; the simple-zero case is stated explicitly.",
+      "line_end": 179,
+      "line_start": 161,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on polynomial remainder sequences and endpoint sign representations; several primes and subscripts are OCR-sensitive but the prose statement is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage constructs a decreasing-degree polynomial sequence by Euclidean division and states that the difference of endpoint sign-variation counts equals the number of real zeros on an interval.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sturm sequence and sign-variation root count",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u005.txt",
+      "unit_bytes": 873,
+      "unit_id": "openalex_w2146492295_u005",
+      "unit_sha256": "9ade347f2bd94cf9a088d93766c60d73d737c5a5d2bc7fb0de5c659ec7d5912d",
+      "unit_type": "definition-and-counting-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u005.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 153,
+          "line_end": 160,
+          "text": "Jensen polynomials G,.(t;>.).\n    In order to improve the result of Csordas et al., we realized that the degree of\nthe Jensen polynomial G.n(t; >.)which possesses complex zeros, might grow very\nfast with >.. Consequently, finding all the zeros of Gn, n = 1, 2, ... (in order to\nprove the existence of complex ones) might become very expensive. Therefore,\nwe decided to use so-called Sturm sequences [4] to determine whether the given\nJensen polynomial has any complex zeros (which is all we need to know, in\nprinciple). This is computationally much simpler than finding all the zeros of\n",
+          "sha256": "c06095d9a466fead3cc77c915b7cd64fa40e560afe08caa4d53b5a9b561d93e7"
+        },
+        "after": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "     Our algorithm now works as follows. Suppose we know Ao and m = m(>.. 0 )\nis the smallest value for which Gm(t; .Ao) has complex zeros (to start with, we\ntake Ao = -50 and m = 16 from [2]). Then for a new value of >. which is\nsomewhat larger than Ao we compute .Bi(>.), i = 0, 1, ... , a.nd for ea.eh new /31\nwe compute the associated Jensen polynomial, a.nd, by means of the associated\nSturm sequence, its number of real zeros on the interval [-A,O], where A > 0\nis suitably chosen. This is continued until we have found n for which g,.(t; >.)\nshould have complex zeros. Then, as a check, we compute a complex zero of this\n",
+          "sha256": "aca88f0394ffa0e320d3110408b6c3194bfd7f55c6522f8d36c418991e84f4c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Algorithm and results",
+            "line_end": 210,
+            "line_start": 110,
+            "mathematical_role": "Introduces moments and Jensen polynomials, states the non-real-zero obstruction, compares root-finding and Sturm approaches, gives the continuation algorithm, and reports qualitative behavior and a precision diagnostic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 179,
+          "line_start": 161,
+          "title": "Sturm sequence and sign-variation root count",
+          "unit_id": "openalex_w2146492295_u005",
+          "unit_type": "definition-and-counting-mechanism",
+          "why_material": "The passage constructs a decreasing-degree polynomial sequence by Euclidean division and states that the difference of endpoint sign-variation counts equals the number of real zeros on an interval."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 161-162 are retained because the definition begins before the page break; the simple-zero case is stated explicitly.",
+          "representation_dependency": "Depends on polynomial remainder sequences and endpoint sign representations; several primes and subscripts are OCR-sensitive but the prose statement is recoverable.",
+          "unit_id": "openalex_w2146492295_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 160,
+            "line_start": 154,
+            "title": "Count real roots instead of finding all roots",
+            "unit_id": "openalex_w2146492295_u004",
+            "unit_type": "computational-reframing",
+            "why_material": "Anticipated growth in the first complex-root degree makes repeated computation of all zeros expensive; the paper reframes the needed decision as detecting whether any zeros are non-real and selects Sturm sequences as a cheaper route."
+          },
+          {
+            "line_end": 205,
+            "line_start": 180,
+            "title": "Continuation search from a known complex zero",
+            "unit_id": "openalex_w2146492295_u006",
+            "unit_type": "search-procedure-and-result",
+            "why_material": "Starting from a known parameter and minimal degree, the algorithm moves to larger parameters, computes successive Jensen polynomials, counts their real zeros on a chosen interval, and then uses a tracked local extremum and the previous imaginary part to initialize Newton's method as a check. It reports minimal degrees with two missing real roots and increasingly small imaginary parts."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At a fixed parameter, moment-derived Jensen polynomials convert the lower-bound question into finding a non-real zero; Sturm counts reduce that decision to certified real-root counting, while truncation, quadrature, interval, and precision controls support the numerical inputs and Newton supplies an extra check.",
+            "limit": "The source relies on cited results for the Jensen implication and trapezoidal convergence, and several displayed formulas are extraction-degraded, so the scan and cited assumptions are required before reproducing the certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u001",
+              "openalex_w2146492295_u002",
+              "openalex_w2146492295_u004",
+              "openalex_w2146492295_u005",
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u009",
+              "openalex_w2146492295_u010",
+              "openalex_w2146492295_u011",
+              "openalex_w2146492295_u013"
+            ],
+            "title": "Finite-dimensional obstruction certificate for a de Bruijn-Newman lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u005",
+          "spontaneous_reading": "A Sturm chain converts root geometry into endpoint sign data. Euclidean remainders produce a decreasing-degree polynomial sequence, and the drop in sign variations between two endpoints counts real zeros in the interval, so a global root question becomes two finite sign evaluations."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u005",
+          "source_grounded_mathematics": "Starting from a polynomial and its derivative, the passage defines successive negative remainders using Euclidean division. In the stated simple-zero case the degrees decrease by one, and, after skipping zero endpoint values, the difference between sign-variation counts at the two endpoints equals the number of real zeros in the interval.",
+          "conceptual_reading": "The remainder sequence is a certificate-carrying representation: it preserves the real-root count while forgetting individual root locations. Its usefulness comes from replacing unstable root approximation by an algebraic sign invariant.",
+          "representation_or_bridge": "Polynomial division builds the Sturm sequence; endpoint evaluation maps each polynomial to a sign; variation difference maps the sign sequences to an exact interval root count under the theorem's conditions.",
+          "boundary_or_failure": "The statement explicitly treats simple zeros. Correct use also requires reliable endpoint signs, treatment of endpoint zeros, and an interval appropriate to the later real-root deficit argument. OCR has damaged some primes and subscripts.",
+          "uncertainty": "The construction and counting mechanism are clear in prose; literal formula transcription should be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u005",
+        "critic_decision": "revise",
+        "supported": [
+          "The span constructs a strictly decreasing-degree remainder sequence by Euclidean division and states that endpoint sign-variation difference counts real zeros on an interval, skipping zero endpoint values.",
+          "It explicitly restricts the degree-by-degree statement to the simple-zero case."
+        ],
+        "inference": [
+          "Interpreting endpoint signs as a representation that forgets individual locations while preserving a root count is a sound conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The candidate confidently reconstructs the OCR-damaged initializer as the derivative of the starting polynomial; the extracted display does not safely preserve that prime.",
+          "The claim that the algebraic count replaces unstable root approximation imports a numerical-stability contrast not stated in this unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low once the derivative and instability claims are qualified; the operation from remainders to endpoint signs to a count is non-paraphrastic."
+        ],
+        "context_or_ocr_risk": [
+          "Primes, subscripts, and variables in the recurrence are OCR-sensitive, so literal reconstruction of the initializer requires the scan."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Refer to the OCR-degraded displayed initializer without identifying it as a derivative unless scan-verified, and replace the instability claim with the source-supported contrast that the method supplies an interval root count without individual root locations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines the end-to-end search logic with the qualitative result pattern because the latter interprets what the procedure returns.",
+      "line_end": 205,
+      "line_start": 180,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on parameter continuation, real-root counts over a sufficiently wide negative interval, and numerical complex-root coordinates; exact symbols are partially degraded but the procedural prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starting from a known parameter and minimal degree, the algorithm moves to larger parameters, computes successive Jensen polynomials, counts their real zeros on a chosen interval, and then uses a tracked local extremum and the previous imaginary part to initialize Newton's method as a check. It reports minimal degrees with two missing real roots and increasingly small imaginary parts.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Continuation search from a known complex zero",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u006.txt",
+      "unit_bytes": 1963,
+      "unit_id": "openalex_w2146492295_u006",
+      "unit_sha256": "c512866c9c4418edfd54c0c93f7be9c9bf8b2f0e083dec34ea437e35d3aae513",
+      "unit_type": "search-procedure-and-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u006.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 172,
+          "line_end": 179,
+          "text": "\n                  Pi-1 (:z:) := qi(x)pi(x) -   Pi+l (x), i = 1, 2, ... ,\nwhere q,(x) is found by the Euclidean algorithm, such that the degree of Pi+i (x)\nis less than the degree of Pi(x). If Po(x) has only simple zeros, Pi(x) has degree\nm - i, and the Sturm sequence consists of m + 1 polynomials Po(:z:), ... ,pm(x).\nLet v(a) be the number of sign changes in the sequence {Pi(a)}~ 0 (where zero\nvalues are skipped). Then v(a)- v(b) is the number of real zeros of the polyno-\nmial Po (:z:) on the interval [a, b].\n",
+          "sha256": "fb65189d756ea2346722ca8455cf4bf259d2308a5eae774f1e2ac89a016a3156"
+        },
+        "after": {
+          "line_start": 206,
+          "line_end": 213,
+          "text": "     During the computation of Sturm sequences, it is easy to check when the\n accuracy used becomes insufficient: in that case the sequence of signs {Pi(a)}~ 0 ,\n associated with Ym, deviates in a chaotic way from the previous sequence of signs\n (associated with 9m-1).\n\n<!-- source-page: 7 -->\n\n3 SOME COMPUTATIONAL DETAILS                                                              5\n",
+          "sha256": "bd6a614061575adf1cb7543bba445bb82acd3705c4b7572c525407ebe8d3ac00"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Algorithm and results",
+            "line_end": 210,
+            "line_start": 110,
+            "mathematical_role": "Introduces moments and Jensen polynomials, states the non-real-zero obstruction, compares root-finding and Sturm approaches, gives the continuation algorithm, and reports qualitative behavior and a precision diagnostic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 205,
+          "line_start": 180,
+          "title": "Continuation search from a known complex zero",
+          "unit_id": "openalex_w2146492295_u006",
+          "unit_type": "search-procedure-and-result",
+          "why_material": "Starting from a known parameter and minimal degree, the algorithm moves to larger parameters, computes successive Jensen polynomials, counts their real zeros on a chosen interval, and then uses a tracked local extremum and the previous imaginary part to initialize Newton's method as a check. It reports minimal degrees with two missing real roots and increasingly small imaginary parts."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines the end-to-end search logic with the qualitative result pattern because the latter interprets what the procedure returns.",
+          "representation_dependency": "Depends on parameter continuation, real-root counts over a sufficiently wide negative interval, and numerical complex-root coordinates; exact symbols are partially degraded but the procedural prose is intact.",
+          "unit_id": "openalex_w2146492295_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 179,
+            "line_start": 161,
+            "title": "Sturm sequence and sign-variation root count",
+            "unit_id": "openalex_w2146492295_u005",
+            "unit_type": "definition-and-counting-mechanism",
+            "why_material": "The passage constructs a decreasing-degree polynomial sequence by Euclidean division and states that the difference of endpoint sign-variation counts equals the number of real zeros on an interval."
+          },
+          {
+            "line_end": 209,
+            "line_start": 206,
+            "title": "Chaotic sign patterns diagnose insufficient precision",
+            "unit_id": "openalex_w2146492295_u007",
+            "unit_type": "numerical-diagnostic",
+            "why_material": "A sudden chaotic departure of the Sturm endpoint-sign sequence from the preceding degree's pattern is used as an operational warning that working precision is inadequate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At a fixed parameter, moment-derived Jensen polynomials convert the lower-bound question into finding a non-real zero; Sturm counts reduce that decision to certified real-root counting, while truncation, quadrature, interval, and precision controls support the numerical inputs and Newton supplies an extra check.",
+            "limit": "The source relies on cited results for the Jensen implication and trapezoidal convergence, and several displayed formulas are extraction-degraded, so the scan and cited assumptions are required before reproducing the certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u001",
+              "openalex_w2146492295_u002",
+              "openalex_w2146492295_u004",
+              "openalex_w2146492295_u005",
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u009",
+              "openalex_w2146492295_u010",
+              "openalex_w2146492295_u011",
+              "openalex_w2146492295_u013"
+            ],
+            "title": "Finite-dimensional obstruction certificate for a de Bruijn-Newman lower bound"
+          },
+          {
+            "claim": "Across the reported parameters, the first Jensen-polynomial degree with complex roots grows sharply as the parameter increases toward -5, with the -5 case reaching degree 406 and requiring much higher precision, matching the stated warning that further improvement by this algorithm is formidable.",
+            "limit": "This is a finite computational trend and an authorial assessment, not a theorem giving asymptotic degree or complexity growth.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u008"
+            ],
+            "title": "Observed degree growth as the practical obstruction to stronger bounds"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u006",
+          "spontaneous_reading": "The search exploits continuation in the deformation parameter. A known complex-root case supplies a nearby degree and a previous imaginary part; successive Jensen polynomials are screened by Sturm counts, while a tracked local extremum seeds Newton iteration only as a corroborating reconstruction of the conjugate pair."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u006",
+          "source_grounded_mathematics": "Beginning from the known parameter -50 and minimal degree 16, the algorithm moves to larger parameters, computes moments and successive Jensen polynomials, and counts their real zeros on a chosen negative interval. Once a polynomial is judged to have complex zeros, Newton iteration is initialized using a nearby local extremum for the real part and the previous complex zero's imaginary part. The reported minimal polynomials have degree minus two real roots, and the observed degree growth becomes sharp from around -20 while the imaginary parts appear to shrink.",
+          "conceptual_reading": "Continuation supplies a warm start in both degree and root geometry, avoiding an independent search at every parameter. The Sturm count is the primary decision representation; the explicit complex coordinate is a secondary explanatory and diagnostic representation.",
+          "representation_or_bridge": "The parameter path links neighboring Jensen families. A real-root deficit identifies a conjugate non-real pair, and local extrema on the real axis together with the preceding imaginary part bridge the count-based detection to Newton's complex root approximation.",
+          "boundary_or_failure": "The count depends on a sufficiently wide interval and numerically trustworthy signs. Newton convergence is only a check. The reported degree growth and shrinking imaginary parts are finite computational observations, not asymptotic theorems.",
+          "uncertainty": "The procedural logic and qualitative trends are explicit; exact notation is extraction-degraded and quantitative entries belong to the table."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u006",
+        "critic_decision": "revise",
+        "supported": [
+          "The span starts from the known -50, degree-16 case, moves to larger parameters, forms successive Jensen polynomials, uses Sturm real-root counts on a suitably chosen negative interval, and computes a complex zero by Newton only as a check.",
+          "It reports degree-minus-two real roots, sharp degree growth beginning near -20, and apparently shrinking imaginary parts as finite observations."
+        ],
+        "inference": [
+          "Using the previous complex root to initialize a nearby search is a legitimate continuation interpretation.",
+          "For a real polynomial, a deficit of two real roots suggests a conjugate non-real pair, but that algebraic interpretation is not separately proved in the span."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's claim of a warm start in degree is stronger than the procedure stated; the span does not specify that the next degree search begins at the previous minimal degree.",
+          "The extracted symbols for the computed quantities and for the real and imaginary components of the previous zero are degraded, so calling them moments and decoding both components exactly is scan-dependent."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the candidate distinguishes the Sturm decision representation from the secondary explicit-zero check."
+        ],
+        "context_or_ocr_risk": [
+          "Several moment, polynomial, and real/imaginary-part symbols are corrupted; the procedural prose is usable but exact notation is not."
+        ],
+        "missed_mechanism": [
+          "The span calls the counting interval suitably chosen but does not establish that it contains all real roots."
+        ],
+        "revision_instructions": [
+          "Remove the unsupported degree-warm-start claim and qualify the decoded moment and real/imaginary-part notation as the apparent intended reading of OCR-damaged text; retain the explicit Newton-as-check hierarchy and finite-trend caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Table headings and all rows are retained so the trend is not inferred from isolated values; some spacing and decimal typography are extraction-degraded.",
+      "line_end": 234,
+      "line_start": 216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly table- and numeral-dependent; verify exact complex-zero digits and precision labels against the scan before quantitative reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The table reports minimal degrees rising from 16 at parameter -50 to 406 at -5, together with complex-zero approximations and working precision, concretely supporting the paper's claim that improvement becomes much more expensive.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Minimal degree and precision grow sharply toward minus five",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u008.txt",
+      "unit_bytes": 1375,
+      "unit_id": "openalex_w2146492295_u008",
+      "unit_sha256": "449b51e98b48a2babea432e95d237936e086c7151b76c1a5f4e1cefe16dc6552",
+      "unit_type": "computational-observation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u008.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 208,
+          "line_end": 215,
+          "text": " associated with Ym, deviates in a chaotic way from the previous sequence of signs\n (associated with 9m-1).\n\n<!-- source-page: 7 -->\n\n3 SOME COMPUTATIONAL DETAILS                                                              5\n\n\n",
+          "sha256": "fbee8d6cb9d2e71440c1dc010282e0f15a66d8fa5d4ffe4db567a829aa25008c"
+        },
+        "after": {
+          "line_start": 235,
+          "line_end": 242,
+          "text": "\n\n3        Some computational details\nIn this section we shall explain some details of how we computed .Bm(>.) and the\nSturm sequences of g,.(t; >..).\n    We write b.,.(>.) as the sum\n\n                   b.,.(>.) =     1\"'   t2me.>.t2 ~(t)dt +   100 t2me.>.t2 CJ(t)dt       (5)\n",
+          "sha256": "4f9e9f0ed7ea220e8343b09872140bd9719cb77487dcc8b1ac961c3d34b0eb76"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Minimal-degree results table",
+            "line_end": 236,
+            "line_start": 211,
+            "mathematical_role": "Reports parameter-dependent minimal degrees, complex zeros, and working precision, exposing rapid growth near the improved bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 234,
+          "line_start": 216,
+          "title": "Minimal degree and precision grow sharply toward minus five",
+          "unit_id": "openalex_w2146492295_u008",
+          "unit_type": "computational-observation",
+          "why_material": "The table reports minimal degrees rising from 16 at parameter -50 to 406 at -5, together with complex-zero approximations and working precision, concretely supporting the paper's claim that improvement becomes much more expensive."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Table headings and all rows are retained so the trend is not inferred from isolated values; some spacing and decimal typography are extraction-degraded.",
+          "representation_dependency": "Strongly table- and numeral-dependent; verify exact complex-zero digits and precision labels against the scan before quantitative reuse.",
+          "unit_id": "openalex_w2146492295_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 209,
+            "line_start": 206,
+            "title": "Chaotic sign patterns diagnose insufficient precision",
+            "unit_id": "openalex_w2146492295_u007",
+            "unit_type": "numerical-diagnostic",
+            "why_material": "A sudden chaotic departure of the Sturm endpoint-sign sequence from the preceding degree's pattern is used as an operational warning that working precision is inadequate."
+          },
+          {
+            "line_end": 272,
+            "line_start": 237,
+            "title": "Tail-bound selection for moment integration",
+            "unit_id": "openalex_w2146492295_u009",
+            "unit_type": "error-control",
+            "why_material": "The moment integral is split at a cutoff, an analytic upper bound controls the omitted tail, and the cutoff is chosen so that this contribution is negligible relative to both the moments and the working precision; the parameter -5 computation is used as the concrete check."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across the reported parameters, the first Jensen-polynomial degree with complex roots grows sharply as the parameter increases toward -5, with the -5 case reaching degree 406 and requiring much higher precision, matching the stated warning that further improvement by this algorithm is formidable.",
+            "limit": "This is a finite computational trend and an authorial assessment, not a theorem giving asymptotic degree or complexity growth.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u008"
+            ],
+            "title": "Observed degree growth as the practical obstruction to stronger bounds"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u008",
+          "spontaneous_reading": "The table makes the computational bottleneck visible as a parameter-to-minimal-degree profile: the first complex-root degree rises from 16 at parameter -50 to 406 at -5, while the listed imaginary part becomes small and the working precision rises substantially. The obstruction to stronger bounds is therefore the growing finite witness itself."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u008",
+          "source_grounded_mathematics": "For each listed parameter, the table records the minimal Jensen-polynomial degree with complex roots, an approximate conjugate pair, and the arithmetic precision used. Its endpoints report degree 16 at -50 and degree 406 at -5, with the latter using 250 decimal digits.",
+          "conceptual_reading": "The table represents search difficulty by witness complexity rather than elapsed time alone. Increasing degree, shrinking imaginary separation from the real axis, and increased precision jointly explain why the same certificate architecture becomes harder near the improved bound.",
+          "representation_or_bridge": "The tabular bridge aligns deformation parameter, minimal obstruction degree, complex-zero geometry, and precision budget, permitting a direct comparison across runs.",
+          "boundary_or_failure": "This finite set of computations does not establish an asymptotic growth law or prove that every stronger bound is intrinsically hard. Several digits, spaces, and precision labels are extraction-sensitive and require scan verification before quantitative reuse.",
+          "uncertainty": "High confidence in the broad degree-growth pattern and endpoint values specified by the bounded dossier; lower confidence in literal transcription of every table entry."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u008",
+        "critic_decision": "revise",
+        "supported": [
+          "The table records parameter, minimal degree, a complex-zero approximation, and working precision; the endpoint rows show degree 16 at -50 and degree 406 at -5, with 250D on the latter row.",
+          "The finite table supports a broad increase in witness degree and precision toward -5, with small imaginary part at the final row."
+        ],
+        "inference": [
+          "Using degree, zero geometry, and precision as comparative descriptors of observed search difficulty is a reasonable table-level interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous conclusion that the growing finite witness is therefore the obstruction to stronger bounds is causal and stronger than the table alone.",
+          "The directed claim that degree growth, shrinking imaginary separation, and precision jointly explain difficulty is not established by the tabulated association, and the imaginary parts are not monotone row by row."
+        ],
+        "paraphrase_or_style_risk": [
+          "The table alignment is substantive, but causal language turns an observational profile into a generic bottleneck story."
+        ],
+        "context_or_ocr_risk": [
+          "Decimal spacing and at least one precision label are extraction-degraded; only broad trends and clearly preserved endpoint entries are safe without the scan."
+        ],
+        "missed_mechanism": [
+          "The table gives no runtime model, error propagation analysis, asymptotic law, or proof that increased degree is intrinsic rather than algorithm-specific."
+        ],
+        "revision_instructions": [
+          "Replace causal and intrinsic-obstruction language with a finite observed association: the reported runs require larger degrees and higher precision near -5, consistent with increased practical cost but not establishing its cause or asymptotics."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The qualitative construction is recoverable, but the displayed coefficient indices and recurrence typography are not safe enough for literal implementation from this extraction alone.",
+      "line_end": 331,
+      "line_start": 306,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula- and subscript-dependent; exact recurrence use requires verification from the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage turns the abstract Sturm definition into a coefficient computation: initialize with the Jensen polynomial and its derivative, obtain initial coefficients from the moments, and apply linear-quotient remainder relations through the decreasing-degree sequence.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Direct recurrence for the Sturm polynomial coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u012.txt",
+      "unit_bytes": 968,
+      "unit_id": "openalex_w2146492295_u012",
+      "unit_sha256": "04f6c23229750b83d81429234205ab2eb3b877685455eabc7e9b513f924db9cf",
+      "unit_type": "coefficient-level-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u012.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 298,
+          "line_end": 305,
+          "text": "  Therefore, it is unnecessary to apply Romberg quadrature. We just applied the\n  composite quadrature rule with step a, a/2, a/4, ... , until a sufficiently small\n  correction was obtained. For the computation of bm(-5) we never needed to\n  work with a step less than a/1024. Before applying the trapezoidal rule, a table\n  of values of e.>.t 3 ~(t) was precomputed for t = ja/1024,j = O, ... , 1024 since\n  (a selection of) these values are needed for each bm(>.). In the final steps, we\n  usually observed a doubling of the number of correct digits upon halving the\n  step.\n",
+          "sha256": "c2089890600c75ce4c29a17ef6cee9781d9329a4d2dd0fd1886c08e51aed7a53"
+        },
+        "after": {
+          "line_start": 332,
+          "line_end": 339,
+          "text": "\n    Now we have to estimate an interval [a, b] which covers a.11 the rea.1 zeros\nof 9m(t; >.). It is known that the rea.1 zeros are negative. For >. = -49 we took\n[a,b] = [-1000,0] which covers a.11 the rea.1 zeros of 91e{t;-50), according to\n[2]. This interval turned out to cover all the rea.1 zeros of {gm(t; -49)}~ 1 •\nThe same interval was chosen for the cases >. = -48, >. = -47, ... until by the\nSturm sequence mechanism we did not find sufficiently many rea.1 zeros, nor\ndid we find any complex zeros in the way as described in §2. In that case, the\n",
+          "sha256": "44fb19da04627821a69182c24105a2088ffb5a04af400c38d851c7baade3c62c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computational details",
+            "line_end": 350,
+            "line_start": 237,
+            "mathematical_role": "Provides tail and series truncation controls, quadrature selection, coefficient-level Sturm construction, root-enclosing interval selection, precision recovery, and an independent complex-zero check."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 331,
+          "line_start": 306,
+          "title": "Direct recurrence for the Sturm polynomial coefficients",
+          "unit_id": "openalex_w2146492295_u012",
+          "unit_type": "coefficient-level-construction",
+          "why_material": "The passage turns the abstract Sturm definition into a coefficient computation: initialize with the Jensen polynomial and its derivative, obtain initial coefficients from the moments, and apply linear-quotient remainder relations through the decreasing-degree sequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The qualitative construction is recoverable, but the displayed coefficient indices and recurrence typography are not safe enough for literal implementation from this extraction alone.",
+          "representation_dependency": "Highly formula- and subscript-dependent; exact recurrence use requires verification from the page image.",
+          "unit_id": "openalex_w2146492295_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 305,
+            "line_start": 284,
+            "title": "Evenness makes trapezoidal refinement preferable to Romberg extrapolation",
+            "unit_id": "openalex_w2146492295_u011",
+            "unit_type": "method-comparison",
+            "why_material": "Inspection of the Romberg table showed extrapolation reducing rather than increasing accuracy, while the first-column trapezoidal estimates converged rapidly. The paper connects this to exponential convergence for an even integrand and therefore uses repeated composite-trapezoid halving with reusable precomputed values."
+          },
+          {
+            "line_end": 350,
+            "line_start": 333,
+            "title": "Adaptive root interval, precision escalation, and explicit-zero cross-check",
+            "unit_id": "openalex_w2146492295_u013",
+            "unit_type": "certification-and-recovery-strategy",
+            "why_material": "The real-root count is performed on an interval enlarged when necessary; abrupt implausible count drops are attributed to insufficient precision and resolved by increasing accuracy. A separately computed complex zero, located through a local extremum, is retained as an extra check."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u012",
+          "spontaneous_reading": "The abstract Euclidean Sturm construction is compiled into coefficient recurrences. Starting with the Jensen polynomial and its derivative, moment-derived coefficients and the linear quotients between consecutive degrees generate the next negative remainder without repeatedly treating polynomial division as a black box."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u012",
+          "source_grounded_mathematics": "The source writes every Sturm polynomial in a degree-indexed coefficient basis, initializes the first polynomial from Jensen coefficients obtained from the moments, obtains the second from differentiation, and derives quotient and remainder coefficient identities for the subsequent decreasing-degree polynomials.",
+          "conceptual_reading": "A symbolic invariant is converted into an implementable local recurrence. This exposes exactly which coefficient relations carry the Sturm chain, enabling systematic high-precision construction while preserving the endpoint-sign representation needed for root counting.",
+          "representation_or_bridge": "Moment data feed Jensen coefficients; differentiation initializes the next row; Euclidean division with linear quotients becomes scalar coefficient updates; the resulting coefficient arrays can then be evaluated at the counting endpoints.",
+          "boundary_or_failure": "This extraction is highly unsafe at the subscript and sign level. The qualitative construction is recoverable, but the displayed recurrence must not be implemented literally without checking the page image. The passage also gives no independent numerical-stability guarantee for the recurrence.",
+          "uncertainty": "High confidence in the coefficient-level compilation strategy; low confidence in exact indices and formula transcription from the OCR text."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u012",
+        "critic_decision": "revise",
+        "supported": [
+          "The span expresses each Sturm polynomial in coefficients, obtains the first coefficient row from moment data, introduces linear quotient coefficients, and displays scalar identities for successive remainders.",
+          "The qualitative conversion from polynomial division to coefficient updates is recoverable."
+        ],
+        "inference": [
+          "Calling the construction an implementable local recurrence is a reasonable interpretation provided no exact formula is reconstructed from the extraction."
+        ],
+        "unsupported_or_imported": [
+          "The candidate confidently says the second polynomial is obtained by differentiation even though the relevant prime is not reliably preserved in the OCR display.",
+          "The claims about enabling systematic high-precision construction and preserving endpoint-sign representation import purposes from the wider algorithm rather than this exact span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'compiled symbolic invariant' phrasing risks a generic representation template, but it is anchored by the actual coefficient and quotient updates."
+        ],
+        "context_or_ocr_risk": [
+          "Signs, primes, subscripts, coefficient indices, summation indices, and recurrence typography are too damaged for literal implementation."
+        ],
+        "missed_mechanism": [
+          "No stability or propagated-error guarantee for the coefficient recurrence is given in this unit."
+        ],
+        "revision_instructions": [
+          "Keep only the qualitative coefficient-level Euclidean-remainder construction; describe the second-row initializer and every exact recurrence as OCR-degraded unless scan-verified, and label high-precision and endpoint-sign uses as wider-algorithm context rather than span evidence."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper reports this as its practical strategy; precision restoration and the explicit zero are supporting checks rather than substitutes for the Sturm count.",
+      "line_end": 350,
+      "line_start": 333,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on negativity of the real zeros as stated here, a sufficiently wide interval, stable endpoint sign counts, and high-precision numerical evaluation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The real-root count is performed on an interval enlarged when necessary; abrupt implausible count drops are attributed to insufficient precision and resolved by increasing accuracy. A separately computed complex zero, located through a local extremum, is retained as an extra check.",
+      "source_id": "openalex_w2146492295",
+      "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adaptive root interval, precision escalation, and explicit-zero cross-check",
+      "unit_artifact_relpath": "depth/units/openalex_w2146492295_u013.txt",
+      "unit_bytes": 1395,
+      "unit_id": "openalex_w2146492295_u013",
+      "unit_sha256": "ee3972f8a9c43c2ca55e77a2995aaaaf644af82122a61b413c2ad9507daefca0",
+      "unit_type": "certification-and-recovery-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_u013.txt",
+      "source": {
+        "source_id": "openalex_w2146492295",
+        "title": "A new lower bound for the de Bruijn-Newman constant",
+        "authors": [
+          "H. J. J. te Riele"
+        ],
+        "year": 1990,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "debruijn-newman",
+          "heat-flow",
+          "obstruction"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 325,
+          "line_end": 332,
+          "text": "                           qiOCil   + qi1Cio - CS-1,1 = 0,\nand CS+i,;,j = O, ... ,m-i -2 from\n\n                     c1+i,; = qioCi,;+2   + qncs,;+1 - Ci-1,;+2\nand Ci+l,m-i-1 from\n\n                      Ci+l,m-i-1 = qnci,m-i - Ci-1,m-i+l·\n\n",
+          "sha256": "e7a6a6baaa03120702ca596560583ea4bc54eb7f8529149801b75acfbce8c119"
+        },
+        "after": {
+          "line_start": 351,
+          "line_end": 358,
+          "text": "\n    Acknowledgements We like to thank dr. N.M. Temme for his help a.nd,\nin particular, for pointing out [5] to us.\n    We also acknowledge the provision of computer time on the Cyber 205 by\nthe Dutch Working Group on the Use of Supercomputers.\n\n\nReferences\n",
+          "sha256": "3c39cf9f4e02fa6cb2e9b8376db89f3809c1b14ea5ecf885b715a67fca4dfaff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a3d4c362e756e300d499046aa5b2c34092943173f75e3d378b7f27332245e7fb",
+        "dossier_sha256": "6f3c0f35900af879ed55bbece8c80bf5179785f3b6dc0765f08b92e6c6318f8e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Computational details",
+            "line_end": 350,
+            "line_start": 237,
+            "mathematical_role": "Provides tail and series truncation controls, quadrature selection, coefficient-level Sturm construction, root-enclosing interval selection, precision recovery, and an independent complex-zero check."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 350,
+          "line_start": 333,
+          "title": "Adaptive root interval, precision escalation, and explicit-zero cross-check",
+          "unit_id": "openalex_w2146492295_u013",
+          "unit_type": "certification-and-recovery-strategy",
+          "why_material": "The real-root count is performed on an interval enlarged when necessary; abrupt implausible count drops are attributed to insufficient precision and resolved by increasing accuracy. A separately computed complex zero, located through a local extremum, is retained as an extra check."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The paper reports this as its practical strategy; precision restoration and the explicit zero are supporting checks rather than substitutes for the Sturm count.",
+          "representation_dependency": "Depends on negativity of the real zeros as stated here, a sufficiently wide interval, stable endpoint sign counts, and high-precision numerical evaluation.",
+          "unit_id": "openalex_w2146492295_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 331,
+            "line_start": 306,
+            "title": "Direct recurrence for the Sturm polynomial coefficients",
+            "unit_id": "openalex_w2146492295_u012",
+            "unit_type": "coefficient-level-construction",
+            "why_material": "The passage turns the abstract Sturm definition into a coefficient computation: initialize with the Jensen polynomial and its derivative, obtain initial coefficients from the moments, and apply linear-quotient remainder relations through the decreasing-degree sequence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At a fixed parameter, moment-derived Jensen polynomials convert the lower-bound question into finding a non-real zero; Sturm counts reduce that decision to certified real-root counting, while truncation, quadrature, interval, and precision controls support the numerical inputs and Newton supplies an extra check.",
+            "limit": "The source relies on cited results for the Jensen implication and trapezoidal convergence, and several displayed formulas are extraction-degraded, so the scan and cited assumptions are required before reproducing the certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u001",
+              "openalex_w2146492295_u002",
+              "openalex_w2146492295_u004",
+              "openalex_w2146492295_u005",
+              "openalex_w2146492295_u006",
+              "openalex_w2146492295_u009",
+              "openalex_w2146492295_u010",
+              "openalex_w2146492295_u011",
+              "openalex_w2146492295_u013"
+            ],
+            "title": "Finite-dimensional obstruction certificate for a de Bruijn-Newman lower bound"
+          },
+          {
+            "claim": "The paper moves away from full-root computation plus a coefficient-error theorem, monitors unstable Sturm sign patterns as a precision warning, restores expected counts by raising precision, and computes an explicit complex zero as an additional check.",
+            "limit": "Pattern stability and Newton convergence are diagnostic corroboration; the source does not present them as standalone substitutes for all exact error analysis.",
+            "parent_local_unit_ids": [
+              "openalex_w2146492295_u003",
+              "openalex_w2146492295_u007",
+              "openalex_w2146492295_u013"
+            ],
+            "title": "Layered numerical checks around the Sturm decision"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2146492295_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w2146492295_u013",
+          "spontaneous_reading": "The root count is protected by two adaptive recoveries: enlarge the negative interval when roots may lie outside it, and increase precision when a sudden count collapse signals corrupted Sturm signs. An explicitly reconstructed complex zero is retained as a cross-check, not confused with the primary counting certificate."
+        },
+        "directed": {
+          "unit_id": "openalex_w2146492295_u013",
+          "source_grounded_mathematics": "Using the stated fact that the real zeros are negative, the computation counts on intervals ending at zero, initially reuses a known interval, and decreases the left endpoint when too few real roots are counted without finding a complex zero. The source reports that abrupt implausible count drops were restored to the expected degree-dependent pattern by raising precision; it also treats a complex zero obtained from a local extremum as an extra check.",
+          "conceptual_reading": "Interval adequacy and arithmetic adequacy are distinct failure modes, so the algorithm diagnoses and repairs them separately. The expected neighboring-degree count pattern acts as a falsifier, while the explicit complex root supplies an independent representation of the same obstruction.",
+          "representation_or_bridge": "Negativity restricts the search to a half-line; adaptive finite intervals bridge that half-line to endpoint Sturm counts. Precision escalation repairs unreliable sign data, and Newton reconstruction bridges the root-count deficit to a visible conjugate pair.",
+          "boundary_or_failure": "Coverage depends on the stated negativity result and on actually enlarging the interval enough. Restoring an expected pattern and finding a Newton root are corroborating diagnostics, not standalone replacements for trustworthy coefficient errors and Sturm signs; the source presents this as a practical strategy rather than a complete reproduced formal certificate.",
+          "uncertainty": "High confidence in the adaptive strategy and hierarchy of checks; exact numerical reliability still depends on high-precision evaluation and external facts not proved in this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2146492295_u013",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that real zeros are negative, counts them on intervals ending at zero, enlarges the interval when the count is insufficient and no complex zero is found, and uses [-5000,0] at -5.",
+          "It reports abrupt count drops caused by insufficient precision, restoration of the normal m+1 or m-1 pattern after raising accuracy, avoidance of the earlier Ostrowski precision extension, and explicit complex-zero computation as an extra check."
+        ],
+        "inference": [
+          "Separating interval inadequacy from arithmetic inadequacy is a strong conceptual reading of the two recovery actions.",
+          "Treating the explicit complex zero as a second representation of the obstruction is reasonable, while still subordinate to the count in the source's stated hierarchy."
+        ],
+        "unsupported_or_imported": [
+          "The candidate names Newton reconstruction, but Newton is only referenced through section 2 and is not stated in this exact span.",
+          "The broader claim about what constitutes a complete formal certificate is prudent criticism, not a conclusion supplied by this source unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the two distinct adaptive repairs and extra-check hierarchy are concrete and source anchored."
+        ],
+        "context_or_ocr_risk": [
+          "Polynomial notation and some interval typography are degraded, but the prose strategy and the key interval values remain readable."
+        ],
+        "missed_mechanism": [
+          "The span relies on an externally stated negativity fact and reports a practical restored pattern; it does not give an independent error bound proving every stabilized sign count correct."
+        ],
+        "revision_instructions": [
+          "Replace 'Newton reconstruction' with the span's exact claim that a complex zero found using a local extremum is an extra check, and clearly label the complete-certificate caution as critic inference rather than source testimony."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "05bf5d230396dede09d0f1c609ab3e5d89d0aee1a0f6c705ecdd97bc291049db"
+}

@@ -1,0 +1,1477 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2058590036_985b7f8b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2058590036",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the authors' definition of elementary equivalence and the asymptotic notation needed to read the previewed claims.",
+      "line_end": 96,
+      "line_start": 49,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed formulas are partially degraded; the prose, labels, and equivalence claim are clear, but exact transcription should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction identifies a reusable architecture: convert a generalized Dirichlet series by Mellin inversion, then use one-sided Tauberian hypotheses to recover coefficient-sum asymptotics and several elementarily equivalent forms of the prime number theorem.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cahen-Mellin plus Tauberian transfer to prime-number-theorem equivalents",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u001.txt",
+      "unit_bytes": 3131,
+      "unit_id": "openalex_w2058590036_u001",
+      "unit_sha256": "0ef0e108f35d1d5715d4879cc1d729f2bbf8b0838e2d9e75921a36db8667e1e0",
+      "unit_type": "method-overview",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u001.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 41,
+          "line_end": 48,
+          "text": "I t e n a b l e s t h e a u t h o r , in t h e process of r e v i s i o n of h i s work, to delete or i n s e r t f o r m u l a e w i t h o u t\nserious i n t e r f e r e n c e w i t h t h e n u m b e r i n g of t h e r e m a i n d e r ; a n d it e n a b l e s t h e r e a d e r to d i s c o v e r\na n y f o r m u l a r e f e r r e d to w i t h t h e m i n i m u m of trouble.\n\n<!-- source-page: 2 -->\n\n120                                       G. H. Hardy and J. E. Littlewood.\n\n",
+          "sha256": "257caa6d78f6492d443203835d4de698185cfd3687c59eb02f5ef6402f103015"
+        },
+        "after": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "\n<!-- source-page: 3 -->\n\nThe Riemann Zeta-function and the theory of tile distribution of primes.           121\n\n\n(I. 124)                                            //(z) so log z\"\n\n",
+          "sha256": "daa9d632dd729322832bf8679c39b347184b5025242e33e75a0f1fbd0d943673"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction/summary",
+            "line_end": 430,
+            "line_start": 1,
+            "mathematical_role": "States the paper's problem families, previews the transform/Tauberian, zero-sum, critical-line, and prime-oscillation mechanisms, and records limitations and unsuccessful strengthenings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 96,
+          "line_start": 49,
+          "title": "Cahen-Mellin plus Tauberian transfer to prime-number-theorem equivalents",
+          "unit_id": "openalex_w2058590036_u001",
+          "unit_type": "method-overview",
+          "why_material": "The introduction identifies a reusable architecture: convert a generalized Dirichlet series by Mellin inversion, then use one-sided Tauberian hypotheses to recover coefficient-sum asymptotics and several elementarily equivalent forms of the prime number theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the authors' definition of elementary equivalence and the asymptotic notation needed to read the previewed claims.",
+          "representation_dependency": "Displayed formulas are partially degraded; the prose, labels, and equivalence claim are clear, but exact transcription should be checked against the scan.",
+          "unit_id": "openalex_w2058590036_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 161,
+            "line_start": 103,
+            "title": "Smoothed Möbius explicit formula and RH-conditioned oscillation",
+            "unit_id": "openalex_w2058590036_u002",
+            "unit_type": "explicit-formula-overview",
+            "why_material": "Introduces the exponentially smoothed arithmetic error, forecasts an explicit zero formula, and separates an RH-sized upper bound and two-sided oscillation from the stronger estimates the method cannot reach."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u001",
+          "spontaneous_reading": "The working device is to insert an exponential kernel by Cahen–Mellin, turn analytic information about a generalized Dirichlet series into a smoothed coefficient asymptotic, and then use a Tauberian theorem to recover unsmoothed partial sums."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u001",
+          "source_grounded_mathematics": "The introduction says that Cahen–Mellin inversion combined with the authors' Tauberian theorems yields convergence results for very general Dirichlet series, with several displayed coefficient-sum statements as elementarily equivalent forms of the prime number theorem.",
+          "conceptual_reading": "The proof architecture separates an analytic stage from a coefficient-recovery stage: complex continuation controls a smoothing, while a one-sided Tauberian hypothesis permits desmoothing.",
+          "representation_or_bridge": "The bridge is generalized Dirichlet series F(s) to the exponential sum over its coefficients to partial sums; elementary equivalence then connects the resulting arithmetic statements without further complex analysis.",
+          "boundary_or_failure": "The authors describe their answers as tentative and fragmentary, and the equivalences do not by themselves identify which analytic hypotheses establish any one statement.",
+          "uncertainty": "The prose, equivalence definition, and architecture are clear, but several displayed formulas and symbols are OCR-damaged, so exact theorem transcription requires the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u001",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says Cahen–Mellin is combined with the authors' Tauberian theorems to obtain convergence results for very general Dirichlet series and PNT-equivalent corollaries.",
+          "The span explicitly defines elementary equivalence as deduction without complex-function theory."
+        ],
+        "inference": [
+          "Reading the method as a smoothing-then-coefficient-recovery architecture is a reasonable conceptual compression."
+        ],
+        "unsupported_or_imported": [
+          "The span does not state that complex continuation controls the smoothing or that the relevant Tauberian hypothesis is one-sided; those details come from later theorem statements, not this preview.",
+          "The full chain from a generalized F(s) through an exponential coefficient sum to partial sums is only inferred here, not displayed in this unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Several displayed corollaries and symbols are damaged, so their exact transcription cannot be audited from this text layer."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the source's high-level preview from the later hypotheses that make the contour and Tauberian steps work."
+        ],
+        "revision_instructions": [
+          "Retain the stated Cahen–Mellin/Tauberian combination and elementary-equivalence claim, but label smoothing/desmoothing as interpretation and remove the unsupported claims about continuation and one-sided hypotheses."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span is a self-contained statement of the assertion, analytic hypothesis, and failure mode.",
+      "line_end": 179,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The alternating prime series and L-series are legible only approximately in extraction; exact signs and exponents need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Frames a prime-residue bias as a transform governed by zeros of a Dirichlet L-function and explicitly distinguishes the proved implication under the critical-line hypothesis from the unproved converse intuition.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tschebyschef prime-bias assertion through a Dirichlet L-function",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u003.txt",
+      "unit_bytes": 1113,
+      "unit_id": "openalex_w2058590036_u003",
+      "unit_sha256": "624c1e62449a0e6eb85535749d8e3986307bc69a4b6a63349d47d19d5e28cb2b",
+      "unit_type": "conditional-result-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u003.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "                     2\nledge of the properties of ~(~), to give a satisfactory proof of the explicit for-\nmula for\n\n                                               ](y)=~,(n)e-\"v\n\n\nwhich corresponds to t h a t which we find for the function (I. 13).\n",
+          "sha256": "b52e7e03bd6a98a433ae61c0a6cfbfed1e4ad5cf3f3378fa1d90a0df6564b0c3"
+        },
+        "after": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "      In 2.4 we prove t h a t\n\n                                          T\n\n(I. 22)                                                               2T   log T\n\n\na s :T --,- c,o.   The m e t h o d used m a y be a d a p t e d to show t h a t\n",
+          "sha256": "f2540b2e0eeee096739be7e862127c7611c5432b1ad54879be60ab0a5f11fa0d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction/summary",
+            "line_end": 430,
+            "line_start": 1,
+            "mathematical_role": "States the paper's problem families, previews the transform/Tauberian, zero-sum, critical-line, and prime-oscillation mechanisms, and records limitations and unsuccessful strengthenings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 179,
+          "line_start": 162,
+          "title": "Tschebyschef prime-bias assertion through a Dirichlet L-function",
+          "unit_id": "openalex_w2058590036_u003",
+          "unit_type": "conditional-result-and-obstruction",
+          "why_material": "Frames a prime-residue bias as a transform governed by zeros of a Dirichlet L-function and explicitly distinguishes the proved implication under the critical-line hypothesis from the unproved converse intuition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span is a self-contained statement of the assertion, analytic hypothesis, and failure mode.",
+          "representation_dependency": "The alternating prime series and L-series are legible only approximately in extraction; exact signs and exponents need the scan.",
+          "unit_id": "openalex_w2058590036_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 161,
+            "line_start": 103,
+            "title": "Smoothed Möbius explicit formula and RH-conditioned oscillation",
+            "unit_id": "openalex_w2058590036_u002",
+            "unit_type": "explicit-formula-overview",
+            "why_material": "Introduces the exponentially smoothed arithmetic error, forecasts an explicit zero formula, and separates an RH-sized upper bound and two-sided oscillation from the stronger estimates the method cannot reach."
+          },
+          {
+            "line_end": 266,
+            "line_start": 221,
+            "title": "Weighted exponential sums over zero ordinates",
+            "unit_id": "openalex_w2058590036_u004",
+            "unit_type": "method-comparison-and-conjecture",
+            "why_material": "Explains how Landau's zero-power-sum method is adapted to damped oscillatory sums and highlights a potentially artificial parameter dependence in the proved order estimate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly distinguishes persuasive spectral intuition from proved control: low-zero dominance is rigorous only after a tail bound, while the expectation that an off-line zero overturns a conditional bias remains explicitly unproved.",
+            "limit": "This is a methodological synthesis, not a new theorem about either zeta or the Dirichlet L-function.",
+            "parent_local_unit_ids": [
+              "openalex_w2058590036_u002",
+              "openalex_w2058590036_u003",
+              "openalex_w2058590036_u014",
+              "openalex_w2058590036_u015",
+              "openalex_w2058590036_u021"
+            ],
+            "title": "Formal-worker warning: low-zero dominance and off-line-zero intuition need separate proofs"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u003",
+          "spontaneous_reading": "A residue-class prime bias is recoded as an exponentially weighted alternating prime sum governed by a Dirichlet L-function, so a zero-location hypothesis becomes a sufficient condition for the bias while its failure remains only suggestive evidence against it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u003",
+          "source_grounded_mathematics": "The source states Tschebyschef's divergence assertion for an alternating prime exponential sum and proves it assuming every complex zero of the displayed Dirichlet L-series has real part one half; it says the assertion probably fails otherwise but gives no rigorous converse.",
+          "conceptual_reading": "The L-function is a spectral proxy for arithmetic competition between residue classes, but a proved conditional implication is not an equivalence.",
+          "representation_or_bridge": "Alternating prime weights pass to the logarithmic or Dirichlet-series side, where L-zero locations regulate the transformed bias.",
+          "boundary_or_failure": "The obstacle to the converse is the same inability to turn a higher-order oscillatory zero contribution into the required signed conclusion that appeared for the zeta error.",
+          "uncertainty": "The assertion and logical status are clear; exact prime signs, powers, and the L-series display need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u003",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states Tschebyschef's divergence assertion, proves it under the critical-line hypothesis for the displayed Dirichlet L-function, and explicitly declines a rigorous converse.",
+          "It says the obstruction is of the same nature as the earlier failure to derive the wider zeta-error inequalities."
+        ],
+        "inference": [
+          "Interpreting the alternating prime weights as residue-class competition and the L-function as its analytic proxy is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The span does not present a logarithmic-derivative transformation.",
+          "The candidate's description of a higher-order oscillatory zero contribution failing to yield a signed conclusion is more specific than the source's statement that the difficulties are of the same nature."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact prime signs, powers, and the L-series display require scan verification."
+        ],
+        "missed_mechanism": [
+          "The logical asymmetry—proved sufficiency versus an expressly unproved expected converse—is the secure mechanism and should not be embellished with an unstated proof obstruction."
+        ],
+        "revision_instructions": [
+          "Keep the conditional implication and non-converse; qualify the residue-class/L-function reading as interpretation and replace the detailed oscillatory-obstruction claim with the source's narrower same-nature statement."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the RH simplification, the model exponential sum, the theorem preview, and the authors' sharper conjecture.",
+      "line_end": 266,
+      "line_start": 221,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several central displayed series are missing or garbled; prose preserves the representation change and conjectural comparison, but exact bounds require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how Landau's zero-power-sum method is adapted to damped oscillatory sums and highlights a potentially artificial parameter dependence in the proved order estimate.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted exponential sums over zero ordinates",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u004.txt",
+      "unit_bytes": 1876,
+      "unit_id": "openalex_w2058590036_u004",
+      "unit_sha256": "b717134fcf1bc48ddc28d429ff3f13fc75579da621385b7505af5af4bbd6e425",
+      "unit_type": "method-comparison-and-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u004.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 213,
+          "line_end": 220,
+          "text": "\n         W e conclude this section b y noticing a r e m a r k a b l e formula, the f o r m of\nwhich was suggested to us b y an o b s e r v a t i o n of Mr S. RAMA~trza~r. We are\nunable to give a s a t i s f a c t o r y p r o o f of this formula, b u t it seems to us well\nw o r t h y of a t t e n t i o n . I t is i n t i m a t e l y c o n n e c t e d w i t h a n expression of t h e rune-\n 9   I\ntmn~as             a definite integral, which is due t o MARC~.L RIESZ. s\n\n",
+          "sha256": "4e8f4adc79243d332ed45d2d6bbf2221abdfafd8be5ef14c5946b5949a96ac62"
+        },
+        "after": {
+          "line_start": 267,
+          "line_end": 274,
+          "text": "     I. 4. Section 4 is devoted to a closer s t u d y than has yet been published\n                                                                        I\nof the zeros of the Zeta-function which lie on the line a = - .\n                                                             That some such\n                                                         2\nzeros exist was first shown by GRAM,~ and the later investigations of DE LA\nVALL~Ig-PoussIN, (]RAM,1 LINDELSF, t and ]3ACKLUND1 have shown t h a t there are\nexactly 58 on the line\n",
+          "sha256": "0e8540ea51325781ca6654405919eb208ed1de381104c12fb58305d4a27c98ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction/summary",
+            "line_end": 430,
+            "line_start": 1,
+            "mathematical_role": "States the paper's problem families, previews the transform/Tauberian, zero-sum, critical-line, and prime-oscillation mechanisms, and records limitations and unsuccessful strengthenings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 266,
+          "line_start": 221,
+          "title": "Weighted exponential sums over zero ordinates",
+          "unit_id": "openalex_w2058590036_u004",
+          "unit_type": "method-comparison-and-conjecture",
+          "why_material": "Explains how Landau's zero-power-sum method is adapted to damped oscillatory sums and highlights a potentially artificial parameter dependence in the proved order estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the RH simplification, the model exponential sum, the theorem preview, and the authors' sharper conjecture.",
+          "representation_dependency": "Several central displayed series are missing or garbled; prose preserves the representation change and conjectural comparison, but exact bounds require scan verification.",
+          "unit_id": "openalex_w2058590036_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 179,
+            "line_start": 162,
+            "title": "Tschebyschef prime-bias assertion through a Dirichlet L-function",
+            "unit_id": "openalex_w2058590036_u003",
+            "unit_type": "conditional-result-and-obstruction",
+            "why_material": "Frames a prime-residue bias as a transform governed by zeros of a Dirichlet L-function and explicitly distinguishes the proved implication under the critical-line hypothesis from the unproved converse intuition."
+          },
+          {
+            "line_end": 338,
+            "line_start": 267,
+            "title": "From special-function proofs to short-interval sign changes on the critical line",
+            "unit_id": "openalex_w2058590036_u005",
+            "unit_type": "historical-method-change",
+            "why_material": "Tracks how an existence proof using Mellin and theta-function behavior was simplified and then replaced by a different sign-change argument yielding a zero in every sufficiently long short interval, while recording an unsuccessful stronger density target."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u004",
+          "spontaneous_reading": "The authors adapt Landau's power-sum strategy to damped oscillatory sums over zero ordinates; the damping supplies convergence, while the parameter dependence in the proved bound is treated as a likely artifact rather than accepted structure."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u004",
+          "source_grounded_mathematics": "Section 3 studies a weighted series over zeta zeros, reduces it under RH to damped sums over positive ordinates, and adapts Landau's argument to prove an order estimate; the authors conjecture a sharper order uniform in a parameter but cannot prove it.",
+          "conceptual_reading": "The useful move is to replace raw zero powers by an oscillatory representation with decay, then ask which features of the resulting estimate come from the spectrum and which come from the proof.",
+          "representation_or_bridge": "Under RH, each zero is written as one half plus an imaginary ordinate, converting the original zero series into a Fourier-like sum with algebraic damping.",
+          "boundary_or_failure": "The conjectured removal of the apparent parameter dependence is explicitly unproved, and the displayed series and bound are too degraded for exact reuse.",
+          "uncertainty": "The method comparison and conjectural-versus-proved distinction are clear, but central formulas, exponents, and parameter names require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u004",
+        "critic_decision": "revise",
+        "supported": [
+          "The span studies a zero series by adapting Landau's argument, rewrites it under RH in terms of positive zero ordinates, gives an order result, and states an unproved sharper order independent of the parameter.",
+          "It explicitly distinguishes the trivial range above one from the significant remaining range."
+        ],
+        "inference": [
+          "Calling the transformed series Fourier-like with algebraic weights is supported by the visible ordinate representation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that damping supplies convergence is too strong: the span says the result is trivial for the parameter above one and significant otherwise, but does not justify convergence merely from damping throughout the stated range."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The central series, proved order, conjectured order, and parameter names are heavily degraded."
+        ],
+        "missed_mechanism": [
+          "The candidate omits the source's explicit split between the trivial parameter range and the nontrivial one."
+        ],
+        "revision_instructions": [
+          "Replace 'damping supplies convergence' with the narrower claim that the RH rewrite introduces algebraic weighting and oscillation; include the trivial-versus-significant parameter split and preserve the proved/conjectured distinction without reconstructing the bounds."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the historical baseline, the method dependencies removed, the improved conclusion, and the failed extension.",
+      "line_end": 338,
+      "line_start": 267,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is clear; the exact exponents in the interval and counting bound are extraction-sensitive and should be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracks how an existence proof using Mellin and theta-function behavior was simplified and then replaced by a different sign-change argument yielding a zero in every sufficiently long short interval, while recording an unsuccessful stronger density target.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From special-function proofs to short-interval sign changes on the critical line",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u005.txt",
+      "unit_bytes": 3506,
+      "unit_id": "openalex_w2058590036_u005",
+      "unit_sha256": "83a96d9d1f03361c3496072223e9cf52aadaa5b82ed46e138db9821155854dda",
+      "unit_type": "historical-method-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u005.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 259,
+          "line_end": 266,
+          "text": "(z. 33)\n                                0<r<T\n\nthis result is trivial if a > I, but otherwise significant. The a p p a r e n t dependence\nof the order on a is curious, and we are disposed to believe t h a t it does not\n\nreally correspond to the truth, and t h a t the order is really 0 (T 2§                 for all\nvalues of a and all positive values of d. But this we are unable to prove.\n",
+          "sha256": "eccb2d3b9f70b5faf3b0b3facdba72cfda54b8342cf5b670721ff4d83f599602"
+        },
+        "after": {
+          "line_start": 339,
+          "line_end": 346,
+          "text": "      I. 5- Finally, Section 5 contains a full demonstration of a result given still\nmore recently, with an outline of the proof, by LITTLEWOOD2 I t follows from\nthe investigations of SCnmDT, already referred to in I. I, t h a t the inequalities\n(I. I43), or the substantially equivalent inequalities\n\n      z See :LANDAU,Handbuch, pp. 4o1 et seq.\n        For an explanation of this notation see our paper 'Some Problems of Diophantine Ap-\nproximation (II)', Acta Mathematica, vol. 37, PP- I93--z38 (P. zz5).\n",
+          "sha256": "49d2ad896259399158de153ef4a269483b87f87e71e0d25cf32194f31c26b2fc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction/summary",
+            "line_end": 430,
+            "line_start": 1,
+            "mathematical_role": "States the paper's problem families, previews the transform/Tauberian, zero-sum, critical-line, and prime-oscillation mechanisms, and records limitations and unsuccessful strengthenings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 338,
+          "line_start": 267,
+          "title": "From special-function proofs to short-interval sign changes on the critical line",
+          "unit_id": "openalex_w2058590036_u005",
+          "unit_type": "historical-method-change",
+          "why_material": "Tracks how an existence proof using Mellin and theta-function behavior was simplified and then replaced by a different sign-change argument yielding a zero in every sufficiently long short interval, while recording an unsuccessful stronger density target."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the historical baseline, the method dependencies removed, the improved conclusion, and the failed extension.",
+          "representation_dependency": "The prose is clear; the exact exponents in the interval and counting bound are extraction-sensitive and should be verified from the scan.",
+          "unit_id": "openalex_w2058590036_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 266,
+            "line_start": 221,
+            "title": "Weighted exponential sums over zero ordinates",
+            "unit_id": "openalex_w2058590036_u004",
+            "unit_type": "method-comparison-and-conjecture",
+            "why_material": "Explains how Landau's zero-power-sum method is adapted to damped oscillatory sums and highlights a potentially artificial parameter dependence in the proved order estimate."
+          },
+          {
+            "line_end": 430,
+            "line_start": 339,
+            "title": "Why persistent empirical prime-counting bias must eventually reverse",
+            "unit_id": "openalex_w2058590036_u006",
+            "unit_type": "oscillation-mechanism-overview",
+            "why_material": "Contrasts a slowly varying fixed-sign contribution with a larger oscillatory zero contribution and previews Kronecker-style simultaneous phase alignment, explaining both long empirical bias and inevitable reversals."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u005",
+          "spontaneous_reading": "Successive proofs strip away special-function dependencies and then change mechanism entirely: a direct sign-change argument localizes critical-line zeros in short intervals, yet the hoped-for density strengthening remains out of reach."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u005",
+          "source_grounded_mathematics": "The unit reviews Hardy's proof of infinitely many critical-line zeros via Cahen–Mellin and theta behavior, Landau's simplification and extension, and the authors' different method giving a zero in every sufficiently large stated short interval; their attempted stronger lower bound for the critical-line zero count failed.",
+          "conceptual_reading": "Proof simplification here means identifying disposable representation-specific machinery, but the later density target requires information not supplied merely by guaranteed local sign changes.",
+          "representation_or_bridge": "A real-valued critical-line function turns zeros into sign-change events; interval localization then converts repeated sign changes into a counting lower bound.",
+          "boundary_or_failure": "The new proof avoids both the Cahen–Mellin integral and elliptic-function theory, but attempts to upgrade its count to the displayed stronger order were unsuccessful.",
+          "uncertainty": "The historical method changes and failure are clear; the exact interval and counting exponents are extraction-sensitive and must be checked against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u005",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reviews Hardy's special-function-dependent existence proof, Landau's simplification and extension, and an entirely different proof of a zero in each stated short interval.",
+          "It states the resulting zero-count consequence and records an unsuccessful attempt at a much stronger count."
+        ],
+        "inference": [
+          "Viewing real critical-line zeros through a real-valued function is natural, but the exact mechanism of the new proof is not supplied here."
+        ],
+        "unsupported_or_imported": [
+          "The candidate calls the new method a direct sign-change argument, although this span only says it is entirely different.",
+          "The claimed conversion of repeated sign changes into the counting bound is not described in the unit; only the zero-in-interval result and its consequence are stated."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The exact interval and counting exponents are extraction-sensitive."
+        ],
+        "missed_mechanism": [
+          "The evidence supports a historical change of method and a stronger localization result, not identification of the unstated new method."
+        ],
+        "revision_instructions": [
+          "Remove or explicitly qualify the sign-change mechanism; state only the documented dependencies removed, the zero-in-short-interval conclusion, its counting consequence, and the failed density strengthening."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes extensions to weighted prime sums and primes in competing residue classes, exposing the generality of the mechanism.",
+      "line_end": 430,
+      "line_start": 339,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual prose is reliable; exact normalization and displayed orders are OCR-damaged and need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts a slowly varying fixed-sign contribution with a larger oscillatory zero contribution and previews Kronecker-style simultaneous phase alignment, explaining both long empirical bias and inevitable reversals.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why persistent empirical prime-counting bias must eventually reverse",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u006.txt",
+      "unit_bytes": 4645,
+      "unit_id": "openalex_w2058590036_u006",
+      "unit_sha256": "aad299204b4b77115fc8a75bff352a151059f3179502bf42670a6a74ac7852ad",
+      "unit_type": "oscillation-mechanism-overview",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u006.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "(r.4*)\n\nOur proof of this result is now free from a n y reference either to the CAHE~-\nMm~Itr integral or to the theory of elliptic functions.\n    We h a v e entertained hopes of showing, by a modification o~ our argument, t h a t\n\n                                   No(T) = ~(TI-~).\nBut our a t t e m p t s in this direction have so far been unsuccessful.\n",
+          "sha256": "f449a9a90938e81c3d2ec5597d3ce1a0cb245795591e6c5cc704ed656cd2a7b5"
+        },
+        "after": {
+          "line_start": 431,
+          "line_end": 438,
+          "text": "\n                                                     2~\n\n             Some applications o f t h e i n t e g r a l o f Cahen and Nellin.\n\n                                                    2. I .\n                     The prime number theorem and, allied theorems.\n     2. II. The investigations of this part of the paper will be based upon cer-\n",
+          "sha256": "1ffd7c66256e36c0e812ff91b7075fef49362dc9cec7905a3319bc48cfabfaa9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and introduction/summary",
+            "line_end": 430,
+            "line_start": 1,
+            "mathematical_role": "States the paper's problem families, previews the transform/Tauberian, zero-sum, critical-line, and prime-oscillation mechanisms, and records limitations and unsuccessful strengthenings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 430,
+          "line_start": 339,
+          "title": "Why persistent empirical prime-counting bias must eventually reverse",
+          "unit_id": "openalex_w2058590036_u006",
+          "unit_type": "oscillation-mechanism-overview",
+          "why_material": "Contrasts a slowly varying fixed-sign contribution with a larger oscillatory zero contribution and previews Kronecker-style simultaneous phase alignment, explaining both long empirical bias and inevitable reversals."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes extensions to weighted prime sums and primes in competing residue classes, exposing the generality of the mechanism.",
+          "representation_dependency": "The conceptual prose is reliable; exact normalization and displayed orders are OCR-damaged and need scan checking.",
+          "unit_id": "openalex_w2058590036_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 338,
+            "line_start": 267,
+            "title": "From special-function proofs to short-interval sign changes on the critical line",
+            "unit_id": "openalex_w2058590036_u005",
+            "unit_type": "historical-method-change",
+            "why_material": "Tracks how an existence proof using Mellin and theta-function behavior was simplified and then replaced by a different sign-change argument yielding a zero in every sufficiently long short interval, while recording an unsuccessful stronger density target."
+          },
+          {
+            "line_end": 497,
+            "line_start": 447,
+            "title": "Mellin inversion, Fourier decay, and one-sided Tauberian recovery",
+            "unit_id": "openalex_w2058590036_u007",
+            "unit_type": "lemma-package",
+            "why_material": "Packages three reusable steps: exponential-kernel Mellin inversion, decay of an integrable vertical-line transform, and recovery of partial sums from small-parameter exponential asymptotics under controlled coefficient increments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A large value computed near the analytic boundary is reproduced at arbitrarily high locations by controlling the zero tail and simultaneously aligning finitely many phases; a boundary principle and explicit formula then turn it into recurring prime-counting extremes.",
+            "limit": "The mechanism is conditional on the source's RH reduction for this lower-bound proof and on exact spectral normalizations requiring scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2058590036_u006",
+              "openalex_w2058590036_u043",
+              "openalex_w2058590036_u044",
+              "openalex_w2058590036_u046",
+              "openalex_w2058590036_u047"
+            ],
+            "title": "Phase alignment converts one seed asymptotic into recurring arithmetic extremes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 446,
+              "line_start": 431,
+              "reason": "Section and subsection headings plus page furniture leading into the Mellin/Tauberian lemmas."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u006",
+          "spontaneous_reading": "A slowly varying fixed-sign term explains a long empirical prime-counting bias, but a larger oscillatory zero contribution eventually wins; Kronecker-style simultaneous phase alignment makes rare reversals unavoidable and reusable across related prime races."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u006",
+          "source_grounded_mathematics": "The source strengthens known oscillation of the prime-counting error, concludes that the empirical inequality between the prime count and the logarithmic integral is eventually false, and sketches the competition between a fixed-sign term and a larger triple-logarithmic oscillatory term; analogous two-sided sequences are stated for weighted primes and primes in the two odd classes modulo four.",
+          "conceptual_reading": "Finite computation can be dominated by a lower-order bias when the factor separating it from the oscillation grows extraordinarily slowly; asymptotic dominance need not be numerically visible.",
+          "representation_or_bridge": "An explicit zero contribution supplies oscillatory phases, and Kronecker's simultaneous approximation aligns finitely many phases to transfer spectral amplitude into arithmetic extrema.",
+          "boundary_or_failure": "The authors do not claim their slowly growing factor is optimal and explicitly decline a definite view on replacing it by a faster one.",
+          "uncertainty": "The mechanism and claim directions are clear, while exact normalizations, constants, and displayed orders are OCR-damaged."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u006",
+        "critic_decision": "revise",
+        "supported": [
+          "The source proves stronger two-sided prime-counting-error inequalities, uses them to refute the persistent empirical inequality, and contrasts a slowly varying fixed-sign term with a larger oscillatory term.",
+          "It explicitly says the method depends on Kronecker's Diophantine-approximation theorems and gives analogous two-sided sequences for weighted primes and the two odd residue classes modulo four.",
+          "The source declines a definite claim that the triple-logarithmic factor can be improved."
+        ],
+        "inference": [
+          "Simultaneous phase alignment is a plausible explanation of why Kronecker approximation enters."
+        ],
+        "unsupported_or_imported": [
+          "This overview does not itself state that an explicit zero formula supplies phases or that finitely many zero phases are aligned; the candidate presents that reconstruction as if explicit in the span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact normalizations and displayed orders are OCR-damaged."
+        ],
+        "missed_mechanism": [
+          "The span securely supports asymptotic dominance despite long finite-range bias; the detailed spectral implementation belongs to later proof spans."
+        ],
+        "revision_instructions": [
+          "Retain the fixed-sign versus larger oscillatory-term comparison and the documented use of Kronecker, but mark phase alignment as interpretation and remove the unqualified explicit-zero/finitely-many-phases claim."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the proof chain begun in the preceding two units.",
+      "line_end": 2004,
+      "line_start": 1943,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed constants and intermediate integrals are damaged; exact theorem transcription requires the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the integral Tauberian lemma to the localized transform, then uses a change of variables and integration by parts to recover the asymptotic for the cumulative square modulus of zeta.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Damped mean-square asymptotics imply the undamped critical-line mean square",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u025.txt",
+      "unit_bytes": 1556,
+      "unit_id": "openalex_w2058590036_u025",
+      "unit_sha256": "e9e429890b41baabc62ca610b8d96b2539038c8366c9b41068c8bf6491846020",
+      "unit_type": "tauberian-conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u025.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1935,
+          "line_end": 1942,
+          "text": "     We may replace the lower limit by o, since the part of the integral for\nwhich t < o is plainly of no importance. Doing this, and putting 2 1 = u, we obtain\n\n\n                        (~ ~(u, I'e(l~-e)Uducozr V ~ l o g ( ~ ) .\n(2. 434'               0.j[4+ u~ j\n\n\n",
+          "sha256": "ca9fe93659fa563d5a893389dd64aefae54e0db4396e5c2bc8912870168c475b"
+        },
+        "after": {
+          "line_start": 2005,
+          "line_end": 2012,
+          "text": "\n\n\n\n                                                                             2.    5.\n\n\n                                                               The series\n",
+          "sha256": "93a65ce7df6ae1ddd6a457d04c07630ac6d21ae743ac68bb32f8e95130b59ee1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.4 Mean value of |zeta(1/2+it)|^2",
+            "line_end": 2008,
+            "line_start": 1693,
+            "mathematical_role": "Uses Mellin-Bessel transforms, divisor sums, asymptotic localization, and an integral Tauberian lemma to derive the critical-line mean square."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2004,
+          "line_start": 1943,
+          "title": "Damped mean-square asymptotics imply the undamped critical-line mean square",
+          "unit_id": "openalex_w2058590036_u025",
+          "unit_type": "tauberian-conclusion",
+          "why_material": "Applies the integral Tauberian lemma to the localized transform, then uses a change of variables and integration by parts to recover the asymptotic for the cumulative square modulus of zeta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the proof chain begun in the preceding two units.",
+          "representation_dependency": "Displayed constants and intermediate integrals are damaged; exact theorem transcription requires the scan.",
+          "unit_id": "openalex_w2058590036_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1941,
+            "line_start": 1790,
+            "title": "Divisor-weighted Bessel transform localizes the zeta mean square",
+            "unit_id": "openalex_w2058590036_u024",
+            "unit_type": "transform-and-asymptotic",
+            "why_material": "Sums the Mellin-Bessel kernel with divisor coefficients, moves the contour through a double pole, uses the functional equation, and chooses a near-boundary angle so the resulting series has a tractable localized asymptotic."
+          },
+          {
+            "line_end": 2132,
+            "line_start": 2021,
+            "title": "Ramanujan-inspired reciprocal formula from a non-rigorous contour shift",
+            "unit_id": "openalex_w2058590036_u026",
+            "unit_type": "conjectural-identity",
+            "why_material": "Derives a striking reciprocity between a Möbius-Gaussian series at reciprocal parameters by Mellin inversion and a proposed contour shift across zeta zeros, then checks the symmetry constraint on the residue series."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2020,
+              "line_start": 2005,
+              "reason": "Section break and heading for the Ramanujan-inspired reciprocal series."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u025",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u025",
+          "spontaneous_reading": "The decisive move is de-smoothing: a Tauberian estimate for a damped transform is converted, by a change of variables and integration by parts, into the undamped cumulative critical-line mean square."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u025",
+          "source_grounded_mathematics": "Lemma 2.43 is applied to the transform obtained in (2.434), yielding a T log T-scale asymptotic; rewriting the resulting integral and integrating by parts gives the asymptotic asserted in Theorem 2.41 for the integral of the squared modulus of zeta.",
+          "conceptual_reading": "The damping is an analytically tractable proxy whose asymptotic retains enough cumulative mass information for a Tauberian recovery of the sharp quantity.",
+          "representation_or_bridge": "The bridge is the localized weighted integral, followed by a variable change and Stieltjes/integration-by-parts passage to the cumulative mean square.",
+          "boundary_or_failure": "The conclusion depends on the preceding transform calculation and Tauberian lemma; this span does not independently establish their hypotheses.",
+          "uncertainty": "Displayed weights, constants, and intermediate integrals are heavily damaged by extraction, so only the mechanism and T log T scale are secure without the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u025",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly derives the conclusion from (2.434) and Lemma 2.43 and ends by identifying the result with Theorem 2.41.",
+          "The surviving formulas support a T log T-scale de-smoothing conclusion and an integration-by-parts-type final passage."
+        ],
+        "inference": [
+          "Describing the weighted transform as retaining cumulative mass is a reasonable Tauberian interpretation rather than a separately stated theorem."
+        ],
+        "unsupported_or_imported": [
+          "The specific label Stieltjes is not present in the frozen span and cannot be verified from the damaged display."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The weight, constants, cumulative function, and intermediate equalities are severely damaged, so exact symbolic claims remain unsafe."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace Stieltjes/integration-by-parts passage with the source-secure wording change of variables followed by the displayed integration-by-parts passage, while retaining the existing formula uncertainty."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why RH is simplifying rather than essential and the full parameter regime of the target theorem.",
+      "line_end": 2397,
+      "line_start": 2341,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The central series and exponents are OCR-damaged; prose and labels preserve the setup but exact theorem use needs the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starts from Landau's resonance formula, converts it under RH to an exponential sum in zero ordinates, and states uniform bounds and convergence regimes for a damped and rotated generalization.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted damped exponential sums over zeta zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u030.txt",
+      "unit_bytes": 2429,
+      "unit_id": "openalex_w2058590036_u030",
+      "unit_sha256": "bab12dca1d3e1e99bef2ad68eaa692c0953086fa0e4a551f67703048af73bfb2",
+      "unit_type": "theorem-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u030.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2333,
+          "line_end": 2340,
+          "text": "(2o 548)                            P(y) =O(/~ -12+2~) = O(       --,:+O).\n\n\n\n                                                       .\n\n                                       T h e series ~ 7 - ~176\n\n",
+          "sha256": "2354aa84db7b91bf8e58774cab06172bd2a468886afc4a2ae7c48d0c17432fe3"
+        },
+        "after": {
+          "line_start": 2398,
+          "line_end": 2405,
+          "text": "     The result is trivial when a > i . We may therefore suppose t h a t a < x .\n     3. 2. Suppose t h a t the theorem has been proved in the special case in\nwhich w ~ o .  Let\n                                              b7 ~   eaiTlog(7.q)\n\nand\n\n\n",
+          "sha256": "d4300a46d32cd81ee009e7c88337bde5e1de59b90737d4d7f4734d468c55d6cc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Weighted exponential series over zeta zeros",
+            "line_end": 3188,
+            "line_start": 2338,
+            "mathematical_role": "Adapts Landau's contour method and stationary-phase analysis to weighted oscillatory sums over zero ordinates, with uniformity and convergence regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2397,
+          "line_start": 2341,
+          "title": "Weighted damped exponential sums over zeta zeros",
+          "unit_id": "openalex_w2058590036_u030",
+          "unit_type": "theorem-setup",
+          "why_material": "Starts from Landau's resonance formula, converts it under RH to an exponential sum in zero ordinates, and states uniform bounds and convergence regimes for a damped and rotated generalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes why RH is simplifying rather than essential and the full parameter regime of the target theorem.",
+          "representation_dependency": "The central series and exponents are OCR-damaged; prose and labels preserve the setup but exact theorem use needs the scan.",
+          "unit_id": "openalex_w2058590036_u030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2333,
+            "line_start": 2262,
+            "title": "Riesz-function growth as a necessary and sufficient criterion for RH",
+            "unit_id": "openalex_w2058590036_u029",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Uses a Mellin integral for the Riesz function to motivate a growth criterion, explains why analytic continuation would imply RH, then proves the converse estimate from a known RH consequence for Möbius partial sums."
+          },
+          {
+            "line_end": 2460,
+            "line_start": 2399,
+            "title": "Partial summation reduces the rotation parameter to the base case",
+            "unit_id": "openalex_w2058590036_u031",
+            "unit_type": "parameter-transfer",
+            "why_material": "Shows that proving the theorem at zero rotation suffices, using partial summation to transfer a uniform base bound to the general oscillatory factor."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2340,
+              "line_start": 2334,
+              "reason": "Section transition and damaged series heading for the weighted zero-sum study."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u030",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u030",
+          "spontaneous_reading": "Landau's resonance formula is recast, under RH, as an oscillatory sum over zero ordinates and then enlarged to a damped, rotated family with uniform parameter control."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u030",
+          "source_grounded_mathematics": "The section recalls Landau's dichotomy for sums over zeros, with a main term at prime-power resonance and a logarithmic bound otherwise. Under RH this becomes an exponential sum in the ordinates, and Theorem 3.1 states bounds and convergence regimes for a weighted series with positive damping and rotation parameters, uniformly on compact positive damping intervals.",
+          "conceptual_reading": "The added weight separates resonance from generic cancellation and creates a parameterized object whose convergence and size can be attacked by contour and phase methods.",
+          "representation_or_bridge": "RH identifies zeros with real ordinates, turning the zero sum into a real-frequency exponential series; damping and rotation supply the analytic family later represented by a contour integral.",
+          "boundary_or_failure": "RH simplifies the statement but is said not to be essential; the theorem remains conditional as presented in this section and its exact parameter thresholds matter.",
+          "uncertainty": "The central series and exponent inequalities are OCR-damaged, so exact transcription requires the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u030",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states that RH simplifies the formulation but is not essential to the argument.",
+          "It recalls Landau's prime-power resonance dichotomy, rewrites it as an ordinate exponential sum under RH, and states Theorem 3.1 with uniformity in a positive parameter interval."
+        ],
+        "inference": [
+          "Damping and rotation create an analytic family suitable for later contour and phase analysis."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual sentence says the added weight separates resonance from generic cancellation, but that separation is already the content of the recalled Landau formulas and is not shown to be caused by the added weight."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The series and parameter inequalities are OCR-damaged, so exact thresholds cannot be audited from the text layer."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Rephrase the conceptual reading so the Landau formulas supply the resonance/generic dichotomy, while the added weights define the generalized family to be estimated; preserve the stated parameter uncertainty."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This reuses Section 3's phase analysis in a new proof context and completes the hard cancellation stage.",
+      "line_end": 3569,
+      "line_start": 3429,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The formula extraction is poor; exact phases, powers, and final estimates require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Stirling's formula, freezes slow factors, expands into oscillatory Dirichlet terms, and splits around the unique possible stationary index; nonresonant terms are bounded by the earlier phase lemma and the central finite block is controlled directly.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        64,
+        65,
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "At most one resonant Dirichlet term controls the short-interval integral",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u040.txt",
+      "unit_bytes": 5496,
+      "unit_id": "openalex_w2058590036_u040",
+      "unit_sha256": "7bb62f55dd133fa2a2eb46af252de50adc43ee449252703027df0907391d7df8",
+      "unit_type": "stationary-phase-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u040.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3421,
+          "line_end": 3428,
+          "text": "                                                       1        1\n                                                       ~+2 b + ( T + H ) i\n\n(4. 34)                        I ~ i J2 ~                            j        / (s) ds .- O(T'~).\n                                                           12+~1 6 +Ti\n\n\n                                           I\n",
+          "sha256": "d361b180854caad259692c4890d5fc5139bf6a9db2ce29a9dd39236d7fe5b4b5"
+        },
+        "after": {
+          "line_start": 3570,
+          "line_end": 3577,
+          "text": "     Theorem 4. 41. Let ~ be any positive number.                         Then there is a number T O(e)\nsuch that the segment\n\n                                                              ! +~'~.\n                                       I+Ti,     I+     T + T 4 )~,\n                                       2         2\n\nwhere T > T O(~), contains at least one zero o/ ~ (s) o/ odd order.\n",
+          "sha256": "d769ab4bdcfd1aa1a8aa594b7795b9f1b0611324d8fb0e3603b0506cd02770b0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Zeros of zeta on the critical line",
+            "line_end": 3590,
+            "line_start": 3189,
+            "mathematical_role": "Proves sign changes of a real critical-line auxiliary function in short intervals and obtains a lower bound for the number of critical-line zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3569,
+          "line_start": 3429,
+          "title": "At most one resonant Dirichlet term controls the short-interval integral",
+          "unit_id": "openalex_w2058590036_u040",
+          "unit_type": "stationary-phase-transfer",
+          "why_material": "Applies Stirling's formula, freezes slow factors, expands into oscillatory Dirichlet terms, and splits around the unique possible stationary index; nonresonant terms are bounded by the earlier phase lemma and the central finite block is controlled directly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This reuses Section 3's phase analysis in a new proof context and completes the hard cancellation stage.",
+          "representation_dependency": "The formula extraction is poor; exact phases, powers, and final estimates require scan verification.",
+          "unit_id": "openalex_w2058590036_u040"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3425,
+            "line_start": 3358,
+            "title": "Bounding side edges reduces critical-line cancellation to one short vertical integral",
+            "unit_id": "openalex_w2058590036_u039",
+            "unit_type": "contour-reduction",
+            "why_material": "Uses another rectangle and uniform zeta/Gamma bounds to dismiss two sides, leaving a single short vertical integral as the only remaining estimate needed for sign changes."
+          },
+          {
+            "line_end": 3587,
+            "line_start": 3570,
+            "title": "Odd-order critical-line zero in every prescribed short interval",
+            "unit_id": "openalex_w2058590036_u041",
+            "unit_type": "theorem-and-corollary",
+            "why_material": "Records the source's final local sign-change theorem and its global lower bound for the number of critical-line zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A contour problem is converted to real oscillatory Dirichlet integrals, split into nonstationary tails and at most one resonant central index; the same phase-control technology later supplies the cancellation estimate needed for critical-line sign changes.",
+            "limit": "Exact phases and exponent balances are obscured by OCR and require scan verification before formal comparison.",
+            "parent_local_unit_ids": [
+              "openalex_w2058590036_u033",
+              "openalex_w2058590036_u034",
+              "openalex_w2058590036_u035",
+              "openalex_w2058590036_u036",
+              "openalex_w2058590036_u039",
+              "openalex_w2058590036_u040"
+            ],
+            "title": "Stationary-phase analysis is reusable across zero sums and critical-line sign changes"
+          },
+          {
+            "claim": "The source makes a real auxiliary function small on average, proves constant sign would force a conflicting main term, and concludes an odd-order zero in every sufficiently large short interval, which sums to a global lower bound.",
+            "limit": "This proves a lower bound for zeros on the line, not RH or a positive proportion of all zeros in the modern sense.",
+            "parent_local_unit_ids": [
+              "openalex_w2058590036_u037",
+              "openalex_w2058590036_u038",
+              "openalex_w2058590036_u039",
+              "openalex_w2058590036_u040",
+              "openalex_w2058590036_u041"
+            ],
+            "title": "Local sign changes produce a global critical-line zero lower bound"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u040",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u040",
+          "spontaneous_reading": "Stirling expansion turns the last vertical integral into short real oscillatory Dirichlet integrals; phase geometry permits at most one resonant coefficient, so old nonstationary bounds handle the tails and a finite central block handles the rest."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u040",
+          "source_grounded_mathematics": "The functional equation and Stirling's formula reduce J2, after freezing a slowly varying power at T, to a Dirichlet sum of integrals with phase t log(t/(constant times n squared)). Indices are split around the unique n whose stationary point may lie in (T,T+H). Lemma 3.51 bounds indices at distance at least two, while the central few terms are estimated directly; the pieces combine to prove the required cancellation estimate.",
+          "conceptual_reading": "A reusable phase lemma transfers across proof contexts because it depends on stationary geometry, not on the original zero-sum interpretation; resonance is sparse enough to isolate finitely.",
+          "representation_or_bridge": "Stirling's formula and the zeta Dirichlet series bridge the complex integral to the Section 3 oscillatory template, with the resonant index as the intermediate object.",
+          "boundary_or_failure": "The argument yields a short-interval average bound and hence sign changes; it does not estimate individual zeta values or show that every zero is on the line.",
+          "uncertainty": "Exact phases, powers, and terminal inequalities are poorly extracted and require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u040",
+        "critic_decision": "revise",
+        "supported": [
+          "The source applies Stirling's theorem, discards controlled slow-factor errors, and turns J2 into a Dirichlet sum of short oscillatory integrals.",
+          "It proves that at most one index can have a stationary point in the interval, splits around that index, and estimates the distant and central terms separately to complete the cancellation bound."
+        ],
+        "inference": [
+          "The reuse of earlier stationary/nonstationary phase geometry in a new proof context is explicitly supported."
+        ],
+        "unsupported_or_imported": [
+          "The candidate names Lemma 3.51 as the tail bound, while the extracted span's explicit lemma reference is OCR-rendered as 2.432; the surrounding prose supports reuse of Section 3 methods but not a secure exact citation."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The formulas, powers, and the lemma number are extraction-unstable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the exact Lemma 3.51 citation with the earlier nonstationary oscillatory-integral estimates from Section 3 unless the scan is checked; retain the unique-resonant-index mechanism and formula uncertainty."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contradiction that completes the strip-wide Omega statement.",
+      "line_end": 3928,
+      "line_start": 3804,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Phase inequalities and constants are OCR-degraded; the finite-tail/alignment mechanism is explicit, but exact thresholds require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Controls the high-zero tail uniformly, uses Dirichlet/Kronecker-style simultaneous approximation to align finitely many zero phases with the seed configuration, and obtains arbitrarily high strip points carrying logarithmically large imaginary part.",
+      "source_id": "openalex_w2058590036",
+      "source_normalized_sha256": "61be0baf27babc7d11ab35c2c072625b8950ac865b5fdbcb89a834c4d82a5607",
+      "source_page_markers_inside_unit": [
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tail control plus simultaneous approximation moves the large value deep into the strip",
+      "unit_artifact_relpath": "depth/units/openalex_w2058590036_u044.txt",
+      "unit_bytes": 4917,
+      "unit_id": "openalex_w2058590036_u044",
+      "unit_sha256": "d33b9b07274c8bc345b2cae30b5b7225252c3aef4cf848766199b0de74f5dbc4",
+      "unit_type": "diophantine-phase-alignment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2058590036_u044.txt",
+      "source": {
+        "source_id": "openalex_w2058590036",
+        "title": "Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes",
+        "authors": [
+          "G. H. Hardy",
+          "J. E. Littlewood"
+        ],
+        "year": 1916,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "critical-strip",
+          "grh",
+          "l-functions",
+          "zeros",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3796,
+          "line_end": 3803,
+          "text": "188                                  G. H. Hardy and J. E. Littlew0od.\n\n         F r o m (5. 25), (5- 26), a n d (5. 27) it follows t h a t\n\n(5. 28)                                 --,~F(~       + i_~) c,z 8 log\n                                                                      i(i)\naS    ~ 0 .\n\n",
+          "sha256": "46368ed46c3f46f1ca4b4ba12ef760e5a8688b25bc56b46fc87d94296e062bd4"
+        },
+        "after": {
+          "line_start": 3929,
+          "line_end": 3936,
+          "text": "      5- 6. Our n e x t object is to prove\n      T h e o r e m 5. 6. I / w e denote by 3 F ( i ~ ) the limit of 3 F ( ~ + i71) as ~ o ,\nso that\n                                    - - 3 F (i~) ~ ~ sin 7n~,\n\nthen\n                  - - 3 F(i~)=.Qa(log logr), - - 3 F ( i v , ) = - Q L ( l o g logr\n\n",
+          "sha256": "88a5da804e08c1c1e30a062c1eb56188e73156edad9f2fadd84ef978bff8f210"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_201ecdb76f4e10dd3189f180e421f8c5a819a1c790f96c2e5d83491e8b682ff9",
+        "dossier_sha256": "290d52b4dec8bee6ddd92bd3a2aeedbcc46e8efe5734296eeb772fd94fcc281c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Order of psi(x)-x and Pi(x)-Li(x)",
+            "line_end": 4246,
+            "line_start": 3591,
+            "mathematical_role": "Combines an explicit zero formula, phase alignment, a boundary maximum-principle lemma, and smoothed-to-sharp transfer to prove large oscillations in prime-counting errors."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3928,
+          "line_start": 3804,
+          "title": "Tail control plus simultaneous approximation moves the large value deep into the strip",
+          "unit_id": "openalex_w2058590036_u044",
+          "unit_type": "diophantine-phase-alignment",
+          "why_material": "Controls the high-zero tail uniformly, uses Dirichlet/Kronecker-style simultaneous approximation to align finitely many zero phases with the seed configuration, and obtains arbitrarily high strip points carrying logarithmically large imaginary part."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the contradiction that completes the strip-wide Omega statement.",
+          "representation_dependency": "Phase inequalities and constants are OCR-degraded; the finite-tail/alignment mechanism is explicit, but exact thresholds require scan verification.",
+          "unit_id": "openalex_w2058590036_u044"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3802,
+            "line_start": 3650,
+            "title": "A damped zero series has a logarithmically large boundary profile",
+            "unit_id": "openalex_w2058590036_u043",
+            "unit_type": "boundary-asymptotic",
+            "why_material": "Introduces an analytic damping parameter, approximates zero ordinates through the inverse counting function, converts the sum into a tractable integral, and obtains an explicit large asymptotic along a shrinking interior path."
+          },
+          {
+            "line_end": 4025,
+            "line_start": 3929,
+            "title": "A modified Lindelof lemma handles discontinuous boundary data",
+            "unit_id": "openalex_w2058590036_u045",
+            "unit_type": "boundary-principle",
+            "why_material": "Explains why the standard theorem cannot be applied to the boundary zero series, formulates a strip maximum-principle variant with only pointwise boundary limits plus local boundedness, and proves it by damping with an auxiliary entire factor and splitting the rectangle."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A large value computed near the analytic boundary is reproduced at arbitrarily high locations by controlling the zero tail and simultaneously aligning finitely many phases; a boundary principle and explicit formula then turn it into recurring prime-counting extremes.",
+            "limit": "The mechanism is conditional on the source's RH reduction for this lower-bound proof and on exact spectral normalizations requiring scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2058590036_u006",
+              "openalex_w2058590036_u043",
+              "openalex_w2058590036_u044",
+              "openalex_w2058590036_u046",
+              "openalex_w2058590036_u047"
+            ],
+            "title": "Phase alignment converts one seed asymptotic into recurring arithmetic extremes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2058590036_u044",
+        "spontaneous": {
+          "unit_id": "openalex_w2058590036_u044",
+          "spontaneous_reading": "Uniform tail control reduces the spectrum to finitely many relevant phases, and simultaneous Diophantine approximation recreates the seed alignment at arbitrarily high imaginary translates, forcing recurring large interior values."
+        },
+        "directed": {
+          "unit_id": "openalex_w2058590036_u044",
+          "source_grounded_mathematics": "A zero-density estimate bounds the damped tail above a cutoff. Dirichlet's simultaneous approximation theorem then chooses a high shift whose first finitely many phases are close to those at the seed point. The finite-part error and tail error are both controlled, so the large imaginary part of F is reproduced at a high point in the strip. Assuming the asserted strip Omega behavior failed gives an incompatible upper bound.",
+          "conceptual_reading": "Truncation converts an infinite coherence problem into finite torus recurrence; approximation handles the finite modes and analytic damping protects the neglected tail.",
+          "representation_or_bridge": "The cutoff zero series bridges infinite to finite dimension, while simultaneous phase approximation bridges one computed boundary-near configuration to arbitrarily high translates.",
+          "boundary_or_failure": "The transfer first proves large values in the open strip, not on its discontinuous boundary; a separate boundary principle is required.",
+          "uncertainty": "Exact phase tolerances, constants, and growth thresholds are OCR-degraded, but the finite-tail/alignment argument is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2058590036_u044",
+        "critic_decision": "revise",
+        "supported": [
+          "The span uses the local bound on the number of zero ordinates in a unit interval to control the damped tail.",
+          "Dirichlet's simultaneous approximation theorem aligns finitely many phases, after which finite-part and tail errors preserve the seed large value at a high translate.",
+          "The final contradiction proves the stated strip Omega behavior, not yet the boundary result."
+        ],
+        "inference": [
+          "Finite-dimensional phase recurrence after truncation is a faithful conceptual account of the argument."
+        ],
+        "unsupported_or_imported": [
+          "Calling the local zero-counting bound a zero-density estimate is potentially misleading technical terminology; the span only uses that the number of ordinates in (v,v+1) is O(log v)."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Phase tolerances, constants, and growth thresholds are OCR-degraded."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace zero-density estimate with local zero-counting bound in the directed mathematics; leave the tail/alignment mechanism unchanged."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ae9d32e0a4999826b7ca5a3c53aa505dce96cdd4f9c4d187378c5646b94f01cb"
+}

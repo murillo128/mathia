@@ -1,0 +1,516 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1569098431_44f0cde1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1569098431",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first Kummer-accelerated formula; lines 195--207 define the Mobius weights and give the repeated-acceleration variant used by the carried computational unit.",
+      "line_end": 109,
+      "line_start": 98,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula (6) is legible in extraction; interpretation depends on reading its displayed sum together with the surrounding prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces a slowly convergent zeta-reciprocal power series by a Mobius-weighted exponential sum, a representation change that later makes comparison with the binomial formula for c_k possible.",
+      "source_id": "openalex_w1569098431",
+      "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mobius-exponential representation of the Riesz function",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u05.txt",
+      "unit_bytes": 661,
+      "unit_id": "full_openalex_w1569098431_u05",
+      "unit_sha256": "04d7f42f4ad24dbaf158101e90eb7f1a1934da6c1c01e9989c36e6df9a04d769",
+      "unit_type": "accelerated representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u05.txt",
+      "source": {
+        "source_id": "openalex_w1569098431",
+        "title": "Equivalence of Riesz and Baez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Jerzy Cisło",
+          "Marek Wolf"
+        ],
+        "year": 2006,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 90,
+          "line_end": 97,
+          "text": "in a more general form, namely the exponents 1/4 and 3/4    \u0001 will be replaced by\narbitrary parameter δ and combination 1 − δ: ck = O k −δ ⇔ R(x) = O x1−δ .\n                                                                                \u0001\n\nIn the ﬁnal Section we will speculate on some equations\n                                                P∞       involving ck and R(x), in\nparticular we will calculate the alternating sum k=0 (−1)k ck .\n\n",
+          "sha256": "adf0e498f6f352307c5d229dd085579e62600d3891ad2645eef192126c7a8bb9"
+        },
+        "after": {
+          "line_start": 110,
+          "line_end": 117,
+          "text": "<!-- source-page: 3 -->\n\nRiesz and Baez-Duarte criterion for RH                        3\n\n          0.2\n\n\n\n",
+          "sha256": "0e477e4f67243ba68d1a6d699452791f229e1790fb670cf328c974c3c29f8a72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_48ce17d7ad7dd9da95607362d2b2630e6ca163bc245bbaebe8b7d62bd6d6d345",
+        "dossier_sha256": "5cbc6bbde61aab173909c075aa08d91e4d7aaefa017a13ab339e052c02e5ad6e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Some facts on R(x) and c_k",
+            "line_end": 262,
+            "line_start": 98,
+            "mathematical_role": "Gives accelerated Mobius representations, computational motivation, and a zero-driven asymptotic picture for c_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 109,
+          "line_start": 98,
+          "title": "Mobius-exponential representation of the Riesz function",
+          "unit_id": "full_openalex_w1569098431_u05",
+          "unit_type": "accelerated representation",
+          "why_material": "Replaces a slowly convergent zeta-reciprocal power series by a Mobius-weighted exponential sum, a representation change that later makes comparison with the binomial formula for c_k possible."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the first Kummer-accelerated formula; lines 195--207 define the Mobius weights and give the repeated-acceleration variant used by the carried computational unit.",
+          "representation_dependency": "Formula (6) is legible in extraction; interpretation depends on reading its displayed sum together with the surrounding prose.",
+          "unit_id": "full_openalex_w1569098431_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 92,
+            "line_start": 31,
+            "title": "Parameterized duality of the Riesz and Baez-Duarte criteria",
+            "unit_id": "full_openalex_w1569098431_u02",
+            "unit_type": "general riesz-baez-duarte equivalence framing",
+            "why_material": "Places the continuous Riesz growth criterion and discrete Baez-Duarte decay criterion into the reusable paired form c_k=O(k^{-delta}) iff R(x)=O(x^{1-delta}), making the shift by one exponent explicit rather than relying only on transitivity through RH."
+          },
+          {
+            "line_end": 260,
+            "line_start": 202,
+            "title": "Accelerated computation and zero-spectrum oscillations of c_k",
+            "unit_id": "full_openalex_w1569098431_u03",
+            "unit_type": "accelerated formulas and first-zero wave picture",
+            "why_material": "Connects accelerated computation of R(x) with an explicit large-k expression for c_k indexed by nontrivial zeta zeros, including exponential suppression of higher ordinates and the resulting first-zero cosine-like behavior in log k."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching the binomial kernel for c_k to the exponential kernel for R(k)/k, then feeding that approximation through the exact transform, makes R approximately reconstructible from its integer values and isolates the reconstruction error.",
+            "limit": "The final self-entanglement relation remains approximate and the paper leaves open whether it is strong enough to prove the Riesz growth bound.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1569098431_u05",
+              "full_openalex_w1569098431_u08",
+              "full_openalex_w1569098431_u10",
+              "full_openalex_w1569098431_u11"
+            ],
+            "title": "Kernel matching yields a self-consistency view of R"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 97,
+              "line_start": 93,
+              "reason": "Roadmap for the later relations and alternating sum."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 189,
+              "line_start": 110,
+              "reason": "Two plot regions are reduced mainly to axes and captions; captions remain usable as context but curve-level evidence is absent."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1569098431_u05",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1569098431_u05",
+          "spontaneous_reading": "The operative move is Kummer acceleration: the slowly convergent zeta-reciprocal series for R is replaced by a Möbius-weighted exponential sum, making positive-x evaluation and later kernel comparison tractable."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1569098431_u05",
+          "source_grounded_mathematics": "For positive x, the source replaces the slowly convergent defining series by R(x)=x sum_{n>=1} μ(n)n^-2 exp(-x/n^2).",
+          "conceptual_reading": "The representation isolates arithmetic cancellation in the fixed weights μ(n)/n^2 and puts all x-dependence into a smooth exponential kernel. That exposes a form that can be compared termwise with a discrete coefficient representation sharing the same weights.",
+          "representation_or_bridge": "The bridge object is R(x)/x as a Möbius-weighted kernel sum; changing from reciprocal-zeta coefficients to exp(-x/n^2) is the enabling representation change.",
+          "boundary_or_failure": "Acceleration supplies an exact alternative representation, not a growth estimate for R and not evidence for the Riemann Hypothesis. This span does not derive the acceleration or quantify its convergence gain.",
+          "uncertainty": "Formula (6) is legible in the bounded extraction; any reuse of constants or display layout beyond the stated sum should still be checked against the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1569098431_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says that the positive-x defining series converges very slowly and that Kummer acceleration gives R(x)=x sum_{n>=1} mu(n)n^-2 exp(-x/n^2).",
+          "The candidate correctly limits the displayed identity: this span supplies neither a growth estimate nor a derivation or quantified convergence gain."
+        ],
+        "inference": [
+          "Reading mu(n)/n^2 as fixed arithmetic weights and exp(-x/n^2) as the x-dependent kernel is a direct, useful interpretation of the displayed sum."
+        ],
+        "unsupported_or_imported": [
+          "Calling series (2) a zeta-reciprocal power series is not supported by this span, which only refers to it by number.",
+          "Claims about later termwise comparison with a discrete coefficient representation and the tractability of that comparison are imported from later material rather than established here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic language that the representation 'exposes' a bridge becomes substantive only for the weight/kernel separation; the asserted later comparison exceeds this unit's evidence."
+        ],
+        "context_or_ocr_risk": [
+          "The exponent and fraction placement in formula (6) are text-layer sensitive, although the bounded packet supports the intended exp(-x/n^2)/n^2 reading."
+        ],
+        "missed_mechanism": [
+          "The safe local mechanism is acceleration into an alternative Mobius-exponential representation; the unit does not itself explain why Kummer acceleration produces the identity or prove a convergence rate."
+        ],
+        "revision_instructions": [
+          "Retain the displayed positive-x formula and the directly visible separation of weights from kernel, label that separation as interpretation, and remove the zeta-reciprocal characterization and all later discrete-kernel comparison claims."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the missing converse of the carried theorem unit and relies on the appendix proof at lines 646--737.",
+      "line_end": 413,
+      "line_start": 396,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula (26) has text-layer fraction-placement risk, but lines 407--412 disambiguate it as |R(k)/k-c_k|=O(k^{-3/2}).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Completes the converse by combining R(k)=O(k^{1-delta}) with the appendix bound between c_k and R(k)/k; it also makes explicit why the available error restricts the proved transfer to delta<3/2.",
+      "source_id": "openalex_w1569098431",
+      "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recovering c_k decay from integer samples of R",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u07.txt",
+      "unit_bytes": 1003,
+      "unit_id": "full_openalex_w1569098431_u07",
+      "unit_sha256": "e4d564fe5b343dfb0b1b62261f8d0a99b15d6683843f733a6e42587666c27c9a",
+      "unit_type": "reverse growth transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u07.txt",
+      "source": {
+        "source_id": "openalex_w1569098431",
+        "title": "Equivalence of Riesz and Baez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Jerzy Cisło",
+          "Marek Wolf"
+        ],
+        "year": 2006,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 388,
+          "line_end": 395,
+          "text": "                                X |ck |xk\n                                               < Ax−δ ex                        (24)\n                                k=1\n                                         k!\n\nand from (17) it follows:\n                                     |R(x)| < Ax1−δ                             (25)\nwhat is a desired inequality.\n",
+          "sha256": "3ac04053b04f92310cf775f6a98a9052402fe4503ed3db5868fcb44b3364a0de"
+        },
+        "after": {
+          "line_start": 414,
+          "line_end": 421,
+          "text": "\n   The comparison of the above bound (26) with real computer data is given in\nthe Fig.4. Here the ﬁt (red line) was obtained by the least square method from\nthe data with k > 10000 to avoid transient regime and it is given by the equation\n\n<!-- source-page: 8 -->\n\n8                                              J. Cislo, M. Wolf\n",
+          "sha256": "72e248f0633531d6c96f92c0f119b1fa329031587913ae15ee732c2095ac5fd7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_48ce17d7ad7dd9da95607362d2b2630e6ca163bc245bbaebe8b7d62bd6d6d345",
+        "dossier_sha256": "5cbc6bbde61aab173909c075aa08d91e4d7aaefa017a13ab339e052c02e5ad6e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 and equivalence proof",
+            "line_end": 413,
+            "line_start": 341,
+            "mathematical_role": "Transfers decay from c_k to growth of R and conversely via a quantified approximation at integer arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 413,
+          "line_start": 396,
+          "title": "Recovering c_k decay from integer samples of R",
+          "unit_id": "full_openalex_w1569098431_u07",
+          "unit_type": "reverse growth transfer",
+          "why_material": "Completes the converse by combining R(k)=O(k^{1-delta}) with the appendix bound between c_k and R(k)/k; it also makes explicit why the available error restricts the proved transfer to delta<3/2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the missing converse of the carried theorem unit and relies on the appendix proof at lines 646--737.",
+          "representation_dependency": "Formula (26) has text-layer fraction-placement risk, but lines 407--412 disambiguate it as |R(k)/k-c_k|=O(k^{-3/2}).",
+          "unit_id": "full_openalex_w1569098431_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 395,
+            "line_start": 341,
+            "title": "Forward growth transfer from c_k to R(x)",
+            "unit_id": "full_openalex_w1569098431_u01",
+            "unit_type": "Riesz-Baez-Duarte equivalence theorem",
+            "why_material": "States the general equivalence theorem and proves the c_k-to-R direction by combining the exact exponential transform with a coefficient-weight asymptotic for sum k^{-delta}x^k/k!, exposing Poisson smoothing as the source of the exponent shift."
+          },
+          {
+            "line_end": 444,
+            "line_start": 424,
+            "title": "Binomial-to-exponential explanation of c_k approximately equal to R(k)/k",
+            "unit_id": "full_openalex_w1569098431_u08",
+            "unit_type": "kernel approximation heuristic",
+            "why_material": "Rewrites c_k as a Mobius-weighted binomial-kernel sum and approximates (1-1/n^2)^k by exp(-k/n^2), directly matching the accelerated Riesz representation at x=k. This supplies an interpretable de-Poissonization heuristic later made quantitative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The exact exponential transform smooths discrete c_k decay into R(x) growth, while the O(k^{-3/2}) integer-sampling error reverses the transfer; the paired mechanisms explain both the one-power exponent shift and the delta<3/2 proof range.",
+            "limit": "The reverse transfer is tied to the proved approximation rate and to integer samples; it does not by itself improve the RH-relevant exponent or establish RH.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1569098431_u06",
+              "full_openalex_w1569098431_u01",
+              "full_openalex_w1569098431_u07",
+              "full_openalex_w1569098431_u11"
+            ],
+            "title": "Poissonization and quantified de-Poissonization as the equivalence mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 423,
+              "line_start": 414,
+              "reason": "Numerical-fit setup and page transition motivate but do not establish the kernel mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1569098431_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1569098431_u07",
+          "spontaneous_reading": "The converse transfer is an integer-sampling stability argument: c_k shadows R(k)/k with an O(k^-3/2) error, so a hypothesized decay for the sampled R term survives only while it dominates that error floor."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1569098431_u07",
+          "source_grounded_mathematics": "The appendix estimate used here is |R(k)/k-c_k| <= (3 sqrt(π)/16)k^-3/2+O(k^-2). If R(k)=O(k^(1-δ)), then |c_k| <= Bk^-δ+O(k^-3/2), yielding c_k=O(k^-δ) for δ<3/2.",
+          "conceptual_reading": "This is quantified de-Poissonization: continuous information is sampled at integers and transferred back to discrete coefficients through a controlled approximation. The error exponent, rather than formal duality alone, determines the range of the reverse implication.",
+          "representation_or_bridge": "The bridge object is the integer sample R(k)/k, with the approximation error |R(k)/k-c_k| carrying the proof burden.",
+          "boundary_or_failure": "The available O(k^-3/2) error does not justify the same conclusion at or beyond δ=3/2, and the source separately notes a stricter RH-relevant restriction. This step does not establish any assumed growth bound.",
+          "uncertainty": "The proof of the error estimate is deferred to the appendix. Fraction placement in formula (26) is risky in the text layer, but the following inequality unambiguously identifies the compared quantities and leading rate."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1569098431_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span uses |R(k)/k-c_k|<=(3 sqrt(pi)/16)k^-3/2+O(k^-2) together with R(k)=O(k^(1-delta)) to transfer the assumed integer-sample bound to c_k.",
+          "The candidate correctly identifies R(k)/k and its approximation error as carrying the reverse implication and does not treat the assumed R bound as proved."
+        ],
+        "inference": [
+          "Calling the step quantified de-Poissonization is a defensible interpretation of the integer-sampling approximation."
+        ],
+        "unsupported_or_imported": [
+          "The statement that the estimate does not justify the same conclusion 'at or beyond' delta=3/2 is too strong: at delta=3/2 both the assumed term and the error are O(k^-3/2), so the displayed inequality still gives c_k=O(k^-3/2). Only delta>3/2 is blocked by this error rate."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Formula (26) has fraction-placement risk, but the subsequent triangle-inequality line disambiguates the compared quantities and the k^-3/2 rate."
+        ],
+        "missed_mechanism": [
+          "The candidate misses the endpoint distinction between the source's stated delta<3/2 range and what the displayed big-O estimate itself permits at delta=3/2."
+        ],
+        "revision_instructions": [
+          "Replace the endpoint claim with the precise statement that the O(k^-3/2) error prevents transfer of the sharper O(k^-delta) rate for delta>3/2; report separately that the source states its criterion for delta<3/2."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claims are explicitly speculative and rest on the numerical observations in lines 553--600 plus the first-zero approximation, not on a proof.",
+      "line_end": 609,
+      "line_start": 597,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (36)--(37) are legible; the associated plotted curve is not recoverable from the text layer and would need scan verification for quantitative visual evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes a convergent alternating accumulation, conjectured to approach its limit at c_k-like rate, from an ordinary partial sum conjectured to oscillate with growing n^{1/4} scale. This records a falsifiable consequence rather than treating formal summation as convergence.",
+      "source_id": "openalex_w1569098431",
+      "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contrasting asymptotics for alternating and ordinary partial sums",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u09.txt",
+      "unit_bytes": 818,
+      "unit_id": "full_openalex_w1569098431_u09",
+      "unit_sha256": "ba6b0ef7dd3d0b59e9f5e69ffd73b0a7b9c0298a8f9290f2bc86f8e53dd97b2f",
+      "unit_type": "conjectural asymptotic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u09.txt",
+      "source": {
+        "source_id": "openalex_w1569098431",
+        "title": "Equivalence of Riesz and Baez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Jerzy Cisło",
+          "Marek Wolf"
+        ],
+        "year": 2006,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 589,
+          "line_end": 596,
+          "text": "                       -0.001\n\n                                0   20000000      40000000   60000000       80000000   100000000\n                                                                        n\n\n                                                                        Pn                         8\n     Fig. 5 The distance from -2 of the partial sums                        k=0 for n = 1, . . . 10 .\n\n",
+          "sha256": "65af8a9127e2bd42caba038091ac17d49a2a75a42f8df2853117dbae78c4d7f1"
+        },
+        "after": {
+          "line_start": 610,
+          "line_end": 617,
+          "text": "\n\n   Finally we would like to argue in favour of the two strange approximate equalities.\nBoth follows from ck ≈ R(k)/k for large k. The ﬁrst follows when write this relation\nwith the help of (2) and (4):\n                      ∞                  k\n                           (−1)j k j\n                                                  \u0012 \u0013\n",
+          "sha256": "1412545eee3e565ca43bc8b6b4cd0da553c2987bf65ca2b7de13248dc32927fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_48ce17d7ad7dd9da95607362d2b2630e6ca163bc245bbaebe8b7d62bd6d6d345",
+        "dossier_sha256": "5cbc6bbde61aab173909c075aa08d91e4d7aaefa017a13ab339e052c02e5ad6e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Partial-sum conjectures and approximate self-constraints",
+            "line_end": 645,
+            "line_start": 563,
+            "mathematical_role": "Uses numerical oscillations and the c_k-to-R(k) approximation to propose partial-sum rates and discrete self-relations for R."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 609,
+          "line_start": 597,
+          "title": "Contrasting asymptotics for alternating and ordinary partial sums",
+          "unit_id": "full_openalex_w1569098431_u09",
+          "unit_type": "conjectural asymptotic",
+          "why_material": "Distinguishes a convergent alternating accumulation, conjectured to approach its limit at c_k-like rate, from an ordinary partial sum conjectured to oscillate with growing n^{1/4} scale. This records a falsifiable consequence rather than treating formal summation as convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claims are explicitly speculative and rest on the numerical observations in lines 553--600 plus the first-zero approximation, not on a proof.",
+          "representation_dependency": "Equations (36)--(37) are legible; the associated plotted curve is not recoverable from the text layer and would need scan verification for quantitative visual evidence.",
+          "unit_id": "full_openalex_w1569098431_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 562,
+            "line_start": 482,
+            "title": "Weighted generating family and the obstruction to formal unweighted summation",
+            "unit_id": "full_openalex_w1569098431_u04",
+            "unit_type": "alternating sums and divergent total sum",
+            "why_material": "Derives the alternating sum from the Mobius/binomial representation, embeds it in a parameterized generating identity with asymmetric convergence domains, and contrasts it with a formal shift-operator evaluation of sum c_k whose predicted value is defeated by growing oscillations."
+          },
+          {
+            "line_end": 640,
+            "line_start": 612,
+            "title": "Discrete self-entanglement constraint for the Riesz function",
+            "unit_id": "full_openalex_w1569098431_u10",
+            "unit_type": "approximate self-consistency relation",
+            "why_material": "Substituting c_k approximately equal to R(k)/k into the exact generating transform yields an approximate reconstruction of R(x) from its positive-integer values, turning the continuous-discrete bridge into a potential self-consistency constraint rather than merely a criterion equivalence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A first-zero-dominated log-periodic model for c_k qualitatively explains both cosine-like coefficient oscillations and why ordinary accumulation can diverge while alternating accumulation converges.",
+            "limit": "The zero expansion is presented under assumptions on zeros, and the partial-sum rates are numerical speculation rather than proved asymptotics.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1569098431_u03",
+              "full_openalex_w1569098431_u04",
+              "full_openalex_w1569098431_u09"
+            ],
+            "title": "Zero-driven oscillations propagate from coefficients to cumulative behavior"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 596,
+              "line_start": 563,
+              "reason": "The partial-sum figure is reduced to axis fragments and a caption, with no inspectable curve."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1569098431_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1569098431_u09",
+          "spontaneous_reading": "Applying or omitting the alternating sign changes the cumulative behavior sharply: one partial sum is conjectured to settle toward a finite limit at a c_k-like rate, while the ordinary sum retains an oscillatory envelope that can grow."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1569098431_u09",
+          "source_grounded_mathematics": "From numerical observations, the authors speculate that sum_{k=0}^n(-1)^k c_k-s=O(n^-3/4), with s=0.782527985..., whereas sum_{k=0}^n c_k+2=O(n^1/4).",
+          "conceptual_reading": "The alternating character acts as a cancellation filter on the same coefficient sequence. The contrast proposes a falsifiable link between coefficient oscillations and cumulative behavior rather than treating a formal value of the unweighted sum as convergence.",
+          "representation_or_bridge": "The bridge is the comparison of two summation representations of c_k: parity-weighted accumulation versus ordinary accumulation, with their residuals measured against s and -2 respectively.",
+          "boundary_or_failure": "Both rates are explicitly speculative, based on numerical plots and the surrounding first-zero picture, not proved asymptotics. The O(n^1/4) statement does not assign a convergent value to the ordinary series.",
+          "uncertainty": "Equations (36)-(37) are legible, but the plotted curve is absent from the text layer, so its quantitative visual support cannot be audited without the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1569098431_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly presents the two residual bounds as speculation and records observed decreasing oscillations of the alternating partial sums around s=0.782527985....",
+          "The candidate accurately preserves the formulas sum_{k=0}^n(-1)^k c_k-s=O(n^-3/4) and sum_{k=0}^n c_k+2=O(n^1/4), and it does not assign convergence of the ordinary series."
+        ],
+        "inference": [
+          "Interpreting parity weighting as a cancellation filter is plausible but remains an interpretation rather than a proved mechanism in this span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the ordinary partial sum has an oscillatory envelope that can grow is not entailed by the displayed O(n^1/4) upper bound; the exact span supplies no lower bound or inspectable ordinary-sum curve.",
+          "Attributing both rates to a surrounding first-zero picture imports reasoning outside the exact artifact."
+        ],
+        "paraphrase_or_style_risk": [
+          "The cancellation-filter phrasing should not substitute for the limited empirical observation and conjectured big-O statements actually present."
+        ],
+        "context_or_ocr_risk": [
+          "Equations (36)-(37) are legible, but the relevant plotted curve is absent from the text layer, so quantitative visual support cannot be audited here."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish an upper bound allowing n^(1/4)-scale behavior from evidence that the ordinary partial sums actually grow, oscillate, or diverge."
+        ],
+        "revision_instructions": [
+          "State only the observed alternating oscillation and the two conjectured residual bounds; do not infer growth or oscillation of the ordinary sum from O(n^1/4), and remove the first-zero attribution unless separately sourced."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3165e3a1783b0dc2a46665b71ceb4fa4073581fb2c295b23bcc4d0d39d994f82"
+}

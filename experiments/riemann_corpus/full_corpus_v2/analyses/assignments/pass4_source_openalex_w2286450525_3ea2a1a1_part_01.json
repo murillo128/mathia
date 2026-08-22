@@ -1,0 +1,306 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2286450525_3ea2a1a1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2286450525",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact added-in-proof bridge rather than part of the main derivation.",
+      "line_end": 664,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The actual identities are missing in the text layer; retain only with equation-image verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records additional sum rules and a transformation linking the zero sums to Li coefficients, hence to a positivity formulation of the Riemann Hypothesis.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-sum identities connect the secondary-zeta coordinates to Li coefficients",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u11.txt",
+      "unit_bytes": 429,
+      "unit_id": "full_openalex_w2286450525_v2_u11",
+      "unit_sha256": "0614da9f9662d5efdc0bddfedc8eb620136ac21166451c20ddb325ec58026fc4",
+      "unit_type": "equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 638,
+          "line_end": 645,
+          "text": "recursion, this must invert in the form\n                        has to be the singular part in the Laurent series of\nx-m around p   =\n                  0, resulting in I                 .\n                                                       Now, summing both sets\nof identities over the Riemann zeros {p} yields the stated decompositions\n(48). (We stress that their finite character is specific to the Z (m) as opposed\nto all other values       v), v i= ~).\n",
+          "sha256": "dbfe412e7c5ad19149ef6934c227534b935a045295de0f70cfd8c0034f90889f"
+        },
+        "after": {
+          "line_start": 665,
+          "line_end": 672,
+          "text": "    4. Generalized Zeta functions\n\n\n     We begin to discuss the Hurwitz-like generalizations of the preceding\ncase obtained by shifting the squared parameters           The obviously\nallowed translations (                          in the real case) preserve\nthe notion of admissible sequences (with their values of po, r); that\nvalidates the earlier definition\n",
+          "sha256": "77324a8f96b2369f2e932648ed7c9626d8aad904ab2ffa932bf78820a762f87e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2478b478adbfe45e5cdee6c9b8b6d81ad534c67c92d1def36f96c091f6b4d515",
+        "dossier_sha256": "83135547cd3914676d19bb01ea7495e9cb7f537824304d815a59989bea068414",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Delta function based at s=0 and its zeta function",
+            "line_end": 664,
+            "line_start": 443,
+            "mathematical_role": "Uses functional-equation symmetry to pair zeros into a squared sequence, then derives poles, regularized determinant data, Taylor identities, special values, and a Li-coefficient connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 664,
+          "line_start": 646,
+          "title": "Zero-sum identities connect the secondary-zeta coordinates to Li coefficients",
+          "unit_id": "full_openalex_w2286450525_v2_u11",
+          "unit_type": "equivalent criterion",
+          "why_material": "Records additional sum rules and a transformation linking the zero sums to Li coefficients, hence to a positivity formulation of the Riemann Hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact added-in-proof bridge rather than part of the main derivation.",
+          "representation_dependency": "The actual identities are missing in the text layer; retain only with equation-image verification.",
+          "unit_id": "full_openalex_w2286450525_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 645,
+            "line_start": 575,
+            "title": "Two Taylor expansions yield finite identities among zero sums, zeta derivatives, and Stieltjes cumulants",
+            "unit_id": "full_openalex_w2286450525_v2_u10",
+            "unit_type": "special-value identities",
+            "why_material": "Matches the Delta-product Taylor series with functional-equation expansions to produce countably many three-term identities and finite decompositions for positive-integer secondary-zeta values."
+          },
+          {
+            "line_end": 753,
+            "line_start": 665,
+            "title": "Translation covariance separates polynomial polar data from transcendental special values",
+            "unit_id": "full_openalex_w2286450525_v2_u12",
+            "unit_type": "parameter-shift analysis",
+            "why_material": "Shows that shifting the squared spectrum preserves admissibility and makes asymptotic coefficients, pole parts, and trace identities polynomial in the shift, while finite-point Taylor data and positive values vary transcendentally."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2286450525_v2_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2286450525_v2_u11",
+          "spontaneous_reading": "The added-in-proof note identifies a coordinate change rather than a new proof: secondary zero sums can be reorganized into Li coefficients, where the Riemann Hypothesis becomes a positivity condition."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2286450525_v2_u11",
+          "source_grounded_mathematics": "The prose reports countably many sum rules capable of eliminating any finite subset of odd zero-sum values and a relation between those sums and Li's coefficients, whose positivity for all indices is an equivalent formulation of the Riemann Hypothesis.",
+          "conceptual_reading": "This reframes the same zero data from moment-like coordinates into a positivity-sensitive basis; equivalence changes what is visible but supplies no positivity evidence by itself.",
+          "representation_or_bridge": "Li coefficients are the bridge from the secondary-zeta sum coordinates to an RH-equivalent positivity sequence.",
+          "boundary_or_failure": "No displayed identity survives the text extraction, so the span cannot support formula-level reuse, and it neither proves positivity nor advances a proof of RH.",
+          "uncertainty": "Very high at equation level because the actual sum rules and transformation are missing; only the prose description and cited equivalence are recoverable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2286450525_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The surviving prose explicitly reports countably many sum rules that can eliminate any finite subset of odd zero-sum values.",
+          "It also explicitly reports a connection to Li coefficients and the all-index positivity formulation of the Riemann Hypothesis.",
+          "The candidate correctly says that the note supplies no positivity evidence and that formula-level reuse is impossible from this extraction."
+        ],
+        "inference": [
+          "Calling the zero sums moment-like is a plausible conceptual gloss."
+        ],
+        "unsupported_or_imported": [
+          "Describing the missing relation as a coordinate change into a positivity-sensitive basis suggests an explicit invertible transformation that cannot be established from the surviving prose because both displayed identities are absent."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The unit loses the actual sum rules and Li-coefficient relation completely, including their direction, coefficients, and hypotheses."
+        ],
+        "missed_mechanism": [
+          "The analysis does not distinguish a reported connection from a verified basis transformation."
+        ],
+        "revision_instructions": [
+          "Retain the prose-grounded report of sum rules, the Li connection, and the RH-positivity equivalence, but replace coordinate-change and basis language with the weaker statement that the span reports a relation whose exact form is unavailable."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides indispensable outcome and comparison context for carried unit u04.",
+      "line_end": 969,
+      "line_start": 938,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded, with convergence half-planes and referenced formulas degraded in places.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Interprets the continuation formulas as functional-equation counterparts, compares them with Guinand and Deninger formulas, and explains why they make the left half-plane pole analysis straightforward.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Mellin formulas function as explicit counterparts of the zeta functional equation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u14.txt",
+      "unit_bytes": 1163,
+      "unit_id": "full_openalex_w2286450525_v2_u14",
+      "unit_sha256": "6ad4aee8bf21b6e3a1261bce7fbd220ddcca99cbf4252189abbf3bb4f243c092",
+      "unit_type": "method interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 930,
+          "line_end": 937,
+          "text": "(each of the above converges in the full half-plane          ~}).\nAnother real form can be obtained with a regular integrand, directly from\nequation (67):\n\n\n\n\nhowever this last integral only converges in the strip 10    Re at   ~}.\n",
+          "sha256": "5c8e6bb33f0e8e020cc65e60f344bbed47e72fbc5a3cc9b8c1b06cfd5a5fc52f"
+        },
+        "after": {
+          "line_start": 970,
+          "line_end": 977,
+          "text": "                       5.3. Properties of           for Re a   1.\n\n\n          A few leading properties of Z (a) in the half-plane         1~ emerge\nmore      easily as special cases from  Section  4 (although they can be drawn\nfrom equation (72) as well):\n      -\n\n",
+          "sha256": "8adddc2ea3dcf89af2a9a689fd4772dd8a676fc92bf4a2f9e072c7c5a717fe42"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2478b478adbfe45e5cdee6c9b8b6d81ad534c67c92d1def36f96c091f6b4d515",
+        "dossier_sha256": "83135547cd3914676d19bb01ea7495e9cb7f537824304d815a59989bea068414",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Symmetric base point, shadow zeta, and continuation",
+            "line_end": 1280,
+            "line_start": 755,
+            "mathematical_role": "Moves to the symmetric zero shift, models trivial zeros and the zeta pole as a shadow spectrum, derives explicit Mellin/Hankel continuation formulas, extracts poles and trace identities, and sketches extension to other zeta/L-functions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 969,
+          "line_start": 938,
+          "title": "The Mellin formulas function as explicit counterparts of the zeta functional equation",
+          "unit_id": "full_openalex_w2286450525_v2_u14",
+          "unit_type": "method interpretation",
+          "why_material": "Interprets the continuation formulas as functional-equation counterparts, compares them with Guinand and Deninger formulas, and explains why they make the left half-plane pole analysis straightforward."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides indispensable outcome and comparison context for carried unit u04.",
+          "representation_dependency": "Prose-grounded, with convergence half-planes and referenced formulas degraded in places.",
+          "unit_id": "full_openalex_w2286450525_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 937,
+            "line_start": 846,
+            "title": "At the symmetric shift, resolvent terms split into explicit shadow and residual Mellin pieces",
+            "unit_id": "full_openalex_w2286450525_u04",
+            "unit_type": "Mellin continuation decomposition",
+            "why_material": "Uses factorization, a regularized trivial-zero resolvent, contour rotation, Hankel conversion, and residue calculus to separate an explicit shadow-zeta term from a residual integral and obtain conjugate and principal-value continuations."
+          },
+          {
+            "line_end": 1067,
+            "line_start": 970,
+            "title": "The explicit shadow term controls poles, trace identities, and a resummed prime asymptotic",
+            "unit_id": "full_openalex_w2286450525_v2_u15",
+            "unit_type": "pole and resummation consequences",
+            "why_material": "Shows that the residual integral is regular in the target half-plane, so pole and integer-value data come from the shadow term, and relates the large-negative-parameter expansion to a resummation of Guinand’s divergent prime series."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2286450525_v2_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2286450525_v2_u14",
+          "spontaneous_reading": "The new Mellin representations serve as secondary-zeta analogues of the original functional equation: they are useful not merely because they continue the function, but because they expose the ingredients controlling that continuation."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2286450525_v2_u14",
+          "source_grounded_mathematics": "The source interprets formulas (72)-(74) as precise counterparts of the Riemann zeta functional equation and as more explicit forms of Guinand's relation. It compares a related formula for Deninger's Hurwitz-type function and states that the Mellin formulas make the target half-plane's analytic properties straightforward while the defining series covers the opposite half-plane.",
+          "conceptual_reading": "A continuation formula is strongest when it reorganizes the function into components whose singularities and convergence can be inspected separately, rather than merely asserting existence of continuation.",
+          "representation_or_bridge": "Mellin and Hankel integral forms bridge the functional equation to secondary-zero sums; Guinand's and Deninger's formulas provide comparison points for the same role.",
+          "boundary_or_failure": "The unit interprets and compares the formulas but does not by itself derive their kernels or establish a fully closed functional equation for the secondary zeta.",
+          "uncertainty": "The prose comparison is reliable; precise convergence half-planes, parameter values, and referenced formulas are degraded in extraction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w2286450525_v2_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly calls formulas (72)-(74) counterparts of the Riemann zeta functional equation and more explicit forms of Guinand's relation.",
+          "It compares a similar Deninger formula and contrasts the Mellin formulas' target-half-plane reach with the defining series in the opposite half-plane.",
+          "The candidate correctly treats this unit as interpretation and comparison rather than derivation of the kernels."
+        ],
+        "inference": [
+          "Saying that a useful continuation representation makes analytic properties inspectable is supported by the source's claim that those properties become straightforward."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's representation bridge names Hankel integral forms, but this exact span mentions only Mellin formulas; Hankel conversion belongs to an adjacent derivation outside the unit evidence boundary."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Precise half-planes, fixed parameters, and formulas (72)-(74) are degraded, so the unit supports their role but not formula-level structure."
+        ],
+        "missed_mechanism": [
+          "The analysis should keep this unit's mechanism at the level of Mellin representation, functional-equation analogy, and comparative continuation reach."
+        ],
+        "revision_instructions": [
+          "Remove the Hankel claim and any unshown kernel decomposition; describe only the Mellin representations and the source's explicit comparisons with Guinand, Deninger, and the defining series."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "fc6cc77e70f633c6f14284796a994d5787e3ac88b964c712a9e97d15b65b9534"
+}

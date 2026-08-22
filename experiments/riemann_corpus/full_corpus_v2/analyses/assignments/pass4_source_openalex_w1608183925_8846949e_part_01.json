@@ -1,0 +1,470 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1608183925_8846949e_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1608183925",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Use the span for its comparative and methodological claims; the exact displayed range exponents are visibly damaged.",
+      "line_end": 64,
+      "line_start": 48,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable from normalized OCR, but exact inequalities and exponents require verification against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction places the claimed asymptotic formula relative to Gallagher, Selberg, and Paley, explicitly notes a range where Gallagher is better, and declines to duplicate a proof said to be essentially the same as Gallagher's.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Comparative asymptotic range and method boundary",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d01.txt",
+      "unit_bytes": 889,
+      "unit_id": "openalex_w1608183925_d01",
+      "unit_sha256": "f087e60a352b345f4f3bf83cce8c53db32250122164c6673bab9639d6c0be67d",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d01.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 40,
+          "line_end": 47,
+          "text": "ACTA ARITHMETICA\nXXXVIIT (1980)\n\nA note on Dirichlet’s L-functions\nby\n\nR. BALASUBRAMANIAN (Bombay)\n\n",
+          "sha256": "99314b66de9841e0a6e3779fad51305c421d2d6f2782c1f17b4afdb7d3f801ef"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "\n2. Statement of the theorem.\nTunorem, Lhe asymptotic formula\n\n2 —\n» |\\L(h-+- at, x) |? = 21 tegat--0 (qQoglog g)2) + O (te Ea)\nx\n\n",
+          "sha256": "79ddd2e4f6e9ec7f50ce899c3744a5e3c524ec0769c6fcb924b0658d0862e95e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 65,
+            "line_start": 48,
+            "mathematical_role": "States the asymptotic objective, compares its range and method with prior results, and identifies the paper as a continuation of earlier work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 48,
+          "title": "Comparative asymptotic range and method boundary",
+          "unit_id": "openalex_w1608183925_d01",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "The introduction places the claimed asymptotic formula relative to Gallagher, Selberg, and Paley, explicitly notes a range where Gallagher is better, and declines to duplicate a proof said to be essentially the same as Gallagher's."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Use the span for its comparative and methodological claims; the exact displayed range exponents are visibly damaged.",
+          "representation_dependency": "The prose is recoverable from normalized OCR, but exact inequalities and exponents require verification against the page image.",
+          "unit_id": "openalex_w1608183925_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 291,
+            "line_start": 273,
+            "title": "An estimate bottleneck and the fallback to a trivial bound",
+            "unit_id": "openalex_w1608183925_d02",
+            "unit_type": "obstruction-and-fallback-estimate",
+            "why_material": "The author says the preceding work almost completes the theorem except for obtaining a good bound for one remaining quantity, observes that improving it would widen the asymptotic range, and then closes the gap using an auxiliary bound and a trivial estimate."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 84,
+              "line_start": 65,
+              "reason": "The main theorem and corollary are present, but their decisive formulas and exponent conditions are too damaged for exact semantic extraction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1608183925_d01",
+        "spontaneous": {
+          "unit_id": "openalex_w1608183925_d01",
+          "spontaneous_reading": "The mathematical work is a comparison of parameter ranges: the paper locates its asymptotic formula between earlier results, acknowledges a regime where Gallagher's bound is stronger, and marks an omitted argument as a reuse rather than a new proof."
+        },
+        "directed": {
+          "unit_id": "openalex_w1608183925_d01",
+          "source_grounded_mathematics": "The introduction targets an asymptotic formula for a character sum of squared Dirichlet L-values, contrasts it with Gallagher's upper bound and with Selberg-Paley asymptotics, states that the relative strength changes with the size of the height parameter, and says Gallagher's result should also follow by essentially Gallagher's proof.",
+          "conceptual_reading": "The parameter range is part of the mathematical content, not bookkeeping: it records where different estimates control the error well enough for an asymptotic and exposes a crossover between methods.",
+          "representation_or_bridge": "A range comparison represents several results on one scale and turns method selection into a regime-dependent choice; the claimed proof reuse is a bridge from the present setup back to Gallagher's method.",
+          "boundary_or_failure": "The span supplies comparison and method-boundary claims but not the omitted proof. OCR damage destroys the decisive exponents, so it cannot support an exact range statement or the precise crossover threshold.",
+          "uncertainty": "Low uncertainty about the qualitative comparison and omission; high uncertainty about every displayed exponent and quantitative range endpoint."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1608183925_d01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span qualitatively supports an asymptotic objective, comparison with Gallagher's upper bound and earlier Selberg-Paley asymptotics, a regime where Gallagher's result is better, and omission of a duplicative proof.",
+          "The candidate correctly refuses to recover exact exponents or range endpoints from the damaged OCR."
+        ],
+        "inference": [
+          "Treating the qualitative range comparison as regime-dependent method selection is a reasonable interpretation, provided no exact ordering or threshold is asserted."
+        ],
+        "unsupported_or_imported": [
+          "The phrase that Gallagher's result should follow by essentially Gallagher's proof misstates the attribution: the source says it could be deduced by the present author's method, while the resulting proof would be essentially the same as Gallagher's.",
+          "Saying the paper locates its formula 'between' earlier results suggests a quantitative ordering that the damaged exponents do not safely establish."
+        ],
+        "paraphrase_or_style_risk": [
+          "The crossover language is useful only when tied to the explicit statement that Gallagher is better in one stated regime; otherwise it risks becoming a generic range-comparison gloss."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed L-value expression and every decisive exponent, inequality endpoint, and threshold are OCR-unsafe."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes method ownership from proof duplication: it proposes using its own method to recover Gallagher's result but omits the argument because it would substantially reproduce Gallagher's proof."
+        ],
+        "revision_instructions": [
+          "Correct the method attribution and replace 'between earlier results' with a purely qualitative statement that the paper compares several ranges and explicitly identifies a regime where Gallagher is better.",
+          "Retain the prohibition on exact exponent or endpoint reconstruction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The provenance and reduction step are explicit; the moment powers, point constraints, and bound are OCR-damaged.",
+      "line_end": 552,
+      "line_start": 511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Reliable for the imported-result-to-Holder proof move, not for exact statement transcription without the scan and cited source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Imported high-moment control reduced by Holder's inequality",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d07.txt",
+      "unit_bytes": 889,
+      "unit_id": "openalex_w1608183925_d07",
+      "unit_sha256": "5fc412505d7a1ddd0d7bec5610913a0461edc68ecebcfadcbdbffa79d0aabbbb",
+      "unit_type": "imported-moment-bound-and-inequality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d07.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 503,
+          "line_end": 510,
+          "text": "= gi“ Mogg = o( (g)\n\nlog i j\n\nwe can choose for instance\n\nand this completes the proof.\n\n",
+          "sha256": "44432ab79857c5b4cbca219337e78a6972494108fc4e6e059da317985ef1aa1b"
+        },
+        "after": {
+          "line_start": 553,
+          "line_end": 560,
+          "text": "\nFrom Lemma 11, we deduce\n\nLemma 12. Hor every x, let 8, be a point in the dise\n\njs—4< and oo, >}.\n\nx\n",
+          "sha256": "2808f4e3e5a7cc00d980fdcdf21834fe63fecd423c8bcd1238a566cf99917c4b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 626,
+            "line_start": 511,
+            "mathematical_role": "Imports a high-moment estimate, applies Holder and maximum-modulus arguments, and combines moment bounds to obtain the stated abundance and zero-free conclusions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 552,
+          "line_start": 511,
+          "title": "Imported high-moment control reduced by Holder's inequality",
+          "unit_id": "openalex_w1608183925_d07",
+          "unit_type": "imported-moment-bound-and-inequality",
+          "why_material": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The provenance and reduction step are explicit; the moment powers, point constraints, and bound are OCR-damaged.",
+          "representation_dependency": "Reliable for the imported-result-to-Holder proof move, not for exact statement transcription without the scan and cited source.",
+          "unit_id": "openalex_w1608183925_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 509,
+            "line_start": 489,
+            "title": "Circular contour transfer for character-dependent points",
+            "unit_id": "openalex_w1608183925_d06",
+            "unit_type": "contour-transfer",
+            "why_material": "The proof selects a shrinking radius, integrates around a circle centered at one half, and says Theorem 3(iii) follows from Theorem 3(ii) once an additional radius condition is imposed."
+          },
+          {
+            "line_end": 603,
+            "line_start": 554,
+            "title": "Propagating pointwise moment control across small discs",
+            "unit_id": "openalex_w1608183925_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An imported high-moment estimate is reduced with Holder, propagated geometrically using maximum modulus, and combined with a lower-moment fact to obtain the stated Theorem 4 conclusions.",
+            "limit": "The imported theorem is not proved here, and OCR damage prevents exact recovery of powers, radii, and cardinality thresholds.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d07",
+              "openalex_w1608183925_d08",
+              "openalex_w1608183925_d09"
+            ],
+            "title": "Moment control propagated to zero-free conclusions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1608183925_d07",
+        "spontaneous": {
+          "unit_id": "openalex_w1608183925_d07",
+          "spontaneous_reading": "A powerful external high-moment theorem is specialized and compressed by Hölder's inequality into the aggregate estimate needed later. The source also records errata, making the imported result's provenance and fragility part of the proof burden."
+        },
+        "directed": {
+          "unit_id": "openalex_w1608183925_d07",
+          "source_grounded_mathematics": "Lemma 10 is identified as Theorem 5 of Ramachandra and concerns Dirichlet L-values at several character-dependent points under stated constraints. The author notes two typographical corrections to that source. Lemma 11 is then obtained by taking R=1 in the second part of Lemma 10 and applying Hölder's inequality.",
+          "conceptual_reading": "Specialization removes unused degrees of freedom from the imported multi-point estimate, and Hölder converts its moment information into a form compatible with the next stage of the argument.",
+          "representation_or_bridge": "The family of values is represented by a moment sum over characters; the parameter specialization and Hölder inequality form the bridge from the imported theorem to a single usable bound at chosen points.",
+          "boundary_or_failure": "Lemma 10 is imported rather than proved here, and its powers, point constraints, and resulting bound are OCR-damaged. The cited errata further rule out trusting the displayed statement without the scan and original source.",
+          "uncertainty": "Low for provenance and the R=1-plus-Hölder reduction; high for exact moment orders, hypotheses, and exponents."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1608183925_d07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span attributes Lemma 10 to Theorem 5 of Ramachandra, records two typographical corrections, and explicitly derives Lemma 11 by specializing a parameter in the second result and applying Holder's inequality.",
+          "The candidate correctly treats the imported theorem as unproved here and declines exact recovery of its powers, point constraints, and resulting bound."
+        ],
+        "inference": [
+          "Describing specialization followed by Holder as a reduction from an imported family estimate to the later usable estimate is source-grounded."
+        ],
+        "unsupported_or_imported": [
+          "The candidate says 'taking R=1,' but the source appears to set a subscripted R-parameter equal to 1; given OCR damage, collapsing that notation to an unqualified R changes a potentially material hypothesis.",
+          "Characterizing the exact imported statement as a particular high-moment order is not independently verifiable from the corrupted formulas."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the cited errata evidence of general fragility is rhetorical; their concrete significance is that the displayed imported statement must be checked against the scan and cited source."
+        ],
+        "context_or_ocr_risk": [
+          "Moment powers, parameter subscripts, point constraints, quantifiers, and exponents are OCR-damaged, and the cited theorem is not proved in the span."
+        ],
+        "missed_mechanism": [
+          "The specialization must preserve which member of the parameter family is fixed; this should not be normalized away when the subscript is uncertain."
+        ],
+        "revision_instructions": [
+          "Replace 'R=1' with 'a specified R-parameter is set to 1' unless the scan verifies the exact subscripted notation.",
+          "Keep the provenance, errata, specialization, and Holder step, but avoid naming exact moment orders or parameter semantics until the scan and cited source are checked."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem's abundance and zero-free targets are stated earlier at lines 368-386; this span captures the closing mechanism and prime-specific strengthening.",
+      "line_end": 625,
+      "line_start": 603,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The dependency structure is readable, but the exact powers, counts, and radii require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4(i) is said to follow by juxtaposing a lower second-moment fact with a higher-moment bound; for prime modulus a stronger lemma is imported and used to complete Theorem 4(ii).",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combining moment bounds to finish the zero-free abundance conclusions",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d09.txt",
+      "unit_bytes": 577,
+      "unit_id": "openalex_w1608183925_d09",
+      "unit_sha256": "8380024983ade824d8dbaf6e2dad98d7a3d681b875ec77553ab88f02d29e3f89",
+      "unit_type": "moment-comparison-conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d09.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 595,
+          "line_end": 602,
+          "text": "Siro <aq+ SLD.\nKAY hiAKG\nApplying Lemma 11 to the right-hand side, the resntt follows.\nFrom Lemma 12 and 13, we deduce\nLumma 14. For every x, let 4, be @ point in the diva |s-- 3-0 1 /logg.\nThen\nD(a, DIF < q(lozgy”.\nLEK\n",
+          "sha256": "d564daf5d542fe55a2c019684e7e8e3d182ac10693492457ea4c68a98ca9542a"
+        },
+        "after": {
+          "line_start": 626,
+          "line_end": 633,
+          "text": "\nReflorences\n\nfl] BR. Balasubramanian, A note on Hurwite’s solo funotion, Aun, Avad, Sel.\nFenn. Ser, AT, 4(1978-79), pp. 41-44,\n\n[2] PLD. TA. Eliott, On the distribution of the vulues of Dirichlet L-series in the\nhalf plane o > 4, Indag. Math. 33 (1071), pp. 292-284,\n",
+          "sha256": "5136be8b557c2b0cb1c52cdfa296b9f770c7e515db30063ed679ec07da94b0e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 626,
+            "line_start": 511,
+            "mathematical_role": "Imports a high-moment estimate, applies Holder and maximum-modulus arguments, and combines moment bounds to obtain the stated abundance and zero-free conclusions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 625,
+          "line_start": 603,
+          "title": "Combining moment bounds to finish the zero-free abundance conclusions",
+          "unit_id": "openalex_w1608183925_d09",
+          "unit_type": "moment-comparison-conclusion",
+          "why_material": "Theorem 4(i) is said to follow by juxtaposing a lower second-moment fact with a higher-moment bound; for prime modulus a stronger lemma is imported and used to complete Theorem 4(ii)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem's abundance and zero-free targets are stated earlier at lines 368-386; this span captures the closing mechanism and prime-specific strengthening.",
+          "representation_dependency": "The dependency structure is readable, but the exact powers, counts, and radii require scan verification.",
+          "unit_id": "openalex_w1608183925_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 603,
+            "line_start": 554,
+            "title": "Propagating pointwise moment control across small discs",
+            "unit_id": "openalex_w1608183925_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An imported high-moment estimate is reduced with Holder, propagated geometrically using maximum modulus, and combined with a lower-moment fact to obtain the stated Theorem 4 conclusions.",
+            "limit": "The imported theorem is not proved here, and OCR damage prevents exact recovery of powers, radii, and cardinality thresholds.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d07",
+              "openalex_w1608183925_d08",
+              "openalex_w1608183925_d09"
+            ],
+            "title": "Moment control propagated to zero-free conclusions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1608183925_d09",
+        "spontaneous": {
+          "unit_id": "openalex_w1608183925_d09",
+          "spontaneous_reading": "The conclusion comes from comparing moments rather than estimating each character separately: aggregate mass is set against a higher-moment cap to force abundance, while the prime-modulus case receives a stronger imported estimate that closes the second conclusion."
+        },
+        "directed": {
+          "unit_id": "openalex_w1608183925_d09",
+          "source_grounded_mathematics": "Theorem 4(i) is said to follow by combining a fact from Theorem 3(i) with the bound from Lemma 14. When the modulus is prime, Lemma 15 strengthens Lemma 14; it is deduced from a special case of a theorem in the appendix of Ramachandra, restated as Lemma 16, and this completes Theorem 4(ii).",
+          "conceptual_reading": "The moment comparison is an anti-concentration mechanism: a lower aggregate contribution together with an upper higher-moment bound limits how much mass a few exceptional characters can carry, yielding an abundance conclusion. The prime assumption unlocks a stronger version of that control.",
+          "representation_or_bridge": "Moment sums bridge analytic size information to a counting or abundance statement; Lemma 14 supplies the general bridge, while the imported prime-specific Lemmas 15-16 replace it when stronger control is available.",
+          "boundary_or_failure": "The exact moments, powers, counts, radii, and zero-free thresholds are OCR-unsafe, and the prime-specific theorem is imported without proof. The span supports the dependency mechanism but not an exact quantitative reconstruction.",
+          "uncertainty": "Low for the closing lemma dependencies and prime-specific strengthening; high for all numerical thresholds and for the precise formal deduction of abundance or zero-freeness."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1608183925_d09",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose explicitly says Theorem 4(i) follows from a fact attributed to Theorem 3(i) together with Lemma 14, and that for prime modulus Lemmas 15 and 16 provide a stronger imported route completing Theorem 4(ii).",
+          "The candidate correctly flags the prime-specific theorem as imported and the exact quantitative content as OCR-unsafe."
+        ],
+        "inference": [
+          "It is reasonable to describe the closing step generically as combining moment information and to say the prime hypothesis unlocks stronger control."
+        ],
+        "unsupported_or_imported": [
+          "The anti-concentration explanation asserting a lower second moment, an upper higher-moment cap, and forced abundance is not verifiable from this span because the displayed inequalities, powers, and even their exact directions are corrupted.",
+          "The exact abundance and zero-free targets are outside the unit span; their mechanism cannot be reconstructed from the dossier label or mathematical familiarity."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'moment sums bridge size to counting' formulation risks importing a standard moment-method proof in place of the unreadable argument actually present."
+        ],
+        "context_or_ocr_risk": [
+          "The moments, inequality directions, exponents, counts, disc radii, theorem targets, and prime-specific imported statement are not safely legible."
+        ],
+        "missed_mechanism": [
+          "The source-visible claim is only a dependency juxtaposition; verifying an anti-concentration or zero-free deduction requires the exact statements of Theorem 3(i), Lemma 14, and Theorem 4."
+        ],
+        "revision_instructions": [
+          "Restrict the conceptual reading to the explicit dependency chain: Theorem 3(i) plus Lemma 14 yields part (i), while the prime-specific Lemmas 15-16 yield part (ii).",
+          "Remove the lower-versus-higher-moment anti-concentration derivation unless the exact formulas and target theorem are verified from the scan within an authorized evidence packet."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d248ad10297517eaeefeca5a1b36906fbc8cf7b74c226f1bf1382b61600bf6c9"
+}

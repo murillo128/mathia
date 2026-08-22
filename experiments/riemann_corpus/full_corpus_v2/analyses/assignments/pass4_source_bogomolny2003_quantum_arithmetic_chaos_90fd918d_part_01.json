@@ -1,0 +1,2045 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_bogomolny2003_quantum_arithmetic_chaos_90fd918d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The free-space Green-function calculation supplies boundary prescription and normalization context before the trace identity.",
+      "line_end": 464,
+      "line_start": 286,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed formulas have extraction risk; conceptual chain is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces dependence on explicit eigenvalue formulas by a Green-function representation that becomes the general starting point for trace formulas.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        7,
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Density of states as the imaginary trace of the resolvent",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u03.txt",
+      "unit_bytes": 8363,
+      "unit_id": "bogomolny2003_u03",
+      "unit_sha256": "c86f09f2365325cd58ba1534a3cd2574d271bbada1f58d82ebb1802e0ce991a1",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u03.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 278,
+          "line_end": 285,
+          "text": "                                  8πk p.o. Lp               4\nLet us repeat the main steps which lead to this trace formula. One starts\nwith an explicit formula (like (3)) which expresses eigenvalues as a function\nof integers. Using the Poisson summation formula (5) the density of states (4)\nis transformed into a sum over periodic orbits. In Sect. 3 it will be demon-\nstrated that exactly this method can be applied for any integrable systems in\nthe semiclassical limit where eigenvalues can be approximated by the WKB\nformulas.\n",
+          "sha256": "5fe68ca7905f5d73def0947b862a61502c8a1d966b4a057819a5a85d1b902034"
+        },
+        "after": {
+          "line_start": 465,
+          "line_end": 472,
+          "text": "   For the above model of the rectangle with periodic boundary conditions\nthe exact Green function has to obey\n                ∂2    ∂2\n            (       +      + E)GE (x, y; x′ , y ′ ) = δ(x − x′ )δ(y − y ′ )   (18)\n                ∂x2   ∂y 2\nand the periodic boundary conditions\n\n                    GE (x + na, y + mb; x′ , y ′ ) = GE (x, y; x′ , y ′ )     (19)\n",
+          "sha256": "ee8ae230f533293cc108282ebf4c5ac8614f64b51b124c8b73835b759d730d39"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Plane Rectangular Billiard",
+            "line_end": 583,
+            "line_start": 124,
+            "mathematical_role": "Derives a trace formula by Poisson summation and independently by resolvent tracing plus group images, exposing convergence and smoothing requirements."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 464,
+          "line_start": 286,
+          "title": "Density of states as the imaginary trace of the resolvent",
+          "unit_id": "bogomolny2003_u03",
+          "unit_type": "representation-change",
+          "why_material": "Replaces dependence on explicit eigenvalue formulas by a Green-function representation that becomes the general starting point for trace formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The free-space Green-function calculation supplies boundary prescription and normalization context before the trace identity.",
+          "representation_dependency": "Several displayed formulas have extraction risk; conceptual chain is explicit in prose.",
+          "unit_id": "bogomolny2003_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 155,
+            "title": "Poisson summation turns quantum lattice labels into periodic orbits",
+            "unit_id": "bogomolny2003_u02",
+            "unit_type": "construction",
+            "why_material": "The rectangular billiard makes explicit how Fourier duality separates a smooth density term from oscillatory terms indexed by classical periodic-orbit lengths."
+          },
+          {
+            "line_end": 527,
+            "line_start": 465,
+            "title": "Quotient geometry implemented by summing Green-function images",
+            "unit_id": "bogomolny2003_u04",
+            "unit_type": "construction",
+            "why_material": "Shows that a fundamental-domain Green function is produced from the covering-space kernel by summing group images, with the identity image furnishing the local singularity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u03",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u03",
+          "spontaneous_reading": "The resolvent is the useful intermediate object: its diagonal imaginary trace recovers spectral density even when individual eigenvalues cannot be written down."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u03",
+          "source_grounded_mathematics": "The Green function is expanded spectrally as (E-En+iε)^{-1}; the retarded prescription selects the outgoing Hankel solution for free motion, and Im(E-En+iε)^{-1} converts its diagonal trace into d(E).",
+          "conceptual_reading": "Replacing a discrete list by an operator kernel makes boundary conditions, approximation, and geometric path expansions available while preserving the spectrum distributionally.",
+          "representation_or_bridge": "The bridge runs from the spectral resolution of the resolvent through a free-space Green kernel to the identity d(E)=-(1/π) Im ∫GE(x,x)dx.",
+          "boundary_or_failure": "The eigenfunction expansion and trace are formal unless domains and convergence are controlled; the free-kernel derivation alone does not solve a chaotic boundary problem.",
+          "uncertainty": "The prose fixes the chain, but several Hankel normalizations and small-distance formulas are text-layer sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source gives the spectral resolvent expansion with the retarded prescription, derives the free Hankel kernel, and obtains the density as minus the imaginary diagonal trace.",
+          "It explicitly calls the Green-function identity the starting point of all trace formulas and contrasts it with the unavailable explicit-eigenvalue route for chaotic systems."
+        ],
+        "inference": [
+          "Replacing a discrete eigenvalue list by an operator kernel exposes boundary conditions while retaining spectral density distributionally."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this unit makes geometric path expansions available imports a later semiclassical construction not present in the frozen span or bounded context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Hankel indices, small-distance cases, and normalization constants are visibly formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The conceptual sentence should stay with the demonstrated kernel, boundary-condition, and trace operations rather than anticipating a later path-sum representation."
+        ],
+        "revision_instructions": [
+          "Replace geometric path expansions with the source-bounded claim that the kernel representation permits boundary conditions and Green-function approximations to be imposed before taking the trace; leave the rest unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the comparison of two resolvent test functions that exposes zero multiplicities.",
+      "line_end": 1621,
+      "line_start": 1488,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Heavy displayed-equation dependence; exact identities require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the primitive-orbit product by logarithmic differentiation and matches its poles and zeros to spectral and smooth terms in the trace formula.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        27,
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg zeta packages the primitive-orbit spectrum",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u14.txt",
+      "unit_bytes": 6283,
+      "unit_id": "bogomolny2003_u14",
+      "unit_sha256": "2185649d327fa6f0b8ae379fbb2c97b405c0cd9e40f53309e5b327f8af69aae2",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u14.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1480,
+          "line_end": 1487,
+          "text": "\nAssume that ρ(l) = beal /l with certain constants a and b. Then from the\nabove limit it follows that a = b = 1 which demonstrates that the density of\nperiodic orbits for a discrete group increases exponentially with the length\n                                              el\n                                     ρ(l) =      .\n                                              l\n\n",
+          "sha256": "10903b8981cc3d5c706265759c1e98321937c63b412f300a534335f841210a3d"
+        },
+        "after": {
+          "line_start": 1622,
+          "line_end": 1629,
+          "text": "\n2.11 Zeros of the Selberg Zeta Function\n\nCombining all poles one concludes that the Selberg zeta function for a group\nwith only hyperbolic elements have two different sets of zero. The first consists\nof non-trivial zeros\n                               s = 1/2 ± ikn ,\ncoming from eigenvalues of the Laplace–Beltrami operator for automorphic\n",
+          "sha256": "4eb288e11876512a4bfbafc41702a1028e89f2b2eeedd8eabf4cf62b1be95abd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.9-2.12 Orbit density, Selberg zeta, zeros, functional equation",
+            "line_end": 1695,
+            "line_start": 1436,
+            "mathematical_role": "Uses the trace formula to count geodesics and connect a periodic-orbit product to spectral zeros and analytic continuation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1621,
+          "line_start": 1488,
+          "title": "Selberg zeta packages the primitive-orbit spectrum",
+          "unit_id": "bogomolny2003_u14",
+          "unit_type": "construction",
+          "why_material": "Transforms the primitive-orbit product by logarithmic differentiation and matches its poles and zeros to spectral and smooth terms in the trace formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the comparison of two resolvent test functions that exposes zero multiplicities.",
+          "representation_dependency": "Heavy displayed-equation dependence; exact identities require PDF verification.",
+          "unit_id": "bogomolny2003_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1486,
+            "line_start": 1436,
+            "title": "Trace formula forces exponential periodic-orbit proliferation",
+            "unit_id": "bogomolny2003_u13",
+            "unit_type": "asymptotic-consequence",
+            "why_material": "A heat-kernel test function converts the spectral zero mode into a large-time constraint that identifies orbit-density growth as e^l/l."
+          },
+          {
+            "line_end": 1693,
+            "line_start": 1623,
+            "title": "Selberg spectral zeros and functional equation",
+            "unit_id": "bogomolny2003_u15",
+            "unit_type": "equivalence",
+            "why_material": "Separates nontrivial Laplace-spectrum zeros from topology-controlled trivial zeros and obtains analytic continuation through the s to 1-s symmetry."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u14",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u14",
+          "spontaneous_reading": "The Selberg zeta product compresses all primitive geodesics and repetitions into one analytic object whose logarithmic derivative exposes additive orbit weights and spectral poles."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u14",
+          "source_grounded_mathematics": "Z(s) is defined formally as a product over primitive orbits and nonnegative m. Logarithmic differentiation expands it into repeated-orbit terms; inserting a difference of resolvent test functions in the trace formula relates Z'/Z to Laplace eigenvalues and smooth-term poles.",
+          "conceptual_reading": "A product representation converts primitive composition into analytic singularity data, while the logarithmic derivative linearizes multiplicative structure for comparison with a trace.",
+          "representation_or_bridge": "Primitive geodesic product ↔ repeated length sum ↔ resolvent trace poles is the operative three-way bridge.",
+          "boundary_or_failure": "The product is initially formal and convergent only in a half-plane; pole matching does not by itself provide the later analytic continuation without the trace identity's assumptions.",
+          "uncertainty": "The construction is clear, but equation extraction is too fragile for exact residues or multiplicities without PDF checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines the Selberg zeta as a formal primitive-orbit product, logarithmically differentiates it into a repetition sum, and compares a difference of resolvent test functions to spectral and smooth-term poles.",
+          "The candidate's primitive product to repeated lengths to resolvent poles bridge is source-grounded."
+        ],
+        "inference": [
+          "Pole matching alone not yet furnishing analytic continuation is a sound limitation of what this span proves."
+        ],
+        "unsupported_or_imported": [
+          "The statement that the product is convergent only in a half-plane is supplied only in the subsequent functional-equation unit, not in this frozen span or its bounded context; here the product is merely called formal."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Residues, multiplicities, and displayed identities are heavily extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the half-plane convergence claim with the source-bounded statement that the product is introduced formally and that this unit's logarithmic-derivative identity does not itself establish analytic continuation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contrast between the smooth phase-space volume and oscillatory family sum.",
+      "line_end": 1879,
+      "line_start": 1696,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense saddle prefactors are extraction-sensitive; selection mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Action quantization plus Poisson summation yields the Thomas-Fermi mean term, while saddle conditions select commensurable frequencies and hence continuous periodic-orbit families.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        30,
+        31,
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrable spectra arise from periodic-orbit families",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u16.txt",
+      "unit_bytes": 8638,
+      "unit_id": "bogomolny2003_u16",
+      "unit_sha256": "7c51df0827bcd188624a83e3b814d489bfe01cedb4601d16cb474f8ebaf921fd",
+      "unit_type": "semiclassical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u16.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1688,
+          "line_end": 1695,
+          "text": "                                               Z s−1/2\n                  ϕ(s) = exp µ(D)                             u tan πudu          .\n                                                   0\n\nTherefore if one knows the Selberg zeta function when Re s > 1 (32) gives its\ncontinuation to the mirror region Re s < 0.\n\n\n",
+          "sha256": "411ff0de91002d1afa253cd34314c4142b3cfb7e0c3439c4aea4ef7ec5b83c44"
+        },
+        "after": {
+          "line_start": 1880,
+          "line_end": 1887,
+          "text": "\n\n4 Trace Formula for Chaotic Systems\nTo compute the eigenvalue density for a chaotic system one has to start with\ngeneral expression (17)\n\n                                 1\n                                   Z\n",
+          "sha256": "d351f734189dd6b89662cd027d0f62a0d7acff00142e684e70349a4bb6e6484e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Trace Formulas for Integrable Dynamical Systems",
+            "line_end": 1881,
+            "line_start": 1696,
+            "mathematical_role": "Applies action quantization, Poisson summation, and saddle points to periodic-orbit families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1879,
+          "line_start": 1696,
+          "title": "Integrable spectra arise from periodic-orbit families",
+          "unit_id": "bogomolny2003_u16",
+          "unit_type": "semiclassical-construction",
+          "why_material": "Action quantization plus Poisson summation yields the Thomas-Fermi mean term, while saddle conditions select commensurable frequencies and hence continuous periodic-orbit families."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the contrast between the smooth phase-space volume and oscillatory family sum.",
+          "representation_dependency": "Dense saddle prefactors are extraction-sensitive; selection mechanism is explicit in prose.",
+          "unit_id": "bogomolny2003_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1693,
+            "line_start": 1623,
+            "title": "Selberg spectral zeros and functional equation",
+            "unit_id": "bogomolny2003_u15",
+            "unit_type": "equivalence",
+            "why_material": "Separates nontrivial Laplace-spectrum zeros from topology-controlled trivial zeros and obtains analytic continuation through the s to 1-s symmetry."
+          },
+          {
+            "line_end": 2001,
+            "line_start": 1882,
+            "title": "Classical trajectories build the semiclassical Green function",
+            "unit_id": "bogomolny2003_u17",
+            "unit_type": "semiclassical-construction",
+            "why_material": "The Hamilton-Jacobi phase and transport amplitude turn the resolvent into a sum over classical paths, setting up isolated-orbit tracing for chaotic systems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across a torus, hyperbolic quotient, generic integrable/chaotic system, and the Riemann zeta function, a smoothed spectral side is dual to classical or arithmetic primitive data, while exactness and orbit organization change with the regime.",
+            "limit": "This is a structural comparison, not evidence that Riemann zeros are eigenvalues of a known Hamiltonian; formula conventions differ and require PDF checking.",
+            "parent_local_unit_ids": [
+              "bogomolny2003_u02",
+              "bogomolny2003_u04",
+              "bogomolny2003_u12",
+              "bogomolny2003_u16",
+              "bogomolny2003_u18",
+              "bogomolny2003_u20"
+            ],
+            "title": "One dual architecture, four trace-formula regimes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u16",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u16",
+          "spontaneous_reading": "Action-angle coordinates turn integrability into a lattice problem; Poisson summation and stationary phase then sort that lattice into a smooth phase-volume term and oscillations from commensurable-frequency orbit families."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u16",
+          "source_grounded_mathematics": "Semiclassical action quantization makes E a function of integer quantum numbers. The zero Poisson mode gives the Thomas-Fermi phase-space density; for nonzero winding vector N, the saddle equations impose H(I)=E and ω proportional to N, selecting periodic tori with action 2πN·I.",
+          "conceptual_reading": "The representation exposes why integrable recurrence comes in continuous families: conserved actions reduce dynamics, and integer dual variables encode winding rather than isolated paths.",
+          "representation_or_bridge": "EBK/WKB quantization bridges the quantum-number lattice to action space; Poisson duality and saddle phase bridge winding vectors to classical periodic-orbit families.",
+          "boundary_or_failure": "The construction is semiclassical and assumes suitable nondegenerate stationary-phase data; it is not an exact generic trace formula and dense prefactors can fail at degeneracies.",
+          "uncertainty": "The selection mechanism is explicit, but Hessian, Maslov, and amplitude formulas are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span quantizes actions with integer labels and Maslov shifts, Poisson transforms the level density, obtains the Thomas-Fermi term from the zero mode, and uses saddle equations to select commensurable frequencies and periodic-orbit families.",
+          "The candidate correctly contrasts continuous integrable families with isolated chaotic orbits only at the level actually established here."
+        ],
+        "inference": [
+          "Integer dual variables as winding data and conserved actions as the reason recurrence forms families are grounded conceptual deductions."
+        ],
+        "unsupported_or_imported": [
+          "The label EBK/WKB in the bridge imports terminology not used in this frozen unit; the source calls the step semiclassical action quantization."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Hessian, Maslov, signature, and amplitude displays have extraction risk."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace EBK/WKB quantization with semiclassical action quantization; no other mathematical change is needed."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the action interpretation, current conservation, stability prefactor, and Maslov phase.",
+      "line_end": 2001,
+      "line_start": 1882,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prefactor formulas need PDF verification; conceptual construction is text-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Hamilton-Jacobi phase and transport amplitude turn the resolvent into a sum over classical paths, setting up isolated-orbit tracing for chaotic systems.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical trajectories build the semiclassical Green function",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u17.txt",
+      "unit_bytes": 5118,
+      "unit_id": "bogomolny2003_u17",
+      "unit_sha256": "8d841eaaaff339c9e2aa236deffb0c7566d0405deceb80a6fa300a43000c545b",
+      "unit_type": "semiclassical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u17.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1874,
+          "line_end": 1881,
+          "text": "                                 2π                         1\n                     PN =                           2                   .\n                                h̄Tp               h̄ |(Ni Qij Nj )|1/2\n\nThe summation over integer vectors N is equivalent to the summation over\nall classical periodic orbit families of the system.\n\n\n",
+          "sha256": "9ea35bb7a1d4f56e5e031162b8e5d9c07b3118a3dc77e16ed360dcfcfe88b690"
+        },
+        "after": {
+          "line_start": 2002,
+          "line_end": 2009,
+          "text": "\n<!-- source-page: 35 -->\n\nQuantum and Arithmetical Chaos    35\n\n4.2 Gutzwiller Trace Formula\n\nThe knowledge of the Green function permits the calculation of the density\n",
+          "sha256": "dfe83083e1d5966a8078d8fc96a5b3180c1755dd8e5c2f847d224a2ed52223ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Trace Formula for Chaotic Systems",
+            "line_end": 2187,
+            "line_start": 1882,
+            "mathematical_role": "Constructs the semiclassical Green function and derives isolated-periodic-orbit contributions controlled by monodromy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2001,
+          "line_start": 1882,
+          "title": "Classical trajectories build the semiclassical Green function",
+          "unit_id": "bogomolny2003_u17",
+          "unit_type": "semiclassical-construction",
+          "why_material": "The Hamilton-Jacobi phase and transport amplitude turn the resolvent into a sum over classical paths, setting up isolated-orbit tracing for chaotic systems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the action interpretation, current conservation, stability prefactor, and Maslov phase.",
+          "representation_dependency": "Prefactor formulas need PDF verification; conceptual construction is text-supported.",
+          "unit_id": "bogomolny2003_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1879,
+            "line_start": 1696,
+            "title": "Integrable spectra arise from periodic-orbit families",
+            "unit_id": "bogomolny2003_u16",
+            "unit_type": "semiclassical-construction",
+            "why_material": "Action quantization plus Poisson summation yields the Thomas-Fermi mean term, while saddle conditions select commensurable frequencies and hence continuous periodic-orbit families."
+          },
+          {
+            "line_end": 2182,
+            "line_start": 2007,
+            "title": "Gutzwiller trace formula selects isolated periodic saddles",
+            "unit_id": "bogomolny2003_u18",
+            "unit_type": "theorem-plus-derivation",
+            "why_material": "Tracing the semiclassical Green function makes stationary closed paths into periodic orbits and weights them by period, action, Maslov index, and monodromy stability."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u17",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u17",
+          "spontaneous_reading": "The semiclassical Green function separates each classical route into an action phase and a transport/stability amplitude, allowing an operator inverse to be approximated by a path sum."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u17",
+          "source_grounded_mathematics": "Substituting A exp(iS/ℏ) into the Schrödinger equation gives the Hamilton-Jacobi equation at leading order and current-conserving transport next. S is the action along a classical path, the prefactor uses transverse action derivatives, and a Maslov phase records semiclassical singularities.",
+          "conceptual_reading": "Quantum propagation is reframed through classical geometry: phase remembers accumulated action, amplitude remembers local focusing, and summation retains alternative trajectories.",
+          "representation_or_bridge": "Hamilton-Jacobi theory and the transport equation bridge the resolvent PDE to a sum over classical paths with stability and Maslov data.",
+          "boundary_or_failure": "This is an ℏ→0 approximation, breaks locally at caustics, and needs matching/phase conventions; it does not make the exact Green function available for a generic chaotic system.",
+          "uncertainty": "The conceptual construction is text-supported; the determinant prefactor requires PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The leading phase equation is Hamilton-Jacobi, the next equation is current-conserving transport, the action is integrated along classical trajectories, and the Green function sums trajectory phases, transverse stability amplitudes, and Maslov indices.",
+          "The span explicitly makes this an hbar-to-zero approximation for generic systems."
+        ],
+        "inference": [
+          "Phase as accumulated action, amplitude as focusing/stability information, and summation as retention of alternate routes are supported by the construction."
+        ],
+        "unsupported_or_imported": [
+          "The boundary claim specifically naming caustics and matching conventions imports standard semiclassical knowledge not stated in this span; the source only says the Maslov index counts points where the approximation cannot be applied."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The determinant prefactor is extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the caustic/matching clause with the source-bounded statement that the approximation fails at points recorded by the Maslov index and that the displayed prefactor needs convention/PDF verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates short local paths yielding the smooth term from long closed paths yielding oscillations.",
+      "line_end": 2182,
+      "line_start": 2007,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; determinant and phase conventions require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracing the semiclassical Green function makes stationary closed paths into periodic orbits and weights them by period, action, Maslov index, and monodromy stability.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        36,
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gutzwiller trace formula selects isolated periodic saddles",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u18.txt",
+      "unit_bytes": 7184,
+      "unit_id": "bogomolny2003_u18",
+      "unit_sha256": "a2173c9d0ecfc3a084c2033c05380f54f1719017150928539763534b38b4b8ec",
+      "unit_type": "theorem-plus-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u18.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1999,
+          "line_end": 2006,
+          "text": "connect points y and x. µ is the Maslov index which, roughly speaking, counts\nthe number of points along the trajectory where semiclassical approximation\ncannot be applied.\n\n<!-- source-page: 35 -->\n\nQuantum and Arithmetical Chaos    35\n\n",
+          "sha256": "17566c0843ace01fa647b48771022ac69618cc07b954185b92802f54d60437be"
+        },
+        "after": {
+          "line_start": 2183,
+          "line_end": 2190,
+          "text": "\n<!-- source-page: 38 -->\n\n38      Eugene Bogomolny\n\n5 Riemann Zeta Function\nThe trace-like formulas exist not only for dynamical systems but also for the\nRiemann zeta function (and others number-theoretical zeta functions as well).\n",
+          "sha256": "64a15118d9988fd5206233afe0598ad338462eedd4d7dcce29590149fac654e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Trace Formula for Chaotic Systems",
+            "line_end": 2187,
+            "line_start": 1882,
+            "mathematical_role": "Constructs the semiclassical Green function and derives isolated-periodic-orbit contributions controlled by monodromy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2182,
+          "line_start": 2007,
+          "title": "Gutzwiller trace formula selects isolated periodic saddles",
+          "unit_id": "bogomolny2003_u18",
+          "unit_type": "theorem-plus-derivation",
+          "why_material": "Tracing the semiclassical Green function makes stationary closed paths into periodic orbits and weights them by period, action, Maslov index, and monodromy stability."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Separates short local paths yielding the smooth term from long closed paths yielding oscillations.",
+          "representation_dependency": "High formula dependence; determinant and phase conventions require PDF checking.",
+          "unit_id": "bogomolny2003_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2001,
+            "line_start": 1882,
+            "title": "Classical trajectories build the semiclassical Green function",
+            "unit_id": "bogomolny2003_u17",
+            "unit_type": "semiclassical-construction",
+            "why_material": "The Hamilton-Jacobi phase and transport amplitude turn the resolvent into a sum over classical paths, setting up isolated-orbit tracing for chaotic systems."
+          },
+          {
+            "line_end": 2310,
+            "line_start": 2188,
+            "title": "Theta duality yields the Riemann functional equation",
+            "unit_id": "bogomolny2003_u19",
+            "unit_type": "analytic-continuation",
+            "why_material": "Uses Mellin transformation and Poisson summation to continue the completed zeta function, expose the s to 1-s symmetry, and locate trivial versus critical-strip zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across a torus, hyperbolic quotient, generic integrable/chaotic system, and the Riemann zeta function, a smoothed spectral side is dual to classical or arithmetic primitive data, while exactness and orbit organization change with the regime.",
+            "limit": "This is a structural comparison, not evidence that Riemann zeros are eigenvalues of a known Hamiltonian; formula conventions differ and require PDF checking.",
+            "parent_local_unit_ids": [
+              "bogomolny2003_u02",
+              "bogomolny2003_u04",
+              "bogomolny2003_u12",
+              "bogomolny2003_u16",
+              "bogomolny2003_u18",
+              "bogomolny2003_u20"
+            ],
+            "title": "One dual architecture, four trace-formula regimes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u18",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u18",
+          "spontaneous_reading": "Tracing the path-sum separates short local returns from long recurrent ones; stationary phase forces the latter to close in momentum as well as position, selecting isolated periodic orbits."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u18",
+          "source_grounded_mathematics": "Near the diagonal, short trajectories give the Thomas-Fermi mean density. Long paths are traced by saddle point: equal initial and final momentum identifies periodic orbits, transverse Gaussian integration introduces det(Mp^n-I)^{-1/2}, and period, action, Maslov index, and repetitions form the Gutzwiller oscillatory sum.",
+          "conceptual_reading": "The trace filters a huge path space down to recurrent stationary structures, while monodromy quantifies how much each unstable recurrence survives phase cancellation.",
+          "representation_or_bridge": "The semiclassical Green function, stationary phase, and monodromy matrix bridge local quantum density to isolated classical periodic-orbit data.",
+          "boundary_or_failure": "The derivation assumes isolated unstable periodic orbits and is semiclassical; convergence, bifurcations, stable families, and exact spectral reconstruction are not controlled.",
+          "uncertainty": "The local/periodic decomposition is clear, but determinant and phase conventions are highly formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "The trace separates short local trajectories giving the Thomas-Fermi term from long paths, and stationary phase requires coincident initial/final position and momentum, selecting periodic orbits.",
+          "The source derives the monodromy determinant weight and explicitly assumes all periodic orbits are unstable."
+        ],
+        "inference": [
+          "Interpreting the trace as a filter and monodromy as measuring survival of recurrent contributions under phase cancellation is grounded in the saddle calculation."
+        ],
+        "unsupported_or_imported": [
+          "The explicit list of bifurcations and stable families as failure modes is standard field knowledge but is absent from this frozen span and bounded context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Determinant and Maslov-phase conventions are highly formula-sensitive; no convergence proof is supplied."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Bound the failure statement to what the span establishes: semiclassical validity, the assumption of isolated unstable periodic orbits, extraction-sensitive conventions, and lack of convergence/exact-reconstruction control; remove the imported bifurcation/stable-family list."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the large-height density form and does not assume an actual Riemann Hamiltonian.",
+      "line_end": 2447,
+      "line_start": 2312,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence and text-layer risk; exact test-function normalization needs PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contour shifting and the logarithmic Euler-product derivative transform a smoothed sum over nontrivial zeros into gamma/smooth terms plus prime-power oscillations.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        41,
+        42
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil explicit formula makes primes the orbit-like dual of Riemann zeros",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u20.txt",
+      "unit_bytes": 6265,
+      "unit_id": "bogomolny2003_u20",
+      "unit_sha256": "52ac7ee21da7cb0d312f4de2968a82919da176cd64d788779323a8362850d6e8",
+      "unit_type": "explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u20.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2304,
+          "line_end": 2311,
+          "text": "<!-- source-page: 40 -->\n\n40       Eugene Bogomolny\n\nNumerical calculations confirms this conjecture for exceptionally large number\nof zeros (see e.g. [47] and the web site of Odlyzko [48]) but a mathematical\nproof is still absent.\n\n",
+          "sha256": "6f1e9a58a2477ef29da14dabf9942c3a28cd00e41f24c0763427a42a4b8649a5"
+        },
+        "after": {
+          "line_start": 2448,
+          "line_end": 2455,
+          "text": "\n5.3 Chaotic Systems and the Riemann Zeta Function\n\nBy comparing the above equations with the trace formulas of chaotic systems\none observes (see e.g. [38], [12], [13]) a remarkable correspondence between\ndifferent quantities in these trace formulas\n•    periodic orbits of chaotic systems ↔ primes,\n•    periodic orbit period Tp ↔ ln p,\n",
+          "sha256": "f675ba768c20597daef031d1deb5cf64bf6999d051d9ea89dea6410e5a4d1804"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Riemann Zeta Function",
+            "line_end": 2495,
+            "line_start": 2188,
+            "mathematical_role": "Derives the functional equation and Weil explicit formula and makes the primes/periodic-orbits trace analogy, including its sign caveat."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2447,
+          "line_start": 2312,
+          "title": "Weil explicit formula makes primes the orbit-like dual of Riemann zeros",
+          "unit_id": "bogomolny2003_u20",
+          "unit_type": "explicit-formula",
+          "why_material": "Contour shifting and the logarithmic Euler-product derivative transform a smoothed sum over nontrivial zeros into gamma/smooth terms plus prime-power oscillations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the large-height density form and does not assume an actual Riemann Hamiltonian.",
+          "representation_dependency": "High formula dependence and text-layer risk; exact test-function normalization needs PDF verification.",
+          "unit_id": "bogomolny2003_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2310,
+            "line_start": 2188,
+            "title": "Theta duality yields the Riemann functional equation",
+            "unit_id": "bogomolny2003_u19",
+            "unit_type": "analytic-continuation",
+            "why_material": "Uses Mellin transformation and Poisson summation to continue the completed zeta function, expose the s to 1-s symmetry, and locate trivial versus critical-strip zeros."
+          },
+          {
+            "line_end": 2493,
+            "line_start": 2449,
+            "title": "Prime/periodic-orbit dictionary and the sign obstruction",
+            "unit_id": "bogomolny2003_u21",
+            "unit_type": "analogy-with-limit",
+            "why_material": "Matches primes with primitive orbits and log primes with periods while preserving the opposite oscillatory sign, motivating an absorption-spectrum interpretation rather than claiming a conventional self-adjoint spectrum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across a torus, hyperbolic quotient, generic integrable/chaotic system, and the Riemann zeta function, a smoothed spectral side is dual to classical or arithmetic primitive data, while exactness and orbit organization change with the regime.",
+            "limit": "This is a structural comparison, not evidence that Riemann zeros are eigenvalues of a known Hamiltonian; formula conventions differ and require PDF checking.",
+            "parent_local_unit_ids": [
+              "bogomolny2003_u02",
+              "bogomolny2003_u04",
+              "bogomolny2003_u12",
+              "bogomolny2003_u16",
+              "bogomolny2003_u18",
+              "bogomolny2003_u20"
+            ],
+            "title": "One dual architecture, four trace-formula regimes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u20",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u20",
+          "spontaneous_reading": "The logarithmic derivative and a test function make zeros and prime powers two residue expansions of one contour integral, producing an exact smoothed duality before any spectral analogy is imposed."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u20",
+          "source_grounded_mathematics": "Contour integration of H(s)ζ'/ζ collects nontrivial-zero residues; the functional equation moves one contour and supplies gamma terms, while the Euler-product expansion of ζ'/ζ supplies ln p weighted at prime powers. Their combination is Weil's explicit formula; Stirling then gives a large-height mean plus a negative oscillatory prime sum.",
+          "conceptual_reading": "Smoothing and logarithmic differentiation compress global zero data into arithmetic primitive/repetition data, with archimedean gamma terms carrying the smooth background.",
+          "representation_or_bridge": "Residue calculus, Fourier-Mellin test functions, the functional equation, and the Euler product bridge zeros to prime powers in a trace-like architecture.",
+          "boundary_or_failure": "The exact identity requires the stated test-function conditions; the large-height physical density is asymptotic, and treating γn as real energy levels invokes RH and no known Hamiltonian.",
+          "uncertainty": "The structural formula is explicit, but normalization, gamma, and contour constants are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u20",
+        "critic_decision": "revise",
+        "supported": [
+          "The contour integral of H(s)zeta'(s)/zeta(s) collects zero residues, the functional equation transforms the opposite contour and supplies gamma terms, and the Euler-product logarithmic derivative supplies prime-power terms.",
+          "The span states the test-function hypotheses, gives the exact smoothed explicit formula, and makes the large-height physical trace formula conditional on treating real gamma_n under RH."
+        ],
+        "inference": [
+          "Archimedean gamma terms as smooth background and logarithmic differentiation as primitive/repetition compression are well supported conceptual readings."
+        ],
+        "unsupported_or_imported": [
+          "The claim that no Riemann Hamiltonian is known is true elsewhere in the source but is not present in this exact span or its bounded nearby context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Test-function normalization, contour constants, gamma terms, and the asymptotic density are extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Delete the no-known-Hamiltonian clause from this unit's boundary statement, retaining the source-supported RH condition and asymptotic limitation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the conjectural integrable/chaotic classification and its symmetry conditions.",
+      "line_end": 2771,
+      "line_start": 2597,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and standard formulas are readable; figure data are not needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines symmetry-indexed random-matrix ensembles, unfolds spectra to unit local density, and distinguishes level repulsion, form factors, and nearest-neighbor statistics from Poisson behavior.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        46,
+        47,
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unfolding separates local fluctuations from mean density",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u22.txt",
+      "unit_bytes": 8120,
+      "unit_id": "bogomolny2003_u22",
+      "unit_sha256": "3c67fef44a4adf3639a655e36c161275930fcf43ee4fd82b0ed61360b42a75ec",
+      "unit_type": "statistical-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u22.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2589,
+          "line_end": 2596,
+          "text": "     elliptic and parabolic elements are presented in two volumes of Hejhal’s\n     monumental work [39] which contains practically all known information\n     about the Selberg trace formula.\n•    In [38] one can find a mathematical discussion about different relations\n     between number-theoretical zeta functions and dynamical systems.\n\n<!-- source-page: 45 -->\n\n",
+          "sha256": "20a9b621ee9fe2564cb6983ef0503322fc496fed9e76428294bd85119d9b63f5"
+        },
+        "after": {
+          "line_start": 2772,
+          "line_end": 2779,
+          "text": "    The purpose of this Chapter is to investigate methods which permit to ob-\ntain spectral statistics analytically. For a large part of the Section we follow\n[25]. In Sect. 1 a formal expression is obtained which relates correlation func-\ntions with products of trace formulas. In Sect. 1.1 the simplest approximation\nto compute such products is discussed. It is called the diagonal approxima-\ntion and it consists of taking into account only terms with exactly the same\nactions. Unfortunately, for chaotic systems this approximation can be used,\nstrictly speaking, only for very small time estimated in Sect. 1.2. To under-\n",
+          "sha256": "7ec9c0ebc732c94aa04761889d2c7a685cb8f8eaac0ad5f2c4987310276b9452"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2 introduction: Statistical Distribution of Quantum Eigenvalues",
+            "line_end": 2789,
+            "line_start": 2597,
+            "mathematical_role": "Defines unfolding, ensemble symmetry classes, level repulsion, two-point correlations, and form factors."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2771,
+          "line_start": 2597,
+          "title": "Unfolding separates local fluctuations from mean density",
+          "unit_id": "bogomolny2003_u22",
+          "unit_type": "statistical-representation",
+          "why_material": "Defines symmetry-indexed random-matrix ensembles, unfolds spectra to unit local density, and distinguishes level repulsion, form factors, and nearest-neighbor statistics from Poisson behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the conjectural integrable/chaotic classification and its symmetry conditions.",
+          "representation_dependency": "Prose and standard formulas are readable; figure data are not needed.",
+          "unit_id": "bogomolny2003_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2493,
+            "line_start": 2449,
+            "title": "Prime/periodic-orbit dictionary and the sign obstruction",
+            "unit_id": "bogomolny2003_u21",
+            "unit_type": "analogy-with-limit",
+            "why_material": "Matches primes with primitive orbits and log primes with periods while preserving the opposite oscillatory sign, motivating an absorption-spectrum interpretation rather than claiming a conventional self-adjoint spectrum."
+          },
+          {
+            "line_end": 2914,
+            "line_start": 2790,
+            "title": "Energy smoothing turns one spectrum into a local ensemble",
+            "unit_id": "bogomolny2003_u23",
+            "unit_type": "definition-and-control",
+            "why_material": "Defines n-point correlations as smoothed products of densities and constrains the averaging window between quantum spacing and classical variation scales."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u22",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u22",
+          "spontaneous_reading": "Unfolding removes the smooth density scale so that local fluctuations can be compared across systems, after which symmetry rather than detailed dynamics selects the random-matrix benchmark."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u22",
+          "source_grounded_mathematics": "The unfolded levels en=∫^{En} d̄(E)dE have unit local mean density. GOE, GUE, and GSE are indexed by time-reversal and spin symmetry, with repulsion exponent β=1,2,4 and small-time form factor 2t/β; Poisson statistics instead model independent integrable levels.",
+          "conceptual_reading": "Unfolding deliberately forgets global density while preserving locally normalized spacing structure, enabling universality claims at a common scale.",
+          "representation_or_bridge": "Symmetry classes bridge Hamiltonians to matrix ensembles; two-point correlations, Fourier form factors, and nearest-neighbor laws provide complementary views of local spectral dependence.",
+          "boundary_or_failure": "The integrable/chaotic classification is presented as conjectural and numerically supported, requires a smooth reliable mean density, and needs qualifications for degeneracies or arithmetic exceptions.",
+          "uncertainty": "Standard statistical roles are clear; extracted display constants are not independently verified here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u22",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines unfolding to unit local mean density, assigns GOE/GUE/GSE by time-reversal and spin symmetry, and states beta=1,2,4 level repulsion and small-time form-factor slopes.",
+          "It contrasts Poisson independent-level statistics with the conjectural, numerically supported random-matrix description of chaotic spectra and notes the nondegeneracy condition for the self-correlation delta term."
+        ],
+        "inference": [
+          "Unfolding as forgetting global density scale while preserving normalized local spacing structure is the correct representation-level reading."
+        ],
+        "unsupported_or_imported": [
+          "Arithmetic exceptions are not mentioned in this unit or its bounded nearby context; that caveat is imported from an earlier, unassigned span of the source."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The standard formulas are readable, but constants remain display-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove arithmetic exceptions from the boundary statement; retain the source-supported conjectural status, need for a smooth mean density, and nondegeneracy qualification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Carries the trace-formula product setup through the action-difference term that needs approximation.",
+      "line_end": 2914,
+      "line_start": 2790,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout has gaps but the smoothing hierarchy and role are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines n-point correlations as smoothed products of densities and constrains the averaging window between quantum spacing and classical variation scales.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        49,
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Energy smoothing turns one spectrum into a local ensemble",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u23.txt",
+      "unit_bytes": 4083,
+      "unit_id": "bogomolny2003_u23",
+      "unit_sha256": "2afa08e5994bfcb366f54b157e1bedbd8a0389c6c2551d15f33ae5b64c9940d6",
+      "unit_type": "definition-and-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u23.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2782,
+          "line_end": 2789,
+          "text": "In Sect. 2 this goal is achieved for the Riemann zeta function. To obtain the\ninformation about correlations of prime pairs we use the Hardy–Littlewood\nconjecture which is reviewed in Sect. 2.1. The explicit form of the two-point\ncorrelation function for the Riemann zeros is obtained in Sec. 2.2. In Sect. 3 it\nis demonstrated that the obtained expression very well agrees with numerical\ncalculations of spectral statistics for Riemann zeros.\n\n\n",
+          "sha256": "bc39c7634809f359a849497bfb1008ea28f3a1dc6d6a57889592ef0320aa1f96"
+        },
+        "after": {
+          "line_start": 2915,
+          "line_end": 2922,
+          "text": "\n1.1 Diagonal Approximation\n\nBerry [11] proposed to estimate such sums in an approximation (called the\ndiagonal approximation) by taking into account only terms with exactly the\nsame actions having in mind that terms with different values of actions will\nbe small after the smoothing.\n    Let g be the mean multiplicity of periodic orbit actions. Then the con-\n",
+          "sha256": "834bcc0d500b5697e33b1104e0a8c0ac951b11180a3941a05b9082f21f53a2a4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Correlation Functions and diagonal approximation",
+            "line_end": 3122,
+            "line_start": 2790,
+            "mathematical_role": "Turns products of trace formulas into spectral correlations, derives the diagonal sum rule, and bounds its time of validity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2914,
+          "line_start": 2790,
+          "title": "Energy smoothing turns one spectrum into a local ensemble",
+          "unit_id": "bogomolny2003_u23",
+          "unit_type": "definition-and-control",
+          "why_material": "Defines n-point correlations as smoothed products of densities and constrains the averaging window between quantum spacing and classical variation scales."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Carries the trace-formula product setup through the action-difference term that needs approximation.",
+          "representation_dependency": "Formula layout has gaps but the smoothing hierarchy and role are explicit.",
+          "unit_id": "bogomolny2003_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2771,
+            "line_start": 2597,
+            "title": "Unfolding separates local fluctuations from mean density",
+            "unit_id": "bogomolny2003_u22",
+            "unit_type": "statistical-representation",
+            "why_material": "Defines symmetry-indexed random-matrix ensembles, unfolds spectra to unit local density, and distinguishes level repulsion, form factors, and nearest-neighbor statistics from Poisson behavior."
+          },
+          {
+            "line_end": 2993,
+            "line_start": 2916,
+            "title": "Diagonal orbit pairing reproduces only the short-time universal form factor",
+            "unit_id": "bogomolny2003_u24",
+            "unit_type": "approximation",
+            "why_material": "Keeps equal-action pairs, applies the Hannay-Ozorio sum rule, and recovers the symmetry-dependent small-time random-matrix slope before conflicting with long-time saturation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u23",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u23",
+          "spontaneous_reading": "Energy smoothing converts one deterministic spectrum into a local ensemble only when its window averages many quantum spacings yet is too narrow to change the underlying classical dynamics."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u23",
+          "source_grounded_mathematics": "n-point correlations are smoothed products of spectral densities with a normalized kernel of width ΔE satisfying ΔEq≪ΔE≪ΔEcl≪E. Substituting the periodic-orbit trace formula into R2 suppresses action sums and leaves averaged phase factors involving action differences.",
+          "conceptual_reading": "The scale hierarchy defines what smoothing preserves: local statistical regularity is exposed while rapid quantum phases are averaged and slow classical structure is held fixed.",
+          "representation_or_bridge": "Products of trace formulas bridge orbit data to spectral correlations; ∂S/∂E=T converts small energy shifts into period-dependent phases.",
+          "boundary_or_failure": "The bridge depends on scale separation and on the smoothing assumption; unequal-action averages are identified as the hard unresolved term rather than computed.",
+          "uncertainty": "The control hierarchy is explicit, while gaps in extracted formulas limit coefficient-level interpretation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u23",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines n-point correlations as energy-smoothed products of densities and requires Delta_Eq much less than Delta_E much less than Delta_Ecl much less than E.",
+          "After inserting the trace formula it says terms containing the sum of actions are washed out, expands actions using dS/dE=T, and identifies averaged action-difference phases as the difficult term."
+        ],
+        "inference": [
+          "The hierarchy as preservation of slow classical structure while averaging rapid quantum variation is a sound interpretation of the stated scales."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The phrase suppresses action sums is materially ambiguous: the source suppresses terms with sums of actions, not the periodic-orbit summations themselves."
+        ],
+        "context_or_ocr_risk": [
+          "Formula layout gaps limit coefficient-level interpretation but do not obscure the scale hierarchy or action-difference problem."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change suppresses action sums to washes out phase terms containing sums of actions; keep the remaining analysis unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the derived formula to preserve what the numerical comparison actually tests; plot pixels are not model-visible evidence here.",
+      "line_end": 3704,
+      "line_start": 3549,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose report is clear; numeric plot labels are partially extraction-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite-height diagonal plus off-diagonal formula is compared with a large numerical zero sample, and the residual after the arithmetic correction is reported as consistent with statistical error.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-height arithmetic corrections explain Odlyzko residual structure",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u30.txt",
+      "unit_bytes": 6963,
+      "unit_id": "bogomolny2003_u30",
+      "unit_sha256": "a34088828b886cea60cbd1732a1c610be7aa459d8adddc466c89dedf54c676ed",
+      "unit_type": "empirical-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u30.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3541,
+          "line_end": 3548,
+          "text": "Quantum and Arithmetical Chaos     61\n\n                               X                  ∞ X\n                                                  X\n                                        f (p) =             f (kδ)µ(δ)\n                            (p,q)=1               k=1 δ|q\n\n\n",
+          "sha256": "edc4356545fddc4fdf6f05abcc1be227a2384ecb96a513e55ba931b3f902295f"
+        },
+        "after": {
+          "line_start": 3705,
+          "line_end": 3712,
+          "text": "\n<!-- source-page: 64 -->\n\n64     Eugene Bogomolny\n                              0.004\n\n\n\n",
+          "sha256": "fa013e376ba66679b4d348b98e52164d35412e817db1a25bc509716e0204d577"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Beyond the Diagonal Approximation and Hardy-Littlewood input",
+            "line_end": 3576,
+            "line_start": 3123,
+            "mathematical_role": "Reduces off-diagonal Riemann-zero correlations to prime-pair averages and evaluates them heuristically through singular series."
+          },
+          {
+            "label": "3 Correlation summary and numerical comparison",
+            "line_end": 3885,
+            "line_start": 3577,
+            "mathematical_role": "Collects the finite-height formulas and reports Odlyzko comparison, with many plot-only extraction lines."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3704,
+          "line_start": 3549,
+          "title": "Finite-height arithmetic corrections explain Odlyzko residual structure",
+          "unit_id": "bogomolny2003_u30",
+          "unit_type": "empirical-check",
+          "why_material": "The finite-height diagonal plus off-diagonal formula is compared with a large numerical zero sample, and the residual after the arithmetic correction is reported as consistent with statistical error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the derived formula to preserve what the numerical comparison actually tests; plot pixels are not model-visible evidence here.",
+          "representation_dependency": "Prose report is clear; numeric plot labels are partially extraction-dependent.",
+          "unit_id": "bogomolny2003_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3574,
+            "line_start": 3504,
+            "title": "Prime-pair input supplies the missing oscillatory GUE correlation",
+            "unit_id": "bogomolny2003_u29",
+            "unit_type": "derived-prediction",
+            "why_material": "Substituting the Hardy-Littlewood series into the off-diagonal trace product yields an arithmetic correction whose small-separation limit exactly matches the oscillating GUE two-point term."
+          },
+          {
+            "line_end": 3990,
+            "line_start": 3886,
+            "title": "Classical chaos can coexist with Poisson spectra through exact orbit-length degeneracy",
+            "unit_id": "bogomolny2003_u31",
+            "unit_type": "paradox-and-mechanism",
+            "why_material": "Poses arithmetic hyperbolic surfaces as a counterexample to generic chaos-to-RMT expectations and identifies coherent interference among exponentially many equal-length orbits as the mechanism."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u30",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u30",
+          "spontaneous_reading": "Finite-height arithmetic factors are not merely asymptotically negligible decoration: subtracting them removes visible residual structure from a large numerical zero sample, leaving deviations reported to match sampling noise."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u30",
+          "source_grounded_mathematics": "The unit collects diagonal and off-diagonal finite-height formulas, unfolds by the local mean density, and compares the result with Odlyzko data near a very high zero. The text reports that residuals from the arithmetic formula are structureless and their histogram is practically the statistical-error distribution, whereas comparison with the universal GUE curve retains finite-height structure.",
+          "conceptual_reading": "The universal limit and source-specific corrections play different empirical roles. Arithmetic Euler factors refine the asymptotic random-matrix template into a finite-height prediction whose value can be tested in residual space.",
+          "representation_or_bridge": "Unfolding bridges energy-dependent zero density to a stationary comparison scale; residual plots bridge the analytic correction formula to observable finite-sample structure.",
+          "boundary_or_failure": "The evidence is a reported numerical comparison, not proof of the conjectural derivation. Plot pixels and detailed numerical labels are not reliably available in the extracted text, and the source places exact in scare quotes.",
+          "uncertainty": "The qualitative residual claim is clear; precise plot-based effect sizes cannot be recovered safely from this artifact."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u30",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately reports the finite-height diagonal-plus-off-diagonal formula, unfolding by local mean density, the Odlyzko sample comparison, and the text's claim that residuals from the quoted 'exact' formula are structureless and match statistical error.",
+          "It properly treats this as reported numerical evidence rather than proof and notes that plot-level effect sizes are unavailable."
+        ],
+        "inference": [
+          "Interpreting the arithmetic factors as source-specific finite-height corrections to the universal limit is a reasonable synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis says that comparison with the universal GUE curve retains finite-height structure. The frozen span only says that differences from GUE are plotted in figures outside the unit; it does not textually characterize those inaccessible plots as structured."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The relevant Figures 12-17 are outside the exact artifact, and the source itself places 'exact' in scare quotes."
+        ],
+        "missed_mechanism": [
+          "The candidate should more sharply separate the text-supported claim about residuals from the arithmetic formula from any visual inference about the GUE residual plots."
+        ],
+        "revision_instructions": [
+          "Delete the clause asserting that GUE residuals retain finite-height structure. Retain only the source-reported structureless residual and statistical-error comparison for the arithmetic formula, with the existing report-only and plot-access limitations."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span is a conceptual definition and roadmap, not a complete formal classification.",
+      "line_end": 4093,
+      "line_start": 4050,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizes beyond 2x2 integral matrices by requiring a multiplicative higher-dimensional integral representation and closes the class under finite-index commensurability.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        71
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic groups as groups with integral representations up to commensurability",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u33.txt",
+      "unit_bytes": 2331,
+      "unit_id": "bogomolny2003_u33",
+      "unit_sha256": "ffed62f44f249559ef72964120107244884f476a242a4d5e991c368a736e4314",
+      "unit_type": "abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u33.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4042,
+          "line_end": 4049,
+          "text": "\n                                             el/2\n                                hg(l)i = 2\n                                               l\nwhich demonstrates that periodic orbit lengths for the modular group are\nexponentially degenerated.\n\n\n",
+          "sha256": "8627f667b1580a6dda87ad1d2b5ce0d0e35772a36bef942f1c29759ab06e870a"
+        },
+        "after": {
+          "line_start": 4094,
+          "line_end": 4101,
+          "text": "\n2.1 Algebraic Fields\n\nEverybody is familiar with usual rational numbers\n                                              p\n                                      u=\n                                              q\nwith integer p and q. Their important properties are (i) that the sum and\n",
+          "sha256": "4b9c0af7f0a6e9831f41b26e3c3ca74fc2c99aa49f033c2cf2299a2f3258c721"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Arithmetic Groups and 2.1 Algebraic Fields",
+            "line_end": 4222,
+            "line_start": 4050,
+            "mathematical_role": "Defines arithmeticity through integral representations and supplies algebraic fields, integers, embeddings, and regular representations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4093,
+          "line_start": 4050,
+          "title": "Arithmetic groups as groups with integral representations up to commensurability",
+          "unit_id": "bogomolny2003_u33",
+          "unit_type": "abstraction",
+          "why_material": "Generalizes beyond 2x2 integral matrices by requiring a multiplicative higher-dimensional integral representation and closes the class under finite-index commensurability."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span is a conceptual definition and roadmap, not a complete formal classification.",
+          "representation_dependency": "Prose-dominant.",
+          "unit_id": "bogomolny2003_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4047,
+            "line_start": 3993,
+            "title": "Integral modular traces imply exponential length multiplicity",
+            "unit_id": "bogomolny2003_u32",
+            "unit_type": "counting-argument",
+            "why_material": "Compares only e^(L/2) possible integral trace values with e^L/L periodic orbits to derive mean degeneracy proportional to e^(L/2)/L."
+          },
+          {
+            "line_end": 4221,
+            "line_start": 4095,
+            "title": "Algebraic integers act by integral matrices across embeddings",
+            "unit_id": "bogomolny2003_u34",
+            "unit_type": "representation-change",
+            "why_material": "Shows how finite field extensions, their integral bases, and conjugate embeddings support faithful multiplication representations with integer matrices."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u33",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u33",
+          "spontaneous_reading": "Arithmeticity is broadened from literally integral 2 by 2 matrices to groups whose multiplication can be faithfully encoded by higher-dimensional integral matrices, with finite-index commensurability preserving the classification."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u33",
+          "source_grounded_mathematics": "The unit requires an assignment g to M(g) with integer matrix entries, M(ab)=M(a)M(b), and M(1)=1. It then defines finite-index subgroups and commensurable groups, calling groups with such an integral representation and groups commensurable with them arithmetic.",
+          "conceptual_reading": "The abstraction identifies integral representability, rather than the surface size of the original matrices, as the structure responsible for arithmetic restrictions. Commensurability removes presentation-dependent finite discrepancies.",
+          "representation_or_bridge": "A higher-dimensional integral representation bridges nonintegral-looking 2 by 2 groups to lattice-preserving multiplication; finite-index overlap bridges equivalent arithmetic presentations.",
+          "boundary_or_failure": "This is an informal definition and roadmap, not a complete formal classification or proof that every claimed group arises from a division quaternion algebra.",
+          "uncertainty": "The conceptual content is prose-dominant and clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u33",
+        "critic_decision": "revise",
+        "supported": [
+          "The directed analysis accurately records an integer-matrix assignment satisfying M(ab)=M(a)M(b) and M(1)=1, followed by the finite-index and commensurability definitions.",
+          "It correctly identifies higher-dimensional integral representation, rather than literal 2 by 2 integrality, as the abstraction used by the lecture."
+        ],
+        "inference": [
+          "Reading commensurability as removing finite-index presentation differences is a defensible interpretation of the definition."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the encoding faithful, but the frozen span does not state injectivity or a trivial kernel for the representation."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The span is an informal definition and roadmap, not a formal classification theorem."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'faithfully encoded' with 'encoded by a multiplicative higher-dimensional integral-matrix representation' and do not imply injectivity unless an exact supporting statement is added."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The quadratic-field example illustrates the regular representation and the role of the integral basis.",
+      "line_end": 4221,
+      "line_start": 4095,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several radicals are mistranscribed; use at conceptual level unless checked against PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how finite field extensions, their integral bases, and conjugate embeddings support faithful multiplication representations with integer matrices.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        72,
+        73
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Algebraic integers act by integral matrices across embeddings",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u34.txt",
+      "unit_bytes": 6178,
+      "unit_id": "bogomolny2003_u34",
+      "unit_sha256": "772df01d60acf2d215e28eda0bc93cea74660892b87d9555f8f7f6a952661162",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u34.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4087,
+          "line_end": 4094,
+          "text": "\nQuantum and Arithmetical Chaos        71\n\nthat a given group will be an arithmetic group is presented. Using these con-\nditions in Sect. 2.4 it is proved that periodic orbit lengths for all arithmetic\ngroups have the same exponential degeneracy (up to a constant factor) as for\nthe modular group.\n\n",
+          "sha256": "de7801a04ca01babbdcd12946845155da08a51573cdbde3d95f82ac0a310d281"
+        },
+        "after": {
+          "line_start": 4222,
+          "line_end": 4229,
+          "text": "\n2.2 Quaternion Algebras\n\nAlgebras are more general objects then fields. A (vector) algebra of finite\ndimension d is defined as formal sum\n\n                         γ = x1 i2 + x2 i2 + . . . + xd id .\n\n",
+          "sha256": "c46d778d8f907d84621bb8c4362b3573306ec84851b8475312b7fa668589c43b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Arithmetic Groups and 2.1 Algebraic Fields",
+            "line_end": 4222,
+            "line_start": 4050,
+            "mathematical_role": "Defines arithmeticity through integral representations and supplies algebraic fields, integers, embeddings, and regular representations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4221,
+          "line_start": 4095,
+          "title": "Algebraic integers act by integral matrices across embeddings",
+          "unit_id": "bogomolny2003_u34",
+          "unit_type": "representation-change",
+          "why_material": "Shows how finite field extensions, their integral bases, and conjugate embeddings support faithful multiplication representations with integer matrices."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The quadratic-field example illustrates the regular representation and the role of the integral basis.",
+          "representation_dependency": "Several radicals are mistranscribed; use at conceptual level unless checked against PDF.",
+          "unit_id": "bogomolny2003_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4093,
+            "line_start": 4050,
+            "title": "Arithmetic groups as groups with integral representations up to commensurability",
+            "unit_id": "bogomolny2003_u33",
+            "unit_type": "abstraction",
+            "why_material": "Generalizes beyond 2x2 integral matrices by requiring a multiplicative higher-dimensional integral representation and closes the class under finite-index commensurability."
+          },
+          {
+            "line_end": 4435,
+            "line_start": 4223,
+            "title": "Division quaternion algebras generate compact arithmetic groups",
+            "unit_id": "bogomolny2003_u35",
+            "unit_type": "construction",
+            "why_material": "Connects norm/determinant multiplicativity, the absence of zero-norm field solutions, algebra orders, and unit-norm elements into discrete integral matrix groups."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u34",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u34",
+          "spontaneous_reading": "An integral basis turns multiplication by an algebraic integer into an integer matrix. Embeddings then provide simultaneous alternative coordinates, making arithmetic elements both linearly representable and testable through their conjugates."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u34",
+          "source_grounded_mathematics": "A finite extension Q(alpha) has a basis of powers reduced by the defining polynomial; its algebraic integers form a free Z-module with an integral basis. Each root of the defining polynomial gives an embedding. Because products of algebraic integers remain integral, multiplication acts Z-linearly on the integral basis and hence has an integer matrix representation; a quadratic example illustrates the construction.",
+          "conceptual_reading": "The representation change converts nonlinear-looking algebraic multiplication into lattice-preserving linear action. Embeddings retain the algebraic relations while exposing conjugate sizes that later control discreteness.",
+          "representation_or_bridge": "The integral basis is the bridge from field arithmetic to integer matrices, and the family of embeddings bridges one algebraic element to all of its conjugate real or complex realizations.",
+          "boundary_or_failure": "The quadratic example is illustrative rather than a general derivation of integral bases. Several extracted radicals and matrix entries are visibly corrupted, so exact example formulas must not be reused unchecked.",
+          "uncertainty": "High confidence in the regular-representation mechanism; low confidence in the literal radical formulas from the text layer."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u34",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly describes reduction to a power basis, algebraic integers as a free integer module, embeddings obtained by substituting conjugate roots, and multiplication as an integer-matrix action on an integral basis.",
+          "It appropriately refuses to reuse the visibly corrupted radicals and matrix entries literally."
+        ],
+        "inference": [
+          "The integral basis as a bridge from field multiplication to lattice-preserving linear action is a concrete non-paraphrase operation supported by the span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that conjugate sizes 'later control discreteness' is a forward conclusion not established by this unit's exact span or bounded nearby context."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase 'testable through their conjugates' is vague unless tied to the explicit operation of applying each root-substitution embedding."
+        ],
+        "context_or_ocr_risk": [
+          "Several radicals and example matrix entries are visibly mistranscribed, so only the prose-level representation mechanism is dependable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the forward claim about conjugate sizes controlling discreteness. If retaining the conjugate viewpoint, state only that each defining-polynomial root induces an embedding preserving field relations, as shown in the span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between a split matrix algebra and a genuine division algebra plus the modular congruence obstruction example.",
+      "line_end": 4435,
+      "line_start": 4223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula and radical dependence; exact algebra presentations require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects norm/determinant multiplicativity, the absence of zero-norm field solutions, algebra orders, and unit-norm elements into discrete integral matrix groups.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        74,
+        75,
+        76,
+        77
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Division quaternion algebras generate compact arithmetic groups",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u35.txt",
+      "unit_bytes": 10297,
+      "unit_id": "bogomolny2003_u35",
+      "unit_sha256": "e504a5a2aa892f0275dbbf2135d8b7df9a27ccf5493dc9bc102c4700299e12e7",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u35.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4215,
+          "line_end": 4222,
+          "text": "    When d ≡ 1 (mod 4) the integers have the form (62) and one can check\nthat the matrix representation can be chosen as follows\n                                     \u0012              \u0013\n                                         m      n\n                           M (ω) = d−1                 .\n                                         4 n m+n\n\n\n",
+          "sha256": "84f33733b0beaff8735840a7382b68b8f969f8eba0d9f27e81a8c385b8e1c171"
+        },
+        "after": {
+          "line_start": 4436,
+          "line_end": 4443,
+          "text": "\nExample\n\nAs x2 (mod 5) takes only values 0, 1, 4 the equation\n\n                                x2 ≡ 3 (mod 5)\n\nhas no integer solution. Hence the pair (3,5) defines a division algebra over lQ.\n",
+          "sha256": "eee30309be6ca6e610c6706d6f56a799e0949dc6765f7ffad22444872e070e51"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2 Quaternion Algebras",
+            "line_end": 4487,
+            "line_start": 4223,
+            "mathematical_role": "Constructs division quaternion algebras, orders, and unit-norm arithmetic groups."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4435,
+          "line_start": 4223,
+          "title": "Division quaternion algebras generate compact arithmetic groups",
+          "unit_id": "bogomolny2003_u35",
+          "unit_type": "construction",
+          "why_material": "Connects norm/determinant multiplicativity, the absence of zero-norm field solutions, algebra orders, and unit-norm elements into discrete integral matrix groups."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the distinction between a split matrix algebra and a genuine division algebra plus the modular congruence obstruction example.",
+          "representation_dependency": "High formula and radical dependence; exact algebra presentations require PDF verification.",
+          "unit_id": "bogomolny2003_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4221,
+            "line_start": 4095,
+            "title": "Algebraic integers act by integral matrices across embeddings",
+            "unit_id": "bogomolny2003_u34",
+            "unit_type": "representation-change",
+            "why_material": "Shows how finite field extensions, their integral bases, and conjugate embeddings support faithful multiplication representations with integer matrices."
+          },
+          {
+            "line_end": 4548,
+            "line_start": 4488,
+            "title": "Bounded nonidentity embeddings enforce arithmetic discreteness",
+            "unit_id": "bogomolny2003_u36",
+            "unit_type": "criterion",
+            "why_material": "Explains why algebraic integers alone are nondiscrete and states Takeuchi's criterion: traces lie in a totally real field while every relevant nontrivial embedding stays bounded by two."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u35",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u35",
+          "spontaneous_reading": "The construction hinges on a falsifiable obstruction: if the quaternion norm has a nonzero field zero, the algebra splits into ordinary matrices; if a congruence obstruction rules out every nonzero zero, division survives, and an order supplies an integral lattice whose norm-one units form an arithmetic group."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u35",
+          "source_grounded_mathematics": "A quaternion algebra over a field is represented by 2 by 2 matrices with determinant equal to its multiplicative norm. A nonzero solution of the zero-norm equation makes this presentation conjugate to the split algebra M(2,F). Over Q, choosing prime b and a quadratic nonresidue a modulo b rules out nonzero rational zero-norm solutions by descent modulo b. Orders are full integral modules, and determinant-one elements of an order form discretely represented arithmetic groups.",
+          "conceptual_reading": "Division versus splitting is the decisive branch: the same norm representation either collapses to ordinary matrices or produces a compact arithmetic construction. A local modular obstruction certifies a global algebraic inverse property.",
+          "representation_or_bridge": "Norm equals determinant bridges quaternion multiplication to matrix algebra; reduction modulo b bridges quadratic nonresiduosity to absence of rational zero divisors; an order bridges field coefficients to an integral matrix representation.",
+          "boundary_or_failure": "The construction is formula-dense and its final discreteness and finite-domain claims rely on cited theory. The displayed algebra presentations and radicals are unsafe for exact reuse without the PDF.",
+          "uncertainty": "The structural chain is explicit, but exact signs, bases, and matrices carry high extraction risk."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u35",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly tracks norm equals determinant, the zero-norm split criterion, the quadratic-nonresidue congruence obstruction over the rationals, orders as full integral modules, and determinant-one units as arithmetic groups.",
+          "It preserves the formula risk and notes that discreteness and finite-fundamental-domain conclusions are cited rather than proved in full."
+        ],
+        "inference": [
+          "Describing the congruence obstruction as a local certificate excluding global rational zero divisors is supported by the descent argument."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual reading says the division branch produces a compact arithmetic construction. This exact span concludes only that the resulting groups are discrete arithmetic groups with finite fundamental domain; compactness is not stated here and does not follow merely from finite area."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The matrix presentations, radicals, signs, and bases are highly extraction-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'compact arithmetic construction' with the exact supported conclusion 'discrete arithmetic group with finite fundamental domain,' leaving any compactness claim to a span that states it explicitly."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The key boundary is lambda=1/2: only at that arithmetic rate does the diagonal form factor reach order one within its validity window; the numerical fits are explicitly tentative.",
+      "line_end": 5661,
+      "line_start": 5372,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Combines formula-sensitive correspondence kernels and scaling estimates; exact formulas and fitted coefficients require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Links Hecke eigenvalues to Fourier coefficients and trace formulas, states Jacquet-Langlands spectral transfer, then shows non-arithmetic triangles can have subcritical exponential length degeneracy without leaving GOE statistics.",
+      "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+      "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+      "source_page_markers_inside_unit": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic spectral transfer and the non-arithmetic degeneracy threshold",
+      "unit_artifact_relpath": "depth/units/bogomolny2003_u44.txt",
+      "unit_bytes": 12255,
+      "unit_id": "bogomolny2003_u44",
+      "unit_sha256": "dcc3268f2b83f7d39347b5956b51bb67e2ccde7c253ede529603d0d022dbbb0f",
+      "unit_type": "spectral-transfer-and-boundary-case",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u44.txt",
+      "source": {
+        "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+        "title": "Quantum and Arithmetical Chaos",
+        "authors": [
+          "Eugene Bogomolny"
+        ],
+        "year": 2003,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "spectral-physics",
+          "zero-statistics-random-matrix",
+          "trace-formula",
+          "selberg"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5364,
+          "line_end": 5371,
+          "text": "mute with the Laplace–Beltrami operator. Consequently, if Ψ (x, y) is an eigen-\nfunction of the Laplace–Beltrami operator, then (Tp Ψ )(x, y) will also be an\neigenfunction with the same eigenvalue. If there is no spectral degeneracy\n(which strongly suggested by numerics) every eigenfunction of the Laplace–\nBeltrami operator is in the same time an eigenfunction of all Hecke operators\n\n                        (Tp Ψn )(x, y) = λp (n)Ψn (x, y) .                     (89)\n\n",
+          "sha256": "a6174e43949c3d691974cfa07731e130b7588fcec856db9f98d2b42b02ac3fa6"
+        },
+        "after": {
+          "line_start": 5662,
+          "line_end": 5669,
+          "text": "\n\n8 Summary\nArithmetic groups are a special sub-class of discrete groups characterized by\nthe existence of a representation by matrices with integer elements. A readable\n\n<!-- source-page: 99 -->\n\n",
+          "sha256": "fc4b0478979abdd05d4a7b320119710ea353a1fb6fda9d4f248a2d8ba4e4fbac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+        "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Hecke operators",
+            "line_end": 5435,
+            "line_start": 5223,
+            "mathematical_role": "Constructs a commuting arithmetic operator algebra and links its eigenvalues, Fourier coefficients, and trace formulas."
+          },
+          {
+            "label": "6 Jacquet-Langlands Correspondence",
+            "line_end": 5501,
+            "line_start": 5436,
+            "mathematical_role": "States an integral-kernel transfer of compact quaternionic spectra into congruence-subgroup spectra."
+          },
+          {
+            "label": "7 Non-arithmetic Triangles",
+            "line_end": 5663,
+            "line_start": 5502,
+            "mathematical_role": "Uses numerical counterexamples and a degeneracy-exponent threshold to delimit the arithmetic explanation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5661,
+          "line_start": 5372,
+          "title": "Arithmetic spectral transfer and the non-arithmetic degeneracy threshold",
+          "unit_id": "bogomolny2003_u44",
+          "unit_type": "spectral-transfer-and-boundary-case",
+          "why_material": "Links Hecke eigenvalues to Fourier coefficients and trace formulas, states Jacquet-Langlands spectral transfer, then shows non-arithmetic triangles can have subcritical exponential length degeneracy without leaving GOE statistics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The key boundary is lambda=1/2: only at that arithmetic rate does the diagonal form factor reach order one within its validity window; the numerical fits are explicitly tentative.",
+          "representation_dependency": "Combines formula-sensitive correspondence kernels and scaling estimates; exact formulas and fitted coefficients require PDF verification.",
+          "unit_id": "bogomolny2003_u44"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5370,
+            "line_start": 5223,
+            "title": "Hecke correspondences provide arithmetic integrability",
+            "unit_id": "bogomolny2003_u43",
+            "unit_type": "commuting-operator-construction",
+            "why_material": "Extends determinant-one modular transformations to finite determinant-p correspondences, symmetrizes automorphic functions over their cosets, and obtains a commuting algebra that also commutes with the Laplacian."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Arithmetic mean multiplicity grows at the critical exponent one half, allowing the form factor to reach order one within the diagonal approximation's validity, whereas subcritical exponential degeneracy in non-arithmetic triangles can remain compatible with GOE statistics.",
+            "limit": "The non-arithmetic exponents come from short-range numerical fits and the threshold argument is semiclassical and diagonal, not a theorem about all spectral statistics.",
+            "parent_local_unit_ids": [
+              "bogomolny2003_u37",
+              "bogomolny2003_u38",
+              "bogomolny2003_u44"
+            ],
+            "title": "The degeneracy exponent is a boundary between harmless and order-one interference"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "bogomolny2003_u44",
+        "spontaneous": {
+          "unit_id": "bogomolny2003_u44",
+          "spontaneous_reading": "The span tests how far arithmetic explanations transfer. Hecke eigenvalues reappear as Fourier coefficients and in trace formulas, Jacquet-Langlands transports compact arithmetic spectra into congruence spectra, yet nonarithmetic triangles show that exponential degeneracy alone is insufficient unless its exponent reaches the critical one-half scale."
+        },
+        "directed": {
+          "unit_id": "bogomolny2003_u44",
+          "source_grounded_mathematics": "For normalized modular eigenfunctions, comparison of Fourier expansions after applying Tm identifies the Hecke eigenvalue with a Fourier coefficient, and a Hecke trace formula relates weighted spectral sums to determinant-m correspondences. The stated Jacquet-Langlands kernel sends compact quaternionic eigenfunctions to congruence-subgroup eigenfunctions with the same Laplace eigenvalue. Numerically fitted nonarithmetic Hecke triangles can have g(l) about exp(lambda l)/l with lambda below one half; the diagonal estimate then reaches only k to a negative power, whereas lambda=one half reaches order one.",
+          "conceptual_reading": "Arithmetic structure has several nonidentical manifestations: commuting observables, spectral transfer, and critical orbit-phase multiplicity. The nonarithmetic comparison falsifies the crude implication exponential degeneracy implies Poisson, replacing it with a scale-sensitive threshold within the diagonal mechanism.",
+          "representation_or_bridge": "Fourier coefficients bridge eigenfunctions to Hecke spectra; the Hecke trace formula bridges those labels to geometric correspondences; the Jacquet-Langlands kernel bridges spectra across arithmetic groups; the exponent lambda bridges orbit multiplicity growth to maximal diagonal form-factor size.",
+          "boundary_or_failure": "The correspondence is stated with a cited tedious proof, not established here. Nonarithmetic exponents are short-range least-squares fits with no accuracy analysis, and the lambda threshold is a semiclassical diagonal argument, not a theorem determining complete spectral statistics.",
+          "uncertainty": "The qualitative transfers and critical comparison are clear, but kernel formulas, fitted coefficients, and scaling normalizations require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "bogomolny2003_u44",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate correctly records the normalized Fourier-coefficient or Hecke-eigenvalue relation, the schematic Hecke trace formula, the stated Jacquet-Langlands spectral transfer, and the critical diagonal estimate at lambda=1/2.",
+          "It preserves that the correspondence proof is cited, the nonarithmetic data are short-range least-squares fits without error analysis, and the threshold is only a semiclassical diagonal argument."
+        ],
+        "inference": [
+          "Separating commuting observables, spectral transfer, and orbit multiplicity as nonidentical arithmetic manifestations is a useful synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The source does not say that the numerically fitted nonarithmetic multiplicities have the form exp(lambda l)/l. Equation (90) fits a_n exp(b_n l); the later exp(lambda l)/l expression is a separate assumed asymptotic model used for the threshold calculation.",
+          "Saying the comparison 'falsifies' exponential degeneracy implies Poisson overstates finite-range numerical evidence; it challenges that crude implication within the reported examples and diagonal mechanism."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Kernel formulas, Hecke normalizations, fitted coefficients, and scaling exponents require PDF verification."
+        ],
+        "missed_mechanism": [
+          "The candidate conflates the empirical fit family with the asymptotic ansatz that drives the lambda threshold."
+        ],
+        "revision_instructions": [
+          "Separate the observations: report finite-range fits a_n exp(b_n l) for nonarithmetic triangles, then introduce exp(lambda l)/l only as the source's assumed model for the diagonal scaling argument. Replace 'falsifies' with 'challenges in the reported finite-range examples' or equivalent evidence-calibrated language."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "66bc8e61e6481dce35765a2bc44ca0012f0dc1dce73ff258f813a661d7ddc47f"
+}

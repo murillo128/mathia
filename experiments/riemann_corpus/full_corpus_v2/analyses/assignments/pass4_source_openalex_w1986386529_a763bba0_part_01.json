@@ -1,0 +1,499 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1986386529_a763bba0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1986386529",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with lines 79-96 for the RH-dependent upper-bound objective; the span itself preserves the conjectural and historical setup.",
+      "line_end": 77,
+      "line_start": 45,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable; displayed powers and comparison symbols are formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts precise moment conjectures and known lower bounds with the scarcity of asymptotic formulae, motivating a one-sided upper-bound strategy.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjectural moment scale and the upper-bound bottleneck",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u04.txt",
+      "unit_bytes": 1915,
+      "unit_id": "full_openalex_w1986386529_u04",
+      "unit_sha256": "571f7cc1d3b1356bb9eb9f444684b89eb6cd248c464fbae290a98ec6b67b97ce",
+      "unit_type": "problem landscape",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u04.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 37,
+          "line_end": 44,
+          "text": "\n    Assuming the Riemann hypothesis, we obtain an upper bound for the moments\nof the Riemann zeta function on the critical line. Our bound is nearly as sharp as\nthe conjectured asymptotic formulae for these moments. The method extends to\nmoments in other families of L-functions.\n\n                                       1. Introduction\n\n",
+          "sha256": "4763236369cdba967bf9550da83e66c8f5857ea12b7a1b37626928656e60b83f"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "bounds of the conjectured order are known (see [16] and [17]).\n      Here we study the problem of obtaining upper bounds for Mk .T /. When\n0 \u0014 k \u0014 2, Ramachandra, in [13] and [14], and Heath-Brown, in [6] and [7], showed,\n                                             2\nassuming RH, that Mk .T / \n T .log T /k . The Lindelöf hypothesis is equivalent to\nthe estimate Mk .T / \nk;\" T 1C\" for all natural numbers k. Thus, for k larger than\n",
+          "sha256": "a679aba330d76206992905f29fe4511b790bc3fb5485b492336b466a9f73a72a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 269,
+            "line_start": 43,
+            "mathematical_role": "Sets the moment problem, reduces moments to large-value frequencies, states the three-regime tail theorem and prime-sum proposition, and derives the moment and concentration corollaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 45,
+          "title": "Conjectural moment scale and the upper-bound bottleneck",
+          "unit_id": "full_openalex_w1986386529_u04",
+          "unit_type": "problem landscape",
+          "why_material": "Contrasts precise moment conjectures and known lower bounds with the scarcity of asymptotic formulae, motivating a one-sided upper-bound strategy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with lines 79-96 for the RH-dependent upper-bound objective; the span itself preserves the conjectural and historical setup.",
+          "representation_dependency": "The prose is recoverable; displayed powers and comparison symbols are formula-layer dependent.",
+          "unit_id": "full_openalex_w1986386529_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 170,
+            "line_start": 78,
+            "title": "From zeta moments to a three-regime large-value problem",
+            "unit_id": "full_openalex_w1986386529_u01",
+            "unit_type": "large-values-to-moments reduction",
+            "why_material": "Introduces the large-value set and layer-cake integral, connects a Gaussian tail heuristic to conjectural moment size, and begins the theorem that supplies usable tail bounds."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 42,
+              "line_start": 36,
+              "reason": "Abstract summarizes the article but adds no mechanism beyond selected units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1986386529_u04",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1986386529_u04",
+          "spontaneous_reading": "The mathematical tension is between a sharply specified conjectural moment scale, supported by two different heuristic formalisms, and the very small set of exponents for which a full asymptotic is known. Broad lower bounds preserve the predicted order from below, so the missing object is effective one-sided control from above rather than another guess for the scale."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1986386529_u04",
+          "source_grounded_mathematics": "The unit defines M_k(T) as the integral of |ζ(1/2+it)|^{2k}, records the conjecture M_k(T) asymptotic to C_k T(log T)^{k^2}, and notes agreement between random-matrix and multiple-Dirichlet-series predictions, including lower-order refinements. Full asymptotics are stated only for k=1 and k=2, while lower bounds of the conjectured logarithmic order are known for wider classes of k, with some extensions conditional on RH.",
+          "conceptual_reading": "A precise conjecture can expose a target scale without supplying a proof mechanism. The source reframes progress as closing a one-sided gap: existing lower bounds certify that the proposed scale is not too large, whereas an upper bound must suppress rare large values.",
+          "representation_or_bridge": "The moment family M_k(T) compresses the value distribution of ζ on the critical line into an exponent-indexed scale. Random-matrix constants and multiple Dirichlet series are independent conjectural representations that converge on the same leading prediction; lower bounds bridge that prediction to proved partial evidence.",
+          "boundary_or_failure": "Nothing in this span derives an upper bound or an asymptotic beyond k=1,2. Agreement of conjectural frameworks and matching lower bounds does not establish the upper side, and analogous family conjectures are only announced here.",
+          "uncertainty": "The prose and qualitative hierarchy are clear, but displayed exponents and comparison symbols are extraction-sensitive; the reading relies only on the legible k^2 scale and stated conditionality."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1986386529_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines M_k(T), states the conjectural C_k T(log T)^{k^2} scale, and names the random-matrix and multiple-Dirichlet-series routes to the same conjecture.",
+          "It supports asymptotics only for k=1,2 and lower bounds for broader k-classes, with the all-positive-real statement explicitly conditional on RH."
+        ],
+        "inference": [
+          "The contrast between proved lower bounds and scarce asymptotics, together with the bounded following context announcing upper bounds, supports describing an unresolved upper-side gap.",
+          "Viewing the moment family as a distributional compression is a reasonable interpretation rather than a quoted claim."
+        ],
+        "unsupported_or_imported": [
+          "Calling the two conjectural approaches independent is stronger than the span's statement that the second is alternative.",
+          "The claim that an upper bound must suppress rare large values imports the later large-value reduction; this span does not supply that mechanism."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic phrase that a precise conjecture exposes a target scale adds little unless tied to the specific lower-bound versus asymptotic gap."
+        ],
+        "context_or_ocr_risk": [
+          "Displayed exponents and comparison signs are OCR-sensitive, and the artifact ends mid-sentence about analogous-family lower bounds."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the conjectural scale, provenance, known k=1,2 asymptotics, and qualified lower bounds; replace independent by alternative and remove the rare-large-values mechanism or label it explicitly as coming from a later unit."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A method sketch only; it records the structural difference rather than a complete family proof.",
+      "line_end": 778,
+      "line_start": 732,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler-factor coefficients, signs, and threshold formulas need scan verification; the prose recovers the prime-square shift and resulting tail route.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u15.txt",
+      "unit_bytes": 2343,
+      "unit_id": "full_openalex_w1986386529_u15",
+      "unit_sha256": "7aa8400a9fb4115dcd02d18a56554eb293d66b3c153e8b905c2fe4940d9e0908",
+      "unit_type": "symmetry-sensitive family transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u15.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 724,
+          "line_end": 731,
+          "text": "   1 Since we are assuming GRH we know that L. 1 ; \u001f / \u0015 0.            If L. 12 ; \u001fd / D 0 we interpret\n                                                         2    d\nlog L. 12 ; \u001fd / as 1 so that the claimed inequality is still valid.\n\n<!-- source-page: 13 -->\n\nMOMENTS OF THE RIEMANN ZETA FUNCTION                            991\n\n",
+          "sha256": "67d26c7d97dce31454179cc0bcb3e7b267d64bf67dc72c9b7516d0c3d97335d4"
+        },
+        "after": {
+          "line_start": 779,
+          "line_end": 786,
+          "text": "      Our work above is in keeping with conjectures of Keating and Snaith [10]\n(see (51) and (79) there) that an analogue of Selberg’s result holds in families\nof L-functions. Thus in the unitary family of \u001f .mod q/, we expect that the\ndistribution of logjL. 12 ; \u001f/j is Gaussian with mean 0 and variance \u0018 12 log log q.\nIn the symplectic family of quadratic Dirichlet characters, we expect that the\ndistribution of log L. 12 ; \u001fd / is Gaussian with mean \u0018 12 log logjd j and variance\n\u0018 log logjd j. Thus most values of L. 21 ; \u001fd / are quite large. In the orthogonal family\nof quadratic twists of an elliptic curve, first we must restrict to those twists with\n",
+          "sha256": "2413990e4d608c5b3a5653a4766d73f4a6c54c09f4f18b8e4a1b444a9a85dde5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 778,
+          "line_start": 732,
+          "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+          "unit_id": "full_openalex_w1986386529_u15",
+          "unit_type": "symmetry-sensitive family transfer",
+          "why_material": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A method sketch only; it records the structural difference rather than a complete family proof.",
+          "representation_dependency": "Euler-factor coefficients, signs, and threshold formulas need scan verification; the prose recovers the prime-square shift and resulting tail route.",
+          "unit_id": "full_openalex_w1986386529_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 727,
+            "line_start": 684,
+            "title": "Prime squares shift the center for quadratic Dirichlet L-values",
+            "unit_id": "full_openalex_w1986386529_u14",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Shows that prime squares are no longer negligible, contribute half a log-log term, and force a shifted large-value threshold before reciprocity and Polya-Vinogradov provide the mean-value analogue."
+          },
+          {
+            "line_end": 804,
+            "line_start": 779,
+            "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+            "unit_id": "full_openalex_w1986386529_u16",
+            "unit_type": "symmetry-type synthesis and obstruction",
+            "why_material": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1986386529_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1986386529_u15",
+          "spontaneous_reading": "For elliptic-curve twists, the same prime-square diagnostic points in the opposite direction. The Euler coefficients make the square layer contribute a negative half-log-log bias, so the orthogonal family is centered below zero and the resulting moment exponent changes accordingly."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1986386529_u15",
+          "source_grounded_mathematics": "The source writes the twisted elliptic-curve L-function using normalized coefficients a(n), with a(p)=α_p+β_p and α_pβ_p=1, and states an explicit prime-power upper majorant under the same conditional framework. Powers of degree at least three contribute O(1), while the prime-square terms contribute asymptotically minus one half log log x. Centering the large-value event at V-one half log log X and applying the analogous family argument yields moderate and large tail estimates and an upper moment bound with orthogonal exponent k(k-1)/2, up to ε.",
+          "conceptual_reading": "Symmetry type is detected by the coherent mean of the square layer rather than by changing the entire proof architecture. The sign reversal changes the center while leaving the fluctuation-control mechanism recognizable.",
+          "representation_or_bridge": "The local parameters α_p,β_p expose how square coefficients aggregate. Their prime-square sum is the bridge from Euler factors to the family-wide negative center; after centering, the earlier prime-polynomial tail method can be reused.",
+          "boundary_or_failure": "This is a structural method sketch, not a complete proof. It is conditional, formula-sensitive, and does not say that every twist is small or that the Gaussian prediction follows from the upper-tail estimate.",
+          "uncertainty": "The negative half-log-log contribution and orthogonal exponent are supported by the prose and dossier, but Euler-factor displays, signs, and exact threshold formulas require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1986386529_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the normalized elliptic-curve coefficients, states the analogous conditional prime-power majorant, gives O(1) for degrees at least three, and identifies a negative one-half log log x prime-square contribution.",
+          "It shifts the large-value threshold by minus one-half log log X and states the resulting tail estimates and k(k-1)/2 moment upper bound."
+        ],
+        "inference": [
+          "Interpreting the negative square term as a downward center shift and reusing the preceding family argument is supported by the threshold and the source's explicit analogy."
+        ],
+        "unsupported_or_imported": [
+          "The labels orthogonal family and orthogonal exponent do not occur in this exact span; they are supplied only by the following unit or external symmetry-type knowledge.",
+          "The comparison that the diagnostic points in the opposite direction is relational context from the preceding family case, not established within this span alone."
+        ],
+        "paraphrase_or_style_risk": [
+          "Symmetry type is detected is broader than this method sketch establishes and risks turning a local coefficient calculation into a general classification rule."
+        ],
+        "context_or_ocr_risk": [
+          "Euler-factor displays, signs, and tail formulas are OCR-sensitive, although the negative half-log-log contribution is recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the negative prime-square contribution, shifted threshold, analogous tail route, and k(k-1)/2 exponent; remove or explicitly source the orthogonal classification and phrase the opposite-direction comparison as cross-unit context rather than evidence from this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distribution statements are conjectural comparisons; the fixed-deviation upper bound is GRH-conditional and the stronger analogue needs an additional zero-avoidance assumption.",
+      "line_end": 804,
+      "line_start": 779,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mean and variance constants are display/OCR sensitive, but their signs, family ordering, and zero-proximity limitation are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues.",
+      "source_id": "openalex_w1986386529",
+      "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1986386529_u16.txt",
+      "unit_bytes": 1558,
+      "unit_id": "full_openalex_w1986386529_u16",
+      "unit_sha256": "6a4e3df1a38e1d1e95f4f5d6b2ddb6bfcde8980d26e377bcd2e5e6e065b7d6d0",
+      "unit_type": "symmetry-type synthesis and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1986386529_u16.txt",
+      "source": {
+        "source_id": "openalex_w1986386529",
+        "title": "Moments of the Riemann zeta function",
+        "authors": [
+          "K. Soundararajan"
+        ],
+        "year": 2009,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "explicit-formula",
+          "grh",
+          "heuristic-bridge",
+          "l-functions",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "primes-zeros",
+          "random-matrix",
+          "zero-density",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 771,
+          "line_end": 778,
+          "text": "when log log X \u0014 V D o..log log X / log3 X /; when V \u0015 .log log X / log3 X this\nnumber is \n X exp. cV log V / for some positive constant c. This leads to the\nupper bound\n                   X[\n                        L.E ˝ \u001fd ; 12 /k \n X.log X /k.k 1/=2C\" :\n                   jd j\u0014X\n",
+          "sha256": "61c942e2f35393b54c7f9436b09d45aa3f02ef3aff5c8a8449c77e93522e3d97"
+        },
+        "after": {
+          "line_start": 805,
+          "line_end": 812,
+          "text": "\n                                          Acknowledgments\n\n    I am grateful to Mike Rubinstein for some helpful remarks, and to Brian\nConrey for his encouragement.\n\n                                               References\n[1]     J. B. C ONREY, D. W. FARMER, J. P. K EATING, M. O. RUBINSTEIN, and N. C. S NAITH,\n",
+          "sha256": "49b01540dd9a9a84f9ef95e230b66b25bc27ab48c627bd55d3d74496493f6238"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bab0c60c70c875448918dfec2d4f3e7a6160ddefa07106e1999268e734bee480",
+        "dossier_sha256": "6ae2de41ae60cb435e0167e6a915b7edd1b4f773390a0a4cde4b75bdaaf2a52c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Moments of L-functions in families",
+            "line_end": 805,
+            "line_start": 667,
+            "mathematical_role": "Transfers the method to unitary, symplectic, and orthogonal families and isolates the prime-square contribution that shifts the Gaussian center."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 804,
+          "line_start": 779,
+          "title": "Gaussian centers distinguish unitary, symplectic, and orthogonal families",
+          "unit_id": "full_openalex_w1986386529_u16",
+          "unit_type": "symmetry-type synthesis and obstruction",
+          "why_material": "Synthesizes the three transfers as common Gaussian variance with symmetry-dependent means and identifies zeros near the central point as the extra obstacle to recovering full Selberg-type analogues."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distribution statements are conjectural comparisons; the fixed-deviation upper bound is GRH-conditional and the stronger analogue needs an additional zero-avoidance assumption.",
+          "representation_dependency": "Mean and variance constants are display/OCR sensitive, but their signs, family ordering, and zero-proximity limitation are readable.",
+          "unit_id": "full_openalex_w1986386529_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 778,
+            "line_start": 732,
+            "title": "Prime squares shift the center oppositely for elliptic-curve twists",
+            "unit_id": "full_openalex_w1986386529_u15",
+            "unit_type": "symmetry-sensitive family transfer",
+            "why_material": "Repeats the explicit-formula architecture with elliptic-curve coefficients and finds a negative half-log-log prime-square contribution, producing the orthogonal-family moment exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same prime-polynomial architecture transfers across families, while the negligible, positive, or negative prime-square term tracks the unitary, symplectic, or orthogonal shift in the expected Gaussian center.",
+            "limit": "The family arguments are sketches under GRH, exact constants are formula-sensitive, and the stronger Selberg analogues additionally require control of near-central zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1986386529_u13",
+              "full_openalex_w1986386529_u14",
+              "full_openalex_w1986386529_u15",
+              "full_openalex_w1986386529_u16"
+            ],
+            "title": "Prime-square mass predicts the family-dependent center"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w1986386529_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w1986386529_u16",
+          "spontaneous_reading": "The three family cases compress into a common Gaussian-fluctuation picture whose center is read from prime-square mass: zero for unitary, positive for symplectic, and negative for orthogonal families. The remaining obstruction is spectral—zeros very near the central point prevent the one-sided upper-bound method from becoming a full Selberg-type distribution theorem."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w1986386529_u16",
+          "source_grounded_mathematics": "The source presents Keating-Snaith predictions that log central L-values are Gaussian: unitary characters have mean zero and variance about one half log log q; quadratic Dirichlet values have positive mean about one half log log|d| and variance about log log|d|; positive-sign elliptic-curve twists have negative mean about one half log log|d| and comparable variance. It says the paper's ideas, under GRH, give a Gaussian-tail upper bound for fixed standardized deviations. Recovering the full Selberg analogues additionally requires that most family members have no zero very near 1/2.",
+          "conceptual_reading": "Center and fluctuation are distinct structural components. Prime squares predict the center shift, while prime-level variation supplies a broadly common variance scale; nearby central zeros are information not controlled by this one-sided representation and therefore mark the barrier to a two-sided distribution statement.",
+          "representation_or_bridge": "Standardizing log|L| by its family-dependent mean and variance places the three symmetry types in one comparison frame. The zero-avoidance condition is the missing bridge from upper-tail control to a full Gaussian limit.",
+          "boundary_or_failure": "The Gaussian distributions are conjectural, the fixed-deviation result is only an upper bound conditional on GRH, and the stronger analogue needs an extra hypothesis about near-central zeros. Orthogonal statements also restrict to positive functional-equation sign because negative sign forces the central value to vanish.",
+          "uncertainty": "The signs and family ordering of the centers and the zero-proximity obstruction are clear; exact mean and variance constants are OCR-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w1986386529_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly presents conjectural Gaussian laws with mean zero for the unitary family, positive mean for the symplectic family, and negative mean for positive-sign orthogonal twists, together with their variance scales.",
+          "It states a GRH-conditional Gaussian-tail upper bound for fixed standardized deviations and requires an additional no-near-central-zero condition for Selberg-type analogues.",
+          "The positive-sign restriction and forced central vanishing for the other sign are explicit."
+        ],
+        "inference": [
+          "Separating family-dependent centers from broadly comparable fluctuation scales and identifying near-central zeros as the barrier to the stronger conclusion are supported interpretations."
+        ],
+        "unsupported_or_imported": [
+          "The exact span does not attribute the three center shifts to prime-square mass, so that causal synthesis is imported from preceding units or dossier material.",
+          "The claim that prime-level variation supplies the common variance is likewise absent from this span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The phrase one-sided representation is underspecified here; the span states an upper-tail result and an added zero hypothesis but does not name a representation."
+        ],
+        "context_or_ocr_risk": [
+          "Mean and variance constants and the normal-tail display are OCR-sensitive, while their signs, ordering, and logical status remain clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the three conjectural family laws, fixed-deviation upper-bound status, sign restriction, and extra zero-avoidance hypothesis; remove the prime-square and prime-level causal attributions unless explicitly linked to their supporting earlier spans."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b817ffd8408e4ab51be84527be420f35ffb46ac5759543544924d098d99e71bf"
+}

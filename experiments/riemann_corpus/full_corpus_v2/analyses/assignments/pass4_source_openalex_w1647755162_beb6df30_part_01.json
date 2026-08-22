@@ -1,0 +1,524 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1647755162_beb6df30_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1647755162",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the asymptotic theorem, definitions of the representation count and exponential sum, and the stated positivity plan; it does not include the subsequent arc construction.",
+      "line_end": 104,
+      "line_start": 69,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed formulas are degraded by extraction, so exact notation requires scan verification; the prose still clearly supports the weighted-count, integral, and leading-term-versus-remainder mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted representation count turns existence into a positivity comparison",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u003.txt",
+      "unit_bytes": 1636,
+      "unit_id": "openalex_w1647755162_u003",
+      "unit_sha256": "7c444c655648e306af810b3c224a470cae4fe35386b96151c08a46c89fae1d64",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u003.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 61,
+          "line_end": 68,
+          "text": "100      J.-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n   The proof of this result falls naturally into three parts: an asymptotic theo-\nrem handling all but a finite number of cases, a lemma assuring the existence of\nprimes relatively near unchecked odd numbers, and a computer search for 2-primes\nrepresentations of the remaining differences. We now outline each of these parts.\n\n",
+          "sha256": "210299ba959e1838dba483701122e9e52d78dba6b24cca7208f3289219f39eaf"
+        },
+        "after": {
+          "line_start": 105,
+          "line_end": 112,
+          "text": "   Following Linnik and Vinogradov, we subdivide the interval [-w, 1-w] into the\ndisjoint union of subsets EL E~, E2. Our main idea is to refine this subdivision.\nIn particular we change the set of \"major arcs\", which in our case is E~, making\nthe intervals from this set smaller. We do it as follows.\n   Let Q = [1.1 log2 (N)], r = 4900log4 (N), w = 1/r.\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "eb4c3b8feb0553a2018359932e7ad4f97bb3db6cfba7141af4ab5c0ed6d0c3a6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The asymptotic theorem",
+            "line_end": 145,
+            "line_start": 69,
+            "mathematical_role": "Reduces representation to positivity of a weighted counting function and outlines a refined major-arc/remainder decomposition under GRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 104,
+          "line_start": 69,
+          "title": "Weighted representation count turns existence into a positivity comparison",
+          "unit_id": "openalex_w1647755162_u003",
+          "unit_type": "proof-strategy",
+          "why_material": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the asymptotic theorem, definitions of the representation count and exponential sum, and the stated positivity plan; it does not include the subsequent arc construction.",
+          "representation_dependency": "Several displayed formulas are degraded by extraction, so exact notation requires scan verification; the prose still clearly supports the weighted-count, integral, and leading-term-versus-remainder mechanism.",
+          "unit_id": "openalex_w1647755162_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 64,
+            "title": "Three-part analytic-to-computational decomposition",
+            "unit_id": "openalex_w1647755162_u002",
+            "unit_type": "proof-architecture",
+            "why_material": "The proof is factored into an asymptotic theorem, a nearby-prime lemma, and a two-prime computation; this is the source's central modular interface and explains how the conditional conclusion is assembled."
+          },
+          {
+            "line_end": 144,
+            "line_start": 105,
+            "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+            "unit_id": "openalex_w1647755162_u004",
+            "unit_type": "method-refinement",
+            "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1647755162_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w1647755162_u003",
+          "spontaneous_reading": "The source turns additive existence into positivity of a weighted representation count. Fourier orthogonality packages the equation p1+p2+p3=N into an integral of a cubic exponential sum, after which the task becomes showing a structured leading contribution dominates a controlled error."
+        },
+        "directed": {
+          "unit_id": "openalex_w1647755162_u003",
+          "source_grounded_mathematics": "Assuming GRH, the stated asymptotic theorem covers odd N above 10^20. A von Mangoldt-weighted representation function J(N) is associated with prime triples summing to N, an exponentially damped sum S(a) is introduced, and orthogonality rewrites J(N) through an integral involving S(a)^3 plus an error. Positivity of J(N) yields a representation.",
+          "conceptual_reading": "The existence question is reframed as a quantitative comparison. Weighting and harmonic analysis replace direct witness search by a signal whose main term can certify that at least one witness survives the error.",
+          "representation_or_bridge": "J(N) is the bridge from combinatorial representations to positivity; S(a) is the frequency-space representation that exposes additive convolution. Splitting the integral into leading term and remainder creates the proof obligation ‘main term exceeds error.’",
+          "boundary_or_failure": "The article says it is only outlining the result and refers elsewhere for complete details. Several displayed formulas, weights, signs, and error terms are extraction-damaged, so their exact transcription is not secure from this unit.",
+          "uncertainty": "The weighted-count, Fourier-integral, and positivity mechanism is clear; exact notation and constants require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1647755162_u003",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the GRH-conditional threshold theorem, defines a representation function over prime triples, introduces the von Mangoldt function and an exponentially damped sum, obtains an integral involving the cube of that sum, and reduces existence to positivity after main-term/error comparison.",
+          "The candidate correctly distinguishes this outline from a complete proof and flags damaged formulas."
+        ],
+        "inference": [
+          "Interpreting the cubic exponential sum as the frequency-space form of additive convolution and the positivity argument as replacing witness search by quantitative domination is mathematically grounded."
+        ],
+        "unsupported_or_imported": [
+          "The normalized span loses the summand in the displayed definition of J(N), so calling J(N) specifically a von-Mangoldt-weighted representation count reconstructs formula content that is not safely visible in the frozen artifact."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'signal survives the error' phrasing is generic unless retained alongside the explicit J(N), S(a), integral, and positivity operations."
+        ],
+        "context_or_ocr_risk": [
+          "Weights, signs, powers, and error terms in the displayed formulas are visibly extraction-damaged."
+        ],
+        "missed_mechanism": [
+          "The audit boundary requires separating the clearly visible introduction of von Mangoldt's function from the unreadable exact summand defining J(N)."
+        ],
+        "revision_instructions": [
+          "Replace the exact claim that J(N) is von-Mangoldt-weighted with a formula-safe statement that J(N) is a representation function over prime triples, that von Mangoldt's function is then introduced, and that the exact weighting is unreadable in this artifact; preserve the visible positivity and cubic-integral mechanism without reconstructing the missing summand."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The interval definitions, parameters, remainder lemma, and the stated Hardy-Littlewood treatment of the leading term are kept together because severing them would obscure what was refined and what the lemma controls.",
+      "line_end": 144,
+      "line_start": 105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact interval endpoints, set decorations, and the bound on S(a) are formula-sensitive and partly garbled; scan verification is needed for transcription, while the structural split is explicit in the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u004.txt",
+      "unit_bytes": 1694,
+      "unit_id": "openalex_w1647755162_u004",
+      "unit_sha256": "d503c7cbffca8ad0d8f49ce0532975124ec3790fe8bbc106157824b24730b6b3",
+      "unit_type": "method-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u004.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "Changing the order of summation and integration (see [10]), for some new real 0\n(IOI ~ 1) we obtain\n                 J(N) = e   1:w     S 3(a)e 211'iaN da + BN1. 5 log3(N),\n\nwhere w = w(N) is a small number defined later. We will express J(N) as a sum\nof the leading term and the remainder. Estimating the remainder from above, we\nwill show that it is less than the leading term when N ;::::: 10 20 . We then conclude\nthat J(N) > 0.\n",
+          "sha256": "48e642e5d8c4472ef72a89fd781a4021013f92937c76b3ab3ecab705d3f5b151"
+        },
+        "after": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "\n                           3. AN INTERMEDIATE LEMMA\n  Now, by the asymptotic theorem, our problem is reduced to considering odd\nnumbers which are ~ 10 20 . For these, we need the following:\nLemma. If the GRH holds and if 6 ::::; n ::::; 1020 , then there exists a prime number\np such that 4 ~ n - p ~ 1.615 x 10 12 .\nProof. The conclusion of the lemma obviously holds for n < 10 12 , say. For larger\nn, we apply Schoenfeld [13], equation (6.1). Let 8(n) = l:p::;nlogp; if the GRH\n",
+          "sha256": "15b93849bf45b949159f123895f1a52a259922ad8351df8674fcccc34a916146"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The asymptotic theorem",
+            "line_end": 145,
+            "line_start": 69,
+            "mathematical_role": "Reduces representation to positivity of a weighted counting function and outlines a refined major-arc/remainder decomposition under GRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 144,
+          "line_start": 105,
+          "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+          "unit_id": "openalex_w1647755162_u004",
+          "unit_type": "method-refinement",
+          "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The interval definitions, parameters, remainder lemma, and the stated Hardy-Littlewood treatment of the leading term are kept together because severing them would obscure what was refined and what the lemma controls.",
+          "representation_dependency": "Exact interval endpoints, set decorations, and the bound on S(a) are formula-sensitive and partly garbled; scan verification is needed for transcription, while the structural split is explicit in the prose.",
+          "unit_id": "openalex_w1647755162_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 104,
+            "line_start": 69,
+            "title": "Weighted representation count turns existence into a positivity comparison",
+            "unit_id": "openalex_w1647755162_u003",
+            "unit_type": "proof-strategy",
+            "why_material": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20."
+          },
+          {
+            "line_end": 164,
+            "line_start": 146,
+            "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+            "unit_id": "openalex_w1647755162_u005",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1647755162_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w1647755162_u004",
+          "spontaneous_reading": "The refinement is geometric: shrink the rational neighborhoods designated as major arcs so that the leading term lives on a tighter structured region, while the enlarged complement can be handled by a GRH-dependent uniform bound on the exponential sum."
+        },
+        "directed": {
+          "unit_id": "openalex_w1647755162_u004",
+          "source_grounded_mathematics": "The interval of integration is partitioned into neighborhoods E(a,q) of rationals a/q, with parameters Q, r, and w. The source narrows the major-arc intervals, writes the integral as a leading part over the narrowed arcs and a remainder over the discarded portions together with the other arcs, and states a GRH bound for |S(a)| on that remainder. The bound is said to use summation over zeros of L-functions, while the leading term uses the Hardy–Littlewood circle method.",
+          "conceptual_reading": "Changing the partition changes which behavior must be approximated precisely and which can be bounded uniformly. Narrow major arcs concentrate arithmetic structure; the complementary region is made controllable by a conditional zero-sum estimate.",
+          "representation_or_bridge": "Rational approximation of the frequency variable is the organizing representation. The arc boundary is an interface between local main-term analysis and global error control, and the GRH estimate bridges zero locations to cancellation in S(a).",
+          "boundary_or_failure": "The lemma and leading-term treatment are stated rather than proved here. Exact interval endpoints, decorations on the arc sets, and the numerical bound on S(a) are garbled in extraction.",
+          "uncertainty": "The structural split and dependence on GRH are explicit, but exact formulas and constants should not be reconstructed from this text layer."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1647755162_u004",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly narrows rational major-arc intervals, splits the integral into a leading part and a complementary remainder, states a GRH-dependent bound for S(a) on the remainder, links that bound to summation over L-function zeros, and assigns the leading term to the Hardy-Littlewood circle method."
+        ],
+        "inference": [
+          "Viewing the arc boundary as an interface between precise local approximation and uniform error control is a source-grounded interpretation of the stated refinement."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "'Concentrate arithmetic structure' is somewhat generic, but the rational neighborhoods, narrowed arcs, and complementary set give it concrete content."
+        ],
+        "context_or_ocr_risk": [
+          "Arc decorations, endpoints, and the displayed numerical bound for S(a) are too garbled for exact transcription."
+        ],
+        "missed_mechanism": [
+          "The candidate omits the lemma's explicit domain hypothesis N greater than 10^20 and the source's note that N need not be odd, making the stated GRH bound sound less restricted than it is."
+        ],
+        "revision_instructions": [
+          "Add that the remainder lemma is stated for N greater than 10^20 and does not require N to be odd; continue withholding the extraction-damaged interval endpoints and numerical S(a) bound."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The lemma statement and its contradiction-style estimate are retained as one unit; the next lines separately compare the chosen estimate with an alternative.",
+      "line_end": 164,
+      "line_start": 146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summation and inequality typography is degraded, including the theta glyph and constants; the lemma's inputs, conclusion, and prime-gap argument are recoverable from the checked prose, but exact formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u005.txt",
+      "unit_bytes": 1144,
+      "unit_id": "openalex_w1647755162_u005",
+      "unit_sha256": "73d0c052f1db9f34addd06157320653e1c822998fb68585cc04186b1f4b9076b",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u005.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 138,
+          "line_end": 145,
+          "text": "                                            N\n                           IS(a)I < o.1s 10 g(N).\n\n  The proof of this lemma uses the Riemann-Hadamard method which involves\nsummation over the zeroes of £-functions.\n  The leading term is treated using the circle method of Hardy and Littlewood, as\nused by Vinogradov and Linnik.\n\n",
+          "sha256": "7ca6ce1d0f7f8be74be2e8d303664c522bea3f9fe0a9b2cda8911fa19730b72b"
+        },
+        "after": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "\n<!-- source-page: 4 -->\n\n102         J .-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n   We note here that the GRH actually implies an estimate on le(n)-nl which has\na single log factor; see Ivie (7] for example. However, the second author, in working\n",
+          "sha256": "17a5fe59452295dec4de74b89ad66c989aba5dc4108e8bdd8a88bdff99114a37"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "An intermediate lemma",
+            "line_end": 175,
+            "line_start": 146,
+            "mathematical_role": "Uses an explicit GRH estimate for the Chebyshev theta function to locate a prime whose subtraction leaves a bounded even difference, and compares a nominally sharper alternative estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 164,
+          "line_start": 146,
+          "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+          "unit_id": "openalex_w1647755162_u005",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The lemma statement and its contradiction-style estimate are retained as one unit; the next lines separately compare the chosen estimate with an alternative.",
+          "representation_dependency": "The summation and inequality typography is degraded, including the theta glyph and constants; the lemma's inputs, conclusion, and prime-gap argument are recoverable from the checked prose, but exact formulas require scan verification.",
+          "unit_id": "openalex_w1647755162_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 144,
+            "line_start": 105,
+            "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+            "unit_id": "openalex_w1647755162_u004",
+            "unit_type": "method-refinement",
+            "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+          },
+          {
+            "line_end": 175,
+            "line_start": 171,
+            "title": "A better asymptotic log factor can lose to a smaller explicit constant",
+            "unit_id": "openalex_w1647755162_u006",
+            "unit_type": "method-comparison",
+            "why_material": "The authors explain that a GRH estimate with one log factor was not used because its derived constant made it numerically worse at the operative scale than Schoenfeld's two-log estimate. This is a reusable warning that finite-range optimization can reverse an asymptotic preference."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          },
+          {
+            "claim": "The useful analytic estimate is selected by its explicit finite-range constant, because that constant determines the maximum even remainder that the computational theorem must cover.",
+            "limit": "The normalized formulas are extraction-sensitive and the numerical comparison is tied to the stated scale near 10^20.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u006",
+              "openalex_w1647755162_u007"
+            ],
+            "title": "Finite-scale constants govern the analytic-computational boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1647755162_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w1647755162_u005",
+          "spontaneous_reading": "A global error estimate for the Chebyshev theta function is converted into a local anti-gap statement: if a terminal interval contained no suitable prime, the theta increment would be too small, contradicting the GRH error bound once the interval is long enough. The resulting nearby prime leaves a uniformly bounded even remainder."
+        },
+        "directed": {
+          "unit_id": "openalex_w1647755162_u005",
+          "source_grounded_mathematics": "For 6≤n≤10^20, the lemma asserts under GRH that there is a prime p with 4≤n-p≤1.615×10^12. It invokes Schoenfeld’s explicit bound on the error in the Chebyshev theta function, assumes a prime-free interval near n, compares the theta increment with the error terms, and derives an upper bound on the possible gap.",
+          "conceptual_reading": "The proof converts control of a cumulative prime-counting surrogate into existence in a short interval. Its purpose is not only to find a prime, but to force the residual n-p into the finite range needed by the next module.",
+          "representation_or_bridge": "The theta function compresses the primes into a monotone weighted sum. Differences theta(n)-theta(n-h) detect primes in an interval, and the selected p represents the original odd n as a prime plus a bounded residual.",
+          "boundary_or_failure": "The conclusion is conditional on GRH and on the quoted explicit estimate. The theta glyph, summation, inequalities, and constants are extraction-sensitive, and the short argument does not independently establish Schoenfeld’s result.",
+          "uncertainty": "The contradiction mechanism and stated residual bound are recoverable, but exact algebra should be verified from the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1647755162_u005",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states the GRH-conditional nearby-prime lemma on 6 through 10^20, invokes Schoenfeld's explicit theta-function error estimate, compares a theta increment with its error terms, and obtains the stated upper bound on n-p.",
+          "The candidate correctly identifies the purpose of placing the residual inside the next computational range and warns that the exact algebra is extraction-sensitive."
+        ],
+        "inference": [
+          "Describing theta differences as interval detectors and the result as converting a global cumulative estimate into local prime existence is a faithful non-paraphrase operation."
+        ],
+        "unsupported_or_imported": [
+          "The directed reading says the proof assumes a prime-free interval, whereas the source's actual contradiction condition allows possible primes among two of the six terminal integers; that qualification is part of obtaining a residual at least 4."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The theta glyph, summation notation, inequality directions, and constants are visibly degraded, so no exact formula should be reconstructed."
+        ],
+        "missed_mechanism": [
+          "The candidate compresses away the special terminal-six-number exception that connects the gap argument to the lower bound 4 on n-p."
+        ],
+        "revision_instructions": [
+          "Replace 'assumes a prime-free interval near n' with the source's qualified condition: no prime in (n-h,n] except possibly among two of n-5 through n; explain only at a formula-safe level that this condition and the theta estimate force a suitable prime whose difference from n is at least 4 and at most the stated bound."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "4b08b23efbd2f7ce3631fa95ac64b5fb8c7cae6438feecf30d03e12b028f0995"
+}

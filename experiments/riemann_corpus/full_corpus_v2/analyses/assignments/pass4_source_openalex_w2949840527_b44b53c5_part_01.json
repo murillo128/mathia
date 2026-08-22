@@ -1,0 +1,349 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2949840527_b44b53c5_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2949840527",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the theorem, corollary, q choice, and author’s best-possible caveat; the matching lower bound is not proved here.",
+      "line_end": 93,
+      "line_start": 69,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High quantitative sensitivity: fractional powers, the minimum in the tail bound, and the optimized q are vertically displaced. Verify formulas before reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 uniformly bounds all fractional moments 0≤q≤1 by a scale containing a nontrivial denominator depending on (1−q)log log T. Optimizing Markov’s inequality in q turns this into a typical-size/tail bound smaller than the global mean by a square-root log-log factor.",
+      "source_id": "openalex_w2949840527",
+      "source_normalized_sha256": "716e8bb789a1055468d74aa5f33148714e7f2ca25d9bd41ad837c6646ed18d49",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional moments reveal a critical square-root logarithmic renormalization",
+      "unit_artifact_relpath": "depth/units/openalex_w2949840527_v2_u02.txt",
+      "unit_bytes": 1725,
+      "unit_id": "openalex_w2949840527_v2_u02",
+      "unit_sha256": "9c1700ac39bba3161b5117a1432e7cd7796ccc716c7fd7bf573a0cd8ca445b8c",
+      "unit_type": "theorem-and-tail-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2949840527_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2949840527",
+        "title": "On the partition function of the Riemann zeta function, and the Fyodorov--Hiary--Keating conjecture",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2019,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 61,
+          "line_end": 68,
+          "text": "              T T       −1/2\n\nIt is then natural to wonder whether, for most T ≤ t ≤ 2T , the partition function\nR 1/2\n −1/2\n      |ζ(1/2 + it + ih)|2 dh will have size around log T . Our ﬁrst theorem and corollary\nshow this is not quite the case.\n\n",
+          "sha256": "7fd1926884e352494aa5f646f0edc0541348708b07fc0429176501d673149a75"
+        },
+        "after": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "   Fyodorov and Keating [8] and Fyodorov, Hiary and Keating [7] considered the\n                                 R 1/2\npartition function integrals −1/2 |ζ(1/2 + it + ih)|2 dh, and the more general version\nR 1/2\n −1/2\n       |ζ(1/2 + it + ih)|2β dh, as part of their investigations into the local maximum\nmax|h|≤1/2 |ζ(1/2 + it + ih)| that we shall discuss below.        Their idea was that if\u0011one\n                                                      R 2T \u0010R 1/2                          q\n",
+          "sha256": "6e1fc5ed5a02489fbb3165313eb0e747021babe3dd48e5ed00556f97c995daf7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b1bc3723328d7f362977459bec615caa2def5f65a8070ea90f2f96d081d32429",
+        "dossier_sha256": "4f3bacc8c425d9d520b6b53ddb666d1cf9834fa0c573a9d62a5921fdc5ee28a3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 221,
+            "line_start": 28,
+            "mathematical_role": "Defines the partition function, states Theorems 1–2 and tail corollaries, explains the critical freezing regime, and separates the proved upper bounds from the FHK conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 93,
+          "line_start": 69,
+          "title": "Fractional moments reveal a critical square-root logarithmic renormalization",
+          "unit_id": "openalex_w2949840527_v2_u02",
+          "unit_type": "theorem-and-tail-transfer",
+          "why_material": "Theorem 1 uniformly bounds all fractional moments 0≤q≤1 by a scale containing a nontrivial denominator depending on (1−q)log log T. Optimizing Markov’s inequality in q turns this into a typical-size/tail bound smaller than the global mean by a square-root log-log factor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the theorem, corollary, q choice, and author’s best-possible caveat; the matching lower bound is not proved here.",
+          "representation_dependency": "High quantitative sensitivity: fractional powers, the minimum in the tail bound, and the optimized q are vertically displaced. Verify formulas before reuse.",
+          "unit_id": "openalex_w2949840527_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 28,
+            "title": "The short-interval second moment is a critical partition function",
+            "unit_id": "openalex_w2949840527_v2_u01",
+            "unit_type": "critical-object-framing",
+            "why_material": "The paper treats the integral of |ζ|² over a fixed short interval as a statistical-mechanical partition function. Although its global t-average is of order log T, the motivating question is its typical size, exposing a distinction between an average dominated by rare events and a typical local mass."
+          },
+          {
+            "line_end": 145,
+            "line_start": 94,
+            "title": "The exponent two marks the freezing transition and links partition mass to maxima",
+            "unit_id": "openalex_w2949840527_v2_u03",
+            "unit_type": "conjectural-context",
+            "why_material": "Random-matrix ‘moments of moments’ motivate the distributional program, while the dominance scale of ζ moments explains why β=1 is the critical boundary between many and rare large values in a bounded interval. This identifies the partition function studied by Theorem 1 as the critical-chaos observable relevant to local maxima."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At exponent two, rare Euler-product growth begins to dominate the short integral; multiscale barriers remove those rare trajectories and produce the square-root log-log normalization seen in low fractional moments.",
+            "limit": "The paper proves the upper bound for ζ and imports the corresponding random-model estimate; a matching ζ lower bound and full critical-chaos convergence are not established.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u01",
+              "openalex_w2949840527_v2_u02",
+              "openalex_w2949840527_v2_u03",
+              "openalex_w2949840527_v2_u05"
+            ],
+            "title": "Critical chaos appears as a fractional-moment renormalization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2949840527_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2949840527_v2_u02",
+          "spontaneous_reading": "The q-dependent fractional-moment estimate is doing more than bounding moments: q is a tunable probe that converts a critical-chaos renormalization into a tail estimate. The optimized q detects a typical scale smaller than the ordinary mean."
+        },
+        "directed": {
+          "unit_id": "openalex_w2949840527_v2_u02",
+          "source_grounded_mathematics": "Theorem 1 gives a uniform upper bound for fractional moments with 0<=q<=1 and a denominator involving 1+(1-q)sqrt(log log T). Markov's inequality, with q chosen from lambda, yields Corollary 1 and the upper typical scale log T/sqrt(log log T).",
+          "conceptual_reading": "A family of low moments separates bulk behavior from rare events more effectively than the first moment. The square-root log-log factor is the critical renormalization that the q-profile exposes.",
+          "representation_or_bridge": "Optimizing Markov's inequality over q bridges an analytic fractional-moment curve to a probability tail statement; the variable q acts as a scale-selecting parameter.",
+          "boundary_or_failure": "Only an upper bound is proved here. The claim that the shape is best possible is motivated by the later mechanism, not established by a matching zeta lower bound in this unit.",
+          "uncertainty": "The theorem-to-corollary mechanism and optimized-q role are clear, but the extracted placement of fractional powers, the minimum in the tail bound, and exact q formula should be checked against the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2949840527_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 1 supplies a q-dependent family of upper bounds for 0<=q<=1, and Corollary 1 is obtained by Markov's inequality with a lambda-dependent q.",
+          "The span derives an upper typical scale log T/sqrt(log log T) and explicitly says only that the theorem's shape is likely best possible."
+        ],
+        "inference": [
+          "Viewing q as a tunable scale-selecting probe is a useful interpretation of the displayed optimization."
+        ],
+        "unsupported_or_imported": [
+          "Calling the denominator a 'critical-chaos renormalization' imports the later proof explanation; critical chaos is not identified in this frozen span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Fractional powers, the minimum in the tail estimate, and the exact optimized q are vertically displaced and must not be reconstructed more precisely from OCR."
+        ],
+        "missed_mechanism": [
+          "The candidate should distinguish the span's proved q-dependent saving from the later explanation of why that saving has a critical-chaos form."
+        ],
+        "revision_instructions": [
+          "Replace both uses of 'critical-chaos renormalization' or 'critical renormalization' with source-bounded language such as 'the q-dependent square-root log-log saving.' Keep the optimized-Markov bridge and the one-sided/best-possible caveat unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the stated union-bound efficiency, fourth-moment loss V, strengthened good event, and two barrier savings. The argument’s current non-sharpness is traced to the rough-factor fourth moment.",
+      "line_end": 485,
+      "line_start": 366,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour size, smooth/rough thresholds, V powers, and log-log exponents are extraction-sensitive and must be PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For Theorem 2, Cauchy’s formula replaces an unknown maximizing point by integrals around a 1/log T rectangle. A fourth-moment argument shows a large total product usually forces the smooth factor above a threshold; after derandomization this becomes a terminal lower barrier, and a Gaussian ballot estimate yields the characteristic 3/4 saving.",
+      "source_id": "openalex_w2949840527",
+      "source_normalized_sha256": "716e8bb789a1055468d74aa5f33148714e7f2ca25d9bd41ad837c6646ed18d49",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cauchy localization and a lower smooth-factor barrier convert maxima into a ballot problem",
+      "unit_artifact_relpath": "depth/units/openalex_w2949840527_v2_u06.txt",
+      "unit_bytes": 8177,
+      "unit_id": "openalex_w2949840527_v2_u06",
+      "unit_sha256": "a418247e12e780d9794935418fc0a5bd67d143a57cdb5d664063083716400a5c",
+      "unit_type": "maximum-proof-blueprint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2949840527_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2949840527",
+        "title": "On the partition function of the Riemann zeta function, and the Fyodorov--Hiary--Keating conjecture",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2019,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 358,
+          "line_end": 365,
+          "text": "                                                             P           f (n) 2\n(f (p))p≤P , by independence we can simply replace | n≤T 1/2−2ǫ , n1/2+ih      | by its expec-\n                                                                  n is P rough\ntation, which is ≍ (log T )/ log P . The remaining integral is (more or less) exactly of\n              R 1/2\nthe form E1G −1/2 |F (1/2 + ih)|2 dh, with x replaced by P , and deploying the existing\nestimate for that completes the proof.\n\n",
+          "sha256": "bde3fd24c07551d7abbe62c00eda45484367419f7f111f31552c29416aea9810"
+        },
+        "after": {
+          "line_start": 486,
+          "line_end": 493,
+          "text": "\n\n1.2. Comparisons and possible improvements. A main diﬀerence between the\nproofs of Theorems 1 and 2, and previous work on the Fyodorov–Hiary–Keating con-\njecture, lies in the way we approximate the zeta function by Dirichlet polynomials.\n                                                            1\n                                          P\nIn our approximations we keep the term      n≤T 1/2−2ǫ , n1/2+it around. This is never\n",
+          "sha256": "70eae4639fa312424af7494db684e399cce058fad44e11ba30fdf71065158b83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b1bc3723328d7f362977459bec615caa2def5f65a8070ea90f2f96d081d32429",
+        "dossier_sha256": "4f3bacc8c425d9d520b6b53ddb666d1cf9834fa0c573a9d62a5921fdc5ee28a3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof ideas",
+            "line_end": 487,
+            "line_start": 222,
+            "mathematical_role": "Develops the random Euler-product analogy, smooth/rough factorization, barrier-event derandomization, and additional ingredients for the maximum theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 485,
+          "line_start": 366,
+          "title": "Cauchy localization and a lower smooth-factor barrier convert maxima into a ballot problem",
+          "unit_id": "openalex_w2949840527_v2_u06",
+          "unit_type": "maximum-proof-blueprint",
+          "why_material": "For Theorem 2, Cauchy’s formula replaces an unknown maximizing point by integrals around a 1/log T rectangle. A fourth-moment argument shows a large total product usually forces the smooth factor above a threshold; after derandomization this becomes a terminal lower barrier, and a Gaussian ballot estimate yields the characteristic 3/4 saving."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the stated union-bound efficiency, fourth-moment loss V, strengthened good event, and two barrier savings. The argument’s current non-sharpness is traced to the rough-factor fourth moment.",
+          "representation_dependency": "Contour size, smooth/rough thresholds, V powers, and log-log exponents are extraction-sensitive and must be PDF-verified.",
+          "unit_id": "openalex_w2949840527_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 364,
+            "line_start": 222,
+            "title": "A smooth/rough factorization isolates Euler-product structure without discarding large primes",
+            "unit_id": "openalex_w2949840527_v2_u05",
+            "unit_type": "derandomization-blueprint",
+            "why_material": "The proof approximates ζ by a Dirichlet polynomial, then in mean square by a product of a short P-smooth sum and a longer P-rough sum. Only the smooth factor is converted to an Euler product and compared with a Steinhaus model; the independent rough factor contributes its mean square. Multiscale good events and a recursive q argument import the critical-chaos saving."
+          },
+          {
+            "line_end": 552,
+            "line_start": 488,
+            "title": "Keeping the rough factor preserves scale, while multi-band factorization may reduce the main loss",
+            "unit_id": "openalex_w2949840527_v2_u07",
+            "unit_type": "method-comparison-and-speculative-improvement",
+            "why_material": "Unlike earlier approaches that shorten prime sums or shift off the critical line, this method retains the large-prime contribution and pays for it only through mean-square control. The author proposes—without checked details—splitting into more prime bands so successive largeness transfers incur smaller losses."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Cauchy localization turns a point maximum into averaged contour mass; the fourth-moment lemma forces that mass through a large smooth factor, so after derandomization the problem is a Gaussian path staying below an upper barrier and ending in a narrow high window, yielding the 3/4 correction.",
+            "limit": "This proves only an upper tail with iterated-log losses; the full FHK distribution and matching lower tail remain conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u06",
+              "openalex_w2949840527_v2_u18",
+              "openalex_w2949840527_v2_u19",
+              "openalex_w2949840527_v2_u20",
+              "openalex_w2949840527_v2_u21",
+              "openalex_w2949840527_v2_u24",
+              "openalex_w2949840527_v2_u25"
+            ],
+            "title": "A local maximum becomes a two-barrier path event"
+          },
+          {
+            "claim": "The non-sharp factor originates largely in exporting largeness across one coarse smooth/rough split by a fourth moment. Introducing several prime bands could transfer largeness incrementally and shrink this loss, but a sharp result would also require stronger probabilistic and rough-factor control.",
+            "limit": "The multi-band method is an unchecked proposal in the source, not an implemented theorem or validated improvement.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u04",
+              "openalex_w2949840527_v2_u06",
+              "openalex_w2949840527_v2_u07",
+              "openalex_w2949840527_v2_u08",
+              "openalex_w2949840527_v2_u18"
+            ],
+            "title": "The principal loss has a concrete multi-scale repair proposal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2949840527_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2949840527_v2_u06",
+          "spontaneous_reading": "A pointwise maximum is made averageable by Cauchy localization, then a fourth-moment sieve forces any surviving large value through the structured smooth factor. The added lower endpoint turns the familiar upper barrier into a ballot event and creates the 3/4 correction."
+        },
+        "directed": {
+          "unit_id": "openalex_w2949840527_v2_u06",
+          "source_grounded_mathematics": "Cauchy's formula replaces the unknown maximizing value by contour integrals around a box of side about 1/log T. After smooth/rough factorization, a fourth-moment estimate removes cases where the smooth factor is at most log P/V. On the good event, the remaining smooth factor satisfies both upper partial-product barriers and a terminal lower bound; a random ballot estimate supplies two savings.",
+          "conceptual_reading": "Localization converts an existential point into distributed mass that can be averaged. Largeness transfer then routes that mass into the representation with usable multiscale structure, where the terminal constraint changes the probability geometry.",
+          "representation_or_bridge": "The chain is maximum -> Cauchy contour integral -> smooth/rough product -> lower smooth-factor barrier -> Gaussian path event. The integrand is squared, so the path-level exponent translates to the 3/4 denominator in the zeta threshold.",
+          "boundary_or_failure": "The fourth-moment transfer pays a rough-factor loss and is identified as a principal source of non-sharpness. The argument gives an upper tail, not a matching maximum lower bound or the full FHK law.",
+          "uncertainty": "The mechanism is well supported, but contour dimensions, V powers, and log-log exponents require PDF verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2949840527_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span uses Cauchy's formula to localize an unknown maximizer to integrals over a 1/log T rectangle and explains how interval enlargement and summation remove its unknown position.",
+          "A fourth-moment estimate discards cases with a small smooth factor; the surviving random restriction combines upper partial-product control with a terminal lower bound and yields the stated 3/4 denominator.",
+          "The source identifies the V loss in the fourth-moment transfer as a key reason the result is not sharp."
+        ],
+        "inference": [
+          "Describing the terminal lower bound as changing the probability geometry is a reasonable abstraction."
+        ],
+        "unsupported_or_imported": [
+          "The labels 'Gaussian path event' and 'random ballot estimate' characterize Probability Result 1 using material stated only later, outside this unit's evidence span.",
+          "The phrase 'supplies two savings' is more specific than this span's own opaque reference to Probability Result 1 and machinery from earlier work."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Contour dimensions, V powers, thresholds, and log-log exponents are extraction-sensitive."
+        ],
+        "missed_mechanism": [
+          "Within this span the safe endpoint is the stated upper-barrier plus lower-threshold random estimate, not its later Gaussian proof representation."
+        ],
+        "revision_instructions": [
+          "Replace 'ballot' and 'Gaussian path' language with 'the restricted random estimate in Probability Result 1 and the cited machinery.' Describe the upper barrier and terminal lower threshold without asserting the later three-block Gaussian mechanism. Retain the fourth-moment bottleneck and one-sidedness caveats."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "73df23fd64e9eae310949d39c98d226dd684a9fd8798e19ae029d1ce7d4956bd"
+}

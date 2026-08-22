@@ -1,0 +1,1971 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w4390813842_14cfc180_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4390813842",
+  "unit_count": 12,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the height envelope at lines 178–185; no outside source is needed for the stated dependency structure.",
+      "line_end": 177,
+      "line_start": 136,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The formula for the imported intermediate region is text-layer fragile; its conceptual role and comparisons are clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows why the classical improvement and a separate intermediate bound are both needed to support the global theorem, and connects the intermediate geometry to a critical-line growth estimate.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite RH verification, auxiliary smoothing, and an intermediate region",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u06.txt",
+      "unit_bytes": 3283,
+      "unit_id": "full_openalex_w4390813842_u06",
+      "unit_sha256": "aca8ddc3b7c05b69494cdaae5485b6602077af3162152e87dc8c95161c9927a0",
+      "unit_type": "bridge construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u06.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 128,
+          "line_end": 135,
+          "text": "\n<!-- source-page: 3 -->\n\nM. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                              Page 3 of 27   11\n\n\n\n\n",
+          "sha256": "92ed6780e2fcbbed20b1191371ccb9c44fa48e335819cf5b8dc29446905c8785"
+        },
+        "after": {
+          "line_start": 178,
+          "line_end": 185,
+          "text": "                    By combining these results, we may summarize the largest known zero-free region for\n                  the Riemann zeta-function within the critical strip for each height t. For |t| ≤ 3 · 1012 , all\n                  zeros are known to lie on the critical line. The region of Theorem 1.3 provides the best\n                  known bound for 3 · 1012 < |t| ≤ exp(64.1), then for exp(64.1) < |t| ≤ exp(1000) the\n                  expression (1.8) produces the widest region. (The ﬁrst value changes to exp(46.1) when\n                  we use 0.618 in place of 3 in the bound for |ζ (1/2 + it)|.) After this, for exp(1000) <\n                  |t| ≤ exp(52242), Theorem 1.4 is best, and for |t| > exp(52242) the result of Theorem 1.1\n                  produces the widest known region.\n",
+          "sha256": "572991aaa23a5d9d3d9050695cc1e7a22d9f45a5caabbc5b77cbc3d4d0c83f1c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Introduction",
+            "line_end": 204,
+            "line_start": 36,
+            "mathematical_role": "Defines the classical and Korobov–Vinogradov regimes, compares prior constants, states Theorems 1.1–1.4, identifies improvement levers, and splices the best known regions by height."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 177,
+          "line_start": 136,
+          "title": "Finite RH verification, auxiliary smoothing, and an intermediate region",
+          "unit_id": "full_openalex_w4390813842_u06",
+          "unit_type": "bridge construction",
+          "why_material": "Shows why the classical improvement and a separate intermediate bound are both needed to support the global theorem, and connects the intermediate geometry to a critical-line growth estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the height envelope at lines 178–185; no outside source is needed for the stated dependency structure.",
+          "representation_dependency": "The formula for the imported intermediate region is text-layer fragile; its conceptual role and comparisons are clear from prose.",
+          "unit_id": "full_openalex_w4390813842_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 125,
+            "line_start": 96,
+            "title": "Five sources of all-height gain and three asymptotic bottlenecks",
+            "unit_id": "full_openalex_w4390813842_u05",
+            "unit_type": "method comparison",
+            "why_material": "Distinguishes gains from polynomial degree, secondary-term tuning, intermediate regions, sharper zeta growth, and verified RH height, while isolating smoothing, polynomial, and Richert-bound routes for asymptotic improvement."
+          },
+          {
+            "line_end": 185,
+            "line_start": 178,
+            "title": "Best-known zero-free envelope by height",
+            "unit_id": "full_openalex_w4390813842_u07",
+            "unit_type": "piecewise synthesis",
+            "why_material": "Explicitly splices verified RH, the classical region, Ford's intermediate region, Theorem 1.4, and Theorem 1.1 into a height-indexed envelope."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u06",
+          "spontaneous_reading": "Finite verification and analytic estimates occupy complementary height regimes. Verified RH through 3·10^12 and a different smoother widen the classical region, while a sub-Weyl critical-line estimate creates a separate intermediate boundary needed before the Korobov–Vinogradov region takes over."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u06",
+          "source_grounded_mathematics": "Theorem 1.3 gives σ≥1−1/(5.558691 log|t|) for |t|≥2. Theorem 1.4 gives an intermediate region for |t|≥exp(1000), expressed using h(t)=(27/164)log|t|+7.096. The unit also recalls Ford's auxiliary region (1.8) and notes that replacing the leading critical-line constant 3 by 0.618 sharpens it.",
+          "conceptual_reading": "No single boundary is uniformly best. The argument constructs bridge regions whose role is to cover the finite interval where an asymptotically superior geometry has not yet become numerically superior.",
+          "representation_or_bridge": "The critical-line growth bound is transformed through its logarithm J(t) into a zero-free boundary; verified RH supplies the finite anchor, and the classical and intermediate formulas connect that anchor to the high-height regime.",
+          "boundary_or_failure": "The imported formula (1.8) is text-layer fragile, and the unit states rather than proves the cited RH verification and critical-line estimates.",
+          "uncertainty": "The conceptual comparisons are clear, but exact reuse of (1.8) should be checked against the rendered page because one nonzero glyph is degraded."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 1.3, Theorem 1.4, the roles of finite RH verification and a replacement smoother, Ford's auxiliary region, and the 3-to-0.618 improvement are present in the span.",
+          "The bridge-region reading is supported by the explicit explanation that intermediate bounds cover heights where the eventual formula is not yet best."
+        ],
+        "inference": [
+          "Treating verified RH as a finite anchor and the classical and intermediate formulas as connections to a high-height regime is a reasonable synthesis when the supplied after-context is included."
+        ],
+        "unsupported_or_imported": [
+          "Calling Patel's cited input 'sub-Weyl' is not supported in this frozen span; that classification and the explicit estimate occur elsewhere.",
+          "The discussion should not blur Ford's explicitly logarithm-derived J(t) with the separately cited Patel input to Theorem 1.4."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Formula (1.8) contains a degraded nonzero glyph and is unsafe for exact transcription from this text layer."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'sub-Weyl' with 'new cited critical-line growth bounds' in the spontaneous reading.",
+          "Distinguish the explicit logarithmic construction of Ford's J(t) from the separate Patel-based route to Theorem 1.4, and retain the scan warning for (1.8)."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These inputs are consumed by Lemmas 4.3–4.7.",
+      "line_end": 255,
+      "line_start": 230,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed exponents and the numerator in (3.2) should be verified from scan for exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies Richert's bound as the sensitive inside-strip input and a right-of-one zeta estimate as the companion bound, making explicit which constants feed the eventual region.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-one-line growth bounds as detector inputs",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u08.txt",
+      "unit_bytes": 1788,
+      "unit_id": "full_openalex_w4390813842_u08",
+      "unit_sha256": "9f35c4d42dc103ba8a3458aae99bb094ef1d0ce0afdc2925775297de15e89998",
+      "unit_type": "analytic input",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u08.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 222,
+          "line_end": 229,
+          "text": "                         d=                              .\n                                  22 · 34 · c 3\n                    With c = 48.1588 from Theorem 1.2, we obtain d ≥ 0.2123, improving on the current\n                    best value of 0.2098.\n\n                    3 Preliminaries\n                    To assist in our argument we review the following results from the literature.\n\n",
+          "sha256": "1f91cd13d9da2ac3cf732be6886d4b7c8edff793c6de2e55cf41b16dae8521c5"
+        },
+        "after": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "\n                  3.2 Bounds on ζ(s) on the half-line\n                  We recall the recent sub-Weyl bound due to Patel [23]: for |t| ≥ 3, we have\n                       |ζ ( 12 + it)| ≤ 307.098|t|27/164 .                                                  (3.3)\n                  This is required in the proof of Theorem 1.4 in Sect. 6.\n\n                  3.3 Trigonometric polynomials\n                  For any K ≥ 2, let\n",
+          "sha256": "f6132a8a04b4af451f42c3720df0809ec91d07639dbbc5d7bb0734abcceccb1d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Preliminaries",
+            "line_end": 311,
+            "line_start": 227,
+            "mathematical_role": "Collects near-one-line, critical-line, trigonometric-polynomial, and zero-counting inputs used by the detector arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 255,
+          "line_start": 230,
+          "title": "Near-one-line growth bounds as detector inputs",
+          "unit_id": "full_openalex_w4390813842_u08",
+          "unit_type": "analytic input",
+          "why_material": "Identifies Richert's bound as the sensitive inside-strip input and a right-of-one zeta estimate as the companion bound, making explicit which constants feed the eventual region."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These inputs are consumed by Lemmas 4.3–4.7.",
+          "representation_dependency": "Displayed exponents and the numerator in (3.2) should be verified from scan for exact transcription.",
+          "unit_id": "full_openalex_w4390813842_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 225,
+            "line_start": 205,
+            "title": "Transferring zero-free constants to prime-distribution bounds",
+            "unit_id": "full_openalex_w4390813842_u02",
+            "unit_type": "applications of zero-free constants",
+            "why_material": "Immutable v1 unit showing two downstream transfers: a threshold for primes between cubes and a quantitative prime-number-theorem error constant."
+          },
+          {
+            "line_end": 260,
+            "line_start": 257,
+            "title": "Sub-Weyl critical-line bound for the intermediate regime",
+            "unit_id": "full_openalex_w4390813842_u09",
+            "unit_type": "analytic bridge",
+            "why_material": "Provides the critical-line growth estimate that enables Theorem 1.4's fixed-half-line detector configuration."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Near-one growth, zero counting, a two-line detector, and an autoconvolution smoother are modular inputs that compile into one inequality constraining any zero close to the 1-line.",
+            "limit": "The compilation is constant-sensitive and several displayed formulas need scan verification; it does not itself establish a zero-free region without a scale choice and extremal argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u08",
+              "full_openalex_w4390813842_u11",
+              "full_openalex_w4390813842_u12",
+              "full_openalex_w4390813842_u13",
+              "full_openalex_w4390813842_u18"
+            ],
+            "title": "Analytic inputs compiled into a zero-exclusion inequality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 229,
+              "line_start": 226,
+              "reason": "Whitespace, section transition, and one-sentence literature setup."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u08",
+          "spontaneous_reading": "The detector needs asymmetric control around σ=1: Richert's bound controls growth just inside the critical strip, while a near-pole estimate for ζ(σ) controls the line just to the right. The constant B in the inside-strip exponent is the sensitive input for the eventual region."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u08",
+          "source_grounded_mathematics": "For 1/2≤σ≤1 and |t|≥3, the source gives Richert-type control with explicit A=76.2 and B=4.45. For real σ>1 it records ζ(σ)≤e^(γ(σ−1))/(σ−1), with a good Maclaurin approximation near σ=1.",
+          "conceptual_reading": "Two one-sided estimates provide different resources: the inside estimate prices horizontal movement toward the critical line, and the outside estimate controls the pole-like cost beyond 1.",
+          "representation_or_bridge": "The constants A and B compress critical-strip growth into parameters that later enter the mollified detector, while the right-of-one bound supplies its companion vertical-line estimate.",
+          "boundary_or_failure": "These are imported analytic inputs, not a zero-free conclusion; the source only remarks that B might be slightly reducible.",
+          "uncertainty": "The mathematical roles are clear, but the assignment flags displayed exponents and the numerator of (3.2) for scan verification before exact transcription."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The Richert-type estimate, its domains, A=76.2 and B=4.45, the possible slight reduction of B, and the right-of-one estimate are all present.",
+          "The asymmetric one-sided-input reading is a legitimate interpretation of estimates taken inside and to the right of the 1-line."
+        ],
+        "inference": [
+          "Interpreting B as a sensitive growth parameter for later zero-free constants is consistent with the source's stated philosophy and earlier discussion."
+        ],
+        "unsupported_or_imported": [
+          "The assertions that A and B later enter a mollified detector and that the right-of-one estimate supplies a companion detector vertical line are not established in this span or its bounded context.",
+          "The metaphor that the inside estimate 'prices horizontal movement' is more specific than the mechanism shown here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'two resources' and 'interface' language risks a generic modularity template unless tied only to the stated zero-free-region role."
+        ],
+        "context_or_ocr_risk": [
+          "The Richert exponents and the numerator of (3.2) are formula-level transcription risks explicitly flagged by the packet."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Restrict the bridge claim to these being complementary analytic inputs for furnishing zero-free regions.",
+          "Remove the unshown mollified-detector routing and replace the horizontal-pricing metaphor with the explicit domains and constants of the two estimates."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Its role is developed in Section 6 rather than proved here.",
+      "line_end": 260,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Short displayed formula is legible but exact exponent and constant remain formula-level data.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the critical-line growth estimate that enables Theorem 1.4's fixed-half-line detector configuration.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sub-Weyl critical-line bound for the intermediate regime",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u09.txt",
+      "unit_bytes": 343,
+      "unit_id": "full_openalex_w4390813842_u09",
+      "unit_sha256": "8613ca2ab3b3d7767b5f6e5e5ae4ddc3892e31934b98f32d5efc14a8051c6942",
+      "unit_type": "analytic bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u09.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                             Page 5 of 27   11\n\n\n\n\n                  where γ is Euler’s constant. Using the Maclaurin series for ex one sees that the approxi-\n                  mation in (3.2) is very good.\n\n",
+          "sha256": "c2d9b8efda56ecffde81887c6c8a34743b8fab4738f7cb1ab8f815a180107bc8"
+        },
+        "after": {
+          "line_start": 261,
+          "line_end": 268,
+          "text": "\n                  3.3 Trigonometric polynomials\n                  For any K ≥ 2, let\n                                  \u0004\n                                  K\n                       PK (x) =         bk cos(kx)\n                                  k=0\n                  where bk are constants such that bk ≥ 0, b1 > b0 and PK (x) ≥ 0 for all real x. We refer to\n",
+          "sha256": "5d2c6a145ba4287292657997c06b36dbdc2243234744bb4978eb278231272c7d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Preliminaries",
+            "line_end": 311,
+            "line_start": 227,
+            "mathematical_role": "Collects near-one-line, critical-line, trigonometric-polynomial, and zero-counting inputs used by the detector arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 260,
+          "line_start": 257,
+          "title": "Sub-Weyl critical-line bound for the intermediate regime",
+          "unit_id": "full_openalex_w4390813842_u09",
+          "unit_type": "analytic bridge",
+          "why_material": "Provides the critical-line growth estimate that enables Theorem 1.4's fixed-half-line detector configuration."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Its role is developed in Section 6 rather than proved here.",
+          "representation_dependency": "Short displayed formula is legible but exact exponent and constant remain formula-level data.",
+          "unit_id": "full_openalex_w4390813842_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 255,
+            "line_start": 230,
+            "title": "Near-one-line growth bounds as detector inputs",
+            "unit_id": "full_openalex_w4390813842_u08",
+            "unit_type": "analytic input",
+            "why_material": "Identifies Richert's bound as the sensitive inside-strip input and a right-of-one zeta estimate as the companion bound, making explicit which constants feed the eventual region."
+          },
+          {
+            "line_end": 290,
+            "line_start": 262,
+            "title": "Non-negative trigonometric polynomials as constant-bearing proof objects",
+            "unit_id": "full_openalex_w4390813842_u10",
+            "unit_type": "auxiliary construction",
+            "why_material": "Defines the admissibility constraints, explains why polynomial choice controls region width, and records the degree-40 and degree-46 summaries used for the all-height and asymptotic theorems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A sub-Weyl bound can be inserted into a fixed-half-line detector, whose cancellation and transform monotonicity yield an intermediate region strong enough to bridge finite and asymptotic regimes.",
+            "limit": "The resulting O(1/log t) geometry is deliberately not asymptotically optimal and depends on the stated explicit critical-line estimate.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u09",
+              "full_openalex_w4390813842_u23",
+              "full_openalex_w4390813842_u24",
+              "full_openalex_w4390813842_u25",
+              "full_openalex_w4390813842_u26"
+            ],
+            "title": "Critical-line information becomes a finite-range bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u09",
+          "spontaneous_reading": "A single explicit sub-Weyl estimate on the critical line is isolated as the quantitative input for the fixed-half-line detector used in the intermediate regime."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u09",
+          "source_grounded_mathematics": "For |t|≥3, the source states |ζ(1/2+it)|≤307.098|t|^(27/164) and says this estimate is required for Theorem 1.4.",
+          "conceptual_reading": "Critical-line growth is not itself zero exclusion, but its exponent and leading constant determine the budget available when the detector samples a fixed boundary line.",
+          "representation_or_bridge": "Taking the logarithm of this pointwise power bound later yields the affine function J(t), which can be inserted into the detector inequality.",
+          "boundary_or_failure": "The estimate is cited rather than proved here, and the unit does not show how it propagates through Section 6.",
+          "uncertainty": "The short display is legible, though its constant and exponent remain formula-level data that should stay source-linked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states the sub-Weyl estimate |ζ(1/2+it)|≤307.098|t|^(27/164) for |t|≥3 and says it is required for Theorem 1.4."
+        ],
+        "inference": [
+          "It is reasonable to characterize the estimate as quantitative critical-line input rather than a zero-free conclusion."
+        ],
+        "unsupported_or_imported": [
+          "The 'fixed-half-line detector' characterization is not present in this four-line span.",
+          "The claim that taking the logarithm later yields an affine J(t) and inserts it into a detector imports a construction from a later section."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The constant and exponent are legible but remain exact formula-level data."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "State only that this cited critical-line estimate is required for Theorem 1.4 and that the present unit does not show the propagation mechanism.",
+          "Remove the claims about a fixed-half-line detector and J(t) from this unit's analysis."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Construction and search certification are supplied later in Section 8.",
+      "line_end": 290,
+      "line_start": 262,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Polynomial coefficient summaries are legible; full coefficient certificates are page-layout tables later in the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the admissibility constraints, explains why polynomial choice controls region width, and records the degree-40 and degree-46 summaries used for the all-height and asymptotic theorems.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Non-negative trigonometric polynomials as constant-bearing proof objects",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u10.txt",
+      "unit_bytes": 2274,
+      "unit_id": "full_openalex_w4390813842_u10",
+      "unit_sha256": "6173ebca1db1e5cf4fdb5fa70bdd230a1613d35bcee610e5be3ad111f6fecce3",
+      "unit_type": "auxiliary construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u10.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 254,
+          "line_end": 261,
+          "text": "                  where γ is Euler’s constant. Using the Maclaurin series for ex one sees that the approxi-\n                  mation in (3.2) is very good.\n\n                  3.2 Bounds on ζ(s) on the half-line\n                  We recall the recent sub-Weyl bound due to Patel [23]: for |t| ≥ 3, we have\n                       |ζ ( 12 + it)| ≤ 307.098|t|27/164 .                                                  (3.3)\n                  This is required in the proof of Theorem 1.4 in Sect. 6.\n\n",
+          "sha256": "1e1785b9fae554e871da29a3b1b13e78cf56e38cf1211fcd8bd25545ec07208d"
+        },
+        "after": {
+          "line_start": 291,
+          "line_end": 298,
+          "text": "\n                  3.4 Estimates of the zero-counting function\n                  We also require bounds on the error term of estimates of N (T ), the number of zeros of ζ (s)\n                  with 0 ≤ t < T . For large T , the current best known explicit result is due to Hasanalizade,\n                  Shen and Wong [12, Cor. 1.2], who proved that\n                       \u0005                      \u0005\n                       \u0005                      \u0005\n                       \u0005N (T ) − T log T \u0005 ≤ 0.1038 log T + 0.2573 log log T + 9.3675                      (3.8)\n",
+          "sha256": "dba8a47b113da676801156248f04e3a76749249f77d5654bfd929c3e00163dee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Preliminaries",
+            "line_end": 311,
+            "line_start": 227,
+            "mathematical_role": "Collects near-one-line, critical-line, trigonometric-polynomial, and zero-counting inputs used by the detector arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 290,
+          "line_start": 262,
+          "title": "Non-negative trigonometric polynomials as constant-bearing proof objects",
+          "unit_id": "full_openalex_w4390813842_u10",
+          "unit_type": "auxiliary construction",
+          "why_material": "Defines the admissibility constraints, explains why polynomial choice controls region width, and records the degree-40 and degree-46 summaries used for the all-height and asymptotic theorems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Construction and search certification are supplied later in Section 8.",
+          "representation_dependency": "Polynomial coefficient summaries are legible; full coefficient certificates are page-layout tables later in the source.",
+          "unit_id": "full_openalex_w4390813842_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 260,
+            "line_start": 257,
+            "title": "Sub-Weyl critical-line bound for the intermediate regime",
+            "unit_id": "full_openalex_w4390813842_u09",
+            "unit_type": "analytic bridge",
+            "why_material": "Provides the critical-line growth estimate that enables Theorem 1.4's fixed-half-line detector configuration."
+          },
+          {
+            "line_end": 303,
+            "line_start": 292,
+            "title": "Explicit zero-count error bound",
+            "unit_id": "full_openalex_w4390813842_u11",
+            "unit_type": "counting estimate",
+            "why_material": "Supplies the quantitative zero-counting error used to improve the tail sum over zeros and explicitly records where sharper local estimates are unnecessary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u10",
+          "spontaneous_reading": "A non-negative trigonometric polynomial is a tunable proof certificate: coefficient positivity preserves a later sign argument, while the summary values b0, b1, and b control the numerical width. Increasing degree expands the search space without abandoning the invariant."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u10",
+          "source_grounded_mathematics": "Admissible PK(x)=Σ bk cos(kx) satisfy bk≥0, b1>b0, and PK(x)≥0 for all real x. The source contrasts degree-4 and degree-5 predecessors with degree-40 and degree-46 polynomials, records their b0, b1, and coefficient-sum b values, and says they were found by simulated annealing.",
+          "conceptual_reading": "The polynomial packages an infinite sign condition and a finite set of numerical tradeoffs into one auxiliary object. Search can optimize constants while admissibility preserves the analytic proof mechanism.",
+          "representation_or_bridge": "The coefficient summaries are the interface between the searched polynomial and the detector inequalities; full coefficient tables provide the eventual certificate of non-negativity.",
+          "boundary_or_failure": "Simulated annealing does not certify a global optimum, and this span does not contain the full coefficient tables or their non-negativity justification.",
+          "uncertainty": "The summaries are legible; exact certification depends on the later page-layout tables."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The admissibility conditions bk≥0, b1>b0, and PK(x)≥0, the historical degree comparison, simulated annealing, and the degree-40 and degree-46 summaries are source-supported.",
+          "The source states that favorable polynomial choice materially affects zero-free-region size and that later tables and argument justify non-negativity."
+        ],
+        "inference": [
+          "Viewing the polynomial as a finite auxiliary object carrying a global sign condition is a sound conceptual compression.",
+          "Higher degree expands the available search space, although the source does not claim monotone improvement or optimality."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's specific routing of coefficient summaries into 'detector inequalities' is not shown in this span.",
+          "The full coefficient tables do not by themselves constitute the promised non-negativity certificate; the source separately promises details and a justification."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Packages an infinite sign condition' is useful only if retained as an inference rather than presented as an additional theorem."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed sums contain extraction glyph substitutions, while the recorded summary values are otherwise legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace detector-specific routing with the source's narrower claim that polynomial choice helps determine zero-free-region size.",
+          "Say that later tables plus the accompanying justification certify non-negativity, not that the tables alone do so."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bound is propagated into Lemma 4.6.",
+      "line_end": 303,
+      "line_start": 292,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The absolute-value display is visually fragmented but the stated constants and role are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies the quantitative zero-counting error used to improve the tail sum over zeros and explicitly records where sharper local estimates are unnecessary.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit zero-count error bound",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u11.txt",
+      "unit_bytes": 1004,
+      "unit_id": "full_openalex_w4390813842_u11",
+      "unit_sha256": "cae082172c51347640a0e9883edb09c64a9578254cb6ebff008ccb2319d8c239",
+      "unit_type": "counting estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u11.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 284,
+          "line_end": 291,
+          "text": "                  while Theorem 1.2 employs a polynomial P46 (x) with degree 46 where\n                                                                     \u0004\n                                                                     46\n                       b0 = 1,     b1 = 1.74708744081848,       b=         bk = 3.57440943022073.           (3.7)\n                                                                     k=1\n                  We show the full polynomials in Tables 1 and 2 in Sect. 8, and provide details there on the\n                  process used to ﬁnd these polynomials as well as a justiﬁcation that they are non-negative.\n\n",
+          "sha256": "8e9e2aa455a8fdbde9cbaf6ddadb6edaee81c210b7116a348551e91d99a02a7b"
+        },
+        "after": {
+          "line_start": 304,
+          "line_end": 311,
+          "text": "\n<!-- source-page: 6 -->\n\n11   Page 6 of 27                                                                   M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "09108eafbfb0c03487d01887555ed6174dce8bd9d2f591a54988a5e65eea7d9d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Preliminaries",
+            "line_end": 311,
+            "line_start": 227,
+            "mathematical_role": "Collects near-one-line, critical-line, trigonometric-polynomial, and zero-counting inputs used by the detector arguments."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 303,
+          "line_start": 292,
+          "title": "Explicit zero-count error bound",
+          "unit_id": "full_openalex_w4390813842_u11",
+          "unit_type": "counting estimate",
+          "why_material": "Supplies the quantitative zero-counting error used to improve the tail sum over zeros and explicitly records where sharper local estimates are unnecessary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bound is propagated into Lemma 4.6.",
+          "representation_dependency": "The absolute-value display is visually fragmented but the stated constants and role are recoverable.",
+          "unit_id": "full_openalex_w4390813842_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 290,
+            "line_start": 262,
+            "title": "Non-negative trigonometric polynomials as constant-bearing proof objects",
+            "unit_id": "full_openalex_w4390813842_u10",
+            "unit_type": "auxiliary construction",
+            "why_material": "Defines the admissibility constraints, explains why polynomial choice controls region width, and records the degree-40 and degree-46 summaries used for the all-height and asymptotic theorems."
+          },
+          {
+            "line_end": 347,
+            "line_start": 320,
+            "title": "Two-line integral detector for nearby zeros",
+            "unit_id": "full_openalex_w4390813842_u12",
+            "unit_type": "zero detector",
+            "why_material": "Transforms zeta growth information on lines bracketing sigma=1 into an identity with an explicit nearby-zero contribution, creating the central bridge from analytic bounds to exclusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Near-one growth, zero counting, a two-line detector, and an autoconvolution smoother are modular inputs that compile into one inequality constraining any zero close to the 1-line.",
+            "limit": "The compilation is constant-sensitive and several displayed formulas need scan verification; it does not itself establish a zero-free region without a scale choice and extremal argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u08",
+              "full_openalex_w4390813842_u11",
+              "full_openalex_w4390813842_u12",
+              "full_openalex_w4390813842_u13",
+              "full_openalex_w4390813842_u18"
+            ],
+            "title": "Analytic inputs compiled into a zero-exclusion inequality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 319,
+              "line_start": 304,
+              "reason": "Page artifacts and global notation/hypotheses for Section 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u11",
+          "spontaneous_reading": "An explicit error bound for the zero-counting function is selected not as an end result but as a way to price the remote-zero tail in the detector. The authors deliberately stop at a globally adequate bound even though sharper local variants exist."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u11",
+          "source_grounded_mathematics": "The source bounds the deviation of N(T) from its main term by 0.1038 log T+0.2573 log log T+9.3675 for T≥e. It notes improvements in verified-RH and intermediate ranges but says this form is best available at very large T and sufficient for the application.",
+          "conceptual_reading": "A counting theorem becomes an error-control module: global zero density is converted into a bound on a weighted sum over zeros far from the detector center.",
+          "representation_or_bridge": "The explicit main-term error is propagated into Lemma 4.6, where it controls the remote-zero contribution rather than locating any individual zero.",
+          "boundary_or_failure": "The unit does not perform that propagation, and the displayed absolute-value expression is visually fragmented.",
+          "uncertainty": "The constants and stated role are recoverable, but exact formatting of the main term should be checked visually before reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The explicit error bound, its constants and T≥e domain, the availability of sharper bounds in some ranges, and the claimed adequacy at very large height are accurately reported."
+        ],
+        "inference": [
+          "Treating a zero-count error estimate as an error-control input is consistent with the introductory sentence that such bounds are required."
+        ],
+        "unsupported_or_imported": [
+          "The remote-zero weighted-tail role and propagation into Lemma 4.6 are not shown in this exact span or bounded context; they come from the dossier or later source.",
+          "The candidate therefore overstates which downstream mechanism this unit independently supports."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Error-control module' is generic unless the unshown remote-tail mapping is removed or separately evidenced."
+        ],
+        "context_or_ocr_risk": [
+          "The absolute-value display and main term are visually fragmented and require page verification before exact reuse."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the explicit N(T) error estimate and the authors' adequacy comparison, but remove the remote-tail and Lemma 4.6 claims.",
+          "State that its precise later use is outside this frozen span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The direct detector is immediately mollified in the following construction.",
+      "line_end": 347,
+      "line_start": 320,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral and cotangent formulas contain extraction glyph substitutions; conceptual structure is reliable, exact symbols require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms zeta growth information on lines bracketing sigma=1 into an identity with an explicit nearby-zero contribution, creating the central bridge from analytic bounds to exclusion.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-line integral detector for nearby zeros",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u12.txt",
+      "unit_bytes": 2170,
+      "unit_id": "full_openalex_w4390813842_u12",
+      "unit_sha256": "ace5ea6d06a38257b5d44d31bab4ed54f52368122e2dc5774c9bdd2eb4e81c60",
+      "unit_type": "zero detector",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u12.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 312,
+          "line_end": 319,
+          "text": "                    4 Required lemmas\n                    Before proceeding to the proof of Theorem 1.1 in the next section, we review some useful\n                    lemmas. Throughout, let\n                         L1 = L1 (t) = log(Kt + 1),       L2 = L2 (t) = log log(Kt + 1),\n                    where K is the degree of the trigonometric polynomial under consideration. Let b0 , b1 and\n                    b be as in (3.6) or (3.7). In addition, assume throughout that (3.1) holds. Unless otherwise\n                    stated, our results will remain valid for all A, B > 0 for which (3.1) holds. Since ζ (s) = ζ (s),\n                    it suﬃces to consider only t > 0 throughout.\n",
+          "sha256": "c4814918409b5523749891700d24fbaa2a64c4972ebf8560b7a24888f6085ef2"
+        },
+        "after": {
+          "line_start": 348,
+          "line_end": 355,
+          "text": "                      As is common practice, instead of working directly with Lemma 4.1, we consider a\n                    “molliﬁed” version, presented in Lemma 4.2. The choice of the smoothing function f sig-\n                    niﬁcantly inﬂuences the eventual zero-free region constant. As in Ford [10], we base our\n                    choice of f on Lemma 7.5 of Heath-Brown [13]. Jang and Kwon [16] obtained improve-\n                    ments for the classical zero-free region by choosing a diﬀerent molliﬁer described by\n                    Xylouris in [37], however we ﬁnd that such a choice of f did not produce signiﬁcant\n                    improvements here for the Korobov–Vinogradov zero-free region.\n                      We construct the smoothing function the same way as Ford [10], which we brieﬂy\n",
+          "sha256": "5d084fe1227d6de48387c7240f85064e01daf8ee60f9cb949cb6ced0258b24ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Required lemmas",
+            "line_end": 676,
+            "line_start": 312,
+            "mathematical_role": "Builds the zero-detector, autoconvolution smoothing kernel, Laplace-transform remainder bounds, zero-count estimates, and the combined inequality for a hypothetical zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 347,
+          "line_start": 320,
+          "title": "Two-line integral detector for nearby zeros",
+          "unit_id": "full_openalex_w4390813842_u12",
+          "unit_type": "zero detector",
+          "why_material": "Transforms zeta growth information on lines bracketing sigma=1 into an identity with an explicit nearby-zero contribution, creating the central bridge from analytic bounds to exclusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The direct detector is immediately mollified in the following construction.",
+          "representation_dependency": "Integral and cotangent formulas contain extraction glyph substitutions; conceptual structure is reliable, exact symbols require scan verification.",
+          "unit_id": "full_openalex_w4390813842_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 292,
+            "title": "Explicit zero-count error bound",
+            "unit_id": "full_openalex_w4390813842_u11",
+            "unit_type": "counting estimate",
+            "why_material": "Supplies the quantitative zero-counting error used to improve the tail sum over zeros and explicitly records where sharper local estimates are unnecessary."
+          },
+          {
+            "line_end": 455,
+            "line_start": 348,
+            "title": "Autoconvolution mollifier and Laplace remainder control",
+            "unit_id": "full_openalex_w4390813842_u13",
+            "unit_type": "smoothing construction",
+            "why_material": "Builds a non-negative compactly supported smoothing function from an autoconvolution, derives its Laplace transform, corrects an inherited formula, and bounds the transform remainder needed by the mollified detector."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Near-one growth, zero counting, a two-line detector, and an autoconvolution smoother are modular inputs that compile into one inequality constraining any zero close to the 1-line.",
+            "limit": "The compilation is constant-sensitive and several displayed formulas need scan verification; it does not itself establish a zero-free region without a scale choice and extremal argument.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u08",
+              "full_openalex_w4390813842_u11",
+              "full_openalex_w4390813842_u12",
+              "full_openalex_w4390813842_u13",
+              "full_openalex_w4390813842_u18"
+            ],
+            "title": "Analytic inputs compiled into a zero-exclusion inequality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 319,
+              "line_start": 304,
+              "reason": "Page artifacts and global notation/hypotheses for Section 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u12",
+          "spontaneous_reading": "The zero detector turns a local logarithmic derivative into two kinds of evidence: a difference of log|ζ| integrals on vertical lines bracketing σ=1 and an explicit sum over zeros within distance η. The pole contribution disappears at the chosen center s=1+it."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u12",
+          "source_grounded_mathematics": "Lemma 4.1 represents −ζ'/ζ(s), for s=1+it, using weighted vertical-line integrals at real parts 1−η and 1+η plus cotangent terms from zeros with |s−ρ|≤η. It holds for η>0 outside a measure-zero exceptional set.",
+          "conceptual_reading": "The identity is a localization device: analytic growth on two accessible boundaries is made to expose nearby spectral objects, namely zeros, with distance-sensitive contributions.",
+          "representation_or_bridge": "The cosh-weighted two-line integral bridges pointwise zeta bounds to a local zero constraint; the following mollification makes the detector compatible with positivity and explicit remainder bounds.",
+          "boundary_or_failure": "The identity alone does not exclude zeros, and the exact integral and cotangent symbols are degraded in extraction.",
+          "uncertainty": "Its structural content, pole cancellation, and exceptional-set qualification are clear; exact symbolic transcription requires the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 4.1's two vertical-line integrals, nearby-zero cotangent sum, measure-zero qualification, and cancellation of the pole contribution at s=1+it are all supported.",
+          "The localization reading follows from the distance-restricted zero sum and boundary integrals."
+        ],
+        "inference": [
+          "Calling the identity a bridge from analytic boundary information to a local zero constraint is a grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the following mollification supplies compatibility with positivity and explicit remainder bounds goes beyond the bounded after-context, which only announces a mollified version and discusses smoother choice."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Integral, logarithmic-derivative, real-part, and cotangent symbols are degraded; only the structural identity is safe without scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace the detailed downstream mollification claim with the source-supported statement that the next construction considers a mollified version whose smoother affects the final constant."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The component map at lines 496–525 is essential context for the long display.",
+      "line_end": 525,
+      "line_start": 457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The central inequality is formula-heavy and text-layer fragile; the decomposition is prose-recoverable and suitable for semantic use pending scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the inequality that combines a smoothed Dirichlet sum, nearby-zero terms, two vertical-line integrals, and a remote-zero tail, then maps each component to its later bounding lemma.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mollified detector inequality and error-budget decomposition",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u14.txt",
+      "unit_bytes": 4713,
+      "unit_id": "full_openalex_w4390813842_u14",
+      "unit_sha256": "98f3bba7f008b825f9c3176c4defc5b350d5f142ca1cee7821ee39555d3ea87d",
+      "unit_type": "mollified zero detector",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u14.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 449,
+          "line_end": 456,
+          "text": "                        |F0 (z)| ≤ C5 (R)        , \u0006z ≥ 0, |z| ≥ (R + 1)λ,\n                                           |z|2\n                    where\n                                   H(R)(R + 1)2         1\n                        C5 (R) :=                  +1+ .                                                                 (4.7)\n                                       R3 w(0)          R\n                    The motivation for bounding |F0 (z)| is shown in the next lemma.\n\n",
+          "sha256": "445fe988887e69553ad4cd1b61c5663a994f5dd190a3bbd200eee70cd018c67b"
+        },
+        "after": {
+          "line_start": 526,
+          "line_end": 533,
+          "text": "\n                  Lemma 4.3 (Ford [10]) Suppose that, for ﬁxed 12 ≤ σ < 1 and t ≥ 3, we have\n\n                        |ζ (σ + iτ )| ≤ Xt Y logZ t,            ∀ 1 ≤ |τ | ≤ t,\n\n                  where X, Y, Z are positive constants and Y + Z > 0.1. If 0 < a ≤ 12 , t ≥ 100 and\n                  1             −1\n                  2 ≤ σ ≤ 1 − t , then\n",
+          "sha256": "a48786d3a6fb035fa722ff8b0ae1f462064e160675e9b0e5b5f9df48d18c2082"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Required lemmas",
+            "line_end": 676,
+            "line_start": 312,
+            "mathematical_role": "Builds the zero-detector, autoconvolution smoothing kernel, Laplace-transform remainder bounds, zero-count estimates, and the combined inequality for a hypothetical zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 525,
+          "line_start": 457,
+          "title": "Mollified detector inequality and error-budget decomposition",
+          "unit_id": "full_openalex_w4390813842_u14",
+          "unit_type": "mollified zero detector",
+          "why_material": "States the inequality that combines a smoothed Dirichlet sum, nearby-zero terms, two vertical-line integrals, and a remote-zero tail, then maps each component to its later bounding lemma."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The component map at lines 496–525 is essential context for the long display.",
+          "representation_dependency": "The central inequality is formula-heavy and text-layer fragile; the decomposition is prose-recoverable and suitable for semantic use pending scan verification.",
+          "unit_id": "full_openalex_w4390813842_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 455,
+            "line_start": 348,
+            "title": "Autoconvolution mollifier and Laplace remainder control",
+            "unit_id": "full_openalex_w4390813842_u13",
+            "unit_type": "smoothing construction",
+            "why_material": "Builds a non-negative compactly supported smoothing function from an autoconvolution, derives its Laplace transform, corrects an inherited formula, and bounds the transform remainder needed by the mollified detector."
+          },
+          {
+            "line_end": 538,
+            "line_start": 527,
+            "title": "Turning pointwise critical-strip growth into a smoothed vertical-line bound",
+            "unit_id": "full_openalex_w4390813842_u15",
+            "unit_type": "integral bound",
+            "why_material": "Packages a pointwise zeta growth estimate into exactly the weighted logarithmic integral required by the detector."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 456,
+              "line_start": 456,
+              "reason": "Blank transition into Lemma 4.2."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u14",
+          "spontaneous_reading": "Mollification reorganizes the zero detector into an error budget with named modules: a smoothed Dirichlet sum, nearby-zero transform terms, an inside-strip integral, an outside-strip integral, and a remote-zero tail. The prose identifies which later lemma controls each component and which one dominates."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u14",
+          "source_grounded_mathematics": "Lemma 4.2 bounds a smoothed von Mangoldt Dirichlet sum using nearby-zero terms, two cosh-weighted vertical-line integrals, and a D-weighted tail over remote zeros; it also gives a separate upper bound for the unsigned smoothed sum. The source says the inside-strip integral is dominant and sensitive to Richert's A and B.",
+          "conceptual_reading": "The long inequality is a compilation interface: heterogeneous analytic inputs can be improved independently, then recombined without redesigning the entire proof.",
+          "representation_or_bridge": "Lemma 4.3 handles inside-strip growth, Lemma 4.4 aggregates the outside line by polynomial positivity, Lemmas 4.5–4.6 control remote zeros, and Lemma 4.7 performs the final assembly.",
+          "boundary_or_failure": "This decomposition is not itself a zero-free region; it still needs a polynomial, a scale choice, a zero-free rectangle, and a contradiction argument.",
+          "uncertainty": "The semantic component map is prose-supported, but the central displayed inequality is text-layer fragile."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u14",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 4.2 and the prose decomposition identify the smoothed Dirichlet sum, nearby-zero transform terms, two vertical-line integrals, and a remote-zero tail.",
+          "The source explicitly maps these components to Lemmas 4.3 through 4.7 and identifies the inside-strip integral as dominant and sensitive to A and B."
+        ],
+        "inference": [
+          "Describing the inequality as a compilation interface for independently bounded analytic components is a grounded non-paraphrase synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The boundary statement specifically requiring a later scale choice, zero-free rectangle, and contradiction argument imports proof stages not introduced in this unit."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The central inequality is formula-heavy and text-layer fragile, although the component map is prose-recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the supported conclusion that this is not yet a zero-free region, but replace the unintroduced list of later prerequisites with the source's own statement that the component bounds and Lemma 4.7 assembly remain to be carried out."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the general-degree version used by Lemma 4.7.",
+      "line_end": 549,
+      "line_start": 540,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summed integral is formula-dependent but its sign, inputs, and purpose are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses polynomial coefficient positivity to combine shifted log-zeta terms and control the detector's outside-strip integral without bounding each shift separately.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Non-negative polynomial cancellation outside the critical strip",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u16.txt",
+      "unit_bytes": 647,
+      "unit_id": "full_openalex_w4390813842_u16",
+      "unit_sha256": "3896368af5dd6022f904ef9349edffb7afd6cf4284876fc99a6a7dc882bfdda6",
+      "unit_type": "positivity aggregation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u16.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 532,
+          "line_end": 539,
+          "text": "                  1             −1\n                  2 ≤ σ ≤ 1 − t , then\n                        \u0006\n                      1 ∞ log|ζ (σ + it + iau)|\n                                                   du ≤ log X + Y log t + Z log log t.\n                      2 −∞          cosh2 u\n                  Proof See [10, Lemma 3.4].\n\n",
+          "sha256": "e64fefcf2f36f54409312a764ea5aaa70e7e388a2bbf44ed418f8c410e28a64e"
+        },
+        "after": {
+          "line_start": 550,
+          "line_end": 557,
+          "text": "\n\n                  Lemma 4.5 If 0 < η ≤ 1/4, t ≥ 100, and (3.1) holds for some A > 1 and B > 0, then\n                                                                            log A − log η + 23 log log t\n                        N (t, η) ≤ 1.3478η3/2 B log t + 0.479 +                                          .\n                                                                                      1.879\n                  Proof Same as in [10, Lemma 4.2].3 Using η in place of R in Ford’s treatment, we replace\n                  the second inequality in (4.1) of [10] with\n",
+          "sha256": "a3dfc13f0a7a2b465f5f05a0b0213b6b15c25519b6283f261ec1c65f66c819c4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Required lemmas",
+            "line_end": 676,
+            "line_start": 312,
+            "mathematical_role": "Builds the zero-detector, autoconvolution smoothing kernel, Laplace-transform remainder bounds, zero-count estimates, and the combined inequality for a hypothetical zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 549,
+          "line_start": 540,
+          "title": "Non-negative polynomial cancellation outside the critical strip",
+          "unit_id": "full_openalex_w4390813842_u16",
+          "unit_type": "positivity aggregation",
+          "why_material": "Uses polynomial coefficient positivity to combine shifted log-zeta terms and control the detector's outside-strip integral without bounding each shift separately."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the general-degree version used by Lemma 4.7.",
+          "representation_dependency": "The summed integral is formula-dependent but its sign, inputs, and purpose are clear.",
+          "unit_id": "full_openalex_w4390813842_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 538,
+            "line_start": 527,
+            "title": "Turning pointwise critical-strip growth into a smoothed vertical-line bound",
+            "unit_id": "full_openalex_w4390813842_u15",
+            "unit_type": "integral bound",
+            "why_material": "Packages a pointwise zeta growth estimate into exactly the weighted logarithmic integral required by the detector."
+          },
+          {
+            "line_end": 583,
+            "line_start": 552,
+            "title": "Repairing the local zero-count estimate without shrinking eta",
+            "unit_id": "full_openalex_w4390813842_u17",
+            "unit_type": "error correction and zero-count bound",
+            "why_material": "Derives an improved explicit bound for zeros near 1+it and corrects a hypothesis mismatch in Ford by substituting a different right-of-one zeta estimate."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u16",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u16",
+          "spontaneous_reading": "Polynomial positivity creates cancellation across shifted outside-strip log-zeta terms, allowing their weighted aggregate to be bounded from below without estimating every shift independently."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u16",
+          "source_grounded_mathematics": "For coefficients bj of a degree-K non-negative trigonometric polynomial, Lemma 4.4 lower-bounds the sum of cosh-weighted integrals of log|ζ(1+η+ijt1+iut2)| by −2b0 log ζ(1+η).",
+          "conceptual_reading": "The auxiliary polynomial converts many potentially awkward terms into one sign-controlled aggregate; global positivity is more useful than separate pointwise estimates.",
+          "representation_or_bridge": "This is the outside-strip counterpart to Lemma 4.3 and is inserted into the general-degree detector assembly of Lemma 4.7.",
+          "boundary_or_failure": "The result depends on polynomial admissibility and bounds only the combined expression, not each shifted zeta term.",
+          "uncertainty": "The sign, inputs, and role are clear, though exact layout of the summed integral is formula-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "Lemma 4.4 gives the stated aggregate lower bound for shifted log-zeta integrals weighted by coefficients of a non-negative trigonometric polynomial.",
+          "It supports the key distinction that only the combined expression, not every shifted term, is controlled."
+        ],
+        "inference": [
+          "Interpreting polynomial positivity as enabling aggregate sign control is a grounded conceptual reading of the lemma."
+        ],
+        "unsupported_or_imported": [
+          "The exact description as the outside-strip counterpart to Lemma 4.3 and its insertion into Lemma 4.7 are not stated in this span or bounded context.",
+          "The word 'cancellation' is interpretive because the proof is only cited as an immediate generalization and is not shown here."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The summed integral is extraction-sensitive, though its sign and hypotheses are recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the aggregate lower-bound mechanism, but remove the unshown Lemma 4.7 routing and qualify 'cancellation' as sign-controlled aggregation rather than a demonstrated termwise cancellation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a genuine evidence correction and feeds the constants in Lemma 4.6.",
+      "line_end": 583,
+      "line_start": 552,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The derivation is mostly recoverable; exact displayed constants and inequality orientation should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives an improved explicit bound for zeros near 1+it and corrects a hypothesis mismatch in Ford by substituting a different right-of-one zeta estimate.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repairing the local zero-count estimate without shrinking eta",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u17.txt",
+      "unit_bytes": 2511,
+      "unit_id": "full_openalex_w4390813842_u17",
+      "unit_sha256": "396510caa2b746a32733dda0234b7af677571324b3d5ab6e64fc75a515c47ac6",
+      "unit_type": "error correction and zero-count bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u17.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 544,
+          "line_end": 551,
+          "text": "                                    1\n                                         2\n                                                     bj log|ζ (1 + η + ijt1 + iut2 )| du ≥ −2b0 log ζ (1 + η).\n                          −∞ cosh            u j=1\n\n                  Proof This is an immediate generalization of [10, Lemma 5.1] to degree K polynomials.\n\n\n",
+          "sha256": "f524be15a1f6c4ef8b6d756cfc10cce41f3b86f230037963e81458fef8c00f9c"
+        },
+        "after": {
+          "line_start": 584,
+          "line_end": 591,
+          "text": "\n<!-- source-page: 10 -->\n\n11   Page 10 of 27                                                             M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "9af036e31ce7d40fb00ce0de00268e5771e19ad058db4f203411a78a55077153"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Required lemmas",
+            "line_end": 676,
+            "line_start": 312,
+            "mathematical_role": "Builds the zero-detector, autoconvolution smoothing kernel, Laplace-transform remainder bounds, zero-count estimates, and the combined inequality for a hypothetical zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 583,
+          "line_start": 552,
+          "title": "Repairing the local zero-count estimate without shrinking eta",
+          "unit_id": "full_openalex_w4390813842_u17",
+          "unit_type": "error correction and zero-count bound",
+          "why_material": "Derives an improved explicit bound for zeros near 1+it and corrects a hypothesis mismatch in Ford by substituting a different right-of-one zeta estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a genuine evidence correction and feeds the constants in Lemma 4.6.",
+          "representation_dependency": "The derivation is mostly recoverable; exact displayed constants and inequality orientation should be scan-checked.",
+          "unit_id": "full_openalex_w4390813842_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 549,
+            "line_start": 540,
+            "title": "Non-negative polynomial cancellation outside the critical strip",
+            "unit_id": "full_openalex_w4390813842_u16",
+            "unit_type": "positivity aggregation",
+            "why_material": "Uses polynomial coefficient positivity to combine shifted log-zeta terms and control the detector's outside-strip integral without bounding each shift separately."
+          },
+          {
+            "line_end": 646,
+            "line_start": 592,
+            "title": "From zero counts to a real–imaginary constraint on a hypothetical zero",
+            "unit_id": "full_openalex_w4390813842_u18",
+            "unit_type": "combined detector inequality",
+            "why_material": "Bounds the remote-zero tail and assembles the detector, polynomial, and integral estimates into Lemma 4.7, the reusable inequality that drives the high-height contradiction."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 591,
+              "line_start": 584,
+              "reason": "Page marker, header, and whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u17",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u17",
+          "spontaneous_reading": "The local zero-count lemma is repaired by changing the analytic input rather than silently shrinking its parameter range. Replacing Ford's near-one estimate with (3.2) preserves η≤1/4 and yields the explicit constant 0.479."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u17",
+          "source_grounded_mathematics": "Lemma 4.5 bounds N(t,η) using Richert's A and B, with leading term 1.3478 η^(3/2)B log t and explicit secondary terms. The source observes that Ford applied a bound valid only through σ≤1.06 at σ=1+3.1421η, which would require η≈0.019 or smaller; using (3.2) instead retains η≤1/4 and produces 0.479.",
+          "conceptual_reading": "This is an evidence correction at a proof interface: admissible parameter range is restored by substituting a compatible estimate while keeping comparable numerical strength.",
+          "representation_or_bridge": "The repaired local count feeds Lemma 4.6, where its constant is propagated into the remote-zero tail bound.",
+          "boundary_or_failure": "The correction does not invalidate the cited later use, where η was already at most 0.01, and it does not prove the local-count framework from scratch.",
+          "uncertainty": "The derivation is readable, but exact displayed constants and inequality orientation remain appropriate for scan checking."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states Lemma 4.5, derives the 0.479 constant from the right-of-one estimate, and explicitly diagnoses Ford's incompatible σ-range unless η is about 0.019 or smaller.",
+          "It also states that the cited later application already used η≤0.01, so the oversight did not affect that work."
+        ],
+        "inference": [
+          "Describing the substitution as an evidence correction that restores the intended η≤1/4 interface while retaining similar strength is fully grounded."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the repaired count feeds Lemma 4.6 and propagates into a remote-zero tail is not contained in this exact span or its bounded context."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The displayed constants and inequality orientation should remain scan-linked."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the Lemma 4.6 and remote-tail routing from this unit's representation section; end with the explicit repaired Lemma 4.5 bound and the source's statement about the unaffected η≤0.01 application."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The resulting detector is developed in Lemma 6.1.",
+      "line_end": 970,
+      "line_start": 954,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-driven; the quoted inequality in the footnote should be scan-checked if reused exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains the deliberate switch from moving lines around sigma=1 to fixed lines at one-half and three-halves, trading asymptotic shape for a stronger finite-range constant, and notes a corrected monotonicity issue.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fixed-half-line detector for an intermediate O(1/log t) region",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u23.txt",
+      "unit_bytes": 1407,
+      "unit_id": "full_openalex_w4390813842_u23",
+      "unit_sha256": "53ac1fa334aab49845e23a1827680167aad6e071f196c7bdf77e7a0853b1a7d9",
+      "unit_type": "representation change and correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u23.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 946,
+          "line_end": 953,
+          "text": "                      M = λB2/3 L1 2/3 L2 1/3 ≥\n                                                    3.25351 + Y (t)\n                                                                                                   (5.16)\n                                                0.17949 − 0.755/52238\n                                              ≥                         > 0.04897601 > M1 ,\n                                                 3.25351 + 0.4110503\n                 hence we have arrived at the desired contradiction.\n\n",
+          "sha256": "feef31beccac90554ac725f4cb2e3bc049a65e77918c25b90f95636ad89f8795"
+        },
+        "after": {
+          "line_start": 971,
+          "line_end": 978,
+          "text": "\n<!-- source-page: 15 -->\n\nM. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                        Page 15 of 27   11\n\n\n\n\n",
+          "sha256": "409087d4041c7ebd5ce502e2c0b4eea6a89c4bb10e3187e2b6e4caa658eea324"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Proof of Theorem 1.4",
+            "line_end": 1286,
+            "line_start": 954,
+            "mathematical_role": "Reconfigures the detector on fixed half-lines, proves the intermediate-region inequality, and closes a second extremal contradiction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 970,
+          "line_start": 954,
+          "title": "Fixed-half-line detector for an intermediate O(1/log t) region",
+          "unit_id": "full_openalex_w4390813842_u23",
+          "unit_type": "representation change and correction",
+          "why_material": "Explains the deliberate switch from moving lines around sigma=1 to fixed lines at one-half and three-halves, trading asymptotic shape for a stronger finite-range constant, and notes a corrected monotonicity issue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The resulting detector is developed in Lemma 6.1.",
+          "representation_dependency": "Prose-driven; the quoted inequality in the footnote should be scan-checked if reused exactly.",
+          "unit_id": "full_openalex_w4390813842_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 952,
+            "line_start": 903,
+            "title": "Monotonicity reduces an infinite-height inequality to the threshold",
+            "unit_id": "full_openalex_w4390813842_u22",
+            "unit_type": "computational certification logic",
+            "why_material": "Combines the normalized bounds, substitutes explicit constants, and uses a short monotonicity computation to reduce all t at or above T0 to one threshold evaluation, yielding the contradiction."
+          },
+          {
+            "line_end": 1089,
+            "line_start": 979,
+            "title": "Specializing the mollified detector with eta equal to one-half",
+            "unit_id": "full_openalex_w4390813842_u24",
+            "unit_type": "specialized detector construction",
+            "why_material": "Defines the logarithmic critical-line bound, instantiates the smoothing remainder uniformly, sums the detector against a non-negative polynomial, and explains why autoconvolution positivity makes the initial Dirichlet expression non-negative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A sub-Weyl bound can be inserted into a fixed-half-line detector, whose cancellation and transform monotonicity yield an intermediate region strong enough to bridge finite and asymptotic regimes.",
+            "limit": "The resulting O(1/log t) geometry is deliberately not asymptotically optimal and depends on the stated explicit critical-line estimate.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u09",
+              "full_openalex_w4390813842_u23",
+              "full_openalex_w4390813842_u24",
+              "full_openalex_w4390813842_u25",
+              "full_openalex_w4390813842_u26"
+            ],
+            "title": "Critical-line information becomes a finite-range bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 953,
+              "line_start": 953,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u23",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u23",
+          "spontaneous_reading": "The intermediate proof deliberately changes representation: moving lines at 1±η(t) are replaced by fixed lines at 1/2 and 3/2. This sacrifices Korobov–Vinogradov asymptotic width for O(1/log t) geometry with a better finite-range constant."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u23",
+          "source_grounded_mathematics": "Section 6 fixes η=1/2 and uses bounds for ζ on σ=1/2 and σ=3/2. Because critical-line bounds grow like t^(θ+ε), the resulting zero-free width is only O(1/log t), but the source says it improves the classical bound over exp(8928)≤t≤exp(52238). A footnote corrects the direction of an inequality used in Ford for sufficiently large t.",
+          "conceptual_reading": "A weaker asymptotic shape can be the right local tool when its constants dominate on the finite interval needed to splice two stronger regimes.",
+          "representation_or_bridge": "Fixed-half-line sampling lets the sub-Weyl bound enter directly and produces the intermediate bridge formalized by Lemma 6.1.",
+          "boundary_or_failure": "This scheme is deliberately not asymptotically optimal, and the quoted range differs slightly from the exp(52242) crossover reported in the earlier envelope unit.",
+          "uncertainty": "The prose mechanism is clear; the footnoted inequality and the small endpoint discrepancy should be checked against the rendered source before exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u23",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly switches from moving lines 1±η(t) to fixed lines 1/2 and 3/2, derives only O(1/log t) width from t^(θ+ε) critical-line growth, and states the finite range exp(8928)≤t≤exp(52238).",
+          "The footnote does correct an inequality direction in Ford for sufficiently large t."
+        ],
+        "inference": [
+          "The tradeoff between weaker asymptotic shape and usefulness over a finite splice interval is directly supported."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the specific sub-Weyl bound enters directly and that the bridge is formalized by Lemma 6.1 are not present in this span or its bounded context.",
+          "The candidate correctly notices, but cannot resolve here, the endpoint difference from the earlier exp(52242) envelope."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The footnoted formula is extraction-sensitive; the prose-level correction is clear."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the specific sub-Weyl and Lemma 6.1 routing from this unit, retaining only the fixed-line representation change and stated growth-order consequence.",
+          "Keep the 52238 versus 52242 discrepancy explicit as unresolved rather than harmonizing the values."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The search is heuristic evidence and does not certify global optimality.",
+      "line_end": 1473,
+      "line_start": 1421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and reported outcomes are coherent; exact polynomial coefficients are in the following tables.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Annealing updates and separate all-height versus asymptotic objectives",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u30.txt",
+      "unit_bytes": 4169,
+      "unit_id": "full_openalex_w4390813842_u30",
+      "unit_sha256": "60f136a31ad8d67f1772173f16bc22fbc1d9506b17ab1fcd5456480f93854d76",
+      "unit_type": "heuristic optimization protocol",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u30.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1413,
+          "line_end": 1420,
+          "text": "                 With this construction, we are assured that PK (x) ≥ 0 for all x.\n                   Given K and a positive real number H, our procedure begins by setting c0 = 1 and\n                 selecting each ck with 1 ≤ k ≤ K uniformly at random from the interval [0, H], and\n                 then it computes the associated coeﬃcients bk . Then PK (x) ≥ 0 and each bk ≥ 0 by\n                 construction, and we need only check if b1 > b0 . If this does not hold we simply pick a\n                 new list of values ck and restart. We typically ﬁnd a qualifying polynomial in short order,\n                 and we compute its associated value R2 using (8.2). We then employ simulated annealing\n                 to search for better polynomials from this starting point.\n",
+          "sha256": "461415e0bc3ab204b6e99ee76dc2fad13d1aa67f5cbd1e5c3ebd377db2080839"
+        },
+        "after": {
+          "line_start": 1474,
+          "line_end": 1481,
+          "text": "\n<!-- source-page: 22 -->\n\n11   Page 22 of 27                                                                             M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "810b6f1ea57ea3ce4e0d1193b321c0d9a282b0778c21e97cb01b17a73b7c7aa1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Computations",
+            "line_end": 1525,
+            "line_start": 1331,
+            "mathematical_role": "Turns polynomial admissibility into an optimization objective, guarantees non-negativity by autocorrelation factorization, and reports the annealing search and certificates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1473,
+          "line_start": 1421,
+          "title": "Annealing updates and separate all-height versus asymptotic objectives",
+          "unit_id": "full_openalex_w4390813842_u30",
+          "unit_type": "heuristic optimization protocol",
+          "why_material": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The search is heuristic evidence and does not certify global optimality.",
+          "representation_dependency": "Prose and reported outcomes are coherent; exact polynomial coefficients are in the following tables.",
+          "unit_id": "full_openalex_w4390813842_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Autocorrelation factorization makes polynomial non-negativity automatic",
+            "unit_id": "full_openalex_w4390813842_u29",
+            "unit_type": "constraint-preserving parameterization",
+            "why_material": "Explains why stochastic annealing is appropriate and parameterizes candidates as normalized squared moduli, so global non-negativity is guaranteed while coefficient constraints remain cheaply testable."
+          },
+          {
+            "line_end": 1524,
+            "line_start": 1482,
+            "title": "Reported coefficient certificate and diminishing search returns",
+            "unit_id": "full_openalex_w4390813842_u31",
+            "unit_type": "computational certificate and limitation",
+            "why_material": "Records the degree-46 coefficient certificate, ties the chosen polynomials to the theorem constants, and explicitly limits the optimization claim by reporting diminishing returns and unexplored high-degree space."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u30",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u30",
+          "spontaneous_reading": "The search uses two levels of objective fidelity. A relatively cheap asymptotic constant supports broad exploration, after which promising candidates are rescored and refined for the more expensive all-height constant; this makes the intermediate polynomial, not merely the best score, reusable across objectives."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u30",
+          "source_grounded_mathematics": "An iteration perturbs one c_k by s in [-S,S], updates the b_k in O(K), rejects any candidate with a negative b_k or b_1<=b_0, and otherwise recomputes theta by Newton's method and R_2. Improvements are accepted and worse moves are accepted with probability exp(-Delta R_2/T); temperatures and step sizes decrease. Searches over degrees 10 through 72 found a degree-46 polynomial with R_2=48.1587921551117. For the costlier all-height R_1 objective, searches were restricted, while a larger asymptotic search retained candidates for R_1 rescoring; a degree-40 candidate was then further annealed directly for R_1.",
+          "conceptual_reading": "The protocol separates feasibility, exploration, and target evaluation. Cooling permits escape from local minima, while proxy-to-target transfer uses R_2 to explore a larger space and R_1 to select or refine candidates when direct evaluation is costly.",
+          "representation_or_bridge": "The maintained c-vector and incrementally updated autocorrelations make each move computationally local; Newton's solution for theta completes the bridge to the analytic objective. Archived polynomials bridge the asymptotic search to the all-height search even though the two rankings differ.",
+          "boundary_or_failure": "The reported schedules, degree ranges, and best values are computational search evidence, not proof of global optimality. A polynomial good for R_2 need not be best for R_1, as the degree-40 example explicitly shows.",
+          "uncertainty": "The prose supports the algorithm and reported outcomes, but exact coefficients occur in subsequent tables and the searches were not independently reproduced here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u30",
+        "critic_decision": "revise",
+        "supported": [
+          "The perturbation, O(K) coefficient update, feasibility rejections, Newton solve for theta, Metropolis acceptance probability, decreasing schedules, degree ranges, and reported best R_2 value are accurately captured.",
+          "The separate expensive R_1 search and the reuse, rescoring, and further annealing of candidates first found under R_2 are source-grounded.",
+          "The candidate correctly states that the searches do not certify global optimality and that R_1 and R_2 can rank polynomials differently."
+        ],
+        "inference": [
+          "Reading the workflow as broad exploration followed by costlier target rescoring is supported by the two procedures, but it is a heuristic search strategy rather than an established surrogate-objective theorem."
+        ],
+        "unsupported_or_imported": [
+          "The sentence 'Cooling permits escape from local minima' assigns the mechanism incorrectly: acceptance of worse moves at positive temperature permits escape, while cooling progressively removes that behavior and ends in greedy descent.",
+          "The label 'proxy-to-target transfer' risks implying that R_2 is a validated proxy for R_1; the span establishes only a practical candidate-generation and rescoring strategy, and explicitly reports differing rankings."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Computationally local' is loose because one c_k is perturbed but all affected b_k are updated in O(K); retain the stated complexity rather than suggesting constant-local work."
+        ],
+        "context_or_ocr_risk": [
+          "The algorithmic prose and reported values are coherent, while the exact coefficient certificate is correctly left to the following table."
+        ],
+        "missed_mechanism": [
+          "Explicitly distinguish positive-temperature uphill acceptance, subsequent cooling, and the terminal T=0 greedy phase."
+        ],
+        "revision_instructions": [
+          "Replace the cooling claim with the correct positive-temperature acceptance mechanism and describe R_2-to-R_1 reuse as heuristic candidate generation plus rescoring, not as a validated proxy relation.",
+          "Replace 'computationally local' with the precise statement that a one-coordinate move permits an O(K) update of the b-coefficients."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical projections themselves appear in the supporting table at lines 1691–1699.",
+      "line_end": 1669,
+      "line_start": 1660,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-recoverable; table values are rounded computational outputs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Marginal smoother gain and sensitivity to future RH height",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u35.txt",
+      "unit_bytes": 1005,
+      "unit_id": "full_openalex_w4390813842_u35",
+      "unit_sha256": "041e43f2fdb78f517d975296ace3020132794f03fca273c1c554c7f1d772080b",
+      "unit_type": "ablation and sensitivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u35.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1652,
+          "line_end": 1659,
+          "text": "                       θ = 1.13489 is increasing on [0, 1], as required by the method.\n\n                 We refer the reader to [21] for full details on the method. Using this strategy, after seven\n                 iterations we compute the value R0 = 5.5586904517 and establish Theorem 1.3. The\n                 successive values of R0 determined after each iteration are displayed in Table 3, together\n                 with the values of other parameters that arise during the calculation—we include these to\n                 mirror the data shown in [21, Table 3].\n                                           (4)               (1)\n",
+          "sha256": "741d67b681dca69df841f371efea66b14d8ad4384af40aae2650f4e06f5d7a11"
+        },
+        "after": {
+          "line_start": 1670,
+          "line_end": 1677,
+          "text": "\n<!-- source-page: 25 -->\n\nM. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                                  Page 25 of 27   11\n\n\n\n\n",
+          "sha256": "a3a32f4d3ca154c1795bccf035009a54899406026d30aa351f81e5dccce9f882"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 The classical zero-free region",
+            "line_end": 1702,
+            "line_start": 1526,
+            "mathematical_role": "Compares smoothing families and combines a higher RH verification, a degree-16 polynomial, and an improved auxiliary function in an iterative constant refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1669,
+          "line_start": 1660,
+          "title": "Marginal smoother gain and sensitivity to future RH height",
+          "unit_id": "full_openalex_w4390813842_u35",
+          "unit_type": "ablation and sensitivity",
+          "why_material": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical projections themselves appear in the supporting table at lines 1691–1699.",
+          "representation_dependency": "Prose-recoverable; table values are rounded computational outputs.",
+          "unit_id": "full_openalex_w4390813842_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1658,
+            "line_start": 1623,
+            "title": "Combining verified height, polynomial degree, and smoothing choice",
+            "unit_id": "full_openalex_w4390813842_u34",
+            "unit_type": "component synthesis and iteration",
+            "why_material": "Combines three independently developed improvements, lists the exact adjustments required by the new smoother, verifies two side conditions, and reports convergence after seven iterations."
+          },
+          {
+            "line_end": 1751,
+            "line_start": 1703,
+            "title": "Iterative finite-region envelope and its missing exclusion oracle",
+            "unit_id": "full_openalex_w4390813842_u36",
+            "unit_type": "conditional generalization and obstruction",
+            "why_material": "Generalizes the single-threshold self-improvement argument to a sequence of zero-free shapes, explains how their union could lower the global constant, and precisely identifies the high finite rectangles that current computation and density estimates cannot exclude."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Verified RH height, trigonometric-polynomial choice, secondary-term tuning, and smoothing-family choice enter as separable improvement channels that can be combined and partially ablated.",
+            "limit": "The source imports the full iterative method from prior work and reports computational outputs; this unit family is not a self-contained re-verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u32",
+              "full_openalex_w4390813842_u33",
+              "full_openalex_w4390813842_u34",
+              "full_openalex_w4390813842_u35"
+            ],
+            "title": "Orthogonal gains in the classical-region iteration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1702,
+              "line_start": 1670,
+              "reason": "Page artifacts and numerical iteration/projection tables supporting the classical-region units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u35",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u35",
+          "spontaneous_reading": "This short unit performs two useful sensitivity checks: a smoother swap estimates the marginal value of that component, while varying the hypothetical verified RH height turns an external future certificate into a response curve for the same proof mechanism."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u35",
+          "source_grounded_mathematics": "Using the fourth rather than the chosen first Heath-Brown smoother gives the larger value R_0=5.5608403, so the first-family choice lowers R_0 by about 2.15*10^-3 in this setup. The Xylouris function was not investigated because its earlier marginal benefit was very small. Holding theta=1.13489 and the degree-16 polynomial fixed, the authors also computed projected R_0 values for hypothetical future RH verification heights T_0 up to 10^15.",
+          "conceptual_reading": "The smoother comparison is an ablation of one proof component, and the future-height calculation is sensitivity analysis. Together they separate a modest design gain from the predictable benefit of strengthening an upstream verified boundary.",
+          "representation_or_bridge": "R_0 serves as the common output metric for both interventions. The fixed polynomial and theta make the smoother swap interpretable, while T_0 acts as an external certificate parameter that can be propagated through the unchanged iteration.",
+          "boundary_or_failure": "The ablation is not exhaustive: the Xylouris option was omitted and interactions with re-optimizing theta or the polynomial are not tested. The future values are conditional projections, not zero-free-region improvements already established.",
+          "uncertainty": "Superscript placement in the extracted smoother names is layout-sensitive. The projection table lies outside the exact unit and contains rounded computational outputs, so only the stated sensitivity setup is secure here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "full_openalex_w4390813842_u35",
+        "critic_decision": "revise",
+        "supported": [
+          "The reported R_0=5.5608403 under the fourth-versus-first smoother comparison, the approximately 2.15*10^-3 marginal improvement, omission of the Xylouris option, and the future-height computation through T_0<=10^15 are accurately captured.",
+          "The span explicitly fixes the first smoother, theta=1.13489, and the degree-16 polynomial for the hypothetical future-T_0 projections.",
+          "The candidate correctly labels those future-height values as conditional projections rather than established zero-free-region improvements."
+        ],
+        "inference": [
+          "Calling the two calculations component sensitivity analyses is reasonable, provided the distinct controls actually stated for each calculation are not conflated."
+        ],
+        "unsupported_or_imported": [
+          "The claim that 'the fixed polynomial and theta make the smoother swap interpretable' is unsupported for the smoother swap: the exact span states theta=1.13489 and the same polynomial only for the subsequent future-height calculation.",
+          "The assertion that interactions with re-optimizing theta or the polynomial 'are not tested' is not established by this span, which does not describe what was or was not re-optimized for the smoother comparison."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the smoother comparison an ablation is acceptable only as a loose component-swap description, not as evidence that every other numerical parameter was held fixed."
+        ],
+        "context_or_ocr_risk": [
+          "Superscripts distinguishing the fourth and first smoother are displaced by page layout; the bounded context supports the intended ordering, but exact names remain scan-sensitive.",
+          "The projection values themselves lie in the supporting table outside the unit, so the candidate correctly retains only the stated setup."
+        ],
+        "missed_mechanism": [
+          "The analysis must keep the smoother comparison's unspecified controls separate from the explicitly fixed controls of the future-height sensitivity calculation."
+        ],
+        "revision_instructions": [
+          "Remove the claim that theta was fixed for the smoother swap and do not infer whether theta or the polynomial was re-optimized there.",
+          "State fixed theta=1.13489 and the same degree-16 polynomial only for the future-T_0 projections; qualify 'ablation' as a reported component swap with incompletely specified controls."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d22731cd2f4274553dcdb0c6d1acea67ce2d788f2c3bb0ca56d8d7de1b463cc4"
+}

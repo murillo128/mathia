@@ -1,0 +1,985 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_keating_snaith2000_rmt_49a8e274_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "keating_snaith2000_rmt",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Known and conjectured integer values supply the comparison points later matched by the CUE coefficient.",
+      "line_end": 129,
+      "line_start": 112,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed product and powers are OCR-sensitive; prose and the listed special values are usable, but exact transcription of equations (4)-(5) needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the moment-coefficient problem in a form that later permits a clean separation between arithmetic Euler-product data and a universal random-matrix coefficient.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta moments are normalized into an arithmetic factor and an unknown coefficient",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u04_zeta_moment_factor_target.txt",
+      "unit_bytes": 1211,
+      "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+      "unit_sha256": "d7f9598c5ed9e06be850fb674ff5304c3c98691659a1222795101ce2f944b7c4",
+      "unit_type": "conjectural-factorization-target",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u04_zeta_moment_factor_target.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "                                                           E\nthat is, in the limit as T , the height up the critical line,\n                                                           p tends to in nity, the value distributions\nof the real and imaginary parts of log \u0010 (1=2 + iT )= (1=2) log log T each tend independently to\na Gaussian with unit variance and zero mean. Interestingly, Odlyzko's computations for these\ndistributions when T \u0019 t1020 show systematic deviations from this limiting form [29]. For example,\nincreasing moments of both the real and imaginary parts diverge from the Gaussian values. We\nreview this data in more detail in Section 3.\n",
+          "sha256": "771ace134d69ee818259dbf9a34471e5fe8d3d47e25da71e41cfe22ff6c2ff2a"
+        },
+        "after": {
+          "line_start": 130,
+          "line_end": 137,
+          "text": "        We now state our main results, all of which hold for \u0012 2 R.\n(i) For Res > ;1\n                                                           Y\n                                                           N\n                                                                ;(j );(j + s) ;\n                          MN (s) = hjZ (U; \u0012)jsiU (N ) =                                           (6)\n                                                           j =1 (;(j + s=2))\n                                                                             2\n",
+          "sha256": "b07d7f90e6890cd70a207ce3f8e319791a39b9c53a6503cf507f386224d215c2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Introduction",
+            "line_end": 274,
+            "line_start": 47,
+            "mathematical_role": "Motivates the local zero-statistics transfer, states Selberg and moment targets, summarizes exact CUE results, separates local random-matrix and long-range prime effects, and marks symmetry-family limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 129,
+          "line_start": 112,
+          "title": "Zeta moments are normalized into an arithmetic factor and an unknown coefficient",
+          "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+          "unit_type": "conjectural-factorization-target",
+          "why_material": "Defines the moment-coefficient problem in a form that later permits a clean separation between arithmetic Euler-product data and a universal random-matrix coefficient."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Known and conjectured integer values supply the comparison points later matched by the CUE coefficient.",
+          "representation_dependency": "The displayed product and powers are OCR-sensitive; prose and the listed special values are usable, but exact transcription of equations (4)-(5) needs scan verification.",
+          "unit_id": "keating2000_v2_u04_zeta_moment_factor_target"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 111,
+            "line_start": 98,
+            "title": "Selberg Gaussian limit does not erase systematic finite-height deviations",
+            "unit_id": "keating2000_v2_u03_selberg_limit_and_finite_height_deviation",
+            "unit_type": "theorem-and-finite-scale-obstruction",
+            "why_material": "Pairs the independent Gaussian limiting law with the observed growth of finite-height moment deviations, establishing why a finite-size surrogate is a substantive target rather than a cosmetic approximation."
+          },
+          {
+            "line_end": 152,
+            "line_start": 130,
+            "title": "Two exact CUE generators encode modulus and argument statistics",
+            "unit_id": "keating2000_v2_u05_exact_cue_generators_and_branch",
+            "unit_type": "exact-generating-functions",
+            "why_material": "States the finite-N gamma-product generators for absolute value and phase, and makes the logarithm branch convention and eigenphase jump explicit; these are the analytic engines for all later distributions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+          "spontaneous_reading": "The moment problem is compressed by removing an explicit prime-dependent factor and concentrating the unresolved universal content in one coefficient function."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+          "source_grounded_mathematics": "The source conjecturally normalizes the 2λ-th moment of absolute zeta into an Euler-product factor a(λ) and an unknown coefficient f(λ), recording known values at λ=0,1,2 and conjectured values at 3,4.",
+          "conceptual_reading": "This factorization separates arithmetic data from a residual coefficient that can be compared with another model without conflating the two mechanisms.",
+          "representation_or_bridge": "The bridge object is the normalized moment coefficient f(λ), with a(λ) carrying the explicit local prime contribution.",
+          "boundary_or_failure": "Existence and the displayed asymptotic are conjectural, and agreement at a few integers does not determine f generally.",
+          "uncertainty": "The Euler product and powers in equations (4)-(5) are OCR-sensitive; the factorization role and stated special values are usable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u04_zeta_moment_factor_target",
+        "critic_decision": "revise",
+        "supported": [
+          "The span conjecturally factors normalized absolute-zeta moments into the Euler product a(lambda) and coefficient f(lambda), and lists the stated known and conjectured integer values.",
+          "The candidate preserves the conjectural status and the fact that finitely many integer values do not determine f."
+        ],
+        "inference": [
+          "Treating f as a residual comparison object is a useful interpretation of the displayed factorization."
+        ],
+        "unsupported_or_imported": [
+          "The exact span does not establish that the unresolved content of f is universal; that characterization depends on the later CUE comparison."
+        ],
+        "paraphrase_or_style_risk": [
+          "Universal content makes a later model identification sound intrinsic to the definition."
+        ],
+        "context_or_ocr_risk": [
+          "The Euler product and powers in (4)-(5) are OCR-sensitive, as the candidate notes."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace universal content with residual normalized coefficient in the spontaneous reading, and present comparison with another model as a later use rather than a property proved by this span."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The matching values motivate, but do not independently prove, the zeta moment conjecture.",
+      "line_end": 1026,
+      "line_start": 941,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gamma and Barnes G typography is degraded; prose identifies the continuation, poles, and integer-product reduction, while exact formulas require scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the N-normalized CUE modulus moment coefficient with a Barnes G ratio, extends it analytically, exposes its pole structure, and reduces integer values to factorial products matching known zeta coefficients.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Barnes G compresses the universal leading coefficient of modulus moments",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u17_barnes_g_modulus_coefficient.txt",
+      "unit_bytes": 5847,
+      "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+      "unit_sha256": "e0d7f5d741f93ebb5781c6387cbd95f28314e3762f366d1429a77fdf85d33767",
+      "unit_type": "special-function-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u17_barnes_g_modulus_coefficient.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 933,
+          "line_end": 940,
+          "text": "                                                                v2                 w2\n                    N !1 N\n                                                   e;ivx; 2 dv      e;iwy; 2 dw                 (79)\n                                               ;1\u0012 ;x2 \u0013 \u0012 ;y2 \u0013;1\n                                         1\n                                     = 2\u0019 exp 2 exp 2 :\nTherefore, as claimed, the limiting value distributions of the real and imaginary parts of log Z are\nindependent and Gaussian as N ! 1.\n",
+          "sha256": "eb1f9574e2d611d0c97d68a799f207c9c42c2eae6ab3cd9c26dcc7f707f3407d"
+        },
+        "after": {
+          "line_start": 1027,
+          "line_end": 1034,
+          "text": "        The leading order asymptotics of LN (s) can be obtained in the same way. In this case we\nclaim that\n\n                              lim L (s)N     s2 =4 = G(1 ; s=2)G(1 + s=2):                                      (89)\n                             N !1 N\n\n\n\n",
+          "sha256": "062c77269d0bef28f5f54a396ac8c9a4c9e34ef80021b3b65591e16890684d0b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5 Asymptotics of the generating functions",
+            "line_end": 1080,
+            "line_start": 941,
+            "mathematical_role": "Packages leading modulus and phase moment coefficients with Barnes G-functions, including analytic continuation and pole/zero structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1026,
+          "line_start": 941,
+          "title": "Barnes G compresses the universal leading coefficient of modulus moments",
+          "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+          "unit_type": "special-function-compression",
+          "why_material": "Identifies the N-normalized CUE modulus moment coefficient with a Barnes G ratio, extends it analytically, exposes its pole structure, and reduces integer values to factorial products matching known zeta coefficients."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The matching values motivate, but do not independently prove, the zeta moment conjecture.",
+          "representation_dependency": "Gamma and Barnes G typography is degraded; prose identifies the continuation, poles, and integer-product reduction, while exact formulas require scan checking.",
+          "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 940,
+            "line_start": 778,
+            "title": "Mixed cumulants vanish after scaling, yielding independent Gaussian components",
+            "unit_id": "keating2000_v2_u16_joint_generator_proves_independence",
+            "unit_type": "joint-limit-law",
+            "why_material": "Constructs the joint modulus-phase generator, evaluates it in Selberg form, and shows that normalized mixed terms vanish so the bivariate density factors into two Gaussian densities."
+          },
+          {
+            "line_end": 1079,
+            "line_start": 1027,
+            "title": "The phase generator has a symmetric Barnes G leading coefficient and zero lattice",
+            "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+            "unit_type": "special-function-compression",
+            "why_material": "Carries the same compression method to the argument generator, where parity produces a symmetric Barnes G product and a structured set of zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mean-spacing matching selects a finite CUE surrogate for local universal behavior, while a separate Euler-product factor restores long-range arithmetic effects in zeta moments.",
+            "limit": "The prime independence step is heuristic, agreement at famous moment values is calibration, and finite-height numerical fit does not prove the asymptotic factorization.",
+            "parent_local_unit_ids": [
+              "keating2000_u01_local_statistics_bridge",
+              "keating2000_u02_scale_and_arithmetic_split",
+              "keating2000_v2_u17_barnes_g_modulus_coefficient",
+              "keating2000_v2_u20_universal_times_arithmetic_moment_model",
+              "keating2000_v2_u21_prime_corrections_improve_real_moments"
+            ],
+            "title": "Density-matched finite-size universality plus arithmetic correction"
+          },
+          {
+            "claim": "Fourier/Mellin inversion links analytic generator structure to distributional regimes: a saddle controls the bulk, the nearest pole controls fixed-N near-zero values, and the arithmetic multiplier is most visible away from the large-N bulk.",
+            "limit": "The approximations are nonuniform in N and magnitude, so exchanging limits or extending the saddle formula to the origin is invalid.",
+            "parent_local_unit_ids": [
+              "keating2000_v2_u09_generator_to_cumulants_and_density",
+              "keating2000_v2_u17_barnes_g_modulus_coefficient",
+              "keating2000_v2_u23_bulk_vs_near_zero_magnitude_regimes",
+              "keating2000_v2_u24_prime_factor_moves_to_magnitude_tail"
+            ],
+            "title": "Transform singularities distinguish bulk, near-zero, and arithmetic-tail behavior"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+          "spontaneous_reading": "Barnes G compresses the entire leading CUE modulus coefficient, making analytic continuation, pole multiplicities, and factorial special values visible in one object."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+          "source_grounded_mathematics": "After dividing M_N(s) by its leading power of N, the limit is a Barnes G ratio; comparison of local series proves the identity and continuation exposes poles, while integer arguments reduce to products of factorials.",
+          "conceptual_reading": "Special-function compression converts a sequence of asymptotic cumulants into a global meromorphic coefficient with explicit singular and arithmetic structure.",
+          "representation_or_bridge": "The bridge runs from normalized gamma products through cumulant series to a Barnes G ratio and then to factorial products at integers.",
+          "boundary_or_failure": "Matching known or conjectured zeta coefficients motivates a transfer but does not independently prove the zeta moment conjecture.",
+          "uncertainty": "Barnes and gamma typography is degraded; exact formulas and pole orders should be scan-checked, though the compression mechanism is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+        "critic_decision": "revise",
+        "supported": [
+          "The span derives the N-normalized CUE modulus coefficient as a Barnes G ratio, extends the identity analytically, states its pole structure, and reduces positive integer values to factorial products.",
+          "The candidate's special-function compression and bridge chain are grounded in the displayed operations."
+        ],
+        "inference": [
+          "Viewing the Barnes G expression as a global encoding of asymptotic cumulants is a useful interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The exact unit and bounded neighboring text do not compare these factorial values with known or conjectured zeta coefficients; that is a later-section claim."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact Barnes G formulas and pole orders are extraction-sensitive and properly flagged."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the claim that matching known or conjectured zeta coefficients motivates transfer. State only that the CUE identity by itself supplies no zeta moment theorem or transfer."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the random-matrix factor later paired with an arithmetic product for phase moments.",
+      "line_end": 1079,
+      "line_start": 1027,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exponent placement and zero statement are formula-sensitive; verify equations (89)-(91) before exact use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Carries the same compression method to the argument generator, where parity produces a symmetric Barnes G product and a structured set of zeros.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The phase generator has a symmetric Barnes G leading coefficient and zero lattice",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u18_barnes_g_phase_coefficient.txt",
+      "unit_bytes": 3433,
+      "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+      "unit_sha256": "829f356d576353897346adbbfda929f29005aee4cc2f5f60b4eaa9800e025fdf",
+      "unit_type": "special-function-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u18_barnes_g_phase_coefficient.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1019,
+          "line_end": 1026,
+          "text": "                                                    m=n+1 ;(m)\n                                                nY ;1 j !\n                                              =                  ;                                              (88)\n                                                 j =0 (j + n)!\nfor n = 1; 2; : : : . Inspired by a talk by one of us (JPK) at the Mathematical Sciences Research\nInstitute, Berkely, in June 1999, in which this result was discussed, Br\u0013ezin and Hikami have since\nchecked that the same formula holds for the integer moments of a wider class of random-matrix\ncharacteristic polynomials, including the GUE [11].\n",
+          "sha256": "dd53c097a49dcda2ae69f0a57ba93d71210272f58c86524be73ba5bdd8cc7063"
+        },
+        "after": {
+          "line_start": 1080,
+          "line_end": 1087,
+          "text": "\n3    \u0010 (1=2 + it)\nOur aim now is to compare the CUE results for Z (U; \u0012) derived in the previous sections with the\nbehaviour of the Riemann zeta function on its critical line. First, we have to identify the analogue\nof the matrix size N , which is the one parameter that appears in the CUE formulae. With this in\nmind we note that under the identi cation\n                                                      \u0012T \u0013\n                                           N = log 2\u0019 ;                                                               (92)\n",
+          "sha256": "b84fd87c89fe697477f1c6a233bad485ccff8ae545bd7576b60ef6b0dc90513d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5 Asymptotics of the generating functions",
+            "line_end": 1080,
+            "line_start": 941,
+            "mathematical_role": "Packages leading modulus and phase moment coefficients with Barnes G-functions, including analytic continuation and pole/zero structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1079,
+          "line_start": 1027,
+          "title": "The phase generator has a symmetric Barnes G leading coefficient and zero lattice",
+          "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+          "unit_type": "special-function-compression",
+          "why_material": "Carries the same compression method to the argument generator, where parity produces a symmetric Barnes G product and a structured set of zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the random-matrix factor later paired with an arithmetic product for phase moments.",
+          "representation_dependency": "The exponent placement and zero statement are formula-sensitive; verify equations (89)-(91) before exact use.",
+          "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1026,
+            "line_start": 941,
+            "title": "Barnes G compresses the universal leading coefficient of modulus moments",
+            "unit_id": "keating2000_v2_u17_barnes_g_modulus_coefficient",
+            "unit_type": "special-function-compression",
+            "why_material": "Identifies the N-normalized CUE modulus moment coefficient with a Barnes G ratio, extends it analytically, exposes its pole structure, and reduces integer values to factorial products matching known zeta coefficients."
+          },
+          {
+            "line_end": 1125,
+            "line_start": 1098,
+            "title": "Density-matched finite N explains deviations that the limiting Gaussian misses",
+            "unit_id": "keating2000_v2_u19_finite_n_empirical_calibration",
+            "unit_type": "numerical-model-comparison",
+            "why_material": "Uses the mean-spacing map to select N≈42 and reports that exact finite-N CUE densities and moments track high-zero zeta data better than the asymptotic Gaussian, including the real/imaginary asymmetry contrast."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1080,
+              "line_start": 1080,
+              "reason": "Blank transition line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+          "spontaneous_reading": "Pairing Barnes G at opposite arguments encodes phase parity globally, replacing the modulus coefficient's poles by a symmetric lattice of zeros."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+          "source_grounded_mathematics": "The leading N-normalized limit of L_N(s) is identified by series comparison with G(1-s/2)G(1+s/2), then analytically continued; the source states zeros of prescribed order at symmetric even integers.",
+          "conceptual_reading": "The symmetric special-function product packages the even cumulant structure and makes forbidden transform values visible as zeros.",
+          "representation_or_bridge": "The phase gamma product is normalized, compared termwise with a Barnes G expansion, and promoted by analytic continuation to a global coefficient.",
+          "boundary_or_failure": "This is a CUE phase factor; pairing it with zeta arithmetic later remains conjectural.",
+          "uncertainty": "Exponent placement and the exact zero statement are formula-sensitive and require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u18_barnes_g_phase_coefficient",
+        "critic_decision": "revise",
+        "supported": [
+          "The span identifies the normalized phase-generator limit with G(1-s/2)G(1+s/2), uses analytic continuation, and states zeros with prescribed orders at symmetric even integers.",
+          "The candidate correctly preserves the CUE-only scope and later conjectural status of any zeta pairing."
+        ],
+        "inference": [
+          "Relating the symmetric Barnes G product to the even-cumulant structure is a reasonable interpretation of the series comparison."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "Forbidden transform values assigns an unexplained semantic meaning to zeros of the analytically continued coefficient; the span only establishes the zero lattice."
+        ],
+        "context_or_ocr_risk": [
+          "Exponent placement and zero multiplicities require scan verification."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace forbidden transform values with zeros of the analytically continued leading coefficient, without implying those parameter values are inadmissible or probabilistically forbidden."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The table is a finite-height comparison and does not establish the asymptotic conjecture.",
+      "line_end": 1351,
+      "line_start": 1290,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table 4 is legible enough for the qualitative comparison, while exact equation transcription remains formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines real-part moments by differentiating the product of the CUE and arithmetic generators and compares CUE-only versus CUE-plus-primes predictions against the same numerical data.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adding the arithmetic factor improves real-part moment predictions",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u21_prime_corrections_improve_real_moments.txt",
+      "unit_bytes": 3967,
+      "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+      "unit_sha256": "2ee0a00de27fb80039c5cf881e627f5a13b1f8651a4440ef44159447b468e524",
+      "unit_type": "controlled-numerical-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u21_prime_corrections_improve_real_moments.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1282,
+          "line_end": 1289,
+          "text": "                                         H (log T )\u00152 T\n                                                            j\u0010 (1=2 + it)j2\u0015 dt                  (95)\n\nfor T close to t1020 [29]. It is obviously natural to compare this to\n                                      r (\u0015) = 1 M (2\u0015)a(\u0015);\n                                     CUE                    N                                    (96)\n                                                     N \u00152\nwith N satisfying (92). The results, shown in Table 3, would appear to support the conjecture.\n",
+          "sha256": "c579e06c8c4ac4325af01fb8257cdfdb940663c4e3e55af50d67fe8321b554e8"
+        },
+        "after": {
+          "line_start": 1352,
+          "line_end": 1359,
+          "text": "\n        The moments of Im log \u0010 (1=2 + it) can be treated in the same way. These are obviously\nrelated to derivatives of the generating function LN (s). Applying the same heuristic method which\nunderpins (4) leads us to conjecture that\n                    1 Z T (Im log \u0010 (1=2 + it))k dt \u0018 (;i)k dk [L (s)b(s=2)]\n                   T 0                                       dsk    N            s=0 ;          (98)\nwhere\n                          Y\"           ;\u00152   X\n",
+          "sha256": "a1f174bc5687e29f50cb4b94a66a4a78f577751b82f07eb8ffc08c855ec394e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 zeta(1/2+it)",
+            "line_end": 1478,
+            "line_start": 1081,
+            "mathematical_role": "Calibrates matrix size by mean spacing, compares finite-N predictions with zeta data, restores prime factors, and distinguishes bulk, near-zero, and tail regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1351,
+          "line_start": 1290,
+          "title": "Adding the arithmetic factor improves real-part moment predictions",
+          "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+          "unit_type": "controlled-numerical-comparison",
+          "why_material": "Defines real-part moments by differentiating the product of the CUE and arithmetic generators and compares CUE-only versus CUE-plus-primes predictions against the same numerical data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The table is a finite-height comparison and does not establish the asymptotic conjecture.",
+          "representation_dependency": "Table 4 is legible enough for the qualitative comparison, while exact equation transcription remains formula-sensitive.",
+          "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1289,
+            "line_start": 1247,
+            "title": "Long-range prime effects multiply the finite-N universal moment factor",
+            "unit_id": "keating2000_v2_u20_universal_times_arithmetic_moment_model",
+            "unit_type": "multiplicative-mechanism-decomposition",
+            "why_material": "Explains why local random-matrix information is incomplete, derives the need for an independent prime product under a truncated Euler-product heuristic, and combines it with the Barnes G CUE coefficient."
+          },
+          {
+            "line_end": 1389,
+            "line_start": 1353,
+            "title": "A separate arithmetic product corrects phase moments and matches low-order checks",
+            "unit_id": "keating2000_v2_u22_phase_arithmetic_factor_and_checks",
+            "unit_type": "conjectural-phase-factorization",
+            "why_material": "Constructs the phase analogue of the multiplicative model, reports improved finite-height moments, and checks consistency with the second-moment formula and independent low-order heuristics."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mean-spacing matching selects a finite CUE surrogate for local universal behavior, while a separate Euler-product factor restores long-range arithmetic effects in zeta moments.",
+            "limit": "The prime independence step is heuristic, agreement at famous moment values is calibration, and finite-height numerical fit does not prove the asymptotic factorization.",
+            "parent_local_unit_ids": [
+              "keating2000_u01_local_statistics_bridge",
+              "keating2000_u02_scale_and_arithmetic_split",
+              "keating2000_v2_u17_barnes_g_modulus_coefficient",
+              "keating2000_v2_u20_universal_times_arithmetic_moment_model",
+              "keating2000_v2_u21_prime_corrections_improve_real_moments"
+            ],
+            "title": "Density-matched finite-size universality plus arithmetic correction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+          "spontaneous_reading": "Differentiating the product generator creates a controlled ablation: finite-N CUE predictions can be compared with the same predictions after restoring prime information."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+          "source_grounded_mathematics": "Real log-zeta moments are conjecturally obtained from derivatives of M_N(s)a(s/2); at N=42, the table reports CUE-plus-prime predictions closer to two Odlyzko data intervals than CUE-only values across the listed moment orders.",
+          "conceptual_reading": "Holding the universal component and calibration fixed isolates the empirical contribution of the arithmetic factor.",
+          "representation_or_bridge": "Generator differentiation translates the multiplicative CUE-times-prime model into moment-by-moment numerical predictions.",
+          "boundary_or_failure": "The comparison is at one finite-height regime, errors are not uniformly improved by a proof-level criterion, and it cannot establish the asymptotic conjecture.",
+          "uncertainty": "The qualitative table comparison is legible, while exact equation transcription and some extracted numerals remain formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u21_prime_corrections_improve_real_moments",
+        "critic_decision": "revise",
+        "supported": [
+          "The source conjecturally obtains real log-zeta moments by differentiating M_N(s)a(s/2) and compares N=42 CUE-plus-prime and CUE-only predictions against the same two data intervals.",
+          "For the nontrivial displayed orders two through ten, the arithmetic-corrected values are closer to both listed data columns than the CUE-only values."
+        ],
+        "inference": [
+          "Treating the fixed-CUE comparison as an empirical ablation of the arithmetic factor is reasonable, provided it is not called causal proof."
+        ],
+        "unsupported_or_imported": [
+          "Across the listed moment orders overstates the table: at order one both model columns are zero, so adding primes does not improve that prediction."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Some numerals and equation typography are extraction-sensitive, though the qualitative comparison for orders two through ten is legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Change across the listed moment orders to across the displayed nontrivial orders two through ten, and explicitly note the tied first-moment prediction."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a formula-level refinement of the symmetry-class generalization.",
+      "line_end": 1697,
+      "line_start": 1630,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The source is heavily formula-dependent here and the ensemble parameter is partly lost; use the prose pole/zero and rationality statements, and scan-verify every exact special-function formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+      "unit_bytes": 4041,
+      "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+      "unit_sha256": "598bdf6bf59c14187f990e9a1b00a4cd26540bef6c15a4dd6a0fc559cf803331",
+      "unit_type": "symmetry-specific-special-function-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u27_cse_leading_coefficients.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1622,
+          "line_end": 1629,
+          "text": "                                                                            ;2)=2\n                                                                                  N=2 ; k A\n                = 12 @ N2 (1) (1) + N2 (1) (1=2) ; 4(N=\n                                                  k=1 (2k ; 1)                       k2\n                                                                   2\n                                                                            k=1\n                = log N + 1 + ; 34 \u0010 (2) + O(N ;1 ):                                              (120)\nThe calculation for odd N is very similar and the result is the same. Once again Q12 (N ) = R21 (N ).\n",
+          "sha256": "8142049bf0b70cf6adeb8e93582b7b7357722442e478f4a49e85753757d8b048"
+        },
+        "after": {
+          "line_start": 1698,
+          "line_end": 1705,
+          "text": "       Moving on to the COE, we have in this case that\n\n           MN (1; s) = exp\n                                       \u0012                 \u0013 2 X   1        ;\n       lim\n      N !1 N s2 =2\n                                        1 + ; 34 \u0010 (2) s2 + (;1)n 2n;1 \u0010 (n ; 1) ; \u0010 (n ; 1)\n                                                                n=3 \u0013 \u0013\n",
+          "sha256": "3124c6407548d5c0abe7f70597eb5eac555d06501edaff4401cd8371afe62638"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 COE and CSE Results",
+            "line_end": 1754,
+            "line_start": 1479,
+            "mathematical_role": "Extends generating functions, cumulants, Gaussian limits, variances, and leading moment coefficients across circular symmetry classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1697,
+          "line_start": 1630,
+          "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "why_material": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a formula-level refinement of the symmetry-class generalization.",
+          "representation_dependency": "The source is heavily formula-dependent here and the ensemble parameter is partly lost; use the prose pole/zero and rationality statements, and scan-verify every exact special-function formula.",
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1629,
+            "line_start": 1580,
+            "title": "COE and CSE change the variance scale and constant term",
+            "unit_id": "keating2000_v2_u26_symmetry_specific_variance_constants",
+            "unit_type": "parameter-sensitive-asymptotics",
+            "why_material": "Computes the next variance asymptotics separately for symplectic and orthogonal ensembles, including the even/odd matrix-size issue, while retaining equality of real and imaginary variances."
+          },
+          {
+            "line_end": 1753,
+            "line_start": 1698,
+            "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+            "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+            "unit_type": "symmetry-specific-special-function-asymptotics",
+            "why_material": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Orthogonal, unitary, and symplectic models share logarithmic variance plus bounded higher cumulants, yet differ in variance constants, admissible rational moment subsequences, and pole/zero patterns.",
+            "limit": "Applying a non-CUE class to an L-function requires an independently justified family-symmetry assignment, and exact special-function formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "keating2000_v2_u06_family_symmetry_selects_model",
+              "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+              "keating2000_v2_u26_symmetry_specific_variance_constants",
+              "keating2000_v2_u27_cse_leading_coefficients",
+              "keating2000_v2_u28_coe_leading_coefficients"
+            ],
+            "title": "Symmetry class changes constants without changing the Gaussian mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+          "spontaneous_reading": "The unit converts CSE moment asymptotics into special-function constants: matching series identifies normalized leading coefficients, analytic continuation extends them, and their divisors and rational s=4k values are checked against finite-N products or polynomials."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+          "source_grounded_mathematics": "For CSE modulus moments, removing the N^{s^2/8} growth yields a coefficient f_CSE(s) expressed through gamma and Barnes G functions. It is first derived for |s|<1 and then analytically continued. The source states poles of order k at s=-(2k-1), simple zeros at s=-(4k-2), rational values at positive s=4k, and a finite-N polynomial check of degree 2k^2. The phase-generator limit has kth-order zeros at both ±(4k-2) and ±4k.",
+          "conceptual_reading": "Coefficient matching compresses an infinite cumulant expansion into a meromorphic special-function object. Its pole and zero multiplicities retain information that the leading Gaussian exponent alone discards, so the symmetry class remains visible in the lower-order moment constant.",
+          "representation_or_bridge": "The bridge is from the power series for log Gamma and log Barnes G to the cumulant-series exponent, followed by resummation as a gamma/G quotient. Finite-N product structure and polynomial leading terms provide independent checks on rational specializations and divisor multiplicities.",
+          "boundary_or_failure": "The argument initially controls only |s|<1 and relies on analytic continuation beyond that region. Rationality is asserted only on the s=4k subsequence. These CSE calculations do not by themselves justify assigning CSE symmetry to an L-function family or establish a zeta moment formula.",
+          "uncertainty": "The prose-supported normalization scale, rational subsequence, polynomial degree, and pole/zero statements are clear. The extracted gamma/Barnes G formulas contain damaged symbols and layout, so their exact factors and the phase-limit normalization require scan verification before symbolic reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly defines f_CSE(s) by removing the N^(s^2/8) growth, matches the cumulant series to gamma/Barnes G expansions for |s|<1, and then invokes analytic continuation.",
+          "The stated modulus-coefficient poles, simple zeros, rational s=4k subsequence, degree-2k^2 polynomial check, and phase-coefficient zero multiplicities all agree with the source prose."
+        ],
+        "inference": [
+          "Reading the resummation as retaining meromorphic information beyond the quadratic N-scaling is a reasonable non-paraphrase conceptual inference.",
+          "The warning that these calculations do not assign CSE symmetry to an L-function family or establish a zeta-moment formula is a sound scope boundary."
+        ],
+        "unsupported_or_imported": [
+          "The claim that a finite-N product structure independently checks rational specializations and divisor multiplicities is not established within this span: the cited earlier formulas are outside the boundary, while this span states a polynomial check for f_CSE(4k) and a separate examination of L_N for the phase zeros."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous reading is largely a compact result catalog, but the directed reading adds the substantive series-to-special-function resummation mechanism; style risk is limited."
+        ],
+        "context_or_ocr_risk": [
+          "The displayed special-function quotients and some signs/normalizations are visibly OCR-damaged. The candidate appropriately withholds exact symbolic reuse, and the clean prose is sufficient for the listed pole, zero, rationality, and degree claims."
+        ],
+        "missed_mechanism": [
+          "The candidate blurs two distinct source checks: the polynomial leading term checks the rational modulus specialization, whereas examination of L_N checks the phase-zero multiplicities."
+        ],
+        "revision_instructions": [
+          "Replace the finite-N-product sentence with two source-bounded statements assigning the polynomial check to f_CSE(4k) and the L_N examination to phase zeros.",
+          "Retain the analytic-continuation boundary and the explicit prohibition on reusing the damaged gamma/Barnes G quotient without scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Together with the CSE unit, this shows that Gaussian universality does not imply identical moment constants.",
+      "line_end": 1753,
+      "line_start": 1698,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact gamma/Barnes G formulas and multiplicities are formula-sensitive; all should be verified against the scan before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators.",
+      "source_id": "keating_snaith2000_rmt",
+      "source_normalized_sha256": "4e0e51b57b3eee4e433f0dfffcf178c7a11f6e0844f25929c900a9927aa6bb6c",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+      "unit_artifact_relpath": "depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+      "unit_bytes": 2972,
+      "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+      "unit_sha256": "83db1177af94a6d81b67275ef3b5a7c60e2b4bc9fd0d97ae2fc5e208cb7bdaac",
+      "unit_type": "symmetry-specific-special-function-asymptotics",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/keating2000_v2_u28_coe_leading_coefficients.txt",
+      "source": {
+        "source_id": "keating_snaith2000_rmt",
+        "title": "Random Matrix Theory and zeta(1/2+it)",
+        "authors": [
+          "J. P. Keating",
+          "N. C. Snaith"
+        ],
+        "year": 2000,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1690,
+          "line_end": 1697,
+          "text": "                                          ;       2n \u0010 (2n ; 1) + 22n \u0010 (2n) ; 42n \u0010 (2n) 2n ;\n                                            n=2 2\nand the expansions of the gamma and G-functions allow us to show that\n                                                   s\n          lim L (4; s) \u0002 N s2 =8       = 2;s2 =8       G(1 + s=2)G(1 ; s=2);(1 + s=4);(1 ; s=4) ;   (127)\n         N !1 N                                                  ;(1 + s=2);(1 ; s=2)\nwhich has zeros of order k at \u0006(4k ; 2) and also kth order zeros at \u00064k, k = 1; 2; 3 : : : , just as an\nexamination of LN (4; s) indicates it should.\n",
+          "sha256": "53dca479edb3cecad93e37268f6b003edcb5705de7a1d9d4ff65cb79b1fb4f25"
+        },
+        "after": {
+          "line_start": 1754,
+          "line_end": 1761,
+          "text": "\nAcknowledgements\nWe are grateful to Peter Sarnak, for a number of very helpful suggestions, to Brian Conrey, for\nseveral stimulating discussions, and, in particular, to Andrew Odlyzko, for giving us access to his\nnumerical data. NCS also wishes to acknowledge generous funding from NSERC and the CFUW\nin Canada.\n\n\n",
+          "sha256": "38349b595a8a038d56337b68d0c3edd4e0d8c26cb79fb0a6f9f464ed3fce8af2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e25cc2b6034ab21cbd2760e53048bbb854a84f414a6228d3841353301a739e0c",
+        "dossier_sha256": "e040c63467391543d63c72132149bc7e0e01af5f0b881c64ec8bf15cc2f5fc86",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 COE and CSE Results",
+            "line_end": 1754,
+            "line_start": 1479,
+            "mathematical_role": "Extends generating functions, cumulants, Gaussian limits, variances, and leading moment coefficients across circular symmetry classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1753,
+          "line_start": 1698,
+          "title": "COE leading coefficients shift the moment subsequence and pole/zero pattern",
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+          "unit_type": "symmetry-specific-special-function-asymptotics",
+          "why_material": "Provides the orthogonal analogue, with different normalization, rational moment subsequence, and analytic pole/zero structure for modulus and phase generators."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Together with the CSE unit, this shows that Gaussian universality does not imply identical moment constants.",
+          "representation_dependency": "Exact gamma/Barnes G formulas and multiplicities are formula-sensitive; all should be verified against the scan before symbolic use.",
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1697,
+            "line_start": 1630,
+            "title": "CSE leading moment coefficients have distinct gamma/Barnes G and zero structures",
+            "unit_id": "keating2000_v2_u27_cse_leading_coefficients",
+            "unit_type": "symmetry-specific-special-function-asymptotics",
+            "why_material": "Derives symplectic leading coefficients for modulus and phase generators, identifies the moment subsequence yielding rational values, and checks pole and zero multiplicities against the finite-N products."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Orthogonal, unitary, and symplectic models share logarithmic variance plus bounded higher cumulants, yet differ in variance constants, admissible rational moment subsequences, and pole/zero patterns.",
+            "limit": "Applying a non-CUE class to an L-function requires an independently justified family-symmetry assignment, and exact special-function formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "keating2000_v2_u06_family_symmetry_selects_model",
+              "keating2000_v2_u25_beta_ensemble_gaussian_universality",
+              "keating2000_v2_u26_symmetry_specific_variance_constants",
+              "keating2000_v2_u27_cse_leading_coefficients",
+              "keating2000_v2_u28_coe_leading_coefficients"
+            ],
+            "title": "Symmetry class changes constants without changing the Gaussian mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+        "spontaneous": {
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+          "spontaneous_reading": "The COE analogue shows where symmetry class enters after Gaussian scaling: a different gamma/Barnes G coefficient has rational values already at s=2k and carries its own pole and phase-zero multiplicities, with finite-N moments supplying a structural check."
+        },
+        "directed": {
+          "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+          "source_grounded_mathematics": "For COE modulus moments, removing the N^{s^2/2} growth gives f_COE(s), represented by gamma and Barnes G functions. The comparison is made for |s|<1/2 and extended by analytic continuation. The source gives simple poles at s=-(2k-1), poles of order k at s=-(2k+1)/2, rational values at s=2k via a factorial product, and a finite-N polynomial check of degree 2k^2. The phase-generator coefficient has kth-order zeros at ±2k and ±(2k+1).",
+          "conceptual_reading": "The common Gaussian mechanism fixes the dominant power of N but not the meromorphic leading coefficient. The shifted rational subsequence and divisor pattern therefore encode COE-specific structure that would be invisible if one retained only variance growth.",
+          "representation_or_bridge": "As in the CSE calculation, a cumulant-series exponential is matched termwise to expansions of gamma and Barnes G functions, producing a compact continued coefficient. The factorial product at even positive s and the finite-N polynomial realization bridge the analytic formula back to exact moment combinatorics.",
+          "boundary_or_failure": "The derivation begins only in |s|<1/2; values elsewhere come from analytic continuation. The rational evaluation is restricted to s=2k. The unit compares ensemble moment structures but does not justify a COE model for any particular L-function family or transfer the coefficient to zeta moments.",
+          "uncertainty": "The prose clearly supports the growth scale, continuation domain, rational subsequence, polynomial degree, and stated divisor multiplicities. OCR damage makes the exact gamma/Barnes G quotient and some displayed phase normalization unsafe without checking the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "keating2000_v2_u28_coe_leading_coefficients",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly defines f_COE(s) after removing N^(s^2/2), obtains the gamma/Barnes G representation by comparing series for |s|<1/2, and extends the identity by analytic continuation.",
+          "The simple negative-odd poles, kth-order negative-half-integer poles, rational s=2k factorial product, degree-2k^2 polynomial check, and phase zeros at ±2k and ±(2k+1) are all stated in the span."
+        ],
+        "inference": [
+          "It is reasonable to infer locally that the quadratic normalization and the meromorphic coefficient retain different information, and that the polynomial leading-term computation checks the positive-even specialization."
+        ],
+        "unsupported_or_imported": [
+          "The comparative phrases 'COE analogue,' 'common Gaussian mechanism,' 'shifted rational subsequence,' and 'as in the CSE calculation' require cross-ensemble evidence not supplied by this unit span; the bounded source establishes the COE mechanism and data only.",
+          "Calling the polynomial check a bridge to 'exact moment combinatorics' is stronger than the span, which says only that computing the leading term of M_N(1;2k) gives a polynomial of degree 2k^2."
+        ],
+        "paraphrase_or_style_risk": [
+          "The directed account identifies termwise series matching and analytic continuation rather than merely restating formulas, but its cross-class framing echoes the dossier-level synthesis."
+        ],
+        "context_or_ocr_risk": [
+          "The exact gamma/Barnes G quotient and phase normalization are OCR-sensitive, while the prose pole, rationality, degree, and zero statements remain legible. The candidate correctly flags symbolic reuse as unsafe without the scan."
+        ],
+        "missed_mechanism": [
+          "The interpretation should distinguish the source-local operation—comparison of (128) and (129) followed by continuation—from any later comparison of COE with CSE or CUE."
+        ],
+        "revision_instructions": [
+          "Localize the conceptual reading to COE: say that removing the quadratic N-growth leaves a meromorphic coefficient carrying divisor and rational-specialization data, without claiming a common or shifted cross-ensemble pattern.",
+          "Replace 'exact moment combinatorics' with the source's narrower polynomial-leading-term check, and preserve the scan-verification caveat."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ddd2d585abdbec893b5ec58e31d02f68461cda88e1e28236c8cbba9d3fd6616f"
+}

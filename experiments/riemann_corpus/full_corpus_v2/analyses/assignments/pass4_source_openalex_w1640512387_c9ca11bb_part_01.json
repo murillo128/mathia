@@ -1,0 +1,814 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1640512387_c9ca11bb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1640512387",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical evaluation certifies this source's parameter choice; it is not an independent proof of the assumed moment theorem.",
+      "line_end": 165,
+      "line_start": 145,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on extracted decimal coefficients and formulas; these are readable, but any reuse should preserve the exact source values.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects the smoothed asymptotic to the original integral and records explicit polynomial choices whose evaluated constant yields the claimed lower bounds.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unsmoothing and numerical parameter certification",
+      "unit_artifact_relpath": "depth/units/depth_openalex_w1640512387_u03.txt",
+      "unit_bytes": 1158,
+      "unit_id": "depth_openalex_w1640512387_u03",
+      "unit_sha256": "4c905900f33e9b1e24f0dcfb752935e3e1f546190ea44febbb24033bc692413e",
+      "unit_type": "computational certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/depth_openalex_w1640512387_u03.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 137,
+          "line_end": 144,
+          "text": "Theorem 2.1. Suppose ϑ1 < 4/7, ϑ2 < 1/2 and ϑ3 < 1/4. Then we have\n      Z ∞\n                       2\n                                                                      w(0) + Oε (T L−1+ε ),\n           V ψ(σ0 + it) w(t)dt = c(P1 , P2 , P3 , Q, R, ϑ1 , ϑ2 , ϑ3 ) b                            (3)\n           −∞\nwhere c(P1 , P2 , P3 , Q, R, ϑ1 , ϑ2 , ϑ3 ) = c1 + c2 + c3 + 2c12 + 2c23 + 2c31 , and the ci and cij are\ngiven below by (4)–(9).\n",
+          "sha256": "a330141310ac4e8a458acea1dc13ddb99c417638356bf04d3a44fe1c41fbff21"
+        },
+        "after": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "\n                                   3. The mean-value results\n    Writing ψ = ψ1 + ψ2 + ψ3 and opening the square, we get\nZ                Z            Z             Z\n         2               2            2             2\n    Vψ w =          V ψ1 w +      V ψ2 w +     V ψ3 w\n                           \u001aZ             \u001b       \u001aZ            \u001b      \u001aZ           \u001b\n                                   2                      2                 2\n",
+          "sha256": "02a34fc8e344a4e27a39846841ab007d04e5b916851b7130347bb0bcd0ec26d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fd37612663e0436e32bdcd32515491d57df285befa0427752da3a5e3b55a395b",
+        "dossier_sha256": "6c890326c4e194aea8c162cb93349bf891a4d4de92667d361339005a13019401",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Reduction to mean-value theorems",
+            "line_end": 166,
+            "line_start": 64,
+            "mathematical_role": "Converts zero proportions to a mollified second moment, defines the three pieces and their normalization, smooths the moment, and records numerical parameter certification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 165,
+          "line_start": 145,
+          "title": "Unsmoothing and numerical parameter certification",
+          "unit_id": "depth_openalex_w1640512387_u03",
+          "unit_type": "computational certification logic",
+          "why_material": "Connects the smoothed asymptotic to the original integral and records explicit polynomial choices whose evaluated constant yields the claimed lower bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical evaluation certifies this source's parameter choice; it is not an independent proof of the assumed moment theorem.",
+          "representation_dependency": "Depends on extracted decimal coefficients and formulas; these are readable, but any reuse should preserve the exact source values.",
+          "unit_id": "depth_openalex_w1640512387_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 82,
+            "title": "Three-piece mollifier, reciprocal heuristic, and smoothing contract",
+            "unit_id": "full_openalex_w1640512387_u02",
+            "unit_type": "three-piece mollifier setup",
+            "why_material": "Defines three structurally different pieces, their polynomial vanishing and boundary conditions, the reciprocal-inspired third piece, ordered lengths, and the smoothed theorem that reduces the calculation to six constants."
+          },
+          {
+            "line_end": 178,
+            "line_start": 167,
+            "title": "Six-term expansion of the three-piece mollified moment",
+            "unit_id": "depth_openalex_w1640512387_u04",
+            "unit_type": "decomposition",
+            "why_material": "Makes the interaction graph explicit: three diagonal moments and three asymptotically real cross moments must all be controlled, explaining why each mollifier length has a different analytic bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 166,
+              "line_start": 166,
+              "reason": "Section separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "depth_openalex_w1640512387_u03",
+        "spontaneous": {
+          "unit_id": "depth_openalex_w1640512387_u03",
+          "spontaneous_reading": "The analytic argument is compressed to a finite-dimensional constant c, and explicit polynomial coefficients become a numerical witness that the resulting lower-bound objective beats the prior value."
+        },
+        "directed": {
+          "unit_id": "depth_openalex_w1640512387_u03",
+          "source_grounded_mathematics": "The smoothed asymptotic is unsmoothed to ∫|Vψ|²=cT+Oε(TL⁻¹⁺ε), giving κ≥1−log(c)/R+o(1). The source reports Mathematica evaluations: one parameter set with R=1.26 gives κ>0.410918, and a linear-Q set with R=1.12 gives κ*>0.40589.",
+          "conceptual_reading": "Once the six analytic moment contributions have been reduced to c, parameter selection is a computational certification layer over the symbolic theorem. The decimals witness one feasible point rather than explain why the moment theorem holds.",
+          "representation_or_bridge": "R, Q, and the three mollifier polynomials form finite coordinates for the scalar objective c; unsmoothing transfers that computed constant back to the zero-proportion inequality.",
+          "boundary_or_failure": "The numerical evaluation is not an independent proof of the formulas defining c and does not discharge the assumed twisted-third-moment input. No Mathematica transcript or numerical error audit appears in this span.",
+          "uncertainty": "The listed decimal coefficients are legible, but their evaluation is only reported by the source. Reuse should preserve the exact values and recompute c."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "depth_openalex_w1640512387_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the unsmoothed asymptotic, derives κ≥1−log(c)/R+o(1), and reports two Mathematica-evaluated parameter choices giving the stated κ and κ* bounds.",
+          "The candidate correctly distinguishes the reported numerical evaluation from a derivation of the formulas defining c and notes the absence of a transcript or error audit in the span."
+        ],
+        "inference": [
+          "Treating the explicit coefficients as a finite-dimensional feasible witness for the scalar objective c is a grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that the witness beats a prior value is not supported inside this frozen span.",
+          "The claim that the computation does not discharge an assumed twisted-third-moment input imports a dependency stated outside this span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Decimal coefficients are legible, but the span only reports their Mathematica evaluation."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the comparison with a prior value and the out-of-span twisted-third-moment claim; retain the narrower distinction between the reported numerical evaluation and verification of the displayed c-formulas."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Direct setup for carried unit full_openalex_w1640512387_u03.",
+      "line_end": 278,
+      "line_start": 245,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Display-dependent; summation and conjugation layout is noisy but the identities of I3, I23, and I31 are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the third-piece diagonal and its two cross moments explicitly, isolating the new analytic work created by adding the reciprocal-inspired mollifier piece.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The three unevaluated third-piece interactions",
+      "unit_artifact_relpath": "depth/units/depth_openalex_w1640512387_u06.txt",
+      "unit_bytes": 2632,
+      "unit_id": "depth_openalex_w1640512387_u06",
+      "unit_sha256": "487dfd2753bbb6937454cb839361392783a9e5d06b9c103f314aa5cd5c9f8b5d",
+      "unit_type": "problem decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/depth_openalex_w1640512387_u06.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 237,
+          "line_end": 244,
+          "text": "                                                \u0001    \u0010                                     \u0001\u0011\n                    Q ϑ2 − x2 + t1 (x1 + u) + t3 1 + ϑ2 x1 + x2 − t1 (x1 + u) − t2 (x2 + u)\n                                                                                   \u0015\n                           ′′\n                                                \u0001 ′′               \u0001\n                         P2 (x1 + u)(1 − t1 )) P2 (x2 + u)(1 − t2 ) dt1 dt2 dt3 du     .    (6)\n                                                                                                              x1 =x2 =0\n\n",
+          "sha256": "c368af984a01665d77c275e27e1e69279de9e6e81f4f633530eab814f231017a"
+        },
+        "after": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "Theorem 3.4. Suppose ϑ3 < 1/4 and P3 (0) = P3′ (0) = P3′′ (0) = P3′′′ (0) = 0. Then we have\n                                                      w(0) + Oε (T L−1+ε ),\n                                               I3 = c3 b\nwhere\n                                \u0014 Z\n                d8\n       1\nc3 = 12ϑ 4   2  2  2   2                   e−ϑ3 R(x2 +x3 )+Rt1 (1−t4 )(1+ϑ3 (x1 +x3 ))+Rt2 (1−t3 )(1+ϑ3 (x2 +x4 ))\n",
+          "sha256": "79d8b4b8367486cc76ddd1159d7861c6faaf87ee3660b5a8690418f9d169612a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fd37612663e0436e32bdcd32515491d57df285befa0427752da3a5e3b55a395b",
+        "dossier_sha256": "6c890326c4e194aea8c162cb93349bf891a4d4de92667d361339005a13019401",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. The mean-value results",
+            "line_end": 531,
+            "line_start": 167,
+            "mathematical_role": "Expands the square, assembles inherited and new diagonal/cross terms, introduces shifted moment families, and transfers their uniform asymptotics through the differential operator defining V."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 278,
+          "line_start": 245,
+          "title": "The three unevaluated third-piece interactions",
+          "unit_id": "depth_openalex_w1640512387_u06",
+          "unit_type": "problem decomposition",
+          "why_material": "Defines the third-piece diagonal and its two cross moments explicitly, isolating the new analytic work created by adding the reciprocal-inspired mollifier piece."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Direct setup for carried unit full_openalex_w1640512387_u03.",
+          "representation_dependency": "Display-dependent; summation and conjugation layout is noisy but the identities of I3, I23, and I31 are recoverable.",
+          "unit_id": "depth_openalex_w1640512387_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 244,
+            "line_start": 184,
+            "title": "Inherited mean values and their distinct length regimes",
+            "unit_id": "depth_openalex_w1640512387_u05",
+            "unit_type": "method comparison",
+            "why_material": "Collects the established psi1 diagonal, psi1-psi2 cross, and psi2 diagonal evaluations, exposing which pieces are inherited and which length and vanishing hypotheses each requires."
+          },
+          {
+            "line_end": 365,
+            "line_start": 279,
+            "title": "Main terms for the third-piece diagonal and cross moments",
+            "unit_id": "full_openalex_w1640512387_u03",
+            "unit_type": "main-term theorem cluster",
+            "why_material": "States the three new asymptotics with their separate length and polynomial-vanishing conditions, completing the six constants needed by the smoothed theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modeling a truncated reciprocal of zeta with psi3 creates one diagonal fourth-moment problem and two mixed third-moment problems; its semantic benefit and its stricter length bound arise from that interaction structure.",
+            "limit": "The source gives a conditional numerical gain and does not compare all alternative reciprocal approximations or prove the twisted-third input.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1640512387_u02",
+              "depth_openalex_w1640512387_u06",
+              "full_openalex_w1640512387_u03",
+              "full_openalex_w1640512387_u05",
+              "depth_openalex_w1640512387_u16",
+              "depth_openalex_w1640512387_u17"
+            ],
+            "title": "Reciprocal-inspired third piece forces a fourth-moment channel"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "depth_openalex_w1640512387_u06",
+        "spontaneous": {
+          "unit_id": "depth_openalex_w1640512387_u06",
+          "spontaneous_reading": "Adding the reciprocal-inspired third piece leaves exactly three new objects: its diagonal interaction and its cross interactions with each earlier piece, thereby isolating the new analytic debt."
+        },
+        "directed": {
+          "unit_id": "depth_openalex_w1640512387_u06",
+          "source_grounded_mathematics": "The span writes I3, I23, and I31 explicitly as weighted integrals containing V, zeta factors, and Dirichlet-polynomial sums built respectively from the ψ3-ψ3, ψ2-ψ3, and ψ3-ψ1 pairings.",
+          "conceptual_reading": "A new representation component is valuable only together with the interactions it induces. The decomposition distinguishes the fourth-moment-like diagonal burden from the two mixed third-moment burdens.",
+          "representation_or_bridge": "The explicit Dirichlet sums translate the three abstract edges in the interaction graph into twisted zeta moments to which shifted-moment and Euler-product machinery can be applied.",
+          "boundary_or_failure": "This unit only defines the unevaluated terms; it supplies neither their asymptotics nor the hypotheses under which those asymptotics hold.",
+          "uncertainty": "Summation, conjugation, and fraction layout are noisy in extraction, so exact transcription should be checked, although the identities and roles of I3, I23, and I31 are recoverable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "depth_openalex_w1640512387_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly writes the three remaining terms I3, I23, and I31 as the ψ3 diagonal and its two cross pairings, with their zeta factors and Dirichlet-polynomial sums.",
+          "It is source-grounded to say that adding ψ3 creates these three additional interaction obligations."
+        ],
+        "inference": [
+          "The rough distinction between a fourth-moment-like diagonal term and mixed third-moment-like cross terms can be inferred from the visible factor structure, but should be marked as interpretation rather than a theorem of this span."
+        ],
+        "unsupported_or_imported": [
+          "The assertion that these sums are thereby translated to shifted-moment and Euler-product machinery imports the method of later sections; this span only defines the unevaluated terms."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Summation, conjugation, and fraction layout are noisy, although the identities of the three pairings are recoverable."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "End the bridge at the explicit twisted-moment forms visible here; remove the claim about later shifted-moment and Euler-product machinery, and label the moment-order classification as an inference from factor counts."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The shift scale O(1/log T) and uniformity are essential for the later Cauchy-integral transfer.",
+      "line_end": 482,
+      "line_start": 367,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact kernels are formula-dense and line-broken; the representation change, hypotheses, and shift structure are nevertheless recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces direct differentiation of V with uniform shifted third- and fourth-moment families, then states the three shifted lemmas from which the target constants will be generated.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted moment families as generators of mollified constants",
+      "unit_artifact_relpath": "depth/units/depth_openalex_w1640512387_u07.txt",
+      "unit_bytes": 8565,
+      "unit_id": "depth_openalex_w1640512387_u07",
+      "unit_sha256": "51b2236f91e3fec23aa46ef79de410385cb14269a4d97fe3ca2904d9c6ef4236",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/depth_openalex_w1640512387_u07.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 359,
+          "line_end": 366,
+          "text": "      − ϑ1 (x1 − x2 ) + t1 (1 + ϑ1 x1 + ϑ3 x3 ) (1 + ϑ1 x1 + ϑ3 x3 )(1 − u)\n        \u0010                                                      \u0011 \u0010                                 \u0011\n      Q − ϑ1 x2 + t1 t2 (1 + ϑ1 x1 + ϑ3 x3 ) − ϑ1 t2 (x1 − x2 ) Q − ϑ3 x3 + t1 (1 + ϑ1 x1 + ϑ3 x3 )\n             \u0010                          \u0011                      \u0015\n                               ϑ3\n         P1 x1 + x2 + 1 − ϑ1 (1 − u) P3 (x3 + u)dt1 dt2 du           .                            (9)\n                                                                              x=0\n\n",
+          "sha256": "086dbd178b41a7c0d90a6fcd21f1864af99990b71d2a1db60bc894e4f7ce779e"
+        },
+        "after": {
+          "line_start": 483,
+          "line_end": 490,
+          "text": "\n  We now prove that Theorems 3.4–3.6 follow from Lemmas 3.1–3.3, respectively. Let I⋆\ndenote either I23 or I31 . We ﬁrst note that\n                           \u0010 −1 d \u0011 \u0010 −1 d \u0011\n                   I3 = Q           Q        I3 (α, β, γ, δ)                     (16)\n                             L dβ       L dγ                 α=δ=0, β=γ=−R/L\n\nand\n",
+          "sha256": "2edea5eb8ac0c70987f8bf81bb7222ebaa823f566ad3945f48f3e3d01e9dd23b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fd37612663e0436e32bdcd32515491d57df285befa0427752da3a5e3b55a395b",
+        "dossier_sha256": "6c890326c4e194aea8c162cb93349bf891a4d4de92667d361339005a13019401",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. The mean-value results",
+            "line_end": 531,
+            "line_start": 167,
+            "mathematical_role": "Expands the square, assembles inherited and new diagonal/cross terms, introduces shifted moment families, and transfers their uniform asymptotics through the differential operator defining V."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 482,
+          "line_start": 367,
+          "title": "Shifted moment families as generators of mollified constants",
+          "unit_id": "depth_openalex_w1640512387_u07",
+          "unit_type": "representation change",
+          "why_material": "Replaces direct differentiation of V with uniform shifted third- and fourth-moment families, then states the three shifted lemmas from which the target constants will be generated."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The shift scale O(1/log T) and uniformity are essential for the later Cauchy-integral transfer.",
+          "representation_dependency": "The exact kernels are formula-dense and line-broken; the representation change, hypotheses, and shift structure are nevertheless recoverable.",
+          "unit_id": "depth_openalex_w1640512387_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 365,
+            "line_start": 279,
+            "title": "Main terms for the third-piece diagonal and cross moments",
+            "unit_id": "full_openalex_w1640512387_u03",
+            "unit_type": "main-term theorem cluster",
+            "why_material": "States the three new asymptotics with their separate length and polynomial-vanishing conditions, completing the six constants needed by the smoothed theorem."
+          },
+          {
+            "line_end": 530,
+            "line_start": 484,
+            "title": "Differential-operator and Cauchy transfer from shifts to V",
+            "unit_id": "depth_openalex_w1640512387_u08",
+            "unit_type": "analytic transfer",
+            "why_material": "Explains how applying Q(-L^-1 d/dshift) to uniform shifted asymptotics recovers the V-moments without worsening the error, using holomorphy and Cauchy's formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Uniform shifted moment formulas form an intermediate representation from which mollified derivative moments are generated by polynomial differential operators, while divided-difference integrals and symmetries cancel apparent shift singularities.",
+            "limit": "The transfer requires holomorphy and uniform errors on O(1/log T) contours, and the exact cancellations remain tied to the displayed kernels.",
+            "parent_local_unit_ids": [
+              "depth_openalex_w1640512387_u07",
+              "depth_openalex_w1640512387_u08",
+              "depth_openalex_w1640512387_u11",
+              "depth_openalex_w1640512387_u15",
+              "depth_openalex_w1640512387_u17"
+            ],
+            "title": "Shifted moments as a derivative-generating interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "depth_openalex_w1640512387_u07",
+        "spontaneous": {
+          "unit_id": "depth_openalex_w1640512387_u07",
+          "spontaneous_reading": "The proof replaces direct differentiation by a family of uniformly controlled shifted moments; the shifts act as generating coordinates from which the desired mollified derivative constants can later be extracted."
+        },
+        "directed": {
+          "unit_id": "depth_openalex_w1640512387_u07",
+          "source_grounded_mathematics": "The source defines shifted families I3(α,β,γ,δ), I23(α,β,γ), and I31(α,β,γ), then states uniform asymptotics for shifts of size O(L⁻¹). Lemmas 3.1-3.3 impose separate length bounds and vanishing conditions and express their constants as auxiliary-parameter derivative integrals; the zero-shift I3 formula is compared with a ratios-conjecture prediction.",
+          "conceptual_reading": "Small shifts separate otherwise entangled derivative roles and create a stable intermediate representation. Uniformity, not merely pointwise evaluation, is what makes the family useful as a generator.",
+          "representation_or_bridge": "Shifted zeta factors expose holomorphic coordinates; the integral kernels retain the mollifier lengths and polynomial shapes while preparing for differential operators in the shifts.",
+          "boundary_or_failure": "The displayed lemmas are goals for later sections, not proofs in this unit. The ratios-conjecture agreement is a consistency check, and the mixed-moment route still inherits the source's unproved twisted-third-moment assumption.",
+          "uncertainty": "The long kernels are heavily line-broken, so exact factors require scan-aware verification. The shift scale, hypotheses, uniformity, and generator role are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "depth_openalex_w1640512387_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the three shifted families and states Lemmas 3.1–3.3 uniformly for shifts of size O(L⁻¹), with their separate length and vanishing hypotheses.",
+          "It explicitly compares the zero-shift I3 formula with a ratios-conjecture prediction."
+        ],
+        "inference": [
+          "Viewing uniform shifted families as generating coordinates for later derivative extraction is a strong conceptual reading of replacing direct work with V by these parameterized moments."
+        ],
+        "unsupported_or_imported": [
+          "Calling the shifts holomorphic coordinates imports the holomorphy argument from the following span.",
+          "The statement that the mixed-moment route inherits an unproved twisted-third-moment assumption is not present in this exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The kernels are heavily line-broken; hypotheses, uniformity, and the representation change are reliable, but exact factors need scan-aware checking."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the claims about holomorphy and the unproved twisted-third input; describe only the uniform shifted-family generator role and the stated consistency comparison."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Makes explicit how changing the mollifier piece changes local zeta factors even under the same outer moment theorem.",
+      "line_end": 950,
+      "line_start": 860,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Euler factors and contours depend on formula layout; their numerator/denominator roles and separation are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the same twisted-third input to I23, identifies a different Euler product with fourth-power coupling, freezes its regular factor at one, and separates the remaining contour variables into two new residue problems.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic factorization for the psi2-psi3 cross moment",
+      "unit_artifact_relpath": "depth/units/depth_openalex_w1640512387_u12.txt",
+      "unit_bytes": 5921,
+      "unit_id": "depth_openalex_w1640512387_u12",
+      "unit_sha256": "24d4c122139a5b27bd67067328aac238b3dfa3e314846ecc79a6e9642f1c1b09",
+      "unit_type": "Euler-product reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/depth_openalex_w1640512387_u12.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 852,
+          "line_end": 859,
+          "text": "                   \u0010                                             \u0011\n                = L − ϑ1 (x1 − x2 ) + t1 (1 + ϑ1 x1 + ϑ3 x3 ) y1αx1 +βx2 y3γx3 (T y1x1 y3x3 )−(α+γ)t1\n                     Z 1\n                                                     \u0001−(β−α)t2\n                          y1−x1 +x2 (T y1x1 y3x3 )t1           dt2 .\n                           0\nLemma 3.3 follows from this and (26).\n\n",
+          "sha256": "4b3f8ac30a200df19e90b93cccb4176153c53cd45fb3525f97d3b4d4f0067cbd"
+        },
+        "after": {
+          "line_start": 951,
+          "line_end": 958,
+          "text": "\n<!-- source-page: 14 -->\n\n14                                             H. M. BUI\n\nLemma 6.1. Suppose i ≥ 3. Then we have\n                                       \u0014Z 1 Z 1                      \u0001                       \u0001\n                        4           d2                                     \u0010 \u0011\n",
+          "sha256": "365ae92b587a0f183d198ac266160f69685e0ff05da677dcd1bd0df0ff7a452d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fd37612663e0436e32bdcd32515491d57df285befa0427752da3a5e3b55a395b",
+        "dossier_sha256": "6c890326c4e194aea8c162cb93349bf891a4d4de92667d361339005a13019401",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Proof of Lemma 3.2",
+            "line_end": 1260,
+            "line_start": 860,
+            "mathematical_role": "Evaluates the psi2-psi3 cross term through an Euler product, two residue lemmas, Euler-Maclaurin conversion, and divided-difference recombination."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 950,
+          "line_start": 860,
+          "title": "Arithmetic factorization for the psi2-psi3 cross moment",
+          "unit_id": "depth_openalex_w1640512387_u12",
+          "unit_type": "Euler-product reduction",
+          "why_material": "Applies the same twisted-third input to I23, identifies a different Euler product with fourth-power coupling, freezes its regular factor at one, and separates the remaining contour variables into two new residue problems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Makes explicit how changing the mollifier piece changes local zeta factors even under the same outer moment theorem.",
+          "representation_dependency": "Exact Euler factors and contours depend on formula layout; their numerator/denominator roles and separation are legible.",
+          "unit_id": "depth_openalex_w1640512387_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 858,
+            "line_start": 773,
+            "title": "Divided differences remove shift poles in I31",
+            "unit_id": "depth_openalex_w1640512387_u11",
+            "unit_type": "symmetry recombination",
+            "why_material": "Combines the three shift companions, uses a partial-fraction identity and an integral representation of divided differences, swaps dummy variables, and obtains the regular shifted formula of Lemma 3.3."
+          },
+          {
+            "line_end": 1041,
+            "line_start": 956,
+            "title": "Beta-integral evaluation of the first I23 contour factor",
+            "unit_id": "depth_openalex_w1640512387_u13",
+            "unit_type": "residue construction",
+            "why_material": "Reduces a contour integral to a residue, encodes a squared zero through auxiliary differentiation, computes the residue at infinity, and uses two beta integrals to separate shift indices into a geometric integral."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across the new terms, the proof repeatedly factors arithmetic sums into singular zeta factors and a regular Euler product, freezes the regular factor at the origin, separates contour variables, converts residues to auxiliary-parameter integrals, and applies Euler-Maclaurin to expose geometric main terms.",
+            "limit": "This is a within-source methodological synthesis; formula-specific vanishing orders, errors, and admissible contours must not be generalized without new evidence.",
+            "parent_local_unit_ids": [
+              "depth_openalex_w1640512387_u09",
+              "full_openalex_w1640512387_u04",
+              "depth_openalex_w1640512387_u10",
+              "depth_openalex_w1640512387_u12",
+              "depth_openalex_w1640512387_u13",
+              "depth_openalex_w1640512387_u14",
+              "full_openalex_w1640512387_u05",
+              "depth_openalex_w1640512387_u16"
+            ],
+            "title": "Euler product to geometric integral template"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "depth_openalex_w1640512387_u12",
+        "spontaneous": {
+          "unit_id": "depth_openalex_w1640512387_u12",
+          "spontaneous_reading": "Changing from ψ1 to ψ2 changes the local arithmetic architecture even under the same outer twisted-third-moment input: the new Euler product has fourth-power coupling and a higher-order residue burden."
+        },
+        "directed": {
+          "unit_id": "depth_openalex_w1640512387_u12",
+          "source_grounded_mathematics": "The source splits I23 into three shift companions, applies Mellin representations to the primary term, and factors the constraint mab=lnc into singular zeta factors times a regular B. Expanding ζ(1+u+v)^4, restricting n≤y3, moving contours, and using B(0)=1 separates Kij into Ni(α,β,γ)Nj(α,β) plus an error.",
+          "conceptual_reading": "The outer moment theorem does not determine the inner complexity: the mollifier coefficients change the Euler factors, pole-zero orders, and residue problems. Component choice therefore controls proof burden structurally.",
+          "representation_or_bridge": "The multiplicative constraint becomes an Euler product; separating regular B from singular zeta factors and then separating u from v produces two targeted contour objects for later lemmas.",
+          "boundary_or_failure": "This is the reduction of the primary companion, not the full I23 evaluation. It relies on the source's twisted-third-moment input, small-shift contour moves, and analyticity near the origin.",
+          "uncertainty": "Exact numerator and denominator factors are formula-layout sensitive, but the fourth-power coupling, normalization B(0)=1, and separation into Ni and Nj are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "depth_openalex_w1640512387_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The span splits I23 into three shift companions, factors the primary arithmetic sum into explicit singular zeta factors and regular B, expands the fourth power, restricts n≤y3, freezes B at B(0)=1, and separates Ki,j into NiNj.",
+          "The candidate correctly observes that the displayed fourth-power coupling changes the residue structure relative to a simpler mollifier coefficient."
+        ],
+        "inference": [
+          "The conclusion that mollifier coefficients control inner arithmetic complexity follows from the changed Euler factors and separated contour problems."
+        ],
+        "unsupported_or_imported": [
+          "References to the 'same outer twisted-third-moment input' and reliance on the source's unproved twisted-third theorem import material from outside this exact span."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Exact numerator and denominator factors are layout-sensitive, but their pole/zero roles and B(0)=1 are legible."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Remove the out-of-span twisted-third-moment references; retain the within-span comparison based on the explicit Euler factors, fourth power, contour separation, and stated analytic-factor normalization."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completes the I3^1 calculation begun inside the carried unit before the six companions are restored.",
+      "line_end": 1400,
+      "line_start": 1383,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Derivative and integral displays are readable with minor extraction spacing; exact constants remain formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the auxiliary sum lemmas to convert the separated residue factors into the explicit primary contribution with controlled errors.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin completion of the primary fourth-moment term",
+      "unit_artifact_relpath": "depth/units/depth_openalex_w1640512387_u16.txt",
+      "unit_bytes": 1356,
+      "unit_id": "depth_openalex_w1640512387_u16",
+      "unit_sha256": "c4b80e9e36b8ebec7f0c50219fc658b4db967be57785f53a6680ced089c16454",
+      "unit_type": "main-term assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/depth_openalex_w1640512387_u16.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1375,
+          "line_end": 1382,
+          "text": "                                  n                    log y3                   log y3       x=0\n                            n≤y3\n                            \u0012                                   \u0010    \u0011   \u0013\n                                                 \u0001 X d4 (n) y3 −ν\n                      +Oε Li−4+ε + Lj−4+ε                                  + O(Li+j−5 ).\n                                                           n       n\n                                                    n≤y3\n\n",
+          "sha256": "722f0ad312fc2c8902b6d06f8eebaf040079aee4ab881b458e893fb8a038dd31"
+        },
+        "after": {
+          "line_start": 1401,
+          "line_end": 1408,
+          "text": "7.2. Deduction of Lemma 3.1. Recall that I32 is essentially obtained by multiplying I31 with\nT −(α+γ) and changing the shifts α ↔ −γ, I33 is obtained by multiplying I31 with T −(α+δ) and\nchanging the shifts α ↔ −δ, I34 is obtained by multiplying I31 with T −(β+γ) and changing the\nshifts β ↔ −γ, I35 is obtained by multiplying I31 with T −(β+δ) and changing the shifts β ↔ −δ,\nand I36 is obtained by multiplying I31 with T −(α+β+γ+δ) and changing the shifts α ↔ −γ and\nβ ↔ −δ. Hence\n                                                     \u0014Z 1\n                         w(0)\n",
+          "sha256": "b8091ded5883ecd22783f38fc7bee70f1dd1a544d0301e6f6ee667241a146c71"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fd37612663e0436e32bdcd32515491d57df285befa0427752da3a5e3b55a395b",
+        "dossier_sha256": "6c890326c4e194aea8c162cb93349bf891a4d4de92667d361339005a13019401",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Proof of Lemma 3.1",
+            "line_end": 1506,
+            "line_start": 1261,
+            "mathematical_role": "Applies the twisted fourth moment to the third piece, evaluates one of six shift terms, then uses symmetry and integral identities to recover the full shifted fourth-moment formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1400,
+          "line_start": 1383,
+          "title": "Euler-Maclaurin completion of the primary fourth-moment term",
+          "unit_id": "depth_openalex_w1640512387_u16",
+          "unit_type": "main-term assembly",
+          "why_material": "Uses the auxiliary sum lemmas to convert the separated residue factors into the explicit primary contribution with controlled errors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completes the I3^1 calculation begun inside the carried unit before the six companions are restored.",
+          "representation_dependency": "Derivative and integral displays are readable with minor extraction spacing; exact constants remain formula-dependent.",
+          "unit_id": "depth_openalex_w1640512387_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1380,
+            "line_start": 1261,
+            "title": "Twisted-fourth-moment decomposition and primary Euler-product term",
+            "unit_id": "full_openalex_w1640512387_u05",
+            "unit_type": "twisted-fourth-moment reduction",
+            "why_material": "Imports the length-1/4 twisted fourth moment, decomposes the third-piece diagonal into six shift terms, factors and separates the primary arithmetic sum, and reaches its asymptotic integral."
+          },
+          {
+            "line_end": 1505,
+            "line_start": 1401,
+            "title": "Six-term shift recombination for the third-piece diagonal",
+            "unit_id": "depth_openalex_w1640512387_u17",
+            "unit_type": "symmetry and synthesis",
+            "why_material": "Tracks all six shift permutations, uses exchange symmetries among auxiliary variables, factors paired divided differences, and regularizes them with integral identities to obtain Lemma 3.1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modeling a truncated reciprocal of zeta with psi3 creates one diagonal fourth-moment problem and two mixed third-moment problems; its semantic benefit and its stricter length bound arise from that interaction structure.",
+            "limit": "The source gives a conditional numerical gain and does not compare all alternative reciprocal approximations or prove the twisted-third input.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1640512387_u02",
+              "depth_openalex_w1640512387_u06",
+              "full_openalex_w1640512387_u03",
+              "full_openalex_w1640512387_u05",
+              "depth_openalex_w1640512387_u16",
+              "depth_openalex_w1640512387_u17"
+            ],
+            "title": "Reciprocal-inspired third piece forces a fourth-moment channel"
+          },
+          {
+            "claim": "Across the new terms, the proof repeatedly factors arithmetic sums into singular zeta factors and a regular Euler product, freezes the regular factor at the origin, separates contour variables, converts residues to auxiliary-parameter integrals, and applies Euler-Maclaurin to expose geometric main terms.",
+            "limit": "This is a within-source methodological synthesis; formula-specific vanishing orders, errors, and admissible contours must not be generalized without new evidence.",
+            "parent_local_unit_ids": [
+              "depth_openalex_w1640512387_u09",
+              "full_openalex_w1640512387_u04",
+              "depth_openalex_w1640512387_u10",
+              "depth_openalex_w1640512387_u12",
+              "depth_openalex_w1640512387_u13",
+              "depth_openalex_w1640512387_u14",
+              "full_openalex_w1640512387_u05",
+              "depth_openalex_w1640512387_u16"
+            ],
+            "title": "Euler product to geometric integral template"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "depth_openalex_w1640512387_u16",
+        "spontaneous": {
+          "unit_id": "depth_openalex_w1640512387_u16",
+          "spontaneous_reading": "Euler-Maclaurin completes the primary third-piece diagonal term by replacing the separated divisor sum with a geometric integral whose eighth derivative records the four inverse-zeta zeros on each side."
+        },
+        "directed": {
+          "unit_id": "depth_openalex_w1640512387_u16",
+          "source_grounded_mathematics": "Using Lemmas 4.1 and 4.2, the source bounds the accumulated errors and converts the first term to an integral with y3^(αx1+βx2+γx3+δx4), (1−u)^3, and two polynomial factors. Combined with the preceding formula and i,j≥4, this yields the primary contribution with four zeta factors and derivatives d8/(dx1²dx2²dx3²dx4²).",
+          "conceptual_reading": "The discrete arithmetic sum is compressed into a continuous kernel while derivative order preserves the local zero structure. This is the fourth-moment analogue of the earlier Euler-product-to-integral pipeline.",
+          "representation_or_bridge": "Separated contour residues feed a divisor-weighted sum; Euler-Maclaurin maps it to the u-integral, and resumming polynomial coefficients restores the two P3 factors.",
+          "boundary_or_failure": "Only one of the six shifted fourth-moment companions is completed here. The error bounds and reconstruction require i,j≥4 and the preceding residue factorization.",
+          "uncertainty": "The displayed subscript-superscript typography for the primary term is extraction-ambiguous, so the reading follows its surrounding role rather than silently correcting the symbol. Exact constants remain formula-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "depth_openalex_w1640512387_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span applies Lemmas 4.1–4.2 to bound the O-terms and convert the first term to a u-integral, then combines this with equation (34) for i,j≥4 to produce the displayed four-zeta, eighth-derivative expression with two P3 factors.",
+          "The candidate appropriately flags the ambiguous extracted label on the resulting primary term."
+        ],
+        "inference": [
+          "It is reasonable to describe this as a discrete-sum-to-continuous-kernel assembly, but the span alone does not explain the origin of the derivative order."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the eighth derivative records four inverse-zeta zeros on each side and preserves their local zero structure import the preceding residue mechanism, which is not present in this exact span.",
+          "Identifying the displayed, extraction-ambiguous I31 label definitively as the primary third-piece diagonal contribution relies on adjacent context rather than this span alone."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The unit begins in medias res after equation (34), and the extracted I31 label conflicts with the surrounding section role; exact term identity cannot be repaired from this span alone."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Restrict the interpretation to the visible Euler–Maclaurin conversion, error bounds, eighth derivative, four zeta factors, and two P3 factors; remove the causal inverse-zeta explanation and keep the term label explicitly unresolved."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "eed0bb1e945f9ecda3d5408ed572e398d145479330b7c803c14c236e5aa161ac"
+}

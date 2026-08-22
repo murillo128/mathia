@@ -1,0 +1,340 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2128307093_3b136531_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2128307093",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+      "line_end": 93,
+      "line_start": 74,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth the residual term and split characters by conductor",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u03.txt",
+      "unit_bytes": 985,
+      "unit_id": "openalex_w2128307093_depth_u03",
+      "unit_sha256": "cef97c14acfd964e77f6bc5a4ba00e71bc1f0a847a6735fcaaa5a2c040f13497",
+      "unit_type": "analytic proof strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u03.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 66,
+          "line_end": 73,
+          "text": " where ua--1, vv=_l (mod q) and K,K’ are to be taken appropriately.\n\n<!-- source-page: 2 -->\n\n274                             Y. IOTOHASHI                          [Vol. 52,\n\nThe sums      and     , ,\n                    are readily estimated by the property (C).\n",
+          "sha256": "cc0caec57725888e2beb1a29f6bd37ddc5709432a744ae85c8b961985c6a2af0"
+        },
+        "after": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "         Now we turn to some easy applications of Theorem 1. The\nunction f 1 has obviously the three properties above, so by induction\nwe get the analogue for r(n) the k-th divisor function of Bombieri’s\ntheorem. Appealing to Bombieri’s theorem we get a strengthening o\nTheorem 1 o [4]. In the same way Saz 1 of [5] will expand the scope\nof our theorem. Also it is easy to see that Theorem 1 allows us to\niterate Bombieri’s theorem, and we state it as a theorem because o\nits independent interest\"\n",
+          "sha256": "dd95c812e02d329ed9e39de1fe2ef6a390288381ef6a8b11f2f12f62a1645166"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "smoothed character treatment and conductor split",
+            "line_end": 93,
+            "line_start": 68,
+            "mathematical_role": "outlines the analytic estimates, the division between small- and large-conductor characters, and the claimed removal of Chen's imprimitive-character obstacle"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 93,
+          "line_start": 74,
+          "title": "Smooth the residual term and split characters by conductor",
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "unit_type": "analytic proof strategy",
+          "why_material": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+          "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+          "unit_id": "openalex_w2128307093_depth_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 73,
+            "line_start": 46,
+            "title": "Decompose convolution error at complementary logarithmic cutoffs",
+            "unit_id": "openalex_w2128307093_depth_u02",
+            "unit_type": "proof decomposition",
+            "why_material": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion."
+          },
+          {
+            "line_end": 90,
+            "line_start": 83,
+            "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+            "unit_id": "openalex_w2128307093_depth_u04",
+            "unit_type": "obstruction comparison",
+            "why_material": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution identity isolates pieces directly controlled by progression equidistribution and a residual smoothed character term; splitting the latter by conductor routes small and large characters to different hypotheses and tools.",
+            "limit": "This is a strategy-level synthesis from the proof sketch; the displayed identity and integral are degraded and the detailed estimates are deferred outside the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u02",
+              "openalex_w2128307093_depth_u03"
+            ],
+            "title": "Why the closure proof needs two analytic regimes"
+          },
+          {
+            "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+            "limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u03",
+              "openalex_w2128307093_depth_u04",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "Obstacle-aware reuse of Chen's device"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2128307093_depth_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "spontaneous_reading": "The residual estimate is organized by first smoothing it and then using conductor size as a routing variable. Small-conductor characters and large-conductor characters are deliberately sent to different sources of control."
+        },
+        "directed": {
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "source_grounded_mathematics": "The remaining contribution is represented through a second Riesz mean, characters, and a line integral. The proof sketch invokes a stated property during smoothing, another stated property for characters whose conductors are powers of log x, and the large sieve together with Chen's division-of-integrand device for larger conductors.",
+          "conceptual_reading": "Smoothing creates an analytic form on which character estimates can act, and the conductor split prevents one estimate from being forced across incompatible regimes. The proof is therefore a division of labor between pointwise information for arithmetically simple characters and averaged control for more complex ones.",
+          "representation_or_bridge": "The smoothed character expansion and contour integral bridge progression errors to character sums; conductor then serves as the complexity coordinate selecting the relevant bound.",
+          "boundary_or_failure": "This is only a proof sketch and sends details elsewhere. It does not locally establish the contour estimate, the smoothing loss, the large-sieve bound, or the compatibility needed to recombine the regimes.",
+          "uncertainty": "The qualitative two-regime strategy is explicit, but the Riesz kernel, integrand, contour parameter, property labels, and exact conductor cutoff are damaged in extraction and need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2128307093_depth_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose explicitly routes relatively small-conductor characters to a stated property and larger-conductor characters to the large sieve coupled with Chen's division-of-integrand device.",
+          "The source also explicitly mentions smoothing, a second Riesz mean, a line integral, and that detailed proof is deferred."
+        ],
+        "inference": [
+          "Describing conductor as a routing coordinate and the two regimes as a division of labor is a reasonable strategic interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The damaged opening does not securely identify the represented object as 'the remaining contribution,' and the span does not legibly establish the claimed bridge from progression errors to character sums.",
+          "Calling the small-conductor input pointwise information for arithmetically simple characters and the large-sieve input averaged control for more complex characters imports standard method characterization not stated here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The division-of-labor formulation is useful but can become a generic two-regime template unless kept tied to the exact small-conductor/property and large-conductor/large-sieve-plus-Chen routing."
+        ],
+        "context_or_ocr_risk": [
+          "The Riesz-mean formula, integrand, contour parameter, property labels, and precise conductor cutoff are extraction-damaged."
+        ],
+        "missed_mechanism": [
+          "The span announces the tools for each regime but does not show the estimates or how their outputs recombine."
+        ],
+        "revision_instructions": [
+          "Replace 'the remaining contribution is represented' with the literal claim that a second Riesz mean is expressed using characters and a line integral.",
+          "Present the progression-error bridge and pointwise-versus-averaged characterization only as tentative interpretation, or omit them; retain the explicit conductor routing and deferred-proof boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claim is explicit prose, nested inside the conductor-split proof sketch. The source supplies no detailed verification here and sends the full proof elsewhere.",
+      "line_end": 90,
+      "line_start": 83,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the stated comparative claim, but validating why the obstruction disappears depends on omitted proof details rather than on this normalized text alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u04.txt",
+      "unit_bytes": 554,
+      "unit_id": "openalex_w2128307093_depth_u04",
+      "unit_sha256": "ca115aa7448bb5fe920240a6da35de702aa8862e6d829f430d7a97cbe39fee8c",
+      "unit_type": "obstruction comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u04.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 75,
+          "line_end": 82,
+          "text": "                                                                         And\n\n          (q)-\n                            is expressed as\n                         7(1)                 ,       z(n)f(n)n_}\n                                8\nwhere 0 is the principal character (mod q) and the integral is along the\nline Re (s)=al. In the smoothening procedure we use the property\n",
+          "sha256": "ad830199cc296c9cc9fb52b9e3a5cda85e3315858051ae223ebe8e1d3b39b537"
+        },
+        "after": {
+          "line_start": 91,
+          "line_end": 98,
+          "text": "\n      .\nwill appear elsewhere.\n         Now we turn to some easy applications of Theorem 1. The\nunction f 1 has obviously the three properties above, so by induction\nwe get the analogue for r(n) the k-th divisor function of Bombieri’s\ntheorem. Appealing to Bombieri’s theorem we get a strengthening o\nTheorem 1 o [4]. In the same way Saz 1 of [5] will expand the scope\n",
+          "sha256": "fc1641aa11a01f7a405509ff2dee0bcfe796c914188a78198fbd6a479e45ee2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "smoothed character treatment and conductor split",
+            "line_end": 93,
+            "line_start": 68,
+            "mathematical_role": "outlines the analytic estimates, the division between small- and large-conductor characters, and the claimed removal of Chen's imprimitive-character obstacle"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 90,
+          "line_start": 83,
+          "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+          "unit_id": "openalex_w2128307093_depth_u04",
+          "unit_type": "obstruction comparison",
+          "why_material": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claim is explicit prose, nested inside the conductor-split proof sketch. The source supplies no detailed verification here and sends the full proof elsewhere.",
+          "representation_dependency": "Low for the stated comparative claim, but validating why the obstruction disappears depends on omitted proof details rather than on this normalized text alone.",
+          "unit_id": "openalex_w2128307093_depth_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 93,
+            "line_start": 74,
+            "title": "Smooth the residual term and split characters by conductor",
+            "unit_id": "openalex_w2128307093_depth_u03",
+            "unit_type": "analytic proof strategy",
+            "why_material": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control."
+          },
+          {
+            "line_end": 101,
+            "line_start": 94,
+            "title": "Closure bootstraps the constant function to higher divisor functions",
+            "unit_id": "openalex_w2128307093_depth_u05",
+            "unit_type": "inductive application",
+            "why_material": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+            "limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u03",
+              "openalex_w2128307093_depth_u04",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "Obstacle-aware reuse of Chen's device"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2128307093_depth_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2128307093_depth_u04",
+          "spontaneous_reading": "The unit is valuable as an obstruction comparison: it retains Chen's large-conductor device while claiming that the surrounding procedure no longer encounters the imprimitive-character obstruction. The obstruction, rather than the borrowed technique alone, identifies what the rearrangement is meant to fix."
+        },
+        "directed": {
+          "unit_id": "openalex_w2128307093_depth_u04",
+          "source_grounded_mathematics": "The author states that the obstacle caused by imprimitive characters in Chen's argument does not appear in this procedure and consequently claims a simplified proof of Chen's theorem on the binary Goldbach problem. A detailed account is deferred.",
+          "conceptual_reading": "The comparison suggests that proof architecture can matter as much as an individual estimate: a device may remain useful after the terms around it are reorganized so that a problematic character class is not introduced in the same way.",
+          "representation_or_bridge": "The relevant bridge is the primitive-versus-imprimitive character distinction inside the large-conductor, divided-integrand treatment. It marks the interface at which Chen's method is reused and the claimed obstruction is avoided.",
+          "boundary_or_failure": "No local mechanism is given for why imprimitive characters disappear, and no detailed Goldbach argument is present. The asserted simplification is therefore not independently verified by this span.",
+          "uncertainty": "Low uncertainty about what the author claims, but high uncertainty about its justification because the proof is explicitly deferred; the unit supports an obstacle-level hypothesis, not a reconstructed proof."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2128307093_depth_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly says that the obstacle caused by imprimitive characters in Chen's argument does not appear in the author's procedure and claims a simplified proof of Chen's binary Goldbach theorem.",
+          "The candidate correctly states that the detailed account is deferred and that the span does not verify the claim."
+        ],
+        "inference": [
+          "The general suggestion that proof organization can affect whether an obstruction arises is plausible, but the source supplies no local mechanism."
+        ],
+        "unsupported_or_imported": [
+          "The candidate's suggestion that surrounding terms are reorganized so that the problematic character class is not introduced in the same way is not stated; the source says only that the obstacle does not appear.",
+          "The primitive-versus-imprimitive distinction is not established here as an 'interface' inside the large-conductor divided-integrand treatment."
+        ],
+        "paraphrase_or_style_risk": [
+          "The spontaneous reading mostly restates the comparison, though its focus on the obstruction rather than merely naming Chen's device adds a useful selection distinction."
+        ],
+        "context_or_ocr_risk": [
+          "The prose claim is legible, but its justification lies in omitted details rather than in a recoverable formula in this span."
+        ],
+        "missed_mechanism": [
+          "No mechanism for the disappearance of the imprimitive-character obstruction is present, and none should be reconstructed."
+        ],
+        "revision_instructions": [
+          "Keep the explicit comparative claim and deferred-proof limitation, but remove the proposed reorganization/non-introduction mechanism and recast the interface language as an unverified hypothesis rather than a source-supported explanation."
+        ]
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "13e7dc108b0c928ac9323d9473c1f4f5be9a4f2512dbe736602d97e7058ecda9"
+}
