@@ -1,0 +1,1696 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "spectral_programs",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/spectral_programs.jsonl",
+  "candidate_count": 13,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "Fourier pair statistics and their determinantal higher-correlation extension identify a unitary local universality class, while unfolding exposes the scale-free fluctuation process that a natural spectral realization should reproduce. The same unfolding removes absolute height and uses a height-dependent comparison size, so these statistics constrain a candidate operator's local organization without supplying one fixed global pair (H,D).",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Montgomery's conditional pair statistic and k-point conjecture become a design diagnostic in later GUE and Hilbert–Pólya programs: the burden shifts from matching normalized correlations to constructing a natural operator with the required global scale, selfadjointness, and spectrum.",
+        "limits": "The cited statistical relations do not identify zeros pointwise, prove RH, or establish existence, selfadjointness, or positivity of a Hilbert–Pólya realization; the determinantal law is conjectural and local unfolding deliberately forgets global arithmetic variation.",
+        "parent_unit_ids": [
+          "montgomery1973_depth_u01_fourier_pair_statistic",
+          "montgomery1973_depth_u09_higher_correlation_determinant",
+          "c71_u022",
+          "connes1999_v2_u03_hilbert_polya_naturality"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_local_universality_global_operator",
+        "title": "Local zero statistics constrain but do not construct a global Hilbert–Pólya operator"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the objective, normalization, weight, theorem, uniformity range, and interpretation of the singular term.",
+          "line_end": 37,
+          "line_start": 10,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: equation (1) is visually fragmented but its summation variables, phase, weight, and normalization remain recoverable from the display and prose; verify typography against the scan before formula-level reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper turns the distribution of pairwise ordinate differences into the even real statistic F(alpha), states its low-frequency asymptotic under RH, and separates a concentrated diagonal contribution from the regular alpha term.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A weighted Fourier probe of zero differences",
+          "unit_artifact_relpath": "depth/units/montgomery1973_depth_u01_fourier_pair_statistic.txt",
+          "unit_bytes": 1368,
+          "unit_id": "montgomery1973_depth_u01_fourier_pair_statistic",
+          "unit_sha256": "5a47099ebee1538521fc96aeca6e82042f8ee0f5280fd541a516c41a6951f8e7",
+          "unit_type": "definition-and-conditional-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u01_fourier_pair_statistic.txt",
+          "source_title": "The pair correlation of zeros of the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Fourier compression makes the pair-difference distribution accessible without resolving individual gaps, while the singular term records coincident pairs and the regular term records distributed pair interaction.",
+            "nonparaphrase_operation": "The bridge object is the even form factor F(alpha,T), using the phase T^{i alpha(gamma-gamma')} and the smoothing weight w(gamma-gamma').",
+            "quality_reason": "The span defines F as a normalized weighted double sum over zero ordinates and states that, under RH, it is real, even, asymptotically bounded below, and has a uniform asymptotic below unit frequency. The source explicitly describes the first asymptotic term as tending to a Dirac delta and contrasts it with the regular alpha term. The words 'compresses' and 'distributed pair interaction' are interpretive, but they remain tied to the specific Fourier statistic and its two asymptotic contributions.",
+            "source_support": "Under RH, F is a normalized weighted double sum over ordinates with Fourier phase determined by their difference; it is real, even, asymptotically nonnegative, and has a stated uniform asymptotic below unit frequency.",
+            "speculation_status": "The theorem is RH-conditional and controls only alpha below one; the concentrated diagonal term should not be mistaken for ordinary off-diagonal density. Moderate: the mechanism and range are clear, but OCR damage requires scan verification of the exact normalization, exponents, and error typography. Reading the singular contribution as diagonal/coincident-pair mass and the regular alpha term as off-diagonal interaction is a mathematically natural interpretation of the displayed double sum, not verbatim source prose. Equation (1), the exponent in (2), and normalization typography are fragmented; the candidate appropriately requires scan verification before formula-level reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+            "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends through the prose defining the matrix entries because the displayed determinant itself is absent from extraction.",
+          "line_end": 246,
+          "line_start": 233,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equation (15) is lost and the matrix-entry OCR is damaged; only the prose-supported determinantal form and k=2 relation are safe without scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The unitary analogy predicts determinantal k-tuple correlations",
+          "unit_artifact_relpath": "depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+          "unit_bytes": 598,
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+          "unit_sha256": "088ab19f3712a6e9188ba8fa9ee55d7345a75e2db20bf31ed2603039202a9166",
+          "unit_type": "generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+          "source_title": "The pair correlation of zeros of the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Continuing the random-complex-Hermitian analogy, the source proposes one determinantal form for every k-tuple correlation: a k-by-k matrix has unit diagonal and off-diagonal entries of sine-kernel type, and the preceding pair conjecture is exactly its k=2 instance. The determinant compresses pair-indexed kernel relations into a single higher-order joint law, gaining a uniform structural generalization across k, but the analogy supplies no proof and the missing display prevents safe recovery of the exact formula.",
+            "nonparaphrase_operation": "Identify the determinant as a synthesis device that promotes pair-indexed kernel entries to one k-point structure, and classify k=2 as an instance rather than an asserted marginal or consistency theorem.",
+            "quality_reason": "Accepted after replacing the unsupported marginal language with the source's k=2-instance relation. The conceptual synthesis is specific and useful, with conjectural status, formula loss, and proof burden made explicit.",
+            "source_support": "The span says one might investigate k-tuple correlations, conjectures a form under continuation of the complex-Hermitian analogy, describes the k-by-k matrix in prose, and identifies the earlier conjecture as the k=2 case. Equation (15) is absent and the entry formula is OCR-damaged.",
+            "speculation_status": "The entire higher-correlation law is conjectural and analogy-driven; only its prose-supported determinantal shape and k=2 relation are retained. No missing notation is reconstructed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+            "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This concerns local statistics and does not rule out every self-adjoint spectral realization.",
+          "line_end": 1004,
+          "line_start": 940,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: density and rescaling formulas are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Zero spacings agree with GUE only after a height-dependent rescaling that compensates for logarithmically increasing density; the source infers that the correspondence is inherently local rather than the spectrum of a simple fixed ensemble.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local unfolding enables GUE comparison but obstructs a fixed global operator",
+          "unit_artifact_relpath": "depth/units/c71_u022.txt",
+          "unit_bytes": 4383,
+          "unit_id": "c71_u022",
+          "unit_sha256": "bdd32f20d526d17ccf6d757bdfc8c8866c935e47ff1f6b324dbd6956c615d34c",
+          "unit_type": "scale-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u022.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unfolding removes the deterministic density trend and exposes universal fluctuations, but it also marks which information the random-matrix comparison forgets: absolute height and global arithmetic variation.",
+            "nonparaphrase_operation": "The local mean spacing, unfolded ordinates, correlation functions, and a height-dependent matrix size form the bridge from zeta zeros to GUE eigenvalue statistics.",
+            "quality_reason": "The unit distinguishes Montgomery's conjecture, Odlyzko's numerical evidence, and the logarithmically varying zero density. It explicitly rescales local spacings by the height-dependent mean density and compares them with a height-dependent GUE size. The candidate preserves the source's limitation to local statistics and correctly narrows the objection to a simple fixed operator or ensemble.",
+            "source_support": "Montgomery's pair correlation and Odlyzko's computations compare zeta-zero spacings with GUE. Since zero density grows logarithmically while normalized GUE density is constant, spacings near height T are rescaled by log(T/(2 pi))/(2 pi) before their local statistics agree.",
+            "speculation_status": "Local statistical agreement is not equality of spectra; the source's objection targets a simple fixed ensemble or operator and does not exclude every self-adjoint realization. Moderate: the statistical claims combine conjecture and numerical evidence, while the need for height-dependent unfolding is mathematically explicit. Saying unfolding forgets absolute height while retaining local fluctuations precisely describes the normalization shown in the span. The statistical agreement combines conjecture and computation; the candidate does not report it as an exact theorem about spectra."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_dd6323053dd3543b51635c41b74534ec87b49f9c8c6c7d8162bb1e3ad261be30",
+            "dossier_sha256": "9044f2c865a3ba69995c638c1b1b2624e4a38c19ed512b4a8125e87b415d577f"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the counting-function split, unfolding to unit mean spacing, and GUE evidence needed for the naturality demand.",
+          "line_end": 195,
+          "line_start": 118,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several displayed asymptotics are formula-dependent but legible enough with the prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why selfadjointness or positivity could relocate RH, connects the proposal to Selberg and zero-spacing statistics, and insists that a genuine construction not smuggle the zeros or zeta function into its definition.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Naturality criterion for a Hilbert–Polya realization",
+          "unit_artifact_relpath": "depth/units/connes1999_v2_u03_hilbert_polya_naturality.txt",
+          "unit_bytes": 3857,
+          "unit_id": "connes1999_v2_u03_hilbert_polya_naturality",
+          "unit_sha256": "4914bca57073f4daa52f36a3ce066577bfc0239ba4877f883ed9fe5ee4255b76",
+          "unit_type": "motivation-and-diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u03_hilbert_polya_naturality.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Selfadjointness or positivity would relocate RH into operator theory, but the statistical match is primarily a diagnostic for whether the sought representation has the right spectral organization.",
+            "nonparaphrase_operation": "The bridge runs from zeros to an unfolded point process and then to eigenvalues of a natural pair (H,D), with Selberg and function-field analogues supplying precedent.",
+            "quality_reason": "The span explicitly separates the Stirling-controlled mean count from the oscillatory Im log zeta term, unfolds ordinates to unit mean spacing, and presents GUE correlations and numerical/function-field evidence. It explicitly requires a natural pair (H,D) obtained without defining zeta or building H from its zeros, and presents selfadjointness or positivity only as a hoped-for relocation of RH.",
+            "source_support": "The zero count is split into a Stirling-controlled mean term and an oscillatory Im log zeta term; mapping ordinates through the mean count gives unit average spacing, whose pair correlations are compared with GUE statistics.",
+            "speculation_status": "Neither spacing evidence nor the Hilbert–Polya slogan constructs D or proves RH; defining H directly from the zeros would be circular. The displayed counting and correlation formulas are extraction-sensitive, but the decomposition, unfolding, and naturality demand are explicit. Treating the statistical match as a diagnostic for the desired spectral organization is a restrained interpretation of the motivation, not a claimed construction. Several displayed formulas contain extraction artifacts, but every qualitative claim used by the candidate is also fixed by the prose."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+            "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Periodic-orbit trace formulas compress recurrent classical trajectories into oscillatory spectral terms, but an RH spectral model must also decide whether zeros appear as emitted eigenlevels or as absorption lines. Maslov phase retains precisely the sign information erased by unsigned phase-space area, making sign a representation-level discriminator rather than a cosmetic convention.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The semiclassical Gutzwiller route motivates a primes-as-orbits dictionary; Connes's sign objection and the later absorption interpretation revise the program by requiring phase-sensitive spectral bookkeeping, not only agreement of orbit lengths and mean density.",
+        "limits": "Gutzwiller's formula here is semiclassical and lacks convergence or exact reconstruction control, while the absorption picture is a proposed reconciliation rather than a constructed zeta operator; the sources do not prove that Maslov phases produce the arithmetic explicit formula.",
+        "parent_unit_ids": [
+          "bogomolny2003_u18",
+          "connes_consani2019_scaling_hamiltonian__u06",
+          "openalex_w2146626751_u01"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_trace_sign_discriminator",
+        "title": "Trace-formula sign separates orbit spectra from absorption spectra"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates short local paths yielding the smooth term from long closed paths yielding oscillations.",
+          "line_end": 2182,
+          "line_start": 2007,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence; determinant and phase conventions require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Tracing the semiclassical Green function makes stationary closed paths into periodic orbits and weights them by period, action, Maslov index, and monodromy stability.",
+          "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+          "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+          "source_page_markers_inside_unit": [
+            36,
+            37
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gutzwiller trace formula selects isolated periodic saddles",
+          "unit_artifact_relpath": "depth/units/bogomolny2003_u18.txt",
+          "unit_bytes": 7184,
+          "unit_id": "bogomolny2003_u18",
+          "unit_sha256": "a2173c9d0ecfc3a084c2033c05380f54f1719017150928539763534b38b4b8ec",
+          "unit_type": "theorem-plus-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u18.txt",
+          "source_title": "Quantum and Arithmetical Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Tracing the semiclassical Green function filters path space by scale and stationarity: short local returns give the Thomas-Fermi mean, whereas long traced paths survive stationary phase only when initial and final position and momentum coincide, selecting isolated periodic orbits. Monodromy then measures transverse stability in each orbit's weight, but the formula assumes unstable periodic orbits, is semiclassical, and supplies neither convergence control nor exact spectral reconstruction.",
+            "nonparaphrase_operation": "Selective-compression analysis: explains how the trace and stationary phase discard nonrecurrent paths and how monodromy controls the surviving contribution.",
+            "quality_reason": "Accepted after removing imported bifurcation and stable-family failure modes; determinant and Maslov conventions remain formula-sensitive.",
+            "source_support": "Lines 2007-2182 separate short and long trajectories, derive the closed-position-and-momentum saddle condition, express transverse action derivatives through the monodromy matrix, and state the period-action-Maslov-repetition sum under the assumption that all periodic orbits are unstable.",
+            "speculation_status": "No cross-source suggestion or speculation; lack of convergence and exact-reconstruction control is a bounded assessment of the derivation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+            "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Overlaps the end of the phase-space comparison to preserve the contrast between agreement and nonequivalence.",
+          "line_end": 376,
+          "line_start": 352,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dependent; the quoted external discussion is omitted after the colon by the extraction, so the selected claim is limited to the authors' stated conclusion.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The text separates semiclassical count agreement from quantum fluctuations: the emission description must encode the absorption minus sign through a uniform Maslov-phase choice.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The absorption sign survives in Maslov phases",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian__u06.txt",
+          "unit_bytes": 1127,
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u06",
+          "unit_sha256": "4107901d1ebfa0224f72b1964cb64d9b4042a4e44809c7caccde2ba43af00562",
+          "unit_type": "obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian__u06.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A representation change may preserve volume-level invariants while failing to preserve phase data; the residual sign is therefore a diagnostic of nonequivalence.",
+            "nonparaphrase_operation": "Maslov phases bridge the semiclassical orbit picture to quantum fluctuations by encoding information erased by unsigned phase-space area.",
+            "quality_reason": "The span explicitly says the absorption minus sign returns in quantum fluctuations and that Berry and Keating set all Maslov phases to pi to account for it. The candidate preserves the contrast between equal semiclassical counts and quantum nonequivalence.",
+            "source_support": "After restating equality of the absorption and emission semiclassical counts, the authors say that quantum fluctuations retain the minus sign and that Berry and Keating set all Maslov phases equal to pi to account for it.",
+            "speculation_status": "This establishes neither quantum equivalence nor a spectrum; it marks the precise level at which the semiclassical identification stops. The selected claim is explicit, but the quotation announced after the final colon is absent from the extracted span. Treating phase data as information invisible to unsigned area is a faithful interpretation of why the sign reappears only at the fluctuation level. The quotation announced after the final colon is absent from the artifact; the candidate expressly limits itself to the authors' preceding conclusion."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_5ee0a06b9c8bdedba96bc53a4e21f9408f04c7d61a8135b8b2ab7ee02e37406c",
+            "dossier_sha256": "671ac5e997d91c2a9085238c6c8a4ab2e14afd83be16fce9d7780be89f2eb1f2"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span is conceptual setup rather than evidence that the desired operator exists.",
+          "line_end": 99,
+          "line_start": 48,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low: the reusable content is stated in prose; displayed fluctuation formulas occur later.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects self-adjoint spectral realization, Selberg-style classical/quantum duality, GUE time-reversal breaking, prime-labelled periodic orbits, and Connes's minus-sign objection to the alternative picture of zeros as missing continuum levels; this frames the paper's embedded-state reconciliation target.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two spectral pictures from quantum chaos and Connes's sign objection",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_u01.txt",
+          "unit_bytes": 4097,
+          "unit_id": "openalex_w2146626751_u01",
+          "unit_sha256": "8a519eaee34e5170c65ff936a036168cd6bf313b868fd30139e9f6091a0c7c94",
+          "unit_type": "motivation-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u01.txt",
+          "source_title": "A quantum mechanical model of the Riemann zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The trace-formula, GUE, and periodic-orbit correspondences act as design constraints on a prospective spectral model, but Connes's overall-sign objection forces a change of realization rather than a cosmetic correction: zeros may be present isolated levels or missing lines in a continuum. The announced embedded-discrete-spectrum picture is therefore a proposed reconciliation of two spectral realizations, not an operator construction or existence argument.",
+            "nonparaphrase_operation": "Constraint synthesis plus obstruction-driven reframing: combine several analogies to delimit a model, then use the sign mismatch to separate two inequivalent spectral mechanisms. This gains a sharper model-selection question but loses any inference that resemblance or statistics establish the desired self-adjoint operator.",
+            "quality_reason": "Accepted after replacing the false description of point spectrum as spectral absence with the neutral contrast between present isolated levels and absent continuum lines; the remaining interpretation is prose-grounded and preserves the construction boundary.",
+            "source_support": "The span compares the Selberg geodesic/Laplacian duality with the prime/zero explicit formula, reports GUE statistics as suggesting broken time reversal, assigns period log p to a prime-labelled orbit, states Connes's sign objection, and contrasts point spectrum with missing continuum lines before announcing later reconciliation.",
+            "speculation_status": "Source-grounded historical and programmatic framing; the correspondences constrain or motivate, while the embedded-state reconciliation is only announced and operator existence remains unproved."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+            "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Adapted coordinates and deformations repeatedly expose a common scale-free dilation core, and even quantizations preserving a substantial Noether algebra can retain continuous spectrum. Discrete zeta-labelled spectra therefore enter through additional admissibility data—twisted or CPT-like boundaries, finite differences, and operator domains—rather than from dilation symmetry alone.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Successive xp programs move the proof burden from reproducing the smooth count or classical symmetry to showing that a specific boundary/domain prescription yields a valid discrete operator while preserving the intended symmetries.",
+        "limits": "The cited constructions use different Hamiltonians and boundary mechanisms and are not mutually equivalent; the CPT assignment and finite-difference interpolation do not establish selfadjointness, completeness, or an exact Riemann-zero spectrum, and the continuum result for one symmetry-preserving PDE does not rule out every dilation-based model.",
+        "parent_unit_ids": [
+          "openalex_w2015511182_depth_u06",
+          "openalex_w1980194296_d09",
+          "openalex_w2511750669_u15",
+          "openalex_w4205184121_u015"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_domain_selected_discreteness",
+        "title": "Dilation dynamics leaves spectral discreteness to domains and boundaries"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Requires the monotone positive v(x) assumptions stated at the start of the span.",
+          "line_end": 349,
+          "line_start": 326,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: exact integral placement is formula-dependent but legible enough to recover the representation change.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes xp to v(x)p and gives both its cutoff count and formal eigenfunction in the integrated coordinate ∫dx/v(x), anticipating the later coordinate that turns the inverse-model spectrum into free motion.",
+          "source_id": "openalex_w2015511182",
+          "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Replace x by a velocity profile v(x) without losing adapted plane-wave structure",
+          "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u06.txt",
+          "unit_bytes": 1424,
+          "unit_id": "openalex_w2015511182_depth_u06",
+          "unit_sha256": "8fa794eed7936dbcba9eb5ad9194260abb789c5787fb34700856683ebdad51e4",
+          "unit_type": "generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u06.txt",
+          "source_title": "The Riemann zeros and the cyclic renormalization group",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For positive, monotonically increasing v on the half-line, replacing x by a velocity profile does not destroy the formal eigenfunction structure: the coordinate q(x)=∫dx/v(x) carries a plane-wave phase, while v(x)^(-1/2) carries the profile-dependent amplitude. This separates translation-like phase evolution in q from the local weighting imposed by v, and v=x recovers the dilation case. The gain is an adapted representation for a whole class of flows; the loss is that the result remains a formal continuum statement and does not by itself provide operator domains, boundary conditions, or a discrete spectrum.",
+            "nonparaphrase_operation": "Introduces the travel-time coordinate and decomposes the eigenfunction into universal phase and representation-dependent amplitude, showing exactly what the generalization preserves and what still depends on v.",
+            "quality_reason": "Accepted because the coordinate mechanism and specialization are legible despite moderate formula risk, and the critic's unsupported forward reference has been removed.",
+            "source_support": "The span assumes v(x)>0 and monotone for x>0, interprets x-dot=v(x), displays the symmetrized v(x)p Hamiltonian, gives eigenfunctions with amplitude v^(-1/2) and phase integral ∫dx/v, and states that v(x)=x recovers the Berry–Keating formula.",
+            "speculation_status": "The adapted-coordinate reading is a grounded inference from the displayed eigenfunction; no relation to the later inverse-model spectral coordinate is asserted."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+            "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The antecedent is the Schrödinger equation displayed at lines 351-355, whose extraction is damaged; this unit accepts only the prose continuum-spectrum conclusion and readable symmetry-inheritance structure, not a reconstructed equation.",
+          "line_end": 395,
+          "line_start": 374,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Phi-dependent correction terms are layout-sensitive. Exact generators and the damaged equation (27) require scan verification before formula-level use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Records the decisive negative result for the first quantization and checks that the resulting equation inherits five Lie symmetries corresponding to the classical Noether generators.",
+          "source_id": "openalex_w1980194296",
+          "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The five-symmetry quantization has continuum spectrum",
+          "unit_artifact_relpath": "depth/units/openalex_w1980194296_d09.txt",
+          "unit_bytes": 1284,
+          "unit_id": "openalex_w1980194296_d09",
+          "unit_sha256": "b2101e6600526296818f29a880064c44651b01722ec614d8417a9f76842357ad",
+          "unit_type": "spectral obstruction and symmetry check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_d09.txt",
+          "source_title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Preserving a Noether algebra is verified at the level of inherited Lie generators, but that structural preservation is orthogonal to the desired spectral type. The arbitrary-solution symmetry reflects linear superposition, not spectral discreteness.",
+            "nonparaphrase_operation": "Classical generators are lifted by dependent-variable correction terms to symmetries of the linear quantum PDE. This provides a concrete classical-to-quantum symmetry bridge and a separate continuum-spectrum obstruction.",
+            "quality_reason": "The span explicitly reports continuum spectrum for equation (27), lists five lifted Lie symmetries whose base parts are the selected classical generators, and adds the scaling and arbitrary-solution symmetries.",
+            "source_support": "The source states that Schrödinger equation (27) has a continuum spectrum and lists five Lie symmetries X₁,…,X₅ whose base-variable parts correspond to the five classical Noether generators, with Φ-dependent corrections. It also admits Φ∂_Φ and φ(t,x)∂_Φ for any solution φ of (27).",
+            "speculation_status": "Equation (27) itself is damaged outside the exact span, and the source supplies no operator domain, self-adjointness analysis, boundary conditions, or spectral derivation here. The continuum claim is therefore recorded as the author's conclusion, not independently verified. The generator corrections are layout-sensitive. Their inheritance structure is readable, but exact coefficients and the antecedent PDE require scan verification. Separating successful symmetry inheritance from failed spectral discreteness and identifying the arbitrary-solution generator with linear superposition are faithful conceptual consequences. Equation (27) is not in the exact span and is damaged in nearby context, while the Phi-dependent corrections are layout-sensitive; the candidate records the spectral statement as source-attributed and avoids reconstructing the PDE."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2a5142745cb49b7bdd29c2da6ff651e91f943be6e63ce7dcbc2b0b98929f36e4",
+            "dossier_sha256": "ef46d67a1cb7e6136485c57aed7061d9af1bb284e3fc1343ee7edf3eee44386b"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The note supplies a representation-level bridge between the nonlocal difference construction and a limiting Berry-Keating-type operator; it does not resolve the domain or self-adjointness problem.",
+          "line_end": 362,
+          "line_start": 352,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The scaled difference, proportionality, limiting operator, and eigenstate exponent are formula-dependent. Verify equation typography and operator order against the retained PDF before exact use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A substantive note embedded among the references replaces the unit difference by an epsilon-scaled difference, gives Hurwitz-zeta eigenstates with rescaled argument and unchanged spectral parameter, and states that the zero-epsilon limit yields a momentum-conjugated dilation Hamiltonian with a power-law eigenstate.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An epsilon-family interpolates the finite difference toward a power-law representative",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_u15.txt",
+          "unit_bytes": 1132,
+          "unit_id": "openalex_w2511750669_u15",
+          "unit_sha256": "1cd49af5773be200d682944a1d7a6a94d6ebb5b1ca23c676ec5c26b088d5c450",
+          "unit_type": "deformation-and-limit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u15.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The deformation separates scale-dependent finite-difference structure from the scale-free dilation core. It offers a controlled representation-level interpolation rather than treating the Berry–Keating form as an unrelated analogy.",
+            "nonparaphrase_operation": "The scaled shift Δε, rescaled Hurwitz-zeta state, unchanged spectral parameter, and ε-to-zero power-law limit connect discrete translation dynamics to a differential dilation operator.",
+            "quality_reason": "The note replaces the unit difference by an epsilon-scaled shift difference and defines a one-parameter Hamiltonian family. It gives rescaled Hurwitz-zeta eigenstates with the same eigenvalue parametrization and states a zero-epsilon limit to a momentum-conjugated dilation operator with power x^(1-z). The candidate keeps the formula-sensitive limit formal and does not claim that it resolves domains or self-adjointness.",
+            "source_support": "The note replaces the unit difference by an ε-scaled shift difference and defines a one-parameter Hamiltonian family. Its eigenstates are proportional to minus ζ(z,1+x/ε) with the same eigenvalue parametrization. As ε tends to zero, the source states that the Hamiltonian tends to a momentum-conjugated symmetrized dilation operator and the eigenstate tends to a power proportional to x raised to 1−z.",
+            "speculation_status": "A formal small-ε limit does not transport a self-adjoint domain, boundary condition, completeness, or spectral equivalence automatically, so it does not resolve the main operator-theoretic obstruction. The scaled-difference normalization, limiting operator order, proportionality, and exponent are formula-sensitive and require PDF verification before exact symbolic reuse. Describing the family as separating finite-difference scale from a scale-free dilation core is a faithful representation-level interpretation of the stated deformation. The scaled-difference normalization, operator order, proportionality, and exponent all require retained-PDF verification before exact symbolic reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+            "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The solar-mass density estimate is an illustrative physical scale, not validation of the spectral construction; the Hamiltonian decomposition depends on the earlier choice of normalization.",
+          "line_end": 520,
+          "line_start": 502,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The spectral sum and numerical scale are formula-sensitive. The prose-level claims about regularization, degeneracy, and density are recoverable, but exact factors need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source interprets the local phase-space boundary as a symmetry-respecting alternative to a naive cutoff, decomposes the complete shifted Hamiltonian into partial-wave contributions, and explains that zeta/beta branches break the original even/odd degeneracy while retaining m-degeneracy.",
+          "source_id": "openalex_w4205184121",
+          "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The boundary condition regularizes dilation while breaking parity degeneracy",
+          "unit_artifact_relpath": "depth/units/openalex_w4205184121_u015.txt",
+          "unit_bytes": 1507,
+          "unit_id": "openalex_w4205184121_u015",
+          "unit_sha256": "363c8dd0cb1b204e0a8cb3ce168e74113b8c424aac5e26f751f349b7b3cc0ed8",
+          "unit_type": "method-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u015.txt",
+          "source_title": "Black holes, quantum chaos, and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The boundary condition regularizes dilation by restricting admissible phase-space states in a symmetry-compatible way rather than by the cited coordinate cutoff. Its selective effect is visible in degeneracies: assigning zeta-zero energies to even modes and beta-zero energies to odd modes breaks the original parity degeneracy, while the rotational (2l+1) m-degeneracy remains. This gains a diagnostic of which structure the proposed domain distinguishes or preserves, but the physical scale is illustrative and the full decomposition depends on the earlier Hamiltonian normalization.",
+            "nonparaphrase_operation": "Compares regularization by admissibility with truncation and reads split versus surviving degeneracies as evidence about the selectivity of the imposed boundary.",
+            "quality_reason": "Accepted after removing the out-of-span unbounded-below objection; all retained claims are local to the passage and state both the mechanism and its normalization/scale limitations.",
+            "source_support": "The span contrasts its boundary regularization with a cutoff, states that the dilation spectrum becomes discrete while Hamiltonian and scattering symmetries are respected, decomposes the shifted Hamiltonian into partial waves, records the split and surviving degeneracies, and estimates a dense solar-mass spectrum.",
+            "speculation_status": "Source-conditional model interpretation; the spectral sum, normalization-dependent shift, unit conversion, and numerical estimate require PDF verification, and the estimate does not validate the construction."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+            "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A smooth counting law can calibrate level labels while leaving microscopic fluctuations unexplained; inserting those fluctuations into an inverse spectral boundary can destroy monotonicity and make the boundary multivalued. Lifting differentiated fluctuations to an operator constraint on a boundary amplitude is a concrete alternative that stores them as phase instead of forcing them into single-valued geometry.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The inverse-xp program refines smooth semiclassical reconstruction by relocating oscillatory zero data from boundary shape to boundary state, changing the missing task from geometric invertibility to validation of the quantum boundary construction.",
+        "limits": "The boundary-state lift does not establish a selfadjoint domain, completeness, or that its levels are exactly the Riemann zeros; smooth RG-cycle agreement is only finite calibration, and failure of one monotone reconstruction does not preclude all geometric inverse models.",
+        "parent_unit_ids": [
+          "openalex_w2015511182_depth_u21",
+          "openalex_w2146626751_u06",
+          "openalex_w2146626751_u17"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_fluctuation_encoding_choice",
+        "title": "Zero fluctuations obstruct geometric inversion but can be moved into boundary phase"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Plot pixels are extraction-defective, but the tested quantity, sample scope, mean, mean-square, and conclusion are stated in text and caption.",
+          "line_end": 1477,
+          "line_start": 1417,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: table rows and plot layout are degraded; use the prose/caption for the qualitative result and verify numbers from the PDF if reused.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The finite numerical check compares the smooth count at known zeros and finds a half-unit offset consistent with completed RG cycles; the remaining deviations track the oscillatory zeta contribution, so the uniform model is explicitly limited to the smooth component.",
+          "source_id": "openalex_w2015511182",
+          "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A half-cycle offset improves smooth zero locations but leaves random fluctuations unexplained",
+          "unit_artifact_relpath": "depth/units/openalex_w2015511182_depth_u21.txt",
+          "unit_bytes": 2234,
+          "unit_id": "openalex_w2015511182_depth_u21",
+          "unit_sha256": "9c47a290455dfb0ca4287c5a590f0bb4d4cdc630d7a987fc7a938a37e349cf90",
+          "unit_type": "computational-check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_depth_u21.txt",
+          "source_title": "The Riemann zeros and the cyclic renormalization group",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The offset supports interpreting labels as completed RG cycles, while residual variation distinguishes smooth counting success from microscopic spectral explanation.",
+            "nonparaphrase_operation": "Evaluating the analytic smooth count on known zeros provides a finite calibration between RG-cycle indexing and zero order.",
+            "quality_reason": "The first-ten-zero table shows Nsm(En)+1/2 closer to n than Nsm(En), and the first-forty caption reports the residual mean and mean square. The source explicitly says the residual oscillations are tied to zeta behavior and that the uniform I model describes only the smooth part, not the origin of the randomness.",
+            "source_support": "For the first ten known zero ordinates, Nsm(E_n)+1/2 is closer to n than Nsm(E_n); for the first forty, the plotted residual n-Nsm(E_n)-1/2 has reported mean -0.003825 and mean square 0.188102.",
+            "speculation_status": "The calculation uses known zeros, is not predictive validation, and the uniform I model explicitly fails to explain zeta-related randomness. Moderate because table and plot extraction are degraded; qualitative conclusions and reported summary values are present in prose and caption. The finite check calibrates a completed-cycle offset but does not independently predict zero locations. Plot pixels are degraded, but the sample scope, summary values, and qualitative conclusion are readable in the table, prose, and caption."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b8d491e6f5ecc1303c717166b9751948ab84c7cd91f173d308dd50773d9b5ec0",
+            "dossier_sha256": "341a1075160ff297a5136a9ee9cafddccb77d93e80e67155c62c5cc99eb63ae0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Uniqueness is only semiclassical and conditional on the stated monotonicity inequality.",
+          "line_end": 465,
+          "line_start": 438,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Medium: the mechanism is clear in prose, but equations (2.27)-(2.29) require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns a prescribed fluctuation density into a boundary function when the energy-position map remains monotone and identifies strong curvature of the fluctuation count as the condition producing multivalued, discontinuous boundary branches.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Monotonic inverse reconstruction versus multivalued boundaries",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_u06.txt",
+          "unit_bytes": 1614,
+          "unit_id": "openalex_w2146626751_u06",
+          "unit_sha256": "7b5f9e1c25fe086816bb75960318dd92b71fd1f10c796a05d0e09229921837aa",
+          "unit_type": "obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u06.txt",
+          "source_title": "A quantum mechanical model of the Riemann zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Monotonicity is the obstruction certificate for inverse reconstruction. The same spectral fluctuations meant to enrich the model can destroy the single-valued representation used to encode them.",
+            "nonparaphrase_operation": "The intermediate object x_M(E) bridges spectral density to boundary geometry; invertibility decides whether that bridge defines a function or only a branched relation.",
+            "quality_reason": "The candidate accurately gives the boundary reconstruction, the energy-to-position map, the monotonicity inequality, conditional invertibility, and the multivalued discontinuous outcome when monotonicity fails. It correctly limits uniqueness to the semiclassical level and notes the absence of canonical branch selection.",
+            "source_support": "Combining p_cl(x_M)=l_p exp(-π n'_fl(E)) with E=x_M p_cl(x_M) gives x_M(E)=E exp(π n'_fl(E))/l_p. This map is invertible when 1+πE n''_fl(E)>0. Under that condition E(x_M) produces a unique semiclassical p_cl(x); if the inequality fails, E(x) and p_cl(x) become multivalued and the source describes a family of discontinuous boundary branches.",
+            "speculation_status": "Uniqueness is only semiclassical and conditional on the stated differential inequality. Failure of monotonicity is not repaired in the span and yields no canonical branch selection. The mechanism is explicit in prose, while the exponent, derivative order, and inequality signs should be verified in the retained PDF before exact quotation. Calling monotonicity an obstruction certificate is a specific interpretation of the source's explicit well-posedness condition. Exponent, derivative order, and inequality signs remain formula-sensitive and are appropriately caveated."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+            "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The operator equation is an ansatz defining the boundary state and assumes an odd fluctuation function.",
+          "line_end": 1321,
+          "line_start": 1231,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: operator ordering, delta-derivative signs, and transform conventions require original-PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Promotes the semiclassical logarithmic boundary relation to an operator equation, diagonalizes the free xp generator, and solves the resulting first-order energy equation so that the Mellin transform of one boundary state acquires the prescribed fluctuation phase.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Quantized fluctuation constraint solves the position-boundary state",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_u17.txt",
+          "unit_bytes": 4927,
+          "unit_id": "openalex_w2146626751_u17",
+          "unit_sha256": "32053d4e0f8c891238456d61afdb08839feeadf15a9f983145663a616b8d8562",
+          "unit_type": "operator-lift",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u17.txt",
+          "source_title": "A quantum mechanical model of the Riemann zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Differentiated spectral information becomes a generator constraint, then integration restores it as phase. This is a concrete lift from semiclassical density to quantum boundary data.",
+            "nonparaphrase_operation": "The H_0 eigenbasis and Mellin transform bridge the operator log x to energy differentiation. The boundary amplitude is the intermediate representation carrying fluctuation information without directly listing levels.",
+            "quality_reason": "The candidate correctly describes the imposed operator constraints, the H0-basis derivative-of-delta matrix element, the resulting first-order energy equation, and the Mellin amplitude carrying the prescribed fluctuation phase under the oddness assumption. It clearly identifies the operator condition as a defining ansatz rather than a derived quantization of the semiclassical curve.",
+            "source_support": "The source defines boundary states by applying log(|p|/l_p)+πn'_fl(H_0) to ψ_a and log(x/l_x)+πn'_fl(H_0) to ψ_b. In the continuum H_0 basis, the matrix element of log x is a derivative of a delta distribution, turning the ψ_b constraint into a first-order differential equation in E. Its solution has phase λ_xE+πn_fl(E), and the Mellin amplitude is written b-hat(E)=b_0 l_x^{iE}e^{-iπn_fl(E)}, assuming n_fl is odd.",
+            "speculation_status": "The operator equation is an ansatz defining ψ_b, not a consequence of quantizing the earlier boundary curve, and oddness of n_fl is assumed. Operator ordering, delta-derivative signs, phase orientation, and transform normalization require original-PDF verification. Reading differentiated spectral data as a generator constraint that reintegrates to phase is a precise conceptual account of the calculation. Operator ordering, delta-derivative signs, phase orientation, and normalization are formula-sensitive and expressly caveated."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+            "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Hadamard factorization can rewrite a nonlocal entire-function quadratic form as a zero-indexed collection of local factors, while a pseudo-Hermitian similarity can expose simple dilation representatives behind a nonlocal difference Hamiltonian. Both transformations make local dynamics visible, but spectral equivalence still depends on functional calculus, convergence, invertibility, and compatible domains.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "These programs replace direct construction of a global zeta operator by algebraic decomposition or similarity transport; the historical gain is calculable local pieces, while the proof burden migrates to the analytic legitimacy of reassembly or conjugation.",
+        "limits": "A regularized factor expansion and a similarity map are different operations and do not validate one another; neither cited unit establishes selfadjointness, completeness, curved-space validity, or an RH implication.",
+        "parent_unit_ids": [
+          "w1966546572_hadamard_to_local_modes",
+          "openalex_w2511750669_u07"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_algebraic_localization_domain_gap",
+        "title": "Algebraic localization does not by itself preserve operator spectra"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivation assumes critical-line zeros, a regularization of the infinite product, and sufficient simplicity to use coefficients involving the derivative at each zero. The article calls the final equivalence straightforward and does not supply convergence or functional-analytic details.",
+          "line_end": 287,
+          "line_start": 225,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong formula dependency: the regularized product, normalization constant, projected-field product excluding one factor, and eta coefficient are central. Equation (30) is visibly garbled in normalized text; equations (22)-(31) must be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+          "unit_artifact_relpath": "depth/units/w1966546572_hadamard_to_local_modes.txt",
+          "unit_bytes": 3176,
+          "unit_id": "w1966546572_hadamard_to_local_modes",
+          "unit_sha256": "2a1b58d0df7da98d8efd25595671e414c3c6f2d574f7047585570d30b28e4978",
+          "unit_type": "formal_factorization_and_decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_hadamard_to_local_modes.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Entire-function factorization converts global zero data into candidate local degrees of freedom. The leave-one-factor-out fields act like spectral components, and derivative weights play the residue or interpolation role needed to reassemble the original quadratic form.",
+            "nonparaphrase_operation": "The bridge runs from the Hadamard product to paired linear factors to a zero-indexed tower of local second-order operators. It exposes each zero as a candidate mass-shell factor while formally preserving the aggregate xi symbol through the weighted sum.",
+            "quality_reason": "The span assumes zeros on the critical line, pairs them into a product in tau squared, refactors into epsilon-indexed linear factors, substitutes Box, and states the zero-indexed Klein-Gordon-like decomposition. The projected fields are defined by omitting one factor and their weights use xi prime at the corresponding zero; the candidate correctly notes the implied simplicity requirement and explicit regularization assumption. The language of 'candidate local degrees of freedom' does not overclaim because the candidate immediately limits the result to a formal, regularized factorization without functional-analytic equivalence.",
+            "source_support": "Assuming critical-line zeros written as 1/2 plus or minus i m_n^2, the source pairs them to express xi(1/2+i tau) as a product in tau^2, refactors it using signs epsilon=plus or minus one, and substitutes Box for tau. It defines projected fields by products excluding one factor and weights them using the derivative of xi at the corresponding zero, then asserts equivalence of the nonlocal quadratic Lagrangian with a sum of terms psi_{epsilon n}(Box+epsilon m_n^2)psi_{epsilon n}.",
+            "speculation_status": "The decomposition assumes the Riemann hypothesis, regularization of the infinite product, and enough zero simplicity for derivative denominators. No convergence, field-domain, invertibility, or Hilbert-space equivalence is proved, so the claimed equivalence is formal rather than unconditional. Equation (30), which defines the projected fields, is visibly corrupted in the normalized text, and the normalization constant and derivative coefficient are formula-sensitive. Only the factorization mechanism and stated proposition are safe to retain without PDF verification. Interpreting the derivative weights as residue or interpolation coefficients and the leave-one-factor-out fields as formal spectral components is a substantive reading of equations (30)-(31), clearly kept at the level of formal mechanism. Equation (30), central to the projected-field definition, has corrupted product indices; the candidate explicitly restricts retention to the factorization mechanism and stated proposition."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This page is physically interleaved by two-column extraction. The construction depends on the unproved domain-level symmetry of momentum, and standard bounded-metric isospectral criteria do not directly apply because the inverse is unbounded; the authors instead claim a direct calculation.",
+          "line_end": 247,
+          "line_start": 177,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "All metric, adjoint, rho, and transformed-Hamiltonian formulas should be checked against the retained PDF. Accepted content is restricted to the prose-supported conditional construction and its stated unbounded-inverse limitation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Assuming the momentum operator is symmetric on the eventual domain, the source computes an adjoint relation with a nonnegative metric based on sin-squared of half the momentum, then discusses similarity transforms yielding a Hamiltonian with a quantum-anomaly momentum term or the Berry-Keating dilation Hamiltonian. It also records the decisive obstruction that the inverse metric is unbounded.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Conditional metric and formally Hermitian representatives",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_u07.txt",
+          "unit_bytes": 7983,
+          "unit_id": "openalex_w2511750669_u07",
+          "unit_sha256": "86a9edaa48ea6c398098d118830d8f7c239fb3671a4242688dc46aaebfe0f308",
+          "unit_type": "pseudo-hermitian-representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u07.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Changing representation exposes simple local dilation dynamics hidden behind the nonlocal difference Hamiltonian, but spectral equivalence is only as strong as the similarity map and its domains. The anomaly term records a quantum correction that disappears in the commuting limit.",
+            "nonparaphrase_operation": "The formal adjoint, metric η, similarity map ρ, sine or difference operators, and the two dilation-type representatives connect non-Hermitian and formally Hermitian descriptions.",
+            "quality_reason": "Assuming momentum symmetry, the span gives a pseudo-Hermitian adjoint relation with a sine-squared metric and formally Hermitian similarity representatives. It states representatives with a momentum anomaly or Berry-Keating dilation form and explicitly notes that the inverse metric is unbounded. The candidate correctly separates formal representation change from unresolved domains, completeness, and self-adjointness.",
+            "source_support": "Assuming momentum is symmetric on the eventual domain, the source derives a formal adjoint relation and introduces a nonnegative bounded metric built from the square of sin(p/2), so that H is pseudo-Hermitian. Similarity choices are stated to produce either a symmetrized dilation Hamiltonian with a linear momentum quantum-anomaly term or the Berry–Keating dilation Hamiltonian. The inverse metric is explicitly unbounded, and the induced space later has infinite-norm states.",
+            "speculation_status": "Momentum symmetry is assumed, not derived at this stage; the inverse metric is unbounded, and positivity, domains, completeness, and self-adjointness are unresolved. Thus standard bounded-metric isospectral theorems do not directly apply. The source page is heavily interleaved, so exact metric factors and operator ordering require PDF verification; this reading retains only the prose-supported construction and obstruction. Reading the anomaly term as a quantum correction disappearing in the commuting limit and the similarity map as the limiting factor in spectral transfer is supported by the source's own explanation. The page is heavily interleaved, so exact metric factors and operator ordering require the retained PDF; the candidate avoids relying on those details."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+            "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Completion and affine intertwining expose the same reflection center and make conjugation/reflection orbits easy to represent, but a generic off-critical quartet obeys those symmetries as well. A permutation audit therefore separates covariance of the representation from invariance of the zero set on the critical line.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Completed L-functions supply a successful symmetry template that later operator-labelled and entire-function programs attempt to geometrize; the failed affine-map route shows that the remaining burden is localization or positivity, not another encoding of the functional equation.",
+        "limits": "The completed functions retain family-specific gamma and conductor data and are not identified with one another; the affine audit refutes only the claimed exclusion mechanism, while completion and real critical-line evaluation alone neither prove RH nor construct a spectral operator.",
+        "parent_unit_ids": [
+          "aim2004_u03_functional_equation_family",
+          "full_openalex_w1764772889_v2_u05",
+          "full_openalex_w1764772889_v2_u06",
+          "w1966546572_xi_completion_and_zero_data"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_reflection_without_localization",
+        "title": "Reflection covariance organizes spectra without forcing critical-line zeros"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The introductory purpose at 121-130 is needed to read the formulas as a family rather than isolated identities.",
+          "line_end": 190,
+          "line_start": 121,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent and affected by several missing or malformed symbols, especially 139-145 and 175-189; the shared reflection pattern is prose-recoverable, but exact constants need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source compares zeta, Dirichlet, Dedekind, modular, Maass, and higher-rank completions, exposing the common move of adjoining archimedean factors before reflecting s to 1-s.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completed L-functions share reflection symmetry",
+          "unit_artifact_relpath": "depth/units/aim2004_u03_functional_equation_family.txt",
+          "unit_bytes": 3743,
+          "unit_id": "aim2004_u03_functional_equation_family",
+          "unit_sha256": "76973fbd4b929230d17c9bbe0e81070e089c3601feccf2b3eaae3fefb450adff",
+          "unit_type": "comparative-definition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u03_functional_equation_family.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion exposes a common reflection symmetry while retaining family-specific local data at infinity; the shared form is a structural comparison, not an identification of the functions.",
+            "nonparaphrase_operation": "The bridge is from a raw L-function to a completed function by adjoining powers of π and conductor and gamma factors, after which s and 1-s become directly comparable.",
+            "quality_reason": "The span repeatedly forms completed zeta, Dirichlet, Dedekind, newform, Maass, and higher-rank functions by adjoining powers and gamma factors, then states reflection under s ↦ 1-s. Family-specific parity, discriminant, conductor, embedding, weight, or spectral parameters are visible in the displayed definitions. The candidate correctly limits the claim to a shared functional-equation pattern and notes that the higher-rank subsection itself needs work.",
+            "source_support": "The span displays completed functional equations for zeta, Dirichlet, Dedekind, holomorphic and Maass newform, and GL(r) L-functions, with parity, discriminant, conductor, embedding, or spectral parameters entering their factors.",
+            "speculation_status": "A functional equation alone neither places zeros on the critical line nor supplies the other expected L-function properties, and the source itself marks the higher-rank discussion as needing work. The common reflection pattern is clear, but several characters and exact constants in the displayed completions are damaged and require scan verification. Calling completion the common structural move is a faithful comparison across the displayed examples. A functional equation alone does not entail critical-line zero location or identify the different functions. Several Dirichlet, Dedekind, newform, and GL(r) symbols and constants are missing or malformed; the candidate appropriately withholds exact reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+            "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Figure 3 at lines 919-925 supports the rectangle geometry, but the classification and failure conclusion are stated in prose here and do not require the plot body.",
+          "line_end": 424,
+          "line_start": 382,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Medium: affine complex labels and the 24-permutation count matter, but the cases and obstruction are recoverable from prose. The rectangle visualization is helpful rather than essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Systematically compares the four reflected zero locations with four reference-state orthogonality arguments. It rejects permutations that smuggle in the RH through s*=1-s, classifies generic and degenerate mappings, and concludes that generic off-critical orthogonal states cannot be discarded. This negative result is the paper's clearest protection against a circular symmetry proof.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Permutation audit fails to exclude generic off-critical zeros",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u05.txt",
+          "unit_bytes": 3029,
+          "unit_id": "full_openalex_w1764772889_v2_u05",
+          "unit_sha256": "a3e9d42e64a4c2312f98b25fdf196b9c30fd482d84dd06b33d94df0ad8eb1d43",
+          "unit_type": "failed route and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u05.txt",
+          "source_title": "On SUSY-QM, fractal strings and steps towards a proof of the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The permutation classification is a counterfactual falsification tool: require the proposed correspondence to survive every symmetry-consistent placement, then distinguish genuine constraints from relabellings that encode RH in advance. The surviving generic cases are the obstruction.",
+            "nonparaphrase_operation": "Two rectangles of four points provide the representation: one from zeta's conjugation/reflection orbit and one from affine state labels. Permutations test whether the affine map intertwines the orbits without identifying opposite vertices by assumption.",
+            "quality_reason": "The span enumerates the 24 vertex permutations, rejects identifications such as s*=1-s as circular, separates generic, critical-line, and degenerate cases, and concludes that generic off-critical orthogonal labels cannot be discarded. The candidate preserves the distinction between failing to exclude off-line zeros and producing an off-line zero.",
+            "source_support": "Starting from S(1/2,s)=-Z(3/4-s/2)=-Z(1/4+s/2), the source compares the four affine arguments associated with s=x+iy, 1-x+iy, 1-x-iy, and x-iy to a zero quadruple s', s'*, 1-s', 1-s'*. Among 24 vertex permutations it rejects identifications such as s*=1-s as circular, identifies four generic affine correspondences compatible with zeros anywhere in the strip, four critical-line identifications (with sign variants), and twelve degeneracies collapsing to the reference state's self-pairing. It concludes that off-critical orthogonal labels cannot be excluded by this analysis.",
+            "speculation_status": "This audit does not produce off-line zeros, but it proves the proposed symmetry analysis has no mechanism to exclude them. Any route that selects s'=1-s'* has inserted the critical-line conclusion, while collapsed reference-state cases supply no orthogonality relation. Thus this stage cannot imply RH. The failure conclusion and case types are explicit in prose. Exact affine coefficients and the figure-3 geometry are formula-sensitive, though the obstruction does not depend on inspecting the figure body. Viewing the two four-point orbits as rectangles and the permutation classification as an adversarial falsification test is a substantive representation of the source's symmetry audit. The conclusion that this analysis has no mechanism to imply RH follows directly from the surviving generic cases and the source's explicit negative conclusion. Exact affine coefficients and sign variants are formula-sensitive, but the prose independently supports the case classification and obstruction."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3436d862765b166d5acfc080e3fa21aeea031d0c6a98f5d75e0400e4191ae84c",
+            "dossier_sha256": "a70dae0dd4c5ac2c900aa284e7f23cf932a057f51e961866816aefc1c94ac350"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Begins with the transition from the failed generic analysis and ends at the source's own conditional statement. It must be paired with the preceding obstruction to avoid presenting a conditional criterion as an unconditional proof.",
+          "line_end": 451,
+          "line_start": 425,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Medium: the affine equations are concise and prose-explained; exact coefficient substitutions for k and l remain formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Isolates an exact affine constraint, 2b+a=1, under which the map from state labels to zeta arguments commutes with both conjugation and reflection. It makes explicit that the claimed RH consequence assumes the orthogonal states possess the double-reflection symmetry; the theorem does not establish that assumption.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Double-reflection covariance criterion for affine zeta maps",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u06.txt",
+          "unit_bytes": 1741,
+          "unit_id": "full_openalex_w1764772889_v2_u06",
+          "unit_sha256": "c9fc81209d5c3127e9b0176751aafd58d01d4dc3c72f3bdfc19c64b6751249f9",
+          "unit_type": "conditional criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u06.txt",
+          "source_title": "On SUSY-QM, fractal strings and steps towards a proof of the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The criterion is an intertwining relation between two involutions. Rewriting it as s'=a(s-1/2)+1/2 shows that all admissible affine maps share the fixed point 1/2; covariance constrains representation parameters but does not establish invariance of the underlying vanishing set.",
+            "nonparaphrase_operation": "The bridge is a commuting-square viewpoint: reflect or conjugate a state label and then apply s->as+b, or first map to the zeta plane and apply the corresponding zeta symmetry. The scalar constraint 2b+a=1 is exactly what makes reflection commute.",
+            "quality_reason": "For real a,b, the span maps s to as+b, respects conjugation, and derives 2b+a=1 as the iff condition for compatibility with reflection. It substitutes a=-2/l and b=(4k-1)/l, obtains l=4(2k-1), and states the claimed RH result only under an assumed double-reflection invariance.",
+            "source_support": "Theorem 4 considers a real-affine zeta argument s'=as+b. Conjugation is automatically respected for real a,b, while matching 1-s' with a(1-s)+b is equivalent to 2b+a=1. For the source's a=-2/l and b=(4k-1)/l, this becomes l=4(2k-1). The source states its RH conclusion conditionally on the orthogonal labels actually possessing the double-reflection symmetry.",
+            "speculation_status": "The preceding permutation audit found generic off-line cases, and this theorem assumes the extra double-reflection invariance needed to remove them. It therefore supplies a conditional covariance criterion, not an unconditional proof of that invariance or of RH; arbitrary a,b do not preserve the symmetry. The iff constraint and its conditional status are explicit. The substitutions relating a,b to k,l and their exact signs should be scan-verified because they are displayed-formula sensitive. The commuting-involutions and shared-fixed-point formulation is an exact algebraic restatement of 2b+a=1, not a generic representation slogan. The candidate correctly separates covariance of the affine map from proof that the orthogonal/vanishing set has the required invariance. Signs in the a,b,k,l substitutions are display-sensitive and are appropriately marked for scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3436d862765b166d5acfc080e3fa21aeea031d0c6a98f5d75e0400e4191ae84c",
+            "dossier_sha256": "a70dae0dd4c5ac2c900aa284e7f23cf932a057f51e961866816aefc1c94ac350"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is collected background rather than a new proof in the article. The zero-counting asymptotic and RH statement provide context, while the reusable mechanism is the completion-plus-factorization representation.",
+          "line_end": 180,
+          "line_start": 93,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Requires exact gamma and pi normalization, theta functional equation, conjugation/reflection symmetries, and regularized Hadamard product. Several fractions and product indices are layout-degraded; check equations (4)-(16) against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+          "unit_artifact_relpath": "depth/units/w1966546572_xi_completion_and_zero_data.txt",
+          "unit_bytes": 5353,
+          "unit_id": "w1966546572_xi_completion_and_zero_data",
+          "unit_sha256": "ca94c149be23e58e9ce01b8a0fc76a3f3e2a8326cf0da730205d163ad18d59bc",
+          "unit_type": "representation_change_and_structural_background",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_xi_completion_and_zero_data.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Completion removes the pole and packages analytic continuation and reflection symmetry into an entire object. Passing from series or prime product to an entire-function product changes what is visible: primes recede, while global zero geometry and paired factors become directly manipulable.",
+            "nonparaphrase_operation": "The chain is theta function to Mellin representation to completed xi to Hadamard factors. Xi preserves the nontrivial zeros of zeta while absorbing normalization, pole, and trivial-zero issues; evaluating xi(1/2+i tau) bridges a complex critical-line question to zeros of a real function of a real variable.",
+            "quality_reason": "The span explicitly gives the Dirichlet series, Euler product, theta relation, completed xi function, entire continuation, functional equation, zero symmetries, critical-line reality and boundedness, and Hadamard product. It explicitly distinguishes the Riemann hypothesis and simple-zero statement as conjectural and records the convergence threshold for the displayed zero sum. The phrase 'global zero geometry becomes directly manipulable' is abstract, but the candidate grounds it in the concrete change from series/Euler representations to the Hadamard factors.",
+            "source_support": "The unit reviews the Dirichlet series and Euler product, constructs xi from zeta using gamma and power factors, records its integral continuation, functional equation, zero symmetries, critical-line reality and boundedness, and a Hadamard product over nontrivial zeros. It also states the zero-counting asymptotic, the Riemann hypothesis, the simple-zero conjecture, and a convergence threshold for a zero sum.",
+            "speculation_status": "These are collected background facts, not a new proof. Critical-line location and simplicity are conjectural, and using the infinite product later requires its exponential factors, ordering, and convergence or regularization to be respected. Several fractions, indices, and constants in equations (4)-(16) are layout-degraded in extraction, so exact normalization should not be inferred from this reading. The structural claims about completion, symmetry, and zero encoding are explicit in the span. Describing completion as absorbing the pole and trivial-zero complications and shifting attention from primes to global zero factors is a faithful conceptual synthesis of the displayed formulas and the statement that xi has exactly the nontrivial zeta zeros. Fractions, indices, and constants in equations (4)-(16) are extraction-sensitive; the candidate appropriately declines exact reconstruction while retaining only unambiguous structural claims."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Test functions, Fourier transforms, and shifted explicit formulas all pair zero data with prime or local-place data, but they expose different decisive obligations: Weil's route asks for positivity over an admissible test family, Montgomery's continuation beyond unit frequency asks for main-order shifted-prime correlations, and the noncommutative trace route asks for correct local fixed-point weights.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The explicit formula evolves from an identity into several proof interfaces; each program preserves the prime–zero duality while choosing a different controlled projection and therefore a different missing theorem.",
+        "limits": "Local fixed-point denominators do not supply Weil positivity or shifted-prime estimates, and Montgomery's smoothed identity does not establish a global trace formula; none of these shared harmonic structures alone proves zero localization.",
+        "parent_unit_ids": [
+          "conrey2003_v2_u14_weil_explicit_formula_test_functions",
+          "montgomery1973_depth_u12_explicit_formula_bridge",
+          "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+          "connes1999_v2_u11_local_fixed_point_distribution"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_explicit_formula_interfaces",
+        "title": "A common harmonic interface branches into positivity, correlation, and local trace burdens"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This mechanism is contained within the broader carried v1 positivity unit and is retained separately because its test-function interface is reusable.",
+          "line_end": 411,
+          "line_start": 366,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent and affected by two-column ordering; exact gamma and normalization terms need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source gives the test-function hypotheses, Fourier transform, prime-side sum, and zero-side sum that make Weil's criterion an engineered positivity problem rather than a bare restatement of zero location.",
+          "source_id": "conrey2003_notices",
+          "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Admissible test functions mediate prime-zero positivity",
+          "unit_artifact_relpath": "depth/units/conrey2003_v2_u14_weil_explicit_formula_test_functions.txt",
+          "unit_bytes": 3998,
+          "unit_id": "conrey2003_v2_u14_weil_explicit_formula_test_functions",
+          "unit_sha256": "c2d8bce6ea66b317993e35b403341a9d8240753596a4e21027243b200ec6117f",
+          "unit_type": "duality-and-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u14_weil_explicit_formula_test_functions.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Test functions localize and weight the prime-zero duality, converting a geometric location claim into a family of inequalities.",
+            "nonparaphrase_operation": "The pair h and g is the interface coupling zero ordinates, gamma factors, and prime powers.",
+            "quality_reason": "The span states regularity and decay conditions on an even test function h, defines its Fourier transform g, and relates the zero sum to gamma, archimedean, and von-Mangoldt terms. It states Weil's equivalence between RH and positivity for every admissible h of the specified product form, supporting the candidate's engineered-probe reading.",
+            "source_support": "For an even holomorphic decaying test function h with Fourier transform g, Weil's explicit formula equates a sum over zero ordinates to archimedean terms and a von-Mangoldt prime sum; RH is equivalent to positivity for admissible h of the specified squared form.",
+            "speculation_status": "Positivity must hold for every admissible probe, and the span provides no construction making that positivity transparent. Two-column ordering and formula OCR affect gamma terms, normalizations, and the exact displayed admissibility form; scan verification is required for transcription. Describing the test-function family as localizing and weighting the prime-zero duality is a direct conceptual interpretation of h and g in the explicit formula. Two-column order and OCR affect the exact gamma terms, normalization, and product form; the candidate avoids unsafe reconstruction."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+            "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact lemma display is missing, so this unit records only the method-level bridge explicitly supported by the surrounding prose and surviving terms.",
+          "line_end": 359,
+          "line_start": 271,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Critical: equation (18), the lemma's main display, is absent and several later displays are fragmented. Scan verification is mandatory before using the exact identity, coefficients, or error term.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+          "unit_artifact_relpath": "depth/units/montgomery1973_depth_u12_explicit_formula_bridge.txt",
+          "unit_bytes": 3122,
+          "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+          "unit_sha256": "e5b3376899c4b2f1246f852dc7d51fd6d56aa20923f0aea5f90715e24f78923f",
+          "unit_type": "construction-and-representation-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u12_explicit_formula_bridge.txt",
+          "source_title": "The pair correlation of zeros of the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The subtraction cancels or reorganizes nuisance terms while aligning spectral and arithmetic representations of the same quantity for later mean-square comparison.",
+            "nonparaphrase_operation": "The bridge objects are the logarithmic derivative of zeta, the von Mangoldt coefficients, reflected shifts, and the resulting identity denoted later by L(x,t)=R(x,t).",
+            "quality_reason": "The span writes logarithmic-derivative formulas at shifted arguments, subtracts them under RH, invokes the functional equation, and retains prime-power sums and analytic remainder terms. The candidate limits itself to the method-level zero-to-prime bridge and explicitly refuses formula-level reuse of the missing central lemma display. The candidate names the concrete bridge objects rather than relying on a generic representation-change slogan.",
+            "source_support": "Under RH, the proof writes an explicit formula at two shifted arguments, subtracts the corresponding sides, uses the functional equation, and estimates functional-equation and trivial-zero terms to relate a zero-side kernel sum to prime-power Dirichlet sums split at x.",
+            "speculation_status": "The construction relies on RH for the reflected zero expression, and the extracted unit does not preserve the lemma's central displayed identity. Critical: method-level architecture is supported, but exact coefficients, kernels, and errors in equations (18)-(22) require scan verification. Saying the subtraction reorganizes nuisance terms to align spectral and arithmetic representations is a conceptual reading of the displayed construction. Equation (18) is absent and equations (19)-(22) are fragmented; exact kernels, coefficients, and error terms require scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+            "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This identifies both the precise proof bottleneck and the layered conjectural assumptions proposed to overcome it.",
+          "line_end": 609,
+          "line_start": 571,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equation (32) is badly fragmented and equation (33) is only partly clean; the prose-supported off-diagonal mechanism is recoverable, but exact weights require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For x>T, prior errors cease to be negligible and termwise integration leaves too many nondiagonal contributions. Regrouping exposes shifted von Mangoldt correlations; their conjectured mean gives the desired order for 1<=alpha<2, while additional independence of errors would extend the prediction through all larger alpha.",
+          "source_id": "montgomery1973_pair_correlation",
+          "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Beyond unit frequency, off-diagonal shifted-prime correlations become main-order",
+          "unit_artifact_relpath": "depth/units/montgomery1973_depth_u16_off_diagonal_prime_obstruction.txt",
+          "unit_bytes": 1923,
+          "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+          "unit_sha256": "46b807a190f0aba0325a38d017067cb079c9642bbf4ae4796448ec11410f96bb",
+          "unit_type": "obstruction-and-conjectural-route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u16_off_diagonal_prime_obstruction.txt",
+          "source_title": "The pair correlation of zeros of the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit-frequency boundary marks a transition from diagonal control to genuinely correlated off-diagonal arithmetic, identifying the missing theorem needed for continuation.",
+            "nonparaphrase_operation": "The bridge object is the shifted von Mangoldt correlation and its residual from c(h)y, indexed by the shift h.",
+            "quality_reason": "The span says that for x>T previous errors cease to be negligible and termwise integration leaves too many nondiagonal terms to ignore. It regroups those terms into shifted von Mangoldt correlations, proposes means c(h)y, and separately requires controlled residuals for 1<=alpha<2 and independence across h for all larger alpha. The candidate carefully labels both layers of the proposed continuation as conjectural rather than calling the shifted-prime approximation evidence of a theorem.",
+            "source_support": "For x>T, an error from the Parseval evaluation is no longer below the main term and termwise integration leaves too many nondiagonal contributions. Grouping them produces sums of Lambda(n)Lambda(n+h); replacing these by conjectural means c(h)y supports the desired order, while bounds and independence for the residuals would extend the range further.",
+            "speculation_status": "The route for 1<=alpha<2 depends on conjectural shifted-prime estimates, and extension to all larger alpha adds an independence assumption across shifts. High: the off-diagonal mechanism and layered hypotheses are clear, but equations (32)-(33) have unsafe OCR and exact weights need the scan. Describing alpha=1 as a transition from diagonal control to correlated off-diagonal arithmetic is a faithful synthesis of the stated obstruction. Equations (32)-(33) are damaged, so exact weights and residual normalization require the scan."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+            "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Ends exactly where the nontransverse h(1) case forces the cutoff theorem.",
+          "line_end": 1028,
+          "line_start": 921,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; prose fixes the convolution-of-line-measures argument despite layout damage.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For multiplication on an arbitrary local field, computes the fixed-point contribution |1−lambda|^{-1} and justifies the product of delta distributions by convolving their Fourier transforms, clarifying why the transverse case is well-defined.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier control of the local fixed-point denominator",
+          "unit_artifact_relpath": "depth/units/connes1999_v2_u11_local_fixed_point_distribution.txt",
+          "unit_bytes": 4805,
+          "unit_id": "connes1999_v2_u11_local_fixed_point_distribution",
+          "unit_sha256": "6bc36bf7ce717439c124ff4e6f582580d14922fa23ca5f9c2337dadcf0849f04",
+          "unit_type": "local-rigorous-model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u11_local_fixed_point_distribution.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The inverse local denominator measures transversality of two linear constraints and survives uniformly across Archimedean and non-Archimedean fields.",
+            "nonparaphrase_operation": "Self-dual additive Fourier transform bridges delta-kernel multiplication to convolution of line measures, identifying the local trace contribution used in Weil's formula.",
+            "quality_reason": "The span Fourier-transforms the two delta constraints into measures on distinct lines and computes their convolution determinant J=1-lambda, giving |1-lambda|^(-1). It explicitly isolates lambda=1 as the nontransverse case and says the immediate integrated argument remains available when h(1)=0.",
+            "source_support": "For multiplication by λ on a local field K, Fourier transforms send δ(x−y) and δ(y−λx) to line measures; when λ≠1 their convolution is the constant |1−λ|^{-1}, yielding the local fixed-point distribution.",
+            "speculation_status": "At λ=1 the lines coincide and transversality fails; the argument only remains immediate for integrated tests with h(1)=0. Several convolution displays are layout-damaged, but the line supports, determinant J=1−λ, and conclusion are explicit. Calling the denominator a measure of transversality across local fields is a precise conceptual compression of the determinant calculation. Several convolution displays are layout-damaged, but line supports, determinant, and conclusion are readable."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+            "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Positive-dimensional families of equal-period trajectories can force a lower bound on long-range counting fluctuations, whereas exponential length degeneracy in nonarithmetic examples does not by itself force Poisson statistics. Arithmetic spectral transfer and commuting labels therefore carry information not captured by recurrence multiplicity alone.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Quantum-chaos heuristics are refined from a single orbit-degeneracy explanation into a mechanism audit distinguishing fixed-set dimension, assumed asymptotic length multiplicity, Hecke structure, and Jacquet–Langlands transfer.",
+        "limits": "Sarnak's cited result is a lower bound in a closed two-dimensional setting, not a full spacing law; Bogomolny's nonarithmetic discussion combines finite-range fits with an assumed asymptotic model, so the comparison challenges a sufficiency claim rather than proving a universal alternative.",
+        "parent_unit_ids": [
+          "r110_u015",
+          "bogomolny2003_u44"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_recurrence_mechanisms",
+        "title": "Geometric recurrence and arithmetic degeneracy are distinct sources of spectral nonrigidity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposition is stated for closed manifolds while the stadium application is explicitly analogical and later noted as confirmed.",
+          "line_end": 1213,
+          "line_start": 1177,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mechanism and hypotheses are prose-safe; the exact averaged counting formula and lower-bound exponent are OCR-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why a measure-zero positive-dimensional family of equal-period trajectories can force a variance lower bound outside the GOE window. The stadium, Sinai billiard, and integrable examples connect the trace mechanism to concrete systems.",
+          "source_id": "sarnak1993_arithmetic_quantum_chaos",
+          "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Families of periodic trajectories force long-range spectral nonrigidity",
+          "unit_artifact_relpath": "depth/units/r110_u015.txt",
+          "unit_bytes": 1801,
+          "unit_id": "r110_u015",
+          "unit_sha256": "f4b5a4b313cc8d6174bf29298b8376f2dc3301bb634665b55b4825016c32dc62",
+          "unit_type": "mechanism-and-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/r110_u015.txt",
+          "source_title": "Arithmetic Quantum Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A positive-dimensional family of trajectories sharing a period can affect long-range spectral fluctuations even when it occupies measure zero in phase space. For the stated closed two-dimensional setting, the two-dimensional fixed set of the time-periodic geodesic flow is the intermediate object linking coherent recurrence to a lower bound on averaged counting fluctuations and hence number variance. This gains a dynamical diagnostic for nonrigidity, but only a lower bound: it neither supplies the analytic trace mechanism nor automatically extends the theorem to billiards with boundary.",
+            "nonparaphrase_operation": "The revision identifies common-period fixed-set dimension, rather than phase-space volume, as the operative dynamical feature and maps it only to the theorem's stated variance consequence, removing the unsupported claim about singular spectral-counting contributions.",
+            "quality_reason": "Accepted after restricting the bridge to the proposition's actual conclusion. It preserves the technical assumptions, the measure-zero/common-period insight, the one-sided nature of the result, and the unresolved justification for boundary examples.",
+            "source_support": "The proposition assumes a compact two-dimensional Riemannian manifold without boundary, a two-dimensional fixed set at some period, and additional regularity conditions, then states lower bounds for averaged spectral counting fluctuations and number variance. The span presents stadium and Sinai bouncing-ball families as boundary analogues and the flat torus as an integrable specialization connected to lattice-point discrepancy. OCR-sensitive formulas, exponents, and scales are not reconstructed.",
+            "speculation_status": "The closed-manifold implication is source-stated; the stadium and Sinai uses are explicitly analogical within this span. No boundary theorem or hidden trace-formula proof is asserted."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3f47fbd8bb583ad17b065f70f5b30711d1355aa30b185a1c7768d05564573f86",
+            "dossier_sha256": "2c494697f9c69e048b399e5942546ff1d7c048df7dce13139660d11e4ecf7399"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The key boundary is lambda=1/2: only at that arithmetic rate does the diagonal form factor reach order one within its validity window; the numerical fits are explicitly tentative.",
+          "line_end": 5661,
+          "line_start": 5372,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Combines formula-sensitive correspondence kernels and scaling estimates; exact formulas and fitted coefficients require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Links Hecke eigenvalues to Fourier coefficients and trace formulas, states Jacquet-Langlands spectral transfer, then shows non-arithmetic triangles can have subcritical exponential length degeneracy without leaving GOE statistics.",
+          "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+          "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+          "source_page_markers_inside_unit": [
+            94,
+            95,
+            96,
+            97,
+            98
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Arithmetic spectral transfer and the non-arithmetic degeneracy threshold",
+          "unit_artifact_relpath": "depth/units/bogomolny2003_u44.txt",
+          "unit_bytes": 12255,
+          "unit_id": "bogomolny2003_u44",
+          "unit_sha256": "dcc3268f2b83f7d39347b5956b51bb67e2ccde7c253ede529603d0d022dbbb0f",
+          "unit_type": "spectral-transfer-and-boundary-case",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_u44.txt",
+          "source_title": "Quantum and Arithmetical Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Arithmetic structure appears through distinct mechanisms: normalized Fourier coefficients encode Hecke eigenvalues, a Hecke trace formula connects them to determinant-m correspondences, and the stated Jacquet-Langlands kernel transfers a compact quaternionic eigenvalue into a congruence-subgroup spectrum. Separately, nonarithmetic triangles have finite-range fits of the form a_n exp(b_n l); only after that observation does the source assume the different asymptotic model exp(λl)/l, under which the diagonal form factor reaches order one at λ=1/2 but tends to zero within its validity window for λ<1/2. The examples therefore challenge, rather than falsify, the claim that exponential degeneracy alone forces Poisson statistics.",
+            "nonparaphrase_operation": "Mechanism separation and threshold analysis: prevents conflation of commuting labels, spectral transfer, empirical fit family, and assumed asymptotic scaling, then locates the critical exponent inside the diagonal approximation.",
+            "quality_reason": "Accepted after separating a_n exp(b_n l) fits from the exp(λl)/l ansatz and calibrating the comparison from falsification to a finite-range challenge; kernel formulas, normalizations, fits, and scaling exponents remain PDF-sensitive.",
+            "source_support": "Lines 5372-5661 derive c_m=λ_m c_1 and normalize c_1=1, state a schematic Hecke trace formula and the Jacquet-Langlands transfer, report short-range least-squares exponential fits for nonarithmetic triangles, and separately derive the λ-threshold from an assumed exp(λl)/l multiplicity model.",
+            "speculation_status": "Hecke and transfer claims are source-stated; the fits are tentative numerical evidence; the λ threshold is a semiclassical diagonal heuristic, not a theorem about complete spectral statistics."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02404e5aad36a5b4919a6ff71318ffcb892967dd2851864eb524a65ab6b23a69",
+            "dossier_sha256": "f0a0b6d046502ec38f6ab2bb978bcbf4c76ae7f147b6f14ac983bb2c7ff51b00"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Finite-place localization yields canonical operators, controllable arithmetic translates, rapid cutoff convergence, and a Hilbert-space interface between additive and multiplicative quotient models. What localization forgets is the global relation fixing principal-value normalization; the support restriction and two vanishing moments mark the admissibility data needed before a positive trace statement can bear on RH.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The noncommutative trace program advances from constructing and controlling semilocal representations to isolating Poisson normalization and support-restricted Weil positivity as separate global bottlenecks.",
+        "limits": "The quotient identification is noncanonical and explicitly not a positivity result; rapid cutoff error control does not prove the desired inequality, and Poisson summation is proposed as the missing consistency constraint rather than established here as a completed RH argument.",
+        "parent_unit_ids": [
+          "connes1999_v2_u19_rapid_cutoff_error",
+          "connes_consani2019_scaling_hamiltonian__u01",
+          "connes_consani2019_scaling_hamiltonian__u21",
+          "c71_u054"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_semilocal_normalization_positivity",
+        "title": "Semilocal control shifts the RH burden to global normalization and admissible positivity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This technical unit closes the gap between the formal place decomposition and the rigorous asymptotic.",
+          "line_end": 1849,
+          "line_start": 1747,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Estimate-heavy and OCR-sensitive; qualitative dependencies and conclusion are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a word metric on S-units, fractional-difference convolution norms, and Schwartz decay to prove geometric summability in the unit variable and faster-than-any-power decay in the cutoff.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            36,
+            37
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Geometric summability and rapid decay of the cutoff error",
+          "unit_artifact_relpath": "depth/units/connes1999_v2_u19_rapid_cutoff_error.txt",
+          "unit_bytes": 4021,
+          "unit_id": "connes1999_v2_u19_rapid_cutoff_error",
+          "unit_sha256": "41a56e685ebd42f0dd6b932ecfdd22092ecf0d4d6644cb9bab96354f989b274c",
+          "unit_type": "analytic-error-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u19_rapid_cutoff_error.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof separates two burdens—summability over arithmetic translates and cutoff convergence—and supplies a different control mechanism for each.",
+            "nonparaphrase_operation": "The S-unit logarithmic lattice bridges word length to local magnitude, while fractional-difference Fourier estimates bridge local regularity to decay of the quotient tail.",
+            "quality_reason": "The proof rewrites delta_q(Lambda) as an inverse Fourier transform evaluated at q^(-1), bounds Fourier decay through fractional-difference convolution norms, and obtains rapid cutoff decay from Schwartz tails. The S-unit word-metric lower bound converts local magnitude into exponential decay in q, yielding geometric summability and O(Lambda^(-N)) for every N.",
+            "source_support": "Writing the error δ_q(Λ) as an inverse Fourier transform at q^{-1}, fractional convolution norms control Fourier decay by sup_v|x_v|^α; Schwartz tail estimates give O(Λ^{-N}), and the S-unit word metric yields |δ_q(Λ)|≤δ_Λe^{-d(q,1)}.",
+            "speculation_status": "The argument depends on finite S, Schwartz data, and α<1/2; it controls the residual error but does not extend the theorem globally. Estimate typography is OCR-sensitive, though the dependencies and faster-than-any-power conclusion are explicit. Separating arithmetic-translate summability from cutoff convergence accurately identifies the two distinct estimates in the proof. Estimate typography is damaged in places, but alpha<1/2, exponential decay, and the rapid-decay conclusion are explicit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+            "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the full roadmap because the later technical sections separately realize each promised comparison, trace formula, failure diagnosis, and conjecture.",
+          "line_end": 107,
+          "line_start": 56,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is self-contained; equation (0.1) only illustrates the semi-local unit group.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction distinguishes the artificial global Sobolev realization from canonical semi-local Hilbert-space operators, then identifies local principal-value normalization and the global Poisson formula as the likely missing ingredient in a positivity proof.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Canonical semi-local operators and the normalization obstruction",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian__u01.txt",
+          "unit_bytes": 3400,
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u01",
+          "unit_sha256": "2439063d8530c8672bd91bdbe34c0a44b4807f6acafbc22c129b2a9ef7198725",
+          "unit_type": "motivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian__u01.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Localizing to finitely many places makes the operator construction canonical and controllable, but it forgets the global relation that fixes the local principal values; Poisson summation is proposed as the missing consistency constraint.",
+            "nonparaphrase_operation": "The bridge is the semi-local adèle-class quotient XS together with its scaling operators, connecting Hilbert-space spectral language to placewise terms of the explicit formula and, prospectively, to global Poisson normalization.",
+            "quality_reason": "The span explicitly contrasts the artificial global Sobolev realization with canonical semi-local operators and says those operators provide finite parts in the Riemann-Weil explicit formula. It explicitly diagnoses omitted-prime principal-value normalization and proposes the global Poisson formula as the missing constraint, while presenting Section 4 only as a conjectural route.",
+            "source_support": "For a finite set of places S, the authors use the canonical Hilbert space L2(XS), with XS built from the corresponding local fields modulo S-units, to recover finite-part terms in the Riemann-Weil explicit formula and organize a semi-local trace formula.",
+            "speculation_status": "This introduction is a roadmap, not a positivity proof: it explicitly says Li's Hardy-space route fails and only motivates a Poisson-informed semi-local conjecture. The prose is clear; equation (0.1) and extracted typography should not be reused formula-for-formula without checking the scan. Calling normalization global compatibility data and saying finite localization forgets it is a faithful conceptual compression of the stated diagnosis. Equation (0.1) has degraded exponent placement, and the candidate appropriately avoids relying on its exact typography."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_5ee0a06b9c8bdedba96bc53a4e21f9408f04c7d61a8135b8b2ab7ee02e37406c",
+            "dossier_sha256": "671ac5e997d91c2a9085238c6c8a4ab2e14afd83be16fce9d7780be89f2eb1f2"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the equivalence, change to the symmetric h-normalization, constraints, and Conjecture 4.1.",
+          "line_end": 854,
+          "line_start": 826,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several integrals are line-broken but the convolution form, vanishing moments, support interval, and finite set of places remain recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Weil's criterion is rewritten as a convolution square with two moment constraints, motivating the conjecture that places below a support-determined threshold suffice for the corresponding test functions.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Support-restricted Weil positivity as a finite semi-local problem",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian__u21.txt",
+          "unit_bytes": 1838,
+          "unit_id": "connes_consani2019_scaling_hamiltonian__u21",
+          "unit_sha256": "ac92848e1e07b5463f16616523b3ef3ca3c770a3d09f359fa41925944ac2d92d",
+          "unit_type": "conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian__u21.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support controls which arithmetic places can contribute, while the two vanishing moments encode global admissibility that the failed unrestricted inequality omitted.",
+            "nonparaphrase_operation": "The h-normalization bridges Weil's additive-looking convolution formula to the symmetric multiplicative test functions used by the semi-local trace formula.",
+            "quality_reason": "The span states Weil's equivalent negativity criterion for convolution-type tests, compact-support sufficiency, and both vanishing moment conditions. It performs the h1 normalization and states Conjecture 4.1 with S equal to the archimedean place together with primes below q for the specified support interval.",
+            "source_support": "Weil's criterion is expressed using f built from a compactly supported g and two vanishing moments; after h_1(x)=x^(1/2)g(x), one gets h=h_1 convolved with h_1* and constraints integrating h_1(x)x^(plus or minus 1/2) against multiplicative measure. Conjecture 4.1 proposes S={infinity} union primes p<q for support in (q^(-1/2),q^(1/2)).",
+            "speculation_status": "The finite-place sufficiency statement is explicitly a conjecture and supplies neither the required operator inequality nor a proof of RH. The convolution, constraints, support interval, and finite set are recoverable, but several integral displays are line-broken. Interpreting the two moments as global admissibility constraints omitted by the unrestricted inequality is supported by the immediate contrast with Section 3. Saying support controls the finite arithmetic burden is supported by compact-support sufficiency and the support-indexed conjecture, without treating the conjecture as proved. Several integrals are line-broken, but the convolution, two moments, support interval, and finite set of places are recoverable."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_5ee0a06b9c8bdedba96bc53a4e21f9408f04c7d61a8135b8b2ab7ee02e37406c",
+            "dossier_sha256": "671ac5e997d91c2a9085238c6c8a4ab2e14afd83be16fce9d7780be89f2eb1f2"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is interface machinery for the semilocal formula, not an independent positivity result.",
+          "line_end": 2241,
+          "line_start": 2224,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High-to-moderate: dense notation is partially degraded, but the map and specialization are stated.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The semilocal module descends through the quotient, identifies additive and multiplicative L2 spaces, and reduces the general trace formula to the kernel-invariant component used in equation (22).",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The module identifies the semilocal quotient with the trace-formula Hilbert space",
+          "unit_artifact_relpath": "depth/units/c71_u054.txt",
+          "unit_bytes": 1840,
+          "unit_id": "c71_u054",
+          "unit_sha256": "50d2bc64b6ee010ba116fbb744d8e7a96c33e632b18705e150de9c9319508b03",
+          "unit_type": "semilocal-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u054.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The module descends the product of local absolute values to the semilocal quotient, while the idele-class orbit of 1 fills that quotient up to an additive-Haar null complement. A Radon-Nikodym correction then gives the reported unitary identification between L2(Y_S) and L2(C_S). With C_S noncanonically decomposed as R_+^* × K_S, passage to K_S invariants retains the scaling coordinate and yields the specialization used by the semilocal trace formula. The construction is an interface between additive and multiplicative presentations, not a positivity result in this span.",
+            "nonparaphrase_operation": "Composes quotient descent, full-measure orbit replacement, measure correction, Hilbert-space identification, and invariant reduction, while preserving both the null-set qualification and noncanonicity.",
+            "quality_reason": "Accepted after removing the imported missing-estimate claim and labeling the module/measure-rescaling relation as interpretation; no unsupported positivity conclusion is added.",
+            "source_support": "The span gives Mod_S:Y_S->R_+, the embedding C_S->Y_S with measure-zero complement, the Radon-Nikodym-based unitary w_S, the noncanonical product with K_S=ker Mod_S, and the statement that equation (22) specializes a general trace formula to the K_S-invariant part.",
+            "speculation_status": "The maps, measure statement, unitary identification, decomposition, and invariant specialization are source facts. Reading the module as a scaling coordinate and the measure correction as the additive/multiplicative interface is conceptual inference, not an explicit derived formula."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_dd6323053dd3543b51635c41b74534ec87b49f9c8c6c7d8162bb1e3ad261be30",
+            "dossier_sha256": "9044f2c865a3ba69995c638c1b1b2624e4a38c19ed512b4a8125e87b415d577f"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the cokernel realization, delta derivatives supported at a zero produce generalized eigenvectors whose Jordan structure records zero multiplicity. In the non-Hermitian Hamiltonian proposal, Jordan coalescence and self-orthogonality are instead assigned to off-critical zeros as exceptional points; Jordan structure therefore cannot be read uniformly as evidence of off-criticality.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "A rigorous spectral identification of zeros and multiplicities is repurposed in a later PT-symmetric program as a conditional location diagnostic, changing what the same linear-algebraic feature is claimed to mean.",
+        "limits": "The two operators and multiplicity notions are not identified; the exceptional-point interpretation depends on an unproved one-to-one boundary/secular correspondence and does not independently prove RH or simplicity, while the cokernel construction does not assert that every Jordan block signals an off-critical zero.",
+        "parent_unit_ids": [
+          "connes1999_v2_u35_spectral_cokernel_proof",
+          "openalex_w2511750669_u12"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_jordan_semantics",
+        "title": "Jordan structure records different obstructions in two zero realizations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the converse construction from derivatives of homogeneous distributions, so the spectral characterization is bidirectional.",
+          "line_end": 3374,
+          "line_start": 3044,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-sensitive; the distribution-support logic is clear, but multiplicity bounds should be verified from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Decomposes the dual by compact characters, Mellin-transforms annihilators of Im(E), uses L(1/2+it) times the transformed distribution equals zero, and identifies the allowed delta derivatives with zero multiplicity and Sobolev order, yielding the cokernel generator's Jordan spectrum.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeros characterize the annihilator of the orbit-sum range",
+          "unit_artifact_relpath": "depth/units/connes1999_v2_u35_spectral_cokernel_proof.txt",
+          "unit_bytes": 13547,
+          "unit_id": "connes1999_v2_u35_spectral_cokernel_proof",
+          "unit_sha256": "4d2038f7a552359bfa6c4f969098b58b5cbead894b126789f0d04e8bfd35e553",
+          "unit_type": "proof-of-spectral-identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u35_spectral_cokernel_proof.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The cokernel changes analytic vanishing into linear-algebraic failure of surjectivity. Multiplicity is not merely repeated eigenvalue counting: derivatives supported at a zero supply generalized eigenvectors and hence Jordan structure.",
+            "nonparaphrase_operation": "The decisive bridge chain is E-range to annihilator, compact-character decomposition to Mellin distributions, multiplication by L to support at its zeros, and delta derivatives to generalized eigenvectors of the transposed representation.",
+            "quality_reason": "The span embeds the separated completion by E, decomposes the dual by compact characters, band-limits annihilators, and derives L(X_0,1/2+it) times the Mellin distribution equals zero. It then identifies compactly supported solutions as delta derivatives at zeros, constructs the converse annihilators from derivatives of Delta_s, and displays the triangular action; the candidate accurately connects derivative order with generalized-eigenvector depth. The candidate preserves the two cancellations, compact spectral support, growth control, and Sobolev truncation rather than claiming unrestricted multiplicity. The bridge chain is long but source-specific and records actual operations rather than a generic representation slogan.",
+            "source_support": "The orbit-sum map E embeds the separated completion isometrically into L2_delta(C_k), intertwining the C_k action with a half-module twist. The orthogonal complement of Im(E) is decomposed by compact characters. After band limitation, Mellin transformation turns orthogonality into L(X_0,1/2+it) times psi-hat(t)=0. Distribution theory then makes psi-hat a finite combination of delta derivatives at zeros; zero order and Sobolev membership bound the derivative order. Conversely, derivatives of homogeneous distributions at a zero annihilate Im(E), and the induced action is triangular, producing the stated Jordan spectrum.",
+            "speculation_status": "The result concerns the preliminary weighted cokernel model and observes only multiplicity allowed by the Sobolev exponent. It relies on compact spectral support, growth bounds for L, and the two defining cancellations in S(A)_0; it is not the later delta-free global trace theorem. Moderate to high for exact bounds: the extracted Sobolev inequality near the delta-derivative condition is internally garbled, so the precise cutoff must be checked against the source image; the support-at-zeros mechanism is clear. Describing the triangular delta-derivative action as Jordan structure is a valid linear-algebraic reading of formulas (28), (32), and (34). The displayed integrability arithmetic near formula (29) is internally garbled; the candidate correctly refuses to reproduce an exact cutoff while retaining the reliable support-at-zeros mechanism."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+            "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exceptional-point and simplicity statements are consequences within the formal spectral model. The one-to-one correspondence needed for the all-roots simplicity conclusion is posed conditionally, not proved here.",
+          "line_end": 333,
+          "line_start": 301,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The key claims are readable in prose; the self-orthogonality notation and critical-line fraction should be checked against the PDF for exact transcription.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source claims that if RH is false, eigenstates associated with off-critical nontrivial zeros coalesce into Jordan-block structures and satisfy self-orthogonality. It then connects spectral nondegeneracy to simplicity of zeros, but explicitly makes the strongest simplicity conclusion depend on a one-to-one correspondence between eigenstate boundary conditions and the secular equation.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Off-critical zeros are represented as exceptional-point degeneracies",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_u12.txt",
+          "unit_bytes": 3043,
+          "unit_id": "openalex_w2511750669_u12",
+          "unit_sha256": "c6c8e3bc9fe30cdf7a3937296d4394794cfd8fba2fd2693df09fe2dde1cb1f93",
+          "unit_type": "degeneracy-and-obstruction-consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_u12.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the proposed spectral model, an off-critical nontrivial zero is represented not merely by an anomalous eigenvalue but by coalescing eigenstates, a Jordan block, and self-orthogonality at an exceptional point; RH, by contrast, is said to make the proposed eigenvalues nondegenerate. This converts zero location into a conditional degeneracy obstruction without establishing RH independently. The source keeps two simplicity claims separate: RH is already known to imply that at least 19/27 of the nontrivial zeros are simple, whereas the stronger conclusion that RH makes all roots simple—and that an off-critical nontrivial zero cannot be simple—requires an unproved one-to-one correspondence between the eigenstate boundary condition and the secular equation.",
+            "nonparaphrase_operation": "Treats exceptional-point behavior as an internal obstruction diagnostic and decomposes the simplicity discussion into a known RH-conditional lower bound and a stronger model-dependent claim with a separate correspondence burden.",
+            "quality_reason": "Accepted after removing unsupported functional pairing and diagonalizability language and preserving the exact distinction between the 19/27 result and the stronger conclusion that depends on the unproved one-to-one correspondence.",
+            "source_support": "The span states coalescence, Jordan-block structure, and self-orthogonality for eigenstates corresponding to off-critical nontrivial zeros, while stating nondegeneracy if RH holds. It then gives the conditional 19/27 simplicity lower bound and explicitly introduces the one-to-one boundary-condition/secular-equation hypothesis before asserting the all-simple and off-critical-not-simple conclusions.",
+            "speculation_status": "The exceptional-point and stronger simplicity consequences are conditional inside the formal spectral proposal; they are not independent evidence for RH. The self-orthogonality notation and critical-line fraction are extraction-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ecc4fef900bc38562b7d78ba944dc71ee27098ce3198dd93d45a5720554df434",
+            "dossier_sha256": "efb5c323cf7ee4dbd0f551703ead69397bdd19e401ee09dca8b79dd1d6df482d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Time and band projections rewrite the archimedean explicit-formula contribution as failure of simultaneous concentration, while the spectrum of the associated projection product packages their relative angles and also generates random-matrix gap counts. The shared invariant provides a concrete bridge between local trace geometry and eigenvalue probability without identifying zeta zeros with matrix eigenvalues.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The cutoff-operator program sharpens a broad random-matrix analogy into reuse of one concentration spectrum across an arithmetic local term and a probabilistic gap observable.",
+        "limits": "The relation is local and cutoff-dependent, not a global Hilbert–Pólya realization; equality or reuse of the angle spectrum does not transfer RH, positivity, or an exact zero spectrum from the random-matrix model.",
+        "parent_unit_ids": [
+          "c71_u043",
+          "connes1999_v2_u27_angle_random_matrix_link"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_time_frequency_angle_bridge",
+        "title": "Time–frequency concentration links a local explicit term to random-matrix gap observables"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the prime-free local bridge; the semilocal extension is separate.",
+          "line_end": 1832,
+          "line_start": 1806,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High-to-moderate: equation (19) is layout-fragmented, but its parameters and interpretation are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The archimedean trace formula uses independent support and bandwidth projections, turning the local Weil distribution into a trace identity in exactly the operators used in information theory.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Time and frequency cutoffs rewrite the archimedean local term",
+          "unit_artifact_relpath": "depth/units/c71_u043.txt",
+          "unit_bytes": 1604,
+          "unit_id": "c71_u043",
+          "unit_sha256": "7913b0f73717de5013cc8008c7b9a607d649dc1b20af1c2d6c47270b8fc80a8a",
+          "unit_type": "trace-formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/c71_u043.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The local explicit-formula term becomes a measurement of failure to lie within two constrained projection ranges, exposing time-frequency geometry behind the trace.",
+            "nonparaphrase_operation": "The scaling action and time-band projections bridge the archimedean explicit formula to Shannon-Slepian concentration operators.",
+            "quality_reason": "The span defines independent time and frequency projections and states the archimedean trace identity involving log(TW)f(1) and the trace against 1-P_T-P_hat_W. It explicitly labels the formula a bridge to information theory and postpones prime contributions to the semilocal extension. Low: the independent cutoffs and trace defect provide a non-generic mechanism.",
+            "source_support": "On even L2(R), the scaling representation is integrated against f, while projections P_T and P-hat_W impose time and frequency windows; equation (19) expresses W_infinity(f) as log(TW)f(1) plus the trace of the scaling operator against 1-P_T-P-hat_W.",
+            "speculation_status": "This formula is prime-free; incorporating finite places requires the separate semilocal identity, and analytic trace/domain conditions are not developed here. Equation (19) is layout-fragmented, but the roles of T, W, the projections, and the trace identity are prose-supported. Reading the trace term as a defect relative to the two constrained ranges is a reasonable operator interpretation. Equation (19) is layout-fragmented, but its parameters, sign convention, and prime-free status are explicit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_dd6323053dd3543b51635c41b74534ec87b49f9c8c6c7d8162bb1e3ad261be30",
+            "dossier_sha256": "9044f2c865a3ba69995c638c1b1b2624e4a38c19ed512b4a8125e87b415d577f"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A compact but nonredundant bridge between two appearances of the same operator spectrum.",
+          "line_end": 2465,
+          "line_start": 2448,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Notation-heavy and formula-dependent; prose states the relationship.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates eigenvalues of the projector-angle/time-frequency operator to the Fredholm-product description of large-matrix eigenvalue counts, linking the cutoff construction back to zero statistics.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The cutoff angle spectrum also governs random-matrix gap probabilities",
+          "unit_artifact_relpath": "depth/units/connes1999_v2_u27_angle_random_matrix_link.txt",
+          "unit_bytes": 1135,
+          "unit_id": "connes1999_v2_u27_angle_random_matrix_link",
+          "unit_sha256": "84c88f3eaaf9267bea91143da29be19a77808dd0585e13d63735bcf539d6426c",
+          "unit_type": "cross-connection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_v2_u27_angle_random_matrix_link.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Operator angles compress the interaction of two cutoffs into a spectrum that can be reused in a probabilistic eigenvalue-counting formula. The useful move is to compare constructions through a common spectral invariant rather than through their ambient interpretations.",
+            "nonparaphrase_operation": "The bridge object is the product of a position projection with a Fourier-conjugated projection; its eigenvalue product is a generating function for random-matrix gap counts and its spectrum is related to Theta by the ab scaling invariance.",
+            "quality_reason": "The span explicitly relates E(n,s) to Taylor coefficients of the Fredholm product over the eigenvalues of P^c_pi P_t and says spectra of P^c_a P_b depend only on ab, giving the stated link to Theta. The candidate correctly limits the result to identification of a common operator spectrum rather than a derivation of zeta-zero or random-matrix convergence. The phrase shared coordinate is abstract, but the product formula and ab-invariance keep it source-specific.",
+            "source_support": "The large-matrix probability E(n,s) is recovered from Taylor coefficients at z=1 of the product over 1-z lambda_j(s), where lambda_j(s) are eigenvalues of the time-frequency product P^c_pi P_t. The text notes that spectra of P^c_a P_b depend only on ab, which connects these lambda_j to the previously defined angle operator Theta.",
+            "speculation_status": "This short link does not establish convergence of the constructed large matrix to zeta zeros or derive random-matrix statistics from the Adele-class model; it identifies a common operator spectrum. Moderate: the projection subscripts and product display are extraction-sensitive, although the prose-level spectral relationship is explicit. Calling the shared eigenvalue sequence a reusable spectral coordinate is a faithful conceptual compression of the two formulas. Projection subscripts and the displayed Fourier/product notation are extraction-sensitive; the prose-level relationship remains legible."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_b21624820fe978db29a931afdede10ee5802833061b8f2c3dbd245198c4d5b49",
+            "dossier_sha256": "26f76e55a381eeee1cda2fa854cd5147dce631cd993377c3ef1f61ac9fdf48f4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The open one-hole billiard is reported to have an exact zeta-dependent survival formula and an RH-equivalent ordered limiting residual, whereas the Lorentz-gas route reaches inverse-zeta poles only formally and fails at the contour-closure step needed for residue extraction. Physical measurability is therefore separate from analytic equivalence, and superficially similar escape observables can carry very different proof burdens.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Physical RH proposals progress from formal transport analogies toward explicitly stated equivalent asymptotics, while the comparison makes contour validity and order of limits auditable gates rather than treating zeta sensitivity as sufficient.",
+        "limits": "The models, geometries, and asymptotic regimes differ; no experiment had established the one-hole ideal limit, finite agreement cannot prove it, and the Lorentz-gas source explicitly supplies neither an RH criterion nor an equivalence.",
+        "parent_unit_ids": [
+          "full_openalex_w1803775934_v2_u26",
+          "openalex_w2141932395_u12"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_billiard_criterion_gap",
+        "title": "Two billiard routes have sharply different RH proof status"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly notes that no such experiment had been performed and extends the idea to spherical billiards.",
+          "line_end": 1208,
+          "line_start": 1180,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; equation (48), limit order, and exponents require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates escape probability in open billiards to zeta and gives an RH-equivalent limiting law whose violation could in principle refute RH experimentally.",
+          "source_id": "openalex_w1803775934",
+          "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Billiard survival asymptotics provide a physically measurable RH condition",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u26.txt",
+          "unit_bytes": 1921,
+          "unit_id": "full_openalex_w1803775934_v2_u26",
+          "unit_sha256": "33211a939a30cf9b71841a61cdfdd916a7d03a583e9ee0dd8765c426ad4d14a3",
+          "unit_type": "experimental equivalent criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u26.txt",
+          "source_title": "Will a physicist prove the Riemann hypothesis?",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The open-billiard construction reframes a zero-location condition as the decay of a survival observable after subtracting its leading escape term. The source reports an exact zeta-dependent formula for the one-hole survival probability and an RH-equivalent ordered long-time/small-hole asymptotic for the residual. This makes slower-than-required residual decay a proposed route to experimental refutation, while finite agreement cannot prove the ideal limiting statement. The same source mentions two-hole and spherical variants and says no such experiment had been performed.",
+            "nonparaphrase_operation": "Treats the subtracted quantity as a renormalized survival tail, showing how removal of the leading term shifts attention from raw escape probability to the rate at which the RH-sensitive residual vanishes.",
+            "quality_reason": "Accepted after revision: the qualitative mechanism and asymmetric refutation claim are prose-grounded, while the OCR-unsafe equation is described without asserting an exact transcription.",
+            "source_support": "The span defines P1(t), reports its exact connection to ζ, states an RH equivalence through equation (48), ties the threshold exponent to the critical line, and explicitly presents experimental violation as refutation rather than finite confirmation as proof.",
+            "speculation_status": "The renormalized-tail language is an interpretation of the displayed subtraction. Exact symbols, exponents, and limit typography are not reconstructed because equation (48) is formula-unsafe; apparatus imperfections are not imported."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+            "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This unit prevents the paper's title and later asymptotic from being misread as a proved RH criterion.",
+          "line_end": 461,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low: the proof gap and analogy are stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue.",
+          "source_id": "openalex_w2141932395",
+          "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+          "unit_artifact_relpath": "depth/units/openalex_w2141932395_u12.txt",
+          "unit_bytes": 1586,
+          "unit_id": "openalex_w2141932395_u12",
+          "unit_sha256": "e04fc2b4dd09ba7004aa6efce442b2e405949103941ebffcb71f155b9d432ced",
+          "unit_type": "formal-analogy-and-open-gap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u12.txt",
+          "source_title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The RH connection is an analytic proof-obligation chain rather than a result of the billiard model by itself: shrinking the scatterers increases the number of horizons, Mellin transformation formally introduces inverse-zeta poles, and residue extraction requires closing contours along a convergent pole-avoiding sequence. This representation can make a transport asymptotic sensitive to zeta zeros, but it loses validity precisely at the unproved contour step; therefore it yields neither an RH criterion nor an equivalence. The source's comparison with a simpler open circular billiard underscores that this gap is substantive rather than cosmetic.",
+            "nonparaphrase_operation": "Factors the proposed bridge into successive transformations and localizes the missing proof burden at contour closure, showing why formal residue sensitivity cannot be promoted to equivalence.",
+            "quality_reason": "Accepted after removing unsupported primitive-lattice provenance and the stronger claim that the dynamics merely supplies counted coefficients; all retained mechanism is present in the exact span.",
+            "source_support": "The span explicitly links the small-r increase in horizons to Mellin transforms with zeta(s)^{-1}, states the pole-avoiding contour assumption, and says that a complete RH equivalence proof is unavailable even for the simpler related circular-billiard case.",
+            "speculation_status": "The relation to RH is explicitly formal and conditional on an unproved analytic convergence assumption; prospective extensions mentioned afterward are not established results."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+            "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Independent component and harmonic indices rigorously motivate a scalar product of a geometric Dirichlet series with zeta in the fractal-string frequency sum, but an infinite product of prime-local operators has no corresponding defined composition. Replacing that undefined product by a global zeta pseudodifferential symbol preserves analytic zero organization while discarding factor-by-factor operator semantics.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Spectral programs borrow Euler-product intuition in two materially different ways: a separable double sum yields an honest scalar factorization, while adelic quantization uses the scalar Euler product only to motivate a new global symbol after the operator product fails.",
+        "limits": "The scalar fractal-string factorization does not produce a Hilbert–Pólya operator, and zeros of one factor can mask information in the other; the global pseudodifferential symbol still requires functional-calculus and domain control and does not retrospectively define the prime-wise operator product.",
+        "parent_unit_ids": [
+          "full_openalex_w1764772889_v2_u08",
+          "w1966546572_adelic_product_to_zeta_symbol"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_scalar_operator_factorization",
+        "title": "A scalar zeta factor need not come from a composed prime-local operator"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The surrounding physical examples are motivational; the reusable mechanism is the separation of primitive lengths from harmonic multiplicities and its Dirichlet-series factorization.",
+          "line_end": 576,
+          "line_start": 516,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: equations (21)-(24) define the counting functions and factorization. The prose makes the sums' roles clear, but exact domains and exponents should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates a string's geometric length counting function from the integer harmonics of each length and derives the reusable factorization ZF=ZL times zeta. It also explains why poles of the geometric factor encode complex dimensions and why collisions with zeta zeros affect spectral visibility.",
+          "source_id": "openalex_w1764772889",
+          "source_normalized_sha256": "cff9cadb6fff73e8f3db6aa01dacedfee5bff1e7cd53136236dbd1c1b4e2381e",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fractal-string frequency spectrum factors through the Riemann zeta function",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1764772889_v2_u08.txt",
+          "unit_bytes": 3779,
+          "unit_id": "full_openalex_w1764772889_v2_u08",
+          "unit_sha256": "97cbb099660341790d642cb35202dcc827c433c17e3492449a64fcc242cafacd",
+          "unit_type": "spectral factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1764772889_v2_u08.txt",
+          "source_title": "On SUSY-QM, fractal strings and steps towards a proof of the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The factorization cleanly decomposes geometry from repetition: Z_L records the primitive length multiset, while zeta records the common integer-harmonic tower. This is a reusable product-generating-function move, and zeros of one factor can mask singular information carried by the other.",
+            "nonparaphrase_operation": "The bridge is the frequency double sum indexed independently by component j and harmonic k. Factoring those indices converts a physical spectrum into the product of a geometric Dirichlet series and the Riemann zeta function.",
+            "quality_reason": "The span defines the geometric length series and the double frequency series, with component index j and harmonic index k separating to give Z_F(s)=zeta(s)Z_L(s) in the fractal-string case. It identifies poles of Z_L as complex dimensions and explicitly says their coincidence with zeta zeros matters.",
+            "source_support": "For link lengths l_j, the source defines Z_L(s)=sum_j l_j^s. Frequencies k/l_j give Z_F(s)=sum_{k,j}k^{-s}l_j^s, which factors as Z_F(s)=zeta(s)Z_L(s) in the fractal-string case (or with a generalized zeta in the broader notation). It identifies poles of Z_L as complex dimensions and notes that coincidence of such poles with zeta zeros can affect their spectral visibility.",
+            "speculation_status": "The identity requires convergence or a justified meromorphic continuation before products, poles, and cancellations can be manipulated. It does not make the string's complex dimensions zeta zeros, nor do the surrounding Epstein-zeta and physical examples establish a Riemann fractal string. The separation of indices and factorization are clear in prose. Exact summation domains, exponents, and the distinction between ordinary and generalized zeta notation are formula-sensitive and should be checked against the page image. Interpreting the factorization as separation of primitive geometry from a universal integer-harmonic tower is a concrete reusable mechanism supplied by the independent double-sum indices. The masking/cancellation warning and need for convergence or justified meromorphic continuation are valid analytic proof-burden qualifications. Exact summation domains, exponents, and the ordinary-versus-generalized zeta notation are formula-sensitive and are explicitly left for scan verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3436d862765b166d5acfc080e3fa21aeea031d0c6a98f5d75e0400e4191ae84c",
+            "dossier_sha256": "a70dae0dd4c5ac2c900aa284e7f23cf932a057f51e961866816aefc1c94ac350"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+          "line_end": 75,
+          "line_start": 32,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+          "unit_artifact_relpath": "depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+          "unit_bytes": 2999,
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "unit_sha256": "37d5e38462cdf3dad0c89728929c4e815fb1762d5dabd150f30e577cfe14de8a",
+          "unit_type": "motivation_and_reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The passage performs a bridge construction: it keeps the individually introduced prime-indexed operators p^Box conceptually separate from their infinite adelic product, which the authors say has no obvious mathematical meaning, and uses the scalar Euler product only to motivate the distinct pseudodifferential symbol zeta(1/2+i Box). This gains a single analytic object whose zeros can organize a spectral interpretation, but it neither defines the prime-wise operator product nor retains that product as an independently composed construction. The previewed equivalence with a sum of Klein–Gordon Lagrangians remains conditional on the Riemann hypothesis, and the passage does not establish the functional-calculus details needed to make the operator proposal rigorous; Voronin universality motivates attention to zeta but supplies neither burden.",
+            "nonparaphrase_operation": "Separates three representations that the motivating analogy could otherwise conflate—individual prime-local factors, their undefined infinite operator product, and a separately proposed global zeta symbol—and identifies the gain in analytic spectral organization together with the loss of any defined factor-by-factor composition.",
+            "quality_reason": "Accepted after bounded revision: the exact span supports both the concrete mathematics and the representation-level operation. The revision removes the imprecise imported Euler-product domain claim, preserves the fact that each p^Box is introduced even though their product is not defined, and treats the vertically split one-half as legible without reconstructing any missing formula or hypothesis.",
+            "source_support": "The span explicitly introduces p^Box for each prime, labels the product over primes as having no obvious mathematical meaning, displays the scalar Euler product, and then proposes zeta(1/2+i Box) together with a Euclidean Laplacian analogue. It states that the Klein–Gordon mass decomposition follows under the assumption of the Riemann hypothesis and that the spectrum differs if the hypothesis is false.",
+            "speculation_status": "The displayed operators, the lack of an obvious meaning for their product, and the conditional spectral claim are source facts. Reading the zeta symbol as a compression or replacement of prime-indexed motivation is a supported conceptual inference, not an operator identity. No evidence for the Riemann hypothesis or proof from universality is claimed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        }
+      ]
+    }
+  ],
+  "model_visible_packet_sha256": "7d2ddfdf2f529fe02e45e3edf6b8deaa0f16e618c6a0b95ecd8a983096383721"
+}
