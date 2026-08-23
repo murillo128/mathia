@@ -158,15 +158,15 @@ class ExecutionProvenanceTest(unittest.TestCase):
                 "agnostic_fresh_authoritative_rows": agnostic_fresh,
                 "agnostic_requires_rerun": 102,
                 "agnostic_rows": 102 + agnostic_fresh,
-                "archived_artifact_bindings": 969,
+                "archived_artifact_bindings": 874,
                 "legacy_fresh_authoritative_rows": legacy_fresh,
                 "legacy_context_rows": 290 + legacy_fresh,
                 "legacy_requires_rerun": 263,
-                "live_artifact_bindings": 898 + fresh_bindings,
-                "riemann_audit_requires_rerun": 32,
-                "riemann_audit_rows": 199 + audit_fresh,
-                "riemann_decision_rows": 1864,
-                "riemann_decisions_reconciliation_pending": 1004,
+                "live_artifact_bindings": 872 + fresh_bindings,
+                "riemann_audit_requires_rerun": 0,
+                "riemann_audit_rows": 169 + audit_fresh,
+                "riemann_decision_rows": 2211,
+                "riemann_decisions_reconciliation_pending": 0,
                 "riemann_fresh_authoritative_rows": audit_fresh,
             },
         )
@@ -175,12 +175,44 @@ class ExecutionProvenanceTest(unittest.TestCase):
         states = Counter(row["state"] for row in self.decisions)
         self.assertEqual(
             states,
-            Counter({"predecessor": 860, "reconciliation-pending": 1004}),
+            Counter(
+                {"predecessor": 892, "active-carried": 18, "active-fresh": 1301}
+            ),
         )
         execution_ids = {row["ledger_id"] for row in self.audit}
         self.assertTrue(
             all(row["execution_ledger_id"] in execution_ids for row in self.decisions)
         )
+
+    def test_riemann_active_audit_preserves_superseded_attempt_edges(self) -> None:
+        active = [
+            row
+            for row in self.audit
+            if row["stage"] == "active-fresh-audit"
+        ]
+        authoritative = {
+            row["agent_task_path"]: row
+            for row in active
+            if row["status"] == "authoritative"
+        }
+        superseded = {
+            row["agent_task_path"]: row
+            for row in active
+            if row["status"] == "superseded"
+        }
+        expected = {
+            "/root/riemann_audit_conrey2003_p01_fresh": (
+                "/root/riemann_audit_conrey2003_p01_retry_fresh"
+            ),
+            "/root/audit_w1803775934_p01": "/root/audit_w1803775934_p01_retry",
+        }
+        self.assertEqual(len(authoritative), 180)
+        self.assertEqual(set(superseded), set(expected))
+        for bad_path, retry_path in expected.items():
+            self.assertEqual(
+                superseded[bad_path]["superseded_by_thread_id"],
+                authoritative[retry_path]["thread_id"],
+            )
 
     def test_agnostic_plaintext_prompt_gap_is_not_overclaimed(self) -> None:
         historical = [row for row in self.agnostic if row["status"] != "authoritative"]
@@ -304,7 +336,7 @@ class ExecutionProvenanceTest(unittest.TestCase):
             )
         )
         self.assertEqual(
-            locations, Counter({"live": 898 + fresh_bindings, "archive": 969})
+            locations, Counter({"live": 872 + fresh_bindings, "archive": 874})
         )
 
     def test_live_then_archived_exact_artifact_resolution(self) -> None:

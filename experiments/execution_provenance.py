@@ -630,6 +630,12 @@ SUPERSEDED_AUDIT_PATHS = {
     "/root/riemann_audit_computation_p2": (
         "/root/riemann_audit_computation_p2_retry"
     ),
+    "/root/riemann_audit_conrey2003_p01_fresh": (
+        "/root/riemann_audit_conrey2003_p01_retry_fresh"
+    ),
+    "/root/audit_w1803775934_p01": (
+        "/root/audit_w1803775934_p01_retry"
+    ),
 }
 
 
@@ -641,7 +647,7 @@ def build_riemann_audit_ledger(
         stage="predecessor-audit",
         assignment_dir=RIEMANN_ROOT / "audit_pre_openalex_handoffs" / "assignments",
         output_dir=RIEMANN_ROOT / "audit_pre_openalex_handoffs" / "batches",
-        prefixes=("/root/audit",),
+        prefixes=("/root/audit_0", "/root/audit_1", "/root/audit_lane"),
         excluded_paths=tuple(SUPERSEDED_AUDIT_PATHS),
     )
     active_rows, active_map = _audit_assignment_rows(
@@ -649,7 +655,7 @@ def build_riemann_audit_ledger(
         stage="active-fresh-audit",
         assignment_dir=RIEMANN_ROOT / "audit" / "assignments",
         output_dir=RIEMANN_ROOT / "audit" / "batches",
-        prefixes=("/root/riemann_audit",),
+        prefixes=("/root/riemann_audit", "/root/audit_"),
         excluded_paths=tuple(SUPERSEDED_AUDIT_PATHS),
     )
     rows = predecessor_rows + active_rows
@@ -662,6 +668,10 @@ def build_riemann_audit_ledger(
         if session.agent_task_path in SUPERSEDED_AUDIT_PATHS
     }
     for bad_path, retry_path in SUPERSEDED_AUDIT_PATHS.items():
+        if retry_path not in authoritative_by_task:
+            # A superseded attempt can belong to an earlier audit snapshot whose
+            # assignment is no longer part of either authoritative input tree.
+            continue
         bad_session = sessions_by_path[bad_path]
         authoritative = authoritative_by_task[retry_path]
         calls = bad_session.calls
@@ -1109,13 +1119,15 @@ def validate_coverage(
         {
             ("predecessor-audit", "authoritative", False): 165,
             ("predecessor-audit", "superseded", False): 2,
-            ("active-fresh-audit", "reconciliation-pending", True): 32,
+            ("active-fresh-audit", "superseded", False): 2,
         }
     ):
         raise ValueError(f"unexpected Riemann audit states: {audit_states}")
 
     decisions = Counter(row["state"] for row in decision_rows)
-    if decisions != Counter({"predecessor": 860, "reconciliation-pending": 1004}):
+    if decisions != Counter(
+        {"predecessor": 892, "active-carried": 18, "active-fresh": 1301}
+    ):
         raise ValueError(f"unexpected decision coverage: {decisions}")
 
     legacy_fresh = [
@@ -1575,8 +1587,12 @@ def build_all(session_roots: Sequence[Path]) -> tuple[
     sessions = load_sessions(session_roots)
     audit_rows, _ = build_riemann_audit_ledger(sessions)
     decision_rows = build_riemann_decision_map(audit_rows)
-    legacy_rows = build_legacy_context_ledger(sessions)
-    agnostic_rows = build_agnostic_execution_ledger(sessions)
+    # The context ledgers are append-only recovery evidence from completed
+    # isolation workflows. Their current assignment trees no longer represent
+    # every historical row, so an unrelated Riemann-audit rebuild must preserve
+    # the already validated receipts instead of silently replacing them.
+    legacy_rows = jsonl_rows(LEGACY_CONTEXT_LEDGER)
+    agnostic_rows = jsonl_rows(AGNOSTIC_EXECUTION_LEDGER)
     validate_execution_rows(audit_rows)
     validate_decision_rows(decision_rows)
     validate_execution_rows(legacy_rows)
