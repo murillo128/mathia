@@ -1,0 +1,172 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1569098431",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1569098431_44f0cde1_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Matching the binomial kernel for c_k to the exponential kernel for R(k)/k, then feeding that approximation through the exact transform, makes R approximately reconstructible from its integer values and isolates the reconstruction error.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w1569098431_u05",
+          "full_openalex_w1569098431_u08",
+          "full_openalex_w1569098431_u10",
+          "full_openalex_w1569098431_u11"
+        ],
+        "proposed_limit": "The final self-entanglement relation remains approximate and the paper leaves open whether it is strong enough to prove the Riesz growth bound.",
+        "source_id": "openalex_w1569098431",
+        "synthesis_id": "riemann_v2_within_195ce048a20b70ab07e243f6",
+        "title": "Kernel matching yields a self-consistency view of R"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the first Kummer-accelerated formula; lines 195--207 define the Mobius weights and give the repeated-acceleration variant used by the carried computational unit.",
+          "line_end": 109,
+          "line_start": 98,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula (6) is legible in extraction; interpretation depends on reading its displayed sum together with the surrounding prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces a slowly convergent zeta-reciprocal power series by a Mobius-weighted exponential sum, a representation change that later makes comparison with the binomial formula for c_k possible.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mobius-exponential representation of the Riesz function",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u05.txt",
+          "unit_bytes": 661,
+          "unit_id": "full_openalex_w1569098431_u05",
+          "unit_sha256": "04d7f42f4ad24dbaf158101e90eb7f1a1934da6c1c01e9989c36e6df9a04d769",
+          "unit_type": "accelerated representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For positive x, the source replaces slowly convergent series (2) by R(x)=x sum_{n>=1} mu(n)n^-2 exp(-x/n^2). Interpreting this as a weight-kernel decomposition isolates the arithmetic dependence in mu(n)/n^2 from the x-dependence in the exponential kernel. The representation gains an accelerated evaluation form but does not itself supply a growth bound, derive Kummer acceleration, or quantify the convergence gain.",
+            "nonparaphrase_operation": "Decomposes the displayed summand into fixed arithmetic weights and a variable-dependent kernel, and identifies precisely what that representation change exposes and leaves unproved.",
+            "quality_reason": "Accepted after revision because the positive-x formula and local acceleration claim are legible and support the weight-kernel interpretation; imported characterizations and later comparison claims were removed.",
+            "source_support": "The exact span states that series (2) converges very slowly for positive x and displays the Kummer-accelerated Mobius-exponential formula (6). It does not identify series (2) as a zeta-reciprocal series or discuss a later discrete-kernel comparison.",
+            "speculation_status": "No speculation is needed for the displayed identity; the weight-kernel reading is explicitly an interpretation. Any convergence-rate claim would require evidence absent from this span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The preceding numerical fit motivates the approximation but is not required for the kernel comparison; the appendix supplies the rigorous error estimate.",
+          "line_end": 444,
+          "line_start": 424,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formulas (28)--(29) are central and recoverable; the approximation is explicitly heuristic in this span.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites c_k as a Mobius-weighted binomial-kernel sum and approximates (1-1/n^2)^k by exp(-k/n^2), directly matching the accelerated Riesz representation at x=k. This supplies an interpretable de-Poissonization heuristic later made quantitative.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Binomial-to-exponential explanation of c_k approximately equal to R(k)/k",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u08.txt",
+          "unit_bytes": 1229,
+          "unit_id": "full_openalex_w1569098431_u08",
+          "unit_sha256": "4e5e3a2fbaa379fa30c86ee3269693a4af353661a401adec136cb337801f1623",
+          "unit_type": "kernel approximation heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The useful invariant is the Möbius-weighted summation measure; only the kernel changes. Binomial-to-exponential replacement converts a discrete-time decay mechanism into the continuous kernel used by R, revealing why the two quantities should track each other.",
+            "nonparaphrase_operation": "The paired kernels (1-1/n^2)^k and exp(-k/n^2), under weights μ(n)/n^2, are the concrete bridge between c_k and R(k)/k.",
+            "quality_reason": "The span writes c_k as a Mobius-weighted binomial-kernel sum and explicitly labels the replacement of (1-1/n^2)^k by exp(-k/n^2) for large k as heuristic. Comparison with formula (6) at x=k gives c_k approximately R(k)/k, and the candidate correctly declines to infer a uniform error bound from termwise kernel resemblance.",
+            "source_support": "The source writes c_k=sum_{n>=1} μ(n)n^-2(1-1/n^2)^k and, for large k, heuristically replaces the binomial kernel by exp(-k/n^2). Comparing with the accelerated Riesz formula at x=k gives c_k≈R(k)/k.",
+            "speculation_status": "This span labels the comparison heuristic. Pointwise resemblance of the kernels does not by itself control the infinite weighted sum uniformly; the quantitative error is supplied only later in the appendix. Formula (29) has fraction-placement risk in extraction, but comparison with formula (6) at x=k fixes the intended exponential kernel. No error rate is proved here. Treating the common weights as the preserved object and the binomial-to-exponential change as a discrete-to-continuous bridge is a source-anchored conceptual reading. Formula (29) has exponent and fraction-placement risk, but the stated comparison with formula (6) fixes the intended exponential kernel; the missing plot is not needed for this mechanism."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span also records the underlying comparison of two zeta-reciprocal sums and labels the final proof relevance as an open question.",
+          "line_end": 640,
+          "line_start": 612,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula (39) is recoverable but its exact normalization depends on the displayed layout; reuse should verify the e^x/x factor against the source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substituting c_k approximately equal to R(k)/k into the exact generating transform yields an approximate reconstruction of R(x) from its positive-integer values, turning the continuous-discrete bridge into a potential self-consistency constraint rather than merely a criterion equivalence.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Discrete self-entanglement constraint for the Riesz function",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u10.txt",
+          "unit_bytes": 1495,
+          "unit_id": "full_openalex_w1569098431_u10",
+          "unit_sha256": "0a241a518e4a5d79724b107181444db6ab46d14e14e545b0ff0903a83426d1d2",
+          "unit_type": "approximate self-consistency relation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The relation reframes R as approximately fixed by a Poisson-weighted reconstruction operator on its positive-integer values. It exposes a possible constraint coupling continuous behavior to discrete samples rather than merely restating equivalence of growth criteria.",
+            "nonparaphrase_operation": "The intermediate data are the samples R(k)/k; the exponential generating kernel x^k/k! synthesizes them into a continuous function, with the factor e^x/x setting the normalization.",
+            "quality_reason": "The span reports a numerically vanishing difference between two reciprocal-zeta sums and then substitutes R(k)/k for c_k in (17) to obtain (e^x/x)R(x) approximately sum_k (R(k)/k)x^k/k!. It calls the resulting dependence on positive-integer samples 'entangled' and leaves usefulness for proving the Riesz bound as an open question; the candidate retains the approximation and proof boundary.",
+            "source_support": "After noting a numerically vanishing difference between two reciprocal-zeta sums, the source substitutes R(k)/k for c_k in the exact transform and obtains the approximate relation (e^x/x)R(x)≈sum_k (R(k)/k)x^k/k!.",
+            "speculation_status": "The self-entanglement is only approximate and inherits the unquantified substitution in this span. No stability theorem or growth consequence is derived, and the authors explicitly leave its usefulness for proving the Riesz bound as an open question. The e^x/x factor is recoverable, but formula (39) has display-normalization and starting-index risk, especially at k=0; exact formal reuse should be scan-checked. Reframing the relation as an approximate Poisson-weighted self-consistency operator is interpretive but follows by rearranging the displayed exponential generating relation. Formula (39) has normalization and starting-index risk: the extracted sum begins at k=0 despite the factor R(k)/k, while the prose says positive integers. The candidate flags this rather than silently repairing it."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This appendix supplies the deferred proof of formula (26); lower-order exponential and k^{-5/2} terms are retained before simplifying for k>16.",
+          "line_end": 737,
+          "line_start": 646,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several displays have fraction and radical layout risk, but the prose and final inequality make the leading k^{-3/2} bound recoverable; exact constants should be scan-checked before formal reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Controls the difference between exponential and binomial kernels by removing Mobius signs, bounding a unimodal summand by its maximum plus an integral, and estimating that integral through Gaussian and beta-function asymptotics. The resulting leading O(k^{-3/2}) error is the quantitative de-Poissonization step enabling the reverse criterion implication.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Uniform kernel-error bound for c_k versus R(k)/k",
+          "unit_artifact_relpath": "depth/units/full_openalex_w1569098431_u11.txt",
+          "unit_bytes": 4941,
+          "unit_id": "full_openalex_w1569098431_u11",
+          "unit_sha256": "0b2519710a987cb6e7c8ef99c99e30abb132b1c306e0ff836bea8bd7026d6cec",
+          "unit_type": "quantitative approximation proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1569098431_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is the quantitative de-Poissonization mechanism. Kernel mismatch is isolated as the sole error object, then continuous integral asymptotics convert local binomial-versus-exponential discrepancy into a uniform coefficient bound.",
+            "nonparaphrase_operation": "The central bridge is the positive error profile h(x); unimodal sum-to-integral comparison connects the discrete n-sum to Gaussian and Euler-beta representations whose asymptotics are controllable.",
+            "quality_reason": "The appendix bounds |R(k)/k-c_k| after discarding Mobius signs, defines the positive kernel error h, and uses unimodality to bound its discrete sum by a maximum plus an integral. The Gaussian and beta-integral estimates yield the displayed leading (3 sqrt(pi)/16)k^-3/2 term with lower-order terms, and the prose says that for k>16 retaining the leading order suffices.",
+            "source_support": "The proof bounds |R(k)/k-c_k| by replacing |μ(n)| with 1 and summing h(n)=n^-2[exp(-k/n^2)-(1-1/n^2)^k]. Positivity and unimodality give sum h(n) <= max h+integral h; after y=1/x, Gaussian and beta-integral estimates yield a leading (3 sqrt(π)/16)k^-3/2 term with lower-order k^-2, k^-5/2, and k^-3 terms. For k>16 the leading order suffices.",
+            "speculation_status": "Removing Möbius signs sacrifices possible cancellation and may be non-sharp. The result controls only c_k versus the integer sample R(k)/k and supplies no Riesz growth estimate by itself; exact constants should not be promoted to formal claims without checking the displayed formulas. Several radicals and fractions are layout-risky in extraction, but the prose and final inequality robustly support the O(k^-3/2) leading rate and the k>16 simplification. Calling h the bridge from local binomial-exponential mismatch to a uniform coefficient estimate and naming the argument quantitative de-Poissonization are well anchored conceptual readings. Several radicals, exponents, and fractions are layout-sensitive; the prose and final inequality robustly support the O(k^-3/2) rate, while exact constants require scan verification as the candidate says."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_48ce17d7ad7dd9da95607362d2b2630e6ca163bc245bbaebe8b7d62bd6d6d345",
+        "dossier_sha256": "5cbc6bbde61aab173909c075aa08d91e4d7aaefa017a13ab339e052c02e5ad6e"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9b7f5f610d9be5c76deb9c64ca01d979ffedcfe3521677e7d50648fc2b811e10"
+}

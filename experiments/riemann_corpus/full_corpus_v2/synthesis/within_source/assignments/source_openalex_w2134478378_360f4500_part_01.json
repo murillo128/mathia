@@ -1,0 +1,104 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2134478378",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2134478378_360f4500_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The minimum-type covariance is made concrete by decomposing fluctuation into shared history plus independent increments, expressed once as Brownian/disordered components and once as diffusion or recursion on an ancestral tree.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2134478378_u05",
+          "full_openalex_w2134478378_u15"
+        ],
+        "proposed_limit": "The constructions realize the Gaussian covariance law; they do not derive the zeta theorem independently of the analytic arguments.",
+        "source_id": "openalex_w2134478378",
+        "synthesis_id": "riemann_v2_within_1dda9ab52cc4b08b4c69ae6a",
+        "title": "Covariance positivity through shared ancestry"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This interprets the covariance immediately after Theorem 1.1 and overlaps the opening of the carried zero-counting span only where the paper changes viewpoint.",
+          "line_end": 207,
+          "line_start": 138,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The displayed two-point normal mixture and covariance kernel have minor glyph loss; the Brownian/disorder construction and Fubini contradiction are clear in prose. Scan verification is advisable for the piecewise kernel typography.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The two-point examples expose how correlation varies with logarithmic separation, while the decomposition X_delta=B_delta+D_{1-delta} separates shared hierarchical fluctuation from independent disorder and proves nonmeasurability.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Scale-indexed covariance as Brownian motion plus total disorder",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2134478378_u05.txt",
+          "unit_bytes": 3852,
+          "unit_id": "full_openalex_w2134478378_u05",
+          "unit_sha256": "54b6a80d54e05fd29b0d6045f973893b66be0123e363fbf7c2d87be63e60b78e",
+          "unit_type": "Gaussian process representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2134478378_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The covariance separates common multiscale history from idiosyncratic fluctuation. The minimum-type off-diagonal dependence is therefore not merely a matrix formula but the overlap of shared Brownian evolution, while the disorder repairs each marginal variance without adding cross-correlation.",
+            "nonparaphrase_operation": "The bridge object is the Brownian-plus-disorder representation. It makes positive semidefiniteness and scale overlap transparent and converts an abstract finite-dimensional Gaussian kernel into explicit shared and independent components.",
+            "quality_reason": "The span explicitly gives finite-dimensional Gaussian convergence indexed by logarithmic separation, the construction X_delta=B_delta+D_{1-delta} with independent Brownian and totally disordered parts, and the Fubini contradiction excluding a measurable version. The candidate preserves the finite-dimensional-versus-functional boundary and does not claim that the representation proves the analytic zeta CLT. Phrases such as 'bridge object' and 'makes ... transparent' are somewhat templated, but here they name a concrete decomposition and a checkable covariance operation rather than substituting style for content.",
+            "source_support": "Normalized finite collections of shifted log-zeta values have Gaussian limits whose correlations depend on logarithmic separation. The source realizes the limiting process as X_delta=B_delta+D_{1-delta}, with B Brownian and D an independent totally disordered Gaussian family of variance indexed by 1-delta; a Fubini argument rules out a measurable version of D and hence of X.",
+            "speculation_status": "The corollary asserts finite-dimensional convergence, not functional convergence, and the source explicitly proves that the limit has no measurable version. This representation interprets the covariance but does not supply the analytic proof of the zeta central limit theorem. The extracted two-point coefficient and piecewise kernel lose comparison and square-root glyphs. The qualitative covariance and nonmeasurability claims are secure from the prose and X_delta construction, but exact typography should be checked against a scan. Reading Brownian covariance as shared scale history and disorder as marginal variance without cross-correlation is a valid consequence of the displayed independent-sum construction. The claim that the construction makes positive semidefiniteness transparent is an interpretive consequence: an explicitly constructed Gaussian process necessarily has a positive-semidefinite covariance kernel. The two-point mixture coefficient and the equality/inequality cases in the printed kernel are glyph-degraded; the candidate appropriately avoids asserting their exact typography and requests scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes both the continuous Le Gall tree analogy and the finite Gaussian construction needed for the paper's covariance matrix.",
+          "line_end": 1469,
+          "line_start": 1374,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on formulas (4.1)-(4.3) and the ancestor/father definitions; one formula-number cross-reference appears inconsistent in extraction, but the construction and covariance claim are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section explains positive semidefiniteness structurally: minimum covariance is common ancestral Brownian history, and the discrete father map yields an explicit independent-increment recursion with the prescribed covariance.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Minimum-along-path covariance realized by a Gaussian tree",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2134478378_u15.txt",
+          "unit_bytes": 4487,
+          "unit_id": "full_openalex_w2134478378_u15",
+          "unit_sha256": "e464f1d97867c85d8dd810bd358ce47609fc9586b2e5322dcb26b7c46f274c3f",
+          "unit_type": "branching covariance construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2134478378_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A min-kernel is an overlap kernel: its value is the depth of the last common ancestor. The tree representation explains both covariance positivity and why independent increments after branching do not affect cross-covariance.",
+            "nonparaphrase_operation": "The bridge runs from an interval-minimum covariance matrix to a genealogical tree, continuously through Le Gall's quotient construction and discretely through the father map and independent-increment recursion.",
+            "quality_reason": "The span explicitly asks for positive semidefiniteness of a truncated interval-minimum kernel and reduces it to constructing a Gaussian vector with covariance inf_{i<=k<=j} c_k. It supplies both the continuous Le Gall quotient-tree/Brownian construction and the discrete ancestor, father-map, and independent-increment recursion with variance c_i-c_{p(i)}. The candidate preserves the continuity removal of the distinct-c_i simplification and the separate diagonal adjustment needed to recover the original truncated kernel. Although 'bridge' and 'overlap kernel' are interpretive labels, the analysis spells out the tree quotient and increment recursion, so it is not a generic representation claim.",
+            "source_support": "The source asks why the matrix with diagonal entries one and off-diagonal entries given by a truncated interval minimum is positive semidefinite. It reduces to constructing covariance E(X_i conjugate X_j)=inf_{i<=k<=j}c_k. In the continuous model, a contour e identifies points sharing the same interval infimum and Brownian diffusion on the resulting tree has covariance equal to that infimum. Discretely, ordering distinct c_i values, assigning each index its nearest ancestor, and adding independent Gaussian increments of variance c_i-c_{p(i)} recursively constructs the required vector.",
+            "speculation_status": "Distinct c_i are assumed only to simplify the discrete construction and are removed by continuity. The tree realizes the Gaussian covariance law but does not derive the zeta or matrix limit theorem; the diagonal adjustment used to recover the original truncated kernel is a separate algebraic step. One formula-number reference appears inconsistent and some index/conjugation glyphs are noisy, but the ancestor definition, variance increments, and covariance mechanism are clear. Interpreting the minimum as common ancestral height and the kernel as overlap before branches split is exactly the covariance mechanism of Brownian diffusion and the independent-increment recursion. Positive semidefiniteness becoming generative rather than a matrix calculation is a justified conceptual consequence of explicitly constructing a Gaussian vector with that covariance. A formula-number cross-reference and some conjugation/index glyphs are inconsistent, but the ancestor relation, increment variances, and claimed covariance are clear in prose and formulas."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_258303ae1207d6cc097675af5aedbbc5c705ce2ca52529c3e82852cf50fb2f75",
+        "dossier_sha256": "f6f0c96c75b9bbe861060004315c51c1bc02769d78cd92a94352c343258ad244"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2363530f81e7b6d40bc7a93cd4f318b7e07210b1137f6bdf1d06762d20dfa36e"
+}

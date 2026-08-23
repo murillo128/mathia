@@ -1,0 +1,303 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2963782307",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2963782307_76355239_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Jensen/Cauchy bounds deteriorate with distance from the critical line, so splitting the contour and optimizing an explicit buffer converts local analytic growth estimates into the final log-log error scale.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2963782307_v2u10",
+          "full_openalex_w2963782307_v2u11",
+          "full_openalex_w2963782307_v2u12"
+        ],
+        "proposed_limit": "The optimized rate is conditional on the cited RH bounds and on this solver's available estimate for arg G_k.",
+        "source_id": "openalex_w2963782307",
+        "synthesis_id": "riemann_v2_within_91d66d8f89e204ac2eba57cd",
+        "title": "The critical-line buffer is a tunable bridge between local growth and global contour error"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The six control-character logical breaks at 1199-1213 split two displayed bounds but do not obscure the surrounding induction or final conclusion.",
+          "line_end": 1232,
+          "line_start": 1065,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense formula and circle-geometry dependency; checked prose fixes the Jensen disk, gap epsilon_0, induction, and final bound.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof converts argument variation into zeros of a symmetrized analytic function, applies Jensen, bootstraps zeta^(k)/zeta bounds by Cauchy's formula, and chooses the radius slack to obtain an explicit dependence on the critical-line gap.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeros of a symmetrized real-part function control arg(G_k/zeta) away from the critical line",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u10.txt",
+          "unit_bytes": 8567,
+          "unit_id": "full_openalex_w2963782307_v2u10",
+          "unit_sha256": "da1e6515bb2d9e75beb8cf4120b715578d6bcd23ceae6315197a00935b8833de",
+          "unit_type": "Jensen-Cauchy argument bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof replaces a continuous phase problem by discrete crossing counts, then replaces those counts by analytic growth. The adjustable disk slack exposes how the estimate worsens as the evaluation point approaches the critical line.",
+            "nonparaphrase_operation": "H_k is the central bridge object: symmetrization makes real-part crossings into analytic zeros, Jensen maps zeros to boundary growth, and Cauchy differentiation maps first-order zeta control to kth-order control.",
+            "quality_reason": "The proof defines the symmetrized analytic H_k, uses its zeros to bound real-part crossings and hence argument variation, applies Jensen, and bootstraps zeta^(k)/zeta bounds from zeta'/zeta by Cauchy differentiation and induction. Choosing the Jensen slack as half the critical-line gap yields the displayed reciprocal-gap argument bound with logarithmic numerator.",
+            "source_support": "For fixed T the proof defines H_k(z) as half the sum of (G_k/zeta)(z+iT) and (G_k/zeta)(z-iT), so on the real segment its zeros control sign changes of Re(G_k/zeta) and hence arg(G_k/zeta). Jensen's theorem bounds the number of such zeros by a circle average of log|H_k|. Starting from zeta'/zeta=O(log T/epsilon_0), Cauchy's formula and induction give zeta^(k)/zeta=O((log T)^k/epsilon_0^k) in the disk. Choosing the Jensen radius slack proportional to sigma-1/2-epsilon_0 produces an argument bound with denominator that gap and numerator log(log T/epsilon_0).",
+            "speculation_status": "The disk must stay in a zero-free region to the right of 1/2+epsilon_0, and epsilon_0 and T satisfy explicit size restrictions. The constants depend on a_k and t_k, and deterioration near the critical line is intrinsic to this bound, not evidence of singular behavior of the target quantity itself. Control characters split some displayed inequalities, but the Jensen disk, Cauchy induction, gap parameter, and final dependence are recoverable from the surrounding prose and equations. The candidate correctly identifies the chain phase variation to crossing count to analytic zeros to boundary growth, and treats gap deterioration as a feature of this estimate rather than of the target itself. Control characters split several inequalities, but the disk geometry, epsilon_0 restriction, induction, and final dependence remain recoverable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lemma 2.5 delegates details to the cited first-derivative proof, so this unit records a stated dependency rather than pretending the omitted proof appears here.",
+          "line_end": 1279,
+          "line_start": 1238,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula dependent near the critical-line exponent; prose makes the Cauchy-transfer mechanism unambiguous.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A near-critical-line bound for zeta is converted by Cauchy's integral formula into a kth-derivative bound, which is then used as the input to the stated argument estimate for G_k.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cauchy differentiation transfers RH growth control from zeta to zeta^(k) and hence arg G_k",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u11.txt",
+          "unit_bytes": 2332,
+          "unit_id": "full_openalex_w2963782307_v2u11",
+          "unit_sha256": "39cbe67be6ad61061f178fd59a696ff24f1bf77d9dc3f9d1e1713fe409244c54",
+          "unit_type": "growth-to-argument transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analyticity makes derivative control a neighborhood property: growth of the base function on a circle can be transferred to higher derivatives with a radius cost. The resulting local growth estimate is then used by a separate zero/argument method.",
+            "nonparaphrase_operation": "The Cauchy circle is the bridge from values of zeta to zeta^(k). Lemma 2.4 is in turn the declared bridge input replacing the corresponding first-derivative lemma in the cited argument proof.",
+            "quality_reason": "Lemma 2.4 explicitly transfers a cited RH growth bound for zeta to zeta^(k) by Cauchy's integral formula on a small circle and states the resulting exponential bound. Lemma 2.5 states the near-critical-line arg G_k estimate and explicitly delegates its detailed proof to the cited first-derivative argument with Lemma 2.4 substituted.",
+            "source_support": "Lemma 2.4 starts from a cited RH bound for |zeta(s)| in a neighborhood of the critical line and applies Cauchy's integral formula on a small circle to obtain |zeta^(k)(sigma+it)| bounded by an exponential involving (log T)^(2(1-sigma))/log log T and (log T)^(1/10), uniformly on the stated sigma and t ranges. Lemma 2.5 then states arg G_k(sigma+iT)=O_{a_k}((log T)^(2(1-sigma))/(log log T)^(1/2)) for 1/2 at most sigma at most 3/4.",
+            "speculation_status": "The detailed proof of Lemma 2.5 is absent from this source span and is referred to Akatsuka; therefore this unit supports the stated dependency and result, not an internal reconstruction of that argument. Both lemmas are RH-conditional and range-restricted. The principal exponents and ranges are readable, though some extracted fractions in the circle radius are flattened. The delegation of Lemma 2.5's details is unambiguous. The neighborhood-to-derivative and growth-to-argument bridge language accurately distinguishes the proved Cauchy step from the delegated argument step. Some radius and range fractions are flattened; the candidate appropriately marks the proof delegation and avoids reconstructing it."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Control-character line breaks at 1293-1334 fragment several inequality symbols, but the split, choice of epsilon_0, resulting estimate, and endpoint limiting argument remain recoverable.",
+          "line_end": 1459,
+          "line_start": 1287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies on the displayed integral split and asymptotic comparison; endpoint multiplicity is formula sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof combines two bounds on complementary sigma ranges, chooses epsilon_0 proportional to 1/log T to obtain the squared log-log error, and uses T±epsilon comparisons so zeros on the terminal ordinate do not invalidate the theorem.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Split the argument integral, optimize the buffer, and perturb exceptional ordinates",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u12.txt",
+          "unit_bytes": 10749,
+          "unit_id": "full_openalex_w2963782307_v2u12",
+          "unit_sha256": "11f98bee09b1431f14e9a748239bc068156b4b74a8179186d3e12a5821209052",
+          "unit_type": "buffer optimization and exceptional-height repair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, the residual integral of arg(G_k/zeta) is split at sigma=1/2+2 epsilon_0 so that two estimates with different valid ranges can be composed. The proof chooses the admissible value epsilon_0=1/(4 log T); this makes the near-critical estimate from Lemma 2.5 and the RH arg-zeta bound, together with the away-from-line estimate from Lemma 2.3, fit an O((log log T)^2) total bound. This is a sufficient compatibility choice, not a demonstrated balance or optimum. Substitution into Proposition 2.2 yields the weighted derivative-zero formula. Comparing that formula at zero-free heights T-epsilon and T+epsilon then bounds the aggregate weighted contribution of zeros exactly at height T by the same error scale, removing the terminal-height restriction. The construction gains access to complementary analytic regimes and an inclusive endpoint statement, but it neither improves the error nor locates or individually controls terminal zeros; its proof burden remains RH, the preceding argument estimates, and admissible nearby heights.",
+            "nonparaphrase_operation": "Decomposes one contour error into near-line and away-from-line regimes and identifies the cutoff as an interface parameter satisfying both estimates; separately reframes endpoint perturbation as a transfer from contour admissibility to inclusive counting rather than as a better zero estimate.",
+            "quality_reason": "Accepted because the split, admissible cutoff, resulting error scale, and endpoint comparison are explicit and survive the extraction damage. The revision removes the critic-identified overclaim that the two costs are balanced and preserves the conditional assumptions and remaining limitations.",
+            "source_support": "The span explicitly splits the sigma integral at 1/2+2 epsilon_0, invokes Lemmas 2.3 and 2.5 plus the cited RH bound for arg zeta, sets epsilon_0=1/(4 log T), and derives the O_k((log log T)^2) weighted sum formula (2.20). It then writes (2.20) at T+epsilon and T-epsilon, subtracts the two sums, and concludes that the weighted contribution with gamma^(k)=T is O_k((log log T)^2).",
+            "speculation_status": "Source-supported interpretation only. No cross-source claim is made, no balance or optimality is inferred, and the control-character-damaged inequalities and final threshold are not reconstructed."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4c561714e6e9b3228c4532f1b472269a1df15d7f044531af67abf2f5559e98db",
+        "dossier_sha256": "618d904e6c575e5512c20252253214e8b2169425ead0e4ccc60958247cd3d89e"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After exact contour bookkeeping supplies the main asymptotics, progress is controlled by a boundary-argument estimate—especially arg G_k—rather than by further manipulation of the main term.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2963782307_v2u09",
+          "full_openalex_w2963782307_v2u13",
+          "full_openalex_w2963782307_v2u14",
+          "full_openalex_w2963782307_v2u15"
+        ],
+        "proposed_limit": "This is a source-specific diagnosis under RH; the paper explicitly lacks quantitative information about the implied constant.",
+        "source_id": "openalex_w2963782307",
+        "synthesis_id": "riemann_v2_within_a42c7e5915d17ded446e6c76",
+        "title": "The formal main term is not the practical bottleneck"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Remarks 3 and 4 are retained because they explain the methodological choice not to collapse this integral into a generic O(log T) term.",
+          "line_end": 1049,
+          "line_start": 981,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Needs the assembled formula and integral bounds; prose clearly identifies the residual term.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substitution of all contour estimates yields the weighted zero formula and explicitly preserves, rather than prematurely bounds, the integral of -arg zeta+arg G_k that controls the final error.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Assembly of Proposition 2.2 leaves one top-edge argument integral as the improvable error channel",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u09.txt",
+          "unit_bytes": 3903,
+          "unit_id": "full_openalex_w2963782307_v2u09",
+          "unit_sha256": "b9b9de195a7532bb9471c45e9948e2a5596fef7d861da4693dcbfc4542e71d15",
+          "unit_type": "error-channel isolation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The assembled formula separates settled asymptotic structure from the live analytic bottleneck. Exact contour bookkeeping thus becomes a diagnostic: improving the theorem no longer requires re-deriving the main term, but strengthening a boundary-phase estimate.",
+            "nonparaphrase_operation": "A fixed-width Littlewood rectangle represents horizontal zero displacement as main asymptotics plus an integrated boundary argument. The pair -arg zeta+arg G_k is the residual error channel.",
+            "quality_reason": "The assembled proposition retains the integral of -arg zeta+arg G_k after all explicit main terms are collected. Remarks 3 and 4 expressly say this term was not collapsed into a generic O(log T) estimate because it controls the theorem's improvable error channel.",
+            "source_support": "Substituting the estimates for I_12 through I_15 into Littlewood's identity and taking b to 1/2 yields the weighted sum of beta^(k)-1/2. Its explicit terms are kT/(2pi) log log(T/2pi), a linear normalization term, -k Li(T/2pi), and (1/(2pi)) times the integral from 1/2 to a_k of -arg zeta(sigma+iT)+arg G_k(sigma+iT), plus O_k(1). The remarks explain that this integral was intentionally retained because it determines the improvable error.",
+            "speculation_status": "This proposition does not yet bound the residual integral sharply; RH is used only in the following lemmas for that purpose. The remarks compare proof strategies but do not establish an optimality claim. The assembled signs and roles are readable despite flattened fractions. Exact constants should be checked against the display, while the identification of the residual integral as the bottleneck is explicit. Describing exact contour bookkeeping as diagnosing the remaining bottleneck is directly licensed by the remarks. Exact constants and signs should be checked against the dense display; the residual integral's identity and role are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This exact span supplies the conclusion missing from the carried v1 cut while retaining the estimates that justify the mean-value limit.",
+          "line_end": 1672,
+          "line_start": 1493,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula and limit dependent; b=1/2-delta and b'=1/2-2delta must be distinguished.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof subtracts Littlewood identities at b and b', shows every difference term is O(delta) except the zeta and G_k argument averages, and lets delta tend to zero to obtain the unweighted count.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [
+            23,
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subtracting adjacent rectangles converts beta weights into boundary argument terms",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u13.txt",
+          "unit_bytes": 10076,
+          "unit_id": "full_openalex_w2963782307_v2u13",
+          "unit_sha256": "a1fad1e39e0701196738dcdc919f55d9ccd256455c33f18d81ad3a8ee6ee5bc9",
+          "unit_type": "shrinking-strip argument-principle conversion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "With b=1/2-delta and b'=1/2-2delta, subtracting the two Littlewood rectangle identities gives each enclosed derivative zero the exact weight difference delta, converting the beta-weighted statistic into pi delta times N_k(T)-N_k(t_k). After division by pi delta, smooth differences across the strip do not disappear: their first-order parts supply the finite main term or bounded O_k(1) contributions, with the F term J12 producing the displayed T/(2 pi) log(T/(4 pi))-T/(2 pi) contribution. In contrast, the two short argument averages converge as delta tends to zero to the boundary phases (1/(2 pi))arg zeta(1/2+iT) and (1/(2 pi))arg G_k(1/2+iT). Thus the shrinking-strip representation removes horizontal beta weights but transfers the unresolved error burden to critical-line arguments. The conversion depends on the chosen logarithmic branches, a zero-free terminal height, and keeping b and b' distinct until normalization and passage to the limit.",
+            "nonparaphrase_operation": "Interprets the adjacent-rectangle subtraction as a normalized finite difference and separates three mechanisms that ordinary restatement conflates: exact cancellation of beta dependence in zero weights, survival of smooth first-order terms after division, and convergence of short phase averages to boundary values.",
+            "quality_reason": "Accepted because the complete subtraction-to-limit calculation supports the finite-difference mechanism despite dense formula extraction. The revision applies the critic's correction by preserving the main and bounded first-order contributions after normalization while reserving the boundary-value limit specifically for the short argument averages.",
+            "source_support": "Equation (3.1) displays pi delta(N_k(T)-N_k(t_k)) after subtraction. The span estimates J3, J13, and J15 as O(delta), gives J12 explicitly to first order, retains the short arg-zeta and arg-G_k integrals in (3.2), and then applies the mean value theorem with b=1/2-delta and b'=1/2-2delta to obtain the final zero-count formula with both critical-line argument terms and O_k(1).",
+            "speculation_status": "Source-supported conceptual synthesis only. No claim is made that smooth terms vanish after normalization or that the boundary argument terms are independently controlled in this unit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Read with Proposition 3.1's boundary-argument formula supplied by the preceding unit.",
+          "line_end": 1697,
+          "line_start": 1673,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the two displayed argument estimates and the final error scale.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substitution identifies arg G_k as the dominant available error bound and repeats the endpoint perturbation logic to extend the count to every T at least 2.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Boundary argument estimates finish the zero count and perturbation removes exceptional heights",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u14.txt",
+          "unit_bytes": 1337,
+          "unit_id": "full_openalex_w2963782307_v2u14",
+          "unit_sha256": "1b86ae864f3b6951729334ede4797f167838e9454088e994ebf9ab06c483addf",
+          "unit_type": "argument-bound theorem completion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem's accuracy is selected by the weaker of two boundary-phase controls, not by its already exact main-term algebra. Perturbing the height regularizes the contour without changing the asymptotic class.",
+            "nonparaphrase_operation": "Proposition 3.1 is the bridge from phase bounds to zero counts; nearby admissible heights bridge the contour formula to exceptional terminal ordinates.",
+            "quality_reason": "The span states the critical-line arg G_k and arg zeta bounds, substitutes them into Proposition 3.1, and obtains the displayed zero-count error governed by the larger arg G_k scale. It then explicitly invokes nearby zero-free heights and absorption of the count increment for exceptional terminal ordinates.",
+            "source_support": "At sigma=1/2, Lemma 2.5 gives arg G_k(1/2+iT)=O_k(log T/(log log T)^(1/2)), while the cited RH estimate gives arg zeta(1/2+iT)=O(log T/log log T). Substitution into Proposition 3.1 yields N_k(T)=T/(2pi) log(T/(4pi))-T/(2pi)+O_k(log T/(log log T)^(1/2)). If zeta or zeta^(k) vanishes on the terminal line, the proof chooses nearby zero-free heights T plus or minus epsilon and absorbs the count increment, extending the formula to all T at least 2.",
+            "speculation_status": "The endpoint-increment argument is stated by analogy with Theorem 1 rather than repeated in detail. The estimate is RH-conditional, its implied constant depends on k, and this span does not show that the arg G_k scale is optimal. The two argument estimates and resulting error scale are readable. The artifact ends just before the final repeated display, but the bounded assignment context supplies that conclusion. The weaker-bound-controls-accuracy and height-perturbation-as-regularization language faithfully summarizes the two theorem-completion moves. The exact artifact ends at 'Therefore'; the assignment's bounded after-context supplies the repeated final display, and the candidate explicitly discloses this dependency."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is source-authored limitation evidence, not a claim inferred from the bibliography.",
+          "line_end": 1747,
+          "line_start": 1698,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Requires comparing the two displayed boundary-argument estimates; prose states the bottleneck directly.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The closing remark compares N_k(T) with the classical N(T), isolates the larger arg G_k bound as the reason for the weaker error, and records that even its implied constant is not currently understood.",
+          "source_id": "openalex_w2963782307",
+          "source_normalized_sha256": "1a74cd74c4d57aa79a80917b508db3c0c07c98ecff8911512a860c793e01343b",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The derivative zero-count error is governed by arg G_k, whose constant remains uncontrolled",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2963782307_v2u15.txt",
+          "unit_bytes": 2621,
+          "unit_id": "full_openalex_w2963782307_v2u15",
+          "unit_sha256": "6a9707c9e61ec3a2e94edcaea7428782bcf2f451d6f9cd4adfce59c9dbfb05ee",
+          "unit_type": "method comparison and open quantitative bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2963782307_v2u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Comparing homologous contour formulas identifies which representation component limits precision. The extra derivative factor G_k introduces a phase channel not present in the classical count, so improving main-term manipulation would not address the observed gap.",
+            "nonparaphrase_operation": "The boundary arguments S(T) and arg G_k(1/2+iT) provide a common comparison language for the two counting problems. They expose how derivative structure changes only the residual control problem after analogous main terms are extracted.",
+            "quality_reason": "Remark 6 compares the classical N(T) error S(T) with the Proposition 3.1 phase pair for N_k(T), gives the two RH bounds, and explicitly identifies arg G_k as determining the larger known derivative-count error. The source states that the estimate was best known at publication and that no information was available about the implied constant in the arg G_k bound; the candidate correctly time-bounds those claims and denies optimality.",
+            "source_support": "The remark compares N_k(T)=T/(2pi) log(T/(4pi))-T/(2pi)+O_k(log T/(log log T)^(1/2)) with the classical formula for N(T), whose error is S(T)=(1/pi)arg zeta(1/2+iT) and is O(log T/log log T) under RH. Proposition 3.1 shows that N_k(T) is governed by (1/(2pi))arg G_k(1/2+iT) plus the zeta argument; the former has the weaker O_k(log T/(log log T)^(1/2)) bound. The author records no information about its implied constant.",
+            "speculation_status": "The claims about the best available estimate and unknown constant are source-authored statements at the paper's publication time, not verified claims about the current literature. No lower bound or obstruction proves that the larger error is necessary. The comparative formulas and limitation statement are clear; epistemic uncertainty concerns present-day status, which this bounded source packet cannot establish. Using homologous boundary-phase formulas as a common comparison language and locating the residual-control bottleneck in the extra G_k channel is a substantive source-grounded reading. The formulas are readable despite flattened fractions; present-day literature status cannot be inferred from this 2015 source, a limitation the candidate already records."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4c561714e6e9b3228c4532f1b472269a1df15d7f044531af67abf2f5559e98db",
+        "dossier_sha256": "618d904e6c575e5512c20252253214e8b2169425ead0e4ccc60958247cd3d89e"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "cf890b644e056b4a3f9b79083ef3c27d3ca912ae7d8ce9dbadf1f69a8f83afdd"
+}

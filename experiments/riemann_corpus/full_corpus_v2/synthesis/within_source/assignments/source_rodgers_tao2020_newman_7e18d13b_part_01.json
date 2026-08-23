@@ -1,0 +1,776 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "rodgers_tao2020_newman",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_rodgers_tao2020_newman_7e18d13b_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Sharp control of H_t away from the real axis can be compressed into both macroscopic and mesoscopic zero-density information, with compactness recovering the finer scale that direct argument estimates do not.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rt2020_d01_complex_height_control",
+          "rt2020_d06_dominant_fourier_mode",
+          "rt2020_d08_deformed_zero_counts",
+          "rt2020_d10_compactness_local_count"
+        ],
+        "proposed_limit": "The transfer is proved only under Λ<t≤0 and at the logarithmic height/resolution supported by the saddle estimates; it is not a general zero-counting principle for arbitrary entire functions.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_51087b3e6a565df3a96067a8",
+        "title": "Complex-height asymptotics as a zero-density transfer channel"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span includes the section objective, all three estimates, and the methodological limitation that determines the large imaginary-height regime.",
+          "line_end": 424,
+          "line_start": 371,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed estimates (7)–(9) depend on recovered formula layout; the prose clearly fixes z=x−iκ log_+x and the roles of the bounds.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Lemma 4 isolates exactly the upper, lower-scale, and logarithmic-derivative information about H_t needed by the next section and explains why t<0 lacks the useful Dirichlet-series access available at t=0.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Complex-height control as the interface to zero counting",
+          "unit_artifact_relpath": "depth/units/rt2020_d01_complex_height_control.txt",
+          "unit_bytes": 3218,
+          "unit_id": "rt2020_d01_complex_height_control",
+          "unit_sha256": "ef68100efdf50b912602968a09e3ee65c9d5cafe13114414cf4787f63e89e0d0",
+          "unit_type": "analytic-bound-and-interface",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d01_complex_height_control.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Lemma 4 turns evaluation on the logarithmically lowered line z=x-iκ log_+ x into a three-part analytic interface: a broad upper bound, a sharper exponential magnitude scale when κ is sufficiently large, and a logarithmic-derivative asymptotic. Together these are stated as key inputs to the next section's Riemann-von Mangoldt type asymptotics, but the span does not assign a separate zero-counting mechanism to each estimate. The gain is usable control of H_t away from the real axis; the cost is a logarithmic-height regime, because for t<0 no usable series for 1/H_t or H_t'/H_t is available at substantially smaller height. The later application still requires Λ<t≤0, although the analytic estimates themselves could be extended to bounded negative t.",
+            "nonparaphrase_operation": "Compresses the three estimates into a single regime-sensitive interface while separating what the representation supplies from the unresolved proof burden: accurate negative-time evaluation is obtained only after moving to logarithmic imaginary height, and the conversion to zero-counting asymptotics remains downstream.",
+            "quality_reason": "Accepted after removing the unsupported argument-principle attribution and the one-to-one assignment of contour, nondegeneracy, and zero-density roles to (7)-(9); formula layout is sensitive, but the regimes and qualitative claims are recoverable.",
+            "source_support": "The source states (7)-(9) for z=x-iκ log_+ x and Λ<t≤0, with (8)-(9) requiring κ≥C', identifies them as key input for the next section's Riemann-von Mangoldt type asymptotics, and in Remark 5 explains both the t<0 series obstruction and the distinction between the wider possible analytic t-range and the Λ<t application.",
+            "speculation_status": "No cross-source claim or proof mechanism is asserted; the interface description is an explicit interpretation of the source's stated downstream role."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Q_{t,n} decomposition, uniform ratio bounds, huge-mode decay, comparison with t=0, and Borel–Carathéodory/Cauchy differentiation.",
+          "line_end": 1018,
+          "line_start": 836,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Detailed exponents and constants are formula-layer dependent; the mode separation and dominance mechanism are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The saddle estimates separate medium and huge n, show the n=1 contribution dominates the Fourier expansion, control both tails, and then use holomorphy to recover the logarithmic derivative.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-mode dominance yields sharp H_t asymptotics",
+          "unit_artifact_relpath": "depth/units/rt2020_d06_dominant_fourier_mode.txt",
+          "unit_bytes": 9960,
+          "unit_id": "rt2020_d06_dominant_fourier_mode",
+          "unit_sha256": "e2012285121693b46ddc63407d240ec63f4e48e8cfbcba76542d959690a9fbd9",
+          "unit_type": "dominant-term-and-tail-argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d06_dominant_fourier_mode.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Dominant-mode compression reduces an infinite oscillatory representation to one effective degree of freedom, while analyticity converts coarse real-part information into derivative information.",
+            "nonparaphrase_operation": "The Q_{t,n} decomposition bridges saddle control of individual integrals to sharp entire-function asymptotics; the ratio H_t/H_0 then bridges those asymptotics to the known t=0 logarithmic derivative.",
+            "quality_reason": "The proof separates non-huge and huge n, proves decay of Q_{t,n} relative to Q_{t,1}, and shows the tail is negligible through the negative real saddle estimate. It compares H_t/H_0 after sending t to zero and then uses a holomorphic logarithm, Borel-Caratheodory, and Cauchy's formula to obtain logarithmic-derivative control.",
+            "source_support": "Writing H_t as one half the sum of Q_{t,n}, the proof obtains saddle asymptotics for non-huge n, shows Q_{t,n}/Q_{t,1} decays strongly for n≥2 when y is a sufficiently large multiple of log_+ x, and bounds huge n by exponential decay from Lemma 6(iii). It compares the dominant term at t and 0 to estimate H_t/H_0, then applies Borel-Carathéodory and Cauchy's formula to differentiate a holomorphic logarithm.",
+            "speculation_status": "Dominance is proved only in the stated logarithmic-height, large-x regime with κ sufficiently large and Λ<t≤0. It is not a general claim that the first Fourier mode dominates H_t everywhere. The mode separation and holomorphic upgrade are secure; detailed exponents and constants in the extracted displays remain formula-layer dependent. Dominant-mode compression and the analytic upgrade from real-part control to derivative control accurately summarize two distinct mechanisms in the span. Detailed exponents, thresholds, and phases in (32)-(36) are formula-layer sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem statements and their geometric interpretation are kept together before the proofs.",
+          "line_end": 1220,
+          "line_start": 1190,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact error scales depend on displayed equations (48)–(52), but the prose records the additional log loss.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 9 and Corollary 10 show H_t zeros follow the same classical locations with one extra logarithmic loss, identifying the barely sufficient resolution for relaxation.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Negative-time zeros retain macroscopic and mesoscopic density",
+          "unit_artifact_relpath": "depth/units/rt2020_d08_deformed_zero_counts.txt",
+          "unit_bytes": 1836,
+          "unit_id": "rt2020_d08_deformed_zero_counts",
+          "unit_sha256": "5b0559cc431bc7f7db2bd50c7561d66e2401390f26065f66f30a040437f1c7fb",
+          "unit_type": "counting-theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d08_deformed_zero_counts.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A lossier analytic estimate still preserves the coarse equilibrium lattice and enough local density to seed the dynamical stage.",
+            "nonparaphrase_operation": "The zero-count statements bridge complex-height asymptotics to indexed particle locations for H_t, with ξ_j serving as the shared coordinate system across t.",
+            "quality_reason": "Theorem 9 states the global O(log_+^2 T) count and the mesoscopic interval count uniformly for bounded alpha under Lambda<t<=0. Corollary 10 gives x_j(t)=xi_j+O(log_+ xi_j) and the stated additive-error local spacing formula for k-j up to log_+^2 xi_j. The source explicitly says the resolution loses a logarithmic factor relative to t=0 and is only barely sufficient for later applications.",
+            "source_support": "Theorem 9 gives N_t([0,T])=Ψ(T)+O(log_+^2 T) and a uniform mesoscopic count on intervals of length α log_+ T for Λ<t≤0. Corollary 10 converts these counts to x_j(t)=ξ_j+O(log_+ ξ_j) and local spacing asymptotics for k-j up to log_+^2 ξ_j.",
+            "speculation_status": "The result resolves scales only down to o(log_+ ξ_j), worse by a logarithmic factor than at t=0; it gives no microscopic rigidity. It is restricted to Λ<t≤0 and bounded α. The theorem's qualitative and scale content are explicit; exact error formatting depends on displayed equations (48)-(52). Describing the result as preserving a coarse equilibrium coordinate system is grounded in the shared xi_j parametrization. Exact error formatting in (48)-(52) is display-sensitive, but the qualitative scales are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contradiction sequence, normalized functions, Montel limit, unique continuation, and boundary-contour error control.",
+          "line_end": 1381,
+          "line_start": 1296,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Normalization and scaling constants are display-dependent, but the compactness-to-rigidity chain is fully recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Failure of the local count would produce rescaled logarithms forming a normal family; complex-height asymptotics rigidify every limit to a linear profile, after which a rescaled argument-principle computation contradicts the assumed discrepancy.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A limiting analytic profile forces mesoscopic zero density",
+          "unit_artifact_relpath": "depth/units/rt2020_d10_compactness_local_count.txt",
+          "unit_bytes": 5524,
+          "unit_id": "rt2020_d10_compactness_local_count",
+          "unit_sha256": "f69895761faacf15432c3fd43e738d6536ba8b19bc8a7c543bce639ff339bd5d",
+          "unit_type": "compactness-and-rigidity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d10_compactness_local_count.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Compactness acts as a rigidity amplifier: approximate control on a remote complex region determines the only possible local analytic profile after rescaling.",
+            "nonparaphrase_operation": "The normalized logarithm bridges multiplicative entire-function asymptotics to additive holomorphic profiles; the final argument principle translates the rigid profile back into local zero density.",
+            "quality_reason": "The proof assumes a failed local count, rescales normalized holomorphic logarithms on the zero-free lower half-plane, and uses Montel to extract a limit. Estimate (9), convergence of derivatives, and unique continuation force F'=1/4 and the stated linear profile. Rescaled argument-principle contours and Jensen control of the short sides contradict the assumed discrepancy after delta is chosen and n tends to infinity.",
+            "source_support": "Assuming failure of the local count, the proof rescales around T_n by log_+ T_n and normalizes log H_{t_n} on the zero-free lower half-plane. Montel gives a limit F; estimate (9), Cauchy convergence, and unique continuation force F'(z)=1/4 and hence an explicit linear F. Rescaled argument-principle contours then give the expected main count, while Jensen bounds the short vertical sides, contradicting the assumed discrepancy.",
+            "speculation_status": "This is a contradiction proof for mesoscopic counts, not a construction of individual zeros. It uses zero-freeness off the real axis under Λ<t_n≤0, compactness on the lower half-plane, and boundary errors that vanish only after choosing δ and then n. The compactness-to-linearity chain is fully recoverable; a few rescaled contour factors near the end are extraction-sensitive. Calling compactness a rigidity amplifier is a non-paraphrase summary of the limit-profile mechanism. Some rescaled contour factors and conjugations are extraction-sensitive, but the limiting argument is recoverable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The formal gradient-flow intuition becomes rigorous after subtracting the slowly varying classical lattice, smoothly truncating interactions, proving approximate dissipation, and coupling it with coercivity.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rt2020_d11_zero_flow_relaxation_scale",
+          "rt2020_d12_gradient_flow_energy",
+          "rt2020_d18_reference_renormalized_energy",
+          "rt2020_d21_reference_renormalized_hamiltonian",
+          "rt2020_d24_renormalized_dissipation_identity",
+          "rt2020_d26_coercivity_energy_from_hamiltonian",
+          "rt2020_d27_finite_time_decay_and_strong_bound"
+        ],
+        "proposed_limit": "The reference lattice is not an exact equilibrium and the conclusion depends on a tailored nearby-pair cutoff and error scale; no unqualified global convexity theorem is established.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_ef2aad38928c6dbcfa4836a3",
+        "title": "From repulsive zero flow to localized equilibrium dissipation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Theorem 11, the equilibrium interpretation, and the complete scale heuristic.",
+          "line_end": 1442,
+          "line_start": 1387,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The ODE summation is formula-dependent; the direction of flow and timescale conclusion are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The principal-value ODE turns zeros into repelling particles; a density-imbalance calculation predicts relaxation time α/log T and explains why the mesoscopic resolution from Corollary 10 barely suffices before t=0.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Repulsive zero dynamics predicts the exact accessible relaxation scale",
+          "unit_artifact_relpath": "depth/units/rt2020_d11_zero_flow_relaxation_scale.txt",
+          "unit_bytes": 3438,
+          "unit_id": "rt2020_d11_zero_flow_relaxation_scale",
+          "unit_sha256": "df6460b71ec0aa5fb5248bb337e25176927a7207630c9ff7f1d57da1de6949e2",
+          "unit_type": "dynamical-model-and-heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d11_zero_flow_relaxation_scale.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local arithmetic progressions are equilibria for a repulsive interaction, and density gradients create restoring motion toward uniform spacing.",
+            "nonparaphrase_operation": "The zero set becomes a particle system whose force law bridges analytic heat evolution to dynamical relaxation; the counting theorem supplies the initial density scale for that model.",
+            "quality_reason": "Theorem 11 rigorously gives continuously differentiable zero trajectories and the principal-value repulsive ODE for Lambda<t<=0. The density imbalance, speed of order log_+ T, relaxation time alpha/log_+ T, and comparison with the resolution of (52) are all explicitly presented as heuristic.",
+            "source_support": "Theorem 11 states that simple zeros satisfy ∂_t x_k(t)=2 PV∑_{j≠k}1/(x_k(t)-x_j(t)). The source then heuristically considers an interval [T,T+α] with uneven zero density, estimates a middle zero's speed at scale log_+ T, and predicts relaxation time α/log_+ T; the condition α=o(log_+ T) matches the resolution supplied by (52).",
+            "speculation_status": "Only the ODE is a theorem in this span. The imbalance, speed, and relaxation-time calculation are explicitly heuristic and do not yet control the infinite system or its environment. High confidence in the theorem-versus-heuristic distinction and scale conclusion; the principal-value display is formula-dependent but clear. Reading local arithmetic progressions as equilibria and density gradients as restoring forces follows the source's informal discussion. The principal-value sum is layout-sensitive but explicitly defined."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the formal Hamiltonian and energy, their derivative identities, the divergence obstacle, and the need for truncation.",
+          "line_end": 1508,
+          "line_start": 1443,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The infinite sums are intentionally formal and displayed; the source explicitly warns that rigorous truncation is still required.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The repulsive ODE is reframed as gradient flow of a logarithmic interaction Hamiltonian, suggesting decreasing Hamiltonian, inverse-square energy dissipation, and convergence toward an arithmetic-progression critical state.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero dynamics as convex Hamiltonian gradient flow",
+          "unit_artifact_relpath": "depth/units/rt2020_d12_gradient_flow_energy.txt",
+          "unit_bytes": 3999,
+          "unit_id": "rt2020_d12_gradient_flow_energy",
+          "unit_sha256": "13cd6b54a9b6c7ae64807a6bb5785cad51b32960b01e6414408e892021907e6a",
+          "unit_type": "variational-reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d12_gradient_flow_energy.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A dynamical relaxation story is compressed into gradient flow plus dissipation: equilibrium should minimize a convex interaction defect, and inverse-square energy measures the rate of descent.",
+            "nonparaphrase_operation": "The Hamiltonian reframing bridges particle forces to variational monotonicity and identifies energy as a candidate quantitative route from dynamics to local equilibrium.",
+            "quality_reason": "The span formally rewrites the zero ODE as gradient flow for a logarithmic Hamiltonian and formally obtains partial_t H=-4E together with a square-form derivative for E. It explicitly warns that the infinite Hamiltonian and energy sums are not absolutely convergent and must be truncated before differentiation.",
+            "source_support": "Formally, the zero ODE is ∂_t x_k=-∂_{x_k}H for the pairwise logarithmic Hamiltonian. Differentiation suggests ∂_t H=-4E, where E sums inverse-square gap energies, and a further displayed square identity suggests E decreases and H is convex. The source then states that Hamiltonian and energy must be truncated before differentiation because the infinite series are not absolutely convergent.",
+            "speculation_status": "All global identities here are explicitly formal. Divergence, rather than algebra, is the main failure mode; later finite and renormalized constructions must justify every differentiation and limit. The variational mechanism and warning are explicit; exact infinite-sum displays are extraction-sensitive. For the formally convex Hamiltonian, interpreting a critical equilibrium as a minimizing state and inverse-square energy as the descent rate is justified only at the same formal level, which the candidate preserves. The infinite sums and square identity are formula-heavy, but their formal status and signs are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the divergence problem, definition and regimes of V, pair energy, its expansion, and interval aggregation.",
+          "line_end": 2097,
+          "line_start": 2037,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The piecewise asymptotics and expansion (63) require formula layout; the subtraction of the linearization is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The inverse-square interaction is replaced by a convex potential V measuring deviation from the classical spacing ξ_k−ξ_j, yielding a nonnegative renormalized energy that vanishes at reference equilibrium.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            39
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Convex reference subtraction makes equilibrium energy finite and nonnegative",
+          "unit_artifact_relpath": "depth/units/rt2020_d18_reference_renormalized_energy.txt",
+          "unit_bytes": 3494,
+          "unit_id": "rt2020_d18_reference_renormalized_energy",
+          "unit_sha256": "3c7f3f0877401680125cde75ca09386064207a25b2752fd3e198acf16359fad2",
+          "unit_type": "renormalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d18_reference_renormalized_energy.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Renormalization measures deviation rather than absolute interaction: the infinite equilibrium background is forgotten, while collapse, quadratic near-equilibrium error, and large distortion remain visible.",
+            "nonparaphrase_operation": "Normalizing each gap by ξ_k-ξ_j bridges the slowly varying reference lattice to a dimensionless convex defect suitable for aggregation.",
+            "quality_reason": "The span defines V as the inverse-square potential minus its linearization at unit normalized gap and states its nonnegativity and three quantitative regimes. The pair defect is normalized by xi_k-xi_j, expands into actual energy minus reference energy plus a linear displacement correction, and sums to a nonnegative interval energy. Lemma 16 is only stated here, so the candidate correctly leaves cancellation of the linear correction as a remaining burden.",
+            "source_support": "The source defines V(x)=|x|^(-2)-1+2(|x|-1), the inverse-square potential minus its linearization at |x|=1. V is nonnegative with separate small, near-one, and large regimes. The pair energy Ẽ_{jk}=|ξ_k-ξ_j|^(-2)V((x_k-x_j)/(ξ_k-ξ_j)) expands as actual energy minus reference energy plus a linear displacement correction, and interval energies sum these nonnegative defects.",
+            "speculation_status": "The interval simplification is only stated here and its linear correction still requires cancellation. The reference lattice is an approximate geometric baseline, not an exact stationary solution asserted by this span. The subtraction and convex regimes are explicit; the piecewise asymptotics and expansion (63) depend on recovered formula layout. Saying the construction forgets the infinite equilibrium background while retaining collapse and distortion penalties accurately summarizes the renormalization. The piecewise asymptotics and expansion (63) are display-sensitive but explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes nearby relation, H-tilde_T, L and its regimes, pairwise H-tilde_jk, and the nonnegative representation of the aggregate.",
+          "line_end": 2296,
+          "line_start": 2250,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The cutoffs and formulas (69)–(71) are display-dependent; the equilibrium-defect meaning is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Hamiltonian is both smoothly truncated and restricted to nearby pairs, then renormalized by a convex nonnegative function L that vanishes precisely at reference spacing.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            43
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A convex logarithmic defect measures displacement from equilibrium",
+          "unit_artifact_relpath": "depth/units/rt2020_d21_reference_renormalized_hamiltonian.txt",
+          "unit_bytes": 2540,
+          "unit_id": "rt2020_d21_reference_renormalized_hamiltonian",
+          "unit_sha256": "49b14053a43b4726b54d5bdc4b6e0c3276bc26d59048b5976c9be6f09462a1a7",
+          "unit_type": "renormalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d21_reference_renormalized_hamiltonian.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The construction compares each particle gap with its classical reference gap through the dimensionless ratio (x_j-x_k)/(ξ_j-ξ_k), then applies L(x)=log(1/|x|)+|x|-1. This removes the infinite reference background while preserving a calibrated defect: each pair term is exactly nonnegative, vanishes precisely at reference spacing, is quadratic near equilibrium, logarithmic near collapse, and linear at large distortion. Smooth weights and the nearby-pair relation make the aggregate tractable, but Lemma 19 identifies the aggregate with the weighted defect sum only up to o(T log_+^3 T), so exact nonnegativity or a genuine zero state is not established for the aggregate. Any Lyapunov behavior remains a later proof obligation.",
+            "nonparaphrase_operation": "Separates two levels of renormalization that the raw formulas can obscure: exact coercive calibration occurs pairwise, whereas smooth localization recovers the aggregate only asymptotically. This exposes both what is gained—finite, scale-aware comparison to the reference lattice—and what is lost—exact global positivity.",
+            "quality_reason": "Accepted after correcting the candidate's overstatement of aggregate nonnegativity and zero-state behavior. The cutoffs are display-sensitive, but the pairwise defect and aggregate error distinction is explicit.",
+            "source_support": "The span defines the symmetric relation j∼_T k, the smoothly truncated reference-subtracted Hamiltonian (69), the convex nonnegative L and its three regimes (70), the normalized pair defect (71), and Lemma 19's error-bearing weighted-sum representation for Λ/2≤t≤0.",
+            "speculation_status": "The Lyapunov interpretation is retained only as a later question, not as a result of this unit; no global convexity or monotonicity is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proposition, equilibrium interpretation, integral-form differentiation, domination estimate, and almost-everywhere identity.",
+          "line_end": 2605,
+          "line_start": 2489,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Triple principal-value sums are display-heavy; the absolute-continuity and interchange justification are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 22 rigorously differentiates the infinite localized Hamiltonian, using weak integrated-energy control for dominated convergence, and obtains ∂_t H̃_T=−4Ẽ_T plus negligible errors.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            48
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The truncated renormalized Hamiltonian dissipates as renormalized energy",
+          "unit_artifact_relpath": "depth/units/rt2020_d24_renormalized_dissipation_identity.txt",
+          "unit_bytes": 7566,
+          "unit_id": "rt2020_d24_renormalized_dissipation_identity",
+          "unit_sha256": "a76ec7fc8cd79a229e52416492374b3c33594d881f0d6b753ab205db2b8e7acc",
+          "unit_type": "approximate-monotonicity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d24_renormalized_dissipation_identity.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Weak gap and integrated-energy estimates serve as an enablement layer: they justify the infinite differentiation needed to convert a formal Lyapunov heuristic into rigorous approximate dissipation.",
+            "nonparaphrase_operation": "Integral-form differentiation bridges finite pair dynamics to an infinite localized Hamiltonian; domination controls interchange, and reference renormalization is designed so equilibrium contributions cancel from the derivative.",
+            "quality_reason": "Proposition 22 states absolute continuity and partial_t H-tilde_T=-4 E-tilde_T plus a negligible term almost everywhere. The displayed proof rewrites each pair derivative in integral form, uses local-gap estimates, Proposition 15, and psi_T decay to dominate the absolute triple sum, then applies dominated convergence and Lebesgue differentiation to justify (78). The candidate explicitly notes that this span does not contain the later near/far cancellation reducing the triple sum (78) to the proposition's stated -4 E-tilde_T main term.",
+            "source_support": "Proposition 22 states ∂_t H̃_T=-4Ẽ_T plus negligible terms almost everywhere. The displayed proof differentiates pair Hamiltonians via the principal-value zero ODE, rewrites the identity in integral form, bounds the absolute triple sum using local gaps, Proposition 15, and ψ_T decay, and applies dominated convergence and Lebesgue differentiation to prove absolute continuity and formula (78).",
+            "speculation_status": "The identity holds only almost everywhere and asymptotically in T. This span rigorously reaches the derivative triple sum, while the detailed near/far cancellations identifying it with -4Ẽ_T are deferred beyond the assigned span, so the proposition's final reduction is not independently reconstructed here. High confidence in the legality argument and stated proposition; triple principal-value displays are extraction-heavy, and the last cancellation stage is outside this unit. Describing the weak gap and integrated-energy results as an enablement layer for rigorous infinite differentiation is directly supported by their use in the domination argument. The equilibrium-cancellation interpretation is heuristic, as Remark 23 itself says. Principal-value triple sums and conjugated indices are extraction-heavy, though the legality argument is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes removal of long-range contributions, control of insufficiently compressed pairs, and conversion of the remaining defect to energy.",
+          "line_end": 2973,
+          "line_start": 2880,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dyadic thresholds and δ powers are display-dependent; the concentration-and-coercivity logic is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Lemma 24 localizes any large H̃_T to very short pairs and then splits by compression scale; convex-potential comparisons force a lower bound on Ẽ_T.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            53,
+            54
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Large Hamiltonian defect forces quantitatively large energy",
+          "unit_artifact_relpath": "depth/units/rt2020_d26_coercivity_energy_from_hamiltonian.txt",
+          "unit_bytes": 4893,
+          "unit_id": "rt2020_d26_coercivity_energy_from_hamiltonian",
+          "unit_sha256": "82803513e2cda59872abcd8968dac6587cde8761f6339b23fdde1bd29bb46b04",
+          "unit_type": "coercivity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d26_coercivity_energy_from_hamiltonian.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is coercivity obtained by concentration rather than a global convexity assertion. A large soft, logarithmic defect is forced onto a compression scale, where the harder inverse-square energy supplies a quantitative penalty; the scale parameter m turns qualitative compression into an exponentially strengthening bound.",
+            "nonparaphrase_operation": "The ratio |x_j-x_k|/|xi_j-xi_k| is the bridge between the Hamiltonian and energy representations. Dyadic thresholding at 2^{-m} separates ordinary deviations, whose aggregate is small, from compressed pairs on which logarithmic cost can be converted to inverse-square cost.",
+            "quality_reason": "The candidate preserves the one-way hypothesis of Lemma 24: a lower bound of order delta m T log^3_+ T for H-tilde_T forces an energy lower bound strengthened by the compression scale. The span first removes large index-separation contributions using Lemmas 19 and 20, then proves (86) for pairs not compressed beyond 2^{-m}; the candidate accurately describes this localization chain. The telescoping estimate used in (87), comparable weights, and the logarithmic pair potential are all present in the proof of the weakly compressed contribution bound. On the remaining pairs the displayed comparison H-tilde_jk << m 2^{-2m} E-tilde_jk yields the reported E-tilde_T lower bound of order delta 2^{2m} T log^3_+ T. The 'soft' versus 'hard' terminology is metaphorical, but it names the explicit logarithmic and inverse-square quantities and does not replace the actual mechanism.",
+            "source_support": "Lemma 24 assumes H-tilde_T(t) is at least delta m T log^3_+ T and first localizes most of this mass to nearby indices using Lemmas 19 and 20. It bounds the contribution of pairs with |x_j-x_k| at least 2^{-m}|xi_j-xi_k| by O(delta^2 m T log^3 T), using the logarithmic pair potential, comparable weights, a telescoping estimate, and slow decay of delta. The remaining compressed pairs satisfy H-tilde_jk << m 2^{-2m} E-tilde_jk, yielding E-tilde_T(t) >> delta 2^{2m} T log^3_+ T.",
+            "speculation_status": "The implication is one-way, weighted, and conditional on delta(T) tending to zero sufficiently slowly. It uses prior localization and spacing estimates and does not establish a converse bound or an unqualified convexity theorem for the full system. The exceptional long-range and weakly compressed contributions are small only in the stated asymptotic regime. The concentration-and-coercivity chain is explicit. Superscripts in delta 2^{2m} and several dyadic restrictions are extraction-sensitive, so exact constants and powers should be verified in the typeset display if reused computationally. The contrast between a soft logarithmic defect and a harder inverse-square penalty is a source-faithful interpretation of the final pairwise comparison. Describing the argument as concentration-based coercivity rather than global convexity correctly reflects the staged removal of nonconcentrated contributions. The extraction visually collapses products and exponents involving delta and 2 in the lemma statement and (86); the surrounding proof nevertheless supports the scaling stated by the candidate, while exact display reuse remains unsafe without the typeset source."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Corollary 25, the level-set iteration, and the final fundamental-theorem-of-calculus deduction of Theorem 17.",
+          "line_end": 3016,
+          "line_start": 2975,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Level parameters and time increments rely on displayed inequalities; the finite-time descent is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Approximate dissipation plus coercivity drives H̃_T down through dyadic levels in a summable time, keeps it small thereafter, and converts the Hamiltonian drop into the strong integrated-energy estimate.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            55
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coercive dissipation shrinks the Hamiltonian in finite time",
+          "unit_artifact_relpath": "depth/units/rt2020_d27_finite_time_decay_and_strong_bound.txt",
+          "unit_bytes": 2447,
+          "unit_id": "rt2020_d27_finite_time_decay_and_strong_bound",
+          "unit_sha256": "cfed49b4b20136eccc3106d6acf6bddb3d2e3899cdad1578ee66020ec8e70239",
+          "unit_type": "dissipation-bootstrap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d27_finite_time_decay_and_strong_bound.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A pointwise coercive dissipation inequality becomes a global-in-time estimate through level-set bookkeeping. The useful compression is to measure progress by energy bands rather than solve the flow: stronger disequilibrium automatically pays for faster descent, making all high levels removable in finite total time.",
+            "nonparaphrase_operation": "The level index m bridges Hamiltonian size, energy coercivity, and elapsed time. Absolute continuity is the analytic bridge from an almost-everywhere derivative estimate to actual level crossing, and the endpoint Hamiltonian drop then represents the time integral of energy.",
+            "quality_reason": "The candidate correctly combines Proposition 22 and Lemma 24 into an almost-everywhere negative derivative bound whenever H-tilde_T lies above the m-dependent threshold. The source explicitly uses absolute continuity, the fundamental theorem of calculus, and the intermediate value theorem to cross one level within O(2^{-2m}) time and then sums these crossing times. The iteration begins at Lambda/2, reaches a bounded m0-level by a time no later than Lambda/4, and the Proposition 22 error bound controls later growth through time zero, as the candidate states. Integrating the approximate dissipation identity from Lambda/4 to zero yields the strong time-integrated E-tilde_T estimate; the candidate does not misstate this as pointwise energy control. The phrase 'all high levels removable' is informal, but it is bounded by the explicit m0 cutoff and the fixed time interval in the rest of the candidate.",
+            "source_support": "Proposition 22 and Lemma 24 give an almost-everywhere inequality partial_t H-tilde_T <= -c delta 2^{2m} T log^3 T whenever H-tilde_T is at least delta m T log^3 T. Absolute continuity and the fundamental theorem of calculus show that a trajectory in the m-th level band must fall to the next band within O(2^{-2m}) time. Iterating the summable time increments from Lambda/2 reaches H-tilde_T=O(delta T log^3_+ T) by Lambda/4; the error bound in Proposition 22 keeps it small through time 0. Integrating the approximate identity then gives the strong time-integrated bound for E-tilde_T.",
+            "speculation_status": "The argument needs nonnegativity and absolute continuity of H-tilde_T, the approximate dissipation formula, coercivity, sufficiently slow delta, and a fixed interval long enough for the summed descent times. It proves a time-integrated energy estimate, not pointwise smallness of E-tilde_T, and all conclusions retain asymptotic error terms. The finite-time descent is explicit in the prose and displays. Some plus subscripts and products involving delta and powers of two are typographically compressed by extraction, but the band-crossing and summable-time mechanism is clear. Representing the proof as level-set bookkeeping instead of solving the flow is an accurate conceptual summary of (88)-(89). The observation that larger disequilibrium pays for faster descent is supported by the 2^{2m} coercive rate and the summable 2^{-2m} crossing times. Products involving delta, m, and powers of two are typographically compressed in extraction; the prose and successive inequalities still make the band-crossing mechanism reliable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A weak but subpolynomial gap lower bound, amplified to polynomial integrated-energy control, is sufficient to justify differentiating an infinite interaction functional even though it is far from the final equilibrium estimate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rt2020_d15_small_gap_propagation",
+          "rt2020_d16_interval_enlargement_gap_bound",
+          "rt2020_d17_weak_integrated_energy",
+          "rt2020_d24_renormalized_dissipation_identity"
+        ],
+        "proposed_limit": "The bounds are deliberately nonoptimal and are used for legality and domination, not as direct evidence of mean spacing.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_683f6ea7fc66baeac7135939",
+        "title": "Small-gap control is the analytic-enablement layer"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the gap-bound objective, the propagation interpretation, and the time-window proof using A(t) and B(t).",
+          "line_end": 1876,
+          "line_start": 1790,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The quantitative inequality is display-dependent; the propagation alternative is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Lemma 14 combines cross-energy monotonicity with the virial identity and Gronwall control to show a small cluster diameter cannot persist unless the cluster strongly interacts with its exterior.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A tiny internal gap must create a nearby external gap",
+          "unit_artifact_relpath": "depth/units/rt2020_d15_small_gap_propagation.txt",
+          "unit_bytes": 4333,
+          "unit_id": "rt2020_d15_small_gap_propagation",
+          "unit_sha256": "a2b871add1fc75877b494808b67e8ddb123b2fa416fdecbfa1a2f56c8f27724d",
+          "unit_type": "obstruction-and-propagation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d15_small_gap_propagation.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The argument turns local collapse into a propagation alternative: either a cluster has visible diameter or it couples strongly to its environment.",
+            "nonparaphrase_operation": "A and B compress internal geometry and external influence into two scalar quantities; time monotonicity bridges cross-energy at one time to virial growth over a usable window.",
+            "quality_reason": "Proposition 13 states the deliberately weak subpolynomial logarithmic gap bound on Lambda/2<=t<=0. Lemma 14 defines A and B, uses the weak differential inequality for B to obtain a backward interval of controlled exterior energy, and combines the virial identity with Gronwall to lower-bound A. The source explicitly interprets the lemma as forcing an exterior small gap when a finite cluster is too compressed and announces iteration toward a contradiction with (52).",
+            "source_support": "Proposition 13 seeks a subpolynomial upper bound on logarithmic gap interactions for Λ/2≤t≤0. Lemma 14 defines the cluster diameter moment A(t) and exterior energy B(t), uses the weak inequality ∂_t B≥-8B^2 to obtain a backward time window where B stays controlled, and combines the virial identity with Gronwall to lower-bound A(t) in terms of |K| and B(t).",
+            "speculation_status": "The lemma does not itself contradict a tiny gap; it only forces nearby exterior interaction, which must be iterated. The final gap bound is deliberately nonoptimal and the time range is narrowed to Λ/2≤t≤0. The propagation mechanism is clear; the precise quantitative inequality is display-dependent. The 'propagation alternative' language faithfully compresses the lemma's internal-diameter versus exterior-energy tradeoff. One time-interval display is extraction-noisy, but the continuity and backward-window argument remain clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the cluster diameter setup, enlargement inequality (60), stopping alternatives, and final comparison.",
+          "line_end": 1965,
+          "line_start": 1878,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Powers and logarithmic losses rely on displays; the iterative stopping logic is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Repeatedly adjoining an exterior neighbor propagates a small gap through at most logarithmically many enlargements; classical mesoscopic spacing then forces a lower bound on the original gap.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            36,
+            37
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interval enlargement turns local gap collapse into a macroscopic contradiction",
+          "unit_artifact_relpath": "depth/units/rt2020_d16_interval_enlargement_gap_bound.txt",
+          "unit_bytes": 3820,
+          "unit_id": "rt2020_d16_interval_enlargement_gap_bound",
+          "unit_sha256": "41984ce7ffaef66848d54cd74e723d5fdff86d14dd642694cd99e14f477ca887",
+          "unit_type": "iterative-contradiction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d16_interval_enlargement_gap_bound.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A local defect is amplified spatially until it meets a coarse global constraint; the iteration trades a weak one-step implication for a quantitative obstruction to extreme collapse.",
+            "nonparaphrase_operation": "Discrete index intervals bridge nearest-neighbor gaps to mesoscopic counting geometry, with diameter serving as the invariant propagated through enlargement.",
+            "quality_reason": "The proof derives the enlargement inequality for a discrete interval under the stated small-diameter condition and iterates from {j,j+1}. It stops either when the smallness threshold fails or when the interval is long, then uses (52) and pigeonholing to lower-bound the terminal diameter and transfer that bound back to the initial gap. The accumulated loss is only the weak bound claimed by Proposition 13, with large positive j treated directly and bounded j by compactness.",
+            "source_support": "Lemma 14 and a tail estimate for exterior inverse-square energy yield an enlargement inequality δ(K')≪|K|^3 log(k_+)δ(K) for a discrete interval K with sufficiently small diameter. Starting from {j,j+1}, the proof iterates at most O(log_+^2 ξ_j) times, stops when the smallness condition fails or the interval is long, and uses (52) plus pigeonholing to lower-bound the terminal diameter, hence the initial gap.",
+            "speculation_status": "The accumulated losses yield only a weak subpolynomial lower gap bound, not mean-spacing control. The argument depends on the earlier mesoscopic estimate and large positive j, with bounded cases handled by compactness. The stopping logic is clear; powers and logarithmic losses in the displays are extraction-sensitive. Describing the method as spatial amplification of a local defect until it meets a mesoscopic constraint is source-grounded. Iteration counts and logarithmic powers are display-sensitive but the stopping alternatives are explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Proposition 15, the interval energy Q_I, multiplicative pigeonhole step, and absorption argument.",
+          "line_end": 2035,
+          "line_start": 1967,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact powers in the enlargement and bound are display-dependent; the localization-and-absorption mechanism is intact.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A good index interval is chosen where a slight enlargement adds little integrated energy; the truncated Hamiltonian identity then absorbs internal boundary interactions and controls the target block.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Spatial pigeonholing makes truncated integrated energy polynomial",
+          "unit_artifact_relpath": "depth/units/rt2020_d17_weak_integrated_energy.txt",
+          "unit_bytes": 3908,
+          "unit_id": "rt2020_d17_weak_integrated_energy",
+          "unit_sha256": "d6acc55c2088d0c0ae8a238ce812a3d5ffe2f75147ed5e93b684e4bbc2cd64b5",
+          "unit_type": "pigeonhole-and-localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d17_weak_integrated_energy.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Localization boundaries are selected for low flux rather than fixed in advance, converting a divergent global quantity into a block where dissipation is controllable.",
+            "nonparaphrase_operation": "The interval energy Q_I bridges finite Hamiltonian monotonicity to a time-integrated estimate, and the enlargement ratio supplies the absorption coefficient.",
+            "quality_reason": "The proof defines Q_I, compares crude lower and upper bounds on nested intervals, and uses multiplicative pigeonholing to select K with Q_{K'}<=(1+J^-0.1)Q_K. After integrating the finite Hamiltonian identity, it bounds far exterior terms polynomially and absorbs the near exterior contribution Q_{K'}-Q_K. The proposition is explicitly time-integrated and is introduced to justify a later derivative-sum interchange.",
+            "source_support": "For Q_I=∫∑_{j,k∈I,j≠k}E_{jk}(t)dt, crude lower and upper bounds across nested intervals guarantee a K containing [J,2J] whose slight enlargement K' satisfies Q_{K'}≤(1+J^(-0.1))Q_K. Integrating the finite Hamiltonian identity bounds Q_K by endpoint Hamiltonians plus exterior interactions; far exterior terms are polynomially bounded and near exterior terms are at most Q_{K'}-Q_K, which is absorbed.",
+            "speculation_status": "The result is polynomial and time-integrated, not a sharp or pointwise equilibrium bound. Its stated role is analytic legality for later interchange arguments. The localization-and-absorption mechanism is intact; exact powers in the pigeonhole enlargement are formula-layout dependent. Interpreting the selected interval boundary as a low-flux localization boundary is a faithful account of the absorption mechanism. The pigeonhole exponent and several nested sums are layout-sensitive, while the absorption inequality is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proposition, equilibrium interpretation, integral-form differentiation, domination estimate, and almost-everywhere identity.",
+          "line_end": 2605,
+          "line_start": 2489,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Triple principal-value sums are display-heavy; the absolute-continuity and interchange justification are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposition 22 rigorously differentiates the infinite localized Hamiltonian, using weak integrated-energy control for dominated convergence, and obtains ∂_t H̃_T=−4Ẽ_T plus negligible errors.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            48
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The truncated renormalized Hamiltonian dissipates as renormalized energy",
+          "unit_artifact_relpath": "depth/units/rt2020_d24_renormalized_dissipation_identity.txt",
+          "unit_bytes": 7566,
+          "unit_id": "rt2020_d24_renormalized_dissipation_identity",
+          "unit_sha256": "a76ec7fc8cd79a229e52416492374b3c33594d881f0d6b753ab205db2b8e7acc",
+          "unit_type": "approximate-monotonicity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d24_renormalized_dissipation_identity.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Weak gap and integrated-energy estimates serve as an enablement layer: they justify the infinite differentiation needed to convert a formal Lyapunov heuristic into rigorous approximate dissipation.",
+            "nonparaphrase_operation": "Integral-form differentiation bridges finite pair dynamics to an infinite localized Hamiltonian; domination controls interchange, and reference renormalization is designed so equilibrium contributions cancel from the derivative.",
+            "quality_reason": "Proposition 22 states absolute continuity and partial_t H-tilde_T=-4 E-tilde_T plus a negligible term almost everywhere. The displayed proof rewrites each pair derivative in integral form, uses local-gap estimates, Proposition 15, and psi_T decay to dominate the absolute triple sum, then applies dominated convergence and Lebesgue differentiation to justify (78). The candidate explicitly notes that this span does not contain the later near/far cancellation reducing the triple sum (78) to the proposition's stated -4 E-tilde_T main term.",
+            "source_support": "Proposition 22 states ∂_t H̃_T=-4Ẽ_T plus negligible terms almost everywhere. The displayed proof differentiates pair Hamiltonians via the principal-value zero ODE, rewrites the identity in integral form, bounds the absolute triple sum using local gaps, Proposition 15, and ψ_T decay, and applies dominated convergence and Lebesgue differentiation to prove absolute continuity and formula (78).",
+            "speculation_status": "The identity holds only almost everywhere and asymptotically in T. This span rigorously reaches the derivative triple sum, while the detailed near/far cancellations identifying it with -4Ẽ_T are deferred beyond the assigned span, so the proposition's final reduction is not independently reconstructed here. High confidence in the legality argument and stated proposition; triple principal-value displays are extraction-heavy, and the last cancellation stage is outside this unit. Describing the weak gap and integrated-energy results as an enablement layer for rigorous infinite differentiation is directly supported by their use in the domination argument. The equilibrium-cancellation interpretation is heuristic, as Remark 23 itself says. Principal-value triple sums and conjugated indices are extraction-heavy, though the legality argument is clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Smooth time-averaged energy control can be transferred to a terminal local block by selecting buffered spatial boundaries and iterating short-time monotonicity, after which nearest-neighbor statistics provide the contradiction.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "rt2020_d20_smooth_localization_strong_target",
+          "rt2020_d28_time_zero_energy_strategy",
+          "rt2020_d29_local_energy_propagation",
+          "rt2020_d30_pair_correlation_contradiction"
+        ],
+        "proposed_limit": "The final obstruction uses an external theorem about zeta-zero gaps under the already implied Riemann hypothesis; this source does not reprove that statistical result.",
+        "source_id": "rodgers_tao2020_newman",
+        "synthesis_id": "riemann_v2_within_deef8aba64891b4944ba0a0d",
+        "title": "Average dissipation reaches a statistical obstruction through buffered propagation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the strong target, weight ψ_T, localized energy, reduction, Lemma 18, and cancellation proof.",
+          "line_end": 2248,
+          "line_start": 2152,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Weight and sum formulas depend on layout; positivity, localization, and absolute-integrability roles are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 17 is reduced to a smoothly localized renormalized energy; Fubini becomes legal and another odd-kernel estimate controls the linear correction under slowly varying weights.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            41,
+            42
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth weights turn the strong integrated-energy goal into an absolutely convergent quantity",
+          "unit_artifact_relpath": "depth/units/rt2020_d20_smooth_localization_strong_target.txt",
+          "unit_bytes": 5140,
+          "unit_id": "rt2020_d20_smooth_localization_strong_target",
+          "unit_sha256": "1bf64fed9729e803ffa2fd079459d78213d11df709765b3e3062adef02b0b76d",
+          "unit_type": "smooth-truncation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d20_smooth_localization_strong_target.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smooth localization preserves the central block while suppressing boundary artifacts strongly enough to legalize infinite sums and interchange operations.",
+            "nonparaphrase_operation": "ψ_T bridges a desired hard local estimate to an analytic functional with positivity, decay, and differentiability-friendly tails.",
+            "quality_reason": "Theorem 17 states the hard central-block integrated renormalized-energy target, and positivity reduces it to the smooth target (68). The weight psi_T is positive, localized at index scale T log T, and rapidly decaying; Proposition 15, positivity, and Fubini give absolute time integrability. Lemma 18 uses absolute convergence, desymmetrization, slow variation of psi_T, and the same odd-kernel cancellation to compare the smooth defect energy with weighted actual-minus-reference energy up to O-tilde(1).",
+            "source_support": "Theorem 17 targets o(T log_+^3 T) time-integrated renormalized energy on a central index block. The weight ψ_T(j)=(1+|j|/(T log T))^(-100) defines Ẽ_T as a smooth double sum. Proposition 15, positivity, and Fubini give absolute time integrability and reduce the theorem to the smooth target (68); Lemma 18 compares Ẽ_T with weighted actual-minus-reference energy up to O-tilde(1), using odd-kernel cancellation and slow variation of ψ_T.",
+            "speculation_status": "This span formulates and reduces the strong target but does not prove its decay. Identities hold for almost every time where absolute convergence is available, and the conclusion remains time-averaged. The positivity and Fubini roles are explicit; exact weight and sum formulas carry layout risk. Saying smooth localization suppresses hard-boundary artifacts while legalizing interchanges accurately captures the stated construction. The exact weight, ranges, and double sums are layout-sensitive, but their roles are explicit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Propositions 26–28, the Fubini–Tonelli interval selection, and the complete high-level iteration.",
+          "line_end": 3106,
+          "line_start": 3018,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The nested interval averages are display-dependent; selection and propagation roles are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 17 first supplies a good time and a multiscale-good spatial interval; Proposition 28 is then iterated over O(log^2 T) short steps while shrinking only polylogarithmically, yielding time-zero energy control on the target block.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            56,
+            57
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A good interval and short-time propagation transfer average control to time zero",
+          "unit_artifact_relpath": "depth/units/rt2020_d28_time_zero_energy_strategy.txt",
+          "unit_bytes": 4373,
+          "unit_id": "rt2020_d28_time_zero_energy_strategy",
+          "unit_sha256": "0bf0112396a37ea3ed50448629b1e133e05d1dedfa2edc73cce5bc71cb056370",
+          "unit_type": "average-to-endpoint-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d28_time_zero_energy_strategy.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof trades two weak controls for a strong terminal statement: temporal averaging supplies one favorable start, while multiscale spatial averaging supplies boundaries through which little uncontrolled energy can enter. Repeated local propagation then transports the favorable state to the endpoint without requiring global monotonicity of the localized quantity.",
+            "nonparaphrase_operation": "The multiscale boundary averages are a certificate for choosing a buffered interval, and the nested shrinking intervals encode finite propagation with leakage. This bridges a smooth spacetime estimate to a sharp time-zero block estimate by coupling time steps with spatial erosion.",
+            "quality_reason": "Proposition 27 is accurately summarized as a pigeonhole and Fubini-Tonelli selection of I0 with simultaneous multiscale boundary-energy control, using Theorem 17. The candidate correctly states Proposition 28 as a short-time inequality for a log^3 T-shrunken interval with a polylogarithmic endpoint-displacement cost. The good time t0 is obtained from the integrated energy estimate, and O(log^2 T) applications carry the bound to time zero while eroding only O(log^5 T) indices. The remaining interval still contains the target block, and monotonicity in the index interval gives Proposition 26 exactly as described. Terms such as 'finite propagation with leakage' are interpretive rather than stated terminology, but the candidate confines them to the short-time, shrinking-interval inequality and explicitly denies global monotonicity.",
+            "source_support": "Proposition 27 uses pigeonholing and Fubini-Tonelli with Theorem 17 to choose an interval I0 around the target block whose multiscale boundary energies have bounded time integral. Proposition 28 states that over a time step at most 1/(100 log^2 T), the renormalized energy on a version of I shrunk by log^3 T is at most its earlier value plus a polylogarithmic cost depending on the displacement of I's endpoints from those of I0. A good time t0 follows from the integrated energy estimate. Iterating Proposition 28 O(log^2 T) times to time 0 shrinks I0 by only O(log^5 T), still leaves the target block inside, and monotonicity in the index interval yields Proposition 26.",
+            "speculation_status": "Within this unit Proposition 28 is a stated input whose proof begins in the next unit. Each propagation step is short, incurs an additive error, and loses a log^3 T boundary layer; the method does not preserve an arbitrary fixed interval or assert global energy monotonicity. Its success depends on the initial interval having room for the total O(log^5 T) shrinkage. The selection and iteration logic is explicit, while some nested sums, endpoint notation, and logarithmic ranges are display-dependent. The claimed scales are readable but should be checked in the typeset formulas before exact implementation. The interpretation as spending spatial buffer to convert temporal averaging into endpoint control is directly realized by the nested shrinking intervals. Calling the multiscale averages a boundary certificate is a useful abstraction of their later role in Proposition 28 and does not import an additional theorem. The nested endpoint integrals and dyadic ranges are display-sensitive; the selection, iteration count, and total shrinkage are nevertheless explicit in prose and readable displays."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes boundary selection, persistence via the virial identity, internal energy monotonicity, boundary-scale decomposition, and conversion back to renormalized energy.",
+          "line_end": 3217,
+          "line_start": 3107,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The cross-term bounds are formula-dense and some symbols are extraction-sensitive; the conservation-with-buffer mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A Bourgain-style argument chooses boundary gaps that remain separated over a short interval, applies the finite-subsystem energy identity, and bounds cross-environment terms by the previously selected multiscale interval averages.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [
+            58
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Boundary-gap pigeonholing controls environmental energy influx",
+          "unit_artifact_relpath": "depth/units/rt2020_d29_local_energy_propagation.txt",
+          "unit_bytes": 6848,
+          "unit_id": "rt2020_d29_local_energy_propagation",
+          "unit_sha256": "4928a66eac1b0c0138ed2fab5d54269fda5cdf7008acc31c19e20711cba1f9c6",
+          "unit_type": "localized-monotonicity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d29_local_energy_propagation.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Approximate locality is manufactured by pigeonholing exterior gaps at the terminal time and using the virial estimate to keep those gaps open throughout a short interval. For the buffered finite subsystem K, the differential inequality controls possible growth of its unnormalized internal energy by reciprocal cross-environment interactions. Splitting interior pairs at unit spatial separation and then by boundary scale charges those one-sided flux terms to the multiscale boundary energies and ambient integrated-energy bound already available. Time integration, monotonicity in K, and Lemma 16 then transfer the result to renormalized energy on a shrunken interval. The gain is short-time propagation despite a nonlocal particle system; the price is buffer loss and dependence on the selected gaps, short time step, multiscale-good interval, and global energy control. Without the buffer, cross-environment separations can become small and the reciprocal terms large.",
+            "nonparaphrase_operation": "Interprets the proof as a designed boundary-flux mechanism: geometric separation creates a temporary subsystem, the scale decomposition converts environmental coupling into previously certified budgets, and a bridge through E_K returns the estimate to the desired reference-subtracted energy.",
+            "quality_reason": "Accepted after correcting the dangerous-denominator direction and making the propagation statement explicitly one-sided. Exact cross-term indices are extraction-sensitive, but the persistent-gap, scale-splitting, and integrated-growth mechanism is clear.",
+            "source_support": "The span chooses j_- and j_+ in log^3 T buffers with exterior gaps at least 1/log T at t2, preserves comparable gaps on [t1,t2] using Lemma 12(iv), derives a one-sided differential bound for E_K, estimates its two pair classes using Proposition 27 and Theorem 17, integrates, and uses monotonicity plus Lemma 16 to obtain Proposition 28.",
+            "speculation_status": "The boundary-flux language is interpretive but directly tied to the displayed one-sided differential inequality; no two-sided conservation law is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the nearest-neighbor extraction, Markov step, conversion to zeta-zero spacing, and the explicit contradiction closing Λ<0.",
+          "line_end": 3271,
+          "line_start": 3223,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Normalization constants depend on formulas (93) and classical spacing; the contradiction is fully stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Time-zero renormalized energy forces almost every normalized consecutive gap to approach one, while a known zeta-zero gap result supplies a positive proportion bounded strictly below mean spacing.",
+          "source_id": "rodgers_tao2020_newman",
+          "source_normalized_sha256": "4b556efea73384eef21b20ae811090feba11a520709f20a5b84305d026cc3d79",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equilibrium gap concentration contradicts known positive small-gap density",
+          "unit_artifact_relpath": "depth/units/rt2020_d30_pair_correlation_contradiction.txt",
+          "unit_bytes": 3078,
+          "unit_id": "rt2020_d30_pair_correlation_contradiction",
+          "unit_sha256": "bb647df04cbc16e91a7ab8a82a4b888ae48708776e9db97fb8c2e90e548d80e8",
+          "unit_type": "final-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rt2020_d30_pair_correlation_contradiction.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The argument extracts a rigid statistical prediction from near-equilibrium energy and then falsifies it with an independent distributional fact. The contradiction does not require locating a particular anomalous pair: concentration from the energy and positive-density small gaps are mutually exclusive at the level of proportions.",
+            "nonparaphrase_operation": "The normalized consecutive gap and its potential V bridge renormalized particle energy to zero-spacing statistics. The classical spacing xi_{j+1}-xi_j supplies the local unit scale, Markov converts an average potential bound into typical behavior, and the identification of x_j(0) with twice the zero ordinates transfers that behavior to zeta zeros.",
+            "quality_reason": "The span bounds a nearest-neighbor sum of V at normalized gaps by the time-zero renormalized energy, uses xi_{j+1}-xi_j asymptotic to 4 pi/log T, and invokes Proposition 26 to make the average potential o(1). Markov's inequality and property (62) of V yield normalized gap 1+o(1) for a 1-o(1) fraction of indices, exactly as the candidate states. The conversion from x_j(0) to twice the imaginary ordinates of zeta zeros and the resulting 4 pi/log T scale are explicit in the span. The cited positive-proportion result for every lambda greater than .77 contradicts the concentration statement after choosing lambda below one, closing the assumption Lambda<0. The phrase 'rigid statistical prediction' is rhetorical, but it is immediately specified as a 1-o(1) density statement and is not confused with equality of every gap.",
+            "source_support": "The time-zero renormalized energy dominates a nearest-neighbor sum of V((x_{j+1}(0)-x_j(0))/(xi_{j+1}-xi_j)). Since xi_{j+1}-xi_j is asymptotic to 4 pi/log T, Proposition 26 makes the average potential o(1). Markov's inequality and the stated properties of V imply that the normalized gap equals 1+o(1) for a 1-o(1) fraction of indices, hence x_{j+1}(0)-x_j(0)=(4 pi+o(1))/log T for almost all of them. Because x_j(0) are twice zeta-zero ordinates, this contradicts the cited result that for any lambda>0.77 a positive proportion of gaps are at most lambda 4 pi/log T, closing the contradiction to Lambda<0.",
+            "speculation_status": "The statistical small-gap theorem is external and is not proved in this span; the argument relies on its applicability under the already implied Riemann hypothesis and on the ordering and normalization of x_j(0). Proposition 26 controls the specified high-index block and yields an asymptotic density statement, not equality of every gap or a standalone proof of pair correlation. The contradiction is fully stated in prose. Formula extraction compresses normalization constants around (93), but both the 4 pi/log T scale and the positive-proportion threshold are explicit; the external theorem's hypotheses and provenance would need separate source verification beyond this packet. The description of changing from an energy language to a statistical-spacing language is an accurate conceptual bridge through V and the normalized consecutive gap. The observation that concentration and a positive density of uniformly smaller gaps are incompatible at the level of proportions is exactly the logic of the final contradiction. Normalization around (93) is visually compressed, but the 4 pi/log T scale is stated explicitly. The positive-small-gap theorem is external evidence only cited and summarized in this span; the candidate correctly marks its hypotheses and provenance as requiring verification outside the bounded packet."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9fa60a1faa4ed99d7f1c8d203647a1b8c89324e3cdcb48ea12bc950777b7c82c",
+        "dossier_sha256": "c37c57f2f0834744a03c94e8faa1062f08e5f7e24c919302db9f1763bfadd911"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a068bc96e227e2148bacad9f8b2878759230abcc1f8208fba4a94142e3927133"
+}

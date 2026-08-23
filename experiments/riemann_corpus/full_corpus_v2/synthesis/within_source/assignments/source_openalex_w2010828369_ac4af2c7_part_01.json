@@ -1,0 +1,261 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2010828369",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2010828369_ac4af2c7_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Root-discriminant invariance makes degree-sensitive lower bounds powerful enough to constrain Hilbert class fields, while infinite towers show that the same invariant also falsifies naive global growth expectations and redirects attention to restricted degree families.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2010828369_u08",
+          "full_openalex_w2010828369_u09",
+          "full_openalex_w2010828369_u10"
+        ],
+        "proposed_limit": "The survey provides historical constructions and qualitative bounds, not a classification or a modern optimality claim.",
+        "source_id": "openalex_w2010828369",
+        "synthesis_id": "riemann_v2_within_e67f91ea785a226dc253c075",
+        "title": "Root discriminant as a tower-invariant obstruction detector"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contrast with heuristic frequency and the exact Hilbert-class-field mechanism.",
+          "line_end": 298,
+          "line_start": 282,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "One degree formula is OCR-damaged, but the invariance and contradiction argument are recoverable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Passing to the Hilbert class field preserves root discriminant while multiplying degree, so a degree-sensitive lower bound can rule out a nontrivial extension and certify class number one; weaker versions bound the class number before algebraic refinement.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Root-discriminant invariance turns lower bounds into class-number certificates",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u08.txt",
+          "unit_bytes": 1154,
+          "unit_id": "full_openalex_w2010828369_u08",
+          "unit_sha256": "12a7a84bf498cbbebcdfe38a2b7a61b1badf87376d7886793265622af222ef2f",
+          "unit_type": "application mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "An invariant-preserving lift turns an arithmetic quantity that is difficult to inspect directly into a forbidden extension-size problem. Root-discriminant invariance supplies the fixed value, and degree growth supplies the axis along which lower bounds become a contradiction certificate.",
+            "nonparaphrase_operation": "The Hilbert class field is the bridge object: it represents class number as extension degree while retaining root discriminant, connecting analytic discriminant estimates to algebraic class-group conclusions.",
+            "quality_reason": "The span explicitly presents the Hilbert class field as the basic tool for bounding class numbers, preserves root discriminant in the extension, and uses a discriminant lower-bound contradiction to conclude L=K and h=1. It also states that more sophisticated applications obtain class-number upper bounds analytically and then lower them algebraically, while distinguishing these results from heuristic frequency and the open infinitude question.",
+            "source_support": "If a field K has class number h, its Hilbert class field L has degree governed by h and the same root discriminant as K. If discriminant lower bounds force every nontrivial candidate L of the relevant degree to have root discriminant larger than that preserved value, then L=K and h=1. More generally, analytic bounds first give class-number upper bounds that algebraic methods can lower.",
+            "speculation_status": "The argument certifies particular fields and does not resolve the contrasting heuristic expectation that class number one is frequent or the open question of whether infinitely many such fields exist. The degree display is OCR-damaged, so the exact equation should be recovered from the scan, but the invariance-and-contradiction mechanism is explicit in the prose. The invariant-preserving lift and forbidden-extension-size formulation accurately exposes the contradiction mechanism without claiming a general classification. Saying the extension degree is governed by h stays at the strategy level permitted by the damaged degree display. The exact degree equation and one comparison in the contradiction are OCR-damaged; the candidate does not reconstruct their precise notation and explicitly requests scan recovery."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Exact displayed bounds are omitted, so the unit records the qualitative counterexample mechanism rather than constants.",
+          "line_end": 326,
+          "line_start": 299,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed numerical bounds and one explicit field formula are missing or damaged; scan verification is required for quantitative reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The old conjecture that minimal root discriminants grow with degree would force all Hilbert class field towers to terminate; Golod-Shafarevich towers and Martinet sequences provide the structural obstruction and replace that expectation with bounded-root-discriminant families.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Infinite class-field towers defeat divergence of minimal root discriminants",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u09.txt",
+          "unit_bytes": 886,
+          "unit_id": "full_openalex_w2010828369_u09",
+          "unit_sha256": "d0482dbb2ebf6041a8147d58280652ea4a765542b6fa920f4fae964e217dd27f",
+          "unit_type": "counterexample and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A tower is a counterexample generator: repeated degree growth combined with invariant root discriminant invalidates a global growth expectation. The useful obstruction is structural rather than a single exceptional numerical field.",
+            "nonparaphrase_operation": "Hilbert class field towers bridge ramification behavior to asymptotic degree families; root discriminant is the tower-stable statistic that makes the contradiction visible.",
+            "quality_reason": "The span says the conjecture d_n tending to infinity would force Hilbert class field towers to terminate, but Golod-Shafarevich proved infinite towers exist. It reports Martinet sequences in degrees that are powers of 2 and five times powers of 2 and clearly labels an additional proposed infinite tower as unproved.",
+            "source_support": "The former conjecture d_n tending to infinity would have forced all Hilbert class field towers to terminate. Golod-Shafarevich proved that infinite towers exist, and Martinet supplied infinite totally real and totally complex sequences in degrees built from powers of 2 with bounded root discriminant. A further displayed field is only conjectured to have an infinite tower.",
+            "speculation_status": "These constructions establish bounded root discriminant along restricted degree subsequences, not a classification of minimal discriminants in every degree. The additional candidate tower is explicitly unproved. The displayed numerical bounds and one field formula are missing or damaged, so only the qualitative counterexample mechanism is secure without scan verification. Using towers as structural counterexample generators and root discriminant as the stable statistic is the correct qualitative mechanism behind the stated contradiction. The candidate appropriately limits the conclusion to restricted degree subsequences and does not turn the conjectural example into evidence. The displayed root-discriminant bounds and proposed field data are absent or damaged, so only the qualitative bounded-family mechanism is secure; the candidate observes this boundary."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The table bodies are missing, so only comparisons explicitly stated in prose are retained.",
+          "line_end": 351,
+          "line_start": 327,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on absent Tables 1-4 for numerical verification; the qualitative anomaly and prime-degree question are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Near-contact between analytic lower bounds and known minima supplies a calibration signal, while the degree-seven anomaly challenges monotonicity and the tower constructions' small-prime-power degrees isolate prime degree as a distinct unresolved regime.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Small-discriminant data challenge degree monotonicity and expose prime-degree ignorance",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u10.txt",
+          "unit_bytes": 1542,
+          "unit_id": "full_openalex_w2010828369_u10",
+          "unit_sha256": "6b51fbaa0f044489675da67b2b41a07ca0b1ccdea4fb9a0643b8b90c14552cea",
+          "unit_type": "empirical falsification and open problem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Empirical near-contact between lower bounds and examples tests sharpness, but anomalies are equally informative because they falsify an overly simple degree trend. Decomposing degrees by arithmetic type isolates a regime not reached by the existing construction mechanism.",
+            "nonparaphrase_operation": "Tables align analytic lower certificates with constructed fields degree by degree; class-group primary components bridge tower methods to their restricted degree patterns, motivating the prime-degree subproblem.",
+            "quality_reason": "The prose reports that lower bounds are close to smallest known root discriminants in the stated regimes, identifies degree seven as anomalous, and says this suggests rather than proves nonmonotonicity. It gives a degree-nine field of prime discriminant whose minimality is unknown and explains that tower constructions use 2- or 3-primary class-group information, leaving prime degree essentially unknown and explicitly open. 'Adversarial calibration device' is rhetorical, but the candidate preserves the distinction between reported data, suggestion, and proof.",
+            "source_support": "The survey reports analytic lower bounds, especially conditional ones, close to the smallest known root discriminants for totally complex fields and mostly close for totally real fields, with degree seven anomalous enough to suggest nonmonotonicity. A degree-nine polynomial gives a field of prime discriminant whose minimality is unknown. Known infinite-tower constructions use small-primary parts of class groups and produce composite prime-power degree patterns, leaving boundedness of d_p for prime p open.",
+            "speculation_status": "Known minima are not proved minima in every case, the degree-seven observation only suggests nonmonotonicity, and no inference about prime degrees follows from small-prime-power tower families. Tables 1-4 are absent, so exact comparisons cannot be checked here; the qualitative anomaly and prime-degree open problem are explicit, while some displayed polynomial text is OCR-damaged. Treating near-contact as calibration and the anomaly as a challenge to a simple degree trend is faithful to the evidential status stated in the span. Separating prime degree from the degree patterns reached by existing tower constructions is the source's own motivation for Open Problem 2.4. Tables 1-4 and part of the polynomial are absent or damaged, so exact comparisons cannot be checked; the candidate restricts itself to the qualitative prose report."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Moving from a bare discriminant inequality to ideal-class zeta functions and regulator formulas preserves or produces information about class representatives and units that scalar discriminant bounds discard.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2010828369_u13",
+          "full_openalex_w2010828369_u14",
+          "full_openalex_w2010828369_u15"
+        ],
+        "proposed_limit": "This is a within-survey methodological relation; the displayed constants and proposed regulator inequality require scan recovery.",
+        "source_id": "openalex_w2010828369",
+        "synthesis_id": "riemann_v2_within_1d26317d35a3fdcfc711ae6c",
+        "title": "Analytic methods recover structure beyond a scalar discriminant"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unit stops before the analytic replacement for the geometric constants.",
+          "line_end": 523,
+          "line_start": 496,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The displayed norm and discriminant inequalities are missing; the implication and information-loss comparison are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Geometry-of-numbers product estimates imply a small-norm representative in every ideal class and hence a discriminant bound, but the implication loses ideal-class information that remains useful for other problems.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ideal-class norm bounds retain more structure than discriminant bounds",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u13.txt",
+          "unit_bytes": 1033,
+          "unit_id": "full_openalex_w2010828369_u13",
+          "unit_sha256": "f82b9b2795ae898455dc845587d0781952e1630e908b7cbb6f79763ba3a2b4a0",
+          "unit_type": "information comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logical implication is an information-losing projection: a family of witnesses indexed by ideal classes is compressed to one global discriminant bound. Comparing methods solely by the strength of the scalar endpoint can therefore hide structure retained by the geometric statement.",
+            "nonparaphrase_operation": "Products of linear forms bridge lattice geometry to small-norm ideals; ideal classes retain the witness-level organization, while the discriminant is the coarser scalar image.",
+            "quality_reason": "The span derives Minkowski-type small-norm representatives in every ideal class from products of linear forms and says the constants are independent of the field. It explicitly says the norm estimate immediately implies a discriminant bound and that the former contains more information and is useful in other problems.",
+            "source_support": "Small-product results for systems of linear forms yield Minkowski-type estimates asserting that every ideal class contains an ideal of bounded norm, with constants independent of the field. Using the lower bound on ideal norm gives a discriminant bound, but the original ideal-class norm estimate contains information useful beyond the resulting scalar inequality.",
+            "speculation_status": "The analytic discriminant bounds may be numerically stronger but do not automatically recover the class-wise representatives. The span does not provide the displayed inequalities or their constants. Formula loss prevents quantitative comparison of Minkowski constants, but the implication and its information-loss direction are stated explicitly. Describing the implication as a lossy projection from class-indexed witnesses to a scalar discriminant inequality accurately captures the stated direction of information loss. The warning that numerical comparison of scalar endpoints can hide retained class-wise structure follows directly from the source's contrast. Both displayed inequalities are missing, preventing quantitative comparison, but the implication and information ordering are explicit in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the extremality question for the underlying linear forms and the stated target for further improvement.",
+          "line_end": 565,
+          "line_start": 526,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Quantitative constants are partly missing; the method, consequence, and GRH obstruction are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Zimmert's analytic use of ideal-class zeta functions strengthens small-ideal representatives and recovers an unconditional discriminant bound, yet the lack of Euler products and failure of GRH for these functions blocks a naive conditional upgrade.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ideal-class zeta functions improve Minkowski constants but resist GRH import",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u14.txt",
+          "unit_bytes": 1677,
+          "unit_id": "full_openalex_w2010828369_u14",
+          "unit_sha256": "993eb48f6db396dafb3f02945eda32cbc5b749a7acafcd9c3e67ab22a92c720b",
+          "unit_type": "analytic transfer and limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analytic representation preserves ideal-class information that a bare discriminant bound loses, but that gain changes the available structure: without an Euler product or valid GRH, familiar conditional machinery cannot be transferred by analogy. Representation choice trades one kind of information for another.",
+            "nonparaphrase_operation": "Ideal-class zeta functions bridge analytic estimates to class-wise small ideals; the different and class inversion organize the paired alternative, while the induced discriminant inequality is a coarser consequence.",
+            "quality_reason": "The span says Zimmert uses ideal-class zeta functions to improve Minkowski constants, gives a paired class/different alternative, and obtains the unconditional discriminant bound with a worse error term. It explicitly leaves optimal constants, every-class estimates, and extremality of the integral-basis linear forms open, and says these zeta functions lack Euler products and generally fail GRH.",
+            "source_support": "Zimmert uses zeta functions of ideal classes to improve Minkowski constants and proves a stronger paired-class alternative involving a class, its inverse, and the different. This implies the unconditional discriminant bound with a worse error term. The survey asks for optimal constants and stronger estimates for every class, but notes that these zeta functions have no Euler product and do not generally satisfy GRH; it also leaves extremality of the integral-basis linear forms open.",
+            "speculation_status": "The method does not justify GRH-quality constants, does not yet give the desired estimate for every class, and applies to linear forms arising from integral bases whose extremality among all systems is unknown. Several constants and displayed estimates are missing, so exact quantitative claims need scan recovery; the method, unconditional consequence, and GRH obstruction are textually clear. The candidate correctly identifies a tradeoff: retaining class-sensitive analytic structure does not preserve the Euler-product and GRH machinery used in familiar conditional upgrades. Treating the induced discriminant inequality as a coarser consequence is consistent with both this span and the immediately preceding information comparison. Several displayed constants and class symbols are missing or damaged; the candidate avoids exact quantitative reuse and confines itself to the prose-recoverable mechanism."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Stops before a proposed bound whose formula is absent from the normalized source.",
+          "line_end": 585,
+          "line_start": 566,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The main inequality is missing, so retain the method lineage and qualitative comparison but not an exact bound.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Zimmert's ideal-class analytic machinery also yields regulator lower bounds, with Friedman variants improving small-degree behavior and later reformulation suggesting a path to stronger general estimates.",
+          "source_id": "openalex_w2010828369",
+          "source_normalized_sha256": "31601bedc109237d0c12a03775dcf1a12fceca0e264af6df0c5dae3a4ada67e9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Analytic regulator bounds extend the zeta-function strategy",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2010828369_u15.txt",
+          "unit_bytes": 1014,
+          "unit_id": "full_openalex_w2010828369_u15",
+          "unit_sha256": "4da1ca4e8f8665471812398d28a080d52c8b75daee42c7d522813d38ce30b5a7",
+          "unit_type": "method comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2010828369_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The regulator results separate three levels of evidence within one analytic line: Zimmert's bound is stated to improve Remak, Friedman's related method is effective in small degrees and proves the minimum regulator value 0.2052, and Friedman-Skoruppa's generalization and clearer formulation is only hoped to yield substantial further improvements. Thus clarification supplies a possible research route, not an achieved stronger bound; the optimal lower bounds as functions of signature and other field data remain open, and the absent main inequality prevents auditing the general mechanism or its exact dependence.",
+            "nonparaphrase_operation": "Classifies the method comparison by proof status and regime: established general improvement, established small-degree effectiveness, and prospective benefit from reformulation. This prevents a clearer representation from being mistaken for evidence that a better final bound has already been proved.",
+            "quality_reason": "Accepted after removing the preceding unit's unstated ideal-class-zeta mechanism and weakening the representation claim to the source's explicit hope; the surviving comparison is mathematically concrete despite the missing display.",
+            "source_support": "The span explicitly states Zimmert's analytic lower bound and its improvement over Remak, Friedman's related small-degree method and 0.2052 minimum, the later generalization and clearer formulation with a hope of improvement, and the open problem asking for best regulator lower bounds in terms of r1, r2, and further field data.",
+            "speculation_status": "The hoped-for future improvement is preserved as the source's speculation, not endorsed as a result. No ideal-class-zeta mechanism, zeta bridge, exact general inequality, or claim that cleaner representation is necessary for improvement is inferred."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c10788b39edd3303ec4ea85fe8ea0cd707939057c88a62e262f418fb2d7fafe8",
+        "dossier_sha256": "0c4f84fa379be5834c71df9c536d29644571a8d5f02233e653bedda6743fe4dd"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "b5a51f8a0372df4dd9c0153db7d7579ee595a53d7e283ca747deb142a21f2f19"
+}

@@ -1,0 +1,630 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "florea2025_zeta_moment_survey",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_florea2025_zeta_moment_survey_9c137860_part_01.jsonl",
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The coefficient truncation isolates the prime-dependent factor a_k, while unitary characteristic-polynomial moments isolate g_k; hybrid prime-zero models explain why both factors are required in the same conjectural constant.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey__depth_007",
+          "florea2025_zeta_moment_survey__depth_009",
+          "florea2025_zeta_moment_survey__depth_010",
+          "florea2025_zeta_moment_survey__depth_011"
+        ],
+        "proposed_limit": "This is a synthesis of heuristics and conjectures, not a proof of zeta moment asymptotics, and the full polynomial statement cited is restricted to integer k.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_07410186e064716a28089f48",
+        "title": "Arithmetic and universal factors in moment constants"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the first of two independent order-of-growth heuristics and includes the definition of a_k needed later.",
+          "line_end": 269,
+          "line_start": 241,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the generalized divisor coefficients, truncation, gamma normalization, and Euler product are carried by displays whose reading order is imperfect but recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts from a convergent shifted-moment mean value, moves it toward the critical line by truncating at the analytic conductor scale, and obtains the k-squared logarithmic exponent together with an Euler-product factor a_k. It isolates prime arithmetic as one component of the conjectural constant.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Truncated Dirichlet coefficients predict the moment exponent and arithmetic factor",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_007.txt",
+          "unit_bytes": 1806,
+          "unit_id": "florea2025_zeta_moment_survey__depth_007",
+          "unit_sha256": "fb26382a5b990bb8eeb9cd78767cbd1fa7e841030025cf6b79b6618211ac84ae",
+          "unit_type": "heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_007.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The T-scale truncation turns the divergent critical-line coefficient series into a finite multiplicative proxy. Accumulation of the squared generalized-divisor coefficients supplies the k² logarithmic exponent, while Euler factorization packages local prime arithmetic into a_k. This representation cleanly separates growth from prime-dependent weight, but it neither justifies the critical-line moment asymptotic nor determines the full leading constant.",
+            "nonparaphrase_operation": "Decomposes the heuristic into two mechanisms: coefficient-square accumulation controls the logarithmic order, and the Euler product resolves the arithmetic contribution prime by prime. The bridge gains a finite, multiplicative model at σ = 1/2 but loses a derivation of the complete moment constant; the unresolved proof burden is to justify the truncation as a model of the actual critical-line mean value and control what it omits.",
+            "quality_reason": "Accepted after the critic’s bounded normalization repair. The exact span supports a concrete coefficient-to-multiplicative bridge, its gain, and its limitation; the extraction-sensitive display is read conservatively as Γ(k + 1)^2 and is not conflated with the later Γ(k² + 1) factor.",
+            "source_support": "For σ > 1 the span states I_k(T, σ) ∼ T∑_{n≥1} d_k(n)^2/n^{2σ}; it then notes divergence at σ = 1/2 and gives ∑_{n≤T} d_k(n)^2/n ∼ a_k(log T)^{k²}/Γ(k + 1)^2. It defines a_k as ∏_p(1 - 1/p)^{k²}∑_{j≥0} d_k(p^j)^2/p^j and says the computation suggests the 2k-th moment growth rate. The displayed Γ(k + 1)^2 denominator is kept distinct from the later Γ(k² + 1) normalization.",
+            "speculation_status": "Source fact: the σ > 1 asymptotic, the displayed truncated-sum asymptotic, and the definition of a_k. Source-labeled heuristic: using the n ≤ T truncation to predict T(log T)^{k²} on the critical line. No proof of that moment asymptotic or identification of the full constant is asserted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the historical failure of earlier heuristics beyond small integer moments so the generality of the conjecture is visible.",
+          "line_end": 313,
+          "line_start": 289,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the normalization by Gamma, Barnes-G quotient, and integer product formula must be read exactly from the displays.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the conjectural leading constant into the arithmetic factor a_k and a second factor g_k, then states the Barnes-G formula valid for positive real k and its factorial specialization for integer k. This upgrades isolated guessed constants into a uniform law.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Keating-Snaith completes the moment constant",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_009.txt",
+          "unit_bytes": 1762,
+          "unit_id": "florea2025_zeta_moment_survey__depth_009",
+          "unit_sha256": "86a0dc4240fef345b3d6d64f285bf492ec5a380af037c6e9c68a02e64b4b3dfb",
+          "unit_type": "conjecture-and-factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_009.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The leading constant is decomposed into an arithmetic factor and a second, uniformly parameterized factor. Barnes G provides the analytic continuation in k that ad hoc higher-integer heuristics lacked.",
+            "nonparaphrase_operation": "The factorization C_k=a_kg_k/Γ(k²+1) is the bridge between the coefficient heuristic and the forthcoming random-matrix model; the integer product is a discrete check of the continuous formula.",
+            "quality_reason": "The candidate reproduces the conjectural limit, the factorization by a_k and g_k, the Barnes-G expression for positive real k, and the integer specialization. It correctly preserves the conjectural status and the integer-only scope of the factorial product. Low: the analysis explains what the uniform formula changes rather than merely restating it.",
+            "source_support": "The conjecture states that I_k(T)/[T(log T)^{k²}] tends to g_ka_k/Γ(k²+1) for positive real k, with g_k=Γ(k²+1)G(1+k)^2/G(1+2k). For integer k this reduces to a factorial product, extending earlier values such as g_3=42 and g_4=24024.",
+            "speculation_status": "The statement is a conjecture, not an established asymptotic. The factorial simplification applies to integer k, while the Barnes-G expression supplies the positive-real formulation. The normalization and Barnes-G quotient are legible but formula-dependent; no derivation is contained in this narrow span. Viewing Barnes G as a uniform positive-real parameterization replacing isolated integer guesses is supported by the historical contrast in the span. Calling the integer product a check of the continuous formula is interpretive but does not add a theorem. The Gamma and Barnes-G formulas are representation-sensitive, but the candidate transcribes their roles and normalization correctly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The chain from scaled zeros to group integral is retained as one unit because omitting density matching would make the representation choice look arbitrary.",
+          "line_end": 355,
+          "line_start": 315,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: zero/eigenphase scalings, density matching, determinant, and group integral are formula-dependent; surrounding prose keeps the chain interpretable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transfers Montgomery's local zero-statistics analogy to unitary eigenphases, matches mean densities to choose matrix size N approximately log(T/2pi), and replaces zeta by det(I-U). Evaluating characteristic-polynomial moments then produces the g_k factor and the k-squared polynomial degree.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero statistics select a unitary characteristic-polynomial model",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_010.txt",
+          "unit_bytes": 2868,
+          "unit_id": "florea2025_zeta_moment_survey__depth_010",
+          "unit_sha256": "de275583b0a0f5a70332d2f041c6f666f757d98df74ac68dff44b8197a70290e",
+          "unit_type": "representation-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_010.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation is calibrated by invariant statistical data—spacing law and density—before values are compared. This makes the matrix size an analogue of analytic height and explains why the universal factor depends on symmetry rather than primes.",
+            "nonparaphrase_operation": "Scaled zero heights map to normalized eigenphases, T maps to matrix dimension through density, and ζ maps to a characteristic polynomial. Haar integration turns the zeta moment question into a compact-group moment calculation.",
+            "quality_reason": "The chain from Montgomery's conjectural two-point/local zero statistics through unitary eigenphases, density matching N=log(T/2π), Z(U)=det(I-U), and the Haar group integral is present. The asymptotic g_kN^{k²}/Γ(k²+1) and exact degree-k² polynomial statement for positive integer k are preserved with their scopes. The candidate explicitly warns that the matrix analogy is not a proof and, using supplied after-context, that it omits a_k. Low: the analogy is made contentful by exact mappings and a computable group moment.",
+            "source_support": "Motivated by Montgomery's pair-correlation conjecture and GUE/unitary local statistics, the source matches scaled zeta zeros to unitary eigenphases and equates their mean densities to set N=log(T/2π). It models ζ by Z(U)=det(I−U) and evaluates ∫_{U(N)}|Z(U)|^{2k}dU, obtaining asymptotic g_kN^{k²}/Γ(k²+1); for positive integer k the integral is exactly a degree-k² polynomial in N.",
+            "speculation_status": "Pair-correlation evidence and density matching do not prove that zeta values have the full characteristic-polynomial distribution. The pure matrix model yields g_k but contains no prime arithmetic and therefore cannot recover a_k by itself. The extracted zero/eigenphase scaling is visually cramped, but the density match, determinant model, group integral, and polynomial degree are explicit. Describing the representation as calibrated by local spacing/correlation data and density is a reasonable compression of the two separate matching steps; it should not be read as a proved full spacing law. Interpreting symmetry as the source of the universal factor is consistent with the group calculation and dossier relation. The zero and eigenphase scalings are visually cramped, but the density match, determinant, and group integral are prose-clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact polynomial claim here is stated for integer k and remains conjectural.",
+          "line_end": 366,
+          "line_start": 356,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate to high: the leading-coefficient normalization and polynomial degree are display-dependent, while the prime/zero limitation is explicit prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies a limitation of the pure matrix model—a_k has to be inserted—and records hybrid Euler-Hadamard and full moment-polynomial approaches that recombine primes and zeros or predict lower-order structure beyond the leading coefficient.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Reconciling universal matrix statistics with prime arithmetic",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_011.txt",
+          "unit_bytes": 732,
+          "unit_id": "florea2025_zeta_moment_survey__depth_011",
+          "unit_sha256": "9c404785db4c49e9d69c42c9e9220fa7fce5e6f5ad1fc4f4a5416fbe9f452b81",
+          "unit_type": "model-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_011.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Arithmetic Euler data and universal zero-statistical data are complementary rather than competing explanations. The polynomial refinement retains their leading synthesis while proposing structured lower-order terms.",
+            "nonparaphrase_operation": "The hybrid Euler–Hadamard viewpoint bridges prime and zero descriptions; P_k packages the entire conjectural asymptotic expansion rather than only its leading monomial.",
+            "quality_reason": "The source explicitly says the matrix computation supplies g_k while a_k must be inserted, cites a prime-zero approach, and states the integer-k CFKRS degree-k² polynomial conjecture with leading coefficient g_ka_k/(k²)!. The candidate retains the conjectural status, integer restriction, and absence of a coefficient derivation. Low: the complementary information loss of the matrix-only model is concrete.",
+            "source_support": "The source says the unitary calculation motivates g_k but requires the prime factor a_k to be inserted by hand. It cites a hybrid prime-and-zero approach recovering the leading conjecture and the CFKRS conjecture that, for integer k, I_k(T) is an integral of an explicit degree-k² polynomial P_k plus O(T^{1−δ}), with leading coefficient g_ka_k/(k²)!.",
+            "speculation_status": "A matrix-only representation is incomplete because it forgets primes. The polynomial formula is conjectural, restricted here to integer k, and the span does not derive its coefficients or admissible δ. The degree and leading coefficient are explicit; the detailed hybrid construction is only cited, not presented. Reading lower-degree terms of P_k as structured lower-order moment information follows from the polynomial integral formula. The Euler-Hadamard label comes from the assigned dossier, while the exact span itself supports only the stated combination of prime and zero information. The degree and leading coefficient are display-dependent but legible; the hybrid construction is only cited and the candidate says so."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_206c9d29ed6ff28103c5254adf298447dc43064d6a78e7ef9bec300faa835fae",
+        "dossier_sha256": "5abd59353e000b037d7a973958a55b19fad51f2eebe536e0b2da647ffc5d6419"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Both the earlier convexity argument and later prime-polynomial methods replace a difficult fractional zeta expression by tractable Dirichlet data, then control the discrepancy either analytically or by proving the exceptional set is negligible.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey__depth_005",
+          "florea2025_zeta_moment_survey__depth_014",
+          "florea2025_zeta_moment_survey__depth_015"
+        ],
+        "proposed_limit": "The discrepancy function in Heath-Brown's method and the exceptional blocks in the later RH-conditional methods are technically different objects; the shared pattern does not transfer their hypotheses or estimates automatically.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_fae552c8780dd364341392bc",
+        "title": "Surrogates plus rare-failure control across upper-bound methods"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span is kept intact because the definitions, comparison inequalities, mean-value scale, convexity transfer, and removal of the smoothing tails jointly form one mechanism.",
+          "line_end": 200,
+          "line_start": 151,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: exact powers and absolute-value delimiters are essential, and the extraction near line 174 is malformed. The prose and adjacent inequalities recover the conceptual mechanism, but the original scan should be checked before exact symbolic reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Approximates zeta^k through a finite divisor Dirichlet polynomial S, packages the mismatch as g=zeta^u-S^v, and compares smoothed functionals J, K, and L. Mean-value control of L plus Gabriel convexity transfers estimates between the critical line and a shifted line, turning the nonregular fractional-power problem into tractable surrogate and error terms.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dirichlet surrogate, discrepancy, and smoothed convexity comparison",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_005.txt",
+          "unit_bytes": 2586,
+          "unit_id": "florea2025_zeta_moment_survey__depth_005",
+          "unit_sha256": "ebf2b14dcd993604fec51f0ee34c8ad0aba09b3222e40a19f738cbe6733fbe0f",
+          "unit_type": "construction-and-proof-mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_005.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a surrogate-plus-error decomposition. The hard fractional object is not manipulated directly: a tractable finite approximation carries the main scale, an explicit discrepancy carries the proof burden, and smoothing makes vertical-line comparison stable.",
+            "nonparaphrase_operation": "S is the computable bridge from ζ^k to Dirichlet coefficients; g records exactly what that representation forgets. The triplet (J,K,L) turns pointwise algebra into inequalities between smoothed norms, and convexity transports those norms in σ.",
+            "quality_reason": "The definitions of S, g, w, J, K, and L, their comparison inequalities, Montgomery-Vaughan control of L, Gabriel convexity transfer, and smoothing-tail removal form the stated mechanism. The candidate preserves the different truncation lengths for upper and lower bounds and does not treat S alone as sufficient. Low: the roles of the surrogate, discrepancy, smoothed norms, and vertical-line transfer are individually identified.",
+            "source_support": "The source defines a truncated generalized-divisor polynomial S(s), the discrepancy g(s)=ζ^u(s)−S^v(s), a Gaussian-type weight w, and smoothed integrals J, K, and L for ζ, g, and S. Elementary comparison inequalities relate them; Montgomery–Vaughan gives L at and to the right of the critical line, Gabriel convexity transfers J and K between lines, and decay of w recovers bounds for I_k(T).",
+            "speculation_status": "The construction works only after controlling the discrepancy through the stated convexity machinery; approximation by S alone is not the result. Smoothing tails must also be removed, and the choices of N differ between upper and lower bounds. The extraction of K's integrand near the displayed definition is malformed, so its exact absolute-value and exponent syntax should be checked against the original scan before symbolic reuse. The surrounding prose and inequalities support the stated mechanism. The surrogate-plus-explicit-error description accurately compresses the algebra and division of proof burden. The K integrand is malformed in extraction; the candidate appropriately refuses exact symbolic reuse and relies only on surrounding prose and inequalities."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Equation (11) supplies the majorant; the prose immediately after it explains the two-scale allocation of moment budget.",
+          "line_end": 421,
+          "line_start": 401,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the weighted von Mangoldt sum and log T/log x penalty are central; PDF extraction fragments the denominator but the checked prose fixes its role.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Under RH, upper-bounds log|zeta| by a prime-supported Dirichlet polynomial plus a truncation penalty, splits primes into two scales, and trades computable high moments of small-prime sums against variance control for large primes. Markov bounds on large values convert these controls into an almost-sharp zeta moment estimate.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-sum majorants and asymmetric control of small and large primes",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_014.txt",
+          "unit_bytes": 1558,
+          "unit_id": "florea2025_zeta_moment_survey__depth_014",
+          "unit_sha256": "705cf968cbbd89406880373a6e75824a71594d507b6d97d049e6914e7ed88278",
+          "unit_type": "large-deviation-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_014.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Taking logarithms and expanding over primes changes a difficult multiplicative magnitude into an additive surrogate. The scale split is asymmetric because short sums permit deeper moment information while long-range contributions are controlled statistically.",
+            "nonparaphrase_operation": "The prime-supported Dirichlet polynomial is the bridge from ζ to computable mean values; its large-deviation distribution bridges back from pointwise majorants to integral moments.",
+            "quality_reason": "Under RH the span gives a one-sided weighted von Mangoldt polynomial majorant for log|ζ| with a log T/log x penalty. The two-scale allocation of computable high moments to small primes, variance control to larger primes, and Markov bounds for large values is explicitly described. Low: the candidate names the asymmetric resource allocation and tail-frequency operation.",
+            "source_support": "Soundararajan bounds log|ζ(1/2+it)| under RH by the real part of a weighted von Mangoldt Dirichlet polynomial up to x, plus a log T/log x penalty and a smaller error. Choosing x presents a tradeoff; splitting primes into two ranges permits more moment computations for small primes and variance control for larger primes. Markov inequalities applied to high moments bound large values and yield the almost-sharp moment estimate.",
+            "speculation_status": "The majorant is one-sided and conditional on RH, so it is neither an equality nor an unconditional model of ζ. The truncation penalty prevents taking x arbitrarily small, while available mean-value estimates prevent taking it arbitrarily large. PDF extraction fragments the denominator in the weighted sum, but the checked prose fixes the prime-sum role and the log T/log x tradeoff. Taking logarithms as a conversion from multiplicative magnitude to an additive prime surrogate is a faithful conceptual move. The stated lower and upper constraints on x are supported by the tradeoff between the penalty and moment computability. The weighted-sum denominator is fragmented, but the candidate does not reconstruct unsupported exact syntax and retains the prose-clear penalty."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The detailed beta_j, P_j, exceptional sets, and truncated-series inequality are included because together they explain why the iterative budget closes rather than merely naming a decomposition.",
+          "line_end": 489,
+          "line_start": 422,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: several thresholds, exponents, and the truncated Taylor expression are extraction-sensitive. The prose preserves the architecture, but exact constants should be checked against the scan before formal reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Refines the two-range method into many prime blocks, assigns decreasing powers as prime size grows, approximates exponentials by truncated Taylor polynomials on good sets, and shows bad blocks occur on sets too small to matter. Flexible truncation and length choices keep each resulting Dirichlet polynomial inside available mean-value theorems.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Harper's multiscale Taylor and exceptional-set iteration",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_015.txt",
+          "unit_bytes": 4575,
+          "unit_id": "florea2025_zeta_moment_survey__depth_015",
+          "unit_sha256": "1b88322a42bcd6094fb93671d7d4e3bf711c2941d0cc44facde47ba17e5c7b6f",
+          "unit_type": "multiscale-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_015.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a stopping-time-like decomposition across prime scales. Typical behavior is compressed into finite polynomial algebra, while atypical behavior is isolated and paid for by small measure; truncation depth is a resource allocated block by block.",
+            "nonparaphrase_operation": "The blocks P_j expose scale-local prime contributions, truncated exponentials bridge nonlinear weights to finite Dirichlet polynomials, and exceptional sets record where that bridge fails.",
+            "quality_reason": "The span partitions primes into blocks P_j with geometrically increasing β_j, applies block-dependent powers and truncated exponentials on good points, and bounds bad sets by high moments and Markov's inequality. It explicitly explains why Taylor orders keep resulting Dirichlet polynomials within mean-value range and why rarity defeats the exp(2k/β_r) loss. The candidate retains RH dependence, the a priori higher-moment input, and the suppression of prime squares in the simplified display. Low: β_j, P_j, Taylor truncation, and exceptional sets make the multiscale description operational rather than generic.",
+            "source_support": "The prime polynomial is split into blocks P_j over intervals (T^{β_{j−1}},T^{β_j}], with geometrically increasing β_j. On points where blocks are small, exp(2k Re P_j) is replaced by a truncated Taylor polynomial whose order is chosen so the resulting Dirichlet polynomial remains short enough for mean-value theorems. Markov bounds make the first bad set negligible, and later sets T_r are controlled despite an exp(2k/β_r) loss because a large next block is rare.",
+            "speculation_status": "The displayed P_j is explicitly simplified and prime-square terms are suppressed. The argument uses the RH-conditional majorant and an a priori upper bound on a higher moment; exact constants, thresholds, and truncation orders cannot be exported from this survey sketch alone. The architecture is prose-complete, but β_j, exceptional thresholds, and formula (12) are extraction-sensitive and require the scan before exact symbolic reuse. The stopping-time-like and blockwise resource-allocation language accurately captures the first-failing-block sets T_r without importing a formal stopping-time theorem. Thresholds and formula (12) are extraction-sensitive; the candidate appropriately limits exact reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_206c9d29ed6ff28103c5254adf298447dc43064d6a78e7ef9bec300faa835fae",
+        "dossier_sha256": "5abd59353e000b037d7a973958a55b19fad51f2eebe536e0b2da647ffc5d6419"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A moment computable with a short Dirichlet-polynomial insertion acts as an anchor: upper bounds propagate to smaller moments, while suitable first- and second-moment anchors propagate lower bounds above and below the first moment.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey__depth_016",
+          "florea2025_zeta_moment_survey__depth_017"
+        ],
+        "proposed_limit": "The survey states these principles only roughly; exact admissible twists, errors, and family hypotheses must be recovered from the cited works before theorem-level use.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_10fed3a6845d84c22d2c5f40",
+        "title": "Twisted anchor moments as bidirectional range extenders"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The earlier discrete fractional ranges are included to show what the propagation principle improves.",
+          "line_end": 506,
+          "line_start": 490,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to moderate: the operative principle is prose-complete; exact k-ranges and the fourth-moment anchor are notation-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Formulates the principle that computing a moment with room to spare—equivalently with a short Dirichlet-polynomial twist—can yield sharp upper bounds for smaller moments. The zeta implementation combines an iterative scheme with a twisted fourth-moment input to reach the full interval from zero to two.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twisted anchor moments propagate unconditional upper bounds downward",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_016.txt",
+          "unit_bytes": 1257,
+          "unit_id": "florea2025_zeta_moment_survey__depth_016",
+          "unit_sha256": "8482e6ac5dc4f393834bbc79e63abf023e8784246919ed8d1323b595063d8ace",
+          "unit_type": "upper-bound-principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_016.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The twist acts as controlled perturbational information around an anchor moment. Rather than compute every fractional moment separately, one transfers usable slack from a stronger known mean value to a continuum of smaller exponents.",
+            "nonparaphrase_operation": "A short Dirichlet polynomial is the bridge object: it probes correlations left invisible by the untwisted anchor and supplies the error margin needed by the iterative propagation.",
+            "quality_reason": "The source states the rough upper-bound principle: a k-th moment computed with power-saving room, equivalently with a short Dirichlet-polynomial twist, can give sharp upper bounds for moments below k. It records the unconditional 0≤k≤2 result and its use of an iterative scheme plus a twisted fourth moment. Low to moderate: 'bridge object' language could be generic, but here it is tied to the exact short-twist/power-saving equivalence and the direction k' < k.",
+            "source_support": "After earlier discrete unconditional ranges, the source states the Radziwiłł–Soundararajan upper-bound principle: computing a k-th moment with a power-saving error, equivalently with a short Dirichlet-polynomial twist, can yield sharp upper bounds for moments below k. Heap–Radziwiłł–Soundararajan combine an iterative scheme with a twisted fourth-moment input to prove the sharp upper bound for all real 0≤k≤2.",
+            "speculation_status": "The principle is stated only roughly; exact twist lengths, power savings, and family hypotheses are absent. It yields upper bounds, not asymptotics, and this zeta application stops at k=2. The operative principle and final range are clear; technical admissibility conditions must be recovered from the cited papers. Calling the twisted moment an anchor and the available power saving transferable slack is a faithful compression of the downward-propagation principle. The language that a twist probes otherwise hidden correlations is interpretive, but it is bounded by the candidate's explicit warning that admissible twists and hypotheses are absent. The principle is expressly rough; the candidate does not supply unrecorded twist lengths, errors, or family conditions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the historical coverage of k at least one and then zero below k at most one so the final all-positive-moment closure is explicit.",
+          "line_end": 523,
+          "line_start": 507,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to moderate: the direction of propagation and anchor moments are clear in prose, while exact ranges depend on the displayed k notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Summarizes how short Dirichlet-polynomial twists turn a computable mean value into sharp lower bounds above an anchor and how a twisted second moment also reaches below the first moment. It contrasts this interpolation-like route with an independent route through lower bounds for large deviations in Selberg's central limit theorem.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twisted mean values propagate lower bounds on both sides of the first moment",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_017.txt",
+          "unit_bytes": 1516,
+          "unit_id": "florea2025_zeta_moment_survey__depth_017",
+          "unit_sha256": "7c18cded1bc56a9ea5d406ba3017038a6bae06bf335644c6f3cd547c3bc6b406",
+          "unit_type": "lower-bound-principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_017.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Anchor moments plus controlled twists extend a theorem across exponent space, while the large-deviation route shows that tail mass is an alternative source of the same lower-bound scale.",
+            "nonparaphrase_operation": "Short twisted Dirichlet polynomials encode correlations used in moment interpolation-like arguments; lower tail-frequency estimates bridge a probabilistic description of log|ζ| to positive moment mass.",
+            "quality_reason": "The historical ranges rational k, all k≥1, and 0<k≤1 are preserved. The source explicitly distinguishes twisted-mean propagation above the first moment, twisted-second-moment propagation below it, and Arguin-Bailey's separate large-deviation route to all positive moments. The candidate keeps these as lower bounds rather than asymptotics or upper bounds. Low: the two propagation directions and independent large-deviation mechanism make the reading contentful.",
+            "source_support": "The source traces sharp unconditional lower bounds from rational k to all k≥1 and then, through Heap–Soundararajan, to 0<k≤1. It summarizes a principle in which a mean value with a short Dirichlet-polynomial twist yields lower bounds above the first moment, while a twisted second moment yields bounds below it. Arguin–Bailey independently recover sharp lower bounds for all positive moments using lower large-deviation estimates in Selberg's central limit theorem.",
+            "speculation_status": "These are lower bounds, not full moment asymptotics or upper bounds. The propagation principle is only schematic in the survey, so exact admissible twists and family-dependent assumptions are not established here. The historical k-ranges and direction of propagation are clear; theorem-level conditions lie in the cited works. Describing exponent-space propagation and tail mass as two alternative sources of the same lower-bound scale is a faithful comparison of the two routes. 'Interpolation-like' is analogical language only; the candidate does not assert a formal interpolation theorem. The principles are survey-level and schematic; the candidate correctly leaves exact twist and family assumptions to the cited works."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_206c9d29ed6ff28103c5254adf298447dc43064d6a78e7ef9bec300faa835fae",
+        "dossier_sha256": "5abd59353e000b037d7a973958a55b19fad51f2eebe536e0b2da647ffc5d6419"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The source uses moments to constrain pointwise extremes in one direction and pointwise majorants plus tail estimates to bound moments in the other, making distributional control and extreme-value control mutually informative.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey__depth_001",
+          "florea2025_zeta_moment_survey__depth_002",
+          "florea2025_zeta_moment_survey__depth_003",
+          "florea2025_zeta_moment_survey__depth_014"
+        ],
+        "proposed_limit": "The equivalence with Lindelof needs the full family of integer moment bounds, while the prime-sum majorant route is conditional on RH and does not supply a symmetric equivalence.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_82ed1d7e927df007a14bb16c",
+        "title": "Average-to-extreme duality"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the definitions of zeta and I_k and the surrounding motivation; the prime-counting example continues immediately after this span in the next unit.",
+          "line_end": 53,
+          "line_start": 28,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: the definitions and implications are clear in prose, but the extracted displayed sums and integrals must be retained with their notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines shifted and critical-line moments and explains that the full family of near-linear moment bounds is equivalent to Lindelof, while RH supplies a stronger zero-location premise with prime-distribution consequences. This fixes why moment growth is an informative proxy for extreme values rather than merely an integral statistic.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moments as an average-to-pointwise bridge",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_001.txt",
+          "unit_bytes": 2606,
+          "unit_id": "florea2025_zeta_moment_survey__depth_001",
+          "unit_sha256": "b9033748688e4fa72bc2815e163dadfe338c889d9c94c371839e28208696ec9f",
+          "unit_type": "definition-and-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_001.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The moment index is an adjustable sensitivity to extremes: a single average can hide spikes, whereas control of the whole integer family constrains them strongly enough to recover a pointwise growth law.",
+            "nonparaphrase_operation": "The bridge object is the L^{2k}-type integral on the critical line. It compresses the value distribution of ζ into a scalar while retaining progressively more information about its upper tail as k grows.",
+            "quality_reason": "The span defines the shifted and critical-line moments and states the equivalence between Lindelöf and near-linear bounds for every integer moment. The candidate preserves that RH is a stronger premise and that one fixed moment does not give the equivalence. Low: the candidate goes beyond restatement by identifying the adjustable tail-sensitivity mechanism without promoting it to a proof.",
+            "source_support": "The source defines ζ(s), its shifted moments I_k(T,σ)=∫_1^T|ζ(σ+it)|^{2k}dt, and I_k(T)=I_k(T,1/2). It states that I_k(T)≪T^{1+ε} for every integer k is equivalent to the Lindelöf hypothesis, while RH implies Lindelöf and links zero location to prime-distribution statements.",
+            "speculation_status": "The equivalence requires the full family of integer moment bounds; one fixed moment is insufficient. RH is presented as a stronger premise, not as a consequence of these moment estimates, and the prime-counting example is completed only in the next unit. The definitions and implication directions are clear, but the extracted displays are notation-sensitive and the span ends mid-example. Describing increasing k as increasing sensitivity to rare large values is a sound non-paraphrase reading of the L^{2k}-type integral. The sum and integral displays are notation-sensitive and the span ends before the prime-counting example is completed; the candidate explicitly respects that boundary."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Begins with the strong PNT error-term consequence referenced at the end of the preceding unit and then focuses on pointwise zeta bounds.",
+          "line_end": 94,
+          "line_start": 59,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: several exponents and the prime-counting display are formula-sensitive; prose makes the implication hierarchy recoverable despite PDF line wrapping.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places RH-implied subexponential control, unconditional convexity, and successive subconvexity exponents in one hierarchy. The comparison exposes how analytic continuation and functional symmetry give a baseline and how improvement below that baseline becomes a distinct structural problem.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Conditional, convexity, and subconvex pointwise regimes",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_002.txt",
+          "unit_bytes": 2481,
+          "unit_id": "florea2025_zeta_moment_survey__depth_002",
+          "unit_sha256": "245cb4cd41610c574991fa9f72ff353b4275a27940217c96ae49e71cb66cfc49",
+          "unit_type": "comparison-of-bounds",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_002.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Convexity supplies a canonical unconditional baseline from analytic continuation and functional symmetry. Subconvexity is then a sharply defined improvement problem, while Lindelöf and RH occupy distinct, stronger logical levels.",
+            "nonparaphrase_operation": "Writing all results as growth majorants on the critical line makes conditional assumptions and exponent improvements directly comparable; the exponent is the compressed progress coordinate.",
+            "quality_reason": "The RH-conditional Littlewood bound, unconditional convexity exponent 1/4, Weyl exponent 1/6, and Bourgain exponent 13/84 are all present. The candidate correctly separates RH, Lindelöf, convexity, and subconvexity and does not infer RH from an improved power exponent. Low: the hierarchy and baseline/improvement distinction are source-specific rather than a generic representation slogan.",
+            "source_support": "The source records an RH-equivalent strong prime-number-theorem error term, Littlewood's RH-conditional subexponential bound for ζ(1/2+it), the convexity bound |ζ(1/2+it)|≪|t|^{1/4+ε} from the functional equation and Phragmén–Lindelöf, and subconvex exponents including Weyl's 1/6 and Bourgain's 13/84.",
+            "speculation_status": "None of the stated unconditional subconvex estimates reaches the t^ε Lindelöf scale, and a better power exponent does not establish RH. The prime-gap and prime-counting consequences are applications or equivalences with stronger hypotheses, not consequences of the listed subconvex record alone. Several exponents and the opening prime-counting display are extraction-sensitive, but the prose fixes the hierarchy and the cited 1/4, 1/6, and 13/84 exponents. Treating the exponent as a compressed progress coordinate is a faithful comparison move across the displayed majorants. The opening PNT formula and several exponents are extraction-sensitive, but the prose and displays support the candidate's implication directions and quoted exponents."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Carries the narrative through the pre-Heath-Brown ranges and stops just before the theorem statement.",
+          "line_end": 139,
+          "line_start": 95,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate: exact moment indices, powers, and inequality directions depend on the displays, which are legible though vertically fragmented.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows the historical shift from using moments to control extremes, through exact low moments and a high-moment bound, to the general target T(log T)^(k^2). It distinguishes inaccessible full asymptotics from the weaker but structurally sharp upper and lower order-of-magnitude goals.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "From known moments to the sharp-order moment problem",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_003.txt",
+          "unit_bytes": 3004,
+          "unit_id": "florea2025_zeta_moment_survey__depth_003",
+          "unit_sha256": "aeaa3b5e930808faee7f3c640ead25e994ebb09d4b39fe4862d494155bfbbfde",
+          "unit_type": "motivation-and-target",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_003.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The k² law organizes scattered results into a single moment landscape. It also cleanly separates three epistemic levels: exact asymptotic, correct order of magnitude, and weaker bounds with extra losses.",
+            "nonparaphrase_operation": "Parameterizing the 2k-th moments by k turns isolated theorems into points or ranges on one scale; high moments also bridge back to pointwise control by amplifying large values.",
+            "quality_reason": "The span reviews I_1 and I_2 asymptotics, the polynomial fourth-moment refinement, the I_6 upper bound, and the conjectural T(log T)^{k²} scale. It explicitly distinguishes a full asymptotic from sharp upper and lower order-of-magnitude bounds and records their differing historical hypotheses and ranges. Low: the candidate performs a comparison across epistemic levels rather than merely repeating the formulas.",
+            "source_support": "The source reviews asymptotics for I_1 and I_2, Heath-Brown's polynomial refinement of the fourth moment, and the bound I_6(T)≪T^{2+ε}, which yields Weyl's pointwise exponent. It then states the conjectural asymptotic I_k(T)∼C_kT(log T)^{k²} and the weaker sharp-order goals I_k(T)≫ and ≪ T(log T)^{k²}, with pre-1981 conditional and unconditional ranges.",
+            "speculation_status": "The general asymptotic and its constant are heuristic targets here, not proved results. Sharp lower and upper bounds have different historical ranges and hypotheses, so success on one side does not supply the other. The displayed powers and moment indices are vertically fragmented in extraction, but the target k² exponent and the direction of each bound are explicit. Organizing the results into exact asymptotic, correct order, and lossy-bound levels is a useful source-grounded conceptual compression. The high-moment-to-pointwise bridge is explicitly stated for I_6 and the Weyl bound. Powers and indices are vertically fragmented, but the k² target and inequality directions remain legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Equation (11) supplies the majorant; the prose immediately after it explains the two-scale allocation of moment budget.",
+          "line_end": 421,
+          "line_start": 401,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the weighted von Mangoldt sum and log T/log x penalty are central; PDF extraction fragments the denominator but the checked prose fixes its role.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Under RH, upper-bounds log|zeta| by a prime-supported Dirichlet polynomial plus a truncation penalty, splits primes into two scales, and trades computable high moments of small-prime sums against variance control for large primes. Markov bounds on large values convert these controls into an almost-sharp zeta moment estimate.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-sum majorants and asymmetric control of small and large primes",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_014.txt",
+          "unit_bytes": 1558,
+          "unit_id": "florea2025_zeta_moment_survey__depth_014",
+          "unit_sha256": "705cf968cbbd89406880373a6e75824a71594d507b6d97d049e6914e7ed88278",
+          "unit_type": "large-deviation-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_014.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Taking logarithms and expanding over primes changes a difficult multiplicative magnitude into an additive surrogate. The scale split is asymmetric because short sums permit deeper moment information while long-range contributions are controlled statistically.",
+            "nonparaphrase_operation": "The prime-supported Dirichlet polynomial is the bridge from ζ to computable mean values; its large-deviation distribution bridges back from pointwise majorants to integral moments.",
+            "quality_reason": "Under RH the span gives a one-sided weighted von Mangoldt polynomial majorant for log|ζ| with a log T/log x penalty. The two-scale allocation of computable high moments to small primes, variance control to larger primes, and Markov bounds for large values is explicitly described. Low: the candidate names the asymmetric resource allocation and tail-frequency operation.",
+            "source_support": "Soundararajan bounds log|ζ(1/2+it)| under RH by the real part of a weighted von Mangoldt Dirichlet polynomial up to x, plus a log T/log x penalty and a smaller error. Choosing x presents a tradeoff; splitting primes into two ranges permits more moment computations for small primes and variance control for larger primes. Markov inequalities applied to high moments bound large values and yield the almost-sharp moment estimate.",
+            "speculation_status": "The majorant is one-sided and conditional on RH, so it is neither an equality nor an unconditional model of ζ. The truncation penalty prevents taking x arbitrarily small, while available mean-value estimates prevent taking it arbitrarily large. PDF extraction fragments the denominator in the weighted sum, but the checked prose fixes the prime-sum role and the log T/log x tradeoff. Taking logarithms as a conversion from multiplicative magnitude to an additive prime surrogate is a faithful conceptual move. The stated lower and upper constraints on x are supported by the tradeoff between the penalty and moment computability. The weighted-sum denominator is fragmented, but the candidate does not reconstruct unsupported exact syntax and retains the prose-clear penalty."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_206c9d29ed6ff28103c5254adf298447dc43064d6a78e7ef9bec300faa835fae",
+        "dossier_sha256": "5abd59353e000b037d7a973958a55b19fad51f2eebe536e0b2da647ffc5d6419"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Local zero statistics and density matching select a compact-group characteristic-polynomial model, and the symmetry type of an L-function family determines which group supplies its universal moment factor.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey__depth_010",
+          "florea2025_zeta_moment_survey__depth_012"
+        ],
+        "proposed_limit": "The representation is conjectural and does not by itself recover the prime-dependent arithmetic factor or prove transfer for any specific family.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_c1ec40125cfe436dc4cdc41e",
+        "title": "Symmetry-guided representation selection"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The chain from scaled zeros to group integral is retained as one unit because omitting density matching would make the representation choice look arbitrary.",
+          "line_end": 355,
+          "line_start": 315,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: zero/eigenphase scalings, density matching, determinant, and group integral are formula-dependent; surrounding prose keeps the chain interpretable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transfers Montgomery's local zero-statistics analogy to unitary eigenphases, matches mean densities to choose matrix size N approximately log(T/2pi), and replaces zeta by det(I-U). Evaluating characteristic-polynomial moments then produces the g_k factor and the k-squared polynomial degree.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero statistics select a unitary characteristic-polynomial model",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_010.txt",
+          "unit_bytes": 2868,
+          "unit_id": "florea2025_zeta_moment_survey__depth_010",
+          "unit_sha256": "de275583b0a0f5a70332d2f041c6f666f757d98df74ac68dff44b8197a70290e",
+          "unit_type": "representation-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_010.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation is calibrated by invariant statistical data—spacing law and density—before values are compared. This makes the matrix size an analogue of analytic height and explains why the universal factor depends on symmetry rather than primes.",
+            "nonparaphrase_operation": "Scaled zero heights map to normalized eigenphases, T maps to matrix dimension through density, and ζ maps to a characteristic polynomial. Haar integration turns the zeta moment question into a compact-group moment calculation.",
+            "quality_reason": "The chain from Montgomery's conjectural two-point/local zero statistics through unitary eigenphases, density matching N=log(T/2π), Z(U)=det(I-U), and the Haar group integral is present. The asymptotic g_kN^{k²}/Γ(k²+1) and exact degree-k² polynomial statement for positive integer k are preserved with their scopes. The candidate explicitly warns that the matrix analogy is not a proof and, using supplied after-context, that it omits a_k. Low: the analogy is made contentful by exact mappings and a computable group moment.",
+            "source_support": "Motivated by Montgomery's pair-correlation conjecture and GUE/unitary local statistics, the source matches scaled zeta zeros to unitary eigenphases and equates their mean densities to set N=log(T/2π). It models ζ by Z(U)=det(I−U) and evaluates ∫_{U(N)}|Z(U)|^{2k}dU, obtaining asymptotic g_kN^{k²}/Γ(k²+1); for positive integer k the integral is exactly a degree-k² polynomial in N.",
+            "speculation_status": "Pair-correlation evidence and density matching do not prove that zeta values have the full characteristic-polynomial distribution. The pure matrix model yields g_k but contains no prime arithmetic and therefore cannot recover a_k by itself. The extracted zero/eigenphase scaling is visually cramped, but the density match, determinant model, group integral, and polynomial degree are explicit. Describing the representation as calibrated by local spacing/correlation data and density is a reasonable compression of the two separate matching steps; it should not be read as a proved full spacing law. Interpreting symmetry as the source of the universal factor is consistent with the group calculation and dossier relation. The zero and eigenphase scalings are visually cramped, but the density match, determinant, and group integral are prose-clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a concise survey-level transfer map rather than a derivation of any family-specific constant.",
+          "line_end": 376,
+          "line_start": 367,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to moderate: compact-group names and the central-point location matter, but the conceptual transfer is prose-complete.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains how zero distributions in families select unitary, symplectic, or orthogonal compact groups, allowing the characteristic-polynomial recipe to generalize by symmetry type. It also records distinct multiple-Dirichlet-series and long-Dirichlet-approximation routes to the same family of conjectures.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Symmetry type transfers the moment model across L-function families",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey__depth_012.txt",
+          "unit_bytes": 860,
+          "unit_id": "florea2025_zeta_moment_survey__depth_012",
+          "unit_sha256": "72277e08a9d0f7d9b33cd1ed597f6c99aa18d39ef36131f0f17f104553ea7d8f",
+          "unit_type": "structural-generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey__depth_012.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry type becomes a representation-selection rule: it determines the universal spectral model without treating every L-function family as analytically identical.",
+            "nonparaphrase_operation": "Local zero distributions bridge an L-function family to a compact group; characteristic-polynomial moments then transfer a common calculation across families. Alternative Dirichlet representations provide an arithmetic route to related conjectures.",
+            "quality_reason": "The span maps zero distributions in L-function families to U(N), USp(2N), SO(2N), or SO(2N+1) and selects corresponding random-matrix moment models. It also records multiple-Dirichlet-series and long-Dirichlet-approximation routes without claiming their derivations. Low: the candidate preserves distinct symmetry and arithmetic routes rather than flattening them into a generic analogy.",
+            "source_support": "Katz–Sarnak predicts that zeros near the central point in L-function families match eigenvalues near 1 in U(N), USp(2N), SO(2N), or SO(2N+1). Keating–Snaith-style moment conjectures then use the corresponding compact group. The source also notes multiple-Dirichlet-series and long-Dirichlet-approximation routes for particular families and for ζ.",
+            "speculation_status": "This is a survey-level transfer map, not a derivation of any family-specific moment constant or theorem. Symmetry selection alone does not recover arithmetic factors or prove the conjectured correspondence. The group names and central-point correspondence are prose-clear; family-specific hypotheses and constants are outside the span. Calling symmetry type a representation-selection rule is the non-paraphrase operation directly licensed by the compact-group choice. The warning that symmetry alone omits family arithmetic is supported by supplied bounded before-context and the dossier relation. This is only a survey-level transfer map; the candidate does not invent family-specific constants or hypotheses."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_206c9d29ed6ff28103c5254adf298447dc43064d6a78e7ef9bec300faa835fae",
+        "dossier_sha256": "5abd59353e000b037d7a973958a55b19fad51f2eebe536e0b2da647ffc5d6419"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2004d2ff2ddf7c8d233356412fd502b2c6b9d9f70c5254e9e85ab3fd8f3348f3"
+}

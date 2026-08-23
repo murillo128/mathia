@@ -1,0 +1,388 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2164522729",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2164522729_b351af9a_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Power terms can dominate zero errors, and spectral structure can force all zero residues to vanish.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2164522729_v2_u12",
+          "full_openalex_w2164522729_v2_u13"
+        ],
+        "proposed_limit": "Shown for this circle theta series, not classified generally.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_09c901d62da4d1d52fbea181",
+        "title": "Visibility is observable-specific"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Contrasts with the visible discriminant oscillations.",
+          "line_end": 651,
+          "line_start": 544,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent theta representation, average, and exponent comparison.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Poisson resummation gives monotone convergence while a square-root correction dominates the zero-dependent terms.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A theta example hides zero oscillations behind a power term",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u12.txt",
+          "unit_bytes": 5662,
+          "unit_id": "full_openalex_w2164522729_v2_u12",
+          "unit_sha256": "9ca279b8b0f603ce0a10dc30fb1199e1cdb9e4cb908b8775a00836a0a8c888a7",
+          "unit_type": "counterexample and dominance comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For the circle-theta observable, Poisson resummation yields an exact constant term a₀(τ₂,R)=R+R⁻¹-√τ₂ plus positive exponentially small sums, converging to R+R⁻¹, while the modular average is (π/3)(R+R⁻¹). Because √τ₂ decays more slowly than τ₂^(1-ρ/2) when 1/2≤sup Re(ρ)<1, the deterministic moderate-growth correction masks the zero-indexed scale. The representation gains a positive, R↔R⁻¹-symmetric formula and a dominance comparison; it loses visibility of the oscillatory channel, so absence of visible oscillations here cannot support a universal absence claim.",
+            "nonparaphrase_operation": "Contrasts two asymptotic scales to diagnose masking and uses the dual representation to separate an observable-specific algebraic correction from the formally present zero-indexed terms.",
+            "quality_reason": "Accepted after restoring the omitted -√τ₂ term, which is the actual dominance mechanism identified by the critic. Despite formula-heavy extraction, the relevant signs, limit, symmetry, and exponent comparison are legible.",
+            "source_support": "The span gives the theta/Poincaré representation, Poisson-resummed momentum–winding form, moderate cusp growth, exact fundamental-domain average, explicit a₀ formula with the -√τ₂ term and positive exponential sums, monotone approach, and the exponent comparison with zeta-zero terms.",
+            "speculation_status": "Source-supported interpretation for this example only; it does not classify other observables or rely on the later stronger coefficient-vanishing result."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Blocks the assumption that every automorphic observable shows nonzero RH oscillations.",
+          "line_end": 696,
+          "line_start": 652,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Display-heavy orthogonality and residue calculation; prose states exact vanishing.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Inverse-Mellin Eisenstein representation and spectral orthogonality make each coefficient proportional to a completed-zeta value at its zero.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Orthogonality forces all zero residues to vanish in the theta example",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u13.txt",
+          "unit_bytes": 2064,
+          "unit_id": "full_openalex_w2164522729_v2_u13",
+          "unit_sha256": "dba800a1da4275116399701c1dc715e196647206c04882fb87aab86d5f97ef00",
+          "unit_type": "vanishing-residue obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Potential asymptotic modes are filtered by the observable's spectral projection; universal pole locations do not force every observable to couple to them.",
+            "nonparaphrase_operation": "The inverse-Eisenstein expansion and Laplacian spectral orthogonality bridge the theta observable to its zero residues.",
+            "quality_reason": "The span represents the theta series by an inverse Mellin transform of completed Eisenstein series, invokes their stated Laplacian orthogonality, and computes Cρ(R)=(1/2πi)R^(-ρ/2)[ζ*(ρ)]²=0. The candidate correctly presents this as an observable-specific obstruction to assuming nonzero zero-frequency residues.",
+            "source_support": "Writing the theta series as an inverse Mellin transform of completed Eisenstein series and using their stated orthogonality gives Cρ(R)=(1/2πi)R^(-ρ/2)[ζ*(ρ)]²=0 for every zero ρ.",
+            "speculation_status": "This is an obstruction to assuming that every automorphic constant term contains nonzero RH-frequency oscillations. The unit presents the orthogonality calculation formally and does not spell out regularization or generalized-eigenfunction normalization details. The language of spectral projection filtering potential asymptotic modes is a faithful abstraction of the displayed orthogonality calculation. The formal orthogonality and normalization displays carry analytic-detail risk, which the candidate explicitly acknowledges without reconstructing missing details."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d70f8ba214017683f01ec95fa1eac669a710175fcf3b7ead5775619ec1e0eb6e",
+        "dossier_sha256": "04e676f1fa289dcbefa384aea4c6ab1494c47b5d3e4744a317fa0a6fe3b0ef9b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The rational model exposes alternating coefficients and an energy comparison consistent with the predicted zero-error structure.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2164522729_v2_u19",
+          "full_openalex_w2164522729_v2_u20"
+        ],
+        "proposed_limit": "Truncated model-specific numerical consistency is not proof of RH.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_5415434a7934f81dc7469efc",
+        "title": "Explicit lattice calibration case"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The modular integral supplies the later comparison target.",
+          "line_end": 1225,
+          "line_start": 1129,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high character, convolution, and coefficient formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "An asymmetric orbifold and theta representation expose the Fourier constant term and coefficient-by-coefficient alternation in a tachyon-free vacuum.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A rational Scherk-Schwarz model realizes alternating coefficients",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u19.txt",
+          "unit_bytes": 5570,
+          "unit_id": "full_openalex_w2164522729_v2_u19",
+          "unit_sha256": "7efe4c36f1205a76a496756a48d41c0d0c9e6a0c346bb0693ab8074b2fd887d5",
+          "unit_type": "explicit model construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Choosing a rational representation converts a qualitative spectral constraint into parity-controlled coefficient identities that can be inspected level by level.",
+            "nonparaphrase_operation": "SO(8) characters → theta quotients → signed convolution coefficients → the τ₁-constant graded state sum.",
+            "quality_reason": "The asymmetric Z₂ generator (-1)^F I_L, rational SO(8) construction, theta expansions, convolution coefficients, and constant Fourier term are explicit. The span identifies b₀²=c₀² with absence of a physical tachyon, obtains 128 graded massless states from the next coefficient, and reports alternating bosonic and fermionic coefficients.",
+            "source_support": "The Scherk-Schwarz reduction is implemented by the asymmetric Z₂ generator (-1)^F I_L on a rational SO(8) lattice. Rewriting its partition function in theta functions yields convolution coefficients bₙ,cₙ and a constant Fourier term proportional to Σ[cₘ²-(-1)^m bₘ²]e^(-2π(m-1)τ₂); b₀²=c₀² removes a physical tachyon and the next coefficient gives 128 graded massless states.",
+            "speculation_status": "The construction is one specially calculable tachyon-free model and does not establish coefficient alternation for arbitrary Scherk-Schwarz compactifications. The detailed character and convolution displays are OCR-sensitive, though the source explicitly interprets the plotted coefficients as alternating bosons and fermions. The claim that the rational representation makes misalignment inspectable level by level accurately describes the explicit parity-controlled coefficient formulas. The character and convolution displays are OCR-sensitive, but the coefficient interpretation is stated in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Model-specific truncated numerical consistency, not proof of RH.",
+          "line_end": 1286,
+          "line_start": 1259,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figure caption and asymptotic display; no raw plotted data.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects explicit alternating coefficients to the general zero-frequency error and reports convergence toward vacuum energy.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Scherk-Schwarz sum shows RH-consistent energy oscillations",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u20.txt",
+          "unit_bytes": 1676,
+          "unit_id": "full_openalex_w2164522729_v2_u20",
+          "unit_sha256": "2a590a17b57518c76f6b45a012281241064ee83620bec3020512cc690798d404",
+          "unit_type": "model-level asymptotic check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The exponentially weighted signed Scherk–Schwarz coefficient sum g(τ₂) links microscopic boson–fermion misalignment to an RH-conditional macroscopic asymptotic: (3/π)Ωτ₂² plus a τ₂^(11/4) sum of cos((γ_m/2)log τ₂+φ_m). Subtracting the vacuum-energy trend and rescaling by τ₂^(-11/4) isolates the predicted zero-indexed oscillatory residual. This gains a model-level probe of the analytic error law but loses independent force because the figure supplies no raw data or goodness-of-fit, and establishing the asymptotic remains conditional on RH rather than evidence for it.",
+            "nonparaphrase_operation": "Separates trend from residual and maps the coefficient representation through the modular energy term to a zero-frequency diagnostic, while auditing the direction of evidential dependence.",
+            "quality_reason": "Accepted after removing Ω≈50 and the unsupported 'independently integrated' qualifier. The exact in-span asymptotic is preserved, with figure-only evidence and RH conditionality made explicit.",
+            "source_support": "The exact span defines g from alternating spectrum coefficients, displays the RH-conditional leading and oscillatory terms, and qualitatively reports that the rescaled error oscillates consistently with nontrivial zeta-zero positions.",
+            "speculation_status": "Model-specific qualitative consistency only, not a proof or independent test of RH. The source's hope that a false RH might produce a string counterexample remains speculative and computationally unresolved."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d70f8ba214017683f01ec95fa1eac669a710175fcf3b7ead5775619ec1e0eb6e",
+        "dossier_sha256": "04e676f1fa289dcbefa384aea4c6ab1494c47b5d3e4744a317fa0a6fe3b0ef9b"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A zero-constant-term singular component could leave a moderate remainder with a meaningful UV-IR relation; heterotic examples illustrate possible realizations.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2164522729_v2_u21",
+          "full_openalex_w2164522729_v2_u22",
+          "full_openalex_w2164522729_v2_u23",
+          "full_openalex_w2164522729_v2_u24",
+          "full_openalex_w2164522729_v2_u25"
+        ],
+        "proposed_limit": "No general theorem or natural split is known, completion can be nonunique, and numerics are indecisive.",
+        "source_id": "openalex_w2164522729",
+        "synthesis_id": "riemann_v2_within_648d20ff2b3ebc071b1c4d48",
+        "title": "Conjectural recovery with unphysical tachyons"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Blocks naive inference from UV density to instability.",
+          "line_end": 1369,
+          "line_start": 1288,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Primarily the physical/unphysical tachyon and growth-class distinctions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains the absence of a rapid-growth theorem and why divergent free energy may coexist with asymptotic graded cancellation.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Physical tachyons sever the simple rapid-growth UV-IR link",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u21.txt",
+          "unit_bytes": 4644,
+          "unit_id": "full_openalex_w2164522729_v2_u21",
+          "unit_sha256": "ffcdb9d358603621bcee9ca2677573a26f18d96812a41b77ed3f2cd447f6e6e4",
+          "unit_type": "scope boundary and failed route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Two systems can share the same coarse ultraviolet cancellation while differing in infrared stability, so finer spectral structure is required to diagnose the tachyonic instability.",
+            "nonparaphrase_operation": "The cusp-growth class links tachyon type to theorem applicability, while the constant graded count contrasts UV asymptotics with divergent free energy.",
+            "quality_reason": "The span limits Rankin-Selberg-Zagier to at-most-moderate cusp growth and explains that physical or unphysical tachyons produce the excluded rapid-growth setting. For physical tachyons it states that free energy and relevant densities are generally divergent while freely acting deformations may still have graded counts vanishing as τ₂→0. It explicitly says no direct UV-density signature of instability has been established and finer spectral structure would be needed.",
+            "source_support": "Rankin-Selberg-Zagier covers at most moderate cusp growth, whereas tachyons give rapid growth. With physical tachyons the vacuum energy and relevant densities are generally divergent, yet freely acting deformations of supersymmetric parents may retain a graded count tending to zero as τ₂→0.",
+            "speculation_status": "No rapid-growth theorem is available, and the authors cannot establish a direct UV-density signature of physical-tachyon instability. The expected inherited asymptotic supersymmetry is a physical argument for adiabatic deformations, not a proved general result. The candidate's contrast between shared coarse ultraviolet cancellation and different infrared stability is a faithful reading of the proposed adiabatic-deformation example. The decisive claims are prose-based; no formula reconstruction is required."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Existence and naturalness of the split are explicitly unknown.",
+          "line_end": 1423,
+          "line_start": 1378,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Decomposition, constant-term integral, and j expansion.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proposes isolating a rapid automorphic component with zero constant term so the remainder remains eligible for the theorem; j is the model.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A singular-plus-moderate split could recover a constant-term relation",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u22.txt",
+          "unit_bytes": 2726,
+          "unit_id": "full_openalex_w2164522729_v2_u22",
+          "unit_sha256": "d3b2db2f33a1ef2f091e79ad32897d5a5fe30b2815ee037a8ae1ee43b26ceb24",
+          "unit_type": "conditional decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u22.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Decomposition isolates a pathological representation component that is invisible to the target constant mode, potentially restoring the valid theorem on the remainder.",
+            "nonparaphrase_operation": "The Fourier constant-term projection is the bridge: it forgets f_singular by construction while retaining the moderate component eligible for Rankin-Selberg-Zagier.",
+            "quality_reason": "The span conditionally decomposes f into separately automorphic rapid and moderate parts, requires the rapid part to have identically zero constant Fourier term, and applies Rankin-Selberg-Zagier only to the moderate remainder. It gives j as a rapidly growing zero-constant-term example and explicitly states that natural existence of the split is unknown. 'Lossless quarantine' is vivid language, but the candidate immediately limits losslessness to the target constant mode and keeps the split conjectural.",
+            "source_support": "The conjectural split f=f_singular+f_moderate requires both terms automorphic, f_moderate of at most moderate growth, and f_singular rapidly growing with identically zero τ₁-constant term. Then g(τ₂), computed from f, could be related to 3/π times the modular integral of f_moderate; j supplies an example with f_moderate=0.",
+            "speculation_status": "It is unknown whether such a split exists naturally for general rapidly growing modular forms, so the proposed recovery is conditional. The j example demonstrates consistency of the mechanism, not its availability for string partition functions. Describing the constant-term projection as forgetting the singular summand is exactly what the zero-integral condition implements. The decomposition and j expansion are sufficiently legible, with the conditional status explicit in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Nonholomorphic completion is nonunique; evidence for, not proof of, the conjecture.",
+          "line_end": 1507,
+          "line_start": 1425,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High character, theta, expansion, and completion dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the unphysical tachyon to choose an antiholomorphic modular completion, subtracts it, and relates the remainder to a physical constant-term limit.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A j-subtraction isolates a moderate two-dimensional partition",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u23.txt",
+          "unit_bytes": 4841,
+          "unit_id": "full_openalex_w2164522729_v2_u23",
+          "unit_sha256": "b334101cd118a98a27aa35b089a71c1ad4bd2bf3721463e8b9ce719d413b3158",
+          "unit_type": "conjectural worked example",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u23.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Modular completion turns a local singular term into a globally automorphic object that can be removed without altering its zero constant-mode contribution.",
+            "nonparaphrase_operation": "Character/theta expansion → leading unphysical tachyon → antiholomorphic j completion → moderate remainder and physical constant-term limit.",
+            "quality_reason": "The span identifies non-level-matched tachyons, uses the leading q-bar inverse term to motivate f_singular=8j(q-bar), and defines the moderate remainder Z-8j(q-bar). It relates the constant-term limit to the modular integral of the remainder and reports a nonzero value near -1261. The holomorphic uniqueness restriction and restored nonuniqueness for nonholomorphic completions are stated explicitly.",
+            "source_support": "For the compactified O(16)×O(16) heterotic model, the tachyons are non-level-matched. Its expansion identifies the leading q̄⁻¹ term, motivating f_singular=8j(q̄) and f_moderate=Z-8j(q̄); the resulting constant-term limit is related to the modular integral of the remainder and is numerically nonzero, about -1261.",
+            "speculation_status": "Holomorphicity makes the chosen completion unique in the restricted class, but allowing nonholomorphic completions restores nonuniqueness; this worked example supports rather than proves the general split. The high-density formulas are extraction-sensitive, and the asserted decomposition's broader mathematical naturalness remains unresolved. Describing modular completion as turning the singular seed into a globally automorphic removable component accurately captures the construction. The high-density character and theta formulas carry extraction risk, but the completion, subtraction, limit, and caveat are clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates conceptual necessity from numerical dominance.",
+          "line_end": 1564,
+          "line_start": 1548,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-reported percentages and figure, without raw data.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reports unreachable small-proper-time behavior while observing light-state dominance and small practical contribution from the singular completion.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Slow convergence blocks a clean two-dimensional asymptotic test",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u24.txt",
+          "unit_bytes": 1417,
+          "unit_id": "full_openalex_w2164522729_v2_u24",
+          "unit_sha256": "903b22232ee930e64cebb57e629b63ba4818a6d1b29b505688416dafa4d87d7c",
+          "unit_type": "numerical limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u24.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This example separates conceptual necessity from numerical dominance: slow convergence prevents access to the decisive τ₂→0 regime, with RH-conditional oscillation amplitude decreasing at most as τ₂^(3/4), yet the source attributes nearly all physical free energy to the -1216 massless states and reports their contribution as -1216·π/3≈-1320, approximately 96% of Ω_p. On that report, light states give a practical proxy and very massive states add little, whereas exact modular completion remains necessary for the conjecture's mathematical consistency. The proxy gains numerical economy but loses asymptotic control and cannot replace the completion or a resolved small-height test.",
+            "nonparaphrase_operation": "Decomposes logical necessity from contribution size and treats the light-state truncation as an approximation whose usefulness does not discharge the automorphic proof obligation.",
+            "quality_reason": "Accepted with the critic's repair: Ω_p≈-1261 is removed, while -1320 and approximately 96% remain explicitly source-attributed. No raw data are available to resolve the span's arithmetically awkward numerical report, so it is not promoted to a verified estimate.",
+            "source_support": "The span explicitly states the convergence/computation barrier, the conditional τ₂^(3/4) decay and zero-derived frequencies, the massless-state estimate and approximately-96% claim, the inferred small massive-state contribution, and the practical-versus-mathematical role of the modular completion.",
+            "speculation_status": "Source-attributed, model-specific numerical suggestion under an RH-conditional asymptotic. No imported value of Ω_p is used, and the reported numbers are not silently reconciled."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The authors call the accuracy poor and request further mathematical and numerical work.",
+          "line_end": 1651,
+          "line_start": 1565,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula/OCR dependence for expansion, subtraction, sum, and error exponent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows why proper-time powers obstruct explicit completion, defines an unambiguous constant term, and proposes an RH-conditioned error tested numerically.",
+          "source_id": "openalex_w2164522729",
+          "source_normalized_sha256": "0dba953e6d34ec02a45ce6b51d908f3e9037d929746cb6369ed11e6f82e0c01b",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The ten-dimensional extension has only low-accuracy numerical support",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2164522729_v2_u25.txt",
+          "unit_bytes": 5064,
+          "unit_id": "full_openalex_w2164522729_v2_u25",
+          "unit_sha256": "dc980a462aab8d5d5438cda666dc676bdb3918eba32c8d42f4d8d5f1792c2562",
+          "unit_type": "conjectural ten-dimensional test",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2164522729_v2_u25.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "When a global decomposition is inaccessible, an invariant projection can still isolate a testable consequence, but it cannot retrospectively prove the missing decomposition.",
+            "nonparaphrase_operation": "The explicit Taylor series identifies the singular seed, and the τ₁-constant mode bridges the signed coefficients to a conjectural physical vacuum-energy asymptotic.",
+            "quality_reason": "The span identifies the τ₂⁻⁴ q-bar inverse unphysical tachyon and says its automorphic completion is not straightforward because of explicit τ₂ dependence. Assuming the split, it reports Ω_p≈-498 after omission of the unphysical tachyon, defines an unambiguous constant Fourier term, and proposes g∼(3/π)Ω_p τ₂⁴. The o(τ₂^(19/4)) error is explicitly conditional on the earlier equation and RH, and the numerical accuracy is called poor.",
+            "source_support": "The ten-dimensional O(16)×O(16) partition has a leading τ₂⁻⁴q̄⁻¹ unphysical tachyon whose automorphic completion is not identified. Assuming the split, omitting that tachyon gives Ω_p≈-498, while the constant term g(τ₂)=Σ(-1)^(m-1)d_mc_m e^(-2πmτ₂) is unambiguous; the proposed limit is g∼(3/π)Ω_pτ₂⁴ with error o(τ₂^(19/4)) if the earlier equation and RH hold.",
+            "speculation_status": "The modular completion is unknown, the split is assumed, and the numerical evaluation has explicitly poor accuracy; the result is encouragement for further work, not validation. Very high formula/OCR dependence and low numerical precision make the stated support tentative and conditional on both the split and RH. The observation that an unambiguous projection gives a testable consequence without proving the missing global decomposition accurately preserves the proof burden. Formula/OCR risk is high, but the candidate preserves rather than repairs the source's conditional structure and does not overstate the numerical evidence."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d70f8ba214017683f01ec95fa1eac669a710175fcf3b7ead5775619ec1e0eb6e",
+        "dossier_sha256": "04e676f1fa289dcbefa384aea4c6ab1494c47b5d3e4744a317fa0a6fe3b0ef9b"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "5e6fd8b370384d8019c5ddfeb05096180675b41ac8359f2b36a81b31b9b53c6c"
+}

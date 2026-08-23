@@ -1,0 +1,268 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2286450525",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2286450525_3ea2a1a1_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "One shift makes positive special values unusually explicit, while the symmetric shift makes left-half-plane continuation and polar data unusually explicit; neither dominates globally.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2286450525_v2_u12",
+          "full_openalex_w2286450525_v2_u13",
+          "full_openalex_w2286450525_v2_u16",
+          "full_openalex_w2286450525_v2_u19"
+        ],
+        "proposed_limit": "The complementarity is established for the families and representations treated here, not for arbitrary zero statistics.",
+        "source_id": "openalex_w2286450525",
+        "synthesis_id": "riemann_v2_within_0c72e34e0052c9bc50495fbf",
+        "title": "Two complementary special shifts"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the normalization tradeoff between explicit Hadamard products and fully translation-covariant zeta-regularized products.",
+          "line_end": 753,
+          "line_start": 665,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Shift formulas (49)-(54) and exact constants are display-dependent; the polynomial/transcendental dichotomy is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that shifting the squared spectrum preserves admissibility and makes asymptotic coefficients, pole parts, and trace identities polynomial in the shift, while finite-point Taylor data and positive values vary transcendentally.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Translation covariance separates polynomial polar data from transcendental special values",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u12.txt",
+          "unit_bytes": 3834,
+          "unit_id": "full_openalex_w2286450525_v2_u12",
+          "unit_sha256": "a2a5d5bf7935afdf8e800e0f4a56012e537993f96c0a078007d5314e5f11e958",
+          "unit_type": "parameter-shift analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The shift is a diagnostic that distinguishes asymptotic invariants from base-point-sensitive information. The choice of normalization trades explicitness against exact covariance.",
+            "nonparaphrase_operation": "Translation covariance of the regularized product connects one fixed-shift asymptotic expansion to an entire shifted family; the Hadamard/regularized normalization comparison exposes the exceptional constant.",
+            "quality_reason": "The span states that translations preserve admissibility and contrasts explicitly normalized Hadamard products with fully translation-covariant but less explicit zeta-regularized products. It directly derives polynomial shift dependence for asymptotic coefficients, polar parts, and trace identities, with a normalization-sensitive exception. It contrasts those data with finite-point Taylor coefficients and positive values that vary transcendentally and lack reduced general forms.",
+            "source_support": "Shifting each squared parameter preserves admissibility. Hadamard normalization introduces an explicit denominator, while zeta-regularized products would be fully translation-covariant but less explicit. Substitution in the large-A expansion makes polar parts and negative-integer trace values polynomial in the shift, except for the normalization-sensitive constant; positive values come from finite-point Taylor coefficients and lack comparable reduced forms.",
+            "speculation_status": "Polynomial dependence applies to the stated polar and trace data, not to all special values. Calling the remaining dependence transcendental records the source's lack of reduced forms, not an impossibility theorem. The dichotomy is explicit in prose, but shift formulas (49)-(54), exact constants, and some domains are display-damaged. Reading the shift as a diagnostic separating asymptotic invariants from base-point-sensitive data is a concrete synthesis of the stated dichotomy. Shift formulas (49)-(54), exact constants, and some domains are degraded, but the candidate limits exactness accordingly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Serves as the conceptual transition into the trivial-zero shadow construction.",
+          "line_end": 800,
+          "line_start": 755,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The symmetric base value and determinant equations (55)-(58) are partly stripped; verify the precise variable mapping.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rebases the product at the most symmetric shift, notes the now-unknown normalization constant, and explains why this form is nevertheless much easier to continue meromorphically.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The symmetric shift sacrifices an explicit constant to unlock a stronger continuation",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u13.txt",
+          "unit_bytes": 1618,
+          "unit_id": "full_openalex_w2286450525_v2_u13",
+          "unit_sha256": "eca4f936f28c795b9cc8a70df4f10b35a6d3e19a30f7f9048f3cdaa2482aa495",
+          "unit_type": "canonical reframing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Canonical symmetry can be worth more than local explicitness: the new base point sacrifices one constant while simplifying the global continuation problem.",
+            "nonparaphrase_operation": "The symmetric quadratic coordinate links the completed-zeta factorization to a determinant over paired zeros and prepares the shadow-spectrum Mellin decomposition.",
+            "quality_reason": "The span explicitly moves to the functional-equation-symmetric shift, notes that its constant factor is not known as explicitly as at the earlier special shift, and says its continuation is distinctly simpler because of special representations. It also reports numerical near-indistinguishability while keeping the functions distinct. The candidate correctly limits the gain to continuation structure rather than all special values.",
+            "source_support": "The shifted product is rebased at the functional-equation-symmetric value. Its constant factor is no longer explicitly known, but the resulting determinant-like Delta and secondary zeta admit specially explicit meromorphic representations in the left-side regime; the source also notes close numerical agreement with the original shifted function.",
+            "speculation_status": "This rebase does not make all special values explicit, and numerical closeness does not make the two secondary zetas identical. The strategic tradeoff is clear, but the symmetric base value, determinant normalization, and equations (55)-(58) are partly stripped and require scan verification. The claimed trade of local normalization explicitness for global analytic simplicity is a faithful reading of the source's choice of base point. The base-value mapping, determinant normalization, and equations (55)-(58) are partly stripped, and the candidate flags them rather than reconstructing them."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Pairs a positive mechanism with an explicit knowledge obstruction.",
+          "line_end": 1127,
+          "line_start": 1069,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The identities (80)-(82) are display-dependent; prose supports the cancellation logic and limitation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extracts identities by cancellation of half-integer and integer singularities in the Mellin representation, then states the boundary: key derivative values remain poorly understood even at the symmetric shift.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Analyticity forces cancellation identities but leaves positive special values transcendental",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u16.txt",
+          "unit_bytes": 1951,
+          "unit_id": "full_openalex_w2286450525_v2_u16",
+          "unit_sha256": "74b68755adb82fd9b7145f0d16f6c134e093b38b722b20099cbd39d0716595fd",
+          "unit_type": "cancellation identity and limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Absence of a singularity is used as a constraint generator: analytic compatibility forces relations between representations, while clearly separating those relations from actual evaluation of free finite parts.",
+            "nonparaphrase_operation": "Cancellation across the shadow term, Mellin integral, and sine prefactor connects functional-equation derivatives to secondary-zeta identities.",
+            "quality_reason": "The span explicitly uses analyticity to force cancellation of half-integer residues between the two Mellin summands. At integers it states that a pole of the integral is canceled by a sine zero, producing another explicit relation. It then clearly says the relevant logarithmic derivatives and positive special values remain poorly understood, matching the candidate's limitation.",
+            "source_support": "In a half-plane where the symmetric secondary zeta is analytic, half-integer residues of the two Mellin summands cancel, producing identities tied to the auxiliary functional equation. At integers, poles of the integral combine with zeros of the sine factor to give further explicit relations. The source then notes that relevant logarithmic derivatives and positive special values remain poorly understood.",
+            "speculation_status": "Forced cancellation does not determine all derivative values; the symmetric shift improves continuation yet is worse than the other special shift for some positive-value data. The cancellation logic and limitation are prose-supported, while equations (80)-(82), indices, and constants remain display-dependent. Framing absence of singularities as a constraint generator is a non-paraphrase abstraction of the cancellation calculation. Equations (80)-(82), indices, and constants are display-damaged; only the cancellation logic and knowledge boundary are securely recoverable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Makes precise that the two favored shifts are complementary rather than one superseding the other.",
+          "line_end": 1367,
+          "line_start": 1281,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Binomial expansion and polar formulas (91)-(96) are equation-dependent; prose establishes termination and complementarity.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the general shifted zeta around the symmetric case, deriving finite polar and negative-integer trace formulas while explaining why positive-value data at the other special shift require infinite, transcendental expansions.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expansion around the symmetric shift transports poles finitely but not all special values",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u19.txt",
+          "unit_bytes": 3496,
+          "unit_id": "full_openalex_w2286450525_v2_u19",
+          "unit_sha256": "64a41b8d731d00703568bd99f251ea868507606b821e8379210e5aa70340c37b",
+          "unit_type": "shift expansion and complementary regimes",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Termination is the mechanism separating algebraically transportable data from base-point-specific transcendental data. The two special shifts are complementary coordinate choices rather than a hierarchy.",
+            "nonparaphrase_operation": "The shift-binomial series bridges the symmetric secondary zeta to the whole Hurwitz-type family; specialization of its argument determines whether the bridge becomes finite.",
+            "quality_reason": "The span explicitly expands the general shifted family around the symmetric case and uses that expansion for meromorphic continuation when no direct nonzero-shift analogue of the Mellin formula is available. At poles and nonpositive integers it shows the relevant sums terminate or reduce finitely, yielding polar data, trace identities, and large-argument coefficients. It explicitly contrasts those finite transports with the infinite expansions required for positive values at the other special shift.",
+            "source_support": "A binomial expansion expresses the general shifted secondary zeta in terms of symmetric-shift values and extends it meromorphically. At a pole or nonpositive integer the expansion truncates, giving finite polar parts, residues, trace identities, and asymptotic coefficients. At positive integers, moving to the other special shift requires an infinite series because those values vary nonpolynomially with the shift.",
+            "speculation_status": "There is no analogous direct symmetric Mellin formula for a general nonzero shift, and the finite transport does not cover the other shift's positive special values. Termination and complementarity are explicit in prose, but formulas (91)-(96), exact pole locations, and coefficients are equation-dependent. Using termination as the criterion separating algebraically transportable from base-point-sensitive data is a faithful synthesis of the two regimes. Formulas (91)-(96), exact pole locations, and coefficients are damaged, but the prose supports termination and complementarity."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2478b478adbfe45e5cdee6c9b8b6d81ad534c67c92d1def36f96c091f6b4d515",
+        "dossier_sha256": "83135547cd3914676d19bb01ea7495e9cb7f537824304d815a59989bea068414"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Adding or subtracting continuation formulas for related L-functions can simplify the additive shadow term only by changing the multiplicative zeta object under the residual integral.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2286450525_v2_u17",
+          "full_openalex_w2286450525_v2_u18"
+        ],
+        "proposed_limit": "Demonstrated through the specific zeta, beta, and Gaussian-integer examples in the source; no general closure theorem is supplied.",
+        "source_id": "openalex_w2286450525",
+        "synthesis_id": "riemann_v2_within_0475ab194d91153ab29e9769",
+        "title": "Combination trades multiplicative complexity for additive simplicity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Motivates the subsequent generalization rather than merely cataloguing differences.",
+          "line_end": 1178,
+          "line_start": 1130,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose-grounded; parameter values and formula references should be checked visually.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts pole orders with compact-surface spectra and observes that the original zeta reappears additively through the shadow term while an auxiliary Dirichlet series prevents closure.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The spectral analogy is partial, and the continuation is not closed under the original zeta alone",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u17.txt",
+          "unit_bytes": 1903,
+          "unit_id": "full_openalex_w2286450525_v2_u17",
+          "unit_sha256": "c1debdeff98fee2e29eb852727b24a04ad4529a4017dcae0f82deb39156e8666",
+          "unit_type": "analogy audit and closure obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Similarity of trace-formula shape does not imply closure or identical singularity theory. Tracking how an object re-enters a transformed formula reveals both a useful self-reference and the missing auxiliary input.",
+            "nonparaphrase_operation": "The continuation places multiplicative completed-zeta data, additive shadow-zeta data, and the secondary zero sum in one relation; the beta series marks the failure of closure.",
+            "quality_reason": "The span explicitly contrasts the Riemann-zero secondary zeta's order and double leading pole with the compact-surface zeta's simple poles. It states that the original zeta appears multiplicatively in the integral construction and additively in the shadow term. It also identifies the beta-type Dirichlet series as a second additive component that prevents closure and motivates generalization.",
+            "source_support": "The Riemann-zero secondary zeta has a double leading pole and an order regime different from the compact-surface Laplacian zeta, whose poles are simple. In the continuation formula the Riemann zeta occurs both multiplicatively inside the residual construction and additively in the shadow term, while a beta-type Dirichlet series supplies another additive component.",
+            "speculation_status": "This is an analogy audit and motivation for generalization, not a spectral realization of Riemann zeros or a closed equation involving the Riemann zeta alone. Mostly prose-grounded; exact order parameters and formula references should be checked against the page images. Using re-entry to diagnose partial self-reference and missing auxiliary input is a faithful conceptual reading of the two copies and the closure obstruction. Exact order parameters and formula references are degraded, but the qualitative contrasts are explicit in prose."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Gaussian-integer zeta example and an explicit identity obtained only after combining two continuation systems.",
+          "line_end": 1274,
+          "line_start": 1179,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The general template (84)-(90), gamma factors, and combined formulas are display-dependent and need page-image verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Abstracts the Mellin continuation to Dirichlet zeta/L-series with controlled poles and functional equations, applies it to the auxiliary beta series, and adds or subtracts formulas to trade multiplicative inputs for simpler additive shadow terms.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional equations generate a reusable continuation template for zeta and L-series combinations",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2286450525_v2_u18.txt",
+          "unit_bytes": 2232,
+          "unit_id": "full_openalex_w2286450525_v2_u18",
+          "unit_sha256": "685c5cf482df99a79f3ccbee741639ec9423f1be8aecad3d3ed3528af69b76bd",
+          "unit_type": "generalization and synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2286450525_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Functional equations form a compositional calculus: combining related L-functions can diagonalize one side of a continuation identity, but the displaced multiplicative input records the cost.",
+            "nonparaphrase_operation": "Shadow zetas are additive bridge objects, whereas products of L-functions combine under the Mellin integral; the Gaussian-integer zeta is the concrete mediator in the addition example.",
+            "quality_reason": "The span enumerates a general Dirichlet zeta or L-series setup with a controlled pole, functional equation, entire paired-zero factor, and trivial-zero determinant, then states the corresponding continuation relation. It applies the setup to the beta series and explicitly adds formulas to obtain the Gaussian-integer zeta multiplicatively while isolating the Riemann zeta additively. It also subtracts the systems for a complementary explicit identity and states the cost of changing the multiplicative input. The word diagonalize is metaphorical, but the candidate immediately identifies which additive and multiplicative terms are simplified.",
+            "source_support": "The source abstracts the Mellin construction to Dirichlet zeta or L-series with a controlled pole, functional equation, entire paired-zero factor, and trivial-zero determinant. It applies the template to the beta series. Adding its formula to the Riemann-zeta formula yields the Gaussian-integer zeta multiplicatively and a shadow involving only the Riemann zeta; subtraction yields a complementary explicit identity.",
+            "speculation_status": "The examples demonstrate a trade, not a general closure theorem or a way to isolate every desired zeta function simultaneously in both positions. The general pattern and examples survive, but assumptions, gamma factors, and formulas (84)-(90) are display-dependent and need page-image verification. Treating addition and subtraction of functional-equation systems as a compositional calculus is grounded by the two concrete combinations. Assumptions, gamma factors, and formulas (84)-(90) are display-dependent; the candidate does not assert their exact form."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2478b478adbfe45e5cdee6c9b8b6d81ad534c67c92d1def36f96c091f6b4d515",
+        "dossier_sha256": "83135547cd3914676d19bb01ea7495e9cb7f537824304d815a59989bea068414"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "6bee6e33526fa032fcdba05890d3e6ce4c9153f29f2c76932d84e40433d9844d"
+}

@@ -1,0 +1,210 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2515894720",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2515894720_c78c1a63_part_02.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Euler-product truncation gives the strongest variance and function-space control through explicit two-point kernels, whereas finite Dirichlet polynomials bypass the hardest mixed estimate but provide weaker quantitative approximation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2515894720_u018",
+          "openalex_w2515894720_u019",
+          "openalex_w2515894720_u020",
+          "openalex_w2515894720_u022",
+          "openalex_w2515894720_u023"
+        ],
+        "proposed_limit": "These are alternative proofs of the same randomized limit, not independent validation of the limiting law.",
+        "source_id": "openalex_w2515894720",
+        "synthesis_id": "riemann_v2_within_2048f654e9f4b16b36a649f3",
+        "title": "Two routes to the global limit trade quantitative control for simpler evidence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keep the distinction among the four kernels and note that uniformity in the truncation parameter is not asserted.",
+          "line_end": 1189,
+          "line_start": 1076,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2.8 identifies the full shifted two-point function, the mixed truncation kernel, and the fully truncated limit with errors that are uniform in spatial variables at fixed truncation.",
+          "source_id": "openalex_w2515894720",
+          "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Uniform two-point asymptotics for full, mixed, and truncated zeta fields",
+          "unit_artifact_relpath": "depth/units/openalex_w2515894720_u018.txt",
+          "unit_bytes": 6314,
+          "unit_id": "openalex_w2515894720_u018",
+          "unit_sha256": "a3c6da8398e4e2294623e4ce53128d4840611579599c414492392d1a86a0bcd7",
+          "unit_type": "asymptotic-kernel",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u018.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Second moments reduce random-function comparison to deterministic kernels whose main terms are matched across full and truncated models.",
+            "nonparaphrase_operation": "Fubini turns test-function pairings into integrals against these kernels, allowing pointwise asymptotics plus spatial domination to control generalized functions.",
+            "quality_reason": "The four kernels remain distinct, the full, mixed-sum, and fixed-truncation asymptotics are accurately summarized, and uniformity in N is explicitly denied. The real-test-function consequence of controlling only the mixed sum is preserved.",
+            "source_support": "The source defines full-full, two mixed, and truncated-truncated expectations. Theorem 2.8 gives the full kernel as ζ(1+i(x−y)) plus a T-dependent oscillatory term involving ζ(1−i(x−y))/(1−i(x−y)), with an O(T^{-1/12}) error times stated spatial growth. For fixed N, the sum of mixed kernels is 2ζ_N(1+i(x−y)) plus a comparable error, and the truncated-truncated kernel tends uniformly in x,y to ζ_N(1+i(x−y)).",
+            "speculation_status": "The mixed theorem is stated for the sum of two orientations, which later forces a real-test-function step, and the errors are not asserted uniform in N. Bars and conjugations in the extracted expectations are formula-risk; the distinction among the four kernels and their asymptotic roles is explicit. Using the deterministic kernels as the comparison engine follows directly from the displayed Fubini identities. Conjugations and bars are degraded in extraction; the candidate appropriately avoids depending on their exact appearance."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retain the real-to-complex test-function reduction and the order of choosing truncation and height.",
+          "line_end": 1277,
+          "line_start": 1190,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combining the kernel asymptotics makes the variance of full minus truncated zeta equal the omitted part of the Z norm, so choosing truncation before height yields arbitrary accuracy for each admissible test function.",
+          "source_id": "openalex_w2515894720",
+          "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Second moments turn Euler truncation into a fixed-test-function L2 approximation",
+          "unit_artifact_relpath": "depth/units/openalex_w2515894720_u019.txt",
+          "unit_bytes": 4972,
+          "unit_id": "openalex_w2515894720_u019",
+          "unit_sha256": "4895cf06bbdfe77a3fd13c59b0f003d96bdc9b4b2d0a889bc87423ef492f41fd",
+          "unit_type": "approximation-estimate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u019.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite Euler product is adequate when it captures nearly all of a test function's arithmetic spectral mass; the approximation is therefore test-dependent but quantitatively interpretable.",
+            "nonparaphrase_operation": "The variance identity is the bridge from two-point kernel asymptotics to L² approximation of scalar distributional observables.",
+            "quality_reason": "The full, truncated, and mixed second moments yield the omitted Z-mass control, with the real-valued argument extended to complex tests by real-imaginary splitting. The candidate preserves the order of choosing truncation before height and notes N-dependent constants.",
+            "source_support": "For weighted tests f^r, the full and truncated second moments and their cross term converge to Z and Z,N norms. Proposition 2.12 combines them to bound the variance of μ_T(f^r)−μ_{T,N}(f^r), with limsup controlled by the omitted quantity ||f^r||_Z²−||f^r||_{Z,N}². Real-valued tests are handled first and complex tests by splitting real and imaginary parts.",
+            "speculation_status": "One must choose N first for the fixed test and then take T large; constants in preliminary bounds may depend on N. Local square integrability and decay suffice, but no uniform all-test conclusion appears yet. Exact numerical factors in the limsup bound are extraction-sensitive, while the omitted-Z-mass mechanism is clear. Interpreting retained arithmetic spectral mass as the adequacy criterion for a finite Euler product is justified by the variance formula. Exact factors differ between the real identity and complex limsup bound; the directed account keeps the latter qualified."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The threshold alpha greater than one half is what makes the dominating Fourier weight integrable.",
+          "line_end": 1317,
+          "line_start": 1278,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Testing against exponentials and integrating with the Sobolev weight converts the fixed-test estimate into mean-square approximation of whole generalized functions, hence a Wasserstein bound.",
+          "source_id": "openalex_w2515894720",
+          "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier testing lifts scalar variance control to negative-Sobolev Wasserstein approximation",
+          "unit_artifact_relpath": "depth/units/openalex_w2515894720_u020.txt",
+          "unit_bytes": 2556,
+          "unit_id": "openalex_w2515894720_u020",
+          "unit_sha256": "afaa41e14c25c96929835b0505375df2ea809fe937b21eeb34631a472d458299",
+          "unit_type": "lift-to-function-space",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u020.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A continuum of simple probes reconstructs function-space control. The regularity threshold appears exactly where the Fourier weighting becomes integrable.",
+            "nonparaphrase_operation": "Fourier exponentials bridge scalar test estimates and the negative-Sobolev norm; mean-square coupling bridges that norm to Wasserstein distance.",
+            "quality_reason": "The Fourier-probe expression for the negative-Sobolev norm, pointwise truncation bounds, integrable weight for alpha>1/2, dominated convergence, nested limit, and induced W2 bound all match the proof. Weight regularization and the absence of a sharpness claim are retained.",
+            "source_support": "For α>1/2, the W^{-α,2} norm is written as an integral over Fourier variables of squared pairings with exponentials. Proposition 2.12 supplies pointwise truncation-error bounds and an integrable majorant proportional to (1+ξ²)^{-α}; dominated convergence and monotonicity of Z,N then give lim_{N→∞} limsup_{T→∞} E||μ_T^r−μ_{T,N}^r||²=0. The same coupling yields the quadratic Wasserstein bound.",
+            "speculation_status": "The result is a nested limit and uses the weight regularization. The threshold α>1/2 is sufficient here and is not claimed to be the sharpest possible global formulation. The lifting argument is explicit; displayed constants and notation retain the source's formula-extraction risk. A continuum of Fourier probes reconstructing whole-space control is the correct conceptual operation. Displayed constants are extraction-sensitive but immaterial to the candidate's conclusion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The remark on weaker weights records that the stated regularization is sufficient rather than optimal.",
+          "line_end": 1479,
+          "line_start": 1453,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mixed prose and formulas; the conceptual mechanism is recoverable, while exact displayed notation should be checked against the retained PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof closes a triangle among shifted zeta, a fixed truncated shift, the matching randomized truncation, and the randomized infinite limit, choosing truncation and height in the necessary nested order.",
+          "source_id": "openalex_w2515894720",
+          "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Three matched approximations prove the global functional limit",
+          "unit_artifact_relpath": "depth/units/openalex_w2515894720_u022.txt",
+          "unit_bytes": 1726,
+          "unit_id": "openalex_w2515894720_u022",
+          "unit_sha256": "a298f32340226249e908373dbf1b0da048891bb1acf02915a4fa0253d9407dac",
+          "unit_type": "limit-triangle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u022.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Matched intermediates let distinct mechanisms handle infinite-product error, zeta truncation error, and finite-dimensional randomization.",
+            "nonparaphrase_operation": "The fixed finite Euler product is the common bridge shared by the deterministic-height model and the independent-phase model.",
+            "quality_reason": "The three Wasserstein comparisons, their epsilon-dependent nested choices, and the final triangle inequality are accurately summarized. The remark that weaker weights and larger test classes are possible but not pursued is preserved.",
+            "source_support": "Given ε, the proof first chooses a randomized truncation close to ζ_rand, then a possibly larger fixed truncation making μ_T close to μ_{T,N} for large T, and finally makes that fixed shifted truncation close to ζ_{N,rand} by taking T still larger. The Wasserstein triangle inequality gives the stated 3ε bound in W^{-α,2}.",
+            "speculation_status": "The construction gives no uniform rate and its choices depend sequentially on ε. The source also states that the weight and test class are sufficient rather than optimal. The approximation logic is complete in the span; only formula formatting is extraction-sensitive. Calling the finite Euler product the common bridge is a precise synthesis of the three edges."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keep the stated tradeoff; this is not merely a repeated proof.",
+          "line_end": 1577,
+          "line_start": 1485,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent; the prose and displayed structure are recoverable from the normalized text, but the retained PDF should be checked for exact symbols, bars, conjugations, and constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A second proof route approximates both zeta and randomized Euler products through finite Dirichlet polynomials using easier cross-moment estimates, but loses the good errors available for Euler-product truncations.",
+          "source_id": "openalex_w2515894720",
+          "source_normalized_sha256": "79af10f446656c1eb0c970a2ffa58cdb5b7b0b3aa3ccbe4c61209a1164896e7f",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite Dirichlet polynomials bypass mixed two-point estimates at the cost of quantitative truncation control",
+          "unit_artifact_relpath": "depth/units/openalex_w2515894720_u023.txt",
+          "unit_bytes": 5408,
+          "unit_id": "openalex_w2515894720_u023",
+          "unit_sha256": "d91b714c595afe793ad3d372a9915ab2765448781b9422b800a441acc007f968",
+          "unit_type": "alternative-method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2515894720_u023.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof architecture is robust to changing the bridge object, but the available estimates reveal a tradeoff between structural simplicity and approximation rate.",
+            "nonparaphrase_operation": "Finite Dirichlet polynomials bridge actual zeta and a fixed randomized Euler product without explicit mixed two-point asymptotics for the Euler truncation.",
+            "quality_reason": "The finite-Dirichlet-polynomial cross moments, contour-shift errors with A-dependent constants, replacement of Z,N by Z,A, and two approximation inequalities all match the span. The candidate explicitly retains the loss of good truncated-Euler-product error control.",
+            "source_support": "For a finite set A, contour shifting gives cross-moment asymptotics between ζ_A and ζ with O(T^{-1/6})-type errors whose constants may depend on A. Replacing Z,N by the finite Z,A sum reproduces the scalar and Sobolev approximation argument; choosing a large finite initial segment inside the N-smooth integers lets both μ_T and ζ_{N,rand} be approximated through μ_{T,A}.",
+            "speculation_status": "Error constants depend on A, and the source warns that this route appears unable to deliver the good truncated-Euler-product errors. It is an alternative derivation of the same limit, not independent evidence for the law. The tradeoff and contour mechanism are clear; exact exponents and conjugations remain formula-sensitive. The stated tradeoff between a simpler bridge and weaker quantitative control is the purpose of the alternative route, not generic style. Exact exponents and conjugations remain formula-sensitive, as acknowledged."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_eeb65632e621f138083d5e5b02e426c707566412d2b33dfb7228f81895582c64",
+        "dossier_sha256": "1ed7bdf39ffed6231fed0227512a46780774d6e27f997c289e201eab1c980db1"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "20fc8444e60d62a2b17de8f02d08909d025228d817588b76c5c73af3d8146a57"
+}

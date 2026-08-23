@@ -1,0 +1,433 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2128307093",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2128307093_3b136531_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Closure under multiplicative convolution turns one verified base sequence into a hierarchy of divisor-function and restricted-prime-product sequences, so the theorem functions as a semantic constructor for new equidistribution results.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2128307093_depth_u01",
+          "openalex_w2128307093_depth_u05",
+          "openalex_w2128307093_depth_u06"
+        ],
+        "proposed_limit": "The normalized source does not preserve the exact quantitative hypotheses or the prime-range inequalities well enough to instantiate the constructor numerically without scan verification.",
+        "source_id": "openalex_w2128307093",
+        "synthesis_id": "riemann_v2_within_77287d67b9c1ca8028a5856d",
+        "title": "A compositional route from equidistribution axioms to structured sequences"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 15-20 supply the generalization/induction motivation; lines 21-43 introduce the three hypotheses; lines 44-45 state the closure theorem. The symbols in two hypotheses and parts of the error term are extraction-damaged, so the exact quantitative contract needs the page image before downstream formal reuse.",
+          "line_end": 45,
+          "line_start": 15,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The semantic closure claim is prose-recoverable, but the exact bounds, conductor condition, and notation for the three properties depend on damaged displayed mathematics and require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "This is the paper's reusable induction step: once two arithmetic functions satisfy the stated growth, character-sum, and progression-distribution conditions, their multiplicative convolution remains in the same class, allowing new equidistributed sequences to be built compositionally.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bombieri-type equidistribution is closed under multiplicative convolution",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u01.txt",
+          "unit_bytes": 1587,
+          "unit_id": "openalex_w2128307093_depth_u01",
+          "unit_sha256": "ab0a9a693df017956a5ad04030791d4d419563d2d33763d80a7bcabda3481790",
+          "unit_type": "closure principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem compresses several analytic obligations into a preserved interface. Once the interface is verified for inputs, convolution becomes a reusable constructor rather than requiring the distribution theorem to be reproved from scratch for each product sequence.",
+            "nonparaphrase_operation": "Multiplicative convolution is the compositional representation, while E(y;q,l;f) records deviation from the reduced-residue average and property (C) makes that deviation uniformly controllable over moduli and cutoffs.",
+            "quality_reason": "The span explicitly introduces three conditions on an arithmetic function and states that multiplicative convolution preserves them. The candidate correctly distinguishes the legible closure claim from the extraction-damaged quantitative conditions and ranges. The phrase 'preserved interface' is generic in isolation, but here it is grounded by divisor-type growth, a character condition, property (C), and the convolution operation.",
+            "source_support": "The source imposes three conditions on a complex-valued arithmetic function: divisor-type growth, a character-sum condition, and a Bombieri-type progression error condition (C). Theorem 1 states that if f and g satisfy them, then their multiplicative convolution f.g also satisfies them.",
+            "speculation_status": "Closure alone neither supplies a base function nor proves that a desired sequence has the required convolution form. It also does not expose the quantitative bookkeeping needed to see how the three constants and ranges propagate. The closure claim is clear, but the exact first two conditions, conductor threshold, modulus range, and logarithmic exponents are extraction-damaged and require the page image before formal or quantitative reuse. Calling the three conditions a preserved interface and convolution a reusable constructor is a reasonable conceptual reading of the source's own induction framing. The labels and formulas for the first two conditions, the definition of E, the modulus range, and logarithmic exponents are damaged; no exact quantitative contract is recoverable from this span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the clearest direct demonstration of the theorem as an induction principle rather than a one-off estimate. Some cited theorem labels are degraded, but the constant-function-to-divisor-function route is legible.",
+          "line_end": 101,
+          "line_start": 94,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low for the inductive mechanism; exact correspondence with the cited German/Fujii theorem labels would require cleaner bibliographic typography.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Closure bootstraps the constant function to higher divisor functions",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u05.txt",
+          "unit_bytes": 504,
+          "unit_id": "openalex_w2128307093_depth_u05",
+          "unit_sha256": "dd95c812e02d329ed9e39de1fe2ef6a390288381ef6a8b11f2f12f62a1645166",
+          "unit_type": "inductive application",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A stable class plus a simple seed generates a structured family. This distinguishes the theorem from a one-off estimate: the difficult analytic properties can be propagated compositionally through convolution powers.",
+            "nonparaphrase_operation": "Repeated multiplicative convolution of the constant-one function represents ordered factorizations and hence the divisor-function family; the closure theorem bridges that algebraic construction to equidistribution in progressions.",
+            "quality_reason": "The span asserts that the constant-one function has the three properties and says induction gives the Bombieri analogue for the k-th divisor function. It also explicitly describes applications to cited earlier results and says Theorem 1 permits iteration of Bombieri's theorem. The stable-class-plus-seed phrasing is generic by itself, but the candidate grounds it in the constant-one seed, convolution powers, and the divisor-function output.",
+            "source_support": "The source asserts that f=1 has all three required properties and concludes by induction that the k-th divisor function has the analogous Bombieri theorem. It also says the same closure result strengthens or expands cited earlier results and permits iteration of Bombieri's theorem.",
+            "speculation_status": "The span treats the seed's three properties as obvious and does not show their bounds. It also does not make the degraded cited theorem labels reliable enough for exact bibliographic comparison. The induction mechanism is clear and only weakly formula-dependent. The precise notation for the k-th divisor function and the claimed strengthenings of the cited results remain typographically uncertain. Interpreting repeated convolution of the constant-one function as the algebraic construction of the divisor-function family is the specific operation that makes the stated induction intelligible. The notation for the k-th divisor function and the cited theorem labels are degraded, so exact bibliographic or notational claims remain unsafe."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 100-101 explain why the result is stated separately; lines 102-108 give the theorem; lines 109-110 place known cases inside it. Several parameter symbols and inequalities in lines 102-108 are corrupted, so only the family-level statement is reliable without the scan.",
+          "line_end": 110,
+          "line_start": 100,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the exact admissibility inequalities and uniformity domain; low-to-moderate for the semantic statement that iterated convolution controls structured products of primes.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equidistribution for indicator sequences of restricted prime products",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u06.txt",
+          "unit_bytes": 635,
+          "unit_id": "openalex_w2128307093_depth_u06",
+          "unit_sha256": "291d2a9fe6b695626045b80fcc78607253bd9e6d663ddee8c38b5bba615afd7d",
+          "unit_type": "iterated Bombieri theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The indicator compresses a constrained factorization pattern into an arithmetic function to which the progression-error interface can be applied. The theorem presents convolutional iteration as a way to control a whole parameterized family rather than one fixed sequence.",
+            "nonparaphrase_operation": "The bridge object is w: it turns existential prime-factor structure with range constraints into a sequence whose residue-class deviation is measured by property (C). The preceding closure principle motivates how factor-level distribution can feed product-level distribution.",
+            "quality_reason": "Despite damaged symbols, the span legibly defines an indicator for integers representable as a product of a fixed number of primes subject to size restrictions and states that it has property (C) uniformly in the allowed parameters. The source explicitly identifies results used by Chen and cited earlier theorems as special cases. The 'compresses structure into an arithmetic function' phrasing is generic, but it is made concrete by the existential prime-product definition and property (C).",
+            "source_support": "Theorem 2 defines w(n) to be one when n can be written as a product of a fixed number of primes satisfying parameterized size restrictions, and zero otherwise. It states that w has property (C) uniformly over the allowed parameters and lists estimates from Chen and other earlier results as special cases.",
+            "speculation_status": "The extracted span does not preserve the admissibility inequalities, exact prime ranges, or full uniformity domain. It therefore cannot support a quantitative instantiation or show from this unit alone how overlap or multiple representations are handled. The family-level theorem and its special-case claim are recoverable, but the number and names of parameters, their inequalities, and the exact definition's symbols require scan verification. Treating the indicator as a bridge from constrained factorization structure to residue-class error control is a source-grounded conceptual operation. Linking the theorem to convolutional iteration is supported by the immediately preceding statement that Theorem 1 allows Bombieri's theorem to be iterated, but it is not a displayed derivation. The number and names of parameters, admissibility inequalities, prime ranges, and precise uniformity domain are too corrupted for quantitative reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The convolution identity isolates pieces directly controlled by progression equidistribution and a residual smoothed character term; splitting the latter by conductor routes small and large characters to different hypotheses and tools.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2128307093_depth_u02",
+          "openalex_w2128307093_depth_u03"
+        ],
+        "proposed_limit": "This is a strategy-level synthesis from the proof sketch; the displayed identity and integral are degraded and the detailed estimates are deferred outside the source.",
+        "source_id": "openalex_w2128307093",
+        "synthesis_id": "riemann_v2_within_2a8677bf3a84f988cf668922",
+        "title": "Why the closure proof needs two analytic regimes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The displayed identity across lines 48-66 is only partly legible, while line 66 preserves the inverse-residue relation and lines 72-73 identify immediate property-(C) estimates. The unit crosses the page marker solely to retain the sentence that disposes of the first pieces.",
+          "line_end": 73,
+          "line_start": 46,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence: the cutoff exponents, summation limits, and individual terms must be checked against the scan; only the structural decomposition and its stated control by property (C) are safe from the normalized prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Decompose convolution error at complementary logarithmic cutoffs",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u02.txt",
+          "unit_bytes": 936,
+          "unit_id": "openalex_w2128307093_depth_u02",
+          "unit_sha256": "a620417c3efc24cfddd8c1c9b22742e2d27e6239043f810c191d3b09b525d3ff",
+          "unit_type": "proof decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a divisor-range decomposition adapted to error terms: separate small and large factors so inherited equidistribution estimates apply at the rescaled arguments y/u or y/v. The closure proof works by routing each piece to an input hypothesis.",
+            "nonparaphrase_operation": "The bridge object is the progression-error functional E applied at smaller scales, with multiplicative convolution expanded into u-v factor pairs and logarithmic cutoffs controlling which factor is exposed.",
+            "quality_reason": "The legible parts of the display expand the convolution error into terms containing f(u)E(y/u;q,l;g) and g(v) times errors for f, with K and K' cutoffs. The prose explicitly says that some of the displayed sums are readily estimated by property (C), and the candidate does not claim control of the residual term. The 'routing each piece' language is schematic, but it is anchored to the displayed factor/error decomposition rather than a generic representation template.",
+            "source_support": "For y at most x and a reduced residue class, the source gives an identity decomposing E(y;q,l;f.g) into sums involving f(u)E(y/u;q,l;g), a complementary term involving g(v) and errors for f, and a remaining term. It then states that some displayed sums are readily estimated using property (C).",
+            "speculation_status": "The span does not make every term or its estimate legible, so it cannot justify the exact identity, the choice of K and K', or the treatment of the residual piece by itself. High formula uncertainty: summation limits, cutoff exponents, inverse-residue notation, signs, and the identity's final term must be checked against the scan. Only the decomposition pattern and the stated use of property (C) are secure. Viewing the identity as exposing one factor while applying the other factor's error functional at a smaller scale is a source-grounded non-paraphrase operation. The display is too damaged to recover all summation limits, signs, inverse-residue notation, cutoff powers, or even which visually unnamed sums the final sentence disposes of."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+          "line_end": 93,
+          "line_start": 74,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth the residual term and split characters by conductor",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u03.txt",
+          "unit_bytes": 985,
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "unit_sha256": "cef97c14acfd964e77f6bc5a4ba00e71bc1f0a847a6735fcaaa5a2c040f13497",
+          "unit_type": "analytic proof strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The sketch uses conductor size to route a smoothed character argument: a second Riesz mean is expressed with characters and a line integral, relatively small-conductor characters are assigned to an unnamed stated property, and larger-conductor characters are assigned to the large sieve coupled with Chen's division-of-integrand device. The conceptual gain is a regime-specific proof decomposition rather than a single estimate imposed across all conductors; what is lost locally is the ability to check the precise formula, cutoff, estimates, or recombination, because the extraction is damaged and the detailed proof is deferred.",
+            "nonparaphrase_operation": "Mechanism extraction: interprets the explicit conductor split as a routing rule that decomposes one analytic burden into two tool-specific regimes, while locating the unresolved proof burden at the estimates and their recombination.",
+            "quality_reason": "Accepted because the prose securely supports a concrete, reusable conductor-based strategy beyond paraphrase. Formula damage and deferred details prevent a stronger reconstruction but do not obscure the qualitative routing mechanism.",
+            "source_support": "The span explicitly mentions the second Riesz mean, characters, a line integral, smoothing, relatively small conductors of the order of a power of log x, and the large-sieve-plus-Chen treatment for larger conductors. It does not legibly identify the unnamed properties or display enough of the formula to verify their use.",
+            "speculation_status": "The two-regime routing is source-supported; its description as a proof decomposition is an interpretation. No pointwise-versus-averaged characterization or progression-error bridge is asserted, and the exact analytic mechanism remains unverified."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2128307093_depth_u03",
+          "openalex_w2128307093_depth_u04",
+          "openalex_w2128307093_depth_u06"
+        ],
+        "proposed_limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+        "source_id": "openalex_w2128307093",
+        "synthesis_id": "riemann_v2_within_458caf0d40544adc2f639cfc",
+        "title": "Obstacle-aware reuse of Chen's device"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+          "line_end": 93,
+          "line_start": 74,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Smooth the residual term and split characters by conductor",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u03.txt",
+          "unit_bytes": 985,
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "unit_sha256": "cef97c14acfd964e77f6bc5a4ba00e71bc1f0a847a6735fcaaa5a2c040f13497",
+          "unit_type": "analytic proof strategy",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The sketch uses conductor size to route a smoothed character argument: a second Riesz mean is expressed with characters and a line integral, relatively small-conductor characters are assigned to an unnamed stated property, and larger-conductor characters are assigned to the large sieve coupled with Chen's division-of-integrand device. The conceptual gain is a regime-specific proof decomposition rather than a single estimate imposed across all conductors; what is lost locally is the ability to check the precise formula, cutoff, estimates, or recombination, because the extraction is damaged and the detailed proof is deferred.",
+            "nonparaphrase_operation": "Mechanism extraction: interprets the explicit conductor split as a routing rule that decomposes one analytic burden into two tool-specific regimes, while locating the unresolved proof burden at the estimates and their recombination.",
+            "quality_reason": "Accepted because the prose securely supports a concrete, reusable conductor-based strategy beyond paraphrase. Formula damage and deferred details prevent a stronger reconstruction but do not obscure the qualitative routing mechanism.",
+            "source_support": "The span explicitly mentions the second Riesz mean, characters, a line integral, smoothing, relatively small conductors of the order of a power of log x, and the large-sieve-plus-Chen treatment for larger conductors. It does not legibly identify the unnamed properties or display enough of the formula to verify their use.",
+            "speculation_status": "The two-regime routing is source-supported; its description as a proof decomposition is an interpretation. No pointwise-versus-averaged characterization or progression-error bridge is asserted, and the exact analytic mechanism remains unverified."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The claim is explicit prose, nested inside the conductor-split proof sketch. The source supplies no detailed verification here and sends the full proof elsewhere.",
+          "line_end": 90,
+          "line_start": 83,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low for the stated comparative claim, but validating why the obstruction disappears depends on omitted proof details rather than on this normalized text alone.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u04.txt",
+          "unit_bytes": 554,
+          "unit_id": "openalex_w2128307093_depth_u04",
+          "unit_sha256": "ca115aa7448bb5fe920240a6da35de702aa8862e6d829f430d7a97cbe39fee8c",
+          "unit_type": "obstruction comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The comparison makes avoidance of a known obstruction, not mere reuse of Chen's device, the relevant diagnostic for the author's procedure: the author claims that the imprimitive-character obstacle seen in Chen's argument does not occur here and consequently claims a simplified proof of Chen's binary Goldbach theorem. This yields an obstruction-sensitive way to compare proof procedures, but it supplies no mechanism for the avoidance and therefore leaves the decisive proof burden entirely outside the span.",
+            "nonparaphrase_operation": "Criterion extraction: reframes the source's comparison as evaluating a procedure by whether a known obstruction survives, separating that supported comparative claim from any unsupported explanation of how the obstruction is removed.",
+            "quality_reason": "Accepted because the explicit obstruction comparison supports a bounded conceptual operation and the record preserves its concrete mathematical referent. Its justification is unavailable locally, so acceptance is limited to the claimed comparison rather than the proof or mechanism.",
+            "source_support": "The legible prose explicitly states that the obstacle caused by imprimitive characters in Chen's argument does not appear in the author's procedure, claims a simplified proof of Chen's binary Goldbach theorem, and defers the detailed account.",
+            "speculation_status": "The obstacle-avoidance and simplified-proof statements are authorial claims, not locally verified results. The comparison criterion is an interpretation; no reorganization, character-class interface, or disappearance mechanism is reconstructed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 100-101 explain why the result is stated separately; lines 102-108 give the theorem; lines 109-110 place known cases inside it. Several parameter symbols and inequalities in lines 102-108 are corrupted, so only the family-level statement is reliable without the scan.",
+          "line_end": 110,
+          "line_start": 100,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the exact admissibility inequalities and uniformity domain; low-to-moderate for the semantic statement that iterated convolution controls structured products of primes.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equidistribution for indicator sequences of restricted prime products",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u06.txt",
+          "unit_bytes": 635,
+          "unit_id": "openalex_w2128307093_depth_u06",
+          "unit_sha256": "291d2a9fe6b695626045b80fcc78607253bd9e6d663ddee8c38b5bba615afd7d",
+          "unit_type": "iterated Bombieri theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The indicator compresses a constrained factorization pattern into an arithmetic function to which the progression-error interface can be applied. The theorem presents convolutional iteration as a way to control a whole parameterized family rather than one fixed sequence.",
+            "nonparaphrase_operation": "The bridge object is w: it turns existential prime-factor structure with range constraints into a sequence whose residue-class deviation is measured by property (C). The preceding closure principle motivates how factor-level distribution can feed product-level distribution.",
+            "quality_reason": "Despite damaged symbols, the span legibly defines an indicator for integers representable as a product of a fixed number of primes subject to size restrictions and states that it has property (C) uniformly in the allowed parameters. The source explicitly identifies results used by Chen and cited earlier theorems as special cases. The 'compresses structure into an arithmetic function' phrasing is generic, but it is made concrete by the existential prime-product definition and property (C).",
+            "source_support": "Theorem 2 defines w(n) to be one when n can be written as a product of a fixed number of primes satisfying parameterized size restrictions, and zero otherwise. It states that w has property (C) uniformly over the allowed parameters and lists estimates from Chen and other earlier results as special cases.",
+            "speculation_status": "The extracted span does not preserve the admissibility inequalities, exact prime ranges, or full uniformity domain. It therefore cannot support a quantitative instantiation or show from this unit alone how overlap or multiple representations are handled. The family-level theorem and its special-case claim are recoverable, but the number and names of parameters, their inequalities, and the exact definition's symbols require scan verification. Treating the indicator as a bridge from constrained factorization structure to residue-class error control is a source-grounded conceptual operation. Linking the theorem to convolutional iteration is supported by the immediately preceding statement that Theorem 1 allows Bombieri's theorem to be iterated, but it is not a displayed derivation. The number and names of parameters, admissibility inequalities, prime ranges, and precise uniformity domain are too corrupted for quantitative reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Equidistribution for structured prime products can be transferred into additive-divisor asymptotics even when extracting all coefficients remains substantially harder than establishing the expansion's broad form.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2128307093_depth_u06",
+          "openalex_w2128307093_depth_u07"
+        ],
+        "proposed_limit": "The damaged displays prevent recovery of the specific expansions, coefficients, and error terms from this text layer.",
+        "source_id": "openalex_w2128307093",
+        "synthesis_id": "riemann_v2_within_d770f0fef02ccedcd3779aca",
+        "title": "Downstream reach exceeds coefficient accessibility"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 100-101 explain why the result is stated separately; lines 102-108 give the theorem; lines 109-110 place known cases inside it. Several parameter symbols and inequalities in lines 102-108 are corrupted, so only the family-level statement is reliable without the scan.",
+          "line_end": 110,
+          "line_start": 100,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the exact admissibility inequalities and uniformity domain; low-to-moderate for the semantic statement that iterated convolution controls structured products of primes.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Equidistribution for indicator sequences of restricted prime products",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u06.txt",
+          "unit_bytes": 635,
+          "unit_id": "openalex_w2128307093_depth_u06",
+          "unit_sha256": "291d2a9fe6b695626045b80fcc78607253bd9e6d663ddee8c38b5bba615afd7d",
+          "unit_type": "iterated Bombieri theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The indicator compresses a constrained factorization pattern into an arithmetic function to which the progression-error interface can be applied. The theorem presents convolutional iteration as a way to control a whole parameterized family rather than one fixed sequence.",
+            "nonparaphrase_operation": "The bridge object is w: it turns existential prime-factor structure with range constraints into a sequence whose residue-class deviation is measured by property (C). The preceding closure principle motivates how factor-level distribution can feed product-level distribution.",
+            "quality_reason": "Despite damaged symbols, the span legibly defines an indicator for integers representable as a product of a fixed number of primes subject to size restrictions and states that it has property (C) uniformly in the allowed parameters. The source explicitly identifies results used by Chen and cited earlier theorems as special cases. The 'compresses structure into an arithmetic function' phrasing is generic, but it is made concrete by the existential prime-product definition and property (C).",
+            "source_support": "Theorem 2 defines w(n) to be one when n can be written as a product of a fixed number of primes satisfying parameterized size restrictions, and zero otherwise. It states that w has property (C) uniformly over the allowed parameters and lists estimates from Chen and other earlier results as special cases.",
+            "speculation_status": "The extracted span does not preserve the admissibility inequalities, exact prime ranges, or full uniformity domain. It therefore cannot support a quantitative instantiation or show from this unit alone how overlap or multiple representations are handled. The family-level theorem and its special-case claim are recoverable, but the number and names of parameters, their inequalities, and the exact definition's symbols require scan verification. Treating the indicator as a bridge from constrained factorization structure to residue-class error control is a source-grounded conceptual operation. Linking the theorem to convolutional iteration is supported by the immediately preceding statement that Theorem 1 allows Bombieri's theorem to be iterated, but it is not a displayed derivation. The number and names of parameters, admissibility inequalities, prime ranges, and precise uniformity domain are too corrupted for quantitative reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The existence and qualitative structure of the application are explicit at lines 111-112 and 120-129, but both displayed expansions at lines 113-119 and coefficient names at lines 121-122 are badly extracted. The page header at lines 123-126 interrupts the sentence without changing its meaning.",
+          "line_end": 129,
+          "line_start": 111,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high for the actual asymptotic formulas, error terms, and coefficient identities; those details must not be used without scan verification. Only the prose-level implication and coefficient-complexity contrast are accepted here.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 2 is said to yield asymptotic expansions in additive divisor problems for prime-product inputs. The author separately observes that some displayed coefficients are easy to calculate whereas the remaining coefficients require substantial work, distinguishing availability of an expansion from tractability of all its constants.",
+          "source_id": "openalex_w2128307093",
+          "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Iterated equidistribution feeds additive-divisor asymptotics with uneven coefficient difficulty",
+          "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u07.txt",
+          "unit_bytes": 849,
+          "unit_id": "openalex_w2128307093_depth_u07",
+          "unit_sha256": "019b4b4fb406d0982343ceefa9a5aed7d730c42f14963dcb9b856d298d809d41",
+          "unit_type": "downstream asymptotic application",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Equidistribution acts as an upstream input to an additive correlation problem, but it does not make all lower-order arithmetic data equally transparent. The unit separates structural control sufficient for an expansion from finer coefficient extraction.",
+            "nonparaphrase_operation": "The bridge runs from the restricted-prime-product sequence of Theorem 2 to weighted additive-divisor averages; the asymptotic expansion then organizes the result into main-scale terms, coefficients, and an error term with distinct proof costs.",
+            "quality_reason": "The prose explicitly says Theorem 2 has additive-divisor applications, identifies r(n) as the number of representations as a sum of two squares, and states that some coefficients are easy while others require much labor. It explicitly compares with announced results restricted to the two-prime case and having an inferior error term. The candidate correctly refuses to reconstruct any exact expansion or coefficient from the corrupted displays. The main-scale/coefficient/error organization is schematic, but it remains tied to the displayed expansion and the source's explicit coefficient and error-term comparisons.",
+            "source_support": "The source says Theorem 2 has applications to additive divisor problems and displays asymptotic expansions involving the sum-of-two-squares representation function evaluated on products of primes. It remarks that certain coefficients are easy to calculate, whereas the others require much labor, and compares with earlier results for the two-prime case with a weaker error term.",
+            "speculation_status": "The displayed expansions are too corrupted to identify their powers, constants, coefficient indices, or error terms safely. No exact asymptotic or coefficient formula should be recovered from this text layer. High for every quantitative detail and coefficient identity. Only the existence of the applications, the role of the sum-of-two-squares representation function, the coefficient-difficulty contrast, and the qualitative comparison with earlier work are secure. Separating existence of an asymptotic expansion from the burden of extracting all coefficients is a faithful conceptual reading of the source's explicit difficulty contrast. Describing Theorem 2 as an upstream equidistribution input to additive-divisor averages is a reasonable bridge inference from the stated application and displayed prime-product sums. Both expansions, powers, coefficient symbols, indices, constants, and error terms are badly damaged; only the prose-level application and difficulty comparison are reliable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "6ec8a290a28418a7392e88dca5aece7e62404604320ee3f193e51fd3e857dd6c"
+}

@@ -1,0 +1,655 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1964482233",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1964482233_56fe80ee_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "In each setting, a tailored orthogonality mechanism converts a resonator norm and a central-value mixed moment into two finite quadratic forms; an unusually large or small ratio forces an extreme member of the averaging domain.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1964482233_depth_003",
+          "openalex_w1964482233_depth_007",
+          "openalex_w1964482233_depth_012",
+          "openalex_w1964482233_depth_018",
+          "openalex_w1964482233_depth_020"
+        ],
+        "proposed_limit": "The diagonalizing inputs differ substantially—Fourier decay in t, quadratic-character square detection, and Petersson-Hecke averaging—so the source does not establish an abstract theorem covering arbitrary families.",
+        "source_id": "openalex_w1964482233",
+        "synthesis_id": "riemann_v2_within_d8b89823ccfc7bfdb9691a75",
+        "title": "A common resonance quotient across three spectral settings"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact diagonal evaluations and admissible resonator length begin at line 195.",
+          "line_end": 114,
+          "line_start": 90,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The inequality and moment definitions are formula-dependent and need PDF verification, while their conceptual relation is clear in the extracted prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces a Dirichlet-polynomial resonator, defines its norm and its mixed moment with zeta, bounds the maximum by their ratio, and observes that evaluation turns coefficient choice into optimization of two quadratic forms. This is the paper's transferable conceptual core.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Resonance as a mixed-moment quotient",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_003.txt",
+          "unit_bytes": 1585,
+          "unit_id": "openalex_w1964482233_depth_003",
+          "unit_sha256": "198253515020a029945b50a7f5e087906c0dca23fba1f765dc6fe0f2bcb7fe9d",
+          "unit_type": "method-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_003.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analytic search for an extreme value is reframed as finite-dimensional coefficient optimization: build a probe with high alignment to zeta relative to its own energy.",
+            "nonparaphrase_operation": "The ratio is a Rayleigh-quotient-like bridge from function values on an interval to a quadratic optimization problem; smoothing makes the moment calculation tractable without changing the intended central interval.",
+            "quality_reason": "The span defines the resonator, the smoothed norm and mixed moment, the maximum lower bound by their quotient, and the reduction to optimizing two quadratic forms when the resonator is short. The candidate correctly withholds the later evaluations and optimizer. The phrase 'Rayleigh-quotient-like' is analogical, but it is specific to the quotient of quadratic forms and is not content-free.",
+            "source_support": "The source defines smoothed moments M1 and M2 for a Dirichlet polynomial R, bounds the maximum zeta magnitude below by |M2|/M1, and states that for a sufficiently short R both moments become quadratic forms in the coefficients r(n).",
+            "speculation_status": "The span does not evaluate the forms or exhibit the optimizer, and portability to other L-function families is asserted at the method level rather than proved here. The mechanism is explicit, but the extracted moment formulas, conjugations, and inequality normalization require PDF verification. The energy-versus-alignment and Rayleigh-quotient language accurately interprets the displayed ratio without pretending that the source states an abstract spectral theorem. Moment conjugations, normalizations, and the displayed inequality remain formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The truncated Dirichlet-series approximation for zeta and the condition N at most T to a fixed power below one are essential to the reduction.",
+          "line_end": 271,
+          "line_start": 195,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy text-layer extraction; exact summation constraints, powers, conjugations, and error terms require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the resonator norm and zeta-mixed moment, uses rapid Fourier decay plus the length condition to suppress off-diagonal frequencies, and reduces the analytic problem to an explicit coefficient quotient.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier diagonalization of smoothed zeta resonance moments",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_007.txt",
+          "unit_bytes": 4062,
+          "unit_id": "openalex_w1964482233_depth_007",
+          "unit_sha256": "e3da62ebd25e4d0f5e4d104ebb6ffb4c7a6346cbaa7ea4da52e3e68652d76028",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_007.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing is not decorative regularization: it converts oscillatory orthogonality into quantitative near-diagonality, exposing the arithmetic incidence relation that the resonator can optimize.",
+            "nonparaphrase_operation": "The bridge runs from t-integration to Fourier frequencies, then from frequency equality to the multiplicative constraint mk=n, reducing continuous analysis to a finite arithmetic quadratic form.",
+            "quality_reason": "Expanding the smoothed norm produces Fourier-transform factors at T log(m/n), and rapid decay plus N below T suppresses unequal indices. The truncated zeta series gives the analogous relation mk=n in the mixed moment and hence the explicit coefficient quotient. The candidate preserves the dependence on the truncation and resonator-length gap.",
+            "source_support": "Expanding the smoothed norm expresses it through the Fourier transform at T log(m/n); rapid decay suppresses m≠n. After a short Dirichlet-series approximation for zeta, the mixed moment similarly retains the diagonal relation mk=n and yields a coefficient quotient.",
+            "speculation_status": "The reduction depends essentially on the zeta truncation and the resonator-length gap below T; longer polynomials would permit uncontrolled off-diagonal terms. The diagonal mechanism is clear, but exact constraints, powers, conjugations, and error terms are formula-sensitive. Calling smoothing a quantitative diagonalizer and the resulting condition an arithmetic incidence relation accurately identifies the non-paraphrase operation. Exact summation ranges, powers, conjugations, and errors are formula-sensitive and appropriately flagged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof uses a restricted discriminant subfamily sufficient for existence; the subsequent mixed moment additionally needs an approximate functional equation.",
+          "line_end": 576,
+          "line_start": 514,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Legendre/Kronecker symbols, square conditions, local factors, and error exponents need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines family moments over squarefree discriminants and a character-valued resonator. Expanding its norm shows that character orthogonality is replaced by a square/non-square dichotomy, with perfect-square products supplying the main term and character-sum estimates controlling the rest.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Quadratic-character resonator and square detection",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_012.txt",
+          "unit_bytes": 3353,
+          "unit_id": "openalex_w1964482233_depth_012",
+          "unit_sha256": "751d284b4be1d0e45d2c42ab6451b7f99716da2654b7d9a7d741d2c67aeea3a1",
+          "unit_type": "family-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_012.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The family has its own orthogonality relation: equality of Fourier frequencies is replaced by membership in the square class, so the diagonal is arithmetic rather than literal.",
+            "nonparaphrase_operation": "The character symbol maps multiplicative index products into signs across the discriminant family, and the square/nonsquare dichotomy exposes which correlations survive averaging.",
+            "quality_reason": "The proof restricts to discriminants 8d with d odd and squarefree, defines a character-valued resonator and two family moments, and expands its norm. The character-sum estimates split the product n1n2 into square and nonsquare cases, with squares giving the main term and nonsquares an error. The candidate correctly notes that the central-value-weighted moment still requires the approximate functional equation.",
+            "source_support": "The proof restricts to discriminants 8d with d odd and squarefree, defines a character-valued resonator and its norm and mixed moments, and expands the norm. Estimates for the discriminant character sum distinguish whether n1n2 is a square, yielding the main term and an error.",
+            "speculation_status": "The restricted subfamily suffices for existence but is not the whole theorem family, and evaluation of the central-value-weighted moment still needs an approximate functional equation. The square-detection mechanism is clear; symbols, local density factors, square conditions, and error exponents need PDF verification. Calling square membership the family's arithmetic diagonal accurately contrasts this detector with literal frequency equality. Character symbols, local density factors, square conditions, and error exponents need PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The weights are roughly constant, allowing a later weighted-family average to imply existence of an individual form.",
+          "line_end": 932,
+          "line_start": 865,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Normalizations, trace-formula constants, Bessel range, and length bounds require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces harmonic weights, applies Petersson's trace formula, and uses a small-argument Bessel bound plus a resonator-length restriction to make off-diagonal Kloosterman contributions exponentially small, leaving the coefficient square norm.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Harmonic Petersson weights turn the cusp-form family into a diagonal norm",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_018.txt",
+          "unit_bytes": 3217,
+          "unit_id": "openalex_w1964482233_depth_018",
+          "unit_sha256": "baca7c9f5912cb825f1842f7aaa87a8be8774790e19c997d13e3e703420763d9",
+          "unit_type": "orthogonality-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_018.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A weighted family basis turns automorphic coefficients into approximately orthonormal coordinates within a controlled range.",
+            "nonparaphrase_operation": "Petersson's trace bridges averaging over forms to a Kronecker diagonal plus Kloosterman-Bessel error; the resonator-length restriction makes that error negligible.",
+            "quality_reason": "The span defines the harmonic weight, relates it to a symmetric-square L-value, bounds its size, and states Petersson's trace formula. A small-argument Bessel estimate and short-index restriction make the Kloosterman off-diagonal exponentially small, leaving the coefficient-square norm for the short resonator. The candidate correctly notes that the central L-value has not yet been inserted.",
+            "source_support": "The source defines weights ω(f), relates them to symmetric-square L-values, records their logarithmic size bounds, and applies Petersson's formula. When the indices are small relative to k, the Bessel estimate makes the off-diagonal trace exponentially small, so the weighted average of R(f)² is asymptotic to the sum of r(n)².",
+            "speculation_status": "The diagonalization holds only in the short-index regime and for the harmonic weighting; the span has not yet inserted the central L-value. The orthogonality mechanism is clear, but normalizations, constants, Bessel range, and length bounds require PDF verification. Approximately orthonormal coordinates is an apt interpretation of the weighted Kronecker diagonal within the controlled range. Weights, trace constants, Bessel range, and resonator-length normalization need PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The shortness conditions on both resonator and central-value expansion are what keep the trace formula effectively diagonal.",
+          "line_end": 1017,
+          "line_start": 982,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Hecke relation indices, weight replacement, gcd divisor sum, and error term are formula-sensitive and require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the approximate functional equation with Hecke relations and Petersson orthogonality to reduce the central-value-weighted resonator average to a finite quadratic form with kernel sigma of the gcd divided by the geometric mean.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hecke multiplication and Petersson averaging yield a gcd kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_020.txt",
+          "unit_bytes": 2137,
+          "unit_id": "openalex_w1964482233_depth_020",
+          "unit_sha256": "92446855c4755e2dcb6cabe6db88a030111080974e974e34526f949fdc02cd5d",
+          "unit_type": "kernel-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_020.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The family-specific analytic machinery culminates in a finite positive arithmetic interaction: indices couple according to their shared divisors rather than direct equality.",
+            "nonparaphrase_operation": "Hecke algebra rewrites coefficient products into a form visible to Petersson orthogonality; summing the surviving divisors produces the gcd kernel that can be optimized multiplicatively.",
+            "quality_reason": "For a short resonator the source combines the weighted central-value series with the Hecke relation and the diagonal trace estimate. Replacing V by 1 in the controlled range and summing over common divisors yields sigma((m,n))/sqrt(mn), with the displayed exponentially small error. The candidate preserves the shortness, normalization, and weight-approximation dependencies.",
+            "source_support": "For a short resonator, the source inserts the truncated approximate functional equation, applies the Hecke relation to λ_f(m)λ_f(n), and uses the diagonal trace estimate. Replacing the weight V by 1 within its range yields a quadratic form with kernel σ((m,n))/√(mn), plus an exponentially small error.",
+            "speculation_status": "Both the resonator and effective central-value series must remain short, and the derived kernel depends on the stated normalization and weight approximation. The gcd-kernel outcome is clear; relation indices, truncations, divisor factors, and errors require PDF verification. Describing the kernel as coupling indices through shared divisors rather than direct equality is exactly the non-paraphrase structural content of the gcd sum. Multiplicative optimizability is a forward inference supported by the next bounded context's reuse of the multiplicative profile. Hecke indices, truncation, divisor factors, V replacement, and error normalization are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_75b10cec243b29d1a96693bd13e4b341dbdf4f5707f37a2f47b21abfa74e073f",
+        "dossier_sha256": "049e92d9f53d3e40230ebd568a481210f370648f7ae969917b4d9e090ae78905"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same prime-supported magnitude profile can select large or small central values because a Mobius sign twist reverses the linear prime contributions in the mixed-moment Euler product while leaving the norm essentially unchanged.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1964482233_depth_014",
+          "openalex_w1964482233_depth_021"
+        ],
+        "proposed_limit": "This paired sign mechanism is demonstrated for the quadratic-character and cusp-form families; the zeta section proves large values only.",
+        "source_id": "openalex_w1964482233",
+        "synthesis_id": "riemann_v2_within_cddae1f9e003bb3dc0c658fc",
+        "title": "Coefficient signs as an extremal-direction control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposition is established in lines 691-863; this span contains both the asymptotic mechanism and its extremal consequence.",
+          "line_end": 690,
+          "line_start": 660,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prime product signs and the exact N versus X restriction are essential and require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States asymptotics for the resonator norm and mixed moment in which using mu times f produces negative linear Euler factors and an exponentially small quotient, while removing mu reverses the effect and gives large values.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "One multiplicative profile selects either small or large quadratic central values",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_014.txt",
+          "unit_bytes": 1608,
+          "unit_id": "openalex_w1964482233_depth_014",
+          "unit_sha256": "087de40f2a7f774ce3ee6109d98e5240e0a27624653dc907ad3395ccaa0151af",
+          "unit_type": "sign-controlled-selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_014.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Large and small central values are selected by phase, not by changing the coefficient magnitudes: local sign coherence controls the direction of the global correlation.",
+            "nonparaphrase_operation": "Euler factorization exposes the sign switch prime by prime, and the ratio of weighted to unweighted family moments transfers that local choice to an individual extremal value.",
+            "quality_reason": "For r=mu f the proposition states product asymptotics for the norm and mixed moment with negative linear prime terms, and their quotient gives the small-value conclusion. The source explicitly says that removing the Möbius factor and taking r=f gives the large-value conclusion.",
+            "source_support": "Proposition 3.3 gives Euler-product asymptotics for the quadratic resonator norm and mixed moment when r=μf. Their quotient has negative linear prime terms and is exponentially small; the source says taking r=f instead yields the corresponding large-value result.",
+            "speculation_status": "The proposition's proof is deferred to later units, and identical magnitude profiles do not remove the need to verify norm, error, and admissible-length estimates. The sign-controlled mechanism is explicit; the exact products, constants, and N-versus-X restriction need PDF verification. Describing the common magnitude profile and its sign switch as local phase control is a faithful conceptual reading of r=mu f versus r=f. The transfer from a moment quotient to an individual extremal value is supported by the source's stated consequence, although the general averaging inequality is not redisplayed here. Prime-product signs, constants, and the exact N-to-X restriction require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the final family-specific realization of the paper's common resonance template.",
+          "line_end": 1042,
+          "line_start": 1022,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exact products, constants, and admissible N choice require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates the norm and gcd-kernel quadratic form with the same multiplicative profile used in the zeta optimization; positive coefficients create reinforcing linear Euler factors for large values, while multiplying by mu reverses them to produce small values.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mobius twisting switches large to small cusp-form central values",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_021.txt",
+          "unit_bytes": 953,
+          "unit_id": "openalex_w1964482233_depth_021",
+          "unit_sha256": "c3ee1d831aa677dffd562865e21f1a19ff914a284868d0eb588317a268092020",
+          "unit_type": "sign-controlled-selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_021.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "After the cusp-form trace and Hecke reductions have supplied a gcd-kernel quadratic form, the final optimization reuses one multiplicative coefficient-magnitude profile to reach opposite extremal directions. With the untwisted choice, the displayed mixed Euler product contains reinforcing positive linear prime contributions and yields the large-value conclusion; the final sentence invokes the parallel choice r(n)=μ(n)f(n) for the small-value conclusion. Thus coefficient signs act as a direction control while the norm depends on squared magnitudes, although the small-value Euler product is invoked rather than displayed here.",
+            "nonparaphrase_operation": "Compares the two coefficient choices at the Euler-factor level: keeping the magnitude profile preserves the norm-scale representation, while the Möbius phase reverses the linear primewise contribution in the analogous calculation and changes the selected tail.",
+            "quality_reason": "Accepted after bounding the mechanism to the cusp-form realization and qualifying the implicit small-value calculation. The interpretation retains the concrete coefficient choices, identifies the gain and missing derivation, and leaves formula-sensitive products and earlier analytic burdens explicit.",
+            "source_support": "The exact span chooses N proportional to k, sets the resonator coefficients to the earlier multiplicative f, and applies Rankin's trick to display a norm product with factors 1+f(p)^2 and a central-value-weighted product with positive linear f(p)/√p terms, from which it draws the large-value part of Theorem 3. It then prescribes r(n)=μ(n)f(n) for the small-value part. Exact factors, constants, and admissibility of N remain PDF-sensitive and depend on earlier estimates.",
+            "speculation_status": "The sign-reversal reading is a source-local inference licensed by the displayed untwisted product and the stated Möbius replacement. The small-value product is not claimed to be separately derived in this span, and no cross-family claim that trace machinery changes only the kernel is made."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_75b10cec243b29d1a96693bd13e4b341dbdf4f5707f37a2f47b21abfa74e073f",
+        "dossier_sha256": "049e92d9f53d3e40230ebd568a481210f370648f7ae969917b4d9e090ae78905"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The useful resonator length is set by the point at which the chosen analytic representation still suppresses off-diagonal terms; changing from a second to a fourth resonator moment or from zeta to a family changes that length budget.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1964482233_depth_007",
+          "openalex_w1964482233_depth_011",
+          "openalex_w1964482233_depth_013",
+          "openalex_w1964482233_depth_018",
+          "openalex_w1964482233_depth_020"
+        ],
+        "proposed_limit": "The source supplies setting-specific inequalities and does not claim these displayed length bounds are universally optimal.",
+        "source_id": "openalex_w1964482233",
+        "synthesis_id": "riemann_v2_within_54e4a26892d149073fd959de",
+        "title": "Diagonal extraction is limited by representation length"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The truncated Dirichlet-series approximation for zeta and the condition N at most T to a fixed power below one are essential to the reduction.",
+          "line_end": 271,
+          "line_start": 195,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy text-layer extraction; exact summation constraints, powers, conjugations, and error terms require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the resonator norm and zeta-mixed moment, uses rapid Fourier decay plus the length condition to suppress off-diagonal frequencies, and reduces the analytic problem to an explicit coefficient quotient.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier diagonalization of smoothed zeta resonance moments",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_007.txt",
+          "unit_bytes": 4062,
+          "unit_id": "openalex_w1964482233_depth_007",
+          "unit_sha256": "e3da62ebd25e4d0f5e4d104ebb6ffb4c7a6346cbaa7ea4da52e3e68652d76028",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_007.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing is not decorative regularization: it converts oscillatory orthogonality into quantitative near-diagonality, exposing the arithmetic incidence relation that the resonator can optimize.",
+            "nonparaphrase_operation": "The bridge runs from t-integration to Fourier frequencies, then from frequency equality to the multiplicative constraint mk=n, reducing continuous analysis to a finite arithmetic quadratic form.",
+            "quality_reason": "Expanding the smoothed norm produces Fourier-transform factors at T log(m/n), and rapid decay plus N below T suppresses unequal indices. The truncated zeta series gives the analogous relation mk=n in the mixed moment and hence the explicit coefficient quotient. The candidate preserves the dependence on the truncation and resonator-length gap.",
+            "source_support": "Expanding the smoothed norm expresses it through the Fourier transform at T log(m/n); rapid decay suppresses m≠n. After a short Dirichlet-series approximation for zeta, the mixed moment similarly retains the diagonal relation mk=n and yields a coefficient quotient.",
+            "speculation_status": "The reduction depends essentially on the zeta truncation and the resonator-length gap below T; longer polynomials would permit uncontrolled off-diagonal terms. The diagonal mechanism is clear, but exact constraints, powers, conjugations, and error terms are formula-sensitive. Calling smoothing a quantitative diagonalizer and the resulting condition an arithmetic incidence relation accurately identifies the non-paraphrase operation. Exact summation ranges, powers, conjugations, and errors are formula-sensitive and appropriately flagged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a different optimization objective from the pointwise-maximal resonator and depends on the fourth resonator moment as a concentration penalty.",
+          "line_end": 512,
+          "line_start": 434,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy extraction; the resonator support, fourth-moment product, parameter relation, and final exponent all require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns a mixed moment exceeding twice the thresholded norm into a lower bound for the large-value set via two Cauchy applications, then chooses a shorter prime-supported resonator so its fourth moment diagonalizes and tunes its scale parameter to the desired threshold.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "High-threshold frequency from a resonator and fourth-moment control",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_011.txt",
+          "unit_bytes": 4729,
+          "unit_id": "openalex_w1964482233_depth_011",
+          "unit_sha256": "445beab1cc5185110016c337be03f1884b4f7b01dab33cf21427bc247aa16d83",
+          "unit_type": "tail-measure-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_011.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A frequency witness must be both aligned and spread out: high correlation is useful only if the resonator's own mass is not too concentrated.",
+            "nonparaphrase_operation": "The fourth-moment inequality converts correlation surplus above e^V into a measure bound, while Euler products make the gain-versus-concentration tradeoff explicit prime by prime.",
+            "quality_reason": "Under the stated mixed-moment surplus, two Cauchy applications give a measure lower bound involving M2 and fourth moments of zeta and the resonator. The source chooses a shorter prime-supported multiplicative resonator, diagonalizes its fourth moment through ab=cd, and tunes A to V. The candidate retains the essential short-length condition and the different objective from pointwise optimization.",
+            "source_support": "Assuming the mixed moment exceeds twice the threshold times the resonator norm, two Cauchy applications lower-bound the zeta large-value set in terms of M2 and the fourth moments of zeta and R. A shorter prime-supported multiplicative resonator diagonalizes the R fourth moment, and its scale parameter is tuned to V.",
+            "speculation_status": "This objective differs from pointwise quotient maximization and relies on a shorter length so products ab and cd remain diagonally separable. The strategy is recoverable, but support endpoints, product factors, parameter relations, and the final exponent require PDF verification. Calling the fourth resonator moment a concentration penalty is a faithful interpretation of its inverse-square role in the measure bound. The aligned-and-spread-out formulation summarizes the gain-versus-fourth-moment tradeoff without adding a new claim. Support endpoints, Euler factors, the A-V relation, and the final exponent are unsafe at exact-formula level."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The weight's small- and large-argument behavior justifies truncation and partial summation; the main term is simplified later.",
+          "line_end": 658,
+          "line_start": 577,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong formula dependency: Mellin definition of the weight, derivative bounds, square constraint, integral, and error estimates require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a smoothed approximate functional equation to expose an extra character variable, then applies the same square detector to derive an asymptotic mixed moment whose main term is supported exactly when the product of three indices is an odd square.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Approximate functional equation and the quadratic-family mixed moment",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_013.txt",
+          "unit_bytes": 4694,
+          "unit_id": "openalex_w1964482233_depth_013",
+          "unit_sha256": "c81b6113613ea214d7cefe73634d7d2d4e9cab3361fc74dee6cc67769b513ca9",
+          "unit_type": "analytic-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_013.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The approximate functional equation is an interface: it translates the analytic central value into multiplicative coordinates compatible with the family's orthogonality detector.",
+            "nonparaphrase_operation": "The Mellin-defined weight makes the infinite series effectively finite and smooth enough for partial summation, while the new index n joins the two resonator indices in a single square constraint.",
+            "quality_reason": "The approximate functional equation expresses the central value as a smoothed character series, and the source states the small-argument, decay, and derivative properties of W. Combining that series with the character estimates produces a main term exactly on nn1n2 being an odd square and a controlled error. The candidate does not claim that the square-constrained term has already been factored or optimized.",
+            "source_support": "The source represents each quadratic central value by a smoothed character series with weight W, records W's small-argument approximation and rapid decay, and combines this with the square/nonsquare character estimates to obtain a mixed-moment main term supported on nn1n2 being an odd square.",
+            "speculation_status": "This lemma exposes but does not yet factor or optimize the square-constrained main term; its error control depends on the stated decay and length range. The bridge is clear, but the Mellin formula, derivative bounds, integral factors, square condition, and errors require PDF checking. Treating the approximate functional equation as an interface to multiplicative coordinates is specific to the actual change of representation in the span. The Mellin kernel, derivative bounds, integral factors, square constraint, and errors are highly formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The weights are roughly constant, allowing a later weighted-family average to imply existence of an individual form.",
+          "line_end": 932,
+          "line_start": 865,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Normalizations, trace-formula constants, Bessel range, and length bounds require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces harmonic weights, applies Petersson's trace formula, and uses a small-argument Bessel bound plus a resonator-length restriction to make off-diagonal Kloosterman contributions exponentially small, leaving the coefficient square norm.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Harmonic Petersson weights turn the cusp-form family into a diagonal norm",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_018.txt",
+          "unit_bytes": 3217,
+          "unit_id": "openalex_w1964482233_depth_018",
+          "unit_sha256": "baca7c9f5912cb825f1842f7aaa87a8be8774790e19c997d13e3e703420763d9",
+          "unit_type": "orthogonality-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_018.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A weighted family basis turns automorphic coefficients into approximately orthonormal coordinates within a controlled range.",
+            "nonparaphrase_operation": "Petersson's trace bridges averaging over forms to a Kronecker diagonal plus Kloosterman-Bessel error; the resonator-length restriction makes that error negligible.",
+            "quality_reason": "The span defines the harmonic weight, relates it to a symmetric-square L-value, bounds its size, and states Petersson's trace formula. A small-argument Bessel estimate and short-index restriction make the Kloosterman off-diagonal exponentially small, leaving the coefficient-square norm for the short resonator. The candidate correctly notes that the central L-value has not yet been inserted.",
+            "source_support": "The source defines weights ω(f), relates them to symmetric-square L-values, records their logarithmic size bounds, and applies Petersson's formula. When the indices are small relative to k, the Bessel estimate makes the off-diagonal trace exponentially small, so the weighted average of R(f)² is asymptotic to the sum of r(n)².",
+            "speculation_status": "The diagonalization holds only in the short-index regime and for the harmonic weighting; the span has not yet inserted the central L-value. The orthogonality mechanism is clear, but normalizations, constants, Bessel range, and length bounds require PDF verification. Approximately orthonormal coordinates is an apt interpretation of the weighted Kronecker diagonal within the controlled range. Weights, trace constants, Bessel range, and resonator-length normalization need PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The shortness conditions on both resonator and central-value expansion are what keep the trace formula effectively diagonal.",
+          "line_end": 1017,
+          "line_start": 982,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Hecke relation indices, weight replacement, gcd divisor sum, and error term are formula-sensitive and require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the approximate functional equation with Hecke relations and Petersson orthogonality to reduce the central-value-weighted resonator average to a finite quadratic form with kernel sigma of the gcd divided by the geometric mean.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hecke multiplication and Petersson averaging yield a gcd kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_020.txt",
+          "unit_bytes": 2137,
+          "unit_id": "openalex_w1964482233_depth_020",
+          "unit_sha256": "92446855c4755e2dcb6cabe6db88a030111080974e974e34526f949fdc02cd5d",
+          "unit_type": "kernel-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_020.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The family-specific analytic machinery culminates in a finite positive arithmetic interaction: indices couple according to their shared divisors rather than direct equality.",
+            "nonparaphrase_operation": "Hecke algebra rewrites coefficient products into a form visible to Petersson orthogonality; summing the surviving divisors produces the gcd kernel that can be optimized multiplicatively.",
+            "quality_reason": "For a short resonator the source combines the weighted central-value series with the Hecke relation and the diagonal trace estimate. Replacing V by 1 in the controlled range and summing over common divisors yields sigma((m,n))/sqrt(mn), with the displayed exponentially small error. The candidate preserves the shortness, normalization, and weight-approximation dependencies.",
+            "source_support": "For a short resonator, the source inserts the truncated approximate functional equation, applies the Hecke relation to λ_f(m)λ_f(n), and uses the diagonal trace estimate. Replacing the weight V by 1 within its range yields a quadratic form with kernel σ((m,n))/√(mn), plus an exponentially small error.",
+            "speculation_status": "Both the resonator and effective central-value series must remain short, and the derived kernel depends on the stated normalization and weight approximation. The gcd-kernel outcome is clear; relation indices, truncations, divisor factors, and errors require PDF verification. Describing the kernel as coupling indices through shared divisors rather than direct equality is exactly the non-paraphrase structural content of the gcd sum. Multiplicative optimizability is a forward inference supported by the next bounded context's reuse of the multiplicative profile. Hecke indices, truncation, divisor factors, V replacement, and error normalization are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_75b10cec243b29d1a96693bd13e4b341dbdf4f5707f37a2f47b21abfa74e073f",
+        "dossier_sha256": "049e92d9f53d3e40230ebd568a481210f370648f7ae969917b4d9e090ae78905"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Across the constructions, Rankin weighting certifies that extending length-truncated nonnegative or absolute majorant sums to Euler products loses negligibly little, making primewise coefficient design analytically usable.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1964482233_depth_008",
+          "openalex_w1964482233_depth_011",
+          "openalex_w1964482233_depth_015",
+          "openalex_w1964482233_depth_017"
+        ],
+        "proposed_limit": "The tail estimates depend on the particular coefficient support, positivity or majorization, and parameter ranges in each application.",
+        "source_id": "openalex_w1964482233",
+        "synthesis_id": "riemann_v2_within_ae18cf38bf15647d65dd35a0",
+        "title": "Rankin's trick as the finite-to-multiplicative bridge"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This proves the lower half of the finite optimization theorem, not yet the zeta theorem itself.",
+          "line_end": 361,
+          "line_start": 272,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient window, auxiliary parameter, Euler products, and error exponent are formula-sensitive and need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the extremal quotient scale and constructs a squarefree-supported multiplicative resonator concentrated on a prime window. Rankin's trick turns the finite cutoff into a negligible Euler-product tail, leaving a product whose linear prime terms generate the large exponential gain.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sparse multiplicative resonator for the lower bound",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_008.txt",
+          "unit_bytes": 4315,
+          "unit_id": "openalex_w1964482233_depth_008",
+          "unit_sha256": "4261b24a8283c232ab988f95b48ee1d46a8b1e77db2578c850ea62c6f24e493e",
+          "unit_type": "optimization-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_008.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Sparsity and multiplicativity jointly compress a global coefficient choice into independent local gains; the prime window balances accumulated gain against truncation cost.",
+            "nonparaphrase_operation": "Rankin's trick replaces the discontinuous condition n≤N by a small power weight, making tail control compatible with Euler factorization.",
+            "quality_reason": "The lower-bound construction uses a squarefree-supported multiplicative f on a prime window, bounds the denominator by an Euler product, and applies Rankin's trick to make the numerator cutoff error negligible. The remaining main product contains positive linear prime contributions and proves only the lower half of the finite optimization theorem.",
+            "source_support": "For the lower bound in the finite optimization theorem, the source takes r=f with f multiplicative, supported only to the first power on primes in a prescribed window. It bounds the denominator by an Euler product and shows via Rankin's trick that the numerator's cutoff error is negligible, leaving a product with positive linear prime contributions.",
+            "speculation_status": "This constructs only the lower-bound witness for the quotient theorem, not the matching upper bound or the zeta theorem itself. The construction's role is secure, while the exact prime window, auxiliary scale, Euler factors, and error exponent require PDF checking. The interpretation that sparsity and multiplicativity turn a global coefficient choice into local gains is directly grounded in the Euler-product calculation. Balancing gain against cutoff cost is a conceptual summary of the chosen prime window and Rankin estimate. The exact auxiliary scale, prime window, product factors, and error exponent need PDF checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a different optimization objective from the pointwise-maximal resonator and depends on the fourth resonator moment as a concentration penalty.",
+          "line_end": 512,
+          "line_start": 434,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy extraction; the resonator support, fourth-moment product, parameter relation, and final exponent all require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Turns a mixed moment exceeding twice the thresholded norm into a lower bound for the large-value set via two Cauchy applications, then chooses a shorter prime-supported resonator so its fourth moment diagonalizes and tunes its scale parameter to the desired threshold.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "High-threshold frequency from a resonator and fourth-moment control",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_011.txt",
+          "unit_bytes": 4729,
+          "unit_id": "openalex_w1964482233_depth_011",
+          "unit_sha256": "445beab1cc5185110016c337be03f1884b4f7b01dab33cf21427bc247aa16d83",
+          "unit_type": "tail-measure-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_011.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A frequency witness must be both aligned and spread out: high correlation is useful only if the resonator's own mass is not too concentrated.",
+            "nonparaphrase_operation": "The fourth-moment inequality converts correlation surplus above e^V into a measure bound, while Euler products make the gain-versus-concentration tradeoff explicit prime by prime.",
+            "quality_reason": "Under the stated mixed-moment surplus, two Cauchy applications give a measure lower bound involving M2 and fourth moments of zeta and the resonator. The source chooses a shorter prime-supported multiplicative resonator, diagonalizes its fourth moment through ab=cd, and tunes A to V. The candidate retains the essential short-length condition and the different objective from pointwise optimization.",
+            "source_support": "Assuming the mixed moment exceeds twice the threshold times the resonator norm, two Cauchy applications lower-bound the zeta large-value set in terms of M2 and the fourth moments of zeta and R. A shorter prime-supported multiplicative resonator diagonalizes the R fourth moment, and its scale parameter is tuned to V.",
+            "speculation_status": "This objective differs from pointwise quotient maximization and relies on a shorter length so products ab and cd remain diagonally separable. The strategy is recoverable, but support endpoints, product factors, parameter relations, and the final exponent require PDF verification. Calling the fourth resonator moment a concentration penalty is a faithful interpretation of its inverse-square role in the measure bound. The aligned-and-spread-out formulation summarizes the gain-versus-fourth-moment tradeoff without adding a new claim. Support endpoints, Euler factors, the A-V relation, and the final exponent are unsafe at exact-formula level."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This reuses the zeta-section cutoff technique in a family-specific norm with extra local density factors.",
+          "line_end": 718,
+          "line_start": 691,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents, local p over p-plus-one factor, and admissible length range require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extends a truncated squarefree multiplicative sum to an Euler product and uses a small Rankin exponent to prove that the omitted tail and character-sum error remain negligible in the permitted length range.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rankin control of the quadratic resonator norm",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_015.txt",
+          "unit_bytes": 1438,
+          "unit_id": "openalex_w1964482233_depth_015",
+          "unit_sha256": "5eb179bc76c8e3c4d23fbe338efb3679625949af5d163d41f84aa54e3e58af87",
+          "unit_type": "truncation-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_015.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The cutoff is treated as an error-control layer rather than part of the main multiplicative structure, allowing the family-specific norm to inherit the same local-to-global optimization logic as the zeta case.",
+            "nonparaphrase_operation": "Power-weight domination bridges a hard truncation to an unrestricted Euler product while retaining arithmetic density corrections from averaging squarefree discriminants.",
+            "quality_reason": "Lemma 3.1 supplies a truncated squarefree multiplicative norm sum with p/(p+1) density factors. A small Rankin exponent controls the n>N tail, and the stated length bound makes the lemma error negligible, yielding the product asymptotic. The candidate correctly stops before the mixed-moment analysis.",
+            "source_support": "Starting from Lemma 3.1, the source writes M1 as a truncated squarefree multiplicative sum with local p/(p+1) factors. A small Rankin exponent bounds the omitted n>N tail, and the character-sum error is negligible in the permitted resonator-length range, giving the claimed product asymptotic.",
+            "speculation_status": "This proves only the norm asymptotic; it does not handle the square-constrained mixed moment or establish the extremal quotient alone. The truncation argument is clear, but exact exponents, p/(p+1) factors, and the admissible length require PDF verification. Treating the finite cutoff as an error-control layer is a grounded description of extending the sum to an Euler product and bounding the difference. Exact exponents, local factors, and the admissible length remain extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Together with the preceding residue unit this proves the mixed-moment half of Proposition 3.3.",
+          "line_end": 863,
+          "line_start": 794,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Euler factors and tail ratios are formula-sensitive and require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extends the constrained coprime sums to all indices, factors the extension prime by prime, simplifies harmless local weights, and applies Rankin's trick to show that the extension tails are exponentially smaller than the main product.",
+          "source_id": "openalex_w1964482233",
+          "source_normalized_sha256": "9d320651d6b0d2267d7317704e1673fd6acb93b463b1bf69a050b98c5b7a91ae",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler factorization and tail completion of the quadratic mixed moment",
+          "unit_artifact_relpath": "depth/units/openalex_w1964482233_depth_017.txt",
+          "unit_bytes": 4067,
+          "unit_id": "openalex_w1964482233_depth_017",
+          "unit_sha256": "588d38966d71ea0477da6f299976c41e195dd52bd00fbf85dffed7d286aa6161",
+          "unit_type": "factorization-and-error-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1964482233_depth_017.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Exact finite geometry is temporarily traded for factorability, but the trade is reversible because the discarded boundary is quantitatively negligible.",
+            "nonparaphrase_operation": "Euler products compress the coprimality constraints into local factors, while the Rankin exponent supplies a certificate that the infinite completion faithfully represents the truncated problem.",
+            "quality_reason": "The source extends the a,r,s sums, factors the extension prime by prime, simplifies h(p) using h(p)=1+O(1/p), and bounds a representative tail by symmetry and Rankin's trick. The resulting tail-to-main ratio is exponentially small, completing the mixed-moment asymptotic for the chosen f. The candidate preserves dependence on the preceding residue formula and does not generalize to arbitrary coefficients.",
+            "source_support": "The source extends the a,r,s sums in the mixed moment, factors the extension by multiplicativity, simplifies the local weight h(p)=1+O(1/p), and uses symmetry plus Rankin's trick to show that tails such as ar>N are exponentially smaller than the main Euler product.",
+            "speculation_status": "This conclusion depends on the preceding residue formula and the chosen sparse f; it does not independently establish the mixed moment for arbitrary coefficients. The completion mechanism is clear, while exact Euler factors and tail ratios remain formula-sensitive. Calling the infinite completion a reversible trade of finite geometry for factorability is a precise description of extension followed by quantitative tail recovery. Exact Euler factors and tail ratios are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_75b10cec243b29d1a96693bd13e4b341dbdf4f5707f37a2f47b21abfa74e073f",
+        "dossier_sha256": "049e92d9f53d3e40230ebd568a481210f370648f7ae969917b4d9e090ae78905"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "be1105212e746f799a375bf7bf4e646b9f594b79bbad33b54a621396703e71d4"
+}

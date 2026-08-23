@@ -1,0 +1,140 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2076917652",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2076917652_e00d0013_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Long-polynomial coefficient correlations reproduce the second moment because Perron/Fourier data can be converted by the zeta functional equation into exactly the two residue terms of the moment formula.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "full_openalex_w2076917652_u06",
+          "full_openalex_w2076917652_u07",
+          "full_openalex_w2076917652_u08"
+        ],
+        "proposed_limit": "The source explicitly says the higher-moment analogues rely on conjectures, so exactness here does not validate the fourth-moment descent.",
+        "source_id": "openalex_w2076917652",
+        "synthesis_id": "riemann_v2_within_9955ee89246c7365a010b74a",
+        "title": "The exact second moment as a prototype transform bridge"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the long-polynomial length assumption, smoothing convention, transform convention, and the identity's role, so no external reconstruction is needed.",
+          "line_end": 134,
+          "line_start": 66,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several displayed formulas are text-layer extractions; the surrounding prose fixes their roles, but exact symbols in lines 70-128 should be checked against the scan before formula-level reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The classical mean square and the long-polynomial correlation evaluation are placed side by side, and their agreement is compressed into equation (1), a structural bridge between a floor-sum Fourier expression and the logarithmic moment term.",
+          "source_id": "openalex_w2076917652",
+          "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coefficient correlations reduce second-moment compatibility to a Fourier identity",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u06.txt",
+          "unit_bytes": 3915,
+          "unit_id": "full_openalex_w2076917652_u06",
+          "unit_sha256": "7bb081c6a0f42873b3c32f0abb9c299283a591c7321c2d89f68212989e409d82",
+          "unit_type": "second-moment-compatibility-identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Compatibility of two analytic descriptions is reduced to one transform identity rather than being left as matching asymptotic prose. This makes the proof burden modular: the moment theorem and the coefficient calculation agree precisely if the floor/Fourier expression converts to the logarithmic integral.",
+            "nonparaphrase_operation": "The bridge object is the compactly supported test function together with its Fourier transform. It carries the coefficient-correlation floor sum into the logarithmic main term of the zeta mean square, while y records the ratio between height and polynomial length.",
+            "quality_reason": "The span gives the pointwise long-polynomial approximation X=T^theta with 1<theta<2, the real compactly supported smoothing function, the Goldston-Gonek correlation formula, y=T/(2 pi X), the floor function, the Fourier convention, the classical mean square, and the harmonic-sum comparison yielding equation (1). It explicitly states that compatibility relies on proving equation (1) and that a more general identity will prove it; the candidate preserves the unshifted scope and formula-transcription caveat. Low: the analysis identifies the non-paraphrase operation of reducing agreement between two evaluations to one floor/Fourier identity.",
+            "source_support": "For the unshifted comparison, zeta is approximated pointwise near height T by a Dirichlet polynomial of length X=T^theta with 1<theta<2 and tested with a real compactly supported smooth weight. The Goldston-Gonek coefficient-correlation expression contains a harmonic sum and an integral involving floor(v/y), the Fourier transform of the weight, and y=T/(2 pi X). Comparison with the classical smoothed mean square and the harmonic-sum asymptotic yields equation (1) as y tends to zero.",
+            "speculation_status": "Equation (1) is the unshifted limiting relation; the shifted identity and its proof occur later. This unit does not show that the same mechanism works for fourth moments. Exact displayed symbols and constants are vulnerable to the text-layer extraction and should be scan-checked before formula-level reuse. The surrounding prose fixes the roles of X, T, y, the floor function, and the Fourier transform, but several extracted formulas are typographically fragile. The structural comparison is high-confidence; literal transcription of every factor is not. Describing equation (1) as a modular compatibility bridge and the test function/Fourier transform as the bridge object is a concrete synthesis of the two displayed evaluations. Several displays are text-layer fragile, but the candidate explicitly limits confidence in constants and literal factors while relying on prose-supported roles."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Builds directly on the transform and smoothing conventions in lines 66-134; lines 174-178 state both the limiting relation and why a direct proof matters.",
+          "line_end": 178,
+          "line_start": 135,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The semantic statement is recoverable, but the exponents and summation bounds in lines 137-169 are formula-sensitive and require scan verification for exact transcription.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The unshifted compatibility relation is generalized to shifts and declared exact, providing the prototype the authors intend to imitate when higher-moment analogues become conjectural.",
+          "source_id": "openalex_w2076917652",
+          "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Small shifts lift the second-moment bridge to an exact identity",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u07.txt",
+          "unit_bytes": 2177,
+          "unit_id": "full_openalex_w2076917652_u07",
+          "unit_sha256": "5ef1b45279aa16f10998dcc0e45e1f8b4cf47f904a0325d7db902adfd5c190cb",
+          "unit_type": "shifted-transform-identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Small shifts promote the unshifted second-moment compatibility relation to an exact parameterized identity whose zero-shift limit recovers equation (1). The parameters resolve the two displayed zeta contributions before they coalesce in the limit, giving an exact second-moment prototype for an analogous strategy that the source says becomes conjectural at higher moments. The direct proof is only announced here, and exact exponents, bounds, and normalizations remain scan-dependent.",
+            "nonparaphrase_operation": "Treats the shifts as a resolving parameter that exposes a family of contributions and explains how an exact family can contain the unshifted compatibility statement as a coalescing limit, without importing the following unit's contour or residue proof.",
+            "quality_reason": "Accepted after revision because it preserves the concrete shifted identity and its representational gain, states the higher-moment proof burden, removes proof mechanics absent from the unit, and flags formula-sensitive typography rather than repairing it.",
+            "source_support": "The span compares the shifted Ingham formula with the shifted long-polynomial expression, derives a relation in alpha+beta and a Fourier-side shifted sum, declares that relation an identity, and states that equation (1) is its alpha,beta to zero limit. It also explicitly contrasts this factual identity with conjectural higher-moment counterparts.",
+            "speculation_status": "Exactness, limiting recovery, and the fact-versus-conjecture boundary are source facts. The resolving-parameter account is a supported interpretation; no residue-tracking or singularity claim is attributed to this span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Starts with the exact target identity and ends with the general Mellin-Fourier relation and the second-moment methodological conclusion.",
+          "line_end": 243,
+          "line_start": 179,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Contour locations, Gamma/chi factors, and residues are formula-dependent; prose makes the sequence reliable, while exact equations (2)-(4) should be scan-checked before symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof supplies a reusable representation change: express a truncated shifted sum by a contour integral, rotate the Fourier paths, recognize the zeta functional-equation factor, and recover the desired terms as residues at zero and minus the shift.",
+          "source_id": "openalex_w2076917652",
+          "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Perron inversion and the functional equation convert the correlation transform into residues",
+          "unit_artifact_relpath": "depth/units/full_openalex_w2076917652_u08.txt",
+          "unit_bytes": 3881,
+          "unit_id": "full_openalex_w2076917652_u08",
+          "unit_sha256": "b7a6aa474ec8e886c51ed251c78cadb9ad18e9347c582722b72ddc3cdbc41bfd",
+          "unit_type": "functional-equation-transform-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2076917652_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The coefficient-side truncation and the moment-side functional equation are not compared term by term. They are embedded in the same meromorphic contour representation, where the target decomposition is controlled by pole locations. Residues are the intermediate objects that preserve the information relevant to the moment while discarding the transform scaffolding.",
+            "nonparaphrase_operation": "The chain is finite shifted sum to Perron/Mellin integral, Fourier oscillations to gamma and chi factors, zeta functional equation to reflected zeta data, and contour displacement to residue terms. This chain explains why the long-polynomial computation can recover the second moment.",
+            "quality_reason": "The source explicitly inserts Perron inversion for the truncated h-sum, splits twice the real Fourier transform into two phases, rotates the corresponding v-paths, obtains the cosine-Gamma factor, identifies the chi factor through the zeta functional equation, and shifts the Mellin contour across poles at 0 and -delta. It records the general Mellin-Fourier identity for compact positive support and concludes that the long-polynomial second-moment calculation relies on such identities; the candidate keeps the result confined to the second moment. Low: the analysis names the operative transformations and their order rather than using a generic representation-exposes-structure template.",
+            "source_support": "Writing the combined shift as delta, the proof inserts a Perron integral for the truncated sum over h, expands twice the real part of the Fourier transform into positive and negative phases, and rotates the two v-contours to opposite imaginary rays. Their sum gives a cosine-Gamma factor identified with the chi factor in the zeta functional equation. The expression becomes a Mellin contour involving zeta(1-s-delta); moving that contour left picks up poles at s=0 and s=-delta, exactly producing the target identity. A general Mellin-Fourier relation is also recorded for compactly supported functions on the positive reals.",
+            "speculation_status": "The argument uses compact positive support and analytic contour deformations; this narrow span does not provide every decay or interchange justification. It establishes a second-moment identity, not the conjectural higher-moment analogues, and the authors explicitly say those become more challenging. The proof sequence and pole locations are clear from prose, but exact contour labels, gamma/chi normalizations, and formulas (2)-(4) are text-layer sensitive and need scan verification before symbolic reuse. Viewing the proof as a chain of representation changes culminating in residues is a precise synthesis of the displayed argument, and interpreting the shared meromorphic contour as the comparison space is source-compatible. Contour labels and Gamma/chi normalizations are text-layer sensitive, but the candidate distinguishes the reliable proof sequence from unsafe literal transcription."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_ad0d791012222bacc993ab2f3901e35801296614767efde3f8c437ea444ee50e",
+        "dossier_sha256": "04525322e853a647c3db1690be069c44dfc0ae5a345fba775369634472d795f4"
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "455946f2302e7f26cc9ebdcf4eb4a6949848e2e4e64173ad41c73fdaf6e2d575"
+}
